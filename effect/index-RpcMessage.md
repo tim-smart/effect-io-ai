@@ -11,6 +11,6 @@ Re-exports all named exports from the "./RpcMessage.js" module as `RpcMessage`.
 export * as RpcMessage from "./RpcMessage.js"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/index.ts#L19)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/index.ts#L24)
 
 Since v1.0.0

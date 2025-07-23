@@ -14,6 +14,6 @@ of the LLM and/or the user.
 declare class EmbeddedResource
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L942)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L943)
 
 Since v1.0.0

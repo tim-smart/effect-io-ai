@@ -350,7 +350,7 @@
     "since": "1.0.0",
     "category": "Layers",
     "signature": "declare const layer: Layer.Layer<WorkflowEngine, never, MessageStorage | Sharding.Sharding>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/ClusterWorkflowEngine.ts#L594"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/ClusterWorkflowEngine.ts#L595"
   },
   {
     "_tag": "Constant",
@@ -3095,7 +3095,7 @@
     "since": "1.0.0",
     "category": "context",
     "signature": "declare class Runners",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Runners.ts#L39"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Runners.ts#L40"
   },
   {
     "_tag": "Class",
@@ -3110,7 +3110,7 @@
     "since": "1.0.0",
     "category": "Rpcs",
     "signature": "declare class Rpcs",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Runners.ts#L404"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Runners.ts#L405"
   },
   {
     "_tag": "Class",
@@ -3125,7 +3125,7 @@
     "since": "1.0.0",
     "category": "Client",
     "signature": "declare class RpcClientProtocol",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Runners.ts#L597"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Runners.ts#L601"
   },
   {
     "_tag": "Constant",
@@ -3140,7 +3140,7 @@
     "since": "1.0.0",
     "category": "Constructors",
     "signature": "declare const make: (options: Omit<Runners[\"Type\"], \"sendLocal\" | \"notifyLocal\">) => Effect.Effect<Runners[\"Type\"], never, MessageStorage.MessageStorage | Snowflake.Generator | ShardingConfig | Scope>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Runners.ts#L118"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Runners.ts#L119"
   },
   {
     "_tag": "Constant",
@@ -3155,7 +3155,7 @@
     "since": "1.0.0",
     "category": "No-op",
     "signature": "declare const makeNoop: Effect.Effect<{ readonly ping: (address: RunnerAddress) => Effect.Effect<void, RunnerUnavailable>; readonly sendLocal: <R extends Rpc.Any>(options: { readonly message: Message.Outgoing<R>; readonly send: <Rpc extends Rpc.Any>(message: Message.IncomingLocal<Rpc>) => Effect.Effect<void, EntityNotManagedByRunner | EntityNotAssignedToRunner | MailboxFull | AlreadyProcessingMessage>; readonly simulateRemoteSerialization: boolean; }) => Effect.Effect<void, EntityNotManagedByRunner | EntityNotAssignedToRunner | MailboxFull | AlreadyProcessingMessage | PersistenceError>; readonly send: <R extends Rpc.Any>(options: { readonly address: RunnerAddress; readonly message: Message.Outgoing<R>; }) => Effect.Effect<void, EntityNotManagedByRunner | EntityNotAssignedToRunner | RunnerUnavailable | MailboxFull | AlreadyProcessingMessage | PersistenceError>; readonly notify: <R extends Rpc.Any>(options: { readonly address: Option.Option<RunnerAddress>; readonly message: Message.Outgoing<R>; readonly discard: boolean; }) => Effect.Effect<void, EntityNotManagedByRunner | PersistenceError>; readonly notifyLocal: <R extends Rpc.Any>(options: { readonly message: Message.Outgoing<R>; readonly notify: (options: Message.IncomingLocal<any>) => Effect.Effect<void, EntityNotManagedByRunner | EntityNotAssignedToRunner>; readonly discard: boolean; }) => Effect.Effect<void, EntityNotManagedByRunner | PersistenceError>; }, never, Scope | MessageStorage.MessageStorage | ShardingConfig | Snowflake.Generator>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Runners.ts#L368"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Runners.ts#L369"
   },
   {
     "_tag": "Constant",
@@ -3170,7 +3170,7 @@
     "since": "1.0.0",
     "category": "Layers",
     "signature": "declare const layerNoop: Layer.Layer<Runners, never, MessageStorage.MessageStorage | ShardingConfig>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Runners.ts#L382"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Runners.ts#L383"
   },
   {
     "_tag": "Constant",
@@ -3185,7 +3185,7 @@
     "since": "1.0.0",
     "category": "Rpcs",
     "signature": "declare const makeRpcClient: Effect.Effect<RpcClient, never, Scope | RpcClient_.Protocol>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Runners.ts#L449"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Runners.ts#L450"
   },
   {
     "_tag": "Constant",
@@ -3200,7 +3200,7 @@
     "since": "1.0.0",
     "category": "constructors",
     "signature": "declare const makeRpc: Effect.Effect<{ readonly ping: (address: RunnerAddress) => Effect.Effect<void, RunnerUnavailable>; readonly sendLocal: <R extends Rpc.Any>(options: { readonly message: Message.Outgoing<R>; readonly send: <Rpc extends Rpc.Any>(message: Message.IncomingLocal<Rpc>) => Effect.Effect<void, EntityNotManagedByRunner | EntityNotAssignedToRunner | MailboxFull | AlreadyProcessingMessage>; readonly simulateRemoteSerialization: boolean; }) => Effect.Effect<void, EntityNotManagedByRunner | EntityNotAssignedToRunner | MailboxFull | AlreadyProcessingMessage | PersistenceError>; readonly send: <R extends Rpc.Any>(options: { readonly address: RunnerAddress; readonly message: Message.Outgoing<R>; }) => Effect.Effect<void, EntityNotManagedByRunner | EntityNotAssignedToRunner | RunnerUnavailable | MailboxFull | AlreadyProcessingMessage | PersistenceError>; readonly notify: <R extends Rpc.Any>(options: { readonly address: Option.Option<RunnerAddress>; readonly message: Message.Outgoing<R>; readonly discard: boolean; }) => Effect.Effect<void, EntityNotManagedByRunner | PersistenceError>; readonly notifyLocal: <R extends Rpc.Any>(options: { readonly message: Message.Outgoing<R>; readonly notify: (options: Message.IncomingLocal<any>) => Effect.Effect<void, EntityNotManagedByRunner | EntityNotAssignedToRunner>; readonly discard: boolean; }) => Effect.Effect<void, EntityNotManagedByRunner | PersistenceError>; }, never, Scope | MessageStorage.MessageStorage | ShardingConfig | Snowflake.Generator | RpcClientProtocol>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Runners.ts#L459"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Runners.ts#L460"
   },
   {
     "_tag": "Constant",
@@ -3215,7 +3215,7 @@
     "since": "1.0.0",
     "category": "Layers",
     "signature": "declare const layerRpc: Layer.Layer<Runners, never, MessageStorage.MessageStorage | ShardingConfig | RpcClientProtocol>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Runners.ts#L585"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Runners.ts#L589"
   },
   {
     "_tag": "Interface",
@@ -3229,8 +3229,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "Rpcs",
-    "signature": "export interface RpcClient extends RpcClient_.FromGroup<typeof Rpcs> {}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Runners.ts#L443"
+    "signature": "export interface RpcClient extends RpcClient_.FromGroup<typeof Rpcs, RpcClientError> {}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Runners.ts#L444"
   },
   {
     "_tag": "Constant",
@@ -3719,7 +3719,7 @@
     "since": "1.0.0",
     "category": "Client",
     "signature": "declare const layerClientLocal: Layer.Layer<ShardManagerClient, never, ShardingConfig>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/ShardManager.ts#L389"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/ShardManager.ts#L403"
   },
   {
     "_tag": "Constant",
@@ -3734,7 +3734,7 @@
     "since": "1.0.0",
     "category": "Client",
     "signature": "declare const layerClientRpc: Layer.Layer<ShardManagerClient, never, ShardingConfig | RpcClientProtocol>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/ShardManager.ts#L399"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/ShardManager.ts#L413"
   },
   {
     "_tag": "Constant",
@@ -3749,7 +3749,7 @@
     "since": "1.0.0",
     "category": "Constructors",
     "signature": "declare const make: Effect.Effect<{ readonly getAssignments: Effect.Effect<Iterable<readonly [ShardId, Option.Option<RunnerAddress>]>>; readonly shardingEvents: Effect.Effect<Queue.Dequeue<ShardingEvent>, never, Scope>; readonly register: (runner: Runner) => Effect.Effect<MachineId.MachineId>; readonly unregister: (address: RunnerAddress) => Effect.Effect<void>; readonly rebalance: Effect.Effect<void>; readonly notifyUnhealthyRunner: (address: RunnerAddress) => Effect.Effect<void>; readonly checkRunnerHealth: Effect.Effect<void>; }, never, Scope | ShardStorage | ShardingConfig | RunnerHealth | Config | Runners>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/ShardManager.ts#L418"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/ShardManager.ts#L432"
   },
   {
     "_tag": "Constant",
@@ -3764,7 +3764,7 @@
     "since": "1.0.0",
     "category": "layer",
     "signature": "declare const layer: Layer.Layer<ShardManager, never, ShardStorage | ShardingConfig | RunnerHealth | Config | Runners>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/ShardManager.ts#L740"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/ShardManager.ts#L754"
   },
   {
     "_tag": "Constant",
@@ -3779,7 +3779,7 @@
     "since": "1.0.0",
     "category": "Server",
     "signature": "declare const layerServerHandlers: Layer.Layer<Rpc.Handler<\"Register\"> | Rpc.Handler<\"Unregister\"> | Rpc.Handler<\"NotifyUnhealthyRunner\"> | Rpc.Handler<\"GetAssignments\"> | Rpc.Handler<\"ShardingEvents\"> | Rpc.Handler<\"GetTime\">, never, ShardManager>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/ShardManager.ts#L750"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/ShardManager.ts#L764"
   },
   {
     "_tag": "Constant",
@@ -3794,7 +3794,7 @@
     "since": "1.0.0",
     "category": "Server",
     "signature": "declare const layerServer: Layer.Layer<never, never, ShardManager | RpcServer.Protocol>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/ShardManager.ts#L784"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/ShardManager.ts#L798"
   },
   {
     "_tag": "Function",

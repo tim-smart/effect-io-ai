@@ -14,6 +14,6 @@ to the client to interpret.
 declare class ModelHint
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L1353)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L1354)
 
 Since v1.0.0

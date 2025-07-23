@@ -14,6 +14,6 @@ also has better support for binary data.
 declare const layerMsgPack: Layer.Layer<RpcSerialization, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcSerialization.ts#L422)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcSerialization.ts#L424)
 
 Since v1.0.0

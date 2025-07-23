@@ -38,6 +38,22 @@
       "path": "src/index.ts"
     },
     "project": "@effect/rpc",
+    "name": "RpcClientError",
+    "description": "Re-exports all named exports from the \"./RpcClientError.js\" module as `RpcClientError`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as RpcClientError from \"./RpcClientError.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/index.ts#L14"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/rpc",
     "name": "RpcGroup",
     "description": "Re-exports all named exports from the \"./RpcGroup.js\" module as `RpcGroup`.",
     "deprecated": false,
@@ -45,7 +61,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "export * as RpcGroup from \"./RpcGroup.js\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/index.ts#L14"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/index.ts#L19"
   },
   {
     "_tag": "Export",
@@ -61,7 +77,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "export * as RpcMessage from \"./RpcMessage.js\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/index.ts#L19"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/index.ts#L24"
   },
   {
     "_tag": "Export",
@@ -77,7 +93,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "export * as RpcMiddleware from \"./RpcMiddleware.js\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/index.ts#L24"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/index.ts#L29"
   },
   {
     "_tag": "Export",
@@ -93,7 +109,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "export * as RpcSchema from \"./RpcSchema.js\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/index.ts#L29"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/index.ts#L34"
   },
   {
     "_tag": "Export",
@@ -109,7 +125,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "export * as RpcSerialization from \"./RpcSerialization.js\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/index.ts#L34"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/index.ts#L39"
   },
   {
     "_tag": "Export",
@@ -125,7 +141,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "export * as RpcServer from \"./RpcServer.js\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/index.ts#L39"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/index.ts#L44"
   },
   {
     "_tag": "Export",
@@ -141,7 +157,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "export * as RpcTest from \"./RpcTest.js\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/index.ts#L44"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/index.ts#L49"
   },
   {
     "_tag": "Export",
@@ -157,7 +173,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "export * as RpcWorker from \"./RpcWorker.js\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/index.ts#L49"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/index.ts#L54"
   },
   {
     "_tag": "Constant",
@@ -880,7 +896,7 @@
     "since": "1.0.0",
     "category": "protocol",
     "signature": "declare class Protocol",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcClient.ts#L799"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcClient.ts#L807"
   },
   {
     "_tag": "Constant",
@@ -895,7 +911,7 @@
     "since": "1.0.0",
     "category": "client",
     "signature": "declare const makeNoSerialization: <Rpcs extends Rpc.Any, E, const Flatten extends boolean = false>(group: RpcGroup.RpcGroup<Rpcs>, options: { readonly onFromClient: (options: { readonly message: FromClient<Rpcs>; readonly context: Context.Context<never>; readonly discard: boolean; }) => Effect.Effect<void, E>; readonly supportsAck?: boolean | undefined; readonly spanPrefix?: string | undefined; readonly spanAttributes?: Record<string, unknown> | undefined; readonly generateRequestId?: (() => RequestId) | undefined; readonly disableTracing?: boolean | undefined; readonly flatten?: Flatten | undefined; }) => Effect.Effect<{ readonly client: Flatten extends true ? RpcClient.Flat<Rpcs, E> : RpcClient<Rpcs, E>; readonly write: (message: FromServer<Rpcs>) => Effect.Effect<void>; }, never, Scope.Scope | Rpc.MiddlewareClient<Rpcs>>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcClient.ts#L203"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcClient.ts#L204"
   },
   {
     "_tag": "Constant",
@@ -909,8 +925,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "client",
-    "signature": "declare const make: <Rpcs extends Rpc.Any, const Flatten extends boolean = false>(group: RpcGroup.RpcGroup<Rpcs>, options?: { readonly spanPrefix?: string | undefined; readonly spanAttributes?: Record<string, unknown> | undefined; readonly generateRequestId?: (() => RequestId) | undefined; readonly disableTracing?: boolean | undefined; readonly flatten?: Flatten | undefined; } | undefined) => Effect.Effect<Flatten extends true ? RpcClient.Flat<Rpcs> : RpcClient<Rpcs>, never, Protocol | Rpc.MiddlewareClient<Rpcs> | Scope.Scope>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcClient.ts#L607"
+    "signature": "declare const make: <Rpcs extends Rpc.Any, const Flatten extends boolean = false>(group: RpcGroup.RpcGroup<Rpcs>, options?: { readonly spanPrefix?: string | undefined; readonly spanAttributes?: Record<string, unknown> | undefined; readonly generateRequestId?: (() => RequestId) | undefined; readonly disableTracing?: boolean | undefined; readonly flatten?: Flatten | undefined; } | undefined) => Effect.Effect<Flatten extends true ? RpcClient.Flat<Rpcs, RpcClientError> : RpcClient<Rpcs, RpcClientError>, never, Protocol | Rpc.MiddlewareClient<Rpcs> | Scope.Scope>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcClient.ts#L608"
   },
   {
     "_tag": "Constant",
@@ -925,7 +941,7 @@
     "since": "1.0.0",
     "category": "headers",
     "signature": "declare const currentHeaders: FiberRef.FiberRef<Headers.Headers>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcClient.ts#L757"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcClient.ts#L765"
   },
   {
     "_tag": "Constant",
@@ -940,7 +956,7 @@
     "since": "1.0.0",
     "category": "headers",
     "signature": "declare const withHeaders: { (headers: Headers.Input): <A, E, R>(effect: Effect.Effect<A, E, R>) => Effect.Effect<A, E, R>; <A, E, R>(effect: Effect.Effect<A, E, R>, headers: Headers.Input): Effect.Effect<A, E, R>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcClient.ts#L766"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcClient.ts#L774"
   },
   {
     "_tag": "Constant",
@@ -955,7 +971,7 @@
     "since": "1.0.0",
     "category": "headers",
     "signature": "declare const withHeadersEffect: { <E2, R2>(headers: Effect.Effect<Headers.Input, E2, R2>): <A, E, R>(effect: Effect.Effect<A, E, R>) => Effect.Effect<A, E | E2, R | R2>; <A, E, R, E2, R2>(effect: Effect.Effect<A, E, R>, headers: Effect.Effect<Headers.Input, E2, R2>): Effect.Effect<A, E | E2, R | R2>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcClient.ts#L779"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcClient.ts#L787"
   },
   {
     "_tag": "Function",
@@ -970,7 +986,7 @@
     "since": "1.0.0",
     "category": "protocol",
     "signature": "declare const makeProtocolHttp: (client: HttpClient.HttpClient) => Effect.Effect<Protocol[\"Type\"], never, RpcSerialization.RpcSerialization>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcClient.ts#L820"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcClient.ts#L828"
   },
   {
     "_tag": "Function",
@@ -985,7 +1001,7 @@
     "since": "1.0.0",
     "category": "protocol",
     "signature": "declare const layerProtocolHttp: (options: { readonly url: string; readonly transformClient?: <E, R>(client: HttpClient.HttpClient.With<E, R>) => HttpClient.HttpClient.With<E, R>; }) => Layer.Layer<Protocol, never, RpcSerialization.RpcSerialization | HttpClient.HttpClient>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcClient.ts#L888"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcClient.ts#L907"
   },
   {
     "_tag": "Function",
@@ -1000,7 +1016,7 @@
     "since": "1.0.0",
     "category": "protocol",
     "signature": "declare const makeProtocolSocket: (options?: { readonly retryTransientErrors?: boolean | undefined; }) => Effect.Effect<Protocol[\"Type\"], never, Scope.Scope | RpcSerialization.RpcSerialization | Socket.Socket>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcClient.ts#L907"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcClient.ts#L926"
   },
   {
     "_tag": "Function",
@@ -1015,7 +1031,7 @@
     "since": "1.0.0",
     "category": "protocol",
     "signature": "declare const makeProtocolWorker: (options: { readonly size: number; readonly concurrency?: number | undefined; readonly targetUtilization?: number | undefined; } | { readonly minSize: number; readonly maxSize: number; readonly concurrency?: number | undefined; readonly targetUtilization?: number | undefined; readonly timeToLive: Duration.DurationInput; }) => Effect.Effect<Protocol[\"Type\"], WorkerError, Scope.Scope | Worker.PlatformWorker | Worker.Spawner>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcClient.ts#L1022"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcClient.ts#L1055"
   },
   {
     "_tag": "Function",
@@ -1030,7 +1046,7 @@
     "since": "1.0.0",
     "category": "protocol",
     "signature": "declare const layerProtocolWorker: (options: { readonly size: number; readonly concurrency?: number | undefined; readonly targetUtilization?: number | undefined; } | { readonly minSize: number; readonly maxSize: number; readonly concurrency?: number | undefined; readonly targetUtilization?: number | undefined; readonly timeToLive: Duration.DurationInput; }) => Layer.Layer<Protocol, WorkerError, Worker.PlatformWorker | Worker.Spawner>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcClient.ts#L1164"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcClient.ts#L1206"
   },
   {
     "_tag": "Function",
@@ -1045,7 +1061,7 @@
     "since": "1.0.0",
     "category": "protocol",
     "signature": "declare const layerProtocolSocket: (options?: { readonly retryTransientErrors?: boolean | undefined; }) => Layer.Layer<Protocol, never, Socket.Socket | RpcSerialization.RpcSerialization>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcClient.ts#L1183"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcClient.ts#L1225"
   },
   {
     "_tag": "TypeAlias",
@@ -1060,7 +1076,7 @@
     "since": "1.0.0",
     "category": "client",
     "signature": "type { [K in keyof (RpcClient.From<Exclude<Rpcs, { readonly _tag: `${string}.${string}`; }>, E, \"\"> & { readonly [CurrentPrefix in RpcClient.Prefixes<Rpcs>]: RpcClient.From<Extract<Rpcs, { readonly _tag: `${CurrentPrefix}.${string}`; }>, E, CurrentPrefix>; })]: (RpcClient.From<Exclude<Rpcs, { readonly _tag: `${string}.${string}`; }>, E, \"\"> & { readonly [CurrentPrefix in RpcClient.Prefixes<Rpcs>]: RpcClient.From<Extract<Rpcs, { readonly _tag: `${CurrentPrefix}.${string}`; }>, E, CurrentPrefix>; })[K]; } = Schema.Simplify<\n  & RpcClient.From<RpcClient.NonPrefixed<Rpcs>, E, \"\">\n  & {\n    readonly [CurrentPrefix in RpcClient.Prefixes<Rpcs>]: RpcClient.From<\n      RpcClient.Prefixed<Rpcs, CurrentPrefix>,\n      E,\n      CurrentPrefix\n    >\n  }\n>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcClient.ts#L50"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcClient.ts#L51"
   },
   {
     "_tag": "TypeAlias",
@@ -1074,8 +1090,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "client",
-    "signature": "type { [K in keyof (RpcClient.From<Exclude<RpcGroup.Rpcs<Group>, { readonly _tag: `${string}.${string}`; }>, never, \"\"> & { readonly [CurrentPrefix in RpcClient.Prefixes<RpcGroup.Rpcs<Group>>]: RpcClient.From<Extract<RpcGroup.Rpcs<Group>, { readonly _tag: `${CurrentPrefix}.${string}`; }>, never, CurrentPrefix>; })]: (RpcClient.From<Exclude<RpcGroup.Rpcs<Group>, { readonly _tag: `${string}.${string}`; }>, never, \"\"> & { readonly [CurrentPrefix in RpcClient.Prefixes<RpcGroup.Rpcs<Group>>]: RpcClient.From<Extract<RpcGroup.Rpcs<Group>, { readonly _tag: `${CurrentPrefix}.${string}`; }>, never, CurrentPrefix>; })[K]; } = RpcClient<RpcGroup.Rpcs<Group>>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcClient.ts#L195"
+    "signature": "type { [K in keyof (RpcClient.From<Exclude<RpcGroup.Rpcs<Group>, { readonly _tag: `${string}.${string}`; }>, E, \"\"> & { readonly [CurrentPrefix in RpcClient.Prefixes<RpcGroup.Rpcs<Group>>]: RpcClient.From<Extract<RpcGroup.Rpcs<Group>, { readonly _tag: `${CurrentPrefix}.${string}`; }>, E, CurrentPrefix>; })]: (RpcClient.From<Exclude<RpcGroup.Rpcs<Group>, { readonly _tag: `${string}.${string}`; }>, E, \"\"> & { readonly [CurrentPrefix in RpcClient.Prefixes<RpcGroup.Rpcs<Group>>]: RpcClient.From<Extract<RpcGroup.Rpcs<Group>, { readonly _tag: `${CurrentPrefix}.${string}`; }>, E, CurrentPrefix>; })[K]; } = RpcClient<RpcGroup.Rpcs<Group>, E>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcClient.ts#L196"
   },
   {
     "_tag": "TypeAlias",
@@ -1090,7 +1106,7 @@
     "since": "1.0.0",
     "category": "client",
     "signature": "type Prefixes<Rpcs> = Rpcs[\"_tag\"] extends infer Tag\n    ? Tag extends `${infer Prefix}.${string}` ? Prefix : never\n    : never",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcClient.ts#L70"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcClient.ts#L71"
   },
   {
     "_tag": "TypeAlias",
@@ -1105,7 +1121,7 @@
     "since": "1.0.0",
     "category": "client",
     "signature": "type NonPrefixed<Rpcs> = Exclude<Rpcs, { readonly _tag: `${string}.${string}` }>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcClient.ts#L78"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcClient.ts#L79"
   },
   {
     "_tag": "TypeAlias",
@@ -1120,7 +1136,7 @@
     "since": "1.0.0",
     "category": "client",
     "signature": "type Prefixed<Rpcs, Prefix> = Extract<\n    Rpcs,\n    { readonly _tag: `${Prefix}.${string}` }\n  >",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcClient.ts#L84"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcClient.ts#L85"
   },
   {
     "_tag": "TypeAlias",
@@ -1135,7 +1151,7 @@
     "since": "1.0.0",
     "category": "client",
     "signature": "type From<Rpcs, E, Prefix> = {\n    readonly [\n      Current in Rpcs as Current[\"_tag\"] extends `${Prefix}.${infer Method}` ? Method\n        : Current[\"_tag\"]\n    ]: <\n      const AsMailbox extends boolean = false,\n      const Discard = false\n    >(\n      input: Rpc.PayloadConstructor<Current>,\n      options?: Rpc.Success<Current> extends Stream.Stream<infer _A, infer _E, infer _R> ? {\n          readonly asMailbox?: AsMailbox | undefined\n          readonly streamBufferSize?: number | undefined\n          readonly headers?: Headers.Input | undefined\n          readonly context?: Context.Context<never> | undefined\n        } :\n        {\n          readonly headers?: Headers.Input | undefined\n          readonly context?: Context.Context<never> | undefined\n          readonly discard?: Discard | undefined\n        }\n    ) => Current extends Rpc.Rpc<\n      infer _Tag,\n      infer _Payload,\n      infer _Success,\n      infer _Error,\n      infer _Middleware\n    > ? [_Success] extends [RpcSchema.Stream<infer _A, infer _E>] ? AsMailbox extends true ? Effect.Effect<\n            Mailbox.ReadonlyMailbox<_A[\"Type\"], _E[\"Type\"] | _Error[\"Type\"] | E | _Middleware[\"failure\"][\"Type\"]>,\n            never,\n            | Scope.Scope\n            | _Payload[\"Context\"]\n            | _Success[\"Context\"]\n            | _Error[\"Context\"]\n            | _Middleware[\"failure\"][\"Context\"]\n          >\n        : Stream.Stream<\n          _A[\"Type\"],\n          _E[\"Type\"] | _Error[\"Type\"] | E | _Middleware[\"failure\"][\"Type\"],\n          _Payload[\"Context\"] | _Success[\"Context\"] | _Error[\"Context\"] | _Middleware[\"failure\"][\"Context\"]\n        >\n      : Effect.Effect<\n        Discard extends true ? void : _Success[\"Type\"],\n        Discard extends true ? E : _Error[\"Type\"] | E | _Middleware[\"failure\"][\"Type\"],\n        _Payload[\"Context\"] | _Success[\"Context\"] | _Error[\"Context\"] | _Middleware[\"failure\"][\"Context\"]\n      > :\n      never\n  }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcClient.ts#L93"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcClient.ts#L94"
   },
   {
     "_tag": "TypeAlias",
@@ -1150,7 +1166,52 @@
     "since": "1.0.0",
     "category": "client",
     "signature": "type Flat<Rpcs, E> = <\n    const Tag extends Rpcs[\"_tag\"],\n    const AsMailbox extends boolean = false,\n    const Discard = false\n  >(\n    tag: Tag,\n    payload: Rpc.PayloadConstructor<Rpc.ExtractTag<Rpcs, Tag>>,\n    options?: Rpc.Success<Rpc.ExtractTag<Rpcs, Tag>> extends Stream.Stream<infer _A, infer _E, infer _R> ? {\n        readonly asMailbox?: AsMailbox | undefined\n        readonly streamBufferSize?: number | undefined\n        readonly headers?: Headers.Input | undefined\n        readonly context?: Context.Context<never> | undefined\n      } :\n      {\n        readonly headers?: Headers.Input | undefined\n        readonly context?: Context.Context<never> | undefined\n        readonly discard?: Discard | undefined\n      }\n  ) => Rpc.ExtractTag<Rpcs, Tag> extends Rpc.Rpc<\n    infer _Tag,\n    infer _Payload,\n    infer _Success,\n    infer _Error,\n    infer _Middleware\n  > ? [_Success] extends [RpcSchema.Stream<infer _A, infer _E>] ? AsMailbox extends true ? Effect.Effect<\n          Mailbox.ReadonlyMailbox<_A[\"Type\"], _E[\"Type\"] | _Error[\"Type\"] | E | _Middleware[\"failure\"][\"Type\"]>,\n          never,\n          | Scope.Scope\n          | _Payload[\"Context\"]\n          | _Success[\"Context\"]\n          | _Error[\"Context\"]\n          | _Middleware[\"failure\"][\"Context\"]\n        >\n      : Stream.Stream<\n        _A[\"Type\"],\n        _E[\"Type\"] | _Error[\"Type\"] | E | _Middleware[\"failure\"][\"Type\"],\n        _Payload[\"Context\"] | _Success[\"Context\"] | _Error[\"Context\"] | _Middleware[\"failure\"][\"Context\"]\n      >\n    : Effect.Effect<\n      Discard extends true ? void : _Success[\"Type\"],\n      Discard extends true ? E : _Error[\"Type\"] | E | _Middleware[\"failure\"][\"Type\"],\n      _Payload[\"Context\"] | _Success[\"Context\"] | _Error[\"Context\"] | _Middleware[\"failure\"][\"Context\"]\n    > :\n    never",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcClient.ts#L145"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcClient.ts#L146"
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "RpcClientError.ts",
+      "path": "src/RpcClientError.ts"
+    },
+    "project": "@effect/rpc",
+    "name": "RpcClientError",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Errors",
+    "signature": "declare class RpcClientError",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcClientError.ts#L22"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "RpcClientError.ts",
+      "path": "src/RpcClientError.ts"
+    },
+    "project": "@effect/rpc",
+    "name": "TypeId",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Symbols",
+    "signature": "declare const TypeId: unique symbol",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcClientError.ts#L10"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "RpcClientError.ts",
+      "path": "src/RpcClientError.ts"
+    },
+    "project": "@effect/rpc",
+    "name": "TypeId",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Symbols",
+    "signature": "type TypeId = typeof TypeId",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcClientError.ts#L16"
   },
   {
     "_tag": "Constant",
@@ -1315,7 +1376,7 @@
     "since": "1.0.0",
     "category": "request",
     "signature": "declare const RequestIdTypeId: unique symbol",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcMessage.ts#L27"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcMessage.ts#L28"
   },
   {
     "_tag": "Constant",
@@ -1330,7 +1391,7 @@
     "since": "1.0.0",
     "category": "request",
     "signature": "declare const constEof: Eof",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcMessage.ts#L135"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcMessage.ts#L136"
   },
   {
     "_tag": "Constant",
@@ -1345,7 +1406,7 @@
     "since": "1.0.0",
     "category": "request",
     "signature": "declare const constPing: Ping",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcMessage.ts#L141"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcMessage.ts#L142"
   },
   {
     "_tag": "Constant",
@@ -1360,7 +1421,7 @@
     "since": "1.0.0",
     "category": "response",
     "signature": "declare const ResponseIdTypeId: unique symbol",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcMessage.ts#L163"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcMessage.ts#L169"
   },
   {
     "_tag": "Constant",
@@ -1375,7 +1436,7 @@
     "since": "1.0.0",
     "category": "response",
     "signature": "declare const constPong: Pong",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcMessage.ts#L270"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcMessage.ts#L285"
   },
   {
     "_tag": "Function",
@@ -1390,7 +1451,7 @@
     "since": "1.0.0",
     "category": "request",
     "signature": "declare const RequestId: (id: bigint | string) => RequestId",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcMessage.ts#L45"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcMessage.ts#L46"
   },
   {
     "_tag": "Function",
@@ -1405,7 +1466,7 @@
     "since": "1.0.0",
     "category": "response",
     "signature": "declare const ResponseDefectEncoded: (input: unknown) => ResponseDefectEncoded",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcMessage.ts#L234"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcMessage.ts#L249"
   },
   {
     "_tag": "Interface",
@@ -1420,7 +1481,7 @@
     "since": "1.0.0",
     "category": "request",
     "signature": "export interface RequestEncoded {\n  readonly _tag: \"Request\"\n  readonly id: string\n  readonly tag: string\n  readonly payload: unknown\n  readonly headers: ReadonlyArray<[string, string]>\n  readonly traceId?: string | undefined\n  readonly spanId?: string | undefined\n  readonly sampled?: boolean | undefined\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcMessage.ts#L52"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcMessage.ts#L53"
   },
   {
     "_tag": "Interface",
@@ -1435,7 +1496,7 @@
     "since": "1.0.0",
     "category": "request",
     "signature": "export interface Request<A extends Rpc.Any> {\n  readonly _tag: \"Request\"\n  readonly id: RequestId\n  readonly tag: Rpc.Tag<A>\n  readonly payload: Rpc.Payload<A>\n  readonly headers: Headers\n  readonly traceId?: string | undefined\n  readonly spanId?: string | undefined\n  readonly sampled?: boolean | undefined\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcMessage.ts#L67"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcMessage.ts#L68"
   },
   {
     "_tag": "Interface",
@@ -1450,7 +1511,7 @@
     "since": "1.0.0",
     "category": "request",
     "signature": "export interface Ack {\n  readonly _tag: \"Ack\"\n  readonly requestId: RequestId\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcMessage.ts#L82"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcMessage.ts#L83"
   },
   {
     "_tag": "Interface",
@@ -1465,7 +1526,7 @@
     "since": "1.0.0",
     "category": "request",
     "signature": "export interface Interrupt {\n  readonly _tag: \"Interrupt\"\n  readonly requestId: RequestId\n  readonly interruptors: ReadonlyArray<FiberId.FiberId>\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcMessage.ts#L91"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcMessage.ts#L92"
   },
   {
     "_tag": "Interface",
@@ -1480,7 +1541,7 @@
     "since": "1.0.0",
     "category": "request",
     "signature": "export interface AckEncoded {\n  readonly _tag: \"Ack\"\n  readonly requestId: string\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcMessage.ts#L101"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcMessage.ts#L102"
   },
   {
     "_tag": "Interface",
@@ -1495,7 +1556,7 @@
     "since": "1.0.0",
     "category": "request",
     "signature": "export interface InterruptEncoded {\n  readonly _tag: \"Interrupt\"\n  readonly requestId: string\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcMessage.ts#L110"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcMessage.ts#L111"
   },
   {
     "_tag": "Interface",
@@ -1510,7 +1571,7 @@
     "since": "1.0.0",
     "category": "request",
     "signature": "export interface Eof {\n  readonly _tag: \"Eof\"\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcMessage.ts#L119"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcMessage.ts#L120"
   },
   {
     "_tag": "Interface",
@@ -1525,7 +1586,7 @@
     "since": "1.0.0",
     "category": "request",
     "signature": "export interface Ping {\n  readonly _tag: \"Ping\"\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcMessage.ts#L127"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcMessage.ts#L128"
   },
   {
     "_tag": "Interface",
@@ -1540,7 +1601,7 @@
     "since": "1.0.0",
     "category": "response",
     "signature": "export interface ResponseChunkEncoded {\n  readonly _tag: \"Chunk\"\n  readonly requestId: string\n  readonly values: NonEmptyReadonlyArray<unknown>\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcMessage.ts#L181"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcMessage.ts#L187"
   },
   {
     "_tag": "Interface",
@@ -1555,7 +1616,7 @@
     "since": "1.0.0",
     "category": "response",
     "signature": "export interface ResponseChunk<A extends Rpc.Any> {\n  readonly _tag: \"Chunk\"\n  readonly clientId: number\n  readonly requestId: RequestId\n  readonly values: NonEmptyReadonlyArray<Rpc.SuccessChunk<A>>\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcMessage.ts#L191"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcMessage.ts#L197"
   },
   {
     "_tag": "Interface",
@@ -1570,7 +1631,22 @@
     "since": "1.0.0",
     "category": "response",
     "signature": "export interface ResponseExitEncoded {\n  readonly _tag: \"Exit\"\n  readonly requestId: string\n  readonly exit: Schema.ExitEncoded<unknown, unknown, unknown>\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcMessage.ts#L202"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcMessage.ts#L208"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "RpcMessage.ts",
+      "path": "src/RpcMessage.ts"
+    },
+    "project": "@effect/rpc",
+    "name": "ClientProtocolError",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "response",
+    "signature": "export interface ClientProtocolError {\n  readonly _tag: \"ClientProtocolError\"\n  readonly error: RpcClientError\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcMessage.ts#L218"
   },
   {
     "_tag": "Interface",
@@ -1585,7 +1661,7 @@
     "since": "1.0.0",
     "category": "response",
     "signature": "export interface ResponseExit<A extends Rpc.Any> {\n  readonly _tag: \"Exit\"\n  readonly clientId: number\n  readonly requestId: RequestId\n  readonly exit: Rpc.Exit<A>\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcMessage.ts#L212"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcMessage.ts#L227"
   },
   {
     "_tag": "Interface",
@@ -1600,7 +1676,7 @@
     "since": "1.0.0",
     "category": "response",
     "signature": "export interface ResponseDefectEncoded {\n  readonly _tag: \"Defect\"\n  readonly defect: unknown\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcMessage.ts#L223"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcMessage.ts#L238"
   },
   {
     "_tag": "Interface",
@@ -1615,7 +1691,7 @@
     "since": "1.0.0",
     "category": "response",
     "signature": "export interface ResponseDefect {\n  readonly _tag: \"Defect\"\n  readonly clientId: number\n  readonly defect: unknown\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcMessage.ts#L243"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcMessage.ts#L258"
   },
   {
     "_tag": "Interface",
@@ -1630,7 +1706,7 @@
     "since": "1.0.0",
     "category": "response",
     "signature": "export interface ClientEnd {\n  readonly _tag: \"ClientEnd\"\n  readonly clientId: number\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcMessage.ts#L253"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcMessage.ts#L268"
   },
   {
     "_tag": "Interface",
@@ -1645,7 +1721,7 @@
     "since": "1.0.0",
     "category": "response",
     "signature": "export interface Pong {\n  readonly _tag: \"Pong\"\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcMessage.ts#L262"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcMessage.ts#L277"
   },
   {
     "_tag": "TypeAlias",
@@ -1660,7 +1736,7 @@
     "since": "1.0.0",
     "category": "request",
     "signature": "type FromClient<A> = Request<A> | Ack | Interrupt | Eof",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcMessage.ts#L15"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcMessage.ts#L16"
   },
   {
     "_tag": "TypeAlias",
@@ -1675,7 +1751,7 @@
     "since": "1.0.0",
     "category": "request",
     "signature": "type FromClientEncoded = RequestEncoded | AckEncoded | InterruptEncoded | Ping | Eof",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcMessage.ts#L21"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcMessage.ts#L22"
   },
   {
     "_tag": "TypeAlias",
@@ -1690,7 +1766,7 @@
     "since": "1.0.0",
     "category": "request",
     "signature": "type RequestIdTypeId = typeof RequestIdTypeId",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcMessage.ts#L33"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcMessage.ts#L34"
   },
   {
     "_tag": "TypeAlias",
@@ -1705,7 +1781,7 @@
     "since": "1.0.0",
     "category": "request",
     "signature": "type RequestId = Branded<bigint, RequestIdTypeId>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcMessage.ts#L39"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcMessage.ts#L40"
   },
   {
     "_tag": "TypeAlias",
@@ -1720,7 +1796,7 @@
     "since": "1.0.0",
     "category": "response",
     "signature": "type FromServer<A> = | ResponseChunk<A>\n  | ResponseExit<A>\n  | ResponseDefect\n  | ClientEnd",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcMessage.ts#L147"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcMessage.ts#L148"
   },
   {
     "_tag": "TypeAlias",
@@ -1734,8 +1810,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "response",
-    "signature": "type FromServerEncoded = ResponseChunkEncoded | ResponseExitEncoded | ResponseDefectEncoded | Pong",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcMessage.ts#L157"
+    "signature": "type FromServerEncoded = | ResponseChunkEncoded\n  | ResponseExitEncoded\n  | ResponseDefectEncoded\n  | Pong\n  | ClientProtocolError",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcMessage.ts#L158"
   },
   {
     "_tag": "TypeAlias",
@@ -1750,7 +1826,7 @@
     "since": "1.0.0",
     "category": "response",
     "signature": "type ResponseIdTypeId = typeof ResponseIdTypeId",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcMessage.ts#L169"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcMessage.ts#L175"
   },
   {
     "_tag": "TypeAlias",
@@ -1765,7 +1841,7 @@
     "since": "1.0.0",
     "category": "response",
     "signature": "type ResponseId = Branded<number, ResponseIdTypeId>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcMessage.ts#L175"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcMessage.ts#L181"
   },
   {
     "_tag": "Constant",
@@ -2275,7 +2351,7 @@
     "since": "1.0.0",
     "category": "serialization",
     "signature": "declare const msgPack: { unsafeMake(): Parser; readonly contentType: string; readonly includesFraming: boolean; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcSerialization.ts#L356"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcSerialization.ts#L358"
   },
   {
     "_tag": "Constant",
@@ -2291,7 +2367,7 @@
     "since": "1.0.0",
     "category": "serialization",
     "signature": "declare const layerJson: Layer.Layer<RpcSerialization, never, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcSerialization.ts#L379"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcSerialization.ts#L381"
   },
   {
     "_tag": "Constant",
@@ -2307,7 +2383,7 @@
     "since": "1.0.0",
     "category": "serialization",
     "signature": "declare const layerNdjson: Layer.Layer<RpcSerialization, never, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcSerialization.ts#L390"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcSerialization.ts#L392"
   },
   {
     "_tag": "Constant",
@@ -2323,7 +2399,7 @@
     "since": "1.0.0",
     "category": "serialization",
     "signature": "declare const layerMsgPack: Layer.Layer<RpcSerialization, never, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcSerialization.ts#L422"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcSerialization.ts#L424"
   },
   {
     "_tag": "Function",
@@ -2369,7 +2445,7 @@
     "since": "1.0.0",
     "category": "serialization",
     "signature": "declare const layerJsonRpc: (options?: { readonly contentType?: string | undefined; }) => Layer.Layer<RpcSerialization>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcSerialization.ts#L398"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcSerialization.ts#L400"
   },
   {
     "_tag": "Function",
@@ -2385,7 +2461,7 @@
     "since": "1.0.0",
     "category": "serialization",
     "signature": "declare const layerNdJsonRpc: (options?: { readonly contentType?: string | undefined; }) => Layer.Layer<RpcSerialization>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcSerialization.ts#L409"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcSerialization.ts#L411"
   },
   {
     "_tag": "Interface",

@@ -13,6 +13,6 @@ that the server can operate on.
 declare class ListRootsResult
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L1633)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L1634)
 
 Since v1.0.0

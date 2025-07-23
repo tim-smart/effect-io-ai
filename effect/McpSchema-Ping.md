@@ -13,6 +13,6 @@ disconnected.
 declare class Ping
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L394)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L395)
 
 Since v1.0.0

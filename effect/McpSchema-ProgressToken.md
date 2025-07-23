@@ -12,6 +12,6 @@ request.
 type ProgressToken = typeof ProgressToken.Type
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L55)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L56)
 
 Since v1.0.0

@@ -13,6 +13,6 @@ resources/subscribe request.
 declare class Unsubscribe
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L793)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L794)
 
 Since v1.0.0

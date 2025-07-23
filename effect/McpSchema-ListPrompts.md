@@ -12,6 +12,6 @@ server has.
 declare class ListPrompts
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L1010)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L1011)
 
 Since v1.0.0

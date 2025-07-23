@@ -11,6 +11,6 @@ A known resource that the server is capable of reading.
 declare class Resource
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L545)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L546)
 
 Since v1.0.0

@@ -11,6 +11,6 @@ Re-exports all named exports from the "./RpcSchema.js" module as `RpcSchema`.
 export * as RpcSchema from "./RpcSchema.js"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/index.ts#L29)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/index.ts#L34)
 
 Since v1.0.0

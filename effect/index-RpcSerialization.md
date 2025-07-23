@@ -11,6 +11,6 @@ Re-exports all named exports from the "./RpcSerialization.js" module as `RpcSeri
 export * as RpcSerialization from "./RpcSerialization.js"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/index.ts#L34)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/index.ts#L39)
 
 Since v1.0.0

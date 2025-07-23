@@ -11,6 +11,6 @@ Sent from the client to the server, to read a specific resource URI.
 declare class ReadResource
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L741)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L742)
 
 Since v1.0.0

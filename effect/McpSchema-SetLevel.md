@@ -11,6 +11,6 @@ A request from the client to the server, to enable or adjust logging.
 declare class SetLevel
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L1293)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L1294)
 
 Since v1.0.0

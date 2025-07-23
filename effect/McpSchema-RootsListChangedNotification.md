@@ -14,6 +14,6 @@ of roots using the ListRootsRequest.
 declare class RootsListChangedNotification
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L1668)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L1669)
 
 Since v1.0.0

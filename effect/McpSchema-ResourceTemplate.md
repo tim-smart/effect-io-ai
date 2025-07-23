@@ -11,6 +11,6 @@ A template description for resources available on the server.
 declare class ResourceTemplate
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L590)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L591)
 
 Since v1.0.0

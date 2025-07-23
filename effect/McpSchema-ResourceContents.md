@@ -11,6 +11,6 @@ The contents of a specific resource or sub-resource.
 declare class ResourceContents
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L631)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L632)
 
 Since v1.0.0

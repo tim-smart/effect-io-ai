@@ -11,6 +11,6 @@ Re-exports all named exports from the "./RpcServer.js" module as `RpcServer`.
 export * as RpcServer from "./RpcServer.js"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/index.ts#L39)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/index.ts#L44)
 
 Since v1.0.0

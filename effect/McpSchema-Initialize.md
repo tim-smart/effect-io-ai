@@ -12,6 +12,6 @@ asking it to begin initialization.
 declare class Initialize
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L440)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L441)
 
 Since v1.0.0

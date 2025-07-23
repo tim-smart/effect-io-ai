@@ -20,6 +20,6 @@ should be reported as an MCP error response.
 declare class CallToolResult
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L1200)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L1201)
 
 Since v1.0.0

@@ -14,6 +14,6 @@ https://datatracker.ietf.org/doc/html/rfc5424#section-6.2.1
 type LoggingLevel = typeof LoggingLevel.Type
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L1285)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L1286)
 
 Since v1.0.0

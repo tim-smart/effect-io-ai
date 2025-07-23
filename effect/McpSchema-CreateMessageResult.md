@@ -14,6 +14,6 @@ allow the server to see it.
 declare class CreateMessageResult
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L1427)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L1428)
 
 Since v1.0.0

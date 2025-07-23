@@ -21,6 +21,6 @@ balance them against other considerations.
 declare class ModelPreferences
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L1385)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L1386)
 
 Since v1.0.0

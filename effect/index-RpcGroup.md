@@ -11,6 +11,6 @@ Re-exports all named exports from the "./RpcGroup.js" module as `RpcGroup`.
 export * as RpcGroup from "./RpcGroup.js"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/index.ts#L14)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/index.ts#L19)
 
 Since v1.0.0

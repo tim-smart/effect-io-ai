@@ -12,6 +12,6 @@ inform how objects are used or displayed
 declare class Annotations
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L158)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L159)
 
 Since v1.0.0

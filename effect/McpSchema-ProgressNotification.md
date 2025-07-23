@@ -12,6 +12,6 @@ for a long-running request.
 declare class ProgressNotification
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L511)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L512)
 
 Since v1.0.0

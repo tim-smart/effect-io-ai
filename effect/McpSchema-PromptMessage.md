@@ -14,6 +14,6 @@ resources from the MCP server.
 declare class PromptMessage
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L985)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L986)
 
 Since v1.0.0

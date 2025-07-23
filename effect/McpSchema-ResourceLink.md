@@ -13,6 +13,6 @@ Note: resource links returned by tools are not guaranteed to appear in the resul
 declare class ResourceLink
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L959)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L960)
 
 Since v1.0.0

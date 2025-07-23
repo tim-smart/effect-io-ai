@@ -11,6 +11,6 @@ Re-exports all named exports from the "./RpcMiddleware.js" module as `RpcMiddlew
 export * as RpcMiddleware from "./RpcMiddleware.js"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/index.ts#L24)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/index.ts#L29)
 
 Since v1.0.0

@@ -11,6 +11,6 @@ Audio provided to or from an LLM.
 declare class AudioContent
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L916)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L917)
 
 Since v1.0.0

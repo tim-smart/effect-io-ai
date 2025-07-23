@@ -11,6 +11,6 @@ A uniquely identifying ID for a request in JSON-RPC.
 type RequestId = typeof RequestId.Type
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L34)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L35)
 
 Since v1.0.0

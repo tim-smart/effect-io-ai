@@ -11,6 +11,6 @@ The server's response to a prompts/list request from the client.
 declare class ListPromptsResult
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L996)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L997)
 
 Since v1.0.0

@@ -11,6 +11,6 @@ The server's response to a completion/complete request
 declare class CompleteResult
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L1523)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L1524)
 
 Since v1.0.0

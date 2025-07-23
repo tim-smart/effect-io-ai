@@ -11,6 +11,6 @@ The client's response to an elicitation request
 declare class ElicitAcceptResult
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L1682)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/McpSchema.ts#L1683)
 
 Since v1.0.0
