@@ -14,6 +14,6 @@ effect depends on is closed.
 declare const extendScope: <RIn, E, ROut>(self: Layer<ROut, E, RIn>) => Layer<ROut, E, Scope.Scope | RIn>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Layer.ts#L328)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Layer.ts#L329)
 
 Since v2.0.0

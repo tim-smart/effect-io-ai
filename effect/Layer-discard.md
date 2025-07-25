@@ -12,6 +12,6 @@ side-effects.
 declare const discard: <RIn, E, ROut>(self: Layer<ROut, E, RIn>) => Layer<never, E, RIn>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Layer.ts#L280)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Layer.ts#L281)
 
 Since v2.0.0

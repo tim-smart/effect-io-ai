@@ -11,6 +11,6 @@ A Layer that constructs an empty Context.
 declare const empty: Layer<never, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Layer.ts#L317)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Layer.ts#L318)
 
 Since v2.0.0

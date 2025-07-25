@@ -11,6 +11,6 @@ Adds the provided span to the span stack.
 declare const parentSpan: (span: Tracer.AnySpan) => Layer<Tracer.ParentSpan>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Layer.ts#L999)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Layer.ts#L1005)
 
 Since v2.0.0

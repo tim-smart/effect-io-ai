@@ -11,6 +11,6 @@ Constructs a layer that dies with the specified defect.
 declare const dieSync: (evaluate: LazyArg<unknown>) => Layer<unknown>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Layer.ts#L271)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Layer.ts#L272)
 
 Since v2.0.0

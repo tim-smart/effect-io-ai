@@ -31,6 +31,6 @@ const MyServiceTest = Layer.mock(MyService, {
 declare const mock: { <I, S extends object>(tag: Context.Tag<I, S>): (service: PartialEffectful<S>) => Layer<I>; <I, S extends object>(tag: Context.Tag<I, S>, service: PartialEffectful<S>): Layer<I>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Layer.ts#L444)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Layer.ts#L450)
 
 Since v3.17.0

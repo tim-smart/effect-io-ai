@@ -11,6 +11,6 @@ Builds a layer into a scoped value.
 declare const build: <RIn, E, ROut>(self: Layer<ROut, E, RIn>) => Effect.Effect<Context.Context<ROut>, E, Scope.Scope | RIn>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Layer.ts#L197)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Layer.ts#L198)
 
 Since v2.0.0

@@ -11,6 +11,6 @@ Constructs a layer that fails with the specified error.
 declare const failSync: <E>(evaluate: LazyArg<E>) => Layer<unknown, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Layer.ts#L345)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Layer.ts#L346)
 
 Since v2.0.0

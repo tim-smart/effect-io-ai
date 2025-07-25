@@ -12,6 +12,6 @@ services.
 declare const effectContext: <A, E, R>(effect: Effect.Effect<Context.Context<A>, E, R>) => Layer<A, E, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Layer.ts#L308)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Layer.ts#L309)
 
 Since v2.0.0

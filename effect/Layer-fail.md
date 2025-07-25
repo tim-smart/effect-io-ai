@@ -11,6 +11,6 @@ Constructs a layer that fails with the specified error.
 declare const fail: <E>(error: E) => Layer<unknown, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Layer.ts#L337)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Layer.ts#L338)
 
 Since v2.0.0
