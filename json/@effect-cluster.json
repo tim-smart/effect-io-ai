@@ -12,7 +12,7 @@
     "since": "1.0.0",
     "category": "Constructors",
     "signature": "declare const make: <E, R>(options: { readonly name: string; readonly cron: Cron.Cron; readonly execute: Effect.Effect<void, E, R>; readonly shardGroup?: string | undefined; readonly calculateNextRunFromPrevious?: boolean | undefined; readonly skipIfOlderThan?: Duration.DurationInput | undefined; }) => Layer.Layer<never, never, Sharding | Exclude<R, Scope>>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/ClusterCron.ts#L26"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ClusterCron.ts#L26"
   },
   {
     "_tag": "Class",
@@ -28,7 +28,7 @@
     "since": "1.0.0",
     "category": "errors",
     "signature": "declare class EntityNotAssignedToRunner",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/ClusterError.ts#L31"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ClusterError.ts#L31"
   },
   {
     "_tag": "Class",
@@ -44,7 +44,7 @@
     "since": "1.0.0",
     "category": "errors",
     "signature": "declare class EntityNotManagedByRunner",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/ClusterError.ts#L55"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ClusterError.ts#L55"
   },
   {
     "_tag": "Class",
@@ -60,7 +60,7 @@
     "since": "1.0.0",
     "category": "errors",
     "signature": "declare class MalformedMessage",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/ClusterError.ts#L79"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ClusterError.ts#L79"
   },
   {
     "_tag": "Class",
@@ -76,7 +76,7 @@
     "since": "1.0.0",
     "category": "errors",
     "signature": "declare class PersistenceError",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/ClusterError.ts#L112"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ClusterError.ts#L112"
   },
   {
     "_tag": "Class",
@@ -92,7 +92,7 @@
     "since": "1.0.0",
     "category": "errors",
     "signature": "declare class RunnerNotRegistered",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/ClusterError.ts#L136"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ClusterError.ts#L136"
   },
   {
     "_tag": "Class",
@@ -108,7 +108,7 @@
     "since": "1.0.0",
     "category": "errors",
     "signature": "declare class RunnerUnavailable",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/ClusterError.ts#L152"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ClusterError.ts#L152"
   },
   {
     "_tag": "Class",
@@ -124,7 +124,7 @@
     "since": "1.0.0",
     "category": "errors",
     "signature": "declare class MailboxFull",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/ClusterError.ts#L175"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ClusterError.ts#L175"
   },
   {
     "_tag": "Class",
@@ -140,7 +140,7 @@
     "since": "1.0.0",
     "category": "errors",
     "signature": "declare class AlreadyProcessingMessage",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/ClusterError.ts#L199"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ClusterError.ts#L199"
   },
   {
     "_tag": "Constant",
@@ -155,7 +155,7 @@
     "since": "1.0.0",
     "category": "Symbols",
     "signature": "declare const TypeId: unique symbol",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/ClusterError.ts#L16"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ClusterError.ts#L16"
   },
   {
     "_tag": "TypeAlias",
@@ -170,7 +170,7 @@
     "since": "1.0.0",
     "category": "Symbols",
     "signature": "type TypeId = typeof TypeId",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/ClusterError.ts#L22"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ClusterError.ts#L22"
   },
   {
     "_tag": "Constant",
@@ -185,7 +185,7 @@
     "since": "1.0.0",
     "category": "metrics",
     "signature": "declare const shards: Metric.Metric.Gauge<number>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/ClusterMetrics.ts#L10"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ClusterMetrics.ts#L10"
   },
   {
     "_tag": "Constant",
@@ -200,7 +200,7 @@
     "since": "1.0.0",
     "category": "metrics",
     "signature": "declare const entities: Metric.Metric.Gauge<bigint>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/ClusterMetrics.ts#L16"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ClusterMetrics.ts#L16"
   },
   {
     "_tag": "Constant",
@@ -215,7 +215,7 @@
     "since": "1.0.0",
     "category": "metrics",
     "signature": "declare const singletons: Metric.Metric.Gauge<number>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/ClusterMetrics.ts#L24"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ClusterMetrics.ts#L24"
   },
   {
     "_tag": "Constant",
@@ -230,7 +230,7 @@
     "since": "1.0.0",
     "category": "metrics",
     "signature": "declare const runners: Metric.Metric.Gauge<number>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/ClusterMetrics.ts#L30"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ClusterMetrics.ts#L30"
   },
   {
     "_tag": "Constant",
@@ -245,7 +245,7 @@
     "since": "1.0.0",
     "category": "metrics",
     "signature": "declare const assignedShards: Metric.Metric.Gauge<number>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/ClusterMetrics.ts#L36"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ClusterMetrics.ts#L36"
   },
   {
     "_tag": "Constant",
@@ -260,7 +260,7 @@
     "since": "1.0.0",
     "category": "metrics",
     "signature": "declare const unassignedShards: Metric.Metric.Gauge<number>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/ClusterMetrics.ts#L42"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ClusterMetrics.ts#L42"
   },
   {
     "_tag": "Constant",
@@ -275,7 +275,7 @@
     "since": "1.0.0",
     "category": "metrics",
     "signature": "declare const rebalances: Metric.Metric.Counter<number>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/ClusterMetrics.ts#L48"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ClusterMetrics.ts#L48"
   },
   {
     "_tag": "Class",
@@ -290,7 +290,7 @@
     "since": "1.0.0",
     "category": "Annotations",
     "signature": "declare class Persisted",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/ClusterSchema.ts#L12"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ClusterSchema.ts#L12"
   },
   {
     "_tag": "Class",
@@ -305,7 +305,7 @@
     "since": "1.0.0",
     "category": "Annotations",
     "signature": "declare class Uninterruptible",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/ClusterSchema.ts#L20"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ClusterSchema.ts#L20"
   },
   {
     "_tag": "Class",
@@ -320,7 +320,22 @@
     "since": "1.0.0",
     "category": "Annotations",
     "signature": "declare class ShardGroup",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/ClusterSchema.ts#L30"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ClusterSchema.ts#L30"
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "ClusterSchema.ts",
+      "path": "src/ClusterSchema.ts"
+    },
+    "project": "@effect/cluster",
+    "name": "ClientTracingEnabled",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Annotations",
+    "signature": "declare class ClientTracingEnabled",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ClusterSchema.ts#L38"
   },
   {
     "_tag": "Constant",
@@ -335,7 +350,7 @@
     "since": "1.0.0",
     "category": "Constructors",
     "signature": "declare const make: Effect.Effect<{ readonly register: (workflow: Workflow.Any, execute: (payload: object, executionId: string) => Effect.Effect<unknown, unknown, WorkflowInstance | WorkflowEngine>) => Effect.Effect<void>; readonly execute: <const Discard extends boolean>(options: { readonly workflow: Workflow.Any; readonly executionId: string; readonly payload: object; readonly discard: Discard; readonly parent?: WorkflowInstance[\"Type\"] | undefined; }) => Effect.Effect<Discard extends true ? void : Workflow.Result<unknown, unknown>>; readonly interrupt: (workflow: Workflow.Any, executionId: string) => Effect.Effect<void>; readonly resume: (workflow: Workflow.Any, executionId: string) => Effect.Effect<void>; readonly activityExecute: (options: { readonly activity: Activity.Any; readonly attempt: number; }) => Effect.Effect<Workflow.Result<unknown, unknown>, never, WorkflowInstance>; readonly deferredResult: (deferred: DurableDeferred.Any) => Effect.Effect<Option.Option<Schema.ExitEncoded<unknown, unknown, unknown>>, never, WorkflowInstance>; readonly deferredDone: (options: { readonly workflowName: string; readonly executionId: string; readonly deferred: DurableDeferred.Any; readonly exit: Schema.ExitEncoded<unknown, unknown, unknown>; }) => Effect.Effect<void>; readonly scheduleClock: (options: { readonly workflow: Workflow.Any; readonly executionId: string; readonly clock: DurableClock.DurableClock; }) => Effect.Effect<void>; }, never, Scope | MessageStorage | Sharding.Sharding>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/ClusterWorkflowEngine.ts#L38"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ClusterWorkflowEngine.ts#L38"
   },
   {
     "_tag": "Constant",
@@ -350,7 +365,7 @@
     "since": "1.0.0",
     "category": "Layers",
     "signature": "declare const layer: Layer.Layer<WorkflowEngine, never, MessageStorage | Sharding.Sharding>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/ClusterWorkflowEngine.ts#L595"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ClusterWorkflowEngine.ts#L595"
   },
   {
     "_tag": "Constant",
@@ -365,7 +380,7 @@
     "since": "1.0.0",
     "category": "symbols",
     "signature": "declare const symbol: unique symbol",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/DeliverAt.ts#L11"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/DeliverAt.ts#L11"
   },
   {
     "_tag": "Function",
@@ -380,7 +395,7 @@
     "since": "1.0.0",
     "category": "guards",
     "signature": "declare const isDeliverAt: (self: unknown) => self is DeliverAt",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/DeliverAt.ts#L25"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/DeliverAt.ts#L25"
   },
   {
     "_tag": "Function",
@@ -395,7 +410,7 @@
     "since": "1.0.0",
     "category": "accessors",
     "signature": "declare const toMillis: (self: unknown) => number | null",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/DeliverAt.ts#L31"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/DeliverAt.ts#L31"
   },
   {
     "_tag": "Interface",
@@ -410,7 +425,7 @@
     "since": "1.0.0",
     "category": "models",
     "signature": "export interface DeliverAt {\n  [symbol](): DateTime\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/DeliverAt.ts#L17"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/DeliverAt.ts#L17"
   },
   {
     "_tag": "Class",
@@ -426,7 +441,7 @@
     "since": "1.0.0",
     "category": "context",
     "signature": "declare class CurrentAddress",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Entity.ts#L410"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Entity.ts#L410"
   },
   {
     "_tag": "Class",
@@ -442,7 +457,7 @@
     "since": "1.0.0",
     "category": "context",
     "signature": "declare class CurrentRunnerAddress",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Entity.ts#L421"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Entity.ts#L421"
   },
   {
     "_tag": "Class",
@@ -457,7 +472,7 @@
     "since": "1.0.0",
     "category": "Request",
     "signature": "declare class Request<Rpc>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Entity.ts#L470"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Entity.ts#L470"
   },
   {
     "_tag": "Constant",
@@ -472,7 +487,7 @@
     "since": "1.0.0",
     "category": "type ids",
     "signature": "declare const TypeId: unique symbol",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Entity.ts#L50"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Entity.ts#L50"
   },
   {
     "_tag": "Constant",
@@ -487,7 +502,7 @@
     "since": "1.0.0",
     "category": "Testing",
     "signature": "declare const makeTestClient: <Type extends string, Rpcs extends Rpc.Any, LA, LE, LR>(entity: Entity<Type, Rpcs>, layer: Layer.Layer<LA, LE, LR>) => Effect.Effect<(entityId: string) => Effect.Effect<RpcClient.RpcClient<Rpcs>>, LE, Scope | ShardingConfig | Exclude<LR, Sharding> | Rpc.MiddlewareClient<Rpcs>>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Entity.ts#L499"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Entity.ts#L499"
   },
   {
     "_tag": "Function",
@@ -502,7 +517,7 @@
     "since": "1.0.0",
     "category": "refinements",
     "signature": "declare const isEntity: (u: unknown) => u is Any",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Entity.ts#L211"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Entity.ts#L211"
   },
   {
     "_tag": "Function",
@@ -518,7 +533,7 @@
     "since": "1.0.0",
     "category": "constructors",
     "signature": "declare const fromRpcGroup: <const Type extends string, Rpcs extends Rpc.Any>(type: Type, protocol: RpcGroup.RpcGroup<Rpcs>) => Entity<Type, Rpcs>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Entity.ts#L367"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Entity.ts#L367"
   },
   {
     "_tag": "Function",
@@ -534,7 +549,7 @@
     "since": "1.0.0",
     "category": "constructors",
     "signature": "declare const make: <const Type extends string, Rpcs extends ReadonlyArray<Rpc.Any>>(type: Type, protocol: Rpcs) => Entity<Type, Rpcs[number]>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Entity.ts#L392"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Entity.ts#L392"
   },
   {
     "_tag": "Interface",
@@ -549,7 +564,7 @@
     "since": "1.0.0",
     "category": "models",
     "signature": "export interface Entity<\n  in out Type extends string,\n  in out Rpcs extends Rpc.Any\n> extends Equal.Equal {\n  readonly [TypeId]: TypeId\n  /**\n   * The name of the entity type.\n   */\n  readonly type: Type & Brand<\"EntityType\">\n\n  /**\n   * A RpcGroup definition for messages which represents the messaging protocol\n   * that the entity is capable of processing.\n   */\n  readonly protocol: RpcGroup.RpcGroup<Rpcs>\n\n  /**\n   * Get the shard group for the given EntityId.\n   */\n  getShardGroup(entityId: EntityId): string\n\n  /**\n   * Get the ShardId for the given EntityId.\n   */\n  getShardId(entityId: EntityId): Effect.Effect<ShardId.ShardId, never, Sharding>\n\n  /**\n   * Annotate the entity with a value.\n   */\n  annotate<I, S>(tag: Context.Tag<I, S>, value: S): Entity<Type, Rpcs>\n\n  /**\n   * Annotate the Rpc's above this point with a value.\n   */\n  annotateRpcs<I, S>(tag: Context.Tag<I, S>, value: S): Entity<Type, Rpcs>\n\n  /**\n   * Annotate the entity with a context object.\n   */\n  annotateContext<S>(context: Context.Context<S>): Entity<Type, Rpcs>\n\n  /**\n   * Annotate the Rpc's above this point with a context object.\n   */\n  annotateRpcsContext<S>(context: Context.Context<S>): Entity<Type, Rpcs>\n\n  /**\n   * Create a client for this entity.\n   */\n  readonly client: Effect.Effect<\n    (\n      entityId: string\n    ) => RpcClient.RpcClient.From<\n      Rpcs,\n      MailboxFull | AlreadyProcessingMessage | PersistenceError | EntityNotManagedByRunner\n    >,\n    never,\n    Sharding\n  >\n\n  /**\n   * Create a Layer from an Entity.\n   *\n   * It will register the entity with the Sharding service.\n   */\n  toLayer<\n    Handlers extends HandlersFrom<Rpcs>,\n    RX = never\n  >(\n    build: Handlers | Effect.Effect<Handlers, never, RX>,\n    options?: {\n      readonly maxIdleTime?: DurationInput | undefined\n      readonly concurrency?: number | \"unbounded\" | undefined\n      readonly mailboxCapacity?: number | \"unbounded\" | undefined\n      readonly disableFatalDefects?: boolean | undefined\n      readonly defectRetryPolicy?: Schedule.Schedule<any, unknown> | undefined\n      readonly spanAttributes?: Record<string, string> | undefined\n    }\n  ): Layer.Layer<\n    never,\n    never,\n    | Exclude<RX, Scope | CurrentAddress | CurrentRunnerAddress>\n    | RpcGroup.HandlersContext<Rpcs, Handlers>\n    | Rpc.Context<Rpcs>\n    | Rpc.Middleware<Rpcs>\n    | Sharding\n  >\n\n  of<Handlers extends HandlersFrom<Rpcs>>(handlers: Handlers): Handlers\n\n  /**\n   * Create a Layer from an Entity.\n   *\n   * It will register the entity with the Sharding service.\n   */\n  toLayerMailbox<\n    R,\n    RX = never\n  >(\n    build:\n      | ((\n        mailbox: Mailbox.ReadonlyMailbox<Envelope.Request<Rpcs>>,\n        replier: Replier<Rpcs>\n      ) => Effect.Effect<never, never, R>)\n      | Effect.Effect<\n        (\n          mailbox: Mailbox.ReadonlyMailbox<Envelope.Request<Rpcs>>,\n          replier: Replier<Rpcs>\n        ) => Effect.Effect<never, never, R>,\n        never,\n        RX\n      >,\n    options?: {\n      readonly maxIdleTime?: DurationInput | undefined\n      readonly mailboxCapacity?: number | \"unbounded\" | undefined\n      readonly disableFatalDefects?: boolean | undefined\n      readonly defectRetryPolicy?: Schedule.Schedule<any, unknown> | undefined\n      readonly spanAttributes?: Record<string, string> | undefined\n    }\n  ): Layer.Layer<\n    never,\n    never,\n    | Exclude<RX, Scope | CurrentAddress | CurrentRunnerAddress>\n    | R\n    | Rpc.Context<Rpcs>\n    | Rpc.Middleware<Rpcs>\n    | Sharding\n  >\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Entity.ts#L62"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Entity.ts#L62"
   },
   {
     "_tag": "Interface",
@@ -564,7 +579,7 @@
     "since": "1.0.0",
     "category": "Replier",
     "signature": "export interface Replier<Rpcs extends Rpc.Any> {\n  readonly succeed: <R extends Rpcs>(\n    request: Envelope.Request<R>,\n    value: Replier.Success<R>\n  ) => Effect.Effect<void>\n\n  readonly fail: <R extends Rpcs>(\n    request: Envelope.Request<R>,\n    error: Rpc.Error<R>\n  ) => Effect.Effect<void>\n\n  readonly failCause: <R extends Rpcs>(\n    request: Envelope.Request<R>,\n    cause: Cause.Cause<Rpc.Error<R>>\n  ) => Effect.Effect<void>\n\n  readonly complete: <R extends Rpcs>(\n    request: Envelope.Request<R>,\n    exit: Exit.Exit<Replier.Success<R>, Rpc.Error<R>>\n  ) => Effect.Effect<void>\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Entity.ts#L430"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Entity.ts#L430"
   },
   {
     "_tag": "TypeAlias",
@@ -579,7 +594,7 @@
     "since": "1.0.0",
     "category": "type ids",
     "signature": "type TypeId = typeof TypeId",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Entity.ts#L56"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Entity.ts#L56"
   },
   {
     "_tag": "TypeAlias",
@@ -594,7 +609,7 @@
     "since": "1.0.0",
     "category": "models",
     "signature": "type Any = Entity<string, Rpc.Any>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Entity.ts#L195"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Entity.ts#L195"
   },
   {
     "_tag": "TypeAlias",
@@ -609,7 +624,7 @@
     "since": "1.0.0",
     "category": "models",
     "signature": "type HandlersFrom<Rpc> = {\n  readonly [Current in Rpc as Current[\"_tag\"]]: (\n    envelope: Request<Current>\n  ) => Rpc.ResultFrom<Current, any> | Rpc.Fork<Rpc.ResultFrom<Current, any>>\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Entity.ts#L201"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Entity.ts#L201"
   },
   {
     "_tag": "TypeAlias",
@@ -624,7 +639,7 @@
     "since": "1.0.0",
     "category": "Replier",
     "signature": "type Success<R> = Rpc.Success<R> extends Stream.Stream<infer _A, infer _E, infer _R> ?\n    Stream.Stream<_A, _E | Rpc.Error<R>, _R> | Mailbox.ReadonlyMailbox<_A, _E | Rpc.Error<R>>\n    : Rpc.Success<R>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Entity.ts#L461"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Entity.ts#L461"
   },
   {
     "_tag": "Class",
@@ -640,7 +655,7 @@
     "since": "1.0.0",
     "category": "models",
     "signature": "declare class EntityAddress",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/EntityAddress.ts#L31"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/EntityAddress.ts#L31"
   },
   {
     "_tag": "Constant",
@@ -655,7 +670,7 @@
     "since": "1.0.0",
     "category": "type ids",
     "signature": "declare const TypeId: unique symbol",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/EntityAddress.ts#L17"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/EntityAddress.ts#L17"
   },
   {
     "_tag": "Constant",
@@ -671,7 +686,7 @@
     "since": "1.0.0",
     "category": "schemas",
     "signature": "declare const EntityAddressFromSelf: Schema.Schema<EntityAddress, EntityAddress, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/EntityAddress.ts#L63"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/EntityAddress.ts#L63"
   },
   {
     "_tag": "TypeAlias",
@@ -686,7 +701,7 @@
     "since": "1.0.0",
     "category": "type ids",
     "signature": "type TypeId = typeof TypeId",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/EntityAddress.ts#L23"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/EntityAddress.ts#L23"
   },
   {
     "_tag": "Constant",
@@ -701,7 +716,7 @@
     "since": "1.0.0",
     "category": "constructors",
     "signature": "declare const EntityId: Schema.brand<typeof Schema.NonEmptyTrimmedString, \"EntityId\">",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/EntityId.ts#L10"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/EntityId.ts#L10"
   },
   {
     "_tag": "TypeAlias",
@@ -716,7 +731,7 @@
     "since": "1.0.0",
     "category": "models",
     "signature": "type EntityId = typeof EntityId.Type",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/EntityId.ts#L16"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/EntityId.ts#L16"
   },
   {
     "_tag": "Function",
@@ -732,7 +747,7 @@
     "since": "1.0.0",
     "category": "Constructors",
     "signature": "declare const toRpcGroup: <Type extends string, Rpcs extends Rpc.Any>(entity: Entity.Entity<Type, Rpcs>) => RpcGroup.RpcGroup<ConvertRpcs<Rpcs, Type>>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/EntityProxy.ts#L48"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/EntityProxy.ts#L48"
   },
   {
     "_tag": "Function",
@@ -748,7 +763,7 @@
     "since": "1.0.0",
     "category": "Constructors",
     "signature": "declare const toHttpApiGroup: <const Name extends string, Type extends string, Rpcs extends Rpc.Any>(name: Name, entity: Entity.Entity<Type, Rpcs>) => HttpApiGroup.HttpApiGroup<Name, ConvertHttpApi<Rpcs>>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/EntityProxy.ts#L162"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/EntityProxy.ts#L162"
   },
   {
     "_tag": "TypeAlias",
@@ -763,7 +778,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "type ConvertRpcs<Rpcs, Prefix> = Rpcs extends Rpc.Rpc<\n  infer _Tag,\n  infer _Payload,\n  infer _Success,\n  infer _Error,\n  infer _Middleware\n> ?\n    | Rpc.Rpc<\n      `${Prefix}.${_Tag}`,\n      Schema.Struct<{\n        entityId: typeof Schema.String\n        payload: _Payload\n      }>,\n      _Success,\n      Schema.Schema<\n        _Error[\"Type\"] | MailboxFull | AlreadyProcessingMessage | PersistenceError | EntityNotManagedByRunner,\n        | _Error[\"Encoded\"]\n        | typeof MailboxFull[\"Encoded\"]\n        | typeof AlreadyProcessingMessage[\"Encoded\"]\n        | typeof PersistenceError[\"Encoded\"]\n        | typeof EntityNotManagedByRunner[\"Encoded\"],\n        _Error[\"Context\"]\n      >\n    >\n    | Rpc.Rpc<\n      `${Prefix}.${_Tag}Discard`,\n      Schema.Struct<{\n        entityId: typeof Schema.String\n        payload: _Payload\n      }>,\n      typeof Schema.Void,\n      Schema.Union<[\n        typeof MailboxFull,\n        typeof AlreadyProcessingMessage,\n        typeof PersistenceError,\n        typeof EntityNotManagedByRunner\n      ]>\n    >\n  : never",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/EntityProxy.ts#L82"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/EntityProxy.ts#L82"
   },
   {
     "_tag": "TypeAlias",
@@ -778,7 +793,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "type ConvertHttpApi<Rpcs> = Rpcs extends Rpc.Rpc<\n  infer _Tag,\n  infer _Payload,\n  infer _Success,\n  infer _Error,\n  infer _Middleware\n> ?\n    | HttpApiEndpoint.HttpApiEndpoint<\n      _Tag,\n      \"POST\",\n      { readonly entityId: string },\n      never,\n      _Payload[\"Type\"],\n      never,\n      _Success[\"Type\"],\n      _Error[\"Type\"] | MailboxFull | AlreadyProcessingMessage | PersistenceError | EntityNotManagedByRunner,\n      _Payload[\"Context\"] | _Success[\"Context\"],\n      _Error[\"Context\"]\n    >\n    | HttpApiEndpoint.HttpApiEndpoint<\n      `${_Tag}Discard`,\n      \"POST\",\n      { readonly entityId: string },\n      never,\n      _Payload[\"Type\"],\n      never,\n      void,\n      MailboxFull | AlreadyProcessingMessage | PersistenceError | EntityNotManagedByRunner\n    >\n  : never",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/EntityProxy.ts#L195"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/EntityProxy.ts#L195"
   },
   {
     "_tag": "Function",
@@ -793,7 +808,7 @@
     "since": "1.0.0",
     "category": "Layers",
     "signature": "declare const layerHttpApi: <ApiId extends string, Groups extends HttpApiGroup.Any, ApiE, ApiR, Name extends HttpApiGroup.Name<Groups>, Type extends string, Rpcs extends Rpc.Any>(api: HttpApi.HttpApi<ApiId, Groups, ApiE, ApiR>, name: Name, entity: Entity.Entity<Type, Rpcs>) => Layer.Layer<ApiGroup<ApiId, Name>, never, Sharding | Rpc.Context<Rpcs>>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/EntityProxyServer.ts#L18"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/EntityProxyServer.ts#L18"
   },
   {
     "_tag": "Function",
@@ -808,7 +823,7 @@
     "since": "1.0.0",
     "category": "Layers",
     "signature": "declare const layerRpcHandlers: <const Type extends string, Rpcs extends Rpc.Any>(entity: Entity.Entity<Type, Rpcs>) => Layer.Layer<RpcHandlers<Rpcs, Type>, never, Sharding | Rpc.Context<Rpcs>>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/EntityProxyServer.ts#L59"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/EntityProxyServer.ts#L59"
   },
   {
     "_tag": "TypeAlias",
@@ -823,7 +838,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "type RpcHandlers<Rpcs, Prefix> = Rpcs extends Rpc.Rpc<\n  infer _Tag,\n  infer _Payload,\n  infer _Success,\n  infer _Error,\n  infer _Middleware\n> ? Rpc.Handler<`${Prefix}.${_Tag}`> | Rpc.Handler<`${Prefix}.${_Tag}Discard`>\n  : never",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/EntityProxyServer.ts#L89"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/EntityProxyServer.ts#L89"
   },
   {
     "_tag": "Constant",
@@ -838,7 +853,7 @@
     "since": "1.0.0",
     "category": "constructors",
     "signature": "declare const EntityType: Schema.brand<typeof Schema.NonEmptyTrimmedString, \"EntityType\">",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/EntityType.ts#L10"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/EntityType.ts#L10"
   },
   {
     "_tag": "TypeAlias",
@@ -853,7 +868,7 @@
     "since": "1.0.0",
     "category": "models",
     "signature": "type EntityType = typeof EntityType.Type",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/EntityType.ts#L16"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/EntityType.ts#L16"
   },
   {
     "_tag": "Class",
@@ -868,7 +883,7 @@
     "since": "1.0.0",
     "category": "models",
     "signature": "declare class AckChunk",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Envelope.ts#L75"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Envelope.ts#L75"
   },
   {
     "_tag": "Class",
@@ -883,7 +898,7 @@
     "since": "1.0.0",
     "category": "models",
     "signature": "declare class Interrupt",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Envelope.ts#L101"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Envelope.ts#L101"
   },
   {
     "_tag": "Constant",
@@ -898,7 +913,7 @@
     "since": "1.0.0",
     "category": "type ids",
     "signature": "declare const TypeId: unique symbol",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Envelope.ts#L17"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Envelope.ts#L17"
   },
   {
     "_tag": "Constant",
@@ -913,7 +928,7 @@
     "since": "1.0.0",
     "category": "serialization / deserialization",
     "signature": "declare const EnvelopeFromSelf: Schema.Schema<Envelope.Any, Envelope.Any, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Envelope.ts#L203"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Envelope.ts#L203"
   },
   {
     "_tag": "Constant",
@@ -928,7 +943,7 @@
     "since": "1.0.0",
     "category": "serialization / deserialization",
     "signature": "declare const RequestFromSelf: Schema.Schema<Request.Any, Request.Any, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Envelope.ts#L214"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Envelope.ts#L214"
   },
   {
     "_tag": "Constant",
@@ -943,7 +958,7 @@
     "since": "1.0.0",
     "category": "serialization / deserialization",
     "signature": "declare const PartialEncodedRequest: Schema.Struct<{ _tag: Schema.Literal<[\"Request\"]>; requestId: Schema.Schema<Snowflake, string>; address: typeof EntityAddress; tag: typeof Schema.String; payload: typeof Schema.Unknown; headers: Schema.Schema<Headers.Headers, ReadonlyRecord<string, string>>; traceId: Schema.optional<typeof Schema.String>; spanId: Schema.optional<typeof Schema.String>; sampled: Schema.optional<typeof Schema.Boolean>; }>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Envelope.ts#L225"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Envelope.ts#L225"
   },
   {
     "_tag": "Constant",
@@ -958,7 +973,7 @@
     "since": "1.0.0",
     "category": "serialization / deserialization",
     "signature": "declare const PartialEncoded: Schema.Union<[Schema.Struct<{ _tag: Schema.Literal<[\"Request\"]>; requestId: Schema.Schema<Snowflake, string>; address: typeof EntityAddress; tag: typeof Schema.String; payload: typeof Schema.Unknown; headers: Schema.Schema<Headers.Headers, ReadonlyRecord<string, string>>; traceId: Schema.optional<typeof Schema.String>; spanId: Schema.optional<typeof Schema.String>; sampled: Schema.optional<typeof Schema.Boolean>; }>, typeof AckChunk, typeof Interrupt]>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Envelope.ts#L253"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Envelope.ts#L253"
   },
   {
     "_tag": "Constant",
@@ -973,7 +988,7 @@
     "since": "1.0.0",
     "category": "serialization / deserialization",
     "signature": "declare const PartialEncodedArray: Schema.Schema<Array<Envelope.PartialEncoded>, Array<Envelope.Encoded>, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Envelope.ts#L280"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Envelope.ts#L280"
   },
   {
     "_tag": "Constant",
@@ -988,7 +1003,7 @@
     "since": "1.0.0",
     "category": "serialization / deserialization",
     "signature": "declare const PartialEncodedRequestFromSelf: Schema.Struct<{ _tag: Schema.Literal<[\"Request\"]>; requestId: Schema.Schema<Snowflake>; address: Schema.Schema<EntityAddress>; tag: typeof Schema.String; payload: typeof Schema.Unknown; headers: Schema.Schema<Headers.Headers>; traceId: Schema.optional<typeof Schema.String>; spanId: Schema.optional<typeof Schema.String>; sampled: Schema.optional<typeof Schema.Boolean>; }>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Envelope.ts#L289"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Envelope.ts#L289"
   },
   {
     "_tag": "Constant",
@@ -1003,7 +1018,7 @@
     "since": "1.0.0",
     "category": "serialization / deserialization",
     "signature": "declare const PartialEncodedFromSelf: Schema.Union<[Schema.Struct<{ _tag: Schema.Literal<[\"Request\"]>; requestId: Schema.Schema<Snowflake>; address: Schema.Schema<EntityAddress>; tag: typeof Schema.String; payload: typeof Schema.Unknown; headers: Schema.Schema<Headers.Headers>; traceId: Schema.optional<typeof Schema.String>; spanId: Schema.optional<typeof Schema.String>; sampled: Schema.optional<typeof Schema.Boolean>; }>, Schema.Schema<AckChunk, AckChunk, never>, Schema.Schema<Interrupt, Interrupt, never>]>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Envelope.ts#L317"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Envelope.ts#L317"
   },
   {
     "_tag": "Function",
@@ -1018,7 +1033,7 @@
     "since": "1.0.0",
     "category": "refinements",
     "signature": "declare const isEnvelope: (u: unknown) => u is Envelope<any>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Envelope.ts#L169"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Envelope.ts#L169"
   },
   {
     "_tag": "Function",
@@ -1033,7 +1048,7 @@
     "since": "1.0.0",
     "category": "constructors",
     "signature": "declare const makeRequest: <Rpc extends Rpc.Any>(options: { readonly requestId: Snowflake; readonly address: EntityAddress; readonly tag: Rpc.Tag<Rpc>; readonly payload: Rpc.Payload<Rpc>; readonly headers: Headers.Headers; readonly traceId?: string | undefined; readonly spanId?: string | undefined; readonly sampled?: boolean | undefined; }) => Request<Rpc>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Envelope.ts#L175"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Envelope.ts#L175"
   },
   {
     "_tag": "Function",
@@ -1048,7 +1063,7 @@
     "since": "1.0.0",
     "category": "primary key",
     "signature": "declare const primaryKey: <R extends Rpc.Any>(envelope: Envelope<R>) => string | null",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Envelope.ts#L345"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Envelope.ts#L345"
   },
   {
     "_tag": "Function",
@@ -1063,7 +1078,7 @@
     "since": "1.0.0",
     "category": "primary key",
     "signature": "declare const primaryKeyByAddress: (options: { readonly address: EntityAddress; readonly tag: string; readonly id: string; }) => string",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Envelope.ts#L360"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Envelope.ts#L360"
   },
   {
     "_tag": "Interface",
@@ -1078,7 +1093,7 @@
     "since": "1.0.0",
     "category": "models",
     "signature": "export interface Request<in out Rpc extends Rpc.Any> {\n  readonly [TypeId]: TypeId\n  readonly _tag: \"Request\"\n  readonly requestId: Snowflake\n  readonly address: EntityAddress\n  readonly tag: Rpc.Tag<Rpc>\n  readonly payload: Rpc.Payload<Rpc>\n  readonly headers: Headers.Headers\n  readonly traceId?: string | undefined\n  readonly spanId?: string | undefined\n  readonly sampled?: boolean | undefined\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Envelope.ts#L58"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Envelope.ts#L58"
   },
   {
     "_tag": "TypeAlias",
@@ -1093,7 +1108,7 @@
     "since": "1.0.0",
     "category": "type ids",
     "signature": "type TypeId = typeof TypeId",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Envelope.ts#L23"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Envelope.ts#L23"
   },
   {
     "_tag": "TypeAlias",
@@ -1108,7 +1123,7 @@
     "since": "1.0.0",
     "category": "models",
     "signature": "type Envelope<R> = Request<R> | AckChunk | Interrupt",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Envelope.ts#L29"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Envelope.ts#L29"
   },
   {
     "_tag": "TypeAlias",
@@ -1123,7 +1138,7 @@
     "since": "1.0.0",
     "category": "models",
     "signature": "type Any = Envelope<any>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Envelope.ts#L39"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Envelope.ts#L39"
   },
   {
     "_tag": "TypeAlias",
@@ -1138,7 +1153,7 @@
     "since": "1.0.0",
     "category": "models",
     "signature": "type Encoded = Request.Encoded | typeof AckChunk.Encoded | typeof Interrupt.Encoded",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Envelope.ts#L45"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Envelope.ts#L45"
   },
   {
     "_tag": "TypeAlias",
@@ -1153,7 +1168,7 @@
     "since": "1.0.0",
     "category": "models",
     "signature": "type PartialEncoded = Request.PartialEncoded | AckChunk | Interrupt",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Envelope.ts#L51"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Envelope.ts#L51"
   },
   {
     "_tag": "Interface",
@@ -1168,7 +1183,7 @@
     "since": "1.0.0",
     "category": "models",
     "signature": "export interface Encoded {\n    readonly _tag: \"Request\"\n    readonly requestId: string\n    readonly address: typeof EntityAddress.Encoded\n    readonly tag: string\n    readonly payload: unknown\n    readonly headers: ReadonlyRecord<string, string>\n    readonly traceId?: string | undefined\n    readonly spanId?: string | undefined\n    readonly sampled?: boolean | undefined\n  }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Envelope.ts#L136"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Envelope.ts#L136"
   },
   {
     "_tag": "Interface",
@@ -1183,7 +1198,7 @@
     "since": "1.0.0",
     "category": "models",
     "signature": "export interface PartialEncoded {\n    readonly _tag: \"Request\"\n    readonly requestId: Snowflake\n    readonly address: EntityAddress\n    readonly tag: string\n    readonly payload: unknown\n    readonly headers: Headers.Headers\n    readonly traceId?: string | undefined\n    readonly spanId?: string | undefined\n    readonly sampled?: boolean | undefined\n  }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Envelope.ts#L152"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Envelope.ts#L152"
   },
   {
     "_tag": "TypeAlias",
@@ -1198,7 +1213,7 @@
     "since": "1.0.0",
     "category": "models",
     "signature": "type Any = Request<any>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Envelope.ts#L130"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Envelope.ts#L130"
   },
   {
     "_tag": "Function",
@@ -1213,7 +1228,7 @@
     "since": "1.0.0",
     "category": "Layers",
     "signature": "declare const layerClientProtocolHttp: (options: { readonly path: string; readonly https?: boolean | undefined; }) => Layer.Layer<RpcClientProtocol, never, RpcSerialization.RpcSerialization | HttpClient.HttpClient>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpCommon.ts#L17"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/HttpCommon.ts#L17"
   },
   {
     "_tag": "Function",
@@ -1228,7 +1243,7 @@
     "since": "1.0.0",
     "category": "Layers",
     "signature": "declare const layerClientProtocolWebsocket: (options: { readonly path: string; readonly https?: boolean | undefined; }) => Layer.Layer<RpcClientProtocol, never, RpcSerialization.RpcSerialization | Socket.WebSocketConstructor>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpCommon.ts#L47"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/HttpCommon.ts#L47"
   },
   {
     "_tag": "Constant",
@@ -1243,7 +1258,7 @@
     "since": "1.0.0",
     "category": "Http App",
     "signature": "declare const toHttpApp: Effect.Effect<HttpApp.Default<never, Scope>, never, Scope | MessageStorage | RpcSerialization.RpcSerialization | Sharding.Sharding>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpRunner.ts#L28"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/HttpRunner.ts#L28"
   },
   {
     "_tag": "Constant",
@@ -1258,7 +1273,7 @@
     "since": "1.0.0",
     "category": "Http App",
     "signature": "declare const toHttpAppWebsocket: Effect.Effect<HttpApp.Default<never, Scope>, never, Scope | MessageStorage | RpcSerialization.RpcSerialization | Sharding.Sharding>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpRunner.ts#L44"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/HttpRunner.ts#L44"
   },
   {
     "_tag": "Constant",
@@ -1273,7 +1288,7 @@
     "since": "1.0.0",
     "category": "Layers",
     "signature": "declare const layerClient: Layer.Layer<Sharding.Sharding | Runners.Runners, never, ShardStorage | MessageStorage | ShardingConfig.ShardingConfig | Runners.RpcClientProtocol>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpRunner.ts#L62"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/HttpRunner.ts#L62"
   },
   {
     "_tag": "Constant",
@@ -1288,7 +1303,7 @@
     "since": "1.0.0",
     "category": "Layers",
     "signature": "declare const layerHttp: Layer.Layer<Sharding.Sharding | Runners.Runners, never, ShardStorage | MessageStorage | ShardingConfig.ShardingConfig | RpcSerialization.RpcSerialization | HttpClient.HttpClient | HttpServer.HttpServer>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpRunner.ts#L139"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/HttpRunner.ts#L139"
   },
   {
     "_tag": "Constant",
@@ -1303,7 +1318,7 @@
     "since": "1.0.0",
     "category": "Layers",
     "signature": "declare const layerHttpClientOnly: Layer.Layer<Sharding.Sharding | Runners.Runners, never, MessageStorage | ShardingConfig.ShardingConfig | RpcSerialization.RpcSerialization | HttpClient.HttpClient>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpRunner.ts#L157"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/HttpRunner.ts#L157"
   },
   {
     "_tag": "Constant",
@@ -1318,7 +1333,7 @@
     "since": "1.0.0",
     "category": "Layers",
     "signature": "declare const layerWebsocket: Layer.Layer<Sharding.Sharding | Runners.Runners, never, ShardStorage | MessageStorage | ShardingConfig.ShardingConfig | RpcSerialization.RpcSerialization | Socket.WebSocketConstructor | HttpServer.HttpServer>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpRunner.ts#L172"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/HttpRunner.ts#L172"
   },
   {
     "_tag": "Constant",
@@ -1333,7 +1348,7 @@
     "since": "1.0.0",
     "category": "Layers",
     "signature": "declare const layerWebsocketClientOnly: Layer.Layer<Sharding.Sharding | Runners.Runners, never, MessageStorage | ShardingConfig.ShardingConfig | RpcSerialization.RpcSerialization | Socket.WebSocketConstructor>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpRunner.ts#L190"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/HttpRunner.ts#L190"
   },
   {
     "_tag": "Function",
@@ -1349,7 +1364,7 @@
     "since": "1.0.0",
     "category": "Layers",
     "signature": "declare const layer: <I = HttpRouter.Default>(options: { readonly path: HttpRouter.PathInput; readonly routerTag?: HttpRouter.HttpRouter.TagClass<I, string, any, any>; readonly logAddress?: boolean | undefined; }) => Layer.Layer<Sharding.Sharding | Runners.Runners, never, RpcSerialization.RpcSerialization | ShardingConfig.ShardingConfig | Runners.RpcClientProtocol | HttpServer.HttpServer | MessageStorage | ShardStorage>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpRunner.ts#L81"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/HttpRunner.ts#L81"
   },
   {
     "_tag": "Function",
@@ -1364,7 +1379,7 @@
     "since": "1.0.0",
     "category": "Layers",
     "signature": "declare const layerWebsocketOptions: <I = HttpRouter.Default>(options: { readonly path: HttpRouter.PathInput; readonly routerTag?: HttpRouter.HttpRouter.TagClass<I, string, any, any>; readonly logAddress?: boolean | undefined; }) => Layer.Layer<Sharding.Sharding | Runners.Runners, never, RpcSerialization.RpcSerialization | ShardingConfig.ShardingConfig | Runners.RpcClientProtocol | HttpServer.HttpServer | MessageStorage | ShardStorage>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpRunner.ts#L105"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/HttpRunner.ts#L105"
   },
   {
     "_tag": "Constant",
@@ -1379,7 +1394,7 @@
     "since": "1.0.0",
     "category": "Http App",
     "signature": "declare const toHttpApp: Effect.Effect<HttpApp.Default<never, Scope>, never, Scope | ShardManager.ShardManager | RpcSerialization.RpcSerialization>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpShardManager.ts#L27"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/HttpShardManager.ts#L27"
   },
   {
     "_tag": "Constant",
@@ -1394,7 +1409,7 @@
     "since": "1.0.0",
     "category": "Http App",
     "signature": "declare const toHttpAppWebsocket: Effect.Effect<HttpApp.Default<never, Scope>, never, Scope | ShardManager.ShardManager | RpcSerialization.RpcSerialization>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpShardManager.ts#L42"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/HttpShardManager.ts#L42"
   },
   {
     "_tag": "Constant",
@@ -1410,7 +1425,7 @@
     "since": "1.0.0",
     "category": "Layers",
     "signature": "declare const layerHttp: Layer.Layer<ShardManager.ShardManager, never, ShardStorage | ShardingConfig | RpcSerialization.RpcSerialization | RunnerHealth.RunnerHealth | ShardManager.Config | HttpClient.HttpClient | HttpServer.HttpServer>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpShardManager.ts#L222"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/HttpShardManager.ts#L222"
   },
   {
     "_tag": "Constant",
@@ -1426,7 +1441,7 @@
     "since": "1.0.0",
     "category": "Layers",
     "signature": "declare const layerWebsocket: Layer.Layer<ShardManager.ShardManager, never, ShardStorage | ShardingConfig | RpcSerialization.RpcSerialization | RunnerHealth.RunnerHealth | ShardManager.Config | Socket.WebSocketConstructor | HttpServer.HttpServer>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpShardManager.ts#L243"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/HttpShardManager.ts#L243"
   },
   {
     "_tag": "Constant",
@@ -1441,7 +1456,7 @@
     "since": "1.0.0",
     "category": "Layers",
     "signature": "declare const layerRunnerHealthHttp: Layer.Layer<RunnerHealth.RunnerHealth, never, ShardingConfig | RpcSerialization.RpcSerialization | HttpClient.HttpClient>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpShardManager.ts#L259"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/HttpShardManager.ts#L259"
   },
   {
     "_tag": "Constant",
@@ -1456,7 +1471,7 @@
     "since": "1.0.0",
     "category": "Layers",
     "signature": "declare const layerRunnerHealthWebsocket: Layer.Layer<RunnerHealth.RunnerHealth, never, ShardingConfig | RpcSerialization.RpcSerialization | Socket.WebSocketConstructor>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpShardManager.ts#L269"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/HttpShardManager.ts#L269"
   },
   {
     "_tag": "Function",
@@ -1472,7 +1487,7 @@
     "since": "1.0.0",
     "category": "Layers",
     "signature": "declare const layerNoServerHttp: (options: { readonly runnerPath: string; readonly runnerHttps?: boolean | undefined; }) => Layer.Layer<ShardManager.ShardManager, never, RpcSerialization.RpcSerialization | ShardStorage | RunnerHealth.RunnerHealth | HttpClient.HttpClient | ShardManager.Config | ShardingConfig>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpShardManager.ts#L64"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/HttpShardManager.ts#L64"
   },
   {
     "_tag": "Function",
@@ -1488,7 +1503,7 @@
     "since": "1.0.0",
     "category": "Layers",
     "signature": "declare const layerNoServerWebsocket: (options: { readonly runnerPath: string; readonly runnerHttps?: boolean | undefined; }) => Layer.Layer<ShardManager.ShardManager, never, RpcSerialization.RpcSerialization | ShardStorage | RunnerHealth.RunnerHealth | Socket.WebSocketConstructor | ShardManager.Config | ShardingConfig>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpShardManager.ts#L102"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/HttpShardManager.ts#L102"
   },
   {
     "_tag": "Function",
@@ -1504,7 +1519,7 @@
     "since": "1.0.0",
     "category": "Layers",
     "signature": "declare const layerHttpOptions: <I = HttpRouter.Default>(options: { readonly path: HttpRouter.PathInput; readonly routerTag?: HttpRouter.HttpRouter.TagClass<I, string, any, any>; readonly runnerPath: string; readonly runnerHttps?: boolean | undefined; readonly logAddress?: boolean | undefined; }) => Layer.Layer<ShardManager.ShardManager, never, RpcSerialization.RpcSerialization | ShardStorage | RunnerHealth.RunnerHealth | HttpClient.HttpClient | HttpServer.HttpServer | ShardManager.Config | ShardingConfig>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpShardManager.ts#L138"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/HttpShardManager.ts#L138"
   },
   {
     "_tag": "Function",
@@ -1520,7 +1535,7 @@
     "since": "1.0.0",
     "category": "Layers",
     "signature": "declare const layerWebsocketOptions: <I = HttpRouter.Default>(options: { readonly path: HttpRouter.PathInput; readonly routerTag?: HttpRouter.HttpRouter.TagClass<I, string, any, any>; readonly runnerPath: string; readonly runnerHttps?: boolean | undefined; readonly logAddress?: boolean | undefined; }) => Layer.Layer<ShardManager.ShardManager, never, RpcSerialization.RpcSerialization | ShardStorage | RunnerHealth.RunnerHealth | HttpServer.HttpServer | Socket.WebSocketConstructor | ShardManager.Config | ShardingConfig>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpShardManager.ts#L175"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/HttpShardManager.ts#L175"
   },
   {
     "_tag": "Export",
@@ -1536,7 +1551,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "export * as ClusterCron from \"./ClusterCron.js\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/index.ts#L4"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L4"
   },
   {
     "_tag": "Export",
@@ -1552,7 +1567,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "export * as ClusterError from \"./ClusterError.js\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/index.ts#L9"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L9"
   },
   {
     "_tag": "Export",
@@ -1568,7 +1583,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "export * as ClusterMetrics from \"./ClusterMetrics.js\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/index.ts#L14"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L14"
   },
   {
     "_tag": "Export",
@@ -1584,7 +1599,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "export * as ClusterSchema from \"./ClusterSchema.js\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/index.ts#L19"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L19"
   },
   {
     "_tag": "Export",
@@ -1600,7 +1615,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "export * as ClusterWorkflowEngine from \"./ClusterWorkflowEngine.js\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/index.ts#L24"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L24"
   },
   {
     "_tag": "Export",
@@ -1616,7 +1631,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "export * as DeliverAt from \"./DeliverAt.js\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/index.ts#L29"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L29"
   },
   {
     "_tag": "Export",
@@ -1632,7 +1647,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "export * as Entity from \"./Entity.js\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/index.ts#L34"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L34"
   },
   {
     "_tag": "Export",
@@ -1648,7 +1663,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "export * as EntityAddress from \"./EntityAddress.js\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/index.ts#L39"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L39"
   },
   {
     "_tag": "Export",
@@ -1664,7 +1679,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "export * as EntityId from \"./EntityId.js\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/index.ts#L44"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L44"
   },
   {
     "_tag": "Export",
@@ -1680,7 +1695,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "export * as EntityProxy from \"./EntityProxy.js\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/index.ts#L49"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L49"
   },
   {
     "_tag": "Export",
@@ -1696,7 +1711,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "export * as EntityProxyServer from \"./EntityProxyServer.js\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/index.ts#L54"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L54"
   },
   {
     "_tag": "Export",
@@ -1712,7 +1727,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "export * as EntityType from \"./EntityType.js\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/index.ts#L59"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L59"
   },
   {
     "_tag": "Export",
@@ -1728,7 +1743,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "export * as Envelope from \"./Envelope.js\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/index.ts#L64"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L64"
   },
   {
     "_tag": "Export",
@@ -1744,7 +1759,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "export * as HttpCommon from \"./HttpCommon.js\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/index.ts#L69"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L69"
   },
   {
     "_tag": "Export",
@@ -1760,7 +1775,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "export * as HttpRunner from \"./HttpRunner.js\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/index.ts#L74"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L74"
   },
   {
     "_tag": "Export",
@@ -1776,7 +1791,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "export * as HttpShardManager from \"./HttpShardManager.js\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/index.ts#L79"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L79"
   },
   {
     "_tag": "Export",
@@ -1792,7 +1807,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "export * as MachineId from \"./MachineId.js\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/index.ts#L84"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L84"
   },
   {
     "_tag": "Export",
@@ -1808,7 +1823,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "export * as Message from \"./Message.js\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/index.ts#L89"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L89"
   },
   {
     "_tag": "Export",
@@ -1824,7 +1839,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "export * as MessageStorage from \"./MessageStorage.js\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/index.ts#L94"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L94"
   },
   {
     "_tag": "Export",
@@ -1840,7 +1855,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "export * as Reply from \"./Reply.js\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/index.ts#L99"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L99"
   },
   {
     "_tag": "Export",
@@ -1856,7 +1871,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "export * as Runner from \"./Runner.js\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/index.ts#L104"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L104"
   },
   {
     "_tag": "Export",
@@ -1872,7 +1887,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "export * as RunnerAddress from \"./RunnerAddress.js\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/index.ts#L109"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L109"
   },
   {
     "_tag": "Export",
@@ -1888,7 +1903,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "export * as RunnerHealth from \"./RunnerHealth.js\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/index.ts#L114"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L114"
   },
   {
     "_tag": "Export",
@@ -1904,7 +1919,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "export * as RunnerServer from \"./RunnerServer.js\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/index.ts#L119"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L119"
   },
   {
     "_tag": "Export",
@@ -1920,7 +1935,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "export * as Runners from \"./Runners.js\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/index.ts#L124"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L124"
   },
   {
     "_tag": "Export",
@@ -1936,7 +1951,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "export * as ShardId from \"./ShardId.js\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/index.ts#L129"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L129"
   },
   {
     "_tag": "Export",
@@ -1952,7 +1967,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "export * as ShardManager from \"./ShardManager.js\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/index.ts#L134"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L134"
   },
   {
     "_tag": "Export",
@@ -1968,7 +1983,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "export * as ShardStorage from \"./ShardStorage.js\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/index.ts#L139"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L139"
   },
   {
     "_tag": "Export",
@@ -1984,7 +1999,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "export * as Sharding from \"./Sharding.js\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/index.ts#L144"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L144"
   },
   {
     "_tag": "Export",
@@ -2000,7 +2015,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "export * as ShardingConfig from \"./ShardingConfig.js\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/index.ts#L149"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L149"
   },
   {
     "_tag": "Export",
@@ -2016,7 +2031,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "export * as ShardingRegistrationEvent from \"./ShardingRegistrationEvent.js\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/index.ts#L154"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L154"
   },
   {
     "_tag": "Export",
@@ -2032,7 +2047,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "export * as Singleton from \"./Singleton.js\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/index.ts#L159"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L159"
   },
   {
     "_tag": "Export",
@@ -2048,7 +2063,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "export * as SingletonAddress from \"./SingletonAddress.js\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/index.ts#L164"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L164"
   },
   {
     "_tag": "Export",
@@ -2064,7 +2079,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "export * as Snowflake from \"./Snowflake.js\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/index.ts#L169"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L169"
   },
   {
     "_tag": "Export",
@@ -2080,7 +2095,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "export * as SocketRunner from \"./SocketRunner.js\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/index.ts#L174"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L174"
   },
   {
     "_tag": "Export",
@@ -2096,7 +2111,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "export * as SocketShardManager from \"./SocketShardManager.js\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/index.ts#L179"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L179"
   },
   {
     "_tag": "Export",
@@ -2112,7 +2127,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "export * as SqlMessageStorage from \"./SqlMessageStorage.js\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/index.ts#L184"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L184"
   },
   {
     "_tag": "Export",
@@ -2128,7 +2143,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "export * as SqlShardStorage from \"./SqlShardStorage.js\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/index.ts#L189"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L189"
   },
   {
     "_tag": "Export",
@@ -2144,7 +2159,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "export * as SynchronizedClock from \"./SynchronizedClock.js\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/index.ts#L194"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L194"
   },
   {
     "_tag": "Constant",
@@ -2159,7 +2174,7 @@
     "since": "1.0.0",
     "category": "constructors",
     "signature": "declare const MachineId: Schema.brand<typeof Schema.Int, \"MachineId\">",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/MachineId.ts#L10"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/MachineId.ts#L10"
   },
   {
     "_tag": "Function",
@@ -2174,7 +2189,7 @@
     "since": "1.0.0",
     "category": "Constructors",
     "signature": "declare const make: (shardId: number) => MachineId",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/MachineId.ts#L27"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/MachineId.ts#L27"
   },
   {
     "_tag": "TypeAlias",
@@ -2189,7 +2204,7 @@
     "since": "1.0.0",
     "category": "models",
     "signature": "type MachineId = typeof MachineId.Type",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/MachineId.ts#L21"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/MachineId.ts#L21"
   },
   {
     "_tag": "Class",
@@ -2204,7 +2219,7 @@
     "since": "1.0.0",
     "category": "incoming",
     "signature": "declare class IncomingRequest<R>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Message.ts#L49"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Message.ts#L49"
   },
   {
     "_tag": "Class",
@@ -2219,7 +2234,7 @@
     "since": "1.0.0",
     "category": "outgoing",
     "signature": "declare class IncomingRequestLocal<R>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Message.ts#L59"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Message.ts#L59"
   },
   {
     "_tag": "Class",
@@ -2234,7 +2249,7 @@
     "since": "1.0.0",
     "category": "incoming",
     "signature": "declare class IncomingEnvelope",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Message.ts#L69"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Message.ts#L69"
   },
   {
     "_tag": "Class",
@@ -2249,7 +2264,7 @@
     "since": "1.0.0",
     "category": "outgoing",
     "signature": "declare class OutgoingRequest<R>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Message.ts#L84"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Message.ts#L84"
   },
   {
     "_tag": "Class",
@@ -2264,7 +2279,7 @@
     "since": "1.0.0",
     "category": "outgoing",
     "signature": "declare class OutgoingEnvelope",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Message.ts#L101"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Message.ts#L101"
   },
   {
     "_tag": "Function",
@@ -2279,7 +2294,7 @@
     "since": "1.0.0",
     "category": "incoming",
     "signature": "declare const incomingLocalFromOutgoing: <R extends Rpc.Any>(self: Outgoing<R>) => IncomingLocal<R>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Message.ts#L34"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Message.ts#L34"
   },
   {
     "_tag": "Function",
@@ -2294,7 +2309,7 @@
     "since": "1.0.0",
     "category": "serialization / deserialization",
     "signature": "declare const serialize: <Rpc extends Rpc.Any>(message: Outgoing<Rpc>) => Effect.Effect<Envelope.Envelope.PartialEncoded, MalformedMessage>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Message.ts#L130"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Message.ts#L130"
   },
   {
     "_tag": "Function",
@@ -2309,7 +2324,7 @@
     "since": "1.0.0",
     "category": "serialization / deserialization",
     "signature": "declare const serializeEnvelope: <Rpc extends Rpc.Any>(message: Outgoing<Rpc>) => Effect.Effect<Envelope.Envelope.Encoded, MalformedMessage>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Message.ts#L147"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Message.ts#L147"
   },
   {
     "_tag": "Function",
@@ -2324,7 +2339,7 @@
     "since": "1.0.0",
     "category": "serialization / deserialization",
     "signature": "declare const serializeRequest: <Rpc extends Rpc.Any>(self: OutgoingRequest<Rpc>) => Effect.Effect<Envelope.Request.PartialEncoded, MalformedMessage>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Message.ts#L159"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Message.ts#L159"
   },
   {
     "_tag": "Function",
@@ -2339,7 +2354,7 @@
     "since": "1.0.0",
     "category": "serialization / deserialization",
     "signature": "declare const deserializeLocal: <Rpc extends Rpc.Any>(self: Outgoing<Rpc>, encoded: Envelope.Envelope.PartialEncoded) => Effect.Effect<IncomingLocal<Rpc>, MalformedMessage>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Message.ts#L177"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Message.ts#L177"
   },
   {
     "_tag": "TypeAlias",
@@ -2354,7 +2369,7 @@
     "since": "1.0.0",
     "category": "incoming",
     "signature": "type Incoming<R> = IncomingRequest<R> | IncomingEnvelope",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Message.ts#L22"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Message.ts#L22"
   },
   {
     "_tag": "TypeAlias",
@@ -2369,7 +2384,7 @@
     "since": "1.0.0",
     "category": "incoming",
     "signature": "type IncomingLocal<R> = IncomingRequestLocal<R> | IncomingEnvelope",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Message.ts#L28"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Message.ts#L28"
   },
   {
     "_tag": "TypeAlias",
@@ -2384,7 +2399,7 @@
     "since": "1.0.0",
     "category": "outgoing",
     "signature": "type Outgoing<R> = OutgoingRequest<R> | OutgoingEnvelope",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Message.ts#L78"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Message.ts#L78"
   },
   {
     "_tag": "Class",
@@ -2399,7 +2414,7 @@
     "since": "1.0.0",
     "category": "context",
     "signature": "declare class MessageStorage",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/MessageStorage.ts#L32"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/MessageStorage.ts#L32"
   },
   {
     "_tag": "Class",
@@ -2414,7 +2429,7 @@
     "since": "1.0.0",
     "category": "Memory",
     "signature": "declare class MemoryDriver",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/MessageStorage.ts#L601"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/MessageStorage.ts#L601"
   },
   {
     "_tag": "Constant",
@@ -2429,7 +2444,7 @@
     "since": "1.0.0",
     "category": "SaveResult",
     "signature": "declare const SaveResult: { readonly Success: <A>(args: void) => SaveResult.Success; readonly Duplicate: <A>(args: { readonly originalId: Snowflake.Snowflake; readonly lastReceivedReply: Option.Option<Reply.Reply<A extends Rpc.Any ? A : never>>; }) => SaveResult.Duplicate<A extends Rpc.Any ? A : never>; readonly $is: <Tag extends \"Success\" | \"Duplicate\">(tag: Tag) => { <T extends SaveResult<any>>(u: T): u is T & { readonly _tag: Tag; }; (u: unknown): u is Extract<SaveResult.Success, { readonly _tag: Tag; }> | Extract<SaveResult.Duplicate<never>, { readonly _tag: Tag; }>; }; readonly $match: { <A, B, C, D, Cases extends { readonly Success: (args: SaveResult.Success) => any; readonly Duplicate: (args: SaveResult.Duplicate<A extends Rpc.Any ? A : never>) => any; }>(cases: Cases & { [K in Exclude<keyof Cases, \"Success\" | \"Duplicate\">]: never; }): (self: SaveResult<A extends Rpc.Any ? A : never>) => Unify<ReturnType<Cases[\"Success\" | \"Duplicate\"]>>; <A, B, C, D, Cases extends { readonly Success: (args: SaveResult.Success) => any; readonly Duplicate: (args: SaveResult.Duplicate<A extends Rpc.Any ? A : never>) => any; }>(self: SaveResult<A extends Rpc.Any ? A : never>, cases: Cases & { [K in Exclude<keyof Cases, \"Success\" | \"Duplicate\">]: never; }): Unify<ReturnType<Cases[\"Success\" | \"Duplicate\"]>>; }; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/MessageStorage.ts#L147"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/MessageStorage.ts#L147"
   },
   {
     "_tag": "Constant",
@@ -2444,7 +2459,7 @@
     "since": "1.0.0",
     "category": "SaveResult",
     "signature": "declare const SaveResultEncoded: { readonly Success: Data.Case.Constructor<SaveResult.Success, \"_tag\">; readonly Duplicate: Data.Case.Constructor<SaveResult.DuplicateEncoded, \"_tag\">; readonly $is: <Tag extends \"Success\" | \"Duplicate\">(tag: Tag) => (u: unknown) => u is Extract<SaveResult.Success, { readonly _tag: Tag; }> | Extract<SaveResult.DuplicateEncoded, { readonly _tag: Tag; }>; readonly $match: { <const Cases extends { readonly Success: (args: SaveResult.Success) => any; readonly Duplicate: (args: SaveResult.DuplicateEncoded) => any; }>(cases: Cases & { [K in Exclude<keyof Cases, \"Success\" | \"Duplicate\">]: never; }): (value: SaveResult.Encoded) => Unify<ReturnType<Cases[\"Success\" | \"Duplicate\"]>>; <const Cases extends { readonly Success: (args: SaveResult.Success) => any; readonly Duplicate: (args: SaveResult.DuplicateEncoded) => any; }>(value: SaveResult.Encoded, cases: Cases & { [K in Exclude<keyof Cases, \"Success\" | \"Duplicate\">]: never; }): Unify<ReturnType<Cases[\"Success\" | \"Duplicate\"]>>; }; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/MessageStorage.ts#L153"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/MessageStorage.ts#L153"
   },
   {
     "_tag": "Constant",
@@ -2459,7 +2474,7 @@
     "since": "1.0.0",
     "category": "constructors",
     "signature": "declare const makeEncoded: (encoded: Encoded) => Effect.Effect<MessageStorage[\"Type\"], never, Snowflake.Generator>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/MessageStorage.ts#L373"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/MessageStorage.ts#L373"
   },
   {
     "_tag": "Constant",
@@ -2474,7 +2489,7 @@
     "since": "1.0.0",
     "category": "Constructors",
     "signature": "declare const noop: { readonly saveRequest: <R extends Rpc.Any>(envelope: Message.OutgoingRequest<R>) => Effect.Effect<SaveResult<R>, PersistenceError | MalformedMessage>; readonly saveEnvelope: (envelope: Message.OutgoingEnvelope) => Effect.Effect<void, PersistenceError | MalformedMessage>; readonly saveReply: <R extends Rpc.Any>(reply: Reply.ReplyWithContext<R>) => Effect.Effect<void, PersistenceError | MalformedMessage>; readonly clearReplies: (requestId: Snowflake.Snowflake) => Effect.Effect<void, PersistenceError>; readonly repliesFor: <R extends Rpc.Any>(requests: Iterable<Message.OutgoingRequest<R>>) => Effect.Effect<Array<Reply.Reply<R>>, PersistenceError | MalformedMessage>; readonly repliesForUnfiltered: <R extends Rpc.Any>(requestIds: Iterable<Snowflake.Snowflake>) => Effect.Effect<Array<Reply.ReplyEncoded<R>>, PersistenceError | MalformedMessage>; readonly requestIdForPrimaryKey: (options: { readonly address: EntityAddress; readonly tag: string; readonly id: string; }) => Effect.Effect<Option.Option<Snowflake.Snowflake>, PersistenceError>; readonly registerReplyHandler: <R extends Rpc.Any>(message: Message.OutgoingRequest<R> | Message.IncomingRequest<R>) => Effect.Effect<void>; readonly unprocessedMessages: (shardIds: Iterable<ShardId>) => Effect.Effect<Array<Message.Incoming<any>>, PersistenceError>; readonly unprocessedMessagesById: <R extends Rpc.Any>(messageIds: Iterable<Snowflake.Snowflake>) => Effect.Effect<Array<Message.Incoming<R>>, PersistenceError>; readonly resetShards: (shardIds: Iterable<ShardId>) => Effect.Effect<void, PersistenceError>; readonly resetAddress: (address: EntityAddress) => Effect.Effect<void, PersistenceError>; readonly clearAddress: (address: EntityAddress) => Effect.Effect<void, PersistenceError>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/MessageStorage.ts#L567"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/MessageStorage.ts#L567"
   },
   {
     "_tag": "Constant",
@@ -2489,7 +2504,7 @@
     "since": "1.0.0",
     "category": "layers",
     "signature": "declare const layerNoop: Layer.Layer<MessageStorage, never, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/MessageStorage.ts#L806"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/MessageStorage.ts#L806"
   },
   {
     "_tag": "Constant",
@@ -2504,7 +2519,7 @@
     "since": "1.0.0",
     "category": "layers",
     "signature": "declare const layerMemory: Layer.Layer<MessageStorage | MemoryDriver, never, ShardingConfig>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/MessageStorage.ts#L812"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/MessageStorage.ts#L812"
   },
   {
     "_tag": "Function",
@@ -2519,7 +2534,7 @@
     "since": "1.0.0",
     "category": "constructors",
     "signature": "declare const make: (storage: Omit<MessageStorage[\"Type\"], \"registerReplyHandler\">) => Effect.Effect<MessageStorage[\"Type\"]>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/MessageStorage.ts#L338"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/MessageStorage.ts#L338"
   },
   {
     "_tag": "TypeAlias",
@@ -2534,7 +2549,7 @@
     "since": "1.0.0",
     "category": "SaveResult",
     "signature": "type SaveResult<R> = SaveResult.Success | SaveResult.Duplicate<R>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/MessageStorage.ts#L141"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/MessageStorage.ts#L141"
   },
   {
     "_tag": "TypeAlias",
@@ -2549,7 +2564,7 @@
     "since": "1.0.0",
     "category": "Encoded",
     "signature": "type Encoded = {\n  /**\n   * Save the provided message and its associated metadata.\n   */\n  readonly saveEnvelope: (\n    options: {\n      readonly envelope: Envelope.Envelope.Encoded\n      readonly primaryKey: string | null\n      readonly deliverAt: number | null\n    }\n  ) => Effect.Effect<SaveResult.Encoded, PersistenceError>\n\n  /**\n   * Save the provided `Reply` and its associated metadata.\n   */\n  readonly saveReply: (\n    reply: Reply.ReplyEncoded<any>\n  ) => Effect.Effect<void, PersistenceError>\n\n  /**\n   * Remove the replies for the specified request.\n   */\n  readonly clearReplies: (requestId: Snowflake.Snowflake) => Effect.Effect<void, PersistenceError>\n\n  /**\n   * Retrieves the request id for the specified primary key.\n   */\n  readonly requestIdForPrimaryKey: (\n    primaryKey: string\n  ) => Effect.Effect<Option.Option<Snowflake.Snowflake>, PersistenceError>\n\n  /**\n   * Retrieves the replies for the specified requests.\n   *\n   * - Un-acknowledged chunk replies\n   * - WithExit replies\n   */\n  readonly repliesFor: (requestIds: Array<string>) => Effect.Effect<\n    Array<Reply.ReplyEncoded<any>>,\n    PersistenceError\n  >\n\n  /**\n   * Retrieves the replies for the specified request ids.\n   */\n  readonly repliesForUnfiltered: (requestIds: Array<string>) => Effect.Effect<\n    Array<Reply.ReplyEncoded<any>>,\n    PersistenceError\n  >\n\n  /**\n   * Retrieves the unprocessed messages for the given shards.\n   *\n   * A message is unprocessed when:\n   *\n   * - Requests that have no WithExit replies\n   *   - Or they have no unacknowledged chunk replies\n   * - The latest AckChunk envelope\n   * - All Interrupt's for unprocessed requests\n   */\n  readonly unprocessedMessages: (\n    shardIds: ReadonlyArray<string>,\n    now: number\n  ) => Effect.Effect<\n    Array<{\n      readonly envelope: Envelope.Envelope.Encoded\n      readonly lastSentReply: Option.Option<Reply.ReplyEncoded<any>>\n    }>,\n    PersistenceError\n  >\n\n  /**\n   * Retrieves the unprocessed messages by id.\n   */\n  readonly unprocessedMessagesById: (\n    messageIds: ReadonlyArray<Snowflake.Snowflake>,\n    now: number\n  ) => Effect.Effect<\n    Array<{\n      readonly envelope: Envelope.Envelope.Encoded\n      readonly lastSentReply: Option.Option<Reply.ReplyEncoded<any>>\n    }>,\n    PersistenceError\n  >\n\n  /**\n   * Reset the mailbox state for the provided address.\n   */\n  readonly resetAddress: (\n    address: EntityAddress\n  ) => Effect.Effect<void, PersistenceError>\n\n  /**\n   * Clear all messages and replies for the provided address.\n   */\n  readonly clearAddress: (\n    address: EntityAddress\n  ) => Effect.Effect<void, PersistenceError>\n\n  /**\n   * Reset the mailbox state for the provided shards.\n   */\n  readonly resetShards: (\n    shardIds: ReadonlyArray<string>\n  ) => Effect.Effect<void, PersistenceError>\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/MessageStorage.ts#L207"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/MessageStorage.ts#L207"
   },
   {
     "_tag": "TypeAlias",
@@ -2564,7 +2579,7 @@
     "since": "1.0.0",
     "category": "Encoded",
     "signature": "type EncodedUnprocessedOptions<A> = {\n  readonly existingShards: Array<number>\n  readonly newShards: Array<number>\n  readonly cursor: Option.Option<A>\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/MessageStorage.ts#L318"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/MessageStorage.ts#L318"
   },
   {
     "_tag": "TypeAlias",
@@ -2579,7 +2594,7 @@
     "since": "1.0.0",
     "category": "Encoded",
     "signature": "type EncodedRepliesOptions<A> = {\n  readonly existingRequests: Array<string>\n  readonly newRequests: Array<string>\n  readonly cursor: Option.Option<A>\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/MessageStorage.ts#L328"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/MessageStorage.ts#L328"
   },
   {
     "_tag": "TypeAlias",
@@ -2594,7 +2609,7 @@
     "since": "1.0.0",
     "category": "Memory",
     "signature": "type MemoryEntry = {\n  readonly envelope: Envelope.Request.Encoded\n  lastReceivedChunk: Option.Option<Reply.ChunkEncoded<any>>\n  replies: Array<Reply.ReplyEncoded<any>>\n  deliverAt: number | null\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/MessageStorage.ts#L590"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/MessageStorage.ts#L590"
   },
   {
     "_tag": "Interface",
@@ -2609,7 +2624,7 @@
     "since": "1.0.0",
     "category": "SaveResult",
     "signature": "export interface Success {\n    readonly _tag: \"Success\"\n  }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/MessageStorage.ts#L170"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/MessageStorage.ts#L170"
   },
   {
     "_tag": "Interface",
@@ -2624,7 +2639,7 @@
     "since": "1.0.0",
     "category": "SaveResult",
     "signature": "export interface Duplicate<R extends Rpc.Any> {\n    readonly _tag: \"Duplicate\"\n    readonly originalId: Snowflake.Snowflake\n    readonly lastReceivedReply: Option.Option<Reply.Reply<R>>\n  }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/MessageStorage.ts#L178"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/MessageStorage.ts#L178"
   },
   {
     "_tag": "Interface",
@@ -2639,7 +2654,7 @@
     "since": "1.0.0",
     "category": "SaveResult",
     "signature": "export interface DuplicateEncoded {\n    readonly _tag: \"Duplicate\"\n    readonly originalId: Snowflake.Snowflake\n    readonly lastReceivedReply: Option.Option<Reply.ReplyEncoded<any>>\n  }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/MessageStorage.ts#L188"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/MessageStorage.ts#L188"
   },
   {
     "_tag": "Interface",
@@ -2654,7 +2669,7 @@
     "since": "1.0.0",
     "category": "SaveResult",
     "signature": "export interface Constructor extends Data.TaggedEnum.WithGenerics<1> {\n    readonly taggedEnum: SaveResult<this[\"A\"] extends Rpc.Any ? this[\"A\"] : never>\n  }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/MessageStorage.ts#L198"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/MessageStorage.ts#L198"
   },
   {
     "_tag": "TypeAlias",
@@ -2669,7 +2684,7 @@
     "since": "1.0.0",
     "category": "SaveResult",
     "signature": "type Encoded = SaveResult.Success | SaveResult.DuplicateEncoded",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/MessageStorage.ts#L164"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/MessageStorage.ts#L164"
   },
   {
     "_tag": "Class",
@@ -2684,7 +2699,7 @@
     "since": "1.0.0",
     "category": "models",
     "signature": "declare class ReplyWithContext<R>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Reply.ts#L49"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Reply.ts#L49"
   },
   {
     "_tag": "Class",
@@ -2699,7 +2714,7 @@
     "since": "1.0.0",
     "category": "models",
     "signature": "declare class Chunk<R>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Reply.ts#L169"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Reply.ts#L169"
   },
   {
     "_tag": "Class",
@@ -2714,7 +2729,7 @@
     "since": "1.0.0",
     "category": "models",
     "signature": "declare class WithExit<R>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Reply.ts#L242"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Reply.ts#L242"
   },
   {
     "_tag": "Constant",
@@ -2729,7 +2744,7 @@
     "since": "1.0.0",
     "category": "type ids",
     "signature": "declare const TypeId: unique symbol",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Reply.ts#L25"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Reply.ts#L25"
   },
   {
     "_tag": "Constant",
@@ -2744,7 +2759,7 @@
     "since": "1.0.0",
     "category": "schemas",
     "signature": "declare const Encoded: Schema.Union<[Schema.Struct<{ _tag: Schema.Literal<[\"WithExit\"]>; requestId: typeof Schema.String; id: typeof Schema.String; exit: typeof Schema.Unknown; }>, Schema.Struct<{ _tag: Schema.Literal<[\"Chunk\"]>; requestId: typeof Schema.String; id: typeof Schema.String; sequence: typeof Schema.Number; values: Schema.Array$<typeof Schema.Unknown>; }>]>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Reply.ts#L149"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Reply.ts#L149"
   },
   {
     "_tag": "Function",
@@ -2759,7 +2774,7 @@
     "since": "1.0.0",
     "category": "guards",
     "signature": "declare const isReply: (u: unknown) => u is Reply<Rpc.Any>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Reply.ts#L37"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Reply.ts#L37"
   },
   {
     "_tag": "Function",
@@ -2774,7 +2789,7 @@
     "since": "1.0.0",
     "category": "schemas",
     "signature": "declare const Reply: <R extends Rpc.Any>(rpc: R) => Schema.Schema<Reply<R>, ReplyEncoded<R>, Rpc.Context<R>>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Reply.ts#L132"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Reply.ts#L132"
   },
   {
     "_tag": "Function",
@@ -2789,7 +2804,7 @@
     "since": "1.0.0",
     "category": "serialization / deserialization",
     "signature": "declare const serialize: <R extends Rpc.Any>(self: ReplyWithContext<R>) => Effect.Effect<ReplyEncoded<R>, MalformedMessage>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Reply.ts#L290"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Reply.ts#L290"
   },
   {
     "_tag": "Function",
@@ -2804,7 +2819,7 @@
     "since": "1.0.0",
     "category": "serialization / deserialization",
     "signature": "declare const serializeLastReceived: <R extends Rpc.Any>(self: OutgoingRequest<R>) => Effect.Effect<Option.Option<ReplyEncoded<R>>, MalformedMessage>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Reply.ts#L303"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Reply.ts#L303"
   },
   {
     "_tag": "Interface",
@@ -2819,7 +2834,7 @@
     "since": "1.0.0",
     "category": "models",
     "signature": "export interface WithExitEncoded<R extends Rpc.Any> {\n  readonly _tag: \"WithExit\"\n  readonly requestId: string\n  readonly id: string\n  readonly exit: Rpc.ExitEncoded<R>\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Reply.ts#L107"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Reply.ts#L107"
   },
   {
     "_tag": "Interface",
@@ -2834,7 +2849,7 @@
     "since": "1.0.0",
     "category": "models",
     "signature": "export interface ChunkEncoded<R extends Rpc.Any> {\n  readonly _tag: \"Chunk\"\n  readonly requestId: string\n  readonly id: string\n  readonly sequence: number\n  readonly values: NonEmptyReadonlyArray<Rpc.SuccessChunkEncoded<R>>\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Reply.ts#L118"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Reply.ts#L118"
   },
   {
     "_tag": "TypeAlias",
@@ -2849,7 +2864,7 @@
     "since": "1.0.0",
     "category": "type ids",
     "signature": "type TypeId = typeof TypeId",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Reply.ts#L31"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Reply.ts#L31"
   },
   {
     "_tag": "TypeAlias",
@@ -2864,7 +2879,7 @@
     "since": "1.0.0",
     "category": "models",
     "signature": "type Reply<R> = WithExit<R> | Chunk<R>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Reply.ts#L43"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Reply.ts#L43"
   },
   {
     "_tag": "TypeAlias",
@@ -2879,7 +2894,7 @@
     "since": "1.0.0",
     "category": "models",
     "signature": "type ReplyEncoded<R> = WithExitEncoded<R> | ChunkEncoded<R>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Reply.ts#L101"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Reply.ts#L101"
   },
   {
     "_tag": "Class",
@@ -2895,7 +2910,7 @@
     "since": "1.0.0",
     "category": "models",
     "signature": "declare class Runner",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Runner.ts#L38"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Runner.ts#L38"
   },
   {
     "_tag": "Constant",
@@ -2910,7 +2925,7 @@
     "since": "1.0.0",
     "category": "type ids",
     "signature": "declare const TypeId: unique symbol",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Runner.ts#L17"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Runner.ts#L17"
   },
   {
     "_tag": "Function",
@@ -2926,7 +2941,7 @@
     "since": "1.0.0",
     "category": "Constructors",
     "signature": "declare const make: (props: { readonly address: RunnerAddress; readonly groups: ReadonlyArray<string>; readonly version: number; }) => Runner",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Runner.ts#L98"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Runner.ts#L98"
   },
   {
     "_tag": "TypeAlias",
@@ -2941,7 +2956,7 @@
     "since": "1.0.0",
     "category": "type ids",
     "signature": "type TypeId = typeof TypeId",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Runner.ts#L23"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Runner.ts#L23"
   },
   {
     "_tag": "Class",
@@ -2956,7 +2971,7 @@
     "since": "1.0.0",
     "category": "models",
     "signature": "declare class RunnerAddress",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/RunnerAddress.ts#L27"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/RunnerAddress.ts#L27"
   },
   {
     "_tag": "Constant",
@@ -2971,7 +2986,7 @@
     "since": "1.0.0",
     "category": "type ids",
     "signature": "declare const TypeId: unique symbol",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/RunnerAddress.ts#L15"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/RunnerAddress.ts#L15"
   },
   {
     "_tag": "Function",
@@ -2986,7 +3001,7 @@
     "since": "1.0.0",
     "category": "constructors",
     "signature": "declare const make: (host: string, port: number) => RunnerAddress",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/RunnerAddress.ts#L69"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/RunnerAddress.ts#L69"
   },
   {
     "_tag": "TypeAlias",
@@ -3001,7 +3016,7 @@
     "since": "1.0.0",
     "category": "type ids",
     "signature": "type TypeId = typeof TypeId",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/RunnerAddress.ts#L21"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/RunnerAddress.ts#L21"
   },
   {
     "_tag": "Class",
@@ -3017,7 +3032,7 @@
     "since": "1.0.0",
     "category": "models",
     "signature": "declare class RunnerHealth",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/RunnerHealth.ts#L22"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/RunnerHealth.ts#L22"
   },
   {
     "_tag": "Constant",
@@ -3033,7 +3048,7 @@
     "since": "1.0.0",
     "category": "layers",
     "signature": "declare const layerNoop: Layer.Layer<RunnerHealth, never, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/RunnerHealth.ts#L37"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/RunnerHealth.ts#L37"
   },
   {
     "_tag": "Constant",
@@ -3048,7 +3063,7 @@
     "since": "1.0.0",
     "category": "Constructors",
     "signature": "declare const make: Effect.Effect<{ readonly isAlive: (address: RunnerAddress) => Effect.Effect<boolean>; }, never, Runners.Runners>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/RunnerHealth.ts#L48"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/RunnerHealth.ts#L48"
   },
   {
     "_tag": "Constant",
@@ -3064,7 +3079,7 @@
     "since": "1.0.0",
     "category": "layers",
     "signature": "declare const layer: Layer.Layer<RunnerHealth, never, Runners.Runners>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/RunnerHealth.ts#L72"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/RunnerHealth.ts#L72"
   },
   {
     "_tag": "Constant",
@@ -3080,7 +3095,7 @@
     "since": "1.0.0",
     "category": "layers",
     "signature": "declare const layerRpc: Layer.Layer<RunnerHealth, never, ShardingConfig | Runners.RpcClientProtocol>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/RunnerHealth.ts#L84"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/RunnerHealth.ts#L84"
   },
   {
     "_tag": "Class",
@@ -3095,7 +3110,7 @@
     "since": "1.0.0",
     "category": "context",
     "signature": "declare class Runners",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Runners.ts#L40"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Runners.ts#L40"
   },
   {
     "_tag": "Class",
@@ -3110,7 +3125,7 @@
     "since": "1.0.0",
     "category": "Rpcs",
     "signature": "declare class Rpcs",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Runners.ts#L405"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Runners.ts#L405"
   },
   {
     "_tag": "Class",
@@ -3125,7 +3140,7 @@
     "since": "1.0.0",
     "category": "Client",
     "signature": "declare class RpcClientProtocol",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Runners.ts#L601"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Runners.ts#L601"
   },
   {
     "_tag": "Constant",
@@ -3140,7 +3155,7 @@
     "since": "1.0.0",
     "category": "Constructors",
     "signature": "declare const make: (options: Omit<Runners[\"Type\"], \"sendLocal\" | \"notifyLocal\">) => Effect.Effect<Runners[\"Type\"], never, MessageStorage.MessageStorage | Snowflake.Generator | ShardingConfig | Scope>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Runners.ts#L119"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Runners.ts#L119"
   },
   {
     "_tag": "Constant",
@@ -3155,7 +3170,7 @@
     "since": "1.0.0",
     "category": "No-op",
     "signature": "declare const makeNoop: Effect.Effect<{ readonly ping: (address: RunnerAddress) => Effect.Effect<void, RunnerUnavailable>; readonly sendLocal: <R extends Rpc.Any>(options: { readonly message: Message.Outgoing<R>; readonly send: <Rpc extends Rpc.Any>(message: Message.IncomingLocal<Rpc>) => Effect.Effect<void, EntityNotManagedByRunner | EntityNotAssignedToRunner | MailboxFull | AlreadyProcessingMessage>; readonly simulateRemoteSerialization: boolean; }) => Effect.Effect<void, EntityNotManagedByRunner | EntityNotAssignedToRunner | MailboxFull | AlreadyProcessingMessage | PersistenceError>; readonly send: <R extends Rpc.Any>(options: { readonly address: RunnerAddress; readonly message: Message.Outgoing<R>; }) => Effect.Effect<void, EntityNotManagedByRunner | EntityNotAssignedToRunner | RunnerUnavailable | MailboxFull | AlreadyProcessingMessage | PersistenceError>; readonly notify: <R extends Rpc.Any>(options: { readonly address: Option.Option<RunnerAddress>; readonly message: Message.Outgoing<R>; readonly discard: boolean; }) => Effect.Effect<void, EntityNotManagedByRunner | PersistenceError>; readonly notifyLocal: <R extends Rpc.Any>(options: { readonly message: Message.Outgoing<R>; readonly notify: (options: Message.IncomingLocal<any>) => Effect.Effect<void, EntityNotManagedByRunner | EntityNotAssignedToRunner>; readonly discard: boolean; }) => Effect.Effect<void, EntityNotManagedByRunner | PersistenceError>; }, never, Scope | MessageStorage.MessageStorage | ShardingConfig | Snowflake.Generator>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Runners.ts#L369"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Runners.ts#L369"
   },
   {
     "_tag": "Constant",
@@ -3170,7 +3185,7 @@
     "since": "1.0.0",
     "category": "Layers",
     "signature": "declare const layerNoop: Layer.Layer<Runners, never, MessageStorage.MessageStorage | ShardingConfig>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Runners.ts#L383"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Runners.ts#L383"
   },
   {
     "_tag": "Constant",
@@ -3185,7 +3200,7 @@
     "since": "1.0.0",
     "category": "Rpcs",
     "signature": "declare const makeRpcClient: Effect.Effect<RpcClient, never, Scope | RpcClient_.Protocol>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Runners.ts#L450"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Runners.ts#L450"
   },
   {
     "_tag": "Constant",
@@ -3200,7 +3215,7 @@
     "since": "1.0.0",
     "category": "constructors",
     "signature": "declare const makeRpc: Effect.Effect<{ readonly ping: (address: RunnerAddress) => Effect.Effect<void, RunnerUnavailable>; readonly sendLocal: <R extends Rpc.Any>(options: { readonly message: Message.Outgoing<R>; readonly send: <Rpc extends Rpc.Any>(message: Message.IncomingLocal<Rpc>) => Effect.Effect<void, EntityNotManagedByRunner | EntityNotAssignedToRunner | MailboxFull | AlreadyProcessingMessage>; readonly simulateRemoteSerialization: boolean; }) => Effect.Effect<void, EntityNotManagedByRunner | EntityNotAssignedToRunner | MailboxFull | AlreadyProcessingMessage | PersistenceError>; readonly send: <R extends Rpc.Any>(options: { readonly address: RunnerAddress; readonly message: Message.Outgoing<R>; }) => Effect.Effect<void, EntityNotManagedByRunner | EntityNotAssignedToRunner | RunnerUnavailable | MailboxFull | AlreadyProcessingMessage | PersistenceError>; readonly notify: <R extends Rpc.Any>(options: { readonly address: Option.Option<RunnerAddress>; readonly message: Message.Outgoing<R>; readonly discard: boolean; }) => Effect.Effect<void, EntityNotManagedByRunner | PersistenceError>; readonly notifyLocal: <R extends Rpc.Any>(options: { readonly message: Message.Outgoing<R>; readonly notify: (options: Message.IncomingLocal<any>) => Effect.Effect<void, EntityNotManagedByRunner | EntityNotAssignedToRunner>; readonly discard: boolean; }) => Effect.Effect<void, EntityNotManagedByRunner | PersistenceError>; }, never, Scope | MessageStorage.MessageStorage | ShardingConfig | Snowflake.Generator | RpcClientProtocol>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Runners.ts#L460"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Runners.ts#L460"
   },
   {
     "_tag": "Constant",
@@ -3215,7 +3230,7 @@
     "since": "1.0.0",
     "category": "Layers",
     "signature": "declare const layerRpc: Layer.Layer<Runners, never, MessageStorage.MessageStorage | ShardingConfig | RpcClientProtocol>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Runners.ts#L589"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Runners.ts#L589"
   },
   {
     "_tag": "Interface",
@@ -3230,7 +3245,7 @@
     "since": "1.0.0",
     "category": "Rpcs",
     "signature": "export interface RpcClient extends RpcClient_.FromGroup<typeof Rpcs, RpcClientError> {}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Runners.ts#L444"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Runners.ts#L444"
   },
   {
     "_tag": "Constant",
@@ -3245,7 +3260,7 @@
     "since": "1.0.0",
     "category": "Layers",
     "signature": "declare const layerHandlers: Layer.Layer<Handler<\"Ping\"> | Handler<\"Notify\"> | Handler<\"Effect\"> | Handler<\"Stream\"> | Handler<\"Envelope\">, never, MessageStorage.MessageStorage | Sharding.Sharding>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/RunnerServer.ts#L26"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/RunnerServer.ts#L26"
   },
   {
     "_tag": "Constant",
@@ -3261,7 +3276,7 @@
     "since": "1.0.0",
     "category": "Layers",
     "signature": "declare const layer: Layer.Layer<never, never, MessageStorage.MessageStorage | Sharding.Sharding | RpcServer.Protocol>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/RunnerServer.ts#L113"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/RunnerServer.ts#L113"
   },
   {
     "_tag": "Constant",
@@ -3277,7 +3292,7 @@
     "since": "1.0.0",
     "category": "Layers",
     "signature": "declare const layerWithClients: Layer.Layer<Sharding.Sharding | Runners.Runners, never, ShardStorage.ShardStorage | MessageStorage.MessageStorage | ShardingConfig | Runners.RpcClientProtocol | RpcServer.Protocol>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/RunnerServer.ts#L128"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/RunnerServer.ts#L128"
   },
   {
     "_tag": "Constant",
@@ -3293,7 +3308,7 @@
     "since": "1.0.0",
     "category": "Layers",
     "signature": "declare const layerClientOnly: Layer.Layer<Sharding.Sharding | Runners.Runners, never, MessageStorage.MessageStorage | ShardingConfig | Runners.RpcClientProtocol>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/RunnerServer.ts#L153"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/RunnerServer.ts#L153"
   },
   {
     "_tag": "Class",
@@ -3308,7 +3323,7 @@
     "since": "1.0.0",
     "category": "Models",
     "signature": "declare class ShardId",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/ShardId.ts#L32"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ShardId.ts#L32"
   },
   {
     "_tag": "Constant",
@@ -3323,7 +3338,7 @@
     "since": "1.0.0",
     "category": "Symbols",
     "signature": "declare const TypeId: unique symbol",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/ShardId.ts#L12"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ShardId.ts#L12"
   },
   {
     "_tag": "Function",
@@ -3338,7 +3353,7 @@
     "since": "1.0.0",
     "category": "Constructors",
     "signature": "declare const make: (group: string, id: number) => ShardId",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/ShardId.ts#L26"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ShardId.ts#L26"
   },
   {
     "_tag": "TypeAlias",
@@ -3353,7 +3368,7 @@
     "since": "1.0.0",
     "category": "Symbols",
     "signature": "type TypeId = typeof TypeId",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/ShardId.ts#L18"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ShardId.ts#L18"
   },
   {
     "_tag": "Class",
@@ -3368,7 +3383,7 @@
     "since": "1.0.0",
     "category": "models",
     "signature": "declare class Sharding",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Sharding.ts#L66"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Sharding.ts#L67"
   },
   {
     "_tag": "Constant",
@@ -3383,7 +3398,7 @@
     "since": "1.0.0",
     "category": "layers",
     "signature": "declare const layer: Layer.Layer<Sharding, never, ShardManagerClient | ShardStorage | MessageStorage.MessageStorage | ShardingConfig | Runners>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Sharding.ts#L1224"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Sharding.ts#L1226"
   },
   {
     "_tag": "Class",
@@ -3399,7 +3414,7 @@
     "since": "1.0.0",
     "category": "models",
     "signature": "declare class ShardingConfig",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/ShardingConfig.ts#L21"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ShardingConfig.ts#L21"
   },
   {
     "_tag": "Constant",
@@ -3414,7 +3429,7 @@
     "since": "1.0.0",
     "category": "defaults",
     "signature": "declare const defaults: { readonly runnerAddress: Option.Option<RunnerAddress>; readonly runnerListenAddress: Option.Option<RunnerAddress>; readonly serverVersion: number; readonly shardGroups: ReadonlyArray<string>; readonly shardsPerGroup: number; readonly shardManagerAddress: RunnerAddress; readonly shardManagerUnavailableTimeout: DurationInput; readonly entityMailboxCapacity: number | \"unbounded\"; readonly entityMaxIdleTime: DurationInput; readonly entityTerminationTimeout: DurationInput; readonly entityMessagePollInterval: DurationInput; readonly entityReplyPollInterval: DurationInput; readonly refreshAssignmentsInterval: DurationInput; readonly sendRetryInterval: DurationInput; readonly simulateRemoteSerialization: boolean; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/ShardingConfig.ts#L103"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ShardingConfig.ts#L103"
   },
   {
     "_tag": "Constant",
@@ -3429,7 +3444,7 @@
     "since": "1.0.0",
     "category": "defaults",
     "signature": "declare const layerDefaults: Layer.Layer<ShardingConfig, never, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/ShardingConfig.ts#L132"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ShardingConfig.ts#L132"
   },
   {
     "_tag": "Constant",
@@ -3444,7 +3459,7 @@
     "since": "1.0.0",
     "category": "Config",
     "signature": "declare const config: Config.Config<{ readonly runnerAddress: Option.Option<RunnerAddress>; readonly runnerListenAddress: Option.Option<RunnerAddress>; readonly serverVersion: number; readonly shardGroups: ReadonlyArray<string>; readonly shardsPerGroup: number; readonly shardManagerAddress: RunnerAddress; readonly shardManagerUnavailableTimeout: DurationInput; readonly entityMailboxCapacity: number | \"unbounded\"; readonly entityMaxIdleTime: DurationInput; readonly entityTerminationTimeout: DurationInput; readonly entityMessagePollInterval: DurationInput; readonly entityReplyPollInterval: DurationInput; readonly refreshAssignmentsInterval: DurationInput; readonly sendRetryInterval: DurationInput; readonly simulateRemoteSerialization: boolean; }>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/ShardingConfig.ts#L138"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ShardingConfig.ts#L138"
   },
   {
     "_tag": "Constant",
@@ -3459,7 +3474,7 @@
     "since": "1.0.0",
     "category": "Config",
     "signature": "declare const configFromEnv: Effect.Effect<{ readonly runnerAddress: Option.Option<RunnerAddress>; readonly runnerListenAddress: Option.Option<RunnerAddress>; readonly serverVersion: number; readonly shardGroups: ReadonlyArray<string>; readonly shardsPerGroup: number; readonly shardManagerAddress: RunnerAddress; readonly shardManagerUnavailableTimeout: DurationInput; readonly entityMailboxCapacity: number | \"unbounded\"; readonly entityMaxIdleTime: DurationInput; readonly entityTerminationTimeout: DurationInput; readonly entityMessagePollInterval: DurationInput; readonly entityReplyPollInterval: DurationInput; readonly refreshAssignmentsInterval: DurationInput; readonly sendRetryInterval: DurationInput; readonly simulateRemoteSerialization: boolean; }, ConfigError, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/ShardingConfig.ts#L226"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ShardingConfig.ts#L226"
   },
   {
     "_tag": "Function",
@@ -3474,7 +3489,7 @@
     "since": "1.0.0",
     "category": "Layers",
     "signature": "declare const layer: (options?: Partial<ShardingConfig[\"Type\"]>) => Layer.Layer<ShardingConfig>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/ShardingConfig.ts#L125"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ShardingConfig.ts#L125"
   },
   {
     "_tag": "Function",
@@ -3489,7 +3504,7 @@
     "since": "1.0.0",
     "category": "Layers",
     "signature": "declare const layerFromEnv: (options?: Partial<ShardingConfig[\"Type\"]> | undefined) => Layer.Layer<ShardingConfig, ConfigError>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/ShardingConfig.ts#L238"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ShardingConfig.ts#L238"
   },
   {
     "_tag": "Constant",
@@ -3504,7 +3519,7 @@
     "since": "1.0.0",
     "category": "pattern matching",
     "signature": "declare const {\n  /**\n   * @since 1.0.0\n   * @category pattern matching\n   */\n  $match: match,\n  /**\n   * @since 1.0.0\n   * @category constructors\n   */\n  EntityRegistered,\n  /**\n   * @since 1.0.0\n   * @category constructors\n   */\n  SingletonRegistered\n}: any",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/ShardingRegistrationEvent.ts#L45"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ShardingRegistrationEvent.ts#L45"
   },
   {
     "_tag": "Interface",
@@ -3520,7 +3535,7 @@
     "since": "1.0.0",
     "category": "models",
     "signature": "export interface EntityRegistered {\n  readonly _tag: \"EntityRegistered\"\n  readonly entity: Entity<any, any>\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/ShardingRegistrationEvent.ts#L24"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ShardingRegistrationEvent.ts#L24"
   },
   {
     "_tag": "Interface",
@@ -3536,7 +3551,7 @@
     "since": "1.0.0",
     "category": "models",
     "signature": "export interface SingletonRegistered {\n  readonly _tag: \"SingletonRegistered\"\n  readonly address: SingletonAddress\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/ShardingRegistrationEvent.ts#L36"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ShardingRegistrationEvent.ts#L36"
   },
   {
     "_tag": "TypeAlias",
@@ -3552,7 +3567,7 @@
     "since": "1.0.0",
     "category": "models",
     "signature": "type ShardingRegistrationEvent = | EntityRegistered\n  | SingletonRegistered",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/ShardingRegistrationEvent.ts#L14"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ShardingRegistrationEvent.ts#L14"
   },
   {
     "_tag": "Class",
@@ -3567,7 +3582,7 @@
     "since": "1.0.0",
     "category": "models",
     "signature": "declare class ShardManager",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/ShardManager.ts#L50"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ShardManager.ts#L50"
   },
   {
     "_tag": "Class",
@@ -3582,7 +3597,7 @@
     "since": "1.0.0",
     "category": "Config",
     "signature": "declare class Config",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/ShardManager.ts#L87"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ShardManager.ts#L87"
   },
   {
     "_tag": "Class",
@@ -3598,7 +3613,7 @@
     "since": "1.0.0",
     "category": "Client",
     "signature": "declare class ShardManagerClient",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/ShardManager.ts#L216"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ShardManager.ts#L216"
   },
   {
     "_tag": "Class",
@@ -3614,7 +3629,7 @@
     "since": "1.0.0",
     "category": "Rpcs",
     "signature": "declare class Rpcs",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/ShardManager.ts#L275"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ShardManager.ts#L275"
   },
   {
     "_tag": "Constant",
@@ -3629,7 +3644,7 @@
     "since": "1.0.0",
     "category": "Config",
     "signature": "declare const configConfig: Config_.Config<{ readonly rebalanceDebounce: Duration.DurationInput; readonly rebalanceInterval: Duration.DurationInput; readonly rebalanceRetryInterval: Duration.DurationInput; readonly rebalanceRate: number; readonly persistRetryInterval: Duration.DurationInput; readonly persistRetryCount: number; readonly runnerHealthCheckInterval: Duration.DurationInput; readonly runnerPingTimeout: Duration.DurationInput; }>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/ShardManager.ts#L143"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ShardManager.ts#L143"
   },
   {
     "_tag": "Constant",
@@ -3644,7 +3659,7 @@
     "since": "1.0.0",
     "category": "Config",
     "signature": "declare const configFromEnv: Effect.Effect<{ readonly rebalanceDebounce: Duration.DurationInput; readonly rebalanceInterval: Duration.DurationInput; readonly rebalanceRetryInterval: Duration.DurationInput; readonly rebalanceRate: number; readonly persistRetryInterval: Duration.DurationInput; readonly persistRetryCount: number; readonly runnerHealthCheckInterval: Duration.DurationInput; readonly runnerPingTimeout: Duration.DurationInput; }, ConfigError, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/ShardManager.ts#L184"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ShardManager.ts#L184"
   },
   {
     "_tag": "Constant",
@@ -3659,7 +3674,7 @@
     "since": "1.0.0",
     "category": "models",
     "signature": "declare const ShardingEventSchema: Schema.Union<[Schema.TaggedStruct<\"StreamStarted\", {}>, Schema.TaggedStruct<\"ShardsAssigned\", { address: typeof RunnerAddress; shards: Schema.Array$<typeof ShardId>; }>, Schema.TaggedStruct<\"ShardsUnassigned\", { address: typeof RunnerAddress; shards: Schema.Array$<typeof ShardId>; }>, Schema.TaggedStruct<\"RunnerRegistered\", { address: typeof RunnerAddress; }>, Schema.TaggedStruct<\"RunnerUnregistered\", { address: typeof RunnerAddress; }>]>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/ShardManager.ts#L251"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ShardManager.ts#L251"
   },
   {
     "_tag": "Constant",
@@ -3674,7 +3689,7 @@
     "since": "1.0.0",
     "category": "models",
     "signature": "declare const ShardingEvent: { readonly StreamStarted: Data.Case.Constructor<{ readonly _tag: \"StreamStarted\"; }, \"_tag\">; readonly ShardsAssigned: Data.Case.Constructor<{ readonly _tag: \"ShardsAssigned\"; readonly address: RunnerAddress; readonly shards: ReadonlyArray<ShardId>; }, \"_tag\">; readonly ShardsUnassigned: Data.Case.Constructor<{ readonly _tag: \"ShardsUnassigned\"; readonly address: RunnerAddress; readonly shards: ReadonlyArray<ShardId>; }, \"_tag\">; readonly RunnerRegistered: Data.Case.Constructor<{ readonly _tag: \"RunnerRegistered\"; readonly address: RunnerAddress; }, \"_tag\">; readonly RunnerUnregistered: Data.Case.Constructor<{ readonly _tag: \"RunnerUnregistered\"; readonly address: RunnerAddress; }, \"_tag\">; readonly $is: <Tag extends \"StreamStarted\" | \"ShardsAssigned\" | \"ShardsUnassigned\" | \"RunnerRegistered\" | \"RunnerUnregistered\">(tag: Tag) => (u: unknown) => u is Extract<{ readonly _tag: \"StreamStarted\"; }, { readonly _tag: Tag; }> | Extract<{ readonly _tag: \"ShardsAssigned\"; readonly address: RunnerAddress; readonly shards: ReadonlyArray<ShardId>; }, { readonly _tag: Tag; }> | Extract<{ readonly _tag: \"ShardsUnassigned\"; readonly address: RunnerAddress; readonly shards: ReadonlyArray<ShardId>; }, { readonly _tag: Tag; }> | Extract<{ readonly _tag: \"RunnerRegistered\"; readonly address: RunnerAddress; }, { readonly _tag: Tag; }> | Extract<{ readonly _tag: \"RunnerUnregistered\"; readonly address: RunnerAddress; }, { readonly _tag: Tag; }>; readonly $match: { <const Cases extends { readonly StreamStarted: (args: { readonly _tag: \"StreamStarted\"; }) => any; readonly ShardsAssigned: (args: { readonly _tag: \"ShardsAssigned\"; readonly address: RunnerAddress; readonly shards: ReadonlyArray<ShardId>; }) => any; readonly ShardsUnassigned: (args: { readonly _tag: \"ShardsUnassigned\"; readonly address: RunnerAddress; readonly shards: ReadonlyArray<ShardId>; }) => any; readonly RunnerRegistered: (args: { readonly _tag: \"RunnerRegistered\"; readonly address: RunnerAddress; }) => any; readonly RunnerUnregistered: (args: { readonly _tag: \"RunnerUnregistered\"; readonly address: RunnerAddress; }) => any; }>(cases: Cases & { [K in Exclude<keyof Cases, \"StreamStarted\" | \"ShardsAssigned\" | \"ShardsUnassigned\" | \"RunnerRegistered\" | \"RunnerUnregistered\">]: never; }): (value: { readonly _tag: \"StreamStarted\"; } | { readonly _tag: \"ShardsAssigned\"; readonly address: RunnerAddress; readonly shards: ReadonlyArray<ShardId>; } | { readonly _tag: \"ShardsUnassigned\"; readonly address: RunnerAddress; readonly shards: ReadonlyArray<ShardId>; } | { readonly _tag: \"RunnerRegistered\"; readonly address: RunnerAddress; } | { readonly _tag: \"RunnerUnregistered\"; readonly address: RunnerAddress; }) => Unify<ReturnType<Cases[\"StreamStarted\" | \"ShardsAssigned\" | \"ShardsUnassigned\" | \"RunnerRegistered\" | \"RunnerUnregistered\"]>>; <const Cases extends { readonly StreamStarted: (args: { readonly _tag: \"StreamStarted\"; }) => any; readonly ShardsAssigned: (args: { readonly _tag: \"ShardsAssigned\"; readonly address: RunnerAddress; readonly shards: ReadonlyArray<ShardId>; }) => any; readonly ShardsUnassigned: (args: { readonly _tag: \"ShardsUnassigned\"; readonly address: RunnerAddress; readonly shards: ReadonlyArray<ShardId>; }) => any; readonly RunnerRegistered: (args: { readonly _tag: \"RunnerRegistered\"; readonly address: RunnerAddress; }) => any; readonly RunnerUnregistered: (args: { readonly _tag: \"RunnerUnregistered\"; readonly address: RunnerAddress; }) => any; }>(value: { readonly _tag: \"StreamStarted\"; } | { readonly _tag: \"ShardsAssigned\"; readonly address: RunnerAddress; readonly shards: ReadonlyArray<ShardId>; } | { readonly _tag: \"ShardsUnassigned\"; readonly address: RunnerAddress; readonly shards: ReadonlyArray<ShardId>; } | { readonly _tag: \"RunnerRegistered\"; readonly address: RunnerAddress; } | { readonly _tag: \"RunnerUnregistered\"; readonly address: RunnerAddress; }, cases: Cases & { [K in Exclude<keyof Cases, \"StreamStarted\" | \"ShardsAssigned\" | \"ShardsUnassigned\" | \"RunnerRegistered\" | \"RunnerUnregistered\">]: never; }): Unify<ReturnType<Cases[\"StreamStarted\" | \"ShardsAssigned\" | \"ShardsUnassigned\" | \"RunnerRegistered\" | \"RunnerUnregistered\"]>>; }; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/ShardManager.ts#L320"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ShardManager.ts#L320"
   },
   {
     "_tag": "Constant",
@@ -3689,7 +3704,7 @@
     "since": "1.0.0",
     "category": "Client",
     "signature": "declare const makeClientLocal: Effect.Effect<{ readonly register: (address: RunnerAddress, groups: ReadonlyArray<string>) => Effect.Effect<MachineId.MachineId>; readonly unregister: (address: RunnerAddress) => Effect.Effect<void>; readonly notifyUnhealthyRunner: (address: RunnerAddress) => Effect.Effect<void>; readonly getAssignments: Effect.Effect<Iterable<readonly [ShardId, Option.Option<RunnerAddress>]>>; readonly shardingEvents: Effect.Effect<Mailbox.ReadonlyMailbox<ShardingEvent>, never, Scope>; readonly getTime: Effect.Effect<number>; }, never, ShardingConfig>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/ShardManager.ts#L326"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ShardManager.ts#L326"
   },
   {
     "_tag": "Constant",
@@ -3704,7 +3719,7 @@
     "since": "1.0.0",
     "category": "Client",
     "signature": "declare const makeClientRpc: Effect.Effect<{ readonly register: (address: RunnerAddress, groups: ReadonlyArray<string>) => Effect.Effect<MachineId.MachineId>; readonly unregister: (address: RunnerAddress) => Effect.Effect<void>; readonly notifyUnhealthyRunner: (address: RunnerAddress) => Effect.Effect<void>; readonly getAssignments: Effect.Effect<Iterable<readonly [ShardId, Option.Option<RunnerAddress>]>>; readonly shardingEvents: Effect.Effect<Mailbox.ReadonlyMailbox<ShardingEvent>, never, Scope>; readonly getTime: Effect.Effect<number>; }, never, Scope | ShardingConfig | RpcClient.Protocol>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/ShardManager.ts#L363"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ShardManager.ts#L363"
   },
   {
     "_tag": "Constant",
@@ -3719,7 +3734,7 @@
     "since": "1.0.0",
     "category": "Client",
     "signature": "declare const layerClientLocal: Layer.Layer<ShardManagerClient, never, ShardingConfig>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/ShardManager.ts#L403"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ShardManager.ts#L403"
   },
   {
     "_tag": "Constant",
@@ -3734,7 +3749,7 @@
     "since": "1.0.0",
     "category": "Client",
     "signature": "declare const layerClientRpc: Layer.Layer<ShardManagerClient, never, ShardingConfig | RpcClientProtocol>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/ShardManager.ts#L413"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ShardManager.ts#L413"
   },
   {
     "_tag": "Constant",
@@ -3749,7 +3764,7 @@
     "since": "1.0.0",
     "category": "Constructors",
     "signature": "declare const make: Effect.Effect<{ readonly getAssignments: Effect.Effect<Iterable<readonly [ShardId, Option.Option<RunnerAddress>]>>; readonly shardingEvents: Effect.Effect<Queue.Dequeue<ShardingEvent>, never, Scope>; readonly register: (runner: Runner) => Effect.Effect<MachineId.MachineId>; readonly unregister: (address: RunnerAddress) => Effect.Effect<void>; readonly rebalance: Effect.Effect<void>; readonly notifyUnhealthyRunner: (address: RunnerAddress) => Effect.Effect<void>; readonly checkRunnerHealth: Effect.Effect<void>; }, never, Scope | ShardStorage | ShardingConfig | RunnerHealth | Config | Runners>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/ShardManager.ts#L432"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ShardManager.ts#L432"
   },
   {
     "_tag": "Constant",
@@ -3764,7 +3779,7 @@
     "since": "1.0.0",
     "category": "layer",
     "signature": "declare const layer: Layer.Layer<ShardManager, never, ShardStorage | ShardingConfig | RunnerHealth | Config | Runners>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/ShardManager.ts#L754"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ShardManager.ts#L754"
   },
   {
     "_tag": "Constant",
@@ -3779,7 +3794,7 @@
     "since": "1.0.0",
     "category": "Server",
     "signature": "declare const layerServerHandlers: Layer.Layer<Rpc.Handler<\"Register\"> | Rpc.Handler<\"Unregister\"> | Rpc.Handler<\"NotifyUnhealthyRunner\"> | Rpc.Handler<\"GetAssignments\"> | Rpc.Handler<\"ShardingEvents\"> | Rpc.Handler<\"GetTime\">, never, ShardManager>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/ShardManager.ts#L764"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ShardManager.ts#L764"
   },
   {
     "_tag": "Constant",
@@ -3794,7 +3809,7 @@
     "since": "1.0.0",
     "category": "Server",
     "signature": "declare const layerServer: Layer.Layer<never, never, ShardManager | RpcServer.Protocol>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/ShardManager.ts#L798"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ShardManager.ts#L798"
   },
   {
     "_tag": "Function",
@@ -3809,7 +3824,7 @@
     "since": "1.0.0",
     "category": "Config",
     "signature": "declare const layerConfig: (config?: Partial<Config[\"Type\"]> | undefined) => Layer.Layer<Config>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/ShardManager.ts#L196"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ShardManager.ts#L196"
   },
   {
     "_tag": "Function",
@@ -3824,7 +3839,7 @@
     "since": "1.0.0",
     "category": "Config",
     "signature": "declare const layerConfigFromEnv: (config?: Partial<Config[\"Type\"]> | undefined) => Layer.Layer<Config, ConfigError>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/ShardManager.ts#L206"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ShardManager.ts#L206"
   },
   {
     "_tag": "TypeAlias",
@@ -3839,7 +3854,7 @@
     "since": "1.0.0",
     "category": "models",
     "signature": "type ShardingEvent = Data.TaggedEnum<{\n  StreamStarted: {}\n  ShardsAssigned: {\n    address: RunnerAddress\n    shards: ReadonlyArray<ShardId>\n  }\n  ShardsUnassigned: {\n    address: RunnerAddress\n    shards: ReadonlyArray<ShardId>\n  }\n  RunnerRegistered: { address: RunnerAddress }\n  RunnerUnregistered: { address: RunnerAddress }\n}>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/ShardManager.ts#L302"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ShardManager.ts#L302"
   },
   {
     "_tag": "Class",
@@ -3855,7 +3870,7 @@
     "since": "1.0.0",
     "category": "models",
     "signature": "declare class ShardStorage",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/ShardStorage.ts#L22"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ShardStorage.ts#L22"
   },
   {
     "_tag": "Constant",
@@ -3870,7 +3885,7 @@
     "since": "1.0.0",
     "category": "layers",
     "signature": "declare const layerNoop: Layer.Layer<ShardStorage, never, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/ShardStorage.ts#L221"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ShardStorage.ts#L221"
   },
   {
     "_tag": "Constant",
@@ -3885,7 +3900,7 @@
     "since": "1.0.0",
     "category": "constructors",
     "signature": "declare const makeMemory: Effect.Effect<{ readonly getAssignments: Effect.Effect<Array<[ShardId, Option.Option<RunnerAddress>]>, PersistenceError>; readonly saveAssignments: (assignments: Iterable<readonly [ShardId, Option.Option<RunnerAddress>]>) => Effect.Effect<void, PersistenceError>; readonly getRunners: Effect.Effect<Array<[RunnerAddress, Runner]>, PersistenceError>; readonly saveRunners: (runners: Iterable<readonly [RunnerAddress, Runner]>) => Effect.Effect<void, PersistenceError>; readonly acquire: (address: RunnerAddress, shardIds: Iterable<ShardId>) => Effect.Effect<Array<ShardId>, PersistenceError>; readonly refresh: (address: RunnerAddress, shardIds: Iterable<ShardId>) => Effect.Effect<Array<ShardId>, PersistenceError>; readonly release: (address: RunnerAddress, shardId: ShardId) => Effect.Effect<void, PersistenceError>; readonly releaseAll: (address: RunnerAddress) => Effect.Effect<void, PersistenceError>; }, never, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/ShardStorage.ts#L245"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ShardStorage.ts#L245"
   },
   {
     "_tag": "Constant",
@@ -3900,7 +3915,7 @@
     "since": "1.0.0",
     "category": "layers",
     "signature": "declare const layerMemory: Layer.Layer<ShardStorage, never, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/ShardStorage.ts#L286"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ShardStorage.ts#L286"
   },
   {
     "_tag": "Function",
@@ -3915,7 +3930,7 @@
     "since": "1.0.0",
     "category": "layers",
     "signature": "declare const makeEncoded: (encoded: Encoded) => { readonly getAssignments: Effect.Effect<Array<[ShardId, Option.Option<RunnerAddress>]>, PersistenceError>; readonly saveAssignments: (assignments: Iterable<readonly [ShardId, Option.Option<RunnerAddress>]>) => Effect.Effect<void, PersistenceError>; readonly getRunners: Effect.Effect<Array<[RunnerAddress, Runner]>, PersistenceError>; readonly saveRunners: (runners: Iterable<readonly [RunnerAddress, Runner]>) => Effect.Effect<void, PersistenceError>; readonly acquire: (address: RunnerAddress, shardIds: Iterable<ShardId>) => Effect.Effect<Array<ShardId>, PersistenceError>; readonly refresh: (address: RunnerAddress, shardIds: Iterable<ShardId>) => Effect.Effect<Array<ShardId>, PersistenceError>; readonly release: (address: RunnerAddress, shardId: ShardId) => Effect.Effect<void, PersistenceError>; readonly releaseAll: (address: RunnerAddress) => Effect.Effect<void, PersistenceError>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/ShardStorage.ts#L156"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ShardStorage.ts#L156"
   },
   {
     "_tag": "Interface",
@@ -3930,7 +3945,7 @@
     "since": "1.0.0",
     "category": "Encoded",
     "signature": "export interface Encoded {\n  /**\n   * Get the current assignments of shards to runners.\n   */\n  readonly getAssignments: Effect.Effect<\n    Array<\n      readonly [\n        shardId: string,\n        runnerAddress: string | null\n      ]\n    >,\n    PersistenceError\n  >\n\n  /**\n   * Save the current state of shards assignments to runners.\n   */\n  readonly saveAssignments: (\n    assignments: Array<readonly [shardId: string, RunnerAddress: string | null]>\n  ) => Effect.Effect<void, PersistenceError>\n\n  /**\n   * Get all runners registered with the cluster.\n   */\n  readonly getRunners: Effect.Effect<Array<readonly [address: string, runner: string]>, PersistenceError>\n\n  /**\n   * Save the current runners registered with the cluster.\n   */\n  readonly saveRunners: (\n    runners: Array<readonly [address: string, runner: string]>\n  ) => Effect.Effect<void, PersistenceError>\n\n  /**\n   * Acquire the lock on the given shards, returning the shards that were\n   * successfully locked.\n   */\n  readonly acquire: (\n    address: string,\n    shardIds: ReadonlyArray<string>\n  ) => Effect.Effect<Array<string>, PersistenceError>\n\n  /**\n   * Refresh the lock on the given shards, returning the shards that were\n   * successfully locked.\n   */\n  readonly refresh: (\n    address: string,\n    shardIds: ReadonlyArray<string>\n  ) => Effect.Effect<Array<string>, PersistenceError>\n\n  /**\n   * Release the lock on the given shard.\n   */\n  readonly release: (\n    address: string,\n    shardId: string\n  ) => Effect.Effect<void, PersistenceError>\n\n  /**\n   * Release the lock on all shards for the given runner.\n   */\n  readonly releaseAll: (address: string) => Effect.Effect<void, PersistenceError>\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/ShardStorage.ts#L87"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ShardStorage.ts#L87"
   },
   {
     "_tag": "Function",
@@ -3945,7 +3960,7 @@
     "since": "1.0.0",
     "category": "constructors",
     "signature": "declare const make: <E, R>(name: string, run: Effect.Effect<void, E, R>, options?: { readonly shardGroup?: string | undefined; }) => Layer.Layer<never, never, Sharding | Exclude<R, Scope>>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Singleton.ts#L13"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Singleton.ts#L13"
   },
   {
     "_tag": "Class",
@@ -3961,7 +3976,7 @@
     "since": "1.0.0",
     "category": "Address",
     "signature": "declare class SingletonAddress",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/SingletonAddress.ts#L27"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/SingletonAddress.ts#L27"
   },
   {
     "_tag": "Constant",
@@ -3976,7 +3991,7 @@
     "since": "1.0.0",
     "category": "Address",
     "signature": "declare const TypeId: unique symbol",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/SingletonAddress.ts#L13"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/SingletonAddress.ts#L13"
   },
   {
     "_tag": "TypeAlias",
@@ -3991,7 +4006,7 @@
     "since": "1.0.0",
     "category": "Address",
     "signature": "type TypeId = typeof TypeId",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/SingletonAddress.ts#L19"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/SingletonAddress.ts#L19"
   },
   {
     "_tag": "Class",
@@ -4006,7 +4021,7 @@
     "since": "1.0.0",
     "category": "Generator",
     "signature": "declare class Generator",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Snowflake.ts#L185"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Snowflake.ts#L185"
   },
   {
     "_tag": "Constant",
@@ -4021,7 +4036,7 @@
     "since": "1.0.0",
     "category": "Symbols",
     "signature": "declare const TypeId: unique symbol",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Snowflake.ts#L17"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Snowflake.ts#L17"
   },
   {
     "_tag": "Constant",
@@ -4036,7 +4051,7 @@
     "since": "1.0.0",
     "category": "Schemas",
     "signature": "declare const SnowflakeFromBigInt: Schema.Schema<Snowflake, bigint, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Snowflake.ts#L67"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Snowflake.ts#L67"
   },
   {
     "_tag": "Constant",
@@ -4051,7 +4066,7 @@
     "since": "1.0.0",
     "category": "Schemas",
     "signature": "declare const SnowflakeFromString: Schema.Schema<Snowflake, string, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Snowflake.ts#L75"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Snowflake.ts#L75"
   },
   {
     "_tag": "Constant",
@@ -4066,7 +4081,7 @@
     "since": "1.0.0",
     "category": "Epoch",
     "signature": "declare const constEpochMillis: number",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Snowflake.ts#L83"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Snowflake.ts#L83"
   },
   {
     "_tag": "Constant",
@@ -4081,7 +4096,7 @@
     "since": "1.0.0",
     "category": "Generator",
     "signature": "declare const makeGenerator: Effect.Effect<Snowflake.Generator, never, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Snowflake.ts#L143"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Snowflake.ts#L143"
   },
   {
     "_tag": "Constant",
@@ -4096,7 +4111,7 @@
     "since": "1.0.0",
     "category": "Generator",
     "signature": "declare const layerGenerator: Layer.Layer<Generator, never, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Snowflake.ts#L194"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Snowflake.ts#L194"
   },
   {
     "_tag": "Function",
@@ -4111,7 +4126,7 @@
     "since": "1.0.0",
     "category": "Models",
     "signature": "declare const Snowflake: (input: string | bigint) => Snowflake",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Snowflake.ts#L35"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Snowflake.ts#L35"
   },
   {
     "_tag": "Function",
@@ -4126,7 +4141,7 @@
     "since": "1.0.0",
     "category": "constructors",
     "signature": "declare const make: (options: { readonly machineId: MachineId; readonly sequence: number; readonly timestamp: number; }) => Snowflake",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Snowflake.ts#L95"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Snowflake.ts#L95"
   },
   {
     "_tag": "Function",
@@ -4141,7 +4156,7 @@
     "since": "1.0.0",
     "category": "Parts",
     "signature": "declare const timestamp: (snowflake: Snowflake) => number",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Snowflake.ts#L108"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Snowflake.ts#L108"
   },
   {
     "_tag": "Function",
@@ -4156,7 +4171,7 @@
     "since": "1.0.0",
     "category": "Parts",
     "signature": "declare const dateTime: (snowflake: Snowflake) => DateTime.Utc",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Snowflake.ts#L114"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Snowflake.ts#L114"
   },
   {
     "_tag": "Function",
@@ -4171,7 +4186,7 @@
     "since": "1.0.0",
     "category": "Parts",
     "signature": "declare const machineId: (snowflake: Snowflake) => MachineId",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Snowflake.ts#L120"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Snowflake.ts#L120"
   },
   {
     "_tag": "Function",
@@ -4186,7 +4201,7 @@
     "since": "1.0.0",
     "category": "Parts",
     "signature": "declare const sequence: (snowflake: Snowflake) => number",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Snowflake.ts#L127"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Snowflake.ts#L127"
   },
   {
     "_tag": "Function",
@@ -4201,7 +4216,7 @@
     "since": "1.0.0",
     "category": "Parts",
     "signature": "declare const toParts: (snowflake: Snowflake) => Snowflake.Parts",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Snowflake.ts#L133"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Snowflake.ts#L133"
   },
   {
     "_tag": "TypeAlias",
@@ -4216,7 +4231,7 @@
     "since": "1.0.0",
     "category": "Symbols",
     "signature": "type TypeId = typeof TypeId",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Snowflake.ts#L23"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Snowflake.ts#L23"
   },
   {
     "_tag": "TypeAlias",
@@ -4231,7 +4246,7 @@
     "since": "1.0.0",
     "category": "Models",
     "signature": "type Snowflake = Brand.Branded<bigint, TypeId>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Snowflake.ts#L29"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Snowflake.ts#L29"
   },
   {
     "_tag": "Interface",
@@ -4246,7 +4261,7 @@
     "since": "1.0.0",
     "category": "Models",
     "signature": "export interface Parts {\n    readonly timestamp: number\n    readonly machineId: MachineId\n    readonly sequence: number\n  }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Snowflake.ts#L47"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Snowflake.ts#L47"
   },
   {
     "_tag": "Interface",
@@ -4261,7 +4276,7 @@
     "since": "1.0.0",
     "category": "Models",
     "signature": "export interface Generator {\n    readonly unsafeNext: () => Snowflake\n    readonly setMachineId: (machineId: MachineId) => Effect.Effect<void>\n  }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Snowflake.ts#L57"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Snowflake.ts#L57"
   },
   {
     "_tag": "Constant",
@@ -4276,7 +4291,7 @@
     "since": "1.0.0",
     "category": "Layers",
     "signature": "declare const layer: Layer.Layer<Sharding.Sharding | Runners.Runners, never, ShardStorage.ShardStorage | MessageStorage | ShardingConfig | SocketServer | Runners.RpcClientProtocol | RpcSerialization.RpcSerialization>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/SocketRunner.ts#L32"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/SocketRunner.ts#L32"
   },
   {
     "_tag": "Constant",
@@ -4291,7 +4306,7 @@
     "since": "1.0.0",
     "category": "Layers",
     "signature": "declare const layerClientOnly: Layer.Layer<Sharding.Sharding | Runners.Runners, never, MessageStorage | ShardingConfig | Runners.RpcClientProtocol>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/SocketRunner.ts#L50"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/SocketRunner.ts#L50"
   },
   {
     "_tag": "Constant",
@@ -4306,7 +4321,7 @@
     "since": "1.0.0",
     "category": "Layers",
     "signature": "declare const layer: Layer.Layer<ShardManager.ShardManager, never, ShardStorage | ShardingConfig | SocketServer | Runners.RpcClientProtocol | RpcSerialization | RunnerHealth | ShardManager.Config>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/SocketShardManager.ts#L32"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/SocketShardManager.ts#L32"
   },
   {
     "_tag": "Constant",
@@ -4321,7 +4336,7 @@
     "since": "1.0.0",
     "category": "Constructors",
     "signature": "declare const make: (options?: { readonly prefix?: string | undefined; } | undefined) => Effect.Effect<{ readonly saveRequest: <R extends Any>(envelope: OutgoingRequest<R>) => Effect.Effect<MessageStorage.SaveResult<R>, PersistenceError | MalformedMessage>; readonly saveEnvelope: (envelope: OutgoingEnvelope) => Effect.Effect<void, PersistenceError | MalformedMessage>; readonly saveReply: <R extends Any>(reply: Reply.ReplyWithContext<R>) => Effect.Effect<void, PersistenceError | MalformedMessage>; readonly clearReplies: (requestId: Snowflake.Snowflake) => Effect.Effect<void, PersistenceError>; readonly repliesFor: <R extends Any>(requests: Iterable<OutgoingRequest<R>>) => Effect.Effect<Array<Reply.Reply<R>>, PersistenceError | MalformedMessage>; readonly repliesForUnfiltered: <R extends Any>(requestIds: Iterable<Snowflake.Snowflake>) => Effect.Effect<Array<Reply.ReplyEncoded<R>>, PersistenceError | MalformedMessage>; readonly requestIdForPrimaryKey: (options: { readonly address: EntityAddress; readonly tag: string; readonly id: string; }) => Effect.Effect<Option.Option<Snowflake.Snowflake>, PersistenceError>; readonly registerReplyHandler: <R extends Any>(message: OutgoingRequest<R> | IncomingRequest<R>) => Effect.Effect<void>; readonly unprocessedMessages: (shardIds: Iterable<ShardId>) => Effect.Effect<Array<Incoming<any>>, PersistenceError>; readonly unprocessedMessagesById: <R extends Any>(messageIds: Iterable<Snowflake.Snowflake>) => Effect.Effect<Array<Incoming<R>>, PersistenceError>; readonly resetShards: (shardIds: Iterable<ShardId>) => Effect.Effect<void, PersistenceError>; readonly resetAddress: (address: EntityAddress) => Effect.Effect<void, PersistenceError>; readonly clearAddress: (address: EntityAddress) => Effect.Effect<void, PersistenceError>; }, SqlError, SqlClient.SqlClient | Snowflake.Generator>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/SqlMessageStorage.ts#L28"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/SqlMessageStorage.ts#L28"
   },
   {
     "_tag": "Constant",
@@ -4336,7 +4351,7 @@
     "since": "1.0.0",
     "category": "Layers",
     "signature": "declare const layer: Layer.Layer<MessageStorage.MessageStorage, SqlError, SqlClient.SqlClient | ShardingConfig>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/SqlMessageStorage.ts#L836"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/SqlMessageStorage.ts#L836"
   },
   {
     "_tag": "Function",
@@ -4351,7 +4366,7 @@
     "since": "1.0.0",
     "category": "Layers",
     "signature": "declare const layerWith: (options: { readonly prefix?: string | undefined; readonly replyPollInterval?: DurationInput | undefined; }) => Layer.Layer<MessageStorage.MessageStorage, SqlError, SqlClient.SqlClient | ShardingConfig>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/SqlMessageStorage.ts#L848"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/SqlMessageStorage.ts#L848"
   },
   {
     "_tag": "Constant",
@@ -4366,7 +4381,7 @@
     "since": "1.0.0",
     "category": "Constructors",
     "signature": "declare const make: (options?: { readonly prefix?: string | undefined; } | undefined) => Effect.Effect<{ readonly getAssignments: Effect.Effect<Array<[ShardId, Option<RunnerAddress>]>, PersistenceError>; readonly saveAssignments: (assignments: Iterable<readonly [ShardId, Option<RunnerAddress>]>) => Effect.Effect<void, PersistenceError>; readonly getRunners: Effect.Effect<Array<[RunnerAddress, Runner]>, PersistenceError>; readonly saveRunners: (runners: Iterable<readonly [RunnerAddress, Runner]>) => Effect.Effect<void, PersistenceError>; readonly acquire: (address: RunnerAddress, shardIds: Iterable<ShardId>) => Effect.Effect<Array<ShardId>, PersistenceError>; readonly refresh: (address: RunnerAddress, shardIds: Iterable<ShardId>) => Effect.Effect<Array<ShardId>, PersistenceError>; readonly release: (address: RunnerAddress, shardId: ShardId) => Effect.Effect<void, PersistenceError>; readonly releaseAll: (address: RunnerAddress) => Effect.Effect<void, PersistenceError>; }, SqlError, SqlClient.SqlClient>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/SqlShardStorage.ts#L18"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/SqlShardStorage.ts#L18"
   },
   {
     "_tag": "Constant",
@@ -4381,7 +4396,7 @@
     "since": "1.0.0",
     "category": "Layers",
     "signature": "declare const layer: Layer.Layer<ShardStorage.ShardStorage, SqlError, SqlClient.SqlClient>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/SqlShardStorage.ts#L290"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/SqlShardStorage.ts#L290"
   },
   {
     "_tag": "Function",
@@ -4396,7 +4411,7 @@
     "since": "1.0.0",
     "category": "Layers",
     "signature": "declare const layerWith: (options: { readonly prefix?: string | undefined; }) => Layer.Layer<ShardStorage.ShardStorage, SqlError, SqlClient.SqlClient>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/SqlShardStorage.ts#L300"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/SqlShardStorage.ts#L300"
   },
   {
     "_tag": "Constant",
@@ -4411,7 +4426,7 @@
     "since": "1.0.0",
     "category": "Constructors",
     "signature": "declare const make: (getRemoteTime: Effect.Effect<number, never, never>) => Effect.Effect<Clock.Clock, never, Scope>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/SynchronizedClock.ts#L16"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/SynchronizedClock.ts#L16"
   },
   {
     "_tag": "Constant",
@@ -4426,6 +4441,6 @@
     "since": "1.0.0",
     "category": "Layers",
     "signature": "declare const layer: Layer.Layer<never, never, ShardManagerClient>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/SynchronizedClock.ts#L74"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/SynchronizedClock.ts#L74"
   }
 ]

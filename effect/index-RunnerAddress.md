@@ -11,6 +11,6 @@ Re-exports all named exports from the "./RunnerAddress.js" module as `RunnerAddr
 export * as RunnerAddress from "./RunnerAddress.js"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform/src/index.ts#L109)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L109)
 
 Since v1.0.0

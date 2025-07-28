@@ -11,6 +11,6 @@ Re-exports all named exports from the "./ClusterCron.js" module as `ClusterCron`
 export * as ClusterCron from "./ClusterCron.js"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform/src/index.ts#L4)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L4)
 
 Since v1.0.0

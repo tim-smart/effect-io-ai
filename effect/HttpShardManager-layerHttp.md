@@ -14,6 +14,6 @@ By default, it uses the `HttpRouter.Default` tag.
 declare const layerHttp: Layer.Layer<ShardManager.ShardManager, never, ShardStorage | ShardingConfig | RpcSerialization.RpcSerialization | RunnerHealth.RunnerHealth | ShardManager.Config | HttpClient.HttpClient | HttpServer.HttpServer>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpShardManager.ts#L222)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/HttpShardManager.ts#L222)
 
 Since v1.0.0

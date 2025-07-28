@@ -11,6 +11,6 @@ A `RunnerServer` layer that includes the `Runners` & `Sharding` clients.
 declare const layerWithClients: Layer.Layer<Sharding.Sharding | Runners.Runners, never, ShardStorage.ShardStorage | MessageStorage.MessageStorage | ShardingConfig | Runners.RpcClientProtocol | RpcServer.Protocol>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform/src/RunnerServer.ts#L128)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/RunnerServer.ts#L128)
 
 Since v1.0.0

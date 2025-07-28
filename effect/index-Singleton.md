@@ -11,6 +11,6 @@ Re-exports all named exports from the "./Singleton.js" module as `Singleton`.
 export * as Singleton from "./Singleton.js"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform/src/index.ts#L159)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L159)
 
 Since v1.0.0

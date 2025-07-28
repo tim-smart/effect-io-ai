@@ -41,6 +41,6 @@ export interface Handlers<
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/EventLog.ts#L85)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/EventLog.ts#L89)
 
 Since v1.0.0

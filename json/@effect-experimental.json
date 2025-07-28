@@ -1545,7 +1545,7 @@
     "since": "1.0.0",
     "category": "layers",
     "signature": "declare class Registry",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/EventLog.ts#L369"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/EventLog.ts#L373"
   },
   {
     "_tag": "Class",
@@ -1560,7 +1560,7 @@
     "since": "1.0.0",
     "category": "tags",
     "signature": "declare class Identity",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/EventLog.ts#L398"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/EventLog.ts#L402"
   },
   {
     "_tag": "Class",
@@ -1575,7 +1575,7 @@
     "since": "1.0.0",
     "category": "tags",
     "signature": "declare class EventLog",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/EventLog.ts#L407"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/EventLog.ts#L463"
   },
   {
     "_tag": "Constant",
@@ -1590,7 +1590,7 @@
     "since": "1.0.0",
     "category": "schema",
     "signature": "declare const SchemaTypeId: unique symbol",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/EventLog.ts#L30"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/EventLog.ts#L34"
   },
   {
     "_tag": "Constant",
@@ -1605,7 +1605,7 @@
     "since": "1.0.0",
     "category": "handlers",
     "signature": "declare const HandlersTypeId: unique symbol",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/EventLog.ts#L71"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/EventLog.ts#L75"
   },
   {
     "_tag": "Constant",
@@ -1620,7 +1620,7 @@
     "since": "1.0.0",
     "category": "layers",
     "signature": "declare const layerEventLog: Layer.Layer<EventLog, never, Identity | EventJournal>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/EventLog.ts#L655"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/EventLog.ts#L711"
   },
   {
     "_tag": "Function",
@@ -1635,7 +1635,7 @@
     "since": "1.0.0",
     "category": "schema",
     "signature": "declare const isEventLogSchema: (u: unknown) => u is EventLogSchema<any>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/EventLog.ts#L42"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/EventLog.ts#L46"
   },
   {
     "_tag": "Function",
@@ -1650,7 +1650,7 @@
     "since": "1.0.0",
     "category": "schema",
     "signature": "declare const schema: <Groups extends ReadonlyArray<EventGroup.Any>>(...groups: Groups) => EventLogSchema<Groups[number]>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/EventLog.ts#L58"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/EventLog.ts#L62"
   },
   {
     "_tag": "Function",
@@ -1665,7 +1665,7 @@
     "since": "1.0.0",
     "category": "handlers",
     "signature": "declare const group: <Events extends Event.Any, Return>(group: EventGroup<Events>, f: (handlers: Handlers<never, Events>) => Handlers.ValidateReturn<Return>) => Layer.Layer<Event.ToService<Events>, Handlers.Error<Return>, Exclude<Handlers.Context<Return>, Scope>>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/EventLog.ts#L238"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/EventLog.ts#L242"
   },
   {
     "_tag": "Function",
@@ -1680,7 +1680,7 @@
     "since": "1.0.0",
     "category": "compaction",
     "signature": "declare const groupCompaction: <Events extends Event.Any, R>(group: EventGroup<Events>, effect: (options: { readonly primaryKey: string; readonly entries: Array<Entry>; readonly events: Array<Event.TaggedPayload<Events>>; readonly write: <Tag extends Event.Tag<Events>>(tag: Tag, payload: Event.PayloadWithTag<Events, Tag>) => Effect.Effect<void>; }) => Effect.Effect<void, never, R>) => Layer.Layer<never, never, EventLog | R | Event.Context<Events>>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/EventLog.ts#L261"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/EventLog.ts#L265"
   },
   {
     "_tag": "Function",
@@ -1695,7 +1695,23 @@
     "since": "1.0.0",
     "category": "reactivity",
     "signature": "declare const groupReactivity: <Events extends Event.Any>(group: EventGroup<Events>, keys: { readonly [Tag in Event.Tag<Events>]?: ReadonlyArray<string>; } | ReadonlyArray<string>) => Layer.Layer<never, never, EventLog>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/EventLog.ts#L346"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/EventLog.ts#L350"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "EventLog.ts",
+      "path": "src/EventLog.ts"
+    },
+    "project": "@effect/experimental",
+    "name": "layerIdentityKvs",
+    "description": "Generates a random `Identity` and stores it in a `KeyValueStore`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "layers",
+    "signature": "declare const layerIdentityKvs: (options: { readonly key: string; }) => Layer.Layer<Identity, ParseResult.ParseError | Error.PlatformError, KeyValueStore.KeyValueStore>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/EventLog.ts#L442"
   },
   {
     "_tag": "Function",
@@ -1710,7 +1726,7 @@
     "since": "1.0.0",
     "category": "layers",
     "signature": "declare const layer: <Groups extends EventGroup.Any>(_schema: EventLogSchema<Groups>) => Layer.Layer<EventLog, never, EventGroup.ToService<Groups> | EventJournal | Identity>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/EventLog.ts#L663"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/EventLog.ts#L719"
   },
   {
     "_tag": "Function",
@@ -1725,7 +1741,7 @@
     "since": "1.0.0",
     "category": "client",
     "signature": "declare const makeClient: <Groups extends EventGroup.Any>(schema: EventLogSchema<Groups>) => Effect.Effect<(<Tag extends Event.Tag<EventGroup.Events<Groups>>>(event: Tag, payload: Event.PayloadWithTag<EventGroup.Events<Groups>, Tag>) => Effect.Effect<Event.SuccessWithTag<EventGroup.Events<Groups>, Tag>, Event.ErrorWithTag<EventGroup.Events<Groups>, Tag> | EventJournalError>), never, EventLog>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/EventLog.ts#L673"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/EventLog.ts#L729"
   },
   {
     "_tag": "Interface",
@@ -1740,7 +1756,7 @@
     "since": "1.0.0",
     "category": "schema",
     "signature": "export interface EventLogSchema<Groups extends EventGroup.Any> {\n  new(_: never): {}\n  readonly [SchemaTypeId]: SchemaTypeId\n  readonly groups: ReadonlyArray<Groups>\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/EventLog.ts#L48"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/EventLog.ts#L52"
   },
   {
     "_tag": "Interface",
@@ -1756,7 +1772,7 @@
     "since": "1.0.0",
     "category": "handlers",
     "signature": "export interface Handlers<\n  R,\n  Events extends Event.Any = never\n> extends Pipeable {\n  readonly [HandlersTypeId]: {\n    _Endpoints: Covariant<Events>\n  }\n  readonly group: EventGroup.AnyWithProps\n  readonly handlers: Record.ReadonlyRecord<string, Handlers.Item<R>>\n  readonly context: Context.Context<any>\n\n  /**\n   * Add the implementation for an `Event` to a `Handlers` group.\n   */\n  handle<Tag extends Events[\"tag\"], R1>(\n    name: Tag,\n    handler: (\n      options: {\n        readonly payload: Event.PayloadWithTag<Events, Tag>\n        readonly entry: Entry\n        readonly conflicts: Array<{\n          readonly entry: Entry\n          readonly payload: Event.PayloadWithTag<Events, Tag>\n        }>\n      }\n    ) => Effect.Effect<Event.SuccessWithTag<Events, Tag>, Event.ErrorWithTag<Events, Tag>, R1>\n  ): Handlers<\n    R | R1,\n    Event.ExcludeTag<Events, Tag>\n  >\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/EventLog.ts#L85"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/EventLog.ts#L89"
   },
   {
     "_tag": "TypeAlias",
@@ -1771,7 +1787,7 @@
     "since": "1.0.0",
     "category": "schema",
     "signature": "type SchemaTypeId = typeof SchemaTypeId",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/EventLog.ts#L36"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/EventLog.ts#L40"
   },
   {
     "_tag": "TypeAlias",
@@ -1786,7 +1802,7 @@
     "since": "1.0.0",
     "category": "handlers",
     "signature": "type HandlersTypeId = typeof HandlersTypeId",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/EventLog.ts#L77"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/EventLog.ts#L81"
   },
   {
     "_tag": "Interface",
@@ -1801,7 +1817,7 @@
     "since": "1.0.0",
     "category": "handlers",
     "signature": "export interface Any {\n    readonly [HandlersTypeId]: any\n  }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/EventLog.ts#L126"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/EventLog.ts#L130"
   },
   {
     "_tag": "TypeAlias",
@@ -1816,7 +1832,7 @@
     "since": "1.0.0",
     "category": "handlers",
     "signature": "type Item<R> = {\n    readonly event: Event.AnyWithProps\n    readonly context: Context.Context<any>\n    readonly handler: (options: {\n      readonly payload: any\n      readonly entry: Entry\n      readonly conflicts: Array<{\n        readonly entry: Entry\n        readonly payload: any\n      }>\n    }) => Effect.Effect<any, R>\n  }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/EventLog.ts#L134"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/EventLog.ts#L138"
   },
   {
     "_tag": "TypeAlias",
@@ -1831,7 +1847,7 @@
     "since": "1.0.0",
     "category": "handlers",
     "signature": "type ValidateReturn<A> = A extends (\n    | Handlers<\n      infer _R,\n      infer _Events\n    >\n    | Effect.Effect<\n      Handlers<\n        infer _R,\n        infer _Events\n      >,\n      infer _EX,\n      infer _RX\n    >\n  ) ? [_Events] extends [never] ? A\n    : `Event not handled: ${Event.Tag<_Events>}` :\n    `Must return the implemented handlers`",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/EventLog.ts#L151"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/EventLog.ts#L155"
   },
   {
     "_tag": "TypeAlias",
@@ -1846,7 +1862,7 @@
     "since": "1.0.0",
     "category": "handlers",
     "signature": "type Error<A> = A extends Effect.Effect<\n    Handlers<\n      infer _R,\n      infer _Events\n    >,\n    infer _EX,\n    infer _RX\n  > ? _EX :\n    never",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/EventLog.ts#L172"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/EventLog.ts#L176"
   },
   {
     "_tag": "TypeAlias",
@@ -1861,7 +1877,7 @@
     "since": "1.0.0",
     "category": "handlers",
     "signature": "type Context<A> = A extends Handlers<\n    infer _R,\n    infer _Events\n  > ? _R | Event.Context<_Events> :\n    A extends Effect.Effect<\n      Handlers<\n        infer _R,\n        infer _Events\n      >,\n      infer _EX,\n      infer _RX\n    > ? _R | _RX | Event.Context<_Events> :\n    never",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/EventLog.ts#L186"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/EventLog.ts#L190"
   },
   {
     "_tag": "Class",

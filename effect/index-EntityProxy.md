@@ -11,6 +11,6 @@ Re-exports all named exports from the "./EntityProxy.js" module as `EntityProxy`
 export * as EntityProxy from "./EntityProxy.js"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform/src/index.ts#L49)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L49)
 
 Since v1.0.0

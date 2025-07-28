@@ -11,6 +11,6 @@ Represents the configuration for the `Sharding` service on a given runner.
 declare class ShardingConfig
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform/src/ShardingConfig.ts#L21)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ShardingConfig.ts#L21)
 
 Since v1.0.0

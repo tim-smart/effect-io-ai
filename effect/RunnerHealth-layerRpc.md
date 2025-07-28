@@ -11,6 +11,6 @@ A layer which will ping a Runner directly to check if it is healthy.
 declare const layerRpc: Layer.Layer<RunnerHealth, never, ShardingConfig | Runners.RpcClientProtocol>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform/src/RunnerHealth.ts#L84)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/RunnerHealth.ts#L84)
 
 Since v1.0.0
