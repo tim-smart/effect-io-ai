@@ -11,6 +11,6 @@ Format a `DateTime.Zoned` as a ISO string with an offset.
 declare const formatIsoOffset: (self: DateTime) => string
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/DateTime.ts#L1555)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/DateTime.ts#L1640)
 
 Since v3.6.0

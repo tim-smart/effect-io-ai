@@ -28,6 +28,6 @@ Effect.gen(function* () {
 declare const distance: { (other: DateTime): (self: DateTime) => number; (self: DateTime, other: DateTime): number; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/DateTime.ts#L676)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/DateTime.ts#L748)
 
 Since v3.6.0

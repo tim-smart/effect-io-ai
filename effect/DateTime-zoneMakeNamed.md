@@ -12,6 +12,6 @@ is invalid, `None` will be returned.
 declare const zoneMakeNamed: (zoneId: string) => Option.Option<TimeZone.Named>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/DateTime.ts#L553)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/DateTime.ts#L621)
 
 Since v3.6.0

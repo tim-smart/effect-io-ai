@@ -32,6 +32,6 @@ DateTime.unsafeMake("2024-01-01")
 declare const unsafeMake: <A extends DateTime.Input>(input: A) => DateTime.PreserveZone<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/DateTime.ts#L326)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/DateTime.ts#L372)
 
 Since v3.6.0

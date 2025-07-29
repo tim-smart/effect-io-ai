@@ -10,7 +10,7 @@ applied to.
 **Signature**
 
 ```ts
-declare const trackSuccessWith: { <Type, In, Out, In2>(metric: Metric<Type, In, Out>, f: (value: In2) => In): <A extends In2, E, R>(self: Effect.Effect<A, E, R>) => Effect.Effect<A, E, R>; <A extends In2, E, R, Type, In, Out, In2>(self: Effect.Effect<A, E, R>, metric: Metric<Type, In, Out>, f: (value: In2) => In): Effect.Effect<A, E, R>; }
+declare const trackSuccessWith: { <Type, In, Out, A>(metric: Metric<Type, In, Out>, f: (value: Types.NoInfer<A>) => In): <E, R>(self: Effect.Effect<A, E, R>) => Effect.Effect<A, E, R>; <A, E, R, Type, In, Out>(self: Effect.Effect<A, E, R>, metric: Metric<Type, In, Out>, f: (value: Types.NoInfer<A>) => In): Effect.Effect<A, E, R>; }
 ```
 
 [Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Metric.ts#L679)

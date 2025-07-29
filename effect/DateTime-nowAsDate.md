@@ -21,6 +21,6 @@ Effect.gen(function* () {
 declare const nowAsDate: Effect.Effect<Date, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/DateTime.ts#L442)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/DateTime.ts#L506)
 
 Since v3.14.0

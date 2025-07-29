@@ -11,6 +11,6 @@ Create a Layer from the given time zone.
 declare const layerCurrentZone: (zone: TimeZone) => Layer.Layer<CurrentTimeZone>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/DateTime.ts#L1573)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/DateTime.ts#L1658)
 
 Since v3.6.0

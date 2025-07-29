@@ -21,9 +21,9 @@ Effect.gen(function* () {
 **Signature**
 
 ```ts
-declare const setZoneNamed: { (zoneId: string, options?: { readonly adjustForTimeZone?: boolean | undefined; }): (self: DateTime) => Option.Option<Zoned>; (self: DateTime, zoneId: string, options?: { readonly adjustForTimeZone?: boolean | undefined; }): Option.Option<Zoned>; }
+declare const setZoneNamed: { (zoneId: string, options?: { readonly adjustForTimeZone?: boolean | undefined; readonly disambiguation?: Disambiguation | undefined; }): (self: DateTime) => Option.Option<Zoned>; (self: DateTime, zoneId: string, options?: { readonly adjustForTimeZone?: boolean | undefined; readonly disambiguation?: Disambiguation | undefined; }): Option.Option<Zoned>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/DateTime.ts#L616)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/DateTime.ts#L684)
 
 Since v3.6.0

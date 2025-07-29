@@ -21,9 +21,9 @@ Effect.gen(function* () {
 **Signature**
 
 ```ts
-declare const unsafeSetZoneNamed: { (zoneId: string, options?: { readonly adjustForTimeZone?: boolean | undefined; }): (self: DateTime) => Zoned; (self: DateTime, zoneId: string, options?: { readonly adjustForTimeZone?: boolean | undefined; }): Zoned; }
+declare const unsafeSetZoneNamed: { (zoneId: string, options?: { readonly adjustForTimeZone?: boolean | undefined; readonly disambiguation?: Disambiguation | undefined; }): (self: DateTime) => Zoned; (self: DateTime, zoneId: string, options?: { readonly adjustForTimeZone?: boolean | undefined; readonly disambiguation?: Disambiguation | undefined; }): Zoned; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/DateTime.ts#L642)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/DateTime.ts#L712)
 
 Since v3.6.0

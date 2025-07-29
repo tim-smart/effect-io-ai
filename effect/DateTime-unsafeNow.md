@@ -11,6 +11,6 @@ Get the current time using `Date.now`.
 declare const unsafeNow: LazyArg<Utc>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/DateTime.ts#L450)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/DateTime.ts#L514)
 
 Since v3.6.0

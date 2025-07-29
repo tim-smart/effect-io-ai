@@ -11,6 +11,6 @@ Calculate the time zone offset of a `DateTime.Zoned` in milliseconds.
 declare const zonedOffset: (self: Zoned) => number
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/DateTime.ts#L849)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/DateTime.ts#L921)
 
 Since v3.6.0

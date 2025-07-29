@@ -34,6 +34,6 @@ Effect.gen(function* () {
 declare const distanceDurationEither: { (other: DateTime): (self: DateTime) => Either.Either<Duration.Duration, Duration.Duration>; (self: DateTime, other: DateTime): Either.Either<Duration.Duration, Duration.Duration>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/DateTime.ts#L708)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/DateTime.ts#L780)
 
 Since v3.6.0
