@@ -1545,7 +1545,7 @@
     "since": "1.0.0",
     "category": "layers",
     "signature": "declare class Registry",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/EventLog.ts#L373"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/EventLog.ts#L379"
   },
   {
     "_tag": "Class",
@@ -1560,7 +1560,7 @@
     "since": "1.0.0",
     "category": "tags",
     "signature": "declare class Identity",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/EventLog.ts#L402"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/EventLog.ts#L408"
   },
   {
     "_tag": "Class",
@@ -1575,7 +1575,7 @@
     "since": "1.0.0",
     "category": "tags",
     "signature": "declare class EventLog",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/EventLog.ts#L463"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/EventLog.ts#L472"
   },
   {
     "_tag": "Constant",
@@ -1620,7 +1620,7 @@
     "since": "1.0.0",
     "category": "layers",
     "signature": "declare const layerEventLog: Layer.Layer<EventLog, never, Identity | EventJournal>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/EventLog.ts#L711"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/EventLog.ts#L723"
   },
   {
     "_tag": "Function",
@@ -1679,7 +1679,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "compaction",
-    "signature": "declare const groupCompaction: <Events extends Event.Any, R>(group: EventGroup<Events>, effect: (options: { readonly primaryKey: string; readonly entries: Array<Entry>; readonly events: Array<Event.TaggedPayload<Events>>; readonly write: <Tag extends Event.Tag<Events>>(tag: Tag, payload: Event.PayloadWithTag<Events, Tag>) => Effect.Effect<void>; }) => Effect.Effect<void, never, R>) => Layer.Layer<never, never, EventLog | R | Event.Context<Events>>",
+    "signature": "declare const groupCompaction: <Events extends Event.Any, R>(group: EventGroup<Events>, effect: (options: { readonly primaryKey: string; readonly entries: Array<Entry>; readonly events: Array<Event.TaggedPayload<Events>>; readonly write: <Tag extends Event.Tag<Events>>(tag: Tag, payload: Event.PayloadWithTag<Events, Tag>) => Effect.Effect<void>; }) => Effect.Effect<void, never, R>) => Layer.Layer<never, never, Identity | EventJournal | R | Event.Context<Events>>",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/EventLog.ts#L265"
   },
   {
@@ -1694,8 +1694,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "reactivity",
-    "signature": "declare const groupReactivity: <Events extends Event.Any>(group: EventGroup<Events>, keys: { readonly [Tag in Event.Tag<Events>]?: ReadonlyArray<string>; } | ReadonlyArray<string>) => Layer.Layer<never, never, EventLog>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/EventLog.ts#L350"
+    "signature": "declare const groupReactivity: <Events extends Event.Any>(group: EventGroup<Events>, keys: { readonly [Tag in Event.Tag<Events>]?: ReadonlyArray<string>; } | ReadonlyArray<string>) => Layer.Layer<never, never, Identity | EventJournal>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/EventLog.ts#L353"
   },
   {
     "_tag": "Function",
@@ -1711,7 +1711,7 @@
     "since": "1.0.0",
     "category": "layers",
     "signature": "declare const layerIdentityKvs: (options: { readonly key: string; }) => Layer.Layer<Identity, ParseResult.ParseError | Error.PlatformError, KeyValueStore.KeyValueStore>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/EventLog.ts#L442"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/EventLog.ts#L451"
   },
   {
     "_tag": "Function",
@@ -1726,7 +1726,7 @@
     "since": "1.0.0",
     "category": "layers",
     "signature": "declare const layer: <Groups extends EventGroup.Any>(_schema: EventLogSchema<Groups>) => Layer.Layer<EventLog, never, EventGroup.ToService<Groups> | EventJournal | Identity>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/EventLog.ts#L719"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/EventLog.ts#L731"
   },
   {
     "_tag": "Function",
@@ -1741,7 +1741,7 @@
     "since": "1.0.0",
     "category": "client",
     "signature": "declare const makeClient: <Groups extends EventGroup.Any>(schema: EventLogSchema<Groups>) => Effect.Effect<(<Tag extends Event.Tag<EventGroup.Events<Groups>>>(event: Tag, payload: Event.PayloadWithTag<EventGroup.Events<Groups>, Tag>) => Effect.Effect<Event.SuccessWithTag<EventGroup.Events<Groups>, Tag>, Event.ErrorWithTag<EventGroup.Events<Groups>, Tag> | EventJournalError>), never, EventLog>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/EventLog.ts#L729"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/EventLog.ts#L741"
   },
   {
     "_tag": "Interface",
