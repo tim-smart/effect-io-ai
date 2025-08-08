@@ -1104,7 +1104,7 @@
     "since": "1.0.0",
     "category": "Layers",
     "signature": "declare const layerRpcHandlers: <const Workflows extends NonEmptyReadonlyArray<Workflow.Any>, const Prefix extends string = \"\">(workflows: Workflows, options?: { readonly prefix?: Prefix; }) => Layer.Layer<RpcHandlers<Workflows[number], Prefix>, never, WorkflowEngine | Workflow.Requirements<Workflows[number]>>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/WorkflowProxyServer.ts#L64"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/WorkflowProxyServer.ts#L85"
   },
   {
     "_tag": "TypeAlias",
@@ -1119,6 +1119,6 @@
     "since": "1.0.0",
     "category": null,
     "signature": "type RpcHandlers<Workflows, Prefix> = Workflows extends Workflow.Workflow<\n  infer _Name,\n  infer _Payload,\n  infer _Success,\n  infer _Error\n> ? Rpc.Handler<`${Prefix}${_Name}`> | Rpc.Handler<`${Prefix}${_Name}Discard`> | Rpc.Handler<`${Prefix}${_Name}Resume`>\n  : never",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/WorkflowProxyServer.ts#L108"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/WorkflowProxyServer.ts#L129"
   }
 ]
