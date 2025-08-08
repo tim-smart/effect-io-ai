@@ -281,9 +281,39 @@
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
-    "category": "constructor",
+    "category": "stdio",
     "signature": "declare const stdout: Sink.Sink<void, string | Uint8Array<ArrayBufferLike>, never, PlatformError, never>",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node-shared/src/NodeSink.ts#L38"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "NodeSink.ts",
+      "path": "src/NodeSink.ts"
+    },
+    "project": "@effect/platform-node-shared",
+    "name": "stderr",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "stdio",
+    "signature": "declare const stderr: Sink.Sink<void, string | Uint8Array<ArrayBufferLike>, never, PlatformError, never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node-shared/src/NodeSink.ts#L53"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "NodeSink.ts",
+      "path": "src/NodeSink.ts"
+    },
+    "project": "@effect/platform-node-shared",
+    "name": "stdin",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "stdio",
+    "signature": "declare const stdin: Sink.Sink<void, string | Uint8Array<ArrayBufferLike>, never, PlatformError, never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node-shared/src/NodeSink.ts#L68"
   },
   {
     "_tag": "Constant",
@@ -599,6 +629,36 @@
     "category": "stdio",
     "signature": "declare const stdin: Stream.Stream<Uint8Array<ArrayBufferLike>, never, never>",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node-shared/src/NodeStream.ts#L136"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "NodeStream.ts",
+      "path": "src/NodeStream.ts"
+    },
+    "project": "@effect/platform-node-shared",
+    "name": "stdout",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "stdio",
+    "signature": "declare const stdout: Stream.Stream<Uint8Array<ArrayBufferLike>, never, never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node-shared/src/NodeStream.ts#L144"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "NodeStream.ts",
+      "path": "src/NodeStream.ts"
+    },
+    "project": "@effect/platform-node-shared",
+    "name": "stderr",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "stdio",
+    "signature": "declare const stderr: Stream.Stream<Uint8Array<ArrayBufferLike>, never, never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node-shared/src/NodeStream.ts#L152"
   },
   {
     "_tag": "Interface",

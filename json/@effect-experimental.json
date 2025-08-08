@@ -4189,7 +4189,7 @@
     "since": "1.0.0",
     "category": "tags",
     "signature": "declare class Reactivity",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/Reactivity.ts#L19"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/Reactivity.ts#L20"
   },
   {
     "_tag": "Constant",
@@ -4204,7 +4204,52 @@
     "since": "1.0.0",
     "category": "constructors",
     "signature": "declare const make: Effect.Effect<Reactivity.Service, never, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/Reactivity.ts#L28"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/Reactivity.ts#L29"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Reactivity.ts",
+      "path": "src/Reactivity.ts"
+    },
+    "project": "@effect/experimental",
+    "name": "mutation",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "accessors",
+    "signature": "declare const mutation: { (keys: ReadonlyArray<unknown> | ReadonlyRecord<string, ReadonlyArray<unknown>>): <A, E, R>(effect: Effect.Effect<A, E, R>) => Effect.Effect<A, E, R | Reactivity>; <A, E, R>(effect: Effect.Effect<A, E, R>, keys: ReadonlyArray<unknown> | ReadonlyRecord<string, ReadonlyArray<unknown>>): Effect.Effect<A, E, R | Reactivity>; }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/Reactivity.ts#L147"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Reactivity.ts",
+      "path": "src/Reactivity.ts"
+    },
+    "project": "@effect/experimental",
+    "name": "query",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "accessors",
+    "signature": "declare const query: { (keys: ReadonlyArray<unknown> | ReadonlyRecord<string, ReadonlyArray<unknown>>): <A, E, R>(effect: Effect.Effect<A, E, R>) => Effect.Effect<Mailbox.ReadonlyMailbox<A, E>, never, R | Scope.Scope | Reactivity>; <A, E, R>(effect: Effect.Effect<A, E, R>, keys: ReadonlyArray<unknown> | ReadonlyRecord<string, ReadonlyArray<unknown>>): Effect.Effect<Mailbox.ReadonlyMailbox<A, E>, never, R | Scope.Scope | Reactivity>; }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/Reactivity.ts#L164"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Reactivity.ts",
+      "path": "src/Reactivity.ts"
+    },
+    "project": "@effect/experimental",
+    "name": "stream",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "accessors",
+    "signature": "declare const stream: { (keys: ReadonlyArray<unknown> | ReadonlyRecord<string, ReadonlyArray<unknown>>): <A, E, R>(effect: Effect.Effect<A, E, R>) => Stream.Stream<A, E, Exclude<R, Scope.Scope> | Reactivity>; <A, E, R>(effect: Effect.Effect<A, E, R>, keys: ReadonlyArray<unknown> | ReadonlyRecord<string, ReadonlyArray<unknown>>): Stream.Stream<A, E, Exclude<R, Scope.Scope> | Reactivity>; }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/Reactivity.ts#L184"
   },
   {
     "_tag": "Constant",
@@ -4219,7 +4264,22 @@
     "since": "1.0.0",
     "category": "layers",
     "signature": "declare const layer: Layer.Layer<Reactivity, never, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/Reactivity.ts#L142"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/Reactivity.ts#L214"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Reactivity.ts",
+      "path": "src/Reactivity.ts"
+    },
+    "project": "@effect/experimental",
+    "name": "invalidate",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "accessors",
+    "signature": "declare const invalidate: (keys: ReadonlyArray<unknown> | ReadonlyRecord<string, ReadonlyArray<unknown>>) => Effect.Effect<void, never, Reactivity>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/Reactivity.ts#L206"
   },
   {
     "_tag": "Interface",
@@ -4233,8 +4293,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "model",
-    "signature": "export interface Service {\n    readonly unsafeInvalidate: (keys: ReadonlyArray<unknown> | ReadonlyRecord<string, ReadonlyArray<unknown>>) => void\n    readonly invalidate: (\n      keys: ReadonlyArray<unknown> | ReadonlyRecord<string, ReadonlyArray<unknown>>\n    ) => Effect.Effect<void>\n    readonly mutation: <A, E, R>(\n      keys: ReadonlyArray<unknown> | ReadonlyRecord<string, ReadonlyArray<unknown>>,\n      effect: Effect.Effect<A, E, R>\n    ) => Effect.Effect<A, E, R>\n    readonly query: <A, E, R>(\n      keys: ReadonlyArray<unknown> | ReadonlyRecord<string, ReadonlyArray<unknown>>,\n      effect: Effect.Effect<A, E, R>\n    ) => Effect.Effect<Mailbox.ReadonlyMailbox<A, E>, never, R | Scope.Scope>\n    readonly stream: <A, E, R>(\n      keys: ReadonlyArray<unknown> | ReadonlyRecord<string, ReadonlyArray<unknown>>,\n      effect: Effect.Effect<A, E, R>\n    ) => Stream.Stream<A, E, Exclude<R, Scope.Scope>>\n  }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/Reactivity.ts#L153"
+    "signature": "export interface Service {\n    readonly unsafeInvalidate: (keys: ReadonlyArray<unknown> | ReadonlyRecord<string, ReadonlyArray<unknown>>) => void\n    readonly unsafeRegister: (\n      keys: ReadonlyArray<unknown> | ReadonlyRecord<string, ReadonlyArray<unknown>>,\n      handler: () => void\n    ) => () => void\n    readonly invalidate: (\n      keys: ReadonlyArray<unknown> | ReadonlyRecord<string, ReadonlyArray<unknown>>\n    ) => Effect.Effect<void>\n    readonly mutation: <A, E, R>(\n      keys: ReadonlyArray<unknown> | ReadonlyRecord<string, ReadonlyArray<unknown>>,\n      effect: Effect.Effect<A, E, R>\n    ) => Effect.Effect<A, E, R>\n    readonly query: <A, E, R>(\n      keys: ReadonlyArray<unknown> | ReadonlyRecord<string, ReadonlyArray<unknown>>,\n      effect: Effect.Effect<A, E, R>\n    ) => Effect.Effect<Mailbox.ReadonlyMailbox<A, E>, never, R | Scope.Scope>\n    readonly stream: <A, E, R>(\n      keys: ReadonlyArray<unknown> | ReadonlyRecord<string, ReadonlyArray<unknown>>,\n      effect: Effect.Effect<A, E, R>\n    ) => Stream.Stream<A, E, Exclude<R, Scope.Scope>>\n  }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/Reactivity.ts#L225"
   },
   {
     "_tag": "Constant",
