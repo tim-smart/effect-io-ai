@@ -26,7 +26,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "Layers",
-    "signature": "declare const layer: <const ClientOnly extends boolean = false, const Storage extends \"noop\" | \"sql\" = \"noop\">(options?: { readonly serialization?: \"msgpack\" | \"ndjson\" | undefined; readonly clientOnly?: ClientOnly | undefined; readonly storage?: Storage | undefined; readonly shardingConfig?: Partial<ShardingConfig.ShardingConfig[\"Type\"]> | undefined; }) => ClientOnly extends true ? Layer.Layer<Sharding | Runners.Runners | MessageStorage.MessageStorage, ConfigError, Storage extends \"sql\" ? SqlClient : never> : Layer.Layer<Sharding | Runners.Runners | MessageStorage.MessageStorage, SocketServer.SocketServerError | ConfigError | (Storage extends \"sql\" ? SqlError : never), Storage extends \"sql\" ? SqlClient : never>",
+    "signature": "declare const layer: <const ClientOnly extends boolean = false, const Storage extends \"noop\" | \"sql\" = never>(options?: { readonly serialization?: \"msgpack\" | \"ndjson\" | undefined; readonly clientOnly?: ClientOnly | undefined; readonly storage?: Storage | undefined; readonly shardingConfig?: Partial<ShardingConfig.ShardingConfig[\"Type\"]> | undefined; }) => ClientOnly extends true ? Layer.Layer<Sharding | Runners.Runners | MessageStorage.MessageStorage, ConfigError, \"sql\" extends Storage ? SqlClient : never> : Layer.Layer<Sharding | Runners.Runners | MessageStorage.MessageStorage, SocketServer.SocketServerError | ConfigError | (\"sql\" extends Storage ? SqlError : never), \"sql\" extends Storage ? SqlClient : never>",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node-shared/src/NodeClusterRunnerSocket.ts#L46"
   },
   {
@@ -56,7 +56,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "Layers",
-    "signature": "declare const layer: <const Storage extends \"sql\" | \"noop\" = \"noop\">(options?: { readonly serialization?: \"msgpack\" | \"ndjson\" | undefined; readonly shardingConfig?: Partial<ShardingConfig.ShardingConfig[\"Type\"]> | undefined; readonly storage?: Storage | undefined; readonly config?: Partial<ShardManager.Config[\"Type\"]> | undefined; }) => Layer.Layer<ShardManager.ShardManager, SocketServer.SocketServerError | ConfigError | (Storage extends \"sql\" ? SqlError : never), Storage extends \"sql\" ? SqlClient : never>",
+    "signature": "declare const layer: <const Storage extends \"sql\" | \"noop\" = never>(options?: { readonly serialization?: \"msgpack\" | \"ndjson\" | undefined; readonly shardingConfig?: Partial<ShardingConfig.ShardingConfig[\"Type\"]> | undefined; readonly storage?: Storage | undefined; readonly config?: Partial<ShardManager.Config[\"Type\"]> | undefined; }) => Layer.Layer<ShardManager.ShardManager, SocketServer.SocketServerError | ConfigError | (\"sql\" extends Storage ? SqlError : never), \"sql\" extends Storage ? SqlClient : never>",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node-shared/src/NodeClusterShardManagerSocket.ts#L37"
   },
   {
