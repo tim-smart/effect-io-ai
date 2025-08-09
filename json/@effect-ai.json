@@ -841,7 +841,7 @@
     "since": "1.0.0",
     "category": "Functions",
     "signature": "declare const generateText: <Tools extends AiTool.Any, Options extends NoExcessProperties<GenerateTextOptions<any>, Options>>(options: Options & GenerateTextOptions<Tools>) => Effect.Effect<ExtractSuccess<Options>, ExtractError<Options>, AiLanguageModel | ExtractContext<Options>>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiLanguageModel.ts#L632"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiLanguageModel.ts#L636"
   },
   {
     "_tag": "Constant",
@@ -857,7 +857,7 @@
     "since": "1.0.0",
     "category": "Functions",
     "signature": "declare const generateObject: <A, I extends Record<string, unknown>, R>(options: GenerateObjectOptions<A, I, R>) => Effect.Effect<AiResponse.WithStructuredOutput<A>, AiError, AiLanguageModel | R>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiLanguageModel.ts#L654"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiLanguageModel.ts#L658"
   },
   {
     "_tag": "Function",
@@ -873,7 +873,7 @@
     "since": "1.0.0",
     "category": "Functions",
     "signature": "declare const streamText: <Tools extends AiTool.Any, Options extends NoExcessProperties<GenerateTextOptions<any>, Options>>(options: Options & GenerateTextOptions<Tools>) => Stream.Stream<ExtractSuccess<Options>, ExtractError<Options>, AiLanguageModel | ExtractContext<Options>>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiLanguageModel.ts#L672"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiLanguageModel.ts#L676"
   },
   {
     "_tag": "Interface",
@@ -933,7 +933,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "Models",
-    "signature": "export interface GenerateTextOptions<Tools extends AiTool.Any> {\n  /**\n   * The prompt input to use to generate text.\n   */\n  readonly prompt: AiInput.Raw\n\n  /**\n   * An optional system message that will be part of the prompt.\n   */\n  readonly system?: string | undefined\n\n  /**\n   * A toolkit containing both the tools and the tool call handler to use to\n   * augment text generation.\n   */\n  readonly toolkit?: AiToolkit.ToHandler<Tools> | Effect.Effect<AiToolkit.ToHandler<Tools>, any, any>\n\n  /**\n   * The tool choice mode for the language model.\n   *\n   * - `auto` (default): The model can decide whether or not to call tools, as well as which tools to call.\n   * - `required`: The model **must** call a tool but can decide which tool will be called.\n   * - `none`: The model **must not** call a tool.\n   * - `{ tool: <tool_name> }`: The model must call the specified tool.\n   */\n  readonly toolChoice?: ToolChoice<Tools>\n\n  /**\n   * The concurrency level for resolving tool calls.\n   */\n  readonly concurrency?: Concurrency | undefined\n\n  /**\n   * When set to `true`, tool calls requested by the large language model\n   * will not be auto-resolved by the framework.\n   *\n   * This option is useful when:\n   *   1. The user wants to include tool call definitions from an `AiToolki`\n   *      in requests to the large language model so that the model has the\n   *      capability to call tools\n   *   2. The user wants to control the execution of tool call resolvers\n   *      instead of having the framework handle tool call resolution\n   */\n  readonly disableToolCallResolution?: boolean | undefined\n}",
+    "signature": "export interface GenerateTextOptions<Tools extends AiTool.Any> {\n  /**\n   * The prompt input to use to generate text.\n   */\n  readonly prompt: AiInput.Raw\n\n  /**\n   * An optional system message that will be part of the prompt.\n   */\n  readonly system?: string | undefined\n\n  /**\n   * A toolkit containing both the tools and the tool call handler to use to\n   * augment text generation.\n   */\n  readonly toolkit?: AiToolkit.ToHandler<Tools> | Effect.Effect<AiToolkit.ToHandler<Tools>, any, any>\n\n  /**\n   * The tool choice mode for the language model.\n   *\n   * - `auto` (default): The model can decide whether or not to call tools, as well as which tools to call.\n   * - `required`: The model **must** call a tool but can decide which tool will be called.\n   * - `none`: The model **must not** call a tool.\n   * - `{ tool: <tool_name> }`: The model must call the specified tool.\n   */\n  readonly toolChoice?: ToolChoice<Tools>\n\n  /**\n   * The concurrency level for resolving tool calls.\n   */\n  readonly concurrency?: Concurrency | undefined\n\n  /**\n   * When set to `true`, tool calls requested by the large language model\n   * will not be auto-resolved by the framework.\n   *\n   * This option is useful when:\n   *   1. The user wants to include tool call definitions from an `AiToolkit`\n   *      in requests to the large language model so that the model has the\n   *      capability to call tools.\n   *   2. The user wants to control the execution of tool call resolvers\n   *      instead of having the framework handle tool call resolution.\n   */\n  readonly disableToolCallResolution?: boolean | undefined\n}",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiLanguageModel.ts#L114"
   },
   {

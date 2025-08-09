@@ -11,6 +11,6 @@ A layer which will ping a Runner directly to check if it is healthy.
 declare const layer: Layer.Layer<RunnerHealth, never, Runners.Runners>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/RunnerHealth.ts#L72)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/RunnerHealth.ts#L110)
 
 Since v1.0.0
