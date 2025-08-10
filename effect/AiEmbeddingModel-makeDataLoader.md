@@ -13,6 +13,6 @@ requests, if specified) and execute them as a single batch.
 declare const makeDataLoader: (options: { readonly embedMany: (input: ReadonlyArray<string>) => Effect.Effect<Array<AiEmbeddingModel.Result>, AiError>; readonly window: Duration.DurationInput; readonly maxBatchSize?: number; }) => Effect.Effect<AiEmbeddingModel.Service, never, Scope>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiEmbeddingModel.ts#L123)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiEmbeddingModel.ts#L139)
 
 Since v1.0.0

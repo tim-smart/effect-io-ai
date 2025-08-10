@@ -102,7 +102,7 @@
     "since": "1.0.0",
     "category": "Context",
     "signature": "declare class AiEmbeddingModel",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiEmbeddingModel.ts#L19"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiEmbeddingModel.ts#L20"
   },
   {
     "_tag": "Function",
@@ -117,7 +117,7 @@
     "since": "1.0.0",
     "category": "Constructors",
     "signature": "declare const make: (options: { readonly embedMany: (input: ReadonlyArray<string>) => Effect.Effect<Array<AiEmbeddingModel.Result>, AiError>; readonly maxBatchSize?: number; readonly cache?: { readonly capacity: number; readonly timeToLive: Duration.DurationInput; }; }) => Effect.Effect<AiEmbeddingModel.Service, never, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiEmbeddingModel.ts#L80"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiEmbeddingModel.ts#L87"
   },
   {
     "_tag": "Function",
@@ -133,7 +133,7 @@
     "since": "1.0.0",
     "category": "Constructors",
     "signature": "declare const makeDataLoader: (options: { readonly embedMany: (input: ReadonlyArray<string>) => Effect.Effect<Array<AiEmbeddingModel.Result>, AiError>; readonly window: Duration.DurationInput; readonly maxBatchSize?: number; }) => Effect.Effect<AiEmbeddingModel.Service, never, Scope>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiEmbeddingModel.ts#L123"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiEmbeddingModel.ts#L139"
   },
   {
     "_tag": "Interface",
@@ -147,8 +147,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "Models",
-    "signature": "export interface Service {\n    readonly embed: (input: string) => Effect.Effect<Array<number>, AiError>\n  }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiEmbeddingModel.ts#L32"
+    "signature": "export interface Service {\n    readonly embed: (input: string) => Effect.Effect<Array<number>, AiError>\n    readonly embedMany: (input: ReadonlyArray<string>, options?: {\n      /**\n       * The concurrency level to use while batching requests.\n       */\n      readonly concurrency?: Concurrency | undefined\n    }) => Effect.Effect<Array<Array<number>>, AiError>\n  }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiEmbeddingModel.ts#L33"
   },
   {
     "_tag": "Interface",
@@ -163,7 +163,7 @@
     "since": "1.0.0",
     "category": "Models",
     "signature": "export interface Result {\n    readonly index: number\n    readonly embeddings: Array<number>\n  }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiEmbeddingModel.ts#L40"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiEmbeddingModel.ts#L47"
   },
   {
     "_tag": "Class",
