@@ -3709,7 +3709,7 @@
     "since": "1.0.0",
     "category": "errors",
     "signature": "declare class PersistenceParseError",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/Persistence.ts#L41"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/Persistence.ts#L42"
   },
   {
     "_tag": "Class",
@@ -3724,7 +3724,7 @@
     "since": "1.0.0",
     "category": "errors",
     "signature": "declare class PersistenceBackingError",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/Persistence.ts#L62"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/Persistence.ts#L63"
   },
   {
     "_tag": "Constant",
@@ -3739,7 +3739,7 @@
     "since": "1.0.0",
     "category": "type ids",
     "signature": "declare const ErrorTypeId: unique symbol",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/Persistence.ts#L23"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/Persistence.ts#L24"
   },
   {
     "_tag": "Constant",
@@ -3754,7 +3754,7 @@
     "since": "1.0.0",
     "category": "type ids",
     "signature": "declare const BackingPersistenceTypeId: unique symbol",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/Persistence.ts#L83"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/Persistence.ts#L84"
   },
   {
     "_tag": "Constant",
@@ -3769,7 +3769,7 @@
     "since": "1.0.0",
     "category": "tags",
     "signature": "declare const BackingPersistence: Context.Tag<BackingPersistence, BackingPersistence>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/Persistence.ts#L120"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/Persistence.ts#L124"
   },
   {
     "_tag": "Constant",
@@ -3784,7 +3784,7 @@
     "since": "1.0.0",
     "category": "type ids",
     "signature": "declare const ResultPersistenceTypeId: unique symbol",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/Persistence.ts#L130"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/Persistence.ts#L134"
   },
   {
     "_tag": "Constant",
@@ -3799,7 +3799,7 @@
     "since": "1.0.0",
     "category": "tags",
     "signature": "declare const ResultPersistence: Context.Tag<ResultPersistence, ResultPersistence>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/Persistence.ts#L202"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/Persistence.ts#L223"
   },
   {
     "_tag": "Constant",
@@ -3814,7 +3814,7 @@
     "since": "1.0.0",
     "category": "layers",
     "signature": "declare const layerResult: Layer.Layer<ResultPersistence, never, BackingPersistence>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/Persistence.ts#L212"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/Persistence.ts#L233"
   },
   {
     "_tag": "Constant",
@@ -3829,7 +3829,7 @@
     "since": "1.0.0",
     "category": "layers",
     "signature": "declare const layerMemory: Layer.Layer<BackingPersistence, never, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/Persistence.ts#L291"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/Persistence.ts#L325"
   },
   {
     "_tag": "Constant",
@@ -3844,7 +3844,7 @@
     "since": "1.0.0",
     "category": "layers",
     "signature": "declare const layerKeyValueStore: Layer.Layer<BackingPersistence, never, KeyValueStore.KeyValueStore>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/Persistence.ts#L334"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/Persistence.ts#L374"
   },
   {
     "_tag": "Constant",
@@ -3859,7 +3859,7 @@
     "since": "1.0.0",
     "category": "layers",
     "signature": "declare const layerResultMemory: Layer.Layer<ResultPersistence, never, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/Persistence.ts#L399"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/Persistence.ts#L448"
   },
   {
     "_tag": "Constant",
@@ -3874,7 +3874,7 @@
     "since": "1.0.0",
     "category": "layers",
     "signature": "declare const layerResultKeyValueStore: Layer.Layer<ResultPersistence, never, KeyValueStore.KeyValueStore>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/Persistence.ts#L407"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/Persistence.ts#L456"
   },
   {
     "_tag": "Function",
@@ -3889,7 +3889,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "declare const unsafeTtlToExpires: (clock: Clock.Clock, ttl: Option.Option<Duration.Duration>) => number | null",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/Persistence.ts#L415"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/Persistence.ts#L464"
   },
   {
     "_tag": "Interface",
@@ -3904,7 +3904,7 @@
     "since": "1.0.0",
     "category": "models",
     "signature": "export interface BackingPersistence {\n  readonly [BackingPersistenceTypeId]: BackingPersistenceTypeId\n  readonly make: (storeId: string) => Effect.Effect<BackingPersistenceStore, never, Scope.Scope>\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/Persistence.ts#L95"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/Persistence.ts#L96"
   },
   {
     "_tag": "Interface",
@@ -3918,8 +3918,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "models",
-    "signature": "export interface BackingPersistenceStore {\n  readonly get: (key: string) => Effect.Effect<Option.Option<unknown>, PersistenceError>\n  readonly getMany: (key: Array<string>) => Effect.Effect<Array<Option.Option<unknown>>, PersistenceError>\n  readonly set: (\n    key: string,\n    value: unknown,\n    ttl: Option.Option<Duration.Duration>\n  ) => Effect.Effect<void, PersistenceError>\n  readonly remove: (key: string) => Effect.Effect<void, PersistenceError>\n  readonly clear: Effect.Effect<void, PersistenceError>\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/Persistence.ts#L104"
+    "signature": "export interface BackingPersistenceStore {\n  readonly get: (key: string) => Effect.Effect<Option.Option<unknown>, PersistenceError>\n  readonly getMany: (key: Array<string>) => Effect.Effect<Array<Option.Option<unknown>>, PersistenceError>\n  readonly set: (\n    key: string,\n    value: unknown,\n    ttl: Option.Option<Duration.Duration>\n  ) => Effect.Effect<void, PersistenceError>\n  readonly setMany: (\n    entries: ReadonlyArray<readonly [key: string, value: unknown, ttl: Option.Option<Duration.Duration>]>\n  ) => Effect.Effect<void, PersistenceError>\n  readonly remove: (key: string) => Effect.Effect<void, PersistenceError>\n  readonly clear: Effect.Effect<void, PersistenceError>\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/Persistence.ts#L105"
   },
   {
     "_tag": "Interface",
@@ -3934,7 +3934,7 @@
     "since": "1.0.0",
     "category": "models",
     "signature": "export interface ResultPersistence {\n  readonly [ResultPersistenceTypeId]: ResultPersistenceTypeId\n  readonly make: (options: {\n    readonly storeId: string\n    readonly timeToLive?: (key: ResultPersistence.KeyAny, exit: Exit.Exit<unknown, unknown>) => Duration.DurationInput\n  }) => Effect.Effect<ResultPersistenceStore, never, Scope.Scope>\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/Persistence.ts#L142"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/Persistence.ts#L146"
   },
   {
     "_tag": "Interface",
@@ -3948,8 +3948,23 @@
     "examples": [],
     "since": "1.0.0",
     "category": "models",
-    "signature": "export interface ResultPersistenceStore {\n  readonly get: <R, IE, E, IA, A>(\n    key: ResultPersistence.Key<R, IE, E, IA, A>\n  ) => Effect.Effect<Option.Option<Exit.Exit<A, E>>, PersistenceError, R>\n  readonly getMany: <R, IE, E, IA, A>(\n    key: ReadonlyArray<ResultPersistence.Key<R, IE, E, IA, A>>\n  ) => Effect.Effect<Array<Option.Option<Exit.Exit<A, E>>>, PersistenceError, R>\n  readonly set: <R, IE, E, IA, A>(\n    key: ResultPersistence.Key<R, IE, E, IA, A>,\n    value: Exit.Exit<A, E>\n  ) => Effect.Effect<void, PersistenceError, R>\n  readonly remove: <R, IE, E, IA, A>(\n    key: ResultPersistence.Key<R, IE, E, IA, A>\n  ) => Effect.Effect<void, PersistenceError>\n  readonly clear: Effect.Effect<void, PersistenceError>\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/Persistence.ts#L154"
+    "signature": "export interface ResultPersistenceStore {\n  readonly get: <R, IE, E, IA, A>(\n    key: ResultPersistence.Key<R, IE, E, IA, A>\n  ) => Effect.Effect<Option.Option<Exit.Exit<A, E>>, PersistenceError, R>\n  readonly getMany: <R, IE, E, IA, A>(\n    key: ReadonlyArray<ResultPersistence.Key<R, IE, E, IA, A>>\n  ) => Effect.Effect<Array<Option.Option<Exit.Exit<A, E>>>, PersistenceError, R>\n  readonly set: <R, IE, E, IA, A>(\n    key: ResultPersistence.Key<R, IE, E, IA, A>,\n    value: Exit.Exit<A, E>\n  ) => Effect.Effect<void, PersistenceError, R>\n  readonly setMany: <R, IE, E, IA, A>(\n    entries: Iterable<readonly [ResultPersistence.Key<R, IE, E, IA, A>, Exit.Exit<A, E>]>\n  ) => Effect.Effect<void, PersistenceError, R>\n  readonly remove: <R, IE, E, IA, A>(\n    key: ResultPersistence.Key<R, IE, E, IA, A>\n  ) => Effect.Effect<void, PersistenceError>\n  readonly clear: Effect.Effect<void, PersistenceError>\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/Persistence.ts#L158"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "Persistence.ts",
+      "path": "src/Persistence.ts"
+    },
+    "project": "@effect/experimental",
+    "name": "Persistable",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export interface Persistable<A extends Schema.Schema.Any, E extends Schema.Schema.All> extends\n  Schema.WithResult<\n    A[\"Type\"],\n    A[\"Encoded\"],\n    E[\"Type\"],\n    E[\"Encoded\"],\n    A[\"Context\"] | E[\"Context\"]\n  >,\n  PrimaryKey.PrimaryKey\n{}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/Persistence.ts#L182"
   },
   {
     "_tag": "TypeAlias",
@@ -3964,7 +3979,7 @@
     "since": "1.0.0",
     "category": "type ids",
     "signature": "type ErrorTypeId = typeof ErrorTypeId",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/Persistence.ts#L29"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/Persistence.ts#L30"
   },
   {
     "_tag": "TypeAlias",
@@ -3979,7 +3994,7 @@
     "since": "1.0.0",
     "category": "errors",
     "signature": "type PersistenceError = PersistenceParseError | PersistenceBackingError",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/Persistence.ts#L35"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/Persistence.ts#L36"
   },
   {
     "_tag": "TypeAlias",
@@ -3994,7 +4009,7 @@
     "since": "1.0.0",
     "category": "type ids",
     "signature": "type BackingPersistenceTypeId = typeof BackingPersistenceTypeId",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/Persistence.ts#L89"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/Persistence.ts#L90"
   },
   {
     "_tag": "TypeAlias",
@@ -4009,7 +4024,7 @@
     "since": "1.0.0",
     "category": "type ids",
     "signature": "type ResultPersistenceTypeId = typeof ResultPersistenceTypeId",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/Persistence.ts#L136"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/Persistence.ts#L140"
   },
   {
     "_tag": "Interface",
@@ -4024,7 +4039,7 @@
     "since": "1.0.0",
     "category": "models",
     "signature": "export interface Key<R, IE, E, IA, A> extends Schema.WithResult<A, IA, E, IE, R>, PrimaryKey.PrimaryKey {}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/Persistence.ts#L180"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/Persistence.ts#L202"
   },
   {
     "_tag": "TypeAlias",
@@ -4038,8 +4053,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "models",
-    "signature": "type KeyAny = Key<any, any, any, any, any> | Key<any, never, never, any, any>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/Persistence.ts#L186"
+    "signature": "type KeyAny = Persistable<any, any>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/Persistence.ts#L207"
   },
   {
     "_tag": "TypeAlias",
@@ -4053,8 +4068,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "models",
-    "signature": "type TimeToLiveArgs<A> = A extends infer K\n    ? K extends Key<infer _R, infer _IE, infer _E, infer _IA, infer _A> ? [request: K, exit: Exit.Exit<_A, _E>]\n    : never\n    : never",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/Persistence.ts#L192"
+    "signature": "type TimeToLiveArgs<A> = A extends infer K\n    ? K extends Persistable<infer _A, infer _E> ? [request: K, exit: Exit.Exit<_A[\"Type\"], _E[\"Type\"]>]\n    : never\n    : never",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/Persistence.ts#L213"
   },
   {
     "_tag": "Function",
@@ -4084,7 +4099,7 @@
     "since": "1.0.0",
     "category": "layers",
     "signature": "declare const layer: (options: Lmdb.RootDatabaseOptionsWithPath) => Layer.Layer<Persistence.BackingPersistence>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/Lmdb.ts#L78"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/Lmdb.ts#L87"
   },
   {
     "_tag": "Function",
@@ -4099,10 +4114,10 @@
     "since": "1.0.0",
     "category": "layers",
     "signature": "declare const layerResult: (options: Lmdb.RootDatabaseOptionsWithPath) => Layer.Layer<Persistence.ResultPersistence>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/Lmdb.ts#L90"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/Lmdb.ts#L99"
   },
   {
-    "_tag": "Function",
+    "_tag": "Constant",
     "module": {
       "name": "Redis.ts",
       "path": "src/Persistence/Redis.ts"
@@ -4114,7 +4129,7 @@
     "since": "1.0.0",
     "category": "constructors",
     "signature": "declare const make: (options: RedisOptions) => Effect.Effect<Persistence.BackingPersistence, never, Scope>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/Redis.ts#L19"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/Redis.ts#L20"
   },
   {
     "_tag": "Function",
@@ -4129,7 +4144,7 @@
     "since": "1.0.0",
     "category": "layers",
     "signature": "declare const layer: (options: RedisOptions) => Layer.Layer<Persistence.BackingPersistence>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/Redis.ts#L88"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/Redis.ts#L109"
   },
   {
     "_tag": "Function",
@@ -4144,7 +4159,7 @@
     "since": "1.0.0",
     "category": "layers",
     "signature": "declare const layerConfig: (options: Config.Config.Wrap<RedisOptions>) => Layer.Layer<Persistence.BackingPersistence, ConfigError>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/Redis.ts#L100"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/Redis.ts#L121"
   },
   {
     "_tag": "Function",
@@ -4159,7 +4174,7 @@
     "since": "1.0.0",
     "category": "layers",
     "signature": "declare const layerResult: (options: RedisOptions) => Layer.Layer<Persistence.ResultPersistence>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/Redis.ts#L112"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/Redis.ts#L133"
   },
   {
     "_tag": "Function",
@@ -4174,7 +4189,7 @@
     "since": "1.0.0",
     "category": "layers",
     "signature": "declare const layerResultConfig: (options: Config.Config.Wrap<RedisOptions>) => Layer.Layer<Persistence.ResultPersistence, ConfigError>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/Redis.ts#L123"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/Redis.ts#L144"
   },
   {
     "_tag": "Class",
