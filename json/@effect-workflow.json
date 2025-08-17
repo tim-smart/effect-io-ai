@@ -222,7 +222,7 @@
     "since": "1.0.0",
     "category": "Token",
     "signature": "declare class TokenParsed",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/DurableDeferred.ts#L243"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/DurableDeferred.ts#L259"
   },
   {
     "_tag": "Constant",
@@ -237,7 +237,7 @@
     "since": "1.0.0",
     "category": "Symbols",
     "signature": "declare const TypeId: unique symbol",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/DurableDeferred.ts#L21"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/DurableDeferred.ts#L22"
   },
   {
     "_tag": "Constant",
@@ -252,7 +252,7 @@
     "since": "1.0.0",
     "category": "Combinators",
     "signature": "declare const into: { <Success extends Schema.Schema.Any, Error extends Schema.Schema.All>(self: DurableDeferred<Success, Error>): <R>(effect: Effect.Effect<Success[\"Type\"], Error[\"Type\"], R>) => Effect.Effect<Success[\"Type\"], Error[\"Type\"], R | WorkflowEngine | WorkflowInstance | Success[\"Context\"] | Error[\"Context\"]>; <Success extends Schema.Schema.Any, Error extends Schema.Schema.All, R>(effect: Effect.Effect<Success[\"Type\"], Error[\"Type\"], R>, self: DurableDeferred<Success, Error>): Effect.Effect<Success[\"Type\"], Error[\"Type\"], R | WorkflowEngine | WorkflowInstance | Success[\"Context\"] | Error[\"Context\"]>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/DurableDeferred.ts#L120"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/DurableDeferred.ts#L136"
   },
   {
     "_tag": "Constant",
@@ -267,7 +267,7 @@
     "since": "1.0.0",
     "category": "Token",
     "signature": "declare const TokenTypeId: unique symbol",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/DurableDeferred.ts#L214"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/DurableDeferred.ts#L230"
   },
   {
     "_tag": "Constant",
@@ -282,7 +282,7 @@
     "since": "1.0.0",
     "category": "Token",
     "signature": "declare const Token: Schema.brand<typeof Schema.String, unique symbol>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/DurableDeferred.ts#L232"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/DurableDeferred.ts#L248"
   },
   {
     "_tag": "Constant",
@@ -297,7 +297,7 @@
     "since": "1.0.0",
     "category": "Token",
     "signature": "declare const token: <Success extends Schema.Schema.Any, Error extends Schema.Schema.All>(self: DurableDeferred<Success, Error>) => Effect.Effect<Token, never, WorkflowInstance>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/DurableDeferred.ts#L289"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/DurableDeferred.ts#L305"
   },
   {
     "_tag": "Constant",
@@ -312,7 +312,7 @@
     "since": "1.0.0",
     "category": "Token",
     "signature": "declare const tokenFromExecutionId: { (options: { readonly workflow: Workflow.Any; readonly executionId: string; }): <Success extends Schema.Schema.Any, Error extends Schema.Schema.All>(self: DurableDeferred<Success, Error>) => Token; <Success extends Schema.Schema.Any, Error extends Schema.Schema.All>(self: DurableDeferred<Success, Error>, options: { readonly workflow: Workflow.Any; readonly executionId: string; }): Token; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/DurableDeferred.ts#L303"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/DurableDeferred.ts#L319"
   },
   {
     "_tag": "Constant",
@@ -327,7 +327,7 @@
     "since": "1.0.0",
     "category": "Token",
     "signature": "declare const tokenFromPayload: { <W extends Workflow.Any>(options: { readonly workflow: W; readonly payload: Schema.Simplify<Schema.Struct.Constructor<W[\"payloadSchema\"][\"fields\"]>>; }): <Success extends Schema.Schema.Any, Error extends Schema.Schema.All>(self: DurableDeferred<Success, Error>) => Effect.Effect<Token>; <Success extends Schema.Schema.Any, Error extends Schema.Schema.All, W extends Workflow.Any>(self: DurableDeferred<Success, Error>, options: { readonly workflow: W; readonly payload: Schema.Simplify<Schema.Struct.Constructor<W[\"payloadSchema\"][\"fields\"]>>; }): Effect.Effect<Token>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/DurableDeferred.ts#L334"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/DurableDeferred.ts#L350"
   },
   {
     "_tag": "Constant",
@@ -342,7 +342,7 @@
     "since": "1.0.0",
     "category": "Combinators",
     "signature": "declare const done: { <Success extends Schema.Schema.Any, Error extends Schema.Schema.All>(options: { readonly token: Token; readonly exit: Exit.Exit<Success[\"Type\"], Error[\"Type\"]>; }): (self: DurableDeferred<Success, Error>) => Effect.Effect<void, never, WorkflowEngine | Success[\"Context\"] | Error[\"Context\"]>; <Success extends Schema.Schema.Any, Error extends Schema.Schema.All>(self: DurableDeferred<Success, Error>, options: { readonly token: Token; readonly exit: Exit.Exit<Success[\"Type\"], Error[\"Type\"]>; }): Effect.Effect<void, never, WorkflowEngine | Success[\"Context\"] | Error[\"Context\"]>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/DurableDeferred.ts#L368"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/DurableDeferred.ts#L384"
   },
   {
     "_tag": "Constant",
@@ -357,7 +357,7 @@
     "since": "1.0.0",
     "category": "Combinators",
     "signature": "declare const succeed: { <Success extends Schema.Schema.Any, Error extends Schema.Schema.All>(options: { readonly token: Token; readonly value: Success[\"Type\"]; }): (self: DurableDeferred<Success, Error>) => Effect.Effect<void, never, WorkflowEngine | Success[\"Context\"]>; <Success extends Schema.Schema.Any, Error extends Schema.Schema.All>(self: DurableDeferred<Success, Error>, options: { readonly token: Token; readonly value: Success[\"Type\"]; }): Effect.Effect<void, never, WorkflowEngine | Success[\"Context\"]>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/DurableDeferred.ts#L411"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/DurableDeferred.ts#L427"
   },
   {
     "_tag": "Constant",
@@ -372,7 +372,7 @@
     "since": "1.0.0",
     "category": "Combinators",
     "signature": "declare const fail: { <Success extends Schema.Schema.Any, Error extends Schema.Schema.All>(options: { readonly token: Token; readonly error: Error[\"Type\"]; }): (self: DurableDeferred<Success, Error>) => Effect.Effect<void, never, WorkflowEngine | Error[\"Context\"]>; <Success extends Schema.Schema.Any, Error extends Schema.Schema.All>(self: DurableDeferred<Success, Error>, options: { readonly token: Token; readonly error: Error[\"Type\"]; }): Effect.Effect<void, never, WorkflowEngine | Error[\"Context\"]>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/DurableDeferred.ts#L444"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/DurableDeferred.ts#L460"
   },
   {
     "_tag": "Constant",
@@ -387,7 +387,7 @@
     "since": "1.0.0",
     "category": "Combinators",
     "signature": "declare const failCause: { <Success extends Schema.Schema.Any, Error extends Schema.Schema.All>(options: { readonly token: Token; readonly cause: Cause.Cause<Error[\"Type\"]>; }): (self: DurableDeferred<Success, Error>) => Effect.Effect<void, never, WorkflowEngine | Error[\"Context\"]>; <Success extends Schema.Schema.Any, Error extends Schema.Schema.All>(self: DurableDeferred<Success, Error>, options: { readonly token: Token; readonly cause: Cause.Cause<Error[\"Type\"]>; }): Effect.Effect<void, never, WorkflowEngine | Error[\"Context\"]>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/DurableDeferred.ts#L477"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/DurableDeferred.ts#L493"
   },
   {
     "_tag": "Function",
@@ -401,8 +401,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "Constructors",
-    "signature": "declare const make: <Success extends Schema.Schema.Any = typeof Schema.Void, Error extends Schema.Schema.All = typeof Schema.Never>(name: string, options?: { readonly success?: Success; readonly error?: Error; }) => DurableDeferred<Success, Error>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/DurableDeferred.ts#L60"
+    "signature": "declare const make: <Success extends Schema.Schema.Any = typeof Schema.Void, Error extends Schema.Schema.All = typeof Schema.Never>(name: string, options?: { readonly success?: Success | undefined; readonly error?: Error | undefined; }) => DurableDeferred<Success, Error>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/DurableDeferred.ts#L62"
   },
   {
     "_tag": "Function",
@@ -417,7 +417,7 @@
     "since": "1.0.0",
     "category": "Racing",
     "signature": "declare const raceAll: <const Effects extends NonEmptyReadonlyArray<Effect.Effect<any, any, any>>, SI, SR, EI, ER>(options: { name: string; success: Schema.Schema<Effects[number] extends Effect.Effect<infer S, infer _E, infer _R> ? S : never, SI, SR>; error: Schema.Schema<Effects[number] extends Effect.Effect<infer _S, infer E, infer _R> ? E : never, EI, ER>; effects: Effects; }) => Effect.Effect<(Effects[number] extends Effect.Effect<infer _A, infer _E, infer _R> ? _A : never), (Effects[number] extends Effect.Effect<infer _A, infer _E, infer _R> ? _E : never), (Effects[number] extends Effect.Effect<infer _A, infer _R, infer R> ? R : never) | SR | ER | WorkflowEngine | WorkflowInstance>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/DurableDeferred.ts#L166"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/DurableDeferred.ts#L182"
   },
   {
     "_tag": "Interface",
@@ -431,8 +431,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "Models",
-    "signature": "export interface DurableDeferred<\n  Success extends Schema.Schema.Any,\n  Error extends Schema.Schema.All = typeof Schema.Never\n> {\n  readonly [TypeId]: TypeId\n  readonly name: string\n  readonly successSchema: Success\n  readonly errorSchema: Error\n  readonly exitSchema: Schema.Exit<Success, Error, typeof Schema.Defect>\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/DurableDeferred.ts#L33"
+    "signature": "export interface DurableDeferred<\n  Success extends Schema.Schema.Any,\n  Error extends Schema.Schema.All = typeof Schema.Never\n> {\n  readonly [TypeId]: TypeId\n  readonly name: string\n  readonly successSchema: Success\n  readonly errorSchema: Error\n  readonly exitSchema: Schema.Exit<Success, Error, typeof Schema.Defect>\n  readonly withActivityAttempt: Effect.Effect<DurableDeferred<Success, Error>>\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/DurableDeferred.ts#L34"
   },
   {
     "_tag": "Interface",
@@ -447,7 +447,7 @@
     "since": "1.0.0",
     "category": "Models",
     "signature": "export interface Any {\n  readonly [TypeId]: TypeId\n  readonly name: string\n  readonly successSchema: Schema.Schema.Any\n  readonly errorSchema: Schema.Schema.All\n  readonly exitSchema: Schema.Exit<any, any, any>\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/DurableDeferred.ts#L48"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/DurableDeferred.ts#L50"
   },
   {
     "_tag": "TypeAlias",
@@ -462,7 +462,7 @@
     "since": "1.0.0",
     "category": "Symbols",
     "signature": "type TypeId = typeof TypeId",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/DurableDeferred.ts#L27"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/DurableDeferred.ts#L28"
   },
   {
     "_tag": "TypeAlias",
@@ -477,7 +477,7 @@
     "since": "1.0.0",
     "category": "Token",
     "signature": "type TokenTypeId = typeof TokenTypeId",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/DurableDeferred.ts#L220"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/DurableDeferred.ts#L236"
   },
   {
     "_tag": "TypeAlias",
@@ -492,7 +492,7 @@
     "since": "1.0.0",
     "category": "Token",
     "signature": "type Token = Brand.Branded<string, TokenTypeId>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/DurableDeferred.ts#L226"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/DurableDeferred.ts#L242"
   },
   {
     "_tag": "Export",
@@ -507,7 +507,7 @@
     "since": "1.0.0",
     "category": "Combinators",
     "signature": "declare const await: <Success extends Schema.Schema.Any, Error extends Schema.Schema.All>(self: DurableDeferred<Success, Error>) => Effect.Effect<Success[\"Type\"], Error[\"Type\"], WorkflowEngine | WorkflowInstance | Success[\"Context\"] | Error[\"Context\"]>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/DurableDeferred.ts#L113"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/DurableDeferred.ts#L129"
   },
   {
     "_tag": "Export",
