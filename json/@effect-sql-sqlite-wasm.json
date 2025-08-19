@@ -90,7 +90,7 @@
     "since": "1.0.0",
     "category": "type ids",
     "signature": "declare const TypeId: unique symbol",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-sqlite-wasm/src/SqliteClient.ts#L33"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-sqlite-wasm/src/SqliteClient.ts#L34"
   },
   {
     "_tag": "Constant",
@@ -105,7 +105,7 @@
     "since": "1.0.0",
     "category": "tags",
     "signature": "declare const SqliteClient: Context.Tag<SqliteClient, SqliteClient>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-sqlite-wasm/src/SqliteClient.ts#L59"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-sqlite-wasm/src/SqliteClient.ts#L60"
   },
   {
     "_tag": "Constant",
@@ -120,7 +120,7 @@
     "since": "1.0.0",
     "category": "tranferables",
     "signature": "declare const currentTransferables: FiberRef.FiberRef<ReadonlyArray<Transferable>>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-sqlite-wasm/src/SqliteClient.ts#L434"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-sqlite-wasm/src/SqliteClient.ts#L435"
   },
   {
     "_tag": "Function",
@@ -135,7 +135,7 @@
     "since": "1.0.0",
     "category": "constructor",
     "signature": "declare const makeMemory: (options: SqliteClientMemoryConfig) => Effect.Effect<SqliteClient, SqlError, Scope.Scope | Reactivity.Reactivity>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-sqlite-wasm/src/SqliteClient.ts#L103"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-sqlite-wasm/src/SqliteClient.ts#L104"
   },
   {
     "_tag": "Function",
@@ -150,7 +150,7 @@
     "since": "1.0.0",
     "category": "constructor",
     "signature": "declare const make: (options: SqliteClientConfig) => Effect.Effect<SqliteClient, SqlError, Scope.Scope | Reactivity.Reactivity>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-sqlite-wasm/src/SqliteClient.ts#L265"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-sqlite-wasm/src/SqliteClient.ts#L266"
   },
   {
     "_tag": "Function",
@@ -165,7 +165,7 @@
     "since": "1.0.0",
     "category": "tranferables",
     "signature": "declare const withTransferables: (transferables: ReadonlyArray<Transferable>) => <A, E, R>(effect: Effect.Effect<A, E, R>) => Effect.Effect<A, E, R>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-sqlite-wasm/src/SqliteClient.ts#L443"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-sqlite-wasm/src/SqliteClient.ts#L444"
   },
   {
     "_tag": "Function",
@@ -180,7 +180,7 @@
     "since": "1.0.0",
     "category": "layers",
     "signature": "declare const layerMemoryConfig: (config: Config.Config.Wrap<SqliteClientMemoryConfig>) => Layer.Layer<SqliteClient | Client.SqlClient, ConfigError | SqlError>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-sqlite-wasm/src/SqliteClient.ts#L451"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-sqlite-wasm/src/SqliteClient.ts#L452"
   },
   {
     "_tag": "Function",
@@ -195,7 +195,7 @@
     "since": "1.0.0",
     "category": "layers",
     "signature": "declare const layerMemory: (config: SqliteClientMemoryConfig) => Layer.Layer<SqliteClient | Client.SqlClient, ConfigError | SqlError>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-sqlite-wasm/src/SqliteClient.ts#L469"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-sqlite-wasm/src/SqliteClient.ts#L470"
   },
   {
     "_tag": "Function",
@@ -210,7 +210,7 @@
     "since": "1.0.0",
     "category": "layers",
     "signature": "declare const layer: (config: SqliteClientConfig) => Layer.Layer<SqliteClient | Client.SqlClient, ConfigError | SqlError>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-sqlite-wasm/src/SqliteClient.ts#L483"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-sqlite-wasm/src/SqliteClient.ts#L484"
   },
   {
     "_tag": "Function",
@@ -225,7 +225,7 @@
     "since": "1.0.0",
     "category": "layers",
     "signature": "declare const layerConfig: (config: Config.Config.Wrap<SqliteClientConfig>) => Layer.Layer<SqliteClient | Client.SqlClient, ConfigError | SqlError>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-sqlite-wasm/src/SqliteClient.ts#L497"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-sqlite-wasm/src/SqliteClient.ts#L498"
   },
   {
     "_tag": "Interface",
@@ -240,7 +240,7 @@
     "since": "1.0.0",
     "category": "models",
     "signature": "export interface SqliteClient extends Client.SqlClient {\n  readonly [TypeId]: TypeId\n  readonly config: SqliteClientMemoryConfig\n  readonly export: Effect.Effect<Uint8Array, SqlError>\n  readonly import: (data: Uint8Array) => Effect.Effect<void, SqlError>\n\n  /** Not supported in sqlite */\n  readonly updateValues: never\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-sqlite-wasm/src/SqliteClient.ts#L45"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-sqlite-wasm/src/SqliteClient.ts#L46"
   },
   {
     "_tag": "Interface",
@@ -255,7 +255,7 @@
     "since": "1.0.0",
     "category": "models",
     "signature": "export interface SqliteClientMemoryConfig {\n  readonly installReactivityHooks?: boolean\n  readonly spanAttributes?: Record<string, unknown>\n  readonly transformResultNames?: (str: string) => string\n  readonly transformQueryNames?: (str: string) => string\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-sqlite-wasm/src/SqliteClient.ts#L65"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-sqlite-wasm/src/SqliteClient.ts#L66"
   },
   {
     "_tag": "Interface",
@@ -270,7 +270,7 @@
     "since": "1.0.0",
     "category": "models",
     "signature": "export interface SqliteClientConfig {\n  readonly worker: Effect.Effect<Worker | SharedWorker | MessagePort, never, Scope.Scope>\n  readonly installReactivityHooks?: boolean\n  readonly spanAttributes?: Record<string, unknown>\n  readonly transformResultNames?: (str: string) => string\n  readonly transformQueryNames?: (str: string) => string\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-sqlite-wasm/src/SqliteClient.ts#L76"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-sqlite-wasm/src/SqliteClient.ts#L77"
   },
   {
     "_tag": "TypeAlias",
@@ -285,7 +285,7 @@
     "since": "1.0.0",
     "category": "type ids",
     "signature": "type TypeId = typeof TypeId",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-sqlite-wasm/src/SqliteClient.ts#L39"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-sqlite-wasm/src/SqliteClient.ts#L40"
   },
   {
     "_tag": "Constant",

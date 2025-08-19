@@ -4347,7 +4347,7 @@
     "since": "1.0.0",
     "category": "collecting & elements",
     "signature": "declare const all: <const Arg extends Iterable<Prompt<any>> | Record<string, Prompt<any>>>(arg: Arg) => All.Return<Arg>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cli/src/Prompt.ts#L545"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cli/src/Prompt.ts#L549"
   },
   {
     "_tag": "Constant",
@@ -4362,7 +4362,7 @@
     "since": "1.0.0",
     "category": "constructors",
     "signature": "declare const confirm: (options: Prompt.ConfirmOptions) => Prompt<boolean>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cli/src/Prompt.ts#L552"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cli/src/Prompt.ts#L556"
   },
   {
     "_tag": "Constant",
@@ -4378,7 +4378,7 @@
     "since": "1.0.0",
     "category": "constructors",
     "signature": "declare const custom: <State, Output>(initialState: State | Effect<State, never, Prompt.Environment>, handlers: Prompt.Handlers<State, Output>) => Prompt<Output>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cli/src/Prompt.ts#L581"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cli/src/Prompt.ts#L585"
   },
   {
     "_tag": "Constant",
@@ -4393,7 +4393,7 @@
     "since": "1.0.0",
     "category": "constructors",
     "signature": "declare const date: (options: Prompt.DateOptions) => Prompt<Date>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cli/src/Prompt.ts#L590"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cli/src/Prompt.ts#L594"
   },
   {
     "_tag": "Constant",
@@ -4408,7 +4408,7 @@
     "since": "1.0.0",
     "category": "constructors",
     "signature": "declare const file: (options?: Prompt.FileOptions) => Prompt<string>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cli/src/Prompt.ts#L596"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cli/src/Prompt.ts#L600"
   },
   {
     "_tag": "Constant",
@@ -4423,7 +4423,7 @@
     "since": "1.0.0",
     "category": "combinators",
     "signature": "declare const flatMap: { <Output, Output2>(f: (output: Output) => Prompt<Output2>): (self: Prompt<Output>) => Prompt<Output2>; <Output, Output2>(self: Prompt<Output>, f: (output: Output) => Prompt<Output2>): Prompt<Output2>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cli/src/Prompt.ts#L602"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cli/src/Prompt.ts#L606"
   },
   {
     "_tag": "Constant",
@@ -4438,7 +4438,7 @@
     "since": "1.0.0",
     "category": "constructors",
     "signature": "declare const float: (options: Prompt.FloatOptions) => Prompt<number>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cli/src/Prompt.ts#L613"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cli/src/Prompt.ts#L617"
   },
   {
     "_tag": "Constant",
@@ -4453,7 +4453,7 @@
     "since": "1.0.0",
     "category": "constructors",
     "signature": "declare const hidden: (options: Prompt.TextOptions) => Prompt<Redacted>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cli/src/Prompt.ts#L619"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cli/src/Prompt.ts#L623"
   },
   {
     "_tag": "Constant",
@@ -4468,7 +4468,7 @@
     "since": "1.0.0",
     "category": "constructors",
     "signature": "declare const integer: (options: Prompt.IntegerOptions) => Prompt<number>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cli/src/Prompt.ts#L625"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cli/src/Prompt.ts#L629"
   },
   {
     "_tag": "Constant",
@@ -4483,7 +4483,7 @@
     "since": "1.0.0",
     "category": "constructors",
     "signature": "declare const list: (options: Prompt.ListOptions) => Prompt<Array<string>>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cli/src/Prompt.ts#L631"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cli/src/Prompt.ts#L635"
   },
   {
     "_tag": "Constant",
@@ -4498,7 +4498,7 @@
     "since": "1.0.0",
     "category": "combinators",
     "signature": "declare const map: { <Output, Output2>(f: (output: Output) => Output2): (self: Prompt<Output>) => Prompt<Output2>; <Output, Output2>(self: Prompt<Output>, f: (output: Output) => Output2): Prompt<Output2>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cli/src/Prompt.ts#L637"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cli/src/Prompt.ts#L641"
   },
   {
     "_tag": "Constant",
@@ -4513,7 +4513,7 @@
     "since": "1.0.0",
     "category": "constructors",
     "signature": "declare const password: (options: Prompt.TextOptions) => Prompt<Redacted>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cli/src/Prompt.ts#L646"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cli/src/Prompt.ts#L650"
   },
   {
     "_tag": "Constant",
@@ -4529,7 +4529,7 @@
     "since": "1.0.0",
     "category": "execution",
     "signature": "declare const run: <Output>(self: Prompt<Output>) => Effect<Output, QuitException, Prompt.Environment>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cli/src/Prompt.ts#L654"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cli/src/Prompt.ts#L658"
   },
   {
     "_tag": "Constant",
@@ -4544,7 +4544,7 @@
     "since": "1.0.0",
     "category": "constructors",
     "signature": "declare const select: <const A>(options: Prompt.SelectOptions<A>) => Prompt<A>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cli/src/Prompt.ts#L661"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cli/src/Prompt.ts#L665"
   },
   {
     "_tag": "Constant",
@@ -4559,7 +4559,7 @@
     "since": "1.0.0",
     "category": "constructors",
     "signature": "declare const multiSelect: <const A>(options: Prompt.SelectOptions<A> & Prompt.MultiSelectOptions) => Prompt<Array<A>>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cli/src/Prompt.ts#L667"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cli/src/Prompt.ts#L671"
   },
   {
     "_tag": "Constant",
@@ -4575,7 +4575,7 @@
     "since": "1.0.0",
     "category": "constructors",
     "signature": "declare const succeed: <A>(value: A) => Prompt<A>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cli/src/Prompt.ts#L679"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cli/src/Prompt.ts#L683"
   },
   {
     "_tag": "Constant",
@@ -4590,7 +4590,7 @@
     "since": "1.0.0",
     "category": "constructors",
     "signature": "declare const text: (options: Prompt.TextOptions) => Prompt<string>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cli/src/Prompt.ts#L685"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cli/src/Prompt.ts#L689"
   },
   {
     "_tag": "Constant",
@@ -4605,7 +4605,7 @@
     "since": "1.0.0",
     "category": "constructors",
     "signature": "declare const toggle: (options: Prompt.ToggleOptions) => Prompt<boolean>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cli/src/Prompt.ts#L691"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cli/src/Prompt.ts#L695"
   },
   {
     "_tag": "Interface",
@@ -4831,7 +4831,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "models",
-    "signature": "export interface SelectChoice<A> {\n    /**\n     * The name of the select option that is displayed to the user.\n     */\n    readonly title: string\n    /**\n     * The underlying value of the select option.\n     */\n    readonly value: A\n    /**\n     * An optional description for the select option which will be displayed\n     * to the user.\n     */\n    readonly description?: string\n    /**\n     * Whether or not this select option is disabled.\n     */\n    readonly disabled?: boolean\n  }",
+    "signature": "export interface SelectChoice<A> {\n    /**\n     * The name of the select option that is displayed to the user.\n     */\n    readonly title: string\n    /**\n     * The underlying value of the select option.\n     */\n    readonly value: A\n    /**\n     * An optional description for the select option which will be displayed\n     * to the user.\n     */\n    readonly description?: string\n    /**\n     * Whether or not this select option is disabled.\n     */\n    readonly disabled?: boolean\n    /**\n     * Whether this option should be selected by default (only used by MultiSelect).\n     */\n    readonly selected?: boolean\n  }",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cli/src/Prompt.ts#L401"
   },
   {
@@ -4847,7 +4847,7 @@
     "since": "1.0.0",
     "category": "models",
     "signature": "export interface TextOptions {\n    /**\n     * The message to display in the prompt.\n     */\n    readonly message: string\n    /**\n     * The default value of the text option.\n     */\n    readonly default?: string\n    /**\n     * An effectful function that can be used to validate the value entered into\n     * the prompt before final submission.\n     */\n    readonly validate?: (value: string) => Effect<string, string>\n  }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cli/src/Prompt.ts#L425"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cli/src/Prompt.ts#L429"
   },
   {
     "_tag": "Interface",
@@ -4862,7 +4862,7 @@
     "since": "1.0.0",
     "category": "models",
     "signature": "export interface ToggleOptions {\n    /**\n     * The message to display in the prompt.\n     */\n    readonly message: string\n    /**\n     * The intitial value of the toggle prompt (defaults to `false`).\n     */\n    readonly initial?: boolean\n    /**\n     * The text to display when the toggle is in the active state (defaults to\n     * `on`).\n     */\n    readonly active?: string\n    /**\n     * The text to display when the toggle is in the inactive state (defaults to\n     * `off`).\n     */\n    readonly inactive?: string\n  }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cli/src/Prompt.ts#L445"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cli/src/Prompt.ts#L449"
   },
   {
     "_tag": "TypeAlias",
@@ -4909,7 +4909,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "type PromptAny = Prompt<any>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cli/src/Prompt.ts#L474"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cli/src/Prompt.ts#L478"
   },
   {
     "_tag": "TypeAlias",
@@ -4924,7 +4924,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "type ReturnIterable<T> = [T] extends [Iterable<Prompt.Variance<infer A>>] ?\n    Prompt<Array<A>>\n    : never",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cli/src/Prompt.ts#L479"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cli/src/Prompt.ts#L483"
   },
   {
     "_tag": "TypeAlias",
@@ -4939,7 +4939,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "type Prompt<T[number] extends never ? [] : { -readonly [K in keyof T]: [T[K]] extends [Prompt.Variance<infer _A>] ? _A : never; }> = Prompt<\n    T[number] extends never ? []\n      : { -readonly [K in keyof T]: [T[K]] extends [Prompt.Variance<infer _A>] ? _A : never }\n  > extends infer X ? X : never",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cli/src/Prompt.ts#L486"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cli/src/Prompt.ts#L490"
   },
   {
     "_tag": "TypeAlias",
@@ -4954,7 +4954,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "type ReturnObject<T> = [T] extends [{ [K: string]: PromptAny }] ? Prompt<\n      {\n        -readonly [K in keyof T]: [T[K]] extends [Prompt.Variance<infer _A>] ? _A : never\n      }\n    >\n    : never",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cli/src/Prompt.ts#L494"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cli/src/Prompt.ts#L498"
   },
   {
     "_tag": "TypeAlias",
@@ -4969,7 +4969,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "type Return<Arg> = [Arg] extends [ReadonlyArray<PromptAny>] ? ReturnTuple<Arg>\n    : [Arg] extends [Iterable<PromptAny>] ? ReturnIterable<Arg>\n    : [Arg] extends [Record<string, PromptAny>] ? ReturnObject<Arg>\n    : never",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cli/src/Prompt.ts#L504"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cli/src/Prompt.ts#L508"
   },
   {
     "_tag": "Constant",

@@ -38,6 +38,6 @@ const allWithRecord = Prompt.all({ username, password })
 declare const all: <const Arg extends Iterable<Prompt<any>> | Record<string, Prompt<any>>>(arg: Arg) => All.Return<Arg>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/cli/src/Prompt.ts#L545)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/cli/src/Prompt.ts#L549)
 
 Since v1.0.0

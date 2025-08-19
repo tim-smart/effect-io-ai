@@ -32,6 +32,6 @@ the following occurs:
 declare const custom: <State, Output>(initialState: State | Effect<State, never, Prompt.Environment>, handlers: Prompt.Handlers<State, Output>) => Prompt<Output>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/cli/src/Prompt.ts#L581)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/cli/src/Prompt.ts#L585)
 
 Since v1.0.0

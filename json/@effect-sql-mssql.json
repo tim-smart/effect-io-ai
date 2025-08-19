@@ -91,7 +91,7 @@
     "since": "1.0.0",
     "category": "type ids",
     "signature": "declare const TypeId: unique symbol",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-mssql/src/MssqlClient.ts#L31"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-mssql/src/MssqlClient.ts#L35"
   },
   {
     "_tag": "Constant",
@@ -106,7 +106,7 @@
     "since": "1.0.0",
     "category": "tags",
     "signature": "declare const MssqlClient: Context.Tag<MssqlClient, MssqlClient>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-mssql/src/MssqlClient.ts#L67"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-mssql/src/MssqlClient.ts#L71"
   },
   {
     "_tag": "Constant",
@@ -121,7 +121,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "declare const defaultParameterTypes: Record<Statement.PrimitiveKind, DataType>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-mssql/src/MssqlClient.ts#L510"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-mssql/src/MssqlClient.ts#L514"
   },
   {
     "_tag": "Function",
@@ -136,7 +136,7 @@
     "since": "1.0.0",
     "category": "constructors",
     "signature": "declare const make: (options: MssqlClientConfig) => Effect.Effect<MssqlClient, SqlError, Scope.Scope | Reactivity.Reactivity>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-mssql/src/MssqlClient.ts#L119"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-mssql/src/MssqlClient.ts#L123"
   },
   {
     "_tag": "Function",
@@ -151,7 +151,7 @@
     "since": "1.0.0",
     "category": "layers",
     "signature": "declare const layerConfig: (config: Config.Config.Wrap<MssqlClientConfig>) => Layer.Layer<Client.SqlClient | MssqlClient, ConfigError | SqlError>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-mssql/src/MssqlClient.ts#L429"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-mssql/src/MssqlClient.ts#L433"
   },
   {
     "_tag": "Function",
@@ -166,7 +166,7 @@
     "since": "1.0.0",
     "category": "layers",
     "signature": "declare const layer: (config: MssqlClientConfig) => Layer.Layer<Client.SqlClient | MssqlClient, ConfigError | SqlError>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-mssql/src/MssqlClient.ts#L447"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-mssql/src/MssqlClient.ts#L451"
   },
   {
     "_tag": "Function",
@@ -181,7 +181,7 @@
     "since": "1.0.0",
     "category": "compiler",
     "signature": "declare const makeCompiler: (transform?: (_: string) => string) => Statement.Compiler",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-mssql/src/MssqlClient.ts#L461"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-mssql/src/MssqlClient.ts#L465"
   },
   {
     "_tag": "Interface",
@@ -196,7 +196,7 @@
     "since": "1.0.0",
     "category": "models",
     "signature": "export interface MssqlClient extends Client.SqlClient {\n  readonly [TypeId]: TypeId\n\n  readonly config: MssqlClientConfig\n\n  readonly param: (\n    type: DataType,\n    value: Statement.Primitive,\n    options?: ParameterOptions\n  ) => Statement.Fragment\n\n  readonly call: <\n    I extends Record<string, Parameter<any>>,\n    O extends Record<string, Parameter<any>>,\n    A extends object\n  >(\n    procedure: Procedure.ProcedureWithValues<I, O, A>\n  ) => Effect.Effect<Procedure.Procedure.Result<O, A>, SqlError>\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-mssql/src/MssqlClient.ts#L43"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-mssql/src/MssqlClient.ts#L47"
   },
   {
     "_tag": "Interface",
@@ -211,7 +211,7 @@
     "since": "1.0.0",
     "category": "models",
     "signature": "export interface MssqlClientConfig {\n  readonly domain?: string | undefined\n  readonly server: string\n  readonly instanceName?: string | undefined\n  readonly encrypt?: boolean | undefined\n  readonly trustServer?: boolean | undefined\n  readonly port?: number | undefined\n  readonly authType?: string | undefined\n  readonly database?: string | undefined\n  readonly username?: string | undefined\n  readonly password?: Redacted.Redacted | undefined\n  readonly connectTimeout?: Duration.DurationInput | undefined\n\n  readonly minConnections?: number | undefined\n  readonly maxConnections?: number | undefined\n  readonly connectionTTL?: Duration.DurationInput | undefined\n\n  readonly parameterTypes?: Record<Statement.PrimitiveKind, DataType> | undefined\n\n  readonly spanAttributes?: Record<string, unknown> | undefined\n\n  readonly transformResultNames?: ((str: string) => string) | undefined\n  readonly transformQueryNames?: ((str: string) => string) | undefined\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-mssql/src/MssqlClient.ts#L73"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-mssql/src/MssqlClient.ts#L77"
   },
   {
     "_tag": "TypeAlias",
@@ -226,7 +226,7 @@
     "since": "1.0.0",
     "category": "type ids",
     "signature": "type TypeId = typeof TypeId",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-mssql/src/MssqlClient.ts#L37"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-mssql/src/MssqlClient.ts#L41"
   },
   {
     "_tag": "Constant",
