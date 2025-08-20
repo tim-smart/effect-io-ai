@@ -16198,6 +16198,21 @@
     "since": "1.0.0",
     "category": "tag",
     "signature": "declare const Terminal: Tag<Terminal, Terminal>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Terminal.ts#L97"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Terminal.ts",
+      "path": "src/Terminal.ts"
+    },
+    "project": "@effect/platform",
+    "name": "isQuitException",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "refinements",
+    "signature": "declare const isQuitException: (u: unknown) => u is QuitException",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Terminal.ts#L90"
   },
   {

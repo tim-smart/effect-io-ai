@@ -11,6 +11,6 @@ Re-exports all named exports from the "./OtlpLogger.js" module as `OtlpLogger`.
 export * as OtlpLogger from "./OtlpLogger.js"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/index.ts#L25)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/index.ts#L24)
 
 Since v1.0.0

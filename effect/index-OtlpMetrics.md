@@ -11,6 +11,6 @@ Re-exports all named exports from the "./OtlpMetrics.js" module as `OtlpMetrics`
 export * as OtlpMetrics from "./OtlpMetrics.js"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/index.ts#L30)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/index.ts#L29)
 
 Since v1.0.0

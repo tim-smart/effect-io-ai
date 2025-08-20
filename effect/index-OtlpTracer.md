@@ -11,6 +11,6 @@ Re-exports all named exports from the "./OtlpTracer.js" module as `OtlpTracer`.
 export * as OtlpTracer from "./OtlpTracer.js"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/index.ts#L40)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/index.ts#L39)
 
 Since v1.0.0
