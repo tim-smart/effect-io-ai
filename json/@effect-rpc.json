@@ -2352,7 +2352,7 @@
     "since": "1.0.0",
     "category": "serialization",
     "signature": "declare const layerJson: Layer.Layer<RpcSerialization, never, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcSerialization.ts#L381"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcSerialization.ts#L402"
   },
   {
     "_tag": "Constant",
@@ -2368,7 +2368,7 @@
     "since": "1.0.0",
     "category": "serialization",
     "signature": "declare const layerNdjson: Layer.Layer<RpcSerialization, never, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcSerialization.ts#L392"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcSerialization.ts#L413"
   },
   {
     "_tag": "Constant",
@@ -2384,7 +2384,7 @@
     "since": "1.0.0",
     "category": "serialization",
     "signature": "declare const layerMsgPack: Layer.Layer<RpcSerialization, never, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcSerialization.ts#L424"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcSerialization.ts#L445"
   },
   {
     "_tag": "Function",
@@ -2430,7 +2430,7 @@
     "since": "1.0.0",
     "category": "serialization",
     "signature": "declare const layerJsonRpc: (options?: { readonly contentType?: string | undefined; }) => Layer.Layer<RpcSerialization>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcSerialization.ts#L400"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcSerialization.ts#L421"
   },
   {
     "_tag": "Function",
@@ -2446,7 +2446,7 @@
     "since": "1.0.0",
     "category": "serialization",
     "signature": "declare const layerNdJsonRpc: (options?: { readonly contentType?: string | undefined; }) => Layer.Layer<RpcSerialization>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcSerialization.ts#L411"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcSerialization.ts#L432"
   },
   {
     "_tag": "Interface",
