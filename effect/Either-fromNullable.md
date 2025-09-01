@@ -19,7 +19,7 @@ assert.deepStrictEqual(Either.fromNullable(null, () => 'fallback'), Either.left(
 **Signature**
 
 ```ts
-declare const fromNullable: { <R, L>(onNullable: (right: R) => L): (self: R) => Either<NonNullable<R>, L>; <R, L>(self: R, onNullable: (right: R) => L): Either<NonNullable<R>, L>; }
+declare const fromNullable: { <A, E>(onNullable: (right: A) => E): (self: A) => Either<NonNullable<A>, E>; <A, E>(self: A, onNullable: (right: A) => E): Either<NonNullable<A>, E>; }
 ```
 
 [Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Either.ts#L156)

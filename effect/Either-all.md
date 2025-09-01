@@ -23,7 +23,7 @@ assert.deepStrictEqual(Either.all({ right: Either.right(1), b: Either.left("erro
 **Signature**
 
 ```ts
-declare const all: <const I extends Iterable<Either<any, any>> | Record<string, Either<any, any>>>(input: I) => [I] extends [ReadonlyArray<Either<any, any>>] ? Either<{ -readonly [K in keyof I]: [I[K]] extends [Either<infer R, any>] ? R : never; }, I[number] extends never ? never : [I[number]] extends [Either<any, infer L>] ? L : never> : [I] extends [Iterable<Either<infer R, infer L>>] ? Either<Array<R>, L> : Either<{ -readonly [K in keyof I]: [I[K]] extends [Either<infer R, any>] ? R : never; }, I[keyof I] extends never ? never : [I[keyof I]] extends [Either<any, infer L>] ? L : never>
+declare const all: <const I extends Iterable<Either<any, any>> | Record<string, Either<any, any>>>(input: I) => [I] extends [ReadonlyArray<Either<any, any>>] ? Either<{ -readonly [K in keyof I]: [I[K]] extends [Either<infer A, any>] ? A : never; }, I[number] extends never ? never : [I[number]] extends [Either<any, infer E>] ? E : never> : [I] extends [Iterable<Either<infer A, infer E>>] ? Either<Array<A>, E> : Either<{ -readonly [K in keyof I]: [I[K]] extends [Either<infer A, any>] ? A : never; }, I[keyof I] extends never ? never : [I[keyof I]] extends [Either<any, infer E>] ? E : never>
 ```
 
 [Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Either.ts#L734)

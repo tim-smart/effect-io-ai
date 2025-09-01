@@ -15,6 +15,6 @@ Generates a regular expression from a `TemplateLiteral` AST node.
 declare const getTemplateLiteralRegExp: (ast: TemplateLiteral) => RegExp
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/SchemaAST.ts#L2161)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/SchemaAST.ts#L2165)
 
 Since v3.10.0

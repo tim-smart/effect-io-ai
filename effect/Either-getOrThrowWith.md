@@ -23,7 +23,7 @@ assert.throws(() => Either.getOrThrowWith(Either.left("error"), () => new Error(
 **Signature**
 
 ```ts
-declare const getOrThrowWith: { <L>(onLeft: (left: L) => unknown): <A>(self: Either<A, L>) => A; <R, L>(self: Either<R, L>, onLeft: (left: L) => unknown): R; }
+declare const getOrThrowWith: { <E>(onLeft: (left: E) => unknown): <A>(self: Either<A, E>) => A; <A, E>(self: Either<A, E>, onLeft: (left: E) => unknown): A; }
 ```
 
 [Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Either.ts#L594)

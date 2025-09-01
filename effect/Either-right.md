@@ -9,7 +9,7 @@ of this structure.
 **Signature**
 
 ```ts
-declare const right: <R>(right: R) => Either<R>
+declare const right: <A>(a: A) => Either<A>
 ```
 
 [Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Either.ts#L120)

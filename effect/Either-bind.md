@@ -36,7 +36,7 @@ assert.deepStrictEqual(result, Either.right({ x: 2, y: 3, sum: 5 }))
 **Signature**
 
 ```ts
-declare const bind: { <N extends string, A extends object, B, L2>(name: Exclude<N, keyof A>, f: (a: NoInfer<A>) => Either<B, L2>): <L1>(self: Either<A, L1>) => Either<{ [K in N | keyof A]: K extends keyof A ? A[K] : B; }, L1 | L2>; <A extends object, L1, N extends string, B, L2>(self: Either<A, L1>, name: Exclude<N, keyof A>, f: (a: NoInfer<A>) => Either<B, L2>): Either<{ [K in N | keyof A]: K extends keyof A ? A[K] : B; }, L1 | L2>; }
+declare const bind: { <N extends string, A extends object, B, E2>(name: Exclude<N, keyof A>, f: (a: NoInfer<A>) => Either<B, E2>): <E>(self: Either<A, E>) => Either<{ [K in N | keyof A]: K extends keyof A ? A[K] : B; }, E | E2>; <A extends object, E, N extends string, B, E2>(self: Either<A, E>, name: Exclude<N, keyof A>, f: (a: NoInfer<A>) => Either<B, E2>): Either<{ [K in N | keyof A]: K extends keyof A ? A[K] : B; }, E | E2>; }
 ```
 
 [Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Either.ts#L868)

@@ -18,7 +18,7 @@ assert.deepStrictEqual(Either.getLeft(Either.left('err')), Option.some('err'))
 **Signature**
 
 ```ts
-declare const getLeft: <R, L>(self: Either<R, L>) => Option<L>
+declare const getLeft: <A, E>(self: Either<A, E>) => Option<E>
 ```
 
 [Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Either.ts#L307)

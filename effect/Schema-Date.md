@@ -14,6 +14,6 @@ Date("Invalid Date")`.
 declare const Date: typeof Date$
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L6842)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L6844)
 
 Since v3.10.0

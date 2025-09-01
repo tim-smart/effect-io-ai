@@ -18,7 +18,7 @@ assert.deepStrictEqual(Either.getOrElse(Either.left("not a number"), (error) => 
 **Signature**
 
 ```ts
-declare const getOrElse: { <L, R2>(onLeft: (left: L) => R2): <R>(self: Either<R, L>) => R2 | R; <R, L, R2>(self: Either<R, L>, onLeft: (left: L) => R2): R | R2; }
+declare const getOrElse: { <E, A2>(onLeft: (left: E) => A2): <A>(self: Either<A, E>) => A2 | A; <A, E, A2>(self: Either<A, E>, onLeft: (left: E) => A2): A | A2; }
 ```
 
 [Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Either.ts#L536)

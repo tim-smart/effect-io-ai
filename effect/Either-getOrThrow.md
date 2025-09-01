@@ -24,7 +24,7 @@ assert.throws(() => Either.getOrThrow(Either.left("error")))
 **Signature**
 
 ```ts
-declare const getOrThrow: <R, L>(self: Either<R, L>) => R
+declare const getOrThrow: <A, E>(self: Either<A, E>) => A
 ```
 
 [Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Either.ts#L624)

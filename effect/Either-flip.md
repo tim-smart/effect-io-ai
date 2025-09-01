@@ -9,7 +9,7 @@ use all methods on the error channel, possibly before flipping back.
 **Signature**
 
 ```ts
-declare const flip: <R, L>(self: Either<R, L>) => Either<L, R>
+declare const flip: <A, E>(self: Either<A, E>) => Either<E, A>
 ```
 
 [Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Either.ts#L776)

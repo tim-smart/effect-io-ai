@@ -11,6 +11,6 @@ Creates a new AST with shallow mutability applied to its properties.
 declare const mutable: (ast: AST) => AST
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/SchemaAST.ts#L2549)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/SchemaAST.ts#L2553)
 
 Since v3.10.0

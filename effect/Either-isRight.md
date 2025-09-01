@@ -18,7 +18,7 @@ assert.deepStrictEqual(Either.isRight(Either.left("a")), false)
 **Signature**
 
 ```ts
-declare const isRight: <R, L>(self: Either<R, L>) => self is Right<L, R>
+declare const isRight: <A, E>(self: Either<A, E>) => self is Right<E, A>
 ```
 
 [Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Either.ts#L273)

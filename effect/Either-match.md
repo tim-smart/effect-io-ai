@@ -26,7 +26,7 @@ assert.deepStrictEqual(
 **Signature**
 
 ```ts
-declare const match: { <L, B, R, C = B>(options: { readonly onLeft: (left: L) => B; readonly onRight: (right: R) => C; }): (self: Either<R, L>) => B | C; <R, L, B, C = B>(self: Either<R, L>, options: { readonly onLeft: (left: L) => B; readonly onRight: (right: R) => C; }): B | C; }
+declare const match: { <E, B, A, C = B>(options: { readonly onLeft: (left: E) => B; readonly onRight: (right: A) => C; }): (self: Either<A, E>) => B | C; <A, E, B, C = B>(self: Either<A, E>, options: { readonly onLeft: (left: E) => B; readonly onRight: (right: A) => C; }): B | C; }
 ```
 
 [Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Either.ts#L397)

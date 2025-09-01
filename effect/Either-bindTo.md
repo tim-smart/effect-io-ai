@@ -36,7 +36,7 @@ assert.deepStrictEqual(result, Either.right({ x: 2, y: 3, sum: 5 }))
 **Signature**
 
 ```ts
-declare const bindTo: { <N extends string>(name: N): <R, L>(self: Either<R, L>) => Either<{ [K in N]: R; }, L>; <R, L, N extends string>(self: Either<R, L>, name: N): Either<{ [K in N]: R; }, L>; }
+declare const bindTo: { <N extends string>(name: N): <A, E>(self: Either<A, E>) => Either<{ [K in N]: A; }, E>; <A, E, N extends string>(self: Either<A, E>, name: N): Either<{ [K in N]: A; }, E>; }
 ```
 
 [Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Either.ts#L911)

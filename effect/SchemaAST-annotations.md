@@ -6,12 +6,14 @@ Module: `SchemaAST`<br />
 Merges a set of new annotations with existing ones, potentially overwriting
 any duplicates.
 
+Any previously existing identifier annotations are deleted.
+
 **Signature**
 
 ```ts
 declare const annotations: (ast: AST, overrides: Annotations) => AST
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/SchemaAST.ts#L2083)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/SchemaAST.ts#L2085)
 
 Since v3.10.0

@@ -8,7 +8,7 @@ Returns `self` if it is a `Right` or `that` otherwise.
 **Signature**
 
 ```ts
-declare const orElse: { <L, R2, L2>(that: (left: L) => Either<R2, L2>): <R>(self: Either<R, L>) => Either<R | R2, L2>; <R, L, R2, L2>(self: Either<R, L>, that: (left: L) => Either<R2, L2>): Either<R | R2, L2>; }
+declare const orElse: { <E, A2, E2>(that: (left: E) => Either<A2, E2>): <A>(self: Either<A, E>) => Either<A | A2, E2>; <A, E, A2, E2>(self: Either<A, E>, that: (left: E) => Either<A2, E2>): Either<A | A2, E2>; }
 ```
 
 [Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Either.ts#L634)
