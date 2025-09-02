@@ -188,7 +188,7 @@
     "since": "1.0.0",
     "category": "tags",
     "signature": "declare class OtelLoggerProvider",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Logger.ts#L20"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Logger.ts#L23"
   },
   {
     "_tag": "Constant",
@@ -203,7 +203,7 @@
     "since": "1.0.0",
     "category": "constructors",
     "signature": "declare const make: Effect.Effect<Logger.Logger<unknown, void>, never, OtelLoggerProvider>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Logger.ts#L29"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Logger.ts#L32"
   },
   {
     "_tag": "Constant",
@@ -218,7 +218,7 @@
     "since": "1.0.0",
     "category": "layers",
     "signature": "declare const layerLoggerAdd: Layer.Layer<never, never, OtelLoggerProvider>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Logger.ts#L67"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Logger.ts#L81"
   },
   {
     "_tag": "Constant",
@@ -233,7 +233,7 @@
     "since": "1.0.0",
     "category": "layers",
     "signature": "declare const layerLoggerReplace: Layer.Layer<never, never, OtelLoggerProvider>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Logger.ts#L77"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Logger.ts#L91"
   },
   {
     "_tag": "Function",
@@ -248,7 +248,7 @@
     "since": "1.0.0",
     "category": "layers",
     "signature": "declare const layerLoggerProvider: (processor: Otel.LogRecordProcessor | NonEmptyReadonlyArray<Otel.LogRecordProcessor>, config?: Omit<Otel.LoggerProviderConfig, \"resource\"> & { readonly shutdownTimeout?: DurationInput | undefined; }) => Layer.Layer<OtelLoggerProvider, never, Resource>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Logger.ts#L87"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Logger.ts#L101"
   },
   {
     "_tag": "Constant",
