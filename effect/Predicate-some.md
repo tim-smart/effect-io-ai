@@ -34,6 +34,6 @@ assert.strictEqual(isNegativeOrOdd(4), false) // both are false
 declare const some: <A>(collection: Iterable<Predicate<A>>) => Predicate<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Predicate.ts#L1398)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Predicate.ts#L1399)
 
 Since v2.0.0

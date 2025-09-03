@@ -34,6 +34,6 @@ assert.strictEqual(isPositiveAndEven(-2), false)
 declare const every: <A>(collection: Iterable<Predicate<A>>) => Predicate<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Predicate.ts#L1364)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Predicate.ts#L1365)
 
 Since v2.0.0
