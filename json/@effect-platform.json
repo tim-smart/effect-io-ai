@@ -1645,7 +1645,7 @@
     "since": "1.0.0",
     "category": "file watcher",
     "signature": "declare class WatchBackend",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/FileSystem.ts#L644"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/FileSystem.ts#L645"
   },
   {
     "_tag": "Constant",
@@ -1750,7 +1750,7 @@
     "since": "1.0.0",
     "category": "tag",
     "signature": "declare const FileSystem: Tag<FileSystem, FileSystem>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/FileSystem.ts#L456"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/FileSystem.ts#L457"
   },
   {
     "_tag": "Constant",
@@ -1765,7 +1765,7 @@
     "since": "1.0.0",
     "category": "constructor",
     "signature": "declare const make: (impl: Omit<FileSystem, \"exists\" | \"readFileString\" | \"stream\" | \"sink\" | \"writeFileString\">) => FileSystem",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/FileSystem.ts#L462"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/FileSystem.ts#L463"
   },
   {
     "_tag": "Constant",
@@ -1781,7 +1781,7 @@
     "since": "1.0.0",
     "category": "constructor",
     "signature": "declare const makeNoop: (fileSystem: Partial<FileSystem>) => FileSystem",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/FileSystem.ts#L472"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/FileSystem.ts#L473"
   },
   {
     "_tag": "Constant",
@@ -1797,7 +1797,7 @@
     "since": "1.0.0",
     "category": "layers",
     "signature": "declare const layerNoop: (fileSystem: Partial<FileSystem>) => Layer<FileSystem>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/FileSystem.ts#L480"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/FileSystem.ts#L481"
   },
   {
     "_tag": "Constant",
@@ -1812,7 +1812,7 @@
     "since": "1.0.0",
     "category": "type id",
     "signature": "declare const FileTypeId: unique symbol",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/FileSystem.ts#L486"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/FileSystem.ts#L487"
   },
   {
     "_tag": "Constant",
@@ -1827,7 +1827,7 @@
     "since": "1.0.0",
     "category": "constructor",
     "signature": "declare const FileDescriptor: Brand.Brand.Constructor<File.Descriptor>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/FileSystem.ts#L569"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/FileSystem.ts#L570"
   },
   {
     "_tag": "Constant",
@@ -1842,7 +1842,7 @@
     "since": "1.0.0",
     "category": "constructor",
     "signature": "declare const WatchEventCreate: Data.Case.Constructor<WatchEvent.Create, \"_tag\">",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/FileSystem.ts#L620"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/FileSystem.ts#L621"
   },
   {
     "_tag": "Constant",
@@ -1857,7 +1857,7 @@
     "since": "1.0.0",
     "category": "constructor",
     "signature": "declare const WatchEventUpdate: Data.Case.Constructor<WatchEvent.Update, \"_tag\">",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/FileSystem.ts#L628"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/FileSystem.ts#L629"
   },
   {
     "_tag": "Constant",
@@ -1872,7 +1872,7 @@
     "since": "1.0.0",
     "category": "constructor",
     "signature": "declare const WatchEventRemove: Data.Case.Constructor<WatchEvent.Remove, \"_tag\">",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/FileSystem.ts#L636"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/FileSystem.ts#L637"
   },
   {
     "_tag": "Function",
@@ -1887,7 +1887,7 @@
     "since": "1.0.0",
     "category": "guard",
     "signature": "declare const isFile: (u: unknown) => u is File",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/FileSystem.ts#L500"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/FileSystem.ts#L501"
   },
   {
     "_tag": "Interface",
@@ -1976,7 +1976,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "options",
-    "signature": "export interface MakeTempFileOptions {\n  readonly directory?: string\n  readonly prefix?: string\n}",
+    "signature": "export interface MakeTempFileOptions {\n  readonly directory?: string\n  readonly prefix?: string\n  readonly suffix?: string\n}",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/FileSystem.ts#L369"
   },
   {
@@ -1992,7 +1992,7 @@
     "since": "1.0.0",
     "category": "options",
     "signature": "export interface OpenFileOptions {\n  readonly flag?: OpenFlag\n  readonly mode?: number\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/FileSystem.ts#L378"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/FileSystem.ts#L379"
   },
   {
     "_tag": "Interface",
@@ -2007,7 +2007,7 @@
     "since": "1.0.0",
     "category": "options",
     "signature": "export interface ReadDirectoryOptions {\n  readonly recursive?: boolean\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/FileSystem.ts#L387"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/FileSystem.ts#L388"
   },
   {
     "_tag": "Interface",
@@ -2022,7 +2022,7 @@
     "since": "1.0.0",
     "category": "options",
     "signature": "export interface RemoveOptions {\n  /**\n   * When `true`, you can recursively remove nested directories.\n   */\n  readonly recursive?: boolean\n  /**\n   * When `true`, exceptions will be ignored if `path` does not exist.\n   */\n  readonly force?: boolean\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/FileSystem.ts#L395"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/FileSystem.ts#L396"
   },
   {
     "_tag": "Interface",
@@ -2037,7 +2037,7 @@
     "since": "1.0.0",
     "category": "options",
     "signature": "export interface SinkOptions extends OpenFileOptions {}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/FileSystem.ts#L410"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/FileSystem.ts#L411"
   },
   {
     "_tag": "Interface",
@@ -2052,7 +2052,7 @@
     "since": "1.0.0",
     "category": "options",
     "signature": "export interface StreamOptions {\n  readonly bufferSize?: number\n  readonly bytesToRead?: SizeInput\n  readonly chunkSize?: SizeInput\n  readonly offset?: SizeInput\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/FileSystem.ts#L416"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/FileSystem.ts#L417"
   },
   {
     "_tag": "Interface",
@@ -2067,7 +2067,7 @@
     "since": "1.0.0",
     "category": "options",
     "signature": "export interface WriteFileOptions {\n  readonly flag?: OpenFlag\n  readonly mode?: number\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/FileSystem.ts#L427"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/FileSystem.ts#L428"
   },
   {
     "_tag": "Interface",
@@ -2082,7 +2082,7 @@
     "since": "1.0.0",
     "category": "options",
     "signature": "export interface WriteFileStringOptions {\n  readonly flag?: OpenFlag\n  readonly mode?: number\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/FileSystem.ts#L436"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/FileSystem.ts#L437"
   },
   {
     "_tag": "Interface",
@@ -2097,7 +2097,7 @@
     "since": "1.0.0",
     "category": "options",
     "signature": "export interface WatchOptions {\n  /**\n   * When `true`, the watcher will also watch for changes in subdirectories.\n   */\n  readonly recursive?: boolean\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/FileSystem.ts#L445"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/FileSystem.ts#L446"
   },
   {
     "_tag": "Interface",
@@ -2112,7 +2112,7 @@
     "since": "1.0.0",
     "category": "model",
     "signature": "export interface File {\n  readonly [FileTypeId]: FileTypeId\n  readonly fd: File.Descriptor\n  readonly stat: Effect.Effect<File.Info, PlatformError>\n  readonly seek: (offset: SizeInput, from: SeekMode) => Effect.Effect<void>\n  readonly sync: Effect.Effect<void, PlatformError>\n  readonly read: (buffer: Uint8Array) => Effect.Effect<Size, PlatformError>\n  readonly readAlloc: (size: SizeInput) => Effect.Effect<Option<Uint8Array>, PlatformError>\n  readonly truncate: (length?: SizeInput) => Effect.Effect<void, PlatformError>\n  readonly write: (buffer: Uint8Array) => Effect.Effect<Size, PlatformError>\n  readonly writeAll: (buffer: Uint8Array) => Effect.Effect<void, PlatformError>\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/FileSystem.ts#L506"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/FileSystem.ts#L507"
   },
   {
     "_tag": "TypeAlias",
@@ -2174,7 +2174,7 @@
     "since": "1.0.0",
     "category": "type id",
     "signature": "type FileTypeId = typeof FileTypeId",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/FileSystem.ts#L494"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/FileSystem.ts#L495"
   },
   {
     "_tag": "TypeAlias",
@@ -2189,7 +2189,7 @@
     "since": "1.0.0",
     "category": "model",
     "signature": "type SeekMode = \"start\" | \"current\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/FileSystem.ts#L575"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/FileSystem.ts#L576"
   },
   {
     "_tag": "TypeAlias",
@@ -2204,7 +2204,7 @@
     "since": "1.0.0",
     "category": "model",
     "signature": "type WatchEvent = WatchEvent.Create | WatchEvent.Update | WatchEvent.Remove",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/FileSystem.ts#L581"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/FileSystem.ts#L582"
   },
   {
     "_tag": "Interface",
@@ -2219,7 +2219,7 @@
     "since": "1.0.0",
     "category": "model",
     "signature": "export interface Info {\n    readonly type: Type\n    readonly mtime: Option<Date>\n    readonly atime: Option<Date>\n    readonly birthtime: Option<Date>\n    readonly dev: number\n    readonly ino: Option<number>\n    readonly mode: number\n    readonly nlink: Option<number>\n    readonly uid: Option<number>\n    readonly gid: Option<number>\n    readonly rdev: Option<number>\n    readonly size: Size\n    readonly blksize: Option<Size>\n    readonly blocks: Option<number>\n  }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/FileSystem.ts#L547"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/FileSystem.ts#L548"
   },
   {
     "_tag": "TypeAlias",
@@ -2234,7 +2234,7 @@
     "since": "1.0.0",
     "category": "model",
     "signature": "type Descriptor = Brand.Branded<number, \"FileDescriptor\">",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/FileSystem.ts#L527"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/FileSystem.ts#L528"
   },
   {
     "_tag": "TypeAlias",
@@ -2249,7 +2249,7 @@
     "since": "1.0.0",
     "category": "model",
     "signature": "type Type = | \"File\"\n    | \"Directory\"\n    | \"SymbolicLink\"\n    | \"BlockDevice\"\n    | \"CharacterDevice\"\n    | \"FIFO\"\n    | \"Socket\"\n    | \"Unknown\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/FileSystem.ts#L533"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/FileSystem.ts#L534"
   },
   {
     "_tag": "Interface",
@@ -2264,7 +2264,7 @@
     "since": "1.0.0",
     "category": "model",
     "signature": "export interface Create {\n    readonly _tag: \"Create\"\n    readonly path: string\n  }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/FileSystem.ts#L592"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/FileSystem.ts#L593"
   },
   {
     "_tag": "Interface",
@@ -2279,7 +2279,7 @@
     "since": "1.0.0",
     "category": "model",
     "signature": "export interface Update {\n    readonly _tag: \"Update\"\n    readonly path: string\n  }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/FileSystem.ts#L601"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/FileSystem.ts#L602"
   },
   {
     "_tag": "Interface",
@@ -2294,7 +2294,7 @@
     "since": "1.0.0",
     "category": "model",
     "signature": "export interface Remove {\n    readonly _tag: \"Remove\"\n    readonly path: string\n  }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/FileSystem.ts#L610"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/FileSystem.ts#L611"
   },
   {
     "_tag": "Constant",

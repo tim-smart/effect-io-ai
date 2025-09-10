@@ -30,6 +30,6 @@ assert.strictEqual(isObject("hello"), false)
 declare const isObject: (input: unknown) => input is object
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Predicate.ts#L581)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Predicate.ts#L580)
 
 Since v2.0.0

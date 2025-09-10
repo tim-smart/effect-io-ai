@@ -35,6 +35,6 @@ if (isCircle(shape1)) {
 declare const isTagged: { <K extends string>(tag: K): (self: unknown) => self is { _tag: K; }; <K extends string>(self: unknown, tag: K): self is { _tag: K; }; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Predicate.ts#L643)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Predicate.ts#L642)
 
 Since v2.0.0

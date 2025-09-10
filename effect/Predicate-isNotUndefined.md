@@ -23,6 +23,6 @@ assert.strictEqual(isNotUndefined(undefined), false)
 declare const isNotUndefined: <A>(input: A) => input is Exclude<A, undefined>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Predicate.ts#L477)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Predicate.ts#L476)
 
 Since v2.0.0

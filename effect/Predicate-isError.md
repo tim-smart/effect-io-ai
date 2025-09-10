@@ -24,6 +24,6 @@ assert.strictEqual(isError("boom"), false)
 declare const isError: (input: unknown) => input is Error
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Predicate.ts#L712)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Predicate.ts#L711)
 
 Since v2.0.0

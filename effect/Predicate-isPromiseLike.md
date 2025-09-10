@@ -28,6 +28,6 @@ assert.strictEqual(isPromiseLike({}), false)
 declare const isPromiseLike: (input: unknown) => input is PromiseLike<unknown>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Predicate.ts#L869)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Predicate.ts#L868)
 
 Since v2.0.0

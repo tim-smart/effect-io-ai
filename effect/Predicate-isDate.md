@@ -23,6 +23,6 @@ assert.strictEqual(isDate("2023-01-01"), false)
 declare const isDate: (input: unknown) => input is Date
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Predicate.ts#L750)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Predicate.ts#L749)
 
 Since v2.0.0

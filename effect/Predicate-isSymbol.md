@@ -22,6 +22,6 @@ assert.strictEqual(isSymbol("a"), false)
 declare const isSymbol: (input: unknown) => input is symbol
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Predicate.ts#L413)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Predicate.ts#L412)
 
 Since v2.0.0

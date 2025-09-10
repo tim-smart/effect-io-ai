@@ -22,6 +22,6 @@ assert.strictEqual(isNever({}), false)
 declare const isNever: (input: unknown) => input is never
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Predicate.ts#L533)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Predicate.ts#L532)
 
 Since v2.0.0

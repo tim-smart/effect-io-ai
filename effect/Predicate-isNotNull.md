@@ -23,6 +23,6 @@ assert.strictEqual(isNotNull(null), false)
 declare const isNotNull: <A>(input: A) => input is Exclude<A, null>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Predicate.ts#L515)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Predicate.ts#L514)
 
 Since v2.0.0

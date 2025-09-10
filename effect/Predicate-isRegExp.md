@@ -23,6 +23,6 @@ assert.strictEqual(Predicate.isRegExp("/a/"), false)
 declare const isRegExp: (input: unknown) => input is RegExp
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Predicate.ts#L890)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Predicate.ts#L889)
 
 Since v3.9.0

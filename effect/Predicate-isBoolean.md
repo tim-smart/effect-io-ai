@@ -24,6 +24,6 @@ assert.strictEqual(isBoolean(0), false)
 declare const isBoolean: (input: unknown) => input is boolean
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Predicate.ts#L376)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Predicate.ts#L375)
 
 Since v2.0.0

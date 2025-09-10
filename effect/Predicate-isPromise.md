@@ -29,6 +29,6 @@ assert.strictEqual(isPromise({}), false)
 declare const isPromise: (input: unknown) => input is Promise<unknown>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Predicate.ts#L845)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Predicate.ts#L844)
 
 Since v2.0.0

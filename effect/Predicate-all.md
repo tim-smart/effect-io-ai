@@ -18,6 +18,6 @@ the two iterables (predicates or values).
 declare const all: <A>(collection: Iterable<Predicate<A>>) => Predicate<ReadonlyArray<A>>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Predicate.ts#L954)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Predicate.ts#L953)
 
 Since v2.0.0

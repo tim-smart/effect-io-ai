@@ -23,6 +23,6 @@ assert.strictEqual(isUndefined("undefined"), false)
 declare const isUndefined: (input: unknown) => input is undefined
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Predicate.ts#L458)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Predicate.ts#L457)
 
 Since v2.0.0

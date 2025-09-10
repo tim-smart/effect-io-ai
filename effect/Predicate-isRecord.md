@@ -31,6 +31,6 @@ assert.strictEqual(isRecord(() => null), false)
 declare const isRecord: (input: unknown) => input is { [x: string | symbol]: unknown; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Predicate.ts#L797)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Predicate.ts#L796)
 
 Since v2.0.0

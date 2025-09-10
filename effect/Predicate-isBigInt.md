@@ -23,6 +23,6 @@ assert.strictEqual(isBigInt("1"), false)
 declare const isBigInt: (input: unknown) => input is bigint
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Predicate.ts#L395)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Predicate.ts#L394)
 
 Since v2.0.0

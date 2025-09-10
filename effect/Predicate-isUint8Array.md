@@ -23,6 +23,6 @@ assert.strictEqual(isUint8Array([1, 2, 3]), false)
 declare const isUint8Array: (input: unknown) => input is Uint8Array
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Predicate.ts#L731)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Predicate.ts#L730)
 
 Since v2.0.0
