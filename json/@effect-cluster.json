@@ -3140,7 +3140,7 @@
     "since": "1.0.0",
     "category": "Rpcs",
     "signature": "declare class Rpcs",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Runners.ts#L423"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Runners.ts#L427"
   },
   {
     "_tag": "Class",
@@ -3155,7 +3155,7 @@
     "since": "1.0.0",
     "category": "Client",
     "signature": "declare class RpcClientProtocol",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Runners.ts#L619"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Runners.ts#L623"
   },
   {
     "_tag": "Constant",
@@ -3185,7 +3185,7 @@
     "since": "1.0.0",
     "category": "No-op",
     "signature": "declare const makeNoop: Effect.Effect<{ readonly ping: (address: RunnerAddress) => Effect.Effect<void, RunnerUnavailable>; readonly sendLocal: <R extends Rpc.Any>(options: { readonly message: Message.Outgoing<R>; readonly send: <Rpc extends Rpc.Any>(message: Message.IncomingLocal<Rpc>) => Effect.Effect<void, EntityNotManagedByRunner | EntityNotAssignedToRunner | MailboxFull | AlreadyProcessingMessage>; readonly simulateRemoteSerialization: boolean; }) => Effect.Effect<void, EntityNotManagedByRunner | EntityNotAssignedToRunner | MailboxFull | AlreadyProcessingMessage | PersistenceError>; readonly send: <R extends Rpc.Any>(options: { readonly address: RunnerAddress; readonly message: Message.Outgoing<R>; }) => Effect.Effect<void, EntityNotManagedByRunner | EntityNotAssignedToRunner | RunnerUnavailable | MailboxFull | AlreadyProcessingMessage | PersistenceError>; readonly notify: <R extends Rpc.Any>(options: { readonly address: Option.Option<RunnerAddress>; readonly message: Message.Outgoing<R>; readonly discard: boolean; }) => Effect.Effect<void, EntityNotManagedByRunner | PersistenceError>; readonly notifyLocal: <R extends Rpc.Any>(options: { readonly message: Message.Outgoing<R>; readonly notify: (options: Message.IncomingLocal<any>) => Effect.Effect<void, EntityNotManagedByRunner | EntityNotAssignedToRunner>; readonly discard: boolean; }) => Effect.Effect<void, EntityNotManagedByRunner | PersistenceError>; }, never, Scope | MessageStorage.MessageStorage | ShardingConfig | Snowflake.Generator>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Runners.ts#L387"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Runners.ts#L391"
   },
   {
     "_tag": "Constant",
@@ -3200,7 +3200,7 @@
     "since": "1.0.0",
     "category": "Layers",
     "signature": "declare const layerNoop: Layer.Layer<Runners, never, MessageStorage.MessageStorage | ShardingConfig>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Runners.ts#L401"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Runners.ts#L405"
   },
   {
     "_tag": "Constant",
@@ -3215,7 +3215,7 @@
     "since": "1.0.0",
     "category": "Rpcs",
     "signature": "declare const makeRpcClient: Effect.Effect<RpcClient, never, Scope | RpcClient_.Protocol>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Runners.ts#L468"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Runners.ts#L472"
   },
   {
     "_tag": "Constant",
@@ -3230,7 +3230,7 @@
     "since": "1.0.0",
     "category": "constructors",
     "signature": "declare const makeRpc: Effect.Effect<{ readonly ping: (address: RunnerAddress) => Effect.Effect<void, RunnerUnavailable>; readonly sendLocal: <R extends Rpc.Any>(options: { readonly message: Message.Outgoing<R>; readonly send: <Rpc extends Rpc.Any>(message: Message.IncomingLocal<Rpc>) => Effect.Effect<void, EntityNotManagedByRunner | EntityNotAssignedToRunner | MailboxFull | AlreadyProcessingMessage>; readonly simulateRemoteSerialization: boolean; }) => Effect.Effect<void, EntityNotManagedByRunner | EntityNotAssignedToRunner | MailboxFull | AlreadyProcessingMessage | PersistenceError>; readonly send: <R extends Rpc.Any>(options: { readonly address: RunnerAddress; readonly message: Message.Outgoing<R>; }) => Effect.Effect<void, EntityNotManagedByRunner | EntityNotAssignedToRunner | RunnerUnavailable | MailboxFull | AlreadyProcessingMessage | PersistenceError>; readonly notify: <R extends Rpc.Any>(options: { readonly address: Option.Option<RunnerAddress>; readonly message: Message.Outgoing<R>; readonly discard: boolean; }) => Effect.Effect<void, EntityNotManagedByRunner | PersistenceError>; readonly notifyLocal: <R extends Rpc.Any>(options: { readonly message: Message.Outgoing<R>; readonly notify: (options: Message.IncomingLocal<any>) => Effect.Effect<void, EntityNotManagedByRunner | EntityNotAssignedToRunner>; readonly discard: boolean; }) => Effect.Effect<void, EntityNotManagedByRunner | PersistenceError>; }, never, Scope | MessageStorage.MessageStorage | ShardingConfig | Snowflake.Generator | RpcClientProtocol>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Runners.ts#L478"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Runners.ts#L482"
   },
   {
     "_tag": "Constant",
@@ -3245,7 +3245,7 @@
     "since": "1.0.0",
     "category": "Layers",
     "signature": "declare const layerRpc: Layer.Layer<Runners, never, MessageStorage.MessageStorage | ShardingConfig | RpcClientProtocol>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Runners.ts#L607"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Runners.ts#L611"
   },
   {
     "_tag": "Interface",
@@ -3260,7 +3260,7 @@
     "since": "1.0.0",
     "category": "Rpcs",
     "signature": "export interface RpcClient extends RpcClient_.FromGroup<typeof Rpcs, RpcClientError> {}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Runners.ts#L462"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Runners.ts#L466"
   },
   {
     "_tag": "Constant",
@@ -3398,7 +3398,7 @@
     "since": "1.0.0",
     "category": "models",
     "signature": "declare class Sharding",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Sharding.ts#L67"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Sharding.ts#L68"
   },
   {
     "_tag": "Constant",
@@ -3413,7 +3413,7 @@
     "since": "1.0.0",
     "category": "layers",
     "signature": "declare const layer: Layer.Layer<Sharding, never, ShardManagerClient | ShardStorage | MessageStorage.MessageStorage | ShardingConfig | Runners>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Sharding.ts#L1225"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Sharding.ts#L1232"
   },
   {
     "_tag": "Class",
@@ -3704,7 +3704,7 @@
     "since": "1.0.0",
     "category": "models",
     "signature": "declare const ShardingEvent: { readonly StreamStarted: Data.Case.Constructor<{ readonly _tag: \"StreamStarted\"; }, \"_tag\">; readonly ShardsAssigned: Data.Case.Constructor<{ readonly _tag: \"ShardsAssigned\"; readonly address: RunnerAddress; readonly shards: ReadonlyArray<ShardId>; }, \"_tag\">; readonly ShardsUnassigned: Data.Case.Constructor<{ readonly _tag: \"ShardsUnassigned\"; readonly address: RunnerAddress; readonly shards: ReadonlyArray<ShardId>; }, \"_tag\">; readonly RunnerRegistered: Data.Case.Constructor<{ readonly _tag: \"RunnerRegistered\"; readonly address: RunnerAddress; }, \"_tag\">; readonly RunnerUnregistered: Data.Case.Constructor<{ readonly _tag: \"RunnerUnregistered\"; readonly address: RunnerAddress; }, \"_tag\">; readonly $is: <Tag extends \"StreamStarted\" | \"ShardsAssigned\" | \"ShardsUnassigned\" | \"RunnerRegistered\" | \"RunnerUnregistered\">(tag: Tag) => (u: unknown) => u is Extract<{ readonly _tag: \"StreamStarted\"; }, { readonly _tag: Tag; }> | Extract<{ readonly _tag: \"ShardsAssigned\"; readonly address: RunnerAddress; readonly shards: ReadonlyArray<ShardId>; }, { readonly _tag: Tag; }> | Extract<{ readonly _tag: \"ShardsUnassigned\"; readonly address: RunnerAddress; readonly shards: ReadonlyArray<ShardId>; }, { readonly _tag: Tag; }> | Extract<{ readonly _tag: \"RunnerRegistered\"; readonly address: RunnerAddress; }, { readonly _tag: Tag; }> | Extract<{ readonly _tag: \"RunnerUnregistered\"; readonly address: RunnerAddress; }, { readonly _tag: Tag; }>; readonly $match: { <const Cases extends { readonly StreamStarted: (args: { readonly _tag: \"StreamStarted\"; }) => any; readonly ShardsAssigned: (args: { readonly _tag: \"ShardsAssigned\"; readonly address: RunnerAddress; readonly shards: ReadonlyArray<ShardId>; }) => any; readonly ShardsUnassigned: (args: { readonly _tag: \"ShardsUnassigned\"; readonly address: RunnerAddress; readonly shards: ReadonlyArray<ShardId>; }) => any; readonly RunnerRegistered: (args: { readonly _tag: \"RunnerRegistered\"; readonly address: RunnerAddress; }) => any; readonly RunnerUnregistered: (args: { readonly _tag: \"RunnerUnregistered\"; readonly address: RunnerAddress; }) => any; }>(cases: Cases & { [K in Exclude<keyof Cases, \"StreamStarted\" | \"ShardsAssigned\" | \"ShardsUnassigned\" | \"RunnerRegistered\" | \"RunnerUnregistered\">]: never; }): (value: { readonly _tag: \"StreamStarted\"; } | { readonly _tag: \"ShardsAssigned\"; readonly address: RunnerAddress; readonly shards: ReadonlyArray<ShardId>; } | { readonly _tag: \"ShardsUnassigned\"; readonly address: RunnerAddress; readonly shards: ReadonlyArray<ShardId>; } | { readonly _tag: \"RunnerRegistered\"; readonly address: RunnerAddress; } | { readonly _tag: \"RunnerUnregistered\"; readonly address: RunnerAddress; }) => Unify<ReturnType<Cases[\"StreamStarted\" | \"ShardsAssigned\" | \"ShardsUnassigned\" | \"RunnerRegistered\" | \"RunnerUnregistered\"]>>; <const Cases extends { readonly StreamStarted: (args: { readonly _tag: \"StreamStarted\"; }) => any; readonly ShardsAssigned: (args: { readonly _tag: \"ShardsAssigned\"; readonly address: RunnerAddress; readonly shards: ReadonlyArray<ShardId>; }) => any; readonly ShardsUnassigned: (args: { readonly _tag: \"ShardsUnassigned\"; readonly address: RunnerAddress; readonly shards: ReadonlyArray<ShardId>; }) => any; readonly RunnerRegistered: (args: { readonly _tag: \"RunnerRegistered\"; readonly address: RunnerAddress; }) => any; readonly RunnerUnregistered: (args: { readonly _tag: \"RunnerUnregistered\"; readonly address: RunnerAddress; }) => any; }>(value: { readonly _tag: \"StreamStarted\"; } | { readonly _tag: \"ShardsAssigned\"; readonly address: RunnerAddress; readonly shards: ReadonlyArray<ShardId>; } | { readonly _tag: \"ShardsUnassigned\"; readonly address: RunnerAddress; readonly shards: ReadonlyArray<ShardId>; } | { readonly _tag: \"RunnerRegistered\"; readonly address: RunnerAddress; } | { readonly _tag: \"RunnerUnregistered\"; readonly address: RunnerAddress; }, cases: Cases & { [K in Exclude<keyof Cases, \"StreamStarted\" | \"ShardsAssigned\" | \"ShardsUnassigned\" | \"RunnerRegistered\" | \"RunnerUnregistered\">]: never; }): Unify<ReturnType<Cases[\"StreamStarted\" | \"ShardsAssigned\" | \"ShardsUnassigned\" | \"RunnerRegistered\" | \"RunnerUnregistered\"]>>; }; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ShardManager.ts#L325"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ShardManager.ts#L326"
   },
   {
     "_tag": "Constant",
@@ -3719,7 +3719,7 @@
     "since": "1.0.0",
     "category": "Client",
     "signature": "declare const makeClientLocal: Effect.Effect<{ readonly register: (address: RunnerAddress, groups: ReadonlyArray<string>) => Effect.Effect<MachineId.MachineId>; readonly unregister: (address: RunnerAddress) => Effect.Effect<void>; readonly notifyUnhealthyRunner: (address: RunnerAddress) => Effect.Effect<void>; readonly getAssignments: Effect.Effect<Iterable<readonly [ShardId, Option.Option<RunnerAddress>]>>; readonly shardingEvents: (address: Option.Option<RunnerAddress>) => Effect.Effect<Mailbox.ReadonlyMailbox<ShardingEvent>, never, Scope>; readonly getTime: Effect.Effect<number>; }, never, ShardingConfig>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ShardManager.ts#L331"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ShardManager.ts#L332"
   },
   {
     "_tag": "Constant",
@@ -3734,7 +3734,7 @@
     "since": "1.0.0",
     "category": "Client",
     "signature": "declare const makeClientRpc: Effect.Effect<{ readonly register: (address: RunnerAddress, groups: ReadonlyArray<string>) => Effect.Effect<MachineId.MachineId>; readonly unregister: (address: RunnerAddress) => Effect.Effect<void>; readonly notifyUnhealthyRunner: (address: RunnerAddress) => Effect.Effect<void>; readonly getAssignments: Effect.Effect<Iterable<readonly [ShardId, Option.Option<RunnerAddress>]>>; readonly shardingEvents: (address: Option.Option<RunnerAddress>) => Effect.Effect<Mailbox.ReadonlyMailbox<ShardingEvent>, never, Scope>; readonly getTime: Effect.Effect<number>; }, never, Scope | ShardingConfig | RpcClient.Protocol>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ShardManager.ts#L368"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ShardManager.ts#L369"
   },
   {
     "_tag": "Constant",
@@ -3749,7 +3749,7 @@
     "since": "1.0.0",
     "category": "Client",
     "signature": "declare const layerClientLocal: Layer.Layer<ShardManagerClient, never, ShardingConfig>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ShardManager.ts#L409"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ShardManager.ts#L410"
   },
   {
     "_tag": "Constant",
@@ -3764,7 +3764,7 @@
     "since": "1.0.0",
     "category": "Client",
     "signature": "declare const layerClientRpc: Layer.Layer<ShardManagerClient, never, ShardingConfig | RpcClientProtocol>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ShardManager.ts#L419"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ShardManager.ts#L420"
   },
   {
     "_tag": "Constant",
@@ -3778,8 +3778,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "Constructors",
-    "signature": "declare const make: Effect.Effect<{ readonly getAssignments: Effect.Effect<Iterable<readonly [ShardId, Option.Option<RunnerAddress>]>>; readonly shardingEvents: (address: Option.Option<RunnerAddress>) => Effect.Effect<Queue.Dequeue<ShardingEvent>, never, Scope>; readonly register: (runner: Runner) => Effect.Effect<MachineId.MachineId>; readonly unregister: (address: RunnerAddress) => Effect.Effect<void>; readonly rebalance: Effect.Effect<void>; readonly notifyUnhealthyRunner: (address: RunnerAddress) => Effect.Effect<void>; readonly checkRunnerHealth: Effect.Effect<void>; }, never, Scope | ShardStorage | ShardingConfig | RunnerHealth | Config | Runners>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ShardManager.ts#L438"
+    "signature": "declare const make: Effect.Effect<{ readonly getAssignments: Effect.Effect<Iterable<readonly [ShardId, Option.Option<RunnerAddress>]>>; readonly shardingEvents: (address: Option.Option<RunnerAddress>) => Effect.Effect<Queue.Dequeue<ShardingEvent>, RunnerNotRegistered, Scope>; readonly register: (runner: Runner) => Effect.Effect<MachineId.MachineId>; readonly unregister: (address: RunnerAddress) => Effect.Effect<void>; readonly rebalance: Effect.Effect<void>; readonly notifyUnhealthyRunner: (address: RunnerAddress) => Effect.Effect<void>; readonly checkRunnerHealth: Effect.Effect<void>; }, never, Scope | ShardStorage | ShardingConfig | RunnerHealth | Config | Runners>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ShardManager.ts#L439"
   },
   {
     "_tag": "Constant",
@@ -3794,7 +3794,7 @@
     "since": "1.0.0",
     "category": "layer",
     "signature": "declare const layer: Layer.Layer<ShardManager, never, ShardStorage | ShardingConfig | RunnerHealth | Config | Runners>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ShardManager.ts#L764"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ShardManager.ts#L770"
   },
   {
     "_tag": "Constant",
@@ -3809,7 +3809,7 @@
     "since": "1.0.0",
     "category": "Server",
     "signature": "declare const layerServerHandlers: Layer.Layer<Rpc.Handler<\"Register\"> | Rpc.Handler<\"Unregister\"> | Rpc.Handler<\"NotifyUnhealthyRunner\"> | Rpc.Handler<\"GetAssignments\"> | Rpc.Handler<\"ShardingEvents\"> | Rpc.Handler<\"GetTime\">, never, ShardManager>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ShardManager.ts#L774"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ShardManager.ts#L780"
   },
   {
     "_tag": "Constant",
@@ -3824,7 +3824,7 @@
     "since": "1.0.0",
     "category": "Server",
     "signature": "declare const layerServer: Layer.Layer<never, never, ShardManager | RpcServer.Protocol>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ShardManager.ts#L808"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ShardManager.ts#L814"
   },
   {
     "_tag": "Function",
@@ -3869,7 +3869,7 @@
     "since": "1.0.0",
     "category": "models",
     "signature": "type ShardingEvent = Data.TaggedEnum<{\n  StreamStarted: {}\n  ShardsAssigned: {\n    address: RunnerAddress\n    shards: ReadonlyArray<ShardId>\n  }\n  ShardsUnassigned: {\n    address: RunnerAddress\n    shards: ReadonlyArray<ShardId>\n  }\n  RunnerRegistered: { address: RunnerAddress }\n  RunnerUnregistered: { address: RunnerAddress }\n}>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ShardManager.ts#L307"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ShardManager.ts#L308"
   },
   {
     "_tag": "Class",
