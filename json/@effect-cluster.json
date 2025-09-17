@@ -3794,7 +3794,7 @@
     "since": "1.0.0",
     "category": "layer",
     "signature": "declare const layer: Layer.Layer<ShardManager, never, ShardStorage | ShardingConfig | RunnerHealth | Config | Runners>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ShardManager.ts#L770"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ShardManager.ts#L772"
   },
   {
     "_tag": "Constant",
@@ -3809,7 +3809,7 @@
     "since": "1.0.0",
     "category": "Server",
     "signature": "declare const layerServerHandlers: Layer.Layer<Rpc.Handler<\"Register\"> | Rpc.Handler<\"Unregister\"> | Rpc.Handler<\"NotifyUnhealthyRunner\"> | Rpc.Handler<\"GetAssignments\"> | Rpc.Handler<\"ShardingEvents\"> | Rpc.Handler<\"GetTime\">, never, ShardManager>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ShardManager.ts#L780"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ShardManager.ts#L782"
   },
   {
     "_tag": "Constant",
@@ -3824,7 +3824,7 @@
     "since": "1.0.0",
     "category": "Server",
     "signature": "declare const layerServer: Layer.Layer<never, never, ShardManager | RpcServer.Protocol>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ShardManager.ts#L814"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ShardManager.ts#L816"
   },
   {
     "_tag": "Function",
