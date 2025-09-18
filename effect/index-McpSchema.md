@@ -11,6 +11,6 @@ Re-exports all named exports from the "./McpSchema.js" module as `McpSchema`.
 export * as McpSchema from "./McpSchema.js"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/index.ts#L54)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/index.ts#L284)
 
 Since v1.0.0

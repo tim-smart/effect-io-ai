@@ -9,7 +9,7 @@ including the OpenAi-specific attributes.
 **Signature**
 
 ```ts
-type AllAttributes = AiTelemetry.AllAttributes & RequestAttributes & ResponseAttributes
+type AllAttributes = Telemetry.AllAttributes & RequestAttributes & ResponseAttributes
 ```
 
 [Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiTelemetry.ts#L33)

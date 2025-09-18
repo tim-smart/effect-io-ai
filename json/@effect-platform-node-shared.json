@@ -373,7 +373,7 @@
     "since": "1.0.0",
     "category": "constructors",
     "signature": "declare const makeNetChannel: <IE = never>(options: Net.NetConnectOpts) => Channel.Channel<Chunk.Chunk<Uint8Array>, Chunk.Chunk<Uint8Array | string | Socket.CloseEvent>, Socket.SocketError | IE, IE, void, unknown>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node-shared/src/NodeSocket.ts#L178"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node-shared/src/NodeSocket.ts#L181"
   },
   {
     "_tag": "Function",
@@ -388,7 +388,7 @@
     "since": "1.0.0",
     "category": "layers",
     "signature": "declare const layerNet: (options: Net.NetConnectOpts) => Layer.Layer<Socket.Socket, Socket.SocketError>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node-shared/src/NodeSocket.ts#L196"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node-shared/src/NodeSocket.ts#L199"
   },
   {
     "_tag": "Interface",

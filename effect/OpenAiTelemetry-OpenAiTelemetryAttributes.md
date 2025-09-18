@@ -12,9 +12,9 @@ Artificial Intelligence (GenAI) Models requests and responses.
 
 ```ts
 type OpenAiTelemetryAttributes = Simplify<
-  & AiTelemetry.GenAITelemetryAttributes
-  & AiTelemetry.AttributesWithPrefix<RequestAttributes, "gen_ai.openai.request">
-  & AiTelemetry.AttributesWithPrefix<ResponseAttributes, "gen_ai.openai.request">
+  & Telemetry.GenAITelemetryAttributes
+  & Telemetry.AttributesWithPrefix<RequestAttributes, "gen_ai.openai.request">
+  & Telemetry.AttributesWithPrefix<ResponseAttributes, "gen_ai.openai.request">
 >
 ```
 

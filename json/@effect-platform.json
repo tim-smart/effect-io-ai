@@ -15462,7 +15462,7 @@
     "since": "1.0.0",
     "category": "models",
     "signature": "declare class CloseEvent { constructor(readonly code = 1000, readonly reason?: string) }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Socket.ts#L84"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Socket.ts#L90"
   },
   {
     "_tag": "Class",
@@ -15477,7 +15477,7 @@
     "since": "1.0.0",
     "category": "errors",
     "signature": "declare class SocketGenericError",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Socket.ts#L134"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Socket.ts#L140"
   },
   {
     "_tag": "Class",
@@ -15492,7 +15492,7 @@
     "since": "1.0.0",
     "category": "errors",
     "signature": "declare class SocketCloseError",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Socket.ts#L147"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Socket.ts#L153"
   },
   {
     "_tag": "Constant",
@@ -15537,7 +15537,7 @@
     "since": "1.0.0",
     "category": "type ids",
     "signature": "declare const CloseEventTypeId: unique symbol",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Socket.ts#L72"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Socket.ts#L78"
   },
   {
     "_tag": "Constant",
@@ -15552,7 +15552,7 @@
     "since": "1.0.0",
     "category": "type ids",
     "signature": "declare const SocketErrorTypeId: unique symbol",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Socket.ts#L110"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Socket.ts#L116"
   },
   {
     "_tag": "Constant",
@@ -15567,7 +15567,7 @@
     "since": "1.0.0",
     "category": "combinators",
     "signature": "declare const toChannelString: { (encoding?: string | undefined): <IE>(self: Socket) => Channel.Channel<Chunk.Chunk<string>, Chunk.Chunk<Uint8Array | string | CloseEvent>, SocketError | IE, IE, void, unknown>; <IE>(self: Socket, encoding?: string | undefined): Channel.Channel<Chunk.Chunk<string>, Chunk.Chunk<Uint8Array | string | CloseEvent>, SocketError | IE, IE, void, unknown>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Socket.ts#L253"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Socket.ts#L259"
   },
   {
     "_tag": "Constant",
@@ -15582,7 +15582,7 @@
     "since": "1.0.0",
     "category": "tags",
     "signature": "declare const WebSocket: Context.Tag<WebSocket, globalThis.WebSocket>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Socket.ts#L335"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Socket.ts#L341"
   },
   {
     "_tag": "Constant",
@@ -15597,7 +15597,7 @@
     "since": "1.0.0",
     "category": "tags",
     "signature": "declare const WebSocketConstructor: Context.Tag<WebSocketConstructor, (url: string, protocols?: string | Array<string> | undefined) => globalThis.WebSocket>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Socket.ts#L351"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Socket.ts#L357"
   },
   {
     "_tag": "Constant",
@@ -15612,7 +15612,7 @@
     "since": "1.0.0",
     "category": "layers",
     "signature": "declare const layerWebSocketConstructorGlobal: Layer.Layer<WebSocketConstructor, never, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Socket.ts#L361"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Socket.ts#L367"
   },
   {
     "_tag": "Constant",
@@ -15627,7 +15627,7 @@
     "since": "1.0.0",
     "category": "fiber refs",
     "signature": "declare const currentSendQueueCapacity: FiberRef.FiberRef<number>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Socket.ts#L552"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Socket.ts#L559"
   },
   {
     "_tag": "Function",
@@ -15657,7 +15657,7 @@
     "since": "1.0.0",
     "category": "refinements",
     "signature": "declare const isCloseEvent: (u: unknown) => u is CloseEvent",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Socket.ts#L104"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Socket.ts#L110"
   },
   {
     "_tag": "Function",
@@ -15672,7 +15672,7 @@
     "since": "1.0.0",
     "category": "refinements",
     "signature": "declare const isSocketError: (u: unknown) => u is SocketError",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Socket.ts#L122"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Socket.ts#L128"
   },
   {
     "_tag": "Function",
@@ -15687,7 +15687,7 @@
     "since": "1.0.0",
     "category": "combinators",
     "signature": "declare const toChannelMap: <IE, A>(self: Socket, f: (data: Uint8Array | string) => A) => Channel.Channel<Chunk.Chunk<A>, Chunk.Chunk<Uint8Array | string | CloseEvent>, SocketError | IE, IE, void, unknown>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Socket.ts#L180"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Socket.ts#L186"
   },
   {
     "_tag": "Function",
@@ -15702,7 +15702,7 @@
     "since": "1.0.0",
     "category": "combinators",
     "signature": "declare const toChannel: <IE>(self: Socket) => Channel.Channel<Chunk.Chunk<Uint8Array>, Chunk.Chunk<Uint8Array | string | CloseEvent>, SocketError | IE, IE, void, unknown>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Socket.ts#L235"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Socket.ts#L241"
   },
   {
     "_tag": "Function",
@@ -15717,7 +15717,7 @@
     "since": "1.0.0",
     "category": "combinators",
     "signature": "declare const toChannelWith: <IE = never>() => (self: Socket) => Channel.Channel<Chunk.Chunk<Uint8Array>, Chunk.Chunk<Uint8Array | string | CloseEvent>, SocketError | IE, IE, void, unknown>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Socket.ts#L292"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Socket.ts#L298"
   },
   {
     "_tag": "Function",
@@ -15732,7 +15732,7 @@
     "since": "1.0.0",
     "category": "constructors",
     "signature": "declare const makeChannel: <IE = never>() => Channel.Channel<Chunk.Chunk<Uint8Array>, Chunk.Chunk<Uint8Array | string | CloseEvent>, SocketError | IE, IE, void, unknown, Socket>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Socket.ts#L308"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Socket.ts#L314"
   },
   {
     "_tag": "Function",
@@ -15747,7 +15747,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "declare const defaultCloseCodeIsError: (code: number) => boolean",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Socket.ts#L321"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Socket.ts#L327"
   },
   {
     "_tag": "Function",
@@ -15762,7 +15762,7 @@
     "since": "1.0.0",
     "category": "constructors",
     "signature": "declare const makeWebSocket: (url: string | Effect.Effect<string>, options?: { readonly closeCodeIsError?: ((code: number) => boolean) | undefined; readonly openTimeout?: DurationInput | undefined; readonly protocols?: string | Array<string> | undefined; }) => Effect.Effect<Socket, never, WebSocketConstructor>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Socket.ts#L370"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Socket.ts#L376"
   },
   {
     "_tag": "Function",
@@ -15777,7 +15777,7 @@
     "since": "1.0.0",
     "category": "constructors",
     "signature": "declare const fromWebSocket: <RO>(acquire: Effect.Effect<globalThis.WebSocket, SocketError, RO>, options?: { readonly closeCodeIsError?: (code: number) => boolean; readonly openTimeout?: DurationInput; }) => Effect.Effect<Socket, never, Exclude<RO, Scope.Scope>>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Socket.ts#L389"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Socket.ts#L395"
   },
   {
     "_tag": "Function",
@@ -15792,7 +15792,7 @@
     "since": "1.0.0",
     "category": "constructors",
     "signature": "declare const makeWebSocketChannel: <IE = never>(url: string, options?: { readonly closeCodeIsError?: (code: number) => boolean; }) => Channel.Channel<Chunk.Chunk<Uint8Array>, Chunk.Chunk<Uint8Array | string | CloseEvent>, SocketError | IE, IE, void, unknown, WebSocketConstructor>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Socket.ts#L518"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Socket.ts#L525"
   },
   {
     "_tag": "Function",
@@ -15807,7 +15807,7 @@
     "since": "1.0.0",
     "category": "layers",
     "signature": "declare const layerWebSocket: (url: string, options?: { readonly closeCodeIsError?: (code: number) => boolean; }) => Layer.Layer<Socket, never, WebSocketConstructor>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Socket.ts#L540"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Socket.ts#L547"
   },
   {
     "_tag": "Function",
@@ -15822,7 +15822,7 @@
     "since": "1.0.0",
     "category": "constructors",
     "signature": "declare const fromTransformStream: <R>(acquire: Effect.Effect<InputTransformStream, SocketError, R>, options?: { readonly closeCodeIsError?: (code: number) => boolean; }) => Effect.Effect<Socket, never, Exclude<R, Scope.Scope>>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Socket.ts#L570"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Socket.ts#L577"
   },
   {
     "_tag": "Interface",
@@ -15836,7 +15836,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "models",
-    "signature": "export interface Socket {\n  readonly [TypeId]: TypeId\n  readonly run: <_, E = never, R = never>(\n    handler: (_: Uint8Array) => Effect.Effect<_, E, R> | void\n  ) => Effect.Effect<void, SocketError | E, R>\n  readonly runRaw: <_, E = never, R = never>(\n    handler: (_: string | Uint8Array) => Effect.Effect<_, E, R> | void\n  ) => Effect.Effect<void, SocketError | E, R>\n  readonly writer: Effect.Effect<\n    (chunk: Uint8Array | string | CloseEvent) => Effect.Effect<void, SocketError>,\n    never,\n    Scope.Scope\n  >\n}",
+    "signature": "export interface Socket {\n  readonly [TypeId]: TypeId\n  readonly run: <_, E = never, R = never>(\n    handler: (_: Uint8Array) => Effect.Effect<_, E, R> | void,\n    options?: {\n      readonly onOpen?: Effect.Effect<void> | undefined\n    }\n  ) => Effect.Effect<void, SocketError | E, R>\n  readonly runRaw: <_, E = never, R = never>(\n    handler: (_: string | Uint8Array) => Effect.Effect<_, E, R> | void,\n    options?: {\n      readonly onOpen?: Effect.Effect<void> | undefined\n    }\n  ) => Effect.Effect<void, SocketError | E, R>\n  readonly writer: Effect.Effect<\n    (chunk: Uint8Array | string | CloseEvent) => Effect.Effect<void, SocketError>,\n    never,\n    Scope.Scope\n  >\n}",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Socket.ts#L53"
   },
   {
@@ -15852,7 +15852,7 @@
     "since": "1.0.0",
     "category": "tags",
     "signature": "export interface WebSocket {\n  readonly _: unique symbol\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Socket.ts#L327"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Socket.ts#L333"
   },
   {
     "_tag": "Interface",
@@ -15867,7 +15867,7 @@
     "since": "1.0.0",
     "category": "tags",
     "signature": "export interface WebSocketConstructor {\n  readonly _: unique symbol\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Socket.ts#L343"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Socket.ts#L349"
   },
   {
     "_tag": "Interface",
@@ -15882,7 +15882,7 @@
     "since": "1.0.0",
     "category": "models",
     "signature": "export interface InputTransformStream {\n  readonly readable: ReadableStream<Uint8Array> | ReadableStream<string> | ReadableStream<Uint8Array | string>\n  readonly writable: WritableStream<Uint8Array>\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Socket.ts#L561"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Socket.ts#L568"
   },
   {
     "_tag": "TypeAlias",
@@ -15912,7 +15912,7 @@
     "since": "1.0.0",
     "category": "type ids",
     "signature": "type CloseEventTypeId = typeof CloseEventTypeId",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Socket.ts#L78"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Socket.ts#L84"
   },
   {
     "_tag": "TypeAlias",
@@ -15927,7 +15927,7 @@
     "since": "1.0.0",
     "category": "type ids",
     "signature": "type SocketErrorTypeId = typeof SocketErrorTypeId",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Socket.ts#L116"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Socket.ts#L122"
   },
   {
     "_tag": "TypeAlias",
@@ -15942,7 +15942,7 @@
     "since": "1.0.0",
     "category": "errors",
     "signature": "type SocketError = SocketGenericError | SocketCloseError",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Socket.ts#L128"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Socket.ts#L134"
   },
   {
     "_tag": "Class",

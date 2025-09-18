@@ -11,7 +11,7 @@ for more information.
 **Signature**
 
 ```ts
-declare const makeChannel: <A, I, IE, Done>(schema: Schema.Schema<A, I>, options?: { readonly bufferSize?: number; }) => Channel.Channel<Chunk.Chunk<A>, Chunk.Chunk<Uint8Array<ArrayBufferLike>>, IE | ParseError, IE, void, Done, never>
+declare const makeChannel: <A, I, R, IE, Done>(schema: Schema.Schema<A, I, R>, options?: { readonly bufferSize?: number; }) => Channel.Channel<Chunk.Chunk<A>, Chunk.Chunk<Uint8Array<ArrayBufferLike>>, IE | ParseError, IE, void, Done, R>
 ```
 
 [Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/amazon-bedrock/src/EventStreamEncoding.ts#L22)

@@ -11,6 +11,6 @@ Re-exports all named exports from the "./Generated.js" module as `Generated`.
 export * as Generated from "./Generated.js"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/index.ts#L24)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/index.ts#L29)
 
 Since v1.0.0
