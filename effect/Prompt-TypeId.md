@@ -11,6 +11,6 @@ Type-level representation of the Prompt identifier.
 type TypeId = typeof TypeId
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L1138)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L1143)
 
 Since v1.0.0

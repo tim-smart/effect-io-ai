@@ -19,7 +19,7 @@ Provider-specific options are namespaced by provider and have the structure:
 **Signature**
 
 ```ts
-declare const ProviderOptions: Schema.Record$<typeof Schema.String, Schema.Record$<typeof Schema.String, typeof Schema.Unknown>>
+declare const ProviderOptions: Schema.Record$<typeof Schema.String, Schema.UndefinedOr<Schema.Record$<typeof Schema.String, typeof Schema.Unknown>>>
 ```
 
 [Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L82)

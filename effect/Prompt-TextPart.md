@@ -28,6 +28,6 @@ export interface TextPart extends BasePart<"text", TextPartOptions> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L246)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L251)
 
 Since v1.0.0

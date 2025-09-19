@@ -14,6 +14,6 @@ reasoning, tool calls, and tool results.
 type Part = TextPart | ReasoningPart | FilePart | ToolCallPart | ToolResultPart
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L130)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L135)
 
 Since v1.0.0

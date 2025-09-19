@@ -1274,21 +1274,6 @@
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiLanguageModel.ts#L44"
   },
   {
-    "_tag": "Class",
-    "module": {
-      "name": "OpenAiLanguageModel.ts",
-      "path": "src/OpenAiLanguageModel.ts"
-    },
-    "project": "@effect/ai-openai",
-    "name": "ProviderMetadata",
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "Context",
-    "signature": "declare class ProviderMetadata",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiLanguageModel.ts#L152"
-  },
-  {
     "_tag": "Constant",
     "module": {
       "name": "OpenAiLanguageModel.ts",
@@ -1301,7 +1286,7 @@
     "since": "1.0.0",
     "category": "Constructors",
     "signature": "declare const make: (options: { readonly model: (string & {}) | Model; readonly config?: Omit<Config.Service, \"model\">; }) => Effect.Effect<LanguageModel.Service, never, OpenAiClient>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiLanguageModel.ts#L255"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiLanguageModel.ts#L272"
   },
   {
     "_tag": "Constant",
@@ -1316,7 +1301,7 @@
     "since": "1.0.0",
     "category": "Configuration",
     "signature": "declare const withConfigOverride: { (overrides: Config.Service): <A, E, R>(self: Effect.Effect<A, E, R>) => Effect.Effect<A, E, R>; <A, E, R>(self: Effect.Effect<A, E, R>, overrides: Config.Service): Effect.Effect<A, E, R>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiLanguageModel.ts#L338"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiLanguageModel.ts#L355"
   },
   {
     "_tag": "Function",
@@ -1331,7 +1316,7 @@
     "since": "1.0.0",
     "category": "Ai Models",
     "signature": "declare const model: (model: (string & {}) | Model, config?: Omit<Config.Service, \"model\">) => AiModel.Model<\"openai\", LanguageModel.LanguageModel, OpenAiClient>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiLanguageModel.ts#L235"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiLanguageModel.ts#L252"
   },
   {
     "_tag": "Function",
@@ -1346,7 +1331,7 @@
     "since": "1.0.0",
     "category": "Ai Models",
     "signature": "declare const modelWithTokenizer: (model: (string & {}) | Model, config?: Omit<Config.Service, \"model\">) => AiModel.Model<\"openai\", LanguageModel.LanguageModel | Tokenizer.Tokenizer, OpenAiClient>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiLanguageModel.ts#L245"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiLanguageModel.ts#L262"
   },
   {
     "_tag": "Function",
@@ -1361,7 +1346,7 @@
     "since": "1.0.0",
     "category": "Layers",
     "signature": "declare const layer: (options: { readonly model: (string & {}) | Model; readonly config?: Omit<Config.Service, \"model\">; }) => Layer.Layer<LanguageModel.LanguageModel, never, OpenAiClient>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiLanguageModel.ts#L318"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiLanguageModel.ts#L335"
   },
   {
     "_tag": "Function",
@@ -1376,7 +1361,7 @@
     "since": "1.0.0",
     "category": "Layers",
     "signature": "declare const layerWithTokenizer: (options: { readonly model: (string & {}) | Model; readonly config?: Omit<Config.Service, \"model\">; }) => Layer.Layer<LanguageModel.LanguageModel | Tokenizer.Tokenizer, never, OpenAiClient>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiLanguageModel.ts#L328"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiLanguageModel.ts#L345"
   },
   {
     "_tag": "TypeAlias",
@@ -1420,8 +1405,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "Provider Metadata",
-    "signature": "export interface Service {\n    \"finish\": {\n      readonly serviceTier?: \"default\" | \"auto\" | \"flex\" | \"scale\" | \"priority\" | undefined\n    }\n\n    \"reasoning\": {\n      readonly itemId?: string | undefined\n      readonly encryptedContent?: string | undefined\n    }\n\n    \"reasoning-start\": {\n      readonly itemId?: string | undefined\n      readonly encryptedContent?: string | undefined\n    }\n\n    \"reasoning-delta\": {\n      readonly itemId?: string | undefined\n    }\n\n    \"reasoning-end\": {\n      readonly itemId?: string | undefined\n      readonly encryptedContent?: string | undefined\n    }\n\n    \"source\": {\n      readonly type: \"file_citation\"\n      /**\n       * The index of the file in the list of files.\n       */\n      readonly index: number\n    } | {\n      readonly type: \"url_citation\"\n      /**\n       * The index of the first character of the URL citation in the message.\n       */\n      readonly startIndex: number\n      /**\n       * The index of the last character of the URL citation in the message.\n       */\n      readonly endIndex: number\n    }\n\n    \"text\": {\n      readonly itemId?: string | undefined\n      /**\n       * If the model emits a refusal content part, the refusal explanation\n       * from the model will be contained in the metadata of an empty text\n       * part.\n       */\n      readonly refusal?: string | undefined\n    }\n\n    \"text-start\": {\n      readonly itemId?: string | undefined\n    }\n\n    \"tool-call\": {\n      readonly itemId?: string | undefined\n    }\n  }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiLanguageModel.ts#L165"
+    "signature": "export interface Service {\n    \"source\": {} | {}\n  }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiLanguageModel.ts#L239"
   },
   {
     "_tag": "Constant",

@@ -3172,7 +3172,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "Models",
-    "signature": "declare const ProviderOptions: Schema.Record$<typeof Schema.String, Schema.Record$<typeof Schema.String, typeof Schema.Unknown>>",
+    "signature": "declare const ProviderOptions: Schema.Record$<typeof Schema.String, Schema.UndefinedOr<Schema.Record$<typeof Schema.String, typeof Schema.Unknown>>>",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L82"
   },
   {
@@ -3189,7 +3189,7 @@
     "since": "1.0.0",
     "category": "Type Ids",
     "signature": "declare const PartTypeId: \"~effect/ai/Prompt/Part\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L103"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L108"
   },
   {
     "_tag": "Constant",
@@ -3205,7 +3205,7 @@
     "since": "1.0.0",
     "category": "Schemas",
     "signature": "declare const TextPart: Schema.Schema<TextPart, TextPartEncoded, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L281"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L286"
   },
   {
     "_tag": "Constant",
@@ -3221,7 +3221,7 @@
     "since": "1.0.0",
     "category": "Schemas",
     "signature": "declare const ReasoningPart: Schema.Schema<ReasoningPart, ReasoningPartEncoded, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L344"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L349"
   },
   {
     "_tag": "Constant",
@@ -3237,7 +3237,7 @@
     "since": "1.0.0",
     "category": "Schemas",
     "signature": "declare const FilePart: Schema.Schema<FilePart, FilePartEncoded, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L434"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L439"
   },
   {
     "_tag": "Constant",
@@ -3253,7 +3253,7 @@
     "since": "1.0.0",
     "category": "Schemas",
     "signature": "declare const ToolCallPart: Schema.Schema<ToolCallPart, ToolCallPartEncoded, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L526"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L531"
   },
   {
     "_tag": "Constant",
@@ -3269,7 +3269,7 @@
     "since": "1.0.0",
     "category": "Schemas",
     "signature": "declare const ToolResultPart: Schema.Schema<ToolResultPart, ToolResultPartEncoded, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L614"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L619"
   },
   {
     "_tag": "Constant",
@@ -3285,7 +3285,7 @@
     "since": "1.0.0",
     "category": "Type Ids",
     "signature": "declare const MessageTypeId: \"~effect/ai/Prompt/Message\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L635"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L640"
   },
   {
     "_tag": "Constant",
@@ -3301,7 +3301,7 @@
     "since": "1.0.0",
     "category": "Schemas",
     "signature": "declare const SystemMessage: Schema.Schema<SystemMessage, SystemMessageEncoded, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L779"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L784"
   },
   {
     "_tag": "Constant",
@@ -3317,7 +3317,7 @@
     "since": "1.0.0",
     "category": "Schemas",
     "signature": "declare const UserMessage: Schema.Schema<UserMessage, UserMessageEncoded, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L875"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L880"
   },
   {
     "_tag": "Constant",
@@ -3333,7 +3333,7 @@
     "since": "1.0.0",
     "category": "Schemas",
     "signature": "declare const AssistantMessage: Schema.Schema<AssistantMessage, AssistantMessageEncoded, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L979"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L984"
   },
   {
     "_tag": "Constant",
@@ -3349,7 +3349,7 @@
     "since": "1.0.0",
     "category": "Schemas",
     "signature": "declare const ToolMessage: Schema.Schema<ToolMessage, ToolMessageEncoded, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L1070"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L1075"
   },
   {
     "_tag": "Constant",
@@ -3365,7 +3365,7 @@
     "since": "1.0.0",
     "category": "Schemas",
     "signature": "declare const Message: Schema.Schema<Message, MessageEncoded, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L1113"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L1118"
   },
   {
     "_tag": "Constant",
@@ -3381,7 +3381,7 @@
     "since": "1.0.0",
     "category": "Type Ids",
     "signature": "declare const TypeId: \"~@effect/ai/Prompt\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L1130"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L1135"
   },
   {
     "_tag": "Constant",
@@ -3397,7 +3397,7 @@
     "since": "1.0.0",
     "category": "Schemas",
     "signature": "declare const Prompt: Schema.Schema<Prompt, PromptEncoded, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L1182"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L1187"
   },
   {
     "_tag": "Constant",
@@ -3413,7 +3413,7 @@
     "since": "1.0.0",
     "category": "Schemas",
     "signature": "declare const FromJson: Schema.transform<Schema.SchemaClass<unknown, string, never>, Schema.Schema<Prompt, PromptEncoded, never>>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L1195"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L1200"
   },
   {
     "_tag": "Constant",
@@ -3431,7 +3431,7 @@
     "since": "1.0.0",
     "category": "Constructors",
     "signature": "declare const empty: Prompt",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L1250"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L1255"
   },
   {
     "_tag": "Constant",
@@ -3449,7 +3449,7 @@
     "since": "1.0.0",
     "category": "Combinators",
     "signature": "declare const merge: { (other: Prompt): (self: Prompt) => Prompt; (self: Prompt, other: Prompt): Prompt; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L1502"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L1507"
   },
   {
     "_tag": "Function",
@@ -3465,7 +3465,7 @@
     "since": "1.0.0",
     "category": "Guards",
     "signature": "declare const isPart: (u: unknown) => u is Part",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L119"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L124"
   },
   {
     "_tag": "Function",
@@ -3483,7 +3483,7 @@
     "since": "1.0.0",
     "category": "Constructors",
     "signature": "declare const makePart: <const Type extends Part[\"type\"]>(type: Type, params: Omit<Extract<Part, { type: Type; }>, PartTypeId | \"type\" | \"options\"> & { readonly options?: Extract<Part, { type: Type; }>[\"options\"] | undefined; }) => Extract<Part, { type: Type; }>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L203"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L208"
   },
   {
     "_tag": "Function",
@@ -3499,7 +3499,7 @@
     "since": "1.0.0",
     "category": "Guards",
     "signature": "declare const isMessage: (u: unknown) => u is Message",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L651"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L656"
   },
   {
     "_tag": "Function",
@@ -3517,7 +3517,7 @@
     "since": "1.0.0",
     "category": "Constructors",
     "signature": "declare const makeMessage: <const Role extends Message[\"role\"]>(role: Role, params: Omit<Extract<Message, { role: Role; }>, MessageTypeId | \"role\" | \"options\"> & { readonly options?: Extract<Message, { role: Role; }>[\"options\"]; }) => Extract<Message, { role: Role; }>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L711"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L716"
   },
   {
     "_tag": "Function",
@@ -3533,7 +3533,7 @@
     "since": "1.0.0",
     "category": "Guards",
     "signature": "declare const isPrompt: (u: unknown) => u is Prompt",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L1146"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L1151"
   },
   {
     "_tag": "Function",
@@ -3551,7 +3551,7 @@
     "since": "1.0.0",
     "category": "Constructors",
     "signature": "declare const make: (input: RawInput) => Prompt",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L1279"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L1284"
   },
   {
     "_tag": "Function",
@@ -3569,7 +3569,7 @@
     "since": "1.0.0",
     "category": "Constructors",
     "signature": "declare const fromMessages: (messages: ReadonlyArray<Message>) => Prompt",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L1317"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L1322"
   },
   {
     "_tag": "Function",
@@ -3587,7 +3587,7 @@
     "since": "1.0.0",
     "category": "Constructors",
     "signature": "declare const fromResponseParts: (parts: ReadonlyArray<Response.AnyPart>) => Prompt",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L1388"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L1393"
   },
   {
     "_tag": "Interface",
@@ -3603,7 +3603,7 @@
     "since": "1.0.0",
     "category": "Models",
     "signature": "export interface BasePart<Type extends string, Options extends ProviderOptions> {\n  readonly [PartTypeId]: PartTypeId\n  /**\n   * The type of this content part.\n   */\n  readonly type: Type\n  /**\n   * Provider-specific options for this part.\n   */\n  readonly options: Options\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L153"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L158"
   },
   {
     "_tag": "Interface",
@@ -3619,7 +3619,7 @@
     "since": "1.0.0",
     "category": "Models",
     "signature": "export interface BasePartEncoded<Type extends string, Options extends ProviderOptions> {\n  /**\n   * The type of this content part.\n   */\n  readonly type: Type\n  /**\n   * Provider-specific options for this part.\n   */\n  readonly options?: Options | undefined\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L171"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L176"
   },
   {
     "_tag": "Interface",
@@ -3637,7 +3637,7 @@
     "since": "1.0.0",
     "category": "Models",
     "signature": "export interface TextPart extends BasePart<\"text\", TextPartOptions> {\n  /**\n   * The text content.\n   */\n  readonly text: string\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L246"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L251"
   },
   {
     "_tag": "Interface",
@@ -3653,7 +3653,7 @@
     "since": "1.0.0",
     "category": "Models",
     "signature": "export interface TextPartEncoded extends BasePartEncoded<\"text\", TextPartOptions> {\n  /**\n   * The text content.\n   */\n  readonly text: string\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L259"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L264"
   },
   {
     "_tag": "Interface",
@@ -3669,7 +3669,7 @@
     "since": "1.0.0",
     "category": "ProviderOptions",
     "signature": "export interface TextPartOptions extends ProviderOptions {}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L273"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L278"
   },
   {
     "_tag": "Interface",
@@ -3687,7 +3687,7 @@
     "since": "1.0.0",
     "category": "Models",
     "signature": "export interface ReasoningPart extends BasePart<\"reasoning\", ReasoningPartOptions> {\n  /**\n   * The reasoning or thought process text.\n   */\n  readonly text: string\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L309"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L314"
   },
   {
     "_tag": "Interface",
@@ -3703,7 +3703,7 @@
     "since": "1.0.0",
     "category": "Models",
     "signature": "export interface ReasoningPartEncoded extends BasePartEncoded<\"reasoning\", ReasoningPartOptions> {\n  /**\n   * The reasoning or thought process text.\n   */\n  readonly text: string\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L322"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L327"
   },
   {
     "_tag": "Interface",
@@ -3719,7 +3719,7 @@
     "since": "1.0.0",
     "category": "ProviderOptions",
     "signature": "export interface ReasoningPartOptions extends ProviderOptions {}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L336"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L341"
   },
   {
     "_tag": "Interface",
@@ -3737,7 +3737,7 @@
     "since": "1.0.0",
     "category": "Models",
     "signature": "export interface FilePart extends BasePart<\"file\", FilePartOptions> {\n  /**\n   * MIME type of the file (e.g., \"image/jpeg\", \"application/pdf\").\n   */\n  readonly mediaType: string\n  /**\n   * Optional filename for the file.\n   */\n  readonly fileName?: string | undefined\n  /**\n   * File data as base64 string of data, a byte array, or a URL.\n   */\n  readonly data: string | Uint8Array | URL\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L383"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L388"
   },
   {
     "_tag": "Interface",
@@ -3753,7 +3753,7 @@
     "since": "1.0.0",
     "category": "Models",
     "signature": "export interface FilePartEncoded extends BasePartEncoded<\"file\", FilePartOptions> {\n  /**\n   * MIME type of the file (e.g., \"image/jpeg\", \"application/pdf\").\n   */\n  readonly mediaType: string\n  /**\n   * Optional filename for the file.\n   */\n  readonly fileName?: string | undefined\n  /**\n   * File data as base64 string of data, a byte array, or a URL.\n   */\n  readonly data: string | Uint8Array | URL\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L404"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L409"
   },
   {
     "_tag": "Interface",
@@ -3769,7 +3769,7 @@
     "since": "1.0.0",
     "category": "ProviderOptions",
     "signature": "export interface FilePartOptions extends ProviderOptions {}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L426"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L431"
   },
   {
     "_tag": "Interface",
@@ -3787,7 +3787,7 @@
     "since": "1.0.0",
     "category": "Models",
     "signature": "export interface ToolCallPart extends BasePart<\"tool-call\", ToolCallPartOptions> {\n  /**\n   * Unique identifier for this tool call.\n   */\n  readonly id: string\n  /**\n   * Name of the tool to invoke.\n   */\n  readonly name: string\n  /**\n   * Parameters to pass to the tool.\n   */\n  readonly params: unknown\n  /**\n   * Whether the tool was executed by the provider (true) or framework (false).\n   */\n  readonly providerExecuted: boolean\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L467"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L472"
   },
   {
     "_tag": "Interface",
@@ -3803,7 +3803,7 @@
     "since": "1.0.0",
     "category": "Models",
     "signature": "export interface ToolCallPartEncoded extends BasePartEncoded<\"tool-call\", ToolCallPartOptions> {\n  /**\n   * Unique identifier for this tool call.\n   */\n  readonly id: string\n  /**\n   * Name of the tool to invoke.\n   */\n  readonly name: string\n  /**\n   * Parameters to pass to the tool.\n   */\n  readonly params: unknown\n  /**\n   * Whether the tool was executed by the provider (true) or framework (false).\n   */\n  readonly providerExecuted?: boolean | undefined\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L492"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L497"
   },
   {
     "_tag": "Interface",
@@ -3819,7 +3819,7 @@
     "since": "1.0.0",
     "category": "ProviderOptions",
     "signature": "export interface ToolCallPartOptions extends ProviderOptions {}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L518"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L523"
   },
   {
     "_tag": "Interface",
@@ -3837,7 +3837,7 @@
     "since": "1.0.0",
     "category": "Models",
     "signature": "export interface ToolResultPart extends BasePart<\"tool-result\", ToolResultPartOptions> {\n  /**\n   * Unique identifier matching the original tool call.\n   */\n  readonly id: string\n  /**\n   * Name of the tool that was executed.\n   */\n  readonly name: string\n  /**\n   * The result returned by the tool execution.\n   */\n  readonly result: unknown\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L563"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L568"
   },
   {
     "_tag": "Interface",
@@ -3853,7 +3853,7 @@
     "since": "1.0.0",
     "category": "Models",
     "signature": "export interface ToolResultPartEncoded extends BasePartEncoded<\"tool-result\", ToolResultPartOptions> {\n  /**\n   * Unique identifier matching the original tool call.\n   */\n  readonly id: string\n  /**\n   * Name of the tool that was executed.\n   */\n  readonly name: string\n  /**\n   * The result returned by the tool execution.\n   */\n  readonly result: unknown\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L584"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L589"
   },
   {
     "_tag": "Interface",
@@ -3869,7 +3869,7 @@
     "since": "1.0.0",
     "category": "ProviderOptions",
     "signature": "export interface ToolResultPartOptions extends ProviderOptions {}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L606"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L611"
   },
   {
     "_tag": "Interface",
@@ -3885,7 +3885,7 @@
     "since": "1.0.0",
     "category": "Models",
     "signature": "export interface BaseMessage<Role extends string, Options extends ProviderOptions> {\n  readonly [MessageTypeId]: MessageTypeId\n  /**\n   * The role of the message participant.\n   */\n  readonly role: Role\n  /**\n   * Provider-specific options for this message.\n   */\n  readonly options: Options\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L661"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L666"
   },
   {
     "_tag": "Interface",
@@ -3901,7 +3901,7 @@
     "since": "1.0.0",
     "category": "Models",
     "signature": "export interface BaseMessageEncoded<Role extends string, Options extends ProviderOptions> {\n  /**\n   * The role of the message participant.\n   */\n  readonly role: Role\n  /**\n   * Provider-specific options for this message.\n   */\n  readonly options?: Options | undefined\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L681"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L686"
   },
   {
     "_tag": "Interface",
@@ -3919,7 +3919,7 @@
     "since": "1.0.0",
     "category": "Models",
     "signature": "export interface SystemMessage extends BaseMessage<\"system\", SystemMessageOptions> {\n  /**\n   * The system instruction or context as plain text.\n   */\n  readonly content: string\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L744"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L749"
   },
   {
     "_tag": "Interface",
@@ -3935,7 +3935,7 @@
     "since": "1.0.0",
     "category": "Models",
     "signature": "export interface SystemMessageEncoded extends BaseMessageEncoded<\"system\", SystemMessageOptions> {\n  /**\n   * The system instruction or context as plain text.\n   */\n  readonly content: string\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L757"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L762"
   },
   {
     "_tag": "Interface",
@@ -3951,7 +3951,7 @@
     "since": "1.0.0",
     "category": "ProviderOptions",
     "signature": "export interface SystemMessageOptions extends ProviderOptions {}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L771"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L776"
   },
   {
     "_tag": "Interface",
@@ -3969,7 +3969,7 @@
     "since": "1.0.0",
     "category": "Models",
     "signature": "export interface UserMessage extends BaseMessage<\"user\", UserMessageOptions> {\n  /**\n   * Array of content parts that make up the user's message.\n   */\n  readonly content: ReadonlyArray<UserMessagePart>\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L824"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L829"
   },
   {
     "_tag": "Interface",
@@ -3985,7 +3985,7 @@
     "since": "1.0.0",
     "category": "Models",
     "signature": "export interface UserMessageEncoded extends BaseMessageEncoded<\"user\", UserMessageOptions> {\n  /**\n   * Array of content parts that make up the user's message.\n   */\n  readonly content: ReadonlyArray<UserMessagePartEncoded>\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L845"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L850"
   },
   {
     "_tag": "Interface",
@@ -4001,7 +4001,7 @@
     "since": "1.0.0",
     "category": "ProviderOptions",
     "signature": "export interface UserMessageOptions extends ProviderOptions {}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L867"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L872"
   },
   {
     "_tag": "Interface",
@@ -4019,7 +4019,7 @@
     "since": "1.0.0",
     "category": "Models",
     "signature": "export interface AssistantMessage extends BaseMessage<\"assistant\", AssistantMessageOptions> {\n  /**\n   * Array of content parts that make up the assistant's response.\n   */\n  readonly content: ReadonlyArray<AssistantMessagePart>\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L921"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L926"
   },
   {
     "_tag": "Interface",
@@ -4035,7 +4035,7 @@
     "since": "1.0.0",
     "category": "Models",
     "signature": "export interface AssistantMessageEncoded extends BaseMessageEncoded<\"assistant\", AssistantMessageOptions> {\n  readonly content: ReadonlyArray<AssistantMessagePartEncoded>\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L947"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L952"
   },
   {
     "_tag": "Interface",
@@ -4051,7 +4051,7 @@
     "since": "1.0.0",
     "category": "ProviderOptions",
     "signature": "export interface AssistantMessageOptions extends ProviderOptions {}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L971"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L976"
   },
   {
     "_tag": "Interface",
@@ -4069,7 +4069,7 @@
     "since": "1.0.0",
     "category": "Models",
     "signature": "export interface ToolMessage extends BaseMessage<\"tool\", ToolMessageOptions> {\n  /**\n   * Array of tool result parts.\n   */\n  readonly content: ReadonlyArray<ToolMessagePart>\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L1019"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L1024"
   },
   {
     "_tag": "Interface",
@@ -4085,7 +4085,7 @@
     "since": "1.0.0",
     "category": "Models",
     "signature": "export interface ToolMessageEncoded extends BaseMessageEncoded<\"tool\", ToolMessageOptions> {\n  /**\n   * Array of tool result parts.\n   */\n  readonly content: ReadonlyArray<ToolMessagePartEncoded>\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L1040"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L1045"
   },
   {
     "_tag": "Interface",
@@ -4101,7 +4101,7 @@
     "since": "1.0.0",
     "category": "ProviderOptions",
     "signature": "export interface ToolMessageOptions extends ProviderOptions {}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L1062"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L1067"
   },
   {
     "_tag": "Interface",
@@ -4117,7 +4117,7 @@
     "since": "1.0.0",
     "category": "Models",
     "signature": "export interface Prompt {\n  readonly [TypeId]: TypeId\n  /**\n   * Array of messages that make up the conversation.\n   */\n  readonly content: ReadonlyArray<Message>\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L1155"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L1160"
   },
   {
     "_tag": "Interface",
@@ -4133,7 +4133,7 @@
     "since": "1.0.0",
     "category": "Models",
     "signature": "export interface PromptEncoded {\n  /**\n   * Array of messages that make up the conversation.\n   */\n  readonly content: ReadonlyArray<MessageEncoded>\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L1169"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L1174"
   },
   {
     "_tag": "TypeAlias",
@@ -4148,7 +4148,7 @@
     "since": "1.0.0",
     "category": "Models",
     "signature": "type ProviderOptions = typeof ProviderOptions.Type",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L91"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L96"
   },
   {
     "_tag": "TypeAlias",
@@ -4164,7 +4164,7 @@
     "since": "1.0.0",
     "category": "Type Ids",
     "signature": "type PartTypeId = typeof PartTypeId",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L111"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L116"
   },
   {
     "_tag": "TypeAlias",
@@ -4180,7 +4180,7 @@
     "since": "1.0.0",
     "category": "Models",
     "signature": "type Part = TextPart | ReasoningPart | FilePart | ToolCallPart | ToolResultPart",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L130"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L135"
   },
   {
     "_tag": "TypeAlias",
@@ -4196,7 +4196,7 @@
     "since": "1.0.0",
     "category": "Models",
     "signature": "type PartEncoded = | TextPartEncoded\n  | ReasoningPartEncoded\n  | FilePartEncoded\n  | ToolCallPartEncoded\n  | ToolResultPartEncoded",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L138"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L143"
   },
   {
     "_tag": "TypeAlias",
@@ -4212,7 +4212,7 @@
     "since": "1.0.0",
     "category": "Type Ids",
     "signature": "type MessageTypeId = typeof MessageTypeId",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L643"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L648"
   },
   {
     "_tag": "TypeAlias",
@@ -4228,7 +4228,7 @@
     "since": "1.0.0",
     "category": "Models",
     "signature": "type UserMessagePart = TextPart | FilePart",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L837"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L842"
   },
   {
     "_tag": "TypeAlias",
@@ -4244,7 +4244,7 @@
     "since": "1.0.0",
     "category": "Models",
     "signature": "type UserMessagePartEncoded = TextPartEncoded | FilePartEncoded",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L858"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L863"
   },
   {
     "_tag": "TypeAlias",
@@ -4260,7 +4260,7 @@
     "since": "1.0.0",
     "category": "Models",
     "signature": "type AssistantMessagePart = | TextPart\n  | FilePart\n  | ReasoningPart\n  | ToolCallPart\n  | ToolResultPart",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L934"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L939"
   },
   {
     "_tag": "TypeAlias",
@@ -4276,7 +4276,7 @@
     "since": "1.0.0",
     "category": "Models",
     "signature": "type AssistantMessagePartEncoded = | TextPartEncoded\n  | FilePartEncoded\n  | ReasoningPartEncoded\n  | ToolCallPartEncoded\n  | ToolResultPartEncoded",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L957"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L962"
   },
   {
     "_tag": "TypeAlias",
@@ -4292,7 +4292,7 @@
     "since": "1.0.0",
     "category": "Models",
     "signature": "type ToolMessagePart = ToolResultPart",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L1032"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L1037"
   },
   {
     "_tag": "TypeAlias",
@@ -4308,7 +4308,7 @@
     "since": "1.0.0",
     "category": "Models",
     "signature": "type ToolMessagePartEncoded = ToolResultPartEncoded",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L1053"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L1058"
   },
   {
     "_tag": "TypeAlias",
@@ -4324,7 +4324,7 @@
     "since": "1.0.0",
     "category": "Models",
     "signature": "type Message = | SystemMessage\n  | UserMessage\n  | AssistantMessage\n  | ToolMessage",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L1089"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L1094"
   },
   {
     "_tag": "TypeAlias",
@@ -4340,7 +4340,7 @@
     "since": "1.0.0",
     "category": "Models",
     "signature": "type MessageEncoded = | SystemMessageEncoded\n  | UserMessageEncoded\n  | AssistantMessageEncoded\n  | ToolMessageEncoded",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L1101"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L1106"
   },
   {
     "_tag": "TypeAlias",
@@ -4356,7 +4356,7 @@
     "since": "1.0.0",
     "category": "Type Ids",
     "signature": "type TypeId = typeof TypeId",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L1138"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L1143"
   },
   {
     "_tag": "TypeAlias",
@@ -4374,7 +4374,7 @@
     "since": "1.0.0",
     "category": "Models",
     "signature": "type RawInput = | string\n  | Iterable<MessageEncoded>\n  | Prompt",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L1224"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L1229"
   },
   {
     "_tag": "Class",
@@ -6611,6 +6611,22 @@
     "category": "Utilities",
     "signature": "declare const getJsonSchemaFromSchemaAst: (ast: AST.AST) => JsonSchema.JsonSchema7",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Tool.ts#L1157"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Tool.ts",
+      "path": "src/Tool.ts"
+    },
+    "project": "@effect/ai",
+    "name": "unsafeSecureJsonParse",
+    "description": "**Unsafe**: This function will throw an error if an insecure property is\nfound in the parsed JSON or if the provided JSON text is not parseable.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Utilities",
+    "signature": "declare const unsafeSecureJsonParse: (text: string) => unknown",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Tool.ts#L1352"
   },
   {
     "_tag": "Interface",

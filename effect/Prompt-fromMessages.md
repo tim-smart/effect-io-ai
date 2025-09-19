@@ -28,6 +28,6 @@ const prompt = Prompt.fromMessages(messages)
 declare const fromMessages: (messages: ReadonlyArray<Message>) => Prompt
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L1317)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L1322)
 
 Since v1.0.0

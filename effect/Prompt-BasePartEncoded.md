@@ -20,6 +20,6 @@ export interface BasePartEncoded<Type extends string, Options extends ProviderOp
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L171)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L176)
 
 Since v1.0.0

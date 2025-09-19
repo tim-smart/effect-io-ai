@@ -24,6 +24,6 @@ export interface ToolResultPartEncoded extends BasePartEncoded<"tool-result", To
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L584)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L589)
 
 Since v1.0.0

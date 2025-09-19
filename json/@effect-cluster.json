@@ -12,7 +12,7 @@
     "since": "1.0.0",
     "category": "Constructors",
     "signature": "declare const make: <E, R>(options: { readonly name: string; readonly cron: Cron.Cron; readonly execute: Effect.Effect<void, E, R>; readonly shardGroup?: string | undefined; readonly calculateNextRunFromPrevious?: boolean | undefined; readonly skipIfOlderThan?: Duration.DurationInput | undefined; }) => Layer.Layer<never, never, Sharding | Exclude<R, Scope>>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ClusterCron.ts#L26"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ClusterCron.ts#L27"
   },
   {
     "_tag": "Class",
@@ -365,7 +365,7 @@
     "since": "1.0.0",
     "category": "Layers",
     "signature": "declare const layer: Layer.Layer<WorkflowEngine, never, MessageStorage | Sharding.Sharding>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ClusterWorkflowEngine.ts#L615"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ClusterWorkflowEngine.ts#L653"
   },
   {
     "_tag": "Constant",
@@ -4366,7 +4366,7 @@
     "since": "1.0.0",
     "category": "Layers",
     "signature": "declare const layer: Layer.Layer<MessageStorage.MessageStorage, never, SqlClient.SqlClient | ShardingConfig>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/SqlMessageStorage.ts#L579"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/SqlMessageStorage.ts#L578"
   },
   {
     "_tag": "Function",
@@ -4381,7 +4381,7 @@
     "since": "1.0.0",
     "category": "Layers",
     "signature": "declare const layerWith: (options: { readonly prefix?: string | undefined; readonly replyPollInterval?: DurationInput | undefined; }) => Layer.Layer<MessageStorage.MessageStorage, never, SqlClient.SqlClient | ShardingConfig>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/SqlMessageStorage.ts#L591"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/SqlMessageStorage.ts#L590"
   },
   {
     "_tag": "Constant",

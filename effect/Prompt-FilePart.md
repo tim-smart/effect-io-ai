@@ -45,6 +45,6 @@ export interface FilePart extends BasePart<"file", FilePartOptions> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L383)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L388)
 
 Since v1.0.0

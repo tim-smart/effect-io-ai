@@ -16,6 +16,6 @@ export interface UserMessageEncoded extends BaseMessageEncoded<"user", UserMessa
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L845)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L850)
 
 Since v1.0.0

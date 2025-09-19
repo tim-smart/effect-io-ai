@@ -27,6 +27,6 @@ const filePart = Prompt.makePart("file", {
 declare const makePart: <const Type extends Part["type"]>(type: Type, params: Omit<Extract<Part, { type: Type; }>, PartTypeId | "type" | "options"> & { readonly options?: Extract<Part, { type: Type; }>["options"] | undefined; }) => Extract<Part, { type: Type; }>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L203)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L208)
 
 Since v1.0.0

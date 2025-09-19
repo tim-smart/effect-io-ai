@@ -12,6 +12,6 @@ Represents provider-specific options that can be associated with a
 export interface ToolMessageOptions extends ProviderOptions {}
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L1062)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L1067)
 
 Since v1.0.0

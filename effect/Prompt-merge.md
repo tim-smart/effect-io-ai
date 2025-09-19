@@ -29,6 +29,6 @@ const merged = Prompt.merge(systemPrompt, userPrompt)
 declare const merge: { (other: Prompt): (self: Prompt) => Prompt; (self: Prompt, other: Prompt): Prompt; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L1502)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L1507)
 
 Since v1.0.0

@@ -20,6 +20,6 @@ export interface BaseMessageEncoded<Role extends string, Options extends Provide
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L681)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L686)
 
 Since v1.0.0

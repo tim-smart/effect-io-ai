@@ -43,6 +43,6 @@ const prompt = Prompt.fromResponseParts(responseParts)
 declare const fromResponseParts: (parts: ReadonlyArray<Response.AnyPart>) => Prompt
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L1388)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L1393)
 
 Since v1.0.0
