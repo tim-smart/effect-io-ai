@@ -2429,7 +2429,7 @@
     "since": "1.0.0",
     "category": "Memory",
     "signature": "declare class MemoryDriver",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/MessageStorage.ts#L601"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/MessageStorage.ts#L614"
   },
   {
     "_tag": "Constant",
@@ -2444,7 +2444,7 @@
     "since": "1.0.0",
     "category": "SaveResult",
     "signature": "declare const SaveResult: { readonly Success: <A>(args: void) => SaveResult.Success; readonly Duplicate: <A>(args: { readonly originalId: Snowflake.Snowflake; readonly lastReceivedReply: Option.Option<Reply.Reply<A extends Rpc.Any ? A : never>>; }) => SaveResult.Duplicate<A extends Rpc.Any ? A : never>; readonly $is: <Tag extends \"Success\" | \"Duplicate\">(tag: Tag) => { <T extends SaveResult<any>>(u: T): u is T & { readonly _tag: Tag; }; (u: unknown): u is Extract<SaveResult.Success, { readonly _tag: Tag; }> | Extract<SaveResult.Duplicate<never>, { readonly _tag: Tag; }>; }; readonly $match: { <A, B, C, D, Cases extends { readonly Success: (args: SaveResult.Success) => any; readonly Duplicate: (args: SaveResult.Duplicate<A extends Rpc.Any ? A : never>) => any; }>(cases: Cases & { [K in Exclude<keyof Cases, \"Success\" | \"Duplicate\">]: never; }): (self: SaveResult<A extends Rpc.Any ? A : never>) => Unify<ReturnType<Cases[\"Success\" | \"Duplicate\"]>>; <A, B, C, D, Cases extends { readonly Success: (args: SaveResult.Success) => any; readonly Duplicate: (args: SaveResult.Duplicate<A extends Rpc.Any ? A : never>) => any; }>(self: SaveResult<A extends Rpc.Any ? A : never>, cases: Cases & { [K in Exclude<keyof Cases, \"Success\" | \"Duplicate\">]: never; }): Unify<ReturnType<Cases[\"Success\" | \"Duplicate\"]>>; }; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/MessageStorage.ts#L147"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/MessageStorage.ts#L153"
   },
   {
     "_tag": "Constant",
@@ -2459,7 +2459,7 @@
     "since": "1.0.0",
     "category": "SaveResult",
     "signature": "declare const SaveResultEncoded: { readonly Success: Data.Case.Constructor<SaveResult.Success, \"_tag\">; readonly Duplicate: Data.Case.Constructor<SaveResult.DuplicateEncoded, \"_tag\">; readonly $is: <Tag extends \"Success\" | \"Duplicate\">(tag: Tag) => (u: unknown) => u is Extract<SaveResult.Success, { readonly _tag: Tag; }> | Extract<SaveResult.DuplicateEncoded, { readonly _tag: Tag; }>; readonly $match: { <const Cases extends { readonly Success: (args: SaveResult.Success) => any; readonly Duplicate: (args: SaveResult.DuplicateEncoded) => any; }>(cases: Cases & { [K in Exclude<keyof Cases, \"Success\" | \"Duplicate\">]: never; }): (value: SaveResult.Encoded) => Unify<ReturnType<Cases[\"Success\" | \"Duplicate\"]>>; <const Cases extends { readonly Success: (args: SaveResult.Success) => any; readonly Duplicate: (args: SaveResult.DuplicateEncoded) => any; }>(value: SaveResult.Encoded, cases: Cases & { [K in Exclude<keyof Cases, \"Success\" | \"Duplicate\">]: never; }): Unify<ReturnType<Cases[\"Success\" | \"Duplicate\"]>>; }; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/MessageStorage.ts#L153"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/MessageStorage.ts#L159"
   },
   {
     "_tag": "Constant",
@@ -2474,7 +2474,7 @@
     "since": "1.0.0",
     "category": "constructors",
     "signature": "declare const makeEncoded: (encoded: Encoded) => Effect.Effect<MessageStorage[\"Type\"], never, Snowflake.Generator>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/MessageStorage.ts#L373"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/MessageStorage.ts#L386"
   },
   {
     "_tag": "Constant",
@@ -2488,8 +2488,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "Constructors",
-    "signature": "declare const noop: { readonly saveRequest: <R extends Rpc.Any>(envelope: Message.OutgoingRequest<R>) => Effect.Effect<SaveResult<R>, PersistenceError | MalformedMessage>; readonly saveEnvelope: (envelope: Message.OutgoingEnvelope) => Effect.Effect<void, PersistenceError | MalformedMessage>; readonly saveReply: <R extends Rpc.Any>(reply: Reply.ReplyWithContext<R>) => Effect.Effect<void, PersistenceError | MalformedMessage>; readonly clearReplies: (requestId: Snowflake.Snowflake) => Effect.Effect<void, PersistenceError>; readonly repliesFor: <R extends Rpc.Any>(requests: Iterable<Message.OutgoingRequest<R>>) => Effect.Effect<Array<Reply.Reply<R>>, PersistenceError | MalformedMessage>; readonly repliesForUnfiltered: <R extends Rpc.Any>(requestIds: Iterable<Snowflake.Snowflake>) => Effect.Effect<Array<Reply.ReplyEncoded<R>>, PersistenceError | MalformedMessage>; readonly requestIdForPrimaryKey: (options: { readonly address: EntityAddress; readonly tag: string; readonly id: string; }) => Effect.Effect<Option.Option<Snowflake.Snowflake>, PersistenceError>; readonly registerReplyHandler: <R extends Rpc.Any>(message: Message.OutgoingRequest<R> | Message.IncomingRequest<R>) => Effect.Effect<void>; readonly unprocessedMessages: (shardIds: Iterable<ShardId>) => Effect.Effect<Array<Message.Incoming<any>>, PersistenceError>; readonly unprocessedMessagesById: <R extends Rpc.Any>(messageIds: Iterable<Snowflake.Snowflake>) => Effect.Effect<Array<Message.Incoming<R>>, PersistenceError>; readonly resetShards: (shardIds: Iterable<ShardId>) => Effect.Effect<void, PersistenceError>; readonly resetAddress: (address: EntityAddress) => Effect.Effect<void, PersistenceError>; readonly clearAddress: (address: EntityAddress) => Effect.Effect<void, PersistenceError>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/MessageStorage.ts#L567"
+    "signature": "declare const noop: { readonly saveRequest: <R extends Rpc.Any>(envelope: Message.OutgoingRequest<R>) => Effect.Effect<SaveResult<R>, PersistenceError | MalformedMessage>; readonly saveEnvelope: (envelope: Message.OutgoingEnvelope) => Effect.Effect<void, PersistenceError | MalformedMessage>; readonly saveReply: <R extends Rpc.Any>(reply: Reply.ReplyWithContext<R>) => Effect.Effect<void, PersistenceError | MalformedMessage>; readonly clearReplies: (requestId: Snowflake.Snowflake) => Effect.Effect<void, PersistenceError>; readonly repliesFor: <R extends Rpc.Any>(requests: Iterable<Message.OutgoingRequest<R>>) => Effect.Effect<Array<Reply.Reply<R>>, PersistenceError | MalformedMessage>; readonly repliesForUnfiltered: <R extends Rpc.Any>(requestIds: Iterable<Snowflake.Snowflake>) => Effect.Effect<Array<Reply.ReplyEncoded<R>>, PersistenceError | MalformedMessage>; readonly requestIdForPrimaryKey: (options: { readonly address: EntityAddress; readonly tag: string; readonly id: string; }) => Effect.Effect<Option.Option<Snowflake.Snowflake>, PersistenceError>; readonly registerReplyHandler: <R extends Rpc.Any>(message: Message.OutgoingRequest<R> | Message.IncomingRequest<R>, onUnregister: Effect.Effect<void>) => Effect.Effect<void>; readonly unregisterReplyHandler: (requestId: Snowflake.Snowflake) => Effect.Effect<void>; readonly unprocessedMessages: (shardIds: Iterable<ShardId>) => Effect.Effect<Array<Message.Incoming<any>>, PersistenceError>; readonly unprocessedMessagesById: <R extends Rpc.Any>(messageIds: Iterable<Snowflake.Snowflake>) => Effect.Effect<Array<Message.Incoming<R>>, PersistenceError>; readonly resetShards: (shardIds: Iterable<ShardId>) => Effect.Effect<void, PersistenceError>; readonly resetAddress: (address: EntityAddress) => Effect.Effect<void, PersistenceError>; readonly clearAddress: (address: EntityAddress) => Effect.Effect<void, PersistenceError>; }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/MessageStorage.ts#L580"
   },
   {
     "_tag": "Constant",
@@ -2504,7 +2504,7 @@
     "since": "1.0.0",
     "category": "layers",
     "signature": "declare const layerNoop: Layer.Layer<MessageStorage, never, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/MessageStorage.ts#L806"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/MessageStorage.ts#L819"
   },
   {
     "_tag": "Constant",
@@ -2519,7 +2519,7 @@
     "since": "1.0.0",
     "category": "layers",
     "signature": "declare const layerMemory: Layer.Layer<MessageStorage | MemoryDriver, never, ShardingConfig>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/MessageStorage.ts#L812"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/MessageStorage.ts#L825"
   },
   {
     "_tag": "Function",
@@ -2533,8 +2533,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "constructors",
-    "signature": "declare const make: (storage: Omit<MessageStorage[\"Type\"], \"registerReplyHandler\">) => Effect.Effect<MessageStorage[\"Type\"]>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/MessageStorage.ts#L338"
+    "signature": "declare const make: (storage: Omit<MessageStorage[\"Type\"], \"registerReplyHandler\" | \"unregisterReplyHandler\">) => Effect.Effect<MessageStorage[\"Type\"]>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/MessageStorage.ts#L344"
   },
   {
     "_tag": "TypeAlias",
@@ -2549,7 +2549,7 @@
     "since": "1.0.0",
     "category": "SaveResult",
     "signature": "type SaveResult<R> = SaveResult.Success | SaveResult.Duplicate<R>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/MessageStorage.ts#L141"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/MessageStorage.ts#L147"
   },
   {
     "_tag": "TypeAlias",
@@ -2564,7 +2564,7 @@
     "since": "1.0.0",
     "category": "Encoded",
     "signature": "type Encoded = {\n  /**\n   * Save the provided message and its associated metadata.\n   */\n  readonly saveEnvelope: (\n    options: {\n      readonly envelope: Envelope.Envelope.Encoded\n      readonly primaryKey: string | null\n      readonly deliverAt: number | null\n    }\n  ) => Effect.Effect<SaveResult.Encoded, PersistenceError>\n\n  /**\n   * Save the provided `Reply` and its associated metadata.\n   */\n  readonly saveReply: (\n    reply: Reply.ReplyEncoded<any>\n  ) => Effect.Effect<void, PersistenceError>\n\n  /**\n   * Remove the replies for the specified request.\n   */\n  readonly clearReplies: (requestId: Snowflake.Snowflake) => Effect.Effect<void, PersistenceError>\n\n  /**\n   * Retrieves the request id for the specified primary key.\n   */\n  readonly requestIdForPrimaryKey: (\n    primaryKey: string\n  ) => Effect.Effect<Option.Option<Snowflake.Snowflake>, PersistenceError>\n\n  /**\n   * Retrieves the replies for the specified requests.\n   *\n   * - Un-acknowledged chunk replies\n   * - WithExit replies\n   */\n  readonly repliesFor: (requestIds: Array<string>) => Effect.Effect<\n    Array<Reply.ReplyEncoded<any>>,\n    PersistenceError\n  >\n\n  /**\n   * Retrieves the replies for the specified request ids.\n   */\n  readonly repliesForUnfiltered: (requestIds: Array<string>) => Effect.Effect<\n    Array<Reply.ReplyEncoded<any>>,\n    PersistenceError\n  >\n\n  /**\n   * Retrieves the unprocessed messages for the given shards.\n   *\n   * A message is unprocessed when:\n   *\n   * - Requests that have no WithExit replies\n   *   - Or they have no unacknowledged chunk replies\n   * - The latest AckChunk envelope\n   * - All Interrupt's for unprocessed requests\n   */\n  readonly unprocessedMessages: (\n    shardIds: ReadonlyArray<string>,\n    now: number\n  ) => Effect.Effect<\n    Array<{\n      readonly envelope: Envelope.Envelope.Encoded\n      readonly lastSentReply: Option.Option<Reply.ReplyEncoded<any>>\n    }>,\n    PersistenceError\n  >\n\n  /**\n   * Retrieves the unprocessed messages by id.\n   */\n  readonly unprocessedMessagesById: (\n    messageIds: ReadonlyArray<Snowflake.Snowflake>,\n    now: number\n  ) => Effect.Effect<\n    Array<{\n      readonly envelope: Envelope.Envelope.Encoded\n      readonly lastSentReply: Option.Option<Reply.ReplyEncoded<any>>\n    }>,\n    PersistenceError\n  >\n\n  /**\n   * Reset the mailbox state for the provided address.\n   */\n  readonly resetAddress: (\n    address: EntityAddress\n  ) => Effect.Effect<void, PersistenceError>\n\n  /**\n   * Clear all messages and replies for the provided address.\n   */\n  readonly clearAddress: (\n    address: EntityAddress\n  ) => Effect.Effect<void, PersistenceError>\n\n  /**\n   * Reset the mailbox state for the provided shards.\n   */\n  readonly resetShards: (\n    shardIds: ReadonlyArray<string>\n  ) => Effect.Effect<void, PersistenceError>\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/MessageStorage.ts#L207"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/MessageStorage.ts#L213"
   },
   {
     "_tag": "TypeAlias",
@@ -2579,7 +2579,7 @@
     "since": "1.0.0",
     "category": "Encoded",
     "signature": "type EncodedUnprocessedOptions<A> = {\n  readonly existingShards: Array<number>\n  readonly newShards: Array<number>\n  readonly cursor: Option.Option<A>\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/MessageStorage.ts#L318"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/MessageStorage.ts#L324"
   },
   {
     "_tag": "TypeAlias",
@@ -2594,7 +2594,7 @@
     "since": "1.0.0",
     "category": "Encoded",
     "signature": "type EncodedRepliesOptions<A> = {\n  readonly existingRequests: Array<string>\n  readonly newRequests: Array<string>\n  readonly cursor: Option.Option<A>\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/MessageStorage.ts#L328"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/MessageStorage.ts#L334"
   },
   {
     "_tag": "TypeAlias",
@@ -2609,7 +2609,7 @@
     "since": "1.0.0",
     "category": "Memory",
     "signature": "type MemoryEntry = {\n  readonly envelope: Envelope.Request.Encoded\n  lastReceivedChunk: Option.Option<Reply.ChunkEncoded<any>>\n  replies: Array<Reply.ReplyEncoded<any>>\n  deliverAt: number | null\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/MessageStorage.ts#L590"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/MessageStorage.ts#L603"
   },
   {
     "_tag": "Interface",
@@ -2624,7 +2624,7 @@
     "since": "1.0.0",
     "category": "SaveResult",
     "signature": "export interface Success {\n    readonly _tag: \"Success\"\n  }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/MessageStorage.ts#L170"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/MessageStorage.ts#L176"
   },
   {
     "_tag": "Interface",
@@ -2639,7 +2639,7 @@
     "since": "1.0.0",
     "category": "SaveResult",
     "signature": "export interface Duplicate<R extends Rpc.Any> {\n    readonly _tag: \"Duplicate\"\n    readonly originalId: Snowflake.Snowflake\n    readonly lastReceivedReply: Option.Option<Reply.Reply<R>>\n  }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/MessageStorage.ts#L178"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/MessageStorage.ts#L184"
   },
   {
     "_tag": "Interface",
@@ -2654,7 +2654,7 @@
     "since": "1.0.0",
     "category": "SaveResult",
     "signature": "export interface DuplicateEncoded {\n    readonly _tag: \"Duplicate\"\n    readonly originalId: Snowflake.Snowflake\n    readonly lastReceivedReply: Option.Option<Reply.ReplyEncoded<any>>\n  }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/MessageStorage.ts#L188"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/MessageStorage.ts#L194"
   },
   {
     "_tag": "Interface",
@@ -2669,7 +2669,7 @@
     "since": "1.0.0",
     "category": "SaveResult",
     "signature": "export interface Constructor extends Data.TaggedEnum.WithGenerics<1> {\n    readonly taggedEnum: SaveResult<this[\"A\"] extends Rpc.Any ? this[\"A\"] : never>\n  }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/MessageStorage.ts#L198"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/MessageStorage.ts#L204"
   },
   {
     "_tag": "TypeAlias",
@@ -2684,7 +2684,7 @@
     "since": "1.0.0",
     "category": "SaveResult",
     "signature": "type Encoded = SaveResult.Success | SaveResult.DuplicateEncoded",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/MessageStorage.ts#L164"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/MessageStorage.ts#L170"
   },
   {
     "_tag": "Class",
@@ -3140,7 +3140,7 @@
     "since": "1.0.0",
     "category": "Rpcs",
     "signature": "declare class Rpcs",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Runners.ts#L427"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Runners.ts#L436"
   },
   {
     "_tag": "Class",
@@ -3155,7 +3155,7 @@
     "since": "1.0.0",
     "category": "Client",
     "signature": "declare class RpcClientProtocol",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Runners.ts#L623"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Runners.ts#L632"
   },
   {
     "_tag": "Constant",
@@ -3185,7 +3185,7 @@
     "since": "1.0.0",
     "category": "No-op",
     "signature": "declare const makeNoop: Effect.Effect<{ readonly ping: (address: RunnerAddress) => Effect.Effect<void, RunnerUnavailable>; readonly sendLocal: <R extends Rpc.Any>(options: { readonly message: Message.Outgoing<R>; readonly send: <Rpc extends Rpc.Any>(message: Message.IncomingLocal<Rpc>) => Effect.Effect<void, EntityNotManagedByRunner | EntityNotAssignedToRunner | MailboxFull | AlreadyProcessingMessage>; readonly simulateRemoteSerialization: boolean; }) => Effect.Effect<void, EntityNotManagedByRunner | EntityNotAssignedToRunner | MailboxFull | AlreadyProcessingMessage | PersistenceError>; readonly send: <R extends Rpc.Any>(options: { readonly address: RunnerAddress; readonly message: Message.Outgoing<R>; }) => Effect.Effect<void, EntityNotManagedByRunner | EntityNotAssignedToRunner | RunnerUnavailable | MailboxFull | AlreadyProcessingMessage | PersistenceError>; readonly notify: <R extends Rpc.Any>(options: { readonly address: Option.Option<RunnerAddress>; readonly message: Message.Outgoing<R>; readonly discard: boolean; }) => Effect.Effect<void, EntityNotManagedByRunner | PersistenceError>; readonly notifyLocal: <R extends Rpc.Any>(options: { readonly message: Message.Outgoing<R>; readonly notify: (options: Message.IncomingLocal<any>) => Effect.Effect<void, EntityNotManagedByRunner | EntityNotAssignedToRunner>; readonly discard: boolean; }) => Effect.Effect<void, EntityNotManagedByRunner | PersistenceError>; }, never, Scope | MessageStorage.MessageStorage | ShardingConfig | Snowflake.Generator>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Runners.ts#L391"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Runners.ts#L400"
   },
   {
     "_tag": "Constant",
@@ -3200,7 +3200,7 @@
     "since": "1.0.0",
     "category": "Layers",
     "signature": "declare const layerNoop: Layer.Layer<Runners, never, MessageStorage.MessageStorage | ShardingConfig>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Runners.ts#L405"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Runners.ts#L414"
   },
   {
     "_tag": "Constant",
@@ -3215,7 +3215,7 @@
     "since": "1.0.0",
     "category": "Rpcs",
     "signature": "declare const makeRpcClient: Effect.Effect<RpcClient, never, Scope | RpcClient_.Protocol>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Runners.ts#L472"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Runners.ts#L481"
   },
   {
     "_tag": "Constant",
@@ -3230,7 +3230,7 @@
     "since": "1.0.0",
     "category": "constructors",
     "signature": "declare const makeRpc: Effect.Effect<{ readonly ping: (address: RunnerAddress) => Effect.Effect<void, RunnerUnavailable>; readonly sendLocal: <R extends Rpc.Any>(options: { readonly message: Message.Outgoing<R>; readonly send: <Rpc extends Rpc.Any>(message: Message.IncomingLocal<Rpc>) => Effect.Effect<void, EntityNotManagedByRunner | EntityNotAssignedToRunner | MailboxFull | AlreadyProcessingMessage>; readonly simulateRemoteSerialization: boolean; }) => Effect.Effect<void, EntityNotManagedByRunner | EntityNotAssignedToRunner | MailboxFull | AlreadyProcessingMessage | PersistenceError>; readonly send: <R extends Rpc.Any>(options: { readonly address: RunnerAddress; readonly message: Message.Outgoing<R>; }) => Effect.Effect<void, EntityNotManagedByRunner | EntityNotAssignedToRunner | RunnerUnavailable | MailboxFull | AlreadyProcessingMessage | PersistenceError>; readonly notify: <R extends Rpc.Any>(options: { readonly address: Option.Option<RunnerAddress>; readonly message: Message.Outgoing<R>; readonly discard: boolean; }) => Effect.Effect<void, EntityNotManagedByRunner | PersistenceError>; readonly notifyLocal: <R extends Rpc.Any>(options: { readonly message: Message.Outgoing<R>; readonly notify: (options: Message.IncomingLocal<any>) => Effect.Effect<void, EntityNotManagedByRunner | EntityNotAssignedToRunner>; readonly discard: boolean; }) => Effect.Effect<void, EntityNotManagedByRunner | PersistenceError>; }, never, Scope | MessageStorage.MessageStorage | ShardingConfig | Snowflake.Generator | RpcClientProtocol>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Runners.ts#L482"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Runners.ts#L491"
   },
   {
     "_tag": "Constant",
@@ -3245,7 +3245,7 @@
     "since": "1.0.0",
     "category": "Layers",
     "signature": "declare const layerRpc: Layer.Layer<Runners, never, MessageStorage.MessageStorage | ShardingConfig | RpcClientProtocol>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Runners.ts#L611"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Runners.ts#L620"
   },
   {
     "_tag": "Interface",
@@ -3260,7 +3260,7 @@
     "since": "1.0.0",
     "category": "Rpcs",
     "signature": "export interface RpcClient extends RpcClient_.FromGroup<typeof Rpcs, RpcClientError> {}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Runners.ts#L466"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Runners.ts#L475"
   },
   {
     "_tag": "Constant",
@@ -3275,7 +3275,7 @@
     "since": "1.0.0",
     "category": "Layers",
     "signature": "declare const layerHandlers: Layer.Layer<Handler<\"Ping\"> | Handler<\"Notify\"> | Handler<\"Effect\"> | Handler<\"Stream\"> | Handler<\"Envelope\">, never, MessageStorage.MessageStorage | Sharding.Sharding>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/RunnerServer.ts#L26"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/RunnerServer.ts#L27"
   },
   {
     "_tag": "Constant",
@@ -3291,7 +3291,7 @@
     "since": "1.0.0",
     "category": "Layers",
     "signature": "declare const layer: Layer.Layer<never, never, MessageStorage.MessageStorage | Sharding.Sharding | RpcServer.Protocol>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/RunnerServer.ts#L113"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/RunnerServer.ts#L132"
   },
   {
     "_tag": "Constant",
@@ -3307,7 +3307,7 @@
     "since": "1.0.0",
     "category": "Layers",
     "signature": "declare const layerWithClients: Layer.Layer<Sharding.Sharding | Runners.Runners, never, ShardStorage.ShardStorage | MessageStorage.MessageStorage | ShardingConfig | Runners.RpcClientProtocol | RpcServer.Protocol>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/RunnerServer.ts#L128"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/RunnerServer.ts#L147"
   },
   {
     "_tag": "Constant",
@@ -3323,7 +3323,7 @@
     "since": "1.0.0",
     "category": "Layers",
     "signature": "declare const layerClientOnly: Layer.Layer<Sharding.Sharding | Runners.Runners, never, MessageStorage.MessageStorage | ShardingConfig | Runners.RpcClientProtocol>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/RunnerServer.ts#L153"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/RunnerServer.ts#L172"
   },
   {
     "_tag": "Class",
@@ -3413,7 +3413,7 @@
     "since": "1.0.0",
     "category": "layers",
     "signature": "declare const layer: Layer.Layer<Sharding, never, ShardManagerClient | ShardStorage | MessageStorage.MessageStorage | ShardingConfig | Runners>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Sharding.ts#L1231"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Sharding.ts#L1234"
   },
   {
     "_tag": "Class",
@@ -4350,7 +4350,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "Constructors",
-    "signature": "declare const make: (options?: { readonly prefix?: string | undefined; } | undefined) => Effect.Effect<{ readonly saveRequest: <R extends Any>(envelope: OutgoingRequest<R>) => Effect.Effect<MessageStorage.SaveResult<R>, PersistenceError | MalformedMessage>; readonly saveEnvelope: (envelope: OutgoingEnvelope) => Effect.Effect<void, PersistenceError | MalformedMessage>; readonly saveReply: <R extends Any>(reply: Reply.ReplyWithContext<R>) => Effect.Effect<void, PersistenceError | MalformedMessage>; readonly clearReplies: (requestId: Snowflake.Snowflake) => Effect.Effect<void, PersistenceError>; readonly repliesFor: <R extends Any>(requests: Iterable<OutgoingRequest<R>>) => Effect.Effect<Array<Reply.Reply<R>>, PersistenceError | MalformedMessage>; readonly repliesForUnfiltered: <R extends Any>(requestIds: Iterable<Snowflake.Snowflake>) => Effect.Effect<Array<Reply.ReplyEncoded<R>>, PersistenceError | MalformedMessage>; readonly requestIdForPrimaryKey: (options: { readonly address: EntityAddress; readonly tag: string; readonly id: string; }) => Effect.Effect<Option.Option<Snowflake.Snowflake>, PersistenceError>; readonly registerReplyHandler: <R extends Any>(message: OutgoingRequest<R> | IncomingRequest<R>) => Effect.Effect<void>; readonly unprocessedMessages: (shardIds: Iterable<ShardId>) => Effect.Effect<Array<Incoming<any>>, PersistenceError>; readonly unprocessedMessagesById: <R extends Any>(messageIds: Iterable<Snowflake.Snowflake>) => Effect.Effect<Array<Incoming<R>>, PersistenceError>; readonly resetShards: (shardIds: Iterable<ShardId>) => Effect.Effect<void, PersistenceError>; readonly resetAddress: (address: EntityAddress) => Effect.Effect<void, PersistenceError>; readonly clearAddress: (address: EntityAddress) => Effect.Effect<void, PersistenceError>; }, never, SqlClient.SqlClient | Snowflake.Generator>",
+    "signature": "declare const make: (options?: { readonly prefix?: string | undefined; } | undefined) => Effect.Effect<{ readonly saveRequest: <R extends Any>(envelope: OutgoingRequest<R>) => Effect.Effect<MessageStorage.SaveResult<R>, PersistenceError | MalformedMessage>; readonly saveEnvelope: (envelope: OutgoingEnvelope) => Effect.Effect<void, PersistenceError | MalformedMessage>; readonly saveReply: <R extends Any>(reply: Reply.ReplyWithContext<R>) => Effect.Effect<void, PersistenceError | MalformedMessage>; readonly clearReplies: (requestId: Snowflake.Snowflake) => Effect.Effect<void, PersistenceError>; readonly repliesFor: <R extends Any>(requests: Iterable<OutgoingRequest<R>>) => Effect.Effect<Array<Reply.Reply<R>>, PersistenceError | MalformedMessage>; readonly repliesForUnfiltered: <R extends Any>(requestIds: Iterable<Snowflake.Snowflake>) => Effect.Effect<Array<Reply.ReplyEncoded<R>>, PersistenceError | MalformedMessage>; readonly requestIdForPrimaryKey: (options: { readonly address: EntityAddress; readonly tag: string; readonly id: string; }) => Effect.Effect<Option.Option<Snowflake.Snowflake>, PersistenceError>; readonly registerReplyHandler: <R extends Any>(message: OutgoingRequest<R> | IncomingRequest<R>, onUnregister: Effect.Effect<void>) => Effect.Effect<void>; readonly unregisterReplyHandler: (requestId: Snowflake.Snowflake) => Effect.Effect<void>; readonly unprocessedMessages: (shardIds: Iterable<ShardId>) => Effect.Effect<Array<Incoming<any>>, PersistenceError>; readonly unprocessedMessagesById: <R extends Any>(messageIds: Iterable<Snowflake.Snowflake>) => Effect.Effect<Array<Incoming<R>>, PersistenceError>; readonly resetShards: (shardIds: Iterable<ShardId>) => Effect.Effect<void, PersistenceError>; readonly resetAddress: (address: EntityAddress) => Effect.Effect<void, PersistenceError>; readonly clearAddress: (address: EntityAddress) => Effect.Effect<void, PersistenceError>; }, never, SqlClient.SqlClient | Snowflake.Generator>",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/SqlMessageStorage.ts#L29"
   },
   {
