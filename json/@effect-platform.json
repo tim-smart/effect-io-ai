@@ -13335,7 +13335,7 @@
     "since": "1.0.0",
     "category": "errors",
     "signature": "declare class MsgPackError",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/MsgPack.ts#L41"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/MsgPack.ts#L33"
   },
   {
     "_tag": "Constant",
@@ -13350,7 +13350,7 @@
     "since": "1.0.0",
     "category": "errors",
     "signature": "declare const ErrorTypeId: unique symbol",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/MsgPack.ts#L29"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/MsgPack.ts#L21"
   },
   {
     "_tag": "Constant",
@@ -13365,7 +13365,7 @@
     "since": "1.0.0",
     "category": "combinators",
     "signature": "declare const duplexSchema: { <IA, II, IR, OA, OI, OR>(options: { readonly inputSchema: Schema.Schema<IA, II, IR>; readonly outputSchema: Schema.Schema<OA, OI, OR>; }): <R, InErr, OutErr, OutDone, InDone>(self: Channel.Channel<Chunk.Chunk<Uint8Array>, Chunk.Chunk<Uint8Array>, OutErr, MsgPackError | ParseError | InErr, OutDone, InDone, R>) => Channel.Channel<Chunk.Chunk<OA>, Chunk.Chunk<IA>, MsgPackError | ParseError | OutErr, InErr, OutDone, InDone, IR | OR | R>; <R, InErr, OutErr, OutDone, InDone, IA, II, IR, OA, OI, OR>(self: Channel.Channel<Chunk.Chunk<Uint8Array>, Chunk.Chunk<Uint8Array>, OutErr, MsgPackError | ParseError | InErr, OutDone, InDone, R>, options: { readonly inputSchema: Schema.Schema<IA, II, IR>; readonly outputSchema: Schema.Schema<OA, OI, OR>; }): Channel.Channel<Chunk.Chunk<OA>, Chunk.Chunk<IA>, MsgPackError | ParseError | OutErr, InErr, OutDone, InDone, R | IR | OR>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/MsgPack.ts#L198"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/MsgPack.ts#L190"
   },
   {
     "_tag": "Function",
@@ -13380,7 +13380,7 @@
     "since": "1.0.0",
     "category": "constructors",
     "signature": "declare const pack: <IE = never, Done = unknown>() => Channel.Channel<Chunk.Chunk<Uint8Array>, Chunk.Chunk<unknown>, IE | MsgPackError, IE, Done, Done>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/MsgPack.ts#L62"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/MsgPack.ts#L54"
   },
   {
     "_tag": "Function",
@@ -13395,7 +13395,7 @@
     "since": "1.0.0",
     "category": "constructors",
     "signature": "declare const packSchema: <A, I, R>(schema: Schema.Schema<A, I, R>) => <IE = never, Done = unknown>() => Channel.Channel<Chunk.Chunk<Uint8Array>, Chunk.Chunk<A>, IE | MsgPackError | ParseError, IE, Done, Done, R>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/MsgPack.ts#L96"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/MsgPack.ts#L88"
   },
   {
     "_tag": "Function",
@@ -13410,7 +13410,7 @@
     "since": "1.0.0",
     "category": "constructors",
     "signature": "declare const unpack: <IE = never, Done = unknown>() => Channel.Channel<Chunk.Chunk<unknown>, Chunk.Chunk<Uint8Array>, IE | MsgPackError, IE, Done, Done>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/MsgPack.ts#L113"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/MsgPack.ts#L105"
   },
   {
     "_tag": "Function",
@@ -13425,7 +13425,7 @@
     "since": "1.0.0",
     "category": "constructors",
     "signature": "declare const unpackSchema: <A, I, R>(schema: Schema.Schema<A, I, R>) => <IE = never, Done = unknown>() => Channel.Channel<Chunk.Chunk<A>, Chunk.Chunk<Uint8Array>, MsgPackError | ParseError | IE, IE, Done, Done, R>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/MsgPack.ts#L169"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/MsgPack.ts#L161"
   },
   {
     "_tag": "Function",
@@ -13440,7 +13440,7 @@
     "since": "1.0.0",
     "category": "combinators",
     "signature": "declare const duplex: <R, IE, OE, OutDone, InDone>(self: Channel.Channel<Chunk.Chunk<Uint8Array>, Chunk.Chunk<Uint8Array>, OE, IE | MsgPackError, OutDone, InDone, R>) => Channel.Channel<Chunk.Chunk<unknown>, Chunk.Chunk<unknown>, MsgPackError | OE, IE, OutDone, InDone, R>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/MsgPack.ts#L186"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/MsgPack.ts#L178"
   },
   {
     "_tag": "Function",
@@ -13455,7 +13455,7 @@
     "since": "1.0.0",
     "category": "schemas",
     "signature": "declare const schema: <S extends Schema.Schema.Any>(schema: S) => schema<S>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/MsgPack.ts#L328"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/MsgPack.ts#L320"
   },
   {
     "_tag": "Interface",
@@ -13470,7 +13470,7 @@
     "since": "1.0.0",
     "category": "schemas",
     "signature": "export interface schema<S extends Schema.Schema.Any> extends Schema.transformOrFail<Schema.Schema<Uint8Array>, S> {}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/MsgPack.ts#L322"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/MsgPack.ts#L314"
   },
   {
     "_tag": "TypeAlias",
@@ -13485,22 +13485,7 @@
     "since": "1.0.0",
     "category": "errors",
     "signature": "type ErrorTypeId = typeof ErrorTypeId",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/MsgPack.ts#L35"
-  },
-  {
-    "_tag": "Export",
-    "module": {
-      "name": "MsgPack.ts",
-      "path": "src/MsgPack.ts"
-    },
-    "project": "@effect/platform",
-    "name": "Msgpackr",
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "re-exports",
-    "signature": "declare const Msgpackr: typeof Msgpackr",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/MsgPack.ts#L22"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/MsgPack.ts#L27"
   },
   {
     "_tag": "Class",
