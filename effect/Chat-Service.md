@@ -52,7 +52,7 @@ export interface Service {
    * })
    * ```
    */
-  readonly export: Effect.Effect<unknown>
+  readonly export: Effect.Effect<unknown, AiError.AiError>
 
   /**
    * Exports the chat history as a JSON string.
@@ -79,7 +79,7 @@ export interface Service {
    * })
    * ```
    */
-  readonly exportJson: Effect.Effect<string>
+  readonly exportJson: Effect.Effect<string, AiError.MalformedOutput>
 
   /**
    * Generate text using a language model for the specified prompt.
@@ -114,7 +114,7 @@ export interface Service {
   >(options: Options & LanguageModel.GenerateTextOptions<Tools>) => Effect.Effect<
     LanguageModel.GenerateTextResponse<Tools>,
     LanguageModel.ExtractError<Options>,
-    LanguageModel.ExtractContext<Options>
+    LanguageModel.LanguageModel | LanguageModel.ExtractContext<Options>
   >
 
   /**
@@ -149,7 +149,7 @@ export interface Service {
   >(options: Options & LanguageModel.GenerateTextOptions<Tools>) => Stream.Stream<
     Response.StreamPart<Tools>,
     LanguageModel.ExtractError<Options>,
-    LanguageModel.ExtractContext<Options>
+    LanguageModel.LanguageModel | LanguageModel.ExtractContext<Options>
   >
 
   /**
@@ -199,6 +199,6 @@ export interface Service {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Chat.ts#L97)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Chat.ts#L102)
 
 Since v1.0.0

@@ -30,6 +30,6 @@ const useChat = Effect.gen(function* () {
 declare class Chat
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Chat.ts#L86)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Chat.ts#L91)
 
 Since v1.0.0

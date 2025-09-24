@@ -30,9 +30,9 @@ const freshChat = Effect.gen(function* () {
 **Signature**
 
 ```ts
-declare const empty: Effect.Effect<Service, never, LanguageModel.LanguageModel>
+declare const empty: Effect.Effect<Service, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Chat.ts#L465)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Chat.ts#L323)
 
 Since v1.0.0
