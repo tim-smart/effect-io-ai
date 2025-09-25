@@ -44,6 +44,6 @@ const program = riskyOperation().pipe(
 declare class UnknownError
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiError.ts#L634)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiError.ts#L648)
 
 Since v1.0.0

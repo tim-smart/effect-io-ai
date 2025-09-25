@@ -41,6 +41,6 @@ const handleNetworkError = Effect.gen(function* () {
 declare class HttpRequestError
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiError.ts#L191)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiError.ts#L193)
 
 Since v1.0.0

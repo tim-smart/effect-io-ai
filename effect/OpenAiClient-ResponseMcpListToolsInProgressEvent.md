@@ -12,6 +12,6 @@ MCP tools.
 declare class ResponseMcpListToolsInProgressEvent
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L1463)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L1465)
 
 Since v1.0.0

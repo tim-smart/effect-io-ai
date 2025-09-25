@@ -11,6 +11,6 @@ An event that is emitted when a response is created.
 declare class ResponseCreatedEvent
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L262)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L264)
 
 Since v1.0.0

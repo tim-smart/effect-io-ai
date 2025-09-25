@@ -11,6 +11,6 @@ Event indicating that input for a custom tool call is complete.
 declare class ResponseCustomToolCallInputDoneEvent
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L1726)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L1728)
 
 Since v1.0.0

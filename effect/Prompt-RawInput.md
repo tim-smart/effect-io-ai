@@ -35,6 +35,6 @@ type RawInput = | string
   | Prompt
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L1229)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L1294)
 
 Since v1.0.0

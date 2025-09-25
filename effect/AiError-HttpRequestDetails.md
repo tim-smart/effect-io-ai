@@ -32,6 +32,6 @@ const requestDetails: typeof AiError.HttpRequestDetails.Type = {
 declare const HttpRequestDetails: Schema.Struct<{ method: Schema.Literal<["GET", "POST", "PATCH", "PUT", "DELETE", "HEAD", "OPTIONS"]>; url: typeof Schema.String; urlParams: Schema.Array$<Schema.Tuple2<typeof Schema.String, typeof Schema.String>>; hash: Schema.Option<typeof Schema.String>; headers: Schema.Record$<typeof Schema.String, typeof Schema.String>; }>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiError.ts#L148)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiError.ts#L150)
 
 Since v1.0.0

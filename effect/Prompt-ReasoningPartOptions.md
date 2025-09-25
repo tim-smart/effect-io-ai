@@ -12,6 +12,6 @@ Represents provider-specific options that can be associated with a
 export interface ReasoningPartOptions extends ProviderOptions {}
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L341)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L345)
 
 Since v1.0.0

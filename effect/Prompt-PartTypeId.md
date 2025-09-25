@@ -11,6 +11,6 @@ Type-level representation of the Part identifier.
 type PartTypeId = typeof PartTypeId
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L116)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L120)
 
 Since v1.0.0

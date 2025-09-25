@@ -11,6 +11,6 @@ Emitted when a partial code snippet is streamed by the code interpreter.
 declare class ResponseCodeInterpreterCallCodeDeltaEvent
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L1632)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L1634)
 
 Since v1.0.0

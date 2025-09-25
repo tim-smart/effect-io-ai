@@ -11,6 +11,6 @@ Emitted when an error occurs.
 declare class ResponseErrorEvent
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L1757)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L1759)
 
 Since v1.0.0

@@ -91,7 +91,7 @@
     "since": "1.0.0",
     "category": "Schemas",
     "signature": "declare class ChatCompletionToolCallDelta",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openrouter/src/OpenRouterClient.ts#L329"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openrouter/src/OpenRouterClient.ts#L328"
   },
   {
     "_tag": "Class",
@@ -106,7 +106,7 @@
     "since": "1.0.0",
     "category": "Schemas",
     "signature": "declare class ChatCompletionStreamDelta",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openrouter/src/OpenRouterClient.ts#L345"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openrouter/src/OpenRouterClient.ts#L344"
   },
   {
     "_tag": "Class",
@@ -121,7 +121,7 @@
     "since": "1.0.0",
     "category": "Schemas",
     "signature": "declare class ChatCompletionStreamDeltaEvent",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openrouter/src/OpenRouterClient.ts#L361"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openrouter/src/OpenRouterClient.ts#L360"
   },
   {
     "_tag": "Class",
@@ -136,7 +136,7 @@
     "since": "1.0.0",
     "category": "Schemas",
     "signature": "declare class ChatCompletionStreamErrorEvent",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openrouter/src/OpenRouterClient.ts#L382"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openrouter/src/OpenRouterClient.ts#L381"
   },
   {
     "_tag": "Constant",
@@ -166,7 +166,7 @@
     "since": "1.0.0",
     "category": "Schemas",
     "signature": "declare const ChatCompletionStreamEvent: Schema.Union<[typeof ChatCompletionStreamDeltaEvent, typeof ChatCompletionStreamErrorEvent]>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openrouter/src/OpenRouterClient.ts#L392"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openrouter/src/OpenRouterClient.ts#L391"
   },
   {
     "_tag": "Function",
@@ -181,7 +181,7 @@
     "since": "1.0.0",
     "category": "Layers",
     "signature": "declare const layer: (options: { readonly apiKey?: Redacted.Redacted | undefined; readonly apiUrl?: string | undefined; readonly referrer?: string | undefined; readonly title?: string | undefined; readonly transformClient?: ((client: HttpClient.HttpClient) => HttpClient.HttpClient) | undefined; }) => Layer.Layer<OpenRouterClient, never, HttpClient.HttpClient>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openrouter/src/OpenRouterClient.ts#L245"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openrouter/src/OpenRouterClient.ts#L244"
   },
   {
     "_tag": "Function",
@@ -196,7 +196,7 @@
     "since": "1.0.0",
     "category": "Layers",
     "signature": "declare const layerConfig: (options: { readonly apiKey?: Config.Config<Redacted.Redacted> | undefined; readonly apiUrl?: Config.Config<string> | undefined; readonly referrer?: Config.Config<string> | undefined; readonly title?: Config.Config<string> | undefined; readonly transformClient?: ((client: HttpClient.HttpClient) => HttpClient.HttpClient) | undefined; }) => Layer.Layer<OpenRouterClient, ConfigError, HttpClient.HttpClient>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openrouter/src/OpenRouterClient.ts#L284"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openrouter/src/OpenRouterClient.ts#L283"
   },
   {
     "_tag": "Interface",
@@ -226,7 +226,7 @@
     "since": "1.0.0",
     "category": "Models",
     "signature": "type ChatCompletionStreamEvent = typeof ChatCompletionStreamEvent.Type",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openrouter/src/OpenRouterClient.ts#L404"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openrouter/src/OpenRouterClient.ts#L403"
   },
   {
     "_tag": "Class",

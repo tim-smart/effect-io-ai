@@ -23,6 +23,6 @@ export interface BasePart<Type extends string, Options extends ProviderOptions> 
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L158)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L162)
 
 Since v1.0.0

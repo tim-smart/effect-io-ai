@@ -11,6 +11,6 @@ Emitted when a web search call is completed.
 declare class ResponseWebSearchCallCompletedEvent
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L938)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L940)
 
 Since v1.0.0

@@ -9,7 +9,7 @@ conversation with a large language model.
 **Signature**
 
 ```ts
-export interface Prompt {
+export interface Prompt extends Pipeable {
   readonly [TypeId]: TypeId
   /**
    * Array of messages that make up the conversation.
@@ -18,6 +18,6 @@ export interface Prompt {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L1160)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L1186)
 
 Since v1.0.0

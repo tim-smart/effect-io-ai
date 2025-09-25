@@ -16,6 +16,6 @@ export interface ReasoningPartEncoded extends BasePartEncoded<"reasoning", Reaso
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L327)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L331)
 
 Since v1.0.0

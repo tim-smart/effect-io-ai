@@ -12,7 +12,7 @@
     "since": "1.0.0",
     "category": "Context",
     "signature": "declare class AnthropicClient",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicClient.ts#L29"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicClient.ts#L30"
   },
   {
     "_tag": "Class",
@@ -27,7 +27,7 @@
     "since": "1.0.0",
     "category": "Schemas",
     "signature": "declare class PingEvent",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicClient.ts#L337"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicClient.ts#L330"
   },
   {
     "_tag": "Class",
@@ -42,7 +42,7 @@
     "since": "1.0.0",
     "category": "Schemas",
     "signature": "declare class ErrorEvent",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicClient.ts#L347"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicClient.ts#L340"
   },
   {
     "_tag": "Class",
@@ -57,7 +57,7 @@
     "since": "1.0.0",
     "category": "Schemas",
     "signature": "declare class MessageStartEvent",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicClient.ts#L370"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicClient.ts#L363"
   },
   {
     "_tag": "Class",
@@ -72,7 +72,7 @@
     "since": "1.0.0",
     "category": "Schemas",
     "signature": "declare class ServerToolUsage",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicClient.ts#L381"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicClient.ts#L374"
   },
   {
     "_tag": "Class",
@@ -87,7 +87,7 @@
     "since": "1.0.0",
     "category": "Schemas",
     "signature": "declare class MessageDelta",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicClient.ts#L397"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicClient.ts#L390"
   },
   {
     "_tag": "Class",
@@ -102,7 +102,7 @@
     "since": "1.0.0",
     "category": "Schemas",
     "signature": "declare class MessageDeltaUsage",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicClient.ts#L423"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicClient.ts#L416"
   },
   {
     "_tag": "Class",
@@ -117,7 +117,7 @@
     "since": "1.0.0",
     "category": "Schemas",
     "signature": "declare class MessageDeltaEvent",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicClient.ts#L467"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicClient.ts#L460"
   },
   {
     "_tag": "Class",
@@ -132,7 +132,7 @@
     "since": "1.0.0",
     "category": "Schemas",
     "signature": "declare class MessageStopEvent",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicClient.ts#L494"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicClient.ts#L487"
   },
   {
     "_tag": "Class",
@@ -147,7 +147,7 @@
     "since": "1.0.0",
     "category": "Schemas",
     "signature": "declare class ContentBlockStartEvent",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicClient.ts#L504"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicClient.ts#L497"
   },
   {
     "_tag": "Class",
@@ -162,7 +162,7 @@
     "since": "1.0.0",
     "category": "Schemas",
     "signature": "declare class CitationsDelta",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicClient.ts#L516"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicClient.ts#L509"
   },
   {
     "_tag": "Class",
@@ -177,7 +177,7 @@
     "since": "1.0.0",
     "category": "Schemas",
     "signature": "declare class InputJsonContentBlockDelta",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicClient.ts#L533"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicClient.ts#L526"
   },
   {
     "_tag": "Class",
@@ -192,7 +192,7 @@
     "since": "1.0.0",
     "category": "Schemas",
     "signature": "declare class SignatureContentBlockDelta",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicClient.ts#L544"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicClient.ts#L537"
   },
   {
     "_tag": "Class",
@@ -207,7 +207,7 @@
     "since": "1.0.0",
     "category": "Schemas",
     "signature": "declare class TextContentBlockDelta",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicClient.ts#L555"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicClient.ts#L548"
   },
   {
     "_tag": "Class",
@@ -222,7 +222,7 @@
     "since": "1.0.0",
     "category": "Schemas",
     "signature": "declare class ThinkingContentBlockDelta",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicClient.ts#L566"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicClient.ts#L559"
   },
   {
     "_tag": "Class",
@@ -237,7 +237,7 @@
     "since": "1.0.0",
     "category": "Schemas",
     "signature": "declare class ContentBlockDeltaEvent",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicClient.ts#L577"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicClient.ts#L570"
   },
   {
     "_tag": "Class",
@@ -252,7 +252,7 @@
     "since": "1.0.0",
     "category": "Schemas",
     "signature": "declare class ContentBlockStopEvent",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicClient.ts#L595"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicClient.ts#L588"
   },
   {
     "_tag": "Constant",
@@ -267,7 +267,7 @@
     "since": "1.0.0",
     "category": "Constructors",
     "signature": "declare const make: (options: { readonly apiKey?: Redacted.Redacted | undefined; readonly apiUrl?: string | undefined; readonly anthropicVersion?: string | undefined; readonly organizationId?: Redacted.Redacted | undefined; readonly projectId?: Redacted.Redacted | undefined; readonly transformClient?: ((client: HttpClient.HttpClient) => HttpClient.HttpClient) | undefined; }) => Effect.Effect<Service, never, HttpClient.HttpClient | Scope.Scope>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicClient.ts#L83"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicClient.ts#L84"
   },
   {
     "_tag": "Constant",
@@ -282,7 +282,7 @@
     "since": "1.0.0",
     "category": "Schemas",
     "signature": "declare const MessageStreamEvent: Schema.Union<[typeof PingEvent, typeof ErrorEvent, typeof MessageStartEvent, typeof MessageDeltaEvent, typeof MessageStopEvent, typeof ContentBlockStartEvent, typeof ContentBlockDeltaEvent, typeof ContentBlockStopEvent]>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicClient.ts#L606"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicClient.ts#L599"
   },
   {
     "_tag": "Function",
@@ -297,7 +297,7 @@
     "since": "1.0.0",
     "category": "Layers",
     "signature": "declare const layer: (options: { readonly apiKey?: Redacted.Redacted | undefined; readonly apiUrl?: string | undefined; readonly anthropicVersion?: string | undefined; readonly transformClient?: ((client: HttpClient.HttpClient) => HttpClient.HttpClient) | undefined; }) => Layer.Layer<AnthropicClient, never, HttpClient.HttpClient>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicClient.ts#L627"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicClient.ts#L620"
   },
   {
     "_tag": "Function",
@@ -312,7 +312,7 @@
     "since": "1.0.0",
     "category": "Layers",
     "signature": "declare const layerConfig: (options: { readonly apiKey?: Config.Config<Redacted.Redacted | undefined> | undefined; readonly apiUrl?: Config.Config<string | undefined> | undefined; readonly anthropicVersion?: Config.Config<string | undefined> | undefined; readonly transformClient?: ((client: HttpClient.HttpClient) => HttpClient.HttpClient) | undefined; }) => Layer.Layer<AnthropicClient, ConfigError, HttpClient.HttpClient>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicClient.ts#L705"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicClient.ts#L698"
   },
   {
     "_tag": "Interface",
@@ -328,7 +328,7 @@
     "since": "1.0.0",
     "category": "Models",
     "signature": "export interface Service {\n  /**\n   * The underlying HTTP client capable of communicating with the Anthropic API.\n   *\n   * This client is pre-configured with authentication, base URL, and standard\n   * headers required for Anthropic API communication. It provides direct access\n   * to the generated Anthropic API client for operations not covered by the\n   * higher-level methods.\n   *\n   * Use this when you need to:\n   * - Access provider-specific API endpoints not available through the AI SDK\n   * - Implement custom request/response handling\n   * - Use Anthropic API features not yet supported by the Effect AI abstractions\n   * - Perform batch operations or non-streaming requests\n   *\n   * The client automatically handles authentication and follows Anthropic's\n   * API conventions for request formatting and error handling.\n   */\n  readonly client: Generated.Client\n\n  readonly streamRequest: <A, I, R>(\n    request: HttpClientRequest.HttpClientRequest,\n    schema: Schema.Schema<A, I, R>\n  ) => Stream.Stream<A, AiError.AiError, R>\n\n  readonly createMessage: (options: {\n    readonly params?: typeof Generated.BetaMessagesPostParams.Encoded | undefined\n    readonly payload: typeof Generated.BetaCreateMessageParams.Encoded\n  }) => Effect.Effect<Generated.BetaMessage, AiError.AiError>\n\n  readonly createMessageStream: (options: {\n    readonly params?: typeof Generated.BetaMessagesPostParams.Encoded | undefined\n    readonly payload: Omit<typeof Generated.BetaCreateMessageParams.Encoded, \"stream\">\n  }) => Stream.Stream<MessageStreamEvent, AiError.AiError>\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicClient.ts#L43"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicClient.ts#L44"
   },
   {
     "_tag": "TypeAlias",
@@ -343,7 +343,7 @@
     "since": "1.0.0",
     "category": "Models",
     "signature": "type MessageStreamEvent = typeof MessageStreamEvent.Type",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicClient.ts#L621"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicClient.ts#L614"
   },
   {
     "_tag": "Class",

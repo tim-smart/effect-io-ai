@@ -25,6 +25,6 @@ const filePart = Prompt.makeMessage("user", {
 declare const makeMessage: <const Role extends Message["role"]>(role: Role, params: Omit<Extract<Message, { role: Role; }>, MessageTypeId | "role" | "options"> & { readonly options?: Extract<Message, { role: Role; }>["options"]; }) => Extract<Message, { role: Role; }>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L716)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L720)
 
 Since v1.0.0

@@ -26,6 +26,6 @@ export interface ReasoningPart extends BasePart<"reasoning", ReasoningPartOption
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L314)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L318)
 
 Since v1.0.0

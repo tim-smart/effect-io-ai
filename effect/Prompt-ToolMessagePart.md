@@ -11,6 +11,6 @@ Union type of content parts allowed in tool messages.
 type ToolMessagePart = ToolResultPart
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L1037)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L1063)
 
 Since v1.0.0

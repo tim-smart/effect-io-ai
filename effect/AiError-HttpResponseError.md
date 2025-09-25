@@ -43,6 +43,6 @@ console.log(responseError.message)
 declare class HttpResponseError
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiError.ts#L350)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiError.ts#L352)
 
 Since v1.0.0

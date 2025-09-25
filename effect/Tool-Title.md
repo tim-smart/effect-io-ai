@@ -20,6 +20,6 @@ const myTool = Tool.make("calculate_tip")
 declare class Title
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Tool.ts#L1195)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Tool.ts#L1196)
 
 Since v1.0.0

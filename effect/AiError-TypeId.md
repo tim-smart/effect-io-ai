@@ -11,6 +11,6 @@ Type-level representation of the AI error identifier.
 type TypeId = typeof TypeId
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiError.ts#L91)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiError.ts#L93)
 
 Since v1.0.0

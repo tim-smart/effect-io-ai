@@ -12,10 +12,10 @@ export interface UserMessageEncoded extends BaseMessageEncoded<"user", UserMessa
   /**
    * Array of content parts that make up the user's message.
    */
-  readonly content: ReadonlyArray<UserMessagePartEncoded>
+  readonly content: string | ReadonlyArray<UserMessagePartEncoded>
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L850)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L870)
 
 Since v1.0.0

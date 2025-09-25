@@ -10,7 +10,8 @@ record.
 
 ```ts
 type HandlersFor<Tools> = {
-  [K in keyof Tools]: Handler<Tools[K]["name"]>
+  [Name in keyof Tools]: RequiresHandler<Tools[Name]> extends true ? Handler<Tools[Name]["name"]>
+    : never
 }[keyof Tools]
 ```
 

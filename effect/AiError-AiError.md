@@ -43,6 +43,6 @@ type AiError = | HttpRequestError
   | UnknownError
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiError.ts#L695)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiError.ts#L709)
 
 Since v1.0.0

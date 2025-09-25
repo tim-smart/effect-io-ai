@@ -20,6 +20,6 @@ const restrictedTool = Tool.make("internal_operation")
 declare class OpenWorld
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Tool.ts#L1265)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Tool.ts#L1266)
 
 Since v1.0.0

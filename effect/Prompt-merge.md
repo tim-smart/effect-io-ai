@@ -3,10 +3,10 @@ Module: `Prompt`<br />
 
 ## Prompt.merge
 
-Merges two prompts by concatenating their messages.
+Merges a prompt with additional raw input by concatenating messages.
 
-Creates a new prompt containing all messages from both prompts, maintaining
-the order of messages within each prompt.
+Creates a new prompt containing all messages from both the original prompt,
+and the provided raw input, maintaining the order of messages.
 
 **Example**
 
@@ -18,17 +18,15 @@ const systemPrompt = Prompt.make([{
   content: "You are a helpful assistant."
 }])
 
-const userPrompt = Prompt.make("Hello, world!")
-
-const merged = Prompt.merge(systemPrompt, userPrompt)
+const merged = Prompt.merge(systemPrompt, "Hello, world!")
 ```
 
 **Signature**
 
 ```ts
-declare const merge: { (other: Prompt): (self: Prompt) => Prompt; (self: Prompt, other: Prompt): Prompt; }
+declare const merge: { (other: RawInput): (self: Prompt) => Prompt; (self: Prompt, other: RawInput): Prompt; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L1507)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L1577)
 
 Since v1.0.0

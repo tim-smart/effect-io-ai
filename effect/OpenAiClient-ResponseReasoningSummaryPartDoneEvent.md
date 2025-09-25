@@ -11,6 +11,6 @@ Emitted when a new reasoning summary part is added.
 declare class ResponseReasoningSummaryPartDoneEvent
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L1017)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L1019)
 
 Since v1.0.0

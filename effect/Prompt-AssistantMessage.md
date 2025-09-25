@@ -44,6 +44,6 @@ export interface AssistantMessage extends BaseMessage<"assistant", AssistantMess
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L926)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L949)
 
 Since v1.0.0

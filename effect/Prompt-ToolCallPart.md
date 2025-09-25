@@ -41,6 +41,6 @@ export interface ToolCallPart extends BasePart<"tool-call", ToolCallPartOptions>
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L472)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L476)
 
 Since v1.0.0

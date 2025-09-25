@@ -4411,7 +4411,7 @@
     "since": "1.0.0",
     "category": "Layers",
     "signature": "declare const layer: Layer.Layer<ShardStorage.ShardStorage, SqlError, SqlClient.SqlClient>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/SqlShardStorage.ts#L290"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/SqlShardStorage.ts#L316"
   },
   {
     "_tag": "Function",
@@ -4426,7 +4426,7 @@
     "since": "1.0.0",
     "category": "Layers",
     "signature": "declare const layerWith: (options: { readonly prefix?: string | undefined; }) => Layer.Layer<ShardStorage.ShardStorage, SqlError, SqlClient.SqlClient>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/SqlShardStorage.ts#L300"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/SqlShardStorage.ts#L326"
   },
   {
     "_tag": "Constant",

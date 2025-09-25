@@ -27,6 +27,6 @@ console.log(description) // "This is an example tool"
 declare const getDescription: <Name extends string, Config extends { readonly parameters: AnyStructSchema; readonly success: Schema.Schema.Any; readonly failure: Schema.Schema.All; }>(tool: Tool<Name, Config>) => string | undefined
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Tool.ts#L1075)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Tool.ts#L1076)
 
 Since v1.0.0

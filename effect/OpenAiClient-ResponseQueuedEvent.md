@@ -11,6 +11,6 @@ Emitted when a response is queued and waiting to be processed.
 declare class ResponseQueuedEvent
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L285)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L287)
 
 Since v1.0.0
