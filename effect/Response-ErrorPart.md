@@ -23,6 +23,6 @@ export interface ErrorPart extends BasePart<"error", ErrorPartMetadata> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L2095)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L2092)
 
 Since v1.0.0

@@ -13,6 +13,6 @@ export interface ErrorPartEncoded extends BasePartEncoded<"error", ErrorPartMeta
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L2105)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L2102)
 
 Since v1.0.0

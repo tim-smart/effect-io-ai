@@ -24,7 +24,7 @@ const responseError = new AiError.HttpResponseError({
     url: "https://api.openai.com/v1/completions",
     urlParams: [],
     hash: Option.none(),
-    headers: { "Authorization": "Bearer sk-..." }
+    headers: { "Content-Type": "application/json" }
   },
   response: {
     status: 429,
@@ -43,6 +43,6 @@ console.log(responseError.message)
 declare class HttpResponseError
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiError.ts#L352)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiError.ts#L349)
 
 Since v1.0.0

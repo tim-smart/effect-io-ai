@@ -16,6 +16,6 @@ export interface TextEndPartEncoded extends BasePartEncoded<"text-end", TextEndP
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L756)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L753)
 
 Since v1.0.0

@@ -26,6 +26,6 @@ export interface TextPart extends BasePart<"text", TextPartMetadata> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L567)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L564)
 
 Since v1.0.0

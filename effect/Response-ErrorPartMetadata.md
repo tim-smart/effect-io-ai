@@ -12,6 +12,6 @@ Represents provider-specific metadata that can be associated with a
 export interface ErrorPartMetadata extends ProviderMetadata {}
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L2116)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L2113)
 
 Since v1.0.0

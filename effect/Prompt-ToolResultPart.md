@@ -40,6 +40,6 @@ export interface ToolResultPart extends BasePart<"tool-result", ToolResultPartOp
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L572)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L573)
 
 Since v1.0.0

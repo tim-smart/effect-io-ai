@@ -17,9 +17,14 @@ export interface Persisted extends Service {
    * The identifier for the chat in the backing persistence store.
    */
   readonly id: string
+
+  /**
+   * Saves the current chat history into the backing persistence store.
+   */
+  readonly save: Effect.Effect<void, AiError.MalformedOutput | PersistenceBackingError>
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Chat.ts#L649)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Chat.ts#L656)
 
 Since v1.0.0

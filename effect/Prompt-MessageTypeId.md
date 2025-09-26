@@ -11,6 +11,6 @@ Type-level representation of the Message identifier.
 type MessageTypeId = typeof MessageTypeId
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L652)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L653)
 
 Since v1.0.0

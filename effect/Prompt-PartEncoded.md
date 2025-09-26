@@ -15,6 +15,6 @@ type PartEncoded = | TextPartEncoded
   | ToolResultPartEncoded
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L147)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L148)
 
 Since v1.0.0

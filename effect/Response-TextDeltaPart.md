@@ -21,6 +21,6 @@ export interface TextDeltaPart extends BasePart<"text-delta", TextDeltaPartMetad
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L678)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L675)
 
 Since v1.0.0

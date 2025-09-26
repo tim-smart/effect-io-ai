@@ -18,6 +18,6 @@ export interface Prompt extends Pipeable {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L1186)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L1187)
 
 Since v1.0.0

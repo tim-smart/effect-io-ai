@@ -37,6 +37,6 @@ export interface ToolParamsStartPart extends BasePart<"tool-params-start", ToolP
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L1042)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L1039)
 
 Since v1.0.0

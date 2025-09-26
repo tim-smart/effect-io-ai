@@ -73,6 +73,6 @@ export interface ToolResultPart<Name extends string, Result> extends BasePart<"t
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L1429)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L1426)
 
 Since v1.0.0

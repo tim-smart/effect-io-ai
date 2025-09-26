@@ -16,6 +16,6 @@ export interface TextStartPartEncoded extends BasePartEncoded<"text-start", Text
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L636)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L633)
 
 Since v1.0.0

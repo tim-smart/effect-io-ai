@@ -21,6 +21,6 @@ Possible finish reasons:
 declare const FinishReason: Schema.Literal<["stop", "length", "content-filter", "tool-calls", "error", "pause", "other", "unknown"]>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L1938)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L1935)
 
 Since v1.0.0

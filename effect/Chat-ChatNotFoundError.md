@@ -12,6 +12,6 @@ does not exist in the backing persistence store.
 declare class ChatNotFoundError
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Chat.ts#L587)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Chat.ts#L590)
 
 Since v1.0.0

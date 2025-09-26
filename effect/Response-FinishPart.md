@@ -35,6 +35,6 @@ export interface FinishPart extends BasePart<"finish", FinishPartMetadata> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L2023)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L2020)
 
 Since v1.0.0

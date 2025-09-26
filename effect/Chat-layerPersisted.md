@@ -14,6 +14,6 @@ backing persistence should load chats from.
 declare const layerPersisted: (options: { readonly storeId: string; }) => Layer.Layer<Persistence, never, BackingPersistence>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Chat.ts#L768)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Chat.ts#L848)
 
 Since v1.0.0

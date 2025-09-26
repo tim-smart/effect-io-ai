@@ -24,6 +24,6 @@ export interface FilePartEncoded extends BasePartEncoded<"file", FilePartOptions
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L413)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L414)
 
 Since v1.0.0

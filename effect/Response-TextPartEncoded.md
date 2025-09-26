@@ -16,6 +16,6 @@ export interface TextPartEncoded extends BasePartEncoded<"text", TextPartMetadat
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L580)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L577)
 
 Since v1.0.0

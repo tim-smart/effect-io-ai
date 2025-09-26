@@ -15,6 +15,6 @@ type AssistantMessagePartEncoded = | TextPartEncoded
   | ToolResultPartEncoded
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L985)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L986)
 
 Since v1.0.0

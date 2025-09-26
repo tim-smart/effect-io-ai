@@ -34,6 +34,6 @@ export interface DocumentSourcePart extends BasePart<"source", DocumentSourcePar
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L1669)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L1666)
 
 Since v1.0.0

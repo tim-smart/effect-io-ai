@@ -15,7 +15,7 @@
     "since": "1.0.0",
     "category": "Errors",
     "signature": "declare class HttpRequestError",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiError.ts#L193"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiError.ts#L190"
   },
   {
     "_tag": "Class",
@@ -28,12 +28,12 @@
     "description": "Error that occurs during HTTP response processing.\n\nThis error is thrown when issues arise after receiving an HTTP response,\nsuch as unexpected status codes, response decoding failures, or empty\nresponse bodies.",
     "deprecated": false,
     "examples": [
-      "```ts\nimport { AiError } from \"@effect/ai\"\nimport { Option } from \"effect\"\n\nconst responseError = new AiError.HttpResponseError({\n  module: \"OpenAI\",\n  method: \"createCompletion\",\n  reason: \"StatusCode\",\n  request: {\n    method: \"POST\",\n    url: \"https://api.openai.com/v1/completions\",\n    urlParams: [],\n    hash: Option.none(),\n    headers: { \"Authorization\": \"Bearer sk-...\" }\n  },\n  response: {\n    status: 429,\n    headers: { \"X-RateLimit-Remaining\": \"0\" }\n  },\n  description: \"Rate limit exceeded\"\n})\n\nconsole.log(responseError.message)\n// \"StatusCode: Rate limit exceeded (429 POST https://api.openai.com/v1/completions)\"\n```"
+      "```ts\nimport { AiError } from \"@effect/ai\"\nimport { Option } from \"effect\"\n\nconst responseError = new AiError.HttpResponseError({\n  module: \"OpenAI\",\n  method: \"createCompletion\",\n  reason: \"StatusCode\",\n  request: {\n    method: \"POST\",\n    url: \"https://api.openai.com/v1/completions\",\n    urlParams: [],\n    hash: Option.none(),\n    headers: { \"Content-Type\": \"application/json\" }\n  },\n  response: {\n    status: 429,\n    headers: { \"X-RateLimit-Remaining\": \"0\" }\n  },\n  description: \"Rate limit exceeded\"\n})\n\nconsole.log(responseError.message)\n// \"StatusCode: Rate limit exceeded (429 POST https://api.openai.com/v1/completions)\"\n```"
     ],
     "since": "1.0.0",
     "category": "Errors",
     "signature": "declare class HttpResponseError",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiError.ts#L352"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiError.ts#L349"
   },
   {
     "_tag": "Class",
@@ -51,7 +51,7 @@
     "since": "1.0.0",
     "category": "Errors",
     "signature": "declare class MalformedInput",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiError.ts#L494"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiError.ts#L491"
   },
   {
     "_tag": "Class",
@@ -69,7 +69,7 @@
     "since": "1.0.0",
     "category": "Errors",
     "signature": "declare class MalformedOutput",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiError.ts#L551"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiError.ts#L548"
   },
   {
     "_tag": "Class",
@@ -87,7 +87,7 @@
     "since": "1.0.0",
     "category": "Errors",
     "signature": "declare class UnknownError",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiError.ts#L648"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiError.ts#L645"
   },
   {
     "_tag": "Constant",
@@ -116,12 +116,12 @@
     "description": "Schema for HTTP request details used in error reporting.\n\nCaptures comprehensive information about HTTP requests that failed,\nenabling detailed error analysis and debugging.",
     "deprecated": false,
     "examples": [
-      "```ts\nimport { AiError } from \"@effect/ai\"\nimport { Option } from \"effect\"\n\nconst requestDetails: typeof AiError.HttpRequestDetails.Type = {\n  method: \"POST\",\n  url: \"https://api.openai.com/v1/completions\",\n  urlParams: [[\"model\", \"gpt-4\"], [\"stream\", \"false\"]],\n  hash: Option.some(\"#section1\"),\n  headers: {\n    \"Content-Type\": \"application/json\",\n    \"Authorization\": \"Bearer sk-...\"\n  }\n}\n```"
+      "```ts\nimport { AiError } from \"@effect/ai\"\nimport { Option } from \"effect\"\n\nconst requestDetails: typeof AiError.HttpRequestDetails.Type = {\n  method: \"POST\",\n  url: \"https://api.openai.com/v1/completions\",\n  urlParams: [[\"model\", \"gpt-4\"], [\"stream\", \"false\"]],\n  hash: Option.some(\"#section1\"),\n  headers: { \"Content-Type\": \"application/json\" }\n}\n```"
     ],
     "since": "1.0.0",
     "category": "Schemas",
     "signature": "declare const HttpRequestDetails: Schema.Struct<{ method: Schema.Literal<[\"GET\", \"POST\", \"PATCH\", \"PUT\", \"DELETE\", \"HEAD\", \"OPTIONS\"]>; url: typeof Schema.String; urlParams: Schema.Array$<Schema.Tuple2<typeof Schema.String, typeof Schema.String>>; hash: Schema.Option<typeof Schema.String>; headers: Schema.Record$<typeof Schema.String, typeof Schema.String>; }>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiError.ts#L150"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiError.ts#L147"
   },
   {
     "_tag": "Constant",
@@ -139,7 +139,7 @@
     "since": "1.0.0",
     "category": "Schemas",
     "signature": "declare const HttpResponseDetails: Schema.Struct<{ status: typeof Schema.Number; headers: Schema.Record$<typeof Schema.String, typeof Schema.String>; }>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiError.ts#L310"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiError.ts#L307"
   },
   {
     "_tag": "Constant",
@@ -157,7 +157,7 @@
     "since": "1.0.0",
     "category": "Schemas",
     "signature": "declare const AiError: Schema.Union<[typeof HttpRequestError, typeof HttpResponseError, typeof MalformedInput, typeof MalformedOutput, typeof UnknownError]>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiError.ts#L747"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiError.ts#L744"
   },
   {
     "_tag": "Function",
@@ -209,7 +209,7 @@
     "since": "1.0.0",
     "category": "Models",
     "signature": "type AiError = | HttpRequestError\n  | HttpResponseError\n  | MalformedInput\n  | MalformedOutput\n  | UnknownError",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiError.ts#L709"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiError.ts#L706"
   },
   {
     "_tag": "Class",
@@ -227,7 +227,7 @@
     "since": "1.0.0",
     "category": "Context",
     "signature": "declare class Chat",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Chat.ts#L91"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Chat.ts#L94"
   },
   {
     "_tag": "Class",
@@ -243,7 +243,7 @@
     "since": "1.0.0",
     "category": "Errors",
     "signature": "declare class ChatNotFoundError",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Chat.ts#L587"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Chat.ts#L590"
   },
   {
     "_tag": "Class",
@@ -259,7 +259,7 @@
     "since": "1.0.0",
     "category": "Context",
     "signature": "declare class Persistence",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Chat.ts#L598"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Chat.ts#L601"
   },
   {
     "_tag": "Constant",
@@ -277,7 +277,7 @@
     "since": "1.0.0",
     "category": "Constructors",
     "signature": "declare const empty: Effect.Effect<Service, never, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Chat.ts#L323"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Chat.ts#L326"
   },
   {
     "_tag": "Constant",
@@ -296,7 +296,7 @@
     "since": "1.0.0",
     "category": "Constructors",
     "signature": "declare const fromPrompt: (prompt: Prompt.RawInput) => Effect.Effect<Service, never, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Chat.ts#L487"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Chat.ts#L490"
   },
   {
     "_tag": "Constant",
@@ -312,7 +312,7 @@
     "since": "1.0.0",
     "category": "Constructors",
     "signature": "declare const makePersisted: (options: { readonly storeId: string; }) => Effect.Effect<Persistence.Service, never, Scope | BackingPersistence>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Chat.ts#L665"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Chat.ts#L677"
   },
   {
     "_tag": "Function",
@@ -330,7 +330,7 @@
     "since": "1.0.0",
     "category": "Constructors",
     "signature": "declare const fromExport: (data: unknown) => Effect.Effect<Service, ParseError, LanguageModel.LanguageModel>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Chat.ts#L532"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Chat.ts#L535"
   },
   {
     "_tag": "Function",
@@ -348,7 +348,7 @@
     "since": "1.0.0",
     "category": "Constructors",
     "signature": "declare const fromJson: (data: string) => Effect.Effect<Service, ParseError, LanguageModel.LanguageModel>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Chat.ts#L573"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Chat.ts#L576"
   },
   {
     "_tag": "Function",
@@ -364,7 +364,7 @@
     "since": "1.0.0",
     "category": "Constructors",
     "signature": "declare const layerPersisted: (options: { readonly storeId: string; }) => Layer.Layer<Persistence, never, BackingPersistence>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Chat.ts#L768"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Chat.ts#L848"
   },
   {
     "_tag": "Interface",
@@ -380,7 +380,7 @@
     "since": "1.0.0",
     "category": "Models",
     "signature": "export interface Service {\n  /**\n   * Reference to the chat history.\n   *\n   * Provides direct access to the conversation history for advanced use cases\n   * like custom history manipulation or inspection.\n   *\n   * @example\n   * ```ts\n   * import { Chat } from \"@effect/ai\"\n   * import { Effect, Ref } from \"effect\"\n   *\n   * const inspectHistory = Effect.gen(function* () {\n   *   const chat = yield* Chat.empty\n   *   const currentHistory = yield* Ref.get(chat.history)\n   *   console.log(\"Current conversation:\", currentHistory)\n   *   return currentHistory\n   * })\n   * ```\n   */\n  readonly history: Ref.Ref<Prompt.Prompt>\n\n  /**\n   * Exports the chat history into a structured format.\n   *\n   * Returns the complete conversation history as a structured object\n   * that can be stored, transmitted, or processed by other systems.\n   *\n   * @example\n   * ```ts\n   * import { Chat } from \"@effect/ai\"\n   * import { Effect } from \"effect\"\n   *\n   * const saveChat = Effect.gen(function* () {\n   *   const chat = yield* Chat.empty\n   *   yield* chat.generateText({ prompt: \"Hello!\" })\n   *\n   *   const exportedData = yield* chat.export\n   *\n   *   // Save to database or file system\n   *   return exportedData\n   * })\n   * ```\n   */\n  readonly export: Effect.Effect<unknown, AiError.AiError>\n\n  /**\n   * Exports the chat history as a JSON string.\n   *\n   * Provides a convenient way to serialize the entire conversation\n   * for storage or transmission in JSON format.\n   *\n   * @example\n   * ```ts\n   * import { Chat } from \"@effect/ai\"\n   * import { Effect } from \"effect\"\n   *\n   * const backupChat = Effect.gen(function* () {\n   *   const chat = yield* Chat.empty\n   *   yield* chat.generateText({ prompt: \"Explain photosynthesis\" })\n   *\n   *   const jsonBackup = yield* chat.exportJson\n   *\n   *   yield* Effect.sync(() =>\n   *     localStorage.setItem(\"chat-backup\", jsonBackup)\n   *   )\n   *\n   *   return jsonBackup\n   * })\n   * ```\n   */\n  readonly exportJson: Effect.Effect<string, AiError.MalformedOutput>\n\n  /**\n   * Generate text using a language model for the specified prompt.\n   *\n   * If a toolkit is specified, the language model will have access to tools\n   * for function calling and enhanced capabilities. Both input and output\n   * messages are automatically added to the chat history.\n   *\n   * @example\n   * ```ts\n   * import { Chat } from \"@effect/ai\"\n   * import { Effect } from \"effect\"\n   *\n   * const chatWithAI = Effect.gen(function* () {\n   *   const chat = yield* Chat.empty\n   *\n   *   const response1 = yield* chat.generateText({\n   *     prompt: \"What is the capital of France?\"\n   *   })\n   *\n   *   const response2 = yield* chat.generateText({\n   *     prompt: \"What's the population of that city?\",\n   *   })\n   *\n   *   return [response1.content, response2.content]\n   * })\n   * ```\n   */\n  readonly generateText: <\n    Options extends NoExcessProperties<LanguageModel.GenerateTextOptions<any>, Options>,\n    Tools extends Record<string, Tool.Any> = {}\n  >(options: Options & LanguageModel.GenerateTextOptions<Tools>) => Effect.Effect<\n    LanguageModel.GenerateTextResponse<Tools>,\n    LanguageModel.ExtractError<Options>,\n    LanguageModel.LanguageModel | LanguageModel.ExtractContext<Options>\n  >\n\n  /**\n   * Generate text using a language model with streaming output.\n   *\n   * Returns a stream of response parts that are emitted as soon as they're\n   * available from the model. Supports tool calling and maintains chat history.\n   *\n   * @example\n   * ```ts\n   * import { Chat } from \"@effect/ai\"\n   * import { Effect, Stream, Console } from \"effect\"\n   *\n   * const streamingChat = Effect.gen(function* () {\n   *   const chat = yield* Chat.empty\n   *\n   *   const stream = yield* chat.streamText({\n   *     prompt: \"Write a short story about space exploration\"\n   *   })\n   *\n   *   yield* Stream.runForEach(stream, (part) =>\n   *     part.type === \"text-delta\"\n   *       ? Effect.sync(() => process.stdout.write(part.delta))\n   *       : Effect.void\n   *   )\n   * })\n   * ```\n   */\n  readonly streamText: <\n    Options extends NoExcessProperties<LanguageModel.GenerateTextOptions<any>, Options>,\n    Tools extends Record<string, Tool.Any> = {}\n  >(options: Options & LanguageModel.GenerateTextOptions<Tools>) => Stream.Stream<\n    Response.StreamPart<Tools>,\n    LanguageModel.ExtractError<Options>,\n    LanguageModel.LanguageModel | LanguageModel.ExtractContext<Options>\n  >\n\n  /**\n   * Generate a structured object using a language model and schema.\n   *\n   * Forces the model to return data that conforms to the specified schema,\n   * enabling structured data extraction and type-safe responses. The\n   * conversation history is maintained across calls.\n   *\n   * @example\n   * ```ts\n   * import { Chat } from \"@effect/ai\"\n   * import { Effect, Schema } from \"effect\"\n   *\n   * const ContactSchema = Schema.Struct({\n   *   name: Schema.String,\n   *   email: Schema.String,\n   *   phone: Schema.optional(Schema.String)\n   * })\n   *\n   * const extractContact = Effect.gen(function* () {\n   *   const chat = yield* Chat.empty\n   *\n   *   const contact = yield* chat.generateObject({\n   *     prompt: \"Extract contact info: John Doe, john@example.com, 555-1234\",\n   *     schema: ContactSchema\n   *   })\n   *\n   *   console.log(contact.object)\n   *   // { name: \"John Doe\", email: \"john@example.com\", phone: \"555-1234\" }\n   *\n   *   return contact.object\n   * })\n   * ```\n   */\n  readonly generateObject: <\n    A,\n    I extends Record<string, unknown>,\n    R,\n    Options extends NoExcessProperties<LanguageModel.GenerateObjectOptions<any, A, I, R>, Options>,\n    Tools extends Record<string, Tool.Any> = {}\n  >(options: Options & LanguageModel.GenerateObjectOptions<Tools, A, I, R>) => Effect.Effect<\n    LanguageModel.GenerateObjectResponse<Tools, A>,\n    LanguageModel.ExtractError<Options>,\n    LanguageModel.LanguageModel | R | LanguageModel.ExtractContext<Options>\n  >\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Chat.ts#L102"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Chat.ts#L105"
   },
   {
     "_tag": "Interface",
@@ -395,8 +395,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "Models",
-    "signature": "export interface Persisted extends Service {\n  /**\n   * The identifier for the chat in the backing persistence store.\n   */\n  readonly id: string\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Chat.ts#L649"
+    "signature": "export interface Persisted extends Service {\n  /**\n   * The identifier for the chat in the backing persistence store.\n   */\n  readonly id: string\n\n  /**\n   * Saves the current chat history into the backing persistence store.\n   */\n  readonly save: Effect.Effect<void, AiError.MalformedOutput | PersistenceBackingError>\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Chat.ts#L656"
   },
   {
     "_tag": "Interface",
@@ -411,8 +411,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "Models",
-    "signature": "export interface Service {\n    /**\n     * Attempts to retrieve the persisted chat from the backing persistence\n     * store with the specified chat identifer. If the chat does not exist in\n     * the persistence store, a `ChatNotFoundError` will be returned.\n     */\n    readonly get: (chatId: string) => Effect.Effect<\n      Persisted,\n      ChatNotFoundError | PersistenceBackingError\n    >\n\n    /**\n     * Attempts to retrieve the persisted chat from the backing persistence\n     * store with the specified chat identifer. If the chat does not exist in\n     * the persistence store, an empty chat will be created, saved, and\n     * returned.\n     */\n    readonly getOrCreate: (chatId: string) => Effect.Effect<\n      Persisted,\n      AiError.MalformedOutput | PersistenceBackingError\n    >\n  }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Chat.ts#L615"
+    "signature": "export interface Service {\n    /**\n     * Attempts to retrieve the persisted chat from the backing persistence\n     * store with the specified chat identifer. If the chat does not exist in\n     * the persistence store, a `ChatNotFoundError` will be returned.\n     */\n    readonly get: (chatId: string, options?: {\n      readonly timeToLive?: Duration.DurationInput | undefined\n    }) => Effect.Effect<\n      Persisted,\n      ChatNotFoundError | PersistenceBackingError\n    >\n\n    /**\n     * Attempts to retrieve the persisted chat from the backing persistence\n     * store with the specified chat identifer. If the chat does not exist in\n     * the persistence store, an empty chat will be created, saved, and\n     * returned.\n     */\n    readonly getOrCreate: (chatId: string, options?: {\n      readonly timeToLive?: Duration.DurationInput | undefined\n    }) => Effect.Effect<\n      Persisted,\n      AiError.MalformedOutput | PersistenceBackingError\n    >\n  }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Chat.ts#L618"
   },
   {
     "_tag": "Class",
@@ -619,7 +619,7 @@
     "deprecated": false,
     "examples": [
       "```ts\nimport { AiError } from \"@effect/ai\"\nimport { Effect, Match } from \"effect\"\n\nconst handleAiError = Match.type<AiError.AiError>().pipe(\n  Match.tag(\"HttpRequestError\", (err) =>\n    Effect.logError(`Request failed: ${err.message}`)\n  ),\n  Match.tag(\"HttpResponseError\", (err) =>\n    Effect.logError(`Response error (${err.response.status}): ${err.message}`)\n  ),\n  Match.tag(\"MalformedInput\", (err) =>\n    Effect.logError(`Invalid input: ${err.message}`)\n  ),\n  Match.tag(\"MalformedOutput\", (err) =>\n    Effect.logError(`Invalid output: ${err.message}`)\n  ),\n  Match.orElse((err) =>\n    Effect.logError(`Unknown error: ${err.message}`)\n  )\n)\n```",
-      "```ts\nimport { AiError } from \"@effect/ai\"\nimport { Effect, Option } from \"effect\"\n\nconst aiOperation = Effect.gen(function* () {\n  // Some AI operation that might fail\n  return yield* new AiError.HttpRequestError({\n    module: \"OpenAI\",\n    method: \"completion\",\n    reason: \"Transport\",\n    request: {\n      method: \"POST\",\n      url: \"https://api.openai.com/v1/completions\",\n      urlParams: [],\n      hash: Option.none(),\n      headers: { \"Authorization\": \"Bearer ***\" }\n    }\n  })\n})\n\nconst program = aiOperation.pipe(\n  Effect.catchTag(\"HttpRequestError\", (error) => {\n    console.log(\"Request failed:\", error.message)\n    return Effect.succeed(\"fallback response\")\n  })\n)\n```"
+      "```ts\nimport { AiError } from \"@effect/ai\"\nimport { Effect, Option } from \"effect\"\n\nconst aiOperation = Effect.gen(function* () {\n  // Some AI operation that might fail\n  return yield* new AiError.HttpRequestError({\n    module: \"OpenAI\",\n    method: \"completion\",\n    reason: \"Transport\",\n    request: {\n      method: \"POST\",\n      url: \"https://api.openai.com/v1/completions\",\n      urlParams: [],\n      hash: Option.none(),\n      headers: { \"Content-Type\": \"application/json\" }\n    }\n  })\n})\n\nconst program = aiOperation.pipe(\n  Effect.catchTag(\"HttpRequestError\", (error) => {\n    console.log(\"Request failed:\", error.message)\n    return Effect.succeed(\"fallback response\")\n  })\n)\n```"
     ],
     "since": "1.0.0",
     "category": null,
@@ -3269,7 +3269,7 @@
     "since": "1.0.0",
     "category": "Schemas",
     "signature": "declare class PromptFromSelf",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L1213"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L1214"
   },
   {
     "_tag": "Constant",
@@ -3285,7 +3285,7 @@
     "since": "1.0.0",
     "category": "Models",
     "signature": "declare const ProviderOptions: Schema.Record$<typeof Schema.String, Schema.UndefinedOr<Schema.Record$<typeof Schema.String, typeof Schema.Unknown>>>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L86"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L87"
   },
   {
     "_tag": "Constant",
@@ -3301,7 +3301,7 @@
     "since": "1.0.0",
     "category": "Type Ids",
     "signature": "declare const PartTypeId: \"~effect/ai/Prompt/Part\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L112"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L113"
   },
   {
     "_tag": "Constant",
@@ -3317,7 +3317,7 @@
     "since": "1.0.0",
     "category": "Schemas",
     "signature": "declare const TextPart: Schema.Schema<TextPart, TextPartEncoded, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L290"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L291"
   },
   {
     "_tag": "Constant",
@@ -3333,7 +3333,7 @@
     "since": "1.0.0",
     "category": "Schemas",
     "signature": "declare const ReasoningPart: Schema.Schema<ReasoningPart, ReasoningPartEncoded, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L353"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L354"
   },
   {
     "_tag": "Constant",
@@ -3349,7 +3349,7 @@
     "since": "1.0.0",
     "category": "Schemas",
     "signature": "declare const FilePart: Schema.Schema<FilePart, FilePartEncoded, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L443"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L444"
   },
   {
     "_tag": "Constant",
@@ -3365,7 +3365,7 @@
     "since": "1.0.0",
     "category": "Schemas",
     "signature": "declare const ToolCallPart: Schema.Schema<ToolCallPart, ToolCallPartEncoded, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L535"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L536"
   },
   {
     "_tag": "Constant",
@@ -3381,7 +3381,7 @@
     "since": "1.0.0",
     "category": "Schemas",
     "signature": "declare const ToolResultPart: Schema.Schema<ToolResultPart, ToolResultPartEncoded, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L623"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L624"
   },
   {
     "_tag": "Constant",
@@ -3397,7 +3397,7 @@
     "since": "1.0.0",
     "category": "Type Ids",
     "signature": "declare const MessageTypeId: \"~effect/ai/Prompt/Message\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L644"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L645"
   },
   {
     "_tag": "Constant",
@@ -3413,7 +3413,7 @@
     "since": "1.0.0",
     "category": "Schemas",
     "signature": "declare const MessageContentFromString: Schema.Schema<readonly [TextPart, ...TextPart[]], string, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L740"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L741"
   },
   {
     "_tag": "Constant",
@@ -3429,7 +3429,7 @@
     "since": "1.0.0",
     "category": "Schemas",
     "signature": "declare const SystemMessage: Schema.Schema<SystemMessage, SystemMessageEncoded, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L804"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L805"
   },
   {
     "_tag": "Constant",
@@ -3445,7 +3445,7 @@
     "since": "1.0.0",
     "category": "Schemas",
     "signature": "declare const UserMessage: Schema.Schema<UserMessage, UserMessageEncoded, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L900"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L901"
   },
   {
     "_tag": "Constant",
@@ -3461,7 +3461,7 @@
     "since": "1.0.0",
     "category": "Schemas",
     "signature": "declare const AssistantMessage: Schema.Schema<AssistantMessage, AssistantMessageEncoded, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L1007"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L1008"
   },
   {
     "_tag": "Constant",
@@ -3477,7 +3477,7 @@
     "since": "1.0.0",
     "category": "Schemas",
     "signature": "declare const ToolMessage: Schema.Schema<ToolMessage, ToolMessageEncoded, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L1101"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L1102"
   },
   {
     "_tag": "Constant",
@@ -3493,7 +3493,7 @@
     "since": "1.0.0",
     "category": "Schemas",
     "signature": "declare const Message: Schema.Schema<Message, MessageEncoded, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L1144"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L1145"
   },
   {
     "_tag": "Constant",
@@ -3509,7 +3509,7 @@
     "since": "1.0.0",
     "category": "Type Ids",
     "signature": "declare const TypeId: \"~@effect/ai/Prompt\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L1161"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L1162"
   },
   {
     "_tag": "Constant",
@@ -3525,7 +3525,7 @@
     "since": "1.0.0",
     "category": "Schemas",
     "signature": "declare const Prompt: Schema.Schema<Prompt, PromptEncoded, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L1227"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L1232"
   },
   {
     "_tag": "Constant",
@@ -3541,7 +3541,7 @@
     "since": "1.0.0",
     "category": "Schemas",
     "signature": "declare const FromJson: Schema.transform<Schema.SchemaClass<unknown, string, never>, Schema.Schema<Prompt, PromptEncoded, never>>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L1265"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L1270"
   },
   {
     "_tag": "Constant",
@@ -3559,7 +3559,7 @@
     "since": "1.0.0",
     "category": "Constructors",
     "signature": "declare const empty: Prompt",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L1327"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L1332"
   },
   {
     "_tag": "Constant",
@@ -3576,8 +3576,8 @@
     ],
     "since": "1.0.0",
     "category": "Combinators",
-    "signature": "declare const merge: { (other: RawInput): (self: Prompt) => Prompt; (self: Prompt, other: RawInput): Prompt; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L1577"
+    "signature": "declare const merge: { (input: RawInput): (self: Prompt) => Prompt; (self: Prompt, input: RawInput): Prompt; }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L1592"
   },
   {
     "_tag": "Constant",
@@ -3595,7 +3595,7 @@
     "since": "1.0.0",
     "category": "Combinators",
     "signature": "declare const setSystem: { (content: string): (self: Prompt) => Prompt; (self: Prompt, content: string): Prompt; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L1619"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L1639"
   },
   {
     "_tag": "Constant",
@@ -3613,7 +3613,7 @@
     "since": "1.0.0",
     "category": "Combinators",
     "signature": "declare const prependSystem: { (content: string): (self: Prompt) => Prompt; (self: Prompt, content: string): Prompt; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L1661"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L1681"
   },
   {
     "_tag": "Constant",
@@ -3631,7 +3631,7 @@
     "since": "1.0.0",
     "category": "Combinators",
     "signature": "declare const appendSystem: { (content: string): (self: Prompt) => Prompt; (self: Prompt, content: string): Prompt; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L1708"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L1728"
   },
   {
     "_tag": "Function",
@@ -3647,7 +3647,7 @@
     "since": "1.0.0",
     "category": "Guards",
     "signature": "declare const isPart: (u: unknown) => u is Part",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L128"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L129"
   },
   {
     "_tag": "Function",
@@ -3665,7 +3665,7 @@
     "since": "1.0.0",
     "category": "Constructors",
     "signature": "declare const makePart: <const Type extends Part[\"type\"]>(type: Type, params: Omit<Extract<Part, { type: Type; }>, PartTypeId | \"type\" | \"options\"> & { readonly options?: Extract<Part, { type: Type; }>[\"options\"] | undefined; }) => Extract<Part, { type: Type; }>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L212"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L213"
   },
   {
     "_tag": "Function",
@@ -3681,7 +3681,7 @@
     "since": "1.0.0",
     "category": "Guards",
     "signature": "declare const isMessage: (u: unknown) => u is Message",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L660"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L661"
   },
   {
     "_tag": "Function",
@@ -3699,7 +3699,7 @@
     "since": "1.0.0",
     "category": "Constructors",
     "signature": "declare const makeMessage: <const Role extends Message[\"role\"]>(role: Role, params: Omit<Extract<Message, { role: Role; }>, MessageTypeId | \"role\" | \"options\"> & { readonly options?: Extract<Message, { role: Role; }>[\"options\"]; }) => Extract<Message, { role: Role; }>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L720"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L721"
   },
   {
     "_tag": "Function",
@@ -3715,7 +3715,7 @@
     "since": "1.0.0",
     "category": "Guards",
     "signature": "declare const isPrompt: (u: unknown) => u is Prompt",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L1177"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L1178"
   },
   {
     "_tag": "Function",
@@ -3733,7 +3733,7 @@
     "since": "1.0.0",
     "category": "Constructors",
     "signature": "declare const make: (input: RawInput) => Prompt",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L1356"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L1361"
   },
   {
     "_tag": "Function",
@@ -3751,7 +3751,7 @@
     "since": "1.0.0",
     "category": "Constructors",
     "signature": "declare const fromMessages: (messages: ReadonlyArray<Message>) => Prompt",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L1394"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L1399"
   },
   {
     "_tag": "Function",
@@ -3769,7 +3769,7 @@
     "since": "1.0.0",
     "category": "Constructors",
     "signature": "declare const fromResponseParts: (parts: ReadonlyArray<Response.AnyPart>) => Prompt",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L1465"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L1470"
   },
   {
     "_tag": "Interface",
@@ -3785,7 +3785,7 @@
     "since": "1.0.0",
     "category": "Models",
     "signature": "export interface BasePart<Type extends string, Options extends ProviderOptions> {\n  readonly [PartTypeId]: PartTypeId\n  /**\n   * The type of this content part.\n   */\n  readonly type: Type\n  /**\n   * Provider-specific options for this part.\n   */\n  readonly options: Options\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L162"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L163"
   },
   {
     "_tag": "Interface",
@@ -3801,7 +3801,7 @@
     "since": "1.0.0",
     "category": "Models",
     "signature": "export interface BasePartEncoded<Type extends string, Options extends ProviderOptions> {\n  /**\n   * The type of this content part.\n   */\n  readonly type: Type\n  /**\n   * Provider-specific options for this part.\n   */\n  readonly options?: Options | undefined\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L180"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L181"
   },
   {
     "_tag": "Interface",
@@ -3819,7 +3819,7 @@
     "since": "1.0.0",
     "category": "Models",
     "signature": "export interface TextPart extends BasePart<\"text\", TextPartOptions> {\n  /**\n   * The text content.\n   */\n  readonly text: string\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L255"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L256"
   },
   {
     "_tag": "Interface",
@@ -3835,7 +3835,7 @@
     "since": "1.0.0",
     "category": "Models",
     "signature": "export interface TextPartEncoded extends BasePartEncoded<\"text\", TextPartOptions> {\n  /**\n   * The text content.\n   */\n  readonly text: string\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L268"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L269"
   },
   {
     "_tag": "Interface",
@@ -3851,7 +3851,7 @@
     "since": "1.0.0",
     "category": "ProviderOptions",
     "signature": "export interface TextPartOptions extends ProviderOptions {}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L282"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L283"
   },
   {
     "_tag": "Interface",
@@ -3869,7 +3869,7 @@
     "since": "1.0.0",
     "category": "Models",
     "signature": "export interface ReasoningPart extends BasePart<\"reasoning\", ReasoningPartOptions> {\n  /**\n   * The reasoning or thought process text.\n   */\n  readonly text: string\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L318"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L319"
   },
   {
     "_tag": "Interface",
@@ -3885,7 +3885,7 @@
     "since": "1.0.0",
     "category": "Models",
     "signature": "export interface ReasoningPartEncoded extends BasePartEncoded<\"reasoning\", ReasoningPartOptions> {\n  /**\n   * The reasoning or thought process text.\n   */\n  readonly text: string\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L331"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L332"
   },
   {
     "_tag": "Interface",
@@ -3901,7 +3901,7 @@
     "since": "1.0.0",
     "category": "ProviderOptions",
     "signature": "export interface ReasoningPartOptions extends ProviderOptions {}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L345"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L346"
   },
   {
     "_tag": "Interface",
@@ -3919,7 +3919,7 @@
     "since": "1.0.0",
     "category": "Models",
     "signature": "export interface FilePart extends BasePart<\"file\", FilePartOptions> {\n  /**\n   * MIME type of the file (e.g., \"image/jpeg\", \"application/pdf\").\n   */\n  readonly mediaType: string\n  /**\n   * Optional filename for the file.\n   */\n  readonly fileName?: string | undefined\n  /**\n   * File data as base64 string of data, a byte array, or a URL.\n   */\n  readonly data: string | Uint8Array | URL\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L392"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L393"
   },
   {
     "_tag": "Interface",
@@ -3935,7 +3935,7 @@
     "since": "1.0.0",
     "category": "Models",
     "signature": "export interface FilePartEncoded extends BasePartEncoded<\"file\", FilePartOptions> {\n  /**\n   * MIME type of the file (e.g., \"image/jpeg\", \"application/pdf\").\n   */\n  readonly mediaType: string\n  /**\n   * Optional filename for the file.\n   */\n  readonly fileName?: string | undefined\n  /**\n   * File data as base64 string of data, a byte array, or a URL.\n   */\n  readonly data: string | Uint8Array | URL\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L413"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L414"
   },
   {
     "_tag": "Interface",
@@ -3951,7 +3951,7 @@
     "since": "1.0.0",
     "category": "ProviderOptions",
     "signature": "export interface FilePartOptions extends ProviderOptions {}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L435"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L436"
   },
   {
     "_tag": "Interface",
@@ -3969,7 +3969,7 @@
     "since": "1.0.0",
     "category": "Models",
     "signature": "export interface ToolCallPart extends BasePart<\"tool-call\", ToolCallPartOptions> {\n  /**\n   * Unique identifier for this tool call.\n   */\n  readonly id: string\n  /**\n   * Name of the tool to invoke.\n   */\n  readonly name: string\n  /**\n   * Parameters to pass to the tool.\n   */\n  readonly params: unknown\n  /**\n   * Whether the tool was executed by the provider (true) or framework (false).\n   */\n  readonly providerExecuted: boolean\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L476"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L477"
   },
   {
     "_tag": "Interface",
@@ -3985,7 +3985,7 @@
     "since": "1.0.0",
     "category": "Models",
     "signature": "export interface ToolCallPartEncoded extends BasePartEncoded<\"tool-call\", ToolCallPartOptions> {\n  /**\n   * Unique identifier for this tool call.\n   */\n  readonly id: string\n  /**\n   * Name of the tool to invoke.\n   */\n  readonly name: string\n  /**\n   * Parameters to pass to the tool.\n   */\n  readonly params: unknown\n  /**\n   * Whether the tool was executed by the provider (true) or framework (false).\n   */\n  readonly providerExecuted?: boolean | undefined\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L501"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L502"
   },
   {
     "_tag": "Interface",
@@ -4001,7 +4001,7 @@
     "since": "1.0.0",
     "category": "ProviderOptions",
     "signature": "export interface ToolCallPartOptions extends ProviderOptions {}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L527"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L528"
   },
   {
     "_tag": "Interface",
@@ -4019,7 +4019,7 @@
     "since": "1.0.0",
     "category": "Models",
     "signature": "export interface ToolResultPart extends BasePart<\"tool-result\", ToolResultPartOptions> {\n  /**\n   * Unique identifier matching the original tool call.\n   */\n  readonly id: string\n  /**\n   * Name of the tool that was executed.\n   */\n  readonly name: string\n  /**\n   * The result returned by the tool execution.\n   */\n  readonly result: unknown\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L572"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L573"
   },
   {
     "_tag": "Interface",
@@ -4035,7 +4035,7 @@
     "since": "1.0.0",
     "category": "Models",
     "signature": "export interface ToolResultPartEncoded extends BasePartEncoded<\"tool-result\", ToolResultPartOptions> {\n  /**\n   * Unique identifier matching the original tool call.\n   */\n  readonly id: string\n  /**\n   * Name of the tool that was executed.\n   */\n  readonly name: string\n  /**\n   * The result returned by the tool execution.\n   */\n  readonly result: unknown\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L593"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L594"
   },
   {
     "_tag": "Interface",
@@ -4051,7 +4051,7 @@
     "since": "1.0.0",
     "category": "ProviderOptions",
     "signature": "export interface ToolResultPartOptions extends ProviderOptions {}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L615"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L616"
   },
   {
     "_tag": "Interface",
@@ -4067,7 +4067,7 @@
     "since": "1.0.0",
     "category": "Models",
     "signature": "export interface BaseMessage<Role extends string, Options extends ProviderOptions> {\n  readonly [MessageTypeId]: MessageTypeId\n  /**\n   * The role of the message participant.\n   */\n  readonly role: Role\n  /**\n   * Provider-specific options for this message.\n   */\n  readonly options: Options\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L670"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L671"
   },
   {
     "_tag": "Interface",
@@ -4083,7 +4083,7 @@
     "since": "1.0.0",
     "category": "Models",
     "signature": "export interface BaseMessageEncoded<Role extends string, Options extends ProviderOptions> {\n  /**\n   * The role of the message participant.\n   */\n  readonly role: Role\n  /**\n   * Provider-specific options for this message.\n   */\n  readonly options?: Options | undefined\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L690"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L691"
   },
   {
     "_tag": "Interface",
@@ -4101,7 +4101,7 @@
     "since": "1.0.0",
     "category": "Models",
     "signature": "export interface SystemMessage extends BaseMessage<\"system\", SystemMessageOptions> {\n  /**\n   * The system instruction or context as plain text.\n   */\n  readonly content: string\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L769"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L770"
   },
   {
     "_tag": "Interface",
@@ -4117,7 +4117,7 @@
     "since": "1.0.0",
     "category": "Models",
     "signature": "export interface SystemMessageEncoded extends BaseMessageEncoded<\"system\", SystemMessageOptions> {\n  /**\n   * The system instruction or context as plain text.\n   */\n  readonly content: string\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L782"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L783"
   },
   {
     "_tag": "Interface",
@@ -4133,7 +4133,7 @@
     "since": "1.0.0",
     "category": "ProviderOptions",
     "signature": "export interface SystemMessageOptions extends ProviderOptions {}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L796"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L797"
   },
   {
     "_tag": "Interface",
@@ -4151,7 +4151,7 @@
     "since": "1.0.0",
     "category": "Models",
     "signature": "export interface UserMessage extends BaseMessage<\"user\", UserMessageOptions> {\n  /**\n   * Array of content parts that make up the user's message.\n   */\n  readonly content: ReadonlyArray<UserMessagePart>\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L849"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L850"
   },
   {
     "_tag": "Interface",
@@ -4167,7 +4167,7 @@
     "since": "1.0.0",
     "category": "Models",
     "signature": "export interface UserMessageEncoded extends BaseMessageEncoded<\"user\", UserMessageOptions> {\n  /**\n   * Array of content parts that make up the user's message.\n   */\n  readonly content: string | ReadonlyArray<UserMessagePartEncoded>\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L870"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L871"
   },
   {
     "_tag": "Interface",
@@ -4183,7 +4183,7 @@
     "since": "1.0.0",
     "category": "ProviderOptions",
     "signature": "export interface UserMessageOptions extends ProviderOptions {}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L892"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L893"
   },
   {
     "_tag": "Interface",
@@ -4201,7 +4201,7 @@
     "since": "1.0.0",
     "category": "Models",
     "signature": "export interface AssistantMessage extends BaseMessage<\"assistant\", AssistantMessageOptions> {\n  /**\n   * Array of content parts that make up the assistant's response.\n   */\n  readonly content: ReadonlyArray<AssistantMessagePart>\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L949"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L950"
   },
   {
     "_tag": "Interface",
@@ -4217,7 +4217,7 @@
     "since": "1.0.0",
     "category": "Models",
     "signature": "export interface AssistantMessageEncoded extends BaseMessageEncoded<\"assistant\", AssistantMessageOptions> {\n  readonly content: string | ReadonlyArray<AssistantMessagePartEncoded>\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L975"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L976"
   },
   {
     "_tag": "Interface",
@@ -4233,7 +4233,7 @@
     "since": "1.0.0",
     "category": "ProviderOptions",
     "signature": "export interface AssistantMessageOptions extends ProviderOptions {}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L999"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L1000"
   },
   {
     "_tag": "Interface",
@@ -4251,7 +4251,7 @@
     "since": "1.0.0",
     "category": "Models",
     "signature": "export interface ToolMessage extends BaseMessage<\"tool\", ToolMessageOptions> {\n  /**\n   * Array of tool result parts.\n   */\n  readonly content: ReadonlyArray<ToolMessagePart>\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L1050"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L1051"
   },
   {
     "_tag": "Interface",
@@ -4267,7 +4267,7 @@
     "since": "1.0.0",
     "category": "Models",
     "signature": "export interface ToolMessageEncoded extends BaseMessageEncoded<\"tool\", ToolMessageOptions> {\n  /**\n   * Array of tool result parts.\n   */\n  readonly content: ReadonlyArray<ToolMessagePartEncoded>\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L1071"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L1072"
   },
   {
     "_tag": "Interface",
@@ -4283,7 +4283,7 @@
     "since": "1.0.0",
     "category": "ProviderOptions",
     "signature": "export interface ToolMessageOptions extends ProviderOptions {}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L1093"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L1094"
   },
   {
     "_tag": "Interface",
@@ -4299,7 +4299,7 @@
     "since": "1.0.0",
     "category": "Models",
     "signature": "export interface Prompt extends Pipeable {\n  readonly [TypeId]: TypeId\n  /**\n   * Array of messages that make up the conversation.\n   */\n  readonly content: ReadonlyArray<Message>\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L1186"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L1187"
   },
   {
     "_tag": "Interface",
@@ -4315,7 +4315,7 @@
     "since": "1.0.0",
     "category": "Models",
     "signature": "export interface PromptEncoded {\n  /**\n   * Array of messages that make up the conversation.\n   */\n  readonly content: ReadonlyArray<MessageEncoded>\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L1200"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L1201"
   },
   {
     "_tag": "TypeAlias",
@@ -4330,7 +4330,7 @@
     "since": "1.0.0",
     "category": "Models",
     "signature": "type ProviderOptions = typeof ProviderOptions.Type",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L100"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L101"
   },
   {
     "_tag": "TypeAlias",
@@ -4346,7 +4346,7 @@
     "since": "1.0.0",
     "category": "Type Ids",
     "signature": "type PartTypeId = typeof PartTypeId",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L120"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L121"
   },
   {
     "_tag": "TypeAlias",
@@ -4362,7 +4362,7 @@
     "since": "1.0.0",
     "category": "Models",
     "signature": "type Part = TextPart | ReasoningPart | FilePart | ToolCallPart | ToolResultPart",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L139"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L140"
   },
   {
     "_tag": "TypeAlias",
@@ -4378,7 +4378,7 @@
     "since": "1.0.0",
     "category": "Models",
     "signature": "type PartEncoded = | TextPartEncoded\n  | ReasoningPartEncoded\n  | FilePartEncoded\n  | ToolCallPartEncoded\n  | ToolResultPartEncoded",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L147"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L148"
   },
   {
     "_tag": "TypeAlias",
@@ -4394,7 +4394,7 @@
     "since": "1.0.0",
     "category": "Type Ids",
     "signature": "type MessageTypeId = typeof MessageTypeId",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L652"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L653"
   },
   {
     "_tag": "TypeAlias",
@@ -4410,7 +4410,7 @@
     "since": "1.0.0",
     "category": "Models",
     "signature": "type UserMessagePart = TextPart | FilePart",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L862"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L863"
   },
   {
     "_tag": "TypeAlias",
@@ -4426,7 +4426,7 @@
     "since": "1.0.0",
     "category": "Models",
     "signature": "type UserMessagePartEncoded = TextPartEncoded | FilePartEncoded",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L883"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L884"
   },
   {
     "_tag": "TypeAlias",
@@ -4442,7 +4442,7 @@
     "since": "1.0.0",
     "category": "Models",
     "signature": "type AssistantMessagePart = | TextPart\n  | FilePart\n  | ReasoningPart\n  | ToolCallPart\n  | ToolResultPart",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L962"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L963"
   },
   {
     "_tag": "TypeAlias",
@@ -4458,7 +4458,7 @@
     "since": "1.0.0",
     "category": "Models",
     "signature": "type AssistantMessagePartEncoded = | TextPartEncoded\n  | FilePartEncoded\n  | ReasoningPartEncoded\n  | ToolCallPartEncoded\n  | ToolResultPartEncoded",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L985"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L986"
   },
   {
     "_tag": "TypeAlias",
@@ -4474,7 +4474,7 @@
     "since": "1.0.0",
     "category": "Models",
     "signature": "type ToolMessagePart = ToolResultPart",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L1063"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L1064"
   },
   {
     "_tag": "TypeAlias",
@@ -4490,7 +4490,7 @@
     "since": "1.0.0",
     "category": "Models",
     "signature": "type ToolMessagePartEncoded = ToolResultPartEncoded",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L1084"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L1085"
   },
   {
     "_tag": "TypeAlias",
@@ -4506,7 +4506,7 @@
     "since": "1.0.0",
     "category": "Models",
     "signature": "type Message = | SystemMessage\n  | UserMessage\n  | AssistantMessage\n  | ToolMessage",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L1120"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L1121"
   },
   {
     "_tag": "TypeAlias",
@@ -4522,7 +4522,7 @@
     "since": "1.0.0",
     "category": "Models",
     "signature": "type MessageEncoded = | SystemMessageEncoded\n  | UserMessageEncoded\n  | AssistantMessageEncoded\n  | ToolMessageEncoded",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L1132"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L1133"
   },
   {
     "_tag": "TypeAlias",
@@ -4538,7 +4538,7 @@
     "since": "1.0.0",
     "category": "Type Ids",
     "signature": "type TypeId = typeof TypeId",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L1169"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L1170"
   },
   {
     "_tag": "TypeAlias",
@@ -4556,7 +4556,7 @@
     "since": "1.0.0",
     "category": "Models",
     "signature": "type RawInput = | string\n  | Iterable<MessageEncoded>\n  | Prompt",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L1294"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L1299"
   },
   {
     "_tag": "Class",
@@ -4572,7 +4572,7 @@
     "since": "1.0.0",
     "category": "Models",
     "signature": "declare class Usage",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L1974"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L1971"
   },
   {
     "_tag": "Constant",
@@ -4604,7 +4604,7 @@
     "since": "1.0.0",
     "category": "Schemas",
     "signature": "declare const ProviderMetadata: Schema.Record$<typeof Schema.String, Schema.UndefinedOr<Schema.Record$<typeof Schema.String, typeof Schema.Unknown>>>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L449"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L446"
   },
   {
     "_tag": "Constant",
@@ -4620,7 +4620,7 @@
     "since": "1.0.0",
     "category": "Schemas",
     "signature": "declare const TextPart: Schema.Schema<TextPart, TextPartEncoded, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L602"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L599"
   },
   {
     "_tag": "Constant",
@@ -4636,7 +4636,7 @@
     "since": "1.0.0",
     "category": "Schemas",
     "signature": "declare const TextStartPart: Schema.Schema<TextStartPart, TextStartPartEncoded, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L658"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L655"
   },
   {
     "_tag": "Constant",
@@ -4652,7 +4652,7 @@
     "since": "1.0.0",
     "category": "Schemas",
     "signature": "declare const TextDeltaPart: Schema.Schema<TextDeltaPart, TextDeltaPartEncoded, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L721"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L718"
   },
   {
     "_tag": "Constant",
@@ -4668,7 +4668,7 @@
     "since": "1.0.0",
     "category": "Schemas",
     "signature": "declare const TextEndPart: Schema.Schema<TextEndPart, TextEndPartEncoded, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L778"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L775"
   },
   {
     "_tag": "Constant",
@@ -4684,7 +4684,7 @@
     "since": "1.0.0",
     "category": "Schemas",
     "signature": "declare const ReasoningPart: Schema.Schema<ReasoningPart, ReasoningPartEncoded, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L844"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L841"
   },
   {
     "_tag": "Constant",
@@ -4700,7 +4700,7 @@
     "since": "1.0.0",
     "category": "Schemas",
     "signature": "declare const ReasoningStartPart: Schema.Schema<ReasoningStartPart, ReasoningStartPartEncoded, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L900"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L897"
   },
   {
     "_tag": "Constant",
@@ -4716,7 +4716,7 @@
     "since": "1.0.0",
     "category": "Schemas",
     "signature": "declare const ReasoningDeltaPart: Schema.Schema<ReasoningDeltaPart, ReasoningDeltaPartEncoded, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L963"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L960"
   },
   {
     "_tag": "Constant",
@@ -4732,7 +4732,7 @@
     "since": "1.0.0",
     "category": "Schemas",
     "signature": "declare const ReasoningEndPart: Schema.Schema<ReasoningEndPart, ReasoningEndPartEncoded, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L1020"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L1017"
   },
   {
     "_tag": "Constant",
@@ -4748,7 +4748,7 @@
     "since": "1.0.0",
     "category": "Schemas",
     "signature": "declare const ToolParamsStartPart: Schema.Schema<ToolParamsStartPart, ToolParamsStartPartEncoded, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L1113"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L1110"
   },
   {
     "_tag": "Constant",
@@ -4764,7 +4764,7 @@
     "since": "1.0.0",
     "category": "Schemas",
     "signature": "declare const ToolParamsDeltaPart: Schema.Schema<ToolParamsDeltaPart, ToolParamsDeltaPartEncoded, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L1181"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L1178"
   },
   {
     "_tag": "Constant",
@@ -4780,7 +4780,7 @@
     "since": "1.0.0",
     "category": "Schemas",
     "signature": "declare const ToolParamsEndPart: Schema.Schema<ToolParamsEndPart, ToolParamsEndPartEncoded, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L1239"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L1236"
   },
   {
     "_tag": "Constant",
@@ -4796,7 +4796,7 @@
     "since": "1.0.0",
     "category": "Schemas",
     "signature": "declare const FilePart: Schema.Schema<FilePart, FilePartEncoded, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L1647"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L1644"
   },
   {
     "_tag": "Constant",
@@ -4812,7 +4812,7 @@
     "since": "1.0.0",
     "category": "Schemas",
     "signature": "declare const DocumentSourcePart: Schema.Schema<DocumentSourcePart, DocumentSourcePartEncoded, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L1736"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L1733"
   },
   {
     "_tag": "Constant",
@@ -4828,7 +4828,7 @@
     "since": "1.0.0",
     "category": "Schemas",
     "signature": "declare const UrlSourcePart: Schema.Schema<UrlSourcePart, UrlSourcePartEncoded, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L1820"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L1817"
   },
   {
     "_tag": "Constant",
@@ -4844,7 +4844,7 @@
     "since": "1.0.0",
     "category": "Schemas",
     "signature": "declare const ResponseMetadataPart: Schema.Schema<ResponseMetadataPart, ResponseMetadataPartEncoded, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L1907"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L1904"
   },
   {
     "_tag": "Constant",
@@ -4860,7 +4860,7 @@
     "since": "1.0.0",
     "category": "Models",
     "signature": "declare const FinishReason: Schema.Literal<[\"stop\", \"length\", \"content-filter\", \"tool-calls\", \"error\", \"pause\", \"other\", \"unknown\"]>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L1938"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L1935"
   },
   {
     "_tag": "Constant",
@@ -4876,7 +4876,7 @@
     "since": "1.0.0",
     "category": "Schemas",
     "signature": "declare const FinishPart: Schema.Schema<FinishPart, FinishPartEncoded, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L2066"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L2063"
   },
   {
     "_tag": "Constant",
@@ -4892,7 +4892,7 @@
     "since": "1.0.0",
     "category": "Schemas",
     "signature": "declare const ErrorPart: Schema.Schema<ErrorPart, ErrorPartEncoded, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L2124"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L2121"
   },
   {
     "_tag": "Function",
@@ -4925,7 +4925,7 @@
     ],
     "since": "1.0.0",
     "category": "Schemas",
-    "signature": "declare const AllParts: <T extends Toolkit.Any | Toolkit.WithHandler<any>>(toolkit: T) => Schema.Schema<AllParts<Toolkit.Tools<T>>, AllParts<Toolkit.Tools<T>>>",
+    "signature": "declare const AllParts: <T extends Toolkit.Any | Toolkit.WithHandler<any>>(toolkit: T) => Schema.Schema<AllParts<Toolkit.Tools<T>>, AllPartsEncoded>",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L201"
   },
   {
@@ -4942,7 +4942,7 @@
     "since": "1.0.0",
     "category": "Schemas",
     "signature": "declare const Part: <T extends Toolkit.Any | Toolkit.WithHandler<any>>(toolkit: T) => Schema.Schema<Part<Toolkit.Tools<T>>, PartEncoded>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L285"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L282"
   },
   {
     "_tag": "Function",
@@ -4958,7 +4958,7 @@
     "since": "1.0.0",
     "category": "Schemas",
     "signature": "declare const StreamPart: <T extends Toolkit.Any | Toolkit.WithHandler<any>>(toolkit: T) => Schema.Schema<StreamPart<Toolkit.Tools<T>>, StreamPartEncoded>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L369"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L366"
   },
   {
     "_tag": "Function",
@@ -4976,7 +4976,7 @@
     "since": "1.0.0",
     "category": "Constructors",
     "signature": "declare const makePart: <const Type extends AnyPart[\"type\"]>(type: Type, params: Omit<Extract<AnyPart, { type: Type; }>, PartTypeId | \"type\" | \"metadata\"> & { readonly metadata?: Extract<AnyPart, { type: Type; }>[\"metadata\"] | undefined; }) => Extract<AnyPart, { type: Type; }>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L526"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L523"
   },
   {
     "_tag": "Function",
@@ -4992,7 +4992,7 @@
     "since": "1.0.0",
     "category": "Schemas",
     "signature": "declare const ToolCallPart: <const Name extends string, Params extends Schema.Struct.Fields>(name: Name, params: Schema.Struct<Params>) => Schema.Schema<ToolCallPart<Name, Params>, ToolCallPartEncoded>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L1363"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L1360"
   },
   {
     "_tag": "Function",
@@ -5008,7 +5008,7 @@
     "since": "1.0.0",
     "category": "Schemas",
     "signature": "declare const ToolResultPart: <const Name extends string, Result extends Schema.Schema.Any>(name: Name, result: Result) => Schema.Schema<ToolResultPart<Name, Schema.Schema.Type<Result>>, ToolResultPartEncoded>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L1512"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L1509"
   },
   {
     "_tag": "Interface",
@@ -5024,7 +5024,7 @@
     "since": "1.0.0",
     "category": "Models",
     "signature": "export interface BasePart<Type extends string, Metadata extends ProviderMetadata> {\n  readonly [PartTypeId]: PartTypeId\n  /**\n   * The type of this response part.\n   */\n  readonly type: Type\n  /**\n   * Optional provider-specific metadata for this part.\n   */\n  readonly metadata: Metadata\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L473"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L470"
   },
   {
     "_tag": "Interface",
@@ -5040,7 +5040,7 @@
     "since": "1.0.0",
     "category": "Models",
     "signature": "export interface BasePartEncoded<Type extends string, Metadata extends ProviderMetadata> {\n  /**\n   * The type of this response part.\n   */\n  readonly type: Type\n  /**\n   * Optional provider-specific metadata for this part.\n   */\n  readonly metadata?: Metadata | undefined\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L493"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L490"
   },
   {
     "_tag": "Interface",
@@ -5058,7 +5058,7 @@
     "since": "1.0.0",
     "category": "Models",
     "signature": "export interface TextPart extends BasePart<\"text\", TextPartMetadata> {\n  /**\n   * The text content.\n   */\n  readonly text: string\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L567"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L564"
   },
   {
     "_tag": "Interface",
@@ -5074,7 +5074,7 @@
     "since": "1.0.0",
     "category": "Models",
     "signature": "export interface TextPartEncoded extends BasePartEncoded<\"text\", TextPartMetadata> {\n  /**\n   * The text content.\n   */\n  readonly text: string\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L580"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L577"
   },
   {
     "_tag": "Interface",
@@ -5090,7 +5090,7 @@
     "since": "1.0.0",
     "category": "ProviderOptions",
     "signature": "export interface TextPartMetadata extends ProviderMetadata {}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L594"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L591"
   },
   {
     "_tag": "Interface",
@@ -5106,7 +5106,7 @@
     "since": "1.0.0",
     "category": "Models",
     "signature": "export interface TextStartPart extends BasePart<\"text-start\", TextStartPartMetadata> {\n  /**\n   * Unique identifier for this text chunk.\n   */\n  readonly id: string\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L623"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L620"
   },
   {
     "_tag": "Interface",
@@ -5122,7 +5122,7 @@
     "since": "1.0.0",
     "category": "Models",
     "signature": "export interface TextStartPartEncoded extends BasePartEncoded<\"text-start\", TextStartPartMetadata> {\n  /**\n   * Unique identifier for this text chunk.\n   */\n  readonly id: string\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L636"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L633"
   },
   {
     "_tag": "Interface",
@@ -5138,7 +5138,7 @@
     "since": "1.0.0",
     "category": "ProviderOptions",
     "signature": "export interface TextStartPartMetadata extends ProviderMetadata {}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L650"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L647"
   },
   {
     "_tag": "Interface",
@@ -5154,7 +5154,7 @@
     "since": "1.0.0",
     "category": "Models",
     "signature": "export interface TextDeltaPart extends BasePart<\"text-delta\", TextDeltaPartMetadata> {\n  /**\n   * Unique identifier matching the corresponding text chunk.\n   */\n  readonly id: string\n  /**\n   * The incremental text content to add.\n   */\n  readonly delta: string\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L678"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L675"
   },
   {
     "_tag": "Interface",
@@ -5170,7 +5170,7 @@
     "since": "1.0.0",
     "category": "Models",
     "signature": "export interface TextDeltaPartEncoded extends BasePartEncoded<\"text-delta\", TextDeltaPartMetadata> {\n  /**\n   * Unique identifier matching the corresponding text chunk.\n   */\n  readonly id: string\n  /**\n   * The incremental text content to add.\n   */\n  readonly delta: string\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L695"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L692"
   },
   {
     "_tag": "Interface",
@@ -5186,7 +5186,7 @@
     "since": "1.0.0",
     "category": "ProviderOptions",
     "signature": "export interface TextDeltaPartMetadata extends ProviderMetadata {}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L713"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L710"
   },
   {
     "_tag": "Interface",
@@ -5202,7 +5202,7 @@
     "since": "1.0.0",
     "category": "Models",
     "signature": "export interface TextEndPart extends BasePart<\"text-end\", TextEndPartMetadata> {\n  /**\n   * Unique identifier matching the corresponding text chunk.\n   */\n  readonly id: string\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L743"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L740"
   },
   {
     "_tag": "Interface",
@@ -5218,7 +5218,7 @@
     "since": "1.0.0",
     "category": "Models",
     "signature": "export interface TextEndPartEncoded extends BasePartEncoded<\"text-end\", TextEndPartMetadata> {\n  /**\n   * Unique identifier matching the corresponding text chunk.\n   */\n  readonly id: string\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L756"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L753"
   },
   {
     "_tag": "Interface",
@@ -5234,7 +5234,7 @@
     "since": "1.0.0",
     "category": "ProviderOptions",
     "signature": "export interface TextEndPartMetadata extends ProviderMetadata {}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L770"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L767"
   },
   {
     "_tag": "Interface",
@@ -5252,7 +5252,7 @@
     "since": "1.0.0",
     "category": "Models",
     "signature": "export interface ReasoningPart extends BasePart<\"reasoning\", ReasoningPartMetadata> {\n  /**\n   * The reasoning or thought process text.\n   */\n  readonly text: string\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L809"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L806"
   },
   {
     "_tag": "Interface",
@@ -5268,7 +5268,7 @@
     "since": "1.0.0",
     "category": "Models",
     "signature": "export interface ReasoningPartEncoded extends BasePartEncoded<\"reasoning\", ReasoningPartMetadata> {\n  /**\n   * The reasoning or thought process text.\n   */\n  readonly text: string\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L822"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L819"
   },
   {
     "_tag": "Interface",
@@ -5284,7 +5284,7 @@
     "since": "1.0.0",
     "category": "ProviderOptions",
     "signature": "export interface ReasoningPartMetadata extends ProviderMetadata {}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L836"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L833"
   },
   {
     "_tag": "Interface",
@@ -5300,7 +5300,7 @@
     "since": "1.0.0",
     "category": "Models",
     "signature": "export interface ReasoningStartPart extends BasePart<\"reasoning-start\", ReasoningStartPartMetadata> {\n  /**\n   * Unique identifier for this reasoning chunk.\n   */\n  readonly id: string\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L865"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L862"
   },
   {
     "_tag": "Interface",
@@ -5316,7 +5316,7 @@
     "since": "1.0.0",
     "category": "Models",
     "signature": "export interface ReasoningStartPartEncoded extends BasePartEncoded<\"reasoning-start\", ReasoningStartPartMetadata> {\n  /**\n   * Unique identifier for this reasoning stream.\n   */\n  readonly id: string\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L878"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L875"
   },
   {
     "_tag": "Interface",
@@ -5332,7 +5332,7 @@
     "since": "1.0.0",
     "category": "ProviderOptions",
     "signature": "export interface ReasoningStartPartMetadata extends ProviderMetadata {}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L892"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L889"
   },
   {
     "_tag": "Interface",
@@ -5348,7 +5348,7 @@
     "since": "1.0.0",
     "category": "Models",
     "signature": "export interface ReasoningDeltaPart extends BasePart<\"reasoning-delta\", ReasoningDeltaPartMetadata> {\n  /**\n   * Unique identifier matching the corresponding reasoning chunk.\n   */\n  readonly id: string\n  /**\n   * The incremental reasoning content to add.\n   */\n  readonly delta: string\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L920"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L917"
   },
   {
     "_tag": "Interface",
@@ -5364,7 +5364,7 @@
     "since": "1.0.0",
     "category": "Models",
     "signature": "export interface ReasoningDeltaPartEncoded extends BasePartEncoded<\"reasoning-delta\", ReasoningDeltaPartMetadata> {\n  /**\n   * Unique identifier matching the corresponding reasoning chunk.\n   */\n  readonly id: string\n  /**\n   * The incremental reasoning content to add.\n   */\n  readonly delta: string\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L937"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L934"
   },
   {
     "_tag": "Interface",
@@ -5380,7 +5380,7 @@
     "since": "1.0.0",
     "category": "ProviderOptions",
     "signature": "export interface ReasoningDeltaPartMetadata extends ProviderMetadata {}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L955"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L952"
   },
   {
     "_tag": "Interface",
@@ -5396,7 +5396,7 @@
     "since": "1.0.0",
     "category": "Models",
     "signature": "export interface ReasoningEndPart extends BasePart<\"reasoning-end\", ReasoningEndPartMetadata> {\n  /**\n   * Unique identifier matching the corresponding reasoning chunk.\n   */\n  readonly id: string\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L985"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L982"
   },
   {
     "_tag": "Interface",
@@ -5412,7 +5412,7 @@
     "since": "1.0.0",
     "category": "Models",
     "signature": "export interface ReasoningEndPartEncoded extends BasePartEncoded<\"reasoning-end\", ReasoningEndPartMetadata> {\n  /**\n   * Unique identifier matching the corresponding reasoning chunk.\n   */\n  readonly id: string\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L998"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L995"
   },
   {
     "_tag": "Interface",
@@ -5428,7 +5428,7 @@
     "since": "1.0.0",
     "category": "ProviderOptions",
     "signature": "export interface ReasoningEndPartMetadata extends ProviderMetadata {}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L1012"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L1009"
   },
   {
     "_tag": "Interface",
@@ -5444,7 +5444,7 @@
     "since": "1.0.0",
     "category": "Models",
     "signature": "export interface ToolParamsStartPart extends BasePart<\"tool-params-start\", ToolParamsStartPartMetadata> {\n  /**\n   * Unique identifier for this tool parameter chunk.\n   */\n  readonly id: string\n  /**\n   * Name of the tool being called, which corresponds to the name of the tool\n   * in the `Toolkit` included with the request.\n   */\n  readonly name: string\n  /**\n   * Optional provider-specific name for the tool, which can be useful when the\n   * name of the tool in the `Toolkit` and the name of the tool used by the\n   * model are different.\n   *\n   * This is usually happens only with provider-defined tools which require a\n   * user-space handler.\n   */\n  readonly providerName?: string | undefined\n  /**\n   * Whether the tool was executed by the provider (true) or framework (false).\n   */\n  readonly providerExecuted: boolean\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L1042"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L1039"
   },
   {
     "_tag": "Interface",
@@ -5460,7 +5460,7 @@
     "since": "1.0.0",
     "category": "Models",
     "signature": "export interface ToolParamsStartPartEncoded extends BasePartEncoded<\"tool-params-start\", ToolParamsStartPartMetadata> {\n  /**\n   * Unique identifier for this tool parameter chunk.\n   */\n  readonly id: string\n  /**\n   * Name of the tool being called, which corresponds to the name of the tool\n   * in the `Toolkit` included with the request.\n   */\n  readonly name: string\n  /**\n   * Optional provider-specific name for the tool, which can be useful when the\n   * name of the tool in the `Toolkit` and the name of the tool used by the\n   * model are different.\n   *\n   * This is usually happens only with provider-defined tools which require a\n   * user-space handler.\n   */\n  readonly providerName?: string | undefined\n  /**\n   * Whether the tool was executed by the provider (true) or framework (false).\n   */\n  readonly providerExecuted?: boolean\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L1073"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L1070"
   },
   {
     "_tag": "Interface",
@@ -5476,7 +5476,7 @@
     "since": "1.0.0",
     "category": "ProviderOptions",
     "signature": "export interface ToolParamsStartPartMetadata extends ProviderMetadata {}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L1105"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L1102"
   },
   {
     "_tag": "Interface",
@@ -5492,7 +5492,7 @@
     "since": "1.0.0",
     "category": "Models",
     "signature": "export interface ToolParamsDeltaPart extends BasePart<\"tool-params-delta\", ToolParamsDeltaPartMetadata> {\n  /**\n   * Unique identifier matching the corresponding tool parameter chunk.\n   */\n  readonly id: string\n  /**\n   * The incremental parameter content (typically JSON fragment) to add.\n   */\n  readonly delta: string\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L1138"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L1135"
   },
   {
     "_tag": "Interface",
@@ -5508,7 +5508,7 @@
     "since": "1.0.0",
     "category": "Models",
     "signature": "export interface ToolParamsDeltaPartEncoded extends BasePartEncoded<\"tool-params-delta\", ToolParamsDeltaPartMetadata> {\n  /**\n   * Unique identifier matching the corresponding tool parameter chunk.\n   */\n  readonly id: string\n  /**\n   * The incremental parameter content (typically JSON fragment) to add.\n   */\n  readonly delta: string\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L1155"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L1152"
   },
   {
     "_tag": "Interface",
@@ -5524,7 +5524,7 @@
     "since": "1.0.0",
     "category": "ProviderOptions",
     "signature": "export interface ToolParamsDeltaPartMetadata extends ProviderMetadata {}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L1173"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L1170"
   },
   {
     "_tag": "Interface",
@@ -5540,7 +5540,7 @@
     "since": "1.0.0",
     "category": "Models",
     "signature": "export interface ToolParamsEndPart extends BasePart<\"tool-params-end\", ToolParamsEndPartMetadata> {\n  /**\n   * Unique identifier matching the corresponding tool parameter chunk.\n   */\n  readonly id: string\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L1204"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L1201"
   },
   {
     "_tag": "Interface",
@@ -5556,7 +5556,7 @@
     "since": "1.0.0",
     "category": "Models",
     "signature": "export interface ToolParamsEndPartEncoded extends BasePartEncoded<\"tool-params-end\", ToolParamsEndPartMetadata> {\n  /**\n   * Unique identifier matching the corresponding tool parameter stream.\n   */\n  readonly id: string\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L1217"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L1214"
   },
   {
     "_tag": "Interface",
@@ -5572,7 +5572,7 @@
     "since": "1.0.0",
     "category": "ProviderOptions",
     "signature": "export interface ToolParamsEndPartMetadata extends ProviderMetadata {}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L1231"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L1228"
   },
   {
     "_tag": "Interface",
@@ -5590,7 +5590,7 @@
     "since": "1.0.0",
     "category": "Models",
     "signature": "export interface ToolCallPart<Name extends string, Params extends Schema.Struct.Fields>\n  extends BasePart<\"tool-call\", ToolCallPartMetadata>\n{\n  /**\n   * Unique identifier for this tool call.\n   */\n  readonly id: string\n  /**\n   * Name of the tool being called, which corresponds to the name of the tool\n   * in the `Toolkit` included with the request.\n   */\n  readonly name: Name\n  /**\n   * Parameters to pass to the tool.\n   */\n  readonly params: Schema.Struct.Type<Params>\n  /**\n   * Optional provider-specific name for the tool, which can be useful when the\n   * name of the tool in the `Toolkit` and the name of the tool used by the\n   * model are different.\n   *\n   * This is usually happens only with provider-defined tools which require a\n   * user-space handler.\n   */\n  readonly providerName?: string | undefined\n  /**\n   * Whether the tool was executed by the provider (true) or framework (false).\n   */\n  readonly providerExecuted: boolean\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L1282"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L1279"
   },
   {
     "_tag": "Interface",
@@ -5606,7 +5606,7 @@
     "since": "1.0.0",
     "category": "Models",
     "signature": "export interface ToolCallPartEncoded extends BasePartEncoded<\"tool-call\", ToolCallPartMetadata> {\n  /**\n   * Unique identifier for this tool call.\n   */\n  readonly id: string\n  /**\n   * Name of the tool being called, which corresponds to the name of the tool\n   * in the `Toolkit` included with the request.\n   */\n  readonly name: string\n  /**\n   * Parameters to pass to the tool.\n   */\n  readonly params: unknown\n  /**\n   * Optional provider-specific name for the tool, which can be useful when the\n   * name of the tool in the `Toolkit` and the name of the tool used by the\n   * model are different.\n   *\n   * This is usually happens only with provider-defined tools which require a\n   * user-space handler.\n   */\n  readonly providerName?: string | undefined\n  /**\n   * Whether the tool was executed by the provider (true) or framework (false).\n   */\n  readonly providerExecuted?: boolean | undefined\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L1319"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L1316"
   },
   {
     "_tag": "Interface",
@@ -5622,7 +5622,7 @@
     "since": "1.0.0",
     "category": "ProviderOptions",
     "signature": "export interface ToolCallPartMetadata extends ProviderMetadata {}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L1355"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L1352"
   },
   {
     "_tag": "Interface",
@@ -5640,7 +5640,7 @@
     "since": "1.0.0",
     "category": "Models",
     "signature": "export interface ToolResultPart<Name extends string, Result> extends BasePart<\"tool-result\", ToolResultPartMetadata> {\n  /**\n   * Unique identifier matching the original tool call.\n   */\n  readonly id: string\n  /**\n   * Name of the tool being called, which corresponds to the name of the tool\n   * in the `Toolkit` included with the request.\n   */\n  readonly name: Name\n  /**\n   * The decoded result returned by the tool execution.\n   */\n  readonly result: Result\n  /**\n   * The encoded result for serialization purposes.\n   */\n  readonly encodedResult: unknown\n  /**\n   * Optional provider-specific name for the tool, which can be useful when the\n   * name of the tool in the `Toolkit` and the name of the tool used by the\n   * model are different.\n   *\n   * This is usually happens only with provider-defined tools which require a\n   * user-space handler.\n   */\n  readonly providerName?: string | undefined\n  /**\n   * Whether the tool was executed by the provider (true) or framework (false).\n   */\n  readonly providerExecuted: boolean\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L1429"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L1426"
   },
   {
     "_tag": "Interface",
@@ -5656,7 +5656,7 @@
     "since": "1.0.0",
     "category": "Models",
     "signature": "export interface ToolResultPartEncoded extends BasePartEncoded<\"tool-result\", ToolResultPartMetadata> {\n  /**\n   * Unique identifier matching the original tool call.\n   */\n  readonly id: string\n  /**\n   * Name of the tool being called, which corresponds to the name of the tool\n   * in the `Toolkit` included with the request.\n   */\n  readonly name: string\n  /**\n   * The result returned by the tool execution.\n   */\n  readonly result: unknown\n  /**\n   * Optional provider-specific name for the tool, which can be useful when the\n   * name of the tool in the `Toolkit` and the name of the tool used by the\n   * model are different.\n   *\n   * This is usually happens only with provider-defined tools which require a\n   * user-space handler.\n   */\n  readonly providerName?: string | undefined\n  /**\n   * Whether the tool was executed by the provider (true) or framework (false).\n   */\n  readonly providerExecuted?: boolean | undefined\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L1468"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L1465"
   },
   {
     "_tag": "Interface",
@@ -5672,7 +5672,7 @@
     "since": "1.0.0",
     "category": "ProviderOptions",
     "signature": "export interface ToolResultPartMetadata extends ProviderMetadata {}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L1504"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L1501"
   },
   {
     "_tag": "Interface",
@@ -5690,7 +5690,7 @@
     "since": "1.0.0",
     "category": "Models",
     "signature": "export interface FilePart extends BasePart<\"file\", FilePartMetadata> {\n  /**\n   * MIME type of the file (e.g., \"image/jpeg\", \"application/pdf\").\n   */\n  readonly mediaType: string\n  /**\n   * File data as a byte array.\n   */\n  readonly data: Uint8Array\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L1604"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L1601"
   },
   {
     "_tag": "Interface",
@@ -5706,7 +5706,7 @@
     "since": "1.0.0",
     "category": "Models",
     "signature": "export interface FilePartEncoded extends BasePartEncoded<\"file\", FilePartMetadata> {\n  /**\n   * MIME type of the file (e.g., \"image/jpeg\", \"application/pdf\").\n   */\n  readonly mediaType: string\n  /**\n   * File data as a base64 string.\n   */\n  readonly data: string\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L1621"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L1618"
   },
   {
     "_tag": "Interface",
@@ -5722,7 +5722,7 @@
     "since": "1.0.0",
     "category": "ProviderOptions",
     "signature": "export interface FilePartMetadata extends ProviderMetadata {}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L1639"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L1636"
   },
   {
     "_tag": "Interface",
@@ -5738,7 +5738,7 @@
     "since": "1.0.0",
     "category": "Models",
     "signature": "export interface DocumentSourcePart extends BasePart<\"source\", DocumentSourcePartMetadata> {\n  /**\n   * Type discriminator for document sources.\n   */\n  readonly sourceType: \"document\"\n  /**\n   * Unique identifier for the document.\n   */\n  readonly id: string\n  /**\n   * MIME type of the document.\n   */\n  readonly mediaType: string\n  /**\n   * Display title of the document.\n   */\n  readonly title: string\n  /**\n   * Optional filename of the document.\n   */\n  readonly fileName?: string\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L1669"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L1666"
   },
   {
     "_tag": "Interface",
@@ -5754,7 +5754,7 @@
     "since": "1.0.0",
     "category": "Models",
     "signature": "export interface DocumentSourcePartEncoded extends BasePartEncoded<\"source\", DocumentSourcePartMetadata> {\n  /**\n   * Type discriminator for document sources.\n   */\n  readonly sourceType: \"document\"\n  /**\n   * Unique identifier for the document.\n   */\n  readonly id: string\n  /**\n   * MIME type of the document.\n   */\n  readonly mediaType: string\n  /**\n   * Display title of the document.\n   */\n  readonly title: string\n  /**\n   * Optional filename of the document.\n   */\n  readonly fileName?: string\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L1698"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L1695"
   },
   {
     "_tag": "Interface",
@@ -5770,7 +5770,7 @@
     "since": "1.0.0",
     "category": "ProviderOptions",
     "signature": "export interface DocumentSourcePartMetadata extends ProviderMetadata {}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L1728"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L1725"
   },
   {
     "_tag": "Interface",
@@ -5786,7 +5786,7 @@
     "since": "1.0.0",
     "category": "Models",
     "signature": "export interface UrlSourcePart extends BasePart<\"source\", UrlSourcePartMetadata> {\n  /**\n   * Type discriminator for URL sources.\n   */\n  readonly sourceType: \"url\"\n  /**\n   * Unique identifier for the URL.\n   */\n  readonly id: string\n  /**\n   * The URL that was referenced.\n   */\n  readonly url: URL\n  /**\n   * Display title of the URL content.\n   */\n  readonly title: string\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L1761"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L1758"
   },
   {
     "_tag": "Interface",
@@ -5802,7 +5802,7 @@
     "since": "1.0.0",
     "category": "Models",
     "signature": "export interface UrlSourcePartEncoded extends BasePartEncoded<\"source\", UrlSourcePartMetadata> {\n  /**\n   * Type discriminator for URL sources.\n   */\n  readonly sourceType: \"url\"\n  /**\n   * Unique identifier for the URL.\n   */\n  readonly id: string\n  /**\n   * The URL that was referenced as a string.\n   */\n  readonly url: string\n  /**\n   * Display title of the URL content.\n   */\n  readonly title: string\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L1786"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L1783"
   },
   {
     "_tag": "Interface",
@@ -5818,7 +5818,7 @@
     "since": "1.0.0",
     "category": "ProviderOptions",
     "signature": "export interface UrlSourcePartMetadata extends ProviderMetadata {}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L1812"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L1809"
   },
   {
     "_tag": "Interface",
@@ -5836,7 +5836,7 @@
     "since": "1.0.0",
     "category": "Models",
     "signature": "export interface ResponseMetadataPart extends BasePart<\"response-metadata\", ResponseMetadataPartMetadata> {\n  /**\n   * Optional unique identifier for this specific response.\n   */\n  readonly id: Option.Option<string>\n  /**\n   * Optional identifier of the AI model that generated the response.\n   */\n  readonly modelId: Option.Option<string>\n  /**\n   * Optional timestamp when the response was generated.\n   */\n  readonly timestamp: Option.Option<DateTime.Utc>\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L1854"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L1851"
   },
   {
     "_tag": "Interface",
@@ -5852,7 +5852,7 @@
     "since": "1.0.0",
     "category": "Models",
     "signature": "export interface ResponseMetadataPartEncoded\n  extends BasePartEncoded<\"response-metadata\", ResponseMetadataPartMetadata>\n{\n  /**\n   * Optional unique identifier for this specific response.\n   */\n  readonly id?: string | undefined\n  /**\n   * Optional identifier of the AI model that generated the response.\n   */\n  readonly modelId?: string | undefined\n  /**\n   * Optional timestamp when the response was generated.\n   */\n  readonly timestamp?: string | undefined\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L1875"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L1872"
   },
   {
     "_tag": "Interface",
@@ -5868,7 +5868,7 @@
     "since": "1.0.0",
     "category": "ProviderOptions",
     "signature": "export interface ResponseMetadataPartMetadata extends ProviderMetadata {}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L1899"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L1896"
   },
   {
     "_tag": "Interface",
@@ -5886,7 +5886,7 @@
     "since": "1.0.0",
     "category": "Models",
     "signature": "export interface FinishPart extends BasePart<\"finish\", FinishPartMetadata> {\n  /**\n   * The reason why the model finished generating the response.\n   */\n  readonly reason: FinishReason\n  /**\n   * Token usage statistics for the request.\n   */\n  readonly usage: Usage\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L2023"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L2020"
   },
   {
     "_tag": "Interface",
@@ -5902,7 +5902,7 @@
     "since": "1.0.0",
     "category": "Models",
     "signature": "export interface FinishPartEncoded extends BasePartEncoded<\"finish\", FinishPartMetadata> {\n  /**\n   * The reason why the model finished generating the response.\n   */\n  readonly reason: typeof FinishReason.Encoded\n  /**\n   * Token usage statistics for the request.\n   */\n  readonly usage: typeof Usage.Encoded\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L2040"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L2037"
   },
   {
     "_tag": "Interface",
@@ -5918,7 +5918,7 @@
     "since": "1.0.0",
     "category": "ProviderOptions",
     "signature": "export interface FinishPartMetadata extends ProviderMetadata {}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L2058"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L2055"
   },
   {
     "_tag": "Interface",
@@ -5936,7 +5936,7 @@
     "since": "1.0.0",
     "category": "Models",
     "signature": "export interface ErrorPart extends BasePart<\"error\", ErrorPartMetadata> {\n  readonly error: unknown\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L2095"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L2092"
   },
   {
     "_tag": "Interface",
@@ -5952,7 +5952,7 @@
     "since": "1.0.0",
     "category": "Models",
     "signature": "export interface ErrorPartEncoded extends BasePartEncoded<\"error\", ErrorPartMetadata> {\n  readonly error: unknown\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L2105"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L2102"
   },
   {
     "_tag": "Interface",
@@ -5968,7 +5968,7 @@
     "since": "1.0.0",
     "category": "ProviderOptions",
     "signature": "export interface ErrorPartMetadata extends ProviderMetadata {}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L2116"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L2113"
   },
   {
     "_tag": "TypeAlias",
@@ -6064,7 +6064,7 @@
     "since": "1.0.0",
     "category": "Models",
     "signature": "type Part<Tools> = | TextPart\n  | ReasoningPart\n  | ToolCallParts<Tools>\n  | ToolResultParts<Tools>\n  | FilePart\n  | DocumentSourcePart\n  | UrlSourcePart\n  | ResponseMetadataPart\n  | FinishPart",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L249"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L246"
   },
   {
     "_tag": "TypeAlias",
@@ -6080,7 +6080,7 @@
     "since": "1.0.0",
     "category": "Models",
     "signature": "type PartEncoded = | TextPartEncoded\n  | ReasoningPartEncoded\n  | ReasoningDeltaPartEncoded\n  | ReasoningEndPartEncoded\n  | ToolCallPartEncoded\n  | ToolResultPartEncoded\n  | FilePartEncoded\n  | DocumentSourcePartEncoded\n  | UrlSourcePartEncoded\n  | ResponseMetadataPartEncoded\n  | FinishPartEncoded",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L266"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L263"
   },
   {
     "_tag": "TypeAlias",
@@ -6096,7 +6096,7 @@
     "since": "1.0.0",
     "category": "Models",
     "signature": "type StreamPart<Tools> = | TextStartPart\n  | TextDeltaPart\n  | TextEndPart\n  | ReasoningStartPart\n  | ReasoningDeltaPart\n  | ReasoningEndPart\n  | ToolParamsStartPart\n  | ToolParamsDeltaPart\n  | ToolParamsEndPart\n  | ToolCallParts<Tools>\n  | ToolResultParts<Tools>\n  | FilePart\n  | DocumentSourcePart\n  | UrlSourcePart\n  | ResponseMetadataPart\n  | FinishPart\n  | ErrorPart",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L319"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L316"
   },
   {
     "_tag": "TypeAlias",
@@ -6112,7 +6112,7 @@
     "since": "1.0.0",
     "category": "Models",
     "signature": "type StreamPartEncoded = | TextStartPartEncoded\n  | TextDeltaPartEncoded\n  | TextEndPartEncoded\n  | ReasoningStartPartEncoded\n  | ReasoningDeltaPartEncoded\n  | ReasoningEndPartEncoded\n  | ToolParamsStartPartEncoded\n  | ToolParamsDeltaPartEncoded\n  | ToolParamsEndPartEncoded\n  | ToolCallPartEncoded\n  | ToolResultPartEncoded\n  | FilePartEncoded\n  | DocumentSourcePartEncoded\n  | UrlSourcePartEncoded\n  | ResponseMetadataPartEncoded\n  | FinishPartEncoded\n  | ErrorPartEncoded",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L344"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L341"
   },
   {
     "_tag": "TypeAlias",
@@ -6128,7 +6128,7 @@
     "since": "1.0.0",
     "category": "Utility Types",
     "signature": "type ToolCallParts<Tools> = {\n  [Name in keyof Tools]: Name extends string ? ToolCallPart<Name, Tool.ParametersSchema<Tools[Name]>[\"fields\"]>\n    : never\n}[keyof Tools]",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L411"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L408"
   },
   {
     "_tag": "TypeAlias",
@@ -6144,7 +6144,7 @@
     "since": "1.0.0",
     "category": "Utility Types",
     "signature": "type ToolResultParts<Tools> = {\n  [Name in keyof Tools]: Name extends string ? ToolResultPart<Name, Tool.Success<Tools[Name]>>\n    : never\n}[keyof Tools]",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L424"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L421"
   },
   {
     "_tag": "TypeAlias",
@@ -6159,7 +6159,7 @@
     "since": "1.0.0",
     "category": "Models",
     "signature": "type ProviderMetadata = typeof ProviderMetadata.Type",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L461"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L458"
   },
   {
     "_tag": "TypeAlias",
@@ -6174,7 +6174,7 @@
     "since": "1.0.0",
     "category": "Models",
     "signature": "type FinishReason = typeof FinishReason.Type",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L1962"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L1959"
   },
   {
     "_tag": "Class",

@@ -12,6 +12,6 @@ Represents provider-specific metadata that can be associated with a
 export interface ToolParamsEndPartMetadata extends ProviderMetadata {}
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L1231)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L1228)
 
 Since v1.0.0

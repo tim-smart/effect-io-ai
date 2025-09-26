@@ -62,6 +62,6 @@ export interface ToolCallPart<Name extends string, Params extends Schema.Struct.
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L1282)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L1279)
 
 Since v1.0.0

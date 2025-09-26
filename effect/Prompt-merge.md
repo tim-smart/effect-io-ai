@@ -24,9 +24,9 @@ const merged = Prompt.merge(systemPrompt, "Hello, world!")
 **Signature**
 
 ```ts
-declare const merge: { (other: RawInput): (self: Prompt) => Prompt; (self: Prompt, other: RawInput): Prompt; }
+declare const merge: { (input: RawInput): (self: Prompt) => Prompt; (self: Prompt, input: RawInput): Prompt; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L1577)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L1592)
 
 Since v1.0.0

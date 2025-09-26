@@ -33,6 +33,6 @@ const freshChat = Effect.gen(function* () {
 declare const empty: Effect.Effect<Service, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Chat.ts#L323)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Chat.ts#L326)
 
 Since v1.0.0

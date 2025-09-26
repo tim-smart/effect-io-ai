@@ -37,6 +37,6 @@ const program = validateInput("").pipe(
 declare class MalformedInput
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiError.ts#L494)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiError.ts#L491)
 
 Since v1.0.0

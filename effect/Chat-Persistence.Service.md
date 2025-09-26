@@ -15,7 +15,9 @@ export interface Service {
      * store with the specified chat identifer. If the chat does not exist in
      * the persistence store, a `ChatNotFoundError` will be returned.
      */
-    readonly get: (chatId: string) => Effect.Effect<
+    readonly get: (chatId: string, options?: {
+      readonly timeToLive?: Duration.DurationInput | undefined
+    }) => Effect.Effect<
       Persisted,
       ChatNotFoundError | PersistenceBackingError
     >
@@ -26,13 +28,15 @@ export interface Service {
      * the persistence store, an empty chat will be created, saved, and
      * returned.
      */
-    readonly getOrCreate: (chatId: string) => Effect.Effect<
+    readonly getOrCreate: (chatId: string, options?: {
+      readonly timeToLive?: Duration.DurationInput | undefined
+    }) => Effect.Effect<
       Persisted,
       AiError.MalformedOutput | PersistenceBackingError
     >
   }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Chat.ts#L615)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Chat.ts#L618)
 
 Since v1.0.0

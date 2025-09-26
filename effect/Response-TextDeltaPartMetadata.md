@@ -12,6 +12,6 @@ Represents provider-specific metadata that can be associated with a
 export interface TextDeltaPartMetadata extends ProviderMetadata {}
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L713)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L710)
 
 Since v1.0.0

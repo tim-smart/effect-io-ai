@@ -14,6 +14,6 @@ type ToolResultParts<Tools> = {
 }[keyof Tools]
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L424)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L421)
 
 Since v1.0.0

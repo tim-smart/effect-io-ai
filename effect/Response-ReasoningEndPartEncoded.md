@@ -16,6 +16,6 @@ export interface ReasoningEndPartEncoded extends BasePartEncoded<"reasoning-end"
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L998)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L995)
 
 Since v1.0.0

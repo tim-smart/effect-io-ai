@@ -16,6 +16,6 @@ export interface TextPartEncoded extends BasePartEncoded<"text", TextPartOptions
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L268)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L269)
 
 Since v1.0.0

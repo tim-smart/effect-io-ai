@@ -27,6 +27,6 @@ type StreamPart<Tools> = | TextStartPart
   | ErrorPart
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L319)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L316)
 
 Since v1.0.0
