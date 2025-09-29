@@ -2706,6 +2706,22 @@
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcServer.ts#L1302"
   },
   {
+    "_tag": "Constant",
+    "module": {
+      "name": "RpcServer.ts",
+      "path": "src/RpcServer.ts"
+    },
+    "project": "@effect/rpc",
+    "name": "fiberIdClientInterrupt",
+    "description": "Fiber id used for client interruptions.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Interruption",
+    "signature": "declare const fiberIdClientInterrupt: FiberId.FiberId",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcServer.ts#L1378"
+  },
+  {
     "_tag": "Function",
     "module": {
       "name": "RpcServer.ts",
