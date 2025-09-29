@@ -4366,7 +4366,7 @@
     "since": "1.0.0",
     "category": "Layers",
     "signature": "declare const layer: Layer.Layer<MessageStorage.MessageStorage, never, SqlClient.SqlClient | ShardingConfig>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/SqlMessageStorage.ts#L578"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/SqlMessageStorage.ts#L579"
   },
   {
     "_tag": "Function",
@@ -4381,7 +4381,7 @@
     "since": "1.0.0",
     "category": "Layers",
     "signature": "declare const layerWith: (options: { readonly prefix?: string | undefined; readonly replyPollInterval?: DurationInput | undefined; }) => Layer.Layer<MessageStorage.MessageStorage, never, SqlClient.SqlClient | ShardingConfig>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/SqlMessageStorage.ts#L590"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/SqlMessageStorage.ts#L591"
   },
   {
     "_tag": "Constant",

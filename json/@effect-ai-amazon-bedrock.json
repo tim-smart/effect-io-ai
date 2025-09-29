@@ -42,7 +42,7 @@
     "since": "1.0.0",
     "category": "layers",
     "signature": "declare const layer: (options: { readonly apiUrl?: string | undefined; readonly accessKeyId: string; readonly secretAccessKey: Redacted.Redacted<string>; readonly sessionToken?: Redacted.Redacted<string> | undefined; readonly region?: string | undefined; readonly transformClient?: (client: HttpClient.HttpClient) => HttpClient.HttpClient; }) => Layer.Layer<AmazonBedrockClient, never, HttpClient.HttpClient>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/amazon-bedrock/src/AmazonBedrockClient.ts#L200"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/amazon-bedrock/src/AmazonBedrockClient.ts#L202"
   },
   {
     "_tag": "Function",
@@ -57,7 +57,7 @@
     "since": "1.0.0",
     "category": "layers",
     "signature": "declare const layerConfig: (options: { readonly apiUrl?: Config.Config<string> | undefined; readonly accessKeyId: Config.Config<string>; readonly secretAccessKey: Config.Config<Redacted.Redacted>; readonly sessionToken?: Config.Config<Redacted.Redacted> | undefined; readonly region?: Config.Config<string> | undefined; readonly transformClient?: (client: HttpClient.HttpClient) => HttpClient.HttpClient; }) => Layer.Layer<AmazonBedrockClient, ConfigError, HttpClient.HttpClient>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/amazon-bedrock/src/AmazonBedrockClient.ts#L215"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/amazon-bedrock/src/AmazonBedrockClient.ts#L217"
   },
   {
     "_tag": "Interface",
@@ -87,7 +87,7 @@
     "since": "1.0.0",
     "category": "models",
     "signature": "export interface Client {\n  readonly converse: (options: {\n    readonly params?: { \"anthropic-beta\"?: string | undefined }\n    readonly payload: typeof ConverseRequest.Encoded\n  }) => Effect.Effect<typeof ConverseResponse.Type, HttpClientError.HttpClientError | ParseError>\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/amazon-bedrock/src/AmazonBedrockClient.ts#L242"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/amazon-bedrock/src/AmazonBedrockClient.ts#L244"
   },
   {
     "_tag": "Class",

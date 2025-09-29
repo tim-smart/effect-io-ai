@@ -42,7 +42,7 @@
     "since": "1.0.0",
     "category": "Layers",
     "signature": "declare const layer: (options: { readonly apiKey?: Redacted.Redacted | undefined; readonly apiUrl?: string | undefined; readonly transformClient?: ((client: HttpClient.HttpClient) => HttpClient.HttpClient) | undefined; }) => Layer.Layer<GoogleClient, never, HttpClient.HttpClient>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/google/src/GoogleClient.ts#L189"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/google/src/GoogleClient.ts#L192"
   },
   {
     "_tag": "Function",
@@ -57,7 +57,7 @@
     "since": "1.0.0",
     "category": "Layers",
     "signature": "declare const layerConfig: (options: { readonly apiKey?: Config.Config<Redacted.Redacted | undefined> | undefined; readonly apiUrl?: Config.Config<string | undefined> | undefined; readonly transformClient?: ((client: HttpClient.HttpClient) => HttpClient.HttpClient) | undefined; }) => Layer.Layer<GoogleClient, ConfigError, HttpClient.HttpClient>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/google/src/GoogleClient.ts#L217"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/google/src/GoogleClient.ts#L220"
   },
   {
     "_tag": "Interface",
