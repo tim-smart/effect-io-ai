@@ -11,6 +11,6 @@ Re-exports all named exports from the "./MetricKey.js" module as `MetricKey`.
 export * as MetricKey from "./MetricKey.js"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L780)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L786)
 
 Since v2.0.0

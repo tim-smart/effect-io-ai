@@ -29,6 +29,6 @@ assert.deepStrictEqual(Context.get(Services, Timeout), { TIMEOUT: 5000 })
 declare const merge: { <R1>(that: Context<R1>): <Services>(self: Context<Services>) => Context<R1 | Services>; <Services, R1>(self: Context<Services>, that: Context<R1>): Context<Services | R1>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Context.ts#L413)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Context.ts#L438)
 
 Since v2.0.0

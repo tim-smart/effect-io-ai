@@ -21,6 +21,6 @@ const program = Effect.succeed(42).pipe(Effect.ensureSuccessType<number>())
 declare const ensureSuccessType: <A>() => <A2 extends A, E, R>(effect: Effect<A2, E, R>) => Effect<A2, E, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L14768)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L14773)
 
 Since v3.17.0

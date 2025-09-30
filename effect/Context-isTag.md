@@ -20,6 +20,6 @@ assert.strictEqual(Context.isTag(Context.GenericTag("Tag")), true)
 declare const isTag: (input: unknown) => input is Tag<any, any>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Context.ts#L220)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Context.ts#L245)
 
 Since v2.0.0

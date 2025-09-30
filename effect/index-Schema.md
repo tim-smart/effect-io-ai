@@ -11,6 +11,6 @@ Re-exports all named exports from the "./Schema.js" module as `Schema`.
 export * as Schema from "./Schema.js"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L1265)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L1271)
 
 Since v3.10.0

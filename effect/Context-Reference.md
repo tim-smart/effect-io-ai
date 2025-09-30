@@ -60,6 +60,6 @@ Effect.runPromise(program.pipe(Effect.provideService(SpecialNumber, -1)))
 declare const Reference: <Self>() => <const Id extends string, Service>(id: Id, options: { readonly defaultValue: () => Service; }) => ReferenceClass<Self, Id, Service>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Context.ts#L557)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Context.ts#L582)
 
 Since v3.11.0

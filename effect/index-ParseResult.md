@@ -11,6 +11,6 @@ Re-exports all named exports from the "./ParseResult.js" module as `ParseResult`
 export * as ParseResult from "./ParseResult.js"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L1079)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L1085)
 
 Since v3.10.0

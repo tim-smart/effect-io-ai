@@ -11,6 +11,6 @@ Re-exports all named exports from the "./MutableList.js" module as `MutableList`
 export * as MutableList from "./MutableList.js"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L931)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L937)
 
 Since v2.0.0

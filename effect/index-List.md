@@ -11,6 +11,6 @@ Re-exports all named exports from the "./List.js" module as `List`.
 export * as List from "./List.js"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L689)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L695)
 
 Since v2.0.0

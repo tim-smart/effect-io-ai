@@ -11,6 +11,6 @@ Re-exports all named exports from the "./MergeDecision.js" module as `MergeDecis
 export * as MergeDecision from "./MergeDecision.js"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L750)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L756)
 
 Since v2.0.0

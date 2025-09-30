@@ -11,6 +11,6 @@ Re-exports all named exports from the "./Types.js" module as `Types`.
 export * as Types from "./Types.js"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L1523)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L1529)
 
 Since v2.0.0

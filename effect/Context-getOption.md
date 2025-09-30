@@ -27,6 +27,6 @@ assert.deepStrictEqual(Context.getOption(Services, Timeout), Option.none())
 declare const getOption: { <S, I>(tag: Tag<I, S>): <Services>(self: Context<Services>) => Option<S>; <Services, S, I>(self: Context<Services>, tag: Tag<I, S>): Option<S>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Context.ts#L386)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Context.ts#L411)
 
 Since v2.0.0

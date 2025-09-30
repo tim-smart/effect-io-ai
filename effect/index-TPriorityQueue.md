@@ -11,6 +11,6 @@ Re-exports all named exports from the "./TPriorityQueue.js" module as `TPriority
 export * as TPriorityQueue from "./TPriorityQueue.js"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L1395)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L1401)
 
 Since v2.0.0

@@ -20,6 +20,6 @@ assert.strictEqual(Context.isContext(Context.empty()), true)
 declare const isContext: (input: unknown) => input is Context<never>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Context.ts#L204)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Context.ts#L229)
 
 Since v2.0.0

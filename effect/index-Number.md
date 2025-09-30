@@ -16,6 +16,6 @@ Re-exports all named exports from the "./Number.js" module as `Number`.
 export * as Number from "./Number.js"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L1044)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L1050)
 
 Since v2.0.0

@@ -11,6 +11,6 @@ Re-exports all named exports from the "./MutableRef.js" module as `MutableRef`.
 export * as MutableRef from "./MutableRef.js"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L941)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L947)
 
 Since v2.0.0

@@ -11,6 +11,6 @@ Re-exports all named exports from the "./TestClock.js" module as `TestClock`.
 export * as TestClock from "./TestClock.js"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L1460)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L1466)
 
 Since v2.0.0

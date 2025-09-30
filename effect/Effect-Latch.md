@@ -98,6 +98,6 @@ export interface Latch extends Effect<void> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L11868)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L11873)
 
 Since v3.8.0

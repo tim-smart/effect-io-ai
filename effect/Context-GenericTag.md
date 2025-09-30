@@ -20,6 +20,6 @@ assert.strictEqual(Context.GenericTag("PORT").key === Context.GenericTag("PORT")
 declare const GenericTag: <Identifier, Service = Identifier>(key: string) => Tag<Identifier, Service>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Context.ts#L156)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Context.ts#L181)
 
 Since v2.0.0

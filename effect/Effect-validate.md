@@ -59,6 +59,6 @@ Effect.runPromiseExit(program).then(console.log)
 declare const validate: { <B, E1, R1>(that: Effect<B, E1, R1>, options?: { readonly concurrent?: boolean | undefined; readonly batching?: boolean | "inherit" | undefined; readonly concurrentFinalizers?: boolean | undefined; } | undefined): <A, E, R>(self: Effect<A, E, R>) => Effect<[A, B], E1 | E, R1 | R>; <A, E, R, B, E1, R1>(self: Effect<A, E, R>, that: Effect<B, E1, R1>, options?: { readonly concurrent?: boolean | undefined; readonly batching?: boolean | "inherit" | undefined; readonly concurrentFinalizers?: boolean | undefined; } | undefined): Effect<[A, B], E | E1, R | R1>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L12406)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L12411)
 
 Since v2.0.0

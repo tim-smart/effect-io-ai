@@ -28,6 +28,6 @@ assert.deepStrictEqual(Context.get(Services, Timeout), { TIMEOUT: 5000 })
 declare const get: { <I, S>(tag: Reference<I, S>): <Services>(self: Context<Services>) => S; <Services, I extends Services, S>(tag: Tag<I, S>): (self: Context<Services>) => S; <Services, I, S>(self: Context<Services>, tag: Reference<I, S>): S; <Services, I extends Services, S>(self: Context<Services>, tag: Tag<I, S>): S; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Context.ts#L318)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Context.ts#L343)
 
 Since v2.0.0

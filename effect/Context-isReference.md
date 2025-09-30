@@ -11,6 +11,6 @@ Checks if the provided argument is a `Reference`.
 declare const isReference: (u: unknown) => u is Reference<any, any>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Context.ts#L229)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Context.ts#L254)
 
 Since v3.11.0

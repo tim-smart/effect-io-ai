@@ -11,6 +11,6 @@ Re-exports all named exports from the "./UpstreamPullStrategy.js" module as `Ups
 export * as UpstreamPullStrategy from "./UpstreamPullStrategy.js"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L1538)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L1544)
 
 Since v2.0.0

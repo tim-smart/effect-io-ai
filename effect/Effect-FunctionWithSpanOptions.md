@@ -19,6 +19,6 @@ export interface FunctionWithSpanOptions {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L13112)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L13117)
 
 Since v3.2.0

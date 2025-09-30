@@ -11,6 +11,6 @@ Re-exports all named exports from the "./Queue.js" module as `Queue`.
 export * as Queue from "./Queue.js"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L1129)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L1135)
 
 Since v2.0.0

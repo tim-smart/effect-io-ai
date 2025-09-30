@@ -11,6 +11,6 @@ Re-exports all named exports from the "./NonEmptyIterable.js" module as `NonEmpt
 export * as NonEmptyIterable from "./NonEmptyIterable.js"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L946)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L952)
 
 Since v2.0.0

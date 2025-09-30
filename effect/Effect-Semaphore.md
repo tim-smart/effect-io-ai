@@ -17,6 +17,11 @@ tasks trying to acquire one will wait until a permit is released.
 ```ts
 export interface Semaphore {
   /**
+   * Adjusts the number of permits available in the semaphore.
+   */
+  resize(permits: number): Effect<void>
+
+  /**
    * Runs an effect with the given number of permits and releases the permits
    * when the effect completes.
    *

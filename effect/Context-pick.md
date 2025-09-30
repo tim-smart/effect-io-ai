@@ -31,6 +31,6 @@ assert.deepStrictEqual(Context.getOption(Services, Timeout), Option.none())
 declare const pick: <Tags extends ReadonlyArray<Tag<any, any>>>(...tags: Tags) => <Services>(self: Context<Services>) => Context<Services & Tag.Identifier<Tags[number]>>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Context.ts#L471)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Context.ts#L496)
 
 Since v2.0.0

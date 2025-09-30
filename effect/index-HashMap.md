@@ -11,6 +11,6 @@ Re-exports all named exports from the "./HashMap.js" module as `HashMap`.
 export * as HashMap from "./HashMap.js"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L371)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L377)
 
 Since v2.0.0

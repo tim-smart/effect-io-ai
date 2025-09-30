@@ -21,6 +21,6 @@ const program = Effect.succeed(42).pipe(Effect.ensureRequirementsType<never>())
 declare const ensureRequirementsType: <R>() => <A, E, R2 extends R>(effect: Effect<A, E, R2>) => Effect<A, E, R2>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L14798)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L14803)
 
 Since v3.17.0

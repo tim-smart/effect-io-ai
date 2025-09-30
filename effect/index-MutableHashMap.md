@@ -11,6 +11,6 @@ Re-exports all named exports from the "./MutableHashMap.js" module as `MutableHa
 export * as MutableHashMap from "./MutableHashMap.js"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L830)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L836)
 
 Since v2.0.0

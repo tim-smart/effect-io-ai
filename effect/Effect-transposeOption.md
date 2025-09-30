@@ -35,6 +35,6 @@ console.log(Effect.runSync(result))
 declare const transposeOption: <A = never, E = never, R = never>(self: Option.Option<Effect<A, E, R>>) => Effect<Option.Option<A>, E, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L13327)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L13332)
 
 Since v3.13.0

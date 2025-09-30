@@ -12,6 +12,6 @@ use the fallback value.
 declare const getOrElse: { <S, I, B>(tag: Tag<I, S>, orElse: LazyArg<B>): <Services>(self: Context<Services>) => S | B; <Services, S, I, B>(self: Context<Services>, tag: Tag<I, S>, orElse: LazyArg<B>): S | B; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Context.ts#L332)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Context.ts#L357)
 
 Since v3.7.0
