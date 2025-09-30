@@ -10,9 +10,9 @@ setting.
 **Signature**
 
 ```ts
-declare const fork: <A>(value: A) => Fork<A>
+declare const fork: <A extends object>(value: A) => A extends Wrapper<infer _> ? A : Wrapper<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/Rpc.ts#L770)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/Rpc.ts#L801)
 
 Since v1.0.0
