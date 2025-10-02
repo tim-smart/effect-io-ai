@@ -64,6 +64,6 @@ Effect.gen(function*() {
 declare const middleware: middleware.Make<never, never> & (<Config extends { provides?: any; handles?: any; } = {}>() => middleware.Make<Config extends { provides: infer R; } ? R : never, Config extends { handles: infer E; } ? E : never>)
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpLayerRouter.ts#L686)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpLayerRouter.ts#L687)
 
 Since v1.0.0

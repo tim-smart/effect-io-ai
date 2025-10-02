@@ -948,7 +948,7 @@
     "since": "1.0.0",
     "category": "Functions",
     "signature": "declare const generateText: <Options extends NoExcessProperties<GenerateTextOptions<any>, Options>, Tools extends Record<string, Tool.Any> = {}>(options: Options & GenerateTextOptions<Tools>) => Effect.Effect<GenerateTextResponse<Tools>, ExtractError<Options>, LanguageModel | ExtractContext<Options>>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/LanguageModel.ts#L891"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/LanguageModel.ts#L892"
   },
   {
     "_tag": "Constant",
@@ -966,7 +966,7 @@
     "since": "1.0.0",
     "category": "Functions",
     "signature": "declare const generateObject: <A, I extends Record<string, unknown>, R, Options extends NoExcessProperties<GenerateObjectOptions<any, A, I, R>, Options>, Tools extends Record<string, Tool.Any> = {}>(options: Options & GenerateObjectOptions<Tools, A, I, R>) => Effect.Effect<GenerateObjectResponse<Tools, A>, ExtractError<Options>, LanguageModel | R | ExtractContext<Options>>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/LanguageModel.ts#L931"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/LanguageModel.ts#L932"
   },
   {
     "_tag": "Function",
@@ -984,7 +984,7 @@
     "since": "1.0.0",
     "category": "Functions",
     "signature": "declare const streamText: <Options extends NoExcessProperties<GenerateTextOptions<any>, Options>, Tools extends Record<string, Tool.Any> = {}>(options: Options & GenerateTextOptions<Tools>) => Stream.Stream<Response.StreamPart<Tools>, ExtractError<Options>, LanguageModel | ExtractContext<Options>>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/LanguageModel.ts#L967"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/LanguageModel.ts#L968"
   },
   {
     "_tag": "Interface",

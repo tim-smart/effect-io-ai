@@ -403,7 +403,7 @@
     "since": "1.0.0",
     "category": "Context",
     "signature": "declare class Config",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicLanguageModel.ts#L44"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicLanguageModel.ts#L45"
   },
   {
     "_tag": "Constant",
@@ -418,7 +418,7 @@
     "since": "1.0.0",
     "category": "Constructors",
     "signature": "declare const make: (options: { readonly model: (string & {}) | Model; readonly config?: Omit<Config.Service, \"model\">; }) => Effect.Effect<LanguageModel.Service, never, AnthropicClient>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicLanguageModel.ts#L318"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicLanguageModel.ts#L319"
   },
   {
     "_tag": "Constant",
@@ -433,7 +433,7 @@
     "since": "1.0.0",
     "category": "Configuration",
     "signature": "declare const withConfigOverride: { (config: Config.Service): <A, E, R>(self: Effect.Effect<A, E, R>) => Effect.Effect<A, E, R>; <A, E, R>(self: Effect.Effect<A, E, R>, config: Config.Service): Effect.Effect<A, E, R>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicLanguageModel.ts#L416"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicLanguageModel.ts#L417"
   },
   {
     "_tag": "Constant",
@@ -449,7 +449,7 @@
     "since": "1.0.0",
     "category": "Tool Calling",
     "signature": "declare const prepareTools: (options: LanguageModel.ProviderOptions, config: Config.Service) => Effect.Effect<{ readonly betas: ReadonlySet<string>; readonly tools: ReadonlyArray<AnthropicTools> | undefined; readonly toolChoice: typeof Generated.BetaToolChoice.Encoded | undefined; }, AiError.AiError>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicLanguageModel.ts#L1319"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicLanguageModel.ts#L1348"
   },
   {
     "_tag": "Function",
@@ -464,7 +464,7 @@
     "since": "1.0.0",
     "category": "Ai Models",
     "signature": "declare const model: (model: (string & {}) | Model, config?: Omit<Config.Service, \"model\">) => AiModel.Model<\"anthropic\", LanguageModel.LanguageModel, AnthropicClient>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicLanguageModel.ts#L298"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicLanguageModel.ts#L299"
   },
   {
     "_tag": "Function",
@@ -479,7 +479,7 @@
     "since": "1.0.0",
     "category": "Ai Models",
     "signature": "declare const modelWithTokenizer: (model: (string & {}) | Model, config?: Omit<Config.Service, \"model\">) => AiModel.Model<\"anthropic\", LanguageModel.LanguageModel | Tokenizer.Tokenizer, AnthropicClient>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicLanguageModel.ts#L308"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicLanguageModel.ts#L309"
   },
   {
     "_tag": "Function",
@@ -494,7 +494,7 @@
     "since": "1.0.0",
     "category": "Layers",
     "signature": "declare const layer: (options: { readonly model: (string & {}) | Model; readonly config?: Omit<Config.Service, \"model\">; }) => Layer.Layer<LanguageModel.LanguageModel, never, AnthropicClient>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicLanguageModel.ts#L396"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicLanguageModel.ts#L397"
   },
   {
     "_tag": "Function",
@@ -509,7 +509,7 @@
     "since": "1.0.0",
     "category": "Layers",
     "signature": "declare const layerWithTokenizer: (options: { readonly model: (string & {}) | Model; readonly config?: Omit<Config.Service, \"model\">; }) => Layer.Layer<LanguageModel.LanguageModel | Tokenizer.Tokenizer, never, AnthropicClient>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicLanguageModel.ts#L406"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicLanguageModel.ts#L407"
   },
   {
     "_tag": "TypeAlias",
@@ -524,7 +524,7 @@
     "since": "1.0.0",
     "category": "Models",
     "signature": "type Model = typeof Generated.Model.Encoded",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicLanguageModel.ts#L34"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicLanguageModel.ts#L35"
   },
   {
     "_tag": "TypeAlias",
@@ -539,7 +539,7 @@
     "since": "1.0.0",
     "category": "Provider Metadata",
     "signature": "type AnthropicReasoningInfo = {\n  readonly type: \"thinking\"\n  /**\n   * Thinking content as an encrypted string, which is used to verify\n   * that thinking content was indeed generated by Anthropic's API.\n   */\n  readonly signature: typeof Generated.ResponseThinkingBlock.fields.thinking.Encoded\n} | {\n  readonly type: \"redacted_thinking\"\n  /**\n   * Thinking content which was flagged by Anthropic's safety systems, and\n   * was therefore encrypted.\n   */\n  readonly redactedData: typeof Generated.RequestRedactedThinkingBlock.fields.data.Encoded\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicLanguageModel.ts#L87"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicLanguageModel.ts#L88"
   },
   {
     "_tag": "TypeAlias",
@@ -555,7 +555,7 @@
     "since": "1.0.0",
     "category": "Models",
     "signature": "type AnthropicTools = | typeof Generated.BetaTool.Encoded\n  | typeof Generated.BetaBashTool20241022.Encoded\n  | typeof Generated.BetaBashTool20250124.Encoded\n  | typeof Generated.BetaComputerUseTool20241022.Encoded\n  | typeof Generated.BetaComputerUseTool20250124.Encoded\n  | typeof Generated.BetaTextEditor20241022.Encoded\n  | typeof Generated.BetaTextEditor20250124.Encoded\n  | typeof Generated.BetaTextEditor20250429.Encoded\n  | typeof Generated.BetaTextEditor20250728.Encoded",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicLanguageModel.ts#L1296"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicLanguageModel.ts#L1325"
   },
   {
     "_tag": "Interface",
@@ -570,7 +570,7 @@
     "since": "1.0.0",
     "category": "Configuration",
     "signature": "export interface Service extends\n    Simplify<\n      Partial<\n        Omit<\n          typeof Generated.CreateMessageParams.Encoded,\n          \"messages\" | \"tools\" | \"tool_choice\" | \"stream\"\n        >\n      >\n    >\n  {\n    readonly disableParallelToolCalls?: boolean\n  }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicLanguageModel.ts#L65"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicLanguageModel.ts#L66"
   },
   {
     "_tag": "Constant",

@@ -14,6 +14,6 @@ export interface unhandled {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpLayerRouter.ts#L579)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpLayerRouter.ts#L580)
 
 Since v1.0.0

@@ -19,6 +19,6 @@ type AnthropicTools = | typeof Generated.BetaTool.Encoded
   | typeof Generated.BetaTextEditor20250728.Encoded
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicLanguageModel.ts#L1296)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicLanguageModel.ts#L1325)
 
 Since v1.0.0

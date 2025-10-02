@@ -328,7 +328,7 @@
     "since": "1.0.0",
     "category": "tags",
     "signature": "declare const NetSocket: Context.Tag<NetSocket, Net.Socket>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node-shared/src/NodeSocket.ts#L28"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node-shared/src/NodeSocket.ts#L30"
   },
   {
     "_tag": "Function",
@@ -342,8 +342,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "constructors",
-    "signature": "declare const makeNet: (options: Net.NetConnectOpts) => Effect.Effect<Socket.Socket, Socket.SocketError>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node-shared/src/NodeSocket.ts#L36"
+    "signature": "declare const makeNet: (options: Net.NetConnectOpts & { readonly openTimeout?: Duration.DurationInput | undefined; }) => Effect.Effect<Socket.Socket, Socket.SocketError>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node-shared/src/NodeSocket.ts#L38"
   },
   {
     "_tag": "Function",
@@ -357,8 +357,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "constructors",
-    "signature": "declare const fromDuplex: <RO>(open: Effect.Effect<Duplex, Socket.SocketError, RO>) => Effect.Effect<Socket.Socket, never, Exclude<RO, Scope.Scope>>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node-shared/src/NodeSocket.ts#L75"
+    "signature": "declare const fromDuplex: <RO>(open: Effect.Effect<Duplex, Socket.SocketError, RO>, options?: { readonly openTimeout?: Duration.DurationInput | undefined; }) => Effect.Effect<Socket.Socket, never, Exclude<RO, Scope.Scope>>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node-shared/src/NodeSocket.ts#L80"
   },
   {
     "_tag": "Function",
@@ -373,7 +373,7 @@
     "since": "1.0.0",
     "category": "constructors",
     "signature": "declare const makeNetChannel: <IE = never>(options: Net.NetConnectOpts) => Channel.Channel<Chunk.Chunk<Uint8Array>, Chunk.Chunk<Uint8Array | string | Socket.CloseEvent>, Socket.SocketError | IE, IE, void, unknown>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node-shared/src/NodeSocket.ts#L185"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node-shared/src/NodeSocket.ts#L201"
   },
   {
     "_tag": "Function",
@@ -388,7 +388,7 @@
     "since": "1.0.0",
     "category": "layers",
     "signature": "declare const layerNet: (options: Net.NetConnectOpts) => Layer.Layer<Socket.Socket, Socket.SocketError>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node-shared/src/NodeSocket.ts#L203"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node-shared/src/NodeSocket.ts#L219"
   },
   {
     "_tag": "Interface",
@@ -403,7 +403,7 @@
     "since": "1.0.0",
     "category": "tags",
     "signature": "export interface NetSocket {\n  readonly _: unique symbol\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node-shared/src/NodeSocket.ts#L20"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node-shared/src/NodeSocket.ts#L22"
   },
   {
     "_tag": "Class",

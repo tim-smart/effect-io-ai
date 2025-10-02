@@ -11,6 +11,6 @@ The router that the API endpoints are attached to.
 declare class Router
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiBuilder.ts#L50)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiBuilder.ts#L51)
 
 Since v1.0.0

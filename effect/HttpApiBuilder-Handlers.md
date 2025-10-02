@@ -67,6 +67,6 @@ export interface Handlers<
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiBuilder.ts#L222)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiBuilder.ts#L223)
 
 Since v1.0.0
