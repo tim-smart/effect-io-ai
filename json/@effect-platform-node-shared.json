@@ -373,7 +373,7 @@
     "since": "1.0.0",
     "category": "constructors",
     "signature": "declare const makeNetChannel: <IE = never>(options: Net.NetConnectOpts) => Channel.Channel<Chunk.Chunk<Uint8Array>, Chunk.Chunk<Uint8Array | string | Socket.CloseEvent>, Socket.SocketError | IE, IE, void, unknown>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node-shared/src/NodeSocket.ts#L201"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node-shared/src/NodeSocket.ts#L204"
   },
   {
     "_tag": "Function",
@@ -388,7 +388,7 @@
     "since": "1.0.0",
     "category": "layers",
     "signature": "declare const layerNet: (options: Net.NetConnectOpts) => Layer.Layer<Socket.Socket, Socket.SocketError>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node-shared/src/NodeSocket.ts#L219"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node-shared/src/NodeSocket.ts#L222"
   },
   {
     "_tag": "Interface",
@@ -418,7 +418,7 @@
     "since": "1.0.0",
     "category": "tags",
     "signature": "declare class IncomingMessage",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node-shared/src/NodeSocketServer.ts#L24"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node-shared/src/NodeSocketServer.ts#L25"
   },
   {
     "_tag": "Constant",
@@ -433,7 +433,7 @@
     "since": "1.0.0",
     "category": "constructors",
     "signature": "declare const make: (options: Net.ServerOpts & Net.ListenOptions) => Effect.Effect<{ readonly address: SocketServer.Address; readonly run: <R, E, _>(handler: (socket: Socket.Socket) => Effect.Effect<_, E, R>) => Effect.Effect<never, SocketServer.SocketServerError, R>; }, SocketServer.SocketServerError, Scope.Scope>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node-shared/src/NodeSocketServer.ts#L33"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node-shared/src/NodeSocketServer.ts#L34"
   },
   {
     "_tag": "Constant",
@@ -448,7 +448,7 @@
     "since": "1.0.0",
     "category": "constructors",
     "signature": "declare const makeWebSocket: (options: WS.ServerOptions<typeof WS.WebSocket, typeof Http.IncomingMessage>) => Effect.Effect<SocketServer.SocketServer[\"Type\"], SocketServer.SocketServerError, Scope.Scope>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node-shared/src/NodeSocketServer.ts#L125"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node-shared/src/NodeSocketServer.ts#L155"
   },
   {
     "_tag": "Function",
@@ -463,7 +463,7 @@
     "since": "1.0.0",
     "category": "layers",
     "signature": "declare const layer: (options: Net.ServerOpts & Net.ListenOptions) => Layer.Layer<SocketServer.SocketServer, SocketServer.SocketServerError>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node-shared/src/NodeSocketServer.ts#L113"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node-shared/src/NodeSocketServer.ts#L143"
   },
   {
     "_tag": "Function",
@@ -478,7 +478,7 @@
     "since": "1.0.0",
     "category": "layers",
     "signature": "declare const layerWebSocket: (options: WS.ServerOptions) => Layer.Layer<SocketServer.SocketServer, SocketServer.SocketServerError>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node-shared/src/NodeSocketServer.ts#L210"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node-shared/src/NodeSocketServer.ts#L240"
   },
   {
     "_tag": "Constant",
