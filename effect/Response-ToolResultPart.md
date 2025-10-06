@@ -8,6 +8,7 @@ Response part representing the result of a tool call.
 **Example**
 
 ```ts
+import { Either } from "effect"
 import { Response } from "@effect/ai"
 
 interface WeatherData {
@@ -18,19 +19,23 @@ interface WeatherData {
 
 const toolResultPart: Response.ToolResultPart<
   "get_weather",
-  WeatherData
-> = Response.makePart("tool-result", {
+  WeatherData,
+  never
+> = Response.toolResultPart({
   id: "call_123",
   name: "get_weather",
-  result: {
+  result: Either.right({
     temperature: 22,
     condition: "sunny",
     humidity: 65
-  },
+  }),
   encodedResult: {
-    temperature: 22,
-    condition: "sunny",
-    humidity: 65
+    _tag: "Right",
+    right: {
+      temperature: 22,
+      condition: "sunny",
+      humidity: 65
+    }
   },
   providerExecuted: false
 })
@@ -39,7 +44,9 @@ const toolResultPart: Response.ToolResultPart<
 **Signature**
 
 ```ts
-export interface ToolResultPart<Name extends string, Result> extends BasePart<"tool-result", ToolResultPartMetadata> {
+export interface ToolResultPart<Name extends string, Success, Failure>
+  extends BasePart<"tool-result", ToolResultPartMetadata>
+{
   /**
    * Unique identifier matching the original tool call.
    */
@@ -52,11 +59,11 @@ export interface ToolResultPart<Name extends string, Result> extends BasePart<"t
   /**
    * The decoded result returned by the tool execution.
    */
-  readonly result: Result
+  readonly result: Either.Either<Success, Failure>
   /**
    * The encoded result for serialization purposes.
    */
-  readonly encodedResult: unknown
+  readonly encodedResult: Schema.EitherEncoded<unknown, unknown>
   /**
    * Optional provider-specific name for the tool, which can be useful when the
    * name of the tool in the `Toolkit` and the name of the tool used by the
@@ -73,6 +80,6 @@ export interface ToolResultPart<Name extends string, Result> extends BasePart<"t
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L1426)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L1550)
 
 Since v1.0.0

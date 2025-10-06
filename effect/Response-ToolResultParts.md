@@ -9,11 +9,15 @@ Utility type that extracts tool result parts from a set of tools.
 
 ```ts
 type ToolResultParts<Tools> = {
-  [Name in keyof Tools]: Name extends string ? ToolResultPart<Name, Tool.Success<Tools[Name]>>
+  [Name in keyof Tools]: Name extends string ? ToolResultPart<
+      Name,
+      Tool.Success<Tools[Name]>,
+      Tool.Failure<Tools[Name]>
+    >
     : never
 }[keyof Tools]
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L421)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L423)
 
 Since v1.0.0

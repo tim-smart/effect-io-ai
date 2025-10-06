@@ -13,6 +13,6 @@ export interface AssistantMessageEncoded extends BaseMessageEncoded<"assistant",
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L976)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L1072)
 
 Since v1.0.0

@@ -11,6 +11,6 @@ Type guard to check if a value is a Response Part.
 declare const isPart: (u: unknown) => u is AnyPart
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L67)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L68)
 
 Since v1.0.0

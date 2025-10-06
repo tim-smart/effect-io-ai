@@ -20,6 +20,6 @@ export interface BasePartEncoded<Type extends string, Metadata extends ProviderM
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L490)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L496)
 
 Since v1.0.0

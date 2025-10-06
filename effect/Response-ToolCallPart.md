@@ -30,9 +30,7 @@ const toolCallPart: Response.ToolCallPart<
 **Signature**
 
 ```ts
-export interface ToolCallPart<Name extends string, Params extends Schema.Struct.Fields>
-  extends BasePart<"tool-call", ToolCallPartMetadata>
-{
+export interface ToolCallPart<Name extends string, Params> extends BasePart<"tool-call", ToolCallPartMetadata> {
   /**
    * Unique identifier for this tool call.
    */
@@ -45,7 +43,7 @@ export interface ToolCallPart<Name extends string, Params extends Schema.Struct.
   /**
    * Parameters to pass to the tool.
    */
-  readonly params: Schema.Struct.Type<Params>
+  readonly params: Params
   /**
    * Optional provider-specific name for the tool, which can be useful when the
    * name of the tool in the `Toolkit` and the name of the tool used by the
@@ -62,6 +60,6 @@ export interface ToolCallPart<Name extends string, Params extends Schema.Struct.
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L1279)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L1393)
 
 Since v1.0.0

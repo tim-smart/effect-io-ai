@@ -15,6 +15,6 @@ type ToolsByName<Tools> = Tools extends Record<string, Tool.Any> ?
   : never
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Toolkit.ts#L180)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Toolkit.ts#L182)
 
 Since v1.0.0

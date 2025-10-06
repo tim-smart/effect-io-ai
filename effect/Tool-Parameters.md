@@ -12,10 +12,10 @@ type Parameters<T> = T extends Tool<
   infer _Name,
   infer _Config,
   infer _Requirements
-> ? Schema.Struct.Type<_Config["parameters"]["fields"]> :
-  never
+> ? Schema.Struct.Type<_Config["parameters"]["fields"]>
+  : never
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Tool.ts#L535)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Tool.ts#L595)
 
 Since v1.0.0

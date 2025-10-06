@@ -20,7 +20,7 @@ type AnyPart = | TextPart
   | ToolParamsDeltaPart
   | ToolParamsEndPart
   | ToolCallPart<any, any>
-  | ToolResultPart<any, any>
+  | ToolResultPart<any, any, any>
   | FilePart
   | DocumentSourcePart
   | UrlSourcePart
@@ -29,6 +29,6 @@ type AnyPart = | TextPart
   | ErrorPart
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L75)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L76)
 
 Since v1.0.0

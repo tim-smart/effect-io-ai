@@ -14,6 +14,6 @@ and streaming text generation and returns a LanguageModel service.
 declare const make: (params: ConstructorParams) => Effect.Effect<Service>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/LanguageModel.ts#L560)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/LanguageModel.ts#L562)
 
 Since v1.0.0

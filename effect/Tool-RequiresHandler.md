@@ -9,10 +9,14 @@ handler to be implemented.
 **Signature**
 
 ```ts
-type RequiresHandler<Tool> = Tool extends
-  ProviderDefined<infer _Name, infer _Config, infer _RequiresHandler> ? _RequiresHandler : true
+type RequiresHandler<Tool> = Tool extends ProviderDefined<
+  infer _Name,
+  infer _Config,
+  infer _RequiresHandler
+> ? _RequiresHandler
+  : true
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Tool.ts#L701)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Tool.ts#L808)
 
 Since v1.0.0

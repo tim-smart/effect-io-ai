@@ -15,7 +15,7 @@ between `0.0` and `1.0`), it will perform a search.
 **Signature**
 
 ```ts
-declare const GoogleSearchRetrieval: (args: { readonly mode?: "MODE_UNSPECIFIED" | "MODE_DYNAMIC" | null | undefined; readonly dynamicThreshold?: number | null | undefined; }) => Tool.ProviderDefined<"GoogleSearchRetrieval", { readonly args: Struct<{ readonly mode: optionalWith<typeof Generated.DynamicRetrievalConfigMode, { nullable: true; }>; readonly dynamicThreshold: optionalWith<typeof Number$, { nullable: true; }>; }>; readonly parameters: Struct<{}>; readonly success: typeof Void; readonly failure: typeof Never; }, false>
+declare const GoogleSearchRetrieval: <Mode extends Tool.FailureMode | undefined = undefined>(args: { readonly mode?: "MODE_UNSPECIFIED" | "MODE_DYNAMIC" | null | undefined; readonly dynamicThreshold?: number | null | undefined; }) => Tool.ProviderDefined<"GoogleSearchRetrieval", { readonly args: Struct<{ readonly mode: optionalWith<typeof Generated.DynamicRetrievalConfigMode, { nullable: true; }>; readonly dynamicThreshold: optionalWith<typeof Number$, { nullable: true; }>; }>; readonly parameters: Struct<{}>; readonly success: typeof Void; readonly failure: typeof Never; readonly failureMode: Mode extends undefined ? "error" : Mode; }, false>
 ```
 
 [Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/google/src/GoogleTool.ts#L44)

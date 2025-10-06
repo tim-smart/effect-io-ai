@@ -14,6 +14,6 @@ type MessageEncoded = | SystemMessageEncoded
   | ToolMessageEncoded
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L1133)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L1249)
 
 Since v1.0.0

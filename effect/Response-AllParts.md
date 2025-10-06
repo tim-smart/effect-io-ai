@@ -29,6 +29,6 @@ type AllParts<Tools> = | TextPart
   | ErrorPart
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L129)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L130)
 
 Since v1.0.0

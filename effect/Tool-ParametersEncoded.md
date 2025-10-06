@@ -12,10 +12,10 @@ type ParametersEncoded<T> = T extends Tool<
   infer _Name,
   infer _Config,
   infer _Requirements
-> ? Schema.Schema.Encoded<_Config["parameters"]> :
-  never
+> ? Schema.Schema.Encoded<_Config["parameters"]>
+  : never
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Tool.ts#L548)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Tool.ts#L608)
 
 Since v1.0.0

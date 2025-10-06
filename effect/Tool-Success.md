@@ -12,10 +12,10 @@ type Success<T> = T extends Tool<
   infer _Name,
   infer _Config,
   infer _Requirements
-> ? Schema.Schema.Type<_Config["success"]> :
-  never
+> ? Schema.Schema.Type<_Config["success"]>
+  : never
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Tool.ts#L575)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Tool.ts#L635)
 
 Since v1.0.0

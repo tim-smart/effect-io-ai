@@ -9,11 +9,12 @@ Utility type that extracts tool call parts from a set of tools.
 
 ```ts
 type ToolCallParts<Tools> = {
-  [Name in keyof Tools]: Name extends string ? ToolCallPart<Name, Tool.ParametersSchema<Tools[Name]>["fields"]>
+  [Name in keyof Tools]: Name extends string ?
+    ToolCallPart<Name, Schema.Struct.Type<Tool.ParametersSchema<Tools[Name]>["fields"]>>
     : never
 }[keyof Tools]
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L408)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L409)
 
 Since v1.0.0

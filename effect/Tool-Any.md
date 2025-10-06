@@ -18,10 +18,12 @@ export interface Any extends Pipeable {
   readonly parametersSchema: AnyStructSchema
   readonly successSchema: Schema.Schema.Any
   readonly failureSchema: Schema.Schema.All
+  readonly resultSchema: Schema.Either<any, any>
+  readonly failureMode: FailureMode
   readonly annotations: Context.Context<never>
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Tool.ts#L447)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Tool.ts#L502)
 
 Since v1.0.0

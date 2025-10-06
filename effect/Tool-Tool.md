@@ -39,15 +39,13 @@ export interface Tool<
     readonly parameters: AnyStructSchema
     readonly success: Schema.Schema.Any
     readonly failure: Schema.Schema.All
-  } = {
-    readonly parameters: Schema.Struct<{}>
-    readonly success: typeof Schema.Void
-    readonly failure: typeof Schema.Never
+    readonly failureMode: FailureMode
   },
   Requirements = never
 > extends Tool.Variance<Requirements> {
   /**
-   * The tool identifier which is used to uniquely identify the tool. */
+   * The tool identifier which is used to uniquely identify the tool.
+   */
   readonly id: string
 
   /**
@@ -59,6 +57,19 @@ export interface Tool<
    * The optional description of the tool.
    */
   readonly description?: string | undefined
+
+  /**
+   * The strategy used for handling errors returned from tool call handler
+   * execution.
+   *
+   * If set to `"error"` (the default), errors that occur during tool call
+   * handler execution will be returned in the error channel of the calling
+   * effect.
+   *
+   * If set to `"return"`, errors that occur during tool call handler execution
+   * will be captured and returned as part of the tool call result.
+   */
+  readonly failureMode: FailureMode
 
   /**
    * A `Schema` representing the parameters that a tool must be called with.
@@ -78,6 +89,12 @@ export interface Tool<
   readonly failureSchema: Config["failure"]
 
   /**
+   * A `Schema` representing the result of a tool call, whether it succeeds or
+   * fails.
+   */
+  readonly resultSchema: Schema.Either<Config["success"], Config["failure"]>
+
+  /**
    * A `Context` object containing tool annotations which can store metadata
    * about the tool.
    */
@@ -91,60 +108,76 @@ export interface Tool<
    * **MUST** be provided to each request to the large language model provider
    * instead of being provided when creating the tool call handler layer.
    */
-  addDependency<Identifier, Service>(tag: Context.Tag<Identifier, Service>): Tool<
+  addDependency<Identifier, Service>(
+    tag: Context.Tag<Identifier, Service>
+  ): Tool<Name, Config, Identifier | Requirements>
+
+  /**
+   * Set the schema to use to validate the result of a tool call when successful.
+   */
+  setParameters<
+    ParametersSchema extends Schema.Struct<any> | Schema.Struct.Fields
+  >(
+    schema: ParametersSchema
+  ): Tool<
     Name,
-    Config,
-    Identifier | Requirements
+    {
+      readonly parameters: ParametersSchema extends Schema.Struct<infer _> ? ParametersSchema
+        : ParametersSchema extends Schema.Struct.Fields ? Schema.Struct<ParametersSchema>
+        : never
+      readonly success: Config["success"]
+      readonly failure: Config["failure"]
+      readonly failureMode: Config["failureMode"]
+    },
+    Requirements
   >
 
   /**
    * Set the schema to use to validate the result of a tool call when successful.
    */
-  setParameters<ParametersSchema extends Schema.Struct<any> | Schema.Struct.Fields>(
-    schema: ParametersSchema
-  ): Tool<Name, {
-    readonly parameters: ParametersSchema extends Schema.Struct<infer _> ? ParametersSchema
-      : ParametersSchema extends Schema.Struct.Fields ? Schema.Struct<ParametersSchema>
-      : never
-    readonly success: Config["success"]
-    readonly failure: Config["failure"]
-  }, Requirements>
-
-  /**
-   * Set the schema to use to validate the result of a tool call when successful.
-   */
-  setSuccess<SuccessSchema extends Schema.Schema.Any>(schema: SuccessSchema): Tool<Name, {
-    readonly parameters: Config["parameters"]
-    readonly success: SuccessSchema
-    readonly failure: Config["failure"]
-  }, Requirements>
+  setSuccess<SuccessSchema extends Schema.Schema.Any>(
+    schema: SuccessSchema
+  ): Tool<
+    Name,
+    {
+      readonly parameters: Config["parameters"]
+      readonly success: SuccessSchema
+      readonly failure: Config["failure"]
+      readonly failureMode: Config["failureMode"]
+    },
+    Requirements
+  >
 
   /**
    * Set the schema to use to validate the result of a tool call when it fails.
    */
-  setFailure<FailureSchema extends Schema.Schema.Any>(schema: FailureSchema): Tool<Name, {
-    readonly parameters: Config["parameters"]
-    readonly success: Config["success"]
-    readonly failure: FailureSchema
-  }, Requirements>
+  setFailure<FailureSchema extends Schema.Schema.Any>(
+    schema: FailureSchema
+  ): Tool<
+    Name,
+    {
+      readonly parameters: Config["parameters"]
+      readonly success: Config["success"]
+      readonly failure: FailureSchema
+      readonly failureMode: Config["failureMode"]
+    },
+    Requirements
+  >
 
   /**
    * Add an annotation to the tool.
    */
-  annotate<I, S>(tag: Context.Tag<I, S>, value: S): Tool<
-    Name,
-    Config,
-    Requirements
-  >
+  annotate<I, S>(
+    tag: Context.Tag<I, S>,
+    value: S
+  ): Tool<Name, Config, Requirements>
 
   /**
    * Add many annotations to the tool.
    */
-  annotateContext<I>(context: Context.Context<I>): Tool<
-    Name,
-    Config,
-    Requirements
-  >
+  annotateContext<I>(
+    context: Context.Context<I>
+  ): Tool<Name, Config, Requirements>
 }
 ```
 

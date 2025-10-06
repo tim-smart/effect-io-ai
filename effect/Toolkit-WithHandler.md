@@ -30,16 +30,13 @@ export interface WithHandler<in out Tools extends Record<string, Tool.Any>> {
      */
     params: Tool.Parameters<Tools[Name]>
   ) => Effect.Effect<
-    {
-      readonly result: Tool.Success<Tools[Name]>
-      readonly encodedResult: unknown
-    },
+    Tool.HandlerResult<Tools[Name]>,
     Tool.Failure<Tools[Name]>,
     Tool.Requirements<Tools[Name]>
   >
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Toolkit.ts#L207)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Toolkit.ts#L209)
 
 Since v1.0.0

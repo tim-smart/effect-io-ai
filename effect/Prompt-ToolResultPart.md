@@ -14,9 +14,12 @@ const toolResultPart: Prompt.ToolResultPart = Prompt.makePart("tool-result", {
   id: "call_123",
   name: "get_weather",
   result: {
-    temperature: 22,
-    condition: "sunny",
-    humidity: 65
+    _tag: "Right",
+    right: {
+      temperature: 22,
+      condition: "sunny",
+      humidity: 65
+    }
   }
 })
 ```
@@ -36,10 +39,10 @@ export interface ToolResultPart extends BasePart<"tool-result", ToolResultPartOp
   /**
    * The result returned by the tool execution.
    */
-  readonly result: unknown
+  readonly result: Schema.EitherEncoded<unknown, unknown>
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L573)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L623)
 
 Since v1.0.0

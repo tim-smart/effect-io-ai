@@ -13,10 +13,10 @@ type FailureEncoded<T> = T extends Tool<
   infer _Name,
   infer _Config,
   infer _Requirements
-> ? Schema.Schema.Encoded<_Config["failure"]> :
-  never
+> ? Schema.Schema.Encoded<_Config["failure"]>
+  : never
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Tool.ts#L630)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Tool.ts#L690)
 
 Since v1.0.0

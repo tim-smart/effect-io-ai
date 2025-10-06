@@ -47,6 +47,6 @@ console.log(Tool.isUserDefined(ProviderDefinedTool))  // true
 declare const isProviderDefined: (u: unknown) => u is ProviderDefined<string, any>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Tool.ts#L434)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Tool.ts#L488)
 
 Since v1.0.0

@@ -12,6 +12,7 @@ prompt, typically for use in conversation history or further processing.
 **Example**
 
 ```ts
+import { Either } from "effect"
 import { Prompt, Response } from "@effect/ai"
 
 const responseParts: ReadonlyArray<Response.AnyPart> = [
@@ -27,8 +28,8 @@ const responseParts: ReadonlyArray<Response.AnyPart> = [
   Response.makePart("tool-result", {
     id: "call_1",
     name: "get_time",
-    result: "10:30 AM",
-    encodedResult: "10:30 AM",
+    result: Either.right("10:30 AM"),
+    encodedResult: { _tag: "Right", right: "10:30 AM" },
     providerExecuted: false
   })
 ]
@@ -43,6 +44,6 @@ const prompt = Prompt.fromResponseParts(responseParts)
 declare const fromResponseParts: (parts: ReadonlyArray<Response.AnyPart>) => Prompt
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L1470)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L1580)
 
 Since v1.0.0

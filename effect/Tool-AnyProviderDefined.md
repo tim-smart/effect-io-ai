@@ -13,10 +13,12 @@ export interface AnyProviderDefined extends Any {
   readonly argsSchema: AnyStructSchema
   readonly requiresHandler: boolean
   readonly providerName: string
-  readonly decodeResult: (result: unknown) => Effect.Effect<any, AiError.AiError>
+  readonly decodeResult: (
+    result: unknown
+  ) => Effect.Effect<any, AiError.AiError>
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Tool.ts#L466)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Tool.ts#L523)
 
 Since v1.0.0

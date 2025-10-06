@@ -12,17 +12,19 @@ and tool call resolution settings.
 
 ```ts
 type ExtractError<Options> = Options extends {
+  readonly toolkit: Toolkit.WithHandler<infer _Tools>
   readonly disableToolCallResolution: true
-} ? Options extends {
-    readonly toolkit: Effect.Effect<Toolkit.WithHandler<infer _Tools>, infer _E, infer _R>
-  } ? AiError.AiError | _E :
-  AiError.AiError :
-  Options extends {
-    readonly toolkit: Toolkit.WithHandler<infer _Tools>
-  } ? AiError.AiError | Tool.Failure<_Tools[keyof _Tools]>
+} ? AiError.AiError
   : Options extends {
     readonly toolkit: Effect.Effect<Toolkit.WithHandler<infer _Tools>, infer _E, infer _R>
-  } ? AiError.AiError | Tool.Failure<_Tools[keyof _Tools]> | _E :
+    readonly disableToolCallResolution: true
+  } ? AiError.AiError | _E
+  : Options extends {
+    readonly toolkit: Toolkit.WithHandler<infer _Tools>
+  } ? AiError.AiError | Tool.HandlerError<_Tools[keyof _Tools]>
+  : Options extends {
+    readonly toolkit: Effect.Effect<Toolkit.WithHandler<infer _Tools>, infer _E, infer _R>
+  } ? AiError.AiError | Tool.HandlerError<_Tools[keyof _Tools]> | _E :
   AiError.AiError
 ```
 

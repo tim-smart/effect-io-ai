@@ -44,21 +44,25 @@ export interface ProviderDefined<
     readonly parameters: AnyStructSchema
     readonly success: Schema.Schema.Any
     readonly failure: Schema.Schema.All
+    readonly failureMode: FailureMode
   } = {
     readonly args: Schema.Struct<{}>
     readonly parameters: Schema.Struct<{}>
     readonly success: typeof Schema.Void
     readonly failure: typeof Schema.Never
+    readonly failureMode: "error"
   },
   RequiresHandler extends boolean = false
 > extends
-  Tool<Name, {
-    readonly parameters: Config["parameters"]
-    success: RequiresHandler extends true ? Config["success"]
-      : Schema.Either<Config["success"], Config["failure"]>
-    failure: RequiresHandler extends true ? Config["failure"]
-      : typeof Schema.Never
-  }>,
+  Tool<
+    Name,
+    {
+      readonly parameters: Config["parameters"]
+      readonly success: Config["success"]
+      readonly failure: Config["failure"]
+      readonly failureMode: Config["failureMode"]
+    }
+  >,
   Tool.ProviderDefinedProto
 {
   /**
@@ -87,10 +91,12 @@ export interface ProviderDefined<
   /**
    * Decodes the result received after the provider-defined tool is called.
    */
-  decodeResult(args: unknown): Effect.Effect<Config["success"]["Type"], AiError.AiError>
+  decodeResult(
+    args: unknown
+  ): Effect.Effect<Config["success"]["Type"], AiError.AiError>
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Tool.ts#L260)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Tool.ts#L293)
 
 Since v1.0.0

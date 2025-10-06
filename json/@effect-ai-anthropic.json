@@ -433,7 +433,7 @@
     "since": "1.0.0",
     "category": "Configuration",
     "signature": "declare const withConfigOverride: { (config: Config.Service): <A, E, R>(self: Effect.Effect<A, E, R>) => Effect.Effect<A, E, R>; <A, E, R>(self: Effect.Effect<A, E, R>, config: Config.Service): Effect.Effect<A, E, R>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicLanguageModel.ts#L417"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicLanguageModel.ts#L416"
   },
   {
     "_tag": "Constant",
@@ -449,7 +449,7 @@
     "since": "1.0.0",
     "category": "Tool Calling",
     "signature": "declare const prepareTools: (options: LanguageModel.ProviderOptions, config: Config.Service) => Effect.Effect<{ readonly betas: ReadonlySet<string>; readonly tools: ReadonlyArray<AnthropicTools> | undefined; readonly toolChoice: typeof Generated.BetaToolChoice.Encoded | undefined; }, AiError.AiError>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicLanguageModel.ts#L1348"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicLanguageModel.ts#L1433"
   },
   {
     "_tag": "Function",
@@ -494,7 +494,7 @@
     "since": "1.0.0",
     "category": "Layers",
     "signature": "declare const layer: (options: { readonly model: (string & {}) | Model; readonly config?: Omit<Config.Service, \"model\">; }) => Layer.Layer<LanguageModel.LanguageModel, never, AnthropicClient>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicLanguageModel.ts#L397"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicLanguageModel.ts#L396"
   },
   {
     "_tag": "Function",
@@ -509,7 +509,7 @@
     "since": "1.0.0",
     "category": "Layers",
     "signature": "declare const layerWithTokenizer: (options: { readonly model: (string & {}) | Model; readonly config?: Omit<Config.Service, \"model\">; }) => Layer.Layer<LanguageModel.LanguageModel | Tokenizer.Tokenizer, never, AnthropicClient>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicLanguageModel.ts#L407"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicLanguageModel.ts#L406"
   },
   {
     "_tag": "TypeAlias",
@@ -555,7 +555,7 @@
     "since": "1.0.0",
     "category": "Models",
     "signature": "type AnthropicTools = | typeof Generated.BetaTool.Encoded\n  | typeof Generated.BetaBashTool20241022.Encoded\n  | typeof Generated.BetaBashTool20250124.Encoded\n  | typeof Generated.BetaComputerUseTool20241022.Encoded\n  | typeof Generated.BetaComputerUseTool20250124.Encoded\n  | typeof Generated.BetaTextEditor20241022.Encoded\n  | typeof Generated.BetaTextEditor20250124.Encoded\n  | typeof Generated.BetaTextEditor20250429.Encoded\n  | typeof Generated.BetaTextEditor20250728.Encoded",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicLanguageModel.ts#L1325"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicLanguageModel.ts#L1410"
   },
   {
     "_tag": "Interface",
@@ -629,7 +629,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "Tools",
-    "signature": "declare const Bash_20241022: (args: {}) => Tool.ProviderDefined<\"AnthropicBash\", { readonly args: Schema.Struct<{}>; readonly parameters: Schema.Struct<{ command: typeof Schema.NonEmptyString; restart: Schema.optional<typeof Schema.Boolean>; }>; readonly success: typeof Schema.String; readonly failure: typeof Schema.Never; }, true>",
+    "signature": "declare const Bash_20241022: <Mode extends Tool.FailureMode | undefined = undefined>(args: { readonly failureMode?: Mode | undefined; }) => Tool.ProviderDefined<\"AnthropicBash\", { readonly args: Schema.Struct<{}>; readonly parameters: Schema.Struct<{ command: typeof Schema.NonEmptyString; restart: Schema.optional<typeof Schema.Boolean>; }>; readonly success: typeof Schema.String; readonly failure: typeof Schema.Never; readonly failureMode: Mode extends undefined ? \"error\" : Mode; }, true>",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L47"
   },
   {
@@ -644,7 +644,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "Tools",
-    "signature": "declare const Bash_20250124: (args: {}) => Tool.ProviderDefined<\"AnthropicBash\", { readonly args: Schema.Struct<{}>; readonly parameters: Schema.Struct<{ command: typeof Schema.NonEmptyString; restart: Schema.optional<typeof Schema.Boolean>; }>; readonly success: typeof Schema.String; readonly failure: typeof Schema.Never; }, true>",
+    "signature": "declare const Bash_20250124: <Mode extends Tool.FailureMode | undefined = undefined>(args: { readonly failureMode?: Mode | undefined; }) => Tool.ProviderDefined<\"AnthropicBash\", { readonly args: Schema.Struct<{}>; readonly parameters: Schema.Struct<{ command: typeof Schema.NonEmptyString; restart: Schema.optional<typeof Schema.Boolean>; }>; readonly success: typeof Schema.String; readonly failure: typeof Schema.Never; readonly failureMode: Mode extends undefined ? \"error\" : Mode; }, true>",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L70"
   },
   {
@@ -659,7 +659,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "Tools",
-    "signature": "declare const CodeExecution_20250522: (args: { readonly cache_control?: { readonly type: \"ephemeral\"; readonly ttl?: \"5m\" | \"1h\" | null | undefined; } | null | undefined; }) => Tool.ProviderDefined<\"AnthropicCodeExecution\", { readonly args: Schema.Struct<{ readonly cache_control: Schema.optionalWith<typeof Generated.BetaCacheControlEphemeral, { nullable: true; }>; }>; readonly parameters: Schema.Struct<{}>; readonly success: typeof Generated.BetaResponseCodeExecutionResultBlock; readonly failure: typeof Generated.BetaResponseCodeExecutionToolResultError; }, false>",
+    "signature": "declare const CodeExecution_20250522: <Mode extends Tool.FailureMode | undefined = undefined>(args: { readonly cache_control?: { readonly type: \"ephemeral\"; readonly ttl?: \"5m\" | \"1h\" | null | undefined; } | null | undefined; }) => Tool.ProviderDefined<\"AnthropicCodeExecution\", { readonly args: Schema.Struct<{ readonly cache_control: Schema.optionalWith<typeof Generated.BetaCacheControlEphemeral, { nullable: true; }>; }>; readonly parameters: Schema.Struct<{}>; readonly success: typeof Generated.BetaResponseCodeExecutionResultBlock; readonly failure: typeof Generated.BetaResponseCodeExecutionToolResultError; readonly failureMode: Mode extends undefined ? \"error\" : Mode; }, false>",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L93"
   },
   {
@@ -674,7 +674,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "Tools",
-    "signature": "declare const CodeExecution_20250825: (args: { readonly cache_control?: { readonly type: \"ephemeral\"; readonly ttl?: \"5m\" | \"1h\" | null | undefined; } | null | undefined; }) => Tool.ProviderDefined<\"AnthropicCodeExecution\", { readonly args: Schema.Struct<{ readonly cache_control: Schema.optionalWith<typeof Generated.BetaCacheControlEphemeral, { nullable: true; }>; }>; readonly parameters: Schema.Struct<{}>; readonly success: Schema.Union<[typeof Generated.BetaResponseBashCodeExecutionResultBlock, typeof Generated.BetaResponseTextEditorCodeExecutionViewResultBlock, typeof Generated.BetaResponseTextEditorCodeExecutionCreateResultBlock, typeof Generated.BetaResponseTextEditorCodeExecutionStrReplaceResultBlock]>; readonly failure: Schema.Union<[typeof Generated.BetaResponseCodeExecutionToolResultError, typeof Generated.BetaResponseTextEditorCodeExecutionToolResultError]>; }, false>",
+    "signature": "declare const CodeExecution_20250825: <Mode extends Tool.FailureMode | undefined = undefined>(args: { readonly cache_control?: { readonly type: \"ephemeral\"; readonly ttl?: \"5m\" | \"1h\" | null | undefined; } | null | undefined; }) => Tool.ProviderDefined<\"AnthropicCodeExecution\", { readonly args: Schema.Struct<{ readonly cache_control: Schema.optionalWith<typeof Generated.BetaCacheControlEphemeral, { nullable: true; }>; }>; readonly parameters: Schema.Struct<{}>; readonly success: Schema.Union<[typeof Generated.BetaResponseBashCodeExecutionResultBlock, typeof Generated.BetaResponseTextEditorCodeExecutionViewResultBlock, typeof Generated.BetaResponseTextEditorCodeExecutionCreateResultBlock, typeof Generated.BetaResponseTextEditorCodeExecutionStrReplaceResultBlock]>; readonly failure: Schema.Union<[typeof Generated.BetaResponseCodeExecutionToolResultError, typeof Generated.BetaResponseTextEditorCodeExecutionToolResultError]>; readonly failureMode: Mode extends undefined ? \"error\" : Mode; }, false>",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L106"
   },
   {
@@ -705,7 +705,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "Tools",
-    "signature": "declare const ComputerUse_20241022: (args: { readonly display_height_px: number; readonly display_width_px: number; readonly cache_control?: { readonly type: \"ephemeral\"; readonly ttl?: \"5m\" | \"1h\" | null | undefined; } | null | undefined; readonly display_number?: number | null | undefined; }) => Tool.ProviderDefined<\"AnthropicComputerUse\", { readonly args: Schema.Struct<{ readonly cache_control: Schema.optionalWith<typeof Generated.BetaCacheControlEphemeral, { nullable: true; }>; readonly display_height_px: Schema.filter<typeof Schema.Int>; readonly display_number: Schema.optionalWith<Schema.filter<typeof Schema.Int>, { nullable: true; }>; readonly display_width_px: Schema.filter<typeof Schema.Int>; }>; readonly parameters: Schema.Struct<{ action: Schema.Literal<[\"screenshot\", \"left_click\", \"type\", \"key\", \"mouse_move\"]>; coordinate: Schema.optional<Schema.Tuple2<typeof Schema.Number, typeof Schema.Number>>; text: Schema.optional<typeof Schema.String>; }>; readonly success: typeof Schema.String; readonly failure: typeof Schema.Never; }, true>",
+    "signature": "declare const ComputerUse_20241022: <Mode extends Tool.FailureMode | undefined = undefined>(args: { readonly display_height_px: number; readonly display_width_px: number; readonly cache_control?: { readonly type: \"ephemeral\"; readonly ttl?: \"5m\" | \"1h\" | null | undefined; } | null | undefined; readonly display_number?: number | null | undefined; readonly failureMode?: Mode | undefined; }) => Tool.ProviderDefined<\"AnthropicComputerUse\", { readonly args: Schema.Struct<{ readonly cache_control: Schema.optionalWith<typeof Generated.BetaCacheControlEphemeral, { nullable: true; }>; readonly display_height_px: Schema.filter<typeof Schema.Int>; readonly display_number: Schema.optionalWith<Schema.filter<typeof Schema.Int>, { nullable: true; }>; readonly display_width_px: Schema.filter<typeof Schema.Int>; }>; readonly parameters: Schema.Struct<{ action: Schema.Literal<[\"screenshot\", \"left_click\", \"type\", \"key\", \"mouse_move\"]>; coordinate: Schema.optional<Schema.Tuple2<typeof Schema.Number, typeof Schema.Number>>; text: Schema.optional<typeof Schema.String>; }>; readonly success: typeof Schema.String; readonly failure: typeof Schema.Never; readonly failureMode: Mode extends undefined ? \"error\" : Mode; }, true>",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L137"
   },
   {
@@ -721,7 +721,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "Tools",
-    "signature": "declare const ComputerUse_20250124: (args: { readonly display_height_px: number; readonly display_width_px: number; readonly cache_control?: { readonly type: \"ephemeral\"; readonly ttl?: \"5m\" | \"1h\" | null | undefined; } | null | undefined; readonly display_number?: number | null | undefined; }) => Tool.ProviderDefined<\"AnthropicComputerUse\", { readonly args: Schema.Struct<{ readonly cache_control: Schema.optionalWith<typeof Generated.BetaCacheControlEphemeral, { nullable: true; }>; readonly display_height_px: Schema.filter<typeof Schema.Int>; readonly display_number: Schema.optionalWith<Schema.filter<typeof Schema.Int>, { nullable: true; }>; readonly display_width_px: Schema.filter<typeof Schema.Int>; }>; readonly parameters: Schema.Struct<{ action: Schema.Literal<[\"screenshot\", \"left_click\", \"type\", \"key\", \"mouse_move\", \"scroll\", \"left_click_drag\", \"middle_click\", \"right_click\", \"double_click\", \"triple_click\", \"left_mouse_down\", \"left_mouse_up\", \"hold_key\", \"wait\"]>; coordinate: Schema.optional<Schema.Tuple2<typeof Schema.Number, typeof Schema.Number>>; start_coordinate: Schema.optional<Schema.Tuple2<typeof Schema.Number, typeof Schema.Number>>; text: Schema.optional<typeof Schema.String>; scroll_direction: Schema.optional<Schema.Literal<[\"up\", \"down\", \"left\", \"right\"]>>; scroll_amount: Schema.optional<typeof Schema.Number>; duration: Schema.optional<typeof Schema.Number>; }>; readonly success: typeof Schema.String; readonly failure: typeof Schema.Never; }, true>",
+    "signature": "declare const ComputerUse_20250124: <Mode extends Tool.FailureMode | undefined = undefined>(args: { readonly display_height_px: number; readonly display_width_px: number; readonly cache_control?: { readonly type: \"ephemeral\"; readonly ttl?: \"5m\" | \"1h\" | null | undefined; } | null | undefined; readonly display_number?: number | null | undefined; readonly failureMode?: Mode | undefined; }) => Tool.ProviderDefined<\"AnthropicComputerUse\", { readonly args: Schema.Struct<{ readonly cache_control: Schema.optionalWith<typeof Generated.BetaCacheControlEphemeral, { nullable: true; }>; readonly display_height_px: Schema.filter<typeof Schema.Int>; readonly display_number: Schema.optionalWith<Schema.filter<typeof Schema.Int>, { nullable: true; }>; readonly display_width_px: Schema.filter<typeof Schema.Int>; }>; readonly parameters: Schema.Struct<{ action: Schema.Literal<[\"screenshot\", \"left_click\", \"type\", \"key\", \"mouse_move\", \"scroll\", \"left_click_drag\", \"middle_click\", \"right_click\", \"double_click\", \"triple_click\", \"left_mouse_down\", \"left_mouse_up\", \"hold_key\", \"wait\"]>; coordinate: Schema.optional<Schema.Tuple2<typeof Schema.Number, typeof Schema.Number>>; start_coordinate: Schema.optional<Schema.Tuple2<typeof Schema.Number, typeof Schema.Number>>; text: Schema.optional<typeof Schema.String>; scroll_direction: Schema.optional<Schema.Literal<[\"up\", \"down\", \"left\", \"right\"]>>; scroll_amount: Schema.optional<typeof Schema.Number>; duration: Schema.optional<typeof Schema.Number>; }>; readonly success: typeof Schema.String; readonly failure: typeof Schema.Never; readonly failureMode: Mode extends undefined ? \"error\" : Mode; }, true>",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L186"
   },
   {
@@ -737,7 +737,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "Tools",
-    "signature": "declare const TextEditor_20241022: (args: {}) => Tool.ProviderDefined<\"AnthropicTextEditor\", { readonly args: Schema.Struct<{}>; readonly parameters: Schema.Struct<{ command: Schema.Literal<[\"view\", \"create\", \"str_replace\", \"insert\", \"undo_edit\"]>; path: typeof Schema.String; file_text: Schema.optional<typeof Schema.String>; insert_line: Schema.optional<typeof Schema.Number>; new_str: Schema.optional<typeof Schema.String>; old_str: Schema.optional<typeof Schema.String>; view_range: Schema.optional<Schema.Array$<typeof Schema.Number>>; }>; readonly success: typeof Schema.Void; readonly failure: typeof Schema.Never; }, true>",
+    "signature": "declare const TextEditor_20241022: <Mode extends Tool.FailureMode | undefined = undefined>(args: { readonly failureMode?: Mode | undefined; }) => Tool.ProviderDefined<\"AnthropicTextEditor\", { readonly args: Schema.Struct<{}>; readonly parameters: Schema.Struct<{ command: Schema.Literal<[\"view\", \"create\", \"str_replace\", \"insert\", \"undo_edit\"]>; path: typeof Schema.String; file_text: Schema.optional<typeof Schema.String>; insert_line: Schema.optional<typeof Schema.Number>; new_str: Schema.optional<typeof Schema.String>; old_str: Schema.optional<typeof Schema.String>; view_range: Schema.optional<Schema.Array$<typeof Schema.Number>>; }>; readonly success: typeof Schema.Void; readonly failure: typeof Schema.Never; readonly failureMode: Mode extends undefined ? \"error\" : Mode; }, true>",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L285"
   },
   {
@@ -753,7 +753,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "Tools",
-    "signature": "declare const TextEditor_20250124: (args: {}) => Tool.ProviderDefined<\"AnthropicTextEditor\", { readonly args: Schema.Struct<{}>; readonly parameters: Schema.Struct<{ command: Schema.Literal<[\"view\", \"create\", \"str_replace\", \"insert\", \"undo_edit\"]>; path: typeof Schema.String; file_text: Schema.optional<typeof Schema.String>; insert_line: Schema.optional<typeof Schema.Number>; new_str: Schema.optional<typeof Schema.String>; old_str: Schema.optional<typeof Schema.String>; view_range: Schema.optional<Schema.Array$<typeof Schema.Number>>; }>; readonly success: typeof Schema.Void; readonly failure: typeof Schema.Never; }, true>",
+    "signature": "declare const TextEditor_20250124: <Mode extends Tool.FailureMode | undefined = undefined>(args: { readonly failureMode?: Mode | undefined; }) => Tool.ProviderDefined<\"AnthropicTextEditor\", { readonly args: Schema.Struct<{}>; readonly parameters: Schema.Struct<{ command: Schema.Literal<[\"view\", \"create\", \"str_replace\", \"insert\", \"undo_edit\"]>; path: typeof Schema.String; file_text: Schema.optional<typeof Schema.String>; insert_line: Schema.optional<typeof Schema.Number>; new_str: Schema.optional<typeof Schema.String>; old_str: Schema.optional<typeof Schema.String>; view_range: Schema.optional<Schema.Array$<typeof Schema.Number>>; }>; readonly success: typeof Schema.Void; readonly failure: typeof Schema.Never; readonly failureMode: Mode extends undefined ? \"error\" : Mode; }, true>",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L345"
   },
   {
@@ -769,7 +769,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "Tools",
-    "signature": "declare const TextEditor_20250429: (args: {}) => Tool.ProviderDefined<\"AnthropicTextEditor\", { readonly args: Schema.Struct<{}>; readonly parameters: Schema.Struct<{ command: Schema.Literal<[\"view\", \"create\", \"str_replace\", \"insert\"]>; path: typeof Schema.String; file_text: Schema.optional<typeof Schema.String>; insert_line: Schema.optional<typeof Schema.Number>; new_str: Schema.optional<typeof Schema.String>; old_str: Schema.optional<typeof Schema.String>; view_range: Schema.optional<Schema.Array$<typeof Schema.Number>>; }>; readonly success: typeof Schema.Void; readonly failure: typeof Schema.Never; }, true>",
+    "signature": "declare const TextEditor_20250429: <Mode extends Tool.FailureMode | undefined = undefined>(args: { readonly failureMode?: Mode | undefined; }) => Tool.ProviderDefined<\"AnthropicTextEditor\", { readonly args: Schema.Struct<{}>; readonly parameters: Schema.Struct<{ command: Schema.Literal<[\"view\", \"create\", \"str_replace\", \"insert\"]>; path: typeof Schema.String; file_text: Schema.optional<typeof Schema.String>; insert_line: Schema.optional<typeof Schema.Number>; new_str: Schema.optional<typeof Schema.String>; old_str: Schema.optional<typeof Schema.String>; view_range: Schema.optional<Schema.Array$<typeof Schema.Number>>; }>; readonly success: typeof Schema.Void; readonly failure: typeof Schema.Never; readonly failureMode: Mode extends undefined ? \"error\" : Mode; }, true>",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L405"
   },
   {
@@ -785,7 +785,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "Tools",
-    "signature": "declare const TextEditor_20250728: (args: {}) => Tool.ProviderDefined<\"AnthropicTextEditor\", { readonly args: Schema.Struct<{}>; readonly parameters: Schema.Struct<{ command: Schema.Literal<[\"view\", \"create\", \"str_replace\", \"insert\"]>; path: typeof Schema.String; file_text: Schema.optional<typeof Schema.String>; insert_line: Schema.optional<typeof Schema.Number>; new_str: Schema.optional<typeof Schema.String>; old_str: Schema.optional<typeof Schema.String>; view_range: Schema.optional<Schema.Array$<typeof Schema.Number>>; }>; readonly success: typeof Schema.Void; readonly failure: typeof Schema.Never; }, true>",
+    "signature": "declare const TextEditor_20250728: <Mode extends Tool.FailureMode | undefined = undefined>(args: { readonly failureMode?: Mode | undefined; }) => Tool.ProviderDefined<\"AnthropicTextEditor\", { readonly args: Schema.Struct<{}>; readonly parameters: Schema.Struct<{ command: Schema.Literal<[\"view\", \"create\", \"str_replace\", \"insert\"]>; path: typeof Schema.String; file_text: Schema.optional<typeof Schema.String>; insert_line: Schema.optional<typeof Schema.Number>; new_str: Schema.optional<typeof Schema.String>; old_str: Schema.optional<typeof Schema.String>; view_range: Schema.optional<Schema.Array$<typeof Schema.Number>>; }>; readonly success: typeof Schema.Void; readonly failure: typeof Schema.Never; readonly failureMode: Mode extends undefined ? \"error\" : Mode; }, true>",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L464"
   },
   {
@@ -800,7 +800,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "Tools",
-    "signature": "declare const WebSearch_20250305: (args: { readonly cache_control?: { readonly type: \"ephemeral\"; readonly ttl?: \"5m\" | \"1h\" | null | undefined; } | null | undefined; readonly allowed_domains?: ReadonlyArray<string> | null | undefined; readonly blocked_domains?: ReadonlyArray<string> | null | undefined; readonly max_uses?: number | null | undefined; readonly user_location?: { readonly type: \"approximate\"; readonly city?: string | null | undefined; readonly country?: string | null | undefined; readonly region?: string | null | undefined; readonly timezone?: string | null | undefined; } | null | undefined; }) => Tool.ProviderDefined<\"AnthropicWebSearch\", { readonly args: Schema.Struct<{ readonly cache_control: Schema.optionalWith<typeof Generated.CacheControlEphemeral, { nullable: true; }>; readonly allowed_domains: Schema.optionalWith<Schema.Array$<typeof Schema.String>, { nullable: true; }>; readonly blocked_domains: Schema.optionalWith<Schema.Array$<typeof Schema.String>, { nullable: true; }>; readonly max_uses: Schema.optionalWith<Schema.filter<typeof Schema.Int>, { nullable: true; }>; readonly user_location: Schema.optionalWith<typeof Generated.UserLocation, { nullable: true; }>; }>; readonly parameters: Schema.Struct<{}>; readonly success: Schema.Array$<typeof Generated.RequestWebSearchResultBlock>; readonly failure: typeof Generated.ResponseWebSearchToolResultError; }, false>",
+    "signature": "declare const WebSearch_20250305: <Mode extends Tool.FailureMode | undefined = undefined>(args: { readonly cache_control?: { readonly type: \"ephemeral\"; readonly ttl?: \"5m\" | \"1h\" | null | undefined; } | null | undefined; readonly allowed_domains?: ReadonlyArray<string> | null | undefined; readonly blocked_domains?: ReadonlyArray<string> | null | undefined; readonly max_uses?: number | null | undefined; readonly user_location?: { readonly type: \"approximate\"; readonly city?: string | null | undefined; readonly country?: string | null | undefined; readonly region?: string | null | undefined; readonly timezone?: string | null | undefined; } | null | undefined; }) => Tool.ProviderDefined<\"AnthropicWebSearch\", { readonly args: Schema.Struct<{ readonly cache_control: Schema.optionalWith<typeof Generated.CacheControlEphemeral, { nullable: true; }>; readonly allowed_domains: Schema.optionalWith<Schema.Array$<typeof Schema.String>, { nullable: true; }>; readonly blocked_domains: Schema.optionalWith<Schema.Array$<typeof Schema.String>, { nullable: true; }>; readonly max_uses: Schema.optionalWith<Schema.filter<typeof Schema.Int>, { nullable: true; }>; readonly user_location: Schema.optionalWith<typeof Generated.UserLocation, { nullable: true; }>; }>; readonly parameters: Schema.Struct<{}>; readonly success: Schema.Array$<typeof Generated.RequestWebSearchResultBlock>; readonly failure: typeof Generated.ResponseWebSearchToolResultError; readonly failureMode: Mode extends undefined ? \"error\" : Mode; }, false>",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L520"
   },
   {

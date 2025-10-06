@@ -19,6 +19,6 @@ type ExtractContext<Options> = Options extends {
   : never
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/LanguageModel.ts#L439)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/LanguageModel.ts#L441)
 
 Since v1.0.0

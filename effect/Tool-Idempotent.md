@@ -20,6 +20,6 @@ const idempotentTool = Tool.make("get_current_time")
 declare class Idempotent
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Tool.ts#L1248)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Tool.ts#L1438)
 
 Since v1.0.0

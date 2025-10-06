@@ -15,11 +15,12 @@ export interface FromTaggedRequest<S extends AnyTaggedRequestSchema> extends
       readonly parameters: S
       readonly success: S["success"]
       readonly failure: S["failure"]
+      readonly failureMode: "error"
     }
   >
 {}
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Tool.ts#L505)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Tool.ts#L564)
 
 Since v1.0.0
