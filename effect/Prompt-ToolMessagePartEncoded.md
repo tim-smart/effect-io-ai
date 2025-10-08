@@ -11,6 +11,6 @@ Union type of encoded content parts for tool messages.
 type ToolMessagePartEncoded = ToolResultPartEncoded
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L1193)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L1196)
 
 Since v1.0.0

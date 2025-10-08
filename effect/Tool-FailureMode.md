@@ -18,6 +18,6 @@ will be captured and returned as part of the tool call result.
 type FailureMode = "error" | "return"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Tool.ts#L365)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Tool.ts#L352)
 
 Since v1.0.0

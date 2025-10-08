@@ -23,6 +23,6 @@ export interface BasePart<Type extends string, Metadata extends ProviderMetadata
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L476)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L475)
 
 Since v1.0.0

@@ -20,6 +20,6 @@ export interface FinishPartEncoded extends BasePartEncoded<"finish", FinishPartM
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L2211)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L2258)
 
 Since v1.0.0

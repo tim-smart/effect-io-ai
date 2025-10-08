@@ -23,6 +23,6 @@ export interface BaseMessage<Role extends string, Options extends ProviderOption
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L733)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L737)
 
 Since v1.0.0

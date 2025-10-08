@@ -15,6 +15,6 @@ type ToolCallParts<Tools> = {
 }[keyof Tools]
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L409)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L408)
 
 Since v1.0.0

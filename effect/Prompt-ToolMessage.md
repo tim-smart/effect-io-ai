@@ -15,15 +15,13 @@ const toolMessage: Prompt.ToolMessage = Prompt.makeMessage("tool", {
     Prompt.makePart("tool-result", {
       id: "call_123",
       name: "search_web",
+      isFailure: false,
       result: {
-        _tag: "Right",
-        right: {
-          query: "TypeScript best practices",
-          results: [
-            { title: "TypeScript Handbook", url: "https://..." },
-            { title: "Effective TypeScript", url: "https://..." }
-          ]
-        }
+        query: "TypeScript best practices",
+        results: [
+          { title: "TypeScript Handbook", url: "https://..." },
+          { title: "Effective TypeScript", url: "https://..." }
+        ]
       }
     })
   ]
@@ -41,6 +39,6 @@ export interface ToolMessage extends BaseMessage<"tool", ToolMessageOptions> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L1159)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L1162)
 
 Since v1.0.0

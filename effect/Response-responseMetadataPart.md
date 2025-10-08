@@ -11,6 +11,6 @@ Constructs a new response metadata part.
 declare const responseMetadataPart: (params: ConstructorParams<ResponseMetadataPart>) => ResponseMetadataPart
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L2086)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L2133)
 
 Since v1.0.0

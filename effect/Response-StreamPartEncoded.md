@@ -27,6 +27,6 @@ type StreamPartEncoded = | TextStartPartEncoded
   | ErrorPartEncoded
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L342)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L341)
 
 Since v1.0.0

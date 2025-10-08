@@ -11,6 +11,6 @@ Constructs a new file part.
 declare const filePart: (params: ConstructorParams<FilePart>) => FilePart
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L1799)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L1846)
 
 Since v1.0.0

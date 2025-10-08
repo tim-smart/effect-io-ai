@@ -24,9 +24,10 @@ const assistantMessage: Prompt.AssistantMessage = Prompt.makeMessage("assistant"
     Prompt.makePart("tool-result", {
       id: "call_123",
       name: "get_weather",
+      isFailure: false,
       result: {
-        _tag: "Right",
-        right: { temperature: 72, condition: "sunny" }
+        temperature: 72,
+        condition: "sunny"
       }
     }),
     Prompt.makePart("text", {
@@ -47,6 +48,6 @@ export interface AssistantMessage extends BaseMessage<"assistant", AssistantMess
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L1046)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L1051)
 
 Since v1.0.0

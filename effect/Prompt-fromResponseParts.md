@@ -28,8 +28,9 @@ const responseParts: ReadonlyArray<Response.AnyPart> = [
   Response.makePart("tool-result", {
     id: "call_1",
     name: "get_time",
-    result: Either.right("10:30 AM"),
-    encodedResult: { _tag: "Right", right: "10:30 AM" },
+    isFailure: false,
+    result: "10:30 AM",
+    encodedResult: "10:30 AM",
     providerExecuted: false
   })
 ]
@@ -44,6 +45,6 @@ const prompt = Prompt.fromResponseParts(responseParts)
 declare const fromResponseParts: (parts: ReadonlyArray<Response.AnyPart>) => Prompt
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L1580)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L1584)
 
 Since v1.0.0

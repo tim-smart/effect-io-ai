@@ -20,6 +20,6 @@ const readOnlyTool = Tool.make("get_user_info")
 declare class Readonly
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Tool.ts#L1396)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Tool.ts#L1356)
 
 Since v1.0.0

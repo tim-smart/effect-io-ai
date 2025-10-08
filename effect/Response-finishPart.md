@@ -11,6 +11,6 @@ Constructs a new finish part.
 declare const finishPart: (params: ConstructorParams<FinishPart>) => FinishPart
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L2253)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L2300)
 
 Since v1.0.0

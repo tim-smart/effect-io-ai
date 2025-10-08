@@ -38,6 +38,6 @@ export interface ToolCallPartEncoded extends BasePartEncoded<"tool-call", ToolCa
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L1428)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L1427)
 
 Since v1.0.0

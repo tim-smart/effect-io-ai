@@ -13,11 +13,11 @@ type HandlerError<T> = T extends Tool<
   infer _Name,
   infer _Config,
   infer _Requirements
-> ? _Config["failureMode"] extends "error" ? Schema.Schema.Type<_Config["failure"]>
+> ? _Config["failureMode"] extends "error" ? _Config["failure"]["Type"]
   : never
   : never
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Tool.ts#L781)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Tool.ts#L771)
 
 Since v1.0.0

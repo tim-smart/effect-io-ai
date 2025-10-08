@@ -11,6 +11,6 @@ Constructs a new text start part.
 declare const textStartPart: (params: ConstructorParams<TextStartPart>) => TextStartPart
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L698)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L697)
 
 Since v1.0.0

@@ -29,6 +29,6 @@ type AnyPart = | TextPart
   | ErrorPart
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L76)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L75)
 
 Since v1.0.0

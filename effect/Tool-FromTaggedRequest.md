@@ -21,6 +21,6 @@ export interface FromTaggedRequest<S extends AnyTaggedRequestSchema> extends
 {}
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Tool.ts#L564)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Tool.ts#L550)
 
 Since v1.0.0

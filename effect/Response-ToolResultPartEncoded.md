@@ -21,7 +21,11 @@ export interface ToolResultPartEncoded extends BasePartEncoded<"tool-result", To
   /**
    * The result returned by the tool execution.
    */
-  readonly result: Schema.EitherEncoded<unknown, unknown>
+  readonly result: unknown
+  /**
+   * Whether or not the result of executing the tool call handler was an error.
+   */
+  readonly isFailure: boolean
   /**
    * Optional provider-specific name for the tool, which can be useful when the
    * name of the tool in the `Toolkit` and the name of the tool used by the
@@ -38,6 +42,6 @@ export interface ToolResultPartEncoded extends BasePartEncoded<"tool-result", To
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L1591)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L1626)
 
 Since v1.0.0

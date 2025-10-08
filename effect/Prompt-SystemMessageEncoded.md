@@ -16,6 +16,6 @@ export interface SystemMessageEncoded extends BaseMessageEncoded<"system", Syste
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L859)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L863)
 
 Since v1.0.0

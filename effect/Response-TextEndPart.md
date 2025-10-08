@@ -18,6 +18,6 @@ export interface TextEndPart extends BasePart<"text-end", TextEndPartMetadata> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L784)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L783)
 
 Since v1.0.0

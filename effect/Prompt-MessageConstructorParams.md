@@ -17,6 +17,6 @@ type MessageConstructorParams<M> = Omit<M, MessageTypeId | "role" | "options"> &
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L803)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L807)
 
 Since v1.0.0

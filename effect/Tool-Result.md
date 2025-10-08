@@ -13,10 +13,10 @@ type Result<T> = T extends Tool<
   infer _Name,
   infer _Config,
   infer _Requirements
-> ? Schema.Either<_Config["success"], _Config["failure"]>["Type"] :
-  never
+> ? Success<T> | Failure<T>
+  : never
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Tool.ts#L704)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Tool.ts#L690)
 
 Since v1.0.0

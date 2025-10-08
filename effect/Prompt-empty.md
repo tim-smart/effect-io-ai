@@ -20,6 +20,6 @@ console.log(emptyPrompt.content) // []
 declare const empty: Prompt
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L1441)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L1444)
 
 Since v1.0.0

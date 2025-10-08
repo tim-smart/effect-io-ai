@@ -18,6 +18,6 @@ export interface ReasoningStartPart extends BasePart<"reasoning-start", Reasonin
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L922)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L921)
 
 Since v1.0.0

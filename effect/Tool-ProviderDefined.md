@@ -87,16 +87,9 @@ export interface ProviderDefined<
    * this tool into a `Layer`.
    */
   readonly requiresHandler: RequiresHandler
-
-  /**
-   * Decodes the result received after the provider-defined tool is called.
-   */
-  decodeResult(
-    args: unknown
-  ): Effect.Effect<Config["success"]["Type"], AiError.AiError>
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Tool.ts#L293)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Tool.ts#L287)
 
 Since v1.0.0

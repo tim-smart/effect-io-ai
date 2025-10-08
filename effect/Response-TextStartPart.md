@@ -18,6 +18,6 @@ export interface TextStartPart extends BasePart<"text-start", TextStartPartMetad
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L648)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L647)
 
 Since v1.0.0

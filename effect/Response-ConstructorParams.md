@@ -17,6 +17,6 @@ type ConstructorParams<Part> = Omit<Part, PartTypeId | "type" | "sourceType" | "
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L558)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L557)
 
 Since v1.0.0

@@ -12,6 +12,6 @@ toolkit.
 type Tools<T> = T extends Toolkit<infer Tools> ? Tools : never
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Toolkit.ts#L173)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Toolkit.ts#L172)
 
 Since v1.0.0

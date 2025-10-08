@@ -47,6 +47,6 @@ console.log(Tool.isUserDefined(ProviderDefinedTool))  // false
 declare const isUserDefined: (u: unknown) => u is Tool<string, any, any>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Tool.ts#L441)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Tool.ts#L428)
 
 Since v1.0.0

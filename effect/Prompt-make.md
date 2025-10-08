@@ -33,6 +33,6 @@ const copiedPrompt = Prompt.make(existingPrompt)
 declare const make: (input: RawInput) => Prompt
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L1470)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L1473)
 
 Since v1.0.0

@@ -89,12 +89,6 @@ export interface Tool<
   readonly failureSchema: Config["failure"]
 
   /**
-   * A `Schema` representing the result of a tool call, whether it succeeds or
-   * fails.
-   */
-  readonly resultSchema: Schema.Either<Config["success"], Config["failure"]>
-
-  /**
    * A `Context` object containing tool annotations which can store metadata
    * about the tool.
    */

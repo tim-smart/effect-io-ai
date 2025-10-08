@@ -20,6 +20,6 @@ export interface ReasoningDeltaPartEncoded extends BasePartEncoded<"reasoning-de
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L1003)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L1002)
 
 Since v1.0.0

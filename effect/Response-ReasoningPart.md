@@ -29,6 +29,6 @@ export interface ReasoningPart extends BasePart<"reasoning", ReasoningPartMetada
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L858)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L857)
 
 Since v1.0.0

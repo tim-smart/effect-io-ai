@@ -20,6 +20,6 @@ const safeTool = Tool.make("search_database")
 declare class Destructive
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Tool.ts#L1417)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Tool.ts#L1377)
 
 Since v1.0.0

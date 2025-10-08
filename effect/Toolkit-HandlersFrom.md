@@ -19,6 +19,6 @@ type HandlersFrom<Tools> = {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Toolkit.ts#L193)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Toolkit.ts#L192)
 
 Since v1.0.0

@@ -11,6 +11,6 @@ Constructs a new tool params end part.
 declare const toolParamsEndPart: (params: ConstructorParams<ToolParamsEndPart>) => ToolParamsEndPart
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L1356)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L1355)
 
 Since v1.0.0

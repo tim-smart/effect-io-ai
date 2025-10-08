@@ -11,6 +11,6 @@ Constructs a new text end part.
 declare const textEndPart: (params: ConstructorParams<TextEndPart>) => TextEndPart
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L834)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L833)
 
 Since v1.0.0

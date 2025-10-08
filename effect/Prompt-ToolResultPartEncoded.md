@@ -18,12 +18,16 @@ export interface ToolResultPartEncoded extends BasePartEncoded<"tool-result", To
    */
   readonly name: string
   /**
+   * Whether or not the result of executing the tool call handler was an error.
+   */
+  readonly isFailure: boolean
+  /**
    * The result returned by the tool execution.
    */
-  readonly result: Schema.EitherEncoded<unknown, unknown>
+  readonly result: unknown
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L644)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L646)
 
 Since v1.0.0

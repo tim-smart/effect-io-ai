@@ -15,6 +15,6 @@ type AssistantMessagePart = | TextPart
   | ToolResultPart
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L1059)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L1064)
 
 Since v1.0.0

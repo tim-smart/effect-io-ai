@@ -11,6 +11,6 @@ Type-level representation of the Response Part identifier.
 type PartTypeId = typeof PartTypeId
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L60)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L59)
 
 Since v1.0.0
