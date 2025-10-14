@@ -34,6 +34,6 @@ const program = Effect.gen(function* () {
 declare class GenerateTextResponse<Tools> { constructor(content: Array<Response.Part<Tools>>) }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/LanguageModel.ts#L283)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/LanguageModel.ts#L285)
 
 Since v1.0.0

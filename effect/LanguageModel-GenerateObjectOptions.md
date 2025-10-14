@@ -24,6 +24,6 @@ export interface GenerateObjectOptions<Tools extends Record<string, Tool.Any>, A
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/LanguageModel.ts#L215)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/LanguageModel.ts#L217)
 
 Since v1.0.0

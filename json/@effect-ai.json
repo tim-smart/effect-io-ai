@@ -878,7 +878,7 @@
     "since": "1.0.0",
     "category": "Context",
     "signature": "declare class LanguageModel",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/LanguageModel.ts#L98"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/LanguageModel.ts#L100"
   },
   {
     "_tag": "Class",
@@ -896,7 +896,7 @@
     "since": "1.0.0",
     "category": "Models",
     "signature": "declare class GenerateTextResponse<Tools> { constructor(content: Array<Response.Part<Tools>>) }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/LanguageModel.ts#L283"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/LanguageModel.ts#L285"
   },
   {
     "_tag": "Class",
@@ -914,7 +914,7 @@
     "since": "1.0.0",
     "category": "Models",
     "signature": "declare class GenerateObjectResponse<Tools, A> { constructor(value: A, content: Array<Response.Part<Tools>>) }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/LanguageModel.ts#L392"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/LanguageModel.ts#L394"
   },
   {
     "_tag": "Constant",
@@ -930,7 +930,7 @@
     "since": "1.0.0",
     "category": "Constructors",
     "signature": "declare const make: (params: ConstructorParams) => Effect.Effect<Service>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/LanguageModel.ts#L562"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/LanguageModel.ts#L564"
   },
   {
     "_tag": "Constant",
@@ -948,7 +948,7 @@
     "since": "1.0.0",
     "category": "Functions",
     "signature": "declare const generateText: <Options extends NoExcessProperties<GenerateTextOptions<any>, Options>, Tools extends Record<string, Tool.Any> = {}>(options: Options & GenerateTextOptions<Tools>) => Effect.Effect<GenerateTextResponse<Tools>, ExtractError<Options>, LanguageModel | ExtractContext<Options>>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/LanguageModel.ts#L894"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/LanguageModel.ts#L903"
   },
   {
     "_tag": "Constant",
@@ -966,7 +966,7 @@
     "since": "1.0.0",
     "category": "Functions",
     "signature": "declare const generateObject: <A, I extends Record<string, unknown>, R, Options extends NoExcessProperties<GenerateObjectOptions<any, A, I, R>, Options>, Tools extends Record<string, Tool.Any> = {}>(options: Options & GenerateObjectOptions<Tools, A, I, R>) => Effect.Effect<GenerateObjectResponse<Tools, A>, ExtractError<Options>, LanguageModel | R | ExtractContext<Options>>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/LanguageModel.ts#L934"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/LanguageModel.ts#L943"
   },
   {
     "_tag": "Function",
@@ -984,7 +984,7 @@
     "since": "1.0.0",
     "category": "Functions",
     "signature": "declare const streamText: <Options extends NoExcessProperties<GenerateTextOptions<any>, Options>, Tools extends Record<string, Tool.Any> = {}>(options: Options & GenerateTextOptions<Tools>) => Stream.Stream<Response.StreamPart<Tools>, ExtractError<Options>, LanguageModel | ExtractContext<Options>>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/LanguageModel.ts#L970"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/LanguageModel.ts#L979"
   },
   {
     "_tag": "Interface",
@@ -1000,7 +1000,7 @@
     "since": "1.0.0",
     "category": "Models",
     "signature": "export interface Service {\n  /**\n   * Generate text using the language model.\n   */\n  readonly generateText: <\n    Options extends NoExcessProperties<GenerateTextOptions<any>, Options>,\n    Tools extends Record<string, Tool.Any> = {}\n  >(options: Options & GenerateTextOptions<Tools>) => Effect.Effect<\n    GenerateTextResponse<Tools>,\n    ExtractError<Options>,\n    ExtractContext<Options>\n  >\n\n  /**\n   * Generate a structured object from a schema using the language model.\n   */\n  readonly generateObject: <\n    A,\n    I extends Record<string, unknown>,\n    R,\n    Options extends NoExcessProperties<GenerateObjectOptions<any, A, I, R>, Options>,\n    Tools extends Record<string, Tool.Any> = {}\n  >(options: Options & GenerateObjectOptions<Tools, A, I, R>) => Effect.Effect<\n    GenerateObjectResponse<Tools, A>,\n    ExtractError<Options>,\n    R | ExtractContext<Options>\n  >\n\n  /**\n   * Generate text using the language model with streaming output.\n   */\n  readonly streamText: <\n    Options extends NoExcessProperties<GenerateTextOptions<any>, Options>,\n    Tools extends Record<string, Tool.Any> = {}\n  >(options: Options & GenerateTextOptions<Tools>) => Stream.Stream<\n    Response.StreamPart<Tools>,\n    ExtractError<Options>,\n    ExtractContext<Options>\n  >\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/LanguageModel.ts#L112"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/LanguageModel.ts#L114"
   },
   {
     "_tag": "Interface",
@@ -1016,7 +1016,7 @@
     "since": "1.0.0",
     "category": "Models",
     "signature": "export interface GenerateTextOptions<Tools extends Record<string, Tool.Any>> {\n  /**\n   * The prompt input to use to generate text.\n   */\n  readonly prompt: Prompt.RawInput\n\n  /**\n   * A toolkit containing both the tools and the tool call handler to use to\n   * augment text generation.\n   */\n  readonly toolkit?: Toolkit.WithHandler<Tools> | Effect.Effect<Toolkit.WithHandler<Tools>, any, any> | undefined\n\n  /**\n   * The tool choice mode for the language model.\n   * - `auto` (default): The model can decide whether or not to call tools, as\n   *   well as which tools to call.\n   * - `required`: The model **must** call a tool but can decide which tool will\n   *   be called.\n   * - `none`: The model **must not** call a tool.\n   * - `{ tool: <tool_name> }`: The model must call the specified tool.\n   * - `{ mode?: \"auto\" (default) | \"required\", \"oneOf\": [<tool-names>] }`: The\n   *   model is restricted to the subset of tools specified by `oneOf`. When\n   *   `mode` is `\"auto\"` or omitted, the model can decide whether or not a tool\n   *   from the allowed subset of tools can be called. When `mode` is\n   *   `\"required\"`, the model **must** call one tool from the allowed subset of\n   *   tools.\n   */\n  readonly toolChoice?:\n    | ToolChoice<{ [Name in keyof Tools]: Tools[Name][\"name\"] }[keyof Tools]>\n    | undefined\n\n  /**\n   * The concurrency level for resolving tool calls.\n   */\n  readonly concurrency?: Concurrency | undefined\n\n  /**\n   * When set to `true`, tool calls requested by the large language model\n   * will not be auto-resolved by the framework.\n   *\n   * This option is useful when:\n   *   1. The user wants to include tool call definitions from an `AiToolkit`\n   *      in requests to the large language model so that the model has the\n   *      capability to call tools\n   *   2. The user wants to control the execution of tool call resolvers\n   *      instead of having the framework handle tool call resolution\n   */\n  readonly disableToolCallResolution?: boolean | undefined\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/LanguageModel.ts#L159"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/LanguageModel.ts#L161"
   },
   {
     "_tag": "Interface",
@@ -1032,7 +1032,7 @@
     "since": "1.0.0",
     "category": "Models",
     "signature": "export interface GenerateObjectOptions<Tools extends Record<string, Tool.Any>, A, I extends Record<string, unknown>, R>\n  extends GenerateTextOptions<Tools>\n{\n  /**\n   * The name of the structured output that should be generated. Used by some\n   * large language model providers to provide additional guidance to the model.\n   */\n  readonly objectName?: string | undefined\n\n  /**\n   * The schema to be used to specify the structure of the object to generate.\n   */\n  readonly schema: Schema.Schema<A, I, R>\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/LanguageModel.ts#L215"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/LanguageModel.ts#L217"
   },
   {
     "_tag": "Interface",
@@ -1048,7 +1048,7 @@
     "since": "1.0.0",
     "category": "Models",
     "signature": "export interface ProviderOptions {\n  /**\n   * The prompt messages to use to generate text.\n   */\n  readonly prompt: Prompt.Prompt\n\n  /**\n   * The tools that the large language model will have available to provide\n   * additional information which can be incorporated into its text generation.\n   */\n  readonly tools: ReadonlyArray<Tool.Any>\n\n  /**\n   * The format which the response should be provided in.\n   *\n   * If `\"text\"` is specified, the large language model response will be\n   * returned as text.\n   *\n   * If `\"json\"` is specified, the large language model respose will be provided\n   * as an JSON object that conforms to the shape of the specified schema.\n   *\n   * Defaults to `{ type: \"text\" }`.\n   */\n  readonly responseFormat:\n    | {\n      readonly type: \"text\"\n    }\n    | {\n      readonly type: \"json\"\n      readonly objectName: string\n      readonly schema: Schema.Schema.Any\n    }\n\n  /**\n   * The tool choice mode for the language model.\n   * - `auto` (default): The model can decide whether or not to call tools, as\n   *   well as which tools to call.\n   * - `required`: The model **must** call a tool but can decide which tool will\n   *   be called.\n   * - `none`: The model **must not** call a tool.\n   * - `{ tool: <tool_name> }`: The model must call the specified tool.\n   * - `{ mode?: \"auto\" (default) | \"required\", \"oneOf\": [<tool-names>] }`: The\n   *   model is restricted to the subset of tools specified by `oneOf`. When\n   *   `mode` is `\"auto\"` or omitted, the model can decide whether or not a tool\n   *   from the allowed subset of tools can be called. When `mode` is\n   *   `\"required\"`, the model **must** call one tool from the allowed subset of\n   *   tools.\n   */\n  readonly toolChoice: ToolChoice<any>\n\n  /**\n   * The span to use to trace interactions with the large language model.\n   */\n  readonly span: Span\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/LanguageModel.ts#L464"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/LanguageModel.ts#L466"
   },
   {
     "_tag": "Interface",
@@ -1064,7 +1064,7 @@
     "since": "1.0.0",
     "category": "Models",
     "signature": "export interface ConstructorParams {\n  /**\n   * A method which requests text generation from the large language model\n   * provider.\n   *\n   * The final result is returned when the large language model provider\n   * finishes text generation.\n   */\n  readonly generateText: (options: ProviderOptions) => Effect.Effect<\n    Array<Response.PartEncoded>,\n    AiError.AiError,\n    IdGenerator\n  >\n\n  /**\n   * A method which requests text generation from the large language model\n   * provider.\n   *\n   * Intermediate results are streamed from the large language model provider.\n   */\n  readonly streamText: (options: ProviderOptions) => Stream.Stream<\n    Response.StreamPartEncoded,\n    AiError.AiError,\n    IdGenerator\n  >\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/LanguageModel.ts#L526"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/LanguageModel.ts#L528"
   },
   {
     "_tag": "TypeAlias",
@@ -1080,7 +1080,7 @@
     "since": "1.0.0",
     "category": "Models",
     "signature": "type ToolChoice<Tools> = \"auto\" | \"none\" | \"required\" | {\n  readonly tool: Tools\n} | {\n  readonly mode?: \"auto\" | \"required\"\n  readonly oneOf: ReadonlyArray<Tools>\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/LanguageModel.ts#L248"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/LanguageModel.ts#L250"
   },
   {
     "_tag": "TypeAlias",
@@ -1096,7 +1096,7 @@
     "since": "1.0.0",
     "category": "Utility Types",
     "signature": "type ExtractError<Options> = Options extends {\n  readonly toolkit: Toolkit.WithHandler<infer _Tools>\n  readonly disableToolCallResolution: true\n} ? AiError.AiError\n  : Options extends {\n    readonly toolkit: Effect.Effect<Toolkit.WithHandler<infer _Tools>, infer _E, infer _R>\n    readonly disableToolCallResolution: true\n  } ? AiError.AiError | _E\n  : Options extends {\n    readonly toolkit: Toolkit.WithHandler<infer _Tools>\n  } ? AiError.AiError | Tool.HandlerError<_Tools[keyof _Tools]>\n  : Options extends {\n    readonly toolkit: Effect.Effect<Toolkit.WithHandler<infer _Tools>, infer _E, infer _R>\n  } ? AiError.AiError | Tool.HandlerError<_Tools[keyof _Tools]> | _E :\n  AiError.AiError",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/LanguageModel.ts#L417"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/LanguageModel.ts#L419"
   },
   {
     "_tag": "TypeAlias",
@@ -1112,7 +1112,7 @@
     "since": "1.0.0",
     "category": "Utility Types",
     "signature": "type ExtractContext<Options> = Options extends {\n  readonly toolkit: Toolkit.WithHandler<infer _Tools>\n} ? Tool.Requirements<_Tools[keyof _Tools]>\n  : Options extends {\n    readonly toolkit: Effect.Effect<Toolkit.WithHandler<infer _Tools>, infer _E, infer _R>\n  } ? Tool.Requirements<_Tools[keyof _Tools]> | _R\n  : never",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/LanguageModel.ts#L441"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/LanguageModel.ts#L443"
   },
   {
     "_tag": "Class",

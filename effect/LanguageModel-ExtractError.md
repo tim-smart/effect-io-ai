@@ -28,6 +28,6 @@ type ExtractError<Options> = Options extends {
   AiError.AiError
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/LanguageModel.ts#L417)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/LanguageModel.ts#L419)
 
 Since v1.0.0

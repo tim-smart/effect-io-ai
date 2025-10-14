@@ -28,6 +28,6 @@ type ToolChoice<Tools> = "auto" | "none" | "required" | {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/LanguageModel.ts#L248)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/LanguageModel.ts#L250)
 
 Since v1.0.0

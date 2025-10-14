@@ -30,6 +30,6 @@ const useLanguageModel = Effect.gen(function* () {
 declare class LanguageModel
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/LanguageModel.ts#L98)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/LanguageModel.ts#L100)
 
 Since v1.0.0
