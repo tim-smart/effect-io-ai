@@ -222,7 +222,7 @@
     "since": "1.0.0",
     "category": "Token",
     "signature": "declare class TokenParsed",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/DurableDeferred.ts#L259"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/DurableDeferred.ts#L258"
   },
   {
     "_tag": "Constant",
@@ -252,7 +252,7 @@
     "since": "1.0.0",
     "category": "Combinators",
     "signature": "declare const into: { <Success extends Schema.Schema.Any, Error extends Schema.Schema.All>(self: DurableDeferred<Success, Error>): <R>(effect: Effect.Effect<Success[\"Type\"], Error[\"Type\"], R>) => Effect.Effect<Success[\"Type\"], Error[\"Type\"], R | WorkflowEngine | WorkflowInstance | Success[\"Context\"] | Error[\"Context\"]>; <Success extends Schema.Schema.Any, Error extends Schema.Schema.All, R>(effect: Effect.Effect<Success[\"Type\"], Error[\"Type\"], R>, self: DurableDeferred<Success, Error>): Effect.Effect<Success[\"Type\"], Error[\"Type\"], R | WorkflowEngine | WorkflowInstance | Success[\"Context\"] | Error[\"Context\"]>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/DurableDeferred.ts#L136"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/DurableDeferred.ts#L135"
   },
   {
     "_tag": "Constant",
@@ -267,7 +267,7 @@
     "since": "1.0.0",
     "category": "Token",
     "signature": "declare const TokenTypeId: unique symbol",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/DurableDeferred.ts#L230"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/DurableDeferred.ts#L229"
   },
   {
     "_tag": "Constant",
@@ -282,7 +282,7 @@
     "since": "1.0.0",
     "category": "Token",
     "signature": "declare const Token: Schema.brand<typeof Schema.String, unique symbol>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/DurableDeferred.ts#L248"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/DurableDeferred.ts#L247"
   },
   {
     "_tag": "Constant",
@@ -297,7 +297,7 @@
     "since": "1.0.0",
     "category": "Token",
     "signature": "declare const token: <Success extends Schema.Schema.Any, Error extends Schema.Schema.All>(self: DurableDeferred<Success, Error>) => Effect.Effect<Token, never, WorkflowInstance>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/DurableDeferred.ts#L305"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/DurableDeferred.ts#L304"
   },
   {
     "_tag": "Constant",
@@ -312,7 +312,7 @@
     "since": "1.0.0",
     "category": "Token",
     "signature": "declare const tokenFromExecutionId: { (options: { readonly workflow: Workflow.Any; readonly executionId: string; }): <Success extends Schema.Schema.Any, Error extends Schema.Schema.All>(self: DurableDeferred<Success, Error>) => Token; <Success extends Schema.Schema.Any, Error extends Schema.Schema.All>(self: DurableDeferred<Success, Error>, options: { readonly workflow: Workflow.Any; readonly executionId: string; }): Token; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/DurableDeferred.ts#L319"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/DurableDeferred.ts#L318"
   },
   {
     "_tag": "Constant",
@@ -327,7 +327,7 @@
     "since": "1.0.0",
     "category": "Token",
     "signature": "declare const tokenFromPayload: { <W extends Workflow.Any>(options: { readonly workflow: W; readonly payload: Schema.Simplify<Schema.Struct.Constructor<W[\"payloadSchema\"][\"fields\"]>>; }): <Success extends Schema.Schema.Any, Error extends Schema.Schema.All>(self: DurableDeferred<Success, Error>) => Effect.Effect<Token>; <Success extends Schema.Schema.Any, Error extends Schema.Schema.All, W extends Workflow.Any>(self: DurableDeferred<Success, Error>, options: { readonly workflow: W; readonly payload: Schema.Simplify<Schema.Struct.Constructor<W[\"payloadSchema\"][\"fields\"]>>; }): Effect.Effect<Token>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/DurableDeferred.ts#L350"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/DurableDeferred.ts#L349"
   },
   {
     "_tag": "Constant",
@@ -342,7 +342,7 @@
     "since": "1.0.0",
     "category": "Combinators",
     "signature": "declare const done: { <Success extends Schema.Schema.Any, Error extends Schema.Schema.All>(options: { readonly token: Token; readonly exit: Exit.Exit<Success[\"Type\"], Error[\"Type\"]>; }): (self: DurableDeferred<Success, Error>) => Effect.Effect<void, never, WorkflowEngine | Success[\"Context\"] | Error[\"Context\"]>; <Success extends Schema.Schema.Any, Error extends Schema.Schema.All>(self: DurableDeferred<Success, Error>, options: { readonly token: Token; readonly exit: Exit.Exit<Success[\"Type\"], Error[\"Type\"]>; }): Effect.Effect<void, never, WorkflowEngine | Success[\"Context\"] | Error[\"Context\"]>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/DurableDeferred.ts#L384"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/DurableDeferred.ts#L383"
   },
   {
     "_tag": "Constant",
@@ -357,7 +357,7 @@
     "since": "1.0.0",
     "category": "Combinators",
     "signature": "declare const succeed: { <Success extends Schema.Schema.Any, Error extends Schema.Schema.All>(options: { readonly token: Token; readonly value: Success[\"Type\"]; }): (self: DurableDeferred<Success, Error>) => Effect.Effect<void, never, WorkflowEngine | Success[\"Context\"]>; <Success extends Schema.Schema.Any, Error extends Schema.Schema.All>(self: DurableDeferred<Success, Error>, options: { readonly token: Token; readonly value: Success[\"Type\"]; }): Effect.Effect<void, never, WorkflowEngine | Success[\"Context\"]>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/DurableDeferred.ts#L427"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/DurableDeferred.ts#L426"
   },
   {
     "_tag": "Constant",
@@ -372,7 +372,7 @@
     "since": "1.0.0",
     "category": "Combinators",
     "signature": "declare const fail: { <Success extends Schema.Schema.Any, Error extends Schema.Schema.All>(options: { readonly token: Token; readonly error: Error[\"Type\"]; }): (self: DurableDeferred<Success, Error>) => Effect.Effect<void, never, WorkflowEngine | Error[\"Context\"]>; <Success extends Schema.Schema.Any, Error extends Schema.Schema.All>(self: DurableDeferred<Success, Error>, options: { readonly token: Token; readonly error: Error[\"Type\"]; }): Effect.Effect<void, never, WorkflowEngine | Error[\"Context\"]>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/DurableDeferred.ts#L460"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/DurableDeferred.ts#L459"
   },
   {
     "_tag": "Constant",
@@ -387,7 +387,7 @@
     "since": "1.0.0",
     "category": "Combinators",
     "signature": "declare const failCause: { <Success extends Schema.Schema.Any, Error extends Schema.Schema.All>(options: { readonly token: Token; readonly cause: Cause.Cause<Error[\"Type\"]>; }): (self: DurableDeferred<Success, Error>) => Effect.Effect<void, never, WorkflowEngine | Error[\"Context\"]>; <Success extends Schema.Schema.Any, Error extends Schema.Schema.All>(self: DurableDeferred<Success, Error>, options: { readonly token: Token; readonly cause: Cause.Cause<Error[\"Type\"]>; }): Effect.Effect<void, never, WorkflowEngine | Error[\"Context\"]>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/DurableDeferred.ts#L493"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/DurableDeferred.ts#L492"
   },
   {
     "_tag": "Function",
@@ -417,7 +417,7 @@
     "since": "1.0.0",
     "category": "Racing",
     "signature": "declare const raceAll: <const Effects extends NonEmptyReadonlyArray<Effect.Effect<any, any, any>>, SI, SR, EI, ER>(options: { name: string; success: Schema.Schema<Effects[number] extends Effect.Effect<infer S, infer _E, infer _R> ? S : never, SI, SR>; error: Schema.Schema<Effects[number] extends Effect.Effect<infer _S, infer E, infer _R> ? E : never, EI, ER>; effects: Effects; }) => Effect.Effect<(Effects[number] extends Effect.Effect<infer _A, infer _E, infer _R> ? _A : never), (Effects[number] extends Effect.Effect<infer _A, infer _E, infer _R> ? _E : never), (Effects[number] extends Effect.Effect<infer _A, infer _R, infer R> ? R : never) | SR | ER | WorkflowEngine | WorkflowInstance>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/DurableDeferred.ts#L182"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/DurableDeferred.ts#L181"
   },
   {
     "_tag": "Interface",
@@ -477,7 +477,7 @@
     "since": "1.0.0",
     "category": "Token",
     "signature": "type TokenTypeId = typeof TokenTypeId",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/DurableDeferred.ts#L236"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/DurableDeferred.ts#L235"
   },
   {
     "_tag": "TypeAlias",
@@ -492,7 +492,7 @@
     "since": "1.0.0",
     "category": "Token",
     "signature": "type Token = Brand.Branded<string, TokenTypeId>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/DurableDeferred.ts#L242"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/DurableDeferred.ts#L241"
   },
   {
     "_tag": "Export",
@@ -507,7 +507,7 @@
     "since": "1.0.0",
     "category": "Combinators",
     "signature": "declare const await: <Success extends Schema.Schema.Any, Error extends Schema.Schema.All>(self: DurableDeferred<Success, Error>) => Effect.Effect<Success[\"Type\"], Error[\"Type\"], WorkflowEngine | WorkflowInstance | Success[\"Context\"] | Error[\"Context\"]>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/DurableDeferred.ts#L129"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/DurableDeferred.ts#L128"
   },
   {
     "_tag": "Export",
@@ -665,7 +665,7 @@
     "since": "1.0.0",
     "category": "Annotations",
     "signature": "declare class CaptureDefects",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Workflow.ts#L637"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Workflow.ts#L650"
   },
   {
     "_tag": "Class",
@@ -681,7 +681,7 @@
     "since": "1.0.0",
     "category": "Annotations",
     "signature": "declare class SuspendOnFailure",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Workflow.ts#L651"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Workflow.ts#L664"
   },
   {
     "_tag": "Constant",
@@ -696,7 +696,7 @@
     "since": "1.0.0",
     "category": "Symbols",
     "signature": "declare const TypeId: unique symbol",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Workflow.ts#L26"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Workflow.ts#L27"
   },
   {
     "_tag": "Constant",
@@ -727,7 +727,7 @@
     "since": "1.0.0",
     "category": "Compensation",
     "signature": "declare const withCompensation: { <A, R2>(compensation: (value: A, cause: Cause.Cause<unknown>) => Effect.Effect<void, never, R2>): <E, R>(effect: Effect.Effect<A, E, R>) => Effect.Effect<A, E, R | R2 | WorkflowInstance | Scope.Scope>; <A, E, R, R2>(effect: Effect.Effect<A, E, R>, compensation: (value: A, cause: Cause.Cause<unknown>) => Effect.Effect<void, never, R2>): Effect.Effect<A, E, R | R2 | WorkflowInstance | Scope.Scope>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Workflow.ts#L600"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Workflow.ts#L603"
   },
   {
     "_tag": "Function",
@@ -742,7 +742,7 @@
     "since": "1.0.0",
     "category": "Constructors",
     "signature": "declare const make: <const Name extends string, Payload extends Schema.Struct.Fields | AnyStructSchema, Success extends Schema.Schema.Any = typeof Schema.Void, Error extends Schema.Schema.All = typeof Schema.Never>(options: { readonly name: Name; readonly payload: Payload; readonly idempotencyKey: (payload: Payload extends Schema.Struct.Fields ? Schema.Struct.Type<Payload> : Payload[\"Type\"]) => string; readonly success?: Success; readonly error?: Error; readonly suspendedRetrySchedule?: Schedule.Schedule<any, unknown> | undefined; readonly annotations?: Context.Context<never>; }) => Workflow<Name, Payload extends Schema.Struct.Fields ? Schema.Struct<Payload> : Payload, Success, Error>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Workflow.ts#L227"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Workflow.ts#L228"
   },
   {
     "_tag": "Function",
@@ -817,7 +817,22 @@
     "since": "1.0.0",
     "category": "Result",
     "signature": "declare const wrapActivityResult: <A, E, R>(effect: Effect.Effect<A, E, R>, isSuspend: (value: A) => boolean) => Effect.Effect<A, E, R | WorkflowInstance>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Workflow.ts#L562"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Workflow.ts#L565"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Workflow.ts",
+      "path": "src/Workflow.ts"
+    },
+    "project": "@effect/workflow",
+    "name": "suspend",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "declare const suspend: (instance: WorkflowInstance[\"Type\"]) => Effect.Effect<never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Workflow.ts#L634"
   },
   {
     "_tag": "Interface",
@@ -832,7 +847,7 @@
     "since": "1.0.0",
     "category": "Models",
     "signature": "export interface Workflow<\n  Name extends string,\n  Payload extends AnyStructSchema,\n  Success extends Schema.Schema.Any,\n  Error extends Schema.Schema.All\n> {\n  readonly [TypeId]: TypeId\n  readonly name: Name\n  readonly payloadSchema: Payload\n  readonly successSchema: Success\n  readonly errorSchema: Error\n  readonly annotations: Context.Context<never>\n\n  /**\n   * Add an annotation to the workflow.\n   */\n  annotate<I, S>(tag: Context.Tag<I, S>, value: S): Workflow<\n    Name,\n    Payload,\n    Success,\n    Error\n  >\n\n  /**\n   * Add the annotations from a Context object to the workflow.\n   */\n  annotateContext<I>(context: Context.Context<I>): Workflow<\n    Name,\n    Payload,\n    Success,\n    Error\n  >\n\n  /**\n   * Execute the workflow with the given payload.\n   */\n  readonly execute: <const Discard extends boolean = false>(\n    payload: [keyof Payload[\"fields\"]] extends [never] ? void\n      : Schema.Simplify<Schema.Struct.Constructor<Payload[\"fields\"]>>,\n    options?: {\n      readonly discard?: Discard\n    }\n  ) => Effect.Effect<\n    Discard extends true ? string : Success[\"Type\"],\n    Discard extends true ? never : Error[\"Type\"],\n    WorkflowEngine | Payload[\"Context\"] | Success[\"Context\"] | Error[\"Context\"]\n  >\n\n  /**\n   * Poll a workflow execution for its current status.\n   *\n   * If the workflow has not run yet, it will return `undefined`, otherwise it\n   * will return the current `Workflow.Result`.\n   */\n  readonly poll: (executionId: string) => Effect.Effect<\n    Result<Success[\"Type\"], Error[\"Type\"]> | undefined,\n    never,\n    WorkflowEngine | Success[\"Context\"] | Error[\"Context\"]\n  >\n\n  /**\n   * Interrupt a workflow execution for the given execution ID.\n   */\n  readonly interrupt: (executionId: string) => Effect.Effect<void, never, WorkflowEngine>\n\n  /**\n   * Manually resume a workflow execution for the given execution ID.\n   */\n  readonly resume: (executionId: string) => Effect.Effect<void, never, WorkflowEngine>\n\n  /**\n   * Create a layer that registers the workflow and provides an effect to\n   * execute it.\n   */\n  readonly toLayer: <R>(\n    execute: (\n      payload: Payload[\"Type\"],\n      executionId: string\n    ) => Effect.Effect<Success[\"Type\"], Error[\"Type\"], R>\n  ) => Layer.Layer<\n    WorkflowEngine,\n    never,\n    | WorkflowEngine\n    | Exclude<R, WorkflowEngine | WorkflowInstance | Execution<Name> | Scope.Scope>\n    | Payload[\"Context\"]\n    | Success[\"Context\"]\n    | Error[\"Context\"]\n  >\n\n  /**\n   * For the given payload, compute the deterministic execution ID.\n   */\n  readonly executionId: (\n    payload: Schema.Simplify<Schema.Struct.Constructor<Payload[\"fields\"]>>\n  ) => Effect.Effect<string>\n\n  /**\n   * Add compensation logic to an effect inside a Workflow. The compensation finalizer will be\n   * called if the entire workflow fails, allowing you to perform cleanup or\n   * other actions based on the success value and the cause of the workflow failure.\n   *\n   * NOTE: Compensation will not work for nested activities. Compensation\n   * finalizers are only registered for top-level effects in the workflow.\n   */\n  readonly withCompensation: {\n    <A, R2>(\n      compensation: (value: A, cause: Cause.Cause<Error[\"Type\"]>) => Effect.Effect<void, never, R2>\n    ): <E, R>(\n      effect: Effect.Effect<A, E, R>\n    ) => Effect.Effect<A, E, R | R2 | WorkflowInstance | Execution<Name> | Scope.Scope>\n    <A, E, R, R2>(\n      effect: Effect.Effect<A, E, R>,\n      compensation: (value: A, cause: Cause.Cause<Error[\"Type\"]>) => Effect.Effect<void, never, R2>\n    ): Effect.Effect<A, E, R | R2 | WorkflowInstance | Execution<Name> | Scope.Scope>\n  }\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Workflow.ts#L38"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Workflow.ts#L39"
   },
   {
     "_tag": "Interface",
@@ -847,7 +862,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "export interface AnyStructSchema extends Pipeable {\n  readonly [Schema.TypeId]: any\n  readonly make: any\n  readonly Type: any\n  readonly Encoded: any\n  readonly Context: any\n  readonly ast: AST.AST\n  readonly fields: Schema.Struct.Fields\n  readonly annotations: any\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Workflow.ts#L158"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Workflow.ts#L159"
   },
   {
     "_tag": "Interface",
@@ -862,7 +877,7 @@
     "since": "1.0.0",
     "category": "constructors",
     "signature": "export interface AnyTaggedRequestSchema extends AnyStructSchema {\n  readonly _tag: string\n  readonly Type: PrimaryKey.PrimaryKey\n  readonly success: Schema.Schema.Any\n  readonly failure: Schema.Schema.All\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Workflow.ts#L173"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Workflow.ts#L174"
   },
   {
     "_tag": "Interface",
@@ -877,7 +892,7 @@
     "since": "1.0.0",
     "category": "Models",
     "signature": "export interface Execution<Name extends string> {\n  readonly _: unique symbol\n  readonly name: Name\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Workflow.ts#L184"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Workflow.ts#L185"
   },
   {
     "_tag": "Interface",
@@ -892,7 +907,7 @@
     "since": "1.0.0",
     "category": "Models",
     "signature": "export interface Any {\n  readonly [TypeId]: TypeId\n  readonly name: string\n  readonly payloadSchema: AnyStructSchema\n  readonly successSchema: Schema.Schema.Any\n  readonly errorSchema: Schema.Schema.All\n  readonly annotations: Context.Context<never>\n  readonly executionId: (payload: any) => Effect.Effect<string>\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Workflow.ts#L193"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Workflow.ts#L194"
   },
   {
     "_tag": "Interface",
@@ -922,7 +937,7 @@
     "since": "1.0.0",
     "category": "Symbols",
     "signature": "type TypeId = typeof TypeId",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Workflow.ts#L32"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Workflow.ts#L33"
   },
   {
     "_tag": "TypeAlias",
@@ -937,7 +952,7 @@
     "since": "1.0.0",
     "category": "Models",
     "signature": "type Requirements<Workflows> = Workflows extends Workflow<\n  infer _Name,\n  infer _Payload,\n  infer _Success,\n  infer _Error\n> ? _Payload[\"Context\"] | _Success[\"Context\"] | _Error[\"Context\"] :\n  never",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Workflow.ts#L207"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Workflow.ts#L208"
   },
   {
     "_tag": "TypeAlias",
