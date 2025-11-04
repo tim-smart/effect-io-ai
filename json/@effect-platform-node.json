@@ -6,13 +6,13 @@
       "path": "src/index.ts"
     },
     "project": "@effect/platform-node",
-    "name": "NodeClusterRunnerHttp",
-    "description": "Re-exports all named exports from the \"./NodeClusterRunnerHttp.js\" module as `NodeClusterRunnerHttp`.",
+    "name": "NodeClusterHttp",
+    "description": "Re-exports all named exports from the \"./NodeClusterHttp.js\" module as `NodeClusterHttp`.",
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": null,
-    "signature": "export * as NodeClusterRunnerHttp from \"./NodeClusterRunnerHttp.js\"",
+    "signature": "export * as NodeClusterHttp from \"./NodeClusterHttp.js\"",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L4"
   },
   {
@@ -22,46 +22,14 @@
       "path": "src/index.ts"
     },
     "project": "@effect/platform-node",
-    "name": "NodeClusterRunnerSocket",
-    "description": "Re-exports all named exports from the \"./NodeClusterRunnerSocket.js\" module as `NodeClusterRunnerSocket`.",
+    "name": "NodeClusterSocket",
+    "description": "Re-exports all named exports from the \"./NodeClusterSocket.js\" module as `NodeClusterSocket`.",
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": null,
-    "signature": "export * as NodeClusterRunnerSocket from \"./NodeClusterRunnerSocket.js\"",
+    "signature": "export * as NodeClusterSocket from \"./NodeClusterSocket.js\"",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L9"
-  },
-  {
-    "_tag": "Export",
-    "module": {
-      "name": "index.ts",
-      "path": "src/index.ts"
-    },
-    "project": "@effect/platform-node",
-    "name": "NodeClusterShardManagerHttp",
-    "description": "Re-exports all named exports from the \"./NodeClusterShardManagerHttp.js\" module as `NodeClusterShardManagerHttp`.",
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": null,
-    "signature": "export * as NodeClusterShardManagerHttp from \"./NodeClusterShardManagerHttp.js\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L14"
-  },
-  {
-    "_tag": "Export",
-    "module": {
-      "name": "index.ts",
-      "path": "src/index.ts"
-    },
-    "project": "@effect/platform-node",
-    "name": "NodeClusterShardManagerSocket",
-    "description": "Re-exports all named exports from the \"./NodeClusterShardManagerSocket.js\" module as `NodeClusterShardManagerSocket`.",
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": null,
-    "signature": "export * as NodeClusterShardManagerSocket from \"./NodeClusterShardManagerSocket.js\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L19"
   },
   {
     "_tag": "Export",
@@ -77,7 +45,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "export * as NodeCommandExecutor from \"./NodeCommandExecutor.js\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L24"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L14"
   },
   {
     "_tag": "Export",
@@ -93,7 +61,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "export * as NodeContext from \"./NodeContext.js\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L29"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L19"
   },
   {
     "_tag": "Export",
@@ -109,7 +77,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "export * as NodeFileSystem from \"./NodeFileSystem.js\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L34"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L24"
   },
   {
     "_tag": "Export",
@@ -125,7 +93,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "export * as NodeHttpClient from \"./NodeHttpClient.js\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L39"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L29"
   },
   {
     "_tag": "Export",
@@ -141,7 +109,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "export * as NodeHttpPlatform from \"./NodeHttpPlatform.js\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L44"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L34"
   },
   {
     "_tag": "Export",
@@ -157,7 +125,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "export * as NodeHttpServer from \"./NodeHttpServer.js\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L49"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L39"
   },
   {
     "_tag": "Export",
@@ -173,7 +141,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "export * as NodeHttpServerRequest from \"./NodeHttpServerRequest.js\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L54"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L44"
   },
   {
     "_tag": "Export",
@@ -189,7 +157,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "export * as NodeKeyValueStore from \"./NodeKeyValueStore.js\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L59"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L49"
   },
   {
     "_tag": "Export",
@@ -205,7 +173,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "export * as NodeMultipart from \"./NodeMultipart.js\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L64"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L54"
   },
   {
     "_tag": "Export",
@@ -221,7 +189,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "export * as NodePath from \"./NodePath.js\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L69"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L59"
   },
   {
     "_tag": "Export",
@@ -237,7 +205,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "export * as NodeRuntime from \"./NodeRuntime.js\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L74"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L64"
   },
   {
     "_tag": "Export",
@@ -253,7 +221,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "export * as NodeSink from \"./NodeSink.js\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L79"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L69"
   },
   {
     "_tag": "Export",
@@ -269,7 +237,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "export * as NodeSocket from \"./NodeSocket.js\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L84"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L74"
   },
   {
     "_tag": "Export",
@@ -285,7 +253,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "export * as NodeSocketServer from \"./NodeSocketServer.js\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L89"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L79"
   },
   {
     "_tag": "Export",
@@ -301,7 +269,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "export * as NodeStream from \"./NodeStream.js\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L94"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L84"
   },
   {
     "_tag": "Export",
@@ -317,7 +285,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "export * as NodeTerminal from \"./NodeTerminal.js\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L99"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L89"
   },
   {
     "_tag": "Export",
@@ -333,7 +301,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "export * as NodeWorker from \"./NodeWorker.js\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L104"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L94"
   },
   {
     "_tag": "Export",
@@ -349,7 +317,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "export * as NodeWorkerRunner from \"./NodeWorkerRunner.js\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L109"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L99"
   },
   {
     "_tag": "Export",
@@ -365,13 +333,13 @@
     "since": "1.0.0",
     "category": null,
     "signature": "export * as Undici from \"./Undici.js\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L114"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L104"
   },
   {
     "_tag": "Constant",
     "module": {
-      "name": "NodeClusterRunnerHttp.ts",
-      "path": "src/NodeClusterRunnerHttp.ts"
+      "name": "NodeClusterHttp.ts",
+      "path": "src/NodeClusterHttp.ts"
     },
     "project": "@effect/platform-node",
     "name": "layerHttpServer",
@@ -380,13 +348,13 @@
     "since": "1.0.0",
     "category": "Layers",
     "signature": "declare const layerHttpServer: Layer.Layer<HttpServer | HttpPlatform | Etag.Generator | NodeContext, ServeError, ShardingConfig.ShardingConfig>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeClusterRunnerHttp.ts#L85"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeClusterHttp.ts#L117"
   },
   {
     "_tag": "Function",
     "module": {
-      "name": "NodeClusterRunnerHttp.ts",
-      "path": "src/NodeClusterRunnerHttp.ts"
+      "name": "NodeClusterHttp.ts",
+      "path": "src/NodeClusterHttp.ts"
     },
     "project": "@effect/platform-node",
     "name": "layer",
@@ -394,45 +362,44 @@
     "examples": [],
     "since": "1.0.0",
     "category": "Layers",
-    "signature": "declare const layer: <const ClientOnly extends boolean = false, const Storage extends \"noop\" | \"sql\" = never>(options: { readonly transport: \"http\" | \"websocket\"; readonly serialization?: \"msgpack\" | \"ndjson\" | undefined; readonly clientOnly?: ClientOnly | undefined; readonly storage?: Storage | undefined; readonly shardingConfig?: Partial<ShardingConfig.ShardingConfig[\"Type\"]> | undefined; }) => ClientOnly extends true ? Layer.Layer<Sharding | Runners.Runners | MessageStorage.MessageStorage, ConfigError | (\"sql\" extends Storage ? SqlError : never), \"sql\" extends Storage ? SqlClient : never> : Layer.Layer<Sharding | Runners.Runners | MessageStorage.MessageStorage, ServeError | ConfigError | (\"sql\" extends Storage ? SqlError : never), \"sql\" extends Storage ? SqlClient : never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeClusterRunnerHttp.ts#L33"
-  },
-  {
-    "_tag": "Export",
-    "module": {
-      "name": "NodeClusterRunnerSocket.ts",
-      "path": "src/NodeClusterRunnerSocket.ts"
-    },
-    "project": "@effect/platform-node",
-    "name": "\"@effect/platform-node-shared/NodeClusterRunnerSocket\"",
-    "description": "Re-exports all named exports from the \"@effect/platform-node-shared/NodeClusterRunnerSocket\" module.",
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": null,
-    "signature": "export * from \"@effect/platform-node-shared/NodeClusterRunnerSocket\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeClusterRunnerSocket.ts#L9"
+    "signature": "declare const layer: <const ClientOnly extends boolean = false, const Storage extends \"local\" | \"sql\" | \"byo\" = never, const Health extends \"ping\" | \"k8s\" = never>(options: { readonly transport: \"http\" | \"websocket\"; readonly serialization?: \"msgpack\" | \"ndjson\" | undefined; readonly clientOnly?: ClientOnly | undefined; readonly storage?: Storage | undefined; readonly runnerHealth?: Health | undefined; readonly runnerHealthK8s?: { readonly namespace?: string | undefined; readonly labelSelector?: string | undefined; } | undefined; readonly shardingConfig?: Partial<ShardingConfig.ShardingConfig[\"Type\"]> | undefined; }) => ClientOnly extends true ? Layer.Layer<Sharding | Runners.Runners | (\"byo\" extends Storage ? never : MessageStorage.MessageStorage), ConfigError, \"local\" extends Storage ? never : \"byo\" extends Storage ? (MessageStorage.MessageStorage | RunnerStorage.RunnerStorage) : SqlClient> : Layer.Layer<Sharding | Runners.Runners | (\"byo\" extends Storage ? never : MessageStorage.MessageStorage), ServeError | ConfigError, \"local\" extends Storage ? never : \"byo\" extends Storage ? (MessageStorage.MessageStorage | RunnerStorage.RunnerStorage) : SqlClient>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeClusterHttp.ts#L35"
   },
   {
     "_tag": "Constant",
     "module": {
-      "name": "NodeClusterShardManagerHttp.ts",
-      "path": "src/NodeClusterShardManagerHttp.ts"
+      "name": "NodeClusterSocket.ts",
+      "path": "src/NodeClusterSocket.ts"
     },
     "project": "@effect/platform-node",
-    "name": "layerHttpServer",
+    "name": "layerDispatcherK8s",
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "Layers",
-    "signature": "declare const layerHttpServer: Layer.Layer<HttpServer | HttpPlatform | Etag.Generator | NodeContext, ServeError, ShardingConfig.ShardingConfig>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeClusterShardManagerHttp.ts#L29"
+    "signature": "declare const layerDispatcherK8s: Layer.Layer<NodeHttpClient.Dispatcher, never, never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeClusterSocket.ts#L118"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "NodeClusterSocket.ts",
+      "path": "src/NodeClusterSocket.ts"
+    },
+    "project": "@effect/platform-node",
+    "name": "layerHttpClientK8s",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Layers",
+    "signature": "declare const layerHttpClientK8s: Layer.Layer<HttpClient.HttpClient, never, never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeClusterSocket.ts#L146"
   },
   {
     "_tag": "Function",
     "module": {
-      "name": "NodeClusterShardManagerHttp.ts",
-      "path": "src/NodeClusterShardManagerHttp.ts"
+      "name": "NodeClusterSocket.ts",
+      "path": "src/NodeClusterSocket.ts"
     },
     "project": "@effect/platform-node",
     "name": "layer",
@@ -440,24 +407,38 @@
     "examples": [],
     "since": "1.0.0",
     "category": "Layers",
-    "signature": "declare const layer: <const Storage extends \"sql\" | \"noop\" = never>(options: { readonly transport: \"http\" | \"websocket\"; readonly serialization?: \"msgpack\" | \"ndjson\" | undefined; readonly shardingConfig?: Partial<ShardingConfig.ShardingConfig[\"Type\"]> | undefined; readonly storage?: Storage | undefined; readonly config?: Partial<ShardManager.Config[\"Type\"]> | undefined; }) => Layer.Layer<ShardManager.ShardManager, ServeError | ConfigError | (\"sql\" extends Storage ? SqlError : never), \"sql\" extends Storage ? SqlClient : never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeClusterShardManagerHttp.ts#L45"
+    "signature": "declare const layer: <const ClientOnly extends boolean = false, const Storage extends \"local\" | \"sql\" | \"byo\" = never, const Health extends \"ping\" | \"k8s\" = never>(options?: { readonly serialization?: \"msgpack\" | \"ndjson\" | undefined; readonly clientOnly?: ClientOnly | undefined; readonly storage?: Storage | undefined; readonly runnerHealth?: Health | undefined; readonly runnerHealthK8s?: { readonly namespace?: string | undefined; readonly labelSelector?: string | undefined; } | undefined; readonly shardingConfig?: Partial<ShardingConfig.ShardingConfig[\"Type\"]> | undefined; }) => ClientOnly extends true ? Layer.Layer<Sharding | Runners.Runners | (\"byo\" extends Storage ? never : MessageStorage.MessageStorage), ConfigError, \"local\" extends Storage ? never : \"byo\" extends Storage ? (MessageStorage.MessageStorage | RunnerStorage.RunnerStorage) : SqlClient> : Layer.Layer<Sharding | Runners.Runners | (\"byo\" extends Storage ? never : MessageStorage.MessageStorage), SocketServer.SocketServerError | ConfigError, \"local\" extends Storage ? never : \"byo\" extends Storage ? (MessageStorage.MessageStorage | RunnerStorage.RunnerStorage) : SqlClient>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeClusterSocket.ts#L43"
   },
   {
     "_tag": "Export",
     "module": {
-      "name": "NodeClusterShardManagerSocket.ts",
-      "path": "src/NodeClusterShardManagerSocket.ts"
+      "name": "NodeClusterSocket.ts",
+      "path": "src/NodeClusterSocket.ts"
     },
     "project": "@effect/platform-node",
-    "name": "\"@effect/platform-node-shared/NodeClusterShardManagerSocket\"",
-    "description": "Re-exports all named exports from the \"@effect/platform-node-shared/NodeClusterShardManagerSocket\" module.",
+    "name": "layerClientProtocol",
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
-    "category": null,
-    "signature": "export * from \"@effect/platform-node-shared/NodeClusterShardManagerSocket\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeClusterShardManagerSocket.ts#L9"
+    "category": "Re-exports",
+    "signature": "declare const layerClientProtocol: Layer.Layer<Runners.RpcClientProtocol, never, RpcSerialization.RpcSerialization>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeClusterSocket.ts#L31"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "NodeClusterSocket.ts",
+      "path": "src/NodeClusterSocket.ts"
+    },
+    "project": "@effect/platform-node",
+    "name": "layerSocketServer",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Re-exports",
+    "signature": "declare const layerSocketServer: Layer.Layer<SocketServer.SocketServer, SocketServer.SocketServerError, ShardingConfig.ShardingConfig>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeClusterSocket.ts#L36"
   },
   {
     "_tag": "Constant",

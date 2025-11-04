@@ -11,6 +11,6 @@ Re-exports all named exports from the "./NodeHttpServerRequest.js" module as `No
 export * as NodeHttpServerRequest from "./NodeHttpServerRequest.js"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L54)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L44)
 
 Since v1.0.0

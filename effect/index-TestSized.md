@@ -11,6 +11,6 @@ Re-exports all named exports from the "./TestSized.js" module as `TestSized`.
 export * as TestSized from "./TestSized.js"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L1491)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L1497)
 
 Since v2.0.0

@@ -15,7 +15,7 @@ application servers and slowly decommission older ones.
 **Signature**
 
 ```ts
-declare const make: (props: { readonly address: RunnerAddress; readonly groups: ReadonlyArray<string>; readonly version: number; }) => Runner
+declare const make: (props: { readonly address: RunnerAddress; readonly groups: ReadonlyArray<string>; readonly weight: number; }) => Runner
 ```
 
 [Source](https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Runner.ts#L98)

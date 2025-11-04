@@ -23,7 +23,7 @@ const graph = Graph.directed<string, number>((mutable) => {
   Graph.addEdge(mutable, a, c, 5)
 })
 
-const result = Graph.bellmanFord(graph, 0, 2, (edgeData) => edgeData)
+const result = Graph.bellmanFord(graph, { source: 0, target: 2, cost: (edgeData) => edgeData })
 if (Option.isSome(result)) {
   console.log(result.value.path) // [0, 1, 2] - shortest path A->B->C
   console.log(result.value.distance) // 2 - total distance
@@ -33,9 +33,9 @@ if (Option.isSome(result)) {
 **Signature**
 
 ```ts
-declare const bellmanFord: <N, E, T extends Kind = "directed">(graph: Graph<N, E, T> | MutableGraph<N, E, T>, source: NodeIndex, target: NodeIndex, edgeWeight: (edgeData: E) => number) => Option.Option<PathResult<E>>
+declare const bellmanFord: <N, E, T extends Kind = "directed">(graph: Graph<N, E, T> | MutableGraph<N, E, T>, config: BellmanFordConfig<E>) => Option.Option<PathResult<E>>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Graph.ts#L2610)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Graph.ts#L2825)
 
 Since v3.18.0

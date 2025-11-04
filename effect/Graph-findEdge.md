@@ -31,6 +31,6 @@ console.log(notFound) // Option.none()
 declare const findEdge: <N, E, T extends Kind = "directed">(graph: Graph<N, E, T> | MutableGraph<N, E, T>, predicate: (data: E, source: NodeIndex, target: NodeIndex) => boolean) => Option.Option<EdgeIndex>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Graph.ts#L649)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Graph.ts#L654)
 
 Since v3.18.0

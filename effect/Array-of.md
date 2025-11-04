@@ -11,6 +11,6 @@ Constructs a new `NonEmptyArray<A>` from the specified value.
 declare const of: <A>(a: A) => NonEmptyArray<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L2434)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L2439)
 
 Since v2.0.0

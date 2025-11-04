@@ -19,6 +19,6 @@ type Res = Types.Tags<string | { _tag: "a" } | { _tag: "b" } > // "a" | "b"
 type Tags<E> = E extends { _tag: string } ? E["_tag"] : never
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Types.ts#L71)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Types.ts#L73)
 
 Since v2.0.0

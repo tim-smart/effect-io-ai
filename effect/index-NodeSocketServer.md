@@ -11,6 +11,6 @@ Re-exports all named exports from the "./NodeSocketServer.js" module as `NodeSoc
 export * as NodeSocketServer from "./NodeSocketServer.js"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L89)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L79)
 
 Since v1.0.0

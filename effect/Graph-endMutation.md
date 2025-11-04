@@ -22,6 +22,6 @@ const newGraph = Graph.endMutation(mutable)
 declare const endMutation: <N, E, T extends Kind = "directed">(mutable: MutableGraph<N, E, T>) => Graph<N, E, T>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Graph.ts#L380)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Graph.ts#L385)
 
 Since v3.18.0

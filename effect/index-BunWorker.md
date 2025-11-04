@@ -11,6 +11,6 @@ Re-exports all named exports from the "./BunWorker.js" module as `BunWorker`.
 export * as BunWorker from "./BunWorker.js"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/index.ts#L99)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/index.ts#L89)
 
 Since v1.0.0

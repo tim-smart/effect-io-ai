@@ -11,6 +11,6 @@ Re-exports all named exports from the "./RegExp.js" module as `RegExp`.
 export * as RegExp from "./RegExp.js"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L1196)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L1202)
 
 Since v2.0.0

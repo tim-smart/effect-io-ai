@@ -11,6 +11,6 @@ Re-exports all named exports from the "./Supervisor.js" module as `Supervisor`.
 export * as Supervisor from "./Supervisor.js"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L1371)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L1377)
 
 Since v2.0.0

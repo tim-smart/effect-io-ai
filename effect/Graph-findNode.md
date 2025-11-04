@@ -29,6 +29,6 @@ console.log(notFound) // Option.none()
 declare const findNode: <N, E, T extends Kind = "directed">(graph: Graph<N, E, T> | MutableGraph<N, E, T>, predicate: (data: N) => boolean) => Option.Option<NodeIndex>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Graph.ts#L576)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Graph.ts#L581)
 
 Since v3.18.0

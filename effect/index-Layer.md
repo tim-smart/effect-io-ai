@@ -11,6 +11,6 @@ Re-exports all named exports from the "./Layer.js" module as `Layer`.
 export * as Layer from "./Layer.js"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L675)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L681)
 
 Since v2.0.0

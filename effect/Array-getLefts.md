@@ -20,6 +20,6 @@ console.log(result) // ["err"]
 declare const getLefts: <T extends Iterable<Either.Either<any, any>>>(self: T) => Array<Either.Either.Left<ReadonlyArray.Infer<T>>>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L2700)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L2705)
 
 Since v2.0.0

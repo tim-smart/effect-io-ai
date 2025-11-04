@@ -11,6 +11,6 @@ Re-exports all named exports from the "./BunStream.js" module as `BunStream`.
 export * as BunStream from "./BunStream.js"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/index.ts#L89)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/index.ts#L79)
 
 Since v1.0.0

@@ -11,6 +11,6 @@ Re-exports all named exports from the "./Option.js" module as `Option`.
 export * as Option from "./Option.js"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L1055)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L1061)
 
 Since v2.0.0

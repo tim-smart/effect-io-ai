@@ -12,6 +12,6 @@ type UnionToIntersection<T> = (T extends any ? (x: T) => any : never) extends (x
   : never
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Types.ts#L108)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Types.ts#L110)
 
 Since v2.0.0

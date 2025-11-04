@@ -26,6 +26,6 @@ const example3: TupleOf<3, number> = [1, 2, 3, 4]; // invalid
 type TupleOf<N, T> = N extends N ? number extends N ? Array<T> : _TupleOf<T, N, []> : never
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Types.ts#L32)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Types.ts#L34)
 
 Since v3.3.0

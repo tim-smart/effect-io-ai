@@ -11,6 +11,6 @@ Mutable directed graph type alias.
 type MutableDirectedGraph<N, E> = MutableGraph<N, E, "directed">
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Graph.ts#L142)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Graph.ts#L130)
 
 Since v3.18.0

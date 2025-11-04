@@ -11,6 +11,6 @@ Re-exports all named exports from the "./STM.js" module as `STM`.
 export * as STM from "./STM.js"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L1241)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L1247)
 
 Since v2.0.0

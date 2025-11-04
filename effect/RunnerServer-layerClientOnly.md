@@ -5,16 +5,16 @@ Module: `RunnerServer`<br />
 
 A `Runners` layer that is client only.
 
-It will not register with the ShardManager and recieve shard assignments,
+It will not register with RunnerStorage and recieve shard assignments,
 so this layer can be used to embed a cluster client inside another effect
 application.
 
 **Signature**
 
 ```ts
-declare const layerClientOnly: Layer.Layer<Sharding.Sharding | Runners.Runners, never, MessageStorage.MessageStorage | ShardingConfig | Runners.RpcClientProtocol>
+declare const layerClientOnly: Layer.Layer<Sharding.Sharding | Runners.Runners, never, RunnerStorage.RunnerStorage | ShardingConfig | MessageStorage.MessageStorage | Runners.RpcClientProtocol>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/RunnerServer.ts#L172)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/RunnerServer.ts#L189)
 
 Since v1.0.0

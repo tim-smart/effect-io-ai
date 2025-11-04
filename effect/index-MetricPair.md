@@ -11,6 +11,6 @@ Re-exports all named exports from the "./MetricPair.js" module as `MetricPair`.
 export * as MetricPair from "./MetricPair.js"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L801)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L807)
 
 Since v2.0.0

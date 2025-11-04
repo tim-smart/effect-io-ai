@@ -14,6 +14,6 @@ export interface MutableGraph<out N, out E, T extends Kind = "directed"> extends
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Graph.ts#L115)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Graph.ts#L103)
 
 Since v3.18.0

@@ -11,6 +11,6 @@ Invariant helper.
 type Invariant<A> = (_: A) => A
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Types.ts#L279)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Types.ts#L281)
 
 Since v2.0.0

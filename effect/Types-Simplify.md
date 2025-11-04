@@ -21,6 +21,6 @@ type Simplify<A> = {
 } extends infer B ? B : never
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Types.ts#L124)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Types.ts#L126)
 
 Since v2.0.0

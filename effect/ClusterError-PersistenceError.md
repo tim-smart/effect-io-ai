@@ -12,6 +12,6 @@ cluster's mailbox storage.
 declare class PersistenceError
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ClusterError.ts#L112)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ClusterError.ts#L88)
 
 Since v1.0.0

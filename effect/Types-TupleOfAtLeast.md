@@ -26,6 +26,6 @@ const example3: TupleOfAtLeast<3, number> = [1, 2]; // invalid
 type [...TupleOf<N, T>, ...T[]] = [...TupleOf<N, T>, ...Array<T>]
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Types.ts#L57)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Types.ts#L59)
 
 Since v3.3.0

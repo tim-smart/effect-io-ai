@@ -24,6 +24,6 @@ const result = Graph.mutate(Graph.directed<string, number>(), (mutable) => {
 declare const addEdge: <N, E, T extends Kind = "directed">(mutable: MutableGraph<N, E, T>, source: NodeIndex, target: NodeIndex, data: E) => EdgeIndex
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Graph.ts#L1140)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Graph.ts#L1145)
 
 Since v3.18.0

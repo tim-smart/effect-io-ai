@@ -13,6 +13,6 @@ export interface TopoConfig {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Graph.ts#L3133)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Graph.ts#L3336)
 
 Since v3.18.0

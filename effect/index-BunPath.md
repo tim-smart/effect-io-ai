@@ -11,6 +11,6 @@ Re-exports all named exports from the "./BunPath.js" module as `BunPath`.
 export * as BunPath from "./BunPath.js"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/index.ts#L64)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/index.ts#L54)
 
 Since v1.0.0

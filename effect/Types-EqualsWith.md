@@ -11,6 +11,6 @@ Determines if two types are equal, allowing to specify the return types.
 type EqualsWith<A, B, Y, N> = (<T>() => T extends A ? 1 : 2) extends (<T>() => T extends B ? 1 : 2) ? Y : N
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Types.ts#L153)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Types.ts#L155)
 
 Since v3.15.0

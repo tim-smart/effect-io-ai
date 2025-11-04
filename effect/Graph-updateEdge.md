@@ -27,6 +27,6 @@ console.log(edgeData) // Option.some({ source: 0, target: 1, data: 20 })
 declare const updateEdge: <N, E, T extends Kind = "directed">(mutable: MutableGraph<N, E, T>, edgeIndex: EdgeIndex, f: (data: E) => E) => void
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Graph.ts#L755)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Graph.ts#L760)
 
 Since v3.18.0

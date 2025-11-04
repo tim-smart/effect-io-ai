@@ -34,6 +34,6 @@ const RpcServerLayer = RpcServer.layer(MyRpcs).pipe(
 declare const toRpcGroup: <Type extends string, Rpcs extends Rpc.Any>(entity: Entity.Entity<Type, Rpcs>) => RpcGroup.RpcGroup<ConvertRpcs<Rpcs, Type>>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/EntityProxy.ts#L48)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/EntityProxy.ts#L47)
 
 Since v1.0.0

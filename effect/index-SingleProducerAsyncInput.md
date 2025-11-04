@@ -11,6 +11,6 @@ Re-exports all named exports from the "./SingleProducerAsyncInput.js" module as 
 export * as SingleProducerAsyncInput from "./SingleProducerAsyncInput.js"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L1302)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L1308)
 
 Since v2.0.0

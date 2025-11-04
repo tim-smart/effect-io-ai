@@ -35,6 +35,6 @@ console.log(result2) // []
 declare const liftEither: <A extends Array<unknown>, E, B>(f: (...a: A) => Either.Either<B, E>) => (...a: A) => Array<B>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L2972)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L2977)
 
 Since v2.0.0

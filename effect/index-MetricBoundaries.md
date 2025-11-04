@@ -11,6 +11,6 @@ Re-exports all named exports from the "./MetricBoundaries.js" module as `MetricB
 export * as MetricBoundaries from "./MetricBoundaries.js"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L776)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L782)
 
 Since v2.0.0

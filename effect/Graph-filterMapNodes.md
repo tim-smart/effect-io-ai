@@ -33,6 +33,6 @@ console.log(Graph.nodeCount(graph)) // 2 (only "active" nodes remain)
 declare const filterMapNodes: <N, E, T extends Kind = "directed">(mutable: MutableGraph<N, E, T>, f: (data: N) => Option.Option<N>) => void
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Graph.ts#L924)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Graph.ts#L929)
 
 Since v3.18.0

@@ -11,10 +11,10 @@ Result of a shortest path computation containing the path and total distance.
 export interface PathResult<E> {
   readonly path: Array<NodeIndex>
   readonly distance: number
-  readonly edgeWeights: Array<E>
+  readonly costs: Array<E>
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Graph.ts#L2081)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Graph.ts#L2262)
 
 Since v3.18.0

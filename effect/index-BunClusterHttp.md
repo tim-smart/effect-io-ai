@@ -1,14 +1,14 @@
 Package: `@effect/platform-bun`<br />
 Module: `index`<br />
 
-## index.BunClusterRunnerHttp
+## index.BunClusterHttp
 
-Re-exports all named exports from the "./BunClusterRunnerHttp.js" module as `BunClusterRunnerHttp`.
+Re-exports all named exports from the "./BunClusterHttp.js" module as `BunClusterHttp`.
 
 **Signature**
 
 ```ts
-export * as BunClusterRunnerHttp from "./BunClusterRunnerHttp.js"
+export * as BunClusterHttp from "./BunClusterHttp.js"
 ```
 
 [Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/index.ts#L4)

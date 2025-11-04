@@ -29,6 +29,6 @@ console.log(edge0) // Option.some({ source: 1, target: 0, data: 1 }) - B -> A
 declare const reverse: <N, E, T extends Kind = "directed">(mutable: MutableGraph<N, E, T>) => void
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Graph.ts#L864)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Graph.ts#L869)
 
 Since v3.18.0

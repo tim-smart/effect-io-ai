@@ -28,6 +28,6 @@ if (Option.isSome(nodeData)) {
 declare const getNode: <N, E, T extends Kind = "directed">(graph: Graph<N, E, T> | MutableGraph<N, E, T>, nodeIndex: NodeIndex) => Option.Option<N>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Graph.ts#L494)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Graph.ts#L499)
 
 Since v3.18.0

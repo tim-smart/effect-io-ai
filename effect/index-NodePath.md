@@ -11,6 +11,6 @@ Re-exports all named exports from the "./NodePath.js" module as `NodePath`.
 export * as NodePath from "./NodePath.js"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L69)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L59)
 
 Since v1.0.0

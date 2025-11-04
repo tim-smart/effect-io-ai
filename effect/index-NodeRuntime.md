@@ -11,6 +11,6 @@ Re-exports all named exports from the "./NodeRuntime.js" module as `NodeRuntime`
 export * as NodeRuntime from "./NodeRuntime.js"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L74)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L64)
 
 Since v1.0.0

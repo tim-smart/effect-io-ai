@@ -34,9 +34,9 @@ console.log(dot)
 **Signature**
 
 ```ts
-declare const toGraphViz: <N, E, T extends Kind = "directed">(graph: Graph<N, E, T> | MutableGraph<N, E, T>, options?: { readonly nodeLabel?: (data: N) => string; readonly edgeLabel?: (data: E) => string; readonly graphName?: string; }) => string
+declare const toGraphViz: <N, E, T extends Kind = "directed">(graph: Graph<N, E, T> | MutableGraph<N, E, T>, options?: GraphVizOptions<N, E>) => string
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Graph.ts#L1602)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Graph.ts#L1619)
 
 Since v3.18.0

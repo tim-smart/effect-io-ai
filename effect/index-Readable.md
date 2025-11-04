@@ -11,6 +11,6 @@ Re-exports all named exports from the "./Readable.js" module as `Readable`.
 export * as Readable from "./Readable.js"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L1162)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L1168)
 
 Since v2.0.0

@@ -32,6 +32,6 @@ console.log(empty) // []
 declare const findEdges: <N, E, T extends Kind = "directed">(graph: Graph<N, E, T> | MutableGraph<N, E, T>, predicate: (data: E, source: NodeIndex, target: NodeIndex) => boolean) => Array<EdgeIndex>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Graph.ts#L687)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Graph.ts#L692)
 
 Since v3.18.0

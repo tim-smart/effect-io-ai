@@ -11,6 +11,6 @@ Type identifier for Graph instances.
 type TypeId = typeof TypeId
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Graph.ts#L43)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Graph.ts#L31)
 
 Since v3.18.0

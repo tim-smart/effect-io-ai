@@ -11,6 +11,6 @@ Re-exports all named exports from the "./Predicate.js" module as `Predicate`.
 export * as Predicate from "./Predicate.js"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L1115)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L1121)
 
 Since v2.0.0

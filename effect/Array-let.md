@@ -55,6 +55,6 @@ for(let i = 0; i < x.length; i++) {
 declare const let: { <N extends string, B, A extends object>(tag: Exclude<N, keyof A>, f: (a: NoInfer<A>) => B): (self: ReadonlyArray<A>) => Array<{ [K in N | keyof A]: K extends keyof A ? A[K] : B; }>; <N extends string, A extends object, B>(self: ReadonlyArray<A>, tag: Exclude<N, keyof A>, f: (a: NoInfer<A>) => B): Array<{ [K in N | keyof A]: K extends keyof A ? A[K] : B; }>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L3577)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L3582)
 
 Since v3.2.0

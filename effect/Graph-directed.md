@@ -26,6 +26,6 @@ const graph = Graph.directed<string, string>((mutable) => {
 declare const directed: <N, E>(mutate?: (mutable: MutableDirectedGraph<N, E>) => void) => DirectedGraph<N, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Graph.ts#L254)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Graph.ts#L259)
 
 Since v3.18.0

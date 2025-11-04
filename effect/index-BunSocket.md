@@ -11,6 +11,6 @@ Re-exports all named exports from the "./BunSocket.js" module as `BunSocket`.
 export * as BunSocket from "./BunSocket.js"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/index.ts#L79)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/index.ts#L69)
 
 Since v1.0.0

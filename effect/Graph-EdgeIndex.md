@@ -11,6 +11,6 @@ Edge index for edge identification using plain numbers.
 type EdgeIndex = number
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Graph.ts#L59)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Graph.ts#L47)
 
 Since v3.18.0

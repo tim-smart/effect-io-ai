@@ -11,6 +11,6 @@ Re-exports all named exports from the "./HashSet.js" module as `HashSet`.
 export * as HashSet from "./HashSet.js"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L632)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L638)
 
 Since v2.0.0

@@ -11,6 +11,6 @@ Re-exports all named exports from the "./BunContext.js" module as `BunContext`.
 export * as BunContext from "./BunContext.js"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/index.ts#L29)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/index.ts#L19)
 
 Since v1.0.0

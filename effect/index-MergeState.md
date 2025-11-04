@@ -11,6 +11,6 @@ Re-exports all named exports from the "./MergeState.js" module as `MergeState`.
 export * as MergeState from "./MergeState.js"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L761)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L767)
 
 Since v2.0.0

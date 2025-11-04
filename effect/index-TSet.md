@@ -11,6 +11,6 @@ Re-exports all named exports from the "./TSet.js" module as `TSet`.
 export * as TSet from "./TSet.js"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L1436)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L1442)
 
 Since v2.0.0

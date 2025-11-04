@@ -22,7 +22,7 @@ const graph = Graph.directed<string, number>((mutable) => {
 })
 
 // Start from a specific node
-const bfs1 = Graph.bfs(graph, { startNodes: [0] })
+const bfs1 = Graph.bfs(graph, { start: [0] })
 for (const nodeIndex of Graph.indices(bfs1)) {
   console.log(nodeIndex) // Traverses in BFS order: 0, 1, 2
 }
@@ -35,9 +35,9 @@ const bfs2 = Graph.bfs(graph)
 **Signature**
 
 ```ts
-declare const bfs: <N, E, T extends Kind = "directed">(graph: Graph<N, E, T> | MutableGraph<N, E, T>, config?: BfsConfig) => NodeWalker<N>
+declare const bfs: <N, E, T extends Kind = "directed">(graph: Graph<N, E, T> | MutableGraph<N, E, T>, config?: SearchConfig) => NodeWalker<N>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Graph.ts#L3078)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Graph.ts#L3281)
 
 Since v3.18.0

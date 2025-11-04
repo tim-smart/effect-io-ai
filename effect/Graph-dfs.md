@@ -22,7 +22,7 @@ const graph = Graph.directed<string, number>((mutable) => {
 })
 
 // Start from a specific node
-const dfs1 = Graph.dfs(graph, { startNodes: [0] })
+const dfs1 = Graph.dfs(graph, { start: [0] })
 for (const nodeIndex of Graph.indices(dfs1)) {
   console.log(nodeIndex) // Traverses in DFS order: 0, 1, 2
 }
@@ -35,9 +35,9 @@ const dfs2 = Graph.dfs(graph)
 **Signature**
 
 ```ts
-declare const dfs: <N, E, T extends Kind = "directed">(graph: Graph<N, E, T> | MutableGraph<N, E, T>, config?: DfsConfig) => NodeWalker<N>
+declare const dfs: <N, E, T extends Kind = "directed">(graph: Graph<N, E, T> | MutableGraph<N, E, T>, config?: SearchConfig) => NodeWalker<N>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Graph.ts#L2982)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Graph.ts#L3196)
 
 Since v3.18.0

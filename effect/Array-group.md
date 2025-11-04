@@ -20,6 +20,6 @@ console.log(result) // [[1, 1], [2, 2, 2], [3], [1]]
 declare const group: <A>(self: NonEmptyReadonlyArray<A>) => NonEmptyArray<NonEmptyArray<A>>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L2203)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L2208)
 
 Since v2.0.0

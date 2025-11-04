@@ -11,6 +11,6 @@ Re-exports all named exports from the "./Take.js" module as `Take`.
 export * as Take from "./Take.js"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L1446)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L1452)
 
 Since v2.0.0

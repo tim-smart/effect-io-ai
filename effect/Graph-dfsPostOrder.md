@@ -23,7 +23,7 @@ const graph = Graph.directed<string, number>((mutable) => {
 })
 
 // Postorder: children before parents
-const postOrder = Graph.dfsPostOrder(graph, { startNodes: [0] })
+const postOrder = Graph.dfsPostOrder(graph, { start: [0] })
 for (const node of postOrder) {
   console.log(node) // 1, 2, 0
 }
@@ -32,9 +32,9 @@ for (const node of postOrder) {
 **Signature**
 
 ```ts
-declare const dfsPostOrder: <N, E, T extends Kind = "directed">(graph: Graph<N, E, T> | MutableGraph<N, E, T>, config?: DfsPostOrderConfig) => NodeWalker<N>
+declare const dfsPostOrder: <N, E, T extends Kind = "directed">(graph: Graph<N, E, T> | MutableGraph<N, E, T>, config?: SearchConfig) => NodeWalker<N>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Graph.ts#L3305)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Graph.ts#L3497)
 
 Since v3.18.0

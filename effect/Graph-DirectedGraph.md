@@ -11,6 +11,6 @@ Directed graph type alias.
 type DirectedGraph<N, E> = Graph<N, E, "directed">
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Graph.ts#L126)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Graph.ts#L114)
 
 Since v3.18.0

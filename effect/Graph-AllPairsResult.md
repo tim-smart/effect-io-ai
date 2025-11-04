@@ -11,10 +11,10 @@ Result of all-pairs shortest path computation.
 export interface AllPairsResult<E> {
   readonly distances: Map<NodeIndex, Map<NodeIndex, number>>
   readonly paths: Map<NodeIndex, Map<NodeIndex, Array<NodeIndex> | null>>
-  readonly edgeWeights: Map<NodeIndex, Map<NodeIndex, Array<E>>>
+  readonly costs: Map<NodeIndex, Map<NodeIndex, Array<E>>>
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Graph.ts#L2250)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Graph.ts#L2467)
 
 Since v3.18.0

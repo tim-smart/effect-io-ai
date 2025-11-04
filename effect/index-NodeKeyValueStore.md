@@ -11,6 +11,6 @@ Re-exports all named exports from the "./NodeKeyValueStore.js" module as `NodeKe
 export * as NodeKeyValueStore from "./NodeKeyValueStore.js"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L59)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L49)
 
 Since v1.0.0

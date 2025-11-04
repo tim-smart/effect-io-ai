@@ -26,6 +26,6 @@ const graph = Graph.undirected<string, string>((mutable) => {
 declare const undirected: <N, E>(mutate?: (mutable: MutableUndirectedGraph<N, E>) => void) => UndirectedGraph<N, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Graph.ts#L295)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Graph.ts#L300)
 
 Since v3.18.0

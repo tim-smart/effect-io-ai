@@ -11,6 +11,6 @@ Re-exports all named exports from the "./NodeHttpClient.js" module as `NodeHttpC
 export * as NodeHttpClient from "./NodeHttpClient.js"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L39)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L29)
 
 Since v1.0.0

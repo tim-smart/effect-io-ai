@@ -17,10 +17,10 @@ const graph = Graph.directed<string, string>((mutable) => {
 })
 
 // Follow outgoing edges (normal direction)
-const outgoingNodes = Array.from(Graph.indices(Graph.dfs(graph, { startNodes: [0], direction: "outgoing" })))
+const outgoingNodes = Array.from(Graph.indices(Graph.dfs(graph, { start: [0], direction: "outgoing" })))
 
 // Follow incoming edges (reverse direction)
-const incomingNodes = Array.from(Graph.indices(Graph.dfs(graph, { startNodes: [1], direction: "incoming" })))
+const incomingNodes = Array.from(Graph.indices(Graph.dfs(graph, { start: [1], direction: "incoming" })))
 ```
 
 **Signature**
@@ -29,6 +29,6 @@ const incomingNodes = Array.from(Graph.indices(Graph.dfs(graph, { startNodes: [1
 type Direction = "outgoing" | "incoming"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Graph.ts#L1666)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Graph.ts#L1847)
 
 Since v3.18.0

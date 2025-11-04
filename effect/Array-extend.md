@@ -26,6 +26,6 @@ console.log(result) // [3, 2, 1]
 declare const extend: { <A, B>(f: (as: ReadonlyArray<A>) => B): (self: ReadonlyArray<A>) => Array<B>; <A, B>(self: ReadonlyArray<A>, f: (as: ReadonlyArray<A>) => B): Array<B>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L3036)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L3041)
 
 Since v2.0.0

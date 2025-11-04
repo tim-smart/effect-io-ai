@@ -29,6 +29,6 @@ console.log(empty) // []
 declare const findNodes: <N, E, T extends Kind = "directed">(graph: Graph<N, E, T> | MutableGraph<N, E, T>, predicate: (data: N) => boolean) => Array<NodeIndex>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Graph.ts#L611)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Graph.ts#L616)
 
 Since v3.18.0

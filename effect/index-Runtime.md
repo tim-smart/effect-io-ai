@@ -11,6 +11,6 @@ Re-exports all named exports from the "./Runtime.js" module as `Runtime`.
 export * as Runtime from "./Runtime.js"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L1226)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L1232)
 
 Since v2.0.0

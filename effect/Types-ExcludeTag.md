@@ -19,6 +19,6 @@ type Res = Types.ExcludeTag<string | { _tag: "a" } | { _tag: "b" }, "a"> // stri
 type ExcludeTag<E, K> = Exclude<E, { _tag: K }>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Types.ts#L85)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Types.ts#L87)
 
 Since v2.0.0

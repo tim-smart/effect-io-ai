@@ -11,6 +11,6 @@ Re-exports all named exports from the "./BunKeyValueStore.js" module as `BunKeyV
 export * as BunKeyValueStore from "./BunKeyValueStore.js"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/index.ts#L54)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/index.ts#L44)
 
 Since v1.0.0

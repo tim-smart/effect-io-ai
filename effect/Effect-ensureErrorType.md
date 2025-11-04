@@ -21,6 +21,6 @@ const program = Effect.succeed(42).pipe(Effect.ensureErrorType<never>())
 declare const ensureErrorType: <E>() => <A, E2 extends E, R>(effect: Effect<A, E2, R>) => Effect<A, E2, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L14788)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L14793)
 
 Since v3.17.0

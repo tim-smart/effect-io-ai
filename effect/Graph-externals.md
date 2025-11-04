@@ -39,6 +39,6 @@ console.log(sources) // [0, 3]
 declare const externals: <N, E, T extends Kind = "directed">(graph: Graph<N, E, T> | MutableGraph<N, E, T>, config?: ExternalsConfig) => NodeWalker<N>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Graph.ts#L3506)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Graph.ts#L3698)
 
 Since v3.18.0

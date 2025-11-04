@@ -18,6 +18,6 @@ type MergeLeft = Types.MergeLeft<{ a: number, b: number; }, { a: string }> // { 
 type MergeLeft<Source, Target> = MergeRight<Target, Source>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Types.ts#L185)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Types.ts#L187)
 
 Since v2.0.0

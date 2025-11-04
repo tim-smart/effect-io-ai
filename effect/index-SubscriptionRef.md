@@ -11,6 +11,6 @@ Re-exports all named exports from the "./SubscriptionRef.js" module as `Subscrip
 export * as SubscriptionRef from "./SubscriptionRef.js"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L1363)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L1369)
 
 Since v2.0.0

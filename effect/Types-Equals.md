@@ -23,6 +23,6 @@ type Equals<X, Y> = (<T>() => T extends X ? 1 : 2) extends <
   : false
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Types.ts#L142)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Types.ts#L144)
 
 Since v2.0.0

@@ -19,6 +19,6 @@ type Res = Types.ExtractTag<{ _tag: "a", a: number } | { _tag: "b", b: number },
 type ExtractTag<E, K> = Extract<E, { _tag: K }>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Types.ts#L100)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Types.ts#L102)
 
 Since v2.0.0

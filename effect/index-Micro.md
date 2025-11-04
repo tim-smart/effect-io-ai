@@ -11,6 +11,6 @@ Re-exports all named exports from the "./Micro.js" module as `Micro`.
 export * as Micro from "./Micro.js"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L824)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L830)
 
 Since v3.4.0

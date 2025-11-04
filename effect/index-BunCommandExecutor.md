@@ -11,6 +11,6 @@ Re-exports all named exports from the "./BunCommandExecutor.js" module as `BunCo
 export * as BunCommandExecutor from "./BunCommandExecutor.js"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/index.ts#L24)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/index.ts#L14)
 
 Since v1.0.0

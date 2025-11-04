@@ -23,6 +23,6 @@ type MergeRight<Target, Source> = Simplify<
 >
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Types.ts#L199)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Types.ts#L201)
 
 Since v2.0.0

@@ -26,6 +26,6 @@ const result = Graph.mutate(Graph.directed<string, number>(), (mutable) => {
 declare const removeNode: <N, E, T extends Kind = "directed">(mutable: MutableGraph<N, E, T>, nodeIndex: NodeIndex) => void
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Graph.ts#L1214)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Graph.ts#L1219)
 
 Since v3.18.0

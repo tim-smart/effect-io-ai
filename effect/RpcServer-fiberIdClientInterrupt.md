@@ -8,9 +8,9 @@ Fiber id used for client interruptions.
 **Signature**
 
 ```ts
-declare const fiberIdClientInterrupt: FiberId.FiberId
+declare const fiberIdClientInterrupt: FiberId.Runtime
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcServer.ts#L1388)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcServer.ts#L1401)
 
 Since v1.0.0

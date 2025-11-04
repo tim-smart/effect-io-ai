@@ -11,6 +11,6 @@ Re-exports all named exports from the "./TMap.js" module as `TMap`.
 export * as TMap from "./TMap.js"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L1396)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L1402)
 
 Since v2.0.0

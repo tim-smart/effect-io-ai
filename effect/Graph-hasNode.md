@@ -29,6 +29,6 @@ console.log(notExists) // false
 declare const hasNode: <N, E, T extends Kind = "directed">(graph: Graph<N, E, T> | MutableGraph<N, E, T>, nodeIndex: NodeIndex) => boolean
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Graph.ts#L522)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Graph.ts#L527)
 
 Since v3.18.0

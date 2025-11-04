@@ -11,6 +11,6 @@ Re-exports all named exports from the "./Inspectable.js" module as `Inspectable`
 export * as Inspectable from "./Inspectable.js"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L637)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L643)
 
 Since v2.0.0

@@ -11,6 +11,6 @@ Re-exports all named exports from the "./NodeStream.js" module as `NodeStream`.
 export * as NodeStream from "./NodeStream.js"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L94)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L84)
 
 Since v1.0.0

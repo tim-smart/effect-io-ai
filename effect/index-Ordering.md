@@ -11,6 +11,6 @@ Re-exports all named exports from the "./Ordering.js" module as `Ordering`.
 export * as Ordering from "./Ordering.js"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L1080)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L1086)
 
 Since v2.0.0

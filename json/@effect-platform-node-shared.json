@@ -2,68 +2,8 @@
   {
     "_tag": "Constant",
     "module": {
-      "name": "NodeClusterRunnerSocket.ts",
-      "path": "src/NodeClusterRunnerSocket.ts"
-    },
-    "project": "@effect/platform-node-shared",
-    "name": "layerSocketServer",
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "Layers",
-    "signature": "declare const layerSocketServer: Layer.Layer<SocketServer.SocketServer, SocketServer.SocketServerError, ShardingConfig.ShardingConfig>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node-shared/src/NodeClusterRunnerSocket.ts#L27"
-  },
-  {
-    "_tag": "Function",
-    "module": {
-      "name": "NodeClusterRunnerSocket.ts",
-      "path": "src/NodeClusterRunnerSocket.ts"
-    },
-    "project": "@effect/platform-node-shared",
-    "name": "layer",
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "Layers",
-    "signature": "declare const layer: <const ClientOnly extends boolean = false, const Storage extends \"noop\" | \"sql\" = never>(options?: { readonly serialization?: \"msgpack\" | \"ndjson\" | undefined; readonly clientOnly?: ClientOnly | undefined; readonly storage?: Storage | undefined; readonly shardingConfig?: Partial<ShardingConfig.ShardingConfig[\"Type\"]> | undefined; }) => ClientOnly extends true ? Layer.Layer<Sharding | Runners.Runners | MessageStorage.MessageStorage, ConfigError, \"sql\" extends Storage ? SqlClient : never> : Layer.Layer<Sharding | Runners.Runners | MessageStorage.MessageStorage, SocketServer.SocketServerError | ConfigError | (\"sql\" extends Storage ? SqlError : never), \"sql\" extends Storage ? SqlClient : never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node-shared/src/NodeClusterRunnerSocket.ts#L46"
-  },
-  {
-    "_tag": "Constant",
-    "module": {
-      "name": "NodeClusterShardManagerSocket.ts",
-      "path": "src/NodeClusterShardManagerSocket.ts"
-    },
-    "project": "@effect/platform-node-shared",
-    "name": "layerSocketServer",
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "Layers",
-    "signature": "declare const layerSocketServer: Layer.Layer<SocketServer.SocketServer, SocketServer.SocketServerError, ShardingConfig.ShardingConfig>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node-shared/src/NodeClusterShardManagerSocket.ts#L24"
-  },
-  {
-    "_tag": "Function",
-    "module": {
-      "name": "NodeClusterShardManagerSocket.ts",
-      "path": "src/NodeClusterShardManagerSocket.ts"
-    },
-    "project": "@effect/platform-node-shared",
-    "name": "layer",
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "Layers",
-    "signature": "declare const layer: <const Storage extends \"sql\" | \"noop\" = never>(options?: { readonly serialization?: \"msgpack\" | \"ndjson\" | undefined; readonly shardingConfig?: Partial<ShardingConfig.ShardingConfig[\"Type\"]> | undefined; readonly storage?: Storage | undefined; readonly config?: Partial<ShardManager.Config[\"Type\"]> | undefined; }) => Layer.Layer<ShardManager.ShardManager, SocketServer.SocketServerError | ConfigError | (\"sql\" extends Storage ? SqlError : never), \"sql\" extends Storage ? SqlClient : never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node-shared/src/NodeClusterShardManagerSocket.ts#L37"
-  },
-  {
-    "_tag": "Constant",
-    "module": {
-      "name": "NodeClusterSocketCommon.ts",
-      "path": "src/NodeClusterSocketCommon.ts"
+      "name": "NodeClusterSocket.ts",
+      "path": "src/NodeClusterSocket.ts"
     },
     "project": "@effect/platform-node-shared",
     "name": "layerClientProtocol",
@@ -72,7 +12,22 @@
     "since": "1.0.0",
     "category": "Layers",
     "signature": "declare const layerClientProtocol: Layer.Layer<Runners.RpcClientProtocol, never, RpcSerialization.RpcSerialization>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node-shared/src/NodeClusterSocketCommon.ts#L16"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node-shared/src/NodeClusterSocket.ts#L20"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "NodeClusterSocket.ts",
+      "path": "src/NodeClusterSocket.ts"
+    },
+    "project": "@effect/platform-node-shared",
+    "name": "layerSocketServer",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Layers",
+    "signature": "declare const layerSocketServer: Layer.Layer<SocketServer.SocketServer, SocketServer.SocketServerError, ShardingConfig.ShardingConfig>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node-shared/src/NodeClusterSocket.ts#L46"
   },
   {
     "_tag": "Constant",

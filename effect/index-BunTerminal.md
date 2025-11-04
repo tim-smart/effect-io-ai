@@ -11,6 +11,6 @@ Re-exports all named exports from the "./BunTerminal.js" module as `BunTerminal`
 export * as BunTerminal from "./BunTerminal.js"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/index.ts#L94)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/index.ts#L84)
 
 Since v1.0.0

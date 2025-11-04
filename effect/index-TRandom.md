@@ -11,6 +11,6 @@ Re-exports all named exports from the "./TRandom.js" module as `TRandom`.
 export * as TRandom from "./TRandom.js"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L1416)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L1422)
 
 Since v2.0.0

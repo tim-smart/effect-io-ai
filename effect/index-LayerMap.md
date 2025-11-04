@@ -11,6 +11,6 @@ Re-exports all named exports from the "./LayerMap.js" module as `LayerMap`.
 export * as LayerMap from "./LayerMap.js"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L681)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L687)
 
 Since v3.14.0

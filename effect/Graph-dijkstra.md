@@ -22,7 +22,7 @@ const graph = Graph.directed<string, number>((mutable) => {
   Graph.addEdge(mutable, b, c, 2)
 })
 
-const result = Graph.dijkstra(graph, 0, 2, (edgeData) => edgeData)
+const result = Graph.dijkstra(graph, { source: 0, target: 2, cost: (edgeData) => edgeData })
 if (Option.isSome(result)) {
   console.log(result.value.path) // [0, 1, 2] - shortest path A->B->C
   console.log(result.value.distance) // 7 - total distance
@@ -32,9 +32,9 @@ if (Option.isSome(result)) {
 **Signature**
 
 ```ts
-declare const dijkstra: <N, E, T extends Kind = "directed">(graph: Graph<N, E, T> | MutableGraph<N, E, T>, source: NodeIndex, target: NodeIndex, edgeWeight: (edgeData: E) => number) => Option.Option<PathResult<E>>
+declare const dijkstra: <N, E, T extends Kind = "directed">(graph: Graph<N, E, T> | MutableGraph<N, E, T>, config: DijkstraConfig<E>) => Option.Option<PathResult<E>>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Graph.ts#L2116)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Graph.ts#L2334)
 
 Since v3.18.0

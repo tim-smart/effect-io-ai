@@ -11,6 +11,6 @@ Re-exports all named exports from the "./KeyedPool.js" module as `KeyedPool`.
 export * as KeyedPool from "./KeyedPool.js"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L654)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L660)
 
 Since v2.0.0

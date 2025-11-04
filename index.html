@@ -611,7 +611,6 @@
 <li><a href="effect/Clock-Clock">Clock-Clock</a></li>
 <li><a href="effect/ClusterError-AlreadyProcessingMessage">ClusterError-AlreadyProcessingMessage</a></li>
 <li><a href="effect/ClusterError-EntityNotAssignedToRunner">ClusterError-EntityNotAssignedToRunner</a></li>
-<li><a href="effect/ClusterError-EntityNotManagedByRunner">ClusterError-EntityNotManagedByRunner</a></li>
 <li><a href="effect/ClusterError-MailboxFull">ClusterError-MailboxFull</a></li>
 <li><a href="effect/ClusterError-MalformedMessage">ClusterError-MalformedMessage</a></li>
 <li><a href="effect/ClusterError-PersistenceError">ClusterError-PersistenceError</a></li>
@@ -1580,9 +1579,9 @@
 <li><a href="effect/GlobalValue-globalValue">GlobalValue-globalValue</a></li>
 <li><a href="effect/GoogleTool-GoogleSearchRetrieval">GoogleTool-GoogleSearchRetrieval</a></li>
 <li><a href="effect/Graph-AllPairsResult">Graph-AllPairsResult</a></li>
-<li><a href="effect/Graph-BfsConfig">Graph-BfsConfig</a></li>
-<li><a href="effect/Graph-DfsConfig">Graph-DfsConfig</a></li>
-<li><a href="effect/Graph-DfsPostOrderConfig">Graph-DfsPostOrderConfig</a></li>
+<li><a href="effect/Graph-AstarConfig">Graph-AstarConfig</a></li>
+<li><a href="effect/Graph-BellmanFordConfig">Graph-BellmanFordConfig</a></li>
+<li><a href="effect/Graph-DijkstraConfig">Graph-DijkstraConfig</a></li>
 <li><a href="effect/Graph-DirectedGraph">Graph-DirectedGraph</a></li>
 <li><a href="effect/Graph-Direction">Graph-Direction</a></li>
 <li><a href="effect/Graph-Edge">Graph-Edge</a></li>
@@ -1590,7 +1589,13 @@
 <li><a href="effect/Graph-EdgeWalker">Graph-EdgeWalker</a></li>
 <li><a href="effect/Graph-ExternalsConfig">Graph-ExternalsConfig</a></li>
 <li><a href="effect/Graph-Graph">Graph-Graph</a></li>
+<li><a href="effect/Graph-GraphError">Graph-GraphError</a></li>
+<li><a href="effect/Graph-GraphVizOptions">Graph-GraphVizOptions</a></li>
 <li><a href="effect/Graph-Kind">Graph-Kind</a></li>
+<li><a href="effect/Graph-MermaidDiagramType">Graph-MermaidDiagramType</a></li>
+<li><a href="effect/Graph-MermaidDirection">Graph-MermaidDirection</a></li>
+<li><a href="effect/Graph-MermaidNodeShape">Graph-MermaidNodeShape</a></li>
+<li><a href="effect/Graph-MermaidOptions">Graph-MermaidOptions</a></li>
 <li><a href="effect/Graph-MutableDirectedGraph">Graph-MutableDirectedGraph</a></li>
 <li><a href="effect/Graph-MutableGraph">Graph-MutableGraph</a></li>
 <li><a href="effect/Graph-MutableUndirectedGraph">Graph-MutableUndirectedGraph</a></li>
@@ -1598,6 +1603,7 @@
 <li><a href="effect/Graph-NodeWalker">Graph-NodeWalker</a></li>
 <li><a href="effect/Graph-PathResult">Graph-PathResult</a></li>
 <li><a href="effect/Graph-Proto">Graph-Proto</a></li>
+<li><a href="effect/Graph-SearchConfig">Graph-SearchConfig</a></li>
 <li><a href="effect/Graph-TopoConfig">Graph-TopoConfig</a></li>
 <li><a href="effect/Graph-TypeId">Graph-TypeId</a></li>
 <li><a href="effect/Graph-UndirectedGraph">Graph-UndirectedGraph</a></li>
@@ -1646,6 +1652,7 @@
 <li><a href="effect/Graph-reverse">Graph-reverse</a></li>
 <li><a href="effect/Graph-stronglyConnectedComponents">Graph-stronglyConnectedComponents</a></li>
 <li><a href="effect/Graph-toGraphViz">Graph-toGraphViz</a></li>
+<li><a href="effect/Graph-toMermaid">Graph-toMermaid</a></li>
 <li><a href="effect/Graph-topo">Graph-topo</a></li>
 <li><a href="effect/Graph-undirected">Graph-undirected</a></li>
 <li><a href="effect/Graph-updateEdge">Graph-updateEdge</a></li>
@@ -1697,6 +1704,11 @@
 <li><a href="effect/HashMap-union">HashMap-union</a></li>
 <li><a href="effect/HashMap-unsafeGet">HashMap-unsafeGet</a></li>
 <li><a href="effect/HashMap-values">HashMap-values</a></li>
+<li><a href="effect/HashRing-add">HashRing-add</a></li>
+<li><a href="effect/HashRing-addMany">HashRing-addMany</a></li>
+<li><a href="effect/HashRing-get">HashRing-get</a></li>
+<li><a href="effect/HashRing-getShards">HashRing-getShards</a></li>
+<li><a href="effect/HashRing-remove">HashRing-remove</a></li>
 <li><a href="effect/HashSet-add">HashSet-add</a></li>
 <li><a href="effect/HashSet-beginMutation">HashSet-beginMutation</a></li>
 <li><a href="effect/HashSet-difference">HashSet-difference</a></li>
@@ -1781,15 +1793,9 @@
 <li><a href="effect/HttpLayerRouter-use">HttpLayerRouter-use</a></li>
 <li><a href="effect/HttpMethod-isHttpMethod">HttpMethod-isHttpMethod</a></li>
 <li><a href="effect/HttpMiddleware-withSpanNameGenerator">HttpMiddleware-withSpanNameGenerator</a></li>
-<li><a href="effect/HttpRunner-layer">HttpRunner-layer</a></li>
+<li><a href="effect/HttpRunner-layerHttpOptions">HttpRunner-layerHttpOptions</a></li>
 <li><a href="effect/HttpServer-layerContext">HttpServer-layerContext</a></li>
 <li><a href="effect/HttpServer-layerTestClient">HttpServer-layerTestClient</a></li>
-<li><a href="effect/HttpShardManager-layerHttp">HttpShardManager-layerHttp</a></li>
-<li><a href="effect/HttpShardManager-layerHttpOptions">HttpShardManager-layerHttpOptions</a></li>
-<li><a href="effect/HttpShardManager-layerNoServerHttp">HttpShardManager-layerNoServerHttp</a></li>
-<li><a href="effect/HttpShardManager-layerNoServerWebsocket">HttpShardManager-layerNoServerWebsocket</a></li>
-<li><a href="effect/HttpShardManager-layerWebsocket">HttpShardManager-layerWebsocket</a></li>
-<li><a href="effect/HttpShardManager-layerWebsocketOptions">HttpShardManager-layerWebsocketOptions</a></li>
 <li><a href="effect/IdGenerator-IdGenerator">IdGenerator-IdGenerator</a></li>
 <li><a href="effect/IdGenerator-MakeOptions">IdGenerator-MakeOptions</a></li>
 <li><a href="effect/IdGenerator-Service">IdGenerator-Service</a></li>
@@ -3014,6 +3020,7 @@
 <li><a href="effect/RpcSerialization-layerNdJsonRpc">RpcSerialization-layerNdJsonRpc</a></li>
 <li><a href="effect/RpcSerialization-layerNdjson">RpcSerialization-layerNdjson</a></li>
 <li><a href="effect/RpcServer-fiberIdClientInterrupt">RpcServer-fiberIdClientInterrupt</a></li>
+<li><a href="effect/RpcServer-fiberIdTransientInterrupt">RpcServer-fiberIdTransientInterrupt</a></li>
 <li><a href="effect/RpcServer-layerHttpRouter">RpcServer-layerHttpRouter</a></li>
 <li><a href="effect/RpcServer-layerProtocolHttp">RpcServer-layerProtocolHttp</a></li>
 <li><a href="effect/RpcServer-layerProtocolHttpRouter">RpcServer-layerProtocolHttpRouter</a></li>
@@ -3026,12 +3033,13 @@
 <li><a href="effect/Runner-Runner">Runner-Runner</a></li>
 <li><a href="effect/Runner-make">Runner-make</a></li>
 <li><a href="effect/RunnerHealth-RunnerHealth">RunnerHealth-RunnerHealth</a></li>
-<li><a href="effect/RunnerHealth-layer">RunnerHealth-layer</a></li>
+<li><a href="effect/RunnerHealth-layerK8s">RunnerHealth-layerK8s</a></li>
 <li><a href="effect/RunnerHealth-layerNoop">RunnerHealth-layerNoop</a></li>
-<li><a href="effect/RunnerHealth-layerRpc">RunnerHealth-layerRpc</a></li>
+<li><a href="effect/RunnerHealth-layerPing">RunnerHealth-layerPing</a></li>
 <li><a href="effect/RunnerServer-layer">RunnerServer-layer</a></li>
 <li><a href="effect/RunnerServer-layerClientOnly">RunnerServer-layerClientOnly</a></li>
 <li><a href="effect/RunnerServer-layerWithClients">RunnerServer-layerWithClients</a></li>
+<li><a href="effect/RunnerStorage-RunnerStorage">RunnerStorage-RunnerStorage</a></li>
 <li><a href="effect/Runtime-runCallback">Runtime-runCallback</a></li>
 <li><a href="effect/Runtime-runFork">Runtime-runFork</a></li>
 <li><a href="effect/Runtime-runPromise">Runtime-runPromise</a></li>
@@ -3482,9 +3490,6 @@
 <li><a href="effect/Semigroup-reverse">Semigroup-reverse</a></li>
 <li><a href="effect/Semigroup-struct">Semigroup-struct</a></li>
 <li><a href="effect/Semigroup-tuple">Semigroup-tuple</a></li>
-<li><a href="effect/ShardManager-Rpcs">ShardManager-Rpcs</a></li>
-<li><a href="effect/ShardManager-ShardManagerClient">ShardManager-ShardManagerClient</a></li>
-<li><a href="effect/ShardStorage-ShardStorage">ShardStorage-ShardStorage</a></li>
 <li><a href="effect/ShardingConfig-ShardingConfig">ShardingConfig-ShardingConfig</a></li>
 <li><a href="effect/ShardingRegistrationEvent-EntityRegistered">ShardingRegistrationEvent-EntityRegistered</a></li>
 <li><a href="effect/ShardingRegistrationEvent-ShardingRegistrationEvent">ShardingRegistrationEvent-ShardingRegistrationEvent</a></li>
@@ -4393,6 +4398,9 @@
 <li><a href="effect/WorkerRunner-launch">WorkerRunner-launch</a></li>
 <li><a href="effect/Workflow-CaptureDefects">Workflow-CaptureDefects</a></li>
 <li><a href="effect/Workflow-SuspendOnFailure">Workflow-SuspendOnFailure</a></li>
+<li><a href="effect/Workflow-Workflow.Error">Workflow-Workflow.Error</a></li>
+<li><a href="effect/Workflow-Workflow.Payload">Workflow-Workflow.Payload</a></li>
+<li><a href="effect/Workflow-Workflow.Success">Workflow-Workflow.Success</a></li>
 <li><a href="effect/Workflow-withCompensation">Workflow-withCompensation</a></li>
 <li><a href="effect/WorkflowProxy-toHttpApiGroup">WorkflowProxy-toHttpApiGroup</a></li>
 <li><a href="effect/WorkflowProxy-toRpcGroup">WorkflowProxy-toRpcGroup</a></li>
@@ -4460,10 +4468,8 @@
 <li><a href="effect/index-BrowserWorker">index-BrowserWorker</a></li>
 <li><a href="effect/index-BrowserWorkerRunner">index-BrowserWorkerRunner</a></li>
 <li><a href="effect/index-BuiltInOptions">index-BuiltInOptions</a></li>
-<li><a href="effect/index-BunClusterRunnerHttp">index-BunClusterRunnerHttp</a></li>
-<li><a href="effect/index-BunClusterRunnerSocket">index-BunClusterRunnerSocket</a></li>
-<li><a href="effect/index-BunClusterShardManagerHttp">index-BunClusterShardManagerHttp</a></li>
-<li><a href="effect/index-BunClusterShardManagerSocket">index-BunClusterShardManagerSocket</a></li>
+<li><a href="effect/index-BunClusterHttp">index-BunClusterHttp</a></li>
+<li><a href="effect/index-BunClusterSocket">index-BunClusterSocket</a></li>
 <li><a href="effect/index-BunCommandExecutor">index-BunCommandExecutor</a></li>
 <li><a href="effect/index-BunContext">index-BunContext</a></li>
 <li><a href="effect/index-BunFileSystem">index-BunFileSystem</a></li>
@@ -4588,6 +4594,7 @@
 <li><a href="effect/index-HKT">index-HKT</a></li>
 <li><a href="effect/index-Hash">index-Hash</a></li>
 <li><a href="effect/index-HashMap">index-HashMap</a></li>
+<li><a href="effect/index-HashRing">index-HashRing</a></li>
 <li><a href="effect/index-HashSet">index-HashSet</a></li>
 <li><a href="effect/index-Headers">index-Headers</a></li>
 <li><a href="effect/index-HelpDoc">index-HelpDoc</a></li>
@@ -4608,7 +4615,6 @@
 <li><a href="effect/index-HttpClientError">index-HttpClientError</a></li>
 <li><a href="effect/index-HttpClientRequest">index-HttpClientRequest</a></li>
 <li><a href="effect/index-HttpClientResponse">index-HttpClientResponse</a></li>
-<li><a href="effect/index-HttpCommon">index-HttpCommon</a></li>
 <li><a href="effect/index-HttpIncomingMessage">index-HttpIncomingMessage</a></li>
 <li><a href="effect/index-HttpLayerRouter">index-HttpLayerRouter</a></li>
 <li><a href="effect/index-HttpMethod">index-HttpMethod</a></li>
@@ -4622,7 +4628,6 @@
 <li><a href="effect/index-HttpServerRequest">index-HttpServerRequest</a></li>
 <li><a href="effect/index-HttpServerRespondable">index-HttpServerRespondable</a></li>
 <li><a href="effect/index-HttpServerResponse">index-HttpServerResponse</a></li>
-<li><a href="effect/index-HttpShardManager">index-HttpShardManager</a></li>
 <li><a href="effect/index-HttpTraceContext">index-HttpTraceContext</a></li>
 <li><a href="effect/index-IdGenerator">index-IdGenerator</a></li>
 <li><a href="effect/index-Inspectable">index-Inspectable</a></li>
@@ -4682,10 +4687,8 @@
 <li><a href="effect/index-MysqlClient">index-MysqlClient</a></li>
 <li><a href="effect/index-MysqlMigrator">index-MysqlMigrator</a></li>
 <li><a href="effect/index-Ndjson">index-Ndjson</a></li>
-<li><a href="effect/index-NodeClusterRunnerHttp">index-NodeClusterRunnerHttp</a></li>
-<li><a href="effect/index-NodeClusterRunnerSocket">index-NodeClusterRunnerSocket</a></li>
-<li><a href="effect/index-NodeClusterShardManagerHttp">index-NodeClusterShardManagerHttp</a></li>
-<li><a href="effect/index-NodeClusterShardManagerSocket">index-NodeClusterShardManagerSocket</a></li>
+<li><a href="effect/index-NodeClusterHttp">index-NodeClusterHttp</a></li>
+<li><a href="effect/index-NodeClusterSocket">index-NodeClusterSocket</a></li>
 <li><a href="effect/index-NodeCommandExecutor">index-NodeCommandExecutor</a></li>
 <li><a href="effect/index-NodeContext">index-NodeContext</a></li>
 <li><a href="effect/index-NodeFileSystem">index-NodeFileSystem</a></li>
@@ -4787,6 +4790,7 @@
 <li><a href="effect/index-RunnerAddress">index-RunnerAddress</a></li>
 <li><a href="effect/index-RunnerHealth">index-RunnerHealth</a></li>
 <li><a href="effect/index-RunnerServer">index-RunnerServer</a></li>
+<li><a href="effect/index-RunnerStorage">index-RunnerStorage</a></li>
 <li><a href="effect/index-Runners">index-Runners</a></li>
 <li><a href="effect/index-Runtime">index-Runtime</a></li>
 <li><a href="effect/index-RuntimeFlags">index-RuntimeFlags</a></li>
@@ -4809,8 +4813,6 @@
 <li><a href="effect/index-SemiProduct">index-SemiProduct</a></li>
 <li><a href="effect/index-Semigroup">index-Semigroup</a></li>
 <li><a href="effect/index-ShardId">index-ShardId</a></li>
-<li><a href="effect/index-ShardManager">index-ShardManager</a></li>
-<li><a href="effect/index-ShardStorage">index-ShardStorage</a></li>
 <li><a href="effect/index-Sharding">index-Sharding</a></li>
 <li><a href="effect/index-ShardingConfig">index-ShardingConfig</a></li>
 <li><a href="effect/index-ShardingRegistrationEvent">index-ShardingRegistrationEvent</a></li>
@@ -4822,7 +4824,6 @@
 <li><a href="effect/index-Socket">index-Socket</a></li>
 <li><a href="effect/index-SocketRunner">index-SocketRunner</a></li>
 <li><a href="effect/index-SocketServer">index-SocketServer</a></li>
-<li><a href="effect/index-SocketShardManager">index-SocketShardManager</a></li>
 <li><a href="effect/index-SortedMap">index-SortedMap</a></li>
 <li><a href="effect/index-SortedSet">index-SortedSet</a></li>
 <li><a href="effect/index-Span">index-Span</a></li>
@@ -4833,8 +4834,8 @@
 <li><a href="effect/index-SqlEventLogServer">index-SqlEventLogServer</a></li>
 <li><a href="effect/index-SqlMessageStorage">index-SqlMessageStorage</a></li>
 <li><a href="effect/index-SqlResolver">index-SqlResolver</a></li>
+<li><a href="effect/index-SqlRunnerStorage">index-SqlRunnerStorage</a></li>
 <li><a href="effect/index-SqlSchema">index-SqlSchema</a></li>
-<li><a href="effect/index-SqlShardStorage">index-SqlShardStorage</a></li>
 <li><a href="effect/index-SqlStream">index-SqlStream</a></li>
 <li><a href="effect/index-SqliteClient">index-SqliteClient</a></li>
 <li><a href="effect/index-SqliteMigrator">index-SqliteMigrator</a></li>
@@ -4850,7 +4851,6 @@
 <li><a href="effect/index-SubscriptionRef">index-SubscriptionRef</a></li>
 <li><a href="effect/index-Supervisor">index-Supervisor</a></li>
 <li><a href="effect/index-Symbol">index-Symbol</a></li>
-<li><a href="effect/index-SynchronizedClock">index-SynchronizedClock</a></li>
 <li><a href="effect/index-SynchronizedRef">index-SynchronizedRef</a></li>
 <li><a href="effect/index-TArray">index-TArray</a></li>
 <li><a href="effect/index-TDeferred">index-TDeferred</a></li>

@@ -11,7 +11,7 @@ Re-exports all named exports from the "./ModuleVersion.js" module as `ModuleVers
 export * as ModuleVersion from "./ModuleVersion.js"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L831)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L837)
 
 Since v2.0.0
 

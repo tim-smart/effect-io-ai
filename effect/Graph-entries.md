@@ -16,7 +16,7 @@ const graph = Graph.directed<string, number>((mutable) => {
   Graph.addEdge(mutable, a, b, 1)
 })
 
-const dfs = Graph.dfs(graph, { startNodes: [0] })
+const dfs = Graph.dfs(graph, { start: [0] })
 const entries = Array.from(Graph.entries(dfs))
 console.log(entries) // [[0, "A"], [1, "B"]]
 ```
@@ -27,6 +27,6 @@ console.log(entries) // [[0, "A"], [1, "B"]]
 declare const entries: <T, N>(walker: Walker<T, N>) => Iterable<[T, N]>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Graph.ts#L2936)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Graph.ts#L3150)
 
 Since v3.18.0

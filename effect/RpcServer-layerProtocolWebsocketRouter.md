@@ -13,6 +13,6 @@ Uses a `HttpLayerRouter` to provide the websocket endpoint.
 declare const layerProtocolWebsocketRouter: (options: { readonly path: HttpLayerRouter.PathInput; }) => Layer.Layer<Protocol, never, RpcSerialization.RpcSerialization | HttpLayerRouter.HttpRouter>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcServer.ts#L912)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcServer.ts#L919)
 
 Since v1.0.0

@@ -21,7 +21,7 @@ const graph = Graph.directed<string, number>((mutable) => {
 })
 
 // Both traversal and element iterators return NodeWalker
-const dfsNodes: Graph.NodeWalker<string> = Graph.dfs(graph, { startNodes: [0] })
+const dfsNodes: Graph.NodeWalker<string> = Graph.dfs(graph, { start: [0] })
 const allNodes: Graph.NodeWalker<string> = Graph.nodes(graph)
 
 // Common interface for working with node iterables
@@ -55,7 +55,7 @@ declare class Walker<T, N> { constructor(
      *   Graph.addEdge(mutable, a, b, 1)
      * })
      *
-     * const dfs = Graph.dfs(graph, { startNodes: [0] })
+     * const dfs = Graph.dfs(graph, { start: [0] })
      *
      * // Map to just the node data
      * const values = Array.from(dfs.visit((index, data) => data))
@@ -73,6 +73,6 @@ declare class Walker<T, N> { constructor(
   ) }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Graph.ts#L2775)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Graph.ts#L2989)
 
 Since v3.18.0

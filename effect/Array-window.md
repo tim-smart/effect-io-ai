@@ -21,7 +21,7 @@ assert.deepStrictEqual(Array.window(numbers, 6), [])
 **Signature**
 
 ```ts
-declare const window: { (n: number): <A>(self: Iterable<A>) => Array<Array<A>>; <A>(self: Iterable<A>, n: number): Array<Array<A>>; }
+declare const window: { <N extends number = number>(n: N): <A>(self: Iterable<A>) => Array<TupleOf<N, A>>; <A, N extends number = number>(self: Iterable<A>, n: N): Array<TupleOf<N, A>>; }
 ```
 
 [Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L2137)

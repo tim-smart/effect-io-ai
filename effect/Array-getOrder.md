@@ -14,6 +14,6 @@ It is useful when you need to compare two arrays of the same type and you have a
 declare const getOrder: <A>(O: Order.Order<A>) => Order.Order<ReadonlyArray<A>>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L3107)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L3112)
 
 Since v2.0.0
