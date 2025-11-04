@@ -14,6 +14,6 @@ export interface DfsPostOrderConfig {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Graph.ts#L3266)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Graph.ts#L3271)
 
 Since v3.18.0

@@ -33,6 +33,6 @@ const pathAToC = result.paths.get(0)?.get(2) // [0, 1, 2]
 declare const floydWarshall: <N, E, T extends Kind = "directed">(graph: Graph<N, E, T> | MutableGraph<N, E, T>, edgeWeight: (edgeData: E) => number) => AllPairsResult<E>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Graph.ts#L2278)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Graph.ts#L2283)
 
 Since v3.18.0

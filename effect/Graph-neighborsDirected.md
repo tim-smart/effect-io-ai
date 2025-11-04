@@ -32,6 +32,6 @@ const incoming = Graph.neighborsDirected(graph, nodeB, "incoming")
 declare const neighborsDirected: <N, E, T extends Kind = "directed">(graph: Graph<N, E, T> | MutableGraph<N, E, T>, nodeIndex: NodeIndex, direction: Direction) => Array<NodeIndex>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Graph.ts#L1533)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Graph.ts#L1538)
 
 Since v3.18.0

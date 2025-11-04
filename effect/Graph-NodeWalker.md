@@ -12,6 +12,6 @@ NodeWalker is represented as Walker<NodeIndex, N>.
 type NodeWalker<N> = Walker<NodeIndex, N>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Graph.ts#L2853)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Graph.ts#L2858)
 
 Since v3.18.0

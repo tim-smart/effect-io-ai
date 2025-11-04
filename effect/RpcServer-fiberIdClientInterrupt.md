@@ -11,6 +11,6 @@ Fiber id used for client interruptions.
 declare const fiberIdClientInterrupt: FiberId.FiberId
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcServer.ts#L1381)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcServer.ts#L1388)
 
 Since v1.0.0

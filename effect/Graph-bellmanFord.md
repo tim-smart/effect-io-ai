@@ -36,6 +36,6 @@ if (Option.isSome(result)) {
 declare const bellmanFord: <N, E, T extends Kind = "directed">(graph: Graph<N, E, T> | MutableGraph<N, E, T>, source: NodeIndex, target: NodeIndex, edgeWeight: (edgeData: E) => number) => Option.Option<PathResult<E>>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Graph.ts#L2605)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Graph.ts#L2610)
 
 Since v3.18.0

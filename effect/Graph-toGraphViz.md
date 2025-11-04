@@ -37,6 +37,6 @@ console.log(dot)
 declare const toGraphViz: <N, E, T extends Kind = "directed">(graph: Graph<N, E, T> | MutableGraph<N, E, T>, options?: { readonly nodeLabel?: (data: N) => string; readonly edgeLabel?: (data: E) => string; readonly graphName?: string; }) => string
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Graph.ts#L1597)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Graph.ts#L1602)
 
 Since v3.18.0
