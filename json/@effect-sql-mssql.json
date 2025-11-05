@@ -195,7 +195,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "models",
-    "signature": "export interface MssqlClient extends Client.SqlClient {\n  readonly [TypeId]: TypeId\n\n  readonly config: MssqlClientConfig\n\n  readonly param: (\n    type: DataType,\n    value: Statement.Primitive,\n    options?: ParameterOptions\n  ) => Statement.Fragment\n\n  readonly call: <\n    I extends Record<string, Parameter<any>>,\n    O extends Record<string, Parameter<any>>,\n    A extends object\n  >(\n    procedure: Procedure.ProcedureWithValues<I, O, A>\n  ) => Effect.Effect<Procedure.Procedure.Result<O, A>, SqlError>\n}",
+    "signature": "export interface MssqlClient extends Client.SqlClient {\n  readonly [TypeId]: TypeId\n\n  readonly config: MssqlClientConfig\n\n  readonly param: (\n    type: DataType,\n    value: unknown,\n    options?: ParameterOptions\n  ) => Statement.Fragment\n\n  readonly call: <\n    I extends Record<string, Parameter<any>>,\n    O extends Record<string, Parameter<any>>,\n    A extends object\n  >(\n    procedure: Procedure.ProcedureWithValues<I, O, A>\n  ) => Effect.Effect<Procedure.Procedure.Result<O, A>, SqlError>\n}",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-mssql/src/MssqlClient.ts#L47"
   },
   {
@@ -210,7 +210,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "models",
-    "signature": "export interface MssqlClientConfig {\n  readonly domain?: string | undefined\n  readonly server: string\n  readonly instanceName?: string | undefined\n  readonly encrypt?: boolean | undefined\n  readonly trustServer?: boolean | undefined\n  readonly port?: number | undefined\n  readonly authType?: string | undefined\n  readonly database?: string | undefined\n  readonly username?: string | undefined\n  readonly password?: Redacted.Redacted | undefined\n  readonly connectTimeout?: Duration.DurationInput | undefined\n\n  readonly minConnections?: number | undefined\n  readonly maxConnections?: number | undefined\n  readonly connectionTTL?: Duration.DurationInput | undefined\n\n  readonly parameterTypes?: Record<Statement.PrimitiveKind, DataType> | undefined\n\n  readonly spanAttributes?: Record<string, unknown> | undefined\n\n  readonly transformResultNames?: ((str: string) => string) | undefined\n  readonly transformQueryNames?: ((str: string) => string) | undefined\n}",
+    "signature": "export interface MssqlClientConfig {\n  readonly domain?: string | undefined\n  readonly server: string\n  readonly instanceName?: string | undefined\n  readonly encrypt?: boolean | undefined\n  readonly trustServer?: boolean | undefined\n  readonly port?: number | undefined\n  readonly authType?: string | undefined\n  readonly database?: string | undefined\n  readonly username?: string | undefined\n  readonly password?: Redacted.Redacted | undefined\n  readonly connectTimeout?: Duration.DurationInput | undefined\n\n  readonly minConnections?: number | undefined\n  readonly maxConnections?: number | undefined\n  readonly connectionTTL?: Duration.DurationInput | undefined\n\n  readonly parameterTypes?: Record<string, DataType> | undefined\n\n  readonly spanAttributes?: Record<string, unknown> | undefined\n\n  readonly transformResultNames?: ((str: string) => string) | undefined\n  readonly transformQueryNames?: ((str: string) => string) | undefined\n}",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-mssql/src/MssqlClient.ts#L77"
   },
   {

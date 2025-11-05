@@ -12,7 +12,7 @@
     "since": "1.0.0",
     "category": "type ids",
     "signature": "declare const TypeId: unique symbol",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-clickhouse/src/ClickhouseClient.ts#L34"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-clickhouse/src/ClickhouseClient.ts#L33"
   },
   {
     "_tag": "Constant",
@@ -27,7 +27,7 @@
     "since": "1.0.0",
     "category": "tags",
     "signature": "declare const ClickhouseClient: Context.Tag<ClickhouseClient, ClickhouseClient>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-clickhouse/src/ClickhouseClient.ts#L75"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-clickhouse/src/ClickhouseClient.ts#L74"
   },
   {
     "_tag": "Constant",
@@ -42,7 +42,7 @@
     "since": "1.0.0",
     "category": "fiber refs",
     "signature": "declare const currentClientMethod: FiberRef.FiberRef<\"query\" | \"command\" | \"insert\">",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-clickhouse/src/ClickhouseClient.ts#L302"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-clickhouse/src/ClickhouseClient.ts#L301"
   },
   {
     "_tag": "Constant",
@@ -57,7 +57,7 @@
     "since": "1.0.0",
     "category": "fiber refs",
     "signature": "declare const currentQueryId: FiberRef.FiberRef<string | undefined>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-clickhouse/src/ClickhouseClient.ts#L311"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-clickhouse/src/ClickhouseClient.ts#L310"
   },
   {
     "_tag": "Constant",
@@ -72,7 +72,7 @@
     "since": "1.0.0",
     "category": "fiber refs",
     "signature": "declare const currentClickhouseSettings: FiberRef.FiberRef<Partial<ClickHouseServerSettings> & Partial<ClickHouseHTTPSettings> & Record<string, string | number | boolean | Clickhouse.SettingsMap | undefined>>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-clickhouse/src/ClickhouseClient.ts#L320"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-clickhouse/src/ClickhouseClient.ts#L319"
   },
   {
     "_tag": "Function",
@@ -87,7 +87,7 @@
     "since": "1.0.0",
     "category": "constructors",
     "signature": "declare const make: (options: ClickhouseClientConfig) => Effect.Effect<ClickhouseClient, SqlError, Scope.Scope | Reactivity.Reactivity>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-clickhouse/src/ClickhouseClient.ts#L91"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-clickhouse/src/ClickhouseClient.ts#L90"
   },
   {
     "_tag": "Function",
@@ -102,7 +102,7 @@
     "since": "1.0.0",
     "category": "layers",
     "signature": "declare const layerConfig: (config: Config.Config.Wrap<ClickhouseClientConfig>) => Layer.Layer<ClickhouseClient | Client.SqlClient, ConfigError | SqlError>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-clickhouse/src/ClickhouseClient.ts#L331"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-clickhouse/src/ClickhouseClient.ts#L330"
   },
   {
     "_tag": "Function",
@@ -117,7 +117,7 @@
     "since": "1.0.0",
     "category": "layers",
     "signature": "declare const layer: (config: ClickhouseClientConfig) => Layer.Layer<ClickhouseClient | Client.SqlClient, ConfigError | SqlError>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-clickhouse/src/ClickhouseClient.ts#L349"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-clickhouse/src/ClickhouseClient.ts#L348"
   },
   {
     "_tag": "Function",
@@ -132,7 +132,7 @@
     "since": "1.0.0",
     "category": "compiler",
     "signature": "declare const makeCompiler: (transform?: (_: string) => string) => Statement.Compiler",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-clickhouse/src/ClickhouseClient.ts#L388"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-clickhouse/src/ClickhouseClient.ts#L387"
   },
   {
     "_tag": "Interface",
@@ -146,8 +146,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "models",
-    "signature": "export interface ClickhouseClient extends Client.SqlClient {\n  readonly [TypeId]: TypeId\n  readonly config: ClickhouseClientConfig\n  readonly param: (dataType: string, value: Statement.Primitive) => Statement.Fragment\n  readonly asCommand: <A, E, R>(effect: Effect.Effect<A, E, R>) => Effect.Effect<A, E, R>\n  readonly insertQuery: <T = unknown>(options: {\n    readonly table: string\n    readonly values: Clickhouse.InsertValues<Readable, T>\n    readonly format?: Clickhouse.DataFormat\n  }) => Effect.Effect<Clickhouse.InsertResult, SqlError>\n  readonly withQueryId: {\n    (queryId: string): <A, E, R>(effect: Effect.Effect<A, E, R>) => Effect.Effect<A, E, R>\n    <A, E, R>(effect: Effect.Effect<A, E, R>, queryId: string): Effect.Effect<A, E, R>\n  }\n  readonly withClickhouseSettings: {\n    (\n      settings: NonNullable<Clickhouse.BaseQueryParams[\"clickhouse_settings\"]>\n    ): <A, E, R>(effect: Effect.Effect<A, E, R>) => Effect.Effect<A, E, R>\n    <A, E, R>(\n      effect: Effect.Effect<A, E, R>,\n      settings: NonNullable<Clickhouse.BaseQueryParams[\"clickhouse_settings\"]>\n    ): Effect.Effect<A, E, R>\n  }\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-clickhouse/src/ClickhouseClient.ts#L46"
+    "signature": "export interface ClickhouseClient extends Client.SqlClient {\n  readonly [TypeId]: TypeId\n  readonly config: ClickhouseClientConfig\n  readonly param: (dataType: string, value: unknown) => Statement.Fragment\n  readonly asCommand: <A, E, R>(effect: Effect.Effect<A, E, R>) => Effect.Effect<A, E, R>\n  readonly insertQuery: <T = unknown>(options: {\n    readonly table: string\n    readonly values: Clickhouse.InsertValues<Readable, T>\n    readonly format?: Clickhouse.DataFormat\n  }) => Effect.Effect<Clickhouse.InsertResult, SqlError>\n  readonly withQueryId: {\n    (queryId: string): <A, E, R>(effect: Effect.Effect<A, E, R>) => Effect.Effect<A, E, R>\n    <A, E, R>(effect: Effect.Effect<A, E, R>, queryId: string): Effect.Effect<A, E, R>\n  }\n  readonly withClickhouseSettings: {\n    (\n      settings: NonNullable<Clickhouse.BaseQueryParams[\"clickhouse_settings\"]>\n    ): <A, E, R>(effect: Effect.Effect<A, E, R>) => Effect.Effect<A, E, R>\n    <A, E, R>(\n      effect: Effect.Effect<A, E, R>,\n      settings: NonNullable<Clickhouse.BaseQueryParams[\"clickhouse_settings\"]>\n    ): Effect.Effect<A, E, R>\n  }\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-clickhouse/src/ClickhouseClient.ts#L45"
   },
   {
     "_tag": "Interface",
@@ -162,7 +162,7 @@
     "since": "1.0.0",
     "category": "constructors",
     "signature": "export interface ClickhouseClientConfig extends Clickhouse.ClickHouseClientConfigOptions {\n  readonly spanAttributes?: Record<string, unknown> | undefined\n  readonly transformResultNames?: ((str: string) => string) | undefined\n  readonly transformQueryNames?: ((str: string) => string) | undefined\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-clickhouse/src/ClickhouseClient.ts#L81"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-clickhouse/src/ClickhouseClient.ts#L80"
   },
   {
     "_tag": "TypeAlias",
@@ -177,7 +177,7 @@
     "since": "1.0.0",
     "category": "type ids",
     "signature": "type TypeId = typeof TypeId",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-clickhouse/src/ClickhouseClient.ts#L40"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-clickhouse/src/ClickhouseClient.ts#L39"
   },
   {
     "_tag": "TypeAlias",
@@ -192,7 +192,7 @@
     "since": "1.0.0",
     "category": "custom types",
     "signature": "type ClickhouseCustom = ClickhouseParam",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-clickhouse/src/ClickhouseClient.ts#L415"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-clickhouse/src/ClickhouseClient.ts#L414"
   },
   {
     "_tag": "Constant",
