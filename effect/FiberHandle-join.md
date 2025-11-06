@@ -26,6 +26,6 @@ Effect.gen(function* (_) {
 declare const join: <A, E>(self: FiberHandle<A, E>) => Effect.Effect<void, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/FiberHandle.ts#L521)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/FiberHandle.ts#L525)
 
 Since v2.0.0

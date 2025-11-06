@@ -14,6 +14,6 @@ fiber completes.
 declare const runtimePromise: <A, E>(self: FiberHandle<A, E>) => <R = never>() => Effect.Effect<(<XE extends E, XA extends A>(effect: Effect.Effect<XA, XE, R>, options?: (Runtime.RunForkOptions & { readonly propagateInterruption?: boolean | undefined; }) | undefined) => Promise<XA>), never, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/FiberHandle.ts#L471)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/FiberHandle.ts#L475)
 
 Since v3.13.0

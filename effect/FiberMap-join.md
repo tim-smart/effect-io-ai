@@ -26,6 +26,6 @@ Effect.gen(function* (_) {
 declare const join: <K, A, E>(self: FiberMap<K, A, E>) => Effect.Effect<void, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/FiberMap.ts#L638)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/FiberMap.ts#L642)
 
 Since v2.0.0

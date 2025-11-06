@@ -11,6 +11,6 @@ Wait for the fiber in the FiberHandle to complete.
 declare const awaitEmpty: <A, E>(self: FiberHandle<A, E>) => Effect.Effect<void, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/FiberHandle.ts#L530)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/FiberHandle.ts#L534)
 
 Since v3.13.0
