@@ -3252,7 +3252,7 @@
     "since": "1.0.0",
     "category": "models",
     "signature": "declare class Sharding",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Sharding.ts#L65"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Sharding.ts#L66"
   },
   {
     "_tag": "Constant",
@@ -3267,7 +3267,7 @@
     "since": "1.0.0",
     "category": "layers",
     "signature": "declare const layer: Layer.Layer<Sharding, never, RunnerStorage | ShardingConfig | MessageStorage.MessageStorage | Runners | RunnerHealth.RunnerHealth>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Sharding.ts#L1376"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Sharding.ts#L1383"
   },
   {
     "_tag": "Class",
@@ -3297,8 +3297,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "defaults",
-    "signature": "declare const defaults: { readonly runnerAddress: Option.Option<RunnerAddress>; readonly runnerListenAddress: Option.Option<RunnerAddress>; readonly runnerShardWeight: number; readonly shardGroups: ReadonlyArray<string>; readonly shardsPerGroup: number; readonly shardLockRefreshInterval: DurationInput; readonly shardLockExpiration: DurationInput; readonly entityMailboxCapacity: number | \"unbounded\"; readonly entityMaxIdleTime: DurationInput; readonly entityTerminationTimeout: DurationInput; readonly entityMessagePollInterval: DurationInput; readonly entityReplyPollInterval: DurationInput; readonly refreshAssignmentsInterval: DurationInput; readonly sendRetryInterval: DurationInput; readonly runnerHealthCheckInterval: DurationInput; readonly simulateRemoteSerialization: boolean; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ShardingConfig.ts#L115"
+    "signature": "declare const defaults: { readonly runnerAddress: Option.Option<RunnerAddress>; readonly runnerListenAddress: Option.Option<RunnerAddress>; readonly runnerShardWeight: number; readonly shardGroups: ReadonlyArray<string>; readonly shardsPerGroup: number; readonly shardLockRefreshInterval: DurationInput; readonly shardLockExpiration: DurationInput; readonly preemptiveShutdown: boolean; readonly entityMailboxCapacity: number | \"unbounded\"; readonly entityMaxIdleTime: DurationInput; readonly entityTerminationTimeout: DurationInput; readonly entityMessagePollInterval: DurationInput; readonly entityReplyPollInterval: DurationInput; readonly refreshAssignmentsInterval: DurationInput; readonly sendRetryInterval: DurationInput; readonly runnerHealthCheckInterval: DurationInput; readonly simulateRemoteSerialization: boolean; }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ShardingConfig.ts#L121"
   },
   {
     "_tag": "Constant",
@@ -3313,7 +3313,7 @@
     "since": "1.0.0",
     "category": "defaults",
     "signature": "declare const layerDefaults: Layer.Layer<ShardingConfig, never, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ShardingConfig.ts#L145"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ShardingConfig.ts#L152"
   },
   {
     "_tag": "Constant",
@@ -3327,8 +3327,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "Config",
-    "signature": "declare const config: Config.Config<{ readonly runnerAddress: Option.Option<RunnerAddress>; readonly runnerListenAddress: Option.Option<RunnerAddress>; readonly runnerShardWeight: number; readonly shardGroups: ReadonlyArray<string>; readonly shardsPerGroup: number; readonly shardLockRefreshInterval: DurationInput; readonly shardLockExpiration: DurationInput; readonly entityMailboxCapacity: number | \"unbounded\"; readonly entityMaxIdleTime: DurationInput; readonly entityTerminationTimeout: DurationInput; readonly entityMessagePollInterval: DurationInput; readonly entityReplyPollInterval: DurationInput; readonly refreshAssignmentsInterval: DurationInput; readonly sendRetryInterval: DurationInput; readonly runnerHealthCheckInterval: DurationInput; readonly simulateRemoteSerialization: boolean; }>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ShardingConfig.ts#L151"
+    "signature": "declare const config: Config.Config<{ readonly runnerAddress: Option.Option<RunnerAddress>; readonly runnerListenAddress: Option.Option<RunnerAddress>; readonly runnerShardWeight: number; readonly shardGroups: ReadonlyArray<string>; readonly shardsPerGroup: number; readonly shardLockRefreshInterval: DurationInput; readonly shardLockExpiration: DurationInput; readonly preemptiveShutdown: boolean; readonly entityMailboxCapacity: number | \"unbounded\"; readonly entityMaxIdleTime: DurationInput; readonly entityTerminationTimeout: DurationInput; readonly entityMessagePollInterval: DurationInput; readonly entityReplyPollInterval: DurationInput; readonly refreshAssignmentsInterval: DurationInput; readonly sendRetryInterval: DurationInput; readonly runnerHealthCheckInterval: DurationInput; readonly simulateRemoteSerialization: boolean; }>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ShardingConfig.ts#L158"
   },
   {
     "_tag": "Constant",
@@ -3342,8 +3342,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "Config",
-    "signature": "declare const configFromEnv: Effect.Effect<{ readonly runnerAddress: Option.Option<RunnerAddress>; readonly runnerListenAddress: Option.Option<RunnerAddress>; readonly runnerShardWeight: number; readonly shardGroups: ReadonlyArray<string>; readonly shardsPerGroup: number; readonly shardLockRefreshInterval: DurationInput; readonly shardLockExpiration: DurationInput; readonly entityMailboxCapacity: number | \"unbounded\"; readonly entityMaxIdleTime: DurationInput; readonly entityTerminationTimeout: DurationInput; readonly entityMessagePollInterval: DurationInput; readonly entityReplyPollInterval: DurationInput; readonly refreshAssignmentsInterval: DurationInput; readonly sendRetryInterval: DurationInput; readonly runnerHealthCheckInterval: DurationInput; readonly simulateRemoteSerialization: boolean; }, ConfigError, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ShardingConfig.ts#L234"
+    "signature": "declare const configFromEnv: Effect.Effect<{ readonly runnerAddress: Option.Option<RunnerAddress>; readonly runnerListenAddress: Option.Option<RunnerAddress>; readonly runnerShardWeight: number; readonly shardGroups: ReadonlyArray<string>; readonly shardsPerGroup: number; readonly shardLockRefreshInterval: DurationInput; readonly shardLockExpiration: DurationInput; readonly preemptiveShutdown: boolean; readonly entityMailboxCapacity: number | \"unbounded\"; readonly entityMaxIdleTime: DurationInput; readonly entityTerminationTimeout: DurationInput; readonly entityMessagePollInterval: DurationInput; readonly entityReplyPollInterval: DurationInput; readonly refreshAssignmentsInterval: DurationInput; readonly sendRetryInterval: DurationInput; readonly runnerHealthCheckInterval: DurationInput; readonly simulateRemoteSerialization: boolean; }, ConfigError, never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ShardingConfig.ts#L245"
   },
   {
     "_tag": "Function",
@@ -3358,7 +3358,7 @@
     "since": "1.0.0",
     "category": "Layers",
     "signature": "declare const layer: (options?: Partial<ShardingConfig[\"Type\"]>) => Layer.Layer<ShardingConfig>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ShardingConfig.ts#L138"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ShardingConfig.ts#L145"
   },
   {
     "_tag": "Function",
@@ -3373,7 +3373,7 @@
     "since": "1.0.0",
     "category": "Layers",
     "signature": "declare const layerFromEnv: (options?: Partial<ShardingConfig[\"Type\"]> | undefined) => Layer.Layer<ShardingConfig, ConfigError>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ShardingConfig.ts#L246"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ShardingConfig.ts#L257"
   },
   {
     "_tag": "Constant",
