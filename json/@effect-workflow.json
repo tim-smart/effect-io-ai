@@ -1060,7 +1060,7 @@
     "since": "1.0.0",
     "category": "Services",
     "signature": "declare class WorkflowEngine",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/WorkflowEngine.ts#L18"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/WorkflowEngine.ts#L19"
   },
   {
     "_tag": "Class",
@@ -1075,7 +1075,7 @@
     "since": "1.0.0",
     "category": "Services",
     "signature": "declare class WorkflowInstance",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/WorkflowEngine.ts#L119"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/WorkflowEngine.ts#L120"
   },
   {
     "_tag": "Function",
