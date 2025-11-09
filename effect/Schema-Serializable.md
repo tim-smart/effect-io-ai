@@ -14,6 +14,6 @@ export interface Serializable<A, I, R> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10151)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10155)
 
 Since v3.10.0

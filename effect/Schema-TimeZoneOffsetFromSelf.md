@@ -11,6 +11,6 @@ Describes a schema that represents a `TimeZone.Offset` instance.
 declare class TimeZoneOffsetFromSelf
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L6948)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L6950)
 
 Since v3.10.0

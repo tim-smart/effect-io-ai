@@ -46,6 +46,6 @@ type ToolResultPart<Name, Success, Failure> = | ToolResultSuccess<Name, Success>
   | ToolResultFailure<Name, Failure>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L1616)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L1621)
 
 Since v1.0.0

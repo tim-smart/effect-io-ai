@@ -11,6 +11,6 @@ Any schema with `Context = never`, except for `never`.
 type AnyNoContext = Schema<any, any, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L365)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L366)
 
 Since v3.10.0

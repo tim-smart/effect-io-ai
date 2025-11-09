@@ -38,6 +38,6 @@ export interface BaseToolResult<Name extends string> extends BasePart<"tool-resu
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L1514)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L1519)
 
 Since v1.0.0

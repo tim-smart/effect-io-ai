@@ -20,6 +20,6 @@ export interface FilePartEncoded extends BasePartEncoded<"file", FilePartMetadat
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L1804)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L1809)
 
 Since v1.0.0

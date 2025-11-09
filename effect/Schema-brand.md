@@ -24,6 +24,6 @@ type Int = Schema.Schema.Type<typeof Int> // number & Brand<"Int">
 declare const brand: <S extends Schema.Any, B extends string | symbol>(brand: B, annotations?: Annotations.Schema<Schema.Type<S> & Brand<B>>) => (self: S) => brand<S, B>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L3195)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L3196)
 
 Since v3.10.0

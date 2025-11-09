@@ -60,6 +60,6 @@ export interface ToolCallPart<Name extends string, Params> extends BasePart<"too
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L1392)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L1397)
 
 Since v1.0.0

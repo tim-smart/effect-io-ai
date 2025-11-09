@@ -42,6 +42,6 @@ export interface ToolResultPartEncoded extends BasePartEncoded<"tool-result", To
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L1626)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L1631)
 
 Since v1.0.0

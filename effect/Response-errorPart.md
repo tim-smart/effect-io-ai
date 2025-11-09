@@ -11,6 +11,6 @@ Constructs a new error part.
 declare const errorPart: (params: ConstructorParams<ErrorPart>) => ErrorPart
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L2365)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L2370)
 
 Since v1.0.0

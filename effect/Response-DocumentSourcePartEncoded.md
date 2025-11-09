@@ -32,6 +32,6 @@ export interface DocumentSourcePartEncoded extends BasePartEncoded<"source", Doc
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L1889)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L1894)
 
 Since v1.0.0

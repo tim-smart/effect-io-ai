@@ -11,6 +11,6 @@ Constructs a new reasoning start part.
 declare const reasoningStartPart: (params: ConstructorParams<ReasoningStartPart>) => ReasoningStartPart
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L971)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L976)
 
 Since v1.0.0

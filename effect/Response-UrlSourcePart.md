@@ -30,6 +30,6 @@ export interface UrlSourcePart extends BasePart<"source", UrlSourcePartMetadata>
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L1961)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L1966)
 
 Since v1.0.0

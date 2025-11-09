@@ -33,6 +33,6 @@ assert.deepStrictEqual(S.decodeSync(Shape)({ radius: 10 }), {
 declare const attachPropertySignature: { <K extends PropertyKey, V extends AST.LiteralValue | symbol, A>(key: K, value: V, annotations?: Annotations.Schema<A & { readonly [k in K]: V; }>): <I, R>(schema: Schema<A, I, R>) => SchemaClass<A & { readonly [k in K]: V; }, I, R>; <A, I, R, K extends PropertyKey, V extends AST.LiteralValue | symbol>(schema: Schema<A, I, R>, key: K, value: V, annotations?: Annotations.Schema<A & { readonly [k in K]: V; }>): SchemaClass<A & { readonly [k in K]: V; }, I, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L4084)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L4085)
 
 Since v3.10.0

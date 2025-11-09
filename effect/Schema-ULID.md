@@ -14,6 +14,6 @@ This schema ensures that the provided string adheres to the standard ULID format
 declare class ULID
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L4904)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L4905)
 
 Since v3.10.0

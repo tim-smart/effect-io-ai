@@ -37,6 +37,6 @@ export interface ResponseMetadataPart extends BasePart<"response-metadata", Resp
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L2063)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L2068)
 
 Since v1.0.0

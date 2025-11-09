@@ -11,6 +11,6 @@ This schema converts a string to lowercase.
 declare class Lowercase
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L4670)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L4671)
 
 Since v3.10.0

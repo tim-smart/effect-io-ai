@@ -11,6 +11,6 @@ This schema converts a string to uncapitalized one.
 declare class Uncapitalize
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L4718)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L4719)
 
 Since v3.10.0

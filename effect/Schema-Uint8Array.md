@@ -11,6 +11,6 @@ A schema that transforms an array of numbers into a `Uint8Array`.
 declare const Uint8Array: typeof Uint8Array$
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L6234)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L6235)
 
 Since v3.10.0

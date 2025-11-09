@@ -11,6 +11,6 @@ Given a schema `Schema<A, I, R>`, returns an `Equivalence` instance for `A`.
 declare const equivalence: <A, I, R>(schema: Schema<A, I, R>) => Equivalence.Equivalence<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10655)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10659)
 
 Since v3.10.0

@@ -32,6 +32,6 @@ assert.deepStrictEqual(User.make({ name: "John", age: 44 }), { _tag: "User", nam
 declare const tag: <Tag extends AST.LiteralValue>(tag: Tag) => tag<Tag>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L2975)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L2976)
 
 Since v3.10.0

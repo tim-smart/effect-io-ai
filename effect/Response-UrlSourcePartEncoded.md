@@ -28,6 +28,6 @@ export interface UrlSourcePartEncoded extends BasePartEncoded<"source", UrlSourc
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L1986)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L1991)
 
 Since v1.0.0

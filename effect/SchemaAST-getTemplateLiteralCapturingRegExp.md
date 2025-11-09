@@ -15,6 +15,6 @@ Generates a regular expression that captures the pattern defined by the given `T
 declare const getTemplateLiteralCapturingRegExp: (ast: TemplateLiteral) => RegExp
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/SchemaAST.ts#L2175)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/SchemaAST.ts#L2176)
 
 Since v3.10.0

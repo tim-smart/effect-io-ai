@@ -14,6 +14,6 @@ processes.
 declare const typeSchema: <A, I, R>(schema: Schema<A, I, R>) => SchemaClass<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L413)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L414)
 
 Since v3.10.0

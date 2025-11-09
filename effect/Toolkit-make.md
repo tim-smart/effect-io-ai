@@ -38,6 +38,6 @@ const toolkit = Toolkit.make(GetCurrentTime, GetWeather)
 declare const make: <Tools extends ReadonlyArray<Tool.Any>>(...tools: Tools) => Toolkit<ToolsByName<Tools>>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Toolkit.ts#L429)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Toolkit.ts#L438)
 
 Since v1.0.0

@@ -11,6 +11,6 @@ Constructs a new text delta part.
 declare const textDeltaPart: (params: ConstructorParams<TextDeltaPart>) => TextDeltaPart
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L769)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L774)
 
 Since v1.0.0

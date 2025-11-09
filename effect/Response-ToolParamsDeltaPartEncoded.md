@@ -20,6 +20,6 @@ export interface ToolParamsDeltaPartEncoded extends BasePartEncoded<"tool-params
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L1247)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L1252)
 
 Since v1.0.0

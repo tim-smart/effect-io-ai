@@ -14,6 +14,6 @@ be extended using the merge function to add tools.
 declare const empty: Toolkit<{}>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Toolkit.ts#L395)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Toolkit.ts#L404)
 
 Since v1.0.0

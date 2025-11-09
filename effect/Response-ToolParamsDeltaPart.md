@@ -23,6 +23,6 @@ export interface ToolParamsDeltaPart extends BasePart<"tool-params-delta", ToolP
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L1230)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L1235)
 
 Since v1.0.0

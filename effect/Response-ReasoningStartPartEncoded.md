@@ -16,6 +16,6 @@ export interface ReasoningStartPartEncoded extends BasePartEncoded<"reasoning-st
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L934)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L939)
 
 Since v1.0.0

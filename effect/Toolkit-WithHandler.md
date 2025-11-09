@@ -37,6 +37,6 @@ export interface WithHandler<in out Tools extends Record<string, Tool.Any>> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Toolkit.ts#L208)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Toolkit.ts#L217)
 
 Since v1.0.0

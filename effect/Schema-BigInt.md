@@ -13,6 +13,6 @@ It returns an error if the value can't be converted (for example when non-numeri
 declare const BigInt: typeof BigInt$
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L5712)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L5713)
 
 Since v3.10.0

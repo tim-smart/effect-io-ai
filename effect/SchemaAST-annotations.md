@@ -14,6 +14,6 @@ Any previously existing identifier annotations are deleted.
 declare const annotations: (ast: AST, overrides: Annotations) => AST
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/SchemaAST.ts#L2085)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/SchemaAST.ts#L2086)
 
 Since v3.10.0

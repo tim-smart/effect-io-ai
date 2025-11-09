@@ -11,6 +11,6 @@ Equivalent at runtime to the built-in TypeScript utility type `Omit`.
 declare const omit: (ast: AST, keys: ReadonlyArray<PropertyKey>) => TypeLiteral | Transformation
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/SchemaAST.ts#L2452)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/SchemaAST.ts#L2453)
 
 Since v3.10.0

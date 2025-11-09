@@ -28,6 +28,6 @@ console.log(Schema.encodeSync(UrlSchema)({ maxItemPerPage: 10, page: 1 }))
 declare const StringFromUriComponent: transformOrFail<SchemaClass<string, string, never>, typeof String$, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L6371)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L6372)
 
 Since v3.12.0

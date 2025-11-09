@@ -53,6 +53,6 @@ const extended = Schema.asSchema(schema.pipe(
 declare const extend: { <That extends Schema.Any>(that: That): <Self extends Schema.Any>(self: Self) => extend<Self, That>; <Self extends Schema.Any, That extends Schema.Any>(self: Self, that: That): extend<Self, That>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L3504)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L3505)
 
 Since v3.10.0

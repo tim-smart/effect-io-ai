@@ -24,6 +24,6 @@ assert.strictEqual(Either.isLeft(Schema.decodeUnknownEither(schema)("c")), true)
 declare const pickLiteral: <A extends AST.LiteralValue, L extends array_.NonEmptyReadonlyArray<A>>(...literals: L) => <I, R>(_schema: Schema<A, I, R>) => Literal<[...L]>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L732)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L733)
 
 Since v3.10.0

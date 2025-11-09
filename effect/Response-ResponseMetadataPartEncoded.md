@@ -26,6 +26,6 @@ export interface ResponseMetadataPartEncoded
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L2084)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L2089)
 
 Since v1.0.0

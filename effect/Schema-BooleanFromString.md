@@ -12,6 +12,6 @@ Converts an `string` value into its corresponding `boolean`
 declare class BooleanFromString
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10107)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10111)
 
 Since v3.11.0

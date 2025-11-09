@@ -12,6 +12,6 @@ ReadonlyArray<any>` to be compatible with this API.
 declare const Data: <S extends Schema.Any, A extends Readonly<Record<string, unknown>> | ReadonlyArray<unknown>, I extends Readonly<Record<string, unknown>> | ReadonlyArray<unknown>>(value: S & Schema<A & Schema.Type<S>, I & Schema.Encoded<S>, Schema.Context<S>>) => Data<S>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L8446)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L8448)
 
 Since v3.10.0

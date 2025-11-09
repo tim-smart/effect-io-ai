@@ -26,6 +26,6 @@ assert.deepStrictEqual(Schema.decodeUnknownSync(Schema.parseJson(Schema.Struct({
 declare const parseJson: { <S extends Schema.Any>(schema: S, options?: ParseJsonOptions): transform<SchemaClass<unknown, string>, S>; (options?: ParseJsonOptions): SchemaClass<unknown, string>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L4842)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L4843)
 
 Since v3.10.0

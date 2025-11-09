@@ -11,6 +11,6 @@ A non-negative integer. +Infinity is excluded.
 declare const NonNegativeInt: refine<number, typeof NonNegative>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L5932)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L5933)
 
 Since v3.11.10

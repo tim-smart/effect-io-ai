@@ -27,6 +27,6 @@ assert.deepStrictEqual(is(Number.NEGATIVE_INFINITY), false)
 declare class JsonNumber
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L5425)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L5426)
 
 Since v3.10.0

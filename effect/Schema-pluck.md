@@ -36,6 +36,6 @@ console.log(Schema.decodeUnknownEither(Schema.Array(pullOutColumn))([{ column1: 
 declare const pluck: { <A, I, K extends keyof A & keyof I>(key: K): <R>(schema: Schema<A, I, R>) => SchemaClass<A[K], Simplify<Pick<I, K>>, R>; <A, I, R, K extends keyof A & keyof I>(schema: Schema<A, I, R>, key: K): SchemaClass<A[K], Simplify<Pick<I, K>>, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L3110)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L3111)
 
 Since v3.10.0

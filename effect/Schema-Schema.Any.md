@@ -11,6 +11,6 @@ Any schema, except for `never`.
 type Any = Schema<any, any, unknown>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L358)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L359)
 
 Since v3.10.0

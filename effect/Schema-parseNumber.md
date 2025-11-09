@@ -18,6 +18,6 @@ The following special string values are supported: "NaN", "Infinity",
 declare const parseNumber: <S extends Schema.Any, A extends string>(self: S & Schema<A, Schema.Encoded<S>, Schema.Context<S>>) => transformOrFail<S, typeof Number$>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L5310)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L5311)
 
 Since v3.10.0

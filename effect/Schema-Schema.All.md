@@ -14,6 +14,6 @@ type All = | Any
     | Schema<never, never, unknown>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L372)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L373)
 
 Since v3.10.0

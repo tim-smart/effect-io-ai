@@ -12,6 +12,6 @@ the refinements up to the first transformation point in the original schema.
 declare const encodedBoundSchema: <A, I, R>(schema: Schema<A, I, R>) => SchemaClass<I>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L402)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L403)
 
 Since v3.10.0

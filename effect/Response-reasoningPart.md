@@ -11,6 +11,6 @@ Constructs a new reasoning part.
 declare const reasoningPart: (params: ConstructorParams<ReasoningPart>) => ReasoningPart
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L907)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L912)
 
 Since v1.0.0

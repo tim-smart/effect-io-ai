@@ -3252,7 +3252,7 @@
     "since": "1.0.0",
     "category": "models",
     "signature": "declare class Sharding",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Sharding.ts#L67"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Sharding.ts#L68"
   },
   {
     "_tag": "Constant",
@@ -3267,7 +3267,7 @@
     "since": "1.0.0",
     "category": "layers",
     "signature": "declare const layer: Layer.Layer<Sharding, never, RunnerStorage | ShardingConfig | MessageStorage.MessageStorage | Runners | RunnerHealth.RunnerHealth>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Sharding.ts#L1418"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Sharding.ts#L1426"
   },
   {
     "_tag": "Class",
@@ -3856,8 +3856,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "Constructors",
-    "signature": "declare const make: (options: { readonly prefix?: string | undefined; }) => Effect.Effect<{ readonly register: (runner: Runner, healthy: boolean) => Effect.Effect<MachineId, PersistenceError>; readonly unregister: (address: RunnerAddress) => Effect.Effect<void, PersistenceError>; readonly getRunners: Effect.Effect<Array<readonly [runner: Runner, healthy: boolean]>, PersistenceError>; readonly setRunnerHealth: (address: RunnerAddress, healthy: boolean) => Effect.Effect<void, PersistenceError>; readonly acquire: (address: RunnerAddress, shardIds: Iterable<ShardId.ShardId>) => Effect.Effect<Array<ShardId.ShardId>, PersistenceError>; readonly refresh: (address: RunnerAddress, shardIds: Iterable<ShardId.ShardId>) => Effect.Effect<Array<ShardId.ShardId>, PersistenceError>; readonly release: (address: RunnerAddress, shardId: ShardId.ShardId) => Effect.Effect<void, PersistenceError>; readonly releaseAll: (address: RunnerAddress) => Effect.Effect<void, PersistenceError>; }, SqlError, SqlClient.SqlClient | ShardingConfig.ShardingConfig | Scope>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/SqlRunnerStorage.ts#L23"
+    "signature": "declare const make: (options: { readonly prefix?: string | undefined; }) => Effect.Effect<{ readonly register: (runner: Runner, healthy: boolean) => Effect.Effect<MachineId, PersistenceError>; readonly unregister: (address: RunnerAddress) => Effect.Effect<void, PersistenceError>; readonly getRunners: Effect.Effect<Array<readonly [runner: Runner, healthy: boolean]>, PersistenceError>; readonly setRunnerHealth: (address: RunnerAddress, healthy: boolean) => Effect.Effect<void, PersistenceError>; readonly acquire: (address: RunnerAddress, shardIds: Iterable<ShardId.ShardId>) => Effect.Effect<Array<ShardId.ShardId>, PersistenceError>; readonly refresh: (address: RunnerAddress, shardIds: Iterable<ShardId.ShardId>) => Effect.Effect<Array<ShardId.ShardId>, PersistenceError>; readonly release: (address: RunnerAddress, shardId: ShardId.ShardId) => Effect.Effect<void, PersistenceError>; readonly releaseAll: (address: RunnerAddress) => Effect.Effect<void, PersistenceError>; }, SqlError, SqlClient.SqlClient | ShardingConfig.ShardingConfig | Scope.Scope>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/SqlRunnerStorage.ts#L24"
   },
   {
     "_tag": "Constant",
@@ -3872,7 +3872,7 @@
     "since": "1.0.0",
     "category": "Layers",
     "signature": "declare const layer: Layer.Layer<RunnerStorage.RunnerStorage, SqlError, SqlClient.SqlClient | ShardingConfig.ShardingConfig>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/SqlRunnerStorage.ts#L522"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/SqlRunnerStorage.ts#L523"
   },
   {
     "_tag": "Function",
@@ -3887,6 +3887,6 @@
     "since": "1.0.0",
     "category": "Layers",
     "signature": "declare const layerWith: (options: { readonly prefix?: string | undefined; }) => Layer.Layer<RunnerStorage.RunnerStorage, SqlError, SqlClient.SqlClient | ShardingConfig.ShardingConfig>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/SqlRunnerStorage.ts#L532"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/SqlRunnerStorage.ts#L533"
   }
 ]
