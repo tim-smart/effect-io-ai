@@ -16739,7 +16739,7 @@
     "since": "1.0.0",
     "category": "combinators",
     "signature": "declare const append: { (key: string, value: Coercible): (self: UrlParams) => UrlParams; (self: UrlParams, key: string, value: Coercible): UrlParams; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/UrlParams.ts#L173"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/UrlParams.ts#L177"
   },
   {
     "_tag": "Constant",
@@ -16754,7 +16754,7 @@
     "since": "1.0.0",
     "category": "combinators",
     "signature": "declare const appendAll: { (input: Input): (self: UrlParams) => UrlParams; (self: UrlParams, input: Input): UrlParams; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/UrlParams.ts#L186"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/UrlParams.ts#L190"
   },
   {
     "_tag": "Constant",
@@ -16769,7 +16769,7 @@
     "since": "1.0.0",
     "category": "combinators",
     "signature": "declare const remove: { (key: string): (self: UrlParams) => UrlParams; (self: UrlParams, key: string): UrlParams; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/UrlParams.ts#L195"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/UrlParams.ts#L199"
   },
   {
     "_tag": "Constant",
@@ -16784,7 +16784,7 @@
     "since": "1.0.0",
     "category": "schema",
     "signature": "declare const schemaFromString: Schema.Schema<UrlParams, string, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/UrlParams.ts#L338"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/UrlParams.ts#L342"
   },
   {
     "_tag": "Function",
@@ -16814,7 +16814,7 @@
     "since": "1.0.0",
     "category": "conversions",
     "signature": "declare const makeUrl: (url: string, params: UrlParams, hash: Option.Option<string>) => Either.Either<URL, Error>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/UrlParams.ts#L204"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/UrlParams.ts#L208"
   },
   {
     "_tag": "Function",
@@ -16829,7 +16829,7 @@
     "since": "1.0.0",
     "category": "conversions",
     "signature": "declare const toString: (self: UrlParams) => string",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/UrlParams.ts#L226"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/UrlParams.ts#L230"
   },
   {
     "_tag": "Function",
@@ -16845,7 +16845,7 @@
     "since": "1.0.0",
     "category": "conversions",
     "signature": "declare const toRecord: (self: UrlParams) => Record<string, string | Arr.NonEmptyArray<string>>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/UrlParams.ts#L263"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/UrlParams.ts#L267"
   },
   {
     "_tag": "Function",
@@ -16860,7 +16860,7 @@
     "since": "1.0.0",
     "category": "schema",
     "signature": "declare const schemaJson: <A, I, R>(schema: Schema.Schema<A, I, R>, options?: ParseOptions | undefined) => { (field: string): (self: UrlParams) => Effect.Effect<A, ParseResult.ParseError, R>; (self: UrlParams, field: string): Effect.Effect<A, ParseResult.ParseError, R>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/UrlParams.ts#L282"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/UrlParams.ts#L286"
   },
   {
     "_tag": "Function",
@@ -16876,7 +16876,7 @@
     "since": "1.0.0",
     "category": "schema",
     "signature": "declare const schemaStruct: <A, I extends Record<string, string | ReadonlyArray<string> | undefined>, R>(schema: Schema.Schema<A, I, R>, options?: ParseOptions | undefined) => (self: UrlParams) => Effect.Effect<A, ParseResult.ParseError, R>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/UrlParams.ts#L325"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/UrlParams.ts#L329"
   },
   {
     "_tag": "Function",
@@ -16891,7 +16891,7 @@
     "since": "1.0.0",
     "category": "schema",
     "signature": "declare const schemaRecord: <A, I extends Record<string, string | ReadonlyArray<string> | undefined>, R>(schema: Schema.Schema<A, I, R>) => Schema.Schema<A, UrlParams, R>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/UrlParams.ts#L355"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/UrlParams.ts#L359"
   },
   {
     "_tag": "Function",
@@ -16906,7 +16906,7 @@
     "since": "1.0.0",
     "category": "schema",
     "signature": "declare const schemaParse: <A, I extends Record<string, string | ReadonlyArray<string> | undefined>, R>(schema: Schema.Schema<A, I, R>) => Schema.Schema<A, string, R>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/UrlParams.ts#L375"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/UrlParams.ts#L379"
   },
   {
     "_tag": "Interface",

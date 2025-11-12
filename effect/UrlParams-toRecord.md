@@ -28,6 +28,6 @@ assert.deepStrictEqual(
 declare const toRecord: (self: UrlParams) => Record<string, string | Arr.NonEmptyArray<string>>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform/src/UrlParams.ts#L263)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform/src/UrlParams.ts#L267)
 
 Since v1.0.0
