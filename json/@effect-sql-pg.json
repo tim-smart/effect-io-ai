@@ -44,7 +44,7 @@
     "since": "1.0.0",
     "category": "type ids",
     "signature": "declare const TypeId: \"~@effect/sql-pg/PgClient\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-pg/src/PgClient.ts#L40"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-pg/src/PgClient.ts#L39"
   },
   {
     "_tag": "Constant",
@@ -59,7 +59,7 @@
     "since": "1.0.0",
     "category": "tags",
     "signature": "declare const PgClient: Context.Tag<PgClient, PgClient>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-pg/src/PgClient.ts#L64"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-pg/src/PgClient.ts#L63"
   },
   {
     "_tag": "Function",
@@ -74,7 +74,7 @@
     "since": "1.0.0",
     "category": "constructors",
     "signature": "declare const make: (options: PgClientConfig) => Effect.Effect<PgClient, SqlError, Scope.Scope | Reactivity.Reactivity>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-pg/src/PgClient.ts#L101"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-pg/src/PgClient.ts#L100"
   },
   {
     "_tag": "Function",
@@ -89,7 +89,7 @@
     "since": "1.0.0",
     "category": "layers",
     "signature": "declare const layerConfig: (config: Config.Config.Wrap<PgClientConfig>) => Layer.Layer<PgClient | Client.SqlClient, ConfigError.ConfigError | SqlError>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-pg/src/PgClient.ts#L437"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-pg/src/PgClient.ts#L440"
   },
   {
     "_tag": "Function",
@@ -104,7 +104,7 @@
     "since": "1.0.0",
     "category": "layers",
     "signature": "declare const layer: (config: PgClientConfig) => Layer.Layer<PgClient | Client.SqlClient, SqlError>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-pg/src/PgClient.ts#L455"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-pg/src/PgClient.ts#L458"
   },
   {
     "_tag": "Function",
@@ -119,7 +119,7 @@
     "since": "1.0.0",
     "category": "constructor",
     "signature": "declare const makeCompiler: (transform?: (_: string) => string, transformJson?: boolean) => Statement.Compiler",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-pg/src/PgClient.ts#L469"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-pg/src/PgClient.ts#L472"
   },
   {
     "_tag": "Interface",
@@ -134,7 +134,7 @@
     "since": "1.0.0",
     "category": "models",
     "signature": "export interface PgClient extends Client.SqlClient {\n  readonly [TypeId]: TypeId\n  readonly config: PgClientConfig\n  readonly json: (_: unknown) => Fragment\n  readonly listen: (channel: string) => Stream.Stream<string, SqlError>\n  readonly notify: (channel: string, payload: string) => Effect.Effect<void, SqlError>\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-pg/src/PgClient.ts#L52"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-pg/src/PgClient.ts#L51"
   },
   {
     "_tag": "Interface",
@@ -149,7 +149,7 @@
     "since": "1.0.0",
     "category": "constructors",
     "signature": "export interface PgClientConfig {\n  readonly url?: Redacted.Redacted | undefined\n\n  readonly host?: string | undefined\n  readonly port?: number | undefined\n  readonly path?: string | undefined\n  readonly ssl?: boolean | ConnectionOptions | undefined\n  readonly database?: string | undefined\n  readonly username?: string | undefined\n  readonly password?: Redacted.Redacted | undefined\n\n  readonly idleTimeout?: Duration.DurationInput | undefined\n  readonly connectTimeout?: Duration.DurationInput | undefined\n\n  readonly maxConnections?: number | undefined\n  readonly minConnections?: number | undefined\n  readonly connectionTTL?: Duration.DurationInput | undefined\n\n  readonly applicationName?: string | undefined\n  readonly spanAttributes?: Record<string, unknown> | undefined\n\n  readonly transformResultNames?: ((str: string) => string) | undefined\n  readonly transformQueryNames?: ((str: string) => string) | undefined\n  readonly transformJson?: boolean | undefined\n  readonly types?: Pg.CustomTypesConfig | undefined\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-pg/src/PgClient.ts#L70"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-pg/src/PgClient.ts#L69"
   },
   {
     "_tag": "TypeAlias",
@@ -164,7 +164,7 @@
     "since": "1.0.0",
     "category": "type ids",
     "signature": "type TypeId = \"~@effect/sql-pg/PgClient\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-pg/src/PgClient.ts#L46"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-pg/src/PgClient.ts#L45"
   },
   {
     "_tag": "TypeAlias",
@@ -179,7 +179,7 @@
     "since": "1.0.0",
     "category": "custom types",
     "signature": "type PgCustom = PgJson",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-pg/src/PgClient.ts#L518"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-pg/src/PgClient.ts#L521"
   },
   {
     "_tag": "Constant",
