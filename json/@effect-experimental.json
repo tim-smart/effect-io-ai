@@ -2602,6 +2602,22 @@
       "path": "src/index.ts"
     },
     "project": "@effect/experimental",
+    "name": "RateLimiter",
+    "description": "Re-exports all named exports from the \"./RateLimiter.js\" module as `RateLimiter`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as RateLimiter from \"./RateLimiter.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/index.ts#L59"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/experimental",
     "name": "Reactivity",
     "description": "Re-exports all named exports from the \"./Reactivity.js\" module as `Reactivity`.",
     "deprecated": false,
@@ -2609,7 +2625,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "export * as Reactivity from \"./Reactivity.js\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/index.ts#L59"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/index.ts#L64"
   },
   {
     "_tag": "Export",
@@ -2625,7 +2641,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "export * as RequestResolver from \"./RequestResolver.js\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/index.ts#L64"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/index.ts#L69"
   },
   {
     "_tag": "Export",
@@ -2641,7 +2657,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "export * as Sse from \"./Sse.js\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/index.ts#L69"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/index.ts#L74"
   },
   {
     "_tag": "Export",
@@ -2657,7 +2673,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "export * as VariantSchema from \"./VariantSchema.js\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/index.ts#L74"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/index.ts#L79"
   },
   {
     "_tag": "Class",
@@ -4190,6 +4206,276 @@
     "category": "layers",
     "signature": "declare const layerResultConfig: (options: Config.Config.Wrap<RedisOptions>) => Layer.Layer<Persistence.ResultPersistence, ConfigError>",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/Redis.ts#L144"
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "RateLimiter.ts",
+      "path": "src/RateLimiter.ts"
+    },
+    "project": "@effect/experimental",
+    "name": "RateLimitExceeded",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Errors",
+    "signature": "declare class RateLimitExceeded",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/RateLimiter.ts#L201"
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "RateLimiter.ts",
+      "path": "src/RateLimiter.ts"
+    },
+    "project": "@effect/experimental",
+    "name": "RateLimitStoreError",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Errors",
+    "signature": "declare class RateLimitStoreError",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/RateLimiter.ts#L231"
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "RateLimiter.ts",
+      "path": "src/RateLimiter.ts"
+    },
+    "project": "@effect/experimental",
+    "name": "RateLimiterStore",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "RateLimiterStore",
+    "signature": "declare class RateLimiterStore",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/RateLimiter.ts#L293"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "RateLimiter.ts",
+      "path": "src/RateLimiter.ts"
+    },
+    "project": "@effect/experimental",
+    "name": "TypeId",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Type IDs",
+    "signature": "declare const TypeId: \"~@effect/experimental/RateLimiter\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/RateLimiter.ts#L15"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "RateLimiter.ts",
+      "path": "src/RateLimiter.ts"
+    },
+    "project": "@effect/experimental",
+    "name": "RateLimiter",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Tags",
+    "signature": "declare const RateLimiter: Context.Tag<RateLimiter, RateLimiter>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/RateLimiter.ts#L44"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "RateLimiter.ts",
+      "path": "src/RateLimiter.ts"
+    },
+    "project": "@effect/experimental",
+    "name": "make",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Constructors",
+    "signature": "declare const make: Effect.Effect<RateLimiter, never, RateLimiterStore>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/RateLimiter.ts#L50"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "RateLimiter.ts",
+      "path": "src/RateLimiter.ts"
+    },
+    "project": "@effect/experimental",
+    "name": "layer",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Layers",
+    "signature": "declare const layer: Layer.Layer<RateLimiter, never, RateLimiterStore>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/RateLimiter.ts#L179"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "RateLimiter.ts",
+      "path": "src/RateLimiter.ts"
+    },
+    "project": "@effect/experimental",
+    "name": "ErrorTypeId",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Errors",
+    "signature": "declare const ErrorTypeId: \"~@effect/experimental/RateLimiter/RateLimiterError\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/RateLimiter.ts#L189"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "RateLimiter.ts",
+      "path": "src/RateLimiter.ts"
+    },
+    "project": "@effect/experimental",
+    "name": "RateLimiterError",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Errors",
+    "signature": "declare const RateLimiterError: Schema.Union<[typeof RateLimitExceeded, typeof RateLimitStoreError]>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/RateLimiter.ts#L252"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "RateLimiter.ts",
+      "path": "src/RateLimiter.ts"
+    },
+    "project": "@effect/experimental",
+    "name": "layerStoreMemory",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "RateLimiterStore",
+    "signature": "declare const layerStoreMemory: Layer.Layer<RateLimiterStore, never, never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/RateLimiter.ts#L337"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "RateLimiter.ts",
+      "path": "src/RateLimiter.ts"
+    },
+    "project": "@effect/experimental",
+    "name": "RateLimiter",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Models",
+    "signature": "export interface RateLimiter {\n  readonly [TypeId]: TypeId\n\n  readonly consume: (options: {\n    readonly algorithm?: \"fixed-window\" | \"token-bucket\" | undefined\n    readonly onExceeded?: \"delay\" | \"fail\" | undefined\n    readonly window: Duration.DurationInput\n    readonly limit: number\n    readonly key: string\n    readonly tokens?: number | undefined\n  }) => Effect.Effect<ConsumeResult, RateLimiterError>\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/RateLimiter.ts#L27"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "RateLimiter.ts",
+      "path": "src/RateLimiter.ts"
+    },
+    "project": "@effect/experimental",
+    "name": "ConsumeResult",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Models",
+    "signature": "export interface ConsumeResult {\n  /**\n   * The amount of delay to wait before making the next request, when the rate\n   * limiter is using the \"delay\" `onExceeded` strategy.\n   *\n   * It will be Duration.zero if the request is allowed immediately.\n   */\n  readonly delay: Duration.Duration\n\n  /**\n   * The maximum number of requests allowed in the current window.\n   */\n  readonly limit: number\n\n  /**\n   * The number of remaining requests in the current window.\n   */\n  readonly remaining: number\n\n  /**\n   * The time until the rate limit fully resets.\n   */\n  readonly resetAfter: Duration.Duration\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/RateLimiter.ts#L264"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "RateLimiter.ts",
+      "path": "src/RateLimiter.ts"
+    },
+    "project": "@effect/experimental",
+    "name": "TypeId",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Type IDs",
+    "signature": "type TypeId = \"~@effect/experimental/RateLimiter\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/RateLimiter.ts#L21"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "RateLimiter.ts",
+      "path": "src/RateLimiter.ts"
+    },
+    "project": "@effect/experimental",
+    "name": "ErrorTypeId",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Errors",
+    "signature": "type ErrorTypeId = \"~@effect/experimental/RateLimiter/RateLimiterError\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/RateLimiter.ts#L195"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "RateLimiter.ts",
+      "path": "src/RateLimiter.ts"
+    },
+    "project": "@effect/experimental",
+    "name": "RateLimiterError",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Errors",
+    "signature": "type RateLimiterError = RateLimitExceeded | RateLimitStoreError",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/RateLimiter.ts#L258"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Redis.ts",
+      "path": "src/RateLimiter/Redis.ts"
+    },
+    "project": "@effect/experimental",
+    "name": "make",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Constructors",
+    "signature": "declare const make: (options: CommonRedisOptions & SentinelConnectionOptions & Partial<TcpOptions & IpcOptions> & { disconnectTimeout?: number; tls?: ConnectionOptions; } & { readonly prefix?: string | undefined; }) => Effect.Effect<{ readonly fixedWindow: (options: { readonly key: string; readonly tokens: number; readonly refillRate: Duration.Duration; readonly limit: number | undefined; }) => Effect.Effect<readonly [count: number, ttl: number], RateLimiter.RateLimiterError>; readonly tokenBucket: (options: { readonly key: string; readonly tokens: number; readonly limit: number; readonly refillRate: Duration.Duration; readonly allowOverflow: boolean; }) => Effect.Effect<number, RateLimiter.RateLimiterError>; }, never, Scope>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/Redis.ts#L28"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Redis.ts",
+      "path": "src/RateLimiter/Redis.ts"
+    },
+    "project": "@effect/experimental",
+    "name": "layerStore",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Layers",
+    "signature": "declare const layerStore: (options: RedisOptions & { readonly prefix?: string | undefined; }) => Layer.Layer<RateLimiter.RateLimiterStore, never, never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/Redis.ts#L149"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Redis.ts",
+      "path": "src/RateLimiter/Redis.ts"
+    },
+    "project": "@effect/experimental",
+    "name": "layerStoreConfig",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Layers",
+    "signature": "declare const layerStoreConfig: (options: Config.Config.Wrap<RedisOptions & { readonly prefix?: string | undefined; }>) => Layer.Layer<RateLimiter.RateLimiterStore, ConfigError, never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/Redis.ts#L156"
   },
   {
     "_tag": "Class",

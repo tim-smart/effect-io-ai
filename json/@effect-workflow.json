@@ -147,7 +147,7 @@
     "since": "1.0.0",
     "category": "Symbols",
     "signature": "declare const TypeId: unique symbol",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/DurableClock.ts#L15"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/DurableClock.ts#L16"
   },
   {
     "_tag": "Constant",
@@ -161,8 +161,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "Sleeping",
-    "signature": "declare const sleep: (options: { readonly name: string; readonly duration: Duration.DurationInput; }) => Effect.Effect<void, never, WorkflowEngine | WorkflowInstance>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/DurableClock.ts#L60"
+    "signature": "declare const sleep: (options: { readonly name: string; readonly duration: Duration.DurationInput; readonly inMemoryThreshold?: Duration.DurationInput | undefined; }) => Effect.Effect<void, never, WorkflowEngine | WorkflowInstance>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/DurableClock.ts#L61"
   },
   {
     "_tag": "Function",
@@ -177,7 +177,7 @@
     "since": "1.0.0",
     "category": "Constructors",
     "signature": "declare const make: (options: { readonly name: string; readonly duration: Duration.DurationInput; }) => DurableClock",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/DurableClock.ts#L38"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/DurableClock.ts#L39"
   },
   {
     "_tag": "Interface",
@@ -192,7 +192,7 @@
     "since": "1.0.0",
     "category": "Models",
     "signature": "export interface DurableClock {\n  readonly [TypeId]: TypeId\n  readonly name: string\n  readonly duration: Duration.Duration\n  readonly deferred: DurableDeferred.DurableDeferred<typeof Schema.Void>\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/DurableClock.ts#L27"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/DurableClock.ts#L28"
   },
   {
     "_tag": "TypeAlias",
@@ -207,7 +207,7 @@
     "since": "1.0.0",
     "category": "Symbols",
     "signature": "type TypeId = typeof TypeId",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/DurableClock.ts#L21"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/DurableClock.ts#L22"
   },
   {
     "_tag": "Class",
@@ -510,6 +510,21 @@
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/DurableDeferred.ts#L128"
   },
   {
+    "_tag": "Function",
+    "module": {
+      "name": "DurableRateLimiter.ts",
+      "path": "src/DurableRateLimiter.ts"
+    },
+    "project": "@effect/workflow",
+    "name": "rateLimit",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Accessors",
+    "signature": "declare const rateLimit: (options: { readonly name: string; readonly algorithm?: \"fixed-window\" | \"token-bucket\" | undefined; readonly window: Duration.DurationInput; readonly limit: number; readonly key: string; readonly tokens?: number | undefined; }) => Activity.Activity<typeof Schema.Void, typeof RateLimiter.RateLimitStoreError, RateLimiter.RateLimiter>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/DurableRateLimiter.ts#L15"
+  },
+  {
     "_tag": "Export",
     "module": {
       "name": "index.ts",
@@ -564,6 +579,22 @@
       "path": "src/index.ts"
     },
     "project": "@effect/workflow",
+    "name": "DurableRateLimiter",
+    "description": "Re-exports all named exports from the \"./DurableRateLimiter.js\" module as `DurableRateLimiter`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as DurableRateLimiter from \"./DurableRateLimiter.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/index.ts#L19"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/workflow",
     "name": "Workflow",
     "description": "Re-exports all named exports from the \"./Workflow.js\" module as `Workflow`.",
     "deprecated": false,
@@ -571,7 +602,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "export * as Workflow from \"./Workflow.js\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/index.ts#L19"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/index.ts#L24"
   },
   {
     "_tag": "Export",
@@ -587,7 +618,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "export * as WorkflowEngine from \"./WorkflowEngine.js\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/index.ts#L24"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/index.ts#L29"
   },
   {
     "_tag": "Export",
@@ -603,7 +634,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "export * as WorkflowProxy from \"./WorkflowProxy.js\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/index.ts#L29"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/index.ts#L34"
   },
   {
     "_tag": "Export",
@@ -619,7 +650,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "export * as WorkflowProxyServer from \"./WorkflowProxyServer.js\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/index.ts#L34"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/index.ts#L39"
   },
   {
     "_tag": "Class",

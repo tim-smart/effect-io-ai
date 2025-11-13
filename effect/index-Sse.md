@@ -11,6 +11,6 @@ Re-exports all named exports from the "./Sse.js" module as `Sse`.
 export * as Sse from "./Sse.js"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/index.ts#L69)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/index.ts#L74)
 
 Since v1.0.0

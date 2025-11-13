@@ -11,6 +11,6 @@ Re-exports all named exports from the "./Workflow.js" module as `Workflow`.
 export * as Workflow from "./Workflow.js"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform/src/index.ts#L19)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform/src/index.ts#L24)
 
 Since v1.0.0
