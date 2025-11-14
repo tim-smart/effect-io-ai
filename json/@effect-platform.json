@@ -4968,8 +4968,23 @@
     "examples": [],
     "since": "1.0.0",
     "category": "layers",
-    "signature": "declare const layerHttpLayerRouter: (options: { readonly api: HttpApi.HttpApi.Any; readonly path: `/${string}`; readonly source?: ScalarScriptSource; readonly scalar?: ScalarConfig; }) => Layer.Layer<never, never, HttpLayerRouter.HttpRouter>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiScalar.ts#L207"
+    "signature": "declare const layerHttpLayerRouter: (options: { readonly api: HttpApi.HttpApi.Any; readonly path: `/${string}`; readonly scalar?: ScalarConfig; }) => Layer.Layer<never, never, HttpLayerRouter.HttpRouter>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiScalar.ts#L221"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "HttpApiScalar.ts",
+      "path": "src/HttpApiScalar.ts"
+    },
+    "project": "@effect/platform",
+    "name": "layerHttpLayerRouterCdn",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "layers",
+    "signature": "declare const layerHttpLayerRouterCdn: (options: { readonly api: HttpApi.HttpApi.Any; readonly path: `/${string}`; readonly version?: string | undefined; readonly scalar?: ScalarConfig; }) => Layer.Layer<never, never, HttpLayerRouter.HttpRouter>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiScalar.ts#L251"
   },
   {
     "_tag": "Function",
@@ -4983,8 +4998,23 @@
     "examples": [],
     "since": "1.0.0",
     "category": "layers",
-    "signature": "declare const layer: (options?: { readonly path?: `/${string}` | undefined; readonly source?: ScalarScriptSource; readonly scalar?: ScalarConfig; }) => Layer.Layer<never, never, Api>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiScalar.ts#L190"
+    "signature": "declare const layer: (options?: { readonly path?: `/${string}` | undefined; readonly scalar?: ScalarConfig; }) => Layer.Layer<never, never, Api>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiScalar.ts#L174"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "HttpApiScalar.ts",
+      "path": "src/HttpApiScalar.ts"
+    },
+    "project": "@effect/platform",
+    "name": "layerCdn",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "layers",
+    "signature": "declare const layerCdn: (options?: { readonly path?: `/${string}` | undefined; readonly scalar?: ScalarConfig; readonly version?: string | undefined; }) => Layer.Layer<never, never, Api>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiScalar.ts#L197"
   },
   {
     "_tag": "TypeAlias",
@@ -5008,28 +5038,13 @@
       "path": "src/HttpApiScalar.ts"
     },
     "project": "@effect/platform",
-    "name": "ScalarScriptSource",
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "model\n\ncdn: `https://cdn.jsdelivr.net/npm/@scalar/api-reference@${source.version}/dist/browser/standalone.min.js`",
-    "signature": "type ScalarScriptSource = | string\n  | { type: \"default\" }\n  | {\n    type: \"cdn\"\n    version?: \"latest\" | (string & {})\n  }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiScalar.ts#L38"
-  },
-  {
-    "_tag": "TypeAlias",
-    "module": {
-      "name": "HttpApiScalar.ts",
-      "path": "src/HttpApiScalar.ts"
-    },
-    "project": "@effect/platform",
     "name": "ScalarConfig",
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "model",
     "signature": "type ScalarConfig = {\n  /** A string to use one of the color presets */\n  theme?: ScalarThemeId\n  /** The layout to use for the references */\n  layout?: \"modern\" | \"classic\"\n  /** URL to a request proxy for the API client */\n  proxy?: string\n  /** Whether the spec input should show */\n  isEditable?: boolean\n  /** Whether to show the sidebar */\n  showSidebar?: boolean\n  /**\n   * Whether to show models in the sidebar, search, and content.\n   *\n   * Default: `false`\n   */\n  hideModels?: boolean\n  /**\n   * Whether to show the “Download OpenAPI Document” button\n   *\n   * Default: `false`\n   */\n  hideDownloadButton?: boolean\n  /**\n   * Whether to show the “Test Request” button\n   *\n   * Default: `false`\n   */\n  hideTestRequestButton?: boolean\n  /**\n   * Whether to show the sidebar search bar\n   *\n   * Default: `false`\n   */\n  hideSearch?: boolean\n  /** Whether dark mode is on or off initially (light mode) */\n  darkMode?: boolean\n  /** forceDarkModeState makes it always this state no matter what*/\n  forceDarkModeState?: \"dark\" | \"light\"\n  /** Whether to show the dark mode toggle */\n  hideDarkModeToggle?: boolean\n  /**\n   * Path to a favicon image\n   *\n   * Default: `undefined`\n   * Example: '/favicon.svg'\n   */\n  favicon?: string\n  /** Custom CSS to be added to the page */\n  customCss?: string\n  /**\n   * The baseServerURL is used when the spec servers are relative paths and we are using SSR.\n   * On the client we can grab the window.location.origin but on the server we need\n   * to use this prop.\n   *\n   * Default: `undefined`\n   * Example: 'http://localhost:3000'\n   */\n  baseServerURL?: string\n  /**\n   * We’re using Inter and JetBrains Mono as the default fonts. If you want to use your own fonts, set this to false.\n   *\n   * Default: `true`\n   */\n  withDefaultFonts?: boolean\n  /**\n   * By default we only open the relevant tag based on the url, however if you want all the tags open by default then set this configuration option :)\n   *\n   * Default: `false`\n   */\n  defaultOpenAllTags?: boolean\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiScalar.ts#L52"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiScalar.ts#L38"
   },
   {
     "_tag": "Constant",
