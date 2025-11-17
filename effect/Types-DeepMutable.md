@@ -22,7 +22,7 @@ type DeepMutableStruct = Types.DeepMutable<{
 ```ts
 type DeepMutable<T> = T extends ReadonlyMap<infer K, infer V> ? Map<DeepMutable<K>, DeepMutable<V>>
   : T extends ReadonlySet<infer V> ? Set<DeepMutable<V>>
-  : T extends string | number | boolean | bigint | symbol ? T
+  : T extends string | number | boolean | bigint | symbol | Function ? T
   : { -readonly [K in keyof T]: DeepMutable<T[K]> }
 ```
 

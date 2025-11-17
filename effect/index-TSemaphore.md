@@ -11,6 +11,6 @@ Re-exports all named exports from the "./TSemaphore.js" module as `TSemaphore`.
 export * as TSemaphore from "./TSemaphore.js"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L1437)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L1443)
 
 Since v2.0.0

@@ -11,6 +11,6 @@ Re-exports all named exports from the "./Schedule.js" module as `Schedule`.
 export * as Schedule from "./Schedule.js"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L1252)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L1258)
 
 Since v2.0.0

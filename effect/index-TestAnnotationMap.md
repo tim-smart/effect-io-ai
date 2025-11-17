@@ -11,6 +11,6 @@ Re-exports all named exports from the "./TestAnnotationMap.js" module as `TestAn
 export * as TestAnnotationMap from "./TestAnnotationMap.js"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L1462)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L1468)
 
 Since v2.0.0

@@ -11,6 +11,6 @@ Re-exports all named exports from the "./RateLimiter.js" module as `RateLimiter`
 export * as RateLimiter from "./RateLimiter.js"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L1153)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L1159)
 
 Since v2.0.0

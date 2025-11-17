@@ -11,6 +11,6 @@ Re-exports all named exports from the "./Secret.js" module as `Secret`.
 export * as Secret from "./Secret.js"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L1303)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L1309)
 
 Since v2.0.0

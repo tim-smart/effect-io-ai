@@ -11,6 +11,6 @@ Re-exports all named exports from the "./RequestResolver.js" module as `RequestR
 export * as RequestResolver from "./RequestResolver.js"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L1222)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L1228)
 
 Since v2.0.0

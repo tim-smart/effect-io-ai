@@ -11,6 +11,6 @@ Re-exports all named exports from the "./Streamable.js" module as `Streamable`.
 export * as Streamable from "./Streamable.js"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L1343)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L1349)
 
 Since v2.0.0

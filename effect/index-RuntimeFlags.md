@@ -11,6 +11,6 @@ Re-exports all named exports from the "./RuntimeFlags.js" module as `RuntimeFlag
 export * as RuntimeFlags from "./RuntimeFlags.js"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L1237)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L1243)
 
 Since v2.0.0

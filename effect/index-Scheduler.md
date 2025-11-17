@@ -11,6 +11,6 @@ Re-exports all named exports from the "./Scheduler.js" module as `Scheduler`.
 export * as Scheduler from "./Scheduler.js"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L1272)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L1278)
 
 Since v2.0.0

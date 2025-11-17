@@ -11,6 +11,6 @@ Re-exports all named exports from the "./SortedSet.js" module as `SortedSet`.
 export * as SortedSet from "./SortedSet.js"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L1323)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L1329)
 
 Since v2.0.0

@@ -11,6 +11,6 @@ Re-exports all named exports from the "./Pipeable.js" module as `Pipeable`.
 export * as Pipeable from "./Pipeable.js"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L1096)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L1102)
 
 Since v2.0.0

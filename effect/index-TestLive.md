@@ -11,6 +11,6 @@ Re-exports all named exports from the "./TestLive.js" module as `TestLive`.
 export * as TestLive from "./TestLive.js"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L1487)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L1493)
 
 Since v2.0.0

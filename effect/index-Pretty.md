@@ -11,6 +11,6 @@ Re-exports all named exports from the "./Pretty.js" module as `Pretty`.
 export * as Pretty from "./Pretty.js"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L1126)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L1132)
 
 Since v3.10.0
