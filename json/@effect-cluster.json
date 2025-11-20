@@ -303,8 +303,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "Constructors",
-    "signature": "declare const make: Effect.Effect<{ readonly register: (workflow: Workflow.Any, execute: (payload: object, executionId: string) => Effect.Effect<unknown, unknown, WorkflowInstance | WorkflowEngine>) => Effect.Effect<void, never, Scope.Scope>; readonly execute: <const Discard extends boolean>(options: { readonly workflow: Workflow.Any; readonly executionId: string; readonly payload: object; readonly discard: Discard; readonly parent?: WorkflowInstance[\"Type\"] | undefined; }) => Effect.Effect<Discard extends true ? void : Workflow.Result<unknown, unknown>>; readonly poll: (options: { readonly workflow: Workflow.Any; readonly executionId: string; }) => Effect.Effect<Workflow.Result<unknown, unknown> | undefined>; readonly interrupt: (workflow: Workflow.Any, executionId: string) => Effect.Effect<void>; readonly resume: (workflow: Workflow.Any, executionId: string) => Effect.Effect<void>; readonly activityExecute: (options: { readonly activity: Activity.Any; readonly attempt: number; }) => Effect.Effect<Workflow.Result<unknown, unknown>, never, WorkflowInstance>; readonly deferredResult: (deferred: DurableDeferred.Any) => Effect.Effect<Option.Option<Schema.ExitEncoded<unknown, unknown, unknown>>, never, WorkflowInstance>; readonly deferredDone: (options: { readonly workflowName: string; readonly executionId: string; readonly deferredName: string; readonly exit: Schema.ExitEncoded<unknown, unknown, unknown>; }) => Effect.Effect<void>; readonly scheduleClock: (options: { readonly workflow: Workflow.Any; readonly executionId: string; readonly clock: DurableClock.DurableClock; }) => Effect.Effect<void>; }, never, Scope.Scope | MessageStorage | Sharding.Sharding>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ClusterWorkflowEngine.ts#L45"
+    "signature": "declare const make: Effect.Effect<{ readonly register: <Name extends string, Payload extends Workflow.AnyStructSchema, Success extends Schema.Schema.Any, Error extends Schema.Schema.All, R>(workflow: Workflow.Workflow<Name, Payload, Success, Error>, execute: (payload: Payload[\"Type\"], executionId: string) => Effect.Effect<Success[\"Type\"], Error[\"Type\"], R>) => Effect.Effect<void, never, Scope.Scope | Exclude<R, WorkflowEngine | WorkflowInstance | Workflow.Execution<Name> | Scope.Scope> | Payload[\"Context\"] | Success[\"Context\"] | Error[\"Context\"]>; readonly execute: <Name extends string, Payload extends Workflow.AnyStructSchema, Success extends Schema.Schema.Any, Error extends Schema.Schema.All, const Discard extends boolean = false>(workflow: Workflow.Workflow<Name, Payload, Success, Error>, options: { readonly executionId: string; readonly payload: Payload[\"Type\"]; readonly discard?: Discard | undefined; readonly suspendedRetrySchedule?: Schedule.Schedule<any, unknown> | undefined; }) => Effect.Effect<Discard extends true ? string : Success[\"Type\"], Error[\"Type\"], Payload[\"Context\"] | Success[\"Context\"] | Error[\"Context\"]>; readonly poll: <Name extends string, Payload extends Workflow.AnyStructSchema, Success extends Schema.Schema.Any, Error extends Schema.Schema.All>(workflow: Workflow.Workflow<Name, Payload, Success, Error>, executionId: string) => Effect.Effect<Workflow.Result<Success[\"Type\"], Error[\"Type\"]> | undefined, never, Success[\"Context\"] | Error[\"Context\"]>; readonly interrupt: (workflow: Workflow.Any, executionId: string) => Effect.Effect<void>; readonly resume: (workflow: Workflow.Any, executionId: string) => Effect.Effect<void>; readonly activityExecute: <Success extends Schema.Schema.Any, Error extends Schema.Schema.All, R>(activity: Activity.Activity<Success, Error, R>, attempt: number) => Effect.Effect<Workflow.Result<Success[\"Type\"], Error[\"Type\"]>, never, Success[\"Context\"] | Error[\"Context\"] | R | WorkflowInstance>; readonly deferredResult: <Success extends Schema.Schema.Any, Error extends Schema.Schema.All>(deferred: DurableDeferred.DurableDeferred<Success, Error>) => Effect.Effect<Exit.Exit<Success[\"Type\"], Error[\"Type\"]> | undefined, never, WorkflowInstance>; readonly deferredDone: <Success extends Schema.Schema.Any, Error extends Schema.Schema.All>(deferred: DurableDeferred.DurableDeferred<Success, Error>, options: { readonly workflowName: string; readonly executionId: string; readonly deferredName: string; readonly exit: Exit.Exit<Success[\"Type\"], Error[\"Type\"]>; }) => Effect.Effect<void, never, Success[\"Context\"] | Error[\"Context\"]>; readonly scheduleClock: (workflow: Workflow.Any, options: { readonly executionId: string; readonly clock: DurableClock.DurableClock; }) => Effect.Effect<void>; }, never, Scope.Scope | MessageStorage | Sharding.Sharding>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ClusterWorkflowEngine.ts#L46"
   },
   {
     "_tag": "Constant",
@@ -319,7 +319,7 @@
     "since": "1.0.0",
     "category": "Layers",
     "signature": "declare const layer: Layer.Layer<WorkflowEngine, never, MessageStorage | Sharding.Sharding>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ClusterWorkflowEngine.ts#L647"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ClusterWorkflowEngine.ts#L653"
   },
   {
     "_tag": "Constant",
@@ -395,7 +395,7 @@
     "since": "1.0.0",
     "category": "context",
     "signature": "declare class CurrentAddress",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Entity.ts#L405"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Entity.ts#L408"
   },
   {
     "_tag": "Class",
@@ -411,7 +411,7 @@
     "since": "1.0.0",
     "category": "context",
     "signature": "declare class CurrentRunnerAddress",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Entity.ts#L416"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Entity.ts#L419"
   },
   {
     "_tag": "Class",
@@ -426,7 +426,22 @@
     "since": "1.0.0",
     "category": "Request",
     "signature": "declare class Request<Rpc>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Entity.ts#L465"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Entity.ts#L468"
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "Entity.ts",
+      "path": "src/Entity.ts"
+    },
+    "project": "@effect/cluster",
+    "name": "KeepAliveLatch",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Keep alive",
+    "signature": "declare class KeepAliveLatch",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Entity.ts#L650"
   },
   {
     "_tag": "Constant",
@@ -441,7 +456,7 @@
     "since": "1.0.0",
     "category": "type ids",
     "signature": "declare const TypeId: unique symbol",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Entity.ts#L45"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Entity.ts#L48"
   },
   {
     "_tag": "Constant",
@@ -456,7 +471,37 @@
     "since": "1.0.0",
     "category": "Testing",
     "signature": "declare const makeTestClient: <Type extends string, Rpcs extends Rpc.Any, LA, LE, LR>(entity: Entity<Type, Rpcs>, layer: Layer.Layer<LA, LE, LR>) => Effect.Effect<(entityId: string) => Effect.Effect<RpcClient.RpcClient<Rpcs>>, LE, Scope | ShardingConfig | Exclude<LR, Sharding> | Rpc.MiddlewareClient<Rpcs>>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Entity.ts#L494"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Entity.ts#L497"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Entity.ts",
+      "path": "src/Entity.ts"
+    },
+    "project": "@effect/cluster",
+    "name": "keepAlive",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Keep alive",
+    "signature": "declare const keepAlive: (enabled: boolean) => Effect.Effect<void, never, Sharding | CurrentAddress>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Entity.ts#L595"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Entity.ts",
+      "path": "src/Entity.ts"
+    },
+    "project": "@effect/cluster",
+    "name": "KeepAliveRpc",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Keep alive",
+    "signature": "declare const KeepAliveRpc: Rpc.Rpc<\"Cluster/Entity/keepAlive\", typeof Void, typeof Void, typeof Never, never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Entity.ts#L642"
   },
   {
     "_tag": "Function",
@@ -471,7 +516,7 @@
     "since": "1.0.0",
     "category": "refinements",
     "signature": "declare const isEntity: (u: unknown) => u is Any",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Entity.ts#L206"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Entity.ts#L209"
   },
   {
     "_tag": "Function",
@@ -487,7 +532,7 @@
     "since": "1.0.0",
     "category": "constructors",
     "signature": "declare const fromRpcGroup: <const Type extends string, Rpcs extends Rpc.Any>(type: Type, protocol: RpcGroup.RpcGroup<Rpcs>) => Entity<Type, Rpcs>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Entity.ts#L362"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Entity.ts#L365"
   },
   {
     "_tag": "Function",
@@ -503,7 +548,7 @@
     "since": "1.0.0",
     "category": "constructors",
     "signature": "declare const make: <const Type extends string, Rpcs extends ReadonlyArray<Rpc.Any>>(type: Type, protocol: Rpcs) => Entity<Type, Rpcs[number]>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Entity.ts#L387"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Entity.ts#L390"
   },
   {
     "_tag": "Interface",
@@ -518,7 +563,7 @@
     "since": "1.0.0",
     "category": "models",
     "signature": "export interface Entity<\n  in out Type extends string,\n  in out Rpcs extends Rpc.Any\n> extends Equal.Equal {\n  readonly [TypeId]: TypeId\n  /**\n   * The name of the entity type.\n   */\n  readonly type: Type & Brand<\"EntityType\">\n\n  /**\n   * A RpcGroup definition for messages which represents the messaging protocol\n   * that the entity is capable of processing.\n   */\n  readonly protocol: RpcGroup.RpcGroup<Rpcs>\n\n  /**\n   * Get the shard group for the given EntityId.\n   */\n  getShardGroup(entityId: EntityId): string\n\n  /**\n   * Get the ShardId for the given EntityId.\n   */\n  getShardId(entityId: EntityId): Effect.Effect<ShardId.ShardId, never, Sharding>\n\n  /**\n   * Annotate the entity with a value.\n   */\n  annotate<I, S>(tag: Context.Tag<I, S>, value: S): Entity<Type, Rpcs>\n\n  /**\n   * Annotate the Rpc's above this point with a value.\n   */\n  annotateRpcs<I, S>(tag: Context.Tag<I, S>, value: S): Entity<Type, Rpcs>\n\n  /**\n   * Annotate the entity with a context object.\n   */\n  annotateContext<S>(context: Context.Context<S>): Entity<Type, Rpcs>\n\n  /**\n   * Annotate the Rpc's above this point with a context object.\n   */\n  annotateRpcsContext<S>(context: Context.Context<S>): Entity<Type, Rpcs>\n\n  /**\n   * Create a client for this entity.\n   */\n  readonly client: Effect.Effect<\n    (\n      entityId: string\n    ) => RpcClient.RpcClient.From<\n      Rpcs,\n      MailboxFull | AlreadyProcessingMessage | PersistenceError\n    >,\n    never,\n    Sharding\n  >\n\n  /**\n   * Create a Layer from an Entity.\n   *\n   * It will register the entity with the Sharding service.\n   */\n  toLayer<\n    Handlers extends HandlersFrom<Rpcs>,\n    RX = never\n  >(\n    build: Handlers | Effect.Effect<Handlers, never, RX>,\n    options?: {\n      readonly maxIdleTime?: DurationInput | undefined\n      readonly concurrency?: number | \"unbounded\" | undefined\n      readonly mailboxCapacity?: number | \"unbounded\" | undefined\n      readonly disableFatalDefects?: boolean | undefined\n      readonly defectRetryPolicy?: Schedule.Schedule<any, unknown> | undefined\n      readonly spanAttributes?: Record<string, string> | undefined\n    }\n  ): Layer.Layer<\n    never,\n    never,\n    | Exclude<RX, Scope | CurrentAddress | CurrentRunnerAddress>\n    | RpcGroup.HandlersContext<Rpcs, Handlers>\n    | Rpc.Context<Rpcs>\n    | Rpc.Middleware<Rpcs>\n    | Sharding\n  >\n\n  of<Handlers extends HandlersFrom<Rpcs>>(handlers: Handlers): Handlers\n\n  /**\n   * Create a Layer from an Entity.\n   *\n   * It will register the entity with the Sharding service.\n   */\n  toLayerMailbox<\n    R,\n    RX = never\n  >(\n    build:\n      | ((\n        mailbox: Mailbox.ReadonlyMailbox<Envelope.Request<Rpcs>>,\n        replier: Replier<Rpcs>\n      ) => Effect.Effect<never, never, R>)\n      | Effect.Effect<\n        (\n          mailbox: Mailbox.ReadonlyMailbox<Envelope.Request<Rpcs>>,\n          replier: Replier<Rpcs>\n        ) => Effect.Effect<never, never, R>,\n        never,\n        RX\n      >,\n    options?: {\n      readonly maxIdleTime?: DurationInput | undefined\n      readonly mailboxCapacity?: number | \"unbounded\" | undefined\n      readonly disableFatalDefects?: boolean | undefined\n      readonly defectRetryPolicy?: Schedule.Schedule<any, unknown> | undefined\n      readonly spanAttributes?: Record<string, string> | undefined\n    }\n  ): Layer.Layer<\n    never,\n    never,\n    | Exclude<RX, Scope | CurrentAddress | CurrentRunnerAddress>\n    | R\n    | Rpc.Context<Rpcs>\n    | Rpc.Middleware<Rpcs>\n    | Sharding\n  >\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Entity.ts#L57"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Entity.ts#L60"
   },
   {
     "_tag": "Interface",
@@ -533,7 +578,7 @@
     "since": "1.0.0",
     "category": "Replier",
     "signature": "export interface Replier<Rpcs extends Rpc.Any> {\n  readonly succeed: <R extends Rpcs>(\n    request: Envelope.Request<R>,\n    value: Replier.Success<R>\n  ) => Effect.Effect<void>\n\n  readonly fail: <R extends Rpcs>(\n    request: Envelope.Request<R>,\n    error: Rpc.Error<R>\n  ) => Effect.Effect<void>\n\n  readonly failCause: <R extends Rpcs>(\n    request: Envelope.Request<R>,\n    cause: Cause.Cause<Rpc.Error<R>>\n  ) => Effect.Effect<void>\n\n  readonly complete: <R extends Rpcs>(\n    request: Envelope.Request<R>,\n    exit: Exit.Exit<Replier.Success<R>, Rpc.Error<R>>\n  ) => Effect.Effect<void>\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Entity.ts#L425"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Entity.ts#L428"
   },
   {
     "_tag": "TypeAlias",
@@ -548,7 +593,7 @@
     "since": "1.0.0",
     "category": "type ids",
     "signature": "type TypeId = typeof TypeId",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Entity.ts#L51"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Entity.ts#L54"
   },
   {
     "_tag": "TypeAlias",
@@ -563,7 +608,7 @@
     "since": "1.0.0",
     "category": "models",
     "signature": "type Any = Entity<string, Rpc.Any>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Entity.ts#L190"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Entity.ts#L193"
   },
   {
     "_tag": "TypeAlias",
@@ -578,7 +623,7 @@
     "since": "1.0.0",
     "category": "models",
     "signature": "type HandlersFrom<Rpc> = {\n  readonly [Current in Rpc as Current[\"_tag\"]]: (\n    envelope: Request<Current>\n  ) => Rpc.ResultFrom<Current, any> | Rpc.Wrapper<Rpc.ResultFrom<Current, any>>\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Entity.ts#L196"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Entity.ts#L199"
   },
   {
     "_tag": "TypeAlias",
@@ -593,7 +638,7 @@
     "since": "1.0.0",
     "category": "Replier",
     "signature": "type Success<R> = Rpc.Success<R> extends Stream.Stream<infer _A, infer _E, infer _R> ?\n    Stream.Stream<_A, _E | Rpc.Error<R>, _R> | Mailbox.ReadonlyMailbox<_A, _E | Rpc.Error<R>>\n    : Rpc.Success<R>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Entity.ts#L456"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Entity.ts#L459"
   },
   {
     "_tag": "Class",
@@ -3267,7 +3312,7 @@
     "since": "1.0.0",
     "category": "layers",
     "signature": "declare const layer: Layer.Layer<Sharding, never, RunnerStorage | ShardingConfig | MessageStorage.MessageStorage | Runners | RunnerHealth.RunnerHealth>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Sharding.ts#L1426"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Sharding.ts#L1434"
   },
   {
     "_tag": "Class",
@@ -3297,8 +3342,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "defaults",
-    "signature": "declare const defaults: { readonly runnerAddress: Option.Option<RunnerAddress>; readonly runnerListenAddress: Option.Option<RunnerAddress>; readonly runnerShardWeight: number; readonly shardGroups: ReadonlyArray<string>; readonly shardsPerGroup: number; readonly shardLockRefreshInterval: DurationInput; readonly shardLockExpiration: DurationInput; readonly preemptiveShutdown: boolean; readonly entityMailboxCapacity: number | \"unbounded\"; readonly entityMaxIdleTime: DurationInput; readonly entityTerminationTimeout: DurationInput; readonly entityMessagePollInterval: DurationInput; readonly entityReplyPollInterval: DurationInput; readonly refreshAssignmentsInterval: DurationInput; readonly sendRetryInterval: DurationInput; readonly runnerHealthCheckInterval: DurationInput; readonly simulateRemoteSerialization: boolean; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ShardingConfig.ts#L121"
+    "signature": "declare const defaults: { readonly runnerAddress: Option.Option<RunnerAddress>; readonly runnerListenAddress: Option.Option<RunnerAddress>; readonly runnerShardWeight: number; readonly shardGroups: ReadonlyArray<string>; readonly shardsPerGroup: number; readonly shardLockRefreshInterval: DurationInput; readonly shardLockExpiration: DurationInput; readonly preemptiveShutdown: boolean; readonly entityMailboxCapacity: number | \"unbounded\"; readonly entityMaxIdleTime: DurationInput; readonly entityRegistrationTimeout: DurationInput; readonly entityTerminationTimeout: DurationInput; readonly entityMessagePollInterval: DurationInput; readonly entityReplyPollInterval: DurationInput; readonly refreshAssignmentsInterval: DurationInput; readonly sendRetryInterval: DurationInput; readonly runnerHealthCheckInterval: DurationInput; readonly simulateRemoteSerialization: boolean; }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ShardingConfig.ts#L128"
   },
   {
     "_tag": "Constant",
@@ -3313,7 +3358,7 @@
     "since": "1.0.0",
     "category": "defaults",
     "signature": "declare const layerDefaults: Layer.Layer<ShardingConfig, never, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ShardingConfig.ts#L152"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ShardingConfig.ts#L160"
   },
   {
     "_tag": "Constant",
@@ -3327,8 +3372,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "Config",
-    "signature": "declare const config: Config.Config<{ readonly runnerAddress: Option.Option<RunnerAddress>; readonly runnerListenAddress: Option.Option<RunnerAddress>; readonly runnerShardWeight: number; readonly shardGroups: ReadonlyArray<string>; readonly shardsPerGroup: number; readonly shardLockRefreshInterval: DurationInput; readonly shardLockExpiration: DurationInput; readonly preemptiveShutdown: boolean; readonly entityMailboxCapacity: number | \"unbounded\"; readonly entityMaxIdleTime: DurationInput; readonly entityTerminationTimeout: DurationInput; readonly entityMessagePollInterval: DurationInput; readonly entityReplyPollInterval: DurationInput; readonly refreshAssignmentsInterval: DurationInput; readonly sendRetryInterval: DurationInput; readonly runnerHealthCheckInterval: DurationInput; readonly simulateRemoteSerialization: boolean; }>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ShardingConfig.ts#L158"
+    "signature": "declare const config: Config.Config<{ readonly runnerAddress: Option.Option<RunnerAddress>; readonly runnerListenAddress: Option.Option<RunnerAddress>; readonly runnerShardWeight: number; readonly shardGroups: ReadonlyArray<string>; readonly shardsPerGroup: number; readonly shardLockRefreshInterval: DurationInput; readonly shardLockExpiration: DurationInput; readonly preemptiveShutdown: boolean; readonly entityMailboxCapacity: number | \"unbounded\"; readonly entityMaxIdleTime: DurationInput; readonly entityRegistrationTimeout: DurationInput; readonly entityTerminationTimeout: DurationInput; readonly entityMessagePollInterval: DurationInput; readonly entityReplyPollInterval: DurationInput; readonly refreshAssignmentsInterval: DurationInput; readonly sendRetryInterval: DurationInput; readonly runnerHealthCheckInterval: DurationInput; readonly simulateRemoteSerialization: boolean; }>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ShardingConfig.ts#L166"
   },
   {
     "_tag": "Constant",
@@ -3342,8 +3387,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "Config",
-    "signature": "declare const configFromEnv: Effect.Effect<{ readonly runnerAddress: Option.Option<RunnerAddress>; readonly runnerListenAddress: Option.Option<RunnerAddress>; readonly runnerShardWeight: number; readonly shardGroups: ReadonlyArray<string>; readonly shardsPerGroup: number; readonly shardLockRefreshInterval: DurationInput; readonly shardLockExpiration: DurationInput; readonly preemptiveShutdown: boolean; readonly entityMailboxCapacity: number | \"unbounded\"; readonly entityMaxIdleTime: DurationInput; readonly entityTerminationTimeout: DurationInput; readonly entityMessagePollInterval: DurationInput; readonly entityReplyPollInterval: DurationInput; readonly refreshAssignmentsInterval: DurationInput; readonly sendRetryInterval: DurationInput; readonly runnerHealthCheckInterval: DurationInput; readonly simulateRemoteSerialization: boolean; }, ConfigError, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ShardingConfig.ts#L245"
+    "signature": "declare const configFromEnv: Effect.Effect<{ readonly runnerAddress: Option.Option<RunnerAddress>; readonly runnerListenAddress: Option.Option<RunnerAddress>; readonly runnerShardWeight: number; readonly shardGroups: ReadonlyArray<string>; readonly shardsPerGroup: number; readonly shardLockRefreshInterval: DurationInput; readonly shardLockExpiration: DurationInput; readonly preemptiveShutdown: boolean; readonly entityMailboxCapacity: number | \"unbounded\"; readonly entityMaxIdleTime: DurationInput; readonly entityRegistrationTimeout: DurationInput; readonly entityTerminationTimeout: DurationInput; readonly entityMessagePollInterval: DurationInput; readonly entityReplyPollInterval: DurationInput; readonly refreshAssignmentsInterval: DurationInput; readonly sendRetryInterval: DurationInput; readonly runnerHealthCheckInterval: DurationInput; readonly simulateRemoteSerialization: boolean; }, ConfigError, never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ShardingConfig.ts#L259"
   },
   {
     "_tag": "Function",
@@ -3358,7 +3403,7 @@
     "since": "1.0.0",
     "category": "Layers",
     "signature": "declare const layer: (options?: Partial<ShardingConfig[\"Type\"]>) => Layer.Layer<ShardingConfig>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ShardingConfig.ts#L145"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ShardingConfig.ts#L153"
   },
   {
     "_tag": "Function",
@@ -3373,7 +3418,7 @@
     "since": "1.0.0",
     "category": "Layers",
     "signature": "declare const layerFromEnv: (options?: Partial<ShardingConfig[\"Type\"]> | undefined) => Layer.Layer<ShardingConfig, ConfigError>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ShardingConfig.ts#L257"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ShardingConfig.ts#L271"
   },
   {
     "_tag": "Constant",

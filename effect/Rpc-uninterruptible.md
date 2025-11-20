@@ -12,6 +12,6 @@ that it is executed inside an uninterruptible region.
 declare const uninterruptible: <A extends object>(value: A) => A extends Wrapper<infer _> ? A : Wrapper<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/Rpc.ts#L810)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/Rpc.ts#L825)
 
 Since v1.0.0
