@@ -870,6 +870,22 @@
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/EntityProxyServer.ts#L110"
   },
   {
+    "_tag": "Class",
+    "module": {
+      "name": "EntityResource.ts",
+      "path": "src/EntityResource.ts"
+    },
+    "project": "@effect/cluster",
+    "name": "CloseScope",
+    "description": "A `Scope` that is only closed when the resource is explicitly closed.\n\nIt is not closed during restarts, due to shard movement or node shutdowns.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Scope",
+    "signature": "declare class CloseScope",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/EntityResource.ts#L43"
+  },
+  {
     "_tag": "Constant",
     "module": {
       "name": "EntityResource.ts",
@@ -882,7 +898,7 @@
     "since": "1.0.0",
     "category": "Type ids",
     "signature": "declare const TypeId: \"~@effect/cluster/EntityResource\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/EntityResource.ts#L16"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/EntityResource.ts#L17"
   },
   {
     "_tag": "Constant",
@@ -897,8 +913,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "Constructors",
-    "signature": "declare const make: <A, E, R>(options: { readonly acquire: Effect.Effect<A, E, R>; readonly idleTimeToLive?: Duration.DurationInput | undefined; readonly shutdownMode?: \"explicit\" | \"always\" | undefined; }) => Effect.Effect<EntityResource<A, E>, E, Scope.Scope | R | Sharding | Entity.CurrentAddress>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/EntityResource.ts#L47"
+    "signature": "declare const make: <A, E, R>(options: { readonly acquire: Effect.Effect<A, E, R>; readonly idleTimeToLive?: Duration.DurationInput | undefined; }) => Effect.Effect<EntityResource<A, E>, E, Scope.Scope | Exclude<R, CloseScope> | Sharding | Entity.CurrentAddress>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/EntityResource.ts#L61"
   },
   {
     "_tag": "Interface",
@@ -913,7 +929,7 @@
     "since": "1.0.0",
     "category": "Models",
     "signature": "export interface EntityResource<out A, out E = never> {\n  readonly [TypeId]: TypeId\n  readonly get: Effect.Effect<A, E, Scope.Scope>\n  readonly close: Effect.Effect<void>\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/EntityResource.ts#L28"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/EntityResource.ts#L29"
   },
   {
     "_tag": "TypeAlias",
@@ -928,7 +944,7 @@
     "since": "1.0.0",
     "category": "Type ids",
     "signature": "type TypeId = \"~@effect/cluster/EntityResource\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/EntityResource.ts#L22"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/EntityResource.ts#L23"
   },
   {
     "_tag": "Constant",

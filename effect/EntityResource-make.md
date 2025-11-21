@@ -15,9 +15,9 @@ be released when `close` is called.
 **Signature**
 
 ```ts
-declare const make: <A, E, R>(options: { readonly acquire: Effect.Effect<A, E, R>; readonly idleTimeToLive?: Duration.DurationInput | undefined; readonly shutdownMode?: "explicit" | "always" | undefined; }) => Effect.Effect<EntityResource<A, E>, E, Scope.Scope | R | Sharding | Entity.CurrentAddress>
+declare const make: <A, E, R>(options: { readonly acquire: Effect.Effect<A, E, R>; readonly idleTimeToLive?: Duration.DurationInput | undefined; }) => Effect.Effect<EntityResource<A, E>, E, Scope.Scope | Exclude<R, CloseScope> | Sharding | Entity.CurrentAddress>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/EntityResource.ts#L47)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/EntityResource.ts#L61)
 
 Since v1.0.0
