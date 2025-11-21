@@ -4220,7 +4220,7 @@
     "since": "1.0.0",
     "category": "Errors",
     "signature": "declare class RateLimitExceeded",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/RateLimiter.ts#L202"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/RateLimiter.ts#L299"
   },
   {
     "_tag": "Class",
@@ -4235,7 +4235,7 @@
     "since": "1.0.0",
     "category": "Errors",
     "signature": "declare class RateLimitStoreError",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/RateLimiter.ts#L232"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/RateLimiter.ts#L329"
   },
   {
     "_tag": "Class",
@@ -4250,7 +4250,7 @@
     "since": "1.0.0",
     "category": "RateLimiterStore",
     "signature": "declare class RateLimiterStore",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/RateLimiter.ts#L294"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/RateLimiter.ts#L391"
   },
   {
     "_tag": "Constant",
@@ -4319,13 +4319,45 @@
       "path": "src/RateLimiter.ts"
     },
     "project": "@effect/experimental",
+    "name": "makeWithRateLimiter",
+    "description": "Access a function that applies rate limiting to an effect.\n\n```ts\nimport { RateLimiter } from \"@effect/experimental\"\nimport { Effect } from \"effect\"\n\nEffect.gen(function*() {\n  // Access the `withLimiter` function from the RateLimiter module\n  const withLimiter = yield* RateLimiter.makeWithRateLimiter\n\n  // Apply a rate limiter to an effect\n  yield* Effect.log(\"Making a request with rate limiting\").pipe(\n    withLimiter({\n      key: \"some-key\",\n      limit: 10,\n      onExceeded: \"delay\",\n      window: \"5 seconds\",\n      algorithm: \"fixed-window\"\n    })\n  )\n})\n```",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Accessors",
+    "signature": "declare const makeWithRateLimiter: Effect.Effect<(options: { readonly algorithm?: \"fixed-window\" | \"token-bucket\" | undefined; readonly onExceeded?: \"delay\" | \"fail\" | undefined; readonly window: Duration.DurationInput; readonly limit: number; readonly key: string; readonly tokens?: number | undefined; }) => <A, E, R>(effect: Effect.Effect<A, E, R>) => Effect.Effect<A, E | RateLimiterError, R>, never, RateLimiter>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/RateLimiter.ts#L213"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "RateLimiter.ts",
+      "path": "src/RateLimiter.ts"
+    },
+    "project": "@effect/experimental",
+    "name": "makeSleep",
+    "description": "Access a function that sleeps when the rate limit is exceeded.\n\n```ts\nimport { RateLimiter } from \"@effect/experimental\"\nimport { Effect } from \"effect\"\n\nexport default Effect.gen(function*() {\n  // Access the `sleep` function from the RateLimiter module\n  const sleep = yield* RateLimiter.makeSleep\n\n  // Use the `sleep` function with specific rate limiting parameters.\n  // This will only sleep if the rate limit has been exceeded.\n  yield* sleep({\n    key: \"some-key\",\n    limit: 10,\n    window: \"5 seconds\",\n    algorithm: \"fixed-window\"\n  })\n})\n```",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Accessors",
+    "signature": "declare const makeSleep: Effect.Effect<(options: { readonly algorithm?: \"fixed-window\" | \"token-bucket\" | undefined; readonly window: Duration.DurationInput; readonly limit: number; readonly key: string; readonly tokens?: number | undefined; }) => Effect.Effect<ConsumeResult, RateLimitStoreError>, never, RateLimiter>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/RateLimiter.ts#L258"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "RateLimiter.ts",
+      "path": "src/RateLimiter.ts"
+    },
+    "project": "@effect/experimental",
     "name": "ErrorTypeId",
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "Errors",
     "signature": "declare const ErrorTypeId: \"~@effect/experimental/RateLimiter/RateLimiterError\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/RateLimiter.ts#L190"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/RateLimiter.ts#L287"
   },
   {
     "_tag": "Constant",
@@ -4340,7 +4372,7 @@
     "since": "1.0.0",
     "category": "Errors",
     "signature": "declare const RateLimiterError: Schema.Union<[typeof RateLimitExceeded, typeof RateLimitStoreError]>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/RateLimiter.ts#L253"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/RateLimiter.ts#L350"
   },
   {
     "_tag": "Constant",
@@ -4355,7 +4387,7 @@
     "since": "1.0.0",
     "category": "RateLimiterStore",
     "signature": "declare const layerStoreMemory: Layer.Layer<RateLimiterStore, never, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/RateLimiter.ts#L338"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/RateLimiter.ts#L435"
   },
   {
     "_tag": "Interface",
@@ -4385,7 +4417,7 @@
     "since": "1.0.0",
     "category": "Models",
     "signature": "export interface ConsumeResult {\n  /**\n   * The amount of delay to wait before making the next request, when the rate\n   * limiter is using the \"delay\" `onExceeded` strategy.\n   *\n   * It will be Duration.zero if the request is allowed immediately.\n   */\n  readonly delay: Duration.Duration\n\n  /**\n   * The maximum number of requests allowed in the current window.\n   */\n  readonly limit: number\n\n  /**\n   * The number of remaining requests in the current window.\n   */\n  readonly remaining: number\n\n  /**\n   * The time until the rate limit fully resets.\n   */\n  readonly resetAfter: Duration.Duration\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/RateLimiter.ts#L265"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/RateLimiter.ts#L362"
   },
   {
     "_tag": "TypeAlias",
@@ -4415,7 +4447,7 @@
     "since": "1.0.0",
     "category": "Errors",
     "signature": "type ErrorTypeId = \"~@effect/experimental/RateLimiter/RateLimiterError\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/RateLimiter.ts#L196"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/RateLimiter.ts#L293"
   },
   {
     "_tag": "TypeAlias",
@@ -4430,7 +4462,7 @@
     "since": "1.0.0",
     "category": "Errors",
     "signature": "type RateLimiterError = RateLimitExceeded | RateLimitStoreError",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/RateLimiter.ts#L259"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/RateLimiter.ts#L356"
   },
   {
     "_tag": "Constant",

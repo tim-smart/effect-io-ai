@@ -441,7 +441,7 @@
     "since": "1.0.0",
     "category": "Keep alive",
     "signature": "declare class KeepAliveLatch",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Entity.ts#L650"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Entity.ts#L651"
   },
   {
     "_tag": "Constant",
@@ -501,7 +501,7 @@
     "since": "1.0.0",
     "category": "Keep alive",
     "signature": "declare const KeepAliveRpc: Rpc.Rpc<\"Cluster/Entity/keepAlive\", typeof Void, typeof Void, typeof Never, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Entity.ts#L642"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Entity.ts#L643"
   },
   {
     "_tag": "Function",
@@ -868,6 +868,67 @@
     "category": null,
     "signature": "type RpcHandlers<Rpcs, Prefix> = Rpcs extends Rpc.Rpc<\n  infer _Tag,\n  infer _Payload,\n  infer _Success,\n  infer _Error,\n  infer _Middleware\n> ? Rpc.Handler<`${Prefix}.${_Tag}`> | Rpc.Handler<`${Prefix}.${_Tag}Discard`>\n  : never",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/EntityProxyServer.ts#L110"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "EntityResource.ts",
+      "path": "src/EntityResource.ts"
+    },
+    "project": "@effect/cluster",
+    "name": "TypeId",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Type ids",
+    "signature": "declare const TypeId: \"~@effect/cluster/EntityResource\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/EntityResource.ts#L16"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "EntityResource.ts",
+      "path": "src/EntityResource.ts"
+    },
+    "project": "@effect/cluster",
+    "name": "make",
+    "description": "A `EntityResource` is a resource that can be acquired inside a cluster\nentity, which will keep the entity alive even across restarts.\n\nThe resource will only be fully released when the idle time to live is\nreached, or when the `close` effect is called.\n\nBy default, the `idleTimeToLive` is infinite, meaning the resource will only\nbe released when `close` is called.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Constructors",
+    "signature": "declare const make: <A, E, R>(options: { readonly acquire: Effect.Effect<A, E, R>; readonly idleTimeToLive?: Duration.DurationInput | undefined; readonly shutdownMode?: \"explicit\" | \"always\" | undefined; }) => Effect.Effect<EntityResource<A, E>, E, Scope.Scope | R | Sharding | Entity.CurrentAddress>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/EntityResource.ts#L47"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "EntityResource.ts",
+      "path": "src/EntityResource.ts"
+    },
+    "project": "@effect/cluster",
+    "name": "EntityResource",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Models",
+    "signature": "export interface EntityResource<out A, out E = never> {\n  readonly [TypeId]: TypeId\n  readonly get: Effect.Effect<A, E, Scope.Scope>\n  readonly close: Effect.Effect<void>\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/EntityResource.ts#L28"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "EntityResource.ts",
+      "path": "src/EntityResource.ts"
+    },
+    "project": "@effect/cluster",
+    "name": "TypeId",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Type ids",
+    "signature": "type TypeId = \"~@effect/cluster/EntityResource\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/EntityResource.ts#L22"
   },
   {
     "_tag": "Constant",
@@ -1623,6 +1684,22 @@
       "path": "src/index.ts"
     },
     "project": "@effect/cluster",
+    "name": "EntityResource",
+    "description": "Re-exports all named exports from the \"./EntityResource.js\" module as `EntityResource`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as EntityResource from \"./EntityResource.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L59"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/cluster",
     "name": "EntityType",
     "description": "Re-exports all named exports from the \"./EntityType.js\" module as `EntityType`.",
     "deprecated": false,
@@ -1630,7 +1707,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "export * as EntityType from \"./EntityType.js\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L59"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L64"
   },
   {
     "_tag": "Export",
@@ -1646,7 +1723,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "export * as Envelope from \"./Envelope.js\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L64"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L69"
   },
   {
     "_tag": "Export",
@@ -1662,7 +1739,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "export * as HttpRunner from \"./HttpRunner.js\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L69"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L74"
   },
   {
     "_tag": "Export",
@@ -1678,7 +1755,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "export * as MachineId from \"./MachineId.js\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L74"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L79"
   },
   {
     "_tag": "Export",
@@ -1694,7 +1771,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "export * as Message from \"./Message.js\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L79"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L84"
   },
   {
     "_tag": "Export",
@@ -1710,7 +1787,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "export * as MessageStorage from \"./MessageStorage.js\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L84"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L89"
   },
   {
     "_tag": "Export",
@@ -1726,7 +1803,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "export * as Reply from \"./Reply.js\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L89"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L94"
   },
   {
     "_tag": "Export",
@@ -1742,7 +1819,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "export * as Runner from \"./Runner.js\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L94"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L99"
   },
   {
     "_tag": "Export",
@@ -1758,7 +1835,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "export * as RunnerAddress from \"./RunnerAddress.js\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L99"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L104"
   },
   {
     "_tag": "Export",
@@ -1774,7 +1851,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "export * as RunnerHealth from \"./RunnerHealth.js\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L104"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L109"
   },
   {
     "_tag": "Export",
@@ -1790,7 +1867,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "export * as RunnerServer from \"./RunnerServer.js\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L109"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L114"
   },
   {
     "_tag": "Export",
@@ -1806,7 +1883,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "export * as RunnerStorage from \"./RunnerStorage.js\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L114"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L119"
   },
   {
     "_tag": "Export",
@@ -1822,7 +1899,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "export * as Runners from \"./Runners.js\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L119"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L124"
   },
   {
     "_tag": "Export",
@@ -1838,7 +1915,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "export * as ShardId from \"./ShardId.js\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L124"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L129"
   },
   {
     "_tag": "Export",
@@ -1854,7 +1931,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "export * as Sharding from \"./Sharding.js\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L129"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L134"
   },
   {
     "_tag": "Export",
@@ -1870,7 +1947,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "export * as ShardingConfig from \"./ShardingConfig.js\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L134"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L139"
   },
   {
     "_tag": "Export",
@@ -1886,7 +1963,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "export * as ShardingRegistrationEvent from \"./ShardingRegistrationEvent.js\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L139"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L144"
   },
   {
     "_tag": "Export",
@@ -1902,7 +1979,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "export * as Singleton from \"./Singleton.js\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L144"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L149"
   },
   {
     "_tag": "Export",
@@ -1918,7 +1995,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "export * as SingletonAddress from \"./SingletonAddress.js\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L149"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L154"
   },
   {
     "_tag": "Export",
@@ -1934,7 +2011,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "export * as Snowflake from \"./Snowflake.js\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L154"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L159"
   },
   {
     "_tag": "Export",
@@ -1950,7 +2027,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "export * as SocketRunner from \"./SocketRunner.js\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L159"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L164"
   },
   {
     "_tag": "Export",
@@ -1966,7 +2043,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "export * as SqlMessageStorage from \"./SqlMessageStorage.js\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L164"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L169"
   },
   {
     "_tag": "Export",
@@ -1982,7 +2059,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "export * as SqlRunnerStorage from \"./SqlRunnerStorage.js\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L169"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L174"
   },
   {
     "_tag": "Constant",
@@ -3872,7 +3949,7 @@
     "since": "1.0.0",
     "category": "Layers",
     "signature": "declare const layer: Layer.Layer<MessageStorage.MessageStorage, never, SqlClient.SqlClient | ShardingConfig>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/SqlMessageStorage.ts#L586"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/SqlMessageStorage.ts#L593"
   },
   {
     "_tag": "Function",
@@ -3887,7 +3964,7 @@
     "since": "1.0.0",
     "category": "Layers",
     "signature": "declare const layerWith: (options: { readonly prefix?: string | undefined; }) => Layer.Layer<MessageStorage.MessageStorage, never, SqlClient.SqlClient | ShardingConfig>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/SqlMessageStorage.ts#L598"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/SqlMessageStorage.ts#L605"
   },
   {
     "_tag": "Constant",
