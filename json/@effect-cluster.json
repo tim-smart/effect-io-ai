@@ -883,7 +883,7 @@
     "since": "1.0.0",
     "category": "Scope",
     "signature": "declare class CloseScope",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/EntityResource.ts#L43"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/EntityResource.ts#L45"
   },
   {
     "_tag": "Constant",
@@ -898,7 +898,7 @@
     "since": "1.0.0",
     "category": "Type ids",
     "signature": "declare const TypeId: \"~@effect/cluster/EntityResource\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/EntityResource.ts#L17"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/EntityResource.ts#L19"
   },
   {
     "_tag": "Constant",
@@ -914,7 +914,22 @@
     "since": "1.0.0",
     "category": "Constructors",
     "signature": "declare const make: <A, E, R>(options: { readonly acquire: Effect.Effect<A, E, R>; readonly idleTimeToLive?: Duration.DurationInput | undefined; }) => Effect.Effect<EntityResource<A, E>, E, Scope.Scope | Exclude<R, CloseScope> | Sharding | Entity.CurrentAddress>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/EntityResource.ts#L61"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/EntityResource.ts#L63"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "EntityResource.ts",
+      "path": "src/EntityResource.ts"
+    },
+    "project": "@effect/cluster",
+    "name": "makeK8sPod",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Kubernetes",
+    "signature": "declare const makeK8sPod: (spec: v1.Pod, options?: { readonly idleTimeToLive?: Duration.DurationInput | undefined; } | undefined) => Effect.Effect<EntityResource<K8sHttpClient.PodStatus>, never, Scope.Scope | Sharding | Entity.CurrentAddress | K8sHttpClient.K8sHttpClient>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/EntityResource.ts#L116"
   },
   {
     "_tag": "Interface",
@@ -929,7 +944,7 @@
     "since": "1.0.0",
     "category": "Models",
     "signature": "export interface EntityResource<out A, out E = never> {\n  readonly [TypeId]: TypeId\n  readonly get: Effect.Effect<A, E, Scope.Scope>\n  readonly close: Effect.Effect<void>\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/EntityResource.ts#L29"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/EntityResource.ts#L31"
   },
   {
     "_tag": "TypeAlias",
@@ -944,7 +959,7 @@
     "since": "1.0.0",
     "category": "Type ids",
     "signature": "type TypeId = \"~@effect/cluster/EntityResource\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/EntityResource.ts#L23"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/EntityResource.ts#L25"
   },
   {
     "_tag": "Constant",
@@ -1764,6 +1779,22 @@
       "path": "src/index.ts"
     },
     "project": "@effect/cluster",
+    "name": "K8sHttpClient",
+    "description": "Re-exports all named exports from the \"./K8sHttpClient.js\" module as `K8sHttpClient`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as K8sHttpClient from \"./K8sHttpClient.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L79"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/cluster",
     "name": "MachineId",
     "description": "Re-exports all named exports from the \"./MachineId.js\" module as `MachineId`.",
     "deprecated": false,
@@ -1771,7 +1802,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "export * as MachineId from \"./MachineId.js\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L79"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L84"
   },
   {
     "_tag": "Export",
@@ -1787,7 +1818,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "export * as Message from \"./Message.js\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L84"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L89"
   },
   {
     "_tag": "Export",
@@ -1803,7 +1834,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "export * as MessageStorage from \"./MessageStorage.js\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L89"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L94"
   },
   {
     "_tag": "Export",
@@ -1819,7 +1850,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "export * as Reply from \"./Reply.js\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L94"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L99"
   },
   {
     "_tag": "Export",
@@ -1835,7 +1866,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "export * as Runner from \"./Runner.js\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L99"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L104"
   },
   {
     "_tag": "Export",
@@ -1851,7 +1882,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "export * as RunnerAddress from \"./RunnerAddress.js\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L104"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L109"
   },
   {
     "_tag": "Export",
@@ -1867,7 +1898,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "export * as RunnerHealth from \"./RunnerHealth.js\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L109"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L114"
   },
   {
     "_tag": "Export",
@@ -1883,7 +1914,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "export * as RunnerServer from \"./RunnerServer.js\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L114"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L119"
   },
   {
     "_tag": "Export",
@@ -1899,7 +1930,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "export * as RunnerStorage from \"./RunnerStorage.js\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L119"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L124"
   },
   {
     "_tag": "Export",
@@ -1915,7 +1946,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "export * as Runners from \"./Runners.js\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L124"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L129"
   },
   {
     "_tag": "Export",
@@ -1931,7 +1962,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "export * as ShardId from \"./ShardId.js\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L129"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L134"
   },
   {
     "_tag": "Export",
@@ -1947,7 +1978,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "export * as Sharding from \"./Sharding.js\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L134"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L139"
   },
   {
     "_tag": "Export",
@@ -1963,7 +1994,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "export * as ShardingConfig from \"./ShardingConfig.js\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L139"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L144"
   },
   {
     "_tag": "Export",
@@ -1979,7 +2010,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "export * as ShardingRegistrationEvent from \"./ShardingRegistrationEvent.js\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L144"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L149"
   },
   {
     "_tag": "Export",
@@ -1995,7 +2026,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "export * as Singleton from \"./Singleton.js\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L149"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L154"
   },
   {
     "_tag": "Export",
@@ -2011,7 +2042,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "export * as SingletonAddress from \"./SingletonAddress.js\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L154"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L159"
   },
   {
     "_tag": "Export",
@@ -2027,7 +2058,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "export * as Snowflake from \"./Snowflake.js\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L159"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L164"
   },
   {
     "_tag": "Export",
@@ -2043,7 +2074,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "export * as SocketRunner from \"./SocketRunner.js\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L164"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L169"
   },
   {
     "_tag": "Export",
@@ -2059,7 +2090,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "export * as SqlMessageStorage from \"./SqlMessageStorage.js\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L169"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L174"
   },
   {
     "_tag": "Export",
@@ -2075,7 +2106,97 @@
     "since": "1.0.0",
     "category": null,
     "signature": "export * as SqlRunnerStorage from \"./SqlRunnerStorage.js\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L174"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L179"
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "K8sHttpClient.ts",
+      "path": "src/K8sHttpClient.ts"
+    },
+    "project": "@effect/cluster",
+    "name": "K8sHttpClient",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Tags",
+    "signature": "declare class K8sHttpClient",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/K8sHttpClient.ts#L23"
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "K8sHttpClient.ts",
+      "path": "src/K8sHttpClient.ts"
+    },
+    "project": "@effect/cluster",
+    "name": "PodStatus",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Schemas",
+    "signature": "declare class PodStatus",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/K8sHttpClient.ts#L182"
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "K8sHttpClient.ts",
+      "path": "src/K8sHttpClient.ts"
+    },
+    "project": "@effect/cluster",
+    "name": "Pod",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Schemas",
+    "signature": "declare class Pod",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/K8sHttpClient.ts#L197"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "K8sHttpClient.ts",
+      "path": "src/K8sHttpClient.ts"
+    },
+    "project": "@effect/cluster",
+    "name": "layer",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Layers",
+    "signature": "declare const layer: Layer.Layer<K8sHttpClient, never, HttpClient.HttpClient | FileSystem.FileSystem>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/K8sHttpClient.ts#L32"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "K8sHttpClient.ts",
+      "path": "src/K8sHttpClient.ts"
+    },
+    "project": "@effect/cluster",
+    "name": "makeGetPods",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Constructors",
+    "signature": "declare const makeGetPods: (options?: { readonly namespace?: string | undefined; readonly labelSelector?: string | undefined; } | undefined) => Effect.Effect<Effect.Effect<Map<string, Pod>, HttpClientError.HttpClientError | ParseResult.ParseError, never>, never, K8sHttpClient>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/K8sHttpClient.ts#L58"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "K8sHttpClient.ts",
+      "path": "src/K8sHttpClient.ts"
+    },
+    "project": "@effect/cluster",
+    "name": "makeCreatePod",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Constructors",
+    "signature": "declare const makeCreatePod: Effect.Effect<(spec: v1.Pod) => Effect.Effect<PodStatus, never, Scope>, never, K8sHttpClient>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/K8sHttpClient.ts#L99"
   },
   {
     "_tag": "Constant",
@@ -2948,7 +3069,7 @@
     "since": "1.0.0",
     "category": "models",
     "signature": "declare class RunnerHealth",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/RunnerHealth.ts#L28"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/RunnerHealth.ts#L23"
   },
   {
     "_tag": "Constant",
@@ -2964,7 +3085,7 @@
     "since": "1.0.0",
     "category": "layers",
     "signature": "declare const layerNoop: Layer.Layer<RunnerHealth, never, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/RunnerHealth.ts#L43"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/RunnerHealth.ts#L38"
   },
   {
     "_tag": "Constant",
@@ -2979,7 +3100,7 @@
     "since": "1.0.0",
     "category": "Constructors",
     "signature": "declare const makePing: Effect.Effect<{ readonly isAlive: (address: RunnerAddress) => Effect.Effect<boolean>; }, never, Scope.Scope | Runners.Runners>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/RunnerHealth.ts#L51"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/RunnerHealth.ts#L46"
   },
   {
     "_tag": "Constant",
@@ -2995,7 +3116,7 @@
     "since": "1.0.0",
     "category": "layers",
     "signature": "declare const layerPing: Layer.Layer<RunnerHealth, never, Runners.Runners>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/RunnerHealth.ts#L76"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/RunnerHealth.ts#L71"
   },
   {
     "_tag": "Constant",
@@ -3009,8 +3130,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "Constructors",
-    "signature": "declare const makeK8s: (options?: { readonly namespace?: string | undefined; readonly labelSelector?: string | undefined; } | undefined) => Effect.Effect<{ readonly isAlive: (address: RunnerAddress) => Effect.Effect<boolean>; }, never, HttpClient.HttpClient | FileSystem.FileSystem>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/RunnerHealth.ts#L86"
+    "signature": "declare const makeK8s: (options?: { readonly namespace?: string | undefined; readonly labelSelector?: string | undefined; } | undefined) => Effect.Effect<{ readonly isAlive: (address: RunnerAddress) => Effect.Effect<boolean>; }, never, K8s.K8sHttpClient>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/RunnerHealth.ts#L81"
   },
   {
     "_tag": "Function",
@@ -3025,8 +3146,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "layers",
-    "signature": "declare const layerK8s: (options?: { readonly namespace?: string | undefined; readonly labelSelector?: string | undefined; } | undefined) => Layer.Layer<RunnerHealth, never, HttpClient.HttpClient | FileSystem.FileSystem>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/RunnerHealth.ts#L183"
+    "signature": "declare const layerK8s: (options?: { readonly namespace?: string | undefined; readonly labelSelector?: string | undefined; } | undefined) => Layer.Layer<RunnerHealth, never, K8s.K8sHttpClient>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/RunnerHealth.ts#L108"
   },
   {
     "_tag": "Class",

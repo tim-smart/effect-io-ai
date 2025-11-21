@@ -13,6 +13,6 @@ It is not closed during restarts, due to shard movement or node shutdowns.
 declare class CloseScope
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/EntityResource.ts#L43)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/EntityResource.ts#L45)
 
 Since v1.0.0

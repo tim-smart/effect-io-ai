@@ -348,7 +348,7 @@
     "since": "1.0.0",
     "category": "Layers",
     "signature": "declare const layerHttpServer: Layer.Layer<HttpServer | HttpPlatform | Etag.Generator | NodeContext, ServeError, ShardingConfig.ShardingConfig>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeClusterHttp.ts#L117"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeClusterHttp.ts#L124"
   },
   {
     "_tag": "Function",
@@ -363,6 +363,21 @@
     "since": "1.0.0",
     "category": "Layers",
     "signature": "declare const layer: <const ClientOnly extends boolean = false, const Storage extends \"local\" | \"sql\" | \"byo\" = never, const Health extends \"ping\" | \"k8s\" = never>(options: { readonly transport: \"http\" | \"websocket\"; readonly serialization?: \"msgpack\" | \"ndjson\" | undefined; readonly clientOnly?: ClientOnly | undefined; readonly storage?: Storage | undefined; readonly runnerHealth?: Health | undefined; readonly runnerHealthK8s?: { readonly namespace?: string | undefined; readonly labelSelector?: string | undefined; } | undefined; readonly shardingConfig?: Partial<ShardingConfig.ShardingConfig[\"Type\"]> | undefined; }) => ClientOnly extends true ? Layer.Layer<Sharding | Runners.Runners | (\"byo\" extends Storage ? never : MessageStorage.MessageStorage), ConfigError, \"local\" extends Storage ? never : \"byo\" extends Storage ? (MessageStorage.MessageStorage | RunnerStorage.RunnerStorage) : SqlClient> : Layer.Layer<Sharding | Runners.Runners | (\"byo\" extends Storage ? never : MessageStorage.MessageStorage), ServeError | ConfigError, \"local\" extends Storage ? never : \"byo\" extends Storage ? (MessageStorage.MessageStorage | RunnerStorage.RunnerStorage) : SqlClient>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeClusterHttp.ts#L42"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "NodeClusterHttp.ts",
+      "path": "src/NodeClusterHttp.ts"
+    },
+    "project": "@effect/platform-node",
+    "name": "layerK8sHttpClient",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Re-exports",
+    "signature": "declare const layerK8sHttpClient: Layer.Layer<K8sHttpClient, never, never>",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeClusterHttp.ts#L35"
   },
   {
@@ -387,13 +402,13 @@
       "path": "src/NodeClusterSocket.ts"
     },
     "project": "@effect/platform-node",
-    "name": "layerHttpClientK8s",
+    "name": "layerK8sHttpClient",
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "Layers",
-    "signature": "declare const layerHttpClientK8s: Layer.Layer<HttpClient.HttpClient, never, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeClusterSocket.ts#L146"
+    "signature": "declare const layerK8sHttpClient: Layer.Layer<K8sHttpClient.K8sHttpClient, never, never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeClusterSocket.ts#L147"
   },
   {
     "_tag": "Function",

@@ -11,6 +11,6 @@ Re-exports all named exports from the "./Message.js" module as `Message`.
 export * as Message from "./Message.js"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L84)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L89)
 
 Since v1.0.0

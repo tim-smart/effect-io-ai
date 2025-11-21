@@ -11,6 +11,6 @@ Re-exports all named exports from the "./ShardId.js" module as `ShardId`.
 export * as ShardId from "./ShardId.js"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L129)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L134)
 
 Since v1.0.0

@@ -13,6 +13,6 @@ This is useful for testing.
 declare const layerNoop: Layer.Layer<RunnerHealth, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/RunnerHealth.ts#L43)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/RunnerHealth.ts#L38)
 
 Since v1.0.0
