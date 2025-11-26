@@ -27,6 +27,7 @@ const replaced = Prompt.prependSystem(
   prompt,
   "You are a helpful assistant. "
 )
+// result content: "You are a helpful assistant. You are an expert in programming."
 ```
 
 **Signature**
@@ -35,6 +36,6 @@ const replaced = Prompt.prependSystem(
 declare const prependSystem: { (content: string): (self: Prompt) => Prompt; (self: Prompt, content: string): Prompt; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L1796)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L1797)
 
 Since v1.0.0

@@ -3608,12 +3608,12 @@
     "description": "Creates a new prompt from the specified prompt with the provided text content\nprepended to the start of existing system message content.\n\nIf no system message exists in the specified prompt, the provided content\nwill be used to create a system message.",
     "deprecated": false,
     "examples": [
-      "```ts\nimport { Prompt } from \"@effect/ai\"\n\nconst systemPrompt = Prompt.make([{\n  role: \"system\",\n  content: \"You are an expert in programming.\"\n}])\n\nconst userPrompt = Prompt.make(\"Hello, world!\")\n\nconst prompt = Prompt.merge(systemPrompt, userPrompt)\n\nconst replaced = Prompt.prependSystem(\n  prompt,\n  \"You are a helpful assistant. \"\n)\n```"
+      "```ts\nimport { Prompt } from \"@effect/ai\"\n\nconst systemPrompt = Prompt.make([{\n  role: \"system\",\n  content: \"You are an expert in programming.\"\n}])\n\nconst userPrompt = Prompt.make(\"Hello, world!\")\n\nconst prompt = Prompt.merge(systemPrompt, userPrompt)\n\nconst replaced = Prompt.prependSystem(\n  prompt,\n  \"You are a helpful assistant. \"\n)\n// result content: \"You are a helpful assistant. You are an expert in programming.\"\n```"
     ],
     "since": "1.0.0",
     "category": "Combinators",
     "signature": "declare const prependSystem: { (content: string): (self: Prompt) => Prompt; (self: Prompt, content: string): Prompt; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L1796"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L1797"
   },
   {
     "_tag": "Constant",
@@ -3626,12 +3626,12 @@
     "description": "Creates a new prompt from the specified prompt with the provided text content\nappended to the end of existing system message content.\n\nIf no system message exists in the specified prompt, the provided content\nwill be used to create a system message.",
     "deprecated": false,
     "examples": [
-      "```ts\nimport { Prompt } from \"@effect/ai\"\n\nconst systemPrompt = Prompt.make([{\n  role: \"system\",\n  content: \"You are a helpful assistant.\"\n}])\n\nconst userPrompt = Prompt.make(\"Hello, world!\")\n\nconst prompt = Prompt.merge(systemPrompt, userPrompt)\n\nconst replaced = Prompt.appendSystem(\n  prompt,\n  \" You are an expert in programming.\"\n)\n```"
+      "```ts\nimport { Prompt } from \"@effect/ai\"\n\nconst systemPrompt = Prompt.make([{\n  role: \"system\",\n  content: \"You are an expert in programming.\"\n}])\n\nconst userPrompt = Prompt.make(\"Hello, world!\")\n\nconst prompt = Prompt.merge(systemPrompt, userPrompt)\n\nconst replaced = Prompt.appendSystem(\n  prompt,\n  \" You are a helpful assistant.\"\n)\n// result content: \"You are an expert in programming. You are a helpful assistant.\"\n```"
     ],
     "since": "1.0.0",
     "category": "Combinators",
     "signature": "declare const appendSystem: { (content: string): (self: Prompt) => Prompt; (self: Prompt, content: string): Prompt; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L1843"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L1846"
   },
   {
     "_tag": "Function",

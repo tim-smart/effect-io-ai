@@ -16,7 +16,7 @@ import { Prompt } from "@effect/ai"
 
 const systemPrompt = Prompt.make([{
   role: "system",
-  content: "You are a helpful assistant."
+  content: "You are an expert in programming."
 }])
 
 const userPrompt = Prompt.make("Hello, world!")
@@ -25,8 +25,9 @@ const prompt = Prompt.merge(systemPrompt, userPrompt)
 
 const replaced = Prompt.appendSystem(
   prompt,
-  " You are an expert in programming."
+  " You are a helpful assistant."
 )
+// result content: "You are an expert in programming. You are a helpful assistant."
 ```
 
 **Signature**
@@ -35,6 +36,6 @@ const replaced = Prompt.appendSystem(
 declare const appendSystem: { (content: string): (self: Prompt) => Prompt; (self: Prompt, content: string): Prompt; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L1843)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L1846)
 
 Since v1.0.0
