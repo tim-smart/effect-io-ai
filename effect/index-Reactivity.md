@@ -11,6 +11,6 @@ Re-exports all named exports from the "./Reactivity.js" module as `Reactivity`.
 export * as Reactivity from "./Reactivity.js"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/index.ts#L64)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/index.ts#L69)
 
 Since v1.0.0

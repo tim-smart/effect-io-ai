@@ -11,6 +11,6 @@ Re-exports all named exports from the "./Statement.js" module as `Statement`.
 export * as Statement from "./Statement.js"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/sql/src/index.ts#L54)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/sql/src/index.ts#L59)
 
 Since v1.0.0

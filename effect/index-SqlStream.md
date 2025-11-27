@@ -11,6 +11,6 @@ Re-exports all named exports from the "./SqlStream.js" module as `SqlStream`.
 export * as SqlStream from "./SqlStream.js"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/sql/src/index.ts#L49)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/sql/src/index.ts#L54)
 
 Since v1.0.0

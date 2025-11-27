@@ -118,6 +118,22 @@
       "path": "src/index.ts"
     },
     "project": "@effect/sql",
+    "name": "SqlPersistedQueue",
+    "description": "Re-exports all named exports from the \"./SqlPersistedQueue.js\" module as `SqlPersistedQueue`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as SqlPersistedQueue from \"./SqlPersistedQueue.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/src/index.ts#L39"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/sql",
     "name": "SqlResolver",
     "description": "Re-exports all named exports from the \"./SqlResolver.js\" module as `SqlResolver`.",
     "deprecated": false,
@@ -125,7 +141,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "export * as SqlResolver from \"./SqlResolver.js\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/src/index.ts#L39"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/src/index.ts#L44"
   },
   {
     "_tag": "Export",
@@ -141,7 +157,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "export * as SqlSchema from \"./SqlSchema.js\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/src/index.ts#L44"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/src/index.ts#L49"
   },
   {
     "_tag": "Export",
@@ -157,7 +173,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "export * as SqlStream from \"./SqlStream.js\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/src/index.ts#L49"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/src/index.ts#L54"
   },
   {
     "_tag": "Export",
@@ -173,7 +189,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "export * as Statement from \"./Statement.js\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/src/index.ts#L54"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/src/index.ts#L59"
   },
   {
     "_tag": "Class",
@@ -1454,6 +1470,36 @@
     "category": "layers",
     "signature": "declare const layerStorageSubtle: (options?: { readonly entryTablePrefix?: string; readonly remoteIdTable?: string; readonly insertBatchSize?: number; }) => Layer.Layer<EventLogServer.Storage, SqlError, SqlClient.SqlClient>",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/src/SqlEventLogServer.ts#L252"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "SqlPersistedQueue.ts",
+      "path": "src/SqlPersistedQueue.ts"
+    },
+    "project": "@effect/sql",
+    "name": "make",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "declare const make: (options?: { readonly tableName?: string | undefined; readonly pollInterval?: Duration.DurationInput | undefined; readonly pollBatchSize?: number | undefined; readonly lockRefreshInterval?: Duration.DurationInput | undefined; readonly lockExpiration?: Duration.DurationInput | undefined; } | undefined) => Effect.Effect<PersistedQueue.PersistedQueueStore[\"Type\"], SqlError, SqlClient.SqlClient | Scope.Scope>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/src/SqlPersistedQueue.ts#L23"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "SqlPersistedQueue.ts",
+      "path": "src/SqlPersistedQueue.ts"
+    },
+    "project": "@effect/sql",
+    "name": "layerStore",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "layers",
+    "signature": "declare const layerStore: (options?: { readonly tableName?: string | undefined; readonly pollInterval?: Duration.DurationInput | undefined; readonly pollBatchSize?: number | undefined; readonly lockRefreshInterval?: Duration.DurationInput | undefined; readonly lockExpiration?: Duration.DurationInput | undefined; }) => Layer.Layer<PersistedQueue.PersistedQueueStore, SqlError, SqlClient.SqlClient>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/src/SqlPersistedQueue.ts#L414"
   },
   {
     "_tag": "Function",

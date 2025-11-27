@@ -11,6 +11,6 @@ Re-exports all named exports from the "./Persistence.js" module as `Persistence`
 export * as Persistence from "./Persistence.js"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/index.ts#L54)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/index.ts#L59)
 
 Since v1.0.0
