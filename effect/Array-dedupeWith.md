@@ -21,6 +21,6 @@ console.log(result) // [1, 2, 3]
 declare const dedupeWith: { <S extends Iterable<any>>(isEquivalent: (self: ReadonlyArray.Infer<S>, that: ReadonlyArray.Infer<S>) => boolean): (self: S) => ReadonlyArray.With<S, ReadonlyArray.Infer<S>>; <A>(self: NonEmptyReadonlyArray<A>, isEquivalent: (self: A, that: A) => boolean): NonEmptyArray<A>; <A>(self: Iterable<A>, isEquivalent: (self: A, that: A) => boolean): Array<A>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L3166)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L3172)
 
 Since v2.0.0

@@ -1483,8 +1483,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "constructors",
-    "signature": "declare const make: (options?: { readonly tableName?: string | undefined; readonly pollInterval?: Duration.DurationInput | undefined; readonly pollBatchSize?: number | undefined; readonly lockRefreshInterval?: Duration.DurationInput | undefined; readonly lockExpiration?: Duration.DurationInput | undefined; } | undefined) => Effect.Effect<PersistedQueue.PersistedQueueStore[\"Type\"], SqlError, SqlClient.SqlClient | Scope.Scope>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/src/SqlPersistedQueue.ts#L23"
+    "signature": "declare const make: (options?: { readonly tableName?: string | undefined; readonly pollInterval?: Duration.DurationInput | undefined; readonly lockRefreshInterval?: Duration.DurationInput | undefined; readonly lockExpiration?: Duration.DurationInput | undefined; } | undefined) => Effect.Effect<PersistedQueue.PersistedQueueStore[\"Type\"], SqlError, SqlClient.SqlClient | Scope.Scope>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/src/SqlPersistedQueue.ts#L24"
   },
   {
     "_tag": "Function",
@@ -1498,8 +1498,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "layers",
-    "signature": "declare const layerStore: (options?: { readonly tableName?: string | undefined; readonly pollInterval?: Duration.DurationInput | undefined; readonly pollBatchSize?: number | undefined; readonly lockRefreshInterval?: Duration.DurationInput | undefined; readonly lockExpiration?: Duration.DurationInput | undefined; }) => Layer.Layer<PersistedQueue.PersistedQueueStore, SqlError, SqlClient.SqlClient>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/src/SqlPersistedQueue.ts#L414"
+    "signature": "declare const layerStore: (options?: { readonly tableName?: string | undefined; readonly pollInterval?: Duration.DurationInput | undefined; readonly lockRefreshInterval?: Duration.DurationInput | undefined; readonly lockExpiration?: Duration.DurationInput | undefined; }) => Layer.Layer<PersistedQueue.PersistedQueueStore, SqlError, SqlClient.SqlClient>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/src/SqlPersistedQueue.ts#L431"
   },
   {
     "_tag": "Function",

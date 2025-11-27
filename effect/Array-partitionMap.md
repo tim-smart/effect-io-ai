@@ -31,6 +31,6 @@ console.log(result)
 declare const partitionMap: { <A, B, C>(f: (a: A, i: number) => Either.Either<C, B>): (self: Iterable<A>) => [left: Array<B>, right: Array<C>]; <A, B, C>(self: Iterable<A>, f: (a: A, i: number) => Either.Either<C, B>): [left: Array<B>, right: Array<C>]; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L2649)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L2655)
 
 Since v2.0.0

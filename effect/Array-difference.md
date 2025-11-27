@@ -21,6 +21,6 @@ console.log(difference) // [1]
 declare const difference: { <A>(that: Iterable<A>): (self: Iterable<A>) => Array<A>; <A>(self: Iterable<A>, that: Iterable<A>): Array<A>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L2422)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L2428)
 
 Since v2.0.0

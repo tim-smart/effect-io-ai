@@ -54,6 +54,6 @@ for(let i = 0; i < x.length; i++) {
 declare const bindTo: { <N extends string>(tag: N): <A>(self: ReadonlyArray<A>) => Array<{ [K in N]: A; }>; <A, N extends string>(self: ReadonlyArray<A>, tag: N): Array<{ [K in N]: A; }>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L3516)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L3522)
 
 Since v3.2.0
