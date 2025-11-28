@@ -303,7 +303,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "Constructors",
-    "signature": "declare const make: Effect.Effect<{ readonly register: <Name extends string, Payload extends Workflow.AnyStructSchema, Success extends Schema.Schema.Any, Error extends Schema.Schema.All, R>(workflow: Workflow.Workflow<Name, Payload, Success, Error>, execute: (payload: Payload[\"Type\"], executionId: string) => Effect.Effect<Success[\"Type\"], Error[\"Type\"], R>) => Effect.Effect<void, never, Scope.Scope | Exclude<R, WorkflowEngine | WorkflowInstance | Workflow.Execution<Name> | Scope.Scope> | Payload[\"Context\"] | Success[\"Context\"] | Error[\"Context\"]>; readonly execute: <Name extends string, Payload extends Workflow.AnyStructSchema, Success extends Schema.Schema.Any, Error extends Schema.Schema.All, const Discard extends boolean = false>(workflow: Workflow.Workflow<Name, Payload, Success, Error>, options: { readonly executionId: string; readonly payload: Payload[\"Type\"]; readonly discard?: Discard | undefined; readonly suspendedRetrySchedule?: Schedule.Schedule<any, unknown> | undefined; }) => Effect.Effect<Discard extends true ? string : Success[\"Type\"], Error[\"Type\"], Payload[\"Context\"] | Success[\"Context\"] | Error[\"Context\"]>; readonly poll: <Name extends string, Payload extends Workflow.AnyStructSchema, Success extends Schema.Schema.Any, Error extends Schema.Schema.All>(workflow: Workflow.Workflow<Name, Payload, Success, Error>, executionId: string) => Effect.Effect<Workflow.Result<Success[\"Type\"], Error[\"Type\"]> | undefined, never, Success[\"Context\"] | Error[\"Context\"]>; readonly interrupt: (workflow: Workflow.Any, executionId: string) => Effect.Effect<void>; readonly resume: (workflow: Workflow.Any, executionId: string) => Effect.Effect<void>; readonly activityExecute: <Success extends Schema.Schema.Any, Error extends Schema.Schema.All, R>(activity: Activity.Activity<Success, Error, R>, attempt: number) => Effect.Effect<Workflow.Result<Success[\"Type\"], Error[\"Type\"]>, never, Success[\"Context\"] | Error[\"Context\"] | R | WorkflowInstance>; readonly deferredResult: <Success extends Schema.Schema.Any, Error extends Schema.Schema.All>(deferred: DurableDeferred.DurableDeferred<Success, Error>) => Effect.Effect<Exit.Exit<Success[\"Type\"], Error[\"Type\"]> | undefined, never, WorkflowInstance>; readonly deferredDone: <Success extends Schema.Schema.Any, Error extends Schema.Schema.All>(deferred: DurableDeferred.DurableDeferred<Success, Error>, options: { readonly workflowName: string; readonly executionId: string; readonly deferredName: string; readonly exit: Exit.Exit<Success[\"Type\"], Error[\"Type\"]>; }) => Effect.Effect<void, never, Success[\"Context\"] | Error[\"Context\"]>; readonly scheduleClock: (workflow: Workflow.Any, options: { readonly executionId: string; readonly clock: DurableClock.DurableClock; }) => Effect.Effect<void>; }, never, Scope.Scope | MessageStorage | Sharding.Sharding>",
+    "signature": "declare const make: Effect.Effect<{ readonly register: <Name extends string, Payload extends Workflow.AnyStructSchema, Success extends Schema.Schema.Any, Error extends Schema.Schema.All, R>(workflow: Workflow.Workflow<Name, Payload, Success, Error>, execute: (payload: Payload[\"Type\"], executionId: string) => Effect.Effect<Success[\"Type\"], Error[\"Type\"], R>) => Effect.Effect<void, never, Scope.Scope | Exclude<R, WorkflowEngine | WorkflowInstance | Workflow.Execution<Name> | Scope.Scope> | Payload[\"Context\"] | Success[\"Context\"] | Error[\"Context\"]>; readonly execute: <Name extends string, Payload extends Workflow.AnyStructSchema, Success extends Schema.Schema.Any, Error extends Schema.Schema.All, const Discard extends boolean = false>(workflow: Workflow.Workflow<Name, Payload, Success, Error>, options: { readonly executionId: string; readonly payload: Payload[\"Type\"]; readonly discard?: Discard | undefined; readonly suspendedRetrySchedule?: Schedule.Schedule<any, unknown> | undefined; }) => Effect.Effect<Discard extends true ? string : Success[\"Type\"], Error[\"Type\"], Payload[\"Context\"] | Success[\"Context\"] | Error[\"Context\"]>; readonly poll: <Name extends string, Payload extends Workflow.AnyStructSchema, Success extends Schema.Schema.Any, Error extends Schema.Schema.All>(workflow: Workflow.Workflow<Name, Payload, Success, Error>, executionId: string) => Effect.Effect<Workflow.Result<Success[\"Type\"], Error[\"Type\"]> | undefined, never, Success[\"Context\"] | Error[\"Context\"]>; readonly interrupt: (workflow: Workflow.Any, executionId: string) => Effect.Effect<void>; readonly resume: (workflow: Workflow.Any, executionId: string) => Effect.Effect<void>; readonly activityExecute: <Success extends Schema.Schema.Any, Error extends Schema.Schema.All, R>(activity: Activity.Activity<Success, Error, R>, attempt: number) => Effect.Effect<Workflow.Result<Success[\"Type\"], Error[\"Type\"]>, never, Success[\"Context\"] | Error[\"Context\"] | R | WorkflowInstance>; readonly deferredResult: <Success extends Schema.Schema.Any, Error extends Schema.Schema.All>(deferred: DurableDeferred.DurableDeferred<Success, Error>) => Effect.Effect<Exit.Exit<Success[\"Type\"], Error[\"Type\"]> | undefined, never, WorkflowInstance>; readonly deferredDone: <Success extends Schema.Schema.Any, Error extends Schema.Schema.All>(deferred: DurableDeferred.DurableDeferred<Success, Error>, options: { readonly workflowName: string; readonly executionId: string; readonly deferredName: string; readonly exit: Exit.Exit<Success[\"Type\"], Error[\"Type\"]>; }) => Effect.Effect<void, never, Success[\"Context\"] | Error[\"Context\"]>; readonly scheduleClock: (workflow: Workflow.Any, options: { readonly executionId: string; readonly clock: DurableClock.DurableClock; }) => Effect.Effect<void>; }, never, Sharding.Sharding | MessageStorage | Scope.Scope>",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ClusterWorkflowEngine.ts#L46"
   },
   {
@@ -318,7 +318,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "Layers",
-    "signature": "declare const layer: Layer.Layer<WorkflowEngine, never, MessageStorage | Sharding.Sharding>",
+    "signature": "declare const layer: Layer.Layer<WorkflowEngine, never, Sharding.Sharding | MessageStorage>",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ClusterWorkflowEngine.ts#L653"
   },
   {
@@ -1378,7 +1378,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "Http App",
-    "signature": "declare const toHttpEffect: Effect.Effect<Effect.Effect<HttpServerResponse, never, Scope | HttpServerRequest>, never, Scope | MessageStorage | Sharding.Sharding | RpcSerialization.RpcSerialization>",
+    "signature": "declare const toHttpEffect: Effect.Effect<Effect.Effect<HttpServerResponse, never, Scope | HttpServerRequest>, never, Sharding.Sharding | MessageStorage | Scope | RpcSerialization.RpcSerialization>",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/HttpRunner.ts#L110"
   },
   {
@@ -1393,7 +1393,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "Http App",
-    "signature": "declare const toHttpEffectWebsocket: Effect.Effect<Effect.Effect<HttpServerResponse, never, Scope | HttpServerRequest>, never, Scope | MessageStorage | Sharding.Sharding | RpcSerialization.RpcSerialization>",
+    "signature": "declare const toHttpEffectWebsocket: Effect.Effect<Effect.Effect<HttpServerResponse, never, Scope | HttpServerRequest>, never, Sharding.Sharding | MessageStorage | Scope | RpcSerialization.RpcSerialization>",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/HttpRunner.ts#L126"
   },
   {
@@ -1408,7 +1408,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "Layers",
-    "signature": "declare const layerClient: Layer.Layer<Sharding.Sharding | Runners.Runners, never, RunnerStorage | ShardingConfig.ShardingConfig | MessageStorage | Runners.RpcClientProtocol | RunnerHealth>",
+    "signature": "declare const layerClient: Layer.Layer<Sharding.Sharding | Runners.Runners, never, MessageStorage | RunnerStorage | ShardingConfig.ShardingConfig | Runners.RpcClientProtocol | RunnerHealth>",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/HttpRunner.ts#L142"
   },
   {
@@ -1423,7 +1423,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "Layers",
-    "signature": "declare const layerHttp: Layer.Layer<Sharding.Sharding | Runners.Runners, never, RunnerStorage | ShardingConfig.ShardingConfig | MessageStorage | RpcSerialization.RpcSerialization | RunnerHealth | HttpClient.HttpClient | HttpServer.HttpServer>",
+    "signature": "declare const layerHttp: Layer.Layer<Sharding.Sharding | Runners.Runners, never, MessageStorage | RunnerStorage | ShardingConfig.ShardingConfig | RpcSerialization.RpcSerialization | RunnerHealth | HttpClient.HttpClient | HttpServer.HttpServer>",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/HttpRunner.ts#L199"
   },
   {
@@ -1438,7 +1438,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "Layers",
-    "signature": "declare const layerHttpClientOnly: Layer.Layer<Sharding.Sharding | Runners.Runners, never, RunnerStorage | ShardingConfig.ShardingConfig | MessageStorage | RpcSerialization.RpcSerialization | HttpClient.HttpClient>",
+    "signature": "declare const layerHttpClientOnly: Layer.Layer<Sharding.Sharding | Runners.Runners, never, MessageStorage | RunnerStorage | ShardingConfig.ShardingConfig | RpcSerialization.RpcSerialization | HttpClient.HttpClient>",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/HttpRunner.ts#L217"
   },
   {
@@ -1453,7 +1453,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "Layers",
-    "signature": "declare const layerWebsocket: Layer.Layer<Sharding.Sharding | Runners.Runners, never, RunnerStorage | ShardingConfig.ShardingConfig | MessageStorage | RpcSerialization.RpcSerialization | RunnerHealth | Socket.WebSocketConstructor | HttpServer.HttpServer>",
+    "signature": "declare const layerWebsocket: Layer.Layer<Sharding.Sharding | Runners.Runners, never, MessageStorage | RunnerStorage | ShardingConfig.ShardingConfig | RpcSerialization.RpcSerialization | RunnerHealth | Socket.WebSocketConstructor | HttpServer.HttpServer>",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/HttpRunner.ts#L233"
   },
   {
@@ -1468,7 +1468,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "Layers",
-    "signature": "declare const layerWebsocketClientOnly: Layer.Layer<Sharding.Sharding | Runners.Runners, never, RunnerStorage | ShardingConfig.ShardingConfig | MessageStorage | RpcSerialization.RpcSerialization | Socket.WebSocketConstructor>",
+    "signature": "declare const layerWebsocketClientOnly: Layer.Layer<Sharding.Sharding | Runners.Runners, never, MessageStorage | RunnerStorage | ShardingConfig.ShardingConfig | RpcSerialization.RpcSerialization | Socket.WebSocketConstructor>",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/HttpRunner.ts#L251"
   },
   {
@@ -2019,6 +2019,22 @@
       "path": "src/index.ts"
     },
     "project": "@effect/cluster",
+    "name": "SingleRunner",
+    "description": "Re-exports all named exports from the \"./SingleRunner.js\" module as `SingleRunner`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as SingleRunner from \"./SingleRunner.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L154"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/cluster",
     "name": "Singleton",
     "description": "Re-exports all named exports from the \"./Singleton.js\" module as `Singleton`.",
     "deprecated": false,
@@ -2026,7 +2042,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "export * as Singleton from \"./Singleton.js\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L154"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L159"
   },
   {
     "_tag": "Export",
@@ -2042,7 +2058,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "export * as SingletonAddress from \"./SingletonAddress.js\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L159"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L164"
   },
   {
     "_tag": "Export",
@@ -2058,7 +2074,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "export * as Snowflake from \"./Snowflake.js\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L164"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L169"
   },
   {
     "_tag": "Export",
@@ -2074,7 +2090,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "export * as SocketRunner from \"./SocketRunner.js\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L169"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L174"
   },
   {
     "_tag": "Export",
@@ -2090,7 +2106,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "export * as SqlMessageStorage from \"./SqlMessageStorage.js\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L174"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L179"
   },
   {
     "_tag": "Export",
@@ -2106,7 +2122,23 @@
     "since": "1.0.0",
     "category": null,
     "signature": "export * as SqlRunnerStorage from \"./SqlRunnerStorage.js\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L179"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L184"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/cluster",
+    "name": "TestRunner",
+    "description": "Re-exports all named exports from the \"./TestRunner.js\" module as `TestRunner`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as TestRunner from \"./TestRunner.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/index.ts#L189"
   },
   {
     "_tag": "Class",
@@ -3099,7 +3131,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "Constructors",
-    "signature": "declare const makePing: Effect.Effect<{ readonly isAlive: (address: RunnerAddress) => Effect.Effect<boolean>; }, never, Scope.Scope | Runners.Runners>",
+    "signature": "declare const makePing: Effect.Effect<{ readonly isAlive: (address: RunnerAddress) => Effect.Effect<boolean>; }, never, Runners.Runners | Scope.Scope>",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/RunnerHealth.ts#L46"
   },
   {
@@ -3221,7 +3253,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "No-op",
-    "signature": "declare const makeNoop: Effect.Effect<{ readonly ping: (address: RunnerAddress) => Effect.Effect<void, RunnerUnavailable>; readonly sendLocal: <R extends Rpc.Any>(options: { readonly message: Message.Outgoing<R>; readonly send: <Rpc extends Rpc.Any>(message: Message.IncomingLocal<Rpc>) => Effect.Effect<void, EntityNotAssignedToRunner | MailboxFull | AlreadyProcessingMessage>; readonly simulateRemoteSerialization: boolean; }) => Effect.Effect<void, EntityNotAssignedToRunner | MailboxFull | AlreadyProcessingMessage | PersistenceError>; readonly send: <R extends Rpc.Any>(options: { readonly address: RunnerAddress; readonly message: Message.Outgoing<R>; }) => Effect.Effect<void, EntityNotAssignedToRunner | RunnerUnavailable | MailboxFull | AlreadyProcessingMessage | PersistenceError>; readonly notify: <R extends Rpc.Any>(options: { readonly address: Option.Option<RunnerAddress>; readonly message: Message.Outgoing<R>; readonly discard: boolean; }) => Effect.Effect<void, PersistenceError>; readonly notifyLocal: <R extends Rpc.Any>(options: { readonly message: Message.Outgoing<R>; readonly notify: (options: Message.IncomingLocal<any>) => Effect.Effect<void, EntityNotAssignedToRunner>; readonly discard: boolean; readonly storageOnly?: boolean | undefined; }) => Effect.Effect<void, PersistenceError>; readonly onRunnerUnavailable: (address: RunnerAddress) => Effect.Effect<void>; }, never, ShardingConfig | Scope | MessageStorage.MessageStorage | Snowflake.Generator>",
+    "signature": "declare const makeNoop: Effect.Effect<{ readonly ping: (address: RunnerAddress) => Effect.Effect<void, RunnerUnavailable>; readonly sendLocal: <R extends Rpc.Any>(options: { readonly message: Message.Outgoing<R>; readonly send: <Rpc extends Rpc.Any>(message: Message.IncomingLocal<Rpc>) => Effect.Effect<void, EntityNotAssignedToRunner | MailboxFull | AlreadyProcessingMessage>; readonly simulateRemoteSerialization: boolean; }) => Effect.Effect<void, EntityNotAssignedToRunner | MailboxFull | AlreadyProcessingMessage | PersistenceError>; readonly send: <R extends Rpc.Any>(options: { readonly address: RunnerAddress; readonly message: Message.Outgoing<R>; }) => Effect.Effect<void, EntityNotAssignedToRunner | RunnerUnavailable | MailboxFull | AlreadyProcessingMessage | PersistenceError>; readonly notify: <R extends Rpc.Any>(options: { readonly address: Option.Option<RunnerAddress>; readonly message: Message.Outgoing<R>; readonly discard: boolean; }) => Effect.Effect<void, PersistenceError>; readonly notifyLocal: <R extends Rpc.Any>(options: { readonly message: Message.Outgoing<R>; readonly notify: (options: Message.IncomingLocal<any>) => Effect.Effect<void, EntityNotAssignedToRunner>; readonly discard: boolean; readonly storageOnly?: boolean | undefined; }) => Effect.Effect<void, PersistenceError>; readonly onRunnerUnavailable: (address: RunnerAddress) => Effect.Effect<void>; }, never, MessageStorage.MessageStorage | ShardingConfig | Scope | Snowflake.Generator>",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Runners.ts#L388"
   },
   {
@@ -3236,7 +3268,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "Layers",
-    "signature": "declare const layerNoop: Layer.Layer<Runners, never, ShardingConfig | MessageStorage.MessageStorage>",
+    "signature": "declare const layerNoop: Layer.Layer<Runners, never, MessageStorage.MessageStorage | ShardingConfig>",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Runners.ts#L403"
   },
   {
@@ -3266,7 +3298,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "constructors",
-    "signature": "declare const makeRpc: Effect.Effect<{ readonly ping: (address: RunnerAddress) => Effect.Effect<void, RunnerUnavailable>; readonly sendLocal: <R extends Rpc.Any>(options: { readonly message: Message.Outgoing<R>; readonly send: <Rpc extends Rpc.Any>(message: Message.IncomingLocal<Rpc>) => Effect.Effect<void, EntityNotAssignedToRunner | MailboxFull | AlreadyProcessingMessage>; readonly simulateRemoteSerialization: boolean; }) => Effect.Effect<void, EntityNotAssignedToRunner | MailboxFull | AlreadyProcessingMessage | PersistenceError>; readonly send: <R extends Rpc.Any>(options: { readonly address: RunnerAddress; readonly message: Message.Outgoing<R>; }) => Effect.Effect<void, EntityNotAssignedToRunner | RunnerUnavailable | MailboxFull | AlreadyProcessingMessage | PersistenceError>; readonly notify: <R extends Rpc.Any>(options: { readonly address: Option.Option<RunnerAddress>; readonly message: Message.Outgoing<R>; readonly discard: boolean; }) => Effect.Effect<void, PersistenceError>; readonly notifyLocal: <R extends Rpc.Any>(options: { readonly message: Message.Outgoing<R>; readonly notify: (options: Message.IncomingLocal<any>) => Effect.Effect<void, EntityNotAssignedToRunner>; readonly discard: boolean; readonly storageOnly?: boolean | undefined; }) => Effect.Effect<void, PersistenceError>; readonly onRunnerUnavailable: (address: RunnerAddress) => Effect.Effect<void>; }, never, ShardingConfig | Scope | MessageStorage.MessageStorage | Snowflake.Generator | RpcClientProtocol>",
+    "signature": "declare const makeRpc: Effect.Effect<{ readonly ping: (address: RunnerAddress) => Effect.Effect<void, RunnerUnavailable>; readonly sendLocal: <R extends Rpc.Any>(options: { readonly message: Message.Outgoing<R>; readonly send: <Rpc extends Rpc.Any>(message: Message.IncomingLocal<Rpc>) => Effect.Effect<void, EntityNotAssignedToRunner | MailboxFull | AlreadyProcessingMessage>; readonly simulateRemoteSerialization: boolean; }) => Effect.Effect<void, EntityNotAssignedToRunner | MailboxFull | AlreadyProcessingMessage | PersistenceError>; readonly send: <R extends Rpc.Any>(options: { readonly address: RunnerAddress; readonly message: Message.Outgoing<R>; }) => Effect.Effect<void, EntityNotAssignedToRunner | RunnerUnavailable | MailboxFull | AlreadyProcessingMessage | PersistenceError>; readonly notify: <R extends Rpc.Any>(options: { readonly address: Option.Option<RunnerAddress>; readonly message: Message.Outgoing<R>; readonly discard: boolean; }) => Effect.Effect<void, PersistenceError>; readonly notifyLocal: <R extends Rpc.Any>(options: { readonly message: Message.Outgoing<R>; readonly notify: (options: Message.IncomingLocal<any>) => Effect.Effect<void, EntityNotAssignedToRunner>; readonly discard: boolean; readonly storageOnly?: boolean | undefined; }) => Effect.Effect<void, PersistenceError>; readonly onRunnerUnavailable: (address: RunnerAddress) => Effect.Effect<void>; }, never, MessageStorage.MessageStorage | ShardingConfig | Scope | Snowflake.Generator | RpcClientProtocol>",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Runners.ts#L478"
   },
   {
@@ -3281,7 +3313,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "Layers",
-    "signature": "declare const layerRpc: Layer.Layer<Runners, never, ShardingConfig | MessageStorage.MessageStorage | RpcClientProtocol>",
+    "signature": "declare const layerRpc: Layer.Layer<Runners, never, MessageStorage.MessageStorage | ShardingConfig | RpcClientProtocol>",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Runners.ts#L608"
   },
   {
@@ -3311,7 +3343,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "Layers",
-    "signature": "declare const layerHandlers: Layer.Layer<Handler<\"Ping\"> | Handler<\"Notify\"> | Handler<\"Effect\"> | Handler<\"Stream\"> | Handler<\"Envelope\">, never, MessageStorage.MessageStorage | Sharding.Sharding>",
+    "signature": "declare const layerHandlers: Layer.Layer<Handler<\"Ping\"> | Handler<\"Notify\"> | Handler<\"Effect\"> | Handler<\"Stream\"> | Handler<\"Envelope\">, never, Sharding.Sharding | MessageStorage.MessageStorage>",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/RunnerServer.ts#L29"
   },
   {
@@ -3327,7 +3359,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "Layers",
-    "signature": "declare const layer: Layer.Layer<never, never, MessageStorage.MessageStorage | Sharding.Sharding | RpcServer.Protocol>",
+    "signature": "declare const layer: Layer.Layer<never, never, Sharding.Sharding | MessageStorage.MessageStorage | RpcServer.Protocol>",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/RunnerServer.ts#L150"
   },
   {
@@ -3343,7 +3375,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "Layers",
-    "signature": "declare const layerWithClients: Layer.Layer<Sharding.Sharding | Runners.Runners, never, RunnerStorage.RunnerStorage | ShardingConfig | MessageStorage.MessageStorage | Runners.RpcClientProtocol | RunnerHealth.RunnerHealth | RpcServer.Protocol>",
+    "signature": "declare const layerWithClients: Layer.Layer<Sharding.Sharding | Runners.Runners, never, MessageStorage.MessageStorage | RunnerStorage.RunnerStorage | ShardingConfig | Runners.RpcClientProtocol | RunnerHealth.RunnerHealth | RpcServer.Protocol>",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/RunnerServer.ts#L165"
   },
   {
@@ -3359,7 +3391,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "Layers",
-    "signature": "declare const layerClientOnly: Layer.Layer<Sharding.Sharding | Runners.Runners, never, RunnerStorage.RunnerStorage | ShardingConfig | MessageStorage.MessageStorage | Runners.RpcClientProtocol>",
+    "signature": "declare const layerClientOnly: Layer.Layer<Sharding.Sharding | Runners.Runners, never, MessageStorage.MessageStorage | RunnerStorage.RunnerStorage | ShardingConfig | Runners.RpcClientProtocol>",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/RunnerServer.ts#L189"
   },
   {
@@ -3525,7 +3557,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "layers",
-    "signature": "declare const layer: Layer.Layer<Sharding, never, RunnerStorage | ShardingConfig | MessageStorage.MessageStorage | Runners | RunnerHealth.RunnerHealth>",
+    "signature": "declare const layer: Layer.Layer<Sharding, never, Runners | MessageStorage.MessageStorage | RunnerStorage | ShardingConfig | RunnerHealth.RunnerHealth>",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Sharding.ts#L1434"
   },
   {
@@ -3696,6 +3728,22 @@
     "category": "models",
     "signature": "type ShardingRegistrationEvent = | EntityRegistered\n  | SingletonRegistered",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ShardingRegistrationEvent.ts#L14"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "SingleRunner.ts",
+      "path": "src/SingleRunner.ts"
+    },
+    "project": "@effect/cluster",
+    "name": "layer",
+    "description": "A sql backed single-node cluster, that can be used for running durable\nentities and workflows.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Layers",
+    "signature": "declare const layer: (options?: { readonly shardingConfig?: Partial<ShardingConfig.ShardingConfig[\"Type\"]> | undefined; readonly runnerStorage?: \"memory\" | \"sql\" | undefined; }) => Layer.Layer<Sharding.Sharding | Runners.Runners | MessageStorage.MessageStorage, ConfigError.ConfigError, SqlClient.SqlClient>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/SingleRunner.ts#L23"
   },
   {
     "_tag": "Function",
@@ -4040,7 +4088,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "Layers",
-    "signature": "declare const layer: Layer.Layer<Sharding.Sharding | Runners.Runners, never, RunnerStorage.RunnerStorage | ShardingConfig | MessageStorage | Runners.RpcClientProtocol | RpcSerialization.RpcSerialization | SocketServer | RunnerHealth>",
+    "signature": "declare const layer: Layer.Layer<Sharding.Sharding | Runners.Runners, never, MessageStorage | RunnerStorage.RunnerStorage | ShardingConfig | Runners.RpcClientProtocol | RpcSerialization.RpcSerialization | SocketServer | RunnerHealth>",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/SocketRunner.ts#L33"
   },
   {
@@ -4055,7 +4103,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "Layers",
-    "signature": "declare const layerClientOnly: Layer.Layer<Sharding.Sharding | Runners.Runners, never, RunnerStorage.RunnerStorage | ShardingConfig | MessageStorage | Runners.RpcClientProtocol>",
+    "signature": "declare const layerClientOnly: Layer.Layer<Sharding.Sharding | Runners.Runners, never, MessageStorage | RunnerStorage.RunnerStorage | ShardingConfig | Runners.RpcClientProtocol>",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/SocketRunner.ts#L52"
   },
   {
@@ -4147,5 +4195,21 @@
     "category": "Layers",
     "signature": "declare const layerWith: (options: { readonly prefix?: string | undefined; }) => Layer.Layer<RunnerStorage.RunnerStorage, SqlError, SqlClient.SqlClient | ShardingConfig.ShardingConfig>",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/SqlRunnerStorage.ts#L659"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "TestRunner.ts",
+      "path": "src/TestRunner.ts"
+    },
+    "project": "@effect/cluster",
+    "name": "layer",
+    "description": "An in-memory cluster that can be used for testing purposes.\n\nMessageStorage is backed by an in-memory driver, and RunnerStorage is backed\nby an in-memory driver.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Layers",
+    "signature": "declare const layer: Layer.Layer<Sharding.Sharding | Runners.Runners | MessageStorage.MessageStorage | MessageStorage.MemoryDriver, never, never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/TestRunner.ts#L21"
   }
 ]

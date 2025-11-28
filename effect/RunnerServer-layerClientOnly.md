@@ -12,7 +12,7 @@ application.
 **Signature**
 
 ```ts
-declare const layerClientOnly: Layer.Layer<Sharding.Sharding | Runners.Runners, never, RunnerStorage.RunnerStorage | ShardingConfig | MessageStorage.MessageStorage | Runners.RpcClientProtocol>
+declare const layerClientOnly: Layer.Layer<Sharding.Sharding | Runners.Runners, never, MessageStorage.MessageStorage | RunnerStorage.RunnerStorage | ShardingConfig | Runners.RpcClientProtocol>
 ```
 
 [Source](https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/RunnerServer.ts#L189)

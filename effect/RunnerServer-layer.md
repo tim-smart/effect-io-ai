@@ -11,7 +11,7 @@ It also responds to `Ping` requests.
 **Signature**
 
 ```ts
-declare const layer: Layer.Layer<never, never, MessageStorage.MessageStorage | Sharding.Sharding | RpcServer.Protocol>
+declare const layer: Layer.Layer<never, never, Sharding.Sharding | MessageStorage.MessageStorage | RpcServer.Protocol>
 ```
 
 [Source](https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/RunnerServer.ts#L150)

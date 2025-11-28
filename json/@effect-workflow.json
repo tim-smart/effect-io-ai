@@ -12,7 +12,7 @@
     "since": "1.0.0",
     "category": "Attempts",
     "signature": "declare class CurrentAttempt",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Activity.ts#L166"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Activity.ts#L175"
   },
   {
     "_tag": "Constant",
@@ -27,7 +27,7 @@
     "since": "1.0.0",
     "category": "Symbols",
     "signature": "declare const TypeId: unique symbol",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Activity.ts#L23"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Activity.ts#L24"
   },
   {
     "_tag": "Constant",
@@ -41,8 +41,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "Error handling",
-    "signature": "declare const retry: { <E, O extends NoExcessProperties<Effect.Retry.Options<E>, O>>(options: O): <A, R>(self: Effect.Effect<A, E, R>) => Effect.Retry.Return<R, E, A, O>; <B, E, R1>(policy: Schedule.Schedule<B, NoInfer<E>, R1>): <A, R>(self: Effect.Effect<A, E, R>) => Effect.Effect<A, E, R1 | R>; <A, E, R, O extends NoExcessProperties<Effect.Retry.Options<E>, O>>(self: Effect.Effect<A, E, R>, options: O): Effect.Retry.Return<R, E, A, O>; <A, E, R, B, R1>(self: Effect.Effect<A, E, R>, policy: Schedule.Schedule<B, NoInfer<E>, R1>): Effect.Effect<A, E, R1 | R>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Activity.ts#L151"
+    "signature": "declare const retry: { <E, O extends Types.NoExcessProperties<Omit<Effect.Retry.Options<E>, \"schedule\">, O>>(options: O): <A, R>(self: Effect.Effect<A, E, R>) => Effect.Retry.Return<R, E, A, O>; <A, E, R, O extends Types.NoExcessProperties<Omit<Effect.Retry.Options<E>, \"schedule\">, O>>(self: Effect.Effect<A, E, R>, options: O): Effect.Retry.Return<R, E, A, O>; }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Activity.ts#L152"
   },
   {
     "_tag": "Constant",
@@ -57,7 +57,7 @@
     "since": "1.0.0",
     "category": "Execution ID",
     "signature": "declare const executionIdWithAttempt: Effect.Effect<string, never, WorkflowInstance>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Activity.ts#L174"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Activity.ts#L183"
   },
   {
     "_tag": "Function",
@@ -72,7 +72,7 @@
     "since": "1.0.0",
     "category": "Constructors",
     "signature": "declare const make: <R, Success extends Schema.Schema.Any = typeof Schema.Void, Error extends Schema.Schema.All = typeof Schema.Never>(options: { readonly name: string; readonly success?: Success | undefined; readonly error?: Error | undefined; readonly execute: Effect.Effect<Success[\"Type\"], Error[\"Type\"], R>; readonly interruptRetryPolicy?: Schedule.Schedule<any, Cause.Cause<unknown>> | undefined; }) => Activity<Success, Error, Exclude<R, WorkflowInstance | WorkflowEngine | Scope>>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Activity.ts#L84"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Activity.ts#L85"
   },
   {
     "_tag": "Function",
@@ -87,7 +87,7 @@
     "since": "1.0.0",
     "category": "Racing",
     "signature": "declare const raceAll: <const Activities extends NonEmptyReadonlyArray<Any>>(name: string, activities: Activities) => Effect.Effect<(Activities[number] extends Activity<infer _A, infer _E, infer _R> ? _A[\"Type\"] : never), (Activities[number] extends Activity<infer _A, infer _E, infer _R> ? _E[\"Type\"] : never), (Activities[number] extends Activity<infer Success, infer Error, infer R> ? Success[\"Context\"] | Error[\"Context\"] | R : never) | WorkflowEngine | WorkflowInstance>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Activity.ts#L188"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Activity.ts#L197"
   },
   {
     "_tag": "Interface",
@@ -102,7 +102,7 @@
     "since": "1.0.0",
     "category": "Models",
     "signature": "export interface Activity<\n  Success extends Schema.Schema.Any = typeof Schema.Void,\n  Error extends Schema.Schema.All = typeof Schema.Never,\n  R = never\n> extends\n  Effect.Effect<\n    Success[\"Type\"],\n    Error[\"Type\"],\n    Success[\"Context\"] | Error[\"Context\"] | R | WorkflowEngine | WorkflowInstance\n  >\n{\n  readonly [TypeId]: TypeId\n  readonly name: string\n  readonly successSchema: Success\n  readonly errorSchema: Error\n  readonly exitSchema: Schema.Schema<\n    Exit.Exit<Success[\"Type\"], Error[\"Type\"]>,\n    Exit.Exit<Success[\"Encoded\"], Error[\"Encoded\"]>,\n    Success[\"Context\"] | Error[\"Context\"]\n  >\n  readonly execute: Effect.Effect<\n    Success[\"Type\"],\n    Error[\"Type\"],\n    Success[\"Context\"] | Error[\"Context\"] | R | Scope | WorkflowEngine | WorkflowInstance\n  >\n  readonly executeEncoded: Effect.Effect<\n    Success[\"Encoded\"],\n    Error[\"Encoded\"],\n    Success[\"Context\"] | Error[\"Context\"] | R | Scope | WorkflowEngine | WorkflowInstance\n  >\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Activity.ts#L35"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Activity.ts#L36"
   },
   {
     "_tag": "Interface",
@@ -117,7 +117,7 @@
     "since": "1.0.0",
     "category": "Models",
     "signature": "export interface Any {\n  readonly [TypeId]: TypeId\n  readonly name: string\n  readonly successSchema: Schema.Schema.Any\n  readonly errorSchema: Schema.Schema.All\n  readonly execute: Effect.Effect<any, any, any>\n  readonly executeEncoded: Effect.Effect<any, any, any>\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Activity.ts#L71"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Activity.ts#L72"
   },
   {
     "_tag": "TypeAlias",
@@ -132,7 +132,7 @@
     "since": "1.0.0",
     "category": "Symbols",
     "signature": "type TypeId = typeof TypeId",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Activity.ts#L29"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Activity.ts#L30"
   },
   {
     "_tag": "Constant",
