@@ -510,6 +510,112 @@
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/DurableDeferred.ts#L129"
   },
   {
+    "_tag": "Constant",
+    "module": {
+      "name": "DurableQueue.ts",
+      "path": "src/DurableQueue.ts"
+    },
+    "project": "@effect/workflow",
+    "name": "TypeId",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Type IDs",
+    "signature": "declare const TypeId: \"~@effect/workflow/DurableQueue\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/DurableQueue.ts#L25"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "DurableQueue.ts",
+      "path": "src/DurableQueue.ts"
+    },
+    "project": "@effect/workflow",
+    "name": "process",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Processing",
+    "signature": "declare const process: <Payload extends Schema.Schema.Any, Success extends Schema.Schema.Any, Error extends Schema.Schema.All>(self: DurableQueue<Payload, Success, Error>, payload: Payload[\"Type\"], options?: { readonly retrySchedule?: Schedule.Schedule<any, PersistedQueue.PersistedQueueError> | undefined; }) => Effect.Effect<Success[\"Type\"], Error[\"Type\"], WorkflowEngine.WorkflowEngine | WorkflowEngine.WorkflowInstance | PersistedQueue.PersistedQueueFactory | Success[\"Context\"] | Error[\"Context\"] | Payload[\"Context\"]>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/DurableQueue.ts#L156"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "DurableQueue.ts",
+      "path": "src/DurableQueue.ts"
+    },
+    "project": "@effect/workflow",
+    "name": "makeWorker",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Worker",
+    "signature": "declare const makeWorker: <Payload extends Schema.Schema.Any, Success extends Schema.Schema.Any, Error extends Schema.Schema.All, R>(self: DurableQueue<Payload, Success, Error>, f: (payload: Payload[\"Type\"]) => Effect.Effect<Success[\"Type\"], Error[\"Type\"], R>, options?: { readonly concurrency?: number | undefined; } | undefined) => Effect.Effect<never, never, WorkflowEngine.WorkflowEngine | PersistedQueue.PersistedQueueFactory | R | Payload[\"Context\"] | Success[\"Context\"] | Error[\"Context\"]>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/DurableQueue.ts#L230"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "DurableQueue.ts",
+      "path": "src/DurableQueue.ts"
+    },
+    "project": "@effect/workflow",
+    "name": "make",
+    "description": "A `DurableQueue` wraps a `PersistedQueue`, providing a way to wait for items\nto finish processing using a `DurableDeferred`.\n\n```ts\nimport { DurableQueue, Workflow } from \"@effect/workflow\"\nimport { Effect, Schema } from \"effect\"\n\n// Define a DurableQueue that can be used to derive workers and offer items for\n// processing.\nconst ApiQueue = DurableQueue.make({\n  name: \"ApiQueue\",\n  payload: {\n    id: Schema.String\n  },\n  success: Schema.Void,\n  error: Schema.Never,\n  idempotencyKey(payload) {\n    return payload.id\n  }\n})\n\nconst MyWorkflow = Workflow.make({\n  name: \"MyWorkflow\",\n  payload: {\n    id: Schema.String\n  },\n  idempotencyKey: ({ id }) => id\n})\n\nconst MyWorkflowLayer = MyWorkflow.toLayer(\n  Effect.fn(function*() {\n    // Add an item to the DurableQueue defined above.\n    //\n    // When the worker has finished processing the item, the workflow will\n    // resume.\n    //\n    yield* DurableQueue.process(ApiQueue, { id: \"api-call-1\" })\n\n    yield* Effect.log(\"Workflow succeeded!\")\n  })\n)\n\n// Define a worker layer that can process items from the DurableQueue.\nconst ApiWorker = DurableQueue.worker(\n  ApiQueue,\n  Effect.fn(function*({ id }) {\n    yield* Effect.log(`Worker processing API call with id: ${id}`)\n  }),\n  { concurrency: 5 } // Process up to 5 items concurrently\n)\n```",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Constructors",
+    "signature": "declare const make: <Payload extends Schema.Schema.Any | Schema.Struct.Fields, Success extends Schema.Schema.Any = typeof Schema.Void, Error extends Schema.Schema.All = typeof Schema.Never>(options: { readonly name: string; readonly payload: Payload; readonly idempotencyKey: (payload: Payload extends Schema.Struct.Fields ? Schema.Struct<Payload>[\"Type\"] : Payload[\"Type\"]) => string; readonly success?: Success | undefined; readonly error?: Error | undefined; }) => DurableQueue<Payload extends Schema.Struct.Fields ? Schema.Struct<Payload> : Payload, Success, Error>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/DurableQueue.ts#L99"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "DurableQueue.ts",
+      "path": "src/DurableQueue.ts"
+    },
+    "project": "@effect/workflow",
+    "name": "worker",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Worker",
+    "signature": "declare const worker: <Payload extends Schema.Schema.Any, Success extends Schema.Schema.Any, Error extends Schema.Schema.All, R>(self: DurableQueue<Payload, Success, Error>, f: (payload: Payload[\"Type\"]) => Effect.Effect<Success[\"Type\"], Error[\"Type\"], R>, options?: { readonly concurrency?: number | undefined; } | undefined) => Layer.Layer<never, never, WorkflowEngine.WorkflowEngine | PersistedQueue.PersistedQueueFactory | R | Payload[\"Context\"] | Success[\"Context\"] | Error[\"Context\"]>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/DurableQueue.ts#L312"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "DurableQueue.ts",
+      "path": "src/DurableQueue.ts"
+    },
+    "project": "@effect/workflow",
+    "name": "DurableQueue",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Models",
+    "signature": "export interface DurableQueue<\n  Payload extends Schema.Schema.Any,\n  Success extends Schema.Schema.Any = typeof Schema.Void,\n  Error extends Schema.Schema.All = typeof Schema.Never\n> {\n  readonly [TypeId]: TypeId\n  readonly name: string\n  readonly payloadSchema: Payload\n  readonly idempotencyKey: (payload: Payload[\"Type\"]) => string\n  readonly deferred: DurableDeferred.DurableDeferred<Success, Error>\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/DurableQueue.ts#L31"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "DurableQueue.ts",
+      "path": "src/DurableQueue.ts"
+    },
+    "project": "@effect/workflow",
+    "name": "TypeId",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Type IDs",
+    "signature": "type TypeId = \"~@effect/workflow/DurableQueue\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/DurableQueue.ts#L19"
+  },
+  {
     "_tag": "Function",
     "module": {
       "name": "DurableRateLimiter.ts",
@@ -579,6 +685,22 @@
       "path": "src/index.ts"
     },
     "project": "@effect/workflow",
+    "name": "DurableQueue",
+    "description": "Re-exports all named exports from the \"./DurableQueue.js\" module as `DurableQueue`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as DurableQueue from \"./DurableQueue.js\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/index.ts#L19"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/workflow",
     "name": "DurableRateLimiter",
     "description": "Re-exports all named exports from the \"./DurableRateLimiter.js\" module as `DurableRateLimiter`.",
     "deprecated": false,
@@ -586,7 +708,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "export * as DurableRateLimiter from \"./DurableRateLimiter.js\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/index.ts#L19"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/index.ts#L24"
   },
   {
     "_tag": "Export",
@@ -602,7 +724,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "export * as Workflow from \"./Workflow.js\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/index.ts#L24"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/index.ts#L29"
   },
   {
     "_tag": "Export",
@@ -618,7 +740,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "export * as WorkflowEngine from \"./WorkflowEngine.js\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/index.ts#L29"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/index.ts#L34"
   },
   {
     "_tag": "Export",
@@ -634,7 +756,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "export * as WorkflowProxy from \"./WorkflowProxy.js\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/index.ts#L34"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/index.ts#L39"
   },
   {
     "_tag": "Export",
@@ -650,7 +772,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "export * as WorkflowProxyServer from \"./WorkflowProxyServer.js\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/index.ts#L39"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/index.ts#L44"
   },
   {
     "_tag": "Class",

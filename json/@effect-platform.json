@@ -5059,7 +5059,7 @@
     "since": "1.0.0",
     "category": "annotations",
     "signature": "declare const AnnotationMultipart: unique symbol",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiSchema.ts#L22"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiSchema.ts#L23"
   },
   {
     "_tag": "Constant",
@@ -5074,7 +5074,7 @@
     "since": "1.0.0",
     "category": "annotations",
     "signature": "declare const AnnotationMultipartStream: unique symbol",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiSchema.ts#L30"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiSchema.ts#L31"
   },
   {
     "_tag": "Constant",
@@ -5089,7 +5089,7 @@
     "since": "1.0.0",
     "category": "annotations",
     "signature": "declare const AnnotationStatus: unique symbol",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiSchema.ts#L38"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiSchema.ts#L39"
   },
   {
     "_tag": "Constant",
@@ -5104,7 +5104,7 @@
     "since": "1.0.0",
     "category": "annotations",
     "signature": "declare const AnnotationEmptyDecodeable: unique symbol",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiSchema.ts#L44"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiSchema.ts#L45"
   },
   {
     "_tag": "Constant",
@@ -5119,7 +5119,7 @@
     "since": "1.0.0",
     "category": "annotations",
     "signature": "declare const AnnotationEncoding: unique symbol",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiSchema.ts#L52"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiSchema.ts#L53"
   },
   {
     "_tag": "Constant",
@@ -5134,7 +5134,7 @@
     "since": "1.0.0",
     "category": "annotations",
     "signature": "declare const AnnotationParam: unique symbol",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiSchema.ts#L58"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiSchema.ts#L59"
   },
   {
     "_tag": "Constant",
@@ -5149,7 +5149,7 @@
     "since": "1.0.0",
     "category": "path params",
     "signature": "declare const param: { <Name extends string>(name: Name): <S extends Schema.Schema.Any | Schema.PropertySignature.Any>(schema: S & ([Schema.Schema.Encoded<S> & {}] extends [string] ? unknown : \"Schema must be encodable to a string\")) => Param<Name, S>; <Name extends string, S extends Schema.Schema.Any | Schema.PropertySignature.Any>(name: Name, schema: S & ([Schema.Schema.Encoded<S> & {}] extends [string] ? unknown : \"Schema must be encodable to a string\")): Param<Name, S>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiSchema.ts#L269"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiSchema.ts#L270"
   },
   {
     "_tag": "Constant",
@@ -5164,7 +5164,7 @@
     "since": "1.0.0",
     "category": "empty response",
     "signature": "declare const asEmpty: { <S extends Schema.Schema.Any>(options: { readonly status: number; readonly decode: LazyArg<Schema.Schema.Type<S>>; }): (self: S) => asEmpty<S>; <S extends Schema.Schema.Any>(self: S, options: { readonly status: number; readonly decode: LazyArg<Schema.Schema.Type<S>>; }): asEmpty<S>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiSchema.ts#L320"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiSchema.ts#L321"
   },
   {
     "_tag": "Constant",
@@ -5179,7 +5179,7 @@
     "since": "1.0.0",
     "category": "empty response",
     "signature": "declare const Created: Created",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiSchema.ts#L366"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiSchema.ts#L367"
   },
   {
     "_tag": "Constant",
@@ -5194,7 +5194,7 @@
     "since": "1.0.0",
     "category": "empty response",
     "signature": "declare const Accepted: Accepted",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiSchema.ts#L380"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiSchema.ts#L381"
   },
   {
     "_tag": "Constant",
@@ -5209,7 +5209,7 @@
     "since": "1.0.0",
     "category": "empty response",
     "signature": "declare const NoContent: NoContent",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiSchema.ts#L394"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiSchema.ts#L395"
   },
   {
     "_tag": "Constant",
@@ -5224,7 +5224,7 @@
     "since": "1.0.0",
     "category": "multipart",
     "signature": "declare const MultipartTypeId: unique symbol",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiSchema.ts#L400"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiSchema.ts#L401"
   },
   {
     "_tag": "Constant",
@@ -5239,7 +5239,7 @@
     "since": "1.0.0",
     "category": "multipart",
     "signature": "declare const MultipartStreamTypeId: unique symbol",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiSchema.ts#L436"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiSchema.ts#L437"
   },
   {
     "_tag": "Constant",
@@ -5254,7 +5254,7 @@
     "since": "1.0.0",
     "category": "encoding",
     "signature": "declare const withEncoding: { <A extends Schema.Schema.Any, Kind extends Encoding[\"kind\"]>(options: { readonly kind: Kind; readonly contentType?: string | undefined; } & Encoding.Validate<A, Kind>): (self: A) => A; <A extends Schema.Schema.Any, Kind extends Encoding[\"kind\"]>(self: A, options: { readonly kind: Kind; readonly contentType?: string | undefined; } & Encoding.Validate<A, Kind>): A; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiSchema.ts#L519"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiSchema.ts#L520"
   },
   {
     "_tag": "Function",
@@ -5269,7 +5269,7 @@
     "since": "1.0.0",
     "category": "annotations",
     "signature": "declare const extractAnnotations: (ast: AST.Annotations) => AST.Annotations",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiSchema.ts#L66"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiSchema.ts#L67"
   },
   {
     "_tag": "Function",
@@ -5284,7 +5284,7 @@
     "since": "1.0.0",
     "category": "annotations",
     "signature": "declare const getStatus: (ast: AST.AST, defaultStatus: number) => number",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiSchema.ts#L103"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiSchema.ts#L104"
   },
   {
     "_tag": "Function",
@@ -5299,7 +5299,7 @@
     "since": "1.0.0",
     "category": "annotations",
     "signature": "declare const getEmptyDecodeable: (ast: AST.AST) => boolean",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiSchema.ts#L110"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiSchema.ts#L111"
   },
   {
     "_tag": "Function",
@@ -5314,7 +5314,7 @@
     "since": "1.0.0",
     "category": "annotations",
     "signature": "declare const getMultipart: (ast: AST.AST) => Multipart_.withLimits.Options | undefined",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiSchema.ts#L117"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiSchema.ts#L118"
   },
   {
     "_tag": "Function",
@@ -5329,7 +5329,7 @@
     "since": "1.0.0",
     "category": "annotations",
     "signature": "declare const getMultipartStream: (ast: AST.AST) => Multipart_.withLimits.Options | undefined",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiSchema.ts#L124"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiSchema.ts#L125"
   },
   {
     "_tag": "Function",
@@ -5344,7 +5344,7 @@
     "since": "1.0.0",
     "category": "annotations",
     "signature": "declare const getEncoding: (ast: AST.AST, fallback?: Encoding) => Encoding",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiSchema.ts#L136"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiSchema.ts#L137"
   },
   {
     "_tag": "Function",
@@ -5359,7 +5359,7 @@
     "since": "1.0.0",
     "category": "annotations",
     "signature": "declare const getParam: (ast: AST.AST | Schema.PropertySignature.AST) => string | undefined",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiSchema.ts#L143"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiSchema.ts#L144"
   },
   {
     "_tag": "Function",
@@ -5374,7 +5374,7 @@
     "since": "1.0.0",
     "category": "annotations",
     "signature": "declare const annotations: <A>(annotations: Schema.Annotations.Schema<NoInfer<A>> & { readonly status?: number | undefined; }) => Schema.Annotations.Schema<A>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiSchema.ts#L152"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiSchema.ts#L153"
   },
   {
     "_tag": "Function",
@@ -5389,7 +5389,7 @@
     "since": "1.0.0",
     "category": "reflection",
     "signature": "declare const isVoid: (ast: AST.AST) => boolean",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiSchema.ts#L168"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiSchema.ts#L169"
   },
   {
     "_tag": "Function",
@@ -5404,7 +5404,7 @@
     "since": "1.0.0",
     "category": "reflection",
     "signature": "declare const getStatusSuccessAST: (ast: AST.AST) => number",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiSchema.ts#L189"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiSchema.ts#L190"
   },
   {
     "_tag": "Function",
@@ -5419,7 +5419,7 @@
     "since": "1.0.0",
     "category": "reflection",
     "signature": "declare const getStatusSuccess: <A extends Schema.Schema.Any>(self: A) => number",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiSchema.ts#L195"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiSchema.ts#L196"
   },
   {
     "_tag": "Function",
@@ -5434,7 +5434,7 @@
     "since": "1.0.0",
     "category": "reflection",
     "signature": "declare const getStatusErrorAST: (ast: AST.AST) => number",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiSchema.ts#L201"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiSchema.ts#L202"
   },
   {
     "_tag": "Function",
@@ -5449,7 +5449,7 @@
     "since": "1.0.0",
     "category": "reflection",
     "signature": "declare const getStatusError: <A extends Schema.Schema.All>(self: A) => number",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiSchema.ts#L207"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiSchema.ts#L208"
   },
   {
     "_tag": "Function",
@@ -5464,7 +5464,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "declare const UnionUnify: <A extends Schema.Schema.All, B extends Schema.Schema.All>(self: A, that: B) => Schema.Schema<A[\"Type\"] | B[\"Type\"], A[\"Encoded\"] | B[\"Encoded\"], A[\"Context\"] | B[\"Context\"]>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiSchema.ts#L244"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiSchema.ts#L245"
   },
   {
     "_tag": "Function",
@@ -5479,7 +5479,7 @@
     "since": "1.0.0",
     "category": "empty response",
     "signature": "declare const Empty: (status: number) => typeof Schema.Void",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiSchema.ts#L306"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiSchema.ts#L307"
   },
   {
     "_tag": "Function",
@@ -5494,7 +5494,7 @@
     "since": "1.0.0",
     "category": "multipart",
     "signature": "declare const Multipart: <S extends Schema.Schema.Any>(self: S, options?: { readonly maxParts?: Option.Option<number> | undefined; readonly maxFieldSize?: FileSystem.SizeInput | undefined; readonly maxFileSize?: Option.Option<FileSystem.SizeInput> | undefined; readonly maxTotalSize?: Option.Option<FileSystem.SizeInput> | undefined; readonly fieldMimeTypes?: ReadonlyArray<string> | undefined; }) => Multipart<S>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiSchema.ts#L421"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiSchema.ts#L422"
   },
   {
     "_tag": "Function",
@@ -5509,7 +5509,7 @@
     "since": "1.0.0",
     "category": "multipart",
     "signature": "declare const MultipartStream: <S extends Schema.Schema.Any>(self: S, options?: { readonly maxParts?: Option.Option<number> | undefined; readonly maxFieldSize?: FileSystem.SizeInput | undefined; readonly maxFileSize?: Option.Option<FileSystem.SizeInput> | undefined; readonly maxTotalSize?: Option.Option<FileSystem.SizeInput> | undefined; readonly fieldMimeTypes?: ReadonlyArray<string> | undefined; }) => MultipartStream<S>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiSchema.ts#L460"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiSchema.ts#L461"
   },
   {
     "_tag": "Function",
@@ -5524,7 +5524,7 @@
     "since": "1.0.0",
     "category": "encoding",
     "signature": "declare const Text: (options?: { readonly contentType?: string; }) => typeof Schema.String",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiSchema.ts#L556"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiSchema.ts#L557"
   },
   {
     "_tag": "Function",
@@ -5539,7 +5539,7 @@
     "since": "1.0.0",
     "category": "encoding",
     "signature": "declare const Uint8Array: (options?: { readonly contentType?: string; }) => typeof Schema.Uint8ArrayFromSelf",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiSchema.ts#L564"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiSchema.ts#L565"
   },
   {
     "_tag": "Function",
@@ -5554,7 +5554,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "declare const deunionize: (schemas: Set<Schema.Schema.Any>, schema: Schema.Schema.Any) => void",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiSchema.ts#L576"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiSchema.ts#L577"
   },
   {
     "_tag": "Function",
@@ -5569,7 +5569,7 @@
     "since": "1.0.0",
     "category": "empty errors",
     "signature": "declare const EmptyError: <Self>() => <const Tag extends string>(options: { readonly tag: Tag; readonly status: number; }) => EmptyErrorClass<Self, Tag>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiSchema.ts#L616"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiSchema.ts#L645"
   },
   {
     "_tag": "Interface",
@@ -5584,7 +5584,7 @@
     "since": "1.0.0",
     "category": "path params",
     "signature": "export interface Param<Name extends string, S extends Schema.Schema.Any | Schema.PropertySignature.Any>\n  extends Schema.Schema<Schema.Schema.Type<S>, Schema.Schema.Encoded<S>, Schema.Schema.Context<S>>\n{\n  readonly [AnnotationParam]: {\n    readonly name: Name\n    readonly schema: S\n  }\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiSchema.ts#L256"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiSchema.ts#L257"
   },
   {
     "_tag": "Interface",
@@ -5599,7 +5599,7 @@
     "since": "1.0.0",
     "category": "empty response",
     "signature": "export interface asEmpty<\n  S extends Schema.Schema.Any\n> extends Schema.transform<typeof Schema.Void, S> {}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiSchema.ts#L312"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiSchema.ts#L313"
   },
   {
     "_tag": "Interface",
@@ -5614,7 +5614,7 @@
     "since": "1.0.0",
     "category": "empty response",
     "signature": "export interface Created extends Void$ {\n  readonly _: unique symbol\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiSchema.ts#L358"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiSchema.ts#L359"
   },
   {
     "_tag": "Interface",
@@ -5629,7 +5629,7 @@
     "since": "1.0.0",
     "category": "empty response",
     "signature": "export interface Accepted extends Void$ {\n  readonly _: unique symbol\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiSchema.ts#L372"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiSchema.ts#L373"
   },
   {
     "_tag": "Interface",
@@ -5644,7 +5644,7 @@
     "since": "1.0.0",
     "category": "empty response",
     "signature": "export interface NoContent extends Void$ {\n  readonly _: unique symbol\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiSchema.ts#L386"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiSchema.ts#L387"
   },
   {
     "_tag": "Interface",
@@ -5659,7 +5659,7 @@
     "since": "1.0.0",
     "category": "multipart",
     "signature": "export interface Multipart<S extends Schema.Schema.Any>\n  extends\n    Schema.Schema<Schema.Schema.Type<S> & Brand<MultipartTypeId>, Schema.Schema.Encoded<S>, Schema.Schema.Context<S>>\n{}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiSchema.ts#L412"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiSchema.ts#L413"
   },
   {
     "_tag": "Interface",
@@ -5674,7 +5674,7 @@
     "since": "1.0.0",
     "category": "multipart",
     "signature": "export interface MultipartStream<S extends Schema.Schema.Any> extends\n  Schema.Schema<\n    Schema.Schema.Type<S> & Brand<MultipartStreamTypeId>,\n    Schema.Schema.Encoded<S>,\n    Schema.Schema.Context<S>\n  >\n{}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiSchema.ts#L448"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiSchema.ts#L449"
   },
   {
     "_tag": "Interface",
@@ -5689,7 +5689,37 @@
     "since": "1.0.0",
     "category": "encoding",
     "signature": "export interface Encoding {\n  readonly kind: \"Json\" | \"UrlParams\" | \"Uint8Array\" | \"Text\"\n  readonly contentType: string\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiSchema.ts#L492"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiSchema.ts#L493"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "HttpApiSchema.ts",
+      "path": "src/HttpApiSchema.ts"
+    },
+    "project": "@effect/platform",
+    "name": "EmptyError",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "empty errors",
+    "signature": "export interface EmptyError<Self, Tag> extends Effect.Effect<never, Self> {\n  readonly _tag: Tag\n  [Unify.typeSymbol]?: unknown\n  [Unify.unifySymbol]?: EmptyErrorUnify<this>\n  [Unify.ignoreSymbol]?: EmptyErrorUnifyIgnore\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiSchema.ts#L609"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "HttpApiSchema.ts",
+      "path": "src/HttpApiSchema.ts"
+    },
+    "project": "@effect/platform",
+    "name": "EmptyErrorUnify",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export interface EmptyErrorUnify<A extends { [Unify.typeSymbol]?: any }> extends Effect.EffectUnify<A> {\n  EmptyError?: () => A[Unify.typeSymbol] extends EmptyError<infer Self, infer _Tag> | infer _ ? Self\n    : never\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiSchema.ts#L620"
   },
   {
     "_tag": "Interface",
@@ -5703,8 +5733,23 @@
     "examples": [],
     "since": "1.0.0",
     "category": "empty errors",
-    "signature": "export interface EmptyErrorClass<Self, Tag> extends Schema.Schema<Self, void> {\n  new(_: void): { readonly _tag: Tag } & Effect.Effect<never, Self>\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiSchema.ts#L608"
+    "signature": "export interface EmptyErrorClass<Self, Tag> extends Schema.Schema<Self, void> {\n  new(_: void): EmptyError<Self, Tag>\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiSchema.ts#L629"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "HttpApiSchema.ts",
+      "path": "src/HttpApiSchema.ts"
+    },
+    "project": "@effect/platform",
+    "name": "EmptyErrorUnifyIgnore",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export interface EmptyErrorUnifyIgnore extends Effect.EffectUnifyIgnore {\n  Effect?: true\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiSchema.ts#L637"
   },
   {
     "_tag": "TypeAlias",
@@ -5719,7 +5764,7 @@
     "since": "1.0.0",
     "category": "multipart",
     "signature": "type MultipartTypeId = typeof MultipartTypeId",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiSchema.ts#L406"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiSchema.ts#L407"
   },
   {
     "_tag": "TypeAlias",
@@ -5734,7 +5779,7 @@
     "since": "1.0.0",
     "category": "multipart",
     "signature": "type MultipartStreamTypeId = typeof MultipartStreamTypeId",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiSchema.ts#L442"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiSchema.ts#L443"
   },
   {
     "_tag": "TypeAlias",
@@ -5749,7 +5794,7 @@
     "since": "1.0.0",
     "category": "encoding",
     "signature": "type Validate<A, Kind> = Kind extends \"Json\" ? {}\n    : Kind extends \"UrlParams\" ? [A[\"Encoded\"]] extends [Readonly<Record<string, string | undefined>>] ? {}\n      : `'UrlParams' kind can only be encoded to 'Record<string, string | undefined>'`\n    : Kind extends \"Uint8Array\" ?\n      [A[\"Encoded\"]] extends [Uint8Array] ? {} : `'Uint8Array' kind can only be encoded to 'Uint8Array'`\n    : Kind extends \"Text\" ? [A[\"Encoded\"]] extends [string] ? {} : `'Text' kind can only be encoded to 'string'`\n    : never",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiSchema.ts#L506"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiSchema.ts#L507"
   },
   {
     "_tag": "Constant",
