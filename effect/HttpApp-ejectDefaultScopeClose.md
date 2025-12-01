@@ -12,6 +12,6 @@ function to eject from the default scope closure.
 declare const ejectDefaultScopeClose: (scope: Scope.Scope) => void
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApp.ts#L133)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApp.ts#L137)
 
 Since v1.0.0

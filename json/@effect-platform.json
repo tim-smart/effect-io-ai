@@ -6052,7 +6052,7 @@
     "since": "1.0.0",
     "category": "fiber refs",
     "signature": "declare const currentPreResponseHandlers: FiberRef.FiberRef<Option.Option<PreResponseHandler>>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApp.ts#L187"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApp.ts#L191"
   },
   {
     "_tag": "Constant",
@@ -6067,7 +6067,7 @@
     "since": "1.0.0",
     "category": "fiber refs",
     "signature": "declare const appendPreResponseHandler: (handler: PreResponseHandler) => Effect.Effect<void>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApp.ts#L194"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApp.ts#L198"
   },
   {
     "_tag": "Constant",
@@ -6082,7 +6082,7 @@
     "since": "1.0.0",
     "category": "fiber refs",
     "signature": "declare const withPreResponseHandler: ((handler: PreResponseHandler) => <A, E, R>(self: HttpApp<A, E, R>) => HttpApp<A, E, R>) & (<A, E, R>(self: HttpApp<A, E, R>, handler: PreResponseHandler) => HttpApp<A, E, R>)",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApp.ts#L201"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApp.ts#L205"
   },
   {
     "_tag": "Constant",
@@ -6097,7 +6097,7 @@
     "since": "1.0.0",
     "category": "conversions",
     "signature": "declare const toWebHandler: <E>(self: Default<E, Scope.Scope>, middleware?: HttpMiddleware | undefined) => (request: Request, context?: Context.Context<never> | undefined) => Promise<Response>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApp.ts#L243"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApp.ts#L247"
   },
   {
     "_tag": "Function",
@@ -6112,7 +6112,7 @@
     "since": "1.0.0",
     "category": "combinators",
     "signature": "declare const toHandled: <E, R, _, EH, RH>(self: Default<E, R>, handleResponse: (request: ServerRequest.HttpServerRequest, response: ServerResponse.HttpServerResponse) => Effect.Effect<_, EH, RH>, middleware?: HttpMiddleware | undefined) => Effect.Effect<void, never, Exclude<R | RH | ServerRequest.HttpServerRequest, Scope.Scope>>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApp.ts#L47"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApp.ts#L48"
   },
   {
     "_tag": "Function",
@@ -6128,7 +6128,7 @@
     "since": "1.0.0",
     "category": "Scope",
     "signature": "declare const ejectDefaultScopeClose: (scope: Scope.Scope) => void",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApp.ts#L133"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApp.ts#L137"
   },
   {
     "_tag": "Function",
@@ -6143,7 +6143,7 @@
     "since": "1.0.0",
     "category": "Scope",
     "signature": "declare const unsafeEjectStreamScope: (response: ServerResponse.HttpServerResponse) => ServerResponse.HttpServerResponse",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApp.ts#L141"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApp.ts#L145"
   },
   {
     "_tag": "Function",
@@ -6158,7 +6158,7 @@
     "since": "1.0.0",
     "category": "conversions",
     "signature": "declare const toWebHandlerRuntime: <R>(runtime: Runtime.Runtime<R>) => <E>(self: Default<E, R | Scope.Scope>, middleware?: HttpMiddleware | undefined) => (request: Request, context?: Context.Context<never> | undefined) => Promise<Response>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApp.ts#L207"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApp.ts#L211"
   },
   {
     "_tag": "Function",
@@ -6173,7 +6173,7 @@
     "since": "1.0.0",
     "category": "conversions",
     "signature": "declare const toWebHandlerLayerWith: <E, R, RE, EX>(layer: Layer.Layer<R, RE>, options: { readonly toHandler: (runtime: Runtime.Runtime<R>) => Effect.Effect<Effect.Effect<ServerResponse.HttpServerResponse, E, R | Scope.Scope | ServerRequest.HttpServerRequest>, EX>; readonly middleware?: HttpMiddleware | undefined; readonly memoMap?: Layer.MemoMap | undefined; }) => { readonly dispose: () => Promise<void>; readonly handler: (request: Request, context?: Context.Context<never> | undefined) => Promise<Response>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApp.ts#L254"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApp.ts#L258"
   },
   {
     "_tag": "Function",
@@ -6188,7 +6188,7 @@
     "since": "1.0.0",
     "category": "conversions",
     "signature": "declare const toWebHandlerLayer: <E, R, RE>(self: Default<E, R | Scope.Scope>, layer: Layer.Layer<R, RE>, options?: { readonly memoMap?: Layer.MemoMap | undefined; readonly middleware?: HttpMiddleware | undefined; }) => { readonly dispose: () => Promise<void>; readonly handler: (request: Request, context?: Context.Context<never> | undefined) => Promise<Response>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApp.ts#L302"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApp.ts#L306"
   },
   {
     "_tag": "TypeAlias",
@@ -6203,7 +6203,7 @@
     "since": "1.0.0",
     "category": "models",
     "signature": "type HttpApp<A, E, R> = Effect.Effect<\n  A,\n  E,\n  R | ServerRequest.HttpServerRequest\n>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApp.ts#L29"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApp.ts#L30"
   },
   {
     "_tag": "TypeAlias",
@@ -6218,7 +6218,7 @@
     "since": "1.0.0",
     "category": "models",
     "signature": "type Default<E, R> = HttpApp<ServerResponse.HttpServerResponse, E, R>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApp.ts#L39"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApp.ts#L40"
   },
   {
     "_tag": "TypeAlias",
@@ -6233,7 +6233,7 @@
     "since": "1.0.0",
     "category": "models",
     "signature": "type PreResponseHandler = (\n  request: ServerRequest.HttpServerRequest,\n  response: ServerResponse.HttpServerResponse\n) => Effect.Effect<ServerResponse.HttpServerResponse, ServerError.ResponseError>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApp.ts#L178"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApp.ts#L182"
   },
   {
     "_tag": "Constant",

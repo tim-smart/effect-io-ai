@@ -3936,7 +3936,7 @@
     "since": "1.0.0",
     "category": "Layers",
     "signature": "declare const layerStore: (options: RedisOptions & { readonly prefix?: string | undefined; readonly pollInterval?: Duration.DurationInput | undefined; readonly lockRefreshInterval?: Duration.DurationInput | undefined; readonly lockExpiration?: Duration.DurationInput | undefined; }) => Layer.Layer<PersistedQueue.PersistedQueueStore, never, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/Redis.ts#L358"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/Redis.ts#L365"
   },
   {
     "_tag": "Function",
@@ -3951,7 +3951,7 @@
     "since": "1.0.0",
     "category": "Layers",
     "signature": "declare const layerStoreConfig: (options: Config.Config.Wrap<RedisOptions & { readonly prefix?: string | undefined; }>) => Layer.Layer<PersistedQueue.PersistedQueueStore, ConfigError, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/Redis.ts#L371"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/Redis.ts#L378"
   },
   {
     "_tag": "Class",
