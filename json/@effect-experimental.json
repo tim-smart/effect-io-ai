@@ -3741,7 +3741,7 @@
     "since": "1.0.0",
     "category": "Factory",
     "signature": "declare class PersistedQueueFactory",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/PersistedQueue.ts#L61"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/PersistedQueue.ts#L66"
   },
   {
     "_tag": "Class",
@@ -3756,7 +3756,7 @@
     "since": "1.0.0",
     "category": "Errors",
     "signature": "declare class PersistedQueueError",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/PersistedQueue.ts#L158"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/PersistedQueue.ts#L171"
   },
   {
     "_tag": "Class",
@@ -3771,7 +3771,7 @@
     "since": "1.0.0",
     "category": "Store",
     "signature": "declare class PersistedQueueStore",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/PersistedQueue.ts#L174"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/PersistedQueue.ts#L187"
   },
   {
     "_tag": "Constant",
@@ -3801,7 +3801,7 @@
     "since": "1.0.0",
     "category": "Factory",
     "signature": "declare const makeFactory: Effect.Effect<{ readonly make: <A, I, R>(options: { readonly name: string; readonly schema: Schema.Schema<A, I, R>; }) => Effect.Effect<PersistedQueue<A, R>>; }, never, PersistedQueueStore>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/PersistedQueue.ts#L88"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/PersistedQueue.ts#L93"
   },
   {
     "_tag": "Constant",
@@ -3816,7 +3816,7 @@
     "since": "1.0.0",
     "category": "Factory",
     "signature": "declare const layer: Layer.Layer<PersistedQueueFactory, never, PersistedQueueStore>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/PersistedQueue.ts#L136"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/PersistedQueue.ts#L149"
   },
   {
     "_tag": "Constant",
@@ -3831,7 +3831,7 @@
     "since": "1.0.0",
     "category": "Errors",
     "signature": "declare const ErrorTypeId: \"~@effect/experimental/PersistedQueue/PersistedQueueError\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/PersistedQueue.ts#L146"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/PersistedQueue.ts#L159"
   },
   {
     "_tag": "Constant",
@@ -3846,7 +3846,7 @@
     "since": "1.0.0",
     "category": "Store",
     "signature": "declare const layerStoreMemory: Layer.Layer<PersistedQueueStore, never, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/PersistedQueue.ts#L198"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/PersistedQueue.ts#L218"
   },
   {
     "_tag": "Function",
@@ -3861,7 +3861,7 @@
     "since": "1.0.0",
     "category": "Accessors",
     "signature": "declare const make: <A, I, R>(options: { readonly name: string; readonly schema: Schema.Schema<A, I, R>; }) => Effect.Effect<PersistedQueue<A, R>, never, PersistedQueueFactory>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/PersistedQueue.ts#L75"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/PersistedQueue.ts#L80"
   },
   {
     "_tag": "Interface",
@@ -3875,7 +3875,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "Models",
-    "signature": "export interface PersistedQueue<in out A, out R = never> {\n  readonly [TypeId]: TypeId\n\n  /**\n   * Adds an element to the queue. Returns the id of the enqueued element.\n   */\n  readonly offer: (value: A) => Effect.Effect<string, PersistedQueueError | ParseResult.ParseError, R>\n\n  /**\n   * Takes an element from the queue.\n   * If the queue is empty, it will wait until an element is available.\n   *\n   * If the returned effect succeeds, the element is marked as processed,\n   * otherwise it will be retried according to the provided options.\n   * ake\n   * By default, max attempts is set to 10.\n   */\n  readonly take: <XA, XE, XR>(\n    f: (value: A, metadata: {\n      readonly id: string\n      readonly attempts: number\n    }) => Effect.Effect<XA, XE, XR>,\n    options?: {\n      readonly maxAttempts?: number | undefined\n    }\n  ) => Effect.Effect<XA, XE | PersistedQueueError | ParseResult.ParseError, R | XR>\n}",
+    "signature": "export interface PersistedQueue<in out A, out R = never> {\n  readonly [TypeId]: TypeId\n\n  /**\n   * Adds an element to the queue. Returns the id of the enqueued element.\n   *\n   * If an element with the same id already exists in the queue, it will not be\n   * added again.\n   */\n  readonly offer: (value: A, options?: {\n    readonly id: string | undefined\n  }) => Effect.Effect<string, PersistedQueueError | ParseResult.ParseError, R>\n\n  /**\n   * Takes an element from the queue.\n   * If the queue is empty, it will wait until an element is available.\n   *\n   * If the returned effect succeeds, the element is marked as processed,\n   * otherwise it will be retried according to the provided options.\n   *\n   * By default, max attempts is set to 10.\n   */\n  readonly take: <XA, XE, XR>(\n    f: (value: A, metadata: {\n      readonly id: string\n      readonly attempts: number\n    }) => Effect.Effect<XA, XE, XR>,\n    options?: {\n      readonly maxAttempts?: number | undefined\n    }\n  ) => Effect.Effect<XA, XE | PersistedQueueError | ParseResult.ParseError, R | XR>\n}",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/PersistedQueue.ts#L29"
   },
   {
@@ -3906,7 +3906,7 @@
     "since": "1.0.0",
     "category": "Errors",
     "signature": "type ErrorTypeId = \"~@effect/experimental/PersistedQueue/PersistedQueueError\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/PersistedQueue.ts#L152"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/PersistedQueue.ts#L165"
   },
   {
     "_tag": "Constant",
@@ -3920,8 +3920,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "Constructors",
-    "signature": "declare const make: (options: CommonRedisOptions & SentinelConnectionOptions & Partial<TcpOptions & IpcOptions> & { disconnectTimeout?: number; tls?: ConnectionOptions; } & { readonly prefix?: string | undefined; readonly pollInterval?: Duration.DurationInput | undefined; readonly lockRefreshInterval?: Duration.DurationInput | undefined; readonly lockExpiration?: Duration.DurationInput | undefined; }) => Effect.Effect<{ readonly offer: (name: string, id: string, element: unknown) => Effect.Effect<void, PersistedQueue.PersistedQueueError>; readonly take: (options: { readonly name: string; readonly maxAttempts: number; }) => Effect.Effect<{ readonly id: string; readonly attempts: number; readonly element: unknown; }, PersistedQueue.PersistedQueueError, Scope>; }, never, Scope>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/Redis.ts#L58"
+    "signature": "declare const make: (options: CommonRedisOptions & SentinelConnectionOptions & Partial<TcpOptions & IpcOptions> & { disconnectTimeout?: number; tls?: ConnectionOptions; } & { readonly prefix?: string | undefined; readonly pollInterval?: Duration.DurationInput | undefined; readonly lockRefreshInterval?: Duration.DurationInput | undefined; readonly lockExpiration?: Duration.DurationInput | undefined; }) => Effect.Effect<{ readonly offer: (options: { readonly name: string; readonly id: string; readonly element: unknown; readonly isCustomId: boolean; }) => Effect.Effect<void, PersistedQueue.PersistedQueueError>; readonly take: (options: { readonly name: string; readonly maxAttempts: number; }) => Effect.Effect<{ readonly id: string; readonly attempts: number; readonly element: unknown; }, PersistedQueue.PersistedQueueError, Scope>; }, never, Scope>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/Redis.ts#L64"
   },
   {
     "_tag": "Function",
@@ -3936,7 +3936,7 @@
     "since": "1.0.0",
     "category": "Layers",
     "signature": "declare const layerStore: (options: RedisOptions & { readonly prefix?: string | undefined; readonly pollInterval?: Duration.DurationInput | undefined; readonly lockRefreshInterval?: Duration.DurationInput | undefined; readonly lockExpiration?: Duration.DurationInput | undefined; }) => Layer.Layer<PersistedQueue.PersistedQueueStore, never, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/Redis.ts#L365"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/Redis.ts#L395"
   },
   {
     "_tag": "Function",
@@ -3951,7 +3951,7 @@
     "since": "1.0.0",
     "category": "Layers",
     "signature": "declare const layerStoreConfig: (options: Config.Config.Wrap<RedisOptions & { readonly prefix?: string | undefined; }>) => Layer.Layer<PersistedQueue.PersistedQueueStore, ConfigError, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/Redis.ts#L378"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/Redis.ts#L408"
   },
   {
     "_tag": "Class",

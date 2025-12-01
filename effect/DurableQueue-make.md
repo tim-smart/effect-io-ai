@@ -61,6 +61,6 @@ const ApiWorker = DurableQueue.worker(
 declare const make: <Payload extends Schema.Schema.Any | Schema.Struct.Fields, Success extends Schema.Schema.Any = typeof Schema.Void, Error extends Schema.Schema.All = typeof Schema.Never>(options: { readonly name: string; readonly payload: Payload; readonly idempotencyKey: (payload: Payload extends Schema.Struct.Fields ? Schema.Struct<Payload>["Type"] : Payload["Type"]) => string; readonly success?: Success | undefined; readonly error?: Error | undefined; }) => DurableQueue<Payload extends Schema.Struct.Fields ? Schema.Struct<Payload> : Payload, Success, Error>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform/src/DurableQueue.ts#L99)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform/src/DurableQueue.ts#L98)
 
 Since v1.0.0
