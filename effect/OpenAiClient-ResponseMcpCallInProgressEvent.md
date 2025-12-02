@@ -11,6 +11,6 @@ Emitted when an MCP tool call is in progress.
 declare class ResponseMcpCallInProgressEvent
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L1383)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L1391)
 
 Since v1.0.0

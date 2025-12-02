@@ -11,6 +11,6 @@ Emitted when a delta is added to a reasoning text.
 declare class ResponseReasoningTextDeltaEvent
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L1124)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L1132)
 
 Since v1.0.0

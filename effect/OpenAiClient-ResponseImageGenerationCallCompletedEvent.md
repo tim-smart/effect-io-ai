@@ -12,6 +12,6 @@ is available.
 declare class ResponseImageGenerationCallCompletedEvent
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L1292)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L1300)
 
 Since v1.0.0

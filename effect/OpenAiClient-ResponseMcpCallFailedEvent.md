@@ -11,6 +11,6 @@ Emitted when an MCP tool call has failed.
 declare class ResponseMcpCallFailedEvent
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L1437)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L1445)
 
 Since v1.0.0

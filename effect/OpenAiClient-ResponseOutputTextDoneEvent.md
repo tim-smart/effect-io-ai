@@ -11,6 +11,6 @@ Emitted when text content is finalized.
 declare class ResponseOutputTextDoneEvent
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L595)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L603)
 
 Since v1.0.0

@@ -15,6 +15,6 @@ You can then manually resume the workflow later with
 declare class SuspendOnFailure
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Workflow.ts#L647)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Workflow.ts#L695)
 
 Since v1.0.0

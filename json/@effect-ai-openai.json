@@ -300,7 +300,7 @@
     "since": "1.0.0",
     "category": "Schemas",
     "signature": "declare class ResponseContentPartDoneEvent",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L491"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L495"
   },
   {
     "_tag": "Class",
@@ -315,7 +315,7 @@
     "since": "1.0.0",
     "category": "Schemas",
     "signature": "declare class LogProbs",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L524"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L532"
   },
   {
     "_tag": "Class",
@@ -331,7 +331,7 @@
     "since": "1.0.0",
     "category": "Schemas",
     "signature": "declare class ResponseOutputTextDeltaEvent",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L556"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L564"
   },
   {
     "_tag": "Class",
@@ -347,7 +347,7 @@
     "since": "1.0.0",
     "category": "Schemas",
     "signature": "declare class ResponseOutputTextDoneEvent",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L595"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L603"
   },
   {
     "_tag": "Class",
@@ -363,7 +363,7 @@
     "since": "1.0.0",
     "category": "Schemas",
     "signature": "declare class ResponseOutputTextAnnotationAddedEvent",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L634"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L642"
   },
   {
     "_tag": "Class",
@@ -379,7 +379,7 @@
     "since": "1.0.0",
     "category": "Schemas",
     "signature": "declare class ResponseRefusalDeltaEvent",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L673"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L681"
   },
   {
     "_tag": "Class",
@@ -395,7 +395,7 @@
     "since": "1.0.0",
     "category": "Schemas",
     "signature": "declare class ResponseRefusalDoneEvent",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L708"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L716"
   },
   {
     "_tag": "Class",
@@ -411,7 +411,7 @@
     "since": "1.0.0",
     "category": "Schemas",
     "signature": "declare class ResponseFunctionCallArgumentsDeltaEvent",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L743"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L751"
   },
   {
     "_tag": "Class",
@@ -427,7 +427,7 @@
     "since": "1.0.0",
     "category": "Schemas",
     "signature": "declare class ResponseFunctionCallArgumentsDoneEvent",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L774"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L782"
   },
   {
     "_tag": "Class",
@@ -443,7 +443,7 @@
     "since": "1.0.0",
     "category": "Schemas",
     "signature": "declare class ResponseFileSearchCallInProgressEvent",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L805"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L813"
   },
   {
     "_tag": "Class",
@@ -459,7 +459,7 @@
     "since": "1.0.0",
     "category": "Schemas",
     "signature": "declare class ResponseFileSearchCallSearchingEvent",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L832"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L840"
   },
   {
     "_tag": "Class",
@@ -475,7 +475,7 @@
     "since": "1.0.0",
     "category": "Schemas",
     "signature": "declare class ResponseFileSearchCallCompletedEvent",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L859"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L867"
   },
   {
     "_tag": "Class",
@@ -491,7 +491,7 @@
     "since": "1.0.0",
     "category": "Schemas",
     "signature": "declare class ResponseWebSearchCallInProgressEvent",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L886"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L894"
   },
   {
     "_tag": "Class",
@@ -507,7 +507,7 @@
     "since": "1.0.0",
     "category": "Schemas",
     "signature": "declare class ResponseWebSearchCallSearchingEvent",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L913"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L921"
   },
   {
     "_tag": "Class",
@@ -523,7 +523,7 @@
     "since": "1.0.0",
     "category": "Schemas",
     "signature": "declare class ResponseWebSearchCallCompletedEvent",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L940"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L948"
   },
   {
     "_tag": "Class",
@@ -538,7 +538,7 @@
     "since": "1.0.0",
     "category": "Schemas",
     "signature": "declare class SummaryPart",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L965"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L973"
   },
   {
     "_tag": "Class",
@@ -554,7 +554,7 @@
     "since": "1.0.0",
     "category": "Schemas",
     "signature": "declare class ResponseReasoningSummaryPartAddedEvent",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L984"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L992"
   },
   {
     "_tag": "Class",
@@ -570,7 +570,7 @@
     "since": "1.0.0",
     "category": "Schemas",
     "signature": "declare class ResponseReasoningSummaryPartDoneEvent",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L1019"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L1027"
   },
   {
     "_tag": "Class",
@@ -586,7 +586,7 @@
     "since": "1.0.0",
     "category": "Schemas",
     "signature": "declare class ResponseReasoningSummaryTextDeltaEvent",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L1054"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L1062"
   },
   {
     "_tag": "Class",
@@ -602,7 +602,7 @@
     "since": "1.0.0",
     "category": "Schemas",
     "signature": "declare class ResponseReasoningSummaryTextDoneEvent",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L1089"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L1097"
   },
   {
     "_tag": "Class",
@@ -618,7 +618,7 @@
     "since": "1.0.0",
     "category": "Schemas",
     "signature": "declare class ResponseReasoningTextDeltaEvent",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L1124"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L1132"
   },
   {
     "_tag": "Class",
@@ -634,7 +634,7 @@
     "since": "1.0.0",
     "category": "Schemas",
     "signature": "declare class ResponseReasoningTextDoneEvent",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L1159"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L1167"
   },
   {
     "_tag": "Class",
@@ -650,7 +650,7 @@
     "since": "1.0.0",
     "category": "Schemas",
     "signature": "declare class ResponseImageGenerationCallInProgressEvent",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L1194"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L1202"
   },
   {
     "_tag": "Class",
@@ -666,7 +666,7 @@
     "since": "1.0.0",
     "category": "Schemas",
     "signature": "declare class ResponseImageGenerationCallGeneratingEvent",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L1224"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L1232"
   },
   {
     "_tag": "Class",
@@ -682,7 +682,7 @@
     "since": "1.0.0",
     "category": "Schemas",
     "signature": "declare class ResponseImageGenerationCallPartialImageEvent",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L1253"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L1261"
   },
   {
     "_tag": "Class",
@@ -698,7 +698,7 @@
     "since": "1.0.0",
     "category": "Schemas",
     "signature": "declare class ResponseImageGenerationCallCompletedEvent",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L1292"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L1300"
   },
   {
     "_tag": "Class",
@@ -714,7 +714,7 @@
     "since": "1.0.0",
     "category": "Schemas",
     "signature": "declare class ResponseMcpCallArgumentsDeltaEvent",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L1320"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L1328"
   },
   {
     "_tag": "Class",
@@ -730,7 +730,7 @@
     "since": "1.0.0",
     "category": "Schemas",
     "signature": "declare class ResponseMcpCallArgumentsDoneEvent",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L1352"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L1360"
   },
   {
     "_tag": "Class",
@@ -746,7 +746,7 @@
     "since": "1.0.0",
     "category": "Schemas",
     "signature": "declare class ResponseMcpCallInProgressEvent",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L1383"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L1391"
   },
   {
     "_tag": "Class",
@@ -762,7 +762,7 @@
     "since": "1.0.0",
     "category": "Schemas",
     "signature": "declare class ResponseMcpCallCompletedEvent",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L1410"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L1418"
   },
   {
     "_tag": "Class",
@@ -778,7 +778,7 @@
     "since": "1.0.0",
     "category": "Schemas",
     "signature": "declare class ResponseMcpCallFailedEvent",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L1437"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L1445"
   },
   {
     "_tag": "Class",
@@ -794,7 +794,7 @@
     "since": "1.0.0",
     "category": "Schemas",
     "signature": "declare class ResponseMcpListToolsInProgressEvent",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L1465"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L1473"
   },
   {
     "_tag": "Class",
@@ -810,7 +810,7 @@
     "since": "1.0.0",
     "category": "Schemas",
     "signature": "declare class ResponseMcpListToolsCompletedEvent",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L1492"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L1500"
   },
   {
     "_tag": "Class",
@@ -826,7 +826,7 @@
     "since": "1.0.0",
     "category": "Schemas",
     "signature": "declare class ResponseMcpListToolsFailedEvent",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L1519"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L1527"
   },
   {
     "_tag": "Class",
@@ -842,7 +842,7 @@
     "since": "1.0.0",
     "category": "Schemas",
     "signature": "declare class ResponseCodeInterpreterCallInProgressEvent",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L1546"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L1554"
   },
   {
     "_tag": "Class",
@@ -858,7 +858,7 @@
     "since": "1.0.0",
     "category": "Schemas",
     "signature": "declare class ResponseCodeInterpreterCallInterpretingEvent",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L1576"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L1584"
   },
   {
     "_tag": "Class",
@@ -874,7 +874,7 @@
     "since": "1.0.0",
     "category": "Schemas",
     "signature": "declare class ResponseCodeInterpreterCallCompletedEvent",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L1606"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L1614"
   },
   {
     "_tag": "Class",
@@ -890,7 +890,7 @@
     "since": "1.0.0",
     "category": "Schemas",
     "signature": "declare class ResponseCodeInterpreterCallCodeDeltaEvent",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L1634"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L1642"
   },
   {
     "_tag": "Class",
@@ -906,7 +906,7 @@
     "since": "1.0.0",
     "category": "Schemas",
     "signature": "declare class ResponseCodeInterpreterCallCodeDoneEvent",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L1666"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L1674"
   },
   {
     "_tag": "Class",
@@ -922,7 +922,7 @@
     "since": "1.0.0",
     "category": "Schemas",
     "signature": "declare class ResponseCustomToolCallInputDeltaEvent",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L1697"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L1705"
   },
   {
     "_tag": "Class",
@@ -938,7 +938,7 @@
     "since": "1.0.0",
     "category": "Schemas",
     "signature": "declare class ResponseCustomToolCallInputDoneEvent",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L1728"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L1736"
   },
   {
     "_tag": "Class",
@@ -954,7 +954,7 @@
     "since": "1.0.0",
     "category": "Schemas",
     "signature": "declare class ResponseErrorEvent",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L1759"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L1767"
   },
   {
     "_tag": "Constant",
@@ -970,7 +970,7 @@
     "since": "1.0.0",
     "category": "Schemas",
     "signature": "declare const ResponseStreamEvent: Schema.Union<[typeof ResponseCreatedEvent, typeof ResponseQueuedEvent, typeof ResponseInProgressEvent, typeof ResponseCompletedEvent, typeof ResponseIncompleteEvent, typeof ResponseFailedEvent, typeof ResponseOutputItemAddedEvent, typeof ResponseOutputItemDoneEvent, typeof ResponseContentPartAddedEvent, typeof ResponseContentPartDoneEvent, typeof ResponseOutputTextDeltaEvent, typeof ResponseOutputTextDoneEvent, typeof ResponseOutputTextAnnotationAddedEvent, typeof ResponseRefusalDeltaEvent, typeof ResponseRefusalDoneEvent, typeof ResponseFunctionCallArgumentsDeltaEvent, typeof ResponseFunctionCallArgumentsDoneEvent, typeof ResponseFileSearchCallInProgressEvent, typeof ResponseFileSearchCallSearchingEvent, typeof ResponseFileSearchCallCompletedEvent, typeof ResponseWebSearchCallInProgressEvent, typeof ResponseWebSearchCallSearchingEvent, typeof ResponseWebSearchCallCompletedEvent, typeof ResponseReasoningSummaryPartAddedEvent, typeof ResponseReasoningSummaryPartDoneEvent, typeof ResponseReasoningSummaryTextDeltaEvent, typeof ResponseReasoningSummaryTextDoneEvent, typeof ResponseReasoningTextDeltaEvent, typeof ResponseReasoningTextDoneEvent, typeof ResponseImageGenerationCallInProgressEvent, typeof ResponseImageGenerationCallGeneratingEvent, typeof ResponseImageGenerationCallPartialImageEvent, typeof ResponseImageGenerationCallCompletedEvent, typeof ResponseMcpCallArgumentsDeltaEvent, typeof ResponseMcpCallArgumentsDoneEvent, typeof ResponseMcpCallInProgressEvent, typeof ResponseMcpCallCompletedEvent, typeof ResponseMcpCallFailedEvent, typeof ResponseMcpListToolsInProgressEvent, typeof ResponseMcpListToolsCompletedEvent, typeof ResponseMcpListToolsFailedEvent, typeof ResponseCodeInterpreterCallInProgressEvent, typeof ResponseCodeInterpreterCallInterpretingEvent, typeof ResponseCodeInterpreterCallCompletedEvent, typeof ResponseCodeInterpreterCallCodeDeltaEvent, typeof ResponseCodeInterpreterCallCodeDoneEvent, typeof ResponseCustomToolCallInputDeltaEvent, typeof ResponseCustomToolCallInputDoneEvent, typeof ResponseErrorEvent]>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L1790"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L1798"
   },
   {
     "_tag": "Function",
@@ -1061,7 +1061,7 @@
     "since": "1.0.0",
     "category": "Models",
     "signature": "type ResponseStreamEvent = typeof ResponseStreamEvent.Type",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L1898"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L1906"
   },
   {
     "_tag": "Class",
@@ -1592,7 +1592,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "Tools",
-    "signature": "declare const FileSearch: <Mode extends Tool.FailureMode | undefined = undefined>(args: { readonly vector_store_ids: ReadonlyArray<string>; readonly max_num_results?: number | null | undefined; readonly ranking_options?: { readonly ranker?: \"auto\" | \"default-2024-11-15\" | null | undefined; readonly score_threshold?: number | null | undefined; } | null | undefined; readonly filters?: { readonly key: string; readonly value: string | number | boolean; readonly type: \"eq\" | \"ne\" | \"gt\" | \"gte\" | \"lt\" | \"lte\"; } | { readonly type: \"and\" | \"or\"; readonly filters: ReadonlyArray<{ readonly key: string; readonly value: string | number | boolean; readonly type: \"eq\" | \"ne\" | \"gt\" | \"gte\" | \"lt\" | \"lte\"; }>; } | null | undefined; }) => Tool.ProviderDefined<\"OpenAiFileSearch\", { readonly args: Schema.Struct<{ readonly vector_store_ids: Schema.Array$<typeof Schema.String>; readonly max_num_results: Schema.optionalWith<typeof Schema.Int, { nullable: true; }>; readonly ranking_options: Schema.optionalWith<typeof Generated.RankingOptions, { nullable: true; }>; readonly filters: Schema.optionalWith<typeof Generated.Filters, { nullable: true; }>; }>; readonly parameters: Schema.Struct<{}>; readonly success: Schema.SchemaClass<{ readonly status: \"in_progress\" | \"searching\" | \"completed\" | \"incomplete\" | \"failed\"; readonly queries: ReadonlyArray<string>; readonly results?: ReadonlyArray<{ readonly file_id?: string | undefined; readonly text?: string | undefined; readonly filename?: string | undefined; readonly attributes?: { readonly [x: string]: unknown; } | undefined; readonly score?: number | undefined; }> | undefined; }, { readonly status: \"in_progress\" | \"searching\" | \"completed\" | \"incomplete\" | \"failed\"; readonly queries: ReadonlyArray<string>; readonly results?: ReadonlyArray<{ readonly file_id?: string | null | undefined; readonly text?: string | null | undefined; readonly filename?: string | null | undefined; readonly attributes?: { readonly [x: string]: unknown; } | null | undefined; readonly score?: number | null | undefined; }> | null | undefined; }, never>; readonly failure: typeof Schema.Never; readonly failureMode: Mode extends undefined ? \"error\" : Mode; }, false>",
+    "signature": "declare const FileSearch: <Mode extends Tool.FailureMode | undefined = undefined>(args: { readonly vector_store_ids: ReadonlyArray<string>; readonly max_num_results?: number | null | undefined; readonly ranking_options?: { readonly ranker?: \"auto\" | \"default-2024-11-15\" | null | undefined; readonly score_threshold?: number | null | undefined; readonly hybrid_search?: { readonly embedding_weight: number; readonly text_weight: number; } | null | undefined; } | null | undefined; readonly filters?: { readonly key: string; readonly value: string | number | boolean | ReadonlyArray<string | number>; readonly type: \"eq\" | \"ne\" | \"gt\" | \"gte\" | \"lt\" | \"lte\"; } | { readonly type: \"and\" | \"or\"; readonly filters: ReadonlyArray<{ readonly key: string; readonly value: string | number | boolean | ReadonlyArray<string | number>; readonly type: \"eq\" | \"ne\" | \"gt\" | \"gte\" | \"lt\" | \"lte\"; }>; } | null | undefined; }) => Tool.ProviderDefined<\"OpenAiFileSearch\", { readonly args: Schema.Struct<{ readonly vector_store_ids: Schema.Array$<typeof Schema.String>; readonly max_num_results: Schema.optionalWith<typeof Schema.Int, { nullable: true; }>; readonly ranking_options: Schema.optionalWith<typeof Generated.RankingOptions, { nullable: true; }>; readonly filters: Schema.optionalWith<typeof Generated.Filters, { nullable: true; }>; }>; readonly parameters: Schema.Struct<{}>; readonly success: Schema.SchemaClass<{ readonly status: \"in_progress\" | \"searching\" | \"completed\" | \"incomplete\" | \"failed\"; readonly queries: ReadonlyArray<string>; readonly results?: ReadonlyArray<{ readonly file_id?: string | undefined; readonly text?: string | undefined; readonly filename?: string | undefined; readonly attributes?: { readonly [x: string]: unknown; } | undefined; readonly score?: number | undefined; }> | undefined; }, { readonly status: \"in_progress\" | \"searching\" | \"completed\" | \"incomplete\" | \"failed\"; readonly queries: ReadonlyArray<string>; readonly results?: ReadonlyArray<{ readonly file_id?: string | null | undefined; readonly text?: string | null | undefined; readonly filename?: string | null | undefined; readonly attributes?: { readonly [x: string]: unknown; } | null | undefined; readonly score?: number | null | undefined; }> | null | undefined; }, never>; readonly failure: typeof Schema.Never; readonly failureMode: Mode extends undefined ? \"error\" : Mode; }, false>",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiTool.ts#L50"
   },
   {
@@ -1607,7 +1607,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "Tools",
-    "signature": "declare const WebSearch: <Mode extends Tool.FailureMode | undefined = undefined>(args: { readonly filters?: { readonly allowed_domains?: ReadonlyArray<string> | null | undefined; } | null | undefined; readonly user_location?: { readonly type?: \"approximate\" | null | undefined; readonly country?: string | null | undefined; readonly region?: string | null | undefined; readonly city?: string | null | undefined; readonly timezone?: string | null | undefined; } | null | undefined; readonly search_context_size?: \"low\" | \"medium\" | \"high\" | null | undefined; }) => Tool.ProviderDefined<\"OpenAiWebSearch\", { readonly args: Schema.Struct<{ readonly filters: Schema.optionalWith<Schema.Struct<{ allowed_domains: Schema.optionalWith<Schema.Array$<typeof Schema.String>, { nullable: true; default: () => readonly []; }>; }>, { nullable: true; }>; readonly user_location: Schema.optionalWith<typeof Generated.WebSearchApproximateLocation, { nullable: true; }>; readonly search_context_size: Schema.optionalWith<typeof Generated.WebSearchToolSearchContextSize, { nullable: true; default: () => \"medium\"; }>; }>; readonly parameters: Schema.Struct<{ action: Schema.Union<[typeof Generated.WebSearchActionSearch, typeof Generated.WebSearchActionOpenPage, typeof Generated.WebSearchActionFind]>; }>; readonly success: Schema.Struct<{ status: typeof Generated.WebSearchToolCallStatus; }>; readonly failure: typeof Schema.Never; readonly failureMode: Mode extends undefined ? \"error\" : Mode; }, false>",
+    "signature": "declare const WebSearch: <Mode extends Tool.FailureMode | undefined = undefined>(args: { readonly filters?: { readonly allowed_domains?: ReadonlyArray<string> | null | undefined; } | null | undefined; readonly user_location?: { readonly type?: \"approximate\" | null | undefined; readonly country?: string | null | undefined; readonly region?: string | null | undefined; readonly city?: string | null | undefined; readonly timezone?: string | null | undefined; } | null | undefined; readonly search_context_size?: \"low\" | \"medium\" | \"high\" | null | undefined; }) => Tool.ProviderDefined<\"OpenAiWebSearch\", { readonly args: Schema.Struct<{ readonly filters: Schema.optionalWith<Schema.Struct<{ allowed_domains: Schema.optionalWith<Schema.Array$<typeof Schema.String>, { nullable: true; }>; }>, { nullable: true; }>; readonly user_location: Schema.optionalWith<Schema.Struct<{ type: Schema.optionalWith<Schema.Literal<[\"approximate\"]>, { nullable: true; default: () => \"approximate\"; }>; country: Schema.optionalWith<typeof Schema.String, { nullable: true; }>; region: Schema.optionalWith<typeof Schema.String, { nullable: true; }>; city: Schema.optionalWith<typeof Schema.String, { nullable: true; }>; timezone: Schema.optionalWith<typeof Schema.String, { nullable: true; }>; }>, { nullable: true; }>; readonly search_context_size: Schema.optionalWith<typeof Generated.WebSearchToolSearchContextSize, { nullable: true; default: () => \"medium\"; }>; }>; readonly parameters: Schema.Struct<{ action: Schema.Union<[typeof Generated.WebSearchActionSearch, typeof Generated.WebSearchActionOpenPage, typeof Generated.WebSearchActionFind]>; }>; readonly success: Schema.Struct<{ status: typeof Generated.WebSearchToolCallStatus; }>; readonly failure: typeof Schema.Never; readonly failureMode: Mode extends undefined ? \"error\" : Mode; }, false>",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiTool.ts#L62"
   },
   {
@@ -1622,7 +1622,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "Tools",
-    "signature": "declare const WebSearchPreview: <Mode extends Tool.FailureMode | undefined = undefined>(args: { readonly user_location?: { readonly type: \"approximate\"; readonly country?: string | null | undefined; readonly region?: string | null | undefined; readonly city?: string | null | undefined; readonly timezone?: string | null | undefined; } | null | undefined; readonly search_context_size?: \"low\" | \"medium\" | \"high\" | null | undefined; }) => Tool.ProviderDefined<\"OpenAiWebSearchPreview\", { readonly args: Schema.Struct<{ readonly user_location: Schema.optionalWith<typeof Generated.ApproximateLocation, { nullable: true; }>; readonly search_context_size: Schema.optionalWith<typeof Generated.WebSearchPreviewToolSearchContextSize, { nullable: true; }>; }>; readonly parameters: Schema.Struct<{ action: Schema.Union<[typeof Generated.WebSearchActionSearch, typeof Generated.WebSearchActionOpenPage, typeof Generated.WebSearchActionFind]>; }>; readonly success: Schema.Struct<{ status: typeof Generated.WebSearchToolCallStatus; }>; readonly failure: typeof Schema.Never; readonly failureMode: Mode extends undefined ? \"error\" : Mode; }, false>",
+    "signature": "declare const WebSearchPreview: <Mode extends Tool.FailureMode | undefined = undefined>(args: { readonly user_location?: { readonly type: \"approximate\"; readonly country?: string | null | undefined; readonly region?: string | null | undefined; readonly city?: string | null | undefined; readonly timezone?: string | null | undefined; } | null | undefined; readonly search_context_size?: \"low\" | \"medium\" | \"high\" | null | undefined; }) => Tool.ProviderDefined<\"OpenAiWebSearchPreview\", { readonly args: Schema.Struct<{ readonly user_location: Schema.optionalWith<typeof Generated.ApproximateLocation, { nullable: true; }>; readonly search_context_size: Schema.optionalWith<typeof Generated.SearchContextSize, { nullable: true; }>; }>; readonly parameters: Schema.Struct<{ action: Schema.Union<[typeof Generated.WebSearchActionSearch, typeof Generated.WebSearchActionOpenPage, typeof Generated.WebSearchActionFind]>; }>; readonly success: Schema.Struct<{ status: typeof Generated.WebSearchToolCallStatus; }>; readonly failure: typeof Schema.Never; readonly failureMode: Mode extends undefined ? \"error\" : Mode; }, false>",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiTool.ts#L83"
   }
 ]

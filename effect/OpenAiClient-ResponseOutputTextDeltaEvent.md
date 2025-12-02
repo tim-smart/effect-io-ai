@@ -11,6 +11,6 @@ Emitted when there is an additional text delta.
 declare class ResponseOutputTextDeltaEvent
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L556)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L564)
 
 Since v1.0.0

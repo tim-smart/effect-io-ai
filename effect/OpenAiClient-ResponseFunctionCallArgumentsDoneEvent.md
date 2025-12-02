@@ -11,6 +11,6 @@ Emitted when function-call arguments are finalized.
 declare class ResponseFunctionCallArgumentsDoneEvent
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L774)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L782)
 
 Since v1.0.0

@@ -818,7 +818,7 @@
     "since": "1.0.0",
     "category": "Annotations",
     "signature": "declare class CaptureDefects",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Workflow.ts#L633"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Workflow.ts#L681"
   },
   {
     "_tag": "Class",
@@ -834,7 +834,7 @@
     "since": "1.0.0",
     "category": "Annotations",
     "signature": "declare class SuspendOnFailure",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Workflow.ts#L647"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Workflow.ts#L695"
   },
   {
     "_tag": "Constant",
@@ -873,6 +873,37 @@
       "path": "src/Workflow.ts"
     },
     "project": "@effect/workflow",
+    "name": "scope",
+    "description": "Accesses the workflow scope.\n\nThe workflow scope is only closed when the workflow execution fully\ncompletes.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Scope",
+    "signature": "declare const scope: Effect.Effect<Scope.Scope, never, WorkflowInstance>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Workflow.ts#L592"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Workflow.ts",
+      "path": "src/Workflow.ts"
+    },
+    "project": "@effect/workflow",
+    "name": "addFinalizer",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Scope",
+    "signature": "declare const addFinalizer: <R>(f: (exit: Exit.Exit<unknown, unknown>) => Effect.Effect<void, never, R>) => Effect.Effect<void, never, WorkflowInstance | R>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Workflow.ts#L616"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Workflow.ts",
+      "path": "src/Workflow.ts"
+    },
+    "project": "@effect/workflow",
     "name": "withCompensation",
     "description": "Add compensation logic to an effect inside a Workflow. The compensation finalizer will be\ncalled if the entire workflow fails, allowing you to perform cleanup or\nother actions based on the success value and the cause of the workflow failure.\n\nNOTE: Compensation will not work for nested activities. Compensation\nfinalizers are only registered for top-level effects in the workflow.",
     "deprecated": false,
@@ -880,7 +911,7 @@
     "since": "1.0.0",
     "category": "Compensation",
     "signature": "declare const withCompensation: { <A, R2>(compensation: (value: A, cause: Cause.Cause<unknown>) => Effect.Effect<void, never, R2>): <E, R>(effect: Effect.Effect<A, E, R>) => Effect.Effect<A, E, R | R2 | WorkflowInstance | Scope.Scope>; <A, E, R, R2>(effect: Effect.Effect<A, E, R>, compensation: (value: A, cause: Cause.Cause<unknown>) => Effect.Effect<void, never, R2>): Effect.Effect<A, E, R | R2 | WorkflowInstance | Scope.Scope>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Workflow.ts#L586"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Workflow.ts#L641"
   },
   {
     "_tag": "Function",
@@ -970,7 +1001,23 @@
     "since": "1.0.0",
     "category": "Result",
     "signature": "declare const wrapActivityResult: <A, E, R>(effect: Effect.Effect<A, E, R>, isSuspend: (value: A) => boolean) => Effect.Effect<A, E, R | WorkflowInstance>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Workflow.ts#L548"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Workflow.ts#L556"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Workflow.ts",
+      "path": "src/Workflow.ts"
+    },
+    "project": "@effect/workflow",
+    "name": "provideScope",
+    "description": "Provides the workflow scope to the given effect.\n\nThe workflow scope is only closed when the workflow execution fully\ncompletes.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Scope",
+    "signature": "declare const provideScope: <A, E, R>(effect: Effect.Effect<A, E, R>) => Effect.Effect<A, E, Exclude<R, Scope.Scope> | WorkflowInstance>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Workflow.ts#L607"
   },
   {
     "_tag": "Function",
@@ -985,7 +1032,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "declare const suspend: (instance: WorkflowInstance[\"Type\"]) => Effect.Effect<never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Workflow.ts#L617"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Workflow.ts#L665"
   },
   {
     "_tag": "Interface",
@@ -1243,7 +1290,7 @@
     "since": "1.0.0",
     "category": "In-memory",
     "signature": "declare const layerMemory: Layer.Layer<WorkflowEngine, never, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/WorkflowEngine.ts#L462"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/WorkflowEngine.ts#L468"
   },
   {
     "_tag": "Function",
@@ -1258,7 +1305,7 @@
     "since": "4.0.0",
     "category": "Constructors",
     "signature": "declare const makeUnsafe: (options: Encoded) => WorkflowEngine[\"Type\"]",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/WorkflowEngine.ts#L311"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/WorkflowEngine.ts#L317"
   },
   {
     "_tag": "Interface",
@@ -1273,7 +1320,7 @@
     "since": "4.0.0",
     "category": "Encoded",
     "signature": "export interface Encoded {\n  readonly register: (\n    workflow: Workflow.Any,\n    execute: (\n      payload: object,\n      executionId: string\n    ) => Effect.Effect<unknown, unknown, WorkflowInstance | WorkflowEngine>\n  ) => Effect.Effect<void, never, Scope.Scope>\n  readonly execute: <const Discard extends boolean>(\n    workflow: Workflow.Any,\n    options: {\n      readonly executionId: string\n      readonly payload: object\n      readonly discard: Discard\n      readonly parent?: WorkflowInstance[\"Type\"] | undefined\n    }\n  ) => Effect.Effect<\n    Discard extends true ? void : Workflow.Result<unknown, unknown>\n  >\n  readonly poll: (\n    workflow: Workflow.Any,\n    executionId: string\n  ) => Effect.Effect<Workflow.Result<unknown, unknown> | undefined>\n  readonly interrupt: (\n    workflow: Workflow.Any,\n    executionId: string\n  ) => Effect.Effect<void>\n  readonly resume: (\n    workflow: Workflow.Any,\n    executionId: string\n  ) => Effect.Effect<void>\n  readonly activityExecute: (\n    activity: Activity.Any,\n    attempt: number\n  ) => Effect.Effect<\n    Workflow.Result<unknown, unknown>,\n    never,\n    WorkflowInstance\n  >\n  readonly deferredResult: (\n    deferred: DurableDeferred.Any\n  ) => Effect.Effect<\n    Exit.Exit<unknown, unknown> | undefined,\n    never,\n    WorkflowInstance\n  >\n  readonly deferredDone: (options: {\n    readonly workflowName: string\n    readonly executionId: string\n    readonly deferredName: string\n    readonly exit: Exit.Exit<unknown, unknown>\n  }) => Effect.Effect<void>\n  readonly scheduleClock: (\n    workflow: Workflow.Any,\n    options: {\n      readonly executionId: string\n      readonly clock: DurableClock\n    }\n  ) => Effect.Effect<void>\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/WorkflowEngine.ts#L246"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/WorkflowEngine.ts#L252"
   },
   {
     "_tag": "Function",

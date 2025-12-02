@@ -11,6 +11,6 @@ Emitted when a content part is done.
 declare class ResponseContentPartDoneEvent
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L491)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L495)
 
 Since v1.0.0

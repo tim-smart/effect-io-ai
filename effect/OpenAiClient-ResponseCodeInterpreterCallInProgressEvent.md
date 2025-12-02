@@ -11,6 +11,6 @@ Emitted when a code interpreter call is in progress.
 declare class ResponseCodeInterpreterCallInProgressEvent
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L1546)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L1554)
 
 Since v1.0.0

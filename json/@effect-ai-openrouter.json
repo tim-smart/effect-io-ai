@@ -85,13 +85,13 @@
       "path": "src/OpenRouterClient.ts"
     },
     "project": "@effect/ai-openrouter",
-    "name": "ChatCompletionToolCallDelta",
+    "name": "ChatStreamingMessageToolCall",
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "Schemas",
-    "signature": "declare class ChatCompletionToolCallDelta",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openrouter/src/OpenRouterClient.ts#L330"
+    "signature": "declare class ChatStreamingMessageToolCall",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openrouter/src/OpenRouterClient.ts#L311"
   },
   {
     "_tag": "Class",
@@ -100,13 +100,13 @@
       "path": "src/OpenRouterClient.ts"
     },
     "project": "@effect/ai-openrouter",
-    "name": "ChatCompletionStreamDelta",
+    "name": "ChatStreamingMessageChunk",
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "Schemas",
-    "signature": "declare class ChatCompletionStreamDelta",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openrouter/src/OpenRouterClient.ts#L346"
+    "signature": "declare class ChatStreamingMessageChunk",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openrouter/src/OpenRouterClient.ts#L327"
   },
   {
     "_tag": "Class",
@@ -115,13 +115,13 @@
       "path": "src/OpenRouterClient.ts"
     },
     "project": "@effect/ai-openrouter",
-    "name": "ChatCompletionStreamDeltaEvent",
+    "name": "ChatStreamingChoice",
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "Schemas",
-    "signature": "declare class ChatCompletionStreamDeltaEvent",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openrouter/src/OpenRouterClient.ts#L362"
+    "signature": "declare class ChatStreamingChoice",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openrouter/src/OpenRouterClient.ts#L344"
   },
   {
     "_tag": "Class",
@@ -130,13 +130,13 @@
       "path": "src/OpenRouterClient.ts"
     },
     "project": "@effect/ai-openrouter",
-    "name": "ChatCompletionStreamErrorEvent",
+    "name": "ChatStreamingResponseChunk",
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "Schemas",
-    "signature": "declare class ChatCompletionStreamErrorEvent",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openrouter/src/OpenRouterClient.ts#L383"
+    "signature": "declare class ChatStreamingResponseChunk",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openrouter/src/OpenRouterClient.ts#L358"
   },
   {
     "_tag": "Constant",
@@ -154,21 +154,6 @@
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openrouter/src/OpenRouterClient.ts#L66"
   },
   {
-    "_tag": "Constant",
-    "module": {
-      "name": "OpenRouterClient.ts",
-      "path": "src/OpenRouterClient.ts"
-    },
-    "project": "@effect/ai-openrouter",
-    "name": "ChatCompletionStreamEvent",
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "Schemas",
-    "signature": "declare const ChatCompletionStreamEvent: Schema.Union<[typeof ChatCompletionStreamDeltaEvent, typeof ChatCompletionStreamErrorEvent]>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openrouter/src/OpenRouterClient.ts#L393"
-  },
-  {
     "_tag": "Function",
     "module": {
       "name": "OpenRouterClient.ts",
@@ -181,7 +166,7 @@
     "since": "1.0.0",
     "category": "Layers",
     "signature": "declare const layer: (options: { readonly apiKey?: Redacted.Redacted | undefined; readonly apiUrl?: string | undefined; readonly referrer?: string | undefined; readonly title?: string | undefined; readonly transformClient?: ((client: HttpClient.HttpClient) => HttpClient.HttpClient) | undefined; }) => Layer.Layer<OpenRouterClient, never, HttpClient.HttpClient>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openrouter/src/OpenRouterClient.ts#L246"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openrouter/src/OpenRouterClient.ts#L227"
   },
   {
     "_tag": "Function",
@@ -196,7 +181,7 @@
     "since": "1.0.0",
     "category": "Layers",
     "signature": "declare const layerConfig: (options: { readonly apiKey?: Config.Config<Redacted.Redacted> | undefined; readonly apiUrl?: Config.Config<string> | undefined; readonly referrer?: Config.Config<string> | undefined; readonly title?: Config.Config<string> | undefined; readonly transformClient?: ((client: HttpClient.HttpClient) => HttpClient.HttpClient) | undefined; }) => Layer.Layer<OpenRouterClient, ConfigError, HttpClient.HttpClient>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openrouter/src/OpenRouterClient.ts#L285"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openrouter/src/OpenRouterClient.ts#L266"
   },
   {
     "_tag": "Interface",
@@ -210,23 +195,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "Models",
-    "signature": "export interface Service {\n  /**\n   * The underlying HTTP client capable of communicating with the OpenRouter API.\n   *\n   * This client is pre-configured with authentication, base URL, and standard\n   * headers required for OpenRouter API communication. It provides direct access\n   * to the generated OpenRouter API client for operations not covered by the\n   * higher-level methods.\n   *\n   * Use this when you need to:\n   * - Access provider-specific API endpoints not available through the AI SDK\n   * - Implement custom request/response handling\n   * - Use OpenRouter API features not yet supported by the Effect AI abstractions\n   * - Perform batch operations or non-streaming requests\n   *\n   * The client automatically handles authentication and follows OpenRouter's\n   * API conventions for request formatting and error handling.\n   */\n  readonly client: Generated.Client\n\n  readonly createChatCompletion: (\n    options: typeof Generated.ChatCompletionCreateParams.Encoded\n  ) => Effect.Effect<Generated.ChatCompletion, AiError.AiError>\n\n  readonly createChatCompletionStream: (\n    options: Omit<typeof Generated.ChatCompletionCreateParams.Encoded, \"stream\">\n  ) => Stream.Stream<ChatCompletionStreamEvent, AiError.AiError>\n}",
+    "signature": "export interface Service {\n  /**\n   * The underlying HTTP client capable of communicating with the OpenRouter API.\n   *\n   * This client is pre-configured with authentication, base URL, and standard\n   * headers required for OpenRouter API communication. It provides direct access\n   * to the generated OpenRouter API client for operations not covered by the\n   * higher-level methods.\n   *\n   * Use this when you need to:\n   * - Access provider-specific API endpoints not available through the AI SDK\n   * - Implement custom request/response handling\n   * - Use OpenRouter API features not yet supported by the Effect AI abstractions\n   * - Perform batch operations or non-streaming requests\n   *\n   * The client automatically handles authentication and follows OpenRouter's\n   * API conventions for request formatting and error handling.\n   */\n  readonly client: Generated.Client\n\n  readonly createChatCompletion: (\n    options: typeof Generated.ChatGenerationParams.Encoded\n  ) => Effect.Effect<Generated.ChatResponse, AiError.AiError>\n\n  readonly createChatCompletionStream: (\n    options: Omit<typeof Generated.ChatGenerationParams.Encoded, \"stream\">\n  ) => Stream.Stream<ChatStreamingResponseChunk, AiError.AiError>\n}",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openrouter/src/OpenRouterClient.ts#L33"
-  },
-  {
-    "_tag": "TypeAlias",
-    "module": {
-      "name": "OpenRouterClient.ts",
-      "path": "src/OpenRouterClient.ts"
-    },
-    "project": "@effect/ai-openrouter",
-    "name": "ChatCompletionStreamEvent",
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "Models",
-    "signature": "type ChatCompletionStreamEvent = typeof ChatCompletionStreamEvent.Type",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openrouter/src/OpenRouterClient.ts#L405"
   },
   {
     "_tag": "Class",
@@ -375,7 +345,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "Configuration",
-    "signature": "export interface Service extends\n    Simplify<\n      Partial<\n        Omit<\n          typeof Generated.ChatCompletionCreateParams.Encoded,\n          \"messages\" | \"response_format\" | \"tools\" | \"tool_choice\" | \"stream\"\n        >\n      >\n    >\n  {}",
+    "signature": "export interface Service extends\n    Simplify<\n      Partial<\n        Omit<\n          typeof Generated.ChatGenerationParams.Encoded,\n          \"messages\" | \"response_format\" | \"tools\" | \"tool_choice\" | \"stream\"\n        >\n      >\n    >\n  {}",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openrouter/src/OpenRouterLanguageModel.ts#L55"
   }
 ]

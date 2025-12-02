@@ -11,6 +11,6 @@ Emitted when a reasoning text is completed.
 declare class ResponseReasoningTextDoneEvent
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L1159)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L1167)
 
 Since v1.0.0
