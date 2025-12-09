@@ -818,7 +818,7 @@
     "since": "1.0.0",
     "category": "Annotations",
     "signature": "declare class CaptureDefects",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Workflow.ts#L681"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Workflow.ts#L691"
   },
   {
     "_tag": "Class",
@@ -834,7 +834,7 @@
     "since": "1.0.0",
     "category": "Annotations",
     "signature": "declare class SuspendOnFailure",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Workflow.ts#L695"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Workflow.ts#L705"
   },
   {
     "_tag": "Constant",
@@ -880,7 +880,7 @@
     "since": "1.0.0",
     "category": "Scope",
     "signature": "declare const scope: Effect.Effect<Scope.Scope, never, WorkflowInstance>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Workflow.ts#L592"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Workflow.ts#L602"
   },
   {
     "_tag": "Constant",
@@ -895,7 +895,7 @@
     "since": "1.0.0",
     "category": "Scope",
     "signature": "declare const addFinalizer: <R>(f: (exit: Exit.Exit<unknown, unknown>) => Effect.Effect<void, never, R>) => Effect.Effect<void, never, WorkflowInstance | R>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Workflow.ts#L616"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Workflow.ts#L626"
   },
   {
     "_tag": "Constant",
@@ -911,7 +911,7 @@
     "since": "1.0.0",
     "category": "Compensation",
     "signature": "declare const withCompensation: { <A, R2>(compensation: (value: A, cause: Cause.Cause<unknown>) => Effect.Effect<void, never, R2>): <E, R>(effect: Effect.Effect<A, E, R>) => Effect.Effect<A, E, R | R2 | WorkflowInstance | Scope.Scope>; <A, E, R, R2>(effect: Effect.Effect<A, E, R>, compensation: (value: A, cause: Cause.Cause<unknown>) => Effect.Effect<void, never, R2>): Effect.Effect<A, E, R | R2 | WorkflowInstance | Scope.Scope>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Workflow.ts#L641"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Workflow.ts#L651"
   },
   {
     "_tag": "Function",
@@ -1017,7 +1017,7 @@
     "since": "1.0.0",
     "category": "Scope",
     "signature": "declare const provideScope: <A, E, R>(effect: Effect.Effect<A, E, R>) => Effect.Effect<A, E, Exclude<R, Scope.Scope> | WorkflowInstance>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Workflow.ts#L607"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Workflow.ts#L617"
   },
   {
     "_tag": "Function",
@@ -1032,7 +1032,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "declare const suspend: (instance: WorkflowInstance[\"Type\"]) => Effect.Effect<never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Workflow.ts#L665"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Workflow.ts#L675"
   },
   {
     "_tag": "Interface",
