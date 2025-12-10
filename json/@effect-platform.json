@@ -1645,7 +1645,7 @@
     "since": "1.0.0",
     "category": "file watcher",
     "signature": "declare class WatchBackend",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/FileSystem.ts#L645"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/FileSystem.ts#L648"
   },
   {
     "_tag": "Constant",
@@ -1660,7 +1660,7 @@
     "since": "1.0.0",
     "category": "sizes",
     "signature": "declare const Size: (bytes: SizeInput) => Size",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/FileSystem.ts#L280"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/FileSystem.ts#L283"
   },
   {
     "_tag": "Constant",
@@ -1675,7 +1675,7 @@
     "since": "1.0.0",
     "category": "sizes",
     "signature": "declare const KiB: (n: number) => Size",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/FileSystem.ts#L286"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/FileSystem.ts#L289"
   },
   {
     "_tag": "Constant",
@@ -1690,7 +1690,7 @@
     "since": "1.0.0",
     "category": "sizes",
     "signature": "declare const MiB: (n: number) => Size",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/FileSystem.ts#L292"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/FileSystem.ts#L295"
   },
   {
     "_tag": "Constant",
@@ -1705,7 +1705,7 @@
     "since": "1.0.0",
     "category": "sizes",
     "signature": "declare const GiB: (n: number) => Size",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/FileSystem.ts#L298"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/FileSystem.ts#L301"
   },
   {
     "_tag": "Constant",
@@ -1720,7 +1720,7 @@
     "since": "1.0.0",
     "category": "sizes",
     "signature": "declare const TiB: (n: number) => Size",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/FileSystem.ts#L304"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/FileSystem.ts#L307"
   },
   {
     "_tag": "Constant",
@@ -1735,7 +1735,7 @@
     "since": "1.0.0",
     "category": "sizes",
     "signature": "declare const PiB: (n: number) => Size",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/FileSystem.ts#L310"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/FileSystem.ts#L313"
   },
   {
     "_tag": "Constant",
@@ -1750,7 +1750,7 @@
     "since": "1.0.0",
     "category": "tag",
     "signature": "declare const FileSystem: Tag<FileSystem, FileSystem>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/FileSystem.ts#L457"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/FileSystem.ts#L460"
   },
   {
     "_tag": "Constant",
@@ -1765,7 +1765,7 @@
     "since": "1.0.0",
     "category": "constructor",
     "signature": "declare const make: (impl: Omit<FileSystem, \"exists\" | \"readFileString\" | \"stream\" | \"sink\" | \"writeFileString\">) => FileSystem",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/FileSystem.ts#L463"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/FileSystem.ts#L466"
   },
   {
     "_tag": "Constant",
@@ -1781,7 +1781,7 @@
     "since": "1.0.0",
     "category": "constructor",
     "signature": "declare const makeNoop: (fileSystem: Partial<FileSystem>) => FileSystem",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/FileSystem.ts#L473"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/FileSystem.ts#L476"
   },
   {
     "_tag": "Constant",
@@ -1797,7 +1797,7 @@
     "since": "1.0.0",
     "category": "layers",
     "signature": "declare const layerNoop: (fileSystem: Partial<FileSystem>) => Layer<FileSystem>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/FileSystem.ts#L481"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/FileSystem.ts#L484"
   },
   {
     "_tag": "Constant",
@@ -1812,7 +1812,7 @@
     "since": "1.0.0",
     "category": "type id",
     "signature": "declare const FileTypeId: unique symbol",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/FileSystem.ts#L487"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/FileSystem.ts#L490"
   },
   {
     "_tag": "Constant",
@@ -1827,7 +1827,7 @@
     "since": "1.0.0",
     "category": "constructor",
     "signature": "declare const FileDescriptor: Brand.Brand.Constructor<File.Descriptor>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/FileSystem.ts#L570"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/FileSystem.ts#L573"
   },
   {
     "_tag": "Constant",
@@ -1842,7 +1842,7 @@
     "since": "1.0.0",
     "category": "constructor",
     "signature": "declare const WatchEventCreate: Data.Case.Constructor<WatchEvent.Create, \"_tag\">",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/FileSystem.ts#L621"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/FileSystem.ts#L624"
   },
   {
     "_tag": "Constant",
@@ -1857,7 +1857,7 @@
     "since": "1.0.0",
     "category": "constructor",
     "signature": "declare const WatchEventUpdate: Data.Case.Constructor<WatchEvent.Update, \"_tag\">",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/FileSystem.ts#L629"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/FileSystem.ts#L632"
   },
   {
     "_tag": "Constant",
@@ -1872,7 +1872,7 @@
     "since": "1.0.0",
     "category": "constructor",
     "signature": "declare const WatchEventRemove: Data.Case.Constructor<WatchEvent.Remove, \"_tag\">",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/FileSystem.ts#L637"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/FileSystem.ts#L640"
   },
   {
     "_tag": "Function",
@@ -1887,7 +1887,7 @@
     "since": "1.0.0",
     "category": "guard",
     "signature": "declare const isFile: (u: unknown) => u is File",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/FileSystem.ts#L501"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/FileSystem.ts#L504"
   },
   {
     "_tag": "Interface",
@@ -1901,7 +1901,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "model",
-    "signature": "export interface FileSystem {\n  /**\n   * Check if a file can be accessed.\n   * You can optionally specify the level of access to check for.\n   */\n  readonly access: (\n    path: string,\n    options?: AccessFileOptions\n  ) => Effect.Effect<void, PlatformError>\n  /**\n   * Copy a file or directory from `fromPath` to `toPath`.\n   *\n   * Equivalent to `cp -r`.\n   */\n  readonly copy: (\n    fromPath: string,\n    toPath: string,\n    options?: CopyOptions\n  ) => Effect.Effect<void, PlatformError>\n  /**\n   * Copy a file from `fromPath` to `toPath`.\n   */\n  readonly copyFile: (\n    fromPath: string,\n    toPath: string\n  ) => Effect.Effect<void, PlatformError>\n  /**\n   * Change the permissions of a file.\n   */\n  readonly chmod: (\n    path: string,\n    mode: number\n  ) => Effect.Effect<void, PlatformError>\n  /**\n   * Change the owner and group of a file.\n   */\n  readonly chown: (\n    path: string,\n    uid: number,\n    gid: number\n  ) => Effect.Effect<void, PlatformError>\n  /**\n   * Check if a path exists.\n   */\n  readonly exists: (\n    path: string\n  ) => Effect.Effect<boolean, PlatformError>\n  /**\n   * Create a hard link from `fromPath` to `toPath`.\n   */\n  readonly link: (\n    fromPath: string,\n    toPath: string\n  ) => Effect.Effect<void, PlatformError>\n  /**\n   * Create a directory at `path`. You can optionally specify the mode and\n   * whether to recursively create nested directories.\n   */\n  readonly makeDirectory: (\n    path: string,\n    options?: MakeDirectoryOptions\n  ) => Effect.Effect<void, PlatformError>\n  /**\n   * Create a temporary directory.\n   *\n   * By default the directory will be created inside the system's default\n   * temporary directory, but you can specify a different location by setting\n   * the `directory` option.\n   *\n   * You can also specify a prefix for the directory name by setting the\n   * `prefix` option.\n   */\n  readonly makeTempDirectory: (\n    options?: MakeTempDirectoryOptions\n  ) => Effect.Effect<string, PlatformError>\n  /**\n   * Create a temporary directory inside a scope.\n   *\n   * Functionally equivalent to `makeTempDirectory`, but the directory will be\n   * automatically deleted when the scope is closed.\n   */\n  readonly makeTempDirectoryScoped: (\n    options?: MakeTempDirectoryOptions\n  ) => Effect.Effect<string, PlatformError, Scope>\n  /**\n   * Create a temporary file.\n   * The directory creation is functionally equivalent to `makeTempDirectory`.\n   * The file name will be a randomly generated string.\n   */\n  readonly makeTempFile: (\n    options?: MakeTempFileOptions\n  ) => Effect.Effect<string, PlatformError>\n  /**\n   * Create a temporary file inside a scope.\n   *\n   * Functionally equivalent to `makeTempFile`, but the file will be\n   * automatically deleted when the scope is closed.\n   */\n  readonly makeTempFileScoped: (\n    options?: MakeTempFileOptions\n  ) => Effect.Effect<string, PlatformError, Scope>\n  /**\n   * Open a file at `path` with the specified `options`.\n   *\n   * The file handle will be automatically closed when the scope is closed.\n   */\n  readonly open: (\n    path: string,\n    options?: OpenFileOptions\n  ) => Effect.Effect<File, PlatformError, Scope>\n  /**\n   * List the contents of a directory.\n   *\n   * You can recursively list the contents of nested directories by setting the\n   * `recursive` option.\n   */\n  readonly readDirectory: (\n    path: string,\n    options?: ReadDirectoryOptions\n  ) => Effect.Effect<Array<string>, PlatformError>\n  /**\n   * Read the contents of a file.\n   */\n  readonly readFile: (\n    path: string\n  ) => Effect.Effect<Uint8Array, PlatformError>\n  /**\n   * Read the contents of a file.\n   */\n  readonly readFileString: (\n    path: string,\n    encoding?: string\n  ) => Effect.Effect<string, PlatformError>\n  /**\n   * Read the destination of a symbolic link.\n   */\n  readonly readLink: (\n    path: string\n  ) => Effect.Effect<string, PlatformError>\n  /**\n   * Resolve a path to its canonicalized absolute pathname.\n   */\n  readonly realPath: (\n    path: string\n  ) => Effect.Effect<string, PlatformError>\n  /**\n   * Remove a file or directory.\n   */\n  readonly remove: (\n    path: string,\n    options?: RemoveOptions\n  ) => Effect.Effect<void, PlatformError>\n  /**\n   * Rename a file or directory.\n   */\n  readonly rename: (\n    oldPath: string,\n    newPath: string\n  ) => Effect.Effect<void, PlatformError>\n  /**\n   * Create a writable `Sink` for the specified `path`.\n   */\n  readonly sink: (\n    path: string,\n    options?: SinkOptions\n  ) => Sink<void, Uint8Array, never, PlatformError>\n  /**\n   * Get information about a file at `path`.\n   */\n  readonly stat: (\n    path: string\n  ) => Effect.Effect<File.Info, PlatformError>\n  /**\n   * Create a readable `Stream` for the specified `path`.\n   *\n   * Changing the `bufferSize` option will change the internal buffer size of\n   * the stream. It defaults to `4`.\n   *\n   * The `chunkSize` option will change the size of the chunks emitted by the\n   * stream. It defaults to 64kb.\n   *\n   * Changing `offset` and `bytesToRead` will change the offset and the number\n   * of bytes to read from the file.\n   */\n  readonly stream: (\n    path: string,\n    options?: StreamOptions\n  ) => Stream<Uint8Array, PlatformError>\n  /**\n   * Create a symbolic link from `fromPath` to `toPath`.\n   */\n  readonly symlink: (\n    fromPath: string,\n    toPath: string\n  ) => Effect.Effect<void, PlatformError>\n  /**\n   * Truncate a file to a specified length. If the `length` is not specified,\n   * the file will be truncated to length `0`.\n   */\n  readonly truncate: (\n    path: string,\n    length?: SizeInput\n  ) => Effect.Effect<void, PlatformError>\n  /**\n   * Change the file system timestamps of the file at `path`.\n   */\n  readonly utimes: (\n    path: string,\n    atime: Date | number,\n    mtime: Date | number\n  ) => Effect.Effect<void, PlatformError>\n  /**\n   * Watch a directory or file for changes.\n   *\n   * By default, only changes to the direct children of the directory are reported.\n   * Set the `recursive` option to `true` to watch for changes in subdirectories as well.\n   *\n   * Note: The `recursive` option is only supported on macOS and Windows.\n   * On other platforms, it will be ignored.\n   */\n  readonly watch: (path: string, options?: WatchOptions) => Stream<WatchEvent, PlatformError>\n  /**\n   * Write data to a file at `path`.\n   */\n  readonly writeFile: (\n    path: string,\n    data: Uint8Array,\n    options?: WriteFileOptions\n  ) => Effect.Effect<void, PlatformError>\n  /**\n   * Write a string to a file at `path`.\n   */\n  readonly writeFileString: (\n    path: string,\n    data: string,\n    options?: WriteFileStringOptions\n  ) => Effect.Effect<void, PlatformError>\n}",
+    "signature": "export interface FileSystem {\n  /**\n   * Check if a file can be accessed.\n   * You can optionally specify the level of access to check for.\n   */\n  readonly access: (\n    path: string,\n    options?: AccessFileOptions\n  ) => Effect.Effect<void, PlatformError>\n  /**\n   * Copy a file or directory from `fromPath` to `toPath`.\n   *\n   * Equivalent to `cp -r`.\n   */\n  readonly copy: (\n    fromPath: string,\n    toPath: string,\n    options?: CopyOptions\n  ) => Effect.Effect<void, PlatformError>\n  /**\n   * Copy a file from `fromPath` to `toPath`.\n   */\n  readonly copyFile: (\n    fromPath: string,\n    toPath: string\n  ) => Effect.Effect<void, PlatformError>\n  /**\n   * Change the permissions of a file.\n   */\n  readonly chmod: (\n    path: string,\n    mode: number\n  ) => Effect.Effect<void, PlatformError>\n  /**\n   * Change the owner and group of a file.\n   */\n  readonly chown: (\n    path: string,\n    uid: number,\n    gid: number\n  ) => Effect.Effect<void, PlatformError>\n  /**\n   * Check if a path exists.\n   */\n  readonly exists: (\n    path: string\n  ) => Effect.Effect<boolean, PlatformError>\n  /**\n   * Create a hard link from `fromPath` to `toPath`.\n   */\n  readonly link: (\n    fromPath: string,\n    toPath: string\n  ) => Effect.Effect<void, PlatformError>\n  /**\n   * Create a directory at `path`. You can optionally specify the mode and\n   * whether to recursively create nested directories.\n   */\n  readonly makeDirectory: (\n    path: string,\n    options?: MakeDirectoryOptions\n  ) => Effect.Effect<void, PlatformError>\n  /**\n   * Create a temporary directory.\n   *\n   * By default the directory will be created inside the system's default\n   * temporary directory, but you can specify a different location by setting\n   * the `directory` option.\n   *\n   * You can also specify a prefix for the directory name by setting the\n   * `prefix` option.\n   */\n  readonly makeTempDirectory: (\n    options?: MakeTempDirectoryOptions\n  ) => Effect.Effect<string, PlatformError>\n  /**\n   * Create a temporary directory inside a scope.\n   *\n   * Functionally equivalent to `makeTempDirectory`, but the directory will be\n   * automatically deleted when the scope is closed.\n   */\n  readonly makeTempDirectoryScoped: (\n    options?: MakeTempDirectoryOptions\n  ) => Effect.Effect<string, PlatformError, Scope>\n  /**\n   * Create a temporary file.\n   * The directory creation is functionally equivalent to `makeTempDirectory`.\n   * The file name will be a randomly generated string.\n   */\n  readonly makeTempFile: (\n    options?: MakeTempFileOptions\n  ) => Effect.Effect<string, PlatformError>\n  /**\n   * Create a temporary file inside a scope.\n   *\n   * Functionally equivalent to `makeTempFile`, but the file will be\n   * automatically deleted when the scope is closed.\n   */\n  readonly makeTempFileScoped: (\n    options?: MakeTempFileOptions\n  ) => Effect.Effect<string, PlatformError, Scope>\n  /**\n   * Open a file at `path` with the specified `options`.\n   *\n   * The file handle will be automatically closed when the scope is closed.\n   */\n  readonly open: (\n    path: string,\n    options?: OpenFileOptions\n  ) => Effect.Effect<File, PlatformError, Scope>\n  /**\n   * List the contents of a directory.\n   *\n   * You can recursively list the contents of nested directories by setting the\n   * `recursive` option.\n   */\n  readonly readDirectory: (\n    path: string,\n    options?: ReadDirectoryOptions\n  ) => Effect.Effect<Array<string>, PlatformError>\n  /**\n   * Read the contents of a file.\n   */\n  readonly readFile: (\n    path: string\n  ) => Effect.Effect<Uint8Array, PlatformError>\n  /**\n   * Read the contents of a file.\n   */\n  readonly readFileString: (\n    path: string,\n    encoding?: string\n  ) => Effect.Effect<string, PlatformError>\n  /**\n   * Read the destination of a symbolic link.\n   */\n  readonly readLink: (\n    path: string\n  ) => Effect.Effect<string, PlatformError>\n  /**\n   * Resolve a path to its canonicalized absolute pathname.\n   */\n  readonly realPath: (\n    path: string\n  ) => Effect.Effect<string, PlatformError>\n  /**\n   * Remove a file or directory.\n   */\n  readonly remove: (\n    path: string,\n    options?: RemoveOptions\n  ) => Effect.Effect<void, PlatformError>\n  /**\n   * Rename a file or directory.\n   */\n  readonly rename: (\n    oldPath: string,\n    newPath: string\n  ) => Effect.Effect<void, PlatformError>\n  /**\n   * Create a writable `Sink` for the specified `path`.\n   */\n  readonly sink: (\n    path: string,\n    options?: SinkOptions\n  ) => Sink<void, Uint8Array, never, PlatformError>\n  /**\n   * Get information about a file at `path`.\n   */\n  readonly stat: (\n    path: string\n  ) => Effect.Effect<File.Info, PlatformError>\n  /**\n   * Create a readable `Stream` for the specified `path`.\n   *\n   * Changing the `bufferSize` option will change the internal buffer size of\n   * the stream. It defaults to `4`.\n   *\n   * The `chunkSize` option will change the size of the chunks emitted by the\n   * stream. It defaults to 64kb.\n   *\n   * Changing `offset` and `bytesToRead` will change the offset and the number\n   * of bytes to read from the file.\n   */\n  readonly stream: (\n    path: string,\n    options?: StreamOptions\n  ) => Stream<Uint8Array, PlatformError>\n  /**\n   * Create a symbolic link from `fromPath` to `toPath`.\n   */\n  readonly symlink: (\n    fromPath: string,\n    toPath: string\n  ) => Effect.Effect<void, PlatformError>\n  /**\n   * Truncate a file to a specified length. If the `length` is not specified,\n   * the file will be truncated to length `0`.\n   */\n  readonly truncate: (\n    path: string,\n    length?: SizeInput\n  ) => Effect.Effect<void, PlatformError>\n  /**\n   * Change the file system timestamps of the file at `path`.\n   */\n  readonly utimes: (\n    path: string,\n    atime: Date | number,\n    mtime: Date | number\n  ) => Effect.Effect<void, PlatformError>\n  /**\n   * Watch a directory or file for changes.\n   *\n   * By default, only changes to the direct children of the directory are reported.\n   * Set the `recursive` option to `true` to watch for changes in subdirectories as well.\n   *\n   * Note: The `recursive` option behavior depends on the backend implementation:\n   * - When using the default Node.js `fs.watch()` backend: The `recursive`\n   *   option is supported on all platforms (Node.js v20+).\n   * - When using `@parcel/watcher` (via `NodeFileSystem/ParcelWatcher` layer):\n   *   Watching is always recursive on all platforms. This option is ignored.\n   */\n  readonly watch: (path: string, options?: WatchOptions) => Stream<WatchEvent, PlatformError>\n  /**\n   * Write data to a file at `path`.\n   */\n  readonly writeFile: (\n    path: string,\n    data: Uint8Array,\n    options?: WriteFileOptions\n  ) => Effect.Effect<void, PlatformError>\n  /**\n   * Write a string to a file at `path`.\n   */\n  readonly writeFileString: (\n    path: string,\n    data: string,\n    options?: WriteFileStringOptions\n  ) => Effect.Effect<void, PlatformError>\n}",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/FileSystem.ts#L21"
   },
   {
@@ -1917,7 +1917,7 @@
     "since": "1.0.0",
     "category": "options",
     "signature": "export interface AccessFileOptions {\n  readonly ok?: boolean\n  readonly readable?: boolean\n  readonly writable?: boolean\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/FileSystem.ts#L332"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/FileSystem.ts#L335"
   },
   {
     "_tag": "Interface",
@@ -1932,7 +1932,7 @@
     "since": "1.0.0",
     "category": "options",
     "signature": "export interface MakeDirectoryOptions {\n  readonly recursive?: boolean\n  readonly mode?: number\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/FileSystem.ts#L342"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/FileSystem.ts#L345"
   },
   {
     "_tag": "Interface",
@@ -1947,7 +1947,7 @@
     "since": "1.0.0",
     "category": "options",
     "signature": "export interface CopyOptions {\n  readonly overwrite?: boolean\n  readonly preserveTimestamps?: boolean\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/FileSystem.ts#L351"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/FileSystem.ts#L354"
   },
   {
     "_tag": "Interface",
@@ -1962,7 +1962,7 @@
     "since": "1.0.0",
     "category": "options",
     "signature": "export interface MakeTempDirectoryOptions {\n  readonly directory?: string\n  readonly prefix?: string\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/FileSystem.ts#L360"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/FileSystem.ts#L363"
   },
   {
     "_tag": "Interface",
@@ -1977,7 +1977,7 @@
     "since": "1.0.0",
     "category": "options",
     "signature": "export interface MakeTempFileOptions {\n  readonly directory?: string\n  readonly prefix?: string\n  readonly suffix?: string\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/FileSystem.ts#L369"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/FileSystem.ts#L372"
   },
   {
     "_tag": "Interface",
@@ -1992,7 +1992,7 @@
     "since": "1.0.0",
     "category": "options",
     "signature": "export interface OpenFileOptions {\n  readonly flag?: OpenFlag\n  readonly mode?: number\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/FileSystem.ts#L379"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/FileSystem.ts#L382"
   },
   {
     "_tag": "Interface",
@@ -2007,7 +2007,7 @@
     "since": "1.0.0",
     "category": "options",
     "signature": "export interface ReadDirectoryOptions {\n  readonly recursive?: boolean\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/FileSystem.ts#L388"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/FileSystem.ts#L391"
   },
   {
     "_tag": "Interface",
@@ -2022,7 +2022,7 @@
     "since": "1.0.0",
     "category": "options",
     "signature": "export interface RemoveOptions {\n  /**\n   * When `true`, you can recursively remove nested directories.\n   */\n  readonly recursive?: boolean\n  /**\n   * When `true`, exceptions will be ignored if `path` does not exist.\n   */\n  readonly force?: boolean\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/FileSystem.ts#L396"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/FileSystem.ts#L399"
   },
   {
     "_tag": "Interface",
@@ -2037,7 +2037,7 @@
     "since": "1.0.0",
     "category": "options",
     "signature": "export interface SinkOptions extends OpenFileOptions {}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/FileSystem.ts#L411"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/FileSystem.ts#L414"
   },
   {
     "_tag": "Interface",
@@ -2052,7 +2052,7 @@
     "since": "1.0.0",
     "category": "options",
     "signature": "export interface StreamOptions {\n  readonly bufferSize?: number\n  readonly bytesToRead?: SizeInput\n  readonly chunkSize?: SizeInput\n  readonly offset?: SizeInput\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/FileSystem.ts#L417"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/FileSystem.ts#L420"
   },
   {
     "_tag": "Interface",
@@ -2067,7 +2067,7 @@
     "since": "1.0.0",
     "category": "options",
     "signature": "export interface WriteFileOptions {\n  readonly flag?: OpenFlag\n  readonly mode?: number\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/FileSystem.ts#L428"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/FileSystem.ts#L431"
   },
   {
     "_tag": "Interface",
@@ -2082,7 +2082,7 @@
     "since": "1.0.0",
     "category": "options",
     "signature": "export interface WriteFileStringOptions {\n  readonly flag?: OpenFlag\n  readonly mode?: number\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/FileSystem.ts#L437"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/FileSystem.ts#L440"
   },
   {
     "_tag": "Interface",
@@ -2097,7 +2097,7 @@
     "since": "1.0.0",
     "category": "options",
     "signature": "export interface WatchOptions {\n  /**\n   * When `true`, the watcher will also watch for changes in subdirectories.\n   */\n  readonly recursive?: boolean\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/FileSystem.ts#L446"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/FileSystem.ts#L449"
   },
   {
     "_tag": "Interface",
@@ -2112,7 +2112,7 @@
     "since": "1.0.0",
     "category": "model",
     "signature": "export interface File {\n  readonly [FileTypeId]: FileTypeId\n  readonly fd: File.Descriptor\n  readonly stat: Effect.Effect<File.Info, PlatformError>\n  readonly seek: (offset: SizeInput, from: SeekMode) => Effect.Effect<void>\n  readonly sync: Effect.Effect<void, PlatformError>\n  readonly read: (buffer: Uint8Array) => Effect.Effect<Size, PlatformError>\n  readonly readAlloc: (size: SizeInput) => Effect.Effect<Option<Uint8Array>, PlatformError>\n  readonly truncate: (length?: SizeInput) => Effect.Effect<void, PlatformError>\n  readonly write: (buffer: Uint8Array) => Effect.Effect<Size, PlatformError>\n  readonly writeAll: (buffer: Uint8Array) => Effect.Effect<void, PlatformError>\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/FileSystem.ts#L507"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/FileSystem.ts#L510"
   },
   {
     "_tag": "TypeAlias",
@@ -2128,7 +2128,7 @@
     "since": "1.0.0",
     "category": "sizes",
     "signature": "type Size = Brand.Branded<bigint, \"Size\">",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/FileSystem.ts#L266"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/FileSystem.ts#L269"
   },
   {
     "_tag": "TypeAlias",
@@ -2144,7 +2144,7 @@
     "since": "1.0.0",
     "category": "sizes",
     "signature": "type SizeInput = bigint | number | Size",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/FileSystem.ts#L274"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/FileSystem.ts#L277"
   },
   {
     "_tag": "TypeAlias",
@@ -2159,7 +2159,7 @@
     "since": "1.0.0",
     "category": "model",
     "signature": "type OpenFlag = | \"r\"\n  | \"r+\"\n  | \"w\"\n  | \"wx\"\n  | \"w+\"\n  | \"wx+\"\n  | \"a\"\n  | \"ax\"\n  | \"a+\"\n  | \"ax+\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/FileSystem.ts#L316"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/FileSystem.ts#L319"
   },
   {
     "_tag": "TypeAlias",
@@ -2174,7 +2174,7 @@
     "since": "1.0.0",
     "category": "type id",
     "signature": "type FileTypeId = typeof FileTypeId",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/FileSystem.ts#L495"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/FileSystem.ts#L498"
   },
   {
     "_tag": "TypeAlias",
@@ -2189,7 +2189,7 @@
     "since": "1.0.0",
     "category": "model",
     "signature": "type SeekMode = \"start\" | \"current\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/FileSystem.ts#L576"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/FileSystem.ts#L579"
   },
   {
     "_tag": "TypeAlias",
@@ -2204,7 +2204,7 @@
     "since": "1.0.0",
     "category": "model",
     "signature": "type WatchEvent = WatchEvent.Create | WatchEvent.Update | WatchEvent.Remove",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/FileSystem.ts#L582"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/FileSystem.ts#L585"
   },
   {
     "_tag": "Interface",
@@ -2219,7 +2219,7 @@
     "since": "1.0.0",
     "category": "model",
     "signature": "export interface Info {\n    readonly type: Type\n    readonly mtime: Option<Date>\n    readonly atime: Option<Date>\n    readonly birthtime: Option<Date>\n    readonly dev: number\n    readonly ino: Option<number>\n    readonly mode: number\n    readonly nlink: Option<number>\n    readonly uid: Option<number>\n    readonly gid: Option<number>\n    readonly rdev: Option<number>\n    readonly size: Size\n    readonly blksize: Option<Size>\n    readonly blocks: Option<number>\n  }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/FileSystem.ts#L548"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/FileSystem.ts#L551"
   },
   {
     "_tag": "TypeAlias",
@@ -2234,7 +2234,7 @@
     "since": "1.0.0",
     "category": "model",
     "signature": "type Descriptor = Brand.Branded<number, \"FileDescriptor\">",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/FileSystem.ts#L528"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/FileSystem.ts#L531"
   },
   {
     "_tag": "TypeAlias",
@@ -2249,7 +2249,7 @@
     "since": "1.0.0",
     "category": "model",
     "signature": "type Type = | \"File\"\n    | \"Directory\"\n    | \"SymbolicLink\"\n    | \"BlockDevice\"\n    | \"CharacterDevice\"\n    | \"FIFO\"\n    | \"Socket\"\n    | \"Unknown\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/FileSystem.ts#L534"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/FileSystem.ts#L537"
   },
   {
     "_tag": "Interface",
@@ -2264,7 +2264,7 @@
     "since": "1.0.0",
     "category": "model",
     "signature": "export interface Create {\n    readonly _tag: \"Create\"\n    readonly path: string\n  }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/FileSystem.ts#L593"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/FileSystem.ts#L596"
   },
   {
     "_tag": "Interface",
@@ -2279,7 +2279,7 @@
     "since": "1.0.0",
     "category": "model",
     "signature": "export interface Update {\n    readonly _tag: \"Update\"\n    readonly path: string\n  }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/FileSystem.ts#L602"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/FileSystem.ts#L605"
   },
   {
     "_tag": "Interface",
@@ -2294,7 +2294,7 @@
     "since": "1.0.0",
     "category": "model",
     "signature": "export interface Remove {\n    readonly _tag: \"Remove\"\n    readonly path: string\n  }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/FileSystem.ts#L611"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/FileSystem.ts#L614"
   },
   {
     "_tag": "Constant",

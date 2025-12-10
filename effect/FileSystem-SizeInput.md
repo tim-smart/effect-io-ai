@@ -11,6 +11,6 @@ Represents a size in bytes.
 type SizeInput = bigint | number | Size
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform/src/FileSystem.ts#L274)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform/src/FileSystem.ts#L277)
 
 Since v1.0.0
