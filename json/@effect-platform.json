@@ -6191,6 +6191,21 @@
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApp.ts#L306"
   },
   {
+    "_tag": "Function",
+    "module": {
+      "name": "HttpApp.ts",
+      "path": "src/HttpApp.ts"
+    },
+    "project": "@effect/platform",
+    "name": "fromWebHandler",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "conversions",
+    "signature": "declare const fromWebHandler: (handler: (request: Request) => Promise<Response>) => Default<ServerError.HttpServerError>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApp.ts#L326"
+  },
+  {
     "_tag": "TypeAlias",
     "module": {
       "name": "HttpApp.ts",
@@ -11159,7 +11174,7 @@
     "since": "1.0.0",
     "category": "type ids",
     "signature": "declare const TypeId: unique symbol",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpServerRequest.ts#L42"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpServerRequest.ts#L44"
   },
   {
     "_tag": "Constant",
@@ -11174,7 +11189,7 @@
     "since": "1.0.0",
     "category": "context",
     "signature": "declare const HttpServerRequest: Context.Tag<HttpServerRequest, HttpServerRequest>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpServerRequest.ts#L84"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpServerRequest.ts#L86"
   },
   {
     "_tag": "Constant",
@@ -11189,7 +11204,7 @@
     "since": "1.0.0",
     "category": "search params",
     "signature": "declare const ParsedSearchParams: Context.Tag<ParsedSearchParams, ReadonlyRecord<string, string | Array<string>>>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpServerRequest.ts#L98"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpServerRequest.ts#L100"
   },
   {
     "_tag": "Constant",
@@ -11204,7 +11219,7 @@
     "since": "1.0.0",
     "category": "search params",
     "signature": "declare const searchParamsFromURL: (url: URL) => ReadonlyRecord<string, string | Array<string>>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpServerRequest.ts#L105"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpServerRequest.ts#L107"
   },
   {
     "_tag": "Constant",
@@ -11219,7 +11234,7 @@
     "since": "1.0.0",
     "category": "accessors",
     "signature": "declare const persistedMultipart: Effect.Effect<unknown, Multipart.MultipartError, Scope.Scope | FileSystem.FileSystem | Path.Path | HttpServerRequest>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpServerRequest.ts#L112"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpServerRequest.ts#L114"
   },
   {
     "_tag": "Constant",
@@ -11234,7 +11249,7 @@
     "since": "1.0.0",
     "category": "accessors",
     "signature": "declare const upgrade: Effect.Effect<Socket.Socket, Error.RequestError, HttpServerRequest>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpServerRequest.ts#L122"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpServerRequest.ts#L124"
   },
   {
     "_tag": "Constant",
@@ -11249,7 +11264,7 @@
     "since": "1.0.0",
     "category": "accessors",
     "signature": "declare const upgradeChannel: <IE = never>() => Channel<Chunk<Uint8Array>, Chunk<Uint8Array | string | Socket.CloseEvent>, Error.RequestError | IE | Socket.SocketError, IE, void, unknown, HttpServerRequest>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpServerRequest.ts#L128"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpServerRequest.ts#L130"
   },
   {
     "_tag": "Constant",
@@ -11264,7 +11279,7 @@
     "since": "1.0.0",
     "category": "schema",
     "signature": "declare const schemaCookies: <A, I extends Readonly<Record<string, string | undefined>>, R>(schema: Schema.Schema<A, I, R>, options?: ParseOptions | undefined) => Effect.Effect<A, ParseResult.ParseError, HttpServerRequest | R>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpServerRequest.ts#L142"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpServerRequest.ts#L144"
   },
   {
     "_tag": "Constant",
@@ -11279,7 +11294,7 @@
     "since": "1.0.0",
     "category": "schema",
     "signature": "declare const schemaHeaders: <A, I extends Readonly<Record<string, string | undefined>>, R>(schema: Schema.Schema<A, I, R>, options?: ParseOptions | undefined) => Effect.Effect<A, ParseResult.ParseError, HttpServerRequest | R>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpServerRequest.ts#L151"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpServerRequest.ts#L153"
   },
   {
     "_tag": "Constant",
@@ -11294,7 +11309,7 @@
     "since": "1.0.0",
     "category": "schema",
     "signature": "declare const schemaSearchParams: <A, I extends Readonly<Record<string, string | ReadonlyArray<string> | undefined>>, R>(schema: Schema.Schema<A, I, R>, options?: ParseOptions | undefined) => Effect.Effect<A, ParseResult.ParseError, ParsedSearchParams | R>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpServerRequest.ts#L160"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpServerRequest.ts#L162"
   },
   {
     "_tag": "Constant",
@@ -11309,7 +11324,7 @@
     "since": "1.0.0",
     "category": "schema",
     "signature": "declare const schemaBodyJson: <A, I, R>(schema: Schema.Schema<A, I, R>, options?: ParseOptions | undefined) => Effect.Effect<A, Error.RequestError | ParseResult.ParseError, HttpServerRequest | R>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpServerRequest.ts#L169"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpServerRequest.ts#L171"
   },
   {
     "_tag": "Constant",
@@ -11324,7 +11339,7 @@
     "since": "1.0.0",
     "category": "schema",
     "signature": "declare const schemaBodyForm: <A, I extends Partial<Multipart.Persisted>, R>(schema: Schema.Schema<A, I, R>, options?: ParseOptions | undefined) => Effect.Effect<A, Multipart.MultipartError | ParseResult.ParseError | Error.RequestError, R | HttpServerRequest | Scope.Scope | FileSystem.FileSystem | Path.Path>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpServerRequest.ts#L178"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpServerRequest.ts#L180"
   },
   {
     "_tag": "Constant",
@@ -11339,7 +11354,7 @@
     "since": "1.0.0",
     "category": "schema",
     "signature": "declare const schemaBodyUrlParams: <A, I extends Readonly<Record<string, string | ReadonlyArray<string> | undefined>>, R>(schema: Schema.Schema<A, I, R>, options?: ParseOptions | undefined) => Effect.Effect<A, ParseResult.ParseError | Error.RequestError, R | HttpServerRequest>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpServerRequest.ts#L191"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpServerRequest.ts#L193"
   },
   {
     "_tag": "Constant",
@@ -11354,7 +11369,7 @@
     "since": "1.0.0",
     "category": "schema",
     "signature": "declare const schemaBodyMultipart: <A, I extends Partial<Multipart.Persisted>, R>(schema: Schema.Schema<A, I, R>, options?: ParseOptions | undefined) => Effect.Effect<A, Multipart.MultipartError | ParseResult.ParseError, R | HttpServerRequest | Scope.Scope | FileSystem.FileSystem | Path.Path>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpServerRequest.ts#L204"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpServerRequest.ts#L206"
   },
   {
     "_tag": "Constant",
@@ -11369,7 +11384,7 @@
     "since": "1.0.0",
     "category": "schema",
     "signature": "declare const schemaBodyFormJson: <A, I, R>(schema: Schema.Schema<A, I, R>, options?: ParseOptions | undefined) => (field: string) => Effect.Effect<A, ParseResult.ParseError | Error.RequestError, R | HttpServerRequest | FileSystem.FileSystem | Path.Path | Scope.Scope>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpServerRequest.ts#L217"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpServerRequest.ts#L219"
   },
   {
     "_tag": "Constant",
@@ -11384,7 +11399,7 @@
     "since": "1.0.0",
     "category": "conversions",
     "signature": "declare const fromWeb: (request: Request) => HttpServerRequest",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpServerRequest.ts#L232"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpServerRequest.ts#L234"
   },
   {
     "_tag": "Constant",
@@ -11399,7 +11414,22 @@
     "since": "1.0.0",
     "category": "conversions",
     "signature": "declare const toURL: (self: HttpServerRequest) => Option.Option<URL>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpServerRequest.ts#L255"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpServerRequest.ts#L286"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "HttpServerRequest.ts",
+      "path": "src/HttpServerRequest.ts"
+    },
+    "project": "@effect/platform",
+    "name": "toWebEither",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "conversions",
+    "signature": "declare const toWebEither: (self: HttpServerRequest, options?: { readonly signal?: AbortSignal | undefined; readonly runtime?: Runtime.Runtime<never> | undefined; }) => Either.Either<Request, Error.RequestError>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpServerRequest.ts#L240"
   },
   {
     "_tag": "Function",
@@ -11413,8 +11443,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "conversions",
-    "signature": "declare const toWeb: (self: HttpServerRequest) => Request | undefined",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpServerRequest.ts#L238"
+    "signature": "declare const toWeb: (self: HttpServerRequest, options?: { readonly signal?: AbortSignal | undefined; }) => Effect.Effect<Request, Error.RequestError>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpServerRequest.ts#L273"
   },
   {
     "_tag": "Interface",
@@ -11429,7 +11459,7 @@
     "since": "1.0.0",
     "category": "models",
     "signature": "export interface HttpServerRequest extends IncomingMessage.HttpIncomingMessage<Error.RequestError> {\n  readonly [TypeId]: TypeId\n  readonly source: unknown\n  readonly url: string\n  readonly originalUrl: string\n  readonly method: HttpMethod\n  readonly cookies: ReadonlyRecord<string, string>\n\n  readonly multipart: Effect.Effect<\n    Multipart.Persisted,\n    Multipart.MultipartError,\n    Scope.Scope | FileSystem.FileSystem | Path.Path\n  >\n  readonly multipartStream: Stream.Stream<Multipart.Part, Multipart.MultipartError>\n\n  readonly upgrade: Effect.Effect<Socket.Socket, Error.RequestError>\n\n  readonly modify: (\n    options: {\n      readonly url?: string\n      readonly headers?: Headers.Headers\n      readonly remoteAddress?: string\n    }\n  ) => HttpServerRequest\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpServerRequest.ts#L54"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpServerRequest.ts#L56"
   },
   {
     "_tag": "Interface",
@@ -11444,7 +11474,7 @@
     "since": "1.0.0",
     "category": "search params",
     "signature": "export interface ParsedSearchParams {\n  readonly _: unique symbol\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpServerRequest.ts#L90"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpServerRequest.ts#L92"
   },
   {
     "_tag": "TypeAlias",
@@ -11459,7 +11489,7 @@
     "since": "1.0.0",
     "category": "type ids",
     "signature": "type TypeId = typeof TypeId",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpServerRequest.ts#L48"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpServerRequest.ts#L50"
   },
   {
     "_tag": "Export",
@@ -11474,7 +11504,7 @@
     "since": "1.0.0",
     "category": "fiber refs",
     "signature": "declare const MaxBodySize: typeof IncomingMessage.MaxBodySize",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpServerRequest.ts#L30"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpServerRequest.ts#L32"
   },
   {
     "_tag": "Export",
@@ -11489,7 +11519,7 @@
     "since": "1.0.0",
     "category": "fiber refs",
     "signature": "declare const withMaxBodySize: ((size: Option.Option<FileSystem.SizeInput>) => <A, E, R>(effect: Effect.Effect<A, E, R>) => Effect.Effect<A, E, R>) & (<A, E, R>(effect: Effect.Effect<A, E, R>, size: Option.Option<FileSystem.SizeInput>) => Effect.Effect<A, E, R>)",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpServerRequest.ts#L35"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpServerRequest.ts#L37"
   },
   {
     "_tag": "Constant",

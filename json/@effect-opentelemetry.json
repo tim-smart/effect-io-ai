@@ -768,12 +768,13 @@
     },
     "project": "@effect/opentelemetry",
     "name": "currentOtelSpan",
+    "description": "Get the current OpenTelemetry span.\n\nWorks with both the official OpenTelemetry API (via `Tracer.layer`, `NodeSdk.layer`, etc.)\nand the lightweight OTLP module (`OtlpTracer.layer`).\n\nWhen using OTLP, the returned span is a wrapper that conforms to the\nOpenTelemetry `Span` interface.",
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "accessors",
     "signature": "declare const currentOtelSpan: Effect<Otel.Span, NoSuchElementException, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Tracer.ts#L36"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Tracer.ts#L44"
   },
   {
     "_tag": "Constant",
@@ -788,7 +789,7 @@
     "since": "1.0.0",
     "category": "layers",
     "signature": "declare const layerWithoutOtelTracer: Layer<never, never, OtelTracer>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Tracer.ts#L42"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Tracer.ts#L50"
   },
   {
     "_tag": "Constant",
@@ -803,7 +804,7 @@
     "since": "1.0.0",
     "category": "layers",
     "signature": "declare const layer: Layer<OtelTracer, never, OtelTracerProvider | Resource>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Tracer.ts#L48"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Tracer.ts#L56"
   },
   {
     "_tag": "Constant",
@@ -818,7 +819,7 @@
     "since": "1.0.0",
     "category": "layers",
     "signature": "declare const layerGlobal: Layer<OtelTracer, never, Resource>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Tracer.ts#L54"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Tracer.ts#L62"
   },
   {
     "_tag": "Constant",
@@ -833,7 +834,7 @@
     "since": "1.0.0",
     "category": "layers",
     "signature": "declare const layerTracer: Layer<OtelTracer, never, OtelTracerProvider | Resource>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Tracer.ts#L60"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Tracer.ts#L68"
   },
   {
     "_tag": "Constant",
@@ -848,7 +849,7 @@
     "since": "1.0.0",
     "category": "layers",
     "signature": "declare const layerGlobalTracer: Layer<OtelTracer, never, Resource>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Tracer.ts#L66"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Tracer.ts#L74"
   },
   {
     "_tag": "Constant",
@@ -863,7 +864,7 @@
     "since": "1.0.0",
     "category": "tags",
     "signature": "declare const OtelTracerProvider: Tag<OtelTracerProvider, Otel.TracerProvider>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Tracer.ts#L80"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Tracer.ts#L88"
   },
   {
     "_tag": "Constant",
@@ -878,7 +879,7 @@
     "since": "1.0.0",
     "category": "tags",
     "signature": "declare const OtelTracer: Tag<OtelTracer, Otel.Tracer>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Tracer.ts#L94"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Tracer.ts#L102"
   },
   {
     "_tag": "Constant",
@@ -893,7 +894,7 @@
     "since": "1.0.0",
     "category": "tags",
     "signature": "declare const OtelTraceFlags: Tag<OtelTraceFlags, Otel.TraceFlags>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Tracer.ts#L108"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Tracer.ts#L116"
   },
   {
     "_tag": "Constant",
@@ -908,7 +909,7 @@
     "since": "1.0.0",
     "category": "tags",
     "signature": "declare const OtelTraceState: Tag<OtelTraceState, Otel.TraceState>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Tracer.ts#L122"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Tracer.ts#L130"
   },
   {
     "_tag": "Constant",
@@ -924,7 +925,7 @@
     "since": "1.0.0",
     "category": "propagation",
     "signature": "declare const withSpanContext: { (spanContext: Otel.SpanContext): <A, E, R>(effect: Effect<A, E, R>) => Effect<A, E, Exclude<R, ParentSpan>>; <A, E, R>(effect: Effect<A, E, R>, spanContext: Otel.SpanContext): Effect<A, E, Exclude<R, ParentSpan>>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Tracer.ts#L133"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Tracer.ts#L141"
   },
   {
     "_tag": "Interface",
@@ -939,7 +940,7 @@
     "since": "1.0.0",
     "category": "tags",
     "signature": "export interface OtelTracerProvider {\n  readonly _: unique symbol\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Tracer.ts#L72"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Tracer.ts#L80"
   },
   {
     "_tag": "Interface",
@@ -954,7 +955,7 @@
     "since": "1.0.0",
     "category": "tags",
     "signature": "export interface OtelTracer {\n  readonly _: unique symbol\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Tracer.ts#L86"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Tracer.ts#L94"
   },
   {
     "_tag": "Interface",
@@ -969,7 +970,7 @@
     "since": "1.0.0",
     "category": "tags",
     "signature": "export interface OtelTraceFlags {\n  readonly _: unique symbol\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Tracer.ts#L100"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Tracer.ts#L108"
   },
   {
     "_tag": "Interface",
@@ -984,7 +985,7 @@
     "since": "1.0.0",
     "category": "tags",
     "signature": "export interface OtelTraceState {\n  readonly _: unique symbol\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Tracer.ts#L114"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Tracer.ts#L122"
   },
   {
     "_tag": "Function",
