@@ -14,6 +14,6 @@ By default, this is set to `true`, meaning that defects will be captured.
 declare class CaptureDefects
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Workflow.ts#L691)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Workflow.ts#L693)
 
 Since v1.0.0

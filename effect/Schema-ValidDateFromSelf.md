@@ -15,6 +15,6 @@ represent real dates.
 declare class ValidDateFromSelf
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L6804)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L6811)
 
 Since v3.10.0

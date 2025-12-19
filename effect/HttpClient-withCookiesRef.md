@@ -11,6 +11,6 @@ Associates a `Ref` of cookies with the client for handling cookies across reques
 declare const withCookiesRef: { (ref: Ref<Cookies>): <E, R>(self: HttpClient.With<E, R>) => HttpClient.With<E, R>; <E, R>(self: HttpClient.With<E, R>, ref: Ref<Cookies>): HttpClient.With<E, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpClient.ts#L597)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpClient.ts#L616)
 
 Since v1.0.0

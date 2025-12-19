@@ -1064,7 +1064,7 @@
     "since": "1.0.0",
     "category": "serialization / deserialization",
     "signature": "declare const RequestFromSelf: Schema.Schema<Request.Any, Request.Any, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Envelope.ts#L214"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Envelope.ts#L215"
   },
   {
     "_tag": "Constant",
@@ -1079,7 +1079,7 @@
     "since": "1.0.0",
     "category": "serialization / deserialization",
     "signature": "declare const PartialEncodedRequest: Schema.Struct<{ _tag: Schema.Literal<[\"Request\"]>; requestId: Schema.Schema<Snowflake, string>; address: typeof EntityAddress; tag: typeof Schema.String; payload: typeof Schema.Unknown; headers: Schema.Schema<Headers.Headers, ReadonlyRecord<string, string>>; traceId: Schema.optional<typeof Schema.String>; spanId: Schema.optional<typeof Schema.String>; sampled: Schema.optional<typeof Schema.Boolean>; }>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Envelope.ts#L225"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Envelope.ts#L227"
   },
   {
     "_tag": "Constant",
@@ -1094,7 +1094,7 @@
     "since": "1.0.0",
     "category": "serialization / deserialization",
     "signature": "declare const PartialEncoded: Schema.Union<[Schema.Struct<{ _tag: Schema.Literal<[\"Request\"]>; requestId: Schema.Schema<Snowflake, string>; address: typeof EntityAddress; tag: typeof Schema.String; payload: typeof Schema.Unknown; headers: Schema.Schema<Headers.Headers, ReadonlyRecord<string, string>>; traceId: Schema.optional<typeof Schema.String>; spanId: Schema.optional<typeof Schema.String>; sampled: Schema.optional<typeof Schema.Boolean>; }>, typeof AckChunk, typeof Interrupt]>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Envelope.ts#L253"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Envelope.ts#L255"
   },
   {
     "_tag": "Constant",
@@ -1109,7 +1109,7 @@
     "since": "1.0.0",
     "category": "serialization / deserialization",
     "signature": "declare const PartialEncodedArray: Schema.Schema<Array<Envelope.PartialEncoded>, Array<Envelope.Encoded>, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Envelope.ts#L280"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Envelope.ts#L282"
   },
   {
     "_tag": "Constant",
@@ -1124,7 +1124,7 @@
     "since": "1.0.0",
     "category": "serialization / deserialization",
     "signature": "declare const PartialEncodedRequestFromSelf: Schema.Struct<{ _tag: Schema.Literal<[\"Request\"]>; requestId: Schema.Schema<Snowflake>; address: Schema.Schema<EntityAddress>; tag: typeof Schema.String; payload: typeof Schema.Unknown; headers: Schema.Schema<Headers.Headers>; traceId: Schema.optional<typeof Schema.String>; spanId: Schema.optional<typeof Schema.String>; sampled: Schema.optional<typeof Schema.Boolean>; }>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Envelope.ts#L289"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Envelope.ts#L291"
   },
   {
     "_tag": "Constant",
@@ -1139,7 +1139,7 @@
     "since": "1.0.0",
     "category": "serialization / deserialization",
     "signature": "declare const PartialEncodedFromSelf: Schema.Union<[Schema.Struct<{ _tag: Schema.Literal<[\"Request\"]>; requestId: Schema.Schema<Snowflake>; address: Schema.Schema<EntityAddress>; tag: typeof Schema.String; payload: typeof Schema.Unknown; headers: Schema.Schema<Headers.Headers>; traceId: Schema.optional<typeof Schema.String>; spanId: Schema.optional<typeof Schema.String>; sampled: Schema.optional<typeof Schema.Boolean>; }>, Schema.Schema<AckChunk, AckChunk, never>, Schema.Schema<Interrupt, Interrupt, never>]>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Envelope.ts#L317"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Envelope.ts#L319"
   },
   {
     "_tag": "Function",
@@ -1184,7 +1184,7 @@
     "since": "1.0.0",
     "category": "primary key",
     "signature": "declare const primaryKey: <R extends Rpc.Any>(envelope: Envelope<R>) => string | null",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Envelope.ts#L345"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Envelope.ts#L347"
   },
   {
     "_tag": "Function",
@@ -1199,7 +1199,7 @@
     "since": "1.0.0",
     "category": "primary key",
     "signature": "declare const primaryKeyByAddress: (options: { readonly address: EntityAddress; readonly tag: string; readonly id: string; }) => string",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Envelope.ts#L360"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Envelope.ts#L362"
   },
   {
     "_tag": "Interface",
@@ -2798,7 +2798,7 @@
     "since": "1.0.0",
     "category": "models",
     "signature": "declare class WithExit<R>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Reply.ts#L242"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Reply.ts#L245"
   },
   {
     "_tag": "Constant",
@@ -2873,7 +2873,7 @@
     "since": "1.0.0",
     "category": "serialization / deserialization",
     "signature": "declare const serialize: <R extends Rpc.Any>(self: ReplyWithContext<R>) => Effect.Effect<ReplyEncoded<R>, MalformedMessage>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Reply.ts#L290"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Reply.ts#L293"
   },
   {
     "_tag": "Function",
@@ -2888,7 +2888,7 @@
     "since": "1.0.0",
     "category": "serialization / deserialization",
     "signature": "declare const serializeLastReceived: <R extends Rpc.Any>(self: OutgoingRequest<R>) => Effect.Effect<Option.Option<ReplyEncoded<R>>, MalformedMessage>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Reply.ts#L303"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Reply.ts#L306"
   },
   {
     "_tag": "Interface",

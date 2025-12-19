@@ -12,6 +12,6 @@ the `new URL` constructor.
 declare const URL: typeof URL$
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L4957)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L4960)
 
 Since v3.11.0

@@ -12,6 +12,6 @@ A transformation that transform a `Schema<A, I, R>` into a
 declare const Redacted: <Value extends Schema.Any>(value: Value) => Redacted<Value>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L5875)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L5879)
 
 Since v3.10.0

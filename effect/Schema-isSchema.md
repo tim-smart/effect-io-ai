@@ -11,6 +11,6 @@ Tests if a value is a `Schema`.
 declare const isSchema: (u: unknown) => u is Schema.Any
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L665)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L666)
 
 Since v3.10.0

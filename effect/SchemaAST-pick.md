@@ -11,6 +11,6 @@ Equivalent at runtime to the built-in TypeScript utility type `Pick`.
 declare const pick: (ast: AST, keys: ReadonlyArray<PropertyKey>) => TypeLiteral | Transformation
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/SchemaAST.ts#L2383)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/SchemaAST.ts#L2407)
 
 Since v3.10.0

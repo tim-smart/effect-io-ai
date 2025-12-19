@@ -2339,7 +2339,7 @@
     "since": "1.0.0",
     "category": "schemas",
     "signature": "declare const schema: Schema.Schema<Headers, Record.ReadonlyRecord<string, string>, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Headers.ts#L70"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Headers.ts#L71"
   },
   {
     "_tag": "Constant",
@@ -2354,7 +2354,7 @@
     "since": "1.0.0",
     "category": "constructors",
     "signature": "declare const empty: Headers",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Headers.ts#L89"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Headers.ts#L90"
   },
   {
     "_tag": "Constant",
@@ -2369,7 +2369,7 @@
     "since": "1.0.0",
     "category": "combinators",
     "signature": "declare const has: { (key: string): (self: Headers) => boolean; (self: Headers, key: string): boolean; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Headers.ts#L127"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Headers.ts#L128"
   },
   {
     "_tag": "Constant",
@@ -2384,7 +2384,7 @@
     "since": "1.0.0",
     "category": "combinators",
     "signature": "declare const get: { (key: string): (self: Headers) => Option.Option<string>; (self: Headers, key: string): Option.Option<string>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Headers.ts#L139"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Headers.ts#L140"
   },
   {
     "_tag": "Constant",
@@ -2399,7 +2399,7 @@
     "since": "1.0.0",
     "category": "combinators",
     "signature": "declare const set: { (key: string, value: string): (self: Headers) => Headers; (self: Headers, key: string, value: string): Headers; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Headers.ts#L151"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Headers.ts#L152"
   },
   {
     "_tag": "Constant",
@@ -2414,7 +2414,7 @@
     "since": "1.0.0",
     "category": "combinators",
     "signature": "declare const setAll: { (headers: Input): (self: Headers) => Headers; (self: Headers, headers: Input): Headers; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Headers.ts#L167"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Headers.ts#L168"
   },
   {
     "_tag": "Constant",
@@ -2429,7 +2429,7 @@
     "since": "1.0.0",
     "category": "combinators",
     "signature": "declare const merge: { (headers: Headers): (self: Headers) => Headers; (self: Headers, headers: Headers): Headers; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Headers.ts#L183"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Headers.ts#L184"
   },
   {
     "_tag": "Constant",
@@ -2444,7 +2444,7 @@
     "since": "1.0.0",
     "category": "combinators",
     "signature": "declare const remove: { (key: string | RegExp | ReadonlyArray<string | RegExp>): (self: Headers) => Headers; (self: Headers, key: string | RegExp | ReadonlyArray<string | RegExp>): Headers; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Headers.ts#L199"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Headers.ts#L200"
   },
   {
     "_tag": "Constant",
@@ -2459,7 +2459,7 @@
     "since": "1.0.0",
     "category": "combinators",
     "signature": "declare const redact: { (key: string | RegExp | ReadonlyArray<string | RegExp>): (self: Headers) => Record<string, string | Redacted.Redacted>; (self: Headers, key: string | RegExp | ReadonlyArray<string | RegExp>): Record<string, string | Redacted.Redacted>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Headers.ts#L235"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Headers.ts#L236"
   },
   {
     "_tag": "Constant",
@@ -2474,7 +2474,7 @@
     "since": "1.0.0",
     "category": "fiber refs",
     "signature": "declare const currentRedactedNames: FiberRef.FiberRef<ReadonlyArray<string | RegExp>>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Headers.ts#L279"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Headers.ts#L280"
   },
   {
     "_tag": "Function",
@@ -2504,7 +2504,7 @@
     "since": "1.0.0",
     "category": "constructors",
     "signature": "declare const fromInput: (input?: Input) => Headers",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Headers.ts#L95"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Headers.ts#L96"
   },
   {
     "_tag": "Function",
@@ -2519,7 +2519,7 @@
     "since": "1.0.0",
     "category": "constructors",
     "signature": "declare const unsafeFromRecord: (input: Record.ReadonlyRecord<string, string>) => Headers",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Headers.ts#L120"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Headers.ts#L121"
   },
   {
     "_tag": "Interface",
@@ -2564,7 +2564,7 @@
     "since": "1.0.0",
     "category": "models",
     "signature": "type Input = | Record.ReadonlyRecord<string, string | ReadonlyArray<string> | undefined>\n  | Iterable<readonly [string, string]>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Headers.ts#L81"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Headers.ts#L82"
   },
   {
     "_tag": "Class",
@@ -7142,7 +7142,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "error handling",
-    "signature": "declare const retryTransient: { <B, E, R1 = never>(options: { readonly while?: Predicate.Predicate<NoInfer<E>>; readonly schedule?: Schedule.Schedule<B, NoInfer<E>, R1>; readonly times?: number; } | Schedule.Schedule<B, NoInfer<E>, R1>): <R>(self: HttpClient.With<E, R>) => HttpClient.With<E, R1 | R>; <E, R, B, R1 = never>(self: HttpClient.With<E, R>, options: { readonly while?: Predicate.Predicate<NoInfer<E>>; readonly schedule?: Schedule.Schedule<B, NoInfer<E>, R1>; readonly times?: number; } | Schedule.Schedule<B, NoInfer<E>, R1>): HttpClient.With<E, R1 | R>; }",
+    "signature": "declare const retryTransient: { <B, E, R1 = never, const Mode extends \"errors-only\" | \"response-only\" | \"both\" = never, Input = \"errors-only\" extends Mode ? E : \"response-only\" extends Mode ? ClientResponse.HttpClientResponse : ClientResponse.HttpClientResponse | E>(options: { readonly mode?: Mode | undefined; readonly while?: Predicate.Predicate<NoInfer<Input>>; readonly schedule?: Schedule.Schedule<B, NoInfer<Input>, R1>; readonly times?: number; } | Schedule.Schedule<B, NoInfer<Input>, R1>): <R>(self: HttpClient.With<E, R>) => HttpClient.With<E, R1 | R>; <E, R, B, R1 = never, const Mode extends \"errors-only\" | \"response-only\" | \"both\" = never, Input = \"errors-only\" extends Mode ? E : \"response-only\" extends Mode ? ClientResponse.HttpClientResponse : ClientResponse.HttpClientResponse | E>(self: HttpClient.With<E, R>, options: { readonly mode?: Mode | undefined; readonly while?: Predicate.Predicate<NoInfer<Input>>; readonly schedule?: Schedule.Schedule<B, NoInfer<Input>, R1>; readonly times?: number; } | Schedule.Schedule<B, NoInfer<Input>, R1>): HttpClient.With<E, R1 | R>; }",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpClient.ts#L525"
   },
   {
@@ -7159,7 +7159,7 @@
     "since": "1.0.0",
     "category": "mapping & sequencing",
     "signature": "declare const tap: { <_, E2, R2>(f: (response: ClientResponse.HttpClientResponse) => Effect.Effect<_, E2, R2>): <E, R>(self: HttpClient.With<E, R>) => HttpClient.With<E | E2, R | R2>; <E, R, _, E2, R2>(self: HttpClient.With<E, R>, f: (response: ClientResponse.HttpClientResponse) => Effect.Effect<_, E2, R2>): HttpClient.With<E | E2, R | R2>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpClient.ts#L549"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpClient.ts#L568"
   },
   {
     "_tag": "Constant",
@@ -7175,7 +7175,7 @@
     "since": "1.0.0",
     "category": "mapping & sequencing",
     "signature": "declare const tapError: { <_, E, E2, R2>(f: (e: NoInfer<E>) => Effect.Effect<_, E2, R2>): <R>(self: HttpClient.With<E, R>) => HttpClient.With<E | E2, R | R2>; <E, R, _, E2, R2>(self: HttpClient.With<E, R>, f: (e: NoInfer<E>) => Effect.Effect<_, E2, R2>): HttpClient.With<E | E2, R | R2>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpClient.ts#L565"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpClient.ts#L584"
   },
   {
     "_tag": "Constant",
@@ -7191,7 +7191,7 @@
     "since": "1.0.0",
     "category": "mapping & sequencing",
     "signature": "declare const tapRequest: { <_, E2, R2>(f: (a: ClientRequest.HttpClientRequest) => Effect.Effect<_, E2, R2>): <E, R>(self: HttpClient.With<E, R>) => HttpClient.With<E | E2, R | R2>; <E, R, _, E2, R2>(self: HttpClient.With<E, R>, f: (a: ClientRequest.HttpClientRequest) => Effect.Effect<_, E2, R2>): HttpClient.With<E | E2, R | R2>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpClient.ts#L581"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpClient.ts#L600"
   },
   {
     "_tag": "Constant",
@@ -7207,7 +7207,7 @@
     "since": "1.0.0",
     "category": "cookies",
     "signature": "declare const withCookiesRef: { (ref: Ref<Cookies>): <E, R>(self: HttpClient.With<E, R>) => HttpClient.With<E, R>; <E, R>(self: HttpClient.With<E, R>, ref: Ref<Cookies>): HttpClient.With<E, R>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpClient.ts#L597"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpClient.ts#L616"
   },
   {
     "_tag": "Constant",
@@ -7223,7 +7223,7 @@
     "since": "1.0.0",
     "category": "redirects",
     "signature": "declare const followRedirects: { (maxRedirects?: number | undefined): <E, R>(self: HttpClient.With<E, R>) => HttpClient.With<E, R>; <E, R>(self: HttpClient.With<E, R>, maxRedirects?: number | undefined): HttpClient.With<E, R>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpClient.ts#L608"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpClient.ts#L627"
   },
   {
     "_tag": "Constant",
@@ -7238,7 +7238,7 @@
     "since": "1.0.0",
     "category": "Tracing",
     "signature": "declare const currentTracerDisabledWhen: FiberRef.FiberRef<Predicate.Predicate<ClientRequest.HttpClientRequest>>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpClient.ts#L617"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpClient.ts#L636"
   },
   {
     "_tag": "Constant",
@@ -7254,7 +7254,7 @@
     "since": "1.0.0",
     "category": "Tracing",
     "signature": "declare const withTracerDisabledWhen: { (predicate: Predicate.Predicate<ClientRequest.HttpClientRequest>): <E, R>(self: HttpClient.With<E, R>) => HttpClient.With<E, R>; <E, R>(self: HttpClient.With<E, R>, predicate: Predicate.Predicate<ClientRequest.HttpClientRequest>): HttpClient.With<E, R>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpClient.ts#L626"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpClient.ts#L645"
   },
   {
     "_tag": "Constant",
@@ -7269,7 +7269,7 @@
     "since": "1.0.0",
     "category": "Tracing",
     "signature": "declare const currentTracerPropagation: FiberRef.FiberRef<boolean>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpClient.ts#L640"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpClient.ts#L659"
   },
   {
     "_tag": "Constant",
@@ -7285,7 +7285,7 @@
     "since": "1.0.0",
     "category": "Tracing",
     "signature": "declare const withTracerPropagation: { (enabled: boolean): <E, R>(self: HttpClient.With<E, R>) => HttpClient.With<E, R>; <E, R>(self: HttpClient.With<E, R>, enabled: boolean): HttpClient.With<E, R>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpClient.ts#L648"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpClient.ts#L667"
   },
   {
     "_tag": "Constant",
@@ -7300,7 +7300,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "declare const layerMergedContext: <E, R>(effect: Effect.Effect<HttpClient, E, R>) => Layer<HttpClient, E, R>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpClient.ts#L656"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpClient.ts#L675"
   },
   {
     "_tag": "Constant",
@@ -7315,7 +7315,7 @@
     "since": "1.0.0",
     "category": "Tracing",
     "signature": "declare const SpanNameGenerator: Context.Reference<SpanNameGenerator, (request: ClientRequest.HttpClientRequest) => string>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpClient.ts#L672"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpClient.ts#L691"
   },
   {
     "_tag": "Constant",
@@ -7331,7 +7331,7 @@
     "since": "1.0.0",
     "category": "Tracing",
     "signature": "declare const withSpanNameGenerator: { (f: (request: ClientRequest.HttpClientRequest) => string): <E, R>(self: HttpClient.With<E, R>) => HttpClient.With<E, R>; <E, R>(self: HttpClient.With<E, R>, f: (request: ClientRequest.HttpClientRequest) => string): HttpClient.With<E, R>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpClient.ts#L700"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpClient.ts#L719"
   },
   {
     "_tag": "Constant",
@@ -7347,7 +7347,7 @@
     "since": "1.0.0",
     "category": "Scope",
     "signature": "declare const withScope: <E, R>(self: HttpClient.With<E, R>) => HttpClient.With<E, R | Scope>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpClient.ts#L713"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpClient.ts#L732"
   },
   {
     "_tag": "Interface",
@@ -7377,7 +7377,7 @@
     "since": "1.0.0",
     "category": "Tracing",
     "signature": "export interface SpanNameGenerator {\n  readonly _: unique symbol\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpClient.ts#L664"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpClient.ts#L683"
   },
   {
     "_tag": "TypeAlias",
@@ -13635,7 +13635,7 @@
     "since": "1.0.0",
     "category": "fiber refs",
     "signature": "declare class MaxParts",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Multipart.ts#L694"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Multipart.ts#L695"
   },
   {
     "_tag": "Class",
@@ -13650,7 +13650,7 @@
     "since": "1.0.0",
     "category": "fiber refs",
     "signature": "declare class MaxFieldSize",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Multipart.ts#L715"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Multipart.ts#L716"
   },
   {
     "_tag": "Class",
@@ -13665,7 +13665,7 @@
     "since": "1.0.0",
     "category": "fiber refs",
     "signature": "declare class MaxFileSize",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Multipart.ts#L736"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Multipart.ts#L737"
   },
   {
     "_tag": "Class",
@@ -13680,7 +13680,7 @@
     "since": "1.0.0",
     "category": "fiber refs",
     "signature": "declare class FieldMimeTypes",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Multipart.ts#L761"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Multipart.ts#L762"
   },
   {
     "_tag": "Constant",
@@ -13740,7 +13740,7 @@
     "since": "1.0.0",
     "category": "Schemas",
     "signature": "declare const FilesSchema: Schema.Schema<ReadonlyArray<PersistedFile>, ReadonlyArray<PersistedFile>, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Multipart.ts#L178"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Multipart.ts#L179"
   },
   {
     "_tag": "Constant",
@@ -13755,7 +13755,7 @@
     "since": "1.0.0",
     "category": "Schemas",
     "signature": "declare const SingleFileSchema: Schema.transform<Schema.Schema<ReadonlyArray<PersistedFile>, ReadonlyArray<PersistedFile>, never>, Schema.Schema<PersistedFile, PersistedFile, never>>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Multipart.ts#L184"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Multipart.ts#L185"
   },
   {
     "_tag": "Constant",
@@ -13770,7 +13770,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "declare const collectUint8Array: Channel.Channel<never, Chunk.Chunk<Uint8Array<ArrayBufferLike>>, unknown, unknown, Uint8Array<ArrayBufferLike>, unknown, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Multipart.ts#L483"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Multipart.ts#L484"
   },
   {
     "_tag": "Constant",
@@ -13785,7 +13785,7 @@
     "since": "1.0.0",
     "category": "fiber refs",
     "signature": "declare const withLimits: { (options: { readonly maxParts?: Option.Option<number> | undefined; readonly maxFieldSize?: FileSystem.SizeInput | undefined; readonly maxFileSize?: Option.Option<FileSystem.SizeInput> | undefined; readonly maxTotalSize?: Option.Option<FileSystem.SizeInput> | undefined; readonly fieldMimeTypes?: ReadonlyArray<string> | undefined; }): <A, E, R>(effect: Effect.Effect<A, E, R>) => Effect.Effect<A, E, R>; <A, E, R>(effect: Effect.Effect<A, E, R>, options: { readonly maxParts?: Option.Option<number> | undefined; readonly maxFieldSize?: FileSystem.SizeInput | undefined; readonly maxFileSize?: Option.Option<FileSystem.SizeInput> | undefined; readonly maxTotalSize?: Option.Option<FileSystem.SizeInput> | undefined; readonly fieldMimeTypes?: ReadonlyArray<string> | undefined; }): Effect.Effect<A, E, R>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Multipart.ts#L584"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Multipart.ts#L585"
   },
   {
     "_tag": "Constant",
@@ -13800,7 +13800,7 @@
     "since": "1.0.0",
     "category": "fiber refs",
     "signature": "declare const withLimitsStream: { (options: { readonly maxParts?: Option.Option<number> | undefined; readonly maxFieldSize?: FileSystem.SizeInput | undefined; readonly maxFileSize?: Option.Option<FileSystem.SizeInput> | undefined; readonly maxTotalSize?: Option.Option<FileSystem.SizeInput> | undefined; readonly fieldMimeTypes?: ReadonlyArray<string> | undefined; }): <A, E, R>(stream: Stream.Stream<A, E, R>) => Stream.Stream<A, E, R>; <A, E, R>(stream: Stream.Stream<A, E, R>, options: { readonly maxParts?: Option.Option<number> | undefined; readonly maxFieldSize?: FileSystem.SizeInput | undefined; readonly maxFileSize?: Option.Option<FileSystem.SizeInput> | undefined; readonly maxTotalSize?: Option.Option<FileSystem.SizeInput> | undefined; readonly fieldMimeTypes?: ReadonlyArray<string> | undefined; }): Stream.Stream<A, E, R>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Multipart.ts#L643"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Multipart.ts#L644"
   },
   {
     "_tag": "Constant",
@@ -13815,7 +13815,7 @@
     "since": "1.0.0",
     "category": "fiber refs",
     "signature": "declare const withMaxParts: { (count: Option.Option<number>): <A, E, R>(effect: Effect.Effect<A, E, R>) => Effect.Effect<A, E, R>; <A, E, R>(effect: Effect.Effect<A, E, R>, count: Option.Option<number>): Effect.Effect<A, E, R>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Multipart.ts#L702"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Multipart.ts#L703"
   },
   {
     "_tag": "Constant",
@@ -13830,7 +13830,7 @@
     "since": "1.0.0",
     "category": "fiber refs",
     "signature": "declare const withMaxFieldSize: { (size: FileSystem.SizeInput): <A, E, R>(effect: Effect.Effect<A, E, R>) => Effect.Effect<A, E, R>; <A, E, R>(effect: Effect.Effect<A, E, R>, size: FileSystem.SizeInput): Effect.Effect<A, E, R>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Multipart.ts#L723"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Multipart.ts#L724"
   },
   {
     "_tag": "Constant",
@@ -13845,7 +13845,7 @@
     "since": "1.0.0",
     "category": "fiber refs",
     "signature": "declare const withMaxFileSize: { (size: Option.Option<FileSystem.SizeInput>): <A, E, R>(effect: Effect.Effect<A, E, R>) => Effect.Effect<A, E, R>; <A, E, R>(effect: Effect.Effect<A, E, R>, size: Option.Option<FileSystem.SizeInput>): Effect.Effect<A, E, R>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Multipart.ts#L744"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Multipart.ts#L745"
   },
   {
     "_tag": "Constant",
@@ -13860,7 +13860,7 @@
     "since": "1.0.0",
     "category": "fiber refs",
     "signature": "declare const withFieldMimeTypes: { (mimeTypes: ReadonlyArray<string>): <A, E, R>(effect: Effect.Effect<A, E, R>) => Effect.Effect<A, E, R>; <A, E, R>(effect: Effect.Effect<A, E, R>, mimeTypes: ReadonlyArray<string>): Effect.Effect<A, E, R>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Multipart.ts#L769"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Multipart.ts#L770"
   },
   {
     "_tag": "Function",
@@ -13935,7 +13935,7 @@
     "since": "1.0.0",
     "category": "Schemas",
     "signature": "declare const schemaPersisted: <A, I extends Partial<Persisted>, R>(schema: Schema.Schema<A, I, R>, options?: ParseOptions | undefined) => (persisted: Persisted) => Effect.Effect<A, ParseResult.ParseError, R>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Multipart.ts#L197"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Multipart.ts#L198"
   },
   {
     "_tag": "Function",
@@ -13950,7 +13950,7 @@
     "since": "1.0.0",
     "category": "Schemas",
     "signature": "declare const schemaJson: <A, I, R>(schema: Schema.Schema<A, I, R>, options?: ParseOptions | undefined) => { (field: string): (persisted: Persisted) => Effect.Effect<A, ParseResult.ParseError, R>; (persisted: Persisted, field: string): Effect.Effect<A, ParseResult.ParseError, R>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Multipart.ts#L210"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Multipart.ts#L211"
   },
   {
     "_tag": "Function",
@@ -13965,7 +13965,7 @@
     "since": "1.0.0",
     "category": "Config",
     "signature": "declare const makeConfig: (headers: Record<string, string>) => Effect.Effect<MP.BaseConfig>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Multipart.ts#L246"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Multipart.ts#L247"
   },
   {
     "_tag": "Function",
@@ -13980,7 +13980,7 @@
     "since": "1.0.0",
     "category": "Parsers",
     "signature": "declare const makeChannel: <IE>(headers: Record<string, string>, bufferSize?: number) => Channel.Channel<Chunk.Chunk<Part>, Chunk.Chunk<Uint8Array>, MultipartError | IE, IE, unknown, unknown>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Multipart.ts#L272"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Multipart.ts#L273"
   },
   {
     "_tag": "Function",
@@ -13995,7 +13995,7 @@
     "since": "1.0.0",
     "category": "Conversions",
     "signature": "declare const toPersisted: (stream: Stream.Stream<Part, MultipartError>, writeFile?: (path: string, file: File) => Effect.Effect<void, MultipartError, FileSystem.FileSystem>) => Effect.Effect<Persisted, MultipartError, FileSystem.FileSystem | Path.Path | Scope.Scope>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Multipart.ts#L511"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Multipart.ts#L512"
   },
   {
     "_tag": "Interface",
@@ -14130,7 +14130,7 @@
     "since": "1.0.0",
     "category": "fiber refs",
     "signature": "type Options = {\n    readonly maxParts?: Option.Option<number> | undefined\n    readonly maxFieldSize?: FileSystem.SizeInput | undefined\n    readonly maxFileSize?: Option.Option<FileSystem.SizeInput> | undefined\n    readonly maxTotalSize?: Option.Option<FileSystem.SizeInput> | undefined\n    readonly fieldMimeTypes?: ReadonlyArray<string> | undefined\n  }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Multipart.ts#L681"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Multipart.ts#L682"
   },
   {
     "_tag": "Class",

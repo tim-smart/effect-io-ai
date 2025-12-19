@@ -15,6 +15,6 @@ The following special string values are supported: "NaN", "Infinity", "-Infinity
 declare class NumberFromString
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L5339)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L5342)
 
 Since v3.10.0

@@ -11,6 +11,6 @@ This schema converts a string to capitalized one.
 declare class Capitalize
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L4703)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L4705)
 
 Since v3.10.0

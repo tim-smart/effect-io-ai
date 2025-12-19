@@ -28,6 +28,6 @@ Effect.gen(function* () {
 declare const withSpanNameGenerator: { (f: (request: ClientRequest.HttpClientRequest) => string): <E, R>(self: HttpClient.With<E, R>) => HttpClient.With<E, R>; <E, R>(self: HttpClient.With<E, R>, f: (request: ClientRequest.HttpClientRequest) => string): HttpClient.With<E, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpClient.ts#L700)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpClient.ts#L719)
 
 Since v1.0.0

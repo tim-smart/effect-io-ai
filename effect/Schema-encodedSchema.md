@@ -14,6 +14,6 @@ were applied previously.
 declare const encodedSchema: <A, I, R>(schema: Schema<A, I, R>) => SchemaClass<I>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L395)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L396)
 
 Since v3.10.0

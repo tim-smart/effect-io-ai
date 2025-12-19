@@ -11,6 +11,6 @@ This schema converts a string to uppercase.
 declare class Uppercase
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L4687)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L4689)
 
 Since v3.10.0

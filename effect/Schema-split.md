@@ -11,6 +11,6 @@ Returns a schema that allows splitting a string into an array of strings.
 declare const split: (separator: string) => transform<SchemaClass<string>, Array$<typeof String$>>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L4779)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L4781)
 
 Since v3.10.0
