@@ -11,6 +11,6 @@ Emitted when the code interpreter call is completed.
 declare class ResponseCodeInterpreterCallCompletedEvent
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L1614)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L1625)
 
 Since v1.0.0

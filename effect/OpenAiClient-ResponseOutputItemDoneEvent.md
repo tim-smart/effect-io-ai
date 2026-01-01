@@ -11,6 +11,6 @@ Emitted when an output item is marked done.
 declare class ResponseOutputItemDoneEvent
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L429)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L440)
 
 Since v1.0.0

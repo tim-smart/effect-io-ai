@@ -33,6 +33,6 @@ HttpRouter.empty.pipe(
 declare const withSpanNameGenerator: { (f: (request: ServerRequest.HttpServerRequest) => string): <A, E, R>(layer: Layer.Layer<A, E, R>) => Layer.Layer<A, E, R>; <A, E, R>(layer: Layer.Layer<A, E, R>, f: (request: ServerRequest.HttpServerRequest) => string): Layer.Layer<A, E, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpMiddleware.ts#L179)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpMiddleware.ts#L229)
 
 Since v1.0.0

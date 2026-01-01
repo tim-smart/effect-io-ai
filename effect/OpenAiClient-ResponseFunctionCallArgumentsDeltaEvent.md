@@ -11,6 +11,6 @@ Emitted when there is a partial function-call arguments delta.
 declare class ResponseFunctionCallArgumentsDeltaEvent
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L751)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L762)
 
 Since v1.0.0

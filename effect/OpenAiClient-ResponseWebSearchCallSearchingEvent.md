@@ -11,6 +11,6 @@ Emitted when a web search call is executing.
 declare class ResponseWebSearchCallSearchingEvent
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L921)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L932)
 
 Since v1.0.0

@@ -11,6 +11,6 @@ Emitted when a file search call is initiated.
 declare class ResponseFileSearchCallInProgressEvent
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L813)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L824)
 
 Since v1.0.0

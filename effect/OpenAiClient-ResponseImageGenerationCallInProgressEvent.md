@@ -11,6 +11,6 @@ Emitted when an image generation tool call is in progress.
 declare class ResponseImageGenerationCallInProgressEvent
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L1202)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L1213)
 
 Since v1.0.0

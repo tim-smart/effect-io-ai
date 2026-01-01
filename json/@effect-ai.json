@@ -227,7 +227,7 @@
     "since": "1.0.0",
     "category": "Context",
     "signature": "declare class Chat",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Chat.ts#L94"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Chat.ts#L95"
   },
   {
     "_tag": "Class",
@@ -243,7 +243,7 @@
     "since": "1.0.0",
     "category": "Errors",
     "signature": "declare class ChatNotFoundError",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Chat.ts#L590"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Chat.ts#L593"
   },
   {
     "_tag": "Class",
@@ -259,7 +259,7 @@
     "since": "1.0.0",
     "category": "Context",
     "signature": "declare class Persistence",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Chat.ts#L601"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Chat.ts#L604"
   },
   {
     "_tag": "Constant",
@@ -277,7 +277,7 @@
     "since": "1.0.0",
     "category": "Constructors",
     "signature": "declare const empty: Effect.Effect<Service, never, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Chat.ts#L326"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Chat.ts#L327"
   },
   {
     "_tag": "Constant",
@@ -296,7 +296,7 @@
     "since": "1.0.0",
     "category": "Constructors",
     "signature": "declare const fromPrompt: (prompt: Prompt.RawInput) => Effect.Effect<Service, never, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Chat.ts#L490"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Chat.ts#L493"
   },
   {
     "_tag": "Constant",
@@ -312,7 +312,7 @@
     "since": "1.0.0",
     "category": "Constructors",
     "signature": "declare const makePersisted: (options: { readonly storeId: string; }) => Effect.Effect<Persistence.Service, never, Scope | BackingPersistence>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Chat.ts#L677"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Chat.ts#L680"
   },
   {
     "_tag": "Function",
@@ -330,7 +330,7 @@
     "since": "1.0.0",
     "category": "Constructors",
     "signature": "declare const fromExport: (data: unknown) => Effect.Effect<Service, ParseError, LanguageModel.LanguageModel>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Chat.ts#L535"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Chat.ts#L538"
   },
   {
     "_tag": "Function",
@@ -348,7 +348,7 @@
     "since": "1.0.0",
     "category": "Constructors",
     "signature": "declare const fromJson: (data: string) => Effect.Effect<Service, ParseError, LanguageModel.LanguageModel>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Chat.ts#L576"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Chat.ts#L579"
   },
   {
     "_tag": "Function",
@@ -364,7 +364,7 @@
     "since": "1.0.0",
     "category": "Constructors",
     "signature": "declare const layerPersisted: (options: { readonly storeId: string; }) => Layer.Layer<Persistence, never, BackingPersistence>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Chat.ts#L848"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Chat.ts#L851"
   },
   {
     "_tag": "Interface",
@@ -380,7 +380,7 @@
     "since": "1.0.0",
     "category": "Models",
     "signature": "export interface Service {\n  /**\n   * Reference to the chat history.\n   *\n   * Provides direct access to the conversation history for advanced use cases\n   * like custom history manipulation or inspection.\n   *\n   * @example\n   * ```ts\n   * import { Chat } from \"@effect/ai\"\n   * import { Effect, Ref } from \"effect\"\n   *\n   * const inspectHistory = Effect.gen(function* () {\n   *   const chat = yield* Chat.empty\n   *   const currentHistory = yield* Ref.get(chat.history)\n   *   console.log(\"Current conversation:\", currentHistory)\n   *   return currentHistory\n   * })\n   * ```\n   */\n  readonly history: Ref.Ref<Prompt.Prompt>\n\n  /**\n   * Exports the chat history into a structured format.\n   *\n   * Returns the complete conversation history as a structured object\n   * that can be stored, transmitted, or processed by other systems.\n   *\n   * @example\n   * ```ts\n   * import { Chat } from \"@effect/ai\"\n   * import { Effect } from \"effect\"\n   *\n   * const saveChat = Effect.gen(function* () {\n   *   const chat = yield* Chat.empty\n   *   yield* chat.generateText({ prompt: \"Hello!\" })\n   *\n   *   const exportedData = yield* chat.export\n   *\n   *   // Save to database or file system\n   *   return exportedData\n   * })\n   * ```\n   */\n  readonly export: Effect.Effect<unknown, AiError.AiError>\n\n  /**\n   * Exports the chat history as a JSON string.\n   *\n   * Provides a convenient way to serialize the entire conversation\n   * for storage or transmission in JSON format.\n   *\n   * @example\n   * ```ts\n   * import { Chat } from \"@effect/ai\"\n   * import { Effect } from \"effect\"\n   *\n   * const backupChat = Effect.gen(function* () {\n   *   const chat = yield* Chat.empty\n   *   yield* chat.generateText({ prompt: \"Explain photosynthesis\" })\n   *\n   *   const jsonBackup = yield* chat.exportJson\n   *\n   *   yield* Effect.sync(() =>\n   *     localStorage.setItem(\"chat-backup\", jsonBackup)\n   *   )\n   *\n   *   return jsonBackup\n   * })\n   * ```\n   */\n  readonly exportJson: Effect.Effect<string, AiError.MalformedOutput>\n\n  /**\n   * Generate text using a language model for the specified prompt.\n   *\n   * If a toolkit is specified, the language model will have access to tools\n   * for function calling and enhanced capabilities. Both input and output\n   * messages are automatically added to the chat history.\n   *\n   * @example\n   * ```ts\n   * import { Chat } from \"@effect/ai\"\n   * import { Effect } from \"effect\"\n   *\n   * const chatWithAI = Effect.gen(function* () {\n   *   const chat = yield* Chat.empty\n   *\n   *   const response1 = yield* chat.generateText({\n   *     prompt: \"What is the capital of France?\"\n   *   })\n   *\n   *   const response2 = yield* chat.generateText({\n   *     prompt: \"What's the population of that city?\",\n   *   })\n   *\n   *   return [response1.content, response2.content]\n   * })\n   * ```\n   */\n  readonly generateText: <\n    Options extends NoExcessProperties<LanguageModel.GenerateTextOptions<any>, Options>,\n    Tools extends Record<string, Tool.Any> = {}\n  >(options: Options & LanguageModel.GenerateTextOptions<Tools>) => Effect.Effect<\n    LanguageModel.GenerateTextResponse<Tools>,\n    LanguageModel.ExtractError<Options>,\n    LanguageModel.LanguageModel | LanguageModel.ExtractContext<Options>\n  >\n\n  /**\n   * Generate text using a language model with streaming output.\n   *\n   * Returns a stream of response parts that are emitted as soon as they're\n   * available from the model. Supports tool calling and maintains chat history.\n   *\n   * @example\n   * ```ts\n   * import { Chat } from \"@effect/ai\"\n   * import { Effect, Stream, Console } from \"effect\"\n   *\n   * const streamingChat = Effect.gen(function* () {\n   *   const chat = yield* Chat.empty\n   *\n   *   const stream = yield* chat.streamText({\n   *     prompt: \"Write a short story about space exploration\"\n   *   })\n   *\n   *   yield* Stream.runForEach(stream, (part) =>\n   *     part.type === \"text-delta\"\n   *       ? Effect.sync(() => process.stdout.write(part.delta))\n   *       : Effect.void\n   *   )\n   * })\n   * ```\n   */\n  readonly streamText: <\n    Options extends NoExcessProperties<LanguageModel.GenerateTextOptions<any>, Options>,\n    Tools extends Record<string, Tool.Any> = {}\n  >(options: Options & LanguageModel.GenerateTextOptions<Tools>) => Stream.Stream<\n    Response.StreamPart<Tools>,\n    LanguageModel.ExtractError<Options>,\n    LanguageModel.LanguageModel | LanguageModel.ExtractContext<Options>\n  >\n\n  /**\n   * Generate a structured object using a language model and schema.\n   *\n   * Forces the model to return data that conforms to the specified schema,\n   * enabling structured data extraction and type-safe responses. The\n   * conversation history is maintained across calls.\n   *\n   * @example\n   * ```ts\n   * import { Chat } from \"@effect/ai\"\n   * import { Effect, Schema } from \"effect\"\n   *\n   * const ContactSchema = Schema.Struct({\n   *   name: Schema.String,\n   *   email: Schema.String,\n   *   phone: Schema.optional(Schema.String)\n   * })\n   *\n   * const extractContact = Effect.gen(function* () {\n   *   const chat = yield* Chat.empty\n   *\n   *   const contact = yield* chat.generateObject({\n   *     prompt: \"Extract contact info: John Doe, john@example.com, 555-1234\",\n   *     schema: ContactSchema\n   *   })\n   *\n   *   console.log(contact.object)\n   *   // { name: \"John Doe\", email: \"john@example.com\", phone: \"555-1234\" }\n   *\n   *   return contact.object\n   * })\n   * ```\n   */\n  readonly generateObject: <\n    A,\n    I extends Record<string, unknown>,\n    R,\n    Options extends NoExcessProperties<LanguageModel.GenerateObjectOptions<any, A, I, R>, Options>,\n    Tools extends Record<string, Tool.Any> = {}\n  >(options: Options & LanguageModel.GenerateObjectOptions<Tools, A, I, R>) => Effect.Effect<\n    LanguageModel.GenerateObjectResponse<Tools, A>,\n    LanguageModel.ExtractError<Options>,\n    LanguageModel.LanguageModel | R | LanguageModel.ExtractContext<Options>\n  >\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Chat.ts#L105"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Chat.ts#L106"
   },
   {
     "_tag": "Interface",
@@ -396,7 +396,7 @@
     "since": "1.0.0",
     "category": "Models",
     "signature": "export interface Persisted extends Service {\n  /**\n   * The identifier for the chat in the backing persistence store.\n   */\n  readonly id: string\n\n  /**\n   * Saves the current chat history into the backing persistence store.\n   */\n  readonly save: Effect.Effect<void, AiError.MalformedOutput | PersistenceBackingError>\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Chat.ts#L656"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Chat.ts#L659"
   },
   {
     "_tag": "Interface",
@@ -412,7 +412,7 @@
     "since": "1.0.0",
     "category": "Models",
     "signature": "export interface Service {\n    /**\n     * Attempts to retrieve the persisted chat from the backing persistence\n     * store with the specified chat identifer. If the chat does not exist in\n     * the persistence store, a `ChatNotFoundError` will be returned.\n     */\n    readonly get: (chatId: string, options?: {\n      readonly timeToLive?: Duration.DurationInput | undefined\n    }) => Effect.Effect<\n      Persisted,\n      ChatNotFoundError | PersistenceBackingError\n    >\n\n    /**\n     * Attempts to retrieve the persisted chat from the backing persistence\n     * store with the specified chat identifer. If the chat does not exist in\n     * the persistence store, an empty chat will be created, saved, and\n     * returned.\n     */\n    readonly getOrCreate: (chatId: string, options?: {\n      readonly timeToLive?: Duration.DurationInput | undefined\n    }) => Effect.Effect<\n      Persisted,\n      AiError.MalformedOutput | PersistenceBackingError\n    >\n  }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Chat.ts#L618"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Chat.ts#L621"
   },
   {
     "_tag": "Class",
@@ -3577,7 +3577,7 @@
     "since": "1.0.0",
     "category": "Combinators",
     "signature": "declare const merge: { (input: RawInput): (self: Prompt) => Prompt; (self: Prompt, input: RawInput): Prompt; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L1708"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L1679"
   },
   {
     "_tag": "Constant",
@@ -3595,7 +3595,7 @@
     "since": "1.0.0",
     "category": "Combinators",
     "signature": "declare const setSystem: { (content: string): (self: Prompt) => Prompt; (self: Prompt, content: string): Prompt; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L1755"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L1726"
   },
   {
     "_tag": "Constant",
@@ -3613,7 +3613,7 @@
     "since": "1.0.0",
     "category": "Combinators",
     "signature": "declare const prependSystem: { (content: string): (self: Prompt) => Prompt; (self: Prompt, content: string): Prompt; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L1798"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L1769"
   },
   {
     "_tag": "Constant",
@@ -3631,7 +3631,7 @@
     "since": "1.0.0",
     "category": "Combinators",
     "signature": "declare const appendSystem: { (content: string): (self: Prompt) => Prompt; (self: Prompt, content: string): Prompt; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L1847"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L1818"
   },
   {
     "_tag": "Function",
@@ -3913,7 +3913,7 @@
     "since": "1.0.0",
     "category": "Constructors",
     "signature": "declare const fromResponseParts: (parts: ReadonlyArray<Response.AnyPart>) => Prompt",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L1585"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L1553"
   },
   {
     "_tag": "Interface",

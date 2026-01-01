@@ -12,6 +12,6 @@ tool call.
 declare class ResponseMcpCallArgumentsDeltaEvent
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L1328)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L1339)
 
 Since v1.0.0

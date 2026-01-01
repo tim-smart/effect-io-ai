@@ -11,6 +11,6 @@ Emitted when there is a partial refusal text.
 declare class ResponseRefusalDeltaEvent
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L681)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L692)
 
 Since v1.0.0

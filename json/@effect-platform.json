@@ -9486,12 +9486,15 @@
     },
     "project": "@effect/platform",
     "name": "cors",
+    "description": "Creates a CORS (Cross-Origin Resource Sharing) middleware for HTTP applications.",
     "deprecated": false,
-    "examples": [],
+    "examples": [
+      "```ts\nimport { HttpMiddleware, HttpRouter, HttpServerResponse } from \"@effect/platform\"\n\n// Allow all origins and reflect requested headers (default behavior)\nHttpRouter.empty.pipe(\n  HttpRouter.get(\"/\", HttpServerResponse.empty()),\n  HttpMiddleware.cors()\n)\n\n// Restrict to specific origins and headers\nHttpRouter.empty.pipe(\n  HttpRouter.get(\"/\", HttpServerResponse.empty()),\n  HttpMiddleware.cors({\n    allowedOrigins: [\"https://example.com\"],\n    allowedHeaders: [\"Content-Type\", \"Authorization\"],\n    credentials: true\n  })\n)\n\n// Dynamic origin checking with predicate\nHttpRouter.empty.pipe(\n  HttpRouter.get(\"/\", HttpServerResponse.empty()),\n  HttpMiddleware.cors({\n    allowedOrigins: (origin) => origin.endsWith(\".example.com\")\n  })\n)\n```"
+    ],
     "since": "1.0.0",
     "category": "constructors",
     "signature": "declare const cors: (options?: { readonly allowedOrigins?: ReadonlyArray<string> | Predicate.Predicate<string> | undefined; readonly allowedMethods?: ReadonlyArray<string> | undefined; readonly allowedHeaders?: ReadonlyArray<string> | undefined; readonly exposedHeaders?: ReadonlyArray<string> | undefined; readonly maxAge?: number | undefined; readonly credentials?: boolean | undefined; } | undefined) => <E, R>(httpApp: App.Default<E, R>) => App.Default<E, R>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpMiddleware.ts#L123"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpMiddleware.ts#L173"
   },
   {
     "_tag": "Constant",
@@ -9506,7 +9509,7 @@
     "since": "1.0.0",
     "category": "Tracing",
     "signature": "declare const SpanNameGenerator: Context.Reference<SpanNameGenerator, (request: ServerRequest.HttpServerRequest) => string>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpMiddleware.ts#L146"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpMiddleware.ts#L196"
   },
   {
     "_tag": "Constant",
@@ -9522,7 +9525,7 @@
     "since": "1.0.0",
     "category": "Tracing",
     "signature": "declare const withSpanNameGenerator: { (f: (request: ServerRequest.HttpServerRequest) => string): <A, E, R>(layer: Layer.Layer<A, E, R>) => Layer.Layer<A, E, R>; <A, E, R>(layer: Layer.Layer<A, E, R>, f: (request: ServerRequest.HttpServerRequest) => string): Layer.Layer<A, E, R>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpMiddleware.ts#L179"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpMiddleware.ts#L229"
   },
   {
     "_tag": "Interface",
@@ -9552,7 +9555,7 @@
     "since": "1.0.0",
     "category": "Tracing",
     "signature": "export interface SpanNameGenerator {\n  readonly _: unique symbol\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpMiddleware.ts#L138"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpMiddleware.ts#L188"
   },
   {
     "_tag": "Interface",
