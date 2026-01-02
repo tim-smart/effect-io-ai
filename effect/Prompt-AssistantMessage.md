@@ -28,7 +28,8 @@ const assistantMessage: Prompt.AssistantMessage = Prompt.makeMessage("assistant"
       result: {
         temperature: 72,
         condition: "sunny"
-      }
+      },
+      providerExecuted: false
     }),
     Prompt.makePart("text", {
       text: "The weather in San Francisco is currently 72°F and sunny."
@@ -48,6 +49,6 @@ export interface AssistantMessage extends BaseMessage<"assistant", AssistantMess
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L1051)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L1062)
 
 Since v1.0.0

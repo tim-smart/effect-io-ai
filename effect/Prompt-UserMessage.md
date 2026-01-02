@@ -43,6 +43,6 @@ export interface UserMessage extends BaseMessage<"user", UserMessageOptions> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L939)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L949)
 
 Since v1.0.0

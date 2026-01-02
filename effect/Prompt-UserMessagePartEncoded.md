@@ -11,6 +11,6 @@ Union type of encoded content parts for user messages.
 type UserMessagePartEncoded = TextPartEncoded | FilePartEncoded
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L973)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L983)
 
 Since v1.0.0

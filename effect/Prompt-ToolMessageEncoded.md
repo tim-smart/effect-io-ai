@@ -16,6 +16,6 @@ export interface ToolMessageEncoded extends BaseMessageEncoded<"tool", ToolMessa
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L1183)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L1195)
 
 Since v1.0.0

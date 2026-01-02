@@ -27,6 +27,6 @@ export interface SystemMessage extends BaseMessage<"system", SystemMessageOption
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L850)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L860)
 
 Since v1.0.0

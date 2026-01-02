@@ -12,6 +12,6 @@ Schema for decoding message content (i.e. an array containing a single
 declare const MessageContentFromString: Schema.Schema<readonly [TextPart, ...TextPart[]], string, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L821)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L831)
 
 Since v1.0.0

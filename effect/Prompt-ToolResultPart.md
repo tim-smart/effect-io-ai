@@ -18,7 +18,8 @@ const toolResultPart: Prompt.ToolResultPart = Prompt.makePart("tool-result", {
     temperature: 22,
     condition: "sunny",
     humidity: 65
-  }
+  },
+  providerExecuted: false
 })
 ```
 
@@ -42,9 +43,13 @@ export interface ToolResultPart extends BasePart<"tool-result", ToolResultPartOp
    * The result returned by the tool execution.
    */
   readonly result: unknown
+  /**
+   * Whether the tool was executed by the provider (true) or framework (false).
+   */
+  readonly providerExecuted: boolean
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L621)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L622)
 
 Since v1.0.0

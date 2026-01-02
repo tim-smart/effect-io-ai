@@ -11,6 +11,6 @@ Constructs a new tool result part.
 declare const toolResultPart: (params: PartConstructorParams<ToolResultPart>) => ToolResultPart
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L698)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L708)
 
 Since v1.0.0

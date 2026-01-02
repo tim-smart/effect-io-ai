@@ -11,6 +11,6 @@ Describes a schema that represents a `Prompt` instance.
 declare class PromptFromSelf
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L1333)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L1345)
 
 Since v1.0.0

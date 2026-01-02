@@ -25,9 +25,13 @@ export interface ToolResultPartEncoded extends BasePartEncoded<"tool-result", To
    * The result returned by the tool execution.
    */
   readonly result: unknown
+  /**
+   * Whether the tool was executed by the provider (true) or framework (false).
+   */
+  readonly providerExecuted: boolean
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L646)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L651)
 
 Since v1.0.0

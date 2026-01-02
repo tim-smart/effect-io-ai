@@ -11,6 +11,6 @@ Constructs a new user message.
 declare const userMessage: (params: MessageConstructorParams<UserMessage>) => UserMessage
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L1008)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L1018)
 
 Since v1.0.0

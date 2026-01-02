@@ -14,6 +14,6 @@ type Message = | SystemMessage
   | ToolMessage
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L1240)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L1252)
 
 Since v1.0.0

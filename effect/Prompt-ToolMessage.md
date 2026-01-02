@@ -22,7 +22,8 @@ const toolMessage: Prompt.ToolMessage = Prompt.makeMessage("tool", {
           { title: "TypeScript Handbook", url: "https://..." },
           { title: "Effective TypeScript", url: "https://..." }
         ]
-      }
+      },
+      providerExecuted: false
     })
   ]
 })
@@ -39,6 +40,6 @@ export interface ToolMessage extends BaseMessage<"tool", ToolMessageOptions> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L1162)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Prompt.ts#L1174)
 
 Since v1.0.0
