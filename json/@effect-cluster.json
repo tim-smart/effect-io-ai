@@ -1349,7 +1349,7 @@
     "since": "1.0.0",
     "category": "Layers",
     "signature": "declare const layerClientProtocolHttpDefault: Layer.Layer<Runners.RpcClientProtocol, never, RpcSerialization.RpcSerialization | HttpClient.HttpClient>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/HttpRunner.ts#L59"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/HttpRunner.ts#L63"
   },
   {
     "_tag": "Constant",
@@ -1364,7 +1364,7 @@
     "since": "1.0.0",
     "category": "Layers",
     "signature": "declare const layerClientProtocolWebsocketDefault: Layer.Layer<Runners.RpcClientProtocol, never, RpcSerialization.RpcSerialization | Socket.WebSocketConstructor>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/HttpRunner.ts#L100"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/HttpRunner.ts#L104"
   },
   {
     "_tag": "Constant",
@@ -1379,7 +1379,7 @@
     "since": "1.0.0",
     "category": "Http App",
     "signature": "declare const toHttpEffect: Effect.Effect<Effect.Effect<HttpServerResponse, never, Scope | HttpServerRequest>, never, Sharding.Sharding | MessageStorage | Scope | RpcSerialization.RpcSerialization>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/HttpRunner.ts#L110"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/HttpRunner.ts#L114"
   },
   {
     "_tag": "Constant",
@@ -1394,7 +1394,7 @@
     "since": "1.0.0",
     "category": "Http App",
     "signature": "declare const toHttpEffectWebsocket: Effect.Effect<Effect.Effect<HttpServerResponse, never, Scope | HttpServerRequest>, never, Sharding.Sharding | MessageStorage | Scope | RpcSerialization.RpcSerialization>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/HttpRunner.ts#L126"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/HttpRunner.ts#L130"
   },
   {
     "_tag": "Constant",
@@ -1409,7 +1409,7 @@
     "since": "1.0.0",
     "category": "Layers",
     "signature": "declare const layerClient: Layer.Layer<Sharding.Sharding | Runners.Runners, never, MessageStorage | RunnerStorage | ShardingConfig.ShardingConfig | Runners.RpcClientProtocol | RunnerHealth>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/HttpRunner.ts#L142"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/HttpRunner.ts#L146"
   },
   {
     "_tag": "Constant",
@@ -1424,7 +1424,7 @@
     "since": "1.0.0",
     "category": "Layers",
     "signature": "declare const layerHttp: Layer.Layer<Sharding.Sharding | Runners.Runners, never, MessageStorage | RunnerStorage | ShardingConfig.ShardingConfig | RpcSerialization.RpcSerialization | RunnerHealth | HttpClient.HttpClient | HttpServer.HttpServer>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/HttpRunner.ts#L199"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/HttpRunner.ts#L203"
   },
   {
     "_tag": "Constant",
@@ -1439,7 +1439,7 @@
     "since": "1.0.0",
     "category": "Layers",
     "signature": "declare const layerHttpClientOnly: Layer.Layer<Sharding.Sharding | Runners.Runners, never, MessageStorage | RunnerStorage | ShardingConfig.ShardingConfig | RpcSerialization.RpcSerialization | HttpClient.HttpClient>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/HttpRunner.ts#L217"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/HttpRunner.ts#L221"
   },
   {
     "_tag": "Constant",
@@ -1454,7 +1454,7 @@
     "since": "1.0.0",
     "category": "Layers",
     "signature": "declare const layerWebsocket: Layer.Layer<Sharding.Sharding | Runners.Runners, never, MessageStorage | RunnerStorage | ShardingConfig.ShardingConfig | RpcSerialization.RpcSerialization | RunnerHealth | Socket.WebSocketConstructor | HttpServer.HttpServer>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/HttpRunner.ts#L233"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/HttpRunner.ts#L237"
   },
   {
     "_tag": "Constant",
@@ -1469,7 +1469,7 @@
     "since": "1.0.0",
     "category": "Layers",
     "signature": "declare const layerWebsocketClientOnly: Layer.Layer<Sharding.Sharding | Runners.Runners, never, MessageStorage | RunnerStorage | ShardingConfig.ShardingConfig | RpcSerialization.RpcSerialization | Socket.WebSocketConstructor>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/HttpRunner.ts#L251"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/HttpRunner.ts#L255"
   },
   {
     "_tag": "Function",
@@ -1484,7 +1484,7 @@
     "since": "1.0.0",
     "category": "Layers",
     "signature": "declare const layerClientProtocolHttp: (options: { readonly path: string; readonly https?: boolean | undefined; }) => Layer.Layer<RpcClientProtocol, never, RpcSerialization.RpcSerialization | HttpClient.HttpClient>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/HttpRunner.ts#L30"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/HttpRunner.ts#L32"
   },
   {
     "_tag": "Function",
@@ -1499,7 +1499,7 @@
     "since": "1.0.0",
     "category": "Layers",
     "signature": "declare const layerClientProtocolWebsocket: (options: { readonly path: string; readonly https?: boolean | undefined; }) => Layer.Layer<RpcClientProtocol, never, RpcSerialization.RpcSerialization | Socket.WebSocketConstructor>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/HttpRunner.ts#L69"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/HttpRunner.ts#L73"
   },
   {
     "_tag": "Function",
@@ -1515,7 +1515,7 @@
     "since": "1.0.0",
     "category": "Layers",
     "signature": "declare const layerHttpOptions: (options: { readonly path: HttpRouter.PathInput; }) => Layer.Layer<Sharding.Sharding | Runners.Runners, never, RunnerStorage | RunnerHealth | RpcSerialization.RpcSerialization | MessageStorage | ShardingConfig.ShardingConfig | Runners.RpcClientProtocol | HttpRouter.HttpRouter>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/HttpRunner.ts#L157"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/HttpRunner.ts#L161"
   },
   {
     "_tag": "Function",
@@ -1530,7 +1530,7 @@
     "since": "1.0.0",
     "category": "Layers",
     "signature": "declare const layerWebsocketOptions: (options: { readonly path: HttpRouter.PathInput; }) => Layer.Layer<Sharding.Sharding | Runners.Runners, never, ShardingConfig.ShardingConfig | Runners.RpcClientProtocol | MessageStorage | RunnerStorage | RunnerHealth | RpcSerialization.RpcSerialization | HttpRouter.HttpRouter>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/HttpRunner.ts#L178"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/HttpRunner.ts#L182"
   },
   {
     "_tag": "Export",
