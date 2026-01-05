@@ -11,6 +11,6 @@ Event representing a delta (partial update) to the input of a custom tool call.
 declare class ResponseCustomToolCallInputDeltaEvent
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L1716)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L1724)
 
 Since v1.0.0

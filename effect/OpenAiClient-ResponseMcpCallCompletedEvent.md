@@ -11,6 +11,6 @@ Emitted when an MCP tool call has completed successfully.
 declare class ResponseMcpCallCompletedEvent
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L1429)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L1437)
 
 Since v1.0.0

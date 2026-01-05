@@ -11,6 +11,6 @@ An event that is emitted when a response finishes as incomplete.
 declare class ResponseIncompleteEvent
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L356)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L364)
 
 Since v1.0.0

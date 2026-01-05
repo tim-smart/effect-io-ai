@@ -11,6 +11,6 @@ Emitted when a file search call is completed (results found).
 declare class ResponseFileSearchCallCompletedEvent
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L878)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L886)
 
 Since v1.0.0

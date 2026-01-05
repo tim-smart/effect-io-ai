@@ -11,6 +11,6 @@ Emitted when the code interpreter is actively interpreting the code snippet.
 declare class ResponseCodeInterpreterCallInterpretingEvent
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L1595)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L1603)
 
 Since v1.0.0

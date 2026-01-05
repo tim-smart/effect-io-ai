@@ -11,6 +11,6 @@ Emitted when the code snippet is finalized by the code interpreter.
 declare class ResponseCodeInterpreterCallCodeDoneEvent
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L1685)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L1693)
 
 Since v1.0.0

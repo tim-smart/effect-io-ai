@@ -11,6 +11,6 @@ Emitted when refusal text is finalized.
 declare class ResponseRefusalDoneEvent
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L727)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L735)
 
 Since v1.0.0

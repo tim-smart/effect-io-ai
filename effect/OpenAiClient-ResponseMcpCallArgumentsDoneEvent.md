@@ -11,6 +11,6 @@ Emitted when the arguments for an MCP tool call are finalized.
 declare class ResponseMcpCallArgumentsDoneEvent
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L1371)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L1379)
 
 Since v1.0.0

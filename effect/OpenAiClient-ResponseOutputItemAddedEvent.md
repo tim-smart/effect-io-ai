@@ -11,6 +11,6 @@ Emitted when a new output item is added.
 declare class ResponseOutputItemAddedEvent
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L413)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L421)
 
 Since v1.0.0

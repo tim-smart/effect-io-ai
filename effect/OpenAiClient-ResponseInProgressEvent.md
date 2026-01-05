@@ -11,6 +11,6 @@ Emitted when the response is in progress.
 declare class ResponseInProgressEvent
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L310)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L318)
 
 Since v1.0.0

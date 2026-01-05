@@ -11,6 +11,6 @@ Emitted when a new content part is added.
 declare class ResponseContentPartAddedEvent
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L467)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L475)
 
 Since v1.0.0
