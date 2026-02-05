@@ -28,6 +28,6 @@ export interface Service {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/EmbeddingModel.ts#L102)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/EmbeddingModel.ts#L109)
 
 Since v1.0.0

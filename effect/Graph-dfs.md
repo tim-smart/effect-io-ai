@@ -38,6 +38,6 @@ const dfs2 = Graph.dfs(graph)
 declare const dfs: <N, E, T extends Kind = "directed">(graph: Graph<N, E, T> | MutableGraph<N, E, T>, config?: SearchConfig) => NodeWalker<N>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Graph.ts#L3196)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Graph.ts#L3199)
 
 Since v3.18.0

@@ -10,7 +10,7 @@ fails with an error satisfying the specified predicate.
 **Signature**
 
 ```ts
-declare const orElseIf: { <A2>(options: { readonly if: Predicate<ConfigError.ConfigError>; readonly orElse: LazyArg<Config<A2>>; }): <A>(self: Config<A>) => Config<A>; <A, A2>(self: Config<A>, options: { readonly if: Predicate<ConfigError.ConfigError>; readonly orElse: LazyArg<Config<A2>>; }): Config<A>; }
+declare const orElseIf: { <A2>(options: { readonly if: Predicate<ConfigError.ConfigError>; readonly orElse: LazyArg<Config<A2>>; }): <A>(self: Config<A>) => Config<A | A2>; <A, A2>(self: Config<A>, options: { readonly if: Predicate<ConfigError.ConfigError>; readonly orElse: LazyArg<Config<A2>>; }): Config<A | A2>; }
 ```
 
 [Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Config.ts#L307)

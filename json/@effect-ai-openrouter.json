@@ -330,7 +330,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "Provider Metadata",
-    "signature": "type OpenRouterReasoningInfo = {\n  readonly type: \"reasoning\"\n  readonly signature: string | undefined\n} | {\n  readonly type: \"encrypted_reasoning\"\n  readonly format: typeof Generated.ReasoningDetailSummaryFormat.Type\n  readonly redactedData: string\n}",
+    "signature": "type OpenRouterReasoningInfo = {\n  readonly type: \"reasoning\"\n  readonly signature: string | undefined\n} | {\n  readonly type: \"encrypted_reasoning\"\n  readonly format: typeof Generated.ReasoningDetailSummary.Type[\"format\"]\n  readonly redactedData: string\n}",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openrouter/src/OpenRouterLanguageModel.ts#L75"
   },
   {

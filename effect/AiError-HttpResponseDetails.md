@@ -29,6 +29,6 @@ const responseDetails: typeof AiError.HttpResponseDetails.Type = {
 declare const HttpResponseDetails: Schema.Struct<{ status: typeof Schema.Number; headers: Schema.Record$<typeof Schema.String, typeof Schema.String>; }>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiError.ts#L307)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiError.ts#L308)
 
 Since v1.0.0

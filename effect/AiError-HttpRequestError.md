@@ -13,7 +13,8 @@ URLs.
 
 ```ts
 import { AiError } from "@effect/ai"
-import { Effect } from "effect"
+import * as Effect from "effect/Effect"
+import * as Option from "effect/Option"
 
 const handleNetworkError = Effect.gen(function* () {
   const error = new AiError.HttpRequestError({
@@ -41,6 +42,6 @@ const handleNetworkError = Effect.gen(function* () {
 declare class HttpRequestError
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiError.ts#L190)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiError.ts#L191)
 
 Since v1.0.0

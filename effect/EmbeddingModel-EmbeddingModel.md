@@ -12,10 +12,17 @@ enabling conversion of text to high-dimensional vectors for semantic analysis.
 
 ```ts
 import { EmbeddingModel } from "@effect/ai"
-import { Effect } from "effect"
+import * as Effect from "effect/Effect"
+
+const cosineSimilarity = (a: ReadonlyArray<number>, b: ReadonlyArray<number>): number => {
+  const dot = a.reduce((sum, ai, i) => sum + ai * (b[i] ?? 0), 0)
+  const normA = Math.sqrt(a.reduce((sum, ai) => sum + ai * ai, 0))
+  const normB = Math.sqrt(b.reduce((sum, bi) => sum + bi * bi, 0))
+  return normA === 0 || normB === 0 ? 0 : dot / (normA * normB)
+}
 
 const useEmbeddings = Effect.gen(function* () {
-  const embedder = yield* EmbeddingModel
+  const embedder = yield* EmbeddingModel.EmbeddingModel
 
   const documentVector = yield* embedder.embed("This is a sample document")
   const queryVector = yield* embedder.embed("sample query")
@@ -31,6 +38,6 @@ const useEmbeddings = Effect.gen(function* () {
 declare class EmbeddingModel
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/EmbeddingModel.ts#L88)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/EmbeddingModel.ts#L95)
 
 Since v1.0.0

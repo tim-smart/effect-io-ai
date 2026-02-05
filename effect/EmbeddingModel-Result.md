@@ -38,6 +38,6 @@ export interface Result {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/EmbeddingModel.ts#L140)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/EmbeddingModel.ts#L147)
 
 Since v1.0.0

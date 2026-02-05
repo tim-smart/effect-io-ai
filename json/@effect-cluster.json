@@ -2498,7 +2498,7 @@
     "since": "1.0.0",
     "category": "Memory",
     "signature": "declare class MemoryDriver",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/MessageStorage.ts#L678"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/MessageStorage.ts#L686"
   },
   {
     "_tag": "Constant",
@@ -2558,7 +2558,7 @@
     "since": "1.0.0",
     "category": "Constructors",
     "signature": "declare const noop: { readonly saveRequest: <R extends Rpc.Any>(envelope: Message.OutgoingRequest<R>) => Effect.Effect<SaveResult<R>, PersistenceError | MalformedMessage>; readonly saveEnvelope: (envelope: Message.OutgoingEnvelope) => Effect.Effect<void, PersistenceError | MalformedMessage>; readonly saveReply: <R extends Rpc.Any>(reply: Reply.ReplyWithContext<R>) => Effect.Effect<void, PersistenceError | MalformedMessage>; readonly clearReplies: (requestId: Snowflake.Snowflake) => Effect.Effect<void, PersistenceError>; readonly repliesFor: <R extends Rpc.Any>(requests: Iterable<Message.OutgoingRequest<R>>) => Effect.Effect<Array<Reply.Reply<R>>, PersistenceError | MalformedMessage>; readonly repliesForUnfiltered: <R extends Rpc.Any>(requestIds: Iterable<Snowflake.Snowflake>) => Effect.Effect<Array<Reply.ReplyEncoded<R>>, PersistenceError | MalformedMessage>; readonly requestIdForPrimaryKey: (options: { readonly address: EntityAddress; readonly tag: string; readonly id: string; }) => Effect.Effect<Option.Option<Snowflake.Snowflake>, PersistenceError>; readonly registerReplyHandler: <R extends Rpc.Any>(message: Message.OutgoingRequest<R> | Message.IncomingRequest<R>) => Effect.Effect<void, EntityNotAssignedToRunner>; readonly unregisterReplyHandler: (requestId: Snowflake.Snowflake) => Effect.Effect<void>; readonly unregisterShardReplyHandlers: (shardId: ShardId) => Effect.Effect<void>; readonly unprocessedMessages: (shardIds: Iterable<ShardId>) => Effect.Effect<Array<Message.Incoming<any>>, PersistenceError>; readonly unprocessedMessagesById: <R extends Rpc.Any>(messageIds: Iterable<Snowflake.Snowflake>) => Effect.Effect<Array<Message.Incoming<R>>, PersistenceError>; readonly resetShards: (shardIds: Iterable<ShardId>) => Effect.Effect<void, PersistenceError>; readonly resetAddress: (address: EntityAddress) => Effect.Effect<void, PersistenceError>; readonly clearAddress: (address: EntityAddress) => Effect.Effect<void, PersistenceError>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/MessageStorage.ts#L644"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/MessageStorage.ts#L652"
   },
   {
     "_tag": "Constant",
@@ -2573,7 +2573,7 @@
     "since": "1.0.0",
     "category": "layers",
     "signature": "declare const layerNoop: Layer.Layer<MessageStorage, never, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/MessageStorage.ts#L884"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/MessageStorage.ts#L892"
   },
   {
     "_tag": "Constant",
@@ -2588,7 +2588,7 @@
     "since": "1.0.0",
     "category": "layers",
     "signature": "declare const layerMemory: Layer.Layer<MessageStorage | MemoryDriver, never, ShardingConfig>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/MessageStorage.ts#L890"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/MessageStorage.ts#L898"
   },
   {
     "_tag": "Function",
@@ -2632,7 +2632,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "Encoded",
-    "signature": "type Encoded = {\n  /**\n   * Save the provided message and its associated metadata.\n   */\n  readonly saveEnvelope: (\n    options: {\n      readonly envelope: Envelope.Envelope.Encoded\n      readonly primaryKey: string | null\n      readonly deliverAt: number | null\n    }\n  ) => Effect.Effect<SaveResult.Encoded, PersistenceError>\n\n  /**\n   * Save the provided `Reply` and its associated metadata.\n   */\n  readonly saveReply: (\n    reply: Reply.ReplyEncoded<any>\n  ) => Effect.Effect<void, PersistenceError>\n\n  /**\n   * Remove the replies for the specified request.\n   */\n  readonly clearReplies: (requestId: Snowflake.Snowflake) => Effect.Effect<void, PersistenceError>\n\n  /**\n   * Retrieves the request id for the specified primary key.\n   */\n  readonly requestIdForPrimaryKey: (\n    primaryKey: string\n  ) => Effect.Effect<Option.Option<Snowflake.Snowflake>, PersistenceError>\n\n  /**\n   * Retrieves the replies for the specified requests.\n   *\n   * - Un-acknowledged chunk replies\n   * - WithExit replies\n   */\n  readonly repliesFor: (requestIds: Array<string>) => Effect.Effect<\n    Array<Reply.ReplyEncoded<any>>,\n    PersistenceError\n  >\n\n  /**\n   * Retrieves the replies for the specified request ids.\n   */\n  readonly repliesForUnfiltered: (requestIds: Array<string>) => Effect.Effect<\n    Array<Reply.ReplyEncoded<any>>,\n    PersistenceError\n  >\n\n  /**\n   * Retrieves the unprocessed messages for the given shards.\n   *\n   * A message is unprocessed when:\n   *\n   * - Requests that have no WithExit replies\n   *   - Or they have no unacknowledged chunk replies\n   * - The latest AckChunk envelope\n   * - All Interrupt's for unprocessed requests\n   */\n  readonly unprocessedMessages: (\n    shardIds: ReadonlyArray<string>,\n    now: number\n  ) => Effect.Effect<\n    Array<{\n      readonly envelope: Envelope.Envelope.Encoded\n      readonly lastSentReply: Option.Option<Reply.ReplyEncoded<any>>\n    }>,\n    PersistenceError\n  >\n\n  /**\n   * Retrieves the unprocessed messages by id.\n   */\n  readonly unprocessedMessagesById: (\n    messageIds: ReadonlyArray<Snowflake.Snowflake>,\n    now: number\n  ) => Effect.Effect<\n    Array<{\n      readonly envelope: Envelope.Envelope.Encoded\n      readonly lastSentReply: Option.Option<Reply.ReplyEncoded<any>>\n    }>,\n    PersistenceError\n  >\n\n  /**\n   * Reset the mailbox state for the provided address.\n   */\n  readonly resetAddress: (\n    address: EntityAddress\n  ) => Effect.Effect<void, PersistenceError>\n\n  /**\n   * Clear all messages and replies for the provided address.\n   */\n  readonly clearAddress: (\n    address: EntityAddress\n  ) => Effect.Effect<void, PersistenceError>\n\n  /**\n   * Reset the mailbox state for the provided shards.\n   */\n  readonly resetShards: (\n    shardIds: ReadonlyArray<string>\n  ) => Effect.Effect<void, PersistenceError>\n}",
+    "signature": "type Encoded = {\n  /**\n   * Save the provided message and its associated metadata.\n   */\n  readonly saveEnvelope: (\n    options: {\n      readonly envelope: Envelope.Envelope.Encoded\n      readonly primaryKey: string | null\n      readonly deliverAt: number | null\n    }\n  ) => Effect.Effect<SaveResult.Encoded, PersistenceError>\n\n  /**\n   * Save the provided `Reply` and its associated metadata.\n   */\n  readonly saveReply: (\n    reply: Reply.ReplyEncoded<any>\n  ) => Effect.Effect<void, PersistenceError>\n\n  /**\n   * Remove the replies for the specified request.\n   */\n  readonly clearReplies: (requestId: Snowflake.Snowflake) => Effect.Effect<void, PersistenceError>\n\n  /**\n   * Retrieves the request id for the specified primary key.\n   */\n  readonly requestIdForPrimaryKey: (\n    primaryKey: string\n  ) => Effect.Effect<Option.Option<Snowflake.Snowflake>, PersistenceError>\n\n  /**\n   * Retrieves the replies for the specified requests.\n   *\n   * - Un-acknowledged chunk replies\n   * - WithExit replies\n   */\n  readonly repliesFor: (requestIds: Arr.NonEmptyArray<string>) => Effect.Effect<\n    Array<Reply.ReplyEncoded<any>>,\n    PersistenceError\n  >\n\n  /**\n   * Retrieves the replies for the specified request ids.\n   */\n  readonly repliesForUnfiltered: (requestIds: Arr.NonEmptyArray<string>) => Effect.Effect<\n    Array<Reply.ReplyEncoded<any>>,\n    PersistenceError\n  >\n\n  /**\n   * Retrieves the unprocessed messages for the given shards.\n   *\n   * A message is unprocessed when:\n   *\n   * - Requests that have no WithExit replies\n   *   - Or they have no unacknowledged chunk replies\n   * - The latest AckChunk envelope\n   * - All Interrupt's for unprocessed requests\n   */\n  readonly unprocessedMessages: (\n    shardIds: Arr.NonEmptyArray<string>,\n    now: number\n  ) => Effect.Effect<\n    Array<{\n      readonly envelope: Envelope.Envelope.Encoded\n      readonly lastSentReply: Option.Option<Reply.ReplyEncoded<any>>\n    }>,\n    PersistenceError\n  >\n\n  /**\n   * Retrieves the unprocessed messages by id.\n   */\n  readonly unprocessedMessagesById: (\n    messageIds: Arr.NonEmptyArray<Snowflake.Snowflake>,\n    now: number\n  ) => Effect.Effect<\n    Array<{\n      readonly envelope: Envelope.Envelope.Encoded\n      readonly lastSentReply: Option.Option<Reply.ReplyEncoded<any>>\n    }>,\n    PersistenceError\n  >\n\n  /**\n   * Reset the mailbox state for the provided address.\n   */\n  readonly resetAddress: (\n    address: EntityAddress\n  ) => Effect.Effect<void, PersistenceError>\n\n  /**\n   * Clear all messages and replies for the provided address.\n   */\n  readonly clearAddress: (\n    address: EntityAddress\n  ) => Effect.Effect<void, PersistenceError>\n\n  /**\n   * Reset the mailbox state for the provided shards.\n   */\n  readonly resetShards: (\n    shardIds: Arr.NonEmptyArray<string>\n  ) => Effect.Effect<void, PersistenceError>\n}",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/MessageStorage.ts#L217"
   },
   {
@@ -2678,7 +2678,7 @@
     "since": "1.0.0",
     "category": "Memory",
     "signature": "type MemoryEntry = {\n  readonly envelope: Envelope.Request.Encoded\n  lastReceivedChunk: Option.Option<Reply.ChunkEncoded<any>>\n  replies: Array<Reply.ReplyEncoded<any>>\n  deliverAt: number | null\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/MessageStorage.ts#L667"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/MessageStorage.ts#L675"
   },
   {
     "_tag": "Interface",

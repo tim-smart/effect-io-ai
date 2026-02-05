@@ -89,7 +89,7 @@
     "since": "1.0.0",
     "category": "layers",
     "signature": "declare const layerConfig: (config: Config.Config.Wrap<SqliteClientConfig>) => Layer.Layer<SqliteClient | Client.SqlClient, ConfigError>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-sqlite-bun/src/SqliteClient.ts#L190"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-sqlite-bun/src/SqliteClient.ts#L204"
   },
   {
     "_tag": "Function",
@@ -104,7 +104,7 @@
     "since": "1.0.0",
     "category": "layers",
     "signature": "declare const layer: (config: SqliteClientConfig) => Layer.Layer<SqliteClient | Client.SqlClient, ConfigError>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-sqlite-bun/src/SqliteClient.ts#L208"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-sqlite-bun/src/SqliteClient.ts#L222"
   },
   {
     "_tag": "Interface",

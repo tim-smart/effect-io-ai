@@ -20,6 +20,6 @@ console.log(result) // [1, 2]
 declare const getRights: <T extends Iterable<Either.Either<any, any>>>(self: T) => Array<Either.Either.Right<ReadonlyArray.Infer<T>>>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L2739)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L2740)
 
 Since v2.0.0

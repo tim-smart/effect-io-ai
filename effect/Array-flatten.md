@@ -19,9 +19,9 @@ console.log(result) // [1, 2, 3, 4, 5, 6]
 **Signature**
 
 ```ts
-declare const flatten: <S extends ReadonlyArray<ReadonlyArray<any>>>(self: S) => ReadonlyArray.Flatten<S>
+declare const flatten: <const S extends ReadonlyArray<ReadonlyArray<any>>>(self: S) => ReadonlyArray.Flatten<S>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L2552)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L2551)
 
 Since v2.0.0

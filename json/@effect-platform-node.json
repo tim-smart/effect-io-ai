@@ -1163,9 +1163,9 @@
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
-    "category": null,
+    "category": "re-exports",
     "signature": "export * from \"@effect/platform-node-shared/NodeStream\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeStream.ts#L8"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeStream.ts#L9"
   },
   {
     "_tag": "Constant",

@@ -10,12 +10,12 @@
     "description": "Error that occurs during HTTP request processing.\n\nThis error is raised when issues arise before receiving an HTTP response,\nsuch as network connectivity problems, request encoding issues, or invalid\nURLs.",
     "deprecated": false,
     "examples": [
-      "```ts\nimport { AiError } from \"@effect/ai\"\nimport { Effect } from \"effect\"\n\nconst handleNetworkError = Effect.gen(function* () {\n  const error = new AiError.HttpRequestError({\n    module: \"OpenAI\",\n    method: \"createCompletion\",\n    reason: \"Transport\",\n    request: {\n      method: \"POST\",\n      url: \"https://api.openai.com/v1/completions\",\n      urlParams: [],\n      hash: Option.none(),\n      headers: { \"Content-Type\": \"application/json\" }\n    },\n    description: \"Connection timeout after 30 seconds\"\n  })\n\n  console.log(error.message)\n  // \"Transport: Connection timeout after 30 seconds (POST https://api.openai.com/v1/completions)\"\n})\n```"
+      "```ts\nimport { AiError } from \"@effect/ai\"\nimport * as Effect from \"effect/Effect\"\nimport * as Option from \"effect/Option\"\n\nconst handleNetworkError = Effect.gen(function* () {\n  const error = new AiError.HttpRequestError({\n    module: \"OpenAI\",\n    method: \"createCompletion\",\n    reason: \"Transport\",\n    request: {\n      method: \"POST\",\n      url: \"https://api.openai.com/v1/completions\",\n      urlParams: [],\n      hash: Option.none(),\n      headers: { \"Content-Type\": \"application/json\" }\n    },\n    description: \"Connection timeout after 30 seconds\"\n  })\n\n  console.log(error.message)\n  // \"Transport: Connection timeout after 30 seconds (POST https://api.openai.com/v1/completions)\"\n})\n```"
     ],
     "since": "1.0.0",
     "category": "Errors",
     "signature": "declare class HttpRequestError",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiError.ts#L190"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiError.ts#L191"
   },
   {
     "_tag": "Class",
@@ -33,7 +33,7 @@
     "since": "1.0.0",
     "category": "Errors",
     "signature": "declare class HttpResponseError",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiError.ts#L349"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiError.ts#L350"
   },
   {
     "_tag": "Class",
@@ -46,12 +46,12 @@
     "description": "Error thrown when input data doesn't match the expected format or schema.\n\nThis error occurs when the data provided to an AI operation fails validation,\nis missing required fields, or doesn't conform to the expected structure.",
     "deprecated": false,
     "examples": [
-      "```ts\nimport { AiError } from \"@effect/ai\"\nimport { Effect } from \"effect\"\n\nconst validateInput = (data: unknown) =>\n  typeof data === \"string\" && data.length > 0\n    ? Effect.succeed(data)\n    : Effect.fail(new AiError.MalformedInput({\n        module: \"ChatBot\",\n        method: \"processMessage\",\n        description: \"Input must be a non-empty string\"\n      }))\n\nconst program = validateInput(\"\").pipe(\n  Effect.catchTag(\"MalformedInput\", (error) => {\n    console.log(`Input validation failed: ${error.description}`)\n    return Effect.succeed(\"Please provide a valid message\")\n  })\n)\n```"
+      "```ts\nimport { AiError } from \"@effect/ai\"\nimport * as Effect from \"effect/Effect\"\n\nconst validateInput = (data: unknown): Effect.Effect<string, AiError.MalformedInput> =>\n  typeof data === \"string\" && data.length > 0\n    ? Effect.succeed(data)\n    : Effect.fail(new AiError.MalformedInput({\n        module: \"ChatBot\",\n        method: \"processMessage\",\n        description: \"Input must be a non-empty string\"\n      }))\n\nconst program = validateInput(\"\").pipe(\n  Effect.catchTag(\"MalformedInput\", (error) => {\n    console.log(`Input validation failed: ${error.description}`)\n    return Effect.succeed(\"Please provide a valid message\")\n  })\n)\n```"
     ],
     "since": "1.0.0",
     "category": "Errors",
     "signature": "declare class MalformedInput",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiError.ts#L491"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiError.ts#L492"
   },
   {
     "_tag": "Class",
@@ -69,7 +69,7 @@
     "since": "1.0.0",
     "category": "Errors",
     "signature": "declare class MalformedOutput",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiError.ts#L548"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiError.ts#L549"
   },
   {
     "_tag": "Class",
@@ -87,7 +87,7 @@
     "since": "1.0.0",
     "category": "Errors",
     "signature": "declare class UnknownError",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiError.ts#L645"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiError.ts#L646"
   },
   {
     "_tag": "Constant",
@@ -139,7 +139,7 @@
     "since": "1.0.0",
     "category": "Schemas",
     "signature": "declare const HttpResponseDetails: Schema.Struct<{ status: typeof Schema.Number; headers: Schema.Record$<typeof Schema.String, typeof Schema.String>; }>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiError.ts#L307"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiError.ts#L308"
   },
   {
     "_tag": "Constant",
@@ -157,7 +157,7 @@
     "since": "1.0.0",
     "category": "Schemas",
     "signature": "declare const AiError: Schema.Union<[typeof HttpRequestError, typeof HttpResponseError, typeof MalformedInput, typeof MalformedOutput, typeof UnknownError]>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiError.ts#L744"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiError.ts#L745"
   },
   {
     "_tag": "Function",
@@ -209,7 +209,7 @@
     "since": "1.0.0",
     "category": "Models",
     "signature": "type AiError = | HttpRequestError\n  | HttpResponseError\n  | MalformedInput\n  | MalformedOutput\n  | UnknownError",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiError.ts#L706"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiError.ts#L707"
   },
   {
     "_tag": "Class",
@@ -222,7 +222,7 @@
     "description": "The `Chat` service tag for dependency injection.\n\nThis tag provides access to chat functionality throughout your application,\nenabling persistent conversational AI interactions with full context\nmanagement.",
     "deprecated": false,
     "examples": [
-      "```ts\nimport { Chat } from \"@effect/ai\"\nimport { Effect } from \"effect\"\n\nconst useChat = Effect.gen(function* () {\n  const chat = yield* Chat\n  const response = yield* chat.generateText({\n    prompt: \"Explain quantum computing in simple terms\"\n  })\n  return response.content\n})\n```"
+      "```ts\nimport { Chat } from \"@effect/ai\"\nimport * as Effect from \"effect/Effect\"\n\nconst useChat = Effect.gen(function* () {\n  const chat = yield* Chat.Chat\n  const response = yield* chat.generateText({\n    prompt: \"Explain quantum computing in simple terms\"\n  })\n  return response.content\n})\n```"
     ],
     "since": "1.0.0",
     "category": "Context",
@@ -425,12 +425,12 @@
     "description": "The `EmbeddingModel` service tag for dependency injection.\n\nThis tag provides access to vector embedding functionality throughout your application,\nenabling conversion of text to high-dimensional vectors for semantic analysis.",
     "deprecated": false,
     "examples": [
-      "```ts\nimport { EmbeddingModel } from \"@effect/ai\"\nimport { Effect } from \"effect\"\n\nconst useEmbeddings = Effect.gen(function* () {\n  const embedder = yield* EmbeddingModel\n\n  const documentVector = yield* embedder.embed(\"This is a sample document\")\n  const queryVector = yield* embedder.embed(\"sample query\")\n\n  const similarity = cosineSimilarity(documentVector, queryVector)\n  return similarity\n})\n```"
+      "```ts\nimport { EmbeddingModel } from \"@effect/ai\"\nimport * as Effect from \"effect/Effect\"\n\nconst cosineSimilarity = (a: ReadonlyArray<number>, b: ReadonlyArray<number>): number => {\n  const dot = a.reduce((sum, ai, i) => sum + ai * (b[i] ?? 0), 0)\n  const normA = Math.sqrt(a.reduce((sum, ai) => sum + ai * ai, 0))\n  const normB = Math.sqrt(b.reduce((sum, bi) => sum + bi * bi, 0))\n  return normA === 0 || normB === 0 ? 0 : dot / (normA * normB)\n}\n\nconst useEmbeddings = Effect.gen(function* () {\n  const embedder = yield* EmbeddingModel.EmbeddingModel\n\n  const documentVector = yield* embedder.embed(\"This is a sample document\")\n  const queryVector = yield* embedder.embed(\"sample query\")\n\n  const similarity = cosineSimilarity(documentVector, queryVector)\n  return similarity\n})\n```"
     ],
     "since": "1.0.0",
     "category": "Context",
     "signature": "declare class EmbeddingModel",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/EmbeddingModel.ts#L88"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/EmbeddingModel.ts#L95"
   },
   {
     "_tag": "Function",
@@ -446,7 +446,7 @@
     "since": "1.0.0",
     "category": "Constructors",
     "signature": "declare const make: (options: { readonly embedMany: (input: ReadonlyArray<string>) => Effect.Effect<Array<Result>, AiError.AiError>; readonly maxBatchSize?: number; readonly cache?: { readonly capacity: number; readonly timeToLive: Duration.DurationInput; }; }) => Effect.Effect<Service, never, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/EmbeddingModel.ts#L192"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/EmbeddingModel.ts#L199"
   },
   {
     "_tag": "Function",
@@ -462,7 +462,7 @@
     "since": "1.0.0",
     "category": "Constructors",
     "signature": "declare const makeDataLoader: (options: { readonly embedMany: (input: ReadonlyArray<string>) => Effect.Effect<Array<Result>, AiError.AiError>; readonly window: Duration.DurationInput; readonly maxBatchSize?: number; }) => Effect.Effect<Service, never, Scope>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/EmbeddingModel.ts#L269"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/EmbeddingModel.ts#L276"
   },
   {
     "_tag": "Interface",
@@ -478,7 +478,7 @@
     "since": "1.0.0",
     "category": "Models",
     "signature": "export interface Service {\n  /**\n   * Converts a text string into a vector embedding.\n   */\n  readonly embed: (input: string) => Effect.Effect<Array<number>, AiError.AiError>\n  /**\n   * Converts a batch of text strings into a chunk of vector embeddings.\n   */\n  readonly embedMany: (input: ReadonlyArray<string>, options?: {\n    /**\n     * The concurrency level to use while batching requests.\n     */\n    readonly concurrency?: Types.Concurrency | undefined\n  }) => Effect.Effect<Array<Array<number>>, AiError.AiError>\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/EmbeddingModel.ts#L102"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/EmbeddingModel.ts#L109"
   },
   {
     "_tag": "Interface",
@@ -496,7 +496,7 @@
     "since": "1.0.0",
     "category": "Models",
     "signature": "export interface Result {\n  /**\n   * The position index of this result in the original batch request.\n   */\n  readonly index: number\n\n  /**\n   * The vector embedding for the text at this index.\n   */\n  readonly embeddings: Array<number>\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/EmbeddingModel.ts#L140"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/EmbeddingModel.ts#L147"
   },
   {
     "_tag": "Class",
@@ -873,7 +873,7 @@
     "description": "The `LanguageModel` service tag for dependency injection.\n\nThis tag provides access to language model functionality throughout your\napplication, enabling text generation, streaming, and structured output\ncapabilities.",
     "deprecated": false,
     "examples": [
-      "```ts\nimport { LanguageModel } from \"@effect/ai\"\nimport { Effect } from \"effect\"\n\nconst useLanguageModel = Effect.gen(function* () {\n  const model = yield* LanguageModel\n  const response = yield* model.generateText({\n    prompt: \"What is machine learning?\"\n  })\n  return response.text\n})\n```"
+      "```ts\nimport { LanguageModel } from \"@effect/ai\"\nimport * as Effect from \"effect/Effect\"\n\nconst useLanguageModel = Effect.gen(function* () {\n  const model = yield* LanguageModel.LanguageModel\n  const response = yield* model.generateText({\n    prompt: \"What is machine learning?\"\n  })\n  return response.text\n})\n```"
     ],
     "since": "1.0.0",
     "category": "Context",
@@ -6731,12 +6731,12 @@
     "description": "Context tag for providing a span transformer to large langauge model\noperations.\n\nThe CurrentSpanTransformer allows you to inject custom span transformation\nlogic into AI operations, enabling application-specific telemetry and\nobservability patterns.",
     "deprecated": false,
     "examples": [
-      "```ts\nimport { Telemetry } from \"@effect/ai\"\nimport { Context, Effect } from \"effect\"\n\n// Create a custom span transformer\nconst loggingTransformer: Telemetry.SpanTransformer = (options) => {\n  console.log(`AI request completed: ${options.model}`)\n  options.response.forEach((part, index) => {\n    console.log(`Part ${index}: ${part.type}`)\n  })\n}\n\n// Provide the transformer to your AI operations\nconst program = myAIOperation.pipe(\n  Effect.provideService(\n    Telemetry.CurrentSpanTransformer,\n    Telemetry.CurrentSpanTransformer.of(loggingTransformer)\n  )\n)\n```"
+      "```ts\nimport { Telemetry } from \"@effect/ai\"\nimport * as Effect from \"effect/Effect\"\n\ndeclare const myAIOperation: Effect.Effect<void>\n\n// Create a custom span transformer\nconst loggingTransformer: Telemetry.SpanTransformer = (options) => {\n  console.log(`AI request completed: ${options.response.length} part(s)`)\n  options.response.forEach((part, index) => {\n    console.log(`Part ${index}: ${part.type}`)\n  })\n}\n\n// Provide the transformer to your AI operations\nconst program = myAIOperation.pipe(\n  Effect.provideService(\n    Telemetry.CurrentSpanTransformer,\n    Telemetry.CurrentSpanTransformer.of(loggingTransformer)\n  )\n)\n```"
     ],
     "since": "1.0.0",
     "category": "Context",
     "signature": "declare class CurrentSpanTransformer",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Telemetry.ts#L544"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Telemetry.ts#L546"
   },
   {
     "_tag": "Constant",

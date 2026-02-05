@@ -3,7 +3,7 @@ Module: `Stream`<br />
 
 ## Stream.runIntoQueueElementsScoped
 
-Like `Stream.runIntoQueue`, but provides the result as a scoped [[ZIO]]
+Like `Stream.runIntoQueue`, but provides the result as a scoped Effect
 to allow for scope composition.
 
 **Signature**

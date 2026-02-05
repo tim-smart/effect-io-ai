@@ -13,7 +13,7 @@ format.
 import * as assert from "node:assert"
 import * as Schema from "effect/Schema"
 
-const is = Schema.is(S.JsonNumber)
+const is = Schema.is(Schema.JsonNumber)
 
 assert.deepStrictEqual(is(42), true)
 assert.deepStrictEqual(is(Number.NaN), false)

@@ -16,6 +16,6 @@ arrive within a short time period.
 declare const makeDataLoader: (options: { readonly embedMany: (input: ReadonlyArray<string>) => Effect.Effect<Array<Result>, AiError.AiError>; readonly window: Duration.DurationInput; readonly maxBatchSize?: number; }) => Effect.Effect<Service, never, Scope>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/EmbeddingModel.ts#L269)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/EmbeddingModel.ts#L276)
 
 Since v1.0.0

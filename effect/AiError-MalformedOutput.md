@@ -45,6 +45,6 @@ const program = parseResponse({ invalid: "data" }).pipe(
 declare class MalformedOutput
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiError.ts#L548)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiError.ts#L549)
 
 Since v1.0.0

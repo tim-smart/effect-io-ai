@@ -21,6 +21,6 @@ console.log(joined) // "a-b-c"
 declare const join: { (sep: string): (self: Iterable<string>) => string; (self: Iterable<string>, sep: string): string; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L3268)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L3269)
 
 Since v2.0.0

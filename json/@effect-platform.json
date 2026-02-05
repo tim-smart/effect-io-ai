@@ -7142,7 +7142,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "error handling",
-    "signature": "declare const retryTransient: { <B, E, R1 = never, const Mode extends \"errors-only\" | \"response-only\" | \"both\" = never, Input = \"errors-only\" extends Mode ? E : \"response-only\" extends Mode ? ClientResponse.HttpClientResponse : ClientResponse.HttpClientResponse | E>(options: { readonly mode?: Mode | undefined; readonly while?: Predicate.Predicate<NoInfer<Input>>; readonly schedule?: Schedule.Schedule<B, NoInfer<Input>, R1>; readonly times?: number; } | Schedule.Schedule<B, NoInfer<Input>, R1>): <R>(self: HttpClient.With<E, R>) => HttpClient.With<E, R1 | R>; <E, R, B, R1 = never, const Mode extends \"errors-only\" | \"response-only\" | \"both\" = never, Input = \"errors-only\" extends Mode ? E : \"response-only\" extends Mode ? ClientResponse.HttpClientResponse : ClientResponse.HttpClientResponse | E>(self: HttpClient.With<E, R>, options: { readonly mode?: Mode | undefined; readonly while?: Predicate.Predicate<NoInfer<Input>>; readonly schedule?: Schedule.Schedule<B, NoInfer<Input>, R1>; readonly times?: number; } | Schedule.Schedule<B, NoInfer<Input>, R1>): HttpClient.With<E, R1 | R>; }",
+    "signature": "declare const retryTransient: { <B, E, R1 = never, const Mode extends \"errors-only\" | \"response-only\" | \"both\" = never, Input = \"errors-only\" extends Mode ? E : \"response-only\" extends Mode ? ClientResponse.HttpClientResponse : ClientResponse.HttpClientResponse | E>(options: { readonly mode?: Mode | undefined; readonly while?: Predicate.Predicate<NoInfer<E>>; readonly schedule?: Schedule.Schedule<B, NoInfer<Input>, R1>; readonly times?: number; } | Schedule.Schedule<B, NoInfer<Input>, R1>): <R>(self: HttpClient.With<E, R>) => HttpClient.With<E, R1 | R>; <E, R, B, R1 = never, const Mode extends \"errors-only\" | \"response-only\" | \"both\" = never, Input = \"errors-only\" extends Mode ? E : \"response-only\" extends Mode ? ClientResponse.HttpClientResponse : ClientResponse.HttpClientResponse | E>(self: HttpClient.With<E, R>, options: { readonly mode?: Mode | undefined; readonly while?: Predicate.Predicate<NoInfer<E>>; readonly schedule?: Schedule.Schedule<B, NoInfer<Input>, R1>; readonly times?: number; } | Schedule.Schedule<B, NoInfer<Input>, R1>): HttpClient.With<E, R1 | R>; }",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpClient.ts#L525"
   },
   {
@@ -16291,7 +16291,7 @@
     "since": "1.0.0",
     "category": "model",
     "signature": "declare class QuitException",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Terminal.ts#L84"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Terminal.ts#L92"
   },
   {
     "_tag": "Constant",
@@ -16306,7 +16306,7 @@
     "since": "1.0.0",
     "category": "tag",
     "signature": "declare const Terminal: Tag<Terminal, Terminal>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Terminal.ts#L97"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Terminal.ts#L105"
   },
   {
     "_tag": "Function",
@@ -16321,7 +16321,7 @@
     "since": "1.0.0",
     "category": "refinements",
     "signature": "declare const isQuitException: (u: unknown) => u is QuitException",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Terminal.ts#L90"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Terminal.ts#L98"
   },
   {
     "_tag": "Interface",
@@ -16336,7 +16336,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "models",
-    "signature": "export interface Terminal {\n  /**\n   * The number of columns available on the platform's terminal interface.\n   */\n  readonly columns: Effect<number>\n  /**\n   * Reads input events from the default standard input.\n   */\n  readonly readInput: Effect<ReadonlyMailbox<UserInput>, never, Scope.Scope>\n  /**\n   * Reads a single line from the default standard input.\n   */\n  readonly readLine: Effect<string, QuitException>\n  /**\n   * Displays text to the the default standard output.\n   */\n  readonly display: (text: string) => Effect<void, PlatformError>\n}",
+    "signature": "export interface Terminal {\n  /**\n   * The number of columns available on the platform's terminal interface.\n   */\n  readonly columns: Effect<number>\n  /**\n   * The number of rows available on the platform's terminal interface.\n   */\n  readonly rows: Effect<number>\n  /**\n   * Determines if the current terminal interface is interactive.\n   */\n  readonly isTTY: Effect<boolean>\n  /**\n   * Reads input events from the default standard input.\n   */\n  readonly readInput: Effect<ReadonlyMailbox<UserInput>, never, Scope.Scope>\n  /**\n   * Reads a single line from the default standard input.\n   */\n  readonly readLine: Effect<string, QuitException>\n  /**\n   * Displays text to the the default standard output.\n   */\n  readonly display: (text: string) => Effect<void, PlatformError>\n}",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Terminal.ts#L20"
   },
   {
@@ -16352,7 +16352,7 @@
     "since": "1.0.0",
     "category": "model",
     "signature": "export interface Key {\n  /**\n   * The name of the key being pressed.\n   */\n  readonly name: string\n  /**\n   * If set to `true`, then the user is also holding down the `Ctrl` key.\n   */\n  readonly ctrl: boolean\n  /**\n   * If set to `true`, then the user is also holding down the `Meta` key.\n   */\n  readonly meta: boolean\n  /**\n   * If set to `true`, then the user is also holding down the `Shift` key.\n   */\n  readonly shift: boolean\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Terminal.ts#L43"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Terminal.ts#L51"
   },
   {
     "_tag": "Interface",
@@ -16367,7 +16367,7 @@
     "since": "1.0.0",
     "category": "model",
     "signature": "export interface UserInput {\n  /**\n   * The character read from the user (if any).\n   */\n  readonly input: Option<string>\n  /**\n   * The key that the user pressed.\n   */\n  readonly key: Key\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Terminal.ts#L66"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Terminal.ts#L74"
   },
   {
     "_tag": "Class",

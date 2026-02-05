@@ -14,11 +14,13 @@ observability patterns.
 
 ```ts
 import { Telemetry } from "@effect/ai"
-import { Context, Effect } from "effect"
+import * as Effect from "effect/Effect"
+
+declare const myAIOperation: Effect.Effect<void>
 
 // Create a custom span transformer
 const loggingTransformer: Telemetry.SpanTransformer = (options) => {
-  console.log(`AI request completed: ${options.model}`)
+  console.log(`AI request completed: ${options.response.length} part(s)`)
   options.response.forEach((part, index) => {
     console.log(`Part ${index}: ${part.type}`)
   })
@@ -39,6 +41,6 @@ const program = myAIOperation.pipe(
 declare class CurrentSpanTransformer
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Telemetry.ts#L544)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Telemetry.ts#L546)
 
 Since v1.0.0

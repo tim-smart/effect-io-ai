@@ -12,9 +12,9 @@ is missing required fields, or doesn't conform to the expected structure.
 
 ```ts
 import { AiError } from "@effect/ai"
-import { Effect } from "effect"
+import * as Effect from "effect/Effect"
 
-const validateInput = (data: unknown) =>
+const validateInput = (data: unknown): Effect.Effect<string, AiError.MalformedInput> =>
   typeof data === "string" && data.length > 0
     ? Effect.succeed(data)
     : Effect.fail(new AiError.MalformedInput({
@@ -37,6 +37,6 @@ const program = validateInput("").pipe(
 declare class MalformedInput
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiError.ts#L491)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/AiError.ts#L492)
 
 Since v1.0.0

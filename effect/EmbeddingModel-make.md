@@ -15,6 +15,6 @@ redundant API calls.
 declare const make: (options: { readonly embedMany: (input: ReadonlyArray<string>) => Effect.Effect<Array<Result>, AiError.AiError>; readonly maxBatchSize?: number; readonly cache?: { readonly capacity: number; readonly timeToLive: Duration.DurationInput; }; }) => Effect.Effect<Service, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/EmbeddingModel.ts#L192)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/EmbeddingModel.ts#L199)
 
 Since v1.0.0

@@ -54,6 +54,6 @@ for(let i = 0; i < x.length; i++) {
 declare const Do: ReadonlyArray<{}>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L3412)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L3413)
 
 Since v3.2.0
