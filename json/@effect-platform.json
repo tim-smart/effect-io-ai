@@ -6367,7 +6367,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "constructors",
-    "signature": "declare const unsafeJson: (body: unknown) => Uint8Array",
+    "signature": "declare const unsafeJson: (body: unknown, contentType?: string) => Uint8Array",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpBody.ts#L168"
   },
   {
@@ -6382,7 +6382,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "constructors",
-    "signature": "declare const json: (body: unknown) => Effect.Effect<Uint8Array, HttpBodyError>",
+    "signature": "declare const json: (body: unknown, contentType?: string) => Effect.Effect<Uint8Array, HttpBodyError>",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpBody.ts#L174"
   },
   {
@@ -6397,7 +6397,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "constructors",
-    "signature": "declare const jsonSchema: <A, I, R>(schema: Schema.Schema<A, I, R>) => (body: A) => Effect.Effect<Uint8Array, HttpBodyError, R>",
+    "signature": "declare const jsonSchema: <A, I, R>(schema: Schema.Schema<A, I, R>) => (body: A, contentType?: string) => Effect.Effect<Uint8Array, HttpBodyError, R>",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpBody.ts#L180"
   },
   {
@@ -6412,7 +6412,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "constructors",
-    "signature": "declare const urlParams: (urlParams: UrlParams.UrlParams) => Uint8Array",
+    "signature": "declare const urlParams: (urlParams: UrlParams.UrlParams, contentType?: string) => Uint8Array",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpBody.ts#L188"
   },
   {
@@ -11761,7 +11761,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "constructors",
-    "signature": "declare const schemaJson: <A, I, R>(schema: Schema.Schema<A, I, R>, options?: ParseOptions | undefined) => (body: A, options?: Options.WithContent | undefined) => Effect.Effect<HttpServerResponse, Body.HttpBodyError, R>",
+    "signature": "declare const schemaJson: <A, I, R>(schema: Schema.Schema<A, I, R>, options?: ParseOptions | undefined) => (body: A, options?: Options.WithContentType | undefined) => Effect.Effect<HttpServerResponse, Body.HttpBodyError, R>",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpServerResponse.ts#L142"
   },
   {
@@ -11777,7 +11777,7 @@
     "since": "1.0.0",
     "category": "constructors",
     "signature": "declare const unsafeJson: (body: unknown, options?: Options.WithContentType | undefined) => HttpServerResponse",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpServerResponse.ts#L152"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpServerResponse.ts#L154"
   },
   {
     "_tag": "Constant",
@@ -11792,7 +11792,7 @@
     "since": "1.0.0",
     "category": "constructors",
     "signature": "declare const urlParams: (body: UrlParams.Input, options?: Options.WithContentType | undefined) => HttpServerResponse",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpServerResponse.ts#L159"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpServerResponse.ts#L161"
   },
   {
     "_tag": "Constant",
@@ -11807,7 +11807,7 @@
     "since": "1.0.0",
     "category": "constructors",
     "signature": "declare const raw: (body: unknown, options?: Options | undefined) => HttpServerResponse",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpServerResponse.ts#L166"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpServerResponse.ts#L168"
   },
   {
     "_tag": "Constant",
@@ -11822,7 +11822,7 @@
     "since": "1.0.0",
     "category": "constructors",
     "signature": "declare const formData: (body: FormData, options?: Options.WithContent | undefined) => HttpServerResponse",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpServerResponse.ts#L172"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpServerResponse.ts#L174"
   },
   {
     "_tag": "Constant",
@@ -11837,7 +11837,7 @@
     "since": "1.0.0",
     "category": "constructors",
     "signature": "declare const stream: <E>(body: Stream.Stream<Uint8Array, E, never>, options?: Options | undefined) => HttpServerResponse",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpServerResponse.ts#L179"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpServerResponse.ts#L181"
   },
   {
     "_tag": "Constant",
@@ -11852,7 +11852,7 @@
     "since": "1.0.0",
     "category": "constructors",
     "signature": "declare const file: (path: string, options?: (Options & FileSystem.StreamOptions) | undefined) => Effect.Effect<HttpServerResponse, PlatformError.PlatformError, Platform.HttpPlatform>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpServerResponse.ts#L188"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpServerResponse.ts#L190"
   },
   {
     "_tag": "Constant",
@@ -11867,7 +11867,7 @@
     "since": "1.0.0",
     "category": "constructors",
     "signature": "declare const fileWeb: (file: Body.HttpBody.FileLike, options?: (Options.WithContent & FileSystem.StreamOptions) | undefined) => Effect.Effect<HttpServerResponse, never, Platform.HttpPlatform>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpServerResponse.ts#L197"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpServerResponse.ts#L199"
   },
   {
     "_tag": "Constant",
@@ -11882,7 +11882,7 @@
     "since": "1.0.0",
     "category": "combinators",
     "signature": "declare const setHeader: { (key: string, value: string): (self: HttpServerResponse) => HttpServerResponse; (self: HttpServerResponse, key: string, value: string): HttpServerResponse; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpServerResponse.ts#L206"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpServerResponse.ts#L208"
   },
   {
     "_tag": "Constant",
@@ -11897,7 +11897,7 @@
     "since": "1.0.0",
     "category": "combinators",
     "signature": "declare const setHeaders: { (input: Headers.Input): (self: HttpServerResponse) => HttpServerResponse; (self: HttpServerResponse, input: Headers.Input): HttpServerResponse; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpServerResponse.ts#L215"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpServerResponse.ts#L217"
   },
   {
     "_tag": "Constant",
@@ -11912,7 +11912,7 @@
     "since": "1.0.0",
     "category": "combinators",
     "signature": "declare const removeCookie: { (name: string): (self: HttpServerResponse) => HttpServerResponse; (self: HttpServerResponse, name: string): HttpServerResponse; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpServerResponse.ts#L224"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpServerResponse.ts#L226"
   },
   {
     "_tag": "Constant",
@@ -11927,7 +11927,7 @@
     "since": "1.0.0",
     "category": "combinators",
     "signature": "declare const expireCookie: { (name: string, options?: Omit<Cookie[\"options\"], \"expires\" | \"maxAge\">): (self: HttpServerResponse) => HttpServerResponse; (self: HttpServerResponse, name: string, options?: Omit<Cookie[\"options\"], \"expires\" | \"maxAge\">): HttpServerResponse; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpServerResponse.ts#L233"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpServerResponse.ts#L235"
   },
   {
     "_tag": "Constant",
@@ -11942,7 +11942,7 @@
     "since": "1.0.0",
     "category": "combinators",
     "signature": "declare const replaceCookies: { (cookies: Cookies.Cookies): (self: HttpServerResponse) => HttpServerResponse; (self: HttpServerResponse, cookies: Cookies.Cookies): HttpServerResponse; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpServerResponse.ts#L249"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpServerResponse.ts#L251"
   },
   {
     "_tag": "Constant",
@@ -11957,7 +11957,7 @@
     "since": "1.0.0",
     "category": "combinators",
     "signature": "declare const setCookie: { (name: string, value: string, options?: Cookie[\"options\"]): (self: HttpServerResponse) => Effect.Effect<HttpServerResponse, CookiesError>; (self: HttpServerResponse, name: string, value: string, options?: Cookie[\"options\"]): Effect.Effect<HttpServerResponse, CookiesError>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpServerResponse.ts#L258"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpServerResponse.ts#L260"
   },
   {
     "_tag": "Constant",
@@ -11972,7 +11972,7 @@
     "since": "1.0.0",
     "category": "combinators",
     "signature": "declare const unsafeSetCookie: { (name: string, value: string, options?: Cookie[\"options\"]): (self: HttpServerResponse) => HttpServerResponse; (self: HttpServerResponse, name: string, value: string, options?: Cookie[\"options\"]): HttpServerResponse; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpServerResponse.ts#L284"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpServerResponse.ts#L286"
   },
   {
     "_tag": "Constant",
@@ -11987,7 +11987,7 @@
     "since": "1.0.0",
     "category": "combinators",
     "signature": "declare const updateCookies: { (f: (cookies: Cookies.Cookies) => Cookies.Cookies): (self: HttpServerResponse) => HttpServerResponse; (self: HttpServerResponse, f: (cookies: Cookies.Cookies) => Cookies.Cookies): HttpServerResponse; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpServerResponse.ts#L302"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpServerResponse.ts#L304"
   },
   {
     "_tag": "Constant",
@@ -12002,7 +12002,7 @@
     "since": "1.0.0",
     "category": "combinators",
     "signature": "declare const mergeCookies: { (cookies: Cookies.Cookies): (self: HttpServerResponse) => HttpServerResponse; (self: HttpServerResponse, cookies: Cookies.Cookies): HttpServerResponse; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpServerResponse.ts#L311"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpServerResponse.ts#L313"
   },
   {
     "_tag": "Constant",
@@ -12017,7 +12017,7 @@
     "since": "1.0.0",
     "category": "combinators",
     "signature": "declare const setCookies: { (cookies: Iterable<readonly [name: string, value: string, options?: Cookie[\"options\"]]>): (self: HttpServerResponse) => Effect.Effect<HttpServerResponse, CookiesError, never>; (self: HttpServerResponse, cookies: Iterable<readonly [name: string, value: string, options?: Cookie[\"options\"]]>): Effect.Effect<HttpServerResponse, CookiesError, never>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpServerResponse.ts#L320"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpServerResponse.ts#L322"
   },
   {
     "_tag": "Constant",
@@ -12032,7 +12032,7 @@
     "since": "1.0.0",
     "category": "combinators",
     "signature": "declare const unsafeSetCookies: { (cookies: Iterable<readonly [name: string, value: string, options?: Cookie[\"options\"]]>): (self: HttpServerResponse) => HttpServerResponse; (self: HttpServerResponse, cookies: Iterable<readonly [name: string, value: string, options?: Cookie[\"options\"]]>): HttpServerResponse; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpServerResponse.ts#L346"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpServerResponse.ts#L348"
   },
   {
     "_tag": "Constant",
@@ -12047,7 +12047,7 @@
     "since": "1.0.0",
     "category": "combinators",
     "signature": "declare const setBody: { (body: Body.HttpBody): (self: HttpServerResponse) => HttpServerResponse; (self: HttpServerResponse, body: Body.HttpBody): HttpServerResponse; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpServerResponse.ts#L372"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpServerResponse.ts#L374"
   },
   {
     "_tag": "Constant",
@@ -12062,7 +12062,7 @@
     "since": "1.0.0",
     "category": "combinators",
     "signature": "declare const setStatus: { (status: number, statusText?: string | undefined): (self: HttpServerResponse) => HttpServerResponse; (self: HttpServerResponse, status: number, statusText?: string | undefined): HttpServerResponse; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpServerResponse.ts#L381"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpServerResponse.ts#L383"
   },
   {
     "_tag": "Constant",
@@ -12077,7 +12077,7 @@
     "since": "1.0.0",
     "category": "conversions",
     "signature": "declare const toWeb: (response: HttpServerResponse, options?: { readonly withoutBody?: boolean | undefined; readonly runtime?: Runtime.Runtime<never> | undefined; }) => Response",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpServerResponse.ts#L390"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpServerResponse.ts#L392"
   },
   {
     "_tag": "Function",
@@ -12092,7 +12092,7 @@
     "since": "1.0.0",
     "category": "conversions",
     "signature": "declare const fromWeb: (response: Response) => HttpServerResponse",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpServerResponse.ts#L402"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpServerResponse.ts#L404"
   },
   {
     "_tag": "Interface",
