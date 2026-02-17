@@ -24,6 +24,7 @@ export interface Rpc<
   readonly payloadSchema: Payload
   readonly successSchema: Success
   readonly errorSchema: Error
+  readonly defectSchema: Schema.Schema<unknown, any>
   readonly annotations: Context_.Context<never>
   readonly middlewares: ReadonlySet<Middleware>
 

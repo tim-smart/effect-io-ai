@@ -13,6 +13,6 @@ setting.
 declare const fork: <A extends object>(value: A) => A extends Wrapper<infer _> ? A : Wrapper<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/Rpc.ts#L816)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/Rpc.ts#L829)
 
 Since v1.0.0
