@@ -19,6 +19,6 @@ and is used for error messages and schema identification.
 declare const resolveIdentifier: (ast: AST) => string | undefined
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L3339)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L3344)
 
 Since v4.0.0
