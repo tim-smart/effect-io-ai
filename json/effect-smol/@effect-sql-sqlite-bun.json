@@ -1,0 +1,200 @@
+[
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/sql-sqlite-bun",
+    "name": "SqliteClient",
+    "description": "Re-exports all named exports from the \"./SqliteClient.ts\" module as `SqliteClient`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as SqliteClient from \"./SqliteClient.ts\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/sqlite-bun/src/index.ts#L10"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/sql-sqlite-bun",
+    "name": "SqliteMigrator",
+    "description": "Re-exports all named exports from the \"./SqliteMigrator.ts\" module as `SqliteMigrator`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as SqliteMigrator from \"./SqliteMigrator.ts\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/sqlite-bun/src/index.ts#L15"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "SqliteClient.ts",
+      "path": "src/SqliteClient.ts"
+    },
+    "project": "@effect/sql-sqlite-bun",
+    "name": "TypeId",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "type ids",
+    "signature": "declare const TypeId: \"~@effect/sql-sqlite-bun/SqliteClient\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/sqlite-bun/src/SqliteClient.ts#L26"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "SqliteClient.ts",
+      "path": "src/SqliteClient.ts"
+    },
+    "project": "@effect/sql-sqlite-bun",
+    "name": "SqliteClient",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "tags",
+    "signature": "declare const SqliteClient: ServiceMap.Service<SqliteClient, SqliteClient>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/sqlite-bun/src/SqliteClient.ts#L52"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "SqliteClient.ts",
+      "path": "src/SqliteClient.ts"
+    },
+    "project": "@effect/sql-sqlite-bun",
+    "name": "make",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructor",
+    "signature": "declare const make: (options: SqliteClientConfig) => Effect.Effect<SqliteClient, never, Scope.Scope | Reactivity.Reactivity>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/sqlite-bun/src/SqliteClient.ts#L80"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "SqliteClient.ts",
+      "path": "src/SqliteClient.ts"
+    },
+    "project": "@effect/sql-sqlite-bun",
+    "name": "layerConfig",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "layers",
+    "signature": "declare const layerConfig: (config: Config.Wrap<SqliteClientConfig>) => Layer.Layer<SqliteClient | Client.SqlClient, Config.ConfigError>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/sqlite-bun/src/SqliteClient.ts#L205"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "SqliteClient.ts",
+      "path": "src/SqliteClient.ts"
+    },
+    "project": "@effect/sql-sqlite-bun",
+    "name": "layer",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "layers",
+    "signature": "declare const layer: (config: SqliteClientConfig) => Layer.Layer<SqliteClient | Client.SqlClient>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/sqlite-bun/src/SqliteClient.ts#L223"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "SqliteClient.ts",
+      "path": "src/SqliteClient.ts"
+    },
+    "project": "@effect/sql-sqlite-bun",
+    "name": "SqliteClient",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export interface SqliteClient extends Client.SqlClient {\n  readonly [TypeId]: TypeId\n  readonly config: SqliteClientConfig\n  readonly export: Effect.Effect<Uint8Array, SqlError>\n  readonly loadExtension: (path: string) => Effect.Effect<void, SqlError>\n\n  /** Not supported in sqlite */\n  readonly updateValues: never\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/sqlite-bun/src/SqliteClient.ts#L38"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "SqliteClient.ts",
+      "path": "src/SqliteClient.ts"
+    },
+    "project": "@effect/sql-sqlite-bun",
+    "name": "SqliteClientConfig",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export interface SqliteClientConfig {\n  readonly filename: string\n  readonly readonly?: boolean | undefined\n  readonly create?: boolean | undefined\n  readonly readwrite?: boolean | undefined\n  readonly disableWAL?: boolean | undefined\n\n  readonly spanAttributes?: Record<string, unknown> | undefined\n\n  readonly transformResultNames?: ((str: string) => string) | undefined\n  readonly transformQueryNames?: ((str: string) => string) | undefined\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/sqlite-bun/src/SqliteClient.ts#L58"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "SqliteClient.ts",
+      "path": "src/SqliteClient.ts"
+    },
+    "project": "@effect/sql-sqlite-bun",
+    "name": "TypeId",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "type ids",
+    "signature": "type TypeId = \"~@effect/sql-sqlite-bun/SqliteClient\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/sqlite-bun/src/SqliteClient.ts#L32"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "SqliteMigrator.ts",
+      "path": "src/SqliteMigrator.ts"
+    },
+    "project": "@effect/sql-sqlite-bun",
+    "name": "run",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructor",
+    "signature": "declare const run: <R2 = never>(options: Migrator.MigratorOptions<R2>) => Effect.Effect<ReadonlyArray<readonly [id: number, name: string]>, Migrator.MigrationError | SqlError, Client.SqlClient | R2>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/sqlite-bun/src/SqliteMigrator.ts#L19"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "SqliteMigrator.ts",
+      "path": "src/SqliteMigrator.ts"
+    },
+    "project": "@effect/sql-sqlite-bun",
+    "name": "layer",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructor",
+    "signature": "declare const layer: <R>(options: Migrator.MigratorOptions<R>) => Layer.Layer<never, SqlError | Migrator.MigrationError, Client.SqlClient | R>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/sqlite-bun/src/SqliteMigrator.ts#L73"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "SqliteMigrator.ts",
+      "path": "src/SqliteMigrator.ts"
+    },
+    "project": "@effect/sql-sqlite-bun",
+    "name": "\"effect/unstable/sql/Migrator\"",
+    "description": "Re-exports all named exports from the \"effect/unstable/sql/Migrator\" module.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * from \"effect/unstable/sql/Migrator\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/sqlite-bun/src/SqliteMigrator.ts#L13"
+  }
+]

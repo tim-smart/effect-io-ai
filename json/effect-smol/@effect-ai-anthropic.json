@@ -1,0 +1,2212 @@
+[
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "AnthropicClient.ts",
+      "path": "src/AnthropicClient.ts"
+    },
+    "project": "@effect/ai-anthropic",
+    "name": "AnthropicClient",
+    "description": "Service identifier for the Anthropic client.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "service",
+    "signature": "declare class AnthropicClient",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicClient.ts#L138"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "AnthropicClient.ts",
+      "path": "src/AnthropicClient.ts"
+    },
+    "project": "@effect/ai-anthropic",
+    "name": "make",
+    "description": "Creates an Anthropic client service with the given options.\n\nThe client automatically handles:\n- API key authentication via the `x-api-key` header\n- API versioning via the `anthropic-version` header\n- Error mapping to the unified `AiError` type\n- Request/response transformations via `AnthropicConfig`\n\nRequires an `HttpClient` in the context.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "declare const make: (options: Options) => Effect.Effect<Service, never, HttpClient.HttpClient>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicClient.ts#L210"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "AnthropicClient.ts",
+      "path": "src/AnthropicClient.ts"
+    },
+    "project": "@effect/ai-anthropic",
+    "name": "layer",
+    "description": "Creates a layer for the Anthropic client with the given options.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "layers",
+    "signature": "declare const layer: (options: Options) => Layer.Layer<AnthropicClient, never, HttpClient.HttpClient>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicClient.ts#L358"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "AnthropicClient.ts",
+      "path": "src/AnthropicClient.ts"
+    },
+    "project": "@effect/ai-anthropic",
+    "name": "layerConfig",
+    "description": "Creates a layer for the Anthropic client, loading the requisite configuration\nvia Effect's `Config` module.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "layers",
+    "signature": "declare const layerConfig: (options?: { readonly apiKey?: Config.Config<Redacted.Redacted<string> | undefined> | undefined; readonly apiUrl?: Config.Config<string> | undefined; readonly apiVersion?: Config.Config<string> | undefined; readonly transformClient?: ((client: HttpClient.HttpClient) => HttpClient.HttpClient) | undefined; }) => Layer.Layer<AnthropicClient, Config.ConfigError, HttpClient.HttpClient>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicClient.ts#L368"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "AnthropicClient.ts",
+      "path": "src/AnthropicClient.ts"
+    },
+    "project": "@effect/ai-anthropic",
+    "name": "Service",
+    "description": "The Anthropic client service interface.\n\nProvides methods for interacting with Anthropic's Messages API, including\nboth synchronous and streaming message creation.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export interface Service {\n  /**\n   * The underlying generated Anthropic client providing access to all API\n   * endpoints.\n   */\n  readonly client: Generated.AnthropicClient\n\n  /**\n   * Low-level streaming request helper for custom SSE endpoints.\n   *\n   * Executes an HTTP request and decodes the Server-Sent Events response\n   * using the provided schema.\n   */\n  readonly streamRequest: <\n    Type extends {\n      readonly id?: string | undefined\n      readonly event: string\n      readonly data: string\n    },\n    DecodingServices\n  >(\n    schema: Schema.Decoder<Type, DecodingServices>\n  ) => (request: HttpClientRequest.HttpClientRequest) => Stream.Stream<\n    Type,\n    HttpClientError.HttpClientError | Schema.SchemaError | Sse.Retry,\n    DecodingServices\n  >\n\n  /**\n   * Creates a message using the Anthropic Messages API.\n   *\n   * Sends a structured list of input messages and returns the model's\n   * generated response. All errors are mapped to the unified `AiError` type.\n   */\n  readonly createMessage: (options: {\n    readonly payload: typeof Generated.BetaCreateMessageParams.Encoded\n    readonly params?: typeof Generated.BetaMessagesPostParams.Encoded | undefined\n  }) => Effect.Effect<\n    [body: typeof Generated.BetaMessage.Type, response: HttpClientResponse.HttpClientResponse],\n    AiError.AiError\n  >\n\n  /**\n   * Creates a streaming message using the Anthropic Messages API.\n   *\n   * Returns an Effect that yields the HTTP response and a stream of events\n   * as the model generates its response. The stream automatically terminates\n   * when a `message_stop` event is received. All errors are mapped to the\n   * unified `AiError` type.\n   */\n  readonly createMessageStream: (options: {\n    readonly payload: Omit<typeof Generated.BetaCreateMessageParams.Encoded, \"stream\">\n    readonly params?: typeof Generated.BetaMessagesPostParams.Encoded | undefined\n  }) => Effect.Effect<\n    [response: HttpClientResponse.HttpClientResponse, stream: Stream.Stream<MessageStreamEvent, AiError.AiError>],\n    AiError.AiError\n  >\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicClient.ts#L44"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "AnthropicClient.ts",
+      "path": "src/AnthropicClient.ts"
+    },
+    "project": "@effect/ai-anthropic",
+    "name": "MessageStreamEvent",
+    "description": "Represents an event received from the Anthropic Messages API during a\nstreaming request.\n\nEvents include:\n- `message_start`: Initial event containing message metadata\n- `message_delta`: Incremental updates to the message (e.g., stop reason)\n- `message_stop`: Final event indicating the message is complete\n- `content_block_start`: Start of a content block\n- `content_block_delta`: Incremental content updates (text, tool use, etc.)\n- `content_block_stop`: End of a content block\n- `error`: Error events with type and message",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "type MessageStreamEvent = | typeof Generated.BetaMessageStartEvent.Type\n  | typeof Generated.BetaMessageDeltaEvent.Type\n  | typeof Generated.BetaMessageStopEvent.Type\n  | typeof Generated.BetaContentBlockStartEvent.Type\n  | typeof Generated.BetaContentBlockDeltaEvent.Type\n  | typeof Generated.BetaContentBlockStopEvent.Type\n  | typeof Generated.BetaErrorResponse.Type",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicClient.ts#L119"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "AnthropicClient.ts",
+      "path": "src/AnthropicClient.ts"
+    },
+    "project": "@effect/ai-anthropic",
+    "name": "Options",
+    "description": "Configuration options for creating an Anthropic client.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "type Options = {\n  /**\n   * The Anthropic API key for authentication.\n   *\n   * If not provided, requests will be made without authentication (useful for\n   * proxied setups or testing).\n   */\n  readonly apiKey?: Redacted.Redacted<string> | undefined\n\n  /**\n   * The base URL for the Anthropic API.\n   *\n   * Override this to use a proxy or a different API-compatible endpoint.\n   *\n   * @default \"https://api.anthropic.com\"\n   */\n  readonly apiUrl?: string | undefined\n\n  /**\n   * The Anthropic API version header value.\n   *\n   * Controls which version of the API to use. See Anthropic's versioning\n   * documentation for available versions and their features.\n   *\n   * @default \"2023-06-01\"\n   */\n  readonly apiVersion?: string | undefined\n\n  /**\n   * Optional transformer for the underlying HTTP client.\n   *\n   * Use this to add middleware, logging, or custom request/response handling.\n   */\n  readonly transformClient?: ((client: HttpClient.HttpClient) => HttpClient.HttpClient) | undefined\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicClient.ts#L152"
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "AnthropicConfig.ts",
+      "path": "src/AnthropicConfig.ts"
+    },
+    "project": "@effect/ai-anthropic",
+    "name": "AnthropicConfig",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "services",
+    "signature": "declare class AnthropicConfig",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicConfig.ts#L13"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "AnthropicConfig.ts",
+      "path": "src/AnthropicConfig.ts"
+    },
+    "project": "@effect/ai-anthropic",
+    "name": "withClientTransform",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "configuration",
+    "signature": "declare const withClientTransform: { (transform: (client: HttpClient) => HttpClient): <A, E, R>(self: Effect.Effect<A, E, R>) => Effect.Effect<A, E, R>; <A, E, R>(self: Effect.Effect<A, E, R>, transform: (client: HttpClient) => HttpClient): Effect.Effect<A, E, R>; }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicConfig.ts#L43"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "AnthropicConfig.ts",
+      "path": "src/AnthropicConfig.ts"
+    },
+    "project": "@effect/ai-anthropic",
+    "name": "AnthropicConfig.Service",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export interface Service {\n    readonly transformClient?: ((client: HttpClient) => HttpClient) | undefined\n  }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicConfig.ts#L34"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "AnthropicError.ts",
+      "path": "src/AnthropicError.ts"
+    },
+    "project": "@effect/ai-anthropic",
+    "name": "AnthropicErrorMetadata",
+    "description": "Anthropic-specific error metadata fields.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "type AnthropicErrorMetadata = {\n  /**\n   * The Anthropic error type returned by the API.\n   */\n  readonly errorType: string | null\n  /**\n   * The unique request ID for debugging with Anthropic support.\n   */\n  readonly requestId: string | null\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicError.ts#L16"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "AnthropicError.ts",
+      "path": "src/AnthropicError.ts"
+    },
+    "project": "@effect/ai-anthropic",
+    "name": "AnthropicRateLimitMetadata",
+    "description": "Anthropic-specific rate limit metadata fields.\n\nExtends base error metadata with rate limit specific information from\nAnthropic's rate limit headers.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "type AnthropicRateLimitMetadata = AnthropicErrorMetadata & {\n  /**\n   * Number of requests allowed in the current period.\n   */\n  readonly requestsLimit: number | null\n  /**\n   * Number of requests remaining in the current period.\n   */\n  readonly requestsRemaining: number | null\n  /**\n   * Time when the request rate limit resets.\n   */\n  readonly requestsReset: string | null\n  /**\n   * Number of tokens allowed in the current period.\n   */\n  readonly tokensLimit: number | null\n  /**\n   * Number of tokens remaining in the current period.\n   */\n  readonly tokensRemaining: number | null\n  /**\n   * Time when the token rate limit resets.\n   */\n  readonly tokensReset: string | null\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicError.ts#L36"
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "AnthropicLanguageModel.ts",
+      "path": "src/AnthropicLanguageModel.ts"
+    },
+    "project": "@effect/ai-anthropic",
+    "name": "Config",
+    "description": "Configuration options for the Anthropic language model.\n\nThis service can be used to provide default configuration values or to\noverride configuration on a per-request basis.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "configuration",
+    "signature": "declare class Config",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicLanguageModel.ts#L56"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "AnthropicLanguageModel.ts",
+      "path": "src/AnthropicLanguageModel.ts"
+    },
+    "project": "@effect/ai-anthropic",
+    "name": "make",
+    "description": "Creates an Anthropic language model service.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "declare const make: (args_0: { readonly model: (string & {}) | Model; readonly config?: Omit<typeof Config.Service, \"model\"> | undefined; }) => Effect.Effect<LanguageModel.Service, never, AnthropicClient>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicLanguageModel.ts#L419"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "AnthropicLanguageModel.ts",
+      "path": "src/AnthropicLanguageModel.ts"
+    },
+    "project": "@effect/ai-anthropic",
+    "name": "withConfigOverride",
+    "description": "Provides config overrides for Anthropic language model operations.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "configuration",
+    "signature": "declare const withConfigOverride: { (overrides: typeof Config.Service): <A, E, R>(self: Effect.Effect<A, E, R>) => Effect.Effect<A, E, Exclude<R, Config>>; <A, E, R>(self: Effect.Effect<A, E, R>, overrides: typeof Config.Service): Effect.Effect<A, E, Exclude<R, Config>>; }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicLanguageModel.ts#L520"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "AnthropicLanguageModel.ts",
+      "path": "src/AnthropicLanguageModel.ts"
+    },
+    "project": "@effect/ai-anthropic",
+    "name": "model",
+    "description": "Creates an Anthropic language model that can be used with `AiModel.provide`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "declare const model: (model: (string & {}) | Model, config?: Omit<typeof Config.Service, \"model\">) => AiModel.Model<\"anthropic\", LanguageModel.LanguageModel, AnthropicClient>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicLanguageModel.ts#L407"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "AnthropicLanguageModel.ts",
+      "path": "src/AnthropicLanguageModel.ts"
+    },
+    "project": "@effect/ai-anthropic",
+    "name": "layer",
+    "description": "Creates a layer for the Anthropic language model.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "layers",
+    "signature": "declare const layer: (options: { readonly model: (string & {}) | Model; readonly config?: Omit<typeof Config.Service, \"model\"> | undefined; }) => Layer.Layer<LanguageModel.LanguageModel, never, AnthropicClient>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicLanguageModel.ts#L508"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "AnthropicLanguageModel.ts",
+      "path": "src/AnthropicLanguageModel.ts"
+    },
+    "project": "@effect/ai-anthropic",
+    "name": "Model",
+    "description": "The available Anthropic Claude model identifiers.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "type Model = typeof Generated.Model.Type",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicLanguageModel.ts#L41"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "AnthropicLanguageModel.ts",
+      "path": "src/AnthropicLanguageModel.ts"
+    },
+    "project": "@effect/ai-anthropic",
+    "name": "AnthropicUserDefinedTool",
+    "description": "Represents a user-defined tool that can be passed to the Anthropic API.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "tools",
+    "signature": "type AnthropicUserDefinedTool = typeof Generated.BetaTool.Encoded",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicLanguageModel.ts#L948"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "AnthropicLanguageModel.ts",
+      "path": "src/AnthropicLanguageModel.ts"
+    },
+    "project": "@effect/ai-anthropic",
+    "name": "AnthropicProviderDefinedTool",
+    "description": "Represents a provider-defined tool that can be passed to the Anthropic API.\n\nThese include Anthropic's built-in tools like computer use, code execution,\nweb search, and text editing.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "tools",
+    "signature": "type AnthropicProviderDefinedTool = | typeof Generated.BetaBashTool_20241022.Encoded\n  | typeof Generated.BetaBashTool_20250124.Encoded\n  | typeof Generated.BetaCodeExecutionTool_20250522.Encoded\n  | typeof Generated.BetaCodeExecutionTool_20250825.Encoded\n  | typeof Generated.BetaComputerUseTool_20241022.Encoded\n  | typeof Generated.BetaComputerUseTool_20250124.Encoded\n  | typeof Generated.BetaComputerUseTool_20251124.Encoded\n  | typeof Generated.BetaMemoryTool_20250818.Encoded\n  | typeof Generated.BetaTextEditor_20241022.Encoded\n  | typeof Generated.BetaTextEditor_20250124.Encoded\n  | typeof Generated.BetaTextEditor_20250429.Encoded\n  | typeof Generated.BetaTextEditor_20250728.Encoded\n  | typeof Generated.BetaToolSearchToolBM25_20251119.Encoded\n  | typeof Generated.BetaToolSearchToolRegex_20251119.Encoded\n  | typeof Generated.BetaWebFetchTool_20250910.Encoded\n  | typeof Generated.BetaWebSearchTool_20250305.Encoded",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicLanguageModel.ts#L959"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "AnthropicTelemetry.ts",
+      "path": "src/AnthropicTelemetry.ts"
+    },
+    "project": "@effect/ai-anthropic",
+    "name": "addGenAIAnnotations",
+    "description": "Applies the specified Anthropic GenAI telemetry attributes to the provided\n`Span`.\n\n**NOTE**: This method will mutate the `Span` **in-place**.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "utilities",
+    "signature": "declare const addGenAIAnnotations: { (options: AnthropicTelemetryAttributeOptions): (span: Span) => void; (span: Span, options: AnthropicTelemetryAttributeOptions): void; }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTelemetry.ts#L107"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "AnthropicTelemetry.ts",
+      "path": "src/AnthropicTelemetry.ts"
+    },
+    "project": "@effect/ai-anthropic",
+    "name": "RequestAttributes",
+    "description": "Telemetry attributes which are part of the GenAI specification and are\nnamespaced by `gen_ai.anthropic.request`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export interface RequestAttributes {\n  /**\n   * Whether extended thinking is enabled.\n   */\n  readonly extendedThinking?: boolean | null | undefined\n  /**\n   * The budget tokens for extended thinking.\n   */\n  readonly thinkingBudgetTokens?: number | null | undefined\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTelemetry.ts#L47"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "AnthropicTelemetry.ts",
+      "path": "src/AnthropicTelemetry.ts"
+    },
+    "project": "@effect/ai-anthropic",
+    "name": "ResponseAttributes",
+    "description": "Telemetry attributes which are part of the GenAI specification and are\nnamespaced by `gen_ai.anthropic.response`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export interface ResponseAttributes {\n  /**\n   * The stop reason from the response.\n   */\n  readonly stopReason?: string | null | undefined\n  /**\n   * Number of cache creation input tokens.\n   */\n  readonly cacheCreationInputTokens?: number | null | undefined\n  /**\n   * Number of cache read input tokens.\n   */\n  readonly cacheReadInputTokens?: number | null | undefined\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTelemetry.ts#L65"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "AnthropicTelemetry.ts",
+      "path": "src/AnthropicTelemetry.ts"
+    },
+    "project": "@effect/ai-anthropic",
+    "name": "AnthropicTelemetryAttributes",
+    "description": "The attributes used to describe telemetry in the context of Generative\nArtificial Intelligence (GenAI) Models requests and responses.\n\n{@see https://opentelemetry.io/docs/specs/semconv/attributes-registry/gen-ai/}",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "type AnthropicTelemetryAttributes = Simplify<\n  & Telemetry.GenAITelemetryAttributes\n  & Telemetry.AttributesWithPrefix<RequestAttributes, \"gen_ai.anthropic.request\">\n  & Telemetry.AttributesWithPrefix<ResponseAttributes, \"gen_ai.anthropic.response\">\n>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTelemetry.ts#L25"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "AnthropicTelemetry.ts",
+      "path": "src/AnthropicTelemetry.ts"
+    },
+    "project": "@effect/ai-anthropic",
+    "name": "AllAttributes",
+    "description": "All telemetry attributes which are part of the GenAI specification,\nincluding the Anthropic-specific attributes.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "type AllAttributes = Telemetry.AllAttributes & RequestAttributes & ResponseAttributes",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTelemetry.ts#L38"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "AnthropicTelemetry.ts",
+      "path": "src/AnthropicTelemetry.ts"
+    },
+    "project": "@effect/ai-anthropic",
+    "name": "AnthropicTelemetryAttributeOptions",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "type AnthropicTelemetryAttributeOptions = Telemetry.GenAITelemetryAttributeOptions & {\n  anthropic?: {\n    request?: RequestAttributes | undefined\n    response?: ResponseAttributes | undefined\n  } | undefined\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTelemetry.ts#L84"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "AnthropicTool.ts",
+      "path": "src/AnthropicTool.ts"
+    },
+    "project": "@effect/ai-anthropic",
+    "name": "Bash_20241022",
+    "description": "Anthropic Bash tool (2024-10-22 version).\n\nAllows the model to execute bash commands in a sandboxed environment.\nRequires the \"computer-use-2024-10-22\" beta header.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Bash",
+    "signature": "declare const Bash_20241022: <Mode extends Tool.FailureMode | undefined = undefined>(args: { readonly failureMode?: Mode | undefined; }) => Tool.ProviderDefined<\"anthropic.bash_20241022\", \"AnthropicBash\", { readonly args: Schema.Void; readonly parameters: Schema.Struct<{ readonly command: Schema.String; readonly restart: Schema.optional<Schema.Boolean>; }>; readonly success: Schema.String; readonly failure: Schema.Never; readonly failureMode: Mode extends undefined ? \"error\" : Mode; }, true>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L50"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "AnthropicTool.ts",
+      "path": "src/AnthropicTool.ts"
+    },
+    "project": "@effect/ai-anthropic",
+    "name": "Bash_20250124",
+    "description": "Anthropic Bash tool (2025-01-24 version).\n\nAllows the model to execute bash commands in a sandboxed environment.\nRequires the \"computer-use-2025-01-24\" beta header.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Bash",
+    "signature": "declare const Bash_20250124: <Mode extends Tool.FailureMode | undefined = undefined>(args: { readonly failureMode?: Mode | undefined; }) => Tool.ProviderDefined<\"anthropic.bash_20250124\", \"AnthropicBash\", { readonly args: Schema.Void; readonly parameters: Schema.Struct<{ readonly command: Schema.String; readonly restart: Schema.optional<Schema.Boolean>; }>; readonly success: Schema.String; readonly failure: Schema.Never; readonly failureMode: Mode extends undefined ? \"error\" : Mode; }, true>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L71"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "AnthropicTool.ts",
+      "path": "src/AnthropicTool.ts"
+    },
+    "project": "@effect/ai-anthropic",
+    "name": "CodeExecutionProgrammaticToolCall",
+    "description": "Programmatic tool call execution parameter.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Code Execution",
+    "signature": "declare const CodeExecutionProgrammaticToolCall: Schema.Struct<{ readonly type: Schema.Literal<\"programmatic-tool-call\">; readonly code: Schema.String; }>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L97"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "AnthropicTool.ts",
+      "path": "src/AnthropicTool.ts"
+    },
+    "project": "@effect/ai-anthropic",
+    "name": "CodeExecutionBashCommand",
+    "description": "Bash code execution parameter.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Code Execution",
+    "signature": "declare const CodeExecutionBashCommand: Schema.Struct<{ readonly type: Schema.Literal<\"bash_code_execution\">; readonly command: Schema.String; }>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L116"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "AnthropicTool.ts",
+      "path": "src/AnthropicTool.ts"
+    },
+    "project": "@effect/ai-anthropic",
+    "name": "CodeExecutionTextEditorView",
+    "description": "Text editor view command for code execution.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Code Execution",
+    "signature": "declare const CodeExecutionTextEditorView: Schema.Struct<{ readonly type: Schema.Literal<\"text_editor_code_execution\">; readonly command: Schema.Literal<\"view\">; readonly path: Schema.String; }>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L135"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "AnthropicTool.ts",
+      "path": "src/AnthropicTool.ts"
+    },
+    "project": "@effect/ai-anthropic",
+    "name": "CodeExecutionTextEditorCreate",
+    "description": "Text editor create command for code execution.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Code Execution",
+    "signature": "declare const CodeExecutionTextEditorCreate: Schema.Struct<{ readonly type: Schema.Literal<\"text_editor_code_execution\">; readonly command: Schema.Literal<\"create\">; readonly path: Schema.String; readonly file_text: Schema.optional<Schema.NullOr<Schema.String>>; }>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L155"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "AnthropicTool.ts",
+      "path": "src/AnthropicTool.ts"
+    },
+    "project": "@effect/ai-anthropic",
+    "name": "CodeExecutionTextEditorStrReplace",
+    "description": "Text editor str_replace command for code execution.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Code Execution",
+    "signature": "declare const CodeExecutionTextEditorStrReplace: Schema.Struct<{ readonly type: Schema.Literal<\"text_editor_code_execution\">; readonly command: Schema.Literal<\"str_replace\">; readonly path: Schema.String; readonly old_str: Schema.String; readonly new_str: Schema.String; }>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L179"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "AnthropicTool.ts",
+      "path": "src/AnthropicTool.ts"
+    },
+    "project": "@effect/ai-anthropic",
+    "name": "CodeExecution_20250825_Parameters",
+    "description": "Simple code execution parameter.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Code Execution",
+    "signature": "declare const CodeExecution_20250825_Parameters: Schema.Struct<{ readonly code: Schema.String; }>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L219"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "AnthropicTool.ts",
+      "path": "src/AnthropicTool.ts"
+    },
+    "project": "@effect/ai-anthropic",
+    "name": "CodeExecution_20250522",
+    "description": "Anthropic Code Execution tool (2025-05-22 version).\n\nAllows the model to execute code in a sandboxed environment with support\nfor multiple execution types including programmatic tool calls, bash\nexecution, and text editor operations.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Code Execution",
+    "signature": "declare const CodeExecution_20250522: <Mode extends Tool.FailureMode | undefined = undefined>(args: void) => Tool.ProviderDefined<\"anthropic.code_execution_20250522\", \"AnthropicCodeExecution\", { readonly args: Schema.Void; readonly parameters: Schema.Union<readonly [Schema.Struct<{ readonly type: Schema.Literal<\"programmatic-tool-call\">; readonly code: Schema.String; }>, Schema.Struct<{ readonly type: Schema.Literal<\"bash_code_execution\">; readonly command: Schema.String; }>, Schema.Struct<{ readonly type: Schema.Literal<\"text_editor_code_execution\">; readonly command: Schema.Literal<\"view\">; readonly path: Schema.String; }>, Schema.Struct<{ readonly type: Schema.Literal<\"text_editor_code_execution\">; readonly command: Schema.Literal<\"create\">; readonly path: Schema.String; readonly file_text: Schema.optional<Schema.NullOr<Schema.String>>; }>, Schema.Struct<{ readonly type: Schema.Literal<\"text_editor_code_execution\">; readonly command: Schema.Literal<\"str_replace\">; readonly path: Schema.String; readonly old_str: Schema.String; readonly new_str: Schema.String; }>]>; readonly success: Schema.Struct<{ readonly content: Schema.$Array<Schema.Struct<{ readonly file_id: Schema.String; readonly type: Schema.Literal<\"code_execution_output\">; }>>; readonly return_code: Schema.Number; readonly stderr: Schema.String; readonly stdout: Schema.String; readonly type: Schema.Literal<\"code_execution_result\">; }>; readonly failure: Schema.Struct<{ readonly error_code: Schema.Literals<readonly [\"invalid_tool_input\", \"unavailable\", \"too_many_requests\", \"execution_time_exceeded\"]>; readonly type: Schema.Literal<\"code_execution_tool_result_error\">; }>; readonly failureMode: Mode extends undefined ? \"error\" : Mode; }, false>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L245"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "AnthropicTool.ts",
+      "path": "src/AnthropicTool.ts"
+    },
+    "project": "@effect/ai-anthropic",
+    "name": "CodeExecution_20250825",
+    "description": "Anthropic Code Execution tool (2025-08-25 version).\n\nAllows the model to execute code in a sandboxed environment.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Code Execution",
+    "signature": "declare const CodeExecution_20250825: <Mode extends Tool.FailureMode | undefined = undefined>(args: void) => Tool.ProviderDefined<\"anthropic.code_execution_20250825\", \"AnthropicCodeExecution\", { readonly args: Schema.Void; readonly parameters: Schema.Struct<{ readonly code: Schema.String; }>; readonly success: Schema.Union<readonly [Schema.Struct<{ readonly content: Schema.$Array<Schema.Struct<{ readonly file_id: Schema.String; readonly type: Schema.Literal<\"code_execution_output\">; }>>; readonly return_code: Schema.Number; readonly stderr: Schema.String; readonly stdout: Schema.String; readonly type: Schema.Literal<\"code_execution_result\">; }>, Schema.Struct<{ readonly content: Schema.$Array<Schema.Struct<{ readonly file_id: Schema.String; readonly type: Schema.Literal<\"bash_code_execution_output\">; }>>; readonly return_code: Schema.Number; readonly stderr: Schema.String; readonly stdout: Schema.String; readonly type: Schema.Literal<\"bash_code_execution_result\">; }>, Schema.Struct<{ readonly content: Schema.String; readonly file_type: Schema.Literals<readonly [\"text\", \"image\", \"pdf\"]>; readonly num_lines: Schema.Union<readonly [Schema.Number, Schema.Null]>; readonly start_line: Schema.Union<readonly [Schema.Number, Schema.Null]>; readonly total_lines: Schema.Union<readonly [Schema.Number, Schema.Null]>; readonly type: Schema.Literal<\"text_editor_code_execution_view_result\">; }>, Schema.Struct<{ readonly is_file_update: Schema.Boolean; readonly type: Schema.Literal<\"text_editor_code_execution_create_result\">; }>, Schema.Struct<{ readonly lines: Schema.Union<readonly [Schema.$Array<Schema.String>, Schema.Null]>; readonly new_lines: Schema.Union<readonly [Schema.Number, Schema.Null]>; readonly new_start: Schema.Union<readonly [Schema.Number, Schema.Null]>; readonly old_lines: Schema.Union<readonly [Schema.Number, Schema.Null]>; readonly old_start: Schema.Union<readonly [Schema.Number, Schema.Null]>; readonly type: Schema.Literal<\"text_editor_code_execution_str_replace_result\">; }>]>; readonly failure: Schema.Union<readonly [Schema.Struct<{ readonly error_code: Schema.Literals<readonly [\"invalid_tool_input\", \"unavailable\", \"too_many_requests\", \"execution_time_exceeded\"]>; readonly type: Schema.Literal<\"code_execution_tool_result_error\">; }>, Schema.Struct<{ readonly error_code: Schema.Literals<readonly [\"invalid_tool_input\", \"unavailable\", \"too_many_requests\", \"execution_time_exceeded\", \"output_file_too_large\"]>; readonly type: Schema.Literal<\"bash_code_execution_tool_result_error\">; }>, Schema.Struct<{ readonly error_code: Schema.Literals<readonly [\"invalid_tool_input\", \"unavailable\", \"too_many_requests\", \"execution_time_exceeded\", \"file_not_found\"]>; readonly error_message: Schema.Union<readonly [Schema.String, Schema.Null]>; readonly type: Schema.Literal<\"text_editor_code_execution_tool_result_error\">; }>]>; readonly failureMode: Mode extends undefined ? \"error\" : Mode; }, false>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L262"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "AnthropicTool.ts",
+      "path": "src/AnthropicTool.ts"
+    },
+    "project": "@effect/ai-anthropic",
+    "name": "Coordinate",
+    "description": "An `[x, y]` pixel position.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Computer Use",
+    "signature": "declare const Coordinate: Schema.Tuple<readonly [Schema.Number, Schema.Number]>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L295"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "AnthropicTool.ts",
+      "path": "src/AnthropicTool.ts"
+    },
+    "project": "@effect/ai-anthropic",
+    "name": "Region",
+    "description": "A `[x1, y1, x2, y2]` position defining top-left and bottom-right corners.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Computer Use",
+    "signature": "declare const Region: Schema.Tuple<readonly [Schema.Number, Schema.Number, Schema.Number, Schema.Number]>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L308"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "AnthropicTool.ts",
+      "path": "src/AnthropicTool.ts"
+    },
+    "project": "@effect/ai-anthropic",
+    "name": "ScrollDirection",
+    "description": "The direction of the scroll for scroll actions.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Computer Use",
+    "signature": "declare const ScrollDirection: Schema.Literals<readonly [\"up\", \"down\", \"left\", \"right\"]>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L321"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "AnthropicTool.ts",
+      "path": "src/AnthropicTool.ts"
+    },
+    "project": "@effect/ai-anthropic",
+    "name": "ModifierKey",
+    "description": "Modifier keys that can be held during click/scroll actions.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Computer Use",
+    "signature": "declare const ModifierKey: Schema.Literals<readonly [\"alt\", \"ctrl\", \"meta\", \"shift\"]>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L334"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "AnthropicTool.ts",
+      "path": "src/AnthropicTool.ts"
+    },
+    "project": "@effect/ai-anthropic",
+    "name": "ComputerUseKeyAction",
+    "description": "Press a key or key combination (e.g. `\"Return\"`, `\"ctrl+c\"`, `\"ctrl+s\"`).",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Computer Use",
+    "signature": "declare const ComputerUseKeyAction: Schema.Struct<{ readonly action: Schema.Literal<\"key\">; readonly text: Schema.String; }>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L379"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "AnthropicTool.ts",
+      "path": "src/AnthropicTool.ts"
+    },
+    "project": "@effect/ai-anthropic",
+    "name": "ComputerUseLeftClickAction",
+    "description": "Perform a left click at the current mouse position or the specified coordinates.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Computer Use",
+    "signature": "declare const ComputerUseLeftClickAction: Schema.Struct<{ readonly action: Schema.Literal<\"left_click\">; readonly coordinate: Schema.optional<Schema.Tuple<readonly [Schema.Number, Schema.Number]>>; }>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L398"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "AnthropicTool.ts",
+      "path": "src/AnthropicTool.ts"
+    },
+    "project": "@effect/ai-anthropic",
+    "name": "ComputerUseMouseMoveAction",
+    "description": "Move the mouse cursor to the specified coordinates.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Computer Use",
+    "signature": "declare const ComputerUseMouseMoveAction: Schema.Struct<{ readonly action: Schema.Literal<\"mouse_move\">; readonly coordinate: Schema.Tuple<readonly [Schema.Number, Schema.Number]>; }>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L418"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "AnthropicTool.ts",
+      "path": "src/AnthropicTool.ts"
+    },
+    "project": "@effect/ai-anthropic",
+    "name": "ComputerUseScreenshotAction",
+    "description": "Capture the current display.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Computer Use",
+    "signature": "declare const ComputerUseScreenshotAction: Schema.Struct<{ readonly action: Schema.Literal<\"screenshot\">; }>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L437"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "AnthropicTool.ts",
+      "path": "src/AnthropicTool.ts"
+    },
+    "project": "@effect/ai-anthropic",
+    "name": "TypeAction",
+    "description": "Type a text string.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Computer Use",
+    "signature": "declare const TypeAction: Schema.Struct<{ readonly action: Schema.Literal<\"type\">; readonly text: Schema.String; }>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L452"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "AnthropicTool.ts",
+      "path": "src/AnthropicTool.ts"
+    },
+    "project": "@effect/ai-anthropic",
+    "name": "ComputerUseDoubleClickAction",
+    "description": "Perform a double click.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Computer Use",
+    "signature": "declare const ComputerUseDoubleClickAction: Schema.Struct<{ readonly action: Schema.Literal<\"double_click\">; readonly coordinate: Schema.optional<Schema.Tuple<readonly [Schema.Number, Schema.Number]>>; }>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L483"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "AnthropicTool.ts",
+      "path": "src/AnthropicTool.ts"
+    },
+    "project": "@effect/ai-anthropic",
+    "name": "ComputerUseHoldKeyAction",
+    "description": "Holds a key while performing other actions.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Computer Use",
+    "signature": "declare const ComputerUseHoldKeyAction: Schema.Struct<{ readonly action: Schema.Literal<\"hold_key\">; readonly text: Schema.String; readonly duration: Schema.Number; }>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L503"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "AnthropicTool.ts",
+      "path": "src/AnthropicTool.ts"
+    },
+    "project": "@effect/ai-anthropic",
+    "name": "ComputerUseLeftClickDragAction",
+    "description": "Click and drag from start coordinate to end coordinate.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Computer Use",
+    "signature": "declare const ComputerUseLeftClickDragAction: Schema.Struct<{ readonly action: Schema.Literal<\"left_click_drag\">; readonly start_coordinate: Schema.Tuple<readonly [Schema.Number, Schema.Number]>; readonly coordinate: Schema.Tuple<readonly [Schema.Number, Schema.Number]>; }>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L526"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "AnthropicTool.ts",
+      "path": "src/AnthropicTool.ts"
+    },
+    "project": "@effect/ai-anthropic",
+    "name": "ComputerUseLeftMouseDownAction",
+    "description": "Press the left mouse button down (without releasing).\n\nUsed for fine-grained click control.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Computer Use",
+    "signature": "declare const ComputerUseLeftMouseDownAction: Schema.Struct<{ readonly action: Schema.Literal<\"left_mouse_down\">; readonly coordinate: Schema.optional<Schema.Tuple<readonly [Schema.Number, Schema.Number]>>; }>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L551"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "AnthropicTool.ts",
+      "path": "src/AnthropicTool.ts"
+    },
+    "project": "@effect/ai-anthropic",
+    "name": "ComputerUseLeftMouseUpAction",
+    "description": "Release the left mouse button.\n\nUsed for fine-grained click control.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Computer Use",
+    "signature": "declare const ComputerUseLeftMouseUpAction: Schema.Struct<{ readonly action: Schema.Literal<\"left_mouse_up\">; readonly coordinate: Schema.optional<Schema.Tuple<readonly [Schema.Number, Schema.Number]>>; }>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L573"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "AnthropicTool.ts",
+      "path": "src/AnthropicTool.ts"
+    },
+    "project": "@effect/ai-anthropic",
+    "name": "ComputerUseMiddleClickAction",
+    "description": "Perform a middle click.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Computer Use",
+    "signature": "declare const ComputerUseMiddleClickAction: Schema.Struct<{ readonly action: Schema.Literal<\"middle_click\">; readonly coordinate: Schema.optional<Schema.Tuple<readonly [Schema.Number, Schema.Number]>>; }>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L593"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "AnthropicTool.ts",
+      "path": "src/AnthropicTool.ts"
+    },
+    "project": "@effect/ai-anthropic",
+    "name": "ComputerUseRightClickAction",
+    "description": "Perform a right click.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Computer Use",
+    "signature": "declare const ComputerUseRightClickAction: Schema.Struct<{ readonly action: Schema.Literal<\"right_click\">; readonly coordinate: Schema.optional<Schema.Tuple<readonly [Schema.Number, Schema.Number]>>; }>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L613"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "AnthropicTool.ts",
+      "path": "src/AnthropicTool.ts"
+    },
+    "project": "@effect/ai-anthropic",
+    "name": "ComputerUseScrollAction",
+    "description": "Scroll a given amount in a specified direction.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Computer Use",
+    "signature": "declare const ComputerUseScrollAction: Schema.Struct<{ readonly action: Schema.Literal<\"scroll\">; readonly coordinate: Schema.optional<Schema.Tuple<readonly [Schema.Number, Schema.Number]>>; readonly scroll_direction: Schema.Literals<readonly [\"up\", \"down\", \"left\", \"right\"]>; readonly scroll_amount: Schema.Number; }>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L633"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "AnthropicTool.ts",
+      "path": "src/AnthropicTool.ts"
+    },
+    "project": "@effect/ai-anthropic",
+    "name": "ComputerUseTripleClickAction",
+    "description": "Perform a triple click.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Computer Use",
+    "signature": "declare const ComputerUseTripleClickAction: Schema.Struct<{ readonly action: Schema.Literal<\"triple_click\">; readonly coordinate: Schema.optional<Schema.Tuple<readonly [Schema.Number, Schema.Number]>>; }>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L661"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "AnthropicTool.ts",
+      "path": "src/AnthropicTool.ts"
+    },
+    "project": "@effect/ai-anthropic",
+    "name": "ComputerUseWaitAction",
+    "description": "Pause between performing actions.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Computer Use",
+    "signature": "declare const ComputerUseWaitAction: Schema.Struct<{ readonly action: Schema.Literal<\"wait\">; readonly duration: Schema.Number; }>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L681"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "AnthropicTool.ts",
+      "path": "src/AnthropicTool.ts"
+    },
+    "project": "@effect/ai-anthropic",
+    "name": "ComputerUseZoomAction",
+    "description": "Zoom into a specific region of the screen at full resolution.\n\nRequires `enableZoom: true` in the tool definition.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Computer Use",
+    "signature": "declare const ComputerUseZoomAction: Schema.Struct<{ readonly action: Schema.Literal<\"zoom\">; readonly region: Schema.Tuple<readonly [Schema.Number, Schema.Number, Schema.Number, Schema.Number]>; }>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L720"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "AnthropicTool.ts",
+      "path": "src/AnthropicTool.ts"
+    },
+    "project": "@effect/ai-anthropic",
+    "name": "ComputerUse_20241022",
+    "description": "Computer use tool for Claude 3.5 Sonnet v2 (deprecated).\n\nRequires the \"computer-use-2024-10-22\" beta header.\n\nBasic actions only: screenshot, left_click, type, key, mouse_move.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Computer Use",
+    "signature": "declare const ComputerUse_20241022: <Mode extends Tool.FailureMode | undefined = undefined>(args: { readonly displayWidthPx: number; readonly displayHeightPx: number; readonly displayNumber?: number | undefined; readonly failureMode?: Mode | undefined; }) => Tool.ProviderDefined<\"anthropic.computer_use_20241022\", \"AnthropicComputerUse\", { readonly args: Schema.Struct<{ readonly displayWidthPx: Schema.Number; readonly displayHeightPx: Schema.Number; readonly displayNumber: Schema.optional<Schema.Number>; }>; readonly parameters: Schema.Union<readonly [Schema.Struct<{ readonly action: Schema.Literal<\"key\">; readonly text: Schema.String; }>, Schema.Struct<{ readonly action: Schema.Literal<\"left_click\">; readonly coordinate: Schema.optional<Schema.Tuple<readonly [Schema.Number, Schema.Number]>>; }>, Schema.Struct<{ readonly action: Schema.Literal<\"mouse_move\">; readonly coordinate: Schema.Tuple<readonly [Schema.Number, Schema.Number]>; }>, Schema.Struct<{ readonly action: Schema.Literal<\"screenshot\">; }>, Schema.Struct<{ readonly action: Schema.Literal<\"type\">; readonly text: Schema.String; }>]>; readonly success: Schema.String; readonly failure: Schema.Never; readonly failureMode: Mode extends undefined ? \"error\" : Mode; }, true>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L753"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "AnthropicTool.ts",
+      "path": "src/AnthropicTool.ts"
+    },
+    "project": "@effect/ai-anthropic",
+    "name": "ComputerUse_20250124",
+    "description": "Computer use tool for Claude 4 models and Claude Sonnet 3.7.\n\nRequires the \"computer-use-2025-01-24\" beta header.\n\nIncludes basic actions plus enhanced actions: scroll, left_click_drag,\nright_click, middle_click, double_click, triple_click, left_mouse_down,\nleft_mouse_up, hold_key, wait.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Computer Use",
+    "signature": "declare const ComputerUse_20250124: <Mode extends Tool.FailureMode | undefined = undefined>(args: { readonly displayWidthPx: number; readonly displayHeightPx: number; readonly displayNumber?: number | undefined; readonly failureMode?: Mode | undefined; }) => Tool.ProviderDefined<\"anthropic.computer_20250124\", \"AnthropicComputerUse\", { readonly args: Schema.Struct<{ readonly displayWidthPx: Schema.Number; readonly displayHeightPx: Schema.Number; readonly displayNumber: Schema.optional<Schema.Number>; }>; readonly parameters: Schema.Union<readonly [Schema.Struct<{ readonly action: Schema.Literal<\"key\">; readonly text: Schema.String; }>, Schema.Struct<{ readonly action: Schema.Literal<\"left_click\">; readonly coordinate: Schema.optional<Schema.Tuple<readonly [Schema.Number, Schema.Number]>>; }>, Schema.Struct<{ readonly action: Schema.Literal<\"mouse_move\">; readonly coordinate: Schema.Tuple<readonly [Schema.Number, Schema.Number]>; }>, Schema.Struct<{ readonly action: Schema.Literal<\"screenshot\">; }>, Schema.Struct<{ readonly action: Schema.Literal<\"type\">; readonly text: Schema.String; }>, Schema.Struct<{ readonly action: Schema.Literal<\"double_click\">; readonly coordinate: Schema.optional<Schema.Tuple<readonly [Schema.Number, Schema.Number]>>; }>, Schema.Struct<{ readonly action: Schema.Literal<\"hold_key\">; readonly text: Schema.String; readonly duration: Schema.Number; }>, Schema.Struct<{ readonly action: Schema.Literal<\"left_click_drag\">; readonly start_coordinate: Schema.Tuple<readonly [Schema.Number, Schema.Number]>; readonly coordinate: Schema.Tuple<readonly [Schema.Number, Schema.Number]>; }>, Schema.Struct<{ readonly action: Schema.Literal<\"left_mouse_down\">; readonly coordinate: Schema.optional<Schema.Tuple<readonly [Schema.Number, Schema.Number]>>; }>, Schema.Struct<{ readonly action: Schema.Literal<\"left_mouse_up\">; readonly coordinate: Schema.optional<Schema.Tuple<readonly [Schema.Number, Schema.Number]>>; }>, Schema.Struct<{ readonly action: Schema.Literal<\"middle_click\">; readonly coordinate: Schema.optional<Schema.Tuple<readonly [Schema.Number, Schema.Number]>>; }>, Schema.Struct<{ readonly action: Schema.Literal<\"right_click\">; readonly coordinate: Schema.optional<Schema.Tuple<readonly [Schema.Number, Schema.Number]>>; }>, Schema.Struct<{ readonly action: Schema.Literal<\"scroll\">; readonly coordinate: Schema.optional<Schema.Tuple<readonly [Schema.Number, Schema.Number]>>; readonly scroll_direction: Schema.Literals<readonly [\"up\", \"down\", \"left\", \"right\"]>; readonly scroll_amount: Schema.Number; }>, Schema.Struct<{ readonly action: Schema.Literal<\"triple_click\">; readonly coordinate: Schema.optional<Schema.Tuple<readonly [Schema.Number, Schema.Number]>>; }>, Schema.Struct<{ readonly action: Schema.Literal<\"wait\">; readonly duration: Schema.Number; }>]>; readonly success: Schema.String; readonly failure: Schema.Never; readonly failureMode: Mode extends undefined ? \"error\" : Mode; }, true>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L775"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "AnthropicTool.ts",
+      "path": "src/AnthropicTool.ts"
+    },
+    "project": "@effect/ai-anthropic",
+    "name": "ComputerUse_20251124",
+    "description": "Computer use tool for Claude Opus 4.5 only.\n\nRequires the \"computer-use-2025-11-24\" beta header.\n\nIncludes all actions from computer_20250124 plus the zoom action for\ndetailed screen region inspection. Requires `enableZoom: true` in args.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Computer Use",
+    "signature": "declare const ComputerUse_20251124: <Mode extends Tool.FailureMode | undefined = undefined>(args: { readonly displayWidthPx: number; readonly displayHeightPx: number; readonly displayNumber?: number | undefined; readonly enableZoom?: boolean | undefined; readonly failureMode?: Mode | undefined; }) => Tool.ProviderDefined<\"anthropic.computer_20251124\", \"AnthropicComputerUse\", { readonly args: Schema.Struct<{ readonly enableZoom: Schema.optional<Schema.Boolean>; readonly displayWidthPx: Schema.Number; readonly displayHeightPx: Schema.Number; readonly displayNumber: Schema.optional<Schema.Number>; }>; readonly parameters: Schema.Union<readonly [Schema.Struct<{ readonly action: Schema.Literal<\"key\">; readonly text: Schema.String; }>, Schema.Struct<{ readonly action: Schema.Literal<\"left_click\">; readonly coordinate: Schema.optional<Schema.Tuple<readonly [Schema.Number, Schema.Number]>>; }>, Schema.Struct<{ readonly action: Schema.Literal<\"mouse_move\">; readonly coordinate: Schema.Tuple<readonly [Schema.Number, Schema.Number]>; }>, Schema.Struct<{ readonly action: Schema.Literal<\"screenshot\">; }>, Schema.Struct<{ readonly action: Schema.Literal<\"type\">; readonly text: Schema.String; }>, Schema.Struct<{ readonly action: Schema.Literal<\"double_click\">; readonly coordinate: Schema.optional<Schema.Tuple<readonly [Schema.Number, Schema.Number]>>; }>, Schema.Struct<{ readonly action: Schema.Literal<\"hold_key\">; readonly text: Schema.String; readonly duration: Schema.Number; }>, Schema.Struct<{ readonly action: Schema.Literal<\"left_click_drag\">; readonly start_coordinate: Schema.Tuple<readonly [Schema.Number, Schema.Number]>; readonly coordinate: Schema.Tuple<readonly [Schema.Number, Schema.Number]>; }>, Schema.Struct<{ readonly action: Schema.Literal<\"left_mouse_down\">; readonly coordinate: Schema.optional<Schema.Tuple<readonly [Schema.Number, Schema.Number]>>; }>, Schema.Struct<{ readonly action: Schema.Literal<\"left_mouse_up\">; readonly coordinate: Schema.optional<Schema.Tuple<readonly [Schema.Number, Schema.Number]>>; }>, Schema.Struct<{ readonly action: Schema.Literal<\"middle_click\">; readonly coordinate: Schema.optional<Schema.Tuple<readonly [Schema.Number, Schema.Number]>>; }>, Schema.Struct<{ readonly action: Schema.Literal<\"right_click\">; readonly coordinate: Schema.optional<Schema.Tuple<readonly [Schema.Number, Schema.Number]>>; }>, Schema.Struct<{ readonly action: Schema.Literal<\"scroll\">; readonly coordinate: Schema.optional<Schema.Tuple<readonly [Schema.Number, Schema.Number]>>; readonly scroll_direction: Schema.Literals<readonly [\"up\", \"down\", \"left\", \"right\"]>; readonly scroll_amount: Schema.Number; }>, Schema.Struct<{ readonly action: Schema.Literal<\"triple_click\">; readonly coordinate: Schema.optional<Schema.Tuple<readonly [Schema.Number, Schema.Number]>>; }>, Schema.Struct<{ readonly action: Schema.Literal<\"wait\">; readonly duration: Schema.Number; }>, Schema.Struct<{ readonly action: Schema.Literal<\"zoom\">; readonly region: Schema.Tuple<readonly [Schema.Number, Schema.Number, Schema.Number, Schema.Number]>; }>]>; readonly success: Schema.String; readonly failure: Schema.Never; readonly failureMode: Mode extends undefined ? \"error\" : Mode; }, true>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L796"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "AnthropicTool.ts",
+      "path": "src/AnthropicTool.ts"
+    },
+    "project": "@effect/ai-anthropic",
+    "name": "ViewRange",
+    "description": "A `[start, end]` line range for viewing file contents.\n\nLines are 1-indexed. Use -1 for end to read to end of file.",
+    "deprecated": false,
+    "examples": [
+      "[1, 50]    // View lines 1-50",
+      "[100, -1]  // View from line 100 to end of file"
+    ],
+    "since": "1.0.0",
+    "category": "Memory",
+    "signature": "declare const ViewRange: Schema.Tuple<readonly [Schema.Number, Schema.Number]>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L825"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "AnthropicTool.ts",
+      "path": "src/AnthropicTool.ts"
+    },
+    "project": "@effect/ai-anthropic",
+    "name": "MemoryCreateCommand",
+    "description": "Creates a new file.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Memory",
+    "signature": "declare const MemoryCreateCommand: Schema.Struct<{ readonly command: Schema.Literal<\"create\">; readonly path: Schema.String; }>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L842"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "AnthropicTool.ts",
+      "path": "src/AnthropicTool.ts"
+    },
+    "project": "@effect/ai-anthropic",
+    "name": "MemoryDeleteCommand",
+    "description": "Delete a file or directory.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Memory",
+    "signature": "declare const MemoryDeleteCommand: Schema.Struct<{ readonly command: Schema.Literal<\"delete\">; readonly path: Schema.String; }>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L861"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "AnthropicTool.ts",
+      "path": "src/AnthropicTool.ts"
+    },
+    "project": "@effect/ai-anthropic",
+    "name": "MemoryInsertCommand",
+    "description": "Insert text at a specific line.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Memory",
+    "signature": "declare const MemoryInsertCommand: Schema.Struct<{ readonly command: Schema.Literal<\"insert\">; readonly path: Schema.String; readonly insert_line: Schema.Number; readonly insert_text: Schema.String; }>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L880"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "AnthropicTool.ts",
+      "path": "src/AnthropicTool.ts"
+    },
+    "project": "@effect/ai-anthropic",
+    "name": "MemoryRenameCommand",
+    "description": "Rename or move a file or directory.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Memory",
+    "signature": "declare const MemoryRenameCommand: Schema.Struct<{ readonly command: Schema.Literal<\"rename\">; readonly old_path: Schema.String; readonly new_path: Schema.String; }>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L907"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "AnthropicTool.ts",
+      "path": "src/AnthropicTool.ts"
+    },
+    "project": "@effect/ai-anthropic",
+    "name": "MemoryStrReplaceCommand",
+    "description": "Replace text in a file.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Memory",
+    "signature": "declare const MemoryStrReplaceCommand: Schema.Struct<{ readonly command: Schema.Literal<\"str_replace\">; readonly path: Schema.String; readonly old_str: Schema.String; readonly new_str: Schema.String; }>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L930"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "AnthropicTool.ts",
+      "path": "src/AnthropicTool.ts"
+    },
+    "project": "@effect/ai-anthropic",
+    "name": "MemoryViewCommand",
+    "description": "Shows directory contents or file contents with optional line ranges.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Memory",
+    "signature": "declare const MemoryViewCommand: Schema.Struct<{ readonly command: Schema.Literal<\"view\">; readonly path: Schema.String; readonly view_range: Schema.optional<Schema.Tuple<readonly [Schema.Number, Schema.Number]>>; }>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L957"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "AnthropicTool.ts",
+      "path": "src/AnthropicTool.ts"
+    },
+    "project": "@effect/ai-anthropic",
+    "name": "Memory_20250818",
+    "description": "Memory tool for persistent file operations across conversations.\n\nProvides commands for creating, viewing, editing, renaming, and deleting\nfiles within the model's memory space.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Memory",
+    "signature": "declare const Memory_20250818: <Mode extends Tool.FailureMode | undefined = undefined>(args: void) => Tool.ProviderDefined<\"anthropic.memory_20250818\", \"AnthropicMemory\", { readonly args: Schema.Void; readonly parameters: Schema.Union<readonly [Schema.Struct<{ readonly command: Schema.Literal<\"create\">; readonly path: Schema.String; }>, Schema.Struct<{ readonly command: Schema.Literal<\"delete\">; readonly path: Schema.String; }>, Schema.Struct<{ readonly command: Schema.Literal<\"insert\">; readonly path: Schema.String; readonly insert_line: Schema.Number; readonly insert_text: Schema.String; }>, Schema.Struct<{ readonly command: Schema.Literal<\"rename\">; readonly old_path: Schema.String; readonly new_path: Schema.String; }>, Schema.Struct<{ readonly command: Schema.Literal<\"str_replace\">; readonly path: Schema.String; readonly old_str: Schema.String; readonly new_str: Schema.String; }>, Schema.Struct<{ readonly command: Schema.Literal<\"view\">; readonly path: Schema.String; readonly view_range: Schema.optional<Schema.Tuple<readonly [Schema.Number, Schema.Number]>>; }>]>; readonly success: Schema.String; readonly failure: Schema.Never; readonly failureMode: Mode extends undefined ? \"error\" : Mode; }, false>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L996"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "AnthropicTool.ts",
+      "path": "src/AnthropicTool.ts"
+    },
+    "project": "@effect/ai-anthropic",
+    "name": "TextEditorViewCommand",
+    "description": "View the contents of a file or list directory contents.\n\nWhen used on a file: Returns the file contents, optionally limited to a line range.\nWhen used on a directory: Lists all files and subdirectories.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Text Editor",
+    "signature": "declare const TextEditorViewCommand: Schema.Struct<{ readonly command: Schema.Literal<\"view\">; readonly path: Schema.String; readonly view_range: Schema.optional<Schema.Tuple<readonly [Schema.Number, Schema.Number]>>; }>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L1021"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "AnthropicTool.ts",
+      "path": "src/AnthropicTool.ts"
+    },
+    "project": "@effect/ai-anthropic",
+    "name": "TextEditorCreateCommand",
+    "description": "Create a new file with specified content.\n\nWill fail if the file already exists. Parent directories must exist.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Text Editor",
+    "signature": "declare const TextEditorCreateCommand: Schema.Struct<{ readonly command: Schema.Literal<\"create\">; readonly path: Schema.String; readonly file_text: Schema.String; }>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L1047"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "AnthropicTool.ts",
+      "path": "src/AnthropicTool.ts"
+    },
+    "project": "@effect/ai-anthropic",
+    "name": "TextEditorStrReplaceCommand",
+    "description": "Replace a specific string in a file with a new string.\n\nThe `old_str` must match exactly (including whitespace and indentation)\nand must be unique in the file.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Text Editor",
+    "signature": "declare const TextEditorStrReplaceCommand: Schema.Struct<{ readonly command: Schema.Literal<\"str_replace\">; readonly path: Schema.String; readonly old_str: Schema.String; readonly new_str: Schema.String; }>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L1073"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "AnthropicTool.ts",
+      "path": "src/AnthropicTool.ts"
+    },
+    "project": "@effect/ai-anthropic",
+    "name": "TextEditorInsertCommand",
+    "description": "Insert text at a specific line number in a file.\n\nInserts the new text AFTER the specified line number.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Text Editor",
+    "signature": "declare const TextEditorInsertCommand: Schema.Struct<{ readonly command: Schema.Literal<\"insert\">; readonly path: Schema.String; readonly insert_line: Schema.Number; readonly new_str: Schema.String; }>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L1102"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "AnthropicTool.ts",
+      "path": "src/AnthropicTool.ts"
+    },
+    "project": "@effect/ai-anthropic",
+    "name": "TextEditorUndoEditCommand",
+    "description": "Undo the last edit made to a file.\n\nReverts the most recent str_replace, insert, or create operation on the file.\n\nNOTE: This command is available in text_editor_20241022 and text_editor_20250124,\nbut NOT in text_editor_20250728 (Claude 4 models).",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Text Editor",
+    "signature": "declare const TextEditorUndoEditCommand: Schema.Struct<{ readonly command: Schema.Literal<\"undo_edit\">; readonly path: Schema.String; }>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L1134"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "AnthropicTool.ts",
+      "path": "src/AnthropicTool.ts"
+    },
+    "project": "@effect/ai-anthropic",
+    "name": "TextEditor_20241022",
+    "description": "Text editor tool for Claude 3.5 Sonnet (deprecated).\n\nRequires the \"computer-use-2024-10-22\" beta header.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Text Editor",
+    "signature": "declare const TextEditor_20241022: <Mode extends Tool.FailureMode | undefined = undefined>(args: { readonly failureMode?: Mode | undefined; }) => Tool.ProviderDefined<\"anthropic.text_editor_20241022\", \"AnthropicTextEditor\", { readonly args: Schema.Void; readonly parameters: Schema.Union<readonly [Schema.Struct<{ readonly command: Schema.Literal<\"view\">; readonly path: Schema.String; readonly view_range: Schema.optional<Schema.Tuple<readonly [Schema.Number, Schema.Number]>>; }>, Schema.Struct<{ readonly command: Schema.Literal<\"create\">; readonly path: Schema.String; readonly file_text: Schema.String; }>, Schema.Struct<{ readonly command: Schema.Literal<\"str_replace\">; readonly path: Schema.String; readonly old_str: Schema.String; readonly new_str: Schema.String; }>, Schema.Struct<{ readonly command: Schema.Literal<\"insert\">; readonly path: Schema.String; readonly insert_line: Schema.Number; readonly new_str: Schema.String; }>, Schema.Struct<{ readonly command: Schema.Literal<\"undo_edit\">; readonly path: Schema.String; }>]>; readonly success: Schema.String; readonly failure: Schema.Never; readonly failureMode: Mode extends undefined ? \"error\" : Mode; }, true>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L1186"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "AnthropicTool.ts",
+      "path": "src/AnthropicTool.ts"
+    },
+    "project": "@effect/ai-anthropic",
+    "name": "TextEditor_20250124",
+    "description": "Text editor tool for Claude Sonnet 3.7 (deprecated model).",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Text Editor",
+    "signature": "declare const TextEditor_20250124: <Mode extends Tool.FailureMode | undefined = undefined>(args: { readonly failureMode?: Mode | undefined; }) => Tool.ProviderDefined<\"anthropic.text_editor_20250124\", \"AnthropicTextEditor\", { readonly args: Schema.Void; readonly parameters: Schema.Union<readonly [Schema.Struct<{ readonly command: Schema.Literal<\"view\">; readonly path: Schema.String; readonly view_range: Schema.optional<Schema.Tuple<readonly [Schema.Number, Schema.Number]>>; }>, Schema.Struct<{ readonly command: Schema.Literal<\"create\">; readonly path: Schema.String; readonly file_text: Schema.String; }>, Schema.Struct<{ readonly command: Schema.Literal<\"str_replace\">; readonly path: Schema.String; readonly old_str: Schema.String; readonly new_str: Schema.String; }>, Schema.Struct<{ readonly command: Schema.Literal<\"insert\">; readonly path: Schema.String; readonly insert_line: Schema.Number; readonly new_str: Schema.String; }>, Schema.Struct<{ readonly command: Schema.Literal<\"undo_edit\">; readonly path: Schema.String; }>]>; readonly success: Schema.String; readonly failure: Schema.Never; readonly failureMode: Mode extends undefined ? \"error\" : Mode; }, true>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L1201"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "AnthropicTool.ts",
+      "path": "src/AnthropicTool.ts"
+    },
+    "project": "@effect/ai-anthropic",
+    "name": "TextEditor_20250429",
+    "description": "Text editor tool for Claude 4 models.\n\nNOTE: This version does NOT support the `undo_edit` command.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Text Editor",
+    "signature": "declare const TextEditor_20250429: <Mode extends Tool.FailureMode | undefined = undefined>(args: { readonly max_characters?: number | undefined; readonly failureMode?: Mode | undefined; }) => Tool.ProviderDefined<\"anthropic.text_editor_20250429\", \"AnthropicTextEditor\", { readonly args: Schema.Struct<{ readonly max_characters: Schema.optional<Schema.Number>; }>; readonly parameters: Schema.Union<readonly [Schema.Struct<{ readonly command: Schema.Literal<\"view\">; readonly path: Schema.String; readonly view_range: Schema.optional<Schema.Tuple<readonly [Schema.Number, Schema.Number]>>; }>, Schema.Struct<{ readonly command: Schema.Literal<\"create\">; readonly path: Schema.String; readonly file_text: Schema.String; }>, Schema.Struct<{ readonly command: Schema.Literal<\"str_replace\">; readonly path: Schema.String; readonly old_str: Schema.String; readonly new_str: Schema.String; }>, Schema.Struct<{ readonly command: Schema.Literal<\"insert\">; readonly path: Schema.String; readonly insert_line: Schema.Number; readonly new_str: Schema.String; }>]>; readonly success: Schema.String; readonly failure: Schema.Never; readonly failureMode: Mode extends undefined ? \"error\" : Mode; }, true>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L1218"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "AnthropicTool.ts",
+      "path": "src/AnthropicTool.ts"
+    },
+    "project": "@effect/ai-anthropic",
+    "name": "TextEditor_20250728",
+    "description": "Text editor tool for Claude 4 models.\n\nNOTE: This version does NOT support the `undo_edit` command.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Text Editor",
+    "signature": "declare const TextEditor_20250728: <Mode extends Tool.FailureMode | undefined = undefined>(args: { readonly max_characters?: number | undefined; readonly failureMode?: Mode | undefined; }) => Tool.ProviderDefined<\"anthropic.text_editor_20250728\", \"AnthropicTextEditor\", { readonly args: Schema.Struct<{ readonly max_characters: Schema.optional<Schema.Number>; }>; readonly parameters: Schema.Union<readonly [Schema.Struct<{ readonly command: Schema.Literal<\"view\">; readonly path: Schema.String; readonly view_range: Schema.optional<Schema.Tuple<readonly [Schema.Number, Schema.Number]>>; }>, Schema.Struct<{ readonly command: Schema.Literal<\"create\">; readonly path: Schema.String; readonly file_text: Schema.String; }>, Schema.Struct<{ readonly command: Schema.Literal<\"str_replace\">; readonly path: Schema.String; readonly old_str: Schema.String; readonly new_str: Schema.String; }>, Schema.Struct<{ readonly command: Schema.Literal<\"insert\">; readonly path: Schema.String; readonly insert_line: Schema.Number; readonly new_str: Schema.String; }>]>; readonly success: Schema.String; readonly failure: Schema.Never; readonly failureMode: Mode extends undefined ? \"error\" : Mode; }, true>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L1236"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "AnthropicTool.ts",
+      "path": "src/AnthropicTool.ts"
+    },
+    "project": "@effect/ai-anthropic",
+    "name": "WebSearchUserLocation",
+    "description": "User location for localizing search results.\n\nProviding location helps return more relevant results for location-dependent\nqueries like weather, local businesses, events, etc.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Web Search",
+    "signature": "declare const WebSearchUserLocation: Schema.Struct<{ readonly type: Schema.Literal<\"approximate\">; readonly city: Schema.optional<Schema.String>; readonly region: Schema.optional<Schema.String>; readonly country: Schema.optional<Schema.String>; readonly timezone: Schema.optional<Schema.String>; }>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L1263"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "AnthropicTool.ts",
+      "path": "src/AnthropicTool.ts"
+    },
+    "project": "@effect/ai-anthropic",
+    "name": "WebSearch_20250305_Args",
+    "description": "Configuration arguments for the web search tool.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Web Search",
+    "signature": "declare const WebSearch_20250305_Args: Schema.Struct<{ readonly maxUses: Schema.optional<Schema.Number>; readonly allowedDomains: Schema.optional<Schema.$Array<Schema.String>>; readonly blockedDomains: Schema.optional<Schema.$Array<Schema.String>>; readonly userLocation: Schema.optional<Schema.Struct<{ readonly type: Schema.Literal<\"approximate\">; readonly city: Schema.optional<Schema.String>; readonly region: Schema.optional<Schema.String>; readonly country: Schema.optional<Schema.String>; readonly timezone: Schema.optional<Schema.String>; }>>; }>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L1296"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "AnthropicTool.ts",
+      "path": "src/AnthropicTool.ts"
+    },
+    "project": "@effect/ai-anthropic",
+    "name": "WebSearchParameters",
+    "description": "Input parameters for a web search.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Web Search",
+    "signature": "declare const WebSearchParameters: Schema.Struct<{ readonly query: Schema.String; }>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L1334"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "AnthropicTool.ts",
+      "path": "src/AnthropicTool.ts"
+    },
+    "project": "@effect/ai-anthropic",
+    "name": "WebSearch_20250305",
+    "description": "Web search tool for Claude models.\n\nEnables Claude to search the web for real-time information. This is a\nserver-side tool executed by Anthropic's infrastructure.\n\nGenerally available (no beta header required).",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Web Search",
+    "signature": "declare const WebSearch_20250305: <Mode extends Tool.FailureMode | undefined = undefined>(args: { readonly maxUses?: number | undefined; readonly allowedDomains?: ReadonlyArray<string> | undefined; readonly blockedDomains?: ReadonlyArray<string> | undefined; readonly userLocation?: { readonly type: \"approximate\"; readonly region?: string | undefined; readonly city?: string | undefined; readonly country?: string | undefined; readonly timezone?: string | undefined; } | undefined; }) => Tool.ProviderDefined<\"anthropic.web_search_20250305\", \"AnthropicWebSearch\", { readonly args: Schema.Struct<{ readonly maxUses: Schema.optional<Schema.Number>; readonly allowedDomains: Schema.optional<Schema.$Array<Schema.String>>; readonly blockedDomains: Schema.optional<Schema.$Array<Schema.String>>; readonly userLocation: Schema.optional<Schema.Struct<{ readonly type: Schema.Literal<\"approximate\">; readonly city: Schema.optional<Schema.String>; readonly region: Schema.optional<Schema.String>; readonly country: Schema.optional<Schema.String>; readonly timezone: Schema.optional<Schema.String>; }>>; }>; readonly parameters: Schema.Struct<{ readonly query: Schema.String; }>; readonly success: Schema.$Array<Schema.Struct<{ readonly encrypted_content: Schema.String; readonly page_age: Schema.Union<readonly [Schema.String, Schema.Null]>; readonly title: Schema.String; readonly type: Schema.Literal<\"web_search_result\">; readonly url: Schema.String; }>>; readonly failure: Schema.Struct<{ readonly error_code: Schema.Literals<readonly [\"invalid_tool_input\", \"unavailable\", \"max_uses_exceeded\", \"too_many_requests\", \"query_too_long\", \"request_too_large\"]>; readonly type: Schema.Literal<\"web_search_tool_result_error\">; }>; readonly failureMode: Mode extends undefined ? \"error\" : Mode; }, false>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L1361"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "AnthropicTool.ts",
+      "path": "src/AnthropicTool.ts"
+    },
+    "project": "@effect/ai-anthropic",
+    "name": "WebFetchCitationsConfig",
+    "description": "Citation configuration for web fetch.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Web Fetch",
+    "signature": "declare const WebFetchCitationsConfig: Schema.Struct<{ readonly enabled: Schema.Boolean; }>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L1385"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "AnthropicTool.ts",
+      "path": "src/AnthropicTool.ts"
+    },
+    "project": "@effect/ai-anthropic",
+    "name": "WebFetch_20250910_Args",
+    "description": "Configuration arguments for the web fetch tool.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Web Fetch",
+    "signature": "declare const WebFetch_20250910_Args: Schema.Struct<{ readonly maxUses: Schema.optional<Schema.Number>; readonly allowedDomains: Schema.optional<Schema.$Array<Schema.String>>; readonly blockedDomains: Schema.optional<Schema.$Array<Schema.String>>; readonly citations: Schema.optional<Schema.Struct<{ readonly enabled: Schema.Boolean; }>>; readonly maxContentTokens: Schema.optional<Schema.Number>; }>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L1407"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "AnthropicTool.ts",
+      "path": "src/AnthropicTool.ts"
+    },
+    "project": "@effect/ai-anthropic",
+    "name": "WebFetchParameters",
+    "description": "Input parameters for a web fetch.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Web Fetch",
+    "signature": "declare const WebFetchParameters: Schema.Struct<{ readonly url: Schema.String; }>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L1449"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "AnthropicTool.ts",
+      "path": "src/AnthropicTool.ts"
+    },
+    "project": "@effect/ai-anthropic",
+    "name": "WebFetch_20250910",
+    "description": "Web fetch tool for Claude models.\n\nAllows Claude to retrieve full content from web pages and PDF documents.\nThis is a server-side tool executed by Anthropic's infrastructure.\n\nRequires the \"web-fetch-2025-09-10\" beta header.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Web Fetch",
+    "signature": "declare const WebFetch_20250910: <Mode extends Tool.FailureMode | undefined = undefined>(args: { readonly maxUses?: number | undefined; readonly allowedDomains?: ReadonlyArray<string> | undefined; readonly blockedDomains?: ReadonlyArray<string> | undefined; readonly citations?: { readonly enabled: boolean; } | undefined; readonly maxContentTokens?: number | undefined; }) => Tool.ProviderDefined<\"anthropic.web_fetch_20250910\", \"AnthropicWebFetch\", { readonly args: Schema.Struct<{ readonly maxUses: Schema.optional<Schema.Number>; readonly allowedDomains: Schema.optional<Schema.$Array<Schema.String>>; readonly blockedDomains: Schema.optional<Schema.$Array<Schema.String>>; readonly citations: Schema.optional<Schema.Struct<{ readonly enabled: Schema.Boolean; }>>; readonly maxContentTokens: Schema.optional<Schema.Number>; }>; readonly parameters: Schema.Struct<{ readonly url: Schema.String; }>; readonly success: Schema.Struct<{ readonly content: Schema.Struct<{ readonly citations: Schema.Union<readonly [Schema.Struct<{ readonly enabled: Schema.Boolean; }>, Schema.Null]>; readonly source: Schema.Union<readonly [Schema.Struct<{ readonly data: Schema.String; readonly media_type: Schema.Literal<\"application/pdf\">; readonly type: Schema.Literal<\"base64\">; }>, Schema.Struct<{ readonly data: Schema.String; readonly media_type: Schema.Literal<\"text/plain\">; readonly type: Schema.Literal<\"text\">; }>]>; readonly title: Schema.Union<readonly [Schema.String, Schema.Null]>; readonly type: Schema.Literal<\"document\">; }>; readonly retrieved_at: Schema.Union<readonly [Schema.String, Schema.Null]>; readonly type: Schema.Literal<\"web_fetch_result\">; readonly url: Schema.String; }>; readonly failure: Schema.Struct<{ readonly error_code: Schema.Literals<readonly [\"invalid_tool_input\", \"url_too_long\", \"url_not_allowed\", \"url_not_accessible\", \"unsupported_content_type\", \"too_many_requests\", \"max_uses_exceeded\", \"unavailable\"]>; readonly type: Schema.Literal<\"web_fetch_tool_result_error\">; }>; readonly failureMode: Mode extends undefined ? \"error\" : Mode; }, false>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L1477"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "AnthropicTool.ts",
+      "path": "src/AnthropicTool.ts"
+    },
+    "project": "@effect/ai-anthropic",
+    "name": "ToolSearchRegexParameters",
+    "description": "Input parameters for regex-based tool search.\n\nClaude constructs regex patterns using Python's `re.search()` syntax.\nMaximum query length: 200 characters.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Tool Search",
+    "signature": "declare const ToolSearchRegexParameters: Schema.Struct<{ readonly query: Schema.String; }>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L1504"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "AnthropicTool.ts",
+      "path": "src/AnthropicTool.ts"
+    },
+    "project": "@effect/ai-anthropic",
+    "name": "ToolSearchBM25Parameters",
+    "description": "Input parameters for BM25/natural language tool search.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Tool Search",
+    "signature": "declare const ToolSearchBM25Parameters: Schema.Struct<{ readonly query: Schema.String; }>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L1522"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "AnthropicTool.ts",
+      "path": "src/AnthropicTool.ts"
+    },
+    "project": "@effect/ai-anthropic",
+    "name": "ToolSearchRegex_20251119",
+    "description": "Regex-based tool search for Claude models.\n\nClaude constructs regex patterns using Python's `re.search()` syntax to\nfind tools. The regex is matched against tool names, descriptions,\nargument names, and argument descriptions.\n\nRequires the \"advanced-tool-use-2025-11-20\" beta header.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Tool Search",
+    "signature": "declare const ToolSearchRegex_20251119: <Mode extends Tool.FailureMode | undefined = undefined>(args: void) => Tool.ProviderDefined<\"anthropic.tool_search_tool_regex_20251119\", \"AnthropicToolSearchRegex\", { readonly args: Schema.Void; readonly parameters: Schema.Struct<{ readonly query: Schema.String; }>; readonly success: Schema.$Array<Schema.Struct<{ readonly cache_control: Schema.optionalKey<Schema.Union<readonly [Schema.Union<readonly [Schema.Struct<{ readonly ttl: Schema.optionalKey<Schema.Literals<readonly [\"5m\", \"1h\"]>>; readonly type: Schema.Literal<\"ephemeral\">; }>]>, Schema.Null]>>; readonly tool_name: Schema.String; readonly type: Schema.Literal<\"tool_reference\">; }>>; readonly failure: Schema.Struct<{ readonly error_code: Schema.Literals<readonly [\"invalid_tool_input\", \"unavailable\", \"too_many_requests\", \"execution_time_exceeded\"]>; readonly error_message: Schema.Union<readonly [Schema.String, Schema.Null]>; readonly type: Schema.Literal<\"tool_search_tool_result_error\">; }>; readonly failureMode: Mode extends undefined ? \"error\" : Mode; }, false>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L1550"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "AnthropicTool.ts",
+      "path": "src/AnthropicTool.ts"
+    },
+    "project": "@effect/ai-anthropic",
+    "name": "ToolSearchBM25_20251119",
+    "description": "BM25/natural language tool search for Claude models.\n\nClaude uses natural language queries to search for tools using the\nBM25 algorithm. The search is performed against tool names, descriptions,\nargument names, and argument descriptions.\n\nRequires the \"advanced-tool-use-2025-11-20\" beta header.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Tool Search",
+    "signature": "declare const ToolSearchBM25_20251119: <Mode extends Tool.FailureMode | undefined = undefined>(args: void) => Tool.ProviderDefined<\"anthropic.tool_search_tool_bm25_20251119\", \"AnthropicToolSearchBM25\", { readonly args: Schema.Void; readonly parameters: Schema.Struct<{ readonly query: Schema.String; }>; readonly success: Schema.$Array<Schema.Struct<{ readonly cache_control: Schema.optionalKey<Schema.Union<readonly [Schema.Union<readonly [Schema.Struct<{ readonly ttl: Schema.optionalKey<Schema.Literals<readonly [\"5m\", \"1h\"]>>; readonly type: Schema.Literal<\"ephemeral\">; }>]>, Schema.Null]>>; readonly tool_name: Schema.String; readonly type: Schema.Literal<\"tool_reference\">; }>>; readonly failure: Schema.Struct<{ readonly error_code: Schema.Literals<readonly [\"invalid_tool_input\", \"unavailable\", \"too_many_requests\", \"execution_time_exceeded\"]>; readonly error_message: Schema.Union<readonly [Schema.String, Schema.Null]>; readonly type: Schema.Literal<\"tool_search_tool_result_error\">; }>; readonly failureMode: Mode extends undefined ? \"error\" : Mode; }, false>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L1571"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "AnthropicTool.ts",
+      "path": "src/AnthropicTool.ts"
+    },
+    "project": "@effect/ai-anthropic",
+    "name": "AnthropicTool",
+    "description": "Union of all Anthropic provider-defined tools.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "type AnthropicTool = | ReturnType<typeof Bash_20241022>\n  | ReturnType<typeof Bash_20250124>\n  | ReturnType<typeof CodeExecution_20250522>\n  | ReturnType<typeof CodeExecution_20250825>\n  | ReturnType<typeof ComputerUse_20241022>\n  | ReturnType<typeof ComputerUse_20250124>\n  | ReturnType<typeof ComputerUse_20251124>\n  | ReturnType<typeof Memory_20250818>\n  | ReturnType<typeof TextEditor_20241022>\n  | ReturnType<typeof TextEditor_20250124>\n  | ReturnType<typeof TextEditor_20250429>\n  | ReturnType<typeof TextEditor_20250728>\n  | ReturnType<typeof ToolSearchRegex_20251119>\n  | ReturnType<typeof ToolSearchBM25_20251119>\n  | ReturnType<typeof WebFetch_20250910>\n  | ReturnType<typeof WebSearch_20250305>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L19"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "AnthropicTool.ts",
+      "path": "src/AnthropicTool.ts"
+    },
+    "project": "@effect/ai-anthropic",
+    "name": "CodeExecutionProgrammaticToolCall",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Code Execution",
+    "signature": "type CodeExecutionProgrammaticToolCall = typeof CodeExecutionProgrammaticToolCall.Type",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L108"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "AnthropicTool.ts",
+      "path": "src/AnthropicTool.ts"
+    },
+    "project": "@effect/ai-anthropic",
+    "name": "CodeExecutionBashCommand",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Code Execution",
+    "signature": "type CodeExecutionBashCommand = typeof CodeExecutionBashCommand.Type",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L127"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "AnthropicTool.ts",
+      "path": "src/AnthropicTool.ts"
+    },
+    "project": "@effect/ai-anthropic",
+    "name": "CodeExecutionTextEditorView",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Code Execution",
+    "signature": "type CodeExecutionTextEditorView = typeof CodeExecutionTextEditorView.Type",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L147"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "AnthropicTool.ts",
+      "path": "src/AnthropicTool.ts"
+    },
+    "project": "@effect/ai-anthropic",
+    "name": "CodeExecutionTextEditorCreate",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Code Execution",
+    "signature": "type CodeExecutionTextEditorCreate = typeof CodeExecutionTextEditorCreate.Type",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L171"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "AnthropicTool.ts",
+      "path": "src/AnthropicTool.ts"
+    },
+    "project": "@effect/ai-anthropic",
+    "name": "CodeExecutionTextEditorStrReplace",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Code Execution",
+    "signature": "type CodeExecutionTextEditorStrReplace = typeof CodeExecutionTextEditorStrReplace.Type",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L199"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "AnthropicTool.ts",
+      "path": "src/AnthropicTool.ts"
+    },
+    "project": "@effect/ai-anthropic",
+    "name": "CodeExecution_20250825_Parameters",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Code Execution",
+    "signature": "type CodeExecution_20250825_Parameters = typeof CodeExecution_20250825_Parameters.Type",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L229"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "AnthropicTool.ts",
+      "path": "src/AnthropicTool.ts"
+    },
+    "project": "@effect/ai-anthropic",
+    "name": "Coordinate",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Computer Use",
+    "signature": "type Coordinate = typeof Coordinate.Type",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L300"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "AnthropicTool.ts",
+      "path": "src/AnthropicTool.ts"
+    },
+    "project": "@effect/ai-anthropic",
+    "name": "Region",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Computer Use",
+    "signature": "type Region = typeof Region.Type",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L313"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "AnthropicTool.ts",
+      "path": "src/AnthropicTool.ts"
+    },
+    "project": "@effect/ai-anthropic",
+    "name": "ScrollDirection",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Computer Use",
+    "signature": "type ScrollDirection = typeof ScrollDirection.Type",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L326"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "AnthropicTool.ts",
+      "path": "src/AnthropicTool.ts"
+    },
+    "project": "@effect/ai-anthropic",
+    "name": "ModifierKey",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Computer Use",
+    "signature": "type ModifierKey = typeof ModifierKey.Type",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L339"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "AnthropicTool.ts",
+      "path": "src/AnthropicTool.ts"
+    },
+    "project": "@effect/ai-anthropic",
+    "name": "ComputerUseKeyAction",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Computer Use",
+    "signature": "type ComputerUseKeyAction = typeof ComputerUseKeyAction.Type",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L390"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "AnthropicTool.ts",
+      "path": "src/AnthropicTool.ts"
+    },
+    "project": "@effect/ai-anthropic",
+    "name": "ComputerUseLeftClickAction",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Computer Use",
+    "signature": "type ComputerUseLeftClickAction = typeof ComputerUseLeftClickAction.Type",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L410"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "AnthropicTool.ts",
+      "path": "src/AnthropicTool.ts"
+    },
+    "project": "@effect/ai-anthropic",
+    "name": "ComputerUseMouseMoveAction",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Computer Use",
+    "signature": "type ComputerUseMouseMoveAction = typeof ComputerUseMouseMoveAction.Type",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L429"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "AnthropicTool.ts",
+      "path": "src/AnthropicTool.ts"
+    },
+    "project": "@effect/ai-anthropic",
+    "name": "ComputerUseScreenshotAction",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Computer Use",
+    "signature": "type ComputerUseScreenshotAction = typeof ComputerUseScreenshotAction.Type",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L444"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "AnthropicTool.ts",
+      "path": "src/AnthropicTool.ts"
+    },
+    "project": "@effect/ai-anthropic",
+    "name": "TypeAction",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Computer Use",
+    "signature": "type TypeAction = typeof TypeAction.Type",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L463"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "AnthropicTool.ts",
+      "path": "src/AnthropicTool.ts"
+    },
+    "project": "@effect/ai-anthropic",
+    "name": "ComputerUseDoubleClickAction",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Computer Use",
+    "signature": "type ComputerUseDoubleClickAction = typeof ComputerUseDoubleClickAction.Type",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L495"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "AnthropicTool.ts",
+      "path": "src/AnthropicTool.ts"
+    },
+    "project": "@effect/ai-anthropic",
+    "name": "ComputerUseHoldKeyAction",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Computer Use",
+    "signature": "type ComputerUseHoldKeyAction = typeof ComputerUseHoldKeyAction.Type",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L518"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "AnthropicTool.ts",
+      "path": "src/AnthropicTool.ts"
+    },
+    "project": "@effect/ai-anthropic",
+    "name": "ComputerUseLeftClickDragAction",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Computer Use",
+    "signature": "type ComputerUseLeftClickDragAction = typeof ComputerUseLeftClickDragAction.Type",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L541"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "AnthropicTool.ts",
+      "path": "src/AnthropicTool.ts"
+    },
+    "project": "@effect/ai-anthropic",
+    "name": "ComputerUseLeftMouseDownAction",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Computer Use",
+    "signature": "type ComputerUseLeftMouseDownAction = typeof ComputerUseLeftMouseDownAction.Type",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L563"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "AnthropicTool.ts",
+      "path": "src/AnthropicTool.ts"
+    },
+    "project": "@effect/ai-anthropic",
+    "name": "ComputerUseLeftMouseUpAction",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Computer Use",
+    "signature": "type ComputerUseLeftMouseUpAction = typeof ComputerUseLeftMouseUpAction.Type",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L585"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "AnthropicTool.ts",
+      "path": "src/AnthropicTool.ts"
+    },
+    "project": "@effect/ai-anthropic",
+    "name": "ComputerUseMiddleClickAction",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Computer Use",
+    "signature": "type ComputerUseMiddleClickAction = typeof ComputerUseMiddleClickAction.Type",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L605"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "AnthropicTool.ts",
+      "path": "src/AnthropicTool.ts"
+    },
+    "project": "@effect/ai-anthropic",
+    "name": "ComputerUseRightClickAction",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Computer Use",
+    "signature": "type ComputerUseRightClickAction = typeof ComputerUseRightClickAction.Type",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L625"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "AnthropicTool.ts",
+      "path": "src/AnthropicTool.ts"
+    },
+    "project": "@effect/ai-anthropic",
+    "name": "ComputerUseScrollAction",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Computer Use",
+    "signature": "type ComputerUseScrollAction = typeof ComputerUseScrollAction.Type",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L653"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "AnthropicTool.ts",
+      "path": "src/AnthropicTool.ts"
+    },
+    "project": "@effect/ai-anthropic",
+    "name": "ComputerUseTripleClickAction",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Computer Use",
+    "signature": "type ComputerUseTripleClickAction = typeof ComputerUseTripleClickAction.Type",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L673"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "AnthropicTool.ts",
+      "path": "src/AnthropicTool.ts"
+    },
+    "project": "@effect/ai-anthropic",
+    "name": "ComputerUseWaitAction",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Computer Use",
+    "signature": "type ComputerUseWaitAction = typeof ComputerUseWaitAction.Type",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L692"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "AnthropicTool.ts",
+      "path": "src/AnthropicTool.ts"
+    },
+    "project": "@effect/ai-anthropic",
+    "name": "ComputerUseZoomAction",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Computer Use",
+    "signature": "type ComputerUseZoomAction = typeof ComputerUseZoomAction.Type",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L732"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "AnthropicTool.ts",
+      "path": "src/AnthropicTool.ts"
+    },
+    "project": "@effect/ai-anthropic",
+    "name": "ViewRange",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Memory",
+    "signature": "type ViewRange = typeof ViewRange.Type",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L830"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "AnthropicTool.ts",
+      "path": "src/AnthropicTool.ts"
+    },
+    "project": "@effect/ai-anthropic",
+    "name": "MemoryCreateCommand",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Memory",
+    "signature": "type MemoryCreateCommand = typeof MemoryCreateCommand.Type",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L853"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "AnthropicTool.ts",
+      "path": "src/AnthropicTool.ts"
+    },
+    "project": "@effect/ai-anthropic",
+    "name": "MemoryDeleteCommand",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Memory",
+    "signature": "type MemoryDeleteCommand = typeof MemoryDeleteCommand.Type",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L872"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "AnthropicTool.ts",
+      "path": "src/AnthropicTool.ts"
+    },
+    "project": "@effect/ai-anthropic",
+    "name": "MemoryInsertCommand",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Memory",
+    "signature": "type MemoryInsertCommand = typeof MemoryInsertCommand.Type",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L899"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "AnthropicTool.ts",
+      "path": "src/AnthropicTool.ts"
+    },
+    "project": "@effect/ai-anthropic",
+    "name": "MemoryRenameCommand",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Memory",
+    "signature": "type MemoryRenameCommand = typeof MemoryRenameCommand.Type",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L922"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "AnthropicTool.ts",
+      "path": "src/AnthropicTool.ts"
+    },
+    "project": "@effect/ai-anthropic",
+    "name": "MemoryStrReplaceCommand",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Memory",
+    "signature": "type MemoryStrReplaceCommand = typeof MemoryStrReplaceCommand.Type",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L949"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "AnthropicTool.ts",
+      "path": "src/AnthropicTool.ts"
+    },
+    "project": "@effect/ai-anthropic",
+    "name": "MemoryViewCommand",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Memory",
+    "signature": "type MemoryViewCommand = typeof MemoryViewCommand.Type",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L972"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "AnthropicTool.ts",
+      "path": "src/AnthropicTool.ts"
+    },
+    "project": "@effect/ai-anthropic",
+    "name": "TextEditorViewCommand",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Text Editor",
+    "signature": "type TextEditorViewCommand = typeof TextEditorViewCommand.Type",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L1037"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "AnthropicTool.ts",
+      "path": "src/AnthropicTool.ts"
+    },
+    "project": "@effect/ai-anthropic",
+    "name": "TextEditorCreateCommand",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Text Editor",
+    "signature": "type TextEditorCreateCommand = typeof TextEditorCreateCommand.Type",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L1062"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "AnthropicTool.ts",
+      "path": "src/AnthropicTool.ts"
+    },
+    "project": "@effect/ai-anthropic",
+    "name": "TextEditorStrReplaceCommand",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Text Editor",
+    "signature": "type TextEditorStrReplaceCommand = typeof TextEditorStrReplaceCommand.Type",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L1092"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "AnthropicTool.ts",
+      "path": "src/AnthropicTool.ts"
+    },
+    "project": "@effect/ai-anthropic",
+    "name": "TextEditorInsertCommand",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Text Editor",
+    "signature": "type TextEditorInsertCommand = typeof TextEditorInsertCommand.Type",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L1121"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "AnthropicTool.ts",
+      "path": "src/AnthropicTool.ts"
+    },
+    "project": "@effect/ai-anthropic",
+    "name": "TextEditorUndoEditCommand",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Text Editor",
+    "signature": "type TextEditorUndoEditCommand = typeof TextEditorUndoEditCommand.Type",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L1145"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "AnthropicTool.ts",
+      "path": "src/AnthropicTool.ts"
+    },
+    "project": "@effect/ai-anthropic",
+    "name": "WebSearch_20250305_Args",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Web Search",
+    "signature": "type WebSearch_20250305_Args = typeof WebSearch_20250305_Args.Type",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L1322"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "AnthropicTool.ts",
+      "path": "src/AnthropicTool.ts"
+    },
+    "project": "@effect/ai-anthropic",
+    "name": "WebSearchParameters",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Web Search",
+    "signature": "type WebSearchParameters = typeof WebSearchParameters.Type",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L1344"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "AnthropicTool.ts",
+      "path": "src/AnthropicTool.ts"
+    },
+    "project": "@effect/ai-anthropic",
+    "name": "WebFetchCitationsConfig",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Web Fetch",
+    "signature": "type WebFetchCitationsConfig = typeof WebFetchCitationsConfig.Type",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L1395"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "AnthropicTool.ts",
+      "path": "src/AnthropicTool.ts"
+    },
+    "project": "@effect/ai-anthropic",
+    "name": "WebFetch_20250910_Args",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Web Fetch",
+    "signature": "type WebFetch_20250910_Args = typeof WebFetch_20250910_Args.Type",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L1437"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "AnthropicTool.ts",
+      "path": "src/AnthropicTool.ts"
+    },
+    "project": "@effect/ai-anthropic",
+    "name": "WebFetchParameters",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Web Fetch",
+    "signature": "type WebFetchParameters = typeof WebFetchParameters.Type",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L1460"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "AnthropicTool.ts",
+      "path": "src/AnthropicTool.ts"
+    },
+    "project": "@effect/ai-anthropic",
+    "name": "ToolSearchRegexParameters",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Tool Search",
+    "signature": "type ToolSearchRegexParameters = typeof ToolSearchRegexParameters.Type",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L1514"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "AnthropicTool.ts",
+      "path": "src/AnthropicTool.ts"
+    },
+    "project": "@effect/ai-anthropic",
+    "name": "ToolSearchBM25Parameters",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Tool Search",
+    "signature": "type ToolSearchBM25Parameters = typeof ToolSearchBM25Parameters.Type",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L1532"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/ai-anthropic",
+    "name": "AnthropicClient",
+    "description": "Re-exports all named exports from the \"./AnthropicClient.ts\" module as `AnthropicClient`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as AnthropicClient from \"./AnthropicClient.ts\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/index.ts#L15"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/ai-anthropic",
+    "name": "AnthropicConfig",
+    "description": "Re-exports all named exports from the \"./AnthropicConfig.ts\" module as `AnthropicConfig`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as AnthropicConfig from \"./AnthropicConfig.ts\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/index.ts#L20"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/ai-anthropic",
+    "name": "AnthropicError",
+    "description": "Re-exports all named exports from the \"./AnthropicError.ts\" module as `AnthropicError`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as AnthropicError from \"./AnthropicError.ts\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/index.ts#L30"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/ai-anthropic",
+    "name": "AnthropicLanguageModel",
+    "description": "Re-exports all named exports from the \"./AnthropicLanguageModel.ts\" module as `AnthropicLanguageModel`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as AnthropicLanguageModel from \"./AnthropicLanguageModel.ts\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/index.ts#L35"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/ai-anthropic",
+    "name": "AnthropicTelemetry",
+    "description": "Re-exports all named exports from the \"./AnthropicTelemetry.ts\" module as `AnthropicTelemetry`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as AnthropicTelemetry from \"./AnthropicTelemetry.ts\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/index.ts#L46"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/ai-anthropic",
+    "name": "AnthropicTool",
+    "description": "Re-exports all named exports from the \"./AnthropicTool.ts\" module as `AnthropicTool`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as AnthropicTool from \"./AnthropicTool.ts\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/index.ts#L56"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/ai-anthropic",
+    "name": "Generated",
+    "description": "Re-exports all named exports from the \"./Generated.ts\" module as `Generated`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as Generated from \"./Generated.ts\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/index.ts#L61"
+  }
+]

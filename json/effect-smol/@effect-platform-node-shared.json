@@ -1,0 +1,561 @@
+[
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "NodeChildProcessSpawner.ts",
+      "path": "src/NodeChildProcessSpawner.ts"
+    },
+    "project": "@effect/platform-node-shared",
+    "name": "layer",
+    "description": "Layer providing the `NodeChildProcessSpawner` implementation.",
+    "deprecated": false,
+    "examples": [],
+    "since": "4.0.0",
+    "category": "Layers",
+    "signature": "declare const layer: Layer.Layer<ChildProcessSpawner, never, Path.Path | FileSystem.FileSystem>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeChildProcessSpawner.ts#L563"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "NodeChildProcessSpawner.ts",
+      "path": "src/NodeChildProcessSpawner.ts"
+    },
+    "project": "@effect/platform-node-shared",
+    "name": "flattenCommand",
+    "description": "Flattens a `Command` into an array of `StandardCommand`s along with pipe\noptions for each connection.",
+    "deprecated": false,
+    "examples": [],
+    "since": "4.0.0",
+    "category": "Utilities",
+    "signature": "declare const flattenCommand: (command: ChildProcess.Command) => FlattenedPipeline",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeChildProcessSpawner.ts#L591"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "NodeChildProcessSpawner.ts",
+      "path": "src/NodeChildProcessSpawner.ts"
+    },
+    "project": "@effect/platform-node-shared",
+    "name": "FlattenedPipeline",
+    "description": "Result of flattening a pipeline of commands.",
+    "deprecated": false,
+    "examples": [],
+    "since": "4.0.0",
+    "category": "Models",
+    "signature": "export interface FlattenedPipeline {\n  readonly commands: Arr.NonEmptyReadonlyArray<ChildProcess.StandardCommand>\n  readonly pipeOptions: ReadonlyArray<ChildProcess.PipeOptions>\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeChildProcessSpawner.ts#L579"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "NodeClusterSocket.ts",
+      "path": "src/NodeClusterSocket.ts"
+    },
+    "project": "@effect/platform-node-shared",
+    "name": "layerClientProtocol",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Layers",
+    "signature": "declare const layerClientProtocol: Layer.Layer<Runners.RpcClientProtocol, never, RpcSerialization.RpcSerialization>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeClusterSocket.ts#L19"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "NodeClusterSocket.ts",
+      "path": "src/NodeClusterSocket.ts"
+    },
+    "project": "@effect/platform-node-shared",
+    "name": "layerSocketServer",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Layers",
+    "signature": "declare const layerSocketServer: Layer.Layer<SocketServer.SocketServer, SocketServer.SocketServerError, ShardingConfig.ShardingConfig>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeClusterSocket.ts#L45"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "NodeFileSystem.ts",
+      "path": "src/NodeFileSystem.ts"
+    },
+    "project": "@effect/platform-node-shared",
+    "name": "layer",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Layers",
+    "signature": "declare const layer: Layer.Layer<FileSystem.FileSystem, never, never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeFileSystem.ts#L642"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "NodePath.ts",
+      "path": "src/NodePath.ts"
+    },
+    "project": "@effect/platform-node-shared",
+    "name": "layerPosix",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Layers",
+    "signature": "declare const layerPosix: Layer.Layer<Path, never, never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodePath.ts#L37"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "NodePath.ts",
+      "path": "src/NodePath.ts"
+    },
+    "project": "@effect/platform-node-shared",
+    "name": "layerWin32",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Layers",
+    "signature": "declare const layerWin32: Layer.Layer<Path, never, never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodePath.ts#L48"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "NodePath.ts",
+      "path": "src/NodePath.ts"
+    },
+    "project": "@effect/platform-node-shared",
+    "name": "layer",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Layers",
+    "signature": "declare const layer: Layer.Layer<Path, never, never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodePath.ts#L59"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "NodeRuntime.ts",
+      "path": "src/NodeRuntime.ts"
+    },
+    "project": "@effect/platform-node-shared",
+    "name": "runMain",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Run main",
+    "signature": "declare const runMain: { (options?: { readonly disableErrorReporting?: boolean | undefined; readonly teardown?: Runtime.Teardown | undefined; }): <E, A>(effect: Effect<A, E>) => void; <E, A>(effect: Effect<A, E>, options?: { readonly disableErrorReporting?: boolean | undefined; readonly teardown?: Runtime.Teardown | undefined; }): void; }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeRuntime.ts#L11"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "NodeSink.ts",
+      "path": "src/NodeSink.ts"
+    },
+    "project": "@effect/platform-node-shared",
+    "name": "fromWritable",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "declare const fromWritable: <E, A = string | Uint8Array<ArrayBufferLike>>(options: { readonly evaluate: LazyArg<Writable | NodeJS.WritableStream>; readonly onError: (error: unknown) => E; readonly endOnDone?: boolean | undefined; readonly encoding?: BufferEncoding | undefined; }) => Sink.Sink<void, A, never, E>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeSink.ts#L17"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "NodeSink.ts",
+      "path": "src/NodeSink.ts"
+    },
+    "project": "@effect/platform-node-shared",
+    "name": "fromWritableChannel",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "declare const fromWritableChannel: <IE, E, A = string | Uint8Array<ArrayBufferLike>>(options: { readonly evaluate: LazyArg<Writable | NodeJS.WritableStream>; readonly onError: (error: unknown) => E; readonly endOnDone?: boolean | undefined; readonly encoding?: BufferEncoding | undefined; }) => Channel.Channel<never, IE | E, void, NonEmptyReadonlyArray<A>, IE>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeSink.ts#L31"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "NodeSink.ts",
+      "path": "src/NodeSink.ts"
+    },
+    "project": "@effect/platform-node-shared",
+    "name": "pullIntoWritable",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "declare const pullIntoWritable: <A, IE, E>(options: { readonly pull: Pull.Pull<NonEmptyReadonlyArray<A>, IE, unknown>; readonly writable: Writable; readonly onError: (error: unknown) => E; readonly endOnDone?: boolean | undefined; readonly encoding?: BufferEncoding | undefined; }) => Pull.Pull<never, IE | E, unknown>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeSink.ts#L47"
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "NodeSocket.ts",
+      "path": "src/NodeSocket.ts"
+    },
+    "project": "@effect/platform-node-shared",
+    "name": "NetSocket",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "tags",
+    "signature": "declare class NetSocket",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeSocket.ts#L30"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "NodeSocket.ts",
+      "path": "src/NodeSocket.ts"
+    },
+    "project": "@effect/platform-node-shared",
+    "name": "layerNet",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "layers",
+    "signature": "declare const layerNet: (options: Net.NetConnectOpts) => Layer.Layer<Socket.Socket, Socket.SocketError>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeSocket.ts#L236"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "NodeSocket.ts",
+      "path": "src/NodeSocket.ts"
+    },
+    "project": "@effect/platform-node-shared",
+    "name": "makeNet",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "declare const makeNet: (options: Net.NetConnectOpts & { readonly openTimeout?: Duration.Input | undefined; }) => Effect.Effect<Socket.Socket>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeSocket.ts#L38"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "NodeSocket.ts",
+      "path": "src/NodeSocket.ts"
+    },
+    "project": "@effect/platform-node-shared",
+    "name": "fromDuplex",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "declare const fromDuplex: <RO>(open: Effect.Effect<Duplex, Socket.SocketError, RO>, options?: { readonly openTimeout?: Duration.Input | undefined; }) => Effect.Effect<Socket.Socket, never, Exclude<RO, Scope.Scope>>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeSocket.ts#L83"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "NodeSocket.ts",
+      "path": "src/NodeSocket.ts"
+    },
+    "project": "@effect/platform-node-shared",
+    "name": "makeNetChannel",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "declare const makeNetChannel: <IE = never>(options: Net.NetConnectOpts) => Channel.Channel<Array.NonEmptyReadonlyArray<Uint8Array>, Socket.SocketError | IE, void, Array.NonEmptyReadonlyArray<Uint8Array | string | Socket.CloseEvent>, IE>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeSocket.ts#L219"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "NodeSocket.ts",
+      "path": "src/NodeSocket.ts"
+    },
+    "project": "@effect/platform-node-shared",
+    "name": "NodeWS",
+    "description": "Re-exports all named exports from the \"ws\" module as `NodeWS`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "re-exports",
+    "signature": "export * as NodeWS from \"ws\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeSocket.ts#L24"
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "NodeSocketServer.ts",
+      "path": "src/NodeSocketServer.ts"
+    },
+    "project": "@effect/platform-node-shared",
+    "name": "IncomingMessage",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "tags",
+    "signature": "declare class IncomingMessage",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeSocketServer.ts#L26"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "NodeSocketServer.ts",
+      "path": "src/NodeSocketServer.ts"
+    },
+    "project": "@effect/platform-node-shared",
+    "name": "make",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "declare const make: (options: Net.ServerOpts & Net.ListenOptions) => Effect.Effect<{ readonly address: SocketServer.Address; readonly run: <R, E, _>(handler: (socket: Socket.Socket) => Effect.Effect<_, E, R>) => Effect.Effect<never, SocketServer.SocketServerError, R>; }, SocketServer.SocketServerError, Scope.Scope>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeSocketServer.ts#L35"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "NodeSocketServer.ts",
+      "path": "src/NodeSocketServer.ts"
+    },
+    "project": "@effect/platform-node-shared",
+    "name": "layer",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "layers",
+    "signature": "declare const layer: (options: Net.ServerOpts & Net.ListenOptions) => Layer.Layer<SocketServer.SocketServer, SocketServer.SocketServerError>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeSocketServer.ts#L150"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "NodeSocketServer.ts",
+      "path": "src/NodeSocketServer.ts"
+    },
+    "project": "@effect/platform-node-shared",
+    "name": "makeWebSocket",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "declare const makeWebSocket: (options: NodeWS.ServerOptions<typeof NodeWS.WebSocket, typeof Http.IncomingMessage>) => Effect.Effect<SocketServer.SocketServer[\"Service\"], SocketServer.SocketServerError, Scope.Scope>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeSocketServer.ts#L161"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "NodeSocketServer.ts",
+      "path": "src/NodeSocketServer.ts"
+    },
+    "project": "@effect/platform-node-shared",
+    "name": "layerWebSocket",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "layers",
+    "signature": "declare const layerWebSocket: (options: NodeSocket.NodeWS.ServerOptions<typeof NodeSocket.NodeWS.WebSocket, typeof Http.IncomingMessage>) => Layer.Layer<SocketServer.SocketServer, SocketServer.SocketServerError>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeSocketServer.ts#L261"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "NodeStdio.ts",
+      "path": "src/NodeStdio.ts"
+    },
+    "project": "@effect/platform-node-shared",
+    "name": "layer",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Layers",
+    "signature": "declare const layer: Layer.Layer<Stdio.Stdio, never, never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeStdio.ts#L14"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "NodeStream.ts",
+      "path": "src/NodeStream.ts"
+    },
+    "project": "@effect/platform-node-shared",
+    "name": "pipeThroughDuplex",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "combinators",
+    "signature": "declare const pipeThroughDuplex: { <B = Uint8Array<ArrayBufferLike>, E2 = Cause.UnknownError>(options: { readonly evaluate: LazyArg<Duplex>; readonly onError?: (error: unknown) => E2; readonly chunkSize?: number | undefined; readonly bufferSize?: number | undefined; readonly endOnDone?: boolean | undefined; readonly encoding?: BufferEncoding | undefined; }): <R, E, A>(self: Stream.Stream<A, E, R>) => Stream.Stream<B, E2 | E, R>; <R, E, A, B = Uint8Array<ArrayBufferLike>, E2 = Cause.UnknownError>(self: Stream.Stream<A, E, R>, options: { readonly evaluate: LazyArg<Duplex>; readonly onError?: (error: unknown) => E2; readonly chunkSize?: number | undefined; readonly bufferSize?: number | undefined; readonly endOnDone?: boolean | undefined; readonly encoding?: BufferEncoding | undefined; }): Stream.Stream<B, E | E2, R>; }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeStream.ts#L101"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "NodeStream.ts",
+      "path": "src/NodeStream.ts"
+    },
+    "project": "@effect/platform-node-shared",
+    "name": "pipeThroughSimple",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "combinators",
+    "signature": "declare const pipeThroughSimple: { (duplex: LazyArg<Duplex>): <R, E>(self: Stream.Stream<string | Uint8Array, E, R>) => Stream.Stream<Uint8Array, E | Cause.UnknownError, R>; <R, E>(self: Stream.Stream<string | Uint8Array, E, R>, duplex: LazyArg<Duplex>): Stream.Stream<Uint8Array, Cause.UnknownError | E, R>; }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeStream.ts#L143"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "NodeStream.ts",
+      "path": "src/NodeStream.ts"
+    },
+    "project": "@effect/platform-node-shared",
+    "name": "fromReadable",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "declare const fromReadable: <A = Uint8Array<ArrayBufferLike>, E = Cause.UnknownError>(options: { readonly evaluate: LazyArg<Readable | NodeJS.ReadableStream>; readonly onError?: (error: unknown) => E; readonly chunkSize?: number | undefined; readonly bufferSize?: number | undefined; readonly closeOnDone?: boolean | undefined; }) => Stream.Stream<A, E>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeStream.ts#L26"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "NodeStream.ts",
+      "path": "src/NodeStream.ts"
+    },
+    "project": "@effect/platform-node-shared",
+    "name": "fromReadableChannel",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "declare const fromReadableChannel: <A = Uint8Array<ArrayBufferLike>, E = Cause.UnknownError>(options: { readonly evaluate: LazyArg<Readable | NodeJS.ReadableStream>; readonly onError?: (error: unknown) => E; readonly chunkSize?: number | undefined; readonly closeOnDone?: boolean | undefined; }) => Channel.Channel<Arr.NonEmptyReadonlyArray<A>, E>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeStream.ts#L38"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "NodeStream.ts",
+      "path": "src/NodeStream.ts"
+    },
+    "project": "@effect/platform-node-shared",
+    "name": "fromDuplex",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "declare const fromDuplex: <IE, I = Uint8Array<ArrayBufferLike>, O = Uint8Array<ArrayBufferLike>, E = Cause.UnknownError>(options: { readonly evaluate: LazyArg<Duplex>; readonly onError?: (error: unknown) => E; readonly chunkSize?: number | undefined; readonly bufferSize?: number | undefined; readonly endOnDone?: boolean | undefined; readonly encoding?: BufferEncoding | undefined; }) => Channel.Channel<Arr.NonEmptyReadonlyArray<O>, IE | E, void, Arr.NonEmptyReadonlyArray<I>, IE>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeStream.ts#L58"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "NodeStream.ts",
+      "path": "src/NodeStream.ts"
+    },
+    "project": "@effect/platform-node-shared",
+    "name": "toReadable",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "conversions",
+    "signature": "declare const toReadable: <E, R>(stream: Stream.Stream<string | Uint8Array, E, R>) => Effect.Effect<Readable, never, R>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeStream.ts#L160"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "NodeStream.ts",
+      "path": "src/NodeStream.ts"
+    },
+    "project": "@effect/platform-node-shared",
+    "name": "toReadableNever",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "conversions",
+    "signature": "declare const toReadableNever: <E>(stream: Stream.Stream<string | Uint8Array, E, never>) => Readable",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeStream.ts#L170"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "NodeStream.ts",
+      "path": "src/NodeStream.ts"
+    },
+    "project": "@effect/platform-node-shared",
+    "name": "toString",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "conversions",
+    "signature": "declare const toString: <E = Cause.UnknownError>(readable: LazyArg<Readable | NodeJS.ReadableStream>, options?: { readonly onError?: (error: unknown) => E; readonly encoding?: BufferEncoding | undefined; readonly maxBytes?: SizeInput | undefined; }) => Effect.Effect<string, E>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeStream.ts#L180"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "NodeStream.ts",
+      "path": "src/NodeStream.ts"
+    },
+    "project": "@effect/platform-node-shared",
+    "name": "toArrayBuffer",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "conversions",
+    "signature": "declare const toArrayBuffer: <E = Cause.UnknownError>(readable: LazyArg<Readable | NodeJS.ReadableStream>, options?: { readonly onError?: (error: unknown) => E; readonly maxBytes?: SizeInput | undefined; }) => Effect.Effect<ArrayBuffer, E>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeStream.ts#L229"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "NodeStream.ts",
+      "path": "src/NodeStream.ts"
+    },
+    "project": "@effect/platform-node-shared",
+    "name": "toUint8Array",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "conversions",
+    "signature": "declare const toUint8Array: <E = Cause.UnknownError>(readable: LazyArg<Readable | NodeJS.ReadableStream>, options?: { readonly onError?: (error: unknown) => E; readonly maxBytes?: SizeInput | undefined; }) => Effect.Effect<Uint8Array, E>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeStream.ts#L273"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "NodeTerminal.ts",
+      "path": "src/NodeTerminal.ts"
+    },
+    "project": "@effect/platform-node-shared",
+    "name": "make",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "declare const make: (shouldQuit?: (input: Terminal.UserInput) => boolean) => Effect.Effect<Terminal.Terminal, never, Scope.Scope>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeTerminal.ts#L19"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "NodeTerminal.ts",
+      "path": "src/NodeTerminal.ts"
+    },
+    "project": "@effect/platform-node-shared",
+    "name": "layer",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "layers",
+    "signature": "declare const layer: Layer.Layer<Terminal.Terminal, never, never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeTerminal.ts#L107"
+  }
+]

@@ -1,0 +1,26 @@
+Package: `effect`<br />
+Module: `Rpc`<br />
+
+## Rpc.Handler
+
+Represents an implemented rpc.
+
+**Signature**
+
+```ts
+export interface Handler<Tag extends string> {
+  readonly _: unique symbol
+  readonly tag: Tag
+  readonly handler: (request: any, options: {
+    readonly clientId: number
+    readonly requestId: RequestId
+    readonly headers: Headers
+    readonly rpc: Any
+  }) => Effect<any, any> | Stream<any, any>
+  readonly services: ServiceMap.ServiceMap<never>
+}
+```
+
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Rpc.ts#L153)
+
+Since v4.0.0

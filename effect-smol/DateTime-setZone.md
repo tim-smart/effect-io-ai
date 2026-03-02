@@ -1,0 +1,30 @@
+Package: `effect`<br />
+Module: `DateTime`<br />
+
+## DateTime.setZone
+
+Set the time zone of a `DateTime`, returning a new `DateTime.Zoned`.
+
+**Example**
+
+```ts
+import { DateTime, Effect } from "effect"
+
+Effect.gen(function*() {
+  const now = yield* DateTime.now
+  const zone = DateTime.zoneMakeNamedUnsafe("Europe/London")
+
+  // set the time zone
+  const zoned: DateTime.Zoned = DateTime.setZone(now, zone)
+})
+```
+
+**Signature**
+
+```ts
+declare const setZone: { (zone: TimeZone, options?: { readonly adjustForTimeZone?: boolean | undefined; readonly disambiguation?: Disambiguation | undefined; }): (self: DateTime) => Zoned; (self: DateTime, zone: TimeZone, options?: { readonly adjustForTimeZone?: boolean | undefined; readonly disambiguation?: Disambiguation | undefined; }): Zoned; }
+```
+
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L712)
+
+Since v3.6.0

@@ -1,0 +1,980 @@
+[
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/ai-openai-compat",
+    "name": "OpenAiClient",
+    "description": "Re-exports all named exports from the \"./OpenAiClient.ts\" module as `OpenAiClient`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as OpenAiClient from \"./OpenAiClient.ts\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/index.ts#L10"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/ai-openai-compat",
+    "name": "OpenAiConfig",
+    "description": "Re-exports all named exports from the \"./OpenAiConfig.ts\" module as `OpenAiConfig`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as OpenAiConfig from \"./OpenAiConfig.ts\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/index.ts#L15"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/ai-openai-compat",
+    "name": "OpenAiError",
+    "description": "Re-exports all named exports from the \"./OpenAiError.ts\" module as `OpenAiError`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as OpenAiError from \"./OpenAiError.ts\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/index.ts#L20"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/ai-openai-compat",
+    "name": "OpenAiLanguageModel",
+    "description": "Re-exports all named exports from the \"./OpenAiLanguageModel.ts\" module as `OpenAiLanguageModel`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as OpenAiLanguageModel from \"./OpenAiLanguageModel.ts\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/index.ts#L30"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/ai-openai-compat",
+    "name": "OpenAiTelemetry",
+    "description": "Re-exports all named exports from the \"./OpenAiTelemetry.ts\" module as `OpenAiTelemetry`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as OpenAiTelemetry from \"./OpenAiTelemetry.ts\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/index.ts#L41"
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "OpenAiClient.ts",
+      "path": "src/OpenAiClient.ts"
+    },
+    "project": "@effect/ai-openai-compat",
+    "name": "OpenAiClient",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "service",
+    "signature": "declare class OpenAiClient",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/OpenAiClient.ts#L52"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "OpenAiClient.ts",
+      "path": "src/OpenAiClient.ts"
+    },
+    "project": "@effect/ai-openai-compat",
+    "name": "make",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "declare const make: (options: Options) => Effect.Effect<Service, never, HttpClient.HttpClient>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/OpenAiClient.ts#L77"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "OpenAiClient.ts",
+      "path": "src/OpenAiClient.ts"
+    },
+    "project": "@effect/ai-openai-compat",
+    "name": "layer",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "layers",
+    "signature": "declare const layer: (options: Options) => Layer.Layer<OpenAiClient, never, HttpClient.HttpClient>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/OpenAiClient.ts#L218"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "OpenAiClient.ts",
+      "path": "src/OpenAiClient.ts"
+    },
+    "project": "@effect/ai-openai-compat",
+    "name": "layerConfig",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "layers",
+    "signature": "declare const layerConfig: (options?: { readonly apiKey?: Config.Config<Redacted.Redacted<string> | undefined> | undefined; readonly apiUrl?: Config.Config<string> | undefined; readonly organizationId?: Config.Config<Redacted.Redacted<string> | undefined> | undefined; readonly projectId?: Config.Config<Redacted.Redacted<string> | undefined> | undefined; readonly transformClient?: ((client: HttpClient.HttpClient) => HttpClient.HttpClient) | undefined; }) => Layer.Layer<OpenAiClient, Config.ConfigError, HttpClient.HttpClient>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/OpenAiClient.ts#L225"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "OpenAiClient.ts",
+      "path": "src/OpenAiClient.ts"
+    },
+    "project": "@effect/ai-openai-compat",
+    "name": "Service",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export interface Service {\n  readonly client: HttpClient.HttpClient\n  readonly createResponse: (\n    options: CreateResponseRequestJson\n  ) => Effect.Effect<\n    [body: CreateResponse200, response: HttpClientResponse.HttpClientResponse],\n    AiError.AiError\n  >\n  readonly createResponseStream: (\n    options: Omit<CreateResponseRequestJson, \"stream\" | \"stream_options\">\n  ) => Effect.Effect<\n    [\n      response: HttpClientResponse.HttpClientResponse,\n      stream: Stream.Stream<CreateResponse200Sse, AiError.AiError>\n    ],\n    AiError.AiError\n  >\n  readonly createEmbedding: (\n    options: CreateEmbeddingRequestJson\n  ) => Effect.Effect<CreateEmbedding200, AiError.AiError>\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/OpenAiClient.ts#L26"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "OpenAiClient.ts",
+      "path": "src/OpenAiClient.ts"
+    },
+    "project": "@effect/ai-openai-compat",
+    "name": "Options",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "type Options = {\n  readonly apiKey?: Redacted.Redacted<string> | undefined\n  readonly apiUrl?: string | undefined\n  readonly organizationId?: Redacted.Redacted<string> | undefined\n  readonly projectId?: Redacted.Redacted<string> | undefined\n  readonly transformClient?: ((client: HttpClient.HttpClient) => HttpClient.HttpClient) | undefined\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/OpenAiClient.ts#L60"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "OpenAiClient.ts",
+      "path": "src/OpenAiClient.ts"
+    },
+    "project": "@effect/ai-openai-compat",
+    "name": "IncludeEnum",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "type IncludeEnum = | \"message.input_image.image_url\"\n  | \"reasoning.encrypted_content\"\n  | \"message.output_text.logprobs\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/OpenAiClient.ts#L262"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "OpenAiClient.ts",
+      "path": "src/OpenAiClient.ts"
+    },
+    "project": "@effect/ai-openai-compat",
+    "name": "MessageStatus",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "type MessageStatus = \"in_progress\" | \"completed\" | \"incomplete\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/OpenAiClient.ts#L270"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "OpenAiClient.ts",
+      "path": "src/OpenAiClient.ts"
+    },
+    "project": "@effect/ai-openai-compat",
+    "name": "InputContent",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "type InputContent = InputTextContent | InputImageContent | InputFileContent",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/OpenAiClient.ts#L295"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "OpenAiClient.ts",
+      "path": "src/OpenAiClient.ts"
+    },
+    "project": "@effect/ai-openai-compat",
+    "name": "SummaryTextContent",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "type SummaryTextContent = {\n  readonly type: \"summary_text\"\n  readonly text: string\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/OpenAiClient.ts#L300"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "OpenAiClient.ts",
+      "path": "src/OpenAiClient.ts"
+    },
+    "project": "@effect/ai-openai-compat",
+    "name": "Annotation",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "type Annotation = | FileCitationAnnotation\n  | UrlCitationAnnotation\n  | ContainerFileCitationAnnotation\n  | FilePathAnnotation",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/OpenAiClient.ts#L359"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "OpenAiClient.ts",
+      "path": "src/OpenAiClient.ts"
+    },
+    "project": "@effect/ai-openai-compat",
+    "name": "ReasoningItem",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "type ReasoningItem = {\n  readonly type: \"reasoning\"\n  readonly id: string\n  readonly encrypted_content?: string | null | undefined\n  readonly summary: ReadonlyArray<SummaryTextContent>\n  readonly content?: ReadonlyArray<ReasoningTextContent> | undefined\n  readonly status?: MessageStatus | undefined\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/OpenAiClient.ts#L394"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "OpenAiClient.ts",
+      "path": "src/OpenAiClient.ts"
+    },
+    "project": "@effect/ai-openai-compat",
+    "name": "InputItem",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "type InputItem = | {\n    readonly role: \"user\" | \"assistant\" | \"system\" | \"developer\"\n    readonly content: string | ReadonlyArray<InputContent>\n    readonly type?: \"message\" | undefined\n  }\n  | {\n    readonly type?: \"message\" | undefined\n    readonly role: \"user\" | \"system\" | \"developer\"\n    readonly status?: MessageStatus | undefined\n    readonly content: ReadonlyArray<InputContent>\n  }\n  | OutputMessage\n  | FunctionCall\n  | FunctionCallOutput\n  | ReasoningItem\n  | CustomToolCallOutput\n  | CustomToolCall\n  | ItemReference",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/OpenAiClient.ts#L443"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "OpenAiClient.ts",
+      "path": "src/OpenAiClient.ts"
+    },
+    "project": "@effect/ai-openai-compat",
+    "name": "Tool",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "type Tool = | FunctionTool\n  | CustomToolParam",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/OpenAiClient.ts#L481"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "OpenAiClient.ts",
+      "path": "src/OpenAiClient.ts"
+    },
+    "project": "@effect/ai-openai-compat",
+    "name": "TextResponseFormatConfiguration",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "type TextResponseFormatConfiguration = | {\n    readonly type: \"text\"\n  }\n  | {\n    readonly type: \"json_schema\"\n    readonly description?: string | undefined\n    readonly name: string\n    readonly schema: JsonObject\n    readonly strict?: boolean | null | undefined\n  }\n  | {\n    readonly type: \"json_object\"\n  }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/OpenAiClient.ts#L506"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "OpenAiClient.ts",
+      "path": "src/OpenAiClient.ts"
+    },
+    "project": "@effect/ai-openai-compat",
+    "name": "CreateResponse",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "type CreateResponse = {\n  readonly metadata?: Readonly<Record<string, string>> | null | undefined\n  readonly top_logprobs?: number | undefined\n  readonly temperature?: number | null | undefined\n  readonly top_p?: number | null | undefined\n  readonly user?: string | null | undefined\n  readonly safety_identifier?: string | null | undefined\n  readonly prompt_cache_key?: string | null | undefined\n  readonly service_tier?: string | undefined\n  readonly prompt_cache_retention?: \"in-memory\" | \"24h\" | null | undefined\n  readonly previous_response_id?: string | null | undefined\n  readonly model?: string | undefined\n  readonly reasoning?: unknown\n  readonly background?: boolean | null | undefined\n  readonly max_output_tokens?: number | null | undefined\n  readonly max_tool_calls?: number | null | undefined\n  readonly text?: {\n    readonly format?: TextResponseFormatConfiguration | undefined\n    readonly verbosity?: \"low\" | \"medium\" | \"high\" | null | undefined\n  } | undefined\n  readonly tools?: ReadonlyArray<Tool> | undefined\n  readonly tool_choice?: ToolChoice | undefined\n  readonly truncation?: \"auto\" | \"disabled\" | null | undefined\n  readonly input?: string | ReadonlyArray<InputItem> | undefined\n  readonly include?: ReadonlyArray<IncludeEnum> | null | undefined\n  readonly parallel_tool_calls?: boolean | null | undefined\n  readonly store?: boolean | null | undefined\n  readonly instructions?: string | null | undefined\n  readonly stream?: boolean | null | undefined\n  readonly conversation?: string | null | undefined\n  readonly modalities?: ReadonlyArray<\"text\" | \"audio\"> | undefined\n  readonly seed?: number | undefined\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/OpenAiClient.ts#L524"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "OpenAiClient.ts",
+      "path": "src/OpenAiClient.ts"
+    },
+    "project": "@effect/ai-openai-compat",
+    "name": "ResponseUsage",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "type ResponseUsage = {\n  readonly input_tokens: number\n  readonly output_tokens: number\n  readonly total_tokens: number\n  readonly input_tokens_details?: unknown\n  readonly output_tokens_details?: unknown\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/OpenAiClient.ts#L561"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "OpenAiClient.ts",
+      "path": "src/OpenAiClient.ts"
+    },
+    "project": "@effect/ai-openai-compat",
+    "name": "Response",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "type Response = {\n  readonly id: string\n  readonly object?: \"response\" | undefined\n  readonly model: string\n  readonly status?: \"completed\" | \"failed\" | \"in_progress\" | \"cancelled\" | \"queued\" | \"incomplete\" | undefined\n  readonly created_at: number\n  readonly output: ReadonlyArray<OutputItem>\n  readonly usage?: ResponseUsage | null | undefined\n  readonly incomplete_details?:\n    | {\n      readonly reason?: \"max_output_tokens\" | \"content_filter\" | undefined\n    }\n    | null\n    | undefined\n  readonly service_tier?: string | undefined\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/OpenAiClient.ts#L578"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "OpenAiClient.ts",
+      "path": "src/OpenAiClient.ts"
+    },
+    "project": "@effect/ai-openai-compat",
+    "name": "ResponseStreamEvent",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "type ResponseStreamEvent = | ResponseCreatedEvent\n  | ResponseCompletedEvent\n  | ResponseIncompleteEvent\n  | ResponseFailedEvent\n  | ResponseOutputItemAddedEvent\n  | ResponseOutputItemDoneEvent\n  | ResponseTextDeltaEvent\n  | ResponseOutputTextAnnotationAddedEvent\n  | ResponseFunctionCallArgumentsDeltaEvent\n  | ResponseReasoningSummaryPartAddedEvent\n  | ResponseReasoningSummaryPartDoneEvent\n  | ResponseReasoningSummaryTextDeltaEvent\n  | ResponseErrorEvent\n  | UnknownResponseStreamEvent",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/OpenAiClient.ts#L704"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "OpenAiClient.ts",
+      "path": "src/OpenAiClient.ts"
+    },
+    "project": "@effect/ai-openai-compat",
+    "name": "Embedding",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "type Embedding = {\n  readonly embedding: ReadonlyArray<number> | string\n  readonly index: number\n  readonly object?: string | undefined\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/OpenAiClient.ts#L723"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "OpenAiClient.ts",
+      "path": "src/OpenAiClient.ts"
+    },
+    "project": "@effect/ai-openai-compat",
+    "name": "CreateEmbeddingRequest",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "type CreateEmbeddingRequest = {\n  readonly input: string | ReadonlyArray<string> | ReadonlyArray<number> | ReadonlyArray<ReadonlyArray<number>>\n  readonly model: string\n  readonly encoding_format?: \"float\" | \"base64\" | undefined\n  readonly dimensions?: number | undefined\n  readonly user?: string | undefined\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/OpenAiClient.ts#L732"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "OpenAiClient.ts",
+      "path": "src/OpenAiClient.ts"
+    },
+    "project": "@effect/ai-openai-compat",
+    "name": "CreateEmbeddingResponse",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "type CreateEmbeddingResponse = {\n  readonly data: ReadonlyArray<Embedding>\n  readonly model: string\n  readonly object?: \"list\" | undefined\n  readonly usage?: {\n    readonly prompt_tokens: number\n    readonly total_tokens: number\n  } | undefined\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/OpenAiClient.ts#L743"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "OpenAiClient.ts",
+      "path": "src/OpenAiClient.ts"
+    },
+    "project": "@effect/ai-openai-compat",
+    "name": "CreateEmbeddingRequestJson",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "type CreateEmbeddingRequestJson = CreateEmbeddingRequest",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/OpenAiClient.ts#L756"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "OpenAiClient.ts",
+      "path": "src/OpenAiClient.ts"
+    },
+    "project": "@effect/ai-openai-compat",
+    "name": "CreateEmbedding200",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "type CreateEmbedding200 = CreateEmbeddingResponse",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/OpenAiClient.ts#L760"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "OpenAiClient.ts",
+      "path": "src/OpenAiClient.ts"
+    },
+    "project": "@effect/ai-openai-compat",
+    "name": "ChatCompletionContentPart",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "type ChatCompletionContentPart = | {\n    readonly type: \"text\"\n    readonly text: string\n  }\n  | {\n    readonly type: \"image_url\"\n    readonly image_url: {\n      readonly url: string\n      readonly detail?: \"low\" | \"high\" | \"auto\" | undefined\n    }\n  }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/OpenAiClient.ts#L764"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "OpenAiClient.ts",
+      "path": "src/OpenAiClient.ts"
+    },
+    "project": "@effect/ai-openai-compat",
+    "name": "ChatCompletionRequestToolCall",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "type ChatCompletionRequestToolCall = {\n  readonly id: string\n  readonly type: \"function\"\n  readonly function: {\n    readonly name: string\n    readonly arguments: string\n  }\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/OpenAiClient.ts#L779"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "OpenAiClient.ts",
+      "path": "src/OpenAiClient.ts"
+    },
+    "project": "@effect/ai-openai-compat",
+    "name": "ChatCompletionRequestMessage",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "type ChatCompletionRequestMessage = | {\n    readonly role: \"system\" | \"developer\" | \"user\" | \"assistant\"\n    readonly content: string | ReadonlyArray<ChatCompletionContentPart> | null\n    readonly tool_calls?: ReadonlyArray<ChatCompletionRequestToolCall> | undefined\n  }\n  | {\n    readonly role: \"tool\"\n    readonly tool_call_id: string\n    readonly content: string\n  }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/OpenAiClient.ts#L790"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "OpenAiClient.ts",
+      "path": "src/OpenAiClient.ts"
+    },
+    "project": "@effect/ai-openai-compat",
+    "name": "ChatCompletionTool",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "type ChatCompletionTool = {\n  readonly type: \"function\"\n  readonly function: {\n    readonly name: string\n    readonly description?: string | null | undefined\n    readonly parameters?: JsonObject | undefined\n    readonly strict?: boolean | undefined\n  }\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/OpenAiClient.ts#L804"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "OpenAiClient.ts",
+      "path": "src/OpenAiClient.ts"
+    },
+    "project": "@effect/ai-openai-compat",
+    "name": "ChatCompletionToolChoice",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "type ChatCompletionToolChoice = | \"none\"\n  | \"auto\"\n  | \"required\"\n  | {\n    readonly type: \"function\"\n    readonly function: {\n      readonly name: string\n    }\n  }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/OpenAiClient.ts#L816"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "OpenAiClient.ts",
+      "path": "src/OpenAiClient.ts"
+    },
+    "project": "@effect/ai-openai-compat",
+    "name": "ChatCompletionResponseFormat",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "type ChatCompletionResponseFormat = | {\n    readonly type: \"json_object\"\n  }\n  | {\n    readonly type: \"json_schema\"\n    readonly json_schema: {\n      readonly name: string\n      readonly schema: JsonObject\n      readonly description?: string | undefined\n      readonly strict?: boolean | undefined\n    }\n  }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/OpenAiClient.ts#L829"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "OpenAiClient.ts",
+      "path": "src/OpenAiClient.ts"
+    },
+    "project": "@effect/ai-openai-compat",
+    "name": "ChatCompletionRequest",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "type ChatCompletionRequest = {\n  readonly model: string\n  readonly messages: ReadonlyArray<ChatCompletionRequestMessage>\n  readonly temperature?: number | null | undefined\n  readonly top_p?: number | null | undefined\n  readonly max_tokens?: number | null | undefined\n  readonly user?: string | null | undefined\n  readonly seed?: number | undefined\n  readonly parallel_tool_calls?: boolean | null | undefined\n  readonly response_format?: ChatCompletionResponseFormat | undefined\n  readonly tools?: ReadonlyArray<ChatCompletionTool> | undefined\n  readonly tool_choice?: ChatCompletionToolChoice | undefined\n  readonly service_tier?: string | undefined\n  readonly stream?: boolean | undefined\n  readonly stream_options?: {\n    readonly include_usage?: boolean | undefined\n  } | undefined\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/OpenAiClient.ts#L845"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "OpenAiClient.ts",
+      "path": "src/OpenAiClient.ts"
+    },
+    "project": "@effect/ai-openai-compat",
+    "name": "CreateResponseRequestJson",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "type CreateResponseRequestJson = ChatCompletionRequest",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/OpenAiClient.ts#L866"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "OpenAiClient.ts",
+      "path": "src/OpenAiClient.ts"
+    },
+    "project": "@effect/ai-openai-compat",
+    "name": "CreateResponse200",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "type CreateResponse200 = ChatCompletionResponse",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/OpenAiClient.ts#L870"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "OpenAiClient.ts",
+      "path": "src/OpenAiClient.ts"
+    },
+    "project": "@effect/ai-openai-compat",
+    "name": "CreateResponse200Sse",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "type CreateResponse200Sse = ChatCompletionStreamEvent",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/OpenAiClient.ts#L874"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "OpenAiClient.ts",
+      "path": "src/OpenAiClient.ts"
+    },
+    "project": "@effect/ai-openai-compat",
+    "name": "ChatCompletionToolCall",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "type ChatCompletionToolCall = typeof ChatCompletionToolCall.Type",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/OpenAiClient.ts#L952"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "OpenAiClient.ts",
+      "path": "src/OpenAiClient.ts"
+    },
+    "project": "@effect/ai-openai-compat",
+    "name": "ChatCompletionMessage",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "type ChatCompletionMessage = typeof ChatCompletionMessage.Type",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/OpenAiClient.ts#L956"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "OpenAiClient.ts",
+      "path": "src/OpenAiClient.ts"
+    },
+    "project": "@effect/ai-openai-compat",
+    "name": "ChatCompletionChoice",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "type ChatCompletionChoice = typeof ChatCompletionChoice.Type",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/OpenAiClient.ts#L960"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "OpenAiClient.ts",
+      "path": "src/OpenAiClient.ts"
+    },
+    "project": "@effect/ai-openai-compat",
+    "name": "ChatCompletionUsage",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "type ChatCompletionUsage = typeof ChatCompletionUsage.Type",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/OpenAiClient.ts#L964"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "OpenAiClient.ts",
+      "path": "src/OpenAiClient.ts"
+    },
+    "project": "@effect/ai-openai-compat",
+    "name": "ChatCompletionResponse",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "type ChatCompletionResponse = typeof ChatCompletionResponse.Type",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/OpenAiClient.ts#L968"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "OpenAiClient.ts",
+      "path": "src/OpenAiClient.ts"
+    },
+    "project": "@effect/ai-openai-compat",
+    "name": "ChatCompletionChunk",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "type ChatCompletionChunk = typeof ChatCompletionChunk.Type",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/OpenAiClient.ts#L972"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "OpenAiClient.ts",
+      "path": "src/OpenAiClient.ts"
+    },
+    "project": "@effect/ai-openai-compat",
+    "name": "ChatCompletionStreamEvent",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "type ChatCompletionStreamEvent = ChatCompletionChunk | \"[DONE]\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/OpenAiClient.ts#L976"
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "OpenAiConfig.ts",
+      "path": "src/OpenAiConfig.ts"
+    },
+    "project": "@effect/ai-openai-compat",
+    "name": "OpenAiConfig",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "services",
+    "signature": "declare class OpenAiConfig",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/OpenAiConfig.ts#L13"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "OpenAiConfig.ts",
+      "path": "src/OpenAiConfig.ts"
+    },
+    "project": "@effect/ai-openai-compat",
+    "name": "withClientTransform",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "configuration",
+    "signature": "declare const withClientTransform: { (transform: (client: HttpClient) => HttpClient): <A, E, R>(self: Effect.Effect<A, E, R>) => Effect.Effect<A, E, R>; <A, E, R>(self: Effect.Effect<A, E, R>, transform: (client: HttpClient) => HttpClient): Effect.Effect<A, E, R>; }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/OpenAiConfig.ts#L43"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "OpenAiConfig.ts",
+      "path": "src/OpenAiConfig.ts"
+    },
+    "project": "@effect/ai-openai-compat",
+    "name": "OpenAiConfig.Service",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.",
+    "category": "models",
+    "signature": "export interface Service {\n    readonly transformClient?: ((client: HttpClient) => HttpClient) | undefined\n  }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/OpenAiConfig.ts#L34"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "OpenAiError.ts",
+      "path": "src/OpenAiError.ts"
+    },
+    "project": "@effect/ai-openai-compat",
+    "name": "OpenAiErrorMetadata",
+    "description": "OpenAI-specific error metadata fields.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "type OpenAiErrorMetadata = {\n  /**\n   * The OpenAI error code returned by the API.\n   */\n  readonly errorCode: string | null\n  /**\n   * The OpenAI error type returned by the API.\n   */\n  readonly errorType: string | null\n  /**\n   * The unique request ID for debugging with OpenAI support.\n   */\n  readonly requestId: string | null\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/OpenAiError.ts#L11"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "OpenAiError.ts",
+      "path": "src/OpenAiError.ts"
+    },
+    "project": "@effect/ai-openai-compat",
+    "name": "OpenAiRateLimitMetadata",
+    "description": "OpenAI-specific rate limit metadata fields.\n\nExtends base error metadata with rate limit specific information from\nOpenAI's rate limit headers.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "type OpenAiRateLimitMetadata = OpenAiErrorMetadata & {\n  /**\n   * The rate limit type (e.g. \"requests\", \"tokens\").\n   */\n  readonly limit: string | null\n  /**\n   * Number of remaining requests in the current window.\n   */\n  readonly remaining: number | null\n  /**\n   * Time until the request rate limit resets.\n   */\n  readonly resetRequests: string | null\n  /**\n   * Time until the token rate limit resets.\n   */\n  readonly resetTokens: string | null\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/OpenAiError.ts#L35"
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "OpenAiLanguageModel.ts",
+      "path": "src/OpenAiLanguageModel.ts"
+    },
+    "project": "@effect/ai-openai-compat",
+    "name": "Config",
+    "description": "Service definition for OpenAI language model configuration.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "context",
+    "signature": "declare class Config",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/OpenAiLanguageModel.ts#L66"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "OpenAiLanguageModel.ts",
+      "path": "src/OpenAiLanguageModel.ts"
+    },
+    "project": "@effect/ai-openai-compat",
+    "name": "make",
+    "description": "Creates an OpenAI language model service.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "declare const make: (args_0: { readonly model: string; readonly config?: Omit<typeof Config.Service, \"model\"> | undefined; }) => Effect.Effect<LanguageModel.Service, never, OpenAiClient>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/OpenAiLanguageModel.ts#L338"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "OpenAiLanguageModel.ts",
+      "path": "src/OpenAiLanguageModel.ts"
+    },
+    "project": "@effect/ai-openai-compat",
+    "name": "withConfigOverride",
+    "description": "Provides config overrides for OpenAI language model operations.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "configuration",
+    "signature": "declare const withConfigOverride: { (overrides: typeof Config.Service): <A, E, R>(self: Effect.Effect<A, E, R>) => Effect.Effect<A, E, Exclude<R, Config>>; <A, E, R>(self: Effect.Effect<A, E, R>, overrides: typeof Config.Service): Effect.Effect<A, E, Exclude<R, Config>>; }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/OpenAiLanguageModel.ts#L450"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "OpenAiLanguageModel.ts",
+      "path": "src/OpenAiLanguageModel.ts"
+    },
+    "project": "@effect/ai-openai-compat",
+    "name": "model",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "declare const model: (model: string, config?: Omit<typeof Config.Service, \"model\">) => AiModel.Model<\"openai\", LanguageModel.LanguageModel, OpenAiClient>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/OpenAiLanguageModel.ts#L315"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "OpenAiLanguageModel.ts",
+      "path": "src/OpenAiLanguageModel.ts"
+    },
+    "project": "@effect/ai-openai-compat",
+    "name": "layer",
+    "description": "Creates a layer for the OpenAI language model.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "layers",
+    "signature": "declare const layer: (options: { readonly model: string; readonly config?: Omit<typeof Config.Service, \"model\"> | undefined; }) => Layer.Layer<LanguageModel.LanguageModel, never, OpenAiClient>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/OpenAiLanguageModel.ts#L438"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "OpenAiTelemetry.ts",
+      "path": "src/OpenAiTelemetry.ts"
+    },
+    "project": "@effect/ai-openai-compat",
+    "name": "addGenAIAnnotations",
+    "description": "Applies the specified OpenAi GenAI telemetry attributes to the provided\n`Span`.\n\n**NOTE**: This method will mutate the `Span` **in-place**.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "declare const addGenAIAnnotations: { (options: OpenAiTelemetryAttributeOptions): (span: Span) => void; (span: Span, options: OpenAiTelemetryAttributeOptions): void; }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/OpenAiTelemetry.ts#L128"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "OpenAiTelemetry.ts",
+      "path": "src/OpenAiTelemetry.ts"
+    },
+    "project": "@effect/ai-openai-compat",
+    "name": "RequestAttributes",
+    "description": "Telemetry attributes which are part of the GenAI specification and are\nnamespaced by `gen_ai.openai.request`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export interface RequestAttributes {\n  /**\n   * The response format that is requested.\n   */\n  readonly responseFormat?: (string & {}) | WellKnownResponseFormat | null | undefined\n  /**\n   * The service tier requested. May be a specific tier, `default`, or `auto`.\n   */\n  readonly serviceTier?: (string & {}) | WellKnownServiceTier | null | undefined\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/OpenAiTelemetry.ts#L47"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "OpenAiTelemetry.ts",
+      "path": "src/OpenAiTelemetry.ts"
+    },
+    "project": "@effect/ai-openai-compat",
+    "name": "ResponseAttributes",
+    "description": "Telemetry attributes which are part of the GenAI specification and are\nnamespaced by `gen_ai.openai.response`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export interface ResponseAttributes {\n  /**\n   * The service tier used for the response.\n   */\n  readonly serviceTier?: string | null | undefined\n  /**\n   * A fingerprint to track any eventual change in the Generative AI\n   * environment.\n   */\n  readonly systemFingerprint?: string | null | undefined\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/OpenAiTelemetry.ts#L65"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "OpenAiTelemetry.ts",
+      "path": "src/OpenAiTelemetry.ts"
+    },
+    "project": "@effect/ai-openai-compat",
+    "name": "OpenAiTelemetryAttributes",
+    "description": "The attributes used to describe telemetry in the context of Generative\nArtificial Intelligence (GenAI) Models requests and responses.\n\n{@see https://opentelemetry.io/docs/specs/semconv/attributes-registry/gen-ai/}",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "type OpenAiTelemetryAttributes = Simplify<\n  & Telemetry.GenAITelemetryAttributes\n  & Telemetry.AttributesWithPrefix<RequestAttributes, \"gen_ai.openai.request\">\n  & Telemetry.AttributesWithPrefix<ResponseAttributes, \"gen_ai.openai.request\">\n>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/OpenAiTelemetry.ts#L25"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "OpenAiTelemetry.ts",
+      "path": "src/OpenAiTelemetry.ts"
+    },
+    "project": "@effect/ai-openai-compat",
+    "name": "AllAttributes",
+    "description": "All telemetry attributes which are part of the GenAI specification,\nincluding the OpenAi-specific attributes.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "type AllAttributes = Telemetry.AllAttributes & RequestAttributes & ResponseAttributes",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/OpenAiTelemetry.ts#L38"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "OpenAiTelemetry.ts",
+      "path": "src/OpenAiTelemetry.ts"
+    },
+    "project": "@effect/ai-openai-compat",
+    "name": "WellKnownResponseFormat",
+    "description": "The `gen_ai.openai.request.response_format` attribute has the following\nlist of well-known values.\n\nIf one of them applies, then the respective value **MUST** be used;\notherwise, a custom value **MAY** be used.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "type WellKnownResponseFormat = \"json_object\" | \"json_schema\" | \"text\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/OpenAiTelemetry.ts#L87"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "OpenAiTelemetry.ts",
+      "path": "src/OpenAiTelemetry.ts"
+    },
+    "project": "@effect/ai-openai-compat",
+    "name": "WellKnownServiceTier",
+    "description": "The `gen_ai.openai.request.service_tier` attribute has the following\nlist of well-known values.\n\nIf one of them applies, then the respective value **MUST** be used;\notherwise, a custom value **MAY** be used.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "type WellKnownServiceTier = \"auto\" | \"default\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/OpenAiTelemetry.ts#L99"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "OpenAiTelemetry.ts",
+      "path": "src/OpenAiTelemetry.ts"
+    },
+    "project": "@effect/ai-openai-compat",
+    "name": "OpenAiTelemetryAttributeOptions",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "type OpenAiTelemetryAttributeOptions = Telemetry.GenAITelemetryAttributeOptions & {\n  openai?: {\n    request?: RequestAttributes | undefined\n    response?: ResponseAttributes | undefined\n  } | undefined\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/OpenAiTelemetry.ts#L105"
+  }
+]

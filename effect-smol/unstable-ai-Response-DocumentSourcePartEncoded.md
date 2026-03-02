@@ -1,0 +1,37 @@
+Package: `effect`<br />
+Module: `Response`<br />
+
+## Response.DocumentSourcePartEncoded
+
+Encoded representation of document source parts for serialization.
+
+**Signature**
+
+```ts
+export interface DocumentSourcePartEncoded extends BasePartEncoded<"source", DocumentSourcePartMetadata> {
+  /**
+   * Type discriminator for document sources.
+   */
+  readonly sourceType: "document"
+  /**
+   * Unique identifier for the document.
+   */
+  readonly id: string
+  /**
+   * MIME type of the document.
+   */
+  readonly mediaType: string
+  /**
+   * Display title of the document.
+   */
+  readonly title: string
+  /**
+   * Optional filename of the document.
+   */
+  readonly fileName?: string
+}
+```
+
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Response.ts#L1941)
+
+Since v1.0.0

@@ -1,0 +1,25 @@
+Package: `effect`<br />
+Module: `Duration`<br />
+
+## Duration.min
+
+Returns the smaller of two Durations.
+
+**Example**
+
+```ts
+import { Duration } from "effect"
+
+const shorter = Duration.min(Duration.seconds(5), Duration.seconds(3))
+console.log(Duration.toSeconds(shorter)) // 3
+```
+
+**Signature**
+
+```ts
+declare const min: { (that: Duration): (self: Duration) => Duration; (self: Duration, that: Duration): Duration; }
+```
+
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Duration.ts#L1039)
+
+Since v2.0.0

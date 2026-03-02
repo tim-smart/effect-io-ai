@@ -1,0 +1,275 @@
+[
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "ClickhouseClient.ts",
+      "path": "src/ClickhouseClient.ts"
+    },
+    "project": "@effect/sql-clickhouse",
+    "name": "TypeId",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "type ids",
+    "signature": "declare const TypeId: \"~@effect/sql-clickhouse/ClickhouseClient\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/clickhouse/src/ClickhouseClient.ts#L30"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "ClickhouseClient.ts",
+      "path": "src/ClickhouseClient.ts"
+    },
+    "project": "@effect/sql-clickhouse",
+    "name": "ClickhouseClient",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "tags",
+    "signature": "declare const ClickhouseClient: ServiceMap.Service<ClickhouseClient, ClickhouseClient>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/clickhouse/src/ClickhouseClient.ts#L71"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "ClickhouseClient.ts",
+      "path": "src/ClickhouseClient.ts"
+    },
+    "project": "@effect/sql-clickhouse",
+    "name": "ClientMethod",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "References",
+    "signature": "declare const ClientMethod: ServiceMap.Reference<\"query\" | \"command\" | \"insert\">",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/clickhouse/src/ClickhouseClient.ts#L301"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "ClickhouseClient.ts",
+      "path": "src/ClickhouseClient.ts"
+    },
+    "project": "@effect/sql-clickhouse",
+    "name": "QueryId",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "References",
+    "signature": "declare const QueryId: ServiceMap.Reference<string | undefined>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/clickhouse/src/ClickhouseClient.ts#L312"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "ClickhouseClient.ts",
+      "path": "src/ClickhouseClient.ts"
+    },
+    "project": "@effect/sql-clickhouse",
+    "name": "ClickhouseSettings",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "References",
+    "signature": "declare const ClickhouseSettings: ServiceMap.Reference<Partial<ClickHouseServerSettings> & Partial<ClickHouseHTTPSettings> & Record<string, string | number | boolean | Clickhouse.SettingsMap | undefined>>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/clickhouse/src/ClickhouseClient.ts#L321"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "ClickhouseClient.ts",
+      "path": "src/ClickhouseClient.ts"
+    },
+    "project": "@effect/sql-clickhouse",
+    "name": "make",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "declare const make: (options: ClickhouseClientConfig) => Effect.Effect<ClickhouseClient, SqlError, Scope.Scope | Reactivity.Reactivity>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/clickhouse/src/ClickhouseClient.ts#L87"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "ClickhouseClient.ts",
+      "path": "src/ClickhouseClient.ts"
+    },
+    "project": "@effect/sql-clickhouse",
+    "name": "layerConfig",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "layers",
+    "signature": "declare const layerConfig: (config: Config.Wrap<ClickhouseClientConfig>) => Layer.Layer<ClickhouseClient | Client.SqlClient, Config.ConfigError | SqlError>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/clickhouse/src/ClickhouseClient.ts#L331"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "ClickhouseClient.ts",
+      "path": "src/ClickhouseClient.ts"
+    },
+    "project": "@effect/sql-clickhouse",
+    "name": "layer",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "layers",
+    "signature": "declare const layer: (config: ClickhouseClientConfig) => Layer.Layer<ClickhouseClient | Client.SqlClient, Config.ConfigError | SqlError>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/clickhouse/src/ClickhouseClient.ts#L351"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "ClickhouseClient.ts",
+      "path": "src/ClickhouseClient.ts"
+    },
+    "project": "@effect/sql-clickhouse",
+    "name": "makeCompiler",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "compiler",
+    "signature": "declare const makeCompiler: (transform?: (_: string) => string) => Statement.Compiler",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/clickhouse/src/ClickhouseClient.ts#L390"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "ClickhouseClient.ts",
+      "path": "src/ClickhouseClient.ts"
+    },
+    "project": "@effect/sql-clickhouse",
+    "name": "ClickhouseClient",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export interface ClickhouseClient extends Client.SqlClient {\n  readonly [TypeId]: TypeId\n  readonly config: ClickhouseClientConfig\n  readonly param: (dataType: string, value: unknown) => Statement.Fragment\n  readonly asCommand: <A, E, R>(effect: Effect.Effect<A, E, R>) => Effect.Effect<A, E, R>\n  readonly insertQuery: <T = unknown>(options: {\n    readonly table: string\n    readonly values: Clickhouse.InsertValues<Readable, T>\n    readonly format?: Clickhouse.DataFormat\n  }) => Effect.Effect<Clickhouse.InsertResult, SqlError>\n  readonly withQueryId: {\n    (queryId: string): <A, E, R>(effect: Effect.Effect<A, E, R>) => Effect.Effect<A, E, R>\n    <A, E, R>(effect: Effect.Effect<A, E, R>, queryId: string): Effect.Effect<A, E, R>\n  }\n  readonly withClickhouseSettings: {\n    (\n      settings: NonNullable<Clickhouse.BaseQueryParams[\"clickhouse_settings\"]>\n    ): <A, E, R>(effect: Effect.Effect<A, E, R>) => Effect.Effect<A, E, R>\n    <A, E, R>(\n      effect: Effect.Effect<A, E, R>,\n      settings: NonNullable<Clickhouse.BaseQueryParams[\"clickhouse_settings\"]>\n    ): Effect.Effect<A, E, R>\n  }\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/clickhouse/src/ClickhouseClient.ts#L42"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "ClickhouseClient.ts",
+      "path": "src/ClickhouseClient.ts"
+    },
+    "project": "@effect/sql-clickhouse",
+    "name": "ClickhouseClientConfig",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "export interface ClickhouseClientConfig extends Clickhouse.ClickHouseClientConfigOptions {\n  readonly spanAttributes?: Record<string, unknown> | undefined\n  readonly transformResultNames?: ((str: string) => string) | undefined\n  readonly transformQueryNames?: ((str: string) => string) | undefined\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/clickhouse/src/ClickhouseClient.ts#L77"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "ClickhouseClient.ts",
+      "path": "src/ClickhouseClient.ts"
+    },
+    "project": "@effect/sql-clickhouse",
+    "name": "TypeId",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "type ids",
+    "signature": "type TypeId = \"~@effect/sql-clickhouse/ClickhouseClient\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/clickhouse/src/ClickhouseClient.ts#L36"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "ClickhouseClient.ts",
+      "path": "src/ClickhouseClient.ts"
+    },
+    "project": "@effect/sql-clickhouse",
+    "name": "ClickhouseCustom",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "custom types",
+    "signature": "type ClickhouseCustom = ClickhouseParam",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/clickhouse/src/ClickhouseClient.ts#L417"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "ClickhouseMigrator.ts",
+      "path": "src/ClickhouseMigrator.ts"
+    },
+    "project": "@effect/sql-clickhouse",
+    "name": "run",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructor",
+    "signature": "declare const run: <R2 = never>({ loader, schemaDirectory, table }: Migrator.MigratorOptions<R2>) => Effect.Effect<ReadonlyArray<readonly [id: number, name: string]>, Migrator.MigrationError | SqlError, Client.SqlClient | R2>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/clickhouse/src/ClickhouseMigrator.ts#L19"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "ClickhouseMigrator.ts",
+      "path": "src/ClickhouseMigrator.ts"
+    },
+    "project": "@effect/sql-clickhouse",
+    "name": "layer",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "layers",
+    "signature": "declare const layer: <R>(options: Migrator.MigratorOptions<R>) => Layer.Layer<never, Migrator.MigrationError | SqlError, Client.SqlClient | R>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/clickhouse/src/ClickhouseMigrator.ts#L31"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "ClickhouseMigrator.ts",
+      "path": "src/ClickhouseMigrator.ts"
+    },
+    "project": "@effect/sql-clickhouse",
+    "name": "\"effect/unstable/sql/Migrator\"",
+    "description": "Re-exports all named exports from the \"effect/unstable/sql/Migrator\" module.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * from \"effect/unstable/sql/Migrator\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/clickhouse/src/ClickhouseMigrator.ts#L13"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/sql-clickhouse",
+    "name": "ClickhouseClient",
+    "description": "Re-exports all named exports from the \"./ClickhouseClient.ts\" module as `ClickhouseClient`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as ClickhouseClient from \"./ClickhouseClient.ts\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/clickhouse/src/index.ts#L10"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/sql-clickhouse",
+    "name": "ClickhouseMigrator",
+    "description": "Re-exports all named exports from the \"./ClickhouseMigrator.ts\" module as `ClickhouseMigrator`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as ClickhouseMigrator from \"./ClickhouseMigrator.ts\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/clickhouse/src/index.ts#L15"
+  }
+]

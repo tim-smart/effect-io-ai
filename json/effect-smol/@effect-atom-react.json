@@ -1,0 +1,370 @@
+[
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Hooks.ts",
+      "path": "src/Hooks.ts"
+    },
+    "project": "@effect/atom-react",
+    "name": "useAtomInitialValues",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "hooks",
+    "signature": "declare const useAtomInitialValues: (initialValues: Iterable<readonly [Atom.Atom<any>, any]>) => void",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/atom/react/src/Hooks.ts#L61"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Hooks.ts",
+      "path": "src/Hooks.ts"
+    },
+    "project": "@effect/atom-react",
+    "name": "useAtomValue",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "hooks",
+    "signature": "declare const useAtomValue: { <A>(atom: Atom.Atom<A>): A; <A, B>(atom: Atom.Atom<A>, f: (_: A) => B): B; }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/atom/react/src/Hooks.ts#L80"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Hooks.ts",
+      "path": "src/Hooks.ts"
+    },
+    "project": "@effect/atom-react",
+    "name": "useAtomMount",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "hooks",
+    "signature": "declare const useAtomMount: <A>(atom: Atom.Atom<A>) => void",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/atom/react/src/Hooks.ts#L135"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Hooks.ts",
+      "path": "src/Hooks.ts"
+    },
+    "project": "@effect/atom-react",
+    "name": "useAtomSet",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "hooks",
+    "signature": "declare const useAtomSet: <R, W, Mode extends \"value\" | \"promise\" | \"promiseExit\" = never>(atom: Atom.Writable<R, W>, options?: { readonly mode?: ([R] extends [AsyncResult.AsyncResult<any, any>] ? Mode : \"value\") | undefined; }) => \"promise\" extends Mode ? ((value: W) => Promise<AsyncResult.AsyncResult.Success<R>>) : \"promiseExit\" extends Mode ? ((value: W) => Promise<Exit.Exit<AsyncResult.AsyncResult.Success<R>, AsyncResult.AsyncResult.Failure<R>>>) : ((value: W | ((value: R) => W)) => void)",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/atom/react/src/Hooks.ts#L144"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Hooks.ts",
+      "path": "src/Hooks.ts"
+    },
+    "project": "@effect/atom-react",
+    "name": "useAtomRefresh",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "hooks",
+    "signature": "declare const useAtomRefresh: <A>(atom: Atom.Atom<A>) => () => void",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/atom/react/src/Hooks.ts#L170"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Hooks.ts",
+      "path": "src/Hooks.ts"
+    },
+    "project": "@effect/atom-react",
+    "name": "useAtom",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "hooks",
+    "signature": "declare const useAtom: <R, W, const Mode extends \"value\" | \"promise\" | \"promiseExit\" = never>(atom: Atom.Writable<R, W>, options?: { readonly mode?: ([R] extends [AsyncResult.AsyncResult<any, any>] ? Mode : \"value\") | undefined; }) => readonly [value: R, write: \"promise\" extends Mode ? ((value: W) => Promise<AsyncResult.AsyncResult.Success<R>>) : \"promiseExit\" extends Mode ? ((value: W) => Promise<Exit.Exit<AsyncResult.AsyncResult.Success<R>, AsyncResult.AsyncResult.Failure<R>>>) : ((value: W | ((value: R) => W)) => void)]",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/atom/react/src/Hooks.ts#L182"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Hooks.ts",
+      "path": "src/Hooks.ts"
+    },
+    "project": "@effect/atom-react",
+    "name": "useAtomSuspense",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "hooks",
+    "signature": "declare const useAtomSuspense: <A, E, const IncludeFailure extends boolean = false>(atom: Atom.Atom<AsyncResult.AsyncResult<A, E>>, options?: { readonly suspendOnWaiting?: boolean | undefined; readonly includeFailure?: IncludeFailure | undefined; }) => AsyncResult.Success<A, E> | (IncludeFailure extends true ? AsyncResult.Failure<A, E> : never)",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/atom/react/src/Hooks.ts#L249"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Hooks.ts",
+      "path": "src/Hooks.ts"
+    },
+    "project": "@effect/atom-react",
+    "name": "useAtomSubscribe",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "hooks",
+    "signature": "declare const useAtomSubscribe: <A>(atom: Atom.Atom<A>, f: (_: A) => void, options?: { readonly immediate?: boolean; }) => void",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/atom/react/src/Hooks.ts#L268"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Hooks.ts",
+      "path": "src/Hooks.ts"
+    },
+    "project": "@effect/atom-react",
+    "name": "useAtomRef",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "hooks",
+    "signature": "declare const useAtomRef: <A>(ref: AtomRef.ReadonlyRef<A>) => A",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/atom/react/src/Hooks.ts#L284"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Hooks.ts",
+      "path": "src/Hooks.ts"
+    },
+    "project": "@effect/atom-react",
+    "name": "useAtomRefProp",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "hooks",
+    "signature": "declare const useAtomRefProp: <A, K extends keyof A>(ref: AtomRef.AtomRef<A>, prop: K) => AtomRef.AtomRef<A[K]>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/atom/react/src/Hooks.ts#L294"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Hooks.ts",
+      "path": "src/Hooks.ts"
+    },
+    "project": "@effect/atom-react",
+    "name": "useAtomRefPropValue",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "hooks",
+    "signature": "declare const useAtomRefPropValue: <A, K extends keyof A>(ref: AtomRef.AtomRef<A>, prop: K) => A[K]",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/atom/react/src/Hooks.ts#L301"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/atom-react",
+    "name": "\"./Hooks.ts\"",
+    "description": "Re-exports all named exports from the \"./Hooks.ts\" module.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * from \"./Hooks.ts\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/atom/react/src/index.ts#L8"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/atom-react",
+    "name": "\"./RegistryContext.ts\"",
+    "description": "Re-exports all named exports from the \"./RegistryContext.ts\" module.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * from \"./RegistryContext.ts\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/atom/react/src/index.ts#L13"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/atom-react",
+    "name": "\"./ReactHydration.ts\"",
+    "description": "Re-exports all named exports from the \"./ReactHydration.ts\" module.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * from \"./ReactHydration.ts\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/atom/react/src/index.ts#L18"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/atom-react",
+    "name": "\"./ScopedAtom.ts\"",
+    "description": "Re-exports all named exports from the \"./ScopedAtom.ts\" module.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * from \"./ScopedAtom.ts\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/atom/react/src/index.ts#L23"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "ReactHydration.ts",
+      "path": "src/ReactHydration.ts"
+    },
+    "project": "@effect/atom-react",
+    "name": "HydrationBoundary",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "components",
+    "signature": "declare const HydrationBoundary: React.FC<HydrationBoundaryProps>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/atom/react/src/ReactHydration.ts#L22"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "ReactHydration.ts",
+      "path": "src/ReactHydration.ts"
+    },
+    "project": "@effect/atom-react",
+    "name": "HydrationBoundaryProps",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "components",
+    "signature": "export interface HydrationBoundaryProps {\n  state?: Iterable<Hydration.DehydratedAtom>\n  children?: React.ReactNode\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/atom/react/src/ReactHydration.ts#L13"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "RegistryContext.ts",
+      "path": "src/RegistryContext.ts"
+    },
+    "project": "@effect/atom-react",
+    "name": "RegistryContext",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "context",
+    "signature": "declare const RegistryContext: React.Context<AtomRegistry.AtomRegistry>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/atom/react/src/RegistryContext.ts#L24"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "RegistryContext.ts",
+      "path": "src/RegistryContext.ts"
+    },
+    "project": "@effect/atom-react",
+    "name": "scheduleTask",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "context",
+    "signature": "declare const scheduleTask: (f: () => void) => () => void",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/atom/react/src/RegistryContext.ts#L15"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "RegistryContext.ts",
+      "path": "src/RegistryContext.ts"
+    },
+    "project": "@effect/atom-react",
+    "name": "RegistryProvider",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "context",
+    "signature": "declare const RegistryProvider: (options: { readonly children?: React.ReactNode | undefined; readonly initialValues?: Iterable<readonly [Atom.Atom<any>, any]> | undefined; readonly scheduleTask?: ((f: () => void) => () => void) | undefined; readonly timeoutResolution?: number | undefined; readonly defaultIdleTTL?: number | undefined; }) => React.FunctionComponentElement<React.ProviderProps<AtomRegistry.AtomRegistry>>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/atom/react/src/RegistryContext.ts#L33"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "ScopedAtom.ts",
+      "path": "src/ScopedAtom.ts"
+    },
+    "project": "@effect/atom-react",
+    "name": "TypeId",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Type IDs\n\nType identifier for ScopedAtom.",
+    "signature": "declare const TypeId: \"~@effect/atom-react/ScopedAtom\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/atom/react/src/ScopedAtom.ts#L23"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "ScopedAtom.ts",
+      "path": "src/ScopedAtom.ts"
+    },
+    "project": "@effect/atom-react",
+    "name": "make",
+    "deprecated": false,
+    "examples": [
+      "```ts\nimport * as Atom from \"effect/unstable/reactivity/Atom\"\nimport * as React from \"react\"\nimport * as ScopedAtom from \"@effect/atom-react/ScopedAtom\"\nimport { useAtomValue } from \"@effect/atom-react\"\n\nconst User = ScopedAtom.make((name: string) => Atom.make(name))\n\nfunction UserName() {\n  const atom = User.use()\n  const value = useAtomValue(atom)\n  return React.createElement(\"span\", null, value)\n}\n\nexport function App() {\n  return React.createElement(\n    User.Provider,\n    { value: \"Ada\" },\n    React.createElement(UserName)\n  )\n}\n```"
+    ],
+    "since": "1.0.0",
+    "category": "constructors\n\nCreates a ScopedAtom from a factory function.",
+    "signature": "declare const make: <A extends Atom.Atom<any>, Input = never>(f: (() => A) | ((input: Input) => A)) => ScopedAtom<A, Input>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/atom/react/src/ScopedAtom.ts#L89"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "ScopedAtom.ts",
+      "path": "src/ScopedAtom.ts"
+    },
+    "project": "@effect/atom-react",
+    "name": "ScopedAtom",
+    "deprecated": false,
+    "examples": [
+      "```ts\nimport * as Atom from \"effect/unstable/reactivity/Atom\"\nimport * as React from \"react\"\nimport * as ScopedAtom from \"@effect/atom-react/ScopedAtom\"\nimport { useAtomValue } from \"@effect/atom-react\"\n\nconst Counter = ScopedAtom.make(() => Atom.make(0))\n\nfunction View() {\n  const atom = Counter.use()\n  const value = useAtomValue(atom)\n  return React.createElement(\"div\", null, value)\n}\n\nexport function App() {\n  return React.createElement(Counter.Provider, null, React.createElement(View))\n}\n```"
+    ],
+    "since": "1.0.0",
+    "category": "models\n\nScoped Atom interface with a provider-backed instance.",
+    "signature": "export interface ScopedAtom<A extends Atom.Atom<any>, Input = never> {\n  readonly [TypeId]: TypeId\n  use(): A\n  Provider: Input extends never ? React.FC<{ readonly children?: React.ReactNode | undefined }>\n    : React.FC<{ readonly children?: React.ReactNode | undefined; readonly value: Input }>\n  Context: React.Context<A>\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/atom/react/src/ScopedAtom.ts#L51"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "ScopedAtom.ts",
+      "path": "src/ScopedAtom.ts"
+    },
+    "project": "@effect/atom-react",
+    "name": "TypeId",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Type IDs\n\nType identifier for ScopedAtom.",
+    "signature": "type TypeId = \"~@effect/atom-react/ScopedAtom\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/atom/react/src/ScopedAtom.ts#L15"
+  }
+]

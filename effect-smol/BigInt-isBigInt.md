@@ -1,0 +1,26 @@
+Package: `effect`<br />
+Module: `BigInt`<br />
+
+## BigInt.isBigInt
+
+Tests if a value is a `bigint`.
+
+**Example**
+
+```ts
+import { isBigInt } from "effect/BigInt"
+import * as assert from "node:assert"
+
+assert.deepStrictEqual(isBigInt(1n), true)
+assert.deepStrictEqual(isBigInt(1), false)
+```
+
+**Signature**
+
+```ts
+declare const isBigInt: (u: unknown) => u is bigint
+```
+
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigInt.ts#L54)
+
+Since v2.0.0

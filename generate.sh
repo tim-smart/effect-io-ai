@@ -10,6 +10,7 @@ SHORT_SHA=`git rev-parse --short HEAD`
 
 repos=(\
   "effect-ts/effect"\
+  "effect-ts/effect-smol"\
 )
 
 latest_tarball() {
@@ -32,6 +33,7 @@ main_tarball() {
 for repo in ${repos[@]}; do
   IFS='/' read -ra repo_parts <<< "$repo"
   repo_name="${repo_parts[1]}"
+  json_dir=$(if [[ "$repo_name" == "effect" ]]; then echo "json"; else echo "json/$repo_name"; fi)
 
   echo "Generating docs for $repo_name"
 
@@ -49,21 +51,25 @@ for repo in ${repos[@]}; do
   pnpm rm @effect/docgen
   pnpm add -Dw ../vendor/effect-docgen-0.5.2.tgz
   pnpm run build
-  pnpm run docs || pnpm docgen
+  pnpm docgen
 
   rm -rf "../$repo_name"
   mkdir "../$repo_name"
-  mkdir -p "../json"
+  mkdir -p "../$json_dir"
   cp -r packages/*/docs/ai/*.md "../$repo_name" || true
-  cp -r packages/*/docs/*.json "../json" || true
+  cp -r packages/*/docs/*.json "../$json_dir" || true
   cp -r packages/ai/*/docs/ai/*.md "../$repo_name" || true
-  cp -r packages/ai/*/docs/*.json "../json" || true
+  cp -r packages/ai/*/docs/*.json "../$json_dir" || true
+  cp -r packages/atom/*/docs/ai/*.md "../$repo_name" || true
+  cp -r packages/atom/*/docs/*.json "../$json_dir" || true
+  cp -r packages/sql/*/docs/ai/*.md "../$repo_name" || true
+  cp -r packages/sql/*/docs/*.json "../$json_dir" || true
 
   cd ..
-done
 
-rm -f json/_all.json
-jq -s '. | flatten' json/*.json > json/_all.json
+  rm -f "${json_dir}/_all.json"
+  jq -s '. | flatten' ${json_dir}/*.json > ${json_dir}/_all.json
+done
 
 node $indexjs > index.html
 

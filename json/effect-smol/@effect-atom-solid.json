@@ -1,0 +1,214 @@
+[
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Hooks.ts",
+      "path": "src/Hooks.ts"
+    },
+    "project": "@effect/atom-solid",
+    "name": "useAtomInitialValues",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "hooks",
+    "signature": "declare const useAtomInitialValues: (initialValues: Iterable<readonly [Atom.Atom<any>, any]>) => void",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/atom/solid/src/Hooks.ts#L21"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Hooks.ts",
+      "path": "src/Hooks.ts"
+    },
+    "project": "@effect/atom-solid",
+    "name": "useAtomValue",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "hooks",
+    "signature": "declare const useAtomValue: { <A>(atom: Atom.Atom<A>): Accessor<A>; <A, B>(atom: Atom.Atom<A>, f: (_: A) => B): Accessor<B>; }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/atom/solid/src/Hooks.ts#L40"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Hooks.ts",
+      "path": "src/Hooks.ts"
+    },
+    "project": "@effect/atom-solid",
+    "name": "useAtomMount",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "hooks",
+    "signature": "declare const useAtomMount: <A>(atom: Atom.Atom<A>) => void",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/atom/solid/src/Hooks.ts#L97"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Hooks.ts",
+      "path": "src/Hooks.ts"
+    },
+    "project": "@effect/atom-solid",
+    "name": "useAtomSet",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "hooks",
+    "signature": "declare const useAtomSet: <R, W, Mode extends \"value\" | \"promise\" | \"promiseExit\" = never>(atom: Atom.Writable<R, W>, options?: { readonly mode?: ([R] extends [AsyncResult.AsyncResult<any, any>] ? Mode : \"value\") | undefined; }) => \"promise\" extends Mode ? ((value: W) => Promise<AsyncResult.AsyncResult.Success<R>>) : \"promiseExit\" extends Mode ? ((value: W) => Promise<Exit.Exit<AsyncResult.AsyncResult.Success<R>, AsyncResult.AsyncResult.Failure<R>>>) : ((value: W | ((value: R) => W)) => void)",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/atom/solid/src/Hooks.ts#L106"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Hooks.ts",
+      "path": "src/Hooks.ts"
+    },
+    "project": "@effect/atom-solid",
+    "name": "useAtomRefresh",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "hooks",
+    "signature": "declare const useAtomRefresh: <A>(atom: Atom.Atom<A>) => () => void",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/atom/solid/src/Hooks.ts#L132"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Hooks.ts",
+      "path": "src/Hooks.ts"
+    },
+    "project": "@effect/atom-solid",
+    "name": "useAtom",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "hooks",
+    "signature": "declare const useAtom: <R, W, const Mode extends \"value\" | \"promise\" | \"promiseExit\" = never>(atom: Atom.Writable<R, W>, options?: { readonly mode?: ([R] extends [AsyncResult.AsyncResult<any, any>] ? Mode : \"value\") | undefined; }) => readonly [value: Accessor<R>, write: \"promise\" extends Mode ? ((value: W) => Promise<AsyncResult.AsyncResult.Success<R>>) : \"promiseExit\" extends Mode ? ((value: W) => Promise<Exit.Exit<AsyncResult.AsyncResult.Success<R>, AsyncResult.AsyncResult.Failure<R>>>) : ((value: W | ((value: R) => W)) => void)]",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/atom/solid/src/Hooks.ts#L142"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Hooks.ts",
+      "path": "src/Hooks.ts"
+    },
+    "project": "@effect/atom-solid",
+    "name": "useAtomSubscribe",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "hooks",
+    "signature": "declare const useAtomSubscribe: <A>(atom: Atom.Atom<A>, f: (_: A) => void, options?: { readonly immediate?: boolean; }) => void",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/atom/solid/src/Hooks.ts#L168"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Hooks.ts",
+      "path": "src/Hooks.ts"
+    },
+    "project": "@effect/atom-solid",
+    "name": "useAtomRef",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "hooks",
+    "signature": "declare const useAtomRef: <A>(ref: AtomRef.ReadonlyRef<A>) => Accessor<A>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/atom/solid/src/Hooks.ts#L181"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Hooks.ts",
+      "path": "src/Hooks.ts"
+    },
+    "project": "@effect/atom-solid",
+    "name": "useAtomRefProp",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "hooks",
+    "signature": "declare const useAtomRefProp: <A, K extends keyof A>(ref: AtomRef.AtomRef<A>, prop: K) => AtomRef.AtomRef<A[K]>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/atom/solid/src/Hooks.ts#L191"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Hooks.ts",
+      "path": "src/Hooks.ts"
+    },
+    "project": "@effect/atom-solid",
+    "name": "useAtomRefPropValue",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "hooks",
+    "signature": "declare const useAtomRefPropValue: <A, K extends keyof A>(ref: AtomRef.AtomRef<A>, prop: K) => Accessor<A[K]>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/atom/solid/src/Hooks.ts#L198"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/atom-solid",
+    "name": "\"./Hooks.ts\"",
+    "description": "Re-exports all named exports from the \"./Hooks.ts\" module.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * from \"./Hooks.ts\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/atom/solid/src/index.ts#L8"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/atom-solid",
+    "name": "\"./RegistryContext.ts\"",
+    "description": "Re-exports all named exports from the \"./RegistryContext.ts\" module.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * from \"./RegistryContext.ts\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/atom/solid/src/index.ts#L13"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "RegistryContext.ts",
+      "path": "src/RegistryContext.ts"
+    },
+    "project": "@effect/atom-solid",
+    "name": "RegistryContext",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "context",
+    "signature": "declare const RegistryContext: Context<AtomRegistry.AtomRegistry>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/atom/solid/src/RegistryContext.ts#L13"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "RegistryContext.ts",
+      "path": "src/RegistryContext.ts"
+    },
+    "project": "@effect/atom-solid",
+    "name": "RegistryProvider",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "context",
+    "signature": "declare const RegistryProvider: (options: { readonly children?: JSX.Element | undefined; readonly initialValues?: Iterable<readonly [Atom.Atom<any>, any]> | undefined; readonly scheduleTask?: ((f: () => void) => () => void) | undefined; readonly timeoutResolution?: number | undefined; readonly defaultIdleTTL?: number | undefined; }) => JSX.Element",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/atom/solid/src/RegistryContext.ts#L19"
+  }
+]

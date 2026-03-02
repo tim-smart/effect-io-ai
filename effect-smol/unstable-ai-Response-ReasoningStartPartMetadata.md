@@ -1,0 +1,17 @@
+Package: `effect`<br />
+Module: `Response`<br />
+
+## Response.ReasoningStartPartMetadata
+
+Represents provider-specific metadata that can be associated with a
+`ReasoningStartPart` through module augmentation.
+
+**Signature**
+
+```ts
+export interface ReasoningStartPartMetadata extends ProviderMetadata {}
+```
+
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Response.ts#L939)
+
+Since v1.0.0

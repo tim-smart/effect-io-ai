@@ -1,0 +1,43 @@
+Package: `effect`<br />
+Module: `LanguageModel`<br />
+
+## LanguageModel.ExtractError
+
+Utility type that extracts the error type from LanguageModel options.
+
+Automatically infers the possible error types based on toolkit configuration
+and tool call resolution settings.
+
+**Signature**
+
+```ts
+type ExtractError<Options> = Options extends {
+  readonly toolkit: Toolkit.WithHandler<infer _Tools>
+  readonly disableToolCallResolution: true
+} ? AiError.AiError
+  : Options extends {
+    readonly toolkit: Effect.Yieldable<
+      Toolkit.Toolkit<infer _Tools>,
+      Toolkit.WithHandler<infer _Tools>,
+      infer _E,
+      infer _R
+    >
+    readonly disableToolCallResolution: true
+  } ? AiError.AiError | _E
+  : Options extends {
+    readonly toolkit: Toolkit.WithHandler<infer _Tools>
+  } ? AiError.AiError | Tool.HandlerError<_Tools[keyof _Tools]>
+  : Options extends {
+    readonly toolkit: Effect.Yieldable<
+      Toolkit.Toolkit<infer _Tools>,
+      Toolkit.WithHandler<infer _Tools>,
+      infer _E,
+      infer _R
+    >
+  } ? AiError.AiError | Tool.HandlerError<_Tools[keyof _Tools]> | _E
+  : AiError.AiError
+```
+
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/LanguageModel.ts#L495)
+
+Since v4.0.0

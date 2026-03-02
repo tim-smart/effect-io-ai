@@ -1,0 +1,46 @@
+Package: `effect`<br />
+Module: `EventLog`<br />
+
+## EventLog.Handlers
+
+Represents a handled `EventGroup`.
+
+**Signature**
+
+```ts
+export interface Handlers<
+  R,
+  Events extends Event.Any = never
+> extends Pipeable {
+  readonly [HandlersTypeId]: {
+    _Events: Covariant<Events>
+  }
+  readonly group: EventGroup.AnyWithProps
+  readonly handlers: Record.ReadonlyRecord<string, Handlers.Item<R>>
+  readonly services: ServiceMap.ServiceMap<R>
+
+  /**
+   * Add the implementation for an `Event` to a `Handlers` group.
+   */
+  handle<Tag extends Event.Tag<Events>, R1>(
+    name: Tag,
+    handler: (
+      options: {
+        readonly payload: Event.PayloadWithTag<Events, Tag>
+        readonly entry: Entry
+        readonly conflicts: ReadonlyArray<{
+          readonly entry: Entry
+          readonly payload: Event.PayloadWithTag<Events, Tag>
+        }>
+      }
+    ) => Effect.Effect<Event.SuccessWithTag<Events, Tag>, Event.ErrorWithTag<Events, Tag>, R1>
+  ): Handlers<
+    R | R1,
+    Event.ExcludeTag<Events, Tag>
+  >
+}
+```
+
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventLog.ts#L94)
+
+Since v4.0.0

@@ -1,0 +1,203 @@
+[
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/atom-vue",
+    "name": "registryKey",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "registry",
+    "signature": "declare const registryKey: InjectionKey<AtomRegistry.AtomRegistry>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/atom/vue/src/index.ts#L53"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/atom-vue",
+    "name": "defaultRegistry",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "registry",
+    "signature": "declare const defaultRegistry: AtomRegistry.AtomRegistry",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/atom/vue/src/index.ts#L59"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/atom-vue",
+    "name": "injectRegistry",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "registry",
+    "signature": "declare const injectRegistry: () => AtomRegistry.AtomRegistry",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/atom/vue/src/index.ts#L65"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/atom-vue",
+    "name": "useAtom",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "composables",
+    "signature": "declare const useAtom: <R, W, Mode extends \"value\" | \"promise\" | \"promiseExit\" = never>(atom: () => Atom.Writable<R, W>, options?: { readonly mode?: ([R] extends [AsyncResult.AsyncResult<any, any>] ? Mode : \"value\") | undefined; }) => readonly [Readonly<Ref<R>>, write: \"promise\" extends Mode ? ((value: W) => Promise<AsyncResult.AsyncResult.Success<R>>) : \"promiseExit\" extends Mode ? ((value: W) => Promise<Exit.Exit<AsyncResult.AsyncResult.Success<R>, AsyncResult.AsyncResult.Failure<R>>>) : ((value: W | ((value: R) => W)) => void)]",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/atom/vue/src/index.ts#L85"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/atom-vue",
+    "name": "useAtomValue",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "composables",
+    "signature": "declare const useAtomValue: <A>(atom: () => Atom.Atom<A>) => Readonly<Ref<A>>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/atom/vue/src/index.ts#L108"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/atom-vue",
+    "name": "useAtomSet",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "composables",
+    "signature": "declare const useAtomSet: <R, W, Mode extends \"value\" | \"promise\" | \"promiseExit\" = never>(atom: () => Atom.Writable<R, W>, options?: { readonly mode?: ([R] extends [AsyncResult.AsyncResult<any, any>] ? Mode : \"value\") | undefined; }) => \"promise\" extends Mode ? ((value: W, options?: { readonly signal?: AbortSignal | undefined; } | undefined) => Promise<AsyncResult.AsyncResult.Success<R>>) : \"promiseExit\" extends Mode ? ((value: W, options?: { readonly signal?: AbortSignal | undefined; } | undefined) => Promise<Exit.Exit<AsyncResult.AsyncResult.Success<R>, AsyncResult.AsyncResult.Failure<R>>>) : ((value: W | ((value: R) => W)) => void)",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/atom/vue/src/index.ts#L162"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/atom-vue",
+    "name": "useAtomRef",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "composables",
+    "signature": "declare const useAtomRef: <A>(atomRef: () => AtomRef.ReadonlyRef<A>) => Readonly<Ref<A>>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/atom/vue/src/index.ts#L201"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/atom-vue",
+    "name": "AtomRegistry",
+    "description": "Re-exports all named exports from the \"effect/unstable/reactivity/AtomRegistry\" module as `AtomRegistry`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "modules",
+    "signature": "export * as AtomRegistry from \"effect/unstable/reactivity/AtomRegistry\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/atom/vue/src/index.ts#L17"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/atom-vue",
+    "name": "AsyncResult",
+    "description": "Re-exports all named exports from the \"effect/unstable/reactivity/AsyncResult\" module as `AsyncResult`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "modules",
+    "signature": "export * as AsyncResult from \"effect/unstable/reactivity/AsyncResult\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/atom/vue/src/index.ts#L23"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/atom-vue",
+    "name": "Atom",
+    "description": "Re-exports all named exports from the \"effect/unstable/reactivity/Atom\" module as `Atom`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "modules",
+    "signature": "export * as Atom from \"effect/unstable/reactivity/Atom\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/atom/vue/src/index.ts#L29"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/atom-vue",
+    "name": "AtomRef",
+    "description": "Re-exports all named exports from the \"effect/unstable/reactivity/AtomRef\" module as `AtomRef`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "modules",
+    "signature": "export * as AtomRef from \"effect/unstable/reactivity/AtomRef\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/atom/vue/src/index.ts#L35"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/atom-vue",
+    "name": "AtomHttpApi",
+    "description": "Re-exports all named exports from the \"effect/unstable/reactivity/AtomHttpApi\" module as `AtomHttpApi`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "re-exports",
+    "signature": "export * as AtomHttpApi from \"effect/unstable/reactivity/AtomHttpApi\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/atom/vue/src/index.ts#L41"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/atom-vue",
+    "name": "AtomRpc",
+    "description": "Re-exports all named exports from the \"effect/unstable/reactivity/AtomRpc\" module as `AtomRpc`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "modules",
+    "signature": "export * as AtomRpc from \"effect/unstable/reactivity/AtomRpc\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/atom/vue/src/index.ts#L47"
+  }
+]

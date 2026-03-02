@@ -1,0 +1,595 @@
+[
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/vitest",
+    "name": "addEqualityTesters",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "declare const addEqualityTesters: () => void",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/vitest/src/index.ts#L164"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/vitest",
+    "name": "effect",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "declare const effect: Vitest.Tester<Scope.Scope>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/vitest/src/index.ts#L169"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/vitest",
+    "name": "live",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "declare const live: Vitest.Tester<Scope.Scope>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/vitest/src/index.ts#L174"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/vitest",
+    "name": "layer",
+    "description": "Share a `Layer` between multiple tests, optionally wrapping\nthe tests in a `describe` block if a name is provided.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0\n\n```ts\nimport { expect, layer } from \"@effect/vitest\"\nimport { Effect, Layer, ServiceMap } from \"effect\"\n\nclass Foo extends ServiceMap.Service(\"Foo\")<Foo, \"foo\">() {\n  static Live = Layer.succeed(Foo, \"foo\")\n}\n\nclass Bar extends ServiceMap.Service(\"Bar\")<Bar, \"bar\">() {\n  static Live = Layer.effect(\n    Bar,\n    Effect.map(Foo, () => \"bar\" as const)\n  )\n}\n\nlayer(Foo.Live)(\"layer\", (it) => {\n  it.effect(\"adds context\", () =>\n    Effect.gen(function*() {\n      const foo = yield* Foo\n      expect(foo).toEqual(\"foo\")\n    }))\n\n  it.layer(Bar.Live)(\"nested\", (it) => {\n    it.effect(\"adds context\", () =>\n      Effect.gen(function*() {\n        const foo = yield* Foo\n        const bar = yield* Bar\n        expect(foo).toEqual(\"foo\")\n        expect(bar).toEqual(\"bar\")\n      }))\n  })\n})\n```",
+    "category": null,
+    "signature": "declare const layer: <R, E>(layer_: Layer.Layer<R, E>, options?: { readonly memoMap?: Layer.MemoMap; readonly timeout?: Duration.Input; readonly excludeTestServices?: boolean; }) => { (f: (it: Vitest.MethodsNonLive<R>) => void): void; (name: string, f: (it: Vitest.MethodsNonLive<R>) => void): void; }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/vitest/src/index.ts#L216"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/vitest",
+    "name": "flakyTest",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "declare const flakyTest: <A, E, R>(self: Effect.Effect<A, E, R | Scope.Scope>, timeout?: Duration.Input) => Effect.Effect<A, never, R>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/vitest/src/index.ts#L231"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/vitest",
+    "name": "prop",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "declare const prop: <const Arbs extends Vitest.Arbitraries>(name: string, arbitraries: Arbs, self: (properties: { [K in keyof Arbs]: Arbs[K] extends FC.Arbitrary<infer T> ? T : Arbs[K] extends Schema.Schema<infer T> ? T : never; }, ctx: V.TestContext) => void, timeout?: number | (V.TestOptions & { fastCheck?: FC.Parameters<{ [K in keyof Arbs]: Arbs[K] extends FC.Arbitrary<infer T> ? T : Arbs[K] extends Schema.Schema<infer T> ? T : never; }>; })) => void",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/vitest/src/index.ts#L239"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/vitest",
+    "name": "it",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "declare const it: Vitest.Methods<never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/vitest/src/index.ts#L251"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/vitest",
+    "name": "makeMethods",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "declare const makeMethods: (it: V.TestAPI) => Vitest.Methods",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/vitest/src/index.ts#L256"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/vitest",
+    "name": "describeWrapped",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "declare const describeWrapped: (name: string, f: (it: Vitest.Methods) => void) => V.SuiteCollector",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/vitest/src/index.ts#L261"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/vitest",
+    "name": "API",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "type API = V.TestAPI<{}>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/vitest/src/index.ts#L21"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/vitest",
+    "name": "\"vitest\"",
+    "description": "Re-exports all named exports from the \"vitest\" module.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * from \"vitest\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/vitest/src/index.ts#L16"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/vitest",
+    "name": "Vitest.TestFunction",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export interface TestFunction<A, E, R, TestArgs extends Array<any>> {\n    (...args: TestArgs): Effect.Effect<A, E, R>\n  }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/vitest/src/index.ts#L30"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/vitest",
+    "name": "Vitest.Test",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export interface Test<R> {\n    <A, E>(\n      name: string,\n      self: TestFunction<A, E, R, [V.TestContext]>,\n      timeout?: number | V.TestOptions\n    ): void\n  }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/vitest/src/index.ts#L37"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/vitest",
+    "name": "Vitest.Tester",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export interface Tester<R> extends Vitest.Test<R> {\n    skip: Vitest.Test<R>\n    skipIf: (condition: unknown) => Vitest.Test<R>\n    runIf: (condition: unknown) => Vitest.Test<R>\n    only: Vitest.Test<R>\n    each: <T>(\n      cases: ReadonlyArray<T>\n    ) => <A, E>(name: string, self: TestFunction<A, E, R, Array<T>>, timeout?: number | V.TestOptions) => void\n    fails: Vitest.Test<R>\n\n    /**\n     * @since 1.0.0\n     */\n    prop: <const Arbs extends Arbitraries, A, E>(\n      name: string,\n      arbitraries: Arbs,\n      self: TestFunction<\n        A,\n        E,\n        R,\n        [\n          {\n            [K in keyof Arbs]: Arbs[K] extends FC.Arbitrary<infer T> ? T\n              : Arbs[K] extends Schema.Schema<infer T> ? T\n              : never\n          },\n          V.TestContext\n        ]\n      >,\n      timeout?:\n        | number\n        | V.TestOptions & {\n          fastCheck?: FC.Parameters<\n            {\n              [K in keyof Arbs]: Arbs[K] extends FC.Arbitrary<infer T> ? T : Arbs[K] extends Schema.Schema<infer T> ? T\n              : never\n            }\n          >\n        }\n    ) => void\n  }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/vitest/src/index.ts#L55"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/vitest",
+    "name": "Vitest.MethodsNonLive",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export interface MethodsNonLive<R = never> extends API {\n    readonly effect: Vitest.Tester<R | Scope.Scope>\n    readonly flakyTest: <A, E, R2>(\n      self: Effect.Effect<A, E, R2 | Scope.Scope>,\n      timeout?: Duration.Input\n    ) => Effect.Effect<A, never, R2>\n    readonly layer: <R2, E>(layer: Layer.Layer<R2, E, R>, options?: {\n      readonly timeout?: Duration.Input\n    }) => {\n      (f: (it: Vitest.MethodsNonLive<R | R2>) => void): void\n      (\n        name: string,\n        f: (it: Vitest.MethodsNonLive<R | R2>) => void\n      ): void\n    }\n\n    /**\n     * @since 1.0.0\n     */\n    readonly prop: <const Arbs extends Arbitraries>(\n      name: string,\n      arbitraries: Arbs,\n      self: (\n        properties: {\n          [K in keyof Arbs]: Arbs[K] extends FC.Arbitrary<infer T> ? T : Arbs[K] extends Schema.Schema<infer T> ? T\n          : never\n        },\n        ctx: V.TestContext\n      ) => void,\n      timeout?:\n        | number\n        | V.TestOptions & {\n          fastCheck?: FC.Parameters<\n            {\n              [K in keyof Arbs]: Arbs[K] extends FC.Arbitrary<infer T> ? T : Arbs[K] extends Schema.Schema<infer T> ? T\n              : never\n            }\n          >\n        }\n    ) => void\n  }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/vitest/src/index.ts#L100"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/vitest",
+    "name": "Vitest.Methods",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export interface Methods<R = never> extends MethodsNonLive<R> {\n    readonly live: Vitest.Tester<Scope.Scope | R>\n    readonly layer: <R2, E>(layer: Layer.Layer<R2, E, R>, options?: {\n      readonly memoMap?: Layer.MemoMap\n      readonly timeout?: Duration.Input\n      readonly excludeTestServices?: boolean\n    }) => {\n      (f: (it: Vitest.MethodsNonLive<R | R2>) => void): void\n      (\n        name: string,\n        f: (it: Vitest.MethodsNonLive<R | R2>) => void\n      ): void\n    }\n  }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/vitest/src/index.ts#L145"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/vitest",
+    "name": "Vitest.Arbitraries",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "type Arbitraries = | Array<Schema.Schema<any> | FC.Arbitrary<any>>\n    | { [K in string]: Schema.Schema<any> | FC.Arbitrary<any> }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/vitest/src/index.ts#L48"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "utils.ts",
+      "path": "src/utils.ts"
+    },
+    "project": "@effect/vitest",
+    "name": "fail",
+    "description": "Throws an `AssertionError` with the provided error message.",
+    "deprecated": false,
+    "examples": [],
+    "since": "4.0.0",
+    "category": null,
+    "signature": "declare const fail: (message: string) => void",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/vitest/src/utils.ts#L22"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "utils.ts",
+      "path": "src/utils.ts"
+    },
+    "project": "@effect/vitest",
+    "name": "deepStrictEqual",
+    "description": "Asserts that `actual` is equal to `expected` using the `Equal.equals` trait.",
+    "deprecated": false,
+    "examples": [],
+    "since": "4.0.0",
+    "category": null,
+    "signature": "declare const deepStrictEqual: <A>(actual: A, expected: A, message?: string, ..._: Array<never>) => void",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/vitest/src/utils.ts#L31"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "utils.ts",
+      "path": "src/utils.ts"
+    },
+    "project": "@effect/vitest",
+    "name": "notDeepStrictEqual",
+    "description": "Asserts that `actual` is not equal to `expected` using the `Equal.equals` trait.",
+    "deprecated": false,
+    "examples": [],
+    "since": "4.0.0",
+    "category": null,
+    "signature": "declare const notDeepStrictEqual: <A>(actual: A, expected: A, message?: string, ..._: Array<never>) => void",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/vitest/src/utils.ts#L40"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "utils.ts",
+      "path": "src/utils.ts"
+    },
+    "project": "@effect/vitest",
+    "name": "strictEqual",
+    "description": "Asserts that `actual` is equal to `expected` using the `Equal.equals` trait.",
+    "deprecated": false,
+    "examples": [],
+    "since": "4.0.0",
+    "category": null,
+    "signature": "declare const strictEqual: <A>(actual: A, expected: A, message?: string, ..._: Array<never>) => void",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/vitest/src/utils.ts#L49"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "utils.ts",
+      "path": "src/utils.ts"
+    },
+    "project": "@effect/vitest",
+    "name": "assertEquals",
+    "description": "Asserts that `actual` is equal to `expected` using the `Equal.equals` trait.",
+    "deprecated": false,
+    "examples": [],
+    "since": "4.0.0",
+    "category": null,
+    "signature": "declare const assertEquals: <A>(actual: A, expected: A, message?: string, ..._: Array<never>) => void",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/vitest/src/utils.ts#L58"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "utils.ts",
+      "path": "src/utils.ts"
+    },
+    "project": "@effect/vitest",
+    "name": "doesNotThrow",
+    "description": "Asserts that `thunk` does not throw an error.",
+    "deprecated": false,
+    "examples": [],
+    "since": "4.0.0",
+    "category": null,
+    "signature": "declare const doesNotThrow: (thunk: () => void, message?: string, ..._: Array<never>) => void",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/vitest/src/utils.ts#L70"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "utils.ts",
+      "path": "src/utils.ts"
+    },
+    "project": "@effect/vitest",
+    "name": "assertInstanceOf",
+    "description": "Asserts that `value` is an instance of `constructor`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "4.0.0",
+    "category": null,
+    "signature": "declare const assertInstanceOf: <C extends abstract new (...args: any) => any>(value: unknown, constructor: C, message?: string, ..._: Array<never>) => asserts value is InstanceType<C>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/vitest/src/utils.ts#L83"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "utils.ts",
+      "path": "src/utils.ts"
+    },
+    "project": "@effect/vitest",
+    "name": "assertTrue",
+    "description": "Asserts that `self` is `true`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "4.0.0",
+    "category": null,
+    "signature": "declare const assertTrue: (self: unknown, message?: string, ..._: Array<never>) => asserts self",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/vitest/src/utils.ts#L97"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "utils.ts",
+      "path": "src/utils.ts"
+    },
+    "project": "@effect/vitest",
+    "name": "assertFalse",
+    "description": "Asserts that `self` is `false`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "4.0.0",
+    "category": null,
+    "signature": "declare const assertFalse: (self: boolean, message?: string, ..._: Array<never>) => void",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/vitest/src/utils.ts#L106"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "utils.ts",
+      "path": "src/utils.ts"
+    },
+    "project": "@effect/vitest",
+    "name": "assertInclude",
+    "description": "Asserts that `actual` includes `expected`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "4.0.0",
+    "category": null,
+    "signature": "declare const assertInclude: (actual: string | undefined, expected: string, ..._: Array<never>) => void",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/vitest/src/utils.ts#L115"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "utils.ts",
+      "path": "src/utils.ts"
+    },
+    "project": "@effect/vitest",
+    "name": "assertMatch",
+    "description": "Asserts that `actual` matches `regExp`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "4.0.0",
+    "category": null,
+    "signature": "declare const assertMatch: (actual: string, regExp: RegExp, ..._: Array<never>) => void",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/vitest/src/utils.ts#L128"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "utils.ts",
+      "path": "src/utils.ts"
+    },
+    "project": "@effect/vitest",
+    "name": "throws",
+    "description": "Asserts that `thunk` throws an error.",
+    "deprecated": false,
+    "examples": [],
+    "since": "4.0.0",
+    "category": null,
+    "signature": "declare const throws: (thunk: () => void, error?: Error | ((u: unknown) => undefined), ..._: Array<never>) => void",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/vitest/src/utils.ts#L139"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "utils.ts",
+      "path": "src/utils.ts"
+    },
+    "project": "@effect/vitest",
+    "name": "throwsAsync",
+    "description": "Asserts that `thunk` throws an error.",
+    "deprecated": false,
+    "examples": [],
+    "since": "4.0.0",
+    "category": null,
+    "signature": "declare const throwsAsync: (thunk: () => Promise<void>, error?: Error | ((u: unknown) => undefined), ..._: Array<never>) => Promise<void>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/vitest/src/utils.ts#L161"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "utils.ts",
+      "path": "src/utils.ts"
+    },
+    "project": "@effect/vitest",
+    "name": "assertNone",
+    "description": "Asserts that `option` is `None`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "4.0.0",
+    "category": null,
+    "signature": "declare const assertNone: <A>(option: Option.Option<A>, ..._: Array<never>) => asserts option is Option.None<never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/vitest/src/utils.ts#L189"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "utils.ts",
+      "path": "src/utils.ts"
+    },
+    "project": "@effect/vitest",
+    "name": "assertDefined",
+    "description": "Asserts that `a` is not `undefined`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "4.0.0",
+    "category": null,
+    "signature": "declare const assertDefined: <A>(a: A | undefined, ..._: Array<never>) => asserts a is Exclude<A, undefined>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/vitest/src/utils.ts#L198"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "utils.ts",
+      "path": "src/utils.ts"
+    },
+    "project": "@effect/vitest",
+    "name": "assertUndefined",
+    "description": "Asserts that `a` is `undefined`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "4.0.0",
+    "category": null,
+    "signature": "declare const assertUndefined: <A>(a: A | undefined, ..._: Array<never>) => asserts a is undefined",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/vitest/src/utils.ts#L212"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "utils.ts",
+      "path": "src/utils.ts"
+    },
+    "project": "@effect/vitest",
+    "name": "assertSome",
+    "description": "Asserts that `option` is `Some`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "4.0.0",
+    "category": null,
+    "signature": "declare const assertSome: <A>(option: Option.Option<A>, expected: A, ..._: Array<never>) => asserts option is Option.Some<A>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/vitest/src/utils.ts#L226"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "utils.ts",
+      "path": "src/utils.ts"
+    },
+    "project": "@effect/vitest",
+    "name": "assertSuccess",
+    "description": "Asserts that `result` is `Success`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "4.0.0",
+    "category": null,
+    "signature": "declare const assertSuccess: <A, E>(result: Result.Result<A, E>, expected: A, ..._: Array<never>) => asserts result is Result.Success<A, never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/vitest/src/utils.ts#L243"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "utils.ts",
+      "path": "src/utils.ts"
+    },
+    "project": "@effect/vitest",
+    "name": "assertFailure",
+    "description": "Asserts that `result` is `Failure`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "4.0.0",
+    "category": null,
+    "signature": "declare const assertFailure: <A, E>(result: Result.Result<A, E>, expected: E, ..._: Array<never>) => asserts result is Result.Failure<never, E>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/vitest/src/utils.ts#L256"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "utils.ts",
+      "path": "src/utils.ts"
+    },
+    "project": "@effect/vitest",
+    "name": "assertExitFailure",
+    "description": "Asserts that `exit` is a failure.",
+    "deprecated": false,
+    "examples": [],
+    "since": "4.0.0",
+    "category": null,
+    "signature": "declare const assertExitFailure: <A, E>(exit: Exit.Exit<A, E>, expected: Cause.Cause<E>, ..._: Array<never>) => asserts exit is Exit.Failure<never, E>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/vitest/src/utils.ts#L273"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "utils.ts",
+      "path": "src/utils.ts"
+    },
+    "project": "@effect/vitest",
+    "name": "assertExitSuccess",
+    "description": "Asserts that `exit` is a success.",
+    "deprecated": false,
+    "examples": [],
+    "since": "4.0.0",
+    "category": null,
+    "signature": "declare const assertExitSuccess: <A, E>(exit: Exit.Exit<A, E>, expected: A, ..._: Array<never>) => asserts exit is Exit.Success<A, never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/vitest/src/utils.ts#L286"
+  }
+]
