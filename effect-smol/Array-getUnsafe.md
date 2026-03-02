@@ -27,6 +27,6 @@ console.log(Array.getUnsafe([1, 2, 3], 1)) // 2
 declare const getUnsafe: { (index: number): <A>(self: ReadonlyArray<A>) => A; <A>(self: ReadonlyArray<A>, index: number): A; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L921)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L920)
 
 Since v2.0.0

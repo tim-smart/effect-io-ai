@@ -24,6 +24,6 @@ console.log(Array.lastNonEmpty([1, 2, 3, 4])) // 4
 declare const lastNonEmpty: <A>(self: NonEmptyReadonlyArray<A>) => A
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L1064)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L1063)
 
 Since v2.0.0

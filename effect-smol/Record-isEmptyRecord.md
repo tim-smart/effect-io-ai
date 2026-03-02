@@ -21,6 +21,6 @@ assert.deepStrictEqual(Record.isEmptyRecord({ a: 3 }), false)
 declare const isEmptyRecord: <K extends string, A>(self: Record<K, A>) => self is Record<K, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Record.ts#L172)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Record.ts#L171)
 
 Since v2.0.0

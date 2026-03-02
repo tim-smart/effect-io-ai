@@ -17,9 +17,9 @@ console.log(Filter.string(42)) // fail
 **Signature**
 
 ```ts
-declare const string: Filter<unknown, string, unknown, []>
+declare const string: Filter<unknown, string, unknown>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Filter.ts#L235)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Filter.ts#L234)
 
 Since v4.0.0

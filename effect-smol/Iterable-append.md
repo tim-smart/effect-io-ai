@@ -28,6 +28,6 @@ console.log(Array.from(result)) // [1, 2, 3, 4]
 declare const append: { <B>(last: B): <A>(self: Iterable<A>) => Iterable<A | B>; <A, B>(self: Iterable<A>, last: B): Iterable<A | B>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Iterable.ts#L257)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Iterable.ts#L256)
 
 Since v2.0.0

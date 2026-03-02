@@ -25,6 +25,6 @@ console.log(Array.isReadonlyArrayEmpty([1, 2, 3])) // false
 declare const isReadonlyArrayEmpty: <A>(self: ReadonlyArray<A>) => self is readonly []
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L802)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L801)
 
 Since v2.0.0

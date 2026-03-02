@@ -24,6 +24,6 @@ assert.deepStrictEqual(Record.collect(x, (key, n) => [key, n]), [["a", 1], [
 declare const collect: { <K extends string, A, B>(f: (key: K, a: A) => B): (self: ReadonlyRecord<K, A>) => Array<B>; <K extends string, A, B>(self: ReadonlyRecord<K, A>, f: (key: K, a: A) => B): Array<B>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Record.ts#L308)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Record.ts#L307)
 
 Since v2.0.0

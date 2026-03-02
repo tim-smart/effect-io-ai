@@ -43,6 +43,6 @@ console.log(Array.from(collatz)) // [7, 22, 11, 34, 17, 52, 26, 13, 40, 20, 10, 
 declare const unfold: <B, A>(b: B, f: (b: B) => readonly [A, B] | undefined) => Iterable<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Iterable.ts#L1983)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Iterable.ts#L1982)
 
 Since v2.0.0

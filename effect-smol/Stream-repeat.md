@@ -29,6 +29,6 @@ Effect.runPromise(program)
 declare const repeat: { <B, E2, R2>(schedule: Schedule.Schedule<B, void, E2, R2> | (($: <SO, SE, SR>(_: Schedule.Schedule<SO, void, SE, SR>) => Schedule.Schedule<SO, void, SE, SR>) => Schedule.Schedule<B, void, E2, R2>)): <A, E, R>(self: Stream<A, E, R>) => Stream<A, E | E2, R2 | R>; <A, E, R, B, E2, R2>(self: Stream<A, E, R>, schedule: Schedule.Schedule<B, void, E2, R2> | (($: <SO, SE, SR>(_: Schedule.Schedule<SO, void, SE, SR>) => Schedule.Schedule<SO, void, SE, SR>) => Schedule.Schedule<B, void, E2, R2>)): Stream<A, E | E2, R | R2>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L2495)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L2504)
 
 Since v2.0.0

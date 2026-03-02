@@ -20,6 +20,6 @@ assert.deepStrictEqual(Record.values({ a: 1, b: 2, c: 3 }), [1, 2, 3])
 declare const values: <K extends string, A>(self: ReadonlyRecord<K, A>) => Array<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Record.ts#L953)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Record.ts#L952)
 
 Since v2.0.0

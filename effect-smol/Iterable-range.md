@@ -22,6 +22,6 @@ assert.deepStrictEqual(Array.from(range(1, 3)), [1, 2, 3])
 declare const range: (start: number, end?: number) => Iterable<number>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Iterable.ts#L112)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Iterable.ts#L111)
 
 Since v2.0.0

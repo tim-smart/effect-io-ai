@@ -29,6 +29,6 @@ console.log(Array.sortWith(["aaa", "b", "cc"], (s) => s.length, Order.Number))
 declare const sortWith: { <S extends Iterable<any>, B>(f: (a: ReadonlyArray.Infer<S>) => B, order: Order.Order<B>): (self: S) => ReadonlyArray.With<S, ReadonlyArray.Infer<S>>; <A, B>(self: NonEmptyReadonlyArray<A>, f: (a: A) => B, O: Order.Order<B>): NonEmptyArray<A>; <A, B>(self: Iterable<A>, f: (a: A) => B, order: Order.Order<B>): Array<A>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L1863)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L1862)
 
 Since v2.0.0

@@ -28,6 +28,6 @@ console.log(Array.insertAt(["a", "b", "c", "e"], 3, "d")) // ["a", "b", "c", "d"
 declare const insertAt: { <B>(i: number, b: B): <A>(self: Iterable<A>) => NonEmptyArray<A | B> | undefined; <A, B>(self: Iterable<A>, i: number, b: B): NonEmptyArray<A | B> | undefined; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L1663)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L1662)
 
 Since v2.0.0

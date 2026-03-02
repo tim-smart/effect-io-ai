@@ -25,6 +25,6 @@ Record.modify(input, "b", f) // undefined
 declare const modify: { <K extends string | symbol, A, B>(key: NoInfer<K>, f: (a: A) => B): (self: ReadonlyRecord<K, A>) => Record<K, A | B> | undefined; <K extends string | symbol, A, B>(self: ReadonlyRecord<K, A>, key: NoInfer<K>, f: (a: A) => B): Record<K, A | B> | undefined; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Record.ts#L434)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Record.ts#L433)
 
 Since v2.0.0

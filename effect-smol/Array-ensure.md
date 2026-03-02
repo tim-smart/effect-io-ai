@@ -29,6 +29,6 @@ console.log(Array.ensure(["a", "b", "c"])) // ["a", "b", "c"]
 declare const ensure: <A>(self: ReadonlyArray<A> | A) => Array<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L363)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L362)
 
 Since v3.3.0

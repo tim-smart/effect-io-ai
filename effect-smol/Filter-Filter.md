@@ -23,8 +23,8 @@ console.log(positiveFilter(-3)) // Result.fail(-3)
 **Signature**
 
 ```ts
-export interface Filter<in Input, out Pass = Input, out Fail = Input, in Args extends ReadonlyArray<any> = []> {
-  (input: Input, ...args: Args): Result.Result<Pass, Fail>
+export interface Filter<in Input, out Pass = Input, out Fail = Input> {
+  (input: Input): Result.Result<Pass, Fail>
 }
 ```
 

@@ -24,6 +24,6 @@ Effect.runPromise(program)
 declare const bindTo: { <N extends string>(name: N): <A, E, R>(self: Stream<A, E, R>) => Stream<{ [K in N]: A; }, E, R>; <A, E, R, N extends string>(self: Stream<A, E, R>, name: N): Stream<{ [K in N]: A; }, E, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L9668)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L9677)
 
 Since v4.0.0

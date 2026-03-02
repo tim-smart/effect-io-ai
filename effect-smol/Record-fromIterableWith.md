@@ -26,6 +26,6 @@ assert.deepStrictEqual(
 declare const fromIterableWith: { <A, K extends string | symbol, B>(f: (a: A) => readonly [K, B]): (self: Iterable<A>) => Record<ReadonlyRecord.NonLiteralKey<K>, B>; <A, K extends string | symbol, B>(self: Iterable<A>, f: (a: A) => readonly [K, B]): Record<ReadonlyRecord.NonLiteralKey<K>, B>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Record.ts#L214)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Record.ts#L213)
 
 Since v2.0.0

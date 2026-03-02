@@ -31,6 +31,6 @@ const program = Effect.gen(function* () {
 declare const toAsyncIterable: <A, E>(self: Stream<A, E>) => AsyncIterable<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L10465)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L10474)
 
 Since v2.0.0

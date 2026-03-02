@@ -24,7 +24,7 @@ console.log(Chunk.toArray(satisfying)) // [1, 5]
 **Signature**
 
 ```ts
-declare const partition: { <A, Pass, Fail>(f: Filter.Filter<NoInfer<A>, Pass, Fail, [i: number]>): (self: Chunk<A>) => [excluded: Chunk<Fail>, satisfying: Chunk<Pass>]; <A, Pass, Fail>(self: Chunk<A>, f: Filter.Filter<A, Pass, Fail, [i: number]>): [excluded: Chunk<Fail>, satisfying: Chunk<Pass>]; }
+declare const partition: { <A, Pass, Fail>(f: (input: NoInfer<A>, i: number) => Result<Pass, Fail>): (self: Chunk<A>) => [excluded: Chunk<Fail>, satisfying: Chunk<Pass>]; <A, Pass, Fail>(self: Chunk<A>, f: (input: A, i: number) => Result<Pass, Fail>): [excluded: Chunk<Fail>, satisfying: Chunk<Pass>]; }
 ```
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L1734)

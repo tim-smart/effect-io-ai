@@ -25,6 +25,6 @@ Effect.runPromise(Effect.gen(function* () {
 declare const onFirst: { <A, X, EX, RX>(onFirst: (element: NoInfer<A>) => Effect.Effect<X, EX, RX>): <E, R>(self: Stream<A, E, R>) => Stream<A, E | EX, R | RX>; <A, E, R, X, EX, RX>(self: Stream<A, E, R>, onFirst: (element: NoInfer<A>) => Effect.Effect<X, EX, RX>): Stream<A, E | EX, R | RX>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L9040)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L9049)
 
 Since v4.0.0

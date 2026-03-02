@@ -22,6 +22,6 @@ const reader = readableStream.getReader()
 declare const toReadableStream: { <A>(options?: { readonly strategy?: QueuingStrategy<A> | undefined; }): <E>(self: Stream<A, E>) => ReadableStream<A>; <A, E>(self: Stream<A, E>, options?: { readonly strategy?: QueuingStrategy<A> | undefined; }): ReadableStream<A>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L10276)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L10285)
 
 Since v2.0.0

@@ -24,6 +24,6 @@ console.log(Array.of(1)) // [1]
 declare const of: <A>(a: A) => NonEmptyArray<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L2935)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L2934)
 
 Since v2.0.0

@@ -30,6 +30,6 @@ console.log(Array.get([1, 2, 3], 10)) // None
 declare const get: { (index: number): <A>(self: ReadonlyArray<A>) => Option.Option<A>; <A>(self: ReadonlyArray<A>, index: number): Option.Option<A>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L893)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L892)
 
 Since v2.0.0

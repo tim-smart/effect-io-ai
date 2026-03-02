@@ -11,6 +11,6 @@ Creates a filter that only passes instances of the given constructor.
 declare const instanceOf: <K extends new (...args: any) => any>(constructor: K) => <Input>(u: Input) => Result.Result<InstanceType<K>, Exclude<Input, InstanceType<K>>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Filter.ts#L259)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Filter.ts#L258)
 
 Since v4.0.0

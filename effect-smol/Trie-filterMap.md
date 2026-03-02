@@ -51,7 +51,7 @@ assert.equal(
 **Signature**
 
 ```ts
-declare const filterMap: { <A, B, X>(f: Filter.Filter<A, B, X, [key: string]>): (self: Trie<A>) => Trie<B>; <A, B, X>(self: Trie<A>, f: Filter.Filter<A, B, X, [key: string]>): Trie<B>; }
+declare const filterMap: { <A, B, X>(f: (input: A, key: string) => Result<B, X>): (self: Trie<A>) => Trie<B>; <A, B, X>(self: Trie<A>, f: (input: A, key: string) => Result<B, X>): Trie<B>; }
 ```
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Trie.ts#L759)

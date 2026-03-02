@@ -27,6 +27,6 @@ console.log(Array.takeRight([1, 2, 3, 4, 5], 3)) // [3, 4, 5]
 declare const takeRight: { (n: number): <A>(self: Iterable<A>) => Array<A>; <A>(self: Iterable<A>, n: number): Array<A>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L1205)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L1204)
 
 Since v2.0.0

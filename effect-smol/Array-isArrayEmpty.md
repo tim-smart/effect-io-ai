@@ -25,6 +25,6 @@ console.log(Array.isArrayEmpty([1, 2, 3])) // false
 declare const isArrayEmpty: <A>(self: Array<A>) => self is []
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L782)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L781)
 
 Since v2.0.0

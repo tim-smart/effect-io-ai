@@ -5,6 +5,10 @@ Module: `Stream`<br />
 
 Creates a new `Stream` from an iterable collection of values.
 
+**Options**
+
+- `chunkSize`: Maximum number of values emitted per chunk.
+
 **Example**
 
 ```ts
@@ -25,9 +29,9 @@ Effect.runPromise(program)
 **Signature**
 
 ```ts
-declare const fromIterable: <A>(iterable: Iterable<A>) => Stream<A>
+declare const fromIterable: <A>(iterable: Iterable<A>, options?: { readonly chunkSize?: number | undefined; }) => Stream<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L985)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L989)
 
 Since v2.0.0

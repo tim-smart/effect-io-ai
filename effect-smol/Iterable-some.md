@@ -46,6 +46,6 @@ console.log(hasString) // true
 declare const some: { <A>(predicate: (a: A, i: number) => boolean): (self: Iterable<A>) => boolean; <A>(self: Iterable<A>, predicate: (a: A, i: number) => boolean): boolean; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Iterable.ts#L1930)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Iterable.ts#L1929)
 
 Since v2.0.0

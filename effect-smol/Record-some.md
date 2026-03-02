@@ -21,6 +21,6 @@ assert.deepStrictEqual(Record.some({ a: 1, b: 2 }, (n) => n > 2), false)
 declare const some: { <A, K extends string>(predicate: (value: A, key: K) => boolean): (self: ReadonlyRecord<K, A>) => boolean; <K extends string, A>(self: ReadonlyRecord<K, A>, predicate: (value: A, key: K) => boolean): boolean; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Record.ts#L1148)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Record.ts#L1147)
 
 Since v2.0.0

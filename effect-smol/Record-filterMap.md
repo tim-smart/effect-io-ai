@@ -20,9 +20,9 @@ assert.deepStrictEqual(Record.filterMap(x, f), { c: 6 })
 **Signature**
 
 ```ts
-declare const filterMap: { <K extends string, A, B, X>(f: Filter.Filter<A, B, X, [key: K]>): (self: ReadonlyRecord<K, A>) => Record<ReadonlyRecord.NonLiteralKey<K>, B>; <K extends string, A, B, X>(self: ReadonlyRecord<K, A>, f: Filter.Filter<A, B, X, [key: K]>): Record<ReadonlyRecord.NonLiteralKey<K>, B>; }
+declare const filterMap: { <K extends string, A, B, X>(f: (input: A, key: K) => Result<B, X>): (self: ReadonlyRecord<K, A>) => Record<ReadonlyRecord.NonLiteralKey<K>, B>; <K extends string, A, B, X>(self: ReadonlyRecord<K, A>, f: (input: A, key: K) => Result<B, X>): Record<ReadonlyRecord.NonLiteralKey<K>, B>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Record.ts#L681)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Record.ts#L680)
 
 Since v2.0.0

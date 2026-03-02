@@ -38,9 +38,9 @@ const restoreChat = Effect.gen(function*() {
 **Signature**
 
 ```ts
-declare const fromExport: (data: unknown) => Effect.Effect<Service, Schema.SchemaError, LanguageModel.LanguageModel>
+declare const fromExport: (data: unknown) => Effect.Effect<Service, Schema.SchemaError>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chat.ts#L535)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chat.ts#L522)
 
 Since v4.0.0

@@ -34,6 +34,6 @@ Effect.runPromise(program)
 declare const decodeText: <Arg extends Stream<Uint8Array, any, any> | { readonly encoding?: string | undefined; } | undefined = { readonly encoding?: string | undefined; }>(streamOrOptions?: Arg, options?: { readonly encoding?: string | undefined; } | undefined) => [Arg] extends [Stream<Uint8Array, infer _E, infer _R>] ? Stream<string, _E, _R> : <E, R>(self: Stream<Uint8Array, E, R>) => Stream<string, E, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L8550)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L8559)
 
 Since v2.0.0

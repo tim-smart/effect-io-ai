@@ -21,6 +21,6 @@ assert.deepStrictEqual(Record.has(Record.empty<string>(), "c"), false)
 declare const has: { <K extends string | symbol>(key: NoInfer<K>): <A>(self: ReadonlyRecord<K, A>) => boolean; <K extends string | symbol, A>(self: ReadonlyRecord<K, A>, key: NoInfer<K>): boolean; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Record.ts#L373)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Record.ts#L372)
 
 Since v2.0.0

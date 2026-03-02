@@ -29,7 +29,7 @@ console.log(Chunk.toArray(evenIndexNumbers)) // [1]
 **Signature**
 
 ```ts
-declare const filterMap: { <A, B, X>(f: Filter.Filter<A, B, X, [i: number]>): (self: Chunk<A>) => Chunk<B>; <A, B, X>(self: Chunk<A>, f: Filter.Filter<A, B, X, [i: number]>): Chunk<B>; }
+declare const filterMap: { <A, B, X>(f: (input: A, i: number) => Result<B, X>): (self: Chunk<A>) => Chunk<B>; <A, B, X>(self: Chunk<A>, f: (input: A, i: number) => Result<B, X>): Chunk<B>; }
 ```
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L1023)

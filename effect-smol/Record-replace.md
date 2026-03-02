@@ -20,6 +20,6 @@ Record.replace(Record.empty<string>(), "a", 10) // undefined
 declare const replace: { <K extends string | symbol, B>(key: NoInfer<K>, b: B): <A>(self: ReadonlyRecord<K, A>) => Record<K, A | B> | undefined; <K extends string | symbol, A, B>(self: ReadonlyRecord<K, A>, key: NoInfer<K>, b: B): Record<K, A | B> | undefined; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Record.ts#L470)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Record.ts#L469)
 
 Since v2.0.0

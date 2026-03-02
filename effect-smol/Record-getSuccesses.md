@@ -27,6 +27,6 @@ assert.deepStrictEqual(
 declare const getSuccesses: <K extends string, A, E>(self: ReadonlyRecord<K, Result<A, E>>) => Record<string, A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Record.ts#L840)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Record.ts#L839)
 
 Since v2.0.0

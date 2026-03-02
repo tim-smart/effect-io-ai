@@ -26,6 +26,6 @@ console.log(Array.last([])) // None
 declare const last: <A>(self: ReadonlyArray<A>) => Option.Option<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L1044)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L1043)
 
 Since v2.0.0

@@ -25,6 +25,6 @@ assert.deepStrictEqual(Record.fromEntries(input), { a: 1, b: 2 })
 declare const fromEntries: <Entry extends readonly [string | symbol, any]>(entries: Iterable<Entry>) => Record<ReadonlyRecord.NonLiteralKey<Entry[0]>, Entry[1]>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Record.ts#L286)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Record.ts#L285)
 
 Since v2.0.0

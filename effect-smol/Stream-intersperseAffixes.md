@@ -31,6 +31,6 @@ Effect.runPromise(program)
 declare const intersperseAffixes: { <A2, A3, A4>(options: { readonly start: A2; readonly middle: A3; readonly end: A4; }): <A, E, R>(self: Stream<A, E, R>) => Stream<A2 | A3 | A4 | A, E, R>; <A, E, R, A2, A3, A4>(self: Stream<A, E, R>, options: { readonly start: A2; readonly middle: A3; readonly end: A4; }): Stream<A | A2 | A3 | A4, E, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L8688)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L8697)
 
 Since v2.0.0

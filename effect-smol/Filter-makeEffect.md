@@ -29,6 +29,6 @@ const asyncValidate = Filter.makeEffect((id: string) =>
 declare const makeEffect: <Input, Pass, Fail, E, R>(f: (input: Input) => Effect<Result.Result<Pass, Fail>, E, R>) => FilterEffect<Input, Pass, Fail, E, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Filter.ts#L130)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Filter.ts#L129)
 
 Since v4.0.0

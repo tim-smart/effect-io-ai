@@ -31,6 +31,6 @@ assert.deepStrictEqual(
 declare const fromIterableBy: <A, K extends string | symbol>(items: Iterable<A>, f: (a: A) => K) => Record<ReadonlyRecord.NonLiteralKey<K>, A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Record.ts#L262)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Record.ts#L261)
 
 Since v2.0.0

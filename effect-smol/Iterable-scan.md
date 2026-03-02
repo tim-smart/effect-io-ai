@@ -32,6 +32,6 @@ console.log(Array.from(runningMax)) // [-Infinity, 3, 3, 4, 4, 5, 9, 9]
 declare const scan: { <B, A>(b: B, f: (b: B, a: A) => B): (self: Iterable<A>) => Iterable<B>; <A, B>(self: Iterable<A>, b: B, f: (b: B, a: A) => B): Iterable<B>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Iterable.ts#L344)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Iterable.ts#L343)
 
 Since v2.0.0

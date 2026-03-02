@@ -43,6 +43,6 @@ console.log(Array.from(cleanedData)) // [100, 101, 102, 100]
 declare const dedupeAdjacent: <A>(self: Iterable<A>) => Iterable<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Iterable.ts#L2217)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Iterable.ts#L2216)
 
 Since v2.0.0

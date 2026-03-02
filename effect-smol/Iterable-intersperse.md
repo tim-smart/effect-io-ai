@@ -43,6 +43,6 @@ console.log(Array.from(css).join("")) // "color: red; font-size: 14px; margin: 1
 declare const intersperse: { <B>(middle: B): <A>(self: Iterable<A>) => Iterable<A | B>; <A, B>(self: Iterable<A>, middle: B): Iterable<A | B>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Iterable.ts#L918)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Iterable.ts#L917)
 
 Since v2.0.0

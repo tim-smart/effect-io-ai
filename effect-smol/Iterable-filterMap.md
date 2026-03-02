@@ -48,9 +48,9 @@ console.log(Array.from(evenIndexItems)) // ["0: a", "2: c", "4: e"]
 **Signature**
 
 ```ts
-declare const filterMap: { <A, B, X>(f: Filter.Filter<A, B, X, [i: number]>): (self: Iterable<A>) => Iterable<B>; <A, B, X>(self: Iterable<A>, f: Filter.Filter<A, B, X, [i: number]>): Iterable<B>; }
+declare const filterMap: { <A, B, X>(f: (input: A, i: number) => Result<B, X>): (self: Iterable<A>) => Iterable<B>; <A, B, X>(self: Iterable<A>, f: (input: A, i: number) => Result<B, X>): Iterable<B>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Iterable.ts#L1553)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Iterable.ts#L1552)
 
 Since v2.0.0

@@ -28,6 +28,6 @@ console.log(Array.init([])) // undefined
 declare const init: <A>(self: Iterable<A>) => Array<A> | undefined
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L1132)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L1131)
 
 Since v2.0.0

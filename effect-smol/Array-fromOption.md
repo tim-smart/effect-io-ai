@@ -24,6 +24,6 @@ console.log(Array.fromOption(Option.none())) // []
 declare const fromOption: <A>(self: Option.Option<A>) => Array<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L402)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L401)
 
 Since v2.0.0

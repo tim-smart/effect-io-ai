@@ -23,6 +23,6 @@ console.log(Array.join(["a", "b", "c"], "-")) // "a-b-c"
 declare const join: { (sep: string): (self: Iterable<string>) => string; (self: Iterable<string>, sep: string): string; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L3966)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L3965)
 
 Since v2.0.0

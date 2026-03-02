@@ -21,6 +21,6 @@ assert.deepStrictEqual(Record.filter(x, (n) => n > 2), { c: 3, d: 4 })
 declare const filter: { <K extends string, A, B extends A>(refinement: (a: NoInfer<A>, key: K) => a is B): (self: ReadonlyRecord<K, A>) => Record<ReadonlyRecord.NonLiteralKey<K>, B>; <K extends string, A>(predicate: (A: NoInfer<A>, key: K) => boolean): (self: ReadonlyRecord<K, A>) => Record<ReadonlyRecord.NonLiteralKey<K>, A>; <K extends string, A, B extends A>(self: ReadonlyRecord<K, A>, refinement: (a: A, key: K) => a is B): Record<ReadonlyRecord.NonLiteralKey<K>, B>; <K extends string, A>(self: ReadonlyRecord<K, A>, predicate: (a: A, key: K) => boolean): Record<ReadonlyRecord.NonLiteralKey<K>, A>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Record.ts#L721)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Record.ts#L720)
 
 Since v2.0.0

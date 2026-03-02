@@ -13,6 +13,6 @@ Values are combined using the provided `Combiner`.
 declare const makeReducerIntersection: <K extends string, A>(combiner: Combiner.Combiner<A>) => Reducer.Reducer<Record<K, A>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Record.ts#L1383)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Record.ts#L1382)
 
 Since v4.0.0

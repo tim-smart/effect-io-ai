@@ -28,6 +28,6 @@ Effect.runPromise(program)
 declare const range: (min: number, max: number, chunkSize?: number) => Stream<number>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L1590)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L1599)
 
 Since v4.0.0

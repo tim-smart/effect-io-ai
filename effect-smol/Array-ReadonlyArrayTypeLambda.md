@@ -13,6 +13,6 @@ export interface ReadonlyArrayTypeLambda extends TypeLambda {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L130)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L129)
 
 Since v2.0.0

@@ -24,6 +24,6 @@ Record.pop(input, "c") // undefined
 declare const pop: { <K extends string | symbol, X extends K>(key: X): <A>(self: ReadonlyRecord<K, A>) => [A, Record<Exclude<K, X>, A>] | undefined; <K extends string | symbol, A, X extends K>(self: ReadonlyRecord<K, A>, key: X): [A, Record<Exclude<K, X>, A>] | undefined; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Record.ts#L537)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Record.ts#L536)
 
 Since v2.0.0

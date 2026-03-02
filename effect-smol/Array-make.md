@@ -29,6 +29,6 @@ console.log(result) // [1, 2, 3]
 declare const make: <Elements extends NonEmptyArray<unknown>>(...elements: Elements) => NonEmptyArray<Elements[number]>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L203)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L202)
 
 Since v2.0.0

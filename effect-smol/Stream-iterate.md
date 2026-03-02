@@ -27,6 +27,6 @@ Effect.runPromise(program)
 declare const iterate: <A>(value: A, next: (value: A) => A) => Stream<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L1566)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L1575)
 
 Since v2.0.0

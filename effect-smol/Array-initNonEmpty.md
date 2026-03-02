@@ -24,6 +24,6 @@ console.log(Array.initNonEmpty([1, 2, 3, 4])) // [1, 2, 3]
 declare const initNonEmpty: <A>(self: NonEmptyReadonlyArray<A>) => Array<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L1154)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L1153)
 
 Since v2.0.0

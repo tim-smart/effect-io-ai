@@ -34,6 +34,6 @@ console.log(Array.from(first10)) // [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 declare const makeBy: <A>(f: (i: number) => A, options?: { readonly length?: number; }) => Iterable<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Iterable.ts#L77)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Iterable.ts#L76)
 
 Since v2.0.0

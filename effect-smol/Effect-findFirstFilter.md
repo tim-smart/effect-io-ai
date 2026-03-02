@@ -11,7 +11,7 @@ first `Result.succeed` and returns the transformed value in `Option.some`.
 **Signature**
 
 ```ts
-declare const findFirstFilter: { <A, B, X, E, R>(filter: Filter.FilterEffect<NoInfer<A>, B, X, E, R, [i: number]>): (elements: Iterable<A>) => Effect<Option<B>, E, R>; <A, B, X, E, R>(elements: Iterable<A>, filter: Filter.FilterEffect<NoInfer<A>, B, X, E, R, [i: number]>): Effect<Option<B>, E, R>; }
+declare const findFirstFilter: { <A, B, X, E, R>(filter: (input: NoInfer<A>, i: number) => Effect<Result.Result<B, X>, E, R>): (elements: Iterable<A>) => Effect<Option<B>, E, R>; <A, B, X, E, R>(elements: Iterable<A>, filter: (input: NoInfer<A>, i: number) => Effect<Result.Result<B, X>, E, R>): Effect<Option<B>, E, R>; }
 ```
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L909)

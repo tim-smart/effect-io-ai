@@ -30,6 +30,6 @@ const isString = Filter.fromPredicate((x: unknown): x is string =>
 declare const fromPredicate: { <A, B extends A>(refinement: Predicate.Refinement<A, B>): Filter<A, B, EqualsWith<A, B, A, Exclude<A, B>>>; <A>(predicate: Predicate.Predicate<A>): Filter<A>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Filter.ts#L193)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Filter.ts#L192)
 
 Since v4.0.0

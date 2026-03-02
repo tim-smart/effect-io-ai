@@ -26,6 +26,6 @@ export interface ReadonlyRecordTypeLambda<K extends string = string> extends Typ
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Record.ts#L129)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Record.ts#L128)
 
 Since v2.0.0

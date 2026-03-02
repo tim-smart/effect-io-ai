@@ -26,6 +26,6 @@ type OrNonEmpty<S, T, A> = S extends NonEmptyReadonlyArray<any> ? NonEmptyArray<
     : Array<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L2998)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L2997)
 
 Since v2.0.0

@@ -28,6 +28,6 @@ console.log(result.length) // 3
 declare const allocate: <A = never>(n: number) => Array<A | undefined>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L228)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L227)
 
 Since v2.0.0

@@ -27,6 +27,6 @@ console.log(Array.replace([1, 2, 3], 1, 4)) // [1, 4, 3]
 declare const replace: { <B>(i: number, b: B): <A, S extends Iterable<A> = Iterable<A>>(self: S) => ReadonlyArray.With<S, ReadonlyArray.Infer<S> | B> | undefined; <A, B, S extends Iterable<A> = Iterable<A>>(self: S, i: number, b: B): ReadonlyArray.With<S, ReadonlyArray.Infer<S> | B> | undefined; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L1695)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L1694)
 
 Since v2.0.0

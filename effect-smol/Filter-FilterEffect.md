@@ -38,10 +38,9 @@ export interface FilterEffect<
   out Pass,
   out Fail,
   out E = never,
-  out R = never,
-  in Args extends Array<any> = []
+  out R = never
 > {
-  (input: Input, ...args: Args): Effect<Result.Result<Pass, Fail>, E, R>
+  (input: Input): Effect<Result.Result<Pass, Fail>, E, R>
 }
 ```
 

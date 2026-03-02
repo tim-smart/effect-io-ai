@@ -23,6 +23,6 @@ assert.deepStrictEqual(
 declare const mapEntries: { <K extends string, A, K2 extends string, B>(f: (a: A, key: K) => readonly [K2, B]): (self: ReadonlyRecord<K, A>) => Record<K2, B>; <K extends string, A, K2 extends string, B>(self: ReadonlyRecord<K, A>, f: (a: A, key: K) => [K2, B]): Record<K2, B>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Record.ts#L641)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Record.ts#L640)
 
 Since v2.0.0

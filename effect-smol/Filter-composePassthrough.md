@@ -15,6 +15,6 @@ input.
 declare const composePassthrough: { <InputL, PassL, PassR, FailR>(right: Filter<PassL, PassR, FailR>): <FailL>(left: Filter<InputL, PassL, FailL>) => Filter<InputL, PassR, InputL>; <InputL, PassL, FailL, PassR, FailR>(left: Filter<InputL, PassL, FailL>, right: Filter<PassL, PassR, FailR>): Filter<InputL, PassR, InputL>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Filter.ts#L580)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Filter.ts#L579)
 
 Since v4.0.0

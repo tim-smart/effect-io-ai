@@ -28,6 +28,6 @@ console.log(Array.tail([])) // undefined
 declare const tail: <A>(self: Iterable<A>) => Array<A> | undefined
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L1087)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L1086)
 
 Since v2.0.0

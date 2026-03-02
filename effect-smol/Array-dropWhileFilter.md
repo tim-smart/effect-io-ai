@@ -11,9 +11,9 @@ Drops elements from the start while a `Filter` succeeds.
 **Signature**
 
 ```ts
-declare const dropWhileFilter: { <A, B, X>(f: Filter.Filter<NoInfer<A>, B, X, [i: number]>): (self: Iterable<A>) => Array<A>; <A, B, X>(self: Iterable<A>, f: Filter.Filter<A, B, X, [i: number]>): Array<A>; }
+declare const dropWhileFilter: { <A, B, X>(f: (input: NoInfer<A>, i: number) => Result.Result<B, X>): (self: Iterable<A>) => Array<A>; <A, B, X>(self: Iterable<A>, f: (input: A, i: number) => Result.Result<B, X>): Array<A>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L1431)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L1430)
 
 Since v4.0.0

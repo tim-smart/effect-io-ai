@@ -12,6 +12,6 @@ error.
 declare const try: <Input, Output>(f: (input: Input) => Output) => Filter<Input, Output>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Filter.ts#L166)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Filter.ts#L165)
 
 Since v4.0.0

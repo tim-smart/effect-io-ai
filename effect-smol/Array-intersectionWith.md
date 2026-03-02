@@ -29,6 +29,6 @@ console.log(Array.intersectionWith(isEquivalent)(array2)(array1)) // [{ id: 1 },
 declare const intersectionWith: <A>(isEquivalent: (self: A, that: A) => boolean) => { (that: Iterable<A>): (self: Iterable<A>) => Array<A>; (self: Iterable<A>, that: Iterable<A>): Array<A>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L2802)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L2801)
 
 Since v2.0.0

@@ -26,6 +26,6 @@ console.log(Array.unfold(1, (n) => n <= 5 ? [n, n + 1] : undefined))
 declare const unfold: <B, A>(b: B, f: (b: B) => readonly [A, B] | undefined) => Array<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L3756)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L3755)
 
 Since v2.0.0

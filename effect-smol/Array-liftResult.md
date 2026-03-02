@@ -32,6 +32,6 @@ console.log(liftedParseNumber("not a number")) // []
 declare const liftResult: <A extends Array<unknown>, E, B>(f: (...a: A) => Result.Result<B, E>) => (...a: A) => Array<B>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L3597)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L3596)
 
 Since v2.0.0

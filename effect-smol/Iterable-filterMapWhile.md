@@ -39,9 +39,9 @@ console.log(Array.from(indexedUntilC)) // ["0: a", "1: b"] (stops at "c")
 **Signature**
 
 ```ts
-declare const filterMapWhile: { <A, B, X>(f: Filter.Filter<A, B, X, [i: number]>): (self: Iterable<A>) => Iterable<B>; <A, B, X>(self: Iterable<A>, f: Filter.Filter<A, B, X, [i: number]>): Iterable<B>; }
+declare const filterMapWhile: { <A, B, X>(f: (input: A, i: number) => Result<B, X>): (self: Iterable<A>) => Iterable<B>; <A, B, X>(self: Iterable<A>, f: (input: A, i: number) => Result<B, X>): Iterable<B>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Iterable.ts#L1615)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Iterable.ts#L1614)
 
 Since v2.0.0

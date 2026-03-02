@@ -27,6 +27,6 @@ console.log(result) // [[1, "a"], [1, "b"], [2, "a"], [2, "b"]]
 declare const cartesian: { <B>(that: ReadonlyArray<B>): <A>(self: ReadonlyArray<A>) => Array<[A, B]>; <A, B>(self: ReadonlyArray<A>, that: ReadonlyArray<B>): Array<[A, B]>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L4070)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L4069)
 
 Since v2.0.0

@@ -22,6 +22,6 @@ const positiveEven = Filter.andLeft(positiveNumbers, evenNumbers)
 declare const andLeft: { <InputR, PassR, FailR>(right: Filter<InputR, PassR, FailR>): <InputL, PassL, FailL>(left: Filter<InputL, PassL, FailL>) => Filter<InputL & InputR, PassL, FailL | FailR>; <InputL, PassL, FailL, InputR, PassR, FailR>(left: Filter<InputL, PassL, FailL>, right: Filter<InputR, PassR, FailR>): Filter<InputL & InputR, PassL, FailL | FailR>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Filter.ts#L486)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Filter.ts#L485)
 
 Since v4.0.0
