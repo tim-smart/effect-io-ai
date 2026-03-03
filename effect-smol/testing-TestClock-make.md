@@ -30,7 +30,7 @@ const program = Effect.gen(function*() {
 **Signature**
 
 ```ts
-declare const make: (options?: TestClock.Options | undefined) => Effect.Effect<{ currentTimeMillisUnsafe: () => number; currentTimeNanosUnsafe: () => bigint; currentTimeMillis: Effect.Effect<number, never, never>; currentTimeNanos: Effect.Effect<bigint, never, never>; adjust: (duration: Duration.Input) => Effect.Effect<void, never, never>; setTime: (timestamp: number) => Effect.Effect<void, never, never>; sleep: (duration: Duration.Duration) => Effect.Effect<void, never, never>; withLive: <A, E, R>(effect: Effect.Effect<A, E, R>) => Effect.Effect<A, E, Exclude<R, never>>; }, never, Scope>
+declare const make: (options?: TestClock.Options | undefined) => Effect.Effect<{ currentTimeMillisUnsafe: () => number; currentTimeNanosUnsafe: () => bigint; currentTimeMillis: Effect.Effect<number, never, never>; currentTimeNanos: Effect.Effect<bigint, never, never>; adjust: (duration: Duration.Input) => Effect.Effect<void, never, Scope>; setTime: (timestamp: number) => Effect.Effect<void, never, Scope>; sleep: (duration: Duration.Duration) => Effect.Effect<void, never, never>; withLive: <A, E, R>(effect: Effect.Effect<A, E, R>) => Effect.Effect<A, E, Exclude<R, never>>; }, never, Scope>
 ```
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TestClock.ts#L217)
