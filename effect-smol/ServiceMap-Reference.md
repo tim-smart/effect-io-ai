@@ -39,6 +39,6 @@ const customLogger = ServiceMap.get(customServices, LoggerRef)
 declare const Reference: <Service>(key: string, options: { readonly defaultValue: () => Service; }) => Reference<Service>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ServiceMap.ts#L1007)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ServiceMap.ts#L1008)
 
 Since v4.0.0

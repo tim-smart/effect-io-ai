@@ -20,6 +20,6 @@ assert.strictEqual(ServiceMap.isServiceMap(ServiceMap.empty()), true)
 declare const isServiceMap: (u: unknown) => u is ServiceMap<never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ServiceMap.ts#L442)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ServiceMap.ts#L443)
 
 Since v4.0.0

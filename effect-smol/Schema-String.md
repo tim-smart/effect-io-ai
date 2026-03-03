@@ -11,6 +11,6 @@ A schema for all strings.
 declare const String: String
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L1403)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L1404)
 
 Since v4.0.0

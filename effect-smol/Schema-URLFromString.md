@@ -17,6 +17,6 @@ Encoding:
 declare const URLFromString: URLFromString
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L6745)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L6824)
 
 Since v4.0.0

@@ -38,6 +38,6 @@ console.log(JSON.stringify(Schema.toJsonSchemaDocument(schema), null, 2))
 declare const toSchema: <S extends Schema.Top = Schema.Top>(document: Document, options?: { readonly reviver?: Reviver<Schema.Top> | undefined; }) => S
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaRepresentation.ts#L1809)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaRepresentation.ts#L1811)
 
 Since v4.0.0

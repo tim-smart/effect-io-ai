@@ -13,6 +13,6 @@ https://github.com/standard-schema/standard-schema/pull/134
 declare const toStandardJSONSchemaV1: <S extends Top>(self: S) => StandardJSONSchemaV1<S["Encoded"], S["Type"]> & S
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L620)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L621)
 
 Since v4.0.0

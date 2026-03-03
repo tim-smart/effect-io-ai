@@ -11,6 +11,6 @@ Is this schema required or optional?
 type Optionality = "required" | "optional"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L63)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L64)
 
 Since v4.0.0

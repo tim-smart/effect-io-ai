@@ -11,6 +11,6 @@ A schema for integers, rejecting `NaN`, `Infinity`, and `-Infinity`.
 declare const Int: Int
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L7399)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L7478)
 
 Since v4.0.0

@@ -16,6 +16,6 @@ A schema for `DateTime.Zoned` values.
 declare const DateTimeZoned: DateTimeZoned
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L7884)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L7963)
 
 Since v4.0.0

@@ -47,6 +47,6 @@ const literal = tagged.fields._tag.schema.literal
 declare const TaggedStruct: <const Tag extends AST.LiteralValue, const Fields extends Struct.Fields>(value: Tag, fields: Fields) => TaggedStruct<Tag, Fields>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L3200)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L3201)
 
 Since v4.0.0

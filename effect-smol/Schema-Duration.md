@@ -15,6 +15,6 @@ A schema for `Duration` values.
 declare const Duration: Duration
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L6813)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L6892)
 
 Since v4.0.0

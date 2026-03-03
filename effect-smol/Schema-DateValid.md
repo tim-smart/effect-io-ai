@@ -14,6 +14,6 @@ Date("invalid")`).
 declare const DateValid: Date
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L6797)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L6876)
 
 Since v4.0.0

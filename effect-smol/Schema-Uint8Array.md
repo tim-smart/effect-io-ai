@@ -15,6 +15,6 @@ The default JSON serializer encodes Uint8Array as a Base64 encoded string.
 declare const Uint8Array: Uint8Array
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L7531)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L7610)
 
 Since v4.0.0

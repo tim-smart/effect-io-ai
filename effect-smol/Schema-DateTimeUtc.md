@@ -15,6 +15,6 @@ A schema for `DateTime.Utc` values.
 declare const DateTimeUtc: DateTimeUtc
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L7639)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L7718)
 
 Since v4.0.0

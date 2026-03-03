@@ -19,6 +19,6 @@ Encoding:
 declare const OptionFromNullOr: <S extends Top>(schema: S) => OptionFromNullOr<S>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L5438)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L5428)
 
 Since v4.0.0

@@ -12,6 +12,6 @@ encoded form.
 declare const DefectWithStack: Defect
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L6129)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L6119)
 
 Since v4.0.0

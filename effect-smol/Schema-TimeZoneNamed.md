@@ -15,6 +15,6 @@ A schema for `DateTime.TimeZone.Named` values.
 declare const TimeZoneNamed: TimeZoneNamed
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L7793)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L7872)
 
 Since v4.0.0

@@ -80,6 +80,6 @@ console.log(String(Schema.decodeUnknownExit(schema)(urlSearchParams)))
 declare const fromURLSearchParams: <S extends Top>(schema: S) => fromURLSearchParams<S>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L7373)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L7452)
 
 Since v4.0.0

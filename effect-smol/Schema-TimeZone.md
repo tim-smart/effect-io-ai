@@ -16,6 +16,6 @@ A schema for `DateTime.TimeZone` values.
 declare const TimeZone: TimeZone
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L7837)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L7916)
 
 Since v4.0.0

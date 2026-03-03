@@ -18,6 +18,6 @@ Encoding:
 declare const FiniteFromString: FiniteFromString
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L7438)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L7517)
 
 Since v4.0.0

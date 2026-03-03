@@ -13,6 +13,6 @@ JSON schema generation, error formatting, and other tooling.
 declare const annotate: <S extends Top>(annotations: S["~annotate.in"]) => (self: S) => S["~rebuild.out"]
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L269)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L270)
 
 Since v4.0.0

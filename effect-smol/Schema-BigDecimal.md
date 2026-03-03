@@ -15,6 +15,6 @@ A schema for `BigDecimal` values.
 declare const BigDecimal: BigDecimal
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L6933)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L7012)
 
 Since v4.0.0

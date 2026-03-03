@@ -21,6 +21,6 @@ constraint to ensure generated strings have the first character in uppercase.
 declare const isCapitalized: (annotations?: Annotations.Filter) => AST.Filter<string>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L3916)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L3906)
 
 Since v4.0.0

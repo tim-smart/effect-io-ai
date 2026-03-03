@@ -17,6 +17,6 @@ Encoding:
 declare const Trim: Trim
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L7470)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L7549)
 
 Since v4.0.0

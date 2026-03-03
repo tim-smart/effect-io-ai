@@ -23,6 +23,6 @@ of properties.
 declare const isMaxProperties: (maxProperties: number, annotations?: Annotations.Filter) => AST.Filter<object>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L5170)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L5160)
 
 Since v4.0.0

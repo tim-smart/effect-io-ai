@@ -15,6 +15,6 @@ An API for creating schemas for non parametric types.
 declare const declare: <T, Iso = T>(is: (u: unknown) => u is T, annotations?: Annotations.Declaration<T> | undefined) => declare<T, Iso>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L219)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L220)
 
 Since v4.0.0

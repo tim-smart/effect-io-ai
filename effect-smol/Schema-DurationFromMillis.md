@@ -21,6 +21,6 @@ Encoding:
 declare const DurationFromMillis: DurationFromMillis
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L6915)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L6994)
 
 Since v4.0.0

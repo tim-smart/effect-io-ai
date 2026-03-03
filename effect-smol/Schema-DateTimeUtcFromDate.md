@@ -17,6 +17,6 @@ Encoding:
 declare const DateTimeUtcFromDate: DateTimeUtcFromDate
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L7680)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L7759)
 
 Since v4.0.0

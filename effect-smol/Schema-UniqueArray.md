@@ -14,6 +14,6 @@ The equivalence used to determine uniqueness is the one provided by
 declare const UniqueArray: <S extends Top>(item: S) => UniqueArray<S>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L2342)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L2343)
 
 Since v4.0.0

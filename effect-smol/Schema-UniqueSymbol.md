@@ -20,6 +20,6 @@ const schema = Schema.UniqueSymbol(a)
 declare const UniqueSymbol: <const sym extends symbol>(symbol: sym) => UniqueSymbol<sym>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L1517)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L1518)
 
 Since v4.0.0

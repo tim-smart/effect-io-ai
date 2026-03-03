@@ -12,6 +12,6 @@ conform to the provided schemas.
 declare const HashMap: <Key extends Top, Value extends Top>(key: Key, value: Value) => HashMap<Key, Value>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L6391)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L6381)
 
 Since v4.0.0
