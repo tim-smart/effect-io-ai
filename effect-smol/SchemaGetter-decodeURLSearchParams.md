@@ -30,7 +30,7 @@ See also:
 **Signature**
 
 ```ts
-declare const decodeURLSearchParams: () => Getter<Schema.TreeObject<string>, URLSearchParams>
+declare const decodeURLSearchParams: () => Getter<Schema.TreeRecord<string>, URLSearchParams>
 ```
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L1597)

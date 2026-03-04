@@ -14,7 +14,8 @@ Structured output errors are retryable since LLM outputs are non-deterministic.
 import { AiError } from "effect/unstable/ai"
 
 const error = new AiError.StructuredOutputError({
-  description: "Expected a valid JSON object"
+  description: "Expected a valid JSON object",
+  responseText: "{\"foo\":}"
 })
 
 console.log(error.isRetryable) // true
@@ -28,6 +29,6 @@ console.log(error.message)
 declare class StructuredOutputError
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AiError.ts#L770)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AiError.ts#L771)
 
 Since v1.0.0

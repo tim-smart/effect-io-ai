@@ -27,6 +27,6 @@ console.log(AiError.isAiError(aiError)) // true
 declare const isAiError: (u: unknown) => u is AiError
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AiError.ts#L1455)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AiError.ts#L1459)
 
 Since v1.0.0

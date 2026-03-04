@@ -27,6 +27,6 @@ const program = Effect.transactionWith((_txState) =>
 declare const transactionWith: <A, E, R>(f: (state: Transaction["Service"]) => Effect<A, E, R>) => Effect<A, E, Exclude<R, Transaction>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L13825)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L13838)
 
 Since v4.0.0

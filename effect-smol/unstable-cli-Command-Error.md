@@ -11,12 +11,13 @@ A utility type to extract the error type from a `Command`.
 type Error<C> = C extends Command<
   infer _Name,
   infer _Input,
+  infer _ContextInput,
   infer _Error,
   infer _Requirements
 > ? _Error :
   never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Command.ts#L283)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Command.ts#L301)
 
 Since v4.0.0

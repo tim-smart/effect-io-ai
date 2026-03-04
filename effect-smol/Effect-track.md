@@ -55,6 +55,6 @@ const effect = Effect.succeed("result").pipe(
 declare const track: { <Input, State, E, A>(metric: Metric.Metric<Input, State>, f: (exit: Exit.Exit<A, E>) => Input): <E, R>(self: Effect<A, E, R>) => Effect<A, E, R>; <State, E, A>(metric: Metric.Metric<Exit.Exit<NoInfer<A>, NoInfer<E>>, State>): <R>(self: Effect<A, E, R>) => Effect<A, E, R>; <A, E, R, Input, State>(self: Effect<A, E, R>, metric: Metric.Metric<Input, State>, f: (exit: Exit.Exit<A, E>) => Input): Effect<A, E, R>; <A, E, R, State>(self: Effect<A, E, R>, metric: Metric.Metric<Exit.Exit<NoInfer<A>, NoInfer<E>>, State>): Effect<A, E, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L13354)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L13367)
 
 Since v4.0.0

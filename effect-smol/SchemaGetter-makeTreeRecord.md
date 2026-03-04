@@ -44,7 +44,7 @@ See also:
 **Signature**
 
 ```ts
-declare const makeTreeRecord: <A>(bracketPathEntries: ReadonlyArray<readonly [bracketPath: string, value: A]>) => Schema.TreeObject<A>
+declare const makeTreeRecord: <A>(bracketPathEntries: ReadonlyArray<readonly [bracketPath: string, value: A]>) => Schema.TreeRecord<A>
 ```
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L1700)

@@ -29,6 +29,6 @@ console.log(error.message)
 declare const make: (params: { readonly module: string; readonly method: string; readonly reason: AiErrorReason; }) => AiError
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AiError.ts#L1502)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AiError.ts#L1506)
 
 Since v1.0.0

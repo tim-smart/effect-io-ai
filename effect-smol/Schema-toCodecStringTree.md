@@ -3,7 +3,7 @@ Module: `Schema`<br />
 
 ## Schema.toCodecStringTree
 
-The StringTree serializer converts **every leaf value to a string**, while
+The StringTree canonical codec converts **every leaf value to a string**, while
 preserving the original structure.
 
 Declarations are converted to `undefined` (unless they have a

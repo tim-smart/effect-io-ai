@@ -23,6 +23,6 @@ const program = Effect.gen(function*() {
 declare const tracer: Effect<Tracer, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L7390)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L7403)
 
 Since v2.0.0

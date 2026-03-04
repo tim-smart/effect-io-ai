@@ -35,6 +35,6 @@ const filtered = Effect.filterOrFail(
 declare const filterOrFail: { <A, E2, B extends A>(refinement: Predicate.Refinement<NoInfer<A>, B>, orFailWith: (a: NoInfer<A>) => E2): <E, R>(self: Effect<A, E, R>) => Effect<B, E2 | E, R>; <A, E2>(predicate: Predicate.Predicate<NoInfer<A>>, orFailWith: (a: NoInfer<A>) => E2): <E, R>(self: Effect<A, E, R>) => Effect<A, E2 | E, R>; <A, B extends A>(refinement: Predicate.Refinement<NoInfer<A>, B>): <E, R>(self: Effect<A, E, R>) => Effect<B, Cause.NoSuchElementError | E, R>; <A>(predicate: Predicate.Predicate<NoInfer<A>>): <E, R>(self: Effect<A, E, R>) => Effect<A, Cause.NoSuchElementError | E, R>; <A, E, R, E2, B extends A>(self: Effect<A, E, R>, refinement: Predicate.Refinement<NoInfer<A>, B>, orFailWith: (a: NoInfer<A>) => E2): Effect<B, E2 | E, R>; <A, E, R, E2>(self: Effect<A, E, R>, predicate: Predicate.Predicate<NoInfer<A>>, orFailWith: (a: NoInfer<A>) => E2): Effect<A, E2 | E, R>; <A, E, R, B extends A>(self: Effect<A, E, R>, refinement: Predicate.Refinement<NoInfer<A>, B>): Effect<B, E | Cause.NoSuchElementError, R>; <A, E, R>(self: Effect<A, E, R>, predicate: Predicate.Predicate<NoInfer<A>>): Effect<A, E | Cause.NoSuchElementError, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L4923)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L4936)
 
 Since v2.0.0

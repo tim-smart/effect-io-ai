@@ -27,6 +27,6 @@ console.log(unknownError.message)
 declare class UnknownError
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AiError.ts#L889)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AiError.ts#L893)
 
 Since v1.0.0

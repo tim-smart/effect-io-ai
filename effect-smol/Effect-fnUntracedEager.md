@@ -28,6 +28,6 @@ const effect = computation() // Executed immediately if all effects are sync
 declare const fnUntracedEager: fn.Untraced
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L14624)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L14637)
 
 Since v4.0.0

@@ -46,6 +46,6 @@ const result = Effect.provideService(configured, Logger, {
 declare const updateServices: { <R2, R>(f: (services: ServiceMap.ServiceMap<R2>) => ServiceMap.ServiceMap<NoInfer<R>>): <A, E>(self: Effect<A, E, R>) => Effect<A, E, R2>; <A, E, R, R2>(self: Effect<A, E, R>, f: (services: ServiceMap.ServiceMap<R2>) => ServiceMap.ServiceMap<NoInfer<R>>): Effect<A, E, R2>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L5788)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L5801)
 
 Since v4.0.0

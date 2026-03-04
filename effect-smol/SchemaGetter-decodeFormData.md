@@ -30,7 +30,7 @@ See also:
 **Signature**
 
 ```ts
-declare const decodeFormData: () => Getter<Schema.TreeObject<string | Blob>, FormData>
+declare const decodeFormData: () => Getter<Schema.TreeRecord<string | Blob>, FormData>
 ```
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L1520)

@@ -29,6 +29,6 @@ console.log(error.message)
 declare class ToolNotFoundError
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AiError.ts#L943)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AiError.ts#L947)
 
 Since v1.0.0

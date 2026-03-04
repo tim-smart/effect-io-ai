@@ -18,7 +18,7 @@ export interface HttpApiEndpoint<
   out Payload extends Schema.Top = never,
   out Headers extends Schema.Top = never,
   out Success extends Schema.Top = typeof HttpApiSchema.NoContent,
-  out Error extends Schema.Top = typeof HttpApiSchemaError,
+  out Error extends Schema.Top = typeof BadRequestNoContent,
   in out Middleware = never,
   out MiddlewareR = never
 > extends Pipeable {

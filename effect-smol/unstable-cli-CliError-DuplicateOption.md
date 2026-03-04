@@ -27,6 +27,6 @@ console.log(duplicateError.message)
 declare class DuplicateOption
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/CliError.ts#L163)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/CliError.ts#L164)
 
 Since v4.0.0

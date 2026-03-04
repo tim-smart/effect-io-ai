@@ -18,7 +18,7 @@ import { Console } from "effect"
 import { Argument, Command, Flag } from "effect/unstable/cli"
 
 // Simple command with no configuration
-const version: Command.Command<"version", {}, never, never> = Command.make(
+const version: Command.Command<"version", {}, {}, never, never> = Command.make(
   "version"
 )
 
@@ -30,6 +30,7 @@ const deploy: Command.Command<
     readonly force: boolean
     readonly files: ReadonlyArray<string>
   },
+  {},
   never,
   never
 > = Command.make("deploy", {
@@ -47,14 +48,15 @@ const greet = Command.make("greet", {
 **Signature**
 
 ```ts
-export interface Command<Name extends string, Input, E = never, R = never> extends
-  Pipeable,
-  Effect.Yieldable<
-    Command<Name, Input, E, R>,
-    Input,
-    never,
-    CommandContext<Name>
-  >
+export interface Command<Name extends string, Input, ContextInput = {}, E = never, R = never>
+  extends
+    Pipeable,
+    Effect.Yieldable<
+      Command<Name, Input, ContextInput, E, R>,
+      ContextInput,
+      never,
+      CommandContext<Name>
+    >
 {
   readonly [TypeId]: typeof TypeId
 
@@ -98,6 +100,6 @@ export interface Command<Name extends string, Input, E = never, R = never> exten
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Command.ts#L78)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Command.ts#L80)
 
 Since v4.0.0

@@ -60,6 +60,6 @@ runMain(program, {
 declare const makeRunMain: (f: <E, A>(options: { readonly fiber: Fiber.Fiber<A, E>; readonly teardown: Teardown; }) => void) => { (options?: { readonly disableErrorReporting?: boolean | undefined; readonly teardown?: Teardown | undefined; }): <E, A>(effect: Effect.Effect<A, E>) => void; <E, A>(effect: Effect.Effect<A, E>, options?: { readonly disableErrorReporting?: boolean | undefined; readonly teardown?: Teardown | undefined; }): void; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Runtime.ts#L179)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Runtime.ts#L181)
 
 Since v4.0.0

@@ -37,6 +37,6 @@ Effect.runPromise(program)
 declare const logError: (...message: ReadonlyArray<any>) => Effect<void>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L13029)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L13042)
 
 Since v2.0.0

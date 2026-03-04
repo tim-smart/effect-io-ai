@@ -24,9 +24,9 @@ const login = Command.make("login").pipe(
 **Signature**
 
 ```ts
-declare const withExamples: { (examples: ReadonlyArray<Command.Example>): <const Name extends string, Input, E, R>(self: Command<Name, Input, E, R>) => Command<Name, Input, E, R>; <const Name extends string, Input, E, R>(self: Command<Name, Input, E, R>, examples: ReadonlyArray<Command.Example>): Command<Name, Input, E, R>; }
+declare const withExamples: { (examples: ReadonlyArray<Command.Example>): <const Name extends string, Input, E, R, ContextInput>(self: Command<Name, Input, ContextInput, E, R>) => Command<Name, Input, ContextInput, E, R>; <const Name extends string, Input, E, R, ContextInput>(self: Command<Name, Input, ContextInput, E, R>, examples: ReadonlyArray<Command.Example>): Command<Name, Input, ContextInput, E, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Command.ts#L862)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Command.ts#L1005)
 
 Since v4.0.0

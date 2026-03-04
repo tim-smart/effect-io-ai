@@ -28,6 +28,6 @@ console.log(error.message)
 declare class ToolkitRequiredError
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AiError.ts#L1193)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AiError.ts#L1197)
 
 Since v1.0.0

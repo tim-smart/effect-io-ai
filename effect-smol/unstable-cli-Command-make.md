@@ -56,9 +56,9 @@ const deployWithHandler = Command.make("deploy", {
 **Signature**
 
 ```ts
-declare const make: { <Name extends string>(name: Name): Command<Name, {}, never, never>; <Name extends string, const Config extends Command.Config>(name: Name, config: Config): Command<Name, Command.Config.Infer<Config>, never, never>; <Name extends string, const Config extends Command.Config, R, E>(name: Name, config: Config, handler: (config: Command.Config.Infer<Config>) => Effect.Effect<void, E, R>): Command<Name, Command.Config.Infer<Config>, E, Exclude<R, GlobalFlag.BuiltInSettingContext>>; }
+declare const make: { <Name extends string>(name: Name): Command<Name, {}, {}, never, never>; <Name extends string, const Config extends Command.Config>(name: Name, config: Config): Command<Name, Command.Config.Infer<Config>, {}, never, never>; <Name extends string, const Config extends Command.Config, R, E>(name: Name, config: Config, handler: (config: Command.Config.Infer<Config>) => Effect.Effect<void, E, R>): Command<Name, Command.Config.Infer<Config>, {}, E, Exclude<R, GlobalFlag.BuiltInSettingContext>>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Command.ts#L411)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Command.ts#L432)
 
 Since v4.0.0

@@ -11,6 +11,6 @@ Return all the typed annotations from the schema.
 declare const resolveInto: <S extends Top>(schema: S) => S["~annotate.in"] | undefined
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L9189)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L9157)
 
 Since v4.0.0

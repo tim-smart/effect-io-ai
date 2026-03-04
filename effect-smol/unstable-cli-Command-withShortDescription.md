@@ -12,9 +12,9 @@ shell completions. If no short description is provided, the full
 **Signature**
 
 ```ts
-declare const withShortDescription: { (shortDescription: string): <const Name extends string, Input, E, R>(self: Command<Name, Input, E, R>) => Command<Name, Input, E, R>; <const Name extends string, Input, E, R>(self: Command<Name, Input, E, R>, shortDescription: string): Command<Name, Input, E, R>; }
+declare const withShortDescription: { (shortDescription: string): <const Name extends string, Input, E, R, ContextInput>(self: Command<Name, Input, ContextInput, E, R>) => Command<Name, Input, ContextInput, E, R>; <const Name extends string, Input, E, R, ContextInput>(self: Command<Name, Input, ContextInput, E, R>, shortDescription: string): Command<Name, Input, ContextInput, E, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Command.ts#L755)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Command.ts#L898)
 
 Since v4.0.0

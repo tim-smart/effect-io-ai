@@ -14,6 +14,6 @@ the schema type.
 declare const overrideToCodecIso: <S extends Top, Iso>(to: Codec<Iso>, transformation: { readonly decode: Getter.Getter<S["Type"], Iso>; readonly encode: Getter.Getter<Iso, S["Type"]>; }) => (schema: S) => overrideToCodecIso<S, Iso>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L9020)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L9021)
 
 Since v4.0.0

@@ -16,10 +16,12 @@ its parsed input to child commands.
 import { Console, Effect } from "effect"
 import { Command, Flag } from "effect/unstable/cli"
 
-const parent = Command.make("app", {
-  verbose: Flag.boolean("verbose"),
-  config: Flag.string("config")
-})
+const parent = Command.make("app").pipe(
+  Command.withSharedFlags({
+    verbose: Flag.boolean("verbose"),
+    config: Flag.string("config")
+  })
+)
 
 const child = Command.make("deploy", {
   target: Flag.string("target")
@@ -45,6 +47,6 @@ export interface CommandContext<Name extends string> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Command.ts#L327)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Command.ts#L348)
 
 Since v4.0.0

@@ -45,6 +45,6 @@ const provided = Effect.provideServices(program, serviceMap)
 declare const provideServices: { <XR>(context: ServiceMap.ServiceMap<XR>): <A, E, R>(self: Effect<A, E, R>) => Effect<A, E, Exclude<R, XR>>; <A, E, R, XR>(self: Effect<A, E, R>, context: ServiceMap.ServiceMap<XR>): Effect<A, E, Exclude<R, XR>>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L5678)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L5691)
 
 Since v2.0.0

@@ -52,6 +52,6 @@ Effect.runPromiseExit(program).then(() =>
 declare const trackErrors: { <Input, State, E>(metric: Metric.Metric<Input, State>, f: (error: E) => Input): <A, R>(self: Effect<A, E, R>) => Effect<A, E, R>; <State, E>(metric: Metric.Metric<NoInfer<E>, State>): <A, R>(self: Effect<A, E, R>) => Effect<A, E, R>; <A, E, R, Input, State>(self: Effect<A, E, R>, metric: Metric.Metric<Input, State>, f: (error: E) => Input): Effect<A, E, R>; <A, E, R, State>(self: Effect<A, E, R>, metric: Metric.Metric<NoInfer<E>, State>): Effect<A, E, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L13504)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L13517)
 
 Since v4.0.0

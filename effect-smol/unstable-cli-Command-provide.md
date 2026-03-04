@@ -39,9 +39,9 @@ const deploy = Command.make("deploy", {
 **Signature**
 
 ```ts
-declare const provide: { <Input, LR, LE, LA>(layer: Layer.Layer<LA, LE, LR> | ((input: Input) => Layer.Layer<LA, LE, LR>), options?: { readonly local?: boolean | undefined; } | undefined): <const Name extends string, E, R>(self: Command<Name, Input, E, R>) => Command<Name, Input, E | LE, Exclude<R, LA> | LR>; <const Name extends string, Input, E, R, LA, LE, LR>(self: Command<Name, Input, E, R>, layer: Layer.Layer<LA, LE, LR> | ((input: Input) => Layer.Layer<LA, LE, LR>), options?: { readonly local?: boolean | undefined; } | undefined): Command<Name, Input, E | LE, Exclude<R, LA> | LR>; }
+declare const provide: { <Input, LR, LE, LA>(layer: Layer.Layer<LA, LE, LR> | ((input: Input) => Layer.Layer<LA, LE, LR>), options?: { readonly local?: boolean | undefined; } | undefined): <const Name extends string, E, R, ContextInput>(self: Command<Name, Input, ContextInput, E, R>) => Command<Name, Input, ContextInput, E | LE, Exclude<R, LA> | LR>; <const Name extends string, Input, E, R, ContextInput, LA, LE, LR>(self: Command<Name, Input, ContextInput, E, R>, layer: Layer.Layer<LA, LE, LR> | ((input: Input) => Layer.Layer<LA, LE, LR>), options?: { readonly local?: boolean | undefined; } | undefined): Command<Name, Input, ContextInput, E | LE, Exclude<R, LA> | LR>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Command.ts#L924)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Command.ts#L1067)
 
 Since v4.0.0

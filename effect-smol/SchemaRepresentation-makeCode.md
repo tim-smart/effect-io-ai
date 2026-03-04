@@ -16,6 +16,6 @@ TypeScript type string.
 declare const makeCode: (runtime: string, Type: string) => Code
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaRepresentation.ts#L2188)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaRepresentation.ts#L2192)
 
 Since v4.0.0

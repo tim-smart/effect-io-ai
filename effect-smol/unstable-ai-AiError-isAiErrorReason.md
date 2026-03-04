@@ -23,6 +23,6 @@ console.log(AiError.isAiErrorReason(genericError)) // false
 declare const isAiErrorReason: (u: unknown) => u is AiErrorReason
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AiError.ts#L1477)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AiError.ts#L1481)
 
 Since v1.0.0

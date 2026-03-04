@@ -53,6 +53,6 @@ to depend on the result of this effect.
 declare const schedule: { <Output, Error, Env>(schedule: Schedule<Output, unknown, Error, Env>): <A, E, R>(self: Effect<A, E, R>) => Effect<Output, E, R | Env>; <A, E, R, Output, Error, Env>(self: Effect<A, E, R>, schedule: Schedule<Output, unknown, Error, Env>): Effect<Output, E, R | Env>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L7305)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L7318)
 
 Since v2.0.0
