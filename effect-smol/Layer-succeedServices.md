@@ -23,7 +23,7 @@ class Logger extends ServiceMap.Service<Logger, {
 }>()("Logger") {}
 
 const services = ServiceMap.make(Database, {
-  query: (sql: string) => Effect.succeed("result")
+  query: Effect.fn("Database.query")((sql: string) => Effect.succeed("result"))
 })
   .pipe(
     ServiceMap.add(Logger, {

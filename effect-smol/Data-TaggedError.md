@@ -27,7 +27,7 @@ class Forbidden extends Data.TaggedError("Forbidden")<{
 }> {}
 
 const program = Effect.gen(function*() {
-  yield* new NotFound({ resource: "/users/42" })
+  return yield* new NotFound({ resource: "/users/42" })
 })
 
 const recovered = program.pipe(

@@ -13,6 +13,6 @@ The "json" variants will use the object schema directly.
 declare const JsonFromString: <S extends Schema.Top>(schema: S) => JsonFromString<S>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Model.ts#L550)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Model.ts#L581)
 
 Since v4.0.0

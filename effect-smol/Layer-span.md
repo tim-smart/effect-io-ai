@@ -31,7 +31,7 @@ const databaseLayer = Layer.effect(Database, Effect.gen(function*() {
   yield* Console.log((parentSpan as Tracer.Span).name) // "database-init"
 
   return {
-    query: (sql: string) => Effect.succeed(`Result: ${sql}`)
+    query: Effect.fn("Database.query")((sql: string) => Effect.succeed(`Result: ${sql}`))
   }
 })).pipe(Layer.provide(Layer.span("database-init")))
 
@@ -51,6 +51,6 @@ const tracedLayer = Layer.span("service-initialization", {
 declare const span: (name: string, options?: SpanOptions) => Layer<Tracer.ParentSpan>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L1955)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L1954)
 
 Since v4.0.0

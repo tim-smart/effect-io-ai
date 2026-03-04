@@ -26,7 +26,7 @@ const retryWithFib = Effect.gen(function*() {
       yield* Console.log(`Attempt ${attempt}`)
 
       if (attempt < 5) {
-        yield* Effect.fail(new Error(`Attempt ${attempt} failed`))
+        return yield* Effect.fail(new Error(`Attempt ${attempt} failed`))
       }
 
       return `Success on attempt ${attempt}`

@@ -20,10 +20,11 @@ const counterLayer = Layer.effect(Counter)(Effect.gen(function*() {
   const ref = yield* Ref.make(0)
   return {
     count: 0,
-    increment: () =>
+    increment: Effect.fn("Counter.increment")(() =>
       Ref.update(ref, (n) => n + 1).pipe(
         Effect.flatMap(() => Ref.get(ref))
       )
+    )
   }
 }))
 
@@ -56,6 +57,6 @@ const freshProgram = Effect.gen(function*() {
 declare const fresh: <A, E, R>(self: Layer<A, E, R>) => Layer<A, E, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L1628)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L1629)
 
 Since v2.0.0

@@ -14,6 +14,6 @@ It is omitted from updates and is available for selection.
 declare const DateTimeInsertFromNumber: DateTimeInsertFromNumber
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Model.ts#L431)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Model.ts#L462)
 
 Since v4.0.0

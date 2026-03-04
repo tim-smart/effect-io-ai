@@ -29,7 +29,7 @@ const parseSubcommand = (subcommand: string) =>
   Effect.gen(function*() {
     const validCommands = ["deploy", "destroy", "status"]
     if (!validCommands.includes(subcommand)) {
-      return yield* Effect.fail(unknownSubcommandError)
+      return yield* unknownSubcommandError
     }
     return subcommand
   })

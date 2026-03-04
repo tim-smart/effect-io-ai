@@ -25,7 +25,7 @@ const smartRetry = Schedule.exponential("1 second")
 const program = Effect.gen(function*() {
   // Using retry schedule
   const result1 = yield* Effect.retry(
-    Effect.fail("temporary error"),
+    Effect.suspend(() => Math.random() > 0.5 ? Effect.fail("temporary error") : Effect.succeed("Success")),
     retrySchedule
   )
 

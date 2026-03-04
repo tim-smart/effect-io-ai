@@ -24,10 +24,10 @@ const flakyDatabaseLayer = Layer.effect(Database)(Effect.gen(function*() {
   // Simulate a database connection that might fail
   const shouldFail = Math.random() > 0.5
   if (shouldFail) {
-    yield* Effect.fail(new DatabaseError({ message: "Connection failed" }))
+    return yield* new DatabaseError({ message: "Connection failed" })
   }
 
-  return { query: (sql: string) => Effect.succeed(`Result: ${sql}`) }
+  return { query: Effect.fn("Database.query")((sql: string) => Effect.succeed(`Result: ${sql}`)) }
 }))
 
 // Convert failures to fiber death - removes error from type
@@ -51,6 +51,6 @@ const program = Effect.gen(function*() {
 declare const orDie: <A, E, R>(self: Layer<A, E, R>) => Layer<A, never, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L1358)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L1357)
 
 Since v2.0.0

@@ -20,7 +20,7 @@ import { Cause, Effect } from "effect"
 const error = new Cause.NoSuchElementError("not found")
 
 const program = Effect.gen(function*() {
-  yield* error // fails the effect with NoSuchElementError
+  return yield* error // fails the effect with NoSuchElementError
 })
 ```
 

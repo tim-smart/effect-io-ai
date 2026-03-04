@@ -24,7 +24,7 @@ class NetworkError extends Data.Error<{
 }> {}
 
 const program = Effect.gen(function*() {
-  yield* new NetworkError({ code: 500, message: "timeout" })
+  return yield* new NetworkError({ code: 500, message: "timeout" })
 })
 
 // The effect fails with a NetworkError

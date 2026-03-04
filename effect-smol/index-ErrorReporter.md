@@ -32,7 +32,7 @@ class RateLimitError extends Data.TaggedError("RateLimitError")<{
 
 // Opt in to error reporting with Effect.withErrorReporting
 const program = Effect.gen(function*() {
-  yield* new RateLimitError({ retryAfter: 60 })
+  return yield* new RateLimitError({ retryAfter: 60 })
 }).pipe(
   Effect.withErrorReporting,
   Effect.provide(ErrorReporter.layer([consoleReporter]))

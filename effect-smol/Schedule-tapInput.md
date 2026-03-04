@@ -27,7 +27,7 @@ const retryProgram = Effect.gen(function*() {
     Effect.gen(function*() {
       attempt++
       if (attempt < 4) {
-        yield* Effect.fail(new Error(`Network timeout on attempt ${attempt}`))
+        return yield* Effect.fail(new Error(`Network timeout on attempt ${attempt}`))
       }
       return `Success on attempt ${attempt}`
     }),
@@ -98,7 +98,7 @@ const alertProgram = Effect.gen(function*() {
       const errorType = isCritical
         ? "critical database failure"
         : "temporary network issue"
-      yield* Effect.fail(new Error(errorType))
+      return yield* Effect.fail(new Error(errorType))
     }),
     alertingSchedule
   ).pipe(

@@ -29,7 +29,7 @@ const databaseLayer = Layer.effect(
     yield* Console.log(parentSpan.spanId) // "42"
 
     return {
-      query: (sql: string) => Effect.succeed(`Result: ${sql}`)
+      query: Effect.fn("Database.query")((sql: string) => Effect.succeed(`Result: ${sql}`))
     }
   })
 ).pipe(Layer.provide(Layer.parentSpan(Tracer.externalSpan({
@@ -44,6 +44,6 @@ const databaseLayer = Layer.effect(
 declare const parentSpan: (span: Tracer.AnySpan) => Layer<Tracer.ParentSpan>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L2009)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L2008)
 
 Since v4.0.0

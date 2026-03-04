@@ -34,7 +34,7 @@ const program = Effect.gen(function*() {
       yield* Console.log(`Attempt ${attempt}`)
 
       if (attempt < 7) { // Needs both phases to succeed
-        yield* Effect.fail(new Error(`Attempt ${attempt} failed`))
+        return yield* Effect.fail(new Error(`Attempt ${attempt} failed`))
       }
 
       return `Success on attempt ${attempt}`

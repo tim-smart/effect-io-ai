@@ -22,10 +22,10 @@ class Logger extends ServiceMap.Service<Logger, {
 }>()("Logger") {}
 
 const dbLayer = Layer.succeed(Database)({
-  query: (sql: string) => Effect.succeed("result")
+  query: Effect.fn("Database.query")((sql: string) => Effect.succeed("result"))
 })
 const loggerLayer = Layer.succeed(Logger)({
-  log: (msg: string) => Effect.sync(() => console.log(msg))
+  log: Effect.fn("Logger.log")((msg: string) => Effect.sync(() => console.log(msg)))
 })
 
 const mergedLayer = Layer.mergeAll(dbLayer, loggerLayer)

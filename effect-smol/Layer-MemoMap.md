@@ -23,7 +23,7 @@ const program = Effect.gen(function*() {
   const scope = yield* Effect.scope
 
   const dbLayer = Layer.succeed(Database)({
-    query: (sql: string) => Effect.succeed("result")
+    query: Effect.fn("Database.query")((sql: string) => Effect.succeed("result"))
   })
   const services = yield* Layer.buildWithMemoMap(dbLayer, memoMap, scope)
 

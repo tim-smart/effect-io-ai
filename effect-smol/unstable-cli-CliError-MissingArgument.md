@@ -22,7 +22,7 @@ console.log(missingArgError.message)
 const parseArguments = (args: Array<string>) =>
   Effect.gen(function*() {
     if (args.length === 0) {
-      return yield* Effect.fail(missingArgError)
+      return yield* missingArgError
     }
     return args[0]
   })

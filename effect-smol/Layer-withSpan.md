@@ -28,14 +28,14 @@ const databaseLayer = Layer.effect(Database, Effect.gen(function*() {
   yield* Effect.log("Connecting to database")
   yield* Effect.sleep("100 millis")
   return {
-    query: (sql: string) => Effect.succeed(`Result: ${sql}`)
+    query: Effect.fn("Database.query")((sql: string) => Effect.succeed(`Result: ${sql}`))
   }
 })).pipe(Layer.withSpan("database-initialization", {
   attributes: { dbType: "postgres" }
 }))
 
 const loggerLayer = Layer.succeed(Logger, {
-  log: (msg: string) => Effect.sync(() => console.log(msg))
+  log: Effect.fn("Logger.log")((msg: string) => Effect.sync(() => console.log(msg)))
 }).pipe(Layer.withSpan("logger-initialization"))
 
 // Combine traced layers
@@ -64,6 +64,6 @@ const program = Effect.gen(function*() {
 declare const withSpan: { (name: string, options?: SpanOptions): <A, E, R>(self: Layer<A, E, R>) => Layer<A, E, Exclude<R, Tracer.ParentSpan>>; <A, E, R>(self: Layer<A, E, R>, name: string, options?: SpanOptions): Layer<A, E, Exclude<R, Tracer.ParentSpan>>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L2070)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L2069)
 
 Since v4.0.0

@@ -15,7 +15,7 @@ class Notifications extends ServiceMap.Service<Notifications, {
   readonly notify: (message: string) => Effect.Effect<void>
 }>()("Notifications") {
   static readonly layer = Layer.succeed(this)({
-    notify: (message) => Console.log(message)
+    notify: Effect.fn("Notifications.notify")((message) => Console.log(message))
   })
 }
 

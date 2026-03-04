@@ -33,7 +33,7 @@ const program = Effect.gen(function*() {
       attempt++
       if (attempt < 4) {
         yield* Console.log(`Attempt ${attempt} failed, retrying...`)
-        yield* Effect.fail(new Error(`Failure ${attempt}`))
+        return yield* Effect.fail(new Error(`Failure ${attempt}`))
       }
       return `Success on attempt ${attempt}`
     }),

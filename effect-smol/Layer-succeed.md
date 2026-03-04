@@ -20,11 +20,11 @@ class Logger extends ServiceMap.Service<Logger, {
 
 // Create layers from concrete service implementations
 const databaseLayer = Layer.succeed(Database)({
-  query: (sql: string) => Effect.succeed(`Query result: ${sql}`)
+  query: Effect.fn("Database.query")((sql: string) => Effect.succeed(`Query result: ${sql}`))
 })
 
 const loggerLayer = Layer.succeed(Logger)({
-  log: (msg: string) => Effect.sync(() => console.log(`[LOG] ${msg}`))
+  log: Effect.fn("Logger.log")((msg: string) => Effect.sync(() => console.log(`[LOG] ${msg}`)))
 })
 
 // Use the layers in a program

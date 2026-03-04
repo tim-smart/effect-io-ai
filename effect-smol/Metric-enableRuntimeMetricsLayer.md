@@ -27,7 +27,7 @@ const userService = Effect.gen(function*() {
     Effect.gen(function*() {
       yield* Effect.sleep(`${50 + id * 10} millis`)
       if (id % 7 === 0) {
-        yield* Effect.fail(new AppError({ operation: `fetch-user-${id}` }))
+        return yield* new AppError({ operation: `fetch-user-${id}` })
       }
       return { id, name: `User ${id}`, email: `user${id}@example.com` }
     })

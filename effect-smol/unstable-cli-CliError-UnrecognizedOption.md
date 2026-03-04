@@ -28,7 +28,7 @@ console.log(unrecognizedError.message)
 // In CLI parsing context
 const parseCommand = Effect.gen(function*() {
   // If parsing encounters unknown flag
-  return yield* Effect.fail(unrecognizedError)
+  return yield* unrecognizedError
 })
 ```
 

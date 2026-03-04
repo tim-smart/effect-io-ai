@@ -15,7 +15,7 @@ class Database extends ServiceMap.Service<Database, {
 }>()("Database") {}
 
 const dbLayer = Layer.succeed(Database)({
-  query: (sql: string) => Effect.succeed("result")
+  query: Effect.fn("Database.query")((sql: string) => Effect.succeed("result"))
 })
 const notALayer = { someProperty: "value" }
 

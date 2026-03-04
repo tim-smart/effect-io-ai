@@ -12,6 +12,6 @@ falling back to `"Error"` when unset or invalid.
 declare const getSeverity: (error: object) => Severity
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ErrorReporter.ts#L391)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ErrorReporter.ts#L389)
 
 Since v4.0.0

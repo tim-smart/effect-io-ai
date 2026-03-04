@@ -28,8 +28,8 @@ class Logger extends ServiceMap.Service<Logger, {
 
 // Primary database layer that might fail
 const primaryDatabaseLayer = Layer.effect(Database)(Effect.gen(function*() {
-  yield* Effect.fail(new DatabaseError({ message: "Primary DB unreachable" }))
-  return { query: (sql: string) => Effect.succeed(`Primary: ${sql}`) }
+  return yield* new DatabaseError({ message: "Primary DB unreachable" })
+  return { query: Effect.fn("Database.query")((sql: string) => Effect.succeed(`Primary: ${sql}`)) }
 }))
 
 // Fallback layers for different error causes
@@ -38,11 +38,12 @@ const databaseWithFallback = primaryDatabaseLayer.pipe(
     // For any cause/error, fallback to in-memory database
     return Layer.mergeAll(
       Layer.succeed(Database)({
-        query: (sql: string) => Effect.succeed(`Memory: ${sql}`)
+        query: Effect.fn("Database.query")((sql: string) => Effect.succeed(`Memory: ${sql}`))
       }),
       Layer.succeed(Logger)({
-        log: (msg: string) =>
+        log: Effect.fn("Logger.log")((msg: string) =>
           Effect.sync(() => console.log(`[FALLBACK] ${msg}`))
+        )
       })
     )
   })

@@ -15,6 +15,6 @@ available for selection.
 declare const DateTimeUpdate: DateTimeUpdate
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Model.ts#L460)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Model.ts#L491)
 
 Since v4.0.0

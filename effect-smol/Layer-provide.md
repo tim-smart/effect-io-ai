@@ -29,11 +29,11 @@ class Logger extends ServiceMap.Service<Logger, {
 
 // Create dependency layers
 const databaseLayer = Layer.succeed(Database)({
-  query: (sql: string) => Effect.succeed(`DB: ${sql}`)
+  query: Effect.fn("Database.query")((sql: string) => Effect.succeed(`DB: ${sql}`))
 })
 
 const loggerLayer = Layer.succeed(Logger)({
-  log: (msg: string) => Effect.sync(() => console.log(`[LOG] ${msg}`))
+  log: Effect.fn("Logger.log")((msg: string) => Effect.sync(() => console.log(`[LOG] ${msg}`)))
 })
 
 // UserService depends on Database and Logger
@@ -42,8 +42,7 @@ const userServiceLayer = Layer.effect(UserService)(Effect.gen(function*() {
   const logger = yield* Logger
 
   return {
-    getUser: (id: string) =>
-      Effect.gen(function*() {
+    getUser: Effect.fn("UserService.getUser")(function*(id: string) {
         yield* logger.log(`Looking up user ${id}`)
         const result = yield* database.query(
           `SELECT * FROM users WHERE id = ${id}`
@@ -73,6 +72,6 @@ const program = Effect.gen(function*() {
 declare const provide: { <RIn, E, ROut>(that: Layer<ROut, E, RIn>): <RIn2, E2, ROut2>(self: Layer<ROut2, E2, RIn2>) => Layer<ROut2, E | E2, RIn | Exclude<RIn2, ROut>>; <const Layers extends [Any, ...Array<Any>]>(that: Layers): <A, E, R>(self: Layer<A, E, R>) => Layer<A, E | Error<Layers[number]>, Services<Layers[number]> | Exclude<R, Success<Layers[number]>>>; <RIn2, E2, ROut2, RIn, E, ROut>(self: Layer<ROut2, E2, RIn2>, that: Layer<ROut, E, RIn>): Layer<ROut2, E | E2, RIn | Exclude<RIn2, ROut>>; <A, E, R, const Layers extends [Any, ...Array<Any>]>(self: Layer<A, E, R>, that: Layers): Layer<A, E | Error<Layers[number]>, Services<Layers[number]> | Exclude<R, Success<Layers[number]>>>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L1083)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L1082)
 
 Since v2.0.0

@@ -18,7 +18,7 @@ const flaky = Effect.gen(function*() {
   attempts++
   yield* Console.log(`Attempt ${attempts}`)
   if (attempts < 3) {
-    yield* Effect.fail("Not ready")
+    return yield* Effect.fail("Not ready")
   }
   return "Ready"
 })

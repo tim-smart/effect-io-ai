@@ -54,7 +54,7 @@ const retryProgram = Effect.gen(function*() {
       yield* Console.log(`Retry attempt ${attempt}`)
 
       if (attempt < 6) {
-        yield* Effect.fail(new Error(`Attempt ${attempt} failed`))
+        return yield* Effect.fail(new Error(`Attempt ${attempt} failed`))
       }
 
       return `Success on attempt ${attempt}`

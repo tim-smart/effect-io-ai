@@ -71,7 +71,7 @@ const retryProgram = Effect.gen(function*() {
       yield* Console.log(`Retry attempt ${attempt}`)
 
       if (Math.random() < 0.8) { // 80% failure rate
-        yield* Effect.fail(new Error(`Attempt ${attempt} failed`))
+        return yield* Effect.fail(new Error(`Attempt ${attempt} failed`))
       }
 
       return `Success on attempt ${attempt}`

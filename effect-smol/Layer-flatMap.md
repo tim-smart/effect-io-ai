@@ -36,18 +36,19 @@ const dynamicServiceLayer = configLayer.pipe(
 
     // Create database layer based on config
     const dbLayer = Layer.succeed(Database)({
-      query: (sql: string) =>
+      query: Effect.fn("Database.query")((sql: string) =>
         Effect.succeed(
           `Querying ${config.dbUrl}: ${sql}`
-        )
+        ))
     })
 
     // Create logger layer based on config
     const loggerLayer = Layer.succeed(Logger)({
-      log: (msg: string) =>
+      log: Effect.fn("Logger.log")((msg: string) =>
         config.logLevel === "debug"
           ? Effect.sync(() => console.log(`[DEBUG] ${msg}`))
           : Effect.sync(() => console.log(msg))
+      )
     })
 
     // Return combined layer
@@ -75,6 +76,6 @@ const program = Effect.gen(function*() {
 declare const flatMap: { <A, A2, E2, R2>(f: (context: ServiceMap.ServiceMap<A>) => Layer<A2, E2, R2>): <E, R>(self: Layer<A, E, R>) => Layer<A2, E2 | E, R2 | R>; <A, E, R, A2, E2, R2>(self: Layer<A, E, R>, f: (context: ServiceMap.ServiceMap<A>) => Layer<A2, E2, R2>): Layer<A2, E | E2, R | R2>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L1294)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L1293)
 
 Since v2.0.0

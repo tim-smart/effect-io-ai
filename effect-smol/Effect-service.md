@@ -28,6 +28,6 @@ const program = Effect.gen(function*() {
 declare const service: <I, S>(service: ServiceMap.Key<I, S>) => Effect<S, never, I>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L5723)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L5726)
 
 Since v4.0.0

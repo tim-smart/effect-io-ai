@@ -27,9 +27,7 @@ const program = Effect.gen(function*() {
         yield* Effect.sleep(`${100 + i * 50} millis`)
         if (i % 4 === 0) {
           // Simulate some failures
-          yield* Effect.fail(
-            new RuntimeMetricsError({ operation: `task-${i}` })
-          )
+          return yield* new RuntimeMetricsError({ operation: `task-${i}` })
         }
         return `Task ${i} completed`
       }).pipe(
@@ -87,6 +85,6 @@ const programWithLayer = program.pipe(
 declare const enableRuntimeMetrics: <A, E, R>(self: Effect<A, E, R>) => Effect<A, E, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Metric.ts#L3888)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Metric.ts#L3886)
 
 Since v4.0.0

@@ -23,7 +23,7 @@ const validateRequiredOptions = (options: Record<string, string | undefined>) =>
   Effect.gen(function*() {
     const apiKey = options["api-key"]
     if (!apiKey) {
-      return yield* Effect.fail(missingOptionError)
+      return yield* missingOptionError
     }
     return apiKey
   })

@@ -19,7 +19,7 @@ class Database extends ServiceMap.Service<Database, {
 }>()("Database") {}
 
 const layerEffect = Effect.succeed(
-  Layer.succeed(Database)({ query: (sql: string) => Effect.succeed("result") })
+  Layer.succeed(Database)({ query: Effect.fn("Database.query")((sql: string) => Effect.succeed("result")) })
 )
 
 const unwrappedLayer = Layer.unwrap(layerEffect)

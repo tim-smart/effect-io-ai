@@ -11,17 +11,17 @@ when the value is `null` or `undefined`.
 ```ts
 import { Console, Effect } from "effect"
 
-const input: string | null = null
-
-const program = Effect.gen(function*() {
+const program = Effect.fn(function*(input: string | null) {
   const value = yield* Effect.fromNullishOr(input)
   yield* Console.log(value)
-}).pipe(
+},
   Effect.catch(() => Console.log("missing"))
 )
 
-Effect.runPromise(program)
+Effect.runPromise(program(null))
 // Output: missing
+Effect.runPromise(program("hello"))
+// Output: hello
 ```
 
 **Signature**

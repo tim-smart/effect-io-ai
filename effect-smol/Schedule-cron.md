@@ -110,7 +110,7 @@ const robustProgram = Effect.gen(function*() {
       yield* Console.log("Complex scheduled task...")
       // Simulate occasional failures
       if (Math.random() < 0.3) {
-        yield* Effect.fail(new Error("Scheduled task failed"))
+        return yield* Effect.fail(new Error("Scheduled task failed"))
       }
       return "success"
     }),

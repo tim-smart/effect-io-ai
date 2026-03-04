@@ -17,7 +17,7 @@ class Database extends ServiceMap.Service<Database, {
 // Build a layer to get its services
 const program = Effect.gen(function*() {
   const dbLayer = Layer.succeed(Database)({
-    query: (sql: string) => Effect.succeed("result")
+    query: Effect.fn("Database.query")((sql: string) => Effect.succeed("result"))
   })
 
   // Build the layer into ServiceMap - automatically manages scope and memoization

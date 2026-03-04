@@ -26,14 +26,14 @@ class Cache extends ServiceMap.Service<Cache, {
 const DatabaseLayer = Layer.effect(Database, Effect.gen(function*() {
   yield* Effect.log("Connecting to database")
   return {
-    query: (sql: string) => Effect.succeed(`DB: ${sql}`)
+    query: Effect.fn("Database.query")((sql: string) => Effect.succeed(`DB: ${sql}`))
   }
 }))
 
 const CacheLayer = Layer.effect(Cache, Effect.gen(function*() {
   yield* Effect.log("Connecting to cache")
   return {
-    get: (key: string) => Effect.succeed(`Cache: ${key}`)
+    get: Effect.fn("Cache.get")((key: string) => Effect.succeed(`Cache: ${key}`))
   }
 }))
 
@@ -65,6 +65,6 @@ const program = Effect.withSpan("application-startup")(
 declare const withParentSpan: { (span: Tracer.AnySpan, options?: Tracer.TraceOptions): <A, E, R>(self: Layer<A, E, R>) => Layer<A, E, Exclude<R, Tracer.ParentSpan>>; <A, E, R>(self: Layer<A, E, R>, span: Tracer.AnySpan, options?: Tracer.TraceOptions): Layer<A, E, Exclude<R, Tracer.ParentSpan>>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L2173)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L2172)
 
 Since v4.0.0

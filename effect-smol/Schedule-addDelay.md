@@ -105,7 +105,7 @@ const retryProgram = Effect.gen(function*() {
     Effect.gen(function*() {
       attempt++
       if (attempt < 5) {
-        yield* Effect.fail(new Error(`Attempt ${attempt} failed`))
+        return yield* Effect.fail(new Error(`Attempt ${attempt} failed`))
       }
       return `Success on attempt ${attempt}`
     }),

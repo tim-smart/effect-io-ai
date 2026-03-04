@@ -25,13 +25,11 @@ const serverLayer = Layer.effect(HttpServer)(Effect.gen(function*() {
   yield* Console.log("Starting HTTP server...")
 
   return {
-    start: () =>
-      Effect.gen(function*() {
+    start: Effect.fn("HttpServer.start")(function*() {
         yield* Console.log("Server listening on port 3000")
         return "Server started"
       }),
-    stop: () =>
-      Effect.gen(function*() {
+    stop: Effect.fn("HttpServer.stop")(function*() {
         yield* Console.log("Server stopped gracefully")
         return "Server stopped"
       })
@@ -39,7 +37,7 @@ const serverLayer = Layer.effect(HttpServer)(Effect.gen(function*() {
 }))
 
 const loggerLayer = Layer.succeed(Logger)({
-  log: (msg: string) => Console.log(`[LOG] ${msg}`)
+  log: Effect.fn("Logger.log")((msg: string) => Console.log(`[LOG] ${msg}`))
 })
 
 // Application layer combining all services
@@ -62,6 +60,6 @@ const application = appLayer.pipe(
 declare const launch: <RIn, E, ROut>(self: Layer<ROut, E, RIn>) => Effect<never, E, RIn>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L1687)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L1686)
 
 Since v2.0.0

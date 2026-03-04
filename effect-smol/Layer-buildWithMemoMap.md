@@ -26,13 +26,13 @@ const program = Effect.gen(function*() {
 
   // Build database layer with memoization
   const dbLayer = Layer.succeed(Database)({
-    query: (sql: string) => Effect.succeed("result")
+    query: Effect.fn("Database.query")((sql: string) => Effect.succeed("result"))
   })
   const dbServices = yield* Layer.buildWithMemoMap(dbLayer, memoMap, scope)
 
   // Build logger layer with same memoization (reuses memo if same layer)
   const loggerLayer = Layer.succeed(Logger)({
-    log: (msg: string) => Effect.sync(() => console.log(msg))
+    log: Effect.fn("Logger.log")((msg: string) => Effect.sync(() => console.log(msg)))
   })
   const loggerServices = yield* Layer.buildWithMemoMap(
     loggerLayer,

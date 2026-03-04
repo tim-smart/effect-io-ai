@@ -28,7 +28,7 @@ const program = Effect.gen(function*() {
       scope,
       Effect.sync(() => console.log("Database closed"))
     )
-    return { query: (sql: string) => Effect.succeed(`Result: ${sql}`) }
+    return { query: Effect.fn("Database.query")((sql: string) => Effect.succeed(`Result: ${sql}`)) }
   }))
 
   // Build with specific scope - resources tied to this scope
