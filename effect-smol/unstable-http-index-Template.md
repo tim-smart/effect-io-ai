@@ -11,6 +11,6 @@ Re-exports all named exports from the "./Template.ts" module as `Template`.
 export * as Template from "./Template.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L130)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L135)
 
 Since v4.0.0

@@ -9,7 +9,9 @@ outputs the duration between recurrences.
 **Example**
 
 ```ts
-import { Console, Effect, Schedule } from "effect"
+import { Console, Data, Effect, Schedule } from "effect"
+
+class ScheduledTaskError extends Data.TaggedError("ScheduledTaskError")<{ readonly message: string }> {}
 
 // Run every minute
 const everyMinute = Schedule.cron("* * * * *")
@@ -110,7 +112,7 @@ const robustProgram = Effect.gen(function*() {
       yield* Console.log("Complex scheduled task...")
       // Simulate occasional failures
       if (Math.random() < 0.3) {
-        return yield* Effect.fail(new Error("Scheduled task failed"))
+        return yield* Effect.fail(new ScheduledTaskError({ message: "Scheduled task failed" }))
       }
       return "success"
     }),
@@ -129,6 +131,6 @@ const robustProgram = Effect.gen(function*() {
 declare const cron: { (expression: Cron.Cron): Schedule<Duration.Duration, unknown, Cron.CronParseError>; (expression: string, tz?: string | DateTime.TimeZone): Schedule<Duration.Duration, unknown, Cron.CronParseError>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L1457)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L1467)
 
 Since v4.0.0

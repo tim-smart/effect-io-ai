@@ -17,9 +17,11 @@ other operations).
 **Example**
 
 ```ts
-import { Cause, Console, Effect, Result } from "effect"
+import { Cause, Console, Data, Effect, Result } from "effect"
 
-const task = Effect.fail(new Error("Task failed"))
+class TaskError extends Data.TaggedError("TaskError")<{ readonly message: string }> {}
+
+const task = Effect.fail(new TaskError({ message: "Task failed" }))
 
 const program = Effect.matchCauseEffect(task, {
   onFailure: (cause) =>
@@ -59,6 +61,6 @@ Effect.runPromise(program).then(console.log)
 declare const matchCauseEffect: { <E, A2, E2, R2, A, A3, E3, R3>(options: { readonly onFailure: (cause: Cause.Cause<E>) => Effect<A2, E2, R2>; readonly onSuccess: (a: A) => Effect<A3, E3, R3>; }): <R>(self: Effect<A, E, R>) => Effect<A2 | A3, E2 | E3, R2 | R3 | R>; <A, E, R, A2, E2, R2, A3, E3, R3>(self: Effect<A, E, R>, options: { readonly onFailure: (cause: Cause.Cause<E>) => Effect<A2, E2, R2>; readonly onSuccess: (a: A) => Effect<A3, E3, R3>; }): Effect<A2 | A3, E2 | E3, R2 | R3 | R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L5338)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L5374)
 
 Since v2.0.0

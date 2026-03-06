@@ -15,12 +15,14 @@ functions like `catchAll` or `catchTag`.
 
 ```ts
 // Title: Creating a Failed Effect
-import { Effect } from "effect"
+import { Data, Effect } from "effect"
 
-//      ┌─── Effect<never, Error, never>
+class OperationFailedError extends Data.TaggedError("OperationFailedError")<{}> {}
+
+//      ┌─── Effect<never, OperationFailedError, never>
 //      ▼
 const failure = Effect.fail(
-  new Error("Operation failed due to network error")
+  new OperationFailedError()
 )
 ```
 
@@ -34,6 +36,6 @@ const failure = Effect.fail(
 declare const fail: <E>(error: E) => Effect<never, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L1630)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L1642)
 
 Since v2.0.0

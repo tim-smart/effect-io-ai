@@ -77,6 +77,6 @@ type Constructor<A> = Types.Simplify<
   >
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Data.ts#L423)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Data.ts#L422)
 
 Since v3.1.0

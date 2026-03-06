@@ -60,6 +60,6 @@ const logAnnotationExample = Effect.gen(function*() {
 declare const CurrentLogAnnotations: ServiceMap.Reference<ReadonlyRecord<string, unknown>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/References.ts#L409)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/References.ts#L414)
 
 Since v4.0.0

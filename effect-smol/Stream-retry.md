@@ -37,6 +37,6 @@ Effect.runPromise(program)
 declare const retry: { <E, X, E2, R2>(policy: Schedule.Schedule<X, NoInfer<E>, E2, R2> | (($: <SO, SE, SR>(_: Schedule.Schedule<SO, NoInfer<E>, SE, SR>) => Schedule.Schedule<SO, E, SE, SR>) => Schedule.Schedule<X, NoInfer<E>, E2, R2>)): <A, R>(self: Stream<A, E, R>) => Stream<A, E | E2, R2 | R>; <A, E, R, X, E2, R2>(self: Stream<A, E, R>, policy: Schedule.Schedule<X, NoInfer<E>, E2, R2> | (($: <SO, SE, SR>(_: Schedule.Schedule<SO, NoInfer<E>, SE, SR>) => Schedule.Schedule<SO, E, SE, SR>) => Schedule.Schedule<X, NoInfer<E>, E2, R2>)): Stream<A, E | E2, R2 | R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L5615)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L5619)
 
 Since v2.0.0

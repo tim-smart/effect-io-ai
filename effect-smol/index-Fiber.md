@@ -66,6 +66,6 @@ const parallelExample = Effect.gen(function*() {
 export * as Fiber from "./Fiber.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L1313)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L1315)
 
 Since v2.0.0

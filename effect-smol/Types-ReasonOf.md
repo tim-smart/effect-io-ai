@@ -34,6 +34,6 @@ type Reasons = Types.ReasonOf<ApiError>
 type ReasonOf<E> = E extends { readonly reason: infer R } ? R : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Types.ts#L868)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Types.ts#L846)
 
 Since v4.0.0

@@ -13,6 +13,6 @@ setting.
 declare const fork: <A extends object>(value: A) => Wrapper<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Rpc.ts#L850)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Rpc.ts#L848)
 
 Since v4.0.0

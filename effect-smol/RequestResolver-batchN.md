@@ -31,7 +31,7 @@ const limitedResolver = RequestResolver.batchN(resolver, 5)
 // When more than 5 requests are made, they'll be split into multiple batches
 const requests = Array.from(
   { length: 12 },
-  (_, i) => Effect.request(GetDataRequest({ id: i }), Effect.succeed(limitedResolver))
+  (_, i) => Effect.request(GetDataRequest({ id: i }), limitedResolver)
 )
 ```
 

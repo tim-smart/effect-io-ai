@@ -28,6 +28,6 @@ type OkVariant = Data.TaggedEnum.Value<Result, "Ok">
 type Value<A, K> = Extract<A, { readonly _tag: K }>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Data.ts#L380)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Data.ts#L379)
 
 Since v2.0.0

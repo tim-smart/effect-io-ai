@@ -89,6 +89,6 @@ const customTimingSchedule = Schedule.delays(
 declare const delays: <Out, In, E, R>(self: Schedule<Out, In, E, R>) => Schedule<Duration.Duration, In, E, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L1553)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L1563)
 
 Since v2.0.0

@@ -11,6 +11,6 @@ Re-exports all named exports from the "./SchemaParser.ts" module as `SchemaParse
 export * as SchemaParser from "./SchemaParser.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L3460)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L3462)
 
 Since v4.0.0

@@ -11,6 +11,6 @@ Re-exports all named exports from the "./TxDeferred.ts" module as `TxDeferred`.
 export * as TxDeferred from "./TxDeferred.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L3929)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L3931)
 
 Since v4.0.0

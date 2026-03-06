@@ -34,6 +34,6 @@ interface Functor<F extends HKT.TypeLambda> extends HKT.TypeClass<F> {
 export * as HKT from "./HKT.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L1502)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L1504)
 
 Since v2.0.0

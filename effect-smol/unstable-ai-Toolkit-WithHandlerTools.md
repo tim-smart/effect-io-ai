@@ -12,6 +12,6 @@ handlers.
 type WithHandlerTools<T> = T extends WithHandler<infer Tools> ? Tools : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Toolkit.ts#L259)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Toolkit.ts#L257)
 
 Since v1.0.0

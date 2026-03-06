@@ -20,16 +20,18 @@ effects and return the final result at the end.
 **Example**
 
 ```ts
-import { Effect } from "effect"
+import { Data, Effect } from "effect"
+
+class DiscountRateError extends Data.TaggedError("DiscountRateError")<{}> {}
 
 const addServiceCharge = (amount: number) => amount + 1
 
 const applyDiscount = (
   total: number,
   discountRate: number
-): Effect.Effect<number, Error> =>
+): Effect.Effect<number, DiscountRateError> =>
   discountRate === 0
-    ? Effect.fail(new Error("Discount rate cannot be zero"))
+    ? Effect.fail(new DiscountRateError())
     : Effect.succeed(total - (total * discountRate) / 100)
 
 const fetchTransactionAmount = Effect.promise(() => Promise.resolve(100))
@@ -54,6 +56,6 @@ export const program = Effect.gen(function*() {
 declare const gen: { <Eff extends Yieldable<any, any, any, any>, AEff>(f: () => Generator<Eff, AEff, never>): Effect<AEff, [Eff] extends [never] ? never : [Eff] extends [Yieldable<infer _S, infer _A, infer E, infer _R>] ? E : never, [Eff] extends [never] ? never : [Eff] extends [Yieldable<infer _S, infer _A, infer _E, infer R>] ? R : never>; <Self, Eff extends Yieldable<any, any, any, any>, AEff>(options: { readonly self: Self; }, f: (this: Self) => Generator<Eff, AEff, never>): Effect<AEff, [Eff] extends [never] ? never : [Eff] extends [Yieldable<infer _S, infer _A, infer E, infer _R>] ? E : never, [Eff] extends [never] ? never : [Eff] extends [Yieldable<infer _S, infer _A, infer _E, infer R>] ? R : never>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L1564)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L1574)
 
 Since v2.0.0

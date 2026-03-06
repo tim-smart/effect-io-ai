@@ -11,6 +11,6 @@ Re-exports all named exports from the "./Resource.ts" module as `Resource`.
 export * as Resource from "./Resource.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L3065)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L3067)
 
 Since v2.0.0

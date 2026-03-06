@@ -27,6 +27,6 @@ Effect.runPromiseExit(effect2).then(console.log)
 declare const fromOption: <A>(option: Option<A>) => Effect<A, Cause.NoSuchElementError>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L1926)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L1942)
 
 Since v4.0.0

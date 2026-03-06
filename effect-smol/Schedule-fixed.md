@@ -68,6 +68,6 @@ const program = Effect.gen(function*() {
 declare const fixed: (interval: Duration.Input) => Schedule<number>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L2177)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L2195)
 
 Since v2.0.0

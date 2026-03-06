@@ -10,7 +10,9 @@ duration between recurrences.
 **Example**
 
 ```ts
-import { Console, Effect, Schedule } from "effect"
+import { Console, Data, Effect, Schedule } from "effect"
+
+class RetryAttemptError extends Data.TaggedError("RetryAttemptError")<{ readonly message: string }> {}
 
 // Basic fibonacci schedule starting with 100ms
 const fibSchedule = Schedule.fibonacci("100 millis")
@@ -26,7 +28,7 @@ const retryWithFib = Effect.gen(function*() {
       yield* Console.log(`Attempt ${attempt}`)
 
       if (attempt < 5) {
-        return yield* Effect.fail(new Error(`Attempt ${attempt} failed`))
+        return yield* Effect.fail(new RetryAttemptError({ message: `Attempt ${attempt} failed` }))
       }
 
       return `Success on attempt ${attempt}`
@@ -70,6 +72,6 @@ const compareSchedules = Effect.gen(function*() {
 declare const fibonacci: (one: Duration.Input) => Schedule<Duration.Duration>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L2100)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L2118)
 
 Since v2.0.0

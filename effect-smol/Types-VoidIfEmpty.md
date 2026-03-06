@@ -9,9 +9,9 @@ otherwise returns `S`.
 **Signature**
 
 ```ts
-type VoidIfEmpty<S> = MatchRecord<S, void, S>
+type VoidIfEmpty<S> = keyof S extends never ? void : S
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Types.ts#L739)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Types.ts#L717)
 
 Since v4.0.0

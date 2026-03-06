@@ -10,7 +10,9 @@ schedule to completion. Once the left schedule is complete, the right (i.e.
 **Example**
 
 ```ts
-import { Console, Effect, Schedule } from "effect"
+import { Console, Data, Effect, Schedule } from "effect"
+
+class RetryAttemptError extends Data.TaggedError("RetryAttemptError")<{ readonly message: string }> {}
 
 // First retry 3 times quickly, then switch to slower retries
 const quickRetries = Schedule.exponential("100 millis").pipe(
@@ -29,7 +31,7 @@ const program = Effect.gen(function*() {
       attempt++
       yield* Console.log(`Attempt ${attempt}`)
       if (attempt < 6) {
-        return yield* Effect.fail(new Error(`Failure ${attempt}`))
+        return yield* Effect.fail(new RetryAttemptError({ message: `Failure ${attempt}` }))
       }
       return `Success on attempt ${attempt}`
     }),
@@ -44,6 +46,6 @@ const program = Effect.gen(function*() {
 declare const andThen: { <Output2, Input2, Error2, Env2>(other: Schedule<Output2, Input2, Error2, Env2>): <Output, Input, Error, Env>(self: Schedule<Output, Input, Error, Env>) => Schedule<Output | Output2, Input & Input2, Error | Error2, Env | Env2>; <Output, Input, Error, Env, Output2, Input2, Error2, Env2>(self: Schedule<Output, Input, Error, Env>, other: Schedule<Output2, Input2, Error2, Env2>): Schedule<Output | Output2, Input & Input2, Error | Error2, Env | Env2>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L694)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L698)
 
 Since v2.0.0

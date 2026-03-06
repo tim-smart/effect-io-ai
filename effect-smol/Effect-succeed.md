@@ -33,6 +33,6 @@ const success = Effect.succeed(42)
 declare const succeed: <A>(value: A) => Effect<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L1183)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L1191)
 
 Since v2.0.0

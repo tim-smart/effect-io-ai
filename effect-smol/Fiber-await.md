@@ -23,6 +23,6 @@ const program = Effect.gen(function*() {
 declare const await: <A, E>(self: Fiber<A, E>) => Effect<Exit<A, E>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Fiber.ts#L208)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Fiber.ts#L209)
 
 Since v2.0.0

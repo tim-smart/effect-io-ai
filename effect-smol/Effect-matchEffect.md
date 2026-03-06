@@ -20,11 +20,13 @@ notifying users, based on whether an effect succeeds or fails.
 
 ```ts
 // Title: Handling Both Success and Failure Cases with Side Effects
-import { Effect } from "effect"
+import { Data, Effect } from "effect"
 
-const success: Effect.Effect<number, Error> = Effect.succeed(42)
-const failure: Effect.Effect<number, Error> = Effect.fail(
-  new Error("Uh oh!")
+class ExampleError extends Data.TaggedError("ExampleError")<{ readonly message: string }> {}
+
+const success: Effect.Effect<number, ExampleError> = Effect.succeed(42)
+const failure: Effect.Effect<number, ExampleError> = Effect.fail(
+  new ExampleError({ message: "Uh oh!" })
 )
 
 const program1 = Effect.matchEffect(success, {
@@ -67,6 +69,6 @@ result or failure.
 declare const matchEffect: { <E, A2, E2, R2, A, A3, E3, R3>(options: { readonly onFailure: (e: E) => Effect<A2, E2, R2>; readonly onSuccess: (a: A) => Effect<A3, E3, R3>; }): <R>(self: Effect<A, E, R>) => Effect<A2 | A3, E2 | E3, R2 | R3 | R>; <A, E, R, A2, E2, R2, A3, E3, R3>(self: Effect<A, E, R>, options: { readonly onFailure: (e: E) => Effect<A2, E2, R2>; readonly onSuccess: (a: A) => Effect<A3, E3, R3>; }): Effect<A2 | A3, E2 | E3, R2 | R3 | R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L5411)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L5449)
 
 Since v2.0.0

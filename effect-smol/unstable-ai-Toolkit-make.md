@@ -38,6 +38,6 @@ const toolkit = Toolkit.make(GetCurrentTime, GetWeather)
 declare const make: <Tools extends ReadonlyArray<Tool.Any>>(...tools: Tools) => Toolkit<ToolsByName<Tools>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Toolkit.ts#L518)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Toolkit.ts#L509)
 
 Since v1.0.0

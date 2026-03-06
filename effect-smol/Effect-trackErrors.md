@@ -31,18 +31,20 @@ Effect.runPromiseExit(program).then(() =>
 **Example**
 
 ```ts
-import { Effect, Metric } from "effect"
+import { Data, Effect, Metric } from "effect"
+
+class ConnectionFailedError extends Data.TaggedError("ConnectionFailedError")<{}> {}
 
 // Track error types using frequency metric
 const errorTypeFrequency = Metric.frequency("error_types")
 
-const program = Effect.fail(new Error("Connection failed")).pipe(
-  Effect.trackErrors(errorTypeFrequency, (error: Error) => error.name)
+const program = Effect.fail(new ConnectionFailedError()).pipe(
+  Effect.trackErrors(errorTypeFrequency, (error: ConnectionFailedError) => error._tag)
 )
 
 Effect.runPromiseExit(program).then(() =>
   Effect.runPromise(Metric.value(errorTypeFrequency)).then(console.log)
-  // Output: { occurrences: Map(1) { "Error" => 1 } }
+  // Output: { occurrences: Map(1) { "ConnectionFailedError" => 1 } }
 )
 ```
 
@@ -52,6 +54,6 @@ Effect.runPromiseExit(program).then(() =>
 declare const trackErrors: { <Input, State, E>(metric: Metric.Metric<Input, State>, f: (error: E) => Input): <A, R>(self: Effect<A, E, R>) => Effect<A, E, R>; <State, E>(metric: Metric.Metric<NoInfer<E>, State>): <A, R>(self: Effect<A, E, R>) => Effect<A, E, R>; <A, E, R, Input, State>(self: Effect<A, E, R>, metric: Metric.Metric<Input, State>, f: (error: E) => Input): Effect<A, E, R>; <A, E, R, State>(self: Effect<A, E, R>, metric: Metric.Metric<NoInfer<E>, State>): Effect<A, E, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L13520)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L13562)
 
 Since v4.0.0

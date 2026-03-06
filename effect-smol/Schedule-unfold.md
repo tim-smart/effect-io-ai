@@ -102,6 +102,6 @@ const stateMachineProgram = Effect.gen(function*() {
 declare const unfold: <State, Error = never, Env = never>(initial: State, next: (state: State) => Effect<State, Error, Env>) => Schedule<State, unknown, Error, Env>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L3089)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L3115)
 
 Since v2.0.0

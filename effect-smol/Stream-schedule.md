@@ -29,6 +29,6 @@ Effect.runPromise(program)
 declare const schedule: { <X, E2, R2, A>(schedule: Schedule.Schedule<X, NoInfer<A>, E2, R2>): <E, R>(self: Stream<A, E, R>) => Stream<A, E | E2, R2 | R>; <A, E, R, X, E2, R2>(self: Stream<A, E, R>, schedule: Schedule.Schedule<X, NoInfer<A>, E2, R2>): Stream<A, E | E2, R | R2>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L2552)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L2556)
 
 Since v2.0.0

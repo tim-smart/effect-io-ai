@@ -9,7 +9,9 @@ specified `duration` of time.
 **Example**
 
 ```ts
-import { Console, Effect, Schedule } from "effect"
+import { Console, Data, Effect, Schedule } from "effect"
+
+class RetryAttemptError extends Data.TaggedError("RetryAttemptError")<{ readonly message: string }> {}
 
 // Run a task for exactly 5 seconds, regardless of how many iterations
 const fiveSecondSchedule = Schedule.during("5 seconds")
@@ -71,7 +73,7 @@ const retryProgram = Effect.gen(function*() {
       yield* Console.log(`Retry attempt ${attempt}`)
 
       if (Math.random() < 0.8) { // 80% failure rate
-        return yield* Effect.fail(new Error(`Attempt ${attempt} failed`))
+        return yield* Effect.fail(new RetryAttemptError({ message: `Attempt ${attempt} failed` }))
       }
 
       return `Success on attempt ${attempt}`
@@ -91,6 +93,6 @@ const retryProgram = Effect.gen(function*() {
 declare const during: (duration: Duration.Input) => Schedule<Duration.Duration>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L1668)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L1680)
 
 Since v4.0.0

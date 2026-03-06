@@ -11,6 +11,6 @@ Re-exports all named exports from the "./Exit.ts" module as `Exit`.
 export * as Exit from "./Exit.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L1237)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L1239)
 
 Since v2.0.0

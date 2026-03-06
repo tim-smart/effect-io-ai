@@ -19,11 +19,13 @@ This is useful for propagating failures as defects, signaling that they should n
 
 ```ts
 // Title: Propagating an Error as a Defect
-import { Effect } from "effect"
+import { Data, Effect } from "effect"
+
+class DivideByZeroError extends Data.TaggedError("DivideByZeroError")<{}> {}
 
 const divide = (a: number, b: number) =>
   b === 0
-    ? Effect.fail(new Error("Cannot divide by zero"))
+    ? Effect.fail(new DivideByZeroError())
     : Effect.succeed(a / b)
 
 //      ┌─── Effect<number, never, never>
@@ -32,7 +34,7 @@ const program = Effect.orDie(divide(1, 0))
 
 Effect.runPromise(program).catch(console.error)
 // Output:
-// (FiberFailure) Error: Cannot divide by zero
+// (FiberFailure) DivideByZeroError
 //   ...stack trace...
 ```
 
@@ -46,6 +48,6 @@ Effect.runPromise(program).catch(console.error)
 declare const orDie: <A, E, R>(self: Effect<A, E, R>) => Effect<A, never, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L3569)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L3597)
 
 Since v2.0.0

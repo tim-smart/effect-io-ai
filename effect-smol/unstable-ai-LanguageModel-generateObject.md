@@ -38,6 +38,6 @@ const program = Effect.gen(function*() {
 declare const generateObject: <ObjectEncoded extends Record<string, any>, StructuredOutputSchema extends Schema.Encoder<ObjectEncoded, unknown>, Options extends NoExcessProperties<GenerateObjectOptions<any, StructuredOutputSchema>, Options>, Tools extends Record<string, Tool.Any> = {}>(options: Options & GenerateObjectOptions<Tools, StructuredOutputSchema>) => Effect.Effect<GenerateObjectResponse<Tools, StructuredOutputSchema["Type"]>, ExtractError<Options>, ExtractServices<Options> | StructuredOutputSchema["DecodingServices"] | LanguageModel>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/LanguageModel.ts#L1406)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/LanguageModel.ts#L1385)
 
 Since v4.0.0

@@ -25,6 +25,6 @@ Effect.runPromise(program)
 declare const drain: <A, E, R>(self: Stream<A, E, R>) => Stream<never, E, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L2443)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L2447)
 
 Since v2.0.0

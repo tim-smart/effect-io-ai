@@ -10,12 +10,14 @@ the schedule.
 **Example**
 
 ```ts
-import { Console, Effect, Schedule } from "effect"
+import { Console, Data, Effect, Schedule } from "effect"
+
+class RetryError extends Data.TaggedError("RetryError")<{ readonly message: string }> {}
 
 // Log retry errors for debugging
 const errorLoggingSchedule = Schedule.exponential("100 millis").pipe(
   Schedule.take(3),
-  Schedule.tapInput((error: Error) =>
+  Schedule.tapInput((error: RetryError) =>
     Console.log(`Retry triggered by error: ${String(error)}`)
   )
 )
@@ -27,7 +29,7 @@ const retryProgram = Effect.gen(function*() {
     Effect.gen(function*() {
       attempt++
       if (attempt < 4) {
-        return yield* Effect.fail(new Error(`Network timeout on attempt ${attempt}`))
+        return yield* Effect.fail(new RetryError({ message: `Network timeout on attempt ${attempt}` }))
       }
       return `Success on attempt ${attempt}`
     }),
@@ -76,7 +78,7 @@ const validationProgram = Effect.gen(function*() {
 // Conditional alerting based on input
 const alertingSchedule = Schedule.exponential("200 millis").pipe(
   Schedule.take(6),
-  Schedule.tapInput((error: Error) =>
+  Schedule.tapInput((error: RetryError) =>
     Effect.gen(function*() {
       if (String(error).includes("critical")) {
         yield* Console.log(`🚨 CRITICAL ERROR: ${String(error)}`)
@@ -98,7 +100,7 @@ const alertProgram = Effect.gen(function*() {
       const errorType = isCritical
         ? "critical database failure"
         : "temporary network issue"
-      return yield* Effect.fail(new Error(errorType))
+      return yield* Effect.fail(new RetryError({ message: errorType }))
     }),
     alertingSchedule
   ).pipe(
@@ -111,10 +113,10 @@ const alertProgram = Effect.gen(function*() {
 // Chain multiple input taps for different purposes
 const comprehensiveSchedule = Schedule.fibonacci("100 millis").pipe(
   Schedule.take(5),
-  Schedule.tapInput((error: Error) =>
-    Console.log(`Error occurred: ${error.name}`)
+  Schedule.tapInput((error: RetryError) =>
+    Console.log(`Error occurred: ${error._tag}`)
   ),
-  Schedule.tapInput((error: Error) =>
+  Schedule.tapInput((error: RetryError) =>
     String(error).length > 20
       ? Console.log("📝 Long error message detected")
       : Effect.void
@@ -128,6 +130,6 @@ const comprehensiveSchedule = Schedule.fibonacci("100 millis").pipe(
 declare const tapInput: { <Input, X, Error2, Env2>(f: (input: Input) => Effect<X, Error2, Env2>): <Output, Error, Env>(self: Schedule<Output, Input, Error, Env>) => Schedule<Output, Input, Error | Error2, Env | Env2>; <Output, Input, Error, Env, X, Error2, Env2>(self: Schedule<Output, Input, Error, Env>, f: (input: Input) => Effect<X, Error2, Env2>): Schedule<Output, Input, Error | Error2, Env | Env2>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L2781)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L2803)
 
 Since v2.0.0

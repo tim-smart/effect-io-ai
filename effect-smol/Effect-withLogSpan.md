@@ -36,6 +36,6 @@ Effect.runPromise(program)
 declare const withLogSpan: ((label: string) => <A, E, R>(effect: Effect<A, E, R>) => Effect<A, E, R>) & (<A, E, R>(effect: Effect<A, E, R>, label: string) => Effect<A, E, R>)
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L13305)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L13345)
 
 Since v2.0.0

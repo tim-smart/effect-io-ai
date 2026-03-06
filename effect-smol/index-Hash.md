@@ -11,6 +11,6 @@ Re-exports all named exports from the "./Hash.ts" module as `Hash`.
 export * as Hash from "./Hash.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L1449)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L1451)
 
 Since v2.0.0

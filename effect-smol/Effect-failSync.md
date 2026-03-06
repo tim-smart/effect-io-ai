@@ -11,9 +11,11 @@ defer the computation of the error value until the effect is actually run.
 **Example**
 
 ```ts
-import { Effect } from "effect"
+import { Data, Effect } from "effect"
 
-const program = Effect.failSync(() => new Error("Something went wrong"))
+class ProgramError extends Data.TaggedError("ProgramError")<{ readonly failedAt: Date }> {}
+
+const program = Effect.failSync(() => new ProgramError({ failedAt: new Date() }))
 
 Effect.runPromiseExit(program).then(console.log)
 // Output: { _id: 'Exit', _tag: 'Failure', cause: ... }
@@ -25,6 +27,6 @@ Effect.runPromiseExit(program).then(console.log)
 declare const failSync: <E>(evaluate: LazyArg<E>) => Effect<never, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L1651)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L1665)
 
 Since v2.0.0

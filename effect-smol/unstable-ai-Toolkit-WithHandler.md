@@ -41,6 +41,6 @@ export interface WithHandler<in out Tools extends Record<string, Tool.Any>> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Toolkit.ts#L220)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Toolkit.ts#L218)
 
 Since v1.0.0

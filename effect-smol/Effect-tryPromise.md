@@ -52,16 +52,18 @@ const program = getTodo(1)
 ```ts
 Custom Error Handling
 ```ts
-import { Effect } from "effect"
+import { Data, Effect } from "effect"
+
+class TodoFetchError extends Data.TaggedError("TodoFetchError")<{ readonly cause: unknown }> {}
 
 const getTodo = (id: number) =>
   Effect.tryPromise({
     try: () => fetch(`https://jsonplaceholder.typicode.com/todos/${id}`),
     // remap the error
-    catch: (unknown) => new Error(`something went wrong ${unknown}`)
+    catch: (cause) => new TodoFetchError({ cause })
   })
 
-//      ┌─── Effect<Response, Error, never>
+//      ┌─── Effect<Response, TodoFetchError, never>
 //      ▼
 const program = getTodo(1)
 ```
@@ -77,6 +79,6 @@ const program = getTodo(1)
 declare const tryPromise: <A, E = Cause.UnknownError>(options: { readonly try: (signal: AbortSignal) => PromiseLike<A>; readonly catch: (error: unknown) => E; } | ((signal: AbortSignal) => PromiseLike<A>)) => Effect<A, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L1152)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L1160)
 
 Since v2.0.0

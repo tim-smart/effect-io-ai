@@ -50,12 +50,14 @@ Effect.runPromiseExit(parseJSON("invalid json")).then(console.log)
 ```ts
 Custom Error Handling
 ```ts
-import { Effect } from "effect"
+import { Data, Effect } from "effect"
+
+class JsonParsingError extends Data.TaggedError("JsonParsingError")<{ readonly cause: unknown }> {}
 
 const parseJSON = (input: string) =>
   Effect.try({
     try: () => JSON.parse(input),
-    catch: (error) => new Error(`JSON parsing failed: ${error}`)
+    catch: (cause) => new JsonParsingError({ cause })
   })
 
 Effect.runPromiseExit(parseJSON("invalid json")).then(console.log)
@@ -74,6 +76,6 @@ throw errors.
 declare const try: <A, E>(options: { try: LazyArg<A>; catch: (error: unknown) => E; }) => Effect<A, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L1811)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L1827)
 
 Since v2.0.0

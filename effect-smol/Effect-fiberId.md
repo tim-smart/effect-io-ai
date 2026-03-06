@@ -27,6 +27,6 @@ const program = Effect.log("event").pipe(
 declare const fiberId: Effect<number, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L8201)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L8241)
 
 Since v4.0.0

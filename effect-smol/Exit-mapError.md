@@ -15,10 +15,12 @@ Supports both curried and direct call styles.
 **Example** (Mapping over an error)
 
 ```ts
-import { Exit } from "effect"
+import { Data, Exit } from "effect"
+
+class ExitError extends Data.TaggedError("ExitError")<{ readonly input: string }> {}
 
 const exit = Exit.fail("bad input")
-const mapped = Exit.mapError(exit, (e) => new Error(e))
+const mapped = Exit.mapError(exit, (e) => new ExitError({ input: e }))
 console.log(Exit.isFailure(mapped)) // true
 ```
 
@@ -33,6 +35,6 @@ console.log(Exit.isFailure(mapped)) // true
 declare const mapError: { <E, E2>(f: (a: NoInfer<E>) => E2): <A>(self: Exit<A, E>) => Exit<A, E2>; <A, E, E2>(self: Exit<A, E>, f: (a: NoInfer<E>) => E2): Exit<A, E2>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Exit.ts#L765)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Exit.ts#L767)
 
 Since v2.0.0

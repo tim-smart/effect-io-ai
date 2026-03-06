@@ -10,7 +10,9 @@ repetitions so far. Returns the current duration between recurrences.
 **Example**
 
 ```ts
-import { Console, Effect, Schedule } from "effect"
+import { Console, Data, Effect, Schedule } from "effect"
+
+class RetryFailure extends Data.TaggedError("RetryFailure")<{ readonly message: string }> {}
 
 // Basic exponential backoff with default factor of 2
 const basicExponential = Schedule.exponential("100 millis")
@@ -33,7 +35,7 @@ const program = Effect.gen(function*() {
       attempt++
       if (attempt < 4) {
         yield* Console.log(`Attempt ${attempt} failed, retrying...`)
-        return yield* Effect.fail(new Error(`Failure ${attempt}`))
+        return yield* Effect.fail(new RetryFailure({ message: `Failure ${attempt}` }))
       }
       return `Success on attempt ${attempt}`
     }),
@@ -52,6 +54,6 @@ const program = Effect.gen(function*() {
 declare const exponential: (base: Duration.Input, factor?: number) => Schedule<Duration.Duration>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L2025)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L2041)
 
 Since v2.0.0

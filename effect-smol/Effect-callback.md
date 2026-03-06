@@ -49,6 +49,6 @@ const program = delay(1000)
 declare const callback: <A, E = never, R = never>(register: (this: Scheduler, resume: (effect: Effect<A, E, R>) => void, signal: AbortSignal) => void | Effect<void, never, R>) => Effect<A, E, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L1407)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L1415)
 
 Since v2.0.0

@@ -11,6 +11,6 @@ Re-exports all named exports from the "./Request.ts" module as `Request`.
 export * as Request from "./Request.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L3055)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L3057)
 
 Since v2.0.0

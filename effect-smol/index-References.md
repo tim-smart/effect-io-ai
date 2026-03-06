@@ -11,6 +11,6 @@ Re-exports all named exports from the "./References.ts" module as `References`.
 export * as References from "./References.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L3031)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L3033)
 
 Since v4.0.0

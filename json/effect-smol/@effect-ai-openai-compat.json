@@ -541,7 +541,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": null,
-    "signature": "type ChatCompletionRequest = {\n  readonly model: string\n  readonly messages: ReadonlyArray<ChatCompletionRequestMessage>\n  readonly temperature?: number | null | undefined\n  readonly top_p?: number | null | undefined\n  readonly max_tokens?: number | null | undefined\n  readonly user?: string | null | undefined\n  readonly seed?: number | undefined\n  readonly parallel_tool_calls?: boolean | null | undefined\n  readonly response_format?: ChatCompletionResponseFormat | undefined\n  readonly tools?: ReadonlyArray<ChatCompletionTool> | undefined\n  readonly tool_choice?: ChatCompletionToolChoice | undefined\n  readonly service_tier?: string | undefined\n  readonly reasoning?: unknown\n  readonly stream?: boolean | undefined\n  readonly stream_options?: {\n    readonly include_usage?: boolean | undefined\n  } | undefined\n}",
+    "signature": "type ChatCompletionRequest = {\n  readonly model: string\n  readonly messages: ReadonlyArray<ChatCompletionRequestMessage>\n  readonly temperature?: number | null | undefined\n  readonly top_p?: number | null | undefined\n  readonly max_tokens?: number | null | undefined\n  readonly user?: string | null | undefined\n  readonly seed?: number | undefined\n  readonly parallel_tool_calls?: boolean | null | undefined\n  readonly response_format?: ChatCompletionResponseFormat | undefined\n  readonly tools?: ReadonlyArray<ChatCompletionTool> | undefined\n  readonly tool_choice?: ChatCompletionToolChoice | undefined\n  readonly service_tier?: string | undefined\n  readonly reasoning?: unknown\n  readonly stream?: boolean | undefined\n  readonly stream_options?: {\n    readonly include_usage?: boolean | undefined\n  } | undefined\n  readonly [x: string]: unknown\n}",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/OpenAiClient.ts#L845"
   },
   {
@@ -557,7 +557,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "type CreateResponseRequestJson = ChatCompletionRequest",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/OpenAiClient.ts#L867"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/OpenAiClient.ts#L868"
   },
   {
     "_tag": "TypeAlias",
@@ -572,7 +572,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "type CreateResponse200 = ChatCompletionResponse",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/OpenAiClient.ts#L871"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/OpenAiClient.ts#L872"
   },
   {
     "_tag": "TypeAlias",
@@ -587,7 +587,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "type CreateResponse200Sse = ChatCompletionStreamEvent",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/OpenAiClient.ts#L875"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/OpenAiClient.ts#L876"
   },
   {
     "_tag": "TypeAlias",
@@ -602,7 +602,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "type ChatCompletionToolCall = typeof ChatCompletionToolCall.Type",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/OpenAiClient.ts#L953"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/OpenAiClient.ts#L954"
   },
   {
     "_tag": "TypeAlias",
@@ -617,7 +617,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "type ChatCompletionMessage = typeof ChatCompletionMessage.Type",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/OpenAiClient.ts#L957"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/OpenAiClient.ts#L958"
   },
   {
     "_tag": "TypeAlias",
@@ -632,7 +632,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "type ChatCompletionChoice = typeof ChatCompletionChoice.Type",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/OpenAiClient.ts#L961"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/OpenAiClient.ts#L962"
   },
   {
     "_tag": "TypeAlias",
@@ -647,7 +647,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "type ChatCompletionUsage = typeof ChatCompletionUsage.Type",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/OpenAiClient.ts#L965"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/OpenAiClient.ts#L966"
   },
   {
     "_tag": "TypeAlias",
@@ -662,7 +662,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "type ChatCompletionResponse = typeof ChatCompletionResponse.Type",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/OpenAiClient.ts#L969"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/OpenAiClient.ts#L970"
   },
   {
     "_tag": "TypeAlias",
@@ -677,7 +677,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "type ChatCompletionChunk = typeof ChatCompletionChunk.Type",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/OpenAiClient.ts#L973"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/OpenAiClient.ts#L974"
   },
   {
     "_tag": "TypeAlias",
@@ -692,7 +692,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "type ChatCompletionStreamEvent = ChatCompletionChunk | \"[DONE]\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/OpenAiClient.ts#L977"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/OpenAiClient.ts#L978"
   },
   {
     "_tag": "Class",
@@ -801,7 +801,7 @@
     "since": "1.0.0",
     "category": "constructors",
     "signature": "declare const make: (args_0: { readonly model: string; readonly config?: Omit<typeof Config.Service, \"model\"> | undefined; }) => Effect.Effect<LanguageModel.Service, never, OpenAiClient>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/OpenAiLanguageModel.ts#L338"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/OpenAiLanguageModel.ts#L339"
   },
   {
     "_tag": "Constant",
@@ -817,7 +817,7 @@
     "since": "1.0.0",
     "category": "configuration",
     "signature": "declare const withConfigOverride: { (overrides: typeof Config.Service): <A, E, R>(self: Effect.Effect<A, E, R>) => Effect.Effect<A, E, Exclude<R, Config>>; <A, E, R>(self: Effect.Effect<A, E, R>, overrides: typeof Config.Service): Effect.Effect<A, E, Exclude<R, Config>>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/OpenAiLanguageModel.ts#L450"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/OpenAiLanguageModel.ts#L449"
   },
   {
     "_tag": "Function",
@@ -832,7 +832,7 @@
     "since": "1.0.0",
     "category": "constructors",
     "signature": "declare const model: (model: string, config?: Omit<typeof Config.Service, \"model\">) => AiModel.Model<\"openai\", LanguageModel.LanguageModel, OpenAiClient>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/OpenAiLanguageModel.ts#L315"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/OpenAiLanguageModel.ts#L316"
   },
   {
     "_tag": "Function",
@@ -848,7 +848,7 @@
     "since": "1.0.0",
     "category": "layers",
     "signature": "declare const layer: (options: { readonly model: string; readonly config?: Omit<typeof Config.Service, \"model\"> | undefined; }) => Layer.Layer<LanguageModel.LanguageModel, never, OpenAiClient>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/OpenAiLanguageModel.ts#L438"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/OpenAiLanguageModel.ts#L437"
   },
   {
     "_tag": "Constant",

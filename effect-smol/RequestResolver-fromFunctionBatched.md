@@ -25,7 +25,7 @@ const DoubleResolver = RequestResolver.fromFunctionBatched<GetDoubleRequest>(
 
 // Usage with multiple requests
 const effects = [1, 2, 3].map((value) =>
-  Effect.request(GetDoubleRequest({ value }), Effect.succeed(DoubleResolver))
+  Effect.request(GetDoubleRequest({ value }), DoubleResolver)
 )
 const batchedEffect = Effect.all(effects) // [2, 4, 6]
 ```

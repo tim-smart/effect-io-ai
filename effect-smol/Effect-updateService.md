@@ -34,6 +34,6 @@ Effect.runPromise(result).then(console.log)
 declare const updateService: { <I, A>(service: ServiceMap.Key<I, A>, f: (value: A) => A): <XA, E, R>(self: Effect<XA, E, R>) => Effect<XA, E, R | I>; <XA, E, R, I, A>(self: Effect<XA, E, R>, service: ServiceMap.Key<I, A>, f: (value: A) => A): Effect<XA, E, R | I>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L5842)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L5880)
 
 Since v2.0.0

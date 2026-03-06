@@ -11,6 +11,6 @@ Re-exports all named exports from the "./JsonSchema.ts" module as `JsonSchema`.
 export * as JsonSchema from "./JsonSchema.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L1775)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L1777)
 
 Since v4.0.0

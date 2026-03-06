@@ -34,6 +34,6 @@ const program = Effect.gen(function*() {
 declare class GenerateTextResponse<Tools> { constructor(content: Array<Response.Part<Tools>>) }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/LanguageModel.ts#L352)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/LanguageModel.ts#L336)
 
 Since v4.0.0

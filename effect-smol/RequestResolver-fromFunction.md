@@ -24,7 +24,7 @@ const SquareResolver = RequestResolver.fromFunction<GetSquareRequest>(
 // Usage
 const getSquareEffect = Effect.request(
   GetSquareRequest({ value: 5 }),
-  Effect.succeed(SquareResolver)
+  SquareResolver
 )
 // Will resolve to 25
 ```

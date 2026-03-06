@@ -51,6 +51,6 @@ const recoveredPending = Effect.catchEager(
 declare const catchEager: { <E, B, E2, R2>(f: (e: NoInfer<E>) => Effect<B, E2, R2>): <A, R>(self: Effect<A, E, R>) => Effect<A | B, E2, R | R2>; <A, E, R, B, E2, R2>(self: Effect<A, E, R>, f: (e: NoInfer<E>) => Effect<B, E2, R2>): Effect<A | B, E2, R | R2>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L14608)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L14652)
 
 Since v4.0.0

@@ -19,6 +19,6 @@ focus behavior. `true` respects `staleTime` and `"always"` forces refetch.
 declare const swr: { (options: { readonly staleTime: Duration.Input; readonly revalidateOnMount?: boolean | undefined; readonly revalidateOnFocus?: boolean | "always" | undefined; readonly focusSignal?: Atom<any> | undefined; }): <R extends Atom<AsyncResult.AsyncResult<any, any>>>(self: R) => WithoutSerializable<R>; <R extends Atom<AsyncResult.AsyncResult<any, any>>>(self: R, options: { readonly staleTime: Duration.Input; readonly revalidateOnMount?: boolean | undefined; readonly revalidateOnFocus?: boolean | "always" | undefined; readonly focusSignal?: Atom<any> | undefined; }): WithoutSerializable<R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Atom.ts#L1567)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Atom.ts#L1569)
 
 Since v4.0.0

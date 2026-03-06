@@ -15,6 +15,6 @@ type TagsWithReason<E> = {
 }[Tags<E>]
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L3099)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L3121)
 
 Since v4.0.0

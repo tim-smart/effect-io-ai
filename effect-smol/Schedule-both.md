@@ -10,7 +10,9 @@ outputting a tuple of the outputs of both schedules.
 **Example**
 
 ```ts
-import { Console, Effect, Schedule } from "effect"
+import { Console, Data, Effect, Schedule } from "effect"
+
+class RetryAttemptError extends Data.TaggedError("RetryAttemptError")<{ readonly message: string }> {}
 
 // Both schedules must want to continue for the combined schedule to continue
 const timeLimit = Schedule.spaced("1 second").pipe(Schedule.take(5)) // max 5 times
@@ -52,7 +54,7 @@ const retryProgram = Effect.gen(function*() {
       yield* Console.log(`Retry attempt ${attempt}`)
 
       if (attempt < 3) {
-        return yield* Effect.fail(new Error(`Attempt ${attempt} failed`))
+        return yield* Effect.fail(new RetryAttemptError({ message: `Attempt ${attempt} failed` }))
       }
 
       return `Success on attempt ${attempt}`
@@ -73,6 +75,6 @@ const retryProgram = Effect.gen(function*() {
 declare const both: { <Output2, Input2, Error2, Env2, Output>(other: Schedule<Output2, Input2, Error2, Env2>): <Input, Error, Env>(self: Schedule<Output, Input, Error, Env>) => Schedule<[Output, Output2], Input & Input2, Error | Error2, Env | Env2>; <Output, Input, Error, Env, Output2, Input2, Error2, Env2>(self: Schedule<Output, Input, Error, Env>, other: Schedule<Output2, Input2, Error2, Env2>): Schedule<[Output, Output2], Input & Input2, Error | Error2, Env | Env2>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L876)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L882)
 
 Since v2.0.0

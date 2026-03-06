@@ -25,7 +25,7 @@ const resolver = RequestResolver.make<GetUser>(
 )
 
 const program = Effect.gen(function*() {
-  const name = yield* Effect.request(GetUser({ id: 1 }), Effect.succeed(resolver))
+  const name = yield* Effect.request(GetUser({ id: 1 }), resolver)
   yield* Console.log(name)
 })
 ```
@@ -36,6 +36,6 @@ const program = Effect.gen(function*() {
 declare const request: { <A extends Request.Any, EX = never, RX = never>(resolver: RequestResolver<A> | Effect<RequestResolver<A>, EX, RX>): (self: A) => Effect<Request.Success<A>, Request.Error<A> | EX, Request.Services<A> | RX>; <A extends Request.Any, EX = never, RX = never>(self: A, resolver: RequestResolver<A> | Effect<RequestResolver<A>, EX, RX>): Effect<Request.Success<A>, Request.Error<A> | EX, Request.Services<A> | RX>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L7915)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L7955)
 
 Since v2.0.0

@@ -15,16 +15,18 @@ failure status of the effect.
 **Example**
 
 ```ts
-import { Effect } from "effect"
+import { Data, Effect } from "effect"
+
+class TaskError extends Data.TaggedError("TaskError")<{ readonly message: string }> {}
 
 //      ┌─── Effect<number, string, never>
 //      ▼
 const simulatedTask = Effect.fail("Oh no!").pipe(Effect.as(1))
 
-//      ┌─── Effect<boolean, Error, never>
+//      ┌─── Effect<boolean, TaskError, never>
 //      ▼
 const modified = Effect.mapBoth(simulatedTask, {
-  onFailure: (message) => new Error(message),
+  onFailure: (message) => new TaskError({ message }),
   onSuccess: (n) => n > 0
 })
 ```
@@ -40,6 +42,6 @@ const modified = Effect.mapBoth(simulatedTask, {
 declare const mapBoth: { <E, E2, A, A2>(options: { readonly onFailure: (e: E) => E2; readonly onSuccess: (a: A) => A2; }): <R>(self: Effect<A, E, R>) => Effect<A2, E2, R>; <A, E, R, E2, A2>(self: Effect<A, E, R>, options: { readonly onFailure: (e: E) => E2; readonly onSuccess: (a: A) => A2; }): Effect<A2, E2, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L3521)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L3547)
 
 Since v2.0.0

@@ -26,6 +26,6 @@ const traced = Effect.withSpan(task, "my-task", {
 declare const withSpan: { <Args extends ReadonlyArray<any>>(name: string, options?: SpanOptionsNoTrace | ((...args: NoInfer<Args>) => SpanOptionsNoTrace) | undefined, traceOptions?: TraceOptions | undefined): <A, E, R>(self: Effect<A, E, R>, ...args: Args) => Effect<A, E, Exclude<R, ParentSpan>>; <A, E, R>(self: Effect<A, E, R>, name: string, options?: SpanOptions | undefined): Effect<A, E, Exclude<R, ParentSpan>>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L7807)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L7847)
 
 Since v2.0.0

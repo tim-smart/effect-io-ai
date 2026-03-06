@@ -11,6 +11,6 @@ Re-exports all named exports from the "./Latch.ts" module as `Latch`.
 export * as Latch from "./Latch.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L1780)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L1782)
 
 Since v3.8.0

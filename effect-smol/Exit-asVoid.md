@@ -31,6 +31,6 @@ console.log(Exit.isSuccess(voided)) // true
 declare const asVoid: <A, E>(self: Exit<A, E>) => Exit<void, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Exit.ts#L834)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Exit.ts#L838)
 
 Since v2.0.0

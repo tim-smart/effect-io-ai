@@ -33,6 +33,6 @@ const program = Effect.gen(function*() {
 export * as Ref from "./Ref.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L3017)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L3019)
 
 Since v2.0.0

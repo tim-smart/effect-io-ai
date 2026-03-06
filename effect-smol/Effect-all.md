@@ -176,6 +176,6 @@ Effect.runPromiseExit(program).then(console.log)
 declare const all: <const Arg extends Iterable<Effect<any, any, any>> | Record<string, Effect<any, any, any>>, O extends { readonly concurrency?: Concurrency | undefined; readonly discard?: boolean | undefined; readonly mode?: "default" | "result" | undefined; }>(arg: Arg, options?: O) => All.Return<Arg, O>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L750)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L756)
 
 Since v2.0.0

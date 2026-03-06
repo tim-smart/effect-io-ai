@@ -10,7 +10,9 @@ See https://developer.mozilla.org/en-US/docs/Web/API/ReadableStream.
 **Example**
 
 ```ts
-import { Console, Effect, Stream } from "effect"
+import { Console, Data, Effect, Stream } from "effect"
+
+class StreamError extends Data.TaggedError("StreamError")<{ readonly cause: unknown }> {}
 
 const readableStream = new ReadableStream({
   start(controller) {
@@ -24,7 +26,7 @@ const readableStream = new ReadableStream({
 const program = Effect.gen(function*() {
   const stream = Stream.fromReadableStream({
     evaluate: () => readableStream,
-    onError: (error) => new Error(String(error))
+    onError: (cause) => new StreamError({ cause })
   })
   const values = yield* Stream.runCollect(stream)
   yield* Console.log(values)
@@ -40,6 +42,6 @@ Effect.runPromise(program)
 declare const fromReadableStream: <A, E>(options: { readonly evaluate: LazyArg<ReadableStream<A>>; readonly onError: (error: unknown) => E; readonly releaseLockOnEnd?: boolean | undefined; }) => Stream<A, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L1284)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L1286)
 
 Since v2.0.0

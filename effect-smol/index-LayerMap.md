@@ -11,6 +11,6 @@ Re-exports all named exports from the "./LayerMap.ts" module as `LayerMap`.
 export * as LayerMap from "./LayerMap.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L1806)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L1808)
 
 Since v3.14.0

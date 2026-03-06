@@ -9,9 +9,11 @@ effect if it exists. The provided effect will not be interrupted.
 **Example**
 
 ```ts
-import { Cause, Console, Effect } from "effect"
+import { Cause, Data, Console, Effect } from "effect"
 
-const task = Effect.fail(new Error("Something went wrong"))
+class TaskError extends Data.TaggedError("TaskError")<{ readonly message: string }> {}
+
+const task = Effect.fail(new TaskError({ message: "Something went wrong" }))
 
 const program = Effect.onError(
   task,
@@ -20,8 +22,8 @@ const program = Effect.onError(
 
 Effect.runPromise(program).catch(console.error)
 // Output:
-// Cleanup on error: Error: Something went wrong
-// Error: Something went wrong
+// Cleanup on error: TaskError: Something went wrong
+// TaskError: Something went wrong
 ```
 
 **Signature**
@@ -30,6 +32,6 @@ Effect.runPromise(program).catch(console.error)
 declare const onError: { <E, X, R2>(cleanup: (cause: Cause.Cause<E>) => Effect<X, never, R2>): <A, R>(self: Effect<A, E, R>) => Effect<A, E, R2 | R>; <A, E, R, X, R2>(self: Effect<A, E, R>, cleanup: (cause: Cause.Cause<E>) => Effect<X, never, R2>): Effect<A, E, R2 | R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L6393)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L6433)
 
 Since v2.0.0

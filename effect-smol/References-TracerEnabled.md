@@ -50,6 +50,6 @@ const tracingControl = Effect.gen(function*() {
 declare const TracerEnabled: ServiceMap.Reference<boolean>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/References.ts#L187)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/References.ts#L192)
 
 Since v4.0.0

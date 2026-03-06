@@ -11,6 +11,6 @@ Re-exports all named exports from the "./TxHashMap.ts" module as `TxHashMap`.
 export * as TxHashMap from "./TxHashMap.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L3934)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L3936)
 
 Since v2.0.0

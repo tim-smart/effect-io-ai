@@ -11,6 +11,6 @@ Re-exports all named exports from the "./ManagedRuntime.ts" module as `ManagedRu
 export * as ManagedRuntime from "./ManagedRuntime.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L2015)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L2017)
 
 Since v2.0.0

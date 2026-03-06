@@ -38,7 +38,7 @@ const tracedResolver = RequestResolver.withSpan(
 )
 
 // Spans will automatically include batch size and request links
-const effect = Effect.request(GetDataRequest({ id: 123 }), Effect.succeed(tracedResolver))
+const effect = Effect.request(GetDataRequest({ id: 123 }), tracedResolver)
 ```
 
 **Signature**

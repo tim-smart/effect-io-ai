@@ -45,6 +45,6 @@ const program = log("Hello, World!")
 declare const sync: <A>(thunk: LazyArg<A>) => Effect<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L1344)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L1352)
 
 Since v2.0.0

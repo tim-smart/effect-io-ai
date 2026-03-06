@@ -11,6 +11,6 @@ Re-exports all named exports from the "./Multipasta.ts" module as `Multipasta`.
 export * as Multipasta from "./Multipasta.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L125)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L130)
 
 Since v4.0.0

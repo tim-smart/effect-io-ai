@@ -28,7 +28,7 @@ const UserResolver = RequestResolver.make<GetUserRequest>((entries) =>
 )
 
 // Use the resolver to handle requests
-const getUserEffect = Effect.request(GetUserRequest({ id: 123 }), Effect.succeed(UserResolver))
+const getUserEffect = Effect.request(GetUserRequest({ id: 123 }), UserResolver)
 ```
 
 **Signature**

@@ -10,7 +10,9 @@ schedule will stop.
 **Example**
 
 ```ts
-import { Console, Effect, Schedule } from "effect"
+import { Console, Data, Effect, Schedule } from "effect"
+
+class RetryAttemptError extends Data.TaggedError("RetryAttemptError")<{ readonly message: string }> {}
 
 // Limit an infinite schedule to run only 5 times
 const limitedHeartbeat = Schedule.spaced("1 second").pipe(
@@ -43,7 +45,7 @@ const retryProgram = Effect.gen(function*() {
       yield* Console.log(`Attempt ${attempt}`)
 
       if (attempt < 5) { // Will fail more than 3 times
-        return yield* Effect.fail(new Error(`Attempt ${attempt} failed`))
+        return yield* Effect.fail(new RetryAttemptError({ message: `Attempt ${attempt} failed` }))
       }
 
       return `Success on attempt ${attempt}`
@@ -84,6 +86,6 @@ const samplingProgram = Effect.gen(function*() {
 declare const take: { (n: number): <Output, Input, Error, Env>(self: Schedule<Output, Input, Error, Env>) => Schedule<Output, Input, Error, Env>; <Output, Input, Error, Env>(self: Schedule<Output, Input, Error, Env>, n: number): Schedule<Output, Input, Error, Env>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L2980)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L3006)
 
 Since v2.0.0

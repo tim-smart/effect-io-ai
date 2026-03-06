@@ -32,6 +32,6 @@ const safeSchedule = Schedule.spaced("1 second").pipe(
 declare const satisfiesErrorType: <T>() => <Error extends T, Output = never, Input = unknown, Env = never>(self: Schedule<Output, Input, Error, Env>) => Schedule<Output, Input, Error, Env>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L3339)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L3365)
 
 Since v2.0.0

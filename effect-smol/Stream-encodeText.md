@@ -28,6 +28,6 @@ Effect.runPromise(program)
 declare const encodeText: <E, R>(self: Stream<string, E, R>) => Stream<Uint8Array, E, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L8604)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L8608)
 
 Since v2.0.0

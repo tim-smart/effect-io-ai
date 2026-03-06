@@ -32,7 +32,7 @@ const UserAPIResolver = RequestResolver.fromEffect<GetUserFromAPIRequest>(
 // Usage
 const getUserEffect = Effect.request(
   GetUserFromAPIRequest({ id: 123 }),
-  Effect.succeed(UserAPIResolver)
+  UserAPIResolver
 )
 ```
 

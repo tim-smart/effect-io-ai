@@ -34,6 +34,6 @@ console.log(Exit.isFailure(Exit.asVoidAll(mixed))) // true
 declare const asVoidAll: <I extends Iterable<Exit<any, any>>>(exits: I) => Exit<void, I extends Iterable<Exit<infer _A, infer _E>> ? _E : never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Exit.ts#L863)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Exit.ts#L867)
 
 Since v4.0.0

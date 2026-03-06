@@ -37,15 +37,15 @@ const groupedResolver = RequestResolver.grouped(
 const requests = [
   Effect.request(
     GetUserRequest({ userId: 1, department: "Engineering" }),
-    Effect.succeed(groupedResolver)
+    groupedResolver
   ),
   Effect.request(
     GetUserRequest({ userId: 2, department: "Engineering" }),
-    Effect.succeed(groupedResolver)
+    groupedResolver
   ),
   Effect.request(
     GetUserRequest({ userId: 3, department: "Marketing" }),
-    Effect.succeed(groupedResolver)
+    groupedResolver
   )
 ]
 ```

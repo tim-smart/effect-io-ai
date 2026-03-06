@@ -26,6 +26,6 @@ const program = pipe(
 declare const Do: Effect<{}, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L1458)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L1466)
 
 Since v4.0.0

@@ -31,6 +31,6 @@ const numberSchedule = Schedule.spaced("1 second").pipe(
 declare const satisfiesInputType: <T>() => <Input extends T, Output = never, Error = never, Env = never>(self: Schedule<Output, Input, Error, Env>) => Schedule<Output, Input, Error, Env>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L3273)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L3299)
 
 Since v2.0.0

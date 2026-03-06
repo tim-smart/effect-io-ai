@@ -16,12 +16,14 @@ Supports both curried and direct call styles.
 **Example** (Mapping both channels)
 
 ```ts
-import { Exit } from "effect"
+import { Data, Exit } from "effect"
+
+class ExitError extends Data.TaggedError("ExitError")<{ readonly input: string }> {}
 
 const exit = Exit.succeed(42)
 const mapped = Exit.mapBoth(exit, {
   onSuccess: (x) => String(x),
-  onFailure: (e: string) => new Error(e)
+  onFailure: (e: string) => new ExitError({ input: e })
 })
 console.log(Exit.isSuccess(mapped) && mapped.value) // "42"
 ```
@@ -37,6 +39,6 @@ console.log(Exit.isSuccess(mapped) && mapped.value) // "42"
 declare const mapBoth: { <E, E2, A, A2>(options: { readonly onFailure: (e: E) => E2; readonly onSuccess: (a: A) => A2; }): (self: Exit<A, E>) => Exit<A2, E2>; <A, E, E2, A2>(self: Exit<A, E>, options: { readonly onFailure: (e: E) => E2; readonly onSuccess: (a: A) => A2; }): Exit<A2, E2>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Exit.ts#L800)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Exit.ts#L804)
 
 Since v2.0.0

@@ -43,6 +43,6 @@ const interrupt = Effect.runCallback(program, {
 declare const runCallback: <A, E>(effect: Effect<A, E, never>, options?: (RunOptions & { readonly onExit: (exit: Exit.Exit<A, E>) => void; }) | undefined) => (interruptor?: number | undefined) => void
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L8399)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L8439)
 
 Since v4.0.0

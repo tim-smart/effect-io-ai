@@ -9,7 +9,9 @@ Returns a `Schedule` which can only be stepped the specified number of
 **Example**
 
 ```ts
-import { Console, Effect, Schedule } from "effect"
+import { Console, Data, Effect, Schedule } from "effect"
+
+class RetryAttemptError extends Data.TaggedError("RetryAttemptError")<{ readonly message: string }> {}
 
 // Basic recurs - retry at most 3 times
 const maxThreeAttempts = Schedule.recurs(3)
@@ -24,7 +26,7 @@ const program = Effect.gen(function*() {
       yield* Console.log(`Attempt ${attempt}`)
 
       if (attempt < 4) {
-        return yield* Effect.fail(new Error(`Attempt ${attempt} failed`))
+        return yield* Effect.fail(new RetryAttemptError({ message: `Attempt ${attempt} failed` }))
       }
 
       return `Success on attempt ${attempt}`
@@ -60,6 +62,6 @@ const countingSchedule = Schedule.recurs(3).pipe(
 declare const recurs: (times: number) => Schedule<number>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L2451)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L2471)
 
 Since v2.0.0

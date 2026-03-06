@@ -11,18 +11,20 @@ type of an effect conforms to a specific type constraint.
 **Example**
 
 ```ts
-import { Effect } from "effect"
+import { Data, Effect } from "effect"
 
-// Define a constraint that the error type must be an Error
-const satisfiesError = Effect.satisfiesErrorType<Error>()
+class ValidationError extends Data.TaggedError("ValidationError")<{}> {}
 
-// This works - Effect<number, TypeError, never> extends Effect<number, Error, never>
-const validEffect = satisfiesError(Effect.fail(new TypeError("Invalid type")))
+// Define a constraint that the error type must be a ValidationError
+const satisfiesError = Effect.satisfiesErrorType<ValidationError>()
+
+// This works - Effect<number, ValidationError, never> extends the constrained type
+const validEffect = satisfiesError(Effect.fail(new ValidationError()))
 
 // This would cause a TypeScript compilation error:
 // const invalidEffect = satisfiesError(Effect.fail("string error"))
 //                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^
-// Type 'string' is not assignable to type 'Error'
+// Type 'string' is not assignable to type 'ValidationError'
 ```
 
 **Signature**
@@ -31,6 +33,6 @@ const validEffect = satisfiesError(Effect.fail(new TypeError("Invalid type")))
 declare const satisfiesErrorType: <E>() => <A, E2 extends E, R>(effect: Effect<A, E2, R>) => Effect<A, E2, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L14370)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L14414)
 
 Since v4.0.0

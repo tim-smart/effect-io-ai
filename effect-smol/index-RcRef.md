@@ -11,6 +11,6 @@ Re-exports all named exports from the "./RcRef.ts" module as `RcRef`.
 export * as RcRef from "./RcRef.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L2893)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L2895)
 
 Since v3.5.0

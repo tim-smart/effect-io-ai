@@ -13,6 +13,6 @@ Adapted from https://github.com/fastify/fastify-cookie under MIT License
 declare const parseHeader: (header: string) => Record<string, string>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cookies.ts#L773)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cookies.ts#L833)
 
 Since v4.0.0

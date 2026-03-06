@@ -33,8 +33,7 @@ type ErrArgs = Data.TaggedEnum.Args<Result, "Err">
 ```ts
 type Args<A, K, E> = {
     readonly [K in keyof E as K extends "_tag" ? never : K]: E[K]
-  } extends infer T ? {} extends T ? void
-    : T
+  } extends infer T ? Types.VoidIfEmpty<T>
     : never
 ```
 

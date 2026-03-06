@@ -29,16 +29,18 @@ This API replaces the following from Effect 3.x:
 
 ```ts
 // Title: Logging a step in a pipeline
-import { Effect, pipe } from "effect"
+import { Data, Effect, pipe } from "effect"
 import { Console } from "effect"
+
+class DiscountRateError extends Data.TaggedError("DiscountRateError")<{}> {}
 
 // Function to apply a discount safely to a transaction amount
 const applyDiscount = (
   total: number,
   discountRate: number
-): Effect.Effect<number, Error> =>
+): Effect.Effect<number, DiscountRateError> =>
   discountRate === 0
-    ? Effect.fail(new Error("Discount rate cannot be zero"))
+    ? Effect.fail(new DiscountRateError())
     : Effect.succeed(total - (total * discountRate) / 100)
 
 // Simulated asynchronous task to fetch a transaction amount from database
@@ -64,6 +66,6 @@ Effect.runPromise(finalAmount).then(console.log)
 declare const tap: { <A, B, E2, R2>(f: (a: NoInfer<A>) => Effect<B, E2, R2>): <E, R>(self: Effect<A, E, R>) => Effect<A, E | E2, R | R2>; <B, E2, R2>(f: Effect<B, E2, R2>): <A, E, R>(self: Effect<A, E, R>) => Effect<A, E | E2, R | R2>; <A, E, R, B, E2, R2>(self: Effect<A, E, R>, f: (a: NoInfer<A>) => Effect<B, E2, R2>): Effect<A, E | E2, R | R2>; <A, E, R, B, E2, R2>(self: Effect<A, E, R>, f: Effect<B, E2, R2>): Effect<A, E | E2, R | R2>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L2233)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L2255)
 
 Since v2.0.0

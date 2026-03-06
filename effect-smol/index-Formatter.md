@@ -11,6 +11,6 @@ Re-exports all named exports from the "./Formatter.ts" module as `Formatter`.
 export * as Formatter from "./Formatter.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L1428)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L1430)
 
 Since v4.0.0

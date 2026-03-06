@@ -38,6 +38,6 @@ const program = Effect.gen(function*() {
 declare const forkDetach: <Arg extends Effect<any, any, any> | { readonly startImmediately?: boolean | undefined; readonly uninterruptible?: boolean | "inherit" | undefined; } | undefined = { readonly startImmediately?: boolean | undefined; readonly uninterruptible?: boolean | "inherit" | undefined; }>(effectOrOptions?: Arg, options?: { readonly startImmediately?: boolean | undefined; readonly uninterruptible?: boolean | "inherit" | undefined; } | undefined) => [Arg] extends [Effect<infer _A, infer _E, infer _R>] ? Effect<Fiber<_A, _E>, never, _R> : <A, E, R>(self: Effect<A, E, R>) => Effect<Fiber<A, E>, never, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L8136)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L8176)
 
 Since v2.0.0

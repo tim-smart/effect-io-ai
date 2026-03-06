@@ -9,7 +9,9 @@ effectful function to the the next recurrence of the schedule.
 **Example**
 
 ```ts
-import { Console, Duration, Effect, Schedule } from "effect"
+import { Console, Data, Duration, Effect, Schedule } from "effect"
+
+class RetryAttemptError extends Data.TaggedError("RetryAttemptError")<{ readonly message: string }> {}
 
 // Add random jitter to schedule delays
 const jitteredSchedule = Schedule.addDelay(
@@ -105,7 +107,7 @@ const retryProgram = Effect.gen(function*() {
     Effect.gen(function*() {
       attempt++
       if (attempt < 5) {
-        return yield* Effect.fail(new Error(`Attempt ${attempt} failed`))
+        return yield* Effect.fail(new RetryAttemptError({ message: `Attempt ${attempt} failed` }))
       }
       return `Success on attempt ${attempt}`
     }),
@@ -122,6 +124,6 @@ const retryProgram = Effect.gen(function*() {
 declare const addDelay: { <Output, Error2 = never, Env2 = never>(f: (output: Output) => Effect<Duration.Input, Error2, Env2>): <Input, Error, Env>(self: Schedule<Output, Input, Error, Env>) => Schedule<Output, Input, Error | Error2, Env | Env2>; <Output, Input, Error, Env, Error2 = never, Env2 = never>(self: Schedule<Output, Input, Error, Env>, f: (output: Output) => Effect<Duration.Input, Error2, Env2>): Schedule<Output, Input, Error | Error2, Env | Env2>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L636)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L638)
 
 Since v2.0.0

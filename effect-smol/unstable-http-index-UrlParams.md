@@ -11,6 +11,6 @@ Re-exports all named exports from the "./UrlParams.ts" module as `UrlParams`.
 export * as UrlParams from "./UrlParams.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L135)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L140)
 
 Since v4.0.0
