@@ -20,6 +20,6 @@ assert.deepStrictEqual(constTrue(), true)
 declare const constTrue: LazyArg<boolean>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Function.ts#L302)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Function.ts#L294)
 
 Since v2.0.0

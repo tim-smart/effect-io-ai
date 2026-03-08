@@ -33,6 +33,6 @@ const program = Effect.gen(function*() {
 export * as PubSub from "./PubSub.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L2850)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L2917)
 
 Since v2.0.0

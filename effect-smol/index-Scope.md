@@ -11,6 +11,6 @@ Re-exports all named exports from the "./Scope.ts" module as `Scope`.
 export * as Scope from "./Scope.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L3659)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L3726)
 
 Since v2.0.0

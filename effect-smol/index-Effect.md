@@ -29,12 +29,12 @@ Effect.runPromise(program).then(console.log) // 13
 ```ts
 import { Data, Effect } from "effect"
 
-class DivisionByZeroError extends Data.TaggedError("DivisionByZeroError")<{}> {}
+class DiscountRateError extends Data.TaggedError("DiscountRateError")<{}> {}
 
 // Effect that may fail
 const divide = (a: number, b: number) =>
   b === 0
-    ? Effect.fail(new DivisionByZeroError())
+    ? Effect.fail(new DiscountRateError())
     : Effect.succeed(a / b)
 
 // Error handling

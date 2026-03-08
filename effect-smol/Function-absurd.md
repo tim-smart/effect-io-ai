@@ -24,6 +24,6 @@ const handleNever = (value: never) => {
 declare const absurd: <A>(_: never) => A
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Function.ts#L431)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Function.ts#L423)
 
 Since v2.0.0

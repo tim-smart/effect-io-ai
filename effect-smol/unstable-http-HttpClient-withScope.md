@@ -11,6 +11,6 @@ Ties the lifetime of the `HttpClientRequest` to a `Scope`.
 declare const withScope: <E, R>(self: HttpClient.With<E, R>) => HttpClient.With<E, R | Scope.Scope>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpClient.ts#L1269)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpClient.ts#L1268)
 
 Since v4.0.0

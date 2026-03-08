@@ -24,6 +24,6 @@ assert.strictEqual(compose(increment, square)(2), 9)
 declare const compose: { <B, C>(bc: (b: B) => C): <A>(self: (a: A) => B) => (a: A) => C; <A, B, C>(self: (a: A) => B, bc: (b: B) => C): (a: A) => C; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Function.ts#L408)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Function.ts#L400)
 
 Since v2.0.0

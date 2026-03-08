@@ -11,6 +11,6 @@ Re-exports all named exports from the "./Redactable.ts" module as `Redactable`.
 export * as Redactable from "./Redactable.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L2907)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L2974)
 
 Since v4.0.0

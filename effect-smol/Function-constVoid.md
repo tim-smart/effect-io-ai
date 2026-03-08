@@ -20,6 +20,6 @@ assert.deepStrictEqual(constVoid(), undefined)
 declare const constVoid: LazyArg<void>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Function.ts#L366)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Function.ts#L358)
 
 Since v2.0.0

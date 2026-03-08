@@ -20,6 +20,6 @@ const placeholder: string = hole<string>()
 declare const hole: <T>() => T
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Function.ts#L1207)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Function.ts#L1199)
 
 Since v2.0.0

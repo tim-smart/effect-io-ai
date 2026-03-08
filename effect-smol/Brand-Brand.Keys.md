@@ -8,7 +8,7 @@ A utility type to extract the keys of a branded type.
 **Signature**
 
 ```ts
-type keyof B["~effect/data/Brand"] = keyof B[typeof TypeId]
+type keyof B["~effect/Brand"] = keyof B[typeof TypeId]
 ```
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Brand.ts#L127)

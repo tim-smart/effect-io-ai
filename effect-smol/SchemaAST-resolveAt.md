@@ -18,6 +18,6 @@ are present. Returns `undefined` if the key is not found.
 declare const resolveAt: <A>(key: string) => (ast: AST) => A | undefined
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L3336)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L3333)
 
 Since v4.0.0

@@ -20,7 +20,7 @@ constraint to ensure generated strings match the UUID pattern.
 **Signature**
 
 ```ts
-declare const isUUID: (version: 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | undefined, annotations?: Annotations.Filter) => AST.Filter<string>
+declare const isUUID: (version?: 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8, annotations?: Annotations.Filter) => AST.Filter<string>
 ```
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L3593)

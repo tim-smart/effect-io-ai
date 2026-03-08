@@ -11,6 +11,6 @@ Re-exports all named exports from the "./TxRef.ts" module as `TxRef`.
 export * as TxRef from "./TxRef.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L3995)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L4062)
 
 Since v4.0.0

@@ -23,6 +23,6 @@ assert.deepStrictEqual(SK(0, "hello"), "hello")
 declare const SK: <A, B>(_: A, b: B) => B
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Function.ts#L1226)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Function.ts#L1218)
 
 Since v2.0.0

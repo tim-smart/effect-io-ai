@@ -11,6 +11,6 @@ Re-exports all named exports from the "./Symbol.ts" module as `Symbol`.
 export * as Symbol from "./Symbol.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L3798)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L3865)
 
 Since v2.0.0
