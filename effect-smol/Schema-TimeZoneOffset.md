@@ -15,6 +15,6 @@ A schema for `DateTime.TimeZone.Offset` values.
 declare const TimeZoneOffset: TimeZoneOffset
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L7833)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L7840)
 
 Since v4.0.0

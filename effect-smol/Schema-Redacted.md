@@ -28,6 +28,6 @@ but it will deserialize a value into a `Redacted` instance.
 declare const Redacted: <S extends Top>(value: S, options?: { readonly label?: string | undefined; }) => Redacted<S>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L5681)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L5688)
 
 Since v4.0.0

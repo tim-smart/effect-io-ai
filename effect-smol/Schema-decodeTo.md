@@ -48,6 +48,6 @@ const result = Schema.decodeUnknownSync(NumberFromString)("123")
 declare const decodeTo: { <To extends Top>(to: To): <From extends Top>(from: From) => compose<To, From>; <To extends Top, From extends Top, RD = never, RE = never>(to: To, transformation: { readonly decode: Getter.Getter<NoInfer<To["Encoded"]>, NoInfer<From["Type"]>, RD>; readonly encode: Getter.Getter<NoInfer<From["Type"]>, NoInfer<To["Encoded"]>, RE>; }): (from: From) => decodeTo<To, From, RD, RE>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L2903)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L2904)
 
 Since v4.0.0

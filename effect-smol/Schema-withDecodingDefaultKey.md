@@ -15,6 +15,6 @@ Module: `Schema`<br />
 declare const withDecodingDefaultKey: <S extends Top>(defaultValue: () => S["Encoded"], options?: DecodingDefaultOptions) => (self: S) => withDecodingDefaultKey<S>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L3082)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L3083)
 
 Since v4.0.0

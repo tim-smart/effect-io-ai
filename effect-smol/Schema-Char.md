@@ -11,6 +11,6 @@ A schema representing a single character.
 declare const Char: String
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L5319)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L5326)
 
 Since v4.0.0

@@ -16,6 +16,6 @@ A schema for all numbers, including `NaN`, `Infinity`, and `-Infinity`.
 declare const Number: Number
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L1423)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L1424)
 
 Since v4.0.0

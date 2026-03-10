@@ -11,6 +11,6 @@ A schema for the `void` type.
 declare const Void: Void
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L1480)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L1481)
 
 Since v4.0.0

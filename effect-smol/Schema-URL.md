@@ -15,6 +15,6 @@ A schema for JavaScript `URL` objects.
 declare const URL: URL
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L6786)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L6793)
 
 Since v4.0.0

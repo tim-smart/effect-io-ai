@@ -14,6 +14,6 @@ properties (stack is omitted for security).
 declare const Error: Error
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L6024)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L6031)
 
 Since v4.0.0

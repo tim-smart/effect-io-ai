@@ -17,6 +17,6 @@ Encoding:
 declare const NumberFromString: NumberFromString
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L7496)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L7503)
 
 Since v4.0.0

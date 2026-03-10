@@ -12,6 +12,6 @@ provided schema.
 declare const Chunk: <Value extends Top>(value: Value) => Chunk<Value>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L6646)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L6653)
 
 Since v4.0.0

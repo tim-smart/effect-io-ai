@@ -21,6 +21,6 @@ constraint to ensure generated strings start with the required prefix.
 declare const isStartsWith: (startsWith: string, annotations?: Annotations.Filter) => AST.Filter<string>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L3719)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L3726)
 
 Since v4.0.0

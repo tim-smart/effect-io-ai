@@ -11,6 +11,6 @@ Is this schema read-only or mutable?
 type Mutability = "readonly" | "mutable"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L71)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L72)
 
 Since v4.0.0

@@ -69,6 +69,6 @@ console.log(JSON.stringify(document, null, 2))
 declare const fromJsonString: <S extends Top>(schema: S) => fromJsonString<S>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L7134)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L7141)
 
 Since v4.0.0

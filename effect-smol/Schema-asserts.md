@@ -41,6 +41,6 @@ try {
 declare const asserts: <S extends Top & { readonly DecodingServices: never; }>(schema: S) => <I>(input: I) => asserts input is I & S["Type"]
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L713)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L714)
 
 Since v4.0.0

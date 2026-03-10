@@ -14,6 +14,6 @@ Date("invalid")`). For validating only valid dates, use `ValidDate` instead.
 declare const Date: Date
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L6840)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L6847)
 
 Since v4.0.0

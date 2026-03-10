@@ -11,7 +11,8 @@ Discards both the success and failure values of an effect.
 it succeeds or fails. This is useful when you only care about the side
 effects of the effect and do not need to handle or process its outcome.
 
-Use the `log` option to emit the full `Cause` when the effect fails.
+Use the `log` option to emit the full `Cause` when the effect fails,
+and `message` to prepend a custom log message.
 
 **Example**
 
@@ -37,7 +38,7 @@ import { Effect } from "effect"
 const task = Effect.fail("Uh oh!")
 
 const program = task.pipe(Effect.ignore({ log: true }))
-const programWarn = task.pipe(Effect.ignore({ log: "Warn" }))
+const programWarn = task.pipe(Effect.ignore({ log: "Warn", message: "Ignoring task failure" }))
 ```
 
 **Previously Known As**
@@ -49,9 +50,9 @@ This API replaces the following from Effect 3.x:
 **Signature**
 
 ```ts
-declare const ignore: <Arg extends Effect<any, any, any> | { readonly log?: boolean | Severity | undefined; } | undefined = { readonly log?: boolean | Severity | undefined; }>(effectOrOptions?: Arg, options?: { readonly log?: boolean | Severity | undefined; } | undefined) => [Arg] extends [Effect<infer _A, infer _E, infer _R>] ? Effect<void, never, _R> : <A, E, R>(self: Effect<A, E, R>) => Effect<void, never, R>
+declare const ignore: <Arg extends Effect<any, any, any> | { readonly log?: boolean | Severity | undefined; readonly message?: string | undefined; } | undefined = { readonly log?: boolean | Severity | undefined; readonly message?: string | undefined; }>(effectOrOptions?: Arg, options?: { readonly log?: boolean | Severity | undefined; readonly message?: string | undefined; } | undefined) => [Arg] extends [Effect<infer _A, infer _E, infer _R>] ? Effect<void, never, _R> : <A, E, R>(self: Effect<A, E, R>) => Effect<void, never, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L4194)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L4200)
 
 Since v2.0.0

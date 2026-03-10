@@ -12,6 +12,6 @@ the value from the output when encoding.
 declare const tagDefaultOmit: <Tag extends AST.LiteralValue>(literal: Tag) => withDecodingDefaultKey<tag<Tag>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L3148)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L3149)
 
 Since v4.0.0

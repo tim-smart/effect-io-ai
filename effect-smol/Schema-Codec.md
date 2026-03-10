@@ -25,6 +25,6 @@ export interface Codec<out T, out E = T, out RD = never, out RE = never> extends
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L399)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L400)
 
 Since v4.0.0

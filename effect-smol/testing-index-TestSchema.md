@@ -11,6 +11,6 @@ Re-exports all named exports from the "./TestSchema.ts" module as `TestSchema`.
 export * as TestSchema from "./TestSchema.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L35)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L98)
 
 Since v4.0.0

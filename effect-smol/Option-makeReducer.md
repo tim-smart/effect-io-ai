@@ -39,6 +39,6 @@ console.log(reducer.combineAll([Option.some(1), Option.none(), Option.some(2)]))
 declare const makeReducer: <A>(combiner: Combiner.Combiner<A>) => Reducer.Reducer<Option<A>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L2595)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L2593)
 
 Since v4.0.0

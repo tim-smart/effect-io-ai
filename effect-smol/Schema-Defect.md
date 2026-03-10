@@ -11,6 +11,6 @@ A schema that represents defects.
 declare const Defect: Defect
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L6101)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L6108)
 
 Since v4.0.0

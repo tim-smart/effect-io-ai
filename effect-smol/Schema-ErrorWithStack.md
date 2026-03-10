@@ -14,6 +14,6 @@ The default json serializer decodes to a struct with `name`, `message` and
 declare const ErrorWithStack: Error
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L6046)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L6053)
 
 Since v4.0.0

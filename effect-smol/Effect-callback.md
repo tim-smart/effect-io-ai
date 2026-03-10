@@ -23,8 +23,13 @@ behavior of the returned effect.
 
 **When to Use**
 
-Use `Effect.async` when dealing with APIs that use callback-style instead of
+Use `Effect.callback` when dealing with APIs that use callback-style instead of
 `async/await` or `Promise`.
+* **Previously Known As**
+
+This API replaces the following from Effect 3.x:
+
+- `Effect.async`
 
 **Example**
 
@@ -49,6 +54,6 @@ const program = delay(1000)
 declare const callback: <A, E = never, R = never>(register: (this: Scheduler, resume: (effect: Effect<A, E, R>) => void, signal: AbortSignal) => void | Effect<void, never, R>) => Effect<A, E, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L1415)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L1420)
 
 Since v2.0.0

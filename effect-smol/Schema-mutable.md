@@ -11,6 +11,6 @@ Makes arrays or tuples mutable.
 declare const mutable: mutableLambda
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L2385)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L2386)
 
 Since v4.0.0

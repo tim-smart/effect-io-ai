@@ -57,6 +57,6 @@ const program = Effect.gen(function*() {
 declare const linkSpans: { (span: AnySpan | ReadonlyArray<AnySpan>, attributes?: Record<string, unknown>): <A, E, R>(self: Effect<A, E, R>) => Effect<A, E, R>; <A, E, R>(self: Effect<A, E, R>, span: AnySpan | ReadonlyArray<AnySpan>, attributes?: Record<string, unknown>): Effect<A, E, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L7738)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L7751)
 
 Since v2.0.0

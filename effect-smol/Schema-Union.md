@@ -16,6 +16,6 @@ Optionally, you can specify the `mode` to be `"anyOf"` or `"oneOf"`.
 declare const Union: <const Members extends ReadonlyArray<Top>>(members: Members, options?: { mode?: "anyOf" | "oneOf"; }) => Union<Members>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L2461)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L2462)
 
 Since v4.0.0

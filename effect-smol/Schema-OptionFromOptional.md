@@ -21,6 +21,6 @@ Encoding:
 declare const OptionFromOptional: <S extends Top>(schema: S) => OptionFromOptional<S>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L5539)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L5546)
 
 Since v4.0.0

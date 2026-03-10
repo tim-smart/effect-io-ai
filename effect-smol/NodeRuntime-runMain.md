@@ -17,7 +17,6 @@ finalize resources or produce different exit codes.
 
 An optional object that can include:
 - `disableErrorReporting`: Turn off automatic error logging.
-- `disablePrettyLogger`: Avoid adding the pretty logger.
 - `teardown`: Provide custom finalization logic.
 
 **When to Use**
@@ -32,6 +31,6 @@ or advanced teardown capabilities.
 declare const runMain: { (options?: { readonly disableErrorReporting?: boolean | undefined; readonly teardown?: Runtime.Teardown | undefined; }): <E, A>(effect: Effect<A, E>) => void; <E, A>(effect: Effect<A, E>, options?: { readonly disableErrorReporting?: boolean | undefined; readonly teardown?: Runtime.Teardown | undefined; }): void; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeRuntime.ts#L35)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeRuntime.ts#L34)
 
 Since v1.0.0

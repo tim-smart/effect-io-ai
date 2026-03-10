@@ -89,6 +89,6 @@ console.log(String(Schema.decodeUnknownExit(schema)(formData)))
 declare const fromFormData: <S extends Top>(schema: S) => fromFormData<S>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L7342)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L7349)
 
 Since v4.0.0
