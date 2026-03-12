@@ -20,6 +20,6 @@ console.log(Duration.toMillis(duration)) // 300000
 declare const minutes: (minutes: number) => Duration
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Duration.ts#L550)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Duration.ts#L605)
 
 Since v2.0.0

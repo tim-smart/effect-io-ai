@@ -3,14 +3,14 @@ Module: `Schema`<br />
 
 ## Schema.BooleanFromBit
 
-A boolean parsed from 0 or 1.
+Schema type for `BooleanFromBit`.
 
 **Signature**
 
 ```ts
-declare const BooleanFromBit: BooleanFromBit
+export interface BooleanFromBit extends decodeTo<Boolean, Literals<readonly [0, 1]>> {}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L7586)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L9194)
 
 Since v4.0.0

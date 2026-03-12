@@ -3,18 +3,14 @@ Module: `Schema`<br />
 
 ## Schema.Duration
 
-A schema for `Duration` values.
-
-**Default JSON serializer**
-
-- encodes `Duration` as a `string`
+Schema type for `Duration`.
 
 **Signature**
 
 ```ts
-declare const Duration: Duration
+export interface Duration extends declare<Duration_.Duration> {}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L6899)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L8422)
 
 Since v4.0.0

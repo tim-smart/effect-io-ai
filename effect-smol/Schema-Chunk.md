@@ -3,15 +3,24 @@ Module: `Schema`<br />
 
 ## Schema.Chunk
 
-Creates a schema that validates a `Chunk` where values must conform to the
-provided schema.
+Schema for an Effect `Chunk` (immutable array-like collection) where values
+must conform to the provided schema.
 
 **Signature**
 
 ```ts
-declare const Chunk: <Value extends Top>(value: Value) => Chunk<Value>
+export interface Chunk<Value extends Top> extends
+  declareConstructor<
+    Chunk_.Chunk<Value["Type"]>,
+    Chunk_.Chunk<Value["Encoded"]>,
+    readonly [Value],
+    ChunkIso<Value>
+  >
+{
+  readonly value: Value
+}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L6653)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L8129)
 
 Since v4.0.0

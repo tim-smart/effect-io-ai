@@ -3,18 +3,14 @@ Module: `Schema`<br />
 
 ## Schema.TimeZoneOffset
 
-A schema for `DateTime.TimeZone.Offset` values.
-
-**Default JSON serializer**
-
-- encodes `DateTime.TimeZone.Offset` as a number (offset in milliseconds)
+Schema type for `TimeZoneOffset`.
 
 **Signature**
 
 ```ts
-declare const TimeZoneOffset: TimeZoneOffset
+export interface TimeZoneOffset extends declare<DateTime.TimeZone.Offset> {}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L7840)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L9471)
 
 Since v4.0.0

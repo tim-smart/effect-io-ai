@@ -48,6 +48,6 @@ console.log(complexParts)
 declare const parts: (self: Duration) => { days: number; hours: number; minutes: number; seconds: number; millis: number; nanos: number; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Duration.ts#L1428)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Duration.ts#L1483)
 
 Since v3.8.0

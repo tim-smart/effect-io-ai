@@ -23,6 +23,6 @@ Duration.toNanos(Duration.infinity) // undefined
 declare const toNanos: (self: Duration) => bigint | undefined
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Duration.ts#L786)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Duration.ts#L841)
 
 Since v4.0.0

@@ -29,11 +29,11 @@ export interface Handlers<
     | R
     | HttpApiEndpoint.MiddlewareWithName<Endpoints, Name>
     | HttpApiEndpoint.MiddlewareServicesWithName<Endpoints, Name>
-    | HttpApiEndpoint.ExcludeProvidedWithName<
+    | (HttpApiEndpoint.ExcludeProvidedWithName<
       Endpoints,
       Name,
       R1 | HttpApiEndpoint.ServerServicesWithName<Endpoints, Name>
-    >,
+    > extends infer _R ? _R extends never ? never : HttpRouter.Request<"Requires", _R> : never),
     HttpApiEndpoint.ExcludeName<Endpoints, Name>
   >
 
@@ -49,11 +49,11 @@ export interface Handlers<
     | R
     | HttpApiEndpoint.MiddlewareWithName<Endpoints, Name>
     | HttpApiEndpoint.MiddlewareServicesWithName<Endpoints, Name>
-    | HttpApiEndpoint.ExcludeProvidedWithName<
+    | (HttpApiEndpoint.ExcludeProvidedWithName<
       Endpoints,
       Name,
       R1 | HttpApiEndpoint.ServerServicesWithName<Endpoints, Name>
-    >,
+    > extends infer _R ? _R extends never ? never : HttpRouter.Request<"Requires", _R> : never),
     HttpApiEndpoint.ExcludeName<Endpoints, Name>
   >
 }

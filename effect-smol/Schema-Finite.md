@@ -3,14 +3,14 @@ Module: `Schema`<br />
 
 ## Schema.Finite
 
-A schema for finite numbers, rejecting `NaN`, `Infinity`, and `-Infinity`.
+Schema type for `Finite`.
 
 **Signature**
 
 ```ts
-declare const Finite: Finite
+export interface Finite extends Number {}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L7473)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L9061)
 
 Since v4.0.0

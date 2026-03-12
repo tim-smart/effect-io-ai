@@ -3,10 +3,9 @@ Module: `Schema`<br />
 
 ## Schema.Annotations.Filter
 
-**Technical Note**
-
-This annotation group is not parametric since it would make the filters
-invariant
+Annotations for filter schema nodes (created via `Schema.filter`). Extends
+`Augment` with an optional error message, identifier, and metadata.
+Filters are intentionally non-parametric to keep them covariant.
 
 **Signature**
 
@@ -32,6 +31,6 @@ export interface Filter extends Augment {
   }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L9344)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L11252)
 
 Since v4.0.0

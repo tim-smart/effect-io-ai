@@ -3,20 +3,14 @@ Module: `Schema`<br />
 
 ## Schema.DateTimeUtcFromMillis
 
-A transformation schema that decodes a number into a `DateTime.Utc`.
-
-Decoding:
-- A number of milliseconds since the Unix epoch is decoded as a `DateTime.Utc`
-
-Encoding:
-- A `DateTime.Utc` is encoded as a number of milliseconds since the Unix epoch.
+Schema type for `DateTimeUtcFromMillis`.
 
 **Signature**
 
 ```ts
-declare const DateTimeUtcFromMillis: DateTimeUtcFromMillis
+export interface DateTimeUtcFromMillis extends decodeTo<instanceOf<DateTime.Utc>, Number> {}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L7818)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L9444)
 
 Since v4.0.0

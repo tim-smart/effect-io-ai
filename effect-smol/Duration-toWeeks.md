@@ -20,6 +20,6 @@ console.log(Duration.toWeeks(Duration.days(7))) // 1
 declare const toWeeks: (self: Duration) => number
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Duration.ts#L724)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Duration.ts#L779)
 
 Since v3.8.0

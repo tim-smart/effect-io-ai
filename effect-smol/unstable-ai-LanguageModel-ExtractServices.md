@@ -14,30 +14,11 @@ type ExtractServices<Options> = Options extends {
   readonly disableToolCallResolution: true
 } ? never
   : Options extends {
-    readonly toolkit: Toolkit.WithHandler<infer _Tools>
-  }
-  // Required for tool call execution
-    ?
-      | Tool.ResultEncodingServices<_Tools[keyof _Tools]>
-      // Required for decoding large language model responses
-      | Tool.ResultDecodingServices<_Tools[keyof _Tools]>
-  : Options extends {
-    readonly toolkit: Effect.Yieldable<
-      Toolkit.Toolkit<infer _Tools>,
-      Toolkit.WithHandler<infer _Tools>,
-      infer _E,
-      infer _R
-    >
-  }
-  // Required for tool call execution
-    ?
-      | Tool.ResultEncodingServices<_Tools[keyof _Tools]>
-      // Required for decoding large language model responses
-      | Tool.ResultDecodingServices<_Tools[keyof _Tools]>
-      | _R
+    readonly toolkit: infer Toolkit
+  } ? ExtractServicesFromToolkitOption<Exclude<Toolkit, undefined>>
   : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/LanguageModel.ts#L513)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/LanguageModel.ts#L574)
 
 Since v4.0.0

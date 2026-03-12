@@ -25,6 +25,6 @@ console.log(invalidZone === undefined) // true
 declare const zoneMakeNamed: (zoneId: string) => TimeZone.Named | undefined
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L819)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L777)
 
 Since v3.6.0

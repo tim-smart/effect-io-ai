@@ -3,18 +3,14 @@ Module: `Schema`<br />
 
 ## Schema.DateTimeUtc
 
-A schema for `DateTime.Utc` values.
-
-**Default JSON serializer**
-
-- encodes `DateTime.Utc` as a UTC ISO string
+Schema type for `DateTimeUtc`.
 
 **Signature**
 
 ```ts
-declare const DateTimeUtc: DateTimeUtc
+export interface DateTimeUtc extends declare<DateTime.Utc> {}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L7725)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L9344)
 
 Since v4.0.0

@@ -3,18 +3,14 @@ Module: `Schema`<br />
 
 ## Schema.Uint8Array
 
-A schema for JavaScript `Uint8Array` objects.
-
-**Default JSON serializer**
-
-The default JSON serializer encodes Uint8Array as a Base64 encoded string.
+Schema type for `Uint8Array`.
 
 **Signature**
 
 ```ts
-declare const Uint8Array: Uint8Array
+export interface Uint8Array extends instanceOf<globalThis.Uint8Array<ArrayBufferLike>> {}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L7617)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L9218)
 
 Since v4.0.0

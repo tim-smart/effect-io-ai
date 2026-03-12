@@ -26,6 +26,6 @@ console.log(utcDate.toISOString()) // "2024-01-01T12:00:00.000Z"
 declare const toDateUtc: (self: DateTime) => Date
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L1260)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L1218)
 
 Since v3.6.0

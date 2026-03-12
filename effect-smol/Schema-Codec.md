@@ -3,16 +3,34 @@ Module: `Schema`<br />
 
 ## Schema.Codec
 
-A schema that tracks both the decoded type `T` and the encoded representation `E`.
+A schema that tracks the decoded type `T`, the encoded type `E`, and the
+Effect services required during decoding (`RD`) and encoding (`RE`).
 
-When to use:
-- You want a schema in APIs that may both decode and encode.
-- You need to preserve/describe the encoded representation (`Encoded`) in types.
-- You need to model required services for decoding (`RD`) and encoding (`RE`).
+Use `Codec<T, E, RD, RE>` when you need to preserve full type information
+about a schema — both what it decodes to and what it serializes from/to.
+Most concrete schemas produced by this module implement `Codec`.
 
-Behavior:
-- This is a typing surface; concrete schema values are created by the various constructors in this module.
-- For decode-only or encode-only APIs, prefer `Decoder` or `Encoder`.
+For APIs that only need one direction, prefer the narrower views:
+- `Decoder``<T, RD>` — decode-only
+- `Encoder``<E, RE>` — encode-only
+- `Schema``<T>` — type-only (no encoded representation)
+
+**Example** (Accepting a codec that decodes to `number` from `string`)
+
+```ts
+import { Schema } from "effect"
+
+declare function serialize<T>(codec: Schema.Codec<T, string>): string
+
+serialize(Schema.NumberFromString) // ok — decodes number, encoded as string
+```
+
+**See**
+
+- `Codec.Encoded` — extract the encoded type
+- `Codec.DecodingServices` — extract required decoding services
+- `Codec.EncodingServices` — extract required encoding services
+- `revealCodec` — helper to make TypeScript infer the full Codec type
 
 **Signature**
 
@@ -25,6 +43,6 @@ export interface Codec<out T, out E = T, out RD = never, out RE = never> extends
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L400)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L729)
 
 Since v4.0.0

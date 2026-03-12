@@ -13,6 +13,7 @@ type Input = | Duration
   | bigint // nanos
   | readonly [seconds: number, nanos: number]
   | `${number} ${Unit}`
+  | DurationObject
 ```
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Duration.ts#L93)

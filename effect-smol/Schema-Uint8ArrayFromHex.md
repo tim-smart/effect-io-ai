@@ -3,21 +3,14 @@ Module: `Schema`<br />
 
 ## Schema.Uint8ArrayFromHex
 
-A transformation schema that decodes a hex encoded string into a
-`Uint8Array`.
-
-Decoding:
-- A **valid** hex encoded string is decoded as a `Uint8Array`.
-
-Encoding:
-- A `Uint8Array` is encoded as a hex encoded string.
+Schema type for `Uint8ArrayFromHex`.
 
 **Signature**
 
 ```ts
-declare const Uint8ArrayFromHex: Uint8ArrayFromHex
+export interface Uint8ArrayFromHex extends decodeTo<Uint8Array, String> {}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L7701)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L9314)
 
 Since v4.0.0

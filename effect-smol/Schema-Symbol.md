@@ -3,14 +3,20 @@ Module: `Schema`<br />
 
 ## Schema.Symbol
 
-A schema for all symbols.
+Schema for `symbol` values.
+
+**See**
+
+- `Symbol` for the schema value.
 
 **Signature**
 
 ```ts
-declare const Symbol: Symbol
+export interface Symbol extends Bottom<symbol, symbol, never, never, AST.Symbol, Symbol> {
+  readonly "~rebuild.out": this
+}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L1453)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L2139)
 
 Since v4.0.0

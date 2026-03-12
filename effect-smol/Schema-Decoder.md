@@ -3,11 +3,22 @@ Module: `Schema`<br />
 
 ## Schema.Decoder
 
-A `Codec` view intended for APIs that only *decode* (parse/validate) values.
+A `Codec` view for APIs that only *decode* (parse/validate) values.
 
-When to use:
-- You want to accept "anything that can decode to `T`", without requiring encoding support.
-- You are writing helpers that should not depend on the schema’s `Encoded` representation.
+Use `Decoder<T, RD>` to accept "any schema that can decode to `T`" without
+constraining or depending on the encoded representation (`Encoded` is
+`unknown`) or encoding services.
+
+**Example** (Function that only needs to decode)
+
+```ts
+import { Schema } from "effect"
+
+declare function validate<T>(decoder: Schema.Decoder<T>): (input: unknown) => T
+
+validate(Schema.String)          // ok
+validate(Schema.NumberFromString) // ok
+```
 
 **Signature**
 
@@ -17,6 +28,6 @@ export interface Decoder<out T, out RD = never> extends Codec<T, unknown, RD, un
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L416)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L756)
 
 Since v4.0.0

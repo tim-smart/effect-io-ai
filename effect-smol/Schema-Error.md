@@ -3,17 +3,14 @@ Module: `Schema`<br />
 
 ## Schema.Error
 
-A schema that represents `Error` objects.
-
-The default json serializer decodes to a struct with `name` and `message`
-properties (stack is omitted for security).
+Schema type for `Error`.
 
 **Signature**
 
 ```ts
-declare const Error: Error
+export interface Error extends instanceOf<globalThis.Error> {}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L6031)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L7493)
 
 Since v4.0.0

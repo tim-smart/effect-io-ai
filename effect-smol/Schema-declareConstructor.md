@@ -3,18 +3,30 @@ Module: `Schema`<br />
 
 ## Schema.declareConstructor
 
-An API for creating schemas for parametric types.
-
-**See**
-
-- `declare` for creating schemas for non parametric types.
+The schema type returned by `declareConstructor`, tracking the decoded
+type `T`, the encoded type `E`, and the list of type-parameter schemas
+`TypeParameters`.
 
 **Signature**
 
 ```ts
-declare const declareConstructor: <T, E = T, Iso = T>() => <const TypeParameters extends ReadonlyArray<Top>>(typeParameters: TypeParameters, run: (typeParameters: { readonly [K in keyof TypeParameters]: Codec<TypeParameters[K]["Type"], TypeParameters[K]["Encoded"]>; }) => (u: unknown, self: AST.Declaration, options: AST.ParseOptions) => Effect.Effect<T, Issue.Issue>, annotations?: Annotations.Declaration<T, TypeParameters>) => declareConstructor<T, E, TypeParameters, Iso>
+export interface declareConstructor<T, E, TypeParameters extends ReadonlyArray<Top>, Iso = T> extends
+  Bottom<
+    T,
+    E,
+    TypeParameters[number]["DecodingServices"],
+    TypeParameters[number]["EncodingServices"],
+    AST.Declaration,
+    declareConstructor<T, E, TypeParameters, Iso>,
+    T,
+    Iso,
+    TypeParameters
+  >
+{
+  readonly "~rebuild.out": this
+}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L188)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L268)
 
 Since v4.0.0

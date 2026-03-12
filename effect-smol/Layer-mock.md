@@ -25,7 +25,7 @@ class UserService extends ServiceMap.Service<UserService, {
 }>()("UserService") {}
 
 // Create a partial mock - only implement what you need for testing
-const testUserLayer = Layer.mock(UserService)({
+const testUserLayer = Layer.mock(UserService, {
   config: { apiUrl: "https://test-api.com" }, // Required - non-Effect property
   getUser: (id: string) => Effect.succeed({ id, name: "Test User" }) // Mock implementation
   // deleteUser and updateUser are omitted - will throw UnimplementedError if called
@@ -49,7 +49,7 @@ const testProgram = Effect.gen(function*() {
 **Signature**
 
 ```ts
-declare const mock: <I, S extends object>(service: ServiceMap.Key<I, S>) => (implementation: PartialEffectful<S>) => Layer<I>
+declare const mock: { <I, S extends object>(service: ServiceMap.Key<I, S>): (implementation: PartialEffectful<S>) => Layer<I>; <I, S extends object>(service: ServiceMap.Key<I, S>, implementation: Types.NoInfer<PartialEffectful<S>>): Layer<I>; }
 ```
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L1760)

@@ -12,6 +12,6 @@ character.
 declare const NonEmptyString: String
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L5319)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L6733)
 
 Since v4.0.0

@@ -179,7 +179,7 @@
     "since": "1.0.0",
     "category": "Constructors",
     "signature": "declare const make: <R extends string>(options: ServeOptions<R>) => Effect.Effect<{ readonly serve: { <E, R>(effect: Effect.Effect<ServerResponse.HttpServerResponse, E, R>): Effect.Effect<void, never, Exclude<R, ServerRequest.HttpServerRequest> | Scope.Scope>; <E, R, App extends Effect.Effect<ServerResponse.HttpServerResponse, any, any>>(effect: Effect.Effect<ServerResponse.HttpServerResponse, E, R>, middleware: HttpMiddleware.Applied<App, E, R>): Effect.Effect<void, never, Exclude<R, ServerRequest.HttpServerRequest> | Scope.Scope>; }; readonly address: Server.Address; }, never, Scope.Scope>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunHttpServer.ts#L58"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunHttpServer.ts#L59"
   },
   {
     "_tag": "Constant",
@@ -194,7 +194,7 @@
     "since": "1.0.0",
     "category": "Layers",
     "signature": "declare const layerServer: <R extends string>(options: ServeOptions<R>) => Layer.Layer<Server.HttpServer>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunHttpServer.ts#L202"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunHttpServer.ts#L203"
   },
   {
     "_tag": "Constant",
@@ -209,7 +209,7 @@
     "since": "1.0.0",
     "category": "Layers",
     "signature": "declare const layerHttpServices: Layer.Layer<BunServices.BunServices | HttpPlatform | Etag.Generator, never, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunHttpServer.ts#L210"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunHttpServer.ts#L211"
   },
   {
     "_tag": "Constant",
@@ -224,7 +224,7 @@
     "since": "1.0.0",
     "category": "Layers",
     "signature": "declare const layerTest: Layer.Layer<FileSystem.FileSystem | Path.Path | Server.HttpServer | HttpPlatform | Etag.Generator | HttpClient, never, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunHttpServer.ts#L237"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunHttpServer.ts#L238"
   },
   {
     "_tag": "Function",
@@ -239,7 +239,7 @@
     "since": "1.0.0",
     "category": "Layers",
     "signature": "declare const layer: <R extends string>(options: ServeOptions<R>) => Layer.Layer<Server.HttpServer | HttpPlatform | Etag.Generator | BunServices.BunServices>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunHttpServer.ts#L224"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunHttpServer.ts#L225"
   },
   {
     "_tag": "Function",
@@ -254,7 +254,7 @@
     "since": "1.0.0",
     "category": "Layers",
     "signature": "declare const layerConfig: <R extends string>(options: Config.Wrap<ServeOptions<R>>) => Layer.Layer<Server.HttpServer | HttpPlatform | FileSystem.FileSystem | Etag.Generator | Path.Path, ConfigError>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunHttpServer.ts#L250"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunHttpServer.ts#L251"
   },
   {
     "_tag": "TypeAlias",
@@ -269,7 +269,7 @@
     "since": "1.0.0",
     "category": "Options",
     "signature": "type ServeOptions<R> = & (\n    | Bun.Serve.UnixServeOptions<WebSocketContext>\n    | Bun.Serve.HostnamePortServeOptions<WebSocketContext>\n  )\n  & { readonly routes?: Bun.Serve.Routes<WebSocketContext, R> }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunHttpServer.ts#L47"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunHttpServer.ts#L48"
   },
   {
     "_tag": "Function",

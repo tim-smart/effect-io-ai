@@ -3,20 +3,14 @@ Module: `Schema`<br />
 
 ## Schema.Trim
 
-A transformation schema that trims whitespace from a string.
-
-Decoding:
-- A `string` is decoded as a string with no leading or trailing whitespaces.
-
-Encoding:
-- The trimmed string is encoded as is.
+Schema type for `Trim`.
 
 **Signature**
 
 ```ts
-declare const Trim: Trim
+export interface Trim extends decodeTo<Trimmed, String> {}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L7556)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L9153)
 
 Since v4.0.0

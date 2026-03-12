@@ -3,7 +3,12 @@ Module: `Schema`<br />
 
 ## Schema.ConstructorDefault
 
-Does the constructor of this schema supply a default value?
+Whether a schema field has a constructor default value.
+
+**See**
+
+- `withConstructorDefault` — add a default to a schema field
+- `tag` — creates a literal field with a constructor default
 
 **Signature**
 
@@ -11,6 +16,6 @@ Does the constructor of this schema supply a default value?
 type ConstructorDefault = "no-default" | "with-default"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L79)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L169)
 
 Since v4.0.0

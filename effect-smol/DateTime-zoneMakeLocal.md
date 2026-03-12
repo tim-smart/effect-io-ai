@@ -26,6 +26,6 @@ console.log(DateTime.formatIsoZoned(localTime))
 declare const zoneMakeLocal: () => TimeZone.Named
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L863)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L821)
 
 Since v3.6.0

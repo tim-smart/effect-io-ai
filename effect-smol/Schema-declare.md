@@ -3,18 +3,15 @@ Module: `Schema`<br />
 
 ## Schema.declare
 
-An API for creating schemas for non parametric types.
-
-**See**
-
-- `declareConstructor` for creating schemas for parametric types.
+The schema type returned by `declare`, representing a non-parametric
+opaque type `T` with no type parameters.
 
 **Signature**
 
 ```ts
-declare const declare: <T, Iso = T>(is: (u: unknown) => u is T, annotations?: Annotations.Declaration<T> | undefined) => declare<T, Iso>
+export interface declare<T, Iso = T> extends declareConstructor<T, T, readonly [], Iso> {}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L221)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L361)
 
 Since v4.0.0

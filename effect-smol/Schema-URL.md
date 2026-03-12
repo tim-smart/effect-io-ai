@@ -3,18 +3,14 @@ Module: `Schema`<br />
 
 ## Schema.URL
 
-A schema for JavaScript `URL` objects.
-
-**Default JSON serializer**
-
-- encodes `URL` as a `string`
+Schema type for `URL`.
 
 **Signature**
 
 ```ts
-declare const URL: URL
+export interface URL extends instanceOf<globalThis.URL> {}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L6793)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L8292)
 
 Since v4.0.0

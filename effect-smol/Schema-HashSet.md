@@ -3,15 +3,24 @@ Module: `Schema`<br />
 
 ## Schema.HashSet
 
-Creates a schema that validates a `HashSet` where values must conform to the
-provided schema.
+Schema for an Effect `HashSet` where values must conform to the provided
+schema.
 
 **Signature**
 
 ```ts
-declare const HashSet: <Value extends Top>(value: Value) => HashSet<Value>
+export interface HashSet<Value extends Top> extends
+  declareConstructor<
+    HashSet_.HashSet<Value["Type"]>,
+    HashSet_.HashSet<Value["Encoded"]>,
+    readonly [Value],
+    HashSetIso<Value>
+  >
+{
+  readonly value: Value
+}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L6564)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L8037)
 
 Since v4.0.0

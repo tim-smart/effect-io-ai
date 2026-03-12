@@ -3,30 +3,37 @@ Module: `Schema`<br />
 
 ## Schema.optionalKey
 
-Creates an exact optional key schema for struct fields. Unlike `optional`,
-this creates exact optional properties (not `| undefined`) that can be
-completely omitted from the object.
-
-**Example** (Creating a struct with optional key)
-
-```ts
-import { Schema } from "effect"
-
-const schema = Schema.Struct({
-  name: Schema.String,
-  age: Schema.optionalKey(Schema.Number)
-})
-
-// Type: { readonly name: string; readonly age?: number }
-type Person = typeof schema["Type"]
-```
+Schema type for an exact optional struct key. The key may be absent, but
+when present must match the wrapped schema (no implicit `undefined`).
+Produced by `optionalKey`.
 
 **Signature**
 
 ```ts
-declare const optionalKey: optionalKeyLambda
+export interface optionalKey<S extends Top> extends
+  Bottom<
+    S["Type"],
+    S["Encoded"],
+    S["DecodingServices"],
+    S["EncodingServices"],
+    S["ast"],
+    optionalKey<S>,
+    S["~type.make.in"],
+    S["Iso"],
+    S["~type.parameters"],
+    S["~type.make"],
+    S["~type.mutability"],
+    "optional",
+    S["~type.constructor.default"],
+    S["~encoded.mutability"],
+    "optional"
+  >
+{
+  readonly "~rebuild.out": this
+  readonly schema: S
+}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L948)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L1439)
 
 Since v4.0.0

@@ -21,6 +21,6 @@ and `noNaN` constraints to ensure generated numbers are finite.
 declare const isFinite: (annotations?: Annotations.Filter) => AST.Filter<number>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L3985)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L5372)
 
 Since v4.0.0

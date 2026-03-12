@@ -3,20 +3,14 @@ Module: `Schema`<br />
 
 ## Schema.URLFromString
 
-A transformation schema that decodes a `string` into a `URL`.
-
-Decoding:
-- A **valid** URL `string` is decoded as a `URL`
-
-Encoding:
-- A `URL` is encoded as a `string`
+Schema type for `URLFromString`.
 
 **Signature**
 
 ```ts
-declare const URLFromString: URLFromString
+export interface URLFromString extends decodeTo<URL, String> {}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L6831)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L8331)
 
 Since v4.0.0

@@ -19,9 +19,9 @@ interface Category {
   readonly children: ReadonlyArray<Category>
 }
 
-const Category: Schema.Schema<Category> = Schema.Struct({
+const Category = Schema.Struct({
   name: Schema.String,
-  children: Schema.Array(Schema.suspend(() => Category))
+  children: Schema.Array(Schema.suspend((): Schema.Codec<Category> => Category))
 })
 
 // The recursive branch is a Suspend node

@@ -27,6 +27,6 @@ console.log(invalid === undefined) // true
 declare const zoneFromString: (zone: string) => TimeZone | undefined
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L886)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L844)
 
 Since v3.6.0

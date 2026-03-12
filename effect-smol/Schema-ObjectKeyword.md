@@ -3,14 +3,20 @@ Module: `Schema`<br />
 
 ## Schema.ObjectKeyword
 
-A schema for the `object` type.
+Schema for the `object` type keyword.
+
+**See**
+
+- `ObjectKeyword` for the schema value.
 
 **Signature**
 
 ```ts
-declare const ObjectKeyword: ObjectKeyword
+export interface ObjectKeyword extends Bottom<object, object, never, never, AST.ObjectKeyword, ObjectKeyword> {
+  readonly "~rebuild.out": this
+}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L1495)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L2191)
 
 Since v4.0.0

@@ -3,19 +3,14 @@ Module: `Schema`<br />
 
 ## Schema.DateTimeZoned
 
-A schema for `DateTime.Zoned` values.
-
-**Default JSON serializer**
-
-- encodes `DateTime.Zoned` as a string in the format
-  `YYYY-MM-DDTHH:mm:ss.sss+HH:MM[Time/Zone]`
+Schema type for `DateTimeZoned`.
 
 **Signature**
 
 ```ts
-declare const DateTimeZoned: DateTimeZoned
+export interface DateTimeZoned extends declare<DateTime.Zoned> {}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L7970)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L9609)
 
 Since v4.0.0

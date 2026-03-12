@@ -21,6 +21,6 @@ constraint to ensure generated strings contain only lowercase characters.
 declare const isLowercased: (annotations?: Annotations.Filter) => AST.Filter<string>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L3876)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L5263)
 
 Since v4.0.0

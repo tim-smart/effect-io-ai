@@ -30,6 +30,6 @@ const program = Effect.gen(function*() {
 declare class Chat
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chat.ts#L93)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chat.ts#L92)
 
 Since v4.0.0

@@ -20,6 +20,6 @@ console.log(Duration.toMinutes(Duration.hours(1))) // 60
 declare const toMinutes: (self: Duration) => number
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Duration.ts#L658)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Duration.ts#L713)
 
 Since v3.8.0

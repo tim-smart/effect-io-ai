@@ -3,16 +3,34 @@ Module: `Schema`<br />
 
 ## Schema.suspend
 
-Creates a suspended schema that defers evaluation until needed. This is
-essential for creating recursive schemas where a schema references itself,
-preventing infinite recursion during schema definition.
+Schema type wrapping a lazily-evaluated schema. Produced by `suspend`.
 
 **Signature**
 
 ```ts
-declare const suspend: <S extends Top>(f: () => S) => suspend<S>
+export interface suspend<S extends Top> extends
+  Bottom<
+    S["Type"],
+    S["Encoded"],
+    S["DecodingServices"],
+    S["EncodingServices"],
+    AST.Suspend,
+    suspend<S>,
+    S["~type.make.in"],
+    S["Iso"],
+    S["~type.parameters"],
+    S["~type.make"],
+    S["~type.mutability"],
+    S["~type.optionality"],
+    S["~type.constructor.default"],
+    S["~encoded.mutability"],
+    S["~encoded.optionality"]
+  >
+{
+  readonly "~rebuild.out": this
+}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L2598)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L3556)
 
 Since v4.0.0

@@ -3,18 +3,18 @@ Module: `Schema`<br />
 
 ## Schema.withDecodingDefaultKey
 
-**Options**
+The type produced by `withDecodingDefaultKey` — a schema that decodes from an `optionalKey` encoded source.
 
-- `encodingStrategy`: The strategy to use when encoding.
-  - `passthrough`: (default) Pass the default value through to the output.
-  - `omit`: Omit the value from the output.
+**See**
+
+- `withDecodingDefaultKey` for the constructor
 
 **Signature**
 
 ```ts
-declare const withDecodingDefaultKey: <S extends Top>(defaultValue: () => S["Encoded"], options?: DecodingDefaultOptions) => (self: S) => withDecodingDefaultKey<S>
+export interface withDecodingDefaultKey<S extends Top> extends decodeTo<S, optionalKey<toEncoded<S>>> {}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L3083)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L4255)
 
 Since v4.0.0

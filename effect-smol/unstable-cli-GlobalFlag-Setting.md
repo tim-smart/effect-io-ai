@@ -15,6 +15,6 @@ export interface Setting<Id extends string, A> extends ServiceMap.Service<Settin
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/GlobalFlag.ts#L51)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/GlobalFlag.ts#L54)
 
 Since v4.0.0

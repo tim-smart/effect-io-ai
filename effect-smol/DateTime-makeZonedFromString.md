@@ -30,6 +30,6 @@ console.log(invalid === undefined) // true
 declare const makeZonedFromString: (input: string) => Zoned | undefined
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L618)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L576)
 
 Since v3.6.0

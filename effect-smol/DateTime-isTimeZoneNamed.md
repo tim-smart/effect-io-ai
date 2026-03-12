@@ -11,6 +11,6 @@ Checks if a value is a named `TimeZone` (IANA time zone).
 declare const isTimeZoneNamed: (u: unknown) => u is TimeZone.Named
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L349)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L307)
 
 Since v3.6.0

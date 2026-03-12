@@ -27,6 +27,6 @@ console.log(DateTime.formatIsoDateUtc(zoned)) // "2024-01-01" (always UTC)
 declare const formatIsoDateUtc: (self: DateTime) => string
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L2286)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L2244)
 
 Since v3.6.0

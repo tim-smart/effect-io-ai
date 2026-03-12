@@ -27,6 +27,6 @@ console.log(Duration.toSeconds(total)) // 8
 declare const sum: { (that: Duration): (self: Duration) => Duration; (self: Duration, that: Duration): Duration; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Duration.ts#L1263)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Duration.ts#L1318)
 
 Since v2.0.0

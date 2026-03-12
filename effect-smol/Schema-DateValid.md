@@ -3,17 +3,14 @@ Module: `Schema`<br />
 
 ## Schema.DateValid
 
-A schema for **valid** JavaScript `Date` objects.
-
-This schema accepts `Date` instances but rejects invalid dates (such as `new
-Date("invalid")`).
+Schema type for `DateValid`.
 
 **Signature**
 
 ```ts
-declare const DateValid: Date
+export interface DateValid extends Date {}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L6883)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L8404)
 
 Since v4.0.0

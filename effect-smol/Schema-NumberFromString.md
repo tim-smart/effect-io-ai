@@ -3,20 +3,14 @@ Module: `Schema`<br />
 
 ## Schema.NumberFromString
 
-A transformation schema that parses a string into a number.
-
-Decoding:
-- A `string` is decoded as a finite number.
-
-Encoding:
-- A number is encoded as a `string`.
+Schema type for `NumberFromString`.
 
 **Signature**
 
 ```ts
-declare const NumberFromString: NumberFromString
+export interface NumberFromString extends decodeTo<Finite, String> {}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L7503)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L9091)
 
 Since v4.0.0

@@ -3,14 +3,14 @@ Module: `Schema`<br />
 
 ## Schema.Int
 
-A schema for integers, rejecting `NaN`, `Infinity`, and `-Infinity`.
+Schema type for `Int`.
 
 **Signature**
 
 ```ts
-declare const Int: Int
+export interface Int extends Number {}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L7485)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L9076)
 
 Since v4.0.0

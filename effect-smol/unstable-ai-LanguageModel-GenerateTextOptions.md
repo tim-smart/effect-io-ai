@@ -18,15 +18,7 @@ export interface GenerateTextOptions<Tools extends Record<string, Tool.Any>> {
    * A toolkit containing both the tools and the tool call handler to use to
    * augment text generation.
    */
-  readonly toolkit?:
-    | Toolkit.WithHandler<Tools>
-    | Effect.Yieldable<
-      Toolkit.Toolkit<Tools>,
-      Toolkit.WithHandler<Tools>,
-      never,
-      any
-    >
-    | undefined
+  readonly toolkit?: ToolkitOption<Tools> | undefined
 
   /**
    * The tool choice mode for the language model.

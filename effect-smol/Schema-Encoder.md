@@ -3,11 +3,22 @@ Module: `Schema`<br />
 
 ## Schema.Encoder
 
-A `Codec` view intended for APIs that only *encode* values.
+A `Codec` view for APIs that only *encode* values.
 
-When to use:
-- You want to accept "anything that can encode to `E`", without requiring decoding support.
-- You are writing helpers that should not depend on the schema’s decoded `Type`.
+Use `Encoder<E, RE>` to accept "any schema that can encode to `E`" without
+constraining or depending on the decoded `Type` (`Type` is `unknown`) or
+decoding services.
+
+**Example** (Function that only needs to encode)
+
+```ts
+import { Schema } from "effect"
+
+declare function serialize<E>(encoder: Schema.Encoder<E>): (value: unknown) => E
+
+serialize(Schema.String)          // ok — encodes to string
+serialize(Schema.NumberFromString) // ok — encodes number to string
+```
 
 **Signature**
 
@@ -17,6 +28,6 @@ export interface Encoder<out E, out RE = never> extends Codec<unknown, E, unknow
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L429)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L780)
 
 Since v4.0.0

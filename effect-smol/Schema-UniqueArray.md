@@ -3,17 +3,14 @@ Module: `Schema`<br />
 
 ## Schema.UniqueArray
 
-Returns a new array schema that ensures all elements are unique.
-
-The equivalence used to determine uniqueness is the one provided by
-`Schema.toEquivalence(item)`.
+Schema type for an array with unique elements. Produced by `UniqueArray`.
 
 **Signature**
 
 ```ts
-declare const UniqueArray: <S extends Top>(item: S) => UniqueArray<S>
+export interface UniqueArray<S extends Top> extends $Array<S> {}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L2344)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L3270)
 
 Since v4.0.0

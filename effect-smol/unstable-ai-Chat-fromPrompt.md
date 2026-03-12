@@ -65,6 +65,6 @@ const existingChat = Effect.gen(function*() {
 declare const fromPrompt: (prompt: Prompt.RawInput) => Effect.Effect<Service, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chat.ts#L484)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chat.ts#L482)
 
 Since v4.0.0

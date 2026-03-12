@@ -11,6 +11,6 @@ Global flag discriminated union.
 type GlobalFlag<A> = Action<A> | Setting<any, A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/GlobalFlag.ts#L74)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/GlobalFlag.ts#L77)
 
 Since v4.0.0

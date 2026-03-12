@@ -22,6 +22,6 @@ Duration.fromInput("invalid" as any) // undefined
 declare const fromInput: (u: Input) => Duration | undefined
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Duration.ts#L191)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Duration.ts#L246)
 
 Since v4.0.0

@@ -12,32 +12,18 @@ and tool call resolution settings.
 
 ```ts
 type ExtractError<Options> = Options extends {
-  readonly toolkit: Toolkit.WithHandler<infer _Tools>
   readonly disableToolCallResolution: true
-} ? AiError.AiError
+  readonly toolkit: infer ToolkitValue
+} ? ExtractErrorFromToolkitOption<Exclude<ToolkitValue, undefined>, true>
   : Options extends {
-    readonly toolkit: Effect.Yieldable<
-      Toolkit.Toolkit<infer _Tools>,
-      Toolkit.WithHandler<infer _Tools>,
-      infer _E,
-      infer _R
-    >
+    readonly toolkit: infer ToolkitValue
+  } ? ExtractErrorFromToolkitOption<Exclude<ToolkitValue, undefined>, false>
+  : Options extends {
     readonly disableToolCallResolution: true
-  } ? AiError.AiError | _E
-  : Options extends {
-    readonly toolkit: Toolkit.WithHandler<infer _Tools>
-  } ? AiError.AiError | Tool.HandlerError<_Tools[keyof _Tools]>
-  : Options extends {
-    readonly toolkit: Effect.Yieldable<
-      Toolkit.Toolkit<infer _Tools>,
-      Toolkit.WithHandler<infer _Tools>,
-      infer _E,
-      infer _R
-    >
-  } ? AiError.AiError | Tool.HandlerError<_Tools[keyof _Tools]> | _E
+  } ? AiError.AiError
   : AiError.AiError
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/LanguageModel.ts#L479)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/LanguageModel.ts#L554)
 
 Since v4.0.0

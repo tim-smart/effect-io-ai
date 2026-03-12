@@ -25,6 +25,6 @@ console.log(new Date(epochMillis).toISOString()) // "2024-01-01T00:00:00.000Z"
 declare const toEpochMillis: (self: DateTime) => number
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L1350)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L1308)
 
 Since v3.6.0

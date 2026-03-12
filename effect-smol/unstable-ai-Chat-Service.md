@@ -108,10 +108,9 @@ export interface Service {
    * ```
    */
   readonly generateText: <
-    Options extends NoExcessProperties<LanguageModel.GenerateTextOptions<any>, Options>,
-    Tools extends Record<string, Tool.Any> = {}
-  >(options: Options & LanguageModel.GenerateTextOptions<Tools>) => Effect.Effect<
-    LanguageModel.GenerateTextResponse<Tools>,
+    Options extends NoExcessProperties<LanguageModel.GenerateTextOptions<any>, Options>
+  >(options: Options & LanguageModel.GenerateTextOptions<LanguageModel.ExtractTools<Options>>) => Effect.Effect<
+    LanguageModel.GenerateTextResponse<LanguageModel.ExtractTools<Options>>,
     LanguageModel.ExtractError<Options>,
     LanguageModel.LanguageModel | LanguageModel.ExtractServices<Options>
   >
@@ -142,10 +141,9 @@ export interface Service {
    * ```
    */
   readonly streamText: <
-    Options extends NoExcessProperties<LanguageModel.GenerateTextOptions<any>, Options>,
-    Tools extends Record<string, Tool.Any> = {}
-  >(options: Options & LanguageModel.GenerateTextOptions<Tools>) => Stream.Stream<
-    Response.StreamPart<Tools>,
+    Options extends NoExcessProperties<LanguageModel.GenerateTextOptions<any>, Options>
+  >(options: Options & LanguageModel.GenerateTextOptions<LanguageModel.ExtractTools<Options>>) => Stream.Stream<
+    Response.StreamPart<LanguageModel.ExtractTools<Options>>,
     LanguageModel.ExtractError<Options>,
     LanguageModel.LanguageModel | LanguageModel.ExtractServices<Options>
   >
@@ -186,16 +184,17 @@ export interface Service {
   readonly generateObject: <
     ObjectEncoded extends Record<string, any>,
     ObjectSchema extends Schema.Encoder<ObjectEncoded, unknown>,
-    Options extends NoExcessProperties<LanguageModel.GenerateObjectOptions<any, ObjectSchema>, Options>,
-    Tools extends Record<string, Tool.Any> = {}
-  >(options: Options & LanguageModel.GenerateObjectOptions<Tools, ObjectSchema>) => Effect.Effect<
-    LanguageModel.GenerateObjectResponse<Tools, ObjectSchema["Type"]>,
+    Options extends NoExcessProperties<LanguageModel.GenerateObjectOptions<any, ObjectSchema>, Options>
+  >(
+    options: Options & LanguageModel.GenerateObjectOptions<LanguageModel.ExtractTools<Options>, ObjectSchema>
+  ) => Effect.Effect<
+    LanguageModel.GenerateObjectResponse<LanguageModel.ExtractTools<Options>, ObjectSchema["Type"]>,
     LanguageModel.ExtractError<Options>,
     LanguageModel.ExtractServices<Options> | ObjectSchema["DecodingServices"] | LanguageModel.LanguageModel
   >
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chat.ts#L103)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chat.ts#L102)
 
 Since v4.0.0

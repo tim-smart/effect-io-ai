@@ -14,7 +14,7 @@ back.
 **Signature**
 
 ```ts
-declare const MultiDocumentFromJson: Schema.Codec<MultiDocument, unknown, never, never>
+declare const MultiDocumentFromJson: Schema.Codec<MultiDocument, Schema.Json, never, never>
 ```
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaRepresentation.ts#L1660)

@@ -30,6 +30,6 @@ try {
 declare const toNanosUnsafe: (self: Duration) => bigint
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Duration.ts#L756)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Duration.ts#L811)
 
 Since v2.0.0

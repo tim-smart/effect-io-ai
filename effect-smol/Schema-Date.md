@@ -3,17 +3,14 @@ Module: `Schema`<br />
 
 ## Schema.Date
 
-A schema for JavaScript `Date` objects.
-
-This schema accepts any `Date` instance, including invalid dates (e.g., `new
-Date("invalid")`). For validating only valid dates, use `ValidDate` instead.
+Schema type for `Date`.
 
 **Signature**
 
 ```ts
-declare const Date: Date
+export interface Date extends instanceOf<globalThis.Date> {}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L6847)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L8354)
 
 Since v4.0.0

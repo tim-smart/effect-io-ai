@@ -23,6 +23,6 @@ const duration3 = Duration.fromInputUnsafe([2, 500_000_000]) // 2 seconds and 50
 declare const fromInputUnsafe: (input: Input) => Duration
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Duration.ts#L119)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Duration.ts#L149)
 
 Since v2.0.0

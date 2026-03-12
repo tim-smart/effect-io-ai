@@ -22,6 +22,6 @@ DateTime.makeUnsafe(0).pipe(
 declare const subtractDuration: { (duration: Duration.Input): <A extends DateTime>(self: A) => A; <A extends DateTime>(self: A, duration: Duration.Input): A; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L1906)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L1864)
 
 Since v3.6.0

@@ -3,17 +3,36 @@ Module: `Schema`<br />
 
 ## Schema.overrideToCodecIso
 
-**Technical Note**
-
-This annotation cannot be added to `Annotations.Bottom` because it changes
-the schema type.
+The schema type returned by `overrideToCodecIso`. Carries a custom
+`Iso` type parameter and exposes the original `schema`.
 
 **Signature**
 
 ```ts
-declare const overrideToCodecIso: <S extends Top, Iso>(to: Codec<Iso>, transformation: { readonly decode: Getter.Getter<S["Type"], Iso>; readonly encode: Getter.Getter<Iso, S["Type"]>; }) => (schema: S) => overrideToCodecIso<S, Iso>
+export interface overrideToCodecIso<S extends Top, Iso> extends
+  Bottom<
+    S["Type"],
+    S["Encoded"],
+    S["DecodingServices"],
+    S["EncodingServices"],
+    S["ast"],
+    overrideToCodecIso<S, Iso>,
+    S["~type.make.in"],
+    Iso,
+    S["~type.parameters"],
+    S["~type.make"],
+    S["~type.mutability"],
+    S["~type.optionality"],
+    S["~type.constructor.default"],
+    S["~encoded.mutability"],
+    S["~encoded.optionality"]
+  >
+{
+  readonly "~rebuild.out": this
+  readonly schema: S
+}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L9030)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L10841)
 
 Since v4.0.0

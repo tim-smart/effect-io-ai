@@ -3,15 +3,17 @@ Module: `Schema`<br />
 
 ## Schema.Top
 
-The top (most general) type for all schema-like values in this module.
+The existential "any schema" type — all type parameters are erased to `unknown`.
 
-When to use:
-- You are writing generic helpers and only need "some schema", without caring about its `Type` / `Encoded`.
-- You need a common constraint for type-level utilities (for example in `Schema.Type` or `Codec.Encoded`).
+Use `Top` as a constraint when writing generic utilities that must accept *any*
+schema regardless of its `Type`, `Encoded`, or service requirements. It is the
+widest possible schema type and therefore gives you the least static information.
 
-Behavior:
-- This is a *type-level* supertype; it does not represent a specific concrete schema.
-- In user code, you usually want `Schema`, `Codec`, `Decoder`, or `Encoder` instead.
+In user code prefer the narrower interfaces:
+- `Schema``<T>` — when you only care about the decoded type
+- `Codec``<T, E, RD, RE>` — when you need the encoded type and service requirements
+- `Decoder``<T, RD>` — for decode-only APIs
+- `Encoder``<E, RE>` — for encode-only APIs
 
 **Signature**
 
@@ -37,6 +39,6 @@ export interface Top extends
 {}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L304)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L533)
 
 Since v4.0.0

@@ -3,12 +3,30 @@ Module: `Schema`<br />
 
 ## Schema.SchemaError
 
-A `SchemaError` is returned when schema decoding or encoding fails.
+Error thrown (or returned as the error channel value) when schema decoding
+or encoding fails.
 
-This error extends `Data.TaggedError` and contains detailed information about
-what went wrong during schema processing. The error includes an `issue` field
-that provides comprehensive details about the validation failure, including
-the path to the problematic data, expected types, and actual values.
+The `issue` field contains a structured `Issue.Issue` tree describing
+every validation failure, including the path to the problematic value,
+expected types, and actual values received. `message` renders the issue tree
+as a human-readable string.
+
+Use `isSchemaError` to narrow an unknown value to `SchemaError`.
+
+**Example** (Catching a SchemaError)
+
+```ts
+import { Schema } from "effect"
+
+try {
+  Schema.decodeUnknownSync(Schema.Number)("not a number")
+} catch (err) {
+  if (Schema.isSchemaError(err)) {
+    console.log(err.message)
+    // Expected number, actual "not a number"
+  }
+}
+```
 
 **Signature**
 
@@ -16,6 +34,6 @@ the path to the problematic data, expected types, and actual values.
 declare class SchemaError { constructor(issue: Issue.Issue) }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L452)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L840)
 
 Since v4.0.0

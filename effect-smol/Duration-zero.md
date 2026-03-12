@@ -19,6 +19,6 @@ console.log(Duration.toMillis(Duration.zero)) // 0
 declare const zero: Duration
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Duration.ts#L440)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Duration.ts#L495)
 
 Since v2.0.0

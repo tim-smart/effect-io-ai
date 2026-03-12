@@ -3,14 +3,20 @@ Module: `Schema`<br />
 
 ## Schema.BigInt
 
-A schema for all bigints.
+Schema for `bigint` values.
+
+**See**
+
+- `BigInt` for the schema value.
 
 **Signature**
 
 ```ts
-declare const BigInt: BigInt
+export interface BigInt extends Bottom<bigint, bigint, never, never, AST.BigInt, BigInt> {
+  readonly "~rebuild.out": this
+}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L1467)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L2157)
 
 Since v4.0.0

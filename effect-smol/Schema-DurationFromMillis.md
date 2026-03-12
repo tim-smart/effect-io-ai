@@ -3,24 +3,14 @@ Module: `Schema`<br />
 
 ## Schema.DurationFromMillis
 
-A transformation schema that decodes a non-negative (possibly infinite)
-integer into a `Duration`, treating the integer value as the duration in
-milliseconds.
-
-Decoding:
-- A non-negative (possibly infinite) integer representing milliseconds is
-  decoded as a `Duration`
-
-Encoding:
-- A `Duration` is encoded to a non-negative (possibly infinite) integer
-  representing milliseconds
+Schema type for `DurationFromMillis`.
 
 **Signature**
 
 ```ts
-declare const DurationFromMillis: DurationFromMillis
+export interface DurationFromMillis extends decodeTo<Duration, Number> {}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L7001)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L8534)
 
 Since v4.0.0

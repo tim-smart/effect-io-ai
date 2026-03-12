@@ -3,15 +3,21 @@ Module: `Schema`<br />
 
 ## Schema.Bottom
 
-The base interface for all schemas in the Effect Schema library, exposing all
-14 type parameters that control schema behavior and type inference. Bottom
-sits at the root of the schema type hierarchy and provides access to the
-complete internal type information of schemas.
+The fully-parameterized base interface for all schemas. Exposes all 14 type
+parameters controlling type inference, mutability, optionality, services,
+and transformation behavior.
 
-Bottom is primarily used for advanced type-level operations, schema
-introspection, and when you need precise control over all aspects of schema
-behavior including mutability, optionality, service dependencies, and
-transformation characteristics.
+When to use:
+- You are writing advanced generic schema utilities or performing schema
+  introspection.
+- In user code, prefer `Schema`, `Codec`, `Decoder`, or
+  `Encoder` instead.
+
+**See**
+
+- `Top` — the existential "any schema" type (erased type params)
+- `Schema` — tracks only the decoded Type
+- `Codec` — tracks Type + Encoded
 
 **Signature**
 
@@ -67,6 +73,6 @@ export interface Bottom<
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L111)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L210)
 
 Since v4.0.0

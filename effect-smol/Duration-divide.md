@@ -22,6 +22,6 @@ Duration.divide(Duration.seconds(10), 0) // undefined
 declare const divide: { (by: number): (self: Duration) => Duration | undefined; (self: Duration, by: number): Duration | undefined; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Duration.ts#L1102)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Duration.ts#L1157)
 
 Since v4.0.0

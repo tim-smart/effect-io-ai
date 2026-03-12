@@ -3,19 +3,20 @@ Module: `Schema`<br />
 
 ## Schema.Number
 
-A schema for all numbers, including `NaN`, `Infinity`, and `-Infinity`.
+Schema for `number` values, including `NaN`, `Infinity`, and `-Infinity`.
 
-**Default Json Serializer**
+**See**
 
-- If the number is finite, it is serialized as a number.
-- Otherwise, it is serialized as a string ("NaN", "Infinity", or "-Infinity").
+- `Number` for the schema value.
 
 **Signature**
 
 ```ts
-declare const Number: Number
+export interface Number extends Bottom<number, number, never, never, AST.Number, Number> {
+  readonly "~rebuild.out": this
+}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L1424)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L2098)
 
 Since v4.0.0

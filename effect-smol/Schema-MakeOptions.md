@@ -3,8 +3,15 @@ Module: `Schema`<br />
 
 ## Schema.MakeOptions
 
-Configuration options for the `makeUnsafe` method, providing control over
-parsing behavior and validation.
+Options for `makeUnsafe` and Class constructors.
+
+When to use:
+- Pass `disableValidation: true` to skip validation when you trust the data.
+- Pass `parseOptions` to control error reporting behavior.
+
+**See**
+
+- `Bottom.makeUnsafe`
 
 **Signature**
 
@@ -21,6 +28,6 @@ export interface MakeOptions {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L87)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L182)
 
 Since v4.0.0

@@ -42,6 +42,6 @@ const restoreFromJson = Effect.gen(function*() {
 declare const fromJson: (data: string) => Effect.Effect<Service, Schema.SchemaError>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chat.ts#L563)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chat.ts#L561)
 
 Since v4.0.0

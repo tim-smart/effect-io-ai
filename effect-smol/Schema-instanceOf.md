@@ -3,14 +3,20 @@ Module: `Schema`<br />
 
 ## Schema.instanceOf
 
-Creates a schema that validates an instance of a specific class constructor.
+The type produced by `instanceOf` — a declaration schema that validates class instances.
+
+**See**
+
+- `instanceOf` for the constructor
 
 **Signature**
 
 ```ts
-declare const instanceOf: <C extends abstract new (...args: any) => any, Iso = InstanceType<C>>(constructor: C, annotations?: Annotations.Declaration<InstanceType<C>> | undefined) => instanceOf<InstanceType<C>, Iso>
+export interface instanceOf<T, Iso = T> extends declare<T, Iso> {
+  readonly "~rebuild.out": this
+}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L3408)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L4751)
 
 Since v4.0.0

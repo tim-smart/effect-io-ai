@@ -3,23 +3,22 @@ Module: `Schema`<br />
 
 ## Schema.UniqueSymbol
 
-A schema for unique symbols.
+Represents a schema for a specific unique symbol.
 
-**Example**
+**See**
 
-```ts
-import { Schema } from "effect"
-
-const a = Symbol.for("a")
-const schema = Schema.UniqueSymbol(a)
-```
+- `UniqueSymbol` for the constructor function.
 
 **Signature**
 
 ```ts
-declare const UniqueSymbol: <const sym extends symbol>(symbol: sym) => UniqueSymbol<sym>
+export interface UniqueSymbol<sym extends symbol>
+  extends Bottom<sym, sym, never, never, AST.UniqueSymbol, UniqueSymbol<sym>>
+{
+  readonly "~rebuild.out": this
+}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L1519)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L2209)
 
 Since v4.0.0

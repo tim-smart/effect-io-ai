@@ -3,18 +3,14 @@ Module: `Schema`<br />
 
 ## Schema.TimeZoneNamed
 
-A schema for `DateTime.TimeZone.Named` values.
-
-**Default JSON serializer**
-
-- encodes `DateTime.TimeZone.Named` as a string (IANA time zone identifier)
+Schema type for `TimeZoneNamed`.
 
 **Signature**
 
 ```ts
-declare const TimeZoneNamed: TimeZoneNamed
+export interface TimeZoneNamed extends declare<DateTime.TimeZone.Named> {}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L7879)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L9513)
 
 Since v4.0.0

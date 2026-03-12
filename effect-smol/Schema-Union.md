@@ -3,19 +3,48 @@ Module: `Schema`<br />
 
 ## Schema.Union
 
-Creates a schema that represents a union of multiple schemas. Members are checked in order, and the first match is returned.
-
-Optionally, you can specify the `mode` to be `"anyOf"` or `"oneOf"`.
-
-- `"anyOf"` - The union matches if any member matches.
-- `"oneOf"` - The union matches if exactly one member matches.
+Schema type for a union of multiple schemas. Produced by `Union`.
 
 **Signature**
 
 ```ts
-declare const Union: <const Members extends ReadonlyArray<Top>>(members: Members, options?: { mode?: "anyOf" | "oneOf"; }) => Union<Members>
+export interface Union<Members extends ReadonlyArray<Top>> extends
+  Bottom<
+    { [K in keyof Members]: Members[K]["Type"] }[number],
+    { [K in keyof Members]: Members[K]["Encoded"] }[number],
+    { [K in keyof Members]: Members[K]["DecodingServices"] }[number],
+    { [K in keyof Members]: Members[K]["EncodingServices"] }[number],
+    AST.Union<{ [K in keyof Members]: Members[K]["ast"] }[number]>,
+    Union<Members>,
+    { [K in keyof Members]: Members[K]["~type.make"] }[number],
+    { [K in keyof Members]: Members[K]["Iso"] }[number]
+  >
+{
+  readonly "~rebuild.out": this
+  readonly members: Members
+  /**
+   * Returns a new union with the members modified by the provided function.
+   *
+   * **Options**
+   *
+   * - `unsafePreserveChecks` - if `true`, keep any `.check(...)` constraints
+   *   that were attached to the original union. Defaults to `false`.
+   *
+   *   **Warning**: This is an unsafe operation. Since `mapFields`
+   *   transformations change the schema type, the original refinement functions
+   *   may no longer be valid or safe to apply to the transformed schema. Only
+   *   use this option if you have verified that your refinements remain correct
+   *   after the transformation.
+   */
+  mapMembers<To extends ReadonlyArray<Top>>(
+    f: (members: Members) => To,
+    options?: {
+      readonly unsafePreserveChecks?: boolean | undefined
+    } | undefined
+  ): Union<Simplify<Readonly<To>>>
+}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L2462)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L3346)
 
 Since v4.0.0

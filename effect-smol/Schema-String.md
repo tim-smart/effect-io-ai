@@ -3,14 +3,20 @@ Module: `Schema`<br />
 
 ## Schema.String
 
-A schema for all strings.
+Schema for `string` values.
+
+**See**
+
+- `String` for the schema value.
 
 **Signature**
 
 ```ts
-declare const String: String
+export interface String extends Bottom<string, string, never, never, AST.String, String> {
+  readonly "~rebuild.out": this
+}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L1405)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L2081)
 
 Since v4.0.0
