@@ -428,7 +428,7 @@
     "since": "1.0.0",
     "category": "Layers",
     "signature": "declare const layerHttpServer: Layer.Layer<NodeServices | HttpServer | HttpPlatform | Etag.Generator, ServeError, ShardingConfig.ShardingConfig>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeClusterHttp.ts#L122"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeClusterHttp.ts#L123"
   },
   {
     "_tag": "Function",
@@ -443,7 +443,7 @@
     "since": "1.0.0",
     "category": "Layers",
     "signature": "declare const layer: <const ClientOnly extends boolean = false, const Storage extends \"local\" | \"sql\" | \"byo\" = never>(options: { readonly transport: \"http\" | \"websocket\"; readonly serialization?: \"msgpack\" | \"ndjson\" | undefined; readonly clientOnly?: ClientOnly | undefined; readonly storage?: Storage | undefined; readonly runnerHealth?: \"ping\" | \"k8s\" | undefined; readonly runnerHealthK8s?: { readonly namespace?: string | undefined; readonly labelSelector?: string | undefined; } | undefined; readonly shardingConfig?: Partial<ShardingConfig.ShardingConfig[\"Service\"]> | undefined; }) => ClientOnly extends true ? Layer.Layer<Sharding | Runners.Runners | (\"byo\" extends Storage ? never : MessageStorage.MessageStorage), Config.ConfigError, \"local\" extends Storage ? never : \"byo\" extends Storage ? (MessageStorage.MessageStorage | RunnerStorage.RunnerStorage) : SqlClient> : Layer.Layer<Sharding | Runners.Runners | (\"byo\" extends Storage ? never : MessageStorage.MessageStorage), ServeError | Config.ConfigError, \"local\" extends Storage ? never : \"byo\" extends Storage ? (MessageStorage.MessageStorage | RunnerStorage.RunnerStorage) : SqlClient>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeClusterHttp.ts#L41"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeClusterHttp.ts#L42"
   },
   {
     "_tag": "Export",
@@ -458,7 +458,7 @@
     "since": "1.0.0",
     "category": "Re-exports",
     "signature": "declare const layerK8sHttpClient: Layer.Layer<K8sHttpClient, never, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeClusterHttp.ts#L34"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeClusterHttp.ts#L35"
   },
   {
     "_tag": "Constant",
@@ -563,7 +563,7 @@
     "since": "1.0.0",
     "category": "Dispatcher",
     "signature": "declare class Dispatcher",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L62"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L63"
   },
   {
     "_tag": "Class",
@@ -578,7 +578,7 @@
     "since": "1.0.0",
     "category": "HttpAgent",
     "signature": "declare class HttpAgent",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L324"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L325"
   },
   {
     "_tag": "Constant",
@@ -593,7 +593,7 @@
     "since": "1.0.0",
     "category": "Dispatcher",
     "signature": "declare const makeDispatcher: Effect.Effect<Undici.Dispatcher, never, Scope.Scope>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L70"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L71"
   },
   {
     "_tag": "Constant",
@@ -608,7 +608,7 @@
     "since": "1.0.0",
     "category": "Dispatcher",
     "signature": "declare const layerDispatcher: Layer.Layer<Dispatcher, never, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L79"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L80"
   },
   {
     "_tag": "Constant",
@@ -623,7 +623,7 @@
     "since": "1.0.0",
     "category": "Dispatcher",
     "signature": "declare const dispatcherLayerGlobal: Layer.Layer<Dispatcher, never, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L85"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L86"
   },
   {
     "_tag": "Constant",
@@ -638,7 +638,7 @@
     "since": "1.0.0",
     "category": "undici",
     "signature": "declare const UndiciOptions: ServiceMap.Reference<Partial<Undici.Dispatcher.RequestOptions<null>>>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L91"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L92"
   },
   {
     "_tag": "Constant",
@@ -653,7 +653,7 @@
     "since": "1.0.0",
     "category": "undici",
     "signature": "declare const makeUndici: Effect.Effect<Client.HttpClient, never, Dispatcher>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L100"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L101"
   },
   {
     "_tag": "Constant",
@@ -668,7 +668,7 @@
     "since": "1.0.0",
     "category": "Undici",
     "signature": "declare const layerUndiciNoDispatcher: Layer.Layer<Client.HttpClient, never, Dispatcher>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L304"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L305"
   },
   {
     "_tag": "Constant",
@@ -683,7 +683,7 @@
     "since": "1.0.0",
     "category": "Undici",
     "signature": "declare const layerUndici: Layer.Layer<Client.HttpClient, never, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L314"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L315"
   },
   {
     "_tag": "Constant",
@@ -698,7 +698,7 @@
     "since": "1.0.0",
     "category": "HttpAgent",
     "signature": "declare const layerAgentOptions: (options?: Https.AgentOptions | undefined) => Layer.Layer<HttpAgent>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L350"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L351"
   },
   {
     "_tag": "Constant",
@@ -713,7 +713,7 @@
     "since": "1.0.0",
     "category": "HttpAgent",
     "signature": "declare const layerAgent: Layer.Layer<HttpAgent, never, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L358"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L359"
   },
   {
     "_tag": "Constant",
@@ -728,7 +728,7 @@
     "since": "1.0.0",
     "category": "node:http",
     "signature": "declare const makeNodeHttp: Effect.Effect<Client.HttpClient, never, HttpAgent>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L364"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L365"
   },
   {
     "_tag": "Constant",
@@ -743,7 +743,7 @@
     "since": "1.0.0",
     "category": "node:http",
     "signature": "declare const layerNodeHttpNoAgent: Layer.Layer<Client.HttpClient, never, HttpAgent>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L574"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L575"
   },
   {
     "_tag": "Constant",
@@ -758,7 +758,7 @@
     "since": "1.0.0",
     "category": "node:http",
     "signature": "declare const layerNodeHttp: Layer.Layer<Client.HttpClient, never, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L584"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L585"
   },
   {
     "_tag": "Function",
@@ -773,7 +773,7 @@
     "since": "1.0.0",
     "category": "HttpAgent",
     "signature": "declare const makeAgent: (options?: Https.AgentOptions) => Effect.Effect<HttpAgent[\"Service\"], never, Scope.Scope>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L333"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L334"
   },
   {
     "_tag": "Export",
@@ -788,7 +788,7 @@
     "since": "1.0.0",
     "category": "Fetch",
     "signature": "declare const Fetch: ServiceMap.Reference<{ (input: RequestInfo | URL, init?: RequestInit): Promise<Response>; (input: string | URL | Request, init?: RequestInit): Promise<Response>; }>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L41"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L42"
   },
   {
     "_tag": "Export",
@@ -803,7 +803,7 @@
     "since": "1.0.0",
     "category": "Fetch",
     "signature": "declare const layerFetch: Layer.Layer<Client.HttpClient, never, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L46"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L47"
   },
   {
     "_tag": "Export",
@@ -818,7 +818,7 @@
     "since": "1.0.0",
     "category": "Fetch",
     "signature": "declare const RequestInit: typeof RequestInit",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L51"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L52"
   },
   {
     "_tag": "Class",
@@ -832,8 +832,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "Constructors",
-    "signature": "declare class NodeHttpIncomingMessage<E> { constructor(\n    source: Http.IncomingMessage,\n    onError: (error: unknown) => E,\n    remoteAddressOverride?: string\n  ) }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpIncomingMessage.ts#L18"
+    "signature": "declare class NodeHttpIncomingMessage<E> { constructor(\n    source: Http.IncomingMessage,\n    onError: (error: unknown) => E,\n    remoteAddressOverride?: Option.Option<string>\n  ) }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpIncomingMessage.ts#L19"
   },
   {
     "_tag": "Constant",
@@ -877,8 +877,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "constructors",
-    "signature": "declare const make: (evaluate: LazyArg<Http.Server<typeof Http.IncomingMessage, typeof Http.ServerResponse>>, options: Net.ListenOptions) => Effect.Effect<{ readonly serve: { <E, R>(effect: Effect.Effect<HttpServerResponse, E, R>): Effect.Effect<void, never, Exclude<R, HttpServerRequest> | Scope.Scope>; <E, R, App extends Effect.Effect<HttpServerResponse, any, any>>(effect: Effect.Effect<HttpServerResponse, E, R>, middleware: Middleware.HttpMiddleware.Applied<App, E, R>): Effect.Effect<void, never, Exclude<R, HttpServerRequest> | Scope.Scope>; }; readonly address: HttpServer.Address; }, ServeError, Scope.Scope>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpServer.ts#L56"
+    "signature": "declare const make: (evaluate: LazyArg<Http.Server<typeof Http.IncomingMessage, typeof Http.ServerResponse>>, options: Net.ListenOptions & { readonly disablePreemptiveShutdown?: boolean | undefined; readonly gracefulShutdownTimeout?: Duration.Input | undefined; }) => Effect.Effect<{ readonly serve: { <E, R>(effect: Effect.Effect<HttpServerResponse, E, R>): Effect.Effect<void, never, Exclude<R, HttpServerRequest> | Scope.Scope>; <E, R, App extends Effect.Effect<HttpServerResponse, any, any>>(effect: Effect.Effect<HttpServerResponse, E, R>, middleware: Middleware.HttpMiddleware.Applied<App, E, R>): Effect.Effect<void, never, Exclude<R, HttpServerRequest> | Scope.Scope>; }; readonly address: HttpServer.Address; }, ServeError, Scope.Scope>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpServer.ts#L58"
   },
   {
     "_tag": "Constant",
@@ -892,8 +892,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "Layers",
-    "signature": "declare const layerServer: (evaluate: LazyArg<Http.Server<typeof Http.IncomingMessage, typeof Http.ServerResponse>>, options: Net.ListenOptions) => Layer.Layer<HttpServer.HttpServer, ServeError>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpServer.ts#L360"
+    "signature": "declare const layerServer: (evaluate: LazyArg<Http.Server<typeof Http.IncomingMessage, typeof Http.ServerResponse>>, options: Net.ListenOptions & { readonly disablePreemptiveShutdown?: boolean | undefined; readonly gracefulShutdownTimeout?: Duration.Input | undefined; }) => Layer.Layer<HttpServer.HttpServer, ServeError>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpServer.ts#L372"
   },
   {
     "_tag": "Constant",
@@ -908,7 +908,7 @@
     "since": "1.0.0",
     "category": "Layers",
     "signature": "declare const layerHttpServices: Layer.Layer<NodeServices.NodeServices | HttpPlatform.HttpPlatform | Etag.Generator, never, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpServer.ts#L369"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpServer.ts#L384"
   },
   {
     "_tag": "Constant",
@@ -923,7 +923,7 @@
     "since": "1.0.0",
     "category": "Testing",
     "signature": "declare const layerTest: Layer.Layer<FileSystem.FileSystem | Path.Path | HttpServer.HttpServer | HttpPlatform.HttpPlatform | Etag.Generator | HttpClient, ServeError, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpServer.ts#L415"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpServer.ts#L438"
   },
   {
     "_tag": "Function",
@@ -938,7 +938,7 @@
     "since": "1.0.0",
     "category": "Handlers",
     "signature": "declare const makeHandler: <R, E, App extends Effect.Effect<HttpServerResponse, any, any> = Effect.Effect<HttpServerResponse, E, R>>(httpEffect: Effect.Effect<HttpServerResponse, E, R>, options: { readonly scope: Scope.Scope; readonly middleware?: Middleware.HttpMiddleware.Applied<App, E, R> | undefined; }) => Effect.Effect<(nodeRequest: Http.IncomingMessage, nodeResponse: Http.ServerResponse) => void, never, Exclude<Effect.Services<App>, HttpServerRequest | Scope.Scope>>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpServer.ts#L139"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpServer.ts#L151"
   },
   {
     "_tag": "Function",
@@ -953,7 +953,7 @@
     "since": "1.0.0",
     "category": "Handlers",
     "signature": "declare const makeUpgradeHandler: <R, E, App extends Effect.Effect<HttpServerResponse, any, any> = Effect.Effect<HttpServerResponse, E, R>>(lazyWss: Effect.Effect<NodeWS.WebSocketServer>, httpEffect: Effect.Effect<HttpServerResponse, E, R>, options: { readonly scope: Scope.Scope; readonly middleware?: Middleware.HttpMiddleware.Applied<App, E, R> | undefined; }) => Effect.Effect<(nodeRequest: Http.IncomingMessage, socket: Duplex, head: Buffer) => void, never, Exclude<Effect.Services<App>, HttpServerRequest | Scope.Scope>>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpServer.ts#L177"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpServer.ts#L189"
   },
   {
     "_tag": "Function",
@@ -967,8 +967,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "Layers",
-    "signature": "declare const layer: (evaluate: LazyArg<Http.Server>, options: Net.ListenOptions) => Layer.Layer<HttpServer.HttpServer | NodeServices.NodeServices | HttpPlatform.HttpPlatform | Etag.Generator, ServeError>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpServer.ts#L381"
+    "signature": "declare const layer: (evaluate: LazyArg<Http.Server>, options: Net.ListenOptions & { readonly disablePreemptiveShutdown?: boolean | undefined; readonly gracefulShutdownTimeout?: Duration.Input | undefined; }) => Layer.Layer<HttpServer.HttpServer | NodeServices.NodeServices | HttpPlatform.HttpPlatform | Etag.Generator, ServeError>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpServer.ts#L396"
   },
   {
     "_tag": "Function",
@@ -982,8 +982,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "Layers",
-    "signature": "declare const layerConfig: (evaluate: LazyArg<Http.Server>, options: Config.Wrap<Net.ListenOptions>) => Layer.Layer<HttpServer.HttpServer | FileSystem.FileSystem | Path.Path | HttpPlatform.HttpPlatform | Etag.Generator, ServeError | Config.ConfigError>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpServer.ts#L397"
+    "signature": "declare const layerConfig: (evaluate: LazyArg<Http.Server>, options: Config.Wrap<Net.ListenOptions & { readonly disablePreemptiveShutdown?: boolean | undefined; readonly gracefulShutdownTimeout?: Duration.Input | undefined; }>) => Layer.Layer<HttpServer.HttpServer | FileSystem.FileSystem | Path.Path | HttpPlatform.HttpPlatform | Etag.Generator, ServeError | Config.ConfigError>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpServer.ts#L415"
   },
   {
     "_tag": "Function",

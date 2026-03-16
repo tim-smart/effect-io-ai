@@ -20,6 +20,6 @@ console.log(deferred)
 declare const makeUnsafe: <A, E = never>() => Deferred<A, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Deferred.ts#L172)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Deferred.ts#L173)
 
 Since v2.0.0

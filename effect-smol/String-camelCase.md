@@ -11,6 +11,6 @@ Converts a string to camelCase.
 declare const camelCase: (self: string) => string
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L1233)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L1226)
 
 Since v4.0.0

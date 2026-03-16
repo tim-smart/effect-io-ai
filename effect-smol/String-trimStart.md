@@ -21,6 +21,6 @@ assert.deepStrictEqual(String.trimStart("  hello world"), "hello world")
 declare const trimStart: <A extends string>(self: A) => TrimStart<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L290)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L291)
 
 Since v2.0.0

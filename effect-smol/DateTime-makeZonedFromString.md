@@ -15,21 +15,21 @@ import { DateTime } from "effect"
 const result1 = DateTime.makeZonedFromString(
   "2024-01-01T12:00:00+02:00[Europe/Berlin]"
 )
-console.log(result1 !== undefined) // true
+console.log(result1._tag === "Some") // true
 
 const result2 = DateTime.makeZonedFromString("2024-01-01T12:00:00Z")
-console.log(result2 !== undefined) // true
+console.log(result2._tag === "Some") // true
 
 const invalid = DateTime.makeZonedFromString("invalid")
-console.log(invalid === undefined) // true
+console.log(invalid._tag === "None") // true
 ```
 
 **Signature**
 
 ```ts
-declare const makeZonedFromString: (input: string) => Zoned | undefined
+declare const makeZonedFromString: (input: string) => Option.Option<Zoned>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L576)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L577)
 
 Since v3.6.0

@@ -21,6 +21,6 @@ assert.deepStrictEqual(String.trim("  hello world  "), "hello world")
 declare const trim: <A extends string>(self: A) => Trim<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L258)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L259)
 
 Since v2.0.0

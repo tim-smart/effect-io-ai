@@ -42,6 +42,6 @@ const program = Effect.gen(function*() {
 declare const toValues: <K, V>(self: TxHashMap<K, V>) => Effect.Effect<Array<V>, never, Effect.Transaction>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashMap.ts#L2069)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashMap.ts#L2075)
 
 Since v2.0.0

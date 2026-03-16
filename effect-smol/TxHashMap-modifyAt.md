@@ -12,7 +12,7 @@ return a new TxHashMap reference.
 **Example**
 
 ```ts
-import { Effect, Option, TxHashMap } from "effect"
+import { Effect, TxHashMap } from "effect"
 
 const program = Effect.gen(function*() {
   const storage = yield* TxHashMap.make<string, string | number>([
@@ -20,26 +20,32 @@ const program = Effect.gen(function*() {
     "content1"
   ], ["access_count", 0])
 
-  // Increment counter or initialize to 1
-  const updateFn = (opt: Option.Option<string | number>) =>
-    Option.isSome(opt) && typeof opt.value === "number"
-      ? Option.some(opt.value + 1)
-      : Option.some(1)
-
   // Increment existing counter
-  yield* TxHashMap.modifyAt(storage, "access_count", updateFn)
+  yield* TxHashMap.modifyAt(storage, "access_count", (current) =>
+    current._tag === "Some" && typeof current.value === "number"
+      ? { ...current, value: current.value + 1 }
+      : current
+  )
   const count1 = yield* TxHashMap.get(storage, "access_count")
   console.log(count1) // Option.some(1)
 
   // Increment existing counter again
-  yield* TxHashMap.modifyAt(storage, "access_count", updateFn)
+  yield* TxHashMap.modifyAt(storage, "access_count", (current) =>
+    current._tag === "Some" && typeof current.value === "number"
+      ? { ...current, value: current.value + 1 }
+      : current
+  )
   const count2 = yield* TxHashMap.get(storage, "access_count")
   console.log(count2) // Option.some(2)
 
-  // Remove by returning None
-  yield* TxHashMap.modifyAt(storage, "file1.txt", () => Option.none())
-  const hasFile = yield* TxHashMap.has(storage, "file1.txt")
-  console.log(hasFile) // false
+  // Update an existing string entry
+  yield* TxHashMap.modifyAt(storage, "file1.txt", (current) =>
+    current._tag === "Some" && typeof current.value === "string"
+      ? { ...current, value: `${current.value}.bak` }
+      : current
+  )
+  const backup = yield* TxHashMap.get(storage, "file1.txt")
+  console.log(backup) // Option.some("content1.bak")
 })
 ```
 
@@ -49,6 +55,6 @@ const program = Effect.gen(function*() {
 declare const modifyAt: { <K, V>(key: K, f: (value: Option.Option<V>) => Option.Option<V>): (self: TxHashMap<K, V>) => Effect.Effect<void, never, Effect.Transaction>; <K, V>(self: TxHashMap<K, V>, key: K, f: (value: Option.Option<V>) => Option.Option<V>): Effect.Effect<void, never, Effect.Transaction>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashMap.ts#L758)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashMap.ts#L764)
 
 Since v2.0.0

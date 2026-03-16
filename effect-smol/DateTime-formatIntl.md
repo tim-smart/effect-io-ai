@@ -32,6 +32,6 @@ console.log(formatted) // "15. Juni 2024, 16:30"
 declare const formatIntl: { (format: Intl.DateTimeFormat): (self: DateTime) => string; (self: DateTime, format: Intl.DateTimeFormat): string; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L2172)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L2173)
 
 Since v3.6.0

@@ -51,13 +51,13 @@ export interface File {
   readonly seek: (offset: SizeInput, from: SeekMode) => Effect.Effect<void>
   readonly sync: Effect.Effect<void, PlatformError>
   readonly read: (buffer: Uint8Array) => Effect.Effect<Size, PlatformError>
-  readonly readAlloc: (size: SizeInput) => Effect.Effect<Uint8Array | undefined, PlatformError>
+  readonly readAlloc: (size: SizeInput) => Effect.Effect<Option.Option<Uint8Array>, PlatformError>
   readonly truncate: (length?: SizeInput) => Effect.Effect<void, PlatformError>
   readonly write: (buffer: Uint8Array) => Effect.Effect<Size, PlatformError>
   readonly writeAll: (buffer: Uint8Array) => Effect.Effect<void, PlatformError>
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FileSystem.ts#L1042)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FileSystem.ts#L1045)
 
 Since v4.0.0

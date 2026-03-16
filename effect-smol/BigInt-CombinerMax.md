@@ -11,6 +11,6 @@ A `Combiner` that returns the maximum `bigint`.
 declare const CombinerMax: Combiner.Combiner<bigint>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigInt.ts#L732)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigInt.ts#L736)
 
 Since v4.0.0

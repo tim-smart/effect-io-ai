@@ -11,6 +11,6 @@ The available Anthropic Claude model identifiers.
 type Model = typeof Generated.Model.Type
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicLanguageModel.ts#L41)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicLanguageModel.ts#L42)
 
 Since v1.0.0

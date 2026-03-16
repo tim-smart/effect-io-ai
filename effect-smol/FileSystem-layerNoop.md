@@ -35,6 +35,6 @@ const testProgram = Effect.provide(program, testLayer)
 declare const layerNoop: (fileSystem: Partial<FileSystem>) => Layer.Layer<FileSystem>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FileSystem.ts#L981)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FileSystem.ts#L984)
 
 Since v4.0.0

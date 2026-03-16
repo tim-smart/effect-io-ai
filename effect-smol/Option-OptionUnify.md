@@ -14,6 +14,6 @@ export interface OptionUnify<A extends { [Unify.typeSymbol]?: any }> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L208)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L210)
 
 Since v2.0.0

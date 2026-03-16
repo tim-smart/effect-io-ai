@@ -25,6 +25,6 @@ console.log(DateTime.isFutureUnsafe(now)) // false
 declare const isFutureUnsafe: (self: DateTime) => boolean
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L1150)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L1151)
 
 Since v3.6.0

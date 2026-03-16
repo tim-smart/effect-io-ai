@@ -23,6 +23,6 @@ console.log(chunk)
 declare const makeBy: { <A>(f: (i: number) => A): (n: number) => NonEmptyChunk<A>; <A>(n: number, f: (i: number) => A): NonEmptyChunk<A>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L2417)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L2416)
 
 Since v2.0.0

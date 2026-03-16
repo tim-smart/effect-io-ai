@@ -21,6 +21,6 @@ const value = Argument.integer("value").pipe(
 declare const orElse: { <B>(that: LazyArg<Argument<B>>): <A>(self: Argument<A>) => Argument<A | B>; <A, B>(self: Argument<A>, that: LazyArg<Argument<B>>): Argument<A | B>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Argument.ts#L678)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Argument.ts#L676)
 
 Since v4.0.0

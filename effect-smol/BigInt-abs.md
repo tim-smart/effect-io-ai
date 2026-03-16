@@ -22,6 +22,6 @@ assert.deepStrictEqual(abs(5n), 5n)
 declare const abs: (n: bigint) => bigint
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigInt.ts#L453)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigInt.ts#L456)
 
 Since v2.0.0

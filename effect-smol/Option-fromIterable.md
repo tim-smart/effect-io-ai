@@ -38,6 +38,6 @@ console.log(Option.fromIterable([]))
 declare const fromIterable: <A>(collection: Iterable<A>) => Option<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L555)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L557)
 
 Since v2.0.0

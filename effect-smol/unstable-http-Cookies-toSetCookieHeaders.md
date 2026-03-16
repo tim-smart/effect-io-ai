@@ -11,6 +11,6 @@ Serialize a Cookies object into Headers object containing one or more Set-Cookie
 declare const toSetCookieHeaders: (self: Cookies) => Array<string>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cookies.ts#L823)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cookies.ts#L822)
 
 Since v4.0.0

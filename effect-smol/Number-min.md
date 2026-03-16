@@ -20,6 +20,6 @@ assert.deepStrictEqual(min(2, 3), 2)
 declare const min: { (that: number): (self: number) => number; (self: number, that: number): number; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Number.ts#L360)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Number.ts#L387)
 
 Since v2.0.0

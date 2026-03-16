@@ -20,6 +20,6 @@ const idempotentTool = Tool.make("get_current_time")
 declare const Idempotent: ServiceMap.Reference<boolean>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tool.ts#L1684)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tool.ts#L1687)
 
 Since v1.0.0

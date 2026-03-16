@@ -11,6 +11,6 @@ Add multiple cookies to a Cookies object
 declare const setAllCookie: { (cookies: Iterable<Cookie>): (self: Cookies) => Cookies; (self: Cookies, cookies: Iterable<Cookie>): Cookies; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cookies.ts#L471)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cookies.ts#L472)
 
 Since v4.0.0

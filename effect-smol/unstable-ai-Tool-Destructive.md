@@ -20,6 +20,6 @@ const safeTool = Tool.make("search_database")
 declare const Destructive: ServiceMap.Reference<boolean>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tool.ts#L1666)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tool.ts#L1669)
 
 Since v1.0.0

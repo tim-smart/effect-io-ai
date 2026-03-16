@@ -20,6 +20,6 @@ console.log(Duration.toSeconds(doubled)) // 10
 declare const times: { (times: number): (self: Duration) => Duration; (self: Duration, times: number): Duration; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Duration.ts#L1240)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Duration.ts#L1241)
 
 Since v2.0.0

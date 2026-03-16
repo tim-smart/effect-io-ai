@@ -23,6 +23,6 @@ console.log(fromString) // 456n
 declare const BigInt: BigIntConstructor
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigInt.ts#L33)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigInt.ts#L34)
 
 Since v4.0.0

@@ -14,6 +14,6 @@ instance by checking for the presence of the File type identifier.
 declare const isFile: (u: unknown) => u is File
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FileSystem.ts#L999)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FileSystem.ts#L1002)
 
 Since v4.0.0

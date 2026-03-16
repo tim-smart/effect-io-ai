@@ -40,6 +40,6 @@ console.log(message)
 declare const match: { <B, A, C = B>(options: { readonly onNone: LazyArg<B>; readonly onSome: (a: A) => C; }): (self: Option<A>) => B | C; <A, B, C = B>(self: Option<A>, options: { readonly onNone: LazyArg<B>; readonly onSome: (a: A) => C; }): B | C; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L465)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L467)
 
 Since v2.0.0

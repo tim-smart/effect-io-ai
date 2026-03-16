@@ -21,6 +21,6 @@ console.log(chunk)
 declare const make: <As extends readonly [any, ...Array<any>]>(...as: As) => NonEmptyChunk<As[number]>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L373)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L372)
 
 Since v2.0.0

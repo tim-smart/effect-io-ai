@@ -34,6 +34,6 @@ console.log(subtraction) // -2 (4 - (3 - (2 - (1 - 0))))
 declare const reduceRight: { <B, A>(b: B, f: (b: B, a: A, i: number) => B): (self: Chunk<A>) => B; <A, B>(self: Chunk<A>, b: B, f: (b: B, a: A, i: number) => B): B; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L2789)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L2794)
 
 Since v2.0.0

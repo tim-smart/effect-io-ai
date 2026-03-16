@@ -65,7 +65,7 @@ console.log(matches) // true if it's 9 AM on a weekday
 ```ts
 export interface Cron extends Pipeable, Equal.Equal, Inspectable {
   readonly [TypeId]: typeof TypeId
-  readonly tz: DateTime.TimeZone | undefined
+  readonly tz: Option.Option<DateTime.TimeZone>
   readonly seconds: ReadonlySet<number>
   readonly minutes: ReadonlySet<number>
   readonly hours: ReadonlySet<number>

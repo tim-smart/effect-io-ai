@@ -51,6 +51,6 @@ const program = Effect.gen(function*() {
 declare const orDie: <A, E, R>(self: Layer<A, E, R>) => Layer<A, never, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L1357)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L1439)
 
 Since v2.0.0

@@ -21,6 +21,6 @@ assert.deepStrictEqual(String.uncapitalize("Hello"), "hello")
 declare const uncapitalize: <T extends string>(self: T) => Uncapitalize<T>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L201)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L202)
 
 Since v2.0.0

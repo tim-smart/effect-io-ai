@@ -16,7 +16,7 @@ import * as Param from "effect/unstable/cli/Param"
 const configSchema = Schema.Struct({
   port: Schema.Number,
   host: Schema.String
-}).pipe(Schema.fromJsonString)
+})
 
 const config = Param.fileSchema(Param.flagKind, "config", configSchema, {
   format: "json"
@@ -33,7 +33,7 @@ const yamlConfig = Param.fileSchema(Param.flagKind, "config", configSchema, {
 **Signature**
 
 ```ts
-declare const fileSchema: <Kind extends ParamKind, A>(kind: Kind, name: string, schema: Schema.Codec<A, string>, options?: Primitive.FileSchemaOptions | undefined) => Param<Kind, A>
+declare const fileSchema: <Kind extends ParamKind, A>(kind: Kind, name: string, schema: Schema.Decoder<A>, options?: Primitive.FileSchemaOptions | undefined) => Param<Kind, A>
 ```
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Param.ts#L754)

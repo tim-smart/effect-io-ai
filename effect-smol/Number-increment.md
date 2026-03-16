@@ -20,6 +20,6 @@ assert.deepStrictEqual(increment(2), 3)
 declare const increment: (n: number) => number
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Number.ts#L146)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Number.ts#L173)
 
 Since v2.0.0

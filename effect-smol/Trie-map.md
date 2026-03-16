@@ -40,6 +40,6 @@ assert.equal(Equal.equals(Trie.map(trie, (_, k) => k.length), trieMapK), true)
 declare const map: { <A, V>(f: (value: V, key: string) => A): (self: Trie<V>) => Trie<A>; <V, A>(self: Trie<V>, f: (value: V, key: string) => A): Trie<A>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Trie.ts#L665)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Trie.ts#L669)
 
 Since v2.0.0

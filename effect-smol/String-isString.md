@@ -21,6 +21,6 @@ assert.deepStrictEqual(String.isString(1), false)
 declare const isString: Refinement<unknown, string>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L42)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L43)
 
 Since v2.0.0

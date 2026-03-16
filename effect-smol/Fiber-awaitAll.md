@@ -25,6 +25,6 @@ const program = Effect.gen(function*() {
 declare const awaitAll: <A extends Fiber<any, any>>(self: Iterable<A>) => Effect<Array<Exit<A extends Fiber<infer _A, infer _E> ? _A : never, A extends Fiber<infer _A, infer _E> ? _E : never>>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Fiber.ts#L230)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Fiber.ts#L231)
 
 Since v2.0.0

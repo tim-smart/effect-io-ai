@@ -11,6 +11,6 @@ Schema type for `BooleanFromBit`.
 export interface BooleanFromBit extends decodeTo<Boolean, Literals<readonly [0, 1]>> {}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L9194)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L9242)
 
 Since v4.0.0

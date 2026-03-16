@@ -29,6 +29,7 @@ export interface Some<out A> extends Pipeable, Inspectable, Yieldable<Option<A>,
   readonly _tag: "Some"
   readonly _op: "Some"
   readonly value: A
+  readonly valueOrUndefined: A
   readonly [TypeId]: {
     readonly _A: Covariant<A>
   }
@@ -39,6 +40,6 @@ export interface Some<out A> extends Pipeable, Inspectable, Yieldable<Option<A>,
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L188)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L189)
 
 Since v2.0.0

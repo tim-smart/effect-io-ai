@@ -43,6 +43,6 @@ const JsonLayer = CliOutput.layer(jsonFormatter)
 declare const layer: (formatter: Formatter) => Layer.Layer<never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/CliOutput.ts#L253)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/CliOutput.ts#L255)
 
 Since v4.0.0

@@ -43,6 +43,6 @@ console.log(Option.tap(Option.some(1.14), getInteger))
 declare const tap: { <A, X>(f: (a: A) => Option<X>): (self: Option<A>) => Option<A>; <A, X>(self: Option<A>, f: (a: A) => Option<X>): Option<A>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L1639)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L1641)
 
 Since v2.0.0

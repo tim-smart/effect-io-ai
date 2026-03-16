@@ -11,6 +11,6 @@ Re-exports all named exports from the "./Order.ts" module as `Order`.
 export * as Order from "./Order.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L2780)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L2749)
 
 Since v2.0.0

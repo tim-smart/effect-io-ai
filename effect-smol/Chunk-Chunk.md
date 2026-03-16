@@ -30,6 +30,6 @@ export interface Chunk<out A> extends Iterable<A>, Equal.Equal, Pipeable, Inspec
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L110)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L109)
 
 Since v2.0.0

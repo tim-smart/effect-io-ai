@@ -51,6 +51,6 @@ const program = Effect.gen(function*() {
 declare const compact: <K, A>(self: TxHashMap<K, Option.Option<A>>) => Effect.Effect<TxHashMap<K, A>, never, Effect.Transaction>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashMap.ts#L1986)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashMap.ts#L1992)
 
 Since v2.0.0

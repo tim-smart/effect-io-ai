@@ -24,6 +24,6 @@ assert.deepStrictEqual(ServiceMap.get(Services, Port), { PORT: 8080 })
 declare const make: <I, S>(key: Key<I, S>, service: Types.NoInfer<S>) => ServiceMap<I>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ServiceMap.ts#L517)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ServiceMap.ts#L519)
 
 Since v4.0.0

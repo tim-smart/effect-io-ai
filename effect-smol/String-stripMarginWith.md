@@ -23,6 +23,6 @@ console.log(result) // "hello\nworld"
 declare const stripMarginWith: { (marginChar: string): (self: string) => string; (self: string, marginChar: string): string; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L937)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L930)
 
 Since v2.0.0

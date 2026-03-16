@@ -21,6 +21,6 @@ export interface ExampleDoc {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HelpDoc.ts#L102)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HelpDoc.ts#L103)
 
 Since v4.0.0

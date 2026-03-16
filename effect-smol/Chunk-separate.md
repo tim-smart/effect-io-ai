@@ -36,6 +36,6 @@ console.log(Chunk.toArray(allValues)) // [1, 2]
 declare const separate: <A, B>(self: Chunk<Result<B, A>>) => [Chunk<A>, Chunk<B>]
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L1783)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L1782)
 
 Since v2.0.0

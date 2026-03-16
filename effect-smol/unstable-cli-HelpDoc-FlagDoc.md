@@ -8,13 +8,14 @@ Documentation for a single command-line flag/option
 **Example**
 
 ```ts
+import { Option as O } from "effect"
 import type { HelpDoc } from "effect/unstable/cli"
 
 const verboseFlag: HelpDoc.FlagDoc = {
   name: "verbose",
   aliases: ["-v", "--verbose"],
   type: "boolean",
-  description: "Enable verbose output",
+  description: O.some("Enable verbose output"),
   required: false
 }
 
@@ -22,7 +23,7 @@ const portFlag: HelpDoc.FlagDoc = {
   name: "port",
   aliases: ["-p"],
   type: "integer",
-  description: "Port number to use",
+  description: O.some("Port number to use"),
   required: true
 }
 ```
@@ -49,7 +50,7 @@ export interface FlagDoc {
   /**
    * Description of what the flag does
    */
-  readonly description: string | undefined
+  readonly description: Option.Option<string>
 
   /**
    * Whether this flag is required
@@ -58,6 +59,6 @@ export interface FlagDoc {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HelpDoc.ts#L141)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HelpDoc.ts#L143)
 
 Since v4.0.0

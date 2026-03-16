@@ -40,6 +40,7 @@ export interface Formatter {
    *
    * @example
    * ```ts
+   * import { Option as O } from "effect"
    * import type { HelpDoc } from "effect/unstable/cli"
    * import { CliOutput } from "effect/unstable/cli"
    *
@@ -51,7 +52,7 @@ export interface Formatter {
    *       name: "verbose",
    *       aliases: ["-v"],
    *       type: "boolean",
-   *       description: "Enable verbose output",
+   *       description: O.some("Enable verbose output"),
    *       required: false
    *     }
    *   ],
@@ -59,7 +60,7 @@ export interface Formatter {
    *     {
    *       name: "file",
    *       type: "string",
-   *       description: "Input file to process",
+   *       description: O.some("Input file to process"),
    *       required: true,
    *       variadic: false
    *     }
@@ -178,6 +179,6 @@ export interface Formatter {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/CliOutput.ts#L41)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/CliOutput.ts#L42)
 
 Since v4.0.0

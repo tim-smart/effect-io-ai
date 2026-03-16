@@ -20,6 +20,6 @@ console.log(isEqual) // true
 declare const Equivalence: Equ.Equivalence<Duration>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Duration.ts#L1073)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Duration.ts#L1074)
 
 Since v2.0.0

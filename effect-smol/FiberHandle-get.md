@@ -16,10 +16,10 @@ Effect.gen(function*() {
   // Add a fiber
   yield* FiberHandle.run(handle, Effect.succeed("hello"))
 
-  // Get the fiber (fails if no fiber)
+  // Get the current fiber if present
   const fiber = yield* FiberHandle.get(handle)
-  if (fiber) {
-    const result = yield* Fiber.await(fiber)
+  if (fiber._tag === "Some") {
+    const result = yield* Fiber.await(fiber.value)
     console.log(result) // "hello"
   }
 })
@@ -28,9 +28,9 @@ Effect.gen(function*() {
 **Signature**
 
 ```ts
-declare const get: <A, E>(self: FiberHandle<A, E>) => Effect.Effect<Fiber.Fiber<A, E> | undefined>
+declare const get: <A, E>(self: FiberHandle<A, E>) => Effect.Effect<Option.Option<Fiber.Fiber<A, E>>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FiberHandle.ts#L409)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FiberHandle.ts#L410)
 
 Since v2.0.0

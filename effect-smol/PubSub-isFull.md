@@ -34,6 +34,6 @@ const program = Effect.gen(function*() {
 declare const isFull: <A>(self: PubSub<A>) => Effect.Effect<boolean>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PubSub.ts#L610)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PubSub.ts#L611)
 
 Since v2.0.0

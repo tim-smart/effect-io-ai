@@ -11,6 +11,6 @@ Service definition for OpenAI language model configuration.
 declare class Config
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/OpenAiLanguageModel.ts#L66)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/OpenAiLanguageModel.ts#L67)
 
 Since v1.0.0

@@ -23,6 +23,6 @@ const later = DateTime.max(date1, date2)
 declare const max: { <That extends DateTime>(that: That): <Self extends DateTime>(self: Self) => Self | That; <Self extends DateTime, That extends DateTime>(self: Self, that: That): Self | That; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L991)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L992)
 
 Since v3.6.0

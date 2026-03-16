@@ -11,6 +11,6 @@ Create a new cookie
 declare const makeCookie: (name: string, value: string, options?: Cookie["options"] | undefined) => Result.Result<Cookie, CookiesError>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cookies.ts#L399)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cookies.ts#L400)
 
 Since v4.0.0

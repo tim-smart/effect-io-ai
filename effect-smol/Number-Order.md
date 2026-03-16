@@ -21,6 +21,6 @@ console.log(Number.Order(1, 1)) // 0
 declare const Order: order.Order<number>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Number.ts#L179)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Number.ts#L206)
 
 Since v2.0.0

@@ -22,9 +22,9 @@ console.log(result) // Option.Some(["c", 3])
 **Signature**
 
 ```ts
-declare const findFirst: { <K extends string | symbol, V, V2 extends V>(refinement: (value: NoInfer<V>, key: NoInfer<K>) => value is V2): (self: ReadonlyRecord<K, V>) => [K, V2] | undefined; <K extends string | symbol, V>(predicate: (value: NoInfer<V>, key: NoInfer<K>) => boolean): (self: ReadonlyRecord<K, V>) => [K, V] | undefined; <K extends string | symbol, V, V2 extends V>(self: ReadonlyRecord<K, V>, refinement: (value: NoInfer<V>, key: NoInfer<K>) => value is V2): [K, V2] | undefined; <K extends string | symbol, V>(self: ReadonlyRecord<K, V>, predicate: (value: NoInfer<V>, key: NoInfer<K>) => boolean): [K, V] | undefined; }
+declare const findFirst: { <K extends string | symbol, V, V2 extends V>(refinement: (value: NoInfer<V>, key: NoInfer<K>) => value is V2): (self: ReadonlyRecord<K, V>) => Option.Option<[K, V2]>; <K extends string | symbol, V>(predicate: (value: NoInfer<V>, key: NoInfer<K>) => boolean): (self: ReadonlyRecord<K, V>) => Option.Option<[K, V]>; <K extends string | symbol, V, V2 extends V>(self: ReadonlyRecord<K, V>, refinement: (value: NoInfer<V>, key: NoInfer<K>) => value is V2): Option.Option<[K, V2]>; <K extends string | symbol, V>(self: ReadonlyRecord<K, V>, predicate: (value: NoInfer<V>, key: NoInfer<K>) => boolean): Option.Option<[K, V]>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Record.ts#L1410)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Record.ts#L1411)
 
 Since v3.14.0

@@ -20,6 +20,6 @@ const myTool = Tool.make("calculate_tip")
 declare class Title
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tool.ts#L1617)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tool.ts#L1620)
 
 Since v1.0.0

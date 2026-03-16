@@ -11,6 +11,6 @@ Schema type for `Duration`.
 export interface Duration extends declare<Duration_.Duration> {}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L8422)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L8470)
 
 Since v4.0.0

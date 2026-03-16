@@ -11,6 +11,6 @@ Schema type for `Date`.
 export interface Date extends instanceOf<globalThis.Date> {}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L8354)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L8402)
 
 Since v4.0.0

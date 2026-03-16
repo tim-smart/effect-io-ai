@@ -11,6 +11,6 @@ A `Combiner` that returns the maximum `Duration`.
 declare const CombinerMax: Combiner.Combiner<Duration>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Duration.ts#L1600)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Duration.ts#L1601)
 
 Since v4.0.0

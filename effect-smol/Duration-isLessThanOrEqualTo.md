@@ -23,6 +23,6 @@ console.log(isLessOrEqual) // true
 declare const isLessThanOrEqualTo: { (that: Duration): (self: Duration) => boolean; (self: Duration, that: Duration): boolean; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Duration.ts#L1376)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Duration.ts#L1377)
 
 Since v2.0.0

@@ -27,6 +27,6 @@ console.log(DateTime.formatIso(updated)) // "2025-01-01T18:00:00.000Z"
 declare const setPartsUtc: { (parts: Partial<DateTime.PartsWithWeekday>): <A extends DateTime>(self: A) => A; <A extends DateTime>(self: A, parts: Partial<DateTime.PartsWithWeekday>): A; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L1483)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L1484)
 
 Since v3.6.0

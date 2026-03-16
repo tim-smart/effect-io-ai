@@ -33,6 +33,6 @@ console.log(Graph.edgeCount(graph)) // 2 (edge with weight 5 removed)
 declare const filterEdges: <N, E, T extends Kind = "directed">(mutable: MutableGraph<N, E, T>, predicate: (data: E) => boolean) => void
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Graph.ts#L1113)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Graph.ts#L1115)
 
 Since v4.0.0

@@ -34,6 +34,6 @@ See also:
 declare const urlFromString: Transformation<URL, string, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L1213)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L1212)
 
 Since v4.0.0

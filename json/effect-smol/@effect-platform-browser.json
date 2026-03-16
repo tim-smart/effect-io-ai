@@ -12,7 +12,7 @@
     "since": "1.0.0",
     "category": "Services",
     "signature": "declare class XMLHttpRequest",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/BrowserHttpClient.ts#L82"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/BrowserHttpClient.ts#L83"
   },
   {
     "_tag": "Constant",
@@ -27,7 +27,7 @@
     "since": "1.0.0",
     "category": "References",
     "signature": "declare const CurrentXHRResponseType: ServiceMap.Reference<XHRResponseType>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/BrowserHttpClient.ts#L60"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/BrowserHttpClient.ts#L61"
   },
   {
     "_tag": "Constant",
@@ -42,7 +42,7 @@
     "since": "1.0.0",
     "category": "Layers",
     "signature": "declare const layerXMLHttpRequest: Layer.Layer<HttpClient.HttpClient, never, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/BrowserHttpClient.ts#L389"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/BrowserHttpClient.ts#L390"
   },
   {
     "_tag": "Function",
@@ -57,7 +57,7 @@
     "since": "1.0.0",
     "category": "References",
     "signature": "declare const withXHRArrayBuffer: <A, E, R>(self: Effect.Effect<A, E, R>) => Effect.Effect<A, E, R>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/BrowserHttpClient.ts#L69"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/BrowserHttpClient.ts#L70"
   },
   {
     "_tag": "TypeAlias",
@@ -72,7 +72,7 @@
     "since": "1.0.0",
     "category": "Models",
     "signature": "type XHRResponseType = \"arraybuffer\" | \"text\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/BrowserHttpClient.ts#L54"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/BrowserHttpClient.ts#L55"
   },
   {
     "_tag": "Export",
@@ -87,7 +87,7 @@
     "since": "1.0.0",
     "category": "Fetch",
     "signature": "declare const Fetch: ServiceMap.Reference<{ (input: RequestInfo | URL, init?: RequestInit): Promise<Response>; (input: string | URL | Request, init?: RequestInit): Promise<Response>; }>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/BrowserHttpClient.ts#L33"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/BrowserHttpClient.ts#L34"
   },
   {
     "_tag": "Export",
@@ -102,7 +102,7 @@
     "since": "1.0.0",
     "category": "Fetch",
     "signature": "declare const layerFetch: Layer.Layer<HttpClient.HttpClient, never, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/BrowserHttpClient.ts#L38"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/BrowserHttpClient.ts#L39"
   },
   {
     "_tag": "Export",
@@ -117,7 +117,7 @@
     "since": "1.0.0",
     "category": "Fetch",
     "signature": "declare const RequestInit: typeof RequestInit",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/BrowserHttpClient.ts#L43"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/BrowserHttpClient.ts#L44"
   },
   {
     "_tag": "Constant",

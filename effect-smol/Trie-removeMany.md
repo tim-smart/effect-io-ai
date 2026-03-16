@@ -33,6 +33,6 @@ assert.equal(
 declare const removeMany: { (keys: Iterable<string>): <V>(self: Trie<V>) => Trie<V>; <V>(self: Trie<V>, keys: Iterable<string>): Trie<V>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Trie.ts#L882)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Trie.ts#L886)
 
 Since v2.0.0

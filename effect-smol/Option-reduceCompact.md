@@ -32,6 +32,6 @@ console.log(pipe(items, Option.reduceCompact(0, (b, a) => b + a)))
 declare const reduceCompact: { <B, A>(b: B, f: (b: B, a: A) => B): (self: Iterable<Option<A>>) => B; <A, B>(self: Iterable<Option<A>>, b: B, f: (b: B, a: A) => B): B; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L1876)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L1878)
 
 Since v2.0.0

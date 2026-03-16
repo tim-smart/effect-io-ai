@@ -26,6 +26,6 @@ console.log(Chunk.headNonEmpty(singleElement)) // "hello"
 declare const headNonEmpty: <A>(self: NonEmptyChunk<A>) => A
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L1431)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L1430)
 
 Since v2.0.0

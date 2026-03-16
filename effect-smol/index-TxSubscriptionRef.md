@@ -11,6 +11,6 @@ Re-exports all named exports from the "./TxSubscriptionRef.ts" module as `TxSubs
 export * as TxSubscriptionRef from "./TxSubscriptionRef.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L4075)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L4131)
 
 Since v4.0.0

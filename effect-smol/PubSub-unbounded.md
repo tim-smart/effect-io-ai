@@ -39,6 +39,6 @@ const program = Effect.gen(function*() {
 declare const unbounded: <A>(options?: { readonly replay?: number | undefined; }) => Effect.Effect<PubSub<A>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PubSub.ts#L460)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PubSub.ts#L461)
 
 Since v2.0.0

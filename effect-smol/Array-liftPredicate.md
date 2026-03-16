@@ -27,6 +27,6 @@ console.log(to(2)) // [2]
 declare const liftPredicate: { <A, B extends A>(refinement: Predicate.Refinement<A, B>): (a: A) => Array<B>; <A>(predicate: Predicate.Predicate<A>): <B extends A>(b: B) => Array<B>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L3464)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L3467)
 
 Since v2.0.0

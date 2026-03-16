@@ -21,6 +21,6 @@ console.log(chunk)
 declare const range: (start: number, end: number) => NonEmptyChunk<number>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L2437)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L2436)
 
 Since v2.0.0

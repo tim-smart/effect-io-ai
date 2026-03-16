@@ -37,6 +37,6 @@ assert.deepStrictEqual(result, Option.some({ x: 2, y: 3, sum: 5 }))
 declare const bindTo: { <N extends string>(name: N): <A>(self: Option<A>) => Option<{ [K in N]: A; }>; <A, N extends string>(self: Option<A>, name: N): Option<{ [K in N]: A; }>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L2383)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L2385)
 
 Since v2.0.0

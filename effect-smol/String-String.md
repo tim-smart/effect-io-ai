@@ -11,6 +11,6 @@ Reference to the global `String` constructor.
 declare const String: StringConstructor
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L25)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L26)
 
 Since v4.0.0

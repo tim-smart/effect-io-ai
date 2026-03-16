@@ -20,6 +20,6 @@ Duration.format(Duration.millis(1001)) // "1s 1ms"
 declare const format: (self: Duration) => string
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Duration.ts#L1545)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Duration.ts#L1546)
 
 Since v2.0.0

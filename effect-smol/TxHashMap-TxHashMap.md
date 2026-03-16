@@ -10,7 +10,7 @@ with TxRef for transactional semantics, ensuring all operations are performed at
 **Example**
 
 ```ts
-import { Effect, Option, TxHashMap } from "effect"
+import { Effect, TxHashMap } from "effect"
 
 const program = Effect.gen(function*() {
   // Create a transactional hash map
@@ -25,7 +25,7 @@ const program = Effect.gen(function*() {
   yield* Effect.transaction(
     Effect.gen(function*() {
       const currentUser = yield* TxHashMap.get(txMap, "user1")
-      if (Option.isSome(currentUser)) {
+      if (currentUser._tag === "Some") {
         yield* TxHashMap.set(txMap, "user1", currentUser.value + "_updated")
         yield* TxHashMap.remove(txMap, "user2")
       }

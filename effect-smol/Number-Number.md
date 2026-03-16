@@ -23,6 +23,6 @@ console.log(float) // 3.14
 declare const Number: NumberConstructor
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Number.ts#L31)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Number.ts#L32)
 
 Since v4.0.0

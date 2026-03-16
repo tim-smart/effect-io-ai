@@ -16,17 +16,15 @@ const ConfigSchema = Schema.Struct({
   host: Schema.String
 })
 
-const JsonConfigSchema = Schema.fromJsonString(ConfigSchema)
-
-const config = Argument.fileSchema("config", JsonConfigSchema)
+const config = Argument.fileSchema("config", ConfigSchema)
 ```
 
 **Signature**
 
 ```ts
-declare const fileSchema: <A>(name: string, schema: Schema.Codec<A, string>, options?: Primitive.FileSchemaOptions | undefined) => Argument<A>
+declare const fileSchema: <A>(name: string, schema: Schema.Decoder<A>, options?: Primitive.FileSchemaOptions | undefined) => Argument<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Argument.ts#L237)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Argument.ts#L235)
 
 Since v4.0.0

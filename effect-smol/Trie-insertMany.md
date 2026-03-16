@@ -37,6 +37,6 @@ assert.equal(
 declare const insertMany: { <V>(iter: Iterable<[string, V]>): (self: Trie<V>) => Trie<V>; <V>(self: Trie<V>, iter: Iterable<[string, V]>): Trie<V>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Trie.ts#L918)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Trie.ts#L922)
 
 Since v2.0.0

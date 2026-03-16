@@ -21,6 +21,6 @@ export interface $ReadonlyMap<Key extends Top, Value extends Top> extends
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L7762)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L7810)
 
 Since v4.0.0

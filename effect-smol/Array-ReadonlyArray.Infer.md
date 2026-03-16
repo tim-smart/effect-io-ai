@@ -22,6 +22,6 @@ type Infer<S> = S extends ReadonlyArray<infer A> ? A
     : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L2958)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L2961)
 
 Since v2.0.0

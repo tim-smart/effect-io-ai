@@ -11,6 +11,6 @@ Creates a layer for the OpenRouter language model.
 declare const layer: (options: { readonly model: string; readonly config?: Omit<typeof Config.Service, "model"> | undefined; }) => Layer.Layer<LanguageModel.LanguageModel, never, OpenRouterClient>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openrouter/src/OpenRouterLanguageModel.ts#L313)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openrouter/src/OpenRouterLanguageModel.ts#L314)
 
 Since v1.0.0

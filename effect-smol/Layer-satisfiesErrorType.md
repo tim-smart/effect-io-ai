@@ -35,6 +35,6 @@ const validLayer = satisfiesError(TypeErrorLayer)
 declare const satisfiesErrorType: <E>() => <ROut, E2 extends E, RIn>(layer: Layer<ROut, E2, RIn>) => Layer<ROut, E2, RIn>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L1863)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L1945)
 
 Since v4.0.0

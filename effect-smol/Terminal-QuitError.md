@@ -12,6 +12,6 @@ quit out of a `Terminal` prompt for input (usually by entering `ctrl`+`c`).
 declare class QuitError
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Terminal.ts#L90)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Terminal.ts#L91)
 
 Since v4.0.0

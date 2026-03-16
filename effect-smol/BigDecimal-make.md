@@ -25,6 +25,6 @@ console.log(BigDecimal.format(integer)) // "42"
 declare const make: (value: bigint, scale: number) => BigDecimal
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigDecimal.ts#L120)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigDecimal.ts#L121)
 
 Since v2.0.0

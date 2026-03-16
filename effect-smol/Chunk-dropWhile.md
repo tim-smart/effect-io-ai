@@ -22,6 +22,6 @@ console.log(result)
 declare const dropWhile: { <A>(predicate: Predicate<NoInfer<A>>): (self: Chunk<A>) => Chunk<A>; <A>(self: Chunk<A>, predicate: Predicate<A>): Chunk<A>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L885)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L884)
 
 Since v2.0.0

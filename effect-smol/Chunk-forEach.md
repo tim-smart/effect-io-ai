@@ -42,6 +42,6 @@ Chunk.forEach(chunk, (n, i) => console.log(`Index ${i}: ${n}`))
 declare const forEach: { <A, B>(f: (a: A, index: number) => B): (self: Chunk<A>) => void; <A, B>(self: Chunk<A>, f: (a: A, index: number) => B): void; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L1222)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L1221)
 
 Since v2.0.0

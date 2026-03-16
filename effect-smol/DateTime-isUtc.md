@@ -11,6 +11,6 @@ Checks if a `DateTime` is a UTC `DateTime` (no time zone information).
 declare const isUtc: (self: DateTime) => self is Utc
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L315)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L316)
 
 Since v3.6.0

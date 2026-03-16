@@ -24,6 +24,6 @@ assert.deepStrictEqual(remainder(-4, 2), -0)
 declare const remainder: { (divisor: number): (self: number) => number; (self: number, divisor: number): number; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Number.ts#L467)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Number.ts#L494)
 
 Since v2.0.0

@@ -12,13 +12,13 @@ FSEvents on macOS, etc.).
 **Example**
 
 ```ts
-import { Effect, FileSystem, Stream } from "effect"
+import { Effect, FileSystem, Option, Stream } from "effect"
 
 // Custom watch backend implementation
 const customWatchBackend = {
   register: (path: string, stat: FileSystem.File.Info) => {
     // Implementation would depend on platform
-    return Stream.empty // Placeholder implementation
+    return Option.some(Stream.empty) // Placeholder implementation
   }
 }
 
@@ -43,6 +43,6 @@ const withCustomBackend = Effect.provideService(
 declare class WatchBackend
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FileSystem.ts#L1257)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FileSystem.ts#L1260)
 
 Since v4.0.0

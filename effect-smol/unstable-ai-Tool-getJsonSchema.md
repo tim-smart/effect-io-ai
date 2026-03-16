@@ -44,6 +44,6 @@ console.log(jsonSchema)
 declare const getJsonSchema: <Tool extends Any>(tool: Tool, options?: { readonly transformer?: CodecTransformer; }) => JsonSchema.JsonSchema
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tool.ts#L1573)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tool.ts#L1576)
 
 Since v1.0.0

@@ -26,6 +26,6 @@ assert.deepStrictEqual(divideUnsafe(6n, 4n), 1n)
 declare const divideUnsafe: { (that: bigint): (self: bigint) => bigint; (self: bigint, that: bigint): bigint; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigInt.ts#L161)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigInt.ts#L164)
 
 Since v2.0.0

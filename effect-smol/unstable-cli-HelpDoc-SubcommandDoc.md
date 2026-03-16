@@ -8,7 +8,7 @@ Documentation for a subcommand
 **Example**
 
 ```ts
-import { ServiceMap } from "effect"
+import { Option as O, ServiceMap } from "effect"
 import type { HelpDoc } from "effect/unstable/cli"
 
 const deploySubcommand: HelpDoc.SubcommandDoc = {
@@ -64,6 +64,6 @@ export interface SubcommandDoc {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HelpDoc.ts#L206)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HelpDoc.ts#L208)
 
 Since v4.0.0

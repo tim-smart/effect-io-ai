@@ -27,6 +27,6 @@ assert.deepStrictEqual(
 declare const normalize: (self: BigDecimal) => BigDecimal
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigDecimal.ts#L168)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigDecimal.ts#L169)
 
 Since v2.0.0

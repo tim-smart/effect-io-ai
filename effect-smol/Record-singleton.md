@@ -20,6 +20,6 @@ assert.deepStrictEqual(Record.singleton("a", 1), { a: 1 })
 declare const singleton: <K extends string | symbol, A>(key: K, value: A) => Record<K, A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Record.ts#L1357)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Record.ts#L1358)
 
 Since v2.0.0

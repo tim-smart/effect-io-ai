@@ -26,6 +26,6 @@ console.log(arrayOrder([1, 2], [1, 3])) // -1
 declare const makeOrder: <A>(O: Order.Order<A>) => Order.Order<ReadonlyArray<A>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L3786)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L3793)
 
 Since v2.0.0

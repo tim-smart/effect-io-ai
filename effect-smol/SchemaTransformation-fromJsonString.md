@@ -34,6 +34,6 @@ See also:
 declare const fromJsonString: Transformation<unknown, string, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L1309)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L1308)
 
 Since v4.0.0

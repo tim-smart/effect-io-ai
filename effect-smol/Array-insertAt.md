@@ -3,8 +3,8 @@ Module: `Array`<br />
 
 ## Array.insertAt
 
-Inserts an element at the specified index, returning a new `NonEmptyArray`,
-or `undefined` if the index is out of bounds.
+Inserts an element at the specified index, returning a new `NonEmptyArray`
+wrapped in an `Option`.
 
 - Valid indices: `0` to `length` (inclusive — inserting at `length` appends).
 - Does not mutate the input.
@@ -14,7 +14,7 @@ or `undefined` if the index is out of bounds.
 ```ts
 import { Array } from "effect"
 
-console.log(Array.insertAt(["a", "b", "c", "e"], 3, "d")) // ["a", "b", "c", "d", "e"]
+console.log(Array.insertAt(["a", "b", "c", "e"], 3, "d")) // Option.some(["a", "b", "c", "d", "e"])
 ```
 
 **See**
@@ -25,9 +25,9 @@ console.log(Array.insertAt(["a", "b", "c", "e"], 3, "d")) // ["a", "b", "c", "d"
 **Signature**
 
 ```ts
-declare const insertAt: { <B>(i: number, b: B): <A>(self: Iterable<A>) => NonEmptyArray<A | B> | undefined; <A, B>(self: Iterable<A>, i: number, b: B): NonEmptyArray<A | B> | undefined; }
+declare const insertAt: { <B>(i: number, b: B): <A>(self: Iterable<A>) => Option.Option<NonEmptyArray<A | B>>; <A, B>(self: Iterable<A>, i: number, b: B): Option.Option<NonEmptyArray<A | B>>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L1662)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L1665)
 
 Since v2.0.0

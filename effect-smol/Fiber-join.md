@@ -24,6 +24,6 @@ const program = Effect.gen(function*() {
 declare const join: <A, E>(self: Fiber<A, E>) => Effect<A, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Fiber.ts#L259)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Fiber.ts#L260)
 
 Since v2.0.0

@@ -24,6 +24,6 @@ assert.equal(Trie.isEmpty(trie1), false)
 declare const isEmpty: <V>(self: Trie<V>) => boolean
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Trie.ts#L528)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Trie.ts#L532)
 
 Since v2.0.0

@@ -34,6 +34,6 @@ console.log(Chunk.toArray(unchanged)) // [1, 2, 3, 4, 5]
 declare const difference: { <A>(that: Chunk<A>): (self: Chunk<A>) => Chunk<A>; <A>(self: Chunk<A>, that: Chunk<A>): Chunk<A>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L2863)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L2868)
 
 Since v3.2.0

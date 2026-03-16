@@ -21,6 +21,6 @@ assert.deepStrictEqual(pipe("a", String.padStart(5, "_")), "____a")
 declare const padStart: (maxLength: number, fillString?: string) => (self: string) => string
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L727)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L722)
 
 Since v2.0.0

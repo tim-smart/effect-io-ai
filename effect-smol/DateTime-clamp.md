@@ -28,6 +28,6 @@ const clamped = DateTime.clamp(date, { minimum: min, maximum: max })
 declare const clamp: { <Min extends DateTime, Max extends DateTime>(options: { readonly minimum: Min; readonly maximum: Max; }): <A extends DateTime>(self: A) => A | Min | Max; <A extends DateTime, Min extends DateTime, Max extends DateTime>(self: A, options: { readonly minimum: Min; readonly maximum: Max; }): A | Min | Max; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L399)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L400)
 
 Since v3.6.0

@@ -23,6 +23,6 @@ type StringType = Chunk.Chunk.Infer<typeof stringChunk> // string
 type Infer<S> = S extends Chunk<infer A> ? A : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L1536)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L1535)
 
 Since v2.0.0

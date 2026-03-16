@@ -20,6 +20,6 @@ assert.deepStrictEqual(multiply(2, 3), 6)
 declare const multiply: { (that: number): (self: number) => number; (self: number, that: number): number; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Number.ts#L83)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Number.ts#L84)
 
 Since v2.0.0

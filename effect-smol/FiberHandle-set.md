@@ -33,6 +33,6 @@ Effect.gen(function*() {
 declare const set: { <A, E, XE extends E, XA extends A>(fiber: Fiber.Fiber<XA, XE>, options?: { readonly onlyIfMissing?: boolean; readonly propagateInterruption?: boolean | undefined; }): (self: FiberHandle<A, E>) => Effect.Effect<void>; <A, E, XE extends E, XA extends A>(self: FiberHandle<A, E>, fiber: Fiber.Fiber<XA, XE>, options?: { readonly onlyIfMissing?: boolean; readonly propagateInterruption?: boolean | undefined; }): Effect.Effect<void>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FiberHandle.ts#L325)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FiberHandle.ts#L326)
 
 Since v2.0.0

@@ -26,6 +26,6 @@ console.log(Chunk.lastNonEmpty(singleElement)) // "hello"
 declare const lastNonEmpty: <A>(self: NonEmptyChunk<A>) => A
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L1497)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L1496)
 
 Since v3.4.0

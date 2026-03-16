@@ -25,7 +25,7 @@ const program = Effect.gen(function*() {
 
   // Use with pipe syntax for type-safe access
   const bobRole = yield* TxHashMap.get(userMap, "bob")
-  if (Option.isSome(bobRole)) {
+  if (bobRole._tag === "Some") {
     console.log(bobRole.value.role) // "user"
   }
 })

@@ -20,6 +20,6 @@ assert.deepStrictEqual(sum(2, 3), 5)
 declare const sum: { (that: number): (self: number) => number; (self: number, that: number): number; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Number.ts#L64)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Number.ts#L65)
 
 Since v2.0.0

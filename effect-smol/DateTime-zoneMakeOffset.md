@@ -27,6 +27,6 @@ const dt = DateTime.makeZonedUnsafe("2024-01-01T12:00:00Z", {
 declare const zoneMakeOffset: (offset: number) => TimeZone.Offset
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L756)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L757)
 
 Since v3.6.0

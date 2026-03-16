@@ -23,6 +23,6 @@ const earlier = DateTime.min(date1, date2)
 declare const min: { <That extends DateTime>(that: That): <Self extends DateTime>(self: Self) => Self | That; <Self extends DateTime, That extends DateTime>(self: Self, that: That): Self | That; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L969)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L970)
 
 Since v3.6.0

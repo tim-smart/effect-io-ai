@@ -19,8 +19,8 @@ const program = Effect.gen(function*() {
 
   // Retrieve the fiber
   const retrieved = FiberMap.getUnsafe(map, "greeting")
-  if (retrieved) {
-    const result = yield* Fiber.await(retrieved)
+  if (retrieved._tag === "Some") {
+    const result = yield* Fiber.await(retrieved.value)
     console.log(result) // "Hello"
   }
 })
@@ -29,7 +29,7 @@ const program = Effect.gen(function*() {
 **Signature**
 
 ```ts
-declare const getUnsafe: { <K>(key: K): <A, E>(self: FiberMap<K, A, E>) => Fiber.Fiber<A, E> | undefined; <K, A, E>(self: FiberMap<K, A, E>, key: K): Fiber.Fiber<A, E> | undefined; }
+declare const getUnsafe: { <K>(key: K): <A, E>(self: FiberMap<K, A, E>) => Option.Option<Fiber.Fiber<A, E>>; <K, A, E>(self: FiberMap<K, A, E>, key: K): Option.Option<Fiber.Fiber<A, E>>; }
 ```
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FiberMap.ts#L415)

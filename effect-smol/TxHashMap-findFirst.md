@@ -25,8 +25,8 @@ const program = Effect.gen(function*() {
     (task) => task.priority >= 2 && !task.completed
   )
 
-  if (highPriorityTask) {
-    const [taskId, task] = highPriorityTask
+  if (highPriorityTask._tag === "Some") {
+    const [taskId, task] = highPriorityTask.value
     console.log(`Found task: ${taskId}, priority: ${task.priority}`)
     // "Found task: task3, priority: 2"
   }
@@ -36,8 +36,8 @@ const program = Effect.gen(function*() {
     TxHashMap.findFirst((task) => task.assignee === "alice")
   )
 
-  if (aliceTask) {
-    console.log(`Alice's task: ${aliceTask[0]}`)
+  if (aliceTask._tag === "Some") {
+    console.log(`Alice's task: ${aliceTask.value[0]}`)
   }
 })
 ```
@@ -45,9 +45,9 @@ const program = Effect.gen(function*() {
 **Signature**
 
 ```ts
-declare const findFirst: { <K, V>(predicate: (value: V, key: K) => boolean): (self: TxHashMap<K, V>) => Effect.Effect<[K, V] | undefined, never, Effect.Transaction>; <K, V>(self: TxHashMap<K, V>, predicate: (value: V, key: K) => boolean): Effect.Effect<[K, V] | undefined, never, Effect.Transaction>; }
+declare const findFirst: { <K, V>(predicate: (value: V, key: K) => boolean): (self: TxHashMap<K, V>) => Effect.Effect<Option.Option<[K, V]>, never, Effect.Transaction>; <K, V>(self: TxHashMap<K, V>, predicate: (value: V, key: K) => boolean): Effect.Effect<Option.Option<[K, V]>, never, Effect.Transaction>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashMap.ts#L1668)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashMap.ts#L1674)
 
 Since v2.0.0

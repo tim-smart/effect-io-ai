@@ -21,6 +21,6 @@ assert.deepStrictEqual(nextPow2(17), 32)
 declare const nextPow2: (n: number) => number
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Number.ts#L495)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Number.ts#L522)
 
 Since v2.0.0

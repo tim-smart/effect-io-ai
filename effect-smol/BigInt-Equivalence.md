@@ -20,6 +20,6 @@ console.log(BigInt.Equivalence(1n, 2n)) // false
 declare const Equivalence: Equ.Equivalence<bigint>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigInt.ts#L233)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigInt.ts#L236)
 
 Since v4.0.0

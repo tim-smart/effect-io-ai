@@ -24,6 +24,6 @@ assert.deepStrictEqual(
 declare const replace: (searchValue: string | RegExp, replaceValue: string) => (self: string) => string
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L225)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L226)
 
 Since v2.0.0

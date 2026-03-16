@@ -17,8 +17,8 @@ The scheduler is responsible for:
 ```ts
 export interface Scheduler {
   readonly executionMode: "sync" | "async"
-  readonly scheduleTask: (task: () => void, priority: number) => void
-  readonly shouldYield: (fiber: Fiber.Fiber<unknown, unknown>) => boolean
+  shouldYield(fiber: Fiber.Fiber<unknown, unknown>): boolean
+  makeDispatcher(): SchedulerDispatcher
 }
 ```
 

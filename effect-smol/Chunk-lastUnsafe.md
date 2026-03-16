@@ -32,6 +32,6 @@ try {
 declare const lastUnsafe: <A>(self: Chunk<A>) => A
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L1475)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L1474)
 
 Since v2.0.0

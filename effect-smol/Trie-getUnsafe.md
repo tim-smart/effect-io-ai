@@ -28,6 +28,6 @@ assert.throws(() => Trie.getUnsafe(trie, "mae"))
 declare const getUnsafe: { (key: string): <V>(self: Trie<V>) => V; <V>(self: Trie<V>, key: string): V; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Trie.ts#L552)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Trie.ts#L556)
 
 Since v2.0.0

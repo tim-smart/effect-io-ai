@@ -27,6 +27,6 @@ DateTime.makeZonedUnsafe("2024-01-01T05:00:00Z", {
 declare const removeTime: (self: DateTime) => Utc
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L1330)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L1331)
 
 Since v3.6.0

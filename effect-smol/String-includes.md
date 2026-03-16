@@ -22,6 +22,6 @@ assert.deepStrictEqual(pipe("hello world", String.includes("foo")), false)
 declare const includes: (searchString: string, position?: number) => (self: string) => boolean
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L431)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L432)
 
 Since v2.0.0

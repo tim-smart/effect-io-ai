@@ -30,6 +30,6 @@ const result2 = DateTime.match(dt2, {
 declare const match: { <A, B>(options: { readonly onUtc: (_: Utc) => A; readonly onZoned: (_: Zoned) => B; }): (self: DateTime) => A | B; <A, B>(self: DateTime, options: { readonly onUtc: (_: Utc) => A; readonly onZoned: (_: Zoned) => B; }): A | B; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L1814)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L1815)
 
 Since v3.6.0

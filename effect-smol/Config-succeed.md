@@ -26,6 +26,6 @@ const host = Config.string("HOST").pipe(
 declare const succeed: <T>(value: T) => Config<T>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Config.ts#L870)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Config.ts#L873)
 
 Since v4.0.0

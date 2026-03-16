@@ -24,6 +24,6 @@ console.log(BigDecimal.Equivalence(a, c)) // false (1.50 !== 2.0)
 declare const Equivalence: Equ.Equivalence<BigDecimal>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigDecimal.ts#L951)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigDecimal.ts#L952)
 
 Since v2.0.0

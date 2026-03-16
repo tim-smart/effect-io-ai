@@ -14,6 +14,6 @@ override configuration on a per-request basis.
 declare class Config
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicLanguageModel.ts#L56)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicLanguageModel.ts#L57)
 
 Since v1.0.0

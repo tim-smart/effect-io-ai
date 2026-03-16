@@ -20,6 +20,6 @@ console.log(Chunk.size(emptyChunk)) // 0
 declare const empty: <A = never>() => Chunk<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L356)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L355)
 
 Since v2.0.0

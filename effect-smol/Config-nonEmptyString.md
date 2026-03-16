@@ -18,6 +18,6 @@ Shortcut for `Config.schema(Schema.NonEmptyString, name)`.
 declare const nonEmptyString: (name?: string) => Config<string>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Config.ts#L914)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Config.ts#L917)
 
 Since v4.0.0

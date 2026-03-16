@@ -11,6 +11,6 @@ Schema type for `DateTimeUtcFromDate`.
 export interface DateTimeUtcFromDate extends decodeTo<DateTimeUtc, Date> {}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L9386)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L9434)
 
 Since v4.0.0

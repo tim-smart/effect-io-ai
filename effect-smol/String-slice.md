@@ -21,6 +21,6 @@ assert.deepStrictEqual(pipe("hello world", String.slice(0, 5)), "hello")
 declare const slice: (start?: number, end?: number) => (self: string) => string
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L339)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L340)
 
 Since v2.0.0

@@ -25,6 +25,6 @@ assert.equal(Trie.size(trie), 2)
 declare const size: <V>(self: Trie<V>) => number
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Trie.ts#L441)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Trie.ts#L445)
 
 Since v2.0.0

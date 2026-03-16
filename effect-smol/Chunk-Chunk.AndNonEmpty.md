@@ -39,6 +39,6 @@ type AndNonEmpty<S, T, A> = S extends NonEmptyChunk<any> ?
     Chunk<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L1622)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L1621)
 
 Since v2.0.0

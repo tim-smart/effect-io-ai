@@ -11,6 +11,6 @@ A `Reducer` for combining `number`s using addition.
 declare const ReducerSum: Reducer.Reducer<number>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Number.ts#L567)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Number.ts#L592)
 
 Since v4.0.0

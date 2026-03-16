@@ -13,6 +13,6 @@ Note: If you pass a schema, it has to be synchronous and have no context.
 declare const searchParam: <S extends Schema.Codec<any, string> = never>(name: string, options?: { readonly schema?: S | undefined; }) => Writable<S extends never ? string : Option.Option<S["Type"]>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Atom.ts#L1952)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Atom.ts#L1949)
 
 Since v4.0.0

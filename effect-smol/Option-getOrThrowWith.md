@@ -38,6 +38,6 @@ Option.getOrThrowWith(Option.none(), () => new Error("missing"))
 declare const getOrThrowWith: { (onNone: () => unknown): <A>(self: Option<A>) => A; <A>(self: Option<A>, onNone: () => unknown): A; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L1121)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L1123)
 
 Since v2.0.0

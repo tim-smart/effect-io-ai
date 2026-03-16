@@ -31,6 +31,6 @@ console.log(result) // [{ x: 1 }, { x: 2 }, { x: 3 }]
 declare const bindTo: { <N extends string>(tag: N): <A>(self: ReadonlyArray<A>) => Array<{ [K in N]: A; }>; <A, N extends string>(self: ReadonlyArray<A>, tag: N): Array<{ [K in N]: A; }>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L4178)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L4185)
 
 Since v3.2.0

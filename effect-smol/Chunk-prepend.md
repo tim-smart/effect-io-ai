@@ -26,6 +26,6 @@ console.log(Chunk.toArray(singleElement)) // ["first"]
 declare const prepend: { <B>(elem: B): <A>(self: Chunk<A>) => NonEmptyChunk<B | A>; <A, B>(self: Chunk<A>, elem: B): NonEmptyChunk<A | B>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L730)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L729)
 
 Since v2.0.0

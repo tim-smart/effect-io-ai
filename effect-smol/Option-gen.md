@@ -46,6 +46,6 @@ console.log(person)
 declare const gen: Gen.Gen<OptionTypeLambda>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L2548)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L2550)
 
 Since v2.0.0

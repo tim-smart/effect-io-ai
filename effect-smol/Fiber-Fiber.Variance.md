@@ -25,6 +25,6 @@ export interface Variance<out A, out E = never> {
   }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Fiber.ts#L184)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Fiber.ts#L185)
 
 Since v2.0.0

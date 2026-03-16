@@ -8,13 +8,13 @@ Documentation for a positional argument
 **Example**
 
 ```ts
-import { ServiceMap } from "effect"
+import { Option as O, ServiceMap } from "effect"
 import type { HelpDoc } from "effect/unstable/cli"
 
 const sourceArg: HelpDoc.ArgDoc = {
   name: "source",
   type: "file",
-  description: "Source file to process",
+  description: O.some("Source file to process"),
   required: true,
   variadic: false
 }
@@ -22,7 +22,7 @@ const sourceArg: HelpDoc.ArgDoc = {
 const filesArg: HelpDoc.ArgDoc = {
   name: "files",
   type: "file",
-  description: "Files to process (can specify multiple)",
+  description: O.some("Files to process (can specify multiple)"),
   required: false,
   variadic: true
 }
@@ -54,7 +54,7 @@ export interface ArgDoc {
   /**
    * Description of what the argument is for
    */
-  readonly description: string | undefined
+  readonly description: Option.Option<string>
 
   /**
    * Whether this argument is required or optional
@@ -68,6 +68,6 @@ export interface ArgDoc {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HelpDoc.ts#L284)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HelpDoc.ts#L286)
 
 Since v4.0.0

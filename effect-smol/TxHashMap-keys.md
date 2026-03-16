@@ -23,7 +23,7 @@ const program = Effect.gen(function*() {
   // Useful for iteration
   for (const username of usernames) {
     const role = yield* TxHashMap.get(userRoles, username)
-    if (Option.isSome(role)) {
+    if (role._tag === "Some") {
       console.log(`${username}: ${role.value}`)
     }
   }
@@ -36,6 +36,6 @@ const program = Effect.gen(function*() {
 declare const keys: <K, V>(self: TxHashMap<K, V>) => Effect.Effect<Array<K>, never, Effect.Transaction>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashMap.ts#L818)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashMap.ts#L824)
 
 Since v2.0.0

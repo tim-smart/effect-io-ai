@@ -42,6 +42,6 @@ console.log(parsePositive(-1))
 declare const liftPredicate: { <A, B extends A>(refinement: Refinement<A, B>): (a: A) => Option<B>; <B extends A, A = B>(predicate: Predicate<A>): (b: B) => Option<B>; <A, B extends A>(self: A, refinement: Refinement<A, B>): Option<B>; <B extends A, A = B>(self: B, predicate: Predicate<A>): Option<B>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L2206)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L2208)
 
 Since v2.0.0

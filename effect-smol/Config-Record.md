@@ -43,6 +43,6 @@ console.dir(Effect.runSync(config.parse(provider)))
 declare const Record: <K extends Schema.Record.Key, V extends Schema.Top>(key: K, value: V, options?: { readonly separator?: string | undefined; readonly keyValueSeparator?: string | undefined; }) => Schema.Union<readonly [Schema.$Record<K, V>, Schema.compose<Schema.$Record<K, V>, Schema.decodeTo<Schema.$Record<Schema.String, Schema.String>, Schema.String, never, never>>]>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Config.ts#L815)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Config.ts#L818)
 
 Since v4.0.0

@@ -21,6 +21,6 @@ assert.deepStrictEqual(String.isNonEmpty("a"), true)
 declare const isNonEmpty: (self: string) => boolean
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L373)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L374)
 
 Since v2.0.0

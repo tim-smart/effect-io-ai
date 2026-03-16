@@ -10,14 +10,14 @@ Returns the character at the specified index, or `None` if the index is out of b
 ```ts
 import { pipe, String } from "effect"
 
-pipe("abc", String.charAt(1)) // "b"
-pipe("abc", String.charAt(4)) // undefined
+pipe("abc", String.charAt(1)) // Option.some("b")
+pipe("abc", String.charAt(4)) // Option.none()
 ```
 
 **Signature**
 
 ```ts
-declare const charAt: { (index: number): (self: string) => string | undefined; (self: string, index: number): string | undefined; }
+declare const charAt: { (index: number): (self: string) => Option.Option<string>; (self: string, index: number): Option.Option<string>; }
 ```
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L547)

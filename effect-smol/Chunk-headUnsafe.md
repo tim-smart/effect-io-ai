@@ -32,6 +32,6 @@ try {
 declare const headUnsafe: <A>(self: Chunk<A>) => A
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L1409)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L1408)
 
 Since v2.0.0

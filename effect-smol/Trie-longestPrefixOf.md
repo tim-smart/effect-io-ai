@@ -18,18 +18,22 @@ const trie = Trie.empty<number>().pipe(
   Trie.insert("she", 2)
 )
 
-assert.deepStrictEqual(Trie.longestPrefixOf(trie, "sell"), undefined)
-assert.deepStrictEqual(Trie.longestPrefixOf(trie, "sells"), ["sells", 1])
-assert.deepStrictEqual(Trie.longestPrefixOf(trie, "shell"), ["she", 2])
-assert.deepStrictEqual(Trie.longestPrefixOf(trie, "shellsort"), ["shells", 0])
+const none = Trie.longestPrefixOf(trie, "sell")
+const some = Trie.longestPrefixOf(trie, "sells")
+
+assert.equal(none._tag, "None")
+assert.equal(some._tag, "Some")
+if (some._tag === "Some") {
+  assert.deepStrictEqual(some.value, ["sells", 1])
+}
 ```
 
 **Signature**
 
 ```ts
-declare const longestPrefixOf: { (key: string): <V>(self: Trie<V>) => [string, V] | undefined; <V>(self: Trie<V>, key: string): [string, V] | undefined; }
+declare const longestPrefixOf: { (key: string): <V>(self: Trie<V>) => Option<[string, V]>; <V>(self: Trie<V>, key: string): Option<[string, V]>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Trie.ts#L417)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Trie.ts#L421)
 
 Since v2.0.0

@@ -21,6 +21,6 @@ console.log(Array.from(lines)) // ["hello", "world"]
 declare const linesIterator: (self: string) => LinesIterator
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L901)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L894)
 
 Since v2.0.0

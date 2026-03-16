@@ -22,6 +22,6 @@ assert.deepStrictEqual(String.split("hello,world", ","), ["hello", "world"])
 declare const split: { (separator: string | RegExp): (self: string) => NonEmptyArray<string>; (self: string, separator: string | RegExp): NonEmptyArray<string>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L407)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L408)
 
 Since v2.0.0

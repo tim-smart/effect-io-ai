@@ -38,6 +38,6 @@ console.log(Option.orElseResult(Option.none(), () => Option.some("fallback")))
 declare const orElseResult: { <B>(that: LazyArg<Option<B>>): <A>(self: Option<A>) => Option<Result<B, A>>; <A, B>(self: Option<A>, that: LazyArg<Option<B>>): Option<Result<B, A>>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L774)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L776)
 
 Since v2.0.0

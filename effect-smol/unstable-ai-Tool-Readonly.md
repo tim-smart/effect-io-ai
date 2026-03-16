@@ -20,6 +20,6 @@ const readOnlyTool = Tool.make("get_user_info")
 declare const Readonly: ServiceMap.Reference<boolean>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tool.ts#L1648)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tool.ts#L1651)
 
 Since v1.0.0

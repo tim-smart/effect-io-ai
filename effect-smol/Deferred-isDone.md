@@ -28,6 +28,6 @@ const program = Effect.gen(function*() {
 declare const isDone: <A, E>(self: Deferred<A, E>) => Effect<boolean>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Deferred.ts#L558)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Deferred.ts#L559)
 
 Since v2.0.0

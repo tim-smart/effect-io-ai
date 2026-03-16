@@ -11,6 +11,6 @@ Checks if a `DateTime` is a zoned `DateTime` (has time zone information).
 declare const isZoned: (self: DateTime) => self is Zoned
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L323)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L324)
 
 Since v3.6.0

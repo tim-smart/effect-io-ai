@@ -27,6 +27,6 @@ assert.deepStrictEqual(String.takeRight("Hello World", 5), "World")
 declare const takeRight: { (n: number): (self: string) => string; (self: string, n: number): string; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L875)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L868)
 
 Since v2.0.0

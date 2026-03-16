@@ -28,6 +28,6 @@ const flexibleTool = Tool.make("search")
 declare const Strict: ServiceMap.Reference<boolean | undefined>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tool.ts#L1728)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tool.ts#L1731)
 
 Since v1.0.0

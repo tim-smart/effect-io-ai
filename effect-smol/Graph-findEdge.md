@@ -19,18 +19,18 @@ const graph = Graph.mutate(Graph.directed<string, number>(), (mutable) => {
 })
 
 const result = Graph.findEdge(graph, (data) => data > 15)
-console.log(result) // 1
+console.log(result) // Option.some(1)
 
 const notFound = Graph.findEdge(graph, (data) => data > 100)
-console.log(notFound) // undefined
+console.log(notFound) // Option.none()
 ```
 
 **Signature**
 
 ```ts
-declare const findEdge: { <E>(predicate: (data: E, source: NodeIndex, target: NodeIndex) => boolean): <N, T extends Kind = "directed">(graph: Graph<N, E, T> | MutableGraph<N, E, T>) => EdgeIndex | undefined; <N, E, T extends Kind = "directed">(graph: Graph<N, E, T> | MutableGraph<N, E, T>, predicate: (data: E, source: NodeIndex, target: NodeIndex) => boolean): EdgeIndex | undefined; }
+declare const findEdge: { <E>(predicate: (data: E, source: NodeIndex, target: NodeIndex) => boolean): <N, T extends Kind = "directed">(graph: Graph<N, E, T> | MutableGraph<N, E, T>) => Option.Option<EdgeIndex>; <N, E, T extends Kind = "directed">(graph: Graph<N, E, T> | MutableGraph<N, E, T>, predicate: (data: E, source: NodeIndex, target: NodeIndex) => boolean): Option.Option<EdgeIndex>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Graph.ts#L669)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Graph.ts#L670)
 
 Since v4.0.0

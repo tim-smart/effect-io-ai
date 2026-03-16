@@ -11,6 +11,6 @@ Schema type for `URLSearchParams`.
 export interface URLSearchParams extends instanceOf<globalThis.URLSearchParams> {}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L8940)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L8988)
 
 Since v4.0.0

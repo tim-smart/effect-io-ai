@@ -20,6 +20,6 @@ assert.deepStrictEqual(sumAll([2n, 3n, 4n]), 9n)
 declare const sumAll: (collection: Iterable<bigint>) => bigint
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigInt.ts#L568)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigInt.ts#L572)
 
 Since v2.0.0

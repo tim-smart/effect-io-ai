@@ -25,6 +25,6 @@ console.log(BigInt.Order(a, c)) // 0 (a === c)
 declare const Order: order.Order<bigint>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigInt.ts#L217)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigInt.ts#L220)
 
 Since v2.0.0

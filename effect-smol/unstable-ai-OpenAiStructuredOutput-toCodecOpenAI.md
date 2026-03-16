@@ -32,6 +32,6 @@ unchanged.
 declare const toCodecOpenAI: <T, E, RD, RE>(schema: Schema.Codec<T, E, RD, RE>) => { codec: Schema.Codec<T, unknown, RD, RE>; jsonSchema: JsonSchema.JsonSchema; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/OpenAiStructuredOutput.ts#L42)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/OpenAiStructuredOutput.ts#L43)
 
 Since v1.0.0

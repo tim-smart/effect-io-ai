@@ -30,6 +30,6 @@ console.log(BigDecimal.format(reduced)) // "123.4"
 declare const scale: { (scale: number): (self: BigDecimal) => BigDecimal; (self: BigDecimal, scale: number): BigDecimal; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigDecimal.ts#L221)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigDecimal.ts#L222)
 
 Since v2.0.0

@@ -14,6 +14,6 @@ type Subscribers<A> = Map<
   >
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PubSub.ts#L133)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PubSub.ts#L134)
 
 Since v4.0.0

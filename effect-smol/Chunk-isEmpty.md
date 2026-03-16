@@ -20,6 +20,6 @@ console.log(Chunk.isEmpty(Chunk.make(1, 2, 3))) // false
 declare const isEmpty: <A>(self: Chunk<A>) => boolean
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L1349)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L1348)
 
 Since v2.0.0

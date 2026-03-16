@@ -29,16 +29,16 @@ const result = Graph.bellmanFord(graph, {
   cost: (edgeData) => edgeData
 })
 
-if (result !== undefined) {
-  console.log(result.path) // [0, 1, 2] - shortest path A->B->C
-  console.log(result.distance) // 2 - total distance
+if (result._tag === "Some") {
+  console.log(result.value.path) // [0, 1, 2] - shortest path A->B->C
+  console.log(result.value.distance) // 2 - total distance
 }
 ```
 
 **Signature**
 
 ```ts
-declare const bellmanFord: { <E>(config: BellmanFordConfig<E>): <N, T extends Kind = "directed">(graph: Graph<N, E, T> | MutableGraph<N, E, T>) => PathResult<E> | undefined; <N, E, T extends Kind = "directed">(graph: Graph<N, E, T> | MutableGraph<N, E, T>, config: BellmanFordConfig<E>): PathResult<E> | undefined; }
+declare const bellmanFord: { <E>(config: BellmanFordConfig<E>): <N, T extends Kind = "directed">(graph: Graph<N, E, T> | MutableGraph<N, E, T>) => Option.Option<PathResult<E>>; <N, E, T extends Kind = "directed">(graph: Graph<N, E, T> | MutableGraph<N, E, T>, config: BellmanFordConfig<E>): Option.Option<PathResult<E>>; }
 ```
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Graph.ts#L3290)

@@ -3,15 +3,15 @@ Module: `Array`<br />
 
 ## Array.findFirstIndex
 
-Returns the index of the first element matching the predicate, or `undefined`
-if none match.
+Returns the index of the first element matching the predicate, wrapped in an
+`Option`.
 
 **Example** (Finding an index)
 
 ```ts
 import { Array } from "effect"
 
-console.log(Array.findFirstIndex([5, 3, 8, 9], (x) => x > 5)) // 2
+console.log(Array.findFirstIndex([5, 3, 8, 9], (x) => x > 5)) // Option.some(2)
 ```
 
 **See**
@@ -22,7 +22,7 @@ console.log(Array.findFirstIndex([5, 3, 8, 9], (x) => x > 5)) // 2
 **Signature**
 
 ```ts
-declare const findFirstIndex: { <A>(predicate: (a: NoInfer<A>, i: number) => boolean): (self: Iterable<A>) => number | undefined; <A>(self: Iterable<A>, predicate: (a: A, i: number) => boolean): number | undefined; }
+declare const findFirstIndex: { <A>(predicate: (a: NoInfer<A>, i: number) => boolean): (self: Iterable<A>) => Option.Option<number>; <A>(self: Iterable<A>, predicate: (a: A, i: number) => boolean): Option.Option<number>; }
 ```
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L1466)

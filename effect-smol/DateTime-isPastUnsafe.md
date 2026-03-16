@@ -25,6 +25,6 @@ console.log(DateTime.isPastUnsafe(now)) // false
 declare const isPastUnsafe: (self: DateTime) => boolean
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L1192)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L1193)
 
 Since v3.6.0

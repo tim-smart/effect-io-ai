@@ -11,6 +11,6 @@ Schema type for `Trim`.
 export interface Trim extends decodeTo<Trimmed, String> {}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L9153)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L9201)
 
 Since v4.0.0

@@ -10,7 +10,7 @@ different output formats (text, markdown, JSON, etc.).
 **Example**
 
 ```ts
-import { ServiceMap } from "effect"
+import { Option as O, ServiceMap } from "effect"
 import type * as HelpDoc from "effect/unstable/cli/HelpDoc"
 
 const deployCommandHelp: HelpDoc.HelpDoc = {
@@ -22,14 +22,14 @@ const deployCommandHelp: HelpDoc.HelpDoc = {
       name: "verbose",
       aliases: ["-v"],
       type: "boolean",
-      description: "Enable verbose logging",
+      description: O.some("Enable verbose logging"),
       required: false
     },
     {
       name: "env",
       aliases: ["-e"],
       type: "string",
-      description: "Target environment",
+      description: O.some("Target environment"),
       required: true
     }
   ],
@@ -37,7 +37,7 @@ const deployCommandHelp: HelpDoc.HelpDoc = {
     {
       name: "target",
       type: "string",
-      description: "Deployment target (e.g., 'production', 'staging')",
+      description: O.some("Deployment target (e.g., 'production', 'staging')"),
       required: true,
       variadic: false
     }
@@ -92,6 +92,6 @@ export interface HelpDoc {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HelpDoc.ts#L53)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HelpDoc.ts#L54)
 
 Since v4.0.0

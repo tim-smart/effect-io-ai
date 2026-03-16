@@ -29,6 +29,6 @@ try {
 declare const getUnsafe: { (index: number): <A>(self: Chunk<A>) => A; <A>(self: Chunk<A>, index: number): A; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L653)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L652)
 
 Since v2.0.0

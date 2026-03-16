@@ -202,7 +202,7 @@
     "since": "1.0.0",
     "category": "configuration",
     "signature": "declare class Config",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicLanguageModel.ts#L56"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicLanguageModel.ts#L57"
   },
   {
     "_tag": "Constant",
@@ -218,7 +218,7 @@
     "since": "1.0.0",
     "category": "constructors",
     "signature": "declare const make: (args_0: { readonly model: (string & {}) | Model; readonly config?: Omit<typeof Config.Service, \"model\"> | undefined; }) => Effect.Effect<LanguageModel.Service, never, AnthropicClient>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicLanguageModel.ts#L419"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicLanguageModel.ts#L420"
   },
   {
     "_tag": "Constant",
@@ -234,7 +234,7 @@
     "since": "1.0.0",
     "category": "configuration",
     "signature": "declare const withConfigOverride: { (overrides: typeof Config.Service): <A, E, R>(self: Effect.Effect<A, E, R>) => Effect.Effect<A, E, Exclude<R, Config>>; <A, E, R>(self: Effect.Effect<A, E, R>, overrides: typeof Config.Service): Effect.Effect<A, E, Exclude<R, Config>>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicLanguageModel.ts#L518"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicLanguageModel.ts#L519"
   },
   {
     "_tag": "Function",
@@ -250,7 +250,7 @@
     "since": "1.0.0",
     "category": "constructors",
     "signature": "declare const model: (model: (string & {}) | Model, config?: Omit<typeof Config.Service, \"model\">) => AiModel.Model<\"anthropic\", LanguageModel.LanguageModel, AnthropicClient>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicLanguageModel.ts#L407"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicLanguageModel.ts#L408"
   },
   {
     "_tag": "Function",
@@ -266,7 +266,7 @@
     "since": "1.0.0",
     "category": "layers",
     "signature": "declare const layer: (options: { readonly model: (string & {}) | Model; readonly config?: Omit<typeof Config.Service, \"model\"> | undefined; }) => Layer.Layer<LanguageModel.LanguageModel, never, AnthropicClient>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicLanguageModel.ts#L506"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicLanguageModel.ts#L507"
   },
   {
     "_tag": "TypeAlias",
@@ -282,7 +282,7 @@
     "since": "1.0.0",
     "category": "models",
     "signature": "type Model = typeof Generated.Model.Type",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicLanguageModel.ts#L41"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicLanguageModel.ts#L42"
   },
   {
     "_tag": "TypeAlias",
@@ -298,7 +298,7 @@
     "since": "1.0.0",
     "category": "tools",
     "signature": "type AnthropicUserDefinedTool = typeof Generated.BetaTool.Encoded",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicLanguageModel.ts#L946"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicLanguageModel.ts#L947"
   },
   {
     "_tag": "TypeAlias",
@@ -314,7 +314,7 @@
     "since": "1.0.0",
     "category": "tools",
     "signature": "type AnthropicProviderDefinedTool = | typeof Generated.BetaBashTool_20241022.Encoded\n  | typeof Generated.BetaBashTool_20250124.Encoded\n  | typeof Generated.BetaCodeExecutionTool_20250522.Encoded\n  | typeof Generated.BetaCodeExecutionTool_20250825.Encoded\n  | typeof Generated.BetaComputerUseTool_20241022.Encoded\n  | typeof Generated.BetaComputerUseTool_20250124.Encoded\n  | typeof Generated.BetaComputerUseTool_20251124.Encoded\n  | typeof Generated.BetaMemoryTool_20250818.Encoded\n  | typeof Generated.BetaTextEditor_20241022.Encoded\n  | typeof Generated.BetaTextEditor_20250124.Encoded\n  | typeof Generated.BetaTextEditor_20250429.Encoded\n  | typeof Generated.BetaTextEditor_20250728.Encoded\n  | typeof Generated.BetaToolSearchToolBM25_20251119.Encoded\n  | typeof Generated.BetaToolSearchToolRegex_20251119.Encoded\n  | typeof Generated.BetaWebFetchTool_20250910.Encoded\n  | typeof Generated.BetaWebSearchTool_20250305.Encoded",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicLanguageModel.ts#L957"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicLanguageModel.ts#L958"
   },
   {
     "_tag": "Constant",

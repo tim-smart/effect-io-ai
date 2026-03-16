@@ -28,6 +28,6 @@ assert.deepStrictEqual(
 declare const normalize: (form?: "NFC" | "NFD" | "NFKC" | "NFKD") => (self: string) => string
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L692)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L687)
 
 Since v2.0.0

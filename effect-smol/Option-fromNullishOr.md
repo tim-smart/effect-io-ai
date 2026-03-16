@@ -42,6 +42,6 @@ console.log(Option.fromNullishOr(1))
 declare const fromNullishOr: <A>(a: A) => Option<NonNullable<A>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L861)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L863)
 
 Since v2.0.0

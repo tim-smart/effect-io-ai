@@ -22,6 +22,6 @@ assert.throws(() => fromStringUnsafe("123.abc"))
 declare const fromStringUnsafe: (s: string) => BigDecimal
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigDecimal.ts#L1149)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigDecimal.ts#L1148)
 
 Since v2.0.0

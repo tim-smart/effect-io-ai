@@ -17,6 +17,6 @@ export interface BackingSubscription<out A> {
   }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PubSub.ts#L119)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PubSub.ts#L120)
 
 Since v4.0.0

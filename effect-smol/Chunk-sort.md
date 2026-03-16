@@ -31,6 +31,6 @@ console.log(Chunk.toArray(sortedWords)) // ["apple", "banana", "cherry"]
 declare const sort: { <B>(O: Order.Order<B>): <A extends B>(self: Chunk<A>) => Chunk<A>; <A extends B, B>(self: Chunk<A>, O: Order.Order<B>): Chunk<A>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L1830)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L1829)
 
 Since v2.0.0

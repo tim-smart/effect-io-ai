@@ -11,6 +11,6 @@ Converts a string to kebab-case (lowercase with hyphens).
 declare const kebabCase: (self: string) => string
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L1255)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L1248)
 
 Since v4.0.0

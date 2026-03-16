@@ -27,6 +27,6 @@ console.log(result) // Option.some("c")
 declare const get: { (index: number): <A>(self: Chunk<A>) => Option<A>; <A>(self: Chunk<A>, index: number): Option<A>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L577)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L576)
 
 Since v2.0.0

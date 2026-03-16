@@ -39,6 +39,6 @@ See also:
 declare const optionFromNullishOr: <T>(options?: { onNoneEncoding: null | undefined; }) => Transformation<Option.Option<T>, T | null | undefined>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L1091)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L1090)
 
 Since v4.0.0

@@ -13,23 +13,23 @@ import { Chunk } from "effect"
 
 const chunk = Chunk.make(1, 2, 3, 4)
 const result = Chunk.modify(chunk, 1, (n) => n * 10)
-console.log(result) // { _id: 'Chunk', values: [ 1, 20, 3, 4 ] }
+console.log(result) // Option.some(Chunk.make(1, 20, 3, 4))
 
 // Index out of bounds returns None
-const outOfBounds = chunk?.pipe(Chunk.modify(10, (n) => n * 10))
-console.log(outOfBounds === undefined) // true
+const outOfBounds = chunk.pipe(Chunk.modify(10, (n) => n * 10))
+console.log(outOfBounds) // Option.none()
 
 // Negative index returns None
-const negative = chunk?.pipe(Chunk.modify(-1, (n) => n * 10))
-console.log(negative === undefined) // true
+const negative = chunk.pipe(Chunk.modify(-1, (n) => n * 10))
+console.log(negative) // Option.none()
 ```
 
 **Signature**
 
 ```ts
-declare const modify: { <A, B>(i: number, f: (a: A) => B): (self: Chunk<A>) => Chunk<A | B> | undefined; <A, B>(self: Chunk<A>, i: number, f: (a: A) => B): Chunk<A | B> | undefined; }
+declare const modify: { <A, B>(i: number, f: (a: A) => B): (self: Chunk<A>) => O.Option<Chunk<A | B>>; <A, B>(self: Chunk<A>, i: number, f: (a: A) => B): O.Option<Chunk<A | B>>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L2362)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L2361)
 
 Since v2.0.0

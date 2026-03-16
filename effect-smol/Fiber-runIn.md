@@ -11,6 +11,6 @@ Links the lifetime of a fiber to the provided scope.
 declare const runIn: { (scope: Scope): <A, E>(self: Fiber<A, E>) => Fiber<A, E>; <A, E>(self: Fiber<A, E>, scope: Scope): Fiber<A, E>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Fiber.ts#L487)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Fiber.ts#L488)
 
 Since v4.0.0

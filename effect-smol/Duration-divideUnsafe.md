@@ -23,6 +23,6 @@ console.log(Duration.toMillis(infinite)) // Infinity
 declare const divideUnsafe: { (by: number): (self: Duration) => Duration; (self: Duration, by: number): Duration; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Duration.ts#L1197)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Duration.ts#L1198)
 
 Since v2.4.19

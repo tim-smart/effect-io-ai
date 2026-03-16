@@ -30,6 +30,6 @@ console.log(max) // 5
 declare const reduce: { <B, A>(b: B, f: (b: B, a: A, i: number) => B): (self: Chunk<A>) => B; <A, B>(self: Chunk<A>, b: B, f: (b: B, a: A, i: number) => B): B; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L2756)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L2761)
 
 Since v2.0.0

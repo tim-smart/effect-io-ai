@@ -22,6 +22,6 @@ console.log(BigDecimal.isBigDecimal("123.45")) // false
 declare const isBigDecimal: (u: unknown) => u is BigDecimal
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigDecimal.ts#L99)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigDecimal.ts#L100)
 
 Since v2.0.0

@@ -35,6 +35,6 @@ assert.deepStrictEqual(Trie.get(trie, "mea"), Option.none())
 declare const get: { (key: string): <V>(self: Trie<V>) => Option<V>; <V>(self: Trie<V>, key: string): Option<V>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Trie.ts#L472)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Trie.ts#L476)
 
 Since v2.0.0

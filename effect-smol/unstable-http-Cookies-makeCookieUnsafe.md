@@ -11,6 +11,6 @@ Create a new cookie, throwing an error if invalid
 declare const makeCookieUnsafe: (name: string, value: string, options?: Cookie["options"] | undefined) => Cookie
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cookies.ts#L440)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cookies.ts#L441)
 
 Since v4.0.0

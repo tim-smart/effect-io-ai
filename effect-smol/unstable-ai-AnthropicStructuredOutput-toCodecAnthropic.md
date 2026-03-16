@@ -30,6 +30,6 @@ unchanged.
 declare const toCodecAnthropic: <T, E, RD, RE>(schema: Schema.Codec<T, E, RD, RE>) => { readonly codec: Schema.Codec<T, unknown, RD, RE>; readonly jsonSchema: JsonSchema.JsonSchema; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AnthropicStructuredOutput.ts#L51)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AnthropicStructuredOutput.ts#L52)
 
 Since v1.0.0

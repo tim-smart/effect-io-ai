@@ -20,6 +20,6 @@ assert.deepStrictEqual(decrement(3n), 2n)
 declare const decrement: (n: bigint) => bigint
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigInt.ts#L196)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigInt.ts#L199)
 
 Since v2.0.0

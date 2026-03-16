@@ -3,25 +3,25 @@ Module: `Duration`<br />
 
 ## Duration.divide
 
-Divides a Duration by a number, returning `undefined` if division is invalid.
+Divides a Duration by a number, returning `Option.none()` if division is invalid.
 
 **Example**
 
 ```ts
-import { Duration } from "effect"
+import { Duration, Option } from "effect"
 
 const d = Duration.divide(Duration.seconds(10), 2)
-console.log(d?.pipe(Duration.toSeconds)) // 5
+console.log(Option.map(d, Duration.toSeconds)) // Some(5)
 
-Duration.divide(Duration.seconds(10), 0) // undefined
+Duration.divide(Duration.seconds(10), 0) // None
 ```
 
 **Signature**
 
 ```ts
-declare const divide: { (by: number): (self: Duration) => Duration | undefined; (self: Duration, by: number): Duration | undefined; }
+declare const divide: { (by: number): (self: Duration) => Option.Option<Duration>; (self: Duration, by: number): Option.Option<Duration>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Duration.ts#L1157)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Duration.ts#L1158)
 
 Since v4.0.0

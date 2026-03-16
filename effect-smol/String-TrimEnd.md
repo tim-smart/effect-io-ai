@@ -19,6 +19,6 @@ type Result = String.TrimEnd<"hello  "> // "hello"
 type TrimEnd<A> = A extends `${infer B}${" " | "\n" | "\t" | "\r"}` ? TrimEnd<B> : A
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L305)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L306)
 
 Since v2.0.0

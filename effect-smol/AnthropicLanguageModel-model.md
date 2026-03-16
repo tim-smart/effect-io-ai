@@ -11,6 +11,6 @@ Creates an Anthropic language model that can be used with `AiModel.provide`.
 declare const model: (model: (string & {}) | Model, config?: Omit<typeof Config.Service, "model">) => AiModel.Model<"anthropic", LanguageModel.LanguageModel, AnthropicClient>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicLanguageModel.ts#L407)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicLanguageModel.ts#L408)
 
 Since v1.0.0

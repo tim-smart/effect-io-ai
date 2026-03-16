@@ -26,6 +26,7 @@ Represents the absence of a value within an `Option`.
 export interface None<out A> extends Pipeable, Inspectable, Yieldable<Option<A>, A, NoSuchElementError> {
   readonly _tag: "None"
   readonly _op: "None"
+  readonly valueOrUndefined: undefined
   readonly [TypeId]: {
     readonly _A: Covariant<A>
   }

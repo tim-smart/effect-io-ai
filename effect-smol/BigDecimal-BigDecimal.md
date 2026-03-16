@@ -28,6 +28,6 @@ export interface BigDecimal extends Equal.Equal, Pipeable, Inspectable {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigDecimal.ts#L48)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigDecimal.ts#L49)
 
 Since v2.0.0

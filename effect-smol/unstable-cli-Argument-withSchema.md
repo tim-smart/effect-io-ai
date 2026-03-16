@@ -22,6 +22,6 @@ const input = Argument.string("input").pipe(
 declare const withSchema: { <A, B>(schema: Schema.Codec<B, A>): (self: Argument<A>) => Argument<B>; <A, B>(self: Argument<A>, schema: Schema.Codec<B, A>): Argument<B>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Argument.ts#L552)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Argument.ts#L550)
 
 Since v4.0.0

@@ -21,6 +21,6 @@ console.log(chunk)
 declare const of: <A>(a: A) => NonEmptyChunk<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L391)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L390)
 
 Since v2.0.0

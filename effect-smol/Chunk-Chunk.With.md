@@ -23,6 +23,6 @@ type WithString2 = Chunk.Chunk.With<typeof nonEmptyChunk, string> // Chunk.NonEm
 type With<S, A> = S extends NonEmptyChunk<any> ? NonEmptyChunk<A> : Chunk<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L1555)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L1554)
 
 Since v2.0.0

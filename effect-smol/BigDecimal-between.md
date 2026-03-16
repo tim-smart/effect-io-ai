@@ -27,6 +27,6 @@ assert.deepStrictEqual(between(BigDecimal.fromStringUnsafe("6")), false)
 declare const between: { (options: { minimum: BigDecimal; maximum: BigDecimal; }): (self: BigDecimal) => boolean; (self: BigDecimal, options: { minimum: BigDecimal; maximum: BigDecimal; }): boolean; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigDecimal.ts#L693)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigDecimal.ts#L694)
 
 Since v2.0.0

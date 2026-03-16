@@ -20,6 +20,6 @@ assert.deepStrictEqual(toExponential(make(123456n, -5)), "1.23456e+10")
 declare const toExponential: (n: BigDecimal) => string
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigDecimal.ts#L1219)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigDecimal.ts#L1216)
 
 Since v4.0.0

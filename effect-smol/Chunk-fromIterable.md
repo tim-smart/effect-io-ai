@@ -21,6 +21,6 @@ console.log(chunk)
 declare const fromIterable: <A>(self: Iterable<A>) => Chunk<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L408)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L407)
 
 Since v2.0.0

@@ -21,6 +21,6 @@ assert.deepStrictEqual(isNumber("2"), false)
 declare const isNumber: (input: unknown) => input is number
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Number.ts#L48)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Number.ts#L49)
 
 Since v2.0.0

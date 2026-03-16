@@ -51,6 +51,6 @@ const program = Effect.gen(function*() {
 declare const map: { <A, V, K>(f: (value: V, key: K) => A): (self: TxHashMap<K, V>) => Effect.Effect<TxHashMap<K, A>, never, Effect.Transaction>; <K, V, A>(self: TxHashMap<K, V>, f: (value: V, key: K) => A): Effect.Effect<TxHashMap<K, A>, never, Effect.Transaction>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashMap.ts#L1320)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashMap.ts#L1326)
 
 Since v2.0.0

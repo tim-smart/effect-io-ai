@@ -38,6 +38,6 @@ const program = Effect.gen(function*() {
 declare const take: <A>(self: Subscription<A>) => Effect.Effect<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PubSub.ts#L1032)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PubSub.ts#L1033)
 
 Since v4.0.0

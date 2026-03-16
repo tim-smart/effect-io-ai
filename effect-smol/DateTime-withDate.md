@@ -23,6 +23,6 @@ DateTime.makeZonedUnsafe(0, { timeZone: "Europe/London" }).pipe(
 declare const withDate: { <A>(f: (date: Date) => A): (self: DateTime) => A; <A>(self: DateTime, f: (date: Date) => A): A; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L1764)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L1765)
 
 Since v3.6.0

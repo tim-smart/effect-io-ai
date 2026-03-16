@@ -22,6 +22,6 @@ assert.deepStrictEqual(sqrtUnsafe(16n), 4n)
 declare const sqrtUnsafe: (n: bigint) => bigint
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigInt.ts#L520)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigInt.ts#L523)
 
 Since v2.0.0

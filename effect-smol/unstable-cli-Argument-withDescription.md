@@ -21,6 +21,6 @@ const filename = Argument.string("filename").pipe(
 declare const withDescription: { <A>(description: string): (self: Argument<A>) => Argument<A>; <A>(self: Argument<A>, description: string): Argument<A>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Argument.ts#L293)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Argument.ts#L291)
 
 Since v4.0.0

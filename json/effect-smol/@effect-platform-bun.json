@@ -28,7 +28,7 @@
     "since": "1.0.0",
     "category": "Layers",
     "signature": "declare const layerHttpServer: Layer.Layer<BunServices | HttpServer | HttpPlatform | Etag.Generator, ServeError, ShardingConfig.ShardingConfig>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunClusterHttp.ts#L41"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunClusterHttp.ts#L42"
   },
   {
     "_tag": "Function",
@@ -43,7 +43,7 @@
     "since": "1.0.0",
     "category": "Layers",
     "signature": "declare const layer: <const ClientOnly extends boolean = false, const Storage extends \"local\" | \"sql\" | \"byo\" = never>(options: { readonly transport: \"http\" | \"websocket\"; readonly serialization?: \"msgpack\" | \"ndjson\" | undefined; readonly clientOnly?: ClientOnly | undefined; readonly storage?: Storage | undefined; readonly runnerHealth?: \"ping\" | \"k8s\" | undefined; readonly runnerHealthK8s?: { readonly namespace?: string | undefined; readonly labelSelector?: string | undefined; } | undefined; readonly shardingConfig?: Partial<ShardingConfig.ShardingConfig[\"Service\"]> | undefined; }) => ClientOnly extends true ? Layer.Layer<Sharding | Runners.Runners | (\"byo\" extends Storage ? never : MessageStorage.MessageStorage), Config.ConfigError, \"local\" extends Storage ? never : \"byo\" extends Storage ? (MessageStorage.MessageStorage | RunnerStorage.RunnerStorage) : SqlClient> : Layer.Layer<Sharding | Runners.Runners | MessageStorage.MessageStorage, ServeError | Config.ConfigError, \"local\" extends Storage ? never : \"byo\" extends Storage ? (MessageStorage.MessageStorage | RunnerStorage.RunnerStorage) : SqlClient>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunClusterHttp.ts#L61"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunClusterHttp.ts#L62"
   },
   {
     "_tag": "Export",
@@ -58,7 +58,7 @@
     "since": "1.0.0",
     "category": "Re-exports",
     "signature": "declare const layerK8sHttpClient: Layer.Layer<K8sHttpClient, never, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunClusterHttp.ts#L34"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunClusterHttp.ts#L35"
   },
   {
     "_tag": "Constant",
@@ -178,8 +178,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "Constructors",
-    "signature": "declare const make: <R extends string>(options: ServeOptions<R>) => Effect.Effect<{ readonly serve: { <E, R>(effect: Effect.Effect<ServerResponse.HttpServerResponse, E, R>): Effect.Effect<void, never, Exclude<R, ServerRequest.HttpServerRequest> | Scope.Scope>; <E, R, App extends Effect.Effect<ServerResponse.HttpServerResponse, any, any>>(effect: Effect.Effect<ServerResponse.HttpServerResponse, E, R>, middleware: HttpMiddleware.Applied<App, E, R>): Effect.Effect<void, never, Exclude<R, ServerRequest.HttpServerRequest> | Scope.Scope>; }; readonly address: Server.Address; }, never, Scope.Scope>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunHttpServer.ts#L59"
+    "signature": "declare const make: <R extends string>(options: ServeOptions<R> & { readonly disablePreemptiveShutdown?: boolean | undefined; readonly gracefulShutdownTimeout?: Duration.Input | undefined; }) => Effect.Effect<{ readonly serve: { <E, R>(effect: Effect.Effect<ServerResponse.HttpServerResponse, E, R>): Effect.Effect<void, never, Exclude<R, ServerRequest.HttpServerRequest> | Scope.Scope>; <E, R, App extends Effect.Effect<ServerResponse.HttpServerResponse, any, any>>(effect: Effect.Effect<ServerResponse.HttpServerResponse, E, R>, middleware: HttpMiddleware.Applied<App, E, R>): Effect.Effect<void, never, Exclude<R, ServerRequest.HttpServerRequest> | Scope.Scope>; }; readonly address: Server.Address; }, never, Scope.Scope>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunHttpServer.ts#L61"
   },
   {
     "_tag": "Constant",
@@ -193,8 +193,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "Layers",
-    "signature": "declare const layerServer: <R extends string>(options: ServeOptions<R>) => Layer.Layer<Server.HttpServer>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunHttpServer.ts#L203"
+    "signature": "declare const layerServer: <R extends string>(options: ServeOptions<R> & { readonly disablePreemptiveShutdown?: boolean | undefined; readonly gracefulShutdownTimeout?: Duration.Input | undefined; }) => Layer.Layer<Server.HttpServer>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunHttpServer.ts#L216"
   },
   {
     "_tag": "Constant",
@@ -209,7 +209,7 @@
     "since": "1.0.0",
     "category": "Layers",
     "signature": "declare const layerHttpServices: Layer.Layer<BunServices.BunServices | HttpPlatform | Etag.Generator, never, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunHttpServer.ts#L211"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunHttpServer.ts#L227"
   },
   {
     "_tag": "Constant",
@@ -224,7 +224,7 @@
     "since": "1.0.0",
     "category": "Layers",
     "signature": "declare const layerTest: Layer.Layer<FileSystem.FileSystem | Path.Path | Server.HttpServer | HttpPlatform | Etag.Generator | HttpClient, never, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunHttpServer.ts#L238"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunHttpServer.ts#L257"
   },
   {
     "_tag": "Function",
@@ -238,8 +238,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "Layers",
-    "signature": "declare const layer: <R extends string>(options: ServeOptions<R>) => Layer.Layer<Server.HttpServer | HttpPlatform | Etag.Generator | BunServices.BunServices>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunHttpServer.ts#L225"
+    "signature": "declare const layer: <R extends string>(options: ServeOptions<R> & { readonly disablePreemptiveShutdown?: boolean | undefined; readonly gracefulShutdownTimeout?: Duration.Input | undefined; }) => Layer.Layer<Server.HttpServer | HttpPlatform | Etag.Generator | BunServices.BunServices>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunHttpServer.ts#L241"
   },
   {
     "_tag": "Function",
@@ -253,8 +253,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "Layers",
-    "signature": "declare const layerConfig: <R extends string>(options: Config.Wrap<ServeOptions<R>>) => Layer.Layer<Server.HttpServer | HttpPlatform | FileSystem.FileSystem | Etag.Generator | Path.Path, ConfigError>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunHttpServer.ts#L251"
+    "signature": "declare const layerConfig: <R extends string>(options: Config.Wrap<ServeOptions<R> & { readonly disablePreemptiveShutdown?: boolean | undefined; readonly gracefulShutdownTimeout?: Duration.Input | undefined; }>) => Layer.Layer<Server.HttpServer | HttpPlatform | FileSystem.FileSystem | Etag.Generator | Path.Path, ConfigError>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunHttpServer.ts#L270"
   },
   {
     "_tag": "TypeAlias",
@@ -269,7 +269,7 @@
     "since": "1.0.0",
     "category": "Options",
     "signature": "type ServeOptions<R> = & (\n    | Bun.Serve.UnixServeOptions<WebSocketContext>\n    | Bun.Serve.HostnamePortServeOptions<WebSocketContext>\n  )\n  & { readonly routes?: Bun.Serve.Routes<WebSocketContext, R> }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunHttpServer.ts#L48"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunHttpServer.ts#L50"
   },
   {
     "_tag": "Function",

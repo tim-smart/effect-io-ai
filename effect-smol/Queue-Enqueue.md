@@ -32,7 +32,7 @@ const program = Effect.gen(function*() {
 export interface Enqueue<in A, in E = never> extends Inspectable {
   readonly [EnqueueTypeId]: Enqueue.Variance<A, E>
   readonly strategy: "suspend" | "dropping" | "sliding"
-  readonly scheduler: Scheduler
+  readonly dispatcher: SchedulerDispatcher
   capacity: number
   messages: MutableList.MutableList<any>
   state: Queue.State<any, any>

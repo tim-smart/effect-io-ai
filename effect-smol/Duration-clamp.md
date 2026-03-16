@@ -23,6 +23,6 @@ console.log(Duration.toSeconds(clamped)) // 5
 declare const clamp: { (options: { minimum: Duration; maximum: Duration; }): (self: Duration) => Duration; (self: Duration, options: { minimum: Duration; maximum: Duration; }): Duration; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Duration.ts#L1135)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Duration.ts#L1136)
 
 Since v2.0.0

@@ -33,6 +33,6 @@ console.log(offsetFormatted) // "2024-06-15T17:30:45.123+03:00"
 declare const formatIsoZoned: (self: Zoned) => string
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L2297)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L2298)
 
 Since v3.6.0

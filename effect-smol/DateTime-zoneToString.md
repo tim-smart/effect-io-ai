@@ -23,6 +23,6 @@ DateTime.zoneToString(DateTime.zoneMakeNamedUnsafe("Europe/London"))
 declare const zoneToString: (self: TimeZone) => string
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L862)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L863)
 
 Since v3.6.0

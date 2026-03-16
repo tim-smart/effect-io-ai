@@ -16,7 +16,7 @@ export interface Proto<out N, out E> extends Iterable<readonly [NodeIndex, N]>, 
   readonly reverseAdjacency: Map<NodeIndex, Array<EdgeIndex>>
   nextNodeIndex: NodeIndex
   nextEdgeIndex: EdgeIndex
-  acyclic: boolean | undefined
+  acyclic: Option.Option<boolean>
 }
 ```
 

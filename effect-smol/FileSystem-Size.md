@@ -33,6 +33,6 @@ const truncateToSize = (path: string, size: FileSystem.Size) =>
 type Size = Brand.Branded<bigint, "Size">
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FileSystem.ts#L394)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FileSystem.ts#L395)
 
 Since v4.0.0

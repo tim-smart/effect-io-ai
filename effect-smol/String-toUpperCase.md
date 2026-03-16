@@ -21,6 +21,6 @@ assert.deepStrictEqual(String.toUpperCase("hello"), "HELLO")
 declare const toUpperCase: <S extends string>(self: S) => Uppercase<S>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L146)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L147)
 
 Since v2.0.0

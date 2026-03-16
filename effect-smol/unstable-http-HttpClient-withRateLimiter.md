@@ -15,6 +15,6 @@ wrapping a `429` response) by forcing the retry back through the limiter.
 declare const withRateLimiter: { (options: WithRateLimiter.Options): <E, R>(self: HttpClient.With<E, R>) => HttpClient.With<E | RateLimiter.RateLimiterError, R>; <E, R>(self: HttpClient.With<E, R>, options: WithRateLimiter.Options): HttpClient.With<E | RateLimiter.RateLimiterError, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpClient.ts#L937)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpClient.ts#L938)
 
 Since v4.0.0

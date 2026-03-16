@@ -20,6 +20,6 @@ console.log(String.snakeToCamel("foo_bar_baz")) // "fooBarBaz"
 declare const snakeToCamel: (self: string) => string
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L992)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L985)
 
 Since v2.0.0

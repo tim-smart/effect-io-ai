@@ -11,6 +11,6 @@ Service definition for OpenRouter language model configuration.
 declare class Config
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openrouter/src/OpenRouterLanguageModel.ts#L45)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openrouter/src/OpenRouterLanguageModel.ts#L46)
 
 Since v1.0.0

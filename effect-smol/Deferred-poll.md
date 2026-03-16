@@ -3,8 +3,9 @@ Module: `Deferred`<br />
 
 ## Deferred.poll
 
-Returns a `Effect<A, E, R>` from the `Deferred` if this `Deferred` has
-already been completed, `undefined` otherwise.
+Returns the current completion effect as an `Option`. This returns
+`Option.some(effect)` when the `Deferred` is completed, `Option.none()`
+otherwise.
 
 **Example**
 
@@ -14,20 +15,20 @@ import { Deferred, Effect } from "effect"
 const program = Effect.gen(function*() {
   const deferred = yield* Deferred.make<number>()
   const beforeCompletion = yield* Deferred.poll(deferred)
-  console.log(beforeCompletion === undefined) // true
+  console.log(beforeCompletion._tag === "None") // true
 
   yield* Deferred.succeed(deferred, 42)
   const afterCompletion = yield* Deferred.poll(deferred)
-  console.log(afterCompletion !== undefined) // true
+  console.log(afterCompletion._tag === "Some") // true
 })
 ```
 
 **Signature**
 
 ```ts
-declare const poll: <A, E>(self: Deferred<A, E>) => Effect<Effect<A, E> | undefined>
+declare const poll: <A, E>(self: Deferred<A, E>) => Effect<Option.Option<Effect<A, E>>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Deferred.ts#L591)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Deferred.ts#L593)
 
 Since v2.0.0
