@@ -30,7 +30,7 @@ const program = Effect.gen(function*() {
 **Signature**
 
 ```ts
-declare const fail: <A, E>(self: Queue<A, E>, error: E) => Effect<boolean, never, never>
+declare const fail: <A, E>(self: Enqueue<A, E>, error: E) => Effect<boolean, never, never>
 ```
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Queue.ts#L713)

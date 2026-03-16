@@ -30,6 +30,6 @@ const program = Effect.gen(function*() {
 declare class LanguageModel
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/LanguageModel.ts#L105)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/LanguageModel.ts#L106)
 
 Since v4.0.0

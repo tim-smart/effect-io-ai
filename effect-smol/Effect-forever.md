@@ -35,6 +35,6 @@ const timedProgram = Effect.gen(function*() {
 declare const forever: <Arg extends Effect<any, any, any> | { readonly disableYield?: boolean | undefined; } | undefined = { readonly disableYield?: boolean | undefined; }>(effectOrOptions?: Arg, options?: { readonly disableYield?: boolean | undefined; } | undefined) => [Arg] extends [Effect<infer _A, infer _E, infer _R>] ? Effect<never, _E, _R> : <A, E, R>(self: Effect<A, E, R>) => Effect<never, E, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L7116)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L7106)
 
 Since v2.0.0

@@ -11,6 +11,6 @@ Creates a layer for the OpenAI client with the given options.
 declare const layer: (options: Options) => Layer.Layer<OpenAiClient, never, HttpClient.HttpClient>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L270)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L285)
 
 Since v1.0.0

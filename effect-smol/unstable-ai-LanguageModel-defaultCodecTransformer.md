@@ -12,6 +12,6 @@ provider-specific rewrites.
 declare const defaultCodecTransformer: CodecTransformer
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/LanguageModel.ts#L190)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/LanguageModel.ts#L191)
 
 Since v4.0.0

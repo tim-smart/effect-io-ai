@@ -29,6 +29,6 @@ const Calculator = Tool.make("Calculator", {
 export * as Tool from "./Tool.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L493)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L498)
 
 Since v1.0.0

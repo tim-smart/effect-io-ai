@@ -1234,13 +1234,28 @@
       "path": "src/NodeSocket.ts"
     },
     "project": "@effect/platform-node",
+    "name": "layerWebSocketConstructorWS",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "layers",
+    "signature": "declare const layerWebSocketConstructorWS: Layer.Layer<Socket.WebSocketConstructor, never, never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeSocket.ts#L33"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "NodeSocket.ts",
+      "path": "src/NodeSocket.ts"
+    },
+    "project": "@effect/platform-node",
     "name": "layerWebSocket",
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "layers",
     "signature": "declare const layerWebSocket: (url: string | Effect.Effect<string>, options?: { readonly closeCodeIsError?: ((code: number) => boolean) | undefined; readonly openTimeout?: Duration.Input | undefined; readonly protocols?: string | Array<string> | undefined; } | undefined) => Layer.Layer<Socket.Socket, never, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeSocket.ts#L33"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeSocket.ts#L43"
   },
   {
     "_tag": "Export",

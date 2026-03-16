@@ -67,9 +67,19 @@ export interface ProviderOptions {
    * The span to use to trace interactions with the large language model.
    */
   readonly span: Span
+
+  /**
+   * The previous response identifier for incremental provider calls.
+   */
+  readonly previousResponseId: string | undefined
+
+  /**
+   * The prompt reduced to messages not yet seen by the provider.
+   */
+  readonly incrementalPrompt: Prompt.Prompt | undefined
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/LanguageModel.ts#L597)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/LanguageModel.ts#L598)
 
 Since v4.0.0

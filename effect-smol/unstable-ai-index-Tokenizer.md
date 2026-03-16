@@ -40,6 +40,6 @@ const truncatePrompt = Effect.gen(function*() {
 export * as Tokenizer from "./Tokenizer.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L463)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L468)
 
 Since v4.0.0

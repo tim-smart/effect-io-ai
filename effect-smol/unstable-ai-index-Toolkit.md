@@ -45,6 +45,6 @@ const MyToolkitLayer = MyToolkit.toLayer({
 export * as Toolkit from "./Toolkit.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L535)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L540)
 
 Since v1.0.0

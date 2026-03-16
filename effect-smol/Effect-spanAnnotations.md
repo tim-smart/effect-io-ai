@@ -32,6 +32,6 @@ Effect.runPromise(program).then(console.log)
 declare const spanAnnotations: Effect<Readonly<Record<string, unknown>>, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L7675)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L7665)
 
 Since v2.0.0

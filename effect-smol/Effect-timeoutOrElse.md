@@ -42,6 +42,6 @@ Effect.runPromise(program).then(console.log)
 declare const timeoutOrElse: { <A2, E2, R2>(options: { readonly duration: Duration.Input; readonly onTimeout: LazyArg<Effect<A2, E2, R2>>; }): <A, E, R>(self: Effect<A, E, R>) => Effect<A | A2, E | E2, R | R2>; <A, E, R, A2, E2, R2>(self: Effect<A, E, R>, options: { readonly duration: Duration.Input; readonly onTimeout: LazyArg<Effect<A2, E2, R2>>; }): Effect<A | A2, E | E2, R | R2>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L4527)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L4520)
 
 Since v3.1.0

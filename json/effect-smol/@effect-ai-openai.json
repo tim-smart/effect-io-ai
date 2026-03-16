@@ -125,7 +125,22 @@
     "since": "1.0.0",
     "category": "service",
     "signature": "declare class OpenAiClient",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L86"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L96"
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "OpenAiClient.ts",
+      "path": "src/OpenAiClient.ts"
+    },
+    "project": "@effect/ai-openai",
+    "name": "OpenAiSocket",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Websocket mode",
+    "signature": "declare class OpenAiSocket",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L360"
   },
   {
     "_tag": "Constant",
@@ -141,7 +156,23 @@
     "since": "1.0.0",
     "category": "constructors",
     "signature": "declare const make: (options: Options) => Effect.Effect<Service, never, HttpClient.HttpClient>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L144"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L154"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "OpenAiClient.ts",
+      "path": "src/OpenAiClient.ts"
+    },
+    "project": "@effect/ai-openai",
+    "name": "layerWebSocketMode",
+    "description": "Uses OpenAI's websocket mode for all responses that use the Layer.\n\nNote: This only works with the following WebSocket constructor layers:\n\n- `NodeSocket.layerWebSocketConstructorWS`\n- `BunSocket.layerWebSocketConstructor`\n\nThis is because it needs to use non-standard options for setting the\nAuthorization header.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Websocket mode",
+    "signature": "declare const layerWebSocketMode: Layer.Layer<OpenAiSocket | ResponseIdTracker.ResponseIdTracker, never, OpenAiClient | Socket.WebSocketConstructor>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L539"
   },
   {
     "_tag": "Function",
@@ -157,7 +188,7 @@
     "since": "1.0.0",
     "category": "layers",
     "signature": "declare const layer: (options: Options) => Layer.Layer<OpenAiClient, never, HttpClient.HttpClient>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L270"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L285"
   },
   {
     "_tag": "Function",
@@ -173,7 +204,23 @@
     "since": "1.0.0",
     "category": "layers",
     "signature": "declare const layerConfig: (options?: { readonly apiKey?: Config.Config<Redacted.Redacted<string> | undefined> | undefined; readonly apiUrl?: Config.Config<string> | undefined; readonly organizationId?: Config.Config<Redacted.Redacted<string> | undefined> | undefined; readonly projectId?: Config.Config<Redacted.Redacted<string> | undefined> | undefined; readonly transformClient?: ((client: HttpClient.HttpClient) => HttpClient.HttpClient) | undefined; }) => Layer.Layer<OpenAiClient, Config.ConfigError, HttpClient.HttpClient>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L280"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L295"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "OpenAiClient.ts",
+      "path": "src/OpenAiClient.ts"
+    },
+    "project": "@effect/ai-openai",
+    "name": "withWebSocketMode",
+    "description": "Uses OpenAI's websocket mode for all responses within the provided effect.\n\nNote: This only works with the following WebSocket constructor layers:\n\n- `NodeSocket.layerWebSocketConstructorWS`\n- `BunSocket.layerWebSocketConstructor`\n\nThis is because it needs to use non-standard options for setting the\nAuthorization header.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Websocket mode",
+    "signature": "declare const withWebSocketMode: <A, E, R>(effect: Effect.Effect<A, E, R>) => Effect.Effect<A, E, Exclude<R, OpenAiSocket | ResponseIdTracker.ResponseIdTracker> | OpenAiClient | Socket.WebSocketConstructor>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L511"
   },
   {
     "_tag": "Interface",
@@ -188,8 +235,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "models",
-    "signature": "export interface Service {\n  /**\n   * The underlying generated OpenAI client.\n   */\n  readonly client: Generated.OpenAiClient\n\n  /**\n   * Create a response using the OpenAI responses endpoint.\n   */\n  readonly createResponse: (\n    options: typeof Generated.CreateResponse.Encoded\n  ) => Effect.Effect<\n    [body: typeof Generated.Response.Type, response: HttpClientResponse.HttpClientResponse],\n    AiError.AiError\n  >\n\n  /**\n   * Create a streaming response using the OpenAI responses endpoint.\n   */\n  readonly createResponseStream: (\n    options: Omit<typeof Generated.CreateResponse.Encoded, \"stream\">\n  ) => Effect.Effect<\n    [\n      response: HttpClientResponse.HttpClientResponse,\n      stream: Stream.Stream<typeof Generated.ResponseStreamEvent.Type, AiError.AiError>\n    ],\n    AiError.AiError\n  >\n\n  /**\n   * Create embeddings using the OpenAI embeddings endpoint.\n   */\n  readonly createEmbedding: (\n    options: typeof Generated.CreateEmbeddingRequest.Encoded\n  ) => Effect.Effect<typeof Generated.CreateEmbeddingResponse.Type, AiError.AiError>\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L39"
+    "signature": "export interface Service {\n  /**\n   * The underlying generated OpenAI client.\n   */\n  readonly client: Generated.OpenAiClient\n\n  /**\n   * Create a response using the OpenAI responses endpoint.\n   */\n  readonly createResponse: (\n    options: typeof Generated.CreateResponse.Encoded\n  ) => Effect.Effect<\n    readonly [body: typeof Generated.Response.Type, response: HttpClientResponse.HttpClientResponse],\n    AiError.AiError\n  >\n\n  /**\n   * Create a streaming response using the OpenAI responses endpoint.\n   */\n  readonly createResponseStream: (\n    options: Omit<typeof Generated.CreateResponse.Encoded, \"stream\">\n  ) => Effect.Effect<\n    readonly [\n      response: HttpClientResponse.HttpClientResponse,\n      stream: Stream.Stream<typeof Generated.ResponseStreamEvent.Type, AiError.AiError>\n    ],\n    AiError.AiError\n  >\n\n  /**\n   * Create embeddings using the OpenAI embeddings endpoint.\n   */\n  readonly createEmbedding: (\n    options: typeof Generated.CreateEmbeddingRequest.Encoded\n  ) => Effect.Effect<typeof Generated.CreateEmbeddingResponse.Type, AiError.AiError>\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L49"
   },
   {
     "_tag": "TypeAlias",
@@ -205,7 +252,22 @@
     "since": "1.0.0",
     "category": "models",
     "signature": "type Options = {\n  /**\n   * The OpenAI API key.\n   */\n  readonly apiKey?: Redacted.Redacted<string> | undefined\n\n  /**\n   * The base URL for the OpenAI API.\n   *\n   * @default \"https://api.openai.com/v1\"\n   */\n  readonly apiUrl?: string | undefined\n\n  /**\n   * Optional organization ID for multi-org accounts.\n   */\n  readonly organizationId?: Redacted.Redacted<string> | undefined\n\n  /**\n   * Optional project ID for project-scoped requests.\n   */\n  readonly projectId?: Redacted.Redacted<string> | undefined\n\n  /**\n   * Optional transformer for the HTTP client.\n   */\n  readonly transformClient?: ((client: HttpClient.HttpClient) => HttpClient.HttpClient) | undefined\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L100"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L110"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "OpenAiClient.ts",
+      "path": "src/OpenAiClient.ts"
+    },
+    "project": "@effect/ai-openai",
+    "name": "ResponseStreamEvent",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Events",
+    "signature": "type ResponseStreamEvent = typeof Generated.ResponseStreamEvent.Type",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L354"
   },
   {
     "_tag": "Class",
@@ -330,7 +392,7 @@
     "since": "1.0.0",
     "category": "configuration",
     "signature": "declare const withConfigOverride: { (overrides: typeof Config.Service): <A, E, R>(self: Effect.Effect<A, E, R>) => Effect.Effect<A, E, Exclude<R, Config>>; <A, E, R>(self: Effect.Effect<A, E, R>, overrides: typeof Config.Service): Effect.Effect<A, E, Exclude<R, Config>>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiLanguageModel.ts#L456"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiLanguageModel.ts#L457"
   },
   {
     "_tag": "Function",
@@ -361,7 +423,7 @@
     "since": "1.0.0",
     "category": "layers",
     "signature": "declare const layer: (options: { readonly model: (string & {}) | Model; readonly config?: Omit<typeof Config.Service, \"model\"> | undefined; }) => Layer.Layer<LanguageModel.LanguageModel, never, OpenAiClient>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiLanguageModel.ts#L444"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiLanguageModel.ts#L445"
   },
   {
     "_tag": "TypeAlias",

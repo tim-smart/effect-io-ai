@@ -20,7 +20,7 @@ export interface Service {
   readonly createResponse: (
     options: typeof Generated.CreateResponse.Encoded
   ) => Effect.Effect<
-    [body: typeof Generated.Response.Type, response: HttpClientResponse.HttpClientResponse],
+    readonly [body: typeof Generated.Response.Type, response: HttpClientResponse.HttpClientResponse],
     AiError.AiError
   >
 
@@ -30,7 +30,7 @@ export interface Service {
   readonly createResponseStream: (
     options: Omit<typeof Generated.CreateResponse.Encoded, "stream">
   ) => Effect.Effect<
-    [
+    readonly [
       response: HttpClientResponse.HttpClientResponse,
       stream: Stream.Stream<typeof Generated.ResponseStreamEvent.Type, AiError.AiError>
     ],
@@ -46,6 +46,6 @@ export interface Service {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L39)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L49)
 
 Since v1.0.0
