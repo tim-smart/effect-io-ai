@@ -35,6 +35,6 @@ assert.deepStrictEqual(Equal.equals(mike1, john), false)
 declare const case: <A>() => Case.Constructor<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Data.ts#L146)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Data.ts#L145)
 
 Since v2.0.0

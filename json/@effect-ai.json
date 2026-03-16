@@ -7076,7 +7076,7 @@
     "since": "1.0.0",
     "category": "Annotations",
     "signature": "declare class Title",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Tool.ts#L1337"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Tool.ts#L1328"
   },
   {
     "_tag": "Class",
@@ -7094,7 +7094,7 @@
     "since": "1.0.0",
     "category": "Annotations",
     "signature": "declare class Readonly",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Tool.ts#L1356"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Tool.ts#L1347"
   },
   {
     "_tag": "Class",
@@ -7112,7 +7112,7 @@
     "since": "1.0.0",
     "category": "Annotations",
     "signature": "declare class Destructive",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Tool.ts#L1377"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Tool.ts#L1368"
   },
   {
     "_tag": "Class",
@@ -7130,7 +7130,7 @@
     "since": "1.0.0",
     "category": "Annotations",
     "signature": "declare class Idempotent",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Tool.ts#L1398"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Tool.ts#L1389"
   },
   {
     "_tag": "Class",
@@ -7148,7 +7148,7 @@
     "since": "1.0.0",
     "category": "Annotations",
     "signature": "declare class OpenWorld",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Tool.ts#L1419"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Tool.ts#L1410"
   },
   {
     "_tag": "Constant",
@@ -7352,7 +7352,7 @@
     "since": "1.0.0",
     "category": "Utilities",
     "signature": "declare const unsafeSecureJsonParse: (text: string) => unknown",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Tool.ts#L1509"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Tool.ts#L1500"
   },
   {
     "_tag": "Interface",

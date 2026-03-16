@@ -29,6 +29,6 @@ assert.deepEqual(mike, { _tag: "Person", name: "Mike" })
 declare const tagged: <A extends { readonly _tag: string; }>(tag: A["_tag"]) => Case.Constructor<A, "_tag">
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Data.ts#L172)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Data.ts#L171)
 
 Since v2.0.0

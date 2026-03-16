@@ -28,9 +28,9 @@ assert.deepStrictEqual(mike1._tag, "Person")
 **Signature**
 
 ```ts
-declare const TaggedClass: <Tag extends string>(tag: Tag) => new <A extends Record<string, any> = {}>(args: Types.Equals<A, {}> extends true ? void : { readonly [P in keyof A as P extends "_tag" ? never : P]: A[P]; }) => Readonly<A> & { readonly _tag: Tag; }
+declare const TaggedClass: <Tag extends string>(tag: Tag) => new <A extends Record<string, any> = {}>(args: Types.VoidIfEmpty<{ readonly [P in keyof A as P extends "_tag" ? never : P]: A[P]; }>) => Readonly<A> & { readonly _tag: Tag; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Data.ts#L234)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Data.ts#L232)
 
 Since v2.0.0

@@ -37,6 +37,6 @@ type TaggedEnum<A> = keyof A extends infer Tag ?
   : never
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Data.ts#L284)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Data.ts#L280)
 
 Since v2.0.0
