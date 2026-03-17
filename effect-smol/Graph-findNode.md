@@ -29,6 +29,6 @@ console.log(notFound) // Option.none()
 declare const findNode: { <N>(predicate: (data: N) => boolean): <E, T extends Kind = "directed">(graph: Graph<N, E, T> | MutableGraph<N, E, T>) => Option.Option<NodeIndex>; <N, E, T extends Kind = "directed">(graph: Graph<N, E, T> | MutableGraph<N, E, T>, predicate: (data: N) => boolean): Option.Option<NodeIndex>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Graph.ts#L581)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Graph.ts#L582)
 
 Since v4.0.0

@@ -27,6 +27,6 @@ const program = Effect.gen(function*() {
 declare const set: { <A>(value: A): (self: SubscriptionRef<A>) => Effect.Effect<void>; <A>(self: SubscriptionRef<A>, value: A): Effect.Effect<void>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SubscriptionRef.ts#L556)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SubscriptionRef.ts#L557)
 
 Since v2.0.0

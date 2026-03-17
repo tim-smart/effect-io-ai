@@ -26,6 +26,6 @@ const program = Effect.gen(function*() {
 declare const succeed: { <A>(value: A): <E>(self: TxDeferred<A, E>) => Effect.Effect<boolean, never, Effect.Transaction>; <A, E>(self: TxDeferred<A, E>, value: A): Effect.Effect<boolean, never, Effect.Transaction>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxDeferred.ts#L218)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxDeferred.ts#L219)
 
 Since v4.0.0

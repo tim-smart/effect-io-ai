@@ -11,6 +11,6 @@ Refreshes this resource.
 declare const refresh: <A, E>(self: Resource<A, E>) => Effect.Effect<void, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Resource.ts#L108)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Resource.ts#L109)
 
 Since v2.0.0

@@ -30,6 +30,6 @@ console.log(sccs) // [[0, 1, 2]]
 declare const stronglyConnectedComponents: <N, E, T extends Kind = "directed">(graph: Graph<N, E, T> | MutableGraph<N, E, T>) => Array<Array<NodeIndex>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Graph.ts#L2582)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Graph.ts#L2583)
 
 Since v4.0.0

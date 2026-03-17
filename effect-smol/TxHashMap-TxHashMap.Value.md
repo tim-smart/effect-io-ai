@@ -36,6 +36,6 @@ const program = Effect.gen(function*() {
 type Value<T> = T extends TxHashMap<any, infer V> ? V : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashMap.ts#L174)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashMap.ts#L175)
 
 Since v2.0.0

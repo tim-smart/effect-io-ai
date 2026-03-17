@@ -11,6 +11,6 @@ Edge data containing source, target, and user data.
 declare class Edge<E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Graph.ts#L40)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Graph.ts#L41)
 
 Since v4.0.0

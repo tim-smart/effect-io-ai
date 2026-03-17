@@ -182,6 +182,6 @@ console.log(dependencyDiagram)
 declare const toMermaid: { <N, E>(options?: MermaidOptions<N, E>): <T extends Kind = "directed">(graph: Graph<N, E, T> | MutableGraph<N, E, T>) => string; <N, E, T extends Kind = "directed">(graph: Graph<N, E, T> | MutableGraph<N, E, T>, options?: MermaidOptions<N, E>): string; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Graph.ts#L2186)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Graph.ts#L2187)
 
 Since v4.0.0

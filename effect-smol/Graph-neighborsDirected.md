@@ -32,6 +32,6 @@ const incoming = Graph.neighborsDirected(graph, nodeB, "incoming")
 declare const neighborsDirected: { (nodeIndex: NodeIndex, direction: Direction): <N, E, T extends Kind = "directed">(graph: Graph<N, E, T> | MutableGraph<N, E, T>) => Array<NodeIndex>; <N, E, T extends Kind = "directed">(graph: Graph<N, E, T> | MutableGraph<N, E, T>, nodeIndex: NodeIndex, direction: Direction): Array<NodeIndex>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Graph.ts#L1604)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Graph.ts#L1605)
 
 Since v4.0.0

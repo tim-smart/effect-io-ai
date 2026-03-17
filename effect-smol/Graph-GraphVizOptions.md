@@ -51,6 +51,6 @@ export interface GraphVizOptions<N, E> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Graph.ts#L1674)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Graph.ts#L1675)
 
 Since v4.0.0

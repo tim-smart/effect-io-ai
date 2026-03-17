@@ -11,6 +11,6 @@ Re-exports all named exports from the "./ResponseIdTracker.ts" module as `Respon
 export * as ResponseIdTracker from "./ResponseIdTracker.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L394)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L412)
 
 Since v4.0.0

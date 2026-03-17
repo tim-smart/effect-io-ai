@@ -51,6 +51,6 @@ const program = Effect.gen(function*() {
 export * as IdGenerator from "./IdGenerator.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L203)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L221)
 
 Since v4.0.0

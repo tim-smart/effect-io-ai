@@ -47,6 +47,6 @@ const program = Effect.gen(function*() {
 declare const forEach: { <V, K, R, E>(f: (value: V, key: K) => Effect.Effect<void, E, R>): (self: TxHashMap<K, V>) => Effect.Effect<void, E, R | Effect.Transaction>; <K, V, R, E>(self: TxHashMap<K, V>, f: (value: V, key: K) => Effect.Effect<void, E, R>): Effect.Effect<void, E, R | Effect.Transaction>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashMap.ts#L1846)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashMap.ts#L1847)
 
 Since v2.0.0

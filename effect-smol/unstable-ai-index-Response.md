@@ -30,6 +30,6 @@ const toolCallResponse = Response.makePart("tool-call", {
 export * as Response from "./Response.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L389)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L407)
 
 Since v1.0.0

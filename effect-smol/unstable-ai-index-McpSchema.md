@@ -11,6 +11,6 @@ Re-exports all named exports from the "./McpSchema.ts" module as `McpSchema`.
 export * as McpSchema from "./McpSchema.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L260)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L278)
 
 Since v4.0.0

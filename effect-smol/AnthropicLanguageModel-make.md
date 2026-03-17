@@ -11,6 +11,6 @@ Creates an Anthropic language model service.
 declare const make: (args_0: { readonly model: (string & {}) | Model; readonly config?: Omit<typeof Config.Service, "model"> | undefined; }) => Effect.Effect<LanguageModel.Service, never, AnthropicClient>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicLanguageModel.ts#L420)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicLanguageModel.ts#L411)
 
 Since v1.0.0

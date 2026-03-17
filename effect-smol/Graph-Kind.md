@@ -11,6 +11,6 @@ Graph type for distinguishing directed and undirected graphs.
 type Kind = "directed" | "undirected"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Graph.ts#L52)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Graph.ts#L53)
 
 Since v4.0.0

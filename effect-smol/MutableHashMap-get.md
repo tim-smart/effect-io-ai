@@ -26,6 +26,6 @@ console.log(getValue(map)) // Some(42)
 declare const get: { <K>(key: K): <V>(self: MutableHashMap<K, V>) => Option.Option<V>; <K, V>(self: MutableHashMap<K, V>, key: K): Option.Option<V>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableHashMap.ts#L203)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableHashMap.ts#L212)
 
 Since v2.0.0

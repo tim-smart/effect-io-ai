@@ -30,6 +30,6 @@ const program = Effect.gen(function*() {
 declare const generateText: <Options extends NoExcessProperties<GenerateTextOptions<any>, Options>>(options: Options & GenerateTextOptions<ExtractTools<Options>>) => Effect.Effect<GenerateTextResponse<ExtractTools<Options>>, ExtractError<Options>, LanguageModel | ExtractServices<Options>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/LanguageModel.ts#L1504)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/LanguageModel.ts#L1536)
 
 Since v4.0.0

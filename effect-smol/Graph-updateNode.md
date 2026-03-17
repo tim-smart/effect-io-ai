@@ -26,6 +26,6 @@ console.log(nodeData) // Option.some("NODE A")
 declare const updateNode: <N, E, T extends Kind = "directed">(mutable: MutableGraph<N, E, T>, index: NodeIndex, f: (data: N) => N) => void
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Graph.ts#L757)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Graph.ts#L758)
 
 Since v4.0.0

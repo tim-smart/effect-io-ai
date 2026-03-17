@@ -39,6 +39,6 @@ export interface TxSemaphore extends Inspectable, Pipeable {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxSemaphore.ts#L44)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxSemaphore.ts#L45)
 
 Since v4.0.0

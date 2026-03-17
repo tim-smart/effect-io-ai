@@ -29,6 +29,6 @@ console.log(edge0) // new Graph.Edge({ source: 1, target: 0, data: 1 }) - B -> A
 declare const reverse: <N, E, T extends Kind = "directed">(mutable: MutableGraph<N, E, T>) => void
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Graph.ts#L898)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Graph.ts#L899)
 
 Since v4.0.0

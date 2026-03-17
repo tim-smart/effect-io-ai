@@ -30,6 +30,6 @@ const program = Effect.gen(function*() {
 declare const withTxState: <A, E, R>(f: (state: Transaction["Service"]) => Effect<A, E, R>) => Effect<A, E, R | Transaction>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L13814)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L13815)
 
 Since v4.0.0

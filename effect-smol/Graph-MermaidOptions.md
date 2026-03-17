@@ -66,6 +66,6 @@ export interface MermaidOptions<N, E> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Graph.ts#L1923)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Graph.ts#L1924)
 
 Since v4.0.0

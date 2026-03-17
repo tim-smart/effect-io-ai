@@ -7,12 +7,12 @@ Handles all errors in an effect by providing a fallback effect.
 
 **Details**
 
-The `catchAll` function catches any errors that may occur during the
+The `catch` function catches any errors that may occur during the
 execution of an effect and allows you to handle them by specifying a fallback
 effect. This ensures that the program continues without failing by recovering
 from errors using the provided fallback logic.
 
-**Note**: `catchAll` only handles recoverable errors. It will not recover
+**Note**: `catch` only handles recoverable errors. It will not recover
 from unrecoverable defects.
 
 **See**

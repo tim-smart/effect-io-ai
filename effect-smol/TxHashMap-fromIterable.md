@@ -40,6 +40,6 @@ const program = Effect.gen(function*() {
 declare const fromIterable: <K, V>(entries: Iterable<readonly [K, V]>) => Effect.Effect<TxHashMap<K, V>, never, Effect.Transaction>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashMap.ts#L320)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashMap.ts#L321)
 
 Since v2.0.0

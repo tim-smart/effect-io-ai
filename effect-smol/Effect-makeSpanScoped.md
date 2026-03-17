@@ -30,6 +30,6 @@ const program = Effect.scoped(
 declare const makeSpanScoped: (name: string, options?: SpanOptionsNoTrace | undefined) => Effect<Span, never, Scope>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L7796)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L7797)
 
 Since v2.0.0

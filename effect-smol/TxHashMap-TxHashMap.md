@@ -46,6 +46,6 @@ export interface TxHashMap<in out K, in out V> extends Inspectable, Pipeable {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashMap.ts#L75)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashMap.ts#L76)
 
 Since v2.0.0

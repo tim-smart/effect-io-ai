@@ -14,6 +14,6 @@ open files. This branded type ensures type safety when working with file descrip
 declare const FileDescriptor: Brand.Constructor<File.Descriptor>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FileSystem.ts#L1154)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FileSystem.ts#L1155)
 
 Since v4.0.0

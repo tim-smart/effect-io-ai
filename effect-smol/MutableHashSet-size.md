@@ -31,6 +31,6 @@ console.log(MutableHashSet.size(set)) // 0
 declare const size: <V>(self: MutableHashSet<V>) => number
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableHashSet.ts#L314)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableHashSet.ts#L323)
 
 Since v2.0.0

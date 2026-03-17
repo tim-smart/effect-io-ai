@@ -27,6 +27,6 @@ console.log(indices) // [0, 1]
 declare const indices: <T, N>(walker: Walker<T, N>) => Iterable<T>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Graph.ts#L3580)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Graph.ts#L3581)
 
 Since v4.0.0

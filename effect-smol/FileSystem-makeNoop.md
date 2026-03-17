@@ -56,6 +56,6 @@ const testProgram = Effect.provideService(
 declare const makeNoop: (fileSystem: Partial<FileSystem>) => FileSystem
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FileSystem.ts#L862)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FileSystem.ts#L863)
 
 Since v4.0.0

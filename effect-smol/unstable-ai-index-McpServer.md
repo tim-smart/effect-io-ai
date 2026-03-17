@@ -11,6 +11,6 @@ Re-exports all named exports from the "./McpServer.ts" module as `McpServer`.
 export * as McpServer from "./McpServer.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L265)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L283)
 
 Since v4.0.0

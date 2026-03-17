@@ -72,6 +72,6 @@ const program = Effect.repeat(action, policy)
 declare const repeat: { <O extends Repeat.Options<A>, A>(options: O): <E, R>(self: Effect<A, E, R>) => Repeat.Return<R, E, A, O>; <Output, Input, Error, Env>(schedule: Schedule<Output, NoInfer<Input>, Error, Env>): <E, R>(self: Effect<Input, E, R>) => Effect<Output, E | Error, R | Env>; <Output, Input, Error, Env>(builder: ($: <O, E, R>(_: Schedule<O, NoInfer<Input>, E, R>) => Schedule<O, Input, E, R>) => Schedule<Output, NoInfer<Input>, Error, Env>): <E, R>(self: Effect<Input, E, R>) => Effect<Output, E | Error, R | Env>; <A, E, R, O extends Repeat.Options<A>>(self: Effect<A, E, R>, options: O): Repeat.Return<R, E, A, O>; <Input, E, R, Output, Error, Env>(self: Effect<Input, E, R>, schedule: Schedule<Output, NoInfer<Input>, Error, Env>): Effect<Output, E | Error, R | Env>; <Input, E, R, Output, Error, Env>(self: Effect<Input, E, R>, builder: ($: <O, E, R>(_: Schedule<O, NoInfer<Input>, E, R>) => Schedule<O, Input, E, R>) => Schedule<Output, NoInfer<Input>, Error, Env>): Effect<Output, E | Error, R | Env>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L7183)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L7184)
 
 Since v2.0.0

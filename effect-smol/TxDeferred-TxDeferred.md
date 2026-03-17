@@ -39,6 +39,6 @@ export interface TxDeferred<in out A, in out E = never> extends Inspectable, Pip
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxDeferred.ts#L52)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxDeferred.ts#L53)
 
 Since v4.0.0

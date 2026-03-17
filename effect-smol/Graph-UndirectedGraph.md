@@ -11,6 +11,6 @@ Undirected graph type alias.
 type UndirectedGraph<N, E> = Graph<N, E, "undirected">
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Graph.ts#L107)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Graph.ts#L108)
 
 Since v4.0.0

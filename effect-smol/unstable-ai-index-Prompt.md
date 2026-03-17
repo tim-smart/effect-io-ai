@@ -55,6 +55,6 @@ const combined = Prompt.concat(systemPrompt, userPrompt)
 export * as Prompt from "./Prompt.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L359)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L377)
 
 Since v4.0.0

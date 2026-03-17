@@ -16,6 +16,6 @@ export interface Resource<in out A, in out E = never> extends Pipeable {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Resource.ts#L23)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Resource.ts#L24)
 
 Since v2.0.0

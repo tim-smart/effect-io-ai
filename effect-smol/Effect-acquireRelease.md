@@ -56,7 +56,7 @@ const program = Effect.scoped(
 **Signature**
 
 ```ts
-declare const acquireRelease: <A, E, R>(acquire: Effect<A, E, R>, release: (a: A, exit: Exit.Exit<unknown, unknown>) => Effect<unknown>) => Effect<A, E, R | Scope>
+declare const acquireRelease: <A, E, R>(acquire: Effect<A, E, R>, release: (a: A, exit: Exit.Exit<unknown, unknown>) => Effect<unknown>, options?: { readonly interruptible?: boolean; }) => Effect<A, E, Scope | R>
 ```
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L6237)

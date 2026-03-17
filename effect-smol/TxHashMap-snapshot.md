@@ -40,6 +40,6 @@ const program = Effect.gen(function*() {
 declare const snapshot: <K, V>(self: TxHashMap<K, V>) => Effect.Effect<HashMap.HashMap<K, V>, never, Effect.Transaction>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashMap.ts#L940)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashMap.ts#L941)
 
 Since v2.0.0

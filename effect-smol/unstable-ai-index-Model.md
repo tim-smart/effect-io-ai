@@ -32,6 +32,6 @@ const program = Effect.gen(function*() {
 export * as Model from "./Model.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L297)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L315)
 
 Since v4.0.0

@@ -38,6 +38,22 @@
       "path": "src/index.ts"
     },
     "project": "@effect/ai-openai-compat",
+    "name": "OpenAiEmbeddingModel",
+    "description": "Re-exports all named exports from the \"./OpenAiEmbeddingModel.ts\" module as `OpenAiEmbeddingModel`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as OpenAiEmbeddingModel from \"./OpenAiEmbeddingModel.ts\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/index.ts#L24"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/ai-openai-compat",
     "name": "OpenAiError",
     "description": "Re-exports all named exports from the \"./OpenAiError.ts\" module as `OpenAiError`.",
     "deprecated": false,
@@ -45,7 +61,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "export * as OpenAiError from \"./OpenAiError.ts\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/index.ts#L20"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/index.ts#L29"
   },
   {
     "_tag": "Export",
@@ -61,7 +77,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "export * as OpenAiLanguageModel from \"./OpenAiLanguageModel.ts\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/index.ts#L30"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/index.ts#L39"
   },
   {
     "_tag": "Export",
@@ -77,7 +93,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "export * as OpenAiTelemetry from \"./OpenAiTelemetry.ts\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/index.ts#L41"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/index.ts#L50"
   },
   {
     "_tag": "Class",
@@ -738,6 +754,100 @@
     "category": "models",
     "signature": "export interface Service {\n    readonly transformClient?: ((client: HttpClient) => HttpClient) | undefined\n  }",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/OpenAiConfig.ts#L34"
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "OpenAiEmbeddingModel.ts",
+      "path": "src/OpenAiEmbeddingModel.ts"
+    },
+    "project": "@effect/ai-openai-compat",
+    "name": "Config",
+    "description": "Service definition for OpenAI embedding model configuration.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "context",
+    "signature": "declare class Config",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/OpenAiEmbeddingModel.ts#L31"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "OpenAiEmbeddingModel.ts",
+      "path": "src/OpenAiEmbeddingModel.ts"
+    },
+    "project": "@effect/ai-openai-compat",
+    "name": "make",
+    "description": "Creates an OpenAI embedding model service.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "declare const make: (args_0: { readonly model: string; readonly config?: Omit<typeof Config.Service, \"model\"> | undefined; }) => Effect.Effect<EmbeddingModel.Service, never, OpenAiClient>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/OpenAiEmbeddingModel.ts#L78"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "OpenAiEmbeddingModel.ts",
+      "path": "src/OpenAiEmbeddingModel.ts"
+    },
+    "project": "@effect/ai-openai-compat",
+    "name": "withConfigOverride",
+    "description": "Provides config overrides for OpenAI embedding model operations.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "configuration",
+    "signature": "declare const withConfigOverride: { (overrides: typeof Config.Service): <A, E, R>(self: Effect.Effect<A, E, R>) => Effect.Effect<A, E, Exclude<R, Config>>; <A, E, R>(self: Effect.Effect<A, E, R>, overrides: typeof Config.Service): Effect.Effect<A, E, Exclude<R, Config>>; }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/OpenAiEmbeddingModel.ts#L116"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "OpenAiEmbeddingModel.ts",
+      "path": "src/OpenAiEmbeddingModel.ts"
+    },
+    "project": "@effect/ai-openai-compat",
+    "name": "model",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "declare const model: (model: string, options: { readonly dimensions: number; readonly config?: Omit<typeof Config.Service, \"model\" | \"dimensions\">; }) => AiModel.Model<\"openai\", EmbeddingModel.EmbeddingModel | EmbeddingModel.Dimensions, OpenAiClient>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/OpenAiEmbeddingModel.ts#L50"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "OpenAiEmbeddingModel.ts",
+      "path": "src/OpenAiEmbeddingModel.ts"
+    },
+    "project": "@effect/ai-openai-compat",
+    "name": "layer",
+    "description": "Creates a layer for the OpenAI embedding model.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "layers",
+    "signature": "declare const layer: (options: { readonly model: string; readonly config?: Omit<typeof Config.Service, \"model\"> | undefined; }) => Layer.Layer<EmbeddingModel.EmbeddingModel, never, OpenAiClient>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/OpenAiEmbeddingModel.ts#L104"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "OpenAiEmbeddingModel.ts",
+      "path": "src/OpenAiEmbeddingModel.ts"
+    },
+    "project": "@effect/ai-openai-compat",
+    "name": "Model",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "type Model = string",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/OpenAiEmbeddingModel.ts#L23"
   },
   {
     "_tag": "TypeAlias",

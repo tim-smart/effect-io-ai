@@ -30,6 +30,6 @@ const program = LanguageModel.streamText({
 declare const streamText: <Options extends NoExcessProperties<GenerateTextOptions<any>, Options>>(options: Options & GenerateTextOptions<ExtractTools<Options>>) => Stream.Stream<Response.StreamPart<ExtractTools<Options>>, ExtractError<Options>, ExtractServices<Options> | LanguageModel>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/LanguageModel.ts#L1609)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/LanguageModel.ts#L1641)
 
 Since v4.0.0

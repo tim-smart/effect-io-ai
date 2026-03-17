@@ -11,6 +11,6 @@ Node index for node identification using plain numbers.
 type NodeIndex = number
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Graph.ts#L24)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Graph.ts#L25)
 
 Since v4.0.0
