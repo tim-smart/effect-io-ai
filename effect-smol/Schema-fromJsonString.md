@@ -11,6 +11,6 @@ Schema type for `fromJsonString`.
 export interface fromJsonString<S extends Top> extends decodeTo<S, String> {}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L8684)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L8714)
 
 Since v4.0.0

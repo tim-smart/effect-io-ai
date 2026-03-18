@@ -21,6 +21,6 @@ const channel = Channel.fromIterator(() => numbers[Symbol.iterator]())
 declare const fromIterator: <A, L>(iterator: LazyArg<Iterator<A, L>>) => Channel<A, never, L>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L600)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L610)
 
 Since v2.0.0

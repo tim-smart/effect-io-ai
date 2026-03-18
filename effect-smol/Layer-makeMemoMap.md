@@ -34,6 +34,6 @@ const program = Effect.gen(function*() {
 declare const makeMemoMap: Effect<MemoMap, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L384)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L386)
 
 Since v2.0.0

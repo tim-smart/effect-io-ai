@@ -34,6 +34,6 @@ Effect.runPromise(program)
 declare const fromIterableEffectRepeat: <A, E, R>(iterable: Effect.Effect<Iterable<A>, E, R>) => Stream<A, Pull.ExcludeDone<E>, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L1064)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L1074)
 
 Since v4.0.0

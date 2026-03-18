@@ -42,6 +42,6 @@ const asyncChannel = Channel.fromEffect(
 declare const fromEffect: <A, E, R>(effect: Effect.Effect<A, E, R>) => Channel<A, Pull.ExcludeDone<E>, void, unknown, unknown, unknown, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L1040)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L1050)
 
 Since v2.0.0

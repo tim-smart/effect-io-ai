@@ -20,6 +20,6 @@ const channel = Channel.end("done")
 declare const end: <A>(value: A) => Channel<never, never, A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L787)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L797)
 
 Since v4.0.0

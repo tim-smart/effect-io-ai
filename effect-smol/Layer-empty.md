@@ -22,6 +22,6 @@ const emptyLayer = Layer.empty
 declare const empty: Layer<never, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L671)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L673)
 
 Since v2.0.0

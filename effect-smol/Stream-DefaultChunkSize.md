@@ -24,6 +24,6 @@ Effect.runPromise(program)
 declare const DefaultChunkSize: number
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L283)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L293)
 
 Since v2.0.0

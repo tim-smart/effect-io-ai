@@ -11,6 +11,6 @@ Schema type for `fromURLSearchParams`.
 export interface fromURLSearchParams<S extends Top> extends decodeTo<S, URLSearchParams> {}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L9023)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L9053)
 
 Since v4.0.0

@@ -28,6 +28,6 @@ const conditionalChannel = (shouldEmit: boolean) =>
 declare const empty: Channel<never, never, void, unknown, unknown, unknown, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L836)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L846)
 
 Since v2.0.0

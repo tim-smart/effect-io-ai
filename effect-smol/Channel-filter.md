@@ -33,6 +33,6 @@ const numbersOnlyChannel = Channel.filter(
 declare const filter: { <OutElem, B extends OutElem>(refinement: Predicate.Refinement<OutElem, B>): <OutErr, OutDone, InElem, InErr, InDone, Env>(self: Channel<OutElem, OutErr, OutDone, InElem, InErr, InDone, Env>) => Channel<B, OutErr, OutDone, InElem, InErr, InDone, Env>; <OutElem>(predicate: Predicate.Predicate<OutElem>): <OutErr, OutDone, InElem, InErr, InDone, Env>(self: Channel<OutElem, OutErr, OutDone, InElem, InErr, InDone, Env>) => Channel<OutElem, OutErr, OutDone, InElem, InErr, InDone, Env>; <OutElem, OutErr, OutDone, InElem, InErr, InDone, Env, B extends OutElem>(self: Channel<OutElem, OutErr, OutDone, InElem, InErr, InDone, Env>, refinement: Predicate.Refinement<OutElem, B>): Channel<B, OutErr, OutDone, InElem, InErr, InDone, Env>; <OutElem, OutErr, OutDone, InElem, InErr, InDone, Env>(self: Channel<OutElem, OutErr, OutDone, InElem, InErr, InDone, Env>, predicate: Predicate.Predicate<OutElem>): Channel<OutElem, OutErr, OutDone, InElem, InErr, InDone, Env>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L2997)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L3007)
 
 Since v2.0.0

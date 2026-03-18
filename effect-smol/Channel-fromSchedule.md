@@ -11,6 +11,6 @@ Creates a Channel from a Schedule.
 declare const fromSchedule: <O, E, R>(schedule: Schedule.Schedule<O, unknown, E, R>) => Channel<O, E, O, unknown, unknown, unknown, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L1580)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L1590)
 
 Since v4.0.0

@@ -15,6 +15,6 @@ The type produced by `withDecodingDefault` — a schema that decodes from an `op
 export interface withDecodingDefault<S extends Top> extends decodeTo<S, optional<toEncoded<S>>> {}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L4319)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L4349)
 
 Since v4.0.0

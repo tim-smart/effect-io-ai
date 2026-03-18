@@ -35,6 +35,6 @@ const channelWithFallback = Channel.concatWith(
 declare const fail: <E>(error: E) => Channel<never, E, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L893)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L903)
 
 Since v2.0.0

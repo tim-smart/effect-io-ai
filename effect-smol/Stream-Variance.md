@@ -13,6 +13,6 @@ export interface Variance<out A, out E, out R> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L165)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L175)
 
 Since v2.0.0

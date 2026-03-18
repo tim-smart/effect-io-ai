@@ -14,20 +14,14 @@ only the methods you need to test while leaving others unimplemented.
 ```ts
 type PartialEffectful<A> = Types.Simplify<
   & {
-    [
-      K in keyof A as A[K] extends Effect<any, any, any> | ((...args: any) => Effect<any, any, any>) ? K
-        : never
-    ]?: A[K]
+    [K in keyof A as A[K] extends AnyEffectOrStream ? K : never]?: A[K]
   }
   & {
-    [
-      K in keyof A as A[K] extends Effect<any, any, any> | ((...args: any) => Effect<any, any, any>) ? never
-        : K
-    ]: A[K]
+    [K in keyof A as A[K] extends AnyEffectOrStream ? never : K]: A[K]
   }
 >
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L1781)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L1783)
 
 Since v4.0.0

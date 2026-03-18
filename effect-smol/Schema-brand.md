@@ -34,6 +34,6 @@ export interface brand<S extends Top, B> extends
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L3677)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L3707)
 
 Since v4.0.0

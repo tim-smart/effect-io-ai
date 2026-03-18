@@ -26,6 +26,6 @@ const program = Effect.gen(function*() {
 declare const fromChannel: <Arr extends Arr.NonEmptyReadonlyArray<any>, E, R>(channel: Channel.Channel<Arr, E, void, unknown, unknown, unknown, R>) => Stream<Arr extends Arr.NonEmptyReadonlyArray<infer A> ? A : never, E, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L319)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L329)
 
 Since v2.0.0

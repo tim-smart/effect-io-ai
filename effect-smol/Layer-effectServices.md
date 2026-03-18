@@ -32,6 +32,6 @@ const layer = Layer.effectServices(
 declare const effectServices: <A, E, R>(effect: Effect<ServiceMap.ServiceMap<A>, E, R>) => Layer<A, E, Exclude<R, Scope.Scope>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L811)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L813)
 
 Since v2.0.0

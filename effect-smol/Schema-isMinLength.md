@@ -31,6 +31,6 @@ const NonEmptyArraySchema = Schema.Array(Schema.Number).check(Schema.isMinLength
 declare const isMinLength: (minLength: number, annotations?: Annotations.Filter) => AST.Filter<{ readonly length: number; }>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L6265)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L6295)
 
 Since v4.0.0

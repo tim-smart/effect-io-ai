@@ -26,6 +26,6 @@ Effect.runPromise(program)
 declare const mkString: <E, R>(self: Stream<string, E, R>) => Effect.Effect<string, E, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L10153)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L10163)
 
 Since v2.0.0

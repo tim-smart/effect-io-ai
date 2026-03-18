@@ -28,6 +28,6 @@ const layer = Layer.sync(Database)(() => ({
 declare const sync: { <I, S>(service: ServiceMap.Key<I, S>): (evaluate: LazyArg<S>) => Layer<I>; <I, S>(service: ServiceMap.Key<I, S>, evaluate: LazyArg<S>): Layer<I>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L695)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L697)
 
 Since v2.0.0

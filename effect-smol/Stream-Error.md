@@ -21,6 +21,6 @@ type ErrorType = Stream.Error<NumberStream>
 type Error<T> = [T] extends [Stream<infer _A, infer _E, infer _R>] ? _E : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L213)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L223)
 
 Since v3.4.0

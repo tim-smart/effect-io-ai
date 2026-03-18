@@ -29,6 +29,6 @@ const objectDefect = Channel.die({
 declare const die: (defect: unknown) => Channel<never, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L1002)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L1012)
 
 Since v2.0.0

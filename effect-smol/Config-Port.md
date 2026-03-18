@@ -19,6 +19,6 @@ When to use:
 declare const Port: Schema.Int
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Config.ts#L761)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Config.ts#L766)
 
 Since v4.0.0

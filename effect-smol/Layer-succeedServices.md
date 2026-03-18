@@ -40,6 +40,6 @@ const layer = Layer.succeedServices(services)
 declare const succeedServices: <A>(services: ServiceMap.ServiceMap<A>) => Layer<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L652)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L654)
 
 Since v2.0.0

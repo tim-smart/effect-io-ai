@@ -28,6 +28,6 @@ const schema = Schema.Number.pipe(
 declare const catchDecoding: <S extends Top>(f: (issue: Issue.Issue) => Effect.Effect<Option_.Option<S["Type"]>, Issue.Issue>) => (self: S) => S["~rebuild.out"]
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L3881)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L3911)
 
 Since v4.0.0

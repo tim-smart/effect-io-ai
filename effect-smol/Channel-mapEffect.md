@@ -53,6 +53,6 @@ const processedChannel = Channel.mapEffect(
 declare const mapEffect: { <OutElem, OutElem1, OutErr1, Env1>(f: (d: OutElem, i: number) => Effect.Effect<OutElem1, OutErr1, Env1>, options?: { readonly concurrency?: number | "unbounded" | undefined; readonly unordered?: boolean | undefined; }): <OutErr, OutDone, InElem, InErr, InDone, Env>(self: Channel<OutElem, OutErr, OutDone, InElem, InErr, InDone, Env>) => Channel<OutElem1, OutErr1 | OutErr, OutDone, InElem, InErr, InDone, Env1 | Env>; <OutElem, OutErr, OutDone, InElem, InErr, InDone, Env, OutElem1, OutErr1, Env1>(self: Channel<OutElem, OutErr, OutDone, InElem, InErr, InDone, Env>, f: (d: OutElem, i: number) => Effect.Effect<OutElem1, OutErr1, Env1>, options?: { readonly concurrency?: number | "unbounded" | undefined; readonly unordered?: boolean | undefined; }): Channel<OutElem1, OutErr | OutErr1, OutDone, InElem, InErr, InDone, Env | Env1>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L1785)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L1795)
 
 Since v2.0.0

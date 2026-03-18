@@ -23,6 +23,6 @@ export interface StreamUnifyIgnore extends Effect.EffectUnifyIgnore {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L135)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L145)
 
 Since v2.0.0

@@ -25,6 +25,6 @@ Effect.runPromise(Effect.gen(function* () {
 declare const splitLines: <E, R>(self: Stream<string, E, R>) => Stream<string, E, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L8633)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L8643)
 
 Since v2.0.0

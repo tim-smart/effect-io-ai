@@ -11,6 +11,6 @@ Schema type for `S | null`. Produced by `NullOr`.
 export interface NullOr<S extends Top> extends Union<readonly [S, Null]> {}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L3499)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L3529)
 
 Since v4.0.0

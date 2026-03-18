@@ -32,6 +32,6 @@ const unwrappedChannel = Channel.unwrap(channelEffect)
 declare const unwrap: <OutElem, OutErr, OutDone, InElem, InErr, InDone, R2, E, R>(channel: Effect.Effect<Channel<OutElem, OutErr, OutDone, InElem, InErr, InDone, R2>, E, R>) => Channel<OutElem, E | OutErr, OutDone, InElem, InErr, InDone, Exclude<R, Scope.Scope> | R2>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L6147)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L6157)
 
 Since v2.0.0

@@ -49,6 +49,6 @@ const notificationChannel = Effect.gen(function*() {
 declare const fromSubscription: <A>(subscription: PubSub.Subscription<A>) => Channel<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L1220)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L1230)
 
 Since v4.0.0

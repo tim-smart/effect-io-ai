@@ -15,6 +15,6 @@ The type produced by `toTaggedUnion` — a `Union` augmented with `cases`, `guar
 type toTaggedUnion<Tag, Members> = Union<Members> & TaggedUnionUtils<Tag, Members>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L4532)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L4562)
 
 Since v4.0.0

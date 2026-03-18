@@ -29,6 +29,6 @@ console.log(Layer.isLayer(notALayer)) // false
 declare const isLayer: (u: unknown) => u is Layer<unknown, unknown, unknown>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L175)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L177)
 
 Since v2.0.0

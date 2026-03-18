@@ -21,6 +21,6 @@ console.log(Channel.isChannel("not a channel")) // false
 declare const isChannel: (u: unknown) => u is Channel<unknown, unknown, unknown, unknown, unknown, unknown, unknown>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L112)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L122)
 
 Since v3.5.4

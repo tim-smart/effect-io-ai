@@ -20,6 +20,6 @@ const channel = Channel.succeed(42)
 declare const succeed: <A>(value: A) => Channel<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L771)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L781)
 
 Since v2.0.0

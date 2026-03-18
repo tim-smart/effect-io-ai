@@ -21,6 +21,6 @@ const channel = Channel.fromChunk(chunk)
 declare const fromChunk: <A>(chunk: Chunk.Chunk<A>) => Channel<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L646)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L656)
 
 Since v2.0.0

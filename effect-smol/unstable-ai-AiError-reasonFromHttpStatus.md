@@ -23,7 +23,7 @@ console.log(reason._tag) // "RateLimitError"
 **Signature**
 
 ```ts
-declare const reasonFromHttpStatus: (params: { readonly status: number; readonly body?: unknown; readonly http?: typeof HttpContext.Type; readonly metadata?: typeof ProviderMetadata.Type; }) => AiErrorReason
+declare const reasonFromHttpStatus: (params: { readonly status: number; readonly body?: unknown; readonly http?: typeof HttpContext.Type; readonly metadata?: typeof ProviderMetadata.Type; readonly description?: string | undefined; }) => AiErrorReason
 ```
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AiError.ts#L1530)

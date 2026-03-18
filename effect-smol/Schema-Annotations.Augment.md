@@ -22,6 +22,6 @@ export interface Augment extends Annotations {
   }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L11162)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L11192)
 
 Since v4.0.0

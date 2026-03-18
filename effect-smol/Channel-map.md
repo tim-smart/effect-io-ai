@@ -44,6 +44,6 @@ const displayChannel = Channel.map(usersChannel, (user): UserDisplay => ({
 declare const map: { <OutElem, OutElem2>(f: (o: OutElem, i: number) => OutElem2): <OutErr, OutDone, InElem, InErr, InDone, Env>(self: Channel<OutElem, OutErr, OutDone, InElem, InErr, InDone, Env>) => Channel<OutElem2, OutErr, OutDone, InElem, InErr, InDone, Env>; <OutElem, OutErr, OutDone, InElem, InErr, InDone, Env, OutElem2>(self: Channel<OutElem, OutErr, OutDone, InElem, InErr, InDone, Env>, f: (o: OutElem, i: number) => OutElem2): Channel<OutElem2, OutErr, OutDone, InElem, InErr, InDone, Env>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L1658)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L1668)
 
 Since v2.0.0

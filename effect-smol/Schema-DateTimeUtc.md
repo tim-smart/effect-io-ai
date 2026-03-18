@@ -11,6 +11,6 @@ Schema type for `DateTimeUtc`.
 export interface DateTimeUtc extends declare<DateTime.Utc> {}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L9392)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L9422)
 
 Since v4.0.0

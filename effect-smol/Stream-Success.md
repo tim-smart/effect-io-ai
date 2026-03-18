@@ -21,6 +21,6 @@ type SuccessType = Stream.Success<NumberStream>
 type Success<T> = [T] extends [Stream<infer _A, infer _E, infer _R>] ? _A : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L196)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L206)
 
 Since v3.4.0

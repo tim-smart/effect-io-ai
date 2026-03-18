@@ -57,6 +57,6 @@ const freshProgram = Effect.gen(function*() {
 declare const fresh: <A, E, R>(self: Layer<A, E, R>) => Layer<A, E, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L1711)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L1713)
 
 Since v2.0.0

@@ -35,6 +35,6 @@ const unwrapped = channel.pipe(Channel.unwrapReason("AiError"))
 declare const unwrapReason: { <K extends TagsWithReason<OutErr>, OutErr>(errorTag: K): <OutElem, OutDone, InElem, InErr, InDone, Env>(self: Channel<OutElem, OutErr, OutDone, InElem, InErr, InDone, Env>) => Channel<OutElem, Types.ExcludeTag<OutErr, K> | Types.ReasonOf<Types.ExtractTag<OutErr, K>>, OutDone, InElem, InErr, InDone, Env>; <OutElem, OutErr, OutDone, InElem, InErr, InDone, Env, K extends TagsWithReason<OutErr>>(self: Channel<OutElem, OutErr, OutDone, InElem, InErr, InDone, Env>, errorTag: K): Channel<OutElem, Types.ExcludeTag<OutErr, K> | Types.ReasonOf<Types.ExtractTag<OutErr, K>>, OutDone, InElem, InErr, InDone, Env>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L5102)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L5112)
 
 Since v4.0.0

@@ -188,7 +188,7 @@
     "since": "1.0.0",
     "category": "Websocket mode",
     "signature": "declare const layerWebSocketMode: Layer.Layer<OpenAiSocket | ResponseIdTracker.ResponseIdTracker, never, OpenAiClient | Socket.WebSocketConstructor>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L594"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L603"
   },
   {
     "_tag": "Function",
@@ -236,7 +236,7 @@
     "since": "1.0.0",
     "category": "Websocket mode",
     "signature": "declare const withWebSocketMode: <A, E, R>(effect: Effect.Effect<A, E, R>) => Effect.Effect<A, E, Exclude<R, OpenAiSocket | ResponseIdTracker.ResponseIdTracker> | OpenAiClient | Socket.WebSocketConstructor>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L566"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L575"
   },
   {
     "_tag": "Interface",

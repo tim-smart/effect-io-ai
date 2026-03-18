@@ -11,6 +11,6 @@ Schema type for `Int`.
 export interface Int extends Number {}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L9124)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L9154)
 
 Since v4.0.0

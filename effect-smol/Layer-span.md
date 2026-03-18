@@ -51,6 +51,6 @@ const tracedLayer = Layer.span("service-initialization", {
 declare const span: (name: string, options?: SpanOptions) => Layer<Tracer.ParentSpan>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L2045)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L2063)
 
 Since v4.0.0

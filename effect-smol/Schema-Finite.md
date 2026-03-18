@@ -11,6 +11,6 @@ Schema type for `Finite`.
 export interface Finite extends Number {}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L9109)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L9139)
 
 Since v4.0.0

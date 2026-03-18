@@ -14,6 +14,6 @@ allowing layers to share memoized results.
 declare class CurrentMemoMap
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L395)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L397)
 
 Since v3.13.0

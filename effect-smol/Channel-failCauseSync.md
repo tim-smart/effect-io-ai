@@ -30,6 +30,6 @@ const dieCauseChannel = Channel.failCauseSync(() => {
 declare const failCauseSync: <E>(evaluate: LazyArg<Cause.Cause<E>>) => Channel<never, E, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L975)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L985)
 
 Since v2.0.0

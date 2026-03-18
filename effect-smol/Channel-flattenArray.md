@@ -33,6 +33,6 @@ const flattenedChannel = Channel.flattenArray(arrayChannel)
 declare const flattenArray: <OutElem, OutErr, OutDone, InElem, InErr, InDone, Env>(self: Channel<ReadonlyArray<OutElem>, OutErr, OutDone, InElem, InErr, InDone, Env>) => Channel<OutElem, OutErr, OutDone, InElem, InErr, InDone, Env>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L2765)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L2775)
 
 Since v4.0.0

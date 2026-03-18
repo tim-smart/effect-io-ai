@@ -37,6 +37,6 @@ const layer = Layer.effect(Database)(
 declare const effect: { <I, S>(service: ServiceMap.Key<I, S>): <E, R>(effect: Effect<S, E, R>) => Layer<I, E, Exclude<R, Scope.Scope>>; <I, S, E, R>(service: ServiceMap.Key<I, S>, effect: Effect<S, E, R>): Layer<I, E, Exclude<R, Scope.Scope>>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L764)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L766)
 
 Since v2.0.0

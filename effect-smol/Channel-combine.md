@@ -15,6 +15,6 @@ state being specified by `s`.
 declare const combine: { <OutElem2, OutErr2, OutDone2, InElem2, InErr2, InDone2, Env2, S, OutElem, OutErr, OutDone, A, E, R>(that: Channel<OutElem2, OutErr2, OutDone2, InElem2, InErr2, InDone2, Env2>, s: LazyArg<S>, f: (s: S, pullLeft: Pull.Pull<OutElem, OutErr, OutDone>, pullRight: Pull.Pull<OutElem2, OutErr2, OutDone2>) => Effect.Effect<readonly [A, S], E, R>): <InElem, InErr, InDone, Env>(self: Channel<OutElem, OutErr, OutDone, InElem, InErr, InDone, Env>) => Channel<A, Pull.ExcludeDone<E>, Cause.Done.Extract<E>, InElem & InElem2, InErr & InErr2, InDone & InDone2, Env | Env2 | R>; <OutElem, OutErr, OutDone, InElem, InErr, InDone, Env, OutElem2, OutErr2, OutDone2, InElem2, InErr2, InDone2, Env2, S, A, E, R>(self: Channel<OutElem, OutErr, OutDone, InElem, InErr, InDone, Env>, that: Channel<OutElem2, OutErr2, OutDone2, InElem2, InErr2, InDone2, Env2>, s: LazyArg<S>, f: (s: S, pullLeft: Pull.Pull<OutElem, OutErr, OutDone>, pullRight: Pull.Pull<OutElem2, OutErr2, OutDone2>) => Effect.Effect<readonly [A, S], E, R>): Channel<A, Pull.ExcludeDone<E>, Cause.Done.Extract<E>, InElem & InElem2, InErr & InErr2, InDone & InDone2, Env | Env2 | R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L2480)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L2490)
 
 Since v4.0.0

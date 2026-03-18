@@ -40,6 +40,6 @@ export interface Stream<out A, out E = never, out R = never> extends Variance<A,
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L91)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L101)
 
 Since v2.0.0

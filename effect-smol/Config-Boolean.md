@@ -22,6 +22,6 @@ Accepted string values: `true`, `false`, `yes`, `no`, `on`, `off`, `1`,
 declare const Boolean: Schema.decodeTo<Schema.Boolean, Schema.Literals<readonly ["true", "yes", "on", "1", "y", "false", "no", "off", "0", "n"]>, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Config.ts#L713)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Config.ts#L718)
 
 Since v4.0.0

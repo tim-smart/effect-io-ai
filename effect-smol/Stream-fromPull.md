@@ -33,6 +33,6 @@ Effect.runPromise(program)
 declare const fromPull: <A, E, R, EX, RX>(pull: Effect.Effect<Pull.Pull<Arr.NonEmptyReadonlyArray<A>, E, void, R>, EX, RX>) => Stream<A, Pull.ExcludeDone<E> | EX, R | RX>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L518)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L528)
 
 Since v2.0.0

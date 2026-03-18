@@ -11,6 +11,6 @@ Schema type for `TimeZoneNamed`.
 export interface TimeZoneNamed extends declare<DateTime.TimeZone.Named> {}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L9561)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L9591)
 
 Since v4.0.0

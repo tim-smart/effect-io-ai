@@ -43,6 +43,6 @@ const asyncMapAccum = Channel.mapAccum(
 declare const mapAccum: { <S, OutElem, B, E = never, R = never>(initial: LazyArg<S>, f: (s: S, a: Types.NoInfer<OutElem>) => Effect.Effect<readonly [state: S, values: ReadonlyArray<B>], E, R> | readonly [state: S, values: ReadonlyArray<B>], options?: { readonly onHalt?: ((state: S) => Array<B>) | undefined; }): <OutErr, OutDone, InElem, InErr, InDone, Env>(self: Channel<OutElem, OutErr, OutDone, InElem, InErr, InDone, Env>) => Channel<B, OutErr | E, OutDone, InElem, InErr, InDone, Env | R>; <OutElem, OutErr, OutDone, InElem, InErr, InDone, Env, S, B, E = never, R = never>(self: Channel<OutElem, OutErr, OutDone, InElem, InErr, InDone, Env>, initial: LazyArg<S>, f: (s: S, a: Types.NoInfer<OutElem>) => Effect.Effect<readonly [state: S, values: ReadonlyArray<B>], E, R> | readonly [state: S, values: ReadonlyArray<B>], options?: { readonly onHalt?: ((state: S) => Array<B>) | undefined; }): Channel<B, OutErr | E, OutDone, InElem, InErr, InDone, Env | R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L3337)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L3347)
 
 Since v2.0.0

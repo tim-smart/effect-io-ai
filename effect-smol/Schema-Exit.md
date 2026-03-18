@@ -23,6 +23,6 @@ export interface Exit<A extends Top, E extends Top, D extends Top> extends
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L7679)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L7709)
 
 Since v4.0.0

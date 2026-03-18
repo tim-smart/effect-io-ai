@@ -29,6 +29,6 @@ type Services<T> = [T] extends [Stream<infer _A, infer _E, infer _R>] ? _R
   : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L237)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L247)
 
 Since v3.4.0

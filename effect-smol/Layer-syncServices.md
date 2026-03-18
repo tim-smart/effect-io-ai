@@ -31,6 +31,6 @@ const layer = Layer.syncServices(() =>
 declare const syncServices: <A>(evaluate: LazyArg<ServiceMap.ServiceMap<A>>) => Layer<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L730)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L732)
 
 Since v2.0.0

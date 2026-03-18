@@ -34,6 +34,6 @@ const program = Effect.gen(function*() {
 declare const makeMemoMapUnsafe: () => MemoMap
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L354)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L356)
 
 Since v4.0.0

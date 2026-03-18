@@ -23,6 +23,6 @@ creation of a layer.
 declare const updateService: { <I, A>(service: ServiceMap.Key<I, A>, f: (a: A) => A): <A1, E1, R1>(layer: Layer<A1, E1, R1>) => Layer<A1, E1, I | R1>; <A1, E1, R1, I, A>(layer: Layer<A1, E1, R1>, service: ServiceMap.Key<I, A>, f: (a: A) => A): Layer<A1, E1, I | R1>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L1641)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L1643)
 
 Since v3.13.0

@@ -22,6 +22,6 @@ Accepts any string that `Duration.fromInput` can parse (e.g.
 declare const Duration: Schema.decodeTo<Schema.Duration, Schema.String, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Config.ts#L738)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Config.ts#L743)
 
 Since v4.0.0
