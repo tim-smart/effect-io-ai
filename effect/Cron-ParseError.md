@@ -11,6 +11,6 @@ Represents a checked exception which occurs when decoding fails.
 declare class ParseError
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cron.ts#L202)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cron.ts#L253)
 
 Since v2.0.0

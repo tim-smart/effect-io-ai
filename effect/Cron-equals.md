@@ -11,6 +11,6 @@ Checks if two `Cron`s are equal.
 declare const equals: { (that: Cron): (self: Cron) => boolean; (self: Cron, that: Cron): boolean; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cron.ts#L552)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cron.ts#L682)
 
 Since v2.0.0

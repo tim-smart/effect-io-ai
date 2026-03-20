@@ -46,6 +46,6 @@ console.log(Cron.unsafeParse("0 4 8-14 * *"))
 declare const unsafeParse: (cron: string, tz?: DateTime.TimeZone | string) => Cron
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cron.ts#L317)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cron.ts#L368)
 
 Since v2.0.0

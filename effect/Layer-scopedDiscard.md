@@ -3,7 +3,7 @@ Module: `Layer`<br />
 
 ## Layer.scopedDiscard
 
-Constructs a layer from the specified scoped effect.
+Constructs a layer from the specified scoped effect, discarding its output.
 
 **Signature**
 

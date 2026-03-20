@@ -13,6 +13,7 @@ Complex keys can extend `Equal` and `Hash` to allow lookups by value.
 
 - `capacity`: The maximum number of resources that can be held in the map.
 - `idleTimeToLive`: When the reference count reaches zero, the resource will be released after this duration.
+  Can be a static duration or a function that returns a duration based on the key.
 
 **Example**
 
@@ -40,9 +41,9 @@ Effect.gen(function*() {
 **Signature**
 
 ```ts
-declare const make: { <K, A, E, R>(options: { readonly lookup: (key: K) => Effect.Effect<A, E, R>; readonly idleTimeToLive?: Duration.DurationInput | undefined; readonly capacity?: undefined; }): Effect.Effect<RcMap<K, A, E>, never, Scope.Scope | R>; <K, A, E, R>(options: { readonly lookup: (key: K) => Effect.Effect<A, E, R>; readonly idleTimeToLive?: Duration.DurationInput | undefined; readonly capacity: number; }): Effect.Effect<RcMap<K, A, E | Cause.ExceededCapacityException>, never, Scope.Scope | R>; }
+declare const make: { <K, A, E, R>(options: { readonly lookup: (key: K) => Effect.Effect<A, E, R>; readonly idleTimeToLive?: Duration.DurationInput | ((key: K) => Duration.DurationInput) | undefined; readonly capacity?: undefined; }): Effect.Effect<RcMap<K, A, E>, never, Scope.Scope | R>; <K, A, E, R>(options: { readonly lookup: (key: K) => Effect.Effect<A, E, R>; readonly idleTimeToLive?: Duration.DurationInput | ((key: K) => Duration.DurationInput) | undefined; readonly capacity: number; }): Effect.Effect<RcMap<K, A, E | Cause.ExceededCapacityException>, never, Scope.Scope | R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/RcMap.ts#L84)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/RcMap.ts#L85)
 
 Since v3.5.0

@@ -26,6 +26,6 @@ assert.deepStrictEqual(Cron.match(cron, new Date("2021-01-08 05:00:00")), false)
 declare const match: (cron: Cron, date: DateTime.DateTime.Input) => boolean
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cron.ts#L337)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cron.ts#L388)
 
 Since v2.0.0

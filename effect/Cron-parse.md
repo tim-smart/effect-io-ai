@@ -28,6 +28,6 @@ assert.deepStrictEqual(Cron.parse("0 0 4 8-14 * *"), Either.right(Cron.make({
 declare const parse: (cron: string, tz?: DateTime.TimeZone | string) => Either.Either<Cron, ParseError>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cron.ts#L242)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cron.ts#L293)
 
 Since v2.0.0

@@ -11,6 +11,6 @@ Returns `true` if the specified value is an `ParseError`, `false` otherwise.
 declare const isParseError: (u: unknown) => u is ParseError
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cron.ts#L218)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cron.ts#L269)
 
 Since v2.0.0

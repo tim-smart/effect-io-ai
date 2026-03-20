@@ -5,7 +5,7 @@ Module: `Cron`<br />
 
 Returns the next run `Date` for the given `Cron` instance.
 
-Uses the current time as a starting point if no value is provided for `now`.
+Uses the current time as a starting point if no value is provided for `startFrom`.
 
 **Throws**
 
@@ -29,6 +29,6 @@ assert.deepStrictEqual(Cron.next(cron, after), new Date("2021-01-08 04:00:00"))
 declare const next: (cron: Cron, startFrom?: DateTime.DateTime.Input) => Date
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cron.ts#L396)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cron.ts#L447)
 
 Since v2.0.0
