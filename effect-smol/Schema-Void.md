@@ -17,6 +17,6 @@ export interface Void extends Bottom<void, void, never, never, AST.Void, Void> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L2174)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L2198)
 
 Since v4.0.0

@@ -11,6 +11,6 @@ A union schema for JavaScript property keys: `number | symbol | string`.
 declare const PropertyKey: Union<readonly [Finite, Symbol, String]>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L9254)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L9278)
 
 Since v4.0.0

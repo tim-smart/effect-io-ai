@@ -11,6 +11,6 @@ Creates an unbounded atomic PubSub implementation with optional replay buffer.
 declare const makeAtomicUnbounded: <A>(options?: { readonly replay?: number | undefined; }) => PubSub.Atomic<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PubSub.ts#L499)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PubSub.ts#L500)
 
 Since v4.0.0

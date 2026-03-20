@@ -32,6 +32,6 @@ console.log(nextFromNow) // Next occurrence from now
 declare const next: (cron: Cron, now?: DateTime.DateTime.Input) => Date
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cron.ts#L589)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cron.ts#L640)
 
 Since v2.0.0

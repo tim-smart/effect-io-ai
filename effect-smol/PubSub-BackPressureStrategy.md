@@ -15,6 +15,6 @@ are published and received by other subscribers.
 declare class BackPressureStrategy<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PubSub.ts#L2207)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PubSub.ts#L2215)
 
 Since v4.0.0

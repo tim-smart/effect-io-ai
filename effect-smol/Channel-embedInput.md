@@ -30,6 +30,6 @@ const embeddedChannel = Channel.embedInput(
 declare const embedInput: { <InElem, InErr, InDone, R>(input: (upstream: Pull.Pull<InElem, InErr, InDone>) => Effect.Effect<void, never, R>): <OutElem, OutErr, OutDone, Env>(self: Channel<OutElem, OutErr, OutDone, unknown, unknown, unknown, Env>) => Channel<OutElem, OutErr, OutDone, InElem, InErr, InDone, Env | R>; <OutElem, OutErr, OutDone, Env, InErr, InElem, InDone, R>(self: Channel<OutElem, OutErr, OutDone, unknown, unknown, unknown, Env>, input: (upstream: Pull.Pull<InElem, InErr, InDone>) => Effect.Effect<void, never, R>): Channel<OutElem, OutErr, OutDone, InElem, InErr, InDone, Env | R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L6205)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L6207)
 
 Since v2.0.0

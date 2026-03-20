@@ -32,6 +32,6 @@ if (remainingOption._tag === "Some" && remainingOption.value > 10) {
 declare const remainingUnsafe: <A>(self: Subscription<A>) => Option.Option<number>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PubSub.ts#L1319)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PubSub.ts#L1327)
 
 Since v4.0.0

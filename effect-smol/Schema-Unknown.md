@@ -17,6 +17,6 @@ export interface Unknown extends Bottom<unknown, unknown, never, never, AST.Unkn
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L2027)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L2051)
 
 Since v4.0.0

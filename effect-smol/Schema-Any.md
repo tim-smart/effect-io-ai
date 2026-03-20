@@ -17,6 +17,6 @@ export interface Any extends Bottom<any, any, never, never, AST.Any, Any> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L2009)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L2033)
 
 Since v4.0.0

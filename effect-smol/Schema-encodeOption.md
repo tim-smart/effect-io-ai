@@ -13,6 +13,6 @@ failure. For `unknown` input use `encodeUnknownOption`.
 declare const encodeOption: <S extends Top & { readonly EncodingServices: never; }>(schema: S) => (input: S["Type"], options?: AST.ParseOptions) => Option_.Option<S["Encoded"]>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L1359)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L1371)
 
 Since v4.0.0

@@ -11,6 +11,6 @@ Schema type for `FiniteFromString`.
 export interface FiniteFromString extends decodeTo<Finite, String> {}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L9192)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L9216)
 
 Since v4.0.0

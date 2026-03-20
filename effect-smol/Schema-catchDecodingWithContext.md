@@ -11,6 +11,6 @@ Like `catchDecoding`, but the handler may require Effect services (`R`).
 declare const catchDecodingWithContext: <S extends Top, R = never>(f: (issue: Issue.Issue) => Effect.Effect<Option_.Option<S["Type"]>, Issue.Issue, R>) => (self: S) => middlewareDecoding<S, S["DecodingServices"] | R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L3922)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L3946)
 
 Since v4.0.0

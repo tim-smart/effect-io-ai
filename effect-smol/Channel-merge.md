@@ -34,6 +34,6 @@ const mergedChannel = Channel.merge(leftChannel, rightChannel, {
 declare const merge: { <OutElem1, OutErr1, OutDone1, InElem1, InErr1, InDone1, Env1>(right: Channel<OutElem1, OutErr1, OutDone1, InElem1, InErr1, InDone1, Env1>, options?: { readonly haltStrategy?: HaltStrategy | undefined; } | undefined): <OutElem, OutErr, OutDone, InElem, InErr, InDone, Env>(left: Channel<OutElem, OutErr, OutDone, InElem, InErr, InDone, Env>) => Channel<OutElem1 | OutElem, OutErr | OutErr1, OutDone | OutDone1, InElem & InElem1, InErr & InErr1, InDone & InDone1, Env1 | Env>; <OutElem, OutErr, OutDone, InElem, InErr, InDone, Env, OutElem1, OutErr1, OutDone1, InElem1, InErr1, InDone1, Env1>(left: Channel<OutElem, OutErr, OutDone, InElem, InErr, InDone, Env>, right: Channel<OutElem1, OutErr1, OutDone1, InElem1, InErr1, InDone1, Env1>, options?: { readonly haltStrategy?: HaltStrategy | undefined; } | undefined): Channel<OutElem | OutElem1, OutErr | OutErr1, OutDone | OutDone1, InElem & InElem1, InErr & InErr1, InDone & InDone1, Env | Env1>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L5735)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L5737)
 
 Since v2.0.0

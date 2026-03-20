@@ -23,6 +23,6 @@ least the required size.
 declare const isMinSize: (minSize: number, annotations?: Annotations.Filter) => AST.Filter<{ readonly size: number; }>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L6448)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L6472)
 
 Since v4.0.0

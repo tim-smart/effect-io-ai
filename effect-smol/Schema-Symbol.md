@@ -17,6 +17,6 @@ export interface Symbol extends Bottom<symbol, symbol, never, never, AST.Symbol,
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L2139)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L2163)
 
 Since v4.0.0

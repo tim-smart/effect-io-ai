@@ -12,6 +12,6 @@ string representation or `undefined` for opaque/declaration types.
 type StringTree = Tree<string | undefined>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L10567)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L10591)
 
 Since v4.0.0

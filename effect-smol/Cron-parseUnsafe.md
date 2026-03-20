@@ -30,6 +30,6 @@ const cronWithTz = Cron.parseUnsafe("0 0 9 * * *", "America/New_York")
 declare const parseUnsafe: (cron: string, tz?: DateTime.TimeZone | string) => Cron
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cron.ts#L495)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cron.ts#L546)
 
 Since v2.0.0

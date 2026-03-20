@@ -17,6 +17,6 @@ export interface String extends Bottom<string, string, never, never, AST.String,
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L2081)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L2105)
 
 Since v4.0.0

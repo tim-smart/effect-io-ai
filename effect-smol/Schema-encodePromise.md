@@ -13,6 +13,6 @@ Encodes a typed input (the schema's `Type`) against a schema, returning a
 declare const encodePromise: <S extends Top & { readonly EncodingServices: never; }>(schema: S) => (input: S["Type"], options?: AST.ParseOptions) => Promise<S["Encoded"]>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L1380)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L1404)
 
 Since v4.0.0

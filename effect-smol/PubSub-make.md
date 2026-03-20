@@ -29,6 +29,6 @@ const program = Effect.gen(function*() {
 declare const make: <A>(options: { readonly atomicPubSub: LazyArg<PubSub.Atomic<A>>; readonly strategy: LazyArg<PubSub.Strategy<A>>; }) => Effect.Effect<PubSub<A>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PubSub.ts#L276)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PubSub.ts#L277)
 
 Since v4.0.0

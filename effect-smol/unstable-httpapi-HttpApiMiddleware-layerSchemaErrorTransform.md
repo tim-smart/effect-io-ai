@@ -27,9 +27,9 @@ export const ErrorHandlerLayer = HttpApiMiddleware.layerSchemaErrorTransform(
 **Signature**
 
 ```ts
-declare const layerSchemaErrorTransform: <Id, E extends Schema.Top, Requires>(service: ServiceMap.Service<Id, HttpApiMiddleware<never, E, Requires>>, transform: (error: Schema.SchemaError, context: { readonly endpoint: HttpApiEndpoint.AnyWithProps; readonly group: HttpApiGroup.AnyWithProps; }) => Effect.Effect<HttpServerResponse, E["Type"] | Schema.SchemaError, Requires | HttpRouter.Provided>) => Layer.Layer<Id>
+declare const layerSchemaErrorTransform: <Id, E extends ErrorConstraint, Requires>(service: ServiceMap.Service<Id, HttpApiMiddleware<never, E, Requires>>, transform: (error: Schema.SchemaError, context: { readonly endpoint: HttpApiEndpoint.AnyWithProps; readonly group: HttpApiGroup.AnyWithProps; }) => Effect.Effect<HttpServerResponse, ErrorSchemaFromConstraint<E>["Type"] | Schema.SchemaError, Requires | HttpRouter.Provided>) => Layer.Layer<Id>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiMiddleware.ts#L320)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiMiddleware.ts#L332)
 
 Since v4.0.0

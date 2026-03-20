@@ -30,6 +30,6 @@ console.log(Cron.isCronParseError("not an error")) // false
 declare const isCronParseError: (u: unknown) => u is CronParseError
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cron.ts#L413)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cron.ts#L464)
 
 Since v2.0.0

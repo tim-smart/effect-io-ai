@@ -17,6 +17,6 @@ export interface Number extends Bottom<number, number, never, never, AST.Number,
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L2098)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L2122)
 
 Since v4.0.0

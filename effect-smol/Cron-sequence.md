@@ -30,6 +30,6 @@ console.log(next5)
 declare const sequence: (cron: Cron, now?: DateTime.DateTime.Input) => IterableIterator<Date>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cron.ts#L735)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cron.ts#L832)
 
 Since v2.0.0

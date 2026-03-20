@@ -82,7 +82,25 @@ export interface Cron extends Pipeable, Equal.Equal, Inspectable {
     readonly weekday: number
   }
   /** @internal */
+  readonly last: {
+    readonly second: number
+    readonly minute: number
+    readonly hour: number
+    readonly day: number
+    readonly month: number
+    readonly weekday: number
+  }
+  /** @internal */
   readonly next: {
+    readonly second: ReadonlyArray<number | undefined>
+    readonly minute: ReadonlyArray<number | undefined>
+    readonly hour: ReadonlyArray<number | undefined>
+    readonly day: ReadonlyArray<number | undefined>
+    readonly month: ReadonlyArray<number | undefined>
+    readonly weekday: ReadonlyArray<number | undefined>
+  }
+  /** @internal */
+  readonly prev: {
     readonly second: ReadonlyArray<number | undefined>
     readonly minute: ReadonlyArray<number | undefined>
     readonly hour: ReadonlyArray<number | undefined>

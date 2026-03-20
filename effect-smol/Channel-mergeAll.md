@@ -36,6 +36,6 @@ const mergedChannel = Channel.mergeAll({
 declare const mergeAll: { (options: { readonly concurrency: number | "unbounded"; readonly bufferSize?: number | undefined; readonly switch?: boolean | undefined; }): <OutElem, OutErr1, OutDone1, InElem1, InErr1, InDone1, Env1, OutErr, OutDone, InElem, InErr, InDone, Env>(channels: Channel<Channel<OutElem, OutErr1, OutDone1, InElem1, InErr1, InDone1, Env1>, OutErr, OutDone, InElem, InErr, InDone, Env>) => Channel<OutElem, OutErr1 | OutErr, OutDone, InElem & InElem1, InErr & InErr1, InDone & InDone1, Env1 | Env>; <OutElem, OutErr1, OutDone1, InElem1, InErr1, InDone1, Env1, OutErr, OutDone, InElem, InErr, InDone, Env>(channels: Channel<Channel<OutElem, OutErr1, OutDone1, InElem1, InErr1, InDone1, Env1>, OutErr, OutDone, InElem, InErr, InDone, Env>, options: { readonly concurrency: number | "unbounded"; readonly bufferSize?: number | undefined; readonly switch?: boolean | undefined; }): Channel<OutElem, OutErr1 | OutErr, OutDone, InElem & InElem1, InErr & InErr1, InDone & InDone1, Env1 | Env>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L5551)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L5553)
 
 Since v2.0.0

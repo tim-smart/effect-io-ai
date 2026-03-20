@@ -11,6 +11,6 @@ Schema type for `DateValid`.
 export interface DateValid extends Date {}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L8482)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L8506)
 
 Since v4.0.0

@@ -39,6 +39,6 @@ console.log(Cron.equals(cron1)(cron2)) // true (curried form)
 declare const equals: { (that: Cron): (self: Cron) => boolean; (self: Cron, that: Cron): boolean; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cron.ts#L820)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cron.ts#L917)
 
 Since v2.0.0

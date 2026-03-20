@@ -11,6 +11,6 @@ Schema type for `URLFromString`.
 export interface URLFromString extends decodeTo<URL, String> {}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L8409)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L8433)
 
 Since v4.0.0

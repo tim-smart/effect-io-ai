@@ -31,6 +31,6 @@ const scopedPullEffect = Effect.gen(function*() {
 declare const toPullScoped: <OutElem, OutErr, OutDone, Env>(self: Channel<OutElem, OutErr, OutDone, unknown, unknown, unknown, Env>, scope: Scope.Scope) => Effect.Effect<Pull.Pull<OutElem, OutErr, OutDone, Env>, never, Env>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L7405)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L7407)
 
 Since v4.0.0
