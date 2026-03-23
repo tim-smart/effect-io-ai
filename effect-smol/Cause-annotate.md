@@ -33,6 +33,6 @@ const annotated = Cause.annotate(cause, ServiceMap.empty())
 declare const annotate: { (annotations: ServiceMap.ServiceMap<never>, options?: { readonly overwrite?: boolean | undefined; }): <E>(self: Cause<E>) => Cause<E>; <E>(self: Cause<E>, annotations: ServiceMap.ServiceMap<never>, options?: { readonly overwrite?: boolean | undefined; }): Cause<E>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L1571)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L1606)
 
 Since v4.0.0

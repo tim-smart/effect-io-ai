@@ -40,6 +40,6 @@ export interface Done<A = void> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L1220)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L1221)
 
 Since v4.0.0

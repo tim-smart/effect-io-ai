@@ -10,9 +10,9 @@ returning an `Option` that is `Some` with the decoded value on success or
 **Signature**
 
 ```ts
-declare const decodeOption: <S extends Top & { readonly DecodingServices: never; }>(schema: S) => (input: S["Encoded"], options?: AST.ParseOptions) => Option_.Option<S["Type"]>
+declare const decodeOption: <S extends Decoder<unknown>>(schema: S) => (input: S["Encoded"], options?: AST.ParseOptions) => Option_.Option<S["Type"]>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L1201)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L1197)
 
 Since v4.0.0

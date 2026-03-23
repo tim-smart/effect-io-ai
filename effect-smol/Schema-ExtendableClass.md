@@ -25,6 +25,6 @@ export interface ExtendableClass<Self, S extends Top & { readonly fields: Struct
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L9828)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L9824)
 
 Since v4.0.0

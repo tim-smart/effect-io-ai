@@ -33,6 +33,6 @@ export interface Fail<out E> extends Cause.ReasonProto<"Fail"> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L405)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L406)
 
 Since v2.0.0

@@ -20,6 +20,6 @@ console.log(Cause.isIllegalArgumentError("nope")) // false
 declare const isIllegalArgumentError: (u: unknown) => u is IllegalArgumentError
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L1361)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L1362)
 
 Since v4.0.0

@@ -17,6 +17,6 @@ export interface Null extends Bottom<null, null, never, never, AST.Null, Null> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L2069)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L2065)
 
 Since v4.0.0

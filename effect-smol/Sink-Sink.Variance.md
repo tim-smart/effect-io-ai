@@ -24,6 +24,6 @@ export interface Variance<out A, in In, out L, out E, out R> {
   }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Sink.ts#L161)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Sink.ts#L164)
 
 Since v2.0.0

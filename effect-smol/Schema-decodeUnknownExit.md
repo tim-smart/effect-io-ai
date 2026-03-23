@@ -12,9 +12,9 @@ already typed as the schema's `Encoded` type.
 **Signature**
 
 ```ts
-declare const decodeUnknownExit: <S extends Top & { readonly DecodingServices: never; }>(schema: S) => (input: unknown, options?: AST.ParseOptions) => Exit_.Exit<S["Type"], SchemaError>
+declare const decodeUnknownExit: <S extends Decoder<unknown>>(schema: S) => (input: unknown, options?: AST.ParseOptions) => Exit_.Exit<S["Type"], SchemaError>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L1160)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L1156)
 
 Since v4.0.0

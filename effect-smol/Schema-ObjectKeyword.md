@@ -17,6 +17,6 @@ export interface ObjectKeyword extends Bottom<object, object, never, never, AST.
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L2215)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L2211)
 
 Since v4.0.0

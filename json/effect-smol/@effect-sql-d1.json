@@ -12,7 +12,7 @@
     "since": "1.0.0",
     "category": "type ids",
     "signature": "declare const TypeId: \"~@effect/sql-d1/D1Client\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/d1/src/D1Client.ts#L26"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/d1/src/D1Client.ts#L29"
   },
   {
     "_tag": "Constant",
@@ -27,7 +27,7 @@
     "since": "1.0.0",
     "category": "tags",
     "signature": "declare const D1Client: ServiceMap.Service<D1Client, D1Client>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/d1/src/D1Client.ts#L50"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/d1/src/D1Client.ts#L53"
   },
   {
     "_tag": "Function",
@@ -42,7 +42,7 @@
     "since": "1.0.0",
     "category": "constructor",
     "signature": "declare const make: (options: D1ClientConfig) => Effect.Effect<D1Client, never, Scope.Scope | Reactivity.Reactivity>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/d1/src/D1Client.ts#L70"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/d1/src/D1Client.ts#L73"
   },
   {
     "_tag": "Function",
@@ -57,7 +57,7 @@
     "since": "1.0.0",
     "category": "layers",
     "signature": "declare const layerConfig: (config: Config.Wrap<D1ClientConfig>) => Layer.Layer<D1Client | Client.SqlClient, Config.ConfigError>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/d1/src/D1Client.ts#L190"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/d1/src/D1Client.ts#L193"
   },
   {
     "_tag": "Function",
@@ -72,7 +72,7 @@
     "since": "1.0.0",
     "category": "layers",
     "signature": "declare const layer: (config: D1ClientConfig) => Layer.Layer<D1Client | Client.SqlClient, Config.ConfigError>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/d1/src/D1Client.ts#L208"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/d1/src/D1Client.ts#L211"
   },
   {
     "_tag": "Interface",
@@ -87,7 +87,7 @@
     "since": "1.0.0",
     "category": "models",
     "signature": "export interface D1Client extends Client.SqlClient {\n  readonly [TypeId]: TypeId\n  readonly config: D1ClientConfig\n\n  /** Not supported in d1 */\n  readonly updateValues: never\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/d1/src/D1Client.ts#L38"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/d1/src/D1Client.ts#L41"
   },
   {
     "_tag": "Interface",
@@ -102,7 +102,7 @@
     "since": "1.0.0",
     "category": "models",
     "signature": "export interface D1ClientConfig {\n  readonly db: D1Database\n  readonly prepareCacheSize?: number | undefined\n  readonly prepareCacheTTL?: Duration.Input | undefined\n  readonly spanAttributes?: Record<string, unknown> | undefined\n\n  readonly transformResultNames?: ((str: string) => string) | undefined\n  readonly transformQueryNames?: ((str: string) => string) | undefined\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/d1/src/D1Client.ts#L56"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/d1/src/D1Client.ts#L59"
   },
   {
     "_tag": "TypeAlias",
@@ -117,7 +117,7 @@
     "since": "1.0.0",
     "category": "type ids",
     "signature": "type TypeId = \"~@effect/sql-d1/D1Client\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/d1/src/D1Client.ts#L32"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/d1/src/D1Client.ts#L35"
   },
   {
     "_tag": "Export",

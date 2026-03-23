@@ -12,9 +12,9 @@ returning an `Exit` that is either a `Success` with the encoded value or a
 **Signature**
 
 ```ts
-declare const encodeExit: <S extends Top & { readonly EncodingServices: never; }>(schema: S) => (input: S["Type"], options?: AST.ParseOptions) => Exit_.Exit<S["Encoded"], SchemaError>
+declare const encodeExit: <S extends Encoder<unknown>>(schema: S) => (input: S["Type"], options?: AST.ParseOptions) => Exit_.Exit<S["Encoded"], SchemaError>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L1347)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L1343)
 
 Since v4.0.0

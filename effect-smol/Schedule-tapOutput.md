@@ -91,6 +91,6 @@ const comprehensiveSchedule = Schedule.fixed("500 millis").pipe(
 declare const tapOutput: { <Output, X, Error2, Env2>(f: (output: Output) => Effect<X, Error2, Env2>): <Input, Error, Env>(self: Schedule<Output, Input, Error, Env>) => Schedule<Output, Input, Error | Error2, Env | Env2>; <Output, Input, Error, Env, X, Error2, Env2>(self: Schedule<Output, Input, Error, Env>, f: (output: Output) => Effect<X, Error2, Env2>): Schedule<Output, Input, Error | Error2, Env | Env2>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L2907)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L2919)
 
 Since v2.0.0

@@ -28,6 +28,6 @@ console.log(fails[0].error) // "error"
 declare const isFailReason: <E>(self: Reason<E>) => self is Fail<E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L233)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L234)
 
 Since v4.0.0

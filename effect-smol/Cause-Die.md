@@ -34,6 +34,6 @@ export interface Die extends Cause.ReasonProto<"Die"> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L377)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L378)
 
 Since v2.0.0

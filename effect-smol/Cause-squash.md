@@ -35,6 +35,6 @@ console.log(Cause.squash(Cause.die("defect")))    // "defect"
 declare const squash: <E>(self: Cause<E>) => unknown
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L723)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L724)
 
 Since v2.0.0

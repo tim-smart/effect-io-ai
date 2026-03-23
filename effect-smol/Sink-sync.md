@@ -11,6 +11,6 @@ A sink that immediately ends with the specified lazily evaluated value.
 declare const sync: <A>(a: LazyArg<A>) => Sink<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Sink.ts#L470)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Sink.ts#L473)
 
 Since v2.0.0

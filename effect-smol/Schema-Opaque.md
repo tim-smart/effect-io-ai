@@ -38,6 +38,6 @@ export interface Opaque<Self, S extends Top, Brand> extends
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L4747)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L4743)
 
 Since v4.0.0

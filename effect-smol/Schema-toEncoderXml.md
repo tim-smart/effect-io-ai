@@ -13,6 +13,6 @@ resulting tree to XML.
 declare const toEncoderXml: <T, E, RD, RE>(codec: Codec<T, E, RD, RE>, options?: XmlEncoderOptions) => (t: T) => Effect.Effect<string, SchemaError, RE>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L10648)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L10644)
 
 Since v4.0.0

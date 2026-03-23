@@ -28,6 +28,6 @@ if (Cause.isFailReason(reason)) {
 declare const map: { <E, E2>(f: (error: Types.NoInfer<E>) => E2): (self: Cause<E>) => Cause<E2>; <E, E2>(self: Cause<E>, f: (error: Types.NoInfer<E>) => E2): Cause<E2>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L661)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L662)
 
 Since v4.0.0

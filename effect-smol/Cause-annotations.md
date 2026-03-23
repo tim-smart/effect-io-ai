@@ -18,6 +18,6 @@ Annotations from later reasons overwrite earlier ones when keys collide.
 declare const annotations: <E>(self: Cause<E>) => ServiceMap.ServiceMap<never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L1608)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L1643)
 
 Since v4.0.0

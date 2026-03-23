@@ -20,6 +20,6 @@ type E = Cause.Cause.Error<Cause.Cause<string>>
 type Error<T> = T extends Cause<infer E> ? E : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L303)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L304)
 
 Since v4.0.0

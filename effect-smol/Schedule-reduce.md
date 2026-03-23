@@ -117,6 +117,6 @@ const configProgram = Effect.gen(function*() {
 declare const reduce: { <State, Output, Error2 = never, Env2 = never>(initial: LazyArg<State>, combine: (state: State, output: Output) => State | Effect<State, Error2, Env2>): <Input, Error, Env>(self: Schedule<Output, Input, Error, Env>) => Schedule<State, Input, Error | Error2, Env | Env2>; <Output, Input, Error, Env, State, Error2 = never, Env2 = never>(self: Schedule<Output, Input, Error, Env>, initial: LazyArg<State>, combine: (state: State, output: Output) => State | Effect<State, Error2, Env2>): Schedule<State, Input, Error | Error2, Env | Env2>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L2585)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L2597)
 
 Since v2.0.0

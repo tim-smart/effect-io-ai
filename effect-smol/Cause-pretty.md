@@ -42,6 +42,6 @@ console.log(Cause.pretty(cause))
 declare const pretty: <E>(cause: Cause<E>) => string
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L1064)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L1065)
 
 Since v4.0.0

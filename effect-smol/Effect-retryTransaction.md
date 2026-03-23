@@ -42,6 +42,6 @@ Effect.runPromise(program).catch(console.error)
 declare const retryTransaction: Effect<never, never, Transaction>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L14010)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L13995)
 
 Since v4.0.0

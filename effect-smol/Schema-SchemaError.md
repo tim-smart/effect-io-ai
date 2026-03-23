@@ -34,6 +34,6 @@ try {
 declare class SchemaError { constructor(issue: Issue.Issue) }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L840)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L838)
 
 Since v4.0.0

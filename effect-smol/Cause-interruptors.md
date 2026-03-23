@@ -31,6 +31,6 @@ console.log(Cause.interruptors(cause)) // Set { 1, 2 }
 declare const interruptors: <E>(self: Cause<E>) => ReadonlySet<number>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L964)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L965)
 
 Since v4.0.0

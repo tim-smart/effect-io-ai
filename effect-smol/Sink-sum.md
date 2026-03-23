@@ -11,6 +11,6 @@ Creates a sink which sums up its inputs.
 declare const sum: Sink<number, number, never, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Sink.ts#L1270)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Sink.ts#L1273)
 
 Since v2.0.0

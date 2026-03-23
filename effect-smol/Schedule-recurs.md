@@ -62,6 +62,6 @@ const countingSchedule = Schedule.recurs(3).pipe(
 declare const recurs: (times: number) => Schedule<number>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L2471)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L2483)
 
 Since v2.0.0

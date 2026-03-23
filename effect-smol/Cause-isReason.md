@@ -21,6 +21,6 @@ console.log(Cause.isReason("not a reason")) // false
 declare const isReason: (self: unknown) => self is Reason<unknown>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L177)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L178)
 
 Since v2.0.0

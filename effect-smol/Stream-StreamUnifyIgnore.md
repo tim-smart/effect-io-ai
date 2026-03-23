@@ -18,7 +18,7 @@ type StreamIgnore = Stream.StreamUnifyIgnore
 **Signature**
 
 ```ts
-export interface StreamUnifyIgnore extends Effect.EffectUnifyIgnore {
+export interface StreamUnifyIgnore {
   Effect?: true
 }
 ```

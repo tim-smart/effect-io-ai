@@ -25,6 +25,6 @@ console.log(reason._tag) // "Die"
 declare const makeDieReason: (defect: unknown) => Die
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L590)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L591)
 
 Since v4.0.0

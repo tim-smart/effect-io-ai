@@ -28,6 +28,6 @@ console.log(interrupts[0].fiberId) // 123
 declare const isInterruptReason: <E>(self: Reason<E>) => self is Interrupt
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L279)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L280)
 
 Since v4.0.0

@@ -10,9 +10,9 @@ returning a `Promise` that resolves with the decoded value or rejects with a
 **Signature**
 
 ```ts
-declare const decodePromise: <S extends Top & { readonly DecodingServices: never; }>(schema: S) => (input: S["Encoded"], options?: AST.ParseOptions) => Promise<S["Type"]>
+declare const decodePromise: <S extends Decoder<unknown>>(schema: S) => (input: S["Encoded"], options?: AST.ParseOptions) => Promise<S["Type"]>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L1234)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L1230)
 
 Since v4.0.0

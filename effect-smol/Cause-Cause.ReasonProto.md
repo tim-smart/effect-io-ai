@@ -24,6 +24,6 @@ export interface ReasonProto<Tag extends string> extends Inspectable, Equal {
   }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L317)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L318)
 
 Since v4.0.0

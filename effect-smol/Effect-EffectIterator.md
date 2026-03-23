@@ -32,6 +32,6 @@ export interface EffectIterator<T extends Yieldable<any, any, any, any>> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L399)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L384)
 
 Since v2.0.0

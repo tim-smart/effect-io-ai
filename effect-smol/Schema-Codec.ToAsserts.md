@@ -12,9 +12,7 @@ Produced by `asserts`.
 **Signature**
 
 ```ts
-type ToAsserts<S> = <I>(
-    input: I
-  ) => asserts input is I & S["Type"]
+type ToAsserts<S> = <I>(input: I) => asserts input is I & S["Type"]
 ```
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L672)

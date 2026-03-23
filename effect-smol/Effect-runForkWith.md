@@ -35,6 +35,6 @@ const fiber = Effect.runForkWith(services)(program)
 declare const runForkWith: <R>(services: ServiceMap.ServiceMap<R>) => <A, E>(effect: Effect<A, E, R>, options?: RunOptions | undefined) => Fiber<A, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L8355)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L8340)
 
 Since v4.0.0

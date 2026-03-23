@@ -28,6 +28,6 @@ if (!Result.isFailure(result)) {
 declare const findInterrupt: <E>(self: Cause<E>) => Result.Result<Interrupt, Cause<E>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L938)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L939)
 
 Since v4.0.0

@@ -10,9 +10,9 @@ use `decodeUnknownSync`.
 **Signature**
 
 ```ts
-declare const decodeSync: <S extends Top & { readonly DecodingServices: never; }>(schema: S) => (input: S["Encoded"], options?: AST.ParseOptions) => S["Type"]
+declare const decodeSync: <S extends Decoder<unknown>>(schema: S) => (input: S["Encoded"], options?: AST.ParseOptions) => S["Type"]
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L1274)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L1270)
 
 Since v4.0.0

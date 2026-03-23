@@ -32,6 +32,6 @@ Effect.runPromise(program)
 declare const forEachArray: <In, X, E, R>(f: (input: NonEmptyReadonlyArray<In>) => Effect.Effect<X, E, R>) => Sink<void, In, never, E, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Sink.ts#L1516)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Sink.ts#L1519)
 
 Since v4.0.0

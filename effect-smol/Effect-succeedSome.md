@@ -22,6 +22,6 @@ Effect.runPromise(program).then(console.log)
 declare const succeedSome: <A>(value: A) => Effect<Option<A>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L1227)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L1212)
 
 Since v2.0.0

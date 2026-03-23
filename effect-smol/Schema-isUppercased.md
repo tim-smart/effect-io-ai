@@ -21,6 +21,6 @@ constraint to ensure generated strings contain only uppercase characters.
 declare const isUppercased: (annotations?: Annotations.Filter) => AST.Filter<string>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L5280)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L5276)
 
 Since v4.0.0

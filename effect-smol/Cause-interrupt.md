@@ -27,6 +27,6 @@ console.log(Cause.isInterruptReason(cause.reasons[0])) // true
 declare const interrupt: (fiberId?: number | undefined) => Cause<never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L546)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L547)
 
 Since v2.0.0

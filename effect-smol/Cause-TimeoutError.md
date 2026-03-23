@@ -31,6 +31,6 @@ export interface TimeoutError extends YieldableError {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L1316)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L1317)
 
 Since v4.0.0

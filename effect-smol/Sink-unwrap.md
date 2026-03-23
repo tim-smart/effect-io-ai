@@ -33,6 +33,6 @@ Effect.runPromise(program)
 declare const unwrap: <A, In, L, E, R, R2>(effect: Effect.Effect<Sink<A, In, L, E, R2>, E, R>) => Sink<A, In, L, E, Exclude<R, Scope.Scope> | R2>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Sink.ts#L1585)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Sink.ts#L1588)
 
 Since v2.0.0

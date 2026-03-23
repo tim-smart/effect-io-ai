@@ -44,7 +44,7 @@
     "since": "1.0.0",
     "category": "type ids",
     "signature": "declare const TypeId: \"~@effect/sql-sqlite-react-native/SqliteClient\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/sqlite-react-native/src/SqliteClient.ts#L26"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/sqlite-react-native/src/SqliteClient.ts#L29"
   },
   {
     "_tag": "Constant",
@@ -59,7 +59,7 @@
     "since": "1.0.0",
     "category": "tags",
     "signature": "declare const SqliteClient: ServiceMap.Service<SqliteClient, SqliteClient>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/sqlite-react-native/src/SqliteClient.ts#L50"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/sqlite-react-native/src/SqliteClient.ts#L53"
   },
   {
     "_tag": "Constant",
@@ -74,7 +74,7 @@
     "since": "1.0.0",
     "category": "fiber refs",
     "signature": "declare const AsyncQuery: ServiceMap.Reference<boolean>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/sqlite-react-native/src/SqliteClient.ts#L69"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/sqlite-react-native/src/SqliteClient.ts#L72"
   },
   {
     "_tag": "Function",
@@ -89,7 +89,7 @@
     "since": "1.0.0",
     "category": "fiber refs",
     "signature": "declare const withAsyncQuery: <R, E, A>(effect: Effect.Effect<A, E, R>) => Effect.Effect<A, E, Exclude<R, never>>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/sqlite-react-native/src/SqliteClient.ts#L78"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/sqlite-react-native/src/SqliteClient.ts#L81"
   },
   {
     "_tag": "Function",
@@ -104,7 +104,7 @@
     "since": "1.0.0",
     "category": "constructor",
     "signature": "declare const make: (options: SqliteClientConfig) => Effect.Effect<SqliteClient, never, Scope.Scope | Reactivity.Reactivity>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/sqlite-react-native/src/SqliteClient.ts#L87"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/sqlite-react-native/src/SqliteClient.ts#L90"
   },
   {
     "_tag": "Function",
@@ -119,7 +119,7 @@
     "since": "1.0.0",
     "category": "layers",
     "signature": "declare const layerConfig: (config: Config.Wrap<SqliteClientConfig>) => Layer.Layer<SqliteClient | Client.SqlClient, Config.ConfigError>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/sqlite-react-native/src/SqliteClient.ts#L193"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/sqlite-react-native/src/SqliteClient.ts#L197"
   },
   {
     "_tag": "Function",
@@ -134,7 +134,7 @@
     "since": "1.0.0",
     "category": "layers",
     "signature": "declare const layer: (config: SqliteClientConfig) => Layer.Layer<SqliteClient | Client.SqlClient>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/sqlite-react-native/src/SqliteClient.ts#L211"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/sqlite-react-native/src/SqliteClient.ts#L215"
   },
   {
     "_tag": "Interface",
@@ -149,7 +149,7 @@
     "since": "1.0.0",
     "category": "models",
     "signature": "export interface SqliteClient extends Client.SqlClient {\n  readonly [TypeId]: TypeId\n  readonly config: SqliteClientConfig\n\n  /** Not supported in sqlite */\n  readonly updateValues: never\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/sqlite-react-native/src/SqliteClient.ts#L38"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/sqlite-react-native/src/SqliteClient.ts#L41"
   },
   {
     "_tag": "Interface",
@@ -164,7 +164,7 @@
     "since": "1.0.0",
     "category": "models",
     "signature": "export interface SqliteClientConfig {\n  readonly filename: string\n  readonly location?: string | undefined\n  readonly encryptionKey?: string | undefined\n  readonly spanAttributes?: Record<string, unknown> | undefined\n  readonly transformResultNames?: ((str: string) => string) | undefined\n  readonly transformQueryNames?: ((str: string) => string) | undefined\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/sqlite-react-native/src/SqliteClient.ts#L56"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/sqlite-react-native/src/SqliteClient.ts#L59"
   },
   {
     "_tag": "TypeAlias",
@@ -179,7 +179,7 @@
     "since": "1.0.0",
     "category": "type ids",
     "signature": "type TypeId = \"~@effect/sql-sqlite-react-native/SqliteClient\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/sqlite-react-native/src/SqliteClient.ts#L32"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/sqlite-react-native/src/SqliteClient.ts#L35"
   },
   {
     "_tag": "Constant",

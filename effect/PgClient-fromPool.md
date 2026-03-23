@@ -13,6 +13,6 @@ You control the pool lifecycle via `acquire` (typically `Effect.acquireRelease`)
 declare const fromPool: (options: PgClientFromPoolOptions) => Effect.Effect<PgClient, SqlError, Scope.Scope | Reactivity.Reactivity>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/sql-pg/src/PgClient.ts#L470)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/sql-pg/src/PgClient.ts#L495)
 
 Since v1.0.0

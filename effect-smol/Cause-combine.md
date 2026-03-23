@@ -31,6 +31,6 @@ console.log(combined.reasons.length) // 2
 declare const combine: { <E2>(that: Cause<E2>): <E>(self: Cause<E>) => Cause<E | E2>; <E, E2>(self: Cause<E>, that: Cause<E2>): Cause<E | E2>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L690)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L691)
 
 Since v4.0.0

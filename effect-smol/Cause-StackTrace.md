@@ -15,6 +15,6 @@ available. Retrieve it via
 declare class StackTrace
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L1620)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L1655)
 
 Since v4.0.0

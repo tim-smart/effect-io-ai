@@ -19,6 +19,6 @@ a specific reason rather than the whole cause.
 declare const reasonAnnotations: <E>(self: Reason<E>) => ServiceMap.ServiceMap<never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L1595)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L1630)
 
 Since v4.0.0

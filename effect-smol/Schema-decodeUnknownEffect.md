@@ -14,6 +14,6 @@ the input is already typed as the schema's `Encoded` type.
 declare const decodeUnknownEffect: <S extends Top>(schema: S) => (input: unknown, options?: AST.ParseOptions) => Effect.Effect<S["Type"], SchemaError, S["DecodingServices"]>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L1129)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L1125)
 
 Since v4.0.0

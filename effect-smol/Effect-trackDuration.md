@@ -51,6 +51,6 @@ Effect.runPromise(program).then(() =>
 declare const trackDuration: { <Input, State>(metric: Metric.Metric<Input, State>, f: (duration: Duration.Duration) => Input): <A, E, R>(self: Effect<A, E, R>) => Effect<A, E, R>; <State, E>(metric: Metric.Metric<Duration.Duration, State>): <A, R>(self: Effect<A, E, R>) => Effect<A, E, R>; <A, E, R, Input, State>(self: Effect<A, E, R>, metric: Metric.Metric<Input, State>, f: (duration: Duration.Duration) => Input): Effect<A, E, R>; <A, E, R, State>(self: Effect<A, E, R>, metric: Metric.Metric<Duration.Duration, State>): Effect<A, E, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L13714)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L13699)
 
 Since v4.0.0

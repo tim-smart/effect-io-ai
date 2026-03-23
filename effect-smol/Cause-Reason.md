@@ -38,6 +38,6 @@ if (Cause.isFailReason(reason)) {
 type Reason<E> = Fail<E> | Die | Interrupt
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L210)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L211)
 
 Since v4.0.0

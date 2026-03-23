@@ -18,6 +18,6 @@ Represents the absence of failure. Combining any cause with `empty` via
 declare const empty: Cause<never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L480)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L481)
 
 Since v2.0.0

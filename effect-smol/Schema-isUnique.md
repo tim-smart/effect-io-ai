@@ -22,6 +22,6 @@ contain only unique items.
 declare const isUnique: <T>(annotations?: Annotations.Filter) => AST.Filter<ReadonlyArray<T>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L6758)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L6754)
 
 Since v4.0.0

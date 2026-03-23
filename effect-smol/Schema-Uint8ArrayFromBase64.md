@@ -11,6 +11,6 @@ Schema type for `Uint8ArrayFromBase64`.
 export interface Uint8ArrayFromBase64 extends decodeTo<Uint8Array, String> {}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L9361)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L9357)
 
 Since v4.0.0

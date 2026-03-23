@@ -36,6 +36,6 @@ const unwrapped = program.pipe(Effect.unwrapReason("AiError"))
 declare const unwrapReason: { <K extends TagsWithReason<E>, E>(errorTag: K): <A, R>(self: Effect<A, E, R>) => Effect<A, ExcludeTag<E, K> | ReasonOf<ExtractTag<E, K>>, R>; <A, E, R, K extends TagsWithReason<E>>(self: Effect<A, E, R>, errorTag: K): Effect<A, ExcludeTag<E, K> | ReasonOf<ExtractTag<E, K>>, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L3160)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L3145)
 
 Since v4.0.0

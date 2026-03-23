@@ -33,6 +33,6 @@ export interface NoSuchElementError extends YieldableError {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L1144)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L1145)
 
 Since v4.0.0

@@ -32,6 +32,6 @@ This API replaces the following from Effect 3.x:
 declare const catchNoSuchElement: <A, E, R>(self: Effect<A, E, R>) => Effect<Option<A>, Exclude<E, Cause.NoSuchElementError>, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L3407)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L3392)
 
 Since v2.0.0

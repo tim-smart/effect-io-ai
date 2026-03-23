@@ -68,6 +68,6 @@ throwing an error.
 declare const runSync: <A, E>(effect: Effect<A, E>) => A
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L8665)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L8650)
 
 Since v2.0.0

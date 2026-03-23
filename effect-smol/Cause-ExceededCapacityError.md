@@ -31,6 +31,6 @@ export interface ExceededCapacityError extends YieldableError {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L1452)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L1453)
 
 Since v4.0.0

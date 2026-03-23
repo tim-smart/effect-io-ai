@@ -12,6 +12,6 @@ the provided `initial` state while the specified `predicate` returns `true`.
 declare const reduceWhile: <S, In>(initial: LazyArg<S>, predicate: Predicate<S>, f: (s: S, input: In) => S) => Sink<S, In, In>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Sink.ts#L1028)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Sink.ts#L1031)
 
 Since v2.0.0

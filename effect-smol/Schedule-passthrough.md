@@ -34,6 +34,6 @@ const program = Effect.gen(function*() {
 declare const passthrough: <Output, Input, Error, Env>(self: Schedule<Output, Input, Error, Env>) => Schedule<Input, Input, Error, Env>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L2405)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L2417)
 
 Since v2.0.0

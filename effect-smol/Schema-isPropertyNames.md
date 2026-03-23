@@ -16,6 +16,6 @@ This check corresponds to the `propertyNames` constraint in JSON Schema.
 declare const isPropertyNames: (keySchema: Top, annotations?: Annotations.Filter) => AST.Filter<object>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L6710)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L6706)
 
 Since v4.0.0

@@ -24,6 +24,6 @@ const schema = Schema.Union([
 declare const fieldsAssign: <const NewFields extends Struct.Fields>(fields: NewFields) => fieldsAssign<NewFields>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L2511)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L2507)
 
 Since v4.0.0

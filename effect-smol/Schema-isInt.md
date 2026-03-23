@@ -21,6 +21,6 @@ constraint to ensure generated numbers are integers.
 declare const isInt: (annotations?: Annotations.Filter) => AST.Filter<number>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L5827)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L5823)
 
 Since v4.0.0

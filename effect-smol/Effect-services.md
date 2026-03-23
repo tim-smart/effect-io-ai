@@ -44,6 +44,6 @@ const provided = Effect.provideServices(program, serviceMap)
 declare const services: <R = never>() => Effect<ServiceMap.ServiceMap<R>, never, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L5568)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L5553)
 
 Since v2.0.0

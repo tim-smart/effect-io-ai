@@ -12,6 +12,6 @@ starting from the specified `initial` state.
 declare const reduceEffect: <S, In, E, R>(initial: LazyArg<S>, f: (s: S, input: In) => Effect.Effect<S, E, R>) => Sink<S, In, never, E, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Sink.ts#L1208)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Sink.ts#L1211)
 
 Since v2.0.0

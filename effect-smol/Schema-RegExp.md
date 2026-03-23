@@ -11,6 +11,6 @@ Schema type for `RegExp`.
 export interface RegExp extends instanceOf<globalThis.RegExp> {}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L8322)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L8318)
 
 Since v4.0.0

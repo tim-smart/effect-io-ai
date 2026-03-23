@@ -31,6 +31,6 @@ if (!Result.isFailure(result)) {
 declare const findFail: <E>(self: Cause<E>) => Result.Result<Fail<E>, Cause<never>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L769)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L770)
 
 Since v4.0.0

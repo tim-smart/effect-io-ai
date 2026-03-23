@@ -31,9 +31,9 @@ if (isString(value)) {
 **Signature**
 
 ```ts
-declare const is: <S extends Top & { readonly DecodingServices: never; }>(schema: S) => <I>(input: I) => input is I & S["Type"]
+declare const is: <T>(schema: Schema<T>) => <I>(input: I) => input is I & T
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L1080)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L1076)
 
 Since v4.0.0

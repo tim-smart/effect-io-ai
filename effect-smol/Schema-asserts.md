@@ -38,9 +38,9 @@ try {
 **Signature**
 
 ```ts
-declare const asserts: <S extends Top & { readonly DecodingServices: never; }>(schema: S) => <I>(input: I) => asserts input is I & S["Type"]
+declare const asserts: <T>(schema: Schema<T>) => <I>(input: I) => asserts input is I & T
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L1118)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L1114)
 
 Since v4.0.0

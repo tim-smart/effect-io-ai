@@ -17,6 +17,6 @@ export interface Boolean extends Bottom<boolean, boolean, never, never, AST.Bool
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L2145)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L2141)
 
 Since v4.0.0

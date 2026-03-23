@@ -63,9 +63,9 @@ console.log(invalidResult) // { issues: [{ path: ["name"], message: "..." }, { p
 **Signature**
 
 ```ts
-declare const toStandardSchemaV1: <S extends Top & { readonly DecodingServices: never; }>(self: S, options?: { readonly leafHook?: Issue.LeafHook | undefined; readonly checkHook?: Issue.CheckHook | undefined; readonly parseOptions?: AST.ParseOptions | undefined; }) => StandardSchemaV1<S["Encoded"], S["Type"]> & S
+declare const toStandardSchemaV1: <S extends Decoder<unknown>>(self: S, options?: { readonly leafHook?: Issue.LeafHook | undefined; readonly checkHook?: Issue.CheckHook | undefined; readonly parseOptions?: AST.ParseOptions | undefined; }) => StandardSchemaV1<S["Encoded"], S["Type"]> & S
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L946)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L944)
 
 Since v4.0.0

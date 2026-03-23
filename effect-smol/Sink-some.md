@@ -11,6 +11,6 @@ A sink that returns whether an element satisfies the specified predicate.
 declare const some: <In>(predicate: Predicate<In>) => Sink<boolean, In, In>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Sink.ts#L719)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Sink.ts#L722)
 
 Since v2.0.0

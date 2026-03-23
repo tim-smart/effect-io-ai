@@ -21,6 +21,6 @@ constraint to ensure generated strings match the BigInt string pattern.
 declare const isStringBigInt: (annotations?: Annotations.Filter) => AST.Filter<string>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L4989)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L4985)
 
 Since v4.0.0
