@@ -3,7 +3,7 @@ Module: `HttpApiClient`<br />
 
 ## HttpApiClient.urlBuilder
 
-Creates a type-safe URL builder keyed by `${method} ${path}`.
+Creates a type-safe URL builder that mirrors `HttpApiClient.make`.
 
 **Example**
 
@@ -19,11 +19,11 @@ const Api = HttpApi.make("Api").add(
   )
 )
 
-const buildUrl = HttpApiClient.urlBuilder<typeof Api>({
+const buildUrl = HttpApiClient.urlBuilder(Api, {
   baseUrl: "https://api.example.com"
 })
 
-buildUrl("users", "GET /users/:id", {
+buildUrl.users.getUser({
   params: { id: "123" }
 })
 //=> "https://api.example.com/users/123"
@@ -32,9 +32,9 @@ buildUrl("users", "GET /users/:id", {
 **Signature**
 
 ```ts
-declare const urlBuilder: <Api extends HttpApi.Any>(options?: { readonly baseUrl?: URL | string | undefined; }) => UrlBuilder<Api>
+declare const urlBuilder: <Api extends HttpApi.AnyWithProps>(api: Api, options?: { readonly baseUrl?: URL | string | undefined; }) => UrlBuilder<Api>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiClient.ts#L507)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiClient.ts#L529)
 
 Since v4.0.0

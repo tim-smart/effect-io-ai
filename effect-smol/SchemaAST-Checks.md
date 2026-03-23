@@ -21,6 +21,6 @@ refinements like `minLength`, `pattern`, `int`, etc.
 type Checks = readonly [Check<any>, ...Array<Check<any>>]
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L497)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L503)
 
 Since v4.0.0

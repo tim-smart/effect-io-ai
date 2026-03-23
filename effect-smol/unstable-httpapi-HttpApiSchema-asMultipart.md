@@ -15,6 +15,6 @@ Marks a schema as a multipart payload.
 declare const asMultipart: (options?: Multipart_.withLimits.Options) => <S extends Schema.Top>(self: S) => asMultipart<S>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiSchema.ts#L202)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiSchema.ts#L203)
 
 Since v4.0.0

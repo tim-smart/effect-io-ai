@@ -27,6 +27,6 @@ console.log(typeof sample.name) // "string"
 declare const toArbitrary: <S extends Top>(schema: S) => FastCheck.Arbitrary<S["Type"]>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L10284)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L10280)
 
 Since v4.0.0

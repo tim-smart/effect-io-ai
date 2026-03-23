@@ -13,6 +13,6 @@ The schema encoded side must be a `Uint8Array`.
 declare const asUint8Array: (options?: { readonly contentType?: string; }) => <S extends Schema.Top & { readonly Encoded: Uint8Array; }>(self: S) => S["~rebuild.out"]
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiSchema.ts#L329)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiSchema.ts#L330)
 
 Since v4.0.0

@@ -18,6 +18,6 @@ The `decode` function is used to decode the response body on the client side int
 declare const asNoContent: <S extends Schema.Top>(options: { readonly decode: LazyArg<S["Type"]>; }) => (self: S) => asNoContent<S>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiSchema.ts#L163)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiSchema.ts#L164)
 
 Since v4.0.0

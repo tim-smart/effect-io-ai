@@ -12,6 +12,6 @@ This is used to represent empty responses with the status code 202.
 declare const Accepted: Accepted
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiSchema.ts#L145)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiSchema.ts#L146)
 
 Since v4.0.0

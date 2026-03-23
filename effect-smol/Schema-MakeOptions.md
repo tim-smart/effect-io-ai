@@ -6,7 +6,7 @@ Module: `Schema`<br />
 Options for `makeUnsafe` and Class constructors.
 
 When to use:
-- Pass `disableValidation: true` to skip validation when you trust the data.
+- Pass `disableChecks: true` to skip validation when you trust the data.
 - Pass `parseOptions` to control error reporting behavior.
 
 **See**
@@ -24,7 +24,7 @@ export interface MakeOptions {
   /**
    * Whether to disable validation for the schema.
    */
-  readonly disableValidation?: boolean | undefined
+  readonly disableChecks?: boolean | undefined
 }
 ```
 

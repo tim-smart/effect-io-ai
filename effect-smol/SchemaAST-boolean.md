@@ -11,6 +11,6 @@ Singleton `Boolean` AST instance.
 declare const boolean: Boolean
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L1227)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L1233)
 
 Since v4.0.0

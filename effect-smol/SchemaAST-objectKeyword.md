@@ -11,6 +11,6 @@ Singleton `ObjectKeyword` AST instance.
 declare const objectKeyword: ObjectKeyword
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L836)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L842)
 
 Since v4.0.0

@@ -17,6 +17,6 @@ Returns the `description` annotation from the AST node, if set.
 declare const resolveDescription: (ast: AST) => string | undefined
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L3368)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L3374)
 
 Since v4.0.0
