@@ -20,7 +20,7 @@ const recurringSchedule = Schedule.recurs(5)
 
 // These can be combined and transformed as needed
 const complexSchedule = simpleSchedule.pipe(
-  Schedule.compose(Schedule.recurs(3))
+  Schedule.both(Schedule.recurs(3))
 )
 ```
 

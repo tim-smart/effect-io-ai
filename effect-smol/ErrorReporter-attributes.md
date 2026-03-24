@@ -29,6 +29,6 @@ class PaymentError extends Data.TaggedError("PaymentError")<{
 type attributes = "~effect/ErrorReporter/attributes"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ErrorReporter.ts#L419)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ErrorReporter.ts#L420)
 
 Since v4.0.0

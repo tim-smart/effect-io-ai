@@ -44,6 +44,6 @@ const program = Effect.gen(function*() {
 declare const sizeUnsafe: <A, E>(self: Dequeue<A, E>) => number
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Queue.ts#L1454)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Queue.ts#L1457)
 
 Since v4.0.0

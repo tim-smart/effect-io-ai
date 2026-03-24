@@ -29,7 +29,7 @@ type Merged = Struct.Assign<A, B>
 **Signature**
 
 ```ts
-type Assign<T, U> = keyof T & keyof U extends never ? T & U : Omit<T, keyof T & keyof U> & U
+type { [K in keyof (keyof T & keyof U extends never ? T & U : Omit<T, keyof T & keyof U> & U)]: (keyof T & keyof U extends never ? T & U : Omit<T, keyof T & keyof U> & U)[K]; } = Simplify<keyof T & keyof U extends never ? T & U : Omit<T, keyof T & keyof U> & U>
 ```
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Struct.ts#L160)

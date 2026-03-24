@@ -39,7 +39,7 @@ const program = Effect.gen(function*() {
 
 // Combining recurs with other schedules for sophisticated retry logic
 const complexRetry = Schedule.exponential("100 millis").pipe(
-  Schedule.compose(Schedule.recurs(3)) // At most 3 attempts
+  Schedule.both(Schedule.recurs(3)) // At most 3 attempts
 )
 
 // Repeat an effect exactly 10 times
@@ -62,6 +62,6 @@ const countingSchedule = Schedule.recurs(3).pipe(
 declare const recurs: (times: number) => Schedule<number>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L2483)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L2404)
 
 Since v2.0.0

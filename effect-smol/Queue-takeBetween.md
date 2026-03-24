@@ -39,6 +39,6 @@ const program = Effect.gen(function*() {
 declare const takeBetween: <A, E>(self: Dequeue<A, E>, min: number, max: number) => Effect<Array<A>, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Queue.ts#L1147)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Queue.ts#L1150)
 
 Since v4.0.0

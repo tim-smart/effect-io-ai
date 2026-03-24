@@ -37,6 +37,6 @@ console.log(PersonOrder({ name: "Alice", age: 30 }, { name: "Bob", age: 25 }))
 declare const makeOrder: <const R extends { readonly [x: string]: order.Order<any>; }>(fields: R) => order.Order<{ [K in keyof R]: [R[K]] extends [order.Order<infer A>] ? A : never; }>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Struct.ts#L564)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Struct.ts#L568)
 
 Since v2.0.0

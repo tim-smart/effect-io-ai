@@ -38,6 +38,6 @@ console.log(result) // { x: [1], y: 2, z: [3] }
 declare const mapOmit: { <S extends object, const Keys extends ReadonlyArray<keyof S>, L extends Lambda>(keys: Keys, lambda: L): (self: S) => { [K in keyof S]: K extends Keys[number] ? S[K] : Apply<L, S[K]>; }; <S extends object, const Keys extends ReadonlyArray<keyof S>, L extends Lambda>(self: S, keys: Keys, lambda: L): { [K in keyof S]: K extends Keys[number] ? S[K] : Apply<L, S[K]>; }; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Struct.ts#L790)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Struct.ts#L794)
 
 Since v4.0.0

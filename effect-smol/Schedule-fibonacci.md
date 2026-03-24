@@ -34,7 +34,7 @@ const retryWithFib = Effect.gen(function*() {
       return `Success on attempt ${attempt}`
     }),
     Schedule.fibonacci("50 millis").pipe(
-      Schedule.compose(Schedule.recurs(6)), // Maximum 6 retries
+      Schedule.both(Schedule.recurs(6)), // Maximum 6 retries
       Schedule.tapOutput((delay) => Console.log(`Next retry in ${delay}`))
     )
   )
@@ -72,6 +72,6 @@ const compareSchedules = Effect.gen(function*() {
 declare const fibonacci: (one: Duration.Input) => Schedule<Duration.Duration>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L2118)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L2039)
 
 Since v2.0.0

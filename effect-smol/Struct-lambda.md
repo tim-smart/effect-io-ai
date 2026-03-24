@@ -37,6 +37,6 @@ console.log(result) // { x: [1], y: ["hello"] }
 declare const lambda: <L extends (a: any) => any>(f: (a: Parameters<L>[0]) => ReturnType<L>) => L
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Struct.ts#L655)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Struct.ts#L659)
 
 Since v4.0.0

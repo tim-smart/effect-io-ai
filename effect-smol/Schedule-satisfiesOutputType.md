@@ -26,6 +26,6 @@ const stringSchedule = Schedule.exponential("100 millis").pipe(
 declare const satisfiesOutputType: <T>() => <Output extends T, Error = never, Input = unknown, Env = never>(self: Schedule<Output, Input, Error, Env>) => Schedule<Output, Input, Error, Env>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L3346)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L3267)
 
 Since v2.0.0

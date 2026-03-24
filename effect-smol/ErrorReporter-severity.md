@@ -25,6 +25,6 @@ class DeprecationWarning extends Data.TaggedError("DeprecationWarning")<{}> {
 type severity = "~effect/ErrorReporter/severity"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ErrorReporter.ts#L359)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ErrorReporter.ts#L360)
 
 Since v4.0.0

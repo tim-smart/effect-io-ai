@@ -28,6 +28,6 @@ const program = Effect.gen(function*() {
 declare const isFull: <A, E>(self: Dequeue<A, E>) => Effect<boolean>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Queue.ts#L1414)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Queue.ts#L1417)
 
 Since v4.0.0

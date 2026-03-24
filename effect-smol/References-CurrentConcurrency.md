@@ -44,6 +44,6 @@ const limitConcurrency = Effect.gen(function*() {
 declare const CurrentConcurrency: ServiceMap.Reference<number | "unbounded">
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/References.ts#L91)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/References.ts#L93)
 
 Since v4.0.0

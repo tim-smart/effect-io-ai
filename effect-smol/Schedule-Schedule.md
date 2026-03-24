@@ -12,7 +12,7 @@ import { Console, Effect, Schedule } from "effect"
 
 // Basic retry schedule - retry up to 3 times with exponential backoff
 const retrySchedule = Schedule.exponential("100 millis").pipe(
-  Schedule.compose(Schedule.recurs(3))
+  Schedule.both(Schedule.recurs(3))
 )
 
 // Basic repeat schedule - repeat every 30 seconds forever

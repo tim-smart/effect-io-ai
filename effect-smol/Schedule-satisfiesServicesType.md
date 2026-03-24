@@ -36,6 +36,6 @@ const multiServiceSchedule = Schedule.exponential("100 millis").pipe(
 declare const satisfiesServicesType: <T>() => <Env extends T, Output = never, Input = unknown, Error = never>(self: Schedule<Output, Input, Error, Env>) => Schedule<Output, Input, Error, Env>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L3412)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L3333)
 
 Since v2.0.0

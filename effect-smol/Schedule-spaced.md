@@ -34,7 +34,7 @@ const limitedTask = Effect.gen(function*() {
 
 // Simple spaced schedule with limited repetitions
 const limitedSpaced = Schedule.spaced("100 millis").pipe(
-  Schedule.compose(Schedule.recurs(5)) // at most 5 times
+  Schedule.both(Schedule.recurs(5)) // at most 5 times
 )
 
 const program = Effect.gen(function*() {
@@ -55,6 +55,6 @@ const program = Effect.gen(function*() {
 declare const spaced: (duration: Duration.Input) => Schedule<number>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L2686)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L2607)
 
 Since v2.0.0

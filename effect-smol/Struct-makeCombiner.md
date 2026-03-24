@@ -37,6 +37,6 @@ console.log(result) // { n: 3, s: "hello world" }
 declare const makeCombiner: <A>(combiners: { readonly [K in keyof A]: Combiner.Combiner<A[K]>; }, options?: { readonly omitKeyWhen?: ((a: A[keyof A]) => boolean) | undefined; }) => Combiner.Combiner<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Struct.ts#L869)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Struct.ts#L873)
 
 Since v4.0.0

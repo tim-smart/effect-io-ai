@@ -39,6 +39,6 @@ console.log(PersonEquivalence({ name: "Alice", age: 30 }, { name: "Bob", age: 30
 declare const makeEquivalence: <R extends Record<string, Equivalence.Equivalence<any>>>(fields: R) => Equivalence.Equivalence<{ readonly [K in keyof R]: [R[K]] extends [Equivalence.Equivalence<infer A>] ? A : never; }>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Struct.ts#L532)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Struct.ts#L536)
 
 Since v2.0.0

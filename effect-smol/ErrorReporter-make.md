@@ -29,6 +29,6 @@ const consoleReporter = ErrorReporter.make(
 declare const make: (report: (options: { readonly cause: Cause.Cause<unknown>; readonly error: Error; readonly attributes: ReadonlyRecord<string, unknown>; readonly severity: Severity; readonly fiber: Fiber.Fiber<unknown, unknown>; readonly timestamp: bigint; }) => void) => ErrorReporter
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ErrorReporter.ts#L118)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ErrorReporter.ts#L119)
 
 Since v4.0.0
