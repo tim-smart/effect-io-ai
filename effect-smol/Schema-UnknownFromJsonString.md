@@ -11,6 +11,6 @@ Schema type for `UnknownFromJsonString`.
 export interface UnknownFromJsonString extends fromJsonString<Unknown> {}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L8702)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L8710)
 
 Since v4.0.0

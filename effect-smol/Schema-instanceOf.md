@@ -17,6 +17,6 @@ export interface instanceOf<T, Iso = T> extends declare<T, Iso> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L4801)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L4809)
 
 Since v4.0.0

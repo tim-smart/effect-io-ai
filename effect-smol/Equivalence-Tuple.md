@@ -58,7 +58,7 @@ console.log(
 ) // true
 ```
 
-See also: `Array`, `Struct`
+See also: `Array_`, `Struct`
 
 **Signature**
 

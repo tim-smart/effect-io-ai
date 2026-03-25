@@ -17,6 +17,6 @@ type TaggedStruct<Tag, Fields> = Struct<
 >
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L4485)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L4493)
 
 Since v4.0.0

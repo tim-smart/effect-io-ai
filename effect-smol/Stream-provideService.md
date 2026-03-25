@@ -42,6 +42,6 @@ Effect.runPromise(program)
 declare const provideService: { <I, S>(key: ServiceMap.Key<I, S>, service: NoInfer<S>): <A, E, R>(self: Stream<A, E, R>) => Stream<A, E, Exclude<R, I>>; <A, E, R, I, S>(self: Stream<A, E, R>, key: ServiceMap.Key<I, S>, service: NoInfer<S>): Stream<A, E, Exclude<R, I>>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L9284)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L9356)
 
 Since v4.0.0

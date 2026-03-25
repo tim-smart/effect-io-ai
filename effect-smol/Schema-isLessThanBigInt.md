@@ -17,6 +17,6 @@ specified value.
 declare const isLessThanBigInt: (exclusiveMaximum: bigint, annotations?: Annotations.Filter) => AST.Filter<bigint>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L6159)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L6167)
 
 Since v4.0.0

@@ -52,7 +52,7 @@ console.log(numberRecordEq(scores1, scores2)) // true
 console.log(numberRecordEq(scores1, scores3)) // false
 ```
 
-See also: `Struct`, `Array`
+See also: `Struct`, `Array_`
 
 **Signature**
 
@@ -60,6 +60,6 @@ See also: `Struct`, `Array`
 declare const Record: <A>(value: Equivalence<A>) => Equivalence<Record<PropertyKey, A>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Equivalence.ts#L782)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Equivalence.ts#L788)
 
 Since v4.0.0

@@ -22,6 +22,6 @@ const readableStream = Stream.toReadableStreamWith(stream, ServiceMap.empty())
 declare const toReadableStreamWith: (<A, XR>(services: ServiceMap.ServiceMap<XR>, options?: { readonly strategy?: QueuingStrategy<A> | undefined; }) => <E, R extends XR>(self: Stream<A, E, R>) => ReadableStream<A>) & (<A, E, XR, R extends XR>(self: Stream<A, E, R>, services: ServiceMap.ServiceMap<XR>, options?: { readonly strategy?: QueuingStrategy<A> | undefined; }) => ReadableStream<A>)
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L10226)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L10298)
 
 Since v2.0.0

@@ -41,6 +41,6 @@ const program = stream.pipe(Stream.ignore({ log: "Error" }))
 declare const ignore: <Arg extends Stream<any, any, any> | { readonly log?: boolean | Severity | undefined; } | undefined>(selfOrOptions: Arg, options?: { readonly log?: boolean | Severity | undefined; } | undefined) => [Arg] extends [Stream<infer A, infer _E, infer R>] ? Stream<A, never, R> : <A, E, R>(self: Stream<A, E, R>) => Stream<A, never, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L5540)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L5612)
 
 Since v4.0.0

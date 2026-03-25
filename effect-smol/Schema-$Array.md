@@ -3,7 +3,7 @@ Module: `Schema`<br />
 
 ## Schema.$Array
 
-Schema type for a `ReadonlyArray`. Produced by `Array`.
+Schema type for a `ReadonlyArray`. Produced by `ArraySchema`.
 
 **Signature**
 

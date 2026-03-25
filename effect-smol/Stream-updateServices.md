@@ -45,6 +45,6 @@ Effect.runPromise(
 declare const updateServices: { <R, R2>(f: (services: ServiceMap.ServiceMap<R2>) => ServiceMap.ServiceMap<R>): <A, E>(self: Stream<A, E, R>) => Stream<A, E, R2>; <A, E, R, R2>(self: Stream<A, E, R>, f: (services: ServiceMap.ServiceMap<R2>) => ServiceMap.ServiceMap<R>): Stream<A, E, R2>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L9397)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L9469)
 
 Since v2.0.0

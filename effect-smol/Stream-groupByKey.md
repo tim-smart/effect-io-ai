@@ -35,6 +35,6 @@ Effect.runPromise(program)
 declare const groupByKey: { <A, K>(f: (a: NoInfer<A>) => K, options?: { readonly bufferSize?: number | undefined; readonly idleTimeToLive?: Duration.Input | undefined; }): <E, R>(self: Stream<A, E, R>) => Stream<readonly [K, Stream<A>], E, R>; <A, E, R, K>(self: Stream<A, E, R>, f: (a: NoInfer<A>) => K, options?: { readonly bufferSize?: number | undefined; readonly idleTimeToLive?: Duration.Input | undefined; }): Stream<readonly [K, Stream<A>], E, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L7689)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L7761)
 
 Since v2.0.0

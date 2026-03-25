@@ -33,6 +33,6 @@ const program = Effect.gen(function*() {
 declare const partition: { <A, Pass, Fail>(filter: Filter.Filter<NoInfer<A>, Pass, Fail>, options?: { readonly bufferSize?: number | undefined; }): <E, R>(self: Stream<A, E, R>) => Effect.Effect<[excluded: Stream<Fail, E>, satisfying: Stream<Pass, E>], never, R | Scope.Scope>; <A, E, R, Pass, Fail>(self: Stream<A, E, R>, filter: Filter.Filter<NoInfer<A>, Pass, Fail>, options?: { readonly bufferSize?: number | undefined; }): Effect.Effect<[excluded: Stream<Fail, E>, satisfying: Stream<Pass, E>], never, R | Scope.Scope>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L4245)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L4317)
 
 Since v4.0.0

@@ -11,6 +11,6 @@ Schema type for an array with unique elements. Produced by `UniqueArray`.
 export interface UniqueArray<S extends Top> extends $Array<S> {}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L3320)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L3328)
 
 Since v4.0.0

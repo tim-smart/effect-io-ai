@@ -11,6 +11,6 @@ Schema type for `TimeZoneOffset`.
 export interface TimeZoneOffset extends declare<DateTime.TimeZone.Offset> {}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L9569)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L9577)
 
 Since v4.0.0

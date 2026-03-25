@@ -56,6 +56,6 @@ See also: `Number`, `mapInput`, `strictEqual`
 declare const Date: Equivalence<Date>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Equivalence.ts#L897)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Equivalence.ts#L903)
 
 Since v4.0.0
