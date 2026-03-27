@@ -25,6 +25,6 @@ export interface GenerateObjectOptions<
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/LanguageModel.ts#L255)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/LanguageModel.ts#L311)
 
 Since v4.0.0

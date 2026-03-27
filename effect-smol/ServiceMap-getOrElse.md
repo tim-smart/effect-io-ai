@@ -38,6 +38,6 @@ assert.deepStrictEqual(database, { query: () => "fallback" })
 declare const getOrElse: { <S, I, B>(key: Key<I, S>, orElse: LazyArg<B>): <Services>(self: ServiceMap<Services>) => S | B; <Services, S, I, B>(self: ServiceMap<Services>, key: Key<I, S>, orElse: LazyArg<B>): S | B; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ServiceMap.ts#L627)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ServiceMap.ts#L612)
 
 Since v4.0.0

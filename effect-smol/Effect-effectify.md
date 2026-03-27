@@ -50,6 +50,6 @@ Effect.runPromiseExit(program).then(console.log)
 declare const effectify: { <F extends (...args: Array<any>) => any>(fn: F): Effectify.Effectify<F, Effectify.EffectifyError<F>>; <F extends (...args: Array<any>) => any, E>(fn: F, onError: (error: Effectify.EffectifyError<F>, args: Parameters<F>) => E): Effectify.Effectify<F, E>; <F extends (...args: Array<any>) => any, E, E2>(fn: F, onError: (error: Effectify.EffectifyError<F>, args: Parameters<F>) => E, onSyncError: (error: unknown, args: Parameters<F>) => E2): Effectify.Effectify<F, E | E2>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L14316)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L14317)
 
 Since v4.0.0

@@ -18,7 +18,7 @@ export interface GenerateTextOptions<Tools extends Record<string, Tool.Any>> {
    * A toolkit containing both the tools and the tool call handler to use to
    * augment text generation.
    */
-  readonly toolkit?: ToolkitOption<Tools> | undefined
+  readonly toolkit?: ToolkitInput<Tools> | undefined
 
   /**
    * The tool choice mode for the language model.
@@ -59,6 +59,6 @@ export interface GenerateTextOptions<Tools extends Record<string, Tool.Any>> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/LanguageModel.ts#L199)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/LanguageModel.ts#L251)
 
 Since v4.0.0

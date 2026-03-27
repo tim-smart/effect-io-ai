@@ -20,6 +20,6 @@ assert.strictEqual(ServiceMap.isKey(ServiceMap.Service("Service")), true)
 declare const isKey: (u: unknown) => u is Key<any, any>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ServiceMap.ts#L461)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ServiceMap.ts#L446)
 
 Since v4.0.0

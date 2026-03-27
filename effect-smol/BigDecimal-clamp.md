@@ -40,6 +40,6 @@ assert.deepStrictEqual(
 declare const clamp: { (options: { minimum: BigDecimal; maximum: BigDecimal; }): (self: BigDecimal) => BigDecimal; (self: BigDecimal, options: { minimum: BigDecimal; maximum: BigDecimal; }): BigDecimal; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigDecimal.ts#L739)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigDecimal.ts#L793)
 
 Since v2.0.0

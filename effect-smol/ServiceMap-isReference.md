@@ -25,6 +25,6 @@ assert.strictEqual(ServiceMap.isReference(ServiceMap.Service("Key")), false)
 declare const isReference: (u: unknown) => u is Reference<any>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ServiceMap.ts#L482)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ServiceMap.ts#L467)
 
 Since v4.0.0

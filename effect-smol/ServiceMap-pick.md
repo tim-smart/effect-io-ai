@@ -34,6 +34,6 @@ assert.deepStrictEqual(ServiceMap.getOption(Services, Timeout), Option.none())
 declare const pick: <S extends ReadonlyArray<Key<any, any>>>(...services: S) => <Services>(self: ServiceMap<Services>) => ServiceMap<Services & Service.Identifier<S[number]>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ServiceMap.ts#L924)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ServiceMap.ts#L909)
 
 Since v4.0.0

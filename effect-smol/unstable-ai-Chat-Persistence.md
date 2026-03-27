@@ -11,6 +11,6 @@ The context tag for chat persistence.
 declare class Persistence
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chat.ts#L591)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chat.ts#L652)
 
 Since v4.0.0

@@ -31,6 +31,6 @@ assert.throws(() => ServiceMap.getUnsafe(Services, Timeout))
 declare const getUnsafe: { <S, I>(service: Key<I, S>): <Services>(self: ServiceMap<Services>) => S; <Services, S, I>(self: ServiceMap<Services>, services: Key<I, S>): S; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ServiceMap.ts#L677)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ServiceMap.ts#L662)
 
 Since v4.0.0

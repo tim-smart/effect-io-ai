@@ -31,6 +31,6 @@ assert.deepStrictEqual(ServiceMap.getOption(Services, Timeout), Option.none())
 declare const getOption: { <S, I>(service: Key<I, S>): <Services>(self: ServiceMap<Services>) => Option.Option<S>; <Services, S, I>(self: ServiceMap<Services>, service: Key<I, S>): Option.Option<S>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ServiceMap.ts#L805)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ServiceMap.ts#L790)
 
 Since v4.0.0

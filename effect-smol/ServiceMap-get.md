@@ -28,6 +28,6 @@ assert.deepStrictEqual(ServiceMap.get(Services, Timeout), { TIMEOUT: 5000 })
 declare const get: { <Services, I extends Services, S>(service: Key<I, S>): (self: ServiceMap<Services>) => S; <Services, I extends Services, S>(self: ServiceMap<Services>, service: Key<I, S>): S; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ServiceMap.ts#L716)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ServiceMap.ts#L701)
 
 Since v4.0.0

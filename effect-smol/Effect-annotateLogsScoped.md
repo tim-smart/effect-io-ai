@@ -31,6 +31,6 @@ Effect.runPromise(program)
 declare const annotateLogsScoped: { (key: string, value: unknown): Effect<void, never, Scope>; (values: Record<string, unknown>): Effect<void, never, Scope>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L13299)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L13300)
 
 Since v4.0.0

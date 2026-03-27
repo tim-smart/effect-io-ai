@@ -27,9 +27,9 @@ const program = Effect.gen(function*() {
 **Signature**
 
 ```ts
-declare const generateText: <Options extends NoExcessProperties<GenerateTextOptions<any>, Options>>(options: Options & GenerateTextOptions<ExtractTools<Options>>) => Effect.Effect<GenerateTextResponse<ExtractTools<Options>>, ExtractError<Options>, LanguageModel | ExtractServices<Options>>
+declare const generateText: { <Options extends NoExcessProperties<GenerateTextOptionsWithoutToolkit, Options>>(options: Options & GenerateTextOptionsWithoutToolkit): Effect.Effect<GenerateTextResponse<{}>, ExtractError<Options>, LanguageModel | ExtractServices<Options>>; <Tools extends Record<string, Tool.Any>, Options extends NoExcessProperties<GenerateTextOptions<Tools> & { readonly toolkit: ToolkitInput<Tools>; }, Options>>(options: Options & GenerateTextOptions<Tools> & { readonly toolkit: ToolkitInput<Tools>; }): Effect.Effect<GenerateTextResponse<Tools>, ExtractError<Options>, LanguageModel | ExtractServices<Options>>; <Options extends { readonly toolkit: ToolkitOption<any>; } & NoExcessProperties<GenerateTextOptions<any>, Options>>(options: Options & GenerateTextOptions<ExtractTools<Options>> & { readonly toolkit: Options["toolkit"]; }): Effect.Effect<GenerateTextResponse<ExtractTools<Options>>, ExtractError<Options>, ExtractServices<Options> | LanguageModel>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/LanguageModel.ts#L1555)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/LanguageModel.ts#L1626)
 
 Since v4.0.0

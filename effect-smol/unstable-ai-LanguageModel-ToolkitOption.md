@@ -20,6 +20,6 @@ type ToolkitOption<Tools, E, R> = Tools extends any ? (
   : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/LanguageModel.ts#L469)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/LanguageModel.ts#L525)
 
 Since v4.0.0

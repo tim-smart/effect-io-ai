@@ -33,6 +33,7 @@ export interface RunOptions {
   readonly signal?: AbortSignal | undefined
   readonly scheduler?: Scheduler | undefined
   readonly uninterruptible?: boolean | undefined
+  readonly onFiberStart?: ((fiber: Fiber<unknown, unknown>) => void) | undefined
 }
 ```
 

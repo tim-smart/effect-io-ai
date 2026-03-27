@@ -14,6 +14,6 @@ type ExtractTools<Options> = Options extends {
   : {}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/LanguageModel.ts#L499)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/LanguageModel.ts#L579)
 
 Since v4.0.0

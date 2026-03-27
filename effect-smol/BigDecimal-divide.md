@@ -45,6 +45,6 @@ assert.deepStrictEqual(
 declare const divide: { (that: BigDecimal): (self: BigDecimal) => Option.Option<BigDecimal>; (self: BigDecimal, that: BigDecimal): Option.Option<BigDecimal>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigDecimal.ts#L452)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigDecimal.ts#L506)
 
 Since v2.0.0

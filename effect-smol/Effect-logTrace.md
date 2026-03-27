@@ -36,6 +36,6 @@ Effect.runPromise(program)
 declare const logTrace: (...message: ReadonlyArray<any>) => Effect<void>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L13163)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L13164)
 
 Since v2.0.0

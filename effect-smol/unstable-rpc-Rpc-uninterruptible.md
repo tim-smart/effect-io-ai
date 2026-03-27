@@ -11,6 +11,6 @@ You can use `uninterruptible` to wrap a response Effect or Stream, to ensure tha
 declare const uninterruptible: <A extends object>(value: A) => Wrapper<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Rpc.ts#L857)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Rpc.ts#L858)
 
 Since v4.0.0

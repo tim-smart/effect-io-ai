@@ -21,6 +21,6 @@ assert.deepStrictEqual(isZero(fromStringUnsafe("1")), false)
 declare const isZero: (n: BigDecimal) => boolean
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigDecimal.ts#L1286)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigDecimal.ts#L1340)
 
 Since v2.0.0
