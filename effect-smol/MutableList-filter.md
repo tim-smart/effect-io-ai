@@ -50,6 +50,6 @@ console.log(MutableList.takeAll(logs)) // Only error logs
 declare const filter: <A>(self: MutableList<A>, f: (value: A, i: number) => boolean) => void
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableList.ts#L837)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableList.ts#L840)
 
 Since v4.0.0

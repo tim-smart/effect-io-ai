@@ -25,6 +25,6 @@ Number.parse("not a number") // Option.none()
 declare const parse: (s: string) => Option.Option<number>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Number.ts#L547)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Number.ts#L557)
 
 Since v2.0.0

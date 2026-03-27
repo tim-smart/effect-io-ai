@@ -20,7 +20,7 @@ const program = Effect.gen(function*() {
 **Signature**
 
 ```ts
-declare const fromIterable: { <A>(order: Order<A>): (iterable: Iterable<A>) => Effect.Effect<TxPriorityQueue<A>, never, Effect.Transaction>; <A>(order: Order<A>, iterable: Iterable<A>): Effect.Effect<TxPriorityQueue<A>, never, Effect.Transaction>; }
+declare const fromIterable: { <A>(order: Order<A>): (iterable: Iterable<A>) => Effect.Effect<TxPriorityQueue<A>>; <A>(order: Order<A>, iterable: Iterable<A>): Effect.Effect<TxPriorityQueue<A>>; }
 ```
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxPriorityQueue.ts#L132)

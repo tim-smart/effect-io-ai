@@ -21,9 +21,9 @@ const program = Effect.gen(function*() {
 **Signature**
 
 ```ts
-declare const updateAndGet: { <A>(f: (current: A) => A): (self: TxSubscriptionRef<A>) => Effect.Effect<A, never, Effect.Transaction>; <A>(self: TxSubscriptionRef<A>, f: (current: A) => A): Effect.Effect<A, never, Effect.Transaction>; }
+declare const updateAndGet: { <A>(f: (current: A) => A): (self: TxSubscriptionRef<A>) => Effect.Effect<A>; <A>(self: TxSubscriptionRef<A>, f: (current: A) => A): Effect.Effect<A>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxSubscriptionRef.ts#L302)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxSubscriptionRef.ts#L300)
 
 Since v4.0.0

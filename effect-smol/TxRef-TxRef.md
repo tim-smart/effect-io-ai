@@ -7,7 +7,7 @@ TxRef is a transactional value, it can be read and modified within the body of a
 
 Accessed values are tracked by the transaction in order to detect conflicts and in order to
 track changes, a transaction will retry whenever a conflict is detected or whenever the
-transaction explicitely calls to `Effect.retryTransaction` and any of the accessed TxRef values
+transaction explicitely calls to `Effect.txRetry` and any of the accessed TxRef values
 change.
 
 **Example**
@@ -20,12 +20,12 @@ const program = Effect.gen(function*() {
   const ref: TxRef.TxRef<number> = yield* TxRef.make(0)
 
   // Use within a transaction
-  yield* Effect.transaction(Effect.gen(function*() {
+  yield* Effect.tx(Effect.gen(function*() {
     const current = yield* TxRef.get(ref)
     yield* TxRef.set(ref, current + 1)
   }))
 
-  const final = yield* Effect.transaction(TxRef.get(ref))
+  const final = yield* TxRef.get(ref)
   console.log(final) // 1
 })
 ```

@@ -20,9 +20,9 @@ const program = Effect.gen(function*() {
 **Signature**
 
 ```ts
-declare const takeAll: <A>(self: TxPriorityQueue<A>) => Effect.Effect<Array<A>, never, Effect.Transaction>
+declare const takeAll: <A>(self: TxPriorityQueue<A>) => Effect.Effect<Array<A>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxPriorityQueue.ts#L379)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxPriorityQueue.ts#L375)
 
 Since v4.0.0

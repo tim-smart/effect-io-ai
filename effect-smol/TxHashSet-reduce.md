@@ -25,9 +25,9 @@ const program = Effect.gen(function*() {
 **Signature**
 
 ```ts
-declare const reduce: { <V, U>(zero: U, f: (accumulator: U, value: V) => U): (self: TxHashSet<V>) => Effect.Effect<U, never, Effect.Transaction>; <V, U>(self: TxHashSet<V>, zero: U, f: (accumulator: U, value: V) => U): Effect.Effect<U, never, Effect.Transaction>; }
+declare const reduce: { <V, U>(zero: U, f: (accumulator: U, value: V) => U): (self: TxHashSet<V>) => Effect.Effect<U>; <V, U>(self: TxHashSet<V>, zero: U, f: (accumulator: U, value: V) => U): Effect.Effect<U>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashSet.ts#L830)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashSet.ts#L829)
 
 Since v2.0.0

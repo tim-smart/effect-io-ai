@@ -25,6 +25,6 @@ console.log(config.value) // { timeout: 5000, retries: 3 }
 declare const makeUnsafe: <A>(initial: A) => TxRef<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxRef.ts#L108)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxRef.ts#L101)
 
 Since v4.0.0

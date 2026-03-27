@@ -23,9 +23,9 @@ const program = Effect.gen(function*() {
 **Signature**
 
 ```ts
-declare const succeed: { <A>(value: A): <E>(self: TxDeferred<A, E>) => Effect.Effect<boolean, never, Effect.Transaction>; <A, E>(self: TxDeferred<A, E>, value: A): Effect.Effect<boolean, never, Effect.Transaction>; }
+declare const succeed: { <A>(value: A): <E>(self: TxDeferred<A, E>) => Effect.Effect<boolean>; <A, E>(self: TxDeferred<A, E>, value: A): Effect.Effect<boolean>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxDeferred.ts#L219)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxDeferred.ts#L218)
 
 Since v4.0.0

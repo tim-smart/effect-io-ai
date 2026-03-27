@@ -19,6 +19,6 @@ Authorization header.
 declare const layerWebSocketMode: Layer.Layer<OpenAiSocket | ResponseIdTracker.ResponseIdTracker, never, OpenAiClient | Socket.WebSocketConstructor>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L608)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L587)
 
 Since v1.0.0

@@ -26,9 +26,9 @@ const program = Effect.gen(function*() {
 **Signature**
 
 ```ts
-declare const interrupt: <A, E>(self: TxEnqueue<A, E>) => Effect.Effect<boolean, never, Effect.Transaction>
+declare const interrupt: <A, E>(self: TxEnqueue<A, E>) => Effect.Effect<boolean>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxQueue.ts#L1159)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxQueue.ts#L1154)
 
 Since v4.0.0

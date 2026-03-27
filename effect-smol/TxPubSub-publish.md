@@ -38,9 +38,9 @@ const program = Effect.gen(function*() {
 **Signature**
 
 ```ts
-declare const publish: { <A>(value: A): (self: TxPubSub<A>) => Effect.Effect<boolean, never, Effect.Transaction>; <A>(self: TxPubSub<A>, value: A): Effect.Effect<boolean, never, Effect.Transaction>; }
+declare const publish: { <A>(value: A): (self: TxPubSub<A>) => Effect.Effect<boolean>; <A>(self: TxPubSub<A>, value: A): Effect.Effect<boolean>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxPubSub.ts#L393)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxPubSub.ts#L391)
 
 Since v4.0.0

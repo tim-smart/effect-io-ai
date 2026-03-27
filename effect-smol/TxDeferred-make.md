@@ -20,7 +20,7 @@ const program = Effect.gen(function*() {
 **Signature**
 
 ```ts
-declare const make: <A, E = never>() => Effect.Effect<TxDeferred<A, E>, never, Effect.Transaction>
+declare const make: <A, E = never>() => Effect.Effect<TxDeferred<A, E>>
 ```
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxDeferred.ts#L96)

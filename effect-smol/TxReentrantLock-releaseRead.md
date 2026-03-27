@@ -22,7 +22,7 @@ const program = Effect.gen(function*() {
 **Signature**
 
 ```ts
-declare const releaseRead: (self: TxReentrantLock) => Effect.Effect<number, never, Effect.Transaction>
+declare const releaseRead: (self: TxReentrantLock) => Effect.Effect<number>
 ```
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxReentrantLock.ts#L234)

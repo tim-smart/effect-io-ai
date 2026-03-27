@@ -23,6 +23,6 @@ const program = Effect.gen(function*() {
 declare const isTxPriorityQueue: (u: unknown) => u is TxPriorityQueue<unknown>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxPriorityQueue.ts#L535)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxPriorityQueue.ts#L531)
 
 Since v4.0.0

@@ -26,7 +26,7 @@ const program = Effect.gen(function*() {
 **Signature**
 
 ```ts
-declare const fromIterable: <V>(values: Iterable<V>) => Effect.Effect<TxHashSet<V>, never, Effect.Transaction>
+declare const fromIterable: <V>(values: Iterable<V>) => Effect.Effect<TxHashSet<V>>
 ```
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashSet.ts#L228)

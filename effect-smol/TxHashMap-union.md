@@ -50,9 +50,9 @@ const program = Effect.gen(function*() {
 **Signature**
 
 ```ts
-declare const union: { <K1 extends K, K, V1 extends V, V>(other: HashMap.HashMap<K1, V1>): (self: TxHashMap<K, V>) => Effect.Effect<void, never, Effect.Transaction>; <K1 extends K, K, V1 extends V, V>(self: TxHashMap<K, V>, other: HashMap.HashMap<K1, V1>): Effect.Effect<void, never, Effect.Transaction>; }
+declare const union: { <K1 extends K, K, V1 extends V, V>(other: HashMap.HashMap<K1, V1>): (self: TxHashMap<K, V>) => Effect.Effect<void>; <K1 extends K, K, V1 extends V, V>(self: TxHashMap<K, V>, other: HashMap.HashMap<K1, V1>): Effect.Effect<void>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashMap.ts#L992)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashMap.ts#L991)
 
 Since v2.0.0

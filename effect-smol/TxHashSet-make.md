@@ -25,7 +25,7 @@ const program = Effect.gen(function*() {
 **Signature**
 
 ```ts
-declare const make: <Values extends ReadonlyArray<any>>(...values: Values) => Effect.Effect<TxHashSet<Values[number]>, never, Effect.Transaction>
+declare const make: <Values extends ReadonlyArray<any>>(...values: Values) => Effect.Effect<TxHashSet<Values[number]>>
 ```
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashSet.ts#L196)

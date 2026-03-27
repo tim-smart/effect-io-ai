@@ -11,6 +11,6 @@ Service identifier for the OpenAI client.
 declare class OpenAiClient
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L97)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L95)
 
 Since v1.0.0

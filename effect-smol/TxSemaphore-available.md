@@ -30,7 +30,7 @@ const program = Effect.gen(function*() {
 **Signature**
 
 ```ts
-declare const available: (self: TxSemaphore) => Effect.Effect<number, never, Effect.Transaction>
+declare const available: (self: TxSemaphore) => Effect.Effect<number>
 ```
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxSemaphore.ts#L144)

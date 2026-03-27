@@ -25,9 +25,9 @@ const program = Effect.gen(function*() {
 **Signature**
 
 ```ts
-declare const isOpen: (self: TxQueueState) => Effect.Effect<boolean, never, Effect.Transaction>
+declare const isOpen: (self: TxQueueState) => Effect.Effect<boolean>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxQueue.ts#L1396)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxQueue.ts#L1391)
 
 Since v4.0.0

@@ -26,9 +26,9 @@ const program = Effect.gen(function*() {
 **Signature**
 
 ```ts
-declare const isNonEmpty: <A>(self: TxChunk<A>) => Effect.Effect<boolean, never, Effect.Transaction>
+declare const isNonEmpty: <A>(self: TxChunk<A>) => Effect.Effect<boolean>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxChunk.ts#L491)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxChunk.ts#L485)
 
 Since v4.0.0

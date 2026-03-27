@@ -21,9 +21,9 @@ const program = Effect.gen(function*() {
 **Signature**
 
 ```ts
-declare const peekOption: <A>(self: TxPriorityQueue<A>) => Effect.Effect<Option<A>, never, Effect.Transaction>
+declare const peekOption: <A>(self: TxPriorityQueue<A>) => Effect.Effect<Option<A>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxPriorityQueue.ts#L273)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxPriorityQueue.ts#L269)
 
 Since v4.0.0

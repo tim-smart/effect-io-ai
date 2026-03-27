@@ -27,9 +27,9 @@ const program = Effect.gen(function*() {
 **Signature**
 
 ```ts
-declare const size: <A>(self: TxChunk<A>) => Effect.Effect<number, never, Effect.Transaction>
+declare const size: <A>(self: TxChunk<A>) => Effect.Effect<number>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxChunk.ts#L439)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxChunk.ts#L433)
 
 Since v4.0.0

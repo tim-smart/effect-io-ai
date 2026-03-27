@@ -40,7 +40,7 @@ const program = Effect.gen(function*() {
 **Signature**
 
 ```ts
-declare const remove: { <K1 extends K, K>(key: K1): <V>(self: TxHashMap<K, V>) => Effect.Effect<boolean, never, Effect.Transaction>; <K1 extends K, K, V>(self: TxHashMap<K, V>, key: K1): Effect.Effect<boolean, never, Effect.Transaction>; }
+declare const remove: { <K1 extends K, K>(key: K1): <V>(self: TxHashMap<K, V>) => Effect.Effect<boolean>; <K1 extends K, K, V>(self: TxHashMap<K, V>, key: K1): Effect.Effect<boolean>; }
 ```
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashMap.ts#L495)

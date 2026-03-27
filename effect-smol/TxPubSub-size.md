@@ -28,7 +28,7 @@ const program = Effect.gen(function*() {
 **Signature**
 
 ```ts
-declare const size: <A>(self: TxPubSub<A>) => Effect.Effect<number, never, Effect.Transaction>
+declare const size: <A>(self: TxPubSub<A>) => Effect.Effect<number>
 ```
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxPubSub.ts#L275)

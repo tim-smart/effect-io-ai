@@ -37,9 +37,9 @@ const program = Effect.gen(function*() {
 **Signature**
 
 ```ts
-declare const shutdown: <A, E>(self: TxEnqueue<A, E>) => Effect.Effect<boolean, never, Effect.Transaction>
+declare const shutdown: <A, E>(self: TxEnqueue<A, E>) => Effect.Effect<boolean>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxQueue.ts#L1368)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxQueue.ts#L1363)
 
 Since v4.0.0

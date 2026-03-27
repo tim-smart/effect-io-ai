@@ -25,7 +25,7 @@ const program = Effect.gen(function*() {
 **Signature**
 
 ```ts
-declare const poll: <A, E>(self: TxDeferred<A, E>) => Effect.Effect<Option<Result<A, E>>, never, Effect.Transaction>
+declare const poll: <A, E>(self: TxDeferred<A, E>) => Effect.Effect<Option<Result<A, E>>>
 ```
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxDeferred.ts#L162)

@@ -26,7 +26,7 @@ const program = Effect.gen(function*() {
 **Signature**
 
 ```ts
-declare const poll: <A, E>(self: TxDequeue<A, E>) => Effect.Effect<Option.Option<A>, never, Effect.Transaction>
+declare const poll: <A, E>(self: TxDequeue<A, E>) => Effect.Effect<Option.Option<A>>
 ```
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxQueue.ts#L744)

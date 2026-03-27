@@ -46,6 +46,6 @@ console.log(MutableList.takeAll(tasks)) // Only pending tasks
 declare const remove: <A>(self: MutableList<A>, value: A) => void
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableList.ts#L896)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableList.ts#L899)
 
 Since v4.0.0

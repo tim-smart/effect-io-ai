@@ -25,7 +25,7 @@ const program = Effect.gen(function*() {
 **Signature**
 
 ```ts
-declare const offer: { <A, E>(value: A): (self: TxEnqueue<A, E>) => Effect.Effect<boolean, never, Effect.Transaction>; <A, E>(self: TxEnqueue<A, E>, value: A): Effect.Effect<boolean, never, Effect.Transaction>; }
+declare const offer: { <A, E>(value: A): (self: TxEnqueue<A, E>) => Effect.Effect<boolean>; <A, E>(self: TxEnqueue<A, E>, value: A): Effect.Effect<boolean>; }
 ```
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxQueue.ts#L575)

@@ -20,9 +20,9 @@ const program = Effect.gen(function*() {
 **Signature**
 
 ```ts
-declare const isEmpty: <A>(self: TxPriorityQueue<A>) => Effect.Effect<boolean, never, Effect.Transaction>
+declare const isEmpty: <A>(self: TxPriorityQueue<A>) => Effect.Effect<boolean>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxPriorityQueue.ts#L204)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxPriorityQueue.ts#L202)
 
 Since v4.0.0

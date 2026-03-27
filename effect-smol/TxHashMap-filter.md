@@ -51,9 +51,9 @@ const program = Effect.gen(function*() {
 **Signature**
 
 ```ts
-declare const filter: { <K, V, B extends V>(predicate: (value: V, key: K) => value is B): (self: TxHashMap<K, V>) => Effect.Effect<TxHashMap<K, B>, never, Effect.Transaction>; <K, V>(predicate: (value: V, key: K) => boolean): (self: TxHashMap<K, V>) => Effect.Effect<TxHashMap<K, V>, never, Effect.Transaction>; <K, V, B extends V>(self: TxHashMap<K, V>, predicate: (value: V, key: K) => value is B): Effect.Effect<TxHashMap<K, B>, never, Effect.Transaction>; <K, V>(self: TxHashMap<K, V>, predicate: (value: V, key: K) => boolean): Effect.Effect<TxHashMap<K, V>, never, Effect.Transaction>; }
+declare const filter: { <K, V, B extends V>(predicate: (value: V, key: K) => value is B): (self: TxHashMap<K, V>) => Effect.Effect<TxHashMap<K, B>>; <K, V>(predicate: (value: V, key: K) => boolean): (self: TxHashMap<K, V>) => Effect.Effect<TxHashMap<K, V>>; <K, V, B extends V>(self: TxHashMap<K, V>, predicate: (value: V, key: K) => value is B): Effect.Effect<TxHashMap<K, B>>; <K, V>(self: TxHashMap<K, V>, predicate: (value: V, key: K) => boolean): Effect.Effect<TxHashMap<K, V>>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashMap.ts#L1396)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashMap.ts#L1393)
 
 Since v2.0.0

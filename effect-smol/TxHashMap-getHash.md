@@ -39,9 +39,9 @@ const program = Effect.gen(function*() {
 **Signature**
 
 ```ts
-declare const getHash: { <K1 extends K, K>(key: K1, hash: number): <V>(self: TxHashMap<K, V>) => Effect.Effect<Option.Option<V>, never, Effect.Transaction>; <K1 extends K, K, V>(self: TxHashMap<K, V>, key: K1, hash: number): Effect.Effect<Option.Option<V>, never, Effect.Transaction>; }
+declare const getHash: { <K1 extends K, K>(key: K1, hash: number): <V>(self: TxHashMap<K, V>) => Effect.Effect<Option.Option<V>>; <K1 extends K, K, V>(self: TxHashMap<K, V>, key: K1, hash: number): Effect.Effect<Option.Option<V>>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashMap.ts#L1201)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashMap.ts#L1200)
 
 Since v2.0.0

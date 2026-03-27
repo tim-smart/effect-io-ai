@@ -28,7 +28,7 @@ const program = Effect.gen(function*() {
 **Signature**
 
 ```ts
-declare const offerAll: { <A, E>(values: Iterable<A>): (self: TxEnqueue<A, E>) => Effect.Effect<Array<A>, never, Effect.Transaction>; <A, E>(self: TxEnqueue<A, E>, values: Iterable<A>): Effect.Effect<Array<A>, never, Effect.Transaction>; }
+declare const offerAll: { <A, E>(values: Iterable<A>): (self: TxEnqueue<A, E>) => Effect.Effect<Array<A>>; <A, E>(self: TxEnqueue<A, E>, values: Iterable<A>): Effect.Effect<Array<A>>; }
 ```
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxQueue.ts#L642)

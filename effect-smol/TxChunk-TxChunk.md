@@ -8,7 +8,7 @@ semantics for chunk operations.
 
 Accessed values are tracked by the transaction in order to detect conflicts and to track changes.
 A transaction will retry whenever a conflict is detected or whenever the transaction explicitly
-calls `Effect.retryTransaction` and any of the accessed TxChunk values change.
+calls `Effect.txRetry` and any of the accessed TxChunk values change.
 
 **Example**
 
@@ -29,7 +29,7 @@ const program = Effect.gen(function*() {
   console.log(Chunk.toReadonlyArray(result)) // [1, 2, 3, 4]
 
   // Multi-step atomic operation - use explicit transaction
-  yield* Effect.transaction(
+  yield* Effect.tx(
     Effect.gen(function*() {
       yield* TxChunk.prepend(txChunk, 0)
       yield* TxChunk.append(txChunk, 5)

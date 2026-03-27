@@ -26,9 +26,9 @@ const program = Effect.gen(function*() {
 **Signature**
 
 ```ts
-declare const shutdown: <A>(self: TxPubSub<A>) => Effect.Effect<void, never, Effect.Transaction>
+declare const shutdown: <A>(self: TxPubSub<A>) => Effect.Effect<void>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxPubSub.ts#L578)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxPubSub.ts#L576)
 
 Since v4.0.0

@@ -20,9 +20,9 @@ const program = Effect.gen(function*() {
 **Signature**
 
 ```ts
-declare const writeLocked: (self: TxReentrantLock) => Effect.Effect<boolean, never, Effect.Transaction>
+declare const writeLocked: (self: TxReentrantLock) => Effect.Effect<boolean>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxReentrantLock.ts#L602)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxReentrantLock.ts#L578)
 
 Since v4.0.0

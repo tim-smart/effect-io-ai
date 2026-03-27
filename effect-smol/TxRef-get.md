@@ -14,7 +14,7 @@ const program = Effect.gen(function*() {
   const counter = yield* TxRef.make(42)
 
   // Read the value within a transaction
-  const value = yield* Effect.transaction(
+  const value = yield* Effect.tx(
     TxRef.get(counter)
   )
 
@@ -25,9 +25,9 @@ const program = Effect.gen(function*() {
 **Signature**
 
 ```ts
-declare const get: <A>(self: TxRef<A>) => Effect.Effect<A, never, Effect.Transaction>
+declare const get: <A>(self: TxRef<A>) => Effect.Effect<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxRef.ts#L215)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxRef.ts#L203)
 
 Since v4.0.0

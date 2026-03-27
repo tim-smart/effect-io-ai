@@ -27,9 +27,9 @@ const program = Effect.gen(function*() {
 **Signature**
 
 ```ts
-declare const slice: { (start: number, end: number): <A>(self: TxChunk<A>) => Effect.Effect<void, never, Effect.Transaction>; <A>(self: TxChunk<A>, start: number, end: number): Effect.Effect<void, never, Effect.Transaction>; }
+declare const slice: { (start: number, end: number): <A>(self: TxChunk<A>) => Effect.Effect<void>; <A>(self: TxChunk<A>, start: number, end: number): Effect.Effect<void>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxChunk.ts#L584)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxChunk.ts#L576)
 
 Since v4.0.0

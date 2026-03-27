@@ -25,9 +25,9 @@ const program = Effect.gen(function*() {
 **Signature**
 
 ```ts
-declare const awaitCompletion: (self: TxQueueState) => Effect.Effect<void, never, Effect.Transaction>
+declare const awaitCompletion: (self: TxQueueState) => Effect.Effect<void>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxQueue.ts#L1505)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxQueue.ts#L1491)
 
 Since v4.0.0

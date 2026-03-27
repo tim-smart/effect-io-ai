@@ -27,9 +27,9 @@ const program = Effect.gen(function*() {
 **Signature**
 
 ```ts
-declare const tryAcquire: (self: TxSemaphore) => Effect.Effect<boolean, never, Effect.Transaction>
+declare const tryAcquire: (self: TxSemaphore) => Effect.Effect<boolean>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxSemaphore.ts#L281)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxSemaphore.ts#L280)
 
 Since v4.0.0

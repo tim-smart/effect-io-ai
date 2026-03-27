@@ -21,9 +21,9 @@ const program = Effect.gen(function*() {
 **Signature**
 
 ```ts
-declare const removeIf: { <A>(predicate: Predicate<A>): (self: TxPriorityQueue<A>) => Effect.Effect<void, never, Effect.Transaction>; <A>(self: TxPriorityQueue<A>, predicate: Predicate<A>): Effect.Effect<void, never, Effect.Transaction>; }
+declare const removeIf: { <A>(predicate: Predicate<A>): (self: TxPriorityQueue<A>) => Effect.Effect<void>; <A>(self: TxPriorityQueue<A>, predicate: Predicate<A>): Effect.Effect<void>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxPriorityQueue.ts#L462)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxPriorityQueue.ts#L458)
 
 Since v4.0.0

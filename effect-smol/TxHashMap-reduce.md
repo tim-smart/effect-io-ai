@@ -57,9 +57,9 @@ const program = Effect.gen(function*() {
 **Signature**
 
 ```ts
-declare const reduce: { <A, V, K>(zero: A, f: (accumulator: A, value: V, key: K) => A): (self: TxHashMap<K, V>) => Effect.Effect<A, never, Effect.Transaction>; <K, V, A>(self: TxHashMap<K, V>, zero: A, f: (accumulator: A, value: V, key: K) => A): Effect.Effect<A, never, Effect.Transaction>; }
+declare const reduce: { <A, V, K>(zero: A, f: (accumulator: A, value: V, key: K) => A): (self: TxHashMap<K, V>) => Effect.Effect<A>; <K, V, A>(self: TxHashMap<K, V>, zero: A, f: (accumulator: A, value: V, key: K) => A): Effect.Effect<A>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashMap.ts#L1478)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashMap.ts#L1475)
 
 Since v2.0.0

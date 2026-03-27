@@ -20,7 +20,7 @@ const program = Effect.gen(function*() {
 **Signature**
 
 ```ts
-declare const make: () => Effect.Effect<TxReentrantLock, never, Effect.Transaction>
+declare const make: () => Effect.Effect<TxReentrantLock>
 ```
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxReentrantLock.ts#L101)

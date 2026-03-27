@@ -24,9 +24,9 @@ const program = Effect.gen(function*() {
 **Signature**
 
 ```ts
-declare const some: { <V>(predicate: Predicate<V>): (self: TxHashSet<V>) => Effect.Effect<boolean, never, Effect.Transaction>; <V>(self: TxHashSet<V>, predicate: Predicate<V>): Effect.Effect<boolean, never, Effect.Transaction>; }
+declare const some: { <V>(predicate: Predicate<V>): (self: TxHashSet<V>) => Effect.Effect<boolean>; <V>(self: TxHashSet<V>, predicate: Predicate<V>): Effect.Effect<boolean>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashSet.ts#L669)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashSet.ts#L668)
 
 Since v2.0.0

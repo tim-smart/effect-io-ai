@@ -28,7 +28,7 @@ const program = Effect.gen(function*() {
 **Signature**
 
 ```ts
-declare const bounded: <A = never>(capacity: number) => Effect.Effect<TxPubSub<A>, never, Effect.Transaction>
+declare const bounded: <A = never>(capacity: number) => Effect.Effect<TxPubSub<A>>
 ```
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxPubSub.ts#L121)

@@ -22,7 +22,7 @@ const program = Effect.gen(function*() {
   console.log(Chunk.toReadonlyArray(chunk)) // [1, 2, 3, 4, 5]
 
   // Multi-step atomic modification - use explicit transaction
-  yield* Effect.transaction(
+  yield* Effect.tx(
     Effect.gen(function*() {
       yield* TxChunk.append(txChunk, 6)
       yield* TxChunk.prepend(txChunk, 0)
@@ -37,7 +37,7 @@ const program = Effect.gen(function*() {
 **Signature**
 
 ```ts
-declare const fromIterable: <A>(iterable: Iterable<A>) => Effect.Effect<TxChunk<A>, never, Effect.Transaction>
+declare const fromIterable: <A>(iterable: Iterable<A>) => Effect.Effect<TxChunk<A>>
 ```
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxChunk.ts#L179)

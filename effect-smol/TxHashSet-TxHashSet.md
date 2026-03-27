@@ -34,7 +34,7 @@ const program = Effect.gen(function*() {
   console.log(hasApple) // true
 
   // Multi-step atomic operations
-  yield* Effect.transaction(
+  yield* Effect.tx(
     Effect.gen(function*() {
       const hasCherry = yield* TxHashSet.has(txSet, "cherry")
       if (hasCherry) {

@@ -38,6 +38,6 @@ type Options = {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L111)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L109)
 
 Since v1.0.0

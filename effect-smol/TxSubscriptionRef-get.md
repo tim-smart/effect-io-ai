@@ -20,7 +20,7 @@ const program = Effect.gen(function*() {
 **Signature**
 
 ```ts
-declare const get: <A>(self: TxSubscriptionRef<A>) => Effect.Effect<A, never, Effect.Transaction>
+declare const get: <A>(self: TxSubscriptionRef<A>) => Effect.Effect<A>
 ```
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxSubscriptionRef.ts#L127)

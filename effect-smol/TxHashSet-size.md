@@ -25,7 +25,7 @@ const program = Effect.gen(function*() {
 **Signature**
 
 ```ts
-declare const size: <V>(self: TxHashSet<V>) => Effect.Effect<number, never, Effect.Transaction>
+declare const size: <V>(self: TxHashSet<V>) => Effect.Effect<number>
 ```
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashSet.ts#L436)

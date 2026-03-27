@@ -29,9 +29,9 @@ const program = Effect.gen(function*() {
 **Signature**
 
 ```ts
-declare const appendAll: { <A>(other: Chunk.Chunk<A>): (self: TxChunk<A>) => Effect.Effect<void, never, Effect.Transaction>; <A>(self: TxChunk<A>, other: Chunk.Chunk<A>): Effect.Effect<void, never, Effect.Transaction>; }
+declare const appendAll: { <A>(other: Chunk.Chunk<A>): (self: TxChunk<A>) => Effect.Effect<void>; <A>(self: TxChunk<A>, other: Chunk.Chunk<A>): Effect.Effect<void>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxChunk.ts#L690)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxChunk.ts#L681)
 
 Since v4.0.0

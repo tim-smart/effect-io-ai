@@ -27,7 +27,7 @@ const program = Effect.gen(function*() {
 **Signature**
 
 ```ts
-declare const unbounded: <A = never>() => Effect.Effect<TxPubSub<A>, never, Effect.Transaction>
+declare const unbounded: <A = never>() => Effect.Effect<TxPubSub<A>>
 ```
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxPubSub.ts#L221)

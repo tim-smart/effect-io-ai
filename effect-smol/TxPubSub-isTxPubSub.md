@@ -23,6 +23,6 @@ if (TxPubSub.isTxPubSub(someValue)) {
 declare const isTxPubSub: (u: unknown) => u is TxPubSub<unknown>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxPubSub.ts#L637)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxPubSub.ts#L635)
 
 Since v4.0.0

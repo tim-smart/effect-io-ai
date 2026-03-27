@@ -43,7 +43,7 @@ const errorExample = Effect.gen(function*() {
 **Signature**
 
 ```ts
-declare const takeAll: <A, E>(self: TxDequeue<A, E>) => Effect.Effect<Arr.NonEmptyArray<A>, E, Effect.Transaction>
+declare const takeAll: <A, E>(self: TxDequeue<A, E>) => Effect.Effect<Arr.NonEmptyArray<A>, E>
 ```
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxQueue.ts#L801)

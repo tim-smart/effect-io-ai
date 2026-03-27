@@ -23,9 +23,9 @@ const program = Effect.gen(function*() {
 **Signature**
 
 ```ts
-declare const filter: { <V, U extends V>(refinement: Refinement<NoInfer<V>, U>): (self: TxHashSet<V>) => Effect.Effect<TxHashSet<U>, never, Effect.Transaction>; <V>(predicate: Predicate<NoInfer<V>>): (self: TxHashSet<V>) => Effect.Effect<TxHashSet<V>, never, Effect.Transaction>; <V, U extends V>(self: TxHashSet<V>, refinement: Refinement<V, U>): Effect.Effect<TxHashSet<U>, never, Effect.Transaction>; <V>(self: TxHashSet<V>, predicate: Predicate<V>): Effect.Effect<TxHashSet<V>, never, Effect.Transaction>; }
+declare const filter: { <V, U extends V>(refinement: Refinement<NoInfer<V>, U>): (self: TxHashSet<V>) => Effect.Effect<TxHashSet<U>>; <V>(predicate: Predicate<NoInfer<V>>): (self: TxHashSet<V>) => Effect.Effect<TxHashSet<V>>; <V, U extends V>(self: TxHashSet<V>, refinement: Refinement<V, U>): Effect.Effect<TxHashSet<U>>; <V>(self: TxHashSet<V>, predicate: Predicate<V>): Effect.Effect<TxHashSet<V>>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashSet.ts#L773)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashSet.ts#L772)
 
 Since v2.0.0

@@ -32,7 +32,7 @@ const program = Effect.gen(function*() {
 **Signature**
 
 ```ts
-declare const sliding: <A = never, E = never>(capacity: number) => Effect.Effect<TxQueue<A, E>, never, Effect.Transaction>
+declare const sliding: <A = never, E = never>(capacity: number) => Effect.Effect<TxQueue<A, E>>
 ```
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxQueue.ts#L534)

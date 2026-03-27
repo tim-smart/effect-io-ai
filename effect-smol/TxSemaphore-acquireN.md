@@ -26,9 +26,9 @@ const program = Effect.gen(function*() {
 **Signature**
 
 ```ts
-declare const acquireN: (self: TxSemaphore, n: number) => Effect.Effect<void, never, Effect.Transaction>
+declare const acquireN: (self: TxSemaphore, n: number) => Effect.Effect<void>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxSemaphore.ts#L241)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxSemaphore.ts#L240)
 
 Since v4.0.0

@@ -29,6 +29,6 @@ const program = Effect.gen(function*() {
 declare const capacity: (self: TxSemaphore) => Effect.Effect<number>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxSemaphore.ts#L173)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxSemaphore.ts#L172)
 
 Since v4.0.0

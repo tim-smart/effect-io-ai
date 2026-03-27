@@ -20,9 +20,9 @@ const program = Effect.gen(function*() {
 **Signature**
 
 ```ts
-declare const isFull: <A>(self: TxPubSub<A>) => Effect.Effect<boolean, never, Effect.Transaction>
+declare const isFull: <A>(self: TxPubSub<A>) => Effect.Effect<boolean>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxPubSub.ts#L323)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxPubSub.ts#L322)
 
 Since v4.0.0

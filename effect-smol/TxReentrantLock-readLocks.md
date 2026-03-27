@@ -22,9 +22,9 @@ const program = Effect.gen(function*() {
 **Signature**
 
 ```ts
-declare const readLocks: (self: TxReentrantLock) => Effect.Effect<number, never, Effect.Transaction>
+declare const readLocks: (self: TxReentrantLock) => Effect.Effect<number>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxReentrantLock.ts#L506)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxReentrantLock.ts#L482)
 
 Since v4.0.0

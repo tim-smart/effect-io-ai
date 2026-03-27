@@ -39,7 +39,7 @@ const program = Effect.gen(function*() {
 **Signature**
 
 ```ts
-declare const clear: <K, V>(self: TxHashMap<K, V>) => Effect.Effect<void, never, Effect.Transaction>
+declare const clear: <K, V>(self: TxHashMap<K, V>) => Effect.Effect<void>
 ```
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashMap.ts#L547)

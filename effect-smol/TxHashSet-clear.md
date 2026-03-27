@@ -26,7 +26,7 @@ const program = Effect.gen(function*() {
 **Signature**
 
 ```ts
-declare const clear: <V>(self: TxHashSet<V>) => Effect.Effect<void, never, Effect.Transaction>
+declare const clear: <V>(self: TxHashSet<V>) => Effect.Effect<void>
 ```
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashSet.ts#L490)

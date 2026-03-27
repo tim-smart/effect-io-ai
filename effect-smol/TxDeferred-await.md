@@ -9,7 +9,7 @@ been completed yet.
 **Signature**
 
 ```ts
-declare const await: <A, E>(self: TxDeferred<A, E>) => Effect.Effect<A, E, Effect.Transaction>
+declare const await: <A, E>(self: TxDeferred<A, E>) => Effect.Effect<A, E>
 ```
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxDeferred.ts#L137)

@@ -34,7 +34,7 @@ const program = Effect.gen(function*() {
 **Signature**
 
 ```ts
-declare const make: <K, V>(...entries: Array<readonly [K, V]>) => Effect.Effect<TxHashMap<K, V>, never, Effect.Transaction>
+declare const make: <K, V>(...entries: Array<readonly [K, V]>) => Effect.Effect<TxHashMap<K, V>>
 ```
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashMap.ts#L278)

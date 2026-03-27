@@ -39,6 +39,6 @@ function resetBuffer<T>(buffer: MutableList.MutableList<T>) {
 declare const clear: <A>(self: MutableList<A>) => void
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableList.ts#L558)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableList.ts#L561)
 
 Since v4.0.0

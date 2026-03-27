@@ -37,7 +37,7 @@ const program = Effect.gen(function*() {
 **Signature**
 
 ```ts
-declare const fromIterable: <K, V>(entries: Iterable<readonly [K, V]>) => Effect.Effect<TxHashMap<K, V>, never, Effect.Transaction>
+declare const fromIterable: <K, V>(entries: Iterable<readonly [K, V]>) => Effect.Effect<TxHashMap<K, V>>
 ```
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashMap.ts#L321)

@@ -21,9 +21,9 @@ const program = Effect.gen(function*() {
 **Signature**
 
 ```ts
-declare const offerAll: { <A>(values: Iterable<A>): (self: TxPriorityQueue<A>) => Effect.Effect<void, never, Effect.Transaction>; <A>(self: TxPriorityQueue<A>, values: Iterable<A>): Effect.Effect<void, never, Effect.Transaction>; }
+declare const offerAll: { <A>(values: Iterable<A>): (self: TxPriorityQueue<A>) => Effect.Effect<void>; <A>(self: TxPriorityQueue<A>, values: Iterable<A>): Effect.Effect<void>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxPriorityQueue.ts#L322)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxPriorityQueue.ts#L318)
 
 Since v4.0.0

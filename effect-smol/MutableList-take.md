@@ -54,6 +54,6 @@ function processNext<T>(
 declare const take: <A>(self: MutableList<A>) => Empty | A
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableList.ts#L752)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableList.ts#L755)
 
 Since v4.0.0

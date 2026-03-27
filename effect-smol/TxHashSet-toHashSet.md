@@ -28,9 +28,9 @@ const program = Effect.gen(function*() {
 **Signature**
 
 ```ts
-declare const toHashSet: <V>(self: TxHashSet<V>) => Effect.Effect<HashSet.HashSet<V>, never, Effect.Transaction>
+declare const toHashSet: <V>(self: TxHashSet<V>) => Effect.Effect<HashSet.HashSet<V>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashSet.ts#L881)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashSet.ts#L880)
 
 Since v2.0.0

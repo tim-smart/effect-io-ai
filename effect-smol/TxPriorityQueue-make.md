@@ -20,7 +20,7 @@ const program = Effect.gen(function*() {
 **Signature**
 
 ```ts
-declare const make: <A>(order: Order<A>) => (...elements: Array<A>) => Effect.Effect<TxPriorityQueue<A>, never, Effect.Transaction>
+declare const make: <A>(order: Order<A>) => (...elements: Array<A>) => Effect.Effect<TxPriorityQueue<A>>
 ```
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxPriorityQueue.ts#L163)

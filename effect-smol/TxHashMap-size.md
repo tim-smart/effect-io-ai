@@ -35,9 +35,9 @@ const program = Effect.gen(function*() {
 **Signature**
 
 ```ts
-declare const size: <K, V>(self: TxHashMap<K, V>) => Effect.Effect<number, never, Effect.Transaction>
+declare const size: <K, V>(self: TxHashMap<K, V>) => Effect.Effect<number>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashMap.ts#L582)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashMap.ts#L581)
 
 Since v2.0.0

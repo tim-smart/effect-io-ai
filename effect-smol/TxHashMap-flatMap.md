@@ -54,9 +54,9 @@ const program = Effect.gen(function*() {
 **Signature**
 
 ```ts
-declare const flatMap: { <A, V, K>(f: (value: V, key: K) => Effect.Effect<TxHashMap<K, A>, never, Effect.Transaction>): (self: TxHashMap<K, V>) => Effect.Effect<TxHashMap<K, A>, never, Effect.Transaction>; <K, V, A>(self: TxHashMap<K, V>, f: (value: V, key: K) => Effect.Effect<TxHashMap<K, A>, never, Effect.Transaction>): Effect.Effect<TxHashMap<K, A>, never, Effect.Transaction>; }
+declare const flatMap: { <A, V, K>(f: (value: V, key: K) => Effect.Effect<TxHashMap<K, A>>): (self: TxHashMap<K, V>) => Effect.Effect<TxHashMap<K, A>>; <K, V, A>(self: TxHashMap<K, V>, f: (value: V, key: K) => Effect.Effect<TxHashMap<K, A>>): Effect.Effect<TxHashMap<K, A>>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashMap.ts#L1919)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashMap.ts#L1912)
 
 Since v2.0.0

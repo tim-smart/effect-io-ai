@@ -22,7 +22,7 @@ const program = Effect.gen(function*() {
 **Signature**
 
 ```ts
-declare const size: (self: TxQueueState) => Effect.Effect<number, never, Effect.Transaction>
+declare const size: (self: TxQueueState) => Effect.Effect<number>
 ```
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxQueue.ts#L1078)
