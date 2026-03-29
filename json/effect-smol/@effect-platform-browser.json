@@ -666,6 +666,86 @@
       "path": "src/index.ts"
     },
     "project": "@effect/platform-browser",
+    "name": "IndexedDb",
+    "description": "Re-exports all named exports from the \"./IndexedDb.ts\" module as `IndexedDb`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "4.0.0",
+    "category": null,
+    "signature": "export * as IndexedDb from \"./IndexedDb.ts\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/index.ts#L55"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/platform-browser",
+    "name": "IndexedDbDatabase",
+    "description": "Re-exports all named exports from the \"./IndexedDbDatabase.ts\" module as `IndexedDbDatabase`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "4.0.0",
+    "category": null,
+    "signature": "export * as IndexedDbDatabase from \"./IndexedDbDatabase.ts\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/index.ts#L60"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/platform-browser",
+    "name": "IndexedDbQueryBuilder",
+    "description": "Re-exports all named exports from the \"./IndexedDbQueryBuilder.ts\" module as `IndexedDbQueryBuilder`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "4.0.0",
+    "category": null,
+    "signature": "export * as IndexedDbQueryBuilder from \"./IndexedDbQueryBuilder.ts\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/index.ts#L65"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/platform-browser",
+    "name": "IndexedDbTable",
+    "description": "Re-exports all named exports from the \"./IndexedDbTable.ts\" module as `IndexedDbTable`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "4.0.0",
+    "category": null,
+    "signature": "export * as IndexedDbTable from \"./IndexedDbTable.ts\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/index.ts#L70"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/platform-browser",
+    "name": "IndexedDbVersion",
+    "description": "Re-exports all named exports from the \"./IndexedDbVersion.ts\" module as `IndexedDbVersion`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "4.0.0",
+    "category": null,
+    "signature": "export * as IndexedDbVersion from \"./IndexedDbVersion.ts\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/index.ts#L75"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/platform-browser",
     "name": "Permissions",
     "description": "Re-exports all named exports from the \"./Permissions.ts\" module as `Permissions`.",
     "deprecated": false,
@@ -673,7 +753,850 @@
     "since": "1.0.0",
     "category": null,
     "signature": "export * as Permissions from \"./Permissions.ts\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/index.ts#L55"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/index.ts#L80"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "IndexedDb.ts",
+      "path": "src/IndexedDb.ts"
+    },
+    "project": "@effect/platform-browser",
+    "name": "IndexedDb",
+    "deprecated": false,
+    "examples": [],
+    "since": "4.0.0",
+    "category": "tag",
+    "signature": "declare const IndexedDb: ServiceMap.Service<IndexedDb, IndexedDb>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDb.ts#L27"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "IndexedDb.ts",
+      "path": "src/IndexedDb.ts"
+    },
+    "project": "@effect/platform-browser",
+    "name": "IDBValidKey",
+    "description": "Schema for `IDBValidKey` (`number | string | Date | BufferSource | IDBValidKey[]`).",
+    "deprecated": false,
+    "examples": [],
+    "since": "4.0.0",
+    "category": "schemas",
+    "signature": "declare const IDBValidKey: Schema.Union<readonly [Schema.Union<readonly [Schema.String, Schema.Number, Schema.Date, Schema.declare<BufferSource, unknown>]>, Schema.$Array<Schema.Union<readonly [Schema.String, Schema.Number, Schema.Date, Schema.declare<BufferSource, unknown>]>>]>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDb.ts#L47"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "IndexedDb.ts",
+      "path": "src/IndexedDb.ts"
+    },
+    "project": "@effect/platform-browser",
+    "name": "AutoIncrement",
+    "description": "Schema for `autoIncrement` key path (`number`).",
+    "deprecated": false,
+    "examples": [],
+    "since": "4.0.0",
+    "category": "schemas",
+    "signature": "declare const AutoIncrement: Schema.Int",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDb.ts#L55"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "IndexedDb.ts",
+      "path": "src/IndexedDb.ts"
+    },
+    "project": "@effect/platform-browser",
+    "name": "layerWindow",
+    "description": "Instance of IndexedDb from the `window` object.",
+    "deprecated": false,
+    "examples": [],
+    "since": "4.0.0",
+    "category": "constructors",
+    "signature": "declare const layerWindow: Layer.Layer<IndexedDb, Config.ConfigError, never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDb.ts#L75"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "IndexedDb.ts",
+      "path": "src/IndexedDb.ts"
+    },
+    "project": "@effect/platform-browser",
+    "name": "make",
+    "deprecated": false,
+    "examples": [],
+    "since": "4.0.0",
+    "category": "constructor",
+    "signature": "declare const make: (impl: Omit<IndexedDb, typeof TypeId>) => IndexedDb",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDb.ts#L67"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "IndexedDb.ts",
+      "path": "src/IndexedDb.ts"
+    },
+    "project": "@effect/platform-browser",
+    "name": "IndexedDb",
+    "deprecated": false,
+    "examples": [],
+    "since": "4.0.0",
+    "category": "models",
+    "signature": "export interface IndexedDb {\n  readonly [TypeId]: typeof TypeId\n  readonly indexedDB: globalThis.IDBFactory\n  readonly IDBKeyRange: typeof globalThis.IDBKeyRange\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDb.ts#L17"
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "IndexedDbDatabase.ts",
+      "path": "src/IndexedDbDatabase.ts"
+    },
+    "project": "@effect/platform-browser",
+    "name": "IndexedDbDatabaseError",
+    "deprecated": false,
+    "examples": [],
+    "since": "4.0.0",
+    "category": "errors",
+    "signature": "declare class IndexedDbDatabaseError",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbDatabase.ts#L60"
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "IndexedDbDatabase.ts",
+      "path": "src/IndexedDbDatabase.ts"
+    },
+    "project": "@effect/platform-browser",
+    "name": "IndexedDbDatabase",
+    "deprecated": false,
+    "examples": [],
+    "since": "4.0.0",
+    "category": "models",
+    "signature": "declare class IndexedDbDatabase",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbDatabase.ts#L77"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "IndexedDbDatabase.ts",
+      "path": "src/IndexedDbDatabase.ts"
+    },
+    "project": "@effect/platform-browser",
+    "name": "make",
+    "deprecated": false,
+    "examples": [],
+    "since": "4.0.0",
+    "category": "constructors",
+    "signature": "declare const make: <InitialVersion extends IndexedDbVersion.AnyWithProps, Error>(initialVersion: InitialVersion, init: (toQuery: Transaction<InitialVersion>) => Effect.Effect<void, Error>) => IndexedDbSchema<never, InitialVersion, Error>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbDatabase.ts#L225"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "IndexedDbDatabase.ts",
+      "path": "src/IndexedDbDatabase.ts"
+    },
+    "project": "@effect/platform-browser",
+    "name": "IndexedDbSchema",
+    "deprecated": false,
+    "examples": [],
+    "since": "4.0.0",
+    "category": "models",
+    "signature": "export interface IndexedDbSchema<\n  in out FromVersion extends IndexedDbVersion.AnyWithProps,\n  in out ToVersion extends IndexedDbVersion.AnyWithProps,\n  out Error = never\n> extends\n  Pipeable.Pipeable,\n  Inspectable.Inspectable,\n  Effect.YieldableClass<\n    IndexedDbQueryBuilder.IndexedDbQueryBuilder<ToVersion>,\n    never,\n    IndexedDbDatabase\n  >\n{\n  new(_: never): {}\n\n  readonly previous: [FromVersion] extends [never] ? undefined\n    : IndexedDbSchema<never, FromVersion, Error>\n  readonly fromVersion: FromVersion\n  readonly version: ToVersion\n\n  readonly migrate: [FromVersion] extends [never] ? (query: Transaction<ToVersion>) => Effect.Effect<void, Error>\n    : (\n      fromQuery: Transaction<FromVersion>,\n      toQuery: Transaction<ToVersion>\n    ) => Effect.Effect<void, Error>\n\n  readonly add: <Version extends IndexedDbVersion.AnyWithProps, MigrationError>(\n    version: Version,\n    migrate: (\n      fromQuery: Transaction<ToVersion>,\n      toQuery: Transaction<Version>\n    ) => Effect.Effect<void, MigrationError>\n  ) => IndexedDbSchema<ToVersion, Version, MigrationError | Error>\n\n  readonly getQueryBuilder: Effect.Effect<\n    IndexedDbQueryBuilder.IndexedDbQueryBuilder<ToVersion>,\n    never,\n    IndexedDbDatabase\n  >\n\n  readonly layer: (\n    databaseName: string\n  ) => Layer.Layer<\n    IndexedDbDatabase,\n    IndexedDbDatabaseError,\n    IndexedDb.IndexedDb\n  >\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbDatabase.ts#L90"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "IndexedDbDatabase.ts",
+      "path": "src/IndexedDbDatabase.ts"
+    },
+    "project": "@effect/platform-browser",
+    "name": "Transaction",
+    "deprecated": false,
+    "examples": [],
+    "since": "4.0.0",
+    "category": "models",
+    "signature": "export interface Transaction<\n  Source extends IndexedDbVersion.AnyWithProps = never\n> extends Pipeable.Pipeable, Omit<IndexedDbQueryBuilder.IndexedDbQueryBuilder<Source>, \"transaction\"> {\n  readonly transaction: globalThis.IDBTransaction\n\n  readonly createObjectStore: <\n    A extends IndexedDbTable.TableName<IndexedDbVersion.Tables<Source>>\n  >(\n    table: A\n  ) => Effect.Effect<globalThis.IDBObjectStore, IndexedDbDatabaseError>\n\n  readonly deleteObjectStore: <\n    A extends IndexedDbTable.TableName<IndexedDbVersion.Tables<Source>>\n  >(\n    table: A\n  ) => Effect.Effect<void, IndexedDbDatabaseError>\n\n  readonly createIndex: <\n    Name extends IndexedDbTable.TableName<IndexedDbVersion.Tables<Source>>\n  >(\n    table: Name,\n    indexName: IndexFromTableName<Source, Name>,\n    options?: IDBIndexParameters\n  ) => Effect.Effect<globalThis.IDBIndex, IndexedDbDatabaseError>\n\n  readonly deleteIndex: <\n    Name extends IndexedDbTable.TableName<IndexedDbVersion.Tables<Source>>\n  >(\n    table: Name,\n    indexName: IndexFromTableName<Source, Name>\n  ) => Effect.Effect<void, IndexedDbDatabaseError>\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbDatabase.ts#L143"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "IndexedDbDatabase.ts",
+      "path": "src/IndexedDbDatabase.ts"
+    },
+    "project": "@effect/platform-browser",
+    "name": "Any",
+    "deprecated": false,
+    "examples": [],
+    "since": "4.0.0",
+    "category": "models",
+    "signature": "export interface Any {\n  readonly previous?: Any | undefined\n  readonly layer: (\n    databaseName: string\n  ) => Layer.Layer<\n    IndexedDbDatabase,\n    IndexedDbDatabaseError,\n    IndexedDb.IndexedDb\n  >\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbDatabase.ts#L200"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "IndexedDbDatabase.ts",
+      "path": "src/IndexedDbDatabase.ts"
+    },
+    "project": "@effect/platform-browser",
+    "name": "ErrorReason",
+    "deprecated": false,
+    "examples": [],
+    "since": "4.0.0",
+    "category": "errors",
+    "signature": "type ErrorReason = | \"TransactionError\"\n  | \"MissingTable\"\n  | \"OpenError\"\n  | \"UpgradeError\"\n  | \"Aborted\"\n  | \"Blocked\"\n  | \"MissingIndex\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbDatabase.ts#L47"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "IndexedDbDatabase.ts",
+      "path": "src/IndexedDbDatabase.ts"
+    },
+    "project": "@effect/platform-browser",
+    "name": "IndexFromTable",
+    "deprecated": false,
+    "examples": [],
+    "since": "4.0.0",
+    "category": "models",
+    "signature": "type IndexFromTable<Table> = IsStringLiteral<\n  Extract<keyof IndexedDbTable.Indexes<Table>, string>\n> extends true ? Extract<keyof IndexedDbTable.Indexes<Table>, string>\n  : never",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbDatabase.ts#L180"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "IndexedDbDatabase.ts",
+      "path": "src/IndexedDbDatabase.ts"
+    },
+    "project": "@effect/platform-browser",
+    "name": "IndexFromTableName",
+    "deprecated": false,
+    "examples": [],
+    "since": "4.0.0",
+    "category": "models",
+    "signature": "type IndexFromTableName<Version, Table> = IndexFromTable<\n  IndexedDbTable.WithName<IndexedDbVersion.Tables<Version>, Table>\n>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbDatabase.ts#L189"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "IndexedDbDatabase.ts",
+      "path": "src/IndexedDbDatabase.ts"
+    },
+    "project": "@effect/platform-browser",
+    "name": "AnySchema",
+    "deprecated": false,
+    "examples": [],
+    "since": "4.0.0",
+    "category": "models",
+    "signature": "type AnySchema = IndexedDbSchema<\n  IndexedDbVersion.AnyWithProps,\n  IndexedDbVersion.AnyWithProps,\n  any\n>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbDatabase.ts#L215"
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "IndexedDbQueryBuilder.ts",
+      "path": "src/IndexedDbQueryBuilder.ts"
+    },
+    "project": "@effect/platform-browser",
+    "name": "IndexedDbQueryError",
+    "deprecated": false,
+    "examples": [],
+    "since": "4.0.0",
+    "category": "errors",
+    "signature": "declare class IndexedDbQueryError",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbQueryBuilder.ts#L54"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "IndexedDbQueryBuilder.ts",
+      "path": "src/IndexedDbQueryBuilder.ts"
+    },
+    "project": "@effect/platform-browser",
+    "name": "make",
+    "deprecated": false,
+    "examples": [],
+    "since": "4.0.0",
+    "category": "constructors",
+    "signature": "declare const make: <Source extends IndexedDbVersion.AnyWithProps>({ IDBKeyRange, database, tables, transaction, reactivity }: { readonly database: globalThis.IDBDatabase; readonly IDBKeyRange: typeof globalThis.IDBKeyRange; readonly tables: ReadonlyMap<string, IndexedDbVersion.Tables<Source>>; readonly transaction: globalThis.IDBTransaction | undefined; readonly reactivity: Reactivity.Reactivity[\"Service\"]; }) => IndexedDbQueryBuilder<Source>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbQueryBuilder.ts#L1875"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "IndexedDbQueryBuilder.ts",
+      "path": "src/IndexedDbQueryBuilder.ts"
+    },
+    "project": "@effect/platform-browser",
+    "name": "IndexedDbQueryBuilder",
+    "deprecated": false,
+    "examples": [],
+    "since": "4.0.0",
+    "category": "models",
+    "signature": "export interface IndexedDbQueryBuilder<\n  Source extends IndexedDbVersion.AnyWithProps\n> extends Pipeable.Pipeable, Inspectable {\n  readonly tables: ReadonlyMap<string, IndexedDbVersion.Tables<Source>>\n  readonly database: globalThis.IDBDatabase\n  readonly reactivity: Reactivity.Reactivity[\"Service\"]\n  readonly IDBKeyRange: typeof globalThis.IDBKeyRange\n  readonly IDBTransaction: globalThis.IDBTransaction | undefined\n\n  readonly use: <A = unknown>(\n    f: (database: globalThis.IDBDatabase) => Promise<A>\n  ) => Effect.Effect<A, IndexedDbQueryError>\n\n  readonly from: <\n    const Name extends IndexedDbTable.TableName<\n      IndexedDbVersion.Tables<Source>\n    >\n  >(\n    table: Name\n  ) => IndexedDbQuery.From<IndexedDbVersion.TableWithName<Source, Name>>\n\n  readonly clearAll: Effect.Effect<void, IndexedDbQueryError>\n\n  readonly transaction: <\n    Tables extends NonEmptyReadonlyArray<\n      IndexedDbTable.TableName<IndexedDbVersion.Tables<Source>>\n    >,\n    Mode extends \"readonly\" | \"readwrite\",\n    E,\n    R\n  >(\n    tables: Tables,\n    mode: Mode,\n    callback: (api: {\n      readonly from: <Name extends Tables[number]>(\n        table: Name\n      ) => Mode extends \"readwrite\" ? IndexedDbQuery.From<IndexedDbVersion.TableWithName<Source, Name>>\n        : Omit<\n          IndexedDbQuery.From<IndexedDbVersion.TableWithName<Source, Name>>,\n          \"insert\" | \"insertAll\" | \"upsert\" | \"upsertAll\" | \"clear\" | \"delete\"\n        >\n    }) => Effect.Effect<void, E, R>,\n    options?: globalThis.IDBTransactionOptions\n  ) => Effect.Effect<void, never, R>\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbQueryBuilder.ts#L72"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "IndexedDbQueryBuilder.ts",
+      "path": "src/IndexedDbQueryBuilder.ts"
+    },
+    "project": "@effect/platform-browser",
+    "name": "ErrorReason",
+    "deprecated": false,
+    "examples": [],
+    "since": "4.0.0",
+    "category": "errors",
+    "signature": "type ErrorReason = | \"NotFoundError\"\n  | \"UnknownError\"\n  | \"DecodeError\"\n  | \"EncodeError\"\n  | \"TransactionError\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbQueryBuilder.ts#L43"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "IndexedDbQueryBuilder.ts",
+      "path": "src/IndexedDbQueryBuilder.ts"
+    },
+    "project": "@effect/platform-browser",
+    "name": "KeyPath",
+    "deprecated": false,
+    "examples": [],
+    "since": "4.0.0",
+    "category": "models",
+    "signature": "type KeyPath<TableSchema> = | IndexedDbValidKeys<TableSchema>\n  | NonEmptyReadonlyArray<IndexedDbValidKeys<TableSchema>>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbQueryBuilder.ts#L122"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "IndexedDbQueryBuilder.ts",
+      "path": "src/IndexedDbQueryBuilder.ts"
+    },
+    "project": "@effect/platform-browser",
+    "name": "KeyPathNumber",
+    "deprecated": false,
+    "examples": [],
+    "since": "4.0.0",
+    "category": "models",
+    "signature": "type KeyPathNumber<TableSchema> = | IndexedDbValidNumberKeys<TableSchema>\n  | NonEmptyReadonlyArray<IndexedDbValidNumberKeys<TableSchema>>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbQueryBuilder.ts#L130"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "IndexedDbQueryBuilder.ts",
+      "path": "src/IndexedDbQueryBuilder.ts"
+    },
+    "project": "@effect/platform-browser",
+    "name": "IndexedDbQuery.From",
+    "deprecated": false,
+    "examples": [],
+    "since": "4.0.0",
+    "category": "models",
+    "signature": "export interface From<Table extends IndexedDbTable.AnyWithProps> {\n    readonly table: Table\n    readonly database: globalThis.IDBDatabase\n    readonly IDBKeyRange: typeof globalThis.IDBKeyRange\n    readonly transaction?: globalThis.IDBTransaction\n    readonly reactivity: Reactivity.Reactivity[\"Service\"]\n\n    readonly clear: Effect.Effect<void, IndexedDbQueryError>\n\n    readonly select: {\n      <Index extends IndexedDbDatabase.IndexFromTable<Table>>(\n        index: Index\n      ): Select<Table, Index>\n      (): Select<Table, never>\n    }\n\n    readonly count: {\n      <Index extends IndexedDbDatabase.IndexFromTable<Table>>(\n        index: Index\n      ): Count<Table, Index>\n      (): Count<Table, never>\n    }\n\n    readonly delete: {\n      <Index extends IndexedDbDatabase.IndexFromTable<Table>>(\n        index: Index\n      ): DeletePartial<Table, Index>\n      (): DeletePartial<Table, never>\n    }\n\n    readonly insert: (value: ModifyWithKey<Table>) => Modify<Table>\n    readonly insertAll: (\n      values: Array<ModifyWithKey<Table>>\n    ) => ModifyAll<Table>\n    readonly upsert: (value: ModifyWithKey<Table>) => Modify<Table>\n    readonly upsertAll: (\n      values: Array<ModifyWithKey<Table>>\n    ) => ModifyAll<Table>\n  }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbQueryBuilder.ts#L206"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "IndexedDbQueryBuilder.ts",
+      "path": "src/IndexedDbQueryBuilder.ts"
+    },
+    "project": "@effect/platform-browser",
+    "name": "IndexedDbQuery.Clear",
+    "deprecated": false,
+    "examples": [],
+    "since": "4.0.0",
+    "category": "models",
+    "signature": "export interface Clear<\n    Table extends IndexedDbTable.AnyWithProps\n  > extends Pipeable.Pipeable, Effect.YieldableClass<void, IndexedDbQueryError> {\n    readonly from: From<Table>\n  }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbQueryBuilder.ts#L250"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "IndexedDbQueryBuilder.ts",
+      "path": "src/IndexedDbQueryBuilder.ts"
+    },
+    "project": "@effect/platform-browser",
+    "name": "IndexedDbQuery.Count",
+    "deprecated": false,
+    "examples": [],
+    "since": "4.0.0",
+    "category": "models",
+    "signature": "export interface Count<\n    Table extends IndexedDbTable.AnyWithProps,\n    Index extends IndexedDbDatabase.IndexFromTable<Table>\n  > extends Pipeable.Pipeable, Effect.YieldableClass<number, IndexedDbQueryError> {\n    readonly from: From<Table>\n    readonly index?: Index\n    readonly only?: ExtractIndexType<Table, Index>\n    readonly lowerBound?: ExtractIndexType<Table, Index>\n    readonly upperBound?: ExtractIndexType<Table, Index>\n    readonly excludeLowerBound?: boolean\n    readonly excludeUpperBound?: boolean\n    readonly limitValue?: number | undefined\n\n    readonly equals: (\n      value: ExtractIndexType<Table, Index>\n    ) => Omit<\n      Count<Table, Index>,\n      \"equals\" | \"gte\" | \"lte\" | \"gt\" | \"lt\" | \"between\"\n    >\n\n    readonly gte: (\n      value: ExtractIndexType<Table, Index>\n    ) => Omit<\n      Count<Table, Index>,\n      \"equals\" | \"gte\" | \"lte\" | \"gt\" | \"lt\" | \"between\"\n    >\n\n    readonly lte: (\n      value: ExtractIndexType<Table, Index>\n    ) => Omit<\n      Count<Table, Index>,\n      \"equals\" | \"gte\" | \"lte\" | \"gt\" | \"lt\" | \"between\"\n    >\n\n    readonly gt: (\n      value: ExtractIndexType<Table, Index>\n    ) => Omit<\n      Count<Table, Index>,\n      \"equals\" | \"gte\" | \"lte\" | \"gt\" | \"lt\" | \"between\"\n    >\n\n    readonly lt: (\n      value: ExtractIndexType<Table, Index>\n    ) => Omit<\n      Count<Table, Index>,\n      \"equals\" | \"gte\" | \"lte\" | \"gt\" | \"lt\" | \"between\"\n    >\n\n    readonly between: (\n      lowerBound: ExtractIndexType<Table, Index>,\n      upperBound: ExtractIndexType<Table, Index>,\n      options?: { excludeLowerBound?: boolean; excludeUpperBound?: boolean }\n    ) => Omit<\n      Count<Table, Index>,\n      \"equals\" | \"gte\" | \"lte\" | \"gt\" | \"lt\" | \"between\"\n    >\n  }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbQueryBuilder.ts#L260"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "IndexedDbQueryBuilder.ts",
+      "path": "src/IndexedDbQueryBuilder.ts"
+    },
+    "project": "@effect/platform-browser",
+    "name": "IndexedDbQuery.DeletePartial",
+    "deprecated": false,
+    "examples": [],
+    "since": "4.0.0",
+    "category": "models",
+    "signature": "export interface DeletePartial<\n    Table extends IndexedDbTable.AnyWithProps,\n    Index extends IndexedDbDatabase.IndexFromTable<Table>\n  > {\n    readonly from: From<Table>\n    readonly index?: Index\n\n    readonly equals: (\n      value: ExtractIndexType<Table, Index>\n    ) => Omit<\n      Delete<Table, Index>,\n      \"equals\" | \"gte\" | \"lte\" | \"gt\" | \"lt\" | \"between\"\n    >\n\n    readonly gte: (\n      value: ExtractIndexType<Table, Index>\n    ) => Omit<\n      Delete<Table, Index>,\n      \"equals\" | \"gte\" | \"lte\" | \"gt\" | \"lt\" | \"between\"\n    >\n\n    readonly lte: (\n      value: ExtractIndexType<Table, Index>\n    ) => Omit<\n      Delete<Table, Index>,\n      \"equals\" | \"gte\" | \"lte\" | \"gt\" | \"lt\" | \"between\"\n    >\n\n    readonly gt: (\n      value: ExtractIndexType<Table, Index>\n    ) => Omit<\n      Delete<Table, Index>,\n      \"equals\" | \"gte\" | \"lte\" | \"gt\" | \"lt\" | \"between\"\n    >\n\n    readonly lt: (\n      value: ExtractIndexType<Table, Index>\n    ) => Omit<\n      Delete<Table, Index>,\n      \"equals\" | \"gte\" | \"lte\" | \"gt\" | \"lt\" | \"between\"\n    >\n\n    readonly between: (\n      lowerBound: ExtractIndexType<Table, Index>,\n      upperBound: ExtractIndexType<Table, Index>,\n      options?: { excludeLowerBound?: boolean; excludeUpperBound?: boolean }\n    ) => Omit<\n      Delete<Table, Index>,\n      \"equals\" | \"gte\" | \"lte\" | \"gt\" | \"lt\" | \"between\"\n    >\n\n    readonly limit: (\n      limit: number\n    ) => Omit<\n      Delete<Table, Index>,\n      \"limit\" | \"equals\" | \"gte\" | \"lte\" | \"gt\" | \"lt\" | \"between\"\n    >\n  }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbQueryBuilder.ts#L322"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "IndexedDbQueryBuilder.ts",
+      "path": "src/IndexedDbQueryBuilder.ts"
+    },
+    "project": "@effect/platform-browser",
+    "name": "IndexedDbQuery.Delete",
+    "deprecated": false,
+    "examples": [],
+    "since": "4.0.0",
+    "category": "models",
+    "signature": "export interface Delete<\n    Table extends IndexedDbTable.AnyWithProps,\n    Index extends IndexedDbDatabase.IndexFromTable<Table>\n  > extends Pipeable.Pipeable, Effect.YieldableClass<void, IndexedDbQueryError> {\n    readonly delete: DeletePartial<Table, Index>\n    readonly index?: Index\n    readonly limitValue?: number\n    readonly only?: ExtractIndexType<Table, Index>\n    readonly lowerBound?: ExtractIndexType<Table, Index>\n    readonly upperBound?: ExtractIndexType<Table, Index>\n    readonly excludeLowerBound?: boolean\n    readonly excludeUpperBound?: boolean\n    readonly predicate?: (item: IndexedDbTable.Encoded<Table>) => boolean\n\n    readonly equals: (\n      value: ExtractIndexType<Table, Index>\n    ) => Omit<\n      Delete<Table, Index>,\n      \"equals\" | \"gte\" | \"lte\" | \"gt\" | \"lt\" | \"between\"\n    >\n\n    readonly gte: (\n      value: ExtractIndexType<Table, Index>\n    ) => Omit<\n      Delete<Table, Index>,\n      \"equals\" | \"gte\" | \"lte\" | \"gt\" | \"lt\" | \"between\"\n    >\n\n    readonly lte: (\n      value: ExtractIndexType<Table, Index>\n    ) => Omit<\n      Delete<Table, Index>,\n      \"equals\" | \"gte\" | \"lte\" | \"gt\" | \"lt\" | \"between\"\n    >\n\n    readonly gt: (\n      value: ExtractIndexType<Table, Index>\n    ) => Omit<\n      Delete<Table, Index>,\n      \"equals\" | \"gte\" | \"lte\" | \"gt\" | \"lt\" | \"between\"\n    >\n\n    readonly lt: (\n      value: ExtractIndexType<Table, Index>\n    ) => Omit<\n      Delete<Table, Index>,\n      \"equals\" | \"gte\" | \"lte\" | \"gt\" | \"lt\" | \"between\"\n    >\n\n    readonly between: (\n      lowerBound: ExtractIndexType<Table, Index>,\n      upperBound: ExtractIndexType<Table, Index>,\n      options?: { excludeLowerBound?: boolean; excludeUpperBound?: boolean }\n    ) => Omit<\n      Delete<Table, Index>,\n      \"equals\" | \"gte\" | \"lte\" | \"gt\" | \"lt\" | \"between\"\n    >\n\n    readonly limit: (\n      limit: number\n    ) => Omit<\n      Delete<Table, Index>,\n      \"limit\" | \"equals\" | \"gte\" | \"lte\" | \"gt\" | \"lt\" | \"between\"\n    >\n\n    readonly filter: (\n      f: (value: IndexedDbTable.Encoded<Table>) => boolean\n    ) => Delete<Table, Index>\n\n    readonly invalidate: (\n      keys: ReadonlyArray<unknown> | Record.ReadonlyRecord<string, ReadonlyArray<unknown>>\n    ) => Effect.Effect<void, IndexedDbQueryError, IndexedDbTable.Context<Table>>\n  }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbQueryBuilder.ts#L385"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "IndexedDbQueryBuilder.ts",
+      "path": "src/IndexedDbQueryBuilder.ts"
+    },
+    "project": "@effect/platform-browser",
+    "name": "IndexedDbQuery.Select",
+    "deprecated": false,
+    "examples": [],
+    "since": "4.0.0",
+    "category": "models",
+    "signature": "export interface Select<\n    Table extends IndexedDbTable.AnyWithProps,\n    Index extends IndexedDbDatabase.IndexFromTable<Table>\n  > extends\n    Pipeable.Pipeable,\n    Effect.YieldableClass<\n      Array<SourceTableSelectSchemaType<Table>>,\n      IndexedDbQueryError,\n      IndexedDbTable.Context<Table>\n    >\n  {\n    readonly from: From<Table>\n    readonly index?: Index\n    readonly limitValue?: number\n    readonly only?: ExtractIndexType<Table, Index>\n    readonly lowerBound?: ExtractIndexType<Table, Index>\n    readonly upperBound?: ExtractIndexType<Table, Index>\n    readonly excludeLowerBound?: boolean\n    readonly excludeUpperBound?: boolean\n    readonly predicate?: (item: IndexedDbTable.Encoded<Table>) => boolean\n\n    readonly equals: (\n      value: ExtractIndexType<Table, Index>\n    ) => Omit<\n      Select<Table, Index>,\n      \"equals\" | \"gte\" | \"lte\" | \"gt\" | \"lt\" | \"between\"\n    >\n\n    readonly gte: (\n      value: ExtractIndexType<Table, Index>\n    ) => Omit<\n      Select<Table, Index>,\n      \"equals\" | \"gte\" | \"lte\" | \"gt\" | \"lt\" | \"between\"\n    >\n\n    readonly lte: (\n      value: ExtractIndexType<Table, Index>\n    ) => Omit<\n      Select<Table, Index>,\n      \"equals\" | \"gte\" | \"lte\" | \"gt\" | \"lt\" | \"between\"\n    >\n\n    readonly gt: (\n      value: ExtractIndexType<Table, Index>\n    ) => Omit<\n      Select<Table, Index>,\n      \"equals\" | \"gte\" | \"lte\" | \"gt\" | \"lt\" | \"between\"\n    >\n\n    readonly lt: (\n      value: ExtractIndexType<Table, Index>\n    ) => Omit<\n      Select<Table, Index>,\n      \"equals\" | \"gte\" | \"lte\" | \"gt\" | \"lt\" | \"between\"\n    >\n\n    readonly between: (\n      lowerBound: ExtractIndexType<Table, Index>,\n      upperBound: ExtractIndexType<Table, Index>,\n      options?: { excludeLowerBound?: boolean; excludeUpperBound?: boolean }\n    ) => Omit<\n      Select<Table, Index>,\n      \"equals\" | \"gte\" | \"lte\" | \"gt\" | \"lt\" | \"between\"\n    >\n\n    readonly limit: (\n      limit: number\n    ) => Omit<\n      Select<Table, Index>,\n      \"limit\" | \"equals\" | \"gte\" | \"lte\" | \"gt\" | \"lt\" | \"between\" | \"first\"\n    >\n\n    readonly filter: (\n      f: (value: IndexedDbTable.Encoded<Table>) => boolean\n    ) => Select<Table, Index>\n\n    readonly first: () => First<Table, Index>\n\n    readonly reactive: (\n      keys: ReadonlyArray<unknown> | Record.ReadonlyRecord<string, ReadonlyArray<unknown>>\n    ) => Stream.Stream<\n      Array<SourceTableSelectSchemaType<Table>>,\n      IndexedDbQueryError,\n      IndexedDbTable.Context<Table>\n    >\n    readonly reactiveQueue: (\n      keys: ReadonlyArray<unknown> | Record.ReadonlyRecord<string, ReadonlyArray<unknown>>\n    ) => Effect.Effect<\n      Queue.Dequeue<Array<SourceTableSelectSchemaType<Table>>, IndexedDbQueryError>,\n      never,\n      Scope.Scope | IndexedDbTable.Context<Table>\n    >\n  }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbQueryBuilder.ts#L463"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "IndexedDbQueryBuilder.ts",
+      "path": "src/IndexedDbQueryBuilder.ts"
+    },
+    "project": "@effect/platform-browser",
+    "name": "IndexedDbQuery.First",
+    "deprecated": false,
+    "examples": [],
+    "since": "4.0.0",
+    "category": "models",
+    "signature": "export interface First<\n    Table extends IndexedDbTable.AnyWithProps,\n    Index extends IndexedDbDatabase.IndexFromTable<Table>\n  > extends\n    Pipeable.Pipeable,\n    Effect.YieldableClass<\n      SourceTableSelectSchemaType<Table>,\n      IndexedDbQueryError,\n      IndexedDbTable.Context<Table>\n    >\n  {\n    readonly select: Select<Table, Index>\n  }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbQueryBuilder.ts#L561"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "IndexedDbQueryBuilder.ts",
+      "path": "src/IndexedDbQueryBuilder.ts"
+    },
+    "project": "@effect/platform-browser",
+    "name": "IndexedDbQuery.Filter",
+    "deprecated": false,
+    "examples": [],
+    "since": "4.0.0",
+    "category": "models",
+    "signature": "export interface Filter<\n    Table extends IndexedDbTable.AnyWithProps,\n    Index extends IndexedDbDatabase.IndexFromTable<Table>\n  > extends\n    Pipeable.Pipeable,\n    Effect.YieldableClass<\n      Array<SourceTableSelectSchemaType<Table>>,\n      IndexedDbQueryError,\n      IndexedDbTable.Context<Table>\n    >\n  {\n    readonly select: Select<Table, Index>\n    readonly predicate: (item: IndexedDbTable.Encoded<Table>) => boolean\n    readonly filter: (\n      f: (value: IndexedDbTable.Encoded<Table>) => boolean\n    ) => Filter<Table, Index>\n  }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbQueryBuilder.ts#L579"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "IndexedDbQueryBuilder.ts",
+      "path": "src/IndexedDbQueryBuilder.ts"
+    },
+    "project": "@effect/platform-browser",
+    "name": "IndexedDbQuery.Modify",
+    "deprecated": false,
+    "examples": [],
+    "since": "4.0.0",
+    "category": "models",
+    "signature": "export interface Modify<\n    Table extends IndexedDbTable.AnyWithProps\n  > extends\n    Pipeable.Pipeable,\n    Effect.YieldableClass<\n      globalThis.IDBValidKey,\n      IndexedDbQueryError,\n      IndexedDbTable.Context<Table>\n    >\n  {\n    readonly operation: \"add\" | \"put\"\n    readonly from: From<Table>\n    readonly value: ModifyWithKey<Table>\n    readonly invalidate: (\n      keys: ReadonlyArray<unknown> | Record.ReadonlyRecord<string, ReadonlyArray<unknown>>\n    ) => Effect.Effect<globalThis.IDBValidKey, IndexedDbQueryError, IndexedDbTable.Context<Table>>\n  }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbQueryBuilder.ts#L601"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "IndexedDbQueryBuilder.ts",
+      "path": "src/IndexedDbQueryBuilder.ts"
+    },
+    "project": "@effect/platform-browser",
+    "name": "IndexedDbQuery.ModifyAll",
+    "deprecated": false,
+    "examples": [],
+    "since": "4.0.0",
+    "category": "models",
+    "signature": "export interface ModifyAll<\n    Table extends IndexedDbTable.AnyWithProps\n  > extends\n    Pipeable.Pipeable,\n    Effect.YieldableClass<\n      Array<globalThis.IDBValidKey>,\n      IndexedDbQueryError,\n      IndexedDbTable.Context<Table>\n    >\n  {\n    readonly operation: \"add\" | \"put\"\n    readonly from: From<Table>\n    readonly values: Array<ModifyWithKey<Table>>\n    readonly invalidate: (\n      keys: ReadonlyArray<unknown> | Record.ReadonlyRecord<string, ReadonlyArray<unknown>>\n    ) => Effect.Effect<Array<globalThis.IDBValidKey>, IndexedDbQueryError, IndexedDbTable.Context<Table>>\n  }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbQueryBuilder.ts#L623"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "IndexedDbQueryBuilder.ts",
+      "path": "src/IndexedDbQueryBuilder.ts"
+    },
+    "project": "@effect/platform-browser",
+    "name": "IndexedDbQuery.SourceTableSelectSchemaType",
+    "deprecated": false,
+    "examples": [],
+    "since": "4.0.0",
+    "category": "models",
+    "signature": "type SourceTableSelectSchemaType<Table> = [IndexedDbTable.KeyPath<Table>] extends [undefined] ? IndexedDbTable.TableSchema<Table>[\"Type\"] & {\n      readonly key: (typeof IndexedDb.IDBValidKey)[\"Type\"]\n    } :\n    IndexedDbTable.TableSchema<Table>[\"Type\"]",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbQueryBuilder.ts#L143"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "IndexedDbQueryBuilder.ts",
+      "path": "src/IndexedDbQueryBuilder.ts"
+    },
+    "project": "@effect/platform-browser",
+    "name": "IndexedDbQuery.SourceTableModifySchemaType",
+    "deprecated": false,
+    "examples": [],
+    "since": "4.0.0",
+    "category": "models",
+    "signature": "type SourceTableModifySchemaType<Table> = & (IndexedDbTable.AutoIncrement<Table> extends true ?\n        & {\n          [\n            key in keyof Schema.Struct.MakeIn<\n              Omit<\n                IndexedDbTable.TableSchema<Table>[\"fields\"],\n                IndexedDbTable.KeyPath<Table>\n              >\n            >\n          ]: key extends keyof Schema.Struct.MakeIn<\n            IndexedDbTable.TableSchema<Table>[\"fields\"]\n          > ? Schema.Struct.MakeIn<\n              IndexedDbTable.TableSchema<Table>[\"fields\"]\n            >[key]\n            : never\n        }\n        & {\n          [key in IndexedDbTable.KeyPath<Table>]?: number | undefined\n        }\n      : Schema.Struct.MakeIn<IndexedDbTable.TableSchema<Table>[\"fields\"]>)\n    & ([IndexedDbTable.KeyPath<Table>] extends [undefined] ? {\n        key: IDBValidKey\n      }\n      : {})",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbQueryBuilder.ts#L154"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "IndexedDbQueryBuilder.ts",
+      "path": "src/IndexedDbQueryBuilder.ts"
+    },
+    "project": "@effect/platform-browser",
+    "name": "IndexedDbQuery.ExtractIndexType",
+    "deprecated": false,
+    "examples": [],
+    "since": "4.0.0",
+    "category": "models",
+    "signature": "type ExtractIndexType<Table, Index> = [Index] extends [never] ? Schema.Schema.Type<\n      IndexedDbTable.TableSchema<Table>\n    >[IndexedDbTable.KeyPath<Table>]\n    : Schema.Schema.Type<\n      IndexedDbTable.TableSchema<Table>\n    >[IndexedDbTable.Indexes<Table>[Index]]",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbQueryBuilder.ts#L186"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "IndexedDbQueryBuilder.ts",
+      "path": "src/IndexedDbQueryBuilder.ts"
+    },
+    "project": "@effect/platform-browser",
+    "name": "IndexedDbQuery.ModifyWithKey",
+    "deprecated": false,
+    "examples": [],
+    "since": "4.0.0",
+    "category": "models",
+    "signature": "type ModifyWithKey<Table> = SourceTableModifySchemaType<Table>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbQueryBuilder.ts#L200"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "IndexedDbTable.ts",
+      "path": "src/IndexedDbTable.ts"
+    },
+    "project": "@effect/platform-browser",
+    "name": "make",
+    "deprecated": false,
+    "examples": [],
+    "since": "4.0.0",
+    "category": "constructors",
+    "signature": "declare const make: <const Name extends string, TableSchema extends AnySchemaStruct, const Indexes extends Record<string, IndexedDbQueryBuilder.KeyPath<TableSchema>>, const KeyPath extends (AutoIncrement extends true ? IndexedDbQueryBuilder.KeyPathNumber<NoInfer<TableSchema>> : IndexedDbQueryBuilder.KeyPath<NoInfer<TableSchema>>) | undefined = undefined, const AutoIncrement extends boolean = false>(options: { readonly name: Name; readonly schema: [KeyPath] extends [undefined] ? \"key\" extends keyof TableSchema[\"fields\"] ? \"Cannot have a 'key' field when keyPath is undefined\" : TableSchema : TableSchema; readonly keyPath?: KeyPath; readonly indexes?: Indexes | undefined; readonly autoIncrement?: IsValidAutoIncrementKeyPath<TableSchema, KeyPath> extends true ? AutoIncrement | undefined : never; }) => IndexedDbTable<Name, TableSchema, Indexes, Extract<KeyPath, Readonly<IDBValidKey | undefined>>, AutoIncrement>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbTable.ts#L145"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "IndexedDbTable.ts",
+      "path": "src/IndexedDbTable.ts"
+    },
+    "project": "@effect/platform-browser",
+    "name": "IndexedDbTable",
+    "deprecated": false,
+    "examples": [],
+    "since": "4.0.0",
+    "category": "interface",
+    "signature": "export interface IndexedDbTable<\n  out Name extends string,\n  out TableSchema extends AnySchemaStruct,\n  out Indexes extends Record<\n    string,\n    IndexedDbQueryBuilder.KeyPath<TableSchema>\n  >,\n  out KeyPath extends Readonly<IDBValidKey | undefined>,\n  out AutoIncrement extends boolean\n> extends Pipeable {\n  new(_: never): {}\n  readonly [TypeId]: typeof TypeId\n  readonly tableName: Name\n  readonly tableSchema: TableSchema\n  readonly readSchema: Schema.Top\n  readonly autoincrementSchema: Schema.Top\n  readonly arraySchema: Schema.Top\n  readonly keyPath: KeyPath\n  readonly indexes: Indexes\n  readonly autoIncrement: AutoIncrement\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbTable.ts#L17"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "IndexedDbTable.ts",
+      "path": "src/IndexedDbTable.ts"
+    },
+    "project": "@effect/platform-browser",
+    "name": "Any",
+    "deprecated": false,
+    "examples": [],
+    "since": "4.0.0",
+    "category": "models",
+    "signature": "export interface Any {\n  readonly [TypeId]: typeof TypeId\n  readonly keyPath: any\n  readonly tableName: string\n  readonly tableSchema: Schema.Top\n  readonly readSchema: Schema.Top\n  readonly autoincrementSchema: Schema.Top\n  readonly arraySchema: Schema.Top\n  readonly autoIncrement: boolean\n  readonly indexes: any\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbTable.ts#L59"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "IndexedDbTable.ts",
+      "path": "src/IndexedDbTable.ts"
+    },
+    "project": "@effect/platform-browser",
+    "name": "AnySchemaStruct",
+    "deprecated": false,
+    "examples": [],
+    "since": "4.0.0",
+    "category": "models",
+    "signature": "type AnySchemaStruct = Schema.Top & {\n  readonly fields: Schema.Struct.Fields\n  mapFields<To extends Schema.Struct.Fields>(\n    f: (fields: Schema.Struct.Fields) => To,\n    options?:\n      | {\n        readonly unsafePreserveChecks?: boolean | undefined\n      }\n      | undefined\n  ): Schema.Struct<To>\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbTable.ts#L43"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "IndexedDbTable.ts",
+      "path": "src/IndexedDbTable.ts"
+    },
+    "project": "@effect/platform-browser",
+    "name": "AnyWithProps",
+    "deprecated": false,
+    "examples": [],
+    "since": "4.0.0",
+    "category": "models",
+    "signature": "type AnyWithProps = IndexedDbTable<\n  string,\n  AnySchemaStruct,\n  any,\n  any,\n  boolean\n>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbTable.ts#L75"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "IndexedDbTable.ts",
+      "path": "src/IndexedDbTable.ts"
+    },
+    "project": "@effect/platform-browser",
+    "name": "TableName",
+    "deprecated": false,
+    "examples": [],
+    "since": "4.0.0",
+    "category": "models",
+    "signature": "type TableName<Table> = Table[\"tableName\"]",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbTable.ts#L87"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "IndexedDbTable.ts",
+      "path": "src/IndexedDbTable.ts"
+    },
+    "project": "@effect/platform-browser",
+    "name": "KeyPath",
+    "deprecated": false,
+    "examples": [],
+    "since": "4.0.0",
+    "category": "models",
+    "signature": "type KeyPath<Table> = Table[\"keyPath\"]",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbTable.ts#L92"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "IndexedDbTable.ts",
+      "path": "src/IndexedDbTable.ts"
+    },
+    "project": "@effect/platform-browser",
+    "name": "AutoIncrement",
+    "deprecated": false,
+    "examples": [],
+    "since": "4.0.0",
+    "category": "models",
+    "signature": "type AutoIncrement<Table> = Table[\"autoIncrement\"]",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbTable.ts#L98"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "IndexedDbTable.ts",
+      "path": "src/IndexedDbTable.ts"
+    },
+    "project": "@effect/platform-browser",
+    "name": "TableSchema",
+    "deprecated": false,
+    "examples": [],
+    "since": "4.0.0",
+    "category": "models",
+    "signature": "type TableSchema<Table> = Table[\"tableSchema\"]",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbTable.ts#L104"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "IndexedDbTable.ts",
+      "path": "src/IndexedDbTable.ts"
+    },
+    "project": "@effect/platform-browser",
+    "name": "Context",
+    "deprecated": false,
+    "examples": [],
+    "since": "4.0.0",
+    "category": "models",
+    "signature": "type Context<Table> = | Table[\"tableSchema\"][\"DecodingServices\"]\n  | Table[\"tableSchema\"][\"EncodingServices\"]",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbTable.ts#L109"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "IndexedDbTable.ts",
+      "path": "src/IndexedDbTable.ts"
+    },
+    "project": "@effect/platform-browser",
+    "name": "Encoded",
+    "deprecated": false,
+    "examples": [],
+    "since": "4.0.0",
+    "category": "models",
+    "signature": "type Encoded<Table> = Table[\"tableSchema\"][\"Encoded\"]",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbTable.ts#L117"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "IndexedDbTable.ts",
+      "path": "src/IndexedDbTable.ts"
+    },
+    "project": "@effect/platform-browser",
+    "name": "Indexes",
+    "deprecated": false,
+    "examples": [],
+    "since": "4.0.0",
+    "category": "models",
+    "signature": "type Indexes<Table> = Table[\"indexes\"]",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbTable.ts#L123"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "IndexedDbTable.ts",
+      "path": "src/IndexedDbTable.ts"
+    },
+    "project": "@effect/platform-browser",
+    "name": "WithName",
+    "deprecated": false,
+    "examples": [],
+    "since": "4.0.0",
+    "category": "models",
+    "signature": "type WithName<Table, TableName> = Extract<\n  Table,\n  { readonly tableName: TableName }\n>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbTable.ts#L129"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "IndexedDbVersion.ts",
+      "path": "src/IndexedDbVersion.ts"
+    },
+    "project": "@effect/platform-browser",
+    "name": "make",
+    "deprecated": false,
+    "examples": [],
+    "since": "4.0.0",
+    "category": "constructors",
+    "signature": "declare const make: <const Tables extends NonEmptyReadonlyArray<IndexedDbTable.AnyWithProps>>(...tables: Tables) => IndexedDbVersion<Tables[number]>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbVersion.ts#L82"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "IndexedDbVersion.ts",
+      "path": "src/IndexedDbVersion.ts"
+    },
+    "project": "@effect/platform-browser",
+    "name": "IndexedDbVersion",
+    "deprecated": false,
+    "examples": [],
+    "since": "4.0.0",
+    "category": "interface",
+    "signature": "export interface IndexedDbVersion<\n  out Tables extends IndexedDbTable.AnyWithProps\n> extends Pipeable {\n  new(_: never): {}\n  readonly [TypeId]: typeof TypeId\n  readonly tables: ReadonlyMap<string, Tables>\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbVersion.ts#L15"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "IndexedDbVersion.ts",
+      "path": "src/IndexedDbVersion.ts"
+    },
+    "project": "@effect/platform-browser",
+    "name": "Any",
+    "deprecated": false,
+    "examples": [],
+    "since": "4.0.0",
+    "category": "models",
+    "signature": "export interface Any {\n  readonly [TypeId]: typeof TypeId\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbVersion.ts#L27"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "IndexedDbVersion.ts",
+      "path": "src/IndexedDbVersion.ts"
+    },
+    "project": "@effect/platform-browser",
+    "name": "AnyWithProps",
+    "deprecated": false,
+    "examples": [],
+    "since": "4.0.0",
+    "category": "models",
+    "signature": "type AnyWithProps = IndexedDbVersion<IndexedDbTable.AnyWithProps>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbVersion.ts#L35"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "IndexedDbVersion.ts",
+      "path": "src/IndexedDbVersion.ts"
+    },
+    "project": "@effect/platform-browser",
+    "name": "Tables",
+    "deprecated": false,
+    "examples": [],
+    "since": "4.0.0",
+    "category": "models",
+    "signature": "type Tables<Db> = Db extends IndexedDbVersion<infer _Tables> ? _Tables : never",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbVersion.ts#L41"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "IndexedDbVersion.ts",
+      "path": "src/IndexedDbVersion.ts"
+    },
+    "project": "@effect/platform-browser",
+    "name": "TableWithName",
+    "deprecated": false,
+    "examples": [],
+    "since": "4.0.0",
+    "category": "models",
+    "signature": "type TableWithName<Db, TableName> = IndexedDbTable.WithName<Tables<Db>, TableName>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbVersion.ts#L47"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "IndexedDbVersion.ts",
+      "path": "src/IndexedDbVersion.ts"
+    },
+    "project": "@effect/platform-browser",
+    "name": "SchemaWithName",
+    "deprecated": false,
+    "examples": [],
+    "since": "4.0.0",
+    "category": "models",
+    "signature": "type SchemaWithName<Db, TableName> = IndexedDbTable.TableSchema<IndexedDbTable.WithName<Tables<Db>, TableName>>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbVersion.ts#L56"
   },
   {
     "_tag": "Class",

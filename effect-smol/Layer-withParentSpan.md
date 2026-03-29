@@ -65,6 +65,6 @@ const program = Effect.withSpan("application-startup")(
 declare const withParentSpan: { (span: Tracer.AnySpan, options?: Tracer.TraceOptions): <A, E, R>(self: Layer<A, E, R>) => Layer<A, E, Exclude<R, Tracer.ParentSpan>>; <A, E, R>(self: Layer<A, E, R>, span: Tracer.AnySpan, options?: Tracer.TraceOptions): Layer<A, E, Exclude<R, Tracer.ParentSpan>>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L2281)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L2308)
 
 Since v4.0.0

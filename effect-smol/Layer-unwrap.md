@@ -31,6 +31,6 @@ const unwrappedLayer = Layer.unwrap(layerEffect)
 declare const unwrap: <A, E1, R1, E, R>(self: Effect<Layer<A, E1, R1>, E, R>) => Layer<A, E | E1, R1 | Exclude<R, Scope.Scope>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L871)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L898)
 
 Since v4.0.0

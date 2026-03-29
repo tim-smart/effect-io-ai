@@ -12,6 +12,6 @@ that adhere to the provided schemas.
 declare const make: <const Type extends string, Rpcs extends ReadonlyArray<Rpc.Any>>(type: Type, protocol: Rpcs) => Entity<Type, Rpcs[number]>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Entity.ts#L382)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Entity.ts#L393)
 
 Since v4.0.0

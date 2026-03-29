@@ -22,6 +22,6 @@ type PartialEffectful<A> = Types.Simplify<
 >
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L1783)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L1810)
 
 Since v4.0.0
