@@ -8,10 +8,10 @@ Runs an effect synchronously with provided services, returning an Exit result.
 **Example**
 
 ```ts
-import { Effect, Exit, ServiceMap } from "effect"
+import { Effect, Exit, Context } from "effect"
 
 // Define a logger service
-const Logger = ServiceMap.Service<{
+const Logger = Context.Service<{
   log: (msg: string) => void
 }>("Logger")
 
@@ -21,12 +21,12 @@ const program = Effect.gen(function*() {
   return 42
 })
 
-// Prepare services
-const services = ServiceMap.make(Logger, {
+// Prepare context
+const context = Context.make(Logger, {
   log: (msg) => console.log(`[LOG] ${msg}`)
 })
 
-const exit = Effect.runSyncExitWith(services)(program)
+const exit = Effect.runSyncExitWith(context)(program)
 
 if (Exit.isSuccess(exit)) {
   console.log(`Success: ${exit.value}`)
@@ -41,7 +41,7 @@ if (Exit.isSuccess(exit)) {
 **Signature**
 
 ```ts
-declare const runSyncExitWith: <R>(services: ServiceMap.ServiceMap<R>) => <A, E>(effect: Effect<A, E, R>) => Exit.Exit<A, E>
+declare const runSyncExitWith: <R>(context: Context.Context<R>) => <A, E>(effect: Effect<A, E, R>) => Exit.Exit<A, E>
 ```
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L8795)

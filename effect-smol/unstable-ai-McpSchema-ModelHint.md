@@ -14,6 +14,6 @@ to the client to interpret.
 declare class ModelHint
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L1428)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L1430)
 
 Since v4.0.0

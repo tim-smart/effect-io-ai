@@ -30,6 +30,6 @@ console.log(error.message)
 declare class InvalidToolResultError
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AiError.ts#L1049)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AiError.ts#L1050)
 
 Since v1.0.0

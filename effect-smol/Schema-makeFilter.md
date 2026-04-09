@@ -25,6 +25,6 @@ const EvenNumber = Schema.Number.check(isEven)
 declare const makeFilter: <T>(filter: (input: T, ast: AST.AST, options: AST.ParseOptions) => undefined | boolean | string | Issue.Issue | { readonly path: ReadonlyArray<PropertyKey>; readonly message: string; }, annotations?: Annotations.Filter | undefined, abort?: boolean) => AST.Filter<T>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L4881)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L4850)
 
 Since v4.0.0

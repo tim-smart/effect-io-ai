@@ -44,7 +44,6 @@ export interface Bottom<
   readonly ast: Ast
   readonly "~rebuild.out": RebuildOut
   readonly "~type.parameters": TypeParameters
-  readonly "~annotate.in": Annotations.Bottom<T, TypeParameters>
 
   readonly "Type": T
   readonly "Encoded": E
@@ -61,18 +60,19 @@ export interface Bottom<
   readonly "~encoded.mutability": EncodedMutability
   readonly "~encoded.optionality": EncodedOptionality
 
-  annotate(annotations: this["~annotate.in"]): this["~rebuild.out"]
+  annotate(annotations: Annotations.Bottom<this["Type"], this["~type.parameters"]>): this["~rebuild.out"]
   annotateKey(annotations: Annotations.Key<this["Type"]>): this["~rebuild.out"]
   check(...checks: readonly [AST.Check<this["Type"]>, ...Array<AST.Check<this["Type"]>>]): this["~rebuild.out"]
   rebuild(ast: this["ast"]): this["~rebuild.out"]
   /**
    * @throws {Error} The issue is contained in the error cause.
    */
-  makeUnsafe(input: this["~type.make.in"], options?: MakeOptions): this["Type"]
+  make(input: this["~type.make.in"], options?: MakeOptions): this["Type"]
   makeOption(input: this["~type.make.in"], options?: MakeOptions): Option_.Option<this["Type"]>
+  makeEffect(input: this["~type.make.in"], options?: MakeOptions): Effect.Effect<this["Type"], SchemaError>
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L210)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L212)
 
 Since v4.0.0

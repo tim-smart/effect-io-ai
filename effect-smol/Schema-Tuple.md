@@ -3,7 +3,7 @@ Module: `Schema`<br />
 
 ## Schema.Tuple
 
-Schema type for a fixed-length tuple. Produced by `Tuple`.
+Companion type for a fixed-length tuple. Produced by `Tuple`.
 
 **Signature**
 
@@ -20,7 +20,6 @@ export interface Tuple<Elements extends Tuple.Elements> extends
     Tuple.Iso<Elements>
   >
 {
-  readonly "~rebuild.out": this
   readonly elements: Elements
   /**
    * Returns a new tuple with the elements modified by the provided function.
@@ -45,6 +44,6 @@ export interface Tuple<Elements extends Tuple.Elements> extends
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L2988)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L2969)
 
 Since v4.0.0

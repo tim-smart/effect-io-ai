@@ -105,7 +105,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "tags",
-    "signature": "declare const MssqlClient: ServiceMap.Service<MssqlClient, MssqlClient>",
+    "signature": "declare const MssqlClient: Context.Service<MssqlClient, MssqlClient>",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/d1/src/MssqlClient.ts#L133"
   },
   {

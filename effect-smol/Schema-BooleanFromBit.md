@@ -3,14 +3,16 @@ Module: `Schema`<br />
 
 ## Schema.BooleanFromBit
 
-Schema type for `BooleanFromBit`.
+Companion type for `BooleanFromBit`.
 
 **Signature**
 
 ```ts
-export interface BooleanFromBit extends decodeTo<Boolean, Literals<readonly [0, 1]>> {}
+export interface BooleanFromBit extends decodeTo<Boolean, Literals<readonly [0, 1]>> {
+  readonly "~rebuild.out": BooleanFromBit
+}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L9300)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L9584)
 
 Since v4.0.0

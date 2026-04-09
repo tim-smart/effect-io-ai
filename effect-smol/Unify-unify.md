@@ -40,6 +40,6 @@ const unifiedCurried = Unify.unify(curriedFunction)
 declare const unify: { <Args extends Array<any>, Args2 extends Array<any>, Args3 extends Array<any>, Args4 extends Array<any>, Args5 extends Array<any>, T>(x: (...args: Args) => (...args: Args2) => (...args: Args3) => (...args: Args4) => (...args: Args5) => T): (...args: Args) => (...args: Args2) => (...args: Args3) => (...args: Args4) => (...args: Args5) => Unify<T>; <Args extends Array<any>, Args2 extends Array<any>, Args3 extends Array<any>, Args4 extends Array<any>, T>(x: (...args: Args) => (...args: Args2) => (...args: Args3) => (...args: Args4) => T): (...args: Args) => (...args: Args2) => (...args: Args3) => (...args: Args4) => Unify<T>; <Args extends Array<any>, Args2 extends Array<any>, Args3 extends Array<any>, T>(x: (...args: Args) => (...args: Args2) => (...args: Args3) => T): (...args: Args) => (...args: Args2) => (...args: Args3) => Unify<T>; <Args extends Array<any>, Args2 extends Array<any>, T>(x: (...args: Args) => (...args: Args2) => T): (...args: Args) => (...args: Args2) => Unify<T>; <Args extends Array<any>, T>(x: (...args: Args) => T): (...args: Args) => Unify<T>; <T>(x: T): Unify<T>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Unify.ts#L240)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Unify.ts#L264)
 
 Since v2.0.0

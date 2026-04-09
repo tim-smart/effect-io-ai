@@ -3,14 +3,16 @@ Module: `Schema`<br />
 
 ## Schema.NullishOr
 
-Schema type for `S | null | undefined`. Produced by `NullishOr`.
+Companion type for `S | null | undefined`. Produced by `NullishOr`.
 
 **Signature**
 
 ```ts
-export interface NullishOr<S extends Top> extends Union<readonly [S, Null, Undefined]> {}
+export interface NullishOr<S extends Top> extends Union<readonly [S, Null, Undefined]> {
+  readonly "~rebuild.out": NullishOr<S>
+}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L3596)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L3578)
 
 Since v4.0.0

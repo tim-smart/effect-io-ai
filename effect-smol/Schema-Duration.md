@@ -3,14 +3,16 @@ Module: `Schema`<br />
 
 ## Schema.Duration
 
-Schema type for `Duration`.
+Companion type for `Duration`.
 
 **Signature**
 
 ```ts
-export interface Duration extends declare<Duration_.Duration> {}
+export interface Duration extends declare<Duration_.Duration> {
+  readonly "~rebuild.out": Duration
+}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L8528)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L8583)
 
 Since v4.0.0

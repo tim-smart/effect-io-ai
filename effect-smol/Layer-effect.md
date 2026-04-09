@@ -18,9 +18,9 @@ This API replaces the following from Effect 3.x:
 **Example**
 
 ```ts
-import { Effect, Layer, ServiceMap } from "effect"
+import { Effect, Layer, Context } from "effect"
 
-class Database extends ServiceMap.Service<Database, {
+class Database extends Context.Service<Database, {
   readonly query: (sql: string) => Effect.Effect<string>
 }>()("Database") {}
 
@@ -34,9 +34,9 @@ const layer = Layer.effect(Database)(
 **Signature**
 
 ```ts
-declare const effect: { <I, S>(service: ServiceMap.Key<I, S>): <E, R>(effect: Effect<S, E, R>) => Layer<I, E, Exclude<R, Scope.Scope>>; <I, S, E, R>(service: ServiceMap.Key<I, S>, effect: Effect<S, E, R>): Layer<I, E, Exclude<R, Scope.Scope>>; }
+declare const effect: { <I, S>(service: Context.Key<I, S>): <E, R>(effect: Effect<S, E, R>) => Layer<I, E, Exclude<R, Scope.Scope>>; <I, S, E, R>(service: Context.Key<I, S>, effect: Effect<Types.NoInfer<S>, E, R>): Layer<I, E, Exclude<R, Scope.Scope>>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L766)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L788)
 
 Since v2.0.0

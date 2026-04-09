@@ -45,6 +45,6 @@ export interface FilePart extends BasePart<"file", FilePartOptions> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L442)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L438)
 
 Since v4.0.0

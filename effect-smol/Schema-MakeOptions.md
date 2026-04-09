@@ -3,7 +3,7 @@ Module: `Schema`<br />
 
 ## Schema.MakeOptions
 
-Options for `makeUnsafe` and Class constructors.
+Options for `makeEffect`, `make`, and Class constructors.
 
 When to use:
 - Pass `disableChecks: true` to skip validation when you trust the data.
@@ -11,7 +11,8 @@ When to use:
 
 **See**
 
-- `Bottom.makeUnsafe`
+- `Bottom.makeEffect`
+- `Bottom.make`
 
 **Signature**
 
@@ -28,6 +29,6 @@ export interface MakeOptions {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L182)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L184)
 
 Since v4.0.0

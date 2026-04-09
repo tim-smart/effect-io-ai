@@ -30,6 +30,6 @@ type AllParts<Tools> = | TextPart
   | ErrorPart
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Response.ts#L116)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Response.ts#L114)
 
 Since v1.0.0

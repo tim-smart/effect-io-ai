@@ -11,6 +11,6 @@ Constructs a new text part.
 declare const textPart: (params: PartConstructorParams<TextPart>) => TextPart
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L330)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L326)
 
 Since v4.0.0

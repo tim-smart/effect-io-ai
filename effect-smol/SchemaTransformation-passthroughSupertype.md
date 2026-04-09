@@ -31,6 +31,6 @@ See also:
 declare const passthroughSupertype: <T extends E, E>() => Transformation<T, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L778)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L782)
 
 Since v4.0.0

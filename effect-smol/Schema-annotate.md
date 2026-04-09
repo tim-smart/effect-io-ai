@@ -26,9 +26,9 @@ const Age = Schema.Number.pipe(
 **Signature**
 
 ```ts
-declare const annotate: <S extends Top>(annotations: S["~annotate.in"]) => (self: S) => S["~rebuild.out"]
+declare const annotate: <S extends Top>(annotations: Annotations.Bottom<S["Type"], S["~type.parameters"]>) => (self: S) => S["~rebuild.out"]
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L478)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L480)
 
 Since v4.0.0

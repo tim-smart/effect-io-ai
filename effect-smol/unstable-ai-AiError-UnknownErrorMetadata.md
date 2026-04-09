@@ -11,6 +11,6 @@ Provider-specific metadata attached to `UnknownError`.
 export interface UnknownErrorMetadata extends ProviderMetadata {}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AiError.ts#L342)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AiError.ts#L343)
 
 Since v1.0.0

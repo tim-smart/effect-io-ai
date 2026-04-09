@@ -3,14 +3,16 @@ Module: `Schema`<br />
 
 ## Schema.Date
 
-Schema type for `Date`.
+Companion type for `Date`.
 
 **Signature**
 
 ```ts
-export interface Date extends instanceOf<globalThis.Date> {}
+export interface Date extends instanceOf<globalThis.Date> {
+  readonly "~rebuild.out": Date
+}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L8460)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L8487)
 
 Since v4.0.0

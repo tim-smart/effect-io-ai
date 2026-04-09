@@ -25,6 +25,6 @@ console.log(Param.isSingle(optionalParam)) // false
 declare const isSingle: <const Kind extends ParamKind, A>(param: Param<Kind, A>) => param is Single<Kind, A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Param.ts#L249)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Param.ts#L260)
 
 Since v4.0.0

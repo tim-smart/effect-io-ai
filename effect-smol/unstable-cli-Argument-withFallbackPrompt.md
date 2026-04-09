@@ -18,9 +18,9 @@ const filename = Argument.string("filename").pipe(
 **Signature**
 
 ```ts
-declare const withFallbackPrompt: { <B>(prompt: Prompt.Prompt<B>): <A>(self: Argument<A>) => Argument<A | B>; <A, B>(self: Argument<A>, prompt: Prompt.Prompt<B>): Argument<A | B>; }
+declare const withFallbackPrompt: { <B>(prompt: Param.FallbackPrompt<B>): <A>(self: Argument<A>) => Argument<A | B>; <A, B>(self: Argument<A>, prompt: Param.FallbackPrompt<B>): Argument<A | B>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Argument.ts#L355)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Argument.ts#L354)
 
 Since v4.0.0

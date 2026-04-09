@@ -3,7 +3,7 @@ Module: `Schema`<br />
 
 ## Schema.$Record
 
-Schema type for a key-value record (map) with a typed key and value schema.
+Companion type for a key-value record (map) with a typed key and value schema.
 Produced by `Record`.
 
 **Signature**
@@ -21,12 +21,11 @@ export interface $Record<Key extends Record.Key, Value extends Top> extends
     Record.Iso<Key, Value>
   >
 {
-  readonly "~rebuild.out": this
   readonly key: Key
   readonly value: Value
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L2717)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L2700)
 
 Since v4.0.0

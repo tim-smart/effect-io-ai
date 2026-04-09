@@ -39,6 +39,6 @@ export interface ToolResultPartEncoded extends BasePartEncoded<"tool-result", To
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Response.ts#L1566)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Response.ts#L1564)
 
 Since v1.0.0

@@ -24,7 +24,6 @@ export interface TaggedUnion<Cases extends Record<string, Top>> extends
     { [K in keyof Cases]: Cases[K]["~type.make"] }[keyof Cases]
   >
 {
-  readonly "~rebuild.out": this
   readonly cases: Cases
   readonly isAnyOf: <const Keys>(
     keys: ReadonlyArray<Keys>
@@ -42,6 +41,6 @@ export interface TaggedUnion<Cases extends Record<string, Top>> extends
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L4676)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L4645)
 
 Since v4.0.0

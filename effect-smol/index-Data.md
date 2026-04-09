@@ -18,6 +18,6 @@ Re-exports all named exports from the "./Data.ts" module as `Data`.
 export * as Data from "./Data.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L818)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L832)
 
 Since v2.0.0

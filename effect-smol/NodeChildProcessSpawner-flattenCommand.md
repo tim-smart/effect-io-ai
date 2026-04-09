@@ -12,6 +12,6 @@ options for each connection.
 declare const flattenCommand: (command: ChildProcess.Command) => FlattenedPipeline
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeChildProcessSpawner.ts#L591)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeChildProcessSpawner.ts#L661)
 
 Since v4.0.0

@@ -3,29 +3,12 @@ Module: `Redactable`<br />
 
 ## Redactable.isRedactable
 
-Checks if a value implements the `Redactable` interface.
+Type guard that checks whether a value implements the `Redactable`
+interface.
 
-This function determines whether a given value has redaction capabilities,
-meaning it can provide alternative representations based on context.
-
-**Example**
-
-```ts
-import { Redactable } from "effect"
-
-class RedactableSecret {
-  [Redactable.symbolRedactable]() {
-    return "[REDACTED]"
-  }
-}
-
-const secret = new RedactableSecret()
-const normal = { value: 42 }
-
-console.log(Redactable.isRedactable(secret)) // true
-console.log(Redactable.isRedactable(normal)) // false
-console.log(Redactable.isRedactable("string")) // false
-```
+See also:
+- `Redactable` - the interface being checked
+- `redact` - applies redaction if the value is redactable
 
 **Signature**
 
@@ -33,6 +16,6 @@ console.log(Redactable.isRedactable("string")) // false
 declare const isRedactable: (u: unknown) => u is Redactable
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Redactable.ts#L77)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Redactable.ts#L152)
 
 Since v4.0.0

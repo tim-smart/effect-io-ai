@@ -15,7 +15,7 @@ Annotations from later reasons overwrite earlier ones when keys collide.
 **Signature**
 
 ```ts
-declare const annotations: <E>(self: Cause<E>) => ServiceMap.ServiceMap<never>
+declare const annotations: <E>(self: Cause<E>) => Context.Context<never>
 ```
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L1643)

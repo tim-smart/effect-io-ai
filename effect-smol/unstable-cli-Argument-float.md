@@ -19,6 +19,6 @@ const ratio = Argument.float("ratio")
 declare const float: (name: string) => Argument<number>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Argument.ts#L115)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Argument.ts#L114)
 
 Since v4.0.0

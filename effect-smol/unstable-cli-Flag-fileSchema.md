@@ -26,6 +26,6 @@ const config = Flag.fileSchema("config", ConfigSchema, { format: "json" })
 declare const fileSchema: <A>(name: string, schema: Schema.Decoder<A>, options?: Primitive.FileSchemaOptions | undefined) => Flag<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Flag.ts#L315)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Flag.ts#L314)
 
 Since v4.0.0

@@ -11,6 +11,6 @@ Describes the name and version of an MCP implementation.
 declare class Implementation
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L222)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L224)
 
 Since v4.0.0

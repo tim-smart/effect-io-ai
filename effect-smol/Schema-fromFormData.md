@@ -3,14 +3,16 @@ Module: `Schema`<br />
 
 ## Schema.fromFormData
 
-Schema type for `fromFormData`.
+Companion type for `fromFormData`.
 
 **Signature**
 
 ```ts
-export interface fromFormData<S extends Top> extends decodeTo<S, FormData> {}
+export interface fromFormData<S extends Top> extends decodeTo<S, FormData> {
+  readonly "~rebuild.out": fromFormData<S>
+}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L8951)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L9053)
 
 Since v4.0.0

@@ -31,6 +31,6 @@ const timeoutFlag = Flag.integer("timeout").pipe(
 declare const withMetavar: { <A>(metavar: string): (self: Flag<A>) => Flag<A>; <A>(self: Flag<A>, metavar: string): Flag<A>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Flag.ts#L442)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Flag.ts#L441)
 
 Since v4.0.0

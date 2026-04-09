@@ -34,6 +34,6 @@ See also:
 declare const bigintFromString: Transformation<bigint, string, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L876)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L880)
 
 Since v4.0.0

@@ -32,6 +32,6 @@ const configFile = Param.path(Param.flagKind, "config", {
 declare const path: <Kind extends ParamKind>(kind: Kind, name: string, options?: { readonly pathType?: Primitive.PathType | undefined; readonly mustExist?: boolean | undefined; readonly typeName?: string | undefined; }) => Param<Kind, string>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Param.ts#L538)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Param.ts#L549)
 
 Since v4.0.0

@@ -33,7 +33,6 @@ export interface Class<Self, S extends Top & { readonly fields: Struct.Fields },
     S["~encoded.optionality"]
   >
 {
-  // intentionally left without `readonly "~rebuild.out": this`
   new(
     ...args: {} extends S["~type.make.in"] ? [props?: S["~type.make.in"], options?: MakeOptions]
       : [props: S["~type.make.in"], options?: MakeOptions]
@@ -60,9 +59,19 @@ export interface Class<Self, S extends Top & { readonly fields: Struct.Fields },
       readonly unsafePreserveChecks?: boolean | undefined
     } | undefined
   ): Struct<Simplify<Readonly<To>>>
+
+  extend<Extended = never, Static = {}, Brand = {}>(
+    identifier: string
+  ): <NewFields extends Struct.Fields>(
+    fields: NewFields,
+    annotations?: Annotations.Declaration<Extended, readonly [Struct<Simplify<Assign<S["fields"], NewFields>>>]>
+  ) => [Extended] extends [never] ? MissingSelfGeneric<"Base.extend"> : InheritStaticMembers<
+    Class<Extended, Struct<Simplify<Assign<S["fields"], NewFields>>>, Self & Brand>,
+    Static
+  >
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L9775)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L10173)
 
 Since v4.0.0

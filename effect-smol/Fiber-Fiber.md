@@ -33,9 +33,9 @@ export interface Fiber<out A, out E = never> extends Pipeable {
 
   readonly id: number
   readonly currentOpCount: number
-  readonly getRef: <A>(ref: ServiceMap.Reference<A>) => A
-  readonly services: ServiceMap.ServiceMap<never>
-  setServices(services: ServiceMap.ServiceMap<never>): void
+  readonly getRef: <A>(ref: Context.Reference<A>) => A
+  readonly context: Context.Context<never>
+  setContext(context: Context.Context<never>): void
   readonly currentScheduler: Scheduler
   readonly currentDispatcher: SchedulerDispatcher
   readonly currentSpan?: AnySpan | undefined
@@ -47,7 +47,7 @@ export interface Fiber<out A, out E = never> extends Pipeable {
   readonly addObserver: (cb: (exit: Exit<A, E>) => void) => () => void
   readonly interruptUnsafe: (
     fiberId?: number | undefined,
-    annotations?: ServiceMap.ServiceMap<never> | undefined
+    annotations?: Context.Context<never> | undefined
   ) => void
   readonly pollUnsafe: () => Exit<A, E> | undefined
 }

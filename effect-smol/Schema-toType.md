@@ -27,11 +27,9 @@ export interface toType<S extends Top> extends
     S["~encoded.mutability"],
     S["~encoded.optionality"]
   >
-{
-  readonly "~rebuild.out": this
-}
+{}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L1640)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L1654)
 
 Since v4.0.0

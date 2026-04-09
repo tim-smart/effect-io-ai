@@ -48,7 +48,7 @@ const program = Effect.gen(function*() {
 **Signature**
 
 ```ts
-declare const FiberRuntimeMetrics: ServiceMap.Reference<FiberRuntimeMetricsService | undefined>
+declare const FiberRuntimeMetrics: Context.Reference<FiberRuntimeMetricsService | undefined>
 ```
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Metric.ts#L3604)

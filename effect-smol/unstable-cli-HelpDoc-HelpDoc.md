@@ -10,13 +10,13 @@ different output formats (text, markdown, JSON, etc.).
 **Example**
 
 ```ts
-import { Option as O, ServiceMap } from "effect"
+import { Option as O, Context } from "effect"
 import type * as HelpDoc from "effect/unstable/cli/HelpDoc"
 
 const deployCommandHelp: HelpDoc.HelpDoc = {
   description: "Deploy your application to the cloud",
   usage: "myapp deploy [options] <target>",
-  annotations: ServiceMap.empty(),
+  annotations: Context.empty(),
   flags: [
     {
       name: "verbose",
@@ -73,7 +73,7 @@ export interface HelpDoc {
   /**
    * Custom command annotations.
    */
-  readonly annotations: ServiceMap.ServiceMap<never>
+  readonly annotations: Context.Context<never>
 
   /**
    * List of positional arguments for this command

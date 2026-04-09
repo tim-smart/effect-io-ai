@@ -17,7 +17,7 @@ const idempotentTool = Tool.make("get_current_time")
 **Signature**
 
 ```ts
-declare const Idempotent: ServiceMap.Reference<boolean>
+declare const Idempotent: Context.Reference<boolean>
 ```
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tool.ts#L1687)

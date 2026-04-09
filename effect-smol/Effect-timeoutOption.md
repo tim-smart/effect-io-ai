@@ -57,6 +57,6 @@ Effect.runPromise(timedOutEffect).then(console.log)
 declare const timeoutOption: { (duration: Duration.Input): <A, E, R>(self: Effect<A, E, R>) => Effect<Option<A>, E, R>; <A, E, R>(self: Effect<A, E, R>, duration: Duration.Input): Effect<Option<A>, E, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L4459)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L4460)
 
 Since v3.1.0

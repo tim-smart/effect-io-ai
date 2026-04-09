@@ -85,9 +85,9 @@ export interface Metric<in Input, out State> extends Pipeable {
   readonly type: Metric.Type
   readonly description: string | undefined
   readonly attributes: Metric.AttributeSet | undefined
-  readonly valueUnsafe: (context: ServiceMap.ServiceMap<never>) => State
-  readonly updateUnsafe: (input: Input, context: ServiceMap.ServiceMap<never>) => void
-  readonly modifyUnsafe: (input: Input, context: ServiceMap.ServiceMap<never>) => void
+  readonly valueUnsafe: (context: Context.Context<never>) => State
+  readonly updateUnsafe: (input: Input, context: Context.Context<never>) => void
+  readonly modifyUnsafe: (input: Input, context: Context.Context<never>) => void
 }
 ```
 

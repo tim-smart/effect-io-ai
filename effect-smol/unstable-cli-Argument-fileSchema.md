@@ -25,6 +25,6 @@ const config = Argument.fileSchema("config", ConfigSchema)
 declare const fileSchema: <A>(name: string, schema: Schema.Decoder<A>, options?: Primitive.FileSchemaOptions | undefined) => Argument<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Argument.ts#L235)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Argument.ts#L234)
 
 Since v4.0.0

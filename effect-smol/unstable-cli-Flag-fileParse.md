@@ -27,6 +27,6 @@ const jsonConfig = Flag.fileParse("json-config", { format: "json" })
 declare const fileParse: (name: string, options?: Primitive.FileParseOptions | undefined) => Flag<unknown>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Flag.ts#L290)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Flag.ts#L289)
 
 Since v4.0.0

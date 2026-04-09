@@ -40,7 +40,7 @@ Effect.gen(function*() {
 export interface RcMap<in out K, in out A, in out E = never> extends Pipeable {
   readonly [TypeId]: typeof TypeId
   readonly lookup: (key: K) => Effect.Effect<A, E, Scope.Scope>
-  readonly services: ServiceMap.ServiceMap<never>
+  readonly context: Context.Context<never>
   readonly scope: Scope.Scope
   readonly idleTimeToLive: (key: K) => Duration.Duration
   readonly capacity: number

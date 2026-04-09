@@ -46,9 +46,9 @@ const program = Effect.gen(function*() {
 
 ```ts
 export interface Hooks<in Input, out State> {
-    readonly get: (context: ServiceMap.ServiceMap<never>) => State
-    readonly update: (input: Input, context: ServiceMap.ServiceMap<never>) => void
-    readonly modify: (input: Input, context: ServiceMap.ServiceMap<never>) => void
+    readonly get: (context: Context.Context<never>) => State
+    readonly update: (input: Input, context: Context.Context<never>) => void
+    readonly modify: (input: Input, context: Context.Context<never>) => void
   }
 ```
 

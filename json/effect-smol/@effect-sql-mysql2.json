@@ -58,7 +58,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "tags",
-    "signature": "declare const MysqlClient: ServiceMap.Service<MysqlClient, MysqlClient>",
+    "signature": "declare const MysqlClient: Context.Service<MysqlClient, MysqlClient>",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/mysql2/src/MysqlClient.ts#L110"
   },
   {

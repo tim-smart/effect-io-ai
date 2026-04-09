@@ -12,6 +12,6 @@ Represents provider-specific metadata that can be associated with a
 export interface ToolParamsDeltaPartMetadata extends ProviderMetadata {}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Response.ts#L1223)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Response.ts#L1221)
 
 Since v1.0.0

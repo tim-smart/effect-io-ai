@@ -8,7 +8,7 @@ Reference for controlling the current trace level for dynamic filtering.
 **Signature**
 
 ```ts
-declare const CurrentTraceLevel: ServiceMap.Reference<LogLevel>
+declare const CurrentTraceLevel: Context.Reference<LogLevel>
 ```
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tracer.ts#L353)

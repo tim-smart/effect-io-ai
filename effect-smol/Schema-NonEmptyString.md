@@ -3,15 +3,16 @@ Module: `Schema`<br />
 
 ## Schema.NonEmptyString
 
-A schema for non-empty strings. Validates that a string has at least one
-character.
+Companion type for `NonEmptyString`.
 
 **Signature**
 
 ```ts
-declare const NonEmptyString: String
+export interface NonEmptyString extends String {
+  readonly "~rebuild.out": NonEmptyString
+}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L6791)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L6760)
 
 Since v4.0.0

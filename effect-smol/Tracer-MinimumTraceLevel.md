@@ -10,7 +10,7 @@ false, preventing them from being exported.
 **Signature**
 
 ```ts
-declare const MinimumTraceLevel: ServiceMap.Reference<LogLevel>
+declare const MinimumTraceLevel: Context.Reference<LogLevel>
 ```
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tracer.ts#L366)

@@ -8,7 +8,7 @@ Interface for the fiber runtime metrics service that tracks fiber lifecycle even
 **Example**
 
 ```ts
-import type { ServiceMap } from "effect"
+import type { Context } from "effect"
 import { Data, Effect, Layer, Metric } from "effect"
 import type { Exit } from "effect/Exit"
 
@@ -18,12 +18,12 @@ class MetricsError extends Data.TaggedError("MetricsError")<{
 
 // Custom implementation of the metrics service
 const customMetricsService: Metric.FiberRuntimeMetricsService = {
-  recordFiberStart: (context: ServiceMap.ServiceMap<never>) => {
+  recordFiberStart: (context: Context.Context<never>) => {
     console.log("Fiber started")
     // Custom logic for tracking fiber starts
   },
   recordFiberEnd: (
-    context: ServiceMap.ServiceMap<never>,
+    context: Context.Context<never>,
     exit: Exit<unknown, unknown>
   ) => {
     console.log("Fiber completed with exit:", exit)
@@ -43,8 +43,8 @@ const program = Effect.gen(function*() {
 
 ```ts
 export interface FiberRuntimeMetricsService {
-  readonly recordFiberStart: (context: ServiceMap.ServiceMap<never>) => void
-  readonly recordFiberEnd: (context: ServiceMap.ServiceMap<never>, exit: Exit<unknown, unknown>) => void
+  readonly recordFiberStart: (context: Context.Context<never>) => void
+  readonly recordFiberEnd: (context: Context.Context<never>, exit: Exit<unknown, unknown>) => void
 }
 ```
 

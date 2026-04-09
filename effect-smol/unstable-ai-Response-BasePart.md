@@ -23,6 +23,6 @@ export interface BasePart<Type extends string, Metadata extends ProviderMetadata
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Response.ts#L475)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Response.ts#L473)
 
 Since v1.0.0

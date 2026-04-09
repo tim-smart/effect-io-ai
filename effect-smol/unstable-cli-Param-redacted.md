@@ -28,6 +28,6 @@ const apiKey = Param.redacted(Param.argumentKind, "api-key")
 declare const redacted: <Kind extends ParamKind>(kind: Kind, name: string) => Param<Kind, Redacted.Redacted<string>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Param.ts#L650)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Param.ts#L661)
 
 Since v4.0.0

@@ -17,11 +17,12 @@ export interface HashMap<Key extends Top, Value extends Top> extends
     HashMapIso<Key, Value>
   >
 {
+  readonly "~rebuild.out": HashMap<Key, Value>
   readonly key: Key
   readonly value: Value
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L7961)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L7977)
 
 Since v4.0.0

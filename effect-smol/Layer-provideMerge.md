@@ -10,17 +10,17 @@ outputs of both layers.
 **Example**
 
 ```ts
-import { Effect, Layer, ServiceMap } from "effect"
+import { Effect, Layer, Context } from "effect"
 
-class Database extends ServiceMap.Service<Database, {
+class Database extends Context.Service<Database, {
   readonly query: (sql: string) => Effect.Effect<string>
 }>()("Database") {}
 
-class Logger extends ServiceMap.Service<Logger, {
+class Logger extends Context.Service<Logger, {
   readonly log: (msg: string) => Effect.Effect<void>
 }>()("Logger") {}
 
-class UserService extends ServiceMap.Service<UserService, {
+class UserService extends Context.Service<UserService, {
   readonly getUser: (id: string) => Effect.Effect<{
     id: string
     name: string
@@ -78,6 +78,6 @@ const program = Effect.gen(function*() {
 declare const provideMerge: { <RIn, E, ROut>(that: Layer<ROut, E, RIn>): <RIn2, E2, ROut2>(self: Layer<ROut2, E2, RIn2>) => Layer<ROut | ROut2, E | E2, RIn | Exclude<RIn2, ROut>>; <const Layers extends [Any, ...Array<Any>]>(that: Layers): <A, E, R>(self: Layer<A, E, R>) => Layer<A | Success<Layers[number]>, E | Error<Layers[number]>, Services<Layers[number]> | Exclude<R, Success<Layers[number]>>>; <RIn2, E2, ROut2, RIn, E, ROut>(self: Layer<ROut2, E2, RIn2>, that: Layer<ROut, E, RIn>): Layer<ROut | ROut2, E | E2, RIn | Exclude<RIn2, ROut>>; <A, E, R, const Layers extends [Any, ...Array<Any>]>(self: Layer<A, E, R>, that: Layers): Layer<A | Success<Layers[number]>, E | Error<Layers[number]>, Services<Layers[number]> | Exclude<R, Success<Layers[number]>>>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L1215)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L1237)
 
 Since v2.0.0

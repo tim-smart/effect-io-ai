@@ -19,6 +19,6 @@ const files = Argument.string("files").pipe(Argument.between(1, 5))
 declare const between: { <A>(min: number, max: number): (self: Argument<A>) => Argument<ReadonlyArray<A>>; <A>(self: Argument<A>, min: number, max: number): Argument<ReadonlyArray<A>>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Argument.ts#L529)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Argument.ts#L528)
 
 Since v4.0.0

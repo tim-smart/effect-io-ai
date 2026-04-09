@@ -39,6 +39,6 @@ console.log(format(user)) // Same as toString()
 export * as Inspectable from "./Inspectable.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L1545)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L1559)
 
 Since v2.0.0

@@ -3,7 +3,7 @@ Module: `Stream`<br />
 
 ## Stream.provide
 
-Provides a layer or service map to the stream, removing the corresponding
+Provides a layer or context to the stream, removing the corresponding
 service requirements. Use `options.local` to build the layer every time; by
 default, layers are shared between provide calls.
 
@@ -12,9 +12,9 @@ default, layers are shared between provide calls.
 **Example**
 
 ```ts
-import { Console, Effect, Layer, ServiceMap, Stream } from "effect"
+import { Console, Effect, Layer, Context, Stream } from "effect"
 
-class Env extends ServiceMap.Service<Env, { readonly name: string }>()("Env") {}
+class Env extends Context.Service<Env, { readonly name: string }>()("Env") {}
 
 const layer = Layer.succeed(Env)({ name: "Ada" })
 
@@ -39,9 +39,9 @@ Effect.runPromise(program)
 **Signature**
 
 ```ts
-declare const provide: { <AL, EL = never, RL = never>(layer: Layer.Layer<AL, EL, RL> | ServiceMap.ServiceMap<AL>, options?: { readonly local?: boolean | undefined; } | undefined): <A, E, R>(self: Stream<A, E, R>) => Stream<A, E | EL, Exclude<R, AL> | RL>; <A, E, R, AL, EL = never, RL = never>(self: Stream<A, E, R>, layer: Layer.Layer<AL, EL, RL> | ServiceMap.ServiceMap<AL>, options?: { readonly local?: boolean | undefined; } | undefined): Stream<A, E | EL, Exclude<R, AL> | RL>; }
+declare const provide: { <AL, EL = never, RL = never>(layer: Layer.Layer<AL, EL, RL> | Context.Context<AL>, options?: { readonly local?: boolean | undefined; } | undefined): <A, E, R>(self: Stream<A, E, R>) => Stream<A, E | EL, Exclude<R, AL> | RL>; <A, E, R, AL, EL = never, RL = never>(self: Stream<A, E, R>, layer: Layer.Layer<AL, EL, RL> | Context.Context<AL>, options?: { readonly local?: boolean | undefined; } | undefined): Stream<A, E | EL, Exclude<R, AL> | RL>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L9253)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L9332)
 
 Since v4.0.0

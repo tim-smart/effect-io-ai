@@ -30,6 +30,6 @@ console.log(error.message)
 declare class ToolResultEncodingError
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AiError.ts#L1099)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AiError.ts#L1100)
 
 Since v1.0.0

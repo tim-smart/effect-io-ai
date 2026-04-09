@@ -8,13 +8,13 @@ Accesses a service from the context.
 **Example**
 
 ```ts
-import { Effect, ServiceMap } from "effect"
+import { Effect, Context } from "effect"
 
 interface Database {
   readonly query: (sql: string) => Effect.Effect<string>
 }
 
-const Database = ServiceMap.Service<Database>("Database")
+const Database = Context.Service<Database>("Database")
 
 const program = Effect.gen(function*() {
   const db = yield* Effect.service(Database)
@@ -25,9 +25,9 @@ const program = Effect.gen(function*() {
 **Signature**
 
 ```ts
-declare const service: <I, S>(service: ServiceMap.Key<I, S>) => Effect<S, never, I>
+declare const service: <I, S>(service: Context.Key<I, S>) => Effect<S, never, I>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L5755)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L5756)
 
 Since v4.0.0

@@ -11,6 +11,6 @@ Re-exports all named exports from the "./Redacted.ts" module as `Redacted`.
 export * as Redacted from "./Redacted.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L2958)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L3037)
 
 Since v3.3.0

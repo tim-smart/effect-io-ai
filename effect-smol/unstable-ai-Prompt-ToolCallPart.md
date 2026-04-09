@@ -41,6 +41,6 @@ export interface ToolCallPart extends BasePart<"tool-call", ToolCallPartOptions>
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L543)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L539)
 
 Since v4.0.0

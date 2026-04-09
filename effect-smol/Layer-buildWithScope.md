@@ -12,9 +12,9 @@ layer is provided to.
 **Example**
 
 ```ts
-import { Effect, Layer, Scope, ServiceMap } from "effect"
+import { Effect, Layer, Scope, Context } from "effect"
 
-class Database extends ServiceMap.Service<Database, {
+class Database extends Context.Service<Database, {
   readonly query: (sql: string) => Effect.Effect<string>
 }>()("Database") {}
 
@@ -32,8 +32,8 @@ const program = Effect.gen(function*() {
   }))
 
   // Build with specific scope - resources tied to this scope
-  const services = yield* Layer.buildWithScope(dbLayer, scope)
-  const database = ServiceMap.get(services, Database)
+  const context = yield* Layer.buildWithScope(dbLayer, scope)
+  const database = Context.get(context, Database)
 
   return yield* database.query("SELECT * FROM users")
   // Database will be closed when scope is closed
@@ -43,9 +43,9 @@ const program = Effect.gen(function*() {
 **Signature**
 
 ```ts
-declare const buildWithScope: { (scope: Scope.Scope): <RIn, E, ROut>(self: Layer<ROut, E, RIn>) => Effect<ServiceMap.ServiceMap<ROut>, E, RIn>; <RIn, E, ROut>(self: Layer<ROut, E, RIn>, scope: Scope.Scope): Effect<ServiceMap.ServiceMap<ROut>, E, RIn>; }
+declare const buildWithScope: { (scope: Scope.Scope): <RIn, E, ROut>(self: Layer<ROut, E, RIn>) => Effect<Context.Context<ROut>, E, RIn>; <RIn, E, ROut>(self: Layer<ROut, E, RIn>, scope: Scope.Scope): Effect<Context.Context<ROut>, E, RIn>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L553)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L576)
 
 Since v2.0.0

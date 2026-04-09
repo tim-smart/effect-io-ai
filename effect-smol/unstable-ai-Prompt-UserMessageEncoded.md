@@ -16,6 +16,6 @@ export interface UserMessageEncoded extends BaseMessageEncoded<"user", UserMessa
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L1246)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L1240)
 
 Since v4.0.0

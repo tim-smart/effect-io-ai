@@ -29,6 +29,6 @@ const props = Param.keyValuePair(Param.flagKind, "property")
 declare const keyValuePair: <Kind extends ParamKind>(kind: Kind, name: string) => Param<Kind, Record<string, string>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Param.ts#L789)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Param.ts#L800)
 
 Since v4.0.0

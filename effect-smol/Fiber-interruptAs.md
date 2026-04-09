@@ -25,7 +25,7 @@ const program = Effect.gen(function*() {
 **Signature**
 
 ```ts
-declare const interruptAs: { (fiberId: number | undefined, annotations?: ServiceMap.ServiceMap<never> | undefined): <A, E>(self: Fiber<A, E>) => Effect<void>; <A, E>(self: Fiber<A, E>, fiberId: number | undefined, annotations?: ServiceMap.ServiceMap<never> | undefined): Effect<void>; }
+declare const interruptAs: { (fiberId: number | undefined, annotations?: Context.Context<never> | undefined): <A, E>(self: Fiber<A, E>) => Effect<void>; <A, E>(self: Fiber<A, E>, fiberId: number | undefined, annotations?: Context.Context<never> | undefined): Effect<void>; }
 ```
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Fiber.ts#L320)

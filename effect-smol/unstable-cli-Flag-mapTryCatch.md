@@ -33,6 +33,6 @@ const urlFlag = Flag.string("url").pipe(
 declare const mapTryCatch: { <A, B>(f: (a: A) => B, onError: (error: unknown) => string): (self: Flag<A>) => Flag<B>; <A, B>(self: Flag<A>, f: (a: A) => B, onError: (error: unknown) => string): Flag<B>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Flag.ts#L629)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Flag.ts#L628)
 
 Since v4.0.0

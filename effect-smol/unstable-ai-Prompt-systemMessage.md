@@ -11,6 +11,6 @@ Constructs a new system message.
 declare const systemMessage: (params: MessageConstructorParams<SystemMessage>) => SystemMessage
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L1186)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L1180)
 
 Since v4.0.0

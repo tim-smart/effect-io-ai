@@ -35,6 +35,6 @@ type RawInput = | string
   | Prompt
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L1789)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L1783)
 
 Since v4.0.0

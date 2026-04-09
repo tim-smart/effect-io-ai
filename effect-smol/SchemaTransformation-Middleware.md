@@ -56,6 +56,6 @@ declare class Middleware<T, E, RDE, RDT, RET, REE> { constructor(
   ) }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L137)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L141)
 
 Since v4.0.0

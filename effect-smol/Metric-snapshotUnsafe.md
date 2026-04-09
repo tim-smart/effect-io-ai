@@ -34,7 +34,7 @@ const performanceMetricsExporter = Effect.gen(function*() {
   yield* Metric.update(responseTime, 150)
 
   // Get services context for unsafe operations
-  const services = yield* Effect.services()
+  const services = yield* Effect.context()
 
   // Use snapshotUnsafe for direct, synchronous access
   const snapshots = Metric.snapshotUnsafe(services)
@@ -63,7 +63,7 @@ const safeSnapshotExample = Effect.gen(function*() {
 **Signature**
 
 ```ts
-declare const snapshotUnsafe: (services: ServiceMap.ServiceMap<never>) => ReadonlyArray<Metric.Snapshot>
+declare const snapshotUnsafe: (context: Context.Context<never>) => ReadonlyArray<Metric.Snapshot>
 ```
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Metric.ts#L3212)

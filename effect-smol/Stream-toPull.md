@@ -33,6 +33,6 @@ Effect.runPromise(program)
 declare const toPull: <A, E, R>(self: Stream<A, E, R>) => Effect.Effect<Pull.Pull<Arr.NonEmptyReadonlyArray<A>, E>, never, R | Scope.Scope>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L10211)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L10290)
 
 Since v2.0.0

@@ -8,13 +8,13 @@ Constructs a layer from the specified value.
 **Example**
 
 ```ts
-import { Effect, Layer, ServiceMap } from "effect"
+import { Effect, Layer, Context } from "effect"
 
-class Database extends ServiceMap.Service<Database, {
+class Database extends Context.Service<Database, {
   readonly query: (sql: string) => Effect.Effect<string>
 }>()("Database") {}
 
-class Logger extends ServiceMap.Service<Logger, {
+class Logger extends Context.Service<Logger, {
   readonly log: (msg: string) => Effect.Effect<void>
 }>()("Logger") {}
 
@@ -45,9 +45,9 @@ const program = Effect.gen(function*() {
 **Signature**
 
 ```ts
-declare const succeed: { <I, S>(service: ServiceMap.Key<I, S>): (resource: S) => Layer<I>; <I, S>(service: ServiceMap.Key<I, S>, resource: Types.NoInfer<S>): Layer<I>; }
+declare const succeed: { <I, S>(service: Context.Key<I, S>): (resource: S) => Layer<I>; <I, S>(service: Context.Key<I, S>, resource: Types.NoInfer<S>): Layer<I>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L610)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L633)
 
 Since v2.0.0

@@ -16,6 +16,6 @@ export interface TextPartEncoded extends BasePartEncoded<"text", TextPartMetadat
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Response.ts#L605)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Response.ts#L603)
 
 Since v1.0.0

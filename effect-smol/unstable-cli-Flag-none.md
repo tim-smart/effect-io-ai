@@ -21,6 +21,6 @@ const conditionalFlag = true ? Flag.string("value") : Flag.none
 declare const none: Flag<never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Flag.ts#L356)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Flag.ts#L355)
 
 Since v4.0.0

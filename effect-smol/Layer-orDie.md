@@ -9,13 +9,13 @@ unchecked and not a part of the type of the layer.
 **Example**
 
 ```ts
-import { Data, Effect, Layer, ServiceMap } from "effect"
+import { Data, Effect, Layer, Context } from "effect"
 
 class DatabaseError extends Data.TaggedError("DatabaseError")<{
   message: string
 }> {}
 
-class Database extends ServiceMap.Service<Database, {
+class Database extends Context.Service<Database, {
   readonly query: (sql: string) => Effect.Effect<string>
 }>()("Database") {}
 
@@ -51,6 +51,6 @@ const program = Effect.gen(function*() {
 declare const orDie: <A, E, R>(self: Layer<A, E, R>) => Layer<A, never, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L1468)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L1490)
 
 Since v2.0.0

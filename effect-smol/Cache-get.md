@@ -91,6 +91,6 @@ const program = Effect.gen(function*() {
 declare const get: { <Key, A>(key: Key): <E, R>(self: Cache<Key, A, E, R>) => Effect.Effect<A, E, R>; <Key, A, E, R>(self: Cache<Key, A, E, R>, key: Key): Effect.Effect<A, E, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cache.ts#L377)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cache.ts#L349)
 
 Since v4.0.0

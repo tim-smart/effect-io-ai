@@ -3,14 +3,16 @@ Module: `Schema`<br />
 
 ## Schema.FormData
 
-Schema type for `FormData`.
+Companion type for `FormData`.
 
 **Signature**
 
 ```ts
-export interface FormData extends instanceOf<globalThis.FormData> {}
+export interface FormData extends instanceOf<globalThis.FormData> {
+  readonly "~rebuild.out": FormData
+}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L8891)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L8991)
 
 Since v4.0.0

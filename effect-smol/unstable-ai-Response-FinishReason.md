@@ -21,6 +21,6 @@ Possible finish reasons:
 declare const FinishReason: Schema.Literals<["stop", "length", "content-filter", "tool-calls", "error", "pause", "other", "unknown"]>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Response.ts#L2294)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Response.ts#L2292)
 
 Since v1.0.0

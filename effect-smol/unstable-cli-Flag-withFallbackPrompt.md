@@ -18,9 +18,9 @@ const name = Flag.string("name").pipe(
 **Signature**
 
 ```ts
-declare const withFallbackPrompt: { <B>(prompt: Prompt.Prompt<B>): <A>(self: Flag<A>) => Flag<A | B>; <A, B>(self: Flag<A>, prompt: Prompt.Prompt<B>): Flag<A | B>; }
+declare const withFallbackPrompt: { <B>(prompt: Param.FallbackPrompt<B>): <A>(self: Flag<A>) => Flag<A | B>; <A, B>(self: Flag<A>, prompt: Param.FallbackPrompt<B>): Flag<A | B>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Flag.ts#L537)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Flag.ts#L536)
 
 Since v4.0.0

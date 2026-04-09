@@ -24,6 +24,6 @@ const configSource = Param.file(Param.flagKind, "config").pipe(
 declare const orElseResult: { <Kind extends ParamKind, B>(orElse: (error: CliError.CliError) => Param<Kind, B>): <A>(self: Param<Kind, A>) => Param<Kind, Result.Result<A, B>>; <Kind extends ParamKind, A, B>(self: Param<Kind, A>, orElse: (error: CliError.CliError) => Param<Kind, B>): Param<Kind, Result.Result<A, B>>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Param.ts#L1640)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Param.ts#L1663)
 
 Since v4.0.0

@@ -34,7 +34,7 @@ const customScheduling = Effect.gen(function*() {
 **Signature**
 
 ```ts
-declare const Scheduler: ServiceMap.Reference<Scheduler>
+declare const Scheduler: Context.Reference<Scheduler>
 ```
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/References.ts#L579)

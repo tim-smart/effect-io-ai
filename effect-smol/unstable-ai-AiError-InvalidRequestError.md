@@ -29,6 +29,6 @@ console.log(invalidRequestError.message)
 declare class InvalidRequestError
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AiError.ts#L597)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AiError.ts#L598)
 
 Since v1.0.0

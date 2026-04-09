@@ -13,6 +13,6 @@ disconnected.
 declare class Ping
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L456)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L458)
 
 Since v4.0.0

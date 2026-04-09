@@ -11,6 +11,6 @@ The client's response to an elicitation request
 declare class ElicitAcceptResult
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L1754)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L1756)
 
 Since v4.0.0

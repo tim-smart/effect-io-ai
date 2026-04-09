@@ -53,7 +53,7 @@ const spanAnnotationExample = Effect.gen(function*() {
 **Signature**
 
 ```ts
-declare const TracerSpanAnnotations: ServiceMap.Reference<ReadonlyRecord<string, unknown>>
+declare const TracerSpanAnnotations: Context.Reference<ReadonlyRecord<string, unknown>>
 ```
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/References.ts#L408)

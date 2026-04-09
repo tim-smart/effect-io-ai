@@ -26,6 +26,6 @@ export interface Optic<out T, out Iso> extends Schema<T> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L690)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L692)
 
 Since v4.0.0

@@ -9,13 +9,13 @@ the layer construction.
 **Example**
 
 ```ts
-import { Effect, Layer, ServiceMap } from "effect"
+import { Effect, Layer, Context } from "effect"
 
-class Database extends ServiceMap.Service<Database, {
+class Database extends Context.Service<Database, {
   readonly query: (sql: string) => Effect.Effect<string>
 }>()("Database") {}
 
-class Logger extends ServiceMap.Service<Logger, {
+class Logger extends Context.Service<Logger, {
   readonly log: (msg: string) => Effect.Effect<void>
 }>()("Logger") {}
 
@@ -28,21 +28,21 @@ const program = Effect.gen(function*() {
   const dbLayer = Layer.succeed(Database)({
     query: Effect.fn("Database.query")((sql: string) => Effect.succeed("result"))
   })
-  const dbServices = yield* Layer.buildWithMemoMap(dbLayer, memoMap, scope)
+  const dbContext = yield* Layer.buildWithMemoMap(dbLayer, memoMap, scope)
 
   // Build logger layer with same memoization (reuses memo if same layer)
   const loggerLayer = Layer.succeed(Logger)({
     log: Effect.fn("Logger.log")((msg: string) => Effect.sync(() => console.log(msg)))
   })
-  const loggerServices = yield* Layer.buildWithMemoMap(
+  const loggerContext = yield* Layer.buildWithMemoMap(
     loggerLayer,
     memoMap,
     scope
   )
 
   return {
-    database: ServiceMap.get(dbServices, Database),
-    logger: ServiceMap.get(loggerServices, Logger)
+    database: Context.get(dbContext, Database),
+    logger: Context.get(loggerContext, Logger)
   }
 })
 ```
@@ -50,9 +50,9 @@ const program = Effect.gen(function*() {
 **Signature**
 
 ```ts
-declare const buildWithMemoMap: { (memoMap: MemoMap, scope: Scope.Scope): <RIn, E, ROut>(self: Layer<ROut, E, RIn>) => Effect<ServiceMap.ServiceMap<ROut>, E, RIn>; <RIn, E, ROut>(self: Layer<ROut, E, RIn>, memoMap: MemoMap, scope: Scope.Scope): Effect<ServiceMap.ServiceMap<ROut>, E, RIn>; }
+declare const buildWithMemoMap: { (memoMap: MemoMap, scope: Scope.Scope): <RIn, E, ROut>(self: Layer<ROut, E, RIn>) => Effect<Context.Context<ROut>, E, RIn>; <RIn, E, ROut>(self: Layer<ROut, E, RIn>, memoMap: MemoMap, scope: Scope.Scope): Effect<Context.Context<ROut>, E, RIn>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L451)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L474)
 
 Since v2.0.0

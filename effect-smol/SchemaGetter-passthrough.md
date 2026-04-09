@@ -40,6 +40,6 @@ See also:
 declare const passthrough: { <T, E>(options: { readonly strict: false; }): Getter<T, E>; <T>(): Getter<T, T>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L303)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L304)
 
 Since v4.0.0

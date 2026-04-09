@@ -35,6 +35,6 @@ const program = Effect.gen(function*() {
 declare const keys: <Key, A, E, R>(self: Cache<Key, A, E, R>) => Effect.Effect<Iterable<Key>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cache.ts#L1159)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cache.ts#L1131)
 
 Since v4.0.0

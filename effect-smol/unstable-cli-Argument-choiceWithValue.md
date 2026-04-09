@@ -24,6 +24,6 @@ const logLevel = Argument.choiceWithValue("level", [
 declare const choiceWithValue: <const Choices extends ReadonlyArray<readonly [string, any]>>(name: string, choices: Choices) => Argument<Choices[number][1]>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Argument.ts#L573)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Argument.ts#L572)
 
 Since v4.0.0

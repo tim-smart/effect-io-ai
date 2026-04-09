@@ -28,6 +28,6 @@ export interface TextPart extends BasePart<"text", TextPartOptions> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L271)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L267)
 
 Since v4.0.0

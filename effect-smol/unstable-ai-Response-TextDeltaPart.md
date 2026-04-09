@@ -21,6 +21,6 @@ export interface TextDeltaPart extends BasePart<"text-delta", TextDeltaPartMetad
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Response.ts#L711)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Response.ts#L709)
 
 Since v1.0.0

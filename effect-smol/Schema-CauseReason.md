@@ -18,11 +18,12 @@ export interface CauseReason<E extends Top, D extends Top> extends
     CauseReasonIso<E, D>
   >
 {
+  readonly "~rebuild.out": CauseReason<E, D>
   readonly error: E
   readonly defect: D
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L7365)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L7373)
 
 Since v4.0.0

@@ -26,6 +26,6 @@ export interface TextPart extends BasePart<"text", TextPartMetadata> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Response.ts#L592)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Response.ts#L590)
 
 Since v1.0.0

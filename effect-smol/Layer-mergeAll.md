@@ -11,13 +11,13 @@ This is useful when you need to combine multiple independent layers.
 **Example**
 
 ```ts
-import { Effect, Layer, ServiceMap } from "effect"
+import { Effect, Layer, Context } from "effect"
 
-class Database extends ServiceMap.Service<Database, {
+class Database extends Context.Service<Database, {
   readonly query: (sql: string) => Effect.Effect<string>
 }>()("Database") {}
 
-class Logger extends ServiceMap.Service<Logger, {
+class Logger extends Context.Service<Logger, {
   readonly log: (msg: string) => Effect.Effect<void>
 }>()("Logger") {}
 
@@ -37,6 +37,6 @@ const mergedLayer = Layer.mergeAll(dbLayer, loggerLayer)
 declare const mergeAll: <Layers extends [Layer<never, any, any>, ...Array<Layer<never, any, any>>]>(...layers: Layers) => Layer<Success<Layers[number]>, Error<Layers[number]>, Services<Layers[number]>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L953)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L975)
 
 Since v2.0.0

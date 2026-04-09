@@ -5,7 +5,7 @@ Module: `Cause`<br />
 
 Attaches metadata to every reason in a `Cause`.
 
-Annotations are stored as a `ServiceMap` on each reason and can be
+Annotations are stored as a `Context` on each reason and can be
 retrieved later via `reasonAnnotations` or `annotations`.
 The runtime uses this to attach stack traces and spans.
 
@@ -16,10 +16,10 @@ The runtime uses this to attach stack traces and spans.
 **Example** (annotating a cause)
 
 ```ts
-import { Cause, ServiceMap } from "effect"
+import { Cause, Context } from "effect"
 
 const cause = Cause.fail("error")
-const annotated = Cause.annotate(cause, ServiceMap.empty())
+const annotated = Cause.annotate(cause, Context.empty())
 ```
 
 **See**
@@ -30,7 +30,7 @@ const annotated = Cause.annotate(cause, ServiceMap.empty())
 **Signature**
 
 ```ts
-declare const annotate: { (annotations: ServiceMap.ServiceMap<never>, options?: { readonly overwrite?: boolean | undefined; }): <E>(self: Cause<E>) => Cause<E>; <E>(self: Cause<E>, annotations: ServiceMap.ServiceMap<never>, options?: { readonly overwrite?: boolean | undefined; }): Cause<E>; }
+declare const annotate: { (annotations: Context.Context<never>, options?: { readonly overwrite?: boolean | undefined; }): <E>(self: Cause<E>) => Cause<E>; <E>(self: Cause<E>, annotations: Context.Context<never>, options?: { readonly overwrite?: boolean | undefined; }): Cause<E>; }
 ```
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L1606)

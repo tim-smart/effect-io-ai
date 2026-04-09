@@ -20,6 +20,6 @@ const portFlag = Flag.integer("port")
 declare const integer: (name: string) => Flag<number>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Flag.ts#L78)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Flag.ts#L77)
 
 Since v4.0.0

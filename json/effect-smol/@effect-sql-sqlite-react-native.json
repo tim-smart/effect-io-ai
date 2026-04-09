@@ -58,7 +58,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "tags",
-    "signature": "declare const SqliteClient: ServiceMap.Service<SqliteClient, SqliteClient>",
+    "signature": "declare const SqliteClient: Context.Service<SqliteClient, SqliteClient>",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/sqlite-react-native/src/SqliteClient.ts#L53"
   },
   {
@@ -73,7 +73,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "fiber refs",
-    "signature": "declare const AsyncQuery: ServiceMap.Reference<boolean>",
+    "signature": "declare const AsyncQuery: Context.Reference<boolean>",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/sqlite-react-native/src/SqliteClient.ts#L72"
   },
   {

@@ -20,6 +20,6 @@ export interface BasePartEncoded<Type extends string, Options extends ProviderOp
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L175)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L171)
 
 Since v4.0.0

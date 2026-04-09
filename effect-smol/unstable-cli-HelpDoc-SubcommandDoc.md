@@ -8,7 +8,7 @@ Documentation for a subcommand
 **Example**
 
 ```ts
-import { Option as O, ServiceMap } from "effect"
+import { Option as O, Context } from "effect"
 import type { HelpDoc } from "effect/unstable/cli"
 
 const deploySubcommand: HelpDoc.SubcommandDoc = {
@@ -29,7 +29,7 @@ const buildSubcommand: HelpDoc.SubcommandDoc = {
 const mainCommandHelp: HelpDoc.HelpDoc = {
   description: "Cloud deployment tool",
   usage: "myapp <command> [options]",
-  annotations: ServiceMap.empty(),
+  annotations: Context.empty(),
   flags: [],
   subcommands: [{
     group: undefined,

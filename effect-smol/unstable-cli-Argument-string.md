@@ -19,6 +19,6 @@ const filename = Argument.string("filename")
 declare const string: (name: string) => Argument<string>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Argument.ts#L50)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Argument.ts#L49)
 
 Since v4.0.0

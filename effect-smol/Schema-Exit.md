@@ -17,12 +17,13 @@ export interface Exit<A extends Top, E extends Top, D extends Top> extends
     ExitIso<A, E, D>
   >
 {
+  readonly "~rebuild.out": Exit<A, E, D>
   readonly value: A
   readonly error: E
   readonly defect: D
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L7737)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L7751)
 
 Since v4.0.0

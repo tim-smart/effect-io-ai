@@ -38,6 +38,6 @@ const limited = Param.variadic(Param.string(Param.flagKind, "item"), {
 declare const variadic: <Kind extends ParamKind, A>(self: Param<Kind, A>, options?: VariadicParamOptions | undefined) => Param<Kind, ReadonlyArray<A>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Param.ts#L1279)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Param.ts#L1302)
 
 Since v4.0.0

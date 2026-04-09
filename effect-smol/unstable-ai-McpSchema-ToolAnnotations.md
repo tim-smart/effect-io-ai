@@ -18,6 +18,6 @@ received from untrusted servers.
 declare class ToolAnnotations
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L1158)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L1160)
 
 Since v4.0.0

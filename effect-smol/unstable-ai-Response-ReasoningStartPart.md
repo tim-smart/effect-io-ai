@@ -18,6 +18,6 @@ export interface ReasoningStartPart extends BasePart<"reasoning-start", Reasonin
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Response.ts#L912)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Response.ts#L910)
 
 Since v1.0.0

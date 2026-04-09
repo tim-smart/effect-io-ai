@@ -15,13 +15,13 @@ making an HTTP request, or allocating resources).
 **Example**
 
 ```ts
-import { Console, Effect, ServiceMap } from "effect"
+import { Console, Effect, Context } from "effect"
 
 // Define a database connection service
 interface DatabaseConnection {
   readonly query: (sql: string) => Effect.Effect<string>
 }
-const Database = ServiceMap.Service<DatabaseConnection>("Database")
+const Database = Context.Service<DatabaseConnection>("Database")
 
 // Effect that creates a database connection
 const createConnection = Effect.gen(function*() {
@@ -55,9 +55,9 @@ Effect.runPromise(withDatabase).then(console.log)
 **Signature**
 
 ```ts
-declare const provideServiceEffect: { <I, S, E2, R2>(service: ServiceMap.Key<I, S>, acquire: Effect<S, E2, R2>): <A, E, R>(self: Effect<A, E, R>) => Effect<A, E | E2, Exclude<R, I> | R2>; <A, E, R, I, S, E2, R2>(self: Effect<A, E, R>, service: ServiceMap.Key<I, S>, acquire: Effect<S, E2, R2>): Effect<A, E | E2, Exclude<R, I> | R2>; }
+declare const provideServiceEffect: { <I, S, E2, R2>(service: Context.Key<I, S>, acquire: Effect<S, E2, R2>): <A, E, R>(self: Effect<A, E, R>) => Effect<A, E | E2, Exclude<R, I> | R2>; <A, E, R, I, S, E2, R2>(self: Effect<A, E, R>, service: Context.Key<I, S>, acquire: Effect<S, E2, R2>): Effect<A, E | E2, Exclude<R, I> | R2>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L5998)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L5999)
 
 Since v2.0.0

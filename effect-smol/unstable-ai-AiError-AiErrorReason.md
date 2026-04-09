@@ -34,6 +34,6 @@ type AiErrorReason = | RateLimitError
   | InvalidUserInputError
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AiError.ts#L1288)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AiError.ts#L1289)
 
 Since v1.0.0

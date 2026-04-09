@@ -38,6 +38,6 @@ See also:
 declare const checkEffect: <T, R = never>(f: (input: T, options: AST.ParseOptions) => Effect.Effect<undefined | boolean | string | Issue.Issue | { readonly path: ReadonlyArray<PropertyKey>; readonly message: string; }, never, R>) => Getter<T, T, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L505)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L506)
 
 Since v4.0.0

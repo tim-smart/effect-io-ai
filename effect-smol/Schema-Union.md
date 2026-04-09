@@ -3,7 +3,7 @@ Module: `Schema`<br />
 
 ## Schema.Union
 
-Schema type for a union of multiple schemas. Produced by `Union`.
+Companion type for a union of multiple schemas. Produced by `Union`.
 
 **Signature**
 
@@ -20,7 +20,6 @@ export interface Union<Members extends ReadonlyArray<Top>> extends
     { [K in keyof Members]: Members[K]["Iso"] }[number]
   >
 {
-  readonly "~rebuild.out": this
   readonly members: Members
   /**
    * Returns a new union with the members modified by the provided function.
@@ -45,6 +44,6 @@ export interface Union<Members extends ReadonlyArray<Top>> extends
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L3404)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L3384)
 
 Since v4.0.0

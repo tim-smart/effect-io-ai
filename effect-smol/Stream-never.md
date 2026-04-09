@@ -25,6 +25,6 @@ Effect.runPromise(program).then(console.log)
 declare const never: Stream<never, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L1654)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L1727)
 
 Since v4.0.0

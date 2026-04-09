@@ -20,6 +20,6 @@ export interface ToolParamsDeltaPartEncoded extends BasePartEncoded<"tool-params
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Response.ts#L1205)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Response.ts#L1203)
 
 Since v1.0.0

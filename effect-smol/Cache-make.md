@@ -60,6 +60,6 @@ const fetchUserCache = Effect.gen(function*() {
 declare const make: <Key, A, E = never, R = never, ServiceMode extends "lookup" | "construction" = never>(options: { readonly lookup: (key: Key) => Effect.Effect<A, E, R>; readonly capacity: number; readonly timeToLive?: Duration.Input | undefined; readonly requireServicesAt?: ServiceMode | undefined; }) => Effect.Effect<Cache<Key, A, E, "lookup" extends ServiceMode ? R : never>, never, "lookup" extends ServiceMode ? never : R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cache.ts#L257)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cache.ts#L229)
 
 Since v4.0.0

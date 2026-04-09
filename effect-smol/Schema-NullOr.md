@@ -3,14 +3,16 @@ Module: `Schema`<br />
 
 ## Schema.NullOr
 
-Schema type for `S | null`. Produced by `NullOr`.
+Companion type for `S | null`. Produced by `NullOr`.
 
 **Signature**
 
 ```ts
-export interface NullOr<S extends Top> extends Union<readonly [S, Null]> {}
+export interface NullOr<S extends Top> extends Union<readonly [S, Null]> {
+  readonly "~rebuild.out": NullOr<S>
+}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L3557)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L3535)
 
 Since v4.0.0

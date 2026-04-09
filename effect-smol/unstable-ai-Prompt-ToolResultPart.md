@@ -45,6 +45,6 @@ export interface ToolResultPart extends BasePart<"tool-result", ToolResultPartOp
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L659)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L655)
 
 Since v4.0.0

@@ -28,12 +28,11 @@ export interface brand<S extends Top, B> extends
     S["~encoded.optionality"]
   >
 {
-  readonly "~rebuild.out": this
   readonly schema: S
   readonly identifier: string
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L3735)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L3716)
 
 Since v4.0.0

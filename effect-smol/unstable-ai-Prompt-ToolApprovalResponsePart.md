@@ -50,6 +50,6 @@ export interface ToolApprovalResponsePart extends BasePart<"tool-approval-respon
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L784)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L780)
 
 Since v4.0.0

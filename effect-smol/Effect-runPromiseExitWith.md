@@ -8,15 +8,15 @@ Runs an effect and returns a Promise of Exit with provided services.
 **Example**
 
 ```ts
-import { Effect, Exit, ServiceMap } from "effect"
+import { Effect, Exit, Context } from "effect"
 
 interface Database {
   query: (sql: string) => string
 }
 
-const Database = ServiceMap.Service<Database>("Database")
+const Database = Context.Service<Database>("Database")
 
-const services = ServiceMap.make(Database, {
+const services = Context.make(Database, {
   query: (sql) => `Result for: ${sql}`
 })
 
@@ -35,7 +35,7 @@ Effect.runPromiseExitWith(services)(program).then((exit) => {
 **Signature**
 
 ```ts
-declare const runPromiseExitWith: <R>(services: ServiceMap.ServiceMap<R>) => <A, E>(effect: Effect<A, E, R>, options?: RunOptions | undefined) => Promise<Exit.Exit<A, E>>
+declare const runPromiseExitWith: <R>(context: Context.Context<R>) => <A, E>(effect: Effect<A, E, R>, options?: RunOptions | undefined) => Promise<Exit.Exit<A, E>>
 ```
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L8589)

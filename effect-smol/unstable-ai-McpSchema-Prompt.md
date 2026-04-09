@@ -11,6 +11,6 @@ A prompt or prompt template that the server offers.
 declare class Prompt
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L924)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L926)
 
 Since v4.0.0

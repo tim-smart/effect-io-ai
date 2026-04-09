@@ -3,7 +3,7 @@ Module: `Schema`<br />
 
 ## Schema.TupleWithRest
 
-Schema type for a tuple with additional rest elements. Produced by
+Companion type for a tuple with additional rest elements. Produced by
 `TupleWithRest`.
 
 **Signature**
@@ -24,12 +24,11 @@ export interface TupleWithRest<
     TupleWithRest.Iso<S["Iso"], Rest>
   >
 {
-  readonly "~rebuild.out": this
   readonly schema: S
   readonly rest: Rest
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L3140)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L3120)
 
 Since v4.0.0

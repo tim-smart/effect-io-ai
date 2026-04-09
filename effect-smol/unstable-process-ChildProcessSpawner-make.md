@@ -11,6 +11,6 @@ Create a new `ChildProcessSpawner` service from a `spawn` funciton
 declare const make: (spawn: ChildProcessSpawner["Service"]["spawn"]) => ChildProcessSpawner["Service"]
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ChildProcessSpawner.ts#L137)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ChildProcessSpawner.ts#L181)
 
 Since v4.0.0

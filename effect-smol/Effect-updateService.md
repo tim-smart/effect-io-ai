@@ -8,10 +8,10 @@ Updates the service with the required service entry.
 **Example**
 
 ```ts
-import { Console, Effect, ServiceMap } from "effect"
+import { Console, Effect, Context } from "effect"
 
 // Define a counter service
-const Counter = ServiceMap.Service<{ count: number }>("Counter")
+const Counter = Context.Service<{ count: number }>("Counter")
 
 const program = Effect.gen(function*() {
   const updatedCounter = yield* Effect.service(Counter)
@@ -31,9 +31,9 @@ Effect.runPromise(result).then(console.log)
 **Signature**
 
 ```ts
-declare const updateService: { <I, A>(service: ServiceMap.Key<I, A>, f: (value: A) => A): <XA, E, R>(self: Effect<XA, E, R>) => Effect<XA, E, R | I>; <XA, E, R, I, A>(self: Effect<XA, E, R>, service: ServiceMap.Key<I, A>, f: (value: A) => A): Effect<XA, E, R | I>; }
+declare const updateService: { <I, A>(service: Context.Key<I, A>, f: (value: A) => A): <XA, E, R>(self: Effect<XA, E, R>) => Effect<XA, E, R | I>; <XA, E, R, I, A>(self: Effect<XA, E, R>, service: Context.Key<I, A>, f: (value: A) => A): Effect<XA, E, R | I>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L5871)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L5872)
 
 Since v2.0.0

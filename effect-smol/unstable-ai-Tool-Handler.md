@@ -11,7 +11,7 @@ Represents an `Tool` that has been implemented within the application.
 export interface Handler<Name extends string> {
   readonly _: unique symbol
   readonly name: Name
-  readonly services: ServiceMap.ServiceMap<never>
+  readonly context: Context.Context<never>
   readonly handler: (params: any, ctx: any) => Effect.Effect<any, any>
 }
 ```

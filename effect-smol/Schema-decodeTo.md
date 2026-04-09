@@ -34,12 +34,11 @@ export interface decodeTo<To extends Top, From extends Top, RD = never, RE = nev
     From["~encoded.optionality"]
   >
 {
-  readonly "~rebuild.out": this
   readonly from: From
   readonly to: To
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L3993)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L3971)
 
 Since v4.0.0

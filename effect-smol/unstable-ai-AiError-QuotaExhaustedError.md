@@ -25,6 +25,6 @@ console.log(quotaError.message)
 declare class QuotaExhaustedError
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AiError.ts#L442)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AiError.ts#L443)
 
 Since v1.0.0

@@ -9,7 +9,7 @@ level for unhandled errors that occur during Effect execution.
 **Signature**
 
 ```ts
-declare const UnhandledLogLevel: ServiceMap.Reference<Severity | undefined>
+declare const UnhandledLogLevel: Context.Reference<Severity | undefined>
 ```
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/References.ts#L523)

@@ -9,7 +9,9 @@ opaque type `T` with no type parameters.
 **Signature**
 
 ```ts
-export interface declare<T, Iso = T> extends declareConstructor<T, T, readonly [], Iso> {}
+export interface declare<T, Iso = T> extends declareConstructor<T, T, readonly [], Iso> {
+  readonly "~rebuild.out": declare<T, Iso>
+}
 ```
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L361)

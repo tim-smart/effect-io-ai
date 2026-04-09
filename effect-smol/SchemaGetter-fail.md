@@ -33,6 +33,6 @@ See also:
 declare const fail: <T, E>(f: (oe: Option.Option<E>) => Issue.Issue) => Getter<T, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L225)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L226)
 
 Since v4.0.0

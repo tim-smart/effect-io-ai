@@ -11,6 +11,6 @@ Union type of encoded content parts for tool messages.
 type ToolMessagePartEncoded = ToolResultPartEncoded | ToolApprovalResponsePartEncoded
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L1597)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L1591)
 
 Since v4.0.0

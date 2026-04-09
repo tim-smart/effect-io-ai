@@ -8,9 +8,9 @@ Returns `true` if the specified value is a `Layer`, `false` otherwise.
 **Example**
 
 ```ts
-import { Effect, Layer, ServiceMap } from "effect"
+import { Effect, Layer, Context } from "effect"
 
-class Database extends ServiceMap.Service<Database, {
+class Database extends Context.Service<Database, {
   readonly query: (sql: string) => Effect.Effect<string>
 }>()("Database") {}
 
@@ -29,6 +29,6 @@ console.log(Layer.isLayer(notALayer)) // false
 declare const isLayer: (u: unknown) => u is Layer<unknown, unknown, unknown>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L177)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L200)
 
 Since v2.0.0

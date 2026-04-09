@@ -27,6 +27,6 @@ console.log(policyError.message)
 declare class ContentPolicyError
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AiError.ts#L547)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AiError.ts#L548)
 
 Since v1.0.0

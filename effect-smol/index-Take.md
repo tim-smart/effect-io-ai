@@ -11,6 +11,6 @@ Re-exports all named exports from the "./Take.ts" module as `Take`.
 export * as Take from "./Take.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L3931)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L3997)
 
 Since v2.0.0

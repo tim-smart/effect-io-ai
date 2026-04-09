@@ -37,6 +37,6 @@ console.log(error.message)
 declare class NetworkError
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AiError.ts#L143)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AiError.ts#L144)
 
 Since v1.0.0

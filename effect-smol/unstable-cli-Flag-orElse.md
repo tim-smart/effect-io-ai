@@ -29,6 +29,6 @@ const configFlag = Flag.orElse(
 declare const orElse: { <B>(that: LazyArg<Flag<B>>): <A>(self: Flag<A>) => Flag<A | B>; <A, B>(self: Flag<A>, that: LazyArg<Flag<B>>): Flag<A | B>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Flag.ts#L809)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Flag.ts#L808)
 
 Since v4.0.0

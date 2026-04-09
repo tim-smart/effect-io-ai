@@ -69,9 +69,40 @@ export interface ChildProcessHandle {
    * `Stream`.
    */
   readonly getOutputFd: (fd: number) => Stream.Stream<Uint8Array, PlatformError.PlatformError>
+  /**
+   * Allows the parent process to exit independently of this child process.
+   *
+   * Running this `Effect` removes this child process from the parent process's
+   * reference count, so the parent process is allowed to exit without waiting
+   * for the child process to finish.
+   *
+   * The returned `Reref` effect adds the child process back into the parent
+   * process's reference count when run, restoring the default behavior.
+   *
+   * This is the only supported way to re-reference a child process after it
+   * has been unrefed.
+   *
+   * @example
+   * ```ts
+   * import { NodeServices } from "@effect/platform-node"
+   * import { Effect } from "effect"
+   * import { ChildProcess } from "effect/unstable/process"
+   *
+   * const program = Effect.gen(function*() {
+   *   const handle = yield* ChildProcess.make`./server`
+   *   const reref = yield* handle.unref
+   *
+   *   yield* Effect.sleep("1 second")
+   *
+   *   yield* reref
+   *   return yield* handle.exitCode
+   * }).pipe(Effect.scoped, Effect.provide(NodeServices.layer))
+   * ```
+   */
+  readonly unref: Effect.Effect<Reref, PlatformError.PlatformError>
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ChildProcessSpawner.ts#L51)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ChildProcessSpawner.ts#L64)
 
 Since v4.0.0

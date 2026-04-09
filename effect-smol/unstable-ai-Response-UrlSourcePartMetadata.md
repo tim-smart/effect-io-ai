@@ -12,6 +12,6 @@ Represents provider-specific metadata that can be associated with a
 export interface UrlSourcePartMetadata extends ProviderMetadata {}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Response.ts#L2063)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Response.ts#L2061)
 
 Since v1.0.0

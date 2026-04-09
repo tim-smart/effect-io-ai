@@ -12,11 +12,9 @@ Schema for the `undefined` literal. Validates that the input is strictly `undefi
 **Signature**
 
 ```ts
-export interface Undefined extends Bottom<undefined, undefined, never, never, AST.Undefined, Undefined> {
-  readonly "~rebuild.out": this
-}
+export interface Undefined extends Bottom<undefined, undefined, never, never, AST.Undefined, Undefined> {}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L2083)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L2080)
 
 Since v4.0.0

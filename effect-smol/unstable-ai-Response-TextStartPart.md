@@ -18,6 +18,6 @@ export interface TextStartPart extends BasePart<"text-start", TextStartPartMetad
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Response.ts#L652)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Response.ts#L650)
 
 Since v1.0.0

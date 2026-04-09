@@ -25,6 +25,6 @@ const json = Argument.string("data").pipe(
 declare const mapTryCatch: { <A, B>(f: (a: A) => B, onError: (error: unknown) => string): (self: Argument<A>) => Argument<B>; <A, B>(self: Argument<A>, f: (a: A) => B, onError: (error: unknown) => string): Argument<B>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Argument.ts#L468)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Argument.ts#L467)
 
 Since v4.0.0

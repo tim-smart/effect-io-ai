@@ -18,6 +18,6 @@ export interface ReasoningEndPart extends BasePart<"reasoning-end", ReasoningEnd
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Response.ts#L1041)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Response.ts#L1039)
 
 Since v1.0.0

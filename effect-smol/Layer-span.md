@@ -13,9 +13,9 @@ is automatically closed when the layer's scope is closed.
 **Example**
 
 ```ts
-import { Console, Effect, Layer, ServiceMap, type Tracer } from "effect"
+import { Console, Effect, Layer, Context, type Tracer } from "effect"
 
-class Database extends ServiceMap.Service<Database, {
+class Database extends Context.Service<Database, {
   readonly query: (sql: string) => Effect.Effect<string>
 }>()("Database") {}
 
@@ -51,6 +51,6 @@ const tracedLayer = Layer.span("service-initialization", {
 declare const span: (name: string, options?: SpanOptions) => Layer<Tracer.ParentSpan>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L2090)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L2112)
 
 Since v4.0.0

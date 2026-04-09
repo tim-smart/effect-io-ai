@@ -16,6 +16,6 @@ export interface TextEndPartEncoded extends BasePartEncoded<"text-end", TextEndP
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Response.ts#L794)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Response.ts#L792)
 
 Since v1.0.0

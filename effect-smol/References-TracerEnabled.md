@@ -47,7 +47,7 @@ const tracingControl = Effect.gen(function*() {
 **Signature**
 
 ```ts
-declare const TracerEnabled: ServiceMap.Reference<boolean>
+declare const TracerEnabled: Context.Reference<boolean>
 ```
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/References.ts#L356)

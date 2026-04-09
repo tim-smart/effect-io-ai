@@ -27,6 +27,6 @@ const templateContent = Param.fileText(Param.argumentKind, "template")
 declare const fileText: <Kind extends ParamKind>(kind: Kind, name: string) => Param<Kind, string>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Param.ts#L681)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Param.ts#L692)
 
 Since v4.0.0

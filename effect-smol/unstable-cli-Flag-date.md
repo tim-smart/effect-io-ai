@@ -20,6 +20,6 @@ const startDateFlag = Flag.date("start-date")
 declare const date: (name: string) => Flag<Date>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Flag.ts#L110)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Flag.ts#L109)
 
 Since v4.0.0

@@ -28,6 +28,6 @@ const toolCallPart = Response.makePart("tool-call", {
 declare const makePart: <const Type extends AnyPart["type"]>(type: Type, params: Omit<Extract<AnyPart, { type: Type; }>, typeof PartTypeId | "type" | "metadata"> & { readonly metadata?: Extract<AnyPart, { type: Type; }>["metadata"] | undefined; }) => Extract<AnyPart, { type: Type; }>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Response.ts#L535)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Response.ts#L533)
 
 Since v1.0.0

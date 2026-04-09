@@ -8,7 +8,7 @@ Documentation for a positional argument
 **Example**
 
 ```ts
-import { Option as O, ServiceMap } from "effect"
+import { Option as O, Context } from "effect"
 import type { HelpDoc } from "effect/unstable/cli"
 
 const sourceArg: HelpDoc.ArgDoc = {
@@ -31,7 +31,7 @@ const filesArg: HelpDoc.ArgDoc = {
 const copyCommandHelp: HelpDoc.HelpDoc = {
   description: "Copy files from source to destination",
   usage: "copy <source> [files...]",
-  annotations: ServiceMap.empty(),
+  annotations: Context.empty(),
   flags: [],
   args: [sourceArg, filesArg]
 }

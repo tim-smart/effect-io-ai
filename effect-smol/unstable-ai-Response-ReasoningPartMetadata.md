@@ -12,6 +12,6 @@ Represents provider-specific metadata that can be associated with a
 export interface ReasoningPartMetadata extends ProviderMetadata {}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Response.ts#L879)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Response.ts#L877)
 
 Since v1.0.0

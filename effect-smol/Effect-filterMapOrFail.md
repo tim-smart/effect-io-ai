@@ -11,6 +11,6 @@ Filters an effect with a `Filter`, failing when the filter fails.
 declare const filterMapOrFail: { <A, B, X, E2>(filter: Filter.Filter<NoInfer<A>, B, X>, orFailWith: (x: X) => E2): <E, R>(self: Effect<A, E, R>) => Effect<B, E2 | E, R>; <A, B, X>(filter: Filter.Filter<NoInfer<A>, B, X>): <E, R>(self: Effect<A, E, R>) => Effect<B, Cause.NoSuchElementError | E, R>; <A, E, R, B, X, E2>(self: Effect<A, E, R>, filter: Filter.Filter<A, B, X>, orFailWith: (x: X) => E2): Effect<B, E2 | E, R>; <A, E, R, B, X>(self: Effect<A, E, R>, filter: Filter.Filter<A, B, X>): Effect<B, Cause.NoSuchElementError | E, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L5003)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L5004)
 
 Since v4.0.0

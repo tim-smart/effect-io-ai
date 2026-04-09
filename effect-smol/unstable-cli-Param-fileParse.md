@@ -31,6 +31,6 @@ const jsonConfig = Param.fileParse(Param.flagKind, "json-config", {
 declare const fileParse: <Kind extends ParamKind>(kind: Kind, name: string, options?: Primitive.FileParseOptions | undefined) => Param<Kind, unknown>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Param.ts#L713)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Param.ts#L724)
 
 Since v4.0.0

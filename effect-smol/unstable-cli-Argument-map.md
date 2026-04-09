@@ -21,6 +21,6 @@ const port = Argument.integer("port").pipe(
 declare const map: { <A, B>(f: (a: A) => B): (self: Argument<A>) => Argument<B>; <A, B>(self: Argument<A>, f: (a: A) => B): Argument<B>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Argument.ts#L407)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Argument.ts#L406)
 
 Since v4.0.0

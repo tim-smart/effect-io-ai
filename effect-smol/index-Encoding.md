@@ -11,6 +11,6 @@ Re-exports all named exports from the "./Encoding.ts" module as `Encoding`.
 export * as Encoding from "./Encoding.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L994)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L1008)
 
 Since v4.0.0

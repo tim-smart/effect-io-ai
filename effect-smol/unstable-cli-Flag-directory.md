@@ -25,6 +25,6 @@ const sourceFlag = Flag.directory("source", { mustExist: true })
 declare const directory: (name: string, options?: { readonly mustExist?: boolean | undefined; }) => Flag<string>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Flag.ts#L224)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Flag.ts#L223)
 
 Since v4.0.0

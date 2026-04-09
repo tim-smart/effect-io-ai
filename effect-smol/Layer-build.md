@@ -8,9 +8,9 @@ Builds a layer into a scoped value.
 **Example**
 
 ```ts
-import { Effect, Layer, ServiceMap } from "effect"
+import { Effect, Layer, Context } from "effect"
 
-class Database extends ServiceMap.Service<Database, {
+class Database extends Context.Service<Database, {
   readonly query: (sql: string) => Effect.Effect<string>
 }>()("Database") {}
 
@@ -20,11 +20,11 @@ const program = Effect.gen(function*() {
     query: Effect.fn("Database.query")((sql: string) => Effect.succeed("result"))
   })
 
-  // Build the layer into ServiceMap - automatically manages scope and memoization
-  const services = yield* Layer.build(dbLayer)
+  // Build the layer into Context - automatically manages scope and memoization
+  const context = yield* Layer.build(dbLayer)
 
   // Extract the specific service from the built layer
-  const database = ServiceMap.get(services, Database)
+  const database = Context.get(context, Database)
 
   return yield* database.query("SELECT * FROM users")
 })
@@ -33,9 +33,9 @@ const program = Effect.gen(function*() {
 **Signature**
 
 ```ts
-declare const build: <RIn, E, ROut>(self: Layer<ROut, E, RIn>) => Effect<ServiceMap.ServiceMap<ROut>, E, RIn | Scope.Scope>
+declare const build: <RIn, E, ROut>(self: Layer<ROut, E, RIn>) => Effect<Context.Context<ROut>, E, RIn | Scope.Scope>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L502)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L525)
 
 Since v2.0.0

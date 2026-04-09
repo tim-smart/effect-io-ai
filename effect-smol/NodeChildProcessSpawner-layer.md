@@ -11,6 +11,6 @@ Layer providing the `NodeChildProcessSpawner` implementation.
 declare const layer: Layer.Layer<ChildProcessSpawner, never, Path.Path | FileSystem.FileSystem>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeChildProcessSpawner.ts#L563)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeChildProcessSpawner.ts#L633)
 
 Since v4.0.0

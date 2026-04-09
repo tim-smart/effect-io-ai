@@ -8,18 +8,18 @@ Constructs a layer dynamically based on the output of this layer.
 **Example**
 
 ```ts
-import { Effect, Layer, ServiceMap } from "effect"
+import { Effect, Layer, Context } from "effect"
 
-class Config extends ServiceMap.Service<Config, {
+class Config extends Context.Service<Config, {
   readonly dbUrl: string
   readonly logLevel: string
 }>()("Config") {}
 
-class Database extends ServiceMap.Service<Database, {
+class Database extends Context.Service<Database, {
   readonly query: (sql: string) => Effect.Effect<string>
 }>()("Database") {}
 
-class Logger extends ServiceMap.Service<Logger, {
+class Logger extends Context.Service<Logger, {
   readonly log: (msg: string) => Effect.Effect<void>
 }>()("Logger") {}
 
@@ -31,8 +31,8 @@ const configLayer = Layer.succeed(Config)({
 
 // Dynamically create services based on config
 const dynamicServiceLayer = configLayer.pipe(
-  Layer.flatMap((services) => {
-    const config = ServiceMap.get(services, Config)
+  Layer.flatMap((context) => {
+    const config = Context.get(context, Config)
 
     // Create database layer based on config
     const dbLayer = Layer.succeed(Database)({
@@ -73,9 +73,9 @@ const program = Effect.gen(function*() {
 **Signature**
 
 ```ts
-declare const flatMap: { <A, A2, E2, R2>(f: (context: ServiceMap.ServiceMap<A>) => Layer<A2, E2, R2>): <E, R>(self: Layer<A, E, R>) => Layer<A2, E2 | E, R2 | R>; <A, E, R, A2, E2, R2>(self: Layer<A, E, R>, f: (context: ServiceMap.ServiceMap<A>) => Layer<A2, E2, R2>): Layer<A2, E | E2, R | R2>; }
+declare const flatMap: { <A, A2, E2, R2>(f: (context: Context.Context<A>) => Layer<A2, E2, R2>): <E, R>(self: Layer<A, E, R>) => Layer<A2, E2 | E, R2 | R>; <A, E, R, A2, E2, R2>(self: Layer<A, E, R>, f: (context: Context.Context<A>) => Layer<A2, E2, R2>): Layer<A2, E | E2, R | R2>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L1322)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L1344)
 
 Since v2.0.0

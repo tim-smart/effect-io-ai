@@ -59,6 +59,6 @@ const safeProgram = program.pipe(
 export * as Effect from "./Effect.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L987)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L1001)
 
 Since v2.0.0

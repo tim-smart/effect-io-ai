@@ -33,6 +33,6 @@ export interface FilePart extends BasePart<"file", FilePartMetadata> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Response.ts#L1842)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Response.ts#L1840)
 
 Since v1.0.0

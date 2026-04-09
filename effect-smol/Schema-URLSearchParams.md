@@ -3,14 +3,16 @@ Module: `Schema`<br />
 
 ## Schema.URLSearchParams
 
-Schema type for `URLSearchParams`.
+Companion type for `URLSearchParams`.
 
 **Signature**
 
 ```ts
-export interface URLSearchParams extends instanceOf<globalThis.URLSearchParams> {}
+export interface URLSearchParams extends instanceOf<globalThis.URLSearchParams> {
+  readonly "~rebuild.out": URLSearchParams
+}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L9046)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L9150)
 
 Since v4.0.0

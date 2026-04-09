@@ -54,6 +54,6 @@ export interface ToolCallPart<Name extends string, Params> extends BasePart<"too
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Response.ts#L1344)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Response.ts#L1342)
 
 Since v1.0.0

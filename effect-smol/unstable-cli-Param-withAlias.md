@@ -20,7 +20,7 @@ import * as Param from "effect/unstable/cli/Param"
 
 const force = Param.boolean(Param.flagKind, "force").pipe(
   Param.withAlias("-f"),
-  Param.withAlias("--no-prompt")
+  Param.withAlias("-F")
 )
 
 // Also works on composed params:
@@ -36,6 +36,6 @@ const count = Param.integer(Param.flagKind, "count").pipe(
 declare const withAlias: { <Kind extends ParamKind, A>(alias: string): (self: Param<Kind, A>) => Param<Kind, A>; <Kind extends ParamKind, A>(self: Param<Kind, A>, alias: string): Param<Kind, A>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Param.ts#L867)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Param.ts#L878)
 
 Since v4.0.0

@@ -34,11 +34,10 @@ export interface middlewareEncoding<S extends Top, RE> extends
     S["~encoded.optionality"]
   >
 {
-  readonly "~rebuild.out": this
   readonly schema: S
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L3862)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L3841)
 
 Since v4.0.0

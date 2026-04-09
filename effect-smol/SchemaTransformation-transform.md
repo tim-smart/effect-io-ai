@@ -42,6 +42,6 @@ See also:
 declare const transform: <T, E>(options: { readonly decode: (input: E) => T; readonly encode: (input: T) => E; }) => Transformation<T, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L391)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L395)
 
 Since v4.0.0

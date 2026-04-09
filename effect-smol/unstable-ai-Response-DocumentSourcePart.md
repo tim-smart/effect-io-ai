@@ -34,6 +34,6 @@ export interface DocumentSourcePart extends BasePart<"source", DocumentSourcePar
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Response.ts#L1912)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Response.ts#L1910)
 
 Since v1.0.0

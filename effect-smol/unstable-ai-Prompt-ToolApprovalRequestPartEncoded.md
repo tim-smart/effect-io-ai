@@ -22,6 +22,6 @@ export interface ToolApprovalRequestPartEncoded
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L911)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L907)
 
 Since v4.0.0

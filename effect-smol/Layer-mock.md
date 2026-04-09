@@ -10,9 +10,9 @@ throw an unimplemented defect when called.
 **Example**
 
 ```ts
-import { Effect, Layer, ServiceMap } from "effect"
+import { Effect, Layer, Context } from "effect"
 
-class UserService extends ServiceMap.Service<UserService, {
+class UserService extends Context.Service<UserService, {
   readonly config: { apiUrl: string }
   readonly getUser: (
     id: string
@@ -49,9 +49,9 @@ const testProgram = Effect.gen(function*() {
 **Signature**
 
 ```ts
-declare const mock: { <I, S extends object>(service: ServiceMap.Key<I, S>): (implementation: PartialEffectful<S>) => Layer<I>; <I, S extends object>(service: ServiceMap.Key<I, S>, implementation: Types.NoInfer<PartialEffectful<S>>): Layer<I>; }
+declare const mock: { <I, S extends object>(service: Context.Key<I, S>): (implementation: PartialEffectful<S>) => Layer<I>; <I, S extends object>(service: Context.Key<I, S>, implementation: Types.NoInfer<PartialEffectful<S>>): Layer<I>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L1873)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L1895)
 
 Since v4.0.0

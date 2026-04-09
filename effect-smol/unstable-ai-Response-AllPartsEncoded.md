@@ -30,6 +30,6 @@ type AllPartsEncoded = | TextPartEncoded
   | ErrorPartEncoded
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Response.ts#L144)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Response.ts#L142)
 
 Since v1.0.0

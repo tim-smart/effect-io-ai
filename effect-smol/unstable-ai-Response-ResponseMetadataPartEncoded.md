@@ -30,6 +30,6 @@ export interface ResponseMetadataPartEncoded
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Response.ts#L2216)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Response.ts#L2214)
 
 Since v1.0.0

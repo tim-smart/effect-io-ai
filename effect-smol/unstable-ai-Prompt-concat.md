@@ -27,6 +27,6 @@ const merged = Prompt.concat(systemPrompt, "Hello, world!")
 declare const concat: { (input: RawInput): (self: Prompt) => Prompt; (self: Prompt, input: RawInput): Prompt; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L2068)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L2062)
 
 Since v4.0.0

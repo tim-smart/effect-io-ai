@@ -26,6 +26,6 @@ Effect.runPromise(program)
 declare const fail: <E>(error: E) => Stream<never, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L831)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L904)
 
 Since v2.0.0

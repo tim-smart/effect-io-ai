@@ -8,9 +8,9 @@ Constructs a `MemoMap` that can be used to build additional layers.
 **Example**
 
 ```ts
-import { Effect, Layer, ServiceMap } from "effect"
+import { Effect, Layer, Context } from "effect"
 
-class Database extends ServiceMap.Service<Database, {
+class Database extends Context.Service<Database, {
   readonly query: (sql: string) => Effect.Effect<string>
 }>()("Database") {}
 
@@ -22,9 +22,9 @@ const program = Effect.gen(function*() {
   const dbLayer = Layer.succeed(Database)({
     query: Effect.fn("Database.query")((sql: string) => Effect.succeed("result"))
   })
-  const services = yield* Layer.buildWithMemoMap(dbLayer, memoMap, scope)
+  const context = yield* Layer.buildWithMemoMap(dbLayer, memoMap, scope)
 
-  return ServiceMap.get(services, Database)
+  return Context.get(context, Database)
 })
 ```
 
@@ -34,6 +34,6 @@ const program = Effect.gen(function*() {
 declare const makeMemoMap: Effect<MemoMap, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L386)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L409)
 
 Since v2.0.0

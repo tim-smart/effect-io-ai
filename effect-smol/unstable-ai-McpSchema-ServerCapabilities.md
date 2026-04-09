@@ -13,6 +13,6 @@ its own, additional capabilities.
 declare class ServerCapabilities
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L275)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L277)
 
 Since v4.0.0

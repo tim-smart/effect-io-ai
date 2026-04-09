@@ -93,10 +93,10 @@ export interface Tool<
   readonly failureSchema: Config["failure"]
 
   /**
-   * A `ServiceMap` containing tool annotations which can store metadata about
+   * A `Context` containing tool annotations which can store metadata about
    * the tool.
    */
-  readonly annotations: ServiceMap.ServiceMap<never>
+  readonly annotations: Context.Context<never>
 
   /**
    * Specifies whether user approval is required before executing this tool.
@@ -118,7 +118,7 @@ export interface Tool<
    * instead of being provided when creating the tool call handler layer.
    */
   addDependency<Identifier, Service>(
-    tag: ServiceMap.Key<Identifier, Service>
+    tag: Context.Key<Identifier, Service>
   ): Tool<Name, Config, Identifier | Requirements>
 
   /**
@@ -172,12 +172,12 @@ export interface Tool<
   /**
    * Add an annotation to the tool.
    */
-  annotate<I, S>(tag: ServiceMap.Key<I, S>, value: S): Tool<Name, Config, Requirements>
+  annotate<I, S>(tag: Context.Key<I, S>, value: S): Tool<Name, Config, Requirements>
 
   /**
    * Add many annotations to the tool.
    */
-  annotateMerge<I>(context: ServiceMap.ServiceMap<I>): Tool<Name, Config, Requirements>
+  annotateMerge<I>(context: Context.Context<I>): Tool<Name, Config, Requirements>
 }
 ```
 

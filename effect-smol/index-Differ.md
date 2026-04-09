@@ -11,6 +11,6 @@ Re-exports all named exports from the "./Differ.ts" module as `Differ`.
 export * as Differ from "./Differ.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L898)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L912)
 
 Since v4.0.0

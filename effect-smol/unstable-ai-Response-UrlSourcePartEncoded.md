@@ -28,6 +28,6 @@ export interface UrlSourcePartEncoded extends BasePartEncoded<"source", UrlSourc
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Response.ts#L2037)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Response.ts#L2035)
 
 Since v1.0.0

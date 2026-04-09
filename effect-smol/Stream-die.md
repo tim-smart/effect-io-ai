@@ -36,6 +36,6 @@ Effect.runPromise(program)
 declare const die: (defect: unknown) => Stream<never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L912)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L985)
 
 Since v2.0.0

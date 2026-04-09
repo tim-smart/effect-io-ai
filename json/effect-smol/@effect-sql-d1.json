@@ -26,7 +26,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "tags",
-    "signature": "declare const D1Client: ServiceMap.Service<D1Client, D1Client>",
+    "signature": "declare const D1Client: Context.Service<D1Client, D1Client>",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/d1/src/D1Client.ts#L53"
   },
   {

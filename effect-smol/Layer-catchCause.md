@@ -8,7 +8,7 @@ Recovers from all errors.
 **Example**
 
 ```ts
-import { Data, Effect, Layer, ServiceMap } from "effect"
+import { Data, Effect, Layer, Context } from "effect"
 
 class DatabaseError extends Data.TaggedError("DatabaseError")<{
   message: string
@@ -18,11 +18,11 @@ class NetworkError extends Data.TaggedError("NetworkError")<{
   reason: string
 }> {}
 
-class Database extends ServiceMap.Service<Database, {
+class Database extends Context.Service<Database, {
   readonly query: (sql: string) => Effect.Effect<string>
 }>()("Database") {}
 
-class Logger extends ServiceMap.Service<Logger, {
+class Logger extends Context.Service<Logger, {
   readonly log: (msg: string) => Effect.Effect<void>
 }>()("Logger") {}
 
@@ -63,6 +63,6 @@ const program = Effect.gen(function*() {
 declare const catchCause: { <E, RIn2, E2, ROut2>(onError: (cause: Cause.Cause<E>) => Layer<ROut2, E2, RIn2>): <RIn, ROut>(self: Layer<ROut, E, RIn>) => Layer<ROut & ROut2, E2, RIn2 | RIn>; <RIn, E, ROut, RIn2, E2, ROut22>(self: Layer<ROut, E, RIn>, onError: (cause: Cause.Cause<E>) => Layer<ROut22, E2, RIn2>): Layer<ROut & ROut22, E2, RIn | RIn2>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L1633)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L1655)
 
 Since v2.0.0

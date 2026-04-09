@@ -27,6 +27,6 @@ const toBool = SchemaGetter.Boolean<string>()
 declare const Boolean: <E>() => Getter<boolean, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L782)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L781)
 
 Since v4.0.0

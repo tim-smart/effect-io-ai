@@ -26,6 +26,6 @@ const excludeFlag = Flag.string("exclude").pipe(
 declare const between: { <A>(min: number, max: number): (self: Flag<A>) => Flag<ReadonlyArray<A>>; <A>(self: Flag<A>, min: number, max: number): Flag<ReadonlyArray<A>>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Flag.ts#L708)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Flag.ts#L707)
 
 Since v4.0.0

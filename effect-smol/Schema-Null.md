@@ -12,11 +12,9 @@ Schema for the `null` literal. Validates that the input is strictly `null`.
 **Signature**
 
 ```ts
-export interface Null extends Bottom<null, null, never, never, AST.Null, Null> {
-  readonly "~rebuild.out": this
-}
+export interface Null extends Bottom<null, null, never, never, AST.Null, Null> {}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L2065)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L2064)
 
 Since v4.0.0

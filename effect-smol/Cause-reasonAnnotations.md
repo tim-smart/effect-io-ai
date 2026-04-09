@@ -3,7 +3,7 @@ Module: `Cause`<br />
 
 ## Cause.reasonAnnotations
 
-Reads the annotations from a single `Reason` as a `ServiceMap`.
+Reads the annotations from a single `Reason` as a `Context`.
 
 Use this when you need tracing metadata (e.g. `StackTrace`) from
 a specific reason rather than the whole cause.
@@ -16,7 +16,7 @@ a specific reason rather than the whole cause.
 **Signature**
 
 ```ts
-declare const reasonAnnotations: <E>(self: Reason<E>) => ServiceMap.ServiceMap<never>
+declare const reasonAnnotations: <E>(self: Reason<E>) => Context.Context<never>
 ```
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L1630)

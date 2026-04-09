@@ -25,6 +25,6 @@ if (Param.isParam(maybeParam)) {
 declare const isParam: (u: unknown) => u is Param<any, ParamKind>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Param.ts#L228)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Param.ts#L239)
 
 Since v4.0.0

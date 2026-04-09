@@ -13,7 +13,7 @@
     "since": "4.0.0",
     "category": "Layers",
     "signature": "declare const layer: Layer.Layer<ChildProcessSpawner, never, Path.Path | FileSystem.FileSystem>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeChildProcessSpawner.ts#L563"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeChildProcessSpawner.ts#L633"
   },
   {
     "_tag": "Function",
@@ -29,7 +29,7 @@
     "since": "4.0.0",
     "category": "Utilities",
     "signature": "declare const flattenCommand: (command: ChildProcess.Command) => FlattenedPipeline",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeChildProcessSpawner.ts#L591"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeChildProcessSpawner.ts#L661"
   },
   {
     "_tag": "Interface",
@@ -45,7 +45,7 @@
     "since": "4.0.0",
     "category": "Models",
     "signature": "export interface FlattenedPipeline {\n  readonly commands: Arr.NonEmptyReadonlyArray<ChildProcess.StandardCommand>\n  readonly pipeOptions: ReadonlyArray<ChildProcess.PipeOptions>\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeChildProcessSpawner.ts#L579"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeChildProcessSpawner.ts#L649"
   },
   {
     "_tag": "Constant",

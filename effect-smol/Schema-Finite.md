@@ -3,14 +3,16 @@ Module: `Schema`<br />
 
 ## Schema.Finite
 
-Schema type for `Finite`.
+Companion type for `Finite`.
 
 **Signature**
 
 ```ts
-export interface Finite extends Number {}
+export interface Finite extends Number {
+  readonly "~rebuild.out": Finite
+}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L9167)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L9275)
 
 Since v4.0.0

@@ -29,6 +29,6 @@ const positiveInt = Param.integer(Param.flagKind, "count").pipe(
 declare const filterMap: { <A, B>(filter: (a: A) => Option.Option<B>, onNone: (a: A) => string): <Kind extends ParamKind>(self: Param<Kind, A>) => Param<Kind, B>; <Kind extends ParamKind, A, B>(self: Param<Kind, A>, filter: (a: A) => Option.Option<B>, onNone: (a: A) => string): Param<Kind, B>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Param.ts#L1440)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Param.ts#L1463)
 
 Since v4.0.0

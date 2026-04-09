@@ -16,6 +16,6 @@ export interface ReasoningPartEncoded extends BasePartEncoded<"reasoning", Reaso
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L365)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L361)
 
 Since v4.0.0

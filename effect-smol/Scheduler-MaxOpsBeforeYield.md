@@ -13,7 +13,7 @@ performance and fairness in concurrent execution.
 **Signature**
 
 ```ts
-declare const MaxOpsBeforeYield: ServiceMap.Reference<number>
+declare const MaxOpsBeforeYield: Context.Reference<number>
 ```
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Scheduler.ts#L191)

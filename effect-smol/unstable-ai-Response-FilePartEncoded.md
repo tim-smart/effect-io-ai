@@ -20,6 +20,6 @@ export interface FilePartEncoded extends BasePartEncoded<"file", FilePartMetadat
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Response.ts#L1859)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Response.ts#L1857)
 
 Since v1.0.0

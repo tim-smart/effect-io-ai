@@ -18,13 +18,13 @@ Since v1.0.0
 
 ```ts
 import { expect, layer } from "@effect/vitest"
-import { Effect, Layer, ServiceMap } from "effect"
+import { Effect, Layer, Context } from "effect"
 
-class Foo extends ServiceMap.Service("Foo")<Foo, "foo">() {
+class Foo extends Context.Service("Foo")<Foo, "foo">() {
   static Live = Layer.succeed(Foo, "foo")
 }
 
-class Bar extends ServiceMap.Service("Bar")<Bar, "bar">() {
+class Bar extends Context.Service("Bar")<Bar, "bar">() {
   static Live = Layer.effect(
     Bar,
     Effect.map(Foo, () => "bar" as const)

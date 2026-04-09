@@ -26,7 +26,7 @@ const program = Effect.gen(function*() {
 **Signature**
 
 ```ts
-declare const Random: ServiceMap.Reference<{ nextIntUnsafe(): number; nextDoubleUnsafe(): number; }>
+declare const Random: Context.Reference<{ nextIntUnsafe(): number; nextDoubleUnsafe(): number; }>
 ```
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Random.ts#L53)

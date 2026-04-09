@@ -21,6 +21,6 @@ type Part<Tools> = | TextPart
   | FinishPart
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Response.ts#L241)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Response.ts#L239)
 
 Since v1.0.0

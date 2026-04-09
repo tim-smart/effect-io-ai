@@ -8,15 +8,15 @@ Executes an effect as a Promise with the provided services.
 **Example**
 
 ```ts
-import { Effect, ServiceMap } from "effect"
+import { Effect, Context } from "effect"
 
 interface Config {
   apiUrl: string
 }
 
-const Config = ServiceMap.Service<Config>("Config")
+const Config = Context.Service<Config>("Config")
 
-const services = ServiceMap.make(Config, {
+const context = Context.make(Config, {
   apiUrl: "https://api.example.com"
 })
 
@@ -25,13 +25,13 @@ const program = Effect.gen(function*() {
   return `Connecting to ${config.apiUrl}`
 })
 
-Effect.runPromiseWith(services)(program).then(console.log)
+Effect.runPromiseWith(context)(program).then(console.log)
 ```
 
 **Signature**
 
 ```ts
-declare const runPromiseWith: <R>(services: ServiceMap.ServiceMap<R>) => <A, E>(effect: Effect<A, E, R>, options?: RunOptions | undefined) => Promise<A>
+declare const runPromiseWith: <R>(context: Context.Context<R>) => <A, E>(effect: Effect<A, E, R>, options?: RunOptions | undefined) => Promise<A>
 ```
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L8501)

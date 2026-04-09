@@ -57,7 +57,7 @@ const logAnnotationExample = Effect.gen(function*() {
 **Signature**
 
 ```ts
-declare const CurrentLogAnnotations: ServiceMap.Reference<ReadonlyRecord<string, unknown>>
+declare const CurrentLogAnnotations: Context.Reference<ReadonlyRecord<string, unknown>>
 ```
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/References.ts#L149)

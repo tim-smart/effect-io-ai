@@ -58,7 +58,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "tags",
-    "signature": "declare const SqliteClient: ServiceMap.Service<SqliteClient, SqliteClient>",
+    "signature": "declare const SqliteClient: Context.Service<SqliteClient, SqliteClient>",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/sqlite-node/src/SqliteClient.ts#L67"
   },
   {

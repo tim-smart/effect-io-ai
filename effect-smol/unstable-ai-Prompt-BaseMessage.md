@@ -23,6 +23,6 @@ export interface BaseMessage<Role extends string, Options extends ProviderOption
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L991)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L985)
 
 Since v4.0.0

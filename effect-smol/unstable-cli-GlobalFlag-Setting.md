@@ -8,7 +8,7 @@ Setting flag: configure command handler's environment (--log-level, --config).
 **Signature**
 
 ```ts
-export interface Setting<Id extends string, A> extends ServiceMap.Service<Setting.Identifier<Id>, A> {
+export interface Setting<Id extends string, A> extends Context.Service<Setting.Identifier<Id>, A> {
   readonly _tag: "Setting"
   readonly id: Id
   readonly flag: Flag.Flag<A>

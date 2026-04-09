@@ -15,7 +15,6 @@ Represents a union schema of multiple literal values.
 export interface Literals<L extends ReadonlyArray<AST.LiteralValue>>
   extends Bottom<L[number], L[number], never, never, AST.Union<AST.Literal>, Literals<L>>
 {
-  readonly "~rebuild.out": this
   readonly literals: L
   readonly members: { readonly [K in keyof L]: Literal<L[K]> }
   /**
@@ -31,6 +30,6 @@ export interface Literals<L extends ReadonlyArray<AST.LiteralValue>>
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L3497)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L3476)
 
 Since v4.0.0

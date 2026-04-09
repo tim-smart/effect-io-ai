@@ -36,6 +36,6 @@ See also:
 declare const make: <T, E, RD = never, RE = never>(options: { readonly decode: Getter.Getter<T, E, RD>; readonly encode: Getter.Getter<E, T, RE>; }) => Transformation<T, E, RD, RE>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L294)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L298)
 
 Since v4.0.0

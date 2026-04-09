@@ -28,11 +28,10 @@ export interface refine<T extends S["Type"], S extends Top> extends
     S["~encoded.optionality"]
   >
 {
-  readonly "~rebuild.out": this
   readonly schema: S
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L3689)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L3671)
 
 Since v4.0.0

@@ -19,6 +19,6 @@ to read from.
 declare class ListRoots
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L1725)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L1727)
 
 Since v4.0.0

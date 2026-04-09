@@ -22,7 +22,7 @@ export interface HttpApiGroup<
   readonly key: string
   readonly topLevel: TopLevel
   readonly endpoints: Record.ReadonlyRecord<string, Endpoints>
-  readonly annotations: ServiceMap.ServiceMap<never>
+  readonly annotations: Context.Context<never>
 
   /**
    * Add an `HttpApiEndpoint` to an `HttpApiGroup`.
@@ -45,7 +45,7 @@ export interface HttpApiGroup<
    * Endpoints added after this api is called **will not** have the middleware
    * applied.
    */
-  middleware<I extends HttpApiMiddleware.AnyId, S>(middleware: ServiceMap.Key<I, S>): HttpApiGroup<
+  middleware<I extends HttpApiMiddleware.AnyId, S>(middleware: Context.Key<I, S>): HttpApiGroup<
     Id,
     HttpApiEndpoint.AddMiddleware<Endpoints, I>,
     TopLevel
@@ -54,20 +54,20 @@ export interface HttpApiGroup<
   /**
    * Merge the annotations of an `HttpApiGroup` with the provided annotations.
    */
-  annotateMerge<I>(annotations: ServiceMap.ServiceMap<I>): HttpApiGroup<Id, Endpoints, TopLevel>
+  annotateMerge<I>(annotations: Context.Context<I>): HttpApiGroup<Id, Endpoints, TopLevel>
 
   /**
    * Add an annotation to an `HttpApiGroup`.
    */
-  annotate<I, S>(key: ServiceMap.Key<I, S>, value: S): HttpApiGroup<Id, Endpoints, TopLevel>
+  annotate<I, S>(key: Context.Key<I, S>, value: S): HttpApiGroup<Id, Endpoints, TopLevel>
 
   /**
    * For each endpoint in an `HttpApiGroup`, update the annotations with a new
-   * ServiceMap.
+   * Context.
    *
    * Note that this will only update the annotations before this api is called.
    */
-  annotateEndpointsMerge<I>(annotations: ServiceMap.ServiceMap<I>): HttpApiGroup<Id, Endpoints, TopLevel>
+  annotateEndpointsMerge<I>(annotations: Context.Context<I>): HttpApiGroup<Id, Endpoints, TopLevel>
 
   /**
    * For each endpoint in an `HttpApiGroup`, add an annotation.
@@ -75,7 +75,7 @@ export interface HttpApiGroup<
    * Note that this will only add the annotation to the endpoints before this api
    * is called.
    */
-  annotateEndpoints<I, S>(key: ServiceMap.Key<I, S>, value: S): HttpApiGroup<Id, Endpoints, TopLevel>
+  annotateEndpoints<I, S>(key: Context.Key<I, S>, value: S): HttpApiGroup<Id, Endpoints, TopLevel>
 }
 ```
 

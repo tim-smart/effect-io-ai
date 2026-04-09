@@ -29,6 +29,6 @@ const conditionalParam = process.env.NODE_ENV === "production"
 declare const none: <Kind extends ParamKind>(kind: Kind) => Param<Kind, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Param.ts#L828)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Param.ts#L839)
 
 Since v4.0.0

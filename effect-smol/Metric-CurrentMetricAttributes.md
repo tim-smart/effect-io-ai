@@ -37,7 +37,7 @@ const program = Effect.gen(function*() {
 **Signature**
 
 ```ts
-declare const CurrentMetricAttributes: ServiceMap.Reference<Readonly<Record<string, string>>>
+declare const CurrentMetricAttributes: Context.Reference<Readonly<Record<string, string>>>
 ```
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Metric.ts#L1764)

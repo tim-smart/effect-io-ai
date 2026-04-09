@@ -12,11 +12,9 @@ Schema for `bigint` values.
 **Signature**
 
 ```ts
-export interface BigInt extends Bottom<bigint, bigint, never, never, AST.BigInt, BigInt> {
-  readonly "~rebuild.out": this
-}
+export interface BigInt extends Bottom<bigint, bigint, never, never, AST.BigInt, BigInt> {}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L2177)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L2164)
 
 Since v4.0.0

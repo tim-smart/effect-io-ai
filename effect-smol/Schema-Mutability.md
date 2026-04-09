@@ -15,6 +15,6 @@ Whether a schema field is readonly or mutable within a struct.
 type Mutability = "readonly" | "mutable"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L159)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L160)
 
 Since v4.0.0

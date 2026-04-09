@@ -20,6 +20,6 @@ const outputFile = Argument.file("output", { mustExist: false }) // Must not exi
 declare const file: (name: string, options?: { readonly mustExist?: boolean | undefined; }) => Argument<string>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Argument.ts#L81)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Argument.ts#L80)
 
 Since v4.0.0

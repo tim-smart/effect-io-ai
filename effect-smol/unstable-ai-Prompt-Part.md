@@ -20,6 +20,6 @@ type Part = | TextPart
   | ToolApprovalRequestPart
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L125)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L121)
 
 Since v4.0.0

@@ -11,6 +11,6 @@ Re-exports all named exports from the "./SchemaGetter.ts" module as `SchemaGette
 export * as SchemaGetter from "./SchemaGetter.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L3498)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L3577)
 
 Since v4.0.0

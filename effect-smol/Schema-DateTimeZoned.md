@@ -3,14 +3,16 @@ Module: `Schema`<br />
 
 ## Schema.DateTimeZoned
 
-Schema type for `DateTimeZoned`.
+Companion type for `DateTimeZoned`.
 
 **Signature**
 
 ```ts
-export interface DateTimeZoned extends declare<DateTime.Zoned> {}
+export interface DateTimeZoned extends declare<DateTime.Zoned> {
+  readonly "~rebuild.out": DateTimeZoned
+}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L9715)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L10081)
 
 Since v4.0.0

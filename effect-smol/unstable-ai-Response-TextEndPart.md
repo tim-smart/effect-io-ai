@@ -18,6 +18,6 @@ export interface TextEndPart extends BasePart<"text-end", TextEndPartMetadata> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Response.ts#L781)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Response.ts#L779)
 
 Since v1.0.0

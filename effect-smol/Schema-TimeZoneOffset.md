@@ -3,14 +3,16 @@ Module: `Schema`<br />
 
 ## Schema.TimeZoneOffset
 
-Schema type for `TimeZoneOffset`.
+Companion type for `TimeZoneOffset`.
 
 **Signature**
 
 ```ts
-export interface TimeZoneOffset extends declare<DateTime.TimeZone.Offset> {}
+export interface TimeZoneOffset extends declare<DateTime.TimeZone.Offset> {
+  readonly "~rebuild.out": TimeZoneOffset
+}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L9577)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L9879)
 
 Since v4.0.0

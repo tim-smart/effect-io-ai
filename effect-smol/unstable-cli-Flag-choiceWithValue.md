@@ -28,6 +28,6 @@ const logLevel = Flag.choiceWithValue("log-level", [
 declare const choiceWithValue: <const Choice extends ReadonlyArray<readonly [string, any]>>(name: string, choices: Choice) => Flag<Choice[number][1]>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Flag.ts#L134)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Flag.ts#L133)
 
 Since v4.0.0

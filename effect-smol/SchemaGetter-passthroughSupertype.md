@@ -31,6 +31,6 @@ See also:
 declare const passthroughSupertype: <T extends E, E>() => Getter<T, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L334)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L335)
 
 Since v4.0.0

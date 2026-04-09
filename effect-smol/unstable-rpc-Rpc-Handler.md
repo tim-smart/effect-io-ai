@@ -17,7 +17,7 @@ export interface Handler<Tag extends string> {
     readonly headers: Headers
     readonly rpc: Any
   }) => Effect<any, any> | Stream<any, any>
-  readonly services: ServiceMap.ServiceMap<never>
+  readonly context: Context.Context<never>
 }
 ```
 

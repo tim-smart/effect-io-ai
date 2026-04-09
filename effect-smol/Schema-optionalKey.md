@@ -3,7 +3,7 @@ Module: `Schema`<br />
 
 ## Schema.optionalKey
 
-Schema type for an exact optional struct key. The key may be absent, but
+Companion type for an exact optional struct key. The key may be absent, but
 when present must match the wrapped schema (no implicit `undefined`).
 Produced by `optionalKey`.
 
@@ -29,11 +29,10 @@ export interface optionalKey<S extends Top> extends
     "optional"
   >
 {
-  readonly "~rebuild.out": this
   readonly schema: S
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L1459)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L1473)
 
 Since v4.0.0

@@ -11,6 +11,6 @@ Sent from the client to request a list of resources the server has.
 declare class ListResources
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L766)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L768)
 
 Since v4.0.0

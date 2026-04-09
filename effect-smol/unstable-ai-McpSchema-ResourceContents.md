@@ -11,6 +11,6 @@ The contents of a specific resource or sub-resource.
 declare class ResourceContents
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L703)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L705)
 
 Since v4.0.0

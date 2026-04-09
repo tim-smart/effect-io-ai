@@ -11,6 +11,6 @@ Type guard to check if a value is a Message.
 declare const isMessage: (u: unknown) => u is Message
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L981)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L975)
 
 Since v4.0.0

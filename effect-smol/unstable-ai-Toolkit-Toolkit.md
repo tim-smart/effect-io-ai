@@ -68,12 +68,12 @@ export interface Toolkit<in out Tools extends Record<string, Tool.Any>> extends
   of<Handlers extends HandlersFrom<Tools>>(handlers: Handlers): Handlers
 
   /**
-   * Converts a toolkit into a `ServiceMap` containing handlers for each tool
+   * Converts a toolkit into a `Context` containing handlers for each tool
    * in the toolkit.
    */
   toHandlers<Handlers extends HandlersFrom<Tools>, EX = never, RX = never>(
     build: Handlers | Effect.Effect<Handlers, EX, RX>
-  ): Effect.Effect<ServiceMap.ServiceMap<Tool.HandlersFor<Tools>>, EX, RX>
+  ): Effect.Effect<Context.Context<Tool.HandlersFor<Tools>>, EX, RX>
 
   /**
    * Converts a toolkit into a `Layer` containing handlers for each tool in the

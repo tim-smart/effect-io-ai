@@ -11,6 +11,6 @@ Re-exports all named exports from the "./HashRing.ts" module as `HashRing`.
 export * as HashRing from "./HashRing.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L1461)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L1475)
 
 Since v4.0.0

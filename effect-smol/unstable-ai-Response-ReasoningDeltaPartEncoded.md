@@ -20,6 +20,6 @@ export interface ReasoningDeltaPartEncoded extends BasePartEncoded<"reasoning-de
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Response.ts#L988)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Response.ts#L986)
 
 Since v1.0.0

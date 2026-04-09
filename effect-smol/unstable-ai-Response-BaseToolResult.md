@@ -39,6 +39,6 @@ export interface BaseToolResult<Name extends string> extends BasePart<"tool-resu
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Response.ts#L1453)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Response.ts#L1451)
 
 Since v1.0.0

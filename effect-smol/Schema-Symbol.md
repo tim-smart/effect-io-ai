@@ -12,11 +12,9 @@ Schema for `symbol` values.
 **Signature**
 
 ```ts
-export interface Symbol extends Bottom<symbol, symbol, never, never, AST.Symbol, Symbol> {
-  readonly "~rebuild.out": this
-}
+export interface Symbol extends Bottom<symbol, symbol, never, never, AST.Symbol, Symbol> {}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L2159)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L2148)
 
 Since v4.0.0

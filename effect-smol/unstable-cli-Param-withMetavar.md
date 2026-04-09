@@ -30,6 +30,6 @@ const port = Param.integer(Param.flagKind, "port").pipe(
 declare const withMetavar: { <K extends ParamKind>(metavar: string): <A>(self: Param<K, A>) => Param<K, A>; <K extends ParamKind, A>(self: Param<K, A>, metavar: string): Param<K, A>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Param.ts#L1532)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Param.ts#L1555)
 
 Since v4.0.0

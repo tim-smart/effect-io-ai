@@ -19,7 +19,7 @@ export interface HttpApi<
   readonly [TypeId]: typeof TypeId
   readonly identifier: Id
   readonly groups: Record.ReadonlyRecord<string, Groups>
-  readonly annotations: ServiceMap.ServiceMap<never>
+  readonly annotations: Context.Context<never>
 
   /**
    * Add a `HttpApiGroup` to the `HttpApi`.
@@ -46,18 +46,18 @@ export interface HttpApi<
    * api is called.
    */
   middleware<I extends HttpApiMiddleware.AnyId, S>(
-    middleware: ServiceMap.Key<I, S>
+    middleware: Context.Key<I, S>
   ): HttpApi<Id, HttpApiGroup.AddMiddleware<Groups, I>>
 
   /**
    * Annotate the `HttpApi`.
    */
-  annotate<I, S>(tag: ServiceMap.Key<I, S>, value: S): HttpApi<Id, Groups>
+  annotate<I, S>(tag: Context.Key<I, S>, value: S): HttpApi<Id, Groups>
 
   /**
-   * Annotate the `HttpApi` with a ServiceMap.
+   * Annotate the `HttpApi` with a Context.
    */
-  annotateMerge<I>(context: ServiceMap.ServiceMap<I>): HttpApi<Id, Groups>
+  annotateMerge<I>(context: Context.Context<I>): HttpApi<Id, Groups>
 }
 ```
 

@@ -30,6 +30,6 @@ See also:
 declare const Number: <E>() => Getter<number, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L756)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L755)
 
 Since v4.0.0

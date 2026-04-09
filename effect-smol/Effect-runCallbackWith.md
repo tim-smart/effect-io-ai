@@ -10,15 +10,15 @@ The returned interruptor calls `fiber.interruptUnsafe`, optionally with an inter
 **Example**
 
 ```ts
-import { Console, Effect, Exit, ServiceMap } from "effect"
+import { Console, Effect, Exit, Context } from "effect"
 
 interface Logger {
   log: (message: string) => Effect.Effect<void>
 }
 
-const Logger = ServiceMap.Service<Logger>("Logger")
+const Logger = Context.Service<Logger>("Logger")
 
-const services = ServiceMap.make(Logger, {
+const services = Context.make(Logger, {
   log: (message) => Console.log(message)
 })
 
@@ -43,7 +43,7 @@ interrupt()
 **Signature**
 
 ```ts
-declare const runCallbackWith: <R>(services: ServiceMap.ServiceMap<R>) => <A, E>(effect: Effect<A, E, R>, options?: (RunOptions & { readonly onExit: (exit: Exit.Exit<A, E>) => void; }) | undefined) => (interruptor?: number | undefined) => void
+declare const runCallbackWith: <R>(context: Context.Context<R>) => <A, E>(effect: Effect<A, E, R>, options?: (RunOptions & { readonly onExit: (exit: Exit.Exit<A, E>) => void; }) | undefined) => (interruptor?: number | undefined) => void
 ```
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L8385)

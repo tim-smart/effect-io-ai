@@ -3,14 +3,16 @@ Module: `Schema`<br />
 
 ## Schema.File
 
-Schema type for `File`.
+Companion type for `File`.
 
 **Signature**
 
 ```ts
-export interface File extends instanceOf<globalThis.File> {}
+export interface File extends instanceOf<globalThis.File> {
+  readonly "~rebuild.out": File
+}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L8821)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L8919)
 
 Since v4.0.0

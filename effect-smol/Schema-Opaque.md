@@ -33,11 +33,10 @@ export interface Opaque<Self, S extends Top, Brand> extends
     S["~encoded.optionality"]
   >
 {
-  // intentionally left without `readonly "~rebuild.out": this`
   new(_: never): S["Type"] & Brand
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L4751)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L4719)
 
 Since v4.0.0

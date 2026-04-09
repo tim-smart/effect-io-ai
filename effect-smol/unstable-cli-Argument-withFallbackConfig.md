@@ -22,6 +22,6 @@ const repository = Argument.string("repository").pipe(
 declare const withFallbackConfig: { <B>(config: Config.Config<B>): <A>(self: Argument<A>) => Argument<A | B>; <A, B>(self: Argument<A>, config: Config.Config<B>): Argument<A | B>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Argument.ts#L335)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Argument.ts#L334)
 
 Since v4.0.0

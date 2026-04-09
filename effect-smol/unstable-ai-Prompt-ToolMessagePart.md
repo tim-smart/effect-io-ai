@@ -11,6 +11,6 @@ Union type of content parts allowed in tool messages.
 type ToolMessagePart = ToolResultPart | ToolApprovalResponsePart
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L1576)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L1570)
 
 Since v4.0.0

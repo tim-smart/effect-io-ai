@@ -16,6 +16,6 @@ export interface ReasoningEndPartEncoded extends BasePartEncoded<"reasoning-end"
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Response.ts#L1054)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Response.ts#L1052)
 
 Since v1.0.0

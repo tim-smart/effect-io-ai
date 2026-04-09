@@ -8,15 +8,15 @@ Runs an effect in the background with the provided services.
 **Example**
 
 ```ts
-import { Effect, ServiceMap } from "effect"
+import { Effect, Context } from "effect"
 
 interface Logger {
   log: (message: string) => void
 }
 
-const Logger = ServiceMap.Service<Logger>("Logger")
+const Logger = Context.Service<Logger>("Logger")
 
-const services = ServiceMap.make(Logger, {
+const services = Context.make(Logger, {
   log: (message) => console.log(message)
 })
 
@@ -32,7 +32,7 @@ const fiber = Effect.runForkWith(services)(program)
 **Signature**
 
 ```ts
-declare const runForkWith: <R>(services: ServiceMap.ServiceMap<R>) => <A, E>(effect: Effect<A, E, R>, options?: RunOptions | undefined) => Fiber<A, E>
+declare const runForkWith: <R>(context: Context.Context<R>) => <A, E>(effect: Effect<A, E, R>, options?: RunOptions | undefined) => Fiber<A, E>
 ```
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L8341)

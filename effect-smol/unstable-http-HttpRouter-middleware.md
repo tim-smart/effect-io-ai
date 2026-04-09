@@ -13,7 +13,7 @@ the `global` option as `true`.
 ```ts
 import { Effect } from "effect"
 import * as Layer from "effect/Layer"
-import * as ServiceMap from "effect/ServiceMap"
+import * as Context from "effect/Context"
 import * as HttpMiddleware from "effect/unstable/http/HttpMiddleware"
 import * as HttpRouter from "effect/unstable/http/HttpRouter"
 import * as HttpServerResponse from "effect/unstable/http/HttpServerResponse"
@@ -22,7 +22,7 @@ import * as HttpServerResponse from "effect/unstable/http/HttpServerResponse"
 const CorsMiddleware = HttpRouter.middleware(HttpMiddleware.cors()).layer
 // You can also use HttpRouter.cors() to create a CORS middleware
 
-class CurrentSession extends ServiceMap.Service<CurrentSession, {
+class CurrentSession extends Context.Service<CurrentSession, {
   readonly token: string
 }>()("CurrentSession") {}
 

@@ -12,13 +12,13 @@ layer construction into an existing trace hierarchy.
 **Example**
 
 ```ts
-import { Effect, Layer, ServiceMap, Tracer } from "effect"
+import { Effect, Layer, Context, Tracer } from "effect"
 
-class Database extends ServiceMap.Service<Database, {
+class Database extends Context.Service<Database, {
   readonly query: (sql: string) => Effect.Effect<string>
 }>()("Database") {}
 
-class Cache extends ServiceMap.Service<Cache, {
+class Cache extends Context.Service<Cache, {
   readonly get: (key: string) => Effect.Effect<string | null>
 }>()("Cache") {}
 
@@ -47,9 +47,9 @@ const program = Effect.withSpan("application-startup")(
       Layer.withParentSpan(parentSpan)
     )
 
-    const services = yield* Layer.build(AppLayer)
-    const database = ServiceMap.get(services, Database)
-    const cache = ServiceMap.get(services, Cache)
+    const context = yield* Layer.build(AppLayer)
+    const database = Context.get(context, Database)
+    const cache = Context.get(context, Cache)
 
     const dbResult = yield* database.query("SELECT * FROM users")
     const cacheResult = yield* cache.get("user:123")
@@ -65,6 +65,6 @@ const program = Effect.withSpan("application-startup")(
 declare const withParentSpan: { (span: Tracer.AnySpan, options?: Tracer.TraceOptions): <A, E, R>(self: Layer<A, E, R>) => Layer<A, E, Exclude<R, Tracer.ParentSpan>>; <A, E, R>(self: Layer<A, E, R>, span: Tracer.AnySpan, options?: Tracer.TraceOptions): Layer<A, E, Exclude<R, Tracer.ParentSpan>>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L2308)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L2330)
 
 Since v4.0.0

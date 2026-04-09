@@ -3,7 +3,7 @@ Module: `Schema`<br />
 
 ## Schema.StructWithRest
 
-Schema type for a struct combined with one or more record schemas. Produced
+Companion type for a struct combined with one or more record schemas. Produced
 by `StructWithRest`.
 
 **Signature**
@@ -24,12 +24,11 @@ export interface StructWithRest<
     Simplify<StructWithRest.Iso<S, Records>>
   >
 {
-  readonly "~rebuild.out": this
   readonly schema: S
   readonly records: Records
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L2843)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L2825)
 
 Since v4.0.0

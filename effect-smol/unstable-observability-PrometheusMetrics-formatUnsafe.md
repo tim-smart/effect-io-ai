@@ -5,13 +5,13 @@ Module: `PrometheusMetrics`<br />
 
 Synchronously format all metrics in the registry to Prometheus exposition format.
 
-This is a low-level function that requires access to the service map.
+This is a low-level function that requires access to the context.
 Most users should use `format` instead.
 
 **Signature**
 
 ```ts
-declare const formatUnsafe: (services: ServiceMap.ServiceMap<never>, options?: FormatOptions | undefined) => string
+declare const formatUnsafe: (context: Context.Context<never>, options?: FormatOptions | undefined) => string
 ```
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PrometheusMetrics.ts#L131)

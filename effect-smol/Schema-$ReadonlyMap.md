@@ -3,7 +3,7 @@ Module: `Schema`<br />
 
 ## Schema.$ReadonlyMap
 
-Schema type for `ReadonlyMap`.
+Companion type for `ReadonlyMap`.
 
 **Signature**
 
@@ -16,11 +16,12 @@ export interface $ReadonlyMap<Key extends Top, Value extends Top> extends
     ReadonlyMapIso<Key, Value>
   >
 {
+  readonly "~rebuild.out": $ReadonlyMap<Key, Value>
   readonly key: Key
   readonly value: Value
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L7868)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L7883)
 
 Since v4.0.0

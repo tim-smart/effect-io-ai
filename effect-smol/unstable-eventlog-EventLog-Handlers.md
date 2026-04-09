@@ -17,7 +17,7 @@ export interface Handlers<
   }
   readonly group: EventGroup.AnyWithProps
   readonly handlers: Record.ReadonlyRecord<string, Handlers.Item<R>>
-  readonly services: ServiceMap.ServiceMap<R>
+  readonly context: Context.Context<R>
 
   /**
    * Add the implementation for an `Event` to a `Handlers` group.

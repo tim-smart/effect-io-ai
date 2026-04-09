@@ -12,11 +12,9 @@ Schema for `boolean` values.
 **Signature**
 
 ```ts
-export interface Boolean extends Bottom<boolean, boolean, never, never, AST.Boolean, Boolean> {
-  readonly "~rebuild.out": this
-}
+export interface Boolean extends Bottom<boolean, boolean, never, never, AST.Boolean, Boolean> {}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L2141)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L2132)
 
 Since v4.0.0

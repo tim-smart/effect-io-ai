@@ -12,11 +12,9 @@ Schema for the `any` type. Accepts any value without validation.
 **Signature**
 
 ```ts
-export interface Any extends Bottom<any, any, never, never, AST.Any, Any> {
-  readonly "~rebuild.out": this
-}
+export interface Any extends Bottom<any, any, never, never, AST.Any, Any> {}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L2029)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L2032)
 
 Since v4.0.0

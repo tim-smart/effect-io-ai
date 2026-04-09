@@ -12,6 +12,6 @@ asking it to begin initialization.
 declare class Initialize
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L500)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L502)
 
 Since v4.0.0

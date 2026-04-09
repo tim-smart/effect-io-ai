@@ -31,10 +31,11 @@ export interface Option<A extends Top> extends
     OptionIso<A>
   >
 {
+  readonly "~rebuild.out": Option<A>
   readonly value: A
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L6821)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L6812)
 
 Since v4.0.0

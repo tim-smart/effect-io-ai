@@ -11,15 +11,15 @@ A child scope is created, and if the build fails, the child scope is closed.
 **Example**
 
 ```ts
-import { Effect, Layer, ServiceMap } from "effect"
+import { Effect, Layer, Context } from "effect"
 
-class Database extends ServiceMap.Service<Database, {
+class Database extends Context.Service<Database, {
   readonly query: (sql: string) => Effect.Effect<string>
 }>()("Database") {}
 
 const databaseLayer = Layer.fromBuild(() =>
   Effect.sync(() =>
-    ServiceMap.make(Database, {
+    Context.make(Database, {
       query: (sql: string) => Effect.succeed("result")
     })
   )
@@ -29,9 +29,9 @@ const databaseLayer = Layer.fromBuild(() =>
 **Signature**
 
 ```ts
-declare const fromBuild: <ROut, E, RIn>(build: (memoMap: MemoMap, scope: Scope.Scope) => Effect<ServiceMap.ServiceMap<ROut>, E, RIn>) => Layer<ROut, E, RIn>
+declare const fromBuild: <ROut, E, RIn>(build: (memoMap: MemoMap, scope: Scope.Scope) => Effect<Context.Context<ROut>, E, RIn>) => Layer<ROut, E, RIn>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L227)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L250)
 
 Since v4.0.0

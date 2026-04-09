@@ -11,6 +11,6 @@ The sender or recipient of messages and data in a conversation.
 declare const Role: Schema.Literals<["user", "assistant"]>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L183)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L185)
 
 Since v4.0.0

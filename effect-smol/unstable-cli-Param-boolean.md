@@ -28,6 +28,6 @@ const enableArg = Param.boolean(Param.argumentKind, "enable")
 declare const boolean: <const Kind extends ParamKind>(kind: Kind, name: string) => Param<Kind, boolean>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Param.ts#L340)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Param.ts#L351)
 
 Since v4.0.0

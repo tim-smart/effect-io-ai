@@ -41,7 +41,7 @@ const limitConcurrency = Effect.gen(function*() {
 **Signature**
 
 ```ts
-declare const CurrentConcurrency: ServiceMap.Reference<number | "unbounded">
+declare const CurrentConcurrency: Context.Reference<number | "unbounded">
 ```
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/References.ts#L93)

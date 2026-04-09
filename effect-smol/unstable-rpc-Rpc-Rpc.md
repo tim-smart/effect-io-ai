@@ -26,7 +26,7 @@ export interface Rpc<
   readonly successSchema: Success
   readonly errorSchema: Error
   readonly defectSchema: Schema.Top
-  readonly annotations: ServiceMap.ServiceMap<never>
+  readonly annotations: Context.Context<never>
   readonly middlewares: ReadonlySet<Middleware>
   readonly "~requires": Requires
 
@@ -96,7 +96,7 @@ export interface Rpc<
    * Add an annotation on the rpc.
    */
   annotate<I, S>(
-    tag: ServiceMap.Key<I, S>,
+    tag: Context.Key<I, S>,
     value: S
   ): Rpc<Tag, Payload, Success, Error, Middleware, Requires>
 
@@ -104,7 +104,7 @@ export interface Rpc<
    * Merge the annotations of the rpc with the provided annotations.
    */
   annotateMerge<I>(
-    annotations: ServiceMap.ServiceMap<I>
+    annotations: Context.Context<I>
   ): Rpc<Tag, Payload, Success, Error, Middleware, Requires>
 }
 ```

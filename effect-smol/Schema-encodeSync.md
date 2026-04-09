@@ -13,6 +13,6 @@ throwing a `SchemaError` on failure. For `unknown` input use
 declare const encodeSync: <S extends Encoder<unknown>>(schema: S) => (input: S["Type"], options?: AST.ParseOptions) => S["Encoded"]
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L1423)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L1411)
 
 Since v4.0.0

@@ -637,7 +637,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "undici",
-    "signature": "declare const UndiciOptions: ServiceMap.Reference<Partial<Undici.Dispatcher.RequestOptions<null>>>",
+    "signature": "declare const UndiciOptions: Context.Reference<Partial<Undici.Dispatcher.RequestOptions<null>>>",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L92"
   },
   {
@@ -787,7 +787,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "Fetch",
-    "signature": "declare const Fetch: ServiceMap.Reference<{ (input: RequestInfo | URL, init?: RequestInit): Promise<Response>; (input: string | URL | Request, init?: RequestInit): Promise<Response>; }>",
+    "signature": "declare const Fetch: Context.Reference<{ (input: RequestInfo | URL, init?: RequestInit): Promise<Response>; (input: string | URL | Request, init?: RequestInit): Promise<Response>; }>",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L42"
   },
   {

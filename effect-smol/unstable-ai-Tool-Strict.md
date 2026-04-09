@@ -25,7 +25,7 @@ const flexibleTool = Tool.make("search")
 **Signature**
 
 ```ts
-declare const Strict: ServiceMap.Reference<boolean | undefined>
+declare const Strict: Context.Reference<boolean | undefined>
 ```
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tool.ts#L1731)

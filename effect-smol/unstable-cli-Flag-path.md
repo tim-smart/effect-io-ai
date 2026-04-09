@@ -32,6 +32,6 @@ const dirFlag = Flag.path("output-dir", {
 declare const path: (name: string, options?: { readonly pathType?: "file" | "directory" | "either" | undefined; readonly mustExist?: boolean | undefined; readonly typeName?: string | undefined; }) => Flag<string>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Flag.ts#L176)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Flag.ts#L175)
 
 Since v4.0.0

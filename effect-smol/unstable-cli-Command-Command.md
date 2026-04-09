@@ -96,7 +96,7 @@ export interface Command<Name extends string, Input, ContextInput = {}, E = neve
   /**
    * Custom annotations associated with this command.
    */
-  readonly annotations: ServiceMap.ServiceMap<never>
+  readonly annotations: Context.Context<never>
 }
 ```
 

@@ -20,6 +20,6 @@ export interface TextDeltaPartEncoded extends BasePartEncoded<"text-delta", Text
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Response.ts#L728)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Response.ts#L726)
 
 Since v1.0.0

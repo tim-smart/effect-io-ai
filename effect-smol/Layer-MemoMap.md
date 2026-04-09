@@ -11,9 +11,9 @@ enabling efficient resource sharing across layer dependencies.
 **Example**
 
 ```ts
-import { Effect, Layer, ServiceMap } from "effect"
+import { Effect, Layer, Context } from "effect"
 
-class Database extends ServiceMap.Service<Database, {
+class Database extends Context.Service<Database, {
   readonly query: (sql: string) => Effect.Effect<string>
 }>()("Database") {}
 
@@ -25,9 +25,9 @@ const program = Effect.gen(function*() {
   const dbLayer = Layer.succeed(Database)({
     query: Effect.fn("Database.query")((sql: string) => Effect.succeed("result"))
   })
-  const services = yield* Layer.buildWithMemoMap(dbLayer, memoMap, scope)
+  const context = yield* Layer.buildWithMemoMap(dbLayer, memoMap, scope)
 
-  return ServiceMap.get(services, Database)
+  return Context.get(context, Database)
 })
 ```
 
@@ -39,11 +39,11 @@ export interface MemoMap {
   readonly getOrElseMemoize: <RIn, E, ROut>(
     layer: Layer<ROut, E, RIn>,
     scope: Scope.Scope,
-    build: (memoMap: MemoMap, scope: Scope.Scope) => Effect<ServiceMap.ServiceMap<ROut>, E, RIn>
-  ) => Effect<ServiceMap.ServiceMap<ROut>, E, RIn>
+    build: (memoMap: MemoMap, scope: Scope.Scope) => Effect<Context.Context<ROut>, E, RIn>
+  ) => Effect<Context.Context<ROut>, E, RIn>
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L145)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L168)
 
 Since v2.0.0

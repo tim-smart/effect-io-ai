@@ -9,14 +9,14 @@ your entire application is a layer, such as an HTTP server.
 **Example**
 
 ```ts
-import { Console, Effect, Layer, ServiceMap } from "effect"
+import { Console, Effect, Layer, Context } from "effect"
 
-class HttpServer extends ServiceMap.Service<HttpServer, {
+class HttpServer extends Context.Service<HttpServer, {
   readonly start: () => Effect.Effect<string>
   readonly stop: () => Effect.Effect<string>
 }>()("HttpServer") {}
 
-class Logger extends ServiceMap.Service<Logger, {
+class Logger extends Context.Service<Logger, {
   readonly log: (msg: string) => Effect.Effect<void>
 }>()("Logger") {}
 
@@ -60,6 +60,6 @@ const application = appLayer.pipe(
 declare const launch: <RIn, E, ROut>(self: Layer<ROut, E, RIn>) => Effect<never, E, RIn>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L1797)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L1819)
 
 Since v2.0.0

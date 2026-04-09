@@ -16,6 +16,6 @@ use `encodeSync`.
 declare const encodeUnknownSync: <S extends Encoder<unknown>>(schema: S) => (input: unknown, options?: AST.ParseOptions) => S["Encoded"]
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L1413)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L1401)
 
 Since v4.0.0

@@ -23,11 +23,10 @@ export interface TemplateLiteralParser<Parts extends TemplateLiteral.Parts> exte
     TemplateLiteralParser<Parts>
   >
 {
-  readonly "~rebuild.out": this
   readonly parts: Parts
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L1928)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L1935)
 
 Since v4.0.0

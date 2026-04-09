@@ -9,7 +9,7 @@ committed atomically.
 **Signature**
 
 ```ts
-declare const WithTransaction: ServiceMap.Reference<boolean>
+declare const WithTransaction: Context.Reference<boolean>
 ```
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ClusterSchema.ts#L25)

@@ -27,6 +27,6 @@ See also:
 declare const decodeHexString: <E extends string>() => Getter<string, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L1450)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L1449)
 
 Since v4.0.0

@@ -3,34 +3,20 @@ Module: `Redactable`<br />
 
 ## Redactable.redact
 
-Applies redaction to a value if it implements the Redactable interface.
+Redacts a value if it implements `Redactable`, otherwise returns it
+unchanged.
 
-This function checks if the value is redactable and applies the redaction
-transformation if a current fiber context is available. Otherwise, it returns
-the value unchanged.
+- Use this as the general-purpose entry point for redaction: it is safe to
+  call on any value.
+- Internally calls `isRedactable` and, if `true`, delegates to
+  `getRedacted`.
+- Not recursive: nested redactable values inside the returned object are not
+  automatically redacted.
+- Pure with respect to its argument (does not mutate the input).
 
-**Example**
-
-```ts
-import { Redactable } from "effect"
-
-class CreditCard {
-  constructor(private number: string) {}
-
-  [Redactable.symbolRedactable]() {
-    return {
-      number: this.number.slice(0, 4) + "****"
-    }
-  }
-}
-
-const card = new CreditCard("1234567890123456")
-console.log(Redactable.redact(card)) // { number: "1234****" }
-
-// Non-redactable values are returned unchanged
-console.log(Redactable.redact("normal string")) // "normal string"
-console.log(Redactable.redact({ id: 123 })) // { id: 123 }
-```
+See also:
+- `isRedactable` - check before redacting
+- `getRedacted` - lower-level variant for known redactables
 
 **Signature**
 
@@ -38,6 +24,6 @@ console.log(Redactable.redact({ id: 123 })) // { id: 123 }
 declare const redact: (u: unknown) => unknown
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Redactable.ts#L112)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Redactable.ts#L172)
 
 Since v4.0.0

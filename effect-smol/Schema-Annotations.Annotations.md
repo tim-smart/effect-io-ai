@@ -31,7 +31,7 @@ declare module "effect/Schema" {
 const schema = Schema.String.annotate({ version: [1, 2, 0] })
 
 // const version: readonly [major: number, minor: number, patch: number] | undefined
-const version = Schema.resolveInto(schema)?.["version"]
+const version = Schema.resolveAnnotations(schema)?.["version"]
 
 if (version) {
   // Access individual parts of the version
@@ -48,6 +48,6 @@ export interface Annotations {
   }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L11206)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L11646)
 
 Since v4.0.0

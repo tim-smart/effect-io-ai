@@ -23,6 +23,6 @@ export interface ToolParamsDeltaPart extends BasePart<"tool-params-delta", ToolP
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Response.ts#L1188)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Response.ts#L1186)
 
 Since v1.0.0

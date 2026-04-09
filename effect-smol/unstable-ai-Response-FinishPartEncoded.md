@@ -24,6 +24,6 @@ export interface FinishPartEncoded extends BasePartEncoded<"finish", FinishPartM
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Response.ts#L2421)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Response.ts#L2419)
 
 Since v1.0.0

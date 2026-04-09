@@ -3,7 +3,7 @@ Module: `Schema`<br />
 
 ## Schema.$ReadonlySet
 
-Schema type for `ReadonlySet`.
+Companion type for `ReadonlySet`.
 
 **Signature**
 
@@ -16,10 +16,11 @@ export interface $ReadonlySet<Value extends Top> extends
     ReadonlySetIso<Value>
   >
 {
+  readonly "~rebuild.out": $ReadonlySet<Value>
   readonly value: Value
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L8054)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L8071)
 
 Since v4.0.0

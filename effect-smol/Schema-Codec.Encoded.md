@@ -21,6 +21,6 @@ type Enc = Schema.Codec.Encoded<typeof schema>
 type Encoded<S> = S extends Top ? S["Encoded"] : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L630)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L632)
 
 Since v4.0.0

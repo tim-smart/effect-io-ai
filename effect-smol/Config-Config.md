@@ -9,7 +9,7 @@ Key members:
 - `parse(provider)` – runs the config against a specific provider,
   returning `Effect<T, ConfigError>`.
 - Yieldable – can be yielded inside `Effect.gen`, which automatically
-  resolves the current `ConfigProvider` from the service map.
+  resolves the current `ConfigProvider` from the context.
 - Pipeable – supports `.pipe(Config.map(...))` etc.
 
 **See**

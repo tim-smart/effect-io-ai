@@ -33,6 +33,6 @@ const heartbeat = Effect.log("heartbeat")
 export * as Schedule from "./Schedule.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L3242)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L3321)
 
 Since v2.0.0

@@ -19,6 +19,6 @@ const files = Argument.string("files").pipe(Argument.atMost(5))
 declare const atMost: { <A>(max: number): (self: Argument<A>) => Argument<ReadonlyArray<A>>; <A>(self: Argument<A>, max: number): Argument<ReadonlyArray<A>>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Argument.ts#L511)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Argument.ts#L510)
 
 Since v4.0.0

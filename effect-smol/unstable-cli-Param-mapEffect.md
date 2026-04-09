@@ -36,6 +36,6 @@ const validatedEmail = Param.string(Param.flagKind, "email").pipe(
 declare const mapEffect: { <A, B>(f: (a: A) => Effect.Effect<B, CliError.CliError, Environment>): <Kind extends ParamKind>(self: Param<Kind, A>) => Param<Kind, B>; <Kind extends ParamKind, A, B>(self: Param<Kind, A>, f: (a: A) => Effect.Effect<B, CliError.CliError, Environment>): Param<Kind, B>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Param.ts#L987)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Param.ts#L998)
 
 Since v4.0.0

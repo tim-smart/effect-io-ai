@@ -11,6 +11,6 @@ Re-exports all named exports from the "./TxSemaphore.ts" module as `TxSemaphore`
 export * as TxSemaphore from "./TxSemaphore.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L4123)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L4189)
 
 Since v4.0.0

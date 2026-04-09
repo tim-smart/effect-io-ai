@@ -11,6 +11,6 @@ Provider-specific metadata attached to `AuthenticationError`.
 export interface AuthenticationErrorMetadata extends ProviderMetadata {}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AiError.ts#L286)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AiError.ts#L287)
 
 Since v1.0.0

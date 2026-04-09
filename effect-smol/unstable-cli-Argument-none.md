@@ -20,6 +20,6 @@ const noArg = Argument.none
 declare const none: Argument<never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Argument.ts#L255)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Argument.ts#L254)
 
 Since v4.0.0

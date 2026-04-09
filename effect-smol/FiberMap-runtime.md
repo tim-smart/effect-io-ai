@@ -8,12 +8,12 @@ Capture a Runtime and use it to fork Effect's, adding the forked fibers to the F
 **Example**
 
 ```ts
-import { Effect, FiberMap, ServiceMap } from "effect"
+import { Effect, FiberMap, Context } from "effect"
 
 interface Users {
   readonly _: unique symbol
 }
-const Users = ServiceMap.Service<Users, {
+const Users = Context.Service<Users, {
   getAll: Effect.Effect<Array<unknown>>
 }>("Users")
 

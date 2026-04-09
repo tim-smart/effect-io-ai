@@ -11,6 +11,6 @@ Constructs a new `ChildProcessHandle`.
 declare const makeHandle: (params: Omit<ChildProcessHandle, typeof HandleTypeId>) => ChildProcessHandle
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ChildProcessSpawner.ts#L128)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ChildProcessSpawner.ts#L172)
 
 Since v4.0.0

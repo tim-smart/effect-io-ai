@@ -32,6 +32,6 @@ and overrides. Cached results are used for better performance when the same
 declare const fromApi: <Id extends string, Groups extends HttpApiGroup.Any>(api: HttpApi.HttpApi<Id, Groups>, options?: { readonly additionalProperties?: boolean | JsonSchema.JsonSchema | undefined; } | undefined) => OpenAPISpec
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/OpenApi.ts#L214)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/OpenApi.ts#L212)
 
 Since v4.0.0

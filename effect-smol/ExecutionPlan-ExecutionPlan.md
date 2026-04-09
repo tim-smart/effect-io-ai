@@ -56,7 +56,7 @@ export interface ExecutionPlan<
   readonly [TypeId]: TypeId
   readonly steps: NonEmptyReadonlyArray<{
     readonly provide:
-      | ServiceMap.ServiceMap<Config["provides"]>
+      | Context.Context<Config["provides"]>
       | Layer.Layer<Config["provides"], Config["error"], Config["requirements"]>
     readonly attempts?: number | undefined
     readonly while?:

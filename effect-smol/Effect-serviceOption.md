@@ -15,10 +15,10 @@ require the service to be present in the environment.
 **Example**
 
 ```ts
-import { Effect, Option, ServiceMap } from "effect"
+import { Effect, Option, Context } from "effect"
 
 // Define a service key
-const Logger = ServiceMap.Service<{
+const Logger = Context.Service<{
   log: (msg: string) => void
 }>("Logger")
 
@@ -37,9 +37,9 @@ const program = Effect.gen(function*() {
 **Signature**
 
 ```ts
-declare const serviceOption: <I, S>(key: ServiceMap.Key<I, S>) => Effect<Option<S>>
+declare const serviceOption: <I, S>(key: Context.Key<I, S>) => Effect<Option<S>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L5791)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L5792)
 
 Since v2.0.0

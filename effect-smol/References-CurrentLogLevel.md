@@ -43,7 +43,7 @@ const dynamicLogging = Effect.gen(function*() {
 **Signature**
 
 ```ts
-declare const CurrentLogLevel: ServiceMap.Reference<Severity>
+declare const CurrentLogLevel: Context.Reference<Severity>
 ```
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/References.ts#L192)

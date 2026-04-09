@@ -3,7 +3,7 @@ Module: `Schema`<br />
 
 ## Schema.Defect
 
-Schema type for `Defect`.
+Companion type for `Defect`.
 
 **Signature**
 
@@ -22,9 +22,11 @@ export interface Defect extends
       decodeTo<Unknown, Any>
     ]
   >
-{}
+{
+  readonly "~rebuild.out": Defect
+}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L7663)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L7675)
 
 Since v4.0.0

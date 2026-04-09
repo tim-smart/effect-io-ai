@@ -3,39 +3,40 @@ Module: `Redactable`<br />
 
 ## Redactable.Redactable
 
-Interface for objects that can provide redacted representations.
+Interface for objects that provide context-aware redacted representations.
 
-Redactable objects can provide different representations of themselves based on
-the current execution context. This is useful for sensitive data that should
-be hidden or modified in certain environments (like production logs).
+- Implement this interface on any class or object that holds sensitive data
+  and should present a sanitized form when inspected or logged.
+- The `[symbolRedactable]` method receives the current fiber's `Context`.
+- If no fiber is active, an empty `Context` is provided.
 
-**Example**
+**Example** (Masking an API key)
 
 ```ts
-import type { ServiceMap } from "effect"
-import { Redactable } from "effect"
+import { Context, Redactable } from "effect"
 
-class SensitiveData implements Redactable.Redactable {
-  constructor(private secret: string) {}
+class ApiKey {
+  constructor(readonly raw: string) {}
 
-  [Redactable.symbolRedactable](context: ServiceMap.ServiceMap<never>) {
-    // In production, hide the actual secret
-    return { secret: "[REDACTED]" }
+  [Redactable.symbolRedactable](_ctx: Context.Context<never>) {
+    return this.raw.slice(0, 4) + "..."
   }
 }
-
-const data = new SensitiveData("my-secret-key")
-// The redacted version will be used when converting to JSON in certain contexts
 ```
+
+See also:
+- `symbolRedactable` - the symbol key to implement
+- `redact` - apply redaction to any value
+- `isRedactable` - type guard for this interface
 
 **Signature**
 
 ```ts
 export interface Redactable {
-  readonly [symbolRedactable]: (context: ServiceMap.ServiceMap<never>) => unknown
+  readonly [symbolRedactable]: (context: Context.Context<never>) => unknown
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Redactable.ts#L44)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Redactable.ts#L137)
 
 Since v4.0.0

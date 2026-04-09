@@ -31,9 +31,9 @@ try {
 **Signature**
 
 ```ts
-declare class SchemaError { constructor(issue: Issue.Issue) }
+declare const SchemaError: typeof InternalSchema.SchemaError
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L838)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L839)
 
 Since v4.0.0

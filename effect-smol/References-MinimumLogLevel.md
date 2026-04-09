@@ -52,7 +52,7 @@ const configureMinimumLogging = Effect.gen(function*() {
 **Signature**
 
 ```ts
-declare const MinimumLogLevel: ServiceMap.Reference<LogLevel>
+declare const MinimumLogLevel: Context.Reference<LogLevel>
 ```
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/References.ts#L310)

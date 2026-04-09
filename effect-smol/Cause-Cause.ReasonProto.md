@@ -18,7 +18,7 @@ export interface ReasonProto<Tag extends string> extends Inspectable, Equal {
     readonly [ReasonTypeId]: typeof ReasonTypeId
     readonly _tag: Tag
     readonly annotations: ReadonlyMap<string, unknown>
-    annotate(annotations: ServiceMap.ServiceMap<never> | ReadonlyMap<string, unknown>, options?: {
+    annotate(annotations: Context.Context<never> | ReadonlyMap<string, unknown>, options?: {
       readonly overwrite?: boolean | undefined
     }): this
   }

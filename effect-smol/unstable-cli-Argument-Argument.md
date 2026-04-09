@@ -16,6 +16,6 @@ or use Argument.choice with explicit "true"/"false" strings if needed.
 export interface Argument<A> extends Param.Param<typeof Param.argumentKind, A> {}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Argument.ts#L31)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Argument.ts#L30)
 
 Since v4.0.0

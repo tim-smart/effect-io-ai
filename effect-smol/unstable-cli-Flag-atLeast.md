@@ -26,6 +26,6 @@ const tagFlag = Flag.string("tag").pipe(
 declare const atLeast: { <A>(min: number): (self: Flag<A>) => Flag<ReadonlyArray<A>>; <A>(self: Flag<A>, min: number): Flag<ReadonlyArray<A>>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Flag.ts#L658)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Flag.ts#L657)
 
 Since v4.0.0

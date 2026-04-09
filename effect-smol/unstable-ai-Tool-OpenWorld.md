@@ -17,7 +17,7 @@ const restrictedTool = Tool.make("internal_operation")
 **Signature**
 
 ```ts
-declare const OpenWorld: ServiceMap.Reference<boolean>
+declare const OpenWorld: Context.Reference<boolean>
 ```
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tool.ts#L1705)

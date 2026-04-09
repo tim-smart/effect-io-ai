@@ -3,7 +3,7 @@ Module: `Cause`<br />
 
 ## Cause.InterruptorStackTrace
 
-`ServiceMap` key for the stack frame captured at the point of
+`Context` key for the stack frame captured at the point of
 interruption.
 
 Similar to `StackTrace` but specific to `Interrupt` reasons.

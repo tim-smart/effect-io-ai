@@ -24,6 +24,6 @@ export interface FilePartEncoded extends BasePartEncoded<"file", FilePartOptions
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L463)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L459)
 
 Since v4.0.0

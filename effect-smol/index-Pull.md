@@ -11,6 +11,6 @@ Re-exports all named exports from the "./Pull.ts" module as `Pull`.
 export * as Pull from "./Pull.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L2896)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L2910)
 
 Since v4.0.0

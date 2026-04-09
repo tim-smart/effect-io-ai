@@ -3,11 +3,11 @@ Module: `Cause`<br />
 
 ## Cause.StackTrace
 
-`ServiceMap` key for the stack frame captured at the point of failure.
+`Context` key for the stack frame captured at the point of failure.
 
 The runtime annotates every reason with this when a stack frame is
 available. Retrieve it via
-`ServiceMap.get(Cause.reasonAnnotations(reason), Cause.StackTrace)`.
+`Context.get(Cause.reasonAnnotations(reason), Cause.StackTrace)`.
 
 **Signature**
 

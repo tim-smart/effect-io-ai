@@ -43,9 +43,23 @@ type Unify<A> = Values<
       & { [typeSymbol]: A }
     )
   >
-> extends infer Z ? Z | Exclude<A, Z> | FilterOut<A> : never
+> extends infer Z ?
+    | Z
+    | FilterInUnmatched<
+      A,
+      Keys<
+        ExtractTypes<
+          (
+            & FilterIn<A>
+            & { [typeSymbol]: A }
+          )
+        >
+      >
+    >
+    | FilterOut<A>
+  : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Unify.ts#L197)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Unify.ts#L207)
 
 Since v2.0.0

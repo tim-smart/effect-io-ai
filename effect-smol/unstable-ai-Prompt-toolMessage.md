@@ -11,6 +11,6 @@ Constructs a new tool message.
 declare const toolMessage: (params: MessageConstructorParams<ToolMessage>) => ToolMessage
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L1638)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L1632)
 
 Since v4.0.0

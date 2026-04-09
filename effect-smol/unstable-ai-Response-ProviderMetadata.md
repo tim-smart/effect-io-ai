@@ -21,6 +21,6 @@ Provider-specific metadata is namespaced by provider and has the structure:
 declare const ProviderMetadata: Schema.$Record<Schema.String, Schema.NullOr<Schema.Codec<Schema.Json, Schema.Json, never, never>>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Response.ts#L456)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Response.ts#L454)
 
 Since v1.0.0

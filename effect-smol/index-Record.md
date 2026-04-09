@@ -11,6 +11,6 @@ Re-exports all named exports from the "./Record.ts" module as `Record`.
 export * as Record from "./Record.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L2943)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L2957)
 
 Since v2.0.0

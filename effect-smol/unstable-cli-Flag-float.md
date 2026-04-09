@@ -20,6 +20,6 @@ const rateFlag = Flag.float("rate")
 declare const float: (name: string) => Flag<number>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Flag.ts#L94)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Flag.ts#L93)
 
 Since v4.0.0

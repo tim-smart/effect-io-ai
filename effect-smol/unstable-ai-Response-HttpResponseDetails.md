@@ -29,6 +29,6 @@ const responseDetails: typeof Response.HttpResponseDetails.Type = {
 declare const HttpResponseDetails: Schema.Struct<{ readonly status: Schema.Number; readonly headers: Schema.$Record<Schema.String, Schema.Union<readonly [Schema.String, Schema.Redacted<Schema.String>]>>; }>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Response.ts#L2154)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Response.ts#L2152)
 
 Since v1.0.0

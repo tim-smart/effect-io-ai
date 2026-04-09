@@ -11,6 +11,6 @@ Sent from the client to the server, to read a specific resource URI.
 declare class ReadResource
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L814)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L816)
 
 Since v4.0.0

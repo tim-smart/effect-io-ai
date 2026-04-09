@@ -12,9 +12,11 @@ The type produced by `withDecodingDefaultKey` — a schema that decodes from an 
 **Signature**
 
 ```ts
-export interface withDecodingDefaultKey<S extends Top> extends decodeTo<S, optionalKey<toEncoded<S>>> {}
+export interface withDecodingDefaultKey<S extends Top> extends decodeTo<S, optionalKey<toEncoded<S>>> {
+  readonly "~rebuild.out": withDecodingDefaultKey<S>
+}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L4313)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L4278)
 
 Since v4.0.0

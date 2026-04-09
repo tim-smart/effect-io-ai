@@ -52,6 +52,6 @@ export interface AssistantMessage extends BaseMessage<"assistant", AssistantMess
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L1401)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L1395)
 
 Since v4.0.0

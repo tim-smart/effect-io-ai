@@ -23,6 +23,6 @@ export interface ErrorPart extends BasePart<"error", ErrorPartMetadata> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Response.ts#L2496)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Response.ts#L2494)
 
 Since v1.0.0

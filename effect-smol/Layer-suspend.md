@@ -11,9 +11,9 @@ the result is memoized with normal layer sharing semantics.
 **Example**
 
 ```ts
-import { Layer, ServiceMap } from "effect"
+import { Layer, Context } from "effect"
 
-class Config extends ServiceMap.Service<Config, string>()("Config") {}
+class Config extends Context.Service<Config, string>()("Config") {}
 
 const useProd = true
 
@@ -30,6 +30,6 @@ const layer = Layer.suspend(() =>
 declare const suspend: <A, E, R>(evaluate: LazyArg<Layer<A, E, R>>) => Layer<A, E, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L870)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L892)
 
 Since v4.0.0

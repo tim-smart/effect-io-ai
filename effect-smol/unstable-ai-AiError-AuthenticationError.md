@@ -27,6 +27,6 @@ console.log(authError.message)
 declare class AuthenticationError
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AiError.ts#L492)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AiError.ts#L493)
 
 Since v1.0.0

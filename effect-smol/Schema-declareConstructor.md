@@ -22,11 +22,9 @@ export interface declareConstructor<T, E, TypeParameters extends ReadonlyArray<T
     Iso,
     TypeParameters
   >
-{
-  readonly "~rebuild.out": this
-}
+{}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L268)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L270)
 
 Since v4.0.0

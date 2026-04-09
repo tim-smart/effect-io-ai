@@ -26,7 +26,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "hooks",
-    "signature": "declare const useAtomValue: { <A>(atom: Atom.Atom<A>): Accessor<A>; <A, B>(atom: Atom.Atom<A>, f: (_: A) => B): Accessor<B>; }",
+    "signature": "declare const useAtomValue: { <A>(atom: () => Atom.Atom<A>): Accessor<A>; <A, B>(atom: () => Atom.Atom<A>, f: (_: A) => B): Accessor<B>; }",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/atom/solid/src/Hooks.ts#L40"
   },
   {
@@ -41,8 +41,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "hooks",
-    "signature": "declare const useAtomMount: <A>(atom: Atom.Atom<A>) => void",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/atom/solid/src/Hooks.ts#L97"
+    "signature": "declare const useAtomMount: <A>(atom: () => Atom.Atom<A>) => void",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/atom/solid/src/Hooks.ts#L104"
   },
   {
     "_tag": "Function",
@@ -56,8 +56,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "hooks",
-    "signature": "declare const useAtomSet: <R, W, Mode extends \"value\" | \"promise\" | \"promiseExit\" = never>(atom: Atom.Writable<R, W>, options?: { readonly mode?: ([R] extends [AsyncResult.AsyncResult<any, any>] ? Mode : \"value\") | undefined; }) => \"promise\" extends Mode ? ((value: W) => Promise<AsyncResult.AsyncResult.Success<R>>) : \"promiseExit\" extends Mode ? ((value: W) => Promise<Exit.Exit<AsyncResult.AsyncResult.Success<R>, AsyncResult.AsyncResult.Failure<R>>>) : ((value: W | ((value: R) => W)) => void)",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/atom/solid/src/Hooks.ts#L106"
+    "signature": "declare const useAtomSet: <R, W, Mode extends \"value\" | \"promise\" | \"promiseExit\" = never>(atom: () => Atom.Writable<R, W>, options?: { readonly mode?: ([R] extends [AsyncResult.AsyncResult<any, any>] ? Mode : \"value\") | undefined; }) => \"promise\" extends Mode ? ((value: W) => Promise<AsyncResult.AsyncResult.Success<R>>) : \"promiseExit\" extends Mode ? ((value: W) => Promise<Exit.Exit<AsyncResult.AsyncResult.Success<R>, AsyncResult.AsyncResult.Failure<R>>>) : ((value: W | ((value: R) => W)) => void)",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/atom/solid/src/Hooks.ts#L113"
   },
   {
     "_tag": "Function",
@@ -71,8 +71,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "hooks",
-    "signature": "declare const useAtomRefresh: <A>(atom: Atom.Atom<A>) => () => void",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/atom/solid/src/Hooks.ts#L132"
+    "signature": "declare const useAtomRefresh: <A>(atom: () => Atom.Atom<A>) => () => void",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/atom/solid/src/Hooks.ts#L139"
   },
   {
     "_tag": "Function",
@@ -86,8 +86,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "hooks",
-    "signature": "declare const useAtom: <R, W, const Mode extends \"value\" | \"promise\" | \"promiseExit\" = never>(atom: Atom.Writable<R, W>, options?: { readonly mode?: ([R] extends [AsyncResult.AsyncResult<any, any>] ? Mode : \"value\") | undefined; }) => readonly [value: Accessor<R>, write: \"promise\" extends Mode ? ((value: W) => Promise<AsyncResult.AsyncResult.Success<R>>) : \"promiseExit\" extends Mode ? ((value: W) => Promise<Exit.Exit<AsyncResult.AsyncResult.Success<R>, AsyncResult.AsyncResult.Failure<R>>>) : ((value: W | ((value: R) => W)) => void)]",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/atom/solid/src/Hooks.ts#L142"
+    "signature": "declare const useAtom: <R, W, const Mode extends \"value\" | \"promise\" | \"promiseExit\" = never>(atom: () => Atom.Writable<R, W>, options?: { readonly mode?: ([R] extends [AsyncResult.AsyncResult<any, any>] ? Mode : \"value\") | undefined; }) => readonly [value: Accessor<R>, write: \"promise\" extends Mode ? ((value: W) => Promise<AsyncResult.AsyncResult.Success<R>>) : \"promiseExit\" extends Mode ? ((value: W) => Promise<Exit.Exit<AsyncResult.AsyncResult.Success<R>, AsyncResult.AsyncResult.Failure<R>>>) : ((value: W | ((value: R) => W)) => void)]",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/atom/solid/src/Hooks.ts#L150"
   },
   {
     "_tag": "Function",
@@ -101,8 +101,23 @@
     "examples": [],
     "since": "1.0.0",
     "category": "hooks",
-    "signature": "declare const useAtomSubscribe: <A>(atom: Atom.Atom<A>, f: (_: A) => void, options?: { readonly immediate?: boolean; }) => void",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/atom/solid/src/Hooks.ts#L168"
+    "signature": "declare const useAtomSubscribe: <A>(atom: () => Atom.Atom<A>, f: (_: A) => void, options?: { readonly immediate?: boolean; }) => void",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/atom/solid/src/Hooks.ts#L176"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Hooks.ts",
+      "path": "src/Hooks.ts"
+    },
+    "project": "@effect/atom-solid",
+    "name": "useAtomResource",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "hooks",
+    "signature": "declare const useAtomResource: <A, E>(atom: () => Atom.Atom<AsyncResult.AsyncResult<A, E>>, options?: ResourceOptions<A> & { readonly suspendOnWaiting?: boolean | undefined; }) => ResourceReturn<A, void>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/atom/solid/src/Hooks.ts#L191"
   },
   {
     "_tag": "Function",
@@ -116,8 +131,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "hooks",
-    "signature": "declare const useAtomRef: <A>(ref: AtomRef.ReadonlyRef<A>) => Accessor<A>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/atom/solid/src/Hooks.ts#L181"
+    "signature": "declare const useAtomRef: <A>(ref: () => AtomRef.ReadonlyRef<A>) => Accessor<A>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/atom/solid/src/Hooks.ts#L214"
   },
   {
     "_tag": "Function",
@@ -131,8 +146,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "hooks",
-    "signature": "declare const useAtomRefProp: <A, K extends keyof A>(ref: AtomRef.AtomRef<A>, prop: K) => AtomRef.AtomRef<A[K]>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/atom/solid/src/Hooks.ts#L191"
+    "signature": "declare const useAtomRefProp: <A, K extends keyof A>(ref: () => AtomRef.AtomRef<A>, prop: K) => Accessor<AtomRef.AtomRef<A[K]>>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/atom/solid/src/Hooks.ts#L228"
   },
   {
     "_tag": "Function",
@@ -146,8 +161,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "hooks",
-    "signature": "declare const useAtomRefPropValue: <A, K extends keyof A>(ref: AtomRef.AtomRef<A>, prop: K) => Accessor<A[K]>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/atom/solid/src/Hooks.ts#L198"
+    "signature": "declare const useAtomRefPropValue: <A, K extends keyof A>(ref: () => AtomRef.AtomRef<A>, prop: K) => Accessor<A[K]>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/atom/solid/src/Hooks.ts#L237"
   },
   {
     "_tag": "Export",

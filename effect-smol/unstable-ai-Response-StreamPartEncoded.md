@@ -28,6 +28,6 @@ type StreamPartEncoded = | TextStartPartEncoded
   | ErrorPartEncoded
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Response.ts#L345)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Response.ts#L343)
 
 Since v1.0.0

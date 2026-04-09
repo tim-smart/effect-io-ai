@@ -8,9 +8,9 @@ Creates a fresh version of this layer that will not be shared.
 **Example**
 
 ```ts
-import { Effect, Layer, Ref, ServiceMap } from "effect"
+import { Effect, Layer, Ref, Context } from "effect"
 
-class Counter extends ServiceMap.Service<Counter, {
+class Counter extends Context.Service<Counter, {
   readonly count: number
   readonly increment: () => Effect.Effect<number>
 }>()("Counter") {}
@@ -57,6 +57,6 @@ const freshProgram = Effect.gen(function*() {
 declare const fresh: <A, E, R>(self: Layer<A, E, R>) => Layer<A, E, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L1740)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L1762)
 
 Since v2.0.0

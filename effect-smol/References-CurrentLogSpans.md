@@ -61,7 +61,7 @@ const logSpanExample = Effect.gen(function*() {
 **Signature**
 
 ```ts
-declare const CurrentLogSpans: ServiceMap.Reference<ReadonlyArray<[label: string, timestamp: number]>>
+declare const CurrentLogSpans: Context.Reference<ReadonlyArray<[label: string, timestamp: number]>>
 ```
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/References.ts#L252)

@@ -17,7 +17,7 @@ const readOnlyTool = Tool.make("get_user_info")
 **Signature**
 
 ```ts
-declare const Readonly: ServiceMap.Reference<boolean>
+declare const Readonly: Context.Reference<boolean>
 ```
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tool.ts#L1651)

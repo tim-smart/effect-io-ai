@@ -27,6 +27,6 @@ const verbose = Param.boolean(Param.flagKind, "verbose").pipe(
 declare const withDescription: { <Kind extends ParamKind, A>(description: string): (self: Param<Kind, A>) => Param<Kind, A>; <Kind extends ParamKind, A>(self: Param<Kind, A>, description: string): Param<Kind, A>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Param.ts#L899)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Param.ts#L910)
 
 Since v4.0.0

@@ -17,11 +17,12 @@ export interface Result<A extends Top, E extends Top> extends
     ResultIso<A, E>
   >
 {
+  readonly "~rebuild.out": Result<A, E>
   readonly success: A
   readonly failure: E
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L7114)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L7118)
 
 Since v4.0.0

@@ -10,7 +10,7 @@ yield checks. When set to `true`, the fiber run loop won't call
 **Signature**
 
 ```ts
-declare const PreventSchedulerYield: ServiceMap.Reference<boolean>
+declare const PreventSchedulerYield: Context.Reference<boolean>
 ```
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Scheduler.ts#L203)

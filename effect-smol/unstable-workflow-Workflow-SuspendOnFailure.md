@@ -12,7 +12,7 @@ You can then manually resume the workflow later with
 **Signature**
 
 ```ts
-declare const SuspendOnFailure: ServiceMap.Reference<boolean>
+declare const SuspendOnFailure: Context.Reference<boolean>
 ```
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Workflow.ts#L767)

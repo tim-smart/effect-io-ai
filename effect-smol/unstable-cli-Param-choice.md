@@ -27,6 +27,6 @@ const logLevel = Param.choice(Param.flagKind, "log-level", [
 declare const choice: <const Kind extends ParamKind, const Choices extends ReadonlyArray<string>>(kind: Kind, name: string, choices: Choices) => Param<Kind, Choices[number]>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Param.ts#L504)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Param.ts#L515)
 
 Since v4.0.0

@@ -17,7 +17,7 @@ const safeTool = Tool.make("search_database")
 **Signature**
 
 ```ts
-declare const Destructive: ServiceMap.Reference<boolean>
+declare const Destructive: Context.Reference<boolean>
 ```
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tool.ts#L1669)

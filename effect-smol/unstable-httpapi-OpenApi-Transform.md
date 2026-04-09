@@ -11,6 +11,6 @@ Transforms the generated OpenAPI specification
 declare class Transform
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/OpenApi.ts#L109)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/OpenApi.ts#L107)
 
 Since v4.0.0

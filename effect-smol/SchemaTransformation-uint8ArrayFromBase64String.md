@@ -26,6 +26,7 @@ const schema = Schema.String.pipe(
 
 See also:
 - `fromJsonString`
+- `Schema.Uint8ArrayFromBase64` - a ready-made schema wrapping this transformation.
 
 **Signature**
 
@@ -33,6 +34,6 @@ See also:
 declare const uint8ArrayFromBase64String: Transformation<Uint8Array<ArrayBufferLike>, string, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L1275)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L1313)
 
 Since v4.0.0

@@ -15,6 +15,6 @@ typed input use `decodeOption`.
 declare const decodeUnknownOption: <S extends Decoder<unknown>>(schema: S) => (input: unknown, options?: AST.ParseOptions) => Option_.Option<S["Type"]>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L1187)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L1175)
 
 Since v4.0.0

@@ -32,6 +32,6 @@ const forEachEffect = Channel.runForEach(
 declare const runForEach: { <OutElem, EX, RX>(f: (o: OutElem) => Effect.Effect<void, EX, RX>): <OutErr, OutDone, Env>(self: Channel<OutElem, OutErr, OutDone, unknown, unknown, unknown, Env>) => Effect.Effect<OutDone, OutErr | EX, Env | RX>; <OutElem, OutErr, OutDone, Env, EX, RX>(self: Channel<OutElem, OutErr, OutDone, unknown, unknown, unknown, Env>, f: (o: OutElem) => Effect.Effect<void, EX, RX>): Effect.Effect<OutDone, OutErr | EX, Env | RX>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L7107)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L7148)
 
 Since v2.0.0

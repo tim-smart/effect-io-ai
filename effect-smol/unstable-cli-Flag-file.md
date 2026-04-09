@@ -25,6 +25,6 @@ const configFlag = Flag.file("config", { mustExist: true })
 declare const file: (name: string, options?: { readonly mustExist?: boolean | undefined; }) => Flag<string>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Flag.ts#L201)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Flag.ts#L200)
 
 Since v4.0.0

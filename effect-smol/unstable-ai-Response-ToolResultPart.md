@@ -46,6 +46,6 @@ type ToolResultPart<Name, Success, Failure> = | ToolResultSuccess<Name, Success>
   | ToolResultFailure<Name, Failure>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Response.ts#L1556)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Response.ts#L1554)
 
 Since v1.0.0

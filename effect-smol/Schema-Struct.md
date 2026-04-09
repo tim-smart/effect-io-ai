@@ -36,6 +36,6 @@ console.log(alice)
 declare const Struct: <const Fields extends Struct.Fields>(fields: Fields) => Struct<Fields>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L2476)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L2454)
 
 Since v4.0.0

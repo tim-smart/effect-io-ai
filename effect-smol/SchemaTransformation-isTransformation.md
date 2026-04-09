@@ -34,6 +34,6 @@ See also:
 declare const isTransformation: (u: unknown) => u is Transformation<any, any, unknown, unknown>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L260)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L264)
 
 Since v4.0.0

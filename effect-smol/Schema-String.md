@@ -12,11 +12,9 @@ Schema for `string` values.
 **Signature**
 
 ```ts
-export interface String extends Bottom<string, string, never, never, AST.String, String> {
-  readonly "~rebuild.out": this
-}
+export interface String extends Bottom<string, string, never, never, AST.String, String> {}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L2101)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L2096)
 
 Since v4.0.0

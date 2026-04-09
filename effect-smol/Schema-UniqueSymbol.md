@@ -14,11 +14,9 @@ Represents a schema for a specific unique symbol.
 ```ts
 export interface UniqueSymbol<sym extends symbol>
   extends Bottom<sym, sym, never, never, AST.UniqueSymbol, UniqueSymbol<sym>>
-{
-  readonly "~rebuild.out": this
-}
+{}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L2229)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L2210)
 
 Since v4.0.0

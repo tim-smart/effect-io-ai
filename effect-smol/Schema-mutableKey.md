@@ -3,7 +3,7 @@ Module: `Schema`<br />
 
 ## Schema.mutableKey
 
-Schema type for a mutable struct key. The key's property is writable.
+Companion type for a mutable struct key. The key's property is writable.
 Produced by `mutableKey`.
 
 **Signature**
@@ -28,11 +28,10 @@ export interface mutableKey<S extends Top> extends
     S["~encoded.optionality"]
   >
 {
-  readonly "~rebuild.out": this
   readonly schema: S
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L1584)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L1599)
 
 Since v4.0.0

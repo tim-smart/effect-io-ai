@@ -11,7 +11,7 @@ Re-exports all named exports from the "./Logger.ts" module as `Logger`.
 export * as Logger from "./Logger.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L1910)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L1924)
 
 Since v2.0.0
 

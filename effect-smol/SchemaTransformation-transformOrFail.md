@@ -47,6 +47,6 @@ See also:
 declare const transformOrFail: <T, E, RD = never, RE = never>(options: { readonly decode: (e: E, options: AST.ParseOptions) => Effect.Effect<T, Issue.Issue, RD>; readonly encode: (t: T, options: AST.ParseOptions) => Effect.Effect<E, Issue.Issue, RE>; }) => Transformation<T, E, RD, RE>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L345)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L349)
 
 Since v4.0.0

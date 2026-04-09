@@ -8,9 +8,9 @@ Provides a service to the stream using an effect, removing the requirement and a
 **Example**
 
 ```ts
-import { Console, Effect, ServiceMap, Stream } from "effect"
+import { Console, Effect, Context, Stream } from "effect"
 
-class ApiConfig extends ServiceMap.Service<ApiConfig, { readonly baseUrl: string }>()("ApiConfig") {}
+class ApiConfig extends Context.Service<ApiConfig, { readonly baseUrl: string }>()("ApiConfig") {}
 
 const stream = Stream.fromEffect(
   Effect.gen(function*() {
@@ -41,9 +41,9 @@ Effect.runPromise(program)
 **Signature**
 
 ```ts
-declare const provideServiceEffect: { <I, S, ES, RS>(key: ServiceMap.Key<I, S>, service: Effect.Effect<NoInfer<S>, ES, RS>): <A, E, R>(self: Stream<A, E, R>) => Stream<A, E | ES, Exclude<R, I> | RS>; <A, E, R, I, S, ES, RS>(self: Stream<A, E, R>, key: ServiceMap.Key<I, S>, service: Effect.Effect<NoInfer<S>, ES, RS>): Stream<A, E | ES, Exclude<R, I> | RS>; }
+declare const provideServiceEffect: { <I, S, ES, RS>(key: Context.Key<I, S>, service: Effect.Effect<NoInfer<S>, ES, RS>): <A, E, R>(self: Stream<A, E, R>) => Stream<A, E | ES, Exclude<R, I> | RS>; <A, E, R, I, S, ES, RS>(self: Stream<A, E, R>, key: Context.Key<I, S>, service: Effect.Effect<NoInfer<S>, ES, RS>): Stream<A, E | ES, Exclude<R, I> | RS>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L9412)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L9491)
 
 Since v4.0.0

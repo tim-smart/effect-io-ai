@@ -21,6 +21,6 @@ constraint to ensure generated strings end with the required suffix.
 declare const isEndsWith: (endsWith: string, annotations?: Annotations.Filter) => AST.Filter<string>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L5208)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L5177)
 
 Since v4.0.0

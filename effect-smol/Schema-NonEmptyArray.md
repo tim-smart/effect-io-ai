@@ -3,7 +3,7 @@ Module: `Schema`<br />
 
 ## Schema.NonEmptyArray
 
-Schema type for a non-empty `ReadonlyArray`. Produced by `NonEmptyArray`.
+Companion type for a non-empty `ReadonlyArray`. Produced by `NonEmptyArray`.
 
 **Signature**
 
@@ -20,11 +20,10 @@ export interface NonEmptyArray<S extends Top> extends
     readonly [S["Iso"], ...Array<S["Iso"]>]
   >
 {
-  readonly "~rebuild.out": this
   readonly schema: S
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L3250)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L3228)
 
 Since v4.0.0

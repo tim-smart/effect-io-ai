@@ -13,6 +13,6 @@ export interface ErrorPartEncoded extends BasePartEncoded<"error", ErrorPartMeta
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Response.ts#L2506)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Response.ts#L2504)
 
 Since v1.0.0

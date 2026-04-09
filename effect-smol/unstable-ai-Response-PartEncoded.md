@@ -22,6 +22,6 @@ type PartEncoded = | TextPartEncoded
   | FinishPartEncoded
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Response.ts#L259)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Response.ts#L257)
 
 Since v1.0.0

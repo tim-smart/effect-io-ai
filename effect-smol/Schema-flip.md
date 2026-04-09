@@ -28,12 +28,11 @@ export interface flip<S extends Top> extends
     S["~type.optionality"]
   >
 {
-  readonly "~rebuild.out": this
   readonly [FlipTypeId]: typeof FlipTypeId
   readonly schema: S
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L1724)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L1734)
 
 Since v4.0.0

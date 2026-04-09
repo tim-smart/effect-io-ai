@@ -11,7 +11,7 @@ Represents the parsed tokens from command-line input before validation.
 export interface ParsedTokens {
   readonly flags: Record<string, ReadonlyArray<string>>
   readonly arguments: ReadonlyArray<string>
-  readonly errors?: ReadonlyArray<CliError.CliError>
+  readonly errors?: ReadonlyArray<CliError.NonShowHelpErrors>
   readonly subcommand: Option.Option<{
     readonly name: string
     readonly parsedInput: ParsedTokens

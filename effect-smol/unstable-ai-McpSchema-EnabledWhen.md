@@ -12,6 +12,6 @@ information.
 declare class EnabledWhen
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L2133)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L2135)
 
 Since v4.0.0
