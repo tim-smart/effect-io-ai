@@ -11,6 +11,6 @@ Adjusts the number of permits available in the semaphore.
 declare const resize: { (permits: number): (self: Semaphore) => Effect.Effect<void>; (self: Semaphore, permits: number): Effect.Effect<void>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Semaphore.ts#L281)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Semaphore.ts#L279)
 
 Since v4.0.0

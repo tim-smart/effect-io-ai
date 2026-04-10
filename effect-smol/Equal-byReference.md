@@ -48,6 +48,6 @@ console.log(aRef.x)                   // 1     (proxy reads through)
 declare const byReference: <T extends object>(obj: T) => T
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Equal.ts#L550)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Equal.ts#L567)
 
 Since v2.0.0

@@ -14,8 +14,6 @@ The events can be implemented later using the `EventLogBuilder.group` api.
 export interface EventGroup<
   out Events extends Event.Any = Event.Any
 > extends Pipeable {
-  readonly _?: symbol
-  readonly __type?: Events | undefined
   readonly [TypeId]: TypeId
   readonly events: Record.ReadonlyRecord<string, Events>
 

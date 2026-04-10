@@ -14,6 +14,6 @@ The events can be implemented later using the `EventLog.group` api.
 declare const empty: EventGroup<never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventGroup.ts#L166)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventGroup.ts#L162)
 
 Since v4.0.0

@@ -97,7 +97,7 @@ export interface Rpc<
    */
   annotate<I, S>(
     tag: Context.Key<I, S>,
-    value: S
+    value: NoInfer<S>
   ): Rpc<Tag, Payload, Success, Error, Middleware, Requires>
 
   /**
@@ -109,6 +109,6 @@ export interface Rpc<
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Rpc.ts#L49)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Rpc.ts#L50)
 
 Since v4.0.0

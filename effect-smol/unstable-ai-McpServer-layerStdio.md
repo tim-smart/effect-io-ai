@@ -63,6 +63,6 @@ Layer.launch(ServerLayer).pipe(NodeRuntime.runMain)
 declare const layerStdio: (options: { readonly name: string; readonly version: string; readonly extensions?: Record<`${string}/${string}`, unknown> | undefined; }) => Layer.Layer<McpServer | McpServerClient, never, Stdio>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpServer.ts#L562)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpServer.ts#L564)
 
 Since v4.0.0

@@ -16,7 +16,6 @@ export interface Event<
 > {
   readonly [TypeId]: TypeId
   readonly tag: Tag
-  readonly key: string
   readonly primaryKey: (payload: Schema.Schema.Type<Payload>) => string
   readonly payload: Payload
   readonly payloadMsgPack: Msgpack.schema<Payload>

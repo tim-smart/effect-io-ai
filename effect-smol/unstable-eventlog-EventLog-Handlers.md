@@ -24,16 +24,15 @@ export interface Handlers<
    */
   handle<Tag extends Event.Tag<Events>, R1>(
     name: Tag,
-    handler: (
-      options: {
-        readonly payload: Event.PayloadWithTag<Events, Tag>
+    handler: (options: {
+      readonly storeId: StoreId
+      readonly payload: Event.PayloadWithTag<Events, Tag>
+      readonly entry: Entry
+      readonly conflicts: ReadonlyArray<{
         readonly entry: Entry
-        readonly conflicts: ReadonlyArray<{
-          readonly entry: Entry
-          readonly payload: Event.PayloadWithTag<Events, Tag>
-        }>
-      }
-    ) => Effect.Effect<Event.SuccessWithTag<Events, Tag>, Event.ErrorWithTag<Events, Tag>, R1>
+        readonly payload: Event.PayloadWithTag<Events, Tag>
+      }>
+    }) => Effect.Effect<Event.SuccessWithTag<Events, Tag>, Event.ErrorWithTag<Events, Tag>, R1>
   ): Handlers<
     R | R1,
     Event.ExcludeTag<Events, Tag>
@@ -41,6 +40,6 @@ export interface Handlers<
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventLog.ts#L94)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventLog.ts#L216)
 
 Since v4.0.0

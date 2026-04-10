@@ -11,6 +11,6 @@ Run the `McpServer`, registering a router with a `HttpRouter`
 declare const layerHttp: (options: { readonly name: string; readonly version: string; readonly path: HttpRouter.PathInput; readonly extensions?: Record<`${string}/${string}`, unknown> | undefined; }) => Layer.Layer<McpServer | McpServerClient, never, HttpRouter.HttpRouter>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpServer.ts#L578)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpServer.ts#L580)
 
 Since v4.0.0

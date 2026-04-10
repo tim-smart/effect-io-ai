@@ -12,7 +12,7 @@ export interface Handler<Tag extends string> {
   readonly _: unique symbol
   readonly tag: Tag
   readonly handler: (request: any, options: {
-    readonly clientId: number
+    readonly client: ServerClient
     readonly requestId: RequestId
     readonly headers: Headers
     readonly rpc: Any
@@ -21,6 +21,6 @@ export interface Handler<Tag extends string> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Rpc.ts#L154)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Rpc.ts#L175)
 
 Since v4.0.0
