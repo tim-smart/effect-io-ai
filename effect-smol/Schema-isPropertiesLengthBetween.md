@@ -23,6 +23,6 @@ being converted to an object.
 declare const isPropertiesLengthBetween: (minimum: number, maximum: number, annotations?: Annotations.Filter) => AST.Filter<object>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L6646)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L6767)
 
 Since v4.0.0

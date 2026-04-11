@@ -18,9 +18,9 @@ const AgeSchema = Schema.Number.pipe(
 **Signature**
 
 ```ts
-declare const check: <S extends Top>(checks_0: AST.Check<S["Type"]>, ...checks: Array<AST.Check<S["Type"]>>) => (self: S) => S["~rebuild.out"]
+declare const check: <S extends Top>(checks_0: AST.Check<S["Type"]>, ...checks: Array<AST.Check<S["Type"]>>) => (self: S) => S["Rebuild"]
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L3661)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L3693)
 
 Since v4.0.0

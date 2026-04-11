@@ -9,10 +9,10 @@ Companion type for `URLSearchParams`.
 
 ```ts
 export interface URLSearchParams extends instanceOf<globalThis.URLSearchParams> {
-  readonly "~rebuild.out": URLSearchParams
+  readonly "Rebuild": URLSearchParams
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L9150)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L9271)
 
 Since v4.0.0

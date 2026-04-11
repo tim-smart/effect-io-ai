@@ -9,10 +9,10 @@ Companion type for `Trimmed`.
 
 ```ts
 export interface Trimmed extends String {
-  readonly "~rebuild.out": Trimmed
+  readonly "Rebuild": Trimmed
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L9390)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L9511)
 
 Since v4.0.0

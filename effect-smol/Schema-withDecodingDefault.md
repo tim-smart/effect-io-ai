@@ -3,7 +3,8 @@ Module: `Schema`<br />
 
 ## Schema.withDecodingDefault
 
-The type produced by `withDecodingDefault` — a schema that decodes from an `optional` encoded source.
+The type produced by `withDecodingDefault`: a schema whose `Encoded`
+side is `optional` and that fills in a default `Encoded` value during decoding.
 
 **See**
 
@@ -13,10 +14,10 @@ The type produced by `withDecodingDefault` — a schema that decodes from an `op
 
 ```ts
 export interface withDecodingDefault<S extends Top> extends decodeTo<S, optional<toEncoded<S>>> {
-  readonly "~rebuild.out": withDecodingDefault<S>
+  readonly "Rebuild": withDecodingDefault<S>
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L4344)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L4424)
 
 Since v4.0.0

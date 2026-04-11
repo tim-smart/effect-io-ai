@@ -9,10 +9,10 @@ Companion type for `Char`.
 
 ```ts
 export interface Char extends String {
-  readonly "~rebuild.out": Char
+  readonly "Rebuild": Char
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L6779)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L6900)
 
 Since v4.0.0

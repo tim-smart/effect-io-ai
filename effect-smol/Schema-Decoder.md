@@ -24,10 +24,10 @@ validate(Schema.NumberFromString) // ok
 
 ```ts
 export interface Decoder<out T, out RD = never> extends Codec<T, unknown, RD, unknown> {
-  readonly "~rebuild.out": Decoder<T, RD>
+  readonly "Rebuild": Decoder<T, RD>
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L756)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L788)
 
 Since v4.0.0

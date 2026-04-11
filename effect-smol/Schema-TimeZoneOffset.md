@@ -9,10 +9,10 @@ Companion type for `TimeZoneOffset`.
 
 ```ts
 export interface TimeZoneOffset extends declare<DateTime.TimeZone.Offset> {
-  readonly "~rebuild.out": TimeZoneOffset
+  readonly "Rebuild": TimeZoneOffset
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L9879)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L10000)
 
 Since v4.0.0

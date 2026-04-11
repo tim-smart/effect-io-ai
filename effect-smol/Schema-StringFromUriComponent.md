@@ -9,10 +9,10 @@ Companion type for `StringFromUriComponent`.
 
 ```ts
 export interface StringFromUriComponent extends decodeTo<String, String> {
-  readonly "~rebuild.out": StringFromUriComponent
+  readonly "Rebuild": StringFromUriComponent
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L9518)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L9639)
 
 Since v4.0.0

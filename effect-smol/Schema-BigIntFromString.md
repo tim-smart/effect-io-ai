@@ -9,10 +9,10 @@ Companion type for `BigIntFromString`.
 
 ```ts
 export interface BigIntFromString extends decodeTo<BigInt, String> {
-  readonly "~rebuild.out": BigIntFromString
+  readonly "Rebuild": BigIntFromString
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L9364)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L9485)
 
 Since v4.0.0

@@ -10,9 +10,9 @@ Overrides the equivalence derivation for a schema by supplying a custom
 **Signature**
 
 ```ts
-declare const overrideToEquivalence: <S extends Top>(toEquivalence: () => Equivalence.Equivalence<S["Type"]>) => (self: S) => S["~rebuild.out"]
+declare const overrideToEquivalence: <S extends Top>(toEquivalence: () => Equivalence.Equivalence<S["Type"]>) => (self: S) => S["Rebuild"]
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L10894)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L10987)
 
 Since v4.0.0

@@ -15,6 +15,6 @@ Schema for `number` values, including `NaN`, `Infinity`, and `-Infinity`.
 export interface Number extends Bottom<number, number, never, never, AST.Number, Number> {}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L2111)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L2143)
 
 Since v4.0.0

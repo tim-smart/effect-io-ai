@@ -9,10 +9,10 @@ Companion type for `TimeZoneNamedFromString`.
 
 ```ts
 export interface TimeZoneNamedFromString extends decodeTo<TimeZoneNamed, String> {
-  readonly "~rebuild.out": TimeZoneNamedFromString
+  readonly "Rebuild": TimeZoneNamedFromString
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L9973)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L10094)
 
 Since v4.0.0

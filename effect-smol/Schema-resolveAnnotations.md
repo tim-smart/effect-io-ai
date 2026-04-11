@@ -14,6 +14,6 @@ the base schema instance.
 declare const resolveAnnotations: <S extends Top>(schema: S) => Annotations.Bottom<S["Type"], S["~type.parameters"]> | undefined
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L11576)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L11669)
 
 Since v4.0.0

@@ -9,10 +9,10 @@ Companion type for `NonEmptyString`.
 
 ```ts
 export interface NonEmptyString extends String {
-  readonly "~rebuild.out": NonEmptyString
+  readonly "Rebuild": NonEmptyString
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L6760)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L6881)
 
 Since v4.0.0

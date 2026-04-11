@@ -9,10 +9,10 @@ Companion type for `DateTimeUtc`.
 
 ```ts
 export interface DateTimeUtc extends declare<DateTime.Utc> {
-  readonly "~rebuild.out": DateTimeUtc
+  readonly "Rebuild": DateTimeUtc
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L9744)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L9865)
 
 Since v4.0.0

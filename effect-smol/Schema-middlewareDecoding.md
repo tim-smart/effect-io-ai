@@ -38,6 +38,6 @@ export interface middlewareDecoding<S extends Top, RD> extends
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L3775)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L3807)
 
 Since v4.0.0

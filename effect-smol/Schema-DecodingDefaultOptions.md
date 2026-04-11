@@ -17,6 +17,6 @@ type DecodingDefaultOptions = {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L4291)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L4324)
 
 Since v4.0.0

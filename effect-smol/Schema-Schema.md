@@ -34,10 +34,10 @@ print(Schema.NonEmptyString)    // ok
 ```ts
 export interface Schema<out T> extends Top {
   readonly "Type": T
-  readonly "~rebuild.out": Schema<T>
+  readonly "Rebuild": Schema<T>
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L606)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L638)
 
 Since v4.0.0

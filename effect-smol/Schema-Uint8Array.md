@@ -9,10 +9,10 @@ Companion type for `Uint8Array`.
 
 ```ts
 export interface Uint8Array extends instanceOf<globalThis.Uint8Array<ArrayBufferLike>> {
-  readonly "~rebuild.out": Uint8Array
+  readonly "Rebuild": Uint8Array
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L9610)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L9731)
 
 Since v4.0.0

@@ -9,10 +9,10 @@ Companion type for `StringFromBase64Url`.
 
 ```ts
 export interface StringFromBase64Url extends decodeTo<String, String> {
-  readonly "~rebuild.out": StringFromBase64Url
+  readonly "Rebuild": StringFromBase64Url
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L9462)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L9583)
 
 Since v4.0.0

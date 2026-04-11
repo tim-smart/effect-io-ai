@@ -26,6 +26,6 @@ console.log(MyString.decodeUnknownSync("a"))
 declare const asClass: <S extends Top>(schema: S) => S & { new (_: never): {}; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L1450)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L1482)
 
 Since v4.0.0

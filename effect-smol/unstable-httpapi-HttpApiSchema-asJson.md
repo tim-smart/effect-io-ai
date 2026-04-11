@@ -8,9 +8,9 @@ Marks a schema as a JSON payload / response.
 **Signature**
 
 ```ts
-declare const asJson: (options?: { readonly contentType?: string; }) => <S extends Schema.Top>(self: S) => S["~rebuild.out"]
+declare const asJson: (options?: { readonly contentType?: string; }) => <S extends Schema.Top>(self: S) => S["Rebuild"]
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiSchema.ts#L285)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiSchema.ts#L283)
 
 Since v4.0.0

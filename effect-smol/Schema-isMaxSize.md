@@ -23,6 +23,6 @@ most the required size.
 declare const isMaxSize: (maxSize: number, annotations?: Annotations.Filter) => AST.Filter<{ readonly size: number; }>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L6484)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L6605)
 
 Since v4.0.0

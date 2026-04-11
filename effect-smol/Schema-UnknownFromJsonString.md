@@ -9,10 +9,10 @@ Companion type for `UnknownFromJsonString`.
 
 ```ts
 export interface UnknownFromJsonString extends fromJsonString<Unknown> {
-  readonly "~rebuild.out": UnknownFromJsonString
+  readonly "Rebuild": UnknownFromJsonString
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L8802)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L8923)
 
 Since v4.0.0

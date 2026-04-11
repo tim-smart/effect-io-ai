@@ -9,10 +9,10 @@ Companion type for `FiniteFromString`.
 
 ```ts
 export interface FiniteFromString extends decodeTo<Finite, String> {
-  readonly "~rebuild.out": FiniteFromString
+  readonly "Rebuild": FiniteFromString
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L9337)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L9458)
 
 Since v4.0.0

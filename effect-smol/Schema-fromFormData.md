@@ -9,10 +9,10 @@ Companion type for `fromFormData`.
 
 ```ts
 export interface fromFormData<S extends Top> extends decodeTo<S, FormData> {
-  readonly "~rebuild.out": fromFormData<S>
+  readonly "Rebuild": fromFormData<S>
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L9053)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L9174)
 
 Since v4.0.0

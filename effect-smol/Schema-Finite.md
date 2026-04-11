@@ -9,10 +9,10 @@ Companion type for `Finite`.
 
 ```ts
 export interface Finite extends Number {
-  readonly "~rebuild.out": Finite
+  readonly "Rebuild": Finite
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L9275)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L9396)
 
 Since v4.0.0

@@ -9,10 +9,10 @@ Companion type for `NumberFromString`.
 
 ```ts
 export interface NumberFromString extends decodeTo<Finite, String> {
-  readonly "~rebuild.out": NumberFromString
+  readonly "Rebuild": NumberFromString
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L9311)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L9432)
 
 Since v4.0.0

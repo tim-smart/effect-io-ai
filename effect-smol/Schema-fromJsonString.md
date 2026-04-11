@@ -9,10 +9,10 @@ Companion type for `fromJsonString`.
 
 ```ts
 export interface fromJsonString<S extends Top> extends decodeTo<S, String> {
-  readonly "~rebuild.out": fromJsonString<S>
+  readonly "Rebuild": fromJsonString<S>
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L8837)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L8958)
 
 Since v4.0.0

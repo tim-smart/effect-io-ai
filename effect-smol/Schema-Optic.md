@@ -22,10 +22,10 @@ export interface Optic<out T, out Iso> extends Schema<T> {
   readonly "Iso": Iso
   readonly "DecodingServices": never
   readonly "EncodingServices": never
-  readonly "~rebuild.out": Optic<T, Iso>
+  readonly "Rebuild": Optic<T, Iso>
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L692)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L724)
 
 Since v4.0.0

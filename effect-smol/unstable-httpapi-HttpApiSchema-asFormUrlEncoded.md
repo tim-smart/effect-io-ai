@@ -10,9 +10,9 @@ The schema encoded side must be a record of strings.
 **Signature**
 
 ```ts
-declare const asFormUrlEncoded: (options?: { readonly contentType?: string; }) => <S extends Schema.Top>(self: S) => S["~rebuild.out"]
+declare const asFormUrlEncoded: (options?: { readonly contentType?: string; }) => <S extends Schema.Top>(self: S) => S["Rebuild"]
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiSchema.ts#L299)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiSchema.ts#L297)
 
 Since v4.0.0

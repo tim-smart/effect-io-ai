@@ -28,7 +28,7 @@ export interface Bottom<
   out RD,
   out RE,
   out Ast extends AST.AST,
-  out RebuildOut extends Top,
+  out Rebuild extends Top,
   out TypeMakeIn = T,
   out Iso = T,
   in out TypeParameters extends ReadonlyArray<Top> = readonly [],
@@ -41,8 +41,8 @@ export interface Bottom<
 > extends Pipeable.Pipeable {
   readonly [TypeId]: typeof TypeId
 
-  readonly ast: Ast
-  readonly "~rebuild.out": RebuildOut
+  readonly "ast": Ast
+  readonly "Rebuild": Rebuild
   readonly "~type.parameters": TypeParameters
 
   readonly "Type": T
@@ -60,10 +60,10 @@ export interface Bottom<
   readonly "~encoded.mutability": EncodedMutability
   readonly "~encoded.optionality": EncodedOptionality
 
-  annotate(annotations: Annotations.Bottom<this["Type"], this["~type.parameters"]>): this["~rebuild.out"]
-  annotateKey(annotations: Annotations.Key<this["Type"]>): this["~rebuild.out"]
-  check(...checks: readonly [AST.Check<this["Type"]>, ...Array<AST.Check<this["Type"]>>]): this["~rebuild.out"]
-  rebuild(ast: this["ast"]): this["~rebuild.out"]
+  annotate(annotations: Annotations.Bottom<this["Type"], this["~type.parameters"]>): this["Rebuild"]
+  annotateKey(annotations: Annotations.Key<this["Type"]>): this["Rebuild"]
+  check(...checks: readonly [AST.Check<this["Type"]>, ...Array<AST.Check<this["Type"]>>]): this["Rebuild"]
+  rebuild(ast: this["ast"]): this["Rebuild"]
   /**
    * @throws {Error} The issue is contained in the error cause.
    */

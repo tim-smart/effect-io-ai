@@ -9,10 +9,10 @@ Companion type for `fromURLSearchParams`.
 
 ```ts
 export interface fromURLSearchParams<S extends Top> extends decodeTo<S, URLSearchParams> {
-  readonly "~rebuild.out": fromURLSearchParams<S>
+  readonly "Rebuild": fromURLSearchParams<S>
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L9187)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L9308)
 
 Since v4.0.0

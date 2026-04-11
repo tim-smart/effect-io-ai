@@ -9,10 +9,10 @@ Companion type for `DateFromString`.
 
 ```ts
 export interface DateFromString extends decodeTo<Date, String> {
-  readonly "~rebuild.out": DateFromString
+  readonly "Rebuild": DateFromString
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L8538)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L8659)
 
 Since v4.0.0

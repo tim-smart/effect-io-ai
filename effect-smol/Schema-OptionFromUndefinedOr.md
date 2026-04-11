@@ -9,10 +9,10 @@ Companion type for `OptionFromUndefinedOr`.
 
 ```ts
 export interface OptionFromUndefinedOr<S extends Top> extends decodeTo<Option<toType<S>>, UndefinedOr<S>> {
-  readonly "~rebuild.out": OptionFromUndefinedOr<S>
+  readonly "Rebuild": OptionFromUndefinedOr<S>
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L6936)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L7057)
 
 Since v4.0.0

@@ -10,7 +10,7 @@ opaque type `T` with no type parameters.
 
 ```ts
 export interface declare<T, Iso = T> extends declareConstructor<T, T, readonly [], Iso> {
-  readonly "~rebuild.out": declare<T, Iso>
+  readonly "Rebuild": declare<T, Iso>
 }
 ```
 

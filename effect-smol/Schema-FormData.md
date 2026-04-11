@@ -9,10 +9,10 @@ Companion type for `FormData`.
 
 ```ts
 export interface FormData extends instanceOf<globalThis.FormData> {
-  readonly "~rebuild.out": FormData
+  readonly "Rebuild": FormData
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L8991)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L9112)
 
 Since v4.0.0

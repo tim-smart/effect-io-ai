@@ -24,10 +24,10 @@ serialize(Schema.NumberFromString) // ok — encodes number to string
 
 ```ts
 export interface Encoder<out E, out RE = never> extends Codec<unknown, E, unknown, RE> {
-  readonly "~rebuild.out": Encoder<E, RE>
+  readonly "Rebuild": Encoder<E, RE>
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L780)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L812)
 
 Since v4.0.0

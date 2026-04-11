@@ -17,11 +17,11 @@ export interface HashSet<Value extends Top> extends
     HashSetIso<Value>
   >
 {
-  readonly "~rebuild.out": HashSet<Value>
+  readonly "Rebuild": HashSet<Value>
   readonly value: Value
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L8161)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L8282)
 
 Since v4.0.0

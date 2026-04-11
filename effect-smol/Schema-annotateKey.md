@@ -30,9 +30,9 @@ const schema = Schema.Struct({
 **Signature**
 
 ```ts
-declare const annotateKey: <S extends Top>(annotations: Annotations.Key<S["Type"]>) => (self: S) => S["~rebuild.out"]
+declare const annotateKey: <S extends Top>(annotations: Annotations.Key<S["Type"]>) => (self: S) => S["Rebuild"]
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L514)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L546)
 
 Since v4.0.0

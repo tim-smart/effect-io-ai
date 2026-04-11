@@ -21,6 +21,6 @@ to ensure generated numbers are greater than or equal to the specified value.
 declare const isGreaterThanOrEqualTo: (minimum: number, annotations?: Annotations.Filter) => AST.Filter<number>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L5641)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L5762)
 
 Since v4.0.0

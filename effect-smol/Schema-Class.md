@@ -22,7 +22,7 @@ export interface Class<Self, S extends Top & { readonly fields: Struct.Fields },
     S["EncodingServices"],
     AST.Declaration,
     decodeTo<declareConstructor<Self, S["Encoded"], readonly [S], S["Iso"]>, S>,
-    S["~type.make.in"],
+    RequiredKeys<S["~type.make.in"]> extends never ? void | S["~type.make.in"] : S["~type.make.in"],
     S["Iso"],
     readonly [S],
     Self,
@@ -39,6 +39,7 @@ export interface Class<Self, S extends Top & { readonly fields: Struct.Fields },
   ): S["Type"] & Inherited
   readonly identifier: string
   readonly fields: S["fields"]
+
   /**
    * Returns a new struct with the fields modified by the provided function.
    *
@@ -72,6 +73,6 @@ export interface Class<Self, S extends Top & { readonly fields: Struct.Fields },
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L10173)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L10294)
 
 Since v4.0.0

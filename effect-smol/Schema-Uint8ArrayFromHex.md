@@ -9,10 +9,10 @@ Companion type for `Uint8ArrayFromHex`.
 
 ```ts
 export interface Uint8ArrayFromHex extends decodeTo<Uint8Array, String> {
-  readonly "~rebuild.out": Uint8ArrayFromHex
+  readonly "Rebuild": Uint8ArrayFromHex
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L9712)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L9833)
 
 Since v4.0.0

@@ -39,10 +39,10 @@ export interface Codec<out T, out E = T, out RD = never, out RE = never> extends
   readonly "Encoded": E
   readonly "DecodingServices": RD
   readonly "EncodingServices": RE
-  readonly "~rebuild.out": Codec<T, E, RD, RE>
+  readonly "Rebuild": Codec<T, E, RD, RE>
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L729)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L761)
 
 Since v4.0.0

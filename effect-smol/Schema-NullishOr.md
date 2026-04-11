@@ -9,10 +9,10 @@ Companion type for `S | null | undefined`. Produced by `NullishOr`.
 
 ```ts
 export interface NullishOr<S extends Top> extends Union<readonly [S, Null, Undefined]> {
-  readonly "~rebuild.out": NullishOr<S>
+  readonly "Rebuild": NullishOr<S>
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L3578)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L3610)
 
 Since v4.0.0

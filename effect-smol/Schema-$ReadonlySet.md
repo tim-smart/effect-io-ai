@@ -16,11 +16,11 @@ export interface $ReadonlySet<Value extends Top> extends
     ReadonlySetIso<Value>
   >
 {
-  readonly "~rebuild.out": $ReadonlySet<Value>
+  readonly "Rebuild": $ReadonlySet<Value>
   readonly value: Value
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L8071)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L8192)
 
 Since v4.0.0

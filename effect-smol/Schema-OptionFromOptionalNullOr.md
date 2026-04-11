@@ -9,10 +9,10 @@ Companion type for `OptionFromOptionalNullOr`.
 
 ```ts
 export interface OptionFromOptionalNullOr<S extends Top> extends decodeTo<Option<toType<S>>, optional<NullOr<S>>> {
-  readonly "~rebuild.out": OptionFromOptionalNullOr<S>
+  readonly "Rebuild": OptionFromOptionalNullOr<S>
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L7067)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L7188)
 
 Since v4.0.0

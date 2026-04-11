@@ -9,10 +9,10 @@ Companion type for `BigDecimalFromString`.
 
 ```ts
 export interface BigDecimalFromString extends decodeTo<BigDecimal, String> {
-  readonly "~rebuild.out": BigDecimalFromString
+  readonly "Rebuild": BigDecimalFromString
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L8776)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L8897)
 
 Since v4.0.0

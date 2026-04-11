@@ -9,10 +9,10 @@ Companion type for `DateTimeUtcFromMillis`.
 
 ```ts
 export interface DateTimeUtcFromMillis extends decodeTo<instanceOf<DateTime.Utc>, Number> {
-  readonly "~rebuild.out": DateTimeUtcFromMillis
+  readonly "Rebuild": DateTimeUtcFromMillis
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L9850)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L9971)
 
 Since v4.0.0

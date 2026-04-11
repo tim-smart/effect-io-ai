@@ -9,10 +9,10 @@ Companion type for `Trim`.
 
 ```ts
 export interface Trim extends decodeTo<Trimmed, String> {
-  readonly "~rebuild.out": Trim
+  readonly "Rebuild": Trim
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L9408)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L9529)
 
 Since v4.0.0

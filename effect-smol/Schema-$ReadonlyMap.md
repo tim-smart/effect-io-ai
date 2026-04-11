@@ -16,12 +16,12 @@ export interface $ReadonlyMap<Key extends Top, Value extends Top> extends
     ReadonlyMapIso<Key, Value>
   >
 {
-  readonly "~rebuild.out": $ReadonlyMap<Key, Value>
+  readonly "Rebuild": $ReadonlyMap<Key, Value>
   readonly key: Key
   readonly value: Value
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L7883)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L8004)
 
 Since v4.0.0

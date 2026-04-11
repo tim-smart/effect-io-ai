@@ -9,10 +9,10 @@ Companion type for an array with unique elements. Produced by `UniqueArray`.
 
 ```ts
 export interface UniqueArray<S extends Top> extends $Array<S> {
-  readonly "~rebuild.out": UniqueArray<S>
+  readonly "Rebuild": UniqueArray<S>
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L3307)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L3339)
 
 Since v4.0.0

@@ -21,7 +21,7 @@ const schema = Schema.String
 const bottom = Schema.revealBottom(schema)
 
 // `bottom` now exposes Type, Encoded, DecodingServices, EncodingServices,
-// ast, ~rebuild.out, ~type.make.in, Iso, ~type.parameters, etc.
+// ast, Rebuild, ~type.make.in, Iso, ~type.parameters, etc.
 type T = typeof bottom["Type"]     // string
 type E = typeof bottom["Encoded"]  // string
 ```
@@ -29,7 +29,7 @@ type E = typeof bottom["Encoded"]  // string
 **Signature**
 
 ```ts
-declare const revealBottom: <S extends Top>(bottom: S) => Bottom<S["Type"], S["Encoded"], S["DecodingServices"], S["EncodingServices"], S["ast"], S["~rebuild.out"], S["~type.make.in"], S["Iso"], S["~type.parameters"], S["~type.make"], S["~type.mutability"], S["~type.optionality"], S["~type.constructor.default"], S["~encoded.mutability"], S["~encoded.optionality"]>
+declare const revealBottom: <S extends Top>(bottom: S) => Bottom<S["Type"], S["Encoded"], S["DecodingServices"], S["EncodingServices"], S["ast"], S["Rebuild"], S["~type.make.in"], S["Iso"], S["~type.parameters"], S["~type.make"], S["~type.mutability"], S["~type.optionality"], S["~type.constructor.default"], S["~encoded.mutability"], S["~encoded.optionality"]>
 ```
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L434)

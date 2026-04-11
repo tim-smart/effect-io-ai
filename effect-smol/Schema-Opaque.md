@@ -21,7 +21,7 @@ export interface Opaque<Self, S extends Top, Brand> extends
     S["DecodingServices"],
     S["EncodingServices"],
     S["ast"],
-    S["~rebuild.out"],
+    S["Rebuild"],
     S["~type.make.in"],
     S["Iso"],
     S["~type.parameters"],
@@ -37,6 +37,6 @@ export interface Opaque<Self, S extends Top, Brand> extends
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L4719)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L4840)
 
 Since v4.0.0

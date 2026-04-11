@@ -13,10 +13,10 @@ The type produced by `instanceOf` — a declaration schema that validates class 
 
 ```ts
 export interface instanceOf<T, Iso = T> extends declare<T, Iso> {
-  readonly "~rebuild.out": instanceOf<T, Iso>
+  readonly "Rebuild": instanceOf<T, Iso>
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L4778)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L4899)
 
 Since v4.0.0

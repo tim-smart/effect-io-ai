@@ -27,6 +27,6 @@ export interface TemplateLiteral<Parts extends TemplateLiteral.Parts> extends
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L1874)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L1906)
 
 Since v4.0.0

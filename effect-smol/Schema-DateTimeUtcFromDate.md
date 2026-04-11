@@ -9,10 +9,10 @@ Companion type for `DateTimeUtcFromDate`.
 
 ```ts
 export interface DateTimeUtcFromDate extends decodeTo<DateTimeUtc, Date> {
-  readonly "~rebuild.out": DateTimeUtcFromDate
+  readonly "Rebuild": DateTimeUtcFromDate
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L9788)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L9909)
 
 Since v4.0.0

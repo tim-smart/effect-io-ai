@@ -9,10 +9,10 @@ Companion type for `DateTimeZoned`.
 
 ```ts
 export interface DateTimeZoned extends declare<DateTime.Zoned> {
-  readonly "~rebuild.out": DateTimeZoned
+  readonly "Rebuild": DateTimeZoned
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L10081)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L10202)
 
 Since v4.0.0

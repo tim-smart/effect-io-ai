@@ -9,10 +9,10 @@ Companion type for `OptionFromOptionalKey`.
 
 ```ts
 export interface OptionFromOptionalKey<S extends Top> extends decodeTo<Option<toType<S>>, optionalKey<S>> {
-  readonly "~rebuild.out": OptionFromOptionalKey<S>
+  readonly "Rebuild": OptionFromOptionalKey<S>
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L7003)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L7124)
 
 Since v4.0.0

@@ -215,6 +215,6 @@ export interface BuiltInMetaDefinitions {
   }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L11927)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L12020)
 
 Since v4.0.0

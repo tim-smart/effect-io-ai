@@ -9,10 +9,10 @@ Companion type for `Uint8ArrayFromBase64Url`.
 
 ```ts
 export interface Uint8ArrayFromBase64Url extends decodeTo<Uint8Array, String> {
-  readonly "~rebuild.out": Uint8ArrayFromBase64Url
+  readonly "Rebuild": Uint8ArrayFromBase64Url
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L9680)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L9801)
 
 Since v4.0.0

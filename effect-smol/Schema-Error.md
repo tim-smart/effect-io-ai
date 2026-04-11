@@ -9,10 +9,10 @@ Companion type for `Error`.
 
 ```ts
 export interface Error extends instanceOf<globalThis.Error> {
-  readonly "~rebuild.out": Error
+  readonly "Rebuild": Error
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L7609)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L7730)
 
 Since v4.0.0

@@ -9,10 +9,10 @@ Companion type for `URL`.
 
 ```ts
 export interface URL extends instanceOf<globalThis.URL> {
-  readonly "~rebuild.out": URL
+  readonly "Rebuild": URL
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L8420)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L8541)
 
 Since v4.0.0

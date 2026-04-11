@@ -41,6 +41,6 @@ try {
 declare const asserts: <T>(schema: Schema<T>) => <I>(input: I) => asserts input is I & T
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L1102)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L1134)
 
 Since v4.0.0

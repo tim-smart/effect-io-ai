@@ -9,10 +9,10 @@ Companion type for `S | undefined`. Produced by `UndefinedOr`.
 
 ```ts
 export interface UndefinedOr<S extends Top> extends Union<readonly [S, Undefined]> {
-  readonly "~rebuild.out": UndefinedOr<S>
+  readonly "Rebuild": UndefinedOr<S>
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L3557)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L3589)
 
 Since v4.0.0

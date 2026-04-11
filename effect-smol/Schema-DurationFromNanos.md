@@ -9,10 +9,10 @@ Companion type for `DurationFromNanos`.
 
 ```ts
 export interface DurationFromNanos extends decodeTo<Duration, BigInt> {
-  readonly "~rebuild.out": DurationFromNanos
+  readonly "Rebuild": DurationFromNanos
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L8672)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L8793)
 
 Since v4.0.0

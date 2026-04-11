@@ -9,10 +9,10 @@ Companion type for `StringFromHex`.
 
 ```ts
 export interface StringFromHex extends decodeTo<String, String> {
-  readonly "~rebuild.out": StringFromHex
+  readonly "Rebuild": StringFromHex
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L9490)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L9611)
 
 Since v4.0.0

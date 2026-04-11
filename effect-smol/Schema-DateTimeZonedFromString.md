@@ -9,10 +9,10 @@ Companion type for `DateTimeZonedFromString`.
 
 ```ts
 export interface DateTimeZonedFromString extends decodeTo<DateTimeZoned, String> {
-  readonly "~rebuild.out": DateTimeZonedFromString
+  readonly "Rebuild": DateTimeZonedFromString
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L10138)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L10259)
 
 Since v4.0.0

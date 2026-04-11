@@ -9,10 +9,10 @@ Companion type for `DateValid`.
 
 ```ts
 export interface DateValid extends Date {
-  readonly "~rebuild.out": DateValid
+  readonly "Rebuild": DateValid
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L8562)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L8683)
 
 Since v4.0.0

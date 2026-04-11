@@ -9,10 +9,10 @@ Companion type for `Int`.
 
 ```ts
 export interface Int extends Number {
-  readonly "~rebuild.out": Int
+  readonly "Rebuild": Int
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L9293)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L9414)
 
 Since v4.0.0

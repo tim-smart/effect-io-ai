@@ -9,10 +9,10 @@ Companion type for `TimeZoneNamed`.
 
 ```ts
 export interface TimeZoneNamed extends declare<DateTime.TimeZone.Named> {
-  readonly "~rebuild.out": TimeZoneNamed
+  readonly "Rebuild": TimeZoneNamed
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L9923)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L10044)
 
 Since v4.0.0

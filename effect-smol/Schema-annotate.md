@@ -23,12 +23,16 @@ const Age = Schema.Number.pipe(
 )
 ```
 
+**See**
+
+- `annotateEncoded` to annotate the encoded side instead.
+
 **Signature**
 
 ```ts
-declare const annotate: <S extends Top>(annotations: Annotations.Bottom<S["Type"], S["~type.parameters"]>) => (self: S) => S["~rebuild.out"]
+declare const annotate: <S extends Top>(annotations: Annotations.Bottom<S["Type"], S["~type.parameters"]>) => (self: S) => S["Rebuild"]
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L480)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L482)
 
 Since v4.0.0

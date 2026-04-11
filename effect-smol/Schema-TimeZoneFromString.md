@@ -9,10 +9,10 @@ Companion type for `TimeZoneFromString`.
 
 ```ts
 export interface TimeZoneFromString extends decodeTo<TimeZone, String> {
-  readonly "~rebuild.out": TimeZoneFromString
+  readonly "Rebuild": TimeZoneFromString
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L10055)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L10176)
 
 Since v4.0.0

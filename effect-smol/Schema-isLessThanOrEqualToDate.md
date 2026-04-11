@@ -23,6 +23,6 @@ date.
 declare const isLessThanOrEqualToDate: (maximum: globalThis.Date, annotations?: Annotations.Filter) => AST.Filter<globalThis.Date>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L6020)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L6141)
 
 Since v4.0.0

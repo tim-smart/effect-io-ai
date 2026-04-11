@@ -23,10 +23,10 @@ export interface Defect extends
     ]
   >
 {
-  readonly "~rebuild.out": Defect
+  readonly "Rebuild": Defect
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L7675)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L7796)
 
 Since v4.0.0

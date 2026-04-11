@@ -9,10 +9,10 @@ Companion type for `DateTimeUtcFromString`.
 
 ```ts
 export interface DateTimeUtcFromString extends decodeTo<DateTimeUtc, String> {
-  readonly "~rebuild.out": DateTimeUtcFromString
+  readonly "Rebuild": DateTimeUtcFromString
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L9817)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L9938)
 
 Since v4.0.0

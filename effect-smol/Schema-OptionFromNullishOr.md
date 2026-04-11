@@ -9,10 +9,10 @@ Companion type for `OptionFromNullishOr`.
 
 ```ts
 export interface OptionFromNullishOr<S extends Top> extends decodeTo<Option<toType<S>>, NullishOr<S>> {
-  readonly "~rebuild.out": OptionFromNullishOr<S>
+  readonly "Rebuild": OptionFromNullishOr<S>
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L6967)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L7088)
 
 Since v4.0.0

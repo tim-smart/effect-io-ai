@@ -9,10 +9,10 @@ Companion type for `BigDecimal`.
 
 ```ts
 export interface BigDecimal extends declare<BigDecimal_.BigDecimal> {
-  readonly "~rebuild.out": BigDecimal
+  readonly "Rebuild": BigDecimal
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L8729)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L8850)
 
 Since v4.0.0

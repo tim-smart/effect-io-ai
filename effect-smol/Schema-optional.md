@@ -10,10 +10,10 @@ Equivalent to `optionalKey<UndefinedOr<S>>`. Produced by `optional`.
 
 ```ts
 export interface optional<S extends Top> extends optionalKey<UndefinedOr<S>> {
-  readonly "~rebuild.out": optional<S>
+  readonly "Rebuild": optional<S>
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L1543)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L1575)
 
 Since v4.0.0

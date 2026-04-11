@@ -9,10 +9,10 @@ Companion type for `DurationFromMillis`.
 
 ```ts
 export interface DurationFromMillis extends decodeTo<Duration, Number> {
-  readonly "~rebuild.out": DurationFromMillis
+  readonly "Rebuild": DurationFromMillis
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L8699)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L8820)
 
 Since v4.0.0
