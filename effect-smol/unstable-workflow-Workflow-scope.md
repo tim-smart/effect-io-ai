@@ -14,6 +14,6 @@ completes.
 declare const scope: Effect.Effect<Scope.Scope, never, WorkflowInstance>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Workflow.ts#L657)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Workflow.ts#L660)
 
 Since v1.0.0

@@ -349,7 +349,7 @@
     ],
     "since": "1.0.0",
     "category": "models\n\nScoped Atom interface with a provider-backed instance.",
-    "signature": "export interface ScopedAtom<A extends Atom.Atom<any>, Input = never> {\n  readonly [TypeId]: TypeId\n  use(): A\n  Provider: Input extends never ? React.FC<{ readonly children?: React.ReactNode | undefined }>\n    : React.FC<{ readonly children?: React.ReactNode | undefined; readonly value: Input }>\n  Context: React.Context<A>\n}",
+    "signature": "export interface ScopedAtom<A extends Atom.Atom<any>, Input = never> {\n  readonly [TypeId]: TypeId\n  use(): A\n  Provider: [Input] extends [never] ? React.FC<{ readonly children?: React.ReactNode | undefined }>\n    : React.FC<{ readonly children?: React.ReactNode | undefined; readonly value: Input }>\n  Context: React.Context<A>\n}",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/atom/react/src/ScopedAtom.ts#L51"
   },
   {
