@@ -11,6 +11,6 @@ Re-exports all named exports from the "./IndexedDbQueryBuilder.ts" module as `In
 export * as IndexedDbQueryBuilder from "./IndexedDbQueryBuilder.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/index.ts#L65)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/index.ts#L70)
 
 Since v4.0.0

@@ -13,6 +13,6 @@ The schema encoded side must be a record of strings.
 declare const asFormUrlEncoded: (options?: { readonly contentType?: string; }) => <S extends Schema.Top>(self: S) => S["Rebuild"]
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiSchema.ts#L297)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiSchema.ts#L376)
 
 Since v4.0.0

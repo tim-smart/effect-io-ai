@@ -11,6 +11,6 @@ Re-exports all named exports from the "./BrowserSocket.ts" module as `BrowserSoc
 export * as BrowserSocket from "./BrowserSocket.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/index.ts#L25)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/index.ts#L30)
 
 Since v1.0.0

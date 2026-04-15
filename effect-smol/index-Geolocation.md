@@ -11,6 +11,6 @@ Re-exports all named exports from the "./Geolocation.ts" module as `Geolocation`
 export * as Geolocation from "./Geolocation.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/index.ts#L50)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/index.ts#L55)
 
 Since v1.0.0

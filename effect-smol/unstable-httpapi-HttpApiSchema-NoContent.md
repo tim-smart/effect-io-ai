@@ -12,6 +12,6 @@ This is used to represent empty responses with the status code 204.
 declare const NoContent: NoContent
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiSchema.ts#L118)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiSchema.ts#L197)
 
 Since v4.0.0

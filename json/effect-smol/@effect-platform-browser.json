@@ -152,6 +152,36 @@
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/BrowserKeyValueStore.ts#L27"
   },
   {
+    "_tag": "Function",
+    "module": {
+      "name": "BrowserPersistence.ts",
+      "path": "src/BrowserPersistence.ts"
+    },
+    "project": "@effect/platform-browser",
+    "name": "layerBackingIndexedDb",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "layers",
+    "signature": "declare const layerBackingIndexedDb: (options?: { readonly database?: string | undefined; }) => Layer.Layer<Persistence.BackingPersistence>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/BrowserPersistence.ts#L15"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "BrowserPersistence.ts",
+      "path": "src/BrowserPersistence.ts"
+    },
+    "project": "@effect/platform-browser",
+    "name": "layerIndexedDb",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "layers",
+    "signature": "declare const layerIndexedDb: (options?: { readonly database?: string | undefined; }) => Layer.Layer<Persistence.Persistence>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/BrowserPersistence.ts#L48"
+  },
+  {
     "_tag": "Constant",
     "module": {
       "name": "BrowserRuntime.ts",
@@ -554,6 +584,22 @@
       "path": "src/index.ts"
     },
     "project": "@effect/platform-browser",
+    "name": "BrowserPersistence",
+    "description": "Re-exports all named exports from the \"./BrowserPersistence.ts\" module as `BrowserPersistence`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as BrowserPersistence from \"./BrowserPersistence.ts\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/index.ts#L20"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/platform-browser",
     "name": "BrowserRuntime",
     "description": "Re-exports all named exports from the \"./BrowserRuntime.ts\" module as `BrowserRuntime`.",
     "deprecated": false,
@@ -561,7 +607,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "export * as BrowserRuntime from \"./BrowserRuntime.ts\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/index.ts#L20"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/index.ts#L25"
   },
   {
     "_tag": "Export",
@@ -577,7 +623,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "export * as BrowserSocket from \"./BrowserSocket.ts\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/index.ts#L25"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/index.ts#L30"
   },
   {
     "_tag": "Export",
@@ -593,7 +639,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "export * as BrowserStream from \"./BrowserStream.ts\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/index.ts#L30"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/index.ts#L35"
   },
   {
     "_tag": "Export",
@@ -609,7 +655,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "export * as BrowserWorker from \"./BrowserWorker.ts\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/index.ts#L35"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/index.ts#L40"
   },
   {
     "_tag": "Export",
@@ -625,7 +671,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "export * as BrowserWorkerRunner from \"./BrowserWorkerRunner.ts\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/index.ts#L40"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/index.ts#L45"
   },
   {
     "_tag": "Export",
@@ -641,7 +687,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "export * as Clipboard from \"./Clipboard.ts\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/index.ts#L45"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/index.ts#L50"
   },
   {
     "_tag": "Export",
@@ -657,7 +703,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "export * as Geolocation from \"./Geolocation.ts\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/index.ts#L50"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/index.ts#L55"
   },
   {
     "_tag": "Export",
@@ -673,7 +719,7 @@
     "since": "4.0.0",
     "category": null,
     "signature": "export * as IndexedDb from \"./IndexedDb.ts\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/index.ts#L55"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/index.ts#L60"
   },
   {
     "_tag": "Export",
@@ -689,7 +735,7 @@
     "since": "4.0.0",
     "category": null,
     "signature": "export * as IndexedDbDatabase from \"./IndexedDbDatabase.ts\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/index.ts#L60"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/index.ts#L65"
   },
   {
     "_tag": "Export",
@@ -705,7 +751,7 @@
     "since": "4.0.0",
     "category": null,
     "signature": "export * as IndexedDbQueryBuilder from \"./IndexedDbQueryBuilder.ts\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/index.ts#L65"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/index.ts#L70"
   },
   {
     "_tag": "Export",
@@ -721,7 +767,7 @@
     "since": "4.0.0",
     "category": null,
     "signature": "export * as IndexedDbTable from \"./IndexedDbTable.ts\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/index.ts#L70"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/index.ts#L75"
   },
   {
     "_tag": "Export",
@@ -737,7 +783,7 @@
     "since": "4.0.0",
     "category": null,
     "signature": "export * as IndexedDbVersion from \"./IndexedDbVersion.ts\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/index.ts#L75"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/index.ts#L80"
   },
   {
     "_tag": "Export",
@@ -753,7 +799,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "export * as Permissions from \"./Permissions.ts\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/index.ts#L80"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/index.ts#L85"
   },
   {
     "_tag": "Constant",

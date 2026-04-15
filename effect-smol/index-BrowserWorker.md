@@ -11,6 +11,6 @@ Re-exports all named exports from the "./BrowserWorker.ts" module as `BrowserWor
 export * as BrowserWorker from "./BrowserWorker.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/index.ts#L35)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/index.ts#L40)
 
 Since v1.0.0

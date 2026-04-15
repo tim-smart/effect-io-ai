@@ -12,6 +12,6 @@ This is used to represent empty responses with the status code 201.
 declare const Created: Created
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiSchema.ts#L132)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiSchema.ts#L211)
 
 Since v4.0.0
