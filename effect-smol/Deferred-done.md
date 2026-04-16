@@ -26,6 +26,6 @@ const program = Effect.gen(function*() {
 declare const done: { <A, E>(exit: Exit.Exit<A, E>): (self: Deferred<A, E>) => Effect<boolean>; <A, E>(self: Deferred<A, E>, exit: Exit.Exit<A, E>): Effect<boolean>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Deferred.ts#L318)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Deferred.ts#L325)
 
 Since v2.0.0
