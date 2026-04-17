@@ -3224,7 +3224,7 @@
     "since": "1.0.0",
     "category": "Client",
     "signature": "declare class RpcClientProtocol",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Runners.ts#L620"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Runners.ts#L624"
   },
   {
     "_tag": "Constant",
@@ -3314,7 +3314,7 @@
     "since": "1.0.0",
     "category": "Layers",
     "signature": "declare const layerRpc: Layer.Layer<Runners, never, MessageStorage.MessageStorage | ShardingConfig | RpcClientProtocol>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Runners.ts#L608"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Runners.ts#L612"
   },
   {
     "_tag": "Interface",

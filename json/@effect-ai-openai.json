@@ -1286,7 +1286,7 @@
     "since": "1.0.0",
     "category": "Constructors",
     "signature": "declare const make: (options: { readonly model: (string & {}) | Model; readonly config?: Omit<Config.Service, \"model\">; }) => Effect.Effect<LanguageModel.Service, never, OpenAiClient>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiLanguageModel.ts#L272"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiLanguageModel.ts#L289"
   },
   {
     "_tag": "Constant",
@@ -1301,7 +1301,7 @@
     "since": "1.0.0",
     "category": "Configuration",
     "signature": "declare const withConfigOverride: { (overrides: Config.Service): <A, E, R>(self: Effect.Effect<A, E, R>) => Effect.Effect<A, E, R>; <A, E, R>(self: Effect.Effect<A, E, R>, overrides: Config.Service): Effect.Effect<A, E, R>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiLanguageModel.ts#L355"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiLanguageModel.ts#L372"
   },
   {
     "_tag": "Function",
@@ -1316,7 +1316,7 @@
     "since": "1.0.0",
     "category": "Ai Models",
     "signature": "declare const model: (model: (string & {}) | Model, config?: Omit<Config.Service, \"model\">) => AiModel.Model<\"openai\", LanguageModel.LanguageModel, OpenAiClient>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiLanguageModel.ts#L252"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiLanguageModel.ts#L269"
   },
   {
     "_tag": "Function",
@@ -1331,7 +1331,7 @@
     "since": "1.0.0",
     "category": "Ai Models",
     "signature": "declare const modelWithTokenizer: (model: (string & {}) | Model, config?: Omit<Config.Service, \"model\">) => AiModel.Model<\"openai\", LanguageModel.LanguageModel | Tokenizer.Tokenizer, OpenAiClient>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiLanguageModel.ts#L262"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiLanguageModel.ts#L279"
   },
   {
     "_tag": "Function",
@@ -1346,7 +1346,7 @@
     "since": "1.0.0",
     "category": "Layers",
     "signature": "declare const layer: (options: { readonly model: (string & {}) | Model; readonly config?: Omit<Config.Service, \"model\">; }) => Layer.Layer<LanguageModel.LanguageModel, never, OpenAiClient>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiLanguageModel.ts#L335"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiLanguageModel.ts#L352"
   },
   {
     "_tag": "Function",
@@ -1361,7 +1361,7 @@
     "since": "1.0.0",
     "category": "Layers",
     "signature": "declare const layerWithTokenizer: (options: { readonly model: (string & {}) | Model; readonly config?: Omit<Config.Service, \"model\">; }) => Layer.Layer<LanguageModel.LanguageModel | Tokenizer.Tokenizer, never, OpenAiClient>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiLanguageModel.ts#L345"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiLanguageModel.ts#L362"
   },
   {
     "_tag": "TypeAlias",
@@ -1390,7 +1390,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "Models",
-    "signature": "export interface Service extends\n    Simplify<\n      Partial<\n        Omit<\n          typeof Generated.CreateResponse.Encoded,\n          \"input\" | \"tools\" | \"tool_choice\" | \"stream\" | \"text\"\n        >\n      >\n    >\n  {\n    /**\n     * File ID prefixes used to identify file IDs in Responses API.\n     * When undefined, all file data is treated as base64 content.\n     *\n     * Examples:\n     * - OpenAI: ['file-'] for IDs like 'file-abc123'\n     * - Azure OpenAI: ['assistant-'] for IDs like 'assistant-abc123'\n     */\n    readonly fileIdPrefixes?: ReadonlyArray<string>\n    /**\n     * Configuration options for a text response from the model.\n     */\n    readonly text?: {\n      /**\n       * Constrains the verbosity of the model's response. Lower values will\n       * result in more concise responses, while higher values will result in\n       * more verbose responses.\n       *\n       * Defaults to `\"medium\"`.\n       */\n      readonly verbosity?: \"low\" | \"medium\" | \"high\"\n    }\n  }",
+    "signature": "export interface Service extends\n    Simplify<\n      Partial<\n        Omit<\n          typeof Generated.CreateResponse.Encoded,\n          \"input\" | \"tools\" | \"tool_choice\" | \"stream\" | \"text\"\n        >\n      >\n    >\n  {\n    /**\n     * File ID prefixes used to identify file IDs in Responses API.\n     * When undefined, all file data is treated as base64 content.\n     *\n     * Examples:\n     * - OpenAI: ['file-'] for IDs like 'file-abc123'\n     * - Azure OpenAI: ['assistant-'] for IDs like 'assistant-abc123'\n     */\n    readonly fileIdPrefixes?: ReadonlyArray<string>\n    /**\n     * Configuration options for a text response from the model.\n     */\n    readonly text?: {\n      /**\n       * Constrains the verbosity of the model's response. Lower values will\n       * result in more concise responses, while higher values will result in\n       * more verbose responses.\n       *\n       * Defaults to `\"medium\"`.\n       */\n      readonly verbosity?: \"low\" | \"medium\" | \"high\"\n    }\n\n    /**\n     * Controls whether tool and response format schemas are sent with\n     * `strict: true` to enable OpenAI's structured outputs mode.\n     *\n     * When `true` (default), OpenAI validates that tool schemas comply with\n     * strict mode requirements (all properties in `required`,\n     * `additionalProperties: false` on all objects, etc.).\n     *\n     * Set to `false` to send tool schemas without strict mode validation,\n     * which is useful when tool parameter schemas use `Schema.optional()`\n     * (optional properties are not listed in `required` by Effect's JSON\n     * schema generator, which strict mode rejects).\n     *\n     * Defaults to `true` for backward compatibility.\n     */\n    readonly strict?: boolean\n  }",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiLanguageModel.ts#L65"
   },
   {
@@ -1406,7 +1406,7 @@
     "since": "1.0.0",
     "category": "Provider Metadata",
     "signature": "export interface Service {\n    \"source\": {} | {}\n  }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiLanguageModel.ts#L239"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiLanguageModel.ts#L256"
   },
   {
     "_tag": "Constant",
