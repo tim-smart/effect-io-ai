@@ -13,6 +13,6 @@ export interface UnknownFromJsonString extends fromJsonString<Unknown> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L8923)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L8999)
 
 Since v4.0.0

@@ -29,6 +29,6 @@ type Leaf = | InvalidType
   | OneOf
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaIssue.ts#L142)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaIssue.ts#L143)
 
 Since v4.0.0

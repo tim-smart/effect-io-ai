@@ -72,6 +72,13 @@ export interface ParseOptions {
    * transformations.
    */
   readonly disableChecks?: boolean | undefined
+
+  /**
+   * The maximum number of async effects to run concurrently.
+   *
+   * Defaults to 1.
+   */
+  readonly concurrency?: number | "unbounded" | undefined
 }
 ```
 

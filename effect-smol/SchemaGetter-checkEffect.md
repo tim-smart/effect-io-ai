@@ -15,7 +15,8 @@ Behavior:
   - `undefined` or `true` — value is valid, passes through.
   - `false` or a `string` — value is invalid, fails with an `Issue`.
   - An `Issue` object — fails with that issue directly.
-  - `{ path, message }` — fails with a nested path issue.
+  - `{ path, issue }` — fails with a nested path issue (`issue` may be a
+    message string or a full `Issue.Issue`).
 - Does not transform the value — input and output types are the same.
 
 **Example** (Effectful validation)
@@ -35,9 +36,9 @@ See also:
 **Signature**
 
 ```ts
-declare const checkEffect: <T, R = never>(f: (input: T, options: AST.ParseOptions) => Effect.Effect<undefined | boolean | string | Issue.Issue | { readonly path: ReadonlyArray<PropertyKey>; readonly message: string; }, never, R>) => Getter<T, T, R>
+declare const checkEffect: <T, R = never>(f: (input: T, options: AST.ParseOptions) => Effect.Effect<undefined | boolean | Schema.FilterIssue, never, R>) => Getter<T, T, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L506)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L507)
 
 Since v4.0.0

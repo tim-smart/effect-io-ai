@@ -11,6 +11,6 @@ Singleton `String` AST instance.
 declare const string: String
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L1143)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L1150)
 
 Since v4.0.0

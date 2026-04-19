@@ -33,6 +33,6 @@ See also:
 declare const decodeFormData: () => Getter<Schema.TreeRecord<string | Blob>, FormData>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L1578)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L1576)
 
 Since v4.0.0

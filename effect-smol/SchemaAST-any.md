@@ -11,6 +11,6 @@ Singleton `Any` AST instance.
 declare const any: Any
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L782)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L789)
 
 Since v4.0.0

@@ -13,6 +13,6 @@ export interface BigIntFromString extends decodeTo<BigInt, String> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L9485)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L9561)
 
 Since v4.0.0

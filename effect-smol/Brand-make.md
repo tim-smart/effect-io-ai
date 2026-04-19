@@ -13,9 +13,9 @@ values of the same type but with different meanings, see `nominal`.
 **Signature**
 
 ```ts
-declare const make: <A extends Brand<any>>(filter: (unbranded: Brand.Unbranded<A>) => undefined | boolean | string | Issue.Issue | { readonly path: ReadonlyArray<PropertyKey>; readonly message: string; }) => Constructor<A>
+declare const make: <A extends Brand<any>>(filter: (unbranded: Brand.Unbranded<A>) => Schema.FilterOutput) => Constructor<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Brand.ts#L194)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Brand.ts#L195)
 
 Since v2.0.0

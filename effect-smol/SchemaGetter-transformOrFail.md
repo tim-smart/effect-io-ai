@@ -39,6 +39,6 @@ See also:
 declare const transformOrFail: <T, E, R = never>(f: (e: E, options: AST.ParseOptions) => Effect.Effect<T, Issue.Issue, R>) => Getter<T, E, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L600)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L598)
 
 Since v4.0.0

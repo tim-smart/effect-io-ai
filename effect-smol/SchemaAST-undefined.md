@@ -11,6 +11,6 @@ Singleton `Undefined` AST instance.
 declare const undefined: Undefined
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L684)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L691)
 
 Since v4.0.0

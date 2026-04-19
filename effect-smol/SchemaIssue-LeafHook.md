@@ -21,6 +21,6 @@ When to use:
 type LeafHook = (issue: Leaf) => string
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaIssue.ts#L930)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaIssue.ts#L943)
 
 Since v4.0.0

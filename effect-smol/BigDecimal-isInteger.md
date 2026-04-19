@@ -22,6 +22,6 @@ assert.deepStrictEqual(isInteger(fromStringUnsafe("1.1")), false)
 declare const isInteger: (n: BigDecimal) => boolean
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigDecimal.ts#L1323)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigDecimal.ts#L1327)
 
 Since v2.0.0

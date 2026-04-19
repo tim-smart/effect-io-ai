@@ -25,6 +25,6 @@ When to use:
 export interface Formatter<out Format> extends FormatterI<Issue, Format> {}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaIssue.ts#L914)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaIssue.ts#L927)
 
 Since v4.0.0

@@ -23,6 +23,6 @@ assert.deepStrictEqual(
 declare const sumAll: (collection: Iterable<BigDecimal>) => BigDecimal
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigDecimal.ts#L295)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigDecimal.ts#L299)
 
 Since v4.0.0

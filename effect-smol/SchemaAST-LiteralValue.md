@@ -15,6 +15,6 @@ The set of primitive types that can appear as a `Literal` value.
 type LiteralValue = string | number | boolean | bigint
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L1044)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L1051)
 
 Since v4.0.0

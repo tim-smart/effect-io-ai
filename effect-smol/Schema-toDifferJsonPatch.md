@@ -13,6 +13,6 @@ and new values, and can apply patches back to the typed value.
 declare const toDifferJsonPatch: <T, E>(schema: Codec<T, E>) => Differ<T, JsonPatch.JsonPatch>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L11521)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L11597)
 
 Since v4.0.0

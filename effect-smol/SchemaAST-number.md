@@ -11,6 +11,6 @@ Singleton `Number` AST instance.
 declare const number: Number
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L1205)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L1212)
 
 Since v4.0.0

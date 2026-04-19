@@ -11,6 +11,6 @@ Singleton `Never` AST instance.
 declare const never: Never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L754)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L761)
 
 Since v4.0.0

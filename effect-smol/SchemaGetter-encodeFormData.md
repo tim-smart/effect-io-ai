@@ -33,6 +33,6 @@ See also:
 declare const encodeFormData: () => Getter<FormData, unknown>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L1614)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L1612)
 
 Since v4.0.0

@@ -26,6 +26,6 @@ assert.deepStrictEqual(fromNumberUnsafe(123.456), make(123456n, 3))
 declare const fromNumberUnsafe: (n: number) => BigDecimal
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigDecimal.ts#L1080)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigDecimal.ts#L1084)
 
 Since v4.0.0

@@ -11,6 +11,6 @@ Singleton `Null` AST instance.
 declare const null: Null
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L639)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L646)
 
 Since v4.0.0

@@ -13,6 +13,6 @@ export interface DateTimeZoned extends declare<DateTime.Zoned> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L10202)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L10278)
 
 Since v4.0.0

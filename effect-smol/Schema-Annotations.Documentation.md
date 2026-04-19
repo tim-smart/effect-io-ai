@@ -14,6 +14,6 @@ export interface Documentation<T> extends Augment {
   }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L11766)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L11842)
 
 Since v4.0.0

@@ -41,6 +41,6 @@ export interface Constructor<in out B extends Brand<any>> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Brand.ts#L36)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Brand.ts#L37)
 
 Since v2.0.0

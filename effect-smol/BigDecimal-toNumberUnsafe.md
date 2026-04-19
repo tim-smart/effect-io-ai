@@ -22,6 +22,6 @@ assert.deepStrictEqual(toNumberUnsafe(fromStringUnsafe("123.456")), 123.456)
 declare const toNumberUnsafe: (n: BigDecimal) => number
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigDecimal.ts#L1305)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigDecimal.ts#L1309)
 
 Since v2.0.0

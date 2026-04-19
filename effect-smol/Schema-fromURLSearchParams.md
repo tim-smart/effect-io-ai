@@ -13,6 +13,6 @@ export interface fromURLSearchParams<S extends Top> extends decodeTo<S, URLSearc
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L9308)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L9384)
 
 Since v4.0.0

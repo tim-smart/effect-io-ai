@@ -33,6 +33,6 @@ See also:
 declare const decodeURLSearchParams: () => Getter<Schema.TreeRecord<string>, URLSearchParams>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L1655)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L1653)
 
 Since v4.0.0

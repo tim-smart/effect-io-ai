@@ -11,6 +11,6 @@ A utility type to extract the keys of a branded type.
 type keyof B["~effect/Brand"] = keyof B[typeof TypeId]
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Brand.ts#L127)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Brand.ts#L128)
 
 Since v2.0.0

@@ -11,6 +11,6 @@ A utility type to extract a branded type from a `Constructor`.
 type FromConstructor<C> = C extends Constructor<infer B> ? B : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Brand.ts#L113)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Brand.ts#L114)
 
 Since v2.0.0

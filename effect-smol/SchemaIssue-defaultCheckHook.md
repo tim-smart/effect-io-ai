@@ -28,6 +28,6 @@ Behaviour:
 declare const defaultCheckHook: CheckHook
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaIssue.ts#L1029)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaIssue.ts#L1042)
 
 Since v4.0.0

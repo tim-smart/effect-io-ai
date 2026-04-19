@@ -31,6 +31,6 @@ See also:
 declare const stringifyJson: (options?: StringifyJsonOptions) => Getter<string, unknown>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L1072)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L1070)
 
 Since v4.0.0

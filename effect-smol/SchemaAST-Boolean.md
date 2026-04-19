@@ -16,6 +16,6 @@ AST node matching any `boolean` value (`true` or `false`).
 declare class Boolean
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L1216)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L1223)
 
 Since v4.0.0
