@@ -20,6 +20,6 @@ type PayloadConstraint<Method> = Method extends HttpMethod.NoBody ? Record<
   SuccessConstraint
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiEndpoint.ts#L892)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiEndpoint.ts#L891)
 
 Since v4.0.0

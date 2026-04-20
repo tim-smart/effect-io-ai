@@ -10,17 +10,17 @@ The OpenAI client interface.
 ```ts
 export interface Service {
   /**
-   * The underlying generated OpenAI client.
+   * The transformed HTTP client used by this service.
    */
-  readonly client: Generated.OpenAiClient
+  readonly client: HttpClient.HttpClient
 
   /**
    * Create a response using the OpenAI responses endpoint.
    */
   readonly createResponse: (
-    options: typeof Generated.CreateResponse.Encoded
+    options: typeof OpenAiSchema.CreateResponse.Encoded
   ) => Effect.Effect<
-    readonly [body: typeof Generated.Response.Type, response: HttpClientResponse.HttpClientResponse],
+    readonly [body: typeof OpenAiSchema.Response.Type, response: HttpClientResponse.HttpClientResponse],
     AiError.AiError
   >
 
@@ -28,11 +28,11 @@ export interface Service {
    * Create a streaming response using the OpenAI responses endpoint.
    */
   readonly createResponseStream: (
-    options: Omit<typeof Generated.CreateResponse.Encoded, "stream">
+    options: Omit<typeof OpenAiSchema.CreateResponse.Encoded, "stream">
   ) => Effect.Effect<
     readonly [
       response: HttpClientResponse.HttpClientResponse,
-      stream: Stream.Stream<typeof Generated.ResponseStreamEvent.Type, AiError.AiError>
+      stream: Stream.Stream<typeof OpenAiSchema.ResponseStreamEvent.Type, AiError.AiError>
     ],
     AiError.AiError
   >
@@ -41,8 +41,8 @@ export interface Service {
    * Create embeddings using the OpenAI embeddings endpoint.
    */
   readonly createEmbedding: (
-    options: typeof Generated.CreateEmbeddingRequest.Encoded
-  ) => Effect.Effect<typeof Generated.CreateEmbeddingResponse.Type, AiError.AiError>
+    options: typeof OpenAiSchema.CreateEmbeddingRequest.Encoded
+  ) => Effect.Effect<typeof OpenAiSchema.CreateEmbeddingResponse.Type, AiError.AiError>
 }
 ```
 

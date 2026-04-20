@@ -15,6 +15,6 @@ Schema for the `never` type. Always fails validation.
 export interface Never extends Bottom<never, never, never, never, AST.Never, Never> {}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L2049)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L2048)
 
 Since v4.0.0

@@ -11,6 +11,6 @@ Re-exports all named exports from the "./Unify.ts" module as `Unify`.
 export * as Unify from "./Unify.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L4289)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L4292)
 
 Since v2.0.0

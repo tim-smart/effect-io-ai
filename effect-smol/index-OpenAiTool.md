@@ -11,6 +11,6 @@ Re-exports all named exports from the "./OpenAiTool.ts" module as `OpenAiTool`.
 export * as OpenAiTool from "./OpenAiTool.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/index.ts#L75)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/index.ts#L87)
 
 Since v1.0.0

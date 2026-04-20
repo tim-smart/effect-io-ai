@@ -13,6 +13,6 @@ export interface UndefinedOr<S extends Top> extends Union<readonly [S, Undefined
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L3589)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L3588)
 
 Since v4.0.0

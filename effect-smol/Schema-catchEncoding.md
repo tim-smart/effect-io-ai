@@ -18,6 +18,6 @@ succeeds with a fallback value or re-fails with a (possibly different) issue.
 declare const catchEncoding: <S extends Top>(f: (issue: Issue.Issue) => Effect.Effect<Option_.Option<S["Encoded"]>, Issue.Issue>) => (self: S) => S["Rebuild"]
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L3976)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L3975)
 
 Since v4.0.0

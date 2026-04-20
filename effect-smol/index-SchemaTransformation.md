@@ -11,6 +11,6 @@ Re-exports all named exports from the "./SchemaTransformation.ts" module as `Sch
 export * as SchemaTransformation from "./SchemaTransformation.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L3840)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L3843)
 
 Since v4.0.0

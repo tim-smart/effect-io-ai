@@ -13,6 +13,6 @@ export interface RegExp extends instanceOf<globalThis.RegExp> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L8541)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L8539)
 
 Since v4.0.0

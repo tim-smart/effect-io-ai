@@ -21,6 +21,6 @@ constraint to ensure generated strings contain the required substring.
 declare const isIncludes: (includes: string, annotations?: Annotations.Filter) => AST.Filter<string>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L5409)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L5407)
 
 Since v4.0.0

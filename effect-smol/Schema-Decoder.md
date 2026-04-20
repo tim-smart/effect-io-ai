@@ -28,6 +28,6 @@ export interface Decoder<out T, out RD = never> extends Codec<T, unknown, RD, un
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L788)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L787)
 
 Since v4.0.0

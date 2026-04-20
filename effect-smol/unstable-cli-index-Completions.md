@@ -11,6 +11,6 @@ Re-exports all named exports from the "./Completions.ts" module as `Completions`
 export * as Completions from "./Completions.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L30)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L32)
 
 Since v4.0.0

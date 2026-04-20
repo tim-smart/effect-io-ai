@@ -21,6 +21,6 @@ type RE = Schema.Codec.EncodingServices<typeof schema>
 type EncodingServices<S> = S extends Top ? S["EncodingServices"] : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L696)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L695)
 
 Since v4.0.0

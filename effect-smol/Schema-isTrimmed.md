@@ -21,6 +21,6 @@ constraint to ensure generated strings match the trimmed pattern.
 declare const isTrimmed: (annotations?: Annotations.Filter) => AST.Filter<string>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L5086)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L5084)
 
 Since v4.0.0

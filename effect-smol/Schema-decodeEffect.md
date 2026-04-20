@@ -14,6 +14,6 @@ input use `decodeUnknownEffect`.
 declare const decodeEffect: <S extends Top>(schema: S) => (input: S["Encoded"], options?: AST.ParseOptions) => Effect.Effect<S["Type"], SchemaError, S["DecodingServices"]>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L1161)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L1160)
 
 Since v4.0.0

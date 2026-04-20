@@ -14,6 +14,6 @@ for integrating with Promise-based APIs. For typed input use
 declare const decodeUnknownResult: <S extends Decoder<unknown>>(schema: S) => (input: unknown, options?: AST.ParseOptions) => Result_.Result<S["Type"], Issue.Issue>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L1228)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L1227)
 
 Since v4.0.0

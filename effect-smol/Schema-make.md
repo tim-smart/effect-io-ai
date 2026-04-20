@@ -20,6 +20,6 @@ schema.
 declare const make: <S extends Top>(ast: S["ast"], options?: object) => S
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L1460)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L1459)
 
 Since v4.0.0

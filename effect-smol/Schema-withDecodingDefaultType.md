@@ -19,6 +19,6 @@ export interface withDecodingDefaultType<S extends Top> extends decodeTo<withDec
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L4480)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L4479)
 
 Since v4.0.0

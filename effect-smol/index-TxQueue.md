@@ -11,6 +11,6 @@ Re-exports all named exports from the "./TxQueue.ts" module as `TxQueue`.
 export * as TxQueue from "./TxQueue.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L4162)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L4165)
 
 Since v4.0.0

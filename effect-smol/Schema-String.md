@@ -15,6 +15,6 @@ Schema for `string` values.
 export interface String extends Bottom<string, string, never, never, AST.String, String> {}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L2128)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L2127)
 
 Since v4.0.0

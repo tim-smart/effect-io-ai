@@ -28,6 +28,6 @@ const UpperFromLower = Schema.String.pipe(
 declare const encode: <S extends Top, RD = never, RE = never>(transformation: { readonly decode: Getter.Getter<S["Encoded"], S["Encoded"], RD>; readonly encode: Getter.Getter<S["Encoded"], S["Encoded"], RE>; }) => (self: S) => decodeTo<S, toEncoded<S>, RD, RE>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L4223)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L4222)
 
 Since v4.0.0

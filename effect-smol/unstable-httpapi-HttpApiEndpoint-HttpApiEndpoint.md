@@ -18,7 +18,7 @@ export interface HttpApiEndpoint<
   out Payload extends Schema.Top = never,
   out Headers extends Schema.Top = never,
   out Success extends Schema.Top = typeof HttpApiSchema.NoContent,
-  out Error extends Schema.Top = typeof BadRequestNoContent,
+  out Error extends Schema.Top = never,
   in out Middleware = never,
   out MiddlewareR = never
 > extends Pipeable {
@@ -121,6 +121,6 @@ export interface HttpApiEndpoint<
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiEndpoint.ts#L48)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiEndpoint.ts#L47)
 
 Since v4.0.0

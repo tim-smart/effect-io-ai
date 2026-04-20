@@ -11,6 +11,6 @@ Re-exports all named exports from the "./Flag.ts" module as `Flag`.
 export * as Flag from "./Flag.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L35)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L37)
 
 Since v4.0.0
