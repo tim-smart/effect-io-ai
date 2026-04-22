@@ -23,6 +23,6 @@ export interface Cause<E extends Top, D extends Top> extends
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L7714)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L7720)
 
 Since v4.0.0

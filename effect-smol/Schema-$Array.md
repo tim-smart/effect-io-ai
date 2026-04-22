@@ -24,6 +24,6 @@ export interface $Array<S extends Top> extends
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L3206)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L3212)
 
 Since v4.0.0

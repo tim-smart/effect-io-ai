@@ -13,6 +13,6 @@ export interface NonEmptyString extends String {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L6953)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L6959)
 
 Since v4.0.0

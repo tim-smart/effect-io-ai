@@ -32,6 +32,6 @@ const encoded = Schema.encodeUnknownSync(A)({ _tag: "A", value: 1 })
 declare const tagDefaultOmit: <Tag extends AST.LiteralValue>(literal: Tag) => withDecodingDefaultKey<tag<Tag>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L4572)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L4578)
 
 Since v4.0.0

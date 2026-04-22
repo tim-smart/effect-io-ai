@@ -13,6 +13,6 @@ export interface UniqueArray<S extends Top> extends $Array<S> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L3338)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L3344)
 
 Since v4.0.0

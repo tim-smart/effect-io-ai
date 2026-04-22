@@ -13,6 +13,6 @@ export interface DateTimeUtcFromMillis extends decodeTo<instanceOf<DateTime.Utc>
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L10045)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L10051)
 
 Since v4.0.0

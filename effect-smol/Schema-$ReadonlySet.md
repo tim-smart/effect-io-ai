@@ -21,6 +21,6 @@ export interface $ReadonlySet<Value extends Top> extends
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L8264)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L8270)
 
 Since v4.0.0

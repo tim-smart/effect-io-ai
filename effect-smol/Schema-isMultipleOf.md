@@ -20,6 +20,6 @@ generated numbers are multiples of the specified divisor.
 declare const isMultipleOf: (divisor: number, annotations?: Annotations.Filter) => AST.Filter<number>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L5965)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L5971)
 
 Since v4.0.0

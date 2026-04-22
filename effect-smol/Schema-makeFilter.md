@@ -54,6 +54,6 @@ console.log(String(Schema.decodeUnknownExit(schema)({ a: 1, b: 0, c: 0 })))
 declare const makeFilter: <T>(filter: (input: T, ast: AST.AST, options: AST.ParseOptions) => FilterOutput, annotations?: Annotations.Filter | undefined, abort?: boolean) => AST.Filter<T>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L4998)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L5004)
 
 Since v4.0.0

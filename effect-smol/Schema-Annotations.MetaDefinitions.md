@@ -11,6 +11,6 @@ This MAY be extended with custom meta.
 export interface MetaDefinitions extends BuiltInMetaDefinitions {}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L12396)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L12402)
 
 Since v4.0.0

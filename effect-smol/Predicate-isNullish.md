@@ -28,7 +28,7 @@ See also: `isNotNullish`, `isUndefined`, `isNull`
 **Signature**
 
 ```ts
-declare const isNullish: <A>(input: A) => input is Extract<A, null | undefined>
+declare const isNullish: <A>(input: A) => input is A & (null | undefined)
 ```
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L881)

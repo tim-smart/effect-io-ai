@@ -13,6 +13,6 @@ export interface fromFormData<S extends Top> extends decodeTo<S, FormData> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L9248)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L9254)
 
 Since v4.0.0

@@ -28,6 +28,6 @@ const program = Effect.gen(function*() {
 declare const ErrorClass: <Self = never, Brand = {}>(identifier: string) => { <const Fields extends Struct.Fields>(fields: Fields, annotations?: Annotations.Declaration<Self, readonly [Struct<Fields>]>): [Self] extends [never] ? MissingSelfGeneric<"Schema.ErrorClass"> : Class<Self, Struct<Fields>, Cause_.YieldableError & Brand>; <S extends Struct<Struct.Fields>>(schema: S, annotations?: Annotations.Declaration<Self, readonly [S]>): [Self] extends [never] ? MissingSelfGeneric<"Schema.ErrorClass"> : Class<Self, S, Cause_.YieldableError & Brand>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L10740)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L10746)
 
 Since v4.0.0
