@@ -14,6 +14,6 @@ By default, this is set to `true`, meaning that defects will be captured.
 declare const CaptureDefects: Context.Reference<boolean>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Workflow.ts#L753)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Workflow.ts#L757)
 
 Since v4.0.0
