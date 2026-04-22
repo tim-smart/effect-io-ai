@@ -33,6 +33,6 @@ const program = Effect.scoped(
 declare const forkIn: { (scope: Scope, options?: { readonly startImmediately?: boolean | undefined; readonly uninterruptible?: boolean | "inherit" | undefined; }): <A, E, R>(self: Effect<A, E, R>) => Effect<Fiber<A, E>, never, R>; <A, E, R>(self: Effect<A, E, R>, scope: Scope, options?: { readonly startImmediately?: boolean | undefined; readonly uninterruptible?: boolean | "inherit" | undefined; }): Effect<Fiber<A, E>, never, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L8066)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L8069)
 
 Since v2.0.0

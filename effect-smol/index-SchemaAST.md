@@ -11,6 +11,6 @@ Re-exports all named exports from the "./SchemaAST.ts" module as `SchemaAST`.
 export * as SchemaAST from "./SchemaAST.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L3489)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L3494)
 
 Since v4.0.0

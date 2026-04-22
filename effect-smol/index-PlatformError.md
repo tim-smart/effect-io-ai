@@ -11,6 +11,6 @@ Re-exports all named exports from the "./PlatformError.ts" module as `PlatformEr
 export * as PlatformError from "./PlatformError.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L2812)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L2817)
 
 Since v4.0.0

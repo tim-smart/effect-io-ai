@@ -17,6 +17,6 @@ Re-exports all named exports from the "./Equal.ts" module as `Equal`.
 export * as Equal from "./Equal.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L1081)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L1086)
 
 Since v2.0.0

@@ -11,6 +11,6 @@ Re-exports all named exports from the "./MutableHashSet.ts" module as `MutableHa
 export * as MutableHashSet from "./MutableHashSet.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L2257)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L2262)
 
 Since v2.0.0

@@ -11,6 +11,6 @@ Re-exports all named exports from the "./RcMap.ts" module as `RcMap`.
 export * as RcMap from "./RcMap.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L2945)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L2950)
 
 Since v3.5.0

@@ -27,6 +27,6 @@ Effect.runPromiseExit(program).then(console.log)
 declare const failSync: <E>(evaluate: LazyArg<E>) => Effect<never, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L1655)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L1658)
 
 Since v2.0.0

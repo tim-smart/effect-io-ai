@@ -27,6 +27,6 @@ Effect.runPromise(program).then(console.log)
 declare const fromYieldable: <Self extends Yieldable.Any, A, E, R>(yieldable: Yieldable<Self, A, E, R>) => Effect<A, E, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L1983)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L1986)
 
 Since v4.0.0

@@ -28,6 +28,6 @@ const program = Effect.gen(function*() {
 export * as Random from "./Random.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L2940)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L2945)
 
 Since v4.0.0

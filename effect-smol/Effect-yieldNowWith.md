@@ -25,6 +25,6 @@ Effect.runPromise(program)
 declare const yieldNowWith: (priority?: number) => Effect<void>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L1860)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L1863)
 
 Since v2.0.0

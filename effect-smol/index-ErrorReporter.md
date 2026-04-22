@@ -45,6 +45,6 @@ const program = Effect.gen(function*() {
 export * as ErrorReporter from "./ErrorReporter.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L1188)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L1193)
 
 Since v4.0.0

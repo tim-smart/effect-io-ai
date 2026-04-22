@@ -11,6 +11,6 @@ Re-exports all named exports from the "./HashSet.ts" module as `HashSet`.
 export * as HashSet from "./HashSet.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L1480)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L1485)
 
 Since v2.0.0

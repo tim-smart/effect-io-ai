@@ -11,6 +11,6 @@ Re-exports all named exports from the "./JsonPointer.ts" module as `JsonPointer`
 export * as JsonPointer from "./JsonPointer.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L1703)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L1708)
 
 Since v4.0.0

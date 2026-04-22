@@ -38,6 +38,6 @@ const program = Effect.gen(function*() {
 export * as FileSystem from "./FileSystem.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L1383)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L1388)
 
 Since v4.0.0

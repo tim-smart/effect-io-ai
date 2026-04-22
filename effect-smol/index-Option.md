@@ -11,6 +11,6 @@ Re-exports all named exports from the "./Option.ts" module as `Option`.
 export * as Option from "./Option.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L2710)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L2715)
 
 Since v2.0.0

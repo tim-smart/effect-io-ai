@@ -11,6 +11,6 @@ Re-exports all named exports from the "./Result.ts" module as `Result`.
 export * as Result from "./Result.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L3258)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L3263)
 
 Since v4.0.0

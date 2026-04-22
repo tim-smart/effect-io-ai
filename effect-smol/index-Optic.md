@@ -11,6 +11,6 @@ Re-exports all named exports from the "./Optic.ts" module as `Optic`.
 export * as Optic from "./Optic.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L2634)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L2639)
 
 Since v4.0.0

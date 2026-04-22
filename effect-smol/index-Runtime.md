@@ -31,6 +31,6 @@ runMain(program)
 export * as Runtime from "./Runtime.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L3288)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L3293)
 
 Since v4.0.0

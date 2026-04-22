@@ -50,6 +50,6 @@ const withCache = Effect.provideService(program, Cache, {
 declare const contextWith: <R, A, E, R2>(f: (context: Context.Context<R>) => Effect<A, E, R2>) => Effect<A, E, R | R2>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L5600)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L5603)
 
 Since v2.0.0

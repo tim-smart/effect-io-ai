@@ -11,6 +11,6 @@ Re-exports all named exports from the "./ExecutionPlan.ts" module as `ExecutionP
 export * as ExecutionPlan from "./ExecutionPlan.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L1193)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L1198)
 
 Since v3.16.0
