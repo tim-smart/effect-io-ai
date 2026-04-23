@@ -3,7 +3,7 @@ Module: `RpcSerialization`<br />
 
 ## RpcSerialization.layerNdJsonRpc
 
-A rpc serialization layer that uses JSON-RPC for serialization seperated by
+A rpc serialization layer that uses JSON-RPC for serialization separated by
 new lines.
 
 **Signature**
@@ -12,6 +12,6 @@ new lines.
 declare const layerNdJsonRpc: (options?: { readonly contentType?: string | undefined; }) => Layer.Layer<RpcSerialization>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcSerialization.ts#L432)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcSerialization.ts#L441)
 
 Since v1.0.0

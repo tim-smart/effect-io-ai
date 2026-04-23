@@ -5,7 +5,7 @@ Module: `RunnerServer`<br />
 
 A `Runners` layer that is client only.
 
-It will not register with RunnerStorage and recieve shard assignments,
+It will not register with RunnerStorage and receive shard assignments,
 so this layer can be used to embed a cluster client inside another effect
 application.
 

@@ -2382,7 +2382,7 @@
     "since": "1.0.0",
     "category": "serialization",
     "signature": "declare const msgPack: { unsafeMake(): Parser; readonly contentType: string; readonly includesFraming: boolean; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcSerialization.ts#L358"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcSerialization.ts#L400"
   },
   {
     "_tag": "Constant",
@@ -2398,7 +2398,7 @@
     "since": "1.0.0",
     "category": "serialization",
     "signature": "declare const layerJson: Layer.Layer<RpcSerialization, never, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcSerialization.ts#L402"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcSerialization.ts#L411"
   },
   {
     "_tag": "Constant",
@@ -2414,7 +2414,7 @@
     "since": "1.0.0",
     "category": "serialization",
     "signature": "declare const layerNdjson: Layer.Layer<RpcSerialization, never, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcSerialization.ts#L413"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcSerialization.ts#L422"
   },
   {
     "_tag": "Constant",
@@ -2430,7 +2430,7 @@
     "since": "1.0.0",
     "category": "serialization",
     "signature": "declare const layerMsgPack: Layer.Layer<RpcSerialization, never, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcSerialization.ts#L445"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcSerialization.ts#L454"
   },
   {
     "_tag": "Function",
@@ -2469,6 +2469,22 @@
       "path": "src/RpcSerialization.ts"
     },
     "project": "@effect/rpc",
+    "name": "makeMsgPack",
+    "description": "Create a MessagePack serialization with custom msgpackr options.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "serialization",
+    "signature": "declare const makeMsgPack: (options?: Msgpackr.Options | undefined) => RpcSerialization[\"Type\"]",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcSerialization.ts#L360"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "RpcSerialization.ts",
+      "path": "src/RpcSerialization.ts"
+    },
+    "project": "@effect/rpc",
     "name": "layerJsonRpc",
     "description": "A rpc serialization layer that uses JSON-RPC for serialization.",
     "deprecated": false,
@@ -2476,7 +2492,7 @@
     "since": "1.0.0",
     "category": "serialization",
     "signature": "declare const layerJsonRpc: (options?: { readonly contentType?: string | undefined; }) => Layer.Layer<RpcSerialization>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcSerialization.ts#L421"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcSerialization.ts#L430"
   },
   {
     "_tag": "Function",
@@ -2486,13 +2502,13 @@
     },
     "project": "@effect/rpc",
     "name": "layerNdJsonRpc",
-    "description": "A rpc serialization layer that uses JSON-RPC for serialization seperated by\nnew lines.",
+    "description": "A rpc serialization layer that uses JSON-RPC for serialization separated by\nnew lines.",
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "serialization",
     "signature": "declare const layerNdJsonRpc: (options?: { readonly contentType?: string | undefined; }) => Layer.Layer<RpcSerialization>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcSerialization.ts#L432"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcSerialization.ts#L441"
   },
   {
     "_tag": "Interface",

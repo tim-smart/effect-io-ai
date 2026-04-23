@@ -3,7 +3,7 @@ Module: `RunnerServer`<br />
 
 ## RunnerServer.layer
 
-The `RunnerServer` recieves messages from other Runners and forwards them to the
+The `RunnerServer` receives messages from other Runners and forwards them to the
 `Sharding` layer.
 
 It also responds to `Ping` requests.
