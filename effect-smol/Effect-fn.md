@@ -33,6 +33,6 @@ const program = Effect.gen(function*() {
 declare const fn: fn.Traced & ((name: string, options?: SpanOptionsNoTrace) => fn.Traced)
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L12898)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L12906)
 
 Since v3.12.0

@@ -121,7 +121,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "declare const defaultParameterTypes: Record<Statement.PrimitiveKind, DataType>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/d1/src/MssqlClient.ts#L610"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/d1/src/MssqlClient.ts#L615"
   },
   {
     "_tag": "Function",
@@ -136,7 +136,7 @@
     "since": "1.0.0",
     "category": "constructors",
     "signature": "declare const make: (options: MssqlClientConfig) => Effect.Effect<MssqlClient, SqlError, Scope.Scope | Reactivity.Reactivity>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/d1/src/MssqlClient.ts#L185"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/d1/src/MssqlClient.ts#L187"
   },
   {
     "_tag": "Function",
@@ -151,7 +151,7 @@
     "since": "1.0.0",
     "category": "layers",
     "signature": "declare const layerConfig: (config: Config.Wrap<MssqlClientConfig>) => Layer.Layer<Client.SqlClient | MssqlClient, Config.ConfigError | SqlError>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/d1/src/MssqlClient.ts#L527"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/d1/src/MssqlClient.ts#L532"
   },
   {
     "_tag": "Function",
@@ -166,7 +166,7 @@
     "since": "1.0.0",
     "category": "layers",
     "signature": "declare const layer: (config: MssqlClientConfig) => Layer.Layer<Client.SqlClient | MssqlClient, never | SqlError>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/d1/src/MssqlClient.ts#L547"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/d1/src/MssqlClient.ts#L552"
   },
   {
     "_tag": "Function",
@@ -181,7 +181,7 @@
     "since": "1.0.0",
     "category": "compiler",
     "signature": "declare const makeCompiler: (transform?: (_: string) => string) => Statement.Compiler",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/d1/src/MssqlClient.ts#L561"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/d1/src/MssqlClient.ts#L566"
   },
   {
     "_tag": "Interface",
