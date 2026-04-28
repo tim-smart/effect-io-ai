@@ -578,7 +578,7 @@
     "since": "1.0.0",
     "category": "HttpAgent",
     "signature": "declare class HttpAgent",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L325"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L335"
   },
   {
     "_tag": "Constant",
@@ -668,7 +668,7 @@
     "since": "1.0.0",
     "category": "Undici",
     "signature": "declare const layerUndiciNoDispatcher: Layer.Layer<Client.HttpClient, never, Dispatcher>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L305"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L315"
   },
   {
     "_tag": "Constant",
@@ -683,7 +683,7 @@
     "since": "1.0.0",
     "category": "Undici",
     "signature": "declare const layerUndici: Layer.Layer<Client.HttpClient, never, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L315"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L325"
   },
   {
     "_tag": "Constant",
@@ -698,7 +698,7 @@
     "since": "1.0.0",
     "category": "HttpAgent",
     "signature": "declare const layerAgentOptions: (options?: Https.AgentOptions | undefined) => Layer.Layer<HttpAgent>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L351"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L361"
   },
   {
     "_tag": "Constant",
@@ -713,7 +713,7 @@
     "since": "1.0.0",
     "category": "HttpAgent",
     "signature": "declare const layerAgent: Layer.Layer<HttpAgent, never, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L359"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L369"
   },
   {
     "_tag": "Constant",
@@ -728,7 +728,7 @@
     "since": "1.0.0",
     "category": "node:http",
     "signature": "declare const makeNodeHttp: Effect.Effect<Client.HttpClient, never, HttpAgent>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L365"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L375"
   },
   {
     "_tag": "Constant",
@@ -743,7 +743,7 @@
     "since": "1.0.0",
     "category": "node:http",
     "signature": "declare const layerNodeHttpNoAgent: Layer.Layer<Client.HttpClient, never, HttpAgent>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L575"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L585"
   },
   {
     "_tag": "Constant",
@@ -758,7 +758,7 @@
     "since": "1.0.0",
     "category": "node:http",
     "signature": "declare const layerNodeHttp: Layer.Layer<Client.HttpClient, never, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L585"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L595"
   },
   {
     "_tag": "Function",
@@ -773,7 +773,7 @@
     "since": "1.0.0",
     "category": "HttpAgent",
     "signature": "declare const makeAgent: (options?: Https.AgentOptions) => Effect.Effect<HttpAgent[\"Service\"], never, Scope.Scope>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L334"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L344"
   },
   {
     "_tag": "Export",

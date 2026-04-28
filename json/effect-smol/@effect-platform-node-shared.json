@@ -526,7 +526,7 @@
     "since": "1.0.0",
     "category": "conversions",
     "signature": "declare const toUint8Array: <E = Cause.UnknownError>(readable: LazyArg<Readable | NodeJS.ReadableStream>, options?: { readonly onError?: (error: unknown) => E; readonly maxBytes?: SizeInput | undefined; }) => Effect.Effect<Uint8Array, E>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeStream.ts#L273"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeStream.ts#L276"
   },
   {
     "_tag": "Constant",
