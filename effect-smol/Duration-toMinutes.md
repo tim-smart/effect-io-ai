@@ -17,9 +17,9 @@ console.log(Duration.toMinutes(Duration.hours(1))) // 60
 **Signature**
 
 ```ts
-declare const toMinutes: (self: Duration) => number
+declare const toMinutes: (self: Input) => number
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Duration.ts#L713)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Duration.ts#L725)
 
 Since v3.8.0

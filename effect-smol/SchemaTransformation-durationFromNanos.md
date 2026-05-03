@@ -33,6 +33,6 @@ See also:
 declare const durationFromNanos: Transformation<Duration.Duration, bigint, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L945)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L986)
 
 Since v4.0.0

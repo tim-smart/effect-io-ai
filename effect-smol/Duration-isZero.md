@@ -20,6 +20,6 @@ console.log(Duration.isZero(Duration.seconds(1))) // false
 declare const isZero: (self: Duration) => boolean
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Duration.ts#L361)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Duration.ts#L373)
 
 Since v3.5.0

@@ -17,9 +17,9 @@ console.log(Duration.toMillis(Duration.minutes(2))) // 120000
 **Signature**
 
 ```ts
-declare const toMillis: (self: Duration) => number
+declare const toMillis: (self: Input) => number
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Duration.ts#L669)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Duration.ts#L681)
 
 Since v2.0.0

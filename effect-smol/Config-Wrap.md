@@ -26,6 +26,6 @@ type Wrap<A> = [NonNullable<A>] extends [infer T] ? [IsPlainObject<T>] extends [
   : Config<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Config.ts#L491)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Config.ts#L489)
 
 Since v4.0.0

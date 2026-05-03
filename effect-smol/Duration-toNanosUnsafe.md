@@ -27,9 +27,9 @@ try {
 **Signature**
 
 ```ts
-declare const toNanosUnsafe: (self: Duration) => bigint
+declare const toNanosUnsafe: (input: Input) => bigint
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Duration.ts#L811)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Duration.ts#L823)
 
 Since v2.0.0

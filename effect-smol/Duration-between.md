@@ -23,6 +23,6 @@ console.log(isInRange) // true
 declare const between: { (options: { minimum: Duration; maximum: Duration; }): (self: Duration) => boolean; (self: Duration, options: { minimum: Duration; maximum: Duration; }): boolean; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Duration.ts#L1055)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Duration.ts#L1069)
 
 Since v2.0.0

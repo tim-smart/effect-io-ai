@@ -32,6 +32,6 @@ const provider = ConfigProvider.fromUnknown({ host: "localhost", port: 5432 })
 declare const all: <const Arg extends Iterable<Config<any>> | Record<string, Config<any>>>(arg: Arg) => Config<[Arg] extends [ReadonlyArray<Config<any>>] ? { -readonly [K in keyof Arg]: [Arg[K]] extends [Config<infer A>] ? A : never; } : [Arg] extends [Iterable<Config<infer A>>] ? Array<A> : [Arg] extends [Record<string, Config<any>>] ? { -readonly [K in keyof Arg]: [Arg[K]] extends [Config<infer A>] ? A : never; } : never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Config.ts#L349)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Config.ts#L347)
 
 Since v4.0.0

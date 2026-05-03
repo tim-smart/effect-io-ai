@@ -17,9 +17,9 @@ console.log(Duration.toHours(Duration.days(1))) // 24
 **Signature**
 
 ```ts
-declare const toHours: (self: Duration) => number
+declare const toHours: (self: Input) => number
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Duration.ts#L735)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Duration.ts#L747)
 
 Since v3.8.0

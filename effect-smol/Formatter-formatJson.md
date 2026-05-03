@@ -12,8 +12,8 @@ When to use:
 
 Behavior:
 - Does not mutate input.
-- Uses `JSON.stringify` internally with a replacer that tracks seen
-  objects.
+- Uses `JSON.stringify` internally with a replacer that tracks the
+  current object ancestry.
 - Circular references are replaced with `undefined` (omitted from
   output).
 - `Redactable` values are automatically redacted before serialization.

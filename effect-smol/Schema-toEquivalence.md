@@ -24,6 +24,6 @@ console.log(eq({ id: 1, name: "Alice" }, { id: 2, name: "Alice" })) // false
 declare const toEquivalence: <T>(schema: Schema<T>) => Equivalence.Equivalence<T>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L11090)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L11119)
 
 Since v4.0.0

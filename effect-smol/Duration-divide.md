@@ -22,6 +22,6 @@ Duration.divide(Duration.seconds(10), 0) // None
 declare const divide: { (by: number): (self: Duration) => Option.Option<Duration>; (self: Duration, by: number): Option.Option<Duration>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Duration.ts#L1158)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Duration.ts#L1172)
 
 Since v4.0.0

@@ -44,6 +44,6 @@ console.log(user) // In Node.js, shows the same formatted output
 declare class Class
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Inspectable.ts#L282)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Inspectable.ts#L262)
 
 Since v2.0.0

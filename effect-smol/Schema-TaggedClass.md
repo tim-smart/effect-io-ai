@@ -30,6 +30,6 @@ console.log(c.radius) // 5
 declare const TaggedClass: <Self = never, Brand = {}>(identifier?: string) => { <Tag extends string, const Fields extends Struct.Fields>(tag: Tag, fields: Fields, annotations?: Annotations.Declaration<Self, readonly [TaggedStruct<Tag, Fields>]>): [Self] extends [never] ? MissingSelfGeneric<"Schema.TaggedClass"> : Class<Self, TaggedStruct<Tag, Fields>, Brand>; <Tag extends string, S extends Struct<Struct.Fields>>(tag: Tag, schema: S, annotations?: Annotations.Declaration<Self, readonly [Struct<Simplify<{ readonly _tag: tag<Tag>; } & S["fields"]>>]>): [Self] extends [never] ? MissingSelfGeneric<"Schema.TaggedClass"> : Class<Self, Struct<Simplify<{ readonly _tag: tag<Tag>; } & S["fields"]>>, Brand>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L10689)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L10718)
 
 Since v4.0.0

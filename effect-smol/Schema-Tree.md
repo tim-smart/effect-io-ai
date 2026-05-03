@@ -13,6 +13,6 @@ object whose values are trees.
 declare const Tree: <S extends Top>(node: S) => Union<readonly [S, $Array<suspend<Codec<Tree<S["Type"]>, Tree<S["Encoded"]>, S["DecodingServices"], S["EncodingServices"]>>>, $Record<String, suspend<Codec<Tree<S["Type"]>, Tree<S["Encoded"]>, S["DecodingServices"], S["EncodingServices"]>>>]>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L11728)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L11757)
 
 Since v4.0.0

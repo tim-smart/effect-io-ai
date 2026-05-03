@@ -20,6 +20,6 @@ console.log(Duration.toMillis(duration)) // 86400000
 declare const days: (days: number) => Duration
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Duration.ts#L637)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Duration.ts#L649)
 
 Since v2.0.0

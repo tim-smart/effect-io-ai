@@ -6,10 +6,10 @@ Module: `Config`<br />
 Creates a config for a `Duration` value parsed from a human-readable
 string.
 
-Shortcut for `Config.schema(Config.Duration, name)`.
+Shortcut for `Config.schema(Schema.DurationFromString, name)`.
 
 Accepts any string that `Duration.fromInput` can parse (e.g.
-`"10 seconds"`, `"500 millis"`, `"2 minutes"`).
+`"10 seconds"`, `"500 millis"`, `"Infinity"`, `"-Infinity"`).
 
 **Example** (Reading a duration)
 
@@ -36,9 +36,9 @@ Effect.runSync(
 **Signature**
 
 ```ts
-declare const duration: (name?: string) => Config<Duration_.Duration>
+declare const duration: (name?: string) => Config<Duration>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Config.ts#L1063)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Config.ts#L1055)
 
 Since v4.0.0

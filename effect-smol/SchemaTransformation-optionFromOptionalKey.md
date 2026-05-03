@@ -41,6 +41,6 @@ See also:
 declare const optionFromOptionalKey: <T>() => Transformation<Option.Option<T>, T>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L1173)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L1214)
 
 Since v4.0.0

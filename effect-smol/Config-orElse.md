@@ -35,6 +35,6 @@ const hostConfig = Config.string("HOST").pipe(
 declare const orElse: { <A2>(that: (error: ConfigError) => Config<A2>): <A>(self: Config<A>) => Config<A2 | A>; <A, A2>(self: Config<A>, that: (error: ConfigError) => Config<A2>): Config<A | A2>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Config.ts#L316)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Config.ts#L314)
 
 Since v4.0.0

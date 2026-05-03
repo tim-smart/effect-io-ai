@@ -17,9 +17,9 @@ console.log(Duration.toDays(Duration.weeks(1))) // 7
 **Signature**
 
 ```ts
-declare const toDays: (self: Duration) => number
+declare const toDays: (self: Input) => number
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Duration.ts#L757)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Duration.ts#L769)
 
 Since v3.8.0

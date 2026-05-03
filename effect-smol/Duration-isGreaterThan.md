@@ -20,6 +20,6 @@ console.log(isGreater) // true
 declare const isGreaterThan: { (that: Duration): (self: Duration) => boolean; (self: Duration, that: Duration): boolean; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Duration.ts#L1396)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Duration.ts#L1410)
 
 Since v2.0.0

@@ -36,6 +36,6 @@ Effect.runSync(
 declare const redacted: (name?: string) => Config<Redacted<string>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Config.ts#L1169)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Config.ts#L1161)
 
 Since v4.0.0

@@ -38,6 +38,6 @@ Effect.runSync(
 declare const logLevel: (name?: string) => Config<LogLevel_.LogLevel>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Config.ts#L1134)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Config.ts#L1126)
 
 Since v4.0.0

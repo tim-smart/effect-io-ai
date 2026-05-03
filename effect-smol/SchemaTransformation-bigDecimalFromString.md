@@ -20,6 +20,6 @@ Behavior:
 declare const bigDecimalFromString: Transformation<BigDecimal.BigDecimal, string, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L1272)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L1313)
 
 Since v4.0.0

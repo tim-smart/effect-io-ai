@@ -17,6 +17,6 @@ protect sensitive information.
 declare const toJson: (input: unknown) => unknown
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Inspectable.ts#L154)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Inspectable.ts#L153)
 
 Since v2.0.0

@@ -11,6 +11,6 @@ Returns an identity `Iso` over the schema's focus (`Iso`) side.
 declare const toIsoFocus: <S extends Top>(_: S) => Optic_.Iso<S["Iso"], S["Iso"]>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L11615)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L11644)
 
 Since v4.0.0

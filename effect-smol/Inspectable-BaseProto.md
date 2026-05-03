@@ -35,6 +35,6 @@ MyClass.prototype.constructor = MyClass
 declare const BaseProto: Inspectable
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Inspectable.ts#L232)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Inspectable.ts#L212)
 
 Since v2.0.0

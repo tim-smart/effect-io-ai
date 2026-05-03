@@ -35,6 +35,6 @@ See also:
 declare const stringFromUriComponent: Transformation<string, string, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L1441)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L1482)
 
 Since v4.0.0

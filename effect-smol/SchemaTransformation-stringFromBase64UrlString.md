@@ -32,6 +32,6 @@ See also:
 declare const stringFromBase64UrlString: Transformation<string, string, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L1376)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L1417)
 
 Since v4.0.0

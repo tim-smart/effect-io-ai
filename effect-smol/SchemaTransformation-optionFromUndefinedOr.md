@@ -37,6 +37,6 @@ See also:
 declare const optionFromUndefinedOr: <T>() => Transformation<Option.Option<T>, T | undefined>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L1087)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L1128)
 
 Since v4.0.0

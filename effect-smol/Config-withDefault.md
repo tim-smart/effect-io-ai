@@ -36,6 +36,6 @@ const provider = ConfigProvider.fromUnknown({})
 declare const withDefault: { <const A2>(defaultValue: A2): <A>(self: Config<A>) => Config<A2 | A>; <A, const A2>(self: Config<A>, defaultValue: A2): Config<A | A2>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Config.ts#L427)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Config.ts#L425)
 
 Since v4.0.0

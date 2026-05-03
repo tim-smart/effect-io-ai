@@ -20,6 +20,6 @@ console.log(Duration.toSeconds(shorter)) // 3
 declare const min: { (that: Duration): (self: Duration) => Duration; (self: Duration, that: Duration): Duration; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Duration.ts#L1095)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Duration.ts#L1109)
 
 Since v2.0.0

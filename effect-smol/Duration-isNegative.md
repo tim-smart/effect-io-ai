@@ -21,6 +21,6 @@ console.log(Duration.isNegative(Duration.negativeInfinity)) // true
 declare const isNegative: (self: Duration) => boolean
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Duration.ts#L388)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Duration.ts#L400)
 
 Since v4.0.0
