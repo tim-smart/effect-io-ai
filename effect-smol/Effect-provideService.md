@@ -53,6 +53,6 @@ Effect.runPromise(program).then(console.log)
 declare const provideService: { <I, S>(service: Context.Key<I, S>): { (implementation: S): <A, E, R>(self: Effect<A, E, R>) => Effect<A, E, Exclude<R, I>>; <A, E, R>(self: Effect<A, E, R>, implementation: S): Effect<A, E, Exclude<R, I>>; }; <I, S>(service: Context.Key<I, S>, implementation: S): <A, E, R>(self: Effect<A, E, R>) => Effect<A, E, Exclude<R, I>>; <A, E, R, I, S>(self: Effect<A, E, R>, service: Context.Key<I, S>, implementation: S): Effect<A, E, Exclude<R, I>>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L5932)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L5979)
 
 Since v2.0.0

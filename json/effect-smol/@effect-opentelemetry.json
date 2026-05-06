@@ -108,7 +108,7 @@
     "since": "1.0.0",
     "category": "Services",
     "signature": "declare class OtelLoggerProvider",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Logger.ts#L24"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Logger.ts#L25"
   },
   {
     "_tag": "Constant",
@@ -123,7 +123,23 @@
     "since": "1.0.0",
     "category": "Constructors",
     "signature": "declare const make: Effect.Effect<Logger.Logger<unknown, void>, never, OtelLoggerProvider>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Logger.ts#L33"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Logger.ts#L64"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Logger.ts",
+      "path": "src/Logger.ts"
+    },
+    "project": "@effect/opentelemetry",
+    "name": "logLevelToSeverityNumber",
+    "description": "Maps an Effect `LogLevel` to the corresponding OpenTelemetry\n`SeverityNumber` (per the OTel logs data model, severity range 1-24).\n\nEffect's `LogLevel.getOrdinal` returns Effect's internal sort ordinal\n(e.g. Info=20000), which falls outside the OTel spec — backends that\nvalidate the field map such values to `UNSPECIFIED`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Conversions",
+    "signature": "declare const logLevelToSeverityNumber: (level: LogLevel.LogLevel) => SeverityNumber",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Logger.ts#L41"
   },
   {
     "_tag": "Function",
@@ -138,7 +154,7 @@
     "since": "1.0.0",
     "category": "Layers",
     "signature": "declare const layer: (options: { readonly mergeWithExisting?: boolean | undefined; }) => Layer.Layer<never, never, OtelLoggerProvider>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Logger.ts#L79"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Logger.ts#L110"
   },
   {
     "_tag": "Function",
@@ -153,7 +169,7 @@
     "since": "1.0.0",
     "category": "Layers",
     "signature": "declare const layerLoggerProvider: (processor: Otel.LogRecordProcessor | NonEmptyReadonlyArray<Otel.LogRecordProcessor>, config?: Omit<Otel.LoggerProviderConfig, \"resource\"> & { readonly shutdownTimeout?: Duration.Input | undefined; }) => Layer.Layer<OtelLoggerProvider, never, Resource>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Logger.ts#L99"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Logger.ts#L130"
   },
   {
     "_tag": "Function",
