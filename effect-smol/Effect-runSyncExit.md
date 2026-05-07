@@ -78,6 +78,6 @@ console.log(Effect.runSyncExit(Effect.promise(() => Promise.resolve(1))))
 declare const runSyncExit: <A, E>(effect: Effect<A, E>) => Exit.Exit<A, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L8813)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L8854)
 
 Since v2.0.0

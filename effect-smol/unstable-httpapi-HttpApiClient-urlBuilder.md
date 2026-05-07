@@ -35,6 +35,6 @@ buildUrl.users.getUser({
 declare const urlBuilder: <Api extends HttpApi.Any>(api: Api, options?: { readonly baseUrl?: URL | string | undefined; }) => UrlBuilder<Api>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiClient.ts#L528)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiClient.ts#L529)
 
 Since v4.0.0

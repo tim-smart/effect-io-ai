@@ -16,7 +16,7 @@ export interface Handlers<
     _Endpoints: Covariant<Endpoints>
   }
   readonly group: HttpApiGroup.AnyWithProps
-  readonly handlers: Set<Handlers.Item<R>>
+  readonly handlers: Map<string, Handlers.Item<R>>
 
   /**
    * Add the implementation for an `HttpApiEndpoint` to a `Handlers` group.
@@ -59,6 +59,6 @@ export interface Handlers<
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiBuilder.ts#L157)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiBuilder.ts#L162)
 
 Since v4.0.0
