@@ -37,6 +37,6 @@ Option.getOrThrow(Option.none())
 declare const getOrThrow: <A>(self: Option<A>) => A
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L1163)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L1170)
 
 Since v2.0.0

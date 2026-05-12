@@ -30,6 +30,6 @@ const greetWithHandler = greet.pipe(
 declare const withHandler: { <A, R, E>(handler: (value: A) => Effect.Effect<void, E, R>): <Name extends string, XR, XE, ContextInput>(self: Command<Name, A, ContextInput, XE, XR>) => Command<Name, A, ContextInput, E, Exclude<R, GlobalFlag.BuiltInSettingContext>>; <Name extends string, A, XR, XE, R, E, ContextInput>(self: Command<Name, A, ContextInput, XE, XR>, handler: (value: A) => Effect.Effect<void, E, R>): Command<Name, A, ContextInput, E, Exclude<R, GlobalFlag.BuiltInSettingContext>>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Command.ts#L486)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Command.ts#L505)
 
 Since v4.0.0

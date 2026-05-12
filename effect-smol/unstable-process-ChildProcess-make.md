@@ -34,6 +34,6 @@ const cmd3 = ChildProcess.make("git", ["status"])
 declare const make: { (command: string, options?: CommandOptions): StandardCommand; (command: string, args: ReadonlyArray<string>, options?: CommandOptions): StandardCommand; (options: CommandOptions): (templates: TemplateStringsArray, ...expressions: ReadonlyArray<TemplateExpression>) => StandardCommand; (templates: TemplateStringsArray, ...expressions: ReadonlyArray<TemplateExpression>): StandardCommand; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ChildProcess.ts#L597)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ChildProcess.ts#L594)
 
 Since v4.0.0

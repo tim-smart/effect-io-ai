@@ -47,6 +47,6 @@ console.log(Option.andThen(Option.none(), (x) => Option.some(x * 2)))
 declare const andThen: { <A, B>(f: (a: A) => Option<B>): (self: Option<A>) => Option<B>; <B>(f: Option<B>): <A>(self: Option<A>) => Option<B>; <A, B>(f: (a: A) => B): (self: Option<A>) => Option<B>; <B>(f: NotFunction<B>): <A>(self: Option<A>) => Option<B>; <A, B>(self: Option<A>, f: (a: A) => Option<B>): Option<B>; <A, B>(self: Option<A>, f: Option<B>): Option<B>; <A, B>(self: Option<A>, f: (a: A) => B): Option<B>; <A, B>(self: Option<A>, f: NotFunction<B>): Option<B>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L1392)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L1399)
 
 Since v2.0.0

@@ -29,7 +29,7 @@ const plan = ExecutionPlan.make(
   { provide: Service.Good }
 )
 
-const stream = Stream.unwrap(Effect.map(Service.asEffect(), (_) => _.stream))
+const stream = Stream.unwrap(Effect.map(Service, (_) => _.stream))
 
 const program = Effect.gen(function*() {
   const items = yield* stream.pipe(Stream.withExecutionPlan(plan), Stream.runCollect)

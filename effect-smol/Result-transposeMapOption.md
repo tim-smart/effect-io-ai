@@ -37,6 +37,6 @@ console.log(Result.transposeMapOption(Option.none(), parse))
 declare const transposeMapOption: (<A, B, E = never>(f: (self: A) => Result<B, E>) => (self: Option<A>) => Result<Option<B>, E>) & (<A, B, E = never>(self: Option<A>, f: (self: A) => Result<B, E>) => Result<Option<B>, E>)
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L1635)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L1646)
 
 Since v3.15.0

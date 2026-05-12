@@ -12,7 +12,6 @@ Represents the absence of a value within an `Option`.
 **Behavior**
 
 - `_tag` is always `"None"`
-- Yieldable in `Effect.gen` — yields `NoSuchElementError`
 - Implements `Pipeable`, `Inspectable`, and structural equality
 
 **See**
@@ -23,19 +22,20 @@ Represents the absence of a value within an `Option`.
 **Signature**
 
 ```ts
-export interface None<out A> extends Pipeable, Inspectable, Yieldable<Option<A>, A, NoSuchElementError> {
+export interface None<out A> extends Pipeable, Inspectable {
   readonly _tag: "None"
   readonly _op: "None"
   readonly valueOrUndefined: undefined
   readonly [TypeId]: {
     readonly _A: Covariant<A>
   }
+  [Symbol.iterator](): OptionIterator<Option<A>>
   [Unify.typeSymbol]?: unknown
   [Unify.unifySymbol]?: OptionUnify<this>
   [Unify.ignoreSymbol]?: OptionUnifyIgnore
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L156)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L153)
 
 Since v2.0.0

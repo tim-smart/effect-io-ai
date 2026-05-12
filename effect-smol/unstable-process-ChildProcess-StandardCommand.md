@@ -9,9 +9,7 @@ A standard command with pre-parsed command and arguments.
 
 ```ts
 export interface StandardCommand extends
-  Pipeable,
-  Effect.Yieldable<
-    StandardCommand,
+  Effect.Effect<
     ChildProcessHandle,
     PlatformError.PlatformError,
     ChildProcessSpawner | Scope.Scope

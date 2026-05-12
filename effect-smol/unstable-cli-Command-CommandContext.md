@@ -47,6 +47,6 @@ export interface CommandContext<Name extends string> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Command.ts#L348)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Command.ts#L367)
 
 Since v4.0.0

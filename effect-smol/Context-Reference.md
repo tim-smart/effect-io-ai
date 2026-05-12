@@ -39,6 +39,6 @@ const customLogger = Context.get(customContext, LoggerRef)
 declare const Reference: <Service>(key: string, options: { readonly defaultValue: () => Service; }) => Reference<Service>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Context.ts#L1023)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Context.ts#L1022)
 
 Since v4.0.0

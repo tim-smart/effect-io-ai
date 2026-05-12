@@ -33,6 +33,6 @@ Effect.runPromise(program)
 declare const whileLoop: <A, E, R>(options: { readonly while: LazyArg<boolean>; readonly body: LazyArg<Effect<A, E, R>>; readonly step: (a: A) => void; }) => Effect<void, E, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L1022)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L956)
 
 Since v2.0.0

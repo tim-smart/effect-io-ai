@@ -36,6 +36,6 @@ const failure = Effect.fail(
 declare const fail: <E>(error: E) => Effect<never, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L1635)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L1569)
 
 Since v2.0.0

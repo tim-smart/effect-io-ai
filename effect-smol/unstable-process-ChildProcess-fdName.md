@@ -11,6 +11,6 @@ Create an fd name from its numeric index.
 declare const fdName: (fd: number) => string
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ChildProcess.ts#L852)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ChildProcess.ts#L849)
 
 Since v4.0.0

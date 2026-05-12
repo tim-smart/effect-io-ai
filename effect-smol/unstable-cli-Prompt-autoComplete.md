@@ -26,6 +26,6 @@ const language = Prompt.autoComplete({
 declare const autoComplete: <const A>(options: AutoCompleteOptions<A>) => Prompt<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L960)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L957)
 
 Since v4.0.0

@@ -41,6 +41,6 @@ console.log(result)
 type Option<A> = None<A> | Some<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L135)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L133)
 
 Since v2.0.0

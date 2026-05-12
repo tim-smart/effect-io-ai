@@ -31,7 +31,7 @@ if (Result.isFailure(failure)) {
 **Signature**
 
 ```ts
-export interface Failure<out A, out E> extends Pipeable, Inspectable, Yieldable<Result<A, E>, A, E> {
+export interface Failure<out A, out E> extends Pipeable, Inspectable {
   readonly _tag: "Failure"
   readonly _op: "Failure"
   readonly failure: E
@@ -39,12 +39,13 @@ export interface Failure<out A, out E> extends Pipeable, Inspectable, Yieldable<
     readonly _A: Covariant<E>
     readonly _E: Covariant<A>
   }
+  [Symbol.iterator](): ResultIterator<Result<A, E>>
   [Unify.typeSymbol]?: unknown
   [Unify.unifySymbol]?: ResultUnify<this>
   [Unify.ignoreSymbol]?: ResultUnifyIgnore
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L157)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L156)
 
 Since v4.0.0

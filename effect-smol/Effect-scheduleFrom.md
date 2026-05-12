@@ -45,6 +45,6 @@ Effect.runPromise(program).then(console.log)
 declare const scheduleFrom: { <Input, Output, Error, Env>(initial: Input, schedule: Schedule<Output, Input, Error, Env>): <E, R>(self: Effect<Input, E, R>) => Effect<Output, E, R | Env>; <Input, E, R, Output, Error, Env>(self: Effect<Input, E, R>, initial: Input, schedule: Schedule<Output, Input, Error, Env>): Effect<Output, E, R | Env>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L7501)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L7410)
 
 Since v2.0.0

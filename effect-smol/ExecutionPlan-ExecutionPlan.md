@@ -66,10 +66,9 @@ export interface ExecutionPlan<
   }>
 
   /**
-   * Returns an equivalent `ExecutionPlan` with the requirements satisfied,
-   * using the current context.
+   * Returns an equivalent `ExecutionPlan` with the requirements satisfied, using the current context.
    */
-  readonly withRequirements: Effect.Effect<
+  readonly captureRequirements: Effect.Effect<
     ExecutionPlan<{
       provides: Config["provides"]
       input: Config["input"]

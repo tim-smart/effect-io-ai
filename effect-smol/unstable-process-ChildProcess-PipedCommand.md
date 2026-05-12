@@ -10,9 +10,7 @@ next.
 
 ```ts
 export interface PipedCommand extends
-  Pipeable,
-  Effect.Yieldable<
-    PipedCommand,
+  Effect.Effect<
     ChildProcessHandle,
     PlatformError.PlatformError,
     ChildProcessSpawner | Scope.Scope
@@ -25,6 +23,6 @@ export interface PipedCommand extends
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ChildProcess.ts#L98)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ChildProcess.ts#L96)
 
 Since v4.0.0

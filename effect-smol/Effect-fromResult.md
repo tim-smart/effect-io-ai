@@ -27,6 +27,6 @@ Effect.runPromiseExit(effect2).then(console.log)
 declare const fromResult: <A, E>(result: Result.Result<A, E>) => Effect<A, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L1912)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L1846)
 
 Since v4.0.0

@@ -22,6 +22,6 @@ type Encoding = | "ascii"
   | "hex"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ChildProcess.ts#L250)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ChildProcess.ts#L246)
 
 Since v4.0.0

@@ -20,6 +20,6 @@ assert.strictEqual(Context.isContext(Context.empty()), true)
 declare const isContext: (u: unknown) => u is Context<never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Context.ts#L430)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Context.ts#L429)
 
 Since v4.0.0

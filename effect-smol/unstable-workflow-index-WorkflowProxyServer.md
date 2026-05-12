@@ -11,6 +11,6 @@ Re-exports all named exports from the "./WorkflowProxyServer.ts" module as `Work
 export * as WorkflowProxyServer from "./WorkflowProxyServer.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L40)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L45)
 
 Since v4.0.0

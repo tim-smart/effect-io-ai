@@ -31,6 +31,6 @@ const validEffect = satisfiesNumber(Effect.succeed(42))
 declare const satisfiesSuccessType: <A>() => <A2 extends A, E, R>(effect: Effect<A2, E, R>) => Effect<A2, E, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L14422)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L14331)
 
 Since v4.0.0

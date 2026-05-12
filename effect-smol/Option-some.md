@@ -38,6 +38,6 @@ console.log(value)
 declare const some: <A>(value: A) => Option<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L336)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L343)
 
 Since v2.0.0

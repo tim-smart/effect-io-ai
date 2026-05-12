@@ -12,6 +12,6 @@ the immutable variant.
 declare const MutableJson: Codec<MutableJson, MutableJson, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L11849)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L11851)
 
 Since v4.0.0

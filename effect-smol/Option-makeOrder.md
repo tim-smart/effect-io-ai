@@ -39,6 +39,6 @@ console.log(ord(Option.some(1), Option.some(2)))
 declare const makeOrder: <A>(O: Order<A>) => Order<Option<A>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L2134)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L2141)
 
 Since v2.0.0

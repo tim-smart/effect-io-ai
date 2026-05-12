@@ -14,6 +14,6 @@ Specifies which input to pipe to on the destination subprocess.
 type PipeToOption = "stdin" | `fd${number}`
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ChildProcess.ts#L135)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ChildProcess.ts#L131)
 
 Since v4.0.0

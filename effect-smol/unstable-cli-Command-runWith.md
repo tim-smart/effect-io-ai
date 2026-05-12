@@ -45,6 +45,6 @@ const testProgram = Effect.gen(function*() {
 declare const runWith: <const Name extends string, Input, E, R, ContextInput>(command: Command<Name, Input, ContextInput, E, R>, config: { readonly version: string; }) => (input: ReadonlyArray<string>) => Effect.Effect<void, Exclude<E, Terminal.QuitError> | CliError.CliError, R | Environment>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Command.ts#L1321)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Command.ts#L1340)
 
 Since v4.0.0

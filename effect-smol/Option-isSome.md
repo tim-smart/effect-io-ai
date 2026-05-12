@@ -35,6 +35,6 @@ console.log(Option.isSome(Option.none()))
 declare const isSome: <A>(self: Option<A>) => self is Some<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L432)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L439)
 
 Since v2.0.0

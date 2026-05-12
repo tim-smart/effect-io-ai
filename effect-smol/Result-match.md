@@ -38,6 +38,6 @@ console.log(format(Result.fail("timeout")))
 declare const match: { <E, B, A, C = B>(options: { readonly onFailure: (error: E) => B; readonly onSuccess: (ok: A) => C; }): (self: Result<A, E>) => B | C; <A, E, B, C = B>(self: Result<A, E>, options: { readonly onFailure: (error: E) => B; readonly onSuccess: (ok: A) => C; }): B | C; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L843)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L854)
 
 Since v4.0.0

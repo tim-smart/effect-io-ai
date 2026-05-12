@@ -38,6 +38,6 @@ const program = checkProviderAndGenerate.pipe(
 declare const make: <const Provider extends string, const Name extends string, Provides, Requires>(provider: Provider, modelName: Name, layer: Layer.Layer<Provides, never, Requires>) => Model<Provider, Provides, Requires>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Model.ts#L155)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Model.ts#L158)
 
 Since v4.0.0

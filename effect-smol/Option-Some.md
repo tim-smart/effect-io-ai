@@ -14,7 +14,6 @@ Represents the presence of a value within an `Option`.
 
 - `_tag` is always `"Some"`
 - `.value` holds the contained value of type `A`
-- Yieldable in `Effect.gen` — yields the inner value
 - Implements `Pipeable`, `Inspectable`, and structural equality
 
 **See**
@@ -25,7 +24,7 @@ Represents the presence of a value within an `Option`.
 **Signature**
 
 ```ts
-export interface Some<out A> extends Pipeable, Inspectable, Yieldable<Option<A>, A, NoSuchElementError> {
+export interface Some<out A> extends Pipeable, Inspectable {
   readonly _tag: "Some"
   readonly _op: "Some"
   readonly value: A
@@ -33,13 +32,13 @@ export interface Some<out A> extends Pipeable, Inspectable, Yieldable<Option<A>,
   readonly [TypeId]: {
     readonly _A: Covariant<A>
   }
-  [Symbol.iterator](): EffectIterator<Option<A>>
+  [Symbol.iterator](): OptionIterator<Option<A>>
   [Unify.typeSymbol]?: unknown
   [Unify.unifySymbol]?: OptionUnify<this>
   [Unify.ignoreSymbol]?: OptionUnifyIgnore
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L189)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L196)
 
 Since v2.0.0

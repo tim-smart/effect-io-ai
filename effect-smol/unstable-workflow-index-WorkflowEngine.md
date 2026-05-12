@@ -11,6 +11,6 @@ Re-exports all named exports from the "./WorkflowEngine.ts" module as `WorkflowE
 export * as WorkflowEngine from "./WorkflowEngine.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L30)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L35)
 
 Since v4.0.0

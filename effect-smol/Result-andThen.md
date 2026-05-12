@@ -47,6 +47,6 @@ console.log(a, b, c)
 declare const andThen: { <A, A2, E2>(f: (a: A) => Result<A2, E2>): <E>(self: Result<A, E>) => Result<A2, E | E2>; <A2, E2>(f: Result<A2, E2>): <A, E>(self: Result<A, E>) => Result<A2, E | E2>; <A, A2>(f: (a: A) => A2): <E>(self: Result<A, E>) => Result<A2, E>; <A2>(right: NotFunction<A2>): <A, E>(self: Result<A, E>) => Result<A2, E>; <A, E, A2, E2>(self: Result<A, E>, f: (a: A) => Result<A2, E2>): Result<A2, E | E2>; <A, E, A2, E2>(self: Result<A, E>, f: Result<A2, E2>): Result<A2, E | E2>; <A, E, A2>(self: Result<A, E>, f: (a: A) => A2): Result<A2, E>; <A, E, A2>(self: Result<A, E>, f: NotFunction<A2>): Result<A2, E>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L1264)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L1275)
 
 Since v4.0.0

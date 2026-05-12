@@ -26,6 +26,6 @@ When to use:
 declare class ConfigError { constructor(cause: SourceError | Schema.SchemaError) }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Config.ts#L132)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Config.ts#L131)
 
 Since v4.0.0

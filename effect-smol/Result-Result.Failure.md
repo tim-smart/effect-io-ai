@@ -11,6 +11,6 @@ Extracts the failure type `E` from `Result<A, E>`.
 type Failure<T> = [T] extends [Result<infer _A, infer _E>] ? _E : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L276)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L287)
 
 Since v4.0.0

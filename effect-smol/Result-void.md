@@ -29,6 +29,6 @@ console.log(Result.isSuccess(result))
 declare const void: Result<void, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L374)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L385)
 
 Since v4.0.0

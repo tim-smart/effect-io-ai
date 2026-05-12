@@ -16,20 +16,23 @@ want to use a Model from within an Effect service.
 
 ```ts
 export interface Model<in out Provider, in out Provides, in out Requires>
-  extends
-    Layer.Layer<Provides | ProviderName | ModelName, never, Requires>,
-    Effect.Yieldable<
-      Model<Provider, Provides, Requires>,
-      Layer.Layer<Provides | ProviderName | ModelName>,
-      never,
-      Requires
-    >
+  extends Layer.Layer<Provides | ProviderName | ModelName, never, Requires>
 {
   readonly [TypeId]: typeof TypeId
+
   /**
    * The provider identifier (e.g., "openai", "anthropic", "amazon-bedrock").
    */
   readonly provider: Provider
+
+  /**
+   * Returns a `Layer` with the requirements satisfied, using the current context.
+   */
+  readonly captureRequirements: Effect.Effect<
+    Layer.Layer<Provides | ProviderName | ModelName>,
+    never,
+    Requires
+  >
 }
 ```
 

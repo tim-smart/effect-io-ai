@@ -18,6 +18,6 @@ A pre-built `Result<void>` holding `undefined` as its failure value.
 declare const failVoid: Result<never, void>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L388)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L399)
 
 Since v4.0.0

@@ -11,6 +11,6 @@ Represents the services available to a custom `Prompt`.
 type Environment = FileSystem.FileSystem | Path.Path | Terminal.Terminal
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L50)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L47)
 
 Since v4.0.0

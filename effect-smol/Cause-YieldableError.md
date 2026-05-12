@@ -5,7 +5,7 @@ Module: `Cause`<br />
 
 Base interface for error classes that can be yielded directly inside
 `Effect.gen` (via `Symbol.iterator`) or converted to a failing Effect
-via `.asEffect()`.
+via ``.
 
 All built-in error classes in this module (`NoSuchElementError`,
 `TimeoutError`, `IllegalArgumentError`,
@@ -27,9 +27,9 @@ const program = Effect.gen(function*() {
 **Signature**
 
 ```ts
-export interface YieldableError extends Error, Pipeable {
-  [Symbol.iterator](): Effect.EffectIterator<this>
-  asEffect(): Effect.Effect<never, this, never>
+export interface YieldableError extends Error, Pipeable, Inspectable {
+  readonly [Effect.TypeId]: Effect.Variance<never, this, never>
+  [Symbol.iterator](): Effect.EffectIterator<Effect.Effect<never, this, never>>
 }
 ```
 

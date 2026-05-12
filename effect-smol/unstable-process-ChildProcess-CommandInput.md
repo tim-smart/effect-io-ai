@@ -15,6 +15,6 @@ type CommandInput = | "pipe"
   | Stream.Stream<Uint8Array, PlatformError.PlatformError>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ChildProcess.ts#L179)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ChildProcess.ts#L175)
 
 Since v4.0.0

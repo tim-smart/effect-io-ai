@@ -22,10 +22,10 @@ Effect.gen(function*() {
   const run = yield* FiberHandle.runtime(handle)<Users>()
 
   // run an effect and set the fiber in the handle
-  run(Effect.andThen(Users.asEffect(), (_) => _.getAll))
+  run(Effect.andThen(Users, (_) => _.getAll))
 
   // this will interrupt the previous fiber
-  run(Effect.andThen(Users.asEffect(), (_) => _.getAll))
+  run(Effect.andThen(Users, (_) => _.getAll))
 }).pipe(
   Effect.scoped // The fiber will be interrupted when the scope is closed
 )

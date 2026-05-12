@@ -49,6 +49,6 @@ console.log(Effect.runSync(program))
 declare const firstSuccessOf: <Eff extends Effect<any, any, any>>(effects: Iterable<Eff>) => Effect<Success<Eff>, Error<Eff>, Services<Eff>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L4397)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L4306)
 
 Since v2.0.0

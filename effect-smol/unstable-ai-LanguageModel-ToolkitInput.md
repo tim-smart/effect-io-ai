@@ -14,14 +14,13 @@ distributive helper used for extraction and inference.
 ```ts
 type ToolkitInput<Tools, E, R> = | ToolkitOption<Tools, E, R>
   | Toolkit.WithHandler<Tools>
-  | Effect.Yieldable<
-    Toolkit.Toolkit<Tools>,
+  | Effect.Effect<
     Toolkit.WithHandler<Tools>,
     E,
     R
   >
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/LanguageModel.ts#L550)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/LanguageModel.ts#L549)
 
 Since v4.0.0

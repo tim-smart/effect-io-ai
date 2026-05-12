@@ -11,6 +11,6 @@ Check if a command is a `PipedCommand`.
 declare const isPipedCommand: (command: Command) => command is PipedCommand
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ChildProcess.ts#L543)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ChildProcess.ts#L540)
 
 Since v4.0.0

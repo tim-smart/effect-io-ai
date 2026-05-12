@@ -38,6 +38,6 @@ console.log(Result.isFailure(err))
 declare const try: { <A, E>(options: { readonly try: LazyArg<A>; readonly catch: (error: unknown) => E; }): Result<A, E>; <A>(evaluate: LazyArg<A>): Result<A, unknown>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L518)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L529)
 
 Since v4.0.0

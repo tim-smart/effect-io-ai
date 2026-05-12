@@ -20,6 +20,6 @@ assert.strictEqual(Context.isContext(Context.empty()), true)
 declare const empty: () => Context<never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Context.ts#L483)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Context.ts#L482)
 
 Since v4.0.0

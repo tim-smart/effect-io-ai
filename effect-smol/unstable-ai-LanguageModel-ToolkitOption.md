@@ -10,8 +10,7 @@ The supported toolkit option shapes for language model operations.
 ```ts
 type ToolkitOption<Tools, E, R> = Tools extends any ? (
     | Toolkit.WithHandler<Tools>
-    | Effect.Yieldable<
-      Toolkit.Toolkit<Tools>,
+    | Effect.Effect<
       Toolkit.WithHandler<Tools>,
       E,
       R

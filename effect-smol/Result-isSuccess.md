@@ -32,6 +32,6 @@ if (Result.isSuccess(result)) {
 declare const isSuccess: <A, E>(self: Result<A, E>) => self is Success<A, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L599)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L610)
 
 Since v4.0.0

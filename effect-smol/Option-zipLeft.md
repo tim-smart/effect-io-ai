@@ -37,6 +37,6 @@ console.log(Option.zipLeft(Option.some("hello"), Option.none()))
 declare const zipLeft: { <_>(that: Option<_>): <A>(self: Option<A>) => Option<A>; <A, X>(self: Option<A>, that: Option<X>): Option<A>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L1557)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L1564)
 
 Since v2.0.0

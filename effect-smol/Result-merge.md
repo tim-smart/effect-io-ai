@@ -33,6 +33,6 @@ console.log(Result.merge(Result.fail("error")))
 declare const merge: <A, E>(self: Result<A, E>) => E | A
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L991)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L1002)
 
 Since v4.0.0

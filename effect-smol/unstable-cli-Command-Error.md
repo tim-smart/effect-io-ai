@@ -18,6 +18,6 @@ type Error<C> = C extends Command<
   never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Command.ts#L301)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Command.ts#L320)
 
 Since v4.0.0

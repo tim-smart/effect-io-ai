@@ -24,6 +24,6 @@ assert.deepStrictEqual(Context.get(context, Port), { PORT: 8080 })
 declare const make: <I, S>(key: Key<I, S>, service: Types.NoInfer<S>) => Context<I>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Context.ts#L504)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Context.ts#L503)
 
 Since v4.0.0

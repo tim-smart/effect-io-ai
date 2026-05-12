@@ -40,16 +40,15 @@ const program = Effect.gen(function*() {
 **Signature**
 
 ```ts
-export interface Effect<out A, out E = never, out R = never>
-  extends Pipeable, Inspectable, Yieldable<Effect<A, E, R>, A, E, R>
-{
+export interface Effect<out A, out E = never, out R = never> extends Pipeable, Inspectable {
   readonly [TypeId]: Variance<A, E, R>
+  [Symbol.iterator](): EffectIterator<Effect<A, E, R>>
   [Unify.typeSymbol]?: unknown
   [Unify.unifySymbol]?: EffectUnify<this>
   [Unify.ignoreSymbol]?: {}
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L173)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L183)
 
 Since v2.0.0

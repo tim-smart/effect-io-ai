@@ -32,6 +32,6 @@ if (Result.isFailure(result)) {
 declare const isFailure: <A, E>(self: Result<A, E>) => self is Failure<A, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L572)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L583)
 
 Since v4.0.0

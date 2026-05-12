@@ -48,17 +48,15 @@ const greet = Command.make("greet", {
 **Signature**
 
 ```ts
-export interface Command<Name extends string, Input, ContextInput = {}, E = never, R = never>
+export interface Command<in out Name extends string, in Input, out ContextInput = {}, out E = never, out R = never>
   extends
-    Pipeable,
-    Effect.Yieldable<
-      Command<Name, Input, ContextInput, E, R>,
+    Effect.Effect<
       ContextInput,
       never,
       CommandContext<Name>
     >
 {
-  readonly [TypeId]: typeof TypeId
+  readonly [TypeId]: Command.Variance<Input, E, R>
 
   /**
    * The name of the command.
@@ -100,6 +98,6 @@ export interface Command<Name extends string, Input, ContextInput = {}, E = neve
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Command.ts#L80)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Command.ts#L79)
 
 Since v4.0.0

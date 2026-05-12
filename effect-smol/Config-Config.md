@@ -20,12 +20,12 @@ Key members:
 **Signature**
 
 ```ts
-export interface Config<out T> extends Pipeable, Effect.Yieldable<Config<T>, T, ConfigError> {
+export interface Config<out T> extends Effect.Effect<T, ConfigError> {
   readonly [TypeId]: typeof TypeId
   readonly parse: (provider: ConfigProvider.ConfigProvider) => Effect.Effect<T, ConfigError>
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Config.ts#L162)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Config.ts#L161)
 
 Since v4.0.0

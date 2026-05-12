@@ -25,13 +25,13 @@ Effect.runPromise(program).then(console.log) // 84
 **Signature**
 
 ```ts
-export interface EffectIterator<T extends Yieldable<any, any, any, any>> {
+export interface EffectIterator<T extends Effect<any, any, any>> {
   next(
     ...args: ReadonlyArray<any>
-  ): IteratorResult<T, Yieldable.Success<T>>
+  ): IteratorResult<T, Success<T>>
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L387)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L321)
 
 Since v2.0.0

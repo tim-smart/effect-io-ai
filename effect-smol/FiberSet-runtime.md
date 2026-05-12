@@ -22,7 +22,7 @@ Effect.gen(function*() {
   const run = yield* FiberSet.runtime(set)<Users>()
 
   // run some effects and add the fibers to the set
-  run(Effect.andThen(Users.asEffect(), (_) => _.getAll))
+  run(Effect.andThen(Users, (_) => _.getAll))
 }).pipe(
   Effect.scoped // The fibers will be interrupted when the scope is closed
 )

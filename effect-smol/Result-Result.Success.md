@@ -11,6 +11,6 @@ Extracts the success type `A` from `Result<A, E>`.
 type Success<T> = [T] extends [Result<infer _A, infer _E>] ? _A : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L283)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L294)
 
 Since v4.0.0

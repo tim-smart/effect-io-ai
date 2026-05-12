@@ -38,6 +38,6 @@ console.log(result)
 declare const mapBoth: { <E, E2, A, A2>(options: { readonly onFailure: (left: E) => E2; readonly onSuccess: (right: A) => A2; }): (self: Result<A, E>) => Result<A2, E2>; <E, A, E2, A2>(self: Result<A, E>, options: { readonly onFailure: (left: E) => E2; readonly onSuccess: (right: A) => A2; }): Result<A2, E2>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L723)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L734)
 
 Since v4.0.0

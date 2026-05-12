@@ -27,6 +27,6 @@ const prefixed = command.pipe(
 declare const prefix: { (command: string, args?: ReadonlyArray<string>): (self: Command) => Command; (templates: TemplateStringsArray, ...expressions: ReadonlyArray<TemplateExpression>): (self: Command) => Command; (self: Command, command: string, args?: ReadonlyArray<string>): Command; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ChildProcess.ts#L710)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ChildProcess.ts#L707)
 
 Since v4.0.0

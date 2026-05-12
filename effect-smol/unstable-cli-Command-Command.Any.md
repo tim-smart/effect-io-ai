@@ -8,9 +8,21 @@ Represents any Command regardless of its type parameters.
 **Signature**
 
 ```ts
-type Any = Command<string, unknown, unknown, unknown, unknown>
+export interface Any extends Effect.Effect<any, never, any> {
+    readonly [TypeId]: any
+    readonly name: string
+    readonly description: string | undefined
+    readonly shortDescription: string | undefined
+    readonly alias: string | undefined
+    readonly examples: ReadonlyArray<Command.Example>
+    readonly subcommands: ReadonlyArray<{
+      readonly group: string | undefined
+      readonly commands: NonEmptyReadonlyArray<Command.Any>
+    }>
+    readonly annotations: Context.Context<never>
+  }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Command.ts#L265)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Command.ts#L272)
 
 Since v4.0.0
