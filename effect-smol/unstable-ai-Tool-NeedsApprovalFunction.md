@@ -14,6 +14,6 @@ type NeedsApprovalFunction<Params> = (
 ) => boolean | Effect.Effect<boolean>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tool.ts#L126)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tool.ts#L149)
 
-Since v1.0.0
+Since v4.0.0

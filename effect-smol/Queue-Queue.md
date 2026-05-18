@@ -13,10 +13,10 @@ This API replaces the following from Effect 3.x:
 
 - `Mailbox`
 
-**Example**
+**Example** (Offering and taking queue values)
 
 ```ts
-import { Cause, Effect, Queue } from "effect"
+import { Effect, Queue } from "effect"
 
 const program = Effect.gen(function*() {
   // Create a bounded queue
@@ -43,6 +43,6 @@ export interface Queue<in out A, in out E = never> extends Enqueue<A, E>, Dequeu
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Queue.ts#L213)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Queue.ts#L281)
 
 Since v3.8.0

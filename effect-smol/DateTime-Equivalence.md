@@ -8,7 +8,7 @@ An `Equivalence` for comparing two `DateTime` values for equality.
 Two `DateTime` values are considered equivalent if they represent the same
 point in time, regardless of their time zone.
 
-**Example**
+**Example** (Comparing DateTime values for equivalence)
 
 ```ts
 import { DateTime } from "effect"
@@ -27,6 +27,6 @@ console.log(DateTime.Equivalence(utc, zoned)) // true
 declare const Equivalence: Equ.Equivalence<DateTime>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L351)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L490)
 
 Since v3.6.0

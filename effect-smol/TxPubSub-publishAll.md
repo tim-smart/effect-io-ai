@@ -7,7 +7,7 @@ Publishes all messages from an iterable to all current subscribers.
 
 Returns `true` if all messages were delivered to all subscribers.
 
-**Example**
+**Example** (Publishing multiple messages to subscribers)
 
 ```ts
 import { Effect, TxPubSub, TxQueue } from "effect"
@@ -34,6 +34,6 @@ const program = Effect.gen(function*() {
 declare const publishAll: { <A>(values: Iterable<A>): (self: TxPubSub<A>) => Effect.Effect<boolean>; <A>(self: TxPubSub<A>, values: Iterable<A>): Effect.Effect<boolean>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxPubSub.ts#L440)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxPubSub.ts#L452)
 
 Since v4.0.0

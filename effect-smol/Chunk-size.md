@@ -5,7 +5,7 @@ Module: `Chunk`<br />
 
 Retrieves the size of the chunk.
 
-**Example**
+**Example** (Getting chunk size)
 
 ```ts
 import { Chunk } from "effect"
@@ -20,6 +20,6 @@ console.log(Chunk.size(chunk)) // 3
 declare const size: <A>(self: Chunk<A>) => number
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L1802)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L1835)
 
 Since v2.0.0

@@ -8,7 +8,7 @@ Configuration options for Mermaid diagram generation from graphs.
 Provides customization for node labels, edge labels, diagram type,
 layout direction, node shapes, and graph naming in Mermaid format.
 
-**Example**
+**Example** (Configuring Mermaid output)
 
 ```ts
 import type * as Graph from "effect/Graph"
@@ -66,6 +66,6 @@ export interface MermaidOptions<N, E> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Graph.ts#L1924)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Graph.ts#L2036)
 
 Since v4.0.0

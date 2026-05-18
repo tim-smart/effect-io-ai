@@ -12,7 +12,7 @@ This error wraps semantic error reasons and provides:
 
 Use with `Effect.catchReason` for ergonomic error handling:
 
-**Example**
+**Example** (Handling an AI error by tag)
 
 ```ts
 import { Effect } from "effect"
@@ -37,6 +37,6 @@ const handled = aiOperation.pipe(
 declare class AiError
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AiError.ts#L1392)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AiError.ts#L1455)
 
-Since v1.0.0
+Since v4.0.0

@@ -5,7 +5,7 @@ Module: `FiberSet`<br />
 
 Capture a Runtime and use it to fork Effect's, adding the forked fibers to the FiberSet.
 
-**Example**
+**Example** (Capturing a runtime)
 
 ```ts
 import { Effect, FiberSet, Context } from "effect"
@@ -34,6 +34,6 @@ Effect.gen(function*() {
 declare const runtime: <A, E>(self: FiberSet<A, E>) => <R = never>() => Effect.Effect<(<XE extends E, XA extends A>(effect: Effect.Effect<XA, XE, R>, options?: (Effect.RunOptions & { readonly propagateInterruption?: boolean | undefined; }) | undefined) => Fiber.Fiber<XA, XE>), never, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FiberSet.ts#L482)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FiberSet.ts#L542)
 
 Since v2.0.0

@@ -3,14 +3,14 @@ Module: `AnthropicTool`<br />
 
 ## AnthropicTool.ComputerUseScreenshotAction
 
-Capture the current display.
+Computer-use action payload for capturing the current display.
 
 **Signature**
 
 ```ts
-declare const ComputerUseScreenshotAction: Schema.Struct<{ readonly action: Schema.Literal<"screenshot">; }>
+type ComputerUseScreenshotAction = typeof ComputerUseScreenshotAction.Type
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L437)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L472)
 
-Since v1.0.0
+Since v4.0.0

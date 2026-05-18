@@ -3,11 +3,12 @@ Module: `SubscriptionRef`<br />
 
 ## SubscriptionRef.updateSomeAndGet
 
-Optionally updates the value of the `SubscriptionRef` with the result of
-applying a function that returns an `Option` and returns the new value,
-notifying subscribers only if the value changes.
+Applies an update function and returns the resulting current value. If the
+function returns `Option.some`, sets, publishes, and returns that value; if
+it returns `Option.none`, returns the unchanged current value without
+publishing.
 
-**Example**
+**Example** (Conditionally updating and reading the new value)
 
 ```ts
 import { Effect, Option, SubscriptionRef } from "effect"
@@ -29,6 +30,6 @@ const program = Effect.gen(function*() {
 declare const updateSomeAndGet: { <A>(update: (a: A) => Option.Option<A>): (self: SubscriptionRef<A>) => Effect.Effect<A>; <A>(self: SubscriptionRef<A>, update: (a: A) => Option.Option<A>): Effect.Effect<A>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SubscriptionRef.ts#L826)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SubscriptionRef.ts#L883)
 
 Since v2.0.0

@@ -3,29 +3,37 @@ Module: `DateTime`<br />
 
 ## DateTime.make
 
-Create a `DateTime` from one of the following:
+Creates a `DateTime` from one of the following:
 
 - A `DateTime`
-- A `Date` instance (invalid dates will throw an `IllegalArgumentError`)
-- The `number` of milliseconds since the Unix epoch
-- An object with the parts of a date
-- A `string` that can be parsed by `Date.parse`
+- A JavaScript `Date`
+- The number of milliseconds since the Unix epoch
+- An object with date and time parts
+- A string that can be parsed as a date
 
-If the input is invalid, `None` will be returned.
+Returns `Some` with the constructed `DateTime` when the input is valid, or
+`None` when construction would fail, including invalid `Date` instances or
+unparseable strings.
 
-**Example**
+**Example** (Creating optional DateTime values)
 
 ```ts
 import { DateTime } from "effect"
 
 // from Date
-DateTime.make(new Date())
+const fromDate = DateTime.make(new Date("2024-01-01T12:00:00Z"))
+console.log(fromDate._tag) // "Some"
 
 // from parts
-DateTime.make({ year: 2024 })
+const fromParts = DateTime.make({ year: 2024 })
+console.log(fromParts._tag) // "Some"
 
 // from string
-DateTime.make("2024-01-01")
+const fromString = DateTime.make("2024-01-01")
+console.log(fromString._tag) // "Some"
+
+const invalid = DateTime.make("not a date")
+console.log(invalid._tag) // "None"
 ```
 
 **Signature**
@@ -34,6 +42,6 @@ DateTime.make("2024-01-01")
 declare const make: <A extends DateTime.Input>(input: A) => Option.Option<DateTime.PreserveZone<A>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L551)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L726)
 
 Since v3.6.0

@@ -7,7 +7,7 @@ Response part representing a file attachment.
 
 Supports various file types including images, documents, and binary data.
 
-**Example**
+**Example** (Creating a file part)
 
 ```ts
 import { Response } from "effect/unstable/ai"
@@ -33,6 +33,6 @@ export interface FilePart extends BasePart<"file", FilePartMetadata> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Response.ts#L1840)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Response.ts#L1841)
 
-Since v1.0.0
+Since v4.0.0

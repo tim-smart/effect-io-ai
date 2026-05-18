@@ -5,7 +5,7 @@ Module: `Effect`<br />
 
 Logs one or more messages at the DEBUG level.
 
-**Example**
+**Example** (Usage)
 
 ```ts
 import { Effect } from "effect"
@@ -33,6 +33,6 @@ Effect.runPromise(program)
 declare const logDebug: (...message: ReadonlyArray<any>) => Effect<void>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L13140)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L13089)
 
 Since v2.0.0

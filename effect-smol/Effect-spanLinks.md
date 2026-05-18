@@ -3,13 +3,14 @@ Module: `Effect`<br />
 
 ## Effect.spanLinks
 
-Retrieves the span links associated with the current span.
+Returns the tracing span links currently carried in the effect context.
 
-Span links are connections between spans that are related but not in a
-parent-child relationship. They are useful for linking spans across different
-traces or connecting spans from parallel operations.
+**Details**
 
-**Example**
+These links are attached to spans created inside the context. Span links
+connect related spans without making one span the parent of another.
+
+**Example** (Usage)
 
 ```ts
 import { Effect } from "effect"
@@ -28,6 +29,6 @@ const program = Effect.gen(function*() {
 declare const spanLinks: Effect<ReadonlyArray<SpanLink>, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L7683)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L7599)
 
 Since v2.0.0

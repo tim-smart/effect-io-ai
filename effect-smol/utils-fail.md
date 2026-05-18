@@ -11,6 +11,6 @@ Throws an `AssertionError` with the provided error message.
 declare const fail: (message: string) => void
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/vitest/src/utils.ts#L22)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/vitest/src/utils.ts#L36)
 
 Since v4.0.0

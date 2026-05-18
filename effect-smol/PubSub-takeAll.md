@@ -6,7 +6,7 @@ Module: `PubSub`<br />
 Takes all available messages from the subscription, suspending if no items
 are available.
 
-**Example**
+**Example** (Taking all available messages)
 
 ```ts
 import { Effect, PubSub } from "effect"
@@ -14,11 +14,11 @@ import { Effect, PubSub } from "effect"
 const program = Effect.gen(function*() {
   const pubsub = yield* PubSub.bounded<string>(10)
 
-  // Publish multiple messages
-  yield* PubSub.publishAll(pubsub, ["msg1", "msg2", "msg3"])
-
   yield* Effect.scoped(Effect.gen(function*() {
     const subscription = yield* PubSub.subscribe(pubsub)
+
+    // Publish multiple messages
+    yield* PubSub.publishAll(pubsub, ["msg1", "msg2", "msg3"])
 
     // Take all available messages at once
     const allMessages = yield* PubSub.takeAll(subscription)
@@ -33,6 +33,6 @@ const program = Effect.gen(function*() {
 declare const takeAll: <A>(self: Subscription<A>) => Effect.Effect<Arr.NonEmptyArray<A>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PubSub.ts#L1088)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PubSub.ts#L1164)
 
 Since v4.0.0

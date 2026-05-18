@@ -11,7 +11,21 @@ Filters are intentionally non-parametric to keep them covariant.
 
 ```ts
 export interface Filter extends Augment {
+    /**
+     * Complete message to use when this filter or refinement fails.
+     *
+     * The default formatter checks filter annotations in this order:
+     * `message`, then `expected`, then `<filter>`.
+     */
     readonly message?: string | undefined
+    /**
+     * Stable identifier for the schema after this filter is attached.
+     *
+     * This can affect schema tooling such as JSON Schema generation and
+     * type-level failures before the filter runs, but it does not name the
+     * failed filter itself. For filter failure messages, use `expected` or
+     * `message`.
+     */
     readonly identifier?: string | undefined
     /**
      * Optional metadata used to identify or extend the filter with custom data.
@@ -31,6 +45,6 @@ export interface Filter extends Augment {
   }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L12084)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L12536)
 
 Since v4.0.0

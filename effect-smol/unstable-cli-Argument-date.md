@@ -5,7 +5,7 @@ Module: `Argument`<br />
 
 Creates a positional date argument.
 
-**Example**
+**Example** (Creating a date argument)
 
 ```ts
 import { Argument } from "effect/unstable/cli"
@@ -19,6 +19,6 @@ const startDate = Argument.date("start-date")
 declare const date: (name: string) => Argument<Date>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Argument.ts#L129)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Argument.ts#L157)
 
 Since v4.0.0

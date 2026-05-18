@@ -3,7 +3,12 @@ Module: `Schema`<br />
 
 ## Schema.$Array
 
-Companion type for a `ReadonlyArray`. Produced by `ArraySchema`.
+Schema interface produced by `Schema.Array` for readonly arrays.
+
+**Details**
+The decoded type is `ReadonlyArray<S["Type"]>`, the encoded type is
+`ReadonlyArray<S["Encoded"]>`, and the element schema is available as
+`schema`.
 
 **Signature**
 
@@ -24,6 +29,6 @@ export interface $Array<S extends Top> extends
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L3212)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L3489)
 
 Since v4.0.0

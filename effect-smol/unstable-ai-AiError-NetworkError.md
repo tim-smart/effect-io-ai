@@ -9,7 +9,7 @@ This error is raised when issues arise before receiving an HTTP response,
 such as network connectivity problems, request encoding issues, or invalid
 URLs.
 
-**Example**
+**Example** (Creating a network error)
 
 ```ts
 import { AiError } from "effect/unstable/ai"
@@ -37,6 +37,6 @@ console.log(error.message)
 declare class NetworkError
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AiError.ts#L144)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AiError.ts#L147)
 
-Since v1.0.0
+Since v4.0.0

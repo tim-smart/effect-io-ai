@@ -6,7 +6,7 @@ Module: `Iterable`<br />
 Apply a function to pairs of elements at the same index in two `Iterable`s, collecting the results. If one
 input `Iterable` is short, excess elements of the longer `Iterable` are discarded.
 
-**Example**
+**Example** (Zipping with a combining function)
 
 ```ts
 import { Iterable } from "effect"
@@ -52,6 +52,6 @@ console.log(Array.from(totals)) // [21.98, 25.5, 15]
 declare const zipWith: { <B, A, C>(that: Iterable<B>, f: (a: A, b: B) => C): (self: Iterable<A>) => Iterable<C>; <A, B, C>(self: Iterable<A>, that: Iterable<B>, f: (a: A, b: B) => C): Iterable<C>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Iterable.ts#L860)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Iterable.ts#L888)
 
 Since v2.0.0

@@ -3,34 +3,12 @@ Module: `Schedule`<br />
 
 ## Schedule.Schedule.VarianceStruct
 
-Internal structure that holds the variance annotations for Schedule type parameters.
+Type-level marker used by `Schedule.Variance` to record the variance of
+`Schedule` type parameters.
 
-**Example**
-
-```ts
-import { Effect, Schedule } from "effect"
-
-// The variance struct defines how Schedule's type parameters behave
-// This internal interface is used for type variance annotations
-
-// Example showing variance relationships:
-interface Animal {
-  name: string
-}
-interface Dog extends Animal {
-  breed: string
-}
-
-// Output is covariant - more specific types can be substituted
-const stringSchedule = Schedule.spaced("1 second").pipe(
-  Schedule.map(() => Effect.succeed("output"))
-)
-
-// Input is contravariant - more general types can be accepted
-const numberSchedule = Schedule.exponential("100 millis")
-
-// This enables proper type relationships where schedules can be composed safely
-```
+**Notes**
+This interface exists for TypeScript inference and assignability. Users
+normally do not construct or inspect it directly.
 
 **Signature**
 
@@ -43,6 +21,6 @@ export interface VarianceStruct<out Output, in Input, out Error, out Env> {
   }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L282)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L283)
 
 Since v2.0.0

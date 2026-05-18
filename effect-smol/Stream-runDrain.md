@@ -5,7 +5,7 @@ Module: `Stream`<br />
 
 Runs the stream for its effects, discarding emitted elements.
 
-**Example**
+**Example** (Draining a stream run)
 
 ```ts
 import { Console, Effect, Stream } from "effect"
@@ -30,6 +30,6 @@ Effect.runPromise(program)
 declare const runDrain: <A, E, R>(self: Stream<A, E, R>) => Effect.Effect<void, E, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L10261)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L10574)
 
 Since v2.0.0

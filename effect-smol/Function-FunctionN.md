@@ -5,7 +5,7 @@ Module: `Function`<br />
 
 Represents a function with multiple arguments.
 
-**Example**
+**Example** (Typing a variadic function)
 
 ```ts
 import type { FunctionN } from "effect/Function"
@@ -21,6 +21,6 @@ assert.deepStrictEqual(sum(2, 3), 5)
 type FunctionN<A, B> = (...args: A) => B
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Function.ts#L209)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Function.ts#L244)
 
 Since v2.0.0

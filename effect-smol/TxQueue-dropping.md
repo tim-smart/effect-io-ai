@@ -8,7 +8,7 @@ Creates a new dropping `TxQueue` with the specified capacity that drops new item
 **Return behavior**: This function returns a new TxQueue reference with
 dropping strategy. No existing TxQueue instances are modified.
 
-**Example**
+**Example** (Creating dropping queues)
 
 ```ts
 import { Effect, TxQueue } from "effect"
@@ -33,6 +33,6 @@ const program = Effect.gen(function*() {
 declare const dropping: <A = never, E = never>(capacity: number) => Effect.Effect<TxQueue<A, E>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxQueue.ts#L490)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxQueue.ts#L454)
 
 Since v4.0.0

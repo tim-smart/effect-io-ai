@@ -5,7 +5,7 @@ Module: `Metric`<br />
 
 State interface for Gauge metrics containing the current instantaneous value.
 
-**Example**
+**Example** (Reading gauge state)
 
 ```ts
 import { Data, Effect, Metric } from "effect"
@@ -74,6 +74,6 @@ export interface GaugeState<in Input extends number | bigint> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Metric.ts#L664)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Metric.ts#L618)
 
 Since v2.0.0

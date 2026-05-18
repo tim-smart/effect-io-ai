@@ -3,17 +3,17 @@ Module: `Schema`<br />
 
 ## Schema.isStringBigInt
 
-Validates that a string represents a valid BigInt (can be parsed as a BigInt).
+Validates that a string is a signed base-10 integer literal for Effect's
+BigInt string encoding.
+
+**Details**
+The check uses the pattern `^-?\d+$`. It does not accept leading `+`, decimal
+points, exponent notation, separators, or non-decimal inputs such as
+hexadecimal strings.
 
 **JSON Schema**
-
-This check corresponds to a `pattern` constraint in JSON Schema that matches
-strings representing BigInt values.
-
-**Arbitrary**
-
-When generating test data with fast-check, this applies a `patterns`
-constraint to ensure generated strings match the BigInt string pattern.
+This check corresponds to a `pattern` constraint with the same signed
+base-10 integer pattern.
 
 **Signature**
 
@@ -21,6 +21,6 @@ constraint to ensure generated strings match the BigInt string pattern.
 declare const isStringBigInt: (annotations?: Annotations.Filter) => AST.Filter<string>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L5161)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L5472)
 
 Since v4.0.0

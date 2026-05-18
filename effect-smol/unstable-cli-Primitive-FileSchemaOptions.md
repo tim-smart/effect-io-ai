@@ -16,6 +16,6 @@ type FileSchemaOptions = Struct.Simplify<
 >
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Primitive.ts#L543)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Primitive.ts#L576)
 
 Since v4.0.0

@@ -17,6 +17,6 @@ type PartConstructorParams<P> = Omit<P, typeof PartTypeId | "type" | "options"> 
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L239)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L244)
 
 Since v4.0.0

@@ -5,7 +5,7 @@ Module: `DateTime`<br />
 
 Returns the earlier of two `DateTime` values.
 
-**Example**
+**Example** (Selecting the earlier DateTime)
 
 ```ts
 import { DateTime } from "effect"
@@ -23,6 +23,6 @@ const earlier = DateTime.min(date1, date2)
 declare const min: { <That extends DateTime>(that: That): <Self extends DateTime>(self: Self) => Self | That; <Self extends DateTime, That extends DateTime>(self: Self, that: That): Self | That; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L970)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L1174)
 
 Since v3.6.0

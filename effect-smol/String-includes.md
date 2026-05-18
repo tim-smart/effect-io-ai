@@ -6,7 +6,7 @@ Module: `String`<br />
 Returns `true` if `searchString` appears as a substring of `self`, at one or more positions that are
 greater than or equal to `position`; otherwise, returns `false`.
 
-**Example**
+**Example** (Checking for substrings)
 
 ```ts
 import { pipe, String } from "effect"
@@ -22,6 +22,6 @@ assert.deepStrictEqual(pipe("hello world", String.includes("foo")), false)
 declare const includes: (searchString: string, position?: number) => (self: string) => boolean
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L432)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L458)
 
 Since v2.0.0

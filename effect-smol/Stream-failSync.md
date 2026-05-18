@@ -5,7 +5,7 @@ Module: `Stream`<br />
 
 Terminates with the specified lazily evaluated error.
 
-**Example**
+**Example** (Failing a stream lazily)
 
 ```ts
 import { Console, Effect, Stream } from "effect"
@@ -28,6 +28,6 @@ Effect.runPromise(program)
 declare const failSync: <E>(evaluate: LazyArg<E>) => Stream<never, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L928)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L983)
 
 Since v2.0.0

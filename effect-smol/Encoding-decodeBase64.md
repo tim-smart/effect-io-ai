@@ -3,9 +3,12 @@ Module: `Encoding`<br />
 
 ## Encoding.decodeBase64
 
-Decodes a base64 (RFC4648) encoded `string` into a `Uint8Array`.
+Decodes a base64 (RFC4648) string into bytes.
 
-**Example**
+Returns `Result.succeed` with a `Uint8Array` when decoding succeeds, or
+`Result.fail` with an `EncodingError` when the input is not valid base64.
+
+**Example** (Decoding Base64 bytes)
 
 ```ts
 import { Encoding, Result } from "effect"
@@ -22,6 +25,6 @@ if (Result.isSuccess(result)) {
 declare const decodeBase64: (str: string) => Result.Result<Uint8Array, EncodingError>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Encoding.ts#L89)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Encoding.ts#L113)
 
 Since v4.0.0

@@ -6,7 +6,7 @@ Module: `TestConsole`<br />
 Returns an array of all items that have been logged by the program using
 `Console.log` thus far.
 
-**Example**
+**Example** (Reading captured log lines)
 
 ```ts
 import { Console, Effect } from "effect"
@@ -34,6 +34,6 @@ const program = Effect.gen(function*() {
 declare const logLines: Effect.Effect<ReadonlyArray<unknown>, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TestConsole.ts#L250)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TestConsole.ts#L268)
 
 Since v4.0.0

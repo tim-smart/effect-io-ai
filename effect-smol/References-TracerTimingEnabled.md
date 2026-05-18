@@ -7,7 +7,7 @@ Reference for controlling whether trace timing is enabled globally. When set
 to false, spans will not contain timing information (trace time will always
 be set to zero).
 
-**Example**
+**Example** (Toggling trace timing)
 
 ```ts
 import { Effect, References } from "effect"
@@ -47,6 +47,6 @@ const tracingControl = Effect.gen(function*() {
 declare const TracerTimingEnabled: Context.Reference<boolean>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/References.ts#L514)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/References.ts#L536)
 
 Since v4.0.0

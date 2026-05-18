@@ -5,7 +5,7 @@ Module: `Flag`<br />
 
 Filters a flag value based on a predicate, failing with a custom error if the predicate returns false.
 
-**Example**
+**Example** (Filtering parsed values)
 
 ```ts
 import { Flag } from "effect/unstable/cli"
@@ -33,6 +33,6 @@ const nameFlag = Flag.string("name").pipe(
 declare const filter: { <A>(predicate: (a: A) => boolean, onFalse: (a: A) => string): (self: Flag<A>) => Flag<A>; <A>(self: Flag<A>, predicate: (a: A) => boolean, onFalse: (a: A) => string): Flag<A>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Flag.ts#L776)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Flag.ts#L832)
 
 Since v4.0.0

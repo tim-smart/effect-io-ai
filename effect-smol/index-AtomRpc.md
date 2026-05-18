@@ -13,4 +13,4 @@ export * as AtomRpc from "effect/unstable/reactivity/AtomRpc"
 
 [Source](https://github.com/Effect-TS/effect/tree/main/packages/atom/vue/src/index.ts#L47)
 
-Since v1.0.0
+Since v4.0.0

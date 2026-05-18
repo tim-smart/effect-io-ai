@@ -5,7 +5,7 @@ Module: `Stream`<br />
 
 Creates a stream from a subscription to a `PubSub`.
 
-**Example**
+**Example** (Creating a stream from a subscription to a PubSub)
 
 ```ts
 import { Console, Effect, Fiber, PubSub, Stream } from "effect"
@@ -37,6 +37,6 @@ Effect.runPromise(program)
 declare const fromPubSub: <A>(pubsub: PubSub.PubSub<A>) => Stream<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L1299)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L1364)
 
 Since v4.0.0

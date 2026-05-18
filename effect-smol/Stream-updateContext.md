@@ -6,7 +6,7 @@ Module: `Stream`<br />
 Transforms the stream's required services by mapping the current context
 to a new one.
 
-**Example**
+**Example** (Updating the stream context)
 
 ```ts
 import { Console, Effect, Context, Stream } from "effect"
@@ -45,6 +45,6 @@ Effect.runPromise(
 declare const updateContext: { <R, R2>(f: (context: Context.Context<R2>) => Context.Context<R>): <A, E>(self: Stream<A, E, R>) => Stream<A, E, R2>; <A, E, R, R2>(self: Stream<A, E, R>, f: (context: Context.Context<R2>) => Context.Context<R>): Stream<A, E, R2>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L9548)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L9843)
 
 Since v2.0.0

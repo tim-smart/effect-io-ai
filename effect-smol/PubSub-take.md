@@ -6,7 +6,7 @@ Module: `PubSub`<br />
 Takes a single message from the subscription. If no messages are available,
 this will suspend until a message becomes available.
 
-**Example**
+**Example** (Taking a message)
 
 ```ts
 import { Effect, Fiber, PubSub } from "effect"
@@ -38,6 +38,6 @@ const program = Effect.gen(function*() {
 declare const take: <A>(self: Subscription<A>) => Effect.Effect<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PubSub.ts#L1041)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PubSub.ts#L1116)
 
 Since v4.0.0

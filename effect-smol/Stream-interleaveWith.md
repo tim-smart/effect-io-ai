@@ -8,7 +8,7 @@ Interleaves two streams deterministically by following a boolean decider stream.
 The decider controls how many elements are pulled; if one side ends, pulls for
 that side are ignored.
 
-**Example**
+**Example** (Interleaving two streams deterministically by following a boolean decider stream)
 
 ```ts
 import { Console, Effect, Stream } from "effect"
@@ -35,6 +35,6 @@ Effect.runPromise(program)
 declare const interleaveWith: { <A2, E2, R2, E3, R3>(that: Stream<A2, E2, R2>, decider: Stream<boolean, E3, R3>): <A, E, R>(self: Stream<A, E, R>) => Stream<A2 | A, E2 | E3 | E, R2 | R3 | R>; <A, E, R, A2, E2, R2, E3, R3>(self: Stream<A, E, R>, that: Stream<A2, E2, R2>, decider: Stream<boolean, E3, R3>): Stream<A | A2, E | E2 | E3, R | R2 | R3>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L8946)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L9228)
 
 Since v2.0.0

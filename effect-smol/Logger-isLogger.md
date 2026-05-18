@@ -5,7 +5,7 @@ Module: `Logger`<br />
 
 Returns `true` if the specified value is a `Logger`, otherwise returns `false`.
 
-**Example**
+**Example** (Checking logger values)
 
 ```ts
 import { Logger } from "effect"

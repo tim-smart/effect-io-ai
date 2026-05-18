@@ -11,7 +11,7 @@ Re-exports all named exports from the "./Logger.ts" module as `Logger`.
 export * as Logger from "./Logger.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L1929)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L1956)
 
 Since v2.0.0
 
@@ -29,6 +29,8 @@ Effect runtime's tracing and context management.
 - **Composable**: Transform and compose loggers using functional patterns
 
 ## Basic Usage
+
+**Example** (Logging messages with structured data)
 
 ```ts
 import { Effect } from "effect"
@@ -49,6 +51,8 @@ const structuredLog = Effect.gen(function*() {
 ```
 
 ## Custom Loggers
+
+**Example** (Creating and providing custom loggers)
 
 ```ts
 import { Effect, Logger } from "effect"
@@ -71,6 +75,8 @@ const program = Effect.log("Hello World").pipe(
 
 ## Multiple Loggers
 
+**Example** (Combining multiple loggers)
+
 ```ts
 import { Effect, Logger } from "effect"
 
@@ -86,6 +92,8 @@ const program = Effect.log("Application event").pipe(
 ```
 
 ## Batched Logging
+
+**Example** (Batching log messages)
 
 ```ts
 import { Duration, Effect, Logger } from "effect"

@@ -3,14 +3,14 @@ Module: `AnthropicTool`<br />
 
 ## AnthropicTool.ComputerUseLeftClickDragAction
 
-Click and drag from start coordinate to end coordinate.
+Computer-use action payload for dragging from a start coordinate to an end coordinate.
 
 **Signature**
 
 ```ts
-declare const ComputerUseLeftClickDragAction: Schema.Struct<{ readonly action: Schema.Literal<"left_click_drag">; readonly start_coordinate: Schema.Tuple<readonly [Schema.Number, Schema.Number]>; readonly coordinate: Schema.Tuple<readonly [Schema.Number, Schema.Number]>; }>
+type ComputerUseLeftClickDragAction = typeof ComputerUseLeftClickDragAction.Type
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L526)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L577)
 
-Since v1.0.0
+Since v4.0.0

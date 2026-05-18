@@ -6,7 +6,7 @@ Module: `Iterable`<br />
 Splits an `Iterable` into length-`n` pieces. The last piece will be shorter if `n` does not evenly divide the length of
 the `Iterable`.
 
-**Example**
+**Example** (Chunking an iterable)
 
 ```ts
 import { Iterable } from "effect"
@@ -44,6 +44,6 @@ console.log(Array.from(Iterable.take(batchSums, 3))) // [55, 155, 255]
 declare const chunksOf: { (n: number): <A>(self: Iterable<A>) => Iterable<Array<A>>; <A>(self: Iterable<A>, n: number): Iterable<Array<A>>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Iterable.ts#L1063)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Iterable.ts#L1099)
 
 Since v2.0.0

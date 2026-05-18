@@ -19,10 +19,14 @@ does not handle the error and instead terminates the fiber.
 The error channel of the resulting effect is of type `never`, indicating that
 it cannot recover from this failure.
 
-**Example**
+**See**
+
+- `dieSync` for a variant that throws a specified error, evaluated lazily.
+- `dieMessage` for a variant that throws a `RuntimeException` with a message.
+
+**Example** (Terminating on Division by Zero with a Specified Error)
 
 ```ts
-// Title: Terminating on Division by Zero with a Specified Error
 import { Effect } from "effect"
 
 const divide = (a: number, b: number) =>
@@ -40,17 +44,12 @@ Effect.runPromise(program).catch(console.error)
 //   ...stack trace...
 ```
 
-**See**
-
-- `dieSync` for a variant that throws a specified error, evaluated lazily.
-- `dieMessage` for a variant that throws a `RuntimeException` with a message.
-
 **Signature**
 
 ```ts
 declare const die: (defect: unknown) => Effect<never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L1685)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L1553)
 
 Since v2.0.0

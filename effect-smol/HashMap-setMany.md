@@ -5,7 +5,7 @@ Module: `HashMap`<br />
 
 Sets multiple key-value pairs in the `HashMap`.
 
-**Example**
+**Example** (Setting multiple entries)
 
 ```ts
 import * as HashMap from "effect/HashMap"
@@ -25,6 +25,6 @@ console.log(HashMap.get(map2, "c")) // Option.some(3)
 declare const setMany: { <K, V>(entries: Iterable<readonly [K, V]>): (self: HashMap<K, V>) => HashMap<K, V>; <K, V>(self: HashMap<K, V>, entries: Iterable<readonly [K, V]>): HashMap<K, V>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashMap.ts#L925)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashMap.ts#L1039)
 
 Since v2.0.0

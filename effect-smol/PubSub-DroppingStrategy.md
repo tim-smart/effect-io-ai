@@ -10,7 +10,7 @@ subscriber will slow down the rate at which messages are received by
 other subscribers and that subscribers may not receive all messages
 published to the `PubSub` while they are subscribed.
 
-**Example**
+**Example** (Using a dropping strategy)
 
 ```ts
 import { Effect } from "effect"
@@ -26,16 +26,17 @@ const program = Effect.gen(function*() {
     strategy: () => new PubSub.DroppingStrategy()
   })
 
-  // Fill the PubSub
-  const pub1 = yield* PubSub.publish(pubsub, "msg1") // true
-  const pub2 = yield* PubSub.publish(pubsub, "msg2") // true
-  const pub3 = yield* PubSub.publish(pubsub, "msg3") // false (dropped)
-
-  console.log("Publication results:", [pub1, pub2, pub3]) // [true, true, false]
-
-  // Subscribers will only see the first two messages
   yield* Effect.scoped(Effect.gen(function*() {
     const subscription = yield* PubSub.subscribe(pubsub)
+
+    // Fill the PubSub
+    const pub1 = yield* PubSub.publish(pubsub, "msg1") // true
+    const pub2 = yield* PubSub.publish(pubsub, "msg2") // true
+    const pub3 = yield* PubSub.publish(pubsub, "msg3") // false (dropped)
+
+    console.log("Publication results:", [pub1, pub2, pub3]) // [true, true, false]
+
+    // Subscribers will only see the first two messages
     const messages = yield* PubSub.takeAll(subscription)
     console.log("Received messages:", messages) // ["msg1", "msg2"]
   }))
@@ -48,6 +49,6 @@ const program = Effect.gen(function*() {
 declare class DroppingStrategy<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PubSub.ts#L2349)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PubSub.ts#L2435)
 
 Since v4.0.0

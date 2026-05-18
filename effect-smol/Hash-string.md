@@ -9,7 +9,7 @@ This function implements a variation of the djb2 hash algorithm, which is
 known for its good distribution properties and speed. It processes each
 character of the string to produce a consistent hash value.
 
-**Example**
+**Example** (Hashing strings)
 
 ```ts
 import { Hash } from "effect"
@@ -28,6 +28,6 @@ console.log(Hash.string("test") === Hash.string("test")) // true
 declare const string: (str: string) => number
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Hash.ts#L316)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Hash.ts#L324)
 
 Since v2.0.0

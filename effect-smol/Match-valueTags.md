@@ -9,7 +9,7 @@ This function provides a convenient way to pattern match on discriminated unions
 by providing an object that maps each `_tag` value to its corresponding handler.
 It's similar to a switch statement but with better type safety and exhaustiveness checking.
 
-**Example**
+**Example** (Matching value tags)
 
 ```ts
 import { Match } from "effect"
@@ -32,6 +32,6 @@ console.log(message) // "Success: Hello"
 declare const valueTags: { <const I, P extends { readonly [Tag in Types.Tags<"_tag", I> & string]: (_: Extract<I, { readonly _tag: Tag; }>) => any; } & { readonly [Tag in Exclude<keyof P, Types.Tags<"_tag", I>>]: never; }>(fields: P): (input: I) => Unify<ReturnType<P[keyof P]>>; <const I, P extends { readonly [Tag in Types.Tags<"_tag", I> & string]: (_: Extract<I, { readonly _tag: Tag; }>) => any; } & { readonly [Tag in Exclude<keyof P, Types.Tags<"_tag", I>>]: never; }>(input: I, fields: P): Unify<ReturnType<P[keyof P]>>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L362)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L346)
 
 Since v4.0.0

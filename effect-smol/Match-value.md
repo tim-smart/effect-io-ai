@@ -15,10 +15,7 @@ structure.
 Once the matcher is created, you can use pattern-matching functions like
 `when` to define how different cases should be handled.
 
-**Example**
-
-```ts
-(Matching an Object by Property)
+**Example** (Matching an Object by Property)
 
 ```ts
 import { Match } from "effect"
@@ -39,7 +36,6 @@ const result = Match.value(input).pipe(
 console.log(result)
 // Output: "John is 30 years old"
 ```
-```
 
 **See**
 
@@ -51,6 +47,6 @@ console.log(result)
 declare const value: <const I>(i: I) => Matcher<I, Types.Without<never>, I, never, I>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L332)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L315)
 
 Since v4.0.0

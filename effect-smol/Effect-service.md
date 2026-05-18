@@ -5,7 +5,7 @@ Module: `Effect`<br />
 
 Accesses a service from the context.
 
-**Example**
+**Example** (Usage)
 
 ```ts
 import { Effect, Context } from "effect"
@@ -28,6 +28,6 @@ const program = Effect.gen(function*() {
 declare const service: <I, S>(service: Context.Key<I, S>) => Effect<S, never, I>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L5715)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L5593)
 
 Since v4.0.0

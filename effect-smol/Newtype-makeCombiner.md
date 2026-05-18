@@ -33,6 +33,6 @@ Newtype.value(total) // 30
 declare const makeCombiner: <N extends Newtype.Any>(combiner: Combiner.Combiner<Newtype.Carrier<N>>) => Combiner.Combiner<N>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Newtype.ts#L278)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Newtype.ts#L281)
 
 Since v4.0.0

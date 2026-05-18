@@ -33,6 +33,6 @@ See also:
 declare const encodeURLSearchParams: () => Getter<URLSearchParams, unknown>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L1687)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L1702)
 
 Since v4.0.0

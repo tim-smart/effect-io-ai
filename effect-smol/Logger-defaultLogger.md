@@ -5,7 +5,7 @@ Module: `Logger`<br />
 
 The default logging implementation used by the Effect runtime.
 
-**Example**
+**Example** (Using the default logger)
 
 ```ts
 import { Effect, Logger } from "effect"
@@ -34,6 +34,6 @@ const customLogger = Logger.make((options) => {
 declare const defaultLogger: Logger<unknown, void>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Logger.ts#L541)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Logger.ts#L558)
 
 Since v4.0.0

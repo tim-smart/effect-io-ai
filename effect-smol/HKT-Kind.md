@@ -13,7 +13,7 @@ covariant parameters as outputs.
 This is the core mechanism that allows HKT to work - it transforms
 abstract type constructors into concrete types by applying arguments.
 
-**Example**
+**Example** (Applying type lambdas)
 
 ```ts
 import type { Effect, HKT, Option } from "effect"
@@ -70,6 +70,6 @@ type Kind<F, In, Out2, Out1, Target> = F extends {
   }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HKT.ts#L191)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HKT.ts#L207)
 
 Since v2.0.0

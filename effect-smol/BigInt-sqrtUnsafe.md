@@ -3,9 +3,12 @@ Module: `BigInt`<br />
 
 ## BigInt.sqrtUnsafe
 
-Determines the square root of a given `bigint` unsafely. Throws if the given `bigint` is negative.
+Returns the integer square root of a non-negative `bigint`.
 
-**Example**
+For non-perfect squares, returns the largest `bigint` whose square is less
+than or equal to the input. Throws a `RangeError` if the input is negative.
+
+**Example** (Calculating square roots unsafely)
 
 ```ts
 import { sqrtUnsafe } from "effect/BigInt"
@@ -22,6 +25,6 @@ assert.deepStrictEqual(sqrtUnsafe(16n), 4n)
 declare const sqrtUnsafe: (n: bigint) => bigint
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigInt.ts#L523)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigInt.ts#L546)
 
 Since v2.0.0

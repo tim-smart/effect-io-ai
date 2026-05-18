@@ -8,7 +8,7 @@ Takes a slice of the `TxChunk` from `start` to `end` (exclusive).
 **Mutation behavior**: This function mutates the original TxChunk by keeping
 only the elements in the specified range. It does not return a new TxChunk reference.
 
-**Example**
+**Example** (Taking a slice)
 
 ```ts
 import { Chunk, Effect, TxChunk } from "effect"
@@ -30,6 +30,6 @@ const program = Effect.gen(function*() {
 declare const slice: { (start: number, end: number): <A>(self: TxChunk<A>) => Effect.Effect<void>; <A>(self: TxChunk<A>, start: number, end: number): Effect.Effect<void>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxChunk.ts#L576)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxChunk.ts#L592)
 
 Since v4.0.0

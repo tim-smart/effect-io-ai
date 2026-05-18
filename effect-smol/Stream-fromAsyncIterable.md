@@ -5,10 +5,10 @@ Module: `Stream`<br />
 
 Creates a stream from an AsyncIterable.
 
-**Example**
+**Example** (Creating a stream from an AsyncIterable)
 
 ```ts
-import { Console, Data, Effect, Stream } from "effect"
+import { Data, Effect, Stream } from "effect"
 
 class StreamError extends Data.TaggedError("StreamError")<{ readonly cause: unknown }> {}
 
@@ -18,14 +18,13 @@ const iterable = (async function*() {
   yield 3
 })()
 
-const program = Effect.gen(function*() {
+Effect.runPromise(Effect.gen(function*() {
   const stream = Stream.fromAsyncIterable(iterable, (cause) => new StreamError({ cause }))
   const values = yield* Stream.runCollect(stream)
-  yield* Console.log(values)
-})
+  yield* Effect.sync(() => console.log(values))
+}))
 
-Effect.runPromise(program)
-// Output: [ 1, 2, 3 ]
+// [ 1, 2, 3 ]
 ```
 
 **Signature**
@@ -34,6 +33,6 @@ Effect.runPromise(program)
 declare const fromAsyncIterable: <A, E>(iterable: AsyncIterable<A>, onError: (error: unknown) => E) => Stream<A, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L1421)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L1490)
 
 Since v2.0.0

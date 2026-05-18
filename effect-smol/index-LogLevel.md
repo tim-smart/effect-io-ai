@@ -11,7 +11,7 @@ Re-exports all named exports from the "./LogLevel.ts" module as `LogLevel`.
 export * as LogLevel from "./LogLevel.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L2031)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L2066)
 
 Since v2.0.0
 
@@ -34,6 +34,8 @@ The log levels are ordered from most severe to least severe:
 
 ## Basic Usage
 
+**Example** (Logging at different levels)
+
 ```ts
 import { Effect } from "effect"
 
@@ -50,6 +52,8 @@ const program = Effect.gen(function*() {
 
 ## Level Comparison
 
+**Example** (Comparing log levels)
+
 ```ts
 import { LogLevel } from "effect"
 
@@ -63,6 +67,8 @@ console.log(LogLevel.isLessThan("Trace", "Info")) // true
 ```
 
 ## Filtering by Level
+
+**Example** (Filtering logger output)
 
 ```ts
 import { Logger, LogLevel } from "effect"
@@ -92,6 +98,8 @@ const devLogger = Logger.make((options) => {
 ```
 
 ## Runtime Configuration
+
+**Example** (Configuring log level from the environment)
 
 ```ts
 import { Config, Effect, Logger, LogLevel } from "effect"

@@ -8,7 +8,7 @@ Creates a stream from a pull effect, such as one produced by `Stream.toPull`.
 A pull effect yields chunks on demand and completes when the upstream stream ends.
 See `Stream.toPull` for a matching producer.
 
-**Example**
+**Example** (Creating a stream from a pull effect)
 
 ```ts
 import { Console, Effect, Stream } from "effect"
@@ -33,6 +33,6 @@ Effect.runPromise(program)
 declare const fromPull: <A, E, R, EX, RX>(pull: Effect.Effect<Pull.Pull<Arr.NonEmptyReadonlyArray<A>, E, void, R>, EX, RX>) => Stream<A, Pull.ExcludeDone<E> | EX, R | RX>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L601)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L645)
 
 Since v2.0.0

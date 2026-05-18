@@ -3,9 +3,17 @@ Module: `Schema`<br />
 
 ## Schema.makeFilter
 
-Creates a custom filter check from a predicate function. The predicate
-receives the input value, the schema's AST, and parse options, and returns
-a value of type `FilterOutput`.
+Creates a custom validation filter from a predicate function.
+
+**Details**
+The predicate receives the decoded input value, the schema AST, and parse
+options, and returns a `FilterOutput`. Non-success outputs are normalized into
+schema issues. The `annotations` parameter annotates the filter itself; with
+the default formatter, failures use `message` first, `expected` second, and
+`<filter>` when neither is provided.
+
+When `abort` is `true`, parsing stops after this filter fails instead of
+collecting later check failures.
 
 **Example** (Failure at a nested path)
 
@@ -54,6 +62,6 @@ console.log(String(Schema.decodeUnknownExit(schema)({ a: 1, b: 0, c: 0 })))
 declare const makeFilter: <T>(filter: (input: T, ast: AST.AST, options: AST.ParseOptions) => FilterOutput, annotations?: Annotations.Filter | undefined, abort?: boolean) => AST.Filter<T>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L5004)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L5315)
 
 Since v4.0.0

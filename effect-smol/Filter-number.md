@@ -5,7 +5,7 @@ Module: `Filter`<br />
 
 A predefined filter that only passes through number values.
 
-**Example**
+**Example** (Filtering numbers)
 
 ```ts
 import { Filter, Result } from "effect"
@@ -20,6 +20,6 @@ console.log(Filter.number("42")) // fail
 declare const number: Filter<unknown, number, unknown>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Filter.ts#L277)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Filter.ts#L329)
 
 Since v4.0.0

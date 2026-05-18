@@ -8,7 +8,7 @@ the unit of concurrency in Effect. They provide a way to run multiple
 Effects concurrently while maintaining structured concurrency and
 cancellation safety.
 
-**Example**
+**Example** (Awaiting a forked fiber)
 
 ```ts
 import { Effect, Fiber } from "effect"
@@ -53,6 +53,6 @@ export interface Fiber<out A, out E = never> extends Pipeable {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Fiber.ts#L117)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Fiber.ts#L119)
 
 Since v2.0.0

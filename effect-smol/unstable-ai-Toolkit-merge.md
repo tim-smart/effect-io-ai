@@ -9,7 +9,7 @@ Combines all tools from the provided toolkits into one unified toolkit.
 If there are naming conflicts, tools from later toolkits will override
 tools from earlier ones.
 
-**Example**
+**Example** (Merging toolkits)
 
 ```ts
 import { Schema } from "effect"
@@ -34,6 +34,6 @@ const combined = Toolkit.merge(mathToolkit, utilityToolkit)
 declare const merge: <const Toolkits extends ReadonlyArray<Any>>(...toolkits: Toolkits) => Toolkit<MergedTools<Toolkits>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Toolkit.ts#L565)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Toolkit.ts#L570)
 
-Since v1.0.0
+Since v4.0.0

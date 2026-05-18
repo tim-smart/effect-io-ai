@@ -3,14 +3,14 @@ Module: `AnthropicTool`<br />
 
 ## AnthropicTool.ComputerUseMiddleClickAction
 
-Perform a middle click.
+Computer-use action payload for performing a middle click, optionally at a specific coordinate.
 
 **Signature**
 
 ```ts
-declare const ComputerUseMiddleClickAction: Schema.Struct<{ readonly action: Schema.Literal<"middle_click">; readonly coordinate: Schema.optional<Schema.Tuple<readonly [Schema.Number, Schema.Number]>>; }>
+type ComputerUseMiddleClickAction = typeof ComputerUseMiddleClickAction.Type
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L593)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L647)
 
-Since v1.0.0
+Since v4.0.0

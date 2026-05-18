@@ -5,7 +5,7 @@ Module: `Channel`<br />
 
 Create a channel from a PubSub subscription
 
-**Example**
+**Example** (Creating channels from subscriptions)
 
 ```ts
 import { Channel, Data, Effect, PubSub } from "effect"
@@ -49,6 +49,6 @@ const notificationChannel = Effect.gen(function*() {
 declare const fromSubscription: <A>(subscription: PubSub.Subscription<A>) => Channel<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L1230)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L1329)
 
 Since v4.0.0

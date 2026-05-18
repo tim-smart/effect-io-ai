@@ -8,7 +8,7 @@ Races two effects and returns the first successful result.
 If one effect succeeds, the other is interrupted and `onWinner` can observe the
 winning fiber. If both fail, the race fails.
 
-**Example**
+**Example** (Usage)
 
 ```ts
 import { Console, Duration, Effect } from "effect"
@@ -31,6 +31,6 @@ Effect.runPromise(program)
 declare const race: { <A2, E2, R2>(that: Effect<A2, E2, R2>, options?: { readonly onWinner?: (options: { readonly fiber: Fiber<any, any>; readonly index: number; readonly parentFiber: Fiber<any, any>; }) => void; }): <A, E, R>(self: Effect<A, E, R>) => Effect<A | A2, E | E2, R | R2>; <A, E, R, A2, E2, R2>(self: Effect<A, E, R>, that: Effect<A2, E2, R2>, options?: { readonly onWinner?: (options: { readonly fiber: Fiber<any, any>; readonly index: number; readonly parentFiber: Fiber<any, any>; }) => void; }): Effect<A | A2, E | E2, R | R2>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L4672)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L4537)
 
 Since v2.0.0

@@ -3,17 +3,18 @@ Module: `Schema`<br />
 
 ## Schema.decodeUnknownResult
 
-Decodes an `unknown` input against a schema, returning a `Promise` that
-resolves with the decoded value or rejects with a `SchemaError`. Useful
-for integrating with Promise-based APIs. For typed input use
-`decodePromise`.
+Decodes an `unknown` input against a schema, returning a `Result` that
+succeeds with the decoded value or fails with a schema issue. For typed input
+use `decodeResult`.
+Options may be provided either when creating the decoder or when applying it;
+application options override creation options.
 
 **Signature**
 
 ```ts
-declare const decodeUnknownResult: <S extends Decoder<unknown>>(schema: S) => (input: unknown, options?: AST.ParseOptions) => Result_.Result<S["Type"], Issue.Issue>
+declare const decodeUnknownResult: <S extends Decoder<unknown>>(schema: S, options?: AST.ParseOptions) => (input: unknown, options?: AST.ParseOptions) => Result_.Result<S["Type"], Issue.Issue>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L1227)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L1244)
 
 Since v4.0.0

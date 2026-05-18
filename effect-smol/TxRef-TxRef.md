@@ -10,7 +10,7 @@ track changes, a transaction will retry whenever a conflict is detected or whene
 transaction explicitely calls to `Effect.txRetry` and any of the accessed TxRef values
 change.
 
-**Example**
+**Example** (Using a transactional reference)
 
 ```ts
 import { Effect, TxRef } from "effect"
@@ -42,6 +42,6 @@ export interface TxRef<in out A> extends Pipeable {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxRef.ts#L48)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxRef.ts#L50)
 
 Since v4.0.0

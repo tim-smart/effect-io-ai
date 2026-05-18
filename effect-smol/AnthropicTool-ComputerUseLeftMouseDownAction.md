@@ -3,16 +3,14 @@ Module: `AnthropicTool`<br />
 
 ## AnthropicTool.ComputerUseLeftMouseDownAction
 
-Press the left mouse button down (without releasing).
-
-Used for fine-grained click control.
+Computer-use action payload for pressing and holding the left mouse button, optionally at a specific coordinate.
 
 **Signature**
 
 ```ts
-declare const ComputerUseLeftMouseDownAction: Schema.Struct<{ readonly action: Schema.Literal<"left_mouse_down">; readonly coordinate: Schema.optional<Schema.Tuple<readonly [Schema.Number, Schema.Number]>>; }>
+type ComputerUseLeftMouseDownAction = typeof ComputerUseLeftMouseDownAction.Type
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L551)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L601)
 
-Since v1.0.0
+Since v4.0.0

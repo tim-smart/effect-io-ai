@@ -10,7 +10,7 @@
     "description": "Re-exports all named exports from the \"./OpfsWorker.ts\" module as `OpfsWorker`.",
     "deprecated": false,
     "examples": [],
-    "since": "1.0.0",
+    "since": "4.0.0",
     "category": null,
     "signature": "export * as OpfsWorker from \"./OpfsWorker.ts\"",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/do/src/index.ts#L4"
@@ -26,7 +26,7 @@
     "description": "Re-exports all named exports from the \"./SqliteClient.ts\" module as `SqliteClient`.",
     "deprecated": false,
     "examples": [],
-    "since": "1.0.0",
+    "since": "4.0.0",
     "category": null,
     "signature": "export * as SqliteClient from \"./SqliteClient.ts\"",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/do/src/index.ts#L9"
@@ -42,7 +42,7 @@
     "description": "Re-exports all named exports from the \"./SqliteMigrator.ts\" module as `SqliteMigrator`.",
     "deprecated": false,
     "examples": [],
-    "since": "1.0.0",
+    "since": "4.0.0",
     "category": null,
     "signature": "export * as SqliteMigrator from \"./SqliteMigrator.ts\"",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/do/src/index.ts#L14"
@@ -55,12 +55,13 @@
     },
     "project": "@effect/sql-sqlite-wasm",
     "name": "run",
+    "description": "Runs the SQLite OPFS worker loop, opening the configured database, posting a ready message, handling query/import/export/update-hook messages, and closing when a close message is received.",
     "deprecated": false,
     "examples": [],
-    "since": "1.0.0",
+    "since": "4.0.0",
     "category": "constructor",
     "signature": "declare const run: (options: OpfsWorkerConfig) => Effect.Effect<void, SqlError>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/do/src/OpfsWorker.ts#L29"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/do/src/OpfsWorker.ts#L52"
   },
   {
     "_tag": "Interface",
@@ -70,12 +71,13 @@
     },
     "project": "@effect/sql-sqlite-wasm",
     "name": "OpfsWorkerConfig",
+    "description": "Configuration for the SQLite OPFS worker, including the message port used for the client protocol and the OPFS database name to open.",
     "deprecated": false,
     "examples": [],
-    "since": "1.0.0",
+    "since": "4.0.0",
     "category": "models",
     "signature": "export interface OpfsWorkerConfig {\n  readonly port: EventTarget & Pick<MessagePort, \"postMessage\" | \"close\">\n  readonly dbName: string\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/do/src/OpfsWorker.ts#L20"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/do/src/OpfsWorker.ts#L41"
   },
   {
     "_tag": "Constant",
@@ -85,12 +87,13 @@
     },
     "project": "@effect/sql-sqlite-wasm",
     "name": "TypeId",
+    "description": "Runtime identifier attached to SQLite WASM client values.",
     "deprecated": false,
     "examples": [],
-    "since": "1.0.0",
+    "since": "4.0.0",
     "category": "type ids",
     "signature": "declare const TypeId: \"~@effect/sql-sqlite-wasm/SqliteClient\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/do/src/SqliteClient.ts#L36"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/do/src/SqliteClient.ts#L64"
   },
   {
     "_tag": "Constant",
@@ -100,12 +103,13 @@
     },
     "project": "@effect/sql-sqlite-wasm",
     "name": "SqliteClient",
+    "description": "Context service tag for the SQLite WASM client.",
     "deprecated": false,
     "examples": [],
-    "since": "1.0.0",
+    "since": "4.0.0",
     "category": "tags",
     "signature": "declare const SqliteClient: Context.Service<SqliteClient, SqliteClient>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/do/src/SqliteClient.ts#L62"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/do/src/SqliteClient.ts#L96"
   },
   {
     "_tag": "Constant",
@@ -115,12 +119,13 @@
     },
     "project": "@effect/sql-sqlite-wasm",
     "name": "Transferables",
+    "description": "Fiber-local list of transferables to include with worker-backed SQLite WASM query messages.",
     "deprecated": false,
     "examples": [],
-    "since": "1.0.0",
+    "since": "4.0.0",
     "category": "tranferables",
     "signature": "declare const Transferables: Context.Reference<ReadonlyArray<Transferable>>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/do/src/SqliteClient.ts#L437"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/do/src/SqliteClient.ts#L481"
   },
   {
     "_tag": "Function",
@@ -130,12 +135,13 @@
     },
     "project": "@effect/sql-sqlite-wasm",
     "name": "makeMemory",
+    "description": "Creates a scoped in-memory SQLite WASM client using the memory VFS, serializing access through a semaphore and exposing database `export` and `import` operations.",
     "deprecated": false,
     "examples": [],
-    "since": "1.0.0",
+    "since": "4.0.0",
     "category": "constructor",
     "signature": "declare const makeMemory: (options: SqliteClientMemoryConfig) => Effect.Effect<SqliteClient, SqlError, Scope.Scope | Reactivity.Reactivity>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/do/src/SqliteClient.ts#L106"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/do/src/SqliteClient.ts#L146"
   },
   {
     "_tag": "Function",
@@ -145,12 +151,13 @@
     },
     "project": "@effect/sql-sqlite-wasm",
     "name": "make",
+    "description": "Creates a scoped worker-backed SQLite WASM client, communicating with the configured worker or message port, restarting the scoped connection on worker errors, and exposing database `export` and `import` operations.",
     "deprecated": false,
     "examples": [],
-    "since": "1.0.0",
+    "since": "4.0.0",
     "category": "constructor",
     "signature": "declare const make: (options: SqliteClientConfig) => Effect.Effect<SqliteClient, SqlError, Scope.Scope | Reactivity.Reactivity>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/do/src/SqliteClient.ts#L269"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/do/src/SqliteClient.ts#L311"
   },
   {
     "_tag": "Function",
@@ -160,12 +167,13 @@
     },
     "project": "@effect/sql-sqlite-wasm",
     "name": "withTransferables",
+    "description": "Runs an effect with the supplied transferables attached to worker-backed SQLite WASM query messages.",
     "deprecated": false,
     "examples": [],
-    "since": "1.0.0",
+    "since": "4.0.0",
     "category": "tranferables",
     "signature": "declare const withTransferables: (transferables: ReadonlyArray<Transferable>) => <A, E, R>(effect: Effect.Effect<A, E, R>) => Effect.Effect<A, E, R>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/do/src/SqliteClient.ts#L446"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/do/src/SqliteClient.ts#L492"
   },
   {
     "_tag": "Function",
@@ -175,12 +183,13 @@
     },
     "project": "@effect/sql-sqlite-wasm",
     "name": "layerMemoryConfig",
+    "description": "Builds a layer from an Effect `Config` value, providing both the in-memory SQLite WASM `SqliteClient` service and the generic `SqlClient` service.",
     "deprecated": false,
     "examples": [],
-    "since": "1.0.0",
+    "since": "4.0.0",
     "category": "layers",
     "signature": "declare const layerMemoryConfig: (config: Config.Wrap<SqliteClientMemoryConfig>) => Layer.Layer<SqliteClient | Client.SqlClient, Config.ConfigError | SqlError>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/do/src/SqliteClient.ts#L454"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/do/src/SqliteClient.ts#L502"
   },
   {
     "_tag": "Function",
@@ -190,12 +199,13 @@
     },
     "project": "@effect/sql-sqlite-wasm",
     "name": "layerMemory",
+    "description": "Builds a layer from an in-memory SQLite WASM client configuration, providing both `SqliteClient` and the generic `SqlClient` service.",
     "deprecated": false,
     "examples": [],
-    "since": "1.0.0",
+    "since": "4.0.0",
     "category": "layers",
     "signature": "declare const layerMemory: (config: SqliteClientMemoryConfig) => Layer.Layer<SqliteClient | Client.SqlClient, SqlError>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/do/src/SqliteClient.ts#L472"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/do/src/SqliteClient.ts#L522"
   },
   {
     "_tag": "Function",
@@ -205,12 +215,13 @@
     },
     "project": "@effect/sql-sqlite-wasm",
     "name": "layer",
+    "description": "Builds a layer from a worker-backed SQLite WASM client configuration, providing both `SqliteClient` and the generic `SqlClient` service.",
     "deprecated": false,
     "examples": [],
-    "since": "1.0.0",
+    "since": "4.0.0",
     "category": "layers",
     "signature": "declare const layer: (config: SqliteClientConfig) => Layer.Layer<SqliteClient | Client.SqlClient, SqlError>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/do/src/SqliteClient.ts#L486"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/do/src/SqliteClient.ts#L538"
   },
   {
     "_tag": "Function",
@@ -220,12 +231,13 @@
     },
     "project": "@effect/sql-sqlite-wasm",
     "name": "layerConfig",
+    "description": "Builds a layer from an Effect `Config` value, providing both the worker-backed SQLite WASM `SqliteClient` service and the generic `SqlClient` service.",
     "deprecated": false,
     "examples": [],
-    "since": "1.0.0",
+    "since": "4.0.0",
     "category": "layers",
     "signature": "declare const layerConfig: (config: Config.Wrap<SqliteClientConfig>) => Layer.Layer<SqliteClient | Client.SqlClient, Config.ConfigError | SqlError>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/do/src/SqliteClient.ts#L500"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/do/src/SqliteClient.ts#L554"
   },
   {
     "_tag": "Interface",
@@ -235,12 +247,13 @@
     },
     "project": "@effect/sql-sqlite-wasm",
     "name": "SqliteClient",
+    "description": "SQLite WASM client service interface, extending `SqlClient` with database `export` and `import` operations and marking `updateValues` as unsupported for SQLite.",
     "deprecated": false,
     "examples": [],
-    "since": "1.0.0",
+    "since": "4.0.0",
     "category": "models",
     "signature": "export interface SqliteClient extends Client.SqlClient {\n  readonly [TypeId]: TypeId\n  readonly config: SqliteClientMemoryConfig\n  readonly export: Effect.Effect<Uint8Array, SqlError>\n  readonly import: (data: Uint8Array) => Effect.Effect<void, SqlError>\n\n  /** Not supported in sqlite */\n  readonly updateValues: never\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/do/src/SqliteClient.ts#L48"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/do/src/SqliteClient.ts#L80"
   },
   {
     "_tag": "Interface",
@@ -250,12 +263,13 @@
     },
     "project": "@effect/sql-sqlite-wasm",
     "name": "SqliteClientMemoryConfig",
+    "description": "Configuration for an in-memory SQLite WASM client, including optional reactivity hooks, span attributes, and query/result name transforms.",
     "deprecated": false,
     "examples": [],
-    "since": "1.0.0",
+    "since": "4.0.0",
     "category": "models",
     "signature": "export interface SqliteClientMemoryConfig {\n  readonly installReactivityHooks?: boolean\n  readonly spanAttributes?: Record<string, unknown>\n  readonly transformResultNames?: (str: string) => string\n  readonly transformQueryNames?: (str: string) => string\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/do/src/SqliteClient.ts#L68"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/do/src/SqliteClient.ts#L104"
   },
   {
     "_tag": "Interface",
@@ -265,12 +279,13 @@
     },
     "project": "@effect/sql-sqlite-wasm",
     "name": "SqliteClientConfig",
+    "description": "Configuration for a worker-backed SQLite WASM client, including the scoped worker or message port, optional reactivity hooks, span attributes, and query/result name transforms.",
     "deprecated": false,
     "examples": [],
-    "since": "1.0.0",
+    "since": "4.0.0",
     "category": "models",
     "signature": "export interface SqliteClientConfig {\n  readonly worker: Effect.Effect<Worker | SharedWorker | MessagePort, never, Scope.Scope>\n  readonly installReactivityHooks?: boolean\n  readonly spanAttributes?: Record<string, unknown>\n  readonly transformResultNames?: (str: string) => string\n  readonly transformQueryNames?: (str: string) => string\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/do/src/SqliteClient.ts#L79"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/do/src/SqliteClient.ts#L117"
   },
   {
     "_tag": "TypeAlias",
@@ -280,12 +295,13 @@
     },
     "project": "@effect/sql-sqlite-wasm",
     "name": "TypeId",
+    "description": "Type-level identifier for SQLite WASM client values.",
     "deprecated": false,
     "examples": [],
-    "since": "1.0.0",
+    "since": "4.0.0",
     "category": "type ids",
     "signature": "type TypeId = \"~@effect/sql-sqlite-wasm/SqliteClient\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/do/src/SqliteClient.ts#L42"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/do/src/SqliteClient.ts#L72"
   },
   {
     "_tag": "Constant",
@@ -295,12 +311,13 @@
     },
     "project": "@effect/sql-sqlite-wasm",
     "name": "run",
+    "description": "Runs SQL migrations for a SQLite WASM database using the shared `Migrator` implementation and the current `SqlClient`.",
     "deprecated": false,
     "examples": [],
-    "since": "1.0.0",
+    "since": "4.0.0",
     "category": "constructor",
     "signature": "declare const run: <R>(options: Migrator.MigratorOptions<R>) => Effect.Effect<ReadonlyArray<readonly [id: number, name: string]>, SqlError | Migrator.MigrationError, Client.SqlClient | R>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/do/src/SqliteMigrator.ts#L19"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/do/src/SqliteMigrator.ts#L39"
   },
   {
     "_tag": "Function",
@@ -310,12 +327,13 @@
     },
     "project": "@effect/sql-sqlite-wasm",
     "name": "layer",
+    "description": "Creates a layer that runs the configured SQLite WASM migrations during layer construction and provides no services.",
     "deprecated": false,
     "examples": [],
-    "since": "1.0.0",
+    "since": "4.0.0",
     "category": "constructor",
     "signature": "declare const layer: <R>(options: Migrator.MigratorOptions<R>) => Layer.Layer<never, SqlError | Migrator.MigrationError, R | Client.SqlClient>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/do/src/SqliteMigrator.ts#L31"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/do/src/SqliteMigrator.ts#L53"
   },
   {
     "_tag": "Export",
@@ -328,9 +346,9 @@
     "description": "Re-exports all named exports from the \"effect/unstable/sql/Migrator\" module.",
     "deprecated": false,
     "examples": [],
-    "since": "1.0.0",
+    "since": "4.0.0",
     "category": null,
     "signature": "export * from \"effect/unstable/sql/Migrator\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/do/src/SqliteMigrator.ts#L13"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/do/src/SqliteMigrator.ts#L31"
   }
 ]

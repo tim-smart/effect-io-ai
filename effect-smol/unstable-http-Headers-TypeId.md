@@ -3,14 +3,14 @@ Module: `Headers`<br />
 
 ## Headers.TypeId
 
-This is a symbol to allow direct access of keys without conflicts.
+Type of the unique symbol used to brand `Headers` values.
 
 **Signature**
 
 ```ts
-declare const TypeId: unique symbol
+type TypeId = typeof TypeId
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Headers.ts#L25)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Headers.ts#L49)
 
 Since v4.0.0

@@ -5,7 +5,7 @@ Module: `HashMap`<br />
 
 Marks the `HashMap` as immutable, completing the mutation cycle.
 
-**Example**
+**Example** (Ending batch mutation)
 
 ```ts
 import * as HashMap from "effect/HashMap"
@@ -35,6 +35,6 @@ console.log(HashMap.get(final, "z")) // Option.some(30)
 declare const endMutation: <K, V>(self: HashMap<K, V>) => HashMap<K, V>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashMap.ts#L702)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashMap.ts#L804)
 
 Since v2.0.0

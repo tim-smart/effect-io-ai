@@ -9,7 +9,7 @@ removed from the `FiberHandle`.
 If a fiber already exists in the `FiberHandle`, it will be interrupted
 unless `options.onlyIfMissing` is set.
 
-**Example**
+**Example** (Setting a fiber safely)
 
 ```ts
 import { Effect, Fiber, FiberHandle } from "effect"
@@ -33,6 +33,6 @@ Effect.gen(function*() {
 declare const set: { <A, E, XE extends E, XA extends A>(fiber: Fiber.Fiber<XA, XE>, options?: { readonly onlyIfMissing?: boolean; readonly propagateInterruption?: boolean | undefined; }): (self: FiberHandle<A, E>) => Effect.Effect<void>; <A, E, XE extends E, XA extends A>(self: FiberHandle<A, E>, fiber: Fiber.Fiber<XA, XE>, options?: { readonly onlyIfMissing?: boolean; readonly propagateInterruption?: boolean | undefined; }): Effect.Effect<void>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FiberHandle.ts#L326)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FiberHandle.ts#L390)
 
 Since v2.0.0

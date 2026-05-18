@@ -3,9 +3,14 @@ Module: `Effect`<br />
 
 ## Effect.spanAnnotations
 
-Returns the annotations of the current span.
+Returns the tracing span annotations currently carried in the effect context.
 
-**Example**
+**Details**
+
+These annotations are applied to spans created inside the context, such as
+spans created by `withSpan`, `useSpan`, or `makeSpan`.
+
+**Example** (Usage)
 
 ```ts
 import { Effect } from "effect"
@@ -32,6 +37,6 @@ Effect.runPromise(program).then(console.log)
 declare const spanAnnotations: Effect<Readonly<Record<string, unknown>>, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L7659)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L7573)
 
 Since v2.0.0

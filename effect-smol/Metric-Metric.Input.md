@@ -5,7 +5,7 @@ Module: `Metric`<br />
 
 Utility type to extract the Input type from a Metric type.
 
-**Example**
+**Example** (Extracting metric input types)
 
 ```ts
 import { Metric } from "effect"
@@ -54,6 +54,6 @@ type Input<A> = A extends Metric<infer _Input, infer _State> ? _Input
     : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Metric.ts#L1355)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Metric.ts#L1318)
 
 Since v2.0.0

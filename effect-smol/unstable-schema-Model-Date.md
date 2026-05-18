@@ -3,15 +3,15 @@ Module: `Model`<br />
 
 ## Model.Date
 
-A schema for a `DateTime.Utc` that is serialized as a date string in the
-format `YYYY-MM-DD`.
+Schema type for a `DateTime.Utc` date-only value encoded as a `YYYY-MM-DD`
+string.
 
 **Signature**
 
 ```ts
-declare const Date: Date
+export interface Date extends Schema.decodeTo<Schema.instanceOf<DateTime.Utc>, Schema.String> {}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Model.ts#L348)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Model.ts#L393)
 
 Since v4.0.0

@@ -5,7 +5,7 @@ Module: `String`<br />
 
 Pads the string from the start with a given fill string to a specified length.
 
-**Example**
+**Example** (Padding strings at the start)
 
 ```ts
 import { pipe, String } from "effect"
@@ -21,6 +21,6 @@ assert.deepStrictEqual(pipe("a", String.padStart(5, "_")), "____a")
 declare const padStart: (maxLength: number, fillString?: string) => (self: string) => string
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L722)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L766)
 
 Since v2.0.0

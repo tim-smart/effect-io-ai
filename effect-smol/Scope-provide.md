@@ -12,7 +12,7 @@ This API replaces the following from Effect 3.x:
 
 - `Scope.extend`
 
-**Example**
+**Example** (Providing a scope)
 
 ```ts
 import { Console, Effect, Scope } from "effect"
@@ -37,6 +37,6 @@ const withScope = Effect.gen(function*() {
 declare const provide: { (value: Scope): <A, E, R>(self: Effect<A, E, R>) => Effect<A, E, Exclude<R, Scope>>; <A, E, R>(self: Effect<A, E, R>, value: Scope): Effect<A, E, Exclude<R, Scope>>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Scope.ts#L294)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Scope.ts#L307)
 
 Since v4.0.0

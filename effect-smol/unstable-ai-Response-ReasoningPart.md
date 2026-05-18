@@ -3,12 +3,11 @@ Module: `Response`<br />
 
 ## Response.ReasoningPart
 
-Response part representing reasoning or chain-of-thought content.
+Response part carrying provider-supplied reasoning text, such as an exposed
+reasoning summary or explanation. Do not assume it contains hidden
+chain-of-thought.
 
-Contains the internal reasoning process or explanation from the large
-language model.
-
-**Example**
+**Example** (Creating a reasoning part)
 
 ```ts
 import { Response } from "effect/unstable/ai"
@@ -30,6 +29,6 @@ export interface ReasoningPart extends BasePart<"reasoning", ReasoningPartMetada
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Response.ts#L850)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Response.ts#L847)
 
-Since v1.0.0
+Since v4.0.0

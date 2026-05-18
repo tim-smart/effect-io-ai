@@ -8,7 +8,7 @@ Logs the number of times that this particular call to count has been called.
 This function maintains a counter for each unique label and increments it
 each time count is called with that label.
 
-**Example**
+**Example** (Counting repeated calls)
 
 ```ts
 import { Console, Effect } from "effect"
@@ -26,6 +26,6 @@ const program = Effect.gen(function*() {
 declare const count: (label?: string) => Effect.Effect<void>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Console.ts#L228)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Console.ts#L236)
 
 Since v2.0.0

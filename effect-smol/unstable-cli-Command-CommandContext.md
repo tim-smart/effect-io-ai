@@ -10,7 +10,7 @@ it can yield the parent command directly to retrieve its config. This is powered
 Effect's service system - each command automatically creates a service that provides
 its parsed input to child commands.
 
-**Example**
+**Example** (Accessing parent command context)
 
 ```ts
 import { Console, Effect } from "effect"
@@ -47,6 +47,6 @@ export interface CommandContext<Name extends string> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Command.ts#L367)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Command.ts#L410)
 
 Since v4.0.0

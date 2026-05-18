@@ -5,7 +5,7 @@ Module: `String`<br />
 
 The empty string `""`.
 
-**Example**
+**Example** (Using the empty string)
 
 ```ts
 import { String } from "effect"
@@ -20,6 +20,6 @@ console.log(String.isEmpty(String.empty)) // true
 declare const empty: ""
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L92)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L96)
 
 Since v2.0.0

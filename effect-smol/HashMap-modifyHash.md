@@ -3,16 +3,14 @@ Module: `HashMap`<br />
 
 ## HashMap.modifyHash
 
-Alter the value of the specified key in the `HashMap` using the specified
-update function. The value of the specified key will be computed using the
-provided hash.
+Sets or removes the specified key using a precomputed hash and an update
+function.
 
-The update function will be invoked with the current value of the key if it
-exists, or `None` if no such value exists.
+The update function receives `Some(value)` when the key exists or `None`
+when it does not. Returning `Some(newValue)` stores the value, and returning
+`None` removes the key or leaves it absent.
 
-This function will always either update or insert a value into the `HashMap`.
-
-**Example**
+**Example** (Updating values with a hash)
 
 ```ts
 import { Hash } from "effect"
@@ -57,6 +55,6 @@ console.log(HashMap.get(withClicks, "clicks")) // Option.some(1)
 declare const modifyHash: { <K, V>(key: K, hash: number, f: HashMap.UpdateFn<V>): (self: HashMap<K, V>) => HashMap<K, V>; <K, V>(self: HashMap<K, V>, key: K, hash: number, f: HashMap.UpdateFn<V>): HashMap<K, V>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashMap.ts#L809)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashMap.ts#L915)
 
 Since v2.0.0

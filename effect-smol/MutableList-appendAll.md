@@ -6,7 +6,7 @@ Module: `MutableList`<br />
 Appends all elements from an iterable to the end of the MutableList.
 Returns the number of elements added.
 
-**Example**
+**Example** (Appending multiple elements)
 
 ```ts
 import * as MutableList from "effect/MutableList"
@@ -43,6 +43,6 @@ console.log(count) // 1000
 declare const appendAll: <A>(self: MutableList<A>, messages: Iterable<A>) => number
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableList.ts#L470)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableList.ts#L501)
 
 Since v4.0.0

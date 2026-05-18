@@ -5,7 +5,7 @@ Module: `RequestResolver`<br />
 
 Constructs a request resolver from an effectual function.
 
-**Example**
+**Example** (Creating a resolver from an effectful function)
 
 ```ts
 import { Effect, Request, RequestResolver } from "effect"
@@ -42,6 +42,6 @@ const getUserEffect = Effect.request(
 declare const fromEffect: <A extends Request.Any>(f: (entry: Request.Entry<A>) => Effect.Effect<Request.Success<A>, Request.Error<A>>) => RequestResolver<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RequestResolver.ts#L380)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RequestResolver.ts#L434)
 
 Since v2.0.0

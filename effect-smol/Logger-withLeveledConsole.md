@@ -16,7 +16,7 @@ etc.) based upon the current `LogLevel`.
 - `Error` and `Fatal` -> `console.error`
 - Others -> `console.log`
 
-**Example**
+**Example** (Writing logs with level-based console methods)
 
 ```ts
 import { Effect, Logger } from "effect"
@@ -43,6 +43,6 @@ const program = Effect.gen(function*() {
 declare const withLeveledConsole: <Message, Output>(self: Logger<Message, Output>) => Logger<Message, void>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Logger.ts#L387)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Logger.ts#L402)
 
 Since v2.0.0

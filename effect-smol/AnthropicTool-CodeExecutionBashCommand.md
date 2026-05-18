@@ -3,14 +3,14 @@ Module: `AnthropicTool`<br />
 
 ## AnthropicTool.CodeExecutionBashCommand
 
-Bash code execution parameter.
+Input payload for a bash command executed through Anthropic code execution.
 
 **Signature**
 
 ```ts
-declare const CodeExecutionBashCommand: Schema.Struct<{ readonly type: Schema.Literal<"bash_code_execution">; readonly command: Schema.String; }>
+type CodeExecutionBashCommand = typeof CodeExecutionBashCommand.Type
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L116)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L131)
 
-Since v1.0.0
+Since v4.0.0

@@ -9,7 +9,7 @@ the console using `console.log`.
 This is useful for taking any logger that produces string or object output
 and routing it to the console for development or debugging purposes.
 
-**Example**
+**Example** (Writing logger output with console.log)
 
 ```ts
 import { Effect, Logger } from "effect"
@@ -33,6 +33,6 @@ const program = Effect.log("Hello World").pipe(
 declare const withConsoleLog: <Message, Output>(self: Logger<Message, Output>) => Logger<Message, void>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Logger.ts#L309)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Logger.ts#L322)
 
 Since v2.0.0

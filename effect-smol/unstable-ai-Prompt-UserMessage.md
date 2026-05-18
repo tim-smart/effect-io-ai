@@ -5,7 +5,7 @@ Module: `Prompt`<br />
 
 Message representing user input or questions.
 
-**Example**
+**Example** (Creating user messages)
 
 ```ts
 import { Prompt } from "effect/unstable/ai"
@@ -43,6 +43,6 @@ export interface UserMessage extends BaseMessage<"user", UserMessageOptions> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L1219)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L1234)
 
 Since v4.0.0

@@ -5,7 +5,7 @@ Module: `Stream`<br />
 
 Creates a single-valued pure stream.
 
-**Example**
+**Example** (Creating a single-valued pure stream)
 
 ```ts
 import { Console, Effect, Stream } from "effect"
@@ -25,6 +25,6 @@ Effect.runPromise(program)
 declare const succeed: <A>(value: A) => Stream<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L813)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L863)
 
 Since v2.0.0

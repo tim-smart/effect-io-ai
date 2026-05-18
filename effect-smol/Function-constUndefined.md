@@ -5,7 +5,7 @@ Module: `Function`<br />
 
 A thunk that returns always `undefined`.
 
-**Example**
+**Example** (Returning undefined from a thunk)
 
 ```ts
 import { constUndefined } from "effect/Function"
@@ -20,6 +20,6 @@ assert.deepStrictEqual(constUndefined(), undefined)
 declare const constUndefined: LazyArg<undefined>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Function.ts#L342)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Function.ts#L387)
 
 Since v2.0.0

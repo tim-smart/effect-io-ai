@@ -3,12 +3,15 @@ Module: `TxQueue`<br />
 
 ## TxQueue.take
 
-Takes an item from the queue.
+Takes the next item from the queue, retrying the transaction while the queue
+is empty.
+
+If the queue is done, the effect fails with the queue's completion cause.
 
 **Mutation behavior**: This function mutates the original TxQueue by removing
 the first item. It does not return a new TxQueue reference.
 
-**Example**
+**Example** (Taking a value)
 
 ```ts
 import { Effect, TxQueue } from "effect"
@@ -34,6 +37,6 @@ const program = Effect.gen(function*() {
 declare const take: <A, E>(self: TxDequeue<A, E>) => Effect.Effect<A, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxQueue.ts#L690)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxQueue.ts#L668)
 
 Since v4.0.0

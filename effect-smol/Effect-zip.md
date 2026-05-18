@@ -13,10 +13,14 @@ Once both effects succeed, their results are combined into a tuple.
 By default, `zip` processes the effects sequentially. To execute the effects concurrently,
 use the `{ concurrent: true }` option.
 
-**Example**
+**See**
+
+- `zipWith` for a version that combines the results with a custom function.
+- `validate` for a version that accumulates errors.
+
+**Example** (Combining Two Effects Sequentially)
 
 ```ts
-// Title: Combining Two Effects Sequentially
 import { Effect } from "effect"
 
 const task1 = Effect.succeed(1).pipe(
@@ -41,10 +45,9 @@ Effect.runPromise(program).then(console.log)
 // [ 1, 'hello' ]
 ```
 
-**Example**
+**Example** (Combining Two Effects Concurrently)
 
 ```ts
-// Title: Combining Two Effects Concurrently
 import { Effect } from "effect"
 
 const task1 = Effect.succeed(1).pipe(
@@ -66,17 +69,12 @@ Effect.runPromise(program).then(console.log)
 // [ 1, 'hello' ]
 ```
 
-**See**
-
-- `zipWith` for a version that combines the results with a custom function.
-- `validate` for a version that accumulates errors.
-
 **Signature**
 
 ```ts
 declare const zip: { <A2, E2, R2>(that: Effect<A2, E2, R2>, options?: { readonly concurrent?: boolean | undefined; } | undefined): <A, E, R>(self: Effect<A, E, R>) => Effect<[A, A2], E2 | E, R2 | R>; <A, E, R, A2, E2, R2>(self: Effect<A, E, R>, that: Effect<A2, E2, R2>, options?: { readonly concurrent?: boolean | undefined; }): Effect<[A, A2], E | E2, R | R2>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L2516)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L2402)
 
 Since v2.0.0

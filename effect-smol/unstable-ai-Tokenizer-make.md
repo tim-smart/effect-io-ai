@@ -9,7 +9,7 @@ This function constructs a complete Tokenizer service by providing a
 tokenization function. The service handles both tokenization and
 truncation operations using the provided tokenizer.
 
-**Example**
+**Example** (Creating a word tokenizer)
 
 ```ts
 import { Effect } from "effect"
@@ -38,6 +38,6 @@ const wordTokenizer = Tokenizer.make({
 declare const make: (options: { readonly tokenize: (content: Prompt.Prompt) => Effect.Effect<Array<number>, AiError.AiError>; }) => Service
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tokenizer.ts#L150)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tokenizer.ts#L155)
 
 Since v4.0.0

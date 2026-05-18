@@ -8,7 +8,7 @@ An interface for objects that can provide a string-based primary key.
 Objects implementing this interface must provide a method that returns
 a unique string identifier.
 
-**Example**
+**Example** (Implementing a primary key)
 
 ```ts
 import { PrimaryKey } from "effect"
@@ -33,6 +33,6 @@ export interface PrimaryKey {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PrimaryKey.ts#L47)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PrimaryKey.ts#L48)
 
 Since v2.0.0

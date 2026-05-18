@@ -17,4 +17,4 @@ declare const Shell: <Mode extends Tool.FailureMode | undefined = undefined>(arg
 
 [Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiTool.ts#L198)
 
-Since v1.0.0
+Since v4.0.0

@@ -11,7 +11,7 @@ Re-exports all named exports from the "./NonEmptyIterable.ts" module as `NonEmpt
 export * as NonEmptyIterable from "./NonEmptyIterable.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L2533)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L2579)
 
 Since v2.0.0
 
@@ -35,6 +35,8 @@ Many operations require non-empty collections to be meaningful:
 - Operations that would otherwise need runtime checks
 
 ## Basic Usage
+
+**Example** (Requiring a non-empty iterable)
 
 ```ts
 import * as NonEmptyIterable from "effect/NonEmptyIterable"
@@ -71,6 +73,8 @@ const firstGenerated = processNonEmpty(generateNumbers()) // number
 ```
 
 ## Working with Different Iterable Types
+
+**Example** (Adapting iterable inputs)
 
 ```ts
 import { Array } from "effect"
@@ -117,9 +121,10 @@ console.log(firstFib) // 1
 
 ## Integration with Effect Arrays
 
+**Example** (Processing non-empty iterables with Array)
+
 ```ts
 import { Array, pipe } from "effect"
-import type * as NonEmptyIterable from "effect/NonEmptyIterable"
 import type * as NonEmptyIterable from "effect/NonEmptyIterable"
 
 // Many Array functions work with NonEmptyIterable

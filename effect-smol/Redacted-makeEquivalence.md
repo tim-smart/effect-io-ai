@@ -7,7 +7,7 @@ Generates an equivalence relation for `Redacted<A>` values based on an
 equivalence relation for the underlying values `A`. This function is useful
 for comparing `Redacted` instances without exposing their contents.
 
-**Example**
+**Example** (Comparing redacted values)
 
 ```ts
 import { Equivalence, Redacted } from "effect"
@@ -29,6 +29,6 @@ assert.equal(equivalence(API_KEY1, API_KEY3), true)
 declare const makeEquivalence: <A>(isEquivalent: Equivalence.Equivalence<A>) => Equivalence.Equivalence<Redacted<A>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Redacted.ts#L229)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Redacted.ts#L259)
 
 Since v3.3.0

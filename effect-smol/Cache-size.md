@@ -9,7 +9,7 @@ Note that expired entries are counted until they are accessed and removed.
 The size reflects the current number of entries stored, not the number
 of valid entries.
 
-**Example**
+**Example** (Reading cache size)
 
 ```ts
 import { Cache, Effect } from "effect"
@@ -43,6 +43,6 @@ const program = Effect.gen(function*() {
 declare const size: <Key, A, E, R>(self: Cache<Key, A, E, R>) => Effect.Effect<number>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cache.ts#L1099)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cache.ts#L1182)
 
 Since v4.0.0

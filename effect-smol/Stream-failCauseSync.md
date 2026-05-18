@@ -5,7 +5,7 @@ Module: `Stream`<br />
 
 The stream that always fails with the specified lazily evaluated `Cause`.
 
-**Example**
+**Example** (Failing with a lazy cause)
 
 ```ts
 import { Cause, Console, Effect, Stream } from "effect"
@@ -30,6 +30,6 @@ Effect.runPromise(program)
 declare const failCauseSync: <E>(evaluate: LazyArg<Cause.Cause<E>>) => Stream<never, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L1011)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L1069)
 
 Since v2.0.0

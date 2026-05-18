@@ -5,7 +5,7 @@ Module: `Response`<br />
 
 Response part representing a tool call request.
 
-**Example**
+**Example** (Creating a tool call part)
 
 ```ts
 import { Schema } from "effect"
@@ -54,6 +54,6 @@ export interface ToolCallPart<Name extends string, Params> extends BasePart<"too
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Response.ts#L1342)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Response.ts#L1340)
 
-Since v1.0.0
+Since v4.0.0

@@ -14,7 +14,7 @@ within a range.
 - `attributes`  - The attributes to associate with the `Histogram`.
 - `boundaries`  - The bucket boundaries of the `Histogram`
 
-**Example**
+**Example** (Creating histogram metrics)
 
 ```ts
 import { Data, Effect, Metric } from "effect"
@@ -76,6 +76,6 @@ const program = Effect.gen(function*() {
 declare const histogram: (name: string, options: { readonly description?: string | undefined; readonly attributes?: Metric.Attributes | undefined; readonly boundaries: ReadonlyArray<number>; }) => Histogram<number>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Metric.ts#L2479)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Metric.ts#L2464)
 
 Since v2.0.0

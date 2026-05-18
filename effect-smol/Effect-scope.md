@@ -5,7 +5,7 @@ Module: `Effect`<br />
 
 Returns the current scope for resource management.
 
-**Example**
+**Example** (Usage)
 
 ```ts
 import { Console, Effect } from "effect"
@@ -37,6 +37,6 @@ Effect.runPromise(Effect.scoped(program)).then(console.log)
 declare const scope: Effect<Scope, never, Scope>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L6050)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L5939)
 
 Since v2.0.0

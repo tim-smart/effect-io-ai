@@ -5,7 +5,7 @@ Module: `Effect`<br />
 
 Tests if a value is an `Effect`.
 
-**Example**
+**Example** (Usage)
 
 ```ts
 import { Effect } from "effect"
@@ -20,6 +20,6 @@ console.log(Effect.isEffect("hello")) // false
 declare const isEffect: (u: unknown) => u is Effect<any, any, any>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L297)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L254)
 
 Since v2.0.0

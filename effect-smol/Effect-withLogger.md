@@ -5,7 +5,7 @@ Module: `Effect`<br />
 
 Adds a logger to the set of loggers which will output logs for this effect.
 
-**Example**
+**Example** (Usage)
 
 ```ts
 import { Effect, Logger } from "effect"
@@ -33,6 +33,6 @@ Effect.runPromise(programWithLogger)
 declare const withLogger: (<Output>(logger: Logger<unknown, Output>) => <A, E, R>(effect: Effect<A, E, R>) => Effect<A, E, R>) & (<A, E, R, Output>(effect: Effect<A, E, R>, logger: Logger<unknown, Output>) => Effect<A, E, R>)
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L13201)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L13152)
 
 Since v2.0.0

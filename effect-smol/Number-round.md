@@ -5,7 +5,7 @@ Module: `Number`<br />
 
 Returns the number rounded with the given precision.
 
-**Example**
+**Example** (Rounding with precision)
 
 ```ts
 import { round } from "effect/Number"
@@ -21,6 +21,6 @@ assert.deepStrictEqual(round(1.567, 2), 1.57)
 declare const round: { (precision: number): (self: number) => number; (self: number, precision: number): number; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Number.ts#L589)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Number.ts#L613)
 
 Since v3.8.0

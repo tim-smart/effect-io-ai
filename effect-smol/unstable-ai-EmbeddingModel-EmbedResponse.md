@@ -11,6 +11,6 @@ Response for a single embedding request.
 declare class EmbedResponse
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EmbeddingModel.ts#L63)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EmbeddingModel.ts#L64)
 
 Since v4.0.0

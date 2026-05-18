@@ -3,42 +3,41 @@ Module: `Context`<br />
 
 ## Context.Reference
 
-Creates a context key with a default value.
+Service key with a lazily computed default value.
 
 **Details**
 
-`Context.Reference` allows you to create a key that can hold a value. You
-can provide a default value for the service, which will automatically be used
-when the context is accessed, or override it with a custom implementation
-when needed.
+When a `Reference` is requested from a `Context` that does not contain an
+override, Context getters that resolve references return the cached default
+value instead of failing.
 
-**Example**
+**Example** (Defining a reference with a default value)
 
 ```ts
 import { Context } from "effect"
 
-// Create a reference with a default value
-const LoggerRef = Context.Reference("Logger", {
-  defaultValue: () => ({ log: (msg: string) => console.log(msg) })
-})
+// Define a reference with a default value
+const LoggerRef: Context.Reference<{ log: (msg: string) => void }> =
+  Context.Reference("Logger", {
+    defaultValue: () => ({ log: (msg: string) => console.log(msg) })
+  })
 
-// The reference provides the default value when accessed from an empty context
+// The reference can be used without explicit provision
 const context = Context.empty()
-const logger = Context.get(context, LoggerRef)
-
-// You can also override the default value
-const customContext = Context.make(LoggerRef, {
-  log: (msg: string) => `Custom: ${msg}`
-})
-const customLogger = Context.get(customContext, LoggerRef)
+const logger = Context.get(context, LoggerRef) // Uses default value
 ```
 
 **Signature**
 
 ```ts
-declare const Reference: <Service>(key: string, options: { readonly defaultValue: () => Service; }) => Reference<Service>
+export interface Reference<in out Shape> extends Service<never, Shape> {
+  readonly [ReferenceTypeId]: typeof ReferenceTypeId
+  readonly defaultValue: () => Shape
+  [Symbol.iterator](): EffectIterator<Reference<Shape>>
+  new(_: never): {}
+}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Context.ts#L1022)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Context.ts#L301)
 
 Since v4.0.0

@@ -5,7 +5,7 @@ Module: `TxPriorityQueue`<br />
 
 Creates a `TxPriorityQueue` from an iterable of elements.
 
-**Example**
+**Example** (Creating a priority queue from an iterable)
 
 ```ts
 import { Effect, Order, TxPriorityQueue } from "effect"
@@ -23,6 +23,6 @@ const program = Effect.gen(function*() {
 declare const fromIterable: { <A>(order: Order<A>): (iterable: Iterable<A>) => Effect.Effect<TxPriorityQueue<A>>; <A>(order: Order<A>, iterable: Iterable<A>): Effect.Effect<TxPriorityQueue<A>>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxPriorityQueue.ts#L132)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxPriorityQueue.ts#L135)
 
 Since v4.0.0

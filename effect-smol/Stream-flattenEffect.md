@@ -5,7 +5,7 @@ Module: `Stream`<br />
 
 Flattens a stream of `Effect` values into a stream of their results.
 
-**Example**
+**Example** (Flattening a stream of Effect values into a stream of their results)
 
 ```ts
 import { Console, Effect, Stream } from "effect"
@@ -27,6 +27,6 @@ Effect.runPromise(program)
 declare const flattenEffect: <Arg extends Stream<Effect.Effect<any, any, any>, any, any> | { readonly concurrency?: number | "unbounded" | undefined; readonly unordered?: boolean | undefined; } | undefined = { readonly concurrency?: number | "unbounded" | undefined; readonly unordered?: boolean | undefined; }>(selfOrOptions?: Arg, options?: { readonly concurrency?: number | "unbounded" | undefined; readonly unordered?: boolean | undefined; } | undefined) => [Arg] extends [Stream<Effect.Effect<infer _A, infer _EX, infer _RX>, infer _E, infer _R>] ? Stream<_A, _EX | _E, _RX | _R> : <A, EX, RX, E, R>(self: Stream<Effect.Effect<A, EX, RX>, E, R>) => Stream<A, EX | E, RX | R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L1995)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L2091)
 
 Since v2.0.0

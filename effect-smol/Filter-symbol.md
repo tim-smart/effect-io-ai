@@ -11,6 +11,6 @@ A predefined filter that only passes through Symbol values.
 declare const symbol: Filter<unknown, symbol, unknown>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Filter.ts#L301)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Filter.ts#L353)
 
 Since v4.0.0

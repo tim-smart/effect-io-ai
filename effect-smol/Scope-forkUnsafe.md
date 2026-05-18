@@ -3,10 +3,13 @@ Module: `Scope`<br />
 
 ## Scope.forkUnsafe
 
-Creates a child scope from a parent scope synchronously without wrapping it in an `Effect`.
-The child scope inherits the parent's finalization strategy unless overridden.
+Synchronously creates a closeable child scope registered with a parent scope.
 
-**Example**
+Closing the parent closes the child with the same exit value, and closing the
+child detaches it from the parent. The optional finalizer strategy configures
+the child scope and defaults to `"sequential"` when omitted.
+
+**Example** (Creating a child scope synchronously)
 
 ```ts
 import { Console, Effect, Exit, Scope } from "effect"
@@ -31,6 +34,6 @@ const program = Effect.gen(function*() {
 declare const forkUnsafe: (scope: Scope, finalizerStrategy?: "sequential" | "parallel") => Closeable
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Scope.ts#L424)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Scope.ts#L452)
 
 Since v4.0.0

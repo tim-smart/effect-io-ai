@@ -5,7 +5,7 @@ Module: `Channel`<br />
 
 Constructs a channel that fails immediately with the specified defect.
 
-**Example**
+**Example** (Dying with defects)
 
 ```ts
 import { Channel } from "effect"
@@ -29,6 +29,6 @@ const objectDefect = Channel.die({
 declare const die: (defect: unknown) => Channel<never, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L1012)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L1093)
 
 Since v2.0.0

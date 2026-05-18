@@ -3,10 +3,13 @@ Module: `Redacted`<br />
 
 ## Redacted.make
 
-This function creates a `Redacted<A>` instance from a given value `A`,
-securely hiding its content.
+Creates a `Redacted` wrapper for a sensitive value.
 
-**Example**
+The wrapper redacts string, JSON, and inspection output to reduce accidental
+disclosure. The original value remains retrievable with `Redacted.value`
+until the wrapper is wiped or becomes unreachable.
+
+**Example** (Creating a redacted value)
 
 ```ts
 import { Redacted } from "effect"
@@ -20,6 +23,6 @@ const API_KEY = Redacted.make("1234567890")
 declare const make: <T>(value: T, options?: { readonly label?: string | undefined; }) => Redacted<T>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Redacted.ts#L123)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Redacted.ts#L147)
 
 Since v3.3.0

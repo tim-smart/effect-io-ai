@@ -7,7 +7,7 @@ Creates a traced function with an optional span name and `SpanOptionsNoTrace` th
 
 Pipeable functions run after the body and can transform the resulting Effect.
 
-**Example**
+**Example** (Usage)
 
 ```ts
 import { Console, Effect } from "effect"
@@ -33,6 +33,6 @@ const program = Effect.gen(function*() {
 declare const fn: fn.Traced & ((name: string, options?: SpanOptionsNoTrace) => fn.Traced)
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L12903)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L12844)
 
 Since v3.12.0

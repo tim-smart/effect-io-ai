@@ -5,7 +5,7 @@ Module: `Trie`<br />
 
 Applies the specified function to the entries of the `Trie`.
 
-**Example**
+**Example** (Iterating over entries)
 
 ```ts
 import * as Trie from "effect/Trie"
@@ -31,6 +31,6 @@ assert.equal(value, 17)
 declare const forEach: { <V>(f: (value: V, key: string) => void): (self: Trie<V>) => void; <V>(self: Trie<V>, f: (value: V, key: string) => void): void; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Trie.ts#L822)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Trie.ts#L852)
 
 Since v2.0.0

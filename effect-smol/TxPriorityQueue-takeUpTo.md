@@ -5,7 +5,7 @@ Module: `TxPriorityQueue`<br />
 
 Takes up to `n` elements from the queue in priority order.
 
-**Example**
+**Example** (Taking up to a limit)
 
 ```ts
 import { Effect, Order, TxPriorityQueue } from "effect"
@@ -23,6 +23,6 @@ const program = Effect.gen(function*() {
 declare const takeUpTo: { (n: number): <A>(self: TxPriorityQueue<A>) => Effect.Effect<Array<A>>; <A>(self: TxPriorityQueue<A>, n: number): Effect.Effect<Array<A>>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxPriorityQueue.ts#L424)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxPriorityQueue.ts#L439)
 
 Since v4.0.0

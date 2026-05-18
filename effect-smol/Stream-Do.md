@@ -5,7 +5,7 @@ Module: `Stream`<br />
 
 Provides the entry point for do-notation style stream composition.
 
-**Example**
+**Example** (Starting stream do notation)
 
 ```ts
 import { Console, Effect, Stream, pipe } from "effect"
@@ -31,6 +31,6 @@ Effect.runPromise(effect)
 declare const Do: Stream<{}, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L9672)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L9970)
 
 Since v4.0.0

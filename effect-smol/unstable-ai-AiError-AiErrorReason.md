@@ -5,11 +5,9 @@ Module: `AiError`<br />
 
 Union type of all semantic error reasons that can occur during AI operations.
 
-Each reason type provides:
-- Semantic categorization of the failure mode
-- `isRetryable` getter indicating if the error is transient
-- Optional `retryAfter` duration for rate limit/throttling errors
-- Rich context including provider metadata and HTTP details
+Every reason carries a semantic `_tag`, a human-readable message, and an
+`isRetryable` getter. Provider-facing reasons may also include retry timing,
+provider metadata, usage information, or HTTP context.
 
 **Signature**
 
@@ -34,6 +32,6 @@ type AiErrorReason = | RateLimitError
   | InvalidUserInputError
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AiError.ts#L1289)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AiError.ts#L1351)
 
-Since v1.0.0
+Since v4.0.0

@@ -5,7 +5,7 @@ Module: `Graph`<br />
 
 Adds a new node to a mutable graph and returns its index.
 
-**Example**
+**Example** (Adding nodes)
 
 ```ts
 import { Graph } from "effect"
@@ -24,6 +24,6 @@ const result = Graph.mutate(Graph.directed<string, number>(), (mutable) => {
 declare const addNode: <N, E, T extends Kind = "directed">(mutable: MutableGraph<N, E, T>, data: N) => NodeIndex
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Graph.ts#L447)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Graph.ts#L519)
 
 Since v4.0.0

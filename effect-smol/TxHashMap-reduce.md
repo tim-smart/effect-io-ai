@@ -6,7 +6,7 @@ Module: `TxHashMap`<br />
 Reduces the TxHashMap entries to a single value by applying a reducer function.
 Iterates over all key-value pairs and accumulates them into a final result.
 
-**Example**
+**Example** (Reducing entries)
 
 ```ts
 import { Effect, TxHashMap } from "effect"
@@ -60,6 +60,6 @@ const program = Effect.gen(function*() {
 declare const reduce: { <A, V, K>(zero: A, f: (accumulator: A, value: V, key: K) => A): (self: TxHashMap<K, V>) => Effect.Effect<A>; <K, V, A>(self: TxHashMap<K, V>, zero: A, f: (accumulator: A, value: V, key: K) => A): Effect.Effect<A>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashMap.ts#L1475)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashMap.ts#L1541)
 
 Since v2.0.0

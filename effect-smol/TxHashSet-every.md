@@ -5,7 +5,7 @@ Module: `TxHashSet`<br />
 
 Tests whether all values in the TxHashSet satisfy the predicate.
 
-**Example**
+**Example** (Testing whether every value matches)
 
 ```ts
 import { Effect, TxHashSet } from "effect"
@@ -27,6 +27,6 @@ const program = Effect.gen(function*() {
 declare const every: { <V>(predicate: Predicate<V>): (self: TxHashSet<V>) => Effect.Effect<boolean>; <V>(self: TxHashSet<V>, predicate: Predicate<V>): Effect.Effect<boolean>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashSet.ts#L701)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashSet.ts#L745)
 
 Since v2.0.0

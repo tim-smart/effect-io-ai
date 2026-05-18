@@ -6,7 +6,7 @@ Module: `HashSet`<br />
 A HashSet is an immutable set data structure that provides efficient storage
 and retrieval of unique values. It uses a HashMap internally for optimal performance.
 
-**Example**
+**Example** (Creating and updating a HashSet)
 
 ```ts
 import * as HashSet from "effect/HashSet"
@@ -35,6 +35,6 @@ export interface HashSet<out Value> extends Iterable<Value>, Equal, Pipeable, In
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashSet.ts#L42)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashSet.ts#L80)
 
 Since v2.0.0

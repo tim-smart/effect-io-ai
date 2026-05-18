@@ -5,23 +5,21 @@ Module: `Schedule`<br />
 
 Creates a Schedule from a step function that returns a Pull.
 
-**Example**
+**Example** (Creating a custom schedule from a step function)
 
 ```ts
-import { Schedule } from "effect"
+import { Cause, Duration, Effect, Schedule } from "effect"
 
-// fromStep is an advanced function for creating custom schedules
-// It requires a step function that returns a Pull value
+const schedule = Schedule.fromStep(Effect.sync(() => {
+  let count = 0
 
-// Most users should use simpler schedule constructors like:
-const simpleSchedule = Schedule.exponential("100 millis")
-const spacedSchedule = Schedule.spaced("1 second")
-const recurringSchedule = Schedule.recurs(5)
-
-// These can be combined and transformed as needed
-const complexSchedule = simpleSchedule.pipe(
-  Schedule.both(Schedule.recurs(3))
-)
+  return (_now: number, _input: string) => {
+    if (count >= 3) {
+      return Cause.done(count)
+    }
+    return Effect.succeed([count++, Duration.millis(100)] as [number, Duration.Duration])
+  }
+}))
 ```
 
 **Signature**
@@ -30,6 +28,6 @@ const complexSchedule = simpleSchedule.pipe(
 declare const fromStep: <Input, Output, EnvX, Error, ErrorX, Env>(step: Effect<(now: number, input: Input) => Pull.Pull<[Output, Duration.Duration], ErrorX, Output, EnvX>, Error, Env>) => Schedule<Output, Input, Error | Pull.ExcludeDone<ErrorX>, Env | EnvX>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L346)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L347)
 
 Since v4.0.0

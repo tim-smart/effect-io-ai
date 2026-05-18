@@ -6,13 +6,16 @@ Module: `Flag`<br />
 Creates an empty sentinel flag that always fails to parse.
 This is useful for creating placeholder flags or for combinators.
 
-**Example**
+**Example** (Creating sentinel flags)
 
 ```ts
 import { Flag } from "effect/unstable/cli"
 
-// Used as a placeholder in flag combinators
-const conditionalFlag = true ? Flag.string("value") : Flag.none
+const makeValueFlag = (includeValue: boolean) =>
+  includeValue ? Flag.string("value") : Flag.none
+
+console.log(makeValueFlag(true) === Flag.none) // false
+console.log(makeValueFlag(false) === Flag.none) // true
 ```
 
 **Signature**
@@ -21,6 +24,6 @@ const conditionalFlag = true ? Flag.string("value") : Flag.none
 declare const none: Flag<never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Flag.ts#L355)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Flag.ts#L396)
 
 Since v4.0.0

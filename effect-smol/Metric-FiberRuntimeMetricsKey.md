@@ -5,7 +5,7 @@ Module: `Metric`<br />
 
 Service key for the fiber runtime metrics service.
 
-**Example**
+**Example** (Using the fiber runtime metrics key)
 
 ```ts
 import { Data, Effect, Layer, Metric } from "effect"
@@ -42,6 +42,6 @@ const program = Effect.gen(function*() {
 declare const FiberRuntimeMetricsKey: "effect/observability/Metric/FiberRuntimeMetricsKey"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Metric.ts#L3512)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Metric.ts#L3527)
 
 Since v4.0.0

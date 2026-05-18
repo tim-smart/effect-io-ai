@@ -10,7 +10,7 @@ patterns that will be applied to values of the specified type. It maintains
 type-level information about the input type, applied filters, remaining cases,
 and expected results.
 
-**Example**
+**Example** (Creating a type matcher)
 
 ```ts
 import { Match } from "effect"
@@ -43,6 +43,6 @@ export interface TypeMatcher<in Input, out Filters, out Remaining, out Result, o
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L107)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L102)
 
 Since v4.0.0

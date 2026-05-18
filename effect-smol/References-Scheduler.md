@@ -6,7 +6,7 @@ Module: `References`<br />
 Reference for the current scheduler implementation used by the Effect runtime.
 Controls how Effects are scheduled and executed.
 
-**Example**
+**Example** (Providing a custom scheduler)
 
 ```ts
 import { Effect, References, Scheduler } from "effect"
@@ -37,6 +37,6 @@ const customScheduling = Effect.gen(function*() {
 declare const Scheduler: Context.Reference<Scheduler>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/References.ts#L579)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/References.ts#L621)
 
 Since v4.0.0

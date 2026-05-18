@@ -6,7 +6,7 @@ Module: `MutableRef`<br />
 Updates the MutableRef with the result of applying a function to its current value,
 and returns the previous value.
 
-**Example**
+**Example** (Reading before updating)
 
 ```ts
 import { MutableRef } from "effect"
@@ -47,6 +47,6 @@ console.log(MutableRef.get(list)) // [1, 2, 3, 4]
 declare const getAndUpdate: { <T>(f: (value: T) => T): (self: MutableRef<T>) => T; <T>(self: MutableRef<T>, f: (value: T) => T): T; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableRef.ts#L422)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableRef.ts#L441)
 
 Since v2.0.0

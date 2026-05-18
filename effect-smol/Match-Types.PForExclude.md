@@ -9,7 +9,7 @@ This utility type determines what should be excluded from a union type
 when a pattern is used in filtering operations. It transforms patterns
 into their exclusion-safe representations.
 
-**Example**
+**Example** (Computing excluded patterns)
 
 ```ts
 import type { Match } from "effect"
@@ -29,6 +29,6 @@ type PForExclude<P> = [SafeRefinementR<ToSafeRefinement<P>>] extends [infer X] ?
     : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L2001)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L1982)
 
 Since v4.0.0

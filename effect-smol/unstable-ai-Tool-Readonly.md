@@ -5,7 +5,10 @@ Module: `Tool`<br />
 
 Annotation indicating whether a tool only reads data without making changes.
 
-**Example**
+This is emitted as the MCP `readOnlyHint`; unannotated tools default to
+`false`.
+
+**Example** (Marking a tool as read-only)
 
 ```ts
 import { Tool } from "effect/unstable/ai"
@@ -20,6 +23,6 @@ const readOnlyTool = Tool.make("get_user_info")
 declare const Readonly: Context.Reference<boolean>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tool.ts#L1651)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tool.ts#L1699)
 
-Since v1.0.0
+Since v4.0.0

@@ -3,14 +3,14 @@ Module: `AnthropicTool`<br />
 
 ## AnthropicTool.WebFetchCitationsConfig
 
-Citation configuration for web fetch.
+Configuration payload for enabling or disabling citations on web fetch results.
 
 **Signature**
 
 ```ts
-declare const WebFetchCitationsConfig: Schema.Struct<{ readonly enabled: Schema.Boolean; }>
+type WebFetchCitationsConfig = typeof WebFetchCitationsConfig.Type
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L1385)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L1493)
 
-Since v1.0.0
+Since v4.0.0

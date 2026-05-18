@@ -7,7 +7,7 @@ Prepends all elements from an iterable to the beginning of the MutableList.
 The elements are added in order, so the first element in the iterable becomes
 the new head of the list.
 
-**Example**
+**Example** (Prepending multiple elements)
 
 ```ts
 import * as MutableList from "effect/MutableList"
@@ -36,6 +36,6 @@ console.log(MutableList.takeAll(newList)) // ["h", "e", "l", "l", "o"]
 declare const prependAll: <A>(self: MutableList<A>, messages: Iterable<A>) => void
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableList.ts#L390)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableList.ts#L419)
 
 Since v4.0.0

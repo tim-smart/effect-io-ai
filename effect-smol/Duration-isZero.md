@@ -5,7 +5,7 @@ Module: `Duration`<br />
 
 Checks if a Duration is zero.
 
-**Example**
+**Example** (Checking for zero durations)
 
 ```ts
 import { Duration } from "effect"
@@ -20,6 +20,6 @@ console.log(Duration.isZero(Duration.seconds(1))) // false
 declare const isZero: (self: Duration) => boolean
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Duration.ts#L373)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Duration.ts#L381)
 
 Since v3.5.0

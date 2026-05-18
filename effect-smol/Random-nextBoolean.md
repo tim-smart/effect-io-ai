@@ -5,7 +5,7 @@ Module: `Random`<br />
 
 Generates a random boolean value.
 
-**Example**
+**Example** (Generating a random boolean)
 
 ```ts
 import { Effect, Random } from "effect"
@@ -22,6 +22,6 @@ const program = Effect.gen(function*() {
 declare const nextBoolean: Effect.Effect<boolean, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Random.ts#L95)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Random.ts#L99)
 
 Since v4.0.0

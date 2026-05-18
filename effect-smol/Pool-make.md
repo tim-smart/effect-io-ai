@@ -24,6 +24,6 @@ A `targetUtilization` of 0.5 will create new pool items when the existing items 
 declare const make: <A, E, R>(options: { readonly acquire: Effect.Effect<A, E, R>; readonly size: number; readonly concurrency?: number | undefined; readonly targetUtilization?: number | undefined; }) => Effect.Effect<Pool<A, E>, never, R | Scope.Scope>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Pool.ts#L114)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Pool.ts#L175)
 
 Since v2.0.0

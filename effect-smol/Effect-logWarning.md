@@ -5,7 +5,7 @@ Module: `Effect`<br />
 
 Logs one or more messages at the WARNING level.
 
-**Example**
+**Example** (Usage)
 
 ```ts
 import { Effect } from "effect"
@@ -34,6 +34,6 @@ Effect.runPromise(program)
 declare const logWarning: (...message: ReadonlyArray<any>) => Effect<void>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L13050)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L12996)
 
 Since v2.0.0

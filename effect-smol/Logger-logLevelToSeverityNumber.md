@@ -16,6 +16,6 @@ validate the field map such values to `UNSPECIFIED`.
 declare const logLevelToSeverityNumber: (level: LogLevel.LogLevel) => SeverityNumber
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Logger.ts#L41)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Logger.ts#L64)
 
-Since v1.0.0
+Since v4.0.0

@@ -5,7 +5,7 @@ Module: `Chunk`<br />
 
 Groups elements in chunks of up to `n` elements.
 
-**Example**
+**Example** (Splitting into fixed-size chunks)
 
 ```ts
 import { Chunk } from "effect"
@@ -29,6 +29,6 @@ console.log(Chunk.toArray(chunked2).map(Chunk.toArray))
 declare const chunksOf: { (n: number): <A>(self: Chunk<A>) => Chunk<Chunk<A>>; <A>(self: Chunk<A>, n: number): Chunk<Chunk<A>>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L1278)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L1297)
 
 Since v2.0.0

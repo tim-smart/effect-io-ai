@@ -5,7 +5,7 @@ Module: `Argument`<br />
 
 Creates a positional argument that reads file content as a string.
 
-**Example**
+**Example** (Reading file text)
 
 ```ts
 import { Argument } from "effect/unstable/cli"
@@ -19,6 +19,6 @@ const config = Argument.fileText("config-file")
 declare const fileText: (name: string) => Argument<string>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Argument.ts#L195)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Argument.ts#L227)
 
 Since v4.0.0

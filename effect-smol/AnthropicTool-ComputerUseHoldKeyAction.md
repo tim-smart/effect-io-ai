@@ -3,14 +3,14 @@ Module: `AnthropicTool`<br />
 
 ## AnthropicTool.ComputerUseHoldKeyAction
 
-Holds a key while performing other actions.
+Computer-use action payload for holding a key for a specified duration.
 
 **Signature**
 
 ```ts
-declare const ComputerUseHoldKeyAction: Schema.Struct<{ readonly action: Schema.Literal<"hold_key">; readonly text: Schema.String; readonly duration: Schema.Number; }>
+type ComputerUseHoldKeyAction = typeof ComputerUseHoldKeyAction.Type
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L503)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L552)
 
-Since v1.0.0
+Since v4.0.0

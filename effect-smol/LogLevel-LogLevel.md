@@ -15,7 +15,7 @@ The levels are ordered from most severe to least severe:
 - `Trace` - Very detailed trace information
 - `None` - Special level that suppresses all messages
 
-**Example**
+**Example** (Using log levels)
 
 ```ts
 import { Effect } from "effect"
@@ -41,6 +41,6 @@ const debugLevel = "Debug" // LogLevel
 type LogLevel = "All" | "Fatal" | "Error" | "Warn" | "Info" | "Debug" | "Trace" | "None"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/LogLevel.ts#L143)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/LogLevel.ts#L83)
 
 Since v4.0.0

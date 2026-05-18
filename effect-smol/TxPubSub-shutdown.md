@@ -3,10 +3,14 @@ Module: `TxPubSub`<br />
 
 ## TxPubSub.shutdown
 
-Shuts down the TxPubSub and all subscriber queues. Subsequent publish operations
-will return `false`. Subsequent subscribe operations will receive an already-shutdown queue.
+Shuts down the TxPubSub and all subscriber queues registered at the time of
+shutdown.
 
-**Example**
+After shutdown, `publish` and `publishAll` return `false`, and
+`awaitShutdown` completes. The operation is idempotent; subscribers acquired
+after shutdown are not automatically shut down by this call.
+
+**Example** (Shutting down a pub/sub)
 
 ```ts
 import { Effect, TxPubSub } from "effect"
@@ -29,6 +33,6 @@ const program = Effect.gen(function*() {
 declare const shutdown: <A>(self: TxPubSub<A>) => Effect.Effect<void>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxPubSub.ts#L576)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxPubSub.ts#L598)
 
 Since v4.0.0

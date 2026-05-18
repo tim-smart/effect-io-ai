@@ -3,13 +3,16 @@ Module: `Graph`<br />
 
 ## Graph.dfsPostOrder
 
-Creates a new DFS postorder iterator with optional configuration.
+Creates a lazy depth-first postorder traversal iterator from the configured
+start nodes.
 
-The iterator maintains a stack with visit state tracking and emits nodes
-in postorder (after all descendants have been processed). Essential for
-dependency resolution and tree destruction algorithms.
+**Details**
 
-**Example**
+Nodes are emitted after their reachable descendants have been processed. If
+no start nodes are supplied, the iterator is empty. The `direction` option
+chooses whether to follow outgoing or incoming edges.
+
+**Example** (Traversing in postorder)
 
 ```ts
 import { Graph } from "effect"
@@ -35,6 +38,6 @@ for (const node of postOrder) {
 declare const dfsPostOrder: { (config?: SearchConfig): <N, E, T extends Kind = "directed">(graph: Graph<N, E, T> | MutableGraph<N, E, T>) => NodeWalker<N>; <N, E, T extends Kind = "directed">(graph: Graph<N, E, T> | MutableGraph<N, E, T>, config?: SearchConfig): NodeWalker<N>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Graph.ts#L3995)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Graph.ts#L4191)
 
 Since v4.0.0

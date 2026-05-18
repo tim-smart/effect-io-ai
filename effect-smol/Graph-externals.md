@@ -9,7 +9,7 @@ External nodes are nodes that have no outgoing edges (direction="outgoing") or
 no incoming edges (direction="incoming"). These are useful for finding
 sources, sinks, or isolated nodes.
 
-**Example**
+**Example** (Iterating external nodes)
 
 ```ts
 import { Graph } from "effect"
@@ -43,6 +43,6 @@ console.log(sources) // [0, 3]
 declare const externals: { (config?: ExternalsConfig): <N, E, T extends Kind = "directed">(graph: Graph<N, E, T> | MutableGraph<N, E, T>) => NodeWalker<N>; <N, E, T extends Kind = "directed">(graph: Graph<N, E, T> | MutableGraph<N, E, T>, config?: ExternalsConfig): NodeWalker<N>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Graph.ts#L4208)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Graph.ts#L4413)
 
 Since v4.0.0

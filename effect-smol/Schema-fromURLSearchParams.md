@@ -3,7 +3,8 @@ Module: `Schema`<br />
 
 ## Schema.fromURLSearchParams
 
-Companion type for `fromURLSearchParams`.
+Type-level representation of a schema that parses `URLSearchParams` into a
+tree record and then decodes it with the provided schema.
 
 **Signature**
 
@@ -13,6 +14,6 @@ export interface fromURLSearchParams<S extends Top> extends decodeTo<S, URLSearc
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L9417)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L9787)
 
 Since v4.0.0

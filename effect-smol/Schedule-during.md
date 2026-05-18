@@ -6,7 +6,7 @@ Module: `Schedule`<br />
 Returns a new `Schedule` that will always recur, but only during the
 specified `duration` of time.
 
-**Example**
+**Example** (Repeating work during a duration)
 
 ```ts
 import { Console, Data, Effect, Schedule } from "effect"
@@ -17,12 +17,9 @@ class RetryAttemptError extends Data.TaggedError("RetryAttemptError")<{ readonly
 const fiveSecondSchedule = Schedule.during("5 seconds")
 
 const timedProgram = Effect.gen(function*() {
-  const startTime = Date.now()
-
   yield* Effect.repeat(
     Effect.gen(function*() {
-      const elapsed = Date.now() - startTime
-      yield* Console.log(`Task executed after ${elapsed}ms`)
+      yield* Console.log("Task executed inside the time window")
       yield* Effect.sleep("500 millis") // Each task takes 500ms
       return "task done"
     }),
@@ -50,8 +47,8 @@ const burstProgram = Effect.gen(function*() {
 
   yield* Effect.repeat(
     Effect.gen(function*() {
-      yield* Console.log(`Burst task at ${new Date().toISOString()}`)
-      return Math.random()
+      yield* Console.log("Burst task")
+      return "burst"
     }),
     burstWindow
   )
@@ -72,7 +69,7 @@ const retryProgram = Effect.gen(function*() {
       attempt++
       yield* Console.log(`Retry attempt ${attempt}`)
 
-      if (Math.random() < 0.8) { // 80% failure rate
+      if (attempt < 4) {
         return yield* Effect.fail(new RetryAttemptError({ message: `Attempt ${attempt} failed` }))
       }
 
@@ -93,6 +90,6 @@ const retryProgram = Effect.gen(function*() {
 declare const during: (duration: Duration.Input) => Schedule<Duration.Duration>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L1601)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L1585)
 
 Since v4.0.0

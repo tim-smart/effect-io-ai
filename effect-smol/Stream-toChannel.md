@@ -5,7 +5,7 @@ Module: `Stream`<br />
 
 Creates a channel from a stream.
 
-**Example**
+**Example** (Converting a stream to a channel)
 
 ```ts
 import { Channel, Console, Effect, Stream } from "effect"
@@ -27,6 +27,6 @@ Effect.runPromise(program)
 declare const toChannel: <A, E, R>(stream: Stream<A, E, R>) => Channel.Channel<Arr.NonEmptyReadonlyArray<A>, E, void, unknown, unknown, unknown, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L715)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L762)
 
 Since v2.0.0

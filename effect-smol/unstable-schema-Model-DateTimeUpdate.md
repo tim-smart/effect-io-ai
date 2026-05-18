@@ -3,18 +3,22 @@ Module: `Model`<br />
 
 ## Model.DateTimeUpdate
 
-A field that represents a date-time value that is updated as the current
-`DateTime.Utc`. It is serialized as a string for the database.
-
-It is set to the current `DateTime.Utc` on updates and inserts and is
-available for selection.
+Variant field type for a UTC date-time stored as a string and defaulted to the
+current time on both inserts and updates.
 
 **Signature**
 
 ```ts
-declare const DateTimeUpdate: DateTimeUpdate
+export interface DateTimeUpdate extends
+  VariantSchema.Field<{
+    readonly select: Schema.DateTimeUtcFromString
+    readonly insert: VariantSchema.Overrideable<Schema.DateTimeUtcFromString>
+    readonly update: VariantSchema.Overrideable<Schema.DateTimeUtcFromString>
+    readonly json: Schema.DateTimeUtcFromString
+  }>
+{}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Model.ts#L491)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Model.ts#L550)
 
 Since v4.0.0

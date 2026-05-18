@@ -5,7 +5,7 @@ Module: `TxHashMap`<br />
 
 Extracts the entry type from a TxHashMap type.
 
-**Example**
+**Example** (Extracting entry types)
 
 ```ts
 import { Effect, TxHashMap } from "effect"
@@ -39,6 +39,6 @@ const program = Effect.gen(function*() {
 type Entry<T> = T extends TxHashMap<infer K, infer V> ? readonly [K, V] : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashMap.ts#L210)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashMap.ts#L240)
 
 Since v2.0.0

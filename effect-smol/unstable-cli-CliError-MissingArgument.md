@@ -5,7 +5,7 @@ Module: `CliError`<br />
 
 Error thrown when a required positional argument is missing.
 
-**Example**
+**Example** (Creating missing argument errors)
 
 ```ts
 import { Effect } from "effect"
@@ -34,6 +34,6 @@ const parseArguments = (args: Array<string>) =>
 declare class MissingArgument
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/CliError.ts#L258)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/CliError.ts#L300)
 
 Since v4.0.0

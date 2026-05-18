@@ -13,7 +13,7 @@ until they can be emitted without exceeding the bandwidth constraints.
 
 Defaults to the "shape" strategy.
 
-**Example**
+**Example** (Throttling stream chunks)
 
 ```ts
 import { Console, Effect, Schedule, Stream } from "effect"
@@ -41,6 +41,6 @@ const program = Effect.gen(function*() {
 declare const throttle: { <A>(options: { readonly cost: (arr: Arr.NonEmptyReadonlyArray<A>) => number; readonly units: number; readonly duration: Duration.Input; readonly burst?: number | undefined; readonly strategy?: "enforce" | "shape" | undefined; }): <E, R>(self: Stream<A, E, R>) => Stream<A, E, R>; <A, E, R>(self: Stream<A, E, R>, options: { readonly cost: (arr: Arr.NonEmptyReadonlyArray<A>) => number; readonly units: number; readonly duration: Duration.Input; readonly burst?: number | undefined; readonly strategy?: "enforce" | "shape" | undefined; }): Stream<A, E, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L7626)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L7883)
 
 Since v2.0.0

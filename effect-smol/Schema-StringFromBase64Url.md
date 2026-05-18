@@ -3,7 +3,8 @@ Module: `Schema`<br />
 
 ## Schema.StringFromBase64Url
 
-Companion type for `StringFromBase64Url`.
+Schema interface for `StringFromBase64Url`, a transformation between URL-safe
+base64-encoded strings and UTF-8 strings.
 
 **Signature**
 
@@ -13,6 +14,6 @@ export interface StringFromBase64Url extends decodeTo<String, String> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L9692)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L10074)
 
 Since v4.0.0

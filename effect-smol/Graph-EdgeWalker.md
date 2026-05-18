@@ -12,6 +12,6 @@ EdgeWalker is represented as Walker<EdgeIndex, Edge<E>>.
 type EdgeWalker<E> = Walker<EdgeIndex, Edge<E>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Graph.ts#L3558)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Graph.ts#L3726)
 
 Since v4.0.0

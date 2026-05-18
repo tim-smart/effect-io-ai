@@ -18,7 +18,7 @@ the effect pipeline.
 - For **Failure effects**: Returns the failure as-is without applying the mapping
 - For **Pending effects**: Falls back to the regular `map` behavior
 
-**Example**
+**Example** (Usage)
 
 ```ts
 import { Effect } from "effect"
@@ -38,6 +38,6 @@ const mappedPending = Effect.mapEager(pending, (n) => n * 2) // Uses regular map
 declare const mapEager: { <A, B>(f: (a: A) => B): <E, R>(self: Effect<A, E, R>) => Effect<B, E, R>; <A, E, R, B>(self: Effect<A, E, R>, f: (a: A) => B): Effect<B, E, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L14421)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L14372)
 
 Since v4.0.0

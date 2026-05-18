@@ -11,7 +11,7 @@ For example:
 {"message":["hello"],"level":"INFO","timestamp":"2025-01-03T14:28:57.508Z","annotations":{"key":"value"},"spans":{"label":0},"fiberId":"#1"}
 ```
 
-**Example**
+**Example** (Logging JSON output to the console)
 
 ```ts
 import { Effect, Logger } from "effect"
@@ -61,6 +61,6 @@ const containerProgram = Effect.log("Container ready", {
 declare const consoleJson: Logger<unknown, void>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Logger.ts#L1057)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Logger.ts#L1083)
 
 Since v4.0.0

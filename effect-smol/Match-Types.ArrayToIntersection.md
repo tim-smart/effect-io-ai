@@ -9,7 +9,7 @@ This utility type takes an array of types and converts them into a single
 intersection type. It's used internally when multiple patterns need to
 be satisfied simultaneously (like in `Match.whenAnd`).
 
-**Example**
+**Example** (Converting arrays to intersections)
 
 ```ts
 import type { Match } from "effect"
@@ -35,6 +35,6 @@ type ArrayToIntersection<A> = T.UnionToIntersection<
   >
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L2310)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L2281)
 
 Since v4.0.0

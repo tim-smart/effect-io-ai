@@ -3,10 +3,11 @@ Module: `Schema`<br />
 
 ## Schema.overrideToFormatter
 
-**Technical Note**
+Annotates a schema with a custom formatter used by `toFormatter`.
 
-This annotation cannot be added to `Annotations.Bottom` because it would make
-the schema invariant.
+Use this when the formatter derived from the schema structure is not suitable.
+The annotation is applied through this helper because adding it directly to
+`Annotations.Bottom` would make schemas invariant.
 
 **Signature**
 
@@ -14,6 +15,6 @@ the schema invariant.
 declare const overrideToFormatter: <S extends Top>(toFormatter: () => Formatter<S["Type"]>) => (self: S) => S["Rebuild"]
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L10933)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L11340)
 
 Since v4.0.0

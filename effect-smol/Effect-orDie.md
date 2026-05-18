@@ -3,22 +3,21 @@ Module: `Effect`<br />
 
 ## Effect.orDie
 
-Converts an effect's failure into a fiber termination, removing the error from the effect's type.
+Converts typed failures from the error channel into defects, removing the
+error type from the returned effect.
 
-**When to Use*
+**When to Use**
 
-Use `orDie` when failures should be treated as unrecoverable defects and no error handling is required.
+Use `orDie` when a typed failure represents an unrecoverable bug or invalid
+state and should not be handled as a recoverable error.
 
-**Details**
+**See**
 
-The `orDie` function is used when you encounter errors that you do not want to handle or recover from.
-It removes the error type from the effect and ensures that any failure will terminate the fiber.
-This is useful for propagating failures as defects, signaling that they should not be handled within the effect.
+- `orDieWith` if you need to customize the error.
 
-**Example**
+**Example** (Propagating an Error as a Defect)
 
 ```ts
-// Title: Propagating an Error as a Defect
 import { Data, Effect } from "effect"
 
 class DivideByZeroError extends Data.TaggedError("DivideByZeroError")<{}> {}
@@ -38,16 +37,12 @@ Effect.runPromise(program).catch(console.error)
 //   ...stack trace...
 ```
 
-**See**
-
-- `orDieWith` if you need to customize the error.
-
 **Signature**
 
 ```ts
 declare const orDie: <A, E, R>(self: Effect<A, E, R>) => Effect<A, never, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L3499)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L3389)
 
 Since v2.0.0

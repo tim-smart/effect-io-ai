@@ -3,14 +3,14 @@ Module: `AnthropicTool`<br />
 
 ## AnthropicTool.ComputerUseMouseMoveAction
 
-Move the mouse cursor to the specified coordinates.
+Computer-use action payload for moving the mouse cursor to a specific coordinate.
 
 **Signature**
 
 ```ts
-declare const ComputerUseMouseMoveAction: Schema.Struct<{ readonly action: Schema.Literal<"mouse_move">; readonly coordinate: Schema.Tuple<readonly [Schema.Number, Schema.Number]>; }>
+type ComputerUseMouseMoveAction = typeof ComputerUseMouseMoveAction.Type
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L418)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L455)
 
-Since v1.0.0
+Since v4.0.0

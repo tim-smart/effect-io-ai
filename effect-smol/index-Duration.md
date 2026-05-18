@@ -11,6 +11,6 @@ Re-exports all named exports from the "./Duration.ts" module as `Duration`.
 export * as Duration from "./Duration.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L929)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L940)
 
 Since v2.0.0

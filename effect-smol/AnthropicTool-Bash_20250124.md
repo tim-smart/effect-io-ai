@@ -16,4 +16,4 @@ declare const Bash_20250124: <Mode extends Tool.FailureMode | undefined = undefi
 
 [Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L71)
 
-Since v1.0.0
+Since v4.0.0

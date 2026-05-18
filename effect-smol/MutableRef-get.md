@@ -5,7 +5,7 @@ Module: `MutableRef`<br />
 
 Gets the current value of the MutableRef.
 
-**Example**
+**Example** (Reading current values)
 
 ```ts
 import { MutableRef } from "effect"
@@ -33,6 +33,6 @@ console.log(value1 === value2) // true
 declare const get: <T>(self: MutableRef<T>) => T
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableRef.ts#L261)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableRef.ts#L276)
 
 Since v2.0.0

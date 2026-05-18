@@ -12,6 +12,6 @@ committed atomically.
 declare const WithTransaction: Context.Reference<boolean>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ClusterSchema.ts#L25)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ClusterSchema.ts#L56)
 
 Since v4.0.0

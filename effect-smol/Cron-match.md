@@ -3,13 +3,14 @@ Module: `Cron`<br />
 
 ## Cron.match
 
-Checks if a given date/time falls within an active Cron time window.
+Returns `true` when a date/time matches a `Cron` schedule.
 
-This function determines whether a specific date and time matches
-the cron schedule, taking into account all time constraints and
-the optional timezone.
+Seconds, minutes, hours, months, and the optional timezone are checked
+directly. For day constraints, an empty `days` or `weekdays` set means that
+field matches every value; when both sets are non-empty, a date matches if
+either the day-of-month or weekday matches.
 
-**Example**
+**Example** (Matching dates against a schedule)
 
 ```ts
 import { Cron, Result } from "effect"
@@ -33,6 +34,6 @@ console.log(matches3) // false - wrong day
 declare const match: (cron: Cron, date: DateTime.DateTime.Input) => boolean
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cron.ts#L575)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cron.ts#L632)
 
 Since v2.0.0

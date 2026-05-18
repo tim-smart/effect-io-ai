@@ -5,7 +5,7 @@ Module: `IdGenerator`<br />
 
 Configuration options for creating custom ID generators.
 
-**Example**
+**Example** (Configuring generated IDs)
 
 ```ts
 import type { IdGenerator } from "effect/unstable/ai"
@@ -44,6 +44,6 @@ export interface MakeOptions {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/IdGenerator.ts#L133)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/IdGenerator.ts#L139)
 
 Since v4.0.0

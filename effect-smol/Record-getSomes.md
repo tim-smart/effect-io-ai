@@ -5,7 +5,7 @@ Module: `Record`<br />
 
 Given a record with `Option` values, returns a new record containing only the `Some` values, preserving the original keys.
 
-**Example**
+**Example** (Extracting Some values)
 
 ```ts
 import { Option, Record } from "effect"
@@ -23,6 +23,6 @@ assert.deepStrictEqual(
 declare const getSomes: <K extends string, A>(self: ReadonlyRecord<K, Option.Option<A>>) => Record<ReadonlyRecord.NonLiteralKey<K>, A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Record.ts#L769)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Record.ts#L806)
 
 Since v2.0.0

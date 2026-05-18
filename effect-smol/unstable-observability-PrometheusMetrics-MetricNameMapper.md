@@ -5,7 +5,7 @@ Module: `PrometheusMetrics`<br />
 
 A function that transforms metric names before formatting.
 
-**Example**
+**Example** (Mapping metric names)
 
 ```ts
 import type * as PrometheusMetrics from "effect/unstable/observability/PrometheusMetrics"
@@ -21,6 +21,6 @@ const mapper: PrometheusMetrics.MetricNameMapper = (name) =>
 type MetricNameMapper = (name: string) => string
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PrometheusMetrics.ts#L52)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PrometheusMetrics.ts#L70)
 
 Since v4.0.0

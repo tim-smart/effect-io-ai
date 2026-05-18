@@ -7,7 +7,7 @@ Re-chunks the stream into arrays of the specified size, preserving element order
 
 The size is clamped to at least 1.
 
-**Example**
+**Example** (Rechunking stream elements)
 
 ```ts
 import { Console, Effect, Stream } from "effect"
@@ -31,6 +31,6 @@ Effect.runPromise(program)
 declare const rechunk: { (size: number): <A, E, R>(self: Stream<A, E, R>) => Stream<A, E, R>; <A, E, R>(self: Stream<A, E, R>, size: number): Stream<A, E, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L6597)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L6830)
 
 Since v2.0.0

@@ -7,7 +7,7 @@ Creates a stream that consumes values from an iterator.
 
 The `maxChunkSize` parameter controls how many values are pulled per chunk.
 
-**Example**
+**Example** (Consuming values from an iterator)
 
 ```ts
 import { Console, Effect, Stream } from "effect"
@@ -35,6 +35,6 @@ Effect.runPromise(program)
 declare const fromIteratorSucceed: <A>(iterator: IterableIterator<A>, maxChunkSize?: number) => Stream<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L1043)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L1102)
 
 Since v2.0.0

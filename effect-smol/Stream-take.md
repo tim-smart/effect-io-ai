@@ -5,7 +5,7 @@ Module: `Stream`<br />
 
 Takes the first `n` elements from this stream, returning `Stream.empty` when `n < 1`.
 
-**Example**
+**Example** (Taking values from the left)
 
 ```ts
 import { Console, Effect, Stream } from "effect"
@@ -28,6 +28,6 @@ Effect.runPromise(program)
 declare const take: { (n: number): <A, E, R>(self: Stream<A, E, R>) => Stream<A, E, R>; <A, E, R>(self: Stream<A, E, R>, n: number): Stream<A, E, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L5954)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L6171)
 
 Since v2.0.0

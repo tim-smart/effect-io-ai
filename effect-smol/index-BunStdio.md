@@ -13,4 +13,4 @@ export * as BunStdio from "./BunStdio.ts"
 
 [Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/index.ts#L92)
 
-Since v1.0.0
+Since v4.0.0

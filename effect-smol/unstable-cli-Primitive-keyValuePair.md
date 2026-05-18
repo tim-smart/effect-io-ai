@@ -5,7 +5,7 @@ Module: `Primitive`<br />
 
 Parses a single `key=value` pair into a record object.
 
-**Example**
+**Example** (Parsing key-value pairs)
 
 ```ts
 import { Effect } from "effect"
@@ -29,6 +29,6 @@ const parseKeyValue = Effect.gen(function*() {
 declare const keyValuePair: Primitive<Record<string, string>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Primitive.ts#L617)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Primitive.ts#L652)
 
 Since v4.0.0

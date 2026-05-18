@@ -3,11 +3,13 @@ Module: `Stream`<br />
 
 ## Stream.fromReadableStream
 
-Creates a stream from a `ReadableStream`.
+Creates a stream from a lazily supplied Web `ReadableStream`.
 
-See https://developer.mozilla.org/en-US/docs/Web/API/ReadableStream.
+The stream reads from a `ReadableStreamDefaultReader`, maps read failures
+with `onError`, and closes the reader when the stream finalizes. By default
+the reader is canceled; set `releaseLockOnEnd` to release the lock instead.
 
-**Example**
+**Example** (Creating a stream from a ReadableStream)
 
 ```ts
 import { Console, Data, Effect, Stream } from "effect"
@@ -42,6 +44,6 @@ Effect.runPromise(program)
 declare const fromReadableStream: <A, E>(options: { readonly evaluate: LazyArg<ReadableStream<A>>; readonly onError: (error: unknown) => E; readonly releaseLockOnEnd?: boolean | undefined; }) => Stream<A, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L1369)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L1438)
 
 Since v2.0.0

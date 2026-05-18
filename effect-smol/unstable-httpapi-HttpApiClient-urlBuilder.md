@@ -5,7 +5,7 @@ Module: `HttpApiClient`<br />
 
 Creates a type-safe URL builder that mirrors `HttpApiClient.make`.
 
-**Example**
+**Example** (Building typed URLs)
 
 ```ts
 import { Schema } from "effect"
@@ -35,6 +35,6 @@ buildUrl.users.getUser({
 declare const urlBuilder: <Api extends HttpApi.Any>(api: Api, options?: { readonly baseUrl?: URL | string | undefined; }) => UrlBuilder<Api>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiClient.ts#L529)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiClient.ts#L593)
 
 Since v4.0.0

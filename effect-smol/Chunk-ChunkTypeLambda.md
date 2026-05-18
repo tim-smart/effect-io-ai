@@ -5,7 +5,7 @@ Module: `Chunk`<br />
 
 Type lambda for Chunk, used for higher-kinded type operations.
 
-**Example**
+**Example** (Applying the Chunk type lambda)
 
 ```ts
 import type { ChunkTypeLambda } from "effect/Chunk"
@@ -24,6 +24,6 @@ export interface ChunkTypeLambda extends TypeLambda {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L153)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L158)
 
 Since v2.0.0

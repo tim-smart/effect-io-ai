@@ -5,7 +5,7 @@ Module: `String`<br />
 
 Extracts characters from a string between two specified indices.
 
-**Example**
+**Example** (Extracting substrings)
 
 ```ts
 import { pipe, String } from "effect"
@@ -20,6 +20,6 @@ pipe("abcd", String.substring(1, 3)) // "bc"
 declare const substring: (start: number, end?: number) => (self: string) => string
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L510)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L538)
 
 Since v2.0.0

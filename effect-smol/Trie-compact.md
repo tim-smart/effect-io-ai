@@ -5,7 +5,7 @@ Module: `Trie`<br />
 
 Filters out `None` values from a `Trie` of `Options`s.
 
-**Example**
+**Example** (Compacting optional values)
 
 ```ts
 import * as Equal from "effect/Equal"
@@ -33,6 +33,6 @@ assert.equal(Equal.equals(Trie.compact(trie), trieMapV), true)
 declare const compact: <A>(self: Trie<Option<A>>) => Trie<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Trie.ts#L795)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Trie.ts#L824)
 
 Since v2.0.0

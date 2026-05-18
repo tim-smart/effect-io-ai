@@ -5,7 +5,7 @@ Module: `CliError`<br />
 
 Error thrown when an unknown subcommand is encountered.
 
-**Example**
+**Example** (Creating unknown subcommand errors)
 
 ```ts
 import { Effect } from "effect"
@@ -41,6 +41,6 @@ const parseSubcommand = (subcommand: string) =>
 declare class UnknownSubcommand
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/CliError.ts#L366)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/CliError.ts#L418)
 
 Since v4.0.0

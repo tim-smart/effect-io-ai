@@ -3,14 +3,14 @@ Module: `AnthropicTool`<br />
 
 ## AnthropicTool.CodeExecutionTextEditorView
 
-Text editor view command for code execution.
+Input payload for viewing a file through the text editor code execution tool.
 
 **Signature**
 
 ```ts
-declare const CodeExecutionTextEditorView: Schema.Struct<{ readonly type: Schema.Literal<"text_editor_code_execution">; readonly command: Schema.Literal<"view">; readonly path: Schema.String; }>
+type CodeExecutionTextEditorView = typeof CodeExecutionTextEditorView.Type
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L135)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L153)
 
-Since v1.0.0
+Since v4.0.0

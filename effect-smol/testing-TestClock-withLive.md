@@ -6,7 +6,7 @@ Module: `TestClock`<br />
 Executes the specified effect with the live `Clock` instead of the
 `TestClock`.
 
-**Example**
+**Example** (Running with the live clock)
 
 ```ts
 import { Clock, Effect } from "effect"
@@ -36,6 +36,6 @@ const program = Effect.gen(function*() {
 declare const withLive: <A, E, R>(effect: Effect.Effect<A, E, R>) => Effect.Effect<A, E, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TestClock.ts#L500)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TestClock.ts#L529)
 
 Since v2.0.0

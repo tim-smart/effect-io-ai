@@ -3,7 +3,7 @@ Module: `Cookies`<br />
 
 ## Cookies.toSetCookieHeaders
 
-Serialize a Cookies object into Headers object containing one or more Set-Cookie headers
+Serializes a `Cookies` collection into an array of `Set-Cookie` header values.
 
 **Signature**
 
@@ -11,6 +11,6 @@ Serialize a Cookies object into Headers object containing one or more Set-Cookie
 declare const toSetCookieHeaders: (self: Cookies) => Array<string>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cookies.ts#L822)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cookies.ts#L885)
 
 Since v4.0.0

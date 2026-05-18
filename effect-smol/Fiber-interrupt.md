@@ -6,7 +6,7 @@ Module: `Fiber`<br />
 Interrupts a fiber, causing it to stop executing and clean up any
 acquired resources.
 
-**Example**
+**Example** (Interrupting a fiber)
 
 ```ts
 import { Effect, Fiber } from "effect"
@@ -26,6 +26,6 @@ const program = Effect.gen(function*() {
 declare const interrupt: <A, E>(self: Fiber<A, E>) => Effect<void>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Fiber.ts#L296)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Fiber.ts#L310)
 
 Since v2.0.0

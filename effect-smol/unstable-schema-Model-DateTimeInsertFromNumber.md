@@ -3,17 +3,21 @@ Module: `Model`<br />
 
 ## Model.DateTimeInsertFromNumber
 
-A field that represents a date-time value that is inserted as the current
-`DateTime.Utc`. It is serialized as a `number`.
-
-It is omitted from updates and is available for selection.
+Variant field type for a UTC date-time encoded as milliseconds and defaulted to
+the current time on insert.
 
 **Signature**
 
 ```ts
-declare const DateTimeInsertFromNumber: DateTimeInsertFromNumber
+export interface DateTimeInsertFromNumber extends
+  VariantSchema.Field<{
+    readonly select: Schema.DateTimeUtcFromMillis
+    readonly insert: VariantSchema.Overrideable<Schema.DateTimeUtcFromMillis>
+    readonly json: Schema.DateTimeUtcFromMillis
+  }>
+{}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Model.ts#L462)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Model.ts#L520)
 
 Since v4.0.0

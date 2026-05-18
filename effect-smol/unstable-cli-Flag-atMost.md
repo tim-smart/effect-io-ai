@@ -5,7 +5,7 @@ Module: `Flag`<br />
 
 Limits a flag to be specified at most a maximum number of times.
 
-**Example**
+**Example** (Limiting repeated values)
 
 ```ts
 import { Flag } from "effect/unstable/cli"
@@ -26,6 +26,6 @@ const debugFlag = Flag.string("debug").pipe(
 declare const atMost: { <A>(max: number): (self: Flag<A>) => Flag<ReadonlyArray<A>>; <A>(self: Flag<A>, max: number): Flag<ReadonlyArray<A>>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Flag.ts#L682)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Flag.ts#L735)
 
 Since v4.0.0

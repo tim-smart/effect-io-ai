@@ -9,7 +9,7 @@ A `ValueMatcher` is created when using `Match.value(someValue)` and contains
 the actual value to be matched against. It tracks both the provided value
 and the result of applying patterns to determine matches.
 
-**Example**
+**Example** (Creating a value matcher)
 
 ```ts
 import { Match } from "effect"
@@ -45,6 +45,6 @@ export interface ValueMatcher<in Input, Filters, out Remaining, out Result, Prov
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L146)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L142)
 
 Since v4.0.0

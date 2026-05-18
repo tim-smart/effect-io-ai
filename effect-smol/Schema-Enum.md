@@ -3,8 +3,8 @@ Module: `Schema`<br />
 
 ## Schema.Enum
 
-Represents a schema derived from a TypeScript `const enum` or a plain enum object,
-accepting any of its values.
+Represents a schema derived from a TypeScript enum object or an enum-like
+`as const` object, accepting any of its values.
 
 **See**
 
@@ -20,6 +20,6 @@ export interface Enum<A extends { [x: string]: string | number }>
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L2007)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L2106)
 
 Since v4.0.0

@@ -9,7 +9,7 @@ This utility type manages the refinement of included types during
 pattern matching. It ensures that only the most specific type
 constraints are maintained when multiple positive matches are applied.
 
-**Example**
+**Example** (Refining included types)
 
 ```ts
 import { Match } from "effect"
@@ -32,6 +32,6 @@ type AddOnly<A, X> = [A] extends [Without<infer WX>] ? [X] extends [WX] ? never
     : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L2213)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L2181)
 
 Since v4.0.0

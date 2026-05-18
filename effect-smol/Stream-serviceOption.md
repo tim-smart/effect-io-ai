@@ -6,7 +6,7 @@ Module: `Stream`<br />
 Optionally accesses a service from the context and emits the result as a
 single element.
 
-**Example**
+**Example** (Accessing an optional service as a stream)
 
 ```ts
 import { Effect, Option, Context, Stream } from "effect"
@@ -43,6 +43,6 @@ Effect.runPromise(program)
 declare const serviceOption: <I, S>(service: Context.Key<I, S>) => Stream<Option.Option<S>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L427)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L465)
 
 Since v4.0.0

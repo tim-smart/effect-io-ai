@@ -10,7 +10,7 @@ Command.Config allows you to specify:
 - Nested configuration objects for organization
 - Arrays of parameters for repeated elements
 
-**Example**
+**Example** (Configuring command input)
 
 ```ts
 import { Argument, Flag } from "effect/unstable/cli"
@@ -47,6 +47,6 @@ export interface Config {
   }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Command.ts#L189)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Command.ts#L227)
 
 Since v4.0.0

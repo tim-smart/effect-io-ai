@@ -38,6 +38,6 @@ console.log(commaSep.combine("a", "b"))
 declare const intercalate: <A>(middle: A) => (combiner: Combiner<A>) => Combiner<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Combiner.ts#L358)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Combiner.ts#L356)
 
 Since v4.0.0

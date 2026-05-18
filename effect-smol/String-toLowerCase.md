@@ -5,7 +5,7 @@ Module: `String`<br />
 
 Converts a string to lowercase.
 
-**Example**
+**Example** (Converting strings to lowercase)
 
 ```ts
 import { pipe, String } from "effect"
@@ -21,6 +21,6 @@ assert.deepStrictEqual(String.toLowerCase("HELLO"), "hello")
 declare const toLowerCase: <T extends string>(self: T) => Lowercase<T>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L164)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L172)
 
 Since v2.0.0

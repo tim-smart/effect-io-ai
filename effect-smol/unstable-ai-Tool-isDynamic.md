@@ -5,7 +5,7 @@ Module: `Tool`<br />
 
 Type guard to check if a value is a dynamic tool.
 
-**Example**
+**Example** (Checking for dynamic tools)
 
 ```ts
 import { Schema } from "effect"
@@ -30,6 +30,6 @@ console.log(Tool.isDynamic(UserDefinedTool)) // false
 declare const isDynamic: (u: unknown) => u is Dynamic<string, any>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tool.ts#L595)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tool.ts#L624)
 
-Since v1.0.0
+Since v4.0.0

@@ -3,10 +3,14 @@ Module: `PubSub`<br />
 
 ## PubSub.publish
 
-Publishes a message to the `PubSub`, returning whether the message was published
-to the `PubSub`.
+Attempts to publish a message synchronously without applying the PubSub
+strategy's effectful surplus handling.
 
-**Example**
+Returns `false` if the `PubSub` is shut down or the message cannot be
+accepted immediately, for example when a bounded PubSub is full. Prefer
+`publish` when backpressure or sliding behavior should be honored.
+
+**Example** (Publishing a message)
 
 ```ts
 import { Effect } from "effect"
@@ -19,19 +23,12 @@ const program = Effect.gen(function*() {
   const published = yield* PubSub.publish(pubsub, "Hello World")
   console.log("Message published:", published) // true
 
-  // With a full bounded PubSub using backpressure strategy
-  const smallPubsub = yield* PubSub.bounded<string>(1)
-  yield* PubSub.publish(smallPubsub, "msg1") // succeeds
-
-  // This will suspend until space becomes available
-  const publishEffect = PubSub.publish(smallPubsub, "msg2")
-
-  // Create a subscriber to free up space
   yield* Effect.scoped(Effect.gen(function*() {
-    const subscription = yield* PubSub.subscribe(smallPubsub)
-    yield* PubSub.take(subscription) // frees space
-    const result = yield* publishEffect
-    console.log("Second message published:", result) // true
+    const subscription = yield* PubSub.subscribe(pubsub)
+
+    yield* PubSub.publish(pubsub, "Hello")
+    const message = yield* PubSub.take(subscription)
+    console.log("Received:", message) // "Hello"
   }))
 })
 ```
@@ -42,6 +39,6 @@ const program = Effect.gen(function*() {
 declare const publish: { <A>(value: A): (self: PubSub<A>) => Effect.Effect<boolean>; <A>(self: PubSub<A>, value: A): Effect.Effect<boolean>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PubSub.ts#L807)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PubSub.ts#L873)
 
 Since v2.0.0

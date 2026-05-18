@@ -3,12 +3,12 @@ Module: `TxQueue`<br />
 
 ## TxQueue.fail
 
-Fails the queue with the specified error.
+Fails the queue with the specified error, discarding any buffered items.
 
-**Mutation behavior**: This function mutates the original TxQueue by marking
-it as failed. It does not return a new TxQueue reference.
+The queue transitions directly to done with `Cause.fail(error)`. Returns
+`false` if the queue was already closing or done.
 
-**Example**
+**Example** (Failing queues)
 
 ```ts
 import { Effect, TxQueue } from "effect"
@@ -28,6 +28,6 @@ const program = Effect.gen(function*() {
 declare const fail: { <E>(error: E): <A>(self: TxEnqueue<A, E>) => Effect.Effect<boolean>; <A, E>(self: TxEnqueue<A, E>, error: E): Effect.Effect<boolean>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxQueue.ts#L1179)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxQueue.ts#L1175)
 
 Since v4.0.0

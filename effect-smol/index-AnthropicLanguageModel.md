@@ -13,4 +13,4 @@ export * as AnthropicLanguageModel from "./AnthropicLanguageModel.ts"
 
 [Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/index.ts#L35)
 
-Since v1.0.0
+Since v4.0.0

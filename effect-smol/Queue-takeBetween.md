@@ -3,13 +3,16 @@ Module: `Queue`<br />
 
 ## Queue.takeBetween
 
-Take a variable number of messages from the queue, between specified min and max.
-It will only take up to the capacity of the queue.
+Takes between `min` and `max` messages from the queue.
 
-If the queue is done, the `done` flag will be `true`. If the queue
-fails, the Effect will fail with the error.
+**Details**
 
-**Example**
+The operation waits when fewer than the required minimum messages are
+available. It returns at most `max` messages. If the queue completes or fails
+before the minimum can be satisfied, the effect fails with the queue's
+terminal error.
+
+**Example** (Taking a bounded batch of values)
 
 ```ts
 import { Cause, Effect, Queue } from "effect"
@@ -39,6 +42,6 @@ const program = Effect.gen(function*() {
 declare const takeBetween: <A, E>(self: Dequeue<A, E>, min: number, max: number) => Effect<Array<A>, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Queue.ts#L1150)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Queue.ts#L1268)
 
 Since v4.0.0

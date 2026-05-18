@@ -3,9 +3,11 @@ Module: `Schema`<br />
 
 ## Schema.toJsonSchemaDocument
 
-Returns a JSON Schema Document (draft-2020-12).
+Returns a JSON Schema document using draft 2020-12.
 
-You can use the `options` parameter to return a different target JSON Schema.
+The `options` parameter controls generation details such as additional
+properties and synthesized check descriptions; it does not change the draft
+target.
 
 **Signature**
 
@@ -13,6 +15,6 @@ You can use the `options` parameter to return a different target JSON Schema.
 declare const toJsonSchemaDocument: (schema: Top, options?: ToJsonSchemaOptions) => JsonSchema.Document<"draft-2020-12">
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L11176)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L11585)
 
 Since v4.0.0

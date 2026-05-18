@@ -5,7 +5,7 @@ Module: `TxPriorityQueue`<br />
 
 Returns the number of elements in the queue.
 
-**Example**
+**Example** (Getting the queue size)
 
 ```ts
 import { Effect, Order, TxPriorityQueue } from "effect"
@@ -23,6 +23,6 @@ const program = Effect.gen(function*() {
 declare const size: <A>(self: TxPriorityQueue<A>) => Effect.Effect<number>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxPriorityQueue.ts#L183)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxPriorityQueue.ts#L188)
 
 Since v4.0.0

@@ -6,7 +6,7 @@ Module: `Trie`<br />
 Returns the longest key/value in the `Trie`
 that is a prefix of that `key` if it exists, `None` otherwise.
 
-**Example**
+**Example** (Finding the longest prefix)
 
 ```ts
 import * as Trie from "effect/Trie"
@@ -34,6 +34,6 @@ if (some._tag === "Some") {
 declare const longestPrefixOf: { (key: string): <V>(self: Trie<V>) => Option<[string, V]>; <V>(self: Trie<V>, key: string): Option<[string, V]>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Trie.ts#L421)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Trie.ts#L439)
 
 Since v2.0.0

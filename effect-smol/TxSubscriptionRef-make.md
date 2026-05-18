@@ -5,7 +5,7 @@ Module: `TxSubscriptionRef`<br />
 
 Creates a new TxSubscriptionRef with the specified initial value.
 
-**Example**
+**Example** (Creating a transactional subscription reference)
 
 ```ts
 import { Effect, TxSubscriptionRef } from "effect"
@@ -23,6 +23,6 @@ const program = Effect.gen(function*() {
 declare const make: <A>(value: A) => Effect.Effect<TxSubscriptionRef<A>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxSubscriptionRef.ts#L95)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxSubscriptionRef.ts#L97)
 
 Since v4.0.0

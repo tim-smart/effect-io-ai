@@ -8,7 +8,7 @@ Measures the runtime of an effect and returns the duration with its result.
 The original success, failure, or interruption is preserved; only the success
 value is paired with the duration.
 
-**Example**
+**Example** (Usage)
 
 ```ts
 import { Console, Duration, Effect } from "effect"
@@ -25,6 +25,6 @@ const program = Effect.gen(function*() {
 declare const timed: <A, E, R>(self: Effect<A, E, R>) => Effect<[duration: Duration.Duration, result: A], E, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L4552)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L4417)
 
 Since v2.0.0

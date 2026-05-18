@@ -5,7 +5,7 @@ Module: `DateTime`<br />
 
 Format a `DateTime` as a string using the `DateTimeFormat` API.
 
-**Example**
+**Example** (Formatting DateTime values with custom formatters)
 
 ```ts
 import { DateTime } from "effect"
@@ -32,6 +32,6 @@ console.log(formatted) // "15. Juni 2024, 16:30"
 declare const formatIntl: { (format: Intl.DateTimeFormat): (self: DateTime) => string; (self: DateTime, format: Intl.DateTimeFormat): string; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L2173)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L2459)
 
 Since v3.6.0

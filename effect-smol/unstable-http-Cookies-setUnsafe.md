@@ -3,7 +3,7 @@ Module: `Cookies`<br />
 
 ## Cookies.setUnsafe
 
-Add a cookie to a Cookies object
+Creates and adds a cookie by name and value, throwing if the cookie fields are invalid.
 
 **Signature**
 
@@ -11,6 +11,6 @@ Add a cookie to a Cookies object
 declare const setUnsafe: { (name: string, value: string, options?: Cookie["options"]): (self: Cookies) => Cookies; (self: Cookies, name: string, value: string, options?: Cookie["options"]): Cookies; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cookies.ts#L570)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cookies.ts#L625)
 
 Since v4.0.0

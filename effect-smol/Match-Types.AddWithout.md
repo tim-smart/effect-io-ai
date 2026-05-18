@@ -9,7 +9,7 @@ This utility type manages the accumulation of excluded types during
 pattern matching. When multiple exclusions are applied, it combines
 them into a single filter representation.
 
-**Example**
+**Example** (Accumulating excluded types)
 
 ```ts
 import { Match } from "effect"
@@ -31,6 +31,6 @@ type AddWithout<A, X> = [A] extends [Without<infer WX>] ? Without<X | WX>
     : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L2187)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L2154)
 
 Since v4.0.0

@@ -3,11 +3,13 @@ Module: `BigDecimal`<br />
 
 ## BigDecimal.toNumberUnsafe
 
-Converts a `BigDecimal` to a `number`.
+Converts a `BigDecimal` to a JavaScript `number`.
 
-This function will produce incorrect results if the `BigDecimal` exceeds the 64-bit range of a `number`.
+This conversion is unsafe because the result can lose integer or fractional
+precision, round to a nearby representable value, or become `Infinity` when
+the decimal cannot be represented as a finite JavaScript `number`.
 
-**Example**
+**Example** (Converting decimals to numbers)
 
 ```ts
 import { fromStringUnsafe, toNumberUnsafe } from "effect/BigDecimal"
@@ -22,6 +24,6 @@ assert.deepStrictEqual(toNumberUnsafe(fromStringUnsafe("123.456")), 123.456)
 declare const toNumberUnsafe: (n: BigDecimal) => number
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigDecimal.ts#L1309)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigDecimal.ts#L1352)
 
 Since v2.0.0

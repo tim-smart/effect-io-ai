@@ -5,7 +5,7 @@ Module: `Stream`<br />
 
 Turns typed failures into defects, making the stream infallible.
 
-**Example**
+**Example** (Turning failures into defects)
 
 ```ts
 import { Console, Effect, Stream } from "effect"
@@ -29,6 +29,6 @@ Effect.runPromise(program)
 declare const orDie: <A, E, R>(self: Stream<A, E, R>) => Stream<A, never, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L5649)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L5850)
 
 Since v2.0.0

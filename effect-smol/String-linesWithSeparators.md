@@ -6,7 +6,7 @@ Module: `String`<br />
 Returns an `IterableIterator` which yields each line contained within the
 string as well as the trailing newline character.
 
-**Example**
+**Example** (Iterating lines with separators)
 
 ```ts
 import { String } from "effect"
@@ -21,6 +21,6 @@ console.log(Array.from(lines)) // ["hello\n", "world\n"]
 declare const linesWithSeparators: (s: string) => LinesIterator
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L911)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L964)
 
 Since v2.0.0

@@ -5,7 +5,7 @@ Module: `TxPubSub`<br />
 
 Returns the current number of messages across all subscriber queues (the max).
 
-**Example**
+**Example** (Reading subscriber queue size)
 
 ```ts
 import { Effect, TxPubSub, TxQueue } from "effect"
@@ -31,6 +31,6 @@ const program = Effect.gen(function*() {
 declare const size: <A>(self: TxPubSub<A>) => Effect.Effect<number>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxPubSub.ts#L275)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxPubSub.ts#L282)
 
 Since v4.0.0

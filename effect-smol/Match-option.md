@@ -15,10 +15,7 @@ This is useful in cases where a missing match is expected and should be
 handled explicitly rather than throwing an error or returning a default
 value.
 
-**Example**
-
-```ts
-(Extracting a User Role with `Match.option`)
+**Example** (Extracting a User Role with `Match.option`)
 
 ```ts
 import { Match } from "effect"
@@ -38,7 +35,6 @@ console.log(getRole({ role: "admin" }))
 console.log(getRole({ role: "viewer" }))
 // Output: { _id: 'Option', _tag: 'None' }
 ```
-```
 
 **Signature**
 
@@ -46,6 +42,6 @@ console.log(getRole({ role: "viewer" }))
 declare const option: <I, F, R, A, Pr, Ret>(self: Matcher<I, F, R, A, Pr, Ret>) => [Pr] extends [never] ? (input: I) => Option.Option<Unify<A>> : Option.Option<Unify<A>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L1784)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L1776)
 
 Since v4.0.0

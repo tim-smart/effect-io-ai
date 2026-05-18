@@ -12,6 +12,6 @@ Represents provider-specific metadata that can be associated with a
 export interface FinishPartMetadata extends ProviderMetadata {}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Response.ts#L2441)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Response.ts#L2452)
 
-Since v1.0.0
+Since v4.0.0

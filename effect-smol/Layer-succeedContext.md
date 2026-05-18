@@ -9,7 +9,7 @@ services.
 This is a more general version of `succeed` that allows you to provide multiple
 services at once through a `Context`.
 
-**Example**
+**Example** (Providing multiple services from a context)
 
 ```ts
 import { Effect, Layer, Context } from "effect"
@@ -39,6 +39,6 @@ const layer = Layer.succeedContext(context)
 declare const succeedContext: <A>(context: Context.Context<A>) => Layer<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L676)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L753)
 
 Since v2.0.0

@@ -8,7 +8,7 @@ original `Effect` value succeeds, the returned `Effect` value will also
 succeed. If the original `Effect` value fails, the returned `Effect` value
 will fail with the same error.
 
-**Example**
+**Example** (Usage)
 
 ```ts
 import { Effect } from "effect"
@@ -25,6 +25,6 @@ Effect.runPromise(program).then(console.log)
 declare const asVoid: <A, E, R>(self: Effect<A, E, R>) => Effect<void, E, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L2417)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L2300)
 
 Since v2.0.0

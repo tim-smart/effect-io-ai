@@ -3,11 +3,10 @@ Module: `Workflow`<br />
 
 ## Workflow.SuspendOnFailure
 
-If you set this annotation to `true` for a workflow, it will suspend if it
-encounters any kind of error.
+Annotation that causes a workflow to suspend when it encounters any error.
 
-You can then manually resume the workflow later with
-`Workflow.resume(executionId)`.
+The suspended execution can later be resumed with the workflow's `resume`
+method, for example `MyWorkflow.resume(executionId)`.
 
 **Signature**
 
@@ -15,6 +14,6 @@ You can then manually resume the workflow later with
 declare const SuspendOnFailure: Context.Reference<boolean>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Workflow.ts#L774)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Workflow.ts#L867)
 
 Since v4.0.0

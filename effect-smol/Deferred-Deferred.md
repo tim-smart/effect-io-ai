@@ -11,7 +11,7 @@ calling `Deferred.await`) and automatically resume when the variable is set.
 require the coordinated action of multiple fibers, and for building
 higher-level concurrent or asynchronous structures.
 
-**Example**
+**Example** (Creating a Deferred for inter-fiber communication)
 
 ```ts
 import { Deferred, Effect, Fiber } from "effect"
@@ -54,6 +54,6 @@ export interface Deferred<in out A, in out E = never> extends Deferred.Variance<
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Deferred.ts#L128)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Deferred.ts#L130)
 
 Since v2.0.0

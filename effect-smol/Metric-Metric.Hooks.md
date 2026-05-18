@@ -5,7 +5,7 @@ Module: `Metric`<br />
 
 Interface defining the core hooks for metric operations: get, update, and modify.
 
-**Example**
+**Example** (Using metric hooks)
 
 ```ts
 import { Data, Effect, Metric } from "effect"
@@ -52,6 +52,6 @@ export interface Hooks<in Input, out State> {
   }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Metric.ts#L1459)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Metric.ts#L1424)
 
 Since v2.0.0

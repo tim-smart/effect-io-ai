@@ -9,10 +9,10 @@ For bounded queues, this operation may suspend if the queue is at capacity,
 depending on the backpressure strategy. For dropping/sliding queues, it may
 return false or succeed immediately by dropping/sliding existing messages.
 
-**Example**
+**Example** (Offering a value)
 
 ```ts
-import { Cause, Effect, Queue } from "effect"
+import { Effect, Queue } from "effect"
 
 const program = Effect.gen(function*() {
   const queue = yield* Queue.bounded<number>(3)
@@ -34,6 +34,6 @@ const program = Effect.gen(function*() {
 declare const offer: <A, E>(self: Enqueue<A, E>, message: Types.NoInfer<A>) => Effect<boolean>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Queue.ts#L513)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Queue.ts#L606)
 
 Since v4.0.0

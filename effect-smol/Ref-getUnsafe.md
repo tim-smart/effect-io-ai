@@ -8,7 +8,7 @@ Gets the current value of the Ref synchronously (unsafe version).
 This function reads the current value without wrapping in Effect.
 Use this only when you're sure about the safety of immediate access.
 
-**Example**
+**Example** (Reading a ref unsafely)
 
 ```ts
 import { Ref } from "effect"
@@ -30,6 +30,6 @@ console.log(value) // 42
 declare const getUnsafe: <A>(self: Ref<A>) => A
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Ref.ts#L685)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Ref.ts#L706)
 
 Since v2.0.0

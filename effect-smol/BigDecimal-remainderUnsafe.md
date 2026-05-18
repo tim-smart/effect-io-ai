@@ -7,7 +7,7 @@ Returns the remainder left over when one operand is divided by a second operand.
 
 Throws a `RangeError` if the divisor is `0`.
 
-**Example**
+**Example** (Computing remainders unsafely)
 
 ```ts
 import { fromStringUnsafe, remainderUnsafe } from "effect/BigDecimal"
@@ -33,6 +33,6 @@ assert.deepStrictEqual(
 declare const remainderUnsafe: { (divisor: BigDecimal): (self: BigDecimal) => BigDecimal; (self: BigDecimal, divisor: BigDecimal): BigDecimal; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigDecimal.ts#L980)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigDecimal.ts#L1002)
 
 Since v2.0.0

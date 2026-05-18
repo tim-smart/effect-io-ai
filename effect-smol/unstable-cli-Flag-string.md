@@ -5,7 +5,7 @@ Module: `Flag`<br />
 
 Creates a string flag that accepts text input.
 
-**Example**
+**Example** (Creating string flags)
 
 ```ts
 import { Flag } from "effect/unstable/cli"
@@ -20,6 +20,6 @@ const nameFlag = Flag.string("name")
 declare const string: (name: string) => Flag<string>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Flag.ts#L45)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Flag.ts#L65)
 
 Since v4.0.0

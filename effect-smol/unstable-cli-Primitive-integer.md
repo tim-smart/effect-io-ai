@@ -5,7 +5,7 @@ Module: `Primitive`<br />
 
 Creates a primitive that parses integer numbers from string input.
 
-**Example**
+**Example** (Parsing integer values)
 
 ```ts
 import { Effect } from "effect"
@@ -29,6 +29,6 @@ const parseInteger = Effect.gen(function*() {
 declare const integer: Primitive<number>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Primitive.ts#L200)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Primitive.ts#L208)
 
 Since v4.0.0

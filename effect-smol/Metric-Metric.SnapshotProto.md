@@ -5,7 +5,7 @@ Module: `Metric`<br />
 
 Protocol interface for metric snapshots containing metadata and current state.
 
-**Example**
+**Example** (Inspecting metric snapshot protocols)
 
 ```ts
 import { Data, Effect, Metric } from "effect"
@@ -76,6 +76,6 @@ export interface SnapshotProto<T extends Type, State> {
   }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Metric.ts#L1596)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Metric.ts#L1563)
 
 Since v4.0.0

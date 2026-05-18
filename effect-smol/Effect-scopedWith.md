@@ -5,7 +5,7 @@ Module: `Effect`<br />
 
 Creates a scoped effect by providing access to the scope.
 
-**Example**
+**Example** (Usage)
 
 ```ts
 import { Console, Effect, Scope } from "effect"
@@ -44,6 +44,6 @@ Effect.runPromise(program).then(console.log)
 declare const scopedWith: <A, E, R>(f: (scope: Scope) => Effect<A, E, R>) => Effect<A, E, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L6125)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L6016)
 
 Since v2.0.0

@@ -5,7 +5,7 @@ Module: `TxChunk`<br />
 
 Gets the size of the `TxChunk`.
 
-**Example**
+**Example** (Getting the size)
 
 ```ts
 import { Effect, TxChunk } from "effect"
@@ -30,6 +30,6 @@ const program = Effect.gen(function*() {
 declare const size: <A>(self: TxChunk<A>) => Effect.Effect<number>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxChunk.ts#L433)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxChunk.ts#L444)
 
 Since v4.0.0

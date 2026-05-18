@@ -8,7 +8,7 @@ Error indicating the model's tool call parameters failed schema validation.
 This error is retryable because the model may correct its parameters
 on subsequent attempts.
 
-**Example**
+**Example** (Creating a tool parameter validation error)
 
 ```ts
 import { AiError } from "effect/unstable/ai"
@@ -30,6 +30,6 @@ console.log(error.message)
 declare class ToolParameterValidationError
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AiError.ts#L999)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AiError.ts#L1046)
 
-Since v1.0.0
+Since v4.0.0

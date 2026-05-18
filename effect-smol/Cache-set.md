@@ -6,7 +6,7 @@ Module: `Cache`<br />
 Sets the value associated with the specified key in the cache. This will
 overwrite any existing value for that key, skipping the lookup function.
 
-**Example**
+**Example** (Setting values directly)
 
 ```ts
 import { Cache, Effect } from "effect"
@@ -24,7 +24,7 @@ const program = Effect.gen(function*() {
 })
 ```
 
-**Example**
+**Example** (Overwriting cached values)
 
 ```ts
 import { Cache, Effect } from "effect"
@@ -47,7 +47,7 @@ const program = Effect.gen(function*() {
 })
 ```
 
-**Example**
+**Example** (Applying TTL to set values)
 
 ```ts
 import { Cache, Effect } from "effect"
@@ -71,7 +71,7 @@ const program = Effect.gen(function*() {
 })
 ```
 
-**Example**
+**Example** (Enforcing capacity when setting values)
 
 ```ts
 import { Cache, Effect } from "effect"
@@ -102,6 +102,6 @@ const program = Effect.gen(function*() {
 declare const set: { <Key, A>(key: Key, value: A): <E, R>(self: Cache<Key, A, E, R>) => Effect.Effect<void>; <Key, A, E, R>(self: Cache<Key, A, E, R>, key: Key, value: A): Effect.Effect<void>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cache.ts#L640)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cache.ts#L713)
 
 Since v4.0.0

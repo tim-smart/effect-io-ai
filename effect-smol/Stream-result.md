@@ -13,7 +13,7 @@ This API replaces the following from Effect 3.x:
 
 - `Stream.either`
 
-**Example**
+**Example** (Converting failures to results)
 
 ```ts
 import { Console, Effect, Result, Stream } from "effect"
@@ -41,6 +41,6 @@ Effect.runPromise(program)
 declare const result: <A, E, R>(self: Stream<A, E, R>) => Stream<Result.Result<A, E>, never, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L2101)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L2199)
 
 Since v4.0.0

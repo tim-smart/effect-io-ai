@@ -5,7 +5,7 @@ Module: `Boolean`<br />
 
 Reference to the global Boolean constructor.
 
-**Example**
+**Example** (Coercing values to booleans)
 
 ```ts
 import * as Boolean from "effect/Boolean"
@@ -26,6 +26,6 @@ console.log(fromZero) // false
 declare const Boolean: BooleanConstructor
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Boolean.ts#L34)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Boolean.ts#L35)
 
 Since v4.0.0

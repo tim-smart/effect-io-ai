@@ -3,11 +3,11 @@ Module: `SchemaGetter`<br />
 
 ## SchemaGetter.passthroughSupertype
 
-Returns the identity getter, typed for when the decoded type `T` is a supertype of `E`.
+Returns the identity getter typed for the relationship `T extends E`.
 
-Use this when:
-- The decoded type is wider than the encoded type (e.g. `string` from a string literal).
-- You need type-safe passthrough without `{ strict: false }`.
+Use this when no runtime conversion is needed but the getter should be typed
+as producing a decoded/output type that is narrower than the encoded/input
+type.
 
 Behavior:
 - Same singleton as `passthrough` — no allocation, optimized in composition.

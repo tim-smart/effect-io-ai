@@ -8,7 +8,7 @@ Creates a flag that reads and parses the content of the specified file.
 The parser that is utilized will depend on the specified `format`, or the
 extension of the file passed on the command-line if no `format` is specified.
 
-**Example**
+**Example** (Parsing file contents)
 
 ```ts
 import { Flag } from "effect/unstable/cli"
@@ -27,6 +27,6 @@ const jsonConfig = Flag.fileParse("json-config", { format: "json" })
 declare const fileParse: (name: string, options?: Primitive.FileParseOptions | undefined) => Flag<unknown>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Flag.ts#L289)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Flag.ts#L324)
 
 Since v4.0.0

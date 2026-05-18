@@ -5,7 +5,7 @@ Module: `Flag`<br />
 
 Creates a flag that reads and returns file content as a string.
 
-**Example**
+**Example** (Reading file text)
 
 ```ts
 import { Flag } from "effect/unstable/cli"
@@ -20,6 +20,6 @@ const config = Flag.fileText("config-file")
 declare const fileText: (name: string) => Flag<string>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Flag.ts#L266)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Flag.ts#L300)
 
 Since v4.0.0

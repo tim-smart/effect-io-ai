@@ -10,7 +10,7 @@ effect fails or is interrupted.
 **Note**: The permit acquisition and release operations use atomic semantics
 to ensure proper resource management with Effect's scoped operations.
 
-**Example**
+**Example** (Running an effect with a permit)
 
 ```ts
 import { Console, Effect, TxSemaphore } from "effect"
@@ -40,6 +40,6 @@ const program = Effect.gen(function*() {
 declare const withPermit: { (self: TxSemaphore): <A, E, R>(effect: Effect.Effect<A, E, R>) => Effect.Effect<A, E, R>; <A, E, R>(self: TxSemaphore, effect: Effect.Effect<A, E, R>): Effect.Effect<A, E, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxSemaphore.ts#L436)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxSemaphore.ts#L476)
 
 Since v4.0.0

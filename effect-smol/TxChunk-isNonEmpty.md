@@ -5,7 +5,7 @@ Module: `TxChunk`<br />
 
 Checks if the `TxChunk` is non-empty.
 
-**Example**
+**Example** (Checking for a non-empty chunk)
 
 ```ts
 import { Effect, TxChunk } from "effect"
@@ -29,6 +29,6 @@ const program = Effect.gen(function*() {
 declare const isNonEmpty: <A>(self: TxChunk<A>) => Effect.Effect<boolean>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxChunk.ts#L485)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxChunk.ts#L498)
 
 Since v4.0.0

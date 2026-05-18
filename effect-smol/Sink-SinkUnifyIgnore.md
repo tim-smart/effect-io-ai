@@ -3,17 +3,11 @@ Module: `Sink`<br />
 
 ## Sink.SinkUnifyIgnore
 
-Interface used to ignore certain types during Sink unification.
-Part of the internal type system machinery.
+Marker used by Effect's `Unify` machinery for `Sink` values.
 
-**Example**
-
-```ts
-import type * as Sink from "effect/Sink"
-
-// Used internally by the type system
-type IgnoreConfig = Sink.SinkUnifyIgnore
-```
+It prevents the inherited `Effect` unifier from being selected when
+sink-specific unification should preserve the `Sink` type parameters. Users
+normally do not need to reference this interface directly.
 
 **Signature**
 
@@ -23,6 +17,6 @@ export interface SinkUnifyIgnore {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Sink.ts#L128)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Sink.ts#L151)
 
 Since v2.0.0

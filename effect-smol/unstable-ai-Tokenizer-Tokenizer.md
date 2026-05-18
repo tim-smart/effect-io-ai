@@ -8,7 +8,7 @@ The `Tokenizer` service tag for dependency injection.
 This tag provides access to tokenization functionality throughout your
 application, enabling token counting and prompt truncation capabilities.
 
-**Example**
+**Example** (Accessing the Tokenizer service)
 
 ```ts
 import { Effect } from "effect"
@@ -27,6 +27,6 @@ const useTokenizer = Effect.gen(function*() {
 declare class Tokenizer
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tokenizer.ts#L65)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tokenizer.ts#L68)
 
 Since v4.0.0

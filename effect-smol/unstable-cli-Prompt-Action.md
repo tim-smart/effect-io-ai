@@ -16,6 +16,6 @@ type { readonly _tag: "Beep"; } | { readonly _tag: "NextFrame"; readonly state: 
 }>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L56)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L88)
 
 Since v4.0.0

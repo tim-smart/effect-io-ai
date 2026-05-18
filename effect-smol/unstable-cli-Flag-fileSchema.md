@@ -6,7 +6,7 @@ Module: `Flag`<br />
 Creates a flag that reads and validates file content using the specified
 schema.
 
-**Example**
+**Example** (Validating file contents)
 
 ```ts
 import { Schema } from "effect"
@@ -26,6 +26,6 @@ const config = Flag.fileSchema("config", ConfigSchema, { format: "json" })
 declare const fileSchema: <A>(name: string, schema: Schema.Decoder<A>, options?: Primitive.FileSchemaOptions | undefined) => Flag<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Flag.ts#L314)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Flag.ts#L350)
 
 Since v4.0.0

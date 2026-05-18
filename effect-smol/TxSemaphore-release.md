@@ -3,9 +3,13 @@ Module: `TxSemaphore`<br />
 
 ## TxSemaphore.release
 
-Releases a single permit back to the semaphore, making it available for acquisition.
+Releases one permit back to the semaphore, making it available for
+acquisition.
 
-**Example**
+If the semaphore is already at capacity, this operation leaves the permit
+count unchanged.
+
+**Example** (Releasing a permit)
 
 ```ts
 import { Console, Effect, TxSemaphore } from "effect"
@@ -31,6 +35,6 @@ const program = Effect.gen(function*() {
 declare const release: (self: TxSemaphore) => Effect.Effect<void>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxSemaphore.ts#L356)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxSemaphore.ts#L391)
 
 Since v4.0.0

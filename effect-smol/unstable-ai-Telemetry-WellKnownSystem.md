@@ -27,6 +27,6 @@ type WellKnownSystem = | "anthropic"
   | "xai"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Telemetry.ts#L220)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Telemetry.ts#L221)
 
 Since v4.0.0

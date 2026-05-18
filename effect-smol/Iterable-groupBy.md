@@ -3,10 +3,13 @@ Module: `Iterable`<br />
 
 ## Iterable.groupBy
 
-Splits an `Iterable` into sub-non-empty-arrays stored in an object, based on the result of calling a `string`-returning
-function on each element, and grouping the results according to values returned
+Groups all elements by the string or symbol key returned by `f`.
 
-**Example**
+Each property in the returned record contains a non-empty array of elements
+that produced that key. Unlike `group`, matching elements do not need to be
+consecutive.
+
+**Example** (Grouping by a key)
 
 ```ts
 import { Iterable } from "effect"
@@ -50,6 +53,6 @@ console.log(evenOdd)
 declare const groupBy: { <A, K extends string | symbol>(f: (a: A) => K): (self: Iterable<A>) => Record<Record.ReadonlyRecord.NonLiteralKey<K>, NonEmptyArray<A>>; <A, K extends string | symbol>(self: Iterable<A>, f: (a: A) => K): Record<Record.ReadonlyRecord.NonLiteralKey<K>, NonEmptyArray<A>>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Iterable.ts#L1252)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Iterable.ts#L1294)
 
 Since v2.0.0

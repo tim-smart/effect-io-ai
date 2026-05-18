@@ -5,7 +5,7 @@ Module: `Effect`<br />
 
 Access the fiber currently executing the effect.
 
-**Example**
+**Example** (Usage)
 
 ```ts
 import { Console, Effect } from "effect"
@@ -22,6 +22,6 @@ const program = Effect.gen(function*() {
 declare const fiber: Effect<Fiber<unknown, unknown>, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L8215)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L8151)
 
 Since v4.0.0

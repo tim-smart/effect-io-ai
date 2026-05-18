@@ -5,7 +5,7 @@ Module: `Stream`<br />
 
 Creates a stream from a array-emitting `Channel`.
 
-**Example**
+**Example** (Creating a stream from an array-emitting channel)
 
 ```ts
 import { Channel, Console, Effect, Stream } from "effect"
@@ -26,6 +26,6 @@ const program = Effect.gen(function*() {
 declare const fromChannel: <Arr extends Arr.NonEmptyReadonlyArray<any>, E, R>(channel: Channel.Channel<Arr, E, void, unknown, unknown, unknown, R>) => Stream<Arr extends Arr.NonEmptyReadonlyArray<infer A> ? A : never, E, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L329)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L364)
 
 Since v2.0.0

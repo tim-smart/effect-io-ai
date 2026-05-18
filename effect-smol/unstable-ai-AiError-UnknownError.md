@@ -7,7 +7,7 @@ Catch-all error for unknown or unexpected errors.
 
 Unknown errors are not retryable by default since the cause is unknown.
 
-**Example**
+**Example** (Creating an unknown error)
 
 ```ts
 import { AiError } from "effect/unstable/ai"
@@ -27,6 +27,6 @@ console.log(unknownError.message)
 declare class UnknownError
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AiError.ts#L894)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AiError.ts#L935)
 
-Since v1.0.0
+Since v4.0.0

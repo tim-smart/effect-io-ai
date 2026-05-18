@@ -5,7 +5,7 @@ Module: `Stream`<br />
 
 Updates a single service in the stream environment by applying a function.
 
-**Example**
+**Example** (Updating a stream service)
 
 ```ts
 import { Console, Effect, Context, Stream } from "effect"
@@ -31,6 +31,6 @@ Effect.runPromise(Effect.provideService(program, Counter, { count: 0 }))
 declare const updateService: { <I, S>(key: Context.Key<I, S>, f: (service: NoInfer<S>) => S): <A, E, R>(self: Stream<A, E, R>) => Stream<A, E, R | I>; <A, E, R, I, S>(self: Stream<A, E, R>, key: Context.Key<I, S>, f: (service: NoInfer<S>) => S): Stream<A, E, R | I>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L9588)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L9884)
 
 Since v2.0.0

@@ -5,7 +5,7 @@ Module: `BigDecimal`<br />
 
 Provides a subtraction operation on `BigDecimal`s.
 
-**Example**
+**Example** (Subtracting decimals)
 
 ```ts
 import { fromStringUnsafe, subtract } from "effect/BigDecimal"
@@ -23,6 +23,6 @@ assert.deepStrictEqual(
 declare const subtract: { (that: BigDecimal): (self: BigDecimal) => BigDecimal; (self: BigDecimal, that: BigDecimal): BigDecimal; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigDecimal.ts#L380)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigDecimal.ts#L391)
 
 Since v2.0.0

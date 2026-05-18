@@ -5,7 +5,7 @@ Module: `Layer`<br />
 
 Builds a layer into a scoped value.
 
-**Example**
+**Example** (Building a layer into a context)
 
 ```ts
 import { Effect, Layer, Context } from "effect"
@@ -36,6 +36,6 @@ const program = Effect.gen(function*() {
 declare const build: <RIn, E, ROut>(self: Layer<ROut, E, RIn>) => Effect<Context.Context<ROut>, E, RIn | Scope.Scope>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L525)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L599)
 
 Since v2.0.0

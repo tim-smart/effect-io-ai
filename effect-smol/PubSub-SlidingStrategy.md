@@ -9,7 +9,7 @@ the rate at which messages are published and received by other
 subscribers. However, it creates the risk that a slow subscriber will
 not receive some messages published to the `PubSub` while it is subscribed.
 
-**Example**
+**Example** (Using a sliding strategy)
 
 ```ts
 import { Effect } from "effect"
@@ -25,15 +25,16 @@ const program = Effect.gen(function*() {
     strategy: () => new PubSub.SlidingStrategy()
   })
 
-  // Publish messages that exceed capacity
-  yield* PubSub.publish(pubsub, "msg1") // stored
-  yield* PubSub.publish(pubsub, "msg2") // stored
-  yield* PubSub.publish(pubsub, "msg3") // "msg1" evicted, "msg3" stored
-  yield* PubSub.publish(pubsub, "msg4") // "msg2" evicted, "msg4" stored
-
-  // Subscribers will see the most recent messages
   yield* Effect.scoped(Effect.gen(function*() {
     const subscription = yield* PubSub.subscribe(pubsub)
+
+    // Publish messages that exceed capacity
+    yield* PubSub.publish(pubsub, "msg1") // stored
+    yield* PubSub.publish(pubsub, "msg2") // stored
+    yield* PubSub.publish(pubsub, "msg3") // "msg1" evicted, "msg3" stored
+    yield* PubSub.publish(pubsub, "msg4") // "msg2" evicted, "msg4" stored
+
+    // Subscribers will see the most recent messages
     const messages = yield* PubSub.takeAll(subscription)
     console.log("Recent messages:", messages) // ["msg3", "msg4"]
   }))
@@ -46,6 +47,6 @@ const program = Effect.gen(function*() {
 declare class SlidingStrategy<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PubSub.ts#L2424)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PubSub.ts#L2512)
 
 Since v4.0.0

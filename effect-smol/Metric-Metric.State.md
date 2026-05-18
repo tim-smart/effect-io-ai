@@ -5,7 +5,7 @@ Module: `Metric`<br />
 
 Utility type to extract the State type from a Metric type.
 
-**Example**
+**Example** (Extracting metric state types)
 
 ```ts
 import { Effect, Metric } from "effect"
@@ -63,6 +63,6 @@ type State<A> = A extends Metric<infer _Input, infer _State> ? _State
     : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Metric.ts#L1414)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Metric.ts#L1378)
 
 Since v2.0.0

@@ -3,11 +3,13 @@ Module: `PubSub`<br />
 
 ## PubSub.size
 
-Retrieves the size of the queue, which is equal to the number of elements
-in the queue. This may be negative if fibers are suspended waiting for
-elements to be added to the queue.
+Returns the current number of messages retained by the `PubSub` for active
+subscribers.
 
-**Example**
+If the `PubSub` has been shut down, the returned effect succeeds with `0`.
+The size is not a count of waiting subscribers or suspended publishers.
+
+**Example** (Getting PubSub size)
 
 ```ts
 import { Effect } from "effect"
@@ -20,12 +22,18 @@ const program = Effect.gen(function*() {
   const initialSize = yield* PubSub.size(pubsub)
   console.log("Initial size:", initialSize) // 0
 
-  // Publish some messages
-  yield* PubSub.publish(pubsub, "msg1")
-  yield* PubSub.publish(pubsub, "msg2")
+  yield* Effect.scoped(Effect.gen(function*() {
+    const subscription = yield* PubSub.subscribe(pubsub)
 
-  const afterPublish = yield* PubSub.size(pubsub)
-  console.log("After publishing:", afterPublish) // 2
+    // Publish some messages for the active subscription
+    yield* PubSub.publish(pubsub, "msg1")
+    yield* PubSub.publish(pubsub, "msg2")
+
+    const afterPublish = yield* PubSub.size(pubsub)
+    console.log("After publishing:", afterPublish) // 2
+
+    yield* PubSub.takeAll(subscription)
+  }))
 })
 ```
 
@@ -35,6 +43,6 @@ const program = Effect.gen(function*() {
 declare const size: <A>(self: PubSub<A>) => Effect.Effect<number>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PubSub.ts#L557)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PubSub.ts#L602)
 
 Since v2.0.0

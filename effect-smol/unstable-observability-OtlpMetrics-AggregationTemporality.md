@@ -12,7 +12,7 @@ are aggregated.
 - `"delta"`: Reports changes since the last export. Each interval is
   independent with no dependency on previous measurements.
 
-**Example**
+**Example** (Configuring aggregation temporality)
 
 ```ts
 import * as OtlpMetrics from "effect/unstable/observability/OtlpMetrics"
@@ -36,6 +36,6 @@ const cumulativeLayer = OtlpMetrics.layer({
 type AggregationTemporality = "cumulative" | "delta"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/OtlpMetrics.ts#L49)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/OtlpMetrics.ts#L72)
 
 Since v4.0.0

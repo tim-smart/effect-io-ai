@@ -9,7 +9,7 @@ Useful for options that accept configuration values.
 Note: Requires at least one key=value pair. Multiple pairs are merged
 into a single record.
 
-**Example**
+**Example** (Parsing key-value pairs)
 
 ```ts
 import { Flag } from "effect/unstable/cli"
@@ -24,6 +24,6 @@ const env = Flag.keyValuePair("env")
 declare const keyValuePair: (name: string) => Flag<Record<string, string>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Flag.ts#L338)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Flag.ts#L375)
 
 Since v4.0.0

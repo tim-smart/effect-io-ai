@@ -5,7 +5,7 @@ Module: `Stream`<br />
 
 Creates an empty stream.
 
-**Example**
+**Example** (Creating an empty stream)
 
 ```ts
 import { Console, Effect, Stream } from "effect"
@@ -25,6 +25,6 @@ Effect.runPromise(program)
 declare const empty: Stream<never, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L792)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L841)
 
 Since v4.0.0

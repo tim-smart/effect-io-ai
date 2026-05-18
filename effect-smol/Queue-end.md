@@ -6,7 +6,7 @@ Module: `Queue`<br />
 Signal that the queue is complete. If the queue is already done, `false` is
 returned.
 
-**Example**
+**Example** (Ending queues)
 
 ```ts
 import { Cause, Effect, Queue } from "effect"
@@ -38,6 +38,6 @@ const program = Effect.gen(function*() {
 declare const end: <A, E>(self: Enqueue<A, E | Done>) => Effect<boolean>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Queue.ts#L829)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Queue.ts#L921)
 
 Since v4.0.0

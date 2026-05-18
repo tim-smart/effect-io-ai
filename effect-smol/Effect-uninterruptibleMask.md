@@ -6,7 +6,7 @@ Module: `Effect`<br />
 Disables interruption and provides a restore function to restore the
 interruptible state within the effect.
 
-**Example**
+**Example** (Usage)
 
 ```ts
 import { Console, Effect } from "effect"
@@ -35,6 +35,6 @@ const program = Effect.uninterruptibleMask((restore) =>
 declare const uninterruptibleMask: <A, E, R>(f: (restore: <AX, EX, RX>(effect: Effect<AX, EX, RX>) => Effect<AX, EX, RX>) => Effect<A, E, R>) => Effect<A, E, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L6941)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L6853)
 
 Since v2.0.0

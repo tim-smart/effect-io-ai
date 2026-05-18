@@ -6,38 +6,28 @@ Module: `Toolkit`<br />
 Represents a collection of tools which can be used to enhance the
 capabilities of a large language model.
 
-**Example**
+**Example** (Defining AI toolkits)
 
 ```ts
-import { Effect, Schema } from "effect"
+import { Schema } from "effect"
 import { Tool, Toolkit } from "effect/unstable/ai"
 
-// Create individual tools
-const GetCurrentTime = Tool.make("GetCurrentTime", {
-  description: "Get the current timestamp",
-  success: Schema.Number
+const SearchDocs = Tool.make("SearchDocs", {
+  description: "Search project documentation",
+  parameters: Schema.Struct({ query: Schema.String }),
+  success: Schema.Array(Schema.String)
 })
 
-const GetWeather = Tool.make("GetWeather", {
-  description: "Get weather for a location",
-  parameters: Schema.Struct({ location: Schema.String }),
-  success: Schema.Struct({
-    temperature: Schema.Number,
-    condition: Schema.String
-  })
+const SummarizeText = Tool.make("SummarizeText", {
+  description: "Summarize text",
+  parameters: Schema.Struct({ text: Schema.String }),
+  success: Schema.String
 })
 
-// Create a toolkit with multiple tools
-const MyToolkit = Toolkit.make(GetCurrentTime, GetWeather)
+const AiToolkit = Toolkit.make(SearchDocs, SummarizeText)
 
-const MyToolkitLayer = MyToolkit.toLayer({
-  GetCurrentTime: () => Effect.succeed(Date.now()),
-  GetWeather: ({ location }) =>
-    Effect.succeed({
-      temperature: 72,
-      condition: "sunny"
-    })
-})
+console.log(Object.keys(AiToolkit.tools))
+// ["SearchDocs", "SummarizeText"]
 ```
 
 **Signature**
@@ -85,6 +75,6 @@ export interface Toolkit<in out Tools extends Record<string, Tool.Any>> extends
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Toolkit.ts#L98)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Toolkit.ts#L101)
 
-Since v1.0.0
+Since v4.0.0

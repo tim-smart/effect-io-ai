@@ -6,7 +6,7 @@ Module: `Chunk`<br />
 Splits this chunk on the first element that matches this predicate.
 Returns a tuple containing two chunks: the first one is before the match, and the second one is from the match onward.
 
-**Example**
+**Example** (Splitting at a matching element)
 
 ```ts
 import { Chunk } from "effect"
@@ -33,6 +33,6 @@ console.log(Chunk.toArray(allFromFirst)) // [1, 2, 3, 4, 5, 6]
 declare const splitWhere: { <A>(predicate: Predicate<NoInfer<A>>): (self: Chunk<A>) => [beforeMatch: Chunk<A>, fromMatch: Chunk<A>]; <A>(self: Chunk<A>, predicate: Predicate<A>): [beforeMatch: Chunk<A>, fromMatch: Chunk<A>]; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L2003)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L2049)
 
 Since v2.0.0

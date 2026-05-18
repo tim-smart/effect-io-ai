@@ -6,7 +6,7 @@ Module: `TxPubSub`<br />
 Creates a bounded TxPubSub with the specified capacity. When a subscriber's
 queue is full, the publisher will retry the transaction until space is available.
 
-**Example**
+**Example** (Creating a bounded pub/sub)
 
 ```ts
 import { Effect, TxPubSub, TxQueue } from "effect"
@@ -31,6 +31,6 @@ const program = Effect.gen(function*() {
 declare const bounded: <A = never>(capacity: number) => Effect.Effect<TxPubSub<A>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxPubSub.ts#L121)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxPubSub.ts#L123)
 
 Since v4.0.0

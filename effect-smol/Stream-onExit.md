@@ -5,7 +5,7 @@ Module: `Stream`<br />
 
 Runs the provided finalizer when the stream exits, passing the exit value.
 
-**Example**
+**Example** (Running a finalizer on exit)
 
 ```ts
 import { Console, Effect, Exit, Stream } from "effect"
@@ -31,6 +31,6 @@ Effect.runPromise(Effect.gen(function*() {
 declare const onExit: { <E, R2>(finalizer: (exit: Exit.Exit<unknown, E>) => Effect.Effect<unknown, never, R2>): <A, R>(self: Stream<A, E, R>) => Stream<A, E, R | R2>; <A, E, R, R2>(self: Stream<A, E, R>, finalizer: (exit: Exit.Exit<unknown, E>) => Effect.Effect<unknown, never, R2>): Stream<A, E, R | R2>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L9104)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L9389)
 
 Since v4.0.0

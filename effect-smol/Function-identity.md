@@ -5,7 +5,7 @@ Module: `Function`<br />
 
 The identity function, i.e. A function that returns its input argument.
 
-**Example**
+**Example** (Returning the same value)
 
 ```ts
 import { identity } from "effect/Function"
@@ -20,6 +20,6 @@ assert.deepStrictEqual(identity(5), 5)
 declare const identity: <A>(a: A) => A
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Function.ts#L225)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Function.ts#L261)
 
 Since v2.0.0

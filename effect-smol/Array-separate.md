@@ -3,9 +3,10 @@ Module: `Array`<br />
 
 ## Array.separate
 
-Separates an iterable of `Result`s into two arrays: failures and successes.
+Separates an iterable of `Result`s into failure values and success values.
 
-- Equivalent to `partitionMap(identity)`.
+- Returns `[failures, successes]`.
+- Equivalent to `partition(identity)`.
 
 **Example** (Separating Results)
 
@@ -30,6 +31,6 @@ console.log(successes) // [1, 2]
 declare const separate: <T extends Iterable<Result.Result<any, any>>>(self: T) => [failures: Array<Result.Result.Failure<ReadonlyArray.Infer<T>>>, successes: Array<Result.Result.Success<ReadonlyArray.Infer<T>>>]
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L3384)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L3397)
 
 Since v2.0.0

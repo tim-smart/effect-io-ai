@@ -8,7 +8,7 @@ Sets the description for a command.
 Descriptions provide users with information about what the command does
 when they view help documentation.
 
-**Example**
+**Example** (Setting descriptions)
 
 ```ts
 import { Console, Effect } from "effect"
@@ -30,6 +30,6 @@ const deploy = Command.make("deploy", {
 declare const withDescription: { (description: string): <const Name extends string, Input, E, R, ContextInput>(self: Command<Name, Input, ContextInput, E, R>) => Command<Name, Input, ContextInput, E, R>; <const Name extends string, Input, E, R, ContextInput>(self: Command<Name, Input, ContextInput, E, R>, description: string): Command<Name, Input, ContextInput, E, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Command.ts#L894)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Command.ts#L944)
 
 Since v4.0.0

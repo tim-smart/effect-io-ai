@@ -17,10 +17,9 @@ effects, combining them into a single value.
 By default, the effects are run sequentially. To execute them concurrently,
 use the `{ concurrent: true }` option.
 
-**Example**
+**Example** (Combining Effects with a Custom Function)
 
 ```ts
-// Title: Combining Effects with a Custom Function
 import { Effect } from "effect"
 
 const task1 = Effect.succeed(1).pipe(
@@ -52,6 +51,6 @@ Effect.runPromise(task3).then(console.log)
 declare const zipWith: { <A2, E2, R2, A, B>(that: Effect<A2, E2, R2>, f: (a: A, b: A2) => B, options?: { readonly concurrent?: boolean | undefined; }): <E, R>(self: Effect<A, E, R>) => Effect<B, E2 | E, R2 | R>; <A, E, R, A2, E2, R2, B>(self: Effect<A, E, R>, that: Effect<A2, E2, R2>, f: (a: A, b: A2) => B, options?: { readonly concurrent?: boolean | undefined; }): Effect<B, E2 | E, R2 | R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L2574)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L2460)
 
 Since v2.0.0

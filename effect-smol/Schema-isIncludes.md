@@ -3,17 +3,12 @@ Module: `Schema`<br />
 
 ## Schema.isIncludes
 
-Validates that a string contains the specified substring.
+Validates at runtime that a string contains the specified literal substring.
 
-**JSON Schema**
-
-This check corresponds to a `pattern` constraint in JSON Schema that matches
-strings containing the specified substring.
-
-**Arbitrary**
-
-When generating test data with fast-check, this applies a `patterns`
-constraint to ensure generated strings contain the required substring.
+**Notes**
+The JSON Schema and arbitrary metadata use the substring as a raw regexp
+pattern. If the substring contains regexp syntax, generated patterns may not be
+equivalent to the runtime `includes` check.
 
 **Signature**
 
@@ -21,6 +16,6 @@ constraint to ensure generated strings contain the required substring.
 declare const isIncludes: (includes: string, annotations?: Annotations.Filter) => AST.Filter<string>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L5413)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L5704)
 
 Since v4.0.0

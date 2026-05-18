@@ -3,10 +3,12 @@ Module: `SchemaGetter`<br />
 
 ## SchemaGetter.encodeUriComponent
 
-Encodes a string using `encodeURIComponent`.
+Encodes a present string using `encodeURIComponent`.
 
 Behavior:
-- Pure, never fails.
+- Skips `None` inputs.
+- May throw a `URIError` for malformed surrogate pairs; this exception is not
+  converted into an `Issue`.
 
 **Example** (Encode a URI component)
 
@@ -25,6 +27,6 @@ See also:
 declare const encodeUriComponent: <E extends string>() => Getter<string, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L1476)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L1485)
 
 Since v4.0.0

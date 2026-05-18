@@ -6,7 +6,7 @@ Module: `Graph`<br />
 Filters and optionally transforms edges in a mutable graph using a predicate function.
 Edges that return Option.none are removed from the graph.
 
-**Example**
+**Example** (Filtering and mapping edges)
 
 ```ts
 import { Graph } from "effect"
@@ -36,6 +36,6 @@ console.log(Graph.edgeCount(graph)) // 2 (edges with weight 5 removed)
 declare const filterMapEdges: <N, E, T extends Kind = "directed">(mutable: MutableGraph<N, E, T>, f: (data: E) => Option.Option<E>) => void
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Graph.ts#L1019)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Graph.ts#L1110)
 
 Since v4.0.0

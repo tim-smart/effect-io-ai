@@ -11,6 +11,6 @@ The server's response to a resources/read request from the client.
 declare class ReadResourceResult
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L805)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L928)
 
 Since v4.0.0

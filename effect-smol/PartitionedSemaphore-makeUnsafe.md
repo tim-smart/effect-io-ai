@@ -3,7 +3,18 @@ Module: `PartitionedSemaphore`<br />
 
 ## PartitionedSemaphore.makeUnsafe
 
-Creates a `PartitionedSemaphore` unsafely.
+Constructs a `PartitionedSemaphore` synchronously, outside of `Effect`.
+
+**Details**
+
+Negative permit counts are clamped to `0`. Non-finite permit counts create
+an unbounded semaphore whose acquire and release operations complete
+immediately.
+
+**Notes**
+
+Prefer `make` when the semaphore should be created inside an `Effect`
+workflow.
 
 **Signature**
 
@@ -11,6 +22,6 @@ Creates a `PartitionedSemaphore` unsafely.
 declare const makeUnsafe: <K = unknown>(options: { readonly permits: number; }) => PartitionedSemaphore<K>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PartitionedSemaphore.ts#L58)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PartitionedSemaphore.ts#L126)
 
 Since v4.0.0

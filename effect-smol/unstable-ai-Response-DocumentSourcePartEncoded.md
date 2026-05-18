@@ -32,6 +32,6 @@ export interface DocumentSourcePartEncoded extends BasePartEncoded<"source", Doc
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Response.ts#L1939)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Response.ts#L1940)
 
-Since v1.0.0
+Since v4.0.0

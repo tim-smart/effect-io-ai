@@ -7,7 +7,7 @@ A HashMap is an immutable key-value data structure that provides efficient looku
 insertion, and deletion operations. It uses a Hash Array Mapped Trie (HAMT) internally
 for structural sharing and optimal performance.
 
-**Example**
+**Example** (Using basic HashMap operations)
 
 ```ts
 import * as HashMap from "effect/HashMap"
@@ -35,6 +35,6 @@ export interface HashMap<out Key, out Value> extends Iterable<[Key, Value]>, Equ
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashMap.ts#L42)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashMap.ts#L116)
 
 Since v2.0.0

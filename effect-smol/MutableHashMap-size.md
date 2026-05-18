@@ -5,7 +5,7 @@ Module: `MutableHashMap`<br />
 
 Returns the number of key-value pairs in the MutableHashMap.
 
-**Example**
+**Example** (Checking map size)
 
 ```ts
 import * as MutableHashMap from "effect/MutableHashMap"
@@ -30,6 +30,6 @@ console.log(MutableHashMap.size(map)) // 0
 declare const size: <K, V>(self: MutableHashMap<K, V>) => number
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableHashMap.ts#L674)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableHashMap.ts#L698)
 
 Since v2.0.0

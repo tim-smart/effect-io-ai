@@ -13,4 +13,4 @@ export * as BrowserHttpClient from "./BrowserHttpClient.ts"
 
 [Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/index.ts#L10)
 
-Since v1.0.0
+Since v4.0.0

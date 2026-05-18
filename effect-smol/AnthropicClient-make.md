@@ -21,4 +21,4 @@ declare const make: (options: Options) => Effect.Effect<Service, never, HttpClie
 
 [Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicClient.ts#L210)
 
-Since v1.0.0
+Since v4.0.0

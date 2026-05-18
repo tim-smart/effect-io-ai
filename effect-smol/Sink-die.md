@@ -5,7 +5,7 @@ Module: `Sink`<br />
 
 Creates a sink halting with a specified defect.
 
-**Example**
+**Example** (Dying with a defect)
 
 ```ts
 import { Effect, Sink, Stream } from "effect"
@@ -27,6 +27,6 @@ Effect.runPromise(program).catch(console.log)
 declare const die: (defect: unknown) => Sink<never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Sink.ts#L600)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Sink.ts#L651)
 
 Since v2.0.0

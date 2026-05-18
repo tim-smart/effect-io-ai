@@ -6,7 +6,7 @@ Module: `References`<br />
 Reference for managing span annotations that are automatically added to all new spans.
 These annotations provide context and metadata that applies across multiple spans.
 
-**Example**
+**Example** (Managing span annotations)
 
 ```ts
 import { Effect, References } from "effect"
@@ -56,6 +56,6 @@ const spanAnnotationExample = Effect.gen(function*() {
 declare const TracerSpanAnnotations: Context.Reference<ReadonlyRecord<string, unknown>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/References.ts#L408)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/References.ts#L428)
 
 Since v4.0.0

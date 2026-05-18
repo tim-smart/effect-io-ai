@@ -7,7 +7,7 @@ Get the duration in nanoseconds as a bigint.
 
 If the duration is infinite, returns `Option.none()`.
 
-**Example**
+**Example** (Safely reading nanoseconds)
 
 ```ts
 import { Duration, Option } from "effect"
@@ -24,6 +24,6 @@ Option.getOrUndefined(Duration.toNanos(Duration.infinity)) // undefined
 declare const toNanos: (self: Input) => Option.Option<bigint>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Duration.ts#L855)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Duration.ts#L881)
 
 Since v4.0.0

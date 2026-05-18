@@ -5,7 +5,7 @@ Module: `Random`<br />
 
 Uses the pseudo-random number generator to shuffle the specified iterable.
 
-**Example**
+**Example** (Shuffling values)
 
 ```ts
 import { Effect, Random } from "effect"
@@ -22,6 +22,6 @@ const program = Effect.gen(function*() {
 declare const shuffle: <A>(elements: Iterable<A>) => Effect.Effect<Array<A>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Random.ts#L184)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Random.ts#L193)
 
 Since v4.0.0

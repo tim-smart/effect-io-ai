@@ -5,7 +5,7 @@ Module: `Argument`<br />
 
 Creates a positional argument that reads and validates file content using a schema.
 
-**Example**
+**Example** (Validating file content with a schema)
 
 ```ts
 import { Schema } from "effect"
@@ -25,6 +25,6 @@ const config = Argument.fileSchema("config", ConfigSchema)
 declare const fileSchema: <A>(name: string, schema: Schema.Decoder<A>, options?: Primitive.FileSchemaOptions | undefined) => Argument<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Argument.ts#L234)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Argument.ts#L272)
 
 Since v4.0.0

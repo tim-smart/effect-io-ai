@@ -5,7 +5,7 @@ Module: `String`<br />
 
 Returns the Unicode code point at the specified index, or `None` if the index is out of bounds.
 
-**Example**
+**Example** (Reading code points)
 
 ```ts
 import { pipe, String } from "effect"
@@ -20,6 +20,6 @@ pipe("abc", String.codePointAt(10)) // Option.none()
 declare const codePointAt: { (index: number): (self: string) => Option.Option<number>; (self: string, index: number): Option.Option<number>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L570)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L598)
 
 Since v2.0.0

@@ -3,14 +3,14 @@ Module: `Layer`<br />
 
 ## Layer.parentSpan
 
-Constructs a new `Layer` which takes an existing span and registers it as the
-current parent span.
+Constructs a layer that provides an existing span as the current parent span.
 
-This allows you to create a traced scope for layer construction, making all
-operations within the layer constructor part of the same trace span. The span
-is automatically closed when the layer's scope is closed.
+**Details**
+The supplied span is made available through `Tracer.ParentSpan` for layers
+that are built with this layer. This API does not create, end, or close the
+span; the caller remains responsible for the span's lifetime.
 
-**Example**
+**Example** (Using an existing parent span)
 
 ```ts
 import { Console, Effect, Layer, Context, Tracer } from "effect"
@@ -44,6 +44,6 @@ const databaseLayer = Layer.effect(
 declare const parentSpan: (span: Tracer.AnySpan) => Layer<Tracer.ParentSpan>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L2166)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L2278)
 
 Since v4.0.0

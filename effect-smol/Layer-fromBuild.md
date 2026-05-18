@@ -8,7 +8,7 @@ Constructs a Layer from a function that uses a `MemoMap` and `Scope` to build th
 The function receives a `MemoMap` for memoization and a `Scope` for resource management.
 A child scope is created, and if the build fails, the child scope is closed.
 
-**Example**
+**Example** (Constructing a layer from a build function)
 
 ```ts
 import { Effect, Layer, Context } from "effect"
@@ -32,6 +32,6 @@ const databaseLayer = Layer.fromBuild(() =>
 declare const fromBuild: <ROut, E, RIn>(build: (memoMap: MemoMap, scope: Scope.Scope) => Effect<Context.Context<ROut>, E, RIn>) => Layer<ROut, E, RIn>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L250)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L283)
 
 Since v4.0.0

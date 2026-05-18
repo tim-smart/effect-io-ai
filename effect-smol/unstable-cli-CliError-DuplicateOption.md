@@ -5,7 +5,7 @@ Module: `CliError`<br />
 
 Error thrown when duplicate option names are detected between parent and child commands.
 
-**Example**
+**Example** (Creating duplicate option errors)
 
 ```ts
 import { CliError } from "effect/unstable/cli"
@@ -27,6 +27,6 @@ console.log(duplicateError.message)
 declare class DuplicateOption
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/CliError.ts#L164)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/CliError.ts#L196)
 
 Since v4.0.0

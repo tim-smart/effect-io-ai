@@ -5,7 +5,7 @@ Module: `Request`<br />
 
 Creates a constructor function for a specific Request type.
 
-**Example**
+**Example** (Creating untagged request constructors)
 
 ```ts
 import { Request } from "effect"
@@ -34,6 +34,6 @@ const request = GetUserProfile({
 declare const of: <R extends Request<any, any, any>>() => Constructor<R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Request.ts#L240)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Request.ts#L274)
 
 Since v2.0.0

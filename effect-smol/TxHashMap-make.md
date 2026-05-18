@@ -5,7 +5,7 @@ Module: `TxHashMap`<br />
 
 Creates a TxHashMap from the provided key-value pairs.
 
-**Example**
+**Example** (Creating a map from entries)
 
 ```ts
 import { Effect, TxHashMap } from "effect"
@@ -37,6 +37,6 @@ const program = Effect.gen(function*() {
 declare const make: <K, V>(...entries: Array<readonly [K, V]>) => Effect.Effect<TxHashMap<K, V>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashMap.ts#L278)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashMap.ts#L310)
 
 Since v2.0.0

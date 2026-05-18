@@ -5,7 +5,7 @@ Module: `TxPubSub`<br />
 
 Checks if the given value is a TxPubSub.
 
-**Example**
+**Example** (Checking for a TxPubSub)
 
 ```ts
 import { TxPubSub } from "effect"
@@ -23,6 +23,6 @@ if (TxPubSub.isTxPubSub(someValue)) {
 declare const isTxPubSub: (u: unknown) => u is TxPubSub<unknown>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxPubSub.ts#L635)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxPubSub.ts#L659)
 
 Since v4.0.0

@@ -3,15 +3,14 @@ Module: `HttpApiSchema`<br />
 
 ## HttpApiSchema.NoContent
 
-A void schema with the HTTP status code 204.
-This is used to represent empty responses with the status code 204.
+Type of the `NoContent` schema, a void schema annotated with HTTP status code 204.
 
 **Signature**
 
 ```ts
-declare const NoContent: NoContent
+export interface NoContent extends Schema.Void {}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiSchema.ts#L197)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiSchema.ts#L201)
 
 Since v4.0.0

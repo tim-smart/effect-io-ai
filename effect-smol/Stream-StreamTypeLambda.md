@@ -5,7 +5,7 @@ Module: `Stream`<br />
 
 Type lambda for Stream used in higher-kinded type operations.
 
-**Example**
+**Example** (Using the stream type lambda)
 
 ```ts
 import type { Kind } from "effect/HKT"
@@ -24,6 +24,6 @@ export interface StreamTypeLambda extends TypeLambda {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L165)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L188)
 
 Since v2.0.0

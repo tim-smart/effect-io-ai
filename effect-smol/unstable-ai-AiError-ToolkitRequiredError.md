@@ -8,7 +8,7 @@ Error indicating an operation requires a toolkit but none was provided.
 This error occurs when tool approval responses are present in the prompt
 but no toolkit was provided to resolve them.
 
-**Example**
+**Example** (Creating a toolkit required error)
 
 ```ts
 import { AiError } from "effect/unstable/ai"
@@ -28,6 +28,6 @@ console.log(error.message)
 declare class ToolkitRequiredError
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AiError.ts#L1198)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AiError.ts#L1257)
 
-Since v1.0.0
+Since v4.0.0

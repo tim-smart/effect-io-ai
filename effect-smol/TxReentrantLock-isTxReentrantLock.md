@@ -5,7 +5,7 @@ Module: `TxReentrantLock`<br />
 
 Checks if the given value is a TxReentrantLock.
 
-**Example**
+**Example** (Checking for TxReentrantLock values)
 
 ```ts
 import { TxReentrantLock } from "effect"
@@ -23,6 +23,6 @@ if (TxReentrantLock.isTxReentrantLock(someValue)) {
 declare const isTxReentrantLock: (u: unknown) => u is TxReentrantLock
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxReentrantLock.ts#L605)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxReentrantLock.ts#L622)
 
 Since v4.0.0

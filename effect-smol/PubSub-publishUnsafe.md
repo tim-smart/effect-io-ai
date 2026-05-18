@@ -6,7 +6,7 @@ Module: `PubSub`<br />
 Publishes a message to the `PubSub`, returning whether the message was published
 to the `PubSub`.
 
-**Example**
+**Example** (Publishing without suspending)
 
 ```ts
 import { PubSub } from "effect"
@@ -34,6 +34,6 @@ console.log(`Published ${publishedCount} out of ${messages.length} messages`)
 declare const publishUnsafe: { <A>(value: A): (self: PubSub<A>) => boolean; <A>(self: PubSub<A>, value: A): boolean; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PubSub.ts#L857)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PubSub.ts#L924)
 
 Since v4.0.0

@@ -6,7 +6,7 @@ Module: `Record`<br />
 Create an `Equivalence` for records using the provided `Equivalence` for values.
 Two records are considered equivalent if they have the same keys and their corresponding values are equivalent.
 
-**Example**
+**Example** (Comparing records with a value equivalence)
 
 ```ts
 import { Equal, Record } from "effect"
@@ -24,6 +24,6 @@ assert.deepStrictEqual(recordEquivalence({ a: 1, b: 2 }, { a: 1, b: 3 }), false)
 declare const makeEquivalence: <K extends string, A>(equivalence: Equivalence<A>) => Equivalence<ReadonlyRecord<K, A>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Record.ts#L1337)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Record.ts#L1404)
 
 Since v2.0.0

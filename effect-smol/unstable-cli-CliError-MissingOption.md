@@ -5,7 +5,7 @@ Module: `CliError`<br />
 
 Error thrown when a required option is missing.
 
-**Example**
+**Example** (Creating missing option errors)
 
 ```ts
 import { Effect } from "effect"
@@ -35,6 +35,6 @@ const validateRequiredOptions = (options: Record<string, string | undefined>) =>
 declare class MissingOption
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/CliError.ts#L213)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/CliError.ts#L250)
 
 Since v4.0.0

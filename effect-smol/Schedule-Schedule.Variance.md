@@ -5,7 +5,7 @@ Module: `Schedule`<br />
 
 Variance interface that defines the type parameter relationships for Schedule.
 
-**Example**
+**Example** (Understanding schedule variance)
 
 ```ts
 import { Effect, Schedule } from "effect"
@@ -38,6 +38,6 @@ export interface Variance<out Output, in Input, out Error, out Env> {
   }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L246)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L268)
 
 Since v2.0.0

@@ -19,6 +19,6 @@ export interface HandlerContext<Tool extends Tool.Any> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Toolkit.ts#L145)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Toolkit.ts#L148)
 
-Since v1.0.0
+Since v4.0.0

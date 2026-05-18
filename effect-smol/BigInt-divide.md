@@ -3,14 +3,12 @@ Module: `BigInt`<br />
 
 ## BigInt.divide
 
-Provides a division operation on `bigint`s.
+Safely divides one `bigint` by another.
 
-If the dividend is not a multiple of the divisor the result will be a `bigint` value
-which represents the integer division rounded down to the nearest integer.
+Uses JavaScript `bigint` division, so non-exact quotients are truncated
+toward zero. Returns `Option.none()` when the divisor is `0n`.
 
-Returns `Option.none()` if the divisor is `0n`.
-
-**Example**
+**Example** (Dividing bigints safely)
 
 ```ts
 import { divide } from "effect/BigInt"
@@ -28,6 +26,6 @@ assert.deepStrictEqual(divide(6n, 0n), Option.none())
 declare const divide: { (that: bigint): (self: bigint) => Option.Option<bigint>; (self: bigint, that: bigint): Option.Option<bigint>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigInt.ts#L136)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigInt.ts#L140)
 
 Since v2.0.0

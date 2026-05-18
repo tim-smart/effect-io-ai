@@ -3,7 +3,10 @@ Module: `Duration`<br />
 
 ## Duration.DurationValue
 
-The internal representation of a `Duration` value.
+Tagged representation of a `Duration` value.
+
+A duration is represented as milliseconds, nanoseconds, positive infinity,
+or negative infinity.
 
 **Signature**
 
@@ -14,6 +17,6 @@ type DurationValue = | { _tag: "Millis"; millis: number }
   | { _tag: "NegativeInfinity" }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Duration.ts#L57)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Duration.ts#L60)
 
 Since v2.0.0

@@ -3,8 +3,8 @@ Module: `Prompt`<br />
 
 ## Prompt.ContentFromString
 
-Schema for decoding message content (i.e. an array containing a single
-`TextPart`) from a string.
+Schema that decodes a string into content containing a single `TextPart` and,
+when encoding, emits the `text` value of the first part.
 
 **Signature**
 
@@ -12,6 +12,6 @@ Schema for decoding message content (i.e. an array containing a single
 declare const ContentFromString: Schema.decodeTo<Schema.NonEmptyArray<Schema.toType<Schema.Struct<{ readonly type: Schema.Literal<"text">; readonly text: Schema.String; readonly "~effect/ai/Prompt/Part": Schema.withDecodingDefaultKey<Schema.Literal<"~effect/ai/Prompt/Part">>; readonly options: Schema.withDecodingDefault<Schema.$Record<Schema.String, Schema.NullOr<Schema.Codec<Schema.Json>>>>; }>>>, Schema.String, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L1076)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L1089)
 
 Since v4.0.0

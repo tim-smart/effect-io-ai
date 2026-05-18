@@ -8,7 +8,7 @@ Sets the value for the specified key in the TxHashMap.
 **Mutation behavior**: This function mutates the original TxHashMap by updating
 its internal state. It does not return a new TxHashMap reference.
 
-**Example**
+**Example** (Setting values)
 
 ```ts
 import { Effect, TxHashMap } from "effect"
@@ -40,6 +40,6 @@ const program = Effect.gen(function*() {
 declare const set: { <K, V>(key: K, value: V): (self: TxHashMap<K, V>) => Effect.Effect<void>; <K, V>(self: TxHashMap<K, V>, key: K, value: V): Effect.Effect<void>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashMap.ts#L407)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashMap.ts#L442)
 
 Since v2.0.0

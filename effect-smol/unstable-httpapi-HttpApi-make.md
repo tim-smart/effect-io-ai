@@ -3,11 +3,10 @@ Module: `HttpApi`<br />
 
 ## HttpApi.make
 
-An `HttpApi` is a collection of `HttpApiEndpoint`s. You can use an `HttpApi` to
-represent a portion of your domain.
+Creates an empty `HttpApi` with the supplied identifier.
 
-You can then use `HttpApiBuilder.layer(api)` to implement the endpoints of the
-`HttpApi`.
+Add groups with `add` or `addHttpApi`, provide endpoint implementations with
+`HttpApiBuilder.group`, and register the API with `HttpApiBuilder.layer`.
 
 **Signature**
 
@@ -15,6 +14,6 @@ You can then use `HttpApiBuilder.layer(api)` to implement the endpoints of the
 declare const make: <const Id extends string>(identifier: Id) => HttpApi<Id, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApi.ts#L187)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApi.ts#L217)
 
 Since v4.0.0

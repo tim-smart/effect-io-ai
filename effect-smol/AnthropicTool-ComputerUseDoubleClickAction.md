@@ -3,14 +3,14 @@ Module: `AnthropicTool`<br />
 
 ## AnthropicTool.ComputerUseDoubleClickAction
 
-Perform a double click.
+Computer-use action payload for performing a double click, optionally at a specific coordinate.
 
 **Signature**
 
 ```ts
-declare const ComputerUseDoubleClickAction: Schema.Struct<{ readonly action: Schema.Literal<"double_click">; readonly coordinate: Schema.optional<Schema.Tuple<readonly [Schema.Number, Schema.Number]>>; }>
+type ComputerUseDoubleClickAction = typeof ComputerUseDoubleClickAction.Type
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L483)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L527)
 
-Since v1.0.0
+Since v4.0.0

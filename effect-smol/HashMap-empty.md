@@ -5,7 +5,7 @@ Module: `HashMap`<br />
 
 Creates a new empty `HashMap`.
 
-**Example**
+**Example** (Creating an empty HashMap)
 
 ```ts
 import * as HashMap from "effect/HashMap"
@@ -21,6 +21,6 @@ console.log(HashMap.size(map)) // 0
 declare const empty: <K = never, V = never>() => HashMap<K, V>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashMap.ts#L229)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashMap.ts#L310)
 
 Since v2.0.0

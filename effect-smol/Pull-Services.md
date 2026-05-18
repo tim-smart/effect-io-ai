@@ -11,6 +11,6 @@ Extracts the service requirements (context) type from a Pull type.
 type Services<P> = P extends Effect<infer _A, infer _E, infer _R> ? _R : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Pull.ts#L52)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Pull.ts#L85)
 
 Since v4.0.0

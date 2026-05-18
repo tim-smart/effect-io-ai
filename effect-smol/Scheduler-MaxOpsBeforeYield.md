@@ -16,6 +16,6 @@ performance and fairness in concurrent execution.
 declare const MaxOpsBeforeYield: Context.Reference<number>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Scheduler.ts#L191)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Scheduler.ts#L228)
 
 Since v4.0.0

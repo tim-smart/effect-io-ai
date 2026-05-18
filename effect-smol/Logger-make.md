@@ -8,7 +8,7 @@ Creates a new `Logger` from a log function.
 The log function receives an options object containing the message, log level,
 cause, fiber information, and timestamp, and should return the desired output.
 
-**Example**
+**Example** (Creating loggers from functions)
 
 ```ts
 import { Effect, Logger } from "effect"
@@ -47,6 +47,6 @@ const program = Effect.log("Hello World").pipe(
 declare const make: <Message, Output>(log: (options: Options<Message>) => Output) => Logger<Message, Output>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Logger.ts#L509)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Logger.ts#L525)
 
 Since v2.0.0

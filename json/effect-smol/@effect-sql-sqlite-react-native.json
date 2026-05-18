@@ -10,7 +10,7 @@
     "description": "Re-exports all named exports from the \"./SqliteClient.ts\" module as `SqliteClient`.",
     "deprecated": false,
     "examples": [],
-    "since": "1.0.0",
+    "since": "4.0.0",
     "category": null,
     "signature": "export * as SqliteClient from \"./SqliteClient.ts\"",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/sqlite-react-native/src/index.ts#L10"
@@ -26,7 +26,7 @@
     "description": "Re-exports all named exports from the \"./SqliteMigrator.ts\" module as `SqliteMigrator`.",
     "deprecated": false,
     "examples": [],
-    "since": "1.0.0",
+    "since": "4.0.0",
     "category": null,
     "signature": "export * as SqliteMigrator from \"./SqliteMigrator.ts\"",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/sqlite-react-native/src/index.ts#L15"
@@ -39,12 +39,13 @@
     },
     "project": "@effect/sql-sqlite-react-native",
     "name": "TypeId",
+    "description": "Runtime identifier attached to SQLite React Native client values.",
     "deprecated": false,
     "examples": [],
-    "since": "1.0.0",
+    "since": "4.0.0",
     "category": "type ids",
     "signature": "declare const TypeId: \"~@effect/sql-sqlite-react-native/SqliteClient\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/sqlite-react-native/src/SqliteClient.ts#L29"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/sqlite-react-native/src/SqliteClient.ts#L46"
   },
   {
     "_tag": "Constant",
@@ -54,12 +55,13 @@
     },
     "project": "@effect/sql-sqlite-react-native",
     "name": "SqliteClient",
+    "description": "Context service tag for the React Native SQLite client.",
     "deprecated": false,
     "examples": [],
-    "since": "1.0.0",
+    "since": "4.0.0",
     "category": "tags",
     "signature": "declare const SqliteClient: Context.Service<SqliteClient, SqliteClient>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/sqlite-react-native/src/SqliteClient.ts#L53"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/sqlite-react-native/src/SqliteClient.ts#L76"
   },
   {
     "_tag": "Constant",
@@ -69,12 +71,13 @@
     },
     "project": "@effect/sql-sqlite-react-native",
     "name": "AsyncQuery",
+    "description": "Fiber-local flag that makes the React Native SQLite client run queries through the asynchronous `execute` API instead of `executeSync`.",
     "deprecated": false,
     "examples": [],
-    "since": "1.0.0",
+    "since": "4.0.0",
     "category": "fiber refs",
     "signature": "declare const AsyncQuery: Context.Reference<boolean>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/sqlite-react-native/src/SqliteClient.ts#L72"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/sqlite-react-native/src/SqliteClient.ts#L99"
   },
   {
     "_tag": "Function",
@@ -84,12 +87,13 @@
     },
     "project": "@effect/sql-sqlite-react-native",
     "name": "withAsyncQuery",
+    "description": "Runs an effect with `AsyncQuery` enabled, causing React Native SQLite queries in that effect to use the asynchronous driver API.",
     "deprecated": false,
     "examples": [],
-    "since": "1.0.0",
+    "since": "4.0.0",
     "category": "fiber refs",
     "signature": "declare const withAsyncQuery: <R, E, A>(effect: Effect.Effect<A, E, R>) => Effect.Effect<A, E, Exclude<R, never>>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/sqlite-react-native/src/SqliteClient.ts#L81"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/sqlite-react-native/src/SqliteClient.ts#L110"
   },
   {
     "_tag": "Function",
@@ -99,12 +103,13 @@
     },
     "project": "@effect/sql-sqlite-react-native",
     "name": "make",
+    "description": "Creates a scoped React Native SQLite client from the supplied configuration, using a single serialized connection and honoring `AsyncQuery` for query execution.",
     "deprecated": false,
     "examples": [],
-    "since": "1.0.0",
+    "since": "4.0.0",
     "category": "constructor",
     "signature": "declare const make: (options: SqliteClientConfig) => Effect.Effect<SqliteClient, never, Scope.Scope | Reactivity.Reactivity>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/sqlite-react-native/src/SqliteClient.ts#L90"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/sqlite-react-native/src/SqliteClient.ts#L121"
   },
   {
     "_tag": "Function",
@@ -114,12 +119,13 @@
     },
     "project": "@effect/sql-sqlite-react-native",
     "name": "layerConfig",
+    "description": "Builds a layer from an Effect `Config` value, providing both the React Native `SqliteClient` service and the generic `SqlClient` service.",
     "deprecated": false,
     "examples": [],
-    "since": "1.0.0",
+    "since": "4.0.0",
     "category": "layers",
     "signature": "declare const layerConfig: (config: Config.Wrap<SqliteClientConfig>) => Layer.Layer<SqliteClient | Client.SqlClient, Config.ConfigError>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/sqlite-react-native/src/SqliteClient.ts#L197"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/sqlite-react-native/src/SqliteClient.ts#L230"
   },
   {
     "_tag": "Function",
@@ -129,12 +135,13 @@
     },
     "project": "@effect/sql-sqlite-react-native",
     "name": "layer",
+    "description": "Builds a layer from a React Native SQLite client configuration, providing both `SqliteClient` and the generic `SqlClient` service.",
     "deprecated": false,
     "examples": [],
-    "since": "1.0.0",
+    "since": "4.0.0",
     "category": "layers",
     "signature": "declare const layer: (config: SqliteClientConfig) => Layer.Layer<SqliteClient | Client.SqlClient>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/sqlite-react-native/src/SqliteClient.ts#L215"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/sqlite-react-native/src/SqliteClient.ts#L250"
   },
   {
     "_tag": "Interface",
@@ -144,12 +151,13 @@
     },
     "project": "@effect/sql-sqlite-react-native",
     "name": "SqliteClient",
+    "description": "React Native SQLite client service interface, extending `SqlClient` with its configuration and marking `updateValues` as unsupported for SQLite.",
     "deprecated": false,
     "examples": [],
-    "since": "1.0.0",
+    "since": "4.0.0",
     "category": "models",
     "signature": "export interface SqliteClient extends Client.SqlClient {\n  readonly [TypeId]: TypeId\n  readonly config: SqliteClientConfig\n\n  /** Not supported in sqlite */\n  readonly updateValues: never\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/sqlite-react-native/src/SqliteClient.ts#L41"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/sqlite-react-native/src/SqliteClient.ts#L62"
   },
   {
     "_tag": "Interface",
@@ -159,12 +167,13 @@
     },
     "project": "@effect/sql-sqlite-react-native",
     "name": "SqliteClientConfig",
+    "description": "Configuration for a React Native SQLite client, including the database filename, optional location and encryption key, span attributes, and query/result name transforms.",
     "deprecated": false,
     "examples": [],
-    "since": "1.0.0",
+    "since": "4.0.0",
     "category": "models",
     "signature": "export interface SqliteClientConfig {\n  readonly filename: string\n  readonly location?: string | undefined\n  readonly encryptionKey?: string | undefined\n  readonly spanAttributes?: Record<string, unknown> | undefined\n  readonly transformResultNames?: ((str: string) => string) | undefined\n  readonly transformQueryNames?: ((str: string) => string) | undefined\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/sqlite-react-native/src/SqliteClient.ts#L59"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/sqlite-react-native/src/SqliteClient.ts#L84"
   },
   {
     "_tag": "TypeAlias",
@@ -174,12 +183,13 @@
     },
     "project": "@effect/sql-sqlite-react-native",
     "name": "TypeId",
+    "description": "Type-level identifier for SQLite React Native client values.",
     "deprecated": false,
     "examples": [],
-    "since": "1.0.0",
+    "since": "4.0.0",
     "category": "type ids",
     "signature": "type TypeId = \"~@effect/sql-sqlite-react-native/SqliteClient\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/sqlite-react-native/src/SqliteClient.ts#L35"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/sqlite-react-native/src/SqliteClient.ts#L54"
   },
   {
     "_tag": "Constant",
@@ -189,12 +199,13 @@
     },
     "project": "@effect/sql-sqlite-react-native",
     "name": "run",
+    "description": "Runs SQL migrations for a React Native SQLite database using the shared `Migrator` implementation and the current `SqlClient`.",
     "deprecated": false,
     "examples": [],
-    "since": "1.0.0",
+    "since": "4.0.0",
     "category": "constructor",
     "signature": "declare const run: <R>(options: Migrator.MigratorOptions<R>) => Effect.Effect<ReadonlyArray<readonly [id: number, name: string]>, SqlError | Migrator.MigrationError, Client.SqlClient | R>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/sqlite-react-native/src/SqliteMigrator.ts#L19"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/sqlite-react-native/src/SqliteMigrator.ts#L39"
   },
   {
     "_tag": "Function",
@@ -204,12 +215,13 @@
     },
     "project": "@effect/sql-sqlite-react-native",
     "name": "layer",
+    "description": "Creates a layer that runs the configured React Native SQLite migrations during layer construction and provides no services.",
     "deprecated": false,
     "examples": [],
-    "since": "1.0.0",
+    "since": "4.0.0",
     "category": "constructor",
     "signature": "declare const layer: <R>(options: Migrator.MigratorOptions<R>) => Layer.Layer<never, SqlError | Migrator.MigrationError, R | Client.SqlClient>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/sqlite-react-native/src/SqliteMigrator.ts#L31"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/sqlite-react-native/src/SqliteMigrator.ts#L53"
   },
   {
     "_tag": "Export",
@@ -222,9 +234,9 @@
     "description": "Re-exports all named exports from the \"effect/unstable/sql/Migrator\" module.",
     "deprecated": false,
     "examples": [],
-    "since": "1.0.0",
+    "since": "4.0.0",
     "category": null,
     "signature": "export * from \"effect/unstable/sql/Migrator\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/sqlite-react-native/src/SqliteMigrator.ts#L13"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/sqlite-react-native/src/SqliteMigrator.ts#L31"
   }
 ]

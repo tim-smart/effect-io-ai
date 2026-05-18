@@ -10,7 +10,7 @@ Provides part of the required context while leaving the rest unchanged.
 This function allows you to transform the context required by an effect,
 providing part of the context and leaving the rest to be fulfilled later.
 
-**Example**
+**Example** (Usage)
 
 ```ts
 import { Effect, Context } from "effect"
@@ -46,6 +46,6 @@ const result = Effect.provideService(configured, Logger, {
 declare const updateContext: { <R2, R>(f: (context: Context.Context<R2>) => Context.Context<NoInfer<R>>): <A, E>(self: Effect<A, E, R>) => Effect<A, E, R2>; <A, E, R, R2>(self: Effect<A, E, R>, f: (context: Context.Context<R2>) => Context.Context<NoInfer<R>>): Effect<A, E, R2>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L5793)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L5673)
 
 Since v4.0.0

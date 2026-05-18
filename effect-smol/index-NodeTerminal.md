@@ -13,4 +13,4 @@ export * as NodeTerminal from "./NodeTerminal.ts"
 
 [Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L112)
 
-Since v1.0.0
+Since v4.0.0

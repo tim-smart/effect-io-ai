@@ -6,7 +6,7 @@ Module: `Graph`<br />
 Find strongly connected components in a directed graph using Kosaraju's algorithm.
 Each SCC is represented as an array of node indices.
 
-**Example**
+**Example** (Finding strongly connected components)
 
 ```ts
 import { Graph } from "effect"
@@ -30,6 +30,6 @@ console.log(sccs) // [[0, 1, 2]]
 declare const stronglyConnectedComponents: <N, E, T extends Kind = "directed">(graph: Graph<N, E, T> | MutableGraph<N, E, T>) => Array<Array<NodeIndex>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Graph.ts#L2583)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Graph.ts#L2704)
 
 Since v4.0.0

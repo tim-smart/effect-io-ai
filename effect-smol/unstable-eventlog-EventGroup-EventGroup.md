@@ -3,10 +3,11 @@ Module: `EventGroup`<br />
 
 ## EventGroup.EventGroup
 
-An `EventGroup` is a collection of `Event`s. You can use an `EventGroup` to
-represent a portion of your domain.
+Typed collection of event definitions that represents a portion of an event log
+domain.
 
-The events can be implemented later using the `EventLogBuilder.group` api.
+Build groups from `empty.add(...)`, then provide implementations for the events
+with `EventLog.group`.
 
 **Signature**
 
@@ -40,6 +41,6 @@ export interface EventGroup<
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventGroup.ts#L37)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventGroup.ts#L59)
 
 Since v4.0.0

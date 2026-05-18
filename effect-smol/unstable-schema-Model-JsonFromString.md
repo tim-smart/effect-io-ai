@@ -3,16 +3,24 @@ Module: `Model`<br />
 
 ## Model.JsonFromString
 
-A field that represents a JSON value stored as text in the database.
-
-The "json" variants will use the object schema directly.
+Variant field type for a JSON value stored as text in database variants and
+exposed through the supplied schema in JSON variants.
 
 **Signature**
 
 ```ts
-declare const JsonFromString: <S extends Schema.Top>(schema: S) => JsonFromString<S>
+export interface JsonFromString<S extends Schema.Top> extends
+  VariantSchema.Field<{
+    readonly select: Schema.fromJsonString<S>
+    readonly insert: Schema.fromJsonString<S>
+    readonly update: Schema.fromJsonString<S>
+    readonly json: S
+    readonly jsonCreate: S
+    readonly jsonUpdate: S
+  }>
+{}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Model.ts#L581)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Model.ts#L650)
 
 Since v4.0.0

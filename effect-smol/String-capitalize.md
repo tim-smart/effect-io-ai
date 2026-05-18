@@ -5,7 +5,7 @@ Module: `String`<br />
 
 Capitalizes the first character of a string.
 
-**Example**
+**Example** (Capitalizing a string)
 
 ```ts
 import { pipe, String } from "effect"
@@ -21,6 +21,6 @@ assert.deepStrictEqual(String.capitalize("hello"), "Hello")
 declare const capitalize: <T extends string>(self: T) => Capitalize<T>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L181)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L190)
 
 Since v2.0.0

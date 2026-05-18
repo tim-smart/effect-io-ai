@@ -13,4 +13,4 @@ declare const make: (options: Options) => Effect.Effect<Generated.OpenAiClient, 
 
 [Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClientGenerated.ts#L87)
 
-Since v1.0.0
+Since v4.0.0

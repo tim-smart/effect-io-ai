@@ -6,7 +6,7 @@ Module: `Scope`<br />
 Represents a closed scope state where finalizers have been executed
 and the scope is no longer accepting new resources.
 
-**Example**
+**Example** (Inspecting a closed scope state)
 
 ```ts
 import { Effect, Exit, Scope } from "effect"
@@ -34,6 +34,6 @@ type Closed = {
   }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Scope.ts#L183)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Scope.ts#L192)
 
 Since v2.0.0

@@ -5,7 +5,7 @@ Module: `String`<br />
 
 Converts a camelCase string to snake_case.
 
-**Example**
+**Example** (Converting camelCase to snake_case)
 
 ```ts
 import { String } from "effect"
@@ -20,6 +20,6 @@ console.log(String.camelToSnake("fooBarBaz")) // "foo_bar_baz"
 declare const camelToSnake: (self: string) => string
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L1045)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L1104)
 
 Since v2.0.0

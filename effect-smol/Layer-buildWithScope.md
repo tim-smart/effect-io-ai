@@ -9,7 +9,7 @@ has been extended. This allows building layers where the lifetime of some of
 the services output by the layer exceed the lifetime of the effect the
 layer is provided to.
 
-**Example**
+**Example** (Building a layer with an explicit scope)
 
 ```ts
 import { Effect, Layer, Scope, Context } from "effect"
@@ -46,6 +46,6 @@ const program = Effect.gen(function*() {
 declare const buildWithScope: { (scope: Scope.Scope): <RIn, E, ROut>(self: Layer<ROut, E, RIn>) => Effect<Context.Context<ROut>, E, RIn>; <RIn, E, ROut>(self: Layer<ROut, E, RIn>, scope: Scope.Scope): Effect<Context.Context<ROut>, E, RIn>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L576)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L651)
 
 Since v2.0.0

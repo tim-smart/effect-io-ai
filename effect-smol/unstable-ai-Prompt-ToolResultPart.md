@@ -5,7 +5,7 @@ Module: `Prompt`<br />
 
 Content part representing the result of a tool call.
 
-**Example**
+**Example** (Creating tool result parts)
 
 ```ts
 import { Prompt } from "effect/unstable/ai"
@@ -45,6 +45,6 @@ export interface ToolResultPart extends BasePart<"tool-result", ToolResultPartOp
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L655)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L666)
 
 Since v4.0.0

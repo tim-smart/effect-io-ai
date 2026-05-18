@@ -3,7 +3,8 @@ Module: `RpcServer`<br />
 
 ## RpcServer.layerProtocolHttp
 
-A rpc protocol that uses websockets for communication.
+Provides a server `Protocol` that uses HTTP POST requests for RPC
+communication.
 
 **Signature**
 
@@ -11,6 +12,6 @@ A rpc protocol that uses websockets for communication.
 declare const layerProtocolHttp: (options: { readonly path: HttpRouter.PathInput; }) => Layer.Layer<Protocol, never, RpcSerialization.RpcSerialization | HttpRouter.HttpRouter>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RpcServer.ts#L1099)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RpcServer.ts#L1170)
 
 Since v4.0.0

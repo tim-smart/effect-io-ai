@@ -3,13 +3,12 @@ Module: `Prompt`<br />
 
 ## Prompt.fromResponseParts
 
-Creates a Prompt from the response parts of a previous interaction with a
-large language model.
+Creates a `Prompt` from response parts by folding completed text and
+reasoning streams into assistant parts, placing tool calls and approval
+requests in an assistant message, and placing non-preliminary tool results
+in a tool message using their encoded results.
 
-Converts streaming or non-streaming AI response parts into a structured
-prompt, typically for use in conversation history or further processing.
-
-**Example**
+**Example** (Creating prompts from response parts)
 
 ```ts
 import { Prompt, Response } from "effect/unstable/ai"
@@ -45,6 +44,6 @@ const prompt = Prompt.fromResponseParts(responseParts)
 declare const fromResponseParts: (parts: ReadonlyArray<Response.AnyPart>) => Prompt
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L1924)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L1944)
 
 Since v4.0.0

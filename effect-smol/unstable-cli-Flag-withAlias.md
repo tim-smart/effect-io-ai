@@ -5,7 +5,7 @@ Module: `Flag`<br />
 
 Adds an alias to a flag, allowing it to be referenced by multiple names.
 
-**Example**
+**Example** (Adding flag aliases)
 
 ```ts
 import { Flag } from "effect/unstable/cli"
@@ -28,6 +28,6 @@ const helpFlag = Flag.boolean("help").pipe(
 declare const withAlias: { <A>(alias: string): (self: Flag<A>) => Flag<A>; <A>(self: Flag<A>, alias: string): Flag<A>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Flag.ts#L383)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Flag.ts#L425)
 
 Since v4.0.0

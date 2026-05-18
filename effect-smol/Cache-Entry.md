@@ -3,8 +3,14 @@ Module: `Cache`<br />
 
 ## Cache.Entry
 
-Represents a cache entry containing a deferred value and optional expiration time.
-This is used internally by the cache implementation to track cached values and their lifetimes.
+Represents a low-level cache entry containing a deferred lookup result and
+an optional expiration timestamp.
+
+**Notes**
+
+An `expiresAt` value of `undefined` means the entry does not expire. Most
+users should interact with entries through the `Cache` combinators rather
+than constructing them directly.
 
 **Signature**
 
@@ -15,6 +21,6 @@ export interface Entry<A, E> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cache.ts#L108)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cache.ts#L152)
 
 Since v4.0.0

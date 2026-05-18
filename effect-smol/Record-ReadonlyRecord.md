@@ -6,7 +6,7 @@ Module: `Record`<br />
 Represents a readonly record with keys of type `K` and values of type `A`.
 This is the foundational type for immutable key-value mappings in Effect.
 
-**Example**
+**Example** (Defining a readonly record type)
 
 ```ts
 import type { Record } from "effect"
@@ -28,6 +28,6 @@ type ReadonlyRecord<K, A> = {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Record.ts#L38)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Record.ts#L39)
 
 Since v2.0.0

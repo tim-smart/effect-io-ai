@@ -5,15 +5,16 @@ Module: `Metric`<br />
 
 Retrieves the current state of the specified `Metric`.
 
-This function returns an Effect that, when executed, will provide the current
-aggregated state of the metric. The state type depends on the metric type:
-- Counter: `{ count: number | bigint }`
-- Gauge: `{ value: number | bigint }`
-- Frequency: `{ occurrences: Map<string, number> }`
-- Histogram: `{ buckets: Array<[number, number]>, count: number, min: number, max: number, sum: number }`
-- Summary: `{ quantiles: Array<[number, number | undefined]>, count: number, min: number, max: number, sum: number }`
+**Details**
+The returned state depends on the metric type:
 
-**Example**
+- Counter: `CounterState<number | bigint>` with `count` and `incremental`
+- Gauge: `GaugeState<number | bigint>` with `value`
+- Frequency: `FrequencyState` with `occurrences`
+- Histogram: `HistogramState` with buckets, count, min, max, and sum
+- Summary: `SummaryState` with quantiles, count, min, max, and sum
+
+**Example** (Reading metric state)
 
 ```ts
 import { Effect, Metric } from "effect"

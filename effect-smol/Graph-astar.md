@@ -3,13 +3,17 @@ Module: `Graph`<br />
 
 ## Graph.astar
 
-Find the shortest path between two nodes using A* pathfinding algorithm.
+Finds the shortest path from the configured source node to the target node
+using the A* pathfinding algorithm.
 
-A* is an extension of Dijkstra's algorithm that uses a heuristic function to guide
-the search towards the target, potentially finding paths faster than Dijkstra's.
-The heuristic must be admissible (never overestimate the actual cost).
+**Details**
 
-**Example**
+The edge-cost function must return non-negative weights, and the heuristic
+should be admissible to preserve shortest-path guarantees. Returns
+`Option.none()` when the target is not reachable, and throws a `GraphError`
+when either endpoint is missing or a negative edge cost is encountered.
+
+**Example** (Finding shortest paths with A-star)
 
 ```ts
 import { Graph } from "effect"
@@ -47,6 +51,6 @@ if (result._tag === "Some") {
 declare const astar: { <E, N>(config: AstarConfig<E, N>): <T extends Kind = "directed">(graph: Graph<N, E, T> | MutableGraph<N, E, T>) => Option.Option<PathResult<E>>; <N, E, T extends Kind = "directed">(graph: Graph<N, E, T> | MutableGraph<N, E, T>, config: AstarConfig<E, N>): Option.Option<PathResult<E>>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Graph.ts#L3086)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Graph.ts#L3240)
 
 Since v4.0.0

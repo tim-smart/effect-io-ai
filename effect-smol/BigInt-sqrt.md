@@ -3,10 +3,13 @@ Module: `BigInt`<br />
 
 ## BigInt.sqrt
 
-Determines the square root of a given `bigint` safely. Returns `Option.none()` if
-the given `bigint` is negative.
+Safely returns the integer square root of a `bigint`.
 
-**Example**
+For non-perfect squares, returns the largest `bigint` whose square is less
+than or equal to the input. Returns `Option.none()` when the input is
+negative.
+
+**Example** (Calculating square roots safely)
 
 ```ts
 import { BigInt } from "effect"
@@ -23,6 +26,6 @@ BigInt.sqrt(-1n) // Option.none()
 declare const sqrt: (n: bigint) => Option.Option<bigint>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigInt.ts#L555)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigInt.ts#L581)
 
 Since v2.0.0

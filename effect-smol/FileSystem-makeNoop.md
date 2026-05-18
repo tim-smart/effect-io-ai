@@ -3,16 +3,14 @@ Module: `FileSystem`<br />
 
 ## FileSystem.makeNoop
 
-Creates a no-op FileSystem implementation for testing purposes.
+Creates a stub `FileSystem` implementation for tests.
 
-This function creates a FileSystem where most operations fail with "NotFound" errors,
-except for operations that can be safely stubbed. You can override specific methods
-by providing them in the `fileSystem` parameter.
+By default, `exists` returns `false`, `remove` succeeds, many file operations
+fail with `PlatformError` `NotFound`, and temporary-directory/file operations
+die as not implemented. Pass method overrides to provide the behavior needed
+by a specific test without touching the real file system.
 
-This is useful for testing scenarios where you want to control specific file system
-behaviors without affecting the actual file system.
-
-**Example**
+**Example** (Creating a no-op FileSystem)
 
 ```ts
 import { Effect, FileSystem, PlatformError } from "effect"
@@ -56,6 +54,6 @@ const testProgram = Effect.provideService(
 declare const makeNoop: (fileSystem: Partial<FileSystem>) => FileSystem
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FileSystem.ts#L863)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FileSystem.ts#L875)
 
 Since v4.0.0

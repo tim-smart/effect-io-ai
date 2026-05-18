@@ -5,7 +5,7 @@ Module: `Boolean`<br />
 
 Negates the given boolean: `!self`
 
-**Example**
+**Example** (Negating booleans)
 
 ```ts
 import { not } from "effect/Boolean"
@@ -21,6 +21,6 @@ assert.deepStrictEqual(not(false), true)
 declare const not: (self: boolean) => boolean
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Boolean.ts#L137)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Boolean.ts#L143)
 
 Since v2.0.0

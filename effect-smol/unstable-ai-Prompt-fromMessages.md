@@ -5,7 +5,7 @@ Module: `Prompt`<br />
 
 Creates a Prompt from an array of messages.
 
-**Example**
+**Example** (Creating prompts from messages)
 
 ```ts
 import { Prompt } from "effect/unstable/ai"
@@ -28,6 +28,6 @@ const prompt = Prompt.fromMessages(messages)
 declare const fromMessages: (messages: ReadonlyArray<Message>) => Prompt
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L1883)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L1903)
 
 Since v4.0.0

@@ -5,7 +5,7 @@ Module: `String`<br />
 
 Converts the string to lowercase according to the specified locale.
 
-**Example**
+**Example** (Lowercasing strings by locale)
 
 ```ts
 import { pipe, String } from "effect"
@@ -21,6 +21,6 @@ assert.deepStrictEqual(pipe(str, String.toLocaleLowerCase("tr")), "i")
 declare const toLocaleLowerCase: (locale?: string | Array<string>) => (self: string) => string
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L800)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L848)
 
 Since v2.0.0

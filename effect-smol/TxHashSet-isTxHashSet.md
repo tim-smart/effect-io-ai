@@ -5,7 +5,7 @@ Module: `TxHashSet`<br />
 
 Checks if a value is a TxHashSet.
 
-**Example**
+**Example** (Checking for a TxHashSet)
 
 ```ts
 import { Effect, TxHashSet } from "effect"
@@ -29,6 +29,6 @@ const program = Effect.gen(function*() {
 declare const isTxHashSet: (u: unknown) => u is TxHashSet<unknown>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashSet.ts#L289)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashSet.ts#L321)
 
 Since v2.0.0

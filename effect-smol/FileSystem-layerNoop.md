@@ -8,7 +8,7 @@ Creates a Layer that provides a no-op FileSystem implementation for testing.
 This is a convenience function that wraps `makeNoop` in a Layer, making it easy
 to provide the test filesystem to your Effect programs.
 
-**Example**
+**Example** (Providing a no-op FileSystem layer)
 
 ```ts
 import { Effect, FileSystem } from "effect"
@@ -35,6 +35,6 @@ const testProgram = Effect.provide(program, testLayer)
 declare const layerNoop: (fileSystem: Partial<FileSystem>) => Layer.Layer<FileSystem>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FileSystem.ts#L985)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FileSystem.ts#L998)
 
 Since v4.0.0

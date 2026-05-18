@@ -3,7 +3,11 @@ Module: `HttpApiBuilder`<br />
 
 ## HttpApiBuilder.Handlers
 
-Represents a handled `HttpApi`.
+Mutable handler collection for one `HttpApi` group.
+
+Each call to `handle` or `handleRaw` registers an endpoint implementation and
+removes that endpoint from the type-level set of endpoints still requiring
+handlers.
 
 **Signature**
 
@@ -59,6 +63,6 @@ export interface Handlers<
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiBuilder.ts#L162)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiBuilder.ts#L197)
 
 Since v4.0.0

@@ -7,17 +7,21 @@ Ignores the stream's failure cause, including defects, and ends the stream.
 
 Use the `log` option to emit the full `Cause` when the stream fails.
 
-**Example**
+**Example** (Ignoring stream failure causes)
 
 ```ts
 import { Effect, Stream } from "effect"
 
-const stream = Stream.make(1, 2).pipe(
-  Stream.concat(Stream.fail("boom")),
-  Stream.ignoreCause({ log: "Error" })
-)
+Effect.runPromise(Effect.gen(function*() {
+  const values = yield* Stream.make(1, 2).pipe(
+    Stream.concat(Stream.die("boom")),
+    Stream.ignoreCause({ log: false }),
+    Stream.runCollect
+  )
+  yield* Effect.sync(() => console.log(values))
+}))
 
-const program = Stream.runCollect(stream)
+// [ 1, 2 ]
 ```
 
 **Signature**
@@ -26,6 +30,6 @@ const program = Stream.runCollect(stream)
 declare const ignoreCause: <Arg extends Stream<any, any, any> | { readonly log?: boolean | Severity | undefined; } | undefined>(streamOrOptions: Arg, options?: { readonly log?: boolean | Severity | undefined; } | undefined) => [Arg] extends [Stream<infer A, infer _E, infer R>] ? Stream<A, never, R> : <A, E, R>(self: Stream<A, E, R>) => Stream<A, never, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L5725)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L5939)
 
 Since v4.0.0

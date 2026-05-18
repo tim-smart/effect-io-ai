@@ -3,14 +3,14 @@ Module: `AnthropicTool`<br />
 
 ## AnthropicTool.MemoryCreateCommand
 
-Creates a new file.
+Memory tool command payload for creating a new file at a path.
 
 **Signature**
 
 ```ts
-declare const MemoryCreateCommand: Schema.Struct<{ readonly command: Schema.Literal<"create">; readonly path: Schema.String; }>
+type MemoryCreateCommand = typeof MemoryCreateCommand.Type
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L842)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L912)
 
-Since v1.0.0
+Since v4.0.0

@@ -36,6 +36,6 @@ export interface Failure<out A, out E> extends Exit.Proto<A, E> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Exit.ts#L178)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Exit.ts#L180)
 
 Since v2.0.0

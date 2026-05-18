@@ -5,7 +5,7 @@ Module: `BigDecimal`<br />
 
 Returns the maximum between two `BigDecimal`s.
 
-**Example**
+**Example** (Selecting the larger decimal)
 
 ```ts
 import { fromStringUnsafe, max } from "effect/BigDecimal"
@@ -23,6 +23,6 @@ assert.deepStrictEqual(
 declare const max: { (that: BigDecimal): (self: BigDecimal) => BigDecimal; (self: BigDecimal, that: BigDecimal): BigDecimal; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigDecimal.ts#L847)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigDecimal.ts#L864)
 
 Since v2.0.0

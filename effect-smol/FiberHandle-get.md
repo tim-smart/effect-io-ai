@@ -5,7 +5,7 @@ Module: `FiberHandle`<br />
 
 Retrieve the fiber from the FiberHandle.
 
-**Example**
+**Example** (Reading the current fiber)
 
 ```ts
 import { Effect, Fiber, FiberHandle } from "effect"
@@ -31,6 +31,6 @@ Effect.gen(function*() {
 declare const get: <A, E>(self: FiberHandle<A, E>) => Effect.Effect<Option.Option<Fiber.Fiber<A, E>>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FiberHandle.ts#L410)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FiberHandle.ts#L476)
 
 Since v2.0.0

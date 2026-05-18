@@ -3,16 +3,17 @@ Module: `Prompt`<br />
 
 ## Prompt.ReasoningPart
 
-Content part representing reasoning or chain-of-thought.
+Content part carrying reasoning text in an assistant message, such as a
+provider-supplied reasoning summary or explanation.
 
-**Example**
+**Example** (Creating reasoning parts)
 
 ```ts
 import { Prompt } from "effect/unstable/ai"
 
 const reasoningPart: Prompt.ReasoningPart = Prompt.makePart("reasoning", {
   text:
-    "Let me think step by step: First I need to understand the user's question..."
+    "Summary: the response compares the requested options by price and availability."
 })
 ```
 
@@ -27,6 +28,6 @@ export interface ReasoningPart extends BasePart<"reasoning", ReasoningPartOption
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L348)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L356)
 
 Since v4.0.0

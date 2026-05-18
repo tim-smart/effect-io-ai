@@ -3,12 +3,16 @@ Module: `Graph`<br />
 
 ## Graph.dfs
 
-Creates a new DFS iterator with optional configuration.
+Creates a lazy depth-first traversal iterator from the configured start
+nodes.
 
-The iterator maintains a stack of nodes to visit and tracks discovered nodes.
-It provides lazy evaluation of the depth-first search.
+**Details**
 
-**Example**
+If no start nodes are supplied, the iterator is empty. The `direction` option
+chooses whether to follow outgoing or incoming edges. Throws a `GraphError`
+if any configured start node does not exist.
+
+**Example** (Traversing depth-first)
 
 ```ts
 import { Graph } from "effect"
@@ -38,6 +42,6 @@ const dfs2 = Graph.dfs(graph)
 declare const dfs: { (config?: SearchConfig): <N, E, T extends Kind = "directed">(graph: Graph<N, E, T> | MutableGraph<N, E, T>) => NodeWalker<N>; <N, E, T extends Kind = "directed">(graph: Graph<N, E, T> | MutableGraph<N, E, T>, config?: SearchConfig): NodeWalker<N>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Graph.ts#L3673)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Graph.ts#L3855)
 
 Since v4.0.0

@@ -6,7 +6,7 @@ Module: `Chunk`<br />
 Change the element at the specified index, creating a new `Chunk`,
 or returns `None` if the index is out of bounds.
 
-**Example**
+**Example** (Replacing an element)
 
 ```ts
 import { Chunk } from "effect"
@@ -30,6 +30,6 @@ console.log(negative) // Option.none()
 declare const replace: { <B>(i: number, b: B): <A>(self: Chunk<A>) => O.Option<Chunk<B | A>>; <A, B>(self: Chunk<A>, i: number, b: B): O.Option<Chunk<B | A>>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L2394)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L2454)
 
 Since v2.0.0

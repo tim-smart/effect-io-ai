@@ -11,6 +11,6 @@ Template expression type for interpolated values.
 type TemplateExpression = TemplateExpressionItem | ReadonlyArray<TemplateExpressionItem>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ChildProcess.ts#L502)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ChildProcess.ts#L505)
 
 Since v4.0.0

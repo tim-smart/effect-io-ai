@@ -3,7 +3,8 @@ Module: `Schema`<br />
 
 ## Schema.TimeZoneOffset
 
-Companion type for `TimeZoneOffset`.
+Schema interface for `TimeZoneOffset`, representing
+`DateTime.TimeZone.Offset` values encoded as offset milliseconds.
 
 **Signature**
 
@@ -13,6 +14,6 @@ export interface TimeZoneOffset extends declare<DateTime.TimeZone.Offset> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L10109)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L10510)
 
 Since v4.0.0

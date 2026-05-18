@@ -7,7 +7,7 @@ Creates a new `Scope` synchronously without wrapping it in an `Effect`.
 This is useful when you need a scope immediately but should be used with caution
 as it doesn't provide the same safety guarantees as the `Effect`-wrapped version.
 
-**Example**
+**Example** (Creating a scope synchronously)
 
 ```ts
 import { Console, Effect, Exit, Scope } from "effect"
@@ -28,6 +28,6 @@ const program = Effect.gen(function*() {
 declare const makeUnsafe: (finalizerStrategy?: "sequential" | "parallel") => Closeable
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Scope.ts#L261)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Scope.ts#L273)
 
 Since v4.0.0

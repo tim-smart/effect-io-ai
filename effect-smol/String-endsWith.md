@@ -5,7 +5,7 @@ Module: `String`<br />
 
 Returns `true` if the string ends with the specified search string.
 
-**Example**
+**Example** (Checking string suffixes)
 
 ```ts
 import { pipe, String } from "effect"
@@ -21,6 +21,6 @@ assert.deepStrictEqual(pipe("hello world", String.endsWith("hello")), false)
 declare const endsWith: (searchString: string, position?: number) => (self: string) => boolean
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L468)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L496)
 
 Since v2.0.0

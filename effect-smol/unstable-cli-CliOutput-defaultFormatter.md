@@ -5,7 +5,7 @@ Module: `CliOutput`<br />
 
 Creates a default formatter with configurable options.
 
-**Example**
+**Example** (Creating default formatters)
 
 ```ts
 import { Effect } from "effect"
@@ -45,6 +45,6 @@ const program = Effect.gen(function*() {
 declare const defaultFormatter: (options?: { colors?: boolean; }) => Formatter
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/CliOutput.ts#L296)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/CliOutput.ts#L326)
 
 Since v4.0.0

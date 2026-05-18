@@ -5,7 +5,7 @@ Module: `Flag`<br />
 
 Creates a date flag that accepts date input in ISO format.
 
-**Example**
+**Example** (Creating date flags)
 
 ```ts
 import { Flag } from "effect/unstable/cli"
@@ -20,6 +20,6 @@ const startDateFlag = Flag.date("start-date")
 declare const date: (name: string) => Flag<Date>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Flag.ts#L109)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Flag.ts#L133)
 
 Since v4.0.0

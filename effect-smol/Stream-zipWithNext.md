@@ -6,7 +6,7 @@ Module: `Stream`<br />
 Zips each element with the next element, pairing the final element with
 `Option.none()`.
 
-**Example**
+**Example** (Zipping elements with next values)
 
 ```ts
 import { Console, Effect, Stream } from "effect"
@@ -31,6 +31,6 @@ Effect.runPromise(Effect.gen(function*() {
 declare const zipWithNext: <A, E, R>(self: Stream<A, E, R>) => Stream<[A, Option.Option<A>], E, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L3707)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L3855)
 
 Since v2.0.0

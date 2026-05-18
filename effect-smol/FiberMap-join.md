@@ -3,10 +3,14 @@ Module: `FiberMap`<br />
 
 ## FiberMap.join
 
-Join all fibers in the FiberMap. If any of the Fiber's in the map terminate with a failure,
-the returned Effect will terminate with the first failure that occurred.
+Waits for the `FiberMap` to fail or close.
 
-**Example**
+The returned Effect fails with the first managed fiber failure that is not
+ignored by the map's interruption rules. Normal successful completion
+removes fibers from the map; use `awaitEmpty` to wait until the map has no
+fibers.
+
+**Example** (Joining failing fibers)
 
 ```ts
 import { Effect, FiberMap } from "effect"
@@ -26,6 +30,6 @@ Effect.gen(function*() {
 declare const join: <K, A, E>(self: FiberMap<K, A, E>) => Effect.Effect<void, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FiberMap.ts#L880)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FiberMap.ts#L982)
 
 Since v2.0.0

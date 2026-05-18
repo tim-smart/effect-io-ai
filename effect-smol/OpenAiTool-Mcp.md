@@ -16,4 +16,4 @@ declare const Mcp: <Mode extends Tool.FailureMode | undefined = undefined>(args:
 
 [Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiTool.ts#L164)
 
-Since v1.0.0
+Since v4.0.0

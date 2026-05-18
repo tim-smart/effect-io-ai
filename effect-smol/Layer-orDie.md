@@ -6,7 +6,7 @@ Module: `Layer`<br />
 Translates effect failure into death of the fiber, making all failures
 unchecked and not a part of the type of the layer.
 
-**Example**
+**Example** (Converting layer failures to defects)
 
 ```ts
 import { Data, Effect, Layer, Context } from "effect"
@@ -21,13 +21,8 @@ class Database extends Context.Service<Database, {
 
 // Layer that can fail during construction
 const flakyDatabaseLayer = Layer.effect(Database)(Effect.gen(function*() {
-  // Simulate a database connection that might fail
-  const shouldFail = Math.random() > 0.5
-  if (shouldFail) {
-    return yield* new DatabaseError({ message: "Connection failed" })
-  }
-
-  return { query: Effect.fn("Database.query")((sql: string) => Effect.succeed(`Result: ${sql}`)) }
+  console.log("connecting")
+  return yield* new DatabaseError({ message: "Connection failed" })
 }))
 
 // Convert failures to fiber death - removes error from type
@@ -41,8 +36,8 @@ const program = Effect.gen(function*() {
   Effect.provide(reliableDatabaseLayer)
 )
 
-// If the database layer fails, the entire fiber will die
-// instead of the effect failing with DatabaseError
+// Running the program prints "connecting", then the DatabaseError is
+// converted into a fiber defect instead of remaining a typed error.
 ```
 
 **Signature**
@@ -51,6 +46,6 @@ const program = Effect.gen(function*() {
 declare const orDie: <A, E, R>(self: Layer<A, E, R>) => Layer<A, never, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L1490)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L1582)
 
 Since v2.0.0

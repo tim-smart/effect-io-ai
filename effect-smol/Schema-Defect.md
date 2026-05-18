@@ -3,7 +3,8 @@ Module: `Schema`<br />
 
 ## Schema.Defect
 
-Companion type for `Defect`.
+Type-level representation of the `Defect` schema, which accepts JavaScript
+`Error` values and arbitrary unknown defect values.
 
 **Signature**
 
@@ -27,6 +28,6 @@ export interface Defect extends
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L7874)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L8194)
 
 Since v4.0.0

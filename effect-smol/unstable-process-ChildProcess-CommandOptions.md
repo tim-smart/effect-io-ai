@@ -74,7 +74,8 @@ export interface CommandOptions extends KillOptions {
    * The file descriptor index is determined by the numeric suffix (i.e. `fd3`
    * has a file descriptor index of 3).
    *
-   * @example
+   * **Example** (Configuring additional file descriptors)
+   *
    * ```ts
    * import { ChildProcess } from "effect/unstable/process"
    *
@@ -97,6 +98,6 @@ export interface CommandOptions extends KillOptions {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ChildProcess.ts#L400)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ChildProcess.ts#L402)
 
 Since v4.0.0

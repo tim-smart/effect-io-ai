@@ -3,14 +3,13 @@ Module: `HashMap`<br />
 
 ## HashMap.modifyAt
 
-Set or remove the specified key in the `HashMap` using the specified
-update function. The value of the specified key will be computed using the
-provided hash.
+Sets or removes the specified key using an update function.
 
-The update function will be invoked with the current value of the key if it
-exists, or `None` if no such value exists.
+The update function receives `Some(value)` when the key exists or `None`
+when it does not. Returning `Some(newValue)` stores the value, and returning
+`None` removes the key or leaves it absent.
 
-**Example**
+**Example** (Updating values with Options)
 
 ```ts
 import * as HashMap from "effect/HashMap"
@@ -32,6 +31,6 @@ console.log(HashMap.get(updated, "a")) // Option.some(2)
 declare const modifyAt: { <K, V>(key: K, f: HashMap.UpdateFn<V>): (self: HashMap<K, V>) => HashMap<K, V>; <K, V>(self: HashMap<K, V>, key: K, f: HashMap.UpdateFn<V>): HashMap<K, V>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashMap.ts#L753)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashMap.ts#L860)
 
 Since v2.0.0

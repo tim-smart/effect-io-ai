@@ -5,7 +5,7 @@ Module: `Record`<br />
 
 Retrieve a value at a particular key from a record, returning it wrapped in an `Option`.
 
-**Example**
+**Example** (Getting a value as an Option)
 
 ```ts
 import { Option, Record as R } from "effect"
@@ -23,6 +23,6 @@ assert.deepStrictEqual(R.get(person, "email"), Option.none())
 declare const get: { <K extends string | symbol>(key: NoInfer<K>): <A>(self: ReadonlyRecord<K, A>) => Option.Option<A>; <K extends string | symbol, A>(self: ReadonlyRecord<K, A>, key: NoInfer<K>): Option.Option<A>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Record.ts#L405)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Record.ts#L428)
 
 Since v2.0.0

@@ -12,7 +12,7 @@ service is available, it returns `Some(service)`. If the service is not
 available, it returns `None`. Unlike `service`, this function does not
 require the service to be present in the environment.
 
-**Example**
+**Example** (Usage)
 
 ```ts
 import { Effect, Option, Context } from "effect"
@@ -40,6 +40,6 @@ const program = Effect.gen(function*() {
 declare const serviceOption: <I, S>(key: Context.Key<I, S>) => Effect<Option<S>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L5751)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L5630)
 
 Since v2.0.0

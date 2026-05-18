@@ -11,7 +11,7 @@ For example:
 timestamp=2025-01-03T14:22:47.570Z level=INFO fiber=#1 message=info
 ```
 
-**Example**
+**Example** (Logging logfmt output to the console)
 
 ```ts
 import { Effect, Logger } from "effect"
@@ -48,6 +48,6 @@ const multiLoggerLive = Logger.layer([
 declare const consoleLogFmt: Logger<unknown, void>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Logger.ts#L941)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Logger.ts#L965)
 
 Since v2.0.0

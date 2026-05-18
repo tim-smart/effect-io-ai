@@ -7,7 +7,7 @@ Returns a new `Schedule` that allows execution of an effectful function for
 every input to the schedule, but does not alter the inputs and outputs of
 the schedule.
 
-**Example**
+**Example** (Tapping retry inputs)
 
 ```ts
 import { Console, Data, Effect, Schedule } from "effect"
@@ -44,7 +44,6 @@ const inputMonitoringSchedule = Schedule.spaced("1 second").pipe(
   Schedule.take(5),
   Schedule.tapInput((input: unknown) =>
     Effect.gen(function*() {
-      yield* Console.log(`Processing input at ${new Date().toISOString()}`)
       yield* Console.log(`Input type: ${typeof input}`)
       // In real applications, might send metrics to monitoring system
     })
@@ -66,10 +65,13 @@ const validatingSchedule = Schedule.fixed("500 millis").pipe(
 )
 
 const validationProgram = Effect.gen(function*() {
+  let count = 0
+
   yield* Effect.repeat(
     Effect.gen(function*() {
+      count++
       yield* Console.log("Task with validation")
-      return { data: Math.random(), timestamp: Date.now() }
+      return { data: `sample-${count}` }
     }),
     validatingSchedule
   )
@@ -81,10 +83,10 @@ const alertingSchedule = Schedule.exponential("200 millis").pipe(
   Schedule.tapInput((error: RetryError) =>
     Effect.gen(function*() {
       if (String(error).includes("critical")) {
-        yield* Console.log(`🚨 CRITICAL ERROR: ${String(error)}`)
+        yield* Console.log(`Critical error: ${String(error)}`)
         // In real applications, might trigger alerts or notifications
       } else {
-        yield* Console.log(`ℹ️ Regular error: ${String(error)}`)
+        yield* Console.log(`Regular error: ${String(error)}`)
       }
     })
   )
@@ -118,7 +120,7 @@ const comprehensiveSchedule = Schedule.fibonacci("100 millis").pipe(
   ),
   Schedule.tapInput((error: RetryError) =>
     String(error).length > 20
-      ? Console.log("📝 Long error message detected")
+      ? Console.log("Long error message detected")
       : Effect.void
   )
 )

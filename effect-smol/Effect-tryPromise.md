@@ -28,10 +28,8 @@ There are two ways to handle errors with `tryPromise`:
 An optional `AbortSignal` can be provided to allow for interruption of the
 wrapped `Promise` API.
 
-**Example**
+**Example** (Fetching a TODO Item)
 
-```ts
-Fetching a TODO Item
 ```ts
 import { Effect } from "effect"
 
@@ -45,12 +43,9 @@ const getTodo = (id: number) =>
 //      ▼
 const program = getTodo(1)
 ```
-```
 
-**Example**
+**Example** (Custom Error Handling)
 
-```ts
-Custom Error Handling
 ```ts
 import { Data, Effect } from "effect"
 
@@ -67,7 +62,6 @@ const getTodo = (id: number) =>
 //      ▼
 const program = getTodo(1)
 ```
-```
 
 **See**
 
@@ -79,6 +73,6 @@ const program = getTodo(1)
 declare const tryPromise: <A, E = Cause.UnknownError>(options: { readonly try: (signal: AbortSignal) => PromiseLike<A>; readonly catch: (error: unknown) => E; } | ((signal: AbortSignal) => PromiseLike<A>)) => Effect<A, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L1082)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L941)
 
 Since v2.0.0

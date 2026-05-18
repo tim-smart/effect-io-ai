@@ -6,7 +6,7 @@ Module: `Sink`<br />
 A sink that executes the provided effectful function for every item fed
 to it.
 
-**Example**
+**Example** (Running effects for each item)
 
 ```ts
 import { Console, Effect, Sink, Stream } from "effect"
@@ -31,6 +31,6 @@ Effect.runPromise(program)
 declare const forEach: <In, X, E, R>(f: (input: In) => Effect.Effect<X, E, R>) => Sink<void, In, never, E, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Sink.ts#L1489)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Sink.ts#L1604)
 
 Since v2.0.0

@@ -7,7 +7,7 @@ The type of the Node.js inspection symbol used for custom object inspection.
 This symbol type is used to implement custom inspection behavior in Node.js
 environments.
 
-**Example**
+**Example** (Typing custom Node inspection)
 
 ```ts
 import { Inspectable } from "effect"
@@ -30,6 +30,6 @@ console.log(obj) // CustomObject(test)
 type NodeInspectSymbol = typeof NodeInspectSymbol
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Inspectable.ts#L96)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Inspectable.ts#L99)
 
 Since v2.0.0

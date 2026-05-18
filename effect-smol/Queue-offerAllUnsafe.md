@@ -8,7 +8,7 @@ were not added.
 
 This is an unsafe operation that directly modifies the queue without Effect wrapping.
 
-**Example**
+**Example** (Offering multiple values synchronously)
 
 ```ts
 import { Cause, Effect, Queue } from "effect"
@@ -33,6 +33,6 @@ const program = Effect.gen(function*() {
 declare const offerAllUnsafe: <A, E>(self: Enqueue<A, E>, messages: Iterable<A>) => Array<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Queue.ts#L652)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Queue.ts#L748)
 
 Since v4.0.0

@@ -5,7 +5,7 @@ Module: `BigDecimal`<br />
 
 Checks if a given `BigDecimal` is an integer.
 
-**Example**
+**Example** (Checking integer decimals)
 
 ```ts
 import { fromStringUnsafe, isInteger } from "effect/BigDecimal"
@@ -22,6 +22,6 @@ assert.deepStrictEqual(isInteger(fromStringUnsafe("1.1")), false)
 declare const isInteger: (n: BigDecimal) => boolean
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigDecimal.ts#L1327)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigDecimal.ts#L1371)
 
 Since v2.0.0

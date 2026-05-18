@@ -5,7 +5,7 @@ Module: `Graph`<br />
 
 Reverses all edge directions in a mutable graph by swapping source and target nodes.
 
-**Example**
+**Example** (Reversing edge directions)
 
 ```ts
 import { Graph } from "effect"
@@ -20,7 +20,7 @@ const graph = Graph.directed<string, number>((mutable) => {
 })
 
 const edge0 = Graph.getEdge(graph, 0)
-console.log(edge0) // new Graph.Edge({ source: 1, target: 0, data: 1 }) - B -> A
+console.log(edge0) // Option.some(new Graph.Edge({ source: 1, target: 0, data: 1 }))
 ```
 
 **Signature**
@@ -29,6 +29,6 @@ console.log(edge0) // new Graph.Edge({ source: 1, target: 0, data: 1 }) - B -> A
 declare const reverse: <N, E, T extends Kind = "directed">(mutable: MutableGraph<N, E, T>) => void
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Graph.ts#L899)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Graph.ts#L988)
 
 Since v4.0.0

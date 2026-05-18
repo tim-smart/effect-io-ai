@@ -8,7 +8,7 @@ Checks whether a given log level is enabled for the current fiber.
 A log level is enabled when it is greater than or equal to
 `References.MinimumLogLevel`.
 
-**Example**
+**Example** (Checking current fiber log level)
 
 ```ts
 import { Effect, LogLevel, References } from "effect"
@@ -31,6 +31,6 @@ const warnOnly = program.pipe(
 declare const isEnabled: (self: LogLevel) => Effect.Effect<boolean>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/LogLevel.ts#L385)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/LogLevel.ts#L338)
 
 Since v4.0.0

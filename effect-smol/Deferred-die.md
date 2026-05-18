@@ -3,10 +3,13 @@ Module: `Deferred`<br />
 
 ## Deferred.die
 
-Kills the `Deferred` with the specified defect, which will be propagated to
-all fibers waiting on the value of the `Deferred`.
+Attempts to complete the `Deferred` with a defect.
 
-**Example**
+Fibers waiting on the `Deferred` die with that defect only if this call
+completes it. The returned effect succeeds with `true` when this call
+completed the `Deferred`, or `false` if it was already completed.
+
+**Example** (Killing a Deferred with a defect)
 
 ```ts
 import { Deferred, Effect } from "effect"
@@ -27,6 +30,6 @@ const program = Effect.gen(function*() {
 declare const die: { (defect: unknown): <A, E>(self: Deferred<A, E>) => Effect<boolean>; <A, E>(self: Deferred<A, E>, defect: unknown): Effect<boolean>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Deferred.ts#L460)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Deferred.ts#L509)
 
 Since v2.0.0

@@ -3,9 +3,10 @@ Module: `DateTime`<br />
 
 ## DateTime.nowAsDate
 
-Get the current time using the `Clock` service and convert it to a `DateTime`.
+Gets the current time from the `Clock` service and returns it as a
+JavaScript `Date`.
 
-**Example**
+**Example** (Getting the current Date)
 
 ```ts
 import { DateTime, Effect } from "effect"
@@ -21,6 +22,6 @@ Effect.gen(function*() {
 declare const nowAsDate: Effect.Effect<Date, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L609)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L794)
 
 Since v3.6.0

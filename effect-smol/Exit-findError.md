@@ -37,6 +37,6 @@ const noError = Exit.findError(defect)
 declare const findError: <A, E>(input: Exit<A, E>) => Result.Result<E, Exit<A, E>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Exit.ts#L634)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Exit.ts#L636)
 
 Since v4.0.0

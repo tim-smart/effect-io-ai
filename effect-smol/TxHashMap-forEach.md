@@ -6,7 +6,7 @@ Module: `TxHashMap`<br />
 Executes a side-effect function for each entry in the TxHashMap.
 The function receives the value and key as parameters and can perform effects.
 
-**Example**
+**Example** (Running effects for each entry)
 
 ```ts
 import { Console, Effect, TxHashMap } from "effect"
@@ -47,6 +47,6 @@ const program = Effect.gen(function*() {
 declare const forEach: { <V, K, R, E>(f: (value: V, key: K) => Effect.Effect<void, E, R>): (self: TxHashMap<K, V>) => Effect.Effect<void, E, R>; <K, V, R, E>(self: TxHashMap<K, V>, f: (value: V, key: K) => Effect.Effect<void, E, R>): Effect.Effect<void, E, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashMap.ts#L1840)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashMap.ts#L1913)
 
 Since v2.0.0

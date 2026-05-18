@@ -5,7 +5,7 @@ Module: `Stream`<br />
 
 Drops earlier elements within the debounce window and emits only the latest element after the pause.
 
-**Example**
+**Example** (Debouncing stream elements)
 
 ```ts
 import { Console, Duration, Effect, Stream } from "effect"
@@ -29,6 +29,6 @@ const program = Effect.gen(function*() {
 declare const debounce: { (duration: Duration.Input): <A, E, R>(self: Stream<A, E, R>) => Stream<A, E, R>; <A, E, R>(self: Stream<A, E, R>, duration: Duration.Input): Stream<A, E, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L7361)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L7616)
 
 Since v2.0.0

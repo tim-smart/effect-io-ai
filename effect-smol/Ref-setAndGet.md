@@ -7,7 +7,7 @@ Atomically sets the value of the Ref to the specified value and returns the new 
 
 This is useful when you want to set a value and immediately get it back in one atomic operation.
 
-**Example**
+**Example** (Setting and returning the new value)
 
 ```ts
 import { Effect, Ref } from "effect"
@@ -39,6 +39,6 @@ const program2 = Effect.gen(function*() {
 declare const setAndGet: (<A>(value: A) => (self: Ref<A>) => Effect.Effect<A>) & (<A>(self: Ref<A>, value: A) => Effect.Effect<A>)
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Ref.ts#L380)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Ref.ts#L391)
 
 Since v2.0.0

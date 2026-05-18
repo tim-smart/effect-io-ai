@@ -3,11 +3,14 @@ Module: `DateTime`<br />
 
 ## DateTime.makeZonedFromString
 
-Create a `DateTime.Zoned` from a string.
+Parses an ISO zoned date-time string into a `DateTime.Zoned`.
 
-It uses the format: `YYYY-MM-DDTHH:mm:ss.sss+HH:MM[Time/Zone]`.
+Accepts named-zone strings such as
+`YYYY-MM-DDTHH:mm:ss.sss+HH:MM[Time/Zone]` and offset-only strings such as
+`YYYY-MM-DDTHH:mm:ss.sss+HH:MM`. Returns `None` when the input cannot be
+parsed.
 
-**Example**
+**Example** (Parsing zoned DateTime strings)
 
 ```ts
 import { DateTime } from "effect"
@@ -30,6 +33,6 @@ console.log(invalid._tag === "None") // true
 declare const makeZonedFromString: (input: string) => Option.Option<Zoned>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L577)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L756)
 
 Since v3.6.0

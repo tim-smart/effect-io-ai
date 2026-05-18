@@ -5,7 +5,7 @@ Module: `Iterable`<br />
 
 Deduplicates adjacent elements that are identical using the provided `isEquivalent` function.
 
-**Example**
+**Example** (Deduplicating adjacent elements with custom equivalence)
 
 ```ts
 import { Iterable } from "effect"
@@ -47,6 +47,6 @@ console.log(Array.from(dedupedFloats)) // [1.0, 2.0, 3.0]
 declare const dedupeAdjacentWith: { <A>(isEquivalent: (self: A, that: A) => boolean): (self: Iterable<A>) => Iterable<A>; <A>(self: Iterable<A>, isEquivalent: (self: A, that: A) => boolean): Iterable<A>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Iterable.ts#L2150)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Iterable.ts#L2211)
 
 Since v2.0.0

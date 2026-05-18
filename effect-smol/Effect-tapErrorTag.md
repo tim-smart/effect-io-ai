@@ -5,10 +5,11 @@ Module: `Effect`<br />
 
 Runs an effectful handler when a failure's `_tag` matches.
 
-Use this with tagged-union errors to perform side effects for a tag (or tag
-list) while preserving the original failure.
+Use this with tagged-union errors to perform side effects for one tag or a
+list of tags. When the handler succeeds, the original failure is preserved;
+if the handler fails, its error is also included in the returned effect.
 
-**Example**
+**Example** (Usage)
 
 ```ts
 import { Console, Data, Effect } from "effect"
@@ -39,6 +40,6 @@ Effect.runPromiseExit(program)
 declare const tapErrorTag: { <const K extends Tags<E> | Arr.NonEmptyReadonlyArray<Tags<E>>, E, A1, E1, R1>(k: K, f: (e: ExtractTag<NoInfer<E>, K extends Arr.NonEmptyReadonlyArray<string> ? K[number] : K>) => Effect<A1, E1, R1>): <A, R>(self: Effect<A, E, R>) => Effect<A, E | E1, R1 | R>; <A, E, R, const K extends Tags<E> | Arr.NonEmptyReadonlyArray<Tags<E>>, R1, E1, A1>(self: Effect<A, E, R>, k: K, f: (e: ExtractTag<E, K extends Arr.NonEmptyReadonlyArray<string> ? K[number] : K>) => Effect<A1, E1, R1>): Effect<A, E | E1, R | R1>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L3574)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L3468)
 
 Since v2.0.0

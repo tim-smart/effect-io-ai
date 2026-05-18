@@ -5,7 +5,7 @@ Module: `String`<br />
 
 Replaces all occurrences of a substring or pattern in a string.
 
-**Example**
+**Example** (Replacing all matches)
 
 ```ts
 import { pipe, String } from "effect"
@@ -21,6 +21,6 @@ assert.deepStrictEqual(pipe("ababb", String.replaceAll(/ba/g, "cc")), "accbb")
 declare const replaceAll: (searchValue: string | RegExp, replaceValue: string) => (self: string) => string
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L757)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L803)
 
 Since v2.0.0

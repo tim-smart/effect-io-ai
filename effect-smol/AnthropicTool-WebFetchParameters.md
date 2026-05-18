@@ -3,14 +3,14 @@ Module: `AnthropicTool`<br />
 
 ## AnthropicTool.WebFetchParameters
 
-Input parameters for a web fetch.
+Type of the parameters Claude supplies when invoking the Anthropic web fetch tool.
 
 **Signature**
 
 ```ts
-declare const WebFetchParameters: Schema.Struct<{ readonly url: Schema.String; }>
+type WebFetchParameters = typeof WebFetchParameters.Type
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L1449)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L1562)
 
-Since v1.0.0
+Since v4.0.0

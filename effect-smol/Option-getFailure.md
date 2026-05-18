@@ -3,16 +3,16 @@ Module: `Option`<br />
 
 ## Option.getFailure
 
-Converts a `Result` into an `Option`, keeping only the error value.
+Converts a `Result` into an `Option`, keeping only the failure value.
 
-**When to use**
+**When to Use**
 
-- Extracting the error when you don't need the success channel
+- Extracting the failure when you do not need the success value
 
-**Behavior**
+**Details**
 
-- `Err` → `Some` with the error value
-- `Ok` → `None` (success value is discarded)
+- `Failure` becomes `Some` with the failure value
+- `Success` becomes `None` and the success value is discarded
 
 **Example** (Extracting the failure side)
 
@@ -36,6 +36,6 @@ console.log(Option.getFailure(Result.fail("err")))
 declare const getFailure: <A, E>(self: Result<A, E>) => Option<E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L631)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L609)
 
 Since v2.0.0

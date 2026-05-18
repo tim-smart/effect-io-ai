@@ -5,7 +5,7 @@ Module: `DateTime`<br />
 
 Checks if the first `DateTime` is after the second `DateTime`.
 
-**Example**
+**Example** (Checking whether a DateTime is later)
 
 ```ts
 import { DateTime } from "effect"
@@ -23,6 +23,6 @@ console.log(DateTime.isGreaterThan(date2, date1)) // false
 declare const isGreaterThan: { (that: DateTime): (self: DateTime) => boolean; (self: DateTime, that: DateTime): boolean; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L1014)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L1220)
 
 Since v3.6.0

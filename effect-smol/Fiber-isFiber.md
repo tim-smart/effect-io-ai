@@ -6,7 +6,7 @@ Module: `Fiber`<br />
 Tests if a value is a Fiber. This is a type guard that can be used to
 determine if an unknown value is a Fiber instance.
 
-**Example**
+**Example** (Checking for fibers)
 
 ```ts
 import { Effect, Fiber } from "effect"
@@ -36,6 +36,6 @@ const program = Effect.gen(function*() {
 declare const isFiber: (u: unknown) => u is Fiber<unknown, unknown>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Fiber.ts#L457)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Fiber.ts#L475)
 
 Since v2.0.0

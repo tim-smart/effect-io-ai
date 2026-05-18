@@ -5,7 +5,7 @@ Module: `Chunk`<br />
 
 Creates a Chunks of unique values, in order, from all given Chunks.
 
-**Example**
+**Example** (Unioning chunks)
 
 ```ts
 import { Chunk } from "effect"
@@ -28,6 +28,6 @@ console.log(Chunk.toArray(unified)) // [1, 2, 3]
 declare const union: { <A>(that: Chunk<A>): <B>(self: Chunk<B>) => Chunk<A | B>; <A, B>(self: Chunk<A>, that: Chunk<B>): Chunk<A | B>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L2155)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L2206)
 
 Since v2.0.0

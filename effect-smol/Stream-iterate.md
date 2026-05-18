@@ -5,7 +5,7 @@ Module: `Stream`<br />
 
 Creates an infinite stream by repeatedly applying a function to a seed value.
 
-**Example**
+**Example** (Iterating from a seed value)
 
 ```ts
 import { Console, Effect, Stream } from "effect"
@@ -27,6 +27,6 @@ Effect.runPromise(program)
 declare const iterate: <A>(value: A, next: (value: A) => A) => Stream<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L1662)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L1749)
 
 Since v2.0.0

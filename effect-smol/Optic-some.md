@@ -41,6 +41,6 @@ console.log(_some.set(10))
 declare const some: <A>() => Prism<Option.Option<A>, A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Optic.ts#L1592)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Optic.ts#L1591)
 
 Since v4.0.0

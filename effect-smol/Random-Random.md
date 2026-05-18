@@ -5,7 +5,7 @@ Module: `Random`<br />
 
 Represents a service for generating random numbers.
 
-**Example**
+**Example** (Accessing the random service)
 
 ```ts
 import { Effect, Random } from "effect"
@@ -29,6 +29,6 @@ const program = Effect.gen(function*() {
 declare const Random: Context.Reference<{ nextIntUnsafe(): number; nextDoubleUnsafe(): number; }>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Random.ts#L53)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Random.ts#L55)
 
 Since v4.0.0

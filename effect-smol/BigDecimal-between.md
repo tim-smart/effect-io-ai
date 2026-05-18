@@ -5,7 +5,7 @@ Module: `BigDecimal`<br />
 
 Checks if a `BigDecimal` is between a `minimum` and `maximum` value (inclusive).
 
-**Example**
+**Example** (Checking decimal ranges)
 
 ```ts
 import { BigDecimal } from "effect"
@@ -27,6 +27,6 @@ assert.deepStrictEqual(between(BigDecimal.fromStringUnsafe("6")), false)
 declare const between: { (options: { minimum: BigDecimal; maximum: BigDecimal; }): (self: BigDecimal) => boolean; (self: BigDecimal, options: { minimum: BigDecimal; maximum: BigDecimal; }): boolean; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigDecimal.ts#L752)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigDecimal.ts#L766)
 
 Since v2.0.0

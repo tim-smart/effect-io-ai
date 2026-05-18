@@ -19,6 +19,6 @@ export interface AnyProviderDefined extends
 {}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tool.ts#L622)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tool.ts#L651)
 
-Since v1.0.0
+Since v4.0.0

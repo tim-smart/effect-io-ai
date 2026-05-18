@@ -5,7 +5,7 @@ Module: `HashMap`<br />
 
 Returns an `Array` of the values within the `HashMap`.
 
-**Example**
+**Example** (Converting values to an array)
 
 ```ts
 import * as HashMap from "effect/HashMap"
@@ -35,6 +35,6 @@ console.log(engineers.length) // 2
 declare const toValues: <K, V>(self: HashMap<K, V>) => Array<V>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashMap.ts#L557)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashMap.ts#L654)
 
 Since v3.13.0

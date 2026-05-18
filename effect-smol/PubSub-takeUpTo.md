@@ -5,7 +5,7 @@ Module: `PubSub`<br />
 
 Takes up to the specified number of messages from the subscription without suspending.
 
-**Example**
+**Example** (Taking up to a maximum number of messages)
 
 ```ts
 import { Effect } from "effect"
@@ -14,11 +14,11 @@ import * as PubSub from "effect/PubSub"
 const program = Effect.gen(function*() {
   const pubsub = yield* PubSub.bounded<string>(10)
 
-  // Publish multiple messages
-  yield* PubSub.publishAll(pubsub, ["msg1", "msg2", "msg3", "msg4", "msg5"])
-
   yield* Effect.scoped(Effect.gen(function*() {
     const subscription = yield* PubSub.subscribe(pubsub)
+
+    // Publish multiple messages
+    yield* PubSub.publishAll(pubsub, ["msg1", "msg2", "msg3", "msg4", "msg5"])
 
     // Take up to 3 messages
     const upTo3 = yield* PubSub.takeUpTo(subscription, 3)
@@ -41,6 +41,6 @@ const program = Effect.gen(function*() {
 declare const takeUpTo: { (max: number): <A>(self: Subscription<A>) => Effect.Effect<Array<A>>; <A>(self: Subscription<A>, max: number): Effect.Effect<Array<A>>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PubSub.ts#L1167)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PubSub.ts#L1244)
 
 Since v4.0.0

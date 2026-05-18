@@ -5,7 +5,7 @@ Module: `Stream`<br />
 
 The stream that dies with the specified defect.
 
-**Example**
+**Example** (Dying with a defect)
 
 ```ts
 import { Cause, Console, Effect, Exit, Stream } from "effect"
@@ -36,6 +36,6 @@ Effect.runPromise(program)
 declare const die: (defect: unknown) => Stream<never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L985)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L1042)
 
 Since v2.0.0

@@ -11,6 +11,6 @@ Provider-specific metadata attached to `RateLimitError`.
 export interface RateLimitErrorMetadata extends ProviderMetadata {}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AiError.ts#L271)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AiError.ts#L282)
 
-Since v1.0.0
+Since v4.0.0

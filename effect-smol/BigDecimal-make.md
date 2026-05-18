@@ -5,7 +5,7 @@ Module: `BigDecimal`<br />
 
 Creates a `BigDecimal` from a `bigint` value and a scale.
 
-**Example**
+**Example** (Creating decimals from bigint and scale)
 
 ```ts
 import { BigDecimal } from "effect"
@@ -25,6 +25,6 @@ console.log(BigDecimal.format(integer)) // "42"
 declare const make: (value: bigint, scale: number) => BigDecimal
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigDecimal.ts#L121)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigDecimal.ts#L124)
 
 Since v2.0.0

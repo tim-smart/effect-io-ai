@@ -10,7 +10,7 @@ within the scope fail or are interrupted.
 **Note**: The permit acquisition and release operations use atomic semantics
 to ensure proper resource management with Effect's scoped operations.
 
-**Example**
+**Example** (Acquiring a scoped permit)
 
 ```ts
 import { Console, Effect, TxSemaphore } from "effect"
@@ -42,6 +42,6 @@ const program = Effect.gen(function*() {
 declare const withPermitScoped: (self: TxSemaphore) => Effect.Effect<void, never, Scope.Scope>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxSemaphore.ts#L556)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxSemaphore.ts#L598)
 
 Since v4.0.0

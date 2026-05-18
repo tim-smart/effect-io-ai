@@ -5,7 +5,7 @@ Module: `Flag`<br />
 
 Creates a file path flag that accepts file paths with optional existence validation.
 
-**Example**
+**Example** (Creating file flags)
 
 ```ts
 import { Flag } from "effect/unstable/cli"
@@ -25,6 +25,6 @@ const configFlag = Flag.file("config", { mustExist: true })
 declare const file: (name: string, options?: { readonly mustExist?: boolean | undefined; }) => Flag<string>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Flag.ts#L200)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Flag.ts#L227)
 
 Since v4.0.0

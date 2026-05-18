@@ -7,7 +7,7 @@ Takes a `Chunk` of pairs and return two corresponding `Chunk`s.
 
 Note: The function is reverse of `zip`.
 
-**Example**
+**Example** (Unzipping pairs)
 
 ```ts
 import { Chunk } from "effect"
@@ -34,6 +34,6 @@ console.log(Chunk.toArray(emptyStrs)) // []
 declare const unzip: <A, B>(self: Chunk<readonly [A, B]>) => [Chunk<A>, Chunk<B>]
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L2240)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L2295)
 
 Since v2.0.0

@@ -9,32 +9,27 @@ failures alongside any channel failures.
 Upstream failures are not passed to the channel, so the resulting stream can
 fail with either the original stream error or the channel error.
 
-**Example**
+**Example** (Piping through a channel with failures)
 
 ```ts
-import type { Channel } from "effect"
-import { Console, Effect, Stream } from "effect"
+import { Array, Channel, Effect, Stream } from "effect"
 
-declare const transformChannel: Channel.Channel<
-  readonly [string, ...Array<string>],
-  "ChannelError",
-  unknown,
-  readonly [number, ...Array<number>],
-  "StreamError",
-  unknown,
-  never
->
+type NumberChunk = readonly [number, ...Array<number>]
+
+const stringifyChunks = Channel.identity<NumberChunk, "StreamError", unknown>().pipe(
+  Channel.map((chunk) => Array.map(chunk, String))
+)
 
 Effect.runPromise(Effect.gen(function*() {
   const result = yield* Stream.make(1, 2, 3).pipe(
-    Stream.pipeThroughChannelOrFail(transformChannel),
+    Stream.rechunk(2),
+    Stream.pipeThroughChannelOrFail(stringifyChunks),
     Stream.runCollect
   )
 
-  yield* Console.log(result)
+  yield* Effect.sync(() => console.log(result))
 }))
-// Output:
-// ["1", "2", "3"]
+// [ "1", "2", "3" ]
 ```
 
 **Signature**
@@ -43,6 +38,6 @@ Effect.runPromise(Effect.gen(function*() {
 declare const pipeThroughChannelOrFail: { <R2, E, E2, A, A2>(channel: Channel.Channel<Arr.NonEmptyReadonlyArray<A2>, E2, unknown, Arr.NonEmptyReadonlyArray<A>, E, unknown, R2>): <R>(self: Stream<A, E, R>) => Stream<A2, E | E2, R2 | R>; <R, R2, E, E2, A, A2>(self: Stream<A, E, R>, channel: Channel.Channel<Arr.NonEmptyReadonlyArray<A2>, E2, unknown, Arr.NonEmptyReadonlyArray<A>, E, unknown, R2>): Stream<A2, E | E2, R | R2>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L8445)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L8714)
 
 Since v2.0.0

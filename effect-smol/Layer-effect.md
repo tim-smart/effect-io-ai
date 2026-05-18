@@ -15,7 +15,7 @@ This API replaces the following from Effect 3.x:
 
 - `Layer.scoped`
 
-**Example**
+**Example** (Creating a layer from an effect)
 
 ```ts
 import { Effect, Layer, Context } from "effect"
@@ -37,6 +37,6 @@ const layer = Layer.effect(Database)(
 declare const effect: { <I, S>(service: Context.Key<I, S>): <E, R>(effect: Effect<S, E, R>) => Layer<I, E, Exclude<R, Scope.Scope>>; <I, S, E, R>(service: Context.Key<I, S>, effect: Effect<Types.NoInfer<S>, E, R>): Layer<I, E, Exclude<R, Scope.Scope>>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L788)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L869)
 
 Since v2.0.0

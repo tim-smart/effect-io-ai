@@ -5,6 +5,8 @@ Module: `Stream`<br />
 
 Emits sliding windows of `chunkSize` elements, advancing by `stepSize`.
 
+**Example** (Emitting sliding windows with a step size)
+
 ```ts
 import { Console, Effect, Stream } from "effect"
 
@@ -26,6 +28,6 @@ Effect.runPromise(program)
 declare const slidingSize: { (chunkSize: number, stepSize: number): <A, E, R>(self: Stream<A, E, R>) => Stream<Arr.NonEmptyReadonlyArray<A>, E, R>; <A, E, R>(self: Stream<A, E, R>, chunkSize: number, stepSize: number): Stream<Arr.NonEmptyReadonlyArray<A>, E, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L6697)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L6933)
 
 Since v2.0.0

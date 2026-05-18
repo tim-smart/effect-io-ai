@@ -3,13 +3,16 @@ Module: `Graph`<br />
 
 ## Graph.bellmanFord
 
-Find the shortest path between two nodes using Bellman-Ford algorithm.
+Finds the shortest path from the configured source node to the target node
+using the Bellman-Ford algorithm.
 
-Bellman-Ford algorithm can handle negative edge weights and detects negative cycles.
-It has O(VE) time complexity, slower than Dijkstra's but more versatile.
-Returns Option.none() if a negative cycle is detected that affects the path.
+**Details**
 
-**Example**
+Negative edge weights are allowed. Returns `Option.none()` when the target is
+unreachable or when a negative cycle affects the path to the target. Throws a
+`GraphError` when either endpoint is missing.
+
+**Example** (Finding shortest paths with Bellman-Ford)
 
 ```ts
 import { Graph } from "effect"
@@ -41,6 +44,6 @@ if (result._tag === "Some") {
 declare const bellmanFord: { <E>(config: BellmanFordConfig<E>): <N, T extends Kind = "directed">(graph: Graph<N, E, T> | MutableGraph<N, E, T>) => Option.Option<PathResult<E>>; <N, E, T extends Kind = "directed">(graph: Graph<N, E, T> | MutableGraph<N, E, T>, config: BellmanFordConfig<E>): Option.Option<PathResult<E>>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Graph.ts#L3291)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Graph.ts#L3454)
 
 Since v4.0.0

@@ -7,7 +7,7 @@ Error indicating failure to parse or validate LLM output.
 
 Invalid output errors are retryable since LLM outputs are non-deterministic.
 
-**Example**
+**Example** (Creating an invalid output error)
 
 ```ts
 import { AiError } from "effect/unstable/ai"
@@ -27,6 +27,6 @@ console.log(parseError.message)
 declare class InvalidOutputError
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AiError.ts#L700)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AiError.ts#L730)
 
-Since v1.0.0
+Since v4.0.0

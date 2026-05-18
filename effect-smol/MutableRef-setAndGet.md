@@ -5,7 +5,7 @@ Module: `MutableRef`<br />
 
 Sets the MutableRef to a new value and returns the new value.
 
-**Example**
+**Example** (Setting and reading values)
 
 ```ts
 import { MutableRef } from "effect"
@@ -40,6 +40,6 @@ console.log(returnedValue) // 3
 declare const setAndGet: { <T>(value: T): (self: MutableRef<T>) => T; <T>(self: MutableRef<T>, value: T): T; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableRef.ts#L582)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableRef.ts#L605)
 
 Since v2.0.0

@@ -3,16 +3,14 @@ Module: `AnthropicTool`<br />
 
 ## AnthropicTool.TextEditorInsertCommand
 
-Insert text at a specific line number in a file.
-
-Inserts the new text AFTER the specified line number.
+Text editor command payload for inserting text after a specific line number in a file.
 
 **Signature**
 
 ```ts
-declare const TextEditorInsertCommand: Schema.Struct<{ readonly command: Schema.Literal<"insert">; readonly path: Schema.String; readonly insert_line: Schema.Number; readonly new_str: Schema.String; }>
+type TextEditorInsertCommand = typeof TextEditorInsertCommand.Type
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L1102)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L1201)
 
-Since v1.0.0
+Since v4.0.0

@@ -3,11 +3,15 @@ Module: `PubSub`<br />
 
 ## PubSub.sizeUnsafe
 
-Retrieves the size of the queue, which is equal to the number of elements
-in the queue. This may be negative if fibers are suspended waiting for
-elements to be added to the queue.
+Synchronously returns the current number of messages retained by the `PubSub`
+for active subscribers.
 
-**Example**
+**Notes**
+
+Returns `0` after shutdown. Because this is an unsafe synchronous snapshot,
+prefer `size` in effectful code.
+
+**Example** (Reading size synchronously)
 
 ```ts
 import { PubSub } from "effect"
@@ -25,6 +29,6 @@ console.log("Current size:", size)
 declare const sizeUnsafe: <A>(self: PubSub<A>) => number
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PubSub.ts#L577)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PubSub.ts#L627)
 
 Since v2.0.0

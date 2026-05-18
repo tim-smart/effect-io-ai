@@ -5,7 +5,7 @@ Module: `HashMap`<br />
 
 Constructs a new `HashMap` from an array of key/value pairs.
 
-**Example**
+**Example** (Creating a HashMap from entries)
 
 ```ts
 import * as HashMap from "effect/HashMap"
@@ -21,6 +21,6 @@ console.log(HashMap.get(map, "b")) // Option.some(2)
 declare const make: <Entries extends ReadonlyArray<readonly [any, any]>>(...entries: Entries) => HashMap<Entries[number] extends readonly [infer K, any] ? K : never, Entries[number] extends readonly [any, infer V] ? V : never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashMap.ts#L246)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashMap.ts#L328)
 
 Since v2.0.0

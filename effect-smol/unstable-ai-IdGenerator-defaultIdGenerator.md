@@ -9,7 +9,7 @@ Uses the standard configuration with "id" prefix and generates IDs in the
 format "id_XXXXXXXXXXXXXXXX" where X represents random alphanumeric
 characters.
 
-**Example**
+**Example** (Generating default IDs)
 
 ```ts
 import { Effect } from "effect"
@@ -36,6 +36,6 @@ const withDefault = program.pipe(
 declare const defaultIdGenerator: Service
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/IdGenerator.ts#L207)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/IdGenerator.ts#L214)
 
 Since v4.0.0

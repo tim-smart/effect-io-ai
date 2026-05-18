@@ -3,14 +3,14 @@ Module: `AnthropicTool`<br />
 
 ## AnthropicTool.ModifierKey
 
-Modifier keys that can be held during click/scroll actions.
+Modifier key that can be held during computer-use click or scroll actions.
 
 **Signature**
 
 ```ts
-declare const ModifierKey: Schema.Literals<readonly ["alt", "ctrl", "meta", "shift"]>
+type ModifierKey = typeof ModifierKey.Type
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L334)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L359)
 
-Since v1.0.0
+Since v4.0.0

@@ -3,16 +3,17 @@ Module: `AnthropicTool`<br />
 
 ## AnthropicTool.ComputerUseZoomAction
 
-Zoom into a specific region of the screen at full resolution.
+Computer-use action payload for zooming into a specific screen region.
 
-Requires `enableZoom: true` in the tool definition.
+**Notes**
+The enclosing computer-use tool must be configured with `enableZoom: true`.
 
 **Signature**
 
 ```ts
-declare const ComputerUseZoomAction: Schema.Struct<{ readonly action: Schema.Literal<"zoom">; readonly region: Schema.Tuple<readonly [Schema.Number, Schema.Number, Schema.Number, Schema.Number]>; }>
+type ComputerUseZoomAction = typeof ComputerUseZoomAction.Type
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L720)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L787)
 
-Since v1.0.0
+Since v4.0.0

@@ -3,19 +3,12 @@ Module: `Match`<br />
 
 ## Match.Matcher
 
-Pattern matching follows a structured process:
+Union type for matchers created by `Match.type` and `Match.value`.
 
-- **Creating a matcher**: Define a `Matcher` that operates on either a
-  specific `Match.type` or `Match.value`.
+A `Matcher` carries the input type, accumulated filters, remaining cases,
+result type, and, for value matchers, the provided value being matched.
 
-- **Defining patterns**: Use combinators such as `Match.when`, `Match.not`,
-  and `Match.tag` to specify matching conditions.
-
-- **Completing the match**: Apply a finalizer such as `Match.exhaustive`,
-  `Match.orElse`, or `Match.option` to determine how unmatched cases should
-  be handled.
-
-**Example**
+**Example** (Matching string and number values)
 
 ```ts
 import { Match } from "effect"
@@ -45,6 +38,6 @@ type Matcher<Input, Filters, RemainingApplied, Result, Provided, Return> = | Typ
   | ValueMatcher<Input, Filters, RemainingApplied, Result, Provided, Return>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L77)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L71)
 
 Since v4.0.0

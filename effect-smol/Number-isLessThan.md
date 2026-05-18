@@ -5,7 +5,7 @@ Module: `Number`<br />
 
 Returns `true` if the first argument is less than the second, otherwise `false`.
 
-**Example**
+**Example** (Checking less-than comparisons)
 
 ```ts
 import { isLessThan } from "effect/Number"
@@ -22,6 +22,6 @@ assert.deepStrictEqual(isLessThan(4, 3), false)
 declare const isLessThan: { (that: number): (self: number) => boolean; (self: number, that: number): boolean; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Number.ts#L243)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Number.ts#L254)
 
 Since v2.0.0

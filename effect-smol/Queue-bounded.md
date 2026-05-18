@@ -8,10 +8,10 @@ Creates a bounded queue with the specified capacity that uses backpressure strat
 When the queue reaches capacity, producers will be suspended until space becomes available.
 This ensures all messages are processed but may slow down producers.
 
-**Example**
+**Example** (Creating bounded queues)
 
 ```ts
-import { Cause, Effect, Queue } from "effect"
+import { Effect, Queue } from "effect"
 
 const program = Effect.gen(function*() {
   const queue = yield* Queue.bounded<string>(5)
@@ -31,6 +31,6 @@ const program = Effect.gen(function*() {
 declare const bounded: <A, E = never>(capacity: number) => Effect<Queue<A, E>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Queue.ts#L383)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Queue.ts#L472)
 
 Since v2.0.0

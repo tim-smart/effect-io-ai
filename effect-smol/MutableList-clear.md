@@ -6,7 +6,7 @@ Module: `MutableList`<br />
 Removes all elements from the MutableList, resetting it to an empty state.
 This operation is highly optimized and releases all internal memory.
 
-**Example**
+**Example** (Clearing a mutable list)
 
 ```ts
 import * as MutableList from "effect/MutableList"
@@ -39,6 +39,6 @@ function resetBuffer<T>(buffer: MutableList.MutableList<T>) {
 declare const clear: <A>(self: MutableList<A>) => void
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableList.ts#L561)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableList.ts#L594)
 
 Since v4.0.0

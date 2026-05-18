@@ -3,7 +3,8 @@ Module: `Schema`<br />
 
 ## Schema.DateTimeZoned
 
-Companion type for `DateTimeZoned`.
+Schema interface for `DateTimeZoned`, representing `DateTime.Zoned` values
+with ISO offset or named-zone string JSON encoding.
 
 **Signature**
 
@@ -13,6 +14,6 @@ export interface DateTimeZoned extends declare<DateTime.Zoned> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L10311)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L10717)
 
 Since v4.0.0

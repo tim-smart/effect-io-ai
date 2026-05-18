@@ -17,7 +17,7 @@ The generator functions work similarly to `async/await` but with more
 explicit control over the execution of effects. You can `yield*` values from
 effects and return the final result at the end.
 
-**Example**
+**Example** (Usage)
 
 ```ts
 import { Data, Effect } from "effect"
@@ -56,6 +56,6 @@ export const program = Effect.gen(function*() {
 declare const gen: { <Eff extends Effect<any, any, any>, AEff>(f: () => Generator<Eff, AEff, never>): Effect<AEff, [Eff] extends [never] ? never : [Eff] extends [Effect<infer _A, infer E, infer _R>] ? E : never, [Eff] extends [never] ? never : [Eff] extends [Effect<infer _A, infer _E, infer R>] ? R : never>; <Self, Eff extends Effect<any, any, any>, AEff>(options: { readonly self: Self; }, f: (this: Self) => Generator<Eff, AEff, never>): Effect<AEff, [Eff] extends [never] ? never : [Eff] extends [Effect<infer _A, infer E, infer _R>] ? E : never, [Eff] extends [never] ? never : [Eff] extends [Effect<infer _A, infer _E, infer R>] ? R : never>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L1501)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L1362)
 
 Since v2.0.0

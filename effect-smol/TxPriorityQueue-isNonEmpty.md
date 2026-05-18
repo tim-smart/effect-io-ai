@@ -5,7 +5,7 @@ Module: `TxPriorityQueue`<br />
 
 Returns `true` if the queue has at least one element.
 
-**Example**
+**Example** (Checking whether a queue has elements)
 
 ```ts
 import { Effect, Order, TxPriorityQueue } from "effect"
@@ -23,6 +23,6 @@ const program = Effect.gen(function*() {
 declare const isNonEmpty: <A>(self: TxPriorityQueue<A>) => Effect.Effect<boolean>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxPriorityQueue.ts#L221)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxPriorityQueue.ts#L228)
 
 Since v4.0.0

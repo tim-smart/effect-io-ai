@@ -5,7 +5,7 @@ Module: `Channel`<br />
 
 Creates a `Channel` from an iterator.
 
-**Example**
+**Example** (Creating channels from iterators)
 
 ```ts
 import { Channel } from "effect"
@@ -21,6 +21,6 @@ const channel = Channel.fromIterator(() => numbers[Symbol.iterator]())
 declare const fromIterator: <A, L>(iterator: LazyArg<Iterator<A, L>>) => Channel<A, never, L>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L610)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L667)
 
 Since v2.0.0

@@ -5,13 +5,13 @@ Module: `Flag`<br />
 
 Validates and transforms a flag value using a Schema codec.
 
-**Example**
+**Example** (Validating with schemas)
 
 ```ts
 import { Schema } from "effect"
 import { Flag } from "effect/unstable/cli"
 
-const isEmail = Schema.isIncludes("@", {
+const isEmail = Schema.isPattern(/^[^\s@]+@[^\s@]+\.[^\s@]+$/, {
   message: "Must be a valid email address"
 })
 
@@ -42,6 +42,6 @@ const configFlag = Flag.string("config").pipe(
 declare const withSchema: { <A, B>(schema: Schema.Codec<B, A>): (self: Flag<A>) => Flag<B>; <A, B>(self: Flag<A>, schema: Schema.Codec<B, A>): Flag<B>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Flag.ts#L884)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Flag.ts#L943)
 
 Since v4.0.0

@@ -3,13 +3,14 @@ Module: `Effect`<br />
 
 ## Effect.tapCause
 
-The `tapCause` function allows you to inspect the complete cause
-of an error, including failures and defects.
+Runs an effectful operation with the full `Cause` when the source effect
+fails.
 
-This function is helpful when you need to log, monitor, or handle specific
-error causes in your effects. It gives you access to the full error cause,
-whether it's a failure, defect, or other exceptional conditions, without
-altering the error or the overall result of the effect.
+**Details**
+
+Use this to log or inspect typed failures, defects, and interruptions. When
+the operation succeeds, the original cause is preserved. If the operation
+fails, its error is also represented in the returned effect.
 
 **Previously Known As**
 
@@ -17,7 +18,7 @@ This API replaces the following from Effect 3.x:
 
 - `Effect.tapErrorCause`
 
-**Example**
+**Example** (Usage)
 
 ```ts
 import { Cause, Console, Effect } from "effect"
@@ -40,6 +41,6 @@ Effect.runPromiseExit(program).then(console.log)
 declare const tapCause: { <E, X, E2, R2>(f: (cause: Cause.Cause<NoInfer<E>>) => Effect<X, E2, R2>): <A, R>(self: Effect<A, E, R>) => Effect<A, E | E2, R2 | R>; <A, E, R, X, E2, R2>(self: Effect<A, E, R>, f: (cause: Cause.Cause<E>) => Effect<X, E2, R2>): Effect<A, E | E2, R | R2>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L3628)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L3524)
 
 Since v2.0.0

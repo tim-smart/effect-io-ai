@@ -18,7 +18,7 @@ the effect pipeline.
 - For **Failure effects**: Applies the mapping function immediately to the error
 - For **Pending effects**: Falls back to the regular `mapError` behavior
 
-**Example**
+**Example** (Usage)
 
 ```ts
 import { Effect } from "effect"
@@ -41,6 +41,6 @@ const mappedPending = Effect.mapErrorEager(
 declare const mapErrorEager: { <E, E2>(f: (e: E) => E2): <A, R>(self: Effect<A, E, R>) => Effect<A, E2, R>; <A, E, R, E2>(self: Effect<A, E, R>, f: (e: E) => E2): Effect<A, E2, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L14461)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L14413)
 
 Since v4.0.0

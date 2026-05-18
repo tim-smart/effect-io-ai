@@ -5,7 +5,7 @@ Module: `TxDeferred`<br />
 
 Creates a new empty `TxDeferred`.
 
-**Example**
+**Example** (Creating a transactional deferred)
 
 ```ts
 import { Effect, Option, TxDeferred } from "effect"
@@ -23,6 +23,6 @@ const program = Effect.gen(function*() {
 declare const make: <A, E = never>() => Effect.Effect<TxDeferred<A, E>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxDeferred.ts#L96)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxDeferred.ts#L98)
 
 Since v4.0.0

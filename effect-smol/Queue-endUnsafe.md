@@ -8,7 +8,7 @@ returned.
 
 This is an unsafe operation that directly modifies the queue without Effect wrapping.
 
-**Example**
+**Example** (Ending queues synchronously)
 
 ```ts
 import { Cause, Effect, Queue } from "effect"
@@ -25,7 +25,13 @@ const program = Effect.gen(function*() {
   const ended = Queue.endUnsafe(queue)
   console.log(ended) // true
 
-  // The queue is now done
+  // Existing messages can still be consumed while the queue is closing
+  console.log(queue.state._tag) // "Closing"
+
+  Queue.takeUnsafe(queue)
+  Queue.takeUnsafe(queue)
+
+  // After buffered messages are consumed, the queue is done
   console.log(queue.state._tag) // "Done"
 })
 ```
@@ -36,6 +42,6 @@ const program = Effect.gen(function*() {
 declare const endUnsafe: <A, E>(self: Enqueue<A, E | Done>) => boolean
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Queue.ts#L861)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Queue.ts#L960)
 
 Since v4.0.0

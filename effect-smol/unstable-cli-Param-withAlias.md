@@ -11,7 +11,7 @@ typically single-character shortcuts like "-f" for "--force".
 This works on any param structure by recursively finding the underlying
 `Single` node and applying the alias there.
 
-**Example**
+**Example** (Adding parameter aliases)
 
 ```ts
 import * as Param from "effect/unstable/cli/Param"
@@ -36,6 +36,6 @@ const count = Param.integer(Param.flagKind, "count").pipe(
 declare const withAlias: { <Kind extends ParamKind, A>(alias: string): (self: Param<Kind, A>) => Param<Kind, A>; <Kind extends ParamKind, A>(self: Param<Kind, A>, alias: string): Param<Kind, A>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Param.ts#L878)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Param.ts#L960)
 
 Since v4.0.0

@@ -5,7 +5,7 @@ Module: `Fiber`<br />
 
 Waits for a fiber to complete and returns its exit value.
 
-**Example**
+**Example** (Awaiting a fiber exit)
 
 ```ts
 import { Effect, Fiber } from "effect"
@@ -23,6 +23,6 @@ const program = Effect.gen(function*() {
 declare const await: <A, E>(self: Fiber<A, E>) => Effect<Exit<A, E>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Fiber.ts#L210)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Fiber.ts#L215)
 
 Since v2.0.0

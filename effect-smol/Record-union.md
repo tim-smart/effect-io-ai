@@ -6,7 +6,7 @@ Module: `Record`<br />
 Merge two records, preserving entries that exist in either of the records.
 For keys that exist in both records, the provided combine function is used to merge the values.
 
-**Example**
+**Example** (Merging records with union)
 
 ```ts
 import { Record } from "effect"
@@ -24,6 +24,6 @@ assert.deepStrictEqual(
 declare const union: { <K1 extends string, A, B, C>(that: ReadonlyRecord<K1, B>, combine: (selfValue: A, thatValue: B) => C): <K0 extends string>(self: ReadonlyRecord<K0, A>) => Record<K0 | K1, A | B | C>; <K0 extends string, A, K1 extends string, B, C>(self: ReadonlyRecord<K0, A>, that: ReadonlyRecord<K1, B>, combine: (selfValue: A, thatValue: B) => C): Record<K0 | K1, A | B | C>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Record.ts#L1181)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Record.ts#L1245)
 
 Since v2.0.0

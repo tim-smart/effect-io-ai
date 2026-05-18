@@ -10,10 +10,13 @@ Creates an `Effect` that always succeeds with a given value.
 Use this function when you need an effect that completes successfully with a
 specific value without any errors or external dependencies.
 
-**Example**
+**See**
+
+- `fail` to create an effect that represents a failure.
+
+**Example** (Creating a Successful Effect)
 
 ```ts
-// Title: Creating a Successful Effect
 import { Effect } from "effect"
 
 // Creating an effect that represents a successful scenario
@@ -23,16 +26,12 @@ import { Effect } from "effect"
 const success = Effect.succeed(42)
 ```
 
-**See**
-
-- `fail` to create an effect that represents a failure.
-
 **Signature**
 
 ```ts
 declare const succeed: <A>(value: A) => Effect<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L1113)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L972)
 
 Since v2.0.0

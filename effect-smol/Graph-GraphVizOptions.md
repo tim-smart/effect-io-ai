@@ -8,7 +8,7 @@ Configuration options for GraphViz DOT format generation from graphs.
 Provides customization for node labels, edge labels, and graph naming
 in DOT format compatible with GraphViz tools.
 
-**Example**
+**Example** (Configuring GraphViz labels)
 
 ```ts
 import type * as Graph from "effect/Graph"
@@ -51,6 +51,6 @@ export interface GraphVizOptions<N, E> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Graph.ts#L1675)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Graph.ts#L1782)
 
 Since v4.0.0

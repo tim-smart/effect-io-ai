@@ -3,9 +3,9 @@ Module: `BigInt`<br />
 
 ## BigInt.decrement
 
-Decrements a number by `1n`.
+Returns the result of subtracting `1n` from a `bigint`.
 
-**Example**
+**Example** (Decrementing a bigint)
 
 ```ts
 import { decrement } from "effect/BigInt"
@@ -20,6 +20,6 @@ assert.deepStrictEqual(decrement(3n), 2n)
 declare const decrement: (n: bigint) => bigint
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigInt.ts#L199)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigInt.ts#L204)
 
 Since v2.0.0

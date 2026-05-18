@@ -5,7 +5,7 @@ Module: `Flag`<br />
 
 Provides a default value for a flag when it's not specified.
 
-**Example**
+**Example** (Providing default values)
 
 ```ts
 import { Flag } from "effect/unstable/cli"
@@ -27,6 +27,6 @@ const hostFlag = Flag.string("host").pipe(
 declare const withDefault: { <const B>(defaultValue: B | Effect.Effect<B, CliError.CliError, Param.Environment>): <A>(self: Flag<A>) => Flag<A | B>; <A, const B>(self: Flag<A>, defaultValue: B | Effect.Effect<B, CliError.CliError, Param.Environment>): Flag<A | B>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Flag.ts#L495)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Flag.ts#L541)
 
 Since v4.0.0

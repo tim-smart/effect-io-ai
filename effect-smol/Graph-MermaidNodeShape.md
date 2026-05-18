@@ -15,7 +15,7 @@ Each shape produces different visual representations in Mermaid diagrams:
 - `subroutine`: Subroutine-style nodes `A[["label"]]`
 - `cylindrical`: Cylindrical database-style nodes `A[("label")]`
 
-**Example**
+**Example** (Selecting Mermaid node shapes)
 
 ```ts
 import type * as Graph from "effect/Graph"
@@ -47,6 +47,6 @@ type MermaidNodeShape = | "rectangle" // A["label"]
   | "cylindrical"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Graph.ts#L1805)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Graph.ts#L1914)
 
 Since v4.0.0

@@ -5,7 +5,7 @@ Module: `Stream`<br />
 
 Checks whether a value is a Stream.
 
-**Example**
+**Example** (Checking whether a value is a Stream)
 
 ```ts
 import { Console, Effect, Stream } from "effect"
@@ -29,6 +29,6 @@ Effect.runPromise(program)
 declare const isStream: (u: unknown) => u is Stream<unknown, unknown, unknown>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L273)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L306)
 
 Since v2.0.0

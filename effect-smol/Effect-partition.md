@@ -14,7 +14,7 @@ The returned tuple is `[excluded, satisfying]`, where:
 This function runs every effect and never fails. Use `concurrency` to control
 parallelism.
 
-**Example**
+**Example** (Usage)
 
 ```ts
 import { Effect } from "effect"
@@ -33,6 +33,6 @@ Effect.runPromise(program).then(console.log)
 declare const partition: { <A, B, E, R>(f: (a: A, i: number) => Effect<B, E, R>, options?: { readonly concurrency?: Concurrency | undefined; }): (elements: Iterable<A>) => Effect<[excluded: Array<E>, satisfying: Array<B>], never, R>; <A, B, E, R>(elements: Iterable<A>, f: (a: A, i: number) => Effect<B, E, R>, options?: { readonly concurrency?: Concurrency | undefined; }): Effect<[excluded: Array<E>, satisfying: Array<B>], never, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L719)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L571)
 
 Since v3.0.0

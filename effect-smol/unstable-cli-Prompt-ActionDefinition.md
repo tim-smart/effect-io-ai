@@ -3,9 +3,10 @@ Module: `Prompt`<br />
 
 ## Prompt.ActionDefinition
 
-Represents the definition of an `Action`.
+Type-level definition for the tagged `Prompt.Action` variants.
 
-Required to create a `Data.TaggedEnum` with generic type arguments.
+It connects the action state and output type parameters to the `Beep`,
+`NextFrame`, and `Submit` action cases.
 
 **Signature**
 
@@ -15,6 +16,6 @@ export interface ActionDefinition extends Data.TaggedEnum.WithGenerics<2> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L70)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L103)
 
 Since v4.0.0

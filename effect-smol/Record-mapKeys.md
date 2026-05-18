@@ -5,7 +5,7 @@ Module: `Record`<br />
 
 Maps the keys of a `ReadonlyRecord` while preserving the corresponding values.
 
-**Example**
+**Example** (Mapping record keys)
 
 ```ts
 import { Record } from "effect"
@@ -23,6 +23,6 @@ assert.deepStrictEqual(
 declare const mapKeys: { <K extends string, A, K2 extends string>(f: (key: K, a: A) => K2): (self: ReadonlyRecord<K, A>) => Record<K2, A>; <K extends string, A, K2 extends string>(self: ReadonlyRecord<K, A>, f: (key: K, a: A) => K2): Record<K2, A>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Record.ts#L601)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Record.ts#L634)
 
 Since v2.0.0

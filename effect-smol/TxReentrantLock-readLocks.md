@@ -5,7 +5,7 @@ Module: `TxReentrantLock`<br />
 
 Returns the total number of read locks held across all fibers.
 
-**Example**
+**Example** (Counting read locks)
 
 ```ts
 import { Effect, TxReentrantLock } from "effect"
@@ -25,6 +25,6 @@ const program = Effect.gen(function*() {
 declare const readLocks: (self: TxReentrantLock) => Effect.Effect<number>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxReentrantLock.ts#L482)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxReentrantLock.ts#L494)
 
 Since v4.0.0

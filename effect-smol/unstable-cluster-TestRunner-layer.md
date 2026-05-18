@@ -14,6 +14,6 @@ by an in-memory driver.
 declare const layer: Layer.Layer<Sharding.Sharding | Runners.Runners | MessageStorage.MessageStorage | MessageStorage.MemoryDriver, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TestRunner.ts#L21)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TestRunner.ts#L38)
 
 Since v4.0.0

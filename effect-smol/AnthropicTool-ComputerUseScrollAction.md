@@ -3,14 +3,14 @@ Module: `AnthropicTool`<br />
 
 ## AnthropicTool.ComputerUseScrollAction
 
-Scroll a given amount in a specified direction.
+Computer-use action payload for scrolling by a specified amount in a specified direction, optionally from a coordinate.
 
 **Signature**
 
 ```ts
-declare const ComputerUseScrollAction: Schema.Struct<{ readonly action: Schema.Literal<"scroll">; readonly coordinate: Schema.optional<Schema.Tuple<readonly [Schema.Number, Schema.Number]>>; readonly scroll_direction: Schema.Literals<readonly ["up", "down", "left", "right"]>; readonly scroll_amount: Schema.Number; }>
+type ComputerUseScrollAction = typeof ComputerUseScrollAction.Type
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L633)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L699)
 
-Since v1.0.0
+Since v4.0.0

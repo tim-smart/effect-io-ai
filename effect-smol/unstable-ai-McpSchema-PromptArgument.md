@@ -11,6 +11,6 @@ Describes an argument that a prompt can accept.
 declare class PromptArgument
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L904)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L1032)
 
 Since v4.0.0

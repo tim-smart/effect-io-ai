@@ -8,7 +8,7 @@ Matches instances of a given class.
 This predicate checks if a value is an instance of the specified constructor,
 providing type-safe matching for class instances and built-in objects.
 
-**Example**
+**Example** (Matching class instances)
 
 ```ts
 import { Match } from "effect"
@@ -29,25 +29,21 @@ const handleValue = Match.type<unknown>()
       Match.instanceOf(Error),
       (err) => `Standard error: ${err.message}`
     ),
-    Match.when(Match.instanceOf(Date), (date) => `Date: ${date.toISOString()}`),
     Match.when(
       Match.instanceOf(Array),
       (arr) => `Array with ${arr.length} items`
     ),
+    Match.when(
+      Match.instanceOf(Map),
+      (map) => `Map with ${map.size} entries`
+    ),
     Match.orElse((value) => `Other: ${typeof value}`)
   )
 
-console.log(handleValue(new CustomError("Failed", 404)))
-// Output: "Custom error: Failed (code: 404)"
-
-console.log(handleValue(new Error("Generic error")))
-// Output: "Standard error: Generic error"
-
-console.log(handleValue(new Date()))
-// Output: "Date: 2024-01-01T00:00:00.000Z"
-
-console.log(handleValue([1, 2, 3]))
-// Output: "Array with 3 items"
+console.log(handleValue(new CustomError("Failed", 404))) // "Custom error: Failed (code: 404)"
+console.log(handleValue(new Error("Generic error"))) // "Standard error: Generic error"
+console.log(handleValue([1, 2, 3])) // "Array with 3 items"
+console.log(handleValue(new Map([["count", 1]]))) // "Map with 1 entries"
 ```
 
 **Signature**
@@ -56,6 +52,6 @@ console.log(handleValue([1, 2, 3]))
 declare const instanceOf: <A extends abstract new (...args: any) => any>(constructor: A) => SafeRefinement<InstanceType<A>, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L1587)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L1577)
 
 Since v4.0.0

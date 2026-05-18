@@ -8,7 +8,7 @@ Combines all the provided layers concurrently, creating a new layer with merged 
 All layers are built concurrently, and their outputs are merged into a single layer.
 This is useful when you need to combine multiple independent layers.
 
-**Example**
+**Example** (Merging independent layers)
 
 ```ts
 import { Effect, Layer, Context } from "effect"
@@ -37,6 +37,6 @@ const mergedLayer = Layer.mergeAll(dbLayer, loggerLayer)
 declare const mergeAll: <Layers extends [Layer<never, any, any>, ...Array<Layer<never, any, any>>]>(...layers: Layers) => Layer<Success<Layers[number]>, Error<Layers[number]>, Services<Layers[number]>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L975)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L1061)
 
 Since v2.0.0

@@ -6,7 +6,7 @@ Module: `TxHashMap`<br />
 Finds the first entry in the TxHashMap that matches the given predicate.
 Returns the key-value pair as a tuple wrapped in an Option.
 
-**Example**
+**Example** (Finding the first matching entry)
 
 ```ts
 import { Effect, TxHashMap } from "effect"
@@ -48,6 +48,6 @@ const program = Effect.gen(function*() {
 declare const findFirst: { <K, V>(predicate: (value: V, key: K) => boolean): (self: TxHashMap<K, V>) => Effect.Effect<Option.Option<[K, V]>>; <K, V>(self: TxHashMap<K, V>, predicate: (value: V, key: K) => boolean): Effect.Effect<Option.Option<[K, V]>>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashMap.ts#L1670)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashMap.ts#L1740)
 
 Since v2.0.0

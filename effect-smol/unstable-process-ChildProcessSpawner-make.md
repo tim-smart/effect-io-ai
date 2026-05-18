@@ -3,7 +3,8 @@ Module: `ChildProcessSpawner`<br />
 
 ## ChildProcessSpawner.make
 
-Create a new `ChildProcessSpawner` service from a `spawn` funciton
+Creates a `ChildProcessSpawner` service from a `spawn` function, deriving
+helpers for exit codes and output collection from that implementation.
 
 **Signature**
 
@@ -11,6 +12,6 @@ Create a new `ChildProcessSpawner` service from a `spawn` funciton
 declare const make: (spawn: ChildProcessSpawner["Service"]["spawn"]) => ChildProcessSpawner["Service"]
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ChildProcessSpawner.ts#L181)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ChildProcessSpawner.ts#L192)
 
 Since v4.0.0

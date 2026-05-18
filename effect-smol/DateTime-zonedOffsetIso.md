@@ -7,7 +7,7 @@ Format the time zone offset of a `DateTime.Zoned` as an ISO string.
 
 The offset is formatted as "±HH:MM".
 
-**Example**
+**Example** (Formatting zoned offsets)
 
 ```ts
 import { DateTime } from "effect"
@@ -26,6 +26,6 @@ console.log(offsetString) // "+03:00"
 declare const zonedOffsetIso: (self: Zoned) => string
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L1288)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L1506)
 
 Since v3.6.0

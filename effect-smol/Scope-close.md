@@ -6,7 +6,7 @@ Module: `Scope`<br />
 Closes a scope, running all registered finalizers in the appropriate order.
 The exit value is passed to each finalizer.
 
-**Example**
+**Example** (Running scope finalizers)
 
 ```ts
 import { Console, Effect, Exit, Scope } from "effect"
@@ -34,6 +34,6 @@ const resourceManagement = Effect.gen(function*() {
 declare const close: <A, E>(self: Scope, exit: Exit<A, E>) => Effect<void>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Scope.ts#L455)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Scope.ts#L484)
 
 Since v4.0.0

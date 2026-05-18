@@ -3,17 +3,18 @@ Module: `Schema`<br />
 
 ## Schema.encodeUnknownResult
 
-Encodes an `unknown` input against a schema, returning a `Promise` that
-resolves with the encoded value or rejects with a `SchemaError`. Useful
-for integrating with Promise-based APIs. For typed input use
-`encodePromise`.
+Encodes an `unknown` input against a schema, returning a `Result` that
+succeeds with the encoded value or fails with a schema issue. For typed input
+use `encodeResult`.
+Options may be provided either when creating the encoder or when applying it;
+application options override creation options.
 
 **Signature**
 
 ```ts
-declare const encodeUnknownResult: <S extends Encoder<unknown>>(schema: S) => (input: unknown, options?: AST.ParseOptions) => Result_.Result<S["Encoded"], Issue.Issue>
+declare const encodeUnknownResult: <S extends Encoder<unknown>>(schema: S, options?: AST.ParseOptions) => (input: unknown, options?: AST.ParseOptions) => Result_.Result<S["Encoded"], Issue.Issue>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L1397)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L1455)
 
 Since v4.0.0

@@ -19,6 +19,6 @@ The default value for `in` is "header".
 declare const apiKey: (options: { readonly key: string; readonly in?: "header" | "query" | "cookie" | undefined; }) => ApiKey
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiSecurity.ts#L111)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiSecurity.ts#L151)
 
 Since v4.0.0

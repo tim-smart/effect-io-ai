@@ -9,7 +9,7 @@ This predicate refines unknown values to numbers, allowing pattern matching
 on numeric types. It matches all number values including integers, floats,
 `Infinity`, `-Infinity`, and `NaN`.
 
-**Example**
+**Example** (Matching number values)
 
 ```ts
 import { Match } from "effect"
@@ -36,6 +36,6 @@ console.log(categorizeNumber("hello")) // "Not a number type"
 declare const number: Predicate.Refinement<unknown, number>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L1259)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L1253)
 
 Since v4.0.0

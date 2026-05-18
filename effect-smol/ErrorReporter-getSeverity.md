@@ -4,7 +4,7 @@ Module: `ErrorReporter`<br />
 ## ErrorReporter.getSeverity
 
 Reads the `ErrorReporter.severity` annotation from an error object,
-falling back to `"Error"` when unset or invalid.
+falling back to `"Info"` when the annotation is unset or invalid.
 
 **Signature**
 
@@ -12,6 +12,6 @@ falling back to `"Error"` when unset or invalid.
 declare const getSeverity: (error: object) => Severity
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ErrorReporter.ts#L390)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ErrorReporter.ts#L385)
 
 Since v4.0.0

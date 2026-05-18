@@ -6,7 +6,7 @@ Module: `Number`<br />
 Tries to parse a `number` from a `string` using the `Number()` function.
 The following special string values are supported: "NaN", "Infinity", "-Infinity".
 
-**Example**
+**Example** (Parsing numbers from strings)
 
 ```ts
 import { Number } from "effect"
@@ -25,6 +25,6 @@ Number.parse("not a number") // Option.none()
 declare const parse: (s: string) => Option.Option<number>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Number.ts#L557)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Number.ts#L580)
 
 Since v2.0.0

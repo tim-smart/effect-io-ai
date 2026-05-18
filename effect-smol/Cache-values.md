@@ -6,7 +6,7 @@ Module: `Cache`<br />
 Retrieves all successfully cached values from the cache, excluding failed
 lookups and expired entries.
 
-**Example**
+**Example** (Reading all cached values)
 
 ```ts
 import { Cache, Effect } from "effect"
@@ -36,6 +36,6 @@ const program = Effect.gen(function*() {
 declare const values: <Key, A, E, R>(self: Cache<Key, A, E, R>) => Effect.Effect<Iterable<A>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cache.ts#L1173)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cache.ts#L1258)
 
 Since v4.0.0

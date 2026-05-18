@@ -5,7 +5,7 @@ Module: `String`<br />
 
 Extracts a section of a string and returns it as a new string.
 
-**Example**
+**Example** (Slicing strings)
 
 ```ts
 import { pipe, String } from "effect"
@@ -21,6 +21,6 @@ assert.deepStrictEqual(pipe("hello world", String.slice(0, 5)), "hello")
 declare const slice: (start?: number, end?: number) => (self: string) => string
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L340)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L361)
 
 Since v2.0.0

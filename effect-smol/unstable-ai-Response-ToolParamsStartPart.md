@@ -28,6 +28,6 @@ export interface ToolParamsStartPart extends BasePart<"tool-params-start", ToolP
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Response.ts#L1100)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Response.ts#L1097)
 
-Since v1.0.0
+Since v4.0.0

@@ -5,7 +5,7 @@ Module: `TxHashMap`<br />
 
 Returns the number of entries in the TxHashMap.
 
-**Example**
+**Example** (Counting entries)
 
 ```ts
 import { Effect, TxHashMap } from "effect"
@@ -38,6 +38,6 @@ const program = Effect.gen(function*() {
 declare const size: <K, V>(self: TxHashMap<K, V>) => Effect.Effect<number>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashMap.ts#L581)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashMap.ts#L620)
 
 Since v2.0.0

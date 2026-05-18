@@ -3,7 +3,8 @@ Module: `Schema`<br />
 
 ## Schema.$ReadonlySet
 
-Companion type for `ReadonlySet`.
+Type-level representation of a `ReadonlySet` schema whose values are validated
+by the provided element schema.
 
 **Signature**
 
@@ -21,6 +22,6 @@ export interface $ReadonlySet<Value extends Top> extends
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L8270)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L8610)
 
 Since v4.0.0

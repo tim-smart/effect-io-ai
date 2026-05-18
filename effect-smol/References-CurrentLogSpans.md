@@ -6,7 +6,7 @@ Module: `References`<br />
 Reference for managing log spans that track the duration and hierarchy of operations.
 Each span represents a labeled time period for performance analysis and debugging.
 
-**Example**
+**Example** (Tracking log spans)
 
 ```ts
 import { Console, Effect, References } from "effect"
@@ -17,7 +17,7 @@ const logSpanExample = Effect.gen(function*() {
   console.log(current.length) // 0
 
   // Add a log span manually
-  const startTime = Date.now()
+  const databaseConnectionStartedAt = 0
   yield* Effect.provideService(
     Effect.gen(function*() {
       // Simulate some work
@@ -28,10 +28,11 @@ const logSpanExample = Effect.gen(function*() {
       console.log("Active spans:", spans.map(([label]) => label)) // ["database-connection"]
     }),
     References.CurrentLogSpans,
-    [["database-connection", startTime]]
+    [["database-connection", databaseConnectionStartedAt]]
   )
 
   // Add another span
+  const dataProcessingStartedAt = 100
   yield* Effect.provideService(
     Effect.gen(function*() {
       const spans = yield* References.CurrentLogSpans
@@ -41,8 +42,8 @@ const logSpanExample = Effect.gen(function*() {
     }),
     References.CurrentLogSpans,
     [
-      ["database-connection", startTime],
-      ["data-processing", Date.now()]
+      ["database-connection", databaseConnectionStartedAt],
+      ["data-processing", dataProcessingStartedAt]
     ]
   )
 
@@ -64,6 +65,6 @@ const logSpanExample = Effect.gen(function*() {
 declare const CurrentLogSpans: Context.Reference<ReadonlyArray<[label: string, timestamp: number]>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/References.ts#L252)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/References.ts#L261)
 
 Since v4.0.0

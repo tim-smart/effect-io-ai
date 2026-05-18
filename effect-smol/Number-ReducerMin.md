@@ -3,7 +3,7 @@ Module: `Number`<br />
 
 ## Number.ReducerMin
 
-A `Combiner` that returns the minimum `number`.
+A `Reducer` for reducing `number`s by keeping the minimum value.
 
 **Signature**
 
@@ -11,6 +11,6 @@ A `Combiner` that returns the minimum `number`.
 declare const ReducerMin: Reducer.Reducer<number>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Number.ts#L630)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Number.ts#L654)
 
 Since v4.0.0

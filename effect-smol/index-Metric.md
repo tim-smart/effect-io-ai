@@ -11,7 +11,7 @@ Re-exports all named exports from the "./Metric.ts" module as `Metric`.
 export * as Metric from "./Metric.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L2206)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L2247)
 
 Since v2.0.0
 
@@ -52,6 +52,8 @@ Provides statistical insights into value distributions over time.
 
 ## Basic Usage
 
+**Example** (Creating and updating metrics)
+
 ```ts
 import { Effect, Metric } from "effect"
 
@@ -81,6 +83,8 @@ const handleRequest = Effect.gen(function*() {
 
 ## Attributes and Tagging
 
+**Example** (Tagging metrics with attributes)
+
 ```ts
 import { Effect, Metric } from "effect"
 
@@ -108,6 +112,8 @@ const program = Effect.gen(function*() {
 ```
 
 ## Advanced Examples
+
+**Example** (Recording business and performance metrics)
 
 ```ts
 import { Effect, Metric } from "effect"

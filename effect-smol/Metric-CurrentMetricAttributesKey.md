@@ -5,7 +5,7 @@ Module: `Metric`<br />
 
 Service key for the current metric attributes context.
 
-**Example**
+**Example** (Using the current attributes key)
 
 ```ts
 import { Data, Effect, Metric } from "effect"
@@ -54,6 +54,6 @@ const program = Effect.gen(function*() {
 declare const CurrentMetricAttributesKey: "effect/Metric/CurrentMetricAttributes"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Metric.ts#L1728)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Metric.ts#L1697)
 
 Since v4.0.0

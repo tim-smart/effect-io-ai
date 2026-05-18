@@ -3,10 +3,14 @@ Module: `Queue`<br />
 
 ## Queue.clear
 
-Take all messages from the queue, returning an empty array if the queue
-is empty or done.
+Drains and returns all currently buffered messages without waiting for more.
 
-**Example**
+**Details**
+
+Returns an empty array when the queue is empty or has completed normally. If
+the queue has failed, the effect fails with the queue's error.
+
+**Example** (Clearing queued values)
 
 ```ts
 import { Cause, Effect, Queue } from "effect"
@@ -37,6 +41,6 @@ const program = Effect.gen(function*() {
 declare const clear: <A, E>(self: Dequeue<A, E>) => Effect<Array<A>, Pull.ExcludeDone<E>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Queue.ts#L990)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Queue.ts#L1098)
 
 Since v4.0.0

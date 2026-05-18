@@ -8,7 +8,7 @@ Optimizes a hash value by applying bit manipulation techniques.
 This function takes a hash value and applies bitwise operations to improve
 the distribution of hash values, reducing the likelihood of collisions.
 
-**Example**
+**Example** (Optimizing a hash value)
 
 ```ts
 import { Hash } from "effect"
@@ -27,6 +27,6 @@ const stringHash = Hash.optimize(Hash.string("hello"))
 declare const optimize: (n: number) => number
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Hash.ts#L222)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Hash.ts#L227)
 
 Since v2.0.0

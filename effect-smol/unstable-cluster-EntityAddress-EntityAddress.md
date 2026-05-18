@@ -11,6 +11,6 @@ Represents the unique address of an entity within the cluster.
 declare class EntityAddress
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EntityAddress.ts#L19)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EntityAddress.ts#L37)
 
 Since v4.0.0

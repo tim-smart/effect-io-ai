@@ -10,7 +10,7 @@ This creates a new span for the layer's construction and execution. The span
 is automatically ended when the layer's scope is closed. This is useful for
 tracking the lifecycle and performance of layer initialization.
 
-**Example**
+**Example** (Wrapping a layer with a span)
 
 ```ts
 import { Effect, Layer, Context } from "effect"
@@ -64,6 +64,6 @@ const program = Effect.gen(function*() {
 declare const withSpan: { (name: string, options?: SpanOptions): <A, E, R>(self: Layer<A, E, R>) => Layer<A, E, Exclude<R, Tracer.ParentSpan>>; <A, E, R>(self: Layer<A, E, R>, name: string, options?: SpanOptions): Layer<A, E, Exclude<R, Tracer.ParentSpan>>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L2227)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L2340)
 
 Since v4.0.0

@@ -8,7 +8,7 @@ Interrupts the queue gracefully, transitioning it to a closing state.
 This operation stops accepting new offers but allows existing messages to be consumed.
 Once all messages are drained, the queue transitions to the Done state with an interrupt cause.
 
-**Example**
+**Example** (Interrupting queues gracefully)
 
 ```ts
 import { Cause, Effect, Queue } from "effect"
@@ -47,6 +47,6 @@ const program = Effect.gen(function*() {
 declare const interrupt: <A, E>(self: Enqueue<A, E>) => Effect<boolean>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Queue.ts#L904)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Queue.ts#L1004)
 
 Since v4.0.0

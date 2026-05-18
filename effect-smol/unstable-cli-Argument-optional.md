@@ -5,7 +5,7 @@ Module: `Argument`<br />
 
 Makes a positional argument optional.
 
-**Example**
+**Example** (Making an argument optional)
 
 ```ts
 import { Argument } from "effect/unstable/cli"
@@ -19,6 +19,6 @@ const optionalVersion = Argument.string("version").pipe(Argument.optional)
 declare const optional: <A>(arg: Argument<A>) => Argument<Option.Option<A>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Argument.ts#L273)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Argument.ts#L313)
 
 Since v4.0.0

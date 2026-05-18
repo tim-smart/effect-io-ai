@@ -13,4 +13,4 @@ export * as AtomHttpApi from "effect/unstable/reactivity/AtomHttpApi"
 
 [Source](https://github.com/Effect-TS/effect/tree/main/packages/atom/vue/src/index.ts#L41)
 
-Since v1.0.0
+Since v4.0.0

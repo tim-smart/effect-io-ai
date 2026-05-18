@@ -5,7 +5,7 @@ Module: `TxPubSub`<br />
 
 Waits for the TxPubSub to be shut down.
 
-**Example**
+**Example** (Waiting for shutdown)
 
 ```ts
 import { Effect, TxPubSub } from "effect"
@@ -25,6 +25,6 @@ const program = Effect.gen(function*() {
 declare const awaitShutdown: <A>(self: TxPubSub<A>) => Effect.Effect<void>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxPubSub.ts#L607)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxPubSub.ts#L630)
 
 Since v4.0.0

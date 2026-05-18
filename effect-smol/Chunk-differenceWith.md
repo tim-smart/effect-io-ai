@@ -6,7 +6,7 @@ Module: `Chunk`<br />
 Creates a `Chunk` of values not included in the other given `Chunk` using the provided `isEquivalent` function.
 The order and references of result values are determined by the first `Chunk`.
 
-**Example**
+**Example** (Computing difference with custom equivalence)
 
 ```ts
 import { Chunk } from "effect"
@@ -37,6 +37,6 @@ console.log(Chunk.toArray(wordDiff)) // ["Banana", "Cherry"]
 declare const differenceWith: <A>(isEquivalent: (self: A, that: A) => boolean) => { (that: Chunk<A>): (self: Chunk<A>) => Chunk<A>; (self: Chunk<A>, that: Chunk<A>): Chunk<A>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L2830)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L2906)
 
 Since v3.2.0

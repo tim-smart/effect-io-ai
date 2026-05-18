@@ -6,7 +6,7 @@ Module: `Effect`<br />
 Returns an effect that is delayed from this effect by the specified
 `Duration`.
 
-**Example**
+**Example** (Usage)
 
 ```ts
 import { Console, Effect } from "effect"
@@ -26,6 +26,6 @@ Effect.runFork(program)
 declare const delay: { (duration: Duration.Input): <A, E, R>(self: Effect<A, E, R>) => Effect<A, E, R>; <A, E, R>(self: Effect<A, E, R>, duration: Duration.Input): Effect<A, E, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L4499)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L4362)
 
 Since v2.0.0

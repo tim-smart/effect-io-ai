@@ -8,7 +8,7 @@ A Layer that constructs an empty Context.
 This layer provides no services and can be used as a neutral element
 in layer composition or as a starting point for building layers.
 
-**Example**
+**Example** (Creating an empty layer)
 
 ```ts
 import { Layer } from "effect"
@@ -22,6 +22,6 @@ const emptyLayer = Layer.empty
 declare const empty: Layer<never, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L695)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L773)
 
 Since v2.0.0

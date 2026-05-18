@@ -8,7 +8,7 @@ Creates a new inline group in the console and returns a scoped Effect.
 This function creates a collapsible group of console messages. The group
 is automatically closed when the Effect's scope is finalized.
 
-**Example**
+**Example** (Grouping scoped output)
 
 ```ts
 import { Console, Effect } from "effect"
@@ -31,6 +31,6 @@ const program = Effect.gen(function*() {
 declare const group: (options?: { label?: string | undefined; collapsed?: boolean | undefined; } | undefined) => Effect.Effect<void, never, Scope>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Console.ts#L396)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Console.ts#L413)
 
 Since v2.0.0

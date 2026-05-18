@@ -8,7 +8,7 @@ Creates a file path parameter.
 This is a convenience function that creates a path parameter with a
 `pathType` set to `"file"` and a default type name of `"file"`.
 
-**Example**
+**Example** (Creating file parameters)
 
 ```ts
 import * as Param from "effect/unstable/cli/Param"
@@ -30,6 +30,6 @@ const inputFile = Param.file(Param.flagKind, "input", { mustExist: true })
 declare const file: <Kind extends ParamKind>(kind: Kind, name: string, options?: { readonly mustExist?: boolean | undefined; }) => Param<Kind, string>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Param.ts#L626)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Param.ts#L701)
 
 Since v4.0.0

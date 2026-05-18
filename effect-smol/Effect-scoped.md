@@ -7,7 +7,7 @@ Scopes all resources used in this workflow to the lifetime of the workflow,
 ensuring that their finalizers are run as soon as this workflow completes
 execution, whether by success, failure, or interruption.
 
-**Example**
+**Example** (Usage)
 
 ```ts
 import { Console, Effect } from "effect"
@@ -37,6 +37,6 @@ Effect.runFork(program)
 declare const scoped: <A, E, R>(self: Effect<A, E, R>) => Effect<A, E, Exclude<R, Scope>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L6083)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L5973)
 
 Since v2.0.0

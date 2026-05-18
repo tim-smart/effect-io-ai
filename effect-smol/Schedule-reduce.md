@@ -7,7 +7,7 @@ Returns a new `Schedule` that combines the outputs of the provided schedule
 using the specified effectful `combine` function and starting from the
 specified `initial` state.
 
-**Example**
+**Example** (Reducing schedule outputs)
 
 ```ts
 import { Console, Effect, Schedule } from "effect"
@@ -33,24 +33,24 @@ const sumProgram = Effect.gen(function*() {
   yield* Console.log(`Final sum: ${finalSum}`)
 })
 
-// Build a history of execution times
+// Build a history of execution counts
 const historySchedule = Schedule.reduce(
   Schedule.spaced("1 second").pipe(Schedule.take(4)),
   () => [] as Array<number>, // Initial empty array
-  (history, executionNumber) => Effect.succeed([...history, Date.now()])
+  (history, executionNumber) => Effect.succeed([...history, executionNumber])
 )
 
 const historyProgram = Effect.gen(function*() {
   const timeline = yield* Effect.repeat(
     Effect.gen(function*() {
-      yield* Console.log("Recording timestamp...")
+      yield* Console.log("Recording execution...")
       return "recorded"
     }),
     historySchedule
   )
 
   yield* Console.log(
-    `Execution timeline: ${timeline.length} timestamps recorded`
+    `Execution timeline: ${timeline.join(", ")}`
   )
 })
 
@@ -117,6 +117,6 @@ const configProgram = Effect.gen(function*() {
 declare const reduce: { <State, Output, Error2 = never, Env2 = never>(initial: LazyArg<State>, combine: (state: State, output: Output) => State | Effect<State, Error2, Env2>): <Input, Error, Env>(self: Schedule<Output, Input, Error, Env>) => Schedule<State, Input, Error | Error2, Env | Env2>; <Output, Input, Error, Env, State, Error2 = never, Env2 = never>(self: Schedule<Output, Input, Error, Env>, initial: LazyArg<State>, combine: (state: State, output: Output) => State | Effect<State, Error2, Env2>): Schedule<State, Input, Error | Error2, Env | Env2>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L2518)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L2514)
 
 Since v2.0.0

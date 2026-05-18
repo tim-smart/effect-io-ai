@@ -5,7 +5,7 @@ Module: `Argument`<br />
 
 Transforms the parsed value of a positional argument using an effectful function.
 
-**Example**
+**Example** (Validating values effectfully)
 
 ```ts
 import { Effect } from "effect"
@@ -30,6 +30,6 @@ const files = Argument.string("files").pipe(
 declare const mapEffect: { <A, B>(f: (a: A) => Effect.Effect<B, CliError.CliError, Param.Environment>): (self: Argument<A>) => Argument<B>; <A, B>(self: Argument<A>, f: (a: A) => Effect.Effect<B, CliError.CliError, Param.Environment>): Argument<B>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Argument.ts#L435)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Argument.ts#L482)
 
 Since v4.0.0

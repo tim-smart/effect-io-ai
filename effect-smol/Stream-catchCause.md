@@ -13,7 +13,7 @@ This API replaces the following from Effect 3.x:
 
 - `Stream.catchAllCause`
 
-**Example**
+**Example** (Catching stream causes)
 
 ```ts
 import { Console, Effect, Stream } from "effect"
@@ -42,6 +42,6 @@ Effect.runPromise(program)
 declare const catchCause: { <E, A2, E2, R2>(f: (cause: Cause.Cause<E>) => Stream<A2, E2, R2>): <A, R>(self: Stream<A, E, R>) => Stream<A | A2, E2, R2 | R>; <A, E, R, A2, E2, R2>(self: Stream<A, E, R>, f: (cause: Cause.Cause<E>) => Stream<A2, E2, R2>): Stream<A | A2, E2, R | R2>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L4663)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L4851)
 
 Since v4.0.0

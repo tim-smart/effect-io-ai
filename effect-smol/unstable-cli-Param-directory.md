@@ -8,7 +8,7 @@ Creates a directory path parameter.
 This is a convenience function that creates a path parameter with the
 `pathType` set to `"directory"` and a default type name of `"directory"`.
 
-**Example**
+**Example** (Creating directory parameters)
 
 ```ts
 import * as Param from "effect/unstable/cli/Param"
@@ -30,6 +30,6 @@ const sourceDir = Param.directory(Param.flagKind, "source", { mustExist: true })
 declare const directory: <Kind extends ParamKind>(kind: Kind, name: string, options?: { readonly mustExist?: boolean | undefined; }) => Param<Kind, string>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Param.ts#L589)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Param.ts#L663)
 
 Since v4.0.0

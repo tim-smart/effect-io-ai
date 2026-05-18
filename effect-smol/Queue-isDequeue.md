@@ -11,6 +11,6 @@ Type guard to check if a value is a Dequeue.
 declare const isDequeue: <A = unknown, E = unknown>(u: unknown) => u is Dequeue<A, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Queue.ts#L50)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Queue.ts#L102)
 
 Since v4.0.0

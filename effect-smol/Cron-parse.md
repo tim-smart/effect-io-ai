@@ -3,9 +3,15 @@ Module: `Cron`<br />
 
 ## Cron.parse
 
-Parses a cron expression into a `Cron` instance.
+Parses a cron expression into a `Cron` instance, returning a `Result` instead
+of throwing.
 
-**Example**
+The expression may contain five fields, where seconds default to `0`, or six
+fields including seconds. Fields support `*`, comma-separated values, ranges,
+steps, and month or weekday aliases. Invalid expressions fail with
+`CronParseError`.
+
+**Example** (Parsing cron expressions)
 
 ```ts
 import { Cron, Result } from "effect"
@@ -31,6 +37,6 @@ assert.deepStrictEqual(
 declare const parse: (cron: string, tz?: DateTime.TimeZone | string) => Result.Result<Cron, CronParseError>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cron.ts#L493)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cron.ts#L547)
 
 Since v2.0.0

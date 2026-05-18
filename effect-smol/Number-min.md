@@ -5,7 +5,7 @@ Module: `Number`<br />
 
 Returns the minimum between two `number`s.
 
-**Example**
+**Example** (Finding the minimum)
 
 ```ts
 import { min } from "effect/Number"
@@ -20,6 +20,6 @@ assert.deepStrictEqual(min(2, 3), 2)
 declare const min: { (that: number): (self: number) => number; (self: number, that: number): number; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Number.ts#L387)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Number.ts#L404)
 
 Since v2.0.0

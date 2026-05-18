@@ -9,7 +9,7 @@ current fiber.
 This is useful when you want to report an error for observability without
 actually failing the fiber.
 
-**Example**
+**Example** (Reporting a cause manually)
 
 ```ts
 import { Cause, Effect, ErrorReporter } from "effect"
@@ -28,6 +28,6 @@ const program = Effect.gen(function*() {
 declare const report: <E>(cause: Cause.Cause<E>) => Effect.Effect<void>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ErrorReporter.ts#L261)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ErrorReporter.ts#L270)
 
 Since v4.0.0

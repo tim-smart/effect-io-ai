@@ -11,7 +11,7 @@ This API replaces the following from Effect 3.x:
 
 - `Stream.fromChunk`
 
-**Example**
+**Example** (Creating a stream from an array of values)
 
 ```ts
 import { Console, Effect, Stream } from "effect"
@@ -32,6 +32,6 @@ Effect.runPromise(program)
 declare const fromArray: <A>(array: ReadonlyArray<A>) => Stream<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L1177)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L1240)
 
 Since v4.0.0

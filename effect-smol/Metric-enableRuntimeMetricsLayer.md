@@ -11,7 +11,7 @@ runtime metrics collection to all Effects in the application context. This is
 the recommended approach for production applications that need comprehensive
 fiber monitoring.
 
-**Example**
+**Example** (Enabling runtime metrics with a layer)
 
 ```ts
 import { Console, Data, Effect, Layer, Metric } from "effect"
@@ -103,6 +103,6 @@ const programWithDirectMetrics = application.pipe(
 declare const enableRuntimeMetricsLayer: Layer.Layer<never, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Metric.ts#L3765)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Metric.ts#L3789)
 
 Since v4.0.0

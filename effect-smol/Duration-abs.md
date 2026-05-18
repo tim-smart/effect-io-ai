@@ -5,7 +5,7 @@ Module: `Duration`<br />
 
 Returns the absolute value of the duration.
 
-**Example**
+**Example** (Taking absolute duration values)
 
 ```ts
 import { Duration } from "effect"
@@ -20,6 +20,6 @@ Duration.abs(Duration.negativeInfinity) === Duration.infinity // true
 declare const abs: (self: Duration) => Duration
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Duration.ts#L455)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Duration.ts#L466)
 
 Since v4.0.0

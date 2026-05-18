@@ -9,7 +9,7 @@ This function allows you to access all services that are currently available
 in the effect's environment. This can be useful for debugging, introspection,
 or when you need to pass the entire context to another function.
 
-**Example**
+**Example** (Usage)
 
 ```ts
 import { Console, Effect, Option, Context } from "effect"
@@ -44,6 +44,6 @@ const provided = Effect.provideContext(program, context)
 declare const context: <R = never>() => Effect<Context.Context<R>, never, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L5513)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L5387)
 
 Since v2.0.0

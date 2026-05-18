@@ -3,15 +3,21 @@ Module: `String`<br />
 
 ## String.match
 
-A `pipe`-able version of the native `match` method.
+Matches a string against a pattern and returns `Option.some` with the match
+array, or `Option.none` when the pattern does not match.
 
-**Example**
+**Example** (Matching regular expressions)
 
 ```ts
-import { pipe, String } from "effect"
+import { Option, pipe, String } from "effect"
 
-pipe("hello", String.match(/l+/)) // Option.some(["ll"])
-pipe("hello", String.match(/x/)) // Option.none()
+const match = pipe("hello", String.match(/l+/))
+
+if (Option.isSome(match)) {
+  console.log(`${match.value[0]}@${match.value.index}`) // "ll@2"
+}
+
+console.log(Option.isNone(pipe("hello", String.match(/x/)))) // true
 ```
 
 **Signature**
@@ -20,6 +26,6 @@ pipe("hello", String.match(/x/)) // Option.none()
 declare const match: (regExp: RegExp | string) => (self: string) => Option.Option<RegExpMatchArray>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L646)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L683)
 
 Since v2.0.0

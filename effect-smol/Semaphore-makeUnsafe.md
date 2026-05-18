@@ -3,7 +3,11 @@ Module: `Semaphore`<br />
 
 ## Semaphore.makeUnsafe
 
-Unsafely creates a new Semaphore.
+Synchronously creates a `Semaphore` initialized with the specified total
+number of permits.
+
+Use this low-level constructor when an immediate semaphore value is required;
+otherwise prefer the effectful `make` constructor.
 
 **Previously Known As**
 
@@ -11,7 +15,7 @@ This API replaces the following from Effect 3.x:
 
 - `Effect.makeSemaphoreUnsafe`
 
-**Example**
+**Example** (Creating an unsafe semaphore)
 
 ```ts
 import { Effect, Semaphore } from "effect"
@@ -43,6 +47,6 @@ const program = Effect.all([
 declare const makeUnsafe: (permits: number) => Semaphore
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Semaphore.ts#L132)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Semaphore.ts#L164)
 
 Since v2.0.0

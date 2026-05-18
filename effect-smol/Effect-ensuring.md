@@ -13,7 +13,7 @@ Finalizers offer very powerful guarantees, but they are low-level, and
 should generally not be used for releasing resources. For higher-level
 logic built on `ensuring`, see the `acquireRelease` family of methods.
 
-**Example**
+**Example** (Usage)
 
 ```ts
 import { Console, Effect } from "effect"
@@ -45,6 +45,6 @@ Effect.runPromise(program).then(console.log)
 declare const ensuring: { <X, R1>(finalizer: Effect<X, never, R1>): <A, E, R>(self: Effect<A, E, R>) => Effect<A, E, R1 | R>; <A, E, R, X, R1>(self: Effect<A, E, R>, finalizer: Effect<X, never, R1>): Effect<A, E, R1 | R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L6390)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L6286)
 
 Since v2.0.0

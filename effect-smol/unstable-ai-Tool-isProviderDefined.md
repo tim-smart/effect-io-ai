@@ -5,7 +5,7 @@ Module: `Tool`<br />
 
 Type guard to check if a value is a provider-defined tool.
 
-**Example**
+**Example** (Checking for provider-defined tools)
 
 ```ts
 import { Schema } from "effect"
@@ -37,8 +37,8 @@ const ProviderDefinedTool = Tool.providerDefined({
   })
 })
 
-console.log(Tool.isUserDefined(UserDefinedTool)) // false
-console.log(Tool.isUserDefined(ProviderDefinedTool)) // true
+console.log(Tool.isProviderDefined(UserDefinedTool)) // false
+console.log(Tool.isProviderDefined(ProviderDefinedTool)) // true
 ```
 
 **Signature**
@@ -47,6 +47,6 @@ console.log(Tool.isUserDefined(ProviderDefinedTool)) // true
 declare const isProviderDefined: (u: unknown) => u is ProviderDefined<`${string}.${string}`, string, any>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tool.ts#L567)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tool.ts#L595)
 
-Since v1.0.0
+Since v4.0.0

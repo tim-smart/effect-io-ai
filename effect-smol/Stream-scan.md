@@ -5,7 +5,7 @@ Module: `Stream`<br />
 
 Accumulates state across the stream, emitting the initial state and each updated state.
 
-**Example**
+**Example** (Scanning stream state)
 
 ```ts
 import { Console, Effect, Stream } from "effect"
@@ -28,6 +28,6 @@ Effect.runPromise(program)
 declare const scan: { <S, A>(initial: S, f: (s: S, a: A) => S): <E, R>(self: Stream<A, E, R>) => Stream<S, E, R>; <A, E, R, S>(self: Stream<A, E, R>, initial: S, f: (s: S, a: A) => S): Stream<S, E, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L7265)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L7518)
 
 Since v2.0.0

@@ -3,15 +3,13 @@ Module: `SchemaTransformation`<br />
 
 ## SchemaTransformation.fromURLSearchParams
 
-Decodes a `URLSearchParams` instance into an `unknown` record and encodes
-an `unknown` record back to `URLSearchParams`.
+Decodes `URLSearchParams` into a nested record using bracket-path keys and
+encodes object-like values back into `URLSearchParams`.
 
-When to use this:
-- Parsing URL query parameters.
-
-Behavior:
-- Decode: extracts entries from URLSearchParams into a plain object.
-- Encode: constructs URLSearchParams from the record's entries.
+Use this for query strings where keys such as `filter[name]` or `items[0]`
+should become nested data. Decode produces string leaves. Encode flattens
+nested objects and arrays into bracket-path entries and returns empty
+`URLSearchParams` for non-object inputs.
 
 **Example** (Decoding URLSearchParams)
 
@@ -33,6 +31,6 @@ See also:
 declare const fromURLSearchParams: Transformation<unknown, URLSearchParams, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L1579)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L1566)
 
 Since v4.0.0

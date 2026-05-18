@@ -35,6 +35,6 @@ See also:
 declare const numberFromString: Transformation<number, string, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L846)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L843)
 
 Since v4.0.0

@@ -17,6 +17,6 @@ export interface Pool<in out A, in out E = never> extends Pipeable {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Pool.ts#L31)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Pool.ts#L59)
 
 Since v2.0.0

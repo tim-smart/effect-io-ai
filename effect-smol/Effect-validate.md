@@ -12,7 +12,7 @@ If all effects succeed, it returns all collected successes.
 Use `discard: true` to ignore successful values while still validating all
 elements.
 
-**Example**
+**Example** (Usage)
 
 ```ts
 import { Effect } from "effect"
@@ -41,6 +41,6 @@ Effect.runPromiseExit(program).then(console.log)
 declare const validate: { <A, B, E, R>(f: (a: A, i: number) => Effect<B, E, R>, options?: { readonly concurrency?: Concurrency | undefined; readonly discard?: false | undefined; } | undefined): (elements: Iterable<A>) => Effect<Array<B>, Arr.NonEmptyArray<E>, R>; <A, B, E, R>(f: (a: A, i: number) => Effect<B, E, R>, options: { readonly concurrency?: Concurrency | undefined; readonly discard: true; }): (elements: Iterable<A>) => Effect<void, Arr.NonEmptyArray<E>, R>; <A, B, E, R>(elements: Iterable<A>, f: (a: A, i: number) => Effect<B, E, R>, options?: { readonly concurrency?: Concurrency | undefined; readonly discard?: false | undefined; } | undefined): Effect<Array<B>, Arr.NonEmptyArray<E>, R>; <A, B, E, R>(elements: Iterable<A>, f: (a: A, i: number) => Effect<B, E, R>, options: { readonly concurrency?: Concurrency | undefined; readonly discard: true; }): Effect<void, Arr.NonEmptyArray<E>, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L766)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L619)
 
 Since v4.0.0

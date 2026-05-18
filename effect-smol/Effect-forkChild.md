@@ -23,7 +23,7 @@ terminates, the child fiber will be terminated as well, ensuring that no
 fibers leak. This behavior is called "auto supervision", and if this
 behavior is not desired, you may use the `forkDetach` or `forkIn` methods.
 
-**Example**
+**Example** (Usage)
 
 ```ts
 import { Effect, Fiber } from "effect"
@@ -52,6 +52,6 @@ const program = Effect.gen(function*() {
 declare const forkChild: <Arg extends Effect<any, any, any> | { readonly startImmediately?: boolean | undefined; readonly uninterruptible?: boolean | "inherit" | undefined; } | undefined = { readonly startImmediately?: boolean | undefined; readonly uninterruptible?: boolean | "inherit" | undefined; }>(effectOrOptions?: Arg, options?: { readonly startImmediately?: boolean | undefined; readonly uninterruptible?: boolean | "inherit" | undefined; } | undefined) => [Arg] extends [Effect<infer _A, infer _E, infer _R>] ? Effect<Fiber<_A, _E>, never, _R> : <A, E, R>(self: Effect<A, E, R>) => Effect<Fiber<A, E>, never, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L8030)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L7962)
 
 Since v4.0.0

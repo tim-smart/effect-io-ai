@@ -5,7 +5,7 @@ Module: `Param`<br />
 
 Provides a fallback param to use if this param fails to parse.
 
-**Example**
+**Example** (Falling back to another parameter)
 
 ```ts
 import * as Param from "effect/unstable/cli/Param"
@@ -23,6 +23,6 @@ const config = Param.file(Param.flagKind, "config").pipe(
 declare const orElse: { <B, Kind extends ParamKind>(orElse: (error: CliError.CliError) => Param<Kind, B>): <A>(self: Param<Kind, A>) => Param<Kind, A | B>; <Kind extends ParamKind, A, B>(self: Param<Kind, A>, orElse: (error: CliError.CliError) => Param<Kind, B>): Param<Kind, A | B>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Param.ts#L1628)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Param.ts#L1725)
 
 Since v4.0.0

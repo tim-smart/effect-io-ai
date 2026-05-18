@@ -3,7 +3,13 @@ Module: `PubSub`<br />
 
 ## PubSub.PubSub.Subscribers
 
-Internal type representing the mapping from subscriptions to their pollers.
+Tracks the pollers currently waiting on each backing subscription.
+
+**Notes**
+
+This type is part of the low-level `PubSub.Strategy` contract. Most
+application code should use `subscribe`, `take`, and the other `PubSub`
+operations instead of manipulating subscriber maps directly.
 
 **Signature**
 
@@ -14,6 +20,6 @@ type Subscribers<A> = Map<
   >
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PubSub.ts#L135)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PubSub.ts#L148)
 
 Since v4.0.0

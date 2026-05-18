@@ -5,7 +5,7 @@ Module: `Param`<br />
 
 Creates an integer parameter.
 
-**Example**
+**Example** (Creating integer parameters)
 
 ```ts
 import * as Param from "effect/unstable/cli/Param"
@@ -27,6 +27,6 @@ const countArg = Param.integer(Param.argumentKind, "count")
 declare const integer: <const Kind extends ParamKind>(kind: Kind, name: string) => Param<Kind, number>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Param.ts#L382)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Param.ts#L450)
 
 Since v4.0.0

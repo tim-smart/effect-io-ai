@@ -15,7 +15,11 @@ This is similar to `acquireRelease`, but uses the standard
 JavaScript disposal protocal instead of requiring an explicit release
 function.
 
-**Example**
+**See**
+
+- `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/using`
+
+**Example** (Usage)
 
 ```ts
 import sqlite from "node:sqlite";
@@ -35,16 +39,12 @@ const program = Effect.scoped(
 )
 ```
 
-**See**
-
-- `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/using`
-
 **Signature**
 
 ```ts
 declare const acquireDisposable: <A extends AsyncDisposable | Disposable, E, R>(acquire: Effect<A, E, R>) => Effect<A, E, R | Scope>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L6225)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L6118)
 
 Since v4.0.0

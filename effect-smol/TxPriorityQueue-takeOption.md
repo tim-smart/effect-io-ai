@@ -5,7 +5,7 @@ Module: `TxPriorityQueue`<br />
 
 Tries to take the smallest element. Returns `None` if the queue is empty.
 
-**Example**
+**Example** (Taking without retrying)
 
 ```ts
 import { Effect, Option, Order, TxPriorityQueue } from "effect"
@@ -23,6 +23,6 @@ const program = Effect.gen(function*() {
 declare const takeOption: <A>(self: TxPriorityQueue<A>) => Effect.Effect<Option<A>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxPriorityQueue.ts#L398)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxPriorityQueue.ts#L412)
 
 Since v4.0.0

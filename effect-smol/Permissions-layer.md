@@ -11,6 +11,6 @@ A layer that directly interfaces with the `navigator.permissions` api
 declare const layer: Layer.Layer<Permissions, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/Permissions.ts#L98)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/Permissions.ts#L125)
 
-Since v1.0.0
+Since v4.0.0

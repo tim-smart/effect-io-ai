@@ -3,14 +3,14 @@ Module: `AnthropicTool`<br />
 
 ## AnthropicTool.ComputerUseKeyAction
 
-Press a key or key combination (e.g. `"Return"`, `"ctrl+c"`, `"ctrl+s"`).
+Computer-use action payload for pressing a key or key combination.
 
 **Signature**
 
 ```ts
-declare const ComputerUseKeyAction: Schema.Struct<{ readonly action: Schema.Literal<"key">; readonly text: Schema.String; }>
+type ComputerUseKeyAction = typeof ComputerUseKeyAction.Type
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L379)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L412)
 
-Since v1.0.0
+Since v4.0.0

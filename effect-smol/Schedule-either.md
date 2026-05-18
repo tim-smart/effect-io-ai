@@ -7,7 +7,7 @@ Combines two `Schedule`s by recurring if either of the two schedules wants
 to recur, using the minimum of the two durations between recurrences and
 outputting a tuple of the outputs of both schedules.
 
-**Example**
+**Example** (Combining schedules with either semantics)
 
 ```ts
 import { Console, Data, Effect, Schedule } from "effect"
@@ -25,7 +25,7 @@ const eitherSchedule = Schedule.either(timeBasedSchedule, countBasedSchedule)
 const program = Effect.gen(function*() {
   const results = yield* Effect.repeat(
     Effect.gen(function*() {
-      yield* Console.log(`Task executed at ${new Date().toISOString()}`)
+      yield* Console.log("Task executed")
       return "task completed"
     }),
     eitherSchedule.pipe(
@@ -77,6 +77,6 @@ const retryProgram = Effect.gen(function*() {
 declare const either: { <Output2, Input2, Error2, Env2>(other: Schedule<Output2, Input2, Error2, Env2>): <Output, Input, Error, Env>(self: Schedule<Output, Input, Error, Env>) => Schedule<[Output, Output2], Input & Input2, Error | Error2, Env | Env2>; <Output, Input, Error, Env, Output2, Input2, Error2, Env2>(self: Schedule<Output, Input, Error, Env>, other: Schedule<Output2, Input2, Error2, Env2>): Schedule<[Output, Output2], Input & Input2, Error | Error2, Env | Env2>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L1678)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L1663)
 
 Since v2.0.0

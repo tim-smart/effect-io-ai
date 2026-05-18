@@ -5,7 +5,7 @@ Module: `TxReentrantLock`<br />
 
 Returns the number of write locks held (0 or the reentrant count).
 
-**Example**
+**Example** (Counting write locks)
 
 ```ts
 import { Effect, TxReentrantLock } from "effect"
@@ -23,6 +23,6 @@ const program = Effect.gen(function*() {
 declare const writeLocks: (self: TxReentrantLock) => Effect.Effect<number>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxReentrantLock.ts#L509)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxReentrantLock.ts#L522)
 
 Since v4.0.0

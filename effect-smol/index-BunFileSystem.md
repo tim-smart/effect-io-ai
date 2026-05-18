@@ -13,4 +13,4 @@ export * as BunFileSystem from "./BunFileSystem.ts"
 
 [Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/index.ts#L27)
 
-Since v1.0.0
+Since v4.0.0

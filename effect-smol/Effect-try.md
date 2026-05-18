@@ -22,10 +22,13 @@ There are two ways to handle errors with `try`:
 2. If you provide a `catch` function, the error is caught and the `catch`
    function maps it to an error of type `E`.
 
-**Example**
+**See**
 
-```ts
-Basic Usage with Default Error Handling
+- `sync` if the effectful computation is synchronous and does not
+throw errors.
+
+**Example** (Basic Usage with Default Error Handling)
+
 ```ts
 import { Effect } from "effect"
 
@@ -43,12 +46,9 @@ Effect.runPromise(parseJSON("{\"name\": \"Alice\"}")).then(console.log)
 Effect.runPromiseExit(parseJSON("invalid json")).then(console.log)
 // Output: Exit.failure with Error
 ```
-```
 
-**Example**
+**Example** (Custom Error Handling)
 
-```ts
-Custom Error Handling
 ```ts
 import { Data, Effect } from "effect"
 
@@ -63,12 +63,6 @@ const parseJSON = (input: string) =>
 Effect.runPromiseExit(parseJSON("invalid json")).then(console.log)
 // Output: Exit.failure with custom Error message
 ```
-```
-
-**See**
-
-- `sync` if the effectful computation is synchronous and does not
-throw errors.
 
 **Signature**
 
@@ -76,6 +70,6 @@ throw errors.
 declare const try: <A, E>(options: { try: LazyArg<A>; catch: (error: unknown) => E; }) => Effect<A, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L1754)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L1624)
 
 Since v2.0.0

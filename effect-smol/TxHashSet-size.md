@@ -5,7 +5,7 @@ Module: `TxHashSet`<br />
 
 Returns the number of values in the TxHashSet.
 
-**Example**
+**Example** (Getting the set size)
 
 ```ts
 import { Effect, TxHashSet } from "effect"
@@ -28,6 +28,6 @@ const program = Effect.gen(function*() {
 declare const size: <V>(self: TxHashSet<V>) => Effect.Effect<number>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashSet.ts#L436)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashSet.ts#L472)
 
 Since v2.0.0

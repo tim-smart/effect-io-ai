@@ -5,7 +5,7 @@ Module: `BigDecimal`<br />
 
 Provides a multiplication operation on `BigDecimal`s.
 
-**Example**
+**Example** (Multiplying decimals)
 
 ```ts
 import { fromStringUnsafe, multiply } from "effect/BigDecimal"
@@ -23,6 +23,6 @@ assert.deepStrictEqual(
 declare const multiply: { (that: BigDecimal): (self: BigDecimal) => BigDecimal; (self: BigDecimal, that: BigDecimal): BigDecimal; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigDecimal.ts#L324)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigDecimal.ts#L333)
 
 Since v2.0.0

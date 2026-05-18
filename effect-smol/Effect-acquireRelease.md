@@ -3,19 +3,19 @@ Module: `Effect`<br />
 
 ## Effect.acquireRelease
 
-This function constructs a scoped resource from an `acquire` and `release`
-`Effect` value.
+Constructs a scoped resource from an acquisition effect and a release
+finalizer.
 
-If the `acquire` `Effect` value successfully completes execution, then the
-`release` `Effect` value will be added to the finalizers associated with the
-scope of this `Effect` value, and it is guaranteed to be run when the scope
-is closed.
+**Details**
 
-The `acquire` and `release` `Effect` values will be run uninterruptibly.
-Additionally, the `release` `Effect` value may depend on the `Exit` value
-specified when the scope is closed.
+If acquisition succeeds, the release finalizer is added to the current scope
+and is guaranteed to run when that scope closes. The finalizer receives the
+`Exit` value used to close the scope.
 
-**Example**
+By default, acquisition is protected by an uninterruptible region. Pass
+`{ interruptible: true }` to allow the acquisition effect to be interrupted.
+
+**Example** (Usage)
 
 ```ts
 import { Console, Effect, Exit } from "effect"
@@ -59,6 +59,6 @@ const program = Effect.scoped(
 declare const acquireRelease: <A, E, R, R2>(acquire: Effect<A, E, R>, release: (a: A, exit: Exit.Exit<unknown, unknown>) => Effect<unknown, never, R2>, options?: { readonly interruptible?: boolean; }) => Effect<A, E, R | R2 | Scope>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L6182)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L6074)
 
 Since v2.0.0

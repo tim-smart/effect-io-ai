@@ -9,7 +9,7 @@ This predicate matches absolutely any value, including `undefined`, `null`,
 objects, primitives, functions, etc. It's useful as a catch-all pattern
 or when you need to match any remaining cases.
 
-**Example**
+**Example** (Matching any remaining value)
 
 ```ts
 import { Match } from "effect"
@@ -42,6 +42,6 @@ console.log(describeValue(null))
 declare const any: SafeRefinement<unknown, any>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L1297)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L1292)
 
 Since v4.0.0

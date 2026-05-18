@@ -5,50 +5,70 @@ Module: `Layer`<br />
 
 Creates a fresh version of this layer that will not be shared.
 
-**Example**
+**Example** (Creating non-shared layer instances)
 
 ```ts
 import { Effect, Layer, Ref, Context } from "effect"
 
 class Counter extends Context.Service<Counter, {
-  readonly count: number
-  readonly increment: () => Effect.Effect<number>
+  readonly id: number
 }>()("Counter") {}
 
-// Layer that creates a counter with shared state
-const counterLayer = Layer.effect(Counter)(Effect.gen(function*() {
-  const ref = yield* Ref.make(0)
-  return {
-    count: 0,
-    increment: Effect.fn("Counter.increment")(() =>
-      Ref.update(ref, (n) => n + 1).pipe(
-        Effect.flatMap(() => Ref.get(ref))
-      )
-    )
-  }
+class Left extends Context.Service<Left, {
+  readonly counterId: number
+}>()("Left") {}
+
+class Right extends Context.Service<Right, {
+  readonly counterId: number
+}>()("Right") {}
+
+const leftLayer = Layer.effect(Left)(Effect.gen(function*() {
+  const counter = yield* Counter
+  return { counterId: counter.id }
 }))
 
-// By default, layers are shared - same instance used everywhere
-const sharedProgram = Effect.gen(function*() {
-  const counter1 = yield* Counter
-  const counter2 = yield* Counter
+const rightLayer = Layer.effect(Right)(Effect.gen(function*() {
+  const counter = yield* Counter
+  return { counterId: counter.id }
+}))
 
-  // Both counter1 and counter2 refer to the same instance
-  console.log("Shared layer - same instance")
-}).pipe(
-  Effect.provide(counterLayer)
-)
+const showIds = Effect.gen(function*() {
+  const left = yield* Left
+  const right = yield* Right
+  console.log(`same Counter: ${left.counterId === right.counterId}`)
+})
 
-// Fresh layer creates a new instance each time
-const freshProgram = Effect.gen(function*() {
-  const counter1 = yield* Counter
-  const counter2 = yield* Counter
+const program = Effect.gen(function*() {
+  const nextId = yield* Ref.make(0)
 
-  // counter1 and counter2 are different instances
-  console.log("Fresh layer - different instances")
-}).pipe(
-  Effect.provide(Layer.fresh(counterLayer))
-)
+  const counterLayer = Layer.effect(Counter)(Effect.gen(function*() {
+    const id = yield* Ref.updateAndGet(nextId, (n) => n + 1)
+    console.log("constructed Counter")
+    return { id }
+  }))
+
+  const shared = Layer.merge(
+    Layer.provide(leftLayer, counterLayer),
+    Layer.provide(rightLayer, counterLayer)
+  )
+
+  yield* Effect.provide(showIds, shared)
+
+  const freshCounterLayer = Layer.fresh(counterLayer)
+  const fresh = Layer.merge(
+    Layer.provide(leftLayer, freshCounterLayer),
+    Layer.provide(rightLayer, freshCounterLayer)
+  )
+
+  yield* Effect.provide(showIds, fresh)
+})
+
+Effect.runPromise(program)
+// constructed Counter
+// same Counter: true
+// constructed Counter
+// constructed Counter
+// same Counter: false
 ```
 
 **Signature**
@@ -57,6 +77,6 @@ const freshProgram = Effect.gen(function*() {
 declare const fresh: <A, E, R>(self: Layer<A, E, R>) => Layer<A, E, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L1762)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L1867)
 
 Since v2.0.0

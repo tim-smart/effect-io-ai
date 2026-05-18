@@ -5,7 +5,7 @@ Module: `Graph`<br />
 
 Returns an iterator over the indices in the walker.
 
-**Example**
+**Example** (Iterating walker indices)
 
 ```ts
 import { Graph } from "effect"
@@ -27,6 +27,6 @@ console.log(indices) // [0, 1]
 declare const indices: <T, N>(walker: Walker<T, N>) => Iterable<T>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Graph.ts#L3581)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Graph.ts#L3750)
 
 Since v4.0.0

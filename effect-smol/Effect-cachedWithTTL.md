@@ -29,7 +29,14 @@ frequently and can be reused for a specified duration.
 By caching the result, you can improve efficiency and reduce unnecessary
 computations, especially in performance-critical applications.
 
-**Example**
+**See**
+
+- `cached` for a similar function that caches the result
+indefinitely.
+- `cachedInvalidateWithTTL` for a similar function that includes an
+additional effect for manually invalidating the cached value.
+
+**Example** (Usage)
 
 ```ts
 import { Console, Effect } from "effect"
@@ -61,19 +68,12 @@ Effect.runFork(program)
 // result 2
 ```
 
-**See**
-
-- `cached` for a similar function that caches the result
-indefinitely.
-- `cachedInvalidateWithTTL` for a similar function that includes an
-additional effect for manually invalidating the cached value.
-
 **Signature**
 
 ```ts
 declare const cachedWithTTL: { (timeToLive: Duration.Input): <A, E, R>(self: Effect<A, E, R>) => Effect<Effect<A, E, R>>; <A, E, R>(self: Effect<A, E, R>, timeToLive: Duration.Input): Effect<Effect<A, E, R>>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L6725)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L6631)
 
 Since v2.0.0

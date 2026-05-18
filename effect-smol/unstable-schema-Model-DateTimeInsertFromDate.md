@@ -3,17 +3,21 @@ Module: `Model`<br />
 
 ## Model.DateTimeInsertFromDate
 
-A field that represents a date-time value that is inserted as the current
-`DateTime.Utc`. It is serialized as a `Date` for the database.
-
-It is omitted from updates and is available for selection.
+Variant field type for a UTC date-time stored as a JavaScript `Date` in
+database variants, encoded as a string for JSON, and defaulted on insert.
 
 **Signature**
 
 ```ts
-declare const DateTimeInsertFromDate: DateTimeInsertFromDate
+export interface DateTimeInsertFromDate extends
+  VariantSchema.Field<{
+    readonly select: Schema.DateTimeUtcFromDate
+    readonly insert: VariantSchema.Overrideable<Schema.DateTimeUtcFromDate>
+    readonly json: Schema.DateTimeUtcFromString
+  }>
+{}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Model.ts#L435)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Model.ts#L490)
 
 Since v4.0.0

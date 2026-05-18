@@ -5,7 +5,7 @@ Module: `RegExp`<br />
 
 Escapes special characters in a regular expression pattern.
 
-**Example**
+**Example** (Escaping a pattern string)
 
 ```ts
 import { RegExp } from "effect"
@@ -20,6 +20,6 @@ assert.deepStrictEqual(RegExp.escape("a*b"), "a\\*b")
 declare const escape: (string: string) => string
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RegExp.ts#L56)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RegExp.ts#L62)
 
 Since v2.0.0

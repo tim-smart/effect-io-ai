@@ -8,7 +8,7 @@ Matches any defined (non-null and non-undefined) value.
 This predicate matches values that are neither `null` nor `undefined`,
 effectively filtering out nullish values while preserving all other types.
 
-**Example**
+**Example** (Matching defined values)
 
 ```ts
 import { Match } from "effect"
@@ -44,6 +44,6 @@ console.log(processValue(undefined))
 declare const defined: <A>(u: A) => u is A & {}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L1337)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L1333)
 
 Since v4.0.0

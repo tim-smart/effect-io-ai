@@ -23,6 +23,6 @@ type MyType = Option.Option.Value<typeof myOption>
 type Value<T> = [T] extends [Option<infer _A>] ? _A : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L258)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L233)
 
 Since v2.0.0

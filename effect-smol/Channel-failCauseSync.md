@@ -6,21 +6,22 @@ Module: `Channel`<br />
 Constructs a channel that fails immediately with the specified lazily
 evaluated `Cause`.
 
-**Example**
+**Example** (Failing with lazy causes)
 
 ```ts
 import { Cause, Channel } from "effect"
 
 // Create a channel that fails with a lazily computed cause
+let attempts = 0
 const failedChannel = Channel.failCauseSync(() => {
-  const errorType = Math.random() > 0.5 ? "A" : "B"
-  return Cause.fail(`Runtime error ${errorType}`)
+  attempts += 1
+  return Cause.fail(`Runtime error after attempt ${attempts}`)
 })
 
 // Create a channel with die cause computation
 const dieCauseChannel = Channel.failCauseSync(() => {
-  const timestamp = Date.now()
-  return Cause.die(`Error at ${timestamp}`)
+  const operation = "load-profile"
+  return Cause.die(`Unexpected defect during ${operation}`)
 })
 ```
 
@@ -30,6 +31,6 @@ const dieCauseChannel = Channel.failCauseSync(() => {
 declare const failCauseSync: <E>(evaluate: LazyArg<Cause.Cause<E>>) => Channel<never, E, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L985)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L1065)
 
 Since v2.0.0

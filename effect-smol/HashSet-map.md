@@ -5,7 +5,7 @@ Module: `HashSet`<br />
 
 Maps each value in the HashSet using the provided function.
 
-**Example**
+**Example** (Mapping HashSet values)
 
 ```ts
 import * as HashSet from "effect/HashSet"
@@ -28,6 +28,6 @@ console.log(Array.from(lengths).sort()) // [5, 6] (apple=5, banana=6, cherry=6)
 declare const map: { <V, U>(f: (value: V) => U): (self: HashSet<V>) => HashSet<U>; <V, U>(self: HashSet<V>, f: (value: V) => U): HashSet<U>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashSet.ts#L451)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashSet.ts#L509)
 
 Since v2.0.0

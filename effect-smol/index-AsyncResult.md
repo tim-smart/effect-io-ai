@@ -13,4 +13,4 @@ export * as AsyncResult from "effect/unstable/reactivity/AsyncResult"
 
 [Source](https://github.com/Effect-TS/effect/tree/main/packages/atom/vue/src/index.ts#L23)
 
-Since v1.0.0
+Since v4.0.0

@@ -38,6 +38,6 @@ console.log(Result.isFailure(_ok.getResult(Result.fail("err"))))
 declare const success: <A, E>() => Prism<Result.Result<A, E>, A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Optic.ts#L1678)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Optic.ts#L1677)
 
 Since v4.0.0

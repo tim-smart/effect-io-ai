@@ -5,7 +5,7 @@ Module: `Record`<br />
 
 Takes a record and returns an array of tuples containing its keys and values.
 
-**Example**
+**Example** (Converting a record to entries)
 
 ```ts
 import { Record } from "effect"
@@ -21,6 +21,6 @@ assert.deepStrictEqual(Record.toEntries(x), [["a", 1], ["b", 2], ["c", 3]])
 declare const toEntries: <K extends string, A>(self: ReadonlyRecord<K, A>) => Array<[K, A]>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Record.ts#L336)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Record.ts#L356)
 
 Since v2.0.0

@@ -3,10 +3,15 @@ Module: `FiberMap`<br />
 
 ## FiberMap.runtimePromise
 
-Capture a Runtime and use it to fork Effect's, adding the forked fibers to the FiberMap.
-Returns a Promise instead of a Fiber for convenience.
+Captures the current runtime and returns a function for running effects in
+an existing `FiberMap` as Promises.
 
-**Example**
+Each call stores the forked fiber under the supplied key, interrupting any
+previous fiber for that key unless `onlyIfMissing` is set. The Promise
+resolves with the effect's success value or rejects with the squashed failure
+cause.
+
+**Example** (Running effects as promises)
 
 ```ts
 import { Effect, FiberMap } from "effect"
@@ -33,6 +38,6 @@ const program = Effect.gen(function*() {
 declare const runtimePromise: <K, A, E>(self: FiberMap<K, A, E>) => <R = never>() => Effect.Effect<(<XE extends E, XA extends A>(key: K, effect: Effect.Effect<XA, XE, R>, options?: (Effect.RunOptions & { readonly onlyIfMissing?: boolean | undefined; readonly propagateInterruption?: boolean | undefined; }) | undefined) => Promise<XA>), never, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FiberMap.ts#L798)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FiberMap.ts#L894)
 
 Since v3.13.0

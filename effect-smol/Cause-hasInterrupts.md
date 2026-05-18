@@ -26,6 +26,6 @@ console.log(Cause.hasInterrupts(Cause.fail("error")))  // false
 declare const hasInterrupts: <E>(self: Cause<E>) => boolean
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L916)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L919)
 
 Since v2.0.0

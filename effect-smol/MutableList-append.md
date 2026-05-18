@@ -6,7 +6,7 @@ Module: `MutableList`<br />
 Appends an element to the end of the MutableList.
 This operation is optimized for high-frequency usage.
 
-**Example**
+**Example** (Appending elements)
 
 ```ts
 import * as MutableList from "effect/MutableList"
@@ -37,6 +37,6 @@ for (let i = 0; i < 10000; i++) {
 declare const append: <A>(self: MutableList<A>, message: A) => void
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableList.ts#L308)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableList.ts#L335)
 
 Since v4.0.0

@@ -9,7 +9,7 @@ returning an interruptor.
 The interruptor calls `fiber.interruptUnsafe` with the optional interruptor
 id.
 
-**Example**
+**Example** (Usage)
 
 ```ts
 import { Console, Effect, Exit } from "effect"
@@ -43,6 +43,6 @@ const interrupt = Effect.runCallback(program, {
 declare const runCallback: <A, E>(effect: Effect<A, E, never>, options?: (RunOptions & { readonly onExit: (exit: Exit.Exit<A, E>) => void; }) | undefined) => (interruptor?: number | undefined) => void
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L8437)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L8358)
 
 Since v4.0.0

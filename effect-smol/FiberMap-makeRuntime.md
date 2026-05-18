@@ -3,9 +3,14 @@ Module: `FiberMap`<br />
 
 ## FiberMap.makeRuntime
 
-Create an Effect run function that is backed by a FiberMap.
+Creates a scoped run function that forks effects into a new `FiberMap`.
 
-**Example**
+Each call stores the forked fiber under the supplied key and returns that
+fiber. If the key already has a fiber, the previous fiber is interrupted
+unless `onlyIfMissing` is set. All managed fibers are interrupted when the
+map's scope closes.
+
+**Example** (Creating a scoped runtime)
 
 ```ts
 import { Effect, Fiber, FiberMap } from "effect"
@@ -17,9 +22,9 @@ const program = Effect.gen(function*() {
   const fiber1 = run("task1", Effect.succeed("Hello"))
   const fiber2 = run("task2", Effect.succeed("World"))
 
-  // Await the results
-  const result1 = yield* Fiber.await(fiber1)
-  const result2 = yield* Fiber.await(fiber2)
+  // Join the fibers to get their successful values
+  const result1 = yield* Fiber.join(fiber1)
+  const result2 = yield* Fiber.join(fiber2)
 
   console.log(result1, result2) // "Hello", "World"
 })
@@ -31,6 +36,6 @@ const program = Effect.gen(function*() {
 declare const makeRuntime: <R, K, E = unknown, A = unknown>() => Effect.Effect<(<XE extends E, XA extends A>(key: K, effect: Effect.Effect<XA, XE, R>, options?: (Effect.RunOptions & { readonly onlyIfMissing?: boolean | undefined; }) | undefined) => Fiber.Fiber<XA, XE>), never, Scope.Scope | R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FiberMap.ts#L179)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FiberMap.ts#L227)
 
 Since v2.0.0

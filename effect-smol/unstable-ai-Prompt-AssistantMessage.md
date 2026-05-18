@@ -5,7 +5,7 @@ Module: `Prompt`<br />
 
 Message representing large language model assistant responses.
 
-**Example**
+**Example** (Creating assistant messages)
 
 ```ts
 import { Prompt } from "effect/unstable/ai"
@@ -16,7 +16,7 @@ const assistantMessage: Prompt.AssistantMessage = Prompt.makeMessage(
     content: [
       Prompt.makePart("text", {
         text:
-          "The user is asking about the weather. I should use the weather tool."
+          "I can check the current weather for San Francisco."
       }),
       Prompt.makePart("tool-call", {
         id: "call_123",
@@ -52,6 +52,6 @@ export interface AssistantMessage extends BaseMessage<"assistant", AssistantMess
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L1395)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L1411)
 
 Since v4.0.0

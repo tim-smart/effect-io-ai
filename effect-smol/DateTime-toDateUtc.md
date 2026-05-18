@@ -7,7 +7,7 @@ Get the UTC `Date` of a `DateTime`.
 
 This always returns the UTC representation, ignoring any time zone information.
 
-**Example**
+**Example** (Converting DateTime values to UTC Dates)
 
 ```ts
 import { DateTime } from "effect"
@@ -26,6 +26,6 @@ console.log(utcDate.toISOString()) // "2024-01-01T12:00:00.000Z"
 declare const toDateUtc: (self: DateTime) => Date
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L1219)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L1434)
 
 Since v3.6.0

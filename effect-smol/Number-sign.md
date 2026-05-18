@@ -5,7 +5,7 @@ Module: `Number`<br />
 
 Determines the sign of a given `number`.
 
-**Example**
+**Example** (Determining the sign)
 
 ```ts
 import { sign } from "effect/Number"
@@ -22,6 +22,6 @@ assert.deepStrictEqual(sign(5), 1)
 declare const sign: (n: number) => Ordering
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Number.ts#L427)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Number.ts#L446)
 
 Since v2.0.0

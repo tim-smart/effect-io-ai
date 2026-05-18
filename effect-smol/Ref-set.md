@@ -5,7 +5,7 @@ Module: `Ref`<br />
 
 Sets the value of the Ref to the specified value.
 
-**Example**
+**Example** (Setting a value)
 
 ```ts
 import { Effect, Ref } from "effect"
@@ -32,6 +32,6 @@ const program2 = Effect.gen(function*() {
 declare const set: (<A>(value: A) => (self: Ref<A>) => Effect.Effect<void>) & (<A>(self: Ref<A>, value: A) => Effect.Effect<void>)
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Ref.ts#L221)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Ref.ts#L228)
 
 Since v2.0.0

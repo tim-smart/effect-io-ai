@@ -8,7 +8,7 @@ Generate text using a language model with streaming output.
 Returns a stream of response parts that are emitted as soon as they are
 available from the model, enabling real-time text generation experiences.
 
-**Example**
+**Example** (Streaming text deltas)
 
 ```ts
 import { Console, Effect, Stream } from "effect"
@@ -30,6 +30,6 @@ const program = LanguageModel.streamText({
 declare const streamText: { <Options extends NoExcessProperties<GenerateTextOptionsWithoutToolkit, Options>>(options: Options & GenerateTextOptionsWithoutToolkit): Stream.Stream<Response.StreamPart<{}>, ExtractError<Options>, ExtractServices<Options> | LanguageModel>; <Tools extends Record<string, Tool.Any>, Options extends NoExcessProperties<GenerateTextOptions<Tools> & { readonly toolkit: ToolkitInput<Tools>; }, Options>>(options: Options & GenerateTextOptions<Tools> & { readonly toolkit: ToolkitInput<Tools>; }): Stream.Stream<Response.StreamPart<Tools>, ExtractError<Options>, ExtractServices<Options> | LanguageModel>; <Options extends { readonly toolkit: ToolkitOption<any>; } & NoExcessProperties<GenerateTextOptions<any>, Options>>(options: Options & GenerateTextOptions<ExtractTools<Options>> & { readonly toolkit: Options["toolkit"]; }): Stream.Stream<Response.StreamPart<ExtractTools<Options>>, ExtractError<Options>, ExtractServices<Options> | LanguageModel>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/LanguageModel.ts#L1738)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/LanguageModel.ts#L1746)
 
 Since v4.0.0

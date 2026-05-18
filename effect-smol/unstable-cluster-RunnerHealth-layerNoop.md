@@ -13,6 +13,6 @@ This is useful for testing.
 declare const layerNoop: Layer.Layer<RunnerHealth, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RunnerHealth.ts#L38)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RunnerHealth.ts#L58)
 
 Since v4.0.0

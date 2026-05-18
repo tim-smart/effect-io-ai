@@ -3,22 +3,22 @@ Module: `Effect`<br />
 
 ## Effect.when
 
-Conditionally executes an effect based on a boolean condition.
+Conditionally runs an effect based on the result of an effectful boolean
+condition.
 
 **Details**
 
-This function allows you to run an effect only if a given condition evaluates
-to `true`. If the condition is `true`, the effect is executed, and its result
-is wrapped in an `Option.some`. If the condition is `false`, the effect is
-skipped, and the result is `Option.none`.
+The condition effect is evaluated first. If it succeeds with `true`, the
+source effect is run and its success value is wrapped in `Option.some`. If it
+succeeds with `false`, the source effect is skipped and the result is
+`Option.none`. If the condition effect fails, that failure is preserved.
 
 **When to Use**
 
-This function is useful for scenarios where you need to dynamically decide
-whether to execute an effect based on runtime logic, while also representing
-the skipped case explicitly.
+Use this when an effectful check decides whether to run another effect while
+representing the skipped case explicitly.
 
-**Example**
+**Example** (Usage)
 
 ```ts
 import { Console, Effect } from "effect"
@@ -46,6 +46,6 @@ Effect.runPromise(program).then(console.log)
 declare const when: { <E2 = never, R2 = never>(condition: Effect<boolean, E2, R2>): <A, E, R>(self: Effect<A, E, R>) => Effect<Option<A>, E | E2, R | R2>; <A, E, R, E2 = never, R2 = never>(self: Effect<A, E, R>, condition: Effect<boolean, E2, R2>): Effect<Option<A>, E | E2, R | R2>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L5024)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L4894)
 
 Since v2.0.0

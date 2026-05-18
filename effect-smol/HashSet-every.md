@@ -5,7 +5,7 @@ Module: `HashSet`<br />
 
 Tests whether all values in the HashSet satisfy the predicate.
 
-**Example**
+**Example** (Testing whether every value matches)
 
 ```ts
 import * as HashSet from "effect/HashSet"
@@ -25,6 +25,6 @@ console.log(HashSet.every(empty, (n) => n > 0)) // true (vacuously true)
 declare const every: { <V>(predicate: Predicate<V>): (self: HashSet<V>) => boolean; <V>(self: HashSet<V>, predicate: Predicate<V>): boolean; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashSet.ts#L538)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashSet.ts#L599)
 
 Since v2.0.0

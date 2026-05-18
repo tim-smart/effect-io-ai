@@ -18,6 +18,6 @@ export interface AnyDynamic extends
 {}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tool.ts#L638)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tool.ts#L667)
 
-Since v1.0.0
+Since v4.0.0

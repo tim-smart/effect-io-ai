@@ -5,7 +5,7 @@ Module: `Function`<br />
 
 A thunk that returns always `void`.
 
-**Example**
+**Example** (Returning void from a thunk)
 
 ```ts
 import { constVoid } from "effect/Function"
@@ -20,6 +20,6 @@ assert.deepStrictEqual(constVoid(), undefined)
 declare const constVoid: LazyArg<void>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Function.ts#L358)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Function.ts#L404)
 
 Since v2.0.0

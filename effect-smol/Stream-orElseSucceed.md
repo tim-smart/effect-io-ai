@@ -5,7 +5,7 @@ Module: `Stream`<br />
 
 Returns a stream that emits a fallback value when this stream fails.
 
-**Example**
+**Example** (Recovering with a fallback value)
 
 ```ts
 import { Console, Effect, Stream } from "effect"
@@ -29,6 +29,6 @@ Effect.runPromise(program)
 declare const orElseSucceed: { <E, A2>(f: (error: E) => A2): <A, R>(self: Stream<A, E, R>) => Stream<A | A2, never, R>; <A, E, R, A2>(self: Stream<A, E, R>, f: (error: E) => A2): Stream<A | A2, never, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L5613)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L5813)
 
 Since v2.0.0

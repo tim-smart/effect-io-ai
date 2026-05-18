@@ -5,7 +5,7 @@ Module: `TxHashSet`<br />
 
 Checks if the TxHashSet is empty.
 
-**Example**
+**Example** (Checking whether a set is empty)
 
 ```ts
 import { Effect, TxHashSet } from "effect"
@@ -25,6 +25,6 @@ const program = Effect.gen(function*() {
 declare const isEmpty: <V>(self: TxHashSet<V>) => Effect.Effect<boolean>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashSet.ts#L461)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashSet.ts#L498)
 
 Since v2.0.0

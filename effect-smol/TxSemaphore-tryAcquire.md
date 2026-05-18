@@ -6,7 +6,7 @@ Module: `TxSemaphore`<br />
 Tries to acquire a single permit from the semaphore without blocking.
 Returns true if successful, false if no permits are available.
 
-**Example**
+**Example** (Trying to acquire a permit)
 
 ```ts
 import { Console, Effect, TxSemaphore } from "effect"
@@ -30,6 +30,6 @@ const program = Effect.gen(function*() {
 declare const tryAcquire: (self: TxSemaphore) => Effect.Effect<boolean>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxSemaphore.ts#L280)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxSemaphore.ts#L309)
 
 Since v4.0.0

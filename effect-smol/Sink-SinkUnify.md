@@ -3,23 +3,12 @@ Module: `Sink`<br />
 
 ## Sink.SinkUnify
 
-Interface for Sink unification, used internally by the Effect type system
-to provide proper type inference when using Sink with other Effect types.
+Type-level unification support for `Sink` values.
 
-**Example**
-
-```ts
-import type { Effect } from "effect"
-import type * as Sink from "effect/Sink"
-import type * as Unify from "effect/Unify"
-
-// SinkUnify helps unify Sink and Effect types
-declare const sink: Sink.Sink<number>
-declare const effect: Effect.Effect<string>
-
-// The unification system handles mixed operations
-type Combined = Sink.SinkUnify<{ [Unify.typeSymbol]?: any }>
-```
+This preserves the result, input, leftover, error, and service type
+parameters when Effect's `Unify` machinery normalizes generic values that
+include sinks. Users normally do not need to reference this interface
+directly.
 
 **Signature**
 
@@ -38,6 +27,6 @@ export interface SinkUnify<A extends { [Unify.typeSymbol]?: any }> extends Effec
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Sink.ts#L100)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Sink.ts#L128)
 
 Since v2.0.0

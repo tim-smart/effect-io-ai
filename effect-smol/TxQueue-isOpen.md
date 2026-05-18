@@ -5,7 +5,7 @@ Module: `TxQueue`<br />
 
 Checks if the queue is in the open state.
 
-**Example**
+**Example** (Checking open state)
 
 ```ts
 import { Effect, TxQueue } from "effect"

@@ -8,7 +8,7 @@ Checks if a value implements the Hash interface.
 This function determines whether a given value has the Hash symbol property,
 indicating that it can provide its own hash value implementation.
 
-**Example**
+**Example** (Checking for Hash support)
 
 ```ts
 import { Hash } from "effect"
@@ -31,6 +31,6 @@ console.log(Hash.isHash("string")) // false
 declare const isHash: (u: unknown) => u is Hash
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Hash.ts#L249)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Hash.ts#L255)
 
 Since v2.0.0

@@ -5,7 +5,7 @@ Module: `Chunk`<br />
 
 Transforms all elements of the chunk for as long as the specified function succeeds.
 
-**Example**
+**Example** (Filtering and mapping while values match)
 
 ```ts
 import { Chunk } from "effect"
@@ -33,6 +33,6 @@ console.log(Chunk.toArray(allNumbers)) // [1, 2, 3, 4]
 declare const filterMapWhile: { <A, B, X>(f: Filter.Filter<A, B, X>): (self: Chunk<A>) => Chunk<B>; <A, B, X>(self: Chunk<A>, f: Filter.Filter<A, B, X>): Chunk<B>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L1097)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L1112)
 
 Since v2.0.0

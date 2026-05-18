@@ -40,6 +40,6 @@ const formatter = SchemaIssue.makeFormatterStandardSchemaV1()
 declare const makeFormatterStandardSchemaV1: (options?: { readonly leafHook?: LeafHook | undefined; readonly checkHook?: CheckHook | undefined; }) => Formatter<StandardSchemaV1.FailureResult>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaIssue.ts#L1079)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaIssue.ts#L1072)
 
 Since v4.0.0

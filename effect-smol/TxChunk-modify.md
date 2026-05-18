@@ -8,7 +8,16 @@ Modifies the value of the `TxChunk` using the provided function.
 **Mutation behavior**: This function mutates the original TxChunk by updating
 its internal state. It does not return a new TxChunk reference.
 
-**Example**
+**Signature**
+
+```ts
+declare const modify: { <A, R>(f: (current: Chunk.Chunk<NoInfer<A>>) => [returnValue: R, newValue: Chunk.Chunk<A>]): (self: TxChunk<A>) => Effect.Effect<R>; <A, R>(self: TxChunk<A>, f: (current: Chunk.Chunk<A>) => [returnValue: R, newValue: Chunk.Chunk<A>]): Effect.Effect<R>; }
+```
+
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxChunk.ts#L241)
+
+Since v4.0.0
+**Example** (Modifying while returning a value)
 
 ```ts
 import { Chunk, Effect, TxChunk } from "effect"
@@ -28,13 +37,3 @@ const program = Effect.gen(function*() {
   console.log(Chunk.toReadonlyArray(newChunk)) // [1, 2, 3, 4]
 })
 ```
-
-**Signature**
-
-```ts
-declare const modify: { <A, R>(f: (current: Chunk.Chunk<NoInfer<A>>) => [returnValue: R, newValue: Chunk.Chunk<A>]): (self: TxChunk<A>) => Effect.Effect<R>; <A, R>(self: TxChunk<A>, f: (current: Chunk.Chunk<A>) => [returnValue: R, newValue: Chunk.Chunk<A>]): Effect.Effect<R>; }
-```
-
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxChunk.ts#L235)
-
-Since v4.0.0

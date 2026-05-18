@@ -5,7 +5,7 @@ Module: `Chunk`<br />
 
 Return the last index for which a predicate holds.
 
-**Example**
+**Example** (Finding the last matching index)
 
 ```ts
 import { Chunk } from "effect"
@@ -29,6 +29,6 @@ console.log(lastEven) // Option.some(3)
 declare const findLastIndex: { <A>(predicate: Predicate<A>): (self: Chunk<A>) => O.Option<number>; <A>(self: Chunk<A>, predicate: Predicate<A>): O.Option<number>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L2629)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L2699)
 
 Since v2.0.0

@@ -6,7 +6,7 @@ Module: `Param`<br />
 Constructs command-line params that represent a choice between several
 string inputs.
 
-**Example**
+**Example** (Creating string choices)
 
 ```ts
 import * as Param from "effect/unstable/cli/Param"
@@ -27,6 +27,6 @@ const logLevel = Param.choice(Param.flagKind, "log-level", [
 declare const choice: <const Kind extends ParamKind, const Choices extends ReadonlyArray<string>>(kind: Kind, name: string, choices: Choices) => Param<Kind, Choices[number]>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Param.ts#L515)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Param.ts#L587)
 
 Since v4.0.0

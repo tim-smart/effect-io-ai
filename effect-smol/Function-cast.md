@@ -3,7 +3,10 @@ Module: `Function`<br />
 
 ## Function.cast
 
-Casts the result to the specified type.
+Returns the input value with a different static type.
+
+This is a type-level cast only; it performs no runtime validation or
+conversion.
 
 **Signature**
 
@@ -11,6 +14,6 @@ Casts the result to the specified type.
 declare const cast: <A, B>(a: A) => B
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Function.ts#L256)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Function.ts#L296)
 
 Since v2.0.0

@@ -9,7 +9,7 @@ This function directly accesses the underlying reference without any
 synchronization. It should only be used when you're certain there are no
 concurrent modifications.
 
-**Example**
+**Example** (Reading the current value unsafely)
 
 ```ts
 import { Effect, SubscriptionRef } from "effect"
@@ -28,6 +28,6 @@ const program = Effect.gen(function*() {
 declare const getUnsafe: <A>(self: SubscriptionRef<A>) => A
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SubscriptionRef.ts#L134)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SubscriptionRef.ts#L169)
 
 Since v2.0.0

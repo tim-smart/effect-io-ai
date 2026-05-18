@@ -5,7 +5,7 @@ Module: `TxHashSet`<br />
 
 Creates a TxHashSet from an existing HashSet.
 
-**Example**
+**Example** (Creating a transactional hash set from a HashSet)
 
 ```ts
 import { Effect, TxHashSet } from "effect"
@@ -31,6 +31,6 @@ const program = Effect.gen(function*() {
 declare const fromHashSet: <V>(hashSet: HashSet.HashSet<V>) => Effect.Effect<TxHashSet<V>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashSet.ts#L260)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashSet.ts#L291)
 
 Since v2.0.0

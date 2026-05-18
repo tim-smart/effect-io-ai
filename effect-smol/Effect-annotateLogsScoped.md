@@ -9,7 +9,7 @@ This differs from `annotateLogs`, which only annotates a specific effect.
 `annotateLogsScoped` updates annotations for the entire current `Scope` and
 restores the previous annotations when the scope closes.
 
-**Example**
+**Example** (Usage)
 
 ```ts
 import { Effect } from "effect"
@@ -31,6 +31,6 @@ Effect.runPromise(program)
 declare const annotateLogsScoped: { (key: string, value: unknown): Effect<void, never, Scope>; (values: Record<string, unknown>): Effect<void, never, Scope>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L13308)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L13261)
 
 Since v4.0.0

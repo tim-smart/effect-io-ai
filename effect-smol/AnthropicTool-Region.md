@@ -3,14 +3,14 @@ Module: `AnthropicTool`<br />
 
 ## AnthropicTool.Region
 
-A `[x1, y1, x2, y2]` position defining top-left and bottom-right corners.
+An `[x1, y1, x2, y2]` screen region in pixels, from top-left to bottom-right.
 
 **Signature**
 
 ```ts
-declare const Region: Schema.Tuple<readonly [Schema.Number, Schema.Number, Schema.Number, Schema.Number]>
+type Region = typeof Region.Type
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L308)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L329)
 
-Since v1.0.0
+Since v4.0.0

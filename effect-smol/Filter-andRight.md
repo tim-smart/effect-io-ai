@@ -5,7 +5,7 @@ Module: `Filter`<br />
 
 Combines two filters but only returns the result of the right filter.
 
-**Example**
+**Example** (Keeping the right filter result)
 
 ```ts
 import { Filter, Result } from "effect"
@@ -24,6 +24,6 @@ const positiveDoubled = Filter.andRight(positiveNumbers, doubleNumbers)
 declare const andRight: { <InputR, PassR, FailR>(right: Filter<InputR, PassR, FailR>): <InputL, PassL, FailL>(left: Filter<InputL, PassL, FailL>) => Filter<InputL & InputR, PassR, FailL | FailR>; <InputL, PassL, FailL, InputR, PassR, FailR>(left: Filter<InputL, PassL, FailL>, right: Filter<InputR, PassR, FailR>): Filter<InputL & InputR, PassR, FailL | FailR>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Filter.ts#L518)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Filter.ts#L573)
 
 Since v4.0.0

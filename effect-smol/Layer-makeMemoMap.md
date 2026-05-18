@@ -5,7 +5,7 @@ Module: `Layer`<br />
 
 Constructs a `MemoMap` that can be used to build additional layers.
 
-**Example**
+**Example** (Creating a memo map in an effect)
 
 ```ts
 import { Effect, Layer, Context } from "effect"
@@ -34,6 +34,6 @@ const program = Effect.gen(function*() {
 declare const makeMemoMap: Effect<MemoMap, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L409)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L472)
 
 Since v2.0.0

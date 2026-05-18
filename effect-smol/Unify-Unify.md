@@ -10,7 +10,7 @@ the unification symbols (`unifySymbol`, `typeSymbol`, `ignoreSymbol`).
 It's primarily used internally by the Effect type system to handle
 complex type unions and provide better type inference.
 
-**Example**
+**Example** (Unifying protocol types)
 
 ```ts
 import type * as Unify from "effect/Unify"
@@ -60,6 +60,6 @@ type Unify<A> = Values<
   : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Unify.ts#L207)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Unify.ts#L155)
 
 Since v2.0.0

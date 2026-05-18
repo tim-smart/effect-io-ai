@@ -8,7 +8,7 @@ Service that holds the current transaction state, it includes
 - a journal that stores any non committed change to TxRef values
 - a retry flag to know if the transaction should be retried
 
-**Example**
+**Example** (Usage)
 
 ```ts
 import { Effect } from "effect"
@@ -27,6 +27,6 @@ const txEffect = Effect.gen(function*() {
 declare class Transaction
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L13771)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L13736)
 
 Since v4.0.0

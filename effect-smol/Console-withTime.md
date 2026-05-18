@@ -9,7 +9,7 @@ This function measures the execution time of an Effect, automatically
 starting a timer before the Effect runs and logging the elapsed time
 after the Effect completes.
 
-**Example**
+**Example** (Timing an effect)
 
 ```ts
 import { Console, Effect } from "effect"
@@ -31,6 +31,6 @@ const program = Effect.gen(function*() {
 declare const withTime: ((label?: string) => <A, E, R>(self: Effect.Effect<A, E, R>) => Effect.Effect<A, E, R>) & (<A, E, R>(self: Effect.Effect<A, E, R>, label?: string) => Effect.Effect<A, E, R>)
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Console.ts#L709)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Console.ts#L735)
 
 Since v2.0.0

@@ -6,7 +6,7 @@ Module: `Function`<br />
 A function that ensures that the type of an expression matches some type,
 without changing the resulting type of that expression.
 
-**Example**
+**Example** (Checking an expression against a type)
 
 ```ts
 import { satisfies } from "effect/Function"
@@ -27,6 +27,6 @@ assert.deepStrictEqual(satisfies<number>()(5), 5)
 declare const satisfies: <A>() => <B extends A>(b: B) => B
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Function.ts#L248)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Function.ts#L285)
 
 Since v2.0.0

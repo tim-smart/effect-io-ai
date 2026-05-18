@@ -5,7 +5,7 @@ Module: `HelpDoc`<br />
 
 Documentation for a single command-line flag/option
 
-**Example**
+**Example** (Documenting command flags)
 
 ```ts
 import { Option as O } from "effect"
@@ -59,6 +59,6 @@ export interface FlagDoc {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HelpDoc.ts#L143)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HelpDoc.ts#L166)
 
 Since v4.0.0

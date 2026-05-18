@@ -7,7 +7,7 @@ Get the different parts of a `DateTime` as an object.
 
 The parts will be time zone adjusted if the `DateTime` is zoned.
 
-**Example**
+**Example** (Reading DateTime parts)
 
 ```ts
 import { DateTime } from "effect"
@@ -34,6 +34,6 @@ console.log(parts)
 declare const toParts: (self: DateTime) => DateTime.PartsWithWeekday
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L1365)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L1586)
 
 Since v3.6.0

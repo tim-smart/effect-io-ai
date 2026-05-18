@@ -6,31 +6,10 @@ Module: `Schedule`<br />
 Returns a new `Schedule` that recurs as long as the specified `predicate`
 returns `true`, collecting all outputs of the schedule into an array.
 
-**Example**
+**Example** (Collecting outputs while a condition holds)
 
 ```ts
 import { Console, Effect, Schedule } from "effect"
-
-// Collect outputs while under time limit
-const collectForTime = Schedule.collectWhile(
-  Schedule.spaced("500 millis"),
-  (metadata) => Effect.succeed(metadata.elapsed < 3000) // Stop after 3 seconds
-)
-
-const timeBasedProgram = Effect.gen(function*() {
-  const results = yield* Effect.repeat(
-    Effect.gen(function*() {
-      const value = Math.floor(Math.random() * 100)
-      yield* Console.log(`Generated value: ${value}`)
-      return value
-    }),
-    collectForTime
-  )
-
-  yield* Console.log(
-    `Collected ${results.length} values: [${results.join(", ")}]`
-  )
-})
 
 // Collect outputs while condition is met
 const collectWhileSmall = Schedule.collectWhile(
@@ -42,16 +21,16 @@ const collectWhileSmall = Schedule.collectWhile(
 const conditionalProgram = Effect.gen(function*() {
   let attempt = 0
 
-  const delays = yield* Effect.repeat(
+  const attempts = yield* Effect.repeat(
     Effect.gen(function*() {
       attempt++
       yield* Console.log(`Retry attempt ${attempt}`)
-      return `${Date.now()}`
+      return `attempt-${attempt}`
     }),
     collectWhileSmall
   )
 
-  yield* Console.log(`Collected attempts: [${delays.join(", ")}]`)
+  yield* Console.log(`Collected attempts: [${attempts.join(", ")}]`)
 })
 
 // Collect with effectful predicate
@@ -68,19 +47,17 @@ const collectWithCheck = Schedule.collectWhile(
 )
 
 const effectfulProgram = Effect.gen(function*() {
-  const timestamps = yield* Effect.repeat(
-    Effect.gen(function*() {
-      const now = new Date().toISOString()
-      yield* Console.log(`Task at ${now}`)
-      return now
-    }),
+  const results = yield* Effect.repeat(
+    Effect.succeed("checked"),
     collectWithCheck
   )
 
-  yield* Console.log(`Final collection: ${timestamps.length} items`)
+  yield* Console.log(`Final collection: ${results.length} items`)
 })
 
 // Collect samples with condition
+const samples = [12, 18, 24, 30, 36]
+
 const collectSamples = Schedule.collectWhile(
   Schedule.spaced("200 millis"),
   (metadata) =>
@@ -88,18 +65,19 @@ const collectSamples = Schedule.collectWhile(
 )
 
 const samplingProgram = Effect.gen(function*() {
-  const samples = yield* Effect.repeat(
+  let index = 0
+  const collected = yield* Effect.repeat(
     Effect.gen(function*() {
-      const sample = Math.random() * 100
-      yield* Console.log(`Sample: ${sample.toFixed(1)}`)
+      const sample = samples[index++]
+      yield* Console.log(`Sample: ${sample}`)
       return sample
     }),
     collectSamples
   )
 
-  const average = samples.reduce((sum, s) => sum + s, 0) / samples.length
+  const average = collected.reduce((sum, s) => sum + s, 0) / collected.length
   yield* Console.log(
-    `Collected ${samples.length} samples, average: ${average.toFixed(1)}`
+    `Collected ${collected.length} samples, average: ${average.toFixed(1)}`
   )
 })
 ```
@@ -110,6 +88,6 @@ const samplingProgram = Effect.gen(function*() {
 declare const collectWhile: { <Input, Output, Error2 = never, Env2 = never>(predicate: (metadata: Metadata<Output, Input>) => boolean | Effect<boolean, Error2, Env2>): <Error, Env>(self: Schedule<Output, Input, Error, Env>) => Schedule<Array<Output>, Input, Error | Error2, Env | Env2>; <Output, Input, Error, Env, Error2 = never, Env2 = never>(self: Schedule<Output, Input, Error, Env>, predicate: (metadata: Metadata<Output, Input>) => boolean | Effect<boolean, Error2, Env2>): Schedule<Array<Output>, Input, Error | Error2, Env | Env2>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L1238)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L1217)
 
 Since v2.0.0

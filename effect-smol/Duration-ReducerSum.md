@@ -11,6 +11,6 @@ A `Reducer` for summing `Duration`s.
 declare const ReducerSum: Reducer.Reducer<Duration>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Duration.ts#L1608)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Duration.ts#L1680)
 
 Since v4.0.0

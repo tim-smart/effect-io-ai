@@ -7,7 +7,7 @@ Like `Stream.unfold`, but allows the emission of values to end one step further
 than the unfolding of the state. This is useful for embedding paginated APIs,
 hence the name.
 
-**Example**
+**Example** (Paginating stream state)
 
 ```ts
 import { Console, Effect, Stream } from "effect"
@@ -31,6 +31,6 @@ Effect.runPromise(Stream.runCollect(stream)).then(console.log)
 declare const paginate: <S, A, E = never, R = never>(s: S, f: (s: S) => Effect.Effect<readonly [ReadonlyArray<A>, Option.Option<S>], E, R>) => Stream<A, E, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L1618)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L1704)
 
 Since v2.0.0

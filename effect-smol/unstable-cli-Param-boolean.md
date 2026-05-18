@@ -5,7 +5,7 @@ Module: `Param`<br />
 
 Creates a boolean parameter.
 
-**Example**
+**Example** (Creating boolean parameters)
 
 ```ts
 import * as Param from "effect/unstable/cli/Param"
@@ -28,6 +28,6 @@ const enableArg = Param.boolean(Param.argumentKind, "enable")
 declare const boolean: <const Kind extends ParamKind>(kind: Kind, name: string) => Param<Kind, boolean>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Param.ts#L351)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Param.ts#L418)
 
 Since v4.0.0

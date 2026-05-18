@@ -5,7 +5,7 @@ Module: `Sink`<br />
 
 Checks if a value is a Sink.
 
-**Example**
+**Example** (Checking for a sink)
 
 ```ts
 import { Sink } from "effect"
@@ -23,6 +23,6 @@ console.log(Sink.isSink(notStream)) // false
 declare const isSink: (u: unknown) => u is Sink<unknown, never, unknown, unknown, unknown>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Sink.ts#L224)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Sink.ts#L227)
 
 Since v2.0.0

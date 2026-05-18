@@ -3,14 +3,14 @@ Module: `AnthropicTool`<br />
 
 ## AnthropicTool.MemoryStrReplaceCommand
 
-Replace text in a file.
+Memory tool command payload for replacing text in a file.
 
 **Signature**
 
 ```ts
-declare const MemoryStrReplaceCommand: Schema.Struct<{ readonly command: Schema.Literal<"str_replace">; readonly path: Schema.String; readonly old_str: Schema.String; readonly new_str: Schema.String; }>
+type MemoryStrReplaceCommand = typeof MemoryStrReplaceCommand.Type
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L930)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L1016)
 
-Since v1.0.0
+Since v4.0.0

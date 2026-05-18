@@ -5,7 +5,7 @@ Module: `Metric`<br />
 
 State interface for Histogram metrics containing bucket distributions and aggregate statistics.
 
-**Example**
+**Example** (Reading histogram state)
 
 ```ts
 import { Data, Effect, Metric } from "effect"
@@ -96,6 +96,6 @@ export interface HistogramState {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Metric.ts#L838)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Metric.ts#L794)
 
 Since v2.0.0

@@ -8,7 +8,7 @@ Creates a cache with a fixed time-to-live for all entries.
 This is the basic cache constructor where all entries share the same TTL.
 The lookup function will be called when a key is not found or has expired.
 
-**Example**
+**Example** (Creating a basic cache)
 
 ```ts
 import { Cache, Effect } from "effect"
@@ -26,13 +26,17 @@ const program = Effect.gen(function*() {
 })
 ```
 
-**Example**
+**Example** (Creating a cache with TTL)
 
 ```ts
 import { Cache, Effect } from "effect"
 
-// Cache with TTL and async lookup
-const fetchUserCache = Effect.gen(function*() {
+const program = Effect.gen(function*() {
+  const users = new Map([
+    [123, { name: "Ada", email: "ada@example.com" }],
+    [456, { name: "Grace", email: "grace@example.com" }]
+  ])
+
   const cache = yield* Cache.make<
     number,
     { name: string; email: string },
@@ -40,17 +44,20 @@ const fetchUserCache = Effect.gen(function*() {
   >({
     capacity: 500,
     lookup: (userId) =>
-      Effect.tryPromise({
-        try: () => fetch(`/api/users/${userId}`).then((r) => r.json()),
-        catch: () => "Failed to fetch user"
+      Effect.suspend(() => {
+        const user = users.get(userId)
+        return user === undefined
+          ? Effect.fail(`User ${userId} not found`)
+          : Effect.succeed(user)
       }),
     timeToLive: "15 minutes"
   })
 
-  // First call fetches from API, second call returns cached result
   const user1 = yield* Cache.get(cache, 123)
-  const user2 = yield* Cache.get(cache, 123) // From cache
-  return { user1, user2 }
+  console.log(user1) // { name: "Ada", email: "ada@example.com" }
+
+  const user2 = yield* Cache.get(cache, 123)
+  console.log(user2) // { name: "Ada", email: "ada@example.com" }
 })
 ```
 
@@ -60,6 +67,6 @@ const fetchUserCache = Effect.gen(function*() {
 declare const make: <Key, A, E = never, R = never, ServiceMode extends "lookup" | "construction" = never>(options: { readonly lookup: (key: Key) => Effect.Effect<A, E, R>; readonly capacity: number; readonly timeToLive?: Duration.Input | undefined; readonly requireServicesAt?: ServiceMode | undefined; }) => Effect.Effect<Cache<Key, A, E, "lookup" extends ServiceMode ? R : never>, never, "lookup" extends ServiceMode ? never : R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cache.ts#L229)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cache.ts#L283)
 
 Since v4.0.0

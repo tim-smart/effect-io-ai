@@ -5,7 +5,7 @@ Module: `HashSet`<br />
 
 Checks if the HashSet is empty.
 
-**Example**
+**Example** (Checking whether a HashSet is empty)
 
 ```ts
 import * as HashSet from "effect/HashSet"
@@ -23,6 +23,6 @@ console.log(HashSet.isEmpty(nonEmpty)) // false
 declare const isEmpty: <V>(self: HashSet<V>) => boolean
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashSet.ts#L321)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashSet.ts#L374)
 
 Since v2.0.0

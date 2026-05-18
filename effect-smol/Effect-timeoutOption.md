@@ -3,20 +3,24 @@ Module: `Effect`<br />
 
 ## Effect.timeoutOption
 
-Handles timeouts by returning an `Option` that represents either the result
-or a timeout.
+Runs an effect with a time limit and represents only the timeout case as
+`Option.none`.
 
-The `timeoutOption` function provides a way to gracefully handle
-timeouts by wrapping the outcome of an effect in an `Option` type. If the
-effect completes within the specified time, it returns a `Some` containing
-the result. If the effect times out, it returns a `None`, allowing you to
-treat the timeout as a regular result instead of throwing an error.
+**Details**
 
-This is useful when you want to handle timeouts without causing the program
-to fail, making it easier to manage situations where you expect tasks might
-take too long but want to continue executing other tasks.
+If the source effect succeeds before the timeout, the returned effect
+succeeds with `Option.some(value)`. If the timeout wins, the source effect is
+interrupted and the returned effect succeeds with `Option.none`. If the
+source effect fails before the timeout, that failure is preserved.
 
-**Example**
+**See**
+
+- `timeout` for a version that raises a `TimeoutException`.
+- `timeoutFail` for a version that raises a custom error.
+- `timeoutFailCause` for a version that raises a custom defect.
+- `timeoutTo` for a version that allows specifying both success and timeout handlers.
+
+**Example** (Usage)
 
 ```ts
 import { Effect } from "effect"
@@ -44,19 +48,12 @@ Effect.runPromise(timedOutEffect).then(console.log)
 // ]
 ```
 
-**See**
-
-- `timeout` for a version that raises a `TimeoutException`.
-- `timeoutFail` for a version that raises a custom error.
-- `timeoutFailCause` for a version that raises a custom defect.
-- `timeoutTo` for a version that allows specifying both success and timeout handlers.
-
 **Signature**
 
 ```ts
 declare const timeoutOption: { (duration: Duration.Input): <A, E, R>(self: Effect<A, E, R>) => Effect<Option<A>, E, R>; <A, E, R>(self: Effect<A, E, R>, duration: Duration.Input): Effect<Option<A>, E, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L4419)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L4280)
 
 Since v3.1.0

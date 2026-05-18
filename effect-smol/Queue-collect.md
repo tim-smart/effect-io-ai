@@ -5,7 +5,7 @@ Module: `Queue`<br />
 
 Take all messages from the queue, until the queue has errored or is done.
 
-**Example**
+**Example** (Collecting values until completion)
 
 ```ts
 import { Cause, Effect, Queue } from "effect"
@@ -30,6 +30,6 @@ const program = Effect.gen(function*() {
 declare const collect: <A, E>(self: Dequeue<A, E | Done>) => Effect<Array<A>, Pull.ExcludeDone<E>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Queue.ts#L1055)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Queue.ts#L1168)
 
 Since v4.0.0

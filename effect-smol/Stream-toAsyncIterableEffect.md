@@ -5,10 +5,10 @@ Module: `Stream`<br />
 
 Creates an effect that yields an `AsyncIterable` using the current services.
 
-**Example**
+**Example** (Creating an AsyncIterable effect)
 
 ```ts
-import { Console, Effect, Stream } from "effect"
+import { Effect, Stream } from "effect"
 
 const stream = Stream.make(1, 2, 3)
 
@@ -21,11 +21,11 @@ const program = Effect.gen(function*() {
     }
     return collected
   })
-  yield* Console.log(values)
+  yield* Effect.sync(() => console.log(values))
 })
 
 Effect.runPromise(program)
-//=> [ 1, 2, 3 ]
+// [ 1, 2, 3 ]
 ```
 
 **Signature**
@@ -34,6 +34,6 @@ Effect.runPromise(program)
 declare const toAsyncIterableEffect: <A, E, R>(self: Stream<A, E, R>) => Effect.Effect<AsyncIterable<A>, never, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L10619)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L10943)
 
 Since v2.0.0

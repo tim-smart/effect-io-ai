@@ -3,9 +3,11 @@ Module: `String`<br />
 
 ## String.localeCompare
 
-Compares two strings according to the current locale.
+Compares two strings using locale-aware collation, with optional locales and
+collator options, and returns the result as an `Ordering` (`-1`, `0`, or
+`1`).
 
-**Example**
+**Example** (Comparing strings by locale)
 
 ```ts
 import { pipe, String } from "effect"
@@ -22,6 +24,6 @@ assert.deepStrictEqual(pipe("a", String.localeCompare("a")), 0)
 declare const localeCompare: (that: string, locales?: Array<string>, options?: Intl.CollatorOptions) => (self: string) => Ordering.Ordering
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L627)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L658)
 
 Since v2.0.0

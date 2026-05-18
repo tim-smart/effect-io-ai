@@ -3,13 +3,16 @@ Module: `RcRef`<br />
 
 ## RcRef.get
 
-Get the value from an RcRef.
+Gets the value from an `RcRef`, acquiring it first if needed.
 
-This will acquire the resource if it hasn't been acquired yet, or increment
-the reference count if it has. The resource will be automatically released
-when the returned scope is closed.
+**Details**
 
-**Example**
+The reference count is incremented for the current `Scope`, and a release
+finalizer is added to that scope. When the current scope closes, the
+reference is released; the resource is closed when the final reference is
+released, subject to any configured idle time-to-live.
+
+**Example** (Sharing one acquired value)
 
 ```ts
 import { Effect, RcRef } from "effect"
@@ -40,6 +43,6 @@ const program = Effect.gen(function*() {
 declare const get: <A, E>(self: RcRef<A, E>) => Effect.Effect<A, E, Scope>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RcRef.ts#L160)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RcRef.ts#L189)
 
 Since v3.5.0

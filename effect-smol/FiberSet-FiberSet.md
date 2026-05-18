@@ -6,7 +6,7 @@ Module: `FiberSet`<br />
 A FiberSet is a collection of fibers that can be managed together.
 When the associated Scope is closed, all fibers in the set will be interrupted.
 
-**Example**
+**Example** (Managing fibers in a set)
 
 ```ts
 import { Effect, FiberSet } from "effect"
@@ -40,6 +40,6 @@ export interface FiberSet<out A = unknown, out E = unknown>
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FiberSet.ts#L44)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FiberSet.ts#L82)
 
 Since v2.0.0

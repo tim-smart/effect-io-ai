@@ -5,7 +5,7 @@ Module: `Channel`<br />
 
 Constructs a channel that fails immediately with the specified `Cause`.
 
-**Example**
+**Example** (Failing with causes)
 
 ```ts
 import { Cause, Channel } from "effect"
@@ -29,6 +29,6 @@ const simpleFail = Channel.failCause(failCause)
 declare const failCause: <E>(cause: Cause.Cause<E>) => Channel<never, E, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L959)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L1037)
 
 Since v2.0.0

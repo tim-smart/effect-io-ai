@@ -5,7 +5,7 @@ Module: `BigInt`<br />
 
 Determines the absolute value of a given `bigint`.
 
-**Example**
+**Example** (Calculating absolute values)
 
 ```ts
 import { abs } from "effect/BigInt"
@@ -22,6 +22,6 @@ assert.deepStrictEqual(abs(5n), 5n)
 declare const abs: (n: bigint) => bigint
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigInt.ts#L456)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigInt.ts#L473)
 
 Since v2.0.0

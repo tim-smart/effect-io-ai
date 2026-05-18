@@ -5,7 +5,7 @@ Module: `HashMap`<br />
 
 Applies the specified function to the entries of the `HashMap`.
 
-**Example**
+**Example** (Iterating with side effects)
 
 ```ts
 import * as HashMap from "effect/HashMap"
@@ -26,6 +26,6 @@ console.log(collected.sort()) // [["a", 1], ["b", 2]]
 declare const forEach: { <V, K>(f: (value: V, key: K) => void): (self: HashMap<K, V>) => void; <V, K>(self: HashMap<K, V>, f: (value: V, key: K) => void): void; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashMap.ts#L1000)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashMap.ts#L1117)
 
 Since v2.0.0

@@ -3,17 +3,12 @@ Module: `Schema`<br />
 
 ## Schema.isStringSymbol
 
-Validates that a string represents a valid Symbol (can be parsed as a Symbol).
+Validates that a string has the `Symbol(description)` format used by Effect's
+symbol string encoding.
 
-**JSON Schema**
-
-This check corresponds to a `pattern` constraint in JSON Schema that matches
-strings representing Symbol values.
-
-**Arbitrary**
-
-When generating test data with fast-check, this applies a `patterns`
-constraint to ensure generated strings match the Symbol string pattern.
+**Details**
+The check uses the pattern `^Symbol\((.*)\)$`. It is not a general test for
+whether a string can be passed to JavaScript's `Symbol()` function.
 
 **Signature**
 
@@ -21,6 +16,6 @@ constraint to ensure generated strings match the Symbol string pattern.
 declare const isStringSymbol: (annotations?: Annotations.Filter) => AST.Filter<string>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L5179)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L5485)
 
 Since v4.0.0

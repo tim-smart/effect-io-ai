@@ -14,6 +14,6 @@ export interface EntityRegistered {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ShardingRegistrationEvent.ts#L24)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ShardingRegistrationEvent.ts#L38)
 
 Since v4.0.0

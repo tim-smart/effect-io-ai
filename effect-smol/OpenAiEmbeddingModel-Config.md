@@ -11,6 +11,6 @@ Service definition for OpenAI embedding model configuration.
 declare class Config
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/OpenAiEmbeddingModel.ts#L31)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/OpenAiEmbeddingModel.ts#L33)
 
-Since v1.0.0
+Since v4.0.0

@@ -7,7 +7,7 @@ Interrupts all fibers in the provided iterable using the specified fiber ID as t
 interrupting fiber. This allows you to control which fiber is considered the source
 of the interruption, which can be useful for debugging and tracing.
 
-**Example**
+**Example** (Interrupting multiple fibers as another fiber)
 
 ```ts
 import { Console, Effect, Fiber } from "effect"
@@ -47,6 +47,6 @@ const program = Effect.gen(function*() {
 declare const interruptAllAs: { (fiberId: number): <A extends Iterable<Fiber<any, any>>>(fibers: A) => Effect<void>; <A extends Iterable<Fiber<any, any>>>(fibers: A, fiberId: number): Effect<void>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Fiber.ts#L422)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Fiber.ts#L439)
 
 Since v2.0.0

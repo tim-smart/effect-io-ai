@@ -6,7 +6,7 @@ Module: `Effect`<br />
 Converts a nullable value to an `Effect`, failing with a `NoSuchElementError`
 when the value is `null` or `undefined`.
 
-**Example**
+**Example** (Usage)
 
 ```ts
 import { Console, Effect } from "effect"
@@ -30,6 +30,6 @@ Effect.runPromise(program("hello"))
 declare const fromNullishOr: <A>(value: A) => Effect<NonNullable<A>, Cause.NoSuchElementError>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L1897)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L1776)
 
 Since v4.0.0

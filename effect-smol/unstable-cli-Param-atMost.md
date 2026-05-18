@@ -8,7 +8,7 @@ Wraps an option to allow it to be specified at most `max` times.
 This combinator transforms an option to accept between 0 and `max`
 occurrences on the command line, returning an array of all provided values.
 
-**Example**
+**Example** (Limiting repeated values)
 
 ```ts
 import * as Param from "effect/unstable/cli/Param"
@@ -30,6 +30,6 @@ const suppressions = Param.string(Param.flagKind, "suppress").pipe(
 declare const atMost: { <A>(max: number): <Kind extends ParamKind>(self: Param<Kind, A>) => Param<Kind, ReadonlyArray<A>>; <Kind extends ParamKind, A>(self: Param<Kind, A>, max: number): Param<Kind, ReadonlyArray<A>>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Param.ts#L1395)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Param.ts#L1486)
 
 Since v4.0.0

@@ -1,9 +1,9 @@
-Package: `@effect/ai-openai`<br />
+Package: `@effect/ai-openai-compat`<br />
 Module: `OpenAiClient`<br />
 
 ## OpenAiClient.layer
 
-Creates a layer for the OpenAI client with the given options.
+Creates a layer that provides an OpenAI-compatible client from explicit options.
 
 **Signature**
 
@@ -11,6 +11,6 @@ Creates a layer for the OpenAI client with the given options.
 declare const layer: (options: Options) => Layer.Layer<OpenAiClient, never, HttpClient.HttpClient>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L304)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/OpenAiClient.ts#L258)
 
-Since v1.0.0
+Since v4.0.0

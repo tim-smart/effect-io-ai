@@ -5,11 +5,7 @@ Module: `TxSemaphore`<br />
 
 Creates a new TxSemaphore with the specified number of permits.
 
-**Throws**
-
-Defect if permits is negative
-
-**Example**
+**Example** (Creating a semaphore)
 
 ```ts
 import { Console, Effect, TxSemaphore } from "effect"
@@ -30,12 +26,16 @@ const program = Effect.gen(function*() {
 })
 ```
 
+**Throws**
+
+Defect if permits is negative
+
 **Signature**
 
 ```ts
 declare const make: (permits: number) => Effect.Effect<TxSemaphore>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxSemaphore.ts#L104)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxSemaphore.ts#L124)
 
 Since v4.0.0

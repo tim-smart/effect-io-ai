@@ -5,7 +5,7 @@ Module: `Graph`<br />
 
 Gets the edge data associated with an edge index, if it exists.
 
-**Example**
+**Example** (Getting edge data)
 
 ```ts
 import { Graph } from "effect"
@@ -21,8 +21,8 @@ const edgeData = Graph.getEdge(graph, edgeIndex)
 
 if (edgeData._tag === "Some") {
   console.log(edgeData.value.data) // 42
-  console.log(edgeData.value.source) // NodeIndex(0)
-  console.log(edgeData.value.target) // NodeIndex(1)
+  console.log(edgeData.value.source) // 0
+  console.log(edgeData.value.target) // 1
 }
 ```
 
@@ -32,6 +32,6 @@ if (edgeData._tag === "Some") {
 declare const getEdge: { <E>(edgeIndex: EdgeIndex): <N, T extends Kind = "directed">(graph: Graph<N, E, T> | MutableGraph<N, E, T>) => Option.Option<Edge<E>>; <N, E, T extends Kind = "directed">(graph: Graph<N, E, T> | MutableGraph<N, E, T>, edgeIndex: EdgeIndex): Option.Option<Edge<E>>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Graph.ts#L1416)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Graph.ts#L1513)
 
 Since v4.0.0

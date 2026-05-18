@@ -9,7 +9,7 @@ This utility type takes the collected inclusion/exclusion filters and
 applies them to the input type to compute the final narrowed result.
 It's the culmination of the type-level filtering process.
 
-**Example**
+**Example** (Applying accumulated filters)
 
 ```ts
 import type { Match } from "effect"
@@ -36,6 +36,6 @@ type ApplyFilters<I, A> = A extends Only<infer X> ? X
     : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L2247)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L2216)
 
 Since v4.0.0

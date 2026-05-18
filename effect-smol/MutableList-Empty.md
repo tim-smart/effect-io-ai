@@ -6,7 +6,7 @@ Module: `MutableList`<br />
 The type of the Empty symbol, used for type checking when taking elements from a MutableList.
 This provides compile-time safety when checking for empty results.
 
-**Example**
+**Example** (Handling empty results type-safely)
 
 ```ts
 import * as MutableList from "effect/MutableList"
@@ -53,6 +53,6 @@ if (isEmpty(value)) {
 type Empty = typeof Empty
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableList.ts#L237)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableList.ts#L262)
 
 Since v4.0.0

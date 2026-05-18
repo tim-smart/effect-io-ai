@@ -9,7 +9,7 @@ operations.
 This interface defines the core operations for converting text to tokens and
 managing content length within token limits for AI model compatibility.
 
-**Example**
+**Example** (Implementing a custom tokenizer)
 
 ```ts
 import { Effect } from "effect"
@@ -53,6 +53,6 @@ export interface Service {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tokenizer.ts#L93)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tokenizer.ts#L97)
 
 Since v4.0.0

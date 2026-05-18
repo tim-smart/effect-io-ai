@@ -15,7 +15,7 @@ The resulting effect cannot fail because the failure is encapsulated within
 the `Exit.Failure` type. The error type is set to `never`, indicating that
 the effect is structured to never fail directly.
 
-**Example**
+**Example** (Usage)
 
 ```ts
 import { Effect } from "effect"
@@ -44,6 +44,6 @@ Effect.runPromise(program2).then(console.log)
 declare const exit: <A, E, R>(self: Effect<A, E, R>) => Effect<Exit.Exit<A, E>, never, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L2297)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L2177)
 
 Since v2.0.0

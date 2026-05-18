@@ -3,7 +3,7 @@ Module: `Telemetry`<br />
 
 ## Telemetry.CurrentSpanTransformer
 
-Service key for providing a span transformer to large langauge model
+Service tag for providing a `SpanTransformer` to large language model
 operations.
 
 **Signature**
@@ -12,6 +12,6 @@ operations.
 declare class CurrentSpanTransformer
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Telemetry.ts#L494)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Telemetry.ts#L502)
 
 Since v4.0.0

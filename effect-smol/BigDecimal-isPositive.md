@@ -5,7 +5,7 @@ Module: `BigDecimal`<br />
 
 Checks if a given `BigDecimal` is positive.
 
-**Example**
+**Example** (Checking positive decimals)
 
 ```ts
 import { fromStringUnsafe, isPositive } from "effect/BigDecimal"
@@ -22,6 +22,6 @@ assert.deepStrictEqual(isPositive(fromStringUnsafe("1")), true)
 declare const isPositive: (n: BigDecimal) => boolean
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigDecimal.ts#L1380)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigDecimal.ts#L1427)
 
 Since v2.0.0

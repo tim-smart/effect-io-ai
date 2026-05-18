@@ -11,6 +11,6 @@ Asserts that `actual` includes `expected`.
 declare const assertInclude: (actual: string | undefined, expected: string, ..._: Array<never>) => void
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/vitest/src/utils.ts#L115)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/vitest/src/utils.ts#L129)
 
 Since v4.0.0

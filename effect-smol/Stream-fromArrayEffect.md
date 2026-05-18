@@ -5,7 +5,7 @@ Module: `Stream`<br />
 
 Creates a stream from an effect that produces an array of values.
 
-**Example**
+**Example** (Creating a stream from an effect that produces an array of values)
 
 ```ts
 import { Console, Effect, Stream } from "effect"
@@ -26,6 +26,6 @@ Effect.runPromise(program)
 declare const fromArrayEffect: <A, E, R>(effect: Effect.Effect<ReadonlyArray<A>, E, R>) => Stream<A, Pull.ExcludeDone<E>, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L1200)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L1264)
 
 Since v4.0.0

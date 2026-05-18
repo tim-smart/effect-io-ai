@@ -3,7 +3,12 @@ Module: `Graph`<br />
 
 ## Graph.BellmanFordConfig
 
-Configuration for Bellman-Ford algorithm.
+Configuration for finding a shortest path with the Bellman-Ford algorithm.
+
+**Details**
+
+Specifies the source and target node indices, plus a cost function that maps
+each edge's data to a numeric weight.
 
 **Signature**
 
@@ -15,6 +20,6 @@ export interface BellmanFordConfig<E> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Graph.ts#L3250)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Graph.ts#L3409)
 
 Since v4.0.0

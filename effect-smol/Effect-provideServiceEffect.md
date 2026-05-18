@@ -3,16 +3,16 @@ Module: `Effect`<br />
 
 ## Effect.provideServiceEffect
 
-Provides the effect with the single service it requires. If the effect
-requires more than one service use `provide` instead.
+Provides one service to an effect using an effectful acquisition.
 
-This function is similar to `provideService`, but instead of providing a
-static service implementation, it allows you to provide an effect that
-will produce the service. This is useful when the service needs to be
-acquired through an effectful computation (e.g., reading from a database,
-making an HTTP request, or allocating resources).
+**Details**
 
-**Example**
+`provideServiceEffect` runs the acquisition effect to produce the service
+implementation, removes that service from the wrapped effect's requirements,
+and leaves any other requirements to be provided later. Acquisition failures
+are included in the returned effect's error channel.
+
+**Example** (Usage)
 
 ```ts
 import { Console, Effect, Context } from "effect"
@@ -58,6 +58,6 @@ Effect.runPromise(withDatabase).then(console.log)
 declare const provideServiceEffect: { <I, S, E2, R2>(service: Context.Key<I, S>, acquire: Effect<S, E2, R2>): <A, E, R>(self: Effect<A, E, R>) => Effect<A, E | E2, Exclude<R, I> | R2>; <A, E, R, I, S, E2, R2>(self: Effect<A, E, R>, service: Context.Key<I, S>, acquire: Effect<S, E2, R2>): Effect<A, E | E2, Exclude<R, I> | R2>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L5958)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L5845)
 
 Since v2.0.0

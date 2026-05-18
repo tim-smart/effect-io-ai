@@ -5,7 +5,7 @@ Module: `BigInt`<br />
 
 Returns the minimum between two `bigint`s.
 
-**Example**
+**Example** (Finding the minimum bigint)
 
 ```ts
 import { min } from "effect/BigInt"
@@ -20,6 +20,6 @@ assert.deepStrictEqual(min(2n, 3n), 2n)
 declare const min: { (that: bigint): (self: bigint) => bigint; (self: bigint, that: bigint): bigint; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigInt.ts#L398)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigInt.ts#L412)
 
 Since v2.0.0

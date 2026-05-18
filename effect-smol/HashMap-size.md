@@ -5,7 +5,7 @@ Module: `HashMap`<br />
 
 Returns the number of entries within the `HashMap`.
 
-**Example**
+**Example** (Getting the size)
 
 ```ts
 import * as HashMap from "effect/HashMap"
@@ -23,6 +23,6 @@ console.log(HashMap.size(map)) // 3
 declare const size: <K, V>(self: HashMap<K, V>) => number
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashMap.ts#L644)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashMap.ts#L741)
 
 Since v2.0.0

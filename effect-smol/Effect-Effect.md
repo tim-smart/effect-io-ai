@@ -16,27 +16,6 @@ scalability.
 To run an `Effect` value, you need a `Runtime`, which is a type that is
 capable of executing `Effect` values.
 
-**Example**
-
-```ts
-import { Data, Effect } from "effect"
-
-class TaskError extends Data.TaggedError("TaskError")<{ readonly message: string }> {}
-
-// A simple effect that succeeds with a value
-const success = Effect.succeed(42)
-
-// An effect that will always fail
-const risky = Effect.fail(new TaskError({ message: "Something went wrong" }))
-
-// Effects can be composed using generator functions
-const program = Effect.gen(function*() {
-  const value = yield* success
-  console.log(value) // 42
-  return value * 2
-})
-```
-
 **Signature**
 
 ```ts
@@ -49,6 +28,6 @@ export interface Effect<out A, out E = never, out R = never> extends Pipeable, I
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L183)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L169)
 
 Since v2.0.0

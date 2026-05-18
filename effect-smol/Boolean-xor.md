@@ -5,7 +5,7 @@ Module: `Boolean`<br />
 
 Combines two booleans using XOR: `(!self && that) || (self && !that)`.
 
-**Example**
+**Example** (Combining booleans with XOR)
 
 ```ts
 import { xor } from "effect/Boolean"
@@ -23,6 +23,6 @@ assert.deepStrictEqual(xor(false, false), false)
 declare const xor: { (that: boolean): (self: boolean) => boolean; (self: boolean, that: boolean): boolean; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Boolean.ts#L244)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Boolean.ts#L255)
 
 Since v2.0.0

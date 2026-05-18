@@ -13,4 +13,4 @@ declare const layer: (options: Options) => Layer.Layer<OpenAiClientGenerated, ne
 
 [Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClientGenerated.ts#L143)
 
-Since v1.0.0
+Since v4.0.0

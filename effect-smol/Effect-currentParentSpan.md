@@ -3,9 +3,15 @@ Module: `Effect`<br />
 
 ## Effect.currentParentSpan
 
-Returns the current parent span from the context.
+Returns the current parent span from the effect context.
 
-**Example**
+**Details**
+
+The effect succeeds with either a local span or external span when one is
+present, and fails with `NoSuchElementError` when no parent span is
+available.
+
+**Example** (Usage)
 
 ```ts
 import { Effect } from "effect"
@@ -30,6 +36,6 @@ const traced = Effect.withSpan(program, "parent-span")
 declare const currentParentSpan: Effect<AnySpan, Cause.NoSuchElementError, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L7631)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L7539)
 
 Since v2.0.0

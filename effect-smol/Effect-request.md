@@ -5,7 +5,17 @@ Module: `Effect`<br />
 
 Executes a request using the provided resolver.
 
-**Example**
+**Signature**
+
+```ts
+declare const request: { <A extends Request.Any, EX = never, RX = never>(resolver: RequestResolver<A> | Effect<RequestResolver<A>, EX, RX>): (self: A) => Effect<Request.Success<A>, Request.Error<A> | EX, Request.Services<A> | RX>; <A extends Request.Any, EX = never, RX = never>(self: A, resolver: RequestResolver<A> | Effect<RequestResolver<A>, EX, RX>): Effect<Request.Success<A>, Request.Error<A> | EX, Request.Services<A> | RX>; }
+```
+
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L7883)
+
+Since v2.0.0
+
+**Example** (Usage)
 
 ```ts
 import { Console, Effect, Exit, Request, RequestResolver } from "effect"
@@ -29,13 +39,3 @@ const program = Effect.gen(function*() {
   yield* Console.log(name)
 })
 ```
-
-**Signature**
-
-```ts
-declare const request: { <A extends Request.Any, EX = never, RX = never>(resolver: RequestResolver<A> | Effect<RequestResolver<A>, EX, RX>): (self: A) => Effect<Request.Success<A>, Request.Error<A> | EX, Request.Services<A> | RX>; <A extends Request.Any, EX = never, RX = never>(self: A, resolver: RequestResolver<A> | Effect<RequestResolver<A>, EX, RX>): Effect<Request.Success<A>, Request.Error<A> | EX, Request.Services<A> | RX>; }
-```
-
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L7952)
-
-Since v2.0.0

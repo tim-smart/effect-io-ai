@@ -8,7 +8,7 @@ lambda calculus and the SKI combinator calculus.
 
 This function is useful for discarding the first argument passed to it and returning the second argument.
 
-**Example**
+**Example** (Discarding the first argument)
 
 ```ts
 import { SK } from "effect/Function"
@@ -23,6 +23,6 @@ assert.deepStrictEqual(SK(0, "hello"), "hello")
 declare const SK: <A, B>(_: A, b: B) => B
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Function.ts#L1218)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Function.ts#L1309)
 
 Since v2.0.0

@@ -5,7 +5,7 @@ Module: `Chunk`<br />
 
 Creates a non-empty Chunk only if both inputs are non-empty.
 
-**Example**
+**Example** (Requiring non-emptiness from both inputs)
 
 ```ts
 import type { Chunk } from "effect"
@@ -39,6 +39,6 @@ type AndNonEmpty<S, T, A> = S extends NonEmptyChunk<any> ?
     Chunk<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L1621)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L1646)
 
 Since v2.0.0

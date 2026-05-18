@@ -3,7 +3,8 @@ Module: `Schema`<br />
 
 ## Schema.UnknownFromJsonString
 
-Companion type for `UnknownFromJsonString`.
+Type-level representation of a transformation schema that decodes
+JSON-encoded strings into `unknown` values.
 
 **Signature**
 
@@ -13,6 +14,6 @@ export interface UnknownFromJsonString extends fromJsonString<Unknown> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L9032)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L9398)
 
 Since v4.0.0

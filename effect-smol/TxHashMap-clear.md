@@ -8,7 +8,7 @@ Removes all entries from the TxHashMap.
 **Mutation behavior**: This function mutates the original TxHashMap by clearing
 all key-value pairs. It does not return a new TxHashMap reference.
 
-**Example**
+**Example** (Clearing all entries)
 
 ```ts
 import { Effect, TxHashMap } from "effect"
@@ -42,6 +42,6 @@ const program = Effect.gen(function*() {
 declare const clear: <K, V>(self: TxHashMap<K, V>) => Effect.Effect<void>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashMap.ts#L547)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashMap.ts#L585)
 
 Since v2.0.0

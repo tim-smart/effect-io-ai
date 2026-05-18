@@ -8,7 +8,7 @@ Creates a new unbounded `TxQueue` with unlimited capacity.
 **Return behavior**: This function returns a new TxQueue reference with
 unlimited capacity. No existing TxQueue instances are modified.
 
-**Example**
+**Example** (Creating unbounded queues)
 
 ```ts
 import { Effect, TxQueue } from "effect"
@@ -35,6 +35,6 @@ const program = Effect.gen(function*() {
 declare const unbounded: <A = never, E = never>() => Effect.Effect<TxQueue<A, E>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxQueue.ts#L450)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxQueue.ts#L413)
 
 Since v4.0.0

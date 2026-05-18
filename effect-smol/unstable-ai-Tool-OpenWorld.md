@@ -3,9 +3,13 @@ Module: `Tool`<br />
 
 ## Tool.OpenWorld
 
-Annotation indicating whether a tool can handle arbitrary external data.
+Annotation indicating whether a tool may interact with arbitrary external
+data or systems.
 
-**Example**
+This is emitted as the MCP `openWorldHint`; unannotated tools default to
+`true`.
+
+**Example** (Disabling open-world access)
 
 ```ts
 import { Tool } from "effect/unstable/ai"
@@ -20,6 +24,6 @@ const restrictedTool = Tool.make("internal_operation")
 declare const OpenWorld: Context.Reference<boolean>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tool.ts#L1705)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tool.ts#L1767)
 
-Since v1.0.0
+Since v4.0.0

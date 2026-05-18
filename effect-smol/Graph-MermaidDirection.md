@@ -11,7 +11,7 @@ Determines the flow direction of nodes and edges in the diagram:
 - `LR`: Left to Right (horizontal layout)
 - `RL`: Right to Left (reverse horizontal)
 
-**Example**
+**Example** (Configuring Mermaid directions)
 
 ```ts
 import type * as Graph from "effect/Graph"
@@ -42,6 +42,6 @@ type MermaidDirection = | "TB" // Top to Bottom (default)
   | "LR"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Graph.ts#L1847)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Graph.ts#L1957)
 
 Since v4.0.0

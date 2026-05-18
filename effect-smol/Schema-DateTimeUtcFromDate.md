@@ -3,7 +3,8 @@ Module: `Schema`<br />
 
 ## Schema.DateTimeUtcFromDate
 
-Companion type for `DateTimeUtcFromDate`.
+Schema interface for `DateTimeUtcFromDate`, a transformation from valid
+JavaScript `Date` values to `DateTime.Utc`.
 
 **Signature**
 
@@ -13,6 +14,6 @@ export interface DateTimeUtcFromDate extends decodeTo<DateTimeUtc, Date> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L10018)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L10415)
 
 Since v4.0.0

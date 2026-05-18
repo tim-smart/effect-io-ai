@@ -3,7 +3,8 @@ Module: `Schema`<br />
 
 ## Schema.FiniteFromString
 
-Companion type for `FiniteFromString`.
+Type-level representation of a transformation schema that decodes strings into
+finite numbers.
 
 **Signature**
 
@@ -13,6 +14,6 @@ export interface FiniteFromString extends decodeTo<Finite, String> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L9567)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L9944)
 
 Since v4.0.0

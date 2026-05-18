@@ -3,10 +3,14 @@ Module: `Schedule`<br />
 
 ## Schedule.collectInputs
 
-Returns a new `Schedule` that always recurs, collecting all inputs of the
-schedule into an array.
+Returns a new `Schedule` that follows `self` and outputs the inputs seen so
+far as an array.
 
-**Example**
+**Details**
+This does not make the schedule run forever. The collected schedule stops
+when `self` stops and fails when `self` fails.
+
+**Example** (Collecting schedule inputs)
 
 ```ts
 import { Console, Effect, Schedule } from "effect"
@@ -35,6 +39,6 @@ const program = Effect.gen(function*() {
 declare const collectInputs: <Output, Input, Error, Env>(self: Schedule<Output, Input, Error, Env>) => Schedule<Array<Input>, Input, Error, Env>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L1099)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L1094)
 
 Since v2.0.0

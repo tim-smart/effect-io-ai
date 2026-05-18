@@ -11,6 +11,6 @@ Creates an OpenRouter client service with the given options.
 declare const make: (options: Options) => Effect.Effect<Service, never, HttpClient.HttpClient>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openrouter/src/OpenRouterClient.ts#L121)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openrouter/src/OpenRouterClient.ts#L150)
 
-Since v1.0.0
+Since v4.0.0

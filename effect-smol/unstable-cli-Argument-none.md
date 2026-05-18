@@ -5,7 +5,7 @@ Module: `Argument`<br />
 
 Creates an empty sentinel argument that always fails to parse.
 
-**Example**
+**Example** (Creating a sentinel argument)
 
 ```ts
 import { Argument } from "effect/unstable/cli"
@@ -20,6 +20,6 @@ const noArg = Argument.none
 declare const none: Argument<never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Argument.ts#L254)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Argument.ts#L293)
 
 Since v4.0.0

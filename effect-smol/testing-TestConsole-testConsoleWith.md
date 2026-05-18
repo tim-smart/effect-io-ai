@@ -6,7 +6,7 @@ Module: `TestConsole`<br />
 Retrieves the `TestConsole` service for this test and uses it to run the
 specified workflow.
 
-**Example**
+**Example** (Accessing the test console service)
 
 ```ts
 import { Effect } from "effect"
@@ -32,6 +32,6 @@ const program = TestConsole.testConsoleWith((testConsole) =>
 declare const testConsoleWith: <A, E, R>(f: (console: TestConsole) => Effect.Effect<A, E, R>) => Effect.Effect<A, E, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TestConsole.ts#L192)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TestConsole.ts#L208)
 
 Since v4.0.0

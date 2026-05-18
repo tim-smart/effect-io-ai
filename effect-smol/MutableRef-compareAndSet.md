@@ -7,7 +7,7 @@ Atomically sets the value to newValue if the current value equals oldValue.
 Returns true if the value was updated, false otherwise.
 Uses Effect's Equal interface for value comparison.
 
-**Example**
+**Example** (Comparing and setting values)
 
 ```ts
 import { MutableRef } from "effect"
@@ -42,6 +42,6 @@ console.log(casUpdate(ref)) // true
 declare const compareAndSet: { <T>(oldValue: T, newValue: T): (self: MutableRef<T>) => boolean; <T>(self: MutableRef<T>, oldValue: T, newValue: T): boolean; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableRef.ts#L158)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableRef.ts#L170)
 
 Since v2.0.0

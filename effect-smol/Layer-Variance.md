@@ -17,6 +17,6 @@ export interface Variance<in ROut, out E, out RIn> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L88)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L97)
 
 Since v2.0.0

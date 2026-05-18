@@ -5,7 +5,7 @@ Module: `String`<br />
 
 `Order` instance for comparing strings using lexicographic ordering.
 
-**Example**
+**Example** (Comparing strings lexicographically)
 
 ```ts
 import { String } from "effect"
@@ -21,6 +21,6 @@ console.log(String.Order("apple", "apple")) // 0
 declare const Order: order.Order<string>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L60)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L62)
 
 Since v2.0.0

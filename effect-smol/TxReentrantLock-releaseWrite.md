@@ -6,7 +6,7 @@ Module: `TxReentrantLock`<br />
 Releases a write lock held by the current fiber.
 Returns the remaining number of write locks held by this fiber.
 
-**Example**
+**Example** (Releasing a write lock)
 
 ```ts
 import { Effect, TxReentrantLock } from "effect"
@@ -25,6 +25,6 @@ const program = Effect.gen(function*() {
 declare const releaseWrite: (self: TxReentrantLock) => Effect.Effect<number>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxReentrantLock.ts#L272)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxReentrantLock.ts#L278)
 
 Since v4.0.0

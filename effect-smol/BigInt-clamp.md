@@ -9,7 +9,7 @@ Restricts the given `bigint` to be within the range specified by the `minimum` a
 - If the `bigint` is greater than the `maximum` value, the function returns the `maximum` value.
 - Otherwise, it returns the original `bigint`.
 
-**Example**
+**Example** (Clamping a bigint to bounds)
 
 ```ts
 import * as BigInt from "effect/BigInt"
@@ -28,6 +28,6 @@ assert.equal(clamp(6n), 5n)
 declare const clamp: { (options: { minimum: bigint; maximum: bigint; }): (self: bigint) => bigint; (self: bigint, options: { minimum: bigint; maximum: bigint; }): bigint; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigInt.ts#L373)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigInt.ts#L386)
 
 Since v2.0.0

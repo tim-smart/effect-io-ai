@@ -3,12 +3,14 @@ Module: `TxQueue`<br />
 
 ## TxQueue.interrupt
 
-Interrupts the queue, transitioning it to a closing state.
+Gracefully interrupts the queue with the current fiber's interruption cause.
 
-**Mutation behavior**: This function mutates the original TxQueue by marking
-it for graceful closure. It does not return a new TxQueue reference.
+If the queue still contains items, it enters the closing state so buffered
+items can be drained before consumers observe the interruption. If it is
+empty, it transitions directly to done. Returns `false` if the queue was
+already closing or done.
 
-**Example**
+**Example** (Interrupting queues)
 
 ```ts
 import { Effect, TxQueue } from "effect"
@@ -29,6 +31,6 @@ const program = Effect.gen(function*() {
 declare const interrupt: <A, E>(self: TxEnqueue<A, E>) => Effect.Effect<boolean>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxQueue.ts#L1154)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxQueue.ts#L1149)
 
 Since v4.0.0

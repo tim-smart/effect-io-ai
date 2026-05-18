@@ -5,7 +5,7 @@ Module: `Request`<br />
 
 Tests if a value is a `Request`.
 
-**Example**
+**Example** (Checking request values)
 
 ```ts
 import { Request } from "effect"
@@ -32,6 +32,6 @@ console.log(Request.isRequest("not a request")) // false
 declare const isRequest: (u: unknown) => u is Request<unknown, unknown, unknown>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Request.ts#L210)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Request.ts#L243)
 
 Since v2.0.0

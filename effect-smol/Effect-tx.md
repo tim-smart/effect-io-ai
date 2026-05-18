@@ -20,7 +20,7 @@ In Effect transactions are optimistic with retry, that means transactions are re
 The outermost `tx` call creates the transaction boundary and commits or rolls back the full
 composed transaction.
 
-**Example**
+**Example** (Usage)
 
 ```ts
 import { Effect, TxRef } from "effect"
@@ -48,6 +48,6 @@ const program = Effect.gen(function*() {
 declare const tx: <A, E, R>(effect: Effect<A, E, R>) => Effect<A, E, Exclude<R, Transaction>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L13827)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L13793)
 
 Since v4.0.0

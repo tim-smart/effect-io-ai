@@ -9,7 +9,7 @@ Summaries provide statistical insights into value distributions by tracking spec
 (percentiles) such as median (50th), 95th percentile, 99th percentile, etc. They're ideal for
 understanding performance characteristics like response time distributions.
 
-**Example**
+**Example** (Using summary metrics)
 
 ```ts
 import { Data, Effect, Metric } from "effect"
@@ -101,6 +101,6 @@ const program = Effect.gen(function*() {
 export interface Summary<Input> extends Metric<Input, SummaryState> {}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Metric.ts#L941)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Metric.ts#L898)
 
 Since v2.0.0

@@ -6,7 +6,7 @@ Module: `TxQueue`<br />
 A TxQueue represents a transactional queue data structure that provides both
 enqueue and dequeue operations with Software Transactional Memory (STM) semantics.
 
-**Example**
+**Example** (Combining enqueue and dequeue operations)
 
 ```ts
 import { Effect, TxQueue } from "effect"
@@ -24,8 +24,9 @@ const program = Effect.gen(function*() {
   const faultTolerantQueue = yield* TxQueue.bounded<number, string>(10)
 
   // Operations can handle queue-level failures
-  yield* TxQueue.shutdown(faultTolerantQueue)
-  const result = yield* Effect.flip(TxQueue.take(faultTolerantQueue)) // never
+  yield* TxQueue.fail(faultTolerantQueue, "queue failed")
+  const result = yield* Effect.flip(TxQueue.take(faultTolerantQueue))
+  console.log(result) // "queue failed"
 })
 ```
 
@@ -37,6 +38,6 @@ export interface TxQueue<in out A, in out E = never> extends TxEnqueue<A, E>, Tx
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxQueue.ts#L286)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxQueue.ts#L244)
 
 Since v4.0.0

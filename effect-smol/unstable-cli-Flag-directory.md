@@ -5,7 +5,7 @@ Module: `Flag`<br />
 
 Creates a directory path flag that accepts directory paths with optional existence validation.
 
-**Example**
+**Example** (Creating directory flags)
 
 ```ts
 import { Flag } from "effect/unstable/cli"
@@ -25,6 +25,6 @@ const sourceFlag = Flag.directory("source", { mustExist: true })
 declare const directory: (name: string, options?: { readonly mustExist?: boolean | undefined; }) => Flag<string>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Flag.ts#L223)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Flag.ts#L251)
 
 Since v4.0.0

@@ -3,7 +3,14 @@ Module: `Context`<br />
 
 ## Context.Key
 
-The base type used for all Context keys.
+Typed identifier for a service stored in a `Context`.
+
+**Details**
+
+`Identifier` tracks the requirement in Effect types, while `Shape` is the
+service implementation retrieved by the key. A key is also an Effect value,
+so yielding it inside `Effect.gen` retrieves the service from the current
+fiber context.
 
 **Signature**
 
@@ -17,6 +24,6 @@ export interface Key<out Identifier, out Shape> extends Effect<Shape, never, Ide
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Context.ts#L44)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Context.ts#L57)
 
 Since v4.0.0

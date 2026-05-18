@@ -5,7 +5,7 @@ Module: `RequestResolver`<br />
 
 Constructs a request resolver with the specified method to run requests.
 
-**Example**
+**Example** (Creating a request resolver)
 
 ```ts
 import { Effect, Exit, Request, RequestResolver } from "effect"
@@ -37,6 +37,6 @@ const getUserEffect = Effect.request(GetUserRequest({ id: 123 }), UserResolver)
 declare const make: <A extends Request.Any>(runAll: (entries: NonEmptyArray<Request.Entry<A>>, key: unknown) => Effect.Effect<void, Request.Error<A>>) => RequestResolver<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RequestResolver.ts#L190)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RequestResolver.ts#L240)
 
 Since v2.0.0

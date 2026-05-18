@@ -7,7 +7,7 @@ A TxHashMap is a transactional hash map data structure that provides atomic oper
 on key-value pairs within Effect transactions. It uses an immutable HashMap internally
 with TxRef for transactional semantics, ensuring all operations are performed atomically.
 
-**Example**
+**Example** (Using transactional hash maps)
 
 ```ts
 import { Effect, TxHashMap } from "effect"
@@ -46,6 +46,6 @@ export interface TxHashMap<in out K, in out V> extends Inspectable, Pipeable {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashMap.ts#L76)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashMap.ts#L102)
 
 Since v2.0.0

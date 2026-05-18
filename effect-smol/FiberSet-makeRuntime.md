@@ -3,9 +3,12 @@ Module: `FiberSet`<br />
 
 ## FiberSet.makeRuntime
 
-Create an Effect run function that is backed by a FiberSet.
+Creates a scoped run function that forks effects into a new `FiberSet`.
 
-**Example**
+Each call returns the forked fiber and adds it to the set. Managed fibers are
+removed when they complete and are interrupted when the set's scope closes.
+
+**Example** (Creating a scoped runtime)
 
 ```ts
 import { Effect, Fiber, FiberSet } from "effect"
@@ -30,6 +33,6 @@ const program = Effect.gen(function*() {
 declare const makeRuntime: <R = never, A = unknown, E = unknown>() => Effect.Effect<(<XE extends E, XA extends A>(effect: Effect.Effect<XA, XE, R>, options?: (Effect.RunOptions & { readonly propagateInterruption?: boolean | undefined; }) | undefined) => Fiber.Fiber<XA, XE>), never, Scope.Scope | R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FiberSet.ts#L168)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FiberSet.ts#L214)
 
 Since v2.0.0

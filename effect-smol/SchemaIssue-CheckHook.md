@@ -26,6 +26,6 @@ Behaviour:
 type CheckHook = (issue: Filter) => string | undefined
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaIssue.ts#L1019)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaIssue.ts#L1012)
 
 Since v4.0.0

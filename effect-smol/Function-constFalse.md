@@ -5,7 +5,7 @@ Module: `Function`<br />
 
 A thunk that returns always `false`.
 
-**Example**
+**Example** (Returning false from a thunk)
 
 ```ts
 import { constFalse } from "effect/Function"
@@ -20,6 +20,6 @@ assert.deepStrictEqual(constFalse(), false)
 declare const constFalse: LazyArg<boolean>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Function.ts#L310)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Function.ts#L353)
 
 Since v2.0.0

@@ -10,7 +10,7 @@ Note: tracking the latest value is done on a per-array basis. That means
 that emitted elements that are not the last value in arrays will never be
 used for zipping.
 
-**Example**
+**Example** (Zipping latest values with a function)
 
 ```ts
 import { Console, Effect, Stream } from "effect"
@@ -36,6 +36,6 @@ Effect.gen(function*() {
 declare const zipLatestWith: { <AR, ER, RR, AL, A>(right: Stream<AR, ER, RR>, f: (left: AL, right: AR) => A): <EL, RL>(left: Stream<AL, EL, RL>) => Stream<A, EL | ER, RL | RR>; <AL, EL, RL, AR, ER, RR, A>(left: Stream<AL, EL, RL>, right: Stream<AR, ER, RR>, f: (left: AL, right: AR) => A): Stream<A, EL | ER, RL | RR>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L3957)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L4110)
 
 Since v2.0.0

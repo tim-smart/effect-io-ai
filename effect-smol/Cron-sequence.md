@@ -9,7 +9,7 @@ This function creates an iterator that generates an infinite sequence
 of dates when the cron schedule should trigger, starting from the
 specified date.
 
-**Example**
+**Example** (Iterating scheduled occurrences)
 
 ```ts
 import { Cron, Result } from "effect"
@@ -30,6 +30,6 @@ console.log(next5)
 declare const sequence: (cron: Cron, now?: DateTime.DateTime.Input) => IterableIterator<Date>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cron.ts#L832)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cron.ts#L891)
 
 Since v2.0.0

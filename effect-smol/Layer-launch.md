@@ -6,7 +6,7 @@ Module: `Layer`<br />
 Builds this layer and uses it until it is interrupted. This is useful when
 your entire application is a layer, such as an HTTP server.
 
-**Example**
+**Example** (Launching an application layer)
 
 ```ts
 import { Console, Effect, Layer, Context } from "effect"
@@ -60,6 +60,6 @@ const application = appLayer.pipe(
 declare const launch: <RIn, E, ROut>(self: Layer<ROut, E, RIn>) => Effect<never, E, RIn>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L1819)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L1925)
 
 Since v2.0.0

@@ -9,7 +9,7 @@ Ref is a thread-safe mutable reference type that allows for atomic operations
 on shared state. It supports both simple read/write operations and complex
 atomic transformations.
 
-**Example**
+**Example** (Reading and updating a ref)
 
 ```ts
 import { Effect, Ref } from "effect"
@@ -39,6 +39,6 @@ export interface Ref<in out A> extends Ref.Variance<A>, Pipeable {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Ref.ts#L72)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Ref.ts#L74)
 
 Since v2.0.0

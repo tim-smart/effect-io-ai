@@ -3,13 +3,18 @@ Module: `Queue`<br />
 
 ## Queue.shutdown
 
-Shutdown the queue, canceling any pending operations.
-If the queue is already done, `false` is returned.
+Shuts down the queue immediately, discarding buffered messages and resuming
+pending operations.
 
-**Example**
+**Details**
+
+The operation is idempotent and returns `true`, including when the queue has
+already been shut down or completed.
+
+**Example** (Shutting down queues)
 
 ```ts
-import { Cause, Effect, Queue } from "effect"
+import { Effect, Queue } from "effect"
 
 const program = Effect.gen(function*() {
   const queue = yield* Queue.bounded<number>(2)
@@ -18,10 +23,7 @@ const program = Effect.gen(function*() {
   yield* Queue.offer(queue, 1)
   yield* Queue.offer(queue, 2)
 
-  // Try to add more than capacity (will be pending)
-  const pendingOffer = Queue.offer(queue, 3)
-
-  // Shutdown cancels pending operations and clears the queue
+  // Shutdown clears buffered messages and prevents further offers
   const wasShutdown = yield* Queue.shutdown(queue)
   console.log(wasShutdown) // true
 
@@ -37,6 +39,6 @@ const program = Effect.gen(function*() {
 declare const shutdown: <A, E>(self: Enqueue<A, E>) => Effect<boolean>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Queue.ts#L938)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Queue.ts#L1041)
 
 Since v4.0.0

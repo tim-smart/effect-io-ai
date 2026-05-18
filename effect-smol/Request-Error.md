@@ -5,7 +5,7 @@ Module: `Request`<br />
 
 A utility type to extract the error type from a `Request`.
 
-**Example**
+**Example** (Extracting a request error type)
 
 ```ts
 import type { Request } from "effect"
@@ -24,6 +24,6 @@ type UserError = Request.Error<GetUser> // Error
 type Error<T> = [T] extends [Request<infer _A, infer _E, infer _R>] ? _E : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Request.ts#L112)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Request.ts#L133)
 
 Since v2.0.0

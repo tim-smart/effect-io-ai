@@ -3,12 +3,12 @@ Module: `Cause`<br />
 
 ## Cause.filterInterruptors
 
-Extracts the set of interrupting fiber IDs from a cause.
-Returns `Filter.fail` with the original cause when no `Interrupt`
-reason is found.
+Returns a `Result` whose success value is the set of defined fiber IDs from
+the cause's `Interrupt` reasons. If the cause has no `Interrupt`
+reason, the failure value is the original cause.
 
-Use `interruptors` if you always want a `Set` (possibly empty)
-without `Filter` wrapping.
+Use `interruptors` if you always want a `Set` without `Result`
+wrapping.
 
 **Example** (extracting interruptors with Filter)
 
@@ -31,6 +31,6 @@ if (!Result.isFailure(result)) {
 declare const filterInterruptors: <E>(self: Cause<E>) => Result.Result<Set<number>, Cause<E>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L991)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L996)
 
 Since v4.0.0

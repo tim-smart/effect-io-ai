@@ -9,7 +9,7 @@ A safe refinement that narrows types without runtime errors.
 maintaining type safety. Unlike regular predicates, safe refinements can
 transform the matched value's type without throwing runtime errors.
 
-**Example**
+**Example** (Using safe refinements)
 
 ```ts
 import { Match } from "effect"
@@ -36,6 +36,6 @@ export interface SafeRefinement<in A, out R = A> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L1847)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L1840)
 
 Since v4.0.0

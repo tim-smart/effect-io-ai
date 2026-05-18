@@ -5,7 +5,7 @@ Module: `Effect`<br />
 
 Returns a new effect that disables interruption for the given effect.
 
-**Example**
+**Example** (Usage)
 
 ```ts
 import { Console, Effect, Fiber } from "effect"
@@ -29,6 +29,6 @@ Effect.runPromise(Fiber.interrupt(fiber))
 declare const uninterruptible: <A, E, R>(self: Effect<A, E, R>) => Effect<A, E, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L6908)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L6819)
 
 Since v2.0.0

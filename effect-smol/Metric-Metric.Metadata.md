@@ -5,7 +5,7 @@ Module: `Metric`<br />
 
 Interface containing complete metadata information about a metric.
 
-**Example**
+**Example** (Inspecting metric metadata)
 
 ```ts
 import { Data, Effect, Metric } from "effect"
@@ -71,6 +71,6 @@ export interface Metadata<in Input, out State> {
   }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Metric.ts#L1524)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Metric.ts#L1490)
 
 Since v4.0.0

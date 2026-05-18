@@ -6,7 +6,7 @@ Module: `Scope`<br />
 A `Closeable` scope extends the base `Scope` interface with the ability
 to be closed, executing all registered finalizers.
 
-**Example**
+**Example** (Closing a scope)
 
 ```ts
 import { Console, Effect, Exit, Scope } from "effect"
@@ -30,6 +30,6 @@ export interface Closeable extends Scope {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Scope.ts#L77)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Scope.ts#L79)
 
 Since v2.0.0

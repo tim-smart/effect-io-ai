@@ -8,7 +8,7 @@ Splits a chunk using a `Filter` into failures and successes.
 - Returns `[excluded, satisfying]`.
 - The filter receives `(element, index)`.
 
-**Example**
+**Example** (Partitioning with a Result)
 
 ```ts
 import { Chunk, Result } from "effect"
@@ -27,6 +27,6 @@ console.log(Chunk.toArray(satisfying)) // [1, 5]
 declare const partition: { <A, Pass, Fail>(f: (input: NoInfer<A>, i: number) => Result<Pass, Fail>): (self: Chunk<A>) => [excluded: Chunk<Fail>, satisfying: Chunk<Pass>]; <A, Pass, Fail>(self: Chunk<A>, f: (input: A, i: number) => Result<Pass, Fail>): [excluded: Chunk<Fail>, satisfying: Chunk<Pass>]; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L1733)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L1760)
 
 Since v2.0.0

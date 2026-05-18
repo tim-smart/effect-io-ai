@@ -3,9 +3,13 @@ Module: `RcMap`<br />
 
 ## RcMap.keys
 
-Returns an array of all keys currently stored in the RcMap.
+Returns an iterable of all keys currently stored in the `RcMap`.
 
-**Example**
+**Details**
+
+If the `RcMap` has been closed, the effect is interrupted.
+
+**Example** (Listing keys)
 
 ```ts
 import { Effect, RcMap } from "effect"
@@ -32,6 +36,6 @@ Effect.gen(function*() {
 declare const keys: <K, A, E>(self: RcMap<K, A, E>) => Effect.Effect<Iterable<K>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RcMap.ts#L447)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RcMap.ts#L401)
 
 Since v3.5.0

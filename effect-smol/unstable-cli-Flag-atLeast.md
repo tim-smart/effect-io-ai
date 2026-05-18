@@ -5,7 +5,7 @@ Module: `Flag`<br />
 
 Requires a flag to be specified at least a minimum number of times.
 
-**Example**
+**Example** (Requiring repeated values)
 
 ```ts
 import { Flag } from "effect/unstable/cli"
@@ -26,6 +26,6 @@ const tagFlag = Flag.string("tag").pipe(
 declare const atLeast: { <A>(min: number): (self: Flag<A>) => Flag<ReadonlyArray<A>>; <A>(self: Flag<A>, min: number): Flag<ReadonlyArray<A>>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Flag.ts#L657)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Flag.ts#L709)
 
 Since v4.0.0

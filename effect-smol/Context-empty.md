@@ -5,7 +5,7 @@ Module: `Context`<br />
 
 Returns an empty `Context`.
 
-**Example**
+**Example** (Creating an empty context)
 
 ```ts
 import { Context } from "effect"
@@ -20,6 +20,6 @@ assert.strictEqual(Context.isContext(Context.empty()), true)
 declare const empty: () => Context<never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Context.ts#L482)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Context.ts#L572)
 
 Since v4.0.0

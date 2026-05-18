@@ -3,7 +3,8 @@ Module: `Schema`<br />
 
 ## Schema.StringFromUriComponent
 
-Companion type for `StringFromUriComponent`.
+Schema interface for `StringFromUriComponent`, a transformation between
+URI-component encoded strings and UTF-8 strings.
 
 **Signature**
 
@@ -13,6 +14,6 @@ export interface StringFromUriComponent extends decodeTo<String, String> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L9748)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L10132)
 
 Since v4.0.0

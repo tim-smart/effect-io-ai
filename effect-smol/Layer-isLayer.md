@@ -5,7 +5,7 @@ Module: `Layer`<br />
 
 Returns `true` if the specified value is a `Layer`, `false` otherwise.
 
-**Example**
+**Example** (Checking whether a value is a layer)
 
 ```ts
 import { Effect, Layer, Context } from "effect"
@@ -29,6 +29,6 @@ console.log(Layer.isLayer(notALayer)) // false
 declare const isLayer: (u: unknown) => u is Layer<unknown, unknown, unknown>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L200)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L232)
 
 Since v2.0.0

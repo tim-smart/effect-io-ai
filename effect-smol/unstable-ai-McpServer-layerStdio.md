@@ -5,7 +5,7 @@ Module: `McpServer`<br />
 
 Run the McpServer, using stdio for input and output.
 
-**Example**
+**Example** (Running an MCP server over stdio)
 
 ```ts
 import { NodeRuntime, NodeStdio } from "@effect/platform-node"
@@ -63,6 +63,6 @@ Layer.launch(ServerLayer).pipe(NodeRuntime.runMain)
 declare const layerStdio: (options: { readonly name: string; readonly version: string; readonly extensions?: Record<`${string}/${string}`, unknown> | undefined; }) => Layer.Layer<McpServer | McpServerClient, never, Stdio>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpServer.ts#L572)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpServer.ts#L616)
 
 Since v4.0.0

@@ -23,4 +23,4 @@ export interface RequestAttributes {
 
 [Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTelemetry.ts#L47)
 
-Since v1.0.0
+Since v4.0.0

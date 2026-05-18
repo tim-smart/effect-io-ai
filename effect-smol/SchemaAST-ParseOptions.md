@@ -3,17 +3,22 @@ Module: `SchemaAST`<br />
 
 ## SchemaAST.ParseOptions
 
-Options that control parsing/validation behavior.
+Options that control schema parsing, validation, transformation, and output behavior.
 
-Pass to `Schema.decodeUnknown`, `Schema.encode`, etc. to customize error
-reporting, excess property handling, and output key ordering.
+Pass to `Schema.decodeUnknown`, `Schema.encode`, and related APIs to customize
+error reporting, excess property handling, output key ordering, check
+execution, and asynchronous parser concurrency.
 
-- `errors` — `"first"` (default) stops at the first error; `"all"`
-  collects every error.
-- `onExcessProperty` — `"ignore"` (default) strips unknown keys;
+- `errors` — `"first"` (default) stops at the first error; `"all"` collects
+  every error.
+- `onExcessProperty` — `"ignore"` (default) strips unknown object keys;
   `"error"` fails; `"preserve"` keeps them.
 - `propertyOrder` — `"none"` (default) lets the system choose key order;
   `"original"` preserves input key order.
+- `disableChecks` — skips validation checks while still applying defaults and
+  transformations.
+- `concurrency` — maximum number of async parse effects to run concurrently;
+  defaults to `1`, or use `"unbounded"`.
 
 **Signature**
 
@@ -82,6 +87,6 @@ export interface ParseOptions {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L389)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L394)
 
 Since v4.0.0

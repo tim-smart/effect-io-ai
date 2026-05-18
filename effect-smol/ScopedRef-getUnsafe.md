@@ -11,6 +11,6 @@ Retrieves the current value of the scoped reference.
 declare const getUnsafe: <A>(self: ScopedRef<A>) => A
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ScopedRef.ts#L77)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ScopedRef.ts#L97)
 
 Since v4.0.0

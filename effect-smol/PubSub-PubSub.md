@@ -7,7 +7,7 @@ A `PubSub<A>` is an asynchronous message hub into which publishers can publish
 messages of type `A` and subscribers can subscribe to take messages of type
 `A`.
 
-**Example**
+**Example** (Publishing and subscribing to messages)
 
 ```ts
 import { Effect } from "effect"
@@ -17,13 +17,14 @@ const program = Effect.gen(function*() {
   // Create a bounded PubSub with capacity 10
   const pubsub = yield* PubSub.bounded<string>(10)
 
-  // Publish messages
-  yield* PubSub.publish(pubsub, "Hello")
-  yield* PubSub.publish(pubsub, "World")
-
   // Subscribe and consume messages
   yield* Effect.scoped(Effect.gen(function*() {
     const subscription = yield* PubSub.subscribe(pubsub)
+
+    // Publish messages
+    yield* PubSub.publish(pubsub, "Hello")
+    yield* PubSub.publish(pubsub, "World")
+
     const message1 = yield* PubSub.take(subscription)
     const message2 = yield* PubSub.take(subscription)
     console.log(message1, message2) // "Hello", "World"
@@ -47,6 +48,6 @@ export interface PubSub<in out A> extends Pipeable {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PubSub.ts#L80)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PubSub.ts#L84)
 
 Since v2.0.0

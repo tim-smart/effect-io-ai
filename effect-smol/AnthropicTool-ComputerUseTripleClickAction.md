@@ -3,14 +3,14 @@ Module: `AnthropicTool`<br />
 
 ## AnthropicTool.ComputerUseTripleClickAction
 
-Perform a triple click.
+Computer-use action payload for performing a triple click, optionally at a specific coordinate.
 
 **Signature**
 
 ```ts
-declare const ComputerUseTripleClickAction: Schema.Struct<{ readonly action: Schema.Literal<"triple_click">; readonly coordinate: Schema.optional<Schema.Tuple<readonly [Schema.Number, Schema.Number]>>; }>
+type ComputerUseTripleClickAction = typeof ComputerUseTripleClickAction.Type
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L661)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L721)
 
-Since v1.0.0
+Since v4.0.0

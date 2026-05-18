@@ -6,7 +6,7 @@ Module: `Trie`<br />
 Maps over the entries of the `Trie` using the specified filter and keeps
 only successful results.
 
-**Example**
+**Example** (Filtering and mapping entries)
 
 ```ts
 import * as Equal from "effect/Equal"
@@ -54,6 +54,6 @@ assert.equal(
 declare const filterMap: { <A, B, X>(f: (input: A, key: string) => Result<B, X>): (self: Trie<A>) => Trie<B>; <A, B, X>(self: Trie<A>, f: (input: A, key: string) => Result<B, X>): Trie<B>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Trie.ts#L763)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Trie.ts#L791)
 
 Since v2.0.0

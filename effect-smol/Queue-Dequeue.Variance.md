@@ -3,7 +3,10 @@ Module: `Queue`<br />
 
 ## Queue.Dequeue.Variance
 
-Variance interface for Dequeue types, defining the type parameter constraints.
+Type-level variance marker for `Dequeue`.
+
+`Dequeue` is covariant in both the taken value type `A` and failure type
+`E`, because values and failures are observed through this handle.
 
 **Signature**
 
@@ -14,6 +17,6 @@ export interface Variance<A, E> {
   }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Queue.ts#L172)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Queue.ts#L239)
 
 Since v3.8.0

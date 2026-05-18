@@ -5,7 +5,7 @@ Module: `TxHashMap`<br />
 
 Extracts the key type from a TxHashMap type.
 
-**Example**
+**Example** (Extracting key types)
 
 ```ts
 import { Effect, TxHashMap } from "effect"
@@ -32,6 +32,6 @@ const program = Effect.gen(function*() {
 type Key<T> = T extends TxHashMap<infer K, any> ? K : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashMap.ts#L143)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashMap.ts#L171)
 
 Since v2.0.0

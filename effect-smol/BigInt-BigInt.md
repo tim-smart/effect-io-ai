@@ -5,7 +5,7 @@ Module: `BigInt`<br />
 
 Reference to the global BigInt constructor.
 
-**Example**
+**Example** (Constructing bigints)
 
 ```ts
 import * as BigInt from "effect/BigInt"
@@ -23,6 +23,6 @@ console.log(fromString) // 456n
 declare const BigInt: BigIntConstructor
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigInt.ts#L34)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigInt.ts#L35)
 
 Since v4.0.0

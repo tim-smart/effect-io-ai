@@ -5,7 +5,7 @@ Module: `Stream`<br />
 
 Repeats this stream forever.
 
-**Example**
+**Example** (Repeating a stream forever)
 
 ```ts
 import { Console, Effect, Stream } from "effect"
@@ -30,6 +30,6 @@ Effect.runPromise(program)
 declare const forever: <A, E, R>(self: Stream<A, E, R>) => Stream<A, E, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L2857)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L2985)
 
 Since v2.0.0

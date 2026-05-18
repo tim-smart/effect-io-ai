@@ -8,7 +8,7 @@ Removes the specified key from the TxHashMap.
 **Mutation behavior**: This function mutates the original TxHashMap by removing
 the specified key-value pair. It does not return a new TxHashMap reference.
 
-**Example**
+**Example** (Removing keys)
 
 ```ts
 import { Effect, TxHashMap } from "effect"
@@ -43,6 +43,6 @@ const program = Effect.gen(function*() {
 declare const remove: { <K1 extends K, K>(key: K1): <V>(self: TxHashMap<K, V>) => Effect.Effect<boolean>; <K1 extends K, K, V>(self: TxHashMap<K, V>, key: K1): Effect.Effect<boolean>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashMap.ts#L495)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashMap.ts#L532)
 
 Since v2.0.0

@@ -13,4 +13,4 @@ export * as BunStream from "./BunStream.ts"
 
 [Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/index.ts#L97)
 
-Since v1.0.0
+Since v4.0.0

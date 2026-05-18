@@ -3,7 +3,8 @@ Module: `Schema`<br />
 
 ## Schema.Trimmed
 
-Companion type for `Trimmed`.
+Schema interface for `Trimmed`, representing strings with no leading or
+trailing whitespace.
 
 **Signature**
 
@@ -13,6 +14,6 @@ export interface Trimmed extends String {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L9620)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L9999)
 
 Since v4.0.0

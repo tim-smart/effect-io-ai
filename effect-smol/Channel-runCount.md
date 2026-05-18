@@ -5,7 +5,7 @@ Module: `Channel`<br />
 
 Runs a channel and counts the number of elements it outputs.
 
-**Example**
+**Example** (Counting channel output)
 
 ```ts
 import { Channel, Data } from "effect"
@@ -29,6 +29,6 @@ const countEffect = Channel.runCount(numbersChannel)
 declare const runCount: <OutElem, OutErr, OutDone, Env>(self: Channel<OutElem, OutErr, OutDone, unknown, unknown, unknown, Env>) => Effect.Effect<void, OutErr, Env>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L7087)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L7419)
 
 Since v2.0.0

@@ -5,7 +5,7 @@ Module: `TxHashMap`<br />
 
 Returns an immutable snapshot of the current TxHashMap state.
 
-**Example**
+**Example** (Taking immutable snapshots)
 
 ```ts
 import { Effect, HashMap, TxHashMap } from "effect"
@@ -40,6 +40,6 @@ const program = Effect.gen(function*() {
 declare const snapshot: <K, V>(self: TxHashMap<K, V>) => Effect.Effect<HashMap.HashMap<K, V>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashMap.ts#L940)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashMap.ts#L991)
 
 Since v2.0.0

@@ -5,7 +5,7 @@ Module: `TxPubSub`<br />
 
 Checks if the TxPubSub has no pending messages (all subscriber queues are empty).
 
-**Example**
+**Example** (Checking whether a pub/sub is empty)
 
 ```ts
 import { Effect, TxPubSub } from "effect"
@@ -23,6 +23,6 @@ const program = Effect.gen(function*() {
 declare const isEmpty: <A>(self: TxPubSub<A>) => Effect.Effect<boolean>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxPubSub.ts#L303)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxPubSub.ts#L311)
 
 Since v4.0.0

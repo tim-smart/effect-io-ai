@@ -19,10 +19,13 @@ was expected to be error-free. You can think of it similar to an unexpected
 crash in the program, which can be further managed or logged using tools like
 `catchAllDefect`.
 
-**Example**
+**See**
+
+- `| try` for a version that can handle failures.
+
+**Example** (Logging a Message)
 
 ```ts
-// Title: Logging a Message
 import { Effect } from "effect"
 
 const log = (message: string) =>
@@ -35,16 +38,12 @@ const log = (message: string) =>
 const program = log("Hello, World!")
 ```
 
-**See**
-
-- `| try` for a version that can handle failures.
-
 **Signature**
 
 ```ts
 declare const sync: <A>(thunk: LazyArg<A>) => Effect<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L1274)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L1139)
 
 Since v2.0.0

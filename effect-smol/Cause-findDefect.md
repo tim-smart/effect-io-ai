@@ -3,9 +3,9 @@ Module: `Cause`<br />
 
 ## Cause.findDefect
 
-Returns the first defect value (`unknown`) from a cause.
-Returns `Filter.fail` with the original cause when no `Die` reason
-is found.
+Returns a `Result` whose success value is the first defect value from a
+`Die` reason in the cause. If the cause has no `Die` reason, the
+failure value is the original cause.
 
 Use `findDie` if you need the full `Die` reason (including
 annotations).
@@ -32,6 +32,6 @@ if (!Result.isFailure(result)) {
 declare const findDefect: <E>(self: Cause<E>) => Result.Result<unknown, Cause<E>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L895)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L898)
 
 Since v4.0.0

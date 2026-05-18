@@ -5,7 +5,7 @@ Module: `PubSub`<br />
 
 A subscription represents a consumer's connection to a PubSub, allowing them to take messages.
 
-**Example**
+**Example** (Taking messages from a subscription)
 
 ```ts
 import { Effect } from "effect"
@@ -20,12 +20,17 @@ const program = Effect.gen(function*() {
       pubsub
     )
 
+    yield* PubSub.publishAll(pubsub, ["msg1", "msg2", "msg3"])
+
     // Take individual messages
     const message = yield* PubSub.take(subscription)
+    console.log(message) // "msg1"
 
     // Take multiple messages
-    const messages = yield* PubSub.takeUpTo(subscription, 5)
+    const messages = yield* PubSub.takeUpTo(subscription, 1)
+    console.log(messages) // ["msg2"]
     const allMessages = yield* PubSub.takeAll(subscription)
+    console.log(allMessages) // ["msg3"]
   }))
 })
 ```
@@ -48,6 +53,6 @@ export interface Subscription<out A> extends Pipeable {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PubSub.ts#L240)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PubSub.ts#L259)
 
 Since v4.0.0

@@ -3,14 +3,14 @@ Module: `AnthropicTool`<br />
 
 ## AnthropicTool.WebFetch_20250910_Args
 
-Configuration arguments for the web fetch tool.
+Configuration arguments for the Anthropic web fetch tool, including usage limits, domain filters, citation settings, and token limits.
 
 **Signature**
 
 ```ts
-declare const WebFetch_20250910_Args: Schema.Struct<{ readonly maxUses: Schema.optional<Schema.Number>; readonly allowedDomains: Schema.optional<Schema.$Array<Schema.String>>; readonly blockedDomains: Schema.optional<Schema.$Array<Schema.String>>; readonly citations: Schema.optional<Schema.Struct<{ readonly enabled: Schema.Boolean; }>>; readonly maxContentTokens: Schema.optional<Schema.Number>; }>
+type WebFetch_20250910_Args = typeof WebFetch_20250910_Args.Type
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L1407)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L1537)
 
-Since v1.0.0
+Since v4.0.0

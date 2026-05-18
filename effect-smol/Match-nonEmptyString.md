@@ -8,7 +8,7 @@ Matches non-empty strings.
 This predicate matches any string that contains at least one character,
 effectively filtering out empty strings ("").
 
-**Example**
+**Example** (Matching non-empty strings)
 
 ```ts
 import { Match } from "effect"
@@ -35,6 +35,6 @@ console.log(processInput("   "))
 declare const nonEmptyString: SafeRefinement<string, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L1159)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L1150)
 
 Since v4.0.0

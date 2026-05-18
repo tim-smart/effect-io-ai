@@ -12,7 +12,7 @@ For bounded strategy, retries the transaction if any subscriber queue is full.
 For sliding strategy, drops oldest messages in full subscriber queues.
 For dropping strategy, drops the message for full subscriber queues and returns `false`.
 
-**Example**
+**Example** (Publishing a message to subscribers)
 
 ```ts
 import { Effect, TxPubSub, TxQueue } from "effect"
@@ -41,6 +41,6 @@ const program = Effect.gen(function*() {
 declare const publish: { <A>(value: A): (self: TxPubSub<A>) => Effect.Effect<boolean>; <A>(self: TxPubSub<A>, value: A): Effect.Effect<boolean>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxPubSub.ts#L391)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxPubSub.ts#L402)
 
 Since v4.0.0

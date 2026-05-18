@@ -5,7 +5,7 @@ Module: `Prompt`<br />
 
 Message representing system instructions or context.
 
-**Example**
+**Example** (Creating system messages)
 
 ```ts
 import { Prompt } from "effect/unstable/ai"
@@ -27,6 +27,6 @@ export interface SystemMessage extends BaseMessage<"system", SystemMessageOption
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L1123)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L1137)
 
 Since v4.0.0

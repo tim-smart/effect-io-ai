@@ -5,7 +5,7 @@ Module: `Response`<br />
 
 Creates a new response content part of the specified type.
 
-**Example**
+**Example** (Creating response content parts)
 
 ```ts
 import { Response } from "effect/unstable/ai"
@@ -28,6 +28,6 @@ const toolCallPart = Response.makePart("tool-call", {
 declare const makePart: <const Type extends AnyPart["type"]>(type: Type, params: Omit<Extract<AnyPart, { type: Type; }>, typeof PartTypeId | "type" | "metadata"> & { readonly metadata?: Extract<AnyPart, { type: Type; }>["metadata"] | undefined; }) => Extract<AnyPart, { type: Type; }>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Response.ts#L533)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Response.ts#L530)
 
-Since v1.0.0
+Since v4.0.0

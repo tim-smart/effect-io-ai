@@ -5,7 +5,7 @@ Module: `Cache`<br />
 
 Invalidates the entry associated with the specified key in the cache.
 
-**Example**
+**Example** (Invalidating cached entries)
 
 ```ts
 import { Cache, Effect } from "effect"
@@ -50,6 +50,6 @@ const program = Effect.gen(function*() {
 declare const invalidate: { <Key, A>(key: Key): <E, R>(self: Cache<Key, A, E, R>) => Effect.Effect<void>; <Key, A, E, R>(self: Cache<Key, A, E, R>, key: Key): Effect.Effect<void>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cache.ts#L803)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cache.ts#L880)
 
 Since v4.0.0

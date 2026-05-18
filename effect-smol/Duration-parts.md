@@ -3,9 +3,13 @@ Module: `Duration`<br />
 
 ## Duration.parts
 
-Converts a `Duration` to its parts.
+Decomposes a `Duration` into normalized signed components.
 
-**Example**
+Finite durations are returned as `{ days, hours, minutes, seconds, millis,
+nanos }`. Infinite durations return every component as `Infinity` or
+`-Infinity`.
+
+**Example** (Decomposing durations into parts)
 
 ```ts
 import { Duration } from "effect"
@@ -48,6 +52,6 @@ console.log(complexParts)
 declare const parts: (self: Duration) => { days: number; hours: number; minutes: number; seconds: number; millis: number; nanos: number; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Duration.ts#L1498)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Duration.ts#L1568)
 
 Since v3.8.0

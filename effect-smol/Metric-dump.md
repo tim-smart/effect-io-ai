@@ -10,7 +10,7 @@ This debugging utility captures a snapshot of all metrics and formats them
 in an easy-to-read table showing names, descriptions, types, attributes,
 and current state values.
 
-**Example**
+**Example** (Dumping metrics as text)
 
 ```ts
 import { Console, Data, Effect, Metric } from "effect"
@@ -60,6 +60,6 @@ const program = Effect.gen(function*() {
 declare const dump: Effect<string, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Metric.ts#L3117)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Metric.ts#L3124)
 
 Since v2.0.0

@@ -5,7 +5,7 @@ Module: `Metric`<br />
 
 Union type for metric attributes that can be provided as either an object or array of tuples.
 
-**Example**
+**Example** (Providing attributes in different formats)
 
 ```ts
 import { Data, Effect, Metric } from "effect"
@@ -79,6 +79,6 @@ const program = Effect.gen(function*() {
 type Attributes = AttributeSet | ReadonlyArray<[string, string]>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Metric.ts#L1229)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Metric.ts#L1190)
 
 Since v2.0.0

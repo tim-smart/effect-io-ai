@@ -39,6 +39,6 @@ Effect.runSync(
 declare const duration: (name?: string) => Config<Duration>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Config.ts#L1055)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Config.ts#L1057)
 
 Since v4.0.0

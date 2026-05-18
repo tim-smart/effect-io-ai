@@ -6,7 +6,7 @@ Module: `Schedule`<br />
 Returns a schedule that recurs continuously, each repetition spaced the
 specified duration from the last run.
 
-**Example**
+**Example** (Repeating with fixed spacing)
 
 ```ts
 import { Console, Effect, Schedule } from "effect"
@@ -16,7 +16,7 @@ const everyTwoSeconds = Schedule.spaced("2 seconds")
 
 // Heartbeat that runs indefinitely with fixed spacing
 const heartbeat = Effect.gen(function*() {
-  yield* Console.log(`Heartbeat at ${new Date().toISOString()}`)
+  yield* Console.log("Heartbeat")
 }).pipe(
   Effect.repeat(everyTwoSeconds)
 )
@@ -55,6 +55,6 @@ const program = Effect.gen(function*() {
 declare const spaced: (duration: Duration.Input) => Schedule<number>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L2607)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L2604)
 
 Since v2.0.0

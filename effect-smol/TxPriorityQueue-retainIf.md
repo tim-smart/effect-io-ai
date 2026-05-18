@@ -5,7 +5,7 @@ Module: `TxPriorityQueue`<br />
 
 Retains only elements matching the predicate.
 
-**Example**
+**Example** (Retaining matching values)
 
 ```ts
 import { Effect, Order, TxPriorityQueue } from "effect"
@@ -24,6 +24,6 @@ const program = Effect.gen(function*() {
 declare const retainIf: { <A>(predicate: Predicate<A>): (self: TxPriorityQueue<A>) => Effect.Effect<void>; <A>(self: TxPriorityQueue<A>, predicate: Predicate<A>): Effect.Effect<void>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxPriorityQueue.ts#L485)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxPriorityQueue.ts#L502)
 
 Since v4.0.0

@@ -5,7 +5,7 @@ Module: `TxPriorityQueue`<br />
 
 Creates an empty `TxPriorityQueue` with the given ordering.
 
-**Example**
+**Example** (Creating an empty priority queue)
 
 ```ts
 import { Effect, Order, TxPriorityQueue } from "effect"
@@ -23,6 +23,6 @@ const program = Effect.gen(function*() {
 declare const empty: <A>(order: Order<A>) => Effect.Effect<TxPriorityQueue<A>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxPriorityQueue.ts#L112)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxPriorityQueue.ts#L114)
 
 Since v4.0.0

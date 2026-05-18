@@ -6,7 +6,7 @@ Module: `TxReentrantLock`<br />
 Acquires a read lock for the duration of the scope.
 The lock is automatically released when the scope closes.
 
-**Example**
+**Example** (Holding a scoped read lock)
 
 ```ts
 import { Effect, TxReentrantLock } from "effect"
@@ -30,6 +30,6 @@ const program = Effect.gen(function*() {
 declare const readLock: (self: TxReentrantLock) => Effect.Effect<number, never, Scope.Scope>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxReentrantLock.ts#L314)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxReentrantLock.ts#L321)
 
 Since v4.0.0

@@ -3,10 +3,13 @@ Module: `Scope`<br />
 
 ## Scope.State.Empty
 
-Represents an open scope state where finalizers can be added and
-the scope is still accepting new resources.
+Represents an open scope with no registered finalizers yet.
 
-**Example**
+Adding the first finalizer transitions the scope to `Open`; closing an
+empty scope transitions directly to `Closed` without producing a finalizer
+effect.
+
+**Example** (Inspecting an empty scope state)
 
 ```ts
 import { Scope } from "effect"
@@ -28,6 +31,6 @@ type Empty = {
   }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Scope.ts#L131)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Scope.ts#L138)
 
 Since v2.0.0

@@ -28,6 +28,6 @@ export interface PartitionedSemaphore<in K> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PartitionedSemaphore.ts#L30)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PartitionedSemaphore.ts#L79)
 
 Since v4.0.0

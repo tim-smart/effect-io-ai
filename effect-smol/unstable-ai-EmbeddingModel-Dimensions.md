@@ -11,6 +11,6 @@ Service tag that provides the current embedding dimensions.
 declare class Dimensions
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EmbeddingModel.ts#L41)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EmbeddingModel.ts#L42)
 
 Since v4.0.0

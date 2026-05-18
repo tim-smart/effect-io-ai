@@ -5,7 +5,7 @@ Module: `Channel`<br />
 
 Represents an Channel that never completes
 
-**Example**
+**Example** (Using non-terminating channels)
 
 ```ts
 import { Channel } from "effect"
@@ -30,6 +30,6 @@ const conditionalChannel = (shouldComplete: boolean) =>
 declare const never: Channel<never, never, never, unknown, unknown, unknown, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L872)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L945)
 
 Since v2.0.0

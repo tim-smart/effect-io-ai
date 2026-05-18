@@ -9,7 +9,7 @@ This function allows you to hash an object by considering only specific keys,
 which is useful when you want to create a hash based on a subset of an object's
 properties.
 
-**Example**
+**Example** (Hashing selected object keys)
 
 ```ts
 import { Hash } from "effect"
@@ -35,6 +35,6 @@ console.log(hash1 === hash3) // true
 declare const structureKeys: (o: object, keys: Iterable<PropertyKey>) => number
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Hash.ts#L353)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Hash.ts#L362)
 
 Since v2.0.0

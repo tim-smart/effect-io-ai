@@ -7,7 +7,7 @@ Creates a mock layer for testing purposes. You can provide a partial
 implementation of the service, and any methods not provided will
 throw an unimplemented defect when called.
 
-**Example**
+**Example** (Mocking services for tests)
 
 ```ts
 import { Effect, Layer, Context } from "effect"
@@ -52,6 +52,6 @@ const testProgram = Effect.gen(function*() {
 declare const mock: { <I, S extends object>(service: Context.Key<I, S>): (implementation: PartialEffectful<S>) => Layer<I>; <I, S extends object>(service: Context.Key<I, S>, implementation: Types.NoInfer<PartialEffectful<S>>): Layer<I>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L1895)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L2002)
 
 Since v4.0.0

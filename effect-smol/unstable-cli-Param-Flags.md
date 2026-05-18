@@ -12,6 +12,6 @@ Multiple occurrences of a flag produce multiple values.
 type Flags = Record<string, ReadonlyArray<string>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Param.ts#L127)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Param.ts#L165)
 
 Since v4.0.0

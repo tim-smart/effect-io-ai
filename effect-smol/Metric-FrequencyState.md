@@ -5,7 +5,7 @@ Module: `Metric`<br />
 
 State interface for Frequency metrics containing occurrence counts for discrete string values.
 
-**Example**
+**Example** (Reading frequency state)
 
 ```ts
 import { Data, Effect, Metric } from "effect"
@@ -90,6 +90,6 @@ export interface FrequencyState {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Metric.ts#L536)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Metric.ts#L488)
 
 Since v2.0.0

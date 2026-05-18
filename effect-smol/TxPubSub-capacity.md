@@ -5,7 +5,7 @@ Module: `TxPubSub`<br />
 
 Returns the capacity of the TxPubSub.
 
-**Example**
+**Example** (Reading pub/sub capacity)
 
 ```ts
 import { Effect, TxPubSub } from "effect"
@@ -22,6 +22,6 @@ const program = Effect.gen(function*() {
 declare const capacity: <A>(self: TxPubSub<A>) => number
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxPubSub.ts#L248)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxPubSub.ts#L254)
 
 Since v4.0.0

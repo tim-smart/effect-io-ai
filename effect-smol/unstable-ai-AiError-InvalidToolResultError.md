@@ -9,7 +9,7 @@ match the tool's schema.
 This error is not retryable because invalid results indicate a bug in the
 tool handler implementation.
 
-**Example**
+**Example** (Creating an invalid tool result error)
 
 ```ts
 import { AiError } from "effect/unstable/ai"
@@ -30,6 +30,6 @@ console.log(error.message)
 declare class InvalidToolResultError
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AiError.ts#L1050)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AiError.ts#L1100)
 
-Since v1.0.0
+Since v4.0.0

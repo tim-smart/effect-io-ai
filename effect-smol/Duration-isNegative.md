@@ -5,7 +5,7 @@ Module: `Duration`<br />
 
 Returns `true` if the duration is negative (strictly less than zero).
 
-**Example**
+**Example** (Checking for negative durations)
 
 ```ts
 import { Duration } from "effect"
@@ -21,6 +21,6 @@ console.log(Duration.isNegative(Duration.negativeInfinity)) // true
 declare const isNegative: (self: Duration) => boolean
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Duration.ts#L400)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Duration.ts#L409)
 
 Since v4.0.0

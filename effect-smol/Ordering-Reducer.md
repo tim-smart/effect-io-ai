@@ -14,6 +14,6 @@ If all the `Ordering`s are zero, the result is zero.
 declare const Reducer: Reducer_.Reducer<Ordering>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Ordering.ts#L157)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Ordering.ts#L170)
 
 Since v4.0.0

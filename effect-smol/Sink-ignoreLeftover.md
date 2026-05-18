@@ -3,7 +3,11 @@ Module: `Sink`<br />
 
 ## Sink.ignoreLeftover
 
-Drains the remaining elements from the stream after the sink finishes
+Drops leftovers produced by a sink.
+
+The sink result is preserved, but any leftover elements are discarded
+instead of being returned to downstream sink composition. This does not
+continue pulling additional elements from the upstream stream.
 
 **Signature**
 
@@ -11,6 +15,6 @@ Drains the remaining elements from the stream after the sink finishes
 declare const ignoreLeftover: <A, In, L, E, R>(self: Sink<A, In, L, E, R>) => Sink<A, In, never, E, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Sink.ts#L616)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Sink.ts#L671)
 
 Since v2.0.0

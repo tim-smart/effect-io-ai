@@ -3,7 +3,8 @@ Module: `Schema`<br />
 
 ## Schema.Date
 
-Companion type for `Date`.
+Type-level representation of the schema for JavaScript `Date` instances,
+including invalid dates.
 
 **Signature**
 
@@ -13,6 +14,6 @@ export interface Date extends instanceOf<globalThis.Date> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L8686)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L9040)
 
 Since v4.0.0

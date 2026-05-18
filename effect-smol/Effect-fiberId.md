@@ -5,7 +5,7 @@ Module: `Effect`<br />
 
 Access the current fiber id executing the effect.
 
-**Example**
+**Example** (Usage)
 
 ```ts
 import { Effect } from "effect"
@@ -27,6 +27,6 @@ const program = Effect.log("event").pipe(
 declare const fiberId: Effect<number, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L8238)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L8175)
 
 Since v4.0.0

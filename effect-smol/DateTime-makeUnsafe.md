@@ -11,19 +11,22 @@ Create a `DateTime` from one of the following:
 - An object with the parts of a date
 - A `string` that can be parsed by `Date.parse`
 
-**Example**
+**Example** (Creating DateTime values unsafely)
 
 ```ts
 import { DateTime } from "effect"
 
 // from Date
-DateTime.makeUnsafe(new Date())
+const fromDate = DateTime.makeUnsafe(new Date("2024-01-01T12:00:00Z"))
+console.log(DateTime.formatIso(fromDate)) // "2024-01-01T12:00:00.000Z"
 
 // from parts
-DateTime.makeUnsafe({ year: 2024 })
+const fromParts = DateTime.makeUnsafe({ year: 2024 })
+console.log(DateTime.formatIso(fromParts)) // "2024-01-01T00:00:00.000Z"
 
 // from string
-DateTime.makeUnsafe("2024-01-01")
+const fromString = DateTime.makeUnsafe("2024-01-01")
+console.log(DateTime.formatIso(fromString)) // "2024-01-01T00:00:00.000Z"
 ```
 
 **Signature**
@@ -32,6 +35,6 @@ DateTime.makeUnsafe("2024-01-01")
 declare const makeUnsafe: <A extends DateTime.Input>(input: A) => DateTime.PreserveZone<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L459)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L606)
 
 Since v3.6.0

@@ -29,6 +29,6 @@ See also: `isObject`, `isObjectOrArray`
 declare const isObjectKeyword: (input: unknown) => input is object
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L1078)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L1073)
 
 Since v2.0.0

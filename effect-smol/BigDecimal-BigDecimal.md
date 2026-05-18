@@ -5,15 +5,15 @@ Module: `BigDecimal`<br />
 
 Represents an arbitrary precision decimal number.
 
-**Example**
+**Example** (Inspecting BigDecimal storage)
 
 ```ts
 import { BigDecimal } from "effect"
 
-const d = BigDecimal.fromNumberUnsafe(123.45)
+const d = BigDecimal.fromStringUnsafe("123.45")
 
-d.value // 12345n
-d.scale // 2
+console.log(d.value) // 12345n
+console.log(d.scale) // 2
 ```
 
 **Signature**
@@ -28,6 +28,6 @@ export interface BigDecimal extends Equal.Equal, Pipeable, Inspectable {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigDecimal.ts#L49)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigDecimal.ts#L50)
 
 Since v2.0.0

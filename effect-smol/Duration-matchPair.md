@@ -5,7 +5,7 @@ Module: `Duration`<br />
 
 Pattern matches on two `Duration`s, providing handlers that receive both values.
 
-**Example**
+**Example** (Pattern matching on duration pairs)
 
 ```ts
 import { Duration } from "effect"
@@ -24,6 +24,6 @@ console.log(sum) // 5000
 declare const matchPair: { <A, B, C>(that: Duration, options: { readonly onMillis: (self: number, that: number) => A; readonly onNanos: (self: bigint, that: bigint) => B; readonly onInfinity: (self: Duration, that: Duration) => C; }): (self: Duration) => A | B | C; <A, B, C>(self: Duration, that: Duration, options: { readonly onMillis: (self: number, that: number) => A; readonly onNanos: (self: bigint, that: bigint) => B; readonly onInfinity: (self: Duration, that: Duration) => C; }): A | B | C; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Duration.ts#L975)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Duration.ts#L1008)
 
 Since v2.0.0

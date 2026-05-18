@@ -5,7 +5,7 @@ Module: `Duration`<br />
 
 Negates the duration.
 
-**Example**
+**Example** (Negating durations)
 
 ```ts
 import { Duration } from "effect"
@@ -20,6 +20,6 @@ Duration.negate(Duration.infinity) === Duration.negativeInfinity // true
 declare const negate: (self: Duration) => Duration
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Duration.ts#L481)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Duration.ts#L493)
 
 Since v4.0.0

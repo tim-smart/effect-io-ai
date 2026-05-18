@@ -3,22 +3,21 @@ Module: `Schema`<br />
 
 ## Schema.ArrayEnsure
 
-Decodes a single value or an array of values into an array.
+Schema interface returned by `ArrayEnsure`, which normalizes a single item or
+an array of items into a readonly array.
 
-Decoding:
-- a single value is decoded as a one-element array
-- an array is decoded as-is
-
-Encoding:
-- a one-element array is encoded as a single value
-- arrays with more than one element are encoded as arrays
+**Details**
+The schema decodes from `S` or `Schema.Array(S)` and produces
+`ReadonlyArray<S["Type"]>`.
 
 **Signature**
 
 ```ts
-declare const ArrayEnsure: <S extends Top>(schema: S) => ArrayEnsure<S>
+export interface ArrayEnsure<S extends Top> extends decodeTo<$Array<toType<S>>, Union<readonly [S, $Array<S>]>> {
+  readonly "Rebuild": ArrayEnsure<S>
+}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L3329)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L3595)
 
 Since v4.0.0

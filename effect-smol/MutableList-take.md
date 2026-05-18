@@ -7,7 +7,7 @@ Takes a single element from the beginning of the MutableList.
 Returns the element if available, or the Empty symbol if the list is empty.
 The taken element is removed from the list.
 
-**Example**
+**Example** (Taking one element)
 
 ```ts
 import * as MutableList from "effect/MutableList"
@@ -54,6 +54,6 @@ function processNext<T>(
 declare const take: <A>(self: MutableList<A>) => Empty | A
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableList.ts#L755)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableList.ts#L798)
 
 Since v4.0.0

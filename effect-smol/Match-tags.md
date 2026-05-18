@@ -13,7 +13,7 @@ values to specific functions. Each handler receives the matched value and
 returns a transformed result. If all possible tags are handled, you can
 enforce exhaustiveness using `Match.exhaustive` to ensure no case is missed.
 
-**Example**
+**Example** (Mapping tag handlers)
 
 ```ts
 import { Match, pipe } from "effect"
@@ -40,6 +40,6 @@ const match = pipe(
 declare const tags: <R, Ret, P extends { readonly [Tag in Types.Tags<"_tag", R> & string]?: ((_: Extract<R, Record<"_tag", Tag>>) => Ret) | undefined; } & { readonly [Tag in Exclude<keyof P, Types.Tags<"_tag", R>>]: never; }>(fields: P) => <I, F, A, Pr>(self: Matcher<I, F, R, A, Pr, Ret>) => Matcher<I, Types.AddWithout<F, Extract<R, Record<"_tag", keyof P>>>, Types.ApplyFilters<I, Types.AddWithout<F, Extract<R, Record<"_tag", keyof P>>>>, A | ReturnType<P[keyof P] & {}>, Pr, Ret>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L1011)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L1000)
 
 Since v4.0.0

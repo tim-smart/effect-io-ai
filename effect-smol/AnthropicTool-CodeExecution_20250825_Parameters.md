@@ -3,14 +3,14 @@ Module: `AnthropicTool`<br />
 
 ## AnthropicTool.CodeExecution_20250825_Parameters
 
-Simple code execution parameter.
+Input payload for the 2025-08-25 Anthropic code execution tool.
 
 **Signature**
 
 ```ts
-declare const CodeExecution_20250825_Parameters: Schema.Struct<{ readonly code: Schema.String; }>
+type CodeExecution_20250825_Parameters = typeof CodeExecution_20250825_Parameters.Type
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L219)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L241)
 
-Since v1.0.0
+Since v4.0.0

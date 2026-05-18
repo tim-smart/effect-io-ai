@@ -11,7 +11,7 @@ Finalizers are useful for cleanup operations that must run regardless of
 whether the effect succeeds or fails. They're commonly used for resource
 cleanup, logging, or other side effects that should always occur.
 
-**Example**
+**Example** (Usage)
 
 ```ts
 import { Console, Effect, Exit } from "effect"
@@ -47,6 +47,6 @@ Effect.runPromise(program).then(console.log)
 declare const addFinalizer: <R>(finalizer: (exit: Exit.Exit<unknown, unknown>) => Effect<void, never, R>) => Effect<void, never, R | Scope>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L6347)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L6242)
 
 Since v2.0.0

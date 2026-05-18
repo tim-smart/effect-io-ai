@@ -3,7 +3,12 @@ Module: `Graph`<br />
 
 ## Graph.Proto
 
-Graph prototype interface.
+Common structural interface shared by immutable and mutable graphs.
+
+**Details**
+
+Contains the node and edge maps, adjacency indexes, allocation counters, and
+shared protocols used by both `Graph` and `MutableGraph`.
 
 **Signature**
 
@@ -20,6 +25,6 @@ export interface Proto<out N, out E> extends Iterable<readonly [NodeIndex, N]>, 
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Graph.ts#L61)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Graph.ts#L116)
 
 Since v4.0.0

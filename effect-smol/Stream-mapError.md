@@ -5,7 +5,7 @@ Module: `Stream`<br />
 
 Transforms the errors emitted by this stream using `f`.
 
-**Example**
+**Example** (Mapping stream errors)
 
 ```ts
 import { Console, Effect, Stream } from "effect"
@@ -29,6 +29,6 @@ Effect.runPromise(program)
 declare const mapError: { <E, E2>(f: (error: E) => E2): <A, R>(self: Stream<A, E, R>) => Stream<A, E2, R>; <A, E, R, E2>(self: Stream<A, E, R>, f: (error: E) => E2): Stream<A, E2, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L5453)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L5650)
 
 Since v2.0.0

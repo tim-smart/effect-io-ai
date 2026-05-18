@@ -9,28 +9,36 @@ Contains metadata about a file or directory including type, timestamps,
 permissions, and size information. This structure is returned by file
 stat operations.
 
-**Example**
+**Example** (Inspecting file information)
 
 ```ts
-import { Console, Effect, FileSystem, Option } from "effect"
+import { Effect, FileSystem, Option } from "effect"
 
 const program = Effect.gen(function*() {
   const fs = yield* FileSystem.FileSystem
 
-  const info: FileSystem.File.Info = yield* fs.stat("./data.txt")
+  const path = yield* fs.makeTempFile({ prefix: "info-" })
+  yield* fs.writeFileString(path, "hello")
 
-  yield* Console.log(`File type: ${info.type}`)
-  yield* Console.log(`File size: ${info.size} bytes`)
-  yield* Console.log(`Mode: ${info.mode.toString(8)}`) // Octal permissions
+  const info: FileSystem.File.Info = yield* fs.stat(path)
 
-  // Handle optional timestamps
-  const mtime = Option.getOrElse(info.mtime, () => new Date(0))
-  yield* Console.log(`Modified: ${mtime.toISOString()}`)
+  console.log(`File type: ${info.type}`) // "File type: File"
+  console.log(`File size: ${info.size} bytes`) // "File size: 5 bytes"
+  console.log(`Mode: ${info.mode.toString(8)}`) // Octal permissions
+
+  // Handle optional timestamps without inventing a fallback date
+  const modified = Option.match(info.mtime, {
+    onNone: () => "unavailable",
+    onSome: (mtime) => mtime.toISOString()
+  })
+  console.log(`Modified: ${modified}`)
 
   // Check if it's a regular file
   if (info.type === "File") {
-    yield* Console.log("Processing regular file...")
+    console.log("Processing regular file...") // "Processing regular file..."
   }
+
+  yield* fs.remove(path)
 })
 ```
 
@@ -55,6 +63,6 @@ export interface Info {
   }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FileSystem.ts#L1128)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FileSystem.ts#L1157)
 
 Since v4.0.0

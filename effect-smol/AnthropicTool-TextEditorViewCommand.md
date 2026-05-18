@@ -3,17 +3,14 @@ Module: `AnthropicTool`<br />
 
 ## AnthropicTool.TextEditorViewCommand
 
-View the contents of a file or list directory contents.
-
-When used on a file: Returns the file contents, optionally limited to a line range.
-When used on a directory: Lists all files and subdirectories.
+Text editor command payload for viewing file contents or listing directory contents.
 
 **Signature**
 
 ```ts
-declare const TextEditorViewCommand: Schema.Struct<{ readonly command: Schema.Literal<"view">; readonly path: Schema.String; readonly view_range: Schema.optional<Schema.Tuple<readonly [Schema.Number, Schema.Number]>>; }>
+type TextEditorViewCommand = typeof TextEditorViewCommand.Type
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L1021)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L1108)
 
-Since v1.0.0
+Since v4.0.0

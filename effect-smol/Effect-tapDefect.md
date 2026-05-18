@@ -3,22 +3,16 @@ Module: `Effect`<br />
 
 ## Effect.tapDefect
 
-Inspect severe errors or defects (non-recoverable failures) in an effect.
+Runs an effectful operation when the source effect dies with a defect.
 
 **Details**
 
-This function is specifically designed to handle and inspect defects, which
-are critical failures in your program, such as unexpected runtime exceptions
-or system-level errors. Unlike normal recoverable errors, defects typically
-indicate serious issues that cannot be addressed through standard error
-handling.
+Use this for diagnostics such as logging unexpected thrown exceptions or
+values passed to `die`. Recoverable failures are not handled. When the
+operation succeeds, the original defect is preserved; if the operation fails,
+its error is also represented in the returned effect.
 
-When a defect occurs in an effect, the function you provide to this function
-will be executed, allowing you to log, monitor, or handle the defect in some
-way. Importantly, this does not alter the main result of the effect. If no
-defect occurs, the effect behaves as if this function was not used.
-
-**Example**
+**Example** (Usage)
 
 ```ts
 import { Console, Effect } from "effect"
@@ -58,6 +52,6 @@ Effect.runFork(tapping2)
 declare const tapDefect: { <E, B, E2, R2>(f: (defect: unknown) => Effect<B, E2, R2>): <A, R>(self: Effect<A, E, R>) => Effect<A, E | E2, R | R2>; <A, E, R, B, E2, R2>(self: Effect<A, E, R>, f: (defect: unknown) => Effect<B, E2, R2>): Effect<A, E | E2, R | R2>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L3748)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L3640)
 
 Since v2.0.0

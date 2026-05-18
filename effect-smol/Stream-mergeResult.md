@@ -12,7 +12,7 @@ This API replaces the following from Effect 3.x:
 
 - `Stream.mergeEither`
 
-**Example**
+**Example** (Merging streams into results)
 
 ```ts
 import { Console, Effect, Result, Stream } from "effect"
@@ -45,6 +45,6 @@ Effect.runPromise(program)
 declare const mergeResult: { <A2, E2, R2>(that: Stream<A2, E2, R2>): <A, E, R>(self: Stream<A, E, R>) => Stream<Result.Result<A, A2>, E2 | E, R2 | R>; <A, E, R, A2, E2, R2>(self: Stream<A, E, R>, that: Stream<A2, E2, R2>): Stream<Result.Result<A, A2>, E | E2, R | R2>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L3108)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L3243)
 
 Since v2.0.0

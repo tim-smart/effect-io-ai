@@ -3,9 +3,12 @@ Module: `Effect`<br />
 
 ## Effect.fromOption
 
-Converts an `Option` to an `Effect`.
+Converts an `Option` into an `Effect`.
 
-**Example**
+`Option.some` becomes a successful effect with the contained value, while
+`Option.none` becomes a failed effect with `NoSuchElementError`.
+
+**Example** (Usage)
 
 ```ts
 import { Effect, Option } from "effect"
@@ -27,6 +30,6 @@ Effect.runPromiseExit(effect2).then(console.log)
 declare const fromOption: <A>(option: Option<A>) => Effect<A, Cause.NoSuchElementError>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L1869)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L1747)
 
 Since v4.0.0

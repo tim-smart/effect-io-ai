@@ -3,24 +3,17 @@ Module: `AiError`<br />
 
 ## AiError.ProviderMetadata
 
-Schema for provider-specific metadata which can be attached to error reasons.
+Type of provider-specific metadata attached to AI error reasons.
 
-Provider-specific metadata is namespaced by provider and has the structure:
-
-```
-{
-  "<provider-name>": {
-    // Provider-specific metadata (e.g. errorCode, requestId, etc.)
-  }
-}
-```
+Metadata is keyed by provider name, and each provider value is either mutable
+JSON metadata or `null`.
 
 **Signature**
 
 ```ts
-declare const ProviderMetadata: Schema.$Record<Schema.String, Schema.NullOr<Schema.Codec<Schema.MutableJson, Schema.MutableJson, never, never>>>
+type ProviderMetadata = typeof ProviderMetadata.Type
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AiError.ts#L254)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AiError.ts#L274)
 
-Since v1.0.0
+Since v4.0.0

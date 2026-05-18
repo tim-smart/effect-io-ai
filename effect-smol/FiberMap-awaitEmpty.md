@@ -6,7 +6,7 @@ Module: `FiberMap`<br />
 Wait for the FiberMap to be empty.
 This will wait for all currently running fibers to complete.
 
-**Example**
+**Example** (Waiting for an empty map)
 
 ```ts
 import { Effect, FiberMap } from "effect"
@@ -34,6 +34,6 @@ const program = Effect.gen(function*() {
 declare const awaitEmpty: <K, A, E>(self: FiberMap<K, A, E>) => Effect.Effect<void, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FiberMap.ts#L911)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FiberMap.ts#L1014)
 
 Since v3.13.0

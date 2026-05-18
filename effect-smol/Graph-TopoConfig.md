@@ -3,7 +3,13 @@ Module: `Graph`<br />
 
 ## Graph.TopoConfig
 
-Configuration options for topological sort iterator.
+Configuration for the topological sort iterator.
+
+**Details**
+
+`initials` optionally supplies the node indices used as initial queue
+entries. When omitted, topological sorting starts from all nodes with zero
+in-degree.
 
 **Signature**
 
@@ -13,6 +19,6 @@ export interface TopoConfig {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Graph.ts#L3829)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Graph.ts#L4022)
 
 Since v4.0.0

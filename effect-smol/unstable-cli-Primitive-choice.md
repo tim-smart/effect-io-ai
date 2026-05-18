@@ -5,7 +5,7 @@ Module: `Primitive`<br />
 
 Creates a primitive that accepts only specific choice values mapped to custom types.
 
-**Example**
+**Example** (Parsing choices)
 
 ```ts
 import { Effect } from "effect"
@@ -35,6 +35,6 @@ const parseLogLevel = Effect.gen(function*() {
 declare const choice: <A>(choices: ReadonlyArray<readonly [string, A]>) => Primitive<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Primitive.ts#L287)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Primitive.ts#L298)
 
 Since v4.0.0

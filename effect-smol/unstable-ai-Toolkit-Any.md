@@ -14,6 +14,6 @@ export interface Any {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Toolkit.ts#L161)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Toolkit.ts#L164)
 
-Since v1.0.0
+Since v4.0.0

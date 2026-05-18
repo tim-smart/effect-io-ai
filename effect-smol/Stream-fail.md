@@ -5,7 +5,7 @@ Module: `Stream`<br />
 
 Terminates with the specified error.
 
-**Example**
+**Example** (Failing a stream)
 
 ```ts
 import { Console, Effect, Stream } from "effect"
@@ -26,6 +26,6 @@ Effect.runPromise(program)
 declare const fail: <E>(error: E) => Stream<never, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L904)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L958)
 
 Since v2.0.0

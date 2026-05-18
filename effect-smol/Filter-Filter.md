@@ -8,7 +8,7 @@ Represents a filter function that can transform inputs to outputs or filter them
 A filter takes an input value and either returns a boxed pass value or
 the special `fail` type to indicate the value should be filtered out.
 
-**Example**
+**Example** (Defining a positive number filter)
 
 ```ts
 import { Filter, Result } from "effect"
@@ -28,6 +28,6 @@ export interface Filter<in Input, out Pass = Input, out Fail = Input> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Filter.ts#L32)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Filter.ts#L67)
 
 Since v4.0.0

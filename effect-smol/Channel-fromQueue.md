@@ -5,7 +5,7 @@ Module: `Channel`<br />
 
 Create a channel from a queue
 
-**Example**
+**Example** (Creating channels from queues)
 
 ```ts
 import { Channel, Data, Effect, Queue } from "effect"
@@ -44,6 +44,6 @@ const slidingProgram = Effect.gen(function*() {
 declare const fromQueue: <A, E>(queue: Queue.Dequeue<A, E>) => Channel<A, Exclude<E, Cause.Done>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L1130)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L1224)
 
 Since v4.0.0

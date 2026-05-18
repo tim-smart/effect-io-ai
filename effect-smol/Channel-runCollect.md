@@ -5,7 +5,7 @@ Module: `Channel`<br />
 
 Runs a channel and collects all output elements into an array.
 
-**Example**
+**Example** (Collecting channel output)
 
 ```ts
 import { Channel, Data } from "effect"
@@ -29,6 +29,6 @@ const collectEffect = Channel.runCollect(numbersChannel)
 declare const runCollect: <OutElem, OutErr, OutDone, Env>(self: Channel<OutElem, OutErr, OutDone, unknown, unknown, unknown, Env>) => Effect.Effect<Array<OutElem>, OutErr, Env>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L7218)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L7559)
 
 Since v2.0.0

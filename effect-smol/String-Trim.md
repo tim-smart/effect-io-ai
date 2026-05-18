@@ -5,7 +5,7 @@ Module: `String`<br />
 
 Type-level representation of trimming whitespace from both ends of a string.
 
-**Example**
+**Example** (Trimming whitespace at the type level)
 
 ```ts
 import type { String } from "effect"
@@ -19,6 +19,6 @@ type Result = String.Trim<"  hello  "> // "hello"
 type Trim<A> = TrimEnd<TrimStart<A>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L242)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L257)
 
 Since v2.0.0

@@ -5,7 +5,7 @@ Module: `Effect`<br />
 
 Returns the current tracer from the context.
 
-**Example**
+**Example** (Usage)
 
 ```ts
 import { Effect } from "effect"
@@ -23,6 +23,6 @@ const program = Effect.gen(function*() {
 declare const tracer: Effect<Tracer, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L7443)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L7328)
 
 Since v2.0.0

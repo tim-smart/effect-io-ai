@@ -5,7 +5,7 @@ Module: `Iterable`<br />
 
 Append an element to the end of an `Iterable`, creating a new `Iterable`.
 
-**Example**
+**Example** (Appending an element)
 
 ```ts
 import { Iterable } from "effect"
@@ -28,6 +28,6 @@ console.log(Array.from(result)) // [1, 2, 3, 4]
 declare const append: { <B>(last: B): <A>(self: Iterable<A>) => Iterable<A | B>; <A, B>(self: Iterable<A>, last: B): Iterable<A | B>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Iterable.ts#L256)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Iterable.ts#L276)
 
 Since v2.0.0

@@ -5,7 +5,7 @@ Module: `Array`<br />
 
 Constructs an array type preserving non-emptiness.
 
-**Example**
+**Example** (Preserving non-emptiness)
 
 ```ts
 import type { Array } from "effect"
@@ -21,6 +21,6 @@ type With<S, A> = S extends NonEmptyReadonlyArray<any> ? NonEmptyArray<A>
     : Array<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L2979)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L2988)
 
 Since v2.0.0

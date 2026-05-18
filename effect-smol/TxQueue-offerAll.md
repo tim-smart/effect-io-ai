@@ -3,17 +3,20 @@ Module: `TxQueue`<br />
 
 ## TxQueue.offerAll
 
-Offers multiple items to the queue.
+Offers multiple items to the queue, returning the items that were not
+accepted.
 
-Returns an array of items that were rejected (not added to the queue).
+Each item follows `offer` semantics: bounded queues retry while full,
+dropping queues reject new items when full, sliding queues evict old items to
+accept new items, and closing or done queues reject all items.
 
 **Mutation behavior**: This function mutates the original TxQueue by adding
 items according to the queue's strategy. It does not return a new TxQueue reference.
 
-**Example**
+**Example** (Offering multiple values)
 
 ```ts
-import { Chunk, Effect, TxQueue } from "effect"
+import { Effect, TxQueue } from "effect"
 
 const program = Effect.gen(function*() {
   const queue = yield* TxQueue.bounded<number>(10)
@@ -31,6 +34,6 @@ const program = Effect.gen(function*() {
 declare const offerAll: { <A, E>(values: Iterable<A>): (self: TxEnqueue<A, E>) => Effect.Effect<Array<A>>; <A, E>(self: TxEnqueue<A, E>, values: Iterable<A>): Effect.Effect<Array<A>>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxQueue.ts#L642)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxQueue.ts#L616)
 
 Since v4.0.0

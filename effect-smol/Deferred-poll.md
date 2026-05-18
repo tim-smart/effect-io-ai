@@ -7,7 +7,7 @@ Returns the current completion effect as an `Option`. This returns
 `Option.some(effect)` when the `Deferred` is completed, `Option.none()`
 otherwise.
 
-**Example**
+**Example** (Polling Deferred completion)
 
 ```ts
 import { Deferred, Effect } from "effect"
@@ -29,6 +29,6 @@ const program = Effect.gen(function*() {
 declare const poll: <A, E>(self: Deferred<A, E>) => Effect<Option.Option<Effect<A, E>>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Deferred.ts#L600)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Deferred.ts#L665)
 
 Since v2.0.0

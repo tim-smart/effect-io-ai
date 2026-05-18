@@ -8,7 +8,7 @@ Creates untraced function effects with eager evaluation optimization.
 Executes generator functions eagerly when all yielded effects are synchronous,
 stopping at the first async effect and deferring to normal execution.
 
-**Example**
+**Example** (Usage)
 
 ```ts
 import { Effect } from "effect"
@@ -28,6 +28,6 @@ const effect = computation() // Executed immediately if all effects are sync
 declare const fnUntracedEager: fn.Untraced
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L14630)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L14586)
 
 Since v4.0.0

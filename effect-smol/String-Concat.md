@@ -5,7 +5,7 @@ Module: `String`<br />
 
 Concatenates two strings at the type level.
 
-**Example**
+**Example** (Concatenating string literal types)
 
 ```ts
 import type { String } from "effect"
@@ -20,6 +20,6 @@ type Result = String.Concat<"hello", "world"> // "helloworld"
 type `${A}${B}` = `${A}${B}`
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L108)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L113)
 
 Since v2.0.0

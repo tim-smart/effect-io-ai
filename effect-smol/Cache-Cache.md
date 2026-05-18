@@ -6,7 +6,7 @@ Module: `Cache`<br />
 A cache interface that provides a mutable key-value store with automatic TTL management,
 capacity limits, and lookup functions for cache misses.
 
-**Example**
+**Example** (Creating a basic cache)
 
 ```ts
 import { Cache, Effect } from "effect"
@@ -27,7 +27,7 @@ const program = Effect.gen(function*() {
 })
 ```
 
-**Example**
+**Example** (Handling lookup failures)
 
 ```ts
 import { Cache, Effect } from "effect"
@@ -50,7 +50,7 @@ const program = Effect.gen(function*() {
 })
 ```
 
-**Example**
+**Example** (Using complex keys with TTL)
 
 ```ts
 import { Cache, Data, Duration, Effect } from "effect"
@@ -84,6 +84,6 @@ export interface Cache<in out Key, in out A, in out E = never, out R = never> ex
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cache.ts#L93)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cache.ts#L131)
 
 Since v4.0.0

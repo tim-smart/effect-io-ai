@@ -3,10 +3,14 @@ Module: `Schedule`<br />
 
 ## Schedule.collectOutputs
 
-Returns a new `Schedule` that always recurs, collecting all outputs of the
-schedule into an array.
+Returns a new `Schedule` that follows `self` and outputs the schedule outputs
+seen so far as an array.
 
-**Example**
+**Details**
+This does not make the schedule run forever. The collected schedule stops
+when `self` stops and fails when `self` fails.
+
+**Example** (Collecting schedule outputs)
 
 ```ts
 import { Console, Effect, Schedule } from "effect"

@@ -5,7 +5,7 @@ Module: `Channel`<br />
 
 Creates a `Channel` that emits all elements from a chunk.
 
-**Example**
+**Example** (Creating channels from chunks)
 
 ```ts
 import { Channel, Chunk } from "effect"
@@ -21,6 +21,6 @@ const channel = Channel.fromChunk(chunk)
 declare const fromChunk: <A>(chunk: Chunk.Chunk<A>) => Channel<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L656)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L715)
 
 Since v2.0.0

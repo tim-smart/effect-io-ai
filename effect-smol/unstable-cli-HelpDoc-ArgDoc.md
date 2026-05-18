@@ -5,7 +5,7 @@ Module: `HelpDoc`<br />
 
 Documentation for a positional argument
 
-**Example**
+**Example** (Documenting positional arguments)
 
 ```ts
 import { Option as O, Context } from "effect"
@@ -68,6 +68,6 @@ export interface ArgDoc {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HelpDoc.ts#L286)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HelpDoc.ts#L311)
 
 Since v4.0.0

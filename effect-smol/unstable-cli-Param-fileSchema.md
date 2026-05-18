@@ -5,7 +5,7 @@ Module: `Param`<br />
 
 Creates a parameter that reads and validates file content using a schema.
 
-**Example**
+**Example** (Validating file contents)
 
 ```ts
 import { Schema } from "effect"
@@ -36,6 +36,6 @@ const yamlConfig = Param.fileSchema(Param.flagKind, "config", configSchema, {
 declare const fileSchema: <Kind extends ParamKind, A>(kind: Kind, name: string, schema: Schema.Decoder<A>, options?: Primitive.FileSchemaOptions | undefined) => Param<Kind, A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Param.ts#L765)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Param.ts#L844)
 
 Since v4.0.0

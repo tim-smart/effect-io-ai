@@ -3,7 +3,10 @@ Module: `Queue`<br />
 
 ## Queue.Queue.Variance
 
-Variance interface for Queue types, defining the type parameter constraints.
+Type-level variance marker for `Queue`.
+
+A full `Queue` is invariant in both `A` and `E` because the same handle can
+both produce and consume values and failures.
 
 **Signature**
 
@@ -14,6 +17,6 @@ export interface Variance<A, E> {
   }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Queue.ts#L228)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Queue.ts#L302)
 
 Since v3.8.0

@@ -7,12 +7,13 @@
     },
     "project": "@effect/sql-d1",
     "name": "TypeId",
+    "description": "Unique runtime identifier used to tag `D1Client` values.",
     "deprecated": false,
     "examples": [],
-    "since": "1.0.0",
+    "since": "4.0.0",
     "category": "type ids",
     "signature": "declare const TypeId: \"~@effect/sql-d1/D1Client\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/d1/src/D1Client.ts#L29"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/d1/src/D1Client.ts#L52"
   },
   {
     "_tag": "Constant",
@@ -22,12 +23,13 @@
     },
     "project": "@effect/sql-d1",
     "name": "D1Client",
+    "description": "Context tag used to access the `D1Client` service.",
     "deprecated": false,
     "examples": [],
-    "since": "1.0.0",
+    "since": "4.0.0",
     "category": "tags",
     "signature": "declare const D1Client: Context.Service<D1Client, D1Client>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/d1/src/D1Client.ts#L53"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/d1/src/D1Client.ts#L82"
   },
   {
     "_tag": "Function",
@@ -37,12 +39,13 @@
     },
     "project": "@effect/sql-d1",
     "name": "make",
+    "description": "Creates a scoped Cloudflare D1 SQL client. Prepared statements are cached, while transactions and streaming queries are not supported by this driver.",
     "deprecated": false,
     "examples": [],
-    "since": "1.0.0",
+    "since": "4.0.0",
     "category": "constructor",
     "signature": "declare const make: (options: D1ClientConfig) => Effect.Effect<D1Client, never, Scope.Scope | Reactivity.Reactivity>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/d1/src/D1Client.ts#L73"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/d1/src/D1Client.ts#L106"
   },
   {
     "_tag": "Function",
@@ -52,12 +55,13 @@
     },
     "project": "@effect/sql-d1",
     "name": "layerConfig",
+    "description": "Creates a layer from a `Config`-wrapped D1 client configuration, providing both `D1Client` and `SqlClient`.",
     "deprecated": false,
     "examples": [],
-    "since": "1.0.0",
+    "since": "4.0.0",
     "category": "layers",
     "signature": "declare const layerConfig: (config: Config.Wrap<D1ClientConfig>) => Layer.Layer<D1Client | Client.SqlClient, Config.ConfigError>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/d1/src/D1Client.ts#L193"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/d1/src/D1Client.ts#L228"
   },
   {
     "_tag": "Function",
@@ -67,12 +71,13 @@
     },
     "project": "@effect/sql-d1",
     "name": "layer",
+    "description": "Creates a layer from a concrete D1 client configuration, providing both `D1Client` and `SqlClient`.",
     "deprecated": false,
     "examples": [],
-    "since": "1.0.0",
+    "since": "4.0.0",
     "category": "layers",
     "signature": "declare const layer: (config: D1ClientConfig) => Layer.Layer<D1Client | Client.SqlClient, Config.ConfigError>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/d1/src/D1Client.ts#L211"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/d1/src/D1Client.ts#L248"
   },
   {
     "_tag": "Interface",
@@ -82,12 +87,13 @@
     },
     "project": "@effect/sql-d1",
     "name": "D1Client",
+    "description": "Cloudflare D1 SQL client service, extending `SqlClient` with its D1 configuration and no `updateValues` support.",
     "deprecated": false,
     "examples": [],
-    "since": "1.0.0",
+    "since": "4.0.0",
     "category": "models",
     "signature": "export interface D1Client extends Client.SqlClient {\n  readonly [TypeId]: TypeId\n  readonly config: D1ClientConfig\n\n  /** Not supported in d1 */\n  readonly updateValues: never\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/d1/src/D1Client.ts#L41"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/d1/src/D1Client.ts#L68"
   },
   {
     "_tag": "Interface",
@@ -97,12 +103,13 @@
     },
     "project": "@effect/sql-d1",
     "name": "D1ClientConfig",
+    "description": "Configuration for a Cloudflare D1 client, including the `D1Database`, prepared statement cache settings, span attributes, and query/result name transforms.",
     "deprecated": false,
     "examples": [],
-    "since": "1.0.0",
+    "since": "4.0.0",
     "category": "models",
     "signature": "export interface D1ClientConfig {\n  readonly db: D1Database\n  readonly prepareCacheSize?: number | undefined\n  readonly prepareCacheTTL?: Duration.Input | undefined\n  readonly spanAttributes?: Record<string, unknown> | undefined\n\n  readonly transformResultNames?: ((str: string) => string) | undefined\n  readonly transformQueryNames?: ((str: string) => string) | undefined\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/d1/src/D1Client.ts#L59"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/d1/src/D1Client.ts#L90"
   },
   {
     "_tag": "TypeAlias",
@@ -112,12 +119,13 @@
     },
     "project": "@effect/sql-d1",
     "name": "TypeId",
+    "description": "Type-level literal for the `D1Client` runtime identifier.",
     "deprecated": false,
     "examples": [],
-    "since": "1.0.0",
+    "since": "4.0.0",
     "category": "type ids",
     "signature": "type TypeId = \"~@effect/sql-d1/D1Client\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/d1/src/D1Client.ts#L35"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/d1/src/D1Client.ts#L60"
   },
   {
     "_tag": "Export",
@@ -130,7 +138,7 @@
     "description": "Re-exports all named exports from the \"./D1Client.ts\" module as `D1Client`.",
     "deprecated": false,
     "examples": [],
-    "since": "1.0.0",
+    "since": "4.0.0",
     "category": null,
     "signature": "export * as D1Client from \"./D1Client.ts\"",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/d1/src/index.ts#L10"

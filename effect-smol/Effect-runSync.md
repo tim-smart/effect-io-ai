@@ -3,21 +3,26 @@ Module: `Effect`<br />
 
 ## Effect.runSync
 
-Executes an effect synchronously, running it immediately and returning the
-result.
+Executes an effect synchronously and returns its success value.
 
 **When to Use**
 
-Use `runSync` to run an effect that does not fail and does not include
-any asynchronous operations.
+Use `runSync` only for effects that can complete synchronously.
 
-If the effect fails or involves asynchronous work, it will throw an error,
-and execution will stop where the failure or async operation occurs.
+**Details**
 
-**Example**
+If the effect fails, dies, is interrupted, or performs asynchronous work,
+`runSync` throws a `FiberFailure` instead of returning a value. Use
+`runSyncExit` when you want the failure captured as an `Exit`.
+
+**See**
+
+- `runSyncExit` for a version that returns an `Exit` type instead of
+throwing an error.
+
+**Example** (Synchronous Logging)
 
 ```ts
-// Title: Synchronous Logging
 import { Effect } from "effect"
 
 const program = Effect.sync(() => {
@@ -32,10 +37,9 @@ console.log(result)
 // Output: 1
 ```
 
-**Example**
+**Example** (Incorrect Usage with Failing or Async Effects)
 
 ```ts
-// Title: Incorrect Usage with Failing or Async Effects
 import { Effect } from "effect"
 
 try {
@@ -57,17 +61,12 @@ try {
 // (FiberFailure) AsyncFiberException: Fiber #0 cannot be resolved synchronously. This is caused by using runSync on an effect that performs async work
 ```
 
-**See**
-
-- `runSyncExit` for a version that returns an `Exit` type instead of
-throwing an error.
-
 **Signature**
 
 ```ts
 declare const runSync: <A, E>(effect: Effect<A, E>) => A
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L8659)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L8588)
 
 Since v2.0.0

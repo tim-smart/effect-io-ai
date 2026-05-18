@@ -32,6 +32,6 @@ or advanced teardown capabilities.
 declare const runMain: { (options?: { readonly disableErrorReporting?: boolean | undefined; readonly teardown?: Teardown | undefined; }): <E, A>(effect: Effect<A, E>) => void; <E, A>(effect: Effect<A, E>, options?: { readonly disableErrorReporting?: boolean | undefined; readonly teardown?: Teardown | undefined; }): void; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunRuntime.ts#L35)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunRuntime.ts#L51)
 
-Since v1.0.0
+Since v4.0.0

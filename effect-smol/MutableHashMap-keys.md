@@ -3,9 +3,9 @@ Module: `MutableHashMap`<br />
 
 ## MutableHashMap.keys
 
-Extracts all keys from the MutableHashMap into an array.
+Returns an iterable over the keys in the `MutableHashMap`.
 
-**Example**
+**Example** (Reading keys)
 
 ```ts
 import * as MutableHashMap from "effect/MutableHashMap"
@@ -29,6 +29,6 @@ const hasRequiredKeys = allKeys.includes("apple") && allKeys.includes("banana")
 declare const keys: <K, V>(self: MutableHashMap<K, V>) => Iterable<K>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableHashMap.ts#L262)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableHashMap.ts#L278)
 
 Since v3.8.0

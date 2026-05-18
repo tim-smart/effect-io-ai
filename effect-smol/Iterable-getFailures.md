@@ -3,9 +3,10 @@ Module: `Iterable`<br />
 
 ## Iterable.getFailures
 
-Retrieves the `Err` values from an `Iterable` of `Result`s.
+Returns a lazy iterable containing the failure values from an iterable of
+`Result`s, skipping successful results.
 
-**Example**
+**Example** (Extracting failures)
 
 ```ts
 import { Iterable } from "effect"
@@ -30,6 +31,6 @@ assert.deepStrictEqual(
 declare const getFailures: <R0, L>(self: Iterable<Result<R0, L>>) => Iterable<L>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Iterable.ts#L1701)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Iterable.ts#L1753)
 
 Since v2.0.0

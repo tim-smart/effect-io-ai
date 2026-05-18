@@ -3,10 +3,15 @@ Module: `FiberMap`<br />
 
 ## FiberMap.makeRuntimePromise
 
-Create an Effect run function that is backed by a FiberMap.
-Returns a Promise instead of a Fiber for more convenient use with async/await.
+Creates a scoped run function that forks effects into a new `FiberMap` and
+returns a `Promise` for each effect result.
 
-**Example**
+Each call stores the fiber under the supplied key, interrupting any previous
+fiber for that key unless `onlyIfMissing` is set. The returned Promise
+resolves with the effect's success value or rejects with the squashed failure
+cause.
+
+**Example** (Creating a promise runtime)
 
 ```ts
 import { Effect, FiberMap } from "effect"
@@ -32,6 +37,6 @@ const program = Effect.gen(function*() {
 declare const makeRuntimePromise: <R, K, A = unknown, E = unknown>() => Effect.Effect<(<XE extends E, XA extends A>(key: K, effect: Effect.Effect<XA, XE, R>, options?: (Effect.RunOptions & { readonly onlyIfMissing?: boolean | undefined; }) | undefined) => Promise<XA>), never, Scope.Scope | R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FiberMap.ts#L223)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FiberMap.ts#L277)
 
 Since v3.13.0

@@ -3,17 +3,12 @@ Module: `Schema`<br />
 
 ## Schema.isUppercased
 
-Validates that a string contains only uppercase characters.
+Validates that a string is unchanged by JavaScript's `toUpperCase()`.
 
-**JSON Schema**
-
-This check corresponds to a `pattern` constraint in JSON Schema that matches
-strings with only uppercase characters.
-
-**Arbitrary**
-
-When generating test data with fast-check, this applies a `patterns`
-constraint to ensure generated strings contain only uppercase characters.
+**Details**
+This accepts empty strings and characters that do not have lowercase forms,
+such as digits, punctuation, and whitespace. It rejects strings that would
+change when uppercased.
 
 **Signature**
 
@@ -21,6 +16,6 @@ constraint to ensure generated strings contain only uppercase characters.
 declare const isUppercased: (annotations?: Annotations.Filter) => AST.Filter<string>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L5452)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L5738)
 
 Since v4.0.0

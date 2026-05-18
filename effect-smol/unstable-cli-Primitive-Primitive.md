@@ -5,7 +5,7 @@ Module: `Primitive`<br />
 
 Represents a primitive type that can parse string input into a typed value.
 
-**Example**
+**Example** (Parsing values with primitives)
 
 ```ts
 import { Effect } from "effect"
@@ -37,6 +37,6 @@ export interface Primitive<out A> extends Primitive.Variance<A> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Primitive.ts#L59)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Primitive.ts#L60)
 
 Since v4.0.0

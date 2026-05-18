@@ -5,7 +5,7 @@ Module: `Number`<br />
 
 Takes an `Iterable` of `number`s and returns their multiplication as a single `number`.
 
-**Example**
+**Example** (Multiplying an iterable)
 
 ```ts
 import { multiplyAll } from "effect/Number"
@@ -20,6 +20,6 @@ assert.deepStrictEqual(multiplyAll([2, 3, 4]), 24)
 declare const multiplyAll: (collection: Iterable<number>) => number
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Number.ts#L465)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Number.ts#L486)
 
 Since v2.0.0

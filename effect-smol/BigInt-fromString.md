@@ -8,7 +8,7 @@ Converts a string to a `bigint`.
 If the string is empty or contains characters that cannot be converted into a
 `bigint`, it returns `Option.none()`.
 
-**Example**
+**Example** (Parsing strings as bigints)
 
 ```ts
 import { BigInt } from "effect"
@@ -24,6 +24,6 @@ BigInt.fromString("a") // Option.none()
 declare const fromString: (s: string) => Option.Option<bigint>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigInt.ts#L648)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigInt.ts#L683)
 
 Since v2.4.12

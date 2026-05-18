@@ -3,10 +3,13 @@ Module: `MutableList`<br />
 
 ## MutableList.remove
 
-Removes all occurrences of a specific value from the MutableList.
-This operation modifies the list in place.
+Removes all occurrences of a value from the `MutableList` using JavaScript
+strict equality semantics.
 
-**Example**
+The list is modified in place. Values are compared with `!==`, so this does
+not use Effect structural equality.
+
+**Example** (Removing matching values)
 
 ```ts
 import * as MutableList from "effect/MutableList"
@@ -19,12 +22,13 @@ console.log(list.length) // 5
 // Remove all occurrences of "apple"
 MutableList.remove(list, "apple")
 
-console.log(list.length) // 2
 console.log(MutableList.takeAll(list)) // ["banana", "cherry"]
 
 // Remove non-existent value (no effect)
-MutableList.remove(list, "grape")
-console.log(list.length) // 2
+const colors = MutableList.make<string>()
+MutableList.appendAll(colors, ["red", "blue"])
+MutableList.remove(colors, "green")
+console.log(MutableList.takeAll(colors)) // ["red", "blue"]
 
 // Real-world example: removing completed tasks
 const tasks = MutableList.make<{ id: number; status: string }>()
@@ -37,7 +41,7 @@ MutableList.appendAll(tasks, [
 
 // Remove completed tasks by filtering status
 MutableList.filter(tasks, (task) => task.status !== "completed")
-console.log(MutableList.takeAll(tasks)) // Only pending tasks
+console.log(MutableList.takeAll(tasks).map((task) => task.id)) // [1, 3]
 ```
 
 **Signature**
@@ -46,6 +50,6 @@ console.log(MutableList.takeAll(tasks)) // Only pending tasks
 declare const remove: <A>(self: MutableList<A>, value: A) => void
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableList.ts#L899)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableList.ts#L959)
 
 Since v4.0.0

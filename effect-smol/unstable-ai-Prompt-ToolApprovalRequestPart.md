@@ -9,7 +9,7 @@ Stored in assistant messages when a tool requires user approval before
 execution. The user responds with a `ToolApprovalResponsePart` in a tool
 message.
 
-**Example**
+**Example** (Creating tool approval requests)
 
 ```ts
 import { Prompt } from "effect/unstable/ai"
@@ -38,6 +38,6 @@ export interface ToolApprovalRequestPart extends BasePart<"tool-approval-request
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L890)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L903)
 
 Since v4.0.0

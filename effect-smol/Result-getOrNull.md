@@ -32,6 +32,6 @@ console.log(Result.getOrNull(Result.fail("err")))
 declare const getOrNull: <A, E>(self: Result<A, E>) => A | null
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L1064)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L1066)
 
 Since v4.0.0

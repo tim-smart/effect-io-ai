@@ -17,7 +17,7 @@ that share a common prefix. For example, if your discriminant field contains
 hierarchical names like `"A"`, `"A.A"`, and `"B"`, you can match all values
 starting with `"A"` using a single rule.
 
-**Example**
+**Example** (Matching discriminator prefixes)
 
 ```ts
 import { Match, pipe } from "effect"
@@ -40,6 +40,6 @@ console.log(match({ type: "A.A" })) // 1
 declare const discriminatorStartsWith: <D extends string>(field: D) => <R, P extends string, Ret, Fn extends (_: Extract<R, Record<D, `${P}${string}`>>) => Ret>(pattern: P, f: Fn) => <I, F, A, Pr>(self: Matcher<I, F, R, A, Pr, Ret>) => Matcher<I, Types.AddWithout<F, Extract<R, Record<D, `${P}${string}`>>>, Types.ApplyFilters<I, Types.AddWithout<F, Extract<R, Record<D, `${P}${string}`>>>>, A | ReturnType<Fn>, Pr, Ret>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L743)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L732)
 
 Since v4.0.0

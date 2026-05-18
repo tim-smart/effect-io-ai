@@ -12,7 +12,7 @@ If `n` is not a positive number, an empty string will be returned.
 
 If `n` is a float, it will be rounded down to the nearest integer.
 
-**Example**
+**Example** (Taking characters from the end)
 
 ```ts
 import { String } from "effect"
@@ -27,6 +27,6 @@ assert.deepStrictEqual(String.takeRight("Hello World", 5), "World")
 declare const takeRight: { (n: number): (self: string) => string; (self: string, n: number): string; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L868)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L919)
 
 Since v2.0.0

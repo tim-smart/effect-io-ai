@@ -3,7 +3,8 @@ Module: `Schema`<br />
 
 ## Schema.BigIntFromString
 
-Companion type for `BigIntFromString`.
+Type-level representation of a transformation schema that decodes strings into
+`bigint` values.
 
 **Signature**
 
@@ -13,6 +14,6 @@ export interface BigIntFromString extends decodeTo<BigInt, String> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L9594)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L9972)
 
 Since v4.0.0

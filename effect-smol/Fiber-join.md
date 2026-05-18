@@ -6,7 +6,7 @@ Module: `Fiber`<br />
 Joins a fiber, blocking until it completes. If the fiber succeeds,
 returns its value. If it fails, the error is propagated.
 
-**Example**
+**Example** (Joining a fiber)
 
 ```ts
 import { Effect, Fiber } from "effect"
@@ -24,6 +24,6 @@ const program = Effect.gen(function*() {
 declare const join: <A, E>(self: Fiber<A, E>) => Effect<A, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Fiber.ts#L260)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Fiber.ts#L267)
 
 Since v2.0.0

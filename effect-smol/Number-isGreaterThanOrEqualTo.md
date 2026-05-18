@@ -5,7 +5,7 @@ Module: `Number`<br />
 
 Returns a function that checks if a given `number` is greater than or equal to the provided one.
 
-**Example**
+**Example** (Checking greater-than-or-equal comparisons)
 
 ```ts
 import { isGreaterThanOrEqualTo } from "effect/Number"
@@ -22,6 +22,6 @@ assert.deepStrictEqual(isGreaterThanOrEqualTo(4, 3), true)
 declare const isGreaterThanOrEqualTo: { (that: number): (self: number) => boolean; (self: number, that: number): boolean; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Number.ts#L306)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Number.ts#L320)
 
 Since v2.0.0

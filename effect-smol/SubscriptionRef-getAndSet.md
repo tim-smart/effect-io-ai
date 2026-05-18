@@ -6,7 +6,7 @@ Module: `SubscriptionRef`<br />
 Atomically retrieves the current value and sets a new value, notifying
 subscribers of the change.
 
-**Example**
+**Example** (Getting and setting a value)
 
 ```ts
 import { Effect, SubscriptionRef } from "effect"
@@ -28,6 +28,6 @@ const program = Effect.gen(function*() {
 declare const getAndSet: { <A>(value: A): (self: SubscriptionRef<A>) => Effect.Effect<A>; <A>(self: SubscriptionRef<A>, value: A): Effect.Effect<A>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SubscriptionRef.ts#L178)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SubscriptionRef.ts#L215)
 
 Since v2.0.0

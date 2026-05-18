@@ -9,7 +9,7 @@ Elements are stored in ascending order according to the `Order` provided at
 construction time. `take` returns the smallest element, `peek` observes it
 without removing.
 
-**Example**
+**Example** (Dequeuing values by priority)
 
 ```ts
 import { Effect, Order, TxPriorityQueue } from "effect"
@@ -34,6 +34,6 @@ export interface TxPriorityQueue<in out A> extends Inspectable, Pipeable {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxPriorityQueue.ts#L48)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxPriorityQueue.ts#L49)
 
 Since v4.0.0

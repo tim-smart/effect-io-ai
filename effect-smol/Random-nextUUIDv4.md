@@ -5,7 +5,7 @@ Module: `Random`<br />
 
 Generates a random UUID (v4) string.
 
-**Example**
+**Example** (Generating a UUID)
 
 ```ts
 import { Effect, Random } from "effect"
@@ -22,6 +22,6 @@ const program = Effect.gen(function*() {
 declare const nextUUIDv4: Effect.Effect<string, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Random.ts#L212)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Random.ts#L222)
 
 Since v4.0.0

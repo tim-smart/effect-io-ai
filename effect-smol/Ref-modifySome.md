@@ -3,13 +3,16 @@ Module: `Ref`<br />
 
 ## Ref.modifySome
 
-Atomically modifies the value of the Ref using the given partial function.
+Atomically computes a result and optionally updates the value of the `Ref`.
 
-The function receives the current value and returns an Option of [result, newValue].
-If the function returns `Option.some([result, newValue])`, the Ref is updated with newValue and result is returned.
-If it returns `Option.none()`, the Ref is left unchanged and the fallback value is returned.
+**Details**
 
-**Example**
+The callback receives the current value and returns `[result, nextValue]`,
+where `nextValue` is an `Option`. If `nextValue` is `Option.some(value)`,
+the `Ref` is updated to `value`; if it is `Option.none()`, the `Ref` is left
+unchanged. The returned effect always succeeds with `result`.
+
+**Example** (Conditionally modifying a value)
 
 ```ts
 import { Effect, Ref } from "effect"
@@ -54,6 +57,6 @@ const program = Effect.gen(function*() {
 declare const modifySome: { <B, A>(pf: (a: A) => readonly [B, Option.Option<A>]): (self: Ref<A>) => Effect.Effect<B>; <A, B>(self: Ref<A>, pf: (a: A) => readonly [B, Option.Option<A>]): Effect.Effect<B>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Ref.ts#L484)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Ref.ts#L500)
 
 Since v2.0.0

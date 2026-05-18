@@ -7,7 +7,7 @@ A TxReentrantLock provides a transactional read/write lock with reentrant semant
 Multiple readers can hold the lock concurrently, or a single writer can hold exclusive
 access. A fiber holding the write lock may acquire additional read/write locks (reentrancy).
 
-**Example**
+**Example** (Using read and write locks)
 
 ```ts
 import { Effect, TxReentrantLock } from "effect"
@@ -33,6 +33,6 @@ export interface TxReentrantLock extends Inspectable, Pipeable {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxReentrantLock.ts#L59)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxReentrantLock.ts#L60)
 
 Since v4.0.0

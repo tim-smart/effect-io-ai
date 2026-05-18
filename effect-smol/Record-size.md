@@ -5,7 +5,7 @@ Module: `Record`<br />
 
 Returns the number of key/value pairs in a record.
 
-**Example**
+**Example** (Getting the record size)
 
 ```ts
 import { Record } from "effect"
@@ -20,6 +20,6 @@ assert.deepStrictEqual(Record.size({ a: "a", b: 1, c: true }), 3)
 declare const size: <K extends string, A>(self: ReadonlyRecord<K, A>) => number
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Record.ts#L355)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Record.ts#L376)
 
 Since v2.0.0

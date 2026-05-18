@@ -7,7 +7,17 @@ Signals that the current transaction needs to be retried.
 
 NOTE: the transaction retries on any change to transactional values (i.e. TxRef) accessed in its body.
 
-**Example**
+**Signature**
+
+```ts
+declare const txRetry: Effect<never, never, Transaction>
+```
+
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L13919)
+
+Since v4.0.0
+
+**Example** (Usage)
 
 ```ts
 import { Effect, TxRef } from "effect"
@@ -35,13 +45,3 @@ const program = Effect.gen(function*() {
 
 Effect.runPromise(program).catch(console.error)
 ```
-
-**Signature**
-
-```ts
-declare const txRetry: Effect<never, never, Transaction>
-```
-
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L13953)
-
-Since v4.0.0

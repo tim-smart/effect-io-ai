@@ -7,7 +7,7 @@ Checks if a `DateTime` is in the future compared to the current time.
 
 This is an effectful operation that uses the current time from the `Clock` service.
 
-**Example**
+**Example** (Checking future DateTime values effectfully)
 
 ```ts
 import { DateTime, Effect } from "effect"
@@ -25,6 +25,6 @@ const program = Effect.gen(function*() {
 declare const isFuture: (self: DateTime) => Effect.Effect<boolean>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L1130)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L1341)
 
 Since v3.6.0

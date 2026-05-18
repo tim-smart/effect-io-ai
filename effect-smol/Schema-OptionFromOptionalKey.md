@@ -3,7 +3,8 @@ Module: `Schema`<br />
 
 ## Schema.OptionFromOptionalKey
 
-Companion type for `OptionFromOptionalKey`.
+Type-level representation of a schema that decodes a missing object key as
+`None` and a present key as `Some`.
 
 **Signature**
 
@@ -13,6 +14,6 @@ export interface OptionFromOptionalKey<S extends Top> extends decodeTo<Option<to
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L7202)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L7489)
 
 Since v4.0.0

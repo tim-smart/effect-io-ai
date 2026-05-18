@@ -49,6 +49,6 @@ export const listAllRpc = makePaginated("listAll", {
 declare const custom: <Def extends Custom>(f: (options: Custom.OutDefault) => (Def & Custom.OutDefault)["out"]) => <const Tag extends string, Payload extends Schema.Top | Schema.Struct.Fields = Schema.Void, Success extends Schema.Top = Schema.Void, Error extends Schema.Top = Schema.Never, const Stream extends boolean = false, Out extends Custom.OutDefault = Custom.Kind<Def, Success, Error>>(tag: Tag, options?: { readonly payload?: Payload; readonly success?: Success; readonly error?: Error; readonly defect?: DefectSchema; readonly stream?: Stream; readonly primaryKey?: [Payload] extends [Schema.Struct.Fields] ? ((payload: Payload extends Schema.Struct.Fields ? Struct.Simplify<Schema.Struct<Payload>["Type"]> : Payload["Type"]) => string) : never; }) => Rpc<Tag, Payload extends Schema.Struct.Fields ? Schema.Struct<Payload> : Payload, Stream extends true ? RpcSchema.Stream<Out["success"], Out["error"]> : Out["success"], Stream extends true ? typeof Schema.Never : Out["error"]>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Rpc.ts#L832)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Rpc.ts#L989)
 
 Since v4.0.0

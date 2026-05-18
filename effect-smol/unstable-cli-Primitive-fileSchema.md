@@ -5,7 +5,7 @@ Module: `Primitive`<br />
 
 Reads and parses file content using the specified schema.
 
-**Example**
+**Example** (Parsing file content with a schema)
 
 ```ts
 import { Effect, Schema } from "effect"
@@ -15,7 +15,7 @@ const ConfigSchema = Schema.Struct({
   name: Schema.String,
   version: Schema.String,
   port: Schema.Number
-}).pipe(Schema.fromJsonString)
+})
 
 const jsonConfigPrimitive = Primitive.fileSchema(ConfigSchema, {
   format: "json"
@@ -34,6 +34,6 @@ const loadConfig = Effect.gen(function*() {
 declare const fileSchema: <A>(schema: Schema.Decoder<A>, options?: FileSchemaOptions | undefined) => Primitive<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Primitive.ts#L577)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Primitive.ts#L611)
 
 Since v4.0.0

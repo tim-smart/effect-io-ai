@@ -3,14 +3,14 @@ Module: `AnthropicTool`<br />
 
 ## AnthropicTool.CodeExecutionProgrammaticToolCall
 
-Programmatic tool call execution parameter.
+Input payload for a programmatic code execution tool call, including the source code to execute.
 
 **Signature**
 
 ```ts
-declare const CodeExecutionProgrammaticToolCall: Schema.Struct<{ readonly type: Schema.Literal<"programmatic-tool-call">; readonly code: Schema.String; }>
+type CodeExecutionProgrammaticToolCall = typeof CodeExecutionProgrammaticToolCall.Type
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L97)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L110)
 
-Since v1.0.0
+Since v4.0.0

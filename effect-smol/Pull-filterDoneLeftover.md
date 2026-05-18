@@ -11,6 +11,6 @@ Filters a Cause to extract the leftover value from done errors.
 declare const filterDoneLeftover: <E>(cause: Cause.Cause<E>) => Result.Result<Cause.Done.Extract<E>, Cause.Cause<ExcludeDone<E>>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Pull.ts#L148)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Pull.ts#L198)
 
 Since v4.0.0

@@ -6,7 +6,7 @@ Module: `Schedule`<br />
 Returns a `Schedule` which can only be stepped the specified number of
 `times` before it terminates.
 
-**Example**
+**Example** (Limiting recurrences)
 
 ```ts
 import { Console, Data, Effect, Schedule } from "effect"
@@ -45,7 +45,7 @@ const complexRetry = Schedule.exponential("100 millis").pipe(
 // Repeat an effect exactly 10 times
 const exactlyTenTimes = Effect.gen(function*() {
   yield* Console.log("Executing task...")
-  return Math.random()
+  return "completed"
 }).pipe(
   Effect.repeat(Schedule.recurs(10))
 )
@@ -62,6 +62,6 @@ const countingSchedule = Schedule.recurs(3).pipe(
 declare const recurs: (times: number) => Schedule<number>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L2404)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L2399)
 
 Since v2.0.0

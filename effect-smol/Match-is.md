@@ -8,7 +8,7 @@ Matches a specific set of literal values (e.g., `Match.is("a", 42, true)`).
 This function creates a predicate that matches any of the provided literal values.
 It's useful for matching against multiple specific values in a single pattern.
 
-**Example**
+**Example** (Matching literal values)
 
 ```ts
 import { Match } from "effect"
@@ -43,6 +43,6 @@ console.log(handleStatus("pending"))
 declare const is: <Literals extends ReadonlyArray<string | number | bigint | boolean | null>>(...literals: Literals) => SafeRefinement<Literals[number]>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L1198)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L1190)
 
 Since v4.0.0

@@ -3,16 +3,17 @@ Module: `JsonPatch`<br />
 
 ## JsonPatch.get
 
-Compute a patch that transforms `oldValue` into `newValue`.
+Computes a patch that transforms `oldValue` into `newValue`.
 
-Generates a structural diff between two JSON values, producing a patch that when applied to `oldValue` yields `newValue`.
+Generates a structural diff between two JSON values, producing a patch that
+yields `newValue` when applied to `oldValue`.
 
 ## When to use this
 
 - Computing differences between JSON documents
 - Detecting changes in data structures
 - Generating patches for synchronization or version control
-- Creating minimal update operations from before/after states
+- Creating deterministic update operations from before/after states
 
 ## Behavior
 
@@ -52,6 +53,6 @@ const patch = JsonPatch.get(oldValue, newValue)
 declare const get: (oldValue: Schema.Json, newValue: Schema.Json) => JsonPatch
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/JsonPatch.ts#L227)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/JsonPatch.ts#L228)
 
 Since v4.0.0

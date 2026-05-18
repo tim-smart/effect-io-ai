@@ -5,7 +5,7 @@ Module: `BigDecimal`<br />
 
 Provides a negate operation on `BigDecimal`s.
 
-**Example**
+**Example** (Negating decimals)
 
 ```ts
 import { fromStringUnsafe, negate } from "effect/BigDecimal"
@@ -21,6 +21,6 @@ assert.deepStrictEqual(negate(fromStringUnsafe("-6")), fromStringUnsafe("6"))
 declare const negate: (n: BigDecimal) => BigDecimal
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigDecimal.ts#L903)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigDecimal.ts#L923)
 
 Since v2.0.0

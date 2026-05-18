@@ -3,17 +3,12 @@ Module: `Schema`<br />
 
 ## Schema.isUncapitalized
 
-Validates that a string has its first character in lowercase.
+Validates that the first character of a string is unchanged by
+`toLowerCase()`.
 
-**JSON Schema**
-
-This check corresponds to a `pattern` constraint in JSON Schema that matches
-strings with the first character in lowercase.
-
-**Arbitrary**
-
-When generating test data with fast-check, this applies a `patterns`
-constraint to ensure generated strings have the first character in lowercase.
+**Details**
+Empty strings pass. Strings whose first character has no uppercase form, such
+as a digit, punctuation mark, or whitespace, also pass.
 
 **Signature**
 
@@ -21,6 +16,6 @@ constraint to ensure generated strings have the first character in lowercase.
 declare const isUncapitalized: (annotations?: Annotations.Filter) => AST.Filter<string>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L5563)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L5834)
 
 Since v4.0.0

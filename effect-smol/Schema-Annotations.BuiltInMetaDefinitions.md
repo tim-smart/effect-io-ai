@@ -3,7 +3,10 @@ Module: `Schema`<br />
 
 ## Schema.Annotations.BuiltInMetaDefinitions
 
-This MUST NOT be extended with custom meta.
+Registry of metadata payloads emitted by built-in schema filters and checks.
+
+Do not augment this interface with custom metadata; extend `MetaDefinitions`
+instead.
 
 **Signature**
 
@@ -215,6 +218,6 @@ export interface BuiltInMetaDefinitions {
   }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L12217)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L12734)
 
 Since v4.0.0

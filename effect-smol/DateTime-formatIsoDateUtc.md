@@ -7,7 +7,7 @@ Format a `DateTime` as a UTC ISO date string.
 
 Returns only the date part (YYYY-MM-DD) in UTC, ignoring any time zone.
 
-**Example**
+**Example** (Formatting DateTime values as UTC ISO dates)
 
 ```ts
 import { DateTime } from "effect"
@@ -27,6 +27,6 @@ console.log(DateTime.formatIsoDateUtc(zoned)) // "2024-01-01" (always UTC)
 declare const formatIsoDateUtc: (self: DateTime) => string
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L2245)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L2534)
 
 Since v3.6.0

@@ -8,7 +8,7 @@ strings of data, byte arrays, or URLs.
 
 Supports various file types including images, documents, and binary data.
 
-**Example**
+**Example** (Creating file parts)
 
 ```ts
 import { Prompt } from "effect/unstable/ai"
@@ -45,6 +45,6 @@ export interface FilePart extends BasePart<"file", FilePartOptions> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L438)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L447)
 
 Since v4.0.0

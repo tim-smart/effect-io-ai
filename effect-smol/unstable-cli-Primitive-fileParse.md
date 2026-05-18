@@ -3,9 +3,13 @@ Module: `Primitive`<br />
 
 ## Primitive.fileParse
 
-Reads and parses file content using the specified schema.
+Creates a primitive that reads a file and parses its content as structured
+data.
 
-**Example**
+The parser is selected from `options.format` when provided, otherwise from
+the file extension. Supported formats include INI, JSON, TOML, YAML, and YML.
+
+**Example** (Parsing file content)
 
 ```ts
 import { Effect } from "effect"
@@ -26,6 +30,6 @@ const loadConfig = Effect.gen(function*() {
 declare const fileParse: (options?: FileParseOptions) => Primitive<unknown>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Primitive.ts#L518)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Primitive.ts#L551)
 
 Since v4.0.0

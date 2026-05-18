@@ -7,12 +7,13 @@
     },
     "project": "@effect/atom-react",
     "name": "useAtomInitialValues",
+    "description": "Seeds initial atom values in the current React atom registry.\n\n**Details**\n\nEach atom is initialized at most once for a given registry, so subsequent\nrenders do not overwrite values that have already been established.",
     "deprecated": false,
     "examples": [],
-    "since": "1.0.0",
+    "since": "4.0.0",
     "category": "hooks",
     "signature": "declare const useAtomInitialValues: (initialValues: Iterable<readonly [Atom.Atom<any>, any]>) => void",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/atom/react/src/Hooks.ts#L61"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/atom/react/src/Hooks.ts#L86"
   },
   {
     "_tag": "Function",
@@ -22,12 +23,13 @@
     },
     "project": "@effect/atom-react",
     "name": "useAtomValue",
+    "description": "Subscribes to an atom in the current React registry and returns its current\nvalue, optionally mapped through a selector.",
     "deprecated": false,
     "examples": [],
-    "since": "1.0.0",
+    "since": "4.0.0",
     "category": "hooks",
     "signature": "declare const useAtomValue: { <A>(atom: Atom.Atom<A>): A; <A, B>(atom: Atom.Atom<A>, f: (_: A) => B): B; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/atom/react/src/Hooks.ts#L80"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/atom/react/src/Hooks.ts#L108"
   },
   {
     "_tag": "Function",
@@ -37,12 +39,13 @@
     },
     "project": "@effect/atom-react",
     "name": "useAtomMount",
+    "description": "Mounts an atom in the current React registry for the lifetime of the\ncomponent.",
     "deprecated": false,
     "examples": [],
-    "since": "1.0.0",
+    "since": "4.0.0",
     "category": "hooks",
     "signature": "declare const useAtomMount: <A>(atom: Atom.Atom<A>) => void",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/atom/react/src/Hooks.ts#L135"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/atom/react/src/Hooks.ts#L166"
   },
   {
     "_tag": "Function",
@@ -52,12 +55,13 @@
     },
     "project": "@effect/atom-react",
     "name": "useAtomSet",
+    "description": "Mounts a writable atom and returns a setter without subscribing to its value.",
     "deprecated": false,
     "examples": [],
-    "since": "1.0.0",
+    "since": "4.0.0",
     "category": "hooks",
     "signature": "declare const useAtomSet: <R, W, Mode extends \"value\" | \"promise\" | \"promiseExit\" = never>(atom: Atom.Writable<R, W>, options?: { readonly mode?: ([R] extends [AsyncResult.AsyncResult<any, any>] ? Mode : \"value\") | undefined; }) => \"promise\" extends Mode ? ((value: W) => Promise<AsyncResult.AsyncResult.Success<R>>) : \"promiseExit\" extends Mode ? ((value: W) => Promise<Exit.Exit<AsyncResult.AsyncResult.Success<R>, AsyncResult.AsyncResult.Failure<R>>>) : ((value: W | ((value: R) => W)) => void)",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/atom/react/src/Hooks.ts#L144"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/atom/react/src/Hooks.ts#L177"
   },
   {
     "_tag": "Function",
@@ -67,12 +71,13 @@
     },
     "project": "@effect/atom-react",
     "name": "useAtomRefresh",
+    "description": "Mounts an atom and returns a callback that refreshes it in the current React\nregistry.",
     "deprecated": false,
     "examples": [],
-    "since": "1.0.0",
+    "since": "4.0.0",
     "category": "hooks",
     "signature": "declare const useAtomRefresh: <A>(atom: Atom.Atom<A>) => () => void",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/atom/react/src/Hooks.ts#L170"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/atom/react/src/Hooks.ts#L206"
   },
   {
     "_tag": "Function",
@@ -82,12 +87,13 @@
     },
     "project": "@effect/atom-react",
     "name": "useAtom",
+    "description": "Subscribes to a writable atom and returns its current value together with a\nsetter for updating it.",
     "deprecated": false,
     "examples": [],
-    "since": "1.0.0",
+    "since": "4.0.0",
     "category": "hooks",
     "signature": "declare const useAtom: <R, W, const Mode extends \"value\" | \"promise\" | \"promiseExit\" = never>(atom: Atom.Writable<R, W>, options?: { readonly mode?: ([R] extends [AsyncResult.AsyncResult<any, any>] ? Mode : \"value\") | undefined; }) => readonly [value: R, write: \"promise\" extends Mode ? ((value: W) => Promise<AsyncResult.AsyncResult.Success<R>>) : \"promiseExit\" extends Mode ? ((value: W) => Promise<Exit.Exit<AsyncResult.AsyncResult.Success<R>, AsyncResult.AsyncResult.Failure<R>>>) : ((value: W | ((value: R) => W)) => void)]",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/atom/react/src/Hooks.ts#L182"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/atom/react/src/Hooks.ts#L221"
   },
   {
     "_tag": "Function",
@@ -97,12 +103,13 @@
     },
     "project": "@effect/atom-react",
     "name": "useAtomSuspense",
+    "description": "Reads an `AsyncResult` atom through React Suspense, suspending while the\nresult is initial or configured as waiting.",
     "deprecated": false,
     "examples": [],
-    "since": "1.0.0",
+    "since": "4.0.0",
     "category": "hooks",
     "signature": "declare const useAtomSuspense: <A, E, const IncludeFailure extends boolean = false>(atom: Atom.Atom<AsyncResult.AsyncResult<A, E>>, options?: { readonly suspendOnWaiting?: boolean | undefined; readonly includeFailure?: IncludeFailure | undefined; }) => AsyncResult.Success<A, E> | (IncludeFailure extends true ? AsyncResult.Failure<A, E> : never)",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/atom/react/src/Hooks.ts#L249"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/atom/react/src/Hooks.ts#L291"
   },
   {
     "_tag": "Function",
@@ -112,12 +119,13 @@
     },
     "project": "@effect/atom-react",
     "name": "useAtomSubscribe",
+    "description": "Subscribes a callback to an atom in the current React registry for the\ncomponent lifetime.",
     "deprecated": false,
     "examples": [],
-    "since": "1.0.0",
+    "since": "4.0.0",
     "category": "hooks",
     "signature": "declare const useAtomSubscribe: <A>(atom: Atom.Atom<A>, f: (_: A) => void, options?: { readonly immediate?: boolean; }) => void",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/atom/react/src/Hooks.ts#L268"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/atom/react/src/Hooks.ts#L313"
   },
   {
     "_tag": "Function",
@@ -127,12 +135,13 @@
     },
     "project": "@effect/atom-react",
     "name": "useAtomRef",
+    "description": "Subscribes to an atom ref and returns its latest value.",
     "deprecated": false,
     "examples": [],
-    "since": "1.0.0",
+    "since": "4.0.0",
     "category": "hooks",
     "signature": "declare const useAtomRef: <A>(ref: AtomRef.ReadonlyRef<A>) => A",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/atom/react/src/Hooks.ts#L284"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/atom/react/src/Hooks.ts#L331"
   },
   {
     "_tag": "Function",
@@ -142,12 +151,13 @@
     },
     "project": "@effect/atom-react",
     "name": "useAtomRefProp",
+    "description": "Returns a memoized atom ref for a property of another atom ref.",
     "deprecated": false,
     "examples": [],
-    "since": "1.0.0",
+    "since": "4.0.0",
     "category": "hooks",
     "signature": "declare const useAtomRefProp: <A, K extends keyof A>(ref: AtomRef.AtomRef<A>, prop: K) => AtomRef.AtomRef<A[K]>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/atom/react/src/Hooks.ts#L294"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/atom/react/src/Hooks.ts#L343"
   },
   {
     "_tag": "Function",
@@ -157,12 +167,13 @@
     },
     "project": "@effect/atom-react",
     "name": "useAtomRefPropValue",
+    "description": "Subscribes to a property ref derived from an atom ref and returns its current\nvalue.",
     "deprecated": false,
     "examples": [],
-    "since": "1.0.0",
+    "since": "4.0.0",
     "category": "hooks",
     "signature": "declare const useAtomRefPropValue: <A, K extends keyof A>(ref: AtomRef.AtomRef<A>, prop: K) => A[K]",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/atom/react/src/Hooks.ts#L301"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/atom/react/src/Hooks.ts#L353"
   },
   {
     "_tag": "Export",
@@ -175,7 +186,7 @@
     "description": "Re-exports all named exports from the \"./Hooks.ts\" module.",
     "deprecated": false,
     "examples": [],
-    "since": "1.0.0",
+    "since": "4.0.0",
     "category": null,
     "signature": "export * from \"./Hooks.ts\"",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/atom/react/src/index.ts#L8"
@@ -191,7 +202,7 @@
     "description": "Re-exports all named exports from the \"./RegistryContext.ts\" module.",
     "deprecated": false,
     "examples": [],
-    "since": "1.0.0",
+    "since": "4.0.0",
     "category": null,
     "signature": "export * from \"./RegistryContext.ts\"",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/atom/react/src/index.ts#L13"
@@ -207,7 +218,7 @@
     "description": "Re-exports all named exports from the \"./ReactHydration.ts\" module.",
     "deprecated": false,
     "examples": [],
-    "since": "1.0.0",
+    "since": "4.0.0",
     "category": null,
     "signature": "export * from \"./ReactHydration.ts\"",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/atom/react/src/index.ts#L18"
@@ -223,7 +234,7 @@
     "description": "Re-exports all named exports from the \"./ScopedAtom.ts\" module.",
     "deprecated": false,
     "examples": [],
-    "since": "1.0.0",
+    "since": "4.0.0",
     "category": null,
     "signature": "export * from \"./ScopedAtom.ts\"",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/atom/react/src/index.ts#L23"
@@ -236,12 +247,13 @@
     },
     "project": "@effect/atom-react",
     "name": "HydrationBoundary",
+    "description": "Hydrates dehydrated Atom values into the current Atom registry for a React\nsubtree.\n\nNew Atom values are hydrated during render so descendants can read them\nimmediately, while values for existing Atoms are deferred until after commit\nso transition data does not update the current UI before React accepts it.",
     "deprecated": false,
     "examples": [],
-    "since": "1.0.0",
+    "since": "4.0.0",
     "category": "components",
     "signature": "declare const HydrationBoundary: React.FC<HydrationBoundaryProps>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/atom/react/src/ReactHydration.ts#L22"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/atom/react/src/ReactHydration.ts#L53"
   },
   {
     "_tag": "Interface",
@@ -251,12 +263,13 @@
     },
     "project": "@effect/atom-react",
     "name": "HydrationBoundaryProps",
+    "description": "Props for a boundary that applies dehydrated Atom values to the nearest\n{@link RegistryContext} while rendering its children.",
     "deprecated": false,
     "examples": [],
-    "since": "1.0.0",
+    "since": "4.0.0",
     "category": "components",
     "signature": "export interface HydrationBoundaryProps {\n  state?: Iterable<Hydration.DehydratedAtom>\n  children?: React.ReactNode\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/atom/react/src/ReactHydration.ts#L13"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/atom/react/src/ReactHydration.ts#L37"
   },
   {
     "_tag": "Constant",
@@ -266,12 +279,13 @@
     },
     "project": "@effect/atom-react",
     "name": "RegistryContext",
+    "description": "React context that supplies the `AtomRegistry` used by Atom hooks and\nhydration helpers, defaulting to a standalone registry when no provider is\npresent.",
     "deprecated": false,
     "examples": [],
-    "since": "1.0.0",
+    "since": "4.0.0",
     "category": "context",
     "signature": "declare const RegistryContext: React.Context<AtomRegistry.AtomRegistry>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/atom/react/src/RegistryContext.ts#L24"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/atom/react/src/RegistryContext.ts#L53"
   },
   {
     "_tag": "Function",
@@ -281,12 +295,13 @@
     },
     "project": "@effect/atom-react",
     "name": "scheduleTask",
+    "description": "Schedules Atom registry work with React's scheduler at low priority and\nreturns a cancellation function for the scheduled task.",
     "deprecated": false,
     "examples": [],
-    "since": "1.0.0",
+    "since": "4.0.0",
     "category": "context",
     "signature": "declare const scheduleTask: (f: () => void) => () => void",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/atom/react/src/RegistryContext.ts#L15"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/atom/react/src/RegistryContext.ts#L40"
   },
   {
     "_tag": "Function",
@@ -296,12 +311,13 @@
     },
     "project": "@effect/atom-react",
     "name": "RegistryProvider",
+    "description": "Provides a stable `AtomRegistry` to a React subtree, optionally seeding\ninitial atom values and overriding registry scheduling or idle settings.",
     "deprecated": false,
     "examples": [],
-    "since": "1.0.0",
+    "since": "4.0.0",
     "category": "context",
     "signature": "declare const RegistryProvider: (options: { readonly children?: React.ReactNode | undefined; readonly initialValues?: Iterable<readonly [Atom.Atom<any>, any]> | undefined; readonly scheduleTask?: ((f: () => void) => () => void) | undefined; readonly timeoutResolution?: number | undefined; readonly defaultIdleTTL?: number | undefined; }) => React.FunctionComponentElement<React.ProviderProps<AtomRegistry.AtomRegistry>>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/atom/react/src/RegistryContext.ts#L33"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/atom/react/src/RegistryContext.ts#L65"
   },
   {
     "_tag": "Constant",
@@ -311,12 +327,13 @@
     },
     "project": "@effect/atom-react",
     "name": "TypeId",
+    "description": "Type identifier for ScopedAtom.",
     "deprecated": false,
     "examples": [],
-    "since": "1.0.0",
-    "category": "Type IDs\n\nType identifier for ScopedAtom.",
+    "since": "4.0.0",
+    "category": "Type IDs",
     "signature": "declare const TypeId: \"~@effect/atom-react/ScopedAtom\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/atom/react/src/ScopedAtom.ts#L23"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/atom/react/src/ScopedAtom.ts#L40"
   },
   {
     "_tag": "Function",
@@ -326,14 +343,13 @@
     },
     "project": "@effect/atom-react",
     "name": "make",
+    "description": "Creates a ScopedAtom from a factory function.\n\n**Example** (Creating a scoped atom with input)\n\n```ts\nimport * as Atom from \"effect/unstable/reactivity/Atom\"\nimport * as React from \"react\"\nimport * as ScopedAtom from \"@effect/atom-react/ScopedAtom\"\nimport { useAtomValue } from \"@effect/atom-react\"\n\nconst User = ScopedAtom.make((name: string) => Atom.make(name))\n\nfunction UserName() {\n  const atom = User.use()\n  const value = useAtomValue(atom)\n  return React.createElement(\"span\", null, value)\n}\n\nexport function App() {\n  return React.createElement(\n    User.Provider,\n    { value: \"Ada\" },\n    React.createElement(UserName)\n  )\n}\n```",
     "deprecated": false,
-    "examples": [
-      "```ts\nimport * as Atom from \"effect/unstable/reactivity/Atom\"\nimport * as React from \"react\"\nimport * as ScopedAtom from \"@effect/atom-react/ScopedAtom\"\nimport { useAtomValue } from \"@effect/atom-react\"\n\nconst User = ScopedAtom.make((name: string) => Atom.make(name))\n\nfunction UserName() {\n  const atom = User.use()\n  const value = useAtomValue(atom)\n  return React.createElement(\"span\", null, value)\n}\n\nexport function App() {\n  return React.createElement(\n    User.Provider,\n    { value: \"Ada\" },\n    React.createElement(UserName)\n  )\n}\n```"
-    ],
-    "since": "1.0.0",
-    "category": "constructors\n\nCreates a ScopedAtom from a factory function.",
+    "examples": [],
+    "since": "4.0.0",
+    "category": "constructors",
     "signature": "declare const make: <A extends Atom.Atom<any>, Input = never>(f: (() => A) | ((input: Input) => A)) => ScopedAtom<A, Input>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/atom/react/src/ScopedAtom.ts#L89"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/atom/react/src/ScopedAtom.ts#L108"
   },
   {
     "_tag": "Interface",
@@ -343,14 +359,13 @@
     },
     "project": "@effect/atom-react",
     "name": "ScopedAtom",
+    "description": "Scoped Atom interface with a provider-backed instance.\n\n**Example** (Providing and reading a scoped atom)\n\n```ts\nimport * as Atom from \"effect/unstable/reactivity/Atom\"\nimport * as React from \"react\"\nimport * as ScopedAtom from \"@effect/atom-react/ScopedAtom\"\nimport { useAtomValue } from \"@effect/atom-react\"\n\nconst Counter = ScopedAtom.make(() => Atom.make(0))\n\nfunction View() {\n  const atom = Counter.use()\n  const value = useAtomValue(atom)\n  return React.createElement(\"div\", null, value)\n}\n\nexport function App() {\n  return React.createElement(Counter.Provider, null, React.createElement(View))\n}\n```",
     "deprecated": false,
-    "examples": [
-      "```ts\nimport * as Atom from \"effect/unstable/reactivity/Atom\"\nimport * as React from \"react\"\nimport * as ScopedAtom from \"@effect/atom-react/ScopedAtom\"\nimport { useAtomValue } from \"@effect/atom-react\"\n\nconst Counter = ScopedAtom.make(() => Atom.make(0))\n\nfunction View() {\n  const atom = Counter.use()\n  const value = useAtomValue(atom)\n  return React.createElement(\"div\", null, value)\n}\n\nexport function App() {\n  return React.createElement(Counter.Provider, null, React.createElement(View))\n}\n```"
-    ],
-    "since": "1.0.0",
-    "category": "models\n\nScoped Atom interface with a provider-backed instance.",
+    "examples": [],
+    "since": "4.0.0",
+    "category": "models",
     "signature": "export interface ScopedAtom<A extends Atom.Atom<any>, Input = never> {\n  readonly [TypeId]: TypeId\n  use(): A\n  Provider: [Input] extends [never] ? React.FC<{ readonly children?: React.ReactNode | undefined }>\n    : React.FC<{ readonly children?: React.ReactNode | undefined; readonly value: Input }>\n  Context: React.Context<A>\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/atom/react/src/ScopedAtom.ts#L51"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/atom/react/src/ScopedAtom.ts#L69"
   },
   {
     "_tag": "TypeAlias",
@@ -360,11 +375,12 @@
     },
     "project": "@effect/atom-react",
     "name": "TypeId",
+    "description": "Type identifier for ScopedAtom.",
     "deprecated": false,
     "examples": [],
-    "since": "1.0.0",
-    "category": "Type IDs\n\nType identifier for ScopedAtom.",
+    "since": "4.0.0",
+    "category": "Type IDs",
     "signature": "type TypeId = \"~@effect/atom-react/ScopedAtom\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/atom/react/src/ScopedAtom.ts#L15"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/atom/react/src/ScopedAtom.ts#L32"
   }
 ]

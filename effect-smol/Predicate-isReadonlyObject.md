@@ -3,14 +3,12 @@ Module: `Predicate`<br />
 
 ## Predicate.isReadonlyObject
 
-Checks whether a value is a readonly object.
+Checks whether a value is a non-null, non-array object and narrows it to a
+readonly indexable object type.
 
-When to use:
-- You need a guard for object-like values and do not care about mutability.
-
-Behavior:
-- Pure; does not mutate input.
-- Delegates to `isObject`.
+Readonly-ness is a TypeScript type-level view; it is not observable at
+runtime. This delegates to `isObject`, so class instances and built-in object
+instances are accepted.
 
 **Example** (Readonly object)
 
@@ -30,6 +28,6 @@ See also: `isObject`
 declare const isReadonlyObject: (input: unknown) => input is { readonly [x: PropertyKey]: unknown; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L1050)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L1045)
 
 Since v4.0.0

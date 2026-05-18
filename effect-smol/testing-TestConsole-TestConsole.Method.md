@@ -6,12 +6,14 @@ Module: `TestConsole`<br />
 Represents a console method name that can be invoked on the TestConsole.
 This type includes all methods available on the Console interface.
 
-**Example**
+**Example** (Typing captured console methods)
 
 ```ts
-// Method represents console method names like:
-// "log", "error", "warn", "debug", "info", etc.
-// All methods from the Console interface are supported
+import type * as TestConsole from "effect/testing/TestConsole"
+
+const method: TestConsole.TestConsole.Method = "log"
+
+console.log(method) // "log"
 ```
 
 **Signature**
@@ -20,6 +22,6 @@ This type includes all methods available on the Console interface.
 type Method = keyof Console.Console
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TestConsole.ts#L79)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TestConsole.ts#L86)
 
 Since v4.0.0

@@ -5,7 +5,7 @@ Module: `Effect`<br />
 
 Runs an effect and returns a Promise of Exit with provided services.
 
-**Example**
+**Example** (Usage)
 
 ```ts
 import { Effect, Exit, Context } from "effect"
@@ -38,6 +38,6 @@ Effect.runPromiseExitWith(services)(program).then((exit) => {
 declare const runPromiseExitWith: <R>(context: Context.Context<R>) => <A, E>(effect: Effect<A, E, R>, options?: RunOptions | undefined) => Promise<Exit.Exit<A, E>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L8597)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L8523)
 
 Since v4.0.0

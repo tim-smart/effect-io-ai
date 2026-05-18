@@ -16,7 +16,7 @@ This is useful for differentiating between different types of errors, such as
 regular failures, defects, or interruptions. You can provide specific
 handling logic for each failure type based on the cause.
 
-**Example**
+**Example** (Usage)
 
 ```ts
 import { Cause, Effect } from "effect"
@@ -44,6 +44,6 @@ handlers.
 declare const matchCause: { <E, A2, A, A3>(options: { readonly onFailure: (cause: Cause.Cause<E>) => A2; readonly onSuccess: (a: A) => A3; }): <R>(self: Effect<A, E, R>) => Effect<A2 | A3, never, R>; <A, E, R, A2, A3>(self: Effect<A, E, R>, options: { readonly onFailure: (cause: Cause.Cause<E>) => A2; readonly onSuccess: (a: A) => A3; }): Effect<A2 | A3, never, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L5191)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L5063)
 
 Since v2.0.0

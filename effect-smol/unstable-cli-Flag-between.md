@@ -5,7 +5,7 @@ Module: `Flag`<br />
 
 Constrains a flag to be specified between a minimum and maximum number of times.
 
-**Example**
+**Example** (Bounding repeated values)
 
 ```ts
 import { Flag } from "effect/unstable/cli"
@@ -26,6 +26,6 @@ const excludeFlag = Flag.string("exclude").pipe(
 declare const between: { <A>(min: number, max: number): (self: Flag<A>) => Flag<ReadonlyArray<A>>; <A>(self: Flag<A>, min: number, max: number): Flag<ReadonlyArray<A>>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Flag.ts#L707)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Flag.ts#L761)
 
 Since v4.0.0

@@ -3,7 +3,8 @@ Module: `Schema`<br />
 
 ## Schema.DateTimeUtc
 
-Companion type for `DateTimeUtc`.
+Schema interface for `DateTimeUtc`, representing `DateTime.Utc` values with
+UTC ISO string JSON encoding.
 
 **Signature**
 
@@ -13,6 +14,6 @@ export interface DateTimeUtc extends declare<DateTime.Utc> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L9974)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L10370)
 
 Since v4.0.0

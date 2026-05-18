@@ -11,6 +11,6 @@ Checks if the specified value is a `MutableHashSet`, `false` otherwise.
 declare const isMutableHashSet: <V>(value: unknown) => value is MutableHashSet<V>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableHashSet.ts#L78)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableHashSet.ts#L134)
 
 Since v4.0.0

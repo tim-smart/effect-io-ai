@@ -6,7 +6,7 @@ Module: `TestConsole`<br />
 Returns an array of all items that have been logged by the program using
 `Console.error` thus far.
 
-**Example**
+**Example** (Reading captured error lines)
 
 ```ts
 import { Console, Effect } from "effect"
@@ -32,6 +32,6 @@ const program = Effect.gen(function*() {
 declare const errorLines: Effect.Effect<ReadonlyArray<unknown>, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TestConsole.ts#L280)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TestConsole.ts#L299)
 
 Since v4.0.0

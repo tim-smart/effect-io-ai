@@ -5,7 +5,7 @@ Module: `Stream`<br />
 
 Drops elements from the stream while the specified predicate evaluates to `true`.
 
-**Example**
+**Example** (Dropping while a predicate holds)
 
 ```ts
 import { Console, Effect, Stream } from "effect"
@@ -28,6 +28,6 @@ Effect.runPromise(program)
 declare const dropWhile: { <A>(predicate: (a: NoInfer<A>, index: number) => boolean): <E, R>(self: Stream<A, E, R>) => Stream<A, E, R>; <A, E, R>(self: Stream<A, E, R>, predicate: (a: NoInfer<A>, index: number) => boolean): Stream<A, E, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L6399)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L6628)
 
 Since v2.0.0

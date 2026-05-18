@@ -3,7 +3,7 @@ Module: `Schema`<br />
 
 ## Schema.FormData
 
-Companion type for `FormData`.
+Type-level representation of the schema for JavaScript `FormData` instances.
 
 **Signature**
 
@@ -13,6 +13,6 @@ export interface FormData extends instanceOf<globalThis.FormData> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L9221)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L9588)
 
 Since v4.0.0

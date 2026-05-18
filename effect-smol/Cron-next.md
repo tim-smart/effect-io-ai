@@ -9,7 +9,7 @@ This function calculates the next date and time when the cron schedule
 should trigger, starting from the specified date (or current time if
 not provided).
 
-**Example**
+**Example** (Finding the next occurrence)
 
 ```ts
 import { Cron, Result } from "effect"
@@ -32,6 +32,6 @@ console.log(nextFromNow) // Next occurrence from now
 declare const next: (cron: Cron, now?: DateTime.DateTime.Input) => Date
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cron.ts#L640)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cron.ts#L698)
 
 Since v2.0.0

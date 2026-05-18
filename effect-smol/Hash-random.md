@@ -9,7 +9,7 @@ This function creates a random hash value for objects that don't have their own
 hash implementation. The hash value is cached using a WeakMap, so the same object
 will always return the same hash value during its lifetime.
 
-**Example**
+**Example** (Hashing objects by reference)
 
 ```ts
 import { Hash } from "effect"
@@ -30,6 +30,6 @@ console.log(Hash.random(obj1) === Hash.random(obj2)) // false
 declare const random: <A extends object>(self: A) => number
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Hash.ts#L163)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Hash.ts#L166)
 
 Since v2.0.0

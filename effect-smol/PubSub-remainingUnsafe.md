@@ -5,7 +5,7 @@ Module: `PubSub`<br />
 
 Returns the number of messages currently available in the subscription.
 
-**Example**
+**Example** (Checking remaining messages synchronously)
 
 ```ts
 import { PubSub } from "effect"
@@ -32,6 +32,6 @@ if (remainingOption._tag === "Some" && remainingOption.value > 10) {
 declare const remainingUnsafe: <A>(self: Subscription<A>) => Option.Option<number>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PubSub.ts#L1327)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PubSub.ts#L1411)
 
 Since v4.0.0

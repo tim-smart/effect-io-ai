@@ -6,7 +6,7 @@ Module: `DateTime`<br />
 Set the time zone of a `DateTime` from an IANA time zone identifier. If the
 time zone is invalid, `None` will be returned.
 
-**Example**
+**Example** (Setting named time zones safely)
 
 ```ts
 import { DateTime, Effect } from "effect"
@@ -24,6 +24,6 @@ Effect.gen(function*() {
 declare const setZoneNamed: { (zoneId: string, options?: { readonly adjustForTimeZone?: boolean | undefined; readonly disambiguation?: Disambiguation | undefined; }): (self: DateTime) => Option.Option<Zoned>; (self: DateTime, zoneId: string, options?: { readonly adjustForTimeZone?: boolean | undefined; readonly disambiguation?: Disambiguation | undefined; }): Option.Option<Zoned>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L882)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L1081)
 
 Since v3.6.0

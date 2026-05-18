@@ -6,7 +6,7 @@ Module: `Schedule`<br />
 Returns a new `Schedule` that recurs on the specified `Cron` schedule and
 outputs the duration between recurrences.
 
-**Example**
+**Example** (Scheduling work with cron expressions)
 
 ```ts
 import { Console, Data, Effect, Schedule } from "effect"
@@ -19,7 +19,7 @@ const everyMinute = Schedule.cron("* * * * *")
 const minutelyProgram = Effect.gen(function*() {
   yield* Effect.repeat(
     Effect.gen(function*() {
-      yield* Console.log(`Minutely task at ${new Date().toISOString()}`)
+      yield* Console.log("Running minutely task")
       return "minute"
     }),
     everyMinute.pipe(
@@ -57,8 +57,8 @@ const reportProgram = Effect.gen(function*() {
     Effect.gen(function*() {
       yield* Console.log("Generating weekly report...")
       const report = {
-        week: Math.floor(Date.now() / (7 * 24 * 60 * 60 * 1000)),
-        timestamp: new Date().toISOString()
+        week: 42,
+        status: "ready" as const
       }
       yield* Console.log(`Report generated: ${JSON.stringify(report)}`)
       return report
@@ -71,10 +71,13 @@ const reportProgram = Effect.gen(function*() {
 const businessHoursCheck = Schedule.cron("0,15,30,45 9-17 * * 1-5")
 
 const businessProgram = Effect.gen(function*() {
+  const statuses = ["healthy", "healthy", "degraded", "healthy"] as const
+  let index = 0
+
   yield* Effect.repeat(
     Effect.gen(function*() {
       yield* Console.log("Business hours health check...")
-      const status = Math.random() > 0.1 ? "healthy" : "degraded"
+      const status = statuses[index++]
       yield* Console.log(`System status: ${status}`)
       return status
     }),
@@ -91,9 +94,9 @@ const invoiceProgram = Effect.gen(function*() {
   yield* Effect.repeat(
     Effect.gen(function*() {
       yield* Console.log("Processing monthly invoices...")
-      const invoiceCount = Math.floor(Math.random() * 100) + 50
+      const invoiceCount = 72
       yield* Console.log(`Processed ${invoiceCount} invoices`)
-      return { count: invoiceCount, date: new Date().toISOString() }
+      return { count: invoiceCount, batch: "2024-01-a" }
     }),
     monthlyInvoice.pipe(Schedule.take(1))
   )
@@ -107,11 +110,13 @@ const complexCron = Schedule.cron("0 2,4,6 * * *").pipe(
 )
 
 const robustProgram = Effect.gen(function*() {
+  let attempt = 0
+
   yield* Effect.repeat(
     Effect.gen(function*() {
+      attempt++
       yield* Console.log("Complex scheduled task...")
-      // Simulate occasional failures
-      if (Math.random() < 0.3) {
+      if (attempt === 1) {
         return yield* Effect.fail(new ScheduledTaskError({ message: "Scheduled task failed" }))
       }
       return "success"
@@ -131,6 +136,6 @@ const robustProgram = Effect.gen(function*() {
 declare const cron: { (expression: Cron.Cron): Schedule<Duration.Duration, unknown, Cron.CronParseError>; (expression: string, tz?: string | DateTime.TimeZone): Schedule<Duration.Duration, unknown, Cron.CronParseError>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L1388)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L1373)
 
 Since v4.0.0

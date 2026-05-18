@@ -18,10 +18,9 @@ The `Exit` type represents the result of the effect:
 - If it fails, the failure information is provided as a `Failure` containing
   a `Cause` type.
 
-**Example**
+**Example** (Handling Results as Exit)
 
 ```ts
-// Title: Handling Results as Exit
 import { Effect } from "effect"
 
 // Execute a successful effect and get the Exit result as a Promise
@@ -53,6 +52,6 @@ Effect.runPromiseExit(Effect.fail("my error")).then(console.log)
 declare const runPromiseExit: <A, E>(effect: Effect<A, E>, options?: RunOptions | undefined) => Promise<Exit.Exit<A, E>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L8560)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L8485)
 
 Since v2.0.0

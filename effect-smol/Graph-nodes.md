@@ -8,7 +8,7 @@ Creates an iterator over all node indices in the graph.
 The iterator produces node indices in the order they were added to the graph.
 This provides access to all nodes regardless of connectivity.
 
-**Example**
+**Example** (Iterating all nodes)
 
 ```ts
 import { Graph } from "effect"
@@ -30,6 +30,6 @@ console.log(indices) // [0, 1, 2]
 declare const nodes: <N, E, T extends Kind = "directed">(graph: Graph<N, E, T> | MutableGraph<N, E, T>) => NodeWalker<N>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Graph.ts#L4094)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Graph.ts#L4291)
 
 Since v4.0.0

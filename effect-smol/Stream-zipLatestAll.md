@@ -10,7 +10,7 @@ Note: tracking the latest value is done on a per-array basis. That means
 that emitted elements that are not the last value in arrays will never be
 used for zipping.
 
-**Example**
+**Example** (Zipping latest values from many streams)
 
 ```ts
 import { Console, Effect, Stream } from "effect"
@@ -36,6 +36,6 @@ Effect.runPromise(program)
 declare const zipLatestAll: <T extends ReadonlyArray<Stream<any, any, any>>>(...streams: T) => Stream<[T[number]] extends [never] ? never : { [K in keyof T]: T[K] extends Stream<infer A, infer _E, infer _R> ? A : never; }, [T[number]] extends [never] ? never : T[number] extends Stream<infer _A, infer _E, infer _R> ? _E : never, [T[number]] extends [never] ? never : T[number] extends Stream<infer _A, infer _E, infer _R> ? _R : never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L3847)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L3998)
 
 Since v2.0.0

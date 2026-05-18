@@ -7,7 +7,7 @@ Create a Layer from the given time zone offset.
 
 This layer provides the `CurrentTimeZone` service with a fixed offset time zone.
 
-**Example**
+**Example** (Providing fixed-offset time zone layers)
 
 ```ts
 import { DateTime, Effect } from "effect"
@@ -29,6 +29,6 @@ Effect.provide(program, layer)
 declare const layerCurrentZoneOffset: (offset: number) => Layer.Layer<CurrentTimeZone>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L2351)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L2644)
 
 Since v3.6.0

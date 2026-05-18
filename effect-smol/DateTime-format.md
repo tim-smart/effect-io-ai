@@ -3,14 +3,16 @@ Module: `DateTime`<br />
 
 ## DateTime.format
 
-Format a `DateTime` as a string using the `DateTimeFormat` API.
+Formats a `DateTime` with `Intl.DateTimeFormat`.
 
-The `timeZone` option is set to the offset of the time zone.
+Unless a `timeZone` option is supplied, UTC values are formatted in UTC and
+zoned values are formatted in their named zone or fixed-offset zone.
 
-Note: On Node versions < 22, fixed "Offset" zones will set the time zone to
-"UTC" and use the adjusted `Date`.
+Fixed-offset zones depend on runtime support for offset `timeZone`
+identifiers. When unsupported, formatting falls back to UTC with the
+`DateTime` adjusted to the offset.
 
-**Example**
+**Example** (Formatting DateTime values with Intl options)
 
 ```ts
 import { DateTime } from "effect"
@@ -34,6 +36,6 @@ console.log(formatted) // "Saturday, June 15, 2024 at 3:30 PM"
 declare const format: { (options?: (Intl.DateTimeFormatOptions & { readonly locale?: string | undefined; }) | undefined): (self: DateTime) => string; (self: DateTime, options?: (Intl.DateTimeFormatOptions & { readonly locale?: string | undefined; }) | undefined): string; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L2038)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L2321)
 
 Since v3.6.0

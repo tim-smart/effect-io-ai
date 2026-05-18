@@ -8,7 +8,7 @@ Sets the value of the `TxChunk`.
 **Mutation behavior**: This function mutates the original TxChunk by replacing
 its internal state with the provided chunk. It does not return a new TxChunk reference.
 
-**Example**
+**Example** (Replacing the stored chunk)
 
 ```ts
 import { Chunk, Effect, TxChunk } from "effect"
@@ -31,6 +31,6 @@ const program = Effect.gen(function*() {
 declare const set: { <A>(chunk: Chunk.Chunk<A>): (self: TxChunk<A>) => Effect.Effect<void>; <A>(self: TxChunk<A>, chunk: Chunk.Chunk<A>): Effect.Effect<void>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxChunk.ts#L337)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxChunk.ts#L345)
 
 Since v4.0.0

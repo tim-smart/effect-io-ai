@@ -8,7 +8,7 @@ Constructs a stream from a range of integers, including both endpoints.
 If the provided `min` is greater than `max`, the stream will not emit any
 values.
 
-**Example**
+**Example** (Creating a numeric range)
 
 ```ts
 import { Console, Effect, Stream } from "effect"
@@ -28,6 +28,6 @@ Effect.runPromise(program)
 declare const range: (min: number, max: number, chunkSize?: number) => Stream<number>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L1686)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L1774)
 
 Since v4.0.0

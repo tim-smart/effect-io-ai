@@ -9,7 +9,7 @@ to the specified text content.
 **NOTE**: This method will remove and replace any previous system message
 from the prompt.
 
-**Example**
+**Example** (Replacing system instructions)
 
 ```ts
 import { Prompt } from "effect/unstable/ai"
@@ -35,6 +35,6 @@ const replaced = Prompt.setSystem(
 declare const setSystem: { (content: string): (self: Prompt) => Prompt; (self: Prompt, content: string): Prompt; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L2109)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L2131)
 
 Since v4.0.0

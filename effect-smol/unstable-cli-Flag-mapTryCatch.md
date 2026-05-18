@@ -5,7 +5,7 @@ Module: `Flag`<br />
 
 Transforms the parsed value using a function that might throw, with error handling.
 
-**Example**
+**Example** (Mapping thrown errors)
 
 ```ts
 import { Flag } from "effect/unstable/cli"
@@ -33,6 +33,6 @@ const urlFlag = Flag.string("url").pipe(
 declare const mapTryCatch: { <A, B>(f: (a: A) => B, onError: (error: unknown) => string): (self: Flag<A>) => Flag<B>; <A, B>(self: Flag<A>, f: (a: A) => B, onError: (error: unknown) => string): Flag<B>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Flag.ts#L628)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Flag.ts#L679)
 
 Since v4.0.0

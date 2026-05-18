@@ -5,7 +5,7 @@ Module: `CliError`<br />
 
 Type guard to check if a value is a CLI error.
 
-**Example**
+**Example** (Checking CLI errors)
 
 ```ts
 import { Effect } from "effect"
@@ -35,6 +35,6 @@ const program = Effect.gen(function*() {
 declare const isCliError: (u: unknown) => u is CliError
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/CliError.ts#L43)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/CliError.ts#L68)
 
 Since v4.0.0

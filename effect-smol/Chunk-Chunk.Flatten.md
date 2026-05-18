@@ -5,7 +5,7 @@ Module: `Chunk`<br />
 
 Flattens a nested Chunk type.
 
-**Example**
+**Example** (Flattening nested chunk types)
 
 ```ts
 import type { Chunk } from "effect"
@@ -25,6 +25,6 @@ type Flatten<T> = T extends NonEmptyChunk<NonEmptyChunk<infer A>> ? NonEmptyChun
     : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L1643)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L1669)
 
 Since v2.0.0

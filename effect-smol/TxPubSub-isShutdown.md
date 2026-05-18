@@ -5,7 +5,7 @@ Module: `TxPubSub`<br />
 
 Checks if the TxPubSub has been shut down.
 
-**Example**
+**Example** (Checking whether a pub/sub is shut down)
 
 ```ts
 import { Effect, TxPubSub } from "effect"
@@ -24,6 +24,6 @@ const program = Effect.gen(function*() {
 declare const isShutdown: <A>(self: TxPubSub<A>) => Effect.Effect<boolean>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxPubSub.ts#L350)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxPubSub.ts#L360)
 
 Since v4.0.0

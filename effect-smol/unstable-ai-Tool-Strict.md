@@ -13,7 +13,7 @@ When `false`, strict mode is disabled and `strict: false` is sent.
 When `undefined` (default), the provider's global configuration determines
 the behavior (e.g. `Config.strictJsonSchema` for OpenAI).
 
-**Example**
+**Example** (Disabling strict JSON schema mode)
 
 ```ts
 import { Tool } from "effect/unstable/ai"
@@ -28,6 +28,6 @@ const flexibleTool = Tool.make("search")
 declare const Strict: Context.Reference<boolean | undefined>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tool.ts#L1731)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tool.ts#L1794)
 
-Since v1.0.0
+Since v4.0.0

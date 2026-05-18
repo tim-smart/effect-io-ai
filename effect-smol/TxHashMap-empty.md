@@ -5,7 +5,7 @@ Module: `TxHashMap`<br />
 
 Creates an empty TxHashMap.
 
-**Example**
+**Example** (Creating an empty map)
 
 ```ts
 import { Effect, TxHashMap } from "effect"
@@ -34,6 +34,6 @@ const program = Effect.gen(function*() {
 declare const empty: <K, V>() => Effect.Effect<TxHashMap<K, V>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashMap.ts#L241)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashMap.ts#L272)
 
 Since v2.0.0

@@ -10,7 +10,7 @@ This is useful for creating iterables from a generating function that
 maintains state. The function should return `Option.some([value, nextState])`
 to continue or `Option.none()` to stop.
 
-**Example**
+**Example** (Unfolding state into values)
 
 ```ts
 import { Iterable, Option } from "effect"
@@ -43,6 +43,6 @@ console.log(Array.from(collatz)) // [7, 22, 11, 34, 17, 52, 26, 13, 40, 20, 10, 
 declare const unfold: <B, A>(b: B, f: (b: B) => Option<readonly [A, B]>) => Iterable<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Iterable.ts#L1982)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Iterable.ts#L2040)
 
 Since v2.0.0

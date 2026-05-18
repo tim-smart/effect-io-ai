@@ -3,8 +3,8 @@ Module: `Schema`<br />
 
 ## Schema.toCodecJson
 
-Derives a canonical JSON codec from a schema. The encoded form is `unknown`
-(any JSON-compatible value), decoded to the schema's `Type`.
+Derives a canonical JSON codec from a schema. The encoded form is `Json`, and
+decoding produces the schema's `Type`.
 
 **Signature**
 
@@ -12,6 +12,6 @@ Derives a canonical JSON codec from a schema. The encoded form is `unknown`
 declare const toCodecJson: <T, E, RD, RE>(schema: Codec<T, E, RD, RE>) => Codec<T, Json, RD, RE>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L11197)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L11606)
 
 Since v4.0.0

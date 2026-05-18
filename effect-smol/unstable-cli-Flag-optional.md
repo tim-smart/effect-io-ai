@@ -5,7 +5,7 @@ Module: `Flag`<br />
 
 Makes a flag optional, returning an Option type that can be None if not provided.
 
-**Example**
+**Example** (Making flags optional)
 
 ```ts
 import { Effect, Option } from "effect"
@@ -32,6 +32,6 @@ const program = Effect.gen(function*() {
 declare const optional: <A>(param: Flag<A>) => Flag<Option.Option<A>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Flag.ts#L472)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Flag.ts#L517)
 
 Since v4.0.0

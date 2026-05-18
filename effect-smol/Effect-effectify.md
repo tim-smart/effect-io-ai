@@ -3,12 +3,19 @@ Module: `Effect`<br />
 
 ## Effect.effectify
 
-Converts a callback-based function to a function that returns an `Effect`.
+Converts an error-first callback API into a function that returns an
+`Effect`.
 
-**Example**
+**Details**
 
-```ts
-Basic Usage
+The original function is called with the supplied arguments plus a final
+callback. A non-null callback error fails the returned effect, while a
+successful callback value becomes the effect success. Use `onError` to map
+callback errors and `onSyncError` to turn synchronous throws into typed
+failures; otherwise synchronous throws become defects.
+
+**Example** (Basic Usage)
+
 ```ts
 import { Effect } from "effect"
 import * as fs from "fs"
@@ -22,12 +29,9 @@ const program = readFile("package.json", "utf8")
 Effect.runPromise(program).then(console.log)
 // Output: contents of package.json
 ```
-```
 
-**Example**
+**Example** (Custom Error Handling)
 
-```ts
-Custom Error Handling
 ```ts
 import { Effect } from "effect"
 import * as fs from "fs"
@@ -42,7 +46,6 @@ const program = readFile("nonexistent.txt", "utf8")
 Effect.runPromiseExit(program).then(console.log)
 // Output: Exit.failure with custom error message
 ```
-```
 
 **Signature**
 
@@ -50,6 +53,6 @@ Effect.runPromiseExit(program).then(console.log)
 declare const effectify: { <F extends (...args: Array<any>) => any>(fn: F): Effectify.Effectify<F, Effectify.EffectifyError<F>>; <F extends (...args: Array<any>) => any, E>(fn: F, onError: (error: Effectify.EffectifyError<F>, args: Parameters<F>) => E): Effectify.Effectify<F, E>; <F extends (...args: Array<any>) => any, E, E2>(fn: F, onError: (error: Effectify.EffectifyError<F>, args: Parameters<F>) => E, onSyncError: (error: unknown, args: Parameters<F>) => E2): Effectify.Effectify<F, E | E2>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L14274)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L14221)
 
 Since v4.0.0

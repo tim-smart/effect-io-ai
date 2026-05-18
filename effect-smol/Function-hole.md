@@ -3,15 +3,23 @@ Module: `Function`<br />
 
 ## Function.hole
 
-Type hole simulation. Creates a placeholder for any type, primarily used during development.
+Creates a compile-time placeholder for a value of any type.
 
-**Example**
+`hole` is intended for temporary development use. If the placeholder is
+evaluated at runtime, it throws.
+
+**Example** (Creating a development placeholder)
 
 ```ts
 import { hole } from "effect/Function"
 
-// Use during development as a placeholder
-const placeholder: string = hole<string>()
+// Intentionally not called: `hole` throws if the placeholder is evaluated.
+const buildUser = (id: number): { readonly id: number; readonly name: string } => ({
+  id,
+  name: hole<string>()
+})
+
+console.log(typeof buildUser) // "function"
 ```
 
 **Signature**
@@ -20,6 +28,6 @@ const placeholder: string = hole<string>()
 declare const hole: <T>() => T
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Function.ts#L1199)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Function.ts#L1289)
 
 Since v2.0.0

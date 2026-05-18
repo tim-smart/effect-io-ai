@@ -9,7 +9,7 @@ Represents a filter that includes only specific types from a union.
 considered during pattern matching. It helps implement the type-level
 logic for positive matches and type narrowing.
 
-**Example**
+**Example** (Tracking included types)
 
 ```ts
 import { Match } from "effect"
@@ -31,6 +31,6 @@ export interface Only<out X> {
   }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L2159)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L2125)
 
 Since v4.0.0

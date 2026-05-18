@@ -5,7 +5,7 @@ Module: `Stream`<br />
 
 Creates a stream that fails with the specified `Cause`.
 
-**Example**
+**Example** (Failing with a cause)
 
 ```ts
 import { Cause, Console, Effect, Stream } from "effect"
@@ -29,6 +29,6 @@ Effect.runPromise(program)
 declare const failCause: <E>(cause: Cause.Cause<E>) => Stream<never, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L953)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L1009)
 
 Since v2.0.0

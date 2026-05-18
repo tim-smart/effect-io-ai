@@ -3,15 +3,14 @@ Module: `HttpApiSchema`<br />
 
 ## HttpApiSchema.Created
 
-A void schema with the HTTP status code 201.
-This is used to represent empty responses with the status code 201.
+Type of the `Created` schema, a void schema annotated with HTTP status code 201.
 
 **Signature**
 
 ```ts
-declare const Created: Created
+export interface Created extends Schema.Void {}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiSchema.ts#L211)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiSchema.ts#L217)
 
 Since v4.0.0

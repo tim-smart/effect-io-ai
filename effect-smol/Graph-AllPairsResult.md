@@ -3,7 +3,12 @@ Module: `Graph`<br />
 
 ## Graph.AllPairsResult
 
-Result of all-pairs shortest path computation.
+Result of an all-pairs shortest path computation.
+
+**Details**
+
+Contains distance, node-path, and edge-data maps keyed by source and target
+node indices.
 
 **Signature**
 
@@ -15,6 +20,6 @@ export interface AllPairsResult<E> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Graph.ts#L2878)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Graph.ts#L3019)
 
 Since v4.0.0

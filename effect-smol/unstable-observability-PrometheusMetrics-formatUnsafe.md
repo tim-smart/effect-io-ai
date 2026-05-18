@@ -14,6 +14,6 @@ Most users should use `format` instead.
 declare const formatUnsafe: (context: Context.Context<never>, options?: FormatOptions | undefined) => string
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PrometheusMetrics.ts#L131)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PrometheusMetrics.ts#L150)
 
 Since v4.0.0

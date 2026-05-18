@@ -3,14 +3,14 @@ Module: `AnthropicTool`<br />
 
 ## AnthropicTool.ComputerUseRightClickAction
 
-Perform a right click.
+Computer-use action payload for performing a right click, optionally at a specific coordinate.
 
 **Signature**
 
 ```ts
-declare const ComputerUseRightClickAction: Schema.Struct<{ readonly action: Schema.Literal<"right_click">; readonly coordinate: Schema.optional<Schema.Tuple<readonly [Schema.Number, Schema.Number]>>; }>
+type ComputerUseRightClickAction = typeof ComputerUseRightClickAction.Type
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L613)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L669)
 
-Since v1.0.0
+Since v4.0.0

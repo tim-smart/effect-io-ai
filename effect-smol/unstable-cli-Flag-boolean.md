@@ -5,7 +5,7 @@ Module: `Flag`<br />
 
 Creates a boolean flag that can be enabled or disabled.
 
-**Example**
+**Example** (Creating boolean flags)
 
 ```ts
 import { Flag } from "effect/unstable/cli"
@@ -20,6 +20,6 @@ const verboseFlag = Flag.boolean("verbose")
 declare const boolean: (name: string) => Flag<boolean>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Flag.ts#L61)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Flag.ts#L82)
 
 Since v4.0.0

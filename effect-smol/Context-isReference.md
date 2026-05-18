@@ -5,7 +5,7 @@ Module: `Context`<br />
 
 Checks if the provided argument is a `Reference`.
 
-**Example**
+**Example** (Checking for references)
 
 ```ts
 import { Context } from "effect"
@@ -25,6 +25,6 @@ assert.strictEqual(Context.isReference(Context.Service("Key")), false)
 declare const isReference: (u: unknown) => u is Reference<any>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Context.ts#L466)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Context.ts#L555)
 
 Since v4.0.0

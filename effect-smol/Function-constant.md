@@ -3,12 +3,12 @@ Module: `Function`<br />
 
 ## Function.constant
 
-Creates a constant value that never changes.
+Creates a zero-argument function that always returns the provided value.
 
-This is useful when you want to pass a value to a higher-order function (a function that takes another function as its argument)
-and want that inner function to always use the same value, no matter how many times it is called.
+Use `constant` when an API expects a thunk or callback and every invocation
+should return the same value.
 
-**Example**
+**Example** (Creating a constant thunk)
 
 ```ts
 import { constant } from "effect/Function"
@@ -26,6 +26,6 @@ assert.deepStrictEqual(constNull(), null)
 declare const constant: <A>(value: A) => LazyArg<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Function.ts#L278)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Function.ts#L319)
 
 Since v2.0.0

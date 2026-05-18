@@ -5,23 +5,31 @@ Module: `Stream`<br />
 
 Creates a stream from an event listener.
 
-**Example**
+**Example** (Creating a stream from an event listener)
 
 ```ts
-import { Console, Effect, Stream } from "effect"
+import { Effect, Stream } from "effect"
 
-declare const target: Stream.EventListener<number>
+class NumberTarget implements Stream.EventListener<number> {
+  addEventListener(event: string, f: (event: number) => void) {
+    if (event === "data") {
+      f(1)
+      f(2)
+      f(3)
+    }
+  }
+  removeEventListener(_event: string, _f: (event: number) => void) {}
+}
 
-const program = Effect.gen(function*() {
-  const stream = Stream.fromEventListener(target, "data").pipe(
+Effect.runPromise(Effect.gen(function*() {
+  const stream = Stream.fromEventListener(new NumberTarget(), "data").pipe(
     Stream.take(3)
   )
   const values = yield* Stream.runCollect(stream)
-  yield* Console.log(values)
-})
+  yield* Effect.sync(() => console.log(values))
+}))
 
-Effect.runPromise(program)
-// Output: [ 1, 2, 3 ]
+// [ 1, 2, 3 ]
 ```
 
 **Signature**
@@ -30,6 +38,6 @@ Effect.runPromise(program)
 declare const fromEventListener: <A = unknown>(target: EventListener<A>, type: string, options?: boolean | { readonly capture?: boolean; readonly passive?: boolean; readonly once?: boolean; readonly bufferSize?: number | undefined; } | undefined) => Stream<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L1540)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L1620)
 
 Since v3.1.0

@@ -3,7 +3,8 @@ Module: `Schema`<br />
 
 ## Schema.TimeZoneFromString
 
-Companion type for `TimeZoneFromString`.
+Schema interface for `TimeZoneFromString`, a transformation from IANA
+identifier or offset strings to `DateTime.TimeZone` values.
 
 **Signature**
 
@@ -13,6 +14,6 @@ export interface TimeZoneFromString extends decodeTo<TimeZone, String> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L10285)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L10690)
 
 Since v4.0.0

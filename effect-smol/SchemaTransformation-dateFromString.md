@@ -33,6 +33,6 @@ See also:
 declare const dateFromString: Transformation<Date, string, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L913)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L910)
 
 Since v4.0.0

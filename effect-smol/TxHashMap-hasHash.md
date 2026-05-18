@@ -3,10 +3,13 @@ Module: `TxHashMap`<br />
 
 ## TxHashMap.hasHash
 
-Checks if the specified key has an entry in the TxHashMap using a custom hash.
-This can provide performance benefits when the hash is precomputed.
+Checks whether the specified key has an entry using a caller-supplied hash.
 
-**Example**
+The supplied hash must be the hash for the same key, such as a precomputed
+`Hash.hash(key)` value. If the hash does not match the key, an existing entry
+may not be found.
+
+**Example** (Checking keys with precomputed hashes)
 
 ```ts
 import { Effect, Hash, TxHashMap } from "effect"
@@ -51,6 +54,6 @@ const program = Effect.gen(function*() {
 declare const hasHash: { <K1 extends K, K>(key: K1, hash: number): <V>(self: TxHashMap<K, V>) => Effect.Effect<boolean>; <K1 extends K, K, V>(self: TxHashMap<K, V>, key: K1, hash: number): Effect.Effect<boolean>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashMap.ts#L1264)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashMap.ts#L1327)
 
 Since v2.0.0

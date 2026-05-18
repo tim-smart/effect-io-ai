@@ -8,7 +8,7 @@ Outputs a warning message to the console.
 This function logs messages at the warning level, typically displayed
 in yellow or with a warning icon in most console implementations.
 
-**Example**
+**Example** (Writing warning messages)
 
 ```ts
 import { Console, Effect } from "effect"
@@ -27,6 +27,6 @@ const program = Effect.gen(function*() {
 declare const warn: (...args: ReadonlyArray<any>) => Effect.Effect<void>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Console.ts#L619)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Console.ts#L643)
 
 Since v2.0.0

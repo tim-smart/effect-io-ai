@@ -5,7 +5,7 @@ Module: `Channel`<br />
 
 Represents strategies for halting merged channels when one completes or fails.
 
-**Example**
+**Example** (Choosing merge halt strategies)
 
 ```ts
 import type { Channel } from "effect"
@@ -23,6 +23,6 @@ const either: Channel.HaltStrategy = "either" // Stop when either channel halts
 type HaltStrategy = "left" | "right" | "both" | "either"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L5707)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L5931)
 
 Since v2.0.0

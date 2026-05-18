@@ -5,7 +5,7 @@ Module: `HashMap`<br />
 
 This type-level utility extracts the value type `V` from a `HashMap<K, V>` type.
 
-**Example**
+**Example** (Extracting value types)
 
 ```ts
 import * as HashMap from "effect/HashMap"
@@ -34,6 +34,6 @@ const alice = HashMap.get(userMap, "alice")
 type Value<T> = [T] extends [HashMap<infer _K, infer _V>] ? _V : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashMap.ts#L158)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashMap.ts#L236)
 
 Since v2.0.0

@@ -5,7 +5,7 @@ Module: `String`<br />
 
 Test whether a `string` is empty.
 
-**Example**
+**Example** (Checking for empty strings)
 
 ```ts
 import { String } from "effect"
@@ -21,6 +21,6 @@ assert.deepStrictEqual(String.isEmpty("a"), false)
 declare const isEmpty: (self: string) => self is ""
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L357)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L379)
 
 Since v2.0.0

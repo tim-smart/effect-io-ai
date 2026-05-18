@@ -5,7 +5,7 @@ Module: `Stream`<br />
 
 Encodes a stream of strings into UTF-8 `Uint8Array` chunks.
 
-**Example**
+**Example** (Encoding a stream of strings into UTF-8 Uint8Array chunks)
 
 ```ts
 import { Console, Effect, Stream } from "effect"
@@ -28,6 +28,6 @@ Effect.runPromise(program)
 declare const encodeText: <E, R>(self: Stream<string, E, R>) => Stream<Uint8Array, E, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L8769)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L9046)
 
 Since v2.0.0

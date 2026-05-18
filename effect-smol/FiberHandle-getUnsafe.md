@@ -5,7 +5,7 @@ Module: `FiberHandle`<br />
 
 Retrieve the fiber from the FiberHandle.
 
-**Example**
+**Example** (Reading the current fiber unsafely)
 
 ```ts
 import { Effect, FiberHandle } from "effect"
@@ -30,6 +30,6 @@ Effect.gen(function*() {
 declare const getUnsafe: <A, E>(self: FiberHandle<A, E>) => Option.Option<Fiber.Fiber<A, E>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FiberHandle.ts#L381)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FiberHandle.ts#L446)
 
 Since v2.0.0

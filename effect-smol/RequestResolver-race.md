@@ -3,13 +3,15 @@ Module: `RequestResolver`<br />
 
 ## RequestResolver.race
 
-Returns a new request resolver that executes requests by sending them to this
-request resolver and that request resolver, returning the results from the first data
-source to complete and safely interrupting the loser.
+Returns a request resolver that sends each batch to both resolvers and
+completes with the first resolver to finish.
 
-The batch delay is determined by the first request resolver.
+**Details**
 
-**Example**
+The losing resolver run is interrupted after the winning resolver completes
+the batch.
+
+**Example** (Racing request resolvers)
 
 ```ts
 import { Effect, Exit, Request, RequestResolver } from "effect"
@@ -50,6 +52,6 @@ const racingResolver = RequestResolver.race(fastResolver, slowResolver)
 declare const race: { <A2 extends Request.Any>(that: RequestResolver<A2>): <A extends Request.Any>(self: RequestResolver<A>) => RequestResolver<A2 & A>; <A extends Request.Any, A2 extends Request.Any>(self: RequestResolver<A>, that: RequestResolver<A2>): RequestResolver<A & A2>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RequestResolver.ts#L793)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RequestResolver.ts#L864)
 
 Since v2.0.0

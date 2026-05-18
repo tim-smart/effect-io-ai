@@ -5,7 +5,7 @@ Module: `BigDecimal`<br />
 
 Normalizes a given `BigDecimal` by removing trailing zeros.
 
-**Example**
+**Example** (Normalizing trailing zeros)
 
 ```ts
 import { fromStringUnsafe, make, normalize } from "effect/BigDecimal"
@@ -27,6 +27,6 @@ assert.deepStrictEqual(
 declare const normalize: (self: BigDecimal) => BigDecimal
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigDecimal.ts#L174)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigDecimal.ts#L178)
 
 Since v2.0.0

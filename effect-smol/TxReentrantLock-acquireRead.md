@@ -7,7 +7,7 @@ Acquires a read lock. Blocks if another fiber holds the write lock.
 If the current fiber already holds the write lock, the read lock is granted (reentrancy).
 Returns the current number of read locks held by this fiber.
 
-**Example**
+**Example** (Acquiring a read lock)
 
 ```ts
 import { Effect, TxReentrantLock } from "effect"
@@ -26,6 +26,6 @@ const program = Effect.gen(function*() {
 declare const acquireRead: (self: TxReentrantLock) => Effect.Effect<number>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxReentrantLock.ts#L134)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxReentrantLock.ts#L137)
 
 Since v4.0.0

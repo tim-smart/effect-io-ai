@@ -11,6 +11,6 @@ Re-exports all named exports from the "./OpenAiStructuredOutput.ts" module as `O
 export * as OpenAiStructuredOutput from "./OpenAiStructuredOutput.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L322)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L332)
 
-Since v1.0.0
+Since v4.0.0

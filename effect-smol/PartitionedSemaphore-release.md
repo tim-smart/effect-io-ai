@@ -3,7 +3,14 @@ Module: `PartitionedSemaphore`<br />
 
 ## PartitionedSemaphore.release
 
-Releases permits back to the shared pool.
+Returns an effect that releases permits back to the shared pool and returns
+the current available permit count.
+
+**Details**
+
+Released permits are first assigned to waiting partitions in round-robin
+order. Only permits not needed by waiters increase the available count,
+which is capped at the semaphore capacity.
 
 **Signature**
 
@@ -11,6 +18,6 @@ Releases permits back to the shared pool.
 declare const release: { (permits: number): <K>(self: PartitionedSemaphore<K>) => Effect.Effect<number>; <K>(self: PartitionedSemaphore<K>, permits: number): Effect.Effect<number>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PartitionedSemaphore.ts#L288)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PartitionedSemaphore.ts#L377)
 
 Since v4.0.0

@@ -3,7 +3,10 @@ Module: `Fiber`<br />
 
 ## Fiber.runIn
 
-Links the lifetime of a fiber to the provided scope.
+Links a fiber to a `Scope` and returns the same fiber.
+
+When the scope is closed, the fiber is interrupted. If the scope is already
+closed, the fiber is interrupted immediately.
 
 **Signature**
 
@@ -11,6 +14,6 @@ Links the lifetime of a fiber to the provided scope.
 declare const runIn: { (scope: Scope): <A, E>(self: Fiber<A, E>) => Fiber<A, E>; <A, E>(self: Fiber<A, E>, scope: Scope): Fiber<A, E>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Fiber.ts#L488)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Fiber.ts#L510)
 
 Since v4.0.0

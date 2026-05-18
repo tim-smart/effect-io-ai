@@ -3,18 +3,14 @@ Module: `HttpApiSchema`<br />
 
 ## HttpApiSchema.asMultipart
 
-Marks a schema as a multipart payload.
-
-**See**
-
-- `asMultipartStream` for a multipart stream payload.
+Schema type returned by `asMultipart` for buffered multipart payloads.
 
 **Signature**
 
 ```ts
-declare const asMultipart: (options?: Multipart_.withLimits.Options) => <S extends Schema.Top>(self: S) => asMultipart<S>
+export interface asMultipart<S extends Schema.Top> extends Schema.brand<S["Rebuild"], MultipartTypeId> {}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiSchema.ts#L282)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiSchema.ts#L298)
 
 Since v4.0.0

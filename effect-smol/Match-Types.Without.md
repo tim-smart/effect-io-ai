@@ -9,7 +9,7 @@ Represents a filter that excludes specific types from a union.
 from consideration during pattern matching. It helps implement the
 type-level logic for `Match.not` and other exclusion operations.
 
-**Example**
+**Example** (Tracking excluded types)
 
 ```ts
 import { Match } from "effect"
@@ -31,6 +31,6 @@ export interface Without<out X> {
   }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L2132)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L2097)
 
 Since v4.0.0

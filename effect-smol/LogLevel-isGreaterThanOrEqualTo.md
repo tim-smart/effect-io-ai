@@ -8,7 +8,7 @@ Determines if the first log level is more severe than or equal to the second.
 Returns `true` if `self` represents a level that is more severe than or equal to `that`.
 This is the most common function for implementing minimum log level filtering.
 
-**Example**
+**Example** (Filtering by minimum log level)
 
 ```ts
 import { Logger, LogLevel } from "effect"
@@ -45,6 +45,6 @@ const shouldLog = isInfoOrAbove("Error") // true
 declare const isGreaterThanOrEqualTo: { (that: LogLevel): (self: LogLevel) => boolean; (self: LogLevel, that: LogLevel): boolean; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/LogLevel.ts#L277)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/LogLevel.ts#L227)
 
 Since v2.0.0

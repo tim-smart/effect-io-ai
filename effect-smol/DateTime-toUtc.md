@@ -5,7 +5,7 @@ Module: `DateTime`<br />
 
 For a `DateTime` returns a new `DateTime.Utc`.
 
-**Example**
+**Example** (Converting DateTime values to UTC)
 
 ```ts
 import { DateTime } from "effect"
@@ -24,6 +24,6 @@ const utc: DateTime.Utc = DateTime.toUtc(now)
 declare const toUtc: (self: DateTime) => Utc
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L651)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L839)
 
 Since v3.13.0

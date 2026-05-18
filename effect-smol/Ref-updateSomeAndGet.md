@@ -9,7 +9,7 @@ If the partial function returns `Option.some`, the Ref is updated with the new v
 If it returns `Option.none`, the Ref is left unchanged.
 Returns the current value of the Ref after the potential update.
 
-**Example**
+**Example** (Conditionally updating and returning the current value)
 
 ```ts
 import { Effect, Ref } from "effect"
@@ -40,6 +40,6 @@ const program = Effect.gen(function*() {
 declare const updateSomeAndGet: (<A>(pf: (a: A) => Option.Option<A>) => (self: Ref<A>) => Effect.Effect<A>) & (<A>(self: Ref<A>, pf: (a: A) => Option.Option<A>) => Effect.Effect<A>)
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Ref.ts#L649)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Ref.ts#L669)
 
 Since v2.0.0

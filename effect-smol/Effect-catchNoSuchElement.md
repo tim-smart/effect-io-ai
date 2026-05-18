@@ -8,7 +8,7 @@ Catches `NoSuchElementError` failures and converts them to `Option.none`.
 Success values become `Option.some`, `NoSuchElementError` becomes
 `Option.none`, and all other errors are preserved.
 
-**Example**
+**Example** (Usage)
 
 ```ts
 import { Effect, Option } from "effect"
@@ -32,6 +32,6 @@ This API replaces the following from Effect 3.x:
 declare const catchNoSuchElement: <A, E, R>(self: Effect<A, E, R>) => Effect<Option<A>, Exclude<E, Cause.NoSuchElementError>, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L3304)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L3195)
 
 Since v2.0.0

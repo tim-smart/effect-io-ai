@@ -8,7 +8,16 @@ Concatenates another `TxChunk` to the end of this `TxChunk`.
 **Mutation behavior**: This function mutates the original TxChunk by appending
 all elements from the other TxChunk. It does not return a new TxChunk reference.
 
-**Example**
+**Signature**
+
+```ts
+declare const concat: { <A>(other: TxChunk<A>): (self: TxChunk<A>) => Effect.Effect<void>; <A>(self: TxChunk<A>, other: TxChunk<A>): Effect.Effect<void>; }
+```
+
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxChunk.ts#L771)
+
+Since v4.0.0
+**Example** (Concatenating TxChunks)
 
 ```ts
 import { Chunk, Effect, TxChunk } from "effect"
@@ -28,13 +37,3 @@ const program = Effect.gen(function*() {
   console.log(Chunk.toReadonlyArray(original)) // [4, 5, 6]
 })
 ```
-
-**Signature**
-
-```ts
-declare const concat: { <A>(other: TxChunk<A>): (self: TxChunk<A>) => Effect.Effect<void>; <A>(self: TxChunk<A>, other: TxChunk<A>): Effect.Effect<void>; }
-```
-
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxChunk.ts#L753)
-
-Since v4.0.0

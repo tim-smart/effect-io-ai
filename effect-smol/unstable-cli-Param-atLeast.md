@@ -8,7 +8,7 @@ Wraps an option to require it to be specified at least `min` times.
 This combinator transforms an option to accept at least `min`
 occurrences on the command line, returning an array of all provided values.
 
-**Example**
+**Example** (Requiring repeated values)
 
 ```ts
 import * as Param from "effect/unstable/cli/Param"
@@ -31,6 +31,6 @@ const inputs = Param.string(Param.flagKind, "input").pipe(
 declare const atLeast: { <A>(min: number): <Kind extends ParamKind>(self: Param<Kind, A>) => Param<Kind, ReadonlyArray<A>>; <Kind extends ParamKind, A>(self: Param<Kind, A>, min: number): Param<Kind, ReadonlyArray<A>>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Param.ts#L1430)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Param.ts#L1522)
 
 Since v4.0.0

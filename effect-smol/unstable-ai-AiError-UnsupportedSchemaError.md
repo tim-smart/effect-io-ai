@@ -9,7 +9,7 @@ unsupported constructs.
 Unsupported schema errors are not retryable because they indicate a
 programmer error where the schema is incompatible with the provider.
 
-**Example**
+**Example** (Creating an unsupported schema error)
 
 ```ts
 import { AiError } from "effect/unstable/ai"
@@ -29,6 +29,6 @@ console.log(error.message)
 declare class UnsupportedSchemaError
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AiError.ts#L847)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AiError.ts#L885)
 
-Since v1.0.0
+Since v4.0.0

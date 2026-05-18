@@ -3,10 +3,14 @@ Module: `Deferred`<br />
 
 ## Deferred.interruptWith
 
-Completes the `Deferred` with interruption. This will interrupt all fibers
-waiting on the value of the `Deferred` with the specified `FiberId`.
+Attempts to complete the `Deferred` with interruption by the specified
+`FiberId`.
 
-**Example**
+Fibers waiting on the `Deferred` are interrupted with that fiber id only if
+this call completes it. The returned effect succeeds with `true` when this
+call completed the `Deferred`, or `false` if it was already completed.
+
+**Example** (Interrupting a Deferred with a fiber id)
 
 ```ts
 import { Deferred, Effect } from "effect"
@@ -24,6 +28,6 @@ const program = Effect.gen(function*() {
 declare const interruptWith: { (fiberId: number): <A, E>(self: Deferred<A, E>) => Effect<boolean>; <A, E>(self: Deferred<A, E>, fiberId: number): Effect<boolean>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Deferred.ts#L535)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Deferred.ts#L598)
 
 Since v2.0.0

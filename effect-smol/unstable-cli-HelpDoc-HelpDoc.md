@@ -7,7 +7,7 @@ Structured representation of help documentation for a command.
 This data structure is independent of formatting, allowing for
 different output formats (text, markdown, JSON, etc.).
 
-**Example**
+**Example** (Defining command help documentation)
 
 ```ts
 import { Option as O, Context } from "effect"
@@ -92,6 +92,6 @@ export interface HelpDoc {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HelpDoc.ts#L54)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HelpDoc.ts#L76)
 
 Since v4.0.0

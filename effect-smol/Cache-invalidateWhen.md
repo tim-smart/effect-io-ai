@@ -6,7 +6,7 @@ Module: `Cache`<br />
 Conditionally invalidates the entry associated with the specified key in the cache
 if the predicate returns true for the cached value.
 
-**Example**
+**Example** (Invalidating entries conditionally)
 
 ```ts
 import { Cache, Effect } from "effect"
@@ -70,6 +70,6 @@ const program = Effect.gen(function*() {
 declare const invalidateWhen: { <Key, A>(key: Key, f: Predicate<A>): <E, R>(self: Cache<Key, A, E, R>) => Effect.Effect<boolean>; <Key, A, E, R>(self: Cache<Key, A, E, R>, key: Key, f: Predicate<A>): Effect.Effect<boolean>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cache.ts#L875)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cache.ts#L953)
 
 Since v4.0.0

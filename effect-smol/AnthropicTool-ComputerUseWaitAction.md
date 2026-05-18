@@ -3,14 +3,14 @@ Module: `AnthropicTool`<br />
 
 ## AnthropicTool.ComputerUseWaitAction
 
-Pause between performing actions.
+Computer-use action payload for pausing for a specified duration.
 
 **Signature**
 
 ```ts
-declare const ComputerUseWaitAction: Schema.Struct<{ readonly action: Schema.Literal<"wait">; readonly duration: Schema.Number; }>
+type ComputerUseWaitAction = typeof ComputerUseWaitAction.Type
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L681)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L742)
 
-Since v1.0.0
+Since v4.0.0

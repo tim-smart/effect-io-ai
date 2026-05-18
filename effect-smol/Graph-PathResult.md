@@ -3,7 +3,12 @@ Module: `Graph`<br />
 
 ## Graph.PathResult
 
-Result of a shortest path computation containing the path and total distance.
+Result of a shortest path computation.
+
+**Details**
+
+Contains the node-index path, the total numeric distance, and the edge data
+encountered along the path.
 
 **Signature**
 
@@ -15,6 +20,6 @@ export interface PathResult<E> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Graph.ts#L2686)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Graph.ts#L2812)
 
 Since v4.0.0

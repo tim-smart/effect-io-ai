@@ -9,7 +9,7 @@ This function creates a hash value based on all elements in the array.
 The order of elements matters, so arrays with the same elements in different
 orders will produce different hash values.
 
-**Example**
+**Example** (Hashing arrays)
 
 ```ts
 import { Hash } from "effect"
@@ -33,6 +33,6 @@ console.log(Hash.array(arr1) === Hash.array(arr3)) // false
 declare const array: <A>(arr: Iterable<A>) => number
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Hash.ts#L424)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Hash.ts#L435)
 
 Since v2.0.0

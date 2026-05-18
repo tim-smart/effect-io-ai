@@ -3,22 +3,18 @@ Module: `Effect`<br />
 
 ## Effect.schedule
 
-Repeats an effect based on a specified schedule.
+Runs an effect repeatedly according to a schedule and returns the schedule's
+final output.
 
 **Details**
 
-This function allows you to execute an effect repeatedly according to a given
-schedule. The schedule determines the timing and number of repetitions. Each
-repetition can also depend on the decision of the schedule, providing
-flexibility for complex workflows. This function does not modify the effect's
-success or failure; it only controls its repetition.
+The schedule is first stepped with `undefined`. After each successful
+execution, the effect's success value is fed to the schedule to decide
+whether to run again. The returned effect fails if the effect or schedule
+fails, and otherwise succeeds with the schedule output when the schedule
+completes.
 
-For example, you can use a schedule that recurs a specific number of times,
-adds delays between repetitions, or customizes repetition behavior based on
-external inputs. The effect runs initially and is repeated according to the
-schedule.
-
-**Example**
+**Example** (Usage)
 
 ```ts
 import { Console, Effect, Schedule } from "effect"
@@ -53,6 +49,6 @@ to depend on the result of this effect.
 declare const schedule: { <Output, Error, Env>(schedule: Schedule<Output, unknown, Error, Env>): <A, E, R>(self: Effect<A, E, R>) => Effect<Output, E, R | Env>; <A, E, R, Output, Error, Env>(self: Effect<A, E, R>, schedule: Schedule<Output, unknown, Error, Env>): Effect<Output, E, R | Env>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L7358)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L7244)
 
 Since v2.0.0

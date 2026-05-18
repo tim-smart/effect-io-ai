@@ -6,7 +6,7 @@ Module: `MutableList`<br />
 Takes all elements from the MutableList and returns them as an array.
 The list becomes empty after this operation. This is equivalent to takeN(list, list.length).
 
-**Example**
+**Example** (Draining all elements)
 
 ```ts
 import * as MutableList from "effect/MutableList"
@@ -47,6 +47,6 @@ function drainAndProcess<T>(
 declare const takeAll: <A>(self: MutableList<A>) => Array<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableList.ts#L705)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableList.ts#L747)
 
 Since v4.0.0

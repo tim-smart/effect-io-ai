@@ -3,23 +3,14 @@ Module: `Equivalence`<br />
 
 ## Equivalence.Date
 
-An `Equivalence` instance for `Date` objects.
+An `Equivalence` instance for `Date` objects that compares their
+`getTime()` values using `Equivalence.Number`.
 
-Dates are compared by their time value (milliseconds since the Unix epoch),
-using `Date.prototype.getTime`.
+Different `Date` instances that represent the same millisecond timestamp are
+equivalent. Because `Equivalence.Number` treats `NaN` as equal to `NaN`, two
+invalid `Date` values are also considered equivalent.
 
-When to use this:
-- When comparing `Date` objects by their exact point in time
-- When you need value-based equality instead of reference equality
-- When working with collections that contain `Date` values
-
-Behavior:
-- Does not mutate inputs
-- Two dates are equivalent if `self.getTime() === that.getTime()`
-- Internally uses `Number` equivalence
-- Different `Date` instances representing the same time are considered equivalent
-
-**Example**
+**Example** (Comparing Date values)
 
 ```ts
 import { Equivalence } from "effect"
@@ -56,6 +47,6 @@ See also: `Number`, `mapInput`, `strictEqual`
 declare const Date: Equivalence<Date>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Equivalence.ts#L903)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Equivalence.ts#L898)
 
 Since v4.0.0

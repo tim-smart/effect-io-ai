@@ -11,6 +11,6 @@ Provider-specific metadata attached to `InternalProviderError`.
 export interface InternalProviderErrorMetadata extends ProviderMetadata {}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AiError.ts#L311)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AiError.ts#L322)
 
-Since v1.0.0
+Since v4.0.0

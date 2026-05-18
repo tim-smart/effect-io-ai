@@ -1,9 +1,10 @@
-Package: `@effect/ai-openai`<br />
+Package: `@effect/ai-openai-compat`<br />
 Module: `OpenAiClient`<br />
 
 ## OpenAiClient.OpenAiClient
 
-Service identifier for the OpenAI client.
+Context service tag for accessing an OpenAI-compatible client from the
+Effect context.
 
 **Signature**
 
@@ -11,6 +12,6 @@ Service identifier for the OpenAI client.
 declare class OpenAiClient
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L94)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/OpenAiClient.ts#L83)
 
-Since v1.0.0
+Since v4.0.0

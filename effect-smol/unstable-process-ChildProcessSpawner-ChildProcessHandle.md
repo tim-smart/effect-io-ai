@@ -82,7 +82,8 @@ export interface ChildProcessHandle {
    * This is the only supported way to re-reference a child process after it
    * has been unrefed.
    *
-   * @example
+   * **Example** (Temporarily unreferencing a child process)
+   *
    * ```ts
    * import { NodeServices } from "@effect/platform-node"
    * import { Effect } from "effect"
@@ -103,6 +104,6 @@ export interface ChildProcessHandle {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ChildProcessSpawner.ts#L64)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ChildProcessSpawner.ts#L73)
 
 Since v4.0.0

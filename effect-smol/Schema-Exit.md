@@ -3,8 +3,8 @@ Module: `Schema`<br />
 
 ## Schema.Exit
 
-Schema for `Exit<A, E>`, representing the result of a fiber execution —
-either a success with value `A` or a failure with `Cause<E>`.
+Schema for `Exit` values, representing either a success with value `A` or a
+failure with a `Cause` containing typed errors and defects.
 
 **Signature**
 
@@ -24,6 +24,6 @@ export interface Exit<A extends Top, E extends Top, D extends Top> extends
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L7950)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L8275)
 
 Since v4.0.0

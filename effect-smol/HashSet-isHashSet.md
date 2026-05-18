@@ -5,7 +5,7 @@ Module: `HashSet`<br />
 
 Checks if a value is a HashSet.
 
-**Example**
+**Example** (Checking for a HashSet)
 
 ```ts
 import * as HashSet from "effect/HashSet"
@@ -24,6 +24,6 @@ console.log(HashSet.isHashSet(null)) // false
 declare const isHashSet: { <V>(u: Iterable<V>): u is HashSet<V>; (u: unknown): u is HashSet<unknown>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashSet.ts#L175)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashSet.ts#L223)
 
 Since v2.0.0

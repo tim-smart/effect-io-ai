@@ -5,7 +5,7 @@ Module: `DateTime`<br />
 
 Set the time zone of a `DateTime`, returning a new `DateTime.Zoned`.
 
-**Example**
+**Example** (Setting time zones)
 
 ```ts
 import { DateTime, Effect } from "effect"
@@ -25,6 +25,6 @@ Effect.gen(function*() {
 declare const setZone: { (zone: TimeZone, options?: { readonly adjustForTimeZone?: boolean | undefined; readonly disambiguation?: Disambiguation | undefined; }): (self: DateTime) => Zoned; (self: DateTime, zone: TimeZone, options?: { readonly adjustForTimeZone?: boolean | undefined; readonly disambiguation?: Disambiguation | undefined; }): Zoned; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L671)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L861)
 
 Since v3.6.0

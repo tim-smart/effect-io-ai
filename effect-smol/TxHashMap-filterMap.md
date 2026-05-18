@@ -9,7 +9,7 @@ entry, keeping only successful results and transforming them.
 **Return behavior**: This function returns a new TxHashMap reference containing
 only the transformed entries that succeeded. The original TxHashMap is not modified.
 
-**Example**
+**Example** (Filtering and mapping entries)
 
 ```ts
 import { Effect, Option, Result, TxHashMap } from "effect"
@@ -63,6 +63,6 @@ const program = Effect.gen(function*() {
 declare const filterMap: { <V, K, A, X>(f: (input: V, key: K) => Result<A, X>): (self: TxHashMap<K, V>) => Effect.Effect<TxHashMap<K, A>>; <K, V, A, X>(self: TxHashMap<K, V>, f: (input: V, key: K) => Result<A, X>): Effect.Effect<TxHashMap<K, A>>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashMap.ts#L1551)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashMap.ts#L1618)
 
 Since v2.0.0

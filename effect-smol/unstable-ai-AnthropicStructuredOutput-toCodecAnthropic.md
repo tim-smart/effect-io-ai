@@ -32,4 +32,4 @@ declare const toCodecAnthropic: <T, E, RD, RE>(schema: Schema.Codec<T, E, RD, RE
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AnthropicStructuredOutput.ts#L52)
 
-Since v1.0.0
+Since v4.0.0

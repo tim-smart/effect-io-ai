@@ -5,7 +5,7 @@ Module: `HashMap`<br />
 
 Filters entries out of a `HashMap` using the specified predicate.
 
-**Example**
+**Example** (Filtering entries)
 
 ```ts
 import * as HashMap from "effect/HashMap"
@@ -25,6 +25,6 @@ console.log(HashMap.has(map2, "a")) // false
 declare const filter: { <K, A>(f: (a: NoInfer<A>, k: K) => boolean): (self: HashMap<K, A>) => HashMap<K, A>; <K, A>(self: HashMap<K, A>, f: (a: A, k: K) => boolean): HashMap<K, A>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashMap.ts#L1045)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashMap.ts#L1164)
 
 Since v2.0.0

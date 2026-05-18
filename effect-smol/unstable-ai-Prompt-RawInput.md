@@ -3,12 +3,10 @@ Module: `Prompt`<br />
 
 ## Prompt.RawInput
 
-Raw input types that can be converted into a Prompt.
+Raw input accepted by `make`: a string, an iterable of encoded messages, or
+an existing `Prompt`.
 
-Supports various input formats for convenience, including simple strings,
-message arrays, response parts, and existing prompts.
-
-**Example**
+**Example** (Accepting raw prompt input)
 
 ```ts
 import type { Prompt } from "effect/unstable/ai"
@@ -35,6 +33,6 @@ type RawInput = | string
   | Prompt
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L1783)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L1800)
 
 Since v4.0.0

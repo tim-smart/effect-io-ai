@@ -5,7 +5,7 @@ Module: `Number`<br />
 
 Takes an `Iterable` of `number`s and returns their sum as a single `number`.
 
-**Example**
+**Example** (Summing an iterable)
 
 ```ts
 import { sumAll } from "effect/Number"
@@ -20,6 +20,6 @@ assert.deepStrictEqual(sumAll([2, 3, 4]), 9)
 declare const sumAll: (collection: Iterable<number>) => number
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Number.ts#L443)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Number.ts#L463)
 
 Since v2.0.0

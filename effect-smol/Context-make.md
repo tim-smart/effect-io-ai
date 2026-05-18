@@ -5,7 +5,7 @@ Module: `Context`<br />
 
 Creates a new `Context` with a single service associated to the key.
 
-**Example**
+**Example** (Creating a context with one service)
 
 ```ts
 import { Context } from "effect"
@@ -24,6 +24,6 @@ assert.deepStrictEqual(Context.get(context, Port), { PORT: 8080 })
 declare const make: <I, S>(key: Key<I, S>, service: Types.NoInfer<S>) => Context<I>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Context.ts#L503)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Context.ts#L594)
 
 Since v4.0.0

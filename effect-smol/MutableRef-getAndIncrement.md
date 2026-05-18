@@ -5,7 +5,7 @@ Module: `MutableRef`<br />
 
 Increments a numeric MutableRef by 1 and returns the previous value.
 
-**Example**
+**Example** (Reading before incrementing)
 
 ```ts
 import { MutableRef } from "effect"
@@ -44,6 +44,6 @@ while (MutableRef.get(iterations) < 5) {
 declare const getAndIncrement: (self: MutableRef<number>) => number
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableRef.ts#L333)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableRef.ts#L350)
 
 Since v2.0.0

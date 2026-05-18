@@ -3,9 +3,10 @@ Module: `Stream`<br />
 
 ## Stream.tick
 
-Creates a stream that emits void values spaced by the specified duration.
+Creates a stream that emits `void` immediately once, then emits another
+`void` after each specified interval.
 
-**Example**
+**Example** (Emitting ticks on an interval)
 
 ```ts
 import { Console, Effect, Stream } from "effect"
@@ -28,6 +29,6 @@ Effect.runPromise(program)
 declare const tick: (interval: Duration.Input) => Stream<void>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L560)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L603)
 
 Since v2.0.0

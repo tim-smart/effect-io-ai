@@ -5,7 +5,7 @@ Module: `TxDeferred`<br />
 
 Determines if the provided value is a `TxDeferred`.
 
-**Example**
+**Example** (Checking transactional deferreds)
 
 ```ts
 import { Effect, TxDeferred } from "effect"
@@ -23,6 +23,6 @@ const program = Effect.gen(function*() {
 declare const isTxDeferred: (u: unknown) => u is TxDeferred<unknown, unknown>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxDeferred.ts#L271)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxDeferred.ts#L279)
 
 Since v4.0.0

@@ -3,17 +3,12 @@ Module: `Schema`<br />
 
 ## Schema.isEndsWith
 
-Validates that a string ends with the specified suffix.
+Validates at runtime that a string ends with the specified literal suffix.
 
-**JSON Schema**
-
-This check corresponds to a `pattern` constraint in JSON Schema that matches
-strings ending with the specified suffix.
-
-**Arbitrary**
-
-When generating test data with fast-check, this applies a `patterns`
-constraint to ensure generated strings end with the required suffix.
+**Notes**
+The JSON Schema and arbitrary metadata are built from `${endsWith}$` without
+escaping regexp metacharacters. If the suffix contains regexp syntax, generated
+patterns may not be equivalent to the runtime `endsWith` check.
 
 **Signature**
 
@@ -21,6 +16,6 @@ constraint to ensure generated strings end with the required suffix.
 declare const isEndsWith: (endsWith: string, annotations?: Annotations.Filter) => AST.Filter<string>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L5376)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L5672)
 
 Since v4.0.0

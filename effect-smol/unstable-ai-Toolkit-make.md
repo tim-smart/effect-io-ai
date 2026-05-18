@@ -9,7 +9,7 @@ This is the primary constructor for creating toolkits. It accepts multiple
 tools and organizes them into a toolkit that can be provided to AI language
 models.
 
-**Example**
+**Example** (Creating a toolkit)
 
 ```ts
 import { Schema } from "effect"
@@ -38,6 +38,6 @@ const toolkit = Toolkit.make(GetCurrentTime, GetWeather)
 declare const make: <Tools extends ReadonlyArray<Tool.Any>>(...tools: Tools) => Toolkit<ToolsByName<Tools>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Toolkit.ts#L501)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Toolkit.ts#L505)
 
-Since v1.0.0
+Since v4.0.0

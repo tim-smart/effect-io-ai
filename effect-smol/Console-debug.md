@@ -3,12 +3,14 @@ Module: `Console`<br />
 
 ## Console.debug
 
-Outputs a debug message to the console.
+Writes a debug message through the current `Console` service.
 
-This function logs messages at the debug level, which may be filtered
-out in production environments.
+**Details**
+The arguments are passed to the service's `debug` method when the returned
+Effect is executed. Any filtering behavior depends on the active console
+implementation.
 
-**Example**
+**Example** (Writing debug messages)
 
 ```ts
 import { Console, Effect } from "effect"
@@ -25,6 +27,6 @@ const program = Effect.gen(function*() {
 declare const debug: (...args: ReadonlyArray<any>) => Effect.Effect<void>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Console.ts#L282)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Console.ts#L294)
 
 Since v2.0.0

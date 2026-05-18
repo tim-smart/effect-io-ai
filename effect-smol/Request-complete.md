@@ -12,6 +12,6 @@ within RequestResolver implementations to fulfill pending requests.
 declare const complete: { <A extends Any>(result: Result<A>): (self: Entry<A>) => Effect.Effect<void>; <A extends Any>(self: Entry<A>, result: Result<A>): Effect.Effect<void>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Request.ts#L360)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Request.ts#L411)
 
 Since v2.0.0

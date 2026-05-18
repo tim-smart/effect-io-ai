@@ -3,10 +3,14 @@ Module: `FiberSet`<br />
 
 ## FiberSet.makeRuntimePromise
 
-Create an Effect run function that is backed by a FiberSet.
-The returned run function will return Promise's.
+Creates a scoped run function that forks effects into a new `FiberSet` and
+returns a `Promise` for each effect result.
 
-**Example**
+Managed fibers are removed when they complete and are interrupted when the
+set's scope closes. Each Promise resolves with the effect's success value or
+rejects with the squashed failure cause.
+
+**Example** (Creating a promise runtime)
 
 ```ts
 import { Effect, FiberSet } from "effect"
@@ -31,6 +35,6 @@ const program = Effect.gen(function*() {
 declare const makeRuntimePromise: <R = never, A = unknown, E = unknown>() => Effect.Effect<(<XE extends E, XA extends A>(effect: Effect.Effect<XA, XE, R>, options?: (Effect.RunOptions & { readonly propagateInterruption?: boolean | undefined; }) | undefined) => Promise<XA>), never, R | Scope.Scope>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FiberSet.ts#L206)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FiberSet.ts#L257)
 
 Since v3.13.0

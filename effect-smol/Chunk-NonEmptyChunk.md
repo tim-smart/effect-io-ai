@@ -5,7 +5,7 @@ Module: `Chunk`<br />
 
 A non-empty Chunk guaranteed to contain at least one element.
 
-**Example**
+**Example** (Working with non-empty chunks)
 
 ```ts
 import { Chunk } from "effect"
@@ -21,6 +21,6 @@ console.log(Chunk.lastNonEmpty(nonEmptyChunk)) // 3
 export interface NonEmptyChunk<out A> extends Chunk<A>, NonEmptyIterable<A> {}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L135)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L139)
 
 Since v2.0.0

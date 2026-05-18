@@ -10,7 +10,7 @@ Convert success to `Option.some` and failure to `Option.none`.
 Success values become `Option.some`, recoverable failures become
 `Option.none`, and defects still fail the effect.
 
-**Example**
+**Example** (Usage)
 
 ```ts
 import { Console, Effect, Option } from "effect"
@@ -39,6 +39,6 @@ Effect.runPromise(program)
 declare const option: <A, E, R>(self: Effect<A, E, R>) => Effect<Option<A>, never, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L2259)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L2138)
 
 Since v2.0.0

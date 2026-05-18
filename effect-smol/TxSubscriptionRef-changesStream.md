@@ -6,7 +6,7 @@ Module: `TxSubscriptionRef`<br />
 Returns a Stream of all changes to the TxSubscriptionRef, starting with the
 current value followed by every subsequent update.
 
-**Example**
+**Example** (Streaming changes)
 
 ```ts
 import { Effect, Stream, TxSubscriptionRef } from "effect"
@@ -29,6 +29,6 @@ const program = Effect.gen(function*() {
 declare const changesStream: <A>(self: TxSubscriptionRef<A>) => Stream.Stream<A, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxSubscriptionRef.ts#L382)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxSubscriptionRef.ts#L393)
 
 Since v4.0.0

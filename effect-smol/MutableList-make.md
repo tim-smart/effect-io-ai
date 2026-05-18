@@ -5,7 +5,7 @@ Module: `MutableList`<br />
 
 Creates an empty MutableList.
 
-**Example**
+**Example** (Creating an empty mutable list)
 
 ```ts
 import * as MutableList from "effect/MutableList"
@@ -31,6 +31,6 @@ console.log(MutableList.take(list)) // "second"
 declare const make: <A>() => MutableList<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableList.ts#L264)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableList.ts#L290)
 
 Since v4.0.0

@@ -14,13 +14,13 @@ during decoding.
 **Signature**
 
 ```ts
-export interface withDecodingDefaultTypeKey<S extends Top>
-  extends decodeTo<withDecodingDefaultKey<toType<S>>, optionalKey<S>>
+export interface withDecodingDefaultTypeKey<S extends Top, R = never>
+  extends decodeTo<withDecodingDefaultKey<toType<S>, R>, optionalKey<S>>
 {
-  readonly "Rebuild": withDecodingDefaultTypeKey<S>
+  readonly "Rebuild": withDecodingDefaultTypeKey<S, R>
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L4385)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L4686)
 
 Since v4.0.0

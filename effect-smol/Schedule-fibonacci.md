@@ -7,7 +7,7 @@ A schedule that always recurs, increasing delays by summing the preceding
 two delays (similar to the fibonacci sequence). Returns the current
 duration between recurrences.
 
-**Example**
+**Example** (Retrying with fibonacci backoff)
 
 ```ts
 import { Console, Data, Effect, Schedule } from "effect"
@@ -44,7 +44,7 @@ const retryWithFib = Effect.gen(function*() {
 
 // Heartbeat with fibonacci intervals (starts fast, gets slower)
 const adaptiveHeartbeat = Effect.gen(function*() {
-  yield* Console.log(`Heartbeat at ${new Date().toISOString()}`)
+  yield* Console.log("Heartbeat")
   return "pulse"
 }).pipe(
   Effect.repeat(
@@ -72,6 +72,6 @@ const compareSchedules = Effect.gen(function*() {
 declare const fibonacci: (one: Duration.Input) => Schedule<Duration.Duration>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L2039)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L2030)
 
 Since v2.0.0

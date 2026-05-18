@@ -9,18 +9,18 @@ This error is raised when the prompt contains content that is structurally
 valid but not supported by the provider (e.g., unsupported media types,
 unsupported file formats, etc.).
 
-**Example**
+**Example** (Creating an invalid user input error)
 
 ```ts
 import { AiError } from "effect/unstable/ai"
 
 const error = new AiError.InvalidUserInputError({
-  description: "Unsupported media type 'video/mp4'. Supported types: image/*, application/pdf, text/plain"
+  description: "Unsupported media type 'video/mp4'. Supported types include images, application/pdf, text/plain"
 })
 
 console.log(error.isRetryable) // false
 console.log(error.message)
-// "Invalid user input: Unsupported media type 'video/mp4'. Supported types: image/*, application/pdf, text/plain"
+// "Invalid user input: Unsupported media type 'video/mp4'. Supported types include images, application/pdf, text/plain"
 ```
 
 **Signature**
@@ -29,6 +29,6 @@ console.log(error.message)
 declare class InvalidUserInputError
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AiError.ts#L1248)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AiError.ts#L1310)
 
-Since v1.0.0
+Since v4.0.0

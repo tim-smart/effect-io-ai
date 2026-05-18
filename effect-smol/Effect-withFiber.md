@@ -5,7 +5,7 @@ Module: `Effect`<br />
 
 Provides access to the current fiber within an effect computation.
 
-**Example**
+**Example** (Usage)
 
 ```ts
 import { Effect } from "effect"
@@ -24,6 +24,6 @@ Effect.runPromise(program).then(console.log)
 declare const withFiber: <A, E = never, R = never>(evaluate: (fiber: Fiber<unknown, unknown>) => Effect<A, E, R>) => Effect<A, E, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L1817)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L1690)
 
 Since v2.0.0

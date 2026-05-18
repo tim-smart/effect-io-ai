@@ -14,7 +14,7 @@ action will be run immediately, but re-runs will not "pile up".
 |---------action--------||action|-----|action|-----------|
 ```
 
-**Example**
+**Example** (Repeating on fixed intervals)
 
 ```ts
 import { Console, Effect, Schedule } from "effect"
@@ -24,7 +24,7 @@ const everySecond = Schedule.fixed("1 second")
 
 // Health check that runs at fixed intervals
 const healthCheck = Effect.gen(function*() {
-  yield* Console.log(`Health check at ${new Date().toISOString()}`)
+  yield* Console.log("Health check")
   yield* Effect.sleep("200 millis") // simulate health check work
   return "healthy"
 }).pipe(
@@ -68,6 +68,6 @@ const program = Effect.gen(function*() {
 declare const fixed: (interval: Duration.Input) => Schedule<number>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L2116)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L2108)
 
 Since v2.0.0

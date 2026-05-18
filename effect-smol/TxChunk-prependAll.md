@@ -8,7 +8,7 @@ Concatenates another chunk to the beginning of the `TxChunk`.
 **Mutation behavior**: This function mutates the original TxChunk by prepending
 all elements from the other chunk. It does not return a new TxChunk reference.
 
-**Example**
+**Example** (Prepending another chunk)
 
 ```ts
 import { Chunk, Effect, TxChunk } from "effect"
@@ -17,8 +17,7 @@ const program = Effect.gen(function*() {
   const txChunk = yield* TxChunk.fromIterable([4, 5, 6])
   const otherChunk = Chunk.fromIterable([1, 2, 3])
 
-  // Prepend all elements from another chunk
-  // Prepend all elements from another chunk - automatically transactional
+  // Prepend all elements from another chunk atomically
   yield* TxChunk.prependAll(txChunk, otherChunk)
 
   const result = yield* TxChunk.get(txChunk)
@@ -32,6 +31,6 @@ const program = Effect.gen(function*() {
 declare const prependAll: { <A>(other: Chunk.Chunk<A>): (self: TxChunk<A>) => Effect.Effect<void>; <A>(self: TxChunk<A>, other: Chunk.Chunk<A>): Effect.Effect<void>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxChunk.ts#L716)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxChunk.ts#L733)
 
 Since v4.0.0

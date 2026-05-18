@@ -5,7 +5,7 @@ Module: `Primitive`<br />
 
 Creates a primitive that accepts any string value without validation.
 
-**Example**
+**Example** (Parsing string values)
 
 ```ts
 import { Effect } from "effect"
@@ -29,6 +29,6 @@ const parseString = Effect.gen(function*() {
 declare const string: Primitive<string>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Primitive.ts#L256)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Primitive.ts#L266)
 
 Since v4.0.0

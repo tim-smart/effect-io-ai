@@ -6,7 +6,7 @@ Module: `TxSemaphore`<br />
 Tries to acquire the specified number of permits from the semaphore without blocking.
 Returns true if successful, false if not enough permits are available.
 
-**Example**
+**Example** (Trying to acquire multiple permits)
 
 ```ts
 import { Console, Effect, TxSemaphore } from "effect"
@@ -30,6 +30,6 @@ const program = Effect.gen(function*() {
 declare const tryAcquireN: (self: TxSemaphore, n: number) => Effect.Effect<boolean>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxSemaphore.ts#L316)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxSemaphore.ts#L346)
 
 Since v4.0.0

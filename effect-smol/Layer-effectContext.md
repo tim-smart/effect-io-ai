@@ -9,7 +9,7 @@ or more services.
 This allows you to create a Layer from an effectful computation that returns
 multiple services. The Effect is executed in the scope of the layer.
 
-**Example**
+**Example** (Creating a layer from an effectful context)
 
 ```ts
 import { Effect, Layer, Context } from "effect"
@@ -32,6 +32,6 @@ const layer = Layer.effectContext(
 declare const effectContext: <A, E, R>(effect: Effect<Context.Context<A>, E, R>) => Layer<A, E, Exclude<R, Scope.Scope>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L835)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L917)
 
 Since v2.0.0

@@ -8,7 +8,7 @@ Filters the TxHashMap to keep only entries that satisfy the provided predicate.
 **Return behavior**: This function returns a new TxHashMap reference containing
 only the entries that match the condition. The original TxHashMap is not modified.
 
-**Example**
+**Example** (Filtering entries)
 
 ```ts
 import { Effect, TxHashMap } from "effect"
@@ -54,6 +54,6 @@ const program = Effect.gen(function*() {
 declare const filter: { <K, V, B extends V>(predicate: (value: V, key: K) => value is B): (self: TxHashMap<K, V>) => Effect.Effect<TxHashMap<K, B>>; <K, V>(predicate: (value: V, key: K) => boolean): (self: TxHashMap<K, V>) => Effect.Effect<TxHashMap<K, V>>; <K, V, B extends V>(self: TxHashMap<K, V>, predicate: (value: V, key: K) => value is B): Effect.Effect<TxHashMap<K, B>>; <K, V>(self: TxHashMap<K, V>, predicate: (value: V, key: K) => boolean): Effect.Effect<TxHashMap<K, V>>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashMap.ts#L1393)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashMap.ts#L1458)
 
 Since v2.0.0

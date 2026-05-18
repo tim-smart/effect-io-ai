@@ -9,7 +9,7 @@ This is the core type utility that performs the actual type extraction
 and narrowing logic. It handles the complex type-level computation that
 determines what type results from applying a pattern to an input type.
 
-**Example**
+**Example** (Extracting matched types)
 
 ```ts
 import { Match } from "effect"
@@ -38,6 +38,6 @@ type ExtractMatch<I, P> = [ExtractAndNarrow<I, P>] extends [infer EI] ? EI
     : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L2345)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L2317)
 
 Since v4.0.0

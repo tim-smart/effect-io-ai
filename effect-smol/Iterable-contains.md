@@ -3,9 +3,13 @@ Module: `Iterable`<br />
 
 ## Iterable.contains
 
-Returns a function that checks if a `Iterable` contains a given value using the default `Equivalence`.
+Checks whether an iterable contains a value using Effect's default `Equal`
+equivalence.
 
-**Example**
+Can be called as `contains(self, value)` or curried as
+`contains(value)(self)`.
+
+**Example** (Checking membership)
 
 ```ts
 import { Iterable } from "effect"
@@ -35,6 +39,6 @@ console.log(containsThree([4, 5, 6])) // false
 declare const contains: { <A>(a: A): (self: Iterable<A>) => boolean; <A>(self: Iterable<A>, a: A): boolean; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Iterable.ts#L1020)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Iterable.ts#L1055)
 
 Since v2.0.0

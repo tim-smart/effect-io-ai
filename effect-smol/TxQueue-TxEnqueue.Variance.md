@@ -5,15 +5,6 @@ Module: `TxQueue`<br />
 
 Variance annotation interface for TxEnqueue contravariance.
 
-**Example**
-
-```ts
-import type { TxQueue } from "effect"
-
-// Demonstrates contravariant type behavior for both A and E
-declare const variance: TxQueue.TxEnqueue.Variance<string, Error>
-```
-
 **Signature**
 
 ```ts
@@ -23,6 +14,6 @@ export interface Variance<in A, in E> {
   }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxQueue.ts#L99)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxQueue.ts#L84)
 
 Since v4.0.0

@@ -5,7 +5,7 @@ Module: `String`<br />
 
 Concatenates two strings at runtime.
 
-**Example**
+**Example** (Concatenating strings)
 
 ```ts
 import { pipe, String } from "effect"
@@ -23,6 +23,6 @@ console.log(result2) // "helloworld"
 declare const concat: { <B extends string>(that: B): <A extends string>(self: A) => Concat<A, B>; <A extends string, B extends string>(self: A, that: B): Concat<A, B>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L127)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L133)
 
 Since v2.0.0

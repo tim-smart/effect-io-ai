@@ -7,7 +7,7 @@ Waits until the queue is shutdown. The `Effect` returned by this method will
 not resume until the queue has been shutdown. If the queue is already
 shutdown, the `Effect` will resume right away.
 
-**Example**
+**Example** (Waiting for shutdown)
 
 ```ts
 import { Effect, Fiber, PubSub } from "effect"
@@ -40,6 +40,6 @@ const program = Effect.gen(function*() {
 declare const awaitShutdown: <A>(self: PubSub<A>) => Effect.Effect<void>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PubSub.ts#L769)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PubSub.ts#L837)
 
 Since v2.0.0

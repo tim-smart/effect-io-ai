@@ -5,7 +5,7 @@ Module: `Request`<br />
 
 A utility type to extract the value type from a `Request`.
 
-**Example**
+**Example** (Extracting a request success type)
 
 ```ts
 import type { Request } from "effect"
@@ -26,6 +26,6 @@ type Success<T> = [T] extends [Request<infer _A, infer _E, infer _R>] ? _A
   : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Request.ts#L133)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Request.ts#L155)
 
 Since v2.0.0

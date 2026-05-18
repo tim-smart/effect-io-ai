@@ -34,4 +34,4 @@ declare const toCodecOpenAI: <T, E, RD, RE>(schema: Schema.Codec<T, E, RD, RE>) 
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/OpenAiStructuredOutput.ts#L43)
 
-Since v1.0.0
+Since v4.0.0

@@ -6,7 +6,7 @@ Module: `TxDeferred`<br />
 Reads the current state of the deferred without retrying. Returns `None` if
 not yet completed.
 
-**Example**
+**Example** (Polling a deferred)
 
 ```ts
 import { Effect, Option, Result, TxDeferred } from "effect"
@@ -28,6 +28,6 @@ const program = Effect.gen(function*() {
 declare const poll: <A, E>(self: TxDeferred<A, E>) => Effect.Effect<Option<Result<A, E>>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxDeferred.ts#L162)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxDeferred.ts#L166)
 
 Since v4.0.0

@@ -10,7 +10,7 @@ Processes any iterable of numbers by removing duplicates, filtering out
 non-positive values, and automatically appending positive infinity as the
 final boundary.
 
-**Example**
+**Example** (Creating boundaries from values)
 
 ```ts
 import { Data, Effect, Metric } from "effect"
@@ -71,6 +71,6 @@ const program = Effect.gen(function*() {
 declare const boundariesFromIterable: (iterable: Iterable<number>) => ReadonlyArray<number>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Metric.ts#L3346)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Metric.ts#L3356)
 
 Since v2.0.0

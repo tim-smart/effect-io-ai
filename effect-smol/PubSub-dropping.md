@@ -8,7 +8,7 @@ messages if the `PubSub` is at capacity.
 
 For best performance use capacities that are powers of two.
 
-**Example**
+**Example** (Dropping messages when full)
 
 ```ts
 import { Effect } from "effect"
@@ -24,12 +24,19 @@ const program = Effect.gen(function*() {
     replay: 5
   })
 
-  // Fill the PubSub and see dropping behavior
-  yield* PubSub.publish(pubsub, "msg1") // succeeds
-  yield* PubSub.publish(pubsub, "msg2") // succeeds
-  yield* PubSub.publish(pubsub, "msg3") // succeeds
-  const dropped = yield* PubSub.publish(pubsub, "msg4") // returns false (dropped)
-  console.log("Message dropped:", !dropped)
+  yield* Effect.scoped(Effect.gen(function*() {
+    const subscription = yield* PubSub.subscribe(pubsub)
+
+    // Fill the PubSub and see dropping behavior
+    yield* PubSub.publish(pubsub, "msg1") // succeeds
+    yield* PubSub.publish(pubsub, "msg2") // succeeds
+    yield* PubSub.publish(pubsub, "msg3") // succeeds
+    const dropped = yield* PubSub.publish(pubsub, "msg4") // returns false (dropped)
+    console.log("Message dropped:", !dropped) // true
+
+    const messages = yield* PubSub.takeAll(subscription)
+    console.log(messages) // ["msg1", "msg2", "msg3"]
+  }))
 })
 ```
 
@@ -39,6 +46,6 @@ const program = Effect.gen(function*() {
 declare const dropping: <A>(capacity: number | { readonly capacity: number; readonly replay?: number | undefined; }) => Effect.Effect<PubSub<A>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PubSub.ts#L369)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PubSub.ts#L400)
 
 Since v2.0.0

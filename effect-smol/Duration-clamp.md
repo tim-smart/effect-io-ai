@@ -5,7 +5,7 @@ Module: `Duration`<br />
 
 Clamps a Duration between a minimum and maximum value.
 
-**Example**
+**Example** (Clamping durations to a range)
 
 ```ts
 import { Duration } from "effect"
@@ -23,6 +23,6 @@ console.log(Duration.toSeconds(clamped)) // 5
 declare const clamp: { (options: { minimum: Duration; maximum: Duration; }): (self: Duration) => Duration; (self: Duration, options: { minimum: Duration; maximum: Duration; }): Duration; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Duration.ts#L1150)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Duration.ts#L1190)
 
 Since v2.0.0

@@ -9,7 +9,7 @@ increasing values.
 Creates boundaries that grow exponentially, useful for metrics that span
 multiple orders of magnitude. Each boundary is calculated as start * factor^i.
 
-**Example**
+**Example** (Creating exponential boundaries)
 
 ```ts
 import { Data, Effect, Metric } from "effect"
@@ -57,6 +57,6 @@ const program = Effect.gen(function*() {
 declare const exponentialBoundaries: (options: { readonly start: number; readonly factor: number; readonly count: number; }) => ReadonlyArray<number>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Metric.ts#L3451)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Metric.ts#L3465)
 
 Since v2.0.0

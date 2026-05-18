@@ -5,7 +5,7 @@ Module: `Iterable`<br />
 
 Applies a function to each element in an Iterable and returns a new Iterable containing the concatenated mapped elements.
 
-**Example**
+**Example** (FlatMapping iterables)
 
 ```ts
 import { Iterable } from "effect"
@@ -43,6 +43,6 @@ console.log(Array.from(indexed)) // ["a", "b", "b", "c", "c", "c"]
 declare const flatMap: { <A, B>(f: (a: NoInfer<A>, i: number) => Iterable<B>): (self: Iterable<A>) => Iterable<B>; <A, B>(self: Iterable<A>, f: (a: NoInfer<A>, i: number) => Iterable<B>): Iterable<B>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Iterable.ts#L1442)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Iterable.ts#L1488)
 
 Since v2.0.0

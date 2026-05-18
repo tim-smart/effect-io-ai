@@ -3,9 +3,9 @@ Module: `HashMap`<br />
 
 ## HashMap.isEmpty
 
-Checks if the `HashMap` contains any entries.
+Checks whether the `HashMap` contains no entries.
 
-**Example**
+**Example** (Checking for empty HashMaps)
 
 ```ts
 import * as HashMap from "effect/HashMap"
@@ -23,6 +23,6 @@ console.log(HashMap.isEmpty(nonEmptyMap)) // false
 declare const isEmpty: <K, V>(self: HashMap<K, V>) => boolean
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashMap.ts#L288)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashMap.ts#L372)
 
 Since v2.0.0

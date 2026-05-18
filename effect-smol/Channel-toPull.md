@@ -3,9 +3,13 @@ Module: `Channel`<br />
 
 ## Channel.toPull
 
-Converts a channel to a Pull data structure for low-level consumption.
+Converts a channel to a scoped `Pull` for low-level consumption.
 
-**Example**
+The effect requires a `Scope`. The returned pull should be consumed only
+while that scope remains open. Pulls are serialized so only one pull is
+evaluated at a time.
+
+**Example** (Converting channels to pulls)
 
 ```ts
 import { Channel, Data, Effect } from "effect"
@@ -31,6 +35,6 @@ const pullEffect = Effect.scoped(
 declare const toPull: <OutElem, OutErr, OutDone, Env>(self: Channel<OutElem, OutErr, OutDone, unknown, unknown, unknown, Env>) => Effect.Effect<Pull.Pull<OutElem, OutErr, OutDone>, never, Env | Scope.Scope>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L7400)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L7765)
 
 Since v2.0.0

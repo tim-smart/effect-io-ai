@@ -3,7 +3,8 @@ Module: `Schema`<br />
 
 ## Schema.DurationFromString
 
-Companion type for `DurationFromString`.
+Type-level representation of a transformation schema that decodes strings
+accepted by `Duration.fromInput` into `Duration` values.
 
 **Signature**
 
@@ -13,6 +14,6 @@ export interface DurationFromString extends decodeTo<Duration, String> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L8873)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L9233)
 
 Since v4.0.0

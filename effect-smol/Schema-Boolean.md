@@ -15,6 +15,6 @@ Schema for `boolean` values.
 export interface Boolean extends Bottom<boolean, boolean, never, never, AST.Boolean, Boolean> {}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L2163)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L2262)
 
 Since v4.0.0

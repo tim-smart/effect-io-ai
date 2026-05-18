@@ -9,7 +9,7 @@ This utility type extracts the possible values of a discriminant field
 from a union type. It's used internally to implement tag-based pattern
 matching for discriminated unions.
 
-**Example**
+**Example** (Extracting discriminator tags)
 
 ```ts
 import type { Match } from "effect"
@@ -36,6 +36,6 @@ type CustomTags = Match.Types.Tags<
 type Tags<D, P> = P extends Record<D, infer X> ? X : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L2281)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L2251)
 
 Since v4.0.0

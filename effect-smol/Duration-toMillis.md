@@ -5,7 +5,7 @@ Module: `Duration`<br />
 
 Converts a Duration to milliseconds.
 
-**Example**
+**Example** (Converting durations to milliseconds)
 
 ```ts
 import { Duration } from "effect"
@@ -20,6 +20,6 @@ console.log(Duration.toMillis(Duration.minutes(2))) // 120000
 declare const toMillis: (self: Input) => number
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Duration.ts#L681)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Duration.ts#L705)
 
 Since v2.0.0

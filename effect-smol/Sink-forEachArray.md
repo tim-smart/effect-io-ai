@@ -6,7 +6,7 @@ Module: `Sink`<br />
 A sink that executes the provided effectful function for every Chunk fed
 to it.
 
-**Example**
+**Example** (Running effects for each chunk)
 
 ```ts
 import { Console, Effect, Sink, Stream } from "effect"
@@ -32,6 +32,6 @@ Effect.runPromise(program)
 declare const forEachArray: <In, X, E, R>(f: (input: NonEmptyReadonlyArray<In>) => Effect.Effect<X, E, R>) => Sink<void, In, never, E, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Sink.ts#L1519)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Sink.ts#L1635)
 
 Since v4.0.0

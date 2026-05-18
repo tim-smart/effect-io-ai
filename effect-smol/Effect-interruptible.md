@@ -5,7 +5,7 @@ Module: `Effect`<br />
 
 Returns a new effect that allows the effect to be interruptible.
 
-**Example**
+**Example** (Usage)
 
 ```ts
 import { Effect } from "effect"
@@ -25,6 +25,6 @@ const fiber = Effect.runFork(program)
 declare const interruptible: <A, E, R>(self: Effect<A, E, R>) => Effect<A, E, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L6848)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L6757)
 
 Since v2.0.0

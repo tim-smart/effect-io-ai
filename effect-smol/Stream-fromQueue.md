@@ -3,14 +3,12 @@ Module: `Stream`<br />
 
 ## Stream.fromQueue
 
-Creates a stream from a queue of values.
+Creates a stream that pulls values from a `Queue.Dequeue`.
 
-**Options**
+The stream emits non-empty batches of queued values and ends when the queue
+fails with `Cause.Done`; other queue failures are propagated.
 
-- `maxChunkSize`: The maximum number of queued elements to put in one chunk in the stream
-- `shutdown`: If `true`, the queue will be shutdown after the stream is evaluated (defaults to `false`)
-
-**Example**
+**Example** (Creating a stream from a queue of values)
 
 ```ts
 import { Console, Effect, Queue, Stream } from "effect"
@@ -37,6 +35,6 @@ Effect.runPromise(program)
 declare const fromQueue: <A, E>(queue: Queue.Dequeue<A, E>) => Stream<A, Exclude<E, Cause.Done>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L1265)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L1329)
 
 Since v4.0.0

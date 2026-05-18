@@ -7,7 +7,7 @@ Content part representing plain text.
 
 The most basic content type used for textual information in messages.
 
-**Example**
+**Example** (Creating text parts)
 
 ```ts
 import { Prompt } from "effect/unstable/ai"
@@ -28,6 +28,6 @@ export interface TextPart extends BasePart<"text", TextPartOptions> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L267)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L273)
 
 Since v4.0.0

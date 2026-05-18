@@ -6,7 +6,7 @@ Module: `DateTime`<br />
 Transform a `DateTime` by applying a function to the number of milliseconds
 since the Unix epoch.
 
-**Example**
+**Example** (Mapping epoch milliseconds)
 
 ```ts
 import { DateTime } from "effect"
@@ -23,6 +23,6 @@ DateTime.makeUnsafe(0).pipe(
 declare const mapEpochMillis: { (f: (millis: number) => number): <A extends DateTime>(self: A) => A; <A extends DateTime>(self: A, f: (millis: number) => number): A; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L1744)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L1994)
 
 Since v3.6.0

@@ -7,7 +7,7 @@ A function that updates a value based on its current state.
 Takes an Option representing the current value and returns an Option
 representing the new value.
 
-**Example**
+**Example** (Updating values from Options)
 
 ```ts
 import * as HashMap from "effect/HashMap"
@@ -29,6 +29,6 @@ console.log(HashMap.get(updated, "a")) // Option.some(2)
 type UpdateFn<V> = (option: Option<V>) => Option<V>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashMap.ts#L104)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashMap.ts#L180)
 
 Since v2.0.0

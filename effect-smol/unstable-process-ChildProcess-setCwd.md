@@ -7,7 +7,7 @@ Set the current working directory for a command.
 
 For pipelines, applies to each command in the pipeline.
 
-**Example**
+**Example** (Setting command working directories)
 
 ```ts
 import { ChildProcess } from "effect/unstable/process"
@@ -23,6 +23,6 @@ const cmd = ChildProcess.make`ls -la`.pipe(
 declare const setCwd: { (cwd: string): (self: Command) => Command; (self: Command, cwd: string): Command; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ChildProcess.ts#L768)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ChildProcess.ts#L775)
 
 Since v4.0.0

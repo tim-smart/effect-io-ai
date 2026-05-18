@@ -5,7 +5,7 @@ Module: `PubSub`<br />
 
 Returns `true` if `shutdown` has been called, otherwise returns `false`.
 
-**Example**
+**Example** (Checking shutdown synchronously)
 
 ```ts
 import { PubSub } from "effect"
@@ -27,6 +27,6 @@ if (isDown) {
 declare const isShutdownUnsafe: <A>(self: PubSub<A>) => boolean
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PubSub.ts#L733)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PubSub.ts#L800)
 
 Since v4.0.0

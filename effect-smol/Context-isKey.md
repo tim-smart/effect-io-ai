@@ -5,7 +5,7 @@ Module: `Context`<br />
 
 Checks if the provided argument is a `Key`.
 
-**Example**
+**Example** (Checking for keys)
 
 ```ts
 import { Context } from "effect"
@@ -20,6 +20,6 @@ assert.strictEqual(Context.isKey(Context.Service("Service")), true)
 declare const isKey: (u: unknown) => u is Key<any, any>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Context.ts#L445)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Context.ts#L533)
 
 Since v4.0.0

@@ -12,7 +12,7 @@ Dynamic tools support two modes:
 This enables scenarios such as MCP tools discovered at runtime, user-defined
 functions loaded from external sources, or plugin systems.
 
-**Example**
+**Example** (Defining dynamic tools)
 
 ```ts
 import { Schema } from "effect"
@@ -73,6 +73,6 @@ export interface Dynamic<
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tool.ts#L448)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tool.ts#L474)
 
-Since v1.0.0
+Since v4.0.0

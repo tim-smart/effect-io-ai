@@ -5,7 +5,7 @@ Module: `SubscriptionRef`<br />
 
 Retrieves the current value of the `SubscriptionRef`.
 
-**Example**
+**Example** (Reading the current value)
 
 ```ts
 import { Effect, SubscriptionRef } from "effect"
@@ -24,6 +24,6 @@ const program = Effect.gen(function*() {
 declare const get: <A>(self: SubscriptionRef<A>) => Effect.Effect<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SubscriptionRef.ts#L154)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SubscriptionRef.ts#L190)
 
 Since v2.0.0

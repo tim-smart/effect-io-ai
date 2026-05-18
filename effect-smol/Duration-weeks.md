@@ -5,7 +5,7 @@ Module: `Duration`<br />
 
 Creates a Duration from weeks.
 
-**Example**
+**Example** (Creating durations from weeks)
 
 ```ts
 import { Duration } from "effect"
@@ -20,6 +20,6 @@ console.log(Duration.toMillis(duration)) // 604800000
 declare const weeks: (weeks: number) => Duration
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Duration.ts#L665)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Duration.ts#L688)
 
 Since v2.0.0

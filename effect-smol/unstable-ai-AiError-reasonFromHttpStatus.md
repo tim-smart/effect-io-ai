@@ -7,7 +7,7 @@ Maps HTTP status codes to semantic error reasons.
 
 Provider packages can use this as a base for provider-specific mapping.
 
-**Example**
+**Example** (Mapping an HTTP status to a reason)
 
 ```ts
 import { AiError } from "effect/unstable/ai"
@@ -26,6 +26,6 @@ console.log(reason._tag) // "RateLimitError"
 declare const reasonFromHttpStatus: (params: { readonly status: number; readonly body?: unknown; readonly http?: typeof HttpContext.Type; readonly metadata?: typeof ProviderMetadata.Type; readonly description?: string | undefined; }) => AiErrorReason
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AiError.ts#L1531)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AiError.ts#L1598)
 
-Since v1.0.0
+Since v4.0.0

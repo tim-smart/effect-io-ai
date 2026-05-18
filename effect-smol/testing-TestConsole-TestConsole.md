@@ -10,7 +10,7 @@ compatibility with the standard Console API.
 This interface extends the standard Console interface and adds methods to
 retrieve logged messages for verification in tests.
 
-**Example**
+**Example** (Capturing console output in tests)
 
 ```ts
 import { Console, Effect } from "effect"
@@ -45,6 +45,6 @@ export interface TestConsole extends Console.Console {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TestConsole.ts#L37)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TestConsole.ts#L48)
 
 Since v4.0.0

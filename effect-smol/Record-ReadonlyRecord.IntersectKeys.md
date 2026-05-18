@@ -6,7 +6,7 @@ Module: `Record`<br />
 Represents the intersection of two key types, handling both literal and non-literal string keys.
 This type is used in record operations that need to compute overlapping keys.
 
-**Example**
+**Example** (Intersecting record keys)
 
 ```ts
 import type { Record } from "effect"
@@ -26,6 +26,6 @@ type IntersectKeys<K1, K2> = [string] extends [K1 | K2] ?
     : K1 & K2
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Record.ts#L105)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Record.ts#L109)
 
 Since v2.0.0

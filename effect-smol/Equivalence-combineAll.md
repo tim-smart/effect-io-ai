@@ -70,6 +70,6 @@ See also: `combine`, `mapInput`
 declare const combineAll: <A>(collection: Iterable<Equivalence<A>>) => Equivalence<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Equivalence.ts#L430)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Equivalence.ts#L434)
 
 Since v2.0.0

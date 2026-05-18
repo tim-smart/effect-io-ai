@@ -9,7 +9,7 @@ finalizes.
 The span is not added to the current span stack, so no child spans will be
 created for it.
 
-**Example**
+**Example** (Usage)
 
 ```ts
 import { Effect } from "effect"
@@ -30,6 +30,6 @@ const program = Effect.scoped(
 declare const makeSpanScoped: (name: string, options?: SpanOptionsNoTrace | undefined) => Effect<Span, never, Scope>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L7790)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L7716)
 
 Since v2.0.0

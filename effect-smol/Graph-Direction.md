@@ -5,7 +5,7 @@ Module: `Graph`<br />
 
 Direction for graph traversal, indicating which edges to follow.
 
-**Example**
+**Example** (Traversing by direction)
 
 ```ts
 import { Graph } from "effect"
@@ -33,6 +33,6 @@ const incomingNodes = Array.from(
 type Direction = "outgoing" | "incoming"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Graph.ts#L2273)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Graph.ts#L2390)
 
 Since v4.0.0

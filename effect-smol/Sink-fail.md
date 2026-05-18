@@ -5,7 +5,7 @@ Module: `Sink`<br />
 
 A sink that always fails with the specified error.
 
-**Example**
+**Example** (Failing with an error)
 
 ```ts
 import { Effect, Sink, Stream } from "effect"
@@ -27,6 +27,6 @@ Effect.runPromise(program).catch(console.log)
 declare const fail: <E>(e: E) => Sink<never, unknown, never, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Sink.ts#L505)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Sink.ts#L552)
 
 Since v2.0.0

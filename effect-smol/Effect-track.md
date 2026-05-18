@@ -8,7 +8,7 @@ Updates the `Metric` every time the `Effect` is executed.
 Also accepts an optional function which can be used to map the `Exit` value
 of the `Effect` into a valid `Input` for the `Metric`.
 
-**Example**
+**Example** (Usage)
 
 ```ts
 import { Effect, Metric } from "effect"
@@ -28,7 +28,7 @@ Effect.runPromise(program).then(() =>
 )
 ```
 
-**Example**
+**Example** (Usage)
 
 ```ts
 import { Effect, Exit, Metric } from "effect"
@@ -55,6 +55,6 @@ const effect = Effect.succeed("result").pipe(
 declare const track: { <Input, State, E, A>(metric: Metric.Metric<Input, State>, f: (exit: Exit.Exit<A, E>) => Input): <E, R>(self: Effect<A, E, R>) => Effect<A, E, R>; <State, E, A>(metric: Metric.Metric<Exit.Exit<NoInfer<A>, NoInfer<E>>, State>): <R>(self: Effect<A, E, R>) => Effect<A, E, R>; <A, E, R, Input, State>(self: Effect<A, E, R>, metric: Metric.Metric<Input, State>, f: (exit: Exit.Exit<A, E>) => Input): Effect<A, E, R>; <A, E, R, State>(self: Effect<A, E, R>, metric: Metric.Metric<Exit.Exit<NoInfer<A>, NoInfer<E>>, State>): Effect<A, E, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L13408)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L13364)
 
 Since v4.0.0

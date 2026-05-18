@@ -3,14 +3,14 @@ Module: `AnthropicTool`<br />
 
 ## AnthropicTool.CodeExecutionTextEditorStrReplace
 
-Text editor str_replace command for code execution.
+Input payload for replacing text in a file through the text editor code execution tool.
 
 **Signature**
 
 ```ts
-declare const CodeExecutionTextEditorStrReplace: Schema.Struct<{ readonly type: Schema.Literal<"text_editor_code_execution">; readonly command: Schema.Literal<"str_replace">; readonly path: Schema.String; readonly old_str: Schema.String; readonly new_str: Schema.String; }>
+type CodeExecutionTextEditorStrReplace = typeof CodeExecutionTextEditorStrReplace.Type
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L179)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L209)
 
-Since v1.0.0
+Since v4.0.0

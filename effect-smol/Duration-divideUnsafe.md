@@ -3,9 +3,16 @@ Module: `Duration`<br />
 
 ## Duration.divideUnsafe
 
-Divides a Duration by a number, potentially returning infinity or zero.
+Divides a `Duration` by a number using fallback rules instead of returning
+an `Option`.
 
-**Example**
+Non-finite divisors return `Duration.zero`. Division by positive or negative
+zero can produce signed infinity for non-zero finite durations, while zero
+or infinite durations divided by zero produce `Duration.zero`.
+Nanosecond-backed durations return `Duration.zero` when the divisor cannot
+be converted to a `bigint`.
+
+**Example** (Dividing durations unsafely)
 
 ```ts
 import { Duration } from "effect"
@@ -23,6 +30,6 @@ console.log(Duration.toMillis(infinite)) // Infinity
 declare const divideUnsafe: { (by: number): (self: Duration) => Duration; (self: Duration, by: number): Duration; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Duration.ts#L1212)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Duration.ts#L1264)
 
 Since v2.4.19

@@ -5,7 +5,7 @@ Module: `TestClock`<br />
 
 Creates a `Layer` which constructs a `TestClock`.
 
-**Example**
+**Example** (Providing a test clock layer)
 
 ```ts
 import { Effect } from "effect"
@@ -31,6 +31,6 @@ const program = Effect.gen(function*() {
 declare const layer: (options?: TestClock.Options) => Layer.Layer<TestClock>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TestClock.ts#L370)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TestClock.ts#L395)
 
 Since v4.0.0

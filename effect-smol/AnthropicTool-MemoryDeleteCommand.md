@@ -3,14 +3,14 @@ Module: `AnthropicTool`<br />
 
 ## AnthropicTool.MemoryDeleteCommand
 
-Delete a file or directory.
+Memory tool command payload for deleting a file or directory at a path.
 
 **Signature**
 
 ```ts
-declare const MemoryDeleteCommand: Schema.Struct<{ readonly command: Schema.Literal<"delete">; readonly path: Schema.String; }>
+type MemoryDeleteCommand = typeof MemoryDeleteCommand.Type
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L861)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L933)
 
-Since v1.0.0
+Since v4.0.0

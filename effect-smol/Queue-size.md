@@ -3,11 +3,13 @@ Module: `Queue`<br />
 
 ## Queue.size
 
-Check the size of the queue.
+Returns the current number of buffered messages in the queue.
 
-If the queue is complete, it will return `None`.
+**Details**
 
-**Example**
+Completed queues report a size of `0`.
+
+**Example** (Checking queue size)
 
 ```ts
 import { Cause, Effect, Option, Queue } from "effect"
@@ -41,6 +43,6 @@ const program = Effect.gen(function*() {
 declare const size: <A, E>(self: Dequeue<A, E>) => Effect<number>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Queue.ts#L1393)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Queue.ts#L1521)
 
 Since v4.0.0

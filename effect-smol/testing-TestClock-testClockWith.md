@@ -6,7 +6,7 @@ Module: `TestClock`<br />
 Retrieves the `TestClock` service for this test and uses it to run the
 specified workflow.
 
-**Example**
+**Example** (Accessing the test clock)
 
 ```ts
 import { Effect } from "effect"
@@ -31,6 +31,6 @@ const program = Effect.gen(function*() {
 declare const testClockWith: <A, E, R>(f: (testClock: TestClock) => Effect.Effect<A, E, R>) => Effect.Effect<A, E, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TestClock.ts#L400)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TestClock.ts#L426)
 
 Since v2.0.0

@@ -19,7 +19,7 @@ permissions and behavior when opening files.
 - `"a+"` - Read/write. Appends to file or creates new file.
 - `"ax+"` - Like 'a+' but fails if file exists.
 
-**Example**
+**Example** (Opening files with flags)
 
 ```ts
 import { Effect, FileSystem } from "effect"
@@ -56,6 +56,6 @@ type OpenFlag = | "r"
   | "ax+"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FileSystem.ts#L664)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FileSystem.ts#L676)
 
 Since v4.0.0

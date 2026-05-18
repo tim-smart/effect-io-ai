@@ -6,7 +6,7 @@ Module: `TxPubSub`<br />
 Creates a sliding TxPubSub with the specified capacity. When a subscriber's
 queue is full, the oldest message in that subscriber's queue is dropped.
 
-**Example**
+**Example** (Creating a sliding pub/sub)
 
 ```ts
 import { Effect, TxPubSub, TxQueue } from "effect"
@@ -33,6 +33,6 @@ const program = Effect.gen(function*() {
 declare const sliding: <A = never>(capacity: number) => Effect.Effect<TxPubSub<A>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxPubSub.ts#L190)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxPubSub.ts#L194)
 
 Since v4.0.0

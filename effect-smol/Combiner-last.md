@@ -34,6 +34,6 @@ console.log(Last.combine(1, 2))
 declare const last: <A>() => Combiner<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Combiner.ts#L291)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Combiner.ts#L289)
 
 Since v4.0.0

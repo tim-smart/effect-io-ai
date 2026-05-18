@@ -5,7 +5,7 @@ Module: `Cache`<br />
 
 Checks if the cache contains an entry for the specified key.
 
-**Example**
+**Example** (Checking for cached keys)
 
 ```ts
 import { Cache, Effect } from "effect"
@@ -25,7 +25,7 @@ const program = Effect.gen(function*() {
 })
 ```
 
-**Example**
+**Example** (Checking TTL expiration)
 
 ```ts
 import { Cache, Effect } from "effect"
@@ -53,7 +53,7 @@ const program = Effect.gen(function*() {
 })
 ```
 
-**Example**
+**Example** (Checking multiple keys)
 
 ```ts
 import { Cache, Effect } from "effect"
@@ -89,6 +89,6 @@ const program = Effect.gen(function*() {
 declare const has: { <Key, A>(key: Key): <E, R>(self: Cache<Key, A, E, R>) => Effect.Effect<boolean>; <Key, A, E, R>(self: Cache<Key, A, E, R>, key: Key): Effect.Effect<boolean>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cache.ts#L747)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cache.ts#L823)
 
 Since v4.0.0

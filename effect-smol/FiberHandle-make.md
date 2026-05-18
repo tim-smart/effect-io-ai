@@ -9,7 +9,7 @@ When the associated Scope is closed, the contained fiber will be interrupted.
 You can add a fiber to the handle using `FiberHandle.run`, and the fiber will
 be automatically removed from the FiberHandle when it completes.
 
-**Example**
+**Example** (Creating a scoped fiber handle)
 
 ```ts
 import { Effect, FiberHandle } from "effect"
@@ -34,6 +34,6 @@ Effect.gen(function*() {
 declare const make: <A = unknown, E = unknown>() => Effect.Effect<FiberHandle<A, E>, never, Scope.Scope>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FiberHandle.ts#L116)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FiberHandle.ts#L167)
 
 Since v2.0.0

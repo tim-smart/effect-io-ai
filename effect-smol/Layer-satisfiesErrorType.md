@@ -8,7 +8,7 @@ Ensures that an layer's error type extends a given type `E`.
 This function provides compile-time type checking to ensure that the error
 type of an layer conforms to a specific type constraint.
 
-**Example**
+**Example** (Constraining layer error types)
 
 ```ts
 import { Layer } from "effect"
@@ -35,6 +35,6 @@ const validLayer = satisfiesError(TypeErrorLayer)
 declare const satisfiesErrorType: <E>() => <ROut, E2 extends E, RIn>(layer: Layer<ROut, E2, RIn>) => Layer<ROut, E2, RIn>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L2012)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L2121)
 
 Since v4.0.0

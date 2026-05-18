@@ -3,7 +3,8 @@ Module: `Schema`<br />
 
 ## Schema.$ReadonlyMap
 
-Companion type for `ReadonlyMap`.
+Type-level representation of a `ReadonlyMap` schema whose keys and values are
+validated by the provided schemas.
 
 **Signature**
 
@@ -22,6 +23,6 @@ export interface $ReadonlyMap<Key extends Top, Value extends Top> extends
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L8082)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L8415)
 
 Since v4.0.0

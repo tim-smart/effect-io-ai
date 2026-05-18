@@ -21,6 +21,6 @@ type Type = | "File"
     | "Unknown"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FileSystem.ts#L1084)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FileSystem.ts#L1104)
 
 Since v4.0.0

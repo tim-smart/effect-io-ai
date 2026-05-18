@@ -5,7 +5,7 @@ Module: `Chunk`<br />
 
 Takes all elements so long as the predicate returns true.
 
-**Example**
+**Example** (Taking elements while a predicate matches)
 
 ```ts
 import { Chunk } from "effect"
@@ -30,6 +30,6 @@ console.log(Chunk.toArray(all)) // [1, 2, 3]
 declare const takeWhile: { <A, B extends A>(refinement: Refinement<NoInfer<A>, B>): (self: Chunk<A>) => Chunk<B>; <A>(predicate: Predicate<NoInfer<A>>): (self: Chunk<A>) => Chunk<A>; <A, B extends A>(self: Chunk<A>, refinement: Refinement<A, B>): Chunk<B>; <A>(self: Chunk<A>, predicate: Predicate<A>): Chunk<A>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L2116)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L2166)
 
 Since v2.0.0

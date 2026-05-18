@@ -5,7 +5,7 @@ Module: `Effect`<br />
 
 Sets the concurrency level for parallel operations within an effect.
 
-**Example**
+**Example** (Usage)
 
 ```ts
 import { Console, Effect } from "effect"
@@ -37,6 +37,6 @@ Effect.runPromise(program).then(console.log)
 declare const withConcurrency: { (concurrency: number | "unbounded"): <A, E, R>(self: Effect<A, E, R>) => Effect<A, E, R>; <A, E, R>(self: Effect<A, E, R>, concurrency: number | "unbounded"): Effect<A, E, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L6005)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L5893)
 
 Since v2.0.0

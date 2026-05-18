@@ -5,7 +5,7 @@ Module: `TxQueue`<br />
 
 Checks if the given value is a TxDequeue.
 
-**Example**
+**Example** (Checking dequeue handles)
 
 ```ts
 import { TxQueue } from "effect"
@@ -24,6 +24,6 @@ if (TxQueue.isTxDequeue(someValue)) {
 declare const isTxDequeue: <A = unknown, E = unknown>(u: unknown) => u is TxDequeue<A, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxQueue.ts#L328)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxQueue.ts#L288)
 
 Since v4.0.0

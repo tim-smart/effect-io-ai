@@ -6,30 +6,26 @@ Module: `Schedule`<br />
 Returns a new `Schedule` that adds the delay computed by the specified
 effectful function to the the next recurrence of the schedule.
 
-**Example**
+**Example** (Adding extra delay to a schedule)
 
 ```ts
 import { Console, Data, Duration, Effect, Schedule } from "effect"
 
 class RetryAttemptError extends Data.TaggedError("RetryAttemptError")<{ readonly message: string }> {}
 
-// Add random jitter to schedule delays
-const jitteredSchedule = Schedule.addDelay(
+// Add a deterministic extra delay based on the schedule output
+const delayedSchedule = Schedule.addDelay(
   Schedule.exponential("100 millis").pipe(Schedule.take(5)),
   (output) =>
-    // Add random jitter between 0-50ms
-    Effect.succeed(Duration.millis(Math.random() * 50))
+    Effect.succeed(Duration.millis(Duration.toMillis(output) * 0.25))
 )
 
-const jitterProgram = Effect.gen(function*() {
+const repeatProgram = Effect.gen(function*() {
   yield* Effect.repeat(
-    Effect.gen(function*() {
-      yield* Console.log(`Task executed at ${new Date().toISOString()}`)
-      return "jittered task"
-    }),
-    jitteredSchedule.pipe(
+    Effect.succeed("delayed task"),
+    delayedSchedule.pipe(
       Schedule.tapOutput((delay) =>
-        Console.log(`Base delay with jitter applied`)
+        Console.log(`Base delay: ${delay}`)
       )
     )
   )
@@ -57,12 +53,15 @@ const adaptiveProgram = Effect.gen(function*() {
   )
 })
 
-// Add effectful delay computation
+// Add effectful delay computation from deterministic service data
+const loadByExecution = [1, 3, 2, 4] as const
+
 const dynamicSchedule = Schedule.addDelay(
   Schedule.spaced("1 second").pipe(Schedule.take(4)),
-  (executionNumber) =>
-    // Simulate checking system load and return additional delay
-    Effect.succeed(Duration.millis(Math.random() > 0.7 ? 2000 : 500))
+  (executionNumber) => {
+    const load = loadByExecution[executionNumber] ?? 1
+    return Effect.succeed(Duration.millis(load * 100))
+  }
 )
 
 const dynamicProgram = Effect.gen(function*() {
@@ -72,25 +71,6 @@ const dynamicProgram = Effect.gen(function*() {
       return "dynamic"
     }),
     dynamicSchedule
-  )
-})
-
-// Add delay based on previous execution results (30% extra)
-const resultBasedSchedule = Schedule.addDelay(
-  Schedule.fibonacci("200 millis").pipe(Schedule.take(5)),
-  (fibonacciDelay) =>
-    Effect.succeed(Duration.millis(Duration.toMillis(fibonacciDelay) * 0.3))
-)
-
-const resultProgram = Effect.gen(function*() {
-  yield* Effect.repeat(
-    Effect.gen(function*() {
-      yield* Console.log("Result-based delay task")
-      return Math.random()
-    }),
-    resultBasedSchedule.pipe(
-      Schedule.tapOutput((delay) => Console.log(`Fibonacci delay: ${delay}`))
-    )
   )
 })
 
@@ -124,6 +104,6 @@ const retryProgram = Effect.gen(function*() {
 declare const addDelay: { <Output, Error2 = never, Env2 = never>(f: (output: Output) => Effect<Duration.Input, Error2, Env2>): <Input, Error, Env>(self: Schedule<Output, Input, Error, Env>) => Schedule<Output, Input, Error | Error2, Env | Env2>; <Output, Input, Error, Env, Error2 = never, Env2 = never>(self: Schedule<Output, Input, Error, Env>, f: (output: Output) => Effect<Duration.Input, Error2, Env2>): Schedule<Output, Input, Error | Error2, Env | Env2>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L638)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L622)
 
 Since v2.0.0

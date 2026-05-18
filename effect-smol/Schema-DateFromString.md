@@ -3,7 +3,8 @@ Module: `Schema`<br />
 
 ## Schema.DateFromString
 
-Companion type for `DateFromString`.
+Type-level representation of a transformation schema that decodes strings into
+JavaScript `Date` instances.
 
 **Signature**
 
@@ -13,6 +14,6 @@ export interface DateFromString extends decodeTo<Date, String> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L8737)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L9093)
 
 Since v4.0.0

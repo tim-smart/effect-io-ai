@@ -5,7 +5,7 @@ Module: `Schedule`<br />
 
 Returns a new schedule that outputs the delay between each occurence.
 
-**Example**
+**Example** (Extracting schedule delays)
 
 ```ts
 import { Console, Effect, Schedule } from "effect"
@@ -66,7 +66,7 @@ const adaptiveProgram = Effect.gen(function*() {
   yield* Effect.repeat(
     Effect.gen(function*() {
       yield* Console.log("Adaptive task execution")
-      return Date.now()
+      return "completed"
     }),
     adaptiveDelays.pipe(
       Schedule.tapOutput((delay) => Console.log(`Adaptive delay: ${delay}`))
@@ -89,6 +89,6 @@ const customTimingSchedule = Schedule.delays(
 declare const delays: <Out, In, E, R>(self: Schedule<Out, In, E, R>) => Schedule<Duration.Duration, In, E, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L1484)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L1470)
 
 Since v2.0.0

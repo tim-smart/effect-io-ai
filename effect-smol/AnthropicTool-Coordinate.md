@@ -3,14 +3,14 @@ Module: `AnthropicTool`<br />
 
 ## AnthropicTool.Coordinate
 
-An `[x, y]` pixel position.
+An `[x, y]` screen coordinate in pixels.
 
 **Signature**
 
 ```ts
-declare const Coordinate: Schema.Tuple<readonly [Schema.Number, Schema.Number]>
+type Coordinate = typeof Coordinate.Type
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L295)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L314)
 
-Since v1.0.0
+Since v4.0.0

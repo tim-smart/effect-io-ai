@@ -3,9 +3,12 @@ Module: `MutableHashMap`<br />
 
 ## MutableHashMap.get
 
-Retrieves the value associated with the specified key from the MutableHashMap.
+Looks up a key in the `MutableHashMap`.
 
-**Example**
+Returns `Some(value)` when an equal key is present and `None` when the key is
+absent.
+
+**Example** (Getting a value)
 
 ```ts
 import * as MutableHashMap from "effect/MutableHashMap"
@@ -26,6 +29,6 @@ console.log(getValue(map)) // Some(42)
 declare const get: { <K>(key: K): <V>(self: MutableHashMap<K, V>) => Option.Option<V>; <K, V>(self: MutableHashMap<K, V>, key: K): Option.Option<V>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableHashMap.ts#L212)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableHashMap.ts#L227)
 
 Since v2.0.0

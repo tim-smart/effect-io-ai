@@ -5,7 +5,7 @@ Module: `Ref`<br />
 
 Variance interface for Ref types, defining the type parameter constraints.
 
-**Example**
+**Example** (Using invariant refs)
 
 ```ts
 import { Effect, Ref } from "effect"
@@ -31,6 +31,6 @@ export interface Variance<in out A> {
   }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Ref.ts#L104)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Ref.ts#L107)
 
 Since v2.0.0

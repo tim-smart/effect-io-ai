@@ -8,7 +8,7 @@ Creates a new Chat service from an initial prompt.
 This is the primary constructor for creating chat instances. It initializes
 a new conversation with the provided prompt as the starting context.
 
-**Example**
+**Example** (Creating a chat from a system prompt)
 
 ```ts
 import { Effect } from "effect"
@@ -28,7 +28,7 @@ const chatWithSystemPrompt = Effect.gen(function*() {
 })
 ```
 
-**Example**
+**Example** (Restoring chat history from a prompt)
 
 ```ts
 import { Effect } from "effect"
@@ -65,6 +65,6 @@ const existingChat = Effect.gen(function*() {
 declare const fromPrompt: (prompt: Prompt.RawInput) => Effect.Effect<Service, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chat.ts#L543)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chat.ts#L555)
 
 Since v4.0.0

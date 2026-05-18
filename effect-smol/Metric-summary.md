@@ -17,7 +17,7 @@ a set of values, including quantiles.
 - `maxSize`     - The maximum number of observations to keep.
 - `quantiles`   - An array of quantiles to calculate (e.g., [0.5, 0.9]).
 
-**Example**
+**Example** (Creating summary metrics)
 
 ```ts
 import { Data, Duration, Effect, Metric } from "effect"
@@ -44,13 +44,10 @@ const program = Effect.gen(function*() {
     attributes: { service: "upload-service" }
   })
 
-  // Simulate recording various response times over time
-  for (let i = 0; i < 20; i++) {
-    const responseTime = 50 + Math.random() * 200 // 50-250ms
+  // Record deterministic response times
+  const responseTimes = [82, 96, 104, 118, 135, 170, 210, 240]
+  for (const responseTime of responseTimes) {
     yield* Metric.update(responseTimeSummary, responseTime)
-
-    // Wait a bit to simulate different timestamps
-    yield* Effect.sleep(Duration.millis(100))
   }
 
   // Record some payload sizes
@@ -63,13 +60,21 @@ const program = Effect.gen(function*() {
   const responseStats = yield* Metric.value(responseTimeSummary)
   const payloadStats = yield* Metric.value(payloadSizeSummary)
 
-  // responseStats will contain:
-  // - quantiles: [[0.5, Some(125)], [0.9, Some(220)], [0.95, Some(235)], [0.99, Some(245)]]
-  // - count: 20, min: ~50, max: ~250, sum: ~2500
-  // - Only observations from the last 5 minutes are included
+  console.log({
+    count: responseStats.count,
+    min: responseStats.min,
+    max: responseStats.max,
+    sum: responseStats.sum
+  }) // { count: 8, min: 82, max: 240, sum: 1155 }
 
-  // payloadStats will contain quantile information for recent payload sizes
-  // Older observations automatically age out based on maxAge setting
+  console.log({
+    count: payloadStats.count,
+    min: payloadStats.min,
+    max: payloadStats.max,
+    sum: payloadStats.sum
+  }) // { count: 4, min: 1.2, max: 15.6, sum: 26 }
+
+  // Both summaries include quantile information for their configured windows.
 
   return { responseStats, payloadStats }
 })
@@ -81,6 +86,6 @@ const program = Effect.gen(function*() {
 declare const summary: (name: string, options: { readonly description?: string | undefined; readonly attributes?: Metric.Attributes | undefined; readonly maxAge: Duration.Input; readonly maxSize: number; readonly quantiles: ReadonlyArray<number>; }) => Summary<number>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Metric.ts#L2560)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Metric.ts#L2551)
 
 Since v2.0.0

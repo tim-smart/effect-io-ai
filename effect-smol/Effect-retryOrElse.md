@@ -18,7 +18,11 @@ effect instead.
 This function is useful when you want to handle failures gracefully by
 specifying an alternative action after repeated failures.
 
-**Example**
+**See**
+
+- `retry` for a version that does not run a fallback effect.
+
+**Example** (Usage)
 
 ```ts
 import { Console, Data, Effect, Schedule } from "effect"
@@ -54,16 +58,12 @@ Effect.runPromise(program).then(console.log)
 // Network data
 ```
 
-**See**
-
-- `retry` for a version that does not run a fallback effect.
-
 **Signature**
 
 ```ts
 declare const retryOrElse: { <A1, E, E1, R1, A2, E2, R2>(policy: Schedule<A1, NoInfer<E>, E1, R1>, orElse: (e: NoInfer<E>, out: A1) => Effect<A2, E2, R2>): <A, R>(self: Effect<A, E, R>) => Effect<A | A2, E1 | E2, R | R1 | R2>; <A, E, R, A1, E1, R1, A2, E2, R2>(self: Effect<A, E, R>, policy: Schedule<A1, NoInfer<E>, E1, R1>, orElse: (e: NoInfer<E>, out: A1) => Effect<A2, E2, R2>): Effect<A | A2, E1 | E2, R | R1 | R2>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L3995)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L3862)
 
 Since v2.0.0

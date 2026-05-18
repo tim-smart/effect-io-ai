@@ -3,14 +3,16 @@ Module: `Cache`<br />
 
 ## Cache.getOption
 
-Retrieves the value associated with the specified key from the cache,
-returning an `Option` that is `Some` if the key exists and has not expired,
-or `None` if the key does not exist or has expired.
+Reads an existing cache entry without invoking the lookup function.
 
-Unlike `get`, this function will not invoke the lookup function if the key
-is missing or expired.
+**Details**
 
-**Example**
+Returns `Option.none()` when the key is missing or expired, and `Option.some`
+when a cached lookup has succeeded. If the entry is still pending, waits for
+it to complete. If the cached or pending lookup fails, this effect fails with
+the same error.
+
+**Example** (Reading cached values without lookup)
 
 ```ts
 import { Cache, Effect } from "effect"
@@ -36,7 +38,7 @@ const program = Effect.gen(function*() {
 })
 ```
 
-**Example**
+**Example** (Skipping expired entries)
 
 ```ts
 import { Cache, Effect } from "effect"
@@ -66,7 +68,7 @@ const program = Effect.gen(function*() {
 })
 ```
 
-**Example**
+**Example** (Waiting for pending lookups)
 
 ```ts
 import { Cache, Deferred, Effect, Fiber } from "effect"
@@ -90,6 +92,9 @@ const program = Effect.gen(function*() {
 
   const result = yield* Fiber.join(optionFiber)
   console.log(result) // Option.some(42)
+
+  const value = yield* Fiber.join(getFiber)
+  console.log(value) // 42
 })
 ```
 
@@ -99,6 +104,6 @@ const program = Effect.gen(function*() {
 declare const getOption: { <Key, A>(key: Key): <E, R>(self: Cache<Key, A, E, R>) => Effect.Effect<Option.Option<A>, E>; <Key, A, E, R>(self: Cache<Key, A, E, R>, key: Key): Effect.Effect<Option.Option<A>, E>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cache.ts#L494)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cache.ts#L563)
 
 Since v4.0.0

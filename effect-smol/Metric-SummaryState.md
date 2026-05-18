@@ -5,7 +5,7 @@ Module: `Metric`<br />
 
 State interface for Summary metrics containing quantile calculations and aggregate statistics.
 
-**Example**
+**Example** (Reading summary state)
 
 ```ts
 import { Data, Effect, Metric } from "effect"
@@ -91,6 +91,6 @@ export interface SummaryState {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Metric.ts#L1022)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Metric.ts#L980)
 
 Since v2.0.0

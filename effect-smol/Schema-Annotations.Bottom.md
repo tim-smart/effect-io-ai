@@ -13,13 +13,31 @@ interfaces build on top of this.
 ```ts
 export interface Bottom<T, TypeParameters extends ReadonlyArray<Top>> extends Documentation<T> {
     /**
-     * The message to use when the value is invalid.
+     * Complete message to use when this schema node reports an issue.
+     *
+     * This replaces the default message for matching issue types instead of
+     * only changing the expected label. For a filter or refinement failure,
+     * annotate the filter with `message` to replace the whole filter failure
+     * message, or `expected` to keep the default
+     * `Expected <expected>, got <actual>` shape.
      */
     readonly message?: string | undefined
     /**
      * The message to use when a key is unexpected.
      */
     readonly messageUnexpectedKey?: string | undefined
+    /**
+     * Stable identifier for this schema node.
+     *
+     * Identifiers are used by schema tooling, including JSON Schema
+     * generation, to name references. The default formatter also uses
+     * `identifier` as the expected label for type-level failures, such as
+     * `Expected UserId, got null`.
+     *
+     * `identifier` does not name a failed filter or refinement. If the base
+     * type matches and a filter fails, put `expected` or `message` on the
+     * filter/refinement instead.
+     */
     readonly identifier?: string | undefined
     readonly parseOptions?: AST.ParseOptions | undefined
     /**
@@ -36,6 +54,6 @@ export interface Bottom<T, TypeParameters extends ReadonlyArray<Top>> extends Do
   }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L11992)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L12418)
 
 Since v4.0.0

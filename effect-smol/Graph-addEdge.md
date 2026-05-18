@@ -5,7 +5,7 @@ Module: `Graph`<br />
 
 Adds a new edge to a mutable graph and returns its index.
 
-**Example**
+**Example** (Adding edges)
 
 ```ts
 import { Graph } from "effect"
@@ -24,6 +24,6 @@ const result = Graph.mutate(Graph.directed<string, number>(), (mutable) => {
 declare const addEdge: <N, E, T extends Kind = "directed">(mutable: MutableGraph<N, E, T>, source: NodeIndex, target: NodeIndex, data: E) => EdgeIndex
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Graph.ts#L1181)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Graph.ts#L1275)
 
 Since v4.0.0

@@ -5,7 +5,7 @@ Module: `Channel`<br />
 
 Creates a `Channel` that emits arrays of elements from an iterable.
 
-**Example**
+**Example** (Batching iterable output)
 
 ```ts
 import { Channel } from "effect"
@@ -21,6 +21,6 @@ const channel = Channel.fromIterableArray(numbers)
 declare const fromIterableArray: <A, L>(iterable: Iterable<A, L>, chunkSize?: number) => Channel<Arr.NonEmptyReadonlyArray<A>, never, L>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L762)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L825)
 
 Since v2.0.0

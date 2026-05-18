@@ -3,9 +3,11 @@ Module: `Schema`<br />
 
 ## Schema.toEncoderXml
 
-Derives an XML encoder from a codec. Encodes a value to an XML string by
-first converting it through `toCodecStringTree`, then serializing the
-resulting tree to XML.
+Derives an XML encoder from a codec.
+
+The returned function encodes a value through `toCodecStringTree` and returns
+an `Effect` that succeeds with the XML string or fails with `SchemaError` if
+codec encoding fails.
 
 **Signature**
 
@@ -13,6 +15,6 @@ resulting tree to XML.
 declare const toEncoderXml: <T, E, RD, RE>(codec: Codec<T, E, RD, RE>, options?: XmlEncoderOptions) => (t: T) => Effect.Effect<string, SchemaError, RE>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L11362)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L11773)
 
 Since v4.0.0

@@ -32,6 +32,6 @@ console.log(Exit.isExit("not an exit"))    // false
 declare const isExit: (u: unknown) => u is Exit<unknown, unknown>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Exit.ts#L208)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Exit.ts#L210)
 
 Since v2.0.0

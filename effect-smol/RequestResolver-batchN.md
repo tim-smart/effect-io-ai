@@ -3,9 +3,16 @@ Module: `RequestResolver`<br />
 
 ## RequestResolver.batchN
 
-Returns a request resolver that executes at most `n` requests in parallel.
+Returns a request resolver that collects at most `n` requests into each
+batch.
 
-**Example**
+**Details**
+
+When more than `n` requests are waiting for the same resolver and batch key,
+the current batch is run and additional requests are collected into later
+batches.
+
+**Example** (Limiting parallel request batches)
 
 ```ts
 import { Effect, Exit, Request, RequestResolver } from "effect"
@@ -41,6 +48,6 @@ const requests = Array.from(
 declare const batchN: { (n: number): <A extends Request.Any>(self: RequestResolver<A>) => RequestResolver<A>; <A extends Request.Any>(self: RequestResolver<A>, n: number): RequestResolver<A>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RequestResolver.ts#L678)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RequestResolver.ts#L745)
 
 Since v2.0.0

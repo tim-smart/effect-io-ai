@@ -5,7 +5,7 @@ Module: `Duration`<br />
 
 Checks if a Duration is finite (not infinite).
 
-**Example**
+**Example** (Checking finite durations)
 
 ```ts
 import { Duration } from "effect"
@@ -20,6 +20,6 @@ console.log(Duration.isFinite(Duration.infinity)) // false
 declare const isFinite: (self: Duration) => boolean
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Duration.ts#L356)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Duration.ts#L363)
 
 Since v2.0.0

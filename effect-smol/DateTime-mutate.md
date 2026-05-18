@@ -10,7 +10,7 @@ converted back to a `DateTime` within the same time zone.
 
 Supports `disambiguation` when the new wall clock time is ambiguous.
 
-**Example**
+**Example** (Mutating DateTime values with Dates)
 
 ```ts
 import { DateTime } from "effect"
@@ -31,6 +31,6 @@ console.log(DateTime.formatIso(modified)) // "2024-01-01T15:30:00.000Z"
 declare const mutate: { (f: (date: Date) => void, options?: { readonly disambiguation?: Disambiguation | undefined; }): <A extends DateTime>(self: A) => A; <A extends DateTime>(self: A, f: (date: Date) => void, options?: { readonly disambiguation?: Disambiguation | undefined; }): A; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L1686)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L1933)
 
 Since v3.6.0

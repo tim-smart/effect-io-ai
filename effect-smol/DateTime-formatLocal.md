@@ -7,7 +7,7 @@ Format a `DateTime` as a string using the `DateTimeFormat` API.
 
 It will use the system's local time zone & locale.
 
-**Example**
+**Example** (Formatting DateTime values locally)
 
 ```ts
 import { DateTime } from "effect"
@@ -32,6 +32,6 @@ console.log(local) // Output depends on system locale/timezone
 declare const formatLocal: { (options?: (Intl.DateTimeFormatOptions & { readonly locale?: string | undefined; }) | undefined): (self: DateTime) => string; (self: DateTime, options?: (Intl.DateTimeFormatOptions & { readonly locale?: string | undefined; }) | undefined): string; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L2082)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L2366)
 
 Since v3.6.0

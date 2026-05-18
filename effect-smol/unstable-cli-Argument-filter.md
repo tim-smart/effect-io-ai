@@ -5,7 +5,7 @@ Module: `Argument`<br />
 
 Filters parsed values, failing with a custom error message if the predicate returns false.
 
-**Example**
+**Example** (Filtering parsed values)
 
 ```ts
 import { Argument } from "effect/unstable/cli"
@@ -24,6 +24,6 @@ const positiveInt = Argument.integer("count").pipe(
 declare const filter: { <A>(predicate: (a: A) => boolean, onFalse: (a: A) => string): (self: Argument<A>) => Argument<A>; <A>(self: Argument<A>, predicate: (a: A) => boolean, onFalse: (a: A) => string): Argument<A>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Argument.ts#L622)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Argument.ts#L677)
 
 Since v4.0.0

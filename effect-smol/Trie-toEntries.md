@@ -3,11 +3,11 @@ Module: `Trie`<br />
 
 ## Trie.toEntries
 
-Returns an `Array<[K, V]>` of the entries within the `Trie`.
+Returns an `Array<[string, V]>` of the entries within the `Trie`.
 
 Equivalent to `Array.from(Trie.entries(trie))`.
 
-**Example**
+**Example** (Converting entries to an array)
 
 ```ts
 import * as Trie from "effect/Trie"
@@ -28,6 +28,6 @@ assert.deepStrictEqual(result, [["call", 0], ["me", 1]])
 declare const toEntries: <V>(self: Trie<V>) => Array<[string, V]>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Trie.ts#L277)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Trie.ts#L290)
 
 Since v2.0.0

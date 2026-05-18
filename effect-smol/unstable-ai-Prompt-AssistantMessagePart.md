@@ -16,6 +16,6 @@ type AssistantMessagePart = | TextPart
   | ToolApprovalRequestPart
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L1408)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L1424)
 
 Since v4.0.0

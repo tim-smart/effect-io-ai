@@ -8,7 +8,7 @@ A Gauge metric that tracks instantaneous values that can go up or down.
 Gauges are useful for tracking current state values like memory usage, CPU load,
 active connections, queue sizes, or any value that represents a current level.
 
-**Example**
+**Example** (Using gauge metrics)
 
 ```ts
 import { Data, Effect, Metric } from "effect"
@@ -62,6 +62,6 @@ const program = Effect.gen(function*() {
 export interface Gauge<in Input extends number | bigint> extends Metric<Input, GaugeState<Input>> {}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Metric.ts#L596)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Metric.ts#L549)
 
 Since v2.0.0

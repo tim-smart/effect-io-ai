@@ -5,7 +5,7 @@ Module: `HashMap`<br />
 
 Lookup the value for the specified key in the `HashMap` using a custom hash.
 
-**Example**
+**Example** (Looking up values with a hash)
 
 ```ts
 import { Hash } from "effect"
@@ -36,6 +36,6 @@ console.log(notFound) // Option.none()
 declare const getHash: { <K1 extends K, K>(key: K1, hash: number): <V>(self: HashMap<K, V>) => Option<V>; <K1 extends K, K, V>(self: HashMap<K, V>, key: K1, hash: number): Option<V>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashMap.ts#L346)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashMap.ts#L432)
 
 Since v2.0.0

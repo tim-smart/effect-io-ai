@@ -5,7 +5,7 @@ Module: `Stream`<br />
 
 Provides multiple services to the stream using a context.
 
-**Example**
+**Example** (Providing multiple services to the stream using a context)
 
 ```ts
 import { Console, Effect, Context, Stream } from "effect"
@@ -40,6 +40,6 @@ Effect.runPromise(program)
 declare const provideContext: { <R2>(context: Context.Context<R2>): <A, E, R>(self: Stream<A, E, R>) => Stream<A, E, Exclude<R, R2>>; <A, E, R, R2>(self: Stream<A, E, R>, context: Context.Context<R2>): Stream<A, E, Exclude<R, R2>>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L9390)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L9682)
 
 Since v4.0.0

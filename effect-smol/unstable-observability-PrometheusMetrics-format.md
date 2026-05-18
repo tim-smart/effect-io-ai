@@ -5,7 +5,7 @@ Module: `PrometheusMetrics`<br />
 
 Format all metrics in the registry to Prometheus exposition format.
 
-**Example**
+**Example** (Formatting metrics)
 
 ```ts
 import { Effect, Metric } from "effect"
@@ -36,6 +36,6 @@ const program = Effect.gen(function*() {
 declare const format: (options?: FormatOptions | undefined) => Effect.Effect<string>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PrometheusMetrics.ts#L115)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PrometheusMetrics.ts#L134)
 
 Since v4.0.0

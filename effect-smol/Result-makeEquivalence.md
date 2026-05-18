@@ -32,6 +32,6 @@ console.log(eq(Result.succeed(1), Result.fail("x")))
 declare const makeEquivalence: <A, E>(success: Equivalence.Equivalence<A>, failure: Equivalence.Equivalence<E>) => Equivalence.Equivalence<Result<A, E>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L693)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L695)
 
 Since v4.0.0

@@ -15,7 +15,7 @@ follows:
 |action------|sleep---|act|-sleep|action----|
 ```
 
-**Example**
+**Example** (Repeating on aligned windows)
 
 ```ts
 import { Console, Effect, Schedule } from "effect"
@@ -26,8 +26,7 @@ const windowSchedule = Schedule.windowed("5 seconds")
 const program = Effect.gen(function*() {
   yield* Effect.repeat(
     Effect.gen(function*() {
-      const now = new Date().toISOString()
-      yield* Console.log(`Window task executed at: ${now}`)
+      yield* Console.log("Window task executed")
       return "window-task"
     }),
     windowSchedule.pipe(Schedule.take(4))
@@ -41,6 +40,6 @@ const program = Effect.gen(function*() {
 declare const windowed: (interval: Duration.Input) => Schedule<number>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L3146)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L3147)
 
 Since v2.0.0

@@ -3,10 +3,14 @@ Module: `MutableList`<br />
 
 ## MutableList.MutableList.Bucket
 
-Internal bucket structure used by MutableList to store elements efficiently.
-Buckets are linked together to form the list structure.
+Storage node used by the exposed `head` and `tail` fields of a
+`MutableList`.
 
-**Example**
+Most code should treat buckets as an implementation detail and use
+`MutableList` operations such as `append`, `prepend`, and `take` instead
+of constructing or mutating buckets directly.
+
+**Example** (Inspecting buckets)
 
 ```ts
 import * as MutableList from "effect/MutableList"
@@ -42,6 +46,6 @@ export interface Bucket<A> {
   }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableList.ts#L144)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableList.ts#L167)
 
 Since v4.0.0

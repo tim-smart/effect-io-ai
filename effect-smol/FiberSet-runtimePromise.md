@@ -7,7 +7,7 @@ Capture a Runtime and use it to fork Effect's, adding the forked fibers to the F
 
 The returned run function will return Promise's.
 
-**Example**
+**Example** (Running effects as promises)
 
 ```ts
 import { Effect, FiberSet } from "effect"
@@ -33,6 +33,6 @@ const program = Effect.gen(function*() {
 declare const runtimePromise: <A, E>(self: FiberSet<A, E>) => <R = never>() => Effect.Effect<(<XE extends E, XA extends A>(effect: Effect.Effect<XA, XE, R>, options?: (Effect.RunOptions & { readonly propagateInterruption?: boolean | undefined; }) | undefined) => Promise<XA>), never, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FiberSet.ts#L541)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FiberSet.ts#L602)
 
 Since v3.13.0

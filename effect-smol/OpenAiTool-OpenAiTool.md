@@ -21,4 +21,4 @@ type OpenAiTool = | ReturnType<typeof ApplyPatch>
 
 [Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiTool.ts#L19)
 
-Since v1.0.0
+Since v4.0.0

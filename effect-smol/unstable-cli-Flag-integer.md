@@ -5,7 +5,7 @@ Module: `Flag`<br />
 
 Creates an integer flag that accepts whole number input.
 
-**Example**
+**Example** (Creating integer flags)
 
 ```ts
 import { Flag } from "effect/unstable/cli"
@@ -20,6 +20,6 @@ const portFlag = Flag.integer("port")
 declare const integer: (name: string) => Flag<number>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Flag.ts#L77)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Flag.ts#L99)
 
 Since v4.0.0

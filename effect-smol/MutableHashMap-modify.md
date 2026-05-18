@@ -6,7 +6,7 @@ Module: `MutableHashMap`<br />
 Updates the value of the specified key within the MutableHashMap if it exists.
 If the key doesn't exist, the map remains unchanged.
 
-**Example**
+**Example** (Modifying existing values)
 
 ```ts
 import * as MutableHashMap from "effect/MutableHashMap"
@@ -36,6 +36,6 @@ increment(map)
 declare const modify: { <K, V>(key: K, f: (v: V) => V): (self: MutableHashMap<K, V>) => MutableHashMap<K, V>; <K, V>(self: MutableHashMap<K, V>, key: K, f: (v: V) => V): MutableHashMap<K, V>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableHashMap.ts#L443)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableHashMap.ts#L463)
 
 Since v2.0.0

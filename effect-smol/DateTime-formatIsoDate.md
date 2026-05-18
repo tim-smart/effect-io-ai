@@ -7,7 +7,7 @@ Format a `DateTime` as a time zone adjusted ISO date string.
 
 Returns only the date part (YYYY-MM-DD) after applying time zone adjustments.
 
-**Example**
+**Example** (Formatting DateTime values as ISO dates)
 
 ```ts
 import { DateTime } from "effect"
@@ -27,6 +27,6 @@ console.log(DateTime.formatIsoDate(zoned)) // "2024-01-02" (next day in Auckland
 declare const formatIsoDate: (self: DateTime) => string
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L2222)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L2510)
 
 Since v3.6.0

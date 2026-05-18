@@ -3,13 +3,13 @@ Module: `Hash`<br />
 
 ## Hash.structure
 
-Computes a hash value for an object using all of its enumerable keys.
+Computes a structural hash for an object using Effect's object key
+collection.
 
-This function creates a hash value based on all enumerable properties of an object.
-It's a convenient way to hash an entire object structure when you want to consider
-all its properties.
+The hash is based on the object's structural keys and their values, including
+symbol keys and relevant prototype keys for non-plain objects.
 
-**Example**
+**Example** (Hashing object structures)
 
 ```ts
 import { Hash } from "effect"
@@ -32,6 +32,6 @@ console.log(Hash.structure(obj1) === Hash.structure(obj3)) // true
 declare const structure: <A extends object>(o: A) => number
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Hash.ts#L387)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Hash.ts#L397)
 
 Since v2.0.0

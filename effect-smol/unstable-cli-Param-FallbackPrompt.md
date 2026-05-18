@@ -13,6 +13,6 @@ type FallbackPrompt<A> = | Prompt.Prompt<A>
   | Effect.Effect<Prompt.Prompt<A>, CliError.CliError, Environment>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Param.ts#L149)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Param.ts#L187)
 
 Since v4.0.0

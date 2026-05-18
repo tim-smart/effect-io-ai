@@ -3,7 +3,8 @@ Module: `Schema`<br />
 
 ## Schema.PropertyKey
 
-A union schema for JavaScript property keys: `number | symbol | string`.
+A union schema for property keys accepted by Effect schemas: finite `number`,
+`symbol`, or `string`.
 
 **Signature**
 
@@ -11,6 +12,6 @@ A union schema for JavaScript property keys: `number | symbol | string`.
 declare const PropertyKey: Union<readonly [Finite, Symbol, String]>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L9795)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L10180)
 
 Since v4.0.0

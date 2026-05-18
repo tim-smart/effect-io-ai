@@ -12,6 +12,6 @@ inform how objects are used or displayed
 declare class Annotations
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L200)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L277)
 
 Since v4.0.0

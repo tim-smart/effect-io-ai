@@ -8,7 +8,7 @@ Ensures that an layer's success type extends a given type `ROut`.
 This function provides compile-time type checking to ensure that the success
 value of an layer conforms to a specific type constraint.
 
-**Example**
+**Example** (Constraining layer success types)
 
 ```ts
 import { Layer } from "effect"
@@ -25,7 +25,7 @@ const validLayer = satisfiesNumber(FortyTwoLayer)
 // This would cause a TypeScript compilation error:
 // const invalidLayer = satisfiesNumber(StringLayer)
 //                                     ^^^^^^^^^^^
-// Type 'number' is not assignable to type 'string'
+// Type 'string' is not assignable to type 'number'
 ```
 
 **Signature**
@@ -34,6 +34,6 @@ const validLayer = satisfiesNumber(FortyTwoLayer)
 declare const satisfiesSuccessType: <ROut>() => <ROut2 extends ROut, E, RIn>(layer: Layer<ROut2, E, RIn>) => Layer<ROut2, E, RIn>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L1980)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L2088)
 
 Since v4.0.0

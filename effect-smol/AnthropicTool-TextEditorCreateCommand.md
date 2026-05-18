@@ -3,16 +3,17 @@ Module: `AnthropicTool`<br />
 
 ## AnthropicTool.TextEditorCreateCommand
 
-Create a new file with specified content.
+Text editor command payload for creating a new file with the specified content.
 
-Will fail if the file already exists. Parent directories must exist.
+**Notes**
+The command fails if the file already exists or if parent directories are missing.
 
 **Signature**
 
 ```ts
-declare const TextEditorCreateCommand: Schema.Struct<{ readonly command: Schema.Literal<"create">; readonly path: Schema.String; readonly file_text: Schema.String; }>
+type TextEditorCreateCommand = typeof TextEditorCreateCommand.Type
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L1047)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L1138)
 
-Since v1.0.0
+Since v4.0.0

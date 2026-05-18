@@ -3,14 +3,14 @@ Module: `AnthropicTool`<br />
 
 ## AnthropicTool.TypeAction
 
-Type a text string.
+Computer-use action payload for typing a text string.
 
 **Signature**
 
 ```ts
-declare const TypeAction: Schema.Struct<{ readonly action: Schema.Literal<"type">; readonly text: Schema.String; }>
+type TypeAction = typeof TypeAction.Type
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L452)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L493)
 
-Since v1.0.0
+Since v4.0.0

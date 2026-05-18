@@ -8,23 +8,25 @@ Creates a `Size` representing gibibytes (1024³ bytes).
 Converts a number of gibibytes to the equivalent size in bytes.
 Uses binary gibibytes (1,073,741,824 bytes) rather than decimal gigabytes.
 
-**Example**
+**Example** (Creating gibibyte sizes)
 
 ```ts
-import { Console, Effect, FileSystem } from "effect"
+import { Effect, FileSystem } from "effect"
 
 const program = Effect.gen(function*() {
   const fs = yield* FileSystem.FileSystem
 
-  // Check available space before creating large files
-  const stats = yield* fs.stat(".")
-  const requiredSpace = FileSystem.GiB(5)
+  // Use GiB values as size thresholds
+  const maxArchiveSize = FileSystem.GiB(1)
+  console.log(maxArchiveSize.toString()) // "1073741824"
 
-  // Create a large temporary file
-  const tempFile = yield* fs.makeTempFile({ prefix: "large-" })
-  yield* fs.truncate(tempFile, FileSystem.GiB(1)) // 1 GiB file
+  const tempFile = yield* fs.makeTempFile({ prefix: "archive-" })
+  yield* fs.writeFileString(tempFile, "backup data")
 
-  yield* Console.log(`Created ${tempFile} with 1 GiB size`)
+  const info = yield* fs.stat(tempFile)
+  console.log(info.size < maxArchiveSize) // true
+
+  yield* fs.remove(tempFile)
 })
 ```
 
@@ -34,6 +36,6 @@ const program = Effect.gen(function*() {
 declare const GiB: (n: number) => Size
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FileSystem.ts#L552)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FileSystem.ts#L561)
 
 Since v4.0.0

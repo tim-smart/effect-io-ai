@@ -8,7 +8,7 @@ Extracts the description from a tool's metadata.
 Returns the tool's description if explicitly set, otherwise attempts to
 extract it from the parameter schema's AST annotations.
 
-**Example**
+**Example** (Reading a tool description)
 
 ```ts
 import { Tool } from "effect/unstable/ai"
@@ -27,6 +27,6 @@ console.log(description) // "This is an example tool"
 declare const getDescription: <Tool extends Any>(tool: Tool) => string | undefined
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tool.ts#L1528)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tool.ts#L1561)
 
-Since v1.0.0
+Since v4.0.0

@@ -16,6 +16,6 @@ A type that matches any `Newtype`, useful as a generic constraint:
 type Any = Newtype<any, unknown>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Newtype.ts#L121)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Newtype.ts#L124)
 
 Since v4.0.0

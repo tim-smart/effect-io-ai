@@ -3,13 +3,12 @@ Module: `RunnerHealth`<br />
 
 ## RunnerHealth.layerK8s
 
-A layer which will check the Kubernetes API to see if a Runner is healthy.
+A layer which checks Kubernetes pod readiness to determine whether a runner is
+healthy.
 
-The provided HttpClient will need to add the pod's CA certificate to its
-trusted root certificates in order to communicate with the Kubernetes API.
-
-The pod service account will also need to have permissions to list pods in
-order to use this layer.
+The provided `HttpClient` must trust the pod CA certificate and the pod service
+account must be allowed to list pods. If the Kubernetes API check fails, the
+runner is treated as healthy.
 
 **Signature**
 
@@ -17,6 +16,6 @@ order to use this layer.
 declare const layerK8s: (options?: { readonly namespace?: string | undefined; readonly labelSelector?: string | undefined; } | undefined) => Layer.Layer<RunnerHealth, never, K8s.K8sHttpClient>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RunnerHealth.ts#L108)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RunnerHealth.ts#L136)
 
 Since v4.0.0

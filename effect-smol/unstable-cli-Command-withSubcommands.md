@@ -9,7 +9,7 @@ Subcommands can access their parent's parsed configuration by yielding the paren
 command within their handler. This enables shared parent flags that affect
 all subcommands.
 
-**Example**
+**Example** (Adding subcommands)
 
 ```ts
 import { Console, Effect } from "effect"
@@ -44,6 +44,6 @@ const app = git.pipe(Command.withSubcommands([clone]))
 declare const withSubcommands: { <const Subcommands extends ReadonlyArray<Command.SubcommandEntry>>(subcommands: Subcommands): <Name extends string, Input, E, R, ContextInput>(self: Command<Name, Input, ContextInput, E, R>) => Command<Name, Simplify<Input | ContextInput>, ContextInput, E | ExtractSubcommandErrors<Subcommands>, R | Exclude<ExtractSubcommandContext<Subcommands>, CommandContext<Name>>>; <Name extends string, Input, E, R, ContextInput, const Subcommands extends ReadonlyArray<Command.SubcommandEntry>>(self: Command<Name, Input, ContextInput, E, R>, subcommands: Subcommands): Command<Name, Simplify<Input | ContextInput>, ContextInput, E | ExtractSubcommandErrors<Subcommands>, R | Exclude<ExtractSubcommandContext<Subcommands>, CommandContext<Name>>>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Command.ts#L610)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Command.ts#L659)
 
 Since v4.0.0

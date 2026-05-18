@@ -5,7 +5,7 @@ Module: `Stream`<br />
 
 Concatenates the stream's `Uint8Array` chunks into a single `Uint8Array`.
 
-**Example**
+**Example** (Joining Uint8Array chunks)
 
 ```ts
 import { Console, Effect, Stream } from "effect"
@@ -26,6 +26,6 @@ Effect.runPromise(program)
 declare const mkUint8Array: <E, R>(self: Stream<Uint8Array, E, R>) => Effect.Effect<Uint8Array, E, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L10341)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L10657)
 
 Since v4.0.0

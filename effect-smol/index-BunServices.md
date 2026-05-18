@@ -13,4 +13,4 @@ export * as BunServices from "./BunServices.ts"
 
 [Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/index.ts#L72)
 
-Since v1.0.0
+Since v4.0.0

@@ -3,7 +3,8 @@ Module: `Schema`<br />
 
 ## Schema.StringFromHex
 
-Companion type for `StringFromHex`.
+Schema interface for `StringFromHex`, a transformation between hex-encoded
+strings and UTF-8 strings.
 
 **Signature**
 
@@ -13,6 +14,6 @@ export interface StringFromHex extends decodeTo<String, String> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L9720)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L10103)
 
 Since v4.0.0

@@ -5,7 +5,7 @@ Module: `Duration`<br />
 
 Returns the larger of two Durations.
 
-**Example**
+**Example** (Selecting the longer duration)
 
 ```ts
 import { Duration } from "effect"
@@ -20,6 +20,6 @@ console.log(Duration.toSeconds(longer)) // 5
 declare const max: { (that: Duration): (self: Duration) => Duration; (self: Duration, that: Duration): Duration; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Duration.ts#L1128)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Duration.ts#L1167)
 
 Since v2.0.0

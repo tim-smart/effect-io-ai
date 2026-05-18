@@ -44,6 +44,6 @@ export interface Union<Members extends ReadonlyArray<Top>> extends
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L3421)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L3706)
 
 Since v4.0.0

@@ -5,7 +5,7 @@ Module: `Channel`<br />
 
 Creates a `Channel` that emits all elements from an array.
 
-**Example**
+**Example** (Creating channels from arrays)
 
 ```ts
 import { Channel } from "effect"
@@ -20,6 +20,6 @@ const channel = Channel.fromArray([1, 2, 3, 4, 5])
 declare const fromArray: <A>(array: ReadonlyArray<A>) => Channel<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L635)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L693)
 
 Since v2.0.0

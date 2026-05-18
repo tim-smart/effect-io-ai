@@ -5,7 +5,7 @@ Module: `CliError`<br />
 
 Wrapper for user (handler) errors to unify under CLI error channel when desired.
 
-**Example**
+**Example** (Wrapping user errors)
 
 ```ts
 import { Effect } from "effect"
@@ -41,6 +41,6 @@ const handleError = (error: CliError.CliError): Effect.Effect<number> => {
 declare class UserError
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/CliError.ts#L425)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/CliError.ts#L482)
 
 Since v4.0.0

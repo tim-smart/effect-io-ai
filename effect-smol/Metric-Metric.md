@@ -19,7 +19,7 @@ There are five primitive metric types supported by Effect:
   - Histograms
   - Summaries
 
-**Example**
+**Example** (Using multiple metric types)
 
 ```ts
 import { Data, Effect, Metric } from "effect"
@@ -91,6 +91,6 @@ export interface Metric<in Input, out State> extends Pipeable {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Metric.ts#L230)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Metric.ts#L178)
 
 Since v2.0.0

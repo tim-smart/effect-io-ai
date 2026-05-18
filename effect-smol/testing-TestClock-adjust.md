@@ -7,7 +7,7 @@ Accesses a `TestClock` instance in the context and increments the time
 by the specified duration, running any actions scheduled for on or before
 the new time in order.
 
-**Example**
+**Example** (Advancing the test clock)
 
 ```ts
 import { Effect } from "effect"
@@ -36,6 +36,6 @@ const program = Effect.gen(function*() {
 declare const adjust: (duration: Duration.Input) => Effect.Effect<void>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TestClock.ts#L434)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TestClock.ts#L461)
 
 Since v2.0.0

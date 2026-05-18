@@ -3,10 +3,10 @@ Module: `Result`<br />
 
 ## Result.failVoid
 
-A pre-built `Result<void>` holding `undefined` as its failure value.
+A pre-built failed `Result` whose failure value is `undefined`.
 
-- Use when you need a `Result` that represents "failed with no meaningful value"
-- Equivalent to `Result.fail(undefined)` but avoids an extra allocation
+This is equivalent to `Result.fail(undefined)` with type
+`Result<never, void>`, but avoids allocating a new `Failure` wrapper.
 
 **See**
 
@@ -18,6 +18,6 @@ A pre-built `Result<void>` holding `undefined` as its failure value.
 declare const failVoid: Result<never, void>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L399)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L401)
 
 Since v4.0.0

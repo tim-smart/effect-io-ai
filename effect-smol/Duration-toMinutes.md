@@ -5,7 +5,7 @@ Module: `Duration`<br />
 
 Converts a Duration to minutes.
 
-**Example**
+**Example** (Converting durations to minutes)
 
 ```ts
 import { Duration } from "effect"
@@ -20,6 +20,6 @@ console.log(Duration.toMinutes(Duration.hours(1))) // 60
 declare const toMinutes: (self: Input) => number
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Duration.ts#L725)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Duration.ts#L751)
 
 Since v3.8.0

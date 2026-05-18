@@ -4,13 +4,13 @@ Module: `Cause`<br />
 ## Cause.YieldableError
 
 Base interface for error classes that can be yielded directly inside
-`Effect.gen` (via `Symbol.iterator`) or converted to a failing Effect
-via ``.
+`Effect.gen`. Yielding one of these errors fails the generator with that
+error as the typed failure value.
 
 All built-in error classes in this module (`NoSuchElementError`,
 `TimeoutError`, `IllegalArgumentError`,
-`ExceededCapacityError`, `UnknownError`) extend this
-interface.
+`ExceededCapacityError`, `AsyncFiberError`, and
+`UnknownError`) implement this interface.
 
 **Example** (yielding an error in Effect.gen)
 
@@ -33,6 +33,6 @@ export interface YieldableError extends Error, Pipeable, Inspectable {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L1092)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L1097)
 
 Since v2.0.0

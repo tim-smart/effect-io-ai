@@ -5,7 +5,7 @@ Module: `Channel`<br />
 
 The default chunk size used by channels for batching operations.
 
-**Example**
+**Example** (Reading the default chunk size)
 
 ```ts
 import { Channel } from "effect"
@@ -19,6 +19,6 @@ console.log(Channel.DefaultChunkSize) // 4096
 declare const DefaultChunkSize: number
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L436)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L477)
 
 Since v2.0.0

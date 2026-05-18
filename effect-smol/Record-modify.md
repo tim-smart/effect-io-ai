@@ -6,7 +6,7 @@ Module: `Record`<br />
 Apply a function to the element at the specified key, creating a new record,
 or return `Option.none()` if the key doesn't exist.
 
-**Example**
+**Example** (Modifying a value at a key)
 
 ```ts
 import { Record } from "effect"
@@ -25,6 +25,6 @@ Record.modify(input, "b", f) // Option.none()
 declare const modify: { <K extends string | symbol, A, B>(key: NoInfer<K>, f: (a: A) => B): (self: ReadonlyRecord<K, A>) => Option.Option<Record<K, A | B>>; <K extends string | symbol, A, B>(self: ReadonlyRecord<K, A>, key: NoInfer<K>, f: (a: A) => B): Option.Option<Record<K, A | B>>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Record.ts#L433)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Record.ts#L457)
 
 Since v2.0.0

@@ -11,7 +11,7 @@ Commands are the core building blocks of CLI applications. They define:
 - Handler function for execution
 - Optional subcommands for hierarchical structures
 
-**Example**
+**Example** (Defining CLI commands)
 
 ```ts
 import { Console } from "effect"
@@ -98,6 +98,6 @@ export interface Command<in out Name extends string, in Input, out ContextInput 
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Command.ts#L79)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Command.ts#L108)
 
 Since v4.0.0

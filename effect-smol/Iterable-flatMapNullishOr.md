@@ -8,7 +8,7 @@ Transforms elements using a function that may return null or undefined, filterin
 This is useful when working with APIs or functions that return nullable values,
 providing a clean way to filter out null/undefined while transforming.
 
-**Example**
+**Example** (FlatMapping nullable results)
 
 ```ts
 import { Iterable } from "effect"
@@ -48,6 +48,6 @@ console.log(Array.from(foundValues)) // [1, 2, 3]
 declare const flatMapNullishOr: { <A, B>(f: (a: A) => B): (self: Iterable<A>) => Iterable<NonNullable<B>>; <A, B>(self: Iterable<A>, f: (a: A) => B): Iterable<NonNullable<B>>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Iterable.ts#L1877)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Iterable.ts#L1933)
 
 Since v2.0.0

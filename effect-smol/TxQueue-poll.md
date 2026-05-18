@@ -5,7 +5,7 @@ Module: `TxQueue`<br />
 
 Tries to take an item from the queue without blocking.
 
-**Example**
+**Example** (Polling without blocking)
 
 ```ts
 import { Effect, Option, TxQueue } from "effect"
@@ -29,6 +29,6 @@ const program = Effect.gen(function*() {
 declare const poll: <A, E>(self: TxDequeue<A, E>) => Effect.Effect<Option.Option<A>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxQueue.ts#L744)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxQueue.ts#L723)
 
 Since v4.0.0

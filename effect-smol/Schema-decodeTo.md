@@ -3,10 +3,13 @@ Module: `Schema`<br />
 
 ## Schema.decodeTo
 
-The type produced by `decodeTo` when a custom transformation is provided.
+Schema type produced by `decodeTo` when a custom transformation composes a
+`From` schema with a `To` schema.
 
-- `Type` is `To["Type"]`, `Encoded` is `From["Encoded"]`
-- Decoding services from both `from` and `to` are combined
+**Details**
+`Type` is `To["Type"]` and `Encoded` is `From["Encoded"]`. Decoding services
+are `To["DecodingServices"] | From["DecodingServices"] | RD`; encoding
+services are `To["EncodingServices"] | From["EncodingServices"] | RE`.
 
 **See**
 
@@ -39,6 +42,6 @@ export interface decodeTo<To extends Top, From extends Top, RD = never, RE = nev
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L4008)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L4302)
 
 Since v4.0.0

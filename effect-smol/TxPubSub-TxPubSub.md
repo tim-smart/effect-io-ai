@@ -6,7 +6,7 @@ Module: `TxPubSub`<br />
 A TxPubSub represents a transactional publish/subscribe hub that broadcasts messages
 to all current subscribers using Software Transactional Memory (STM) semantics.
 
-**Example**
+**Example** (Subscribing to a transactional pub/sub)
 
 ```ts
 import { Effect, TxPubSub, TxQueue } from "effect"
@@ -39,6 +39,6 @@ export interface TxPubSub<in out A> extends Inspectable, Pipeable {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxPubSub.ts#L48)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxPubSub.ts#L49)
 
 Since v4.0.0

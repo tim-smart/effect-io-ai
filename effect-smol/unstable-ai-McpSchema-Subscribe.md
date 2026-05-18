@@ -12,6 +12,6 @@ server whenever a particular resource changes.
 declare class Subscribe
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L848)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L971)
 
 Since v4.0.0

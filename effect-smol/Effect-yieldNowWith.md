@@ -5,7 +5,7 @@ Module: `Effect`<br />
 
 Yields control back to the Effect runtime with a specified priority, allowing other fibers to execute.
 
-**Example**
+**Example** (Usage)
 
 ```ts
 import { Effect } from "effect"
@@ -25,6 +25,6 @@ Effect.runPromise(program)
 declare const yieldNowWith: (priority?: number) => Effect<void>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L1797)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L1669)
 
 Since v2.0.0

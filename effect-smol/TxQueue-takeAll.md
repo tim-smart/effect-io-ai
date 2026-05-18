@@ -13,7 +13,7 @@ Returns a non-empty array since it blocks until at least one item is available.
 **Mutation behavior**: This function mutates the original TxQueue by removing
 all items. It does not return a new TxQueue reference.
 
-**Example**
+**Example** (Taking all queued values)
 
 ```ts
 import { Array, Effect, TxQueue } from "effect"
@@ -46,6 +46,6 @@ const errorExample = Effect.gen(function*() {
 declare const takeAll: <A, E>(self: TxDequeue<A, E>) => Effect.Effect<Arr.NonEmptyArray<A>, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxQueue.ts#L801)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxQueue.ts#L781)
 
 Since v4.0.0

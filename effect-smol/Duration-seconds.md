@@ -5,7 +5,7 @@ Module: `Duration`<br />
 
 Creates a Duration from seconds.
 
-**Example**
+**Example** (Creating durations from seconds)
 
 ```ts
 import { Duration } from "effect"
@@ -20,6 +20,6 @@ console.log(Duration.toMillis(duration)) // 30000
 declare const seconds: (seconds: number) => Duration
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Duration.ts#L601)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Duration.ts#L620)
 
 Since v2.0.0

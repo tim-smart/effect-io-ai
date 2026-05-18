@@ -11,6 +11,6 @@ A sink that counts the number of elements fed to it.
 declare const count: Sink<number, unknown, never, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Sink.ts#L1286)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Sink.ts#L1366)
 
 Since v2.0.0

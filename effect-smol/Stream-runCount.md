@@ -5,7 +5,7 @@ Module: `Stream`<br />
 
 Runs the stream and returns the number of elements emitted.
 
-**Example**
+**Example** (Counting stream values)
 
 ```ts
 import { Console, Effect, Stream } from "effect"
@@ -27,6 +27,6 @@ Effect.runPromise(program)
 declare const runCount: <A, E, R>(self: Stream<A, E, R>) => Effect.Effect<number, E, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L9939)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L10244)
 
 Since v2.0.0

@@ -3,10 +3,14 @@ Module: `Chunk`<br />
 
 ## Chunk.splitNonEmptyAt
 
-Splits a `NonEmptyChunk` into two segments, with the first segment containing a maximum of `n` elements.
-The value of `n` must be `>= 1`.
+Splits a `NonEmptyChunk` at `n`, returning a non-empty prefix and the
+remaining suffix.
 
-**Example**
+`n` is floored and normalized to at least `1`. If `n` is greater than or
+equal to the chunk length, the first result is the original chunk and the
+second result is empty.
+
+**Example** (Splitting non-empty chunks at an index)
 
 ```ts
 import { Chunk } from "effect"
@@ -31,6 +35,6 @@ console.log(Chunk.toArray(rest)) // [2, 3, 4, 5, 6]
 declare const splitNonEmptyAt: { (n: number): <A>(self: NonEmptyChunk<A>) => [beforeIndex: NonEmptyChunk<A>, fromIndex: Chunk<A>]; <A>(self: NonEmptyChunk<A>, n: number): [beforeIndex: NonEmptyChunk<A>, fromIndex: Chunk<A>]; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L1934)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L1975)
 
 Since v2.0.0

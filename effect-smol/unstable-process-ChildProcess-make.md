@@ -13,7 +13,7 @@ This function supports three calling conventions:
 Template literals are not parsed until execution time, allowing parsing
 errors to flow through Effect's error channel.
 
-**Example**
+**Example** (Creating commands)
 
 ```ts
 import { ChildProcess } from "effect/unstable/process"
@@ -34,6 +34,6 @@ const cmd3 = ChildProcess.make("git", ["status"])
 declare const make: { (command: string, options?: CommandOptions): StandardCommand; (command: string, args: ReadonlyArray<string>, options?: CommandOptions): StandardCommand; (options: CommandOptions): (templates: TemplateStringsArray, ...expressions: ReadonlyArray<TemplateExpression>) => StandardCommand; (templates: TemplateStringsArray, ...expressions: ReadonlyArray<TemplateExpression>): StandardCommand; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ChildProcess.ts#L594)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ChildProcess.ts#L598)
 
 Since v4.0.0

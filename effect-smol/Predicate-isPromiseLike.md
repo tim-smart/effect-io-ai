@@ -30,6 +30,6 @@ See also: `isPromise`
 declare const isPromiseLike: (input: unknown) => input is PromiseLike<unknown>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L1326)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L1321)
 
 Since v2.0.0

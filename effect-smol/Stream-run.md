@@ -5,7 +5,7 @@ Module: `Stream`<br />
 
 Runs a stream with a sink and returns the sink result.
 
-**Example**
+**Example** (Running a stream with a sink)
 
 ```ts
 import { Console, Effect, Sink, Stream } from "effect"
@@ -22,6 +22,6 @@ Effect.runPromise(Effect.flatMap(program, Console.log))
 declare const run: { <A2, A, L, E2, R2>(sink: Sink.Sink<A2, A, L, E2, R2>): <E, R>(self: Stream<A, E, R>) => Effect.Effect<A2, E2 | E, R | R2>; <A, E, R, L, A2, E2, R2>(self: Stream<A, E, R>, sink: Sink.Sink<A2, A, L, E2, R2>): Effect.Effect<A2, E | E2, R | R2>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L9866)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L10169)
 
 Since v2.0.0

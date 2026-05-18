@@ -7,7 +7,7 @@ Attempt to create a named time zone from a IANA time zone identifier.
 
 If the time zone is invalid, an `IllegalArgumentError` will be thrown.
 
-**Example**
+**Example** (Creating named time zones unsafely)
 
 ```ts
 import { DateTime } from "effect"
@@ -28,6 +28,6 @@ console.log(DateTime.zoneToString(tokyoZone)) // "Asia/Tokyo"
 declare const zoneMakeNamedUnsafe: (zoneId: string) => TimeZone.Named
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L734)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L927)
 
 Since v3.6.0

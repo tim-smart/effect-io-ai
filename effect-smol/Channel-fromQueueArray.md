@@ -5,7 +5,7 @@ Module: `Channel`<br />
 
 Create a channel from a queue that emits arrays of elements
 
-**Example**
+**Example** (Creating batched channels from queues)
 
 ```ts
 import { Channel, Data, Effect, Queue } from "effect"
@@ -48,6 +48,6 @@ const batchProcessor = Effect.gen(function*() {
 declare const fromQueueArray: <A, E>(queue: Queue.Dequeue<A, E>) => Channel<Arr.NonEmptyReadonlyArray<A>, Exclude<E, Cause.Done>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L1176)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L1271)
 
 Since v4.0.0

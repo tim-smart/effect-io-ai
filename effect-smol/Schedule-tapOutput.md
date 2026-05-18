@@ -7,7 +7,7 @@ Returns a new `Schedule` that allows execution of an effectful function for
 every output of the schedule, but does not alter the inputs and outputs of
 the schedule.
 
-**Example**
+**Example** (Tapping schedule outputs)
 
 ```ts
 import { Console, Data, Effect, Schedule } from "effect"
@@ -56,7 +56,7 @@ const alertingSchedule = Schedule.fibonacci("200 millis").pipe(
     Effect.gen(function*() {
       const delayMs = delay.toString()
       if (delayMs.includes("1000")) { // Alert on delays >= 1 second
-        yield* Console.log(`🚨 High delay detected: ${delay}`)
+        yield* Console.log(`High delay detected: ${delay}`)
       }
     })
   )
@@ -66,8 +66,7 @@ const healthCheckProgram = Effect.gen(function*() {
   yield* Effect.repeat(
     Effect.gen(function*() {
       yield* Console.log("Performing health check...")
-      // Simulate health check
-      return Math.random() > 0.7 ? "healthy" : "degraded"
+      return "healthy"
     }),
     alertingSchedule
   )
@@ -79,7 +78,7 @@ const comprehensiveSchedule = Schedule.fixed("500 millis").pipe(
   Schedule.tapOutput((count) => Console.log(`Execution ${count + 1}`)),
   Schedule.tapOutput((count) =>
     count % 3 === 0
-      ? Console.log("🎯 Checkpoint reached!")
+      ? Console.log("Checkpoint reached")
       : Effect.void
   )
 )

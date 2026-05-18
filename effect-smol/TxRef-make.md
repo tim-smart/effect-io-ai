@@ -5,7 +5,7 @@ Module: `TxRef`<br />
 
 Creates a new `TxRef` with the specified initial value.
 
-**Example**
+**Example** (Creating transactional references)
 
 ```ts
 import { Effect, TxRef } from "effect"
@@ -32,6 +32,6 @@ const program = Effect.gen(function*() {
 declare const make: <A>(initial: A) => Effect.Effect<TxRef<A>, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxRef.ts#L81)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxRef.ts#L85)
 
 Since v4.0.0

@@ -3,7 +3,10 @@ Module: `ScopedCache`<br />
 
 ## ScopedCache.invalidate
 
-Invalidates the entry associated with the specified key in the cache.
+Removes the entry associated with a key and closes its entry scope.
+
+If the key is absent, this is a no-op. If the cache is closed, the effect is
+interrupted.
 
 **Signature**
 
@@ -11,6 +14,6 @@ Invalidates the entry associated with the specified key in the cache.
 declare const invalidate: { <Key, A>(key: Key): <E, R>(self: ScopedCache<Key, A, E, R>) => Effect.Effect<void>; <Key, A, E, R>(self: ScopedCache<Key, A, E, R>, key: Key): Effect.Effect<void>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ScopedCache.ts#L356)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ScopedCache.ts#L432)
 
 Since v4.0.0

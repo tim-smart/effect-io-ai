@@ -5,7 +5,7 @@ Module: `TxHashSet`<br />
 
 Creates the union of two TxHashSets, returning a new TxHashSet.
 
-**Example**
+**Example** (Combining sets with union)
 
 ```ts
 import { Effect, TxHashSet } from "effect"
@@ -27,6 +27,6 @@ const program = Effect.gen(function*() {
 declare const union: { <V1>(that: TxHashSet<V1>): <V0>(self: TxHashSet<V0>) => Effect.Effect<TxHashSet<V1 | V0>>; <V0, V1>(self: TxHashSet<V0>, that: TxHashSet<V1>): Effect.Effect<TxHashSet<V0 | V1>>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashSet.ts#L513)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashSet.ts#L552)
 
 Since v2.0.0

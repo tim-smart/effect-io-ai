@@ -3,12 +3,12 @@ Module: `Cron`<br />
 
 ## Cron.equals
 
-Checks if two Cron instances are equal.
+Checks whether two `Cron` instances have the same field restrictions.
 
-This function compares two Cron instances to determine if they represent
-the same schedule by checking all their time constraints for equality.
+The comparison checks seconds, minutes, hours, days, months, and weekdays.
+It does not compare the optional timezone.
 
-**Example**
+**Example** (Checking schedule equality)
 
 ```ts
 import { Cron } from "effect"
@@ -39,6 +39,6 @@ console.log(Cron.equals(cron1)(cron2)) // true (curried form)
 declare const equals: { (that: Cron): (self: Cron) => boolean; (self: Cron, that: Cron): boolean; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cron.ts#L917)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cron.ts#L978)
 
 Since v2.0.0

@@ -5,7 +5,7 @@ Module: `Iterable`<br />
 
 Transforms all elements of the `Iterable` for as long as the specified function succeeds.
 
-**Example**
+**Example** (Filtering and transforming until failure)
 
 ```ts
 import { Iterable } from "effect"
@@ -42,6 +42,6 @@ console.log(Array.from(indexedUntilC)) // ["0: a", "1: b"] (stops at "c")
 declare const filterMapWhile: { <A, B, X>(f: (input: A, i: number) => Result<B, X>): (self: Iterable<A>) => Iterable<B>; <A, B, X>(self: Iterable<A>, f: (input: A, i: number) => Result<B, X>): Iterable<B>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Iterable.ts#L1614)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Iterable.ts#L1663)
 
 Since v2.0.0

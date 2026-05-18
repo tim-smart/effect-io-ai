@@ -5,7 +5,7 @@ Module: `Chunk`<br />
 
 Returns every elements after the first.
 
-**Example**
+**Example** (Getting the tail safely)
 
 ```ts
 import { Chunk } from "effect"
@@ -26,6 +26,6 @@ console.log(Chunk.tail(empty)) // Option.none()
 declare const tail: <A>(self: Chunk<A>) => O.Option<Chunk<A>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L2038)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L2085)
 
 Since v2.0.0

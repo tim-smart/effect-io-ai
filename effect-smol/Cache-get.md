@@ -3,12 +3,16 @@ Module: `Cache`<br />
 
 ## Cache.get
 
-Retrieves the value associated with the specified key from the cache.
+Retrieves the value for a key, invoking the lookup function on a cache miss
+or expired entry.
 
-If the key is not present or has expired, it will invoke the lookup function
-to construct the value, store it in the cache, and return it.
+**Details**
 
-**Example**
+Concurrent `get` calls for the same missing key share the same pending
+lookup. The cache stores the lookup `Exit`, so failed lookups are cached and
+will fail again until the entry expires, is invalidated, or is refreshed.
+
+**Example** (Getting cached values)
 
 ```ts
 import { Cache, Effect } from "effect"
@@ -31,7 +35,7 @@ const program = Effect.gen(function*() {
 })
 ```
 
-**Example**
+**Example** (Handling lookup failures)
 
 ```ts
 import { Cache, Effect } from "effect"
@@ -56,7 +60,7 @@ const program = Effect.gen(function*() {
 })
 ```
 
-**Example**
+**Example** (Sharing concurrent lookups)
 
 ```ts
 import { Cache, Effect } from "effect"
@@ -91,6 +95,6 @@ const program = Effect.gen(function*() {
 declare const get: { <Key, A>(key: Key): <E, R>(self: Cache<Key, A, E, R>) => Effect.Effect<A, E, R>; <Key, A, E, R>(self: Cache<Key, A, E, R>, key: Key): Effect.Effect<A, E, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cache.ts#L349)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cache.ts#L410)
 
 Since v4.0.0

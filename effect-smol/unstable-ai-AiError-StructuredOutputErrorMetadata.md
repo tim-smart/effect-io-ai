@@ -11,6 +11,6 @@ Provider-specific metadata attached to `StructuredOutputError`.
 export interface StructuredOutputErrorMetadata extends ProviderMetadata {}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AiError.ts#L327)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AiError.ts#L338)
 
-Since v1.0.0
+Since v4.0.0

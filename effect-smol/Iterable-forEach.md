@@ -5,7 +5,7 @@ Module: `Iterable`<br />
 
 Iterate over the `Iterable` applying `f`.
 
-**Example**
+**Example** (Iterating with side effects)
 
 ```ts
 import { Iterable } from "effect"
@@ -43,6 +43,6 @@ Iterable.forEach(data, (chunk) => {
 declare const forEach: { <A>(f: (a: A, i: number) => void): (self: Iterable<A>) => void; <A>(self: Iterable<A>, f: (a: A, i: number) => void): void; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Iterable.ts#L2036)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Iterable.ts#L2095)
 
 Since v2.0.0

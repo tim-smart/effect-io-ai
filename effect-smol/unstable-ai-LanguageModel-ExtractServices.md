@@ -19,6 +19,6 @@ type ExtractServices<Options> = Options extends {
   : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/LanguageModel.ts#L648)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/LanguageModel.ts#L653)
 
 Since v4.0.0

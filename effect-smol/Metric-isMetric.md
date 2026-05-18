@@ -8,7 +8,7 @@ Returns `true` if the specified value is a `Metric`, otherwise returns `false`.
 This function is useful for runtime type checking and ensuring that a value
 conforms to the Metric interface before performing metric operations.
 
-**Example**
+**Example** (Checking metric values)
 
 ```ts
 import { Metric } from "effect"
@@ -29,6 +29,6 @@ console.log(Metric.isMetric(null)) // false
 declare const isMetric: (u: unknown) => u is Metric<unknown, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Metric.ts#L2170)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Metric.ts#L2151)
 
 Since v4.0.0

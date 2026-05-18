@@ -5,7 +5,7 @@ Module: `Channel`<br />
 
 Creates a `Channel` that emits all elements from an iterable.
 
-**Example**
+**Example** (Creating channels from iterables)
 
 ```ts
 import { Channel } from "effect"
@@ -21,6 +21,6 @@ const channel = Channel.fromIterable(set)
 declare const fromIterable: <A, L>(iterable: Iterable<A, L>) => Channel<A, never, L>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L744)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L806)
 
 Since v2.0.0

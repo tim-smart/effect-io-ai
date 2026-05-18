@@ -5,7 +5,7 @@ Module: `TxPubSub`<br />
 
 Checks if any subscriber queue is at capacity.
 
-**Example**
+**Example** (Checking whether a pub/sub is full)
 
 ```ts
 import { Effect, TxPubSub } from "effect"
@@ -23,6 +23,6 @@ const program = Effect.gen(function*() {
 declare const isFull: <A>(self: TxPubSub<A>) => Effect.Effect<boolean>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxPubSub.ts#L322)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxPubSub.ts#L331)
 
 Since v4.0.0

@@ -5,7 +5,7 @@ Module: `BigDecimal`<br />
 
 Checks if a given `BigDecimal` is greater than or equal to the provided one.
 
-**Example**
+**Example** (Checking greater-than-or-equal comparisons)
 
 ```ts
 import { fromStringUnsafe, isGreaterThanOrEqualTo } from "effect/BigDecimal"
@@ -31,6 +31,6 @@ assert.deepStrictEqual(
 declare const isGreaterThanOrEqualTo: { (that: BigDecimal): (self: BigDecimal) => boolean; (self: BigDecimal, that: BigDecimal): boolean; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigDecimal.ts#L726)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigDecimal.ts#L739)
 
 Since v2.0.0

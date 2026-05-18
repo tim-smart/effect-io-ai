@@ -3,7 +3,7 @@ Module: `Schema`<br />
 
 ## Schema.URL
 
-Companion type for `URL`.
+Type-level representation of the schema for JavaScript `URL` instances.
 
 **Signature**
 
@@ -13,6 +13,6 @@ export interface URL extends instanceOf<globalThis.URL> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L8619)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L8971)
 
 Since v4.0.0

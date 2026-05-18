@@ -5,7 +5,7 @@ Module: `Number`<br />
 
 An `Order` instance for `number` values.
 
-**Example**
+**Example** (Comparing numbers)
 
 ```ts
 import * as Number from "effect/Number"
@@ -21,6 +21,6 @@ console.log(Number.Order(1, 1)) // 0
 declare const Order: order.Order<number>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Number.ts#L206)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Number.ts#L215)
 
 Since v2.0.0

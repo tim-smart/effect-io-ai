@@ -3,7 +3,8 @@ Module: `Schema`<br />
 
 ## Schema.Char
 
-Companion type for `Char`.
+Type-level representation of the `Char` schema, which validates strings whose
+length is exactly one.
 
 **Signature**
 
@@ -13,6 +14,6 @@ export interface Char extends String {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L6978)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L7255)
 
 Since v4.0.0

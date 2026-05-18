@@ -8,7 +8,7 @@ Add a message to the queue synchronously. Returns `false` if the queue is done.
 This is an unsafe operation that directly modifies the queue without Effect wrapping.
 Use this only when you're certain about the synchronous nature of the operation.
 
-**Example**
+**Example** (Offering a value synchronously)
 
 ```ts
 import { Cause, Effect, Queue } from "effect"
@@ -34,6 +34,6 @@ const program = Effect.gen(function*() {
 declare const offerUnsafe: <A, E>(self: Enqueue<A, E>, message: Types.NoInfer<A>) => boolean
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Queue.ts#L567)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Queue.ts#L661)
 
 Since v4.0.0

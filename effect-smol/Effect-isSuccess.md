@@ -8,7 +8,7 @@ Returns whether an effect completes successfully.
 Returns `false` for failures in the error channel, but defects still fail the
 effect.
 
-**Example**
+**Example** (Checking whether an effect succeeds)
 
 ```ts
 import { Console, Effect } from "effect"
@@ -32,6 +32,6 @@ Effect.runPromise(program)
 declare const isSuccess: <A, E, R>(self: Effect<A, E, R>) => Effect<boolean, never, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L5469)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L5342)
 
 Since v2.0.0

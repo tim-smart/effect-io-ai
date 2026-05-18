@@ -5,7 +5,7 @@ Module: `DateTime`<br />
 
 Checks if a `DateTime` is between two other `DateTime` values (inclusive).
 
-**Example**
+**Example** (Checking whether a DateTime is within bounds)
 
 ```ts
 import { DateTime } from "effect"
@@ -23,6 +23,6 @@ console.log(DateTime.between(date, { minimum: min, maximum: max })) // true
 declare const between: { (options: { minimum: DateTime; maximum: DateTime; }): (self: DateTime) => boolean; (self: DateTime, options: { minimum: DateTime; maximum: DateTime; }): boolean; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L1106)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L1316)
 
 Since v3.6.0

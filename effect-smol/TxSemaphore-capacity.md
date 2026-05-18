@@ -5,7 +5,7 @@ Module: `TxSemaphore`<br />
 
 Gets the maximum capacity (total permits) of the semaphore.
 
-**Example**
+**Example** (Checking semaphore capacity)
 
 ```ts
 import { Console, Effect, TxSemaphore } from "effect"
@@ -29,6 +29,6 @@ const program = Effect.gen(function*() {
 declare const capacity: (self: TxSemaphore) => Effect.Effect<number>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxSemaphore.ts#L172)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxSemaphore.ts#L194)
 
 Since v4.0.0

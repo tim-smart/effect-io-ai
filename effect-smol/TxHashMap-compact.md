@@ -8,7 +8,7 @@ Removes all None values from a TxHashMap containing Option values.
 **Return behavior**: This function returns a new TxHashMap reference with only
 the Some values unwrapped. The original TxHashMap is not modified.
 
-**Example**
+**Example** (Compacting optional values)
 
 ```ts
 import { Effect, Option, TxHashMap } from "effect"
@@ -41,7 +41,8 @@ const program = Effect.gen(function*() {
   // Useful for cleaning up optional data processing results
   const userAges = yield* TxHashMap.map(validUsers, (user) => user.age)
   const ageEntries = yield* TxHashMap.entries(userAges)
-  console.log(ageEntries) // [["alice", 30], ["charlie", 25], ["eve", 28]]
+  const sortedAgeEntries = ageEntries.toSorted(([left], [right]) => left.localeCompare(right))
+  console.log(sortedAgeEntries) // [["alice", 30], ["charlie", 25], ["eve", 28]]
 })
 ```
 
@@ -51,6 +52,6 @@ const program = Effect.gen(function*() {
 declare const compact: <K, A>(self: TxHashMap<K, Option.Option<A>>) => Effect.Effect<TxHashMap<K, A>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashMap.ts#L1986)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashMap.ts#L2061)
 
 Since v2.0.0

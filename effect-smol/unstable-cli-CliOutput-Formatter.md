@@ -6,7 +6,7 @@ Module: `CliOutput`<br />
 Service interface for formatting CLI output including help, errors, and version info.
 This allows customization of output formatting, including color support.
 
-**Example**
+**Example** (Customizing CLI output formatting)
 
 ```ts
 import { Effect } from "effect"
@@ -38,7 +38,8 @@ export interface Formatter {
   /**
    * Formats a HelpDoc structure into a readable string format.
    *
-   * @example
+   * **Example** (Formatting help documents)
+   *
    * ```ts
    * import { Option as O } from "effect"
    * import type { HelpDoc } from "effect/unstable/cli"
@@ -80,7 +81,8 @@ export interface Formatter {
   /**
    * Formats a CLI error for display. Default implementation mirrors the error message.
    *
-   * @example
+   * **Example** (Formatting CLI errors)
+   *
    * ```ts
    * import * as Data from "effect/Data"
    * import { CliOutput } from "effect/unstable/cli"
@@ -102,7 +104,8 @@ export interface Formatter {
   /**
    * Formats an error section with proper styling and color reset.
    *
-   * @example
+   * **Example** (Formatting error sections)
+   *
    * ```ts
    * import * as Data from "effect/Data"
    * import { CliOutput } from "effect/unstable/cli"
@@ -130,7 +133,8 @@ export interface Formatter {
   /**
    * Formats version output for display.
    *
-   * @example
+   * **Example** (Formatting version output)
+   *
    * ```ts
    * import { CliOutput } from "effect/unstable/cli"
    *
@@ -154,7 +158,8 @@ export interface Formatter {
   /**
    * Formats multiple CLI errors for display, grouping by error type.
    *
-   * @example
+   * **Example** (Formatting grouped errors)
+   *
    * ```ts
    * import { CliError, CliOutput } from "effect/unstable/cli"
    *
@@ -179,6 +184,6 @@ export interface Formatter {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/CliOutput.ts#L42)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/CliOutput.ts#L64)
 
 Since v4.0.0

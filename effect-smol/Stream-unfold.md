@@ -3,9 +3,13 @@ Module: `Stream`<br />
 
 ## Stream.unfold
 
-Creates a stream by peeling off successive layers of a state value.
+Creates a stream by repeatedly applying an effectful step function to a
+state.
 
-**Example**
+Each `readonly [value, nextState]` result emits `value` and continues with
+`nextState`; returning `undefined` ends the stream.
+
+**Example** (Unfolding stream state)
 
 ```ts
 import { Console, Effect, Stream } from "effect"
@@ -26,6 +30,6 @@ Effect.runPromise(program)
 declare const unfold: <S, A, E, R>(s: S, f: (s: S) => Effect.Effect<readonly [A, S] | undefined, E, R>) => Stream<A, E, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L1580)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L1665)
 
 Since v2.0.0

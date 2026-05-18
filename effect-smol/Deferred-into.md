@@ -3,16 +3,17 @@ Module: `Deferred`<br />
 
 ## Deferred.into
 
-Converts an `Effect` into an operation that completes a `Deferred` with its result.
+Runs an `Effect` and attempts to complete a `Deferred` with the effect's
+result.
 
 **Details**
 
-The `into` function takes an effect and a `Deferred` and ensures that the `Deferred`
-is completed based on the outcome of the effect. If the effect succeeds, the `Deferred` is
-completed with the success value. If the effect fails, the `Deferred` is completed with the
-failure. Additionally, if the effect is interrupted, the `Deferred` will also be interrupted.
+If the effect succeeds, fails, dies, or is interrupted, that result is used
+as the attempted completion. The returned effect cannot fail; it succeeds
+with `true` if it completed the `Deferred`, or `false` if the `Deferred` was
+already completed.
 
-**Example**
+**Example** (Completing a Deferred from an effect result)
 
 ```ts
 import { Deferred, Effect } from "effect"
@@ -46,6 +47,6 @@ Effect.runPromise(program).then(console.log)
 declare const into: { <A, E>(deferred: Deferred<A, E>): <R>(self: Effect<A, E, R>) => Effect<boolean, never, R>; <A, E, R>(self: Effect<A, E, R>, deferred: Deferred<A, E>): Effect<boolean, never, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Deferred.ts#L724)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Deferred.ts#L807)
 
 Since v2.0.0

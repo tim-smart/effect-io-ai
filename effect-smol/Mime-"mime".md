@@ -13,4 +13,4 @@ export * from "mime"
 
 [Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/Mime.ts#L12)
 
-Since v1.0.0
+Since v4.0.0

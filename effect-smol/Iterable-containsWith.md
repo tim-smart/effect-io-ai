@@ -5,7 +5,7 @@ Module: `Iterable`<br />
 
 Returns a function that checks if an `Iterable` contains a given value using a provided `isEquivalent` function.
 
-**Example**
+**Example** (Checking membership with custom equivalence)
 
 ```ts
 import { Iterable } from "effect"
@@ -42,6 +42,6 @@ console.log(hasAlmostTwo) // true
 declare const containsWith: <A>(isEquivalent: (self: A, that: A) => boolean) => { (a: A): (self: Iterable<A>) => boolean; (self: Iterable<A>, a: A): boolean; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Iterable.ts#L978)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Iterable.ts#L1008)
 
 Since v2.0.0

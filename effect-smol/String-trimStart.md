@@ -5,7 +5,7 @@ Module: `String`<br />
 
 Removes whitespace from the start of a string.
 
-**Example**
+**Example** (Trimming leading whitespace)
 
 ```ts
 import { String } from "effect"
@@ -21,6 +21,6 @@ assert.deepStrictEqual(String.trimStart("  hello world"), "hello world")
 declare const trimStart: <A extends string>(self: A) => TrimStart<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L291)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L309)
 
 Since v2.0.0

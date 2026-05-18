@@ -5,7 +5,7 @@ Module: `Stream`<br />
 
 Zips each element with its previous and next values.
 
-**Example**
+**Example** (Zipping elements with neighbors)
 
 ```ts
 import { Console, Effect, Option, Stream } from "effect"
@@ -28,6 +28,6 @@ Effect.runPromise(program)
 declare const zipWithPreviousAndNext: <A, E, R>(self: Stream<A, E, R>) => Stream<[Option.Option<A>, A, Option.Option<A>], E, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L3786)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L3936)
 
 Since v2.0.0

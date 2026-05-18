@@ -3,12 +3,16 @@ Module: `Graph`<br />
 
 ## Graph.dijkstra
 
-Find the shortest path between two nodes using Dijkstra's algorithm.
+Finds the shortest path from the configured source node to the target node
+using Dijkstra's algorithm.
 
-Dijkstra's algorithm works with non-negative edge weights and finds the shortest
-path from a source node to a target node in O((V + E) log V) time complexity.
+**Details**
 
-**Example**
+Edge costs must be non-negative. Returns `Option.none()` when the target is
+not reachable, and throws a `GraphError` when either endpoint is missing or a
+negative edge cost is encountered.
+
+**Example** (Finding shortest paths with Dijkstra)
 
 ```ts
 import { Graph } from "effect"
@@ -40,6 +44,6 @@ if (result._tag === "Some") {
 declare const dijkstra: { <E>(config: DijkstraConfig<E>): <N, T extends Kind = "directed">(graph: Graph<N, E, T> | MutableGraph<N, E, T>) => Option.Option<PathResult<E>>; <N, E, T extends Kind = "directed">(graph: Graph<N, E, T> | MutableGraph<N, E, T>, config: DijkstraConfig<E>): Option.Option<PathResult<E>>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Graph.ts#L2738)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Graph.ts#L2874)
 
 Since v4.0.0

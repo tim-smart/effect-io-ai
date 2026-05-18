@@ -5,7 +5,7 @@ Module: `Duration`<br />
 
 Converts a Duration to days.
 
-**Example**
+**Example** (Converting durations to days)
 
 ```ts
 import { Duration } from "effect"
@@ -20,6 +20,6 @@ console.log(Duration.toDays(Duration.weeks(1))) // 7
 declare const toDays: (self: Input) => number
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Duration.ts#L769)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Duration.ts#L797)
 
 Since v3.8.0

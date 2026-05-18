@@ -7,7 +7,7 @@ Error indicating the AI provider experienced an internal error.
 
 Internal provider errors are typically transient and are retryable.
 
-**Example**
+**Example** (Creating an internal provider error)
 
 ```ts
 import { AiError } from "effect/unstable/ai"
@@ -27,6 +27,6 @@ console.log(providerError.message)
 declare class InternalProviderError
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AiError.ts#L652)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AiError.ts#L679)
 
-Since v1.0.0
+Since v4.0.0

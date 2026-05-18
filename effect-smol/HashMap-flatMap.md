@@ -7,7 +7,7 @@ Chains over the entries of the `HashMap` using the specified function.
 
 **NOTE**: the hash and equal of both maps have to be the same.
 
-**Example**
+**Example** (FlatMapping values)
 
 ```ts
 import * as HashMap from "effect/HashMap"
@@ -29,6 +29,6 @@ console.log(HashMap.get(map2, "b2")) // Option.some(4)
 declare const flatMap: { <A, K, B>(f: (value: A, key: K) => HashMap<K, B>): (self: HashMap<K, A>) => HashMap<K, B>; <K, A, B>(self: HashMap<K, A>, f: (value: A, key: K) => HashMap<K, B>): HashMap<K, B>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashMap.ts#L975)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashMap.ts#L1091)
 
 Since v2.0.0

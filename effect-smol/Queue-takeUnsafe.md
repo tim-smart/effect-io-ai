@@ -3,16 +3,15 @@ Module: `Queue`<br />
 
 ## Queue.takeUnsafe
 
-Take a single message from the queue synchronously, or wait for a message to be
-available.
+Attempts to take one message from the queue synchronously.
 
-If the queue is done, it will fail with `Done`. If the
-queue fails, the Effect will fail with the error.
-Returns `undefined` if no message is immediately available.
+**Details**
 
-This is an unsafe operation that directly accesses the queue without Effect wrapping.
+Returns an `Exit` for an immediately available message or for the queue's
+terminal state. Returns `undefined` when no message is immediately available.
+This operation does not wait or register a taker.
 
-**Example**
+**Example** (Taking one value synchronously)
 
 ```ts
 import { Effect, Queue } from "effect"
@@ -44,6 +43,6 @@ const program = Effect.gen(function*() {
 declare const takeUnsafe: <A, E>(self: Dequeue<A, E>) => Exit<A, E> | undefined
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Queue.ts#L1313)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Queue.ts#L1438)
 
 Since v4.0.0

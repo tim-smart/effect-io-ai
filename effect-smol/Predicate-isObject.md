@@ -3,14 +3,11 @@ Module: `Predicate`<br />
 
 ## Predicate.isObject
 
-Checks whether a value is a plain object (not an array, not `null`).
+Checks whether a value is a non-null object value that is not an array.
 
-When to use:
-- You need to accept objects but exclude arrays.
-
-Behavior:
-- Pure; does not mutate input.
-- Uses `typeof input === "object" && input !== null && !Array.isArray(input)`.
+This is a structural runtime check using `typeof input === "object"`, so it
+also accepts object instances such as `Date`, `Map`, class instances, and
+typed arrays. It excludes `null` and arrays.
 
 **Example** (Guard object)
 
@@ -29,6 +26,6 @@ See also: `isObjectOrArray`, `isReadonlyObject`
 declare const isObject: (input: unknown) => input is { [x: PropertyKey]: unknown; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L1021)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L1018)
 
 Since v4.0.0

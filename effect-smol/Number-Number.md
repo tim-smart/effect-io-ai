@@ -5,7 +5,7 @@ Module: `Number`<br />
 
 The global `Number` constructor.
 
-**Example**
+**Example** (Coercing values to numbers)
 
 ```ts
 import * as N from "effect/Number"
@@ -23,6 +23,6 @@ console.log(float) // 3.14
 declare const Number: NumberConstructor
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Number.ts#L32)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Number.ts#L33)
 
 Since v4.0.0

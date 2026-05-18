@@ -5,7 +5,7 @@ Module: `Argument`<br />
 
 Creates a positional choice argument with custom value mapping.
 
-**Example**
+**Example** (Mapping choices to values)
 
 ```ts
 import { Argument } from "effect/unstable/cli"
@@ -24,6 +24,6 @@ const logLevel = Argument.choiceWithValue("level", [
 declare const choiceWithValue: <const Choices extends ReadonlyArray<readonly [string, any]>>(name: string, choices: Choices) => Argument<Choices[number][1]>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Argument.ts#L572)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Argument.ts#L625)
 
 Since v4.0.0

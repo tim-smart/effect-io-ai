@@ -3,7 +3,10 @@ Module: `OpenApi`<br />
 
 ## OpenApi.Transform
 
-Transforms the generated OpenAPI specification
+OpenAPI annotation for transforming a generated OpenAPI object.
+
+The function is applied during generation to the annotated API, group tag, or
+endpoint operation.
 
 **Signature**
 
@@ -11,6 +14,6 @@ Transforms the generated OpenAPI specification
 declare class Transform
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/OpenApi.ts#L107)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/OpenApi.ts#L163)
 
 Since v4.0.0

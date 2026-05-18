@@ -3,8 +3,10 @@ Module: `Rpc`<br />
 
 ## Rpc.Rpc
 
-Represents an API endpoint. An API endpoint is mapped to a single route on
-the underlying `HttpRouter`.
+Represents a typed RPC definition.
+
+An RPC is identified by a tag and carries payload, success, error, defect,
+middleware, and annotation metadata used by RPC clients and servers.
 
 **Signature**
 
@@ -109,6 +111,6 @@ export interface Rpc<
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Rpc.ts#L51)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Rpc.ts#L90)
 
 Since v4.0.0

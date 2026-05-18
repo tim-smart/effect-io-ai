@@ -5,7 +5,7 @@ Module: `Chunk`<br />
 
 Creates an empty `Chunk`.
 
-**Example**
+**Example** (Creating an empty chunk)
 
 ```ts
 import { Chunk } from "effect"
@@ -20,6 +20,6 @@ console.log(Chunk.size(emptyChunk)) // 0
 declare const empty: <A = never>() => Chunk<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L355)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L364)
 
 Since v2.0.0

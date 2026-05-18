@@ -5,7 +5,7 @@ Module: `Prompt`<br />
 
 Creates a new content part of the specified type.
 
-**Example**
+**Example** (Creating content parts)
 
 ```ts
 import { Prompt } from "effect/unstable/ai"
@@ -27,6 +27,6 @@ const filePart = Prompt.makePart("file", {
 declare const makePart: <const Type extends Part["type"]>(type: Type, params: Omit<Extract<Part, { type: Type; }>, typeof PartTypeId | "type" | "options"> & { readonly options?: Extract<Part, { type: Type; }>["options"] | undefined; }) => Extract<Part, { type: Type; }>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L210)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L216)
 
 Since v4.0.0

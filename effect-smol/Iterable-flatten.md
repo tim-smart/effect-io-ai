@@ -5,7 +5,7 @@ Module: `Iterable`<br />
 
 Flattens an Iterable of Iterables into a single Iterable
 
-**Example**
+**Example** (Flattening nested iterables)
 
 ```ts
 import { Iterable } from "effect"
@@ -38,6 +38,6 @@ console.log(Array.from(flatWithEmpty)) // [1, 2, 3, 4]
 declare const flatten: <A>(self: Iterable<Iterable<A>>) => Iterable<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Iterable.ts#L1484)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Iterable.ts#L1531)
 
 Since v2.0.0

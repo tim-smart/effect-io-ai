@@ -3,7 +3,7 @@ Module: `Schema`<br />
 
 ## Schema.Error
 
-Companion type for `Error`.
+Type-level representation of the schema for JavaScript `Error` instances.
 
 **Signature**
 
@@ -13,6 +13,6 @@ export interface Error extends instanceOf<globalThis.Error> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L7808)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L8123)
 
 Since v4.0.0

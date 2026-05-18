@@ -6,7 +6,7 @@ Module: `Fiber`<br />
 Waits for all fibers in the provided iterable to complete and returns
 an array of their exit values.
 
-**Example**
+**Example** (Awaiting multiple fiber exits)
 
 ```ts
 import { Effect, Fiber } from "effect"
@@ -25,6 +25,6 @@ const program = Effect.gen(function*() {
 declare const awaitAll: <A extends Fiber<any, any>>(self: Iterable<A>) => Effect<Array<Exit<A extends Fiber<infer _A, infer _E> ? _A : never, A extends Fiber<infer _A, infer _E> ? _E : never>>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Fiber.ts#L231)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Fiber.ts#L237)
 
 Since v2.0.0

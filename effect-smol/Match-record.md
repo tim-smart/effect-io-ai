@@ -3,13 +3,14 @@ Module: `Match`<br />
 
 ## Match.record
 
-Matches objects where keys are `string` or `symbol` and values are `unknown`.
+Matches non-null objects other than arrays.
 
-This predicate refines unknown values to record objects, allowing pattern
-matching on plain objects. It excludes arrays, functions, dates, and other
-special object types, matching only plain objects and object literals.
+This predicate uses `Predicate.isObject`: it returns `true` for values whose
+runtime type is `"object"`, are not `null`, and are not arrays. It can match
+`Date`, `RegExp`, and class instances; use `instanceOf` or a more specific
+pattern when those cases need to be distinguished.
 
-**Example**
+**Example** (Matching record objects)
 
 ```ts
 import { Match } from "effect"
@@ -24,18 +25,13 @@ const analyzeValue = Match.type<unknown>().pipe(
     Match.instanceOf(Array),
     (arr) => `Array with ${arr.length} items`
   ),
-  Match.when(Match.date, () => "Date object"),
   Match.orElse(() => "Not an object")
 )
 
-console.log(analyzeValue({ name: "Alice", age: 30 }))
-// "Object with 2 properties: [name, age]"
-console.log(analyzeValue([1, 2, 3]))
-// "Array with 3 items"
-console.log(analyzeValue(new Date()))
-// "Date object"
-console.log(analyzeValue("hello"))
-// "Not an object"
+console.log(analyzeValue({ name: "Alice", age: 30 })) // "Object with 2 properties: [name, age]"
+console.log(analyzeValue([1, 2, 3])) // "Array with 3 items"
+console.log(analyzeValue(null)) // "Not an object"
+console.log(analyzeValue("hello")) // "Not an object"
 ```
 
 **Signature**
@@ -44,6 +40,6 @@ console.log(analyzeValue("hello"))
 declare const record: Predicate.Refinement<unknown, { [x: string]: unknown; [x: number]: unknown; [x: symbol]: unknown; }>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L1535)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L1528)
 
 Since v4.0.0

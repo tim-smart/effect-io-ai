@@ -5,7 +5,7 @@ Module: `Argument`<br />
 
 Creates a positional file path argument.
 
-**Example**
+**Example** (Creating file path arguments)
 
 ```ts
 import { Argument } from "effect/unstable/cli"
@@ -20,6 +20,6 @@ const outputFile = Argument.file("output", { mustExist: false }) // Must not exi
 declare const file: (name: string, options?: { readonly mustExist?: boolean | undefined; }) => Argument<string>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Argument.ts#L80)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Argument.ts#L105)
 
 Since v4.0.0

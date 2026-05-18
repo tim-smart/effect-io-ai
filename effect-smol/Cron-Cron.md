@@ -9,7 +9,7 @@ A Cron instance defines when a scheduled task should run, supporting
 seconds, minutes, hours, days, months, and weekdays constraints.
 It also supports timezone-aware scheduling.
 
-**Example**
+**Example** (Creating a cron schedule)
 
 ```ts
 import { Cron } from "effect"
@@ -111,6 +111,6 @@ export interface Cron extends Pipeable, Equal.Equal, Inspectable {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cron.ts#L84)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cron.ts#L127)
 
 Since v2.0.0

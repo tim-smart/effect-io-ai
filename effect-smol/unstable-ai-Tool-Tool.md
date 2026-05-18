@@ -9,7 +9,7 @@ Tools represent actionable capabilities that large language models can invoke
 to extend their functionality beyond text generation. Each tool has a defined
 schema for parameters, results, and failures.
 
-**Example**
+**Example** (Defining a weather lookup tool)
 
 ```ts
 import { Schema } from "effect"
@@ -181,6 +181,6 @@ export interface Tool<
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tool.ts#L175)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tool.ts#L199)
 
-Since v1.0.0
+Since v4.0.0

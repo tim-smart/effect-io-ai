@@ -13,6 +13,6 @@ Values are stored between sessions.
 declare const layerLocalStorage: Layer.Layer<KeyValueStore.KeyValueStore, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/BrowserKeyValueStore.ts#L15)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/BrowserKeyValueStore.ts#L33)
 
-Since v1.0.0
+Since v4.0.0

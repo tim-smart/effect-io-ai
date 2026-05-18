@@ -3,11 +3,17 @@ Module: `RcMap`<br />
 
 ## RcMap.get
 
-Retrieves a value from the RcMap by key. If the resource doesn't exist, it will be
-acquired using the lookup function. The resource is reference counted and will be
-released when the scope closes.
+Gets the resource for a key, acquiring it with the map's lookup function when
+the key is not already cached.
 
-**Example**
+**Details**
+
+The resource's reference count is incremented for the current `Scope`, and a
+release finalizer is added to that scope. When the current scope closes, the
+reference is released; the resource is closed when the last reference is
+released, subject to the map's idle time-to-live setting.
+
+**Example** (Acquiring a resource)
 
 ```ts
 import { Effect, RcMap } from "effect"
@@ -33,6 +39,6 @@ Effect.gen(function*() {
 declare const get: { <K>(key: K): <A, E>(self: RcMap<K, A, E>) => Effect.Effect<A, E, Scope.Scope>; <K, A, E>(self: RcMap<K, A, E>, key: K): Effect.Effect<A, E, Scope.Scope>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RcMap.ts#L331)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RcMap.ts#L279)
 
 Since v3.5.0

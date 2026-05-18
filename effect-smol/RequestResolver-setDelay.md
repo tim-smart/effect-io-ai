@@ -5,7 +5,7 @@ Module: `RequestResolver`<br />
 
 Sets the batch delay window for this request resolver to the specified duration.
 
-**Example**
+**Example** (Setting a batch delay)
 
 ```ts
 import { Effect, Exit, Request, RequestResolver } from "effect"
@@ -36,6 +36,6 @@ const delayedResolver2 = RequestResolver.setDelay(resolver, 100)
 declare const setDelay: { (duration: Duration.Input): <A extends Request.Any>(self: RequestResolver<A>) => RequestResolver<A>; <A extends Request.Any>(self: RequestResolver<A>, duration: Duration.Input): RequestResolver<A>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RequestResolver.ts#L558)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RequestResolver.ts#L615)
 
 Since v4.0.0

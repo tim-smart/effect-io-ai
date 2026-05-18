@@ -5,7 +5,7 @@ Module: `Effect`<br />
 
 Enables or disables tracer timing for the given Effect.
 
-**Example**
+**Example** (Usage)
 
 ```ts
 import { Effect } from "effect"
@@ -23,6 +23,6 @@ Effect.succeed(42).pipe(
 declare const withTracerTiming: { (enabled: boolean): <A, E, R>(effect: Effect<A, E, R>) => Effect<A, E, R>; <A, E, R>(effect: Effect<A, E, R>, enabled: boolean): Effect<A, E, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L7508)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L7401)
 
 Since v2.0.0

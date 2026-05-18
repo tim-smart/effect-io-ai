@@ -3,7 +3,13 @@ Module: `Graph`<br />
 
 ## Graph.ExternalsConfig
 
-Configuration for externals iterator.
+Configuration for selecting external nodes.
+
+**Details**
+
+`direction` chooses which missing edge direction makes a node external:
+`"outgoing"` selects nodes with no outgoing edges, and `"incoming"` selects
+nodes with no incoming edges.
 
 **Signature**
 
@@ -13,6 +19,6 @@ export interface ExternalsConfig {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Graph.ts#L4167)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Graph.ts#L4371)
 
 Since v4.0.0

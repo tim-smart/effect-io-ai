@@ -5,7 +5,7 @@ Module: `Effect`<br />
 
 Adds an annotation to the current span if available.
 
-**Example**
+**Example** (Usage)
 
 ```ts
 import { Effect } from "effect"
@@ -29,6 +29,6 @@ const traced = Effect.withSpan(program, "user-operation")
 declare const annotateCurrentSpan: { (key: string, value: unknown): Effect<void>; (values: Record<string, unknown>): Effect<void>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L7581)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L7476)
 
 Since v2.0.0

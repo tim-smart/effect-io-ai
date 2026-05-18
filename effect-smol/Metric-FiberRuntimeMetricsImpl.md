@@ -5,7 +5,7 @@ Module: `Metric`<br />
 
 Default implementation of the fiber runtime metrics service.
 
-**Example**
+**Example** (Using the default fiber metrics implementation)
 
 ```ts
 import { Data, Effect, Layer, Metric } from "effect"
@@ -50,6 +50,6 @@ const program = Effect.gen(function*() {
 declare const FiberRuntimeMetricsImpl: FiberRuntimeMetricsService
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Metric.ts#L3653)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Metric.ts#L3676)
 
 Since v4.0.0

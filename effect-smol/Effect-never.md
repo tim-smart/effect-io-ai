@@ -6,7 +6,7 @@ Module: `Effect`<br />
 Returns an effect that will never produce anything. The moral equivalent of
 `while(true) {}`, only without the wasted CPU cycles.
 
-**Example**
+**Example** (Usage)
 
 ```ts
 import { Effect } from "effect"
@@ -27,6 +27,6 @@ const timedProgram = Effect.timeout(program, "1 second")
 declare const never: Effect<never, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L1371)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L1230)
 
 Since v2.0.0

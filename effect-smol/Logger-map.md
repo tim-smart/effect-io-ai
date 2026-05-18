@@ -8,7 +8,7 @@ Transforms the output of a `Logger` using the provided function.
 This allows you to modify, enhance, or completely change the output format
 of an existing logger without recreating the entire logging logic.
 
-**Example**
+**Example** (Transforming logger output)
 
 ```ts
 import { Logger } from "effect"
@@ -39,6 +39,6 @@ const uppercaseLogger = Logger.map(
 declare const map: (<Output, Output2>(f: (output: Output) => Output2) => <Message>(self: Logger<Message, Output>) => Logger<Message, Output2>) & (<Message, Output, Output2>(self: Logger<Message, Output>, f: (output: Output) => Output2) => Logger<Message, Output2>)
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Logger.ts#L270)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Logger.ts#L282)
 
 Since v2.0.0

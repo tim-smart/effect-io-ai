@@ -3,12 +3,14 @@ Module: `Queue`<br />
 
 ## Queue.sizeUnsafe
 
-Check the size of the queue synchronously.
+Returns the current number of buffered messages in the queue synchronously.
 
-If the queue is complete, it will return `None`.
-This is an unsafe operation that directly accesses the queue without Effect wrapping.
+**Details**
 
-**Example**
+Completed queues report a size of `0`. This unsafe operation reads the queue
+state directly without Effect wrapping.
+
+**Example** (Checking queue size synchronously)
 
 ```ts
 import { Cause, Effect, Option, Queue } from "effect"
@@ -44,6 +46,6 @@ const program = Effect.gen(function*() {
 declare const sizeUnsafe: <A, E>(self: Dequeue<A, E>) => number
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Queue.ts#L1457)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Queue.ts#L1589)
 
 Since v4.0.0

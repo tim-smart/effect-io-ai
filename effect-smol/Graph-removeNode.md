@@ -5,7 +5,7 @@ Module: `Graph`<br />
 
 Removes a node and all its incident edges from a mutable graph.
 
-**Example**
+**Example** (Removing a node)
 
 ```ts
 import { Graph } from "effect"
@@ -26,6 +26,6 @@ const result = Graph.mutate(Graph.directed<string, number>(), (mutable) => {
 declare const removeNode: <N, E, T extends Kind = "directed">(mutable: MutableGraph<N, E, T>, nodeIndex: NodeIndex) => void
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Graph.ts#L1255)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Graph.ts#L1350)
 
 Since v4.0.0

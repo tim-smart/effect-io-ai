@@ -9,7 +9,7 @@ A `Not` case contains the logic to test if a value does NOT match a specific
 pattern and the function to evaluate when the pattern doesn't match. It's used
 for exclusion-based pattern matching.
 
-**Example**
+**Example** (Creating negative match cases)
 
 ```ts
 import { Match } from "effect"
@@ -35,6 +35,6 @@ export interface Not {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L244)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L227)
 
 Since v4.0.0

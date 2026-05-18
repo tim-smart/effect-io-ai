@@ -8,7 +8,7 @@ Represents an effectful filter function that can produce Effects.
 Similar to a regular Filter, but the filtering operation itself can be effectful,
 allowing for asynchronous operations, error handling, and dependency injection.
 
-**Example**
+**Example** (Defining an effectful user filter)
 
 ```ts
 import { Effect, Filter, Result } from "effect"
@@ -44,6 +44,6 @@ export interface FilterEffect<
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Filter.ts#L66)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Filter.ts#L102)
 
 Since v4.0.0

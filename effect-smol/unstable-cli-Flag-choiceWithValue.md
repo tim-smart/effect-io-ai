@@ -6,7 +6,7 @@ Module: `Flag`<br />
 Constructs option parameters that represent a choice between several inputs.
 Each tuple maps a string flag value to an associated typed value.
 
-**Example**
+**Example** (Creating flag choices with values)
 
 ```ts
 import { Flag } from "effect/unstable/cli"
@@ -28,6 +28,6 @@ const logLevel = Flag.choiceWithValue("log-level", [
 declare const choiceWithValue: <const Choice extends ReadonlyArray<readonly [string, any]>>(name: string, choices: Choice) => Flag<Choice[number][1]>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Flag.ts#L133)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Flag.ts#L158)
 
 Since v4.0.0

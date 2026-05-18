@@ -5,7 +5,7 @@ Module: `TxHashSet`<br />
 
 Creates a TxHashSet from an iterable collection of values.
 
-**Example**
+**Example** (Creating a transactional hash set from an iterable)
 
 ```ts
 import { Effect, TxHashSet } from "effect"
@@ -19,7 +19,7 @@ const program = Effect.gen(function*() {
 
   const fromString = yield* TxHashSet.fromIterable("hello")
   const values = yield* TxHashSet.toHashSet(fromString)
-  console.log(Array.from(values)) // ["h", "e", "l", "o"]
+  console.log(Array.from(values).sort()) // ["e", "h", "l", "o"]
 })
 ```
 
@@ -29,6 +29,6 @@ const program = Effect.gen(function*() {
 declare const fromIterable: <V>(values: Iterable<V>) => Effect.Effect<TxHashSet<V>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashSet.ts#L228)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashSet.ts#L258)
 
 Since v2.0.0

@@ -8,7 +8,7 @@ Error indicating a provider-defined tool was configured with invalid arguments.
 This error is not retryable because it indicates a programming error in the
 tool configuration that must be fixed in code.
 
-**Example**
+**Example** (Creating a tool configuration error)
 
 ```ts
 import { AiError } from "effect/unstable/ai"
@@ -29,6 +29,6 @@ console.log(error.message)
 declare class ToolConfigurationError
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AiError.ts#L1150)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AiError.ts#L1206)
 
-Since v1.0.0
+Since v4.0.0

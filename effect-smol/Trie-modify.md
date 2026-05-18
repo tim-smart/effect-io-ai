@@ -5,7 +5,7 @@ Module: `Trie`<br />
 
 Updates the value of the specified key within the `Trie` if it exists.
 
-**Example**
+**Example** (Modifying an existing value)
 
 ```ts
 import * as Equal from "effect/Equal"
@@ -33,6 +33,6 @@ assert.equal(Equal.equals(trie.pipe(Trie.modify("me", (v) => v)), trie), true)
 declare const modify: { <V>(key: string, f: (v: V) => V): (self: Trie<V>) => Trie<V>; <V>(self: Trie<V>, key: string, f: (v: V) => V): Trie<V>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Trie.ts#L854)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Trie.ts#L885)
 
 Since v2.0.0

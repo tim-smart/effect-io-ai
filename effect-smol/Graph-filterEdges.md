@@ -6,7 +6,7 @@ Module: `Graph`<br />
 Filters edges by removing those that don't match the predicate.
 This function modifies the mutable graph in place.
 
-**Example**
+**Example** (Filtering edges)
 
 ```ts
 import { Graph } from "effect"
@@ -33,6 +33,6 @@ console.log(Graph.edgeCount(graph)) // 2 (edge with weight 5 removed)
 declare const filterEdges: <N, E, T extends Kind = "directed">(mutable: MutableGraph<N, E, T>, predicate: (data: E) => boolean) => void
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Graph.ts#L1116)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Graph.ts#L1209)
 
 Since v4.0.0

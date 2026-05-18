@@ -5,7 +5,7 @@ Module: `Iterable`<br />
 
 Get the first element of a `Iterable`, or `None` if the `Iterable` is empty.
 
-**Example**
+**Example** (Getting the first element)
 
 ```ts
 import { Iterable } from "effect"
@@ -34,6 +34,6 @@ console.log(doubled) // Option.some(10)
 declare const head: <A>(self: Iterable<A>) => Option<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Iterable.ts#L448)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Iterable.ts#L473)
 
 Since v2.0.0

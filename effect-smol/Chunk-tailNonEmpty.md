@@ -5,7 +5,7 @@ Module: `Chunk`<br />
 
 Returns every elements after the first.
 
-**Example**
+**Example** (Getting the tail of a non-empty chunk)
 
 ```ts
 import { Chunk } from "effect"
@@ -28,6 +28,6 @@ console.log(Chunk.toArray(resultSingle)) // []
 declare const tailNonEmpty: <A>(self: NonEmptyChunk<A>) => Chunk<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L2062)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L2110)
 
 Since v2.0.0

@@ -15,7 +15,7 @@ Subtracts one Duration from another. The result can be negative.
 - finite - infinity = negativeInfinity
 - finite - negativeInfinity = infinity
 
-**Example**
+**Example** (Subtracting durations)
 
 ```ts
 import { Duration } from "effect"
@@ -30,6 +30,6 @@ console.log(Duration.toSeconds(result)) // 7
 declare const subtract: { (that: Duration): (self: Duration) => Duration; (self: Duration, that: Duration): Duration; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Duration.ts#L1293)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Duration.ts#L1352)
 
 Since v2.0.0

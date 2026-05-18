@@ -8,7 +8,7 @@ A type that represents an object that can be hashed.
 Objects implementing this interface provide a method to compute their hash value,
 which is used for efficient comparison and storage operations.
 
-**Example**
+**Example** (Implementing Hash)
 
 ```ts
 import { Hash } from "effect"
@@ -33,6 +33,6 @@ export interface Hash {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Hash.ts#L46)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Hash.ts#L47)
 
 Since v2.0.0

@@ -3,52 +3,25 @@ Module: `Effect`<br />
 
 ## Effect.all
 
-Combines multiple effects into one, returning results based on the input
-structure.
+Combines an iterable or record of effects into one effect whose success shape
+follows the input.
 
 **Details**
 
-Use this function when you need to run multiple effects and combine their
-results into a single output. It supports tuples, iterables, structs, and
-records, making it flexible for different input types.
+Tuple and iterable inputs collect results in order. Record inputs collect
+results under the same keys. By default, the combined effect fails on the
+first failure; with concurrent execution, effects that have already started
+may be interrupted, while effects not yet started are skipped.
 
-For instance, if the input is a tuple:
+**Options**
 
-```ts
-//         ┌─── a tuple of effects
-//         ▼
-Effect.all([effect1, effect2, ...])
-```
+Use `concurrency` to control sequential or concurrent execution. Use
+`mode: "result"` to run every effect and collect each success or failure as a
+`Result` in the same output shape. Use `discard: true` to ignore successful
+values and return `void`.
 
-the effects are executed sequentially, and the result is a new effect
-containing the results as a tuple. The results in the tuple match the order
-of the effects passed to `Effect.all`.
+**Example** (Combining Effects in Tuples)
 
-**Concurrency**
-
-You can control the execution order (e.g., sequential vs. concurrent) using
-the `concurrency` option.
-
-**Short-Circuiting Behavior**
-
-This function stops execution on the first error it encounters, this is
-called "short-circuiting". If any effect in the collection fails, the
-remaining effects will not run, and the error will be propagated. To change
-this behavior, you can use the `mode` option, which allows all effects to run
-and collect every success / failure as `Result` values.
-
-**The `mode` option**
-
-The `{ mode: "result" }` option changes the behavior of `Effect.all` to
-ensure all effects run, even if some fail. Instead of stopping on the first
-failure, this mode collects both successes and failures, returning an array
-of `Result` instances where each result is either an `Ok` (success) or a
-`Err` (failure).
-
-**Example**
-
-```ts
-Combining Effects in Tuples
 ```ts
 import { Console, Effect } from "effect"
 
@@ -67,12 +40,9 @@ Effect.runPromise(resultsAsTuple).then(console.log)
 // Hello
 // [ 42, 'Hello' ]
 ```
-```
 
-**Example**
+**Example** (Combining Effects in Iterables)
 
-```ts
-Combining Effects in Iterables
 ```ts
 import { Console, Effect } from "effect"
 
@@ -91,12 +61,9 @@ Effect.runPromise(resultsAsArray).then(console.log)
 // 3
 // [ 1, 2, 3 ]
 ```
-```
 
-**Example**
+**Example** (Combining Effects in Structs)
 
-```ts
-Combining Effects in Structs
 ```ts
 import { Console, Effect } from "effect"
 
@@ -115,12 +82,9 @@ Effect.runPromise(resultsAsStruct).then(console.log)
 // Hello
 // { a: 42, b: 'Hello' }
 ```
-```
 
-**Example**
+**Example** (Combining Effects in Records)
 
-```ts
-Combining Effects in Records
 ```ts
 import { Console, Effect } from "effect"
 
@@ -139,12 +103,9 @@ Effect.runPromise(resultsAsRecord).then(console.log)
 // 2
 // { key1: 1, key2: 2 }
 ```
-```
 
-**Example**
+**Example** (Short-Circuiting Behavior)
 
-```ts
-Short-Circuiting Behavior
 ```ts
 import { Console, Effect } from "effect"
 
@@ -164,7 +125,6 @@ Effect.runPromiseExit(program).then(console.log)
 //   cause: { _id: 'Cause', _tag: 'Fail', failure: 'Task2: Oh no!' }
 // }
 ```
-```
 
 **See**
 
@@ -176,6 +136,6 @@ Effect.runPromiseExit(program).then(console.log)
 declare const all: <const Arg extends Iterable<Effect<any, any, any>> | Record<string, Effect<any, any, any>>, O extends { readonly concurrency?: Concurrency | undefined; readonly discard?: boolean | undefined; readonly mode?: "default" | "result" | undefined; }>(arg: Arg, options?: O) => All.Return<Arg, O>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L678)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L529)
 
 Since v2.0.0

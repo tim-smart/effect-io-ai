@@ -8,7 +8,7 @@ Creates a new Ref with the specified initial value (unsafe version).
 This function creates a Ref synchronously without wrapping in Effect.
 Use this only when you're sure about the safety of immediate creation.
 
-**Example**
+**Example** (Creating a ref unsafely)
 
 ```ts
 import { Ref } from "effect"
@@ -30,6 +30,6 @@ console.log(value) // 0
 declare const makeUnsafe: <A>(value: A) => Ref<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Ref.ts#L148)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Ref.ts#L152)
 
 Since v4.0.0

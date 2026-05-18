@@ -6,7 +6,7 @@ Module: `TestClock`<br />
 Sets the current clock time to the specified `timestamp`. Any effects that
 were scheduled to occur on or before the new time will be run in order.
 
-**Example**
+**Example** (Setting the test clock time)
 
 ```ts
 import { Duration, Effect } from "effect"
@@ -36,6 +36,6 @@ const program = Effect.gen(function*() {
 declare const setTime: (timestamp: number) => Effect.Effect<void>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TestClock.ts#L467)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TestClock.ts#L495)
 
 Since v2.0.0

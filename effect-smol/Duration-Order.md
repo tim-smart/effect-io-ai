@@ -7,7 +7,7 @@ Order instance for `Duration`, allowing comparison operations.
 
 `NegativeInfinity` < any finite value < `Infinity`.
 
-**Example**
+**Example** (Sorting durations)
 
 ```ts
 import { Duration } from "effect"
@@ -27,6 +27,6 @@ console.log(sorted.map(Duration.toSeconds)) // [1, 2, 3]
 declare const Order: order.Order<Duration>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Duration.ts#L1036)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Duration.ts#L1070)
 
 Since v2.0.0

@@ -29,7 +29,7 @@ See also:
 **Signature**
 
 ```ts
-declare const withDefault: <T>(defaultValue: Effect.Effect<T>) => Getter<T, T | undefined>
+declare const withDefault: <T, R = never>(defaultValue: Effect.Effect<T, Issue.Issue, R>) => Getter<T, T | undefined, R>
 ```
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L692)

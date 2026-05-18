@@ -3,26 +3,22 @@ Module: `RequestResolver`<br />
 
 ## RequestResolver.RequestResolver
 
-The `RequestResolver<A, R>` interface requires an environment `R` and handles
-the execution of requests of type `A`.
+A resolver that executes and completes batched `Request` entries.
 
-Implementations must provide a `runAll` method, which processes a collection
-of requests and produces an effect that fulfills these requests. Requests are
-organized into a `Array<Array<A>>`, where the outer `Array` groups requests
-into batches that are executed sequentially, and each inner `Array` contains
-requests that can be executed in parallel. This structure allows
-implementations to analyze all incoming requests collectively and optimize
-query execution accordingly.
+**Details**
 
-Implementations are typically specialized for a subtype of `Request<A, E>`.
-However, they are not strictly limited to these subtypes as long as they can
-map any given request type to `Request<A, E>`. Implementations should inspect
-the collection of requests to identify the needed information and execute the
-corresponding queries. It is imperative that implementations resolve all the
-requests they receive. Failing to do so will lead to a `QueryFailure` error
-during query execution.
+A resolver controls how requests are grouped, delayed, optionally
+pre-checked, and finally run. Its `runAll` method receives a non-empty batch
+of `Request.Entry` values for a single batch key and must complete every
+received entry, usually by calling `completeUnsafe` or one of the `Request`
+completion helpers.
 
-**Example**
+**Notes**
+
+If a resolver finishes without completing an entry, the waiting request fails
+because the resolver did not supply a result.
+
+**Example** (Defining a request resolver)
 
 ```ts
 import type { Request } from "effect"
@@ -74,6 +70,6 @@ export interface RequestResolver<in A extends Request.Any> extends RequestResolv
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RequestResolver.ts#L72)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RequestResolver.ts#L112)
 
 Since v2.0.0

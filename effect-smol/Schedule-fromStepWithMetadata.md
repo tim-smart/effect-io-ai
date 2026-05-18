@@ -5,23 +5,21 @@ Module: `Schedule`<br />
 
 Creates a Schedule from a step function that receives metadata about the schedule's execution.
 
-**Example**
+**Example** (Creating a metadata-aware schedule)
 
 ```ts
-import { Effect, Schedule } from "effect"
+import { Cause, Duration, Effect, Schedule } from "effect"
 
-// fromStepWithMetadata is an advanced function for creating schedules
-// that need access to execution metadata like timing and recurrence count
+const firstThreeInputs = Schedule.fromStepWithMetadata(Effect.succeed((metadata: Schedule.InputMetadata<string>) => {
+  if (metadata.attempt > 3) {
+    return Cause.done("finished")
+  }
 
-// Most users should use simpler metadata-aware functions like:
-const metadataSchedule = Schedule.spaced("1 second").pipe(
-  Schedule.collectWhile((metadata) => Effect.succeed(metadata.attempt <= 5))
-)
-
-// Or use existing schedules with metadata transformations:
-const conditionalSchedule = Schedule.exponential("100 millis").pipe(
-  Schedule.tapOutput((output) => Effect.log(`Output: ${output}`))
-)
+  return Effect.succeed([
+    `attempt ${metadata.attempt}: ${metadata.input}`,
+    Duration.millis(250)
+  ] as [string, Duration.Duration])
+}))
 ```
 
 **Signature**

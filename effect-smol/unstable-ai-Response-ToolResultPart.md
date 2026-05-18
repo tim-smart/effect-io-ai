@@ -5,7 +5,7 @@ Module: `Response`<br />
 
 Response part representing the result of a tool call.
 
-**Example**
+**Example** (Creating a tool result part)
 
 ```ts
 import { Response } from "effect/unstable/ai"
@@ -46,6 +46,6 @@ type ToolResultPart<Name, Success, Failure> = | ToolResultSuccess<Name, Success>
   | ToolResultFailure<Name, Failure>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Response.ts#L1554)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Response.ts#L1553)
 
-Since v1.0.0
+Since v4.0.0

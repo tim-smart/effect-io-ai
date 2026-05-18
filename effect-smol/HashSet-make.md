@@ -5,7 +5,7 @@ Module: `HashSet`<br />
 
 Creates a HashSet from a variable number of values.
 
-**Example**
+**Example** (Creating a HashSet from values)
 
 ```ts
 import * as HashSet from "effect/HashSet"
@@ -26,6 +26,6 @@ console.log(HashSet.size(mixed)) // 3
 declare const make: <Values extends ReadonlyArray<any>>(...values: Values) => HashSet<Values[number]>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashSet.ts#L131)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashSet.ts#L177)
 
 Since v2.0.0

@@ -12,7 +12,7 @@ Specifies the Mermaid diagram syntax to use:
 When not specified, automatically selects based on graph type:
 directed graphs use "flowchart", undirected graphs use "graph".
 
-**Example**
+**Example** (Selecting Mermaid diagram types)
 
 ```ts
 import type * as Graph from "effect/Graph"
@@ -38,6 +38,6 @@ type MermaidDiagramType = | "flowchart" // For directed graphs
   | "graph"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Graph.ts#L1885)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Graph.ts#L1996)
 
 Since v4.0.0

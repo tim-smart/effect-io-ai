@@ -11,7 +11,7 @@ treating the previously successful values as errors and vice versa. This can
 be helpful in scenarios where you want to handle a success as a failure or
 treat an error as a valid result.
 
-**Example**
+**Example** (Usage)
 
 ```ts
 import { Effect } from "effect"
@@ -31,6 +31,6 @@ const flipped = Effect.flip(program)
 declare const flip: <A, E, R>(self: Effect<A, E, R>) => Effect<E, A, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L2444)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L2328)
 
 Since v2.0.0

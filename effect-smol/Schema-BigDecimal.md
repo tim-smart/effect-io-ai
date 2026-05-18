@@ -3,7 +3,7 @@ Module: `Schema`<br />
 
 ## Schema.BigDecimal
 
-Companion type for `BigDecimal`.
+Type-level representation of the schema for Effect `BigDecimal` values.
 
 **Signature**
 
@@ -13,6 +13,6 @@ export interface BigDecimal extends declare<BigDecimal_.BigDecimal> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L8959)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L9323)
 
 Since v4.0.0

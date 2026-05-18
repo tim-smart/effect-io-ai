@@ -5,7 +5,7 @@ Module: `Metric`<br />
 
 A Layer that disables automatic collection of fiber runtime metrics.
 
-**Example**
+**Example** (Disabling runtime metrics with a layer)
 
 ```ts
 import { Data, Effect, Metric } from "effect"
@@ -44,6 +44,6 @@ const program = Effect.gen(function*() {
 declare const disableRuntimeMetricsLayer: Layer.Layer<never, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Metric.ts#L3805)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Metric.ts#L3830)
 
 Since v4.0.0

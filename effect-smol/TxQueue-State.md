@@ -10,7 +10,7 @@ The queue progresses through three states:
 - **Closing**: No new offers accepted, serving remaining items until empty
 - **Done**: Terminal state with completion cause, no further operations possible
 
-**Example**
+**Example** (Inspecting queue lifecycle states)
 
 ```ts
 import type { TxQueue } from "effect"
@@ -43,6 +43,6 @@ type State<_A, E> = | {
   }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxQueue.ts#L53)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxQueue.ts#L54)
 
 Since v4.0.0

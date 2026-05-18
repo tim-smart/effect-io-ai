@@ -8,7 +8,7 @@ requested structured output schema.
 
 Structured output errors are retryable since LLM outputs are non-deterministic.
 
-**Example**
+**Example** (Creating a structured output error)
 
 ```ts
 import { AiError } from "effect/unstable/ai"
@@ -29,6 +29,6 @@ console.log(error.message)
 declare class StructuredOutputError
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AiError.ts#L772)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AiError.ts#L806)
 
-Since v1.0.0
+Since v4.0.0

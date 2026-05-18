@@ -10,7 +10,7 @@ For example:
 timestamp=2025-01-03T14:22:47.570Z level=INFO fiber=#1 message=hello
 ```
 
-**Example**
+**Example** (Formatting logs as simple strings)
 
 ```ts
 import { Effect, Logger } from "effect"
@@ -38,6 +38,6 @@ const program = Effect.gen(function*() {
 declare const formatSimple: Logger<unknown, string>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Logger.ts#L575)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Logger.ts#L593)
 
 Since v4.0.0

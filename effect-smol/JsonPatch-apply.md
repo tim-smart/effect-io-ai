@@ -50,6 +50,6 @@ const result = JsonPatch.apply(patch, document)
 declare const apply: (patch: JsonPatch, oldValue: Schema.Json) => Schema.Json
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/JsonPatch.ts#L334)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/JsonPatch.ts#L335)
 
 Since v4.0.0

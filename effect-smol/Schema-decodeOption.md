@@ -6,13 +6,15 @@ Module: `Schema`<br />
 Decodes a typed input (the schema's `Encoded` type) against a schema,
 returning an `Option` that is `Some` with the decoded value on success or
 `None` on failure. For `unknown` input use `decodeUnknownOption`.
+Options may be provided either when creating the decoder or when applying it;
+application options override creation options.
 
 **Signature**
 
 ```ts
-declare const decodeOption: <S extends Decoder<unknown>>(schema: S) => (input: S["Encoded"], options?: AST.ParseOptions) => Option_.Option<S["Type"]>
+declare const decodeOption: <S extends Decoder<unknown>>(schema: S, options?: AST.ParseOptions) => (input: S["Encoded"], options?: AST.ParseOptions) => Option_.Option<S["Type"]>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L1216)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L1232)
 
 Since v4.0.0

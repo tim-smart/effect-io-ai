@@ -5,17 +5,18 @@ Module: `TxHashMap`<br />
 
 Checks if any entry in the TxHashMap matches the given predicate.
 
-**Example**
+**Example** (Checking entries with a predicate)
 
 ```ts
 import { Effect, TxHashMap } from "effect"
 
 const program = Effect.gen(function*() {
   // Create a user status map
+  const currentTime = 1_700_000_000_000
   const userStatuses = yield* TxHashMap.make(
-    ["alice", { status: "online", lastSeen: Date.now() }],
-    ["bob", { status: "offline", lastSeen: Date.now() - 3600000 }],
-    ["charlie", { status: "online", lastSeen: Date.now() }]
+    ["alice", { status: "online", lastSeen: currentTime }],
+    ["bob", { status: "offline", lastSeen: currentTime - 3_600_000 }],
+    ["charlie", { status: "online", lastSeen: currentTime }]
   )
 
   // Check if any users are online
@@ -34,7 +35,7 @@ const program = Effect.gen(function*() {
 
   // Data-last usage with pipe
   const hasRecentActivity = yield* userStatuses.pipe(
-    TxHashMap.hasBy((user) => Date.now() - user.lastSeen < 1800000) // 30 minutes
+    TxHashMap.hasBy((user) => currentTime - user.lastSeen < 1_800_000) // 30 minutes
   )
   console.log(hasRecentActivity) // true
 })
@@ -46,6 +47,6 @@ const program = Effect.gen(function*() {
 declare const hasBy: { <K, V>(predicate: (value: V, key: K) => boolean): (self: TxHashMap<K, V>) => Effect.Effect<boolean>; <K, V>(self: TxHashMap<K, V>, predicate: (value: V, key: K) => boolean): Effect.Effect<boolean>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashMap.ts#L1612)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashMap.ts#L1681)
 
 Since v2.0.0

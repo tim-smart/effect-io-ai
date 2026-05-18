@@ -9,20 +9,21 @@ Defines the contract that all ID generator implementations must fulfill.
 The service provides a single method for generating unique identifiers
 in an effectful context.
 
-**Example**
+**Example** (Implementing a custom ID generator)
 
 ```ts
 import { Effect } from "effect"
 import type { IdGenerator } from "effect/unstable/ai"
 
-// Custom implementation
+// Custom deterministic implementation
+let nextId = 0
 const customService: IdGenerator.Service = {
-  generateId: () => Effect.succeed(`custom_${Date.now()}`)
+  generateId: () => Effect.sync(() => `custom_${++nextId}`)
 }
 
 const program = Effect.gen(function*() {
   const id = yield* customService.generateId()
-  console.log(id) // "custom_1234567890"
+  console.log(id) // "custom_1"
   return id
 })
 ```
@@ -35,6 +36,6 @@ export interface Service {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/IdGenerator.ts#L108)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/IdGenerator.ts#L113)
 
 Since v4.0.0

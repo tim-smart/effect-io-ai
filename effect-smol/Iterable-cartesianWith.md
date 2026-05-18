@@ -5,7 +5,7 @@ Module: `Iterable`<br />
 
 Zips this Iterable crosswise with the specified Iterable using the specified combiner.
 
-**Example**
+**Example** (Combining cartesian products)
 
 ```ts
 import { Iterable } from "effect"
@@ -55,6 +55,6 @@ console.log(Array.from(testCases))
 declare const cartesianWith: { <A, B, C>(that: Iterable<B>, f: (a: A, b: B) => C): (self: Iterable<A>) => Iterable<C>; <A, B, C>(self: Iterable<A>, that: Iterable<B>, f: (a: A, b: B) => C): Iterable<C>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Iterable.ts#L2267)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Iterable.ts#L2330)
 
 Since v2.0.0

@@ -9,7 +9,7 @@ This predicate checks if a value is an instance of the specified constructor
 but doesn't provide the same type safety guarantees as the regular `instanceOf`.
 Use this when you need more flexibility but understand the type safety implications.
 
-**Example**
+**Example** (Matching class instances unsafely)
 
 ```ts
 import { Match } from "effect"
@@ -37,6 +37,6 @@ const handleError = Match.type<unknown>().pipe(
 declare const instanceOfUnsafe: <A extends abstract new (...args: any) => any>(constructor: A) => SafeRefinement<InstanceType<A>, InstanceType<A>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L1622)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L1613)
 
 Since v4.0.0

@@ -8,10 +8,10 @@ A `Dequeue` is a queue that can be taken from.
 This interface represents the read-only part of a Queue, allowing you to take
 elements from the queue but not offer elements to it.
 
-**Example**
+**Example** (Taking through dequeue handles)
 
 ```ts
-import { Cause, Effect, Queue } from "effect"
+import { Effect, Queue } from "effect"
 
 const program = Effect.gen(function*() {
   const queue = yield* Queue.bounded<string, never>(10)
@@ -42,6 +42,6 @@ export interface Dequeue<out A, out E = never> extends Inspectable {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Queue.ts#L151)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Queue.ts#L212)
 
 Since v3.8.0

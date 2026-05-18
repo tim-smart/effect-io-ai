@@ -14,10 +14,9 @@ effects of the effect and do not need to handle or process its outcome.
 Use the `log` option to emit the full `Cause` when the effect fails,
 and `message` to prepend a custom log message.
 
-**Example**
+**Example** (Using Effect.ignore to Discard Values)
 
 ```ts
-// Title: Using Effect.ignore to Discard Values
 import { Effect } from "effect"
 
 //      ┌─── Effect<number, string, never>
@@ -29,10 +28,9 @@ const task = Effect.fail("Uh oh!").pipe(Effect.as(5))
 const program = task.pipe(Effect.ignore)
 ```
 
-**Example**
+**Example** (Logging failures while ignoring results)
 
 ```ts
-// Title: Logging failures while ignoring results
 import { Effect } from "effect"
 
 const task = Effect.fail("Uh oh!")
@@ -53,6 +51,6 @@ This API replaces the following from Effect 3.x:
 declare const ignore: <Arg extends Effect<any, any, any> | { readonly log?: boolean | Severity | undefined; readonly message?: string | undefined; } | undefined = { readonly log?: boolean | Severity | undefined; readonly message?: string | undefined; }>(effectOrOptions?: Arg, options?: { readonly log?: boolean | Severity | undefined; readonly message?: string | undefined; } | undefined) => [Arg] extends [Effect<infer _A, infer _E, infer _R>] ? Effect<void, never, _R> : <A, E, R>(self: Effect<A, E, R>) => Effect<void, never, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L4091)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L3955)
 
 Since v2.0.0

@@ -3,13 +3,14 @@ Module: `TxChunk`<br />
 
 ## TxChunk.map
 
-Maps each element of the `TxChunk` using the provided function.
-Note: This only works when the mapped type B is assignable to A.
+Maps each element of the `TxChunk` using a function that returns the same
+element type.
 
-**Mutation behavior**: This function mutates the original TxChunk by transforming
-each element in place. It does not return a new TxChunk reference.
+**Mutation behavior**: This function mutates the original `TxChunk` by
+transforming each element in place. It does not return a new `TxChunk`
+reference.
 
-**Example**
+**Example** (Mapping elements)
 
 ```ts
 import { Chunk, Effect, TxChunk } from "effect"
@@ -17,8 +18,7 @@ import { Chunk, Effect, TxChunk } from "effect"
 const program = Effect.gen(function*() {
   const txChunk = yield* TxChunk.fromIterable([1, 2, 3, 4])
 
-  // Transform each element (must maintain same type)
-  // Transform each element (must maintain same type) - automatically transactional
+  // Transform each element atomically (must maintain same type)
   yield* TxChunk.map(txChunk, (n) => n * 2)
 
   const result = yield* TxChunk.get(txChunk)
@@ -32,6 +32,6 @@ const program = Effect.gen(function*() {
 declare const map: { <A>(f: (a: NoInfer<A>) => A): (self: TxChunk<A>) => Effect.Effect<void>; <A>(self: TxChunk<A>, f: (a: A) => A): Effect.Effect<void>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxChunk.ts#L611)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxChunk.ts#L628)
 
 Since v4.0.0

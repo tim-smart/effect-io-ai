@@ -10,7 +10,7 @@ By default, a failing step can fallback even after emitting elements; set
 `preventFallbackOnPartialStream` to fail instead of mixing partial output with
 a later fallback.
 
-**Example**
+**Example** (Applying an execution plan)
 
 ```ts
 import { Console, Effect, ExecutionPlan, Layer, Context, Stream } from "effect"
@@ -46,6 +46,6 @@ Effect.runPromise(program)
 declare const withExecutionPlan: { <Input, R2, Provides, PolicyE>(policy: ExecutionPlan.ExecutionPlan<{ provides: Provides; input: Input; error: PolicyE; requirements: R2; }>, options?: { readonly preventFallbackOnPartialStream?: boolean | undefined; }): <A, E extends Input, R>(self: Stream<A, E, R>) => Stream<A, E | PolicyE, R2 | Exclude<R, Provides>>; <A, E extends Input, R, R2, Input, Provides, PolicyE>(self: Stream<A, E, R>, policy: ExecutionPlan.ExecutionPlan<{ provides: Provides; input: Input; error: PolicyE; requirements: R2; }>, options?: { readonly preventFallbackOnPartialStream?: boolean | undefined; }): Stream<A, E | PolicyE, R2 | Exclude<R, Provides>>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L5843)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L6059)
 
 Since v3.16.0

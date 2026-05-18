@@ -5,19 +5,6 @@ Module: `Stream`<br />
 
 Type-level unification hook for Stream within the Effect type system.
 
-**Example**
-
-```ts
-import { Effect, Stream } from "effect"
-
-// StreamUnify helps unify Stream and Effect types
-declare const stream: Stream.Stream<number>
-declare const effect: Effect.Effect<string>
-
-// The unification system handles mixed operations
-const combined = Effect.zip(stream.pipe(Stream.runCollect), effect)
-```
-
 **Signature**
 
 ```ts
@@ -26,6 +13,6 @@ export interface StreamUnify<A extends { [Unify.typeSymbol]?: any }> extends Eff
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L126)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L157)
 
 Since v2.0.0

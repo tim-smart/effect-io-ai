@@ -5,7 +5,7 @@ Module: `Stream`<br />
 
 Exposes the underlying chunks as a stream of non-empty arrays.
 
-**Example**
+**Example** (Exposing stream chunks)
 
 ```ts
 import { Console, Effect, Stream } from "effect"
@@ -29,6 +29,6 @@ Effect.runPromise(program)
 declare const chunks: <A, E, R>(self: Stream<A, E, R>) => Stream<Arr.NonEmptyReadonlyArray<A>, E, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L6566)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L6798)
 
 Since v2.0.0

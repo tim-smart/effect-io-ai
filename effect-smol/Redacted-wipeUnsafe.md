@@ -3,11 +3,14 @@ Module: `Redacted`<br />
 
 ## Redacted.wipeUnsafe
 
-Erases the underlying value of a `Redacted` instance, rendering it unusable.
-This function is intended to ensure that sensitive data does not remain in
-memory longer than necessary.
+Deletes the stored value for a `Redacted` wrapper, making future
+`Redacted.value` calls on that wrapper fail.
 
-**Example**
+This unsafe operation does not zero memory and does not affect other
+references to the original value. It only removes the value from the
+internal redacted registry.
+
+**Example** (Wiping a redacted value)
 
 ```ts
 import { Redacted } from "effect"
@@ -31,6 +34,6 @@ assert.throws(
 declare const wipeUnsafe: <T>(self: Redacted<T>) => boolean
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Redacted.ts#L204)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Redacted.ts#L233)
 
 Since v3.3.0

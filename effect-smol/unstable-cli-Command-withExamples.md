@@ -8,7 +8,7 @@ Sets usage examples for a command.
 Examples are exposed in structured `HelpDoc` data and rendered by the
 default formatter in an `EXAMPLES` section.
 
-**Example**
+**Example** (Adding usage examples)
 
 ```ts
 import { Command } from "effect/unstable/cli"
@@ -27,6 +27,6 @@ const login = Command.make("login").pipe(
 declare const withExamples: { (examples: ReadonlyArray<Command.Example>): <const Name extends string, Input, E, R, ContextInput>(self: Command<Name, Input, ContextInput, E, R>) => Command<Name, Input, ContextInput, E, R>; <const Name extends string, Input, E, R, ContextInput>(self: Command<Name, Input, ContextInput, E, R>, examples: ReadonlyArray<Command.Example>): Command<Name, Input, ContextInput, E, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Command.ts#L1024)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Command.ts#L1075)
 
 Since v4.0.0

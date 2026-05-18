@@ -10,7 +10,7 @@ This allows you to create a traced scope for layer construction, making all
 operations within the layer constructor part of the same trace span. The span
 is automatically closed when the layer's scope is closed.
 
-**Example**
+**Example** (Tracing layer construction with a span)
 
 ```ts
 import { Console, Effect, Layer, Context, type Tracer } from "effect"
@@ -51,6 +51,6 @@ const tracedLayer = Layer.span("service-initialization", {
 declare const span: (name: string, options?: SpanOptions) => Layer<Tracer.ParentSpan>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L2112)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L2223)
 
 Since v4.0.0

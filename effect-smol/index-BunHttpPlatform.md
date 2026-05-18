@@ -13,4 +13,4 @@ export * as BunHttpPlatform from "./BunHttpPlatform.ts"
 
 [Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/index.ts#L37)
 
-Since v1.0.0
+Since v4.0.0

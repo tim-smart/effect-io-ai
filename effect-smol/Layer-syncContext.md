@@ -9,7 +9,7 @@ services.
 This is a lazy version of `succeedContext` where the Context is computed
 synchronously only when the layer is built.
 
-**Example**
+**Example** (Lazily providing a context)
 
 ```ts
 import { Effect, Layer, Context } from "effect"
@@ -31,6 +31,6 @@ const layer = Layer.syncContext(() =>
 declare const syncContext: <A>(evaluate: LazyArg<Context.Context<A>>) => Layer<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L754)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L834)
 
 Since v2.0.0

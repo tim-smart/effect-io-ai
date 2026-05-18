@@ -9,7 +9,7 @@ This is an optimized version that can reuse the array when mutable=true.
 ⚠️ **Warning**: When mutable=true, the input array may be modified internally.
 Only use mutable=true when you control the array lifecycle.
 
-**Example**
+**Example** (Prepending arrays with optional mutation)
 
 ```ts
 import * as MutableList from "effect/MutableList"
@@ -36,6 +36,6 @@ console.log(MutableList.takeAll(list)) // [10, 20, 30, 1, 2, 3, 4]
 declare const prependAllUnsafe: <A>(self: MutableList<A>, messages: ReadonlyArray<A>, mutable?: boolean) => void
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableList.ts#L423)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableList.ts#L453)
 
 Since v4.0.0

@@ -3,10 +3,10 @@ Module: `Effect`<br />
 
 ## Effect.sleep
 
-Returns an effect that suspends for the specified duration. This method is
-asynchronous, and does not actually block the fiber executing the effect.
+Returns an effect that suspends the current fiber for the specified duration
+without blocking a JavaScript thread.
 
-**Example**
+**Example** (Usage)
 
 ```ts
 import { Console, Effect } from "effect"
@@ -28,6 +28,6 @@ Effect.runFork(program)
 declare const sleep: (duration: Duration.Input) => Effect<void>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L4531)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L4395)
 
 Since v2.0.0

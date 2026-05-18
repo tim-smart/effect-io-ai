@@ -41,6 +41,6 @@ console.log(Option.isOption({}))
 declare const isOption: (input: unknown) => input is Option<unknown>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L379)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L357)
 
 Since v2.0.0

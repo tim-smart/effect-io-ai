@@ -15,4 +15,4 @@ declare const ImageGeneration: <Mode extends Tool.FailureMode | undefined = unde
 
 [Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiTool.ts#L112)
 
-Since v1.0.0
+Since v4.0.0

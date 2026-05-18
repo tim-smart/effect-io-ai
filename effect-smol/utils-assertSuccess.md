@@ -3,7 +3,7 @@ Module: `utils`<br />
 
 ## utils.assertSuccess
 
-Asserts that `result` is `Success`.
+Asserts that `result` is `Success` and contains a value equal to `expected`.
 
 **Signature**
 
@@ -11,6 +11,6 @@ Asserts that `result` is `Success`.
 declare const assertSuccess: <A, E>(result: Result.Result<A, E>, expected: A, ..._: Array<never>) => asserts result is Result.Success<A, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/vitest/src/utils.ts#L243)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/vitest/src/utils.ts#L257)
 
 Since v4.0.0

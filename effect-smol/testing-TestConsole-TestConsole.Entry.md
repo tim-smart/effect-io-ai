@@ -6,12 +6,18 @@ Module: `TestConsole`<br />
 Represents a single console method invocation captured by the TestConsole.
 Each entry contains the method name and the parameters passed to it.
 
-**Example**
+**Example** (Typing captured console entries)
 
 ```ts
-// Entry represents captured console calls with their method and parameters
-// Each entry contains: { method: string, parameters: ReadonlyArray<unknown> }
-// Used internally by TestConsole to track all console operations
+import type * as TestConsole from "effect/testing/TestConsole"
+
+const entry: TestConsole.TestConsole.Entry = {
+  method: "error",
+  parameters: ["not found"]
+}
+
+console.log(entry.method) // "error"
+console.log(entry.parameters) // ["not found"]
 ```
 
 **Signature**
@@ -23,6 +29,6 @@ export interface Entry {
   }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TestConsole.ts#L95)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TestConsole.ts#L109)
 
 Since v4.0.0

@@ -1,0 +1,17 @@
+Package: `effect`<br />
+Module: `McpSchema`<br />
+
+## McpSchema.METHOD_NOT_FOUND_ERROR_CODE
+
+JSON-RPC error code for requests whose method does not exist or is not
+available.
+
+**Signature**
+
+```ts
+declare const METHOD_NOT_FOUND_ERROR_CODE: -32601
+```
+
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L451)
+
+Since v4.0.0

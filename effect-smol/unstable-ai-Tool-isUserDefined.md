@@ -5,7 +5,7 @@ Module: `Tool`<br />
 
 Type guard to check if a value is a user-defined tool.
 
-**Example**
+**Example** (Checking for user-defined tools)
 
 ```ts
 import { Schema } from "effect"
@@ -47,6 +47,6 @@ console.log(Tool.isUserDefined(ProviderDefinedTool)) // false
 declare const isUserDefined: (u: unknown) => u is Tool<string, any, any>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tool.ts#L523)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tool.ts#L550)
 
-Since v1.0.0
+Since v4.0.0

@@ -3,10 +3,9 @@ Module: `EventGroup`<br />
 
 ## EventGroup.empty
 
-An `EventGroup` is a collection of `Event`s. You can use an `EventGroup` to
-represent a portion of your domain.
+Empty event group used as the starting point for defining a group.
 
-The events can be implemented later using the `EventLog.group` api.
+Call `.add(...)` to add event definitions and build a typed `EventGroup`.
 
 **Signature**
 
@@ -14,6 +13,6 @@ The events can be implemented later using the `EventLog.group` api.
 declare const empty: EventGroup<never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventGroup.ts#L162)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventGroup.ts#L195)
 
 Since v4.0.0

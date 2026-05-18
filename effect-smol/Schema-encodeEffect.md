@@ -7,13 +7,15 @@ Encodes a typed input (the schema's `Type`) against a schema, returning an
 `Effect` that succeeds with the encoded value or fails with a
 `SchemaError`. Use this when the input is already typed; for `unknown`
 input use `encodeUnknownEffect`.
+Options may be provided either when creating the encoder or when applying it;
+application options override creation options.
 
 **Signature**
 
 ```ts
-declare const encodeEffect: <S extends Top>(schema: S) => (input: S["Type"], options?: AST.ParseOptions) => Effect.Effect<S["Encoded"], SchemaError, S["EncodingServices"]>
+declare const encodeEffect: <S extends Top>(schema: S, options?: AST.ParseOptions) => (input: S["Type"], options?: AST.ParseOptions) => Effect.Effect<S["Encoded"], SchemaError, S["EncodingServices"]>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L1330)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L1377)
 
 Since v4.0.0

@@ -6,7 +6,7 @@ Module: `MutableHashSet`<br />
 Removes the specified value from the MutableHashSet, mutating the set in place.
 If the value doesn't exist, the set remains unchanged.
 
-**Example**
+**Example** (Removing a value)
 
 ```ts
 import { MutableHashSet } from "effect"
@@ -36,6 +36,6 @@ console.log(MutableHashSet.size(set)) // 1
 declare const remove: { <V>(key: V): (self: MutableHashSet<V>) => MutableHashSet<V>; <V>(self: MutableHashSet<V>, key: V): MutableHashSet<V>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableHashSet.ts#L290)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableHashSet.ts#L352)
 
 Since v2.0.0

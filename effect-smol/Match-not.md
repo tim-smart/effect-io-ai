@@ -13,10 +13,7 @@ function simplifies the logic by allowing you to specify values to exclude.
 Any excluded value will bypass the provided function and continue matching
 through other cases.
 
-**Example**
-
-```ts
-(Ignoring a Specific Value)
+**Example** (Ignoring a Specific Value)
 
 ```ts
 import { Match } from "effect"
@@ -35,7 +32,6 @@ console.log(match("hello"))
 console.log(match("hi"))
 // Output: "fallback"
 ```
-```
 
 **Signature**
 
@@ -43,6 +39,6 @@ console.log(match("hi"))
 declare const not: <R, const P extends Types.PatternPrimitive<R> | Types.PatternBase<R>, Ret, Fn extends (_: Types.NotMatch<R, P>) => Ret>(pattern: P, f: Fn) => <I, F, A, Pr>(self: Matcher<I, F, R, A, Pr, Ret>) => Matcher<I, Types.AddOnly<F, Types.WhenMatch<R, P>>, Types.ApplyFilters<I, Types.AddOnly<F, Types.WhenMatch<R, P>>>, A | ReturnType<Fn>, Pr, Ret>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L1111)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L1101)
 
 Since v4.0.0

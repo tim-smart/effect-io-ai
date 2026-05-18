@@ -5,7 +5,7 @@ Module: `Effect`<br />
 
 Runs the specified finalizer effect if this effect is interrupted.
 
-**Example**
+**Example** (Usage)
 
 ```ts
 import { Console, Effect, Fiber } from "effect"
@@ -29,6 +29,6 @@ Effect.runFork(Fiber.interrupt(fiber))
 declare const onInterrupt: { <XE, XR>(finalizer: (interruptors: ReadonlySet<number>) => Effect<void, XE, XR>): <A, E, R>(self: Effect<A, E, R>) => Effect<A, E | XE, R | XR>; <A, E, R, XE, XR>(self: Effect<A, E, R>, finalizer: (interruptors: ReadonlySet<number>) => Effect<void, XE, XR>): Effect<A, E | XE, R | XR>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L6875)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L6785)
 
 Since v2.0.0

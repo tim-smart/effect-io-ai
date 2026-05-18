@@ -6,7 +6,7 @@ Module: `MutableHashMap`<br />
 Removes all key-value pairs from the MutableHashMap, mutating the map in place.
 The map becomes empty after this operation.
 
-**Example**
+**Example** (Clearing all entries)
 
 ```ts
 import * as MutableHashMap from "effect/MutableHashMap"
@@ -36,6 +36,6 @@ console.log(MutableHashMap.size(map)) // 1
 declare const clear: <K, V>(self: MutableHashMap<K, V>) => MutableHashMap<K, V>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableHashMap.ts#L644)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableHashMap.ts#L667)
 
 Since v2.0.0

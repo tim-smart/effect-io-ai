@@ -9,7 +9,7 @@ Emitted when a tool requires user approval before execution. The framework
 checks the tool's `needsApproval` property and emits this part instead of
 executing the tool when approval is required.
 
-**Example**
+**Example** (Creating an approval request part)
 
 ```ts
 import { Response } from "effect/unstable/ai"
@@ -40,4 +40,4 @@ export interface ToolApprovalRequestPart extends BasePart<"tool-approval-request
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Response.ts#L1745)
 
-Since v1.0.0
+Since v4.0.0

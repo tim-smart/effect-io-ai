@@ -5,7 +5,7 @@ Module: `Iterable`<br />
 
 Takes two `Iterable`s and returns an `Iterable` of corresponding pairs.
 
-**Example**
+**Example** (Zipping iterables)
 
 ```ts
 import { Iterable } from "effect"
@@ -40,6 +40,6 @@ console.log(Array.from(indexed)) // [[0, "apple"], [1, "banana"], [2, "cherry"]]
 declare const zip: { <B>(that: Iterable<B>): <A>(self: Iterable<A>) => Iterable<[A, B]>; <A, B>(self: Iterable<A>, that: Iterable<B>): Iterable<[A, B]>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Iterable.ts#L806)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Iterable.ts#L833)
 
 Since v2.0.0

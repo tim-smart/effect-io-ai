@@ -5,7 +5,7 @@ Module: `HashMap`<br />
 
 Returns an `Array<[K, V]>` of the entries within the `HashMap`.
 
-**Example**
+**Example** (Converting entries to an array)
 
 ```ts
 import * as HashMap from "effect/HashMap"
@@ -37,6 +37,6 @@ const sortedMap = HashMap.fromIterable(scoreEntries)
 declare const toEntries: <K, V>(self: HashMap<K, V>) => Array<[K, V]>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashMap.ts#L625)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashMap.ts#L721)
 
 Since v2.0.0

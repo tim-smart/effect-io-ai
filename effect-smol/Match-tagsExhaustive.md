@@ -14,7 +14,7 @@ function ensures **exhaustiveness**, meaning all cases must be explicitly
 handled. If a `_tag` value is missing from the mapping, TypeScript will
 report an error.
 
-**Example**
+**Example** (Handling all tag cases)
 
 ```ts
 import { Match, pipe } from "effect"
@@ -40,6 +40,6 @@ const match = pipe(
 declare const tagsExhaustive: <R, Ret, P extends { readonly [Tag in Types.Tags<"_tag", R> & string]: (_: Extract<R, Record<"_tag", Tag>>) => Ret; } & { readonly [Tag in Exclude<keyof P, Types.Tags<"_tag", R>>]: never; }>(fields: P) => <I, F, A, Pr>(self: Matcher<I, F, R, A, Pr, Ret>) => [Pr] extends [never] ? (u: I) => Unify<A | ReturnType<P[keyof P]>> : Unify<A | ReturnType<P[keyof P]>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L1064)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L1054)
 
 Since v4.0.0

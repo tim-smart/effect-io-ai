@@ -11,6 +11,6 @@ Asserts that `self` is `true`.
 declare const assertTrue: (self: unknown, message?: string, ..._: Array<never>) => asserts self
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/vitest/src/utils.ts#L97)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/vitest/src/utils.ts#L111)
 
 Since v4.0.0

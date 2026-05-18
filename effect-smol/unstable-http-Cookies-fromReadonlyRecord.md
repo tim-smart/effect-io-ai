@@ -3,7 +3,7 @@ Module: `Cookies`<br />
 
 ## Cookies.fromReadonlyRecord
 
-Create a Cookies object from an Iterable
+Creates a `Cookies` collection from an existing readonly record of cookies keyed by cookie name.
 
 **Signature**
 
@@ -11,6 +11,6 @@ Create a Cookies object from an Iterable
 declare const fromReadonlyRecord: (cookies: Record.ReadonlyRecord<string, Cookie>) => Cookies
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cookies.ts#L194)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cookies.ts#L241)
 
 Since v4.0.0

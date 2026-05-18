@@ -5,7 +5,7 @@ Module: `Param`<br />
 
 Type guard to check if a value is a Param.
 
-**Example**
+**Example** (Checking for params)
 
 ```ts
 import * as Param from "effect/unstable/cli/Param"
@@ -25,6 +25,6 @@ if (Param.isParam(maybeParam)) {
 declare const isParam: (u: unknown) => u is Param<any, ParamKind>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Param.ts#L239)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Param.ts#L297)
 
 Since v4.0.0

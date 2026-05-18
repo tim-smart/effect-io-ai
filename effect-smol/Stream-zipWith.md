@@ -5,7 +5,7 @@ Module: `Stream`<br />
 
 Zips two streams point-wise with a combining function, ending when either stream ends.
 
-**Example**
+**Example** (Zipping streams with a function)
 
 ```ts
 import { Console, Effect, Stream } from "effect"
@@ -30,6 +30,6 @@ Effect.runPromise(program)
 declare const zipWith: { <AR, ER, RR, AL, A>(right: Stream<AR, ER, RR>, f: (left: AL, right: AR) => A): <EL, RL>(left: Stream<AL, EL, RL>) => Stream<A, EL | ER, RL | RR>; <AL, EL, RL, AR, ER, RR, A>(left: Stream<AL, EL, RL>, right: Stream<AR, ER, RR>, f: (left: AL, right: AR) => A): Stream<A, EL | ER, RL | RR>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L3344)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L3485)
 
 Since v2.0.0

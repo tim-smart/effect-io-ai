@@ -5,7 +5,7 @@ Module: `Iterable`<br />
 
 Return the number of elements in a `Iterable`.
 
-**Example**
+**Example** (Counting iterable elements)
 
 ```ts
 import { Iterable } from "effect"
@@ -31,6 +31,6 @@ console.log(Iterable.size(range)) // 100
 declare const size: <A>(self: Iterable<A>) => number
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Iterable.ts#L411)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Iterable.ts#L435)
 
 Since v2.0.0

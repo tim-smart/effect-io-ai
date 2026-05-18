@@ -5,7 +5,7 @@ Module: `Sink`<br />
 
 Creates a sink halting with a specified `Cause`.
 
-**Example**
+**Example** (Failing with a cause)
 
 ```ts
 import { Cause, Effect, Sink, Stream } from "effect"
@@ -27,6 +27,6 @@ Effect.runPromise(program).catch(console.log)
 declare const failCause: <E>(cause: Cause.Cause<E>) => Sink<never, unknown, never, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Sink.ts#L552)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Sink.ts#L601)
 
 Since v2.0.0

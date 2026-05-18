@@ -14,6 +14,8 @@ run in order.
 
 For example, here is how we can test `Effect.timeout` using `TestClock`:
 
+**Example** (Testing timeouts deterministically)
+
 ```ts
 import { Effect, Fiber, Option, pipe } from "effect"
 import { TestClock } from "effect/testing"
@@ -39,7 +41,7 @@ below. Thus, a useful pattern when using `TestClock` is to fork the effect
 being tested, then adjust the clock time, and finally verify that the
 expected effects have been performed.
 
-**Example**
+**Example** (Advancing time deterministically)
 
 ```ts
 import { Effect } from "effect"
@@ -85,6 +87,6 @@ export interface TestClock extends Clock.Clock {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TestClock.ts#L78)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TestClock.ts#L105)
 
 Since v2.0.0

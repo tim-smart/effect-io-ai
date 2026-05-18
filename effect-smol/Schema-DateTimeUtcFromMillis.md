@@ -3,7 +3,8 @@ Module: `Schema`<br />
 
 ## Schema.DateTimeUtcFromMillis
 
-Companion type for `DateTimeUtcFromMillis`.
+Schema interface for `DateTimeUtcFromMillis`, a transformation between epoch
+milliseconds and `DateTime.Utc` values.
 
 **Signature**
 
@@ -13,6 +14,6 @@ export interface DateTimeUtcFromMillis extends decodeTo<instanceOf<DateTime.Utc>
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L10080)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L10480)
 
 Since v4.0.0

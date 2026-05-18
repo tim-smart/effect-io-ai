@@ -5,7 +5,7 @@ Module: `Argument`<br />
 
 Creates a positional redacted argument that obscures its value.
 
-**Example**
+**Example** (Creating a redacted argument)
 
 ```ts
 import { Argument } from "effect/unstable/cli"
@@ -19,6 +19,6 @@ const secret = Argument.redacted("secret")
 declare const redacted: (name: string) => Argument<Redacted.Redacted<string>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Argument.ts#L180)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Argument.ts#L211)
 
 Since v4.0.0

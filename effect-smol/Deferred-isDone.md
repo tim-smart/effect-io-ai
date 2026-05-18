@@ -6,7 +6,7 @@ Module: `Deferred`<br />
 Returns `true` if this `Deferred` has already been completed with a value or
 an error, `false` otherwise.
 
-**Example**
+**Example** (Checking Deferred completion)
 
 ```ts
 import { Deferred, Effect } from "effect"
@@ -28,6 +28,6 @@ const program = Effect.gen(function*() {
 declare const isDone: <A, E>(self: Deferred<A, E>) => Effect<boolean>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Deferred.ts#L566)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Deferred.ts#L630)
 
 Since v2.0.0

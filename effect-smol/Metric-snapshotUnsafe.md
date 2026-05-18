@@ -10,7 +10,7 @@ This is the "unsafe" version that bypasses Effect's safety guarantees and requir
 manual handling of the services context. Use the safe `snapshot` function for normal
 application code.
 
-**Example**
+**Example** (Capturing snapshots from a context)
 
 ```ts
 import { Data, Effect, Metric } from "effect"
@@ -38,13 +38,14 @@ const performanceMetricsExporter = Effect.gen(function*() {
 
   // Use snapshotUnsafe for direct, synchronous access
   const snapshots = Metric.snapshotUnsafe(services)
+  const exportBatchCreatedAt = 1_700_000_000_000
 
   // Process snapshots immediately (useful for exporters, debugging tools)
   const exportData = snapshots.map((snapshot) => ({
     name: snapshot.id,
     type: snapshot.type,
     value: snapshot.state,
-    timestamp: Date.now()
+    timestamp: exportBatchCreatedAt
   }))
 
   // This is synchronous and doesn't involve Effect overhead
@@ -66,6 +67,6 @@ const safeSnapshotExample = Effect.gen(function*() {
 declare const snapshotUnsafe: (context: Context.Context<never>) => ReadonlyArray<Metric.Snapshot>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Metric.ts#L3212)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Metric.ts#L3221)
 
 Since v2.0.0

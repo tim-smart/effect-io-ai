@@ -3,9 +3,12 @@ Module: `HashMap`<br />
 
 ## HashMap.beginMutation
 
-Marks the `HashMap` as mutable for performance optimization during batch operations.
+Creates a transient mutable `HashMap` for efficient batched updates.
 
-**Example**
+Apply updates to the returned map, then call `endMutation` to finish the
+mutation window and use the result as an immutable `HashMap`.
+
+**Example** (Beginning batch mutation)
 
 ```ts
 import * as HashMap from "effect/HashMap"
@@ -31,6 +34,6 @@ console.log(HashMap.size(result)) // 2
 declare const beginMutation: <K, V>(self: HashMap<K, V>) => HashMap<K, V>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashMap.ts#L671)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashMap.ts#L772)
 
 Since v2.0.0

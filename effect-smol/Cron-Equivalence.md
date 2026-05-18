@@ -3,13 +3,13 @@ Module: `Cron`<br />
 
 ## Cron.Equivalence
 
-An Equivalence instance for comparing Cron schedules.
+An `Equivalence` instance for comparing the field restrictions of two `Cron`
+schedules.
 
-This equivalence compares two Cron instances by checking if their
-time constraints (seconds, minutes, hours, days, months, weekdays)
-are equivalent, regardless of the internal order.
+This comparison checks seconds, minutes, hours, days, months, and weekdays.
+It does not compare the optional timezone.
 
-**Example**
+**Example** (Comparing schedules with equivalence)
 
 ```ts
 import { Cron } from "effect"
@@ -39,6 +39,6 @@ console.log(Cron.Equivalence(cron1, cron2)) // true
 declare const Equivalence: Equ.Equivalence<Cron>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cron.ts#L871)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cron.ts#L931)
 
 Since v2.0.0

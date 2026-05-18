@@ -3,14 +3,16 @@ Module: `McpSchema`<br />
 
 ## McpSchema.Role
 
-The sender or recipient of messages and data in a conversation.
+Type represented by the MCP role schema.
+
+Valid roles are `"user"` and `"assistant"`.
 
 **Signature**
 
 ```ts
-declare const Role: Schema.Literals<["user", "assistant"]>
+type Role = typeof Role.Type
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L185)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L268)
 
 Since v4.0.0

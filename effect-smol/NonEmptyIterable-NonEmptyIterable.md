@@ -12,7 +12,7 @@ require runtime checks or could throw exceptions.
 The type is branded with a unique symbol to ensure type safety while maintaining
 full compatibility with JavaScript's iteration protocol.
 
-**Example**
+**Example** (Working with non-empty iterables)
 
 ```ts
 import { Array } from "effect"
@@ -64,6 +64,6 @@ export interface NonEmptyIterable<out A> extends Iterable<A> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/NonEmptyIterable.ts#L218)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/NonEmptyIterable.ts#L214)
 
 Since v2.0.0

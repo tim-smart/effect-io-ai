@@ -8,7 +8,7 @@ A transactional semaphore that manages permits using Software Transactional Memo
 TxSemaphore provides atomic permit acquisition and release operations within Effect transactions,
 ensuring thread-safe concurrency control for limited resources.
 
-**Example**
+**Example** (Managing permits transactionally)
 
 ```ts
 import { Effect, TxSemaphore } from "effect"
@@ -39,6 +39,6 @@ export interface TxSemaphore extends Inspectable, Pipeable {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxSemaphore.ts#L45)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxSemaphore.ts#L64)
 
 Since v4.0.0

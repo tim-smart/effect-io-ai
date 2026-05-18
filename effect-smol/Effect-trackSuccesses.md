@@ -9,7 +9,7 @@ a value.
 Also accepts an optional function which can be used to map the success value
 of the `Effect` into a valid `Input` for the `Metric`.
 
-**Example**
+**Example** (Usage)
 
 ```ts
 import { Effect, Metric } from "effect"
@@ -28,7 +28,7 @@ Effect.runPromise(program).then(() =>
 )
 ```
 
-**Example**
+**Example** (Usage)
 
 ```ts
 import { Effect, Metric } from "effect"
@@ -52,6 +52,6 @@ Effect.runPromise(program).then(() =>
 declare const trackSuccesses: { <Input, State, A>(metric: Metric.Metric<Input, State>, f: (value: A) => Input): <E, R>(self: Effect<A, E, R>) => Effect<A, E, R>; <State, A>(metric: Metric.Metric<NoInfer<A>, State>): <E, R>(self: Effect<A, E, R>) => Effect<A, E, R>; <A, E, R, Input, State>(self: Effect<A, E, R>, metric: Metric.Metric<Input, State>, f: (value: A) => Input): Effect<A, E, R>; <A, E, R, State>(self: Effect<A, E, R>, metric: Metric.Metric<NoInfer<A>, State>): Effect<A, E, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L13483)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L13441)
 
 Since v4.0.0

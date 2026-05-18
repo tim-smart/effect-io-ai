@@ -3,7 +3,9 @@ Module: `Latch`<br />
 
 ## Latch.make
 
-Creates a new Latch.
+Creates a `Latch` inside `Effect`.
+
+The latch starts closed by default; pass `true` to create it open.
 
 **Previously Known As**
 
@@ -11,7 +13,7 @@ This API replaces the following from Effect 3.x:
 
 - `Effect.makeLatch`
 
-**Example**
+**Example** (Creating a latch)
 
 ```ts
 import { Effect, Latch } from "effect"
@@ -41,6 +43,6 @@ const program = Effect.gen(function*() {
 declare const make: (open?: boolean | undefined) => Effect.Effect<Latch>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Latch.ts#L112)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Latch.ts#L161)
 
 Since v3.8.0

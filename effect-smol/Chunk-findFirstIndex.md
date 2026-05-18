@@ -5,7 +5,7 @@ Module: `Chunk`<br />
 
 Return the first index for which a predicate holds.
 
-**Example**
+**Example** (Finding the first matching index)
 
 ```ts
 import { Chunk } from "effect"
@@ -29,6 +29,6 @@ console.log(firstEven) // Option.some(1)
 declare const findFirstIndex: { <A>(predicate: Predicate<A>): (self: Chunk<A>) => O.Option<number>; <A>(self: Chunk<A>, predicate: Predicate<A>): O.Option<number>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L2566)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L2634)
 
 Since v2.0.0

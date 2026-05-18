@@ -6,7 +6,7 @@ Module: `Record`<br />
 Merge two records, retaining only the entries that exist in both records.
 For intersecting keys, the provided combine function is used to merge the values.
 
-**Example**
+**Example** (Merging intersecting keys)
 
 ```ts
 import { Record } from "effect"
@@ -24,6 +24,6 @@ assert.deepStrictEqual(
 declare const intersection: { <K1 extends string, A, B, C>(that: ReadonlyRecord<K1, B>, combine: (selfValue: A, thatValue: B) => C): <K0 extends string>(self: ReadonlyRecord<K0, A>) => Record<ReadonlyRecord.IntersectKeys<K0, K1>, C>; <K0 extends string, A, K1 extends string, B, C>(self: ReadonlyRecord<K0, A>, that: ReadonlyRecord<K1, B>, combine: (selfValue: A, thatValue: B) => C): Record<ReadonlyRecord.IntersectKeys<K0, K1>, C>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Record.ts#L1239)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Record.ts#L1304)
 
 Since v2.0.0

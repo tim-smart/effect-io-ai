@@ -16,7 +16,7 @@ specific event or incident occurs.
 - `preregisteredWords` - Occurrences which are pre-registered with the
                          `Frequency` metric occurrences.
 
-**Example**
+**Example** (Creating frequency metrics)
 
 ```ts
 import { Data, Effect, Metric } from "effect"
@@ -81,6 +81,6 @@ const program = Effect.gen(function*() {
 declare const frequency: (name: string, options?: { readonly description?: string | undefined; readonly attributes?: Metric.Attributes | undefined; readonly preregisteredWords?: ReadonlyArray<string> | undefined; }) => Frequency
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Metric.ts#L2403)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Metric.ts#L2387)
 
 Since v2.0.0

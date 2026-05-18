@@ -3,10 +3,12 @@ Module: `Schema`<br />
 
 ## Schema.ErrorWithStack
 
-A schema that represents `Error` objects.
+A schema for JavaScript `Error` objects that preserves stack traces in the JSON
+encoded form.
 
-The default json serializer decodes to a struct with `name`, `message` and
-`stack` properties.
+**Default JSON serializer**
+Encodes an `Error` as an object with `message`, optional `name`, and optional
+`stack` properties, and decodes that object back into an `Error`.
 
 **Signature**
 
@@ -14,6 +16,6 @@ The default json serializer decodes to a struct with `name`, `message` and
 declare const ErrorWithStack: Error
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L7849)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L8168)
 
 Since v4.0.0

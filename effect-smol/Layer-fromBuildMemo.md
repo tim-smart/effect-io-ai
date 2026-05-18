@@ -9,7 +9,7 @@ with automatic memoization.
 This is similar to `fromBuild` but provides automatic memoization of the layer construction.
 The layer will be memoized based on the provided `MemoMap`.
 
-**Example**
+**Example** (Memoizing layer construction)
 
 ```ts
 import { Effect, Layer, Context } from "effect"
@@ -33,6 +33,6 @@ const databaseLayer = Layer.fromBuildMemo(() =>
 declare const fromBuildMemo: <ROut, E, RIn>(build: (memoMap: MemoMap, scope: Scope.Scope) => Effect<Context.Context<ROut>, E, RIn>) => Layer<ROut, E, RIn>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L291)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L325)
 
 Since v4.0.0

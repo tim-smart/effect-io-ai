@@ -5,7 +5,7 @@ Module: `LogLevel`<br />
 
 An `Equivalence` instance for log levels using strict equality (`===`).
 
-**Example**
+**Example** (Comparing log levels)
 
 ```ts
 import { LogLevel } from "effect"
@@ -20,6 +20,6 @@ console.log(LogLevel.Equivalence("Error", "Info")) // false
 declare const Equivalence: Equ.Equivalence<LogLevel>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/LogLevel.ts#L192)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/LogLevel.ts#L140)
 
 Since v4.0.0

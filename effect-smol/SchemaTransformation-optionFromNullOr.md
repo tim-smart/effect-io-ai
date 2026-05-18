@@ -36,6 +36,6 @@ See also:
 declare const optionFromNullOr: <T>() => Transformation<Option.Option<T>, T | null>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L1090)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L1084)
 
 Since v4.0.0

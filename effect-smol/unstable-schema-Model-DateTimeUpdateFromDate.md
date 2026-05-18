@@ -3,18 +3,23 @@ Module: `Model`<br />
 
 ## Model.DateTimeUpdateFromDate
 
-A field that represents a date-time value that is updated as the current
-`DateTime.Utc`. It is serialized as a `Date` for the database.
-
-It is set to the current `DateTime.Utc` on updates and inserts and is
-available for selection.
+Variant field type for a UTC date-time stored as a JavaScript `Date` in
+database variants, encoded as a string for JSON, and defaulted on inserts and
+updates.
 
 **Signature**
 
 ```ts
-declare const DateTimeUpdateFromDate: DateTimeUpdateFromDate
+export interface DateTimeUpdateFromDate extends
+  VariantSchema.Field<{
+    readonly select: Schema.DateTimeUtcFromDate
+    readonly insert: VariantSchema.Overrideable<Schema.DateTimeUtcFromDate>
+    readonly update: VariantSchema.Overrideable<Schema.DateTimeUtcFromDate>
+    readonly json: Schema.DateTimeUtcFromString
+  }>
+{}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Model.ts#L521)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Model.ts#L584)
 
 Since v4.0.0

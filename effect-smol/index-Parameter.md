@@ -13,4 +13,4 @@ export * as Parameter from "./Parameter.ts"
 
 [Source](https://github.com/Effect-TS/effect/tree/main/packages/sql/d1/src/index.ts#L27)
 
-Since v1.0.0
+Since v4.0.0

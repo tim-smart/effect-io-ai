@@ -6,7 +6,7 @@ Module: `TxDeferred`<br />
 Completes the deferred with a success value. Returns `true` if this was the
 first completion, `false` if already completed.
 
-**Example**
+**Example** (Completing with a success value)
 
 ```ts
 import { Effect, TxDeferred } from "effect"
@@ -26,6 +26,6 @@ const program = Effect.gen(function*() {
 declare const succeed: { <A>(value: A): <E>(self: TxDeferred<A, E>) => Effect.Effect<boolean>; <A, E>(self: TxDeferred<A, E>, value: A): Effect.Effect<boolean>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxDeferred.ts#L218)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxDeferred.ts#L224)
 
 Since v4.0.0

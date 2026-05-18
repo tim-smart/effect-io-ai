@@ -20,7 +20,14 @@ you want to avoid repeating. The first evaluation will compute the result,
 and all following evaluations will immediately return the cached value,
 improving performance and reducing unnecessary work.
 
-**Example**
+**See**
+
+- `cachedWithTTL` for a similar function that includes a
+time-to-live duration for the cached value.
+- `cachedInvalidateWithTTL` for a similar function that includes an
+additional effect for manually invalidating the cached value.
+
+**Example** (Usage)
 
 ```ts
 import { Console, Effect } from "effect"
@@ -58,19 +65,12 @@ Effect.runFork(program)
 // result 3
 ```
 
-**See**
-
-- `cachedWithTTL` for a similar function that includes a
-time-to-live duration for the cached value.
-- `cachedInvalidateWithTTL` for a similar function that includes an
-additional effect for manually invalidating the cached value.
-
 **Signature**
 
 ```ts
 declare const cached: <A, E, R>(self: Effect<A, E, R>) => Effect<Effect<A, E, R>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L6657)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L6562)
 
 Since v2.0.0

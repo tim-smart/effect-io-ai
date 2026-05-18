@@ -3,7 +3,8 @@ Module: `KeyValueStore`<br />
 
 ## KeyValueStore.layerStorage
 
-Creates an KeyValueStorage from an instance of the `Storage` api.
+Provides a `KeyValueStore` backed by a Web `Storage` instance such as
+`localStorage` or `sessionStorage`.
 
 **See**
 
@@ -15,6 +16,6 @@ Creates an KeyValueStorage from an instance of the `Storage` api.
 declare const layerStorage: (evaluate: LazyArg<Storage>) => Layer.Layer<KeyValueStore>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/KeyValueStore.ts#L727)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/KeyValueStore.ts#L796)
 
 Since v4.0.0

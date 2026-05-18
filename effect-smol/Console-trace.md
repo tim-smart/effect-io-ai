@@ -8,7 +8,7 @@ Outputs a stack trace to the console.
 This function logs the current stack trace, which is useful for debugging
 to understand how the current point in the code was reached.
 
-**Example**
+**Example** (Writing stack traces)
 
 ```ts
 import { Console, Effect } from "effect"
@@ -25,6 +25,6 @@ const program = Effect.gen(function*() {
 declare const trace: (...args: ReadonlyArray<any>) => Effect.Effect<void>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Console.ts#L591)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Console.ts#L614)
 
 Since v2.0.0

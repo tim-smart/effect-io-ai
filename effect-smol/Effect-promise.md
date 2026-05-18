@@ -25,10 +25,13 @@ crash in the program, which can be further managed or logged using tools like
 An optional `AbortSignal` can be provided to allow for interruption of the
 wrapped `Promise` API.
 
-**Example**
+**See**
+
+- `tryPromise` for a version that can handle failures.
+
+**Example** (Delayed Message)
 
 ```ts
-// Title: Delayed Message
 import { Effect } from "effect"
 
 const delay = (message: string) =>
@@ -46,16 +49,12 @@ const delay = (message: string) =>
 const program = delay("Async operation completed successfully!")
 ```
 
-**See**
-
-- `tryPromise` for a version that can handle failures.
-
 **Signature**
 
 ```ts
 declare const promise: <A>(evaluate: (signal: AbortSignal) => PromiseLike<A>) => Effect<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L1014)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L871)
 
 Since v2.0.0

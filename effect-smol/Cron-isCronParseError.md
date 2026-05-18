@@ -9,7 +9,7 @@ This function is a type guard that determines whether the provided
 value is a CronParseError by checking for the presence of the
 CronParseError type identifier.
 
-**Example**
+**Example** (Checking cron parse errors)
 
 ```ts
 import { Cron, Result } from "effect"
@@ -30,6 +30,6 @@ console.log(Cron.isCronParseError("not an error")) // false
 declare const isCronParseError: (u: unknown) => u is CronParseError
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cron.ts#L464)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cron.ts#L511)
 
 Since v2.0.0

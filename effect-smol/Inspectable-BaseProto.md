@@ -9,7 +9,7 @@ This object provides default implementations for the `Inspectable` methods.
 It can be used as a prototype for objects that want to be inspectable,
 or as a mixin to add inspection capabilities to existing objects.
 
-**Example**
+**Example** (Using the base inspectable prototype)
 
 ```ts
 import { Inspectable } from "effect"
@@ -35,6 +35,6 @@ MyClass.prototype.constructor = MyClass
 declare const BaseProto: Inspectable
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Inspectable.ts#L212)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Inspectable.ts#L223)
 
 Since v2.0.0

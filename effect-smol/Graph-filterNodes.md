@@ -6,7 +6,7 @@ Module: `Graph`<br />
 Filters nodes by removing those that don't match the predicate.
 This function modifies the mutable graph in place.
 
-**Example**
+**Example** (Filtering nodes)
 
 ```ts
 import { Graph } from "effect"
@@ -30,6 +30,6 @@ console.log(Graph.nodeCount(graph)) // 2 (only "active" nodes remain)
 declare const filterNodes: <N, E, T extends Kind = "directed">(mutable: MutableGraph<N, E, T>, predicate: (data: N) => boolean) => void
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Graph.ts#L1070)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Graph.ts#L1162)
 
 Since v4.0.0

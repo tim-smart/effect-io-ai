@@ -5,7 +5,7 @@ Module: `Param`<br />
 
 Creates a floating-point number parameter.
 
-**Example**
+**Example** (Creating float parameters)
 
 ```ts
 import * as Param from "effect/unstable/cli/Param"
@@ -27,6 +27,6 @@ const thresholdArg = Param.float(Param.argumentKind, "threshold")
 declare const float: <const Kind extends ParamKind>(kind: Kind, name: string) => Param<Kind, number>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Param.ts#L413)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Param.ts#L482)
 
 Since v4.0.0

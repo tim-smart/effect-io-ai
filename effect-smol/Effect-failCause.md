@@ -8,7 +8,7 @@ Creates an `Effect` that represents a failure with a specific `Cause`.
 This function allows you to create effects that fail with complex error
 structures, including multiple errors, defects, interruptions, and more.
 
-**Example**
+**Example** (Usage)
 
 ```ts
 import { Cause, Effect } from "effect"
@@ -27,6 +27,6 @@ Effect.runPromiseExit(program).then(console.log)
 declare const failCause: <E>(cause: Cause.Cause<E>) => Effect<never, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L1615)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L1482)
 
 Since v2.0.0

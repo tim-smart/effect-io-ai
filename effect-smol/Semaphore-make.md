@@ -3,7 +3,10 @@ Module: `Semaphore`<br />
 
 ## Semaphore.make
 
-Creates a new Semaphore.
+Creates a `Semaphore` initialized with the specified total number of permits.
+
+Use the returned semaphore to limit concurrency with `withPermit` or
+`withPermits`, or to manually `take` and `release` permits.
 
 **Previously Known As**
 
@@ -11,7 +14,7 @@ This API replaces the following from Effect 3.x:
 
 - `Effect.makeSemaphore`
 
-**Example**
+**Example** (Creating a semaphore)
 
 ```ts
 import { Effect, Semaphore } from "effect"
@@ -39,6 +42,6 @@ const program = Effect.gen(function*() {
 declare const make: (permits: number) => Effect.Effect<Semaphore>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Semaphore.ts#L271)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Semaphore.ts#L307)
 
 Since v2.0.0

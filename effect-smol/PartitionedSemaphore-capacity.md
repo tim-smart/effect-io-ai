@@ -11,6 +11,6 @@ Gets the total capacity.
 declare const capacity: <K>(self: PartitionedSemaphore<K>) => number
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PartitionedSemaphore.ts#L269)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PartitionedSemaphore.ts#L343)
 
 Since v4.0.0

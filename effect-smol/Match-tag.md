@@ -13,10 +13,7 @@ The `Match.tag` function relies on the convention within the Effect ecosystem
 of naming the tag field as `"_tag"`. Ensure that your discriminated unions
 follow this naming convention for proper functionality.
 
-**Example**
-
-```ts
-(Matching a Discriminated Union by Tag)
+**Example** (Matching a Discriminated Union by Tag)
 
 ```ts
 import { Match } from "effect"
@@ -43,7 +40,6 @@ console.log(match({ _tag: "success", data: "Hello" }))
 console.log(match({ _tag: "error", error: new Error("Oops!") }))
 // Output: "Error: Oops!"
 ```
-```
 
 **Signature**
 
@@ -51,6 +47,6 @@ console.log(match({ _tag: "error", error: new Error("Oops!") }))
 declare const tag: <R, P extends Types.Tags<"_tag", R> & string, Ret, Fn extends (_: Extract<R, Record<"_tag", P>>) => Ret>(...pattern: [first: P, ...values: Array<P>, f: Fn]) => <I, F, A, Pr>(self: Matcher<I, F, R, A, Pr, Ret>) => Matcher<I, Types.AddWithout<F, Extract<R, Record<"_tag", P>>>, Types.ApplyFilters<I, Types.AddWithout<F, Extract<R, Record<"_tag", P>>>>, ReturnType<Fn> | A, Pr, Ret>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L910)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L897)
 
 Since v4.0.0

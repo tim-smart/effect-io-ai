@@ -6,7 +6,7 @@ Module: `Request`<br />
 Creates a constructor function for a tagged Request type. The tag is automatically
 added to the request, making it useful for discriminated unions.
 
-**Example**
+**Example** (Creating tagged request constructors)
 
 ```ts
 import { Request } from "effect"
@@ -47,6 +47,6 @@ console.log(postRequest._tag) // "GetPost"
 declare const tagged: <R extends Request<any, any, any> & { _tag: string; }>(tag: R["_tag"]) => Constructor<R, "_tag">
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Request.ts#L284)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Request.ts#L319)
 
 Since v2.0.0

@@ -9,7 +9,7 @@ A `When` case contains the logic to test if a value matches a specific pattern
 and the function to evaluate when the pattern matches. It's the primary
 building block for pattern matching conditions.
 
-**Example**
+**Example** (Creating positive match cases)
 
 ```ts
 import { Match } from "effect"
@@ -35,6 +35,6 @@ export interface When {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L213)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L195)
 
 Since v4.0.0

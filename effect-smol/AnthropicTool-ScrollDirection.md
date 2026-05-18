@@ -3,14 +3,14 @@ Module: `AnthropicTool`<br />
 
 ## AnthropicTool.ScrollDirection
 
-The direction of the scroll for scroll actions.
+Direction used by computer-use scroll actions: `"up"`, `"down"`, `"left"`, or `"right"`.
 
 **Signature**
 
 ```ts
-declare const ScrollDirection: Schema.Literals<readonly ["up", "down", "left", "right"]>
+type ScrollDirection = typeof ScrollDirection.Type
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L321)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L344)
 
-Since v1.0.0
+Since v4.0.0

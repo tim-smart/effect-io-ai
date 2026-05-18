@@ -7,7 +7,7 @@ Combines two `Schedule`s by recurring if both of the two schedules want
 to recur, using the maximum of the two durations between recurrences and
 outputting a tuple of the outputs of both schedules.
 
-**Example**
+**Example** (Combining time and attempt limits)
 
 ```ts
 import { Console, Data, Effect, Schedule } from "effect"
@@ -25,7 +25,7 @@ const bothSchedule = Schedule.both(timeLimit, attemptLimit)
 const program = Effect.gen(function*() {
   const results = yield* Effect.repeat(
     Effect.gen(function*() {
-      yield* Console.log(`Task executed at ${new Date().toISOString()}`)
+      yield* Console.log("Task executed")
       return "task completed"
     }),
     bothSchedule.pipe(
@@ -75,6 +75,6 @@ const retryProgram = Effect.gen(function*() {
 declare const both: { <Output2, Input2, Error2, Env2, Output>(other: Schedule<Output2, Input2, Error2, Env2>): <Input, Error, Env>(self: Schedule<Output, Input, Error, Env>) => Schedule<[Output, Output2], Input & Input2, Error | Error2, Env | Env2>; <Output, Input, Error, Env, Output2, Input2, Error2, Env2>(self: Schedule<Output, Input, Error, Env>, other: Schedule<Output2, Input2, Error2, Env2>): Schedule<[Output, Output2], Input & Input2, Error | Error2, Env | Env2>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L882)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L869)
 
 Since v2.0.0

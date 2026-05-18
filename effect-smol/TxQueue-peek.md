@@ -3,10 +3,13 @@ Module: `TxQueue`<br />
 
 ## TxQueue.peek
 
-Views the next item without removing it. If the queue is in a failed state,
-the error is propagated through the E-channel.
+Waits transactionally for the next item and returns it without removing it.
 
-**Example**
+If the queue is open but empty, the transaction retries until an item is
+available or the queue completes. If the queue is done, the queue's
+completion cause is propagated through the error channel.
+
+**Example** (Peeking without removing values)
 
 ```ts
 import { Effect, TxQueue } from "effect"
@@ -41,6 +44,6 @@ const errorExample = Effect.gen(function*() {
 declare const peek: <A, E>(self: TxDequeue<A, E>) => Effect.Effect<A, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxQueue.ts#L1043)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxQueue.ts#L1032)
 
 Since v4.0.0

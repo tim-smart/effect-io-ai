@@ -5,7 +5,7 @@ Module: `String`<br />
 
 Returns `true` if the string starts with the specified search string.
 
-**Example**
+**Example** (Checking string prefixes)
 
 ```ts
 import { pipe, String } from "effect"
@@ -21,6 +21,6 @@ assert.deepStrictEqual(pipe("hello world", String.startsWith("world")), false)
 declare const startsWith: (searchString: string, position?: number) => (self: string) => boolean
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L450)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L477)
 
 Since v2.0.0

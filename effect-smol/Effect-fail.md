@@ -11,10 +11,13 @@ Use this function to explicitly signal an error in an `Effect`. The error
 will keep propagating unless it is handled. You can handle the error with
 functions like `catchAll` or `catchTag`.
 
-**Example**
+**See**
+
+- `succeed` to create an effect that represents a successful value.
+
+**Example** (Creating a Failed Effect)
 
 ```ts
-// Title: Creating a Failed Effect
 import { Data, Effect } from "effect"
 
 class OperationFailedError extends Data.TaggedError("OperationFailedError")<{}> {}
@@ -26,16 +29,12 @@ const failure = Effect.fail(
 )
 ```
 
-**See**
-
-- `succeed` to create an effect that represents a successful value.
-
 **Signature**
 
 ```ts
 declare const fail: <E>(error: E) => Effect<never, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L1569)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L1434)
 
 Since v2.0.0

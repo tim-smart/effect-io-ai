@@ -3,7 +3,13 @@ Module: `Graph`<br />
 
 ## Graph.SearchConfig
 
-Configuration options for search iterators.
+Configuration for DFS, BFS, and postorder graph traversals.
+
+**Details**
+
+`start` supplies the node indices where traversal begins. If it is omitted,
+the iterator is empty. `direction` chooses whether traversal follows
+outgoing or incoming edges.
 
 **Signature**
 
@@ -14,6 +20,6 @@ export interface SearchConfig {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Graph.ts#L3636)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Graph.ts#L3813)
 
 Since v4.0.0

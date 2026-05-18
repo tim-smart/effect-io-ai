@@ -11,6 +11,6 @@ Asserts that `self` is `false`.
 declare const assertFalse: (self: boolean, message?: string, ..._: Array<never>) => void
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/vitest/src/utils.ts#L106)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/vitest/src/utils.ts#L120)
 
 Since v4.0.0

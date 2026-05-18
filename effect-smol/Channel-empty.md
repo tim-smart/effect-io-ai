@@ -5,7 +5,7 @@ Module: `Channel`<br />
 
 Represents an Channel that emits no elements
 
-**Example**
+**Example** (Using empty channels)
 
 ```ts
 import { Channel } from "effect"
@@ -28,6 +28,6 @@ const conditionalChannel = (shouldEmit: boolean) =>
 declare const empty: Channel<never, never, void, unknown, unknown, unknown, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L846)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L918)
 
 Since v2.0.0

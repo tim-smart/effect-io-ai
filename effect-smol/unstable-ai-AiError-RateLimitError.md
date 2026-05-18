@@ -8,7 +8,7 @@ Error indicating the request was rate limited.
 Rate limit errors are always retryable. When `retryAfter` is provided,
 callers should wait that duration before retrying.
 
-**Example**
+**Example** (Creating a rate limit error)
 
 ```ts
 import { Duration } from "effect"
@@ -28,6 +28,6 @@ console.log(rateLimitError.message) // "Rate limit exceeded. Retry after 1 minut
 declare class RateLimitError
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AiError.ts#L395)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AiError.ts#L407)
 
-Since v1.0.0
+Since v4.0.0

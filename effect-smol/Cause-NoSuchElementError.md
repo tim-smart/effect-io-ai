@@ -3,11 +3,16 @@ Module: `Cause`<br />
 
 ## Cause.NoSuchElementError
 
-An error indicating that a requested element does not exist.
+An error indicating that an expected value was absent.
 
-Thrown by APIs like `Array.head`, `Option.getOrThrow`, `Map.get`, etc.
-when no element matches. Implements `YieldableError` so it can be
+Used by APIs that convert absence into an exception or effect failure, such
+as `Option.getOrThrow`. Implements `YieldableError` so it can be
 yielded directly in `Effect.gen`.
+
+**Notes**
+
+Safe lookup APIs that return `Option` should document the `None` case rather
+than describing it as a thrown `NoSuchElementError`.
 
 **Example** (creating and checking)
 
@@ -33,6 +38,6 @@ export interface NoSuchElementError extends YieldableError {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L1145)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L1155)
 
 Since v4.0.0

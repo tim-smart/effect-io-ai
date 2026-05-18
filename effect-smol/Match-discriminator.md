@@ -13,7 +13,7 @@ This function is used to define pattern matching on objects that follow a
 multiple values of the discriminant and provides a function to handle the
 matched cases.
 
-**Example**
+**Example** (Matching on a discriminator field)
 
 ```ts
 import { Match, pipe } from "effect"
@@ -37,6 +37,6 @@ const match = pipe(
 declare const discriminator: <D extends string>(field: D) => <R, P extends Types.Tags<D, R> & string, Ret, Fn extends (_: Extract<R, Record<D, P>>) => Ret>(...pattern: [first: P, ...values: Array<P>, f: Fn]) => <I, F, A, Pr>(self: Matcher<I, F, R, A, Pr, Ret>) => Matcher<I, Types.AddWithout<F, Extract<R, Record<D, P>>>, Types.ApplyFilters<I, Types.AddWithout<F, Extract<R, Record<D, P>>>>, A | ReturnType<Fn>, Pr, Ret>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L694)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L682)
 
 Since v4.0.0

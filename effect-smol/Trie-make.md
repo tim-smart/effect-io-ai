@@ -5,7 +5,7 @@ Module: `Trie`<br />
 
 Constructs a new `Trie` from the specified entries (`[string, V]`).
 
-**Example**
+**Example** (Constructing a trie from entries)
 
 ```ts
 import * as Equal from "effect/Equal"
@@ -27,6 +27,6 @@ assert.equal(
 declare const make: <Entries extends Array<readonly [string, any]>>(...entries: Entries) => Trie<Entries[number] extends readonly [any, infer V] ? V : never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Trie.ts#L145)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Trie.ts#L153)
 
 Since v2.0.0

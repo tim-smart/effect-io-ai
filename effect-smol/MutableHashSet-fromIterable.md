@@ -6,7 +6,7 @@ Module: `MutableHashSet`<br />
 Creates a MutableHashSet from an iterable collection of values.
 Duplicates are automatically removed.
 
-**Example**
+**Example** (Creating a set from an iterable)
 
 ```ts
 import { MutableHashSet } from "effect"
@@ -32,6 +32,6 @@ console.log(Array.from(fromString)) // ["h", "e", "l", "o"]
 declare const fromIterable: <K = never>(keys: Iterable<K>) => MutableHashSet<K>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableHashSet.ts#L157)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableHashSet.ts#L215)
 
 Since v2.0.0

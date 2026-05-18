@@ -5,7 +5,7 @@ Module: `Encoding`<br />
 
 Encodes the given value into a base64 (RFC4648) `string`.
 
-**Example**
+**Example** (Encoding Base64 strings and bytes)
 
 ```ts
 import { Encoding } from "effect"
@@ -24,6 +24,6 @@ console.log(Encoding.encodeBase64(bytes)) // "SGVsbG8="
 declare const encodeBase64: (input: Uint8Array | string) => string
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Encoding.ts#L70)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Encoding.ts#L90)
 
 Since v4.0.0

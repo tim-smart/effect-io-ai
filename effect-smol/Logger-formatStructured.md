@@ -17,7 +17,7 @@ For example:
 }
 ```
 
-**Example**
+**Example** (Formatting logs as structured objects)
 
 ```ts
 import { Effect, Logger } from "effect"
@@ -51,6 +51,6 @@ const processingLogger = Logger.map(Logger.formatStructured, (output) => {
 declare const formatStructured: Logger<unknown, { readonly level: string; readonly fiberId: string; readonly timestamp: string; readonly message: unknown; readonly cause: string | undefined; readonly annotations: Record<string, unknown>; readonly spans: Record<string, number>; }>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Logger.ts#L660)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Logger.ts#L680)
 
 Since v4.0.0

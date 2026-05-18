@@ -6,7 +6,7 @@ Module: `TxSubscriptionRef`<br />
 Updates the value using a function and returns the new value. Publishes the
 new value to all subscribers.
 
-**Example**
+**Example** (Updating and reading atomically)
 
 ```ts
 import { Effect, TxSubscriptionRef } from "effect"
@@ -24,6 +24,6 @@ const program = Effect.gen(function*() {
 declare const updateAndGet: { <A>(f: (current: A) => A): (self: TxSubscriptionRef<A>) => Effect.Effect<A>; <A>(self: TxSubscriptionRef<A>, f: (current: A) => A): Effect.Effect<A>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxSubscriptionRef.ts#L300)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxSubscriptionRef.ts#L309)
 
 Since v4.0.0

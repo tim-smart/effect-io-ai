@@ -13,7 +13,7 @@ in tracing tools like OpenTelemetry, Jaeger, or Zipkin.
 Effect programs, so log messages automatically appear as span events unless
 you override the default loggers.
 
-**Example**
+**Example** (Recording logs as trace span events)
 
 ```ts
 import { Effect, Logger } from "effect"
@@ -57,6 +57,6 @@ const distributedProgram = Effect.gen(function*() {
 declare const tracerLogger: Logger<unknown, void>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Logger.ts#L1110)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Logger.ts#L1137)
 
 Since v4.0.0

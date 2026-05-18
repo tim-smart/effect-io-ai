@@ -5,7 +5,7 @@ Module: `TxChunk`<br />
 
 Reads the current chunk from the `TxChunk`.
 
-**Example**
+**Example** (Reading the current chunk)
 
 ```ts
 import { Chunk, Effect, TxChunk } from "effect"
@@ -29,6 +29,6 @@ const program = Effect.gen(function*() {
 declare const get: <A>(self: TxChunk<A>) => Effect.Effect<Chunk.Chunk<A>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxChunk.ts#L310)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxChunk.ts#L317)
 
 Since v4.0.0

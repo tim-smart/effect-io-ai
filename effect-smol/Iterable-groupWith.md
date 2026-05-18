@@ -5,7 +5,7 @@ Module: `Iterable`<br />
 
 Group equal, consecutive elements of an `Iterable` into `NonEmptyArray`s using the provided `isEquivalent` function.
 
-**Example**
+**Example** (Grouping consecutive elements with custom equivalence)
 
 ```ts
 import { Iterable } from "effect"
@@ -44,6 +44,6 @@ console.log(Array.from(scatteredGroups))
 declare const groupWith: { <A>(isEquivalent: (self: A, that: A) => boolean): (self: Iterable<A>) => Iterable<NonEmptyArray<A>>; <A>(self: Iterable<A>, isEquivalent: (self: A, that: A) => boolean): Iterable<NonEmptyArray<A>>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Iterable.ts#L1132)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Iterable.ts#L1169)
 
 Since v2.0.0

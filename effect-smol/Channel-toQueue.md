@@ -3,9 +3,14 @@ Module: `Channel`<br />
 
 ## Channel.toQueue
 
-Converts a channel to a queue for concurrent consumption.
+Creates a scoped queue and forks the channel to feed it for concurrent
+consumption.
 
-**Example**
+Output elements are offered to the queue. Channel completion and failure are
+signaled through the queue. The queue is shut down when the surrounding scope
+closes.
+
+**Example** (Converting channels to queues)
 
 ```ts
 import { Channel, Data } from "effect"
@@ -30,6 +35,6 @@ const queueEffect = Channel.toQueue(dataChannel, { capacity: 32 })
 declare const toQueue: { (options: { readonly capacity: "unbounded"; } | { readonly capacity: number; readonly strategy?: "dropping" | "sliding" | "suspend" | undefined; }): <OutElem, OutErr, OutDone, Env>(self: Channel<OutElem, OutErr, OutDone, unknown, unknown, unknown, Env>) => Effect.Effect<Queue.Dequeue<OutElem, OutErr | Cause.Done>, never, Env | Scope.Scope>; <OutElem, OutErr, OutDone, Env>(self: Channel<OutElem, OutErr, OutDone, unknown, unknown, unknown, Env>, options: { readonly capacity: "unbounded"; } | { readonly capacity: number; readonly strategy?: "dropping" | "sliding" | "suspend" | undefined; }): Effect.Effect<Queue.Dequeue<OutElem, OutErr | Cause.Done>, never, Env | Scope.Scope>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L7545)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L7930)
 
 Since v4.0.0

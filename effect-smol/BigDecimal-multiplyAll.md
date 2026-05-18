@@ -5,7 +5,7 @@ Module: `BigDecimal`<br />
 
 Takes an `Iterable` of `BigDecimal`s and returns their multiplication as a single `BigDecimal`.
 
-**Example**
+**Example** (Multiplying multiple decimals)
 
 ```ts
 import { fromStringUnsafe, multiplyAll } from "effect/BigDecimal"
@@ -23,6 +23,6 @@ assert.deepStrictEqual(
 declare const multiplyAll: (collection: Iterable<BigDecimal>) => BigDecimal
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigDecimal.ts#L352)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigDecimal.ts#L362)
 
 Since v4.0.0

@@ -8,7 +8,7 @@ a Duration. All fields are optional and additive.
 
 Compatible with Temporal.Duration-like objects.
 
-**Example**
+**Example** (Combining duration object fields)
 
 ```ts
 import { Duration } from "effect"
@@ -33,6 +33,6 @@ export interface DurationObject {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Duration.ts#L124)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Duration.ts#L128)
 
 Since v4.0.0

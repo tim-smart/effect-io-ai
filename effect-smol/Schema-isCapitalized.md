@@ -3,17 +3,12 @@ Module: `Schema`<br />
 
 ## Schema.isCapitalized
 
-Validates that a string has its first character in uppercase.
+Validates that the first character of a string is unchanged by
+`toUpperCase()`.
 
-**JSON Schema**
-
-This check corresponds to a `pattern` constraint in JSON Schema that matches
-strings with the first character in uppercase.
-
-**Arbitrary**
-
-When generating test data with fast-check, this applies a `patterns`
-constraint to ensure generated strings have the first character in uppercase.
+**Details**
+Empty strings pass. Strings whose first character has no lowercase form, such
+as a digit, punctuation mark, or whitespace, also pass.
 
 **Signature**
 
@@ -21,6 +16,6 @@ constraint to ensure generated strings have the first character in uppercase.
 declare const isCapitalized: (annotations?: Annotations.Filter) => AST.Filter<string>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L5526)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L5802)
 
 Since v4.0.0

@@ -31,7 +31,7 @@ This API replaces the following from Effect 3.x:
 
 - `Effect.either`
 
-**Example**
+**Example** (Usage)
 
 ```ts
 import { Effect } from "effect"
@@ -60,6 +60,6 @@ Effect.runPromise(program2).then(console.log)
 declare const result: <A, E, R>(self: Effect<A, E, R>) => Effect<Result.Result<A, E>, never, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L2226)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L2104)
 
 Since v4.0.0

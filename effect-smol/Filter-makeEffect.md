@@ -9,7 +9,7 @@ This constructor is used when the filtering operation needs to perform
 effectful computations, such as async operations, error handling, or
 accessing services from the environment.
 
-**Example**
+**Example** (Creating effectful filters)
 
 ```ts
 import { Effect, Filter, Result } from "effect"
@@ -29,6 +29,6 @@ const asyncValidate = Filter.makeEffect((id: string) =>
 declare const makeEffect: <Input, Pass, Fail, E, R>(f: (input: Input) => Effect<Result.Result<Pass, Fail>, E, R>) => FilterEffect<Input, Pass, Fail, E, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Filter.ts#L129)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Filter.ts#L167)
 
 Since v4.0.0

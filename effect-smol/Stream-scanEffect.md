@@ -5,7 +5,7 @@ Module: `Stream`<br />
 
 Effectfully accumulates state and emits the initial state plus each accumulated state.
 
-**Example**
+**Example** (Effectfully scanning stream state)
 
 ```ts
 import { Console, Effect, Stream } from "effect"
@@ -26,6 +26,6 @@ const program = Effect.gen(function*() {
 declare const scanEffect: { <S, A, E2, R2>(initial: S, f: (s: S, a: A) => Effect.Effect<S, E2, R2>): <E, R>(self: Stream<A, E, R>) => Stream<S, E | E2, R | R2>; <A, E, R, S, E2, R2>(self: Stream<A, E, R>, initial: S, f: (s: S, a: A) => Effect.Effect<S, E2, R2>): Stream<S, E | E2, R | R2>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L7316)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L7570)
 
 Since v2.0.0

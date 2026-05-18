@@ -3,7 +3,8 @@ Module: `Schema`<br />
 
 ## Schema.OptionFromUndefinedOr
 
-Companion type for `OptionFromUndefinedOr`.
+Type-level representation of a schema that decodes `undefined` as `None` and
+all other values as `Some`.
 
 **Signature**
 
@@ -13,6 +14,6 @@ export interface OptionFromUndefinedOr<S extends Top> extends decodeTo<Option<to
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L7135)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L7420)
 
 Since v4.0.0

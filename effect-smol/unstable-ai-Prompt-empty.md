@@ -5,7 +5,7 @@ Module: `Prompt`<br />
 
 An empty prompt with no messages.
 
-**Example**
+**Example** (Creating an empty prompt)
 
 ```ts
 import { Prompt } from "effect/unstable/ai"
@@ -20,6 +20,6 @@ console.log(emptyPrompt.content) // []
 declare const empty: Prompt
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L1816)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L1834)
 
 Since v4.0.0

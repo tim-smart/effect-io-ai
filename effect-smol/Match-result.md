@@ -17,10 +17,7 @@ This approach is particularly useful when handling optional values or when an
 unmatched case should be explicitly handled rather than returning a default
 value or throwing an error.
 
-**Example**
-
-```ts
-(Extracting a User Role with `Match.result`)
+**Example** (Extracting a User Role with `Match.result`)
 
 ```ts
 import { Match } from "effect"
@@ -40,7 +37,6 @@ console.log(getRole({ role: "admin" }))
 console.log(getRole({ role: "viewer" }))
 // Output: { _id: 'Result', _tag: 'Err', err: { role: 'viewer' } }
 ```
-```
 
 **Signature**
 
@@ -48,6 +44,6 @@ console.log(getRole({ role: "viewer" }))
 declare const result: <I, F, R, A, Pr, Ret>(self: Matcher<I, F, R, A, Pr, Ret>) => [Pr] extends [never] ? (input: I) => Result.Result<Unify<A>, R> : Result.Result<Unify<A>, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L1743)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L1735)
 
 Since v4.0.0

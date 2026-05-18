@@ -3,9 +3,10 @@ Module: `Chunk`<br />
 
 ## Chunk.makeEquivalence
 
-Compares the two chunks of equal length using the specified function
+Creates an `Equivalence` for chunks that compares chunk lengths and then
+compares corresponding elements with the provided element equivalence.
 
-**Example**
+**Example** (Comparing chunks for equivalence)
 
 ```ts
 import { Chunk } from "effect"
@@ -26,6 +27,6 @@ console.log(eq(chunk1, chunk3)) // false
 declare const makeEquivalence: <A>(isEquivalent: Equivalence.Equivalence<A>) => Equivalence.Equivalence<Chunk<A>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L226)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L233)
 
 Since v2.0.0

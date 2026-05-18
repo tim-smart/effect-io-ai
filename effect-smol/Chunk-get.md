@@ -5,7 +5,7 @@ Module: `Chunk`<br />
 
 This function provides a safe way to read a value at a particular index from a `Chunk`.
 
-**Example**
+**Example** (Accessing elements safely)
 
 ```ts
 import { Chunk } from "effect"
@@ -27,6 +27,6 @@ console.log(result) // Option.some("c")
 declare const get: { (index: number): <A>(self: Chunk<A>) => Option<A>; <A>(self: Chunk<A>, index: number): Option<A>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L576)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L587)
 
 Since v2.0.0

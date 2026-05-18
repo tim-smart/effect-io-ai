@@ -32,6 +32,6 @@ export interface HandlerResult<Tool extends Any> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tool.ts#L906)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tool.ts#L935)
 
-Since v1.0.0
+Since v4.0.0

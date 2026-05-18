@@ -7,7 +7,7 @@ Converts a `Chunk` into a `ReadonlyArray`. If the provided `Chunk` is
 non-empty (`NonEmptyChunk`), the function will return a
 `NonEmptyReadonlyArray`, ensuring the non-empty property is preserved.
 
-**Example**
+**Example** (Converting chunks to readonly arrays)
 
 ```ts
 import { Chunk } from "effect"
@@ -30,6 +30,6 @@ console.log(Chunk.toReadonlyArray(emptyChunk)) // []
 declare const toReadonlyArray: <S extends Chunk<any>>(self: S) => S extends NonEmptyChunk<any> ? RA.NonEmptyReadonlyArray<Chunk.Infer<S>> : ReadonlyArray<Chunk.Infer<S>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L513)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L524)
 
 Since v2.0.0

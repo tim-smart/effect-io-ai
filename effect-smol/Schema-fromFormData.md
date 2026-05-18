@@ -3,7 +3,8 @@ Module: `Schema`<br />
 
 ## Schema.fromFormData
 
-Companion type for `fromFormData`.
+Type-level representation of a schema that parses `FormData` into a tree
+record and then decodes it with the provided schema.
 
 **Signature**
 
@@ -13,6 +14,6 @@ export interface fromFormData<S extends Top> extends decodeTo<S, FormData> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L9283)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L9651)
 
 Since v4.0.0

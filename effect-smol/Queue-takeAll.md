@@ -3,12 +3,15 @@ Module: `Queue`<br />
 
 ## Queue.takeAll
 
-Take all messages from the queue, or wait for messages to be available.
+Takes all currently available messages, waiting until at least one message
+is available when the queue is empty.
 
-If the queue is done, the `done` flag will be `true`. If the queue
-fails, the Effect will fail with the error.
+**Details**
 
-**Example**
+Returns a non-empty array. If the queue completes or fails before a message
+can be taken, the effect fails with the queue's terminal error.
+
+**Example** (Taking all available values)
 
 ```ts
 import { Cause, Effect, Queue } from "effect"
@@ -31,6 +34,6 @@ const program = Effect.gen(function*() {
 declare const takeAll: <A, E>(self: Dequeue<A, E>) => Effect<Arr.NonEmptyArray<A>, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Queue.ts#L1028)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Queue.ts#L1140)
 
 Since v4.0.0

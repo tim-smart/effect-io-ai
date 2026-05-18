@@ -7,7 +7,7 @@ An `Equivalence` instance for numbers.
 
 `NaN` is considered equal to `NaN`.
 
-**Example**
+**Example** (Comparing numbers)
 
 ```ts
 import { Equivalence } from "effect"
@@ -23,6 +23,6 @@ console.log(Equivalence.Number(NaN, NaN)) // true
 declare const Number: Equivalence<number>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Equivalence.ts#L275)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Equivalence.ts#L277)
 
 Since v4.0.0

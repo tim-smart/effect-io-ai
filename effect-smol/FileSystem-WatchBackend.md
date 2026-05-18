@@ -9,7 +9,7 @@ This service provides the low-level file watching capabilities that can be
 implemented differently on various platforms (e.g., inotify on Linux,
 FSEvents on macOS, etc.).
 
-**Example**
+**Example** (Providing a custom watch backend)
 
 ```ts
 import { Effect, FileSystem, Option, Stream } from "effect"
@@ -43,6 +43,6 @@ const withCustomBackend = Effect.provideService(
 declare class WatchBackend
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FileSystem.ts#L1261)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FileSystem.ts#L1293)
 
 Since v4.0.0

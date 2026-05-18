@@ -3,9 +3,12 @@ Module: `String`<br />
 
 ## String.replace
 
-Replaces the first occurrence of a substring or pattern in a string.
+Replaces matches in a string using `String.prototype.replace`.
 
-**Example**
+String search values and non-global regular expressions replace the first
+match; global regular expressions replace every match.
+
+**Example** (Replacing a substring)
 
 ```ts
 import { pipe, String } from "effect"
@@ -24,6 +27,6 @@ assert.deepStrictEqual(
 declare const replace: (searchValue: string | RegExp, replaceValue: string) => (self: string) => string
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L226)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L240)
 
 Since v2.0.0

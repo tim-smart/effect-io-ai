@@ -5,7 +5,7 @@ Module: `Array`<br />
 
 Creates a non-empty array if either input is non-empty.
 
-**Example**
+**Example** (Preserving non-emptiness from either input)
 
 ```ts
 import type { Array } from "effect"
@@ -26,6 +26,6 @@ type OrNonEmpty<S, T, A> = S extends NonEmptyReadonlyArray<any> ? NonEmptyArray<
     : Array<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L3000)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L3010)
 
 Since v2.0.0

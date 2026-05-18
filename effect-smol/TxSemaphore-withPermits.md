@@ -3,14 +3,14 @@ Module: `TxSemaphore`<br />
 
 ## TxSemaphore.withPermits
 
-Executes an effect with the specified number of permits from the semaphore.
-The permits are automatically acquired before execution and released afterwards,
-even if the effect fails or is interrupted.
+Runs an effect while holding the specified number of permits from the
+semaphore.
 
-**Note**: The permit acquisition and release operations use atomic semantics
-to ensure proper resource management with Effect's scoped operations.
+The permits are acquired before the effect starts and released after it
+completes, fails, or is interrupted. Passing a non-positive `n` dies with a
+defect; passing a value greater than the semaphore capacity can wait forever.
 
-**Example**
+**Example** (Running an effect with multiple permits)
 
 ```ts
 import { Console, Effect, TxSemaphore } from "effect"
@@ -40,6 +40,6 @@ const program = Effect.gen(function*() {
 declare const withPermits: { (self: TxSemaphore, n: number): <A, E, R>(effect: Effect.Effect<A, E, R>) => Effect.Effect<A, E, R>; <A, E, R>(self: TxSemaphore, n: number, effect: Effect.Effect<A, E, R>): Effect.Effect<A, E, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxSemaphore.ts#L496)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxSemaphore.ts#L537)
 
 Since v4.0.0

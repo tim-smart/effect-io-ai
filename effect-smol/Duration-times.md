@@ -3,9 +3,14 @@ Module: `Duration`<br />
 
 ## Duration.times
 
-Multiplies a Duration by a number.
+Multiplies a `Duration` by a number.
 
-**Example**
+For nanosecond-backed durations, the multiplier must be convertible to a
+`bigint`; fractional or non-finite multipliers can throw. Infinite
+durations return positive infinity, negative infinity, or zero depending on
+the multiplier sign.
+
+**Example** (Multiplying durations)
 
 ```ts
 import { Duration } from "effect"
@@ -20,6 +25,6 @@ console.log(Duration.toSeconds(doubled)) // 10
 declare const times: { (times: number): (self: Duration) => Duration; (self: Duration, times: number): Duration; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Duration.ts#L1255)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Duration.ts#L1313)
 
 Since v2.0.0

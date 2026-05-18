@@ -5,7 +5,7 @@ Module: `Boolean`<br />
 
 Combines two booleans using an implication: `(!self || that)`.
 
-**Example**
+**Example** (Checking boolean implication)
 
 ```ts
 import { implies } from "effect/Boolean"
@@ -23,6 +23,6 @@ assert.deepStrictEqual(implies(false, false), true)
 declare const implies: { (that: boolean): (self: boolean) => boolean; (self: boolean, that: boolean): boolean; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Boolean.ts#L288)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Boolean.ts#L301)
 
 Since v2.0.0

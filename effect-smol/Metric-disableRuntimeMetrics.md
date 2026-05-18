@@ -9,7 +9,7 @@ This is useful when you want to selectively disable runtime metrics for specific
 parts of your application while keeping them enabled elsewhere, or when you need
 to avoid the overhead of metrics collection in performance-critical sections.
 
-**Example**
+**Example** (Disabling runtime metrics for an effect)
 
 ```ts
 import { Console, Data, Effect, Layer, Metric } from "effect"
@@ -38,7 +38,7 @@ const program = Effect.gen(function*() {
         (_, i) =>
           Effect.gen(function*() {
             // Simulate intensive computation
-            const result = i * i + Math.random()
+            const result = i * i + (i % 10) / 10
             return result
           })
       )
@@ -86,6 +86,6 @@ const finalProgram = program.pipe(
 declare const disableRuntimeMetrics: <A, E, R>(self: Effect<A, E, R>) => Effect<A, E, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Metric.ts#L3971)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Metric.ts#L3998)
 
 Since v4.0.0

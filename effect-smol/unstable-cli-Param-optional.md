@@ -3,12 +3,13 @@ Module: `Param`<br />
 
 ## Param.optional
 
-Creates an optional option that returns None when not provided.
+Makes a flag or positional argument optional.
 
-Optional options never fail with MissingOption errors. If the option is not
-provided on the command line, Option.none() is returned instead.
+When the parameter is absent, parsing succeeds with `Option.none()` instead
+of failing with a missing option or missing argument error. When present, the
+parsed value is wrapped in `Option.some()`.
 
-**Example**
+**Example** (Making parameters optional)
 
 ```ts
 import * as Param from "effect/unstable/cli/Param"
@@ -25,6 +26,6 @@ const port = Param.optional(Param.integer(Param.flagKind, "port"))
 declare const optional: <Kind extends ParamKind, A>(param: Param<Kind, A>) => Param<Kind, Option.Option<A>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Param.ts#L1099)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Param.ts#L1187)
 
 Since v4.0.0

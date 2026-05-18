@@ -9,7 +9,7 @@ Frequency metrics are ideal for tracking categorical data where you want to coun
 how many times specific string values occur, such as HTTP status codes, user actions,
 error types, or any discrete string-based events.
 
-**Example**
+**Example** (Using frequency metrics)
 
 ```ts
 import { Data, Effect, Metric } from "effect"
@@ -86,6 +86,6 @@ const program = Effect.gen(function*() {
 export interface Frequency extends Metric<string, FrequencyState> {}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Metric.ts#L452)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Metric.ts#L403)
 
 Since v2.0.0

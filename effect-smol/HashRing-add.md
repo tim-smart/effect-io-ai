@@ -12,6 +12,6 @@ will be updated. For example, you can use this to update the node's weight.
 declare const add: { <A extends PrimaryKey.PrimaryKey>(node: A, options?: { readonly weight?: number | undefined; }): (self: HashRing<A>) => HashRing<A>; <A extends PrimaryKey.PrimaryKey>(self: HashRing<A>, node: A, options?: { readonly weight?: number | undefined; }): HashRing<A>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashRing.ts#L128)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashRing.ts#L199)
 
 Since v4.0.0

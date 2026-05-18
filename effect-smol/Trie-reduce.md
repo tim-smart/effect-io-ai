@@ -5,7 +5,7 @@ Module: `Trie`<br />
 
 Reduce a state over the entries of the `Trie`.
 
-**Example**
+**Example** (Reducing entries)
 
 ```ts
 import * as Trie from "effect/Trie"
@@ -43,6 +43,6 @@ assert.equal(
 declare const reduce: { <Z, V>(zero: Z, f: (accumulator: Z, value: V, key: string) => Z): (self: Trie<V>) => Z; <Z, V>(self: Trie<V>, zero: Z, f: (accumulator: Z, value: V, key: string) => Z): Z; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Trie.ts#L630)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Trie.ts#L655)
 
 Since v2.0.0

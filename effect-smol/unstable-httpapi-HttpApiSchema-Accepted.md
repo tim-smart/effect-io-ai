@@ -3,15 +3,14 @@ Module: `HttpApiSchema`<br />
 
 ## HttpApiSchema.Accepted
 
-A void schema with the HTTP status code 202.
-This is used to represent empty responses with the status code 202.
+Type of the `Accepted` schema, a void schema annotated with HTTP status code 202.
 
 **Signature**
 
 ```ts
-declare const Accepted: Accepted
+export interface Accepted extends Schema.Void {}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiSchema.ts#L225)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiSchema.ts#L233)
 
 Since v4.0.0

@@ -5,7 +5,7 @@ Module: `PubSub`<br />
 
 Creates an unbounded `PubSub`.
 
-**Example**
+**Example** (Creating an unbounded PubSub)
 
 ```ts
 import { Effect } from "effect"
@@ -20,15 +20,16 @@ const program = Effect.gen(function*() {
     replay: 10
   })
 
-  // Can publish unlimited messages
-  for (let i = 0; i < 1000; i++) {
-    yield* PubSub.publish(pubsub, `message-${i}`)
-  }
-
   yield* Effect.scoped(Effect.gen(function*() {
     const subscription = yield* PubSub.subscribe(pubsub)
+
+    // Can publish unlimited messages
+    for (let i = 0; i < 3; i++) {
+      yield* PubSub.publish(pubsub, `message-${i}`)
+    }
+
     const message = yield* PubSub.take(subscription)
-    console.log("First message:", message)
+    console.log("First message:", message) // "message-0"
   }))
 })
 ```
@@ -39,6 +40,6 @@ const program = Effect.gen(function*() {
 declare const unbounded: <A>(options?: { readonly replay?: number | undefined; }) => Effect.Effect<PubSub<A>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PubSub.ts#L462)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PubSub.ts#L497)
 
 Since v2.0.0

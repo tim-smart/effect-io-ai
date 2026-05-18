@@ -3,16 +3,14 @@ Module: `AnthropicTool`<br />
 
 ## AnthropicTool.ComputerUseLeftMouseUpAction
 
-Release the left mouse button.
-
-Used for fine-grained click control.
+Computer-use action payload for releasing the left mouse button, optionally at a specific coordinate.
 
 **Signature**
 
 ```ts
-declare const ComputerUseLeftMouseUpAction: Schema.Struct<{ readonly action: Schema.Literal<"left_mouse_up">; readonly coordinate: Schema.optional<Schema.Tuple<readonly [Schema.Number, Schema.Number]>>; }>
+type ComputerUseLeftMouseUpAction = typeof ComputerUseLeftMouseUpAction.Type
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L573)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L625)
 
-Since v1.0.0
+Since v4.0.0

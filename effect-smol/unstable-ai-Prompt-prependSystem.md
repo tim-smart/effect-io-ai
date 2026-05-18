@@ -3,13 +3,12 @@ Module: `Prompt`<br />
 
 ## Prompt.prependSystem
 
-Creates a new prompt from the specified prompt with the provided text content
-prepended to the start of existing system message content.
+Creates a new prompt with a leading system message. If the prompt already has
+a system message, the new message uses the provided content prepended to the
+first existing system message's content; the original messages remain after
+it.
 
-If no system message exists in the specified prompt, the provided content
-will be used to create a system message.
-
-**Example**
+**Example** (Prepending system instructions)
 
 ```ts
 import { Prompt } from "effect/unstable/ai"
@@ -36,6 +35,6 @@ const replaced = Prompt.prependSystem(
 declare const prependSystem: { (content: string): (self: Prompt) => Prompt; (self: Prompt, content: string): Prompt; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L2152)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L2174)
 
-Since v1.0.0
+Since v4.0.0

@@ -8,7 +8,7 @@ Creates a new sliding `TxQueue` with the specified capacity that evicts old item
 **Return behavior**: This function returns a new TxQueue reference with
 sliding strategy. No existing TxQueue instances are modified.
 
-**Example**
+**Example** (Creating sliding queues)
 
 ```ts
 import { Effect, TxQueue } from "effect"
@@ -35,6 +35,6 @@ const program = Effect.gen(function*() {
 declare const sliding: <A = never, E = never>(capacity: number) => Effect.Effect<TxQueue<A, E>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxQueue.ts#L534)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxQueue.ts#L499)
 
 Since v4.0.0

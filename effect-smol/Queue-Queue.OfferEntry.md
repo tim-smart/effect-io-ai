@@ -3,7 +3,11 @@ Module: `Queue`<br />
 
 ## Queue.Queue.OfferEntry
 
-Represents an entry in the queue's offer buffer.
+Represents a suspended offer waiting to be admitted to a bounded queue.
+
+An entry is either a single message or a batch with an offset into its
+remaining messages, plus a resume callback that completes the suspended
+offer when the queue can accept more input.
 
 **Signature**
 
@@ -21,6 +25,6 @@ type OfferEntry<A> = | {
     }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Queue.ts#L264)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Queue.ts#L347)
 
 Since v4.0.0

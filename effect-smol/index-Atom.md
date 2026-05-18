@@ -13,4 +13,4 @@ export * as Atom from "effect/unstable/reactivity/Atom"
 
 [Source](https://github.com/Effect-TS/effect/tree/main/packages/atom/vue/src/index.ts#L29)
 
-Since v1.0.0
+Since v4.0.0

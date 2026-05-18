@@ -11,6 +11,6 @@ Creates an EmbeddingModel service from a provider embedMany implementation.
 declare const make: (params: { readonly embedMany: (options: ProviderOptions) => Effect.Effect<ProviderResponse, AiError.AiError>; }) => Effect.Effect<Service>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EmbeddingModel.ts#L142)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EmbeddingModel.ts#L143)
 
 Since v4.0.0

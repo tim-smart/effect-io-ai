@@ -5,7 +5,7 @@ Module: `Metric`<br />
 
 Interface for the fiber runtime metrics service that tracks fiber lifecycle events.
 
-**Example**
+**Example** (Providing a custom fiber metrics service)
 
 ```ts
 import type { Context } from "effect"
@@ -48,6 +48,6 @@ export interface FiberRuntimeMetricsService {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Metric.ts#L3554)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Metric.ts#L3570)
 
 Since v4.0.0

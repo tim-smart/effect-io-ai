@@ -9,7 +9,7 @@ values from the right stream while the left stream runs for its effects.
 The merged stream ends when the right stream completes, interrupting the
 left stream. Failures from the left stream still fail the merged stream.
 
-**Example**
+**Example** (Merging streams while keeping right values)
 
 ```ts
 import { Console, Effect, Stream } from "effect"
@@ -36,6 +36,6 @@ Effect.runPromise(program)
 declare const mergeRight: { <AR, ER, RR>(right: Stream<AR, ER, RR>): <AL, EL, RL>(left: Stream<AL, EL, RL>) => Stream<AR, ER | EL, RR | RL>; <AL, EL, RL, AR, ER, RR>(left: Stream<AL, EL, RL>, right: Stream<AR, ER, RR>): Stream<AR, EL | ER, RL | RR>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L3189)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L3326)
 
 Since v2.0.0

@@ -5,13 +5,14 @@ Module: `DateTime`<br />
 
 Get the current time using the `Clock` service and convert it to a `DateTime`.
 
-**Example**
+**Example** (Getting the current DateTime)
 
 ```ts
 import { DateTime, Effect } from "effect"
 
 Effect.gen(function*() {
-  const now = yield* DateTime.now
+  const now = yield* DateTime.nowAsDate
+  console.log(now instanceof Date) // true
 })
 ```
 
@@ -21,6 +22,6 @@ Effect.gen(function*() {
 declare const now: Effect.Effect<Utc, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L593)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L775)
 
 Since v3.6.0

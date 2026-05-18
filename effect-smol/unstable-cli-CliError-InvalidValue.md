@@ -5,7 +5,7 @@ Module: `CliError`<br />
 
 Error thrown when an option or argument value is invalid.
 
-**Example**
+**Example** (Creating invalid value errors)
 
 ```ts
 import { Effect } from "effect"
@@ -39,6 +39,6 @@ console.log(invalidArgError.message)
 declare class InvalidValue
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/CliError.ts#L308)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/CliError.ts#L355)
 
 Since v4.0.0

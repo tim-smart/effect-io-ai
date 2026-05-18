@@ -7,7 +7,7 @@ A FiberMap is a collection of fibers, indexed by a key. When the associated
 Scope is closed, all fibers in the map will be interrupted. Fibers are
 automatically removed from the map when they complete.
 
-**Example**
+**Example** (Managing fibers in a map)
 
 ```ts
 import { Effect, FiberMap } from "effect"
@@ -17,8 +17,8 @@ const program = Effect.gen(function*() {
   const map = yield* FiberMap.make<string>()
 
   // Add some fibers to the map
-  yield* FiberMap.run(map, "task1", Effect.succeed("Hello"))
-  yield* FiberMap.run(map, "task2", Effect.succeed("World"))
+  yield* FiberMap.run(map, "task1", Effect.never)
+  yield* FiberMap.run(map, "task2", Effect.never)
 
   // Get the size of the map
   const size = yield* FiberMap.size(map)
@@ -43,6 +43,6 @@ export interface FiberMap<in out K, out A = unknown, out E = unknown>
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FiberMap.ts#L49)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FiberMap.ts#L85)
 
 Since v2.0.0

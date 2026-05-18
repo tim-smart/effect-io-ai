@@ -9,7 +9,7 @@ This is useful when you have an Effect that produces a Layer, and you want to
 use that Layer directly. The resulting Layer will have the combined error and
 dependency types from both the outer Effect and the inner Layer.
 
-**Example**
+**Example** (Unwrapping an effectful layer)
 
 ```ts
 import { Effect, Layer, Context } from "effect"
@@ -31,6 +31,6 @@ const unwrappedLayer = Layer.unwrap(layerEffect)
 declare const unwrap: <A, E1, R1, E, R>(self: Effect<Layer<A, E1, R1>, E, R>) => Layer<A, E | E1, R1 | Exclude<R, Scope.Scope>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L920)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L1005)
 
 Since v4.0.0

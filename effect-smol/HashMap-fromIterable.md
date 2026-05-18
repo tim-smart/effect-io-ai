@@ -5,7 +5,7 @@ Module: `HashMap`<br />
 
 Creates a new `HashMap` from an iterable collection of key/value pairs.
 
-**Example**
+**Example** (Creating a HashMap from an iterable)
 
 ```ts
 import * as HashMap from "effect/HashMap"
@@ -22,6 +22,6 @@ console.log(HashMap.get(map, "a")) // Option.some(1)
 declare const fromIterable: <K, V>(entries: Iterable<readonly [K, V]>) => HashMap<K, V>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashMap.ts#L269)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashMap.ts#L352)
 
 Since v2.0.0

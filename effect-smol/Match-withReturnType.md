@@ -14,10 +14,7 @@ matching condition produces a value of the expected type.
 **Important:** This function must be the first step in the matcher pipeline.
 If used later, TypeScript will not enforce type consistency correctly.
 
-**Example**
-
-```ts
-(Validating Return Type Consistency)
+**Example** (Validating Return Type Consistency)
 
 ```ts
 import { Match } from "effect"
@@ -33,7 +30,6 @@ const match = Match.type<{ a: number } | { b: string }>().pipe(
   Match.exhaustive
 )
 ```
-```
 
 **Signature**
 
@@ -41,6 +37,6 @@ const match = Match.type<{ a: number } | { b: string }>().pipe(
 declare const withReturnType: <Ret>() => <I, F, R, A, Pr, _>(self: Matcher<I, F, R, A, Pr, _>) => [Ret] extends [[A] extends [never] ? any : A] ? Matcher<I, F, R, A, Pr, Ret> : "withReturnType constraint does not extend Result type"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L473)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L458)
 
 Since v4.0.0

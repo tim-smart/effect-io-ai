@@ -5,7 +5,7 @@ Module: `Stream`<br />
 
 The default chunk size used by Stream constructors and combinators.
 
-**Example**
+**Example** (Reading the default chunk size)
 
 ```ts
 import { Console, Effect, Stream } from "effect"
@@ -24,6 +24,6 @@ Effect.runPromise(program)
 declare const DefaultChunkSize: number
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L293)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L327)
 
 Since v2.0.0

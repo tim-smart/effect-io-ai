@@ -7,7 +7,7 @@ Decodes a `Duration.Input` into a `Duration`.
 
 If the input is not a valid `Duration.Input`, it throws an error.
 
-**Example**
+**Example** (Decoding duration inputs)
 
 ```ts
 import { Duration } from "effect"
@@ -24,6 +24,6 @@ const duration4 = Duration.fromInputUnsafe([2, 500_000_000]) // 2 seconds and 50
 declare const fromInputUnsafe: (input: Input) => Duration
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Duration.ts#L155)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Duration.ts#L160)
 
 Since v2.0.0

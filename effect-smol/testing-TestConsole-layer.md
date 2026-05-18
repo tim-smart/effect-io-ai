@@ -7,7 +7,7 @@ Creates a `Layer` which constructs a `TestConsole`.
 This layer can be used to provide a TestConsole implementation
 for testing purposes.
 
-**Example**
+**Example** (Providing a test console layer)
 
 ```ts
 import { Console, Effect } from "effect"
@@ -31,6 +31,6 @@ const program = Effect.gen(function*() {
 declare const layer: Layer.Layer<TestConsole, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TestConsole.ts#L220)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TestConsole.ts#L237)
 
 Since v4.0.0

@@ -5,7 +5,7 @@ Module: `TxPriorityQueue`<br />
 
 Removes elements matching the predicate.
 
-**Example**
+**Example** (Removing matching values)
 
 ```ts
 import { Effect, Order, TxPriorityQueue } from "effect"
@@ -24,6 +24,6 @@ const program = Effect.gen(function*() {
 declare const removeIf: { <A>(predicate: Predicate<A>): (self: TxPriorityQueue<A>) => Effect.Effect<void>; <A>(self: TxPriorityQueue<A>, predicate: Predicate<A>): Effect.Effect<void>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxPriorityQueue.ts#L458)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxPriorityQueue.ts#L474)
 
 Since v4.0.0

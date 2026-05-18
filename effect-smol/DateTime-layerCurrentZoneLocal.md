@@ -8,7 +8,7 @@ Create a Layer from the system's local time zone.
 This layer provides the `CurrentTimeZone` service using the system's
 configured local time zone.
 
-**Example**
+**Example** (Providing local time zone layers)
 
 ```ts
 import { DateTime, Effect } from "effect"
@@ -28,6 +28,6 @@ Effect.provide(program, DateTime.layerCurrentZoneLocal)
 declare const layerCurrentZoneLocal: Layer.Layer<CurrentTimeZone, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L2404)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L2699)
 
 Since v3.6.0

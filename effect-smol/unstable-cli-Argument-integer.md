@@ -5,7 +5,7 @@ Module: `Argument`<br />
 
 Creates a positional integer argument.
 
-**Example**
+**Example** (Creating an integer argument)
 
 ```ts
 import { Argument } from "effect/unstable/cli"
@@ -19,6 +19,6 @@ const count = Argument.integer("count")
 declare const integer: (name: string) => Argument<number>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Argument.ts#L64)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Argument.ts#L88)
 
 Since v4.0.0

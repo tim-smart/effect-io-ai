@@ -16,6 +16,6 @@ current reporters or swapping them inside a `FiberRef`).
 declare const CurrentErrorReporters: Context.Reference<ReadonlySet<ErrorReporter>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ErrorReporter.ts#L168)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ErrorReporter.ts#L175)
 
 Since v4.0.0

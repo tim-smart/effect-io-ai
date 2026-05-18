@@ -9,7 +9,7 @@ Provides low-level file operations including reading, writing, seeking,
 and retrieving file information. File handles are automatically managed
 within scoped operations to ensure proper cleanup.
 
-**Example**
+**Example** (Working with file handles)
 
 ```ts
 import { Console, Effect, FileSystem } from "effect"
@@ -58,6 +58,6 @@ export interface File {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FileSystem.ts#L1046)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FileSystem.ts#L1063)
 
 Since v4.0.0

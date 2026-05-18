@@ -9,7 +9,7 @@ This function allows you to define exhaustive pattern matching for discriminated
 by providing handlers for each possible `_tag` value. It ensures type safety and
 can optionally enforce a specific return type across all branches.
 
-**Example**
+**Example** (Matching type tags)
 
 ```ts
 import { Match } from "effect"
@@ -49,6 +49,6 @@ console.log(processResult({ _tag: "Loading" }))
 declare const typeTags: { <I, Ret>(): <P extends { readonly [Tag in Types.Tags<"_tag", I> & string]: (_: Extract<I, { readonly _tag: Tag; }>) => Ret; } & { readonly [Tag in Exclude<keyof P, Types.Tags<"_tag", I>>]: never; }>(fields: P) => (input: I) => Ret; <I>(): <P extends { readonly [Tag in Types.Tags<"_tag", I> & string]: (_: Extract<I, { readonly _tag: Tag; }>) => any; } & { readonly [Tag in Exclude<keyof P, Types.Tags<"_tag", I>>]: never; }>(fields: P) => (input: I) => Unify<ReturnType<P[keyof P]>>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L420)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L405)
 
 Since v4.0.0

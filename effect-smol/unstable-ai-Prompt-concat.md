@@ -8,7 +8,7 @@ Concatenates a prompt with additional raw input by concatenating messages.
 Creates a new prompt containing all messages from both the original prompt,
 and the provided raw input, maintaining the order of messages.
 
-**Example**
+**Example** (Concatenating prompts)
 
 ```ts
 import { Prompt } from "effect/unstable/ai"
@@ -27,6 +27,6 @@ const merged = Prompt.concat(systemPrompt, "Hello, world!")
 declare const concat: { (input: RawInput): (self: Prompt) => Prompt; (self: Prompt, input: RawInput): Prompt; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L2062)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L2083)
 
 Since v4.0.0

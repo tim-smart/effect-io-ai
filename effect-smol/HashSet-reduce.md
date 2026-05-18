@@ -5,7 +5,7 @@ Module: `HashSet`<br />
 
 Reduces the HashSet to a single value by iterating through the values and applying an accumulator function.
 
-**Example**
+**Example** (Reducing HashSet values)
 
 ```ts
 import * as HashSet from "effect/HashSet"
@@ -26,6 +26,6 @@ console.log(concatenated) // Order may vary: "abc", "bac", etc.
 declare const reduce: { <V, U>(zero: U, f: (accumulator: U, value: V) => U): (self: HashSet<V>) => U; <V, U>(self: HashSet<V>, zero: U, f: (accumulator: U, value: V) => U): U; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashSet.ts#L566)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashSet.ts#L628)
 
 Since v2.0.0

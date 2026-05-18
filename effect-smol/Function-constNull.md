@@ -5,7 +5,7 @@ Module: `Function`<br />
 
 A thunk that returns always `null`.
 
-**Example**
+**Example** (Returning null from a thunk)
 
 ```ts
 import { constNull } from "effect/Function"
@@ -20,6 +20,6 @@ assert.deepStrictEqual(constNull(), null)
 declare const constNull: LazyArg<null>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Function.ts#L326)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Function.ts#L370)
 
 Since v2.0.0

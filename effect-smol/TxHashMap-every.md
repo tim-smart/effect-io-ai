@@ -5,7 +5,7 @@ Module: `TxHashMap`<br />
 
 Checks if all entries in the TxHashMap satisfy the given predicate.
 
-**Example**
+**Example** (Checking whether every entry matches)
 
 ```ts
 import { Effect, TxHashMap } from "effect"
@@ -46,6 +46,6 @@ const program = Effect.gen(function*() {
 declare const every: { <K, V>(predicate: (value: V, key: K) => boolean): (self: TxHashMap<K, V>) => Effect.Effect<boolean>; <K, V>(self: TxHashMap<K, V>, predicate: (value: V, key: K) => boolean): Effect.Effect<boolean>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashMap.ts#L1783)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashMap.ts#L1855)
 
 Since v2.0.0

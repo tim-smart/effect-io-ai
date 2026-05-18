@@ -5,38 +5,40 @@ Module: `BigDecimal`<br />
 
 Provides a division operation on `BigDecimal`s.
 
-If the dividend is not a multiple of the divisor the result will be a `BigDecimal` value
-which represents the integer division rounded down to the nearest integer.
+If the dividend is not a multiple of the divisor, the result will be a `BigDecimal` value
+with up to the default division precision.
 
 If the divisor is `0`, the result will be `Option.none()`.
 
-**Example**
+**Example** (Dividing decimals safely)
 
 ```ts
 import { BigDecimal, Option } from "effect"
-import * as assert from "node:assert"
 
-assert.deepStrictEqual(
-  BigDecimal.divide(
-    BigDecimal.fromStringUnsafe("6"),
-    BigDecimal.fromStringUnsafe("3")
-  ),
-  Option.some(BigDecimal.fromStringUnsafe("2"))
-)
-assert.deepStrictEqual(
-  BigDecimal.divide(
-    BigDecimal.fromStringUnsafe("6"),
-    BigDecimal.fromStringUnsafe("4")
-  ),
-  Option.some(BigDecimal.fromStringUnsafe("1.5"))
-)
-assert.deepStrictEqual(
-  BigDecimal.divide(
-    BigDecimal.fromStringUnsafe("6"),
-    BigDecimal.fromStringUnsafe("0")
-  ),
-  Option.none()
-)
+console.log(
+  Option.getOrThrow(
+    BigDecimal.divide(
+      BigDecimal.fromStringUnsafe("6"),
+      BigDecimal.fromStringUnsafe("3")
+    )
+  )
+) // BigDecimal(2)
+console.log(
+  Option.getOrThrow(
+    BigDecimal.divide(
+      BigDecimal.fromStringUnsafe("6"),
+      BigDecimal.fromStringUnsafe("4")
+    )
+  )
+) // BigDecimal(1.5)
+console.log(
+  Option.isNone(
+    BigDecimal.divide(
+      BigDecimal.fromStringUnsafe("6"),
+      BigDecimal.fromStringUnsafe("0")
+    )
+  )
+) // true
 ```
 
 **Signature**
@@ -45,6 +47,6 @@ assert.deepStrictEqual(
 declare const divide: { (that: BigDecimal): (self: BigDecimal) => Option.Option<BigDecimal>; (self: BigDecimal, that: BigDecimal): Option.Option<BigDecimal>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigDecimal.ts#L510)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigDecimal.ts#L524)
 
 Since v2.0.0

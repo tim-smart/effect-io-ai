@@ -7,7 +7,7 @@ Returns a new `Schedule` that takes at most the specified number of outputs
 from the schedule. Once the specified number of outputs is reached, the
 schedule will stop.
 
-**Example**
+**Example** (Taking a limited number of recurrences)
 
 ```ts
 import { Console, Data, Effect, Schedule } from "effect"
@@ -22,7 +22,7 @@ const limitedHeartbeat = Schedule.spaced("1 second").pipe(
 const heartbeatProgram = Effect.gen(function*() {
   yield* Effect.repeat(
     Effect.gen(function*() {
-      yield* Console.log(`Heartbeat at ${new Date().toISOString()}`)
+      yield* Console.log("Heartbeat")
       return "pulse"
     }),
     limitedHeartbeat
@@ -69,8 +69,8 @@ const samplingSchedule = Schedule.fixed("500 millis").pipe(
 const samplingProgram = Effect.gen(function*() {
   yield* Effect.repeat(
     Effect.gen(function*() {
-      const value = Math.random()
-      yield* Console.log(`Sampled value: ${value.toFixed(3)}`)
+      const value = "sample"
+      yield* Console.log(`Sampled value: ${value}`)
       return value
     }),
     samplingSchedule.pipe(
@@ -86,6 +86,6 @@ const samplingProgram = Effect.gen(function*() {
 declare const take: { (n: number): <Output, Input, Error, Env>(self: Schedule<Output, Input, Error, Env>) => Schedule<Output, Input, Error, Env>; <Output, Input, Error, Env>(self: Schedule<Output, Input, Error, Env>, n: number): Schedule<Output, Input, Error, Env>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L2939)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L2940)
 
 Since v2.0.0

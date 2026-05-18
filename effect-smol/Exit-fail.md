@@ -31,6 +31,6 @@ console.log(Exit.isFailure(exit)) // true
 declare const fail: <E>(e: E) => Exit<never, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Exit.ts#L287)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Exit.ts#L289)
 
 Since v2.0.0

@@ -358,7 +358,7 @@ export interface Optional<in out S, in out A> {
    *
    * @see `.pick()` — the inverse operation
    *
-   * @since 1.0.0
+   * @since 4.0.0
    */
   omit<S, A, Keys extends ReadonlyArray<keyof A>>(
     this: Lens<S, A>,
@@ -471,6 +471,6 @@ export interface Optional<in out S, in out A> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Optic.ts#L574)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Optic.ts#L573)
 
 Since v4.0.0

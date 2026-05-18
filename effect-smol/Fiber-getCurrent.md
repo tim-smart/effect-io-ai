@@ -6,7 +6,7 @@ Module: `Fiber`<br />
 Returns the current fiber if called from within a fiber context,
 otherwise returns `undefined`.
 
-**Example**
+**Example** (Getting the current fiber)
 
 ```ts
 import { Effect, Fiber } from "effect"
@@ -25,6 +25,6 @@ const program = Effect.gen(function*() {
 declare const getCurrent: () => Fiber<any, any> | undefined
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Fiber.ts#L480)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Fiber.ts#L499)
 
 Since v2.0.0

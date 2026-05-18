@@ -7,7 +7,7 @@ Creates a new TestConsole instance that captures all console output.
 The returned TestConsole implements the Console interface and provides
 additional methods to retrieve logged messages.
 
-**Example**
+**Example** (Creating a test console)
 
 ```ts
 import { Console, Effect } from "effect"
@@ -31,6 +31,6 @@ const program = Effect.gen(function*() {
 declare const make: Effect.Effect<TestConsole, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TestConsole.ts#L126)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TestConsole.ts#L141)
 
 Since v4.0.0

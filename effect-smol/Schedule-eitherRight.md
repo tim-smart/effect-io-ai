@@ -7,7 +7,7 @@ Combines two `Schedule`s by recurring if either of the two schedules wants
 to recur, using the minimum of the two durations between recurrences and
 outputting the result of the right schedule (i.e. `other`).
 
-**Example**
+**Example** (Combining either schedules and keeping the right output)
 
 ```ts
 import { Console, Effect, Schedule } from "effect"
@@ -40,6 +40,6 @@ const program = Effect.gen(function*() {
 declare const eitherRight: { <Output2, Input2, Error2, Env2>(other: Schedule<Output2, Input2, Error2, Env2>): <Output, Input, Error, Env>(self: Schedule<Output, Input, Error, Env>) => Schedule<Output2, Input & Input2, Error | Error2, Env | Env2>; <Output, Input, Error, Env, Output2, Input2, Error2, Env2>(self: Schedule<Output, Input, Error, Env>, other: Schedule<Output2, Input2, Error2, Env2>): Schedule<Output2, Input & Input2, Error | Error2, Env | Env2>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L1777)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L1764)
 
 Since v2.0.0

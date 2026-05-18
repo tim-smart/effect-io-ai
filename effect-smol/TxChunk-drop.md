@@ -8,7 +8,7 @@ Drops the first `n` elements from the `TxChunk`.
 **Mutation behavior**: This function mutates the original TxChunk by removing
 the first n elements. It does not return a new TxChunk reference.
 
-**Example**
+**Example** (Dropping leading elements)
 
 ```ts
 import { Chunk, Effect, TxChunk } from "effect"
@@ -30,6 +30,6 @@ const program = Effect.gen(function*() {
 declare const drop: { (n: number): <A>(self: TxChunk<A>) => Effect.Effect<void>; <A>(self: TxChunk<A>, n: number): Effect.Effect<void>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxChunk.ts#L544)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxChunk.ts#L559)
 
 Since v4.0.0

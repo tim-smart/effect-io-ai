@@ -5,7 +5,7 @@ Module: `Argument`<br />
 
 Creates a positional directory path argument.
 
-**Example**
+**Example** (Creating a directory path argument)
 
 ```ts
 import { Argument } from "effect/unstable/cli"
@@ -19,6 +19,6 @@ const workspace = Argument.directory("workspace", { mustExist: true }) // Must e
 declare const directory: (name: string, options?: { readonly mustExist?: boolean | undefined; }) => Argument<string>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Argument.ts#L97)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Argument.ts#L123)
 
 Since v4.0.0

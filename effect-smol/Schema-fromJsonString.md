@@ -3,7 +3,8 @@ Module: `Schema`<br />
 
 ## Schema.fromJsonString
 
-Companion type for `fromJsonString`.
+Type-level representation of a schema that parses a JSON string and then
+decodes the parsed value with the provided schema.
 
 **Signature**
 
@@ -13,6 +14,6 @@ export interface fromJsonString<S extends Top> extends decodeTo<S, String> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L9067)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L9434)
 
 Since v4.0.0

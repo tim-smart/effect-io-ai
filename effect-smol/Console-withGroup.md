@@ -9,7 +9,7 @@ This function creates a console group around the execution of an Effect,
 automatically starting the group before the Effect runs and ending it
 after the Effect completes.
 
-**Example**
+**Example** (Wrapping an effect in a group)
 
 ```ts
 import { Console, Effect } from "effect"
@@ -32,6 +32,6 @@ const program = Effect.gen(function*() {
 declare const withGroup: ((options?: { readonly label?: string | undefined; readonly collapsed?: boolean | undefined; }) => <A, E, R>(self: Effect.Effect<A, E, R>) => Effect.Effect<A, E, R>) & (<A, E, R>(self: Effect.Effect<A, E, R>, options?: { readonly label?: string | undefined; readonly collapsed?: boolean | undefined; }) => Effect.Effect<A, E, R>)
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Console.ts#L652)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Console.ts#L677)
 
 Since v2.0.0

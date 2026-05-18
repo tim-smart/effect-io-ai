@@ -5,7 +5,7 @@ Module: `String`<br />
 
 Repeats the string the specified number of times.
 
-**Example**
+**Example** (Repeating strings)
 
 ```ts
 import { pipe, String } from "effect"
@@ -21,6 +21,6 @@ assert.deepStrictEqual(pipe("hello", String.repeat(3)), "hellohellohello")
 declare const repeat: (count: number) => (self: string) => string
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L740)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L785)
 
 Since v2.0.0

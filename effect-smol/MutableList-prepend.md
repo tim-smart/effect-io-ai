@@ -6,7 +6,7 @@ Module: `MutableList`<br />
 Prepends an element to the beginning of the MutableList.
 This operation is optimized for high-frequency usage.
 
-**Example**
+**Example** (Prepending elements)
 
 ```ts
 import * as MutableList from "effect/MutableList"
@@ -37,6 +37,6 @@ console.log(MutableList.take(list)) // "priority"
 declare const prepend: <A>(self: MutableList<A>, message: A) => void
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableList.ts#L350)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableList.ts#L378)
 
 Since v4.0.0

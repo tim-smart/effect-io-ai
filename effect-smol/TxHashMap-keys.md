@@ -5,7 +5,7 @@ Module: `TxHashMap`<br />
 
 Returns an array of all keys in the TxHashMap.
 
-**Example**
+**Example** (Reading keys)
 
 ```ts
 import { Effect, Option, TxHashMap } from "effect"
@@ -36,6 +36,6 @@ const program = Effect.gen(function*() {
 declare const keys: <K, V>(self: TxHashMap<K, V>) => Effect.Effect<Array<K>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashMap.ts#L824)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashMap.ts#L871)
 
 Since v2.0.0

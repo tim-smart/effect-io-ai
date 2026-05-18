@@ -5,7 +5,7 @@ Module: `Chunk`<br />
 
 Constructs a Chunk type preserving non-emptiness.
 
-**Example**
+**Example** (Preserving non-emptiness)
 
 ```ts
 import type { Chunk } from "effect"
@@ -23,6 +23,6 @@ type WithString2 = Chunk.Chunk.With<typeof nonEmptyChunk, string> // Chunk.NonEm
 type With<S, A> = S extends NonEmptyChunk<any> ? NonEmptyChunk<A> : Chunk<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L1554)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L1577)
 
 Since v2.0.0

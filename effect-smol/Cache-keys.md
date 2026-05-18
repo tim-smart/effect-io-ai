@@ -5,7 +5,7 @@ Module: `Cache`<br />
 
 Retrieves all active keys from the cache, automatically filtering out expired entries.
 
-**Example**
+**Example** (Reading active keys)
 
 ```ts
 import { Cache, Effect } from "effect"
@@ -25,7 +25,7 @@ const program = Effect.gen(function*() {
   // Retrieve all active keys
   const keys = yield* Cache.keys(cache)
 
-  console.log(Array.from(keys)) // ["hello", "world", "cache"]
+  console.log(Array.from(keys).sort()) // ["cache", "hello", "world"]
 })
 ```
 
@@ -35,6 +35,6 @@ const program = Effect.gen(function*() {
 declare const keys: <Key, A, E, R>(self: Cache<Key, A, E, R>) => Effect.Effect<Iterable<Key>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cache.ts#L1131)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cache.ts#L1215)
 
 Since v4.0.0

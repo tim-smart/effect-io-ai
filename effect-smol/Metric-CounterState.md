@@ -5,7 +5,7 @@ Module: `Metric`<br />
 
 State interface for Counter metrics containing the current count and increment mode.
 
-**Example**
+**Example** (Reading counter state)
 
 ```ts
 import { Data, Effect, Metric } from "effect"
@@ -68,6 +68,6 @@ export interface CounterState<in Input extends number | bigint> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Metric.ts#L367)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Metric.ts#L317)
 
 Since v2.0.0

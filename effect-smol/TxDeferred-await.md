@@ -12,6 +12,6 @@ been completed yet.
 declare const await: <A, E>(self: TxDeferred<A, E>) => Effect.Effect<A, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxDeferred.ts#L137)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxDeferred.ts#L140)
 
 Since v4.0.0

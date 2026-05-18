@@ -5,7 +5,7 @@ Module: `CliError`<br />
 
 Error thrown when an unrecognized option is encountered.
 
-**Example**
+**Example** (Creating unrecognized option errors)
 
 ```ts
 import { Effect } from "effect"
@@ -38,6 +38,6 @@ const parseCommand = Effect.gen(function*() {
 declare class UnrecognizedOption
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/CliError.ts#L118)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/CliError.ts#L145)
 
 Since v4.0.0

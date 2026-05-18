@@ -5,7 +5,7 @@ Module: `Primitive`<br />
 
 Creates a primitive that validates and resolves file system paths.
 
-**Example**
+**Example** (Parsing file system paths)
 
 ```ts
 import { Effect } from "effect"
@@ -35,6 +35,6 @@ const program = Effect.gen(function*() {
 declare const path: (pathType: PathType, mustExist?: boolean) => Primitive<string>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Primitive.ts#L352)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Primitive.ts#L365)
 
 Since v4.0.0

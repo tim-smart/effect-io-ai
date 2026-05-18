@@ -9,7 +9,7 @@ The FileSystem interface provides a comprehensive set of file and directory oper
 that work cross-platform. All operations return Effect values that can be composed,
 transformed, and executed safely with proper error handling.
 
-**Example**
+**Example** (Accessing file system operations)
 
 ```ts
 import { Console, Effect, FileSystem } from "effect"
@@ -318,6 +318,6 @@ export interface FileSystem {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FileSystem.ts#L91)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FileSystem.ts#L93)
 
 Since v4.0.0

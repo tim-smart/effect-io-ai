@@ -5,7 +5,7 @@ Module: `Flag`<br />
 
 Creates a float flag that accepts decimal number input.
 
-**Example**
+**Example** (Creating float flags)
 
 ```ts
 import { Flag } from "effect/unstable/cli"
@@ -20,6 +20,6 @@ const rateFlag = Flag.float("rate")
 declare const float: (name: string) => Flag<number>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Flag.ts#L93)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Flag.ts#L116)
 
 Since v4.0.0

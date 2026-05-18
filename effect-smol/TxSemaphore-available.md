@@ -5,7 +5,7 @@ Module: `TxSemaphore`<br />
 
 Gets the current number of available permits in the semaphore.
 
-**Example**
+**Example** (Checking available permits)
 
 ```ts
 import { Console, Effect, TxSemaphore } from "effect"
@@ -33,6 +33,6 @@ const program = Effect.gen(function*() {
 declare const available: (self: TxSemaphore) => Effect.Effect<number>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxSemaphore.ts#L144)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxSemaphore.ts#L165)
 
 Since v4.0.0

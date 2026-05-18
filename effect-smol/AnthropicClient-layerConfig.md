@@ -14,4 +14,4 @@ declare const layerConfig: (options?: { readonly apiKey?: Config.Config<Redacted
 
 [Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicClient.ts#L368)
 
-Since v1.0.0
+Since v4.0.0

@@ -12,7 +12,7 @@ trailing empty line (consistent with `String.linesIterator`). Conversely,
 if the stream ends without a terminator the final partial line is still
 emitted.
 
-**Example**
+**Example** (Splitting string chunks into lines)
 
 ```ts
 import { Effect, Stream } from "effect"
@@ -32,6 +32,6 @@ Effect.runPromise(Effect.gen(function*() {
 declare const splitLines: <Err, Done>() => Channel<Arr.NonEmptyReadonlyArray<string>, Err, Done, Arr.NonEmptyReadonlyArray<string>, Err, Done>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L5924)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L6155)
 
 Since v2.0.0

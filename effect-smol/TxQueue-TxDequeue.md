@@ -6,7 +6,7 @@ Module: `TxQueue`<br />
 A TxDequeue represents the read-only interface of a transactional queue, providing
 operations for consuming elements (dequeue operations) and inspecting queue state.
 
-**Example**
+**Example** (Taking values through dequeue handles)
 
 ```ts
 import { Effect, TxQueue } from "effect"
@@ -14,11 +14,12 @@ import { Effect, TxQueue } from "effect"
 const program = Effect.gen(function*() {
   // Queue without error channel
   const queue = yield* TxQueue.bounded<number>(10)
+  yield* TxQueue.offer(queue, 42)
   const item = yield* TxQueue.take(queue)
+  console.log(item) // 42
 
   // Queue with error channel - errors propagate through E-channel
   const faultTolerantQueue = yield* TxQueue.bounded<number, string>(10)
-  yield* TxQueue.offer(faultTolerantQueue, 42)
   yield* TxQueue.fail(faultTolerantQueue, "processing failed")
 
   // All dequeue operations now fail with the error directly
@@ -35,6 +36,6 @@ export interface TxDequeue<out A, out E = never> extends TxQueueState {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxQueue.ts#L253)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxQueue.ts#L209)
 
 Since v4.0.0

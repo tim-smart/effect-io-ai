@@ -5,7 +5,7 @@ Module: `Encoding`<br />
 
 Encodes the given value into a base64 (URL) `string`.
 
-**Example**
+**Example** (Encoding URL-safe Base64)
 
 ```ts
 import { Encoding } from "effect"
@@ -23,6 +23,6 @@ console.log(Encoding.encodeBase64Url(bytes)) // "SGVsbG8_"
 declare const encodeBase64Url: (input: Uint8Array | string) => string
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Encoding.ts#L181)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Encoding.ts#L210)
 
 Since v4.0.0

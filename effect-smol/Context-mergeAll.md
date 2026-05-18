@@ -3,9 +3,14 @@ Module: `Context`<br />
 
 ## Context.mergeAll
 
-Merges any number of `Context`s, returning a new `Context` containing the services of all.
+Merges any number of `Context`s into one.
 
-**Example**
+**Details**
+
+When multiple contexts contain the same service key, the service from the
+last context with that key is kept.
+
+**Example** (Merging multiple contexts)
 
 ```ts
 import { Context } from "effect"
@@ -36,6 +41,6 @@ assert.deepStrictEqual(Context.get(context, Host), { HOST: "localhost" })
 declare const mergeAll: <T extends Array<unknown>>(...ctxs: { [K in keyof T]: Context<T[K]>; }) => Context<T[number]>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Context.ts#L865)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Context.ts#L1003)
 
 Since v3.12.0

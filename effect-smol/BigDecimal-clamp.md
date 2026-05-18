@@ -9,7 +9,7 @@ Restricts the given `BigDecimal` to be within the range specified by the `minimu
 - If the `BigDecimal` is greater than the `maximum` value, the function returns the `maximum` value.
 - Otherwise, it returns the original `BigDecimal`.
 
-**Example**
+**Example** (Clamping decimals to a range)
 
 ```ts
 import { BigDecimal } from "effect"
@@ -40,6 +40,6 @@ assert.deepStrictEqual(
 declare const clamp: { (options: { minimum: BigDecimal; maximum: BigDecimal; }): (self: BigDecimal) => BigDecimal; (self: BigDecimal, options: { minimum: BigDecimal; maximum: BigDecimal; }): BigDecimal; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigDecimal.ts#L797)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigDecimal.ts#L812)
 
 Since v2.0.0

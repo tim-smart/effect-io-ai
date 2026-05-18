@@ -5,7 +5,7 @@ Module: `PubSub`<br />
 
 Returns the number of elements the queue can hold.
 
-**Example**
+**Example** (Getting PubSub capacity)
 
 ```ts
 import { Effect } from "effect"
@@ -28,6 +28,6 @@ const program = Effect.gen(function*() {
 declare const capacity: <A>(self: PubSub<A>) => number
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PubSub.ts#L526)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PubSub.ts#L562)
 
 Since v2.0.0

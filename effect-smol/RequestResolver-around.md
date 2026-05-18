@@ -6,7 +6,7 @@ Module: `RequestResolver`<br />
 A request resolver aspect that executes requests between two effects, `before`
 and `after`, where the result of `before` can be used by `after`.
 
-**Example**
+**Example** (Running effects around request resolution)
 
 ```ts
 import { Effect, Exit, Request, RequestResolver } from "effect"
@@ -30,12 +30,13 @@ const resolverWithAround = RequestResolver.around(
   (entries) =>
     Effect.gen(function*() {
       yield* Effect.log(`Starting batch of ${entries.length} requests`)
-      return Date.now()
+      return entries.length
     }),
-  (entries, startTime) =>
+  (entries, initialSize) =>
     Effect.gen(function*() {
-      const duration = Date.now() - startTime
-      yield* Effect.log(`Batch completed in ${duration}ms`)
+      yield* Effect.log(
+        `Batch completed with ${entries.length} requests (started with ${initialSize})`
+      )
     })
 )
 ```
@@ -46,6 +47,6 @@ const resolverWithAround = RequestResolver.around(
 declare const around: { <A extends Request.Any, A2, X>(before: (entries: NonEmptyArray<Request.Entry<NoInfer<A>>>) => Effect.Effect<A2, Request.Error<A>>, after: (entries: NonEmptyArray<Request.Entry<NoInfer<A>>>, a: A2) => Effect.Effect<X, Request.Error<A>>): (self: RequestResolver<A>) => RequestResolver<A>; <A extends Request.Any, A2, X>(self: RequestResolver<A>, before: (entries: NonEmptyArray<Request.Entry<NoInfer<A>>>) => Effect.Effect<A2, Request.Error<A>>, after: (entries: NonEmptyArray<Request.Entry<NoInfer<A>>>, a: A2) => Effect.Effect<X, Request.Error<A>>): RequestResolver<A>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RequestResolver.ts#L610)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RequestResolver.ts#L669)
 
 Since v2.0.0

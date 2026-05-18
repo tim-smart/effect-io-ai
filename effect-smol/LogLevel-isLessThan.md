@@ -8,7 +8,7 @@ Determines if the first log level is less severe than the second.
 Returns `true` if `self` represents a less severe level than `that`.
 This is useful for filtering out logs that are too verbose.
 
-**Example**
+**Example** (Checking lower severity)
 
 ```ts
 import { LogLevel } from "effect"
@@ -37,6 +37,6 @@ console.log(isLessSevereThanError("Fatal")) // false
 declare const isLessThan: { (that: LogLevel): (self: LogLevel) => boolean; (self: LogLevel, that: LogLevel): boolean; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/LogLevel.ts#L313)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/LogLevel.ts#L264)
 
 Since v2.0.0

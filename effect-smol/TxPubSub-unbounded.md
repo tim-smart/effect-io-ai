@@ -5,7 +5,7 @@ Module: `TxPubSub`<br />
 
 Creates an unbounded TxPubSub with unlimited capacity. Messages are always accepted.
 
-**Example**
+**Example** (Creating an unbounded pub/sub)
 
 ```ts
 import { Effect, TxPubSub, TxQueue } from "effect"
@@ -30,6 +30,6 @@ const program = Effect.gen(function*() {
 declare const unbounded: <A = never>() => Effect.Effect<TxPubSub<A>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxPubSub.ts#L221)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxPubSub.ts#L226)
 
 Since v4.0.0

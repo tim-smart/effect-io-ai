@@ -5,7 +5,7 @@ Module: `Response`<br />
 
 Response part containing metadata about the large language model response.
 
-**Example**
+**Example** (Creating a metadata part)
 
 ```ts
 import { DateTime } from "effect"
@@ -45,6 +45,6 @@ export interface ResponseMetadataPart extends BasePart<"response-metadata", Resp
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Response.ts#L2189)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Response.ts#L2193)
 
-Since v1.0.0
+Since v4.0.0

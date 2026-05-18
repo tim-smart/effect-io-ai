@@ -5,7 +5,7 @@ Module: `TxHashMap`<br />
 
 Returns an array of all values in the TxHashMap.
 
-**Example**
+**Example** (Reading values)
 
 ```ts
 import { Effect, TxHashMap } from "effect"
@@ -18,12 +18,12 @@ const program = Effect.gen(function*() {
   )
 
   const allScores = yield* TxHashMap.values(scores)
-  console.log(allScores.sort()) // [87, 92, 95]
+  console.log(allScores.sort((a, b) => a - b)) // [87, 92, 95]
 
   // Calculate average
   const average = allScores.reduce((sum, score) => sum + score, 0) /
     allScores.length
-  console.log(average) // 91.33
+  console.log(average.toFixed(2)) // "91.33"
 
   // Find maximum
   const maxScore = Math.max(...allScores)
@@ -37,6 +37,6 @@ const program = Effect.gen(function*() {
 declare const values: <K, V>(self: TxHashMap<K, V>) => Effect.Effect<Array<V>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashMap.ts#L861)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashMap.ts#L909)
 
 Since v2.0.0

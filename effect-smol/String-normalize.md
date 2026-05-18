@@ -5,7 +5,7 @@ Module: `String`<br />
 
 Normalizes a string according to the specified Unicode normalization form.
 
-**Example**
+**Example** (Normalizing Unicode strings)
 
 ```ts
 import { pipe, String } from "effect"
@@ -28,6 +28,6 @@ assert.deepStrictEqual(
 declare const normalize: (form?: "NFC" | "NFD" | "NFKC" | "NFKD") => (self: string) => string
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L687)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L729)
 
 Since v2.0.0

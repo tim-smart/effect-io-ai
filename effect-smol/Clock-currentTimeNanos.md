@@ -5,7 +5,7 @@ Module: `Clock`<br />
 
 Returns an Effect that succeeds with the current time in nanoseconds.
 
-**Example**
+**Example** (Reading nanoseconds)
 
 ```ts
 import { Clock, Effect } from "effect"
@@ -23,6 +23,6 @@ const program = Effect.gen(function*() {
 declare const currentTimeNanos: Effect<bigint, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Clock.ts#L182)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Clock.ts#L189)
 
 Since v2.0.0

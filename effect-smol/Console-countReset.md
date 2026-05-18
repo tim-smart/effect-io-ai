@@ -8,7 +8,7 @@ Resets the counter for the given label.
 This function resets the counter associated with the specified label
 back to zero.
 
-**Example**
+**Example** (Resetting a counter)
 
 ```ts
 import { Console, Effect } from "effect"
@@ -27,6 +27,6 @@ const program = Effect.gen(function*() {
 declare const countReset: (label?: string) => Effect.Effect<void>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Console.ts#L256)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Console.ts#L265)
 
 Since v2.0.0

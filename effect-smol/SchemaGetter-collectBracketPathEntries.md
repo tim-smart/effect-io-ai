@@ -40,6 +40,6 @@ See also:
 declare const collectBracketPathEntries: <A>(isLeaf: (value: unknown) => value is A) => (input: object) => Array<[bracketPath: string, value: A]>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L1843)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L1858)
 
 Since v4.0.0

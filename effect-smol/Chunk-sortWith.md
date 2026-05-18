@@ -5,7 +5,7 @@ Module: `Chunk`<br />
 
 Sorts the elements of a Chunk based on a projection function.
 
-**Example**
+**Example** (Sorting chunks by a derived value)
 
 ```ts
 import { Chunk } from "effect"
@@ -39,6 +39,6 @@ console.log(Chunk.toArray(byLength)) // ["a", "ab", "abc"]
 declare const sortWith: { <A, B>(f: (a: A) => B, order: Order.Order<B>): (self: Chunk<A>) => Chunk<A>; <A, B>(self: Chunk<A>, f: (a: A) => B, order: Order.Order<B>): Chunk<A>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L1870)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L1905)
 
 Since v2.0.0

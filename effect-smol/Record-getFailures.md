@@ -5,7 +5,7 @@ Module: `Record`<br />
 
 Given a record with `Result` values, returns a new record containing only the `Err` values, preserving the original keys.
 
-**Example**
+**Example** (Extracting Result failures)
 
 ```ts
 import { Record, Result } from "effect"
@@ -27,6 +27,6 @@ assert.deepStrictEqual(
 declare const getFailures: <K extends string, A, E>(self: ReadonlyRecord<K, Result<A, E>>) => Record<ReadonlyRecord.NonLiteralKey<K>, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Record.ts#L805)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Record.ts#L843)
 
 Since v2.0.0

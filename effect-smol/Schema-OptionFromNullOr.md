@@ -3,7 +3,8 @@ Module: `Schema`<br />
 
 ## Schema.OptionFromNullOr
 
-Companion type for `OptionFromNullOr`.
+Type-level representation of a schema that decodes `null` as `None` and all
+other values as `Some`.
 
 **Signature**
 
@@ -13,6 +14,6 @@ export interface OptionFromNullOr<S extends Top> extends decodeTo<Option<toType<
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L7104)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L7388)
 
 Since v4.0.0

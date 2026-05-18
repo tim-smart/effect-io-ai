@@ -13,4 +13,4 @@ export * as AtomRegistry from "effect/unstable/reactivity/AtomRegistry"
 
 [Source](https://github.com/Effect-TS/effect/tree/main/packages/atom/vue/src/index.ts#L17)
 
-Since v1.0.0
+Since v4.0.0

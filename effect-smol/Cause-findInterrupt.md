@@ -3,9 +3,9 @@ Module: `Cause`<br />
 
 ## Cause.findInterrupt
 
-Returns the first `Interrupt` reason from a cause, including its
-annotations. Returns `Filter.fail` with the original cause when no
-`Interrupt` is found.
+Returns a `Result` whose success value is the first `Interrupt` reason
+in the cause, including its annotations. If the cause has no `Interrupt`
+reason, the failure value is the original cause.
 
 **Example** (extracting the first interrupt)
 
@@ -28,6 +28,6 @@ if (!Result.isFailure(result)) {
 declare const findInterrupt: <E>(self: Cause<E>) => Result.Result<Interrupt, Cause<E>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L939)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L942)
 
 Since v4.0.0

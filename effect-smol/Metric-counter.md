@@ -15,7 +15,7 @@ of changes.
 - `incremental` - Set to `true` to create a `Counter` that can only ever be
                   incremented.
 
-**Example**
+**Example** (Creating counter metrics)
 
 ```ts
 import { Data, Effect, Metric } from "effect"
@@ -64,6 +64,6 @@ const program = Effect.gen(function*() {
 declare const counter: { (name: string, options?: { readonly description?: string | undefined; readonly attributes?: Metric.Attributes | undefined; readonly bigint?: false | undefined; readonly incremental?: boolean | undefined; }): Counter<number>; (name: string, options: { readonly description?: string | undefined; readonly attributes?: Metric.Attributes | undefined; readonly bigint: true; readonly incremental?: boolean | undefined; }): Counter<bigint>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Metric.ts#L2231)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Metric.ts#L2213)
 
 Since v2.0.0

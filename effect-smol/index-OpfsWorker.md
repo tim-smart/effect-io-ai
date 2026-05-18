@@ -13,4 +13,4 @@ export * as OpfsWorker from "./OpfsWorker.ts"
 
 [Source](https://github.com/Effect-TS/effect/tree/main/packages/sql/do/src/index.ts#L4)
 
-Since v1.0.0
+Since v4.0.0

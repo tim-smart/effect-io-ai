@@ -5,7 +5,7 @@ Module: `Chunk`<br />
 
 Deduplicates adjacent elements that are identical.
 
-**Example**
+**Example** (Removing adjacent duplicates)
 
 ```ts
 import { Chunk } from "effect"
@@ -26,6 +26,6 @@ console.log(Chunk.toArray(mixedResult)) // ["a", "b", "a"]
 declare const dedupeAdjacent: <A>(self: Chunk<A>) => Chunk<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L2210)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L2264)
 
 Since v2.0.0

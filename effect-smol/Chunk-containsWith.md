@@ -5,7 +5,7 @@ Module: `Chunk`<br />
 
 Returns a function that checks if a `Chunk` contains a given value using a provided `isEquivalent` function.
 
-**Example**
+**Example** (Checking membership with custom equivalence)
 
 ```ts
 import { Chunk } from "effect"
@@ -34,6 +34,6 @@ console.log(containsCaseInsensitive(words, "grape")) // false
 declare const containsWith: <A>(isEquivalent: (self: A, that: A) => boolean) => { (a: A): (self: Chunk<A>) => boolean; (self: Chunk<A>, a: A): boolean; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L2500)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L2566)
 
 Since v2.0.0

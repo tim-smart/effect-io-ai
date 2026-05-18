@@ -9,7 +9,7 @@ An RcRef wraps a resource that can be acquired and released multiple times.
 The resource is lazily acquired on the first call to `get` and automatically
 released when the last reference is released.
 
-**Example**
+**Example** (Sharing a lazily acquired resource)
 
 ```ts
 import { Effect, RcRef } from "effect"
@@ -43,6 +43,6 @@ export interface RcRef<out A, out E = never> extends Pipeable {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RcRef.ts#L47)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RcRef.ts#L65)
 
 Since v3.5.0

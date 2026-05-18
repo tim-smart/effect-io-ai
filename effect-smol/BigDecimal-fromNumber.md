@@ -10,7 +10,7 @@ as the floating point representation may be unexpected.
 
 Returns `Option.none()` for `NaN`, `+Infinity` or `-Infinity`.
 
-**Example**
+**Example** (Creating decimals from numbers safely)
 
 ```ts
 import { BigDecimal, Option } from "effect"
@@ -30,6 +30,6 @@ assert.deepStrictEqual(BigDecimal.fromNumber(Infinity), Option.none())
 declare const fromNumber: (n: number) => Option.Option<BigDecimal>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigDecimal.ts#L1112)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigDecimal.ts#L1139)
 
 Since v4.0.0

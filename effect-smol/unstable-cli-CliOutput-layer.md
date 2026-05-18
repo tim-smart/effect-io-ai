@@ -5,7 +5,7 @@ Module: `CliOutput`<br />
 
 Creates a Layer that provides a custom Formatter implementation.
 
-**Example**
+**Example** (Providing a custom formatter)
 
 ```ts
 import * as Console from "effect/Console"
@@ -43,6 +43,6 @@ const JsonLayer = CliOutput.layer(jsonFormatter)
 declare const layer: (formatter: Formatter) => Layer.Layer<never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/CliOutput.ts#L255)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/CliOutput.ts#L284)
 
 Since v4.0.0

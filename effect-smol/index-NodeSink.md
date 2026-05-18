@@ -13,4 +13,4 @@ export * as NodeSink from "./NodeSink.ts"
 
 [Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L87)
 
-Since v1.0.0
+Since v4.0.0

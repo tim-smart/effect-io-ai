@@ -8,7 +8,7 @@ Error indicating the model requested a tool that doesn't exist in the toolkit.
 This error is retryable because the model may self-correct when provided
 with the list of available tools.
 
-**Example**
+**Example** (Creating a tool not found error)
 
 ```ts
 import { AiError } from "effect/unstable/ai"
@@ -29,6 +29,6 @@ console.log(error.message)
 declare class ToolNotFoundError
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AiError.ts#L948)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AiError.ts#L992)
 
-Since v1.0.0
+Since v4.0.0

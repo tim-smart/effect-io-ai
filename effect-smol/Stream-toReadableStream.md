@@ -7,7 +7,7 @@ Converts a stream to a `ReadableStream`.
 
 See https://developer.mozilla.org/en-US/docs/Web/API/ReadableStream.
 
-**Example**
+**Example** (Converting a stream to a ReadableStream)
 
 ```ts
 import { Stream } from "effect"
@@ -22,6 +22,6 @@ const reader = readableStream.getReader()
 declare const toReadableStream: { <A>(options?: { readonly strategy?: QueuingStrategy<A> | undefined; }): <E>(self: Stream<A, E>) => ReadableStream<A>; <A, E>(self: Stream<A, E>, options?: { readonly strategy?: QueuingStrategy<A> | undefined; }): ReadableStream<A>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L10461)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L10779)
 
 Since v2.0.0

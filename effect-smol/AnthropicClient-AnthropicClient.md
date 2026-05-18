@@ -13,4 +13,4 @@ declare class AnthropicClient
 
 [Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicClient.ts#L138)
 
-Since v1.0.0
+Since v4.0.0

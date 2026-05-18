@@ -6,7 +6,7 @@ Module: `MutableList`<br />
 Filters the MutableList in place, keeping only elements that satisfy the predicate.
 This operation modifies the list and rebuilds its internal structure for efficiency.
 
-**Example**
+**Example** (Filtering in place)
 
 ```ts
 import * as MutableList from "effect/MutableList"
@@ -19,7 +19,6 @@ console.log(list.length) // 10
 // Keep only even numbers
 MutableList.filter(list, (n) => n % 2 === 0)
 
-console.log(list.length) // 5
 console.log(MutableList.takeAll(list)) // [2, 4, 6, 8, 10]
 
 // Filter with index
@@ -41,7 +40,7 @@ MutableList.appendAll(logs, [
 
 // Keep only errors
 MutableList.filter(logs, (log) => log.level === "ERROR")
-console.log(MutableList.takeAll(logs)) // Only error logs
+console.log(MutableList.takeAll(logs).map((log) => log.message)) // ["Connection failed", "Timeout"]
 ```
 
 **Signature**
@@ -50,6 +49,6 @@ console.log(MutableList.takeAll(logs)) // Only error logs
 declare const filter: <A>(self: MutableList<A>, f: (value: A, i: number) => boolean) => void
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableList.ts#L840)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableList.ts#L894)
 
 Since v4.0.0

@@ -5,7 +5,7 @@ Module: `Channel`<br />
 
 Constructs a channel that fails immediately with the specified error.
 
-**Example**
+**Example** (Failing with an error)
 
 ```ts
 import { Channel } from "effect"
@@ -35,6 +35,6 @@ const channelWithFallback = Channel.concatWith(
 declare const fail: <E>(error: E) => Channel<never, E, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L903)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L977)
 
 Since v2.0.0

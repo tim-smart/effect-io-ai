@@ -12,7 +12,7 @@ provided function `f` on each element. It does not return a new value;
 instead, it is primarily used for side effects, such as logging or
 accumulating data in an external variable.
 
-**Example**
+**Example** (Iterating over chunk values)
 
 ```ts
 import { Chunk } from "effect"
@@ -42,6 +42,6 @@ Chunk.forEach(chunk, (n, i) => console.log(`Index ${i}: ${n}`))
 declare const forEach: { <A, B>(f: (a: A, index: number) => B): (self: Chunk<A>) => void; <A, B>(self: Chunk<A>, f: (a: A, index: number) => B): void; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L1221)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L1238)
 
 Since v2.0.0

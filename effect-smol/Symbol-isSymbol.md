@@ -5,14 +5,13 @@ Module: `Symbol`<br />
 
 Tests if a value is a `symbol`.
 
-**Example**
+**Example** (Checking for symbols)
 
 ```ts
-import * as Predicate from "effect/Predicate"
-import * as assert from "node:assert"
+import { isSymbol } from "effect/Symbol"
 
-assert.deepStrictEqual(Predicate.isSymbol(Symbol.for("a")), true)
-assert.deepStrictEqual(Predicate.isSymbol("a"), false)
+console.log(isSymbol(Symbol.for("a"))) // true
+console.log(isSymbol("a")) // false
 ```
 
 **Signature**
@@ -21,6 +20,6 @@ assert.deepStrictEqual(Predicate.isSymbol("a"), false)
 declare const isSymbol: (u: unknown) => u is symbol
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Symbol.ts#L22)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Symbol.ts#L30)
 
 Since v2.0.0

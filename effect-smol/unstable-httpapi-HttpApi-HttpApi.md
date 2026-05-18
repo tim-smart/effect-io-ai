@@ -3,10 +3,11 @@ Module: `HttpApi`<br />
 
 ## HttpApi.HttpApi
 
-An `HttpApi` is a collection of `HttpApiEndpoint`s. You can use an `HttpApi` to
-represent a portion of your domain.
+An `HttpApi` is a collection of HTTP API groups and endpoints that represents a
+portion of your domain.
 
-The endpoints can be implemented later using the `HttpApiBuilder.make` api.
+Endpoint implementations can be provided with `HttpApiBuilder.group`, and the
+completed API can be registered with `HttpApiBuilder.layer`.
 
 **Signature**
 
@@ -61,6 +62,6 @@ export interface HttpApi<
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApi.ts#L35)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApi.ts#L61)
 
 Since v4.0.0

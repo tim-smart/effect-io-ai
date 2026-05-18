@@ -5,7 +5,7 @@ Module: `Boolean`<br />
 
 This utility function is used to check if at least one of the elements in a collection of boolean values is `true`.
 
-**Example**
+**Example** (Checking some booleans)
 
 ```ts
 import { some } from "effect/Boolean"
@@ -21,6 +21,6 @@ assert.deepStrictEqual(some([false, false, false]), false)
 declare const some: (collection: Iterable<boolean>) => boolean
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Boolean.ts#L332)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Boolean.ts#L347)
 
 Since v2.0.0

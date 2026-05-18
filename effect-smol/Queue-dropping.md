@@ -9,10 +9,10 @@ new elements are dropped and the offer operation returns false.
 This strategy prevents producers from being blocked and preserves existing messages,
 but new messages may be lost when the queue is full.
 
-**Example**
+**Example** (Creating dropping queues)
 
 ```ts
-import { Cause, Effect, Queue } from "effect"
+import { Effect, Queue } from "effect"
 
 const program = Effect.gen(function*() {
   const queue = yield* Queue.dropping<number>(2)
@@ -37,6 +37,6 @@ const program = Effect.gen(function*() {
 declare const dropping: <A, E = never>(capacity: number) => Effect<Queue<A, E>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Queue.ts#L448)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Queue.ts#L539)
 
 Since v2.0.0

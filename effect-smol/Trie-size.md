@@ -5,7 +5,7 @@ Module: `Trie`<br />
 
 Returns the size of the `Trie` (number of entries in the `Trie`).
 
-**Example**
+**Example** (Getting the size)
 
 ```ts
 import * as Trie from "effect/Trie"
@@ -25,6 +25,6 @@ assert.equal(Trie.size(trie), 2)
 declare const size: <V>(self: Trie<V>) => number
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Trie.ts#L445)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Trie.ts#L464)
 
 Since v2.0.0

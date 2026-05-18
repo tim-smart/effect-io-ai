@@ -8,7 +8,7 @@ messages and drop old messages if the `PubSub` is at capacity.
 
 For best performance use capacities that are powers of two.
 
-**Example**
+**Example** (Sliding old messages when full)
 
 ```ts
 import { Effect } from "effect"
@@ -24,14 +24,15 @@ const program = Effect.gen(function*() {
     replay: 2
   })
 
-  // Fill and overflow the PubSub
-  yield* PubSub.publish(pubsub, "msg1")
-  yield* PubSub.publish(pubsub, "msg2")
-  yield* PubSub.publish(pubsub, "msg3")
-  yield* PubSub.publish(pubsub, "msg4") // "msg1" is evicted
-
   yield* Effect.scoped(Effect.gen(function*() {
     const subscription = yield* PubSub.subscribe(pubsub)
+
+    // Fill and overflow the PubSub
+    yield* PubSub.publish(pubsub, "msg1")
+    yield* PubSub.publish(pubsub, "msg2")
+    yield* PubSub.publish(pubsub, "msg3")
+    yield* PubSub.publish(pubsub, "msg4") // "msg1" is evicted
+
     const messages = yield* PubSub.takeAll(subscription)
     console.log(messages) // ["msg2", "msg3", "msg4"]
   }))
@@ -44,6 +45,6 @@ const program = Effect.gen(function*() {
 declare const sliding: <A>(capacity: number | { readonly capacity: number; readonly replay?: number | undefined; }) => Effect.Effect<PubSub<A>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PubSub.ts#L418)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PubSub.ts#L451)
 
 Since v2.0.0

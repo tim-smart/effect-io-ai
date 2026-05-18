@@ -8,7 +8,7 @@ An `Order` for comparing and sorting `DateTime` values.
 `DateTime` values are ordered by their epoch milliseconds, so earlier times
 come before later times regardless of time zone.
 
-**Example**
+**Example** (Sorting DateTime values chronologically)
 
 ```ts
 import { Array, DateTime } from "effect"
@@ -29,6 +29,6 @@ const sorted = Array.sort(dates, DateTime.Order)
 declare const Order: order.Order<DateTime>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L376)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L516)
 
 Since v3.6.0

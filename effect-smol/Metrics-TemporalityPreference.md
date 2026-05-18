@@ -18,6 +18,6 @@ are aggregated.
 type TemporalityPreference = "cumulative" | "delta"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Metrics.ts#L27)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Metrics.ts#L43)
 
-Since v1.0.0
+Since v4.0.0

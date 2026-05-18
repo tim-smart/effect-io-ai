@@ -3,31 +3,30 @@ Module: `PubSub`<br />
 
 ## PubSub.shutdown
 
-Interrupts any fibers that are suspended on `offer` or `take`. Future calls
-to `offer*` and `take*` will be interrupted immediately.
+Shuts down the `PubSub`, interrupting suspended publishers and subscribers
+and finalizing active subscriptions.
 
-**Example**
+After shutdown, `publish` and `publishAll` succeed with `false`,
+`publishUnsafe` returns `false`, and subscription operations such as `take`
+interrupt.
+
+**Example** (Shutting down a PubSub)
 
 ```ts
-import { Effect, Fiber, PubSub } from "effect"
+import { Effect, PubSub } from "effect"
 
 const program = Effect.gen(function*() {
   const pubsub = yield* PubSub.bounded<string>(1)
 
-  // Start a fiber that will be suspended waiting to publish
-  const publisherFiber = yield* Effect.forkChild(
-    Effect.gen(function*() {
-      yield* PubSub.publish(pubsub, "msg1") // fills the buffer
-      yield* PubSub.publish(pubsub, "msg2") // will suspend here
-    })
-  )
-
   // Shutdown the PubSub
   yield* PubSub.shutdown(pubsub)
 
-  // The suspended publisher will be interrupted
-  const result = yield* Fiber.await(publisherFiber)
-  console.log("Publisher interrupted:", result._tag === "Failure")
+  const isShutdown = yield* PubSub.isShutdown(pubsub)
+  console.log("Is shutdown:", isShutdown) // true
+
+  // Publishing after shutdown returns false
+  const published = yield* PubSub.publish(pubsub, "msg1")
+  console.log("Published after shutdown:", published) // false
 })
 ```
 
@@ -37,6 +36,6 @@ const program = Effect.gen(function*() {
 declare const shutdown: <A>(self: PubSub<A>) => Effect.Effect<void>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PubSub.ts#L674)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PubSub.ts#L739)
 
 Since v2.0.0

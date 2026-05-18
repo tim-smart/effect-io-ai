@@ -8,7 +8,7 @@ Atomically modifies the value of the Ref using the given function.
 The function receives the current value and returns a tuple of [result, newValue].
 The Ref is updated with the newValue and the result is returned.
 
-**Example**
+**Example** (Modifying a value atomically)
 
 ```ts
 import { Effect, Ref } from "effect"
@@ -47,6 +47,6 @@ const program2 = Effect.gen(function*() {
 declare const modify: (<A, B>(f: (a: A) => readonly [B, A]) => (self: Ref<A>) => Effect.Effect<B>) & (<A, B>(self: Ref<A>, f: (a: A) => readonly [B, A]) => Effect.Effect<B>)
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Ref.ts#L426)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Ref.ts#L438)
 
 Since v2.0.0

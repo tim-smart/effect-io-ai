@@ -9,7 +9,7 @@ Represents the result of comparing two values.
 - `0` indicates the values are equal
 - `1` indicates the first value is greater than the second
 
-**Example**
+**Example** (Defining comparison results)
 
 ```ts
 import type { Ordering } from "effect"
@@ -37,6 +37,6 @@ const compareStrings = (a: string, b: string): Ordering.Ordering => {
 type Ordering = -1 | 0 | 1
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Ordering.ts#L63)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Ordering.ts#L74)
 
 Since v2.0.0

@@ -7,7 +7,7 @@ Determines whether an effect fails.
 
 Defects are not converted; if the effect dies, the resulting effect dies too.
 
-**Example**
+**Example** (Checking whether an effect fails)
 
 ```ts
 import { Console, Effect } from "effect"
@@ -27,6 +27,6 @@ Effect.runPromise(program)
 declare const isFailure: <A, E, R>(self: Effect<A, E, R>) => Effect<boolean, never, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L5440)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L5313)
 
 Since v2.0.0

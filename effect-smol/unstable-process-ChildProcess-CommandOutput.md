@@ -15,6 +15,6 @@ type CommandOutput = | "pipe"
   | Sink.Sink<Uint8Array, Uint8Array, never, PlatformError.PlatformError>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ChildProcess.ts#L188)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ChildProcess.ts#L190)
 
 Since v4.0.0

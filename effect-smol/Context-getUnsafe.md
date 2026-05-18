@@ -3,27 +3,16 @@ Module: `Context`<br />
 
 ## Context.getUnsafe
 
-Get a service from the context that corresponds to the given key.
+Gets the service for a key, throwing if an absent non-reference key cannot be
+resolved.
 
-This function is unsafe because if the key is not present in the context, a
-runtime error will be thrown.
+**Details**
+
+If the key is a `Context.Reference` and no override is stored in the
+context, its cached default value is returned. For absent non-reference keys,
+this function throws a runtime error.
 
 For a safer version see `getOption`.
-
-**Example**
-
-```ts
-import { Context } from "effect"
-import * as assert from "node:assert"
-
-const Port = Context.Service<{ PORT: number }>("Port")
-const Timeout = Context.Service<{ TIMEOUT: number }>("Timeout")
-
-const context = Context.make(Port, { PORT: 8080 })
-
-assert.deepStrictEqual(Context.getUnsafe(context, Port), { PORT: 8080 })
-assert.throws(() => Context.getUnsafe(context, Timeout))
-```
 
 **Signature**
 
@@ -31,6 +20,6 @@ assert.throws(() => Context.getUnsafe(context, Timeout))
 declare const getUnsafe: { <S, I>(service: Key<I, S>): <Services>(self: Context<Services>) => S; <Services, S, I>(self: Context<Services>, services: Key<I, S>): S; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Context.ts#L661)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Context.ts#L778)
 
 Since v4.0.0

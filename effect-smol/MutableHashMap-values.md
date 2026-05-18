@@ -3,9 +3,9 @@ Module: `MutableHashMap`<br />
 
 ## MutableHashMap.values
 
-Extracts all values from the MutableHashMap into an array.
+Returns an iterable over the values in the `MutableHashMap`.
 
-**Example**
+**Example** (Reading values)
 
 ```ts
 import * as MutableHashMap from "effect/MutableHashMap"
@@ -34,6 +34,6 @@ console.log(largeValues) // [2, 3]
 declare const values: <K, V>(self: MutableHashMap<K, V>) => Iterable<V>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableHashMap.ts#L292)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableHashMap.ts#L309)
 
 Since v3.8.0

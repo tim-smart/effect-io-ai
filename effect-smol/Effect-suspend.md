@@ -16,10 +16,9 @@ Use `suspend` when you need to defer the evaluation of an effect until it is req
 - **Handling Circular Dependencies**: Useful in managing circular dependencies, such as recursive functions that need to avoid eager evaluation to prevent stack overflow.
 - **Unifying Return Types**: Can help TypeScript unify return types in situations where multiple branches of logic return different effects, simplifying type inference.
 
-**Example**
+**Example** (Lazy Evaluation with Side Effects)
 
 ```ts
-// Title: Lazy Evaluation with Side Effects
 import { Effect } from "effect"
 
 let i = 0
@@ -35,10 +34,9 @@ console.log(Effect.runSync(good)) // Output: 1
 console.log(Effect.runSync(good)) // Output: 2
 ```
 
-**Example**
+**Example** (Recursive Fibonacci)
 
 ```ts
-// Title: Recursive Fibonacci
 import { Effect } from "effect"
 
 const blowsUp = (n: number): Effect.Effect<number> =>
@@ -62,10 +60,9 @@ console.log(Effect.runSync(allGood(32)))
 // Output: 3524578
 ```
 
-**Example**
+**Example** (Using Effect.suspend to Help TypeScript Infer Types)
 
 ```ts
-// Title: Using Effect.suspend to Help TypeScript Infer Types
 import { Effect } from "effect"
 
 //   Without suspend, TypeScript may struggle with type inference.
@@ -94,6 +91,6 @@ const withSuspend = (a: number, b: number) =>
 declare const suspend: <A, E, R>(effect: LazyArg<Effect<A, E, R>>) => Effect<A, E, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L1233)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L1098)
 
 Since v2.0.0

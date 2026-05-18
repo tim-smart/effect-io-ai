@@ -5,7 +5,7 @@ Module: `TxQueue`<br />
 
 Checks if the queue is in the closing state.
 
-**Example**
+**Example** (Checking closing state)
 
 ```ts
 import { Effect, TxQueue } from "effect"
@@ -29,6 +29,6 @@ const program = Effect.gen(function*() {
 declare const isClosing: (self: TxQueueState) => Effect.Effect<boolean>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxQueue.ts#L1417)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxQueue.ts#L1418)
 
 Since v4.0.0

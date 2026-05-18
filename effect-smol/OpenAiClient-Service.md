@@ -1,51 +1,39 @@
-Package: `@effect/ai-openai`<br />
+Package: `@effect/ai-openai-compat`<br />
 Module: `OpenAiClient`<br />
 
 ## OpenAiClient.Service
 
-The OpenAI client interface.
+Effect service interface for OpenAI-compatible chat completions and embeddings.
+
+**Details**
+Exposes the configured HTTP client plus helpers for non-streaming chat completions, streaming chat completions, and embeddings. Transport and schema decoding failures are mapped to `AiError`.
 
 **Signature**
 
 ```ts
 export interface Service {
-  /**
-   * The transformed HTTP client used by this service.
-   */
   readonly client: HttpClient.HttpClient
-
-  /**
-   * Create a response using the OpenAI responses endpoint.
-   */
   readonly createResponse: (
-    options: typeof OpenAiSchema.CreateResponse.Encoded
+    options: CreateResponseRequestJson
   ) => Effect.Effect<
-    readonly [body: typeof OpenAiSchema.Response.Type, response: HttpClientResponse.HttpClientResponse],
+    [body: CreateResponse200, response: HttpClientResponse.HttpClientResponse],
     AiError.AiError
   >
-
-  /**
-   * Create a streaming response using the OpenAI responses endpoint.
-   */
   readonly createResponseStream: (
-    options: Omit<typeof OpenAiSchema.CreateResponse.Encoded, "stream">
+    options: Omit<CreateResponseRequestJson, "stream" | "stream_options">
   ) => Effect.Effect<
-    readonly [
+    [
       response: HttpClientResponse.HttpClientResponse,
-      stream: Stream.Stream<typeof OpenAiSchema.ResponseStreamEvent.Type, AiError.AiError>
+      stream: Stream.Stream<CreateResponse200Sse, AiError.AiError>
     ],
     AiError.AiError
   >
-
-  /**
-   * Create embeddings using the OpenAI embeddings endpoint.
-   */
   readonly createEmbedding: (
-    options: typeof OpenAiSchema.CreateEmbeddingRequest.Encoded
-  ) => Effect.Effect<typeof OpenAiSchema.CreateEmbeddingResponse.Type, AiError.AiError>
+    options: CreateEmbeddingRequestJson
+  ) => Effect.Effect<CreateEmbedding200, AiError.AiError>
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L47)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/OpenAiClient.ts#L54)
 
-Since v1.0.0
+Since v4.0.0

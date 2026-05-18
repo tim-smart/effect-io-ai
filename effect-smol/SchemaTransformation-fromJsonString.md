@@ -3,16 +3,13 @@ Module: `SchemaTransformation`<br />
 
 ## SchemaTransformation.fromJsonString
 
-Decodes a JSON `string` into an `unknown` value and encodes an `unknown`
-value back to a JSON string.
+Decodes a JSON string with `JSON.parse` and encodes a value with
+`JSON.stringify`.
 
-When to use this:
-- Parsing JSON strings from HTTP bodies, message queues, or storage.
-- Typically composed with a further schema to validate the parsed structure.
-
-Behavior:
-- Decode: calls `JSON.parse`. Fails if the string is not valid JSON.
-- Encode: calls `JSON.stringify`.
+Use this for JSON stored or transmitted as a string, usually before composing
+with another schema that validates the parsed structure. Decode fails with
+`InvalidValue` for invalid JSON, and encode can fail with `InvalidValue` when
+`JSON.stringify` cannot serialize the value.
 
 **Example** (Parsing JSON)
 
@@ -34,6 +31,6 @@ See also:
 declare const fromJsonString: Transformation<unknown, string, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L1515)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L1506)
 
 Since v4.0.0

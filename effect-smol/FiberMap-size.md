@@ -5,7 +5,7 @@ Module: `FiberMap`<br />
 
 Get the number of fibers currently in the FiberMap.
 
-**Example**
+**Example** (Checking the map size)
 
 ```ts
 import { Effect, FiberMap } from "effect"
@@ -29,6 +29,6 @@ const program = Effect.gen(function*() {
 declare const size: <K, A, E>(self: FiberMap<K, A, E>) => Effect.Effect<number>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FiberMap.ts#L857)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FiberMap.ts#L954)
 
 Since v2.0.0

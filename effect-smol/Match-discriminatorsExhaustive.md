@@ -3,21 +3,17 @@ Module: `Match`<br />
 
 ## Match.discriminatorsExhaustive
 
-Matches values based on a discriminator field and **ensures all cases are
-handled**.
+Matches values by a discriminator field and requires every possible case to
+be handled.
 
-**Details*+
+**Details**
 
-This function is similar to `discriminators`, but **requires that all
-possible cases** are explicitly handled. It is useful when working with
-discriminated unions, where a specific field (e.g., `"type"`) determines the
-shape of an object. Each possible value of the field must have a
-corresponding handler, ensuring **exhaustiveness checking** at compile time.
+This is the exhaustive variant of `discriminators`. Each possible
+discriminator value must have a corresponding handler, so the matcher is
+finalized directly and does not require `Match.exhaustive` at the end of the
+pipeline.
 
-This function **does not require** `Match.exhaustive` at the end of the
-pipeline because it enforces exhaustiveness by design.
-
-**Example**
+**Example** (Handling all discriminator cases)
 
 ```ts
 import { Match, pipe } from "effect"
@@ -43,6 +39,6 @@ const match = pipe(
 declare const discriminatorsExhaustive: <D extends string>(field: D) => <R, Ret, P extends { readonly [Tag in Types.Tags<D, R> & string]: (_: Extract<R, Record<D, Tag>>) => Ret; } & { readonly [Tag in Exclude<keyof P, Types.Tags<D, R>>]: never; }>(fields: P) => <I, F, A, Pr>(self: Matcher<I, F, R, A, Pr, Ret>) => [Pr] extends [never] ? (u: I) => Unify<A | ReturnType<P[keyof P]>> : Unify<A | ReturnType<P[keyof P]>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L853)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L840)
 
 Since v4.0.0

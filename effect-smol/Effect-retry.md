@@ -3,27 +3,23 @@ Module: `Effect`<br />
 
 ## Effect.retry
 
-Retries a failing effect based on a defined retry policy.
+Retries typed failures from an effect according to a retry policy.
 
 **Details**
 
-The `Effect.retry` function takes an effect and a `Schedule` policy,
-and will automatically retry the effect if it fails, following the rules of
-the policy.
+The policy can be a `Schedule`, a schedule builder, or a `Retry.Options`
+object using `schedule`, `times`, `while`, or `until`. If a retry eventually
+succeeds, the returned effect succeeds with that value. If the policy stops
+while the effect is still failing, the last failure is propagated.
 
-If the effect ultimately succeeds, the result will be returned.
-
-If the maximum retries are exhausted and the effect still fails, the failure
-is propagated.
+Defects and interruptions are not retried as typed failures.
 
 **When to Use**
 
-This can be useful when dealing with intermittent failures, such as network
-issues or temporary resource unavailability. By defining a retry policy, you
-can control the number of retries, the delay between them, and when to stop
-retrying.
+Use `retry` when typed failures may be transient, such as network issues or
+temporary resource unavailability.
 
-**Example**
+**Example** (Usage)
 
 ```ts
 import { Data, Effect, Schedule } from "effect"
@@ -58,6 +54,6 @@ Effect.runPromise(program).then(console.log)
 declare const retry: { <E, O extends Retry.Options<E>>(options: O): <A, R>(self: Effect<A, E, R>) => Retry.Return<R, E, A, O>; <B, E, Error, Env>(policy: Schedule<B, NoInfer<E>, Error, Env>): <A, R>(self: Effect<A, E, R>) => Effect<A, E | Error, R | Env>; <B, E, Error, Env>(builder: ($: <O, SE, R>(_: Schedule<O, NoInfer<E>, SE, R>) => Schedule<O, E, SE, R>) => Schedule<B, NoInfer<E>, Error, Env>): <A, R>(self: Effect<A, E, R>) => Effect<A, E | Error, R | Env>; <A, E, R, O extends Retry.Options<E>>(self: Effect<A, E, R>, options: O): Retry.Return<R, E, A, O>; <A, E, R, B, Error, Env>(self: Effect<A, E, R>, policy: Schedule<B, NoInfer<E>, Error, Env>): Effect<A, E | Error, R | Env>; <A, E, R, B, Error, Env>(self: Effect<A, E, R>, builder: ($: <O, SE, R>(_: Schedule<O, NoInfer<E>, SE, R>) => Schedule<O, E, SE, R>) => Schedule<B, NoInfer<E>, Error, Env>): Effect<A, E | Error, R | Env>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L3916)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L3782)
 
 Since v2.0.0

@@ -8,7 +8,7 @@ Logs the current value of a timer that was previously started by calling time.
 This function logs the elapsed time for a timer without stopping it,
 allowing you to track progress of long-running operations.
 
-**Example**
+**Example** (Logging timer progress)
 
 ```ts
 import { Console, Effect } from "effect"
@@ -32,6 +32,6 @@ const program = Effect.gen(function*() {
 declare const timeLog: (label?: string, ...args: ReadonlyArray<any>) => Effect.Effect<void>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Console.ts#L565)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Console.ts#L587)
 
 Since v2.0.0

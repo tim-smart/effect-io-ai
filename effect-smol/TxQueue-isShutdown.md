@@ -5,7 +5,7 @@ Module: `TxQueue`<br />
 
 Checks if the queue is shutdown (legacy compatibility).
 
-**Example**
+**Example** (Checking shutdown state)
 
 ```ts
 import { Effect, TxQueue } from "effect"
@@ -28,6 +28,6 @@ const program = Effect.gen(function*() {
 declare const isShutdown: (self: TxQueueState) => Effect.Effect<boolean>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxQueue.ts#L1467)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxQueue.ts#L1470)
 
 Since v4.0.0

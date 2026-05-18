@@ -5,7 +5,7 @@ Module: `Stream`<br />
 
 Emits only elements that differ from the previous one.
 
-**Example**
+**Example** (Emitting changed values)
 
 ```ts
 import { Console, Effect, Stream } from "effect"
@@ -29,6 +29,6 @@ Effect.runPromise(program)
 declare const changes: <A, E, R>(self: Stream<A, E, R>) => Stream<A, E, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L8572)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L8845)
 
 Since v2.0.0

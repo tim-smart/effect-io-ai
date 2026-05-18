@@ -5,7 +5,7 @@ Module: `String`<br />
 
 Converts a kebab-case string to snake_case.
 
-**Example**
+**Example** (Converting kebab-case to snake_case)
 
 ```ts
 import { String } from "effect"
@@ -20,6 +20,6 @@ console.log(String.kebabToSnake("foo-bar-baz")) // "foo_bar_baz"
 declare const kebabToSnake: (self: string) => string
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L1078)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L1139)
 
 Since v2.0.0

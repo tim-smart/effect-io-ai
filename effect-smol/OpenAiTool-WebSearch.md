@@ -15,4 +15,4 @@ declare const WebSearch: <Mode extends Tool.FailureMode | undefined = undefined>
 
 [Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiTool.ts#L219)
 
-Since v1.0.0
+Since v4.0.0

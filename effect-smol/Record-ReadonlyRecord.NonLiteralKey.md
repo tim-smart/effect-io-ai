@@ -6,7 +6,7 @@ Module: `Record`<br />
 Represents a type that converts literal string keys to generic string type and symbol keys to generic symbol type.
 This is useful for maintaining type safety while allowing flexible key types in record operations.
 
-**Example**
+**Example** (Converting literal keys to non-literal keys)
 
 ```ts
 import type { Record } from "effect"
@@ -25,6 +25,6 @@ type NonLiteralKey<K> = K extends string ? IsFiniteString<K> extends true ? stri
     : symbol
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Record.ts#L84)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Record.ts#L87)
 
 Since v2.0.0

@@ -19,7 +19,7 @@ with TxRef for transactional semantics, ensuring all operations are performed at
 - The original TxHashSet remains unchanged
 - Examples: `union`, `intersection`, `difference`, `map`, `filter`
 
-**Example**
+**Example** (Using transactional hash sets)
 
 ```ts
 import { Effect, TxHashSet } from "effect"
@@ -58,6 +58,6 @@ export interface TxHashSet<in out V> extends Inspectable, Pipeable {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashSet.ts#L87)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashSet.ts#L108)
 
 Since v2.0.0

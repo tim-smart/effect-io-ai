@@ -3,9 +3,13 @@ Module: `PubSub`<br />
 
 ## PubSub.remaining
 
-Returns the number of messages currently available in the subscription.
+Synchronously checks how many messages can be taken from a subscription.
 
-**Example**
+Returns `Option.some(count)` while the subscription is active, including
+replay-buffered messages, and `Option.none()` after the subscription has
+been shut down. Prefer `remaining` in effectful code.
+
+**Example** (Checking remaining messages)
 
 ```ts
 import { Effect } from "effect"
@@ -14,11 +18,11 @@ import * as PubSub from "effect/PubSub"
 const program = Effect.gen(function*() {
   const pubsub = yield* PubSub.bounded<string>(10)
 
-  // Publish some messages
-  yield* PubSub.publishAll(pubsub, ["msg1", "msg2", "msg3"])
-
   yield* Effect.scoped(Effect.gen(function*() {
     const subscription = yield* PubSub.subscribe(pubsub)
+
+    // Publish some messages
+    yield* PubSub.publishAll(pubsub, ["msg1", "msg2", "msg3"])
 
     // Check how many messages are available
     const count = yield* PubSub.remaining(subscription)
@@ -39,6 +43,6 @@ const program = Effect.gen(function*() {
 declare const remaining: <A>(self: Subscription<A>) => Effect.Effect<number>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PubSub.ts#L1294)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PubSub.ts#L1377)
 
 Since v4.0.0

@@ -7,7 +7,7 @@ Takes up to N elements from the beginning of the MutableList and returns them as
 The taken elements are removed from the list. This operation is optimized for performance
 and includes zero-copy optimizations when possible.
 
-**Example**
+**Example** (Taking batches)
 
 ```ts
 import * as MutableList from "effect/MutableList"
@@ -47,6 +47,6 @@ while (queue.length > 0) {
 declare const takeN: <A>(self: MutableList<A>, n: number) => Array<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableList.ts#L607)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableList.ts#L641)
 
 Since v4.0.0

@@ -3,9 +3,10 @@ Module: `Prompt`<br />
 
 ## Prompt.ToolMessage
 
-Message representing tool execution results.
+Message carrying tool-side content, including tool execution results and
+responses to tool approval requests.
 
-**Example**
+**Example** (Creating tool messages)
 
 ```ts
 import { Prompt } from "effect/unstable/ai"
@@ -39,6 +40,6 @@ export interface ToolMessage extends BaseMessage<"tool", ToolMessageOptions> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L1557)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L1575)
 
 Since v4.0.0

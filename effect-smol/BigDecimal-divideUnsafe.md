@@ -5,25 +5,18 @@ Module: `BigDecimal`<br />
 
 Provides an unsafe division operation on `BigDecimal`s.
 
-If the dividend is not a multiple of the divisor the result will be a `BigDecimal` value
-which represents the integer division rounded down to the nearest integer.
+If the dividend is not a multiple of the divisor, the result will be a `BigDecimal` value
+with up to the default division precision.
 
 Throws a `RangeError` if the divisor is `0`.
 
-**Example**
+**Example** (Dividing decimals unsafely)
 
 ```ts
 import { divideUnsafe, fromStringUnsafe } from "effect/BigDecimal"
-import * as assert from "node:assert"
 
-assert.deepStrictEqual(
-  divideUnsafe(fromStringUnsafe("6"), fromStringUnsafe("3")),
-  fromStringUnsafe("2")
-)
-assert.deepStrictEqual(
-  divideUnsafe(fromStringUnsafe("6"), fromStringUnsafe("4")),
-  fromStringUnsafe("1.5")
-)
+console.log(divideUnsafe(fromStringUnsafe("6"), fromStringUnsafe("3"))) // BigDecimal(2)
+console.log(divideUnsafe(fromStringUnsafe("6"), fromStringUnsafe("4"))) // BigDecimal(1.5)
 ```
 
 **Signature**
@@ -32,6 +25,6 @@ assert.deepStrictEqual(
 declare const divideUnsafe: { (that: BigDecimal): (self: BigDecimal) => BigDecimal; (self: BigDecimal, that: BigDecimal): BigDecimal; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigDecimal.ts#L556)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigDecimal.ts#L564)
 
 Since v2.0.0

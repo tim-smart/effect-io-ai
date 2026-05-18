@@ -3,11 +3,11 @@ Module: `Filter`<br />
 
 ## Filter.composePassthrough
 
-Composes two filters sequentially, allowing the output of the first to be
-passed to the second.
+Composes two filters sequentially, passing the successful output of the
+first filter to the second.
 
-This is similar to `compose`, but it will always fail with the original
-input.
+If either filter fails, the returned filter fails with the original input
+instead of the intermediate failure value.
 
 **Signature**
 
@@ -15,6 +15,6 @@ input.
 declare const composePassthrough: { <InputL, PassL, PassR, FailR>(right: Filter<PassL, PassR, FailR>): <FailL>(left: Filter<InputL, PassL, FailL>) => Filter<InputL, PassR, InputL>; <InputL, PassL, FailL, PassR, FailR>(left: Filter<InputL, PassL, FailL>, right: Filter<PassL, PassR, FailR>): Filter<InputL, PassR, InputL>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Filter.ts#L579)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Filter.ts#L635)
 
 Since v4.0.0

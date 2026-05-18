@@ -5,7 +5,7 @@ Module: `AiError`<br />
 
 Creates an `AiError` with the given reason.
 
-**Example**
+**Example** (Creating an AI error)
 
 ```ts
 import { Duration } from "effect"
@@ -29,6 +29,6 @@ console.log(error.message)
 declare const make: (params: { readonly module: string; readonly method: string; readonly reason: AiErrorReason; }) => AiError
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AiError.ts#L1505)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AiError.ts#L1571)
 
-Since v1.0.0
+Since v4.0.0

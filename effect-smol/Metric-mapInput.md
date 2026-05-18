@@ -7,7 +7,7 @@ Returns a new metric that is powered by this one, but which accepts updates
 of the specified new type, which must be transformable to the input type of
 this metric.
 
-**Example**
+**Example** (Mapping metric inputs)
 
 ```ts
 import { Data, Effect, Metric } from "effect"
@@ -44,6 +44,6 @@ const program = Effect.gen(function*() {
 declare const mapInput: { <Input, Input2 extends Input>(f: (input: Input2, context: Context.Context<never>) => Input): <State>(self: Metric<Input, State>) => Metric<Input2, State>; <Input, State, Input2>(self: Metric<Input, State>, f: (input: Input2, context: Context.Context<never>) => Input): Metric<Input2, State>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Metric.ts#L2866)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Metric.ts#L2869)
 
 Since v2.0.0

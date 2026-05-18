@@ -5,7 +5,7 @@ Module: `Deferred`<br />
 
 Creates a new `Deferred`.
 
-**Example**
+**Example** (Creating a Deferred)
 
 ```ts
 import { Deferred, Effect } from "effect"
@@ -24,6 +24,6 @@ const program = Effect.gen(function*() {
 declare const make: <A, E = never>() => Effect<Deferred<A, E>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Deferred.ts#L205)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Deferred.ts#L221)
 
 Since v2.0.0

@@ -5,7 +5,7 @@ Module: `TxSemaphore`<br />
 
 Determines if the provided value is a TxSemaphore.
 
-**Example**
+**Example** (Checking semaphore values)
 
 ```ts
 import { Effect, TxSemaphore } from "effect"
@@ -31,6 +31,6 @@ const program = Effect.gen(function*() {
 declare const isTxSemaphore: (u: unknown) => u is TxSemaphore
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxSemaphore.ts#L587)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxSemaphore.ts#L630)
 
 Since v4.0.0

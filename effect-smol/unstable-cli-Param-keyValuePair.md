@@ -9,7 +9,7 @@ Useful for options that accept configuration values.
 Note: Requires at least one key=value pair. The parsed pairs are merged
 into a single record object.
 
-**Example**
+**Example** (Parsing key-value pairs)
 
 ```ts
 import * as Param from "effect/unstable/cli/Param"
@@ -29,6 +29,6 @@ const props = Param.keyValuePair(Param.flagKind, "property")
 declare const keyValuePair: <Kind extends ParamKind>(kind: Kind, name: string) => Param<Kind, Record<string, string>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Param.ts#L800)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Param.ts#L880)
 
 Since v4.0.0

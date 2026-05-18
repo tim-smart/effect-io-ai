@@ -6,7 +6,7 @@ Module: `Effect`<br />
 An `Effect` containing an empty record `{}`, used as the starting point for
 do notation chains.
 
-**Example**
+**Example** (Usage)
 
 ```ts
 import { Effect } from "effect"
@@ -26,6 +26,6 @@ const program = pipe(
 declare const Do: Effect<{}, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L1393)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L1253)
 
 Since v4.0.0

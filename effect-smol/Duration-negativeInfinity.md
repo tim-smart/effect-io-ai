@@ -5,7 +5,7 @@ Module: `Duration`<br />
 
 A Duration representing negative infinite time.
 
-**Example**
+**Example** (Using negative infinite duration)
 
 ```ts
 import { Duration } from "effect"
@@ -19,6 +19,6 @@ console.log(Duration.toMillis(Duration.negativeInfinity)) // -Infinity
 declare const negativeInfinity: Duration
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Duration.ts#L537)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Duration.ts#L552)
 
 Since v4.0.0

@@ -5,7 +5,7 @@ Module: `TxHashMap`<br />
 
 Creates a TxHashMap from an iterable of key-value pairs.
 
-**Example**
+**Example** (Creating a map from an iterable)
 
 ```ts
 import { Effect, TxHashMap } from "effect"
@@ -40,6 +40,6 @@ const program = Effect.gen(function*() {
 declare const fromIterable: <K, V>(entries: Iterable<readonly [K, V]>) => Effect.Effect<TxHashMap<K, V>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashMap.ts#L321)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashMap.ts#L354)
 
 Since v2.0.0

@@ -3,15 +3,13 @@ Module: `SchemaTransformation`<br />
 
 ## SchemaTransformation.fromFormData
 
-Decodes a `FormData` instance into an `unknown` record and encodes an
-`unknown` record back to `FormData`.
+Decodes a `FormData` instance into a nested record using bracket-path keys and
+encodes object-like values back into `FormData`.
 
-When to use this:
-- Handling HTML form submissions or multipart API requests.
-
-Behavior:
-- Decode: extracts entries from the FormData into a plain object.
-- Encode: constructs a FormData from the record's entries.
+Use this for form or multipart payloads where keys such as `user[name]` or
+`items[0]` should become nested data. Decode preserves string and `Blob`
+leaves. Encode flattens nested objects and arrays into bracket-path entries
+and returns an empty `FormData` for non-object inputs.
 
 **Example** (Decoding FormData)
 
@@ -33,6 +31,6 @@ See also:
 declare const fromFormData: Transformation<unknown, FormData, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L1547)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L1536)
 
 Since v4.0.0

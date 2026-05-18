@@ -9,7 +9,7 @@ This function takes two hash values and combines them using a mathematical
 operation to produce a new hash value. It's useful for creating hash values
 of composite structures.
 
-**Example**
+**Example** (Combining hash values)
 
 ```ts
 import { Hash } from "effect" // combined hash value
@@ -32,6 +32,6 @@ const result = pipe(hash1, Hash.combine(hash2))
 declare const combine: { (b: number): (self: number) => number; (self: number, b: number): number; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Hash.ts#L196)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Hash.ts#L200)
 
 Since v2.0.0

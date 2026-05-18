@@ -8,7 +8,7 @@ Creates a Prompt from an input.
 This is the primary constructor for creating prompts, supporting multiple
 input formats for convenience and flexibility.
 
-**Example**
+**Example** (Creating prompts from inputs)
 
 ```ts
 import { Prompt } from "effect/unstable/ai"
@@ -33,6 +33,6 @@ const copiedPrompt = Prompt.make(existingPrompt)
 declare const make: (input: RawInput) => Prompt
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L1845)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L1864)
 
 Since v4.0.0

@@ -15,7 +15,8 @@ export interface Service {
    * Provides direct access to the conversation history for advanced use cases
    * like custom history manipulation or inspection.
    *
-   * @example
+   * **Example** (Inspecting chat history)
+   *
    * ```ts
    * import { Effect, Ref } from "effect"
    * import { Chat } from "effect/unstable/ai"
@@ -36,7 +37,8 @@ export interface Service {
    * Returns the complete conversation history as a structured object
    * that can be stored, transmitted, or processed by other systems.
    *
-   * @example
+   * **Example** (Exporting chat history)
+   *
    * ```ts
    * import { Effect } from "effect"
    * import { Chat } from "effect/unstable/ai"
@@ -60,7 +62,8 @@ export interface Service {
    * Provides a convenient way to serialize the entire conversation
    * for storage or transmission in JSON format.
    *
-   * @example
+   * **Example** (Exporting chat history as JSON)
+   *
    * ```ts
    * import { Effect } from "effect"
    * import { Chat } from "effect/unstable/ai"
@@ -87,7 +90,8 @@ export interface Service {
    * for function calling and enhanced capabilities. Both input and output
    * messages are automatically added to the chat history.
    *
-   * @example
+   * **Example** (Generating chat responses)
+   *
    * ```ts
    * import { Effect } from "effect"
    * import { Chat } from "effect/unstable/ai"
@@ -151,7 +155,8 @@ export interface Service {
    * Returns a stream of response parts that are emitted as soon as they're
    * available from the model. Supports tool calling and maintains chat history.
    *
-   * @example
+   * **Example** (Streaming chat responses)
+   *
    * ```ts
    * import { Effect, Stream } from "effect"
    * import { Chat } from "effect/unstable/ai"
@@ -215,7 +220,8 @@ export interface Service {
    * enabling structured data extraction and type-safe responses. The
    * conversation history is maintained across calls.
    *
-   * @example
+   * **Example** (Generating structured objects)
+   *
    * ```ts
    * import { Effect, Schema } from "effect"
    * import { Chat } from "effect/unstable/ai"
@@ -255,6 +261,6 @@ export interface Service {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chat.ts#L103)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chat.ts#L106)
 
 Since v4.0.0

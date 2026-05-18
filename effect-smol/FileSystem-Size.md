@@ -10,7 +10,7 @@ accidental mixing of regular numbers with size values. The underlying
 bigint allows for handling very large file sizes beyond JavaScript's
 number precision limits.
 
-**Example**
+**Example** (Creating branded file sizes)
 
 ```ts
 import { Effect, FileSystem } from "effect"
@@ -20,11 +20,10 @@ const smallFile = FileSystem.Size(1024) // 1 KB
 const largeFile = FileSystem.Size(BigInt("9007199254740992")) // Very large
 
 // Use with file operations
-const truncateToSize = (path: string, size: FileSystem.Size) =>
-  Effect.gen(function*() {
-    const fs = yield* FileSystem.FileSystem
-    return fs.truncate(path, size)
-  })
+const truncateToSize = Effect.fnUntraced(function*(path: string, size: FileSystem.Size) {
+  const fs = yield* FileSystem.FileSystem
+  return yield* fs.truncate(path, size)
+})
 ```
 
 **Signature**
@@ -33,6 +32,6 @@ const truncateToSize = (path: string, size: FileSystem.Size) =>
 type Size = Brand.Branded<bigint, "Size">
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FileSystem.ts#L396)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FileSystem.ts#L398)
 
 Since v4.0.0

@@ -3,27 +3,15 @@ Module: `Runtime`<br />
 
 ## Runtime.errorReported
 
-Allows an error to opt-out of error reporting.
-
-```ts
-import { Data, Effect, Runtime } from "effect"
-import { NodeRuntime } from "@effect/platform-node"
-
-class MyError extends Data.TaggedError("MyError") {
-  readonly [Runtime.errorReported] = true
-}
-
-// If the program fails with MyError, the process will exit with code 1 but
-// no error will be logged.
-NodeRuntime.runMain(Effect.fail(new MyError()))
-```
+Type-level key for the `Runtime.errorReported` property that controls default
+`runMain` error logging for an `Error`.
 
 **Signature**
 
 ```ts
-declare const errorReported: "~effect/Runtime/errorReported"
+type errorReported = "~effect/Runtime/errorReported"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Runtime.ts#L299)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Runtime.ts#L291)
 
 Since v4.0.0

@@ -5,7 +5,7 @@ Module: `ChildProcess`<br />
 
 Options for controlling how commands are piped together.
 
-**Example**
+**Example** (Piping stderr between commands)
 
 ```ts
 import { ChildProcess } from "effect/unstable/process"
@@ -40,6 +40,6 @@ export interface PipeOptions {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ChildProcess.ts#L149)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ChildProcess.ts#L151)
 
 Since v4.0.0

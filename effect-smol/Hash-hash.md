@@ -19,7 +19,7 @@ operations. For mutable objects, use referential equality by implementing custom
 **ALLOWED**: Using immutable objects, or mutable objects with custom `Hash` interface
 that uses referential equality (hashes the object reference, not content)
 
-**Example**
+**Example** (Hashing different values)
 
 ```ts
 import { Hash } from "effect"
@@ -32,7 +32,7 @@ console.log(Hash.hash(true)) // boolean hash
 // Hash objects and arrays
 console.log(Hash.hash({ name: "John", age: 30 }))
 console.log(Hash.hash([1, 2, 3]))
-console.log(Hash.hash(new Date("2023-01-01")))
+console.log(Hash.hash({ id: "user-1", roles: ["admin", "editor"] }))
 ```
 
 **Signature**
@@ -41,6 +41,6 @@ console.log(Hash.hash(new Date("2023-01-01")))
 declare const hash: <A>(self: A) => number
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Hash.ts#L85)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Hash.ts#L87)
 
 Since v2.0.0

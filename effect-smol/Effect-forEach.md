@@ -23,10 +23,13 @@ concurrently. By default, the operations are performed sequentially.
 If the `discard` option is set to `true`, the intermediate results are not
 collected, and the final result of the operation is `void`.
 
-**Example**
+**See**
+
+- `all` for combining multiple effects into one.
+
+**Example** (Applying Effects to Iterable Elements)
 
 ```ts
-// Title: Applying Effects to Iterable Elements
 import { Effect } from "effect"
 import { Console } from "effect"
 
@@ -46,10 +49,9 @@ Effect.runPromise(result).then(console.log)
 // [ 2, 4, 6, 8, 10 ]
 ```
 
-**Example**
+**Example** (Using discard to Ignore Results)
 
 ```ts
-// Title: Using discard to Ignore Results
 import { Effect } from "effect"
 import { Console } from "effect"
 
@@ -71,16 +73,12 @@ Effect.runPromise(result).then(console.log)
 // undefined
 ```
 
-**See**
-
-- `all` for combining multiple effects into one.
-
 **Signature**
 
 ```ts
 declare const forEach: { <B, E, R, S extends Iterable<any>, const Discard extends boolean = false>(f: (a: Arr.ReadonlyArray.Infer<S>, i: number) => Effect<B, E, R>, options?: { readonly concurrency?: Concurrency | undefined; readonly discard?: Discard | undefined; } | undefined): (self: S) => Effect<Discard extends false ? Arr.ReadonlyArray.With<S, B> : void, E, R>; <B, E, R, S extends Iterable<any>, const Discard extends boolean = false>(self: S, f: (a: Arr.ReadonlyArray.Infer<S>, i: number) => Effect<B, E, R>, options?: { readonly concurrency?: Concurrency | undefined; readonly discard?: Discard | undefined; } | undefined): Effect<Discard extends false ? Arr.ReadonlyArray.With<S, B> : void, E, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L917)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L773)
 
 Since v2.0.0

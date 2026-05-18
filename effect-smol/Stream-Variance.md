@@ -3,7 +3,10 @@ Module: `Stream`<br />
 
 ## Stream.Variance
 
-Variance markers for Stream type parameters.
+Type-level variance marker for `Stream`.
+
+The emitted value `A`, error `E`, and service requirement `R` type
+parameters are covariant.
 
 **Signature**
 
@@ -13,6 +16,6 @@ export interface Variance<out A, out E, out R> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L175)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L201)
 
 Since v2.0.0

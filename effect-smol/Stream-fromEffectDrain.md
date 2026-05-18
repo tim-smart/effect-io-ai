@@ -5,7 +5,7 @@ Module: `Stream`<br />
 
 Creates a stream that runs the effect and emits no elements.
 
-**Example**
+**Example** (Draining an effect into a stream)
 
 ```ts
 import { Console, Effect, Stream } from "effect"
@@ -26,6 +26,6 @@ Effect.runPromise(program)
 declare const fromEffectDrain: <A, E, R>(effect: Effect.Effect<A, E, R>) => Stream<never, E, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L450)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L489)
 
 Since v4.0.0

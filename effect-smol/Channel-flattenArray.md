@@ -5,7 +5,7 @@ Module: `Channel`<br />
 
 Flattens a channel that outputs arrays into a channel that outputs individual elements.
 
-**Example**
+**Example** (Flattening arrays of channel output)
 
 ```ts
 import { Channel, Data } from "effect"
@@ -33,6 +33,6 @@ const flattenedChannel = Channel.flattenArray(arrayChannel)
 declare const flattenArray: <OutElem, OutErr, OutDone, InElem, InErr, InDone, Env>(self: Channel<ReadonlyArray<OutElem>, OutErr, OutDone, InElem, InErr, InDone, Env>) => Channel<OutElem, OutErr, OutDone, InElem, InErr, InDone, Env>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L2775)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L2897)
 
 Since v4.0.0

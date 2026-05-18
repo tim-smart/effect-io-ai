@@ -6,7 +6,7 @@ Module: `Stream`<br />
 Either emits the success value of this effect or terminates the stream
 with the failure value of this effect.
 
-**Example**
+**Example** (Creating a stream from an effect)
 
 ```ts
 import { Console, Effect, Stream } from "effect"
@@ -27,6 +27,6 @@ Effect.runPromise(program)
 declare const fromEffect: <A, E, R>(effect: Effect.Effect<A, E, R>) => Stream<A, E, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L354)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L390)
 
 Since v2.0.0

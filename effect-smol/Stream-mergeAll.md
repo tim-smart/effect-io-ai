@@ -5,7 +5,17 @@ Module: `Stream`<br />
 
 Merges a collection of streams, running up to the specified number concurrently.
 
-**Example**
+**Signature**
+
+```ts
+declare const mergeAll: { (options: { readonly concurrency: number | "unbounded"; readonly bufferSize?: number | undefined; }): <A, E, R>(streams: Iterable<Stream<A, E, R>>) => Stream<A, E, R>; <A, E, R>(streams: Iterable<Stream<A, E, R>>, options: { readonly concurrency: number | "unbounded"; readonly bufferSize?: number | undefined; }): Stream<A, E, R>; }
+```
+
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L3362)
+
+Since v2.0.0
+
+**Example** (Merging streams with bounded concurrency)
 
 ```ts
 import { Console, Effect, Stream } from "effect"
@@ -25,13 +35,3 @@ const program = Effect.gen(function*() {
 Effect.runPromise(program)
 // Output: [ "B", "A" ]
 ```
-
-**Signature**
-
-```ts
-declare const mergeAll: { (options: { readonly concurrency: number | "unbounded"; readonly bufferSize?: number | undefined; }): <A, E, R>(streams: Iterable<Stream<A, E, R>>) => Stream<A, E, R>; <A, E, R>(streams: Iterable<Stream<A, E, R>>, options: { readonly concurrency: number | "unbounded"; readonly bufferSize?: number | undefined; }): Stream<A, E, R>; }
-```
-
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L3224)
-
-Since v2.0.0

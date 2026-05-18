@@ -5,7 +5,7 @@ Module: `Stream`<br />
 
 Collects all elements into an array and emits it as a single element.
 
-**Example**
+**Example** (Collecting values into a stream element)
 
 ```ts
 import { Console, Effect, Stream } from "effect"
@@ -27,6 +27,6 @@ Effect.runPromise(program)
 declare const collect: <A, E, R>(self: Stream<A, E, R>) => Stream<Array<A>, E, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L8517)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L8788)
 
 Since v2.0.0

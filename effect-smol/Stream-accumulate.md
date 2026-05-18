@@ -5,7 +5,7 @@ Module: `Stream`<br />
 
 Accumulates elements into a growing array, emitting the cumulative array for each input chunk.
 
-**Example**
+**Example** (Accumulating stream elements)
 
 ```ts
 import { Console, Effect, Stream } from "effect"
@@ -30,6 +30,6 @@ Effect.runPromise(program)
 declare const accumulate: <A, E, R>(self: Stream<A, E, R>) => Stream<Arr.NonEmptyArray<A>, E, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L8543)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L8815)
 
 Since v2.0.0

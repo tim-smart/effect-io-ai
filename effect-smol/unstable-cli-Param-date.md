@@ -5,7 +5,7 @@ Module: `Param`<br />
 
 Creates a date parameter that parses ISO date strings.
 
-**Example**
+**Example** (Creating date parameters)
 
 ```ts
 import * as Param from "effect/unstable/cli/Param"
@@ -28,6 +28,6 @@ const dueDateArg = Param.date(Param.argumentKind, "due-date")
 declare const date: <const Kind extends ParamKind>(kind: Kind, name: string) => Param<Kind, Date>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Param.ts#L445)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Param.ts#L515)
 
 Since v4.0.0

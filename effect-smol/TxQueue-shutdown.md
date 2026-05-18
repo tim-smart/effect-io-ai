@@ -12,7 +12,7 @@ This operation performs two atomic steps:
 **Mutation behavior**: This function mutates the original TxQueue by clearing
 its contents and marking it as shutdown. It does not return a new TxQueue reference.
 
-**Example**
+**Example** (Shutting down queues)
 
 ```ts
 import { Effect, TxQueue } from "effect"
@@ -40,6 +40,6 @@ const program = Effect.gen(function*() {
 declare const shutdown: <A, E>(self: TxEnqueue<A, E>) => Effect.Effect<boolean>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxQueue.ts#L1363)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxQueue.ts#L1362)
 
 Since v4.0.0

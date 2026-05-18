@@ -6,7 +6,7 @@ Module: `PubSub`<br />
 Takes between the specified minimum and maximum number of messages from the subscription.
 Will suspend if the minimum number is not immediately available.
 
-**Example**
+**Example** (Taking between a minimum and maximum)
 
 ```ts
 import { Effect, Fiber, PubSub } from "effect"
@@ -38,6 +38,6 @@ const program = Effect.gen(function*() {
 declare const takeBetween: { (min: number, max: number): <A>(self: Subscription<A>) => Effect.Effect<Array<A>>; <A>(self: Subscription<A>, min: number, max: number): Effect.Effect<Array<A>>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PubSub.ts#L1219)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PubSub.ts#L1297)
 
 Since v4.0.0

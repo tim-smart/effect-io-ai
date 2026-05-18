@@ -5,7 +5,7 @@ Module: `Number`<br />
 
 Provides a multiplication operation on `number`s.
 
-**Example**
+**Example** (Multiplying numbers)
 
 ```ts
 import { multiply } from "effect/Number"
@@ -20,6 +20,6 @@ assert.deepStrictEqual(multiply(2, 3), 6)
 declare const multiply: { (that: number): (self: number) => number; (self: number, that: number): number; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Number.ts#L84)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Number.ts#L88)
 
 Since v2.0.0

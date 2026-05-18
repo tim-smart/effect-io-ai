@@ -3,11 +3,15 @@ Module: `Queue`<br />
 
 ## Queue.poll
 
-Tries to take an item from the queue without blocking.
+Attempts to take one item from the queue without waiting.
 
-Returns `Option.some` with the item if available, or `Option.none` if the queue is empty or done.
+**Details**
 
-**Example**
+Returns `Option.some` when an item is immediately available. Returns
+`Option.none` when no item is available, when the queue is done, or when the
+immediate take observes a queue failure.
+
+**Example** (Polling without blocking)
 
 ```ts
 import { Effect, Option, Queue } from "effect"
@@ -34,6 +38,6 @@ const program = Effect.gen(function*() {
 declare const poll: <A, E>(self: Dequeue<A, E>) => Effect<Option.Option<A>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Queue.ts#L1230)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Queue.ts#L1354)
 
 Since v4.0.0

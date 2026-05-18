@@ -30,6 +30,6 @@ type AnyPart = | TextPart
   | ErrorPart
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Response.ts#L58)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Response.ts#L59)
 
-Since v1.0.0
+Since v4.0.0

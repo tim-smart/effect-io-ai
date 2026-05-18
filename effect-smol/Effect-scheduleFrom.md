@@ -3,21 +3,18 @@ Module: `Effect`<br />
 
 ## Effect.scheduleFrom
 
-Runs an effect repeatedly according to a schedule, starting from a specified
-initial input value.
+Runs an effect repeatedly according to a schedule that is initialized with a
+specific schedule input.
 
 **Details**
 
-This function allows you to repeatedly execute an effect based on a schedule.
-The schedule starts with the given `initial` input value, which is passed to
-the first execution. Subsequent executions of the effect are controlled by
-the schedule's rules, using the output of the previous iteration as the input
-for the next one.
+`initial` is passed to the schedule before the first execution, not to the
+effect itself. After each successful execution, the effect's success value is
+fed back into the schedule to decide whether to continue. The returned effect
+succeeds with the schedule output when the schedule completes and fails if
+the effect or schedule fails.
 
-The returned effect will complete when the schedule ends or the effect fails,
-propagating the error.
-
-**Example**
+**Example** (Usage)
 
 ```ts
 import { Console, Effect, Schedule } from "effect"
@@ -45,6 +42,6 @@ Effect.runPromise(program).then(console.log)
 declare const scheduleFrom: { <Input, Output, Error, Env>(initial: Input, schedule: Schedule<Output, Input, Error, Env>): <E, R>(self: Effect<Input, E, R>) => Effect<Output, E, R | Env>; <Input, E, R, Output, Error, Env>(self: Effect<Input, E, R>, initial: Input, schedule: Schedule<Output, Input, Error, Env>): Effect<Output, E, R | Env>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L7410)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L7294)
 
 Since v2.0.0

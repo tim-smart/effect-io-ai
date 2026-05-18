@@ -5,7 +5,7 @@ Module: `HashMap`<br />
 
 Returns an `IterableIterator` of the entries within the `HashMap`.
 
-**Example**
+**Example** (Iterating entries)
 
 ```ts
 import * as HashMap from "effect/HashMap"
@@ -17,16 +17,13 @@ const config = HashMap.make(
   ["cache.enabled", "true"]
 )
 
-// Get entries iterator for processing
-const entries = HashMap.entries(config)
+// Sort the derived array for deterministic output
+const settings = Array.from(HashMap.entries(config))
+  .sort(([left], [right]) => left.localeCompare(right))
+  .map(([key, value]) => `Setting ${key} = ${value}`)
 
-// Process each configuration entry
-for (const [key, value] of entries) {
-  console.log(`Setting ${key} = ${value}`)
-}
-// Setting database.host = localhost
-// Setting database.port = 5432
-// Setting cache.enabled = true
+console.log(settings)
+// ["Setting cache.enabled = true", "Setting database.host = localhost", "Setting database.port = 5432"]
 
 // Convert to array when you need all entries at once
 const allEntries = Array.from(HashMap.entries(config))
@@ -39,6 +36,6 @@ console.log(allEntries.length) // 3
 declare const entries: <K, V>(self: HashMap<K, V>) => IterableIterator<[K, V]>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashMap.ts#L592)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashMap.ts#L687)
 
 Since v2.0.0

@@ -5,7 +5,7 @@ Module: `Schedule`<br />
 
 Metadata provided to schedule functions containing timing and input information.
 
-**Example**
+**Example** (Reading schedule input metadata)
 
 ```ts
 import { Console, Effect, Schedule } from "effect"
@@ -38,6 +38,6 @@ export interface InputMetadata<Input> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L118)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L129)
 
 Since v4.0.0

@@ -14,6 +14,6 @@ export interface Graph<out N, out E, T extends Kind = "directed"> extends Proto<
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Graph.ts#L78)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Graph.ts#L133)
 
 Since v4.0.0

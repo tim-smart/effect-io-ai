@@ -6,7 +6,7 @@ Module: `Trie`<br />
 Returns an `IterableIterator` of the keys within the `Trie`
 that have `prefix` as prefix (`prefix` included if it exists).
 
-**Example**
+**Example** (Finding keys with a prefix)
 
 ```ts
 import * as Trie from "effect/Trie"
@@ -29,6 +29,6 @@ assert.deepStrictEqual(result, ["she", "shells"])
 declare const keysWithPrefix: { (prefix: string): <V>(self: Trie<V>) => IterableIterator<string>; <V>(self: Trie<V>, prefix: string): IterableIterator<string>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Trie.ts#L302)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Trie.ts#L316)
 
 Since v2.0.0

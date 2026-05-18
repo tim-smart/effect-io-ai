@@ -8,7 +8,7 @@ Configuration options for GenAI telemetry attributes.
 Combines base attributes with optional grouped attributes for comprehensive
 telemetry coverage of AI operations.
 
-**Example**
+**Example** (Configuring GenAI telemetry attributes)
 
 ```ts
 import type { Telemetry } from "effect/unstable/ai"
@@ -62,6 +62,6 @@ type GenAITelemetryAttributeOptions = BaseAttributes & {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Telemetry.ts#L390)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Telemetry.ts#L396)
 
 Since v4.0.0

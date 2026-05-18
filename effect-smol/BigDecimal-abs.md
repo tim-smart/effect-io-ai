@@ -5,7 +5,7 @@ Module: `BigDecimal`<br />
 
 Determines the absolute value of a given `BigDecimal`.
 
-**Example**
+**Example** (Calculating absolute values)
 
 ```ts
 import { abs, fromStringUnsafe } from "effect/BigDecimal"
@@ -22,6 +22,6 @@ assert.deepStrictEqual(abs(fromStringUnsafe("5")), fromStringUnsafe("5"))
 declare const abs: (n: BigDecimal) => BigDecimal
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigDecimal.ts#L886)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigDecimal.ts#L905)
 
 Since v2.0.0

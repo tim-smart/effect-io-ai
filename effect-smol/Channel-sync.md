@@ -5,13 +5,18 @@ Module: `Channel`<br />
 
 Creates a `Channel` that emits a single value computed by a lazy evaluation.
 
-**Example**
+**Example** (Computing values lazily)
 
 ```ts
 import { Channel } from "effect"
 
-const channel = Channel.sync(() => Math.random())
-// Emits a random number computed when the channel runs
+let requests = 0
+
+const channel = Channel.sync(() => {
+  requests += 1
+  return `request-${requests}`
+})
+// Emits "request-1" when the channel runs for the first time
 ```
 
 **Signature**
@@ -20,6 +25,6 @@ const channel = Channel.sync(() => Math.random())
 declare const sync: <A>(evaluate: LazyArg<A>) => Channel<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L822)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L893)
 
 Since v2.0.0

@@ -9,10 +9,10 @@ Unlike bounded queues, unbounded queues never apply backpressure - producers
 can always add messages successfully. This is useful when you want to prioritize
 producer throughput over memory usage control.
 
-**Example**
+**Example** (Creating unbounded queues)
 
 ```ts
-import { Cause, Effect, Queue } from "effect"
+import { Effect, Queue } from "effect"
 
 const program = Effect.gen(function*() {
   const queue = yield* Queue.unbounded<string>()
@@ -24,7 +24,7 @@ const program = Effect.gen(function*() {
 
   // Check current size
   const size = yield* Queue.size(queue)
-  console.log(size) // Some(5)
+  console.log(size) // 5
 
   // Take all messages
   const messages = yield* Queue.takeAll(queue)
@@ -38,6 +38,6 @@ const program = Effect.gen(function*() {
 declare const unbounded: <A, E = never>() => Effect<Queue<A, E>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Queue.ts#L483)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Queue.ts#L575)
 
 Since v2.0.0

@@ -5,7 +5,7 @@ Module: `TxHashMap`<br />
 
 Returns an array of all key-value pairs in the TxHashMap.
 
-**Example**
+**Example** (Reading entries)
 
 ```ts
 import { Effect, TxHashMap } from "effect"
@@ -18,11 +18,12 @@ const program = Effect.gen(function*() {
   )
 
   const allEntries = yield* TxHashMap.entries(config)
-  console.log(allEntries)
+  const sortedEntries = allEntries.toSorted(([left], [right]) => left.localeCompare(right))
+  console.log(sortedEntries)
   // [["host", "localhost"], ["port", "3000"], ["ssl", "false"]]
 
   // Process configuration entries
-  for (const [key, value] of allEntries) {
+  for (const [key, value] of sortedEntries) {
     console.log(`${key}=${value}`)
   }
   // host=localhost
@@ -37,6 +38,6 @@ const program = Effect.gen(function*() {
 declare const entries: <K, V>(self: TxHashMap<K, V>) => Effect.Effect<Array<readonly [K, V]>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashMap.ts#L898)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashMap.ts#L948)
 
 Since v2.0.0

@@ -19,7 +19,7 @@ For more information, see the [Temporal documentation](https://tc39.es/proposal-
 
 - `"reject"`: Throw an `RangeError` when encountering ambiguous or non-existent times.
 
-**Example**
+**Example** (Resolving ambiguous local times)
 
 ```ts
 import { DateTime } from "effect"
@@ -66,6 +66,6 @@ DateTime.makeZoned(gapTime, {
 type Disambiguation = "compatible" | "earlier" | "later" | "reject"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L274)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L410)
 
 Since v3.18.0

@@ -5,7 +5,7 @@ Module: `Channel`<br />
 
 Creates a `Channel` that lazily evaluates to another channel.
 
-**Example**
+**Example** (Suspending channel creation)
 
 ```ts
 import { Channel } from "effect"
@@ -20,6 +20,6 @@ const channel = Channel.suspend(() => Channel.succeed(42))
 declare const suspend: <OutElem, OutErr, OutDone, InElem, InErr, InDone, Env>(evaluate: LazyArg<Channel<OutElem, OutErr, OutDone, InElem, InErr, InDone, Env>>) => Channel<OutElem, OutErr, OutDone, InElem, InErr, InDone, Env>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L522)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L566)
 
 Since v2.0.0

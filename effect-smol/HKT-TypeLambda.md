@@ -15,7 +15,7 @@ The four parameters represent:
 - `Out1`: Covariant output parameter (often used for context/environment)
 - `Target`: Invariant target parameter (the main type)
 
-**Example**
+**Example** (Defining type lambdas)
 
 ```ts
 import type { Effect, HKT } from "effect"
@@ -47,6 +47,6 @@ export interface TypeLambda {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HKT.ts#L134)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HKT.ts#L149)
 
 Since v2.0.0

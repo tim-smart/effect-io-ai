@@ -3,9 +3,15 @@ Module: `Metric`<br />
 
 ## Metric.CurrentMetricAttributes
 
-Service class for managing the current metric attributes context.
+`Context.Reference` for metric attributes applied from the current Effect
+context.
 
-**Example**
+**Details**
+The default value is an empty attribute set. Metric reads and updates merge
+these contextual attributes with the metric's own attributes to select the
+metric series being accessed.
+
+**Example** (Providing current metric attributes)
 
 ```ts
 import { Data, Effect, Metric } from "effect"
@@ -40,6 +46,6 @@ const program = Effect.gen(function*() {
 declare const CurrentMetricAttributes: Context.Reference<Readonly<Record<string, string>>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Metric.ts#L1764)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Metric.ts#L1740)
 
 Since v4.0.0

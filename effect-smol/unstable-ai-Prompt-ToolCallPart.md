@@ -5,7 +5,7 @@ Module: `Prompt`<br />
 
 Content part representing a tool call request.
 
-**Example**
+**Example** (Creating tool call parts)
 
 ```ts
 import { Prompt } from "effect/unstable/ai"
@@ -41,6 +41,6 @@ export interface ToolCallPart extends BasePart<"tool-call", ToolCallPartOptions>
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L539)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L549)
 
 Since v4.0.0

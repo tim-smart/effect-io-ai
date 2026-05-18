@@ -15,6 +15,6 @@ default implementations for `exists`, `readFileString`, `stream`, `sink`, and
 declare const make: (impl: Omit<FileSystem, typeof TypeId | "exists" | "readFileString" | "stream" | "sink" | "writeFileString">) => FileSystem
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FileSystem.ts#L726)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FileSystem.ts#L739)
 
 Since v4.0.0

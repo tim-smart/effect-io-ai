@@ -6,7 +6,7 @@ Module: `Channel`<br />
 Creates a new channel that consumes all output from the source channel
 but emits nothing, preserving only the completion value.
 
-**Example**
+**Example** (Draining channel output)
 
 ```ts
 import { Channel } from "effect"
@@ -27,6 +27,6 @@ const drainedChannel = Channel.drain(sourceChannel)
 declare const drain: <OutElem, OutErr, OutDone, InElem, InErr, InDone, Env>(self: Channel<OutElem, OutErr, OutDone, InElem, InErr, InDone, Env>) => Channel<never, OutErr, OutDone, InElem, InErr, InDone, Env>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L2854)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L2983)
 
 Since v2.0.0

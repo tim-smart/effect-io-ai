@@ -31,6 +31,6 @@ console.log(Exit.isSuccess(exit)) // true
 declare const succeed: <A>(a: A) => Exit<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Exit.ts#L234)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Exit.ts#L236)
 
 Since v2.0.0

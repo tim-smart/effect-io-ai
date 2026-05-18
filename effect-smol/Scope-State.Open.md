@@ -6,7 +6,7 @@ Module: `Scope`<br />
 Represents an open scope state where finalizers can be added and
 the scope is still accepting new resources.
 
-**Example**
+**Example** (Inspecting an open scope state)
 
 ```ts
 import { Scope } from "effect"
@@ -29,6 +29,6 @@ type Open = {
   }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Scope.ts#L154)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Scope.ts#L162)
 
 Since v2.0.0

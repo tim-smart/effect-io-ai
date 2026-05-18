@@ -5,7 +5,7 @@ Module: `Tool`<br />
 
 Annotation for providing tool metadata for MCP.
 
-**Example**
+**Example** (Annotating MCP metadata)
 
 ```ts
 import { Tool } from "effect/unstable/ai"
@@ -20,6 +20,6 @@ const myCalculatorUi = Tool.make("calculator_ui", {})
 declare class Meta
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tool.ts#L1635)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tool.ts#L1679)
 
-Since v1.0.0
+Since v4.0.0

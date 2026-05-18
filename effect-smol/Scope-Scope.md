@@ -7,7 +7,7 @@ A `Scope` represents a context where resources can be acquired and
 automatically cleaned up when the scope is closed. Scopes can use
 either sequential or parallel finalization strategies.
 
-**Example**
+**Example** (Managing scoped resources)
 
 ```ts
 import { Effect, Exit, Scope } from "effect"
@@ -35,6 +35,6 @@ export interface Scope {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Scope.ts#L50)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Scope.ts#L51)
 
 Since v2.0.0

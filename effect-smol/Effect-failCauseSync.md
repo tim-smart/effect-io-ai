@@ -8,7 +8,7 @@ Creates an `Effect` that represents a failure with a `Cause` computed lazily.
 This function is useful when you need to create a failure effect with a
 complex cause but want to defer the computation until the effect is run.
 
-**Example**
+**Example** (Usage)
 
 ```ts
 import { Cause, Effect } from "effect"
@@ -27,6 +27,6 @@ Effect.runPromiseExit(program).then(console.log)
 declare const failCauseSync: <E>(evaluate: LazyArg<Cause.Cause<E>>) => Effect<never, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L1638)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L1506)
 
 Since v2.0.0

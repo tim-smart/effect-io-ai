@@ -6,7 +6,7 @@ Module: `Duration`<br />
 Safely decodes a `Input` value into a `Duration`, returning
 `Option.none()` if decoding fails.
 
-**Example**
+**Example** (Safely decoding duration inputs)
 
 ```ts
 import { Duration, Option } from "effect"
@@ -22,6 +22,6 @@ Duration.fromInput("invalid" as any) // None
 declare const fromInput: (u: Input) => Option.Option<Duration>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Duration.ts#L258)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Duration.ts#L263)
 
 Since v4.0.0

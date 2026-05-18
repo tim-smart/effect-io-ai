@@ -13,6 +13,6 @@ false, preventing them from being exported.
 declare const MinimumTraceLevel: Context.Reference<LogLevel>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tracer.ts#L366)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tracer.ts#L527)
 
 Since v4.0.0

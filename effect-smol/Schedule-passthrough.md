@@ -5,7 +5,7 @@ Module: `Schedule`<br />
 
 Returns a new `Schedule` that outputs the inputs of the specified schedule.
 
-**Example**
+**Example** (Passing inputs through as outputs)
 
 ```ts
 import { Console, Effect, Schedule } from "effect"
@@ -34,6 +34,6 @@ const program = Effect.gen(function*() {
 declare const passthrough: <Output, Input, Error, Env>(self: Schedule<Output, Input, Error, Env>) => Schedule<Input, Input, Error, Env>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L2338)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L2332)
 
 Since v2.0.0

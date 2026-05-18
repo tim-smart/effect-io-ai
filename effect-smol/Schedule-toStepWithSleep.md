@@ -5,7 +5,7 @@ Module: `Schedule`<br />
 
 Extracts a step function from a Schedule that automatically handles sleep delays.
 
-**Example**
+**Example** (Extracting a sleeping step function)
 
 ```ts
 import { Effect, Schedule } from "effect"
@@ -35,6 +35,6 @@ const program = Effect.gen(function*() {
 declare const toStepWithSleep: <Output, Input, Error, Env>(schedule: Schedule<Output, Input, Error, Env>) => Effect<(input: Input) => Pull.Pull<Output, Error, Output, Env>, never, Env>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L508)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L511)
 
 Since v4.0.0

@@ -5,7 +5,7 @@ Module: `Response`<br />
 
 Response part indicating the completion of a response generation.
 
-**Example**
+**Example** (Creating a finish part)
 
 ```ts
 import { Response } from "effect/unstable/ai"
@@ -48,6 +48,6 @@ export interface FinishPart extends BasePart<"finish", FinishPartMetadata> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Response.ts#L2398)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Response.ts#L2409)
 
-Since v1.0.0
+Since v4.0.0

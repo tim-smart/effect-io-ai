@@ -5,7 +5,7 @@ Module: `TxPriorityQueue`<br />
 
 Returns `true` if the queue is empty.
 
-**Example**
+**Example** (Checking whether a queue is empty)
 
 ```ts
 import { Effect, Order, TxPriorityQueue } from "effect"
@@ -23,6 +23,6 @@ const program = Effect.gen(function*() {
 declare const isEmpty: <A>(self: TxPriorityQueue<A>) => Effect.Effect<boolean>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxPriorityQueue.ts#L202)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxPriorityQueue.ts#L208)
 
 Since v4.0.0

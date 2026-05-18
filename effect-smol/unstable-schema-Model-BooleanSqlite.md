@@ -3,15 +3,24 @@ Module: `Model`<br />
 
 ## Model.BooleanSqlite
 
-A schema for sqlite booleans that are represented as `0 | 1` in database
-variants and `boolean` in JSON variants.
+Variant field type for SQLite booleans stored as `0 | 1` in database variants
+and exposed as `boolean` in JSON variants.
 
 **Signature**
 
 ```ts
-declare const BooleanSqlite: BooleanSqlite
+export interface BooleanSqlite extends
+  VariantSchema.Field<{
+    readonly select: Schema.BooleanFromBit
+    readonly insert: Schema.BooleanFromBit
+    readonly update: Schema.BooleanFromBit
+    readonly json: Schema.Boolean
+    readonly jsonCreate: Schema.Boolean
+    readonly jsonUpdate: Schema.Boolean
+  }>
+{}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Model.ts#L326)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Model.ts#L359)
 
 Since v4.0.0

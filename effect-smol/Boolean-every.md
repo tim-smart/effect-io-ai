@@ -5,7 +5,7 @@ Module: `Boolean`<br />
 
 This utility function is used to check if all the elements in a collection of boolean values are `true`.
 
-**Example**
+**Example** (Checking every boolean)
 
 ```ts
 import { every } from "effect/Boolean"
@@ -21,6 +21,6 @@ assert.deepStrictEqual(every([true, false, true]), false)
 declare const every: (collection: Iterable<boolean>) => boolean
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Boolean.ts#L308)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Boolean.ts#L322)
 
 Since v2.0.0

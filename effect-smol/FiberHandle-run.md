@@ -3,10 +3,13 @@ Module: `FiberHandle`<br />
 
 ## FiberHandle.run
 
-Run an Effect and add the forked fiber to the FiberHandle.
-When the fiber completes, it will be removed from the FiberHandle.
+Forks an Effect and stores the resulting fiber in the `FiberHandle`.
 
-**Example**
+The handle manages only one fiber: running a new effect interrupts the
+previous fiber unless `onlyIfMissing` is set. When the managed fiber
+completes, it is removed from the handle.
+
+**Example** (Running an effect in a fiber handle)
 
 ```ts
 import { Effect, Fiber, FiberHandle } from "effect"
@@ -32,6 +35,6 @@ Effect.gen(function*() {
 declare const run: { <A, E>(self: FiberHandle<A, E>, options?: { readonly onlyIfMissing?: boolean; readonly propagateInterruption?: boolean | undefined; readonly startImmediately?: boolean | undefined; }): <R, XE extends E, XA extends A>(effect: Effect.Effect<XA, XE, R>) => Effect.Effect<Fiber.Fiber<XA, XE>, never, R>; <A, E, R, XE extends E, XA extends A>(self: FiberHandle<A, E>, effect: Effect.Effect<XA, XE, R>, options?: { readonly onlyIfMissing?: boolean; readonly propagateInterruption?: boolean | undefined; readonly startImmediately?: boolean | undefined; }): Effect.Effect<Fiber.Fiber<XA, XE>, never, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FiberHandle.ts#L488)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FiberHandle.ts#L562)
 
 Since v2.0.0

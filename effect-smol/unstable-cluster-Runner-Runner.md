@@ -3,14 +3,10 @@ Module: `Runner`<br />
 
 ## Runner.Runner
 
-A `Runner` represents a physical application server that is capable of running
-entities.
+A cluster runner that can host entities.
 
-Because a Runner represents a physical application server, a Runner must have a
-unique `address` which can be used to communicate with the server.
-
-The version of a Runner is used during rebalancing to give priority to newer
-application servers and slowly decommission older ones.
+Each runner has a unique network `address`, the shard `groups` it participates
+in, and a relative `weight` used when assigning shards across runners.
 
 **Signature**
 
@@ -18,6 +14,6 @@ application servers and slowly decommission older ones.
 declare class Runner
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Runner.ts#L25)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Runner.ts#L45)
 
 Since v4.0.0

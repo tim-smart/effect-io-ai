@@ -11,6 +11,6 @@ A request resolver that never executes requests.
 declare const never: RequestResolver<never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RequestResolver.ts#L641)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RequestResolver.ts#L700)
 
 Since v2.0.0

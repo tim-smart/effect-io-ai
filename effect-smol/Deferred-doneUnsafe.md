@@ -3,10 +3,14 @@ Module: `Deferred`<br />
 
 ## Deferred.doneUnsafe
 
-Unsafely exits the `Deferred` with the specified `Exit` value, which will be
-propagated to all fibers waiting on the value of the `Deferred`.
+Synchronously attempts to complete the `Deferred` with the specified
+completion effect.
 
-**Example**
+This mutates the `Deferred` directly and should be reserved for low-level
+code; prefer the effectful completion APIs when possible. Returns `true` if
+this call completed the `Deferred`, or `false` if it was already completed.
+
+**Example** (Completing a Deferred unsafely)
 
 ```ts
 import { Deferred, Effect } from "effect"
@@ -22,6 +26,6 @@ console.log(success) // true
 declare const doneUnsafe: <A, E>(self: Deferred<A, E>, effect: Effect<A, E>) => boolean
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Deferred.ts#L672)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Deferred.ts#L753)
 
 Since v2.0.0

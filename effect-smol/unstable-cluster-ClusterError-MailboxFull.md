@@ -11,6 +11,6 @@ Represents an error that occurs when the entities mailbox is full.
 declare class MailboxFull
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ClusterError.ts#L143)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ClusterError.ts#L184)
 
 Since v4.0.0

@@ -3,15 +3,15 @@ Module: `ErrorReporter`<br />
 
 ## ErrorReporter.Reportable
 
-Interface that errors can implement to control reporting behavior.
+Interface that object errors can implement to control reporting behavior.
 
 All three annotation properties are optional:
-- `[ErrorReporter.ignore]` — when `true`, the error is never reported
-- `[ErrorReporter.severity]` — overrides the default `"Error"` severity
-- `[ErrorReporter.attributes]` — extra key/value pairs forwarded to reporters
+- `[ErrorReporter.ignore]` - when `true`, the error is not reported
+- `[ErrorReporter.severity]` - overrides the default `"Info"` severity
+- `[ErrorReporter.attributes]` - extra key/value pairs forwarded to reporters
 
 The global `Error` interface is augmented with `Reportable`, so these
-properties are available on all `Error` instances.
+properties are available on `Error` instances at the type level.
 
 **Signature**
 
@@ -23,6 +23,6 @@ export interface Reportable {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ErrorReporter.ts#L281)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ErrorReporter.ts#L290)
 
 Since v4.0.0

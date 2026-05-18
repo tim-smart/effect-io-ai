@@ -3,9 +3,13 @@ Module: `FiberHandle`<br />
 
 ## FiberHandle.runtime
 
-Capture a Runtime and use it to fork Effect's, adding the forked fibers to the FiberHandle.
+Captures the current runtime and returns a function for forking effects into
+an existing `FiberHandle`.
 
-**Example**
+Each call returns the forked fiber, stores it in the handle, and interrupts
+the previous fiber unless `onlyIfMissing` is set.
+
+**Example** (Capturing a runtime for fiber handles)
 
 ```ts
 import { Effect, FiberHandle, Context } from "effect"
@@ -37,6 +41,6 @@ Effect.gen(function*() {
 declare const runtime: <A, E>(self: FiberHandle<A, E>) => <R = never>() => Effect.Effect<(<XE extends E, XA extends A>(effect: Effect.Effect<XA, XE, R>, options?: { readonly signal?: AbortSignal | undefined; readonly scheduler?: Scheduler | undefined; readonly onlyIfMissing?: boolean | undefined; readonly propagateInterruption?: boolean | undefined; } | undefined) => Fiber.Fiber<XA, XE>), never, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FiberHandle.ts#L566)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FiberHandle.ts#L645)
 
 Since v2.0.0

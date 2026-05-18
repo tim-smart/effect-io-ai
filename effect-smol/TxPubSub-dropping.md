@@ -6,7 +6,7 @@ Module: `TxPubSub`<br />
 Creates a dropping TxPubSub with the specified capacity. When a subscriber's
 queue is full, the message is dropped for that subscriber.
 
-**Example**
+**Example** (Creating a dropping pub/sub)
 
 ```ts
 import { Effect, TxPubSub, TxQueue } from "effect"
@@ -34,6 +34,6 @@ const program = Effect.gen(function*() {
 declare const dropping: <A = never>(capacity: number) => Effect.Effect<TxPubSub<A>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxPubSub.ts#L156)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxPubSub.ts#L159)
 
 Since v4.0.0

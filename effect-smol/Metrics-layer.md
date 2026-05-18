@@ -5,7 +5,7 @@ Module: `Metrics`<br />
 
 Creates a Layer that registers a metric producer with metric readers.
 
-**Example**
+**Example** (Creating a metrics layer with temporality)
 
 ```ts
 import { Metrics } from "@effect/opentelemetry"
@@ -36,6 +36,6 @@ const cumulativeLayer = Metrics.layer(
 declare const layer: (evaluate: LazyArg<MetricReader | Arr.NonEmptyReadonlyArray<MetricReader>>, options?: { readonly shutdownTimeout?: Duration.Input | undefined; readonly temporality?: TemporalityPreference | undefined; }) => Layer.Layer<never, never, Resource>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Metrics.ts#L104)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Metrics.ts#L121)
 
-Since v1.0.0
+Since v4.0.0

@@ -5,7 +5,7 @@ Module: `TxHashSet`<br />
 
 Creates an empty TxHashSet.
 
-**Example**
+**Example** (Creating an empty transactional hash set)
 
 ```ts
 import { Effect, TxHashSet } from "effect"
@@ -29,6 +29,6 @@ const program = Effect.gen(function*() {
 declare const empty: <V = never>() => Effect.Effect<TxHashSet<V>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashSet.ts#L168)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashSet.ts#L196)
 
 Since v2.0.0

@@ -3,8 +3,8 @@ Module: `Effect`<br />
 
 ## Effect.andThen
 
-Chains two actions, where the second action can depend on the result of the
-first.
+Runs this effect and then runs another effect, optionally using the first
+effect's success value to choose the next effect.
 
 **Syntax**
 
@@ -18,23 +18,18 @@ const transformedEffect = myEffect.pipe(Effect.andThen(anotherEffect))
 
 **When to Use**
 
-Use `andThen` when you need to run multiple actions in sequence, with the
-second action depending on the result of the first. This is useful for
-combining effects or handling computations that must happen in order.
+Use `andThen` when one effect must run after another and the second effect
+may depend on the first effect's success value.
 
 **Details**
 
-The second action can be:
+When the second argument is an `Effect`, the first success value is discarded
+and the returned effect produces the second effect's value. When the second
+argument is a function, it receives the first success value and must return
+the next `Effect`.
 
-- A constant value (similar to `as`)
-- A function returning a value (similar to `map`)
-- A `Promise`
-- A function returning a `Promise`
-- An `Effect`
-- A function returning an `Effect` (similar to `flatMap`)
-
-**Note:** `andThen` works well with both `Option` and `Result` types,
-treating them as effects.
+Failures or requirements from either effect are preserved in the returned
+effect.
 
 **Previously Known As**
 
@@ -42,10 +37,8 @@ This API replaces the following from Effect 3.x:
 
 - `Effect.zipRight`
 
-**Example**
+**Example** (Applying a Discount Based on Fetched Amount)
 
-```ts
-Applying a Discount Based on Fetched Amount
 ```ts
 import { Data, Effect, pipe } from "effect"
 
@@ -83,7 +76,6 @@ const result2 = pipe(
 Effect.runPromise(result2).then(console.log)
 // Output: 190
 ```
-```
 
 **Signature**
 
@@ -91,6 +83,6 @@ Effect.runPromise(result2).then(console.log)
 declare const andThen: { <A, B, E2, R2>(f: (a: A) => Effect<B, E2, R2>): <E, R>(self: Effect<A, E, R>) => Effect<B, E | E2, R | R2>; <B, E2, R2>(f: Effect<B, E2, R2>): <A, E, R>(self: Effect<A, E, R>) => Effect<B, E | E2, R | R2>; <A, E, R, B, E2, R2>(self: Effect<A, E, R>, f: (a: A) => Effect<B, E2, R2>): Effect<B, E | E2, R | R2>; <A, E, R, B, E2, R2>(self: Effect<A, E, R>, f: Effect<B, E2, R2>): Effect<B, E | E2, R | R2>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L2080)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L1957)
 
 Since v2.0.0

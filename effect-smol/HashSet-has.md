@@ -5,10 +5,10 @@ Module: `HashSet`<br />
 
 Checks if the HashSet contains the specified value.
 
-**Example**
+**Example** (Checking HashSet membership)
 
 ```ts
-import * as HashSet from "effect/HashSet" // false
+import * as HashSet from "effect/HashSet"
 
 // Works with any type that implements Equal
 import { Equal, Hash } from "effect"
@@ -16,7 +16,7 @@ import { Equal, Hash } from "effect"
 const set = HashSet.make("apple", "banana", "cherry")
 
 console.log(HashSet.has(set, "apple")) // true
-console.log(HashSet.has(set, "grape"))
+console.log(HashSet.has(set, "grape")) // false
 
 class Person implements Equal.Equal {
   constructor(readonly name: string) {}
@@ -40,6 +40,6 @@ console.log(HashSet.has(people, new Person("Alice"))) // true
 declare const has: { <V>(value: V): (self: HashSet<V>) => boolean; <V>(self: HashSet<V>, value: V): boolean; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashSet.ts#L244)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashSet.ts#L294)
 
 Since v2.0.0

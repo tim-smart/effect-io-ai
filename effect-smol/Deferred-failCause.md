@@ -3,10 +3,13 @@ Module: `Deferred`<br />
 
 ## Deferred.failCause
 
-Fails the `Deferred` with the specified `Cause`, which will be propagated to
-all fibers waiting on the value of the `Deferred`.
+Attempts to complete the `Deferred` with the specified `Cause`.
 
-**Example**
+Fibers waiting on the `Deferred` observe that cause only if this call
+completes it. The returned effect succeeds with `true` when this call
+completed the `Deferred`, or `false` if it was already completed.
+
+**Example** (Failing a Deferred with a Cause)
 
 ```ts
 import { Cause, Deferred, Effect } from "effect"
@@ -27,6 +30,6 @@ const program = Effect.gen(function*() {
 declare const failCause: { <E>(cause: Cause.Cause<E>): <A>(self: Deferred<A, E>) => Effect<boolean>; <A, E>(self: Deferred<A, E>, cause: Cause.Cause<E>): Effect<boolean>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Deferred.ts#L401)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Deferred.ts#L441)
 
 Since v2.0.0

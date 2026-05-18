@@ -3,15 +3,18 @@ Module: `CliError`<br />
 
 ## CliError.NonShowHelpErrors
 
-Represents errors that should not trigger the display of the CLI's help
-documentation.
+Type of CLI errors that are not `ShowHelp`.
+
+These errors can be accumulated and attached to `ShowHelp.errors` when the
+runner should display help along with the underlying parse or validation
+failures.
 
 **Signature**
 
 ```ts
-declare const NonShowHelpErrors: Schema.Union<readonly [typeof UnrecognizedOption, typeof DuplicateOption, typeof MissingOption, typeof MissingArgument, typeof InvalidValue, typeof UnknownSubcommand, typeof UserError]>
+type NonShowHelpErrors = typeof NonShowHelpErrors.Type
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/CliError.ts#L442)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/CliError.ts#L533)
 
 Since v4.0.0

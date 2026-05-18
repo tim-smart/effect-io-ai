@@ -15,6 +15,6 @@ program.
 declare class ModelName
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Model.ts#L100)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Model.ts#L101)
 
 Since v4.0.0

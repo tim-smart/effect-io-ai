@@ -8,7 +8,7 @@ Outputs an informational message to the console.
 This function logs messages at the info level, typically displayed
 with an info icon in most console implementations.
 
-**Example**
+**Example** (Writing informational messages)
 
 ```ts
 import { Console, Effect } from "effect"
@@ -28,6 +28,6 @@ const program = Effect.gen(function*() {
 declare const info: (...args: ReadonlyArray<any>) => Effect.Effect<void>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Console.ts#L437)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Console.ts#L455)
 
 Since v2.0.0

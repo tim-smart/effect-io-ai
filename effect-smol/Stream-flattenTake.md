@@ -6,7 +6,7 @@ Module: `Stream`<br />
 Unwraps `Take` values, emitting elements from non-empty arrays and ending or
 failing when the `Exit` signals completion.
 
-**Example**
+**Example** (Flattening Take values)
 
 ```ts
 import { Array, Console, Effect, Exit, Stream } from "effect"
@@ -32,6 +32,6 @@ Effect.runPromise(program)
 declare const flattenTake: <A, E, E2, R>(self: Stream<Take.Take<A, E>, E2, R>) => Stream<A, E | E2, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L2914)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L3044)
 
 Since v4.0.0

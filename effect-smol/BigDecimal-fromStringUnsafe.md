@@ -3,9 +3,13 @@ Module: `BigDecimal`<br />
 
 ## BigDecimal.fromStringUnsafe
 
-Parses a numerical `string` into a `BigDecimal`.
+Parses a decimal string into a `BigDecimal`, throwing if the string is
+invalid.
 
-**Example**
+Accepts the same syntax as `fromString`. Use `fromString` when invalid input
+should be represented as `Option.none` instead of throwing.
+
+**Example** (Parsing decimal strings unsafely)
 
 ```ts
 import { fromStringUnsafe, make } from "effect/BigDecimal"
@@ -22,6 +26,6 @@ assert.throws(() => fromStringUnsafe("123.abc"))
 declare const fromStringUnsafe: (s: string) => BigDecimal
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigDecimal.ts#L1206)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigDecimal.ts#L1243)
 
 Since v2.0.0

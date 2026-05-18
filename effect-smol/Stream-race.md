@@ -3,10 +3,14 @@ Module: `Stream`<br />
 
 ## Stream.race
 
-Returns a stream that mirrors the first upstream to emit an item.
-As soon as one stream emits, the other is interrupted and failures propagate.
+Runs both streams concurrently until one stream emits its first value, then
+mirrors that winning stream and interrupts the other.
 
-**Example**
+A failure or completion from one side before the other side emits does not
+win the race unless both sides fail or complete before emitting. After a
+winner is chosen, that stream's later failures are propagated.
+
+**Example** (Racing two streams)
 
 ```ts
 import { Console, Effect, Schedule, Stream } from "effect"
@@ -31,6 +35,6 @@ Effect.runPromise(program)
 declare const race: { <AR, ER, RR>(right: Stream<AR, ER, RR>): <AL, EL, RL>(left: Stream<AL, EL, RL>) => Stream<AL | AR, EL | ER, RL | RR>; <AL, EL, RL, AR, ER, RR>(left: Stream<AL, EL, RL>, right: Stream<AR, ER, RR>): Stream<AL | AR, EL | ER, RL | RR>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L4052)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L4216)
 
 Since v3.7.0

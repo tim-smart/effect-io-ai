@@ -9,7 +9,7 @@ This type represents patterns that can match against complex data structures
 like objects and arrays. It supports nested pattern matching and partial
 object matching, enabling sophisticated pattern compositions.
 
-**Example**
+**Example** (Describing complex object patterns)
 
 ```ts
 import { Match } from "effect"
@@ -43,6 +43,6 @@ type PatternBase<A> = A extends ReadonlyArray<infer _T> ? ReadonlyArray<any> | P
     : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L2074)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L2056)
 
 Since v4.0.0

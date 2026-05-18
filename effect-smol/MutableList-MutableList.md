@@ -7,7 +7,7 @@ A mutable linked list data structure optimized for high-throughput operations.
 MutableList provides efficient append/prepend operations and is ideal for
 producer-consumer patterns, queues, and streaming scenarios.
 
-**Example**
+**Example** (Creating and consuming a mutable list)
 
 ```ts
 import * as MutableList from "effect/MutableList"
@@ -41,6 +41,6 @@ export interface MutableList<in out A> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableList.ts#L70)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableList.ts#L87)
 
 Since v4.0.0

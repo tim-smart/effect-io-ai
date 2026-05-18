@@ -5,7 +5,7 @@ Module: `Channel`<br />
 
 Creates a `Channel` that immediately ends with the specified value.
 
-**Example**
+**Example** (Ending with a value)
 
 ```ts
 import { Channel } from "effect"
@@ -20,6 +20,6 @@ const channel = Channel.end("done")
 declare const end: <A>(value: A) => Channel<never, never, A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L797)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L862)
 
 Since v4.0.0

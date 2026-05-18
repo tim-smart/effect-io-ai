@@ -3,9 +3,12 @@ Module: `Tool`<br />
 
 ## Tool.Destructive
 
-Annotation indicating whether a tool performs destructive operations.
+Annotation indicating whether a tool may perform destructive operations.
 
-**Example**
+This is emitted as the MCP `destructiveHint`; unannotated tools default to
+`true`, so annotate safe tools with `false`.
+
+**Example** (Marking a tool as non-destructive)
 
 ```ts
 import { Tool } from "effect/unstable/ai"
@@ -20,6 +23,6 @@ const safeTool = Tool.make("search_database")
 declare const Destructive: Context.Reference<boolean>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tool.ts#L1669)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tool.ts#L1721)
 
-Since v1.0.0
+Since v4.0.0

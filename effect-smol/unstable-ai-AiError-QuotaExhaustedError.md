@@ -7,7 +7,7 @@ Error indicating account or billing limits have been reached.
 
 Quota exhausted errors are not retryable without user action.
 
-**Example**
+**Example** (Creating a quota exhausted error)
 
 ```ts
 import { AiError } from "effect/unstable/ai"
@@ -25,6 +25,6 @@ console.log(quotaError.message)
 declare class QuotaExhaustedError
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AiError.ts#L443)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AiError.ts#L458)
 
-Since v1.0.0
+Since v4.0.0

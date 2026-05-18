@@ -9,7 +9,7 @@ Creates a new `Stream` from an iterable collection of values.
 
 - `chunkSize`: Maximum number of values emitted per chunk.
 
-**Example**
+**Example** (Creating a stream from an iterable)
 
 ```ts
 import { Console, Effect, Stream } from "effect"
@@ -32,6 +32,6 @@ Effect.runPromise(program)
 declare const fromIterable: <A>(iterable: Iterable<A>, options?: { readonly chunkSize?: number | undefined; }) => Stream<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L1072)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L1132)
 
 Since v2.0.0

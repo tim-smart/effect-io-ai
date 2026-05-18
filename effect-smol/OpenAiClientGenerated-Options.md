@@ -40,4 +40,4 @@ type Options = {
 
 [Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClientGenerated.ts#L43)
 
-Since v1.0.0
+Since v4.0.0

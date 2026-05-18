@@ -18,10 +18,13 @@ effect fails.
 This is useful for structuring your code to respond differently to success or
 failure without triggering side effects.
 
-**Example**
+**See**
+
+- `matchEffect` if you need to perform side effects in the handlers.
+
+**Example** (Handling Both Success and Failure Cases)
 
 ```ts
-// Title: Handling Both Success and Failure Cases
 import { Data, Effect } from "effect"
 
 class ExampleError extends Data.TaggedError("ExampleError")<{ readonly message: string }> {}
@@ -51,16 +54,12 @@ Effect.runPromise(program2).then(console.log)
 // Output: "failure: Uh oh!"
 ```
 
-**See**
-
-- `matchEffect` if you need to perform side effects in the handlers.
-
 **Signature**
 
 ```ts
 declare const match: { <E, A2, A, A3>(options: { readonly onFailure: (error: E) => A2; readonly onSuccess: (value: A) => A3; }): <R>(self: Effect<A, E, R>) => Effect<A2 | A3, never, R>; <A, E, R, A2, A3>(self: Effect<A, E, R>, options: { readonly onFailure: (error: E) => A2; readonly onSuccess: (value: A) => A3; }): Effect<A2 | A3, never, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L5091)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L4961)
 
 Since v2.0.0

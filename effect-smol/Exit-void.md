@@ -30,6 +30,6 @@ console.log(Exit.isSuccess(exit)) // true
 declare const void: Exit<void, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Exit.ts#L365)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Exit.ts#L367)
 
 Since v2.0.0

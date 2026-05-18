@@ -8,7 +8,7 @@ Creates a new bounded `TxQueue` with the specified capacity.
 **Return behavior**: This function returns a new TxQueue reference with
 the specified capacity. No existing TxQueue instances are modified.
 
-**Example**
+**Example** (Creating bounded queues)
 
 ```ts
 import { Effect, TxQueue } from "effect"
@@ -35,6 +35,6 @@ const program = Effect.gen(function*() {
 declare const bounded: <A = never, E = never>(capacity: number) => Effect.Effect<TxQueue<A, E>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxQueue.ts#L406)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxQueue.ts#L368)
 
 Since v4.0.0

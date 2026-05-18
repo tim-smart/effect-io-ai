@@ -5,7 +5,7 @@ Module: `BigDecimal`<br />
 
 Checks if a given value is a `BigDecimal`.
 
-**Example**
+**Example** (Checking BigDecimal values)
 
 ```ts
 import { BigDecimal } from "effect"
@@ -22,6 +22,6 @@ console.log(BigDecimal.isBigDecimal("123.45")) // false
 declare const isBigDecimal: (u: unknown) => u is BigDecimal
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigDecimal.ts#L100)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigDecimal.ts#L102)
 
 Since v2.0.0

@@ -18,7 +18,7 @@ For example:
 }
 ```
 
-**Example**
+**Example** (Logging structured output to the console)
 
 ```ts
 import { Effect, Logger } from "effect"
@@ -63,6 +63,6 @@ const inspectionProgram = Effect.gen(function*() {
 declare const consoleStructured: Logger<unknown, void>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Logger.ts#L1000)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Logger.ts#L1025)
 
 Since v4.0.0

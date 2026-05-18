@@ -11,6 +11,6 @@ Can be used in tests to simulate a transaction.
 declare const MemoryTransaction: Context.Reference<boolean>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MessageStorage.ts#L702)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MessageStorage.ts#L796)
 
 Since v4.0.0

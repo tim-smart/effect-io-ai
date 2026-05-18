@@ -5,7 +5,7 @@ Module: `Chunk`<br />
 
 Returns a function that checks if a `Chunk` contains a given value using the default `Equivalence`.
 
-**Example**
+**Example** (Checking membership)
 
 ```ts
 import { Chunk } from "effect"
@@ -30,6 +30,6 @@ console.log(Chunk.contains(empty, 1)) // false
 declare const contains: { <A>(a: A): (self: Chunk<A>) => boolean; <A>(self: Chunk<A>, a: A): boolean; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L2467)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L2532)
 
 Since v2.0.0

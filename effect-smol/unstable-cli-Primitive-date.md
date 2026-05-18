@@ -5,7 +5,7 @@ Module: `Primitive`<br />
 
 Creates a primitive that parses Date objects from string input.
 
-**Example**
+**Example** (Parsing date values)
 
 ```ts
 import { Effect } from "effect"
@@ -29,6 +29,6 @@ const parseDate = Effect.gen(function*() {
 declare const date: Primitive<Date>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Primitive.ts#L228)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Primitive.ts#L237)
 
 Since v4.0.0

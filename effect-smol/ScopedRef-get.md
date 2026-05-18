@@ -11,6 +11,6 @@ Retrieves the current value of the scoped reference.
 declare const get: <A>(self: ScopedRef<A>) => Effect.Effect<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ScopedRef.ts#L85)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ScopedRef.ts#L105)
 
 Since v2.0.0

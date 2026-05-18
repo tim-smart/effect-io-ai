@@ -5,7 +5,7 @@ Module: `Response`<br />
 
 Response part indicating that an error occurred generating the response.
 
-**Example**
+**Example** (Creating an error part)
 
 ```ts
 import { Response } from "effect/unstable/ai"
@@ -23,6 +23,6 @@ export interface ErrorPart extends BasePart<"error", ErrorPartMetadata> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Response.ts#L2494)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Response.ts#L2506)
 
-Since v1.0.0
+Since v4.0.0

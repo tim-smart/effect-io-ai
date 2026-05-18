@@ -3,9 +3,10 @@ Module: `Chunk`<br />
 
 ## Chunk.dedupe
 
-Remove duplicates from an array, keeping the first occurrence of an element.
+Removes duplicate elements from a `Chunk`, preserving the first occurrence
+of each value.
 
-**Example**
+**Example** (Removing duplicate values)
 
 ```ts
 import { Chunk } from "effect"
@@ -31,6 +32,6 @@ console.log(Chunk.toArray(uniqueDeduped)) // [1, 2, 3]
 declare const dedupe: <A>(self: Chunk<A>) => Chunk<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L2188)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L2241)
 
 Since v2.0.0

@@ -5,7 +5,7 @@ Module: `Chunk`<br />
 
 A Chunk is an immutable, ordered collection optimized for efficient concatenation and access patterns.
 
-**Example**
+**Example** (Inspecting chunk values)
 
 ```ts
 import { Chunk } from "effect"
@@ -30,6 +30,6 @@ export interface Chunk<out A> extends Iterable<A>, Equal.Equal, Pipeable, Inspec
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L109)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L112)
 
 Since v2.0.0

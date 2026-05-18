@@ -5,7 +5,7 @@ Module: `HttpStaticServer`<br />
 
 Creates a layer that mounts static files on an `HttpRouter`.
 
-**Example**
+**Example** (Mounting static files on a router)
 
 ```ts
 import { Layer } from "effect"
@@ -29,6 +29,6 @@ const AppLayer = Layer.mergeAll(ApiLayer, StaticFilesLayer)
 declare const layer: (options: { readonly root: string; readonly index?: string | undefined; readonly spa?: boolean | undefined; readonly cacheControl?: string | undefined; readonly mimeTypes?: Record<string, string> | undefined; readonly prefix?: string | undefined; }) => Layer.Layer<never, PlatformError, HttpRouter.HttpRouter | FileSystem.FileSystem | Path.Path | HttpPlatform.HttpPlatform>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpStaticServer.ts#L191)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpStaticServer.ts#L209)
 
 Since v4.0.0

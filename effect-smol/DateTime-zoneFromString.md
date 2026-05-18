@@ -7,7 +7,7 @@ Try to parse a `TimeZone` from a string.
 
 Supports both IANA time zone identifiers and offset formats like "+03:00".
 
-**Example**
+**Example** (Parsing time zones)
 
 ```ts
 import { DateTime } from "effect"
@@ -27,6 +27,6 @@ console.log(invalid._tag === "None") // true
 declare const zoneFromString: (zone: string) => Option.Option<TimeZone>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L845)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L1040)
 
 Since v3.6.0

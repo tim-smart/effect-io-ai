@@ -5,7 +5,7 @@ Module: `Argument`<br />
 
 Creates a variadic positional argument that accepts multiple values.
 
-**Example**
+**Example** (Accepting multiple values)
 
 ```ts
 import { Argument } from "effect/unstable/cli"
@@ -30,6 +30,6 @@ const limitedFiles = Argument.string("files").pipe(
 declare const variadic: { (options?: Param.VariadicParamOptions | undefined): <A>(self: Argument<A>) => Argument<ReadonlyArray<A>>; <A>(self: Argument<A>, options?: Param.VariadicParamOptions | undefined): Argument<ReadonlyArray<A>>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Argument.ts#L383)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Argument.ts#L428)
 
 Since v4.0.0

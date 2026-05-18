@@ -5,7 +5,7 @@ Module: `RequestResolver`<br />
 
 Sets the batch delay effect for this request resolver.
 
-**Example**
+**Example** (Setting an effectful batch delay)
 
 ```ts
 import { Effect, Exit, Request, RequestResolver } from "effect"
@@ -39,6 +39,6 @@ const resolverWithCustomDelay = RequestResolver.setDelayEffect(
 declare const setDelayEffect: { (delay: Effect.Effect<void>): <A extends Request.Any>(self: RequestResolver<A>) => RequestResolver<A>; <A extends Request.Any>(self: RequestResolver<A>, delay: Effect.Effect<void>): RequestResolver<A>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RequestResolver.ts#L516)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RequestResolver.ts#L572)
 
 Since v4.0.0

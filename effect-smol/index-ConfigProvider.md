@@ -17,6 +17,6 @@ Re-exports all named exports from the "./ConfigProvider.ts" module as `ConfigPro
 export * as ConfigProvider from "./ConfigProvider.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L664)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L671)
 
 Since v4.0.0

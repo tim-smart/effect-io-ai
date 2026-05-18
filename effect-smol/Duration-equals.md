@@ -5,7 +5,7 @@ Module: `Duration`<br />
 
 Checks if two Durations are equal.
 
-**Example**
+**Example** (Checking duration equality)
 
 ```ts
 import { Duration } from "effect"
@@ -20,6 +20,6 @@ console.log(isEqual) // true
 declare const equals: { (that: Duration): (self: Duration) => boolean; (self: Duration, that: Duration): boolean; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Duration.ts#L1451)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Duration.ts#L1516)
 
 Since v2.0.0

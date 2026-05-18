@@ -5,7 +5,7 @@ Module: `Argument`<br />
 
 Adds a fallback config that is loaded when a required argument is missing.
 
-**Example**
+**Example** (Loading a fallback config)
 
 ```ts
 import { Config } from "effect"
@@ -22,6 +22,6 @@ const repository = Argument.string("repository").pipe(
 declare const withFallbackConfig: { <B>(config: Config.Config<B>): <A>(self: Argument<A>) => Argument<A | B>; <A, B>(self: Argument<A>, config: Config.Config<B>): Argument<A | B>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Argument.ts#L334)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Argument.ts#L377)
 
 Since v4.0.0

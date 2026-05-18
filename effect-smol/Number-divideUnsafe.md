@@ -7,13 +7,14 @@ Provides an unsafe division operation on `number`s.
 
 Throws a `RangeError` if the divisor is `0`.
 
-**Example**
+**Example** (Dividing numbers unsafely)
 
 ```ts
 import { Number } from "effect"
 
-Number.divideUnsafe(6, 3) // 2
-Number.divideUnsafe(6, 0) // throws RangeError("Division by zero")
+console.log(Number.divideUnsafe(6, 3)) // 2
+
+// Passing 0 as the divisor throws a RangeError("Division by zero").
 ```
 
 **Signature**
@@ -22,6 +23,6 @@ Number.divideUnsafe(6, 0) // throws RangeError("Division by zero")
 declare const divideUnsafe: { (that: number): (self: number) => number; (self: number, that: number): number; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Number.ts#L150)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Number.ts#L156)
 
 Since v2.0.0

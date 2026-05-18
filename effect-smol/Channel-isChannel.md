@@ -5,7 +5,7 @@ Module: `Channel`<br />
 
 Tests if a value is a `Channel`.
 
-**Example**
+**Example** (Checking for channels)
 
 ```ts
 import { Channel } from "effect"
@@ -21,6 +21,6 @@ console.log(Channel.isChannel("not a channel")) // false
 declare const isChannel: (u: unknown) => u is Channel<unknown, unknown, unknown, unknown, unknown, unknown, unknown>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L122)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L130)
 
 Since v3.5.4

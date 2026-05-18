@@ -3,12 +3,13 @@ Module: `BigDecimal`<br />
 
 ## BigDecimal.scale
 
-Scales a given `BigDecimal` to the specified scale.
+Scales a `BigDecimal` to the specified scale.
 
-If the given scale is smaller than the current scale, the value will be rounded down to
-the nearest integer.
+Increasing the scale appends decimal zeros. Decreasing the scale discards
+digits beyond the target scale by `bigint` division, which truncates toward
+zero.
 
-**Example**
+**Example** (Scaling decimal precision)
 
 ```ts
 import { BigDecimal } from "effect"
@@ -30,6 +31,6 @@ console.log(BigDecimal.format(reduced)) // "123.4"
 declare const scale: { (scale: number): (self: BigDecimal) => BigDecimal; (self: BigDecimal, scale: number): BigDecimal; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigDecimal.ts#L227)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigDecimal.ts#L233)
 
 Since v2.0.0

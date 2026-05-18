@@ -5,7 +5,7 @@ Module: `Stream`<br />
 
 Runs the stream and returns the first element as an `Option`.
 
-**Example**
+**Example** (Getting the first stream value)
 
 ```ts
 import { Console, Effect, Option, Stream } from "effect"
@@ -25,6 +25,6 @@ Effect.runPromise(program)
 declare const runHead: <A, E, R>(self: Stream<A, E, R>) => Effect.Effect<Option.Option<A>, E, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L10091)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L10400)
 
 Since v2.0.0

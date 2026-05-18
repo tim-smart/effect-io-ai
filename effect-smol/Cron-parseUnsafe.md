@@ -9,7 +9,7 @@ This function provides a convenience method for parsing cron expressions
 when you're confident the input is valid and want to avoid handling
 the Result type.
 
-**Example**
+**Example** (Parsing cron expressions unsafely)
 
 ```ts
 import { Cron } from "effect"
@@ -30,6 +30,6 @@ const cronWithTz = Cron.parseUnsafe("0 0 9 * * *", "America/New_York")
 declare const parseUnsafe: (cron: string, tz?: DateTime.TimeZone | string) => Cron
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cron.ts#L546)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cron.ts#L601)
 
 Since v2.0.0

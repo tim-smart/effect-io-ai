@@ -6,7 +6,7 @@ Module: `Request`<br />
 A `Request<A, E, R>` is a request from a data source for a value of type `A`
 that may fail with an `E` and have requirements of type `R`.
 
-**Example**
+**Example** (Defining typed requests)
 
 ```ts
 import type { Request } from "effect"
@@ -29,6 +29,6 @@ interface GetAllUsers extends Request.Request<ReadonlyArray<string>, Error> {
 export interface Request<out A, out E = never, out R = never> extends Variance<A, E, R> {}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Request.ts#L52)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Request.ts#L53)
 
 Since v2.0.0

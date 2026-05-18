@@ -5,7 +5,7 @@ Module: `String`<br />
 
 Returns the index of the first occurrence of a substring, or `None` if not found.
 
-**Example**
+**Example** (Finding the first substring index)
 
 ```ts
 import { pipe, String } from "effect"
@@ -20,6 +20,6 @@ pipe("abbbc", String.indexOf("z")) // Option.none()
 declare const indexOf: (searchString: string) => (self: string) => Option.Option<number>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L590)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L618)
 
 Since v2.0.0

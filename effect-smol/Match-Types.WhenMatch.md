@@ -9,7 +9,7 @@ This utility type determines what type a value will have after successfully
 matching against a pattern. It handles refinements, predicates, and complex
 object patterns to provide accurate type narrowing.
 
-**Example**
+**Example** (Computing matched types)
 
 ```ts
 import type { Match } from "effect"
@@ -44,6 +44,6 @@ type WhenMatch<R, P> = [0] extends [1 & R] ? ResolvePred<P> :
       : ExtractMatch<R, P>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L1910)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L1888)
 
 Since v4.0.0

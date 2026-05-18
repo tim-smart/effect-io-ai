@@ -5,10 +5,14 @@ Module: `Schedule`<br />
 
 A Schedule defines a strategy for repeating or retrying effects based on some policy.
 
-**Example**
+**Example** (Defining retry and repeat schedules)
 
 ```ts
-import { Console, Effect, Schedule } from "effect"
+import { Console, Data, Effect, Schedule } from "effect"
+
+class NetworkError extends Data.TaggedError("NetworkError")<{
+  readonly attempt: number
+}> {}
 
 // Basic retry schedule - retry up to 3 times with exponential backoff
 const retrySchedule = Schedule.exponential("100 millis").pipe(
@@ -19,17 +23,21 @@ const retrySchedule = Schedule.exponential("100 millis").pipe(
 const repeatSchedule: Schedule.Schedule<number, unknown, never> = Schedule
   .spaced("30 seconds")
 
-// Advanced schedule with custom logic
-const smartRetry = Schedule.exponential("1 second")
-
 const program = Effect.gen(function*() {
-  // Using retry schedule
+  let attempts = 0
+
   const result1 = yield* Effect.retry(
-    Effect.suspend(() => Math.random() > 0.5 ? Effect.fail("temporary error") : Effect.succeed("Success")),
+    Effect.gen(function*() {
+      attempts++
+      if (attempts < 3) {
+        return yield* Effect.fail(new NetworkError({ attempt: attempts }))
+      }
+      return "Success"
+    }),
     retrySchedule
   )
+  console.log(result1) // "Success"
 
-  // Using repeat schedule
   yield* Console.log("heartbeat").pipe(
     Effect.repeat(repeatSchedule.pipe(Schedule.take(5)))
   )
@@ -44,6 +52,6 @@ export interface Schedule<out Output, in Input = unknown, out Error = never, out
 {}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L89)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L99)
 
 Since v2.0.0

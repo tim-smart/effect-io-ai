@@ -5,7 +5,7 @@ Module: `Array`<br />
 
 Flattens a nested array type.
 
-**Example**
+**Example** (Flattening nested array types)
 
 ```ts
 import type { Array } from "effect"
@@ -23,6 +23,6 @@ type Flatten<T> = T extends
     : Array<T[number][number]>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L3049)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L3061)
 
 Since v2.0.0

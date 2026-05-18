@@ -5,7 +5,7 @@ Module: `Primitive`<br />
 
 Specifies the type of path validation to perform.
 
-**Example**
+**Example** (Choosing path validation)
 
 ```ts
 import { Primitive } from "effect/unstable/cli"
@@ -26,6 +26,6 @@ const anyPath = Primitive.path("either", false)
 type PathType = "file" | "directory" | "either"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Primitive.ts#L321)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Primitive.ts#L333)
 
 Since v4.0.0

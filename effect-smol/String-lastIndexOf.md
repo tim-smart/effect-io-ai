@@ -5,7 +5,7 @@ Module: `String`<br />
 
 Returns the index of the last occurrence of a substring, or `None` if not found.
 
-**Example**
+**Example** (Finding the last substring index)
 
 ```ts
 import { pipe, String } from "effect"
@@ -20,6 +20,6 @@ pipe("abbbc", String.lastIndexOf("d")) // Option.none()
 declare const lastIndexOf: (searchString: string) => (self: string) => Option.Option<number>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L608)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L636)
 
 Since v2.0.0

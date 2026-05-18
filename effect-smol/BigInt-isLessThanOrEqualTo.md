@@ -5,7 +5,7 @@ Module: `BigInt`<br />
 
 Returns a function that checks if a given `bigint` is less than or equal to the provided one.
 
-**Example**
+**Example** (Checking less-than-or-equal comparisons)
 
 ```ts
 import { isLessThanOrEqualTo } from "effect/BigInt"
@@ -22,6 +22,6 @@ assert.deepStrictEqual(isLessThanOrEqualTo(4n, 3n), false)
 declare const isLessThanOrEqualTo: { (that: bigint): (self: bigint) => boolean; (self: bigint, that: bigint): boolean; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigInt.ts#L275)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigInt.ts#L284)
 
 Since v2.0.0

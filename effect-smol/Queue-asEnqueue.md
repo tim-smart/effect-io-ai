@@ -11,6 +11,6 @@ Converts a Queue to an Enqueue (write-only interface).
 declare const asEnqueue: <A, E>(self: Queue<A, E>) => Enqueue<A, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Queue.ts#L60)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Queue.ts#L112)
 
 Since v4.0.0

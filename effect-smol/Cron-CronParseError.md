@@ -9,7 +9,7 @@ This error provides detailed information about what went wrong during
 the parsing process, including the error message and optionally the
 input that caused the error.
 
-**Example**
+**Example** (Handling cron parse failures)
 
 ```ts
 import { Cron, Result } from "effect"
@@ -28,6 +28,6 @@ if (Result.isFailure(result)) {
 declare class CronParseError
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cron.ts#L433)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cron.ts#L479)
 
 Since v4.0.0

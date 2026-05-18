@@ -5,7 +5,7 @@ Module: `Equivalence`<br />
 
 An `Equivalence` instance for strings using strict equality (`===`).
 
-**Example**
+**Example** (Comparing strings)
 
 ```ts
 import { Equivalence } from "effect"
@@ -20,6 +20,6 @@ console.log(Equivalence.String("hello", "world")) // false
 declare const String: Equivalence<string>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Equivalence.ts#L256)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Equivalence.ts#L257)
 
 Since v4.0.0

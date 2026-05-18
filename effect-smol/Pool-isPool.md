@@ -11,6 +11,6 @@ Returns `true` if the specified value is a `Pool`, `false` otherwise.
 declare const isPool: (u: unknown) => u is Pool<unknown, unknown>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Pool.ts#L93)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Pool.ts#L154)
 
 Since v2.0.0

@@ -8,10 +8,7 @@ ensuring that all possible cases are accounted for. If any case is missing,
 TypeScript will produce a type error. This is particularly useful when
 working with unions, as it helps prevent unintended gaps in pattern matching.
 
-**Example**
-
-```ts
-(Ensuring All Cases Are Covered)
+**Example** (Ensuring All Cases Are Covered)
 
 ```ts
 import { Match } from "effect"
@@ -26,7 +23,6 @@ const match = Match.type<string | number>().pipe(
   Match.exhaustive
 )
 ```
-```
 
 **Signature**
 
@@ -34,6 +30,6 @@ const match = Match.type<string | number>().pipe(
 declare const exhaustive: <I, F, A, Pr, Ret>(self: Matcher<I, F, never, A, Pr, Ret>) => [Pr] extends [never] ? (u: I) => Unify<A> : Unify<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L1813)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L1805)
 
 Since v4.0.0

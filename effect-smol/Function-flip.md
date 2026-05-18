@@ -5,7 +5,7 @@ Module: `Function`<br />
 
 Reverses the order of arguments for a curried function.
 
-**Example**
+**Example** (Flipping curried arguments)
 
 ```ts
 import { flip } from "effect/Function"
@@ -22,6 +22,6 @@ assert.deepStrictEqual(flip(f)("aaa")(2), -1)
 declare const flip: <A extends Array<unknown>, B extends Array<unknown>, C>(f: (...a: A) => (...b: B) => C) => (...b: B) => (...a: A) => C
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Function.ts#L376)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Function.ts#L423)
 
 Since v2.0.0

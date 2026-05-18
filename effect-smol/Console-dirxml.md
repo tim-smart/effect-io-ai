@@ -7,16 +7,17 @@ Displays an interactive tree of the descendant elements of the specified XML/HTM
 
 This function is particularly useful for inspecting DOM elements in browser environments.
 
-**Example**
+**Example** (Inspecting XML-like data)
 
 ```ts
 import { Console, Effect } from "effect"
 
 const program = Effect.gen(function*() {
-  // In a browser environment
-  const element = document.getElementById("myElement")
-  yield* Console.dirxml(element)
+  yield* Console.dirxml("<user id=\"1\">Ada</user>")
 })
+
+Effect.runSync(program)
+// <user id="1">Ada</user>
 ```
 
 **Signature**
@@ -25,6 +26,6 @@ const program = Effect.gen(function*() {
 declare const dirxml: (...args: ReadonlyArray<any>) => Effect.Effect<void>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Console.ts#L335)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Console.ts#L350)
 
 Since v2.0.0

@@ -8,7 +8,7 @@ Takes the first `n` elements from the `TxChunk`.
 **Mutation behavior**: This function mutates the original TxChunk by keeping
 only the first n elements. It does not return a new TxChunk reference.
 
-**Example**
+**Example** (Taking leading elements)
 
 ```ts
 import { Chunk, Effect, TxChunk } from "effect"
@@ -30,6 +30,6 @@ const program = Effect.gen(function*() {
 declare const take: { (n: number): <A>(self: TxChunk<A>) => Effect.Effect<void>; <A>(self: TxChunk<A>, n: number): Effect.Effect<void>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxChunk.ts#L512)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxChunk.ts#L526)
 
 Since v4.0.0

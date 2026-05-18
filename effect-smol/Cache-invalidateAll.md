@@ -5,7 +5,7 @@ Module: `Cache`<br />
 
 Invalidates all entries in the cache.
 
-**Example**
+**Example** (Invalidating all entries)
 
 ```ts
 import { Cache, Effect } from "effect"
@@ -42,6 +42,6 @@ const program = Effect.gen(function*() {
 declare const invalidateAll: <Key, A, E, R>(self: Cache<Key, A, E, R>) => Effect.Effect<void>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cache.ts#L1057)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cache.ts#L1139)
 
 Since v4.0.0

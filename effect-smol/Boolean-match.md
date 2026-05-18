@@ -6,7 +6,7 @@ Module: `Boolean`<br />
 This function returns the result of either of the given functions depending on the value of the boolean parameter.
 It is useful when you have to run one of two functions depending on the boolean value.
 
-**Example**
+**Example** (Pattern matching on booleans)
 
 ```ts
 import * as Boolean from "effect/Boolean"
@@ -27,6 +27,6 @@ assert.deepStrictEqual(
 declare const match: { <A, B = A>(options: { readonly onFalse: LazyArg<A>; readonly onTrue: LazyArg<B>; }): (value: boolean) => A | B; <A, B>(value: boolean, options: { readonly onFalse: LazyArg<A>; readonly onTrue: LazyArg<B>; }): A | B; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Boolean.ts#L74)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Boolean.ts#L77)
 
 Since v2.0.0

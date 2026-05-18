@@ -8,7 +8,7 @@ Merges two streams, emitting elements from both as they arrive.
 By default, the merged stream ends when both streams end. Use
 `haltStrategy` to change the termination behavior.
 
-**Example**
+**Example** (Merging stream values)
 
 ```ts
 import { Console, Effect, Stream } from "effect"
@@ -31,6 +31,6 @@ Effect.runPromise(program)
 declare const merge: { <A2, E2, R2>(that: Stream<A2, E2, R2>, options?: { readonly haltStrategy?: HaltStrategy | undefined; } | undefined): <A, E, R>(self: Stream<A, E, R>) => Stream<A | A2, E | E2, R | R2>; <A, E, R, A2, E2, R2>(self: Stream<A, E, R>, that: Stream<A2, E2, R2>, options?: { readonly haltStrategy?: HaltStrategy | undefined; } | undefined): Stream<A | A2, E | E2, R | R2>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L3006)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L3139)
 
 Since v2.0.0

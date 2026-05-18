@@ -5,7 +5,7 @@ Module: `MutableRef`<br />
 
 Increments a numeric MutableRef by 1 and returns the new value.
 
-**Example**
+**Example** (Incrementing and reading refs)
 
 ```ts
 import { MutableRef } from "effect"
@@ -39,6 +39,6 @@ if (MutableRef.incrementAndGet(attempts) > 3) {
 declare const incrementAndGet: (self: MutableRef<number>) => number
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableRef.ts#L497)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableRef.ts#L518)
 
 Since v2.0.0

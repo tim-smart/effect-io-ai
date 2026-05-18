@@ -5,7 +5,7 @@ Module: `Tool`<br />
 
 Annotation for providing a human-readable title for tools.
 
-**Example**
+**Example** (Annotating a tool title)
 
 ```ts
 import { Tool } from "effect/unstable/ai"
@@ -20,6 +20,6 @@ const myTool = Tool.make("calculate_tip")
 declare class Title
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tool.ts#L1620)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tool.ts#L1662)
 
-Since v1.0.0
+Since v4.0.0

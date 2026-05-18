@@ -9,7 +9,7 @@ A bipartite graph is one whose vertices can be divided into two disjoint sets
 such that no two vertices within the same set are adjacent. Uses BFS coloring
 to determine bipartiteness.
 
-**Example**
+**Example** (Checking bipartite graphs)
 
 ```ts
 import { Graph } from "effect"
@@ -44,6 +44,6 @@ console.log(Graph.isBipartite(triangle)) // false
 declare const isBipartite: <N, E>(graph: Graph<N, E, "undirected"> | MutableGraph<N, E, "undirected">) => boolean
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Graph.ts#L2427)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Graph.ts#L2546)
 
 Since v4.0.0

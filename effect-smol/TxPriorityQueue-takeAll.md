@@ -5,7 +5,7 @@ Module: `TxPriorityQueue`<br />
 
 Takes all elements from the queue, returning them in priority order.
 
-**Example**
+**Example** (Taking all values in priority order)
 
 ```ts
 import { Effect, Order, TxPriorityQueue } from "effect"
@@ -23,6 +23,6 @@ const program = Effect.gen(function*() {
 declare const takeAll: <A>(self: TxPriorityQueue<A>) => Effect.Effect<Array<A>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxPriorityQueue.ts#L375)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxPriorityQueue.ts#L388)
 
 Since v4.0.0

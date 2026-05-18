@@ -6,7 +6,7 @@ Module: `Iterable`<br />
 Places an element in between members of an `Iterable`.
 If the input is a non-empty array, the result is also a non-empty array.
 
-**Example**
+**Example** (Interspersing separators)
 
 ```ts
 import { Iterable } from "effect"
@@ -43,6 +43,6 @@ console.log(Array.from(css).join("")) // "color: red; font-size: 14px; margin: 1
 declare const intersperse: { <B>(middle: B): <A>(self: Iterable<A>) => Iterable<A | B>; <A, B>(self: Iterable<A>, middle: B): Iterable<A | B>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Iterable.ts#L917)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Iterable.ts#L946)
 
 Since v2.0.0

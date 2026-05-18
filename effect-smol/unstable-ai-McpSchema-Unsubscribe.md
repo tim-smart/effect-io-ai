@@ -13,6 +13,6 @@ resources/subscribe request.
 declare class Unsubscribe
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L868)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L991)
 
 Since v4.0.0

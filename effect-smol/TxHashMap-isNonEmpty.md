@@ -5,7 +5,7 @@ Module: `TxHashMap`<br />
 
 Checks if the TxHashMap is non-empty.
 
-**Example**
+**Example** (Checking for a non-empty map)
 
 ```ts
 import { Effect, TxHashMap } from "effect"
@@ -29,6 +29,6 @@ const program = Effect.gen(function*() {
 declare const isNonEmpty: <K, V>(self: TxHashMap<K, V>) => Effect.Effect<boolean>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashMap.ts#L644)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashMap.ts#L685)
 
 Since v2.0.0

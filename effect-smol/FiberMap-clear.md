@@ -5,7 +5,7 @@ Module: `FiberMap`<br />
 
 Remove all fibers from the FiberMap, interrupting them.
 
-**Example**
+**Example** (Clearing all fibers)
 
 ```ts
 import { Effect, FiberMap } from "effect"
@@ -33,6 +33,6 @@ const program = Effect.gen(function*() {
 declare const clear: <K, A, E>(self: FiberMap<K, A, E>) => Effect.Effect<void>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FiberMap.ts#L603)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FiberMap.ts#L685)
 
 Since v2.0.0

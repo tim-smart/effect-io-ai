@@ -17,6 +17,11 @@ export interface Terminal {
    */
   readonly columns: Effect.Effect<number>
   /**
+   * The number of rows available on the platform's terminal interface.
+   */
+
+  readonly rows: Effect.Effect<number>
+  /**
    * Reads input events from the default standard input.
    */
   readonly readInput: Effect.Effect<Queue.Dequeue<UserInput, Cause.Done>, never, Scope.Scope>
@@ -31,6 +36,6 @@ export interface Terminal {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Terminal.ts#L23)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Terminal.ts#L39)
 
 Since v4.0.0

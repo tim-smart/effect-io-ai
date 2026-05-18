@@ -8,7 +8,7 @@ Creates a custom ID generator service with the specified options.
 Validates the configuration to ensure the separator is not part of the
 alphabet, which would cause ambiguity in parsing generated IDs.
 
-**Example**
+**Example** (Creating a custom generator)
 
 ```ts
 import { Effect } from "effect"
@@ -29,7 +29,7 @@ const program = Effect.gen(function*() {
 })
 ```
 
-**Example**
+**Example** (Handling invalid generator options)
 
 ```ts
 import { Effect } from "effect"
@@ -59,6 +59,6 @@ const program = Effect.gen(function*() {
 declare const make: (args_0: MakeOptions) => Effect.Effect<{ readonly generateId: () => Effect.Effect<string, never, never>; }, Cause.IllegalArgumentError, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/IdGenerator.ts#L263)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/IdGenerator.ts#L272)
 
 Since v4.0.0

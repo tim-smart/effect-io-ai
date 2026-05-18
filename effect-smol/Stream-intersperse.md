@@ -5,7 +5,7 @@ Module: `Stream`<br />
 
 Inserts the provided element between emitted elements.
 
-**Example**
+**Example** (Interspersing stream elements)
 
 ```ts
 import { Console, Effect, Stream } from "effect"
@@ -26,6 +26,6 @@ Effect.runPromise(program)
 declare const intersperse: { <A2>(element: A2): <A, E, R>(self: Stream<A, E, R>) => Stream<A2 | A, E, R>; <A, E, R, A2>(self: Stream<A, E, R>, element: A2): Stream<A | A2, E, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L8820)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L9099)
 
 Since v2.0.0

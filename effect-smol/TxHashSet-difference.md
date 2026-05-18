@@ -5,7 +5,7 @@ Module: `TxHashSet`<br />
 
 Creates the difference of two TxHashSets (elements in the first set that are not in the second), returning a new TxHashSet.
 
-**Example**
+**Example** (Finding values absent from another set)
 
 ```ts
 import { Effect, TxHashSet } from "effect"
@@ -27,6 +27,6 @@ const program = Effect.gen(function*() {
 declare const difference: { <V1>(that: TxHashSet<V1>): <V0>(self: TxHashSet<V0>) => Effect.Effect<TxHashSet<V0>>; <V0, V1>(self: TxHashSet<V0>, that: TxHashSet<V1>): Effect.Effect<TxHashSet<V0>>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashSet.ts#L593)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashSet.ts#L634)
 
 Since v2.0.0

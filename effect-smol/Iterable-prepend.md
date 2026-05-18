@@ -5,7 +5,7 @@ Module: `Iterable`<br />
 
 Prepend an element to the front of an `Iterable`, creating a new `Iterable`.
 
-**Example**
+**Example** (Prepending an element)
 
 ```ts
 import { Iterable } from "effect"
@@ -26,6 +26,6 @@ console.log(Array.from(withZ)) // ["z", "a", "b", "c"]
 declare const prepend: { <B>(head: B): <A>(self: Iterable<A>) => Iterable<A | B>; <A, B>(self: Iterable<A>, head: B): Iterable<A | B>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Iterable.ts#L204)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Iterable.ts#L222)
 
 Since v2.0.0

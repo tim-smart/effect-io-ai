@@ -5,7 +5,7 @@ Module: `Duration`<br />
 
 Converts a Duration to hours.
 
-**Example**
+**Example** (Converting durations to hours)
 
 ```ts
 import { Duration } from "effect"
@@ -20,6 +20,6 @@ console.log(Duration.toHours(Duration.days(1))) // 24
 declare const toHours: (self: Input) => number
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Duration.ts#L747)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Duration.ts#L774)
 
 Since v3.8.0

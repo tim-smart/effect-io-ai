@@ -5,7 +5,7 @@ Module: `Duration`<br />
 
 Creates a Duration from nanoseconds.
 
-**Example**
+**Example** (Creating durations from nanoseconds)
 
 ```ts
 import { Duration } from "effect"
@@ -20,6 +20,6 @@ console.log(Duration.toMillis(duration)) // 500
 declare const nanos: (nanos: bigint) => Duration
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Duration.ts#L553)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Duration.ts#L569)
 
 Since v2.0.0

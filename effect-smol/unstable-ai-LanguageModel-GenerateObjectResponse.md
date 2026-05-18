@@ -5,7 +5,7 @@ Module: `LanguageModel`<br />
 
 Response class for structured object generation operations.
 
-**Example**
+**Example** (Inspecting an object response)
 
 ```ts
 import { Effect, Schema } from "effect"
@@ -35,6 +35,6 @@ const program = Effect.gen(function*() {
 declare class GenerateObjectResponse<Tools, A> { constructor(value: A, content: Array<Response.Part<Tools>>) }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/LanguageModel.ts#L500)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/LanguageModel.ts#L505)
 
 Since v4.0.0

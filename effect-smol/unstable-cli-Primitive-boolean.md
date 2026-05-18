@@ -9,7 +9,7 @@ Recognizes various forms of true/false values:
 - True values: "true", "1", "y", "yes", "on"
 - False values: "false", "0", "n", "no", "off"
 
-**Example**
+**Example** (Parsing boolean values)
 
 ```ts
 import { Effect } from "effect"
@@ -36,6 +36,6 @@ const parseBoolean = Effect.gen(function*() {
 declare const boolean: Primitive<boolean>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Primitive.ts#L144)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Primitive.ts#L150)
 
 Since v4.0.0

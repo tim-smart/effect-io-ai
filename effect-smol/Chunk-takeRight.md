@@ -5,7 +5,7 @@ Module: `Chunk`<br />
 
 Takes the last `n` elements.
 
-**Example**
+**Example** (Taking elements from the end)
 
 ```ts
 import { Chunk } from "effect"
@@ -29,6 +29,6 @@ console.log(Chunk.toArray(none)) // []
 declare const takeRight: { (n: number): <A>(self: Chunk<A>) => Chunk<A>; <A>(self: Chunk<A>, n: number): Chunk<A>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L2087)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L2136)
 
 Since v2.0.0

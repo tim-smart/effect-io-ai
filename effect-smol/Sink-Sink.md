@@ -9,7 +9,7 @@ You can think of a sink as a function that will consume a variable amount of
 and will eventually yield a value of type `A` together with a remainder of
 type `L` (i.e. any leftovers).
 
-**Example**
+**Example** (Running a sink with a stream)
 
 ```ts
 import { Effect } from "effect"
@@ -43,6 +43,6 @@ export interface Sink<out A, in In = unknown, out L = never, out E = never, out 
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Sink.ts#L59)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Sink.ts#L92)
 
 Since v2.0.0

@@ -3,7 +3,8 @@ Module: `RpcServer`<br />
 
 ## RpcServer.layerProtocolStdio
 
-Create a protocol that uses the provided `Stream` and `Sink` for communication.
+Provides a server `Protocol` that reads RPC messages from `Stdio.stdin` and
+writes encoded responses to `Stdio.stdout`.
 
 **Signature**
 
@@ -11,6 +12,6 @@ Create a protocol that uses the provided `Stream` and `Sink` for communication.
 declare const layerProtocolStdio: Layer.Layer<Protocol, never, Stdio | RpcSerialization.RpcSerialization>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RpcServer.ts#L1247)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RpcServer.ts#L1326)
 
 Since v4.0.0

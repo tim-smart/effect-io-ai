@@ -9,7 +9,7 @@ Restores a chat session from JSON string that was previously exported
 using the `exportJson` method. This is the most convenient way to
 persist and restore chat sessions to/from storage systems.
 
-**Example**
+**Example** (Restoring chat history from JSON)
 
 ```ts
 import { Effect } from "effect"
@@ -42,6 +42,6 @@ const restoreFromJson = Effect.gen(function*() {
 declare const fromJson: (data: string) => Effect.Effect<Service, Schema.SchemaError>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chat.ts#L622)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chat.ts#L646)
 
 Since v4.0.0

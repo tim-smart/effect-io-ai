@@ -16,12 +16,16 @@ the `disambiguation` option controls how to resolve the ambiguity:
 - `later`: Always choose the later of two possible times
 - `reject`: Throw an error when ambiguous times are encountered
 
-**Example**
+**Example** (Creating zoned DateTime values unsafely)
 
 ```ts
 import { DateTime } from "effect"
 
-DateTime.makeZonedUnsafe(new Date(), { timeZone: "Europe/London" })
+const zoned = DateTime.makeZonedUnsafe("2024-06-15T14:30:00Z", {
+  timeZone: "Europe/London"
+})
+
+console.log(DateTime.formatIsoZoned(zoned)) // "2024-06-15T15:30:00.000+01:00[Europe/London]"
 ```
 
 **Signature**
@@ -30,6 +34,6 @@ DateTime.makeZonedUnsafe(new Date(), { timeZone: "Europe/London" })
 declare const makeZonedUnsafe: (input: DateTime.Input, options?: { readonly timeZone?: number | string | TimeZone | undefined; readonly adjustForTimeZone?: boolean | undefined; readonly disambiguation?: Disambiguation | undefined; }) => Zoned
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L484)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L637)
 
 Since v3.6.0

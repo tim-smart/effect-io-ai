@@ -9,10 +9,8 @@ When to use:
 - You have a custom combining operation that is not covered by the built-in
   constructors (`min`, `max`, `first`, `last`, `constant`).
 
-Behavior:
-- Returns a new `Combiner` whose `combine` method delegates to the provided
-  function.
-- Pure – the returned combiner does not mutate its arguments.
+The returned combiner's `combine` method delegates to the provided function.
+Any purity, associativity, or mutation behavior comes from that function.
 
 **Example** (multiplying numbers)
 
@@ -35,6 +33,6 @@ console.log(Product.combine(3, 5))
 declare const make: <A>(combine: (self: A, that: A) => A) => Combiner<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Combiner.ts#L128)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Combiner.ts#L126)
 
 Since v4.0.0

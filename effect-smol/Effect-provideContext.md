@@ -11,7 +11,7 @@ This function provides multiple services at once by supplying a context
 that contains all the required services. It removes the provided services
 from the effect's requirements, making them available to the effect.
 
-**Example**
+**Example** (Usage)
 
 ```ts
 import { Effect, Context } from "effect"
@@ -45,6 +45,6 @@ const provided = Effect.provideContext(program, context)
 declare const provideContext: { <XR>(context: Context.Context<XR>): <A, E, R>(self: Effect<A, E, R>) => Effect<A, E, Exclude<R, XR>>; <A, E, R, XR>(self: Effect<A, E, R>, context: Context.Context<XR>): Effect<A, E, Exclude<R, XR>>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L5683)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L5560)
 
 Since v2.0.0

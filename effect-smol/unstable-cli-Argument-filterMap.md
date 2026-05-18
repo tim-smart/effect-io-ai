@@ -6,7 +6,7 @@ Module: `Argument`<br />
 Filters and transforms parsed values, failing with a custom error message
 if the filter function returns None.
 
-**Example**
+**Example** (Filtering and mapping parsed values)
 
 ```ts
 import { Option } from "effect"
@@ -26,6 +26,6 @@ const positiveInt = Argument.integer("count").pipe(
 declare const filterMap: { <A, B>(f: (a: A) => Option.Option<B>, onNone: (a: A) => string): (self: Argument<A>) => Argument<B>; <A, B>(self: Argument<A>, f: (a: A) => Option.Option<B>, onNone: (a: A) => string): Argument<B>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Argument.ts#L651)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Argument.ts#L707)
 
 Since v4.0.0

@@ -6,7 +6,7 @@ Module: `TxQueue`<br />
 A TxEnqueue represents the write-only interface of a transactional queue, providing
 operations for adding elements (enqueue operations) and inspecting queue state.
 
-**Example**
+**Example** (Offering values through enqueue handles)
 
 ```ts
 import type { Cause } from "effect"
@@ -40,6 +40,6 @@ export interface TxEnqueue<in A, in E = never> extends TxQueueState {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxQueue.ts#L222)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxQueue.ts#L176)
 
 Since v4.0.0

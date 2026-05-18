@@ -5,7 +5,7 @@ Module: `BigDecimal`<br />
 
 Determines the sign of a given `BigDecimal`.
 
-**Example**
+**Example** (Reading decimal signs)
 
 ```ts
 import { fromStringUnsafe, sign } from "effect/BigDecimal"
@@ -22,6 +22,6 @@ assert.deepStrictEqual(sign(fromStringUnsafe("5")), 1)
 declare const sign: (n: BigDecimal) => Ordering
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigDecimal.ts#L868)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigDecimal.ts#L886)
 
 Since v2.0.0

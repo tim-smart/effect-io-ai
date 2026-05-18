@@ -5,7 +5,7 @@ Module: `FiberSet`<br />
 
 Interrupt all fibers in the FiberSet and clear the set.
 
-**Example**
+**Example** (Clearing all fibers)
 
 ```ts
 import { Effect, FiberSet } from "effect"
@@ -32,6 +32,6 @@ const program = Effect.gen(function*() {
 declare const clear: <A, E>(self: FiberSet<A, E>) => Effect.Effect<void>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FiberSet.ts#L367)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FiberSet.ts#L425)
 
 Since v2.0.0

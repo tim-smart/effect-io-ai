@@ -5,7 +5,7 @@ Module: `Duration`<br />
 
 Equivalence instance for `Duration`, allowing equality comparisons.
 
-**Example**
+**Example** (Comparing durations for equivalence)
 
 ```ts
 import { Duration } from "effect"
@@ -20,6 +20,6 @@ console.log(isEqual) // true
 declare const Equivalence: Equ.Equivalence<Duration>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Duration.ts#L1088)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Duration.ts#L1125)
 
 Since v2.0.0

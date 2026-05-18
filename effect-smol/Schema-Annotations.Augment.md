@@ -10,6 +10,15 @@ OpenAPI fields: `title`, `description`, `format`, etc.
 
 ```ts
 export interface Augment extends Annotations {
+    /**
+     * Human-readable description of what a value is expected to satisfy.
+     *
+     * For filter and refinement failures, the default formatter uses
+     * `message` first, then `expected`, and finally falls back to `<filter>`.
+     *
+     * Use this to name a failed filter in the default message:
+     * `Expected <expected>, got <actual>`.
+     */
     readonly expected?: string | undefined
     readonly title?: string | undefined
     readonly description?: string | undefined
@@ -22,6 +31,6 @@ export interface Augment extends Annotations {
   }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L11946)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L12363)
 
 Since v4.0.0

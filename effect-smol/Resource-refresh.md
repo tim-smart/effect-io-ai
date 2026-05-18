@@ -3,7 +3,11 @@ Module: `Resource`<br />
 
 ## Resource.refresh
 
-Refreshes this resource.
+Re-runs this resource's acquisition effect and updates the current value.
+
+Refreshing replaces the value stored in the resource's scoped reference and
+releases resources associated with the previous value. If acquisition fails,
+the returned effect fails with the acquisition error.
 
 **Signature**
 
@@ -11,6 +15,6 @@ Refreshes this resource.
 declare const refresh: <A, E>(self: Resource<A, E>) => Effect.Effect<void, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Resource.ts#L109)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Resource.ts#L147)
 
 Since v2.0.0

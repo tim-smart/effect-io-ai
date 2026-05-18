@@ -3,11 +3,15 @@ Module: `TxPubSub`<br />
 
 ## TxPubSub.subscribe
 
-Subscribes to the TxPubSub, returning a TxQueue that receives all messages
-published after subscription. The subscription is automatically removed when
-the scope is closed.
+Subscribes to the TxPubSub, returning a scoped `TxQueue` for messages
+published after subscription.
 
-**Example**
+The returned queue uses the hub's capacity strategy: bounded subscriptions
+backpressure publishers when full, dropping subscriptions may miss new
+messages when full, and sliding subscriptions may evict older queued
+messages. The subscription is automatically removed when the scope is closed.
+
+**Example** (Subscribing multiple queues)
 
 ```ts
 import { Effect, TxPubSub, TxQueue } from "effect"
@@ -36,6 +40,6 @@ const program = Effect.gen(function*() {
 declare const subscribe: <A>(self: TxPubSub<A>) => Effect.Effect<TxQueue.TxQueue<A>, never, Scope.Scope>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxPubSub.ts#L488)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxPubSub.ts#L505)
 
 Since v4.0.0

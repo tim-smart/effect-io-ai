@@ -10,7 +10,7 @@ Streams are pull-based with backpressure and emit chunks to amortize effect
 evaluation. They support monadic composition and error handling similar to
 `Effect`, adapted for multiple values.
 
-**Example**
+**Example** (Creating and consuming streams)
 
 ```ts
 import { Console, Effect, Stream } from "effect"
@@ -40,6 +40,6 @@ export interface Stream<out A, out E = never, out R = never> extends Variance<A,
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L101)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L144)
 
 Since v2.0.0

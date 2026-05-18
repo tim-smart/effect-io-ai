@@ -5,7 +5,7 @@ Module: `Metric`<br />
 
 Union type representing all possible metric snapshot types with their corresponding states.
 
-**Example**
+**Example** (Analyzing metric snapshots)
 
 ```ts
 import { Data, Effect, Metric } from "effect"
@@ -78,6 +78,6 @@ type Snapshot = | SnapshotProto<"Counter", CounterState<number | bigint>>
     | SnapshotProto<"Summary", SummaryState>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Metric.ts#L1672)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Metric.ts#L1640)
 
 Since v4.0.0

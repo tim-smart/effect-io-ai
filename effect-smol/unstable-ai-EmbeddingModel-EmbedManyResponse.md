@@ -11,6 +11,6 @@ Response for multiple embeddings.
 declare class EmbedManyResponse
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EmbeddingModel.ts#L75)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EmbeddingModel.ts#L76)
 
 Since v4.0.0

@@ -6,7 +6,7 @@ Module: `SubscriptionRef`<br />
 Updates the value of the `SubscriptionRef` with the result of applying an
 effectful function, notifying subscribers of the change.
 
-**Example**
+**Example** (Updating with an effect)
 
 ```ts
 import { Effect, SubscriptionRef } from "effect"
@@ -27,6 +27,6 @@ const program = Effect.gen(function*() {
 declare const updateEffect: { <A, E, R>(update: (a: A) => Effect.Effect<A, E, R>): (self: SubscriptionRef<A>) => Effect.Effect<void, E, R>; <A, E, R>(self: SubscriptionRef<A>, update: (a: A) => Effect.Effect<A, E, R>): Effect.Effect<void, E, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SubscriptionRef.ts#L644)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SubscriptionRef.ts#L695)
 
 Since v2.0.0

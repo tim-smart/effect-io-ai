@@ -6,7 +6,7 @@ Module: `Chunk`<br />
 Concatenates two chunks, combining their elements.
 If either chunk is non-empty, the result is also a non-empty chunk.
 
-**Example**
+**Example** (Appending all elements)
 
 ```ts
 import { Chunk } from "effect"
@@ -26,6 +26,6 @@ console.log(result)
 declare const appendAll: { <S extends Chunk<any>, T extends Chunk<any>>(that: T): (self: S) => Chunk.OrNonEmpty<S, T, Chunk.Infer<S> | Chunk.Infer<T>>; <A, B>(self: Chunk<A>, that: NonEmptyChunk<B>): NonEmptyChunk<A | B>; <A, B>(self: NonEmptyChunk<A>, that: Chunk<B>): NonEmptyChunk<A | B>; <A, B>(self: Chunk<A>, that: Chunk<B>): Chunk<A | B>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L948)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L960)
 
 Since v2.0.0

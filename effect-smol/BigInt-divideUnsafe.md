@@ -3,14 +3,12 @@ Module: `BigInt`<br />
 
 ## BigInt.divideUnsafe
 
-Provides a division operation on `bigint`s.
+Divides one `bigint` by another, throwing if the divisor is zero.
 
-If the dividend is not a multiple of the divisor the result will be a `bigint` value
-which represents the integer division rounded down to the nearest integer.
+Uses JavaScript `bigint` division, so non-exact quotients are truncated
+toward zero. Throws a `RangeError` when the divisor is `0n`.
 
-Throws a `RangeError` if the divisor is `0n`.
-
-**Example**
+**Example** (Dividing bigints unsafely)
 
 ```ts
 import { divideUnsafe } from "effect/BigInt"
@@ -26,6 +24,6 @@ assert.deepStrictEqual(divideUnsafe(6n, 4n), 1n)
 declare const divideUnsafe: { (that: bigint): (self: bigint) => bigint; (self: bigint, that: bigint): bigint; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigInt.ts#L164)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigInt.ts#L167)
 
 Since v2.0.0

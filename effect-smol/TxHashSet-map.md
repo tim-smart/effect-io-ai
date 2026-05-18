@@ -5,7 +5,7 @@ Module: `TxHashSet`<br />
 
 Maps each value in the TxHashSet using the provided function, returning a new TxHashSet.
 
-**Example**
+**Example** (Mapping values)
 
 ```ts
 import { Effect, TxHashSet } from "effect"
@@ -32,6 +32,6 @@ const program = Effect.gen(function*() {
 declare const map: { <V, U>(f: (value: V) => U): (self: TxHashSet<V>) => Effect.Effect<TxHashSet<U>>; <V, U>(self: TxHashSet<V>, f: (value: V) => U): Effect.Effect<TxHashSet<U>>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashSet.ts#L739)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashSet.ts#L784)
 
 Since v2.0.0

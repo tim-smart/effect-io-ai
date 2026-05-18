@@ -3,7 +3,10 @@ Module: `Option`<br />
 
 ## Option.OptionUnifyIgnore
 
-Internal interface for type unification ignore behavior.
+Marker interface used by Effect's `Unify` machinery for `Option` values.
+
+This supports type-level unification behavior for `Option`. Users normally
+do not need to reference this interface directly.
 
 **Signature**
 
@@ -11,6 +14,6 @@ Internal interface for type unification ignore behavior.
 export interface OptionUnifyIgnore {}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L267)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L245)
 
 Since v2.0.0

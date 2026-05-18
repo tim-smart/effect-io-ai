@@ -5,7 +5,7 @@ Module: `MutableHashSet`<br />
 
 Checks if the MutableHashSet contains the specified value.
 
-**Example**
+**Example** (Checking for a value)
 
 ```ts
 import { MutableHashSet } from "effect"
@@ -30,6 +30,6 @@ console.log(MutableHashSet.has(set, "grape")) // true
 declare const has: { <V>(key: V): (self: MutableHashSet<V>) => boolean; <V>(self: MutableHashSet<V>, key: V): boolean; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableHashSet.ts#L252)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableHashSet.ts#L313)
 
 Since v2.0.0

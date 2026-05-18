@@ -1,0 +1,19 @@
+Package: `effect`<br />
+Module: `HttpRouter`<br />
+
+## HttpRouter.make
+
+Constructs an empty `HttpRouter` service.
+
+The returned router accepts route and middleware registrations and later routes
+the current `HttpServerRequest` to the matching `HttpServerResponse`.
+
+**Signature**
+
+```ts
+declare const make: Effect.Effect<HttpRouter, never, never>
+```
+
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpRouter.ts#L124)
+
+Since v4.0.0

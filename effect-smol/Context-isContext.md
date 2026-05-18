@@ -5,7 +5,7 @@ Module: `Context`<br />
 
 Checks if the provided argument is a `Context`.
 
-**Example**
+**Example** (Checking for contexts)
 
 ```ts
 import { Context } from "effect"
@@ -20,6 +20,6 @@ assert.strictEqual(Context.isContext(Context.empty()), true)
 declare const isContext: (u: unknown) => u is Context<never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Context.ts#L429)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Context.ts#L516)
 
 Since v4.0.0

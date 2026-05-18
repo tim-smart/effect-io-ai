@@ -9,30 +9,40 @@ Restores a chat session from structured data that was previously exported
 using the `export` method. Useful for persisting and restoring conversation
 state.
 
-**Example**
+**Example** (Restoring chat data)
 
 ```ts
-import { Effect } from "effect"
+import { Effect, Ref } from "effect"
 import { Chat } from "effect/unstable/ai"
 
-declare const loadFromDatabase: (sessionId: string) => Effect.Effect<unknown>
-
 const restoreChat = Effect.gen(function*() {
-  // Assume we have previously exported data
-  const savedData = yield* loadFromDatabase("chat-session-123")
+  const originalChat = yield* Chat.fromPrompt([
+    {
+      role: "user",
+      content: "Which library are we using?"
+    },
+    {
+      role: "assistant",
+      content: "The project uses Effect."
+    }
+  ])
 
-  const restoredChat = yield* Chat.fromExport(savedData)
+  const exported = yield* originalChat.export
+  const restoredChat = yield* Chat.fromExport(exported)
+  const restoredHistory = yield* Ref.get(restoredChat.history)
 
-  // Continue the conversation from where it left off
-  const response = yield* restoredChat.generateText({
-    prompt: "Let's continue our discussion"
-  })
-}).pipe(
-  Effect.catchTag("SchemaError", (error) => {
-    console.log("Failed to restore chat:", error.message)
-    return Effect.void
-  })
-)
+  console.log(restoredHistory.content.map((message) => message.role))
+  // ["user", "assistant"]
+
+  const restoredResponse = restoredHistory.content[1]
+  if (restoredResponse?.role === "assistant") {
+    const restoredText = restoredResponse.content[0]
+    if (restoredText?.type === "text") {
+      console.log(restoredText.text)
+      // "The project uses Effect."
+    }
+  }
+})
 ```
 
 **Signature**
@@ -41,6 +51,6 @@ const restoreChat = Effect.gen(function*() {
 declare const fromExport: (data: unknown) => Effect.Effect<Service, Schema.SchemaError>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chat.ts#L581)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chat.ts#L604)
 
 Since v4.0.0

@@ -21,6 +21,6 @@ export interface ReasoningDeltaPart extends BasePart<"reasoning-delta", Reasonin
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Response.ts#L969)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Response.ts#L966)
 
-Since v1.0.0
+Since v4.0.0

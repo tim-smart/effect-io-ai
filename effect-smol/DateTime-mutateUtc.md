@@ -5,7 +5,7 @@ Module: `DateTime`<br />
 
 Modify a `DateTime` by applying a function to a cloned UTC `Date` instance.
 
-**Example**
+**Example** (Mutating DateTime values with UTC Dates)
 
 ```ts
 import { DateTime } from "effect"
@@ -27,6 +27,6 @@ console.log(DateTime.formatIso(modified)) // "2024-01-01T18:00:00.000Z"
 declare const mutateUtc: { (f: (date: Date) => void): <A extends DateTime>(self: A) => A; <A extends DateTime>(self: A, f: (date: Date) => void): A; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L1723)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L1971)
 
 Since v3.6.0

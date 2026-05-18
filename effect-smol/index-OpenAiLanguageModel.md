@@ -13,4 +13,4 @@ export * as OpenAiLanguageModel from "./OpenAiLanguageModel.ts"
 
 [Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/index.ts#L39)
 
-Since v1.0.0
+Since v4.0.0

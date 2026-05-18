@@ -5,7 +5,7 @@ Module: `Effect`<br />
 
 Flattens an `Effect` that produces another `Effect` into a single effect.
 
-**Example**
+**Example** (Usage)
 
 ```ts
 import { Console, Effect } from "effect"
@@ -25,6 +25,6 @@ const program = Effect.gen(function*() {
 declare const flatten: <A, E, R, E2, R2>(self: Effect<Effect<A, E, R>, E2, R2>) => Effect<A, E | E2, R | R2>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L1995)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L1876)
 
 Since v2.0.0

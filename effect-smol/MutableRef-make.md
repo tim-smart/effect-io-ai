@@ -5,7 +5,7 @@ Module: `MutableRef`<br />
 
 Creates a new MutableRef with the specified initial value.
 
-**Example**
+**Example** (Creating mutable refs)
 
 ```ts
 import { MutableRef } from "effect"
@@ -30,6 +30,6 @@ console.log(MutableRef.get(status)) // "running"
 declare const make: <T>(value: T) => MutableRef<T>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableRef.ts#L116)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableRef.ts#L127)
 
 Since v2.0.0

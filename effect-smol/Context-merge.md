@@ -3,25 +3,12 @@ Module: `Context`<br />
 
 ## Context.merge
 
-Merges two `Context`s, returning a new `Context` containing the services of both.
+Merges two `Context`s into one.
 
-**Example**
+**Details**
 
-```ts
-import { Context } from "effect"
-import * as assert from "node:assert"
-
-const Port = Context.Service<{ PORT: number }>("Port")
-const Timeout = Context.Service<{ TIMEOUT: number }>("Timeout")
-
-const firstContext = Context.make(Port, { PORT: 8080 })
-const secondContext = Context.make(Timeout, { TIMEOUT: 5000 })
-
-const context = Context.merge(firstContext, secondContext)
-
-assert.deepStrictEqual(Context.get(context, Port), { PORT: 8080 })
-assert.deepStrictEqual(Context.get(context, Timeout), { TIMEOUT: 5000 })
-```
+When both contexts contain the same service key, the service from `that`
+overrides the service from `self`.
 
 **Signature**
 
@@ -29,6 +16,6 @@ assert.deepStrictEqual(Context.get(context, Timeout), { TIMEOUT: 5000 })
 declare const merge: { <R1>(that: Context<R1>): <Services>(self: Context<Services>) => Context<R1 | Services>; <Services, R1>(self: Context<Services>, that: Context<R1>): Context<Services | R1>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Context.ts#L825)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Context.ts#L957)
 
 Since v4.0.0

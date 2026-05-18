@@ -3,9 +3,13 @@ Module: `Deferred`<br />
 
 ## Deferred.succeed
 
-Completes the `Deferred` with the specified value.
+Attempts to complete the `Deferred` with the specified value.
 
-**Example**
+Fibers waiting on the `Deferred` receive the value only if this call
+completes it. The returned effect succeeds with `true` when this call
+completed the `Deferred`, or `false` if it was already completed.
+
+**Example** (Completing a Deferred with a value)
 
 ```ts
 import { Deferred, Effect } from "effect"
@@ -25,6 +29,6 @@ const program = Effect.gen(function*() {
 declare const succeed: { <A>(value: A): <E>(self: Deferred<A, E>) => Effect<boolean>; <A, E>(self: Deferred<A, E>, value: A): Effect<boolean>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Deferred.ts#L623)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Deferred.ts#L693)
 
 Since v2.0.0

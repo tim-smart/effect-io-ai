@@ -3,8 +3,11 @@ Module: `ScopedCache`<br />
 
 ## ScopedCache.set
 
-Sets the value associated with the specified key in the cache. This will
-overwrite any existing value for that key, skipping the lookup function.
+Stores a successful value for a key without running the lookup function.
+
+This replaces and closes any existing entry scope for the key, applies the
+cache's TTL using a successful exit for the value, and may evict older
+entries if the cache capacity is exceeded.
 
 **Signature**
 
@@ -12,6 +15,6 @@ overwrite any existing value for that key, skipping the lookup function.
 declare const set: { <Key, A>(key: Key, value: A): <E, R>(self: ScopedCache<Key, A, E, R>) => Effect.Effect<void>; <Key, A, E, R>(self: ScopedCache<Key, A, E, R>, key: Key, value: A): Effect.Effect<void>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ScopedCache.ts#L301)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ScopedCache.ts#L374)
 
 Since v4.0.0

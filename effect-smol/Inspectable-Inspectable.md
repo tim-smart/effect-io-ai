@@ -9,7 +9,7 @@ Objects implementing this interface can control how they appear in debugging con
 JSON serialization, and Node.js inspection. This is particularly useful for creating
 custom data types that display meaningful information during development.
 
-**Example**
+**Example** (Implementing inspectable objects)
 
 ```ts
 import { Inspectable } from "effect"
@@ -48,6 +48,6 @@ export interface Inspectable {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Inspectable.ts#L136)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Inspectable.ts#L140)
 
 Since v2.0.0

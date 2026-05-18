@@ -11,7 +11,7 @@ This API replaces the following from Effect 3.x:
 
 - `Stream.flattenIterables`
 
-**Example**
+**Example** (Flattening iterable values)
 
 ```ts
 import { Console, Effect, Stream } from "effect"
@@ -32,6 +32,6 @@ Effect.runPromise(program)
 declare const flattenIterable: <A, E, R>(self: Stream<Iterable<A>, E, R>) => Stream<A, E, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L2885)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L3014)
 
 Since v4.0.0

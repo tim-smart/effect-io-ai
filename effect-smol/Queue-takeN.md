@@ -3,13 +3,16 @@ Module: `Queue`<br />
 
 ## Queue.takeN
 
-Take a specified number of messages from the queue. It will only take
-up to the capacity of the queue.
+Takes up to `n` messages from the queue.
 
-If the queue is done, the `done` flag will be `true`. If the queue
-fails, the Effect will fail with the error.
+**Details**
 
-**Example**
+The operation may wait until enough messages are available to satisfy the
+queue's batching rules. If `n` is less than or equal to zero, it succeeds
+with an empty array. If the queue completes or fails before messages can be
+taken, the effect fails with the queue's terminal error.
+
+**Example** (Taking a fixed number of values)
 
 ```ts
 import { Cause, Effect, Queue } from "effect"
@@ -28,11 +31,8 @@ const program = Effect.gen(function*() {
   const next2 = yield* Queue.takeN(queue, 2)
   console.log(next2) // [4, 5]
 
-  // End the queue before taking; now it can return fewer than requested
-  yield* Queue.end(queue)
-
-  // Take remaining messages (takes 2, even though we asked for 5)
-  const remaining = yield* Queue.takeN(queue, 5)
+  // Take remaining messages
+  const remaining = yield* Queue.takeN(queue, 2)
   console.log(remaining) // [6, 7]
 })
 ```
@@ -43,6 +43,6 @@ const program = Effect.gen(function*() {
 declare const takeN: <A, E>(self: Dequeue<A, E>, n: number) => Effect<Array<A>, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Queue.ts#L1112)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Queue.ts#L1226)
 
 Since v4.0.0

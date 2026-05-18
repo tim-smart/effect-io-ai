@@ -9,7 +9,7 @@ This class provides a convenient way to create inspectable objects by extending 
 Subclasses only need to implement the `toJSON()` method, and they automatically
 get proper `toString()` and Node.js inspection support.
 
-**Example**
+**Example** (Extending the inspectable base class)
 
 ```ts
 import { Inspectable } from "effect"
@@ -44,6 +44,6 @@ console.log(user) // In Node.js, shows the same formatted output
 declare class Class
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Inspectable.ts#L262)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Inspectable.ts#L274)
 
 Since v2.0.0

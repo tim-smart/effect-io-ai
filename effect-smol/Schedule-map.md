@@ -6,7 +6,7 @@ Module: `Schedule`<br />
 Returns a new `Schedule` that maps the output of this schedule using the
 specified function.
 
-**Example**
+**Example** (Mapping schedule outputs)
 
 ```ts
 import { Console, Effect, Schedule } from "effect"
@@ -25,7 +25,6 @@ const readableDelays = Schedule.exponential("100 millis").pipe(
 const structuredSchedule = Schedule.spaced("1 second").pipe(
   Schedule.map((recurrence) => Effect.succeed({
     iteration: recurrence + 1,
-    timestamp: new Date().toISOString(),
     phase: recurrence < 5 ? "warmup" as const : "steady" as const
   }))
 )
@@ -37,7 +36,7 @@ const program = Effect.gen(function*() {
       Schedule.take(8),
       Schedule.tapOutput((info) =>
         Console.log(
-          `${info.phase} phase - iteration ${info.iteration} at ${info.timestamp}`
+          `${info.phase} phase - iteration ${info.iteration}`
         )
       )
     )
@@ -68,6 +67,6 @@ const complexSchedule = Schedule.fibonacci("100 millis").pipe(
 declare const map: { <Output, Output2, Error2 = never, Env2 = never>(f: (output: Output) => Output2 | Effect<Output2, Error2, Env2>): <Input, Error, Env>(self: Schedule<Output, Input, Error, Env>) => Schedule<Output2, Input, Error | Error2, Env | Env2>; <Output, Input, Error, Env, Output2, Error2 = never, Env2 = never>(self: Schedule<Output, Input, Error, Env>, f: (output: Output) => Output2 | Effect<Output2, Error2, Env2>): Schedule<Output2, Input, Error | Error2, Env | Env2>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L2202)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L2194)
 
 Since v2.0.0

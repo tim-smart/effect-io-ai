@@ -8,7 +8,7 @@ A MemoMap is used to memoize layer construction and ensure sharing of layers.
 The MemoMap prevents duplicate construction of the same layer instance,
 enabling efficient resource sharing across layer dependencies.
 
-**Example**
+**Example** (Sharing layer construction with a memo map)
 
 ```ts
 import { Effect, Layer, Context } from "effect"
@@ -36,6 +36,10 @@ const program = Effect.gen(function*() {
 ```ts
 export interface MemoMap {
   readonly [MemoMapTypeId]: typeof MemoMapTypeId
+  readonly get: <RIn, E, ROut>(
+    layer: Layer<ROut, E, RIn>,
+    scope: Scope.Scope
+  ) => Effect<Context.Context<ROut>, E, RIn> | undefined
   readonly getOrElseMemoize: <RIn, E, ROut>(
     layer: Layer<ROut, E, RIn>,
     scope: Scope.Scope,
@@ -44,6 +48,6 @@ export interface MemoMap {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L168)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L178)
 
 Since v2.0.0

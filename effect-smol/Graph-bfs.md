@@ -3,12 +3,16 @@ Module: `Graph`<br />
 
 ## Graph.bfs
 
-Creates a new BFS iterator with optional configuration.
+Creates a lazy breadth-first traversal iterator from the configured start
+nodes.
 
-The iterator maintains a queue of nodes to visit and tracks discovered nodes.
-It provides lazy evaluation of the breadth-first search.
+**Details**
 
-**Example**
+If no start nodes are supplied, the iterator is empty. The `direction` option
+chooses whether to follow outgoing or incoming edges. Throws a `GraphError`
+if any configured start node does not exist.
+
+**Example** (Traversing breadth-first)
 
 ```ts
 import { Graph } from "effect"
@@ -38,6 +42,6 @@ const bfs2 = Graph.bfs(graph)
 declare const bfs: { (config?: SearchConfig): <N, E, T extends Kind = "directed">(graph: Graph<N, E, T> | MutableGraph<N, E, T>) => NodeWalker<N>; <N, E, T extends Kind = "directed">(graph: Graph<N, E, T> | MutableGraph<N, E, T>, config?: SearchConfig): NodeWalker<N>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Graph.ts#L3766)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Graph.ts#L3953)
 
 Since v4.0.0

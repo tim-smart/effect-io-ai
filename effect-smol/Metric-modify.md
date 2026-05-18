@@ -12,7 +12,7 @@ The behavior of `modify` depends on the metric type:
 - **Histogram**: Same as `update` - records the input value in the appropriate bucket
 - **Summary**: Same as `update` - records the input observation
 
-**Example**
+**Example** (Modifying metric values)
 
 ```ts
 import { Effect, Metric } from "effect"
@@ -46,6 +46,6 @@ const program = Effect.gen(function*() {
 declare const modify: { <Input>(input: Input): <State>(self: Metric<Input, State>) => Effect<void>; <Input, State>(self: Metric<Input, State>, input: Input): Effect<void>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Metric.ts#L2755)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Metric.ts#L2756)
 
 Since v2.0.0

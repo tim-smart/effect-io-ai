@@ -3,14 +3,17 @@ Module: `Tool`<br />
 
 ## Tool.EmptyParams
 
-A schema for tools that accept no parameters.
+Type of the `EmptyParams` schema used for tools with no parameters.
+
+It is a record schema with string keys and `never` values, so the generated
+parameter schema accepts an empty object shape with no properties.
 
 **Signature**
 
 ```ts
-declare const EmptyParams: EmptyParams
+export interface EmptyParams extends Schema.$Record<Schema.String, Schema.Never> {}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tool.ts#L1847)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tool.ts#L1908)
 
 Since v4.0.0

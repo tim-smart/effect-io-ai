@@ -5,7 +5,7 @@ Module: `HashSet`<br />
 
 Creates a HashSet from an iterable collection of values.
 
-**Example**
+**Example** (Creating a HashSet from an iterable)
 
 ```ts
 import * as HashSet from "effect/HashSet"
@@ -26,6 +26,6 @@ console.log(Array.from(fromString)) // ["h", "e", "l", "o"]
 declare const fromIterable: <V>(values: Iterable<V>) => HashSet<V>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashSet.ts#L155)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashSet.ts#L202)
 
 Since v2.0.0

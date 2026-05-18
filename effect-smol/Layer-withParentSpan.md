@@ -3,13 +3,14 @@ Module: `Layer`<br />
 
 ## Layer.withParentSpan
 
-Wraps a `Layer` with a new tracing span and sets the span as the parent span.
+Wraps a layer so spans created during its construction use the supplied span
+as their parent.
 
-This attaches a layer to an existing trace span, making all operations within
-the layer children of the provided parent span. This is useful for integrating
-layer construction into an existing trace hierarchy.
+**Details**
+Use this to attach layer construction to an existing trace hierarchy. This API
+does not create or end the supplied parent span.
 
-**Example**
+**Example** (Attaching layers to an existing parent span)
 
 ```ts
 import { Effect, Layer, Context, Tracer } from "effect"
@@ -65,6 +66,6 @@ const program = Effect.withSpan("application-startup")(
 declare const withParentSpan: { (span: Tracer.AnySpan, options?: Tracer.TraceOptions): <A, E, R>(self: Layer<A, E, R>) => Layer<A, E, Exclude<R, Tracer.ParentSpan>>; <A, E, R>(self: Layer<A, E, R>, span: Tracer.AnySpan, options?: Tracer.TraceOptions): Layer<A, E, Exclude<R, Tracer.ParentSpan>>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L2330)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L2445)
 
 Since v4.0.0

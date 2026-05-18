@@ -3,13 +3,12 @@ Module: `TxHashMap`<br />
 
 ## TxHashMap.flatMap
 
-Transforms the TxHashMap by applying a function that returns a TxHashMap to each entry,
-then flattening the results. Useful for complex transformations that require creating new maps.
+Effectfully maps each entry to a `TxHashMap` and flattens the produced maps.
 
 **Return behavior**: This function returns a new TxHashMap reference with the
 flattened results. The original TxHashMap is not modified.
 
-**Example**
+**Example** (Flat mapping entries)
 
 ```ts
 import { Effect, TxHashMap } from "effect"
@@ -57,6 +56,6 @@ const program = Effect.gen(function*() {
 declare const flatMap: { <A, V, K>(f: (value: V, key: K) => Effect.Effect<TxHashMap<K, A>>): (self: TxHashMap<K, V>) => Effect.Effect<TxHashMap<K, A>>; <K, V, A>(self: TxHashMap<K, V>, f: (value: V, key: K) => Effect.Effect<TxHashMap<K, A>>): Effect.Effect<TxHashMap<K, A>>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashMap.ts#L1912)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashMap.ts#L1985)
 
 Since v2.0.0

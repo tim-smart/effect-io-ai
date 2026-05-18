@@ -7,7 +7,7 @@ Returns a new metric that is powered by this one, but which accepts updates
 of any type, and translates them to updates with the specified constant
 update value.
 
-**Example**
+**Example** (Ignoring inputs with a constant value)
 
 ```ts
 import { Data, Effect, Metric } from "effect"
@@ -41,6 +41,6 @@ const program = Effect.gen(function*() {
 declare const withConstantInput: { <Input>(input: Input): <State>(self: Metric<Input, State>) => Metric<unknown, State>; <Input, State>(self: Metric<Input, State>, input: Input): Metric<unknown, State>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Metric.ts#L2928)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Metric.ts#L2932)
 
 Since v2.0.0

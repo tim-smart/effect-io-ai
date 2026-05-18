@@ -5,7 +5,7 @@ Module: `TxQueue`<br />
 
 Checks if the given value is a TxEnqueue.
 
-**Example**
+**Example** (Checking enqueue handles)
 
 ```ts
 import { TxQueue } from "effect"
@@ -24,6 +24,6 @@ if (TxQueue.isTxEnqueue(someValue)) {
 declare const isTxEnqueue: <A = unknown, E = unknown>(u: unknown) => u is TxEnqueue<A, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxQueue.ts#L308)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxQueue.ts#L267)
 
 Since v4.0.0

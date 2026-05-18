@@ -10,7 +10,7 @@ errors (the same object is never reported twice), skips interruptions,
 and resolves the `ignore`, `severity`, and `attributes` annotations on
 each error before invoking your callback.
 
-**Example**
+**Example** (Forwarding errors to the console)
 
 ```ts
 import { ErrorReporter } from "effect"
@@ -29,6 +29,6 @@ const consoleReporter = ErrorReporter.make(
 declare const make: (report: (options: { readonly cause: Cause.Cause<unknown>; readonly error: Error; readonly attributes: ReadonlyRecord<string, unknown>; readonly severity: Severity; readonly fiber: Fiber.Fiber<unknown, unknown>; readonly timestamp: bigint; }) => void) => ErrorReporter
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ErrorReporter.ts#L119)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ErrorReporter.ts#L126)
 
 Since v4.0.0

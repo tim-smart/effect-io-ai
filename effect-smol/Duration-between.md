@@ -3,9 +3,10 @@ Module: `Duration`<br />
 
 ## Duration.between
 
-Checks if a `Duration` is between a `minimum` and `maximum` value.
+Returns `true` if a `Duration` is greater than or equal to `minimum` and
+less than or equal to `maximum`, according to `Duration.Order`.
 
-**Example**
+**Example** (Checking duration ranges)
 
 ```ts
 import { Duration } from "effect"
@@ -23,6 +24,6 @@ console.log(isInRange) // true
 declare const between: { (options: { minimum: Duration; maximum: Duration; }): (self: Duration) => boolean; (self: Duration, options: { minimum: Duration; maximum: Duration; }): boolean; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Duration.ts#L1069)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Duration.ts#L1105)
 
 Since v2.0.0

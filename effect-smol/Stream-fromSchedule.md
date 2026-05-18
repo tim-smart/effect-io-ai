@@ -6,7 +6,7 @@ Module: `Stream`<br />
 Creates a stream that emits each output of a schedule that does not require input,
 for as long as the schedule continues.
 
-**Example**
+**Example** (Creating a stream from a schedule)
 
 ```ts
 import { Console, Effect, Schedule, Stream } from "effect"
@@ -30,6 +30,6 @@ Effect.runPromise(program)
 declare const fromSchedule: <O, E, R>(schedule: Schedule.Schedule<O, unknown, E, R>) => Stream<O, E, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L1450)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L1520)
 
 Since v2.0.0

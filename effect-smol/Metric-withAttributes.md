@@ -9,7 +9,7 @@ Attributes are key-value pairs that provide additional context for metrics,
 enabling filtering, grouping, and more detailed analysis. Each combination
 of attribute values creates a separate metric series.
 
-**Example**
+**Example** (Applying metric attributes)
 
 ```ts
 import { Effect, Metric } from "effect"
@@ -61,6 +61,6 @@ const viewMetrics = Effect.gen(function*() {
 declare const withAttributes: { (attributes: Metric.Attributes): <Input, State>(self: Metric<Input, State>) => Metric<Input, State>; <Input, State>(self: Metric<Input, State>, attributes: Metric.Attributes): Metric<Input, State>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Metric.ts#L2991)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Metric.ts#L2996)
 
 Since v4.0.0

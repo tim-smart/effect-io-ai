@@ -7,7 +7,7 @@ Views the next item without removing it.
 
 Blocks until an item is available. If the queue is done or fails, the error is propagated.
 
-**Example**
+**Example** (Peeking at the next value)
 
 ```ts
 import { Cause, Effect, Queue } from "effect"
@@ -28,6 +28,6 @@ const program = Effect.gen(function*() {
 declare const peek: <A, E>(self: Dequeue<A, E>) => Effect<A, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Queue.ts#L1264)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Queue.ts#L1389)
 
 Since v4.0.0

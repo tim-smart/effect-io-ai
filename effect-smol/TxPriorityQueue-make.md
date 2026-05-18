@@ -5,7 +5,7 @@ Module: `TxPriorityQueue`<br />
 
 Creates a `TxPriorityQueue` from variadic elements.
 
-**Example**
+**Example** (Creating a priority queue from variadic values)
 
 ```ts
 import { Effect, Order, TxPriorityQueue } from "effect"
@@ -23,6 +23,6 @@ const program = Effect.gen(function*() {
 declare const make: <A>(order: Order<A>) => (...elements: Array<A>) => Effect.Effect<TxPriorityQueue<A>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxPriorityQueue.ts#L163)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxPriorityQueue.ts#L167)
 
 Since v4.0.0

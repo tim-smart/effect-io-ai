@@ -8,7 +8,7 @@ meaning that it should be impossible for this code to be executed.
 
 This function is particularly useful when it's necessary to specify that certain cases are impossible.
 
-**Example**
+**Example** (Handling impossible values)
 
 ```ts
 import { absurd } from "effect/Function"
@@ -24,6 +24,6 @@ const handleNever = (value: never) => {
 declare const absurd: <A>(_: never) => A
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Function.ts#L423)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Function.ts#L472)
 
 Since v2.0.0

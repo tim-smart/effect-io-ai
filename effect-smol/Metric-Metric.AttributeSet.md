@@ -5,7 +5,7 @@ Module: `Metric`<br />
 
 Type for metric attributes as a readonly record of string key-value pairs.
 
-**Example**
+**Example** (Combining metric attribute sets)
 
 ```ts
 import { Data, Effect, Metric } from "effect"
@@ -81,6 +81,6 @@ const program = Effect.gen(function*() {
 type AttributeSet = Readonly<Record<string, string>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Metric.ts#L1306)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Metric.ts#L1268)
 
 Since v2.0.0

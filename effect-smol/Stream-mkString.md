@@ -5,7 +5,7 @@ Module: `Stream`<br />
 
 Concatenates all emitted strings into a single string.
 
-**Example**
+**Example** (Joining strings from a stream)
 
 ```ts
 import { Console, Effect, Stream } from "effect"
@@ -26,6 +26,6 @@ Effect.runPromise(program)
 declare const mkString: <E, R>(self: Stream<string, E, R>) => Effect.Effect<string, E, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L10314)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L10629)
 
 Since v2.0.0

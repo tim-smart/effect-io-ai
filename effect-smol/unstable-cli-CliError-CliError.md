@@ -5,7 +5,7 @@ Module: `CliError`<br />
 
 Union type representing all possible CLI error conditions.
 
-**Example**
+**Example** (Handling CLI errors)
 
 ```ts
 import type { CliError } from "effect/unstable/cli"
@@ -44,6 +44,6 @@ type CliError = | UnrecognizedOption
   | UserError
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/CliError.ts#L76)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/CliError.ts#L102)
 
 Since v4.0.0

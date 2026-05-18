@@ -9,7 +9,7 @@ This function provides a safe way to deconstruct a `NonEmptyIterable` into its
 head (first element) and tail (remaining elements as an iterator). Since the
 iterable is guaranteed to be non-empty, the first element is always available.
 
-**Example**
+**Example** (Extracting first and remaining elements)
 
 ```ts
 import { Array } from "effect"
@@ -116,6 +116,6 @@ const sum = reduceNonEmpty(data, (acc, x) => acc + x, 0) // 10
 declare const unprepend: <A>(self: NonEmptyIterable<A>) => [firstElement: A, remainingElements: Iterator<A>]
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/NonEmptyIterable.ts#L335)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/NonEmptyIterable.ts#L332)
 
 Since v2.0.0

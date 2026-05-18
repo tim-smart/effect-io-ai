@@ -3,14 +3,18 @@ Module: `Context`<br />
 
 ## Context.getOrElse
 
-Get a service from the context that corresponds to the given key, or
-use the fallback value.
+Gets the service for a key, or evaluates the fallback when a non-reference
+key is absent.
 
-**Example**
+**Details**
+
+If the key is a `Context.Reference` and no override is stored in the
+context, its cached default value is returned instead of the fallback.
+
+**Example** (Falling back for missing services)
 
 ```ts
 import { Context } from "effect"
-import * as assert from "node:assert"
 
 const Logger = Context.Service<{ log: (msg: string) => void }>("Logger")
 const Database = Context.Service<{ query: (sql: string) => string }>(
@@ -28,8 +32,8 @@ const database = Context.getOrElse(
   () => ({ query: () => "fallback" })
 )
 
-assert.deepStrictEqual(logger, { log: (msg: string) => console.log(msg) })
-assert.deepStrictEqual(database, { query: () => "fallback" })
+console.log(logger === Context.get(context, Logger)) // true
+console.log(database.query("SELECT 1")) // "fallback"
 ```
 
 **Signature**
@@ -38,6 +42,6 @@ assert.deepStrictEqual(database, { query: () => "fallback" })
 declare const getOrElse: { <S, I, B>(key: Key<I, S>, orElse: LazyArg<B>): <Services>(self: Context<Services>) => S | B; <Services, S, I, B>(self: Context<Services>, key: Key<I, S>, orElse: LazyArg<B>): S | B; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Context.ts#L611)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Context.ts#L715)
 
 Since v4.0.0

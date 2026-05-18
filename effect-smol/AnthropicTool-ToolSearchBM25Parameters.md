@@ -3,14 +3,14 @@ Module: `AnthropicTool`<br />
 
 ## AnthropicTool.ToolSearchBM25Parameters
 
-Input parameters for BM25/natural language tool search.
+Type of the parameters Claude supplies when invoking BM25 natural-language Anthropic tool search.
 
 **Signature**
 
 ```ts
-declare const ToolSearchBM25Parameters: Schema.Struct<{ readonly query: Schema.String; }>
+type ToolSearchBM25Parameters = typeof ToolSearchBM25Parameters.Type
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L1522)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L1638)
 
-Since v1.0.0
+Since v4.0.0

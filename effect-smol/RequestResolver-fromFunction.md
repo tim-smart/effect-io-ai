@@ -5,7 +5,7 @@ Module: `RequestResolver`<br />
 
 Constructs a request resolver from a pure function.
 
-**Example**
+**Example** (Creating a resolver from a pure function)
 
 ```ts
 import { Effect, Request, RequestResolver } from "effect"
@@ -35,6 +35,6 @@ const getSquareEffect = Effect.request(
 declare const fromFunction: <A extends Request.Any>(f: (entry: Request.Entry<A>) => Request.Success<A>) => RequestResolver<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RequestResolver.ts#L287)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RequestResolver.ts#L339)
 
 Since v2.0.0

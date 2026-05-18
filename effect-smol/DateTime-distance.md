@@ -10,7 +10,7 @@ If `other` is *after* `self`, the result will be a positive `Duration`. If
 `other` is *before* `self`, the result will be a negative `Duration`. If they
 are equal, the result will be a `Duration` of zero.
 
-**Example**
+**Example** (Measuring distance between DateTime values)
 
 ```ts
 import { DateTime, Effect } from "effect"
@@ -30,6 +30,6 @@ Effect.gen(function*() {
 declare const distance: { (other: DateTime): (self: DateTime) => Duration.Duration; (self: DateTime, other: DateTime): Duration.Duration; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L948)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L1151)
 
 Since v3.6.0

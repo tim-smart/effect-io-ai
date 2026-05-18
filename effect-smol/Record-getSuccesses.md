@@ -5,7 +5,7 @@ Module: `Record`<br />
 
 Given a record with `Result` values, returns a new record containing only the `Ok` values, preserving the original keys.
 
-**Example**
+**Example** (Extracting Result successes)
 
 ```ts
 import { Record, Result } from "effect"
@@ -27,6 +27,6 @@ assert.deepStrictEqual(
 declare const getSuccesses: <K extends string, A, E>(self: ReadonlyRecord<K, Result<A, E>>) => Record<string, A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Record.ts#L840)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Record.ts#L879)
 
 Since v2.0.0

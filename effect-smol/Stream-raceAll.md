@@ -3,9 +3,24 @@ Module: `Stream`<br />
 
 ## Stream.raceAll
 
-Races multiple streams and emits values from the first stream to produce a value, interrupting the rest.
+Runs all streams concurrently until one stream emits its first value, then
+mirrors that winning stream and interrupts the rest.
 
-**Example**
+Failures or completion from losing streams before a winner is chosen are
+ignored unless every stream fails or completes before emitting. After a
+winner is chosen, that stream's later failures are propagated.
+
+**Signature**
+
+```ts
+declare const raceAll: <S extends ReadonlyArray<Stream<any, any, any>>>(...streams: S) => Stream<Success<S[number]>, Error<S[number]>, Services<S[number]>>
+```
+
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L4157)
+
+Since v3.7.0
+
+**Example** (Racing multiple streams)
 
 ```ts
 import { Console, Effect, Schedule, Stream } from "effect"
@@ -21,13 +36,3 @@ const program = Effect.gen(function*() {
 Effect.runPromise(program)
 // Output: [ 0, 1, 2 ]
 ```
-
-**Signature**
-
-```ts
-declare const raceAll: <S extends ReadonlyArray<Stream<any, any, any>>>(...streams: S) => Stream<Success<S[number]>, Error<S[number]>, Services<S[number]>>
-```
-
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L3998)
-
-Since v3.7.0

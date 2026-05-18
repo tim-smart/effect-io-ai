@@ -10,7 +10,7 @@ Accessed values are tracked by the transaction in order to detect conflicts and 
 A transaction will retry whenever a conflict is detected or whenever the transaction explicitly
 calls `Effect.txRetry` and any of the accessed TxChunk values change.
 
-**Example**
+**Example** (Using a transactional chunk)
 
 ```ts
 import { Chunk, Effect, TxChunk } from "effect"
@@ -50,6 +50,6 @@ export interface TxChunk<in out A> extends Inspectable, Pipeable {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxChunk.ts#L66)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxChunk.ts#L67)
 
 Since v4.0.0

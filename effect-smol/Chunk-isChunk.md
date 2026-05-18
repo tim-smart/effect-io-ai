@@ -5,7 +5,7 @@ Module: `Chunk`<br />
 
 Checks if `u` is a `Chunk<unknown>`
 
-**Example**
+**Example** (Checking for chunks)
 
 ```ts
 import { Chunk } from "effect"
@@ -24,6 +24,6 @@ console.log(Chunk.isChunk("string")) // false
 declare const isChunk: { <A>(u: Iterable<A>): u is Chunk<A>; (u: unknown): u is Chunk<unknown>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L334)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L342)
 
 Since v2.0.0

@@ -5,7 +5,7 @@ Module: `String`<br />
 
 Converts a PascalCase string to snake_case.
 
-**Example**
+**Example** (Converting PascalCase to snake_case)
 
 ```ts
 import { String } from "effect"
@@ -20,6 +20,6 @@ console.log(String.pascalToSnake("FooBarBaz")) // "foo_bar_baz"
 declare const pascalToSnake: (self: string) => string
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L1061)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L1121)
 
 Since v2.0.0

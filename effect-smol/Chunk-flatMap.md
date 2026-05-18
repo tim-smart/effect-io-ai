@@ -5,7 +5,7 @@ Module: `Chunk`<br />
 
 Applies a function to each element in a chunk and returns a new chunk containing the concatenated mapped elements.
 
-**Example**
+**Example** (Flat mapping chunks)
 
 ```ts
 import { Chunk } from "effect"
@@ -33,6 +33,6 @@ console.log(Chunk.toArray(indexed)) // [1, 3, 5]
 declare const flatMap: { <S extends Chunk<any>, T extends Chunk<any>>(f: (a: Chunk.Infer<S>, i: number) => T): (self: S) => Chunk.AndNonEmpty<S, T, Chunk.Infer<T>>; <A, B>(self: NonEmptyChunk<A>, f: (a: A, i: number) => NonEmptyChunk<B>): NonEmptyChunk<B>; <A, B>(self: Chunk<A>, f: (a: A, i: number) => Chunk<B>): Chunk<B>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L1167)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L1183)
 
 Since v2.0.0

@@ -13,7 +13,7 @@ May accept an optional `CodecTransformer` which can be used to transform the
 tool parameter schema so that the resultant JSON schema for the tool call
 parameters are in a format that conforms to any provider-specific constraints.
 
-**Example**
+**Example** (Generating a tool JSON schema)
 
 ```ts
 import { Schema } from "effect"
@@ -44,6 +44,6 @@ console.log(jsonSchema)
 declare const getJsonSchema: <Tool extends Any>(tool: Tool, options?: { readonly transformer?: CodecTransformer; }) => JsonSchema.JsonSchema
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tool.ts#L1576)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tool.ts#L1610)
 
-Since v1.0.0
+Since v4.0.0

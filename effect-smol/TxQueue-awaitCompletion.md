@@ -5,7 +5,7 @@ Module: `TxQueue`<br />
 
 Waits for the queue to complete (either successfully or with failure).
 
-**Example**
+**Example** (Awaiting queue completion)
 
 ```ts
 import { Effect, TxQueue } from "effect"
@@ -28,6 +28,6 @@ const program = Effect.gen(function*() {
 declare const awaitCompletion: (self: TxQueueState) => Effect.Effect<void>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxQueue.ts#L1491)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxQueue.ts#L1495)
 
 Since v4.0.0

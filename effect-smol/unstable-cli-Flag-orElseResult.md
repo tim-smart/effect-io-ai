@@ -5,7 +5,7 @@ Module: `Flag`<br />
 
 Tries to parse with the first flag, then the second, returning a Result that indicates which succeeded.
 
-**Example**
+**Example** (Returning fallback results)
 
 ```ts
 import { Effect, Result } from "effect"
@@ -36,6 +36,6 @@ const program = Effect.gen(function*() {
 declare const orElseResult: { <B>(that: LazyArg<Flag<B>>): <A>(self: Flag<A>) => Flag<Result.Result<A, B>>; <A, B>(self: Flag<A>, that: LazyArg<Flag<B>>): Flag<Result.Result<A, B>>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Flag.ts#L843)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Flag.ts#L901)
 
 Since v4.0.0

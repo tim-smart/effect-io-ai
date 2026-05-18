@@ -5,7 +5,7 @@ Module: `Argument`<br />
 
 Creates a positional float argument.
 
-**Example**
+**Example** (Creating a float argument)
 
 ```ts
 import { Argument } from "effect/unstable/cli"
@@ -19,6 +19,6 @@ const ratio = Argument.float("ratio")
 declare const float: (name: string) => Argument<number>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Argument.ts#L114)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Argument.ts#L141)
 
 Since v4.0.0

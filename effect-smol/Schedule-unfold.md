@@ -6,7 +6,7 @@ Module: `Schedule`<br />
 Creates a schedule that unfolds a state by repeatedly applying a function,
 outputting the current state and computing the next state.
 
-**Example**
+**Example** (Unfolding schedule state)
 
 ```ts
 import { Console, Effect, Schedule } from "effect"
@@ -55,15 +55,14 @@ const exponentialState = Schedule.unfold(
     })
 )
 
-// Random jitter schedule
-const jitteredSchedule = Schedule.unfold(
-  1000,
-  (baseDelay) =>
+// Deterministic delay adjustment schedule
+const adjustedDelaySchedule = Schedule.unfold(
+  { delay: 1000, adjustment: 100 },
+  ({ delay, adjustment }) =>
     Effect.gen(function*() {
-      const jitter = Math.random() * 200 - 100 // ±100ms jitter
-      const nextDelay = Math.max(100, baseDelay + jitter)
-      yield* Console.log(`Jittered delay: ${nextDelay.toFixed(0)}ms`)
-      return nextDelay
+      const nextDelay = Math.max(100, delay + adjustment)
+      yield* Console.log(`Adjusted delay: ${nextDelay}ms`)
+      return { delay: nextDelay, adjustment: adjustment * -1 }
     })
 )
 
@@ -102,6 +101,6 @@ const stateMachineProgram = Effect.gen(function*() {
 declare const unfold: <State, Error = never, Env = never>(initial: State, next: (state: State) => Effect<State, Error, Env>) => Schedule<State, unknown, Error, Env>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L3048)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L3049)
 
 Since v2.0.0

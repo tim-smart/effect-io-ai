@@ -3,12 +3,13 @@ Module: `Telemetry`<br />
 
 ## Telemetry.addSpanAttributes
 
-Creates a function to add attributes to a span with a given prefix and key transformation.
+Creates a reusable span-attribute writer for a key prefix and key
+transformer.
 
-This utility function is used internally to create specialized functions for adding
-different types of telemetry attributes to OpenTelemetry spans.
+The returned function mutates the supplied span by adding each non-nullish
+attribute as `${prefix}.${transformedKey}`.
 
-**Example**
+**Example** (Adding prefixed span attributes)
 
 ```ts
 import type { Tracer } from "effect"
@@ -35,6 +36,6 @@ addCustomAttributes(span, {
 declare const addSpanAttributes: (keyPrefix: string, transformKey: (key: string) => string) => <Attributes extends Record<string, any>>(span: Span, attributes: Attributes) => void
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Telemetry.ts#L321)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Telemetry.ts#L326)
 
 Since v4.0.0

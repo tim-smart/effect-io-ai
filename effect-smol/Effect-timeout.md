@@ -12,7 +12,13 @@ effect's execution. If the effect does not complete within the given time, a
 your program waits for a task to finish, ensuring that it doesn't hang
 indefinitely if the task takes too long.
 
-**Example**
+**See**
+
+- `timeoutFail` for a version that raises a custom error.
+- `timeoutFailCause` for a version that raises a custom defect.
+- `timeoutTo` for a version that allows specifying both success and timeout handlers.
+
+**Example** (Usage)
 
 ```ts
 import { Effect } from "effect"
@@ -42,18 +48,12 @@ Effect.runPromiseExit(timedEffect).then(console.log)
 // }
 ```
 
-**See**
-
-- `timeoutFail` for a version that raises a custom error.
-- `timeoutFailCause` for a version that raises a custom defect.
-- `timeoutTo` for a version that allows specifying both success and timeout handlers.
-
 **Signature**
 
 ```ts
 declare const timeout: { (duration: Duration.Input): <A, E, R>(self: Effect<A, E, R>) => Effect<A, E | Cause.TimeoutError, R>; <A, E, R>(self: Effect<A, E, R>, duration: Duration.Input): Effect<A, E | Cause.TimeoutError, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L4360)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L4223)
 
 Since v2.0.0

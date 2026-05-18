@@ -3,17 +3,14 @@ Module: `AnthropicTool`<br />
 
 ## AnthropicTool.ToolSearchRegexParameters
 
-Input parameters for regex-based tool search.
-
-Claude constructs regex patterns using Python's `re.search()` syntax.
-Maximum query length: 200 characters.
+Type of the parameters Claude supplies when invoking regex-based Anthropic tool search.
 
 **Signature**
 
 ```ts
-declare const ToolSearchRegexParameters: Schema.Struct<{ readonly query: Schema.String; }>
+type ToolSearchRegexParameters = typeof ToolSearchRegexParameters.Type
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L1504)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L1618)
 
-Since v1.0.0
+Since v4.0.0

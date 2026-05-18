@@ -6,10 +6,12 @@ Module: `Stream`<br />
 Buffers up to `capacity` elements so a faster producer can progress
 independently of a slower consumer.
 
-Note: This combinator destroys chunking. Use `Stream.rechunk` afterwards if
-you need fixed chunk sizes.
+Finite buffers use the configured queue strategy: `"suspend"` applies
+backpressure, while `"dropping"` and `"sliding"` may discard elements when
+the buffer is full. This combinator destroys chunking; use `Stream.rechunk`
+afterward if you need fixed chunk sizes.
 
-**Example**
+**Example** (Buffering stream elements)
 
 ```ts
 import { Console, Effect, Stream } from "effect"
@@ -32,6 +34,6 @@ Effect.runPromise(program)
 declare const buffer: { (options: { readonly capacity: "unbounded"; } | { readonly capacity: number; readonly strategy?: "dropping" | "sliding" | "suspend" | undefined; }): <A, E, R>(self: Stream<A, E, R>) => Stream<A, E, R>; <A, E, R>(self: Stream<A, E, R>, options: { readonly capacity: "unbounded"; } | { readonly capacity: number; readonly strategy?: "dropping" | "sliding" | "suspend" | undefined; }): Stream<A, E, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L4553)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L4736)
 
 Since v2.0.0

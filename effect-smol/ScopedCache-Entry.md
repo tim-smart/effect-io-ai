@@ -3,8 +3,11 @@ Module: `ScopedCache`<br />
 
 ## ScopedCache.Entry
 
-Represents a cache entry containing a deferred value and optional expiration time.
-This is used internally by the cache implementation to track cached values and their lifetimes.
+A single scoped cache entry.
+
+The entry contains the deferred lookup result shared by readers, the scope
+that owns resources acquired while computing the value, and an optional
+expiration time in milliseconds. Removing the entry closes its scope.
 
 **Signature**
 
@@ -16,6 +19,6 @@ export interface Entry<A, E> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ScopedCache.ts#L53)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ScopedCache.ts#L94)
 
 Since v4.0.0

@@ -5,7 +5,7 @@ Module: `Metric`<br />
 
 Union type representing all available metric types in the Effect metrics system.
 
-**Example**
+**Example** (Inspecting metric types)
 
 ```ts
 import { Data, Effect, Metric } from "effect"
@@ -84,6 +84,6 @@ const program = Effect.gen(function*() {
 type Type = "Counter" | "Frequency" | "Gauge" | "Histogram" | "Summary"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Metric.ts#L1154)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Metric.ts#L1114)
 
 Since v2.0.0

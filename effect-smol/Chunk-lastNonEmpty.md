@@ -5,7 +5,7 @@ Module: `Chunk`<br />
 
 Returns the last element of this non empty chunk.
 
-**Example**
+**Example** (Getting the last element of a non-empty chunk)
 
 ```ts
 import { Chunk } from "effect"
@@ -26,6 +26,6 @@ console.log(Chunk.lastNonEmpty(singleElement)) // "hello"
 declare const lastNonEmpty: <A>(self: NonEmptyChunk<A>) => A
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L1496)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L1516)
 
 Since v3.4.0

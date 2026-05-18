@@ -7,7 +7,7 @@ Creates an Effect-returning function without tracing.
 
 `Effect.fnUntraced` also acts as a `pipe` function, so you can append transforms after the body.
 
-**Example**
+**Example** (Usage)
 
 ```ts
 import { Console, Effect } from "effect"
@@ -26,6 +26,6 @@ Effect.runFork(greet("Ada"))
 declare const fnUntraced: fn.Untraced
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L12874)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L12814)
 
 Since v3.12.0

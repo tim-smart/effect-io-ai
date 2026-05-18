@@ -13,4 +13,4 @@ export * as Permissions from "./Permissions.ts"
 
 [Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/index.ts#L85)
 
-Since v1.0.0
+Since v4.0.0

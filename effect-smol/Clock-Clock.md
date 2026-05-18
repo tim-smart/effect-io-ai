@@ -6,7 +6,7 @@ Module: `Clock`<br />
 Represents a time-based clock which provides functionality related to time
 and scheduling.
 
-**Example**
+**Example** (Reading current time)
 
 ```ts
 import { Clock, Effect } from "effect"
@@ -47,6 +47,6 @@ export interface Clock {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Clock.ts#L84)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Clock.ts#L87)
 
 Since v2.0.0

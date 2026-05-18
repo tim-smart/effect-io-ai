@@ -12,7 +12,7 @@ This API replaces the following from Effect 3.x:
 
 - `Stream.repeatEffectWithSchedule`
 
-**Example**
+**Example** (Repeating an effect with a schedule)
 
 ```ts
 import { Console, Effect, Schedule, Stream } from "effect"
@@ -36,6 +36,6 @@ Effect.runPromise(program)
 declare const fromEffectSchedule: <A, E, R, X, AS extends A, ES, RS>(effect: Effect.Effect<A, E, R>, schedule: Schedule.Schedule<X, AS, ES, RS>) => Stream<A, E | ES, R | RS>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L514)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L555)
 
 Since v2.0.0

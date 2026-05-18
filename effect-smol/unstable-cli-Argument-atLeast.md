@@ -5,7 +5,7 @@ Module: `Argument`<br />
 
 Creates a variadic argument that requires at least n values.
 
-**Example**
+**Example** (Requiring a minimum number of values)
 
 ```ts
 import { Argument } from "effect/unstable/cli"
@@ -19,6 +19,6 @@ const files = Argument.string("files").pipe(Argument.atLeast(1))
 declare const atLeast: { <A>(min: number): (self: Argument<A>) => Argument<ReadonlyArray<A>>; <A>(self: Argument<A>, min: number): Argument<ReadonlyArray<A>>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Argument.ts#L492)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Argument.ts#L541)
 
 Since v4.0.0

@@ -3,9 +3,9 @@ Module: `BigInt`<br />
 
 ## BigInt.increment
 
-Returns the result of adding `1n` to a given number.
+Returns the result of adding `1n` to a `bigint`.
 
-**Example**
+**Example** (Incrementing a bigint)
 
 ```ts
 import { increment } from "effect/BigInt"
@@ -20,6 +20,6 @@ assert.deepStrictEqual(increment(2n), 3n)
 declare const increment: (n: bigint) => bigint
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigInt.ts#L183)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigInt.ts#L187)
 
 Since v2.0.0

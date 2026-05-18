@@ -5,7 +5,7 @@ Module: `BigInt`<br />
 
 Returns the maximum between two `bigint`s.
 
-**Example**
+**Example** (Finding the maximum bigint)
 
 ```ts
 import { max } from "effect/BigInt"
@@ -20,6 +20,6 @@ assert.deepStrictEqual(max(2n, 3n), 3n)
 declare const max: { (that: bigint): (self: bigint) => bigint; (self: bigint, that: bigint): bigint; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigInt.ts#L417)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigInt.ts#L432)
 
 Since v2.0.0

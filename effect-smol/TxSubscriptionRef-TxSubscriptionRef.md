@@ -7,7 +7,7 @@ A TxSubscriptionRef is a transactional reference that allows subscribing to all
 committed changes. Subscribers receive the current value followed by every subsequent
 update via a transactional dequeue.
 
-**Example**
+**Example** (Subscribing to transactional changes)
 
 ```ts
 import { Effect, TxSubscriptionRef, TxQueue } from "effect"
@@ -41,6 +41,6 @@ export interface TxSubscriptionRef<in out A> extends Inspectable, Pipeable {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxSubscriptionRef.ts#L51)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxSubscriptionRef.ts#L52)
 
 Since v4.0.0

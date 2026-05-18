@@ -5,7 +5,7 @@ Module: `MutableHashSet`<br />
 
 Creates an empty MutableHashSet.
 
-**Example**
+**Example** (Creating an empty set)
 
 ```ts
 import { MutableHashSet } from "effect"
@@ -27,6 +27,6 @@ console.log(Array.from(set)) // ["apple", "banana"]
 declare const empty: <K = never>() => MutableHashSet<K>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableHashSet.ts#L129)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableHashSet.ts#L186)
 
 Since v2.0.0

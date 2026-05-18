@@ -11,7 +11,7 @@ For example:
 {"message":["hello"],"level":"INFO","timestamp":"2025-01-03T14:28:57.508Z","annotations":{"key":"value"},"spans":{"label":0},"fiberId":"#1"}
 ```
 
-**Example**
+**Example** (Formatting logs as JSON)
 
 ```ts
 import { Effect, Logger } from "effect"
@@ -35,12 +35,13 @@ const productionProgram = Effect.gen(function*() {
   Effect.provide(Logger.layer([Logger.formatJson]))
 )
 
-// Send to external logging service
-const externalLogger = Logger.map(Logger.formatJson, (jsonString) => {
-  // Send to Elasticsearch, CloudWatch, etc.
-  console.log("Sending to external service:", jsonString)
-  return jsonString
-})
+// Adapt the JSON string before giving it to an output sink
+const envelopedJsonLogger = Logger.map(
+  Logger.formatJson,
+  (jsonString) => `{"service":"api-server","entry":${jsonString}}`
+)
+
+const envelopedConsoleLogger = Logger.withConsoleLog(envelopedJsonLogger)
 ```
 
 **Signature**
@@ -49,6 +50,6 @@ const externalLogger = Logger.map(Logger.formatJson, (jsonString) => {
 declare const formatJson: Logger<unknown, string>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Logger.ts#L740)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Logger.ts#L762)
 
 Since v4.0.0

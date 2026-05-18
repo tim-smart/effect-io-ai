@@ -16,10 +16,7 @@ This function is useful when defining matchers that need to check for
 specific values or apply logical conditions to determine a match. It works
 well with structured objects and primitive types.
 
-**Example**
-
-```ts
-(Matching with Values and Predicates)
+**Example** (Matching with Values and Predicates)
 
 ```ts
 import { Match } from "effect"
@@ -46,7 +43,6 @@ console.log(match({ age: 18 }))
 console.log(match({ age: 4 }))
 // Output: "4 is too young"
 ```
-```
 
 **See**
 
@@ -61,6 +57,6 @@ condition.
 declare const when: <R, const P extends Types.PatternPrimitive<R> | Types.PatternBase<R>, Ret, Fn extends (_: Types.WhenMatch<R, P>) => Ret>(pattern: P, f: Fn) => <I, F, A, Pr>(self: Matcher<I, F, R, A, Pr, Ret>) => Matcher<I, Types.AddWithout<F, Types.PForExclude<P>>, Types.ApplyFilters<I, Types.AddWithout<F, Types.PForExclude<P>>>, A | ReturnType<Fn>, Pr, Ret>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L528)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L513)
 
 Since v4.0.0

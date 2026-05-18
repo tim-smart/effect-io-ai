@@ -9,13 +9,15 @@ boundary and treat a schema mismatch as an unrecoverable error. For
 non-throwing alternatives see `encodeUnknownOption`,
 `encodeUnknownExit`, or `encodeUnknownEffect`. For typed input
 use `encodeSync`.
+Options may be provided either when creating the encoder or when applying it;
+application options override creation options.
 
 **Signature**
 
 ```ts
-declare const encodeUnknownSync: <S extends Encoder<unknown>>(schema: S) => (input: unknown, options?: AST.ParseOptions) => S["Encoded"]
+declare const encodeUnknownSync: <S extends Encoder<unknown>>(schema: S, options?: AST.ParseOptions) => (input: unknown, options?: AST.ParseOptions) => S["Encoded"]
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L1432)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L1507)
 
 Since v4.0.0

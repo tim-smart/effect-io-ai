@@ -11,7 +11,7 @@ For example:
 timestamp=2025-01-03T14:22:47.570Z level=INFO fiber=#1 message=hello
 ```
 
-**Example**
+**Example** (Formatting logs as logfmt)
 
 ```ts
 import { Effect, Logger } from "effect"
@@ -42,6 +42,6 @@ const productionLogger = Logger.formatLogFmt
 declare const formatLogFmt: Logger<unknown, string>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Logger.ts#L613)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Logger.ts#L632)
 
 Since v4.0.0

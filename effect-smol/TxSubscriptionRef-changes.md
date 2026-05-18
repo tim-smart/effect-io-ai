@@ -6,7 +6,7 @@ Module: `TxSubscriptionRef`<br />
 Subscribes to all changes of the TxSubscriptionRef. Returns a scoped TxDequeue
 that first yields the current value, then every subsequent update.
 
-**Example**
+**Example** (Subscribing to changes)
 
 ```ts
 import { Effect, TxSubscriptionRef, TxQueue } from "effect"
@@ -34,6 +34,6 @@ const program = Effect.gen(function*() {
 declare const changes: <A>(self: TxSubscriptionRef<A>) => Effect.Effect<TxQueue.TxQueue<A>, never, Scope.Scope>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxSubscriptionRef.ts#L344)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxSubscriptionRef.ts#L354)
 
 Since v4.0.0

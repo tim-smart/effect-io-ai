@@ -5,7 +5,7 @@ Module: `TxHashMap`<br />
 
 Returns `true` if the specified value is a `TxHashMap`, `false` otherwise.
 
-**Example**
+**Example** (Checking TxHashMap values)
 
 ```ts
 import { Effect, TxHashMap } from "effect"
@@ -35,6 +35,6 @@ const program = Effect.gen(function*() {
 declare const isTxHashMap: <K, V>(value: unknown) => value is TxHashMap<K, V>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashMap.ts#L1160)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashMap.ts#L1215)
 
 Since v2.0.0

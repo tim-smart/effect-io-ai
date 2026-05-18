@@ -3,13 +3,15 @@ Module: `Channel`<br />
 
 ## Channel.flatMap
 
-Returns a new channel, which sequentially combines this channel, together
-with the provided factory function, which creates a second channel based on
-the output values of this channel. The result is a channel that will first
-perform the functions of this channel, before performing the functions of
-the created channel (including yielding its terminal value).
+Maps each output element to a channel and flattens the child channel
+outputs.
 
-**Example**
+The source channel's done value is preserved. Child channel done values are
+used only for child-channel completion. By default child channels are run
+sequentially. Use `options.concurrency` and `options.bufferSize` to run child
+channels concurrently.
+
+**Example** (FlatMapping channel output)
 
 ```ts
 import { Channel, Data } from "effect"
@@ -38,6 +40,6 @@ const flatMappedChannel = Channel.flatMap(
 declare const flatMap: { <OutElem, OutElem1, OutErr1, OutDone1, InElem1, InErr1, InDone1, Env1>(f: (d: OutElem) => Channel<OutElem1, OutErr1, OutDone1, InElem1, InErr1, InDone1, Env1>, options?: { readonly concurrency?: number | "unbounded" | undefined; readonly bufferSize?: number | undefined; }): <OutErr, OutDone, InElem, InErr, InDone, Env>(self: Channel<OutElem, OutErr, OutDone, InElem, InErr, InDone, Env>) => Channel<OutElem1, OutErr1 | OutErr, OutDone, InElem & InElem1, InErr & InErr1, InDone & InDone1, Env1 | Env>; <OutElem, OutErr, OutDone, InElem, InErr, InDone, Env, OutElem1, OutErr1, OutDone1, InElem1, InErr1, InDone1, Env1>(self: Channel<OutElem, OutErr, OutDone, InElem, InErr, InDone, Env>, f: (d: OutElem) => Channel<OutElem1, OutErr1, OutDone1, InElem1, InErr1, InDone1, Env1>, options?: { readonly concurrency?: number | "unbounded" | undefined; readonly bufferSize?: number | undefined; }): Channel<OutElem1, OutErr | OutErr1, OutDone, InElem & InElem1, InErr & InErr1, InDone & InDone1, Env | Env1>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L2098)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L2209)
 
 Since v2.0.0

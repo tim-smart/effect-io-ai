@@ -3,13 +3,14 @@ Module: `Command`<br />
 
 ## Command.make
 
-Creates a Command from a name, optional config, optional handler function, and optional description.
+Creates a `Command` from a name, an optional configuration, and an optional
+handler.
 
-The make function is the primary constructor for CLI commands. It provides multiple overloads
-to support different patterns of command creation, from simple commands with no configuration
-to complex commands with nested configurations and error handling.
+Use `withDescription` and related metadata combinators to add help text. The
+overloads support simple commands, configured commands, and commands with
+effectful handlers.
 
-**Example**
+**Example** (Creating commands)
 
 ```ts
 import { Console, Effect } from "effect"
@@ -59,6 +60,6 @@ const deployWithHandler = Command.make("deploy", {
 declare const make: { <Name extends string>(name: Name): Command<Name, {}, {}, never, never>; <Name extends string, const Config extends Command.Config>(name: Name, config: Config): Command<Name, Command.Config.Infer<Config>, {}, never, never>; <Name extends string, const Config extends Command.Config, R, E>(name: Name, config: Config, handler: (config: Command.Config.Infer<Config>) => Effect.Effect<void, E, R>): Command<Name, Command.Config.Infer<Config>, {}, E, Exclude<R, GlobalFlag.BuiltInSettingContext>>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Command.ts#L451)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Command.ts#L498)
 
 Since v4.0.0

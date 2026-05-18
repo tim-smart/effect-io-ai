@@ -25,7 +25,7 @@ Channels compose in a variety of ways:
    channels, which are all concatenated together. The first channel and the
    function that makes the other channels can be composed into a channel.
 
-**Example**
+**Example** (Typing channels)
 
 ```ts
 import type { Channel } from "effect"
@@ -66,6 +66,6 @@ export interface Channel<
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L174)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L183)
 
 Since v2.0.0

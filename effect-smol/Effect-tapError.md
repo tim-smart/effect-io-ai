@@ -3,15 +3,16 @@ Module: `Effect`<br />
 
 ## Effect.tapError
 
-The `tapError` function executes an effectful operation to inspect the
-failure of an effect without modifying it.
+Runs an effectful operation when the source effect fails, while preserving
+the original failure when the operation succeeds.
 
-This function is useful when you want to perform some side effect (like
-logging or tracking) on the failure of an effect, but without changing the
-result of the effect itself. The error remains in the effect's error channel,
-while the operation you provide can inspect or act on it.
+**Details**
 
-**Example**
+Use this for logging, metrics, or other failure-side observations. If the
+operation passed to `tapError` fails, that error is also represented in the
+returned effect's error channel.
+
+**Example** (Usage)
 
 ```ts
 import { Console, Effect } from "effect"
@@ -36,6 +37,6 @@ Effect.runFork(tapping)
 declare const tapError: { <E, X, E2, R2>(f: (e: NoInfer<E>) => Effect<X, E2, R2>): <A, R>(self: Effect<A, E, R>) => Effect<A, E | E2, R2 | R>; <A, E, R, X, E2, R2>(self: Effect<A, E, R>, f: (e: E) => Effect<X, E2, R2>): Effect<A, E | E2, R | R2>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L3531)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L3423)
 
 Since v2.0.0

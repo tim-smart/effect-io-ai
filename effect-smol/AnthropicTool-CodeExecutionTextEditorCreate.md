@@ -3,14 +3,14 @@ Module: `AnthropicTool`<br />
 
 ## AnthropicTool.CodeExecutionTextEditorCreate
 
-Text editor create command for code execution.
+Input payload for creating a file through the text editor code execution tool, optionally including initial file text.
 
 **Signature**
 
 ```ts
-declare const CodeExecutionTextEditorCreate: Schema.Struct<{ readonly type: Schema.Literal<"text_editor_code_execution">; readonly command: Schema.Literal<"create">; readonly path: Schema.String; readonly file_text: Schema.optional<Schema.NullOr<Schema.String>>; }>
+type CodeExecutionTextEditorCreate = typeof CodeExecutionTextEditorCreate.Type
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L155)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L179)
 
-Since v1.0.0
+Since v4.0.0

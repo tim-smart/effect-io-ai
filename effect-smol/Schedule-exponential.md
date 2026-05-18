@@ -7,7 +7,7 @@ A schedule that always recurs, but will wait a certain amount between
 repetitions, given by `base * factor.pow(n)`, where `n` is the number of
 repetitions so far. Returns the current duration between recurrences.
 
-**Example**
+**Example** (Retrying with exponential backoff)
 
 ```ts
 import { Console, Data, Effect, Schedule } from "effect"
@@ -54,6 +54,6 @@ const program = Effect.gen(function*() {
 declare const exponential: (base: Duration.Input, factor?: number) => Schedule<Duration.Duration>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L1962)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L1952)
 
 Since v2.0.0

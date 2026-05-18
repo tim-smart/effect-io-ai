@@ -5,7 +5,7 @@ Module: `BigDecimal`<br />
 
 Returns `true` if the first argument is less than the second, otherwise `false`.
 
-**Example**
+**Example** (Checking less-than comparisons)
 
 ```ts
 import { fromStringUnsafe, isLessThan } from "effect/BigDecimal"
@@ -31,6 +31,6 @@ assert.deepStrictEqual(
 declare const isLessThan: { (that: BigDecimal): (self: BigDecimal) => boolean; (self: BigDecimal, that: BigDecimal): boolean; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigDecimal.ts#L636)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigDecimal.ts#L646)
 
 Since v2.0.0

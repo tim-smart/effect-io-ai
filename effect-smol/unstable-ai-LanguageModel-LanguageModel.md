@@ -9,7 +9,7 @@ This provides access to language model functionality throughout your
 application, enabling text generation, streaming, and structured output
 capabilities.
 
-**Example**
+**Example** (Accessing the language model service)
 
 ```ts
 import { Effect } from "effect"
@@ -30,6 +30,6 @@ const program = Effect.gen(function*() {
 declare class LanguageModel
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/LanguageModel.ts#L106)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/LanguageModel.ts#L109)
 
 Since v4.0.0

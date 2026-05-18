@@ -10,7 +10,7 @@ Returns the number of elements added.
 ⚠️ **Warning**: When mutable=true, the input array may be modified internally.
 Only use mutable=true when you control the array lifecycle.
 
-**Example**
+**Example** (Appending arrays with optional mutation)
 
 ```ts
 import * as MutableList from "effect/MutableList"
@@ -42,6 +42,6 @@ MutableList.appendAllUnsafe(list, bigArray, true) // Very efficient
 declare const appendAllUnsafe: <A>(self: MutableList<A>, messages: ReadonlyArray<A>, mutable?: boolean) => number
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableList.ts#L509)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableList.ts#L541)
 
 Since v4.0.0

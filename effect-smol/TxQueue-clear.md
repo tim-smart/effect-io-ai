@@ -3,13 +3,14 @@ Module: `TxQueue`<br />
 
 ## TxQueue.clear
 
-Clears all elements from the queue without affecting its state.
-Returns the cleared elements, or an empty array if the queue is done with Done or interrupt.
+Removes and returns all currently buffered elements without changing the
+queue state.
 
-**Mutation behavior**: This function mutates the original TxQueue by removing
-all elements. It does not return a new TxQueue reference.
+If the queue is already done with a `Cause.Done` error, returns an empty
+array. If the queue is done for any other cause, including interruption or
+failure, that cause is propagated.
 
-**Example**
+**Example** (Clearing queues)
 
 ```ts
 import { Effect, TxQueue } from "effect"
@@ -35,6 +36,6 @@ const program = Effect.gen(function*() {
 declare const clear: <A, E>(self: TxEnqueue<A, E>) => Effect.Effect<Array<A>, ExcludeDone<E>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxQueue.ts#L1314)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxQueue.ts#L1312)
 
 Since v4.0.0

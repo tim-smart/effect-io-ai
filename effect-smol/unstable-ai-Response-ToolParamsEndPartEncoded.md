@@ -16,6 +16,6 @@ export interface ToolParamsEndPartEncoded extends BasePartEncoded<"tool-params-e
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Response.ts#L1273)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Response.ts#L1270)
 
-Since v1.0.0
+Since v4.0.0

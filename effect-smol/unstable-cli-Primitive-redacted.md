@@ -3,9 +3,12 @@ Module: `Primitive`<br />
 
 ## Primitive.redacted
 
-Creates a primitive that wraps string input in a redacted type for secure handling.
+Creates a primitive that wraps string input in `Redacted`.
 
-**Example**
+The wrapped value is hidden when formatted or inspected, while the original
+string remains available through the `Redacted` API when explicitly needed.
+
+**Example** (Parsing redacted values)
 
 ```ts
 import { Effect, Redacted } from "effect"
@@ -24,6 +27,6 @@ const parseRedacted = Effect.gen(function*() {
 declare const redacted: Primitive<Redacted.Redacted<string>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Primitive.ts#L413)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Primitive.ts#L430)
 
 Since v4.0.0

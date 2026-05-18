@@ -5,10 +5,10 @@ Module: `Schedule`<br />
 
 Ensures that the provided schedule respects a specified context type.
 
-**Example**
+**Example** (Constraining schedule service types)
 
 ```ts
-import { Schedule } from "effect"
+import { Effect, Schedule } from "effect"
 
 // Define service interfaces (type-level only)
 interface Logger {
@@ -16,7 +16,7 @@ interface Logger {
 }
 
 interface Database {
-  readonly query: (sql: string) => Promise<unknown>
+  readonly query: (sql: string) => Effect.Effect<ReadonlyArray<unknown>>
 }
 
 // Ensure schedule requires Logger service
@@ -36,6 +36,6 @@ const multiServiceSchedule = Schedule.exponential("100 millis").pipe(
 declare const satisfiesServicesType: <T>() => <Env extends T, Output = never, Input = unknown, Error = never>(self: Schedule<Output, Input, Error, Env>) => Schedule<Output, Input, Error, Env>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L3333)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L3339)
 
 Since v2.0.0

@@ -19,21 +19,6 @@ You can pass either the arity of the uncurried function or a predicate
 which determines if the function is being used in a data-first or
 data-last style.
 
-**Example**
-
-```ts
-import { dual, pipe } from "effect/Function"
-
-// Using arity to determine data-first or data-last style
-const sum = dual<
-  (that: number) => (self: number) => number,
-  (self: number, that: number) => number
->(2, (self, that) => self + that)
-
-console.log(sum(2, 3)) // 5 (data-first)
-console.log(pipe(2, sum(3))) // 5 (data-last)
-```
-
 **Example** (Using arity to determine data-first or data-last style)
 
 ```ts
@@ -85,6 +70,6 @@ console.log(pipe(2, sum(3))) // 5
 declare const dual: { <DataLast extends (...args: Array<any>) => any, DataFirst extends (...args: Array<any>) => any>(arity: Parameters<DataFirst>["length"], body: DataFirst): DataLast & DataFirst; <DataLast extends (...args: Array<any>) => any, DataFirst extends (...args: Array<any>) => any>(isDataFirst: (args: IArguments) => boolean, body: DataFirst): DataLast & DataFirst; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Function.ts#L106)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Function.ts#L138)
 
 Since v2.0.0

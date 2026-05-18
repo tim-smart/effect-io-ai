@@ -5,7 +5,7 @@ Module: `Filter`<br />
 
 Composes two filters sequentially, feeding the output of the first into the second.
 
-**Example**
+**Example** (Composing filters)
 
 ```ts
 import { Filter, Result } from "effect"
@@ -24,6 +24,6 @@ const stringToUpper = Filter.compose(stringFilter, nonEmptyUpper)
 declare const compose: { <PassL, PassR, FailR>(right: Filter<PassL, PassR, FailR>): <InputL, FailL>(left: Filter<InputL, PassL, FailL>) => Filter<InputL, PassR, FailL | FailR>; <InputL, PassL, FailL, PassR, FailR>(left: Filter<InputL, PassL, FailL>, right: Filter<PassL, PassR, FailR>): Filter<InputL, PassR, FailL | FailR>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Filter.ts#L551)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Filter.ts#L607)
 
 Since v4.0.0

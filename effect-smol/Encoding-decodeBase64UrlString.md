@@ -3,9 +3,13 @@ Module: `Encoding`<br />
 
 ## Encoding.decodeBase64UrlString
 
-Decodes a base64 (URL) encoded `string` into a UTF-8 `string`.
+Decodes a URL-safe base64 string into a UTF-8 string.
 
-**Example**
+Returns `Result.succeed` with the decoded text when decoding succeeds, or
+`Result.fail` with an `EncodingError` when the input is not valid URL-safe
+base64.
+
+**Example** (Decoding URL-safe Base64 strings)
 
 ```ts
 import { Encoding, Result } from "effect"
@@ -22,6 +26,6 @@ if (Result.isSuccess(result)) {
 declare const decodeBase64UrlString: (str: string) => Result.Result<string, EncodingError>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Encoding.ts#L248)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Encoding.ts#L288)
 
 Since v4.0.0

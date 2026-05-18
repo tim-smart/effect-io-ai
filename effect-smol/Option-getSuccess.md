@@ -5,14 +5,14 @@ Module: `Option`<br />
 
 Converts a `Result` into an `Option`, keeping only the success value.
 
-**When to use**
+**When to Use**
 
-- Discarding the error channel when you only care about success
+- Discarding the failure channel when you only care about success
 
-**Behavior**
+**Details**
 
-- `Ok` → `Some` with the success value
-- `Err` → `None` (error is discarded)
+- `Success` becomes `Some` with the success value
+- `Failure` becomes `None` and the failure value is discarded
 
 **Example** (Extracting the success side)
 
@@ -36,6 +36,6 @@ console.log(Option.getSuccess(Result.fail("err")))
 declare const getSuccess: <A, E>(self: Result<A, E>) => Option<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L600)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L578)
 
 Since v2.0.0

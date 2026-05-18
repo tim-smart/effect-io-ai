@@ -11,7 +11,7 @@ This API replaces the following from Effect 3.x:
 
 - `Stream.fromChunks`
 
-**Example**
+**Example** (Creating a stream from an arbitrary number of arrays)
 
 ```ts
 import { Console, Effect, Stream } from "effect"
@@ -32,6 +32,6 @@ Effect.runPromise(program)
 declare const fromArrays: <Arr extends ReadonlyArray<ReadonlyArray<any>>>(...arrays: Arr) => Stream<Arr[number][number]>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L1230)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L1295)
 
 Since v4.0.0

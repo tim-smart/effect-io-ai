@@ -11,7 +11,7 @@ This API replaces the following from Effect 3.x:
 
 - `Stream.repeatEffect`
 
-**Example**
+**Example** (Repeating an effect forever)
 
 ```ts
 import { Console, Effect, Random, Stream } from "effect"
@@ -34,6 +34,6 @@ Effect.runPromise(program)
 declare const fromEffectRepeat: <A, E, R>(effect: Effect.Effect<A, E, R>) => Stream<A, Pull.ExcludeDone<E>, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L481)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L521)
 
 Since v4.0.0

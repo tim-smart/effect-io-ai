@@ -5,7 +5,7 @@ Module: `TxPriorityQueue`<br />
 
 Inserts all elements from an iterable into the queue.
 
-**Example**
+**Example** (Offering multiple values)
 
 ```ts
 import { Effect, Order, TxPriorityQueue } from "effect"
@@ -24,6 +24,6 @@ const program = Effect.gen(function*() {
 declare const offerAll: { <A>(values: Iterable<A>): (self: TxPriorityQueue<A>) => Effect.Effect<void>; <A>(self: TxPriorityQueue<A>, values: Iterable<A>): Effect.Effect<void>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxPriorityQueue.ts#L318)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxPriorityQueue.ts#L329)
 
 Since v4.0.0

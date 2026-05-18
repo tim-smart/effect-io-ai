@@ -12,10 +12,7 @@ to specify conditions for handling different cases. Once the matcher is
 created, you can use pattern-matching functions like `when` to define
 how different values should be processed.
 
-**Example**
-
-```ts
-(Matching Numbers and Strings)
+**Example** (Matching Numbers and Strings)
 
 ```ts
 import { Match } from "effect"
@@ -39,7 +36,6 @@ console.log(match(0))
 console.log(match("hello"))
 // Output: "string: hello"
 ```
-```
 
 **See**
 
@@ -51,6 +47,6 @@ console.log(match("hello"))
 declare const type: <I>() => Matcher<I, Types.Without<never>, I, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L290)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L273)
 
 Since v4.0.0

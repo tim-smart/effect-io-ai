@@ -6,7 +6,7 @@ Module: `Stream`<br />
 Runs the provided stream in the background while this stream runs, interrupting it
 when this stream completes and failing if the background stream fails or defects.
 
-**Example**
+**Example** (Draining a stream in the background)
 
 ```ts
 import { Console, Effect, Stream } from "effect"
@@ -33,6 +33,6 @@ Effect.runPromise(program)
 declare const drainFork: { <A2, E2, R2>(that: Stream<A2, E2, R2>): <A, E, R>(self: Stream<A, E, R>) => Stream<A, E2 | E, R2 | R>; <A, E, R, A2, E2, R2>(self: Stream<A, E, R>, that: Stream<A2, E2, R2>): Stream<A, E | E2, R | R2>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L2559)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L2675)
 
 Since v2.0.0

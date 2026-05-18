@@ -5,7 +5,7 @@ Module: `Boolean`<br />
 
 An `Equivalence` instance for booleans using strict equality (`===`).
 
-**Example**
+**Example** (Comparing booleans for equivalence)
 
 ```ts
 import { Boolean } from "effect"
@@ -20,6 +20,6 @@ console.log(Boolean.Equivalence(true, false)) // false
 declare const Equivalence: Equ.Equivalence<boolean>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Boolean.ts#L120)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Boolean.ts#L125)
 
 Since v4.0.0

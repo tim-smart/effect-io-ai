@@ -7,7 +7,7 @@ Error indicating content policy violation.
 
 Content policy errors are never retryable without content changes.
 
-**Example**
+**Example** (Creating a content policy error)
 
 ```ts
 import { AiError } from "effect/unstable/ai"
@@ -27,6 +27,6 @@ console.log(policyError.message)
 declare class ContentPolicyError
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AiError.ts#L548)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AiError.ts#L569)
 
-Since v1.0.0
+Since v4.0.0

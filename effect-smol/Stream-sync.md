@@ -7,7 +7,7 @@ Creates a stream that synchronously evaluates a function and emits the result as
 
 The function is evaluated each time the stream is run.
 
-**Example**
+**Example** (Evaluating a value synchronously)
 
 ```ts
 import { Console, Effect, Stream } from "effect"
@@ -27,6 +27,6 @@ Effect.runPromise(program)
 declare const sync: <A>(evaluate: LazyArg<A>) => Stream<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L858)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L910)
 
 Since v2.0.0

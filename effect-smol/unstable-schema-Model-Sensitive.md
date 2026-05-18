@@ -3,15 +3,21 @@ Module: `Model`<br />
 
 ## Model.Sensitive
 
-A field that represents a sensitive value that should not be exposed in the
-JSON variants.
+Variant field type for a sensitive value that is available to database variants
+and omitted from all JSON variants.
 
 **Signature**
 
 ```ts
-declare const Sensitive: <S extends Schema.Top>(schema: S) => Sensitive<S>
+export interface Sensitive<S extends Schema.Top> extends
+  VariantSchema.Field<{
+    readonly select: S
+    readonly insert: S
+    readonly update: S
+  }>
+{}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Model.ts#L226)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Model.ts#L253)
 
 Since v4.0.0

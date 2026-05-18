@@ -9,7 +9,7 @@ A TypeClass defines operations that can be performed on any type constructor
 that matches the given TypeLambda. This enables writing generic code that
 works across different container types like Array, Option, Effect, etc.
 
-**Example**
+**Example** (Defining higher-kinded type classes)
 
 ```ts
 import type { HKT } from "effect"
@@ -39,6 +39,6 @@ export interface TypeClass<F extends TypeLambda> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HKT.ts#L94)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HKT.ts#L108)
 
 Since v2.0.0

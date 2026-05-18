@@ -3,7 +3,12 @@ Module: `Graph`<br />
 
 ## Graph.AstarConfig
 
-Configuration for A* pathfinding algorithm.
+Configuration for finding a shortest path with the A* algorithm.
+
+**Details**
+
+Specifies the source and target node indices, an edge-cost function, and a
+heuristic that estimates the remaining cost from a node to the target.
 
 **Signature**
 
@@ -16,6 +21,6 @@ export interface AstarConfig<E, N> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Graph.ts#L3038)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Graph.ts#L3187)
 
 Since v4.0.0

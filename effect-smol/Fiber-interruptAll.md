@@ -6,7 +6,7 @@ Module: `Fiber`<br />
 Interrupts all fibers in the provided iterable, causing them to stop executing
 and clean up any acquired resources.
 
-**Example**
+**Example** (Interrupting multiple fibers)
 
 ```ts
 import { Console, Effect, Fiber } from "effect"
@@ -51,6 +51,6 @@ const program = Effect.gen(function*() {
 declare const interruptAll: <A extends Iterable<Fiber<any, any>>>(fibers: A) => Effect<void>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Fiber.ts#L377)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Fiber.ts#L393)
 
 Since v2.0.0

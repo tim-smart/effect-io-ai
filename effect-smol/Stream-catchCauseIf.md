@@ -12,7 +12,7 @@ This API replaces the following from Effect 3.x:
 
 - `Stream.catchSomeCause`
 
-**Example**
+**Example** (Catching matching causes)
 
 ```ts
 import { Cause, Console, Effect, Stream } from "effect"
@@ -39,6 +39,6 @@ Effect.runPromise(program)
 declare const catchCauseIf: { <E, A2, E2, R2>(predicate: Predicate<Cause.Cause<E>>, f: (cause: Cause.Cause<E>) => Stream<A2, E2, R2>): <A, R>(self: Stream<A, E, R>) => Stream<A | A2, E | E2, R2 | R>; <A, E, R, A2, E2, R2>(self: Stream<A, E, R>, predicate: Predicate<Cause.Cause<E>>, f: (cause: Cause.Cause<E>) => Stream<A2, E2, R2>): Stream<A | A2, E | E2, R | R2>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L5494)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L5692)
 
 Since v4.0.0

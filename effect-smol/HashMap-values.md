@@ -5,7 +5,7 @@ Module: `HashMap`<br />
 
 Returns an `IterableIterator` of the values within the `HashMap`.
 
-**Example**
+**Example** (Iterating values)
 
 ```ts
 import * as HashMap from "effect/HashMap"
@@ -21,6 +21,6 @@ console.log(values.sort()) // [1, 2, 3]
 declare const values: <K, V>(self: HashMap<K, V>) => IterableIterator<V>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashMap.ts#L526)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashMap.ts#L622)
 
 Since v2.0.0

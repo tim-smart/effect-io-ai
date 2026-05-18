@@ -13,4 +13,4 @@ export * as SqliteClient from "./SqliteClient.ts"
 
 [Source](https://github.com/Effect-TS/effect/tree/main/packages/sql/sqlite-bun/src/index.ts#L10)
 
-Since v1.0.0
+Since v4.0.0

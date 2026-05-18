@@ -5,7 +5,7 @@ Module: `HashMap`<br />
 
 This type-level utility extracts the entry type `[K, V]` from a `HashMap<K, V>` type.
 
-**Example**
+**Example** (Extracting entry types)
 
 ```ts
 import * as HashMap from "effect/HashMap"
@@ -24,9 +24,9 @@ const processEntry = ([productId, product]: CatalogEntry) => {
   return `${productId}: $${product.price} (${product.category})`
 }
 
-// Convert to entries and process
-const descriptions = HashMap.toEntries(catalog).map(processEntry)
-console.log(descriptions) // ["laptop: $999 (electronics)", "book: $29 (education)"]
+// Convert to entries, process, and sort for deterministic output
+const descriptions = HashMap.toEntries(catalog).map(processEntry).sort()
+console.log(descriptions) // ["book: $29 (education)", "laptop: $999 (electronics)"]
 ```
 
 **Signature**
@@ -35,6 +35,6 @@ console.log(descriptions) // ["laptop: $999 (electronics)", "book: $29 (educatio
 type Entry<T> = [Key<T>, Value<T>]
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashMap.ts#L188)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashMap.ts#L267)
 
 Since v3.9.0

@@ -14,6 +14,6 @@ Applies the specified Anthropic GenAI telemetry attributes to the provided
 declare const addGenAIAnnotations: { (options: AnthropicTelemetryAttributeOptions): (span: Span) => void; (span: Span, options: AnthropicTelemetryAttributeOptions): void; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTelemetry.ts#L107)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTelemetry.ts#L109)
 
-Since v1.0.0
+Since v4.0.0

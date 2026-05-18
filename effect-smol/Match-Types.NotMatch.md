@@ -9,7 +9,7 @@ This utility type determines what type remains after a `Match.not` pattern
 excludes certain values. It's the complement of `WhenMatch`, calculating
 what's left after removing the matched portion.
 
-**Example**
+**Example** (Computing unmatched types)
 
 ```ts
 import type { Match } from "effect"
@@ -31,6 +31,6 @@ type NotSpecificValue = Match.Types.NotMatch<"a" | "b" | "c", "a">
 type NotMatch<R, P> = Exclude<R, ExtractMatch<R, PForNotMatch<P>>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L1949)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L1928)
 
 Since v4.0.0

@@ -10,7 +10,7 @@ as the floating point representation may be unexpected.
 
 Throws a `RangeError` if the number is not finite (`NaN`, `+Infinity` or `-Infinity`).
 
-**Example**
+**Example** (Creating decimals from finite numbers)
 
 ```ts
 import { fromNumberUnsafe, make } from "effect/BigDecimal"
@@ -26,6 +26,6 @@ assert.deepStrictEqual(fromNumberUnsafe(123.456), make(123456n, 3))
 declare const fromNumberUnsafe: (n: number) => BigDecimal
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigDecimal.ts#L1084)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigDecimal.ts#L1110)
 
 Since v4.0.0

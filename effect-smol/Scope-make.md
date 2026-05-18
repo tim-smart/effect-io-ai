@@ -5,7 +5,7 @@ Module: `Scope`<br />
 
 Creates a new `Scope` with the specified finalizer strategy.
 
-**Example**
+**Example** (Creating a scope)
 
 ```ts
 import { Console, Effect, Exit, Scope } from "effect"
@@ -30,6 +30,6 @@ const program = Effect.gen(function*() {
 declare const make: (finalizerStrategy?: "sequential" | "parallel") => Effect<Closeable>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Scope.ts#L237)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Scope.ts#L248)
 
 Since v2.0.0

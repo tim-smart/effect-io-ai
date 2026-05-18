@@ -5,7 +5,7 @@ Module: `Chunk`<br />
 
 Returns the first element of this chunk if it exists.
 
-**Example**
+**Example** (Getting the first element)
 
 ```ts
 import { Chunk } from "effect"
@@ -20,6 +20,6 @@ console.log(Chunk.head(Chunk.make(1, 2, 3))) // { _tag: "Some", value: 1 }
 declare const head: <A>(self: Chunk<A>) => Option<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L1380)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L1403)
 
 Since v2.0.0

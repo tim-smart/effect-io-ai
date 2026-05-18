@@ -14,7 +14,7 @@ declare const layer: <R, E>(layer_: Layer.Layer<R, E>, options?: { readonly memo
 
 [Source](https://github.com/Effect-TS/effect/tree/main/packages/vitest/src/index.ts#L216)
 
-Since v1.0.0
+Since v4.0.0
 
 ```ts
 import { expect, layer } from "@effect/vitest"

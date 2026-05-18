@@ -3,15 +3,12 @@ Module: `SchemaTransformation`<br />
 
 ## SchemaTransformation.durationFromMillis
 
-Decodes a `number` (milliseconds) into a `Duration` and encodes a
-`Duration` back to `number` milliseconds.
+Decodes a `number` of milliseconds into a `Duration` and encodes a `Duration`
+back to milliseconds.
 
-When to use this:
-- Working with millisecond-precision timestamps (e.g. `Date.now()`).
-
-Behavior:
-- Decode: creates a Duration from milliseconds. Always succeeds.
-- Encode: converts a Duration to milliseconds. Always succeeds.
+Use this for timeouts, delays, elapsed intervals, or other duration values
+stored as millisecond counts. Decode creates a duration from the number, and
+encode returns the duration length in milliseconds.
 
 **Example** (Duration from milliseconds)
 
@@ -32,6 +29,6 @@ See also:
 declare const durationFromMillis: Transformation<Duration.Duration, number, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L1024)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L1018)
 
 Since v4.0.0

@@ -5,7 +5,7 @@ Module: `Boolean`<br />
 
 Combines two boolean using OR: `self || that`.
 
-**Example**
+**Example** (Combining booleans with OR)
 
 ```ts
 import { or } from "effect/Boolean"
@@ -23,6 +23,6 @@ assert.deepStrictEqual(or(false, false), false)
 declare const or: { (that: boolean): (self: boolean) => boolean; (self: boolean, that: boolean): boolean; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Boolean.ts#L200)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Boolean.ts#L209)
 
 Since v2.0.0

@@ -5,7 +5,7 @@ Module: `HelpDoc`<br />
 
 Documentation for a subcommand
 
-**Example**
+**Example** (Documenting subcommands)
 
 ```ts
 import { Option as O, Context } from "effect"
@@ -64,6 +64,6 @@ export interface SubcommandDoc {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HelpDoc.ts#L208)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HelpDoc.ts#L232)
 
 Since v4.0.0

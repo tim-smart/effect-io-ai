@@ -8,7 +8,7 @@ Outputs an error message to the console.
 This function logs messages at the error level, typically displayed
 in red or with an error icon in most console implementations.
 
-**Example**
+**Example** (Writing error messages)
 
 ```ts
 import { Console, Effect } from "effect"
@@ -28,6 +28,6 @@ const program = Effect.gen(function*() {
 declare const error: (...args: ReadonlyArray<any>) => Effect.Effect<void>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Console.ts#L364)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Console.ts#L380)
 
 Since v2.0.0

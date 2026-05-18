@@ -5,7 +5,7 @@ Module: `Boolean`<br />
 
 Tests if a value is a `boolean`.
 
-**Example**
+**Example** (Checking for booleans)
 
 ```ts
 import { isBoolean } from "effect/Boolean"
@@ -21,6 +21,6 @@ assert.deepStrictEqual(isBoolean("true"), false)
 declare const isBoolean: (input: unknown) => input is boolean
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Boolean.ts#L51)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Boolean.ts#L53)
 
 Since v2.0.0

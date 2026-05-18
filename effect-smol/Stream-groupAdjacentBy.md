@@ -1,0 +1,20 @@
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.groupAdjacentBy
+
+Groups consecutive elements that have equal keys into non-empty arrays.
+
+The key is computed with `f`; adjacent elements whose keys are equal by
+`Equal.equals` are emitted as one `[key, group]`. Later non-adjacent runs
+with the same key are emitted separately.
+
+**Signature**
+
+```ts
+declare const groupAdjacentBy: { <A, K>(f: (a: NoInfer<A>) => K): <E, R>(self: Stream<A, E, R>) => Stream<readonly [K, Arr.NonEmptyArray<A>], E, R>; <A, E, R, K>(self: Stream<A, E, R>, f: (a: NoInfer<A>) => K): Stream<readonly [K, Arr.NonEmptyArray<A>], E, R>; }
+```
+
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L8206)
+
+Since v2.0.0

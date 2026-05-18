@@ -7,7 +7,7 @@ Checks if a `DateTime` is in the future compared to the current time.
 
 This is a synchronous version that uses `Date.now()` directly.
 
-**Example**
+**Example** (Checking future DateTime values unsafely)
 
 ```ts
 import { DateTime } from "effect"
@@ -25,6 +25,6 @@ console.log(DateTime.isFutureUnsafe(now)) // false
 declare const isFutureUnsafe: (self: DateTime) => boolean
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L1151)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L1363)
 
 Since v3.6.0

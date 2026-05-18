@@ -9,7 +9,7 @@ This is the base combinator for creating parameters that accept multiple values.
 The min and max parameters are optional - if not provided, the parameter can be
 specified any number of times (0 to infinity).
 
-**Example**
+**Example** (Accepting multiple values)
 
 ```ts
 import * as Param from "effect/unstable/cli/Param"
@@ -28,7 +28,7 @@ const inputs = Param.variadic(
 // Variadic with both min and max
 const limited = Param.variadic(Param.string(Param.flagKind, "item"), {
   min: 2, // at least 2 times
-  max: 2 // at most 5 times
+  max: 2 // at most 2 times
 })
 ```
 
@@ -38,6 +38,6 @@ const limited = Param.variadic(Param.string(Param.flagKind, "item"), {
 declare const variadic: <Kind extends ParamKind, A>(self: Param<Kind, A>, options?: VariadicParamOptions | undefined) => Param<Kind, ReadonlyArray<A>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Param.ts#L1302)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Param.ts#L1391)
 
 Since v4.0.0

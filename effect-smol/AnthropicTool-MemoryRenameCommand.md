@@ -3,14 +3,14 @@ Module: `AnthropicTool`<br />
 
 ## AnthropicTool.MemoryRenameCommand
 
-Rename or move a file or directory.
+Memory tool command payload for renaming or moving a file or directory.
 
 **Signature**
 
 ```ts
-declare const MemoryRenameCommand: Schema.Struct<{ readonly command: Schema.Literal<"rename">; readonly old_path: Schema.String; readonly new_path: Schema.String; }>
+type MemoryRenameCommand = typeof MemoryRenameCommand.Type
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L907)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L987)
 
-Since v1.0.0
+Since v4.0.0

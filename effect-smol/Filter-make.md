@@ -8,7 +8,7 @@ Creates a Filter from a function that returns either a `pass` or `fail` value.
 This is the primary constructor for creating custom filters. The function
 should return either `Result.succeed(value)` or `Result.fail(value)`.
 
-**Example**
+**Example** (Creating custom filters)
 
 ```ts
 import { Filter, Result } from "effect"
@@ -28,6 +28,6 @@ const uppercaseFilter = Filter.make((s: string) =>
 declare const make: <Input, Pass, Fail>(f: (input: Input) => Result.Result<Pass, Fail>) => Filter<Input, Pass, Fail>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Filter.ts#L102)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Filter.ts#L139)
 
 Since v4.0.0

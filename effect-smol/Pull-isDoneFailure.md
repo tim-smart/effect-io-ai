@@ -11,6 +11,6 @@ Checks if a Cause failure is a done error.
 declare const isDoneFailure: <E>(failure: Cause.Reason<E>) => failure is Cause.Fail<E & Cause.Done<any>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Pull.ts#L98)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Pull.ts#L137)
 
 Since v4.0.0

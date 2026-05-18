@@ -8,7 +8,7 @@ Matches values of type `string`.
 This predicate refines unknown values to strings, allowing pattern matching
 on string types. It's commonly used in type-based matchers to handle string cases.
 
-**Example**
+**Example** (Matching string values)
 
 ```ts
 import { Match } from "effect"
@@ -31,6 +31,6 @@ console.log(processValue(true)) // "Boolean: yes"
 declare const string: Predicate.Refinement<unknown, string>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L1227)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L1220)
 
 Since v4.0.0

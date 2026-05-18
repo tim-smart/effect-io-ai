@@ -5,7 +5,7 @@ Module: `String`<br />
 
 Converts the string to uppercase according to the specified locale.
 
-**Example**
+**Example** (Uppercasing strings by locale)
 
 ```ts
 import { pipe, String } from "effect"
@@ -21,6 +21,6 @@ assert.deepStrictEqual(pipe(str, String.toLocaleUpperCase("lt-LT")), "I")
 declare const toLocaleUpperCase: (locale?: string | Array<string>) => (self: string) => string
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L818)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L867)
 
 Since v2.0.0
