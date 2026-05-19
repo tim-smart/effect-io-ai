@@ -28,4 +28,4 @@ declare const done: { <A, E>(result: Result<A, E>): (self: TxDeferred<A, E>) => 
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxDeferred.ts#L189)
 
-Since v4.0.0
+Since v2.0.0

@@ -8,12 +8,6 @@ Creates a `Semaphore` initialized with the specified total number of permits.
 Use the returned semaphore to limit concurrency with `withPermit` or
 `withPermits`, or to manually `take` and `release` permits.
 
-**Previously Known As**
-
-This API replaces the following from Effect 3.x:
-
-- `Effect.makeSemaphore`
-
 **Example** (Creating a semaphore)
 
 ```ts
@@ -42,6 +36,6 @@ const program = Effect.gen(function*() {
 declare const make: (permits: number) => Effect.Effect<Semaphore>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Semaphore.ts#L307)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Semaphore.ts#L295)
 
-Since v2.0.0
+Since v4.0.0

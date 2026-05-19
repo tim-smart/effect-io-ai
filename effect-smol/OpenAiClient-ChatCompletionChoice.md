@@ -11,6 +11,6 @@ Decoded choice object returned by chat completion responses and chunks.
 type ChatCompletionChoice = typeof ChatCompletionChoice.Type
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/OpenAiClient.ts#L1092)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/OpenAiClient.ts#L1123)
 
 Since v4.0.0

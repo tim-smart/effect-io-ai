@@ -23,6 +23,6 @@ assert.equal(Redacted.value(API_KEY), "1234567890")
 declare const value: <T>(self: Redacted<T>) => T
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Redacted.ts#L202)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Redacted.ts#L201)
 
 Since v3.3.0

@@ -19,6 +19,6 @@ export interface Variance<in out A, in out E> {
   }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Deferred.ts#L159)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Deferred.ts#L158)
 
 Since v2.0.0

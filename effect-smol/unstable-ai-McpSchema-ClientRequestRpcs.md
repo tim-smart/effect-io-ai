@@ -15,6 +15,6 @@ handlers.
 declare class ClientRequestRpcs
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L2128)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L2131)
 
 Since v4.0.0

@@ -11,6 +11,6 @@ Re-exports all named exports from the "./NodeClusterHttp.ts" module as `NodeClus
 export * as NodeClusterHttp from "./NodeClusterHttp.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L22)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L55)
 
 Since v4.0.0

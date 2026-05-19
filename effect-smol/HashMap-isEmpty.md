@@ -8,7 +8,7 @@ Checks whether the `HashMap` contains no entries.
 **Example** (Checking for empty HashMaps)
 
 ```ts
-import * as HashMap from "effect/HashMap"
+import { HashMap } from "effect"
 
 const emptyMap = HashMap.empty<string, number>()
 const nonEmptyMap = HashMap.make(["a", 1])
@@ -23,6 +23,6 @@ console.log(HashMap.isEmpty(nonEmptyMap)) // false
 declare const isEmpty: <K, V>(self: HashMap<K, V>) => boolean
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashMap.ts#L372)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashMap.ts#L370)
 
 Since v2.0.0

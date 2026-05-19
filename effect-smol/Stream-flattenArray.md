@@ -5,12 +5,6 @@ Module: `Stream`<br />
 
 Flattens a stream of non-empty arrays into a stream of elements.
 
-**Previously Known As**
-
-This API replaces the following from Effect 3.x:
-
-- `Stream.flattenChunks`
-
 **Example** (Flattening a stream of non-empty arrays into a stream of elements)
 
 ```ts
@@ -33,6 +27,6 @@ Effect.runPromise(program)
 declare const flattenArray: <A, E, R>(self: Stream<Arr.NonEmptyReadonlyArray<A>, E, R>) => Stream<A, E, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L2622)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L2548)
 
 Since v4.0.0

@@ -23,4 +23,4 @@ declare const fromChunk: <A>(chunk: Chunk.Chunk<A>) => Channel<A>
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L715)
 
-Since v2.0.0
+Since v4.0.0

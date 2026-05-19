@@ -11,6 +11,6 @@ Decoded successful chat completion response body returned by `createResponse`.
 type CreateResponse200 = ChatCompletionResponse
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/OpenAiClient.ts#L982)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/OpenAiClient.ts#L1009)
 
 Since v4.0.0

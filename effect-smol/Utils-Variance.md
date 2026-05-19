@@ -23,8 +23,7 @@ Behavior:
 **Example** (Declaring variance for a TypeLambda)
 
 ```ts
-import type { Utils } from "effect"
-import type * as Option from "effect/Option"
+import type { Option, Utils } from "effect"
 
 declare const variance: Utils.Variance<
   Option.OptionTypeLambda,
@@ -49,6 +48,6 @@ export interface Variance<in out F extends TypeLambda, in R, out O, out E> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Utils.ts#L176)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Utils.ts#L175)
 
 Since v2.0.0

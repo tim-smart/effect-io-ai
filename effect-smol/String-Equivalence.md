@@ -22,4 +22,4 @@ declare const Equivalence: Equ.Equivalence<string>
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L79)
 
-Since v4.0.0
+Since v2.0.0

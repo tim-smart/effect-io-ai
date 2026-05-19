@@ -11,6 +11,6 @@ Layer that provides a newly constructed `HttpRouter`.
 declare const layer: Layer.Layer<HttpRouter, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpRouter.ts#L536)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpRouter.ts#L539)
 
 Since v4.0.0

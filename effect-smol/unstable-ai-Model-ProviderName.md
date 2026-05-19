@@ -15,6 +15,6 @@ Effect program.
 declare class ProviderName
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Model.ts#L87)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Model.ts#L83)
 
 Since v4.0.0

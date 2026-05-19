@@ -17,6 +17,6 @@ Re-exports all named exports from the "./Cause.ts" module as `Cause`.
 export * as Cause from "./Cause.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L247)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L282)
 
 Since v2.0.0

@@ -28,6 +28,6 @@ console.log(DateTime.zoneToString(tokyoZone)) // "Asia/Tokyo"
 declare const zoneMakeNamedUnsafe: (zoneId: string) => TimeZone.Named
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L927)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L925)
 
-Since v3.6.0
+Since v4.0.0

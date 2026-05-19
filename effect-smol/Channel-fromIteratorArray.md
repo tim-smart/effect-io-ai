@@ -53,4 +53,4 @@ declare const fromIteratorArray: <A, L>(iterator: LazyArg<Iterator<A, L>>, chunk
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L763)
 
-Since v2.0.0
+Since v4.0.0

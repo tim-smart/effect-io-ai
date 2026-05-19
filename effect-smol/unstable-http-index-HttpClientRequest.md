@@ -11,6 +11,6 @@ Re-exports all named exports from the "./HttpClientRequest.ts" module as `HttpCl
 export * as HttpClientRequest from "./HttpClientRequest.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L50)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L174)
 
 Since v4.0.0

@@ -30,6 +30,6 @@ const program = Effect.gen(function*() {
 declare const filter: { <A, B extends A>(refinement: (a: A) => a is B): (self: TxChunk<A>) => Effect.Effect<void>; <A>(predicate: (a: A) => boolean): (self: TxChunk<A>) => Effect.Effect<void>; <A, B extends A>(self: TxChunk<A>, refinement: (a: A) => a is B): Effect.Effect<void>; <A>(self: TxChunk<A>, predicate: (a: A) => boolean): Effect.Effect<void>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxChunk.ts#L661)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxChunk.ts#L665)
 
 Since v4.0.0

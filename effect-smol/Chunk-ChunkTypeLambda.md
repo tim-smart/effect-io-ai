@@ -8,11 +8,10 @@ Type lambda for Chunk, used for higher-kinded type operations.
 **Example** (Applying the Chunk type lambda)
 
 ```ts
-import type { ChunkTypeLambda } from "effect/Chunk"
-import type { Kind } from "effect/HKT"
+import type { Chunk, HKT } from "effect"
 
 // Create a Chunk type using the type lambda
-type NumberChunk = Kind<ChunkTypeLambda, never, never, never, number>
+type NumberChunk = HKT.Kind<Chunk.ChunkTypeLambda, never, never, never, number>
 // Equivalent to: Chunk<number>
 ```
 
@@ -24,6 +23,6 @@ export interface ChunkTypeLambda extends TypeLambda {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L158)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L157)
 
 Since v2.0.0

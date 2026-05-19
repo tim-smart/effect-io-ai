@@ -29,7 +29,7 @@
     "since": "4.0.0",
     "category": null,
     "signature": "export * as OpenRouterClient from \"./OpenRouterClient.ts\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openrouter/src/index.ts#L15"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openrouter/src/index.ts#L37"
   },
   {
     "_tag": "Export",
@@ -45,7 +45,7 @@
     "since": "4.0.0",
     "category": null,
     "signature": "export * as OpenRouterConfig from \"./OpenRouterConfig.ts\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openrouter/src/index.ts#L20"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openrouter/src/index.ts#L60"
   },
   {
     "_tag": "Export",
@@ -61,7 +61,7 @@
     "since": "4.0.0",
     "category": null,
     "signature": "export * as OpenRouterError from \"./OpenRouterError.ts\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openrouter/src/index.ts#L30"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openrouter/src/index.ts#L70"
   },
   {
     "_tag": "Export",
@@ -77,7 +77,7 @@
     "since": "4.0.0",
     "category": null,
     "signature": "export * as OpenRouterLanguageModel from \"./OpenRouterLanguageModel.ts\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openrouter/src/index.ts#L35"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openrouter/src/index.ts#L95"
   },
   {
     "_tag": "Class",
@@ -91,7 +91,7 @@
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
-    "category": "service",
+    "category": "services",
     "signature": "declare class OpenRouterClient",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openrouter/src/OpenRouterClient.ts#L102"
   },
@@ -171,7 +171,7 @@
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
-    "category": "Models",
+    "category": "models",
     "signature": "type ChatStreamingResponseChunkData = typeof Generated.ChatStreamingResponseChunk.fields.data.Type",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openrouter/src/OpenRouterClient.ts#L90"
   },
@@ -301,7 +301,7 @@
     "since": "4.0.0",
     "category": "constructors",
     "signature": "declare const make: (args_0: { readonly model: string; readonly config?: Omit<typeof Config.Service, \"model\"> | undefined; }) => Effect.Effect<LanguageModel.Service, never, OpenRouterClient>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openrouter/src/OpenRouterLanguageModel.ts#L435"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openrouter/src/OpenRouterLanguageModel.ts#L480"
   },
   {
     "_tag": "Constant",
@@ -317,7 +317,7 @@
     "since": "4.0.0",
     "category": "configuration",
     "signature": "declare const withConfigOverride: { (overrides: typeof Config.Service): <A, E, R>(self: Effect.Effect<A, E, R>) => Effect.Effect<A, E, Exclude<R, Config>>; <A, E, R>(self: Effect.Effect<A, E, R>, overrides: typeof Config.Service): Effect.Effect<A, E, Exclude<R, Config>>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openrouter/src/OpenRouterLanguageModel.ts#L516"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openrouter/src/OpenRouterLanguageModel.ts#L561"
   },
   {
     "_tag": "Function",
@@ -333,7 +333,7 @@
     "since": "4.0.0",
     "category": "constructors",
     "signature": "declare const model: (model: string, config?: Omit<typeof Config.Service, \"model\">) => AiModel.Model<\"openai\", LanguageModel.LanguageModel, OpenRouterClient>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openrouter/src/OpenRouterLanguageModel.ts#L423"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openrouter/src/OpenRouterLanguageModel.ts#L468"
   },
   {
     "_tag": "Function",
@@ -349,7 +349,7 @@
     "since": "4.0.0",
     "category": "layers",
     "signature": "declare const layer: (options: { readonly model: string; readonly config?: Omit<typeof Config.Service, \"model\"> | undefined; }) => Layer.Layer<LanguageModel.LanguageModel, never, OpenRouterClient>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openrouter/src/OpenRouterLanguageModel.ts#L504"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openrouter/src/OpenRouterLanguageModel.ts#L549"
   },
   {
     "_tag": "TypeAlias",

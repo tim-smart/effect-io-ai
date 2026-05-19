@@ -9,10 +9,11 @@ supplied effect.
 Use it to register routes or middleware with the router during layer
 construction.
 
+**Example** (Registering routes during layer construction)
+
 ```ts
-import { Effect } from "effect"
-import * as Layer from "effect/Layer"
-import * as HttpRouter from "effect/unstable/http/HttpRouter"
+import { Effect, Layer } from "effect"
+import { HttpRouter } from "effect/unstable/http"
 
 const MyRoute = Layer.effectDiscard(Effect.gen(function*() {
   const router = yield* HttpRouter.HttpRouter
@@ -27,6 +28,6 @@ const MyRoute = Layer.effectDiscard(Effect.gen(function*() {
 declare const use: <A, E, R>(f: (router: HttpRouter) => Effect.Effect<A, E, R>) => Layer.Layer<never, E, HttpRouter | Exclude<R, Scope.Scope>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpRouter.ts#L453)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpRouter.ts#L454)
 
 Since v4.0.0

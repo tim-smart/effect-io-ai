@@ -11,6 +11,6 @@ HTTP methods that this module treats as capable of carrying a request body.
 type WithBody = Exclude<HttpMethod, NoBody>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpMethod.ts#L58)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpMethod.ts#L57)
 
 Since v4.0.0

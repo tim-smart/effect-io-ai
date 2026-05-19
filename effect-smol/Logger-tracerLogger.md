@@ -57,6 +57,6 @@ const distributedProgram = Effect.gen(function*() {
 declare const tracerLogger: Logger<unknown, void>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Logger.ts#L1137)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Logger.ts#L1136)
 
-Since v4.0.0
+Since v2.0.0

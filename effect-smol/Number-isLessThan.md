@@ -8,12 +8,12 @@ Returns `true` if the first argument is less than the second, otherwise `false`.
 **Example** (Checking less-than comparisons)
 
 ```ts
-import { isLessThan } from "effect/Number"
+import { Number } from "effect"
 import * as assert from "node:assert"
 
-assert.deepStrictEqual(isLessThan(2, 3), true)
-assert.deepStrictEqual(isLessThan(3, 3), false)
-assert.deepStrictEqual(isLessThan(4, 3), false)
+assert.deepStrictEqual(Number.isLessThan(2, 3), true)
+assert.deepStrictEqual(Number.isLessThan(3, 3), false)
+assert.deepStrictEqual(Number.isLessThan(4, 3), false)
 ```
 
 **Signature**
@@ -24,4 +24,4 @@ declare const isLessThan: { (that: number): (self: number) => boolean; (self: nu
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Number.ts#L254)
 
-Since v2.0.0
+Since v4.0.0

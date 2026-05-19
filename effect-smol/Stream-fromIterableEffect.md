@@ -8,7 +8,7 @@ Creates a stream from an effect producing an iterable of values.
 **Example** (Creating a stream from an iterable effect)
 
 ```ts
-import { Console, Effect, Context, Stream } from "effect"
+import { Console, Context, Effect, Stream } from "effect"
 
 class UserRepo extends Context.Service<UserRepo, {
   readonly list: Effect.Effect<ReadonlyArray<string>>
@@ -40,6 +40,6 @@ Effect.runPromise(program)
 declare const fromIterableEffect: <A, E, R>(iterable: Effect.Effect<Iterable<A>, E, R>) => Stream<A, E, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L1177)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L1146)
 
 Since v2.0.0

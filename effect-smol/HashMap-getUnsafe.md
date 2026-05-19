@@ -12,8 +12,7 @@ Use `HashMap.get` for safe access that returns `Option`.
 **Example** (Unsafely looking up values)
 
 ```ts
-import * as HashMap from "effect/HashMap"
-import * as Option from "effect/Option"
+import { HashMap, Option } from "effect"
 
 const config = HashMap.make(
   ["api_url", "https://api.example.com"],
@@ -41,6 +40,6 @@ if (Option.isSome(dbUrl)) {
 declare const getUnsafe: { <K1 extends K, K>(key: K1): <V>(self: HashMap<K, V>) => V; <K1 extends K, K, V>(self: HashMap<K, V>, key: K1): V; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashMap.ts#L473)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashMap.ts#L469)
 
-Since v2.0.0
+Since v4.0.0

@@ -12,7 +12,7 @@ reading the current parameters, applying a transformation function, and then
 writing the updated parameters back to the URL. It returns a new `URL` object
 with the modified parameters, ensuring immutability.
 
-**Example**
+**Example** (Modifying query parameters)
 
 ```ts
 import { Url, UrlParams } from "effect/unstable/http"

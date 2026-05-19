@@ -29,4 +29,4 @@ declare const decodeBase64Url: (str: string) => Result.Result<Uint8Array, Encodi
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Encoding.ts#L235)
 
-Since v4.0.0
+Since v2.0.0

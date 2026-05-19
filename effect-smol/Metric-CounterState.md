@@ -70,4 +70,4 @@ export interface CounterState<in Input extends number | bigint> {
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Metric.ts#L317)
 
-Since v2.0.0
+Since v4.0.0

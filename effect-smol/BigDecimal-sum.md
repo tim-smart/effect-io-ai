@@ -8,12 +8,12 @@ Provides an addition operation on `BigDecimal`s.
 **Example** (Adding decimals)
 
 ```ts
-import { fromStringUnsafe, sum } from "effect/BigDecimal"
+import { BigDecimal } from "effect"
 import * as assert from "node:assert"
 
 assert.deepStrictEqual(
-  sum(fromStringUnsafe("2"), fromStringUnsafe("3")),
-  fromStringUnsafe("5")
+  BigDecimal.sum(BigDecimal.fromStringUnsafe("2"), BigDecimal.fromStringUnsafe("3")),
+  BigDecimal.fromStringUnsafe("5")
 )
 ```
 

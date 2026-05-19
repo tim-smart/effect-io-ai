@@ -8,12 +8,12 @@ Returns `true` if the first argument is greater than the second, otherwise `fals
 **Example** (Checking greater-than comparisons)
 
 ```ts
-import { isGreaterThan } from "effect/Number"
+import { Number } from "effect"
 import * as assert from "node:assert"
 
-assert.deepStrictEqual(isGreaterThan(2, 3), false)
-assert.deepStrictEqual(isGreaterThan(3, 3), false)
-assert.deepStrictEqual(isGreaterThan(4, 3), true)
+assert.deepStrictEqual(Number.isGreaterThan(2, 3), false)
+assert.deepStrictEqual(Number.isGreaterThan(3, 3), false)
+assert.deepStrictEqual(Number.isGreaterThan(4, 3), true)
 ```
 
 **Signature**
@@ -24,4 +24,4 @@ declare const isGreaterThan: { (that: number): (self: number) => boolean; (self:
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Number.ts#L298)
 
-Since v2.0.0
+Since v4.0.0

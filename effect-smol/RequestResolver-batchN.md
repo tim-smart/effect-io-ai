@@ -48,6 +48,6 @@ const requests = Array.from(
 declare const batchN: { (n: number): <A extends Request.Any>(self: RequestResolver<A>) => RequestResolver<A>; <A extends Request.Any>(self: RequestResolver<A>, n: number): RequestResolver<A>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RequestResolver.ts#L745)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RequestResolver.ts#L744)
 
 Since v2.0.0

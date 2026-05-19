@@ -9,7 +9,7 @@ start with `prefix`, including the entry for `prefix` itself when it exists.
 **Example** (Converting prefixed entries to an array)
 
 ```ts
-import * as Trie from "effect/Trie"
+import { Trie } from "effect"
 import * as assert from "node:assert"
 
 const trie = Trie.empty<number>().pipe(
@@ -29,6 +29,6 @@ assert.deepStrictEqual(result, [["she", 3], ["shells", 0]])
 declare const toEntriesWithPrefix: { (prefix: string): <V>(self: Trie<V>) => Array<[string, V]>; <V>(self: Trie<V>, prefix: string): Array<[string, V]>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Trie.ts#L405)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Trie.ts#L403)
 
 Since v2.0.0

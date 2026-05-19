@@ -20,6 +20,6 @@ console.log(Cause.isUnknownError("nope")) // false
 declare const isUnknownError: (u: unknown) => u is UnknownError
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L1544)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L1543)
 
 Since v4.0.0

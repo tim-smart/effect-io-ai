@@ -8,7 +8,7 @@ Creates a date parameter that parses ISO date strings.
 **Example** (Creating date parameters)
 
 ```ts
-import * as Param from "effect/unstable/cli/Param"
+import { Param } from "effect/unstable/cli"
 
 // @internal - this module is not exported publicly
 

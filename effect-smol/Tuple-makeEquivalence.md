@@ -37,4 +37,4 @@ declare const makeEquivalence: <const Elements extends ReadonlyArray<Equivalence
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tuple.ts#L563)
 
-Since v2.0.0
+Since v4.0.0

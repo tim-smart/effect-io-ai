@@ -86,4 +86,4 @@ export interface Cache<in out Key, in out A, in out E = never, out R = never> ex
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cache.ts#L131)
 
-Since v4.0.0
+Since v2.0.0

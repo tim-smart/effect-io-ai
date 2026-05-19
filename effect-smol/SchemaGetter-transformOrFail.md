@@ -17,7 +17,7 @@ Behavior:
 **Example** (Parsing with failure)
 
 ```ts
-import { SchemaGetter, SchemaIssue, Effect, Option } from "effect"
+import { Effect, Option, SchemaGetter, SchemaIssue } from "effect"
 
 const safeParseInt = SchemaGetter.transformOrFail<number, string>(
   (s) => {

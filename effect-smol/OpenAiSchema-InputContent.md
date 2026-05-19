@@ -11,6 +11,6 @@ Content block accepted in OpenAI Responses input messages.
 type InputContent = typeof InputContent.Type
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiSchema.ts#L90)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiSchema.ts#L96)
 
 Since v4.0.0

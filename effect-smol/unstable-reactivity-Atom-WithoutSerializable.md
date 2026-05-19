@@ -12,6 +12,6 @@ type WithoutSerializable<T> = T extends Writable<infer R, infer W> ? Writable<R,
   : Atom<Type<T>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Atom.ts#L132)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Atom.ts#L137)
 
 Since v4.0.0

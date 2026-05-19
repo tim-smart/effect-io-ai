@@ -11,6 +11,6 @@ Re-exports all named exports from the "./RunnerStorage.ts" module as `RunnerStor
 export * as RunnerStorage from "./RunnerStorage.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L135)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L703)
 
 Since v4.0.0

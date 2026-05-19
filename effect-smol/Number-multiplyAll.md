@@ -8,10 +8,10 @@ Takes an `Iterable` of `number`s and returns their multiplication as a single `n
 **Example** (Multiplying an iterable)
 
 ```ts
-import { multiplyAll } from "effect/Number"
+import { Number } from "effect"
 import * as assert from "node:assert"
 
-assert.deepStrictEqual(multiplyAll([2, 3, 4]), 24)
+assert.deepStrictEqual(Number.multiplyAll([2, 3, 4]), 24)
 ```
 
 **Signature**

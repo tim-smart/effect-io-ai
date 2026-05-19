@@ -11,6 +11,6 @@ Re-exports all named exports from the "./MessageStorage.ts" module as `MessageSt
 export * as MessageStorage from "./MessageStorage.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L100)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L510)
 
 Since v4.0.0

@@ -16,9 +16,9 @@ winner is chosen, that stream's later failures are propagated.
 declare const raceAll: <S extends ReadonlyArray<Stream<any, any, any>>>(...streams: S) => Stream<Success<S[number]>, Error<S[number]>, Services<S[number]>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L4157)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L4067)
 
-Since v3.7.0
+Since v3.5.0
 
 **Example** (Racing multiple streams)
 

@@ -11,7 +11,7 @@ parameter is absent; provided values are parsed normally.
 **Example** (Providing default values)
 
 ```ts
-import * as Param from "effect/unstable/cli/Param"
+import { Param } from "effect/unstable/cli"
 
 // @internal - this module is not exported publicly
 
@@ -34,6 +34,6 @@ const verbose = Param.boolean(Param.flagKind, "verbose").pipe(
 declare const withDefault: { <const B>(defaultValue: B | Effect.Effect<B, CliError.CliError, Environment>): <Kind extends ParamKind, A>(self: Param<Kind, A>) => Param<Kind, A | B>; <Kind extends ParamKind, A, const B>(self: Param<Kind, A>, defaultValue: B | Effect.Effect<B, CliError.CliError, Environment>): Param<Kind, A | B>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Param.ts#L1250)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Param.ts#L1249)
 
 Since v4.0.0

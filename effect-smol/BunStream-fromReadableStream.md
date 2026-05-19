@@ -12,6 +12,6 @@ An optimized version of `Stream.fromReadableStream` that uses the Bun
 declare const fromReadableStream: <A, E>(options: { readonly evaluate: LazyArg<ReadableStream<A>>; readonly onError: (error: unknown) => E; readonly releaseLockOnEnd?: boolean | undefined; }) => Stream.Stream<A, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunStream.ts#L45)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunStream.ts#L46)
 
 Since v4.0.0

@@ -8,7 +8,7 @@ Creates a path parameter that accepts file or directory paths.
 **Example** (Creating path parameters)
 
 ```ts
-import * as Param from "effect/unstable/cli/Param"
+import { Param } from "effect/unstable/cli"
 
 // @internal - this module is not exported publicly
 

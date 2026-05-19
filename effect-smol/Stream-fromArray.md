@@ -5,12 +5,6 @@ Module: `Stream`<br />
 
 Creates a stream from an array of values.
 
-**Previously Known As**
-
-This API replaces the following from Effect 3.x:
-
-- `Stream.fromChunk`
-
 **Example** (Creating a stream from an array of values)
 
 ```ts
@@ -32,6 +26,6 @@ Effect.runPromise(program)
 declare const fromArray: <A>(array: ReadonlyArray<A>) => Stream<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L1240)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L1197)
 
 Since v4.0.0

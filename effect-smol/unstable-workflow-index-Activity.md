@@ -11,6 +11,6 @@ Re-exports all named exports from the "./Activity.ts" module as `Activity`.
 export * as Activity from "./Activity.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L10)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L30)
 
 Since v4.0.0

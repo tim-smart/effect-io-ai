@@ -8,7 +8,7 @@ Adds a service to a given `Context`.
 **Example** (Adding a service to a context)
 
 ```ts
-import { pipe, Context } from "effect"
+import { Context, pipe } from "effect"
 import * as assert from "node:assert"
 
 const Port = Context.Service<{ PORT: number }>("Port")
@@ -33,4 +33,4 @@ declare const add: { <I, S>(key: Key<I, S>, service: Types.NoInfer<S>): <Service
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Context.ts#L625)
 
-Since v4.0.0
+Since v2.0.0

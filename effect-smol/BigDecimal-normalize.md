@@ -8,16 +8,16 @@ Normalizes a given `BigDecimal` by removing trailing zeros.
 **Example** (Normalizing trailing zeros)
 
 ```ts
-import { fromStringUnsafe, make, normalize } from "effect/BigDecimal"
+import { BigDecimal } from "effect"
 import * as assert from "node:assert"
 
 assert.deepStrictEqual(
-  normalize(fromStringUnsafe("123.00000")),
-  normalize(make(123n, 0))
+  BigDecimal.normalize(BigDecimal.fromStringUnsafe("123.00000")),
+  BigDecimal.normalize(BigDecimal.make(123n, 0))
 )
 assert.deepStrictEqual(
-  normalize(fromStringUnsafe("12300000")),
-  normalize(make(123n, -5))
+  BigDecimal.normalize(BigDecimal.fromStringUnsafe("12300000")),
+  BigDecimal.normalize(BigDecimal.make(123n, -5))
 )
 ```
 

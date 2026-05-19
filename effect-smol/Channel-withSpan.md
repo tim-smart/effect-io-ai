@@ -14,6 +14,6 @@ runs. The span is ended with the channel's exit value.
 declare const withSpan: { (name: string, options?: SpanOptions): <OutElem, OutErr, OutDone, InElem, InErr, InDone, R>(self: Channel<OutElem, InElem, OutErr, InErr, OutDone, InDone, R>) => Channel<OutElem, InElem, OutErr, InErr, OutDone, InDone, Exclude<R, ParentSpan>>; <OutElem, OutErr, OutDone, InElem, InErr, InDone, R>(self: Channel<OutElem, InElem, OutErr, InErr, OutDone, InDone, R>, name: string, options?: SpanOptions): Channel<OutElem, InElem, OutErr, InErr, OutDone, InDone, Exclude<R, ParentSpan>>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L7150)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L7144)
 
-Since v4.0.0
+Since v2.0.0

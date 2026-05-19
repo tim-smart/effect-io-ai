@@ -25,12 +25,6 @@ are encapsulated.
 The resulting effect cannot fail directly because all recoverable failures
 are represented inside the `Result` type.
 
-**Previously Known As**
-
-This API replaces the following from Effect 3.x:
-
-- `Effect.either`
-
 **Example** (Usage)
 
 ```ts
@@ -60,6 +54,6 @@ Effect.runPromise(program2).then(console.log)
 declare const result: <A, E, R>(self: Effect<A, E, R>) => Effect<Result.Result<A, E>, never, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L2104)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L2073)
 
 Since v4.0.0

@@ -10,7 +10,7 @@ For `HashSet.HashSet<A>`, `HashSet.Value<...>` resolves to `A`.
 **Example** (Extracting a HashSet value type)
 
 ```ts
-import * as HashSet from "effect/HashSet"
+import { HashSet } from "effect"
 
 const numbers = HashSet.make(1, 2, 3, 4, 5)
 
@@ -26,6 +26,6 @@ const processNumber = (n: NumberType) => n * 2
 type Value<T> = T extends HashSet<infer V> ? V : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashSet.ts#L130)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashSet.ts#L129)
 
-Since v2.0.0
+Since v4.0.0

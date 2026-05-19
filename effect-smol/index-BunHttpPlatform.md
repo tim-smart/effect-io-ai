@@ -11,6 +11,6 @@ Re-exports all named exports from the "./BunHttpPlatform.ts" module as `BunHttpP
 export * as BunHttpPlatform from "./BunHttpPlatform.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/index.ts#L37)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/index.ts#L156)
 
 Since v4.0.0

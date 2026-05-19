@@ -11,6 +11,6 @@ The contents of a text resource, which can be represented as a string.
 declare class TextResourceContents
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L849)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L852)
 
 Since v4.0.0

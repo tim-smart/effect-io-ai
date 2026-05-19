@@ -14,6 +14,6 @@ so dependent updates observe the final batched state.
 declare const batch: (f: () => void) => void
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Atom.ts#L1992)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Atom.ts#L1997)
 
 Since v4.0.0

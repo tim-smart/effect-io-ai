@@ -16,4 +16,4 @@ declare const make: <A extends PrimaryKey.PrimaryKey>(options?: { readonly baseW
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashRing.ts#L107)
 
-Since v4.0.0
+Since v3.19.0

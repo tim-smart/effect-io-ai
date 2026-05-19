@@ -11,8 +11,8 @@ time, and exit value with which the span completed.
 **Example** (Creating span statuses)
 
 ```ts
-import type { Tracer } from "effect"
 import { Exit } from "effect"
+import type { Tracer } from "effect"
 
 const startTime = 1_000_000_000n
 const endTime = 1_500_000_000n

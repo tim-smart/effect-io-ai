@@ -16,6 +16,6 @@ UTC, and fails with `InvalidValue` when parsing fails. Encode uses
 declare const dateTimeUtcFromString: Transformation<DateTime.Utc, string, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L1643)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L1673)
 
 Since v4.0.0

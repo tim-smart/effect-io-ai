@@ -14,6 +14,6 @@ replies are saved, and fail them when a request or shard is unregistered.
 declare const make: (storage: Omit<MessageStorage["Service"], "registerReplyHandler" | "unregisterReplyHandler" | "unregisterShardReplyHandlers">) => Effect.Effect<MessageStorage["Service"]>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MessageStorage.ts#L440)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MessageStorage.ts#L439)
 
 Since v4.0.0

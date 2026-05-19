@@ -8,10 +8,10 @@ A thunk that returns always `false`.
 **Example** (Returning false from a thunk)
 
 ```ts
-import { constFalse } from "effect/Function"
+import { Function } from "effect"
 import * as assert from "node:assert"
 
-assert.deepStrictEqual(constFalse(), false)
+assert.deepStrictEqual(Function.constFalse(), false)
 ```
 
 **Signature**
@@ -20,6 +20,6 @@ assert.deepStrictEqual(constFalse(), false)
 declare const constFalse: LazyArg<boolean>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Function.ts#L353)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Function.ts#L351)
 
 Since v2.0.0

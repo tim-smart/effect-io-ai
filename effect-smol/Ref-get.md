@@ -23,6 +23,6 @@ const program = Effect.gen(function*() {
 declare const get: <A>(self: Ref<A>) => Effect.Effect<A, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Ref.ts#L199)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Ref.ts#L195)
 
 Since v2.0.0

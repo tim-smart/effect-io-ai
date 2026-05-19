@@ -8,7 +8,7 @@ Returns `true` if the specified value is a `Layer`, `false` otherwise.
 **Example** (Checking whether a value is a layer)
 
 ```ts
-import { Effect, Layer, Context } from "effect"
+import { Context, Effect, Layer } from "effect"
 
 class Database extends Context.Service<Database, {
   readonly query: (sql: string) => Effect.Effect<string>

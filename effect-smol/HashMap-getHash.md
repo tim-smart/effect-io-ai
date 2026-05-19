@@ -8,8 +8,7 @@ Lookup the value for the specified key in the `HashMap` using a custom hash.
 **Example** (Looking up values with a hash)
 
 ```ts
-import { Hash } from "effect"
-import * as HashMap from "effect/HashMap"
+import { Hash, HashMap } from "effect"
 
 // Useful when implementing custom equality for complex keys
 const userMap = HashMap.make(
@@ -36,6 +35,6 @@ console.log(notFound) // Option.none()
 declare const getHash: { <K1 extends K, K>(key: K1, hash: number): <V>(self: HashMap<K, V>) => Option<V>; <K1 extends K, K, V>(self: HashMap<K, V>, key: K1, hash: number): Option<V>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashMap.ts#L432)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashMap.ts#L429)
 
 Since v2.0.0

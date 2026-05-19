@@ -8,13 +8,13 @@ Combines two boolean using OR: `self || that`.
 **Example** (Combining booleans with OR)
 
 ```ts
-import { or } from "effect/Boolean"
+import { Boolean } from "effect"
 import * as assert from "node:assert"
 
-assert.deepStrictEqual(or(true, true), true)
-assert.deepStrictEqual(or(true, false), true)
-assert.deepStrictEqual(or(false, true), true)
-assert.deepStrictEqual(or(false, false), false)
+assert.deepStrictEqual(Boolean.or(true, true), true)
+assert.deepStrictEqual(Boolean.or(true, false), true)
+assert.deepStrictEqual(Boolean.or(false, true), true)
+assert.deepStrictEqual(Boolean.or(false, false), false)
 ```
 
 **Signature**

@@ -50,6 +50,6 @@ const envelopedConsoleLogger = Logger.withConsoleLog(envelopedJsonLogger)
 declare const formatJson: Logger<unknown, string>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Logger.ts#L762)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Logger.ts#L761)
 
 Since v4.0.0

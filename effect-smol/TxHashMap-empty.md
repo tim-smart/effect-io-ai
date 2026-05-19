@@ -34,6 +34,6 @@ const program = Effect.gen(function*() {
 declare const empty: <K, V>() => Effect.Effect<TxHashMap<K, V>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashMap.ts#L272)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashMap.ts#L271)
 
 Since v2.0.0

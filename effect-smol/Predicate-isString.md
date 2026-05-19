@@ -33,6 +33,6 @@ See also: `isNumber`, `isBoolean`, `Refinement`
 declare const isString: (input: unknown) => input is string
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L545)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L543)
 
 Since v2.0.0

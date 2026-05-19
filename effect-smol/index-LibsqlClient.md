@@ -11,6 +11,6 @@ Re-exports all named exports from the "./LibsqlClient.ts" module as `LibsqlClien
 export * as LibsqlClient from "./LibsqlClient.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/sql/libsql/src/index.ts#L10)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/sql/libsql/src/index.ts#L27)
 
 Since v4.0.0

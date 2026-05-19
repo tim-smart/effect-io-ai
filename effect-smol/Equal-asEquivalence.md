@@ -34,6 +34,6 @@ console.log(result) // [1, 2, 3]
 declare const asEquivalence: <A>() => Equivalence<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Equal.ts#L524)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Equal.ts#L525)
 
-Since v2.0.0
+Since v4.0.0

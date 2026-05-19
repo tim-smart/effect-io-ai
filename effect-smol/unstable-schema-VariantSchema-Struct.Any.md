@@ -11,6 +11,6 @@ Minimal structural type for any variant schema struct.
 type Any = { readonly [TypeId]: any }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/VariantSchema.ts#L76)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/VariantSchema.ts#L75)
 
 Since v4.0.0

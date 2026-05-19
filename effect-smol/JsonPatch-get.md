@@ -29,7 +29,7 @@ yields `newValue` when applied to `oldValue`.
 **Example** (Computing object diff)
 
 ```ts
-import * as JsonPatch from "effect/JsonPatch"
+import { JsonPatch } from "effect"
 
 const oldValue = { users: [{ id: 1, name: "Alice" }], count: 1 }
 const newValue = { users: [{ id: 1, name: "Bob" }, { id: 2, name: "Charlie" }], count: 2 }
@@ -53,6 +53,6 @@ const patch = JsonPatch.get(oldValue, newValue)
 declare const get: (oldValue: Schema.Json, newValue: Schema.Json) => JsonPatch
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/JsonPatch.ts#L228)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/JsonPatch.ts#L229)
 
 Since v4.0.0

@@ -25,4 +25,4 @@ declare const size: <A>(self: TxPriorityQueue<A>) => Effect.Effect<number>
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxPriorityQueue.ts#L188)
 
-Since v4.0.0
+Since v2.0.0

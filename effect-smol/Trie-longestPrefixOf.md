@@ -9,7 +9,7 @@ that is a prefix of that `key` if it exists, `None` otherwise.
 **Example** (Finding the longest prefix)
 
 ```ts
-import * as Trie from "effect/Trie"
+import { Trie } from "effect"
 import * as assert from "node:assert"
 
 const trie = Trie.empty<number>().pipe(
@@ -34,6 +34,6 @@ if (some._tag === "Some") {
 declare const longestPrefixOf: { (key: string): <V>(self: Trie<V>) => Option<[string, V]>; <V>(self: Trie<V>, key: string): Option<[string, V]>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Trie.ts#L439)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Trie.ts#L437)
 
 Since v2.0.0

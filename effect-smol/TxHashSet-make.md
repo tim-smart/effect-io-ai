@@ -28,6 +28,6 @@ const program = Effect.gen(function*() {
 declare const make: <Values extends ReadonlyArray<any>>(...values: Values) => Effect.Effect<TxHashSet<Values[number]>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashSet.ts#L225)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashSet.ts#L224)
 
 Since v2.0.0

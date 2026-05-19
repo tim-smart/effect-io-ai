@@ -11,6 +11,6 @@ Audio provided to or from an LLM.
 declare class AudioContent
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L1119)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L1122)
 
 Since v4.0.0

@@ -86,6 +86,6 @@ const finalProgram = program.pipe(
 declare const disableRuntimeMetrics: <A, E, R>(self: Effect<A, E, R>) => Effect<A, E, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Metric.ts#L3998)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Metric.ts#L3996)
 
 Since v4.0.0

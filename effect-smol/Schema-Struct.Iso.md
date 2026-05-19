@@ -16,6 +16,6 @@ modifiers used by `Struct.Type`.
 type { [K in keyof Iso_<F, TypeOptionalKeys<F>, TypeMutableKeys<F>>]: Iso_<F, TypeOptionalKeys<F>, TypeMutableKeys<F>>[K]; } = Simplify<Iso_<F>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L2436)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L2496)
 
 Since v4.0.0

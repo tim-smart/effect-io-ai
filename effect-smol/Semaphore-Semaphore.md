@@ -97,4 +97,4 @@ export interface Semaphore {
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Semaphore.ts#L55)
 
-Since v2.0.0
+Since v4.0.0

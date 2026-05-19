@@ -14,9 +14,7 @@ indefinitely if the task takes too long.
 
 **See**
 
-- `timeoutFail` for a version that raises a custom error.
-- `timeoutFailCause` for a version that raises a custom defect.
-- `timeoutTo` for a version that allows specifying both success and timeout handlers.
+- `timeoutOrElse` for a version that allows specifying both success and timeout handlers.
 
 **Example** (Usage)
 
@@ -54,6 +52,6 @@ Effect.runPromiseExit(timedEffect).then(console.log)
 declare const timeout: { (duration: Duration.Input): <A, E, R>(self: Effect<A, E, R>) => Effect<A, E | Cause.TimeoutError, R>; <A, E, R>(self: Effect<A, E, R>, duration: Duration.Input): Effect<A, E | Cause.TimeoutError, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L4223)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L4140)
 
 Since v2.0.0

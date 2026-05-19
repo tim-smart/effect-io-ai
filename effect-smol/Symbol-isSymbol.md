@@ -8,10 +8,10 @@ Tests if a value is a `symbol`.
 **Example** (Checking for symbols)
 
 ```ts
-import { isSymbol } from "effect/Symbol"
+import { Symbol } from "effect"
 
-console.log(isSymbol(Symbol.for("a"))) // true
-console.log(isSymbol("a")) // false
+console.log(Symbol.isSymbol(globalThis.Symbol.for("a"))) // true
+console.log(Symbol.isSymbol("a")) // false
 ```
 
 **Signature**

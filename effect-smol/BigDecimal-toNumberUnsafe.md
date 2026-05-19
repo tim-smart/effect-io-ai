@@ -12,10 +12,10 @@ the decimal cannot be represented as a finite JavaScript `number`.
 **Example** (Converting decimals to numbers)
 
 ```ts
-import { fromStringUnsafe, toNumberUnsafe } from "effect/BigDecimal"
+import { BigDecimal } from "effect"
 import * as assert from "node:assert"
 
-assert.deepStrictEqual(toNumberUnsafe(fromStringUnsafe("123.456")), 123.456)
+assert.deepStrictEqual(BigDecimal.toNumberUnsafe(BigDecimal.fromStringUnsafe("123.456")), 123.456)
 ```
 
 **Signature**
@@ -26,4 +26,4 @@ declare const toNumberUnsafe: (n: BigDecimal) => number
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigDecimal.ts#L1352)
 
-Since v2.0.0
+Since v4.0.0

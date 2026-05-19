@@ -9,7 +9,7 @@ The list becomes empty after this operation. This is equivalent to takeN(list, l
 **Example** (Draining all elements)
 
 ```ts
-import * as MutableList from "effect/MutableList"
+import { MutableList } from "effect"
 
 const list = MutableList.make<string>()
 MutableList.appendAll(list, ["apple", "banana", "cherry"])
@@ -47,6 +47,6 @@ function drainAndProcess<T>(
 declare const takeAll: <A>(self: MutableList<A>) => Array<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableList.ts#L747)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableList.ts#L744)
 
 Since v4.0.0

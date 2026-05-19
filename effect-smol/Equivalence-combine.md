@@ -54,6 +54,6 @@ See also: `combineAll`, `mapInput`
 declare const combine: { <A>(that: Equivalence<A>): (self: Equivalence<A>) => Equivalence<A>; <A>(self: Equivalence<A>, that: Equivalence<A>): Equivalence<A>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Equivalence.ts#L364)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Equivalence.ts#L363)
 
 Since v2.0.0

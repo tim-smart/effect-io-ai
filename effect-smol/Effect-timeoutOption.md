@@ -16,9 +16,7 @@ source effect fails before the timeout, that failure is preserved.
 **See**
 
 - `timeout` for a version that raises a `TimeoutException`.
-- `timeoutFail` for a version that raises a custom error.
-- `timeoutFailCause` for a version that raises a custom defect.
-- `timeoutTo` for a version that allows specifying both success and timeout handlers.
+- `timeoutOrElse` for a version that allows specifying both success and timeout handlers.
 
 **Example** (Usage)
 
@@ -54,6 +52,6 @@ Effect.runPromise(timedOutEffect).then(console.log)
 declare const timeoutOption: { (duration: Duration.Input): <A, E, R>(self: Effect<A, E, R>) => Effect<Option<A>, E, R>; <A, E, R>(self: Effect<A, E, R>, duration: Duration.Input): Effect<Option<A>, E, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L4280)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L4195)
 
 Since v3.1.0

@@ -76,4 +76,4 @@ export interface GaugeState<in Input extends number | bigint> {
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Metric.ts#L618)
 
-Since v2.0.0
+Since v4.0.0

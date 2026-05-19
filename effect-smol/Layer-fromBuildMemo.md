@@ -12,7 +12,7 @@ The layer will be memoized based on the provided `MemoMap`.
 **Example** (Memoizing layer construction)
 
 ```ts
-import { Effect, Layer, Context } from "effect"
+import { Context, Effect, Layer } from "effect"
 
 class Database extends Context.Service<Database, {
   readonly query: (sql: string) => Effect.Effect<string>

@@ -30,6 +30,6 @@ See also: `isNotUndefined`, `isNullish`
 declare const isUndefined: (input: unknown) => input is undefined
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L762)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L760)
 
 Since v2.0.0

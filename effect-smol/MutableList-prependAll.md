@@ -10,7 +10,7 @@ the new head of the list.
 **Example** (Prepending multiple elements)
 
 ```ts
-import * as MutableList from "effect/MutableList"
+import { MutableList } from "effect"
 
 const list = MutableList.make<number>()
 MutableList.append(list, 4)
@@ -36,6 +36,6 @@ console.log(MutableList.takeAll(newList)) // ["h", "e", "l", "l", "o"]
 declare const prependAll: <A>(self: MutableList<A>, messages: Iterable<A>) => void
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableList.ts#L419)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableList.ts#L416)
 
 Since v4.0.0

@@ -5,12 +5,6 @@ Module: `Stream`<br />
 
 Submerges the iterables emitted by this stream into the stream's structure.
 
-**Previously Known As**
-
-This API replaces the following from Effect 3.x:
-
-- `Stream.flattenIterables`
-
 **Example** (Flattening iterable values)
 
 ```ts
@@ -32,6 +26,6 @@ Effect.runPromise(program)
 declare const flattenIterable: <A, E, R>(self: Stream<Iterable<A>, E, R>) => Stream<A, E, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L3014)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L2935)
 
 Since v4.0.0

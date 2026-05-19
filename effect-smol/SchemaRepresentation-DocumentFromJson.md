@@ -29,6 +29,6 @@ const back = Schema.decodeUnknownSync(SchemaRepresentation.DocumentFromJson)(jso
 declare const DocumentFromJson: Schema.Codec<Document, Schema.Json, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaRepresentation.ts#L1649)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaRepresentation.ts#L1653)
 
 Since v4.0.0

@@ -26,4 +26,4 @@ declare const setHeadNonEmpty: { <B>(b: B): <A>(self: NonEmptyReadonlyArray<A>) 
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L2121)
 
-Since v2.0.0
+Since v4.0.0

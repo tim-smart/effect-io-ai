@@ -22,7 +22,7 @@ Behavior:
 **Example** (Effectful validation)
 
 ```ts
-import { SchemaGetter, Effect } from "effect"
+import { Effect, SchemaGetter } from "effect"
 
 const nonNegative = SchemaGetter.checkEffect<number>((n) =>
   Effect.succeed(n >= 0 ? undefined : "must be non-negative")

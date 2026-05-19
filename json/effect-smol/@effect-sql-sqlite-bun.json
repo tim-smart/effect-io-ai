@@ -13,7 +13,7 @@
     "since": "4.0.0",
     "category": null,
     "signature": "export * as SqliteClient from \"./SqliteClient.ts\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/sqlite-bun/src/index.ts#L10"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/sqlite-bun/src/index.ts#L27"
   },
   {
     "_tag": "Export",
@@ -29,7 +29,7 @@
     "since": "4.0.0",
     "category": null,
     "signature": "export * as SqliteMigrator from \"./SqliteMigrator.ts\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/sqlite-bun/src/index.ts#L15"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/sqlite-bun/src/index.ts#L52"
   },
   {
     "_tag": "Constant",
@@ -43,7 +43,7 @@
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
-    "category": "type ids",
+    "category": "type IDs",
     "signature": "declare const TypeId: \"~@effect/sql-sqlite-bun/SqliteClient\"",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/sqlite-bun/src/SqliteClient.ts#L48"
   },
@@ -75,7 +75,7 @@
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
-    "category": "constructor",
+    "category": "constructors",
     "signature": "declare const make: (options: SqliteClientConfig) => Effect.Effect<SqliteClient, never, Scope.Scope | Reactivity.Reactivity>",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/sqlite-bun/src/SqliteClient.ts#L112"
   },
@@ -155,7 +155,7 @@
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
-    "category": "type ids",
+    "category": "type IDs",
     "signature": "type TypeId = \"~@effect/sql-sqlite-bun/SqliteClient\"",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/sqlite-bun/src/SqliteClient.ts#L56"
   },
@@ -171,7 +171,7 @@
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
-    "category": "constructor",
+    "category": "constructors",
     "signature": "declare const run: <R2 = never>(options: Migrator.MigratorOptions<R2>) => Effect.Effect<ReadonlyArray<readonly [id: number, name: string]>, Migrator.MigrationError | SqlError, Client.SqlClient | R2>",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/sqlite-bun/src/SqliteMigrator.ts#L41"
   },
@@ -187,7 +187,7 @@
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
-    "category": "constructor",
+    "category": "constructors",
     "signature": "declare const layer: <R>(options: Migrator.MigratorOptions<R>) => Layer.Layer<never, SqlError | Migrator.MigrationError, Client.SqlClient | R>",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/sqlite-bun/src/SqliteMigrator.ts#L97"
   },

@@ -28,4 +28,4 @@ type Identifier<T> = T extends Key<infer I, infer _S> ? I : never
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Context.ts#L395)
 
-Since v4.0.0
+Since v2.0.0

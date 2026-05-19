@@ -8,11 +8,11 @@ Determine if an `Iterable` is empty
 **Example** (Checking for emptiness)
 
 ```ts
-import { isEmpty } from "effect/Iterable"
+import { Iterable } from "effect"
 import * as assert from "node:assert"
 
-assert.deepStrictEqual(isEmpty([]), true)
-assert.deepStrictEqual(isEmpty([1, 2, 3]), false)
+assert.deepStrictEqual(Iterable.isEmpty([]), true)
+assert.deepStrictEqual(Iterable.isEmpty([1, 2, 3]), false)
 ```
 
 **Signature**
@@ -21,6 +21,6 @@ assert.deepStrictEqual(isEmpty([1, 2, 3]), false)
 declare const isEmpty: <A>(self: Iterable<A>) => self is Iterable<never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Iterable.ts#L404)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Iterable.ts#L401)
 
 Since v2.0.0

@@ -11,7 +11,7 @@
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
-    "category": "service",
+    "category": "services",
     "signature": "declare class AnthropicClient",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicClient.ts#L138"
   },
@@ -221,7 +221,7 @@
     "since": "4.0.0",
     "category": "constructors",
     "signature": "declare const make: (args_0: { readonly model: (string & {}) | Model; readonly config?: Omit<typeof Config.Service, \"model\"> | undefined; }) => Effect.Effect<LanguageModel.Service, never, AnthropicClient>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicLanguageModel.ts#L548"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicLanguageModel.ts#L608"
   },
   {
     "_tag": "Constant",
@@ -237,7 +237,7 @@
     "since": "4.0.0",
     "category": "configuration",
     "signature": "declare const withConfigOverride: { (overrides: typeof Config.Service): <A, E, R>(self: Effect.Effect<A, E, R>) => Effect.Effect<A, E, Exclude<R, Config>>; <A, E, R>(self: Effect.Effect<A, E, R>, overrides: typeof Config.Service): Effect.Effect<A, E, Exclude<R, Config>>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicLanguageModel.ts#L647"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicLanguageModel.ts#L707"
   },
   {
     "_tag": "Function",
@@ -253,7 +253,7 @@
     "since": "4.0.0",
     "category": "constructors",
     "signature": "declare const model: (model: (string & {}) | Model, config?: Omit<typeof Config.Service, \"model\">) => AiModel.Model<\"anthropic\", LanguageModel.LanguageModel, AnthropicClient>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicLanguageModel.ts#L536"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicLanguageModel.ts#L596"
   },
   {
     "_tag": "Function",
@@ -269,7 +269,7 @@
     "since": "4.0.0",
     "category": "layers",
     "signature": "declare const layer: (options: { readonly model: (string & {}) | Model; readonly config?: Omit<typeof Config.Service, \"model\"> | undefined; }) => Layer.Layer<LanguageModel.LanguageModel, never, AnthropicClient>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicLanguageModel.ts#L635"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicLanguageModel.ts#L695"
   },
   {
     "_tag": "TypeAlias",
@@ -301,7 +301,7 @@
     "since": "4.0.0",
     "category": "tools",
     "signature": "type AnthropicUserDefinedTool = typeof Generated.BetaTool.Encoded",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicLanguageModel.ts#L1075"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicLanguageModel.ts#L1135"
   },
   {
     "_tag": "TypeAlias",
@@ -317,7 +317,7 @@
     "since": "4.0.0",
     "category": "tools",
     "signature": "type AnthropicProviderDefinedTool = | typeof Generated.BetaBashTool_20241022.Encoded\n  | typeof Generated.BetaBashTool_20250124.Encoded\n  | typeof Generated.BetaCodeExecutionTool_20250522.Encoded\n  | typeof Generated.BetaCodeExecutionTool_20250825.Encoded\n  | typeof Generated.BetaComputerUseTool_20241022.Encoded\n  | typeof Generated.BetaComputerUseTool_20250124.Encoded\n  | typeof Generated.BetaComputerUseTool_20251124.Encoded\n  | typeof Generated.BetaMemoryTool_20250818.Encoded\n  | typeof Generated.BetaTextEditor_20241022.Encoded\n  | typeof Generated.BetaTextEditor_20250124.Encoded\n  | typeof Generated.BetaTextEditor_20250429.Encoded\n  | typeof Generated.BetaTextEditor_20250728.Encoded\n  | typeof Generated.BetaToolSearchToolBM25_20251119.Encoded\n  | typeof Generated.BetaToolSearchToolRegex_20251119.Encoded\n  | typeof Generated.BetaWebFetchTool_20250910.Encoded\n  | typeof Generated.BetaWebSearchTool_20250305.Encoded",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicLanguageModel.ts#L1086"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicLanguageModel.ts#L1146"
   },
   {
     "_tag": "Constant",
@@ -331,7 +331,7 @@
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
-    "category": "utilities",
+    "category": "utils",
     "signature": "declare const addGenAIAnnotations: { (options: AnthropicTelemetryAttributeOptions): (span: Span) => void; (span: Span, options: AnthropicTelemetryAttributeOptions): void; }",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTelemetry.ts#L109"
   },
@@ -2173,7 +2173,7 @@
     "since": "4.0.0",
     "category": null,
     "signature": "export * as AnthropicConfig from \"./AnthropicConfig.ts\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/index.ts#L20"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/index.ts#L38"
   },
   {
     "_tag": "Export",
@@ -2189,7 +2189,7 @@
     "since": "4.0.0",
     "category": null,
     "signature": "export * as AnthropicError from \"./AnthropicError.ts\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/index.ts#L30"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/index.ts#L48"
   },
   {
     "_tag": "Export",
@@ -2205,7 +2205,7 @@
     "since": "4.0.0",
     "category": null,
     "signature": "export * as AnthropicLanguageModel from \"./AnthropicLanguageModel.ts\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/index.ts#L35"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/index.ts#L79"
   },
   {
     "_tag": "Export",
@@ -2221,7 +2221,7 @@
     "since": "4.0.0",
     "category": null,
     "signature": "export * as AnthropicTelemetry from \"./AnthropicTelemetry.ts\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/index.ts#L46"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/index.ts#L90"
   },
   {
     "_tag": "Export",
@@ -2237,7 +2237,7 @@
     "since": "4.0.0",
     "category": null,
     "signature": "export * as AnthropicTool from \"./AnthropicTool.ts\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/index.ts#L56"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/index.ts#L100"
   },
   {
     "_tag": "Export",
@@ -2253,6 +2253,6 @@
     "since": "4.0.0",
     "category": null,
     "signature": "export * as Generated from \"./Generated.ts\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/index.ts#L61"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/index.ts#L105"
   }
 ]

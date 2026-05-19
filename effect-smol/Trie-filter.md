@@ -8,8 +8,7 @@ Filters entries out of a `Trie` using the specified predicate.
 **Example** (Filtering entries)
 
 ```ts
-import * as Equal from "effect/Equal"
-import * as Trie from "effect/Trie"
+import { Equal, Trie } from "effect"
 import * as assert from "node:assert"
 
 const trie = Trie.empty<number>().pipe(
@@ -40,6 +39,6 @@ assert.equal(
 declare const filter: { <A, B extends A>(f: (a: NoInfer<A>, k: string) => a is B): (self: Trie<A>) => Trie<B>; <A>(f: (a: NoInfer<A>, k: string) => boolean): (self: Trie<A>) => Trie<A>; <A, B extends A>(self: Trie<A>, f: (a: A, k: string) => a is B): Trie<B>; <A>(self: Trie<A>, f: (a: A, k: string) => boolean): Trie<A>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Trie.ts#L735)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Trie.ts#L729)
 
 Since v2.0.0

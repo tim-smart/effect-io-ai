@@ -18,6 +18,6 @@ type EncodedUnprocessedOptions<A> = {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MessageStorage.ts#L410)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MessageStorage.ts#L409)
 
 Since v4.0.0

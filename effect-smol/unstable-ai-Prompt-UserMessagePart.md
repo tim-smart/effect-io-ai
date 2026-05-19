@@ -11,6 +11,6 @@ Union type of content parts allowed in user messages.
 type UserMessagePart = TextPart | FilePart
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L1247)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L1245)
 
 Since v4.0.0

@@ -30,6 +30,6 @@ console.log(Exit.hasInterrupts(exit)) // true
 declare const interrupt: (fiberId?: number | undefined) => Exit<never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Exit.ts#L340)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Exit.ts#L339)
 
 Since v2.0.0

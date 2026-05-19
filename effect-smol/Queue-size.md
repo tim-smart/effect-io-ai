@@ -43,6 +43,6 @@ const program = Effect.gen(function*() {
 declare const size: <A, E>(self: Dequeue<A, E>) => Effect<number>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Queue.ts#L1521)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Queue.ts#L1506)
 
-Since v4.0.0
+Since v2.0.0

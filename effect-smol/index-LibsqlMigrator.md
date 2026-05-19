@@ -11,6 +11,6 @@ Re-exports all named exports from the "./LibsqlMigrator.ts" module as `LibsqlMig
 export * as LibsqlMigrator from "./LibsqlMigrator.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/sql/libsql/src/index.ts#L15)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/sql/libsql/src/index.ts#L52)
 
 Since v4.0.0

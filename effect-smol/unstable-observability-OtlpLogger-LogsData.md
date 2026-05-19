@@ -13,6 +13,6 @@ export interface LogsData {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/OtlpLogger.ts#L132)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/OtlpLogger.ts#L133)
 
 Since v4.0.0

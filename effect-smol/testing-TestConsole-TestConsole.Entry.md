@@ -9,7 +9,7 @@ Each entry contains the method name and the parameters passed to it.
 **Example** (Typing captured console entries)
 
 ```ts
-import type * as TestConsole from "effect/testing/TestConsole"
+import type { TestConsole } from "effect/testing"
 
 const entry: TestConsole.TestConsole.Entry = {
   method: "error",
@@ -29,6 +29,6 @@ export interface Entry {
   }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TestConsole.ts#L109)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TestConsole.ts#L108)
 
 Since v4.0.0

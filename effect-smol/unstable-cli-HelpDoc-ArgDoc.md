@@ -8,7 +8,7 @@ Documentation for a positional argument
 **Example** (Documenting positional arguments)
 
 ```ts
-import { Option as O, Context } from "effect"
+import { Context, Option as O } from "effect"
 import type { HelpDoc } from "effect/unstable/cli"
 
 const sourceArg: HelpDoc.ArgDoc = {

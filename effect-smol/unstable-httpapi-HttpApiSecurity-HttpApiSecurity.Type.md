@@ -11,6 +11,6 @@ Extracts the credential type produced by a security scheme.
 type Type<A> = A extends Proto<infer Out> ? Out : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiSecurity.ts#L70)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiSecurity.ts#L69)
 
 Since v4.0.0

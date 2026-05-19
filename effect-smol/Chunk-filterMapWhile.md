@@ -8,8 +8,7 @@ Transforms all elements of the chunk for as long as the specified function succe
 **Example** (Filtering and mapping while values match)
 
 ```ts
-import { Chunk } from "effect"
-import * as Result from "effect/Result"
+import { Chunk, Result } from "effect"
 
 const chunk = Chunk.make("1", "2", "hello", "3", "4")
 const result = Chunk.filterMapWhile(chunk, (s) => {
@@ -33,6 +32,6 @@ console.log(Chunk.toArray(allNumbers)) // [1, 2, 3, 4]
 declare const filterMapWhile: { <A, B, X>(f: Filter.Filter<A, B, X>): (self: Chunk<A>) => Chunk<B>; <A, B, X>(self: Chunk<A>, f: Filter.Filter<A, B, X>): Chunk<B>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L1112)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L1107)
 
 Since v2.0.0

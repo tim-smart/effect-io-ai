@@ -34,6 +34,6 @@ console.log(DateTime.formatIsoZoned(zoned)) // "2024-06-15T15:30:00.000+01:00[Eu
 declare const makeZonedUnsafe: (input: DateTime.Input, options?: { readonly timeZone?: number | string | TimeZone | undefined; readonly adjustForTimeZone?: boolean | undefined; readonly disambiguation?: Disambiguation | undefined; }) => Zoned
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L637)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L635)
 
-Since v3.6.0
+Since v4.0.0

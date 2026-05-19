@@ -19,6 +19,6 @@ type Error<A> = A extends Effect.Effect<
     never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventLog.ts#L370)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventLog.ts#L369)
 
 Since v4.0.0

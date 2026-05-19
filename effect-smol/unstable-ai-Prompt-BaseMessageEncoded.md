@@ -20,6 +20,6 @@ export interface BaseMessageEncoded<Role extends string, Options extends Provide
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L1018)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L1016)
 
 Since v4.0.0

@@ -10,20 +10,20 @@ Throws a `RangeError` if the divisor is `0`.
 **Example** (Computing remainders unsafely)
 
 ```ts
-import { fromStringUnsafe, remainderUnsafe } from "effect/BigDecimal"
+import { BigDecimal } from "effect"
 import * as assert from "node:assert"
 
 assert.deepStrictEqual(
-  remainderUnsafe(fromStringUnsafe("2"), fromStringUnsafe("2")),
-  fromStringUnsafe("0")
+  BigDecimal.remainderUnsafe(BigDecimal.fromStringUnsafe("2"), BigDecimal.fromStringUnsafe("2")),
+  BigDecimal.fromStringUnsafe("0")
 )
 assert.deepStrictEqual(
-  remainderUnsafe(fromStringUnsafe("3"), fromStringUnsafe("2")),
-  fromStringUnsafe("1")
+  BigDecimal.remainderUnsafe(BigDecimal.fromStringUnsafe("3"), BigDecimal.fromStringUnsafe("2")),
+  BigDecimal.fromStringUnsafe("1")
 )
 assert.deepStrictEqual(
-  remainderUnsafe(fromStringUnsafe("-4"), fromStringUnsafe("2")),
-  fromStringUnsafe("0")
+  BigDecimal.remainderUnsafe(BigDecimal.fromStringUnsafe("-4"), BigDecimal.fromStringUnsafe("2")),
+  BigDecimal.fromStringUnsafe("0")
 )
 ```
 
@@ -35,4 +35,4 @@ declare const remainderUnsafe: { (divisor: BigDecimal): (self: BigDecimal) => Bi
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigDecimal.ts#L1002)
 
-Since v2.0.0
+Since v4.0.0

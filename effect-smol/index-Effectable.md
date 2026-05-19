@@ -11,6 +11,6 @@ Re-exports all named exports from the "./Effectable.ts" module as `Effectable`.
 export * as Effectable from "./Effectable.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L1019)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L1312)
 
 Since v4.0.0

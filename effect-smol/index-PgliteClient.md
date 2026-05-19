@@ -11,6 +11,6 @@ Re-exports all named exports from the "./PgliteClient.ts" module as `PgliteClien
 export * as PgliteClient from "./PgliteClient.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/sql/pglite/src/index.ts#L10)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/sql/pglite/src/index.ts#L29)
 
 Since v4.0.0

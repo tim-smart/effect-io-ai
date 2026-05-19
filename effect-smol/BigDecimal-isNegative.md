@@ -8,12 +8,12 @@ Checks if a given `BigDecimal` is negative.
 **Example** (Checking negative decimals)
 
 ```ts
-import { fromStringUnsafe, isNegative } from "effect/BigDecimal"
+import { BigDecimal } from "effect"
 import * as assert from "node:assert"
 
-assert.deepStrictEqual(isNegative(fromStringUnsafe("-1")), true)
-assert.deepStrictEqual(isNegative(fromStringUnsafe("0")), false)
-assert.deepStrictEqual(isNegative(fromStringUnsafe("1")), false)
+assert.deepStrictEqual(BigDecimal.isNegative(BigDecimal.fromStringUnsafe("-1")), true)
+assert.deepStrictEqual(BigDecimal.isNegative(BigDecimal.fromStringUnsafe("0")), false)
+assert.deepStrictEqual(BigDecimal.isNegative(BigDecimal.fromStringUnsafe("1")), false)
 ```
 
 **Signature**

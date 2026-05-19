@@ -12,6 +12,6 @@ disconnects.
 declare class ConnectionHooks
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RpcClient.ts#L1366)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RpcClient.ts#L1365)
 
 Since v4.0.0

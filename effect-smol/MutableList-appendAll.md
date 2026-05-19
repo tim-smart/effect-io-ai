@@ -9,7 +9,7 @@ Returns the number of elements added.
 **Example** (Appending multiple elements)
 
 ```ts
-import * as MutableList from "effect/MutableList"
+import { MutableList } from "effect"
 
 const list = MutableList.make<number>()
 MutableList.append(list, 1)
@@ -43,6 +43,6 @@ console.log(count) // 1000
 declare const appendAll: <A>(self: MutableList<A>, messages: Iterable<A>) => number
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableList.ts#L501)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableList.ts#L498)
 
 Since v4.0.0

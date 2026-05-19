@@ -8,11 +8,11 @@ Negates the given boolean: `!self`
 **Example** (Negating booleans)
 
 ```ts
-import { not } from "effect/Boolean"
+import { Boolean } from "effect"
 import * as assert from "node:assert"
 
-assert.deepStrictEqual(not(true), false)
-assert.deepStrictEqual(not(false), true)
+assert.deepStrictEqual(Boolean.not(true), false)
+assert.deepStrictEqual(Boolean.not(false), true)
 ```
 
 **Signature**

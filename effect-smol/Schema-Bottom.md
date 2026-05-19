@@ -66,8 +66,6 @@ export interface Bottom<
   rebuild(ast: this["ast"]): this["Rebuild"]
   /**
    * Constructs a value from the make input representation.
-   *
-   * @throws {Error} The issue is contained in the error cause.
    */
   make(input: this["~type.make.in"], options?: MakeOptions): this["Type"]
   makeOption(input: this["~type.make.in"], options?: MakeOptions): Option_.Option<this["Type"]>
@@ -75,6 +73,6 @@ export interface Bottom<
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L211)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L216)
 
 Since v4.0.0

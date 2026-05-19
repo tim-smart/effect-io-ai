@@ -37,8 +37,7 @@ Effect.runPromise(program).then(console.log)
 
 **See**
 
-- `whenEffect` for a version that allows the condition to be an effect.
-- `unless` for a version that executes the effect when the condition is `false`.
+- `when` for conditional execution with a boolean condition.
 
 **Signature**
 
@@ -46,6 +45,6 @@ Effect.runPromise(program).then(console.log)
 declare const when: { <E2 = never, R2 = never>(condition: Effect<boolean, E2, R2>): <A, E, R>(self: Effect<A, E, R>) => Effect<Option<A>, E | E2, R | R2>; <A, E, R, E2 = never, R2 = never>(self: Effect<A, E, R>, condition: Effect<boolean, E2, R2>): Effect<Option<A>, E | E2, R | R2>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L4894)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L4808)
 
 Since v2.0.0

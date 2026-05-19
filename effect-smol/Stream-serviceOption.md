@@ -9,7 +9,7 @@ single element.
 **Example** (Accessing an optional service as a stream)
 
 ```ts
-import { Effect, Option, Context, Stream } from "effect"
+import { Context, Effect, Option, Stream } from "effect"
 
 class Greeter extends Context.Service<Greeter, {
   readonly greet: (name: string) => string
@@ -43,6 +43,6 @@ Effect.runPromise(program)
 declare const serviceOption: <I, S>(service: Context.Key<I, S>) => Stream<Option.Option<S>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L465)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L455)
 
 Since v4.0.0

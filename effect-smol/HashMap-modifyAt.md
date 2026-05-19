@@ -12,8 +12,7 @@ when it does not. Returning `Some(newValue)` stores the value, and returning
 **Example** (Updating values with Options)
 
 ```ts
-import * as HashMap from "effect/HashMap"
-import * as Option from "effect/Option"
+import { HashMap, Option } from "effect"
 
 const map = HashMap.make(["a", 1], ["b", 2])
 
@@ -31,6 +30,6 @@ console.log(HashMap.get(updated, "a")) // Option.some(2)
 declare const modifyAt: { <K, V>(key: K, f: HashMap.UpdateFn<V>): (self: HashMap<K, V>) => HashMap<K, V>; <K, V>(self: HashMap<K, V>, key: K, f: HashMap.UpdateFn<V>): HashMap<K, V>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashMap.ts#L860)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashMap.ts#L854)
 
 Since v2.0.0

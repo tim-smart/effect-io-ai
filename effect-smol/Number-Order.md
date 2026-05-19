@@ -8,7 +8,7 @@ An `Order` instance for `number` values.
 **Example** (Comparing numbers)
 
 ```ts
-import * as Number from "effect/Number"
+import { Number } from "effect"
 
 console.log(Number.Order(1, 2)) // -1
 console.log(Number.Order(2, 1)) // 1

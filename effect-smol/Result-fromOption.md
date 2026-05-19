@@ -34,6 +34,6 @@ console.log(none)
 declare const fromOption: { <E>(onNone: () => E): <A>(self: Option<A>) => Result<A, E>; <A, E>(self: Option<A>, onNone: () => E): Result<A, E>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L465)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L447)
 
-Since v4.0.0
+Since v2.0.0

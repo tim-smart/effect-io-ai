@@ -14,6 +14,6 @@ export interface optionalOption<S extends Schema.Top>
 {}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Model.ts#L282)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Model.ts#L280)
 
 Since v4.0.0

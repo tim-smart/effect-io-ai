@@ -11,8 +11,7 @@ This is an unsafe operation that directly modifies the queue without Effect wrap
 **Example** (Failing queues with a cause synchronously)
 
 ```ts
-import { Effect, Cause } from "effect"
-import { Queue } from "effect"
+import { Cause, Effect, Queue } from "effect"
 
 const program = Effect.gen(function*() {
   const queue = yield* Queue.bounded<number, string>(10)
@@ -33,6 +32,6 @@ const program = Effect.gen(function*() {
 declare const failCauseUnsafe: <A, E>(self: Enqueue<A, E>, cause: Cause<E>) => boolean
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Queue.ts#L871)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Queue.ts#L856)
 
 Since v4.0.0

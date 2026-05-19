@@ -14,6 +14,6 @@ additional validation before submission.
 declare const integer: (options: IntegerOptions) => Prompt<number>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L933)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L925)
 
 Since v4.0.0

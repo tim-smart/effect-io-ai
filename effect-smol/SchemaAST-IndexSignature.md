@@ -28,6 +28,6 @@ declare class IndexSignature { constructor(
   ) }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L1641)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L1650)
 
-Since v4.0.0
+Since v3.10.0

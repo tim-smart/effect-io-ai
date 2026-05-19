@@ -42,8 +42,8 @@ export interface Formatter {
    *
    * ```ts
    * import { Option as O } from "effect"
-   * import type { HelpDoc } from "effect/unstable/cli"
    * import { CliOutput } from "effect/unstable/cli"
+   * import type { HelpDoc } from "effect/unstable/cli"
    *
    * const helpDoc: HelpDoc = {
    *   usage: "myapp [options] <file>",
@@ -84,7 +84,7 @@ export interface Formatter {
    * **Example** (Formatting CLI errors)
    *
    * ```ts
-   * import * as Data from "effect/Data"
+   * import { Data } from "effect"
    * import { CliOutput } from "effect/unstable/cli"
    *
    * class InvalidOption extends Data.TaggedError("InvalidOption")<{
@@ -107,7 +107,7 @@ export interface Formatter {
    * **Example** (Formatting error sections)
    *
    * ```ts
-   * import * as Data from "effect/Data"
+   * import { Data } from "effect"
    * import { CliOutput } from "effect/unstable/cli"
    *
    * class ValidationError extends Data.TaggedError("ValidationError")<{

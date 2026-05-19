@@ -43,6 +43,6 @@ console.log(Prepend.combineAll(["a", "b", "c"]))
 declare const flip: <A>(reducer: Reducer<A>) => Reducer<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Reducer.ts#L215)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Reducer.ts#L217)
 
 Since v4.0.0

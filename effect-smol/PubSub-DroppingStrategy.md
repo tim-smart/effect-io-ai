@@ -13,8 +13,7 @@ published to the `PubSub` while they are subscribed.
 **Example** (Using a dropping strategy)
 
 ```ts
-import { Effect } from "effect"
-import * as PubSub from "effect/PubSub"
+import { Effect, PubSub } from "effect"
 
 const program = Effect.gen(function*() {
   // Create PubSub with dropping strategy
@@ -49,6 +48,6 @@ const program = Effect.gen(function*() {
 declare class DroppingStrategy<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PubSub.ts#L2435)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PubSub.ts#L2416)
 
 Since v4.0.0

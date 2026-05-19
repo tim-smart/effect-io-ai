@@ -8,9 +8,7 @@ Filters out `None` values from a `Trie` of `Options`s.
 **Example** (Compacting optional values)
 
 ```ts
-import * as Equal from "effect/Equal"
-import * as Option from "effect/Option"
-import * as Trie from "effect/Trie"
+import { Equal, Option, Trie } from "effect"
 import * as assert from "node:assert"
 
 const trie = Trie.empty<Option.Option<number>>().pipe(
@@ -33,6 +31,6 @@ assert.equal(Equal.equals(Trie.compact(trie), trieMapV), true)
 declare const compact: <A>(self: Trie<Option<A>>) => Trie<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Trie.ts#L824)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Trie.ts#L814)
 
 Since v2.0.0

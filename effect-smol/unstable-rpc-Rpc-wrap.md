@@ -14,6 +14,6 @@ existing wrapper.
 declare const wrap: (options: { readonly fork?: boolean | undefined; readonly uninterruptible?: boolean | undefined; }) => <A extends object>(value: A) => Wrapper<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Rpc.ts#L1179)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Rpc.ts#L1178)
 
 Since v4.0.0

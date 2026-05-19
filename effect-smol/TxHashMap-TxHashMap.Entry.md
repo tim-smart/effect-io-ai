@@ -39,6 +39,6 @@ const program = Effect.gen(function*() {
 type Entry<T> = T extends TxHashMap<infer K, infer V> ? readonly [K, V] : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashMap.ts#L240)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashMap.ts#L239)
 
-Since v2.0.0
+Since v4.0.0

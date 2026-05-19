@@ -8,7 +8,7 @@ Marks the `HashMap` as immutable, completing the mutation cycle.
 **Example** (Ending batch mutation)
 
 ```ts
-import * as HashMap from "effect/HashMap"
+import { HashMap } from "effect"
 
 // Start with an existing map
 const original = HashMap.make(["x", 10], ["y", 20])
@@ -35,6 +35,6 @@ console.log(HashMap.get(final, "z")) // Option.some(30)
 declare const endMutation: <K, V>(self: HashMap<K, V>) => HashMap<K, V>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashMap.ts#L804)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashMap.ts#L799)
 
 Since v2.0.0

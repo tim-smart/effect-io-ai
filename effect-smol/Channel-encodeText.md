@@ -13,6 +13,6 @@ Each string inside an emitted array is encoded independently.
 declare const encodeText: <Err, Done>() => Channel<Arr.NonEmptyReadonlyArray<Uint8Array>, Err, Done, Arr.NonEmptyReadonlyArray<string>, Err, Done>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L6289)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L6283)
 
 Since v4.0.0

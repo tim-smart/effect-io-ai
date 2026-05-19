@@ -2446,6 +2446,6 @@ type Traced = {
   }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L10355)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L10260)
 
-Since v3.11.0
+Since v4.0.0

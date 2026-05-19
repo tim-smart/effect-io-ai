@@ -25,4 +25,4 @@ declare const make: () => Effect.Effect<TxReentrantLock>
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxReentrantLock.ts#L103)
 
-Since v4.0.0
+Since v2.0.0

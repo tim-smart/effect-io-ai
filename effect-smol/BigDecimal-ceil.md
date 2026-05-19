@@ -8,14 +8,14 @@ Calculate the ceiling of a `BigDecimal` at the given scale.
 **Example** (Rounding decimals up)
 
 ```ts
-import { ceil, fromStringUnsafe } from "effect/BigDecimal"
+import { BigDecimal } from "effect"
 import * as assert from "node:assert"
 
 assert.deepStrictEqual(
-  ceil(fromStringUnsafe("145"), -1),
-  fromStringUnsafe("150")
+  BigDecimal.ceil(BigDecimal.fromStringUnsafe("145"), -1),
+  BigDecimal.fromStringUnsafe("150")
 )
-assert.deepStrictEqual(ceil(fromStringUnsafe("-14.5")), fromStringUnsafe("-14"))
+assert.deepStrictEqual(BigDecimal.ceil(BigDecimal.fromStringUnsafe("-14.5")), BigDecimal.fromStringUnsafe("-14"))
 ```
 
 **Signature**
@@ -26,4 +26,4 @@ declare const ceil: { (scale: number): (self: BigDecimal) => BigDecimal; (self: 
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigDecimal.ts#L1579)
 
-Since v4.0.0
+Since v3.16.0

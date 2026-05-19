@@ -8,11 +8,11 @@ This utility function is used to check if at least one of the elements in a coll
 **Example** (Checking some booleans)
 
 ```ts
-import { some } from "effect/Boolean"
+import { Boolean } from "effect"
 import * as assert from "node:assert"
 
-assert.deepStrictEqual(some([true, false, true]), true)
-assert.deepStrictEqual(some([false, false, false]), false)
+assert.deepStrictEqual(Boolean.some([true, false, true]), true)
+assert.deepStrictEqual(Boolean.some([false, false, false]), false)
 ```
 
 **Signature**

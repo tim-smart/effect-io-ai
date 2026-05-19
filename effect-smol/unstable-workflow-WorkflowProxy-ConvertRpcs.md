@@ -21,6 +21,6 @@ type ConvertRpcs<Workflows, Prefix> = Workflows extends Workflow.Workflow<
   : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/WorkflowProxy.ts#L108)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/WorkflowProxy.ts#L107)
 
 Since v4.0.0

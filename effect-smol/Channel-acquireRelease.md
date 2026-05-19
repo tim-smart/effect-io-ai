@@ -29,4 +29,4 @@ declare const acquireRelease: { <Z>(release: (z: Z, e: Exit.Exit<unknown, unknow
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L634)
 
-Since v2.0.0
+Since v4.0.0

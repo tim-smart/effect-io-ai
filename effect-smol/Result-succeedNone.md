@@ -27,6 +27,6 @@ console.log(Result.isSuccess(Result.succeedNone))
 declare const succeedNone: Result<Option<never>, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L1678)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L1660)
 
 Since v4.0.0

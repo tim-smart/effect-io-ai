@@ -11,8 +11,8 @@ request list.
 **Example** (Handling tagged request batches)
 
 ```ts
-import type { Request } from "effect"
 import { Effect, RequestResolver } from "effect"
+import type { Request } from "effect"
 
 interface GetUser extends Request.Request<string, Error> {
   readonly _tag: "GetUser"
@@ -41,6 +41,6 @@ const MyResolver = RequestResolver.fromEffectTagged<MyRequest>()({
 declare const fromEffectTagged: <A extends Request.Any & { readonly _tag: string; }>() => <Fns extends { readonly [Tag in A["_tag"]]: [Extract<A, { readonly _tag: Tag; }>] extends [infer Req] ? Req extends Request.Request<infer ReqA, infer ReqE, infer _ReqR> ? (requests: Array<Request.Entry<Req>>) => Effect.Effect<Iterable<ReqA>, ReqE> : never : never; }>(fns: Fns) => RequestResolver<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RequestResolver.ts#L493)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RequestResolver.ts#L492)
 
 Since v2.0.0

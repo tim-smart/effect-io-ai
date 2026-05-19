@@ -11,6 +11,6 @@ Re-exports all named exports from the "./Hydration.ts" module as `Hydration`.
 export * as Hydration from "./Hydration.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L40)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L185)
 
 Since v4.0.0

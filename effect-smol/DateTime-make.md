@@ -42,6 +42,6 @@ console.log(invalid._tag) // "None"
 declare const make: <A extends DateTime.Input>(input: A) => Option.Option<DateTime.PreserveZone<A>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L726)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L724)
 
 Since v3.6.0

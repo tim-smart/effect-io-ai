@@ -12,15 +12,6 @@ By default it uses an "unbounded" buffer size.
 You can customize the buffer size and strategy by passing an object as the
 second argument with the `bufferSize` and `strategy` fields.
 
-**Previously Known As**
-
-This API replaces the following from Effect 3.x:
-
-- `Stream.async`
-- `Stream.asyncEffect`
-- `Stream.asyncPush`
-- `Stream.asyncScoped`
-
 **Example** (Creating a stream from a callback that can emit values into a queue)
 
 ```ts
@@ -52,6 +43,6 @@ Effect.runPromise(program)
 declare const callback: <A, E = never, R = never>(f: (queue: Queue.Queue<A, E | Cause.Done>) => Effect.Effect<unknown, E, R | Scope.Scope>, options?: { readonly bufferSize?: number | undefined; readonly strategy?: "sliding" | "dropping" | "suspend" | undefined; }) => Stream<A, E, Exclude<R, Scope.Scope>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L813)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L782)
 
-Since v2.0.0
+Since v4.0.0

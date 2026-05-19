@@ -8,12 +8,12 @@ Provides a subtraction operation on `BigDecimal`s.
 **Example** (Subtracting decimals)
 
 ```ts
-import { fromStringUnsafe, subtract } from "effect/BigDecimal"
+import { BigDecimal } from "effect"
 import * as assert from "node:assert"
 
 assert.deepStrictEqual(
-  subtract(fromStringUnsafe("2"), fromStringUnsafe("3")),
-  fromStringUnsafe("-1")
+  BigDecimal.subtract(BigDecimal.fromStringUnsafe("2"), BigDecimal.fromStringUnsafe("3")),
+  BigDecimal.fromStringUnsafe("-1")
 )
 ```
 

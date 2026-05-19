@@ -14,6 +14,6 @@ export interface Writable<R, W = R> extends Atom<R> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Atom.ts#L157)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Atom.ts#L162)
 
 Since v4.0.0

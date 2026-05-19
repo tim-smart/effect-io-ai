@@ -46,6 +46,6 @@ export interface MutableHashSet<out V> extends Iterable<V>, Pipeable, Inspectabl
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableHashSet.ts#L123)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableHashSet.ts#L121)
 
 Since v2.0.0

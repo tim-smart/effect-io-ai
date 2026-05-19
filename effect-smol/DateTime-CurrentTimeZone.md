@@ -32,6 +32,6 @@ Effect.provide(program, layer)
 declare class CurrentTimeZone
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L1746)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L1744)
 
 Since v3.11.0

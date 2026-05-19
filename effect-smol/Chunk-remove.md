@@ -29,6 +29,6 @@ console.log(Chunk.toArray(outOfBounds)) // ["a", "b", "c", "d"]
 declare const remove: { (i: number): <A>(self: Chunk<A>) => Chunk<A>; <A>(self: Chunk<A>, i: number): Chunk<A>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L2387)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L2377)
 
 Since v2.0.0

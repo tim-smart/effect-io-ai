@@ -8,10 +8,10 @@ Provides an addition operation on `bigint`s.
 **Example** (Adding bigints)
 
 ```ts
-import { sum } from "effect/BigInt"
+import { BigInt } from "effect"
 import * as assert from "node:assert"
 
-assert.deepStrictEqual(sum(2n, 3n), 5n)
+assert.deepStrictEqual(BigInt.sum(2n, 3n), 5n)
 ```
 
 **Signature**

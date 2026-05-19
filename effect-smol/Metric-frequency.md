@@ -81,6 +81,6 @@ const program = Effect.gen(function*() {
 declare const frequency: (name: string, options?: { readonly description?: string | undefined; readonly attributes?: Metric.Attributes | undefined; readonly preregisteredWords?: ReadonlyArray<string> | undefined; }) => Frequency
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Metric.ts#L2387)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Metric.ts#L2386)
 
 Since v2.0.0

@@ -28,6 +28,6 @@ console.log(Chunk.toArray(zipped)) // [[1, "a"], [2, "b"]]
 declare const zip: { <B>(that: Chunk<B>): <A>(self: Chunk<A>) => Chunk<[A, B]>; <A, B>(self: Chunk<A>, that: Chunk<B>): Chunk<[A, B]>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L2355)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L2345)
 
 Since v2.0.0

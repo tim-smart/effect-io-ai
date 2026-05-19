@@ -9,16 +9,16 @@ without changing the resulting type of that expression.
 **Example** (Checking an expression against a type)
 
 ```ts
-import { satisfies } from "effect/Function"
+import { Function } from "effect"
 import * as assert from "node:assert"
 
-const test1 = satisfies<number>()(5 as const)
+const test1 = Function.satisfies<number>()(5 as const)
 // ^? const test: 5
 // @ts-expect-error
-const test2 = satisfies<string>()(5)
+const test2 = Function.satisfies<string>()(5)
 // ^? Argument of type 'number' is not assignable to parameter of type 'string'
 
-assert.deepStrictEqual(satisfies<number>()(5), 5)
+assert.deepStrictEqual(Function.satisfies<number>()(5), 5)
 ```
 
 **Signature**
@@ -27,6 +27,6 @@ assert.deepStrictEqual(satisfies<number>()(5), 5)
 declare const satisfies: <A>() => <B extends A>(b: B) => B
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Function.ts#L285)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Function.ts#L283)
 
 Since v2.0.0

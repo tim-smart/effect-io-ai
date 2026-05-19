@@ -11,6 +11,6 @@ Decoded server-sent event payload emitted by `createResponseStream`.
 type CreateResponse200Sse = ChatCompletionStreamEvent
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/OpenAiClient.ts#L988)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/OpenAiClient.ts#L1016)
 
 Since v4.0.0

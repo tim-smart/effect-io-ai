@@ -15,6 +15,6 @@ for later platform conversion.
 declare const raw: (body: unknown, options?: Options | undefined) => HttpServerResponse
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpServerResponse.ts#L390)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpServerResponse.ts#L391)
 
 Since v4.0.0

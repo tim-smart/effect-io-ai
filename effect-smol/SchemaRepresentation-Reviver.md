@@ -23,6 +23,6 @@ A callback that handles `Declaration` nodes during reconstruction
 type Reviver<T> = (declaration: Declaration, recur: (representation: Representation) => T) => T | undefined
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaRepresentation.ts#L1697)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaRepresentation.ts#L1704)
 
 Since v4.0.0

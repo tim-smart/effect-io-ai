@@ -17,6 +17,6 @@ type ConstructorFrom<A, Tag> = (
   ) => A
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Data.ts#L465)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Data.ts#L469)
 
 Since v4.0.0

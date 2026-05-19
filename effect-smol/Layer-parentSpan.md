@@ -13,7 +13,7 @@ span; the caller remains responsible for the span's lifetime.
 **Example** (Using an existing parent span)
 
 ```ts
-import { Console, Effect, Layer, Context, Tracer } from "effect"
+import { Console, Context, Effect, Layer, Tracer } from "effect"
 
 class Database extends Context.Service<Database, {
   readonly query: (sql: string) => Effect.Effect<string>
@@ -44,6 +44,6 @@ const databaseLayer = Layer.effect(
 declare const parentSpan: (span: Tracer.AnySpan) => Layer<Tracer.ParentSpan>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L2278)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L2261)
 
-Since v4.0.0
+Since v2.0.0

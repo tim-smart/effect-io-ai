@@ -33,6 +33,6 @@ const program = Effect.gen(function*() {
 declare const remove: { <V>(value: V): (self: TxHashSet<V>) => Effect.Effect<boolean>; <V>(self: TxHashSet<V>, value: V): Effect.Effect<boolean>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashSet.ts#L386)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashSet.ts#L383)
 
 Since v2.0.0

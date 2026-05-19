@@ -12,6 +12,6 @@ Type-level key for the `Runtime.errorReported` property that controls default
 type errorReported = "~effect/Runtime/errorReported"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Runtime.ts#L291)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Runtime.ts#L286)
 
 Since v4.0.0

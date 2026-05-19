@@ -11,6 +11,6 @@ Re-exports all named exports from the "./Persistable.ts" module as `Persistable`
 export * as Persistable from "./Persistable.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L15)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L56)
 
 Since v4.0.0

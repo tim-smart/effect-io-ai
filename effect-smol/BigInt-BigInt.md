@@ -8,7 +8,7 @@ Reference to the global BigInt constructor.
 **Example** (Constructing bigints)
 
 ```ts
-import * as BigInt from "effect/BigInt"
+import { BigInt } from "effect"
 
 const bigInt = BigInt.BigInt(123)
 console.log(bigInt) // 123n

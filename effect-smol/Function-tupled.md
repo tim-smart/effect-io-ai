@@ -8,10 +8,10 @@ Creates a tupled version of this function: instead of `n` arguments, it accepts 
 **Example** (Converting arguments to a tuple)
 
 ```ts
-import { tupled } from "effect/Function"
+import { Function } from "effect"
 import * as assert from "node:assert"
 
-const sumTupled = tupled((x: number, y: number): number => x + y)
+const sumTupled = Function.tupled((x: number, y: number): number => x + y)
 
 assert.deepStrictEqual(sumTupled([1, 2]), 3)
 ```
@@ -22,6 +22,6 @@ assert.deepStrictEqual(sumTupled([1, 2]), 3)
 declare const tupled: <A extends ReadonlyArray<unknown>, B>(f: (...a: A) => B) => (a: A) => B
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Function.ts#L493)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Function.ts#L491)
 
 Since v2.0.0

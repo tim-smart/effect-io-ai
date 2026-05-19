@@ -11,6 +11,6 @@ Re-exports all named exports from the "./SqliteClient.ts" module as `SqliteClien
 export * as SqliteClient from "./SqliteClient.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/sql/sqlite-bun/src/index.ts#L10)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/sql/sqlite-bun/src/index.ts#L27)
 
 Since v4.0.0

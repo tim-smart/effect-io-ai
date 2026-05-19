@@ -38,4 +38,4 @@ declare const getSuccess: <A, E>(self: Result<A, E>) => Option<A>
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L578)
 
-Since v2.0.0
+Since v4.0.0

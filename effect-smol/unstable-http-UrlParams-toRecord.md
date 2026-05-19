@@ -7,7 +7,7 @@ Builds a `Record` containing all the key-value pairs in the given `UrlParams`
 as `string` (if only one value for a key) or a `NonEmptyArray<string>`
 (when more than one value for a key)
 
-**Example**
+**Example** (Converting parameters to a record)
 
 ```ts
 import { UrlParams } from "effect/unstable/http"

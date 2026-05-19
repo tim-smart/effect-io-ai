@@ -13,6 +13,6 @@ Extracts the carrier (underlying) type from a newtype.
 type Carrier<N> = N extends Newtype<infer _Key, infer Carrier> ? Carrier : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Newtype.ts#L142)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Newtype.ts#L146)
 
 Since v4.0.0

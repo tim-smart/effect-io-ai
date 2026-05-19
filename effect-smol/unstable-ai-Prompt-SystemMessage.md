@@ -27,6 +27,6 @@ export interface SystemMessage extends BaseMessage<"system", SystemMessageOption
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L1137)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L1135)
 
 Since v4.0.0

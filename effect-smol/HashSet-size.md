@@ -8,7 +8,7 @@ Returns the number of values in the HashSet.
 **Example** (Getting the HashSet size)
 
 ```ts
-import * as HashSet from "effect/HashSet"
+import { HashSet } from "effect"
 
 const empty = HashSet.empty<string>()
 console.log(HashSet.size(empty)) // 0
@@ -26,6 +26,6 @@ console.log(HashSet.size(withDuplicates)) // 3
 declare const size: <V>(self: HashSet<V>) => number
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashSet.ts#L354)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashSet.ts#L352)
 
 Since v2.0.0

@@ -40,4 +40,4 @@ declare const invalidate: { <K>(key: K): <A, E>(self: RcMap<K, A, E>) => Effect.
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RcMap.ts#L440)
 
-Since v3.5.0
+Since v3.13.0

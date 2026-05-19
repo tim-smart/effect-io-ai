@@ -12,10 +12,9 @@ of composite structures.
 **Example** (Combining hash values)
 
 ```ts
-import { Hash } from "effect" // combined hash value
+import { Hash, pipe } from "effect"
 
 // Can also be used with pipe
-import { pipe } from "effect"
 
 const hash1 = Hash.hash("hello")
 const hash2 = Hash.hash("world")

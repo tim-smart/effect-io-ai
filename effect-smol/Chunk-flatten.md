@@ -33,6 +33,6 @@ console.log(Chunk.toArray(Chunk.flatten(withEmpty))) // [1, 2, 3, 4]
 declare const flatten: <S extends Chunk<Chunk<any>>>(self: S) => Chunk.Flatten<S>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L1271)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L1265)
 
 Since v2.0.0

@@ -23,6 +23,6 @@ console.log(DateTime.zoneToString(localZone)) // Output depends on system time z
 declare const zoneMakeLocal: () => TimeZone.Named
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L1016)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L1014)
 
 Since v3.6.0

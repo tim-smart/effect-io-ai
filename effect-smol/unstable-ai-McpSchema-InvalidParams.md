@@ -13,6 +13,6 @@ This error uses the standard invalid params code `-32602`.
 declare class InvalidParams
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L524)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L527)
 
 Since v4.0.0

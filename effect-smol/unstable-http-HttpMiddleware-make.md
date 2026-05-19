@@ -11,6 +11,6 @@ Defines an `HttpMiddleware` while preserving its precise type.
 declare const make: <M extends HttpMiddleware>(middleware: M) => M
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpMiddleware.ts#L78)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpMiddleware.ts#L79)
 
 Since v4.0.0

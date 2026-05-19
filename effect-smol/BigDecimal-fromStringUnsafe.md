@@ -12,12 +12,12 @@ should be represented as `Option.none` instead of throwing.
 **Example** (Parsing decimal strings unsafely)
 
 ```ts
-import { fromStringUnsafe, make } from "effect/BigDecimal"
+import { BigDecimal } from "effect"
 import * as assert from "node:assert"
 
-assert.deepStrictEqual(fromStringUnsafe("123"), make(123n, 0))
-assert.deepStrictEqual(fromStringUnsafe("123.456"), make(123456n, 3))
-assert.throws(() => fromStringUnsafe("123.abc"))
+assert.deepStrictEqual(BigDecimal.fromStringUnsafe("123"), BigDecimal.make(123n, 0))
+assert.deepStrictEqual(BigDecimal.fromStringUnsafe("123.456"), BigDecimal.make(123456n, 3))
+assert.throws(() => BigDecimal.fromStringUnsafe("123.abc"))
 ```
 
 **Signature**
@@ -28,4 +28,4 @@ declare const fromStringUnsafe: (s: string) => BigDecimal
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigDecimal.ts#L1243)
 
-Since v2.0.0
+Since v4.0.0

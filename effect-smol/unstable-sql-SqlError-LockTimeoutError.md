@@ -12,6 +12,6 @@ retryable.
 declare class LockTimeoutError
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SqlError.ts#L254)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SqlError.ts#L263)
 
 Since v4.0.0

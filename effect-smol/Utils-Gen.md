@@ -64,6 +64,6 @@ type Gen<F> = <
 >
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Utils.ts#L215)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Utils.ts#L214)
 
 Since v2.0.0

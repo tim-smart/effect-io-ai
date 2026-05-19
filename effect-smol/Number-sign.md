@@ -8,12 +8,12 @@ Determines the sign of a given `number`.
 **Example** (Determining the sign)
 
 ```ts
-import { sign } from "effect/Number"
+import { Number } from "effect"
 import * as assert from "node:assert"
 
-assert.deepStrictEqual(sign(-5), -1)
-assert.deepStrictEqual(sign(0), 0)
-assert.deepStrictEqual(sign(5), 1)
+assert.deepStrictEqual(Number.sign(-5), -1)
+assert.deepStrictEqual(Number.sign(0), 0)
+assert.deepStrictEqual(Number.sign(5), 1)
 ```
 
 **Signature**

@@ -8,7 +8,7 @@ Creates a new empty `HashMap`.
 **Example** (Creating an empty HashMap)
 
 ```ts
-import * as HashMap from "effect/HashMap"
+import { HashMap } from "effect"
 
 const map = HashMap.empty<string, number>()
 console.log(HashMap.isEmpty(map)) // true
@@ -21,6 +21,6 @@ console.log(HashMap.size(map)) // 0
 declare const empty: <K = never, V = never>() => HashMap<K, V>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashMap.ts#L310)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashMap.ts#L308)
 
 Since v2.0.0

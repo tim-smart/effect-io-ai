@@ -30,6 +30,6 @@ const program = Effect.gen(function*() {
 declare const tryAcquireN: (self: TxSemaphore, n: number) => Effect.Effect<boolean>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxSemaphore.ts#L346)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxSemaphore.ts#L322)
 
 Since v4.0.0

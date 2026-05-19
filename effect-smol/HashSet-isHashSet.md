@@ -8,7 +8,7 @@ Checks if a value is a HashSet.
 **Example** (Checking for a HashSet)
 
 ```ts
-import * as HashSet from "effect/HashSet"
+import { HashSet } from "effect"
 
 const set = HashSet.make(1, 2, 3)
 const array = [1, 2, 3]
@@ -24,6 +24,6 @@ console.log(HashSet.isHashSet(null)) // false
 declare const isHashSet: { <V>(u: Iterable<V>): u is HashSet<V>; (u: unknown): u is HashSet<unknown>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashSet.ts#L223)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashSet.ts#L222)
 
 Since v2.0.0

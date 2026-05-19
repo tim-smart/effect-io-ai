@@ -33,6 +33,6 @@ console.log(invalid._tag === "None") // true
 declare const makeZonedFromString: (input: string) => Option.Option<Zoned>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L756)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L754)
 
 Since v3.6.0

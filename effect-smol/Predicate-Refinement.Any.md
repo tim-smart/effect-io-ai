@@ -27,6 +27,6 @@ See also: `Refinement.In`, `Refinement.Out`
 type Any = Refinement<any, any>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L322)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L320)
 
 Since v3.6.0

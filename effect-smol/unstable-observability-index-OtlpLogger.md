@@ -11,6 +11,6 @@ Re-exports all named exports from the "./OtlpLogger.ts" module as `OtlpLogger`.
 export * as OtlpLogger from "./OtlpLogger.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L20)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L80)
 
 Since v4.0.0

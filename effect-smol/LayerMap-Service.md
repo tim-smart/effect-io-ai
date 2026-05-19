@@ -9,7 +9,7 @@ a key.
 **Example** (Defining a layer map service)
 
 ```ts
-import { Console, Effect, Layer, LayerMap, Context } from "effect"
+import { Console, Context, Effect, Layer, LayerMap } from "effect"
 
 // Define a service key
 const Greeter = Context.Service<{

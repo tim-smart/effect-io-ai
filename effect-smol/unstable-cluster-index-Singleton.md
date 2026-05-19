@@ -11,6 +11,6 @@ Re-exports all named exports from the "./Singleton.ts" module as `Singleton`.
 export * as Singleton from "./Singleton.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L165)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L840)
 
 Since v4.0.0

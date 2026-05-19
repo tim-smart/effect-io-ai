@@ -9,7 +9,7 @@ that first yields the current value, then every subsequent update.
 **Example** (Subscribing to changes)
 
 ```ts
-import { Effect, TxSubscriptionRef, TxQueue } from "effect"
+import { Effect, TxQueue, TxSubscriptionRef } from "effect"
 
 const program = Effect.gen(function*() {
   const ref = yield* TxSubscriptionRef.make(0)
@@ -36,4 +36,4 @@ declare const changes: <A>(self: TxSubscriptionRef<A>) => Effect.Effect<TxQueue.
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxSubscriptionRef.ts#L354)
 
-Since v4.0.0
+Since v3.10.0

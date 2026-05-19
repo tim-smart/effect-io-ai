@@ -23,4 +23,4 @@ declare const beginMutation: <N, E, T extends Kind = "directed">(graph: Graph<N,
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Graph.ts#L394)
 
-Since v4.0.0
+Since v3.18.0

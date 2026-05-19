@@ -22,6 +22,6 @@ console.log(Chunk.toArray(chunk)) // [0, 2, 4, 6, 8]
 declare const makeBy: { <A>(f: (i: number) => A): (n: number) => NonEmptyChunk<A>; <A>(n: number, f: (i: number) => A): NonEmptyChunk<A>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L2476)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L2466)
 
 Since v2.0.0

@@ -46,4 +46,4 @@ declare const fromQueue: <A, E>(queue: Queue.Dequeue<A, E>) => Channel<A, Exclud
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L1224)
 
-Since v4.0.0
+Since v2.0.0

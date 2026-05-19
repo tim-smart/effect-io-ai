@@ -10,7 +10,7 @@ This is useful for creating placeholder parameters or for combinators.
 **Example** (Creating sentinel parameters)
 
 ```ts
-import * as Param from "effect/unstable/cli/Param"
+import { Param } from "effect/unstable/cli"
 
 // @internal - this module is not exported publicly
 

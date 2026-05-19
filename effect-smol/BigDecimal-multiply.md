@@ -8,12 +8,12 @@ Provides a multiplication operation on `BigDecimal`s.
 **Example** (Multiplying decimals)
 
 ```ts
-import { fromStringUnsafe, multiply } from "effect/BigDecimal"
+import { BigDecimal } from "effect"
 import * as assert from "node:assert"
 
 assert.deepStrictEqual(
-  multiply(fromStringUnsafe("2"), fromStringUnsafe("3")),
-  fromStringUnsafe("6")
+  BigDecimal.multiply(BigDecimal.fromStringUnsafe("2"), BigDecimal.fromStringUnsafe("3")),
+  BigDecimal.fromStringUnsafe("6")
 )
 ```
 

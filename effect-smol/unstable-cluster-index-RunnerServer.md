@@ -11,6 +11,6 @@ Re-exports all named exports from the "./RunnerServer.ts" module as `RunnerServe
 export * as RunnerServer from "./RunnerServer.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L130)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L675)
 
 Since v4.0.0

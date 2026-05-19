@@ -17,13 +17,13 @@ function.
 
 **See**
 
-- `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/using`
+- [JavaScript `using` declarations](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/using)
 
 **Example** (Usage)
 
 ```ts
 import sqlite from "node:sqlite";
-import { Effect } from "effect";
+import { Effect } from "effect"
 
 const program = Effect.scoped(
   Effect.gen(function* () {
@@ -45,6 +45,6 @@ const program = Effect.scoped(
 declare const acquireDisposable: <A extends AsyncDisposable | Disposable, E, R>(acquire: Effect<A, E, R>) => Effect<A, E, R | Scope>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L6118)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L6032)
 
 Since v4.0.0

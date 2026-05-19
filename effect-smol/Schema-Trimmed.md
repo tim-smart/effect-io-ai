@@ -14,6 +14,6 @@ export interface Trimmed extends String {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L9999)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L10149)
 
-Since v4.0.0
+Since v3.10.0

@@ -38,6 +38,6 @@ export interface Variance<out Output, in Input, out Error, out Env> {
   }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L268)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L267)
 
 Since v2.0.0

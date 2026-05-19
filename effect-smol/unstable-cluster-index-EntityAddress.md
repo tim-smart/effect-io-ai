@@ -11,6 +11,6 @@ Re-exports all named exports from the "./EntityAddress.ts" module as `EntityAddr
 export * as EntityAddress from "./EntityAddress.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L45)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L235)
 
 Since v4.0.0

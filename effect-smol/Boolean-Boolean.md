@@ -8,7 +8,7 @@ Reference to the global Boolean constructor.
 **Example** (Coercing values to booleans)
 
 ```ts
-import * as Boolean from "effect/Boolean"
+import { Boolean } from "effect"
 
 const bool = Boolean.Boolean(1)
 console.log(bool) // true

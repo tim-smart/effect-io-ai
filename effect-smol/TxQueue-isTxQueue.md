@@ -24,6 +24,6 @@ if (TxQueue.isTxQueue(someValue)) {
 declare const isTxQueue: <A = unknown, E = unknown>(u: unknown) => u is TxQueue<A, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxQueue.ts#L309)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxQueue.ts#L306)
 
 Since v4.0.0

@@ -8,11 +8,11 @@ This utility function is used to check if all the elements in a collection of bo
 **Example** (Checking every boolean)
 
 ```ts
-import { every } from "effect/Boolean"
+import { Boolean } from "effect"
 import * as assert from "node:assert"
 
-assert.deepStrictEqual(every([true, true, true]), true)
-assert.deepStrictEqual(every([true, false, true]), false)
+assert.deepStrictEqual(Boolean.every([true, true, true]), true)
+assert.deepStrictEqual(Boolean.every([true, false, true]), false)
 ```
 
 **Signature**

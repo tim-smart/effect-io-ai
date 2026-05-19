@@ -31,6 +31,6 @@ See also:
 declare const fromURLSearchParams: Transformation<unknown, URLSearchParams, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L1566)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L1592)
 
 Since v4.0.0

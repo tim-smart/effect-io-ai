@@ -9,7 +9,7 @@ This operation is highly optimized and releases all internal memory.
 **Example** (Clearing a mutable list)
 
 ```ts
-import * as MutableList from "effect/MutableList"
+import { MutableList } from "effect"
 
 const list = MutableList.make<number>()
 MutableList.appendAll(list, [1, 2, 3, 4, 5])
@@ -39,6 +39,6 @@ function resetBuffer<T>(buffer: MutableList.MutableList<T>) {
 declare const clear: <A>(self: MutableList<A>) => void
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableList.ts#L594)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableList.ts#L591)
 
 Since v4.0.0

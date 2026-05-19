@@ -11,6 +11,6 @@ Re-exports all named exports from the "./HttpApiClient.ts" module as `HttpApiCli
 export * as HttpApiClient from "./HttpApiClient.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L20)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L91)
 
 Since v4.0.0

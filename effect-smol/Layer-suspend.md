@@ -11,7 +11,7 @@ the result is memoized with normal layer sharing semantics.
 **Example** (Choosing a layer lazily)
 
 ```ts
-import { Layer, Context } from "effect"
+import { Context, Layer } from "effect"
 
 class Config extends Context.Service<Config, string>()("Config") {}
 
@@ -30,6 +30,6 @@ const layer = Layer.suspend(() =>
 declare const suspend: <A, E, R>(evaluate: LazyArg<Layer<A, E, R>>) => Layer<A, E, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L976)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L964)
 
-Since v4.0.0
+Since v2.0.0

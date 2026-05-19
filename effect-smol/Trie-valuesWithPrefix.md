@@ -9,7 +9,7 @@ that have `prefix` as prefix (`prefix` included if it exists).
 **Example** (Finding values with a prefix)
 
 ```ts
-import * as Trie from "effect/Trie"
+import { Trie } from "effect"
 import * as assert from "node:assert"
 
 const trie = Trie.empty<number>().pipe(
@@ -31,6 +31,6 @@ assert.deepStrictEqual(result, [0, 1])
 declare const valuesWithPrefix: { (prefix: string): <V>(self: Trie<V>) => IterableIterator<V>; <V>(self: Trie<V>, prefix: string): IterableIterator<V>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Trie.ts#L347)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Trie.ts#L345)
 
 Since v2.0.0

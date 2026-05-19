@@ -44,6 +44,6 @@ const program = Effect.gen(function*() {
 declare const take: <A, E>(self: Dequeue<A, E>) => Effect<A, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Queue.ts#L1316)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Queue.ts#L1301)
 
-Since v4.0.0
+Since v2.0.0

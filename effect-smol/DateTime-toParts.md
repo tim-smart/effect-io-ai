@@ -34,6 +34,6 @@ console.log(parts)
 declare const toParts: (self: DateTime) => DateTime.PartsWithWeekday
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L1586)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L1584)
 
 Since v3.6.0

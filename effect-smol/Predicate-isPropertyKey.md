@@ -33,6 +33,6 @@ See also: `isString`, `isNumber`, `isSymbol`
 declare const isPropertyKey: (u: unknown) => u is PropertyKey
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L702)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L700)
 
 Since v4.0.0

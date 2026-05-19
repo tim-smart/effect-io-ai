@@ -30,8 +30,7 @@ collected, and the final result of the operation is `void`.
 **Example** (Applying Effects to Iterable Elements)
 
 ```ts
-import { Effect } from "effect"
-import { Console } from "effect"
+import { Console, Effect } from "effect"
 
 const result = Effect.forEach(
   [1, 2, 3, 4, 5],
@@ -52,8 +51,7 @@ Effect.runPromise(result).then(console.log)
 **Example** (Using discard to Ignore Results)
 
 ```ts
-import { Effect } from "effect"
-import { Console } from "effect"
+import { Console, Effect } from "effect"
 
 // Apply effects but discard the results
 const result = Effect.forEach(
@@ -79,6 +77,6 @@ Effect.runPromise(result).then(console.log)
 declare const forEach: { <B, E, R, S extends Iterable<any>, const Discard extends boolean = false>(f: (a: Arr.ReadonlyArray.Infer<S>, i: number) => Effect<B, E, R>, options?: { readonly concurrency?: Concurrency | undefined; readonly discard?: Discard | undefined; } | undefined): (self: S) => Effect<Discard extends false ? Arr.ReadonlyArray.With<S, B> : void, E, R>; <B, E, R, S extends Iterable<any>, const Discard extends boolean = false>(self: S, f: (a: Arr.ReadonlyArray.Infer<S>, i: number) => Effect<B, E, R>, options?: { readonly concurrency?: Concurrency | undefined; readonly discard?: Discard | undefined; } | undefined): Effect<Discard extends false ? Arr.ReadonlyArray.With<S, B> : void, E, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L773)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L770)
 
 Since v2.0.0

@@ -12,6 +12,6 @@ Iso representation used for `Cause` schemas: an ordered array of
 type CauseIso<E, D> = ReadonlyArray<CauseReasonIso<E, D>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L8051)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L8200)
 
 Since v4.0.0

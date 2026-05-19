@@ -31,6 +31,6 @@ console.log(Graph.edgeCount(graphWithEdges)) // 3
 declare const edgeCount: <N, E, T extends Kind = "directed">(graph: Graph<N, E, T> | MutableGraph<N, E, T>) => number
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Graph.ts#L1612)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Graph.ts#L1609)
 
-Since v4.0.0
+Since v3.18.0

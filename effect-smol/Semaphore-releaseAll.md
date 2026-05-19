@@ -12,6 +12,6 @@ available permits.
 declare const releaseAll: (self: Semaphore) => Effect.Effect<number>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Semaphore.ts#L400)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Semaphore.ts#L388)
 
 Since v4.0.0

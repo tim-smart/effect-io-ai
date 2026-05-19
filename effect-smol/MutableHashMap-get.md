@@ -11,7 +11,7 @@ absent.
 **Example** (Getting a value)
 
 ```ts
-import * as MutableHashMap from "effect/MutableHashMap"
+import { MutableHashMap } from "effect"
 
 const map = MutableHashMap.make(["key1", 42], ["key2", 100])
 
@@ -29,6 +29,6 @@ console.log(getValue(map)) // Some(42)
 declare const get: { <K>(key: K): <V>(self: MutableHashMap<K, V>) => Option.Option<V>; <K, V>(self: MutableHashMap<K, V>, key: K): Option.Option<V>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableHashMap.ts#L227)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableHashMap.ts#L226)
 
 Since v2.0.0

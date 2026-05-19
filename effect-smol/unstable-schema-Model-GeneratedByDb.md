@@ -1,7 +1,7 @@
 Package: `effect`<br />
 Module: `Model`<br />
 
-## Model.Generated
+## Model.GeneratedByDb
 
 Variant field type for a database-generated column that is present in select,
 update, and read JSON variants but omitted from insert variants.
@@ -9,10 +9,9 @@ update, and read JSON variants but omitted from insert variants.
 **Signature**
 
 ```ts
-export interface Generated<S extends Schema.Top> extends
+export interface GeneratedByDb<S extends Schema.Top> extends
   VariantSchema.Field<{
     readonly select: S
-    readonly update: S
     readonly json: S
   }>
 {}

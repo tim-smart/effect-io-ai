@@ -23,6 +23,6 @@ console.log(DateTime.formatIso(now))
 declare const nowUnsafe: LazyArg<Utc>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L814)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L812)
 
-Since v3.6.0
+Since v4.0.0

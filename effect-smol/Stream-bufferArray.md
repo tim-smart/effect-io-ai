@@ -11,12 +11,6 @@ backpressure, while `"dropping"` and `"sliding"` may discard chunks when the
 buffer is full. This combinator preserves chunking and is best with
 power-of-2 capacities.
 
-**Previously Known As**
-
-This API replaces the following from Effect 3.x:
-
-- `Stream.bufferChunks`
-
 **Example** (Buffering stream chunks)
 
 ```ts
@@ -39,6 +33,6 @@ const program = Effect.gen(function*() {
 declare const bufferArray: { (options: { readonly capacity: "unbounded"; } | { readonly capacity: number; readonly strategy?: "dropping" | "sliding" | "suspend" | undefined; }): <A, E, R>(self: Stream<A, E, R>) => Stream<A, E, R>; <A, E, R>(self: Stream<A, E, R>, options: { readonly capacity: "unbounded"; } | { readonly capacity: number; readonly strategy?: "dropping" | "sliding" | "suspend" | undefined; }): Stream<A, E, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L4792)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L4696)
 
-Since v2.0.0
+Since v4.0.0

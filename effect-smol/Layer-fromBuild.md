@@ -11,7 +11,7 @@ A child scope is created, and if the build fails, the child scope is closed.
 **Example** (Constructing a layer from a build function)
 
 ```ts
-import { Effect, Layer, Context } from "effect"
+import { Context, Effect, Layer } from "effect"
 
 class Database extends Context.Service<Database, {
   readonly query: (sql: string) => Effect.Effect<string>

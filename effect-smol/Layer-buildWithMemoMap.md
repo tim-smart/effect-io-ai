@@ -9,7 +9,7 @@ the layer construction.
 **Example** (Building layers with an explicit memo map)
 
 ```ts
-import { Effect, Layer, Context } from "effect"
+import { Context, Effect, Layer } from "effect"
 
 class Database extends Context.Service<Database, {
   readonly query: (sql: string) => Effect.Effect<string>

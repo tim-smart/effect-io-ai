@@ -21,6 +21,6 @@ const env = Config.literals(["development", "production"], "ENV")
 declare const literals: <const L extends ReadonlyArray<AST.LiteralValue>>(literals: L, name?: string) => Config<L[number]>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Config.ts#L981)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Config.ts#L987)
 
 Since v4.0.0

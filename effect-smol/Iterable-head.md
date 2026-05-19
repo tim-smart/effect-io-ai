@@ -8,8 +8,7 @@ Get the first element of a `Iterable`, or `None` if the `Iterable` is empty.
 **Example** (Getting the first element)
 
 ```ts
-import { Iterable } from "effect"
-import * as Option from "effect/Option"
+import { Iterable, Option } from "effect"
 
 const numbers = [1, 2, 3]
 console.log(Iterable.head(numbers)) // Option.some(1)
@@ -34,6 +33,6 @@ console.log(doubled) // Option.some(10)
 declare const head: <A>(self: Iterable<A>) => Option<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Iterable.ts#L473)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Iterable.ts#L469)
 
 Since v2.0.0

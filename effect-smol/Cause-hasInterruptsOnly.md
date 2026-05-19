@@ -29,6 +29,6 @@ console.log(Cause.hasInterruptsOnly(Cause.empty))          // false
 declare const hasInterruptsOnly: <E>(self: Cause<E>) => boolean
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L637)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L635)
 
-Since v2.0.0
+Since v4.0.0

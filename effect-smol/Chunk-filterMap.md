@@ -8,8 +8,7 @@ Returns a filtered and mapped subset of the elements.
 **Example** (Filtering and mapping values)
 
 ```ts
-import { Chunk } from "effect"
-import * as Result from "effect/Result"
+import { Chunk, Result } from "effect"
 
 const chunk = Chunk.make("1", "2", "hello", "3", "world")
 const numbers = Chunk.filterMap(chunk, (str) => {
@@ -32,6 +31,6 @@ console.log(Chunk.toArray(evenIndexNumbers)) // [1]
 declare const filterMap: { <A, B, X>(f: (input: A, i: number) => Result<B, X>): (self: Chunk<A>) => Chunk<B>; <A, B, X>(self: Chunk<A>, f: (input: A, i: number) => Result<B, X>): Chunk<B>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L1035)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L1031)
 
 Since v2.0.0

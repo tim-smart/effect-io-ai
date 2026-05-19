@@ -14,4 +14,4 @@ declare const add: { <A extends PrimaryKey.PrimaryKey>(node: A, options?: { read
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashRing.ts#L199)
 
-Since v4.0.0
+Since v3.19.0

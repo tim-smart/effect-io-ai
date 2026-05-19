@@ -9,8 +9,7 @@ Edges that return Option.none are removed from the graph.
 **Example** (Filtering and mapping edges)
 
 ```ts
-import { Graph } from "effect"
-import * as Option from "effect/Option"
+import { Graph, Option } from "effect"
 
 const graph = Graph.directed<string, number>((mutable) => {
   const a = Graph.addNode(mutable, "A")
@@ -36,6 +35,6 @@ console.log(Graph.edgeCount(graph)) // 2 (edges with weight 5 removed)
 declare const filterMapEdges: <N, E, T extends Kind = "directed">(mutable: MutableGraph<N, E, T>, f: (data: E) => Option.Option<E>) => void
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Graph.ts#L1110)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Graph.ts#L1107)
 
-Since v4.0.0
+Since v3.18.0

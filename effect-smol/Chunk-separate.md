@@ -12,8 +12,7 @@ within each side.
 **Example** (Separating failures and successes)
 
 ```ts
-import { Chunk } from "effect"
-import * as Result from "effect/Result"
+import { Chunk, Result } from "effect"
 
 const chunk = Chunk.make(
   Result.succeed(1),
@@ -40,6 +39,6 @@ console.log(Chunk.toArray(allValues)) // [1, 2]
 declare const separate: <A, B>(self: Chunk<Result<B, A>>) => [Chunk<A>, Chunk<B>]
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L1814)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L1806)
 
 Since v2.0.0

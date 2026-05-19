@@ -11,6 +11,6 @@ Server-sent event shape emitted by OpenAI Responses API streams.
 type ResponseStreamEvent = typeof ResponseStreamEvent.Type
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiSchema.ts#L878)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiSchema.ts#L907)
 
 Since v4.0.0

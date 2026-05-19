@@ -11,13 +11,11 @@ toward zero. Returns `Option.none()` when the divisor is `0n`.
 **Example** (Dividing bigints safely)
 
 ```ts
-import { divide } from "effect/BigInt"
+import { BigInt, Option } from "effect"
 import * as assert from "node:assert"
 
-import { Option } from "effect"
-
-assert.deepStrictEqual(divide(6n, 3n), Option.some(2n))
-assert.deepStrictEqual(divide(6n, 0n), Option.none())
+assert.deepStrictEqual(BigInt.divide(6n, 3n), Option.some(2n))
+assert.deepStrictEqual(BigInt.divide(6n, 0n), Option.none())
 ```
 
 **Signature**
@@ -26,6 +24,6 @@ assert.deepStrictEqual(divide(6n, 0n), Option.none())
 declare const divide: { (that: bigint): (self: bigint) => Option.Option<bigint>; (self: bigint, that: bigint): Option.Option<bigint>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigInt.ts#L140)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigInt.ts#L138)
 
 Since v2.0.0

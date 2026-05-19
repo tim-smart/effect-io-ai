@@ -37,6 +37,6 @@ const program = Effect.gen(function*() {
 declare const collectOutputs: <Output, Input, Error, Env>(self: Schedule<Output, Input, Error, Env>) => Schedule<Array<Output>, Input, Error, Env>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L1130)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L1129)
 
-Since v2.0.0
+Since v4.0.0

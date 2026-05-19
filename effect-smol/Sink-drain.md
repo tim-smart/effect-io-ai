@@ -11,6 +11,6 @@ Drains elements from the stream by ignoring all inputs.
 declare const drain: Sink<void, unknown, never, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Sink.ts#L680)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Sink.ts#L677)
 
 Since v2.0.0

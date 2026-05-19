@@ -5,9 +5,11 @@ Module: `ExecutionPlan`<br />
 
 A `ExecutionPlan` can be used with `Effect.withExecutionPlan` or `Stream.withExecutionPlan`, allowing you to provide different resources for each step of execution until the effect succeeds or the plan is exhausted.
 
+**Example** (Defining fallback execution steps)
+
 ```ts
-import type { Layer } from "effect"
 import { Effect, ExecutionPlan, Schedule } from "effect"
+import type { Layer } from "effect"
 import type { LanguageModel } from "effect/unstable/ai"
 
 declare const layerBad: Layer.Layer<LanguageModel.LanguageModel>
@@ -81,6 +83,6 @@ export interface ExecutionPlan<
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ExecutionPlan.ts#L123)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ExecutionPlan.ts#L125)
 
 Since v3.16.0

@@ -13,6 +13,6 @@ Note: resource links returned by tools are not guaranteed to appear in the resul
 declare class ResourceLink
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L1162)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L1165)
 
 Since v4.0.0

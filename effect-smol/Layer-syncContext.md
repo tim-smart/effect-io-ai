@@ -12,7 +12,7 @@ synchronously only when the layer is built.
 **Example** (Lazily providing a context)
 
 ```ts
-import { Effect, Layer, Context } from "effect"
+import { Context, Effect, Layer } from "effect"
 
 class Database extends Context.Service<Database, {
   readonly query: (sql: string) => Effect.Effect<string>

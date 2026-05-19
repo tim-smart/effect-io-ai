@@ -6,12 +6,6 @@ Module: `Stream`<br />
 Creates a stream from an effect producing a value of type `A`, which is
 repeated using the specified schedule.
 
-**Previously Known As**
-
-This API replaces the following from Effect 3.x:
-
-- `Stream.repeatEffectWithSchedule`
-
 **Example** (Repeating an effect with a schedule)
 
 ```ts
@@ -36,6 +30,6 @@ Effect.runPromise(program)
 declare const fromEffectSchedule: <A, E, R, X, AS extends A, ES, RS>(effect: Effect.Effect<A, E, R>, schedule: Schedule.Schedule<X, AS, ES, RS>) => Stream<A, E | ES, R | RS>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L555)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L533)
 
-Since v2.0.0
+Since v4.0.0

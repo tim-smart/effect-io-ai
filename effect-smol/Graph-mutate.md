@@ -29,4 +29,4 @@ declare const mutate: { <N, E, T extends Kind = "directed">(f: (mutable: Mutable
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Graph.ts#L479)
 
-Since v4.0.0
+Since v3.18.0

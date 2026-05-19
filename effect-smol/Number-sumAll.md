@@ -8,10 +8,10 @@ Takes an `Iterable` of `number`s and returns their sum as a single `number`.
 **Example** (Summing an iterable)
 
 ```ts
-import { sumAll } from "effect/Number"
+import { Number } from "effect"
 import * as assert from "node:assert"
 
-assert.deepStrictEqual(sumAll([2, 3, 4]), 9)
+assert.deepStrictEqual(Number.sumAll([2, 3, 4]), 9)
 ```
 
 **Signature**

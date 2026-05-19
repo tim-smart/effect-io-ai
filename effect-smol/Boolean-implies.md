@@ -8,13 +8,13 @@ Combines two booleans using an implication: `(!self || that)`.
 **Example** (Checking boolean implication)
 
 ```ts
-import { implies } from "effect/Boolean"
+import { Boolean } from "effect"
 import * as assert from "node:assert"
 
-assert.deepStrictEqual(implies(true, true), true)
-assert.deepStrictEqual(implies(true, false), false)
-assert.deepStrictEqual(implies(false, true), true)
-assert.deepStrictEqual(implies(false, false), true)
+assert.deepStrictEqual(Boolean.implies(true, true), true)
+assert.deepStrictEqual(Boolean.implies(true, false), false)
+assert.deepStrictEqual(Boolean.implies(false, true), true)
+assert.deepStrictEqual(Boolean.implies(false, false), true)
 ```
 
 **Signature**

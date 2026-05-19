@@ -18,8 +18,7 @@ Creates an `Order` for `Option<A>` from an `Order` for `A`.
 **Example** (Ordering Options)
 
 ```ts
-import { Option } from "effect"
-import * as N from "effect/Number"
+import { Number as N, Option } from "effect"
 
 const ord = Option.makeOrder(N.Order)
 
@@ -39,6 +38,6 @@ console.log(ord(Option.some(1), Option.some(2)))
 declare const makeOrder: <A>(O: Order<A>) => Order<Option<A>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L2119)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L2117)
 
-Since v2.0.0
+Since v4.0.0

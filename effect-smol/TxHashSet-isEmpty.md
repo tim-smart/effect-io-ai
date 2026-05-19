@@ -25,6 +25,6 @@ const program = Effect.gen(function*() {
 declare const isEmpty: <V>(self: TxHashSet<V>) => Effect.Effect<boolean>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashSet.ts#L498)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashSet.ts#L495)
 
 Since v2.0.0

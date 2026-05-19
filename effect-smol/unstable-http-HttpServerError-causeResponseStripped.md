@@ -15,6 +15,6 @@ defaults to `500`.
 declare const causeResponseStripped: <E>(cause: Cause.Cause<E>) => readonly [response: Response.HttpServerResponse, cause: Option.Option<Cause.Cause<E>>]
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpServerError.ts#L335)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpServerError.ts#L337)
 
 Since v4.0.0

@@ -9,7 +9,7 @@ It is useful when you have to run one of two functions depending on the boolean 
 **Example** (Pattern matching on booleans)
 
 ```ts
-import * as Boolean from "effect/Boolean"
+import { Boolean } from "effect"
 import * as assert from "node:assert"
 
 assert.deepStrictEqual(

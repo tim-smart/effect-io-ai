@@ -11,7 +11,7 @@ This function is particularly useful when it's necessary to specify that certain
 **Example** (Handling impossible values)
 
 ```ts
-import { absurd } from "effect/Function"
+import { absurd } from "effect"
 
 const handleNever = (value: never) => {
   return absurd(value) // This will throw an error if called
@@ -24,6 +24,6 @@ const handleNever = (value: never) => {
 declare const absurd: <A>(_: never) => A
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Function.ts#L472)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Function.ts#L470)
 
 Since v2.0.0

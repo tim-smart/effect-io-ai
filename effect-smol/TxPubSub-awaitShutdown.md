@@ -27,4 +27,4 @@ declare const awaitShutdown: <A>(self: TxPubSub<A>) => Effect.Effect<void>
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxPubSub.ts#L630)
 
-Since v4.0.0
+Since v2.0.0

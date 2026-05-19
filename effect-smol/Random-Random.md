@@ -3,7 +3,11 @@ Module: `Random`<br />
 
 ## Random.Random
 
-Represents a service for generating random numbers.
+Represents a service for generating pseudo-random numbers.
+
+The default implementation is based on `Math.random` and is not
+cryptographically secure. Replace the service with a cryptographically secure
+implementation before using these generators for security-sensitive values.
 
 **Example** (Accessing the random service)
 
@@ -14,12 +18,10 @@ const program = Effect.gen(function*() {
   const float = yield* Random.next
   const integer = yield* Random.nextInt
   const inRange = yield* Random.nextIntBetween(1, 100)
-  const uuid = yield* Random.nextUUIDv4
 
   console.log("Float:", float)
   console.log("Integer:", integer)
   console.log("In range:", inRange)
-  console.log("UUID:", uuid)
 })
 ```
 
@@ -29,6 +31,6 @@ const program = Effect.gen(function*() {
 declare const Random: Context.Reference<{ nextIntUnsafe(): number; nextDoubleUnsafe(): number; }>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Random.ts#L55)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Random.ts#L65)
 
-Since v4.0.0
+Since v2.0.0

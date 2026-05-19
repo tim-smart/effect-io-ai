@@ -16,6 +16,6 @@ an object. Otherwise returns `1`, the default failure exit code used by
 declare const getErrorExitCode: (u: unknown) => number
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Runtime.ts#L274)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Runtime.ts#L269)
 
 Since v4.0.0

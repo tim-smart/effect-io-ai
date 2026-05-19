@@ -60,6 +60,6 @@ const program = Effect.gen(function*() {
 declare const dump: Effect<string, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Metric.ts#L3124)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Metric.ts#L3123)
 
-Since v2.0.0
+Since v4.0.0

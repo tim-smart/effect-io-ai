@@ -8,7 +8,7 @@ Checks if a `number` is between a `minimum` and `maximum` value (inclusive).
 **Example** (Checking inclusive ranges)
 
 ```ts
-import * as Number from "effect/Number"
+import { Number } from "effect"
 import * as assert from "node:assert"
 
 const between = Number.between({ minimum: 0, maximum: 5 })

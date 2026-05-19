@@ -66,6 +66,6 @@ DateTime.makeZoned(gapTime, {
 type Disambiguation = "compatible" | "earlier" | "later" | "reject"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L410)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L408)
 
 Since v3.18.0

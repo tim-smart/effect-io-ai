@@ -5,12 +5,24 @@ Module: `Ref`<br />
 
 Creates a new Ref with the specified initial value.
 
+**Example** (Creating a ref)
+
+```ts
+import { Effect, Ref } from "effect"
+
+const program = Effect.gen(function*() {
+  const ref = yield* Ref.make(42)
+  const value = yield* Ref.get(ref)
+  console.log(value) // 42
+})
+```
+
 **Signature**
 
 ```ts
 declare const make: <A>(value: A) => Effect.Effect<Ref<A>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Ref.ts#L179)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Ref.ts#L175)
 
 Since v2.0.0

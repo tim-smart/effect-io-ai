@@ -29,4 +29,4 @@ declare const getUnsafe: { (index: number): <A>(self: ReadonlyArray<A>) => A; <A
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L920)
 
-Since v2.0.0
+Since v4.0.0

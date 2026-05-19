@@ -28,4 +28,4 @@ declare const isArrayNonEmpty: <A>(self: Array<A>) => self is NonEmptyArray<A>
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L822)
 
-Since v2.0.0
+Since v4.0.0

@@ -13,7 +13,7 @@ attempts schedule; later retries apply the step schedule at least once).
 **Example** (Usage)
 
 ```ts
-import { Effect, ExecutionPlan, Layer, Context } from "effect"
+import { Context, Effect, ExecutionPlan, Layer } from "effect"
 
 const Endpoint = Context.Service<{ url: string }>("Endpoint")
 
@@ -39,6 +39,6 @@ const program = Effect.withExecutionPlan(fetchUrl, plan)
 declare const withExecutionPlan: { <Input, Provides, PlanE, PlanR>(plan: ExecutionPlan<{ provides: Provides; input: Input; error: PlanE; requirements: PlanR; }>): <A, E extends Input, R>(effect: Effect<A, E, R>) => Effect<A, E | PlanE, Exclude<R, Provides> | PlanR>; <A, E extends Input, R, Provides, Input, PlanE, PlanR>(effect: Effect<A, E, R>, plan: ExecutionPlan<{ provides: Provides; input: Input; error: PlanE; requirements: PlanR; }>): Effect<A, E | PlanE, Exclude<R, Provides> | PlanR>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L4043)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L3962)
 
 Since v3.16.0

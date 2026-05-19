@@ -28,4 +28,4 @@ declare const fail: { <E>(error: E): <A>(self: TxDeferred<A, E>) => Effect.Effec
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxDeferred.ts#L253)
 
-Since v4.0.0
+Since v2.0.0

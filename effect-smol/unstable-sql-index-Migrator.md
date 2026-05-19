@@ -11,6 +11,6 @@ Re-exports all named exports from the "./Migrator.ts" module as `Migrator`.
 export * as Migrator from "./Migrator.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L10)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L31)
 
 Since v4.0.0

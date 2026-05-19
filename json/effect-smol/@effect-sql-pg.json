@@ -13,7 +13,7 @@
     "since": "4.0.0",
     "category": null,
     "signature": "export * as PgClient from \"./PgClient.ts\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/pg/src/index.ts#L10"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/pg/src/index.ts#L27"
   },
   {
     "_tag": "Export",
@@ -29,7 +29,7 @@
     "since": "4.0.0",
     "category": null,
     "signature": "export * as PgMigrator from \"./PgMigrator.ts\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/pg/src/index.ts#L15"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/pg/src/index.ts#L52"
   },
   {
     "_tag": "Constant",
@@ -43,7 +43,7 @@
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
-    "category": "type ids",
+    "category": "type IDs",
     "signature": "declare const TypeId: \"~@effect/sql-pg/PgClient\"",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/pg/src/PgClient.ts#L70"
   },
@@ -203,7 +203,7 @@
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
-    "category": "constructor",
+    "category": "constructors",
     "signature": "declare const makeCompiler: (transform?: (_: string) => string, transformJson?: boolean) => Statement.Compiler",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/pg/src/PgClient.ts#L816"
   },
@@ -267,7 +267,7 @@
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
-    "category": "type ids",
+    "category": "type IDs",
     "signature": "type TypeId = \"~@effect/sql-pg/PgClient\"",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/pg/src/PgClient.ts#L78"
   },
@@ -299,7 +299,7 @@
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
-    "category": "constructor",
+    "category": "constructors",
     "signature": "declare const run: <R2 = never>(options: Migrator.MigratorOptions<R2>) => Effect.Effect<ReadonlyArray<readonly [id: number, name: string]>, Migrator.MigrationError | SqlError, SqlClient | PgClient | ChildProcessSpawner.ChildProcessSpawner | FileSystem.FileSystem | Path.Path | R2>",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/pg/src/PgMigrator.ts#L47"
   },

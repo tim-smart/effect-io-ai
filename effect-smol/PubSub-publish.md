@@ -13,8 +13,7 @@ accepted immediately, for example when a bounded PubSub is full. Prefer
 **Example** (Publishing a message)
 
 ```ts
-import { Effect } from "effect"
-import * as PubSub from "effect/PubSub"
+import { Effect, PubSub } from "effect"
 
 const program = Effect.gen(function*() {
   const pubsub = yield* PubSub.bounded<string>(10)
@@ -39,6 +38,6 @@ const program = Effect.gen(function*() {
 declare const publish: { <A>(value: A): (self: PubSub<A>) => Effect.Effect<boolean>; <A>(self: PubSub<A>, value: A): Effect.Effect<boolean>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PubSub.ts#L873)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PubSub.ts#L858)
 
 Since v2.0.0

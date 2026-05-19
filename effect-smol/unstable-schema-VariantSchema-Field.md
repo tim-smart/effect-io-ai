@@ -14,6 +14,6 @@ export interface Field<in out A extends Field.Config> extends Pipeable {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/VariantSchema.ts#L115)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/VariantSchema.ts#L114)
 
 Since v4.0.0

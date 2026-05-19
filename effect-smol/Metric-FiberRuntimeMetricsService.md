@@ -8,9 +8,8 @@ Interface for the fiber runtime metrics service that tracks fiber lifecycle even
 **Example** (Providing a custom fiber metrics service)
 
 ```ts
-import type { Context } from "effect"
 import { Data, Effect, Layer, Metric } from "effect"
-import type { Exit } from "effect/Exit"
+import type { Context, Exit } from "effect"
 
 class MetricsError extends Data.TaggedError("MetricsError")<{
   readonly operation: string
@@ -24,7 +23,7 @@ const customMetricsService: Metric.FiberRuntimeMetricsService = {
   },
   recordFiberEnd: (
     context: Context.Context<never>,
-    exit: Exit<unknown, unknown>
+    exit: Exit.Exit<unknown, unknown>
   ) => {
     console.log("Fiber completed with exit:", exit)
     // Custom logic for tracking fiber completion based on exit status
@@ -48,6 +47,6 @@ export interface FiberRuntimeMetricsService {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Metric.ts#L3570)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Metric.ts#L3568)
 
 Since v4.0.0

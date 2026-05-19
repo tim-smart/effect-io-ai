@@ -39,4 +39,4 @@ declare const makeOrder: <const R extends { readonly [x: string]: order.Order<an
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Struct.ts#L568)
 
-Since v2.0.0
+Since v4.0.0

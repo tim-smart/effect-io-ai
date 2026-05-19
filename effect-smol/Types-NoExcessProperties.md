@@ -27,6 +27,6 @@ type Result = Types.NoExcessProperties<Expected, Input>
 type NoExcessProperties<T, U> = T & Readonly<Record<Exclude<keyof U, keyof T>, never>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Types.ts#L761)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Types.ts#L758)
 
 Since v3.9.0

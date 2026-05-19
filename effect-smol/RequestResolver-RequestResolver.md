@@ -21,8 +21,8 @@ because the resolver did not supply a result.
 **Example** (Defining a request resolver)
 
 ```ts
-import type { Request } from "effect"
 import { Effect, Exit, RequestResolver } from "effect"
+import type { Request } from "effect"
 
 interface GetUserRequest extends Request.Request<string, Error> {
   readonly _tag: "GetUserRequest"

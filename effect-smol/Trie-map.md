@@ -8,8 +8,7 @@ Maps over the entries of the `Trie` using the specified function.
 **Example** (Mapping entries)
 
 ```ts
-import * as Equal from "effect/Equal"
-import * as Trie from "effect/Trie"
+import { Equal, Trie } from "effect"
 import * as assert from "node:assert"
 
 const trie = Trie.empty<number>().pipe(
@@ -40,6 +39,6 @@ assert.equal(Equal.equals(Trie.map(trie, (_, k) => k.length), trieMapK), true)
 declare const map: { <A, V>(f: (value: V, key: string) => A): (self: Trie<V>) => Trie<A>; <V, A>(self: Trie<V>, f: (value: V, key: string) => A): Trie<A>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Trie.ts#L695)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Trie.ts#L690)
 
 Since v2.0.0

@@ -8,8 +8,7 @@ Creates a new `Trie` from an iterable collection of key/value pairs (e.g. `Array
 **Example** (Creating a trie from entries)
 
 ```ts
-import * as Equal from "effect/Equal"
-import * as Trie from "effect/Trie"
+import { Equal, Trie } from "effect"
 import * as assert from "node:assert"
 
 const iterable: Array<readonly [string, number]> = [["call", 0], ["me", 1], [
@@ -38,6 +37,6 @@ assert.equal(
 declare const fromIterable: <V>(entries: Iterable<readonly [string, V]>) => Trie<V>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Trie.ts#L129)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Trie.ts#L128)
 
 Since v2.0.0

@@ -38,6 +38,6 @@ const program = Effect.gen(function*() {
 declare const poll: <A, E>(self: Dequeue<A, E>) => Effect<Option.Option<A>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Queue.ts#L1354)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Queue.ts#L1339)
 
-Since v4.0.0
+Since v2.0.0

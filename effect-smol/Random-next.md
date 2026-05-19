@@ -3,7 +3,7 @@ Module: `Random`<br />
 
 ## Random.next
 
-Generates a random number between 0 (inclusive) and 1 (inclusive).
+Generates a random number between 0 (inclusive) and 1 (exclusive).
 
 **Example** (Generating a random number)
 
@@ -22,6 +22,6 @@ const program = Effect.gen(function*() {
 declare const next: Effect.Effect<number, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Random.ts#L80)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Random.ts#L90)
 
-Since v4.0.0
+Since v2.0.0

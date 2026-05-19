@@ -29,4 +29,4 @@ declare const modify: { <A, R>(f: (current: NoInfer<A>) => [returnValue: R, newV
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxRef.ts#L142)
 
-Since v4.0.0
+Since v2.0.0

@@ -9,8 +9,7 @@ do notation chains.
 **Example** (Usage)
 
 ```ts
-import { Effect } from "effect"
-import { pipe } from "effect/Function"
+import { Effect, pipe } from "effect"
 
 const program = pipe(
   Effect.Do,
@@ -26,6 +25,6 @@ const program = pipe(
 declare const Do: Effect<{}, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L1253)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L1243)
 
-Since v4.0.0
+Since v2.0.0

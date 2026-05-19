@@ -42,6 +42,6 @@ console.log(SchemaIssue.getActual(issue))
 declare const getActual: (issue: Issue) => Option.Option<unknown>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaIssue.ts#L852)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaIssue.ts#L854)
 
 Since v4.0.0

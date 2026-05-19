@@ -60,6 +60,6 @@ export interface Equal extends Hash.Hash {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Equal.ts#L167)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Equal.ts#L168)
 
 Since v2.0.0

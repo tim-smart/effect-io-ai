@@ -30,6 +30,6 @@ const program = Effect.gen(function*() {
 declare const die: { (defect: unknown): <A, E>(self: Deferred<A, E>) => Effect<boolean>; <A, E>(self: Deferred<A, E>, defect: unknown): Effect<boolean>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Deferred.ts#L509)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Deferred.ts#L508)
 
 Since v2.0.0

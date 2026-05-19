@@ -32,6 +32,6 @@ console.log(Result.getOrThrow(Result.succeed(1)))
 declare const getOrThrow: <A, E>(self: Result<A, E>) => A
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L1161)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L1143)
 
-Since v4.0.0
+Since v2.0.0

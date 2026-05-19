@@ -14,6 +14,6 @@ conversion.
 declare const cast: <A, B>(a: A) => B
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Function.ts#L296)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Function.ts#L294)
 
-Since v2.0.0
+Since v4.0.0

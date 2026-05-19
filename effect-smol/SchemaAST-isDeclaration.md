@@ -13,4 +13,4 @@ declare const isDeclaration: (ast: AST) => ast is Declaration
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L162)
 
-Since v4.0.0
+Since v3.10.0

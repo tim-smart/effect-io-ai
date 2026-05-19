@@ -25,4 +25,4 @@ declare const toArray: <A>(self: TxPriorityQueue<A>) => Effect.Effect<Array<A>>
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxPriorityQueue.ts#L529)
 
-Since v4.0.0
+Since v2.0.0

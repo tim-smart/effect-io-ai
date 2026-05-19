@@ -24,6 +24,6 @@ type Services<A> = A extends Handlers<
     never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventLog.ts#L387)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventLog.ts#L386)
 
 Since v4.0.0

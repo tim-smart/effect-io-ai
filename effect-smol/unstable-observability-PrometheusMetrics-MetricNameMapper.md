@@ -8,7 +8,7 @@ A function that transforms metric names before formatting.
 **Example** (Mapping metric names)
 
 ```ts
-import type * as PrometheusMetrics from "effect/unstable/observability/PrometheusMetrics"
+import type { PrometheusMetrics } from "effect/unstable/observability"
 
 // Convert camelCase to snake_case
 const mapper: PrometheusMetrics.MetricNameMapper = (name) =>

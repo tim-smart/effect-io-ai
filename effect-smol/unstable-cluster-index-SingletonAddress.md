@@ -11,6 +11,6 @@ Re-exports all named exports from the "./SingletonAddress.ts" module as `Singlet
 export * as SingletonAddress from "./SingletonAddress.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L170)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L859)
 
 Since v4.0.0

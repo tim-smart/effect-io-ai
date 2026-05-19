@@ -14,6 +14,6 @@ You can implement some api middleware for this security scheme using
 declare const bearer: Bearer
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiSecurity.ts#L132)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiSecurity.ts#L131)
 
 Since v4.0.0

@@ -39,4 +39,4 @@ declare const setUnsafe: { <K, A, E, XE extends E, XA extends A>(key: K, fiber: 
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FiberMap.ts#L333)
 
-Since v2.0.0
+Since v4.0.0

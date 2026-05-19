@@ -11,7 +11,7 @@ occurrences on the command line, returning an array of all provided values.
 **Example** (Requiring repeated values)
 
 ```ts
-import * as Param from "effect/unstable/cli/Param"
+import { Param } from "effect/unstable/cli"
 
 // @internal - this module is not exported publicly
 
@@ -31,6 +31,6 @@ const inputs = Param.string(Param.flagKind, "input").pipe(
 declare const atLeast: { <A>(min: number): <Kind extends ParamKind>(self: Param<Kind, A>) => Param<Kind, ReadonlyArray<A>>; <Kind extends ParamKind, A>(self: Param<Kind, A>, min: number): Param<Kind, ReadonlyArray<A>>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Param.ts#L1522)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Param.ts#L1521)
 
 Since v4.0.0

@@ -9,8 +9,7 @@ hash.
 **Example** (Checking keys with a hash)
 
 ```ts
-import { Hash } from "effect"
-import * as HashMap from "effect/HashMap"
+import { Hash, HashMap } from "effect"
 
 // Create a map with case-sensitive keys
 const userMap = HashMap.make(
@@ -36,6 +35,6 @@ console.log(HashMap.hasHash(userMap, "Admin", lowercaseHash)) // false
 declare const hasHash: { <K1 extends K, K>(key: K1, hash: number): <V>(self: HashMap<K, V>) => boolean; <K1 extends K, K, V>(self: HashMap<K, V>, key: K1, hash: number): boolean; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashMap.ts#L535)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashMap.ts#L530)
 
 Since v2.0.0

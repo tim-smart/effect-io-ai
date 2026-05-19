@@ -8,7 +8,7 @@ Runs an effect in the background with the provided services.
 **Example** (Usage)
 
 ```ts
-import { Effect, Context } from "effect"
+import { Context, Effect } from "effect"
 
 interface Logger {
   log: (message: string) => void
@@ -35,6 +35,6 @@ const fiber = Effect.runForkWith(services)(program)
 declare const runForkWith: <R>(context: Context.Context<R>) => <A, E>(effect: Effect<A, E, R>, options?: RunOptions | undefined) => Fiber<A, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L8268)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L8174)
 
 Since v4.0.0

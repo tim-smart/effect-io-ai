@@ -25,6 +25,6 @@ console.log(withValue) // { count: 42 }
 declare const empty: <K extends string | symbol = never, V = never>() => Record<ReadonlyRecord.NonLiteralKey<K>, V>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Record.ts#L164)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Record.ts#L163)
 
 Since v2.0.0

@@ -32,6 +32,6 @@ console.log(Exit.hasInterrupts(Exit.succeed(42)))   // false
 declare const hasInterrupts: <A, E>(self: Exit<A, E>) => self is Failure<A, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Exit.ts#L501)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Exit.ts#L500)
 
 Since v4.0.0

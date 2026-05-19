@@ -8,7 +8,7 @@ Returns an `IterableIterator` of the entries within the `HashMap`.
 **Example** (Iterating entries)
 
 ```ts
-import * as HashMap from "effect/HashMap"
+import { HashMap } from "effect"
 
 // Create a configuration map
 const config = HashMap.make(
@@ -36,6 +36,6 @@ console.log(allEntries.length) // 3
 declare const entries: <K, V>(self: HashMap<K, V>) => IterableIterator<[K, V]>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashMap.ts#L687)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashMap.ts#L682)
 
 Since v2.0.0

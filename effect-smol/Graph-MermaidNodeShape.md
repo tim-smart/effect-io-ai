@@ -18,7 +18,7 @@ Each shape produces different visual representations in Mermaid diagrams:
 **Example** (Selecting Mermaid node shapes)
 
 ```ts
-import type * as Graph from "effect/Graph"
+import type { Graph } from "effect"
 
 // Shape selector function for different node types
 const shapeSelector = (nodeData: string): Graph.MermaidNodeShape => {
@@ -47,6 +47,6 @@ type MermaidNodeShape = | "rectangle" // A["label"]
   | "cylindrical"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Graph.ts#L1914)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Graph.ts#L1911)
 
-Since v4.0.0
+Since v3.18.0

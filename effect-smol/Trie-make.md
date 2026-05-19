@@ -8,8 +8,7 @@ Constructs a new `Trie` from the specified entries (`[string, V]`).
 **Example** (Constructing a trie from entries)
 
 ```ts
-import * as Equal from "effect/Equal"
-import * as Trie from "effect/Trie"
+import { Equal, Trie } from "effect"
 import * as assert from "node:assert"
 
 const trie = Trie.make(["ca", 0], ["me", 1])
@@ -27,6 +26,6 @@ assert.equal(
 declare const make: <Entries extends Array<readonly [string, any]>>(...entries: Entries) => Trie<Entries[number] extends readonly [any, infer V] ? V : never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Trie.ts#L153)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Trie.ts#L151)
 
 Since v2.0.0

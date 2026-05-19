@@ -8,12 +8,12 @@ Determines the sign of a given `BigDecimal`.
 **Example** (Reading decimal signs)
 
 ```ts
-import { fromStringUnsafe, sign } from "effect/BigDecimal"
+import { BigDecimal } from "effect"
 import * as assert from "node:assert"
 
-assert.deepStrictEqual(sign(fromStringUnsafe("-5")), -1)
-assert.deepStrictEqual(sign(fromStringUnsafe("0")), 0)
-assert.deepStrictEqual(sign(fromStringUnsafe("5")), 1)
+assert.deepStrictEqual(BigDecimal.sign(BigDecimal.fromStringUnsafe("-5")), -1)
+assert.deepStrictEqual(BigDecimal.sign(BigDecimal.fromStringUnsafe("0")), 0)
+assert.deepStrictEqual(BigDecimal.sign(BigDecimal.fromStringUnsafe("5")), 1)
 ```
 
 **Signature**

@@ -14,6 +14,6 @@ declare class RateLimiterError { constructor(props: {
   }) }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RateLimiter.ts#L415)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RateLimiter.ts#L419)
 
 Since v4.0.0

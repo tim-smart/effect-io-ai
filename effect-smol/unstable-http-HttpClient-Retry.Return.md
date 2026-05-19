@@ -24,6 +24,6 @@ type HttpClient.With<(O extends { schedule: Schedule.Schedule<infer _O, infer _I
   > extends infer Z ? Z : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpClient.ts#L815)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpClient.ts#L814)
 
 Since v4.0.0

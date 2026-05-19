@@ -35,6 +35,6 @@ console.log(processInput("   "))
 declare const nonEmptyString: SafeRefinement<string, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L1150)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L1149)
 
 Since v4.0.0

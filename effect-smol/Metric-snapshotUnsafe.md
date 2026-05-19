@@ -67,6 +67,6 @@ const safeSnapshotExample = Effect.gen(function*() {
 declare const snapshotUnsafe: (context: Context.Context<never>) => ReadonlyArray<Metric.Snapshot>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Metric.ts#L3221)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Metric.ts#L3220)
 
-Since v2.0.0
+Since v4.0.0

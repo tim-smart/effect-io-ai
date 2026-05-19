@@ -70,6 +70,6 @@ export interface Struct<Fields extends Struct.Fields> extends
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L2520)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L2585)
 
-Since v4.0.0
+Since v3.10.0

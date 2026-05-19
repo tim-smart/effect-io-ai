@@ -11,6 +11,6 @@ Re-exports all named exports from the "./HttpApiMiddleware.ts" module as `HttpAp
 export * as HttpApiMiddleware from "./HttpApiMiddleware.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L40)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L203)
 
 Since v4.0.0

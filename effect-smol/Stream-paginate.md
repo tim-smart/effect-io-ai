@@ -10,8 +10,7 @@ hence the name.
 **Example** (Paginating stream state)
 
 ```ts
-import { Console, Effect, Stream } from "effect"
-import * as Option from "effect/Option"
+import { Console, Effect, Option, Stream } from "effect"
 
 const stream = Stream.paginate(0, (n: number) =>
   Effect.succeed(
@@ -31,6 +30,6 @@ Effect.runPromise(Stream.runCollect(stream)).then(console.log)
 declare const paginate: <S, A, E = never, R = never>(s: S, f: (s: S) => Effect.Effect<readonly [ReadonlyArray<A>, Option.Option<S>], E, R>) => Stream<A, E, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L1704)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L1654)
 
 Since v2.0.0

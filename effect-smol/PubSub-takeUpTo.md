@@ -8,8 +8,7 @@ Takes up to the specified number of messages from the subscription without suspe
 **Example** (Taking up to a maximum number of messages)
 
 ```ts
-import { Effect } from "effect"
-import * as PubSub from "effect/PubSub"
+import { Effect, PubSub } from "effect"
 
 const program = Effect.gen(function*() {
   const pubsub = yield* PubSub.bounded<string>(10)
@@ -41,6 +40,6 @@ const program = Effect.gen(function*() {
 declare const takeUpTo: { (max: number): <A>(self: Subscription<A>) => Effect.Effect<Array<A>>; <A>(self: Subscription<A>, max: number): Effect.Effect<Array<A>>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PubSub.ts#L1244)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PubSub.ts#L1227)
 
 Since v4.0.0

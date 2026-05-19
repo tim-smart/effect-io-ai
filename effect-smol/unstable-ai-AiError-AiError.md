@@ -37,6 +37,6 @@ const handled = aiOperation.pipe(
 declare class AiError
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AiError.ts#L1455)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AiError.ts#L1452)
 
 Since v4.0.0

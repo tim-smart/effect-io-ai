@@ -7,12 +7,10 @@ Provides a layer or context to the stream, removing the corresponding
 service requirements. Use `options.local` to build the layer every time; by
 default, layers are shared between provide calls.
 
-**Previously Known As:** `provideSomeLayer`, `provideSomeContext`.
-
 **Example** (Providing stream requirements)
 
 ```ts
-import { Console, Effect, Layer, Context, Stream } from "effect"
+import { Console, Context, Effect, Layer, Stream } from "effect"
 
 class Env extends Context.Service<Env, { readonly name: string }>()("Env") {}
 
@@ -42,6 +40,6 @@ Effect.runPromise(program)
 declare const provide: { <AL, EL = never, RL = never>(layer: Layer.Layer<AL, EL, RL> | Context.Context<AL>, options?: { readonly local?: boolean | undefined; } | undefined): <A, E, R>(self: Stream<A, E, R>) => Stream<A, E | EL, Exclude<R, AL> | RL>; <A, E, R, AL, EL = never, RL = never>(self: Stream<A, E, R>, layer: Layer.Layer<AL, EL, RL> | Context.Context<AL>, options?: { readonly local?: boolean | undefined; } | undefined): Stream<A, E | EL, Exclude<R, AL> | RL>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L9623)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L9608)
 
 Since v4.0.0

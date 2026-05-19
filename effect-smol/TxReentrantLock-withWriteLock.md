@@ -29,4 +29,4 @@ declare const withWriteLock: { <A, E, R>(effect: Effect.Effect<A, E, R>): (self:
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxReentrantLock.ts#L423)
 
-Since v4.0.0
+Since v2.0.0

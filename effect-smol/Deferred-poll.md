@@ -29,6 +29,6 @@ const program = Effect.gen(function*() {
 declare const poll: <A, E>(self: Deferred<A, E>) => Effect<Option.Option<Effect<A, E>>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Deferred.ts#L665)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Deferred.ts#L664)
 
 Since v2.0.0

@@ -8,7 +8,7 @@ Runs an effect and returns a Promise of Exit with provided services.
 **Example** (Usage)
 
 ```ts
-import { Effect, Exit, Context } from "effect"
+import { Context, Effect, Exit } from "effect"
 
 interface Database {
   query: (sql: string) => string
@@ -38,6 +38,6 @@ Effect.runPromiseExitWith(services)(program).then((exit) => {
 declare const runPromiseExitWith: <R>(context: Context.Context<R>) => <A, E>(effect: Effect<A, E, R>, options?: RunOptions | undefined) => Promise<Exit.Exit<A, E>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L8523)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L8429)
 
 Since v4.0.0

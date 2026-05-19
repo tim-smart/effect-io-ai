@@ -41,4 +41,4 @@ declare const nested: { (prefix: string | Path): (self: ConfigProvider) => Confi
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ConfigProvider.ts#L578)
 
-Since v4.0.0
+Since v2.0.0

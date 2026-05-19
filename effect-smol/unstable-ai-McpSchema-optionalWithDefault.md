@@ -16,6 +16,6 @@ export interface optionalWithDefault<S extends Schema.Top & Schema.WithoutConstr
 {}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L54)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L55)
 
 Since v4.0.0

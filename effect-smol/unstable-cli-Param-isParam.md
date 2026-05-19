@@ -8,7 +8,7 @@ Type guard to check if a value is a Param.
 **Example** (Checking for params)
 
 ```ts
-import * as Param from "effect/unstable/cli/Param"
+import { Param } from "effect/unstable/cli"
 
 // @internal - this module is not exported publicly
 

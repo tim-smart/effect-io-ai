@@ -11,6 +11,6 @@ Re-exports all named exports from the "./Model.ts" module as `Model`.
 export * as Model from "./Model.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L325)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L376)
 
 Since v4.0.0

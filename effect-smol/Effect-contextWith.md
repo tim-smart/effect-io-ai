@@ -12,7 +12,7 @@ to conditionally execute logic based on what services are available.
 **Example** (Usage)
 
 ```ts
-import { Console, Effect, Option, Context } from "effect"
+import { Console, Context, Effect, Option } from "effect"
 
 const Logger = Context.Service<{
   log: (msg: string) => void
@@ -50,6 +50,6 @@ const withCache = Effect.provideService(program, Cache, {
 declare const contextWith: <R, A, E, R2>(f: (context: Context.Context<R>) => Effect<A, E, R2>) => Effect<A, E, R | R2>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L5434)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L5348)
 
 Since v2.0.0

@@ -9,9 +9,9 @@ process spawning, filesystem, path, stdio, and terminal services.
 **Signature**
 
 ```ts
-type BunServices = ChildProcessSpawner | FileSystem | Path | Terminal | Stdio
+type BunServices = ChildProcessSpawner | Crypto | FileSystem | Path | Terminal | Stdio
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunServices.ts#L43)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunServices.ts#L45)
 
 Since v4.0.0

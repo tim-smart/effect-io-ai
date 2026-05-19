@@ -11,6 +11,6 @@ Re-exports all named exports from the "./CliError.ts" module as `CliError`.
 export * as CliError from "./CliError.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L15)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L61)
 
 Since v4.0.0

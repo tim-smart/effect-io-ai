@@ -15,4 +15,4 @@ declare const getShards: <A extends PrimaryKey.PrimaryKey>(self: HashRing<A>, co
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashRing.ts#L268)
 
-Since v4.0.0
+Since v3.19.0

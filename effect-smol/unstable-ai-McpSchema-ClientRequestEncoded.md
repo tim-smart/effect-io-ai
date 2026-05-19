@@ -11,6 +11,6 @@ Encoded union of all client-to-server MCP request messages.
 type ClientRequestEncoded = RequestEncoded<typeof ClientRequestRpcs>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L2150)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L2153)
 
 Since v4.0.0

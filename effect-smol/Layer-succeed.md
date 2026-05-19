@@ -8,7 +8,7 @@ Constructs a layer from the specified value.
 **Example** (Providing services from values)
 
 ```ts
-import { Effect, Layer, Context } from "effect"
+import { Context, Effect, Layer } from "effect"
 
 class Database extends Context.Service<Database, {
   readonly query: (sql: string) => Effect.Effect<string>

@@ -14,4 +14,4 @@ declare const addMany: { <A extends PrimaryKey.PrimaryKey>(nodes: Iterable<A>, o
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashRing.ts#L140)
 
-Since v4.0.0
+Since v3.19.0

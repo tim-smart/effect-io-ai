@@ -14,6 +14,6 @@ closed, the fiber is interrupted immediately.
 declare const runIn: { (scope: Scope): <A, E>(self: Fiber<A, E>) => Fiber<A, E>; <A, E>(self: Fiber<A, E>, scope: Scope): Fiber<A, E>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Fiber.ts#L510)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Fiber.ts#L509)
 
 Since v4.0.0

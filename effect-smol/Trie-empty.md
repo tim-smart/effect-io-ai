@@ -8,7 +8,7 @@ Creates an empty `Trie`.
 **Example** (Creating an empty trie)
 
 ```ts
-import * as Trie from "effect/Trie"
+import { Trie } from "effect"
 import * as assert from "node:assert"
 
 const trie = Trie.empty<string>()

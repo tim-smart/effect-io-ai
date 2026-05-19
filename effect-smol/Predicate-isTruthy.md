@@ -33,6 +33,6 @@ See also: `isNullish`, `isNotNullish`
 declare const isTruthy: (input: unknown) => boolean
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L451)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L449)
 
 Since v2.0.0

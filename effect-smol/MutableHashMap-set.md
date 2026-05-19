@@ -9,7 +9,7 @@ If the key already exists, its value is updated.
 **Example** (Setting key-value pairs)
 
 ```ts
-import * as MutableHashMap from "effect/MutableHashMap"
+import { MutableHashMap } from "effect"
 
 const map = MutableHashMap.empty<string, number>()
 
@@ -36,6 +36,6 @@ console.log(MutableHashMap.size(map)) // 3
 declare const set: { <K, V>(key: K, value: V): (self: MutableHashMap<K, V>) => MutableHashMap<K, V>; <K, V>(self: MutableHashMap<K, V>, key: K, value: V): MutableHashMap<K, V>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableHashMap.ts#L386)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableHashMap.ts#L385)
 
 Since v2.0.0

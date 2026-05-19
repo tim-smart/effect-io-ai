@@ -22,4 +22,4 @@ declare const empty: () => Context<never>
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Context.ts#L572)
 
-Since v4.0.0
+Since v2.0.0

@@ -12,7 +12,7 @@ replaces it for the wrapped effect with the value returned by the updater.
 **Example** (Usage)
 
 ```ts
-import { Console, Effect, Context } from "effect"
+import { Console, Context, Effect } from "effect"
 
 // Define a counter service
 const Counter = Context.Service<{ count: number }>("Counter")
@@ -38,6 +38,6 @@ Effect.runPromise(result).then(console.log)
 declare const updateService: { <I, A>(service: Context.Key<I, A>, f: (value: A) => A): <XA, E, R>(self: Effect<XA, E, R>) => Effect<XA, E, R | I>; <XA, E, R, I, A>(self: Effect<XA, E, R>, service: Context.Key<I, A>, f: (value: A) => A): Effect<XA, E, R | I>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L5716)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L5630)
 
 Since v2.0.0

@@ -18,6 +18,6 @@ export interface DateTimeInsertFromNumber extends
 {}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Model.ts#L520)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Model.ts#L518)
 
 Since v4.0.0

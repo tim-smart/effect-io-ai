@@ -11,6 +11,6 @@ Re-exports all named exports from the "./MssqlClient.ts" module as `MssqlClient`
 export * as MssqlClient from "./MssqlClient.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/sql/d1/src/index.ts#L17)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/sql/d1/src/index.ts#L43)
 
 Since v4.0.0

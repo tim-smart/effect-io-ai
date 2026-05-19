@@ -11,6 +11,6 @@ Re-exports all named exports from the "./MysqlClient.ts" module as `MysqlClient`
 export * as MysqlClient from "./MysqlClient.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/sql/mysql2/src/index.ts#L10)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/sql/mysql2/src/index.ts#L27)
 
 Since v4.0.0

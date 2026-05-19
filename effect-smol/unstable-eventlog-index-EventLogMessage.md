@@ -11,6 +11,6 @@ Re-exports all named exports from the "./EventLogMessage.ts" module as `EventLog
 export * as EventLogMessage from "./EventLogMessage.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L35)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L132)
 
 Since v4.0.0

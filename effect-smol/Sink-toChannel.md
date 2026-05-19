@@ -21,6 +21,6 @@ const channel = Sink.toChannel(sink)
 declare const toChannel: <A, In, L, E, R>(self: Sink<A, In, L, E, R>) => Channel.Channel<never, E, End<A, L>, NonEmptyReadonlyArray<In>, never, void, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Sink.ts#L290)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Sink.ts#L286)
 
 Since v2.0.0

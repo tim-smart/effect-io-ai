@@ -12,6 +12,6 @@ to an `Error` to customize the process exit code used by `runMain`.
 type errorExitCode = "~effect/Runtime/errorExitCode"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Runtime.ts#L238)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Runtime.ts#L233)
 
 Since v4.0.0

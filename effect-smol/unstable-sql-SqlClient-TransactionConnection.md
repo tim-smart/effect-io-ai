@@ -14,6 +14,6 @@ export interface TransactionConnection {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SqlClient.ts#L309)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SqlClient.ts#L310)
 
 Since v4.0.0

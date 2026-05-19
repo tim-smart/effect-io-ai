@@ -9,6 +9,19 @@ Calling `value.pipe(f, g, h)` passes the value through each function from
 left to right, returning the final result. Many Effect data types implement
 this so operations can be chained without nesting function calls.
 
+**Example** (Chaining operations with pipe)
+
+```ts
+import { Effect } from "effect"
+
+// The Pipeable interface allows Effect values to be chained using the pipe method
+const program = Effect.succeed(1).pipe(
+  Effect.map((x) => x + 1),
+  Effect.flatMap((x) => Effect.succeed(x * 2)),
+  Effect.tap((x) => Effect.log(`Result: ${x}`))
+)
+```
+
 **Signature**
 
 ```ts
@@ -495,18 +508,6 @@ export interface Pipeable {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Pipeable.ts#L47)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Pipeable.ts#L48)
 
 Since v2.0.0
-**Example** (Chaining operations with pipe)
-
-```ts
-import { Effect } from "effect"
-
-// The Pipeable interface allows Effect values to be chained using the pipe method
-const program = Effect.succeed(1).pipe(
-  Effect.map((x) => x + 1),
-  Effect.flatMap((x) => Effect.succeed(x * 2)),
-  Effect.tap((x) => Effect.log(`Result: ${x}`))
-)
-```

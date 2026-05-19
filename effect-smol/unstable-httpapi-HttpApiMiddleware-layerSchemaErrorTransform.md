@@ -9,6 +9,8 @@ The middleware catches schema errors produced while running an endpoint and uses
 the supplied `transform` function to convert them into the middleware's declared
 error schema.
 
+**Example** (Mapping schema errors to custom errors)
+
 ```ts
 import { Effect, Schema } from "effect"
 import { HttpApiMiddleware } from "effect/unstable/httpapi"
@@ -34,6 +36,6 @@ export const ErrorHandlerLayer = HttpApiMiddleware.layerSchemaErrorTransform(
 declare const layerSchemaErrorTransform: <Id, E extends ErrorConstraint, Requires>(service: Context.Service<Id, HttpApiMiddleware<never, E, Requires>>, transform: (error: HttpApiSchemaError, context: { readonly endpoint: HttpApiEndpoint.AnyWithProps; readonly group: HttpApiGroup.AnyWithProps; }) => Effect.Effect<HttpServerResponse, ErrorSchemaFromConstraint<E>["Type"] | HttpApiSchemaError, Requires | HttpRouter.Provided>) => Layer.Layer<Id>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiMiddleware.ts#L419)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiMiddleware.ts#L421)
 
 Since v4.0.0

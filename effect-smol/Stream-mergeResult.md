@@ -6,12 +6,6 @@ Module: `Stream`<br />
 Merges this stream and the specified stream together, tagging values from the
 left stream as `Result.succeed` and values from the right stream as `Result.fail`.
 
-**Previously Known As**
-
-This API replaces the following from Effect 3.x:
-
-- `Stream.mergeEither`
-
 **Example** (Merging streams into results)
 
 ```ts
@@ -45,6 +39,6 @@ Effect.runPromise(program)
 declare const mergeResult: { <A2, E2, R2>(that: Stream<A2, E2, R2>): <A, E, R>(self: Stream<A, E, R>) => Stream<Result.Result<A, A2>, E2 | E, R2 | R>; <A, E, R, A2, E2, R2>(self: Stream<A, E, R>, that: Stream<A2, E2, R2>): Stream<Result.Result<A, A2>, E | E2, R | R2>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L3243)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L3159)
 
-Since v2.0.0
+Since v4.0.0

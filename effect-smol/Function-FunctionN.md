@@ -8,10 +8,10 @@ Represents a function with multiple arguments.
 **Example** (Typing a variadic function)
 
 ```ts
-import type { FunctionN } from "effect/Function"
+import type { Function } from "effect"
 import * as assert from "node:assert"
 
-const sum: FunctionN<[number, number], number> = (a, b) => a + b
+const sum: Function.FunctionN<[number, number], number> = (a, b) => a + b
 assert.deepStrictEqual(sum(2, 3), 5)
 ```
 
@@ -21,6 +21,6 @@ assert.deepStrictEqual(sum(2, 3), 5)
 type FunctionN<A, B> = (...args: A) => B
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Function.ts#L244)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Function.ts#L242)
 
 Since v2.0.0

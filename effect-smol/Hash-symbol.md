@@ -11,6 +11,6 @@ The unique identifier used to identify objects that implement the Hash interface
 declare const symbol: "~effect/interfaces/Hash"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Hash.ts#L19)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Hash.ts#L20)
 
 Since v2.0.0

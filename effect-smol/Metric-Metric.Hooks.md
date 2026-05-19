@@ -52,6 +52,6 @@ export interface Hooks<in Input, out State> {
   }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Metric.ts#L1424)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Metric.ts#L1423)
 
-Since v2.0.0
+Since v4.0.0

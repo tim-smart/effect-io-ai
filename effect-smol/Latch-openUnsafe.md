@@ -15,6 +15,6 @@ change immediately instead of returning an `Effect`.
 declare const openUnsafe: (self: Latch) => boolean
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Latch.ts#L184)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Latch.ts#L172)
 
 Since v4.0.0

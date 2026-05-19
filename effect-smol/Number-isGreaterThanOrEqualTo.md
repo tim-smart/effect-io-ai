@@ -8,12 +8,12 @@ Returns a function that checks if a given `number` is greater than or equal to t
 **Example** (Checking greater-than-or-equal comparisons)
 
 ```ts
-import { isGreaterThanOrEqualTo } from "effect/Number"
+import { Number } from "effect"
 import * as assert from "node:assert"
 
-assert.deepStrictEqual(isGreaterThanOrEqualTo(2, 3), false)
-assert.deepStrictEqual(isGreaterThanOrEqualTo(3, 3), true)
-assert.deepStrictEqual(isGreaterThanOrEqualTo(4, 3), true)
+assert.deepStrictEqual(Number.isGreaterThanOrEqualTo(2, 3), false)
+assert.deepStrictEqual(Number.isGreaterThanOrEqualTo(3, 3), true)
+assert.deepStrictEqual(Number.isGreaterThanOrEqualTo(4, 3), true)
 ```
 
 **Signature**
@@ -24,4 +24,4 @@ declare const isGreaterThanOrEqualTo: { (that: number): (self: number) => boolea
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Number.ts#L320)
 
-Since v2.0.0
+Since v4.0.0

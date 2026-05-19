@@ -19,11 +19,11 @@ specified, the function interprets the input `url` as relative to this
 `base`. This is especially useful when dealing with URLs that might not be
 fully qualified.
 
-**Example**
+**Example** (Parsing absolute and relative URLs)
 
 ```ts
-import { Url } from "effect/unstable/http"
 import { Result } from "effect"
+import { Url } from "effect/unstable/http"
 
 // Parse an absolute URL
 //

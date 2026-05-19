@@ -34,6 +34,6 @@ const provider = ConfigProvider.fromUnknown({})
 declare const option: <A>(self: Config<A>) => Config<Option.Option<A>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Config.ts#L466)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Config.ts#L471)
 
-Since v4.0.0
+Since v2.0.0

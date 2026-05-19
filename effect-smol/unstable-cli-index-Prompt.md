@@ -11,6 +11,6 @@ Re-exports all named exports from the "./Prompt.ts" module as `Prompt`.
 export * as Prompt from "./Prompt.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L81)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L280)
 
 Since v4.0.0

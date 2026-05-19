@@ -13,7 +13,7 @@
     "since": "4.0.0",
     "category": null,
     "signature": "export * as Logger from \"./Logger.ts\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/index.ts#L10"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/index.ts#L31"
   },
   {
     "_tag": "Export",
@@ -29,7 +29,7 @@
     "since": "4.0.0",
     "category": null,
     "signature": "export * as Metrics from \"./Metrics.ts\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/index.ts#L15"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/index.ts#L52"
   },
   {
     "_tag": "Export",
@@ -45,7 +45,7 @@
     "since": "4.0.0",
     "category": null,
     "signature": "export * as NodeSdk from \"./NodeSdk.ts\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/index.ts#L20"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/index.ts#L79"
   },
   {
     "_tag": "Export",
@@ -61,7 +61,7 @@
     "since": "4.0.0",
     "category": null,
     "signature": "export * as Resource from \"./Resource.ts\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/index.ts#L25"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/index.ts#L101"
   },
   {
     "_tag": "Export",
@@ -77,7 +77,7 @@
     "since": "4.0.0",
     "category": null,
     "signature": "export * as Tracer from \"./Tracer.ts\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/index.ts#L30"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/index.ts#L123"
   },
   {
     "_tag": "Export",
@@ -93,7 +93,7 @@
     "since": "4.0.0",
     "category": null,
     "signature": "export * as WebSdk from \"./WebSdk.ts\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/index.ts#L35"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/index.ts#L154"
   },
   {
     "_tag": "Class",
@@ -107,7 +107,7 @@
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
-    "category": "Services",
+    "category": "services",
     "signature": "declare class OtelLoggerProvider",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Logger.ts#L48"
   },
@@ -123,7 +123,7 @@
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
-    "category": "Constructors",
+    "category": "constructors",
     "signature": "declare const make: Effect.Effect<Logger.Logger<unknown, void>, never, OtelLoggerProvider>",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Logger.ts#L89"
   },
@@ -139,7 +139,7 @@
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
-    "category": "Conversions",
+    "category": "converting",
     "signature": "declare const logLevelToSeverityNumber: (level: LogLevel.LogLevel) => SeverityNumber",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Logger.ts#L64"
   },
@@ -155,7 +155,7 @@
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
-    "category": "Layers",
+    "category": "layers",
     "signature": "declare const layer: (options: { readonly mergeWithExisting?: boolean | undefined; }) => Layer.Layer<never, never, OtelLoggerProvider>",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Logger.ts#L137"
   },
@@ -171,7 +171,7 @@
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
-    "category": "Layers",
+    "category": "layers",
     "signature": "declare const layerLoggerProvider: (processor: Otel.LogRecordProcessor | NonEmptyReadonlyArray<Otel.LogRecordProcessor>, config?: Omit<Otel.LoggerProviderConfig, \"resource\"> & { readonly shutdownTimeout?: Duration.Input | undefined; }) => Layer.Layer<OtelLoggerProvider, never, Resource>",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Logger.ts#L159"
   },
@@ -187,7 +187,7 @@
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
-    "category": "Constructors",
+    "category": "constructors",
     "signature": "declare const makeProducer: (temporality?: TemporalityPreference) => Effect.Effect<MetricProducer, never, Resource>",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Metrics.ts#L51"
   },
@@ -203,7 +203,7 @@
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
-    "category": "Constructors",
+    "category": "constructors",
     "signature": "declare const registerProducer: (self: MetricProducer, metricReader: LazyArg<MetricReader | Arr.NonEmptyReadonlyArray<MetricReader>>, options?: { readonly shutdownTimeout?: Duration.Input | undefined; }) => Effect.Effect<Array<any>, never, Scope.Scope>",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Metrics.ts#L64"
   },
@@ -219,7 +219,7 @@
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
-    "category": "Layers",
+    "category": "layers",
     "signature": "declare const layer: (evaluate: LazyArg<MetricReader | Arr.NonEmptyReadonlyArray<MetricReader>>, options?: { readonly shutdownTimeout?: Duration.Input | undefined; readonly temporality?: TemporalityPreference | undefined; }) => Layer.Layer<never, never, Resource>",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Metrics.ts#L121"
   },
@@ -235,7 +235,7 @@
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
-    "category": "Models",
+    "category": "models",
     "signature": "type TemporalityPreference = \"cumulative\" | \"delta\"",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Metrics.ts#L43"
   },
@@ -251,7 +251,7 @@
     "deprecated": false,
     "examples": [],
     "since": "2.0.0",
-    "category": "layer",
+    "category": "layers",
     "signature": "declare const layerEmpty: Layer.Layer<Resource.Resource, never, never>",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/NodeSdk.ts#L158"
   },
@@ -267,7 +267,7 @@
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
-    "category": "Layers",
+    "category": "layers",
     "signature": "declare const layerTracerProvider: (processor: SpanProcessor | NonEmptyReadonlyArray<SpanProcessor>, config?: Omit<TracerConfig, \"resource\"> & { readonly shutdownTimeout?: Duration.Input | undefined; }) => Layer.Layer<Tracer.OtelTracerProvider, never, Resource.Resource>",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/NodeSdk.ts#L70"
   },
@@ -283,7 +283,7 @@
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
-    "category": "Layers",
+    "category": "layers",
     "signature": "declare const layer: { (evaluate: LazyArg<Configuration>): Layer.Layer<Resource.Resource>; <R, E>(evaluate: Effect.Effect<Configuration, E, R>): Layer.Layer<Resource.Resource, E, R>; }",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/NodeSdk.ts#L105"
   },
@@ -299,7 +299,7 @@
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
-    "category": "Models",
+    "category": "models",
     "signature": "export interface Configuration {\n  readonly spanProcessor?: SpanProcessor | ReadonlyArray<SpanProcessor> | undefined\n  readonly tracerConfig?: Omit<TracerConfig, \"resource\"> | undefined\n  readonly metricReader?: MetricReader | ReadonlyArray<MetricReader> | undefined\n  readonly metricTemporality?: Metrics.TemporalityPreference | undefined\n  readonly logRecordProcessor?: LogRecordProcessor | ReadonlyArray<LogRecordProcessor> | undefined\n  readonly loggerProviderConfig?: Omit<LoggerProviderConfig, \"resource\"> | undefined\n  readonly loggerMergeWithExisting?: boolean | undefined\n  readonly resource?: {\n    readonly serviceName: string\n    readonly serviceVersion?: string\n    readonly attributes?: Otel.Attributes\n  } | undefined\n  readonly shutdownTimeout?: Duration.Input | undefined\n}",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/NodeSdk.ts#L48"
   },
@@ -315,7 +315,7 @@
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
-    "category": "Services",
+    "category": "services",
     "signature": "declare class Resource",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Resource.ts#L36"
   },
@@ -331,7 +331,7 @@
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
-    "category": "Layers",
+    "category": "layers",
     "signature": "declare const layerEmpty: Layer.Layer<Resource, never, never>",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Resource.ts#L127"
   },
@@ -347,7 +347,7 @@
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
-    "category": "Layers",
+    "category": "layers",
     "signature": "declare const layer: (config: { readonly serviceName: string; readonly serviceVersion?: string; readonly attributes?: OtelApi.Attributes; }) => Layer.Layer<Resource, never, never>",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Resource.ts#L47"
   },
@@ -363,7 +363,7 @@
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
-    "category": "Configuration",
+    "category": "configuration",
     "signature": "declare const configToAttributes: (options: { readonly serviceName: string; readonly serviceVersion?: string; readonly attributes?: OtelApi.Attributes; }) => Record<string, string>",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Resource.ts#L63"
   },
@@ -379,7 +379,7 @@
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
-    "category": "Layers",
+    "category": "layers",
     "signature": "declare const layerFromEnv: (additionalAttributes?: OtelApi.Attributes | undefined) => Layer.Layer<Resource>",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Resource.ts#L88"
   },
@@ -395,7 +395,7 @@
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
-    "category": "Services",
+    "category": "services",
     "signature": "declare class OtelTracer",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Tracer.ts#L46"
   },
@@ -411,7 +411,7 @@
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
-    "category": "Services",
+    "category": "services",
     "signature": "declare class OtelTracerProvider",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Tracer.ts#L57"
   },
@@ -427,7 +427,7 @@
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
-    "category": "Services",
+    "category": "services",
     "signature": "declare class OtelTraceFlags",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Tracer.ts#L68"
   },
@@ -443,7 +443,7 @@
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
-    "category": "Services",
+    "category": "services",
     "signature": "declare class OtelTraceState",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Tracer.ts#L79"
   },
@@ -459,7 +459,7 @@
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
-    "category": "Constructors",
+    "category": "constructors",
     "signature": "declare const make: Effect.Effect<Tracer.Tracer, never, OtelTracer>",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Tracer.ts#L94"
   },
@@ -475,7 +475,7 @@
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
-    "category": "Layers",
+    "category": "layers",
     "signature": "declare const layerGlobalProvider: Layer.Layer<OtelTracerProvider, never, never>",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Tracer.ts#L171"
   },
@@ -491,7 +491,7 @@
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
-    "category": "Layers",
+    "category": "layers",
     "signature": "declare const layerTracer: Layer.Layer<OtelTracer, never, OtelTracerProvider | Resource>",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Tracer.ts#L182"
   },
@@ -507,7 +507,7 @@
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
-    "category": "Layers",
+    "category": "layers",
     "signature": "declare const layerGlobalTracer: Layer.Layer<OtelTracer, never, Resource>",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Tracer.ts#L200"
   },
@@ -523,7 +523,7 @@
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
-    "category": "Layers",
+    "category": "layers",
     "signature": "declare const layerGlobal: Layer.Layer<OtelTracer, never, Resource>",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Tracer.ts#L210"
   },
@@ -539,7 +539,7 @@
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
-    "category": "Layers",
+    "category": "layers",
     "signature": "declare const layerWithoutOtelTracer: Layer.Layer<never, never, OtelTracer>",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Tracer.ts#L220"
   },
@@ -555,7 +555,7 @@
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
-    "category": "Layers",
+    "category": "layers",
     "signature": "declare const layer: Layer.Layer<OtelTracer, never, OtelTracerProvider | Resource>",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Tracer.ts#L228"
   },
@@ -603,7 +603,7 @@
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
-    "category": "Constructors",
+    "category": "constructors",
     "signature": "declare const makeExternalSpan: (options: { readonly traceId: string; readonly spanId: string; readonly traceFlags?: number | undefined; readonly traceState?: string | Otel.TraceState | undefined; }) => Tracer.ExternalSpan",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Tracer.ts#L127"
   },
@@ -619,7 +619,7 @@
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
-    "category": "Layers",
+    "category": "layers",
     "signature": "declare const layerTracerProvider: (processor: SpanProcessor | NonEmptyReadonlyArray<SpanProcessor>, config?: Omit<TracerConfig, \"resource\">) => Layer.Layer<Tracer.OtelTracerProvider, never, Resource.Resource>",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/WebSdk.ts#L72"
   },
@@ -635,7 +635,7 @@
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
-    "category": "Layers",
+    "category": "layers",
     "signature": "declare const layer: { (evaluate: LazyArg<Configuration>): Layer.Layer<Resource.Resource>; <E, R>(evaluate: Effect.Effect<Configuration, E, R>): Layer.Layer<Resource.Resource, E, R>; }",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/WebSdk.ts#L103"
   },
@@ -651,7 +651,7 @@
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
-    "category": "Models",
+    "category": "models",
     "signature": "export interface Configuration {\n  readonly spanProcessor?: SpanProcessor | ReadonlyArray<SpanProcessor> | undefined\n  readonly tracerConfig?: Omit<TracerConfig, \"resource\">\n  readonly metricReader?: MetricReader | ReadonlyArray<MetricReader> | undefined\n  readonly metricTemporality?: Metrics.TemporalityPreference | undefined\n  readonly logRecordProcessor?: LogRecordProcessor | ReadonlyArray<LogRecordProcessor> | undefined\n  readonly loggerProviderConfig?: Omit<LoggerProviderConfig, \"resource\"> | undefined\n  readonly loggerMergeWithExisting?: boolean | undefined\n  readonly resource: {\n    readonly serviceName: string\n    readonly serviceVersion?: string\n    readonly attributes?: Otel.Attributes\n  }\n}",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/WebSdk.ts#L51"
   }

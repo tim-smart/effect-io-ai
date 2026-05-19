@@ -38,6 +38,6 @@ type ExtractMatch<I, P> = [ExtractAndNarrow<I, P>] extends [infer EI] ? EI
     : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L2317)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L2315)
 
 Since v4.0.0

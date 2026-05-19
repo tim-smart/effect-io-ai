@@ -11,6 +11,6 @@ A `Combiner` that returns the minimum `bigint`.
 declare const CombinerMin: Combiner.Combiner<bigint>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigInt.ts#L783)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigInt.ts#L785)
 
 Since v4.0.0

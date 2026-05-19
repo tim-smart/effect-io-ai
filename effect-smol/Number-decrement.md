@@ -8,10 +8,10 @@ Decrements a number by `1`.
 **Example** (Decrementing a number)
 
 ```ts
-import { decrement } from "effect/Number"
+import { Number } from "effect"
 import * as assert from "node:assert"
 
-assert.deepStrictEqual(decrement(3), 2)
+assert.deepStrictEqual(Number.decrement(3), 2)
 ```
 
 **Signature**

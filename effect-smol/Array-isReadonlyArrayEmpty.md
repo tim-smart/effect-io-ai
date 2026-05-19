@@ -27,4 +27,4 @@ declare const isReadonlyArrayEmpty: <A>(self: ReadonlyArray<A>) => self is reado
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L801)
 
-Since v2.0.0
+Since v4.0.0

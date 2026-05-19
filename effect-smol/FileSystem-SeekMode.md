@@ -14,6 +14,6 @@ Specifies the reference point for seeking within a file.
 type SeekMode = "start" | "current"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FileSystem.ts#L1195)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FileSystem.ts#L1194)
 
 Since v4.0.0

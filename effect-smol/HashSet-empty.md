@@ -8,7 +8,7 @@ Creates an empty HashSet.
 **Example** (Creating an empty HashSet)
 
 ```ts
-import * as HashSet from "effect/HashSet"
+import { HashSet } from "effect"
 
 const set = HashSet.empty<string>()
 
@@ -26,6 +26,6 @@ console.log(HashSet.size(withValues)) // 2
 declare const empty: <V = never>() => HashSet<V>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashSet.ts#L154)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashSet.ts#L153)
 
 Since v2.0.0

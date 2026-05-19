@@ -11,6 +11,6 @@ Text output format configuration for plain text, JSON object, or JSON Schema res
 type TextResponseFormatConfiguration = typeof TextResponseFormatConfiguration.Type
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiSchema.ts#L452)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiSchema.ts#L472)
 
 Since v4.0.0

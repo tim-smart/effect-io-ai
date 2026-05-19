@@ -12,7 +12,7 @@ on the transient map.
 **Example** (Applying batched mutations)
 
 ```ts
-import * as HashMap from "effect/HashMap"
+import { HashMap } from "effect"
 
 const map1 = HashMap.make(["a", 1])
 const map2 = HashMap.mutate(map1, (mutable) => {
@@ -28,6 +28,6 @@ const map2 = HashMap.mutate(map1, (mutable) => {
 declare const mutate: { <K, V>(f: (self: HashMap<K, V>) => void): (self: HashMap<K, V>) => HashMap<K, V>; <K, V>(self: HashMap<K, V>, f: (self: HashMap<K, V>) => void): HashMap<K, V>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashMap.ts#L829)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashMap.ts#L824)
 
 Since v2.0.0

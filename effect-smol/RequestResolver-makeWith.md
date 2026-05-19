@@ -12,6 +12,6 @@ control over its behavior.
 declare const makeWith: <A extends Request.Any>(options: { readonly batchKey: (request: Request.Entry<A>) => unknown; readonly preCheck?: ((entry: Request.Entry<A>) => boolean) | undefined; readonly delay: Effect.Effect<void>; readonly collectWhile: (requests: ReadonlySet<Request.Entry<A>>) => boolean; readonly runAll: (entries: NonEmptyArray<Request.Entry<A>>, key: unknown) => Effect.Effect<void, Request.Error<A>>; }) => RequestResolver<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RequestResolver.ts#L189)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RequestResolver.ts#L188)
 
 Since v4.0.0

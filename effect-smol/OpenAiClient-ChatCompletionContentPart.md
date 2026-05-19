@@ -21,6 +21,6 @@ type ChatCompletionContentPart = | {
   }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/OpenAiClient.ts#L858)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/OpenAiClient.ts#L877)
 
 Since v4.0.0

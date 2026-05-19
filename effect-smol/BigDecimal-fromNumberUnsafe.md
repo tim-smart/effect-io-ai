@@ -13,11 +13,11 @@ Throws a `RangeError` if the number is not finite (`NaN`, `+Infinity` or `-Infin
 **Example** (Creating decimals from finite numbers)
 
 ```ts
-import { fromNumberUnsafe, make } from "effect/BigDecimal"
+import { BigDecimal } from "effect"
 import * as assert from "node:assert"
 
-assert.deepStrictEqual(fromNumberUnsafe(123), make(123n, 0))
-assert.deepStrictEqual(fromNumberUnsafe(123.456), make(123456n, 3))
+assert.deepStrictEqual(BigDecimal.fromNumberUnsafe(123), BigDecimal.make(123n, 0))
+assert.deepStrictEqual(BigDecimal.fromNumberUnsafe(123.456), BigDecimal.make(123456n, 3))
 ```
 
 **Signature**

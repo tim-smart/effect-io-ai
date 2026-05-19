@@ -14,6 +14,6 @@ from the header map. A present Web body is exposed as a stream body.
 declare const fromWeb: (response: Response) => HttpServerResponse
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpServerResponse.ts#L1310)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpServerResponse.ts#L1311)
 
 Since v4.0.0

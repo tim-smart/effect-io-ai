@@ -5,12 +5,6 @@ Module: `Stream`<br />
 
 Creates a stream from an effect producing a value of type `A` which repeats forever.
 
-**Previously Known As**
-
-This API replaces the following from Effect 3.x:
-
-- `Stream.repeatEffect`
-
 **Example** (Repeating an effect forever)
 
 ```ts
@@ -34,6 +28,6 @@ Effect.runPromise(program)
 declare const fromEffectRepeat: <A, E, R>(effect: Effect.Effect<A, E, R>) => Stream<A, Pull.ExcludeDone<E>, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L521)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L505)
 
 Since v4.0.0

@@ -8,12 +8,12 @@ Checks if a given `BigDecimal` is an integer.
 **Example** (Checking integer decimals)
 
 ```ts
-import { fromStringUnsafe, isInteger } from "effect/BigDecimal"
+import { BigDecimal } from "effect"
 import * as assert from "node:assert"
 
-assert.deepStrictEqual(isInteger(fromStringUnsafe("0")), true)
-assert.deepStrictEqual(isInteger(fromStringUnsafe("1")), true)
-assert.deepStrictEqual(isInteger(fromStringUnsafe("1.1")), false)
+assert.deepStrictEqual(BigDecimal.isInteger(BigDecimal.fromStringUnsafe("0")), true)
+assert.deepStrictEqual(BigDecimal.isInteger(BigDecimal.fromStringUnsafe("1")), true)
+assert.deepStrictEqual(BigDecimal.isInteger(BigDecimal.fromStringUnsafe("1.1")), false)
 ```
 
 **Signature**

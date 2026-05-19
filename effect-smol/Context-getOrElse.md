@@ -44,4 +44,4 @@ declare const getOrElse: { <S, I, B>(key: Key<I, S>, orElse: LazyArg<B>): <Servi
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Context.ts#L715)
 
-Since v4.0.0
+Since v3.7.0

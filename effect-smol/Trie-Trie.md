@@ -10,7 +10,7 @@ remove return new `Trie` values.
 **Example** (Using a trie for prefix search)
 
 ```ts
-import * as Trie from "effect/Trie"
+import { Trie } from "effect"
 
 // Create a trie with string-to-number mappings
 const trie: Trie.Trie<number> = Trie.make(

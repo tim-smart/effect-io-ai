@@ -11,6 +11,6 @@ Re-exports all named exports from the "./NodeHttpIncomingMessage.ts" module as `
 export * as NodeHttpIncomingMessage from "./NodeHttpIncomingMessage.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L42)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L166)
 
 Since v4.0.0

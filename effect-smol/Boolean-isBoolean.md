@@ -8,11 +8,11 @@ Tests if a value is a `boolean`.
 **Example** (Checking for booleans)
 
 ```ts
-import { isBoolean } from "effect/Boolean"
+import { Boolean } from "effect"
 import * as assert from "node:assert"
 
-assert.deepStrictEqual(isBoolean(true), true)
-assert.deepStrictEqual(isBoolean("true"), false)
+assert.deepStrictEqual(Boolean.isBoolean(true), true)
+assert.deepStrictEqual(Boolean.isBoolean("true"), false)
 ```
 
 **Signature**

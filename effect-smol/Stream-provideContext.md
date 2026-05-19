@@ -8,7 +8,7 @@ Provides multiple services to the stream using a context.
 **Example** (Providing multiple services to the stream using a context)
 
 ```ts
-import { Console, Effect, Context, Stream } from "effect"
+import { Console, Context, Effect, Stream } from "effect"
 
 class Config extends Context.Service<Config, { readonly prefix: string }>()("Config") {}
 class Greeter extends Context.Service<Greeter, { greet: (name: string) => string }>()("Greeter") {}
@@ -40,6 +40,6 @@ Effect.runPromise(program)
 declare const provideContext: { <R2>(context: Context.Context<R2>): <A, E, R>(self: Stream<A, E, R>) => Stream<A, E, Exclude<R, R2>>; <A, E, R, R2>(self: Stream<A, E, R>, context: Context.Context<R2>): Stream<A, E, Exclude<R, R2>>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L9682)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L9667)
 
-Since v4.0.0
+Since v2.0.0

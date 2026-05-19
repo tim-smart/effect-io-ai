@@ -5,6 +5,8 @@ Module: `RateLimiter`<br />
 
 Access a function that sleeps when the rate limit is exceeded.
 
+**Example** (Sleeping until rate limit permits)
+
 ```ts
 import { Effect } from "effect"
 import { RateLimiter } from "effect/unstable/persistence"
@@ -30,6 +32,6 @@ Effect.gen(function*() {
 declare const makeSleep: Effect.Effect<(options: { readonly algorithm?: "fixed-window" | "token-bucket" | undefined; readonly window: Duration.Input; readonly limit: number; readonly key: string; readonly tokens?: number | undefined; }) => Effect.Effect<ConsumeResult, RateLimiterError>, never, RateLimiter>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RateLimiter.ts#L307)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RateLimiter.ts#L311)
 
 Since v4.0.0

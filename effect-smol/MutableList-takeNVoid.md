@@ -16,6 +16,6 @@ cleared.
 declare const takeNVoid: <A>(self: MutableList<A>, n: number) => void
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableList.ts#L681)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableList.ts#L678)
 
 Since v4.0.0

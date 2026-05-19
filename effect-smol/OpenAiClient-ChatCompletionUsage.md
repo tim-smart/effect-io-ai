@@ -11,6 +11,6 @@ Decoded token usage summary returned by chat completions.
 type ChatCompletionUsage = typeof ChatCompletionUsage.Type
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/OpenAiClient.ts#L1098)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/OpenAiClient.ts#L1130)
 
 Since v4.0.0

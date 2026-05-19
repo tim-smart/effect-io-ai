@@ -5,7 +5,7 @@ Module: `Prompt`<br />
 
 Creates a prompt that lets users filter select choices by typing.
 
-**Example**
+**Example** (Filtering choices with autocomplete)
 
 ```ts
 import { Prompt } from "effect/unstable/cli"
@@ -26,6 +26,6 @@ const language = Prompt.autoComplete({
 declare const autoComplete: <const A>(options: AutoCompleteOptions<A>) => Prompt<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L1091)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L1083)
 
 Since v4.0.0

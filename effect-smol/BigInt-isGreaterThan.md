@@ -8,12 +8,12 @@ Returns `true` if the first argument is greater than the second, otherwise `fals
 **Example** (Checking greater-than comparisons)
 
 ```ts
-import { isGreaterThan } from "effect/BigInt"
+import { BigInt } from "effect"
 import * as assert from "node:assert"
 
-assert.deepStrictEqual(isGreaterThan(2n, 3n), false)
-assert.deepStrictEqual(isGreaterThan(3n, 3n), false)
-assert.deepStrictEqual(isGreaterThan(4n, 3n), true)
+assert.deepStrictEqual(BigInt.isGreaterThan(2n, 3n), false)
+assert.deepStrictEqual(BigInt.isGreaterThan(3n, 3n), false)
+assert.deepStrictEqual(BigInt.isGreaterThan(4n, 3n), true)
 ```
 
 **Signature**
@@ -22,6 +22,6 @@ assert.deepStrictEqual(isGreaterThan(4n, 3n), true)
 declare const isGreaterThan: { (that: bigint): (self: bigint) => boolean; (self: bigint, that: bigint): boolean; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigInt.ts#L306)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigInt.ts#L304)
 
-Since v2.0.0
+Since v4.0.0

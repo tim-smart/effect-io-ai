@@ -11,6 +11,6 @@ Request payload sent to the OpenAI embeddings endpoint.
 type CreateEmbeddingRequest = typeof CreateEmbeddingRequest.Type
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiSchema.ts#L924)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiSchema.ts#L957)
 
 Since v4.0.0

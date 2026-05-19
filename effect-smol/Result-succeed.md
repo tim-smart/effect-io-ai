@@ -9,12 +9,6 @@ Creates a `Result` holding a `Success` value.
 - The error type `E` defaults to `never`
 - Does not mutate input; allocates a new `Success` wrapper
 
-**Previously Known As**
-
-This API replaces the following from Effect 3.x:
-
-- `Either.right`
-
 **Example** (Wrapping a value)
 
 ```ts
@@ -37,6 +31,6 @@ console.log(Result.isSuccess(result))
 declare const succeed: <A>(right: A) => Result<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L329)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L317)
 
 Since v4.0.0

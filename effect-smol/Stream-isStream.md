@@ -29,6 +29,6 @@ Effect.runPromise(program)
 declare const isStream: (u: unknown) => u is Stream<unknown, unknown, unknown>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L306)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L302)
 
-Since v2.0.0
+Since v4.0.0

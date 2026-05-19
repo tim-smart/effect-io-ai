@@ -8,7 +8,7 @@ Reduces the HashSet to a single value by iterating through the values and applyi
 **Example** (Reducing HashSet values)
 
 ```ts
-import * as HashSet from "effect/HashSet"
+import { HashSet } from "effect"
 
 const numbers = HashSet.make(1, 2, 3, 4, 5)
 const sum = HashSet.reduce(numbers, 0, (acc, n) => acc + n)
@@ -26,6 +26,6 @@ console.log(concatenated) // Order may vary: "abc", "bac", etc.
 declare const reduce: { <V, U>(zero: U, f: (accumulator: U, value: V) => U): (self: HashSet<V>) => U; <V, U>(self: HashSet<V>, zero: U, f: (accumulator: U, value: V) => U): U; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashSet.ts#L628)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashSet.ts#L626)
 
 Since v2.0.0

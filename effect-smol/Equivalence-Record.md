@@ -60,6 +60,6 @@ See also: `Struct`, `Array_`
 declare const Record: <A>(value: Equivalence<A>) => Equivalence<Record<PropertyKey, A>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Equivalence.ts#L792)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Equivalence.ts#L791)
 
 Since v4.0.0

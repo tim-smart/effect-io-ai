@@ -9,13 +9,13 @@ The result is obtained by first applying the `ab` function to `a` and then apply
 **Example** (Composing two functions)
 
 ```ts
-import { compose } from "effect/Function"
+import { Function } from "effect"
 import * as assert from "node:assert"
 
 const increment = (n: number) => n + 1
 const square = (n: number) => n * n
 
-assert.strictEqual(compose(increment, square)(2), 9)
+assert.strictEqual(Function.compose(increment, square)(2), 9)
 ```
 
 **Signature**
@@ -24,6 +24,6 @@ assert.strictEqual(compose(increment, square)(2), 9)
 declare const compose: { <B, C>(bc: (b: B) => C): <A>(self: (a: A) => B) => (a: A) => C; <A, B, C>(self: (a: A) => B, bc: (b: B) => C): (a: A) => C; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Function.ts#L448)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Function.ts#L446)
 
 Since v2.0.0

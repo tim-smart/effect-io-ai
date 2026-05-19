@@ -26,6 +26,6 @@ console.log(Redacted.isRedacted(plainString)) // false
 declare const isRedacted: (u: unknown) => u is Redacted<unknown>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Redacted.ts#L127)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Redacted.ts#L126)
 
 Since v3.3.0

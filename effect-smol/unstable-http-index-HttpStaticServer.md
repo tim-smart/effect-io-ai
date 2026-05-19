@@ -11,6 +11,6 @@ Re-exports all named exports from the "./HttpStaticServer.ts" module as `HttpSta
 export * as HttpStaticServer from "./HttpStaticServer.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L115)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L482)
 
 Since v4.0.0

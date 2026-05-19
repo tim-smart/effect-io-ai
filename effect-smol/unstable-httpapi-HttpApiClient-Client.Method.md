@@ -43,6 +43,6 @@ type Method<Endpoint, E, R> = [Endpoint] extends [
     never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiClient.ts#L134)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiClient.ts#L133)
 
 Since v4.0.0

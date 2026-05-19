@@ -32,6 +32,6 @@ console.log(Exit.isFailure(exit)) // true
 declare const failCause: <E>(cause: Cause.Cause<E>) => Exit<never, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Exit.ts#L263)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Exit.ts#L262)
 
 Since v2.0.0

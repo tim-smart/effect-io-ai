@@ -14,6 +14,6 @@ fail the channel. Done `Take` values complete the channel.
 declare const fromPubSubTake: <A, E, Done>(pubsub: PubSub.PubSub<Take.Take<A, E, Done>>) => Channel<Arr.NonEmptyReadonlyArray<A>, E, Done>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L1672)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L1664)
 
 Since v4.0.0

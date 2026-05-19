@@ -27,6 +27,6 @@ Effect.runPromiseExit(program).then(console.log)
 declare const failCause: <E>(cause: Cause.Cause<E>) => Effect<never, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L1482)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L1471)
 
 Since v2.0.0

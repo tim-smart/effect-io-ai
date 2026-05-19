@@ -48,6 +48,6 @@ const multiLoggerLive = Logger.layer([
 declare const consoleLogFmt: Logger<unknown, void>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Logger.ts#L965)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Logger.ts#L964)
 
-Since v2.0.0
+Since v4.0.0

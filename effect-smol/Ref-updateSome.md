@@ -11,8 +11,7 @@ If it returns `Option.none`, the Ref is left unchanged.
 **Example** (Conditionally updating a value)
 
 ```ts
-import { Effect, Ref } from "effect"
-import * as Option from "effect/Option"
+import { Effect, Option, Ref } from "effect"
 
 const program = Effect.gen(function*() {
   const counter = yield* Ref.make(5)
@@ -44,6 +43,6 @@ const program = Effect.gen(function*() {
 declare const updateSome: (<A>(f: (a: A) => Option.Option<A>) => (self: Ref<A>) => Effect.Effect<void>) & (<A>(self: Ref<A>, f: (a: A) => Option.Option<A>) => Effect.Effect<void>)
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Ref.ts#L623)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Ref.ts#L616)
 
 Since v2.0.0

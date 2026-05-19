@@ -35,6 +35,6 @@ console.log(doc.representation._tag)
 declare const fromAST: (ast: AST.AST) => Document
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaRepresentation.ts#L1612)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaRepresentation.ts#L1614)
 
 Since v4.0.0

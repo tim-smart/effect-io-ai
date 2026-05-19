@@ -11,6 +11,6 @@ Checks if the specified value is a `MutableHashMap`, `false` otherwise.
 declare const isMutableHashMap: <K, V>(value: unknown) => value is MutableHashMap<K, V>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableHashMap.ts#L89)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableHashMap.ts#L88)
 
 Since v4.0.0

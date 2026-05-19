@@ -40,4 +40,4 @@ declare const orElseResult: { <B>(that: LazyArg<Option<B>>): <A>(self: Option<A>
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L761)
 
-Since v2.0.0
+Since v4.0.0

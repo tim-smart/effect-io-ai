@@ -12,6 +12,6 @@ MCP clients.
 declare class McpServerClientMiddleware
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L2017)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L2020)
 
 Since v4.0.0

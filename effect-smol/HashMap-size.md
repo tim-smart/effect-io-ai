@@ -8,7 +8,7 @@ Returns the number of entries within the `HashMap`.
 **Example** (Getting the size)
 
 ```ts
-import * as HashMap from "effect/HashMap"
+import { HashMap } from "effect"
 
 const emptyMap = HashMap.empty<string, number>()
 const map = HashMap.make(["a", 1], ["b", 2], ["c", 3])
@@ -23,6 +23,6 @@ console.log(HashMap.size(map)) // 3
 declare const size: <K, V>(self: HashMap<K, V>) => number
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashMap.ts#L741)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashMap.ts#L736)
 
 Since v2.0.0

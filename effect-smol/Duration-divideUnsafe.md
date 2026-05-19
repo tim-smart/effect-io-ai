@@ -32,4 +32,4 @@ declare const divideUnsafe: { (by: number): (self: Duration) => Duration; (self:
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Duration.ts#L1264)
 
-Since v2.4.19
+Since v4.0.0

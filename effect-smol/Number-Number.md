@@ -8,7 +8,7 @@ The global `Number` constructor.
 **Example** (Coercing values to numbers)
 
 ```ts
-import * as N from "effect/Number"
+import { Number as N } from "effect"
 
 const num = N.Number("42")
 console.log(num) // 42

@@ -44,4 +44,4 @@ declare const fromNullishOr: <A>(a: A) => Option<NonNullable<A>>
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L848)
 
-Since v2.0.0
+Since v4.0.0

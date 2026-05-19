@@ -36,6 +36,6 @@ export interface Model<in out Provider, in out Provides, in out Requires>
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Model.ts#L57)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Model.ts#L53)
 
 Since v4.0.0

@@ -11,6 +11,6 @@ Re-exports all named exports from the "./ClusterSchema.ts" module as `ClusterSch
 export * as ClusterSchema from "./ClusterSchema.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L25)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L122)
 
 Since v4.0.0

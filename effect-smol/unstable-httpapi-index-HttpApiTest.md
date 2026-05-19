@@ -11,6 +11,6 @@ Re-exports all named exports from the "./HttpApiTest.ts" module as `HttpApiTest`
 export * as HttpApiTest from "./HttpApiTest.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L91)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L347)
 
 Since v4.0.0

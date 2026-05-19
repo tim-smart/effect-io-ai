@@ -29,6 +29,6 @@ const program = Effect.gen(function*() {
 declare const clear: <V>(self: TxHashSet<V>) => Effect.Effect<void>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashSet.ts#L528)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashSet.ts#L525)
 
-Since v2.0.0
+Since v4.0.0

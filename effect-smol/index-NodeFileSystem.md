@@ -11,6 +11,6 @@ Re-exports all named exports from the "./NodeFileSystem.ts" module as `NodeFileS
 export * as NodeFileSystem from "./NodeFileSystem.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L32)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L118)
 
 Since v4.0.0

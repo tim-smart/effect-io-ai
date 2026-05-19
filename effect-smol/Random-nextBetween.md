@@ -3,7 +3,7 @@ Module: `Random`<br />
 
 ## Random.nextBetween
 
-Generates a random number between `min` (inclusive) and `max` (inclusive).
+Generates a random number between `min` (inclusive) and `max` (exclusive).
 
 **Example** (Generating a bounded random number)
 
@@ -22,6 +22,6 @@ const program = Effect.gen(function*() {
 declare const nextBetween: (min: number, max: number) => Effect.Effect<number>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Random.ts#L138)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Random.ts#L148)
 
 Since v4.0.0

@@ -20,6 +20,6 @@ console.log(Chunk.toArray(chunk)) // [1, 2, 3, 4]
 declare const make: <As extends readonly [any, ...Array<any>]>(...as: As) => NonEmptyChunk<As[number]>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L381)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L379)
 
 Since v2.0.0

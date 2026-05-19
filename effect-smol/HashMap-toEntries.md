@@ -8,7 +8,7 @@ Returns an `Array<[K, V]>` of the entries within the `HashMap`.
 **Example** (Converting entries to an array)
 
 ```ts
-import * as HashMap from "effect/HashMap"
+import { HashMap } from "effect"
 
 const gameScores = HashMap.make(
   ["alice", 1250],
@@ -37,6 +37,6 @@ const sortedMap = HashMap.fromIterable(scoreEntries)
 declare const toEntries: <K, V>(self: HashMap<K, V>) => Array<[K, V]>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashMap.ts#L721)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashMap.ts#L716)
 
 Since v2.0.0

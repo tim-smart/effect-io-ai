@@ -15,6 +15,6 @@ human-readable reason.
 declare class CancelledNotification
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L667)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L670)
 
 Since v4.0.0

@@ -11,6 +11,6 @@ Re-exports all named exports from the "./Runner.ts" module as `Runner`.
 export * as Runner from "./Runner.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L110)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L565)
 
 Since v4.0.0

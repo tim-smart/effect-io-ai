@@ -31,6 +31,6 @@ console.log(processValue(true)) // "Boolean: yes"
 declare const string: Predicate.Refinement<unknown, string>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L1220)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L1219)
 
 Since v4.0.0

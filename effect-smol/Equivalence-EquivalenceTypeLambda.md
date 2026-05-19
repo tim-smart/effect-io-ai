@@ -17,11 +17,10 @@ Behavior:
 **Example** (Type-level usage)
 
 ```ts
-import type { Equivalence } from "effect"
-import type { Kind } from "effect/HKT"
+import type { Equivalence, HKT } from "effect"
 
 // Used internally for type-level computations
-type NumberEquivalence = Kind<
+type NumberEquivalence = HKT.Kind<
   Equivalence.EquivalenceTypeLambda,
   never,
   never,
@@ -41,6 +40,6 @@ export interface EquivalenceTypeLambda extends TypeLambda {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Equivalence.ts#L139)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Equivalence.ts#L138)
 
 Since v2.0.0

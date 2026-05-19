@@ -12,6 +12,6 @@ filesystem, path, stdio, and terminal services.
 declare const layer: Layer.Layer<BunServices, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunServices.ts#L52)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunServices.ts#L54)
 
 Since v4.0.0

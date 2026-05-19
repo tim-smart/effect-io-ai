@@ -10,8 +10,8 @@ with stack trace capture settings.
 **Example** (Configuring span options)
 
 ```ts
-import type { Tracer } from "effect"
 import { Effect } from "effect"
+import type { Tracer } from "effect"
 
 // Create an effect with span options
 const options: Tracer.SpanOptions = {

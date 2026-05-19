@@ -17,6 +17,6 @@ export interface Variance<A, E> {
   }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Queue.ts#L302)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Queue.ts#L293)
 
-Since v3.8.0
+Since v4.0.0

@@ -8,7 +8,7 @@ Creates a HashSet from a variable number of values.
 **Example** (Creating a HashSet from values)
 
 ```ts
-import * as HashSet from "effect/HashSet"
+import { HashSet } from "effect"
 
 const fruits = HashSet.make("apple", "banana", "cherry")
 console.log(HashSet.size(fruits)) // 3
@@ -26,6 +26,6 @@ console.log(HashSet.size(mixed)) // 3
 declare const make: <Values extends ReadonlyArray<any>>(...values: Values) => HashSet<Values[number]>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashSet.ts#L177)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashSet.ts#L176)
 
 Since v2.0.0

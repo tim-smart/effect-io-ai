@@ -14,4 +14,4 @@ type Services<T> = [T] extends [ManagedRuntime<infer R, infer _E>] ? R
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ManagedRuntime.ts#L74)
 
-Since v4.0.0
+Since v3.4.0

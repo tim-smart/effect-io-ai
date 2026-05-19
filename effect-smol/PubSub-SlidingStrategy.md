@@ -12,8 +12,7 @@ not receive some messages published to the `PubSub` while it is subscribed.
 **Example** (Using a sliding strategy)
 
 ```ts
-import { Effect } from "effect"
-import * as PubSub from "effect/PubSub"
+import { Effect, PubSub } from "effect"
 
 const program = Effect.gen(function*() {
   // Create PubSub with sliding strategy
@@ -47,6 +46,6 @@ const program = Effect.gen(function*() {
 declare class SlidingStrategy<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PubSub.ts#L2512)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PubSub.ts#L2492)
 
 Since v4.0.0

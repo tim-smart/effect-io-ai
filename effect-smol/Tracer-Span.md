@@ -12,8 +12,8 @@ attributes, events, and links.
 **Example** (Working with spans)
 
 ```ts
-import type { Tracer } from "effect"
 import { Context, Exit, Option } from "effect"
+import type { Tracer } from "effect"
 
 const attributes = new Map<string, unknown>()
 const links: Array<Tracer.SpanLink> = []

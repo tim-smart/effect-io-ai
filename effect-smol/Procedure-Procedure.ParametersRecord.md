@@ -15,6 +15,6 @@ type { readonly [K in keyof A]: A[K] extends Parameter.Parameter<infer T> ? T : 
     & {}
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/sql/d1/src/Procedure.ts#L91)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/sql/d1/src/Procedure.ts#L92)
 
 Since v4.0.0

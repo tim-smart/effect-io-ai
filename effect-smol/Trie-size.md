@@ -8,7 +8,7 @@ Returns the size of the `Trie` (number of entries in the `Trie`).
 **Example** (Getting the size)
 
 ```ts
-import * as Trie from "effect/Trie"
+import { Trie } from "effect"
 import * as assert from "node:assert"
 
 const trie = Trie.empty<number>().pipe(
@@ -25,6 +25,6 @@ assert.equal(Trie.size(trie), 2)
 declare const size: <V>(self: Trie<V>) => number
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Trie.ts#L464)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Trie.ts#L462)
 
 Since v2.0.0

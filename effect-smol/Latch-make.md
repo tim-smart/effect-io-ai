@@ -7,12 +7,6 @@ Creates a `Latch` inside `Effect`.
 
 The latch starts closed by default; pass `true` to create it open.
 
-**Previously Known As**
-
-This API replaces the following from Effect 3.x:
-
-- `Effect.makeLatch`
-
 **Example** (Creating a latch)
 
 ```ts
@@ -43,6 +37,6 @@ const program = Effect.gen(function*() {
 declare const make: (open?: boolean | undefined) => Effect.Effect<Latch>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Latch.ts#L161)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Latch.ts#L149)
 
-Since v3.8.0
+Since v4.0.0

@@ -42,4 +42,4 @@ declare const touch: { <K>(key: K): <A, E>(self: RcMap<K, A, E>) => Effect.Effec
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RcMap.ts#L516)
 
-Since v3.5.0
+Since v3.13.0

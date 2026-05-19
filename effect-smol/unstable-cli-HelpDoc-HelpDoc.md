@@ -10,8 +10,8 @@ different output formats (text, markdown, JSON, etc.).
 **Example** (Defining command help documentation)
 
 ```ts
-import { Option as O, Context } from "effect"
-import type * as HelpDoc from "effect/unstable/cli/HelpDoc"
+import { Context, Option as O } from "effect"
+import type { HelpDoc } from "effect/unstable/cli"
 
 const deployCommandHelp: HelpDoc.HelpDoc = {
   description: "Deploy your application to the cloud",

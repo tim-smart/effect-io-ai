@@ -20,6 +20,6 @@ console.log(Chunk.size(chunk)) // 3
 declare const size: <A>(self: Chunk<A>) => number
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L1835)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L1827)
 
 Since v2.0.0

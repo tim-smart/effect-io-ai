@@ -8,7 +8,7 @@ Provides the entry point for do-notation style stream composition.
 **Example** (Starting stream do notation)
 
 ```ts
-import { Console, Effect, Stream, pipe } from "effect"
+import { Console, Effect, pipe, Stream } from "effect"
 
 const program = pipe(
   Stream.Do,
@@ -31,6 +31,6 @@ Effect.runPromise(effect)
 declare const Do: Stream<{}, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L9970)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L9955)
 
-Since v4.0.0
+Since v2.0.0

@@ -11,6 +11,6 @@ Re-exports all named exports from the "./BunSocketServer.ts" module as `BunSocke
 export * as BunSocketServer from "./BunSocketServer.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/index.ts#L87)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/index.ts#L374)
 
 Since v4.0.0

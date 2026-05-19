@@ -15,21 +15,16 @@ throws an error if it fails.
 ```ts
 import { Schema } from "effect"
 
-const assertString: (u: unknown) => asserts u is string = Schema.asserts(
-  Schema.String
-)
+const input: unknown = "hello"
 
-// This will pass silently (no return value)
-try {
-  assertString("hello")
-  console.log("String assertion passed")
-} catch (error) {
-  console.log("String assertion failed")
-}
+// This will pass silently (no return value) and narrow input to string
+Schema.asserts(Schema.String, input)
+console.log(input.toUpperCase())
 
 // This will throw an error
 try {
-  assertString(123)
+  const invalid: unknown = 123
+  Schema.asserts(Schema.String, invalid)
 } catch (error) {
   console.log("Non-string assertion failed as expected")
 }
@@ -38,9 +33,9 @@ try {
 **Signature**
 
 ```ts
-declare const asserts: <T>(schema: Schema<T>) => <I>(input: I) => asserts input is I & T
+declare const asserts: <S extends Top, I>(schema: S, input: I) => asserts input is I & S["Type"]
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L1135)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L1132)
 
 Since v4.0.0

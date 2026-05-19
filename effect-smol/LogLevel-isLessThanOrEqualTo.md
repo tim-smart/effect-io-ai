@@ -45,4 +45,4 @@ declare const isLessThanOrEqualTo: { (that: LogLevel): (self: LogLevel) => boole
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/LogLevel.ts#L307)
 
-Since v2.0.0
+Since v4.0.0

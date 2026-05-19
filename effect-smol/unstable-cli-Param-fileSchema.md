@@ -9,7 +9,7 @@ Creates a parameter that reads and validates file content using a schema.
 
 ```ts
 import { Schema } from "effect"
-import * as Param from "effect/unstable/cli/Param"
+import { Param } from "effect/unstable/cli"
 // @internal - this module is not exported publicly
 
 // Parse JSON config file

@@ -42,4 +42,4 @@ export interface Enqueue<in A, in E = never> extends Inspectable {
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Queue.ts#L149)
 
-Since v4.0.0
+Since v2.0.0

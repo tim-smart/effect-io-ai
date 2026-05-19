@@ -8,7 +8,7 @@ Type guard to check if a param is a Single param (not composed).
 **Example** (Checking for single params)
 
 ```ts
-import * as Param from "effect/unstable/cli/Param"
+import { Param } from "effect/unstable/cli"
 
 // @internal - this module is not exported publicly
 

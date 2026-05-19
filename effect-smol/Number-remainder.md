@@ -10,12 +10,12 @@ It always takes the sign of the dividend.
 **Example** (Calculating remainders)
 
 ```ts
-import { remainder } from "effect/Number"
+import { Number } from "effect"
 import * as assert from "node:assert"
 
-assert.deepStrictEqual(remainder(2, 2), 0)
-assert.deepStrictEqual(remainder(3, 2), 1)
-assert.deepStrictEqual(remainder(-4, 2), -0)
+assert.deepStrictEqual(Number.remainder(2, 2), 0)
+assert.deepStrictEqual(Number.remainder(3, 2), 1)
+assert.deepStrictEqual(Number.remainder(-4, 2), -0)
 ```
 
 **Signature**

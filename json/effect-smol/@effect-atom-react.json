@@ -331,7 +331,7 @@
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
-    "category": "Type IDs",
+    "category": "type IDs",
     "signature": "declare const TypeId: \"~@effect/atom-react/ScopedAtom\"",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/atom/react/src/ScopedAtom.ts#L40"
   },
@@ -343,13 +343,13 @@
     },
     "project": "@effect/atom-react",
     "name": "make",
-    "description": "Creates a ScopedAtom from a factory function.\n\n**Example** (Creating a scoped atom with input)\n\n```ts\nimport * as Atom from \"effect/unstable/reactivity/Atom\"\nimport * as React from \"react\"\nimport * as ScopedAtom from \"@effect/atom-react/ScopedAtom\"\nimport { useAtomValue } from \"@effect/atom-react\"\n\nconst User = ScopedAtom.make((name: string) => Atom.make(name))\n\nfunction UserName() {\n  const atom = User.use()\n  const value = useAtomValue(atom)\n  return React.createElement(\"span\", null, value)\n}\n\nexport function App() {\n  return React.createElement(\n    User.Provider,\n    { value: \"Ada\" },\n    React.createElement(UserName)\n  )\n}\n```",
+    "description": "Creates a ScopedAtom from a factory function.\n\n**Example** (Creating a scoped atom with input)\n\n```ts\nimport * as AtomReact from \"@effect/atom-react\"\nimport { Atom } from \"effect/unstable/reactivity\"\nimport * as React from \"react\"\n\nconst User = AtomReact.make((name: string) => Atom.make(name))\n\nfunction UserName() {\n  const atom = User.use()\n  const value = AtomReact.useAtomValue(atom)\n  return React.createElement(\"span\", null, value)\n}\n\nexport function App() {\n  return React.createElement(\n    User.Provider,\n    { value: \"Ada\" },\n    React.createElement(UserName)\n  )\n}\n```",
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
     "category": "constructors",
     "signature": "declare const make: <A extends Atom.Atom<any>, Input = never>(f: (() => A) | ((input: Input) => A)) => ScopedAtom<A, Input>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/atom/react/src/ScopedAtom.ts#L108"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/atom/react/src/ScopedAtom.ts#L106"
   },
   {
     "_tag": "Interface",
@@ -359,13 +359,13 @@
     },
     "project": "@effect/atom-react",
     "name": "ScopedAtom",
-    "description": "Scoped Atom interface with a provider-backed instance.\n\n**Example** (Providing and reading a scoped atom)\n\n```ts\nimport * as Atom from \"effect/unstable/reactivity/Atom\"\nimport * as React from \"react\"\nimport * as ScopedAtom from \"@effect/atom-react/ScopedAtom\"\nimport { useAtomValue } from \"@effect/atom-react\"\n\nconst Counter = ScopedAtom.make(() => Atom.make(0))\n\nfunction View() {\n  const atom = Counter.use()\n  const value = useAtomValue(atom)\n  return React.createElement(\"div\", null, value)\n}\n\nexport function App() {\n  return React.createElement(Counter.Provider, null, React.createElement(View))\n}\n```",
+    "description": "Scoped Atom interface with a provider-backed instance.\n\n**Example** (Providing and reading a scoped atom)\n\n```ts\nimport * as AtomReact from \"@effect/atom-react\"\nimport { Atom } from \"effect/unstable/reactivity\"\nimport * as React from \"react\"\n\nconst Counter = AtomReact.make(() => Atom.make(0))\n\nfunction View() {\n  const atom = Counter.use()\n  const value = AtomReact.useAtomValue(atom)\n  return React.createElement(\"div\", null, value)\n}\n\nexport function App() {\n  return React.createElement(Counter.Provider, null, React.createElement(View))\n}\n```",
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
     "category": "models",
     "signature": "export interface ScopedAtom<A extends Atom.Atom<any>, Input = never> {\n  readonly [TypeId]: TypeId\n  use(): A\n  Provider: [Input] extends [never] ? React.FC<{ readonly children?: React.ReactNode | undefined }>\n    : React.FC<{ readonly children?: React.ReactNode | undefined; readonly value: Input }>\n  Context: React.Context<A>\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/atom/react/src/ScopedAtom.ts#L69"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/atom/react/src/ScopedAtom.ts#L68"
   },
   {
     "_tag": "TypeAlias",
@@ -379,7 +379,7 @@
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
-    "category": "Type IDs",
+    "category": "type IDs",
     "signature": "type TypeId = \"~@effect/atom-react/ScopedAtom\"",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/atom/react/src/ScopedAtom.ts#L32"
   }

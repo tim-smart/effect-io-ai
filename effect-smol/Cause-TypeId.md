@@ -13,4 +13,4 @@ declare const TypeId: "~effect/Cause"
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L99)
 
-Since v2.0.0
+Since v4.0.0

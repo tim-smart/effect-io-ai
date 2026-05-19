@@ -13,4 +13,4 @@ declare const isHashRing: (u: unknown) => u is HashRing<any>
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashRing.ts#L96)
 
-Since v4.0.0
+Since v3.19.0

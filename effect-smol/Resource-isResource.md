@@ -13,4 +13,4 @@ declare const isResource: (u: unknown) => u is Resource<unknown, unknown>
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Resource.ts#L68)
 
-Since v2.0.0
+Since v4.0.0

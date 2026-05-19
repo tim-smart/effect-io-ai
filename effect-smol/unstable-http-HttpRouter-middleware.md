@@ -10,13 +10,11 @@ By default, the middleware only affects the routes that it is provided to.
 If you want to create a middleware that applies globally to all routes, pass
 the `global` option as `true`.
 
+**Example** (Applying route and global middleware)
+
 ```ts
-import { Effect } from "effect"
-import * as Layer from "effect/Layer"
-import * as Context from "effect/Context"
-import * as HttpMiddleware from "effect/unstable/http/HttpMiddleware"
-import * as HttpRouter from "effect/unstable/http/HttpRouter"
-import * as HttpServerResponse from "effect/unstable/http/HttpServerResponse"
+import { Context, Effect, Layer } from "effect"
+import { HttpMiddleware, HttpRouter, HttpServerResponse } from "effect/unstable/http"
 
 // Here we are defining a CORS middleware
 const CorsMiddleware = HttpRouter.middleware(HttpMiddleware.cors()).layer
@@ -66,6 +64,6 @@ Effect.gen(function*() {
 declare const middleware: middleware.Make<never, never> & (<Config extends { provides?: any; handles?: any; } = {}>() => middleware.Make<Config extends { provides: infer R; } ? R : never, Config extends { handles: infer E; } ? E : never>)
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpRouter.ts#L898)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpRouter.ts#L897)
 
 Since v4.0.0

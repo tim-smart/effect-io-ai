@@ -15,6 +15,6 @@ and the journal.
 declare class MemoryDriver
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MessageStorage.ts#L810)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MessageStorage.ts#L809)
 
 Since v4.0.0

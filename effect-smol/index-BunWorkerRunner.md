@@ -11,6 +11,6 @@ Re-exports all named exports from the "./BunWorkerRunner.ts" module as `BunWorke
 export * as BunWorkerRunner from "./BunWorkerRunner.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/index.ts#L112)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/index.ts#L488)
 
 Since v4.0.0

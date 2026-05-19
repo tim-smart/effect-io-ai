@@ -29,6 +29,6 @@ export interface MakeOptions {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L183)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L187)
 
-Since v4.0.0
+Since v3.13.4

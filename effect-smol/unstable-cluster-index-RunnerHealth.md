@@ -11,6 +11,6 @@ Re-exports all named exports from the "./RunnerHealth.ts" module as `RunnerHealt
 export * as RunnerHealth from "./RunnerHealth.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L120)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L611)
 
 Since v4.0.0

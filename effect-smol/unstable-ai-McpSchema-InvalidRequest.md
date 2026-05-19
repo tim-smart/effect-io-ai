@@ -13,6 +13,6 @@ This error uses the standard invalid request code `-32600`.
 declare class InvalidRequest
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L496)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L499)
 
 Since v4.0.0

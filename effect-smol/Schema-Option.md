@@ -9,8 +9,7 @@ either `None` or `Some<A>`.
 **Example** (Option schema)
 
 ```ts
-import { Schema } from "effect"
-import { Option } from "effect"
+import { Option, Schema } from "effect"
 
 const schema = Schema.Option(Schema.Number)
 
@@ -36,6 +35,6 @@ export interface Option<A extends Top> extends
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L7288)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L7437)
 
-Since v4.0.0
+Since v3.10.0

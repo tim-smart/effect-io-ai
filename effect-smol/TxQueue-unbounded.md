@@ -35,6 +35,6 @@ const program = Effect.gen(function*() {
 declare const unbounded: <A = never, E = never>() => Effect.Effect<TxQueue<A, E>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxQueue.ts#L413)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxQueue.ts#L410)
 
-Since v4.0.0
+Since v2.0.0

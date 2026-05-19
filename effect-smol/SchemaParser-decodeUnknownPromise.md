@@ -14,6 +14,6 @@ with a `SchemaIssue.Issue` on decoding failure.
 declare const decodeUnknownPromise: <S extends Schema.Decoder<unknown>>(schema: S, options?: AST.ParseOptions) => (input: unknown, options?: AST.ParseOptions) => Promise<S["Type"]>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaParser.ts#L228)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaParser.ts#L225)
 
-Since v4.0.0
+Since v3.10.0

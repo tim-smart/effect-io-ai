@@ -13,8 +13,8 @@ entries when the scope closes.
 **Example** (Writing JSON logs to a file)
 
 ```ts
-import { NodeFileSystem, NodeRuntime } from "@effect/platform-node"
 import { Effect, Layer, Logger } from "effect"
+import { NodeFileSystem, NodeRuntime } from "@effect/platform-node"
 
 const fileLogger = Logger.formatJson.pipe(
   Logger.toFile("/tmp/log.txt")
@@ -34,8 +34,8 @@ Effect.log("a").pipe(
 **Example** (Writing logs to files)
 
 ```ts
-import { NodeFileSystem } from "@effect/platform-node"
 import { Duration, Effect, Logger } from "effect"
+import { NodeFileSystem } from "@effect/platform-node"
 
 // Basic file logging. The scope keeps the file open while logs are emitted
 // and flushes pending entries when it closes.
@@ -102,6 +102,6 @@ const multiLogger = Effect.scoped(
 declare const toFile: ((path: string, options?: { readonly flag?: FileSystem.OpenFlag | undefined; readonly mode?: number | undefined; readonly batchWindow?: Duration.Input | undefined; } | undefined) => <Message>(self: Logger<Message, string>) => Effect.Effect<Logger<Message, void>, PlatformError, Scope.Scope | FileSystem.FileSystem>) & (<Message>(self: Logger<Message, string>, path: string, options?: { readonly flag?: FileSystem.OpenFlag | undefined; readonly mode?: number | undefined; readonly batchWindow?: Duration.Input | undefined; } | undefined) => Effect.Effect<Logger<Message, void>, PlatformError, Scope.Scope | FileSystem.FileSystem>)
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Logger.ts#L1302)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Logger.ts#L1301)
 
 Since v4.0.0

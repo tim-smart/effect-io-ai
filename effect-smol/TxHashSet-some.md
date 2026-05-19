@@ -27,6 +27,6 @@ const program = Effect.gen(function*() {
 declare const some: { <V>(predicate: Predicate<V>): (self: TxHashSet<V>) => Effect.Effect<boolean>; <V>(self: TxHashSet<V>, predicate: Predicate<V>): Effect.Effect<boolean>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashSet.ts#L711)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashSet.ts#L708)
 
-Since v2.0.0
+Since v4.0.0

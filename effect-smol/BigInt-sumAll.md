@@ -10,10 +10,10 @@ Returns `0n` for an empty iterable.
 **Example** (Summing iterable bigints)
 
 ```ts
-import { sumAll } from "effect/BigInt"
+import { BigInt } from "effect"
 import * as assert from "node:assert"
 
-assert.deepStrictEqual(sumAll([2n, 3n, 4n]), 9n)
+assert.deepStrictEqual(BigInt.sumAll([2n, 3n, 4n]), 9n)
 ```
 
 **Signature**
@@ -22,6 +22,6 @@ assert.deepStrictEqual(sumAll([2n, 3n, 4n]), 9n)
 declare const sumAll: (collection: Iterable<bigint>) => bigint
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigInt.ts#L601)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigInt.ts#L599)
 
 Since v2.0.0

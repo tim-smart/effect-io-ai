@@ -25,4 +25,4 @@ declare const make: <A>(value: A) => Effect.Effect<TxSubscriptionRef<A>>
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxSubscriptionRef.ts#L97)
 
-Since v4.0.0
+Since v3.10.0

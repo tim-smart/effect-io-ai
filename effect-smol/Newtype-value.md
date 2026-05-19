@@ -33,6 +33,6 @@ const raw: string = Newtype.value(label) // "hello"
 declare const value: <N extends Newtype.Any>(newtype: N) => Newtype.Carrier<N>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Newtype.ts#L170)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Newtype.ts#L175)
 
 Since v4.0.0

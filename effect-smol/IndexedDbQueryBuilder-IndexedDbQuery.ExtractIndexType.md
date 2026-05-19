@@ -17,6 +17,6 @@ type ExtractIndexType<Table, Index, KeyPath, Type> = KeyPath extends keyof Type 
     never
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbQueryBuilder.ts#L244)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbQueryBuilder.ts#L243)
 
 Since v4.0.0

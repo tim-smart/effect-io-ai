@@ -3,15 +3,14 @@ Module: `Model`<br />
 
 ## Model.UuidV4WithGenerate
 
-Adds a constructor default that generates a binary UUID v4 for a branded
-`Uint8Array` schema.
+Adds a constructor default that generates a string UUID v4.
 
 **Signature**
 
 ```ts
-declare const UuidV4WithGenerate: <B extends string>(schema: Schema.brand<Schema.instanceOf<Uint8Array<ArrayBuffer>>, B>) => Schema.withConstructorDefault<Schema.brand<Schema.instanceOf<Uint8Array<ArrayBuffer>>, B>>
+declare const UuidV4WithGenerate: <B extends string>(schema: Schema.brand<Schema.String, B>) => Schema.withConstructorDefault<Schema.brand<Schema.String, B>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Model.ts#L716)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Model.ts#L757)
 
 Since v4.0.0

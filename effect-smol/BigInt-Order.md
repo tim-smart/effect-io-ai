@@ -8,7 +8,7 @@ Provides an `Order` instance for `bigint` that allows comparing and sorting BigI
 **Example** (Comparing bigints with Order)
 
 ```ts
-import * as BigInt from "effect/BigInt"
+import { BigInt } from "effect"
 
 const a = 123n
 const b = 456n
@@ -25,6 +25,6 @@ console.log(BigInt.Order(a, c)) // 0 (a === c)
 declare const Order: order.Order<bigint>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigInt.ts#L226)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigInt.ts#L224)
 
 Since v2.0.0

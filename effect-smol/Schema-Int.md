@@ -14,6 +14,6 @@ export interface Int extends Number {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L9895)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L10045)
 
-Since v4.0.0
+Since v3.10.0

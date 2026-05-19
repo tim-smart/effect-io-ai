@@ -54,6 +54,6 @@ const program = Effect.gen(function*() {
 declare const filter: { <K, V, B extends V>(predicate: (value: V, key: K) => value is B): (self: TxHashMap<K, V>) => Effect.Effect<TxHashMap<K, B>>; <K, V>(predicate: (value: V, key: K) => boolean): (self: TxHashMap<K, V>) => Effect.Effect<TxHashMap<K, V>>; <K, V, B extends V>(self: TxHashMap<K, V>, predicate: (value: V, key: K) => value is B): Effect.Effect<TxHashMap<K, B>>; <K, V>(self: TxHashMap<K, V>, predicate: (value: V, key: K) => boolean): Effect.Effect<TxHashMap<K, V>>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashMap.ts#L1458)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashMap.ts#L1457)
 
-Since v2.0.0
+Since v4.0.0

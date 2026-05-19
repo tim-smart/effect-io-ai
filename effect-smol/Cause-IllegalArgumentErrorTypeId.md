@@ -11,6 +11,6 @@ Unique brand for `IllegalArgumentError`.
 declare const IllegalArgumentErrorTypeId: "~effect/Cause/IllegalArgumentError"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L1355)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L1354)
 
 Since v4.0.0

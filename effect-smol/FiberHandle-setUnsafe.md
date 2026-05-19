@@ -32,4 +32,4 @@ declare const setUnsafe: { <A, E, XE extends E, XA extends A>(fiber: Fiber.Fiber
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FiberHandle.ts#L306)
 
-Since v2.0.0
+Since v4.0.0

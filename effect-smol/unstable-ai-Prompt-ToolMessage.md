@@ -40,6 +40,6 @@ export interface ToolMessage extends BaseMessage<"tool", ToolMessageOptions> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L1575)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L1573)
 
 Since v4.0.0

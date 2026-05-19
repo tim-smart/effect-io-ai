@@ -31,6 +31,6 @@ See also:
 declare const fromFormData: Transformation<unknown, FormData, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L1536)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L1561)
 
 Since v4.0.0

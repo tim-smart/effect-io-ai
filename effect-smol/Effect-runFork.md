@@ -18,10 +18,7 @@ Unless you specifically need a `Promise` or synchronous operation,
 **Example** (Running an Effect in the Background)
 
 ```ts
-import { Effect } from "effect"
-import { Schedule } from "effect"
-import { Fiber } from "effect"
-import { Console } from "effect"
+import { Console, Effect, Fiber, Schedule } from "effect"
 
 //      ┌─── Effect<number, never, never>
 //      ▼
@@ -45,6 +42,6 @@ setTimeout(() => {
 declare const runFork: <A, E>(effect: Effect<A, E, never>, options?: RunOptions | undefined) => Fiber<A, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L8235)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L8141)
 
 Since v2.0.0

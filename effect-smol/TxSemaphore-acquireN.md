@@ -33,6 +33,6 @@ const program = Effect.gen(function*() {
 declare const acquireN: (self: TxSemaphore, n: number) => Effect.Effect<void>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxSemaphore.ts#L268)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxSemaphore.ts#L251)
 
-Since v4.0.0
+Since v2.0.0

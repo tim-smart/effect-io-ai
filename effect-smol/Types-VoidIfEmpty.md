@@ -12,6 +12,6 @@ otherwise returns `S`.
 type VoidIfEmpty<S> = keyof S extends never ? void : S
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Types.ts#L717)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Types.ts#L714)
 
-Since v4.0.0
+Since v3.19.20

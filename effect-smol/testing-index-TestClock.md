@@ -11,6 +11,6 @@ Re-exports all named exports from the "./TestClock.ts" module as `TestClock`.
 export * as TestClock from "./TestClock.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L23)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L47)
 
 Since v2.0.0

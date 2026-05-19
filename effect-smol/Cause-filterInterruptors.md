@@ -31,6 +31,6 @@ if (!Result.isFailure(result)) {
 declare const filterInterruptors: <E>(self: Cause<E>) => Result.Result<Set<number>, Cause<E>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L996)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L994)
 
 Since v4.0.0

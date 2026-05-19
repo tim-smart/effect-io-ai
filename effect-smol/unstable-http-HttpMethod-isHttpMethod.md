@@ -5,7 +5,7 @@ Module: `HttpMethod`<br />
 
 Tests if a value is a `HttpMethod`.
 
-**Example**
+**Example** (Checking HTTP method values)
 
 ```ts
 import { HttpMethod } from "effect/unstable/http"
@@ -24,6 +24,6 @@ console.log(HttpMethod.isHttpMethod(1))
 declare const isHttpMethod: (u: unknown) => u is HttpMethod
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpMethod.ts#L120)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpMethod.ts#L122)
 
 Since v4.0.0

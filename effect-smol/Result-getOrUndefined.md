@@ -32,6 +32,6 @@ console.log(Result.getOrUndefined(Result.fail("err")))
 declare const getOrUndefined: <A, E>(self: Result<A, E>) => A | undefined
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L1093)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L1075)
 
-Since v4.0.0
+Since v2.0.0

@@ -36,6 +36,6 @@ console.log(result)
 declare const Do: Result<{}, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L1470)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L1452)
 
-Since v4.0.0
+Since v2.0.0

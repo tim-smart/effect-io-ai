@@ -11,6 +11,6 @@ Re-exports all named exports from the "./Cron.ts" module as `Cron`.
 export * as Cron from "./Cron.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L767)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L885)
 
 Since v2.0.0

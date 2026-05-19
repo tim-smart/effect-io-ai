@@ -11,6 +11,6 @@ Creates an AI model descriptor for an OpenRouter language model.
 declare const model: (model: string, config?: Omit<typeof Config.Service, "model">) => AiModel.Model<"openai", LanguageModel.LanguageModel, OpenRouterClient>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openrouter/src/OpenRouterLanguageModel.ts#L423)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openrouter/src/OpenRouterLanguageModel.ts#L468)
 
 Since v4.0.0

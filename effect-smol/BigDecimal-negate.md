@@ -8,11 +8,11 @@ Provides a negate operation on `BigDecimal`s.
 **Example** (Negating decimals)
 
 ```ts
-import { fromStringUnsafe, negate } from "effect/BigDecimal"
+import { BigDecimal } from "effect"
 import * as assert from "node:assert"
 
-assert.deepStrictEqual(negate(fromStringUnsafe("3")), fromStringUnsafe("-3"))
-assert.deepStrictEqual(negate(fromStringUnsafe("-6")), fromStringUnsafe("6"))
+assert.deepStrictEqual(BigDecimal.negate(BigDecimal.fromStringUnsafe("3")), BigDecimal.fromStringUnsafe("-3"))
+assert.deepStrictEqual(BigDecimal.negate(BigDecimal.fromStringUnsafe("-6")), BigDecimal.fromStringUnsafe("6"))
 ```
 
 **Signature**

@@ -17,6 +17,6 @@ Re-exports all named exports from the "./Config.ts" module as `Config`.
 export * as Config from "./Config.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L590)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L666)
 
 Since v4.0.0

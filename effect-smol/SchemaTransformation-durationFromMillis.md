@@ -29,6 +29,6 @@ See also:
 declare const durationFromMillis: Transformation<Duration.Duration, number, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L1018)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L1029)
 
 Since v4.0.0

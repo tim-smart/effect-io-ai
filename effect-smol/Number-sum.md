@@ -8,10 +8,10 @@ Provides an addition operation on `number`s.
 **Example** (Adding numbers)
 
 ```ts
-import { sum } from "effect/Number"
+import { Number } from "effect"
 import * as assert from "node:assert"
 
-assert.deepStrictEqual(sum(2, 3), 5)
+assert.deepStrictEqual(Number.sum(2, 3), 5)
 ```
 
 **Signature**

@@ -8,7 +8,7 @@ Documentation for a subcommand
 **Example** (Documenting subcommands)
 
 ```ts
-import { Option as O, Context } from "effect"
+import { Context, Option as O } from "effect"
 import type { HelpDoc } from "effect/unstable/cli"
 
 const deploySubcommand: HelpDoc.SubcommandDoc = {

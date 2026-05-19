@@ -8,7 +8,7 @@ Executes an effect synchronously with provided services.
 **Example** (Usage)
 
 ```ts
-import { Effect, Context } from "effect"
+import { Context, Effect } from "effect"
 
 interface MathService {
   add: (a: number, b: number) => number
@@ -35,6 +35,6 @@ console.log(result) // 5
 declare const runSyncWith: <R>(context: Context.Context<R>) => <A, E>(effect: Effect<A, E, R>) => A
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L8620)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L8526)
 
 Since v4.0.0

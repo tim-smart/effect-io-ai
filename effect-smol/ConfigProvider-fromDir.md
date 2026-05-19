@@ -44,6 +44,6 @@ const program = Effect.gen(function*() {
 declare const fromDir: (options?: { readonly rootPath?: string | undefined; }) => Effect.Effect<ConfigProvider, never, Path_.Path | FileSystem.FileSystem>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ConfigProvider.ts#L1094)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ConfigProvider.ts#L1095)
 
 Since v4.0.0

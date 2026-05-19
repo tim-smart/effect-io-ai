@@ -18,6 +18,6 @@ type EncodedRepliesOptions<A> = {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MessageStorage.ts#L425)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MessageStorage.ts#L424)
 
 Since v4.0.0

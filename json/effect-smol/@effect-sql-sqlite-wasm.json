@@ -59,7 +59,7 @@
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
-    "category": "constructor",
+    "category": "constructors",
     "signature": "declare const run: (options: OpfsWorkerConfig) => Effect.Effect<void, SqlError>",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/do/src/OpfsWorker.ts#L52"
   },
@@ -91,7 +91,7 @@
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
-    "category": "type ids",
+    "category": "type IDs",
     "signature": "declare const TypeId: \"~@effect/sql-sqlite-wasm/SqliteClient\"",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/do/src/SqliteClient.ts#L64"
   },
@@ -139,7 +139,7 @@
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
-    "category": "constructor",
+    "category": "constructors",
     "signature": "declare const makeMemory: (options: SqliteClientMemoryConfig) => Effect.Effect<SqliteClient, SqlError, Scope.Scope | Reactivity.Reactivity>",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/do/src/SqliteClient.ts#L146"
   },
@@ -155,7 +155,7 @@
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
-    "category": "constructor",
+    "category": "constructors",
     "signature": "declare const make: (options: SqliteClientConfig) => Effect.Effect<SqliteClient, SqlError, Scope.Scope | Reactivity.Reactivity>",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/do/src/SqliteClient.ts#L311"
   },
@@ -299,7 +299,7 @@
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
-    "category": "type ids",
+    "category": "type IDs",
     "signature": "type TypeId = \"~@effect/sql-sqlite-wasm/SqliteClient\"",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/do/src/SqliteClient.ts#L72"
   },
@@ -315,7 +315,7 @@
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
-    "category": "constructor",
+    "category": "constructors",
     "signature": "declare const run: <R>(options: Migrator.MigratorOptions<R>) => Effect.Effect<ReadonlyArray<readonly [id: number, name: string]>, SqlError | Migrator.MigrationError, Client.SqlClient | R>",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/do/src/SqliteMigrator.ts#L39"
   },
@@ -331,7 +331,7 @@
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
-    "category": "constructor",
+    "category": "constructors",
     "signature": "declare const layer: <R>(options: Migrator.MigratorOptions<R>) => Layer.Layer<never, SqlError | Migrator.MigrationError, R | Client.SqlClient>",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/do/src/SqliteMigrator.ts#L53"
   },

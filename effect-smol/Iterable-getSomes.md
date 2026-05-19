@@ -8,8 +8,7 @@ Retrieves the `Some` values from an `Iterable` of `Option`s.
 **Example** (Extracting Some values)
 
 ```ts
-import { Iterable } from "effect"
-import * as Option from "effect/Option"
+import { Iterable, Option } from "effect"
 import * as assert from "node:assert"
 
 assert.deepStrictEqual(
@@ -26,6 +25,6 @@ assert.deepStrictEqual(
 declare const getSomes: <A>(self: Iterable<Option<A>>) => Iterable<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Iterable.ts#L1707)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Iterable.ts#L1694)
 
 Since v2.0.0

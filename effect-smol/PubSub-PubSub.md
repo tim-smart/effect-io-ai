@@ -10,8 +10,7 @@ messages of type `A` and subscribers can subscribe to take messages of type
 **Example** (Publishing and subscribing to messages)
 
 ```ts
-import { Effect } from "effect"
-import * as PubSub from "effect/PubSub"
+import { Effect, PubSub } from "effect"
 
 const program = Effect.gen(function*() {
   // Create a bounded PubSub with capacity 10
@@ -48,6 +47,6 @@ export interface PubSub<in out A> extends Pipeable {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PubSub.ts#L84)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PubSub.ts#L83)
 
 Since v2.0.0

@@ -24,7 +24,7 @@ Represents a complete transformation as a sequence of operations. Operations are
 **Example** (Multi-operation patch)
 
 ```ts
-import * as JsonPatch from "effect/JsonPatch"
+import { JsonPatch } from "effect"
 
 const patch: JsonPatch.JsonPatch = [
   { op: "add", path: "/items/-", value: "apple" },

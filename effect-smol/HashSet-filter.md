@@ -8,7 +8,7 @@ Filters the HashSet keeping only values that satisfy the predicate.
 **Example** (Filtering HashSet values)
 
 ```ts
-import * as HashSet from "effect/HashSet"
+import { HashSet } from "effect"
 
 const numbers = HashSet.make(1, 2, 3, 4, 5, 6)
 const evens = HashSet.filter(numbers, (n) => n % 2 === 0)
@@ -23,6 +23,6 @@ console.log(HashSet.size(evens)) // 3
 declare const filter: { <V, U extends V>(refinement: Refinement<NoInfer<V>, U>): (self: HashSet<V>) => HashSet<U>; <V>(predicate: Predicate<NoInfer<V>>): (self: HashSet<V>) => HashSet<V>; <V, U extends V>(self: HashSet<V>, refinement: Refinement<V, U>): HashSet<U>; <V>(self: HashSet<V>, predicate: Predicate<V>): HashSet<V>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashSet.ts#L535)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashSet.ts#L533)
 
 Since v2.0.0

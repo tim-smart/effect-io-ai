@@ -27,4 +27,4 @@ declare const modifyHeadNonEmpty: { <A, B>(f: (a: A) => B): (self: NonEmptyReado
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L2093)
 
-Since v2.0.0
+Since v4.0.0

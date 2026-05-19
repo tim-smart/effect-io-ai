@@ -36,6 +36,6 @@ const program = Effect.gen(function*() {
 declare const addFinalizer: (scope: Scope, finalizer: Effect<unknown>) => Effect<void>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Scope.ts#L383)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Scope.ts#L377)
 
-Since v4.0.0
+Since v2.0.0

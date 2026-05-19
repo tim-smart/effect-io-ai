@@ -11,7 +11,7 @@ get a value from the `Trie`.
 **Example** (Looking up values unsafely)
 
 ```ts
-import * as Trie from "effect/Trie"
+import { Trie } from "effect"
 import * as assert from "node:assert"
 
 const trie = Trie.empty<number>().pipe(
@@ -28,6 +28,6 @@ assert.throws(() => Trie.getUnsafe(trie, "mae"))
 declare const getUnsafe: { (key: string): <V>(self: Trie<V>) => V; <V>(self: Trie<V>, key: string): V; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Trie.ts#L579)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Trie.ts#L576)
 
-Since v2.0.0
+Since v4.0.0

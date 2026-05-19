@@ -30,6 +30,6 @@ See also: `Predicate.Any`, `Refinement.In`
 type In<T> = [T] extends [Predicate<infer _A>] ? _A : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L193)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L192)
 
 Since v3.6.0

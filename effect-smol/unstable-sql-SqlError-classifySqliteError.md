@@ -12,6 +12,6 @@ Classifies a native SQLite error cause into a `SqlErrorReason` using its
 declare const classifySqliteError: (cause: unknown, { message, operation }?: SqliteClassifyOptions) => SqlErrorReason
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SqlError.ts#L505)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SqlError.ts#L522)
 
 Since v4.0.0

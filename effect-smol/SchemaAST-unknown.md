@@ -11,6 +11,6 @@ Singleton `Unknown` AST instance.
 declare const unknown: Unknown
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L825)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L828)
 
 Since v4.0.0

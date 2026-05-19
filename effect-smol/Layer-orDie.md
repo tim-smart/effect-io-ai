@@ -9,7 +9,7 @@ unchecked and not a part of the type of the layer.
 **Example** (Converting layer failures to defects)
 
 ```ts
-import { Data, Effect, Layer, Context } from "effect"
+import { Context, Data, Effect, Layer } from "effect"
 
 class DatabaseError extends Data.TaggedError("DatabaseError")<{
   message: string
@@ -46,6 +46,6 @@ const program = Effect.gen(function*() {
 declare const orDie: <A, E, R>(self: Layer<A, E, R>) => Layer<A, never, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L1582)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L1564)
 
 Since v2.0.0

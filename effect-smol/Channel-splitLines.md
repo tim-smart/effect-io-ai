@@ -32,6 +32,6 @@ Effect.runPromise(Effect.gen(function*() {
 declare const splitLines: <Err, Done>() => Channel<Arr.NonEmptyReadonlyArray<string>, Err, Done, Arr.NonEmptyReadonlyArray<string>, Err, Done>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L6155)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L6147)
 
 Since v2.0.0

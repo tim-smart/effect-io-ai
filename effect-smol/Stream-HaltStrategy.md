@@ -5,18 +5,12 @@ Module: `Stream`<br />
 
 Describes how merged streams decide when to halt.
 
-**Previously Known As**
-
-This API replaces the following from Effect 3.x:
-
-- `StreamHaltStrategy.HaltStrategy`
-
 **Signature**
 
 ```ts
 type HaltStrategy = Channel.HaltStrategy
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L341)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L331)
 
-Since v2.0.0
+Since v4.0.0

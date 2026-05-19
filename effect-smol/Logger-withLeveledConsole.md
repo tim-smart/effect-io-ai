@@ -45,4 +45,4 @@ declare const withLeveledConsole: <Message, Output>(self: Logger<Message, Output
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Logger.ts#L402)
 
-Since v2.0.0
+Since v3.8.0

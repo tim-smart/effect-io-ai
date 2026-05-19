@@ -30,4 +30,4 @@ declare const appendElements: { <const T2 extends ReadonlyArray<unknown>>(that: 
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tuple.ts#L276)
 
-Since v2.0.0
+Since v4.0.0

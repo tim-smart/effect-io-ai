@@ -13,6 +13,6 @@ The `initialValue` is `true`.
 declare const ReducerAnd: Reducer.Reducer<boolean>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Boolean.ts#L363)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Boolean.ts#L364)
 
 Since v4.0.0

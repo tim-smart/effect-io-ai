@@ -31,6 +31,6 @@ See also: `isNullish`, `isNotNull`, `isNotUndefined`
 declare const isNotNullish: <A>(input: A) => input is NonNullable<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L911)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L909)
 
 Since v4.0.0

@@ -14,6 +14,6 @@ which indicates that more results may be available.
 declare class PaginatedResultMeta
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L244)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L247)
 
 Since v4.0.0

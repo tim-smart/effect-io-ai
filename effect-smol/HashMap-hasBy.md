@@ -8,7 +8,7 @@ Checks if an element matching the given predicate exists in the given `HashMap`.
 **Example** (Checking entries by predicate)
 
 ```ts
-import * as HashMap from "effect/HashMap"
+import { HashMap } from "effect"
 
 const hm = HashMap.make([1, "a"])
 HashMap.hasBy(hm, (value, key) => value === "a" && key === 1) // -> true
@@ -21,6 +21,6 @@ HashMap.hasBy(hm, (value) => value === "b") // -> false
 declare const hasBy: { <K, V>(predicate: (value: NoInfer<V>, key: NoInfer<K>) => boolean): (self: HashMap<K, V>) => boolean; <K, V>(self: HashMap<K, V>, predicate: (value: NoInfer<V>, key: NoInfer<K>) => boolean): boolean; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashMap.ts#L556)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashMap.ts#L551)
 
 Since v3.16.0

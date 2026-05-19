@@ -8,10 +8,10 @@ Provides a subtraction operation on `bigint`s.
 **Example** (Subtracting bigints)
 
 ```ts
-import { subtract } from "effect/BigInt"
+import { BigInt } from "effect"
 import * as assert from "node:assert"
 
-assert.deepStrictEqual(subtract(2n, 3n), -1n)
+assert.deepStrictEqual(BigInt.subtract(2n, 3n), -1n)
 ```
 
 **Signature**

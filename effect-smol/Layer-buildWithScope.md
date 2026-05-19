@@ -12,7 +12,7 @@ layer is provided to.
 **Example** (Building a layer with an explicit scope)
 
 ```ts
-import { Effect, Layer, Scope, Context } from "effect"
+import { Context, Effect, Layer, Scope } from "effect"
 
 class Database extends Context.Service<Database, {
   readonly query: (sql: string) => Effect.Effect<string>

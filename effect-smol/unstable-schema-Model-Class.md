@@ -25,7 +25,7 @@ import { Model } from "effect/unstable/schema"
 export const GroupId = Schema.Number.pipe(Schema.brand("GroupId"))
 
 export class Group extends Model.Class<Group>("Group")({
-  id: Model.Generated(GroupId),
+  id: Model.GeneratedByDb(GroupId),
   name: Schema.String,
   createdAt: Model.DateTimeInsertFromDate,
   updatedAt: Model.DateTimeUpdateFromDate

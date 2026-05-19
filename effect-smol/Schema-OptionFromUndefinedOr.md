@@ -14,6 +14,6 @@ export interface OptionFromUndefinedOr<S extends Top> extends decodeTo<Option<to
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L7420)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L7569)
 
-Since v4.0.0
+Since v3.10.0

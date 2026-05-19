@@ -28,6 +28,6 @@ console.log(Option.isNone(Chunk.last(Chunk.empty()))) // true
 declare const lastUnsafe: <A>(self: Chunk<A>) => A
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L1493)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L1487)
 
-Since v2.0.0
+Since v4.0.0

@@ -25,4 +25,4 @@ declare const isGreaterThanOrEqualTo: { (that: Duration): (self: Duration) => bo
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Duration.ts#L1496)
 
-Since v2.0.0
+Since v4.0.0

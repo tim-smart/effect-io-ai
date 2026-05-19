@@ -11,6 +11,6 @@ Re-exports all named exports from the "./IndexedDbDatabase.ts" module as `Indexe
 export * as IndexedDbDatabase from "./IndexedDbDatabase.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/index.ts#L65)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/index.ts#L312)
 
 Since v4.0.0

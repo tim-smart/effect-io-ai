@@ -9,7 +9,7 @@ If the key doesn't exist, the map remains unchanged.
 **Example** (Removing a key)
 
 ```ts
-import * as MutableHashMap from "effect/MutableHashMap"
+import { MutableHashMap } from "effect"
 
 const map = MutableHashMap.make(
   ["key1", 42],
@@ -40,6 +40,6 @@ console.log(MutableHashMap.size(map)) // 1
 declare const remove: { <K>(key: K): <V>(self: MutableHashMap<K, V>) => MutableHashMap<K, V>; <K, V>(self: MutableHashMap<K, V>, key: K): MutableHashMap<K, V>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableHashMap.ts#L604)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableHashMap.ts#L602)
 
 Since v2.0.0

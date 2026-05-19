@@ -37,6 +37,6 @@ console.log(Zero.combine(42, 99))
 declare const constant: <A>(a: A) => Combiner<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Combiner.ts#L322)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Combiner.ts#L329)
 
 Since v4.0.0

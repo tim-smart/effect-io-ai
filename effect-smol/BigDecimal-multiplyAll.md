@@ -8,12 +8,12 @@ Takes an `Iterable` of `BigDecimal`s and returns their multiplication as a singl
 **Example** (Multiplying multiple decimals)
 
 ```ts
-import { fromStringUnsafe, multiplyAll } from "effect/BigDecimal"
+import { BigDecimal } from "effect"
 import * as assert from "node:assert"
 
 assert.deepStrictEqual(
-  multiplyAll([fromStringUnsafe("2"), fromStringUnsafe("3"), fromStringUnsafe("4")]),
-  fromStringUnsafe("24")
+  BigDecimal.multiplyAll([BigDecimal.fromStringUnsafe("2"), BigDecimal.fromStringUnsafe("3"), BigDecimal.fromStringUnsafe("4")]),
+  BigDecimal.fromStringUnsafe("24")
 )
 ```
 

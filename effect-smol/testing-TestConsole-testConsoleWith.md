@@ -10,7 +10,7 @@ specified workflow.
 
 ```ts
 import { Effect } from "effect"
-import * as TestConsole from "effect/testing/TestConsole"
+import { TestConsole } from "effect/testing"
 
 const program = TestConsole.testConsoleWith((testConsole) =>
   Effect.gen(function*() {
@@ -32,6 +32,6 @@ const program = TestConsole.testConsoleWith((testConsole) =>
 declare const testConsoleWith: <A, E, R>(f: (console: TestConsole) => Effect.Effect<A, E, R>) => Effect.Effect<A, E, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TestConsole.ts#L208)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TestConsole.ts#L207)
 
 Since v4.0.0

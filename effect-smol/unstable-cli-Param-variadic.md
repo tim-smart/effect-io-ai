@@ -12,7 +12,7 @@ specified any number of times (0 to infinity).
 **Example** (Accepting multiple values)
 
 ```ts
-import * as Param from "effect/unstable/cli/Param"
+import { Param } from "effect/unstable/cli"
 
 // @internal - this module is not exported publicly
 
@@ -38,6 +38,6 @@ const limited = Param.variadic(Param.string(Param.flagKind, "item"), {
 declare const variadic: <Kind extends ParamKind, A>(self: Param<Kind, A>, options?: VariadicParamOptions | undefined) => Param<Kind, ReadonlyArray<A>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Param.ts#L1391)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Param.ts#L1390)
 
 Since v4.0.0

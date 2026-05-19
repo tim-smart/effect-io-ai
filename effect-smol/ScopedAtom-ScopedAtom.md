@@ -8,16 +8,15 @@ Scoped Atom interface with a provider-backed instance.
 **Example** (Providing and reading a scoped atom)
 
 ```ts
-import * as Atom from "effect/unstable/reactivity/Atom"
+import * as AtomReact from "@effect/atom-react"
+import { Atom } from "effect/unstable/reactivity"
 import * as React from "react"
-import * as ScopedAtom from "@effect/atom-react/ScopedAtom"
-import { useAtomValue } from "@effect/atom-react"
 
-const Counter = ScopedAtom.make(() => Atom.make(0))
+const Counter = AtomReact.make(() => Atom.make(0))
 
 function View() {
   const atom = Counter.use()
-  const value = useAtomValue(atom)
+  const value = AtomReact.useAtomValue(atom)
   return React.createElement("div", null, value)
 }
 
@@ -38,6 +37,6 @@ export interface ScopedAtom<A extends Atom.Atom<any>, Input = never> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/atom/react/src/ScopedAtom.ts#L69)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/atom/react/src/ScopedAtom.ts#L68)
 
 Since v4.0.0

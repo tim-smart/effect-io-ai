@@ -14,6 +14,6 @@ an `Error` with the `SchemaIssue.Issue` in its `cause` on encoding failure.
 declare const encodeUnknownSync: <S extends Schema.Encoder<unknown>>(schema: S, options?: AST.ParseOptions) => (input: unknown, options?: AST.ParseOptions) => S["Encoded"]
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaParser.ts#L548)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaParser.ts#L545)
 
-Since v4.0.0
+Since v3.10.0

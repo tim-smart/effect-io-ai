@@ -39,4 +39,4 @@ declare const map: { <L extends Lambda>(lambda: L): <const T extends ReadonlyArr
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tuple.ts#L406)
 
-Since v4.0.0
+Since v3.9.0

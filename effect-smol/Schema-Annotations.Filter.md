@@ -45,6 +45,6 @@ export interface Filter extends Augment {
   }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L12536)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L12692)
 
-Since v4.0.0
+Since v3.10.0

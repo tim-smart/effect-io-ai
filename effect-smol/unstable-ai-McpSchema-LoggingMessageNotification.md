@@ -14,6 +14,6 @@ JSON-serializable log data.
 declare class LoggingMessageNotification
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L1523)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L1526)
 
 Since v4.0.0

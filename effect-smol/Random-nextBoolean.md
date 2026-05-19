@@ -22,6 +22,6 @@ const program = Effect.gen(function*() {
 declare const nextBoolean: Effect.Effect<boolean, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Random.ts#L99)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Random.ts#L109)
 
-Since v4.0.0
+Since v2.0.0

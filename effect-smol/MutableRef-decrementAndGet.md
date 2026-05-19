@@ -35,6 +35,6 @@ while (MutableRef.decrementAndGet(attempts) >= 0) {
 declare const decrementAndGet: (self: MutableRef<number>) => number
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableRef.ts#L246)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableRef.ts#L245)
 
 Since v2.0.0

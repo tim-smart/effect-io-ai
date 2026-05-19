@@ -9,8 +9,7 @@ were published to the `PubSub`.
 **Example** (Publishing multiple messages)
 
 ```ts
-import { Effect, Fiber } from "effect"
-import * as PubSub from "effect/PubSub"
+import { Effect, Fiber, PubSub } from "effect"
 
 const program = Effect.gen(function*() {
   const pubsub = yield* PubSub.bounded<string>(10)
@@ -48,6 +47,6 @@ const program = Effect.gen(function*() {
 declare const publishAll: { <A>(elements: Iterable<A>): (self: PubSub<A>) => Effect.Effect<boolean>; <A>(self: PubSub<A>, elements: Iterable<A>): Effect.Effect<boolean>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PubSub.ts#L979)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PubSub.ts#L963)
 
 Since v2.0.0

@@ -31,6 +31,6 @@ See also: `isNotNullish`, `isUndefined`, `isNull`
 declare const isNullish: <A>(input: A) => input is A & (null | undefined)
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L881)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L879)
 
 Since v4.0.0

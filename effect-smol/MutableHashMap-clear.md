@@ -9,7 +9,7 @@ The map becomes empty after this operation.
 **Example** (Clearing all entries)
 
 ```ts
-import * as MutableHashMap from "effect/MutableHashMap"
+import { MutableHashMap } from "effect"
 
 const map = MutableHashMap.make(
   ["key1", 42],
@@ -36,6 +36,6 @@ console.log(MutableHashMap.size(map)) // 1
 declare const clear: <K, V>(self: MutableHashMap<K, V>) => MutableHashMap<K, V>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableHashMap.ts#L667)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableHashMap.ts#L665)
 
 Since v2.0.0

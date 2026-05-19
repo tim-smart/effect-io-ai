@@ -50,6 +50,6 @@ export interface MutableRef<out T> extends Pipeable, Inspectable {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableRef.ts#L86)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableRef.ts#L85)
 
 Since v2.0.0

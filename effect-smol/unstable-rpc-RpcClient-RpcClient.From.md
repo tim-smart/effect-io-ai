@@ -69,6 +69,6 @@ type From<Rpcs, E> = {
   }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RpcClient.ts#L95)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RpcClient.ts#L94)
 
 Since v4.0.0

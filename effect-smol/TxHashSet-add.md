@@ -32,6 +32,6 @@ const program = Effect.gen(function*() {
 declare const add: { <V>(value: V): (self: TxHashSet<V>) => Effect.Effect<void>; <V>(self: TxHashSet<V>, value: V): Effect.Effect<void>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashSet.ts#L350)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashSet.ts#L347)
 
 Since v2.0.0

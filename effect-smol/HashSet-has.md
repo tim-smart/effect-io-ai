@@ -8,10 +8,9 @@ Checks if the HashSet contains the specified value.
 **Example** (Checking HashSet membership)
 
 ```ts
-import * as HashSet from "effect/HashSet"
+import { Equal, Hash, HashSet } from "effect"
 
 // Works with any type that implements Equal
-import { Equal, Hash } from "effect"
 
 const set = HashSet.make("apple", "banana", "cherry")
 
@@ -40,6 +39,6 @@ console.log(HashSet.has(people, new Person("Alice"))) // true
 declare const has: { <V>(value: V): (self: HashSet<V>) => boolean; <V>(self: HashSet<V>, value: V): boolean; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashSet.ts#L294)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashSet.ts#L292)
 
 Since v2.0.0

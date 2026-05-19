@@ -11,6 +11,6 @@ Creates a layer that disables server-side tracing for requests whose URL exactly
 declare const layerTracerDisabledForUrls: (urls: ReadonlyArray<string>) => Layer.Layer<never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpMiddleware.ts#L125)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpMiddleware.ts#L126)
 
 Since v4.0.0

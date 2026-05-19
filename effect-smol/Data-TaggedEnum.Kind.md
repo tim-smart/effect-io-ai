@@ -42,6 +42,6 @@ type Kind<Z, A, B, C, D> = (Z & {
   })["taggedEnum"]
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Data.ts#L311)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Data.ts#L312)
 
 Since v2.0.0

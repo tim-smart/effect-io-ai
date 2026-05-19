@@ -11,7 +11,7 @@
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
-    "category": "Layers",
+    "category": "layers",
     "signature": "declare const layer: Layer.Layer<ChildProcessSpawner, never, Path.Path | FileSystem.FileSystem>",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeChildProcessSpawner.ts#L633"
   },
@@ -27,7 +27,7 @@
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
-    "category": "Utilities",
+    "category": "utils",
     "signature": "declare const flattenCommand: (command: ChildProcess.Command) => FlattenedPipeline",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeChildProcessSpawner.ts#L661"
   },
@@ -43,7 +43,7 @@
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
-    "category": "Models",
+    "category": "models",
     "signature": "export interface FlattenedPipeline {\n  readonly commands: Arr.NonEmptyReadonlyArray<ChildProcess.StandardCommand>\n  readonly pipeOptions: ReadonlyArray<ChildProcess.PipeOptions>\n}",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeChildProcessSpawner.ts#L649"
   },
@@ -59,7 +59,7 @@
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
-    "category": "Layers",
+    "category": "layers",
     "signature": "declare const layerClientProtocol: Layer.Layer<Runners.RpcClientProtocol, never, RpcSerialization.RpcSerialization>",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeClusterSocket.ts#L41"
   },
@@ -75,9 +75,41 @@
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
-    "category": "Layers",
+    "category": "layers",
     "signature": "declare const layerSocketServer: Layer.Layer<SocketServer.SocketServer, SocketServer.SocketServerError, ShardingConfig.ShardingConfig>",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeClusterSocket.ts#L70"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "NodeCrypto.ts",
+      "path": "src/NodeCrypto.ts"
+    },
+    "project": "@effect/platform-node-shared",
+    "name": "make",
+    "description": "The default Node.js Crypto service implementation.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "constructors",
+    "signature": "declare const make: EffectCrypto.Crypto",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeCrypto.ts#L44"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "NodeCrypto.ts",
+      "path": "src/NodeCrypto.ts"
+    },
+    "project": "@effect/platform-node-shared",
+    "name": "layer",
+    "description": "A layer that provides the Node.js Crypto service implementation.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "layers",
+    "signature": "declare const layer: Layer.Layer<EffectCrypto.Crypto, never, never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeCrypto.ts#L55"
   },
   {
     "_tag": "Constant",
@@ -91,7 +123,7 @@
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
-    "category": "Layers",
+    "category": "layers",
     "signature": "declare const layer: Layer.Layer<FileSystem.FileSystem, never, never>",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeFileSystem.ts#L662"
   },
@@ -107,7 +139,7 @@
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
-    "category": "Layers",
+    "category": "layers",
     "signature": "declare const layerPosix: Layer.Layer<Path, never, never>",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodePath.ts#L54"
   },
@@ -123,7 +155,7 @@
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
-    "category": "Layers",
+    "category": "layers",
     "signature": "declare const layerWin32: Layer.Layer<Path, never, never>",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodePath.ts#L68"
   },
@@ -139,7 +171,7 @@
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
-    "category": "Layers",
+    "category": "layers",
     "signature": "declare const layer: Layer.Layer<Path, never, never>",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodePath.ts#L82"
   },
@@ -155,7 +187,7 @@
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
-    "category": "Run main",
+    "category": "running",
     "signature": "declare const runMain: { (options?: { readonly disableErrorReporting?: boolean | undefined; readonly teardown?: Runtime.Teardown | undefined; }): <E, A>(effect: Effect<A, E>) => void; <E, A>(effect: Effect<A, E>, options?: { readonly disableErrorReporting?: boolean | undefined; readonly teardown?: Runtime.Teardown | undefined; }): void; }",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeRuntime.ts#L32"
   },
@@ -203,9 +235,9 @@
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
-    "category": null,
+    "category": "converting",
     "signature": "declare const pullIntoWritable: <A, IE, E>(options: { readonly pull: Pull.Pull<NonEmptyReadonlyArray<A>, IE, unknown>; readonly writable: Writable; readonly onError: (error: unknown) => E; readonly endOnDone?: boolean | undefined; readonly encoding?: BufferEncoding | undefined; }) => Pull.Pull<never, IE | E, unknown>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeSink.ts#L76"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeSink.ts#L77"
   },
   {
     "_tag": "Class",
@@ -395,7 +427,7 @@
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
-    "category": "Layers",
+    "category": "layers",
     "signature": "declare const layer: Layer.Layer<Stdio.Stdio, never, never>",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeStdio.ts#L35"
   },
@@ -491,7 +523,7 @@
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
-    "category": "conversions",
+    "category": "converting",
     "signature": "declare const toReadable: <E, R>(stream: Stream.Stream<string | Uint8Array, E, R>) => Effect.Effect<Readable, never, R>",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeStream.ts#L198"
   },
@@ -507,7 +539,7 @@
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
-    "category": "conversions",
+    "category": "converting",
     "signature": "declare const toReadableNever: <E>(stream: Stream.Stream<string | Uint8Array, E, never>) => Readable",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeStream.ts#L211"
   },
@@ -523,7 +555,7 @@
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
-    "category": "conversions",
+    "category": "converting",
     "signature": "declare const toString: <E = Cause.UnknownError>(readable: LazyArg<Readable | NodeJS.ReadableStream>, options?: { readonly onError?: (error: unknown) => E; readonly encoding?: BufferEncoding | undefined; readonly maxBytes?: SizeInput | undefined; }) => Effect.Effect<string, E>",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeStream.ts#L225"
   },
@@ -539,7 +571,7 @@
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
-    "category": "conversions",
+    "category": "converting",
     "signature": "declare const toArrayBuffer: <E = Cause.UnknownError>(readable: LazyArg<Readable | NodeJS.ReadableStream>, options?: { readonly onError?: (error: unknown) => E; readonly maxBytes?: SizeInput | undefined; }) => Effect.Effect<ArrayBuffer, E>",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeStream.ts#L278"
   },
@@ -555,7 +587,7 @@
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
-    "category": "conversions",
+    "category": "converting",
     "signature": "declare const toUint8Array: <E = Cause.UnknownError>(readable: LazyArg<Readable | NodeJS.ReadableStream>, options?: { readonly onError?: (error: unknown) => E; readonly maxBytes?: SizeInput | undefined; }) => Effect.Effect<Uint8Array, E>",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeStream.ts#L328"
   },

@@ -8,11 +8,11 @@ Returns the number rounded with the given precision.
 **Example** (Rounding with precision)
 
 ```ts
-import { round } from "effect/Number"
+import { Number } from "effect"
 import * as assert from "node:assert"
 
-assert.deepStrictEqual(round(1.1234, 2), 1.12)
-assert.deepStrictEqual(round(1.567, 2), 1.57)
+assert.deepStrictEqual(Number.round(1.1234, 2), 1.12)
+assert.deepStrictEqual(Number.round(1.567, 2), 1.57)
 ```
 
 **Signature**

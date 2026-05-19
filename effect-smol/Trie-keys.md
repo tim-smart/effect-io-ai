@@ -10,7 +10,7 @@ The keys are returned in alphabetical order, regardless of insertion order.
 **Example** (Reading keys in alphabetical order)
 
 ```ts
-import * as Trie from "effect/Trie"
+import { Trie } from "effect"
 import * as assert from "node:assert"
 
 const trie = Trie.empty<number>().pipe(
@@ -29,6 +29,6 @@ assert.deepStrictEqual(result, ["abc", "bca", "cab"])
 declare const keys: <V>(self: Trie<V>) => IterableIterator<string>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Trie.ts#L214)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Trie.ts#L212)
 
 Since v2.0.0

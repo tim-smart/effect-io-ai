@@ -13,6 +13,6 @@ export interface AnyStructSchema extends Schema.Top {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Workflow.ts#L199)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Workflow.ts#L200)
 
 Since v4.0.0

@@ -13,9 +13,7 @@ when it does not. Returning `Some(newValue)` stores the value, and returning
 **Example** (Updating values with a hash)
 
 ```ts
-import { Hash } from "effect"
-import * as HashMap from "effect/HashMap"
-import * as Option from "effect/Option"
+import { Hash, HashMap, Option } from "effect"
 
 // Useful when working with precomputed hashes for performance
 const counters = HashMap.make(["downloads", 100], ["views", 250])
@@ -55,6 +53,6 @@ console.log(HashMap.get(withClicks, "clicks")) // Option.some(1)
 declare const modifyHash: { <K, V>(key: K, hash: number, f: HashMap.UpdateFn<V>): (self: HashMap<K, V>) => HashMap<K, V>; <K, V>(self: HashMap<K, V>, key: K, hash: number, f: HashMap.UpdateFn<V>): HashMap<K, V>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashMap.ts#L915)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashMap.ts#L907)
 
 Since v2.0.0

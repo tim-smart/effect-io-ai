@@ -8,19 +8,19 @@ Checks if a given `BigDecimal` is greater than or equal to the provided one.
 **Example** (Checking greater-than-or-equal comparisons)
 
 ```ts
-import { fromStringUnsafe, isGreaterThanOrEqualTo } from "effect/BigDecimal"
+import { BigDecimal } from "effect"
 import * as assert from "node:assert"
 
 assert.deepStrictEqual(
-  isGreaterThanOrEqualTo(fromStringUnsafe("2"), fromStringUnsafe("3")),
+  BigDecimal.isGreaterThanOrEqualTo(BigDecimal.fromStringUnsafe("2"), BigDecimal.fromStringUnsafe("3")),
   false
 )
 assert.deepStrictEqual(
-  isGreaterThanOrEqualTo(fromStringUnsafe("3"), fromStringUnsafe("3")),
+  BigDecimal.isGreaterThanOrEqualTo(BigDecimal.fromStringUnsafe("3"), BigDecimal.fromStringUnsafe("3")),
   true
 )
 assert.deepStrictEqual(
-  isGreaterThanOrEqualTo(fromStringUnsafe("4"), fromStringUnsafe("3")),
+  BigDecimal.isGreaterThanOrEqualTo(BigDecimal.fromStringUnsafe("4"), BigDecimal.fromStringUnsafe("3")),
   true
 )
 ```
@@ -33,4 +33,4 @@ declare const isGreaterThanOrEqualTo: { (that: BigDecimal): (self: BigDecimal) =
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigDecimal.ts#L739)
 
-Since v2.0.0
+Since v4.0.0

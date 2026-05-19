@@ -3,7 +3,7 @@ Module: `Model`<br />
 
 ## Model.UuidV4Insert
 
-Variant field type for a branded binary UUID v4 value whose insert variant
+Variant field type for a branded string UUID v4 value whose insert variant
 generates a UUID by default.
 
 **Signature**
@@ -11,14 +11,14 @@ generates a UUID by default.
 ```ts
 export interface UuidV4Insert<B extends string> extends
   VariantSchema.Field<{
-    readonly select: Schema.brand<Schema.instanceOf<Uint8Array<ArrayBuffer>>, B>
-    readonly insert: Schema.withConstructorDefault<Schema.brand<Schema.instanceOf<Uint8Array<ArrayBuffer>>, B>>
-    readonly update: Schema.brand<Schema.instanceOf<Uint8Array<ArrayBuffer>>, B>
-    readonly json: Schema.brand<Schema.instanceOf<Uint8Array<ArrayBuffer>>, B>
+    readonly select: Schema.brand<Schema.String, B>
+    readonly insert: Schema.withConstructorDefault<Schema.brand<Schema.String, B>>
+    readonly update: Schema.brand<Schema.String, B>
+    readonly json: Schema.brand<Schema.String, B>
   }>
 {}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Model.ts#L690)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Model.ts#L742)
 
 Since v4.0.0

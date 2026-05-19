@@ -40,4 +40,4 @@ declare const isGreaterThan: <A>(O: Order<A>) => { (that: A): (self: A) => boole
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Order.ts#L791)
 
-Since v2.0.0
+Since v4.0.0

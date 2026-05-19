@@ -11,6 +11,6 @@ Low-level backing store for fixed-window counters and token-bucket state.
 declare class RateLimiterStore
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RateLimiter.ts#L482)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RateLimiter.ts#L486)
 
 Since v4.0.0

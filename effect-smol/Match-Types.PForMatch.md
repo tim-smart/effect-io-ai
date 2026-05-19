@@ -29,6 +29,6 @@ type PForMatch<P> = [ResolvePred<P>] extends [infer X] ? X
     : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L1956)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L1954)
 
 Since v4.0.0

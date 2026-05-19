@@ -9,7 +9,7 @@ function.
 **Example** (Setting a value)
 
 ```ts
-import * as HashMap from "effect/HashMap"
+import { HashMap } from "effect"
 
 const map1 = HashMap.make(["a", 1])
 const map2 = HashMap.set(map1, "b", 2)
@@ -27,6 +27,6 @@ console.log(HashMap.size(map1)) // 1
 declare const set: { <K, V>(key: K, value: V): (self: HashMap<K, V>) => HashMap<K, V>; <K, V>(self: HashMap<K, V>, key: K, value: V): HashMap<K, V>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashMap.ts#L583)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashMap.ts#L578)
 
 Since v2.0.0

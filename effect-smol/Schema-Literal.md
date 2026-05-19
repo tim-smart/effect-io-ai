@@ -18,6 +18,6 @@ export interface Literal<L extends AST.LiteralValue> extends Bottom<L, L, never,
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L1899)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L1913)
 
-Since v4.0.0
+Since v3.10.0

@@ -11,6 +11,6 @@ Re-exports all named exports from the "./OpenAiSchema.ts" module as `OpenAiSchem
 export * as OpenAiSchema from "./OpenAiSchema.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/index.ts#L66)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/index.ts#L82)
 
 Since v4.0.0

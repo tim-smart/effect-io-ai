@@ -11,6 +11,6 @@ Re-exports all named exports from the "./BunFileSystem.ts" module as `BunFileSys
 export * as BunFileSystem from "./BunFileSystem.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/index.ts#L27)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/index.ts#L124)
 
 Since v4.0.0

@@ -8,7 +8,7 @@ Sets multiple key-value pairs in the `HashMap`.
 **Example** (Setting multiple entries)
 
 ```ts
-import * as HashMap from "effect/HashMap"
+import { HashMap } from "effect"
 
 const map1 = HashMap.make(["a", 1], ["b", 2])
 const newEntries = [["c", 3], ["d", 4], ["a", 10]] as const // "a" will be overwritten
@@ -25,6 +25,6 @@ console.log(HashMap.get(map2, "c")) // Option.some(3)
 declare const setMany: { <K, V>(entries: Iterable<readonly [K, V]>): (self: HashMap<K, V>) => HashMap<K, V>; <K, V>(self: HashMap<K, V>, entries: Iterable<readonly [K, V]>): HashMap<K, V>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashMap.ts#L1039)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashMap.ts#L1031)
 
-Since v2.0.0
+Since v4.0.0

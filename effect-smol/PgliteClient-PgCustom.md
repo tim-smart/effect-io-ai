@@ -11,6 +11,6 @@ PGlite-specific custom statement fragments supported by the compiler, currently 
 type PgCustom = PgJson
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/sql/pglite/src/PgliteClient.ts#L438)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/sql/pglite/src/PgliteClient.ts#L437)
 
 Since v4.0.0

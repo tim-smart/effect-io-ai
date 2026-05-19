@@ -40,6 +40,6 @@ const program = Effect.gen(function*() {
 declare const windowed: (interval: Duration.Input) => Schedule<number>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L3147)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L3144)
 
 Since v2.0.0

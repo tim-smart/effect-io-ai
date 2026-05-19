@@ -28,4 +28,4 @@ declare const decodeBase64UrlString: (str: string) => Result.Result<string, Enco
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Encoding.ts#L288)
 
-Since v4.0.0
+Since v2.0.0

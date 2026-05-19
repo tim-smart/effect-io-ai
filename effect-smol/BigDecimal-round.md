@@ -8,16 +8,16 @@ Rounds a `BigDecimal` at the given scale with the specified rounding mode.
 **Example** (Rounding decimals)
 
 ```ts
-import { fromStringUnsafe, round } from "effect/BigDecimal"
+import { BigDecimal } from "effect"
 import * as assert from "node:assert"
 
 assert.deepStrictEqual(
-  round(fromStringUnsafe("145"), { mode: "from-zero", scale: -1 }),
-  fromStringUnsafe("150")
+  BigDecimal.round(BigDecimal.fromStringUnsafe("145"), { mode: "from-zero", scale: -1 }),
+  BigDecimal.fromStringUnsafe("150")
 )
 assert.deepStrictEqual(
-  round(fromStringUnsafe("-14.5")),
-  fromStringUnsafe("-15")
+  BigDecimal.round(BigDecimal.fromStringUnsafe("-14.5")),
+  BigDecimal.fromStringUnsafe("-15")
 )
 ```
 
@@ -29,4 +29,4 @@ declare const round: { (options: { scale?: number; mode?: RoundingMode; }): (sel
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigDecimal.ts#L1482)
 
-Since v4.0.0
+Since v3.16.0

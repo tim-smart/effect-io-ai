@@ -8,8 +8,7 @@ Creates a PubSub with a custom atomic implementation and strategy.
 **Example** (Creating a PubSub with a custom strategy)
 
 ```ts
-import { Effect } from "effect"
-import * as PubSub from "effect/PubSub"
+import { Effect, PubSub } from "effect"
 
 const program = Effect.gen(function*() {
   // Create custom PubSub with specific atomic implementation and strategy
@@ -29,6 +28,6 @@ const program = Effect.gen(function*() {
 declare const make: <A>(options: { readonly atomicPubSub: LazyArg<PubSub.Atomic<A>>; readonly strategy: LazyArg<PubSub.Strategy<A>>; }) => Effect.Effect<PubSub<A>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PubSub.ts#L297)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PubSub.ts#L294)
 
 Since v4.0.0

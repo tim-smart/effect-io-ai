@@ -14,6 +14,6 @@ transformation target is `void`.
 declare const isNoContent: (ast: AST.AST) => boolean
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiSchema.ts#L453)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiSchema.ts#L464)
 
 Since v4.0.0

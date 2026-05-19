@@ -9,7 +9,7 @@ and retrieval of unique values. It uses a HashMap internally for optimal perform
 **Example** (Creating and updating a HashSet)
 
 ```ts
-import * as HashSet from "effect/HashSet"
+import { HashSet } from "effect"
 
 // Create a HashSet
 const set = HashSet.make("apple", "banana", "cherry")

@@ -22,9 +22,9 @@ data-last style.
 **Example** (Using arity to determine data-first or data-last style)
 
 ```ts
-import { dual, pipe } from "effect/Function"
+import { Function, pipe } from "effect"
 
-const sum = dual<
+const sum = Function.dual<
   (that: number) => (self: number) => number,
   (self: number, that: number) => number
 >(2, (self, that) => self + that)
@@ -36,12 +36,12 @@ console.log(pipe(2, sum(3))) // 5
 **Example** (Using call signatures to define the overloads)
 
 ```ts
-import { dual, pipe } from "effect/Function"
+import { Function, pipe } from "effect"
 
 const sum: {
   (that: number): (self: number) => number
   (self: number, that: number): number
-} = dual(2, (self: number, that: number): number => self + that)
+} = Function.dual(2, (self: number, that: number): number => self + that)
 
 console.log(sum(2, 3)) // 5
 console.log(pipe(2, sum(3))) // 5
@@ -50,9 +50,9 @@ console.log(pipe(2, sum(3))) // 5
 **Example** (Using a predicate to determine data-first or data-last style)
 
 ```ts
-import { dual, pipe } from "effect/Function"
+import { Function, pipe } from "effect"
 
-const sum = dual<
+const sum = Function.dual<
   (that: number) => (self: number) => number,
   (self: number, that: number) => number
 >(
@@ -70,6 +70,6 @@ console.log(pipe(2, sum(3))) // 5
 declare const dual: { <DataLast extends (...args: Array<any>) => any, DataFirst extends (...args: Array<any>) => any>(arity: Parameters<DataFirst>["length"], body: DataFirst): DataLast & DataFirst; <DataLast extends (...args: Array<any>) => any, DataFirst extends (...args: Array<any>) => any>(isDataFirst: (args: IArguments) => boolean, body: DataFirst): DataLast & DataFirst; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Function.ts#L138)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Function.ts#L137)
 
 Since v2.0.0

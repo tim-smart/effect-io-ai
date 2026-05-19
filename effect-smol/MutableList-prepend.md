@@ -9,7 +9,7 @@ This operation is optimized for high-frequency usage.
 **Example** (Prepending elements)
 
 ```ts
-import * as MutableList from "effect/MutableList"
+import { MutableList } from "effect"
 
 const list = MutableList.make<string>()
 
@@ -37,6 +37,6 @@ console.log(MutableList.take(list)) // "priority"
 declare const prepend: <A>(self: MutableList<A>, message: A) => void
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableList.ts#L378)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableList.ts#L375)
 
-Since v4.0.0
+Since v2.0.0

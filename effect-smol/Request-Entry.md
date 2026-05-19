@@ -29,6 +29,6 @@ export interface Entry<out R> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Request.ts#L505)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Request.ts#L506)
 
 Since v2.0.0

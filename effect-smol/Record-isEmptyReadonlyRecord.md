@@ -21,6 +21,6 @@ assert.deepStrictEqual(Record.isEmptyReadonlyRecord({ a: 3 }), false)
 declare const isEmptyReadonlyRecord: <K extends string, A>(self: ReadonlyRecord<K, A>) => self is ReadonlyRecord<K, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Record.ts#L204)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Record.ts#L203)
 
 Since v2.0.0

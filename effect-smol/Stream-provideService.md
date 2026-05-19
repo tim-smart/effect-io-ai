@@ -9,7 +9,7 @@ requirement from its environment.
 **Example** (Providing a stream service)
 
 ```ts
-import { Console, Effect, Context, Stream } from "effect"
+import { Console, Context, Effect, Stream } from "effect"
 
 class Greeter extends Context.Service<Greeter, {
   greet: (name: string) => string
@@ -42,6 +42,6 @@ Effect.runPromise(program)
 declare const provideService: { <I, S>(key: Context.Key<I, S>, service: NoInfer<S>): <A, E, R>(self: Stream<A, E, R>) => Stream<A, E, Exclude<R, I>>; <A, E, R, I, S>(self: Stream<A, E, R>, key: Context.Key<I, S>, service: NoInfer<S>): Stream<A, E, Exclude<R, I>>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L9728)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L9713)
 
-Since v4.0.0
+Since v2.0.0

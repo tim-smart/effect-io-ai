@@ -10,7 +10,7 @@ The returned interruptor calls `fiber.interruptUnsafe`, optionally with an inter
 **Example** (Usage)
 
 ```ts
-import { Console, Effect, Exit, Context } from "effect"
+import { Console, Context, Effect, Exit } from "effect"
 
 interface Logger {
   log: (message: string) => Effect.Effect<void>
@@ -46,6 +46,6 @@ interrupt()
 declare const runCallbackWith: <R>(context: Context.Context<R>) => <A, E>(effect: Effect<A, E, R>, options?: (RunOptions & { readonly onExit: (exit: Exit.Exit<A, E>) => void; }) | undefined) => (interruptor?: number | undefined) => void
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L8313)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L8219)
 
 Since v4.0.0

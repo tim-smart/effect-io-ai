@@ -13,7 +13,7 @@ and visualization tools.
 **Example** (Exporting a directed Mermaid diagram)
 
 ```ts
-import * as Graph from "effect/Graph"
+import { Graph } from "effect"
 
 // Basic directed graph export
 const graph = Graph.directed<string, number>((mutable) => {
@@ -37,7 +37,7 @@ console.log(mermaid)
 **Example** (Exporting an undirected Mermaid diagram)
 
 ```ts
-import * as Graph from "effect/Graph"
+import { Graph } from "effect"
 
 // Undirected graph with custom labels and direction
 const socialGraph = Graph.undirected<{ name: string }, string>((mutable) => {
@@ -65,7 +65,7 @@ console.log(mermaid)
 **Example** (Customizing Mermaid node shapes)
 
 ```ts
-import * as Graph from "effect/Graph"
+import { Graph } from "effect"
 
 // Advanced styling with node shapes for flowchart
 const workflow = Graph.directed<{ type: string; name: string }, string>(
@@ -117,7 +117,7 @@ console.log(mermaid)
 **Example** (Visualizing dependency graphs)
 
 ```ts
-import * as Graph from "effect/Graph"
+import { Graph } from "effect"
 
 // Real-world example: Software dependency graph
 interface Dependency {
@@ -182,6 +182,6 @@ console.log(dependencyDiagram)
 declare const toMermaid: { <N, E>(options?: MermaidOptions<N, E>): <T extends Kind = "directed">(graph: Graph<N, E, T> | MutableGraph<N, E, T>) => string; <N, E, T extends Kind = "directed">(graph: Graph<N, E, T> | MutableGraph<N, E, T>, options?: MermaidOptions<N, E>): string; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Graph.ts#L2303)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Graph.ts#L2296)
 
-Since v4.0.0
+Since v3.18.0

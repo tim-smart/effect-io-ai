@@ -8,12 +8,12 @@ Returns a function that checks if a given `number` is less than or equal to the 
 **Example** (Checking less-than-or-equal comparisons)
 
 ```ts
-import { isLessThanOrEqualTo } from "effect/Number"
+import { Number } from "effect"
 import * as assert from "node:assert"
 
-assert.deepStrictEqual(isLessThanOrEqualTo(2, 3), true)
-assert.deepStrictEqual(isLessThanOrEqualTo(3, 3), true)
-assert.deepStrictEqual(isLessThanOrEqualTo(4, 3), false)
+assert.deepStrictEqual(Number.isLessThanOrEqualTo(2, 3), true)
+assert.deepStrictEqual(Number.isLessThanOrEqualTo(3, 3), true)
+assert.deepStrictEqual(Number.isLessThanOrEqualTo(4, 3), false)
 ```
 
 **Signature**
@@ -24,4 +24,4 @@ declare const isLessThanOrEqualTo: { (that: number): (self: number) => boolean; 
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Number.ts#L276)
 
-Since v2.0.0
+Since v4.0.0

@@ -13,7 +13,7 @@ complex type unions and provide better type inference.
 **Example** (Unifying protocol types)
 
 ```ts
-import type * as Unify from "effect/Unify"
+import type { Unify } from "effect"
 
 // Example of types that can be unified
 type UnifiableA = {

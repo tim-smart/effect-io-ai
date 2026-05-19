@@ -8,7 +8,7 @@ Removes a value from the HashSet, returning a new HashSet.
 **Example** (Removing values from a HashSet)
 
 ```ts
-import * as HashSet from "effect/HashSet"
+import { HashSet } from "effect"
 
 const set = HashSet.make("a", "b", "c")
 const withoutB = HashSet.remove(set, "b")
@@ -28,6 +28,6 @@ console.log(HashSet.size(same)) // 3
 declare const remove: { <V>(value: V): (self: HashSet<V>) => HashSet<V>; <V>(self: HashSet<V>, value: V): HashSet<V>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashSet.ts#L325)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashSet.ts#L323)
 
 Since v2.0.0

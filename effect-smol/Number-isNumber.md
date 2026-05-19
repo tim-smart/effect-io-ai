@@ -8,11 +8,11 @@ Tests if a value is a `number`.
 **Example** (Checking for numbers)
 
 ```ts
-import { isNumber } from "effect/Number"
+import { Number } from "effect"
 import * as assert from "node:assert"
 
-assert.deepStrictEqual(isNumber(2), true)
-assert.deepStrictEqual(isNumber("2"), false)
+assert.deepStrictEqual(Number.isNumber(2), true)
+assert.deepStrictEqual(Number.isNumber("2"), false)
 ```
 
 **Signature**

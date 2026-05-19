@@ -11,6 +11,6 @@ SQL error reason for an unclassified database failure; not marked retryable.
 declare class UnknownError
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SqlError.ts#L305)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SqlError.ts#L316)
 
 Since v4.0.0

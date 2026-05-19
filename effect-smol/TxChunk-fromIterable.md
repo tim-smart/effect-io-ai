@@ -8,15 +8,6 @@ Creates a new `TxChunk` from an iterable.
 **Return behavior**: This function returns a new TxChunk reference containing
 elements from the provided iterable. No existing TxChunk instances are modified.
 
-**Signature**
-
-```ts
-declare const fromIterable: <A>(iterable: Iterable<A>) => Effect.Effect<TxChunk<A>>
-```
-
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxChunk.ts#L183)
-
-Since v4.0.0
 **Example** (Creating from an iterable)
 
 ```ts
@@ -42,3 +33,13 @@ const program = Effect.gen(function*() {
   console.log(Chunk.toReadonlyArray(updated)) // [0, 1, 2, 3, 4, 5, 6]
 })
 ```
+
+**Signature**
+
+```ts
+declare const fromIterable: <A>(iterable: Iterable<A>) => Effect.Effect<TxChunk<A>>
+```
+
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxChunk.ts#L186)
+
+Since v4.0.0

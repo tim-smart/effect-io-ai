@@ -8,10 +8,10 @@ Returns the result of adding `1` to a given number.
 **Example** (Incrementing a number)
 
 ```ts
-import { increment } from "effect/Number"
+import { Number } from "effect"
 import * as assert from "node:assert"
 
-assert.deepStrictEqual(increment(2), 3)
+assert.deepStrictEqual(Number.increment(2), 3)
 ```
 
 **Signature**

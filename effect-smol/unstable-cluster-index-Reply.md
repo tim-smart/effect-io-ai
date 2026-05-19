@@ -11,6 +11,6 @@ Re-exports all named exports from the "./Reply.ts" module as `Reply`.
 export * as Reply from "./Reply.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L105)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L536)
 
 Since v4.0.0

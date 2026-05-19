@@ -11,6 +11,6 @@ Re-exports all named exports from the "./OpenAiClient.ts" module as `OpenAiClien
 export * as OpenAiClient from "./OpenAiClient.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/index.ts#L10)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/index.ts#L33)
 
 Since v4.0.0

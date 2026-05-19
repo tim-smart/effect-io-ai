@@ -11,6 +11,6 @@ Lifecycle status shared by message, reasoning, and tool-call items.
 type MessageStatus = "in_progress" | "completed" | "incomplete"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/OpenAiClient.ts#L317)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/OpenAiClient.ts#L319)
 
 Since v4.0.0

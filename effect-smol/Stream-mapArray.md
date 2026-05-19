@@ -5,12 +5,6 @@ Module: `Stream`<br />
 
 Transforms each emitted chunk using the provided function, which receives the chunk and its index.
 
-**Previously Known As**
-
-This API replaces the following from Effect 3.x:
-
-- `Stream.mapChunks`
-
 **Example** (Mapping stream chunks)
 
 ```ts
@@ -35,6 +29,6 @@ Effect.runPromise(program)
 declare const mapArray: { <A, B>(f: (a: Arr.NonEmptyReadonlyArray<A>, i: number) => Arr.NonEmptyReadonlyArray<B>): <E, R>(self: Stream<A, E, R>) => Stream<B, E, R>; <A, E, R, B>(self: Stream<A, E, R>, f: (a: Arr.NonEmptyReadonlyArray<A>, i: number) => Arr.NonEmptyReadonlyArray<B>): Stream<B, E, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L1990)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L1934)
 
-Since v2.0.0
+Since v4.0.0

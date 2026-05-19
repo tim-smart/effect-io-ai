@@ -11,6 +11,6 @@ Re-exports all named exports from the "./OpenRouterError.ts" module as `OpenRout
 export * as OpenRouterError from "./OpenRouterError.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openrouter/src/index.ts#L30)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openrouter/src/index.ts#L70)
 
 Since v4.0.0

@@ -8,7 +8,7 @@ Insert a new entry in the `Trie`.
 **Example** (Inserting entries)
 
 ```ts
-import * as Trie from "effect/Trie"
+import { Trie } from "effect"
 import * as assert from "node:assert"
 
 const trie1 = Trie.empty<number>().pipe(
@@ -33,6 +33,6 @@ assert.deepStrictEqual(Array.from(trie4), [["call", 0], ["me", 1], ["mid", 3], [
 declare const insert: { <V>(key: string, value: V): (self: Trie<V>) => Trie<V>; <V>(self: Trie<V>, key: string, value: V): Trie<V>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Trie.ts#L185)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Trie.ts#L183)
 
 Since v2.0.0

@@ -37,6 +37,6 @@ console.log(Chunk.toArray(wordDiff)) // ["Banana", "Cherry"]
 declare const differenceWith: <A>(isEquivalent: (self: A, that: A) => boolean) => { (that: Chunk<A>): (self: Chunk<A>) => Chunk<A>; (self: Chunk<A>, that: Chunk<A>): Chunk<A>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L2906)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L2895)
 
 Since v3.2.0

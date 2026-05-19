@@ -15,8 +15,7 @@ unchanged. The returned effect always succeeds with `result`.
 **Example** (Conditionally modifying a value)
 
 ```ts
-import { Effect, Ref } from "effect"
-import * as Option from "effect/Option"
+import { Effect, Option, Ref } from "effect"
 
 const program = Effect.gen(function*() {
   const counter = yield* Ref.make(5)
@@ -57,6 +56,6 @@ const program = Effect.gen(function*() {
 declare const modifySome: { <B, A>(pf: (a: A) => readonly [B, Option.Option<A>]): (self: Ref<A>) => Effect.Effect<B>; <A, B>(self: Ref<A>, pf: (a: A) => readonly [B, Option.Option<A>]): Effect.Effect<B>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Ref.ts#L500)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Ref.ts#L494)
 
 Since v2.0.0

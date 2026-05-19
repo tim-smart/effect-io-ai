@@ -11,6 +11,6 @@ Re-exports all named exports from the "./BunHttpServerRequest.ts" module as `Bun
 export * as BunHttpServerRequest from "./BunHttpServerRequest.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/index.ts#L47)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/index.ts#L219)
 
 Since v4.0.0

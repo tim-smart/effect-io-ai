@@ -9,7 +9,7 @@ This operation modifies the list and rebuilds its internal structure for efficie
 **Example** (Filtering in place)
 
 ```ts
-import * as MutableList from "effect/MutableList"
+import { MutableList } from "effect"
 
 const list = MutableList.make<number>()
 MutableList.appendAll(list, [1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
@@ -49,6 +49,6 @@ console.log(MutableList.takeAll(logs).map((log) => log.message)) // ["Connection
 declare const filter: <A>(self: MutableList<A>, f: (value: A, i: number) => boolean) => void
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableList.ts#L894)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableList.ts#L891)
 
 Since v4.0.0

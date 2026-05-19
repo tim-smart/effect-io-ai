@@ -14,6 +14,6 @@ another terminating consumer before materializing it.
 declare const forever: <A>(self: Iterable<A>) => Iterable<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Iterable.ts#L170)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Iterable.ts#L167)
 
 Since v4.0.0

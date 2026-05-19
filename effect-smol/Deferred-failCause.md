@@ -30,6 +30,6 @@ const program = Effect.gen(function*() {
 declare const failCause: { <E>(cause: Cause.Cause<E>): <A>(self: Deferred<A, E>) => Effect<boolean>; <A, E>(self: Deferred<A, E>, cause: Cause.Cause<E>): Effect<boolean>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Deferred.ts#L441)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Deferred.ts#L440)
 
 Since v2.0.0

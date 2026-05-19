@@ -8,7 +8,7 @@ Returns an iterable over the values in the `MutableHashMap`.
 **Example** (Reading values)
 
 ```ts
-import * as MutableHashMap from "effect/MutableHashMap"
+import { MutableHashMap } from "effect"
 
 const map = MutableHashMap.make(
   ["apple", 1],
@@ -34,6 +34,6 @@ console.log(largeValues) // [2, 3]
 declare const values: <K, V>(self: MutableHashMap<K, V>) => Iterable<V>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableHashMap.ts#L309)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableHashMap.ts#L308)
 
 Since v3.8.0

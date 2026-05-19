@@ -10,7 +10,7 @@ and includes zero-copy optimizations when possible.
 **Example** (Taking batches)
 
 ```ts
-import * as MutableList from "effect/MutableList"
+import { MutableList } from "effect"
 
 const list = MutableList.make<number>()
 MutableList.appendAll(list, [1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
@@ -47,6 +47,6 @@ while (queue.length > 0) {
 declare const takeN: <A>(self: MutableList<A>, n: number) => Array<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableList.ts#L641)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableList.ts#L638)
 
 Since v4.0.0

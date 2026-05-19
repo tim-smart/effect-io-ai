@@ -11,6 +11,6 @@ Asserts that `a` is not `undefined`.
 declare const assertDefined: <A>(a: A | undefined, ..._: Array<never>) => asserts a is Exclude<A, undefined>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/vitest/src/utils.ts#L212)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/vitest/src/utils.ts#L227)
 
 Since v4.0.0

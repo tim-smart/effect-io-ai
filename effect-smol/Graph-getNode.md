@@ -8,8 +8,7 @@ Gets the data associated with a node index, if it exists.
 **Example** (Getting node data)
 
 ```ts
-import { Graph } from "effect"
-import * as Option from "effect/Option"
+import { Graph, Option } from "effect"
 
 const graph = Graph.mutate(Graph.directed<string, number>(), (mutable) => {
   Graph.addNode(mutable, "Node A")
@@ -29,6 +28,6 @@ if (Option.isSome(nodeData)) {
 declare const getNode: { <N, E, T extends Kind = "directed">(nodeIndex: NodeIndex): (graph: Graph<N, E, T> | MutableGraph<N, E, T>) => Option.Option<N>; <N, E, T extends Kind = "directed">(graph: Graph<N, E, T> | MutableGraph<N, E, T>, nodeIndex: NodeIndex): Option.Option<N>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Graph.ts#L562)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Graph.ts#L561)
 
-Since v4.0.0
+Since v3.18.0

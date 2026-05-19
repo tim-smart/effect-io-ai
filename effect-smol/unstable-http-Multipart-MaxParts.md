@@ -13,6 +13,6 @@ The default is `undefined`, meaning no explicit part-count limit.
 declare const MaxParts: Context.Reference<number | undefined>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Multipart.ts#L751)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Multipart.ts#L752)
 
 Since v4.0.0

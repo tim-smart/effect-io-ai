@@ -8,15 +8,6 @@ Creates a new `TxChunk` with the specified initial chunk.
 **Return behavior**: This function returns a new TxChunk reference containing
 the provided initial chunk. No existing TxChunk instances are modified.
 
-**Signature**
-
-```ts
-declare const make: <A>(initial: Chunk.Chunk<A>) => Effect.Effect<TxChunk<A>>
-```
-
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxChunk.ts#L114)
-
-Since v4.0.0
 **Example** (Creating a TxChunk from a chunk)
 
 ```ts
@@ -32,3 +23,13 @@ const program = Effect.gen(function*() {
   console.log(Chunk.toReadonlyArray(result)) // [1, 2, 3]
 })
 ```
+
+**Signature**
+
+```ts
+declare const make: <A>(initial: Chunk.Chunk<A>) => Effect.Effect<TxChunk<A>>
+```
+
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxChunk.ts#L115)
+
+Since v4.0.0

@@ -9,7 +9,7 @@ Format all metrics in the registry to Prometheus exposition format.
 
 ```ts
 import { Effect, Metric } from "effect"
-import * as PrometheusMetrics from "effect/unstable/observability/PrometheusMetrics"
+import { PrometheusMetrics } from "effect/unstable/observability"
 
 const program = Effect.gen(function*() {
   const counter = Metric.counter("api_requests_total", {

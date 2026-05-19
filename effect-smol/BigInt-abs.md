@@ -8,12 +8,12 @@ Determines the absolute value of a given `bigint`.
 **Example** (Calculating absolute values)
 
 ```ts
-import { abs } from "effect/BigInt"
+import { BigInt } from "effect"
 import * as assert from "node:assert"
 
-assert.deepStrictEqual(abs(-5n), 5n)
-assert.deepStrictEqual(abs(0n), 0n)
-assert.deepStrictEqual(abs(5n), 5n)
+assert.deepStrictEqual(BigInt.abs(-5n), 5n)
+assert.deepStrictEqual(BigInt.abs(0n), 0n)
+assert.deepStrictEqual(BigInt.abs(5n), 5n)
 ```
 
 **Signature**
@@ -22,6 +22,6 @@ assert.deepStrictEqual(abs(5n), 5n)
 declare const abs: (n: bigint) => bigint
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigInt.ts#L473)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigInt.ts#L471)
 
 Since v2.0.0

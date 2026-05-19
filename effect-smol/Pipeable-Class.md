@@ -15,6 +15,6 @@ Effect-style method chaining through `.pipe(...)`.
 declare const Class: new () => Pipeable
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Pipeable.ts#L615)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Pipeable.ts#L618)
 
-Since v4.0.0
+Since v3.15.0

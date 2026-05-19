@@ -27,4 +27,4 @@ declare const isLogger: (u: unknown) => u is Logger<unknown, unknown>
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Logger.ts#L203)
 
-Since v2.0.0
+Since v4.0.0

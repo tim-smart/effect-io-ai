@@ -29,6 +29,6 @@ export interface suspend<S extends Top> extends
 {}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L3920)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L4031)
 
-Since v4.0.0
+Since v3.10.0

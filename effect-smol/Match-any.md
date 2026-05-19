@@ -42,6 +42,6 @@ console.log(describeValue(null))
 declare const any: SafeRefinement<unknown, any>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L1292)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L1291)
 
 Since v4.0.0

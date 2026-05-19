@@ -11,6 +11,6 @@ Re-exports all named exports from the "./ClusterError.ts" module as `ClusterErro
 export * as ClusterError from "./ClusterError.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L15)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L64)
 
 Since v4.0.0

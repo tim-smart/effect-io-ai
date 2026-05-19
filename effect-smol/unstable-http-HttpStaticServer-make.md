@@ -9,7 +9,7 @@ Creates an `HttpApp` that serves files from a directory.
 
 ```ts
 import { Effect } from "effect"
-import * as HttpStaticServer from "effect/unstable/http/HttpStaticServer"
+import { HttpStaticServer } from "effect/unstable/http"
 
 const program = Effect.gen(function*() {
   const app = yield* HttpStaticServer.make({ root: "./public" })

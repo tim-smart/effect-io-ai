@@ -11,6 +11,6 @@ Re-exports all named exports from the "./PgliteMigrator.ts" module as `PgliteMig
 export * as PgliteMigrator from "./PgliteMigrator.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/sql/pglite/src/index.ts#L15)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/sql/pglite/src/index.ts#L54)
 
 Since v4.0.0

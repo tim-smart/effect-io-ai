@@ -11,7 +11,7 @@ For example, `--output FILE` shows `FILE` as the metavar.
 **Example** (Setting metavars)
 
 ```ts
-import * as Param from "effect/unstable/cli/Param"
+import { Param } from "effect/unstable/cli"
 
 // @internal - this module is not exported publicly
 
@@ -30,6 +30,6 @@ const port = Param.integer(Param.flagKind, "port").pipe(
 declare const withMetavar: { <K extends ParamKind>(metavar: string): <A>(self: Param<K, A>) => Param<K, A>; <K extends ParamKind, A>(self: Param<K, A>, metavar: string): Param<K, A>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Param.ts#L1650)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Param.ts#L1649)
 
 Since v4.0.0

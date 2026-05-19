@@ -13,10 +13,10 @@ Throws a `RangeError` if the divisor is `0`.
 **Example** (Dividing decimals unsafely)
 
 ```ts
-import { divideUnsafe, fromStringUnsafe } from "effect/BigDecimal"
+import { BigDecimal } from "effect"
 
-console.log(divideUnsafe(fromStringUnsafe("6"), fromStringUnsafe("3"))) // BigDecimal(2)
-console.log(divideUnsafe(fromStringUnsafe("6"), fromStringUnsafe("4"))) // BigDecimal(1.5)
+console.log(BigDecimal.divideUnsafe(BigDecimal.fromStringUnsafe("6"), BigDecimal.fromStringUnsafe("3"))) // BigDecimal(2)
+console.log(BigDecimal.divideUnsafe(BigDecimal.fromStringUnsafe("6"), BigDecimal.fromStringUnsafe("4"))) // BigDecimal(1.5)
 ```
 
 **Signature**
@@ -27,4 +27,4 @@ declare const divideUnsafe: { (that: BigDecimal): (self: BigDecimal) => BigDecim
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigDecimal.ts#L564)
 
-Since v2.0.0
+Since v4.0.0

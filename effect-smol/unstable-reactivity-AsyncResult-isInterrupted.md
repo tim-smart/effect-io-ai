@@ -11,6 +11,6 @@ Returns `true` when an `AsyncResult` is a `Failure` whose cause contains only in
 declare const isInterrupted: <A, E>(result: AsyncResult<A, E>) => result is Failure<A, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AsyncResult.ts#L296)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AsyncResult.ts#L298)
 
 Since v4.0.0

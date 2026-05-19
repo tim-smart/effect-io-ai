@@ -12,9 +12,7 @@ iterable is guaranteed to be non-empty, the first element is always available.
 **Example** (Extracting first and remaining elements)
 
 ```ts
-import { Array } from "effect"
-import * as Chunk from "effect/Chunk"
-import * as NonEmptyIterable from "effect/NonEmptyIterable"
+import { Array, Chunk, NonEmptyIterable } from "effect"
 
 // Helper to make iterator iterable for Array.from
 const iteratorToIterable = <T>(iterator: Iterator<T>): Iterable<T> => ({
@@ -116,6 +114,6 @@ const sum = reduceNonEmpty(data, (acc, x) => acc + x, 0) // 10
 declare const unprepend: <A>(self: NonEmptyIterable<A>) => [firstElement: A, remainingElements: Iterator<A>]
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/NonEmptyIterable.ts#L332)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/NonEmptyIterable.ts#L325)
 
 Since v2.0.0

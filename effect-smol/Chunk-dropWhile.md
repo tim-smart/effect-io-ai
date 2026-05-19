@@ -21,6 +21,6 @@ console.log(Chunk.toArray(result)) // [3, 4, 5]
 declare const dropWhile: { <A>(predicate: Predicate<NoInfer<A>>): (self: Chunk<A>) => Chunk<A>; <A>(self: Chunk<A>, predicate: Predicate<A>): Chunk<A>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L896)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L893)
 
 Since v2.0.0

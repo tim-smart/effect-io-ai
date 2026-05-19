@@ -21,6 +21,6 @@ type StepInput<Steps, Out> = Steps extends
     Out
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ExecutionPlan.ts#L306)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ExecutionPlan.ts#L314)
 
 Since v3.16.0

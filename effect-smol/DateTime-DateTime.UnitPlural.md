@@ -19,6 +19,6 @@ type UnitPlural = | "milliseconds"
     | "years"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L181)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L180)
 
 Since v3.6.0

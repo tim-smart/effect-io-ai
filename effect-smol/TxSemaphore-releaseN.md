@@ -34,6 +34,6 @@ const program = Effect.gen(function*() {
 declare const releaseN: (self: TxSemaphore, n: number) => Effect.Effect<void>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxSemaphore.ts#L427)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxSemaphore.ts#L396)
 
-Since v4.0.0
+Since v2.0.0

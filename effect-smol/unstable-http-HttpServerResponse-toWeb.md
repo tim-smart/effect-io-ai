@@ -15,6 +15,6 @@ responses.
 declare const toWeb: (response: HttpServerResponse, options?: { readonly withoutBody?: boolean | undefined; readonly context?: Context.Context<never> | undefined; }) => Response
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpServerResponse.ts#L924)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpServerResponse.ts#L925)
 
 Since v4.0.0

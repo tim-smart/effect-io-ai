@@ -11,6 +11,6 @@ Type of the `NoContent` schema, a void schema annotated with HTTP status code 20
 export interface NoContent extends Schema.Void {}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiSchema.ts#L201)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiSchema.ts#L202)
 
 Since v4.0.0

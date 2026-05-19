@@ -11,7 +11,7 @@ This function allows you to set or replace the query parameters of a `URL`
 object using the provided `UrlParams`. It creates a new `URL` object with the
 updated parameters, leaving the original object unchanged.
 
-**Example**
+**Example** (Replacing query parameters)
 
 ```ts
 import { Url, UrlParams } from "effect/unstable/http"

@@ -11,6 +11,6 @@ Reasoning output item containing encrypted content, summaries, and optional reas
 type ReasoningItem = typeof ReasoningItem.Type
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiSchema.ts#L225)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiSchema.ts#L237)
 
 Since v4.0.0

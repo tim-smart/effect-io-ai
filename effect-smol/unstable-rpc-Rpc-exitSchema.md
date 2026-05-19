@@ -15,6 +15,6 @@ the exit success value. The schema is cached per RPC definition.
 declare const exitSchema: <R extends Any>(self: R) => Schema.Exit<SuccessExitSchema<R>, ErrorExitSchema<R>, DefectSchema>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Rpc.ts#L1107)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Rpc.ts#L1106)
 
 Since v4.0.0

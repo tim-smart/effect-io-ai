@@ -42,6 +42,6 @@ const program = Effect.gen(function*() {
 declare const endUnsafe: <A, E>(self: Enqueue<A, E | Done>) => boolean
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Queue.ts#L960)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Queue.ts#L945)
 
 Since v4.0.0

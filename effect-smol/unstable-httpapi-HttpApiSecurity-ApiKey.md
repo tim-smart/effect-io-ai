@@ -15,6 +15,6 @@ export interface ApiKey extends HttpApiSecurity.Proto<Redacted> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiSecurity.ts#L89)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiSecurity.ts#L88)
 
 Since v4.0.0

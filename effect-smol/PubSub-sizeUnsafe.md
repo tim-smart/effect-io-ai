@@ -29,6 +29,6 @@ console.log("Current size:", size)
 declare const sizeUnsafe: <A>(self: PubSub<A>) => number
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PubSub.ts#L627)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PubSub.ts#L616)
 
-Since v2.0.0
+Since v4.0.0

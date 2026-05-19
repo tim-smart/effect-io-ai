@@ -10,8 +10,7 @@ representing the new value.
 **Example** (Updating values from Options)
 
 ```ts
-import * as HashMap from "effect/HashMap"
-import * as Option from "effect/Option"
+import { HashMap, Option } from "effect"
 
 const map = HashMap.make(["a", 1], ["b", 2])
 
@@ -29,6 +28,6 @@ console.log(HashMap.get(updated, "a")) // Option.some(2)
 type UpdateFn<V> = (option: Option<V>) => Option<V>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashMap.ts#L180)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashMap.ts#L178)
 
 Since v2.0.0

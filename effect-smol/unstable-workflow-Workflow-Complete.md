@@ -12,6 +12,6 @@ failure `Exit`.
 declare class Complete<A, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Workflow.ts#L511)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Workflow.ts#L513)
 
 Since v4.0.0

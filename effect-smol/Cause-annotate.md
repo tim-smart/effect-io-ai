@@ -33,6 +33,6 @@ const annotated = Cause.annotate(cause, Context.empty())
 declare const annotate: { (annotations: Context.Context<never>, options?: { readonly overwrite?: boolean | undefined; }): <E>(self: Cause<E>) => Cause<E>; <E>(self: Cause<E>, annotations: Context.Context<never>, options?: { readonly overwrite?: boolean | undefined; }): Cause<E>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L1618)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L1617)
 
 Since v4.0.0

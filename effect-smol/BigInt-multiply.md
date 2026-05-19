@@ -8,10 +8,10 @@ Provides a multiplication operation on `bigint`s.
 **Example** (Multiplying bigints)
 
 ```ts
-import { multiply } from "effect/BigInt"
+import { BigInt } from "effect"
 import * as assert from "node:assert"
 
-assert.deepStrictEqual(multiply(2n, 3n), 6n)
+assert.deepStrictEqual(BigInt.multiply(2n, 3n), 6n)
 ```
 
 **Signature**

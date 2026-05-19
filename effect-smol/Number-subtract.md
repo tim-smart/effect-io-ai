@@ -8,10 +8,10 @@ Provides a subtraction operation on `number`s.
 **Example** (Subtracting numbers)
 
 ```ts
-import { subtract } from "effect/Number"
+import { Number } from "effect"
 import * as assert from "node:assert"
 
-assert.deepStrictEqual(subtract(2, 3), -1)
+assert.deepStrictEqual(Number.subtract(2, 3), -1)
 ```
 
 **Signature**

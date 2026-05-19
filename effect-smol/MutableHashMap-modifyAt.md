@@ -11,8 +11,7 @@ If the function returns None, the key is removed.
 **Example** (Updating or removing a key)
 
 ```ts
-import * as MutableHashMap from "effect/MutableHashMap"
-import * as Option from "effect/Option"
+import { MutableHashMap, Option } from "effect"
 
 const map = MutableHashMap.make(["count", 5])
 
@@ -51,6 +50,6 @@ console.log(MutableHashMap.has(map, "new")) // false (42 <= 50)
 declare const modifyAt: { <K, V>(key: K, f: (value: Option.Option<V>) => Option.Option<V>): (self: MutableHashMap<K, V>) => MutableHashMap<K, V>; <K, V>(self: MutableHashMap<K, V>, key: K, f: (value: Option.Option<V>) => Option.Option<V>): MutableHashMap<K, V>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableHashMap.ts#L543)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableHashMap.ts#L541)
 
 Since v2.0.0

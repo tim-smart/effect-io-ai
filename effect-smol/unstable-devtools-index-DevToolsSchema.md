@@ -11,6 +11,6 @@ Re-exports all named exports from the "./DevToolsSchema.ts" module as `DevToolsS
 export * as DevToolsSchema from "./DevToolsSchema.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L20)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L64)
 
 Since v4.0.0

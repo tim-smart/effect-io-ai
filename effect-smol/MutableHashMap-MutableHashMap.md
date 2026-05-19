@@ -13,7 +13,7 @@ primitive equality.
 **Example** (Using a mutable hash map)
 
 ```ts
-import * as MutableHashMap from "effect/MutableHashMap"
+import { MutableHashMap } from "effect"
 
 // Create a mutable hash map with string keys and number values
 const map: MutableHashMap.MutableHashMap<string, number> = MutableHashMap
@@ -46,6 +46,6 @@ export interface MutableHashMap<out K, out V> extends Iterable<[K, V]>, Pipeable
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableHashMap.ts#L77)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableHashMap.ts#L76)
 
 Since v2.0.0

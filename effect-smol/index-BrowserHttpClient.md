@@ -11,6 +11,6 @@ Re-exports all named exports from the "./BrowserHttpClient.ts" module as `Browse
 export * as BrowserHttpClient from "./BrowserHttpClient.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/index.ts#L10)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/index.ts#L46)
 
 Since v4.0.0

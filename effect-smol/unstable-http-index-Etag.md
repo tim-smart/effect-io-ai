@@ -11,6 +11,6 @@ Re-exports all named exports from the "./Etag.ts" module as `Etag`.
 export * as Etag from "./Etag.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L15)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L44)
 
 Since v4.0.0

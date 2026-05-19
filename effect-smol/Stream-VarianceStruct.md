@@ -20,4 +20,4 @@ export interface VarianceStruct<out A, out E, out R> {
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L214)
 
-Since v2.0.0
+Since v3.4.0

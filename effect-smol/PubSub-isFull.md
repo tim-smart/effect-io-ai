@@ -10,8 +10,7 @@ For unbounded PubSubs this is normally `false`.
 **Example** (Checking whether a PubSub is full)
 
 ```ts
-import { Effect } from "effect"
-import * as PubSub from "effect/PubSub"
+import { Effect, PubSub } from "effect"
 
 const program = Effect.gen(function*() {
   const pubsub = yield* PubSub.bounded<string>(2)
@@ -41,6 +40,6 @@ const program = Effect.gen(function*() {
 declare const isFull: <A>(self: PubSub<A>) => Effect.Effect<boolean>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PubSub.ts#L670)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PubSub.ts#L658)
 
 Since v2.0.0

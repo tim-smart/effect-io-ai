@@ -38,4 +38,4 @@ declare const getFailure: <A, E>(self: Result<A, E>) => Option<E>
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L609)
 
-Since v2.0.0
+Since v4.0.0

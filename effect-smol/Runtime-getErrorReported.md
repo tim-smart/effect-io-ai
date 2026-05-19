@@ -15,6 +15,6 @@ object. Otherwise returns `true`, so failures are logged by default.
 declare const getErrorReported: (u: unknown) => boolean
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Runtime.ts#L331)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Runtime.ts#L326)
 
 Since v4.0.0

@@ -16,6 +16,6 @@ export interface Proto extends Pipeable, Inspectable {
   }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L283)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L282)
 
 Since v3.6.0

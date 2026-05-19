@@ -9,7 +9,7 @@ This type includes all methods available on the Console interface.
 **Example** (Typing captured console methods)
 
 ```ts
-import type * as TestConsole from "effect/testing/TestConsole"
+import type { TestConsole } from "effect/testing"
 
 const method: TestConsole.TestConsole.Method = "log"
 
@@ -22,6 +22,6 @@ console.log(method) // "log"
 type Method = keyof Console.Console
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TestConsole.ts#L86)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TestConsole.ts#L85)
 
 Since v4.0.0

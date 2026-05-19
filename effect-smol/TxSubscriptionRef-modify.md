@@ -27,4 +27,4 @@ declare const modify: { <A, B>(f: (current: A) => [returnValue: B, newValue: A])
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxSubscriptionRef.ts#L156)
 
-Since v4.0.0
+Since v3.10.0

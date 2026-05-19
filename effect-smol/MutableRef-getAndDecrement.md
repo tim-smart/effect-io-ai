@@ -36,6 +36,6 @@ console.log(`Current: ${currentIndex}, Next: ${MutableRef.get(index)}`) // "Curr
 declare const getAndDecrement: (self: MutableRef<number>) => number
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableRef.ts#L309)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableRef.ts#L308)
 
 Since v2.0.0

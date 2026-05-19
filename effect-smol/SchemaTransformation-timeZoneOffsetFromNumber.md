@@ -15,6 +15,6 @@ field.
 declare const timeZoneOffsetFromNumber: Transformation<DateTime.TimeZone.Offset, number, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L1580)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L1607)
 
 Since v4.0.0

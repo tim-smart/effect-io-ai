@@ -11,6 +11,6 @@ Re-exports all named exports from the "./K8sHttpClient.ts" module as `K8sHttpCli
 export * as K8sHttpClient from "./K8sHttpClient.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L85)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L432)
 
 Since v4.0.0

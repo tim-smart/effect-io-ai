@@ -11,6 +11,6 @@ Provider-specific metadata attached to `UnsupportedSchemaError`.
 export interface UnsupportedSchemaErrorMetadata extends ProviderMetadata {}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AiError.ts#L346)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AiError.ts#L345)
 
 Since v4.0.0

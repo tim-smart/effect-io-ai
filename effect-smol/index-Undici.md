@@ -11,6 +11,6 @@ Re-exports all named exports from the "./Undici.ts" module as `Undici`.
 export * as Undici from "./Undici.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L127)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L480)
 
 Since v4.0.0

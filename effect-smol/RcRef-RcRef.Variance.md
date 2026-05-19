@@ -20,6 +20,6 @@ export interface Variance<A, E> {
   }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RcRef.ts#L98)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RcRef.ts#L97)
 
 Since v3.5.0

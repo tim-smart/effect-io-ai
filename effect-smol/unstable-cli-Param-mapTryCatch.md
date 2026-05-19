@@ -9,7 +9,7 @@ converting any thrown errors into failure messages.
 **Example** (Mapping thrown errors)
 
 ```ts
-import * as Param from "effect/unstable/cli/Param"
+import { Param } from "effect/unstable/cli"
 
 // @internal - this module is not exported publicly
 
@@ -28,6 +28,6 @@ const parsedJson = Param.string(Param.flagKind, "config").pipe(
 declare const mapTryCatch: { <A, B>(f: (a: A) => B, onError: (error: unknown) => string): <Kind extends ParamKind>(self: Param<Kind, A>) => Param<Kind, B>; <Kind extends ParamKind, A, B>(self: Param<Kind, A>, f: (a: A) => B, onError: (error: unknown) => string): Param<Kind, B>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Param.ts#L1127)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Param.ts#L1126)
 
 Since v4.0.0

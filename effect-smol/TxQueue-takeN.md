@@ -39,6 +39,6 @@ const program = Effect.gen(function*() {
 declare const takeN: { (n: number): <A, E>(self: TxDequeue<A, E>) => Effect.Effect<Array<A>, E>; <A, E>(self: TxDequeue<A, E>, n: number): Effect.Effect<Array<A>, E>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxQueue.ts#L843)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxQueue.ts#L840)
 
-Since v4.0.0
+Since v2.0.0

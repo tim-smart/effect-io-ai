@@ -13,6 +13,6 @@ type Iso<S, Records> = & S["Iso"]
     & MergeTuple<{ readonly [K in keyof Records]: Records[K]["Iso"] }>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L3010)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L3089)
 
 Since v4.0.0

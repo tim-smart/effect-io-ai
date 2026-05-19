@@ -8,12 +8,12 @@ Returns the maximum between two `BigDecimal`s.
 **Example** (Selecting the larger decimal)
 
 ```ts
-import { fromStringUnsafe, max } from "effect/BigDecimal"
+import { BigDecimal } from "effect"
 import * as assert from "node:assert"
 
 assert.deepStrictEqual(
-  max(fromStringUnsafe("2"), fromStringUnsafe("3")),
-  fromStringUnsafe("3")
+  BigDecimal.max(BigDecimal.fromStringUnsafe("2"), BigDecimal.fromStringUnsafe("3")),
+  BigDecimal.fromStringUnsafe("3")
 )
 ```
 

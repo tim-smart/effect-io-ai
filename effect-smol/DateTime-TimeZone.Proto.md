@@ -15,6 +15,6 @@ export interface Proto extends Inspectable {
   }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L314)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L312)
 
 Since v3.6.0

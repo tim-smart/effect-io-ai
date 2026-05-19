@@ -11,7 +11,7 @@ Lifts a `Combiner` for the carrier type into a `Combiner` for the newtype.
 **Example** (combining newtypes)
 
 ```ts
-import { Newtype, Combiner } from "effect"
+import { Combiner, Newtype } from "effect"
 
 interface Amount extends Newtype.Newtype<"Amount", number> {}
 
@@ -33,6 +33,6 @@ Newtype.value(total) // 30
 declare const makeCombiner: <N extends Newtype.Any>(combiner: Combiner.Combiner<Newtype.Carrier<N>>) => Combiner.Combiner<N>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Newtype.ts#L281)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Newtype.ts#L290)
 
 Since v4.0.0

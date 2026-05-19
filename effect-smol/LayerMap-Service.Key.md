@@ -13,6 +13,6 @@ type Key<Options> = Options extends { readonly lookup: (key: infer K) => any } ?
     : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/LayerMap.ts#L448)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/LayerMap.ts#L447)
 
 Since v3.14.0

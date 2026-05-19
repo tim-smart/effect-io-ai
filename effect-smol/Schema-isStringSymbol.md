@@ -16,6 +16,6 @@ whether a string can be passed to JavaScript's `Symbol()` function.
 declare const isStringSymbol: (annotations?: Annotations.Filter) => AST.Filter<string>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L5485)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L5634)
 
 Since v4.0.0

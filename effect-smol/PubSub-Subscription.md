@@ -8,8 +8,7 @@ A subscription represents a consumer's connection to a PubSub, allowing them to 
 **Example** (Taking messages from a subscription)
 
 ```ts
-import { Effect } from "effect"
-import * as PubSub from "effect/PubSub"
+import { Effect, PubSub } from "effect"
 
 const program = Effect.gen(function*() {
   const pubsub = yield* PubSub.bounded<string>(10)
@@ -53,6 +52,6 @@ export interface Subscription<out A> extends Pipeable {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PubSub.ts#L259)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PubSub.ts#L257)
 
 Since v4.0.0

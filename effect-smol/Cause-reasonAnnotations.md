@@ -19,6 +19,6 @@ a specific reason rather than the whole cause.
 declare const reasonAnnotations: <E>(self: Reason<E>) => Context.Context<never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L1642)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L1641)
 
 Since v4.0.0

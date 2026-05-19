@@ -50,4 +50,4 @@ export interface Latch {
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Latch.ts#L67)
 
-Since v3.8.0
+Since v4.0.0

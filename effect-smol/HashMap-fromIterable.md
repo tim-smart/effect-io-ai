@@ -8,7 +8,7 @@ Creates a new `HashMap` from an iterable collection of key/value pairs.
 **Example** (Creating a HashMap from an iterable)
 
 ```ts
-import * as HashMap from "effect/HashMap"
+import { HashMap } from "effect"
 
 const entries = [["a", 1], ["b", 2], ["c", 3]] as const
 const map = HashMap.fromIterable(entries)
@@ -22,6 +22,6 @@ console.log(HashMap.get(map, "a")) // Option.some(1)
 declare const fromIterable: <K, V>(entries: Iterable<readonly [K, V]>) => HashMap<K, V>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashMap.ts#L352)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashMap.ts#L350)
 
 Since v2.0.0

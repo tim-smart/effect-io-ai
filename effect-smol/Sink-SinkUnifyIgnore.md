@@ -17,6 +17,6 @@ export interface SinkUnifyIgnore {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Sink.ts#L151)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Sink.ts#L148)
 
 Since v2.0.0

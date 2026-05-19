@@ -12,6 +12,6 @@ and private key bytes.
 declare const encodeIdentityString: (identity: Identity["Service"]) => string
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventLog.ts#L466)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventLog.ts#L465)
 
 Since v4.0.0

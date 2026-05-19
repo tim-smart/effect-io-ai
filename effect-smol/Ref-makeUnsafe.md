@@ -30,6 +30,6 @@ console.log(value) // 0
 declare const makeUnsafe: <A>(value: A) => Ref<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Ref.ts#L152)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Ref.ts#L151)
 
 Since v4.0.0

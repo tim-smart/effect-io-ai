@@ -27,4 +27,4 @@ declare const isReference: (u: unknown) => u is Reference<any>
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Context.ts#L555)
 
-Since v4.0.0
+Since v3.11.0

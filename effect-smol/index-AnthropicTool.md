@@ -11,6 +11,6 @@ Re-exports all named exports from the "./AnthropicTool.ts" module as `AnthropicT
 export * as AnthropicTool from "./AnthropicTool.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/index.ts#L56)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/index.ts#L100)
 
 Since v4.0.0

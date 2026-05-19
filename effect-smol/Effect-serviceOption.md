@@ -15,7 +15,7 @@ require the service to be present in the environment.
 **Example** (Usage)
 
 ```ts
-import { Effect, Option, Context } from "effect"
+import { Context, Effect, Option } from "effect"
 
 // Define a service key
 const Logger = Context.Service<{
@@ -40,6 +40,6 @@ const program = Effect.gen(function*() {
 declare const serviceOption: <I, S>(key: Context.Key<I, S>) => Effect<Option<S>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L5630)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L5544)
 
 Since v2.0.0

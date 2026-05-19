@@ -9,7 +9,7 @@ effect if it exists. The provided effect will not be interrupted.
 **Example** (Usage)
 
 ```ts
-import { Cause, Data, Console, Effect } from "effect"
+import { Cause, Console, Data, Effect } from "effect"
 
 class TaskError extends Data.TaggedError("TaskError")<{ readonly message: string }> {}
 
@@ -32,6 +32,6 @@ Effect.runPromise(program).catch(console.error)
 declare const onError: { <E, X, R2>(cleanup: (cause: Cause.Cause<E>) => Effect<X, never, R2>): <A, R>(self: Effect<A, E, R>) => Effect<A, E, R2 | R>; <A, E, R, X, R2>(self: Effect<A, E, R>, cleanup: (cause: Cause.Cause<E>) => Effect<X, never, R2>): Effect<A, E, R2 | R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L6323)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L6237)
 
 Since v2.0.0

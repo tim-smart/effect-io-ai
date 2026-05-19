@@ -11,8 +11,7 @@ value, while `Result.fail` discards it.
 **Example** (Filtering and transforming)
 
 ```ts
-import { Option } from "effect"
-import * as Result from "effect/Result"
+import { Option, Result } from "effect"
 
 console.log(Option.filterMap(
   Option.some(2),
@@ -31,6 +30,6 @@ console.log(Option.filterMap(
 declare const filterMap: { <A, B, X>(f: Filter.Filter<A, B, X>): (self: Option<A>) => Option<B>; <A, B, X>(self: Option<A>, f: Filter.Filter<A, B, X>): Option<B>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L1987)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L1986)
 
 Since v2.0.0

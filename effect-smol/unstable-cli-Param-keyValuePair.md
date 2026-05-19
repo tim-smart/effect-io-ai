@@ -12,7 +12,7 @@ into a single record object.
 **Example** (Parsing key-value pairs)
 
 ```ts
-import * as Param from "effect/unstable/cli/Param"
+import { Param } from "effect/unstable/cli"
 
 // @internal - this module is not exported publicly
 

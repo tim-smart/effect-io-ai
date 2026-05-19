@@ -8,7 +8,7 @@ Filters entries out of a `HashMap` using the specified predicate.
 **Example** (Filtering entries)
 
 ```ts
-import * as HashMap from "effect/HashMap"
+import { HashMap } from "effect"
 
 const map1 = HashMap.make(["a", 1], ["b", 2], ["c", 3], ["d", 4])
 const map2 = HashMap.filter(map1, (value) => value % 2 === 0)
@@ -25,6 +25,6 @@ console.log(HashMap.has(map2, "a")) // false
 declare const filter: { <K, A>(f: (a: NoInfer<A>, k: K) => boolean): (self: HashMap<K, A>) => HashMap<K, A>; <K, A>(self: HashMap<K, A>, f: (a: A, k: K) => boolean): HashMap<K, A>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashMap.ts#L1164)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashMap.ts#L1156)
 
 Since v2.0.0

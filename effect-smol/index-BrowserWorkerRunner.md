@@ -11,6 +11,6 @@ Re-exports all named exports from the "./BrowserWorkerRunner.ts" module as `Brow
 export * as BrowserWorkerRunner from "./BrowserWorkerRunner.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/index.ts#L45)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/index.ts#L213)
 
 Since v4.0.0

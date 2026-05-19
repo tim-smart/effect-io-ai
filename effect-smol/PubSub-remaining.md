@@ -12,8 +12,7 @@ been shut down. Prefer `remaining` in effectful code.
 **Example** (Checking remaining messages)
 
 ```ts
-import { Effect } from "effect"
-import * as PubSub from "effect/PubSub"
+import { Effect, PubSub } from "effect"
 
 const program = Effect.gen(function*() {
   const pubsub = yield* PubSub.bounded<string>(10)
@@ -43,6 +42,6 @@ const program = Effect.gen(function*() {
 declare const remaining: <A>(self: Subscription<A>) => Effect.Effect<number>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PubSub.ts#L1377)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PubSub.ts#L1359)
 
 Since v4.0.0

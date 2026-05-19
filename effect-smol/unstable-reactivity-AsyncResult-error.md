@@ -11,6 +11,6 @@ Returns the first typed error from a failure cause, or `None` for successes, ini
 declare const error: <A, E>(self: AsyncResult<A, E>) => Option.Option<E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AsyncResult.ts#L467)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AsyncResult.ts#L469)
 
 Since v4.0.0

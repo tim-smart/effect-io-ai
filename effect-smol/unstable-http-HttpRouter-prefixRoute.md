@@ -15,6 +15,6 @@ handler.
 declare const prefixRoute: { (prefix: string): <E, R>(self: Route<E, R>) => Route<E, R>; <E, R>(self: Route<E, R>, prefix: string): Route<E, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpRouter.ts#L701)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpRouter.ts#L703)
 
 Since v4.0.0

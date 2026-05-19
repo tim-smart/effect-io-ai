@@ -12,6 +12,6 @@ marked retryable.
 declare class AuthenticationError
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SqlError.ts#L66)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SqlError.ts#L68)
 
 Since v4.0.0

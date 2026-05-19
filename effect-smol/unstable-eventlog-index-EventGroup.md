@@ -11,6 +11,6 @@ Re-exports all named exports from the "./EventGroup.ts" module as `EventGroup`.
 export * as EventGroup from "./EventGroup.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L15)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L46)
 
 Since v4.0.0

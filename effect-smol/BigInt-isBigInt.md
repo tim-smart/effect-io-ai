@@ -8,11 +8,11 @@ Tests if a value is a `bigint`.
 **Example** (Checking for bigints)
 
 ```ts
-import { isBigInt } from "effect/BigInt"
+import { BigInt } from "effect"
 import * as assert from "node:assert"
 
-assert.deepStrictEqual(isBigInt(1n), true)
-assert.deepStrictEqual(isBigInt(1), false)
+assert.deepStrictEqual(BigInt.isBigInt(1n), true)
+assert.deepStrictEqual(BigInt.isBigInt(1), false)
 ```
 
 **Signature**

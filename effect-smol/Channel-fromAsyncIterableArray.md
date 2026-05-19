@@ -16,6 +16,6 @@ closes early and the iterator has a `return` method, that method is called.
 declare const fromAsyncIterableArray: <A, D, E>(iterable: AsyncIterable<A, D>, onError: (error: unknown) => E) => Channel<Arr.NonEmptyReadonlyArray<A>, E, D>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L1728)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L1720)
 
 Since v4.0.0

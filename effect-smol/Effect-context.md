@@ -12,7 +12,7 @@ or when you need to pass the entire context to another function.
 **Example** (Usage)
 
 ```ts
-import { Console, Effect, Option, Context } from "effect"
+import { Console, Context, Effect, Option } from "effect"
 
 const Logger = Context.Service<{
   log: (msg: string) => void
@@ -44,6 +44,6 @@ const provided = Effect.provideContext(program, context)
 declare const context: <R = never>() => Effect<Context.Context<R>, never, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L5387)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L5301)
 
 Since v2.0.0

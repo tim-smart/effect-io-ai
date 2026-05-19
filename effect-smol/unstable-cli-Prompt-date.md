@@ -12,6 +12,6 @@ validates the final `Date` before submission.
 declare const date: (options: DateOptions) => Prompt<Date>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L788)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L780)
 
 Since v4.0.0

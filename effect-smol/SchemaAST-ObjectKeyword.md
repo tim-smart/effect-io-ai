@@ -17,6 +17,6 @@ and functions (anything non-primitive and non-null).
 declare class ObjectKeyword
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L837)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L840)
 
-Since v4.0.0
+Since v3.10.0

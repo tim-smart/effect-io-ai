@@ -8,9 +8,7 @@ Updates the value of the specified key within the `Trie` if it exists.
 **Example** (Modifying an existing value)
 
 ```ts
-import * as Equal from "effect/Equal"
-import * as Option from "effect/Option"
-import * as Trie from "effect/Trie"
+import { Equal, Option, Trie } from "effect"
 import * as assert from "node:assert"
 
 const trie = Trie.empty<number>().pipe(
@@ -33,6 +31,6 @@ assert.equal(Equal.equals(trie.pipe(Trie.modify("me", (v) => v)), trie), true)
 declare const modify: { <V>(key: string, f: (v: V) => V): (self: Trie<V>) => Trie<V>; <V>(self: Trie<V>, key: string, f: (v: V) => V): Trie<V>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Trie.ts#L885)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Trie.ts#L873)
 
 Since v2.0.0

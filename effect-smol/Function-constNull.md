@@ -8,10 +8,10 @@ A thunk that returns always `null`.
 **Example** (Returning null from a thunk)
 
 ```ts
-import { constNull } from "effect/Function"
+import { Function } from "effect"
 import * as assert from "node:assert"
 
-assert.deepStrictEqual(constNull(), null)
+assert.deepStrictEqual(Function.constNull(), null)
 ```
 
 **Signature**
@@ -20,6 +20,6 @@ assert.deepStrictEqual(constNull(), null)
 declare const constNull: LazyArg<null>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Function.ts#L370)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Function.ts#L368)
 
 Since v2.0.0

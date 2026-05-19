@@ -11,6 +11,6 @@ Re-exports all named exports from the "./Trie.ts" module as `Trie`.
 export * as Trie from "./Trie.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L4083)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L5514)
 
 Since v2.0.0

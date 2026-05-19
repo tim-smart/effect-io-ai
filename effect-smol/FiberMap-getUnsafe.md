@@ -37,4 +37,4 @@ declare const getUnsafe: { <K>(key: K): <A, E>(self: FiberMap<K, A, E>) => Optio
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FiberMap.ts#L489)
 
-Since v2.0.0
+Since v4.0.0

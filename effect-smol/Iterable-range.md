@@ -12,10 +12,10 @@ iterable contains only `start`.
 **Example** (Creating a range)
 
 ```ts
-import { range } from "effect/Iterable"
+import { Iterable } from "effect"
 import * as assert from "node:assert"
 
-assert.deepStrictEqual(Array.from(range(1, 3)), [1, 2, 3])
+assert.deepStrictEqual(Array.from(Iterable.range(1, 3)), [1, 2, 3])
 ```
 
 **Signature**
@@ -24,6 +24,6 @@ assert.deepStrictEqual(Array.from(range(1, 3)), [1, 2, 3])
 declare const range: (start: number, end?: number) => Iterable<number>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Iterable.ts#L116)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Iterable.ts#L113)
 
 Since v2.0.0

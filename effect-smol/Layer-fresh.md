@@ -8,7 +8,7 @@ Creates a fresh version of this layer that will not be shared.
 **Example** (Creating non-shared layer instances)
 
 ```ts
-import { Effect, Layer, Ref, Context } from "effect"
+import { Context, Effect, Layer, Ref } from "effect"
 
 class Counter extends Context.Service<Counter, {
   readonly id: number
@@ -77,6 +77,6 @@ Effect.runPromise(program)
 declare const fresh: <A, E, R>(self: Layer<A, E, R>) => Layer<A, E, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L1867)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L1849)
 
 Since v2.0.0

@@ -8,7 +8,7 @@ Creates a MutableHashMap from an iterable collection of key-value pairs.
 **Example** (Creating a map from an iterable)
 
 ```ts
-import * as MutableHashMap from "effect/MutableHashMap"
+import { MutableHashMap } from "effect"
 
 const entries = [
   ["apple", 1],
@@ -32,6 +32,6 @@ console.log(MutableHashMap.get(fromMap, "x")) // Some(10)
 declare const fromIterable: <K, V>(entries: Iterable<readonly [K, V]>) => MutableHashMap<K, V>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableHashMap.ts#L195)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableHashMap.ts#L194)
 
 Since v2.0.0

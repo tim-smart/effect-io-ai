@@ -11,7 +11,7 @@ This function extracts the query parameters from a `URL` object and returns
 them as `UrlParams`. The resulting structure can be easily manipulated or
 inspected.
 
-**Example**
+**Example** (Reading query parameters)
 
 ```ts
 import { Url } from "effect/unstable/http"

@@ -9,8 +9,7 @@ only successful results.
 **Example** (Filtering and mapping Results)
 
 ```ts
-import * as HashMap from "effect/HashMap"
-import * as Result from "effect/Result"
+import { HashMap, Result } from "effect"
 
 const map1 = HashMap.make(["a", 1], ["b", 2], ["c", 3], ["d", 4])
 const map2 = HashMap.filterMap(
@@ -29,6 +28,6 @@ console.log(HashMap.get(map2, "d")) // Option.some(8)
 declare const filterMap: { <A, K, B, X>(f: (input: A, key: K) => Result<B, X>): (self: HashMap<K, A>) => HashMap<K, B>; <K, A, B, X>(self: HashMap<K, A>, f: (input: A, key: K) => Result<B, X>): HashMap<K, B>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashMap.ts#L1219)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashMap.ts#L1209)
 
 Since v2.0.0

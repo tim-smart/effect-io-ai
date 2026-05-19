@@ -33,6 +33,6 @@ export interface YieldableError extends Error, Pipeable, Inspectable {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L1097)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L1095)
 
 Since v2.0.0

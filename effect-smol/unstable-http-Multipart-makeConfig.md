@@ -15,6 +15,6 @@ field size, file size, total body size, and field MIME type overrides.
 declare const makeConfig: (headers: Record<string, string>) => Effect.Effect<MP.BaseConfig>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Multipart.ts#L363)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Multipart.ts#L364)
 
 Since v4.0.0

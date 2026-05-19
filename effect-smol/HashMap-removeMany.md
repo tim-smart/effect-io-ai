@@ -8,7 +8,7 @@ Removes all entries in the `HashMap` which have the specified keys.
 **Example** (Removing multiple keys)
 
 ```ts
-import * as HashMap from "effect/HashMap"
+import { HashMap } from "effect"
 
 const map1 = HashMap.make(["a", 1], ["b", 2], ["c", 3], ["d", 4])
 const map2 = HashMap.removeMany(map1, ["b", "d"])
@@ -24,6 +24,6 @@ console.log(HashMap.has(map2, "c")) // true
 declare const removeMany: { <K>(keys: Iterable<K>): <V>(self: HashMap<K, V>) => HashMap<K, V>; <K, V>(self: HashMap<K, V>, keys: Iterable<K>): HashMap<K, V>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashMap.ts#L1014)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashMap.ts#L1006)
 
 Since v2.0.0

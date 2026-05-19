@@ -8,11 +8,10 @@ Type lambda for Stream used in higher-kinded type operations.
 **Example** (Using the stream type lambda)
 
 ```ts
-import type { Kind } from "effect/HKT"
-import type { StreamTypeLambda } from "effect/Stream"
+import type { HKT, Stream } from "effect"
 
 // Create a Stream type using the type lambda
-type NumberStream = Kind<StreamTypeLambda, never, string, never, number>
+type NumberStream = HKT.Kind<Stream.StreamTypeLambda, never, string, never, number>
 // Equivalent to: Stream<number, string, never>
 ```
 

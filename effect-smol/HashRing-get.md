@@ -14,4 +14,4 @@ declare const get: <A extends PrimaryKey.PrimaryKey>(self: HashRing<A>, input: s
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashRing.ts#L251)
 
-Since v4.0.0
+Since v3.19.0

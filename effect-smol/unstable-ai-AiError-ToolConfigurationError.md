@@ -29,6 +29,6 @@ console.log(error.message)
 declare class ToolConfigurationError
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AiError.ts#L1206)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AiError.ts#L1203)
 
 Since v4.0.0

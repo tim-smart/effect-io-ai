@@ -17,7 +17,7 @@ Behavior:
 **Example** (Default timestamp for missing field)
 
 ```ts
-import { SchemaGetter, Effect, Option } from "effect"
+import { Effect, Option, SchemaGetter } from "effect"
 
 const withTimestamp = SchemaGetter.onNone<number>(() =>
   Effect.succeed(Option.some(Date.now()))

@@ -5,14 +5,11 @@ Module: `EntityProxy`<br />
 
 Derives an `RpcGroup` from an `Entity`.
 
+**Example** (Deriving RPC endpoints from an entity)
+
 ```ts
 import { Layer, Schema } from "effect"
-import {
-  ClusterSchema,
-  Entity,
-  EntityProxy,
-  EntityProxyServer
-} from "effect/unstable/cluster"
+import { ClusterSchema, Entity, EntityProxy, EntityProxyServer } from "effect/unstable/cluster"
 import { Rpc, RpcServer } from "effect/unstable/rpc"
 
 export const Counter = Entity.make("Counter", [
@@ -39,6 +36,6 @@ const RpcServerLayer = RpcServer.layer(MyRpcs).pipe(
 declare const toRpcGroup: <Type extends string, Rpcs extends Rpc.Any>(entity: Entity.Entity<Type, Rpcs>) => RpcGroup.RpcGroup<ConvertRpcs<Rpcs, Type>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EntityProxy.ts#L75)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EntityProxy.ts#L72)
 
 Since v4.0.0

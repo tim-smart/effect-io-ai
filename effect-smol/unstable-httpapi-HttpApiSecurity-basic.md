@@ -14,6 +14,6 @@ You can implement API middleware for this security scheme with
 declare const basic: Basic
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiSecurity.ts#L171)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiSecurity.ts#L170)
 
 Since v4.0.0

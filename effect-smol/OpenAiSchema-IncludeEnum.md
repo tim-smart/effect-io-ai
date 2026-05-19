@@ -11,6 +11,6 @@ Type of optional `include` values accepted by OpenAI Responses requests.
 type IncludeEnum = typeof IncludeEnum.Type
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiSchema.ts#L38)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiSchema.ts#L40)
 
 Since v4.0.0

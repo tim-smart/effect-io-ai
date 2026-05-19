@@ -12,7 +12,7 @@ not use Effect structural equality.
 **Example** (Removing matching values)
 
 ```ts
-import * as MutableList from "effect/MutableList"
+import { MutableList } from "effect"
 
 const list = MutableList.make<string>()
 MutableList.appendAll(list, ["apple", "banana", "apple", "cherry", "apple"])
@@ -50,6 +50,6 @@ console.log(MutableList.takeAll(tasks).map((task) => task.id)) // [1, 3]
 declare const remove: <A>(self: MutableList<A>, value: A) => void
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableList.ts#L959)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableList.ts#L956)
 
 Since v4.0.0

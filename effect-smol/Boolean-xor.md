@@ -8,13 +8,13 @@ Combines two booleans using XOR: `(!self && that) || (self && !that)`.
 **Example** (Combining booleans with XOR)
 
 ```ts
-import { xor } from "effect/Boolean"
+import { Boolean } from "effect"
 import * as assert from "node:assert"
 
-assert.deepStrictEqual(xor(true, true), false)
-assert.deepStrictEqual(xor(true, false), true)
-assert.deepStrictEqual(xor(false, true), true)
-assert.deepStrictEqual(xor(false, false), false)
+assert.deepStrictEqual(Boolean.xor(true, true), false)
+assert.deepStrictEqual(Boolean.xor(true, false), true)
+assert.deepStrictEqual(Boolean.xor(false, true), true)
+assert.deepStrictEqual(Boolean.xor(false, false), false)
 ```
 
 **Signature**

@@ -14,6 +14,6 @@ out-of-band progress notifications for the request.
 declare class RequestMeta
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L152)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L155)
 
 Since v4.0.0

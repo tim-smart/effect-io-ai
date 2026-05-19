@@ -12,12 +12,12 @@ decimal notation is used.
 **Example** (Formatting decimals)
 
 ```ts
-import { format, fromStringUnsafe } from "effect/BigDecimal"
+import { BigDecimal } from "effect"
 import * as assert from "node:assert"
 
-assert.deepStrictEqual(format(fromStringUnsafe("-5")), "-5")
-assert.deepStrictEqual(format(fromStringUnsafe("123.456")), "123.456")
-assert.deepStrictEqual(format(fromStringUnsafe("-0.00000123")), "-0.00000123")
+assert.deepStrictEqual(BigDecimal.format(BigDecimal.fromStringUnsafe("-5")), "-5")
+assert.deepStrictEqual(BigDecimal.format(BigDecimal.fromStringUnsafe("123.456")), "123.456")
+assert.deepStrictEqual(BigDecimal.format(BigDecimal.fromStringUnsafe("-0.00000123")), "-0.00000123")
 ```
 
 **Signature**

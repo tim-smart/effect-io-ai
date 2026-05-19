@@ -9,7 +9,7 @@ your entire application is a layer, such as an HTTP server.
 **Example** (Launching an application layer)
 
 ```ts
-import { Console, Effect, Layer, Context } from "effect"
+import { Console, Context, Effect, Layer } from "effect"
 
 class HttpServer extends Context.Service<HttpServer, {
   readonly start: () => Effect.Effect<string>
@@ -60,6 +60,6 @@ const application = appLayer.pipe(
 declare const launch: <RIn, E, ROut>(self: Layer<ROut, E, RIn>) => Effect<never, E, RIn>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L1925)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L1907)
 
 Since v2.0.0

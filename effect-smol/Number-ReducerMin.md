@@ -11,6 +11,6 @@ A `Reducer` for reducing `number`s by keeping the minimum value.
 declare const ReducerMin: Reducer.Reducer<number>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Number.ts#L654)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Number.ts#L658)
 
 Since v4.0.0

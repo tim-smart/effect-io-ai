@@ -13,7 +13,7 @@ registered at `/metrics`, but this can be customized via the `path` option.
 **Example** (Serving metrics over HTTP)
 
 ```ts
-import * as PrometheusMetrics from "effect/unstable/observability/PrometheusMetrics"
+import { PrometheusMetrics } from "effect/unstable/observability"
 
 // Create a layer that adds /metrics endpoint to the router
 const PrometheusLayer = PrometheusMetrics.layerHttp()

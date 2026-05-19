@@ -13,4 +13,4 @@ type DirectedGraph<N, E> = Graph<N, E, "directed">
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Graph.ts#L155)
 
-Since v4.0.0
+Since v3.18.0

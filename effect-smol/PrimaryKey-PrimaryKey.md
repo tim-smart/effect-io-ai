@@ -33,6 +33,6 @@ export interface PrimaryKey {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PrimaryKey.ts#L48)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PrimaryKey.ts#L49)
 
 Since v2.0.0

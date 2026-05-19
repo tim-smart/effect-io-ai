@@ -28,4 +28,4 @@ declare const divide: { (by: number): (self: Duration) => Option.Option<Duration
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Duration.ts#L1216)
 
-Since v4.0.0
+Since v2.4.19

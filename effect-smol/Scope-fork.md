@@ -38,6 +38,6 @@ const nestedScopes = Effect.gen(function*() {
 declare const fork: (scope: Scope, finalizerStrategy?: "sequential" | "parallel") => Effect<Closeable>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Scope.ts#L418)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Scope.ts#L412)
 
-Since v4.0.0
+Since v2.0.0

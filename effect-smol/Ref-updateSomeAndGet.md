@@ -12,8 +12,7 @@ Returns the current value of the Ref after the potential update.
 **Example** (Conditionally updating and returning the current value)
 
 ```ts
-import { Effect, Ref } from "effect"
-import * as Option from "effect/Option"
+import { Effect, Option, Ref } from "effect"
 
 const program = Effect.gen(function*() {
   const counter = yield* Ref.make(10)
@@ -40,6 +39,6 @@ const program = Effect.gen(function*() {
 declare const updateSomeAndGet: (<A>(pf: (a: A) => Option.Option<A>) => (self: Ref<A>) => Effect.Effect<A>) & (<A>(self: Ref<A>, pf: (a: A) => Option.Option<A>) => Effect.Effect<A>)
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Ref.ts#L669)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Ref.ts#L661)
 
 Since v2.0.0

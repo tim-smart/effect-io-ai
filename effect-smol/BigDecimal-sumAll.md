@@ -8,12 +8,12 @@ Takes an `Iterable` of `BigDecimal`s and returns their sum as a single `BigDecim
 **Example** (Adding multiple decimals)
 
 ```ts
-import { fromStringUnsafe, sumAll } from "effect/BigDecimal"
+import { BigDecimal } from "effect"
 import * as assert from "node:assert"
 
 assert.deepStrictEqual(
-  sumAll([fromStringUnsafe("2"), fromStringUnsafe("3"), fromStringUnsafe("4")]),
-  fromStringUnsafe("9")
+  BigDecimal.sumAll([BigDecimal.fromStringUnsafe("2"), BigDecimal.fromStringUnsafe("3"), BigDecimal.fromStringUnsafe("4")]),
+  BigDecimal.fromStringUnsafe("9")
 )
 ```
 
@@ -25,4 +25,4 @@ declare const sumAll: (collection: Iterable<BigDecimal>) => BigDecimal
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigDecimal.ts#L307)
 
-Since v4.0.0
+Since v3.16.0

@@ -34,4 +34,4 @@ declare const makeOrder: <const Elements extends ReadonlyArray<order.Order<any>>
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tuple.ts#L590)
 
-Since v2.0.0
+Since v4.0.0

@@ -13,6 +13,6 @@ the previous writer when the run ends.
 declare const withRun: <A extends { readonly run: (f: (...args: Array<any>) => Effect.Effect<void>) => Effect.Effect<never>; }>() => <EX, RX>(f: (write: Parameters<A["run"]>[0]) => Effect.Effect<Omit<A, "run">, EX, RX>) => Effect.Effect<A, EX, RX>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Utils.ts#L40)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Utils.ts#L41)
 
 Since v4.0.0

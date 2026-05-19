@@ -13,7 +13,7 @@ or scoped `Context`, and can invalidate cached resources for a key.
 **Example** (Managing keyed layers)
 
 ```ts
-import { Effect, Layer, LayerMap, Context } from "effect"
+import { Context, Effect, Layer, LayerMap } from "effect"
 
 // Define a service key
 const DatabaseService = Context.Service<{

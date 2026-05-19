@@ -34,6 +34,6 @@ const program = Effect.gen(function*() {
 declare const offer: <A, E>(self: Enqueue<A, E>, message: Types.NoInfer<A>) => Effect<boolean>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Queue.ts#L606)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Queue.ts#L592)
 
-Since v4.0.0
+Since v2.0.0

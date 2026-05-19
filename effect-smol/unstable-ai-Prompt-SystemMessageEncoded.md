@@ -16,6 +16,6 @@ export interface SystemMessageEncoded extends BaseMessageEncoded<"system", Syste
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L1150)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L1148)
 
 Since v4.0.0

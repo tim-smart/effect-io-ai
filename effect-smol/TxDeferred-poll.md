@@ -30,4 +30,4 @@ declare const poll: <A, E>(self: TxDeferred<A, E>) => Effect.Effect<Option<Resul
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxDeferred.ts#L166)
 
-Since v4.0.0
+Since v2.0.0

@@ -8,7 +8,7 @@ Creates an integer parameter.
 **Example** (Creating integer parameters)
 
 ```ts
-import * as Param from "effect/unstable/cli/Param"
+import { Param } from "effect/unstable/cli"
 
 // @internal - this module is not exported publicly
 

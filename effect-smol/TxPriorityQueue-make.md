@@ -25,4 +25,4 @@ declare const make: <A>(order: Order<A>) => (...elements: Array<A>) => Effect.Ef
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxPriorityQueue.ts#L167)
 
-Since v4.0.0
+Since v2.0.0

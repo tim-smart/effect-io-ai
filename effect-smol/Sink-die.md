@@ -27,6 +27,6 @@ Effect.runPromise(program).catch(console.log)
 declare const die: (defect: unknown) => Sink<never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Sink.ts#L651)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Sink.ts#L648)
 
 Since v2.0.0

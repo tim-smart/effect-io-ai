@@ -8,10 +8,10 @@ Returns the minimum between two `number`s.
 **Example** (Finding the minimum)
 
 ```ts
-import { min } from "effect/Number"
+import { Number } from "effect"
 import * as assert from "node:assert"
 
-assert.deepStrictEqual(min(2, 3), 2)
+assert.deepStrictEqual(Number.min(2, 3), 2)
 ```
 
 **Signature**

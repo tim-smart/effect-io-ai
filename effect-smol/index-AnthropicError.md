@@ -11,6 +11,6 @@ Re-exports all named exports from the "./AnthropicError.ts" module as `Anthropic
 export * as AnthropicError from "./AnthropicError.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/index.ts#L30)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/index.ts#L48)
 
 Since v4.0.0

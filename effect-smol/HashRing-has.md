@@ -13,4 +13,4 @@ declare const has: { <A extends PrimaryKey.PrimaryKey>(node: A): (self: HashRing
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashRing.ts#L236)
 
-Since v4.0.0
+Since v3.19.0

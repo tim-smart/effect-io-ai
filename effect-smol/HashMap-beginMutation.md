@@ -11,7 +11,7 @@ mutation window and use the result as an immutable `HashMap`.
 **Example** (Beginning batch mutation)
 
 ```ts
-import * as HashMap from "effect/HashMap"
+import { HashMap } from "effect"
 
 const map = HashMap.make(["a", 1])
 
@@ -34,6 +34,6 @@ console.log(HashMap.size(result)) // 2
 declare const beginMutation: <K, V>(self: HashMap<K, V>) => HashMap<K, V>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashMap.ts#L772)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashMap.ts#L767)
 
 Since v2.0.0

@@ -9,7 +9,7 @@ This provides compile-time safety when checking for empty results.
 **Example** (Handling empty results type-safely)
 
 ```ts
-import * as MutableList from "effect/MutableList"
+import { MutableList } from "effect"
 
 const list = MutableList.make<number>()
 
@@ -53,6 +53,6 @@ if (isEmpty(value)) {
 type Empty = typeof Empty
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableList.ts#L262)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableList.ts#L259)
 
 Since v4.0.0

@@ -10,10 +10,10 @@ Return a `Iterable` containing a value repeated the specified number of times.
 **Example** (Repeating a value)
 
 ```ts
-import { replicate } from "effect/Iterable"
+import { Iterable } from "effect"
 import * as assert from "node:assert"
 
-assert.deepStrictEqual(Array.from(replicate("a", 3)), ["a", "a", "a"])
+assert.deepStrictEqual(Array.from(Iterable.replicate("a", 3)), ["a", "a", "a"])
 ```
 
 **Signature**
@@ -22,6 +22,6 @@ assert.deepStrictEqual(Array.from(replicate("a", 3)), ["a", "a", "a"])
 declare const replicate: { (n: number): <A>(a: A) => Iterable<A>; <A>(a: A, n: number): Iterable<A>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Iterable.ts#L142)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Iterable.ts#L139)
 
 Since v2.0.0

@@ -26,6 +26,6 @@ const program = Effect.gen(function*() {
 declare const interrupt: <A, E>(self: Fiber<A, E>) => Effect<void>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Fiber.ts#L310)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Fiber.ts#L309)
 
 Since v2.0.0

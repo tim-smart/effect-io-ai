@@ -16,6 +16,6 @@ change immediately instead of returning an `Effect`.
 declare const closeUnsafe: (self: Latch) => boolean
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Latch.ts#L232)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Latch.ts#L220)
 
 Since v4.0.0

@@ -8,7 +8,7 @@ Adds a value to the HashSet, returning a new HashSet.
 **Example** (Adding values to a HashSet)
 
 ```ts
-import * as HashSet from "effect/HashSet"
+import { HashSet } from "effect"
 
 const set = HashSet.make("a", "b")
 const withC = HashSet.add(set, "c")
@@ -28,6 +28,6 @@ console.log(HashSet.size(same)) // 2
 declare const add: { <V>(value: V): (self: HashSet<V>) => HashSet<V>; <V>(self: HashSet<V>, value: V): HashSet<V>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashSet.ts#L251)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashSet.ts#L250)
 
 Since v2.0.0

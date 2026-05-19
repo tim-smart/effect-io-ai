@@ -11,6 +11,6 @@ Re-exports all named exports from the "./Deferred.ts" module as `Deferred`.
 export * as Deferred from "./Deferred.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L918)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L1140)
 
 Since v2.0.0

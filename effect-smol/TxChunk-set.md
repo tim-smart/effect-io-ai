@@ -31,6 +31,6 @@ const program = Effect.gen(function*() {
 declare const set: { <A>(chunk: Chunk.Chunk<A>): (self: TxChunk<A>) => Effect.Effect<void>; <A>(self: TxChunk<A>, chunk: Chunk.Chunk<A>): Effect.Effect<void>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxChunk.ts#L345)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxChunk.ts#L349)
 
 Since v4.0.0

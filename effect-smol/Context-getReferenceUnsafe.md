@@ -27,6 +27,6 @@ console.log(typeof logger.log) // "function"
 declare const getReferenceUnsafe: <Services, S>(self: Context<Services>, service: Reference<S>) => S
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Context.ts#L845)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Context.ts#L839)
 
 Since v4.0.0

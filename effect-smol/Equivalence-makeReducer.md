@@ -44,6 +44,6 @@ See also:
 declare const makeReducer: <A>() => Reducer.Reducer<Equivalence<A>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Equivalence.ts#L848)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Equivalence.ts#L847)
 
 Since v4.0.0

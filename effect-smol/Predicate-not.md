@@ -30,6 +30,6 @@ See also: `and`, `or`, `xor`
 declare const not: <A>(self: Predicate<A>) => Predicate<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L1514)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L1512)
 
 Since v2.0.0

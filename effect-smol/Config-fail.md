@@ -15,6 +15,6 @@ When to use:
 declare const fail: (err: SourceError | Schema.SchemaError) => Config<never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Config.ts#L827)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Config.ts#L833)
 
-Since v4.0.0
+Since v2.0.0

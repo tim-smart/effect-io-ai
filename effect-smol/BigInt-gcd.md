@@ -8,12 +8,12 @@ Determines the greatest common divisor of two `bigint`s.
 **Example** (Calculating greatest common divisors)
 
 ```ts
-import { gcd } from "effect/BigInt"
+import { BigInt } from "effect"
 import * as assert from "node:assert"
 
-assert.deepStrictEqual(gcd(2n, 3n), 1n)
-assert.deepStrictEqual(gcd(2n, 4n), 2n)
-assert.deepStrictEqual(gcd(16n, 24n), 8n)
+assert.deepStrictEqual(BigInt.gcd(2n, 3n), 1n)
+assert.deepStrictEqual(BigInt.gcd(2n, 4n), 2n)
+assert.deepStrictEqual(BigInt.gcd(16n, 24n), 8n)
 ```
 
 **Signature**
@@ -22,6 +22,6 @@ assert.deepStrictEqual(gcd(16n, 24n), 8n)
 declare const gcd: { (that: bigint): (self: bigint) => bigint; (self: bigint, that: bigint): bigint; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigInt.ts#L492)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigInt.ts#L490)
 
 Since v2.0.0

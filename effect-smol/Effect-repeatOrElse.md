@@ -16,8 +16,7 @@ returned effect succeeds with the schedule's output.
 **Example** (Usage)
 
 ```ts
-import { Console, Effect, Schedule } from "effect"
-import * as Option from "effect/Option"
+import { Console, Effect, Option, Schedule } from "effect"
 
 let attempt = 0
 const task = Effect.gen(function*() {
@@ -48,6 +47,6 @@ const program = Effect.repeatOrElse(
 declare const repeatOrElse: { <R2, A, B, E, E2, E3, R3>(schedule: Schedule<B, A, E2, R2>, orElse: (error: E | E2, option: Option<B>) => Effect<B, E3, R3>): <R>(self: Effect<A, E, R>) => Effect<B, E3, R | R2 | R3>; <A, E, R, R2, B, E2, E3, R3>(self: Effect<A, E, R>, schedule: Schedule<B, A, E2, R2>, orElse: (error: E | E2, option: Option<B>) => Effect<B, E3, R3>): Effect<B, E3, R | R2 | R3>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L7137)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L7046)
 
 Since v2.0.0

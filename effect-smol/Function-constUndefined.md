@@ -8,10 +8,10 @@ A thunk that returns always `undefined`.
 **Example** (Returning undefined from a thunk)
 
 ```ts
-import { constUndefined } from "effect/Function"
+import { Function } from "effect"
 import * as assert from "node:assert"
 
-assert.deepStrictEqual(constUndefined(), undefined)
+assert.deepStrictEqual(Function.constUndefined(), undefined)
 ```
 
 **Signature**
@@ -20,6 +20,6 @@ assert.deepStrictEqual(constUndefined(), undefined)
 declare const constUndefined: LazyArg<undefined>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Function.ts#L387)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Function.ts#L385)
 
 Since v2.0.0

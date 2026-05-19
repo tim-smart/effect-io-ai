@@ -28,6 +28,6 @@ See also: `isNever`
 declare const isUnknown: (_: unknown) => _ is unknown
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L965)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L963)
 
 Since v2.0.0

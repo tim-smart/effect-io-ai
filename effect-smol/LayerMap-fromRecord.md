@@ -13,7 +13,7 @@ record values are the layers built for those keys.
 **Example** (Creating a layer map from a record)
 
 ```ts
-import { Effect, Layer, LayerMap, Context } from "effect"
+import { Context, Effect, Layer, LayerMap } from "effect"
 
 // Define service keys
 const DevDatabase = Context.Service<{

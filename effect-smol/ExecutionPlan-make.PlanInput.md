@@ -14,6 +14,6 @@ type PlanInput<Plans, Out> = Plans extends
     Out
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ExecutionPlan.ts#L322)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ExecutionPlan.ts#L331)
 
 Since v3.16.0

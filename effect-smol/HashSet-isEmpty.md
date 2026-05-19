@@ -8,7 +8,7 @@ Checks if the HashSet is empty.
 **Example** (Checking whether a HashSet is empty)
 
 ```ts
-import * as HashSet from "effect/HashSet"
+import { HashSet } from "effect"
 
 const empty = HashSet.empty<string>()
 console.log(HashSet.isEmpty(empty)) // true
@@ -23,6 +23,6 @@ console.log(HashSet.isEmpty(nonEmpty)) // false
 declare const isEmpty: <V>(self: HashSet<V>) => boolean
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashSet.ts#L374)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashSet.ts#L372)
 
-Since v2.0.0
+Since v4.0.0

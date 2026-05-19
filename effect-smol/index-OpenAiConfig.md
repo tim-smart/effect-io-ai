@@ -11,6 +11,6 @@ Re-exports all named exports from the "./OpenAiConfig.ts" module as `OpenAiConfi
 export * as OpenAiConfig from "./OpenAiConfig.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/index.ts#L15)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/index.ts#L58)
 
 Since v4.0.0

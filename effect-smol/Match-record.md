@@ -40,6 +40,6 @@ console.log(analyzeValue("hello")) // "Not an object"
 declare const record: Predicate.Refinement<unknown, { [x: string]: unknown; [x: number]: unknown; [x: symbol]: unknown; }>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L1528)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L1527)
 
 Since v4.0.0

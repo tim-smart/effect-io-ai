@@ -11,6 +11,6 @@ JSON-RPC error code for invalid method parameters.
 declare const INVALID_PARAMS_ERROR_CODE: -32602
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L458)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L461)
 
 Since v4.0.0

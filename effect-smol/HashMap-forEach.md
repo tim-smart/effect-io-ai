@@ -8,7 +8,7 @@ Applies the specified function to the entries of the `HashMap`.
 **Example** (Iterating with side effects)
 
 ```ts
-import * as HashMap from "effect/HashMap"
+import { HashMap } from "effect"
 
 const map = HashMap.make(["a", 1], ["b", 2])
 const collected: Array<[string, number]> = []
@@ -26,6 +26,6 @@ console.log(collected.sort()) // [["a", 1], ["b", 2]]
 declare const forEach: { <V, K>(f: (value: V, key: K) => void): (self: HashMap<K, V>) => void; <V, K>(self: HashMap<K, V>, f: (value: V, key: K) => void): void; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashMap.ts#L1117)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashMap.ts#L1109)
 
 Since v2.0.0

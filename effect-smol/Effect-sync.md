@@ -17,7 +17,7 @@ will be treated as a "defect".
 This defect is not a standard error but indicates a flaw in the logic that
 was expected to be error-free. You can think of it similar to an unexpected
 crash in the program, which can be further managed or logged using tools like
-`catchAllDefect`.
+`catchDefect`.
 
 **See**
 
@@ -44,6 +44,6 @@ const program = log("Hello, World!")
 declare const sync: <A>(thunk: LazyArg<A>) => Effect<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L1139)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L1136)
 
 Since v2.0.0

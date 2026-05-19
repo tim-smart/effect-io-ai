@@ -12,6 +12,6 @@ with the time component removed.
 declare const DateWithNow: VariantSchema.Overrideable<Date>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Model.ts#L416)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Model.ts#L414)
 
 Since v4.0.0

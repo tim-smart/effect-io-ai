@@ -11,6 +11,6 @@ The unique identifier used to identify objects that implement the `PrimaryKey` i
 declare const symbol: "~effect/interfaces/PrimaryKey"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PrimaryKey.ts#L20)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PrimaryKey.ts#L21)
 
 Since v2.0.0

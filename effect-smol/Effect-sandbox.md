@@ -30,7 +30,7 @@ Effect.runPromise(program).then(console.log)
 
 **See**
 
-- `unsandbox` to restore the original error handling.
+- `sandbox` to expose failures as full causes.
 
 **Signature**
 
@@ -38,6 +38,6 @@ Effect.runPromise(program).then(console.log)
 declare const sandbox: <A, E, R>(self: Effect<A, E, R>) => Effect<A, Cause.Cause<E>, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L3905)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L3830)
 
 Since v2.0.0

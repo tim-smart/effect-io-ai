@@ -32,6 +32,6 @@ See also: `isSet`, `isIterable`
 declare const isMap: (input: unknown) => input is Map<unknown, unknown>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L513)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L511)
 
 Since v2.0.0

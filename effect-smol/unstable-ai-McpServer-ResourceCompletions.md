@@ -20,6 +20,6 @@ type ResourceCompletions<Schemas> = {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpServer.ts#L757)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpServer.ts#L759)
 
 Since v4.0.0

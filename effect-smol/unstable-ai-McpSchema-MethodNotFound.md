@@ -13,6 +13,6 @@ This error uses the standard method not found code `-32601`.
 declare class MethodNotFound
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L510)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L513)
 
 Since v4.0.0

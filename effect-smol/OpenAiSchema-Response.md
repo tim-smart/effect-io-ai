@@ -11,6 +11,6 @@ OpenAI Responses API response object.
 type Response = typeof Response.Type
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiSchema.ts#L650)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiSchema.ts#L676)
 
 Since v4.0.0

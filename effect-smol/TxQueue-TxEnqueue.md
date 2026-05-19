@@ -9,8 +9,8 @@ operations for adding elements (enqueue operations) and inspecting queue state.
 **Example** (Offering values through enqueue handles)
 
 ```ts
-import type { Cause } from "effect"
 import { Effect, TxQueue } from "effect"
+import type { Cause } from "effect"
 
 const program = Effect.gen(function*() {
   // Queue without error channel
@@ -40,6 +40,6 @@ export interface TxEnqueue<in A, in E = never> extends TxQueueState {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxQueue.ts#L176)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxQueue.ts#L173)
 
 Since v4.0.0

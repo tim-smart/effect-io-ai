@@ -8,7 +8,7 @@ Provides a service to the stream using an effect, removing the requirement and a
 **Example** (Providing a stream service effectfully)
 
 ```ts
-import { Console, Effect, Context, Stream } from "effect"
+import { Console, Context, Effect, Stream } from "effect"
 
 class ApiConfig extends Context.Service<ApiConfig, { readonly baseUrl: string }>()("ApiConfig") {}
 
@@ -44,6 +44,6 @@ Effect.runPromise(program)
 declare const provideServiceEffect: { <I, S, ES, RS>(key: Context.Key<I, S>, service: Effect.Effect<NoInfer<S>, ES, RS>): <A, E, R>(self: Stream<A, E, R>) => Stream<A, E | ES, Exclude<R, I> | RS>; <A, E, R, I, S, ES, RS>(self: Stream<A, E, R>, key: Context.Key<I, S>, service: Effect.Effect<NoInfer<S>, ES, RS>): Stream<A, E | ES, Exclude<R, I> | RS>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L9785)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L9770)
 
-Since v4.0.0
+Since v2.0.0

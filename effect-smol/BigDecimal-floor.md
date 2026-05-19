@@ -8,16 +8,16 @@ Calculate the floor of a `BigDecimal` at the given scale.
 **Example** (Rounding decimals down)
 
 ```ts
-import { floor, fromStringUnsafe } from "effect/BigDecimal"
+import { BigDecimal } from "effect"
 import * as assert from "node:assert"
 
 assert.deepStrictEqual(
-  floor(fromStringUnsafe("145"), -1),
-  fromStringUnsafe("140")
+  BigDecimal.floor(BigDecimal.fromStringUnsafe("145"), -1),
+  BigDecimal.fromStringUnsafe("140")
 )
 assert.deepStrictEqual(
-  floor(fromStringUnsafe("-14.5")),
-  fromStringUnsafe("-15")
+  BigDecimal.floor(BigDecimal.fromStringUnsafe("-14.5")),
+  BigDecimal.fromStringUnsafe("-15")
 )
 ```
 
@@ -29,4 +29,4 @@ declare const floor: { (scale: number): (self: BigDecimal) => BigDecimal; (self:
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigDecimal.ts#L1633)
 
-Since v4.0.0
+Since v3.16.0

@@ -8,7 +8,7 @@ This type-level utility extracts the entry type `[K, V]` from a `HashMap<K, V>` 
 **Example** (Extracting entry types)
 
 ```ts
-import * as HashMap from "effect/HashMap"
+import { HashMap } from "effect"
 
 // Create a product catalog HashMap
 const catalog = HashMap.make(
@@ -35,6 +35,6 @@ console.log(descriptions) // ["book: $29 (education)", "laptop: $999 (electronic
 type Entry<T> = [Key<T>, Value<T>]
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashMap.ts#L267)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashMap.ts#L265)
 
 Since v3.9.0

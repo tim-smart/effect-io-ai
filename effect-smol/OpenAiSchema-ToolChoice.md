@@ -11,6 +11,6 @@ Tool selection mode or named tool choice for a Responses request.
 type ToolChoice = typeof ToolChoice.Type
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiSchema.ts#L428)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiSchema.ts#L446)
 
 Since v4.0.0

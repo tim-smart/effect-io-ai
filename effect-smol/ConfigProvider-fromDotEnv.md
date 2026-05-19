@@ -39,6 +39,6 @@ const program = Effect.gen(function*() {
 declare const fromDotEnv: (options?: { readonly path?: string | undefined; readonly expandVariables?: boolean | undefined; }) => Effect.Effect<ConfigProvider, PlatformError, FileSystem.FileSystem>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ConfigProvider.ts#L1046)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ConfigProvider.ts#L1047)
 
 Since v4.0.0

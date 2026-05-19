@@ -11,6 +11,6 @@ Re-exports all named exports from the "./HttpPlatform.ts" module as `HttpPlatfor
 export * as HttpPlatform from "./HttpPlatform.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L80)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L322)
 
 Since v4.0.0

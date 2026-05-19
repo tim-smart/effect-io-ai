@@ -37,6 +37,6 @@ console.log(processDateValue(1704067200000)) // "Not a date-related value"
 declare const date: Predicate.Refinement<unknown, Date>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L1491)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L1490)
 
 Since v4.0.0

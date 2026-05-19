@@ -11,6 +11,6 @@ Asserts that `thunk` throws, optionally checking the thrown value against an exp
 declare const throws: (thunk: () => void, error?: Error | ((u: unknown) => undefined), ..._: Array<never>) => void
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/vitest/src/utils.ts#L153)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/vitest/src/utils.ts#L165)
 
 Since v4.0.0

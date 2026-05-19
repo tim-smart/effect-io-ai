@@ -11,6 +11,6 @@ RPC group combining all client-to-server MCP requests and notifications.
 declare class ClientRpcs
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L2180)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L2183)
 
 Since v4.0.0

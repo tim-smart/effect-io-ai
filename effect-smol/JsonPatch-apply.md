@@ -27,7 +27,7 @@ Executes a sequence of patch operations on a JSON document, returning a new docu
 **Example** (Applying a patch)
 
 ```ts
-import * as JsonPatch from "effect/JsonPatch"
+import { JsonPatch } from "effect"
 
 const document = { items: [1, 2, 3], total: 6 }
 const patch: JsonPatch.JsonPatch = [
@@ -50,6 +50,6 @@ const result = JsonPatch.apply(patch, document)
 declare const apply: (patch: JsonPatch, oldValue: Schema.Json) => Schema.Json
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/JsonPatch.ts#L335)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/JsonPatch.ts#L337)
 
 Since v4.0.0

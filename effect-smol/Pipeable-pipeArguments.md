@@ -10,15 +10,6 @@ This helper is intended for implementing `Pipeable.pipe` methods that
 receive JavaScript's `arguments` object. With no functions it returns the
 original value; otherwise it feeds each result into the next function.
 
-**Signature**
-
-```ts
-declare const pipeArguments: <A>(self: A, args: IArguments) => unknown
-```
-
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Pipeable.ts#L559)
-
-Since v2.0.0
 **Example** (Implementing a pipe method)
 
 ```ts
@@ -38,3 +29,13 @@ const result = new NumberBox(5).pipe(
 )
 console.log(result) // 21
 ```
+
+**Signature**
+
+```ts
+declare const pipeArguments: <A>(self: A, args: IArguments) => unknown
+```
+
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Pipeable.ts#L561)
+
+Since v2.0.0

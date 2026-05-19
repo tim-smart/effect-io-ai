@@ -9,9 +9,7 @@ Creates a layer that mounts static files on an `HttpRouter`.
 
 ```ts
 import { Layer } from "effect"
-import * as HttpRouter from "effect/unstable/http/HttpRouter"
-import * as HttpServerResponse from "effect/unstable/http/HttpServerResponse"
-import * as HttpStaticServer from "effect/unstable/http/HttpStaticServer"
+import { HttpRouter, HttpServerResponse, HttpStaticServer } from "effect/unstable/http"
 
 const ApiLayer = HttpRouter.add("GET", "/health", HttpServerResponse.text("ok"))
 
@@ -29,6 +27,6 @@ const AppLayer = Layer.mergeAll(ApiLayer, StaticFilesLayer)
 declare const layer: (options: { readonly root: string; readonly index?: string | undefined; readonly spa?: boolean | undefined; readonly cacheControl?: string | undefined; readonly mimeTypes?: Record<string, string> | undefined; readonly prefix?: string | undefined; }) => Layer.Layer<never, PlatformError, HttpRouter.HttpRouter | FileSystem.FileSystem | Path.Path | HttpPlatform.HttpPlatform>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpStaticServer.ts#L209)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpStaticServer.ts#L207)
 
 Since v4.0.0

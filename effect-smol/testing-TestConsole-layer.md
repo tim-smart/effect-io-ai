@@ -11,7 +11,7 @@ for testing purposes.
 
 ```ts
 import { Console, Effect } from "effect"
-import * as TestConsole from "effect/testing/TestConsole"
+import { TestConsole } from "effect/testing"
 
 const program = Effect.gen(function*() {
   yield* Console.log("This will be captured")
@@ -31,6 +31,6 @@ const program = Effect.gen(function*() {
 declare const layer: Layer.Layer<TestConsole, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TestConsole.ts#L237)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TestConsole.ts#L236)
 
 Since v4.0.0

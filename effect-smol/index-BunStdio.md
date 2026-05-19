@@ -11,6 +11,6 @@ Re-exports all named exports from the "./BunStdio.ts" module as `BunStdio`.
 export * as BunStdio from "./BunStdio.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/index.ts#L92)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/index.ts#L397)
 
 Since v4.0.0

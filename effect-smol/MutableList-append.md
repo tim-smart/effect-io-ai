@@ -9,7 +9,7 @@ This operation is optimized for high-frequency usage.
 **Example** (Appending elements)
 
 ```ts
-import * as MutableList from "effect/MutableList"
+import { MutableList } from "effect"
 
 const list = MutableList.make<number>()
 
@@ -37,6 +37,6 @@ for (let i = 0; i < 10000; i++) {
 declare const append: <A>(self: MutableList<A>, message: A) => void
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableList.ts#L335)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableList.ts#L332)
 
-Since v4.0.0
+Since v2.0.0

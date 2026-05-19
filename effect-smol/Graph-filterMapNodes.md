@@ -9,8 +9,7 @@ Nodes that return Option.none are removed along with all their connected edges.
 **Example** (Filtering and mapping nodes)
 
 ```ts
-import { Graph } from "effect"
-import * as Option from "effect/Option"
+import { Graph, Option } from "effect"
 
 const graph = Graph.directed<string, number>((mutable) => {
   const a = Graph.addNode(mutable, "active")
@@ -36,6 +35,6 @@ console.log(Graph.nodeCount(graph)) // 2 (only "active" nodes remain)
 declare const filterMapNodes: <N, E, T extends Kind = "directed">(mutable: MutableGraph<N, E, T>, f: (data: N) => Option.Option<N>) => void
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Graph.ts#L1055)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Graph.ts#L1053)
 
-Since v4.0.0
+Since v3.18.0

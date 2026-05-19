@@ -32,6 +32,6 @@ type Effect<A, (O extends { schedule: Schedule<infer _O, infer _I, infer _E1, in
     : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L3698)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L3623)
 
 Since v2.0.0

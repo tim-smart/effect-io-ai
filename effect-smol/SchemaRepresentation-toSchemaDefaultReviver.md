@@ -24,6 +24,6 @@ Date, Duration, URL, RegExp, etc.).
 declare const toSchemaDefaultReviver: Reviver<Schema.Top>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaRepresentation.ts#L1715)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaRepresentation.ts#L1723)
 
 Since v4.0.0

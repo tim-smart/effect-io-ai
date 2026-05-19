@@ -29,6 +29,6 @@ type ReturnObject<T, Discard, Mode> = [T] extends [
     : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L342)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L341)
 
 Since v2.0.0

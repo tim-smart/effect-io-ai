@@ -25,6 +25,6 @@ console.log(invalidZone._tag === "None") // true
 declare const zoneMakeNamed: (zoneId: string) => Option.Option<TimeZone.Named>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L973)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L971)
 
 Since v3.6.0

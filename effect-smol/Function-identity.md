@@ -8,7 +8,7 @@ The identity function, i.e. A function that returns its input argument.
 **Example** (Returning the same value)
 
 ```ts
-import { identity } from "effect/Function"
+import { identity } from "effect"
 import * as assert from "node:assert"
 
 assert.deepStrictEqual(identity(5), 5)
@@ -20,6 +20,6 @@ assert.deepStrictEqual(identity(5), 5)
 declare const identity: <A>(a: A) => A
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Function.ts#L261)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Function.ts#L259)
 
 Since v2.0.0

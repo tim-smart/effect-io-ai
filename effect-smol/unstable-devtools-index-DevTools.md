@@ -11,6 +11,6 @@ Re-exports all named exports from the "./DevTools.ts" module as `DevTools`.
 export * as DevTools from "./DevTools.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L10)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L25)
 
 Since v4.0.0

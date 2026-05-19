@@ -13,7 +13,7 @@ of constructing or mutating buckets directly.
 **Example** (Inspecting buckets)
 
 ```ts
-import * as MutableList from "effect/MutableList"
+import { MutableList } from "effect"
 
 const list = MutableList.make<number>()
 MutableList.append(list, 1)
@@ -46,6 +46,6 @@ export interface Bucket<A> {
   }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableList.ts#L167)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableList.ts#L164)
 
 Since v4.0.0

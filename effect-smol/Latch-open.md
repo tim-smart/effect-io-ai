@@ -14,6 +14,6 @@ from closed to open, or `false` if it was already open.
 declare const open: (self: Latch) => Effect.Effect<boolean>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Latch.ts#L172)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Latch.ts#L160)
 
 Since v4.0.0

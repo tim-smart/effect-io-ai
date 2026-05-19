@@ -9,7 +9,7 @@ dynamically access resources based on a key.
 **Example** (Creating a layer map)
 
 ```ts
-import { Effect, Layer, LayerMap, Context } from "effect"
+import { Context, Effect, Layer, LayerMap } from "effect"
 
 // Define a service key
 const DatabaseService = Context.Service<{

@@ -20,6 +20,6 @@ console.log(Chunk.head(Chunk.make(1, 2, 3))) // { _tag: "Some", value: 1 }
 declare const head: <A>(self: Chunk<A>) => Option<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L1403)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L1397)
 
 Since v2.0.0

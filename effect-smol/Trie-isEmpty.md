@@ -8,7 +8,7 @@ Returns `true` when the `Trie` contains no entries.
 **Example** (Checking whether a trie is empty)
 
 ```ts
-import * as Trie from "effect/Trie"
+import { Trie } from "effect"
 import * as assert from "node:assert"
 
 const trie = Trie.empty<number>()
@@ -24,6 +24,6 @@ assert.equal(Trie.isEmpty(trie1), false)
 declare const isEmpty: <V>(self: Trie<V>) => boolean
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Trie.ts#L554)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Trie.ts#L551)
 
 Since v2.0.0

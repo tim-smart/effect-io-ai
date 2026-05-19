@@ -26,4 +26,4 @@ declare const make: <I, S>(key: Key<I, S>, service: Types.NoInfer<S>) => Context
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Context.ts#L594)
 
-Since v4.0.0
+Since v2.0.0

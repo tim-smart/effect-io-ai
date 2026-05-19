@@ -11,10 +11,10 @@ should return the same value.
 **Example** (Creating a constant thunk)
 
 ```ts
-import { constant } from "effect/Function"
+import { Function } from "effect"
 import * as assert from "node:assert"
 
-const constNull = constant(null)
+const constNull = Function.constant(null)
 
 assert.deepStrictEqual(constNull(), null)
 assert.deepStrictEqual(constNull(), null)
@@ -26,6 +26,6 @@ assert.deepStrictEqual(constNull(), null)
 declare const constant: <A>(value: A) => LazyArg<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Function.ts#L319)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Function.ts#L317)
 
 Since v2.0.0

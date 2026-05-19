@@ -9,12 +9,6 @@ This function allows you to conditionally catch and recover from failures
 that match a specific predicate. This is useful when you want to handle
 only certain types of errors while letting others propagate.
 
-**Previously Known As**
-
-This API replaces the following from Effect 3.x:
-
-- `Effect.catchSomeCause`
-
 **Example** (Usage)
 
 ```ts
@@ -44,6 +38,6 @@ Effect.runPromise(program).then(console.log)
 declare const catchCauseIf: { <E, B, E2, R2>(predicate: Predicate.Predicate<Cause.Cause<E>>, f: (cause: Cause.Cause<E>) => Effect<B, E2, R2>): <A, R>(self: Effect<A, E, R>) => Effect<A | B, E | E2, R | R2>; <A, E, R, B, E2, R2>(self: Effect<A, E, R>, predicate: Predicate.Predicate<Cause.Cause<E>>, f: (cause: Cause.Cause<E>) => Effect<B, E2, R2>): Effect<A | B, E | E2, R | R2>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L3238)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L3170)
 
 Since v4.0.0

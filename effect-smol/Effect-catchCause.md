@@ -19,12 +19,6 @@ Defects are unexpected errors that typically shouldn't be recovered from, as
 they often indicate serious issues. However, in some cases, such as
 dynamically loaded plugins, controlled recovery might be needed.
 
-**Previously Known As**
-
-This API replaces the following from Effect 3.x:
-
-- `Effect.catchAllCause`
-
 **Example** (Usage)
 
 ```ts
@@ -50,6 +44,6 @@ const recovered = Effect.catchCause(program, (cause) => {
 declare const catchCause: { <E, A2, E2, R2>(f: (cause: Cause.Cause<E>) => Effect<A2, E2, R2>): <A, R>(self: Effect<A, E, R>) => Effect<A2 | A, E2, R2 | R>; <A, E, R, A2, E2, R2>(self: Effect<A, E, R>, f: (cause: Cause.Cause<E>) => Effect<A2, E2, R2>): Effect<A | A2, E2, R | R2>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L3011)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L2968)
 
 Since v4.0.0

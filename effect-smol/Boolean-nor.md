@@ -8,13 +8,13 @@ Combines two booleans using NOR: `!(self || that)`.
 **Example** (Combining booleans with NOR)
 
 ```ts
-import { nor } from "effect/Boolean"
+import { Boolean } from "effect"
 import * as assert from "node:assert"
 
-assert.deepStrictEqual(nor(true, true), false)
-assert.deepStrictEqual(nor(true, false), false)
-assert.deepStrictEqual(nor(false, true), false)
-assert.deepStrictEqual(nor(false, false), true)
+assert.deepStrictEqual(Boolean.nor(true, true), false)
+assert.deepStrictEqual(Boolean.nor(true, false), false)
+assert.deepStrictEqual(Boolean.nor(false, true), false)
+assert.deepStrictEqual(Boolean.nor(false, false), true)
 ```
 
 **Signature**

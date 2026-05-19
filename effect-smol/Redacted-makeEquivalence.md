@@ -29,6 +29,6 @@ assert.equal(equivalence(API_KEY1, API_KEY3), true)
 declare const makeEquivalence: <A>(isEquivalent: Equivalence.Equivalence<A>) => Equivalence.Equivalence<Redacted<A>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Redacted.ts#L259)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Redacted.ts#L258)
 
-Since v3.3.0
+Since v4.0.0

@@ -5,12 +5,6 @@ Module: `Stream`<br />
 
 Creates a stream by repeatedly running an effect that yields an iterable of values.
 
-**Previously Known As**
-
-This API replaces the following from Effect 3.x:
-
-- `Stream.repeatEffectChunk`
-
 **Example** (Repeating an iterable effect)
 
 ```ts
@@ -34,6 +28,6 @@ Effect.runPromise(program)
 declare const fromIterableEffectRepeat: <A, E, R>(iterable: Effect.Effect<Iterable<A>, E, R>) => Stream<A, Pull.ExcludeDone<E>, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L1209)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L1172)
 
 Since v4.0.0

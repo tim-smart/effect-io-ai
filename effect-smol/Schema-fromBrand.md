@@ -12,6 +12,6 @@ constructor's checks and brand tag to the underlying schema.
 declare const fromBrand: <A extends Brand.Brand<any>>(identifier: string, ctor: Brand.Constructor<A>) => <S extends Top & { readonly "Type": Brand.Brand.Unbranded<A>; }>(self: S) => brand<S["Rebuild"], Brand.Brand.Keys<A>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L4086)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L4201)
 
-Since v4.0.0
+Since v3.10.0

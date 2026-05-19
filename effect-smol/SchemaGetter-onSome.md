@@ -17,7 +17,7 @@ Behavior:
 **Example** (Transform only present values)
 
 ```ts
-import { SchemaGetter, Effect, Option } from "effect"
+import { Effect, Option, SchemaGetter } from "effect"
 
 const parseIfPresent = SchemaGetter.onSome<number, string>(
   (s) => Effect.succeed(Option.some(Number(s)))

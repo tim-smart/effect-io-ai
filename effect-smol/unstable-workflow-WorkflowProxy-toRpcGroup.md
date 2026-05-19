@@ -5,14 +5,12 @@ Module: `WorkflowProxy`<br />
 
 Derives an `RpcGroup` from a list of workflows.
 
+**Example** (Deriving RPC endpoints from workflows)
+
 ```ts
 import { Layer, Schema } from "effect"
 import { RpcServer } from "effect/unstable/rpc"
-import {
-  Workflow,
-  WorkflowProxy,
-  WorkflowProxyServer
-} from "effect/unstable/workflow"
+import { Workflow, WorkflowProxy, WorkflowProxyServer } from "effect/unstable/workflow"
 
 const EmailWorkflow = Workflow.make({
   name: "EmailWorkflow",
@@ -42,6 +40,6 @@ const ApiLayer = RpcServer.layer(MyRpcs).pipe(
 declare const toRpcGroup: <const Workflows extends NonEmptyReadonlyArray<Workflow.Any>, const Prefix extends string = "">(workflows: Workflows, options?: { readonly prefix?: Prefix | undefined; }) => RpcGroup.RpcGroup<ConvertRpcs<Workflows[number], Prefix>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/WorkflowProxy.ts#L73)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/WorkflowProxy.ts#L71)
 
 Since v4.0.0

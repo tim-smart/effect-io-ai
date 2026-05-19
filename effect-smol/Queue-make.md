@@ -10,21 +10,6 @@ By default the queue is unbounded and uses the `"suspend"` strategy. Provide
 `"sliding"` to control what happens when the queue is full. The returned
 queue can be offered to, taken from, failed, ended, interrupted, or shut down.
 
-**Previously Known As**
-
-This API replaces the following from Effect 3.x:
-
-- `Mailbox.make`
-
-**Signature**
-
-```ts
-declare const make: <A, E = never>(options?: { readonly capacity?: number | undefined; readonly strategy?: "suspend" | "dropping" | "sliding" | undefined; } | undefined) => Effect<Queue<A, E>>
-```
-
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Queue.ts#L424)
-
-Since v3.8.0
 **Example** (Creating queues)
 
 ```ts
@@ -53,3 +38,13 @@ Effect.gen(function*() {
   console.log(failed) // true
 })
 ```
+
+**Signature**
+
+```ts
+declare const make: <A, E = never>(options?: { readonly capacity?: number | undefined; readonly strategy?: "suspend" | "dropping" | "sliding" | undefined; } | undefined) => Effect<Queue<A, E>>
+```
+
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Queue.ts#L410)
+
+Since v4.0.0

@@ -8,7 +8,7 @@ Checks if a `bigint` is between a `minimum` and `maximum` value (inclusive).
 **Example** (Checking whether a bigint is within bounds)
 
 ```ts
-import * as BigInt from "effect/BigInt"
+import { BigInt } from "effect"
 import * as assert from "node:assert"
 
 const between = BigInt.between({ minimum: 0n, maximum: 5n })
@@ -24,6 +24,6 @@ assert.deepStrictEqual(between(6n), false)
 declare const between: { (options: { minimum: bigint; maximum: bigint; }): (self: bigint) => boolean; (self: bigint, options: { minimum: bigint; maximum: bigint; }): boolean; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigInt.ts#L352)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigInt.ts#L350)
 
 Since v2.0.0

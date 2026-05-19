@@ -23,7 +23,7 @@ Represents one transformation step in a JSON Patch document. This is a subset of
 **Example** (All operation types)
 
 ```ts
-import * as JsonPatch from "effect/JsonPatch"
+import { JsonPatch } from "effect"
 
 const addOp: JsonPatch.JsonPatchOperation = {
   op: "add",

@@ -22,6 +22,6 @@ Effect.gen(function*() {
 declare const nowInCurrentZone: Effect.Effect<Zoned, never, CurrentTimeZone>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L1901)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L1899)
 
 Since v3.6.0

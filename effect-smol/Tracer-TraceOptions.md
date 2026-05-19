@@ -17,4 +17,4 @@ export interface TraceOptions {
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tracer.ts#L288)
 
-Since v3.1.0
+Since v4.0.0

@@ -27,4 +27,4 @@ declare const decodeBase64: (str: string) => Result.Result<Uint8Array, EncodingE
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Encoding.ts#L113)
 
-Since v4.0.0
+Since v2.0.0

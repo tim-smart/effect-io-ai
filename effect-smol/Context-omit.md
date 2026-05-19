@@ -8,7 +8,7 @@ Returns a new `Context` with the specified service keys removed.
 **Example** (Omitting services from a context)
 
 ```ts
-import { Option, pipe, Context } from "effect"
+import { Context, Option, pipe } from "effect"
 import * as assert from "node:assert"
 
 const Port = Context.Service<{ PORT: number }>("Port")
@@ -34,6 +34,6 @@ assert.deepStrictEqual(Context.getOption(context, Timeout), Option.none())
 declare const omit: <S extends ReadonlyArray<Key<any, any>>>(...keys: S) => <Services>(self: Context<Services>) => Context<Exclude<Services, Service.Identifier<S[number]>>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Context.ts#L1088)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Context.ts#L1074)
 
-Since v4.0.0
+Since v2.0.0

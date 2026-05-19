@@ -15,9 +15,7 @@ full compatibility with JavaScript's iteration protocol.
 **Example** (Working with non-empty iterables)
 
 ```ts
-import { Array } from "effect"
-import * as Chunk from "effect/Chunk"
-import * as NonEmptyIterable from "effect/NonEmptyIterable"
+import { Array, Chunk, NonEmptyIterable } from "effect"
 
 // Function that requires non-empty data
 function getFirst<A>(data: NonEmptyIterable.NonEmptyIterable<A>): A {
@@ -64,6 +62,6 @@ export interface NonEmptyIterable<out A> extends Iterable<A> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/NonEmptyIterable.ts#L214)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/NonEmptyIterable.ts#L212)
 
 Since v2.0.0

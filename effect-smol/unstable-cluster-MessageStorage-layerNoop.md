@@ -11,6 +11,6 @@ Layer that provides the no-op `MessageStorage` service.
 declare const layerNoop: Layer.Layer<MessageStorage, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MessageStorage.ts#L1026)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MessageStorage.ts#L1025)
 
 Since v4.0.0

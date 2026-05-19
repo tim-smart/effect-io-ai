@@ -8,7 +8,7 @@ Runs an effect synchronously with provided services, returning an Exit result.
 **Example** (Usage)
 
 ```ts
-import { Effect, Exit, Context } from "effect"
+import { Context, Effect, Exit } from "effect"
 
 // Define a logger service
 const Logger = Context.Service<{
@@ -44,6 +44,6 @@ if (Exit.isSuccess(exit)) {
 declare const runSyncExitWith: <R>(context: Context.Context<R>) => <A, E>(effect: Effect<A, E, R>) => Exit.Exit<A, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L8736)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L8642)
 
 Since v4.0.0

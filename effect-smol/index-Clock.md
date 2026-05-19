@@ -11,6 +11,6 @@ Re-exports all named exports from the "./Clock.ts" module as `Clock`.
 export * as Clock from "./Clock.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L451)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L527)
 
 Since v2.0.0

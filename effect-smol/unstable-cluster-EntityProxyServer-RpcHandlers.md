@@ -21,6 +21,6 @@ type RpcHandlers<Rpcs, Prefix> = Rpcs extends Rpc.Rpc<
   : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EntityProxyServer.ts#L146)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EntityProxyServer.ts#L147)
 
 Since v4.0.0

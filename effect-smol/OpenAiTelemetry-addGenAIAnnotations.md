@@ -16,4 +16,4 @@ declare const addGenAIAnnotations: { (options: OpenAiTelemetryAttributeOptions):
 
 [Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/OpenAiTelemetry.ts#L131)
 
-Since v4.0.0, utilities
+Since v4.0.0

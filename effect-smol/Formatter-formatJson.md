@@ -65,6 +65,6 @@ See also: `format`, `Formatter`
 declare const formatJson: (input: unknown, options?: { readonly space?: number | string | undefined; }) => string
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Formatter.ts#L414)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Formatter.ts#L348)
 
 Since v4.0.0

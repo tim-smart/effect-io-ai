@@ -25,4 +25,4 @@ declare const takeUpTo: { (n: number): <A>(self: TxPriorityQueue<A>) => Effect.E
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxPriorityQueue.ts#L439)
 
-Since v4.0.0
+Since v2.0.0

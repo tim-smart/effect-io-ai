@@ -14,6 +14,6 @@ offset, and byte range.
 declare const fileWeb: (file: Body.HttpBody.FileLike, options?: (Options.WithContent & { readonly bytesToRead?: FileSystem.SizeInput | undefined; readonly chunkSize?: FileSystem.SizeInput | undefined; readonly offset?: FileSystem.SizeInput | undefined; }) | undefined) => Effect.Effect<HttpServerResponse, never, HttpPlatform>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpServerResponse.ts#L487)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpServerResponse.ts#L488)
 
 Since v4.0.0

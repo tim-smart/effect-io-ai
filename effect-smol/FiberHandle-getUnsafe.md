@@ -32,4 +32,4 @@ declare const getUnsafe: <A, E>(self: FiberHandle<A, E>) => Option.Option<Fiber.
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FiberHandle.ts#L446)
 
-Since v2.0.0
+Since v4.0.0

@@ -8,7 +8,7 @@ Accesses a service from the context and emits it as a single element.
 **Example** (Accessing a service as a stream)
 
 ```ts
-import { Effect, Context, Stream } from "effect"
+import { Context, Effect, Stream } from "effect"
 
 class Greeter extends Context.Service<Greeter, {
   readonly greet: (name: string) => string
@@ -37,6 +37,6 @@ Effect.runPromise(program)
 declare const service: <I, S>(service: Context.Key<I, S>) => Stream<S, never, I>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L425)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L415)
 
 Since v4.0.0

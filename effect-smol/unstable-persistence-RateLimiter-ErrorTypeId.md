@@ -11,6 +11,6 @@ Type-level identifier used to brand `RateLimiterError` values.
 type ErrorTypeId = "~@effect/experimental/RateLimiter/RateLimiterError"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RateLimiter.ts#L346)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RateLimiter.ts#L350)
 
 Since v4.0.0

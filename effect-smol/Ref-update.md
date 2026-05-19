@@ -35,6 +35,6 @@ const program2 = Effect.gen(function*() {
 declare const update: (<A>(f: (a: A) => A) => (self: Ref<A>) => Effect.Effect<void>) & (<A>(self: Ref<A>, f: (a: A) => A) => Effect.Effect<void>)
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Ref.ts#L547)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Ref.ts#L541)
 
 Since v2.0.0

@@ -30,6 +30,6 @@ type Effect<Discard extends true ? void : T[number] extends never ? [] : { -read
     : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L311)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L310)
 
 Since v2.0.0

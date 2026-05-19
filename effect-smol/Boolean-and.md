@@ -8,13 +8,13 @@ Combines two boolean using AND: `self && that`.
 **Example** (Combining booleans with AND)
 
 ```ts
-import { and } from "effect/Boolean"
+import { Boolean } from "effect"
 import * as assert from "node:assert"
 
-assert.deepStrictEqual(and(true, true), true)
-assert.deepStrictEqual(and(true, false), false)
-assert.deepStrictEqual(and(false, true), false)
-assert.deepStrictEqual(and(false, false), false)
+assert.deepStrictEqual(Boolean.and(true, true), true)
+assert.deepStrictEqual(Boolean.and(true, false), false)
+assert.deepStrictEqual(Boolean.and(false, true), false)
+assert.deepStrictEqual(Boolean.and(false, false), false)
 ```
 
 **Signature**

@@ -8,10 +8,10 @@ Returns the maximum between two `number`s.
 **Example** (Finding the maximum)
 
 ```ts
-import { max } from "effect/Number"
+import { Number } from "effect"
 import * as assert from "node:assert"
 
-assert.deepStrictEqual(max(2, 3), 3)
+assert.deepStrictEqual(Number.max(2, 3), 3)
 ```
 
 **Signature**

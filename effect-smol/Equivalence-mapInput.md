@@ -65,6 +65,6 @@ See also: `combine`, `Struct`
 declare const mapInput: { <B, A>(f: (b: B) => A): (self: Equivalence<A>) => Equivalence<B>; <A, B>(self: Equivalence<A>, f: (b: B) => A): Equivalence<B>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Equivalence.ts#L504)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Equivalence.ts#L503)
 
 Since v2.0.0

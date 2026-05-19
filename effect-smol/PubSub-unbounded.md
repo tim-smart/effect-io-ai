@@ -8,8 +8,7 @@ Creates an unbounded `PubSub`.
 **Example** (Creating an unbounded PubSub)
 
 ```ts
-import { Effect } from "effect"
-import * as PubSub from "effect/PubSub"
+import { Effect, PubSub } from "effect"
 
 const program = Effect.gen(function*() {
   // Create unbounded PubSub
@@ -40,6 +39,6 @@ const program = Effect.gen(function*() {
 declare const unbounded: <A>(options?: { readonly replay?: number | undefined; }) => Effect.Effect<PubSub<A>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PubSub.ts#L497)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PubSub.ts#L488)
 
 Since v2.0.0

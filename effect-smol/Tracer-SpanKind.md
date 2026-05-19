@@ -9,8 +9,8 @@ span: internal work, server handling, client calls, producing, or consuming.
 **Example** (Configuring span kinds)
 
 ```ts
-import type { Tracer } from "effect"
 import { Effect } from "effect"
+import type { Tracer } from "effect"
 
 // Different span kinds for different operations
 const serverSpan = Effect.withSpan("handle-request", {

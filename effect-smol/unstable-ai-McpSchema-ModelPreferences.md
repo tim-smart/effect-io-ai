@@ -21,6 +21,6 @@ balance them against other considerations.
 declare class ModelPreferences
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L1598)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L1601)
 
 Since v4.0.0

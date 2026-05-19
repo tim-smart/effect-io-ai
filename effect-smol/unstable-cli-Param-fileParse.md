@@ -11,7 +11,7 @@ extension of the file passed on the command-line if no `format` is specified.
 **Example** (Parsing file contents)
 
 ```ts
-import * as Param from "effect/unstable/cli/Param"
+import { Param } from "effect/unstable/cli"
 
 // @internal - this module is not exported publicly
 

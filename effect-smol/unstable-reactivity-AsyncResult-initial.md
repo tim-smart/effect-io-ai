@@ -11,6 +11,6 @@ Creates an `Initial` result, optionally marking it as waiting.
 declare const initial: <A = never, E = never>(waiting?: boolean) => Initial<A, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AsyncResult.ts#L225)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AsyncResult.ts#L227)
 
 Since v4.0.0

@@ -7,12 +7,6 @@ A `Queue` is an asynchronous queue that can be offered to and taken from.
 
 It also supports signaling that it is done or failed.
 
-**Previously Known As**
-
-This API replaces the following from Effect 3.x:
-
-- `Mailbox`
-
 **Example** (Offering and taking queue values)
 
 ```ts
@@ -43,6 +37,6 @@ export interface Queue<in out A, in out E = never> extends Enqueue<A, E>, Dequeu
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Queue.ts#L281)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Queue.ts#L273)
 
-Since v3.8.0
+Since v2.0.0

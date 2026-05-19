@@ -10,7 +10,7 @@ producer-consumer patterns, queues, and streaming scenarios.
 **Example** (Creating and consuming a mutable list)
 
 ```ts
-import * as MutableList from "effect/MutableList"
+import { MutableList } from "effect"
 
 // Create a mutable list
 const list: MutableList.MutableList<number> = MutableList.make()
@@ -41,6 +41,6 @@ export interface MutableList<in out A> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableList.ts#L87)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableList.ts#L85)
 
-Since v4.0.0
+Since v2.0.0

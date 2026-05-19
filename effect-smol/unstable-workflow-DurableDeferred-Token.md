@@ -12,6 +12,6 @@ execution.
 type Token = Brand.Branded<string, TokenTypeId>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DurableDeferred.ts#L322)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DurableDeferred.ts#L324)
 
 Since v4.0.0

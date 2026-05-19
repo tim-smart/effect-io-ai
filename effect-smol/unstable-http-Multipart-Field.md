@@ -19,6 +19,6 @@ export interface Field extends Part.Proto {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Multipart.ts#L92)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Multipart.ts#L93)
 
 Since v4.0.0

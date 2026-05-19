@@ -16,6 +16,6 @@ produce either `499` for client aborts or `503` for server aborts.
 declare const causeResponse: <E>(cause: Cause.Cause<E>) => Effect.Effect<readonly [Response.HttpServerResponse, Cause.Cause<E>]>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpServerError.ts#L281)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpServerError.ts#L282)
 
 Since v4.0.0

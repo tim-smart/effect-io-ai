@@ -11,6 +11,6 @@ Returns the available value from `value`, or throws `NoSuchElementError` when no
 declare const getOrThrow: <A, E>(self: AsyncResult<A, E>) => A
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AsyncResult.ts#L449)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AsyncResult.ts#L451)
 
 Since v4.0.0

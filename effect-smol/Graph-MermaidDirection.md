@@ -14,7 +14,7 @@ Determines the flow direction of nodes and edges in the diagram:
 **Example** (Configuring Mermaid directions)
 
 ```ts
-import type * as Graph from "effect/Graph"
+import type { Graph } from "effect"
 
 // Horizontal workflow diagram
 const horizontalOptions: Graph.MermaidOptions<string, string> = {
@@ -42,6 +42,6 @@ type MermaidDirection = | "TB" // Top to Bottom (default)
   | "LR"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Graph.ts#L1957)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Graph.ts#L1954)
 
-Since v4.0.0
+Since v3.18.0

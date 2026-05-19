@@ -9,12 +9,6 @@ number of permits.
 Use this low-level constructor when an immediate semaphore value is required;
 otherwise prefer the effectful `make` constructor.
 
-**Previously Known As**
-
-This API replaces the following from Effect 3.x:
-
-- `Effect.makeSemaphoreUnsafe`
-
 **Example** (Creating an unsafe semaphore)
 
 ```ts
@@ -47,6 +41,6 @@ const program = Effect.all([
 declare const makeUnsafe: (permits: number) => Semaphore
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Semaphore.ts#L164)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Semaphore.ts#L158)
 
-Since v2.0.0
+Since v4.0.0

@@ -16,7 +16,7 @@ Behavior:
 **Example** (Filter out empty strings)
 
 ```ts
-import { SchemaGetter, Option } from "effect"
+import { Option, SchemaGetter } from "effect"
 
 const skipEmpty = SchemaGetter.transformOptional<string, string>((o) =>
   Option.filter(o, (s) => s.length > 0)

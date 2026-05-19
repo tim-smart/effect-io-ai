@@ -8,11 +8,11 @@ Returns the next power of 2 from the given number.
 **Example** (Finding the next power of two)
 
 ```ts
-import { nextPow2 } from "effect/Number"
+import { Number } from "effect"
 import * as assert from "node:assert"
 
-assert.deepStrictEqual(nextPow2(5), 8)
-assert.deepStrictEqual(nextPow2(17), 32)
+assert.deepStrictEqual(Number.nextPow2(5), 8)
+assert.deepStrictEqual(Number.nextPow2(17), 32)
 ```
 
 **Signature**

@@ -11,6 +11,6 @@ Re-exports all named exports from the "./SqlResolver.ts" module as `SqlResolver`
 export * as SqlResolver from "./SqlResolver.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L36)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L159)
 
 Since v4.0.0

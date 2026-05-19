@@ -12,7 +12,7 @@ multiple services. The Effect is executed in the scope of the layer.
 **Example** (Creating a layer from an effectful context)
 
 ```ts
-import { Effect, Layer, Context } from "effect"
+import { Context, Effect, Layer } from "effect"
 
 class Database extends Context.Service<
   Database,
@@ -32,6 +32,6 @@ const layer = Layer.effectContext(
 declare const effectContext: <A, E, R>(effect: Effect<Context.Context<A>, E, R>) => Layer<A, E, Exclude<R, Scope.Scope>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L917)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L911)
 
 Since v2.0.0

@@ -8,7 +8,7 @@ Tests whether at least one value in the HashSet satisfies the predicate.
 **Example** (Testing whether some values match)
 
 ```ts
-import * as HashSet from "effect/HashSet"
+import { HashSet } from "effect"
 
 const numbers = HashSet.make(1, 2, 3, 4, 5)
 
@@ -25,6 +25,6 @@ console.log(HashSet.some(empty, (n) => n > 0)) // false
 declare const some: { <V>(predicate: Predicate<V>): (self: HashSet<V>) => boolean; <V>(self: HashSet<V>, predicate: Predicate<V>): boolean; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashSet.ts#L571)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashSet.ts#L569)
 
 Since v2.0.0

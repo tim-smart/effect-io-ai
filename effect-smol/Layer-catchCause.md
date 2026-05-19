@@ -13,7 +13,7 @@ to build instead.
 **Example** (Recovering from layer failures by cause)
 
 ```ts
-import { Data, Effect, Layer, Context } from "effect"
+import { Context, Data, Effect, Layer } from "effect"
 
 class DatabaseError extends Data.TaggedError("DatabaseError")<{
   message: string
@@ -53,6 +53,6 @@ Effect.runPromise(program)
 declare const catchCause: { <E, RIn2, E2, ROut2>(onError: (cause: Cause.Cause<E>) => Layer<ROut2, E2, RIn2>): <RIn, ROut>(self: Layer<ROut, E, RIn>) => Layer<ROut & ROut2, E2, RIn2 | RIn>; <RIn, E, ROut, RIn2, E2, ROut22>(self: Layer<ROut, E, RIn>, onError: (cause: Cause.Cause<E>) => Layer<ROut22, E2, RIn2>): Layer<ROut & ROut22, E2, RIn | RIn2>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L1739)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L1721)
 
-Since v2.0.0
+Since v4.0.0

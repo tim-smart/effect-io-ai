@@ -16,6 +16,6 @@ type Validate<A, Variant> = {
   }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/VariantSchema.ts#L100)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/VariantSchema.ts#L99)
 
 Since v4.0.0

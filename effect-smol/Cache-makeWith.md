@@ -41,4 +41,4 @@ declare const makeWith: <Key, A, E = never, R = never, ServiceMode extends "look
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cache.ts#L191)
 
-Since v4.0.0
+Since v2.0.0

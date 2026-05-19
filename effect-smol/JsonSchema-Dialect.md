@@ -16,6 +16,6 @@ The set of JSON Schema dialects supported by this module.
 type Dialect = "draft-07" | "draft-2020-12" | "openapi-3.1" | "openapi-3.0"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/JsonSchema.ts#L115)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/JsonSchema.ts#L117)
 
 Since v4.0.0

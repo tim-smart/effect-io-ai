@@ -26,4 +26,4 @@ declare const addNode: <N, E, T extends Kind = "directed">(mutable: MutableGraph
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Graph.ts#L519)
 
-Since v4.0.0
+Since v3.18.0

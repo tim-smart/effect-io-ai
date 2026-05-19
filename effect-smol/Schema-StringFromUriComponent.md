@@ -14,6 +14,6 @@ export interface StringFromUriComponent extends decodeTo<String, String> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L10132)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L10282)
 
-Since v4.0.0
+Since v3.12.0

@@ -8,7 +8,7 @@ This is used to represent empty responses with a specific status code.
 
 **See**
 
-- `asEmpty` for creating a no content response that can be decoded into a meaningful value on the client side.
+- `NoContent` for the predefined 204 no content schema.
 
 **Signature**
 

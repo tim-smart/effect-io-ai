@@ -11,6 +11,6 @@ Re-exports all named exports from the "./ClickhouseClient.ts" module as `Clickho
 export * as ClickhouseClient from "./ClickhouseClient.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/sql/clickhouse/src/index.ts#L10)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/sql/clickhouse/src/index.ts#L30)
 
 Since v4.0.0

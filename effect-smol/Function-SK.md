@@ -11,10 +11,10 @@ This function is useful for discarding the first argument passed to it and retur
 **Example** (Discarding the first argument)
 
 ```ts
-import { SK } from "effect/Function"
+import { Function } from "effect"
 import * as assert from "node:assert"
 
-assert.deepStrictEqual(SK(0, "hello"), "hello")
+assert.deepStrictEqual(Function.SK(0, "hello"), "hello")
 ```
 
 **Signature**
@@ -23,6 +23,6 @@ assert.deepStrictEqual(SK(0, "hello"), "hello")
 declare const SK: <A, B>(_: A, b: B) => B
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Function.ts#L1309)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Function.ts#L1307)
 
 Since v2.0.0

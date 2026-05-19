@@ -13,4 +13,4 @@ declare const isEnqueue: <A = unknown, E = unknown>(u: unknown) => u is Enqueue<
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Queue.ts#L92)
 
-Since v4.0.0
+Since v2.0.0

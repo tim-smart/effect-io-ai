@@ -14,7 +14,7 @@ retrieve logged messages for verification in tests.
 
 ```ts
 import { Console, Effect } from "effect"
-import * as TestConsole from "effect/testing/TestConsole"
+import { TestConsole } from "effect/testing"
 
 const program = Effect.gen(function*() {
   yield* Console.log("Hello, World!")

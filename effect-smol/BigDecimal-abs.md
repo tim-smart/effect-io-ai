@@ -8,12 +8,12 @@ Determines the absolute value of a given `BigDecimal`.
 **Example** (Calculating absolute values)
 
 ```ts
-import { abs, fromStringUnsafe } from "effect/BigDecimal"
+import { BigDecimal } from "effect"
 import * as assert from "node:assert"
 
-assert.deepStrictEqual(abs(fromStringUnsafe("-5")), fromStringUnsafe("5"))
-assert.deepStrictEqual(abs(fromStringUnsafe("0")), fromStringUnsafe("0"))
-assert.deepStrictEqual(abs(fromStringUnsafe("5")), fromStringUnsafe("5"))
+assert.deepStrictEqual(BigDecimal.abs(BigDecimal.fromStringUnsafe("-5")), BigDecimal.fromStringUnsafe("5"))
+assert.deepStrictEqual(BigDecimal.abs(BigDecimal.fromStringUnsafe("0")), BigDecimal.fromStringUnsafe("0"))
+assert.deepStrictEqual(BigDecimal.abs(BigDecimal.fromStringUnsafe("5")), BigDecimal.fromStringUnsafe("5"))
 ```
 
 **Signature**

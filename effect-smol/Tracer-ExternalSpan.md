@@ -10,8 +10,8 @@ link in Effect tracing.
 **Example** (Creating an external span value)
 
 ```ts
-import type { Tracer } from "effect"
 import { Context } from "effect"
+import type { Tracer } from "effect"
 
 // Create an external span from another tracing system
 const externalSpan: Tracer.ExternalSpan = {

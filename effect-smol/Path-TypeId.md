@@ -11,6 +11,6 @@ Runtime type identifier used to mark implementations of the `Path` service.
 declare const TypeId: "~effect/platform/Path"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Path.ts#L45)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Path.ts#L46)
 
 Since v4.0.0

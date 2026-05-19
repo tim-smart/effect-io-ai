@@ -39,4 +39,4 @@ declare const isGreaterThan: { (that: LogLevel): (self: LogLevel) => boolean; (s
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/LogLevel.ts#L182)
 
-Since v2.0.0
+Since v4.0.0

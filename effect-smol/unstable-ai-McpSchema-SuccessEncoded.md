@@ -26,6 +26,6 @@ type SuccessEncoded<Group> = RpcGroup.Rpcs<
   : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L2079)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L2082)
 
 Since v4.0.0

@@ -11,6 +11,6 @@ Returns `true` when an `AsyncResult` is a `Failure`.
 declare const isFailure: <A, E>(result: AsyncResult<A, E>) => result is Failure<A, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AsyncResult.ts#L288)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AsyncResult.ts#L290)
 
 Since v4.0.0

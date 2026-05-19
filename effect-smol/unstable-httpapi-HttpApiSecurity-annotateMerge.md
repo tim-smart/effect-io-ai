@@ -11,6 +11,6 @@ Merges OpenAPI annotations into a security scheme.
 declare const annotateMerge: { <I>(annotations: Context.Context<I>): <A extends HttpApiSecurity>(self: A) => A; <A extends HttpApiSecurity, I>(self: A, annotations: Context.Context<I>): A; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiSecurity.ts#L182)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiSecurity.ts#L181)
 
 Since v4.0.0

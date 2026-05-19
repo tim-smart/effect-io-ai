@@ -15,6 +15,6 @@ hooks lazily in this map when they are read or updated.
 declare const MetricRegistry: Context.Reference<Map<string, Metric.Metadata<any, any>>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Metric.ts#L1756)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Metric.ts#L1755)
 
 Since v4.0.0

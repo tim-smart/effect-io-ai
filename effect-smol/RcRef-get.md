@@ -43,6 +43,6 @@ const program = Effect.gen(function*() {
 declare const get: <A, E>(self: RcRef<A, E>) => Effect.Effect<A, E, Scope>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RcRef.ts#L189)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RcRef.ts#L188)
 
 Since v3.5.0

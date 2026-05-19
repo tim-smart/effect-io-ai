@@ -50,6 +50,6 @@ See also: `make`, `Equal` (for structural equality)
 declare const strictEqual: <A>() => Equivalence<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Equivalence.ts#L240)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Equivalence.ts#L239)
 
 Since v4.0.0

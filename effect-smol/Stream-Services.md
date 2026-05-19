@@ -5,10 +5,6 @@ Module: `Stream`<br />
 
 Extract the services type from a Stream type.
 
-**Previously Known As:**
-
-This type alias was named `Context` in Effect 3.x.
-
 **Example** (Extracting the services type from a Stream type)
 
 ```ts
@@ -29,6 +25,6 @@ type Services<T> = [T] extends [Stream<infer _A, infer _E, infer _R>] ? _R
   : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L279)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L275)
 
-Since v3.4.0
+Since v4.0.0

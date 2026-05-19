@@ -8,7 +8,7 @@ Capture a Runtime and use it to fork Effect's, adding the forked fibers to the F
 **Example** (Capturing a runtime)
 
 ```ts
-import { Effect, FiberSet, Context } from "effect"
+import { Context, Effect, FiberSet } from "effect"
 
 interface Users {
   readonly _: unique symbol

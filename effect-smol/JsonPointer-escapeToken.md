@@ -24,11 +24,11 @@ Encodes special characters in a reference token so it can be safely used as a se
 **Example** (Escaping special characters)
 
 ```ts
-import { escapeToken } from "effect/JsonPointer"
+import { JsonPointer } from "effect"
 
-escapeToken("a/b") // "a~1b"
-escapeToken("c~d") // "c~0d"
-escapeToken("path/to~key") // "path~1to~0key"
+JsonPointer.escapeToken("a/b") // "a~1b"
+JsonPointer.escapeToken("c~d") // "c~0d"
+JsonPointer.escapeToken("path/to~key") // "path~1to~0key"
 ```
 
 ## See also
@@ -41,6 +41,6 @@ escapeToken("path/to~key") // "path~1to~0key"
 declare const escapeToken: (token: string) => string
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/JsonPointer.ts#L90)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/JsonPointer.ts#L91)
 
 Since v4.0.0

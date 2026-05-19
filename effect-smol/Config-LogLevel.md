@@ -22,6 +22,6 @@ Accepted values: `"All"`, `"Fatal"`, `"Error"`, `"Warn"`, `"Info"`,
 declare const LogLevel: Schema.Literals<ReadonlyArray<LogLevel_.LogLevel>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Config.ts#L757)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Config.ts#L763)
 
 Since v4.0.0

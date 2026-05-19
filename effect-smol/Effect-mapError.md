@@ -15,7 +15,7 @@ operates on the error channel and leaves the success channel unchanged.
 
 - `map` for a version that operates on the success channel.
 - `mapBoth` for a version that operates on both channels.
-- `orElseFail` if you want to replace the error with a new one.
+- `mapError` if you want to replace the error with a new one.
 
 **Example** (Usage)
 
@@ -42,6 +42,6 @@ const mapped = Effect.mapError(
 declare const mapError: { <E, E2>(f: (e: E) => E2): <A, R>(self: Effect<A, E, R>) => Effect<A, E2, R>; <A, E, R, E2>(self: Effect<A, E, R>, f: (e: E) => E2): Effect<A, E2, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L3303)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L3235)
 
 Since v2.0.0

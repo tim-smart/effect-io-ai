@@ -17,6 +17,6 @@ export interface Proto extends Inspectable.Inspectable {
   }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Multipart.ts#L77)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Multipart.ts#L78)
 
 Since v4.0.0

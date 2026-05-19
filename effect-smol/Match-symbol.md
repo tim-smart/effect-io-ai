@@ -39,6 +39,6 @@ console.log(handleSymbol("string")) // "Not a symbol"
 declare const symbol: Predicate.Refinement<unknown, symbol>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L1457)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L1456)
 
 Since v4.0.0

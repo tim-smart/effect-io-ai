@@ -8,11 +8,10 @@ Transforms the parsed value of an option using an effectful mapping function.
 **Example** (Mapping parsed values effectfully)
 
 ```ts
-import * as Param from "effect/unstable/cli/Param"
+import { Effect } from "effect"
+import { CliError, Param } from "effect/unstable/cli"
 
 // @internal - this module is not exported publicly
-import { Effect } from "effect"
-import { CliError } from "effect/unstable/cli"
 
 const validatedEmail = Param.string(Param.flagKind, "email").pipe(
   Param.mapEffect((email) =>
@@ -36,6 +35,6 @@ const validatedEmail = Param.string(Param.flagKind, "email").pipe(
 declare const mapEffect: { <A, B>(f: (a: A) => Effect.Effect<B, CliError.CliError, Environment>): <Kind extends ParamKind>(self: Param<Kind, A>) => Param<Kind, B>; <Kind extends ParamKind, A, B>(self: Param<Kind, A>, f: (a: A) => Effect.Effect<B, CliError.CliError, Environment>): Param<Kind, B>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Param.ts#L1083)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Param.ts#L1082)
 
 Since v4.0.0

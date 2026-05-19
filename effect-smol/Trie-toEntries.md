@@ -10,7 +10,7 @@ Equivalent to `Array.from(Trie.entries(trie))`.
 **Example** (Converting entries to an array)
 
 ```ts
-import * as Trie from "effect/Trie"
+import { Trie } from "effect"
 import * as assert from "node:assert"
 
 const trie = Trie.empty<number>().pipe(
@@ -28,6 +28,6 @@ assert.deepStrictEqual(result, [["call", 0], ["me", 1]])
 declare const toEntries: <V>(self: Trie<V>) => Array<[string, V]>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Trie.ts#L290)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Trie.ts#L288)
 
 Since v2.0.0

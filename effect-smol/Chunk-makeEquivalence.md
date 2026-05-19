@@ -9,8 +9,7 @@ compares corresponding elements with the provided element equivalence.
 **Example** (Comparing chunks for equivalence)
 
 ```ts
-import { Chunk } from "effect"
-import * as Equivalence from "effect/Equivalence"
+import { Chunk, Equivalence } from "effect"
 
 const chunk1 = Chunk.make(1, 2, 3)
 const chunk2 = Chunk.make(1, 2, 3)
@@ -27,6 +26,6 @@ console.log(eq(chunk1, chunk3)) // false
 declare const makeEquivalence: <A>(isEquivalent: Equivalence.Equivalence<A>) => Equivalence.Equivalence<Chunk<A>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L233)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L231)
 
-Since v2.0.0
+Since v4.0.0

@@ -8,8 +8,7 @@ Converts the TxHashSet to an immutable HashSet snapshot.
 **Example** (Taking a HashSet snapshot)
 
 ```ts
-import { Effect, TxHashSet } from "effect"
-import * as HashSet from "effect/HashSet"
+import { Effect, HashSet, TxHashSet } from "effect"
 
 const program = Effect.gen(function*() {
   const txSet = yield* TxHashSet.make("x", "y", "z")
@@ -31,6 +30,6 @@ const program = Effect.gen(function*() {
 declare const toHashSet: <V>(self: TxHashSet<V>) => Effect.Effect<HashSet.HashSet<V>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashSet.ts#L928)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashSet.ts#L924)
 
 Since v2.0.0

@@ -10,7 +10,7 @@ for structural sharing and optimal performance.
 **Example** (Using basic HashMap operations)
 
 ```ts
-import * as HashMap from "effect/HashMap"
+import { HashMap } from "effect"
 
 // Create a HashMap
 const map = HashMap.make(["a", 1], ["b", 2], ["c", 3])

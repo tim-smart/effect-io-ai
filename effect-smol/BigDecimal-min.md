@@ -8,12 +8,12 @@ Returns the minimum between two `BigDecimal`s.
 **Example** (Selecting the smaller decimal)
 
 ```ts
-import { fromStringUnsafe, min } from "effect/BigDecimal"
+import { BigDecimal } from "effect"
 import * as assert from "node:assert"
 
 assert.deepStrictEqual(
-  min(fromStringUnsafe("2"), fromStringUnsafe("3")),
-  fromStringUnsafe("2")
+  BigDecimal.min(BigDecimal.fromStringUnsafe("2"), BigDecimal.fromStringUnsafe("3")),
+  BigDecimal.fromStringUnsafe("2")
 )
 ```
 

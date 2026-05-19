@@ -37,6 +37,6 @@ const pathAToC = result.paths.get(0)?.get(2) // [0, 1, 2]
 declare const floydWarshall: { <E>(cost: (edgeData: E) => number): <N, T extends Kind = "directed">(graph: Graph<N, E, T> | MutableGraph<N, E, T>) => AllPairsResult<E>; <N, E, T extends Kind = "directed">(graph: Graph<N, E, T> | MutableGraph<N, E, T>, cost: (edgeData: E) => number): AllPairsResult<E>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Graph.ts#L3057)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Graph.ts#L3050)
 
-Since v4.0.0
+Since v3.18.0

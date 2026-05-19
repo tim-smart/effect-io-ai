@@ -29,6 +29,6 @@ console.log(Metric.isMetric(null)) // false
 declare const isMetric: (u: unknown) => u is Metric<unknown, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Metric.ts#L2151)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Metric.ts#L2150)
 
 Since v4.0.0

@@ -42,6 +42,6 @@ export interface decodeTo<To extends Top, From extends Top, RD = never, RE = nev
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L4302)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L4426)
 
 Since v4.0.0

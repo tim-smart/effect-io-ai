@@ -13,8 +13,8 @@ managing content length within token limits for AI model compatibility.
 
 ```ts
 import { Effect } from "effect"
-import type { Tokenizer } from "effect/unstable/ai"
 import { Prompt } from "effect/unstable/ai"
+import type { Tokenizer } from "effect/unstable/ai"
 
 const customTokenizer: Tokenizer.Service = {
   tokenize: (input) =>

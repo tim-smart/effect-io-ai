@@ -36,6 +36,6 @@ console.log(result)
 declare const gen: Gen.Gen<ResultTypeLambda>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L1423)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L1405)
 
-Since v4.0.0
+Since v2.0.0

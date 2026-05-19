@@ -11,7 +11,7 @@ in DOT format compatible with GraphViz tools.
 **Example** (Configuring GraphViz labels)
 
 ```ts
-import type * as Graph from "effect/Graph"
+import type { Graph } from "effect"
 
 // Basic options with custom labels
 const basicOptions: Graph.GraphVizOptions<string, number> = {
@@ -51,6 +51,6 @@ export interface GraphVizOptions<N, E> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Graph.ts#L1782)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Graph.ts#L1779)
 
-Since v4.0.0
+Since v3.18.0

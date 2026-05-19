@@ -11,8 +11,7 @@ For best performance use capacities that are powers of two.
 **Example** (Sliding old messages when full)
 
 ```ts
-import { Effect } from "effect"
-import * as PubSub from "effect/PubSub"
+import { Effect, PubSub } from "effect"
 
 const program = Effect.gen(function*() {
   // Create sliding PubSub that evicts old messages when full
@@ -45,6 +44,6 @@ const program = Effect.gen(function*() {
 declare const sliding: <A>(capacity: number | { readonly capacity: number; readonly replay?: number | undefined; }) => Effect.Effect<PubSub<A>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PubSub.ts#L451)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PubSub.ts#L443)
 
 Since v2.0.0

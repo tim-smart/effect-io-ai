@@ -17,4 +17,4 @@ declare const is: <T>(schema: Schema.Schema<T>) => <I>(input: I) => input is I &
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaParser.ts#L134)
 
-Since v4.0.0
+Since v3.10.0

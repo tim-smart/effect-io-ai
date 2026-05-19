@@ -11,6 +11,6 @@ Alias for any `Effect` value accepted by `Effect.all`.
 type EffectAny = Effect<any, any, any>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L286)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L285)
 
 Since v2.0.0

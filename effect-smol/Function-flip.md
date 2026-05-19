@@ -8,12 +8,12 @@ Reverses the order of arguments for a curried function.
 **Example** (Flipping curried arguments)
 
 ```ts
-import { flip } from "effect/Function"
+import { Function } from "effect"
 import * as assert from "node:assert"
 
 const f = (a: number) => (b: string) => a - b.length
 
-assert.deepStrictEqual(flip(f)("aaa")(2), -1)
+assert.deepStrictEqual(Function.flip(f)("aaa")(2), -1)
 ```
 
 **Signature**
@@ -22,6 +22,6 @@ assert.deepStrictEqual(flip(f)("aaa")(2), -1)
 declare const flip: <A extends Array<unknown>, B extends Array<unknown>, C>(f: (...a: A) => (...b: B) => C) => (...b: B) => (...a: A) => C
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Function.ts#L423)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Function.ts#L421)
 
 Since v2.0.0

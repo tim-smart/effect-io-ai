@@ -14,6 +14,6 @@ export interface NumberFromString extends decodeTo<Finite, String> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L9914)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L10064)
 
-Since v4.0.0
+Since v3.10.0

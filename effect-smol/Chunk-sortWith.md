@@ -8,8 +8,7 @@ Sorts the elements of a Chunk based on a projection function.
 **Example** (Sorting chunks by a derived value)
 
 ```ts
-import { Chunk } from "effect"
-import * as Order from "effect/Order"
+import { Chunk, Order } from "effect"
 
 const people = Chunk.make(
   { name: "Alice", age: 30 },
@@ -39,6 +38,6 @@ console.log(Chunk.toArray(byLength)) // ["a", "ab", "abc"]
 declare const sortWith: { <A, B>(f: (a: A) => B, order: Order.Order<B>): (self: Chunk<A>) => Chunk<A>; <A, B>(self: Chunk<A>, f: (a: A) => B, order: Order.Order<B>): Chunk<A>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L1905)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L1895)
 
 Since v2.0.0

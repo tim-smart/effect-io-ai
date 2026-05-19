@@ -14,6 +14,6 @@ atom's read or write behavior.
 declare const withLabel: { (name: string): <A extends Atom<any>>(self: A) => A; <A extends Atom<any>>(self: A, name: string): A; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Atom.ts#L1508)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Atom.ts#L1513)
 
 Since v4.0.0

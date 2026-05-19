@@ -27,6 +27,6 @@ const timedProgram = Effect.timeout(program, "1 second")
 declare const never: Effect<never, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L1230)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L1221)
 
 Since v2.0.0

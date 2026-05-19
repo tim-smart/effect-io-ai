@@ -22,6 +22,6 @@ declare class PropertySignature { constructor(
   ) }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L1581)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L1590)
 
-Since v4.0.0
+Since v3.10.0

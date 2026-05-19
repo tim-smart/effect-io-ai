@@ -11,6 +11,6 @@ Middleware that trusts `X-Forwarded-Host` and `X-Forwarded-For`, updating the re
 declare const xForwardedHeaders: <E, R>(httpApp: Effect.Effect<Response.HttpServerResponse, E, HttpServerRequest | R>) => Effect.Effect<Response.HttpServerResponse, E, HttpServerRequest | R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpMiddleware.ts#L252)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpMiddleware.ts#L253)
 
 Since v4.0.0

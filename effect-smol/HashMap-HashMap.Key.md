@@ -8,7 +8,7 @@ This type-level utility extracts the key type `K` from a `HashMap<K, V>` type.
 **Example** (Extracting key types)
 
 ```ts
-import * as HashMap from "effect/HashMap"
+import { HashMap } from "effect"
 
 // Create a HashMap to extract key type from
 const userMap = HashMap.make(
@@ -30,6 +30,6 @@ console.log(getUserById("alice")) // Option.some({ name: "Alice", age: 30 })
 type Key<T> = [T] extends [HashMap<infer _K, infer _V>] ? _K : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashMap.ts#L206)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashMap.ts#L204)
 
 Since v2.0.0

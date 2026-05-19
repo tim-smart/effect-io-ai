@@ -17,12 +17,6 @@ effect from the registration function to run if the fiber is interrupted.
 Use `Effect.callback` when integrating APIs that complete through callbacks
 instead of returning a `Promise`.
 
-**Previously Known As**
-
-This API replaces the following from Effect 3.x:
-
-- `Effect.async`
-
 **Example** (Usage)
 
 ```ts
@@ -46,6 +40,6 @@ const program = delay(1000)
 declare const callback: <A, E = never, R = never>(register: (this: Scheduler, resume: (effect: Effect<A, E, R>) => void, signal: AbortSignal) => void | Effect<void, never, R>) => Effect<A, E, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L1200)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L1191)
 
-Since v2.0.0
+Since v4.0.0

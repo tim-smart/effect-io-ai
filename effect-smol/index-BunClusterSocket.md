@@ -11,6 +11,6 @@ Re-exports all named exports from the "./BunClusterSocket.ts" module as `BunClus
 export * as BunClusterSocket from "./BunClusterSocket.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/index.ts#L22)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/index.ts#L90)
 
 Since v4.0.0

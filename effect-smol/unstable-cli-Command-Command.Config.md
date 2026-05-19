@@ -14,7 +14,7 @@ Command.Config allows you to specify:
 
 ```ts
 import { Argument, Flag } from "effect/unstable/cli"
-import type * as CliCommand from "effect/unstable/cli/Command"
+import type { Command as CliCommand } from "effect/unstable/cli"
 
 // Simple flat configuration
 const simpleConfig: CliCommand.Command.Config = {

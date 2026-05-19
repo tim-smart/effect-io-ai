@@ -12,6 +12,6 @@ identity.
 declare const memoize: <A extends object, O>(f: (a: A) => O) => (ast: A) => O
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Function.ts#L1317)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Function.ts#L1316)
 
 Since v4.0.0

@@ -23,6 +23,6 @@ See also:
 declare const getRedacted: (redactable: Redactable) => unknown
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Redactable.ts#L194)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Redactable.ts#L196)
 
 Since v4.0.0

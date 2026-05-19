@@ -51,6 +51,6 @@ const ciLogger = Logger.consolePretty({ colors: false })
 declare const consolePretty: (options?: { readonly colors?: "auto" | boolean | undefined; readonly stderr?: boolean | undefined; readonly formatDate?: ((date: Date) => string) | undefined; readonly mode?: "browser" | "tty" | "auto" | undefined; }) => Logger<unknown, void>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Logger.ts#L913)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Logger.ts#L912)
 
 Since v4.0.0

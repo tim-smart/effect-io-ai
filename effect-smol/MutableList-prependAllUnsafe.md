@@ -12,7 +12,7 @@ Only use mutable=true when you control the array lifecycle.
 **Example** (Prepending arrays with optional mutation)
 
 ```ts
-import * as MutableList from "effect/MutableList"
+import { MutableList } from "effect"
 
 const list = MutableList.make<number>()
 MutableList.append(list, 4)
@@ -36,6 +36,6 @@ console.log(MutableList.takeAll(list)) // [10, 20, 30, 1, 2, 3, 4]
 declare const prependAllUnsafe: <A>(self: MutableList<A>, messages: ReadonlyArray<A>, mutable?: boolean) => void
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableList.ts#L453)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableList.ts#L450)
 
 Since v4.0.0

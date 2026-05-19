@@ -48,6 +48,6 @@ export interface First<
   }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbQueryBuilder.ts#L593)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbQueryBuilder.ts#L592)
 
 Since v4.0.0

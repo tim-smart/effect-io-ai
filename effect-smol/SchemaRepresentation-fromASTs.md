@@ -20,6 +20,6 @@ Converts one or more Schema ASTs into a `MultiDocument`.
 declare const fromASTs: (asts: readonly [AST.AST, ...Array<AST.AST>]) => MultiDocument
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaRepresentation.ts#L1626)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaRepresentation.ts#L1629)
 
 Since v4.0.0

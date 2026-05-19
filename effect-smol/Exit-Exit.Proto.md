@@ -15,6 +15,6 @@ export interface Proto<out A, out E = never> extends Effect.Effect<A, E> {
   }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Exit.ts#L119)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Exit.ts#L118)
 
 Since v4.0.0

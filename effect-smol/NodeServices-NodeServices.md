@@ -9,9 +9,9 @@ child process spawning, filesystem, path, stdio, and terminal services.
 **Signature**
 
 ```ts
-type NodeServices = ChildProcessSpawner | FileSystem | Path | Stdio | Terminal
+type NodeServices = ChildProcessSpawner | Crypto | FileSystem | Path | Stdio | Terminal
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeServices.ts#L40)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeServices.ts#L42)
 
 Since v4.0.0

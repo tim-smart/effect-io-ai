@@ -11,6 +11,6 @@ Used by the client to get a prompt provided by the server.
 declare class GetPrompt
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L1245)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L1248)
 
 Since v4.0.0

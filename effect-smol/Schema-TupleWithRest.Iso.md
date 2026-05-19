@@ -22,6 +22,6 @@ type Iso<T, Rest> = Rest extends
     T
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L3373)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L3469)
 
 Since v4.0.0

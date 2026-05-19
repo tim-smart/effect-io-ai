@@ -8,10 +8,10 @@ Provides a multiplication operation on `number`s.
 **Example** (Multiplying numbers)
 
 ```ts
-import { multiply } from "effect/Number"
+import { Number } from "effect"
 import * as assert from "node:assert"
 
-assert.deepStrictEqual(multiply(2, 3), 6)
+assert.deepStrictEqual(Number.multiply(2, 3), 6)
 ```
 
 **Signature**

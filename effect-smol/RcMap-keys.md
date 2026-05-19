@@ -38,4 +38,4 @@ declare const keys: <K, A, E>(self: RcMap<K, A, E>) => Effect.Effect<Iterable<K>
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RcMap.ts#L401)
 
-Since v3.5.0
+Since v3.8.0

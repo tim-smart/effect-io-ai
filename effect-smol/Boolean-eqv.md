@@ -8,13 +8,13 @@ Combines two booleans using EQV (aka XNOR): `!xor(self, that)`.
 **Example** (Checking boolean equivalence)
 
 ```ts
-import { eqv } from "effect/Boolean"
+import { Boolean } from "effect"
 import * as assert from "node:assert"
 
-assert.deepStrictEqual(eqv(true, true), true)
-assert.deepStrictEqual(eqv(true, false), false)
-assert.deepStrictEqual(eqv(false, true), false)
-assert.deepStrictEqual(eqv(false, false), true)
+assert.deepStrictEqual(Boolean.eqv(true, true), true)
+assert.deepStrictEqual(Boolean.eqv(true, false), false)
+assert.deepStrictEqual(Boolean.eqv(false, true), false)
+assert.deepStrictEqual(Boolean.eqv(false, false), true)
 ```
 
 **Signature**

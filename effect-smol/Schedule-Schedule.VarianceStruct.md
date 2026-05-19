@@ -21,6 +21,6 @@ export interface VarianceStruct<out Output, in Input, out Error, out Env> {
   }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L283)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L282)
 
-Since v2.0.0
+Since v4.0.0

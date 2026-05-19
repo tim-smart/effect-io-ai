@@ -8,8 +8,7 @@ Filters out `None` values from a `HashMap` of `Options`s.
 **Example** (Compacting Option values)
 
 ```ts
-import * as HashMap from "effect/HashMap"
-import * as Option from "effect/Option"
+import { HashMap, Option } from "effect"
 
 const map1 = HashMap.make(
   ["a", Option.some(1)],
@@ -29,6 +28,6 @@ console.log(HashMap.has(map2, "b")) // false
 declare const compact: <K, A>(self: HashMap<K, Option<A>>) => HashMap<K, A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashMap.ts#L1193)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashMap.ts#L1184)
 
 Since v2.0.0

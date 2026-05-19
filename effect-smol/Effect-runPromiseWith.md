@@ -8,7 +8,7 @@ Executes an effect as a Promise with the provided services.
 **Example** (Usage)
 
 ```ts
-import { Effect, Context } from "effect"
+import { Context, Effect } from "effect"
 
 interface Config {
   apiUrl: string
@@ -34,6 +34,6 @@ Effect.runPromiseWith(context)(program).then(console.log)
 declare const runPromiseWith: <R>(context: Context.Context<R>) => <A, E>(effect: Effect<A, E, R>, options?: RunOptions | undefined) => Promise<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L8434)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L8340)
 
 Since v4.0.0

@@ -9,12 +9,6 @@ Creates a `Result` holding a `Failure` value.
 - The success type `A` defaults to `never`
 - Does not mutate input; allocates a new `Failure` wrapper
 
-**Previously Known As**
-
-This API replaces the following from Effect 3.x:
-
-- `Either.left`
-
 **Example** (Creating a failure)
 
 ```ts
@@ -37,6 +31,6 @@ console.log(Result.isFailure(result))
 declare const fail: <E>(left: E) => Result<never, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L361)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L343)
 
 Since v4.0.0

@@ -18,4 +18,4 @@ declare const make: <Key, A, E = never, R = never, ServiceMode extends "lookup" 
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ScopedCache.ts#L166)
 
-Since v4.0.0
+Since v2.0.0

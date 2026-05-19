@@ -8,7 +8,7 @@ Builds a layer into a scoped value.
 **Example** (Building a layer into a context)
 
 ```ts
-import { Effect, Layer, Context } from "effect"
+import { Context, Effect, Layer } from "effect"
 
 class Database extends Context.Service<Database, {
   readonly query: (sql: string) => Effect.Effect<string>

@@ -24,11 +24,11 @@ Decodes escaped characters in a reference token to recover the original token va
 **Example** (Unescaping special characters)
 
 ```ts
-import { unescapeToken } from "effect/JsonPointer"
+import { JsonPointer } from "effect"
 
-unescapeToken("a~1b") // "a/b"
-unescapeToken("c~0d") // "c~d"
-unescapeToken("path~1to~0key") // "path/to~key"
+JsonPointer.unescapeToken("a~1b") // "a/b"
+JsonPointer.unescapeToken("c~0d") // "c~d"
+JsonPointer.unescapeToken("path~1to~0key") // "path/to~key"
 ```
 
 ## See also
@@ -41,6 +41,6 @@ unescapeToken("path~1to~0key") // "path/to~key"
 declare const unescapeToken: (token: string) => string
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/JsonPointer.ts#L129)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/JsonPointer.ts#L131)
 
 Since v4.0.0

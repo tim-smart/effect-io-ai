@@ -20,6 +20,6 @@ export interface PersistedFile extends Part.Proto {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Multipart.ts#L150)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Multipart.ts#L151)
 
 Since v4.0.0

@@ -13,6 +13,6 @@ When `statusText` is omitted, the existing status text is preserved.
 declare const setStatus: { (status: number, statusText?: string | undefined): (self: HttpServerResponse) => HttpServerResponse; (self: HttpServerResponse, status: number, statusText?: string | undefined): HttpServerResponse; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpServerResponse.ts#L890)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpServerResponse.ts#L891)
 
 Since v4.0.0

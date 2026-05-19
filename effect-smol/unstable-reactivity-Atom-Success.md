@@ -11,6 +11,6 @@ Extracts the success value type from an atom whose value is an `AsyncResult`.
 type Success<T> = T extends Atom<AsyncResult.AsyncResult<infer A, infer _>> ? A : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Atom.ts#L111)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Atom.ts#L113)
 
 Since v4.0.0

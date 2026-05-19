@@ -47,4 +47,4 @@ declare const liftNullishOr: <A extends ReadonlyArray<unknown>, B>(f: (...a: A) 
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L966)
 
-Since v2.0.0
+Since v4.0.0

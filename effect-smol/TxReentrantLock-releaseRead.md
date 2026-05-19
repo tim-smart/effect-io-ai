@@ -27,4 +27,4 @@ declare const releaseRead: (self: TxReentrantLock) => Effect.Effect<number>
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxReentrantLock.ts#L239)
 
-Since v4.0.0
+Since v2.0.0

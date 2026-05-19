@@ -14,7 +14,7 @@ This works on any param structure by recursively finding the underlying
 **Example** (Adding parameter aliases)
 
 ```ts
-import * as Param from "effect/unstable/cli/Param"
+import { Param } from "effect/unstable/cli"
 
 // @internal - this module is not exported publicly
 

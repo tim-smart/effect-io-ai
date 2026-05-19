@@ -34,6 +34,6 @@ console.log(PrimaryKey.value(simpleKey)) // "simple-key-123"
 declare const value: (self: PrimaryKey) => string
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PrimaryKey.ts#L92)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PrimaryKey.ts#L93)
 
 Since v2.0.0

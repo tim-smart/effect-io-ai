@@ -44,6 +44,6 @@ const prompt = Prompt.fromResponseParts(responseParts)
 declare const fromResponseParts: (parts: ReadonlyArray<Response.AnyPart>) => Prompt
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L1944)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L1942)
 
 Since v4.0.0

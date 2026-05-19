@@ -22,6 +22,6 @@ type UrlBuilder<Api> = Api extends HttpApi.HttpApi<infer _ApiId, infer Groups> ?
   : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiClient.ts#L200)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiClient.ts#L199)
 
 Since v4.0.0

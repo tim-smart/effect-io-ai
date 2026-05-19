@@ -24,6 +24,6 @@ See also:
 declare const redact: (u: unknown) => unknown
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Redactable.ts#L172)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Redactable.ts#L173)
 
-Since v4.0.0
+Since v3.10.0

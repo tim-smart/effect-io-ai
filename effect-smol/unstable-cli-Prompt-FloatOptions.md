@@ -19,6 +19,6 @@ export interface FloatOptions extends IntegerOptions {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L322)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L310)
 
 Since v4.0.0

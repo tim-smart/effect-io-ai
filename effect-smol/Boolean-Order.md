@@ -9,7 +9,7 @@ In this ordering, `false` is considered less than `true`.
 **Example** (Comparing booleans)
 
 ```ts
-import * as Boolean from "effect/Boolean"
+import { Boolean } from "effect"
 
 console.log(Boolean.Order(false, true)) // -1 (false < true)
 console.log(Boolean.Order(true, false)) // 1 (true > false)

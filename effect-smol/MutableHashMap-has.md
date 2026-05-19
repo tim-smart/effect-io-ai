@@ -8,7 +8,7 @@ Checks if the MutableHashMap contains the specified key.
 **Example** (Checking for a key)
 
 ```ts
-import * as MutableHashMap from "effect/MutableHashMap"
+import { MutableHashMap } from "effect"
 
 const map = MutableHashMap.make(["key1", 42], ["key2", 100])
 
@@ -26,6 +26,6 @@ console.log(hasKey(map)) // true
 declare const has: { <K>(key: K): <V>(self: MutableHashMap<K, V>) => boolean; <K, V>(self: MutableHashMap<K, V>, key: K): boolean; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableHashMap.ts#L347)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableHashMap.ts#L346)
 
 Since v2.0.0

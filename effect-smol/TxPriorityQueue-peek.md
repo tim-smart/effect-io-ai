@@ -26,4 +26,4 @@ declare const peek: <A>(self: TxPriorityQueue<A>) => Effect.Effect<A>
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxPriorityQueue.ts#L249)
 
-Since v4.0.0
+Since v2.0.0

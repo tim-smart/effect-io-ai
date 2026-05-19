@@ -12,7 +12,7 @@ has a fiber, the previous fiber is interrupted unless `onlyIfMissing` is set.
 **Example** (Capturing a runtime)
 
 ```ts
-import { Effect, FiberMap, Context } from "effect"
+import { Context, Effect, FiberMap } from "effect"
 
 interface Users {
   readonly _: unique symbol

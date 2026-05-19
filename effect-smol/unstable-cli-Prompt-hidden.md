@@ -12,6 +12,6 @@ submitted value wrapped in `Redacted`.
 declare const hidden: (options: TextOptions) => Prompt<Redacted.Redacted>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L920)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L912)
 
 Since v4.0.0

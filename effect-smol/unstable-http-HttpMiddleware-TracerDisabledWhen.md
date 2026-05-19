@@ -11,6 +11,6 @@ Context reference for a predicate that disables server-side tracing for matching
 declare const TracerDisabledWhen: Context.Reference<Predicate<HttpServerRequest>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpMiddleware.ts#L114)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpMiddleware.ts#L115)
 
 Since v4.0.0

@@ -13,6 +13,6 @@ A `TimeZone` is either a fixed offset from UTC or a named IANA time zone.
 type TimeZone = TimeZone.Offset | TimeZone.Named
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L296)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L295)
 
 Since v3.6.0

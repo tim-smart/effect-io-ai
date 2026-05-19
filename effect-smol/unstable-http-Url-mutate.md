@@ -6,7 +6,7 @@ Module: `Url`<br />
 This function clones the original `URL` object and applies a callback to the
 clone, allowing multiple updates at once.
 
-**Example**
+**Example** (Mutating URL credentials)
 
 ```ts
 import { Url } from "effect/unstable/http"

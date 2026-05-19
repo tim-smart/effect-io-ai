@@ -29,6 +29,6 @@ const program = Effect.gen(function*() {
 declare const nextIntBetween: (min: number, max: number, options?: { readonly halfOpen?: boolean; }) => Effect.Effect<number>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Random.ts#L165)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Random.ts#L175)
 
-Since v4.0.0
+Since v2.0.0

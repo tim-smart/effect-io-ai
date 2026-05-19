@@ -11,6 +11,6 @@ Type-level brand identifier used by `asMultipart`.
 type MultipartTypeId = typeof MultipartTypeId
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiSchema.ts#L291)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiSchema.ts#L297)
 
 Since v4.0.0

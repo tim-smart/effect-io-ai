@@ -10,7 +10,7 @@ throw an unimplemented defect when called.
 **Example** (Mocking services for tests)
 
 ```ts
-import { Effect, Layer, Context } from "effect"
+import { Context, Effect, Layer } from "effect"
 
 class UserService extends Context.Service<UserService, {
   readonly config: { apiUrl: string }
@@ -52,6 +52,6 @@ const testProgram = Effect.gen(function*() {
 declare const mock: { <I, S extends object>(service: Context.Key<I, S>): (implementation: PartialEffectful<S>) => Layer<I>; <I, S extends object>(service: Context.Key<I, S>, implementation: Types.NoInfer<PartialEffectful<S>>): Layer<I>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L2002)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L1984)
 
-Since v4.0.0
+Since v3.17.0

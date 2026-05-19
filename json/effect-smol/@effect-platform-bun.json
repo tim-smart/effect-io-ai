@@ -27,7 +27,7 @@
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
-    "category": "Layers",
+    "category": "layers",
     "signature": "declare const layerHttpServer: Layer.Layer<BunServices | HttpServer | HttpPlatform | Etag.Generator, ServeError, ShardingConfig.ShardingConfig>",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunClusterHttp.ts#L77"
   },
@@ -43,7 +43,7 @@
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
-    "category": "Layers",
+    "category": "layers",
     "signature": "declare const layer: <const ClientOnly extends boolean = false, const Storage extends \"local\" | \"sql\" | \"byo\" = never>(options: { readonly transport: \"http\" | \"websocket\"; readonly serialization?: \"msgpack\" | \"ndjson\" | undefined; readonly clientOnly?: ClientOnly | undefined; readonly storage?: Storage | undefined; readonly runnerHealth?: \"ping\" | \"k8s\" | undefined; readonly runnerHealthK8s?: { readonly namespace?: string | undefined; readonly labelSelector?: string | undefined; } | undefined; readonly shardingConfig?: Partial<ShardingConfig.ShardingConfig[\"Service\"]> | undefined; }) => ClientOnly extends true ? Layer.Layer<Sharding | Runners.Runners | (\"byo\" extends Storage ? never : MessageStorage.MessageStorage), Config.ConfigError, \"local\" extends Storage ? never : \"byo\" extends Storage ? (MessageStorage.MessageStorage | RunnerStorage.RunnerStorage) : SqlClient> : Layer.Layer<Sharding | Runners.Runners | MessageStorage.MessageStorage, ServeError | Config.ConfigError, \"local\" extends Storage ? never : \"byo\" extends Storage ? (MessageStorage.MessageStorage | RunnerStorage.RunnerStorage) : SqlClient>",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunClusterHttp.ts#L99"
   },
@@ -58,7 +58,7 @@
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
-    "category": "Re-exports",
+    "category": "re-exports",
     "signature": "declare const layerK8sHttpClient: Layer.Layer<K8sHttpClient, never, never>",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunClusterHttp.ts#L68"
   },
@@ -74,7 +74,7 @@
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
-    "category": "Layers",
+    "category": "layers",
     "signature": "declare const layerK8sHttpClient: Layer.Layer<K8sHttpClient.K8sHttpClient, never, never>",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunClusterSocket.ts#L155"
   },
@@ -90,7 +90,7 @@
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
-    "category": "Layers",
+    "category": "layers",
     "signature": "declare const layer: <const ClientOnly extends boolean = false, const Storage extends \"local\" | \"sql\" | \"byo\" = never>(options?: { readonly serialization?: \"msgpack\" | \"ndjson\" | undefined; readonly clientOnly?: ClientOnly | undefined; readonly storage?: Storage | undefined; readonly runnerHealth?: \"ping\" | \"k8s\" | undefined; readonly runnerHealthK8s?: { readonly namespace?: string | undefined; readonly labelSelector?: string | undefined; } | undefined; readonly shardingConfig?: Partial<ShardingConfig.ShardingConfig[\"Service\"]> | undefined; }) => ClientOnly extends true ? Layer.Layer<Sharding | Runners.Runners | (\"byo\" extends Storage ? never : MessageStorage.MessageStorage), Config.ConfigError, \"local\" extends Storage ? never : \"byo\" extends Storage ? (MessageStorage.MessageStorage | RunnerStorage.RunnerStorage) : SqlClient> : Layer.Layer<Sharding | Runners.Runners | (\"byo\" extends Storage ? never : MessageStorage.MessageStorage), SocketServer.SocketServerError | Config.ConfigError, \"local\" extends Storage ? never : \"byo\" extends Storage ? (MessageStorage.MessageStorage | RunnerStorage.RunnerStorage) : SqlClient>",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunClusterSocket.ts#L79"
   },
@@ -105,7 +105,7 @@
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
-    "category": "Re-exports",
+    "category": "re-exports",
     "signature": "declare const layerClientProtocol: Layer.Layer<Runners.RpcClientProtocol, never, RpcSerialization.RpcSerialization>",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunClusterSocket.ts#L65"
   },
@@ -120,9 +120,25 @@
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
-    "category": "Re-exports",
+    "category": "re-exports",
     "signature": "declare const layerSocketServer: Layer.Layer<SocketServer.SocketServer, SocketServer.SocketServerError, ShardingConfig.ShardingConfig>",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunClusterSocket.ts#L70"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "BunCrypto.ts",
+      "path": "src/BunCrypto.ts"
+    },
+    "project": "@effect/platform-bun",
+    "name": "layer",
+    "description": "A layer that provides the Bun Crypto service implementation.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "layers",
+    "signature": "declare const layer: Layer.Layer<Crypto.Crypto, never, never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunCrypto.ts#L16"
   },
   {
     "_tag": "Constant",
@@ -136,7 +152,7 @@
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
-    "category": "layer",
+    "category": "layers",
     "signature": "declare const layer: Layer.Layer<FileSystem, never, never>",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunFileSystem.ts#L36"
   },
@@ -168,7 +184,7 @@
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
-    "category": "Layers",
+    "category": "layers",
     "signature": "declare const layer: Layer.Layer<Platform.HttpPlatform, never, never>",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunHttpPlatform.ts#L61"
   },
@@ -184,7 +200,7 @@
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
-    "category": "Constructors",
+    "category": "constructors",
     "signature": "declare const make: <R extends string>(options: ServeOptions<R> & { readonly disablePreemptiveShutdown?: boolean | undefined; readonly gracefulShutdownTimeout?: Duration.Input | undefined; }) => Effect.Effect<{ readonly serve: { <E, R>(effect: Effect.Effect<ServerResponse.HttpServerResponse, E, R>): Effect.Effect<void, never, Exclude<R, ServerRequest.HttpServerRequest> | Scope.Scope>; <E, R, App extends Effect.Effect<ServerResponse.HttpServerResponse, any, any>>(effect: Effect.Effect<ServerResponse.HttpServerResponse, E, R>, middleware: HttpMiddleware.Applied<App, E, R>): Effect.Effect<void, never, Exclude<R, ServerRequest.HttpServerRequest> | Scope.Scope>; }; readonly address: Server.Address; }, never, Scope.Scope>",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunHttpServer.ts#L96"
   },
@@ -200,7 +216,7 @@
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
-    "category": "Layers",
+    "category": "layers",
     "signature": "declare const layerServer: <R extends string>(options: ServeOptions<R> & { readonly disablePreemptiveShutdown?: boolean | undefined; readonly gracefulShutdownTimeout?: Duration.Input | undefined; }) => Layer.Layer<Server.HttpServer>",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunHttpServer.ts#L253"
   },
@@ -216,7 +232,7 @@
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
-    "category": "Layers",
+    "category": "layers",
     "signature": "declare const layerHttpServices: Layer.Layer<BunServices.BunServices | HttpPlatform | Etag.Generator, never, never>",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunHttpServer.ts#L266"
   },
@@ -232,7 +248,7 @@
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
-    "category": "Layers",
+    "category": "layers",
     "signature": "declare const layerTest: Layer.Layer<FileSystem.FileSystem | Path.Path | Server.HttpServer | HttpPlatform | Etag.Generator | HttpClient, never, never>",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunHttpServer.ts#L300"
   },
@@ -248,7 +264,7 @@
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
-    "category": "Layers",
+    "category": "layers",
     "signature": "declare const layer: <R extends string>(options: ServeOptions<R> & { readonly disablePreemptiveShutdown?: boolean | undefined; readonly gracefulShutdownTimeout?: Duration.Input | undefined; }) => Layer.Layer<Server.HttpServer | HttpPlatform | Etag.Generator | BunServices.BunServices>",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunHttpServer.ts#L282"
   },
@@ -264,7 +280,7 @@
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
-    "category": "Layers",
+    "category": "layers",
     "signature": "declare const layerConfig: <R extends string>(options: Config.Wrap<ServeOptions<R> & { readonly disablePreemptiveShutdown?: boolean | undefined; readonly gracefulShutdownTimeout?: Duration.Input | undefined; }>) => Layer.Layer<Server.HttpServer | HttpPlatform | FileSystem.FileSystem | Etag.Generator | Path.Path, ConfigError>",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunHttpServer.ts#L315"
   },
@@ -312,7 +328,7 @@
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
-    "category": "Constructors",
+    "category": "constructors",
     "signature": "declare const stream: (source: Request) => Stream.Stream<Multipart.Part, Multipart.MultipartError>",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunMultipart.ts#L37"
   },
@@ -328,7 +344,7 @@
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
-    "category": "Constructors",
+    "category": "constructors",
     "signature": "declare const persisted: (source: Request) => Effect.Effect<Multipart.Persisted, Multipart.MultipartError, FileSystem | Path | Scope.Scope>",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunMultipart.ts#L58"
   },
@@ -344,7 +360,7 @@
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
-    "category": "layer",
+    "category": "layers",
     "signature": "declare const layer: Layer.Layer<Path, never, never>",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunPath.ts#L31"
   },
@@ -360,7 +376,7 @@
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
-    "category": "layer",
+    "category": "layers",
     "signature": "declare const layerPosix: Layer.Layer<Path, never, never>",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunPath.ts#L39"
   },
@@ -376,7 +392,7 @@
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
-    "category": "layer",
+    "category": "layers",
     "signature": "declare const layerWin32: Layer.Layer<Path, never, never>",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunPath.ts#L47"
   },
@@ -392,7 +408,7 @@
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
-    "category": "Service",
+    "category": "services",
     "signature": "declare class BunRedis",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunRedis.ts#L43"
   },
@@ -408,7 +424,7 @@
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
-    "category": "Layers",
+    "category": "layers",
     "signature": "declare const layer: (options?: ({ readonly url?: string; } & RedisOptions) | undefined) => Layer.Layer<Redis.Redis | BunRedis>",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunRedis.ts#L87"
   },
@@ -424,7 +440,7 @@
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
-    "category": "Layers",
+    "category": "layers",
     "signature": "declare const layerConfig: (options: Config.Wrap<{ readonly url?: string; } & RedisOptions>) => Layer.Layer<Redis.Redis | BunRedis, Config.ConfigError>",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunRedis.ts#L97"
   },
@@ -440,7 +456,7 @@
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
-    "category": "Run main",
+    "category": "running",
     "signature": "declare const runMain: { (options?: { readonly disableErrorReporting?: boolean | undefined; readonly teardown?: Teardown | undefined; }): <E, A>(effect: Effect<A, E>) => void; <E, A>(effect: Effect<A, E>, options?: { readonly disableErrorReporting?: boolean | undefined; readonly teardown?: Teardown | undefined; }): void; }",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunRuntime.ts#L51"
   },
@@ -456,9 +472,9 @@
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
-    "category": "layer",
+    "category": "layers",
     "signature": "declare const layer: Layer.Layer<BunServices, never, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunServices.ts#L52"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunServices.ts#L54"
   },
   {
     "_tag": "TypeAlias",
@@ -473,8 +489,8 @@
     "examples": [],
     "since": "4.0.0",
     "category": "models",
-    "signature": "type BunServices = ChildProcessSpawner | FileSystem | Path | Terminal | Stdio",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunServices.ts#L43"
+    "signature": "type BunServices = ChildProcessSpawner | Crypto | FileSystem | Path | Terminal | Stdio",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunServices.ts#L45"
   },
   {
     "_tag": "Export",
@@ -568,7 +584,7 @@
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
-    "category": "layer",
+    "category": "layers",
     "signature": "declare const layer: Layer.Layer<Stdio, never, never>",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunStdio.ts#L33"
   },
@@ -584,9 +600,9 @@
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
-    "category": null,
+    "category": "constructors",
     "signature": "declare const fromReadableStream: <A, E>(options: { readonly evaluate: LazyArg<ReadableStream<A>>; readonly onError: (error: unknown) => E; readonly releaseLockOnEnd?: boolean | undefined; }) => Stream.Stream<A, E>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunStream.ts#L45"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunStream.ts#L46"
   },
   {
     "_tag": "Export",
@@ -714,7 +730,7 @@
     "since": "4.0.0",
     "category": null,
     "signature": "export * as BunClusterHttp from \"./BunClusterHttp.ts\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/index.ts#L17"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/index.ts#L50"
   },
   {
     "_tag": "Export",
@@ -730,7 +746,23 @@
     "since": "4.0.0",
     "category": null,
     "signature": "export * as BunClusterSocket from \"./BunClusterSocket.ts\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/index.ts#L22"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/index.ts#L90"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/platform-bun",
+    "name": "BunCrypto",
+    "description": "Re-exports all named exports from the \"./BunCrypto.ts\" module as `BunCrypto`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as BunCrypto from \"./BunCrypto.ts\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/index.ts#L97"
   },
   {
     "_tag": "Export",
@@ -746,7 +778,7 @@
     "since": "4.0.0",
     "category": null,
     "signature": "export * as BunFileSystem from \"./BunFileSystem.ts\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/index.ts#L27"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/index.ts#L124"
   },
   {
     "_tag": "Export",
@@ -762,7 +794,7 @@
     "since": "4.0.0",
     "category": null,
     "signature": "export * as BunHttpClient from \"./BunHttpClient.ts\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/index.ts#L32"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/index.ts#L129"
   },
   {
     "_tag": "Export",
@@ -778,7 +810,7 @@
     "since": "4.0.0",
     "category": null,
     "signature": "export * as BunHttpPlatform from \"./BunHttpPlatform.ts\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/index.ts#L37"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/index.ts#L156"
   },
   {
     "_tag": "Export",
@@ -794,7 +826,7 @@
     "since": "4.0.0",
     "category": null,
     "signature": "export * as BunHttpServer from \"./BunHttpServer.ts\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/index.ts#L42"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/index.ts#L192"
   },
   {
     "_tag": "Export",
@@ -810,7 +842,7 @@
     "since": "4.0.0",
     "category": null,
     "signature": "export * as BunHttpServerRequest from \"./BunHttpServerRequest.ts\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/index.ts#L47"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/index.ts#L219"
   },
   {
     "_tag": "Export",
@@ -826,7 +858,7 @@
     "since": "4.0.0",
     "category": null,
     "signature": "export * as BunMultipart from \"./BunMultipart.ts\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/index.ts#L52"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/index.ts#L243"
   },
   {
     "_tag": "Export",
@@ -842,7 +874,7 @@
     "since": "4.0.0",
     "category": null,
     "signature": "export * as BunPath from \"./BunPath.ts\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/index.ts#L57"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/index.ts#L265"
   },
   {
     "_tag": "Export",
@@ -858,7 +890,7 @@
     "since": "4.0.0",
     "category": null,
     "signature": "export * as BunRedis from \"./BunRedis.ts\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/index.ts#L62"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/index.ts#L294"
   },
   {
     "_tag": "Export",
@@ -874,7 +906,7 @@
     "since": "4.0.0",
     "category": null,
     "signature": "export * as BunRuntime from \"./BunRuntime.ts\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/index.ts#L67"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/index.ts#L315"
   },
   {
     "_tag": "Export",
@@ -890,7 +922,7 @@
     "since": "4.0.0",
     "category": null,
     "signature": "export * as BunServices from \"./BunServices.ts\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/index.ts#L72"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/index.ts#L340"
   },
   {
     "_tag": "Export",
@@ -906,7 +938,7 @@
     "since": "4.0.0",
     "category": null,
     "signature": "export * as BunSink from \"./BunSink.ts\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/index.ts#L77"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/index.ts#L345"
   },
   {
     "_tag": "Export",
@@ -922,7 +954,7 @@
     "since": "4.0.0",
     "category": null,
     "signature": "export * as BunSocket from \"./BunSocket.ts\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/index.ts#L82"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/index.ts#L369"
   },
   {
     "_tag": "Export",
@@ -938,7 +970,7 @@
     "since": "4.0.0",
     "category": null,
     "signature": "export * as BunSocketServer from \"./BunSocketServer.ts\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/index.ts#L87"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/index.ts#L374"
   },
   {
     "_tag": "Export",
@@ -954,7 +986,7 @@
     "since": "4.0.0",
     "category": null,
     "signature": "export * as BunStdio from \"./BunStdio.ts\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/index.ts#L92"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/index.ts#L397"
   },
   {
     "_tag": "Export",
@@ -970,7 +1002,7 @@
     "since": "4.0.0",
     "category": null,
     "signature": "export * as BunStream from \"./BunStream.ts\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/index.ts#L97"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/index.ts#L423"
   },
   {
     "_tag": "Export",
@@ -986,7 +1018,7 @@
     "since": "4.0.0",
     "category": null,
     "signature": "export * as BunTerminal from \"./BunTerminal.ts\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/index.ts#L102"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/index.ts#L442"
   },
   {
     "_tag": "Export",
@@ -1002,7 +1034,7 @@
     "since": "4.0.0",
     "category": null,
     "signature": "export * as BunWorker from \"./BunWorker.ts\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/index.ts#L107"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/index.ts#L465"
   },
   {
     "_tag": "Export",
@@ -1018,6 +1050,6 @@
     "since": "4.0.0",
     "category": null,
     "signature": "export * as BunWorkerRunner from \"./BunWorkerRunner.ts\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/index.ts#L112"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/index.ts#L488"
   }
 ]

@@ -29,6 +29,6 @@ See also: `Refinement.Out`, `Predicate.In`
 type In<T> = [T] extends [Refinement<infer _A, infer _>] ? _A : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L272)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L270)
 
 Since v3.6.0

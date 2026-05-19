@@ -28,4 +28,4 @@ declare const acquireRead: (self: TxReentrantLock) => Effect.Effect<number>
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxReentrantLock.ts#L137)
 
-Since v4.0.0
+Since v2.0.0

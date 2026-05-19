@@ -28,6 +28,6 @@ const program = Effect.gen(function*() {
 declare const size: <V>(self: TxHashSet<V>) => Effect.Effect<number>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashSet.ts#L472)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashSet.ts#L469)
 
 Since v2.0.0

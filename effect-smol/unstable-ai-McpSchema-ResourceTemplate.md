@@ -11,6 +11,6 @@ A template description for resources available on the server.
 declare class ResourceTemplate
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L782)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L785)
 
 Since v4.0.0

@@ -8,8 +8,7 @@ Insert multiple entries in the `Trie` at once.
 **Example** (Inserting multiple entries)
 
 ```ts
-import * as Equal from "effect/Equal"
-import * as Trie from "effect/Trie"
+import { Equal, Trie } from "effect"
 import * as assert from "node:assert"
 
 const trie = Trie.empty<number>().pipe(
@@ -37,6 +36,6 @@ assert.equal(
 declare const insertMany: { <V>(iter: Iterable<[string, V]>): (self: Trie<V>) => Trie<V>; <V>(self: Trie<V>, iter: Iterable<[string, V]>): Trie<V>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Trie.ts#L955)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Trie.ts#L941)
 
 Since v2.0.0

@@ -19,17 +19,10 @@ passed to it. The value from the previous effect remains available for the
 next part of the chain. Note that if the side effect fails, the entire chain
 will fail too.
 
-**Previously Known As**
-
-This API replaces the following from Effect 3.x:
-
-- `Effect.zipLeft`
-
 **Example** (Logging a step in a pipeline)
 
 ```ts
-import { Data, Effect, pipe } from "effect"
-import { Console } from "effect"
+import { Console, Data, Effect, pipe } from "effect"
 
 class DiscountRateError extends Data.TaggedError("DiscountRateError")<{}> {}
 
@@ -65,6 +58,6 @@ Effect.runPromise(finalAmount).then(console.log)
 declare const tap: { <A, B, E2, R2>(f: (a: NoInfer<A>) => Effect<B, E2, R2>): <E, R>(self: Effect<A, E, R>) => Effect<A, E | E2, R | R2>; <B, E2, R2>(f: Effect<B, E2, R2>): <A, E, R>(self: Effect<A, E, R>) => Effect<A, E | E2, R | R2>; <A, E, R, B, E2, R2>(self: Effect<A, E, R>, f: (a: NoInfer<A>) => Effect<B, E2, R2>): Effect<A, E | E2, R | R2>; <A, E, R, B, E2, R2>(self: Effect<A, E, R>, f: Effect<B, E2, R2>): Effect<A, E | E2, R | R2>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L2034)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L2009)
 
 Since v2.0.0

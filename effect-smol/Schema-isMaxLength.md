@@ -23,6 +23,6 @@ length.
 declare const isMaxLength: (maxLength: number, annotations?: Annotations.Filter) => AST.Filter<{ readonly length: number; }>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L6829)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L6979)
 
 Since v4.0.0

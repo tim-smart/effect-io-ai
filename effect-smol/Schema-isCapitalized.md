@@ -16,6 +16,6 @@ as a digit, punctuation mark, or whitespace, also pass.
 declare const isCapitalized: (annotations?: Annotations.Filter) => AST.Filter<string>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L5802)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L5951)
 
 Since v4.0.0

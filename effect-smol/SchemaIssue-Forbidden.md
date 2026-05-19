@@ -50,6 +50,6 @@ declare class Forbidden { constructor(
   ) }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaIssue.ts#L675)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaIssue.ts#L676)
 
-Since v4.0.0
+Since v3.10.0

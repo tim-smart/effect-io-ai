@@ -27,4 +27,4 @@ declare const getAndSet: { <A>(value: A): (self: TxSubscriptionRef<A>) => Effect
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxSubscriptionRef.ts#L253)
 
-Since v4.0.0
+Since v3.10.0

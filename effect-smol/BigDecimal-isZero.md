@@ -8,11 +8,11 @@ Checks if a given `BigDecimal` is `0`.
 **Example** (Checking zero decimals)
 
 ```ts
-import { fromStringUnsafe, isZero } from "effect/BigDecimal"
+import { BigDecimal } from "effect"
 import * as assert from "node:assert"
 
-assert.deepStrictEqual(isZero(fromStringUnsafe("0")), true)
-assert.deepStrictEqual(isZero(fromStringUnsafe("1")), false)
+assert.deepStrictEqual(BigDecimal.isZero(BigDecimal.fromStringUnsafe("0")), true)
+assert.deepStrictEqual(BigDecimal.isZero(BigDecimal.fromStringUnsafe("1")), false)
 ```
 
 **Signature**

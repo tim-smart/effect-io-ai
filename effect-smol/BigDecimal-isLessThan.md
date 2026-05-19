@@ -8,19 +8,19 @@ Returns `true` if the first argument is less than the second, otherwise `false`.
 **Example** (Checking less-than comparisons)
 
 ```ts
-import { fromStringUnsafe, isLessThan } from "effect/BigDecimal"
+import { BigDecimal } from "effect"
 import * as assert from "node:assert"
 
 assert.deepStrictEqual(
-  isLessThan(fromStringUnsafe("2"), fromStringUnsafe("3")),
+  BigDecimal.isLessThan(BigDecimal.fromStringUnsafe("2"), BigDecimal.fromStringUnsafe("3")),
   true
 )
 assert.deepStrictEqual(
-  isLessThan(fromStringUnsafe("3"), fromStringUnsafe("3")),
+  BigDecimal.isLessThan(BigDecimal.fromStringUnsafe("3"), BigDecimal.fromStringUnsafe("3")),
   false
 )
 assert.deepStrictEqual(
-  isLessThan(fromStringUnsafe("4"), fromStringUnsafe("3")),
+  BigDecimal.isLessThan(BigDecimal.fromStringUnsafe("4"), BigDecimal.fromStringUnsafe("3")),
   false
 )
 ```
@@ -33,4 +33,4 @@ declare const isLessThan: { (that: BigDecimal): (self: BigDecimal) => boolean; (
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigDecimal.ts#L646)
 
-Since v2.0.0
+Since v4.0.0

@@ -14,6 +14,6 @@ call the method or verify that it returns a string.
 declare const isPrimaryKey: (u: unknown) => u is PrimaryKey
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PrimaryKey.ts#L61)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PrimaryKey.ts#L62)
 
-Since v2.0.0
+Since v4.0.0

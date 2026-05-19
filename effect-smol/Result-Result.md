@@ -11,12 +11,6 @@ A value that is either `Success<A, E>` or `Failure<A, E>`.
 
 `E` defaults to `never`, so `Result<number>` means a result that cannot fail.
 
-**Previously Known As**
-
-This API replaces the following from Effect 3.x:
-
-- `Either`
-
 **Example** (Creating and matching a Result)
 
 ```ts
@@ -45,6 +39,6 @@ console.log(message)
 type Result<A, E> = Success<A, E> | Failure<A, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L127)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L121)
 
 Since v4.0.0

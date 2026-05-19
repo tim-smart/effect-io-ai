@@ -22,7 +22,7 @@ Behavior:
 **Example** (Flatten object to bracket paths)
 
 ```ts
-import { SchemaGetter, Predicate } from "effect"
+import { Predicate, SchemaGetter } from "effect"
 
 const collectStrings = SchemaGetter.collectBracketPathEntries(Predicate.isString)
 const entries = collectStrings({ user: { name: "Alice", tags: ["admin", "editor"] } })

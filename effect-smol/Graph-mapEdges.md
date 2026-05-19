@@ -29,6 +29,6 @@ console.log(edgeData) // Option.some(new Graph.Edge({ source: 0, target: 1, data
 declare const mapEdges: <N, E, T extends Kind = "directed">(mutable: MutableGraph<N, E, T>, f: (data: E) => E) => void
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Graph.ts#L950)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Graph.ts#L949)
 
-Since v4.0.0
+Since v3.18.0

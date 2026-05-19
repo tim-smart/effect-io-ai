@@ -13,6 +13,6 @@ A part is either a text `Field` or a streamed `File`.
 type Part = Field | File
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Multipart.ts#L60)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Multipart.ts#L61)
 
 Since v4.0.0

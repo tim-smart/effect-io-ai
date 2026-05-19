@@ -8,7 +8,7 @@ Creates the union of two HashSets.
 **Example** (Combining HashSets)
 
 ```ts
-import * as HashSet from "effect/HashSet"
+import { HashSet } from "effect"
 
 const set1 = HashSet.make("a", "b")
 const set2 = HashSet.make("b", "c")
@@ -24,6 +24,6 @@ console.log(HashSet.size(combined)) // 3
 declare const union: { <V1>(that: HashSet<V1>): <V0>(self: HashSet<V0>) => HashSet<V1 | V0>; <V0, V1>(self: HashSet<V0>, that: HashSet<V1>): HashSet<V0 | V1>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashSet.ts#L395)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashSet.ts#L393)
 
 Since v2.0.0

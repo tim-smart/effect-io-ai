@@ -54,4 +54,4 @@ declare const fromEnv: (options?: { readonly env?: Record<string, string> | unde
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ConfigProvider.ts#L804)
 
-Since v4.0.0
+Since v2.0.0

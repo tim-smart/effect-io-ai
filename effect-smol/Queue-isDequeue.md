@@ -13,4 +13,4 @@ declare const isDequeue: <A = unknown, E = unknown>(u: unknown) => u is Dequeue<
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Queue.ts#L102)
 
-Since v4.0.0
+Since v2.0.0

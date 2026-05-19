@@ -15,8 +15,7 @@ cases share a common prefix.
 **Example** (Matching tag prefixes)
 
 ```ts
-import { pipe } from "effect"
-import { Match } from "effect"
+import { Match, pipe } from "effect"
 
 const match = pipe(
   Match.type<{ _tag: "A" } | { _tag: "B" } | { _tag: "A.A" } | {}>(),
@@ -36,6 +35,6 @@ console.log(match({ _tag: "A.A" })) // 1
 declare const tagStartsWith: <R, P extends string, Ret, Fn extends (_: Extract<R, Record<"_tag", `${P}${string}`>>) => Ret>(pattern: P, f: Fn) => <I, F, A, Pr>(self: Matcher<I, F, R, A, Pr, Ret>) => Matcher<I, Types.AddWithout<F, Extract<R, Record<"_tag", `${P}${string}`>>>, Types.ApplyFilters<I, Types.AddWithout<F, Extract<R, Record<"_tag", `${P}${string}`>>>>, ReturnType<Fn> | A, Pr, Ret>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L946)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L945)
 
 Since v4.0.0

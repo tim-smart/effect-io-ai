@@ -8,7 +8,7 @@ Emits a sliding window of `n` elements.
 **Example** (Emitting sliding windows)
 
 ```ts
-import { Console, Effect, Stream, pipe } from "effect"
+import { Console, Effect, pipe, Stream } from "effect"
 
 Effect.gen(function*() {
   const result = yield* pipe(
@@ -27,6 +27,6 @@ Effect.gen(function*() {
 declare const sliding: { (chunkSize: number): <A, E, R>(self: Stream<A, E, R>) => Stream<Arr.NonEmptyReadonlyArray<A>, E, R>; <A, E, R>(self: Stream<A, E, R>, chunkSize: number): Stream<Arr.NonEmptyReadonlyArray<A>, E, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L6901)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L6774)
 
 Since v2.0.0

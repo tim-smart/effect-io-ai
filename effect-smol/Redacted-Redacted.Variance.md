@@ -18,6 +18,6 @@ export interface Variance<out A> {
   }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Redacted.ts#L76)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Redacted.ts#L75)
 
 Since v3.3.0

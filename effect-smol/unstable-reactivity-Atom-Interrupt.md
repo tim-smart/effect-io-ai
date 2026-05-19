@@ -11,6 +11,6 @@ Type of the `Interrupt` control symbol accepted by `AtomResultFn` writes.
 type Interrupt = typeof Interrupt
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Atom.ts#L1112)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Atom.ts#L1117)
 
 Since v4.0.0

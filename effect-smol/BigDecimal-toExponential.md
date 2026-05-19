@@ -8,10 +8,10 @@ Formats a given `BigDecimal` as a `string` in scientific notation.
 **Example** (Formatting decimals exponentially)
 
 ```ts
-import { make, toExponential } from "effect/BigDecimal"
+import { BigDecimal } from "effect"
 import * as assert from "node:assert"
 
-assert.deepStrictEqual(toExponential(make(123456n, -5)), "1.23456e+10")
+assert.deepStrictEqual(BigDecimal.toExponential(BigDecimal.make(123456n, -5)), "1.23456e+10")
 ```
 
 **Signature**
@@ -22,4 +22,4 @@ declare const toExponential: (n: BigDecimal) => string
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigDecimal.ts#L1314)
 
-Since v4.0.0
+Since v3.11.0

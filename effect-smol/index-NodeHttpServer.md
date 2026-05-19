@@ -11,6 +11,6 @@ Re-exports all named exports from the "./NodeHttpServer.ts" module as `NodeHttpS
 export * as NodeHttpServer from "./NodeHttpServer.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L52)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L226)
 
 Since v4.0.0

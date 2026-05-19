@@ -13,7 +13,7 @@ NOTE: the transaction retries on any change to transactional values (i.e. TxRef)
 declare const txRetry: Effect<never, never, Transaction>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L13919)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L13824)
 
 Since v4.0.0
 

@@ -13,7 +13,7 @@ newtype.
 **Example** (comparing newtypes)
 
 ```ts
-import { Newtype, Equivalence } from "effect"
+import { Equivalence, Newtype } from "effect"
 
 interface Label extends Newtype.Newtype<"Label", string> {}
 
@@ -34,6 +34,6 @@ eq(iso.set("a"), iso.set("b")) // false
 declare const makeEquivalence: <N extends Newtype.Any>(equivalence: Equivalence.Equivalence<Newtype.Carrier<N>>) => Equivalence.Equivalence<N>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Newtype.ts#L227)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Newtype.ts#L234)
 
 Since v4.0.0

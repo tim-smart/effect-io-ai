@@ -12,8 +12,7 @@ custom data types that display meaningful information during development.
 **Example** (Implementing inspectable objects)
 
 ```ts
-import { Inspectable } from "effect"
-import { format } from "effect/Formatter"
+import { Formatter, Inspectable } from "effect"
 
 class Result implements Inspectable.Inspectable {
   constructor(
@@ -22,7 +21,7 @@ class Result implements Inspectable.Inspectable {
   ) {}
 
   toString(): string {
-    return format(this.toJSON())
+    return Formatter.format(this.toJSON())
   }
 
   toJSON() {
@@ -48,6 +47,6 @@ export interface Inspectable {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Inspectable.ts#L140)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Inspectable.ts#L138)
 
 Since v2.0.0

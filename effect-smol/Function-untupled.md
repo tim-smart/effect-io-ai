@@ -8,10 +8,10 @@ Inverse function of `tupled`
 **Example** (Converting a tuple to arguments)
 
 ```ts
-import { untupled } from "effect/Function"
+import { Function } from "effect"
 import * as assert from "node:assert"
 
-const getFirst = untupled(<A, B>(tuple: [A, B]): A => tuple[0])
+const getFirst = Function.untupled(<A, B>(tuple: [A, B]): A => tuple[0])
 
 assert.deepStrictEqual(getFirst(1, 2), 1)
 ```
@@ -22,6 +22,6 @@ assert.deepStrictEqual(getFirst(1, 2), 1)
 declare const untupled: <A extends ReadonlyArray<unknown>, B>(f: (a: A) => B) => (...a: A) => B
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Function.ts#L512)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Function.ts#L510)
 
 Since v2.0.0

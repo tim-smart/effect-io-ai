@@ -41,6 +41,6 @@ console.log(errors[0].message) // "boom"
 declare const prettyErrors: <E>(self: Cause<E>) => Array<Error>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L1033)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L1031)
 
-Since v4.0.0
+Since v3.2.0

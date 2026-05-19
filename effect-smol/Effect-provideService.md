@@ -19,7 +19,7 @@ effect can be run successfully without further requirements.
 **Example** (Usage)
 
 ```ts
-import { Console, Effect, Context } from "effect"
+import { Console, Context, Effect } from "effect"
 
 // Define a service for configuration
 const Config = Context.Service<{
@@ -53,6 +53,6 @@ Effect.runPromise(program).then(console.log)
 declare const provideService: { <I, S>(service: Context.Key<I, S>): { (implementation: S): <A, E, R>(self: Effect<A, E, R>) => Effect<A, E, Exclude<R, I>>; <A, E, R>(self: Effect<A, E, R>, implementation: S): Effect<A, E, Exclude<R, I>>; }; <I, S>(service: Context.Key<I, S>, implementation: S): <A, E, R>(self: Effect<A, E, R>) => Effect<A, E, Exclude<R, I>>; <A, E, R, I, S>(self: Effect<A, E, R>, service: Context.Key<I, S>, implementation: S): Effect<A, E, Exclude<R, I>>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L5774)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L5688)
 
 Since v2.0.0

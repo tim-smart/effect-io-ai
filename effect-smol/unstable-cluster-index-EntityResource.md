@@ -11,6 +11,6 @@ Re-exports all named exports from the "./EntityResource.ts" module as `EntityRes
 export * as EntityResource from "./EntityResource.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L65)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L330)
 
 Since v4.0.0

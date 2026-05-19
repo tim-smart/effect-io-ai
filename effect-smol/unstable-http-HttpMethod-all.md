@@ -11,6 +11,6 @@ Set containing every supported `HttpMethod` literal.
 declare const all: ReadonlySet<HttpMethod>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpMethod.ts#L74)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpMethod.ts#L75)
 
 Since v4.0.0

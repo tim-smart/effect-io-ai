@@ -11,6 +11,6 @@ Re-exports all named exports from the "./BunClusterHttp.ts" module as `BunCluste
 export * as BunClusterHttp from "./BunClusterHttp.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/index.ts#L17)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/index.ts#L50)
 
 Since v4.0.0

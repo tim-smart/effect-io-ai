@@ -11,10 +11,10 @@ Returns `1n` for an empty iterable.
 **Example** (Multiplying iterable bigints)
 
 ```ts
-import { multiplyAll } from "effect/BigInt"
+import { BigInt } from "effect"
 import * as assert from "node:assert"
 
-assert.deepStrictEqual(multiplyAll([2n, 3n, 4n]), 24n)
+assert.deepStrictEqual(BigInt.multiplyAll([2n, 3n, 4n]), 24n)
 ```
 
 **Signature**
@@ -23,6 +23,6 @@ assert.deepStrictEqual(multiplyAll([2n, 3n, 4n]), 24n)
 declare const multiplyAll: (collection: Iterable<bigint>) => bigint
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigInt.ts#L627)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigInt.ts#L625)
 
 Since v2.0.0

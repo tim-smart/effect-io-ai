@@ -34,6 +34,6 @@ assert.throws(
 declare const wipeUnsafe: <T>(self: Redacted<T>) => boolean
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Redacted.ts#L233)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Redacted.ts#L232)
 
-Since v3.3.0
+Since v4.0.0

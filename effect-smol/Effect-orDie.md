@@ -13,7 +13,7 @@ state and should not be handled as a recoverable error.
 
 **See**
 
-- `orDieWith` if you need to customize the error.
+- `mapError` to transform the error before converting it into a defect with `orDie`.
 
 **Example** (Propagating an Error as a Defect)
 
@@ -43,6 +43,6 @@ Effect.runPromise(program).catch(console.error)
 declare const orDie: <A, E, R>(self: Effect<A, E, R>) => Effect<A, never, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L3389)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L3321)
 
 Since v2.0.0

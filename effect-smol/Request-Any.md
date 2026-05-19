@@ -14,4 +14,4 @@ type Any = Request<any, any, any>
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Request.ts#L62)
 
-Since v2.0.0
+Since v4.0.0

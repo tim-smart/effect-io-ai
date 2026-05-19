@@ -16,7 +16,7 @@ Behavior:
 **Example** (Always-failing getter)
 
 ```ts
-import { SchemaGetter, SchemaIssue, Option } from "effect"
+import { Option, SchemaGetter, SchemaIssue } from "effect"
 
 const rejectAll = SchemaGetter.fail<string, string>(
   (oe) => new SchemaIssue.InvalidValue(oe, { message: "not allowed" })

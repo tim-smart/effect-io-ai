@@ -19,6 +19,6 @@ export interface ExternalsConfig {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Graph.ts#L4371)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Graph.ts#L4363)
 
-Since v4.0.0
+Since v3.18.0

@@ -40,4 +40,4 @@ export interface Reference<in out Shape> extends Service<never, Shape> {
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Context.ts#L301)
 
-Since v4.0.0
+Since v3.11.0

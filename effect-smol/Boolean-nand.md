@@ -8,13 +8,13 @@ Combines two boolean using NAND: `!(self && that)`.
 **Example** (Combining booleans with NAND)
 
 ```ts
-import { nand } from "effect/Boolean"
+import { Boolean } from "effect"
 import * as assert from "node:assert"
 
-assert.deepStrictEqual(nand(true, true), false)
-assert.deepStrictEqual(nand(true, false), true)
-assert.deepStrictEqual(nand(false, true), true)
-assert.deepStrictEqual(nand(false, false), true)
+assert.deepStrictEqual(Boolean.nand(true, true), false)
+assert.deepStrictEqual(Boolean.nand(true, false), true)
+assert.deepStrictEqual(Boolean.nand(false, true), true)
+assert.deepStrictEqual(Boolean.nand(false, false), true)
 ```
 
 **Signature**

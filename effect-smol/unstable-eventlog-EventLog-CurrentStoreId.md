@@ -14,6 +14,6 @@ Defaults to the branded store id `"default"`.
 declare class CurrentStoreId
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventLog.ts#L411)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventLog.ts#L410)
 
 Since v4.0.0

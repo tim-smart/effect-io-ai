@@ -11,6 +11,6 @@ Re-exports all named exports from the "./Sharding.ts" module as `Sharding`.
 export * as Sharding from "./Sharding.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L145)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L758)
 
 Since v4.0.0

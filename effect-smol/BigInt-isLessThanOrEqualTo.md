@@ -8,12 +8,12 @@ Returns a function that checks if a given `bigint` is less than or equal to the 
 **Example** (Checking less-than-or-equal comparisons)
 
 ```ts
-import { isLessThanOrEqualTo } from "effect/BigInt"
+import { BigInt } from "effect"
 import * as assert from "node:assert"
 
-assert.deepStrictEqual(isLessThanOrEqualTo(2n, 3n), true)
-assert.deepStrictEqual(isLessThanOrEqualTo(3n, 3n), true)
-assert.deepStrictEqual(isLessThanOrEqualTo(4n, 3n), false)
+assert.deepStrictEqual(BigInt.isLessThanOrEqualTo(2n, 3n), true)
+assert.deepStrictEqual(BigInt.isLessThanOrEqualTo(3n, 3n), true)
+assert.deepStrictEqual(BigInt.isLessThanOrEqualTo(4n, 3n), false)
 ```
 
 **Signature**
@@ -22,6 +22,6 @@ assert.deepStrictEqual(isLessThanOrEqualTo(4n, 3n), false)
 declare const isLessThanOrEqualTo: { (that: bigint): (self: bigint) => boolean; (self: bigint, that: bigint): boolean; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigInt.ts#L284)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigInt.ts#L282)
 
-Since v2.0.0
+Since v4.0.0

@@ -16,6 +16,6 @@ the encoded shape.
 type { [K in keyof Encoded_<F, EncodedOptionalKeys<F>, EncodedMutableKeys<F>>]: Encoded_<F, EncodedOptionalKeys<F>, EncodedMutableKeys<F>>[K]; } = Simplify<Encoded_<F>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L2468)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L2529)
 
-Since v4.0.0
+Since v3.10.0

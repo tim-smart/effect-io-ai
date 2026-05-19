@@ -26,16 +26,12 @@ const program = Effect.gen(function*() {
 })
 ```
 
-**Throws**
-
-Defect if permits is negative
-
 **Signature**
 
 ```ts
 declare const make: (permits: number) => Effect.Effect<TxSemaphore>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxSemaphore.ts#L124)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxSemaphore.ts#L120)
 
-Since v4.0.0
+Since v2.0.0

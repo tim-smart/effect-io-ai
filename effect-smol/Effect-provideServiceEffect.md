@@ -15,7 +15,7 @@ are included in the returned effect's error channel.
 **Example** (Usage)
 
 ```ts
-import { Console, Effect, Context } from "effect"
+import { Console, Context, Effect } from "effect"
 
 // Define a database connection service
 interface DatabaseConnection {
@@ -58,6 +58,6 @@ Effect.runPromise(withDatabase).then(console.log)
 declare const provideServiceEffect: { <I, S, E2, R2>(service: Context.Key<I, S>, acquire: Effect<S, E2, R2>): <A, E, R>(self: Effect<A, E, R>) => Effect<A, E | E2, Exclude<R, I> | R2>; <A, E, R, I, S, E2, R2>(self: Effect<A, E, R>, service: Context.Key<I, S>, acquire: Effect<S, E2, R2>): Effect<A, E | E2, Exclude<R, I> | R2>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L5845)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L5759)
 
 Since v2.0.0

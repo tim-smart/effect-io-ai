@@ -45,6 +45,6 @@ class UserId implements Equal.Equal {
 declare const symbol: "~effect/interfaces/Equal"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Equal.ts#L114)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Equal.ts#L115)
 
 Since v2.0.0

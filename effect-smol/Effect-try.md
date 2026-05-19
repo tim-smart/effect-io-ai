@@ -70,6 +70,6 @@ Effect.runPromiseExit(parseJSON("invalid json")).then(console.log)
 declare const try: <A, E>(options: { try: LazyArg<A>; catch: (error: unknown) => E; }) => Effect<A, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L1624)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L1612)
 
 Since v2.0.0

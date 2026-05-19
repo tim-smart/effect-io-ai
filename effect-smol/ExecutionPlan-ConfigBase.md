@@ -21,6 +21,6 @@ type ConfigBase = {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ExecutionPlan.ts#L169)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ExecutionPlan.ts#L171)
 
-Since v3.16.0
+Since v4.0.0

@@ -11,6 +11,6 @@ Asserts that `option` is `Some` and contains a value equal to `expected`.
 declare const assertSome: <A>(option: Option.Option<A>, expected: A, ..._: Array<never>) => asserts option is Option.Some<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/vitest/src/utils.ts#L240)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/vitest/src/utils.ts#L257)
 
 Since v4.0.0

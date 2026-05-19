@@ -26,6 +26,6 @@ See also: `isObjectOrArray`, `isReadonlyObject`
 declare const isObject: (input: unknown) => input is { [x: PropertyKey]: unknown; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L1018)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L1016)
 
-Since v4.0.0
+Since v2.0.0

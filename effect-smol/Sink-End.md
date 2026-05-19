@@ -14,6 +14,6 @@ non-empty array of leftover input that was pulled but not consumed.
 type End<A, L> = readonly [value: A, leftover?: NonEmptyReadonlyArray<L> | undefined]
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Sink.ts#L113)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Sink.ts#L110)
 
-Since v2.0.0
+Since v4.0.0

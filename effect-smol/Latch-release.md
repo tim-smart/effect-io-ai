@@ -15,6 +15,6 @@ waiters still suspend until the latch is opened or released again.
 declare const release: (self: Latch) => Effect.Effect<boolean>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Latch.ts#L196)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Latch.ts#L184)
 
 Since v4.0.0

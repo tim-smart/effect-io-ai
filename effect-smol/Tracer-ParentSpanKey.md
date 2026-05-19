@@ -22,4 +22,4 @@ declare const ParentSpanKey: "effect/Tracer/ParentSpan"
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tracer.ts#L175)
 
-Since v2.0.0
+Since v4.0.0

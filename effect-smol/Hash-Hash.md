@@ -33,6 +33,6 @@ export interface Hash {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Hash.ts#L47)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Hash.ts#L48)
 
 Since v2.0.0

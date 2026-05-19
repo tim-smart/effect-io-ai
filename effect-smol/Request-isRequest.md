@@ -32,6 +32,6 @@ console.log(Request.isRequest("not a request")) // false
 declare const isRequest: (u: unknown) => u is Request<unknown, unknown, unknown>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Request.ts#L243)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Request.ts#L244)
 
 Since v2.0.0

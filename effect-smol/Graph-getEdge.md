@@ -32,6 +32,6 @@ if (edgeData._tag === "Some") {
 declare const getEdge: { <E>(edgeIndex: EdgeIndex): <N, T extends Kind = "directed">(graph: Graph<N, E, T> | MutableGraph<N, E, T>) => Option.Option<Edge<E>>; <N, E, T extends Kind = "directed">(graph: Graph<N, E, T> | MutableGraph<N, E, T>, edgeIndex: EdgeIndex): Option.Option<Edge<E>>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Graph.ts#L1513)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Graph.ts#L1510)
 
-Since v4.0.0
+Since v3.18.0

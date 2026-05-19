@@ -10,7 +10,7 @@ The taken element is removed from the list.
 **Example** (Taking one element)
 
 ```ts
-import * as MutableList from "effect/MutableList"
+import { MutableList } from "effect"
 
 const list = MutableList.make<string>()
 MutableList.appendAll(list, ["first", "second", "third"])
@@ -54,6 +54,6 @@ function processNext<T>(
 declare const take: <A>(self: MutableList<A>) => Empty | A
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableList.ts#L798)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableList.ts#L795)
 
 Since v4.0.0

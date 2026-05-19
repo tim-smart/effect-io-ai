@@ -8,10 +8,10 @@ A thunk that returns always `void`.
 **Example** (Returning void from a thunk)
 
 ```ts
-import { constVoid } from "effect/Function"
+import { Function } from "effect"
 import * as assert from "node:assert"
 
-assert.deepStrictEqual(constVoid(), undefined)
+assert.deepStrictEqual(Function.constVoid(), undefined)
 ```
 
 **Signature**
@@ -20,6 +20,6 @@ assert.deepStrictEqual(constVoid(), undefined)
 declare const constVoid: LazyArg<void>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Function.ts#L404)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Function.ts#L402)
 
 Since v2.0.0

@@ -44,6 +44,6 @@ console.log(processValue(undefined))
 declare const defined: <A>(u: A) => u is A & {}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L1333)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L1332)
 
 Since v4.0.0

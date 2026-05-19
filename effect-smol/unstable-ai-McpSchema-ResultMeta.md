@@ -14,6 +14,6 @@ metadata attached to a result.
 declare class ResultMeta
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L174)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L177)
 
 Since v4.0.0

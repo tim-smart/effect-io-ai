@@ -12,6 +12,6 @@ string after validation.
 declare const text: (options: TextOptions) => Prompt<string>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L1174)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L1166)
 
 Since v4.0.0

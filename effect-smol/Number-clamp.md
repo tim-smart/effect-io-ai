@@ -12,7 +12,7 @@ Restricts the given `number` to be within the range specified by the `minimum` a
 **Example** (Clamping to a range)
 
 ```ts
-import * as Number from "effect/Number"
+import { Number } from "effect"
 import * as assert from "node:assert"
 
 const clamp = Number.clamp({ minimum: 1, maximum: 5 })

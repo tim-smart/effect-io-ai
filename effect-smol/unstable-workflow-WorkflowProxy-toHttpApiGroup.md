@@ -5,14 +5,12 @@ Module: `WorkflowProxy`<br />
 
 Derives an `HttpApiGroup` from a list of workflows.
 
+**Example** (Deriving HTTP API endpoints from workflows)
+
 ```ts
 import { Layer, Schema } from "effect"
 import { HttpApi, HttpApiBuilder } from "effect/unstable/httpapi"
-import {
-  Workflow,
-  WorkflowProxy,
-  WorkflowProxyServer
-} from "effect/unstable/workflow"
+import { Workflow, WorkflowProxy, WorkflowProxyServer } from "effect/unstable/workflow"
 
 const EmailWorkflow = Workflow.make({
   name: "EmailWorkflow",
@@ -46,6 +44,6 @@ const ApiLayer = HttpApiBuilder.layer(MyApi).pipe(
 declare const toHttpApiGroup: <const Name extends string, const Workflows extends NonEmptyReadonlyArray<Workflow.Any>>(name: Name, workflows: Workflows) => HttpApiGroup.HttpApiGroup<Name, ConvertHttpApi<Workflows[number]>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/WorkflowProxy.ts#L160)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/WorkflowProxy.ts#L157)
 
 Since v4.0.0

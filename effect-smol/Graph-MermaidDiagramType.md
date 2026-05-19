@@ -15,7 +15,7 @@ directed graphs use "flowchart", undirected graphs use "graph".
 **Example** (Selecting Mermaid diagram types)
 
 ```ts
-import type * as Graph from "effect/Graph"
+import type { Graph } from "effect"
 
 // Force flowchart format (even for undirected graphs)
 const flowchartOptions: Graph.MermaidOptions<string, string> = {
@@ -38,6 +38,6 @@ type MermaidDiagramType = | "flowchart" // For directed graphs
   | "graph"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Graph.ts#L1996)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Graph.ts#L1993)
 
-Since v4.0.0
+Since v3.18.0

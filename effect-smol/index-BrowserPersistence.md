@@ -11,6 +11,6 @@ Re-exports all named exports from the "./BrowserPersistence.ts" module as `Brows
 export * as BrowserPersistence from "./BrowserPersistence.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/index.ts#L20)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/index.ts#L84)
 
 Since v4.0.0

@@ -11,7 +11,7 @@ enabling efficient resource sharing across layer dependencies.
 **Example** (Sharing layer construction with a memo map)
 
 ```ts
-import { Effect, Layer, Context } from "effect"
+import { Context, Effect, Layer } from "effect"
 
 class Database extends Context.Service<Database, {
   readonly query: (sql: string) => Effect.Effect<string>

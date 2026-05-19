@@ -7,12 +7,6 @@ Zips two streams by applying a function to non-empty arrays of elements.
 
 The function returns output plus leftover arrays that carry into the next pull.
 
-**Previously Known As**
-
-This API replaces the following from Effect 3.x:
-
-- `Stream.zipWithChunks`
-
 **Example** (Zipping stream chunks)
 
 ```ts
@@ -43,6 +37,6 @@ Effect.runPromise(program)
 declare const zipWithArray: { <AR, ER, RR, AL, A>(right: Stream<AR, ER, RR>, f: (left: Arr.NonEmptyReadonlyArray<AL>, right: Arr.NonEmptyReadonlyArray<AR>) => readonly [output: Arr.NonEmptyReadonlyArray<A>, leftoverLeft: ReadonlyArray<AL>, leftoverRight: ReadonlyArray<AR>]): <EL, RL>(left: Stream<AL, EL, RL>) => Stream<A, EL | ER, RL | RR>; <AL, EL, RL, AR, ER, RR, A>(left: Stream<AL, EL, RL>, right: Stream<AR, ER, RR>, f: (left: Arr.NonEmptyReadonlyArray<AL>, right: Arr.NonEmptyReadonlyArray<AR>) => readonly [output: Arr.NonEmptyReadonlyArray<A>, leftoverLeft: ReadonlyArray<AL>, leftoverRight: ReadonlyArray<AR>]): Stream<A, EL | ER, RL | RR>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L3556)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L3466)
 
-Since v2.0.0
+Since v4.0.0
