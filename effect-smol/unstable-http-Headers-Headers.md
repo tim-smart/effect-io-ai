@@ -5,6 +5,8 @@ Module: `Headers`<br />
 
 Represents an immutable HTTP header collection keyed by lowercase header name.
 
+**Details**
+
 `Headers` values also support redaction through the `Redactable` protocol.
 
 **Signature**
@@ -16,6 +18,6 @@ export interface Headers extends Redactable.Redactable {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Headers.ts#L67)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Headers.ts#L69)
 
 Since v4.0.0

@@ -6,6 +6,8 @@ Module: `Record`<br />
 Creates a `Reducer` whose `combine` operation intersects two records and
 combines values for keys present in both records.
 
+**Gotchas**
+
 The reducer's `initialValue` is an empty record. Because intersection with
 an empty record is empty, the default `combineAll` folds from `{}` and
 therefore produces `{}` for ordinary non-empty inputs.
@@ -16,6 +18,6 @@ therefore produces `{}` for ordinary non-empty inputs.
 declare const makeReducerIntersection: <K extends string, A>(combiner: Combiner.Combiner<A>) => Reducer.Reducer<Record<K, A>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Record.ts#L1455)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Record.ts#L1464)
 
 Since v4.0.0

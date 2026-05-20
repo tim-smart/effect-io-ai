@@ -5,6 +5,8 @@ Module: `Match`<br />
 
 Defines primitive patterns that can match simple values.
 
+**Details**
+
 This type represents the building blocks of pattern matching: predicates,
 literal values, and safe refinements. These are the atomic patterns that
 can be composed into more complex matching logic.
@@ -15,6 +17,6 @@ can be composed into more complex matching logic.
 type PatternPrimitive<A> = PredicateA<A> | A | SafeRefinement<any>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L2070)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L2128)
 
 Since v4.0.0

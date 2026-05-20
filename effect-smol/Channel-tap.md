@@ -6,6 +6,8 @@ Module: `Channel`<br />
 Applies a side effect function to each output element of the channel,
 returning a new channel that emits the same elements.
 
+**Details**
+
 The `tap` function allows you to perform side effects (like logging or
 debugging) on each element emitted by a channel without modifying the
 elements themselves.
@@ -38,6 +40,6 @@ const tappedChannel = Channel.tap(
 declare const tap: { <OutElem, X, OutErr1, Env1>(f: (d: Types.NoInfer<OutElem>) => Effect.Effect<X, OutErr1, Env1>, options?: { readonly concurrency?: number | "unbounded" | undefined; }): <OutErr, OutDone, InElem, InErr, InDone, Env>(self: Channel<OutElem, OutErr, OutDone, InElem, InErr, InDone, Env>) => Channel<OutElem, OutErr1 | OutErr, OutDone, InElem, InErr, InDone, Env1 | Env>; <OutElem, OutErr, OutDone, InElem, InErr, InDone, Env, X, OutErr1, Env1>(self: Channel<OutElem, OutErr, OutDone, InElem, InErr, InDone, Env>, f: (d: Types.NoInfer<OutElem>) => Effect.Effect<X, OutErr1, Env1>, options?: { readonly concurrency?: number | "unbounded" | undefined; }): Channel<OutElem, OutErr | OutErr1, OutDone, InElem, InErr, InDone, Env | Env1>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L2138)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L2172)
 
 Since v4.0.0

@@ -5,6 +5,8 @@ Module: `Template`<br />
 
 Extracts the required context from an effect or stream interpolation.
 
+**Details**
+
 Plain values and `Option` interpolations contribute no context.
 
 **Signature**
@@ -17,6 +19,6 @@ type Context<A> = A extends infer T ? T extends Option.Option<infer _> ? never
     : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Template.ts#L82)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Template.ts#L90)
 
 Since v4.0.0

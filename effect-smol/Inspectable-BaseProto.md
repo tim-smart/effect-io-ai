@@ -5,6 +5,8 @@ Module: `Inspectable`<br />
 
 A base prototype object that implements the `Inspectable` interface.
 
+**Details**
+
 This object provides default implementations for the `Inspectable` methods.
 It can be used as a prototype for objects that want to be inspectable,
 or as a mixin to add inspection capabilities to existing objects.
@@ -35,6 +37,6 @@ MyClass.prototype.constructor = MyClass
 declare const BaseProto: Inspectable
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Inspectable.ts#L224)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Inspectable.ts#L233)
 
 Since v2.0.0

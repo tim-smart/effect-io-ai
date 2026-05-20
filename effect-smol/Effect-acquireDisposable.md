@@ -6,6 +6,8 @@ Module: `Effect`<br />
 This function constructs a scoped resource from an Effect that acquires a
 disposable value.
 
+**Details**
+
 The resource is automatically disposed when the surrounding
 `Scope` is closed, using `Symbol.dispose` for
 synchronous disposables or `Symbol.asyncDispose` for asynchronous
@@ -14,10 +16,6 @@ disposables.
 This is similar to `acquireRelease`, but uses the standard
 JavaScript disposal protocal instead of requiring an explicit release
 function.
-
-**See**
-
-- [JavaScript `using` declarations](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/using)
 
 **Example** (Acquiring a disposable resource)
 
@@ -39,12 +37,16 @@ const program = Effect.scoped(
 )
 ```
 
+**See**
+
+- [JavaScript `using` declarations](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/using)
+
 **Signature**
 
 ```ts
 declare const acquireDisposable: <A extends AsyncDisposable | Disposable, E, R>(acquire: Effect<A, E, R>) => Effect<A, E, R | Scope>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L6032)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L6100)
 
 Since v4.0.0

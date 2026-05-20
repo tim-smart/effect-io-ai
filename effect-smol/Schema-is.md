@@ -6,6 +6,8 @@ Module: `Schema`<br />
 Creates a type guard function that checks if a value conforms to a given
 schema.
 
+**Details**
+
 This function returns a predicate that performs a type-safe check, narrowing
 the type of the input value if the check passes. It's particularly useful for
 runtime type validation and TypeScript type narrowing.
@@ -34,6 +36,6 @@ if (isString(value)) {
 declare const is: <T>(schema: Schema<T>) => <I>(input: I) => input is I & T
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L1099)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L1136)
 
 Since v3.10.0

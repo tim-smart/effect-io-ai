@@ -5,6 +5,8 @@ Module: `Cause`<br />
 
 Reads the annotations from a single `Reason` as a `Context`.
 
+**When to use**
+
 Use this when you need tracing metadata (e.g. `StackTrace`) from
 a specific reason rather than the whole cause.
 
@@ -19,6 +21,6 @@ a specific reason rather than the whole cause.
 declare const reasonAnnotations: <E>(self: Reason<E>) => Context.Context<never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L1641)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L1715)
 
 Since v4.0.0

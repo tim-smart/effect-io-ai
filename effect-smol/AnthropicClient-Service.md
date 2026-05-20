@@ -3,26 +3,20 @@ Module: `AnthropicClient`<br />
 
 ## AnthropicClient.Service
 
-The Anthropic client service interface.
-
-Provides methods for interacting with Anthropic's Messages API, including
-both synchronous and streaming message creation.
+Represents the Anthropic client service with methods for the Messages API, including regular and streaming message
+creation.
 
 **Signature**
 
 ```ts
 export interface Service {
   /**
-   * The underlying generated Anthropic client providing access to all API
-   * endpoints.
+   * The underlying generated Anthropic client that exposes all API endpoints.
    */
   readonly client: Generated.AnthropicClient
 
   /**
-   * Low-level streaming request helper for custom SSE endpoints.
-   *
-   * Executes an HTTP request and decodes the Server-Sent Events response
-   * using the provided schema.
+   * Executes a low-level streaming HTTP request and decodes the Server-Sent Events response using the provided schema.
    */
   readonly streamRequest: <
     Type extends {
@@ -40,10 +34,7 @@ export interface Service {
   >
 
   /**
-   * Creates a message using the Anthropic Messages API.
-   *
-   * Sends a structured list of input messages and returns the model's
-   * generated response. All errors are mapped to the unified `AiError` type.
+   * Creates a message using the Anthropic Messages API and maps all errors to the unified `AiError` type.
    */
   readonly createMessage: (options: {
     readonly payload: typeof Generated.BetaCreateMessageParams.Encoded
@@ -54,12 +45,12 @@ export interface Service {
   >
 
   /**
-   * Creates a streaming message using the Anthropic Messages API.
+   * Creates a streaming message using the Anthropic Messages API and maps all errors to the unified `AiError` type.
    *
-   * Returns an Effect that yields the HTTP response and a stream of events
-   * as the model generates its response. The stream automatically terminates
-   * when a `message_stop` event is received. All errors are mapped to the
-   * unified `AiError` type.
+   * **Details**
+   *
+   * The returned Effect yields the HTTP response and a stream of events as the model generates its response. The stream
+   * automatically terminates when a `message_stop` event is received.
    */
   readonly createMessageStream: (options: {
     readonly payload: Omit<typeof Generated.BetaCreateMessageParams.Encoded, "stream">
@@ -71,6 +62,6 @@ export interface Service {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicClient.ts#L44)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicClient.ts#L42)
 
 Since v4.0.0

@@ -6,6 +6,8 @@ Module: `Stream`<br />
 Creates the cartesian product of two streams, running the `right` stream for
 each element in the `left` stream.
 
+**Details**
+
 See also `Stream.zip` for the more common point-wise variant.
 
 **Example** (Computing cartesian products)
@@ -30,6 +32,6 @@ Effect.runPromise(program)
 declare const cross: { <AR, ER, RR>(right: Stream<AR, ER, RR>): <AL, EL, RL>(left: Stream<AL, EL, RL>) => Stream<[AL, AR], EL | ER, RL | RR>; <AL, ER, RR, AR, EL, RL>(left: Stream<AL, ER, RR>, right: Stream<AR, EL, RL>): Stream<[AL, AR], EL | ER, RL | RR>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L3325)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L3374)
 
 Since v2.0.0

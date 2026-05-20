@@ -32,6 +32,6 @@ const program = Effect.gen(function*() {
 declare const remove: { <K>(key: K): <A, E>(self: FiberMap<K, A, E>) => Effect.Effect<void>; <K, A, E>(self: FiberMap<K, A, E>, key: K): Effect.Effect<void>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FiberMap.ts#L634)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FiberMap.ts#L649)
 
 Since v2.0.0

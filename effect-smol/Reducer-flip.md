@@ -5,12 +5,14 @@ Module: `Reducer`<br />
 
 Reverses the argument order of a reducer's `combine` method.
 
-When to use:
+**When to use**
+
 - You need the "right" value to act as the accumulator side.
 - You want to reverse the natural direction of a non-commutative reducer
   (e.g. string concatenation becomes prepend).
 
-Behavior:
+**Details**
+
 - Returns a new `Reducer` where `combine(self, that)` calls the original
   reducer as `combine(that, self)`.
 - The `initialValue` is preserved from the original reducer.
@@ -18,7 +20,7 @@ Behavior:
   default left-to-right fold), not carried over from the original.
 - Does not mutate the input reducer.
 
-**Example** (reversing string concatenation)
+**Example** (Reversing string concatenation)
 
 ```ts
 import { Reducer, String } from "effect"
@@ -43,6 +45,6 @@ console.log(Prepend.combineAll(["a", "b", "c"]))
 declare const flip: <A>(reducer: Reducer<A>) => Reducer<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Reducer.ts#L217)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Reducer.ts#L226)
 
 Since v4.0.0

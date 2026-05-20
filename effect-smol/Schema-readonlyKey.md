@@ -12,6 +12,6 @@ Only applicable to schemas already wrapped with `mutableKey`.
 declare const readonlyKey: readonlyKeyLambda
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L1761)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L1808)
 
 Since v4.0.0

@@ -11,6 +11,6 @@ Matches the value `null`.
 declare const null: Predicate.Refinement<unknown, null>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L1386)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L1416)
 
 Since v4.0.0

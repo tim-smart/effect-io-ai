@@ -5,6 +5,8 @@ Module: `DateTime`<br />
 
 An `Order` for comparing and sorting `DateTime` values.
 
+**Details**
+
 `DateTime` values are ordered by their epoch milliseconds, so earlier times
 come before later times regardless of time zone.
 
@@ -29,6 +31,6 @@ const sorted = Array.sort(dates, DateTime.Order)
 declare const Order: order.Order<DateTime>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L514)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L548)
 
 Since v3.6.0

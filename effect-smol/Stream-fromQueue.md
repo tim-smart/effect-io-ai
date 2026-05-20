@@ -5,6 +5,8 @@ Module: `Stream`<br />
 
 Creates a stream that pulls values from a `Queue.Dequeue`.
 
+**Details**
+
 The stream emits non-empty batches of queued values and ends when the queue
 fails with `Cause.Done`; other queue failures are propagated.
 
@@ -35,6 +37,6 @@ Effect.runPromise(program)
 declare const fromQueue: <A, E>(queue: Queue.Dequeue<A, E>) => Stream<A, Exclude<E, Cause.Done>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L1280)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L1300)
 
 Since v2.0.0

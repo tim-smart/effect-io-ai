@@ -5,10 +5,12 @@ Module: `Predicate`<br />
 
 Checks whether a value is a `Set`.
 
-When to use:
+**When to use**
+
 - You need a runtime guard for `Set` values.
 
-Behavior:
+**Details**
+
 - Pure; does not mutate input.
 - Uses `instanceof Set`.
 
@@ -24,7 +26,10 @@ if (Predicate.isSet(data)) {
 }
 ```
 
-See also: `isMap`, `isIterable`
+**See**
+
+- `isMap`
+- `isIterable`
 
 **Signature**
 
@@ -32,6 +37,6 @@ See also: `isMap`, `isIterable`
 declare const isSet: (input: unknown) => input is Set<unknown>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L480)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L510)
 
 Since v2.0.0

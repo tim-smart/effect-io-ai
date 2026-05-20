@@ -5,6 +5,8 @@ Module: `Multipart`<br />
 
 Record representation of persisted multipart data.
 
+**Details**
+
 Field names map to text values, arrays of text values, or arrays of
 `PersistedFile` values.
 
@@ -16,6 +18,6 @@ export interface Persisted {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Multipart.ts#L177)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Multipart.ts#L189)
 
 Since v4.0.0

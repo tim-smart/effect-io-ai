@@ -5,9 +5,13 @@ Module: `McpSchema`<br />
 
 Additional properties describing a Tool to clients.
 
+**Details**
+
 NOTE: all properties in ToolAnnotations are **hints**. They are not
 guaranteed to provide a faithful description of tool behavior (including
 descriptive properties like `title`).
+
+**Gotchas**
 
 Clients should never make tool use decisions based on ToolAnnotations
 received from untrusted servers.
@@ -18,6 +22,6 @@ received from untrusted servers.
 declare class ToolAnnotations
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L1294)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L1328)
 
 Since v4.0.0

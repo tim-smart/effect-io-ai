@@ -5,6 +5,8 @@ Module: `Encoding`<br />
 
 Decodes a hexadecimal string into a UTF-8 string.
 
+**Details**
+
 Returns `Result.succeed` with the decoded text when decoding succeeds, or
 `Result.fail` with an `EncodingError` when the input is not valid hex.
 
@@ -25,6 +27,6 @@ if (Result.isSuccess(result)) {
 declare const decodeHexString: (str: string) => Result.Result<string, EncodingError>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Encoding.ts#L392)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Encoding.ts#L408)
 
 Since v2.0.0

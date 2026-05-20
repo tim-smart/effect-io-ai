@@ -6,11 +6,11 @@ Module: `Logger`<br />
 A `Logger` which outputs logs in a "pretty" format and writes them to the
 console.
 
-For example:
-```
-[09:37:17.579] INFO (#1) label=0ms: hello
-  key: value
-```
+**Details**
+
+For example, pretty output can render as
+`[09:37:17.579] INFO (#1) label=0ms: hello` followed by an annotation line
+such as `key: value`.
 
 **Example** (Logging with pretty console output)
 
@@ -51,6 +51,6 @@ const ciLogger = Logger.consolePretty({ colors: false })
 declare const consolePretty: (options?: { readonly colors?: "auto" | boolean | undefined; readonly stderr?: boolean | undefined; readonly formatDate?: ((date: Date) => string) | undefined; readonly mode?: "browser" | "tty" | "auto" | undefined; }) => Logger<unknown, void>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Logger.ts#L912)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Logger.ts#L922)
 
 Since v4.0.0

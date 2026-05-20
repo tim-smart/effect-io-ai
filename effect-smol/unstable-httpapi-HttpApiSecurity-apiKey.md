@@ -3,15 +3,17 @@ Module: `HttpApiSecurity`<br />
 
 ## HttpApiSecurity.apiKey
 
-Create an API key security scheme.
+Creates an API key security scheme.
 
-You can implement some api middleware for this security scheme using
-`HttpApiBuilder.middlewareSecurity`.
+**When to use**
 
-To set the correct cookie in a handler, you can use
-`HttpApiBuilder.securitySetCookie`.
+Use `HttpApiBuilder.middlewareSecurity` to implement API middleware for this
+security scheme.
 
-The default value for `in` is "header".
+**Details**
+
+Use `HttpApiBuilder.securitySetCookie` to set the correct cookie in a
+handler. By default, `in` is `"header"`.
 
 **Signature**
 
@@ -19,6 +21,6 @@ The default value for `in` is "header".
 declare const apiKey: (options: { readonly key: string; readonly in?: "header" | "query" | "cookie" | undefined; }) => ApiKey
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiSecurity.ts#L150)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiSecurity.ts#L154)
 
 Since v4.0.0

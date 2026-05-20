@@ -5,6 +5,8 @@ Module: `Inspectable`<br />
 
 Interface for objects that can be inspected and provide custom string representations.
 
+**Details**
+
 Objects implementing this interface can control how they appear in debugging contexts,
 JSON serialization, and Node.js inspection. This is particularly useful for creating
 custom data types that display meaningful information during development.
@@ -47,6 +49,6 @@ export interface Inspectable {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Inspectable.ts#L138)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Inspectable.ts#L142)
 
 Since v2.0.0

@@ -5,6 +5,8 @@ Module: `Channel`<br />
 
 Phantom variance marker for the type parameters of `Channel`.
 
+**Details**
+
 Output element, output error, output done, and environment types are
 covariant. Input element, input error, and input done types are
 contravariant. This is type-level machinery and is not used directly at
@@ -26,6 +28,6 @@ export interface Variance<
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L244)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L252)
 
 Since v2.0.0

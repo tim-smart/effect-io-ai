@@ -3,8 +3,10 @@ Module: `Layer`<br />
 
 ## Layer.fromBuildMemo
 
-Constructs a Layer from a function that uses a `MemoMap` and `Scope` to build the layer,
-with automatic memoization.
+Constructs a `Layer` from a function that uses a `MemoMap` and `Scope` to
+build the layer, with automatic memoization.
+
+**Details**
 
 This is similar to `fromBuild` but provides automatic memoization of the layer construction.
 The layer will be memoized based on the provided `MemoMap`.
@@ -33,6 +35,6 @@ const databaseLayer = Layer.fromBuildMemo(() =>
 declare const fromBuildMemo: <ROut, E, RIn>(build: (memoMap: MemoMap, scope: Scope.Scope) => Effect<Context.Context<ROut>, E, RIn>) => Layer<ROut, E, RIn>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L325)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L349)
 
 Since v4.0.0

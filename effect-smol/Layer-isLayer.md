@@ -14,7 +14,7 @@ class Database extends Context.Service<Database, {
   readonly query: (sql: string) => Effect.Effect<string>
 }>()("Database") {}
 
-const dbLayer = Layer.succeed(Database)({
+const dbLayer = Layer.succeed(Database, {
   query: Effect.fn("Database.query")((sql: string) => Effect.succeed("result"))
 })
 const notALayer = { someProperty: "value" }
@@ -29,6 +29,6 @@ console.log(Layer.isLayer(notALayer)) // false
 declare const isLayer: (u: unknown) => u is Layer<unknown, unknown, unknown>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L232)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L251)
 
 Since v2.0.0

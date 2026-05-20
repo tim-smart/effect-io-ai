@@ -5,6 +5,8 @@ Module: `AiError`<br />
 
 Error indicating content policy violation.
 
+**Details**
+
 Content policy errors are never retryable without content changes.
 
 **Example** (Creating a content policy error)
@@ -27,6 +29,6 @@ console.log(policyError.message)
 declare class ContentPolicyError
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AiError.ts#L568)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AiError.ts#L587)
 
 Since v4.0.0

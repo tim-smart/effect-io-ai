@@ -5,9 +5,14 @@ Module: `Types`<br />
 
 Extracts the `reason` type from an error that has a `reason` field.
 
-- Use with the nested error pattern where errors wrap sub-errors in a
-  `reason` field.
-- Returns `never` if `E` has no `reason` field.
+**When to use**
+
+Use with the nested error pattern where errors wrap sub-errors in a `reason`
+field.
+
+**Details**
+
+Returns `never` if `E` has no `reason` field.
 
 **Example** (Extracting reason types)
 
@@ -34,6 +39,6 @@ type Reasons = Types.ReasonOf<ApiError>
 type ReasonOf<E> = E extends { readonly reason: infer R } ? R : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Types.ts#L843)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Types.ts#L948)
 
 Since v4.0.0

@@ -19,7 +19,7 @@ const program = Effect.gen(function*() {
   const memoMap = Layer.makeMemoMapUnsafe()
   const scope = yield* Effect.scope
 
-  const dbLayer = Layer.succeed(Database)({
+  const dbLayer = Layer.succeed(Database, {
     query: Effect.fn("Database.query")((sql: string) => Effect.succeed("result"))
   })
   const context = yield* Layer.buildWithMemoMap(dbLayer, memoMap, scope)
@@ -34,6 +34,6 @@ const program = Effect.gen(function*() {
 declare const makeMemoMapUnsafe: () => MemoMap
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L432)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L456)
 
 Since v4.0.0

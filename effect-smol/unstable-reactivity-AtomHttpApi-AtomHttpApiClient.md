@@ -5,6 +5,8 @@ Module: `AtomHttpApi`<br />
 
 A `Context.Service` for an HTTP API client integrated with atom reactivity.
 
+**Details**
+
 It exposes the generated HTTP API client, an atom runtime, mutation helpers that
 return `AtomResultFn`s, and query helpers that return atoms of endpoint results.
 
@@ -119,6 +121,6 @@ export interface AtomHttpApiClient<Self, Id extends string, Groups extends HttpA
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AtomHttpApi.ts#L60)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AtomHttpApi.ts#L62)
 
 Since v4.0.0

@@ -5,11 +5,13 @@ Module: `SchemaGetter`<br />
 
 Creates a getter that always produces the given constant value, ignoring the input.
 
-Use this when:
+**When to use**
+
 - A schema field should always decode to a fixed value.
 - You need a placeholder getter that produces a known default.
 
-Behavior:
+**Details**
+
 - Pure, no side effects.
 - Always returns `Option.some(t)` regardless of whether input is `Some` or `None`.
 
@@ -22,9 +24,10 @@ const alwaysZero = SchemaGetter.succeed(0)
 // alwaysZero: Getter<0, unknown> — always produces 0
 ```
 
-See also:
-- `transform` — when you need to use the input value
-- `passthrough` — when you want to keep the input as-is
+**See**
+
+- `transform` - when you need to use the input value
+- `passthrough` - when you want to keep the input as-is
 
 **Signature**
 
@@ -32,6 +35,6 @@ See also:
 declare const succeed: <const T, E>(t: T) => Getter<T, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L194)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L195)
 
 Since v4.0.0

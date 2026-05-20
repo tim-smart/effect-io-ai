@@ -3,9 +3,11 @@ Module: `Chunk`<br />
 
 ## Chunk.unzip
 
-Takes a `Chunk` of pairs and return two corresponding `Chunk`s.
+Takes a `Chunk` of pairs and returns two corresponding `Chunk`s.
 
-Note: The function is reverse of `zip`.
+**Details**
+
+This function is the reverse of `zip`.
 
 **Example** (Unzipping pairs)
 
@@ -34,6 +36,6 @@ console.log(Chunk.toArray(emptyStrs)) // []
 declare const unzip: <A, B>(self: Chunk<readonly [A, B]>) => [Chunk<A>, Chunk<B>]
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L2285)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L2300)
 
 Since v2.0.0

@@ -5,10 +5,15 @@ Module: `TxSemaphore`<br />
 
 Acquires the specified number of permits from the semaphore.
 
+**Details**
+
 If fewer than `n` permits are available, the transaction retries until enough
-permits are released. Passing a non-positive `n` dies with a defect. Passing a
-value greater than the semaphore capacity will wait forever unless the
-semaphore's capacity can somehow be changed externally.
+permits are released.
+
+**Gotchas**
+
+Passing a non-positive `n` dies with a defect. Passing a value greater than
+the semaphore capacity can wait forever because the capacity is fixed.
 
 **Example** (Acquiring multiple permits)
 
@@ -33,6 +38,6 @@ const program = Effect.gen(function*() {
 declare const acquireN: (self: TxSemaphore, n: number) => Effect.Effect<void>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxSemaphore.ts#L251)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxSemaphore.ts#L256)
 
 Since v2.0.0

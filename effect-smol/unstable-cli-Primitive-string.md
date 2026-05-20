@@ -29,6 +29,6 @@ const parseString = Effect.gen(function*() {
 declare const string: Primitive<string>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Primitive.ts#L266)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Primitive.ts#L268)
 
 Since v4.0.0

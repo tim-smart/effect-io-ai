@@ -6,10 +6,12 @@ Module: `SchemaTransformation`<br />
 Decodes a `string` into a `URL` and encodes a `URL` back to its `href`
 string.
 
-When to use this:
+**When to use**
+
 - Parsing URL strings from user input or API responses.
 
-Behavior:
+**Details**
+
 - Decode: calls `new URL(s)`. Fails with `InvalidValue` if the string
   is not a valid URL.
 - Encode: returns `url.href`.
@@ -24,7 +26,8 @@ const schema = Schema.String.pipe(
 )
 ```
 
-See also:
+**See**
+
 - `numberFromString`
 - `transformOrFail`
 
@@ -34,6 +37,6 @@ See also:
 declare const urlFromString: Transformation<URL, string, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L1301)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L1339)
 
 Since v4.0.0

@@ -5,6 +5,8 @@ Module: `Event`<br />
 
 Schema services required by a client for an event definition.
 
+**Details**
+
 This includes payload encoding services plus success and error decoding
 services.
 
@@ -23,6 +25,6 @@ type ServicesClient<A> = A extends Event<
   : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Event.ts#L267)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Event.ts#L277)
 
 Since v4.0.0

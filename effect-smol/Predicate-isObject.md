@@ -5,6 +5,8 @@ Module: `Predicate`<br />
 
 Checks whether a value is a non-null object value that is not an array.
 
+**Details**
+
 This is a structural runtime check using `typeof input === "object"`, so it
 also accepts object instances such as `Date`, `Map`, class instances, and
 typed arrays. It excludes `null` and arrays.
@@ -18,7 +20,10 @@ console.log(Predicate.isObject({ a: 1 }))
 console.log(Predicate.isObject([1, 2]))
 ```
 
-See also: `isObjectOrArray`, `isReadonlyObject`
+**See**
+
+- `isObjectOrArray`
+- `isReadonlyObject`
 
 **Signature**
 
@@ -26,6 +31,6 @@ See also: `isObjectOrArray`, `isReadonlyObject`
 declare const isObject: (input: unknown) => input is { [x: PropertyKey]: unknown; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L1016)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L1081)
 
 Since v2.0.0

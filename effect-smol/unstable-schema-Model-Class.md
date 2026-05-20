@@ -3,19 +3,9 @@ Module: `Model`<br />
 
 ## Model.Class
 
-A base class used for creating domain model schemas.
+A base class used for creating domain model schemas with common database and
+JSON API variants.
 
-It supports common variants for database and JSON apis.
-
-**Signature**
-
-```ts
-declare const Class: <Self = never>(identifier: string) => <const Fields extends VariantSchema.Struct.Fields>(fields: Fields & VariantSchema.Struct.Validate<Fields, "insert" | "update" | "json" | "jsonCreate" | "jsonUpdate" | "select">, annotations?: Schema.Annotations.Declaration<Self, readonly [Schema.Struct<VariantSchema.ExtractFields<"select", Fields, true>>]> | undefined) => [Self] extends [never] ? "Missing `Self` generic - use `class Self extends Class<Self>()({ ... })`" : VariantSchema.Class<Self, Fields, Schema.Struct<VariantSchema.ExtractFields<"select", Fields, true>>> & { readonly insert: Schema.Struct<{ [K in keyof VariantSchema.ExtractFields<"insert", Fields, false>]: VariantSchema.ExtractFields<"insert", Fields, false>[K]; }>; readonly update: Schema.Struct<{ [K in keyof VariantSchema.ExtractFields<"update", Fields, false>]: VariantSchema.ExtractFields<"update", Fields, false>[K]; }>; readonly json: Schema.Struct<{ [K in keyof VariantSchema.ExtractFields<"json", Fields, false>]: VariantSchema.ExtractFields<"json", Fields, false>[K]; }>; readonly jsonCreate: Schema.Struct<{ [K in keyof VariantSchema.ExtractFields<"jsonCreate", Fields, false>]: VariantSchema.ExtractFields<"jsonCreate", Fields, false>[K]; }>; readonly jsonUpdate: Schema.Struct<{ [K in keyof VariantSchema.ExtractFields<"jsonUpdate", Fields, false>]: VariantSchema.ExtractFields<"jsonUpdate", Fields, false>[K]; }>; readonly select: Schema.Struct<{ [K in keyof VariantSchema.ExtractFields<"select", Fields, false>]: VariantSchema.ExtractFields<"select", Fields, false>[K]; }>; }
-```
-
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Model.ts#L124)
-
-Since v4.0.0
 **Example** (Defining a variant model class)
 
 ```ts
@@ -52,3 +42,13 @@ class GroupJson extends Schema.Class<GroupJson>("GroupJson")(Group.json) {
   }
 }
 ```
+
+**Signature**
+
+```ts
+declare const Class: <Self = never>(identifier: string) => <const Fields extends VariantSchema.Struct.Fields>(fields: Fields & VariantSchema.Struct.Validate<Fields, "insert" | "update" | "json" | "jsonCreate" | "jsonUpdate" | "select">, annotations?: Schema.Annotations.Declaration<Self, readonly [Schema.Struct<VariantSchema.ExtractFields<"select", Fields, true>>]> | undefined) => [Self] extends [never] ? "Missing `Self` generic - use `class Self extends Class<Self>()({ ... })`" : VariantSchema.Class<Self, Fields, Schema.Struct<VariantSchema.ExtractFields<"select", Fields, true>>> & { readonly insert: Schema.Struct<{ [K in keyof VariantSchema.ExtractFields<"insert", Fields, false>]: VariantSchema.ExtractFields<"insert", Fields, false>[K]; }>; readonly update: Schema.Struct<{ [K in keyof VariantSchema.ExtractFields<"update", Fields, false>]: VariantSchema.ExtractFields<"update", Fields, false>[K]; }>; readonly json: Schema.Struct<{ [K in keyof VariantSchema.ExtractFields<"json", Fields, false>]: VariantSchema.ExtractFields<"json", Fields, false>[K]; }>; readonly jsonCreate: Schema.Struct<{ [K in keyof VariantSchema.ExtractFields<"jsonCreate", Fields, false>]: VariantSchema.ExtractFields<"jsonCreate", Fields, false>[K]; }>; readonly jsonUpdate: Schema.Struct<{ [K in keyof VariantSchema.ExtractFields<"jsonUpdate", Fields, false>]: VariantSchema.ExtractFields<"jsonUpdate", Fields, false>[K]; }>; readonly select: Schema.Struct<{ [K in keyof VariantSchema.ExtractFields<"select", Fields, false>]: VariantSchema.ExtractFields<"select", Fields, false>[K]; }>; }
+```
+
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Model.ts#L124)
+
+Since v4.0.0

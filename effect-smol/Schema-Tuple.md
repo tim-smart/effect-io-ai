@@ -24,7 +24,9 @@ export interface Tuple<Elements extends Tuple.Elements> extends
   /**
    * Returns a new tuple with the elements modified by the provided function.
    *
-   * **Options**
+   * **Details**
+   *
+   * Options:
    *
    * - `unsafePreserveChecks` - if `true`, keep any `.check(...)` constraints
    *   that were attached to the original union. Defaults to `false`.
@@ -44,6 +46,6 @@ export interface Tuple<Elements extends Tuple.Elements> extends
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L3328)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L3407)
 
 Since v3.10.0

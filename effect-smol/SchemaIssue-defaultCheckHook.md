@@ -5,12 +5,12 @@ Module: `SchemaIssue`<br />
 
 The built-in `CheckHook` used by default formatters.
 
-When to use:
+**When to use**
 
 - Use as-is when you only need to customise the `LeafHook` but want
   the default filter rendering.
 
-Behaviour:
+**Details**
 
 - Looks for a `message` annotation on the inner issue first, then on the
   filter itself.
@@ -28,6 +28,6 @@ Behaviour:
 declare const defaultCheckHook: CheckHook
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaIssue.ts#L1037)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaIssue.ts#L1039)
 
 Since v4.0.0

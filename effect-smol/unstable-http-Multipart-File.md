@@ -5,6 +5,8 @@ Module: `Multipart`<br />
 
 Multipart file part.
 
+**Gotchas**
+
 The file content is exposed as a byte stream. `contentEffect` collects the full
 file into memory and should be used only when the file size is acceptable.
 
@@ -21,6 +23,6 @@ export interface File extends Part.Proto {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Multipart.ts#L125)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Multipart.ts#L133)
 
 Since v4.0.0

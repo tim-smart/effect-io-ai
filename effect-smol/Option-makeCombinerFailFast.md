@@ -10,7 +10,7 @@ if either operand is `None`.
 
 - Operations that require both values to be present
 
-**Behavior**
+**Details**
 
 - `None` + anything → `None`
 - anything + `None` → `None`
@@ -39,6 +39,6 @@ console.log(combiner.combine(Option.some(1), Option.none()))
 declare const makeCombinerFailFast: <A>(combiner: Combiner.Combiner<A>) => Combiner.Combiner<Option<A>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L2619)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L2625)
 
 Since v4.0.0

@@ -5,9 +5,14 @@ Module: `Types`<br />
 
 Flattens an intersection type into a single object type for readability.
 
-- Use to clean up IDE tooltips that show `A & B & C` instead of a merged
-  object.
-- Does not change the type semantically, only its display.
+**When to use**
+
+Use to clean up IDE tooltips that show `A & B & C` instead of a merged
+object.
+
+**Details**
+
+Does not change the type semantically, only its display.
 
 **Example** (Simplifying an intersection)
 
@@ -32,6 +37,6 @@ type Simplify<A> = {
 } extends infer B ? B : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Types.ts#L263)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Types.ts#L292)
 
 Since v2.0.0

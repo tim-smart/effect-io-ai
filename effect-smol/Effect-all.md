@@ -13,7 +13,7 @@ results under the same keys. By default, the combined effect fails on the
 first failure; with concurrent execution, effects that have already started
 may be interrupted, while effects not yet started are skipped.
 
-**Options**
+Options:
 
 Use `concurrency` to control sequential or concurrent execution. Use
 `mode: "result"` to run every effect and collect each success or failure as a
@@ -136,6 +136,6 @@ Effect.runPromiseExit(program).then(console.log)
 declare const all: <const Arg extends Iterable<Effect<any, any, any>> | Record<string, Effect<any, any, any>>, O extends { readonly concurrency?: Concurrency | undefined; readonly discard?: boolean | undefined; readonly mode?: "default" | "result" | undefined; }>(arg: Arg, options?: O) => All.Return<Arg, O>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L528)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L529)
 
 Since v2.0.0

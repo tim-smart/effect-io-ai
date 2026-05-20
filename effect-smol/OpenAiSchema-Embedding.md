@@ -11,6 +11,6 @@ One embedding item returned by the OpenAI embeddings API.
 type Embedding = typeof Embedding.Type
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiSchema.ts#L930)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiSchema.ts#L931)
 
 Since v4.0.0

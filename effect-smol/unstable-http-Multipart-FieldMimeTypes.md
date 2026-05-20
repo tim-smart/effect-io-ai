@@ -6,6 +6,8 @@ Module: `Multipart`<br />
 Context reference for MIME type fragments that should be parsed as multipart
 fields instead of files.
 
+**Details**
+
 The default treats `application/json` parts as fields.
 
 **Signature**
@@ -14,6 +16,6 @@ The default treats `application/json` parts as fields.
 declare const FieldMimeTypes: Context.Reference<ReadonlyArray<string>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Multipart.ts#L790)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Multipart.ts#L837)
 
 Since v4.0.0

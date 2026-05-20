@@ -6,6 +6,7 @@ Module: `Schema`<br />
 Iso representation used for `Exit` schemas.
 
 **Details**
+
 Successful exits are represented as `{ _tag: "Success", value }`, while failed
 exits are represented as `{ _tag: "Failure", cause }`.
 
@@ -21,6 +22,6 @@ type ExitIso<A, E, D> = {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L8448)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L8716)
 
 Since v4.0.0

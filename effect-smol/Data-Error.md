@@ -5,15 +5,18 @@ Module: `Data`<br />
 
 Base class for yieldable errors.
 
+**When to use**
+
+Use `Error` for errors that do **not** need tag-based discrimination. If you need `Effect.catchTag` support, use `TaggedError`.
+
+**Details**
+
 Extends `Cause.YieldableError`, so instances can be yielded inside
 `Effect.gen` to fail the enclosing effect. Fields are passed as a single
-object; when there are no fields the argument is optional.
+object; when there are no fields the argument is optional. If a `message`
+field is provided, it becomes the error's `.message`.
 
-- Use for errors that do **not** need tag-based discrimination.
-- If you need `Effect.catchTag` support, use `TaggedError` instead.
-- If a `message` field is provided, it becomes the error's `.message`.
-
-**Example** (defining a yieldable error)
+**Example** (Defining a yieldable error)
 
 ```ts
 import { Data, Effect } from "effect"
@@ -42,6 +45,6 @@ Effect.runSync(Effect.exit(program))
 declare const Error: new <A extends Record<string, any> = {}>(args: Types.VoidIfEmpty<{ readonly [P in keyof A]: A[P]; }>) => Cause.YieldableError & Readonly<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Data.ts#L725)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Data.ts#L754)
 
 Since v2.0.0

@@ -3,10 +3,7 @@ Module: `Console`<br />
 
 ## Console.trace
 
-Outputs a stack trace to the console.
-
-This function logs the current stack trace, which is useful for debugging
-to understand how the current point in the code was reached.
+Outputs the current stack trace to the console to show how the current point in the code was reached.
 
 **Example** (Writing stack traces)
 
@@ -25,6 +22,6 @@ const program = Effect.gen(function*() {
 declare const trace: (...args: ReadonlyArray<any>) => Effect.Effect<void>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Console.ts#L614)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Console.ts#L567)
 
 Since v2.0.0

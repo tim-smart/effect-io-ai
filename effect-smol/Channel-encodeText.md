@@ -5,6 +5,8 @@ Module: `Channel`<br />
 
 Encodes incoming string chunks into `Uint8Array` values using `TextEncoder`.
 
+**Details**
+
 Each string inside an emitted array is encoded independently.
 
 **Signature**
@@ -13,6 +15,6 @@ Each string inside an emitted array is encoded independently.
 declare const encodeText: <Err, Done>() => Channel<Arr.NonEmptyReadonlyArray<Uint8Array>, Err, Done, Arr.NonEmptyReadonlyArray<string>, Err, Done>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L6283)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L6365)
 
 Since v4.0.0

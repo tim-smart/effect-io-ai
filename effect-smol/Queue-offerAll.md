@@ -6,6 +6,8 @@ Module: `Queue`<br />
 Add multiple messages to the queue. Returns the remaining messages that
 were not added.
 
+**Details**
+
 For bounded queues, this operation may suspend if the queue doesn't have
 enough capacity. The operation returns an array of messages that couldn't
 be added (empty array means all messages were successfully added).
@@ -30,6 +32,6 @@ const program = Effect.gen(function*() {
 declare const offerAll: <A, E>(self: Enqueue<A, E>, messages: Iterable<A>) => Effect<Array<A>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Queue.ts#L692)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Queue.ts#L724)
 
 Since v2.0.0

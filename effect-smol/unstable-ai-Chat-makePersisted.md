@@ -5,6 +5,8 @@ Module: `Chat`<br />
 
 Creates a new chat persistence service.
 
+**Details**
+
 The provided store identifier will be used to indicate which "store" the
 backing persistence should load chats from.
 
@@ -14,6 +16,6 @@ backing persistence should load chats from.
 declare const makePersisted: (options: { readonly storeId: string; }) => Effect.Effect<Persistence.Service, never, Scope | BackingPersistence>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chat.ts#L746)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chat.ts#L772)
 
 Since v4.0.0

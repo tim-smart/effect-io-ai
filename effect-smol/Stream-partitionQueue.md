@@ -6,6 +6,8 @@ Module: `Stream`<br />
 Partitions a stream using a `Filter` and exposes passing and failing values
 as scoped queues.
 
+**Details**
+
 The queues are backed by a fiber in the current scope and should be consumed
 while that scope remains open. Each queue fails with the stream error or
 `Cause.Done` when the source ends.
@@ -38,6 +40,6 @@ Effect.runPromise(Effect.scoped(program))
 declare const partitionQueue: { <A, Pass, Fail>(filter: Filter.Filter<NoInfer<A>, Pass, Fail>, options?: { readonly capacity?: number | "unbounded" | undefined; }): <E, R>(self: Stream<A, E, R>) => Effect.Effect<[passes: Queue.Dequeue<Pass, E | Cause.Done>, fails: Queue.Dequeue<Fail, E | Cause.Done>], never, R | Scope.Scope>; <A, E, R, Pass, Fail>(self: Stream<A, E, R>, filter: Filter.Filter<NoInfer<A>, Pass, Fail>, options?: { readonly capacity?: number | "unbounded" | undefined; }): Effect.Effect<[passes: Queue.Dequeue<Pass, E | Cause.Done>, fails: Queue.Dequeue<Fail, E | Cause.Done>], never, R | Scope.Scope>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L4293)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L4362)
 
 Since v4.0.0

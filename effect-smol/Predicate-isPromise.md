@@ -5,10 +5,12 @@ Module: `Predicate`<br />
 
 Checks whether a value is a `Promise`-like object with `then` and `catch`.
 
-When to use:
+**When to use**
+
 - You need to detect promise instances across realms.
 
-Behavior:
+**Details**
+
 - Pure; does not mutate input.
 - Structural check for `then` and `catch` functions.
 
@@ -22,7 +24,9 @@ const data: unknown = Promise.resolve(1)
 console.log(Predicate.isPromise(data))
 ```
 
-See also: `isPromiseLike`
+**See**
+
+- `isPromiseLike`
 
 **Signature**
 
@@ -30,6 +34,6 @@ See also: `isPromiseLike`
 declare const isPromise: (input: unknown) => input is Promise<unknown>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L1290)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L1368)
 
 Since v2.0.0

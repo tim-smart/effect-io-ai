@@ -5,6 +5,8 @@ Module: `UrlParams`<br />
 
 Creates `UrlParams` from ordered string key-value pairs.
 
+**Details**
+
 The input pairs are used as-is and are not coerced or normalized.
 
 **Signature**
@@ -13,6 +15,6 @@ The input pairs are used as-is and are not coerced or normalized.
 declare const make: (params: ReadonlyArray<readonly [string, string]>) => UrlParams
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/UrlParams.ts#L145)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/UrlParams.ts#L155)
 
 Since v4.0.0

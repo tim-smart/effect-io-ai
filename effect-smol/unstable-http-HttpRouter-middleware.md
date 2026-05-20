@@ -5,6 +5,8 @@ Module: `HttpRouter`<br />
 
 Create a middleware layer that can be used to modify requests and responses.
 
+**Details**
+
 By default, the middleware only affects the routes that it is provided to.
 
 If you want to create a middleware that applies globally to all routes, pass
@@ -64,6 +66,6 @@ Effect.gen(function*() {
 declare const middleware: middleware.Make<never, never> & (<Config extends { provides?: any; handles?: any; } = {}>() => middleware.Make<Config extends { provides: infer R; } ? R : never, Config extends { handles: infer E; } ? E : never>)
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpRouter.ts#L897)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpRouter.ts#L925)
 
 Since v4.0.0

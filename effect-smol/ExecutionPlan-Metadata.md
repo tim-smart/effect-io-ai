@@ -5,6 +5,8 @@ Module: `ExecutionPlan`<br />
 
 Metadata describing the currently running execution-plan attempt.
 
+**Details**
+
 `attempt` is the current 1-based attempt number, and `stepIndex` is the
 0-based index of the plan step currently being evaluated.
 
@@ -17,6 +19,6 @@ export interface Metadata {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ExecutionPlan.ts#L395)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ExecutionPlan.ts#L402)
 
 Since v4.0.0

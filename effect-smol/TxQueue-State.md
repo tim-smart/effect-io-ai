@@ -5,6 +5,8 @@ Module: `TxQueue`<br />
 
 Represents the state of a transactional queue with sophisticated lifecycle management.
 
+**Details**
+
 The queue progresses through three states:
 - **Open**: Accepting offers and serving takes normally
 - **Closing**: No new offers accepted, serving remaining items until empty
@@ -43,6 +45,6 @@ type State<_A, E> = | {
   }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxQueue.ts#L54)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxQueue.ts#L56)
 
 Since v4.0.0

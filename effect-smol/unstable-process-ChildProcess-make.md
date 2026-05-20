@@ -5,6 +5,8 @@ Module: `ChildProcess`<br />
 
 Create a command from a template literal, options + template, or array form.
 
+**Details**
+
 This function supports three calling conventions:
 1. Template literal: `make\`npm run build\``
 2. Options + template literal: `make({ cwd: "/app" })\`npm run build\``
@@ -34,6 +36,6 @@ const cmd3 = ChildProcess.make("git", ["status"])
 declare const make: { (command: string, options?: CommandOptions): StandardCommand; (command: string, args: ReadonlyArray<string>, options?: CommandOptions): StandardCommand; (options: CommandOptions): (templates: TemplateStringsArray, ...expressions: ReadonlyArray<TemplateExpression>) => StandardCommand; (templates: TemplateStringsArray, ...expressions: ReadonlyArray<TemplateExpression>): StandardCommand; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ChildProcess.ts#L598)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ChildProcess.ts#L615)
 
 Since v4.0.0

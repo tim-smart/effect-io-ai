@@ -11,6 +11,6 @@ Computer-use action payload for releasing the left mouse button, optionally at a
 type ComputerUseLeftMouseUpAction = typeof ComputerUseLeftMouseUpAction.Type
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L625)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L637)
 
 Since v4.0.0

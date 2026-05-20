@@ -5,9 +5,11 @@ Module: `Iterable`<br />
 
 Creates an iterable by applying a function to consecutive integers.
 
-This is a fundamental constructor that generates iterables by calling a function
-with each index starting from 0. If no length is specified, the iterable will
-be infinite. This is useful for generating sequences, patterns, or any indexed data.
+**Details**
+
+The function is called with each index starting from `0`. If no length is
+specified, the iterable is infinite. This is useful for generating
+sequences, patterns, or any indexed data.
 
 **Example** (Generating values by index)
 
@@ -34,6 +36,6 @@ console.log(Array.from(first10)) // [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 declare const makeBy: <A>(f: (i: number) => A, options?: { readonly length?: number; }) => Iterable<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Iterable.ts#L75)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Iterable.ts#L77)
 
 Since v2.0.0

@@ -6,6 +6,8 @@ Module: `Tool`<br />
 The strategy used for handling errors returned from tool call handler
 execution.
 
+**Details**
+
 If set to `"error"` (the default), errors that occur during tool call handler
 execution will be returned in the error channel of the calling effect.
 
@@ -18,6 +20,6 @@ will be captured and returned as part of the tool call result.
 type FailureMode = "error" | "return"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tool.ts#L123)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tool.ts#L131)
 
 Since v4.0.0

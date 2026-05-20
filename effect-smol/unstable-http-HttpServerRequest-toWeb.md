@@ -5,6 +5,8 @@ Module: `HttpServerRequest`<br />
 
 Converts an `HttpServerRequest` to a Web `Request` in `Effect`.
 
+**Details**
+
 The current context is used when streaming the request body into the Web
 request.
 
@@ -14,6 +16,6 @@ request.
 declare const toWeb: (self: HttpServerRequest, options?: { readonly signal?: AbortSignal | undefined; }) => Effect.Effect<Request, RequestError>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpServerRequest.ts#L1036)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpServerRequest.ts#L1066)
 
 Since v4.0.0

@@ -28,6 +28,6 @@ const program = Effect.gen(function*() {
 declare const get: <A>(self: TxRef<A>) => Effect.Effect<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxRef.ts#L218)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxRef.ts#L222)
 
 Since v2.0.0

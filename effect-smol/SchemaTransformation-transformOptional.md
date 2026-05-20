@@ -6,11 +6,13 @@ Module: `SchemaTransformation`<br />
 Creates a `Transformation` where decode and encode operate on `Option`
 values, giving full control over missing-key handling.
 
-When to use this:
+**When to use**
+
 - You need to produce or consume `Option.None` to represent absent keys.
 - You are working with optional struct fields.
 
-Behavior:
+**Details**
+
 - Each function receives `Option<input>` and returns `Option<output>`.
 - `Option.None` input means the key is absent; returning `Option.None`
   omits the key from the output.
@@ -34,7 +36,8 @@ const schema = Schema.Struct({
 })
 ```
 
-See also:
+**See**
+
 - `transform` — when you don't need Option-level control
 - `optionFromOptionalKey` — built-in for the common optional-key-to-Option pattern
 - `optionFromOptional` — built-in for optional (undefined) to Option
@@ -45,6 +48,6 @@ See also:
 declare const transformOptional: <T, E>(options: { readonly decode: (input: Option.Option<E>) => Option.Option<T>; readonly encode: (input: Option.Option<T>) => Option.Option<E>; }) => Transformation<T, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L449)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L456)
 
 Since v4.0.0

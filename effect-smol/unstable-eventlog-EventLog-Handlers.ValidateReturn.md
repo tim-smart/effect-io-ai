@@ -5,6 +5,8 @@ Module: `EventLog`<br />
 
 Validates that a handler builder returned all required handlers.
 
+**Details**
+
 If any event tag remains unhandled, the type evaluates to an explanatory
 compile-time error string.
 
@@ -29,6 +31,6 @@ type ValidateReturn<A> = A extends (
     `Must return the implemented handlers`
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventLog.ts#L346)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventLog.ts#L354)
 
 Since v4.0.0

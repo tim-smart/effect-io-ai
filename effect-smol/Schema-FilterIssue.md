@@ -6,6 +6,8 @@ Module: `Schema`<br />
 A single failure reported by a filter predicate. Used as the element type
 of the array arm of `FilterOutput`, and also accepted on its own.
 
+**Details**
+
 - `string`: failure with that string as the message. Produces an
   `Issue.InvalidValue` wrapping the input, with the string used as
   the issue's `message` annotation.
@@ -24,6 +26,6 @@ type FilterIssue = string | Issue.Issue | {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L5486)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L5634)
 
 Since v3.10.0

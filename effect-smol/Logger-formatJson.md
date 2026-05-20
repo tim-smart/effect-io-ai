@@ -6,10 +6,11 @@ Module: `Logger`<br />
 A `Logger` which outputs logs using a structured format serialized as JSON
 on a single line.
 
-For example:
-```
-{"message":["hello"],"level":"INFO","timestamp":"2025-01-03T14:28:57.508Z","annotations":{"key":"value"},"spans":{"label":0},"fiberId":"#1"}
-```
+**Details**
+
+For example, a JSON entry can render as `{"message":["hello"],"level":"INFO",
+"timestamp":"2025-01-03T14:28:57.508Z","annotations":{"key":"value"},
+"spans":{"label":0},"fiberId":"#1"}`.
 
 **Example** (Formatting logs as JSON)
 
@@ -50,6 +51,6 @@ const envelopedConsoleLogger = Logger.withConsoleLog(envelopedJsonLogger)
 declare const formatJson: Logger<unknown, string>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Logger.ts#L761)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Logger.ts#L770)
 
 Since v4.0.0

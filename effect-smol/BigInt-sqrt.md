@@ -5,6 +5,8 @@ Module: `BigInt`<br />
 
 Safely returns the integer square root of a `bigint`.
 
+**Details**
+
 For non-perfect squares, returns the largest `bigint` whose square is less
 than or equal to the input. Returns `Option.none()` when the input is
 negative.
@@ -26,6 +28,6 @@ BigInt.sqrt(-1n) // Option.none()
 declare const sqrt: (n: bigint) => Option.Option<bigint>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigInt.ts#L579)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigInt.ts#L597)
 
 Since v2.0.0

@@ -11,6 +11,6 @@ Text provided to or from an LLM.
 declare class TextContent
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L1081)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L1103)
 
 Since v4.0.0

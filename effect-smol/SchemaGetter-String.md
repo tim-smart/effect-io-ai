@@ -5,10 +5,12 @@ Module: `SchemaGetter`<br />
 
 Coerces any value to a `string` using the global `String()` constructor.
 
-Use this when:
+**When to use**
+
 - You need a string representation of an arbitrary encoded value.
 
-Behavior:
+**Details**
+
 - Pure, never fails.
 - Delegates to `globalThis.String`.
 
@@ -21,8 +23,9 @@ const toString = SchemaGetter.String<number>()
 // Getter<string, number>
 ```
 
-See also:
-- `transform` — for custom string conversions
+**See**
+
+- `transform` - for custom string conversions
 
 **Signature**
 
@@ -30,6 +33,6 @@ See also:
 declare const String: <E>() => Getter<string, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L726)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L742)
 
 Since v4.0.0

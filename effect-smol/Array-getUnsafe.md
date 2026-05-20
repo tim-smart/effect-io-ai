@@ -5,6 +5,8 @@ Module: `Array`<br />
 
 Reads an element at the given index, throwing if the index is out of bounds.
 
+**Details**
+
 - Throws an `Error` with the message `"Index out of bounds: <i>"`.
 - Prefer `get` for safe access.
 
@@ -27,6 +29,6 @@ console.log(Array.getUnsafe([1, 2, 3], 1)) // 2
 declare const getUnsafe: { (index: number): <A>(self: ReadonlyArray<A>) => A; <A>(self: ReadonlyArray<A>, index: number): A; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L920)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L966)
 
 Since v4.0.0

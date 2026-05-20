@@ -5,6 +5,8 @@ Module: `Array`<br />
 
 Adds a single element to the front of an iterable, returning a `NonEmptyArray`.
 
+**Details**
+
 - Always returns a non-empty array.
 - Does not mutate the input.
 
@@ -28,6 +30,6 @@ console.log(result) // [1, 2, 3, 4]
 declare const prepend: { <B>(head: B): <A>(self: Iterable<A>) => NonEmptyArray<A | B>; <A, B>(self: Iterable<A>, head: B): NonEmptyArray<A | B>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L571)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L601)
 
 Since v2.0.0

@@ -17,6 +17,6 @@ permit pool.
 export interface Partitioned<in K> extends PartitionedSemaphore<K> {}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PartitionedSemaphore.ts#L107)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PartitionedSemaphore.ts#L109)
 
 Since v4.0.0

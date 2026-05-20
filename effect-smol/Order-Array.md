@@ -5,12 +5,14 @@ Module: `Order`<br />
 
 Creates an `Order` for arrays by applying the given `Order` to each element, then comparing by length if all elements are equal.
 
-When to use this:
+**When to use**
+
 - When comparing arrays of the same element type
 - When you want shorter arrays to be considered less than longer arrays
 - When sorting collections of arrays
 
-Behavior:
+**Details**
+
 - Pure function: does not mutate inputs
 - Compares arrays element-by-element using the provided order
 - Stops at the first non-zero comparison result
@@ -30,7 +32,8 @@ console.log(arrayOrder([1, 2, 3], [1, 2])) // 1 (longer array is greater)
 console.log(arrayOrder([1, 2], [1, 2])) // 0
 ```
 
-See also:
+**See**
+
 - `Tuple` - Type-safe tuple ordering
 
 **Signature**
@@ -39,6 +42,6 @@ See also:
 declare const Array: <A>(O: Order<A>) => Order<ReadonlyArray<A>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Order.ts#L661)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Order.ts#L663)
 
 Since v4.0.0

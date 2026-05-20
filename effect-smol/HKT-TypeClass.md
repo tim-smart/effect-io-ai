@@ -5,8 +5,10 @@ Module: `HKT`<br />
 
 Base interface for type classes that work with Higher-Kinded Types.
 
-A TypeClass defines operations that can be performed on any type constructor
-that matches the given TypeLambda. This enables writing generic code that
+**Details**
+
+A `TypeClass` defines operations that can be performed on any type constructor
+that matches the given `TypeLambda`. This enables writing generic code that
 works across different container types like Array, Option, Effect, etc.
 
 **Example** (Defining higher-kinded type classes)
@@ -39,6 +41,6 @@ export interface TypeClass<F extends TypeLambda> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HKT.ts#L108)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HKT.ts#L111)
 
 Since v2.0.0

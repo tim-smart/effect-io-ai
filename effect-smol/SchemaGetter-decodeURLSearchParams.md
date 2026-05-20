@@ -5,10 +5,12 @@ Module: `SchemaGetter`<br />
 
 Decodes a `URLSearchParams` object into a nested tree structure using bracket-path notation.
 
-Use this when:
+**When to use**
+
 - Parsing query parameters from URLs into structured objects.
 
-Behavior:
+**Details**
+
 - Pure, never fails.
 - Interprets bracket-path keys (e.g. `user[name]`, `items[0]`) to build nested objects/arrays.
 - Leaf values are `string`.
@@ -22,10 +24,11 @@ const decode = SchemaGetter.decodeURLSearchParams()
 // Getter<TreeObject<string>, URLSearchParams>
 ```
 
-See also:
-- `encodeURLSearchParams` — inverse operation
-- `makeTreeRecord` — the underlying bracket-path parser
-- `decodeFormData` — similar for FormData
+**See**
+
+- `encodeURLSearchParams` - inverse operation
+- `makeTreeRecord` - the underlying bracket-path parser
+- `decodeFormData` - similar for FormData
 
 **Signature**
 
@@ -33,6 +36,6 @@ See also:
 declare const decodeURLSearchParams: () => Getter<Schema.TreeRecord<string>, URLSearchParams>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L1668)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L1701)
 
 Since v4.0.0

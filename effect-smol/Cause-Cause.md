@@ -5,6 +5,8 @@ Module: `Cause`<br />
 
 A structured representation of how an Effect failed.
 
+**Details**
+
 Access the individual failure entries through the `reasons` array, then
 narrow each entry with `isFailReason`, `isDieReason`, or
 `isInterruptReason`.
@@ -41,6 +43,6 @@ export interface Cause<out E> extends Pipeable, Inspectable, Equal {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L140)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L142)
 
 Since v2.0.0

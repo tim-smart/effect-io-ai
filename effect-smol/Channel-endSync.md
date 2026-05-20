@@ -11,6 +11,6 @@ Creates a `Channel` that immediately ends with the lazily evaluated value.
 declare const endSync: <A>(evaluate: LazyArg<A>) => Channel<never, never, A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L870)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L884)
 
 Since v4.0.0

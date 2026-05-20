@@ -5,7 +5,12 @@ Module: `Exit`<br />
 
 Discards the success value of an Exit, replacing it with `void`.
 
+**When to use**
+
 - Use when you only care about whether the computation succeeded or failed, not the value
+
+**Details**
+
 - Failures pass through unchanged
 
 Allocates a new Exit if successful. Does not mutate the input.
@@ -31,6 +36,6 @@ console.log(Exit.isSuccess(voided)) // true
 declare const asVoid: <A, E>(self: Exit<A, E>) => Exit<void, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Exit.ts#L839)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Exit.ts#L969)
 
 Since v2.0.0

@@ -12,6 +12,6 @@ handlers, remote replicas, and reactivity invalidation keys.
 declare class Registry
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventLog.ts#L76)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventLog.ts#L78)
 
 Since v4.0.0

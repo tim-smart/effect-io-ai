@@ -3,10 +3,12 @@ Module: `Graph`<br />
 
 ## Graph.externals
 
-Creates an iterator over external nodes (nodes without edges in specified direction).
+Creates an iterator over external nodes (nodes without edges in the specified direction).
 
-External nodes are nodes that have no outgoing edges (direction="outgoing") or
-no incoming edges (direction="incoming"). These are useful for finding
+**Details**
+
+External nodes have no outgoing edges (`direction: "outgoing"`) or no
+incoming edges (`direction: "incoming"`). These are useful for finding
 sources, sinks, or isolated nodes.
 
 **Example** (Iterating external nodes)
@@ -43,6 +45,6 @@ console.log(sources) // [0, 3]
 declare const externals: { (config?: ExternalsConfig): <N, E, T extends Kind = "directed">(graph: Graph<N, E, T> | MutableGraph<N, E, T>) => NodeWalker<N>; <N, E, T extends Kind = "directed">(graph: Graph<N, E, T> | MutableGraph<N, E, T>, config?: ExternalsConfig): NodeWalker<N>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Graph.ts#L4405)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Graph.ts#L4431)
 
 Since v3.18.0

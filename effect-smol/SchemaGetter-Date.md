@@ -5,10 +5,12 @@ Module: `SchemaGetter`<br />
 
 Coerces a value to a `Date` using `new Date(input)`.
 
-Use this when:
+**When to use**
+
 - You need to parse a string, number, or Date into a `Date` object.
 
-Behavior:
+**Details**
+
 - Delegates to `new globalThis.Date(input)`.
 - Does not validate the result — may produce an invalid Date.
 
@@ -21,8 +23,9 @@ const toDate = SchemaGetter.Date<string>()
 // Getter<Date, string>
 ```
 
-See also:
-- `dateTimeUtcFromInput` — validated DateTime parsing
+**See**
+
+- `dateTimeUtcFromInput` - validated DateTime parsing
 
 **Signature**
 
@@ -30,6 +33,6 @@ See also:
 declare const Date: <E extends string | number | Date>() => Getter<Date, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L836)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L858)
 
 Since v4.0.0

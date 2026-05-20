@@ -5,6 +5,8 @@ Module: `Multipart`<br />
 
 Error raised while parsing, streaming, or persisting multipart form data.
 
+**Details**
+
 The `reason` field contains the concrete `MultipartErrorReason`.
 
 **Signature**
@@ -13,6 +15,6 @@ The `reason` field contains the concrete `MultipartErrorReason`.
 declare class MultipartError
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Multipart.ts#L205)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Multipart.ts#L221)
 
 Since v4.0.0

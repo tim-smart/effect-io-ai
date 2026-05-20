@@ -6,6 +6,8 @@ Module: `HttpServerRequest`<br />
 Persists the current multipart request body and decodes it with the supplied
 schema.
 
+**Details**
+
 The effect requires the services needed to persist multipart files, including a
 scope, file system, and path service.
 
@@ -15,6 +17,6 @@ scope, file system, and path service.
 declare const schemaBodyMultipart: <A, I extends Partial<Multipart.Persisted>, RD, RE>(schema: Schema.Codec<A, I, RD, RE>, options?: ParseOptions | undefined) => Effect.Effect<A, Multipart.MultipartError | Schema.SchemaError, HttpServerRequest | Scope.Scope | FileSystem.FileSystem | Path.Path | RD>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpServerRequest.ts#L295)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpServerRequest.ts#L311)
 
 Since v4.0.0

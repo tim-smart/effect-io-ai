@@ -5,7 +5,12 @@ Module: `Exit`<br />
 
 Creates a failed Exit representing fiber interruption.
 
+**When to use**
+
 - Use to signal that a fiber was interrupted
+
+**Details**
+
 - Optionally pass a fiber ID to identify which fiber was interrupted
 
 Returns a `Failure<never>` with an `Interrupt` cause.
@@ -30,6 +35,6 @@ console.log(Exit.hasInterrupts(exit)) // true
 declare const interrupt: (fiberId?: number | undefined) => Exit<never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Exit.ts#L339)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Exit.ts#L379)
 
 Since v2.0.0

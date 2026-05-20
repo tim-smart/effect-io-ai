@@ -5,6 +5,8 @@ Module: `Deferred`<br />
 
 Type-level variance marker for the value and error channels of `Deferred`.
 
+**Details**
+
 This interface is part of the public type structure and is not intended to
 be constructed directly.
 
@@ -19,6 +21,6 @@ export interface Variance<in out A, in out E> {
   }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Deferred.ts#L158)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Deferred.ts#L162)
 
 Since v2.0.0

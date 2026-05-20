@@ -12,6 +12,6 @@ Effect context.
 declare class OpenAiClient
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/OpenAiClient.ts#L83)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/OpenAiClient.ts#L86)
 
 Since v4.0.0

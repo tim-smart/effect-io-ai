@@ -6,6 +6,8 @@ Module: `Queue`<br />
 Creates a bounded queue with sliding strategy. When the queue reaches capacity,
 new elements are added and the oldest elements are dropped.
 
+**When to use**
+
 This strategy prevents producers from being blocked but may result in message loss.
 Useful when you want to maintain a rolling window of the most recent messages.
 
@@ -36,6 +38,6 @@ const program = Effect.gen(function*() {
 declare const sliding: <A, E = never>(capacity: number) => Effect<Queue<A, E>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Queue.ts#L491)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Queue.ts#L513)
 
 Since v2.0.0

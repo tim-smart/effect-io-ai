@@ -5,6 +5,8 @@ Module: `FileSystem`<br />
 
 Specifies the reference point for seeking within a file.
 
+**Details**
+
 - `"start"` - Seek from the beginning of the file
 - `"current"` - Seek from the current position
 
@@ -14,6 +16,6 @@ Specifies the reference point for seeking within a file.
 type SeekMode = "start" | "current"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FileSystem.ts#L1194)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FileSystem.ts#L1250)
 
 Since v4.0.0

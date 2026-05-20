@@ -17,6 +17,6 @@ back.
 declare const MultiDocumentFromJson: Schema.Codec<MultiDocument, Schema.Json, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaRepresentation.ts#L1665)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaRepresentation.ts#L1712)
 
 Since v4.0.0

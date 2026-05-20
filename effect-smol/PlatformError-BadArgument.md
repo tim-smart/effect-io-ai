@@ -5,6 +5,8 @@ Module: `PlatformError`<br />
 
 Error data for an invalid argument passed to a platform API.
 
+**Details**
+
 The error records the module and method that rejected the argument, with an
 optional description and cause. It is usually wrapped in `PlatformError`.
 
@@ -14,6 +16,6 @@ optional description and cause. It is usually wrapped in `PlatformError`.
 declare class BadArgument
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PlatformError.ts#L47)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PlatformError.ts#L49)
 
 Since v4.0.0

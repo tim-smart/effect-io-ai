@@ -12,6 +12,6 @@ Represents provider-specific options that can be associated with a
 export interface FilePartOptions extends ProviderOptions {}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L490)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L496)
 
 Since v4.0.0

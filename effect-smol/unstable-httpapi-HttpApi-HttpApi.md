@@ -6,6 +6,8 @@ Module: `HttpApi`<br />
 An `HttpApi` is a collection of HTTP API groups and endpoints that represents a
 portion of your domain.
 
+**When to use**
+
 Endpoint implementations can be provided with `HttpApiBuilder.group`, and the
 completed API can be registered with `HttpApiBuilder.layer`.
 
@@ -40,11 +42,11 @@ export interface HttpApi<
   prefix<const Prefix extends PathInput>(prefix: Prefix): HttpApi<Id, HttpApiGroup.AddPrefix<Groups, Prefix>>
 
   /**
-   * Add a middleware to a `HttpApi`. It will be applied to all endpoints in the
-   * `HttpApi`.
+   * Adds a middleware to every endpoint currently in the `HttpApi`.
    *
-   * Note that this will only add the middleware to the endpoints **before** this
-   * api is called.
+   * **Gotchas**
+   *
+   * Endpoints added after this method is called do not receive the middleware.
    */
   middleware<I extends HttpApiMiddleware.AnyId, S>(
     middleware: Context.Key<I, S>
@@ -62,6 +64,6 @@ export interface HttpApi<
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApi.ts#L61)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApi.ts#L63)
 
 Since v4.0.0

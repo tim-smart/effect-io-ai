@@ -11,6 +11,6 @@ A `Reducer` for concatenating `string`s.
 declare const ReducerConcat: Reducer.Reducer<string>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L1330)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L1336)
 
 Since v4.0.0

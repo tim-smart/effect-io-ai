@@ -3,13 +3,12 @@ Module: `TxHashMap`<br />
 
 ## TxHashMap.modify
 
-Updates the value for the specified key if it exists, returning the previous
-value in `Some`.
+Updates the value for the specified key if it exists, returning the previous value in `Some`; returns `None` and leaves the map unchanged when the key is absent.
 
-Returns `None` and leaves the map unchanged when the key is absent.
+**Details**
 
-**Mutation behavior**: This function mutates the original TxHashMap by updating
-the value at the specified key. It does not return a new TxHashMap reference.
+This function mutates the original TxHashMap by updating the value at the
+specified key. It does not return a new TxHashMap reference.
 
 **Example** (Updating existing values)
 
@@ -52,6 +51,6 @@ const program = Effect.gen(function*() {
 declare const modify: { <K, V>(key: K, f: (value: V) => V): (self: TxHashMap<K, V>) => Effect.Effect<Option.Option<V>>; <K, V>(self: TxHashMap<K, V>, key: K, f: (value: V) => V): Effect.Effect<Option.Option<V>>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashMap.ts#L734)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashMap.ts#L739)
 
 Since v4.0.0

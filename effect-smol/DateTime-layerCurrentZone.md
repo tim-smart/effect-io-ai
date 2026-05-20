@@ -5,6 +5,8 @@ Module: `DateTime`<br />
 
 Create a Layer from the given time zone.
 
+**Details**
+
 This layer provides the `CurrentTimeZone` service with the specified time zone.
 
 **Example** (Providing current time zone layers)
@@ -30,6 +32,6 @@ Effect.provide(program, layer)
 declare const layerCurrentZone: (resource: NoInfer<TimeZone>) => Layer.Layer<CurrentTimeZone>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L2614)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L2747)
 
 Since v3.6.0

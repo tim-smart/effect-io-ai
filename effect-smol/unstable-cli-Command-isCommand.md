@@ -11,6 +11,6 @@ Returns `true` if the provided value is a `Command`.
 declare const isCommand: (u: unknown) => u is Command.Any
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Command.ts#L437)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Command.ts#L459)
 
 Since v4.0.0

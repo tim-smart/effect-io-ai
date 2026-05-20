@@ -10,7 +10,7 @@ them together.
 
 - Building pipelines of partial functions (Kleisli composition)
 
-**Behavior**
+**Details**
 
 - Calls `afb(a)`, then if `Some`, calls `bfc` with its value
 - Short-circuits to `None` if either function returns `None`
@@ -45,6 +45,6 @@ console.log(parseAndDouble("not a number"))
 declare const composeK: { <B, C>(bfc: (b: B) => Option<C>): <A>(afb: (a: A) => Option<B>) => (a: A) => Option<C>; <A, B, C>(afb: (a: A) => Option<B>, bfc: (b: B) => Option<C>): (a: A) => Option<C>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L1585)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L1589)
 
 Since v2.0.0

@@ -6,6 +6,8 @@ Module: `Metric`<br />
 Returns a human-readable string representation of all currently registered
 metrics in a tabular format.
 
+**Details**
+
 This debugging utility captures a snapshot of all metrics and formats them
 in an easy-to-read table showing names, descriptions, types, attributes,
 and current state values.
@@ -60,6 +62,6 @@ const program = Effect.gen(function*() {
 declare const dump: Effect<string, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Metric.ts#L3123)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Metric.ts#L3166)
 
 Since v4.0.0

@@ -5,6 +5,8 @@ Module: `HttpRouter`<br />
 
 Constructs an empty `HttpRouter` service.
 
+**Details**
+
 The returned router accepts route and middleware registrations and later routes
 the current `HttpServerRequest` to the matching `HttpServerResponse`.
 
@@ -14,6 +16,6 @@ the current `HttpServerRequest` to the matching `HttpServerResponse`.
 declare const make: Effect.Effect<HttpRouter, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpRouter.ts#L124)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpRouter.ts#L127)
 
 Since v4.0.0

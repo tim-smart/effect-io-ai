@@ -5,6 +5,8 @@ Module: `TxPriorityQueue`<br />
 
 A transactional priority queue backed by a sorted `Chunk`.
 
+**Details**
+
 Elements are stored in ascending order according to the `Order` provided at
 construction time. `take` returns the smallest element, `peek` observes it
 without removing.
@@ -34,6 +36,6 @@ export interface TxPriorityQueue<in out A> extends Inspectable, Pipeable {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxPriorityQueue.ts#L49)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxPriorityQueue.ts#L51)
 
 Since v4.0.0

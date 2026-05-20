@@ -5,6 +5,8 @@ Module: `Stream`<br />
 
 Maps each element to a stream and flattens the resulting streams.
 
+**Details**
+
 With the default sequential concurrency, inner streams are concatenated in
 input order. When `concurrency` is greater than `1` or `"unbounded"`,
 multiple inner streams may run at the same time and their outputs are merged
@@ -33,6 +35,6 @@ Effect.runPromise(program)
 declare const flatMap: { <A, A2, E2, R2>(f: (a: A) => Stream<A2, E2, R2>, options?: { readonly concurrency?: number | "unbounded" | undefined; readonly bufferSize?: number | undefined; } | undefined): <E, R>(self: Stream<A, E, R>) => Stream<A2, E2 | E, R2 | R>; <A, E, R, A2, E2, R2>(self: Stream<A, E, R>, f: (a: A) => Stream<A2, E2, R2>, options?: { readonly concurrency?: number | "unbounded" | undefined; readonly bufferSize?: number | undefined; } | undefined): Stream<A2, E | E2, R | R2>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L2385)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L2420)
 
 Since v2.0.0

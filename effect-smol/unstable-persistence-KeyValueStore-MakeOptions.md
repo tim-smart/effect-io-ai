@@ -5,6 +5,8 @@ Module: `KeyValueStore`<br />
 
 Implementation callbacks used by `make` to construct a `KeyValueStore`.
 
+**Details**
+
 Primitive operations are required, while helpers such as `has`, `isEmpty`,
 and `modify` can be supplied to override the defaults.
 
@@ -44,6 +46,6 @@ type MakeOptions = Partial<KeyValueStore> & {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/KeyValueStore.ts#L118)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/KeyValueStore.ts#L120)
 
 Since v4.0.0

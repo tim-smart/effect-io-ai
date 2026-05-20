@@ -5,7 +5,8 @@ Module: `SchemaGetter`<br />
 
 Trims whitespace from both ends of a string.
 
-Behavior:
+**Details**
+
 - Pure, delegates to `String.trim`.
 
 **Example** (Trim whitespace)
@@ -22,6 +23,6 @@ const trimmed = SchemaGetter.trim<string>()
 declare const trim: <E extends string>() => Getter<string, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L857)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L880)
 
 Since v4.0.0

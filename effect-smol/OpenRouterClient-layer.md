@@ -11,6 +11,6 @@ Creates a layer for the OpenRouter client with the given options.
 declare const layer: (options: Options) => Layer.Layer<OpenRouterClient, never, HttpClient.HttpClient>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openrouter/src/OpenRouterClient.ts#L247)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openrouter/src/OpenRouterClient.ts#L251)
 
 Since v4.0.0

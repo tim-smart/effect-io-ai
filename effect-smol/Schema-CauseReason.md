@@ -8,6 +8,7 @@ a typed error (`Fail`), an unexpected defect (`Die`), or an interrupt
 (`Interrupt`).
 
 **Details**
+
 The `error` schema validates typed failures and the `defect` schema validates
 unexpected defects.
 
@@ -28,6 +29,6 @@ export interface CauseReason<E extends Top, D extends Top> extends
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L8021)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L8280)
 
 Since v4.0.0

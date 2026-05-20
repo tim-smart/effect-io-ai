@@ -5,8 +5,14 @@ Module: `Ref`<br />
 
 Gets the current value of the Ref synchronously (unsafe version).
 
-This function reads the current value without wrapping in Effect.
-Use this only when you're sure about the safety of immediate access.
+**When to use**
+
+Use this when you need immediate synchronous access and can guarantee that
+reading the `Ref` outside of `Effect` is safe.
+
+**Gotchas**
+
+Prefer `Ref.get` for Effect-wrapped access in Effect programs.
 
 **Example** (Reading a ref unsafely)
 
@@ -30,6 +36,6 @@ console.log(value) // 42
 declare const getUnsafe: <A>(self: Ref<A>) => A
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Ref.ts#L698)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Ref.ts#L719)
 
 Since v4.0.0

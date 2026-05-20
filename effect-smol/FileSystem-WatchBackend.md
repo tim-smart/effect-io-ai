@@ -5,6 +5,8 @@ Module: `FileSystem`<br />
 
 Service key for file system watch backend implementations.
 
+**Details**
+
 This service provides the low-level file watching capabilities that can be
 implemented differently on various platforms (e.g., inotify on Linux,
 FSEvents on macOS, etc.).
@@ -43,6 +45,6 @@ const withCustomBackend = Effect.provideService(
 declare class WatchBackend
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FileSystem.ts#L1291)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FileSystem.ts#L1355)
 
 Since v4.0.0

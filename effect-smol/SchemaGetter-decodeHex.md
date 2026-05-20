@@ -5,7 +5,8 @@ Module: `SchemaGetter`<br />
 
 Decodes a hexadecimal string to a `Uint8Array`.
 
-Behavior:
+**Details**
+
 - Fails with `Issue.InvalidValue` if the input is not valid hex.
 
 **Example** (Decode hex to bytes)
@@ -17,9 +18,10 @@ const decode = SchemaGetter.decodeHex<string>()
 // Getter<Uint8Array, string>
 ```
 
-See also:
-- `decodeHexString` — decode to `string` instead
-- `encodeHex` — inverse operation
+**See**
+
+- `decodeHexString` - decode to `string` instead
+- `encodeHex` - inverse operation
 
 **Signature**
 
@@ -27,6 +29,6 @@ See also:
 declare const decodeHex: <E extends string>() => Getter<Uint8Array, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L1423)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L1453)
 
 Since v4.0.0

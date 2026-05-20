@@ -6,16 +6,18 @@ Module: `ConfigProvider`<br />
 A discriminated union describing the shape of a configuration value at a
 given path.
 
-- `Value` – a terminal string leaf.
-- `Record` – an object-like container whose immediate child keys are known.
-  May carry an optional co-located `value`.
-- `Array` – an indexed container with a known `length`. May carry an
-  optional co-located `value`.
+**When to use**
 
-When to use:
-- Implement a custom `ConfigProvider` by returning `Node` values from the
-  `get` callback passed to `make`.
-- Inspect raw provider output before schema parsing.
+Use `Node` when implementing a custom `ConfigProvider` by returning raw
+nodes from the `get` callback passed to `make`, or when inspecting raw
+provider output before schema parsing.
+
+**Details**
+
+`Value` is a terminal string leaf. `Record` is an object-like container
+whose immediate child keys are known and may carry an optional co-located
+`value`. `Array` is an indexed container with a known `length` and may also
+carry an optional co-located `value`.
 
 **See**
 
@@ -44,6 +46,6 @@ type Node = | {
   }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ConfigProvider.ts#L118)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ConfigProvider.ts#L120)
 
 Since v4.0.0

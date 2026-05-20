@@ -6,6 +6,8 @@ Module: `Tokenizer`<br />
 Tokenizer service interface providing text tokenization and truncation
 operations.
 
+**Details**
+
 This interface defines the core operations for converting text to tokens and
 managing content length within token limits for AI model compatibility.
 
@@ -53,6 +55,6 @@ export interface Service {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tokenizer.ts#L97)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tokenizer.ts#L101)
 
 Since v4.0.0

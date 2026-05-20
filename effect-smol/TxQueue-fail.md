@@ -5,8 +5,9 @@ Module: `TxQueue`<br />
 
 Fails the queue with the specified error, discarding any buffered items.
 
-The queue transitions directly to done with `Cause.fail(error)`. Returns
-`false` if the queue was already closing or done.
+**Details**
+
+The queue transitions directly to done with `Cause.fail(error)`. Returns `false` if the queue was already closing or done.
 
 **Example** (Failing queues)
 
@@ -28,6 +29,6 @@ const program = Effect.gen(function*() {
 declare const fail: { <E>(error: E): <A>(self: TxEnqueue<A, E>) => Effect.Effect<boolean>; <A, E>(self: TxEnqueue<A, E>, error: E): Effect.Effect<boolean>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxQueue.ts#L1172)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxQueue.ts#L1161)
 
 Since v4.0.0

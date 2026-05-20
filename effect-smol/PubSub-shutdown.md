@@ -6,6 +6,8 @@ Module: `PubSub`<br />
 Shuts down the `PubSub`, interrupting suspended publishers and subscribers
 and finalizing active subscriptions.
 
+**Details**
+
 After shutdown, `publish` and `publishAll` succeed with `false`,
 `publishUnsafe` returns `false`, and subscription operations such as `take`
 interrupt.
@@ -36,6 +38,6 @@ const program = Effect.gen(function*() {
 declare const shutdown: <A>(self: PubSub<A>) => Effect.Effect<void>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PubSub.ts#L726)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PubSub.ts#L736)
 
 Since v2.0.0

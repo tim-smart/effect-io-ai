@@ -5,6 +5,8 @@ Module: `Runner`<br />
 
 A cluster runner that can host entities.
 
+**Details**
+
 Each runner has a unique network `address`, the shard `groups` it participates
 in, and a relative `weight` used when assigning shards across runners.
 
@@ -14,6 +16,6 @@ in, and a relative `weight` used when assigning shards across runners.
 declare class Runner
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Runner.ts#L45)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Runner.ts#L47)
 
 Since v4.0.0

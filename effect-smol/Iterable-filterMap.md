@@ -5,6 +5,8 @@ Module: `Iterable`<br />
 
 Transforms elements of an iterable using a function that returns a `Result`, keeping only successful values.
 
+**Details**
+
 This combines mapping and filtering in a single operation - the function is applied to each element,
 and only elements that result in `Result.succeed` are included in the result.
 
@@ -50,6 +52,6 @@ console.log(Array.from(evenIndexItems)) // ["0: a", "2: c", "4: e"]
 declare const filterMap: { <A, B, X>(f: (input: A, i: number) => Result<B, X>): (self: Iterable<A>) => Iterable<B>; <A, B, X>(self: Iterable<A>, f: (input: A, i: number) => Result<B, X>): Iterable<B>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Iterable.ts#L1589)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Iterable.ts#L1615)
 
 Since v2.0.0

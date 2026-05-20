@@ -5,6 +5,8 @@ Module: `Hash`<br />
 
 A type that represents an object that can be hashed.
 
+**Details**
+
 Objects implementing this interface provide a method to compute their hash value,
 which is used for efficient comparison and storage operations.
 
@@ -33,6 +35,6 @@ export interface Hash {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Hash.ts#L48)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Hash.ts#L50)
 
 Since v2.0.0

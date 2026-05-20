@@ -6,7 +6,9 @@ Module: `AnthropicTelemetry`<br />
 Applies the specified Anthropic GenAI telemetry attributes to the provided
 `Span`.
 
-**NOTE**: This method will mutate the `Span` **in-place**.
+**Gotchas**
+
+This method mutates the `Span` in place.
 
 **Signature**
 
@@ -14,6 +16,6 @@ Applies the specified Anthropic GenAI telemetry attributes to the provided
 declare const addGenAIAnnotations: { (options: AnthropicTelemetryAttributeOptions): (span: Span) => void; (span: Span, options: AnthropicTelemetryAttributeOptions): void; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTelemetry.ts#L109)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTelemetry.ts#L110)
 
 Since v4.0.0

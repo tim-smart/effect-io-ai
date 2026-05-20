@@ -5,19 +5,19 @@ Module: `SchemaIssue`<br />
 
 The root discriminated union of all validation error nodes.
 
-Every node has a `_tag` field for pattern-matching. The union includes both
-terminal `Leaf` types and composite types that wrap inner issues:
-`Filter`, `Encoding`, `Pointer`, `Composite`,
-`AnyOf`.
-
-When to use:
+**When to use**
 
 - Typing the error channel in `Effect<A, Issue, R>` results from schema
   parsing.
 - Writing custom formatters or issue-tree walkers.
 
-All `Issue` instances have a `toString()` that delegates to the default
-formatter, so `String(issue)` produces a human-readable message.
+**Details**
+
+Every node has a `_tag` field for pattern-matching. The union includes both
+terminal `Leaf` types and composite types that wrap inner issues:
+`Filter`, `Encoding`, `Pointer`, `Composite`,
+`AnyOf`. All `Issue` instances have a `toString()` that delegates to
+the default formatter, so `String(issue)` produces a human-readable message.
 
 **See**
 
@@ -37,6 +37,6 @@ type Issue = | Leaf
   | AnyOf
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaIssue.ts#L176)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaIssue.ts#L178)
 
 Since v4.0.0

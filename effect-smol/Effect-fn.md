@@ -5,6 +5,8 @@ Module: `Effect`<br />
 
 Creates a traced function with an optional span name and `SpanOptionsNoTrace` that adds spans and stack frames, plus pipeable post-processing that receives the Effect and the original arguments.
 
+**Details**
+
 Pipeable functions run after the body and can transform the resulting Effect.
 
 **Example** (Defining traced effect functions)
@@ -33,6 +35,6 @@ const program = Effect.gen(function*() {
 declare const fn: fn.Traced & ((name: string, options?: SpanOptionsNoTrace) => fn.Traced)
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L12749)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L12844)
 
 Since v3.11.0

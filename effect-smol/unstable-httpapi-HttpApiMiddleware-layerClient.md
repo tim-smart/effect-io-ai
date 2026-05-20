@@ -5,6 +5,8 @@ Module: `HttpApiMiddleware`<br />
 
 Provides a client-side middleware implementation for a middleware that is required by generated clients.
 
+**Details**
+
 The layer captures the surrounding services and makes the middleware available
 through the `ForClient` service marker used by HTTP API clients.
 
@@ -14,6 +16,6 @@ through the `ForClient` service marker used by HTTP API clients.
 declare const layerClient: <Id extends AnyId, S, R, EX = never, RX = never>(tag: Context.Key<Id, S>, service: HttpApiMiddlewareClient<Error<Id>, Id[typeof TypeId]["clientError"], R> | Effect.Effect<HttpApiMiddlewareClient<Error<Id>, Id[typeof TypeId]["clientError"], R>, EX, RX>) => Layer.Layer<ForClient<Id>, EX, R | Exclude<RX, Scope>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiMiddleware.ts#L454)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiMiddleware.ts#L468)
 
 Since v4.0.0

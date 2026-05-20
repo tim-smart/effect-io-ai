@@ -11,6 +11,6 @@ Generator return type accepted by `Effect.fn` and `Effect.fnUntraced`.
 type Return<A, E, R> = Generator<Effect<any, E, R>, A, any>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L8664)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L8755)
 
 Since v3.19.0

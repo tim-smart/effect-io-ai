@@ -6,6 +6,8 @@ Module: `Effect`<br />
 Updates the provided `Metric` every time the wrapped `Effect` fails with an
 **expected** error.
 
+**Details**
+
 Also accepts an optional function which can be used to map the error value
 of the `Effect` into a valid `Input` for the `Metric`.
 
@@ -54,6 +56,6 @@ Effect.runPromiseExit(program).then(() =>
 declare const trackErrors: { <Input, State, E>(metric: Metric.Metric<Input, State>, f: (error: E) => Input): <A, R>(self: Effect<A, E, R>) => Effect<A, E, R>; <State, E>(metric: Metric.Metric<NoInfer<E>, State>): <A, R>(self: Effect<A, E, R>) => Effect<A, E, R>; <A, E, R, Input, State>(self: Effect<A, E, R>, metric: Metric.Metric<Input, State>, f: (error: E) => Input): Effect<A, E, R>; <A, E, R, State>(self: Effect<A, E, R>, metric: Metric.Metric<NoInfer<E>, State>): Effect<A, E, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L13425)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L13530)
 
 Since v4.0.0

@@ -3,8 +3,9 @@ Module: `OpenAiStructuredOutput`<br />
 
 ## OpenAiStructuredOutput.toCodecOpenAI
 
-Transforms a `Schema.Codec` into a form compatible with OpenAI's
-structured output constraints.
+Transforms a `Schema.Codec` into a form compatible with OpenAI's structured output constraints.
+
+**Details**
 
 The transformation walks the schema AST and rewrites constructs that
 OpenAI does not support natively:
@@ -32,6 +33,6 @@ unchanged.
 declare const toCodecOpenAI: <T, E, RD, RE>(schema: Schema.Codec<T, E, RD, RE>) => { codec: Schema.Codec<T, unknown, RD, RE>; jsonSchema: JsonSchema.JsonSchema; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/OpenAiStructuredOutput.ts#L43)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/OpenAiStructuredOutput.ts#L44)
 
 Since v4.0.0

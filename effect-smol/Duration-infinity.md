@@ -19,6 +19,6 @@ console.log(Duration.toMillis(Duration.infinity)) // Infinity
 declare const infinity: Duration
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Duration.ts#L536)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Duration.ts#L544)
 
 Since v2.0.0

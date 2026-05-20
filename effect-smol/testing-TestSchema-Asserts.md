@@ -3,14 +3,11 @@ Module: `TestSchema`<br />
 
 ## TestSchema.Asserts
 
-Entry point for schema test assertions. Wraps a schema and exposes
-operation-specific helpers: `Decoding`, `Encoding`, make,
-arbitrary generation, and round-trip verification.
+Entry point for schema test assertions. Wraps a schema and exposes operation-specific helpers for decoding, encoding, make, arbitrary generation, and round-trip verification.
 
-When to use:
-- You are writing unit tests for a schema's decoding, encoding, or
-  construction behavior.
-- You want property-based round-trip or generation checks.
+**When to use**
+
+Use `Asserts` when writing schema unit tests for decoding, encoding, construction, property-based round-trip, or generation behavior.
 
 **Example** (Decoding and encoding a struct)
 
@@ -39,6 +36,6 @@ await asserts.encoding().succeed({ name: "Alice" })
 declare class Asserts<S> { constructor(schema: S) }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TestSchema.ts#L112)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TestSchema.ts#L108)
 
 Since v4.0.0

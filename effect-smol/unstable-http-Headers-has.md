@@ -5,6 +5,8 @@ Module: `Headers`<br />
 
 Returns `true` when a header with the given name is present.
 
+**Details**
+
 The lookup lowercases the provided header name.
 
 **Signature**
@@ -13,6 +15,6 @@ The lookup lowercases the provided header name.
 declare const has: { (key: string): (self: Headers) => boolean; (self: Headers, key: string): boolean; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Headers.ts#L226)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Headers.ts#L238)
 
 Since v4.0.0

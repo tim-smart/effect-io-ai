@@ -5,6 +5,8 @@ Module: `Inspectable`<br />
 
 Abstract base class that implements the Inspectable interface.
 
+**Details**
+
 This class provides a convenient way to create inspectable objects by extending it.
 Subclasses only need to implement the `toJSON()` method, and they automatically
 get proper `toString()` and Node.js inspection support.
@@ -44,6 +46,6 @@ console.log(user) // In Node.js, shows the same formatted output
 declare class Class
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Inspectable.ts#L275)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Inspectable.ts#L286)
 
 Since v2.0.0

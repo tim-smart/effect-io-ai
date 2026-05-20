@@ -11,6 +11,6 @@ Creates a `Tracer` value from a tracer implementation object.
 declare const make: (options: Tracer) => Tracer
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tracer.ts#L437)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tracer.ts#L431)
 
 Since v2.0.0

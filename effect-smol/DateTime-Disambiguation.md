@@ -6,6 +6,8 @@ Module: `DateTime`<br />
 A `Disambiguation` is used to resolve ambiguities when a `DateTime` is
 ambiguous, such as during a daylight saving time transition.
 
+**Details**
+
 For more information, see the [Temporal documentation](https://tc39.es/proposal-temporal/docs/timezone.html#ambiguity-due-to-dst-or-other-time-zone-offset-changes)
 
 - `"compatible"`: (default) Behavior matching Temporal API and legacy JavaScript Date and moment.js.
@@ -66,6 +68,6 @@ DateTime.makeZoned(gapTime, {
 type Disambiguation = "compatible" | "earlier" | "later" | "reject"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L408)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L438)
 
 Since v3.18.0

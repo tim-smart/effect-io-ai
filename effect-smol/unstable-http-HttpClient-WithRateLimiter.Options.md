@@ -5,6 +5,8 @@ Module: `HttpClient`<br />
 
 Options used to configure `withRateLimiter`.
 
+**Details**
+
 They define the backing limiter, initial limit window, keying strategy, algorithm, token cost, and whether response headers update future limits.
 
 **Signature**
@@ -44,6 +46,6 @@ export interface Options {
   }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpClient.ts#L974)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpClient.ts#L992)
 
 Since v4.0.0

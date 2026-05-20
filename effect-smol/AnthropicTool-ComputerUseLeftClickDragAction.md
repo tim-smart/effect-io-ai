@@ -11,6 +11,6 @@ Computer-use action payload for dragging from a start coordinate to an end coord
 type ComputerUseLeftClickDragAction = typeof ComputerUseLeftClickDragAction.Type
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L577)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L585)
 
 Since v4.0.0

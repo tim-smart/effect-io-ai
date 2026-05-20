@@ -5,7 +5,9 @@ Module: `Schema`<br />
 
 Validates at runtime that a string contains the specified literal substring.
 
-**Notes**
+**Details**
+
+Notes:
 The JSON Schema and arbitrary metadata use the substring as a raw regexp
 pattern. If the substring contains regexp syntax, generated patterns may not be
 equivalent to the runtime `includes` check.
@@ -16,6 +18,6 @@ equivalent to the runtime `includes` check.
 declare const isIncludes: (includes: string, annotations?: Annotations.Filter) => AST.Filter<string>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L5853)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L6025)
 
 Since v4.0.0

@@ -5,6 +5,8 @@ Module: `Persistence`<br />
 
 Provides `Persistence` from `BackingPersistence`.
 
+**Details**
+
 The layer serializes and deserializes `Persistable` exits, applies
 per-entry TTLs, and skips writes whose TTL is zero or negative.
 
@@ -14,6 +16,6 @@ per-entry TTLs, and skips writes whose TTL is zero or negative.
 declare const layer: Layer.Layer<Persistence, never, BackingPersistence>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Persistence.ts#L156)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Persistence.ts#L158)
 
 Since v4.0.0

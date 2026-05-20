@@ -5,12 +5,16 @@ Module: `Newtype`<br />
 
 Unwraps a newtype value, returning the underlying carrier value.
 
-- Use when you only need to read the inner value and do not need to wrap new
-  values.
-- For both wrapping and unwrapping, prefer `makeIso`.
-- Zero runtime cost: this is an identity cast.
+**When to use**
 
-**Example** (unwrapping a newtype)
+Use this when you only need to read the inner value and do not need to wrap
+new values. For both wrapping and unwrapping, prefer `makeIso`.
+
+**Details**
+
+This has zero runtime cost because it is an identity cast.
+
+**Example** (Unwrapping a newtype)
 
 ```ts
 import { Newtype } from "effect"
@@ -33,6 +37,6 @@ const raw: string = Newtype.value(label) // "hello"
 declare const value: <N extends Newtype.Any>(newtype: N) => Newtype.Carrier<N>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Newtype.ts#L175)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Newtype.ts#L188)
 
 Since v4.0.0

@@ -247,13 +247,13 @@
     },
     "project": "@effect/atom-react",
     "name": "HydrationBoundary",
-    "description": "Hydrates dehydrated Atom values into the current Atom registry for a React\nsubtree.\n\nNew Atom values are hydrated during render so descendants can read them\nimmediately, while values for existing Atoms are deferred until after commit\nso transition data does not update the current UI before React accepts it.",
+    "description": "Hydrates dehydrated Atom values into the current Atom registry for a React\nsubtree.\n\n**Details**\n\nNew Atom values are hydrated during render so descendants can read them\nimmediately, while values for existing Atoms are deferred until after commit\nso transition data does not update the current UI before React accepts it.",
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
     "category": "components",
     "signature": "declare const HydrationBoundary: React.FC<HydrationBoundaryProps>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/atom/react/src/ReactHydration.ts#L53"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/atom/react/src/ReactHydration.ts#L55"
   },
   {
     "_tag": "Interface",

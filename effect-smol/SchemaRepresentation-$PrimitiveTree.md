@@ -11,6 +11,6 @@ Schema codec for `PrimitiveTree`.
 declare const $PrimitiveTree: Schema.Codec<PrimitiveTree, PrimitiveTree, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaRepresentation.ts#L789)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaRepresentation.ts#L824)
 
 Since v4.0.0

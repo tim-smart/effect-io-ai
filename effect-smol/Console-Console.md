@@ -3,10 +3,7 @@ Module: `Console`<br />
 
 ## Console.Console
 
-Represents a console interface for logging and debugging operations.
-
-Provides methods for various console operations including logging, debugging,
-timing, and grouping output.
+Represents a console interface for logging, debugging, timing, and grouping output.
 
 **Signature**
 
@@ -34,6 +31,6 @@ export interface Console {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Console.ts#L92)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Console.ts#L89)
 
 Since v2.0.0

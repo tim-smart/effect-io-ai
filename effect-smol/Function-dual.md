@@ -3,21 +3,14 @@ Module: `Function`<br />
 
 ## Function.dual
 
-Creates a function that can be used in a data-last (aka `pipe`able) or
-data-first style.
+Creates a function that can be called in data-first style or data-last
+(`pipe`-friendly) style.
 
-The first parameter to `dual` is either the arity of the uncurried function
-or a predicate that determines if the function is being used in a data-first
-or data-last style.
+**Details**
 
-Using the arity is the most common use case, but there are some cases where
-you may want to use a predicate. For example, if you have a function that
-takes an optional argument, you can use a predicate to determine if the
-function is being used in a data-first or data-last style.
-
-You can pass either the arity of the uncurried function or a predicate
-which determines if the function is being used in a data-first or
-data-last style.
+Pass either the arity of the uncurried function or a predicate that decides
+whether the current call is data-first. Arity is the common case. Use a
+predicate when optional arguments make arity ambiguous.
 
 **Example** (Using arity to determine data-first or data-last style)
 
@@ -70,6 +63,6 @@ console.log(pipe(2, sum(3))) // 5
 declare const dual: { <DataLast extends (...args: Array<any>) => any, DataFirst extends (...args: Array<any>) => any>(arity: Parameters<DataFirst>["length"], body: DataFirst): DataLast & DataFirst; <DataLast extends (...args: Array<any>) => any, DataFirst extends (...args: Array<any>) => any>(isDataFirst: (args: IArguments) => boolean, body: DataFirst): DataLast & DataFirst; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Function.ts#L137)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Function.ts#L130)
 
 Since v2.0.0

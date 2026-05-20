@@ -3,10 +3,12 @@ Module: `Prompt`<br />
 
 ## Prompt.FilePart
 
-Content part representing a file attachment. Files can be provided as base64
-strings of data, byte arrays, or URLs.
+Content part representing a file attachment.
 
-Supports various file types including images, documents, and binary data.
+**Details**
+
+Files can be provided as base64 data strings, byte arrays, or URLs, and can
+represent images, documents, or other binary data.
 
 **Example** (Creating file parts)
 
@@ -45,6 +47,6 @@ export interface FilePart extends BasePart<"file", FilePartOptions> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L447)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L453)
 
 Since v4.0.0

@@ -5,6 +5,8 @@ Module: `Chat`<br />
 
 Represents a `Chat` that is backed by persistence.
 
+**Details**
+
 When calling a text generation method (e.g. `generateText`), the previous
 chat history as well as the relevent response parts will be saved to the
 backing persistence store.
@@ -25,6 +27,6 @@ export interface Persisted extends Service {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chat.ts#L725)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chat.ts#L749)
 
 Since v4.0.0

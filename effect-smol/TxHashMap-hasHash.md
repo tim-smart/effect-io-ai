@@ -5,6 +5,8 @@ Module: `TxHashMap`<br />
 
 Checks whether the specified key has an entry using a caller-supplied hash.
 
+**Gotchas**
+
 The supplied hash must be the hash for the same key, such as a precomputed
 `Hash.hash(key)` value. If the hash does not match the key, an existing entry
 may not be found.
@@ -54,6 +56,6 @@ const program = Effect.gen(function*() {
 declare const hasHash: { <K1 extends K, K>(key: K1, hash: number): <V>(self: TxHashMap<K, V>) => Effect.Effect<boolean>; <K1 extends K, K, V>(self: TxHashMap<K, V>, key: K1, hash: number): Effect.Effect<boolean>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashMap.ts#L1326)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashMap.ts#L1343)
 
 Since v4.0.0

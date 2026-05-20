@@ -11,6 +11,6 @@ Decoded payload value type for the event in a union with the specified tag.
 type PayloadWithTag<Events, Tag> = Payload<WithTag<Events, Tag>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Event.ts#L341)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Event.ts#L353)
 
 Since v4.0.0

@@ -6,6 +6,8 @@ Module: `MutableList`<br />
 Storage node used by the exposed `head` and `tail` fields of a
 `MutableList`.
 
+**Details**
+
 Most code should treat buckets as an implementation detail and use
 `MutableList` operations such as `append`, `prepend`, and `take` instead
 of constructing or mutating buckets directly.
@@ -46,6 +48,6 @@ export interface Bucket<A> {
   }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableList.ts#L164)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableList.ts#L166)
 
 Since v4.0.0

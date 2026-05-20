@@ -5,6 +5,8 @@ Module: `PubSub`<br />
 
 Synchronously checks how many messages can be taken from a subscription.
 
+**Details**
+
 Returns `Option.some(count)` while the subscription is active, including
 replay-buffered messages, and `Option.none()` after the subscription has
 been shut down. Prefer `remaining` in effectful code.
@@ -42,6 +44,6 @@ const program = Effect.gen(function*() {
 declare const remaining: <A>(self: Subscription<A>) => Effect.Effect<number>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PubSub.ts#L1359)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PubSub.ts#L1373)
 
 Since v4.0.0

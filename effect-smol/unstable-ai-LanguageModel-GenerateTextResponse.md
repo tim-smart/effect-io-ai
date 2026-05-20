@@ -3,11 +3,7 @@ Module: `LanguageModel`<br />
 
 ## LanguageModel.GenerateTextResponse
 
-Response class for text generation operations.
-
-Contains the generated content and provides convenient accessors for
-extracting different types of response parts like text, tool calls, and usage
-information.
+Response class for text generation operations, with accessors for extracting text, tool calls, usage information, and other response parts from generated content.
 
 **Example** (Inspecting a text response)
 
@@ -34,6 +30,6 @@ const program = Effect.gen(function*() {
 declare class GenerateTextResponse<Tools> { constructor(content: Array<Response.Part<Tools>>) }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/LanguageModel.ts#L389)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/LanguageModel.ts#L377)
 
 Since v4.0.0

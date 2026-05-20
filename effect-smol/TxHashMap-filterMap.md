@@ -6,8 +6,10 @@ Module: `TxHashMap`<br />
 Combines filtering and mapping in a single operation. Applies a filter to each
 entry, keeping only successful results and transforming them.
 
-**Return behavior**: This function returns a new TxHashMap reference containing
-only the transformed entries that succeeded. The original TxHashMap is not modified.
+**Details**
+
+This function returns a new TxHashMap reference containing only the transformed
+entries that succeeded. The original TxHashMap is not modified.
 
 **Example** (Filtering and mapping entries)
 
@@ -63,6 +65,6 @@ const program = Effect.gen(function*() {
 declare const filterMap: { <V, K, A, X>(f: (input: V, key: K) => Result<A, X>): (self: TxHashMap<K, V>) => Effect.Effect<TxHashMap<K, A>>; <K, V, A, X>(self: TxHashMap<K, V>, f: (input: V, key: K) => Result<A, X>): Effect.Effect<TxHashMap<K, A>>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashMap.ts#L1617)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashMap.ts#L1640)
 
 Since v4.0.0

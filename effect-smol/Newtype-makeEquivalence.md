@@ -6,11 +6,16 @@ Module: `Newtype`<br />
 Lifts an `Equivalence` for the carrier type into an `Equivalence` for the
 newtype.
 
-- Use when you need to compare two newtype values for equality.
-- The returned equivalence delegates to the provided carrier equivalence.
-- Zero runtime cost beyond the underlying equivalence check.
+**When to use**
 
-**Example** (comparing newtypes)
+Use this when you need to compare two newtype values for equality.
+
+**Details**
+
+The returned equivalence delegates to the provided carrier equivalence and
+has zero runtime cost beyond the underlying equivalence check.
+
+**Example** (Comparing newtypes)
 
 ```ts
 import { Equivalence, Newtype } from "effect"
@@ -34,6 +39,6 @@ eq(iso.set("a"), iso.set("b")) // false
 declare const makeEquivalence: <N extends Newtype.Any>(equivalence: Equivalence.Equivalence<Newtype.Carrier<N>>) => Equivalence.Equivalence<N>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Newtype.ts#L234)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Newtype.ts#L257)
 
 Since v4.0.0

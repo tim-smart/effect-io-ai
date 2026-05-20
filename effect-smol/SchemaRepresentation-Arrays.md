@@ -5,11 +5,12 @@ Module: `SchemaRepresentation`<br />
 
 An array or tuple type.
 
-- `elements` are the fixed positional elements (tuple prefix). Each may be
-  optional.
-- `rest` are the variadic tail types. A single-element `rest` with no
-  `elements` produces a plain `Array<T>`.
-- `checks` holds array-specific constraints (minLength, maxLength, unique, etc.).
+**Details**
+
+`elements` are the fixed positional elements, or tuple prefix, and each may
+be optional. `rest` contains the variadic tail types; a single-element
+`rest` with no `elements` produces a plain `Array<T>`. `checks` holds
+array-specific constraints, such as minLength, maxLength, and unique checks.
 
 **See**
 
@@ -28,6 +29,6 @@ export interface Arrays {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaRepresentation.ts#L380)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaRepresentation.ts#L399)
 
 Since v4.0.0

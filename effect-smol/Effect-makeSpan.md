@@ -29,6 +29,6 @@ const program = Effect.gen(function*() {
 declare const makeSpan: (name: string, options?: SpanOptionsNoTrace) => Effect<Span>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L7598)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L7675)
 
 Since v2.0.0

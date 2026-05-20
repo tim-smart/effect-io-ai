@@ -5,6 +5,8 @@ Module: `AnthropicLanguageModel`<br />
 
 Configuration options for the Anthropic language model.
 
+**Details**
+
 This service can be used to provide default configuration values or to
 override configuration on a per-request basis.
 
@@ -14,6 +16,6 @@ override configuration on a per-request basis.
 declare class Config
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicLanguageModel.ts#L83)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicLanguageModel.ts#L85)
 
 Since v4.0.0

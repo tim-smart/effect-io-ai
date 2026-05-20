@@ -11,6 +11,6 @@ Layer that provides the test `HttpClient` created by `makeTestClient`.
 declare const layerTestClient: Layer.Layer<HttpClient.HttpClient, never, HttpClient.HttpClient | HttpServer>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpServer.ts#L294)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpServer.ts#L310)
 
 Since v4.0.0

@@ -6,6 +6,8 @@ Module: `IdGenerator`<br />
 Creates a Layer that provides the IdGenerator service with custom
 configuration.
 
+**When to use**
+
 This is the recommended way to provide ID generation capabilities to your
 application. The layer will fail during construction if the configuration is
 invalid.
@@ -38,6 +40,6 @@ const program = Effect.gen(function*() {
 declare const layer: (options: MakeOptions) => Layer.Layer<IdGenerator, Cause.IllegalArgumentError>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/IdGenerator.ts#L323)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/IdGenerator.ts#L333)
 
 Since v4.0.0

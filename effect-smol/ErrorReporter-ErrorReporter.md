@@ -4,11 +4,13 @@ Module: `ErrorReporter`<br />
 ## ErrorReporter.ErrorReporter
 
 An `ErrorReporter` receives reported failures and forwards them to an
-external system (logging service, error tracker, etc.).
+external system such as a logging service or error tracker.
+
+**Details**
 
 Reporting is triggered by `Effect.withErrorReporting`,
 `ErrorReporter.report`, or built-in boundaries in the HTTP and RPC server
-modules. Use `make` to create a reporter — it handles deduplication
+modules. Use `make` to create a reporter; it handles deduplication
 and per-error annotation extraction automatically.
 
 **Signature**
@@ -24,6 +26,6 @@ export interface ErrorReporter {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ErrorReporter.ts#L93)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ErrorReporter.ts#L95)
 
 Since v4.0.0

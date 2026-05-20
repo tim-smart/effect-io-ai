@@ -5,6 +5,8 @@ Module: `SchemaAST`<br />
 
 AST node representing the `never` type — no value matches.
 
+**Details**
+
 Parsing always fails. Useful as a placeholder in unions or as the result
 of narrowing that eliminates all options.
 
@@ -19,6 +21,6 @@ of narrowing that eliminates all options.
 declare class Never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L749)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L770)
 
 Since v4.0.0

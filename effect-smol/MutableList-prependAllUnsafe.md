@@ -6,8 +6,10 @@ Module: `MutableList`<br />
 Prepends all elements from a ReadonlyArray to the beginning of the MutableList.
 This is an optimized version that can reuse the array when mutable=true.
 
-⚠️ **Warning**: When mutable=true, the input array may be modified internally.
-Only use mutable=true when you control the array lifecycle.
+**Gotchas**
+
+When mutable=true, the input array may be modified internally. Only use
+mutable=true when you control the array lifecycle.
 
 **Example** (Prepending arrays with optional mutation)
 
@@ -36,6 +38,6 @@ console.log(MutableList.takeAll(list)) // [10, 20, 30, 1, 2, 3, 4]
 declare const prependAllUnsafe: <A>(self: MutableList<A>, messages: ReadonlyArray<A>, mutable?: boolean) => void
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableList.ts#L450)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableList.ts#L454)
 
 Since v4.0.0

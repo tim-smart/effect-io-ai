@@ -17,6 +17,6 @@ export interface Map<Kind extends ParamKind, in out A, out B> extends Param<Kind
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Param.ts#L218)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Param.ts#L224)
 
 Since v4.0.0

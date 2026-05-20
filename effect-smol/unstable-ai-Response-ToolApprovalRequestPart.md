@@ -5,6 +5,8 @@ Module: `Response`<br />
 
 Response part representing a tool approval request.
 
+**Details**
+
 Emitted when a tool requires user approval before execution. The framework
 checks the tool's `needsApproval` property and emits this part instead of
 executing the tool when approval is required.
@@ -38,6 +40,6 @@ export interface ToolApprovalRequestPart extends BasePart<"tool-approval-request
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Response.ts#L1745)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Response.ts#L1754)
 
 Since v4.0.0

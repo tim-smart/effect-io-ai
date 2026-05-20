@@ -5,15 +5,13 @@ Module: `HKT`<br />
 
 Base interface for defining Higher-Kinded Type parameters.
 
-A TypeLambda encodes the "shape" of a type constructor, specifying how many
-type parameters it takes and their variance (contravariant, covariant, or invariant).
-This allows representing complex types like `Effect<A, E, R>` in a uniform way.
+**Details**
 
-The four parameters represent:
-- `In`: Contravariant input parameter
-- `Out2`: Covariant output parameter (often used for errors)
-- `Out1`: Covariant output parameter (often used for context/environment)
-- `Target`: Invariant target parameter (the main type)
+A `TypeLambda` encodes the "shape" of a type constructor, specifying how many
+type parameters it takes and their variance (contravariant, covariant, or
+invariant). The four parameters are `In` for contravariant input, `Out2` for
+covariant output often used for errors, `Out1` for covariant output often used
+for context or environment, and `Target` for the invariant main type.
 
 **Example** (Defining type lambdas)
 
@@ -47,6 +45,6 @@ export interface TypeLambda {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HKT.ts#L149)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HKT.ts#L150)
 
 Since v2.0.0

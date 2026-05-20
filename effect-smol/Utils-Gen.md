@@ -6,19 +6,18 @@ Module: `Utils`<br />
 Type-level signature for generator-based monadic composition over any
 `TypeLambda`.
 
-When to use:
+**When to use**
 
-- Type the `gen` function of a module that supports generator syntax
-  (e.g. `Option.gen`, `Result.gen`, `Effect.gen`).
-- Accepts either `(body)` or `(self, body)` where `body` is a generator
-  function. The `self` overload binds `this` inside the generator.
+Type the `gen` function of a module that supports generator syntax, such as
+`Option.gen`, `Result.gen`, and `Effect.gen`. It accepts either `(body)` or
+`(self, body)` where `body` is a generator function. The `self` overload
+binds `this` inside the generator.
 
-Behavior:
+**Details**
 
-- Pure type alias — no runtime behavior.
-- Infers `R`, `O`, `E` from the yielded values via `Variance` or
-  `Kind` constraints.
-- The generator's return type `A` becomes the output's `A` parameter.
+This is a pure type alias with no runtime behavior. It infers `R`, `O`, and
+`E` from the yielded values via `Variance` or `Kind` constraints. The
+generator's return type `A` becomes the output's `A` parameter.
 
 **Example** (Typing a gen function for Option)
 
@@ -64,6 +63,6 @@ type Gen<F> = <
 >
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Utils.ts#L214)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Utils.ts#L208)
 
 Since v2.0.0

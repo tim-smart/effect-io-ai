@@ -8,6 +8,8 @@ writing. A channel may read values of type `InElem` and write values of type
 `OutElem`. When the channel finishes, it yields a value of type `OutDone`. A
 channel may fail with a value of type `OutErr`.
 
+**Details**
+
 Channels are the foundation of Streams: both streams and sinks are built on
 channels. Most users shouldn't have to use channels directly, as streams and
 sinks are much more convenient and cover all common use cases. However, when
@@ -66,6 +68,6 @@ export interface Channel<
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L183)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L185)
 
 Since v2.0.0

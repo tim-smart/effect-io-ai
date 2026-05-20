@@ -5,6 +5,8 @@ Module: `Match`<br />
 
 Matches values of type `symbol`.
 
+**Details**
+
 This predicate refines unknown values to symbols, allowing pattern matching
 on symbol types. Symbols are unique identifiers that are often used as
 object keys or for creating private properties.
@@ -39,6 +41,6 @@ console.log(handleSymbol("string")) // "Not a symbol"
 declare const symbol: Predicate.Refinement<unknown, symbol>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L1456)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L1490)
 
 Since v4.0.0

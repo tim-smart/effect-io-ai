@@ -5,6 +5,8 @@ Module: `Array`<br />
 
 Creates a `NonEmptyArray` from one or more elements.
 
+**When to use**
+
 - Use when you have literal values and want a typed non-empty array.
 - The element type is inferred as the union of all arguments.
 - Always returns a `NonEmptyArray` since at least one argument is required.
@@ -29,6 +31,6 @@ console.log(result) // [1, 2, 3]
 declare const make: <Elements extends NonEmptyArray<unknown>>(...elements: Elements) => NonEmptyArray<Elements[number]>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L202)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L210)
 
 Since v2.0.0

@@ -5,6 +5,8 @@ Module: `Stream`<br />
 
 Constructs a stream from a range of integers, including both endpoints.
 
+**Details**
+
 If the provided `min` is greater than `max`, the stream will not emit any
 values.
 
@@ -28,6 +30,6 @@ Effect.runPromise(program)
 declare const range: (min: number, max: number, chunkSize?: number) => Stream<number>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L1724)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L1755)
 
 Since v2.0.0

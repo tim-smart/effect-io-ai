@@ -7,6 +7,7 @@ Validates that a string has the `Symbol(description)` format used by Effect's
 symbol string encoding.
 
 **Details**
+
 The check uses the pattern `^Symbol\((.*)\)$`. It is not a general test for
 whether a string can be passed to JavaScript's `Symbol()` function.
 
@@ -16,6 +17,6 @@ whether a string can be passed to JavaScript's `Symbol()` function.
 declare const isStringSymbol: (annotations?: Annotations.Filter) => AST.Filter<string>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L5634)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L5792)
 
 Since v4.0.0

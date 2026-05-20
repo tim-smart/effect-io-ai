@@ -5,6 +5,8 @@ Module: `DevToolsSchema`<br />
 
 Type of any devtools metric snapshot.
 
+**Details**
+
 The union covers counters, frequencies, gauges, histograms, and summaries.
 
 **Signature**
@@ -13,6 +15,6 @@ The union covers counters, frequencies, gauges, histograms, and summaries.
 type Metric = Schema.Schema.Type<typeof Metric>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DevToolsSchema.ts#L439)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DevToolsSchema.ts#L461)
 
 Since v4.0.0

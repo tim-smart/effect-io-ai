@@ -5,6 +5,8 @@ Module: `Command`<br />
 
 Sets usage examples for a command.
 
+**Details**
+
 Examples are exposed in structured `HelpDoc` data and rendered by the
 default formatter in an `EXAMPLES` section.
 
@@ -27,6 +29,6 @@ const login = Command.make("login").pipe(
 declare const withExamples: { (examples: ReadonlyArray<Command.Example>): <const Name extends string, Input, E, R, ContextInput>(self: Command<Name, Input, ContextInput, E, R>) => Command<Name, Input, ContextInput, E, R>; <const Name extends string, Input, E, R, ContextInput>(self: Command<Name, Input, ContextInput, E, R>, examples: ReadonlyArray<Command.Example>): Command<Name, Input, ContextInput, E, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Command.ts#L1075)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Command.ts#L1146)
 
 Since v4.0.0

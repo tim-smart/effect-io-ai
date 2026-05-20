@@ -5,13 +5,15 @@ Module: `Equal`<br />
 
 Compares two values for deep structural equality.
 
-When to use:
+**When to use**
+
 - As the default equality check throughout Effect code.
 - In data-level assertions or conditional logic where structural comparison
   is needed.
 - In its curried (single-argument) form to build reusable predicates.
 
-Behavior:
+**Details**
+
 - Returns a `boolean`; never throws.
 - Primitives: compared by value. `NaN` equals `NaN`.
 - Objects implementing `Equal`: delegates to their
@@ -20,19 +22,23 @@ Behavior:
 - Dates: compared by ISO string representation.
 - RegExps: compared by string representation.
 - Arrays: element-by-element recursive comparison (order matters).
-- Maps / Sets: structural comparison of entries (order-independent, O(n²)).
+- Maps / Sets: structural comparison of entries (order-independent).
 - Plain objects: all own and inherited enumerable keys are compared
   recursively.
 - Functions without an `Equal` implementation are compared by reference.
 - Circular references are handled; two structures that are circular at the
   same depth are considered equal.
 - Hash values are checked first as a fast-path rejection.
-- Results are cached per object pair in a WeakMap. **Objects must not be
-  mutated after their first comparison.**
 - Supports dual (data-last) usage: call with one argument to get a curried
   predicate.
 
-**Example** (comparing values)
+**Gotchas**
+
+- Results are cached per object pair in a WeakMap. **Objects must not be
+  mutated after their first comparison.**
+- Map and Set comparisons are O(n²) in size.
+
+**Example** (Comparing Values)
 
 ```ts
 import { Equal } from "effect"
@@ -72,6 +78,6 @@ console.log(is5(3)) // false
 declare const equals: { <B>(that: B): <A>(self: A) => boolean; <A, B>(self: A, that: B): boolean; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Equal.ts#L239)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Equal.ts#L244)
 
 Since v2.0.0

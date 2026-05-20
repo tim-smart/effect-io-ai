@@ -6,10 +6,12 @@ Module: `Schedule`<br />
 A schedule that divides the timeline to `interval`-long windows, and sleeps
 until the nearest window boundary every time it recurs.
 
+**Details**
+
 For example, `Schedule.windowed("10 seconds")` would produce a schedule as
 follows:
 
-```
+```text
      10s        10s        10s       10s
 |----------|----------|----------|----------|
 |action------|sleep---|act|-sleep|action----|
@@ -40,6 +42,6 @@ const program = Effect.gen(function*() {
 declare const windowed: (interval: Duration.Input) => Schedule<number>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L3144)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L3162)
 
 Since v2.0.0

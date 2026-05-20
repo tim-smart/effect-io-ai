@@ -5,8 +5,10 @@ Module: `SubscriptionRef`<br />
 
 Unsafely retrieves the current value of the `SubscriptionRef`.
 
+**Gotchas**
+
 This function directly accesses the underlying reference without any
-synchronization. It should only be used when you're certain there are no
+synchronization. It should only be used when you are certain there are no
 concurrent modifications.
 
 **Example** (Reading the current value unsafely)
@@ -28,6 +30,6 @@ const program = Effect.gen(function*() {
 declare const getUnsafe: <A>(self: SubscriptionRef<A>) => A
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SubscriptionRef.ts#L169)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SubscriptionRef.ts#L175)
 
 Since v4.0.0

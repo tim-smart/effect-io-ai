@@ -7,6 +7,8 @@ Adds metadata annotations to the **encoded** side of a schema without
 changing its runtime behavior. This is the encoded-side counterpart of
 `annotate`, which targets the decoded (Type) side.
 
+**Details**
+
 Internally the schema is flipped so that `Encoded` becomes `Type`,
 annotated, and then flipped back.
 
@@ -35,6 +37,6 @@ console.log(Schema.toEncoded(schema).ast.annotations?.title)
 declare const annotateEncoded: <S extends Top>(annotations: Annotations.Bottom<S["Encoded"], readonly []>) => (self: S) => S["Rebuild"]
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L516)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L528)
 
 Since v4.0.0

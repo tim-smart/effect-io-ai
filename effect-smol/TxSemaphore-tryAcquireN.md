@@ -3,8 +3,9 @@ Module: `TxSemaphore`<br />
 
 ## TxSemaphore.tryAcquireN
 
-Tries to acquire the specified number of permits from the semaphore without blocking.
-Returns true if successful, false if not enough permits are available.
+Tries to acquire the specified number of permits from the semaphore without
+blocking, returning `true` if successful or `false` if not enough permits are
+available.
 
 **Example** (Trying to acquire multiple permits)
 
@@ -30,6 +31,6 @@ const program = Effect.gen(function*() {
 declare const tryAcquireN: (self: TxSemaphore, n: number) => Effect.Effect<boolean>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxSemaphore.ts#L322)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxSemaphore.ts#L328)
 
 Since v4.0.0

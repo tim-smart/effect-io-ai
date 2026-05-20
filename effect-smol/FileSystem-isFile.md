@@ -5,6 +5,8 @@ Module: `FileSystem`<br />
 
 Type guard to check if a value is a File instance.
 
+**Details**
+
 This function determines whether the provided value is a valid File
 instance by checking for the presence of the File type identifier.
 
@@ -14,6 +16,6 @@ instance by checking for the presence of the File type identifier.
 declare const isFile: (u: unknown) => u is File
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FileSystem.ts#L1019)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FileSystem.ts#L1063)
 
 Since v4.0.0

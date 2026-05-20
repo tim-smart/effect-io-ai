@@ -5,12 +5,12 @@ Module: `Model`<br />
 
 A Model represents a provider-specific AI service.
 
-A Model can be used directly as a Layer to provide a particular model
-implementation to an Effect program.
+**When to use**
 
-A Model can also be used as an Effect to "lift" dependencies of the Model
-constructor into the parent Effect. This is particularly useful when you
-want to use a Model from within an Effect service.
+Use a Model directly as a Layer to provide a particular model implementation
+to an Effect program, or use it as an Effect to "lift" dependencies of the
+Model constructor into the parent Effect when you want to use a Model from
+within an Effect service.
 
 **Signature**
 

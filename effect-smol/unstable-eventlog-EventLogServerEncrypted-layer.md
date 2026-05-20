@@ -12,6 +12,6 @@ encrypted server RPC handlers.
 declare const layer: Layer.Layer<never, never, RpcServer.Protocol | Storage>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventLogServerEncrypted.ts#L105)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventLogServerEncrypted.ts#L107)
 
 Since v4.0.0

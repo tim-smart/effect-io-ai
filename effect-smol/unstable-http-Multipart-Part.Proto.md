@@ -5,6 +5,8 @@ Module: `Multipart`<br />
 
 Common protocol implemented by multipart part values.
 
+**Details**
+
 It provides the multipart type identifier, tag, and inspectable behavior shared
 by fields, files, and persisted files.
 
@@ -17,6 +19,6 @@ export interface Proto extends Inspectable.Inspectable {
   }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Multipart.ts#L78)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Multipart.ts#L82)
 
 Since v4.0.0

@@ -5,15 +5,11 @@ Module: `Effect`<br />
 
 Creates an `Effect` that represents a recoverable error.
 
-**When to Use**
+**When to use**
 
 Use this function to explicitly signal an error in an `Effect`. The error
 will keep propagating unless it is handled. You can handle the error with
 functions like `catchTag` or `catchTags`.
-
-**See**
-
-- `succeed` to create an effect that represents a successful value.
 
 **Example** (Creating a failed effect)
 
@@ -29,12 +25,16 @@ const failure = Effect.fail(
 )
 ```
 
+**See**
+
+- `succeed` to create an effect that represents a successful value.
+
 **Signature**
 
 ```ts
 declare const fail: <E>(error: E) => Effect<never, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L1423)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L1432)
 
 Since v2.0.0

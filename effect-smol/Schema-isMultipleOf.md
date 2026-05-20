@@ -5,11 +5,13 @@ Module: `Schema`<br />
 
 Validates that a number is a multiple of the specified divisor.
 
-**JSON Schema**
+**Details**
+
+JSON Schema:
 
 This check corresponds to the `multipleOf` constraint in JSON Schema.
 
-**Arbitrary**
+Arbitrary:
 
 When generating test data with fast-check, this applies constraints to ensure
 generated numbers are multiples of the specified divisor.
@@ -20,6 +22,6 @@ generated numbers are multiples of the specified divisor.
 declare const isMultipleOf: (divisor: number, annotations?: Annotations.Filter) => AST.Filter<number>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L6391)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L6581)
 
 Since v4.0.0

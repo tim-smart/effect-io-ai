@@ -5,6 +5,8 @@ Module: `Queue`<br />
 
 A `Dequeue` is a queue that can be taken from.
 
+**Details**
+
 This interface represents the read-only part of a Queue, allowing you to take
 elements from the queue but not offer elements to it.
 
@@ -42,6 +44,6 @@ export interface Dequeue<out A, out E = never> extends Inspectable {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Queue.ts#L211)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Queue.ts#L217)
 
 Since v2.0.0

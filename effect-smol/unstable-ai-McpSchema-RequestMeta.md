@@ -5,6 +5,8 @@ Module: `McpSchema`<br />
 
 Schema for optional MCP request metadata.
 
+**Details**
+
 Request metadata may include a progress token that asks the receiver to send
 out-of-band progress notifications for the request.
 
@@ -14,6 +16,6 @@ out-of-band progress notifications for the request.
 declare class RequestMeta
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L155)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L163)
 
 Since v4.0.0

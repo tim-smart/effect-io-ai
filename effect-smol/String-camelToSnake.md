@@ -20,6 +20,6 @@ console.log(String.camelToSnake("fooBarBaz")) // "foo_bar_baz"
 declare const camelToSnake: (self: string) => string
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L1104)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L1110)
 
 Since v2.0.0

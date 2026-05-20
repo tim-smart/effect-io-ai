@@ -6,12 +6,14 @@ Module: `Optic`<br />
 Focuses on a part `A` of `S` that may not be present (e.g. a union
 variant or a validated subset).
 
-When to use:
+**When to use**
+
 - The focus is conditional — reading can fail (wrong variant, failed
   validation).
 - Building a new `S` from `A` does **not** require the original `S`.
 
-Behavior:
+**Details**
+
 - `getResult(s)` returns `Result.Success<A>` when the focus matches, or
   `Result.Failure<string>` with an error message.
 - `set(a)` always succeeds and returns a new `S`.
@@ -51,6 +53,6 @@ export interface Prism<in out S, in out A> extends Optional<S, A> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Optic.ts#L307)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Optic.ts#L317)
 
 Since v4.0.0

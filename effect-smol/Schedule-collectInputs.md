@@ -7,6 +7,7 @@ Returns a new `Schedule` that follows `self` and outputs the inputs seen so
 far as an array.
 
 **Details**
+
 This does not make the schedule run forever. The collected schedule stops
 when `self` stops and fails when `self` fails.
 
@@ -39,6 +40,6 @@ const program = Effect.gen(function*() {
 declare const collectInputs: <Output, Input, Error, Env>(self: Schedule<Output, Input, Error, Env>) => Schedule<Array<Input>, Input, Error, Env>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L1093)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L1098)
 
 Since v4.0.0

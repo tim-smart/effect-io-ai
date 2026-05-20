@@ -5,6 +5,8 @@ Module: `Cause`<br />
 
 A typed, expected error produced by `Effect.fail`.
 
+**Details**
+
 The `error` property carries the typed value `E`. Use `isFailReason`
 to narrow a `Reason` to this type.
 
@@ -33,6 +35,6 @@ export interface Fail<out E> extends Cause.ReasonProto<"Fail"> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L404)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L420)
 
 Since v2.0.0

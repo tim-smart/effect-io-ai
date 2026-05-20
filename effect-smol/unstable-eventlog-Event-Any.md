@@ -5,6 +5,8 @@ Module: `Event`<br />
 
 Type-erased event log event definition.
 
+**Details**
+
 It preserves the runtime tag, primary-key function, payload schema, success
 schema, and error schema without retaining the original type parameters.
 
@@ -22,6 +24,6 @@ export interface Any {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Event.ts#L96)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Event.ts#L102)
 
 Since v4.0.0

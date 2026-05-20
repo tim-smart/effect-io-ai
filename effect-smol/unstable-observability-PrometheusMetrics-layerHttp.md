@@ -6,6 +6,8 @@ Module: `PrometheusMetrics`<br />
 Creates a Layer that registers a `/metrics` HTTP endpoint for Prometheus
 scraping.
 
+**Details**
+
 This layer automatically adds a GET route to your HTTP router that serves
 metrics in Prometheus exposition format. By default, the endpoint is
 registered at `/metrics`, but this can be customized via the `path` option.
@@ -31,6 +33,6 @@ const CustomPrometheusLayer = PrometheusMetrics.layerHttp({
 declare const layerHttp: (options?: HttpOptions | undefined) => Layer.Layer<never, never, HttpRouter.HttpRouter>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PrometheusMetrics.ts#L206)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PrometheusMetrics.ts#L210)
 
 Since v4.0.0

@@ -5,12 +5,14 @@ Module: `Order`<br />
 
 An `Order` instance for numbers that compares them numerically.
 
-When to use this:
+**When to use**
+
 - When comparing numbers for sorting or searching
 - As a base for creating orders on types containing numbers
 - When implementing numeric comparisons in data structures
 
-Behavior:
+**Details**
+
 - Pure function: does not mutate inputs
 - `0` is considered equal to `-0`
 - All `NaN` values are considered equal to each other
@@ -30,7 +32,8 @@ console.log(Order.Number(0, -0)) // 0
 console.log(Order.Number(NaN, 1)) // -1
 ```
 
-See also:
+**See**
+
 - `mapInput` - Use this order to compare objects by a number property
 - `BigInt` - For bigint comparisons
 
@@ -40,6 +43,6 @@ See also:
 declare const Number: Order<number>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Order.ts#L227)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Order.ts#L229)
 
 Since v4.0.0

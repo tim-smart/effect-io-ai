@@ -5,6 +5,8 @@ Module: `Stream`<br />
 
 Emits only elements that differ from the previous element, using an effectful equality check.
 
+**Details**
+
 The predicate runs for each element after the first; returning `true` treats it as equal and skips it.
 
 **Example** (Effectfully emitting changed values)
@@ -30,6 +32,6 @@ Effect.runPromise(program)
 declare const changesWithEffect: { <A, E2, R2>(f: (x: A, y: A) => Effect.Effect<boolean, E2, R2>): <E, R>(self: Stream<A, E, R>) => Stream<A, E | E2, R | R2>; <A, E, R, E2, R2>(self: Stream<A, E, R>, f: (x: A, y: A) => Effect.Effect<boolean, E2, R2>): Stream<A, E | E2, R | R2>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L8913)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L9050)
 
 Since v2.0.0

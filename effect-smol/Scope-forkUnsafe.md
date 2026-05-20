@@ -5,6 +5,8 @@ Module: `Scope`<br />
 
 Synchronously creates a closeable child scope registered with a parent scope.
 
+**Details**
+
 Closing the parent closes the child with the same exit value, and closing the
 child detaches it from the parent. The optional finalizer strategy configures
 the child scope and defaults to `"sequential"` when omitted.
@@ -34,6 +36,6 @@ const program = Effect.gen(function*() {
 declare const forkUnsafe: (scope: Scope, finalizerStrategy?: "sequential" | "parallel") => Closeable
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Scope.ts#L446)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Scope.ts#L456)
 
 Since v4.0.0

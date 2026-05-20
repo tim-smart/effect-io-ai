@@ -5,6 +5,8 @@ Module: `Array`<br />
 
 Returns all elements except the last, wrapped in an `Option`.
 
+**Details**
+
 - Allocates a new array via `slice(0, -1)`.
 - Returns `Option.none()` for empty inputs.
 
@@ -28,6 +30,6 @@ console.log(Array.init([])) // Option.none()
 declare const init: <A>(self: Iterable<A>) => Option.Option<Array<A>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L1131)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L1185)
 
 Since v2.0.0

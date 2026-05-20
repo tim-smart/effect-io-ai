@@ -5,21 +5,20 @@ Module: `Utils`<br />
 
 An `IterableIterator` that yields its wrapped value exactly once.
 
-When to use:
+**When to use**
 
-- Implement `[Symbol.iterator]()` on Effect-like types so they can be
-  `yield*`-ed inside generator functions (e.g. `Effect.gen`, `Option.gen`).
-- You almost never construct this directly — it is created internally by
-  yieldable types.
+Implement `[Symbol.iterator]()` on Effect-like types so they can be
+`yield*`-ed inside generator functions, such as `Effect.gen` and
+`Option.gen`. You almost never construct this directly — it is created
+internally by yieldable types.
 
-Behavior:
+**Details**
 
-- The first call to `next()` returns `{ value: self, done: false }`.
-- Every subsequent call returns `{ value: a, done: true }` where `a` is
-  the argument passed to `next()`.
-- `[Symbol.iterator]()` returns a **new** `SingleShotGen` wrapping the same
-  value, so the outer type can be iterated multiple times.
-- Does not mutate the wrapped value.
+The first call to `next()` returns `{ value: self, done: false }`. Every
+subsequent call returns `{ value: a, done: true }` where `a` is the argument
+passed to `next()`. `[Symbol.iterator]()` returns a **new** `SingleShotGen`
+wrapping the same value, so the outer type can be iterated multiple times.
+It does not mutate the wrapped value.
 
 **Example** (Yielding a wrapped value in a generator)
 
@@ -47,6 +46,6 @@ console.log(gen.next(42))
 declare class SingleShotGen<T, A> { constructor(self: T) }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Utils.ts#L103)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Utils.ts#L101)
 
 Since v2.0.0

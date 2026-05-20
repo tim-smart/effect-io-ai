@@ -6,12 +6,12 @@ Module: `SchemaIssue`<br />
 Wraps an inner `Issue` with a property-key path, indicating *where* in
 a nested structure the error occurred.
 
-When to use:
+**When to use**
 
 - Walk the issue tree to accumulate path segments for error reporting.
 - Match on `_tag === "Pointer"` when flattening nested issues.
 
-Behaviour:
+**Details**
 
 - `path` is an array of property keys (strings, numbers, or symbols).
 - Has no `actual` value — `getActual` returns `Option.none()`.
@@ -38,6 +38,6 @@ declare class Pointer { constructor(
   ) }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaIssue.ts#L342)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaIssue.ts#L344)
 
 Since v3.10.0

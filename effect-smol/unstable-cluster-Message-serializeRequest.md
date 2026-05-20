@@ -6,6 +6,8 @@ Module: `Message`<br />
 Encodes the payload of an `OutgoingRequest` with the request's RPC payload
 schema and service context.
 
+**Details**
+
 The result is a `PartialRequest` suitable for storage or transport.
 
 **Signature**
@@ -14,6 +16,6 @@ The result is a `PartialRequest` suitable for storage or transport.
 declare const serializeRequest: <Rpc extends Rpc.Any>(self: OutgoingRequest<Rpc>) => Effect.Effect<Envelope.PartialRequest, MalformedMessage>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Message.ts#L248)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Message.ts#L270)
 
 Since v4.0.0

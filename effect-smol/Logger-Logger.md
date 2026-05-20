@@ -6,6 +6,7 @@ Module: `Logger`<br />
 A logger that transforms a runtime log event into an output value.
 
 **Details**
+
 The runtime calls `log` with the message, level, cause, fiber, and timestamp
 for each log event. Use `Logger.layer` to install one or more loggers for an
 effect.
@@ -40,6 +41,6 @@ export interface Logger<in Message, out Output> extends Pipeable {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Logger.ts#L139)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Logger.ts#L140)
 
 Since v2.0.0

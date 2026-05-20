@@ -5,9 +5,11 @@ Module: `Prompt`<br />
 
 Content part representing a tool approval request from the framework.
 
-Stored in assistant messages when a tool requires user approval before
-execution. The user responds with a `ToolApprovalResponsePart` in a tool
-message.
+**Details**
+
+Tool approval request parts are stored in assistant messages when a tool
+requires user approval before execution. The user responds with a
+`ToolApprovalResponsePart` in a tool message.
 
 **Example** (Creating tool approval requests)
 
@@ -38,6 +40,6 @@ export interface ToolApprovalRequestPart extends BasePart<"tool-approval-request
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L903)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L913)
 
 Since v4.0.0

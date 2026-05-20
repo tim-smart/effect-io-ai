@@ -5,7 +5,12 @@ Module: `Exit`<br />
 
 Creates a failed Exit from a typed error value.
 
+**When to use**
+
 - Use for expected, recoverable failures
+
+**Details**
+
 - The error is wrapped in a `Cause.Fail` internally
 
 Returns a `Failure<never, E>`.
@@ -31,6 +36,6 @@ console.log(Exit.isFailure(exit)) // true
 declare const fail: <E>(e: E) => Exit<never, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Exit.ts#L288)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Exit.ts#L318)
 
 Since v2.0.0

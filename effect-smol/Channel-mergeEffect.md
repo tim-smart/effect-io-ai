@@ -6,6 +6,8 @@ Module: `Channel`<br />
 Runs an effect concurrently with a channel while emitting only the channel's
 output elements.
 
+**Details**
+
 The effect's successful value is ignored. If the effect fails while the
 channel is running, the returned channel fails with that error.
 
@@ -15,6 +17,6 @@ channel is running, the returned channel fails with that error.
 declare const mergeEffect: { <X, E, R>(effect: Effect.Effect<X, E, R>): <OutElem, OutDone, OutErr, InElem, InErr, InDone, Env>(self: Channel<OutElem, OutErr, OutDone, InElem, InErr, InDone, Env>) => Channel<OutElem, OutErr | E, OutDone, InElem, InErr, InDone, Env | R>; <OutElem, OutErr, OutDone, InElem, InErr, InDone, Env, X, E, R>(self: Channel<OutElem, OutErr, OutDone, InElem, InErr, InDone, Env>, effect: Effect.Effect<X, E, R>): Channel<OutElem, OutErr | E, OutDone, InElem, InErr, InDone, Env | R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L6100)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L6176)
 
 Since v4.0.0

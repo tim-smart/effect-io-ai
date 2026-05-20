@@ -11,6 +11,6 @@ Reference for controlling the current trace level for dynamic filtering.
 declare const CurrentTraceLevel: Context.Reference<LogLevel>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tracer.ts#L514)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tracer.ts#L506)
 
 Since v4.0.0

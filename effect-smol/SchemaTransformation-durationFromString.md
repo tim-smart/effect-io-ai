@@ -6,10 +6,12 @@ Module: `SchemaTransformation`<br />
 Decodes a `string` into a `Duration` and encodes a `Duration` back to a
 parseable `string`.
 
-When to use this:
+**When to use**
+
 - Parsing human-readable duration strings from APIs, config, or user input.
 
-Behavior:
+**Details**
+
 - Decode: accepts any string that `Duration.fromInput` can parse, including
   `"Infinity"` and `"-Infinity"`.
 - Encode: returns `String(duration)`, producing strings like `"2000 millis"`
@@ -25,7 +27,8 @@ const schema = Schema.String.pipe(
 )
 ```
 
-See also:
+**See**
+
 - `durationFromNanos`
 - `durationFromMillis`
 
@@ -35,6 +38,6 @@ See also:
 declare const durationFromString: Transformation<Duration.Duration, string, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L953)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L978)
 
 Since v4.0.0

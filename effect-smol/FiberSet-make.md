@@ -3,11 +3,14 @@ Module: `FiberSet`<br />
 
 ## FiberSet.make
 
-A FiberSet can be used to store a collection of fibers.
-When the associated Scope is closed, all fibers in the set will be interrupted.
+Creates a scoped `FiberSet` for storing fibers.
 
-You can add fibers to the set using `FiberSet.add` or `FiberSet.run`, and the fibers will
-be automatically removed from the FiberSet when they complete.
+**Details**
+
+When the associated Scope is closed, all fibers in the set will be
+interrupted. You can add fibers to the set using `FiberSet.add` or
+`FiberSet.run`, and the fibers will be automatically removed from the
+FiberSet when they complete.
 
 **Example** (Creating a scoped FiberSet)
 
@@ -33,6 +36,6 @@ Effect.gen(function*() {
 declare const make: <A = unknown, E = unknown>() => Effect.Effect<FiberSet<A, E>, never, Scope.Scope>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FiberSet.ts#L171)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FiberSet.ts#L174)
 
 Since v2.0.0

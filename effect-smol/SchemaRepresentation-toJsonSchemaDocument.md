@@ -5,8 +5,14 @@ Module: `SchemaRepresentation`<br />
 
 Converts a `Document` to a Draft 2020-12 JSON Schema document.
 
-- Use to produce a standard JSON Schema from an Effect Schema representation.
-- Pure function; does not mutate the input.
+**When to use**
+
+Use this to produce a standard JSON Schema from an Effect Schema
+representation.
+
+**Details**
+
+This is a pure function and does not mutate the input.
 
 **Example** (Generating JSON Schema)
 
@@ -31,6 +37,6 @@ console.log(jsonSchema.schema.type)
 declare const toJsonSchemaDocument: (document: Document, options?: Schema.ToJsonSchemaOptions) => JsonSchema.Document<"draft-2020-12">
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaRepresentation.ts#L2154)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaRepresentation.ts#L2226)
 
 Since v4.0.0

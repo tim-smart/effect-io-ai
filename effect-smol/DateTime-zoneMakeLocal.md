@@ -5,6 +5,8 @@ Module: `DateTime`<br />
 
 Create a named time zone from the system's local time zone.
 
+**Details**
+
 This uses the system's configured time zone, which may vary depending
 on the runtime environment.
 
@@ -23,6 +25,6 @@ console.log(DateTime.zoneToString(localZone)) // Output depends on system time z
 declare const zoneMakeLocal: () => TimeZone.Named
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L1014)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L1076)
 
 Since v3.6.0

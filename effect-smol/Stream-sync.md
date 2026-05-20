@@ -5,6 +5,8 @@ Module: `Stream`<br />
 
 Creates a stream that synchronously evaluates a function and emits the result as a single value.
 
+**Details**
+
 The function is evaluated each time the stream is run.
 
 **Example** (Evaluating a value synchronously)
@@ -27,6 +29,6 @@ Effect.runPromise(program)
 declare const sync: <A>(evaluate: LazyArg<A>) => Stream<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L879)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L893)
 
 Since v2.0.0

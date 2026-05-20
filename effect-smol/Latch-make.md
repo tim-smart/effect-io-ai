@@ -5,6 +5,8 @@ Module: `Latch`<br />
 
 Creates a `Latch` inside `Effect`.
 
+**Details**
+
 The latch starts closed by default; pass `true` to create it open.
 
 **Example** (Creating a latch)
@@ -37,6 +39,6 @@ const program = Effect.gen(function*() {
 declare const make: (open?: boolean | undefined) => Effect.Effect<Latch>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Latch.ts#L149)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Latch.ts#L159)
 
 Since v4.0.0

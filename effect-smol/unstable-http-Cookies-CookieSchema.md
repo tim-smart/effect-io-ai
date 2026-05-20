@@ -11,6 +11,6 @@ Schema interface for validating `Cookie` values.
 export interface CookieSchema extends Schema.declare<Cookie> {}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cookies.ts#L142)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cookies.ts#L144)
 
 Since v4.0.0

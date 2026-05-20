@@ -5,6 +5,8 @@ Module: `Result`<br />
 
 Swaps the success and failure channels of a `Result`.
 
+**Details**
+
 - `Success<A>` becomes `Failure<A>` (i.e., `Result<E, A>`)
 - `Failure<E>` becomes `Success<E>` (i.e., `Result<E, A>`)
 - Useful when you want to apply success-oriented operations (like `map`)
@@ -32,6 +34,6 @@ console.log(Result.flip(Result.fail("error")))
 declare const flip: <A, E>(self: Result<A, E>) => Result<E, A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L1373)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L1445)
 
 Since v2.0.0

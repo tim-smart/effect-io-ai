@@ -5,6 +5,8 @@ Module: `Stream`<br />
 
 Creates a stream from a lazily supplied Web `ReadableStream`.
 
+**Details**
+
 The stream reads from a `ReadableStreamDefaultReader`, maps read failures
 with `onError`, and closes the reader when the stream finalizes. By default
 the reader is canceled; set `releaseLockOnEnd` to release the lock instead.
@@ -44,6 +46,6 @@ Effect.runPromise(program)
 declare const fromReadableStream: <A, E>(options: { readonly evaluate: LazyArg<ReadableStream<A>>; readonly onError: (error: unknown) => E; readonly releaseLockOnEnd?: boolean | undefined; }) => Stream<A, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L1389)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L1413)
 
 Since v2.0.0

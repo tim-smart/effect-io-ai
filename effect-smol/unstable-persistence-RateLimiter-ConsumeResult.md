@@ -11,9 +11,8 @@ Metadata returned after consuming tokens from a rate limiter.
 export interface ConsumeResult {
   /**
    * The amount of delay to wait before making the next request, when the rate
-   * limiter is using the "delay" `onExceeded` strategy.
-   *
-   * It will be Duration.zero if the request is allowed immediately.
+   * limiter is using the "delay" `onExceeded` strategy. It will be
+   * Duration.zero if the request is allowed immediately.
    */
   readonly delay: Duration.Duration
 
@@ -34,6 +33,6 @@ export interface ConsumeResult {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RateLimiter.ts#L455)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RateLimiter.ts#L459)
 
 Since v4.0.0

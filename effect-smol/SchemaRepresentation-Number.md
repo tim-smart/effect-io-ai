@@ -5,7 +5,10 @@ Module: `SchemaRepresentation`<br />
 
 The `number` type with optional validation checks.
 
-- `checks` holds number-specific constraints (int, finite, min, max, multipleOf, etc.).
+**Details**
+
+`checks` holds number-specific constraints, such as int, finite, min, max,
+multipleOf, and between checks.
 
 **See**
 
@@ -21,6 +24,6 @@ export interface Number {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaRepresentation.ts#L263)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaRepresentation.ts#L281)
 
 Since v4.0.0

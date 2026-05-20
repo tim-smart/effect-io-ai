@@ -5,6 +5,8 @@ Module: `ChildProcess`<br />
 
 Specifies which stream to pipe from the source subprocess.
 
+**Details**
+
 - `"stdout"`: Pipe stdout from the source (default)
 - `"stderr"`: Pipe stderr from the source
 - `"all"`: Pipe both stdout and stderr interleaved
@@ -16,6 +18,6 @@ Specifies which stream to pipe from the source subprocess.
 type PipeFromOption = "stdout" | "stderr" | "all" | `fd${number}`
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ChildProcess.ts#L121)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ChildProcess.ts#L120)
 
 Since v4.0.0

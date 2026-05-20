@@ -5,6 +5,8 @@ Module: `Result`<br />
 
 Type-level utility for unifying `Result` types in generic contexts.
 
+**Details**
+
 This is an internal interface used by the Effect type system. You typically
 do not need to reference it directly.
 
@@ -16,6 +18,6 @@ export interface ResultUnify<T extends { [Unify.typeSymbol]?: any }> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L227)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L235)
 
 Since v4.0.0

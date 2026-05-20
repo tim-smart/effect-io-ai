@@ -6,16 +6,18 @@ Module: `SchemaTransformation`<br />
 A middleware that wraps the entire parsing `Effect` pipeline for both
 decode and encode directions.
 
-Unlike `Transformation`, which operates on individual values via `Getter`,
-`Middleware` receives the full `Effect` produced by the inner schema and can
-intercept, modify, retry, or replace it.
+**When to use**
 
-When to use this:
 - You need to catch or recover from parsing errors (e.g. `Schema.catchDecoding`).
 - You need to run side effects around the parsing pipeline.
 - You need access to the full `Effect` rather than a single decoded value.
 
-Behavior:
+**Details**
+
+Unlike `Transformation`, which operates on individual values via `Getter`,
+`Middleware` receives the full `Effect` produced by the inner schema and can
+intercept, modify, retry, or replace it.
+
 - Immutable — constructing a Middleware does not mutate existing instances.
 - `decode` receives an `Effect<Option<E>, Issue, RDE>` and returns
   `Effect<Option<T>, Issue, RDT>`.
@@ -38,7 +40,8 @@ const fallback = new SchemaTransformation.Middleware(
 )
 ```
 
-See also:
+**See**
+
 - `Transformation` — value-level bidirectional transformation
 
 **Signature**
@@ -56,6 +59,6 @@ declare class Middleware<T, E, RDE, RDT, RET, REE> { constructor(
   ) }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L141)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L142)
 
 Since v4.0.0

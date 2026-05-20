@@ -30,6 +30,6 @@ console.log(Iterable.headUnsafe(nonEmpty)) // 1
 declare const headUnsafe: <A>(self: Iterable<A>) => A
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Iterable.ts#L500)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Iterable.ts#L510)
 
 Since v4.0.0

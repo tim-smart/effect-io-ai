@@ -5,6 +5,8 @@ Module: `DevToolsSchema`<br />
 
 Type of a devtools frequency metric snapshot.
 
+**Details**
+
 The state maps observed string values to occurrence counts.
 
 **Signature**
@@ -13,6 +15,6 @@ The state maps observed string values to occurrence counts.
 type Frequency = Schema.Schema.Type<typeof Frequency>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DevToolsSchema.ts#L331)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DevToolsSchema.ts#L337)
 
 Since v4.0.0

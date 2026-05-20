@@ -6,8 +6,13 @@ Module: `Types`<br />
 Extracts a specific reason variant by its `_tag` from an error's `reason`
 field.
 
-- Use to narrow down to a single reason variant from a nested error type.
-- Returns `never` if `E` has no matching reason variant.
+**When to use**
+
+Use to narrow down to a single reason variant from a nested error type.
+
+**Details**
+
+Returns `never` if `E` has no matching reason variant.
 
 **Example** (Extracting a reason variant)
 
@@ -37,6 +42,6 @@ type ExtractReason<E, K> = E extends { readonly reason: infer R }
   : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Types.ts#L900)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Types.ts#L1012)
 
 Since v4.0.0

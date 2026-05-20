@@ -6,11 +6,13 @@ Module: `Optic`<br />
 Returns a function that extracts all elements focused by a
 `Traversal` as a plain mutable array.
 
-When to use:
+**When to use**
+
 - You need the focused values as a simple `Array<A>` for further
   processing.
 
-Behavior:
+**Details**
+
 - Returns an empty array when the traversal cannot focus.
 - Always returns a fresh array (safe to mutate).
 - Does not mutate the source.
@@ -45,6 +47,6 @@ console.log(getPositive({ values: [-1, -2] }))
 declare const getAll: <S, A>(traversal: Traversal<S, A>) => (s: S) => Array<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Optic.ts#L1472)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Optic.ts#L1510)
 
 Since v4.0.0

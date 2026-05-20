@@ -5,6 +5,8 @@ Module: `Schema`<br />
 
 Options for `withDecodingDefaultKey` and `withDecodingDefault`.
 
+**Details**
+
 - `encodingStrategy`:
   - `"passthrough"` (default): pass the value through during encoding
   - `"omit"`: omit the key from the encoded output
@@ -17,6 +19,6 @@ type DecodingDefaultOptions = {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L4764)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L4897)
 
 Since v4.0.0

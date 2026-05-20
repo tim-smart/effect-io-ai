@@ -5,10 +5,15 @@ Module: `Newtype`<br />
 
 Lifts a `Combiner` for the carrier type into a `Combiner` for the newtype.
 
-- Use when you need to combine (e.g. concatenate, add) newtype values.
-- The returned combiner delegates to the provided carrier combiner.
+**When to use**
 
-**Example** (combining newtypes)
+Use this when you need to combine newtype values.
+
+**Details**
+
+The returned combiner delegates to the provided carrier combiner.
+
+**Example** (Combining newtypes)
 
 ```ts
 import { Combiner, Newtype } from "effect"
@@ -33,6 +38,6 @@ Newtype.value(total) // 30
 declare const makeCombiner: <N extends Newtype.Any>(combiner: Combiner.Combiner<Newtype.Carrier<N>>) => Combiner.Combiner<N>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Newtype.ts#L290)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Newtype.ts#L323)
 
 Since v4.0.0

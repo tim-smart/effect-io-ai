@@ -31,6 +31,6 @@ const program = Effect.succeed("Hello").pipe(
 declare const externalSpan: (options: { readonly spanId: string; readonly traceId: string; readonly sampled?: boolean | undefined; readonly annotations?: Context.Context<never> | undefined; }) => ExternalSpan
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tracer.ts#L465)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tracer.ts#L459)
 
 Since v2.0.0

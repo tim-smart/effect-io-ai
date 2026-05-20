@@ -6,6 +6,8 @@ Module: `ClusterSchema`<br />
 Annotation that marks whether a cluster request should be persisted in mailbox
 storage.
 
+**Details**
+
 The default value is `false`.
 
 **Signature**
@@ -14,6 +16,6 @@ The default value is `false`.
 declare const Persisted: Context.Reference<boolean>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ClusterSchema.ts#L45)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ClusterSchema.ts#L47)
 
 Since v4.0.0

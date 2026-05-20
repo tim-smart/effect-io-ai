@@ -5,6 +5,8 @@ Module: `RateLimiter`<br />
 
 Error reason for a rate-limit check that exceeded the configured limit.
 
+**Details**
+
 Includes the affected key, limit, remaining token count, and retry delay.
 
 **Signature**
@@ -13,6 +15,6 @@ Includes the affected key, limit, remaining token count, and retry delay.
 declare class RateLimitExceeded
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RateLimiter.ts#L360)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RateLimiter.ts#L364)
 
 Since v4.0.0

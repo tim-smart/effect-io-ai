@@ -6,6 +6,8 @@ Module: `Queue`<br />
 Signal that the queue is complete synchronously. If the queue is already done, `false` is
 returned.
 
+**Gotchas**
+
 This is an unsafe operation that directly modifies the queue without Effect wrapping.
 
 **Example** (Ending queues synchronously)
@@ -42,6 +44,6 @@ const program = Effect.gen(function*() {
 declare const endUnsafe: <A, E>(self: Enqueue<A, E | Done>) => boolean
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Queue.ts#L945)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Queue.ts#L983)
 
 Since v4.0.0

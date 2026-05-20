@@ -11,6 +11,6 @@ Encoded failure response sent by a client for a server-initiated request.
 type ClientFailureEncoded = FailureEncoded<typeof ServerRequestRpcs>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L2199)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L2249)
 
 Since v4.0.0

@@ -12,6 +12,6 @@ parent while isolating any new layer allocations to the child map.
 declare const forkMemoMapUnsafe: (parent: MemoMap) => MemoMap
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L441)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L465)
 
 Since v4.0.0

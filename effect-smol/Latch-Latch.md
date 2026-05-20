@@ -6,6 +6,8 @@ Module: `Latch`<br />
 A reusable coordination primitive that lets fibers wait until they are
 released by the latch.
 
+**Details**
+
 A closed latch causes `await` and `whenOpen` to suspend. `open` opens the
 latch and releases current and future waiters, `release` releases only
 current waiters without opening it, and `close` makes future waiters suspend
@@ -48,6 +50,6 @@ export interface Latch {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Latch.ts#L67)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Latch.ts#L69)
 
 Since v4.0.0

@@ -5,6 +5,8 @@ Module: `Types`<br />
 
 Branded marker interface representing an unassigned type parameter.
 
+**Details**
+
 Used internally by the Effect type system to indicate that a type parameter
 has not been assigned a concrete type.
 
@@ -20,6 +22,6 @@ export interface unassigned {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Types.ts#L771)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Types.ts#L869)
 
 Since v4.0.0

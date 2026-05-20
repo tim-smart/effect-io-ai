@@ -5,6 +5,8 @@ Module: `Boolean`<br />
 
 A `Reducer` for combining `boolean`s using OR.
 
+**Details**
+
 The `initialValue` is `false`.
 
 **Signature**
@@ -13,6 +15,6 @@ The `initialValue` is `false`.
 declare const ReducerOr: Reducer.Reducer<boolean>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Boolean.ts#L374)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Boolean.ts#L378)
 
 Since v4.0.0

@@ -5,6 +5,8 @@ Module: `ScopedCache`<br />
 
 Represents whether a `ScopedCache` is open or closed.
 
+**Details**
+
 `Open` stores cached entries in access order for reuse and eviction.
 `Closed` means the owning scope has closed and the cache can no longer
 perform lookup operations.
@@ -20,6 +22,6 @@ type State<K, A, E> = {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ScopedCache.ts#L77)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ScopedCache.ts#L81)
 
 Since v4.0.0

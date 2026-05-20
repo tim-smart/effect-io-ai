@@ -16,6 +16,8 @@ export interface CommandOptions extends KillOptions {
   /**
    * The environment of the child process.
    *
+   * **Details**
+   *
    * If `extendEnv` is set to `true`, the value of `env` will be merged with
    * the value of `globalThis.process.env`, prioritizing the values in `env`
    * when conflicts exist.
@@ -26,6 +28,8 @@ export interface CommandOptions extends KillOptions {
    * as the values in `globalThis.process.env`, prioritizing the values in `env`
    * when conflicts exist.
    *
+   * **Details**
+   *
    * If set to `false`, only the value of `env` is used.
    */
   readonly extendEnv?: boolean | undefined
@@ -33,8 +37,12 @@ export interface CommandOptions extends KillOptions {
    * If set to `true`, runs the command inside of a shell, defaulting to `/bin/sh`
    * on UNIX systems and `cmd.exe` on Windows.
    *
+   * **Details**
+   *
    * Can also be set to a string representing the absolute path to a shell to
    * use on the system.
+   *
+   * **Gotchas**
    *
    * It is generally disadvised to use this option.
    */
@@ -42,6 +50,8 @@ export interface CommandOptions extends KillOptions {
   /**
    * If set to `true`, the child process will run independently of the parent
    * process.
+   *
+   * **Details**
    *
    * The specific behavior of this option depends upon the platform. For
    * example, the NodeJS documentation outlines the differences between Windows
@@ -67,6 +77,8 @@ export interface CommandOptions extends KillOptions {
   /**
    * Additional file descriptors to expose to the child process beyond `stdin` /
    * `stdout` / `stderr`.
+   *
+   * **Details**
    *
    * Keys must be in the format `"fd3"`, `"fd4"`, etc. with a file descriptor
    * index >= 3.
@@ -98,6 +110,6 @@ export interface CommandOptions extends KillOptions {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ChildProcess.ts#L402)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ChildProcess.ts#L405)
 
 Since v4.0.0

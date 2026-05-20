@@ -5,6 +5,8 @@ Module: `HttpApiBuilder`<br />
 
 Record stored for a registered endpoint handler.
 
+**Details**
+
 It keeps the endpoint metadata, handler function, whether raw request handling
 is used, and whether the handler should run uninterruptibly.
 
@@ -19,6 +21,6 @@ type Item<R> = {
   }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiBuilder.ts#L272)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiBuilder.ts#L277)
 
 Since v4.0.0

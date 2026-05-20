@@ -5,8 +5,9 @@ Module: `TxHashSet`<br />
 
 Removes all values from the TxHashSet.
 
-**Mutation behavior**: This function mutates the original TxHashSet by clearing
-all values. It does not return a new TxHashSet reference.
+**Details**
+
+This function mutates the original TxHashSet by clearing all values. It does not return a new TxHashSet reference.
 
 **Example** (Clearing all values)
 
@@ -29,6 +30,6 @@ const program = Effect.gen(function*() {
 declare const clear: <V>(self: TxHashSet<V>) => Effect.Effect<void>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashSet.ts#L525)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashSet.ts#L518)
 
 Since v4.0.0

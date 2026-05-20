@@ -5,6 +5,8 @@ Module: `Toolkit`<br />
 
 A utility type that maps tool names to their required handler functions.
 
+**Details**
+
 Handlers can return either the tool's custom failure type, an `AiErrorReason`
 (which will be wrapped in `AiError`), or a full `AiError`.
 
@@ -23,6 +25,6 @@ type HandlersFrom<Tools> = {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Toolkit.ts#L199)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Toolkit.ts#L203)
 
 Since v4.0.0

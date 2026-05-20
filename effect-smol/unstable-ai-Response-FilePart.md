@@ -5,6 +5,8 @@ Module: `Response`<br />
 
 Response part representing a file attachment.
 
+**Details**
+
 Supports various file types including images, documents, and binary data.
 
 **Example** (Creating a file part)
@@ -33,6 +35,6 @@ export interface FilePart extends BasePart<"file", FilePartMetadata> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Response.ts#L1841)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Response.ts#L1852)
 
 Since v4.0.0

@@ -5,10 +5,12 @@ Module: `Predicate`<br />
 
 Extracts the input type `A` from a `Refinement<A, B>`.
 
-When to use:
+**When to use**
+
 - You want to infer the input type from a refinement type.
 
-Behavior:
+**Details**
+
 - Type-only; no runtime value is created.
 - Resolves to `never` if the type does not match `Refinement`.
 
@@ -21,7 +23,10 @@ type R = Predicate.Refinement<unknown, string>
 type Input = Predicate.Refinement.In<R>
 ```
 
-See also: `Refinement.Out`, `Predicate.In`
+**See**
+
+- `Refinement.Out`
+- `Predicate.In`
 
 **Signature**
 
@@ -29,6 +34,6 @@ See also: `Refinement.Out`, `Predicate.In`
 type In<T> = [T] extends [Refinement<infer _A, infer _>] ? _A : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L270)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L286)
 
 Since v3.6.0

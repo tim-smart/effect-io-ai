@@ -5,11 +5,13 @@ Module: `Predicate`<br />
 
 Creates a predicate representing logical implication: if `antecedent`, then `consequent`.
 
-When to use:
+**When to use**
+
 - You want a rule that only applies when a precondition holds.
 - You model constraints like "if A then B".
 
-Behavior:
+**Details**
+
 - Pure; does not mutate input.
 - Returns `true` when the antecedent is `false`.
 
@@ -25,7 +27,10 @@ const implies = Predicate.implies(isAdult, canVote)
 console.log(implies(16))
 ```
 
-See also: `and`, `or`
+**See**
+
+- `and`
+- `or`
 
 **Signature**
 
@@ -33,6 +38,6 @@ See also: `and`, `or`
 declare const implies: { <A>(consequent: Predicate<A>): (antecedent: Predicate<A>) => Predicate<A>; <A>(antecedent: Predicate<A>, consequent: Predicate<A>): Predicate<A>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L1683)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L1781)
 
 Since v2.0.0

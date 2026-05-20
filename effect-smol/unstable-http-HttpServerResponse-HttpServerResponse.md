@@ -5,6 +5,8 @@ Module: `HttpServerResponse`<br />
 
 Server-side HTTP response model.
 
+**Details**
+
 A response contains a status, optional status text, headers, cookies, and an
 HTTP body that can later be converted to platform-specific response types.
 
@@ -21,6 +23,6 @@ export interface HttpServerResponse extends Inspectable.Inspectable, Pipeable, E
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpServerResponse.ts#L62)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpServerResponse.ts#L64)
 
 Since v4.0.0

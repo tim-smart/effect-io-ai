@@ -23,6 +23,8 @@ export interface PipeOptions {
   /**
    * Which stream to pipe from the source subprocess.
    *
+   * **Details**
+   *
    * - `"stdout"` (default): Pipe stdout from the source
    * - `"stderr"`: Pipe stderr from the source
    * - `"all"`: Pipe both stdout and stderr interleaved
@@ -33,6 +35,8 @@ export interface PipeOptions {
   /**
    * Which input to pipe to on the destination subprocess.
    *
+   * **Details**
+   *
    * - `"stdin"` (default): Pipe to stdin of the destination
    * - `"fd3"`, `"fd4"`, etc.: Pipe to a custom file descriptor
    */
@@ -40,6 +44,6 @@ export interface PipeOptions {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ChildProcess.ts#L151)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ChildProcess.ts#L152)
 
 Since v4.0.0

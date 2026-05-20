@@ -6,6 +6,8 @@ Module: `PubSub`<br />
 Returns the current number of messages retained by the `PubSub` for active
 subscribers.
 
+**Details**
+
 If the `PubSub` has been shut down, the returned effect succeeds with `0`.
 The size is not a count of waiting subscribers or suspended publishers.
 
@@ -42,6 +44,6 @@ const program = Effect.gen(function*() {
 declare const size: <A>(self: PubSub<A>) => Effect.Effect<number>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PubSub.ts#L591)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PubSub.ts#L597)
 
 Since v2.0.0

@@ -5,6 +5,8 @@ Module: `FileSystem`<br />
 
 Creates a FileSystem implementation from a partial implementation.
 
+**Details**
+
 This function takes a partial FileSystem implementation and automatically provides
 default implementations for `exists`, `readFileString`, `stream`, `sink`, and
 `writeFileString` methods based on the provided core methods.
@@ -15,6 +17,6 @@ default implementations for `exists`, `readFileString`, `stream`, `sink`, and
 declare const make: (impl: Omit<FileSystem, typeof TypeId | "exists" | "readFileString" | "stream" | "sink" | "writeFileString">) => FileSystem
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FileSystem.ts#L739)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FileSystem.ts#L777)
 
 Since v4.0.0

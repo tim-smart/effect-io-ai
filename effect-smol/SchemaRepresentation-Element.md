@@ -5,8 +5,10 @@ Module: `SchemaRepresentation`<br />
 
 A positional element within an `Arrays` tuple.
 
-- `isOptional` indicates whether this element can be absent.
-- `type` is the schema representation for this element's value.
+**Details**
+
+`isOptional` indicates whether this element can be absent. `type` is the
+schema representation for this element's value.
 
 **See**
 
@@ -22,6 +24,6 @@ export interface Element {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaRepresentation.ts#L399)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaRepresentation.ts#L420)
 
 Since v4.0.0

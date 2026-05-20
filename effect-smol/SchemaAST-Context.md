@@ -5,6 +5,8 @@ Module: `SchemaAST`<br />
 
 Per-property metadata attached to AST nodes via `Base.context`.
 
+**Details**
+
 Tracks whether a property key is optional, mutable, has a constructor
 default, or carries key-level annotations. Typically set by helpers like
 `optionalKey` and `Schema.mutableKey`.
@@ -33,6 +35,6 @@ declare class Context { constructor(
   ) }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L480)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L489)
 
 Since v4.0.0

@@ -5,9 +5,10 @@ Module: `AtomRpc`<br />
 
 A `Context.Service` for a flattened RPC client integrated with atom reactivity.
 
-It exposes the RPC client, an atom runtime, mutation helpers that return
-`AtomResultFn`s, and query helpers that return atoms or pull atoms for RPC
-results.
+**Details**
+
+It exposes the RPC client, an atom runtime, mutation helpers that return `AtomResultFn`s, and query helpers that
+return atoms or pull atoms for RPC results.
 
 **Signature**
 
@@ -84,6 +85,6 @@ export interface AtomRpcClient<Self, Id extends string, Rpcs extends Rpc.Any> ex
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AtomRpc.ts#L56)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AtomRpc.ts#L57)
 
 Since v4.0.0

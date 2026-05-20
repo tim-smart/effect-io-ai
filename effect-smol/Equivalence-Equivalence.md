@@ -5,12 +5,14 @@ Module: `Equivalence`<br />
 
 Represents an equivalence relation over type `A`.
 
-When to use this:
-- As a type annotation for equivalence functions
-- When implementing custom equivalence logic
-- When working with collection operations that require equivalence relations
+**When to use**
 
-Behavior:
+- Use as a type annotation for equivalence functions
+- Use when implementing custom equivalence logic
+- Use when working with collection operations that require equivalence relations
+
+**Details**
+
 - Pure function: does not mutate inputs or have side effects
 - Returns `boolean`: `true` if values are equivalent, `false` otherwise
 - Must satisfy reflexive, symmetric, and transitive properties
@@ -42,7 +44,10 @@ const pointEq: Equivalence.Equivalence<Point> = (a, b) =>
 console.log(pointEq({ x: 1, y: 2 }, { x: 1, y: 2 })) // true
 ```
 
-See also: `make`, `strictEqual`
+**See**
+
+- `make`
+- `strictEqual`
 
 **Signature**
 
@@ -50,6 +55,6 @@ See also: `make`, `strictEqual`
 type Equivalence<A> = (self: A, that: A) => boolean
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Equivalence.ts#L103)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Equivalence.ts#L105)
 
 Since v2.0.0

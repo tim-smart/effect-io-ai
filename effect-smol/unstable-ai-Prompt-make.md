@@ -3,7 +3,9 @@ Module: `Prompt`<br />
 
 ## Prompt.make
 
-Creates a Prompt from an input.
+Creates a `Prompt` from an input.
+
+**Details**
 
 This is the primary constructor for creating prompts, supporting multiple
 input formats for convenience and flexibility.
@@ -33,6 +35,6 @@ const copiedPrompt = Prompt.make(existingPrompt)
 declare const make: (input: RawInput) => Prompt
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L1862)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L1877)
 
 Since v4.0.0

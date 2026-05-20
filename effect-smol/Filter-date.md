@@ -11,6 +11,6 @@ A predefined filter that only passes through Date objects.
 declare const date: Filter<unknown, Date, unknown>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Filter.ts#L361)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Filter.ts#L371)
 
 Since v4.0.0

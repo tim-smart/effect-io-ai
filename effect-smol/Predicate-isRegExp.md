@@ -5,10 +5,12 @@ Module: `Predicate`<br />
 
 Checks whether a value is a `RegExp`.
 
-When to use:
+**When to use**
+
 - You need a runtime guard for regular expressions.
 
-Behavior:
+**Details**
+
 - Pure; does not mutate input.
 - Uses `instanceof RegExp`.
 
@@ -22,7 +24,9 @@ const data: unknown = /abc/
 console.log(Predicate.isRegExp(data))
 ```
 
-See also: `isDate`
+**See**
+
+- `isDate`
 
 **Signature**
 
@@ -30,6 +34,6 @@ See also: `isDate`
 declare const isRegExp: (input: unknown) => input is RegExp
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L1348)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L1428)
 
 Since v3.9.0

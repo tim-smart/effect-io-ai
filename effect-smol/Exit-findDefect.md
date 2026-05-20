@@ -5,8 +5,15 @@ Module: `Exit`<br />
 
 Extracts the first defect from a failed Exit for use in filter pipelines.
 
+**When to use**
+
 - Use when you need to inspect unexpected errors
+
+**Details**
+
 - Returns the defect value if one exists, or `Filter.fail` wrapping the original Exit if the Exit has no defects
+
+**Gotchas**
 
 Only finds the first Die reason. If the Cause has multiple defects, the rest
 are ignored.
@@ -36,6 +43,6 @@ const noDefect = Exit.findDefect(typed)
 declare const findDefect: <A, E>(input: Exit<A, E>) => Result.Result<unknown, Exit<A, E>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Exit.ts#L666)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Exit.ts#L763)
 
 Since v4.0.0

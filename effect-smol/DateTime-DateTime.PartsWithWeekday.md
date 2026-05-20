@@ -5,6 +5,8 @@ Module: `DateTime`<br />
 
 Calendar and time components of a `DateTime`, including the weekday.
 
+**Details**
+
 `month` is one-based (`1` for January through `12` for December), and
 `weekDay` follows JavaScript `Date#getUTCDay` numbering (`0` for Sunday
 through `6` for Saturday).
@@ -24,6 +26,6 @@ export interface PartsWithWeekday {
   }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L200)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L212)
 
 Since v3.6.0

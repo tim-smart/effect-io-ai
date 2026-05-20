@@ -5,8 +5,10 @@ Module: `TxHashMap`<br />
 
 Removes multiple keys from the TxHashMap.
 
-**Mutation behavior**: This function mutates the original TxHashMap by removing
-all specified keys. It does not return a new TxHashMap reference.
+**Details**
+
+This function mutates the original TxHashMap by removing all specified keys.
+It does not return a new TxHashMap reference.
 
 **Example** (Removing multiple keys)
 
@@ -48,6 +50,6 @@ const program = Effect.gen(function*() {
 declare const removeMany: { <K1 extends K, K>(keys: Iterable<K1>): <V>(self: TxHashMap<K, V>) => Effect.Effect<void>; <K1 extends K, K, V>(self: TxHashMap<K, V>, keys: Iterable<K1>): Effect.Effect<void>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashMap.ts#L1101)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashMap.ts#L1112)
 
 Since v4.0.0

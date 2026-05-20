@@ -5,6 +5,8 @@ Module: `Array`<br />
 
 Places a separator element between every pair of elements.
 
+**Details**
+
 - Preserves `NonEmptyArray` in the return type.
 - An empty input produces an empty result.
 
@@ -26,6 +28,6 @@ console.log(Array.intersperse([1, 2, 3], 0)) // [1, 0, 2, 0, 3]
 declare const intersperse: { <B>(middle: B): <S extends Iterable<any>>(self: S) => ReadonlyArray.With<S, ReadonlyArray.Infer<S> | B>; <A, B>(self: NonEmptyReadonlyArray<A>, middle: B): NonEmptyArray<A | B>; <A, B>(self: Iterable<A>, middle: B): Array<A | B>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L2053)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L2151)
 
 Since v2.0.0

@@ -11,6 +11,6 @@ Successful response payload returned by the OpenAI embeddings endpoint.
 type CreateEmbeddingResponse = typeof CreateEmbeddingResponse.Type
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiSchema.ts#L983)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiSchema.ts#L984)
 
 Since v4.0.0

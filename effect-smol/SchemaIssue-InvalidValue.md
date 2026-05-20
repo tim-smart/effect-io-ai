@@ -6,13 +6,13 @@ Module: `SchemaIssue`<br />
 Issue produced when the input has the correct type but its value violates a
 constraint (e.g. a string that is too short, a number out of range).
 
-When to use:
+**When to use**
 
 - Detect constraint violations from `Schema.filter`, `Schema.minLength`,
   `Schema.greaterThan`, etc.
 - Create custom validation errors in `Schema.makeFilter` callbacks.
 
-Behaviour:
+**Details**
 
 - `actual` is `Option.some(value)` when the failing value is known, or
   `Option.none()` when absent.
@@ -53,6 +53,6 @@ declare class InvalidValue { constructor(
   ) }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaIssue.ts#L615)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaIssue.ts#L617)
 
 Since v4.0.0

@@ -10,7 +10,7 @@ source of the value.
 
 - Distinguishing whether a value came from the primary or fallback `Option`
 
-**Behavior**
+**Details**
 
 - `self` is `Some` → `Some(Result.fail(value))` (value from primary)
 - `self` is `None`, `that()` is `Some` → `Some(Result.succeed(value))` (value from fallback)
@@ -38,6 +38,6 @@ console.log(Option.orElseResult(Option.none(), () => Option.some("fallback")))
 declare const orElseResult: { <B>(that: LazyArg<Option<B>>): <A>(self: Option<A>) => Option<Result<B, A>>; <A, B>(self: Option<A>, that: LazyArg<Option<B>>): Option<Result<B, A>>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L761)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L765)
 
 Since v4.0.0

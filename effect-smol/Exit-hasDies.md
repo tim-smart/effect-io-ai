@@ -5,7 +5,12 @@ Module: `Exit`<br />
 
 Tests whether a failed Exit contains defects (Die reasons).
 
+**When to use**
+
 - Use to check for unexpected errors
+
+**Details**
+
 - Returns `false` for successful exits
 
 Only checks for `Die` reasons in the Cause. A Cause with only `Fail` or
@@ -32,6 +37,6 @@ console.log(Exit.hasDies(Exit.succeed(42)))            // false
 declare const hasDies: <A, E>(self: Exit<A, E>) => self is Failure<A, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Exit.ts#L473)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Exit.ts#L531)
 
 Since v4.0.0

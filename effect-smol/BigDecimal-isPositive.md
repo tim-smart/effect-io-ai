@@ -22,6 +22,6 @@ assert.deepStrictEqual(BigDecimal.isPositive(BigDecimal.fromStringUnsafe("1")), 
 declare const isPositive: (n: BigDecimal) => boolean
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigDecimal.ts#L1427)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigDecimal.ts#L1453)
 
 Since v2.0.0

@@ -15,6 +15,6 @@ Schema for the `unknown` type. Accepts any value without validation.
 export interface Unknown extends Bottom<unknown, unknown, never, never, AST.Unknown, Unknown> {}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L2214)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L2263)
 
 Since v3.10.0

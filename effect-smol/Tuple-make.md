@@ -5,9 +5,15 @@ Module: `Tuple`<br />
 
 Creates a tuple from the provided arguments.
 
-- Use instead of `[a, b, c] as const` to get a properly typed tuple
-  without a manual cast.
-- Returns the exact tuple type with each element's literal type preserved.
+**When to use**
+
+Use this instead of `[a, b, c] as const` when you want a properly typed tuple
+without a manual cast.
+
+**Details**
+
+The returned value has the exact tuple type, with each element's literal type
+preserved.
 
 **Example** (Creating a tuple)
 
@@ -29,6 +35,6 @@ console.log(point) // [10, 20, "red"]
 declare const make: <Elements extends ReadonlyArray<unknown>>(...elements: Elements) => Elements
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tuple.ts#L101)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tuple.ts#L106)
 
 Since v2.0.0

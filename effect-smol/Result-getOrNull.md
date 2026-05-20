@@ -5,6 +5,8 @@ Module: `Result`<br />
 
 Extracts the success value, or returns `null` on failure.
 
+**Details**
+
 - `Success<A>` returns `A`
 - `Failure<E>` returns `null`
 - Convenient for interop with APIs that use `null` to represent absence
@@ -32,6 +34,6 @@ console.log(Result.getOrNull(Result.fail("err")))
 declare const getOrNull: <A, E>(self: Result<A, E>) => A | null
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L1048)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L1104)
 
 Since v2.0.0

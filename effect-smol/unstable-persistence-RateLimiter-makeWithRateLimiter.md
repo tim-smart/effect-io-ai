@@ -34,6 +34,6 @@ Effect.gen(function*() {
 declare const makeWithRateLimiter: Effect.Effect<(options: { readonly algorithm?: "fixed-window" | "token-bucket" | undefined; readonly onExceeded?: "delay" | "fail" | undefined; readonly window: Duration.Input; readonly limit: number; readonly key: string; readonly tokens?: number | undefined; }) => <A, E, R>(effect: Effect.Effect<A, E, R>) => Effect.Effect<A, E | RateLimiterError, R>, never, RateLimiter>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RateLimiter.ts#L264)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RateLimiter.ts#L266)
 
 Since v4.0.0

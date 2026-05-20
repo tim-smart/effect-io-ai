@@ -5,6 +5,8 @@ Module: `Model`<br />
 
 Service tag that provides the current large language model provider name.
 
+**Details**
+
 This tag is automatically provided by Model instances and can be used to
 access the name of the provider that is currently in use within a given
 Effect program.
@@ -15,6 +17,6 @@ Effect program.
 declare class ProviderName
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Model.ts#L83)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Model.ts#L85)
 
 Since v4.0.0

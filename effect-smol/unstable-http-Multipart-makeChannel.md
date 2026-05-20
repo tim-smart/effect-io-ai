@@ -5,6 +5,8 @@ Module: `Multipart`<br />
 
 Creates a channel that parses multipart byte chunks into multipart parts.
 
+**Details**
+
 The channel consumes non-empty batches of `Uint8Array` chunks and emits
 non-empty batches of parsed `Part` values, failing with `MultipartError` for
 parser and limit failures.
@@ -15,6 +17,6 @@ parser and limit failures.
 declare const makeChannel: <IE>(headers: Record<string, string>) => Channel.Channel<Arr.NonEmptyReadonlyArray<Part>, MultipartError | IE, void, Arr.NonEmptyReadonlyArray<Uint8Array>, IE, unknown>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Multipart.ts#L392)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Multipart.ts#L420)
 
 Since v4.0.0

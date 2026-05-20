@@ -5,6 +5,8 @@ Module: `DateTime`<br />
 
 Plural amount fields accepted by `DateTime.add` and `DateTime.subtract`.
 
+**Details**
+
 Each field represents the number of units to add or subtract for that part.
 
 **Signature**
@@ -22,6 +24,6 @@ export interface PartsForMath {
   }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L237)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L253)
 
 Since v3.6.0

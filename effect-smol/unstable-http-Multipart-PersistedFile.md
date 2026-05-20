@@ -5,6 +5,8 @@ Module: `Multipart`<br />
 
 Multipart file part that has been written to the filesystem.
 
+**Details**
+
 The `path` points to the persisted file while the scope used to persist the
 multipart data remains open.
 
@@ -20,6 +22,6 @@ export interface PersistedFile extends Part.Proto {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Multipart.ts#L151)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Multipart.ts#L161)
 
 Since v4.0.0

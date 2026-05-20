@@ -5,6 +5,8 @@ Module: `Schedule`<br />
 
 Returns a schedule that recurs once after the specified duration.
 
+**Details**
+
 The schedule outputs the configured duration for its first recurrence and
 then completes.
 
@@ -14,6 +16,6 @@ then completes.
 declare const duration: (durationInput: Duration.Input) => Schedule<Duration.Duration>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L1490)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L1498)
 
 Since v2.0.0

@@ -11,6 +11,6 @@ Returns the strict mode setting for a tool, or `undefined` if not set.
 declare const getStrictMode: <T extends Any>(tool: T) => boolean | undefined
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tool.ts#L1804)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tool.ts#L1866)
 
 Since v4.0.0

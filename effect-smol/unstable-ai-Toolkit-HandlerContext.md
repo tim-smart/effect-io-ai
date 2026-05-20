@@ -12,6 +12,8 @@ export interface HandlerContext<Tool extends Tool.Any> {
   /**
    * Emit a preliminary result during long-running tool calls.
    *
+   * **Details**
+   *
    * Preliminary results are streamed to the caller before the handler completes,
    * enabling real-time progress updates for lengthy operations.
    */

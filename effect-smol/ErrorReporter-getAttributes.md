@@ -12,6 +12,6 @@ returning an empty record when unset.
 declare const getAttributes: (error: object) => ReadonlyRecord<string, unknown>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ErrorReporter.ts#L438)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ErrorReporter.ts#L459)
 
 Since v4.0.0

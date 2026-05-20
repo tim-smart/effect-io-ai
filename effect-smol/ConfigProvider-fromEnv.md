@@ -5,10 +5,13 @@ Module: `ConfigProvider`<br />
 
 Creates a `ConfigProvider` backed by environment variables.
 
-When to use:
-- Reading configuration from `process.env` (the default when no provider
-  is explicitly set).
-- Passing a custom env record for testing or non-Node runtimes.
+**When to use**
+
+Use this to read configuration from `process.env`, which is the default when
+no provider is explicitly set, or to pass a custom env record for testing or
+non-Node runtimes.
+
+**Details**
 
 Path segments are joined with `_` for direct lookup, and env var names are
 also split on `_` to build a trie for child key discovery. This means
@@ -52,6 +55,6 @@ const host = Config.string("HOST").parse(
 declare const fromEnv: (options?: { readonly env?: Record<string, string> | undefined; }) => ConfigProvider
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ConfigProvider.ts#L804)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ConfigProvider.ts#L849)
 
 Since v2.0.0

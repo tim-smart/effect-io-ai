@@ -5,6 +5,8 @@ Module: `Metric`<br />
 
 A Counter metric that tracks cumulative values that typically only increase.
 
+**When to use**
+
 Counters are useful for tracking monotonically increasing values like request counts,
 bytes processed, errors encountered, or any value that accumulates over time.
 
@@ -69,6 +71,6 @@ const program = Effect.gen(function*() {
 export interface Counter<in Input extends number | bigint> extends Metric<Input, CounterState<Input>> {}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Metric.ts#L255)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Metric.ts#L259)
 
 Since v2.0.0

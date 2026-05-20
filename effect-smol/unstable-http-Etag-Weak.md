@@ -5,6 +5,8 @@ Module: `Etag`<br />
 
 Weak HTTP entity tag.
 
+**Details**
+
 The `value` is the raw tag value without the surrounding quotes or `W/` prefix.
 
 **Signature**
@@ -16,6 +18,6 @@ export interface Weak {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Etag.ts#L42)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Etag.ts#L44)
 
 Since v4.0.0

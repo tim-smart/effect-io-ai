@@ -5,6 +5,8 @@ Module: `IdGenerator`<br />
 
 Default ID generator service implementation.
 
+**Details**
+
 Uses the standard configuration with "id" prefix and generates IDs in the
 format "id_XXXXXXXXXXXXXXXX" where X represents random alphanumeric
 characters.
@@ -36,6 +38,6 @@ const withDefault = program.pipe(
 declare const defaultIdGenerator: Service
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/IdGenerator.ts#L214)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/IdGenerator.ts#L220)
 
 Since v4.0.0

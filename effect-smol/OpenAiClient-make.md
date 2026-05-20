@@ -5,6 +5,8 @@ Module: `OpenAiClient`<br />
 
 Constructs an OpenAI-compatible client service from explicit options.
 
+**Details**
+
 The returned service applies the configured base URL, authentication, and
 OpenAI organization/project headers to the underlying HTTP client.
 
@@ -14,6 +16,6 @@ OpenAI organization/project headers to the underlying HTTP client.
 declare const make: (options: Options) => Effect.Effect<Service, never, HttpClient.HttpClient>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/OpenAiClient.ts#L115)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/OpenAiClient.ts#L120)
 
 Since v4.0.0

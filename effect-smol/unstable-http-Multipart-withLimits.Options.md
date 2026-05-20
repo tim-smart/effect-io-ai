@@ -5,6 +5,8 @@ Module: `Multipart`<br />
 
 Options for overriding multipart parser limits.
 
+**Details**
+
 These settings control maximum part count, field size, file size, total body
 size, and MIME types that should be treated as fields instead of files.
 
@@ -20,6 +22,6 @@ type Options = {
   }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Multipart.ts#L735)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Multipart.ts#L774)
 
 Since v4.0.0

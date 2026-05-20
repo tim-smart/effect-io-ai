@@ -11,6 +11,6 @@ Text editor command payload for replacing one exact, unique string in a file.
 type TextEditorStrReplaceCommand = typeof TextEditorStrReplaceCommand.Type
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L1170)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L1198)
 
 Since v4.0.0

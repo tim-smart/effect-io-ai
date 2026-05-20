@@ -5,6 +5,8 @@ Module: `Tool`<br />
 
 Generates a JSON Schema for a tool.
 
+**Details**
+
 This function creates a JSON Schema representation that can be used by
 large language models to indicate the structure and type of the parameters
 that a given tool call should receive.
@@ -44,6 +46,6 @@ console.log(jsonSchema)
 declare const getJsonSchema: <Tool extends Any>(tool: Tool, options?: { readonly transformer?: CodecTransformer; }) => JsonSchema.JsonSchema
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tool.ts#L1610)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tool.ts#L1660)
 
 Since v4.0.0

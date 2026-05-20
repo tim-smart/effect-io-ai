@@ -10,7 +10,7 @@ all are `None`.
 
 - Searching for the first available value in a priority list
 
-**Behavior**
+**Details**
 
 - Short-circuits on the first `Some`
 - Returns `None` only when every element is `None`
@@ -38,6 +38,6 @@ console.log(Option.firstSomeOf([
 declare const firstSomeOf: <T, C extends Iterable<Option<T>> = Iterable<Option<T>>>(collection: C) => [C] extends [Iterable<Option<infer A>>] ? Option<A> : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L801)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L805)
 
 Since v2.0.0

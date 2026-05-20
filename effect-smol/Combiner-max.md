@@ -6,14 +6,15 @@ Module: `Combiner`<br />
 Creates a `Combiner` that returns the larger of two values according to
 the provided `Order`.
 
-When to use:
-- You want to accumulate the maximum value across a collection.
-- You are building a `Reducer` that tracks the running maximum.
+**When to use**
 
-Behavior:
-- Compares using the given `Order`. When values are equal, returns `that`
-  (the second argument).
-- Pure – does not mutate either argument.
+Use this when you want to accumulate the maximum value across a collection or
+build a `Reducer` that tracks the running maximum.
+
+**Details**
+
+The combiner compares values using the given `Order`. When values are equal,
+it returns `that` (the second argument). It does not mutate either argument.
 
 **Example** (maximum of two numbers)
 
@@ -39,6 +40,6 @@ console.log(Max.combine(1, 3))
 declare const max: <A>(order: Order.Order<A>) => Combiner<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Combiner.ts#L232)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Combiner.ts#L233)
 
 Since v4.0.0

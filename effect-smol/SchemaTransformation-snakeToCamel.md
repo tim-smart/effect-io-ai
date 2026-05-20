@@ -6,10 +6,12 @@ Module: `SchemaTransformation`<br />
 A string-to-string transformation that converts snake_case to camelCase
 on decode and camelCase to snake_case on encode.
 
-When to use this:
+**When to use**
+
 - Converting API field names between snake_case and camelCase conventions.
 
-Behavior:
+**Details**
+
 - Decode: `"my_field_name"` → `"myFieldName"`.
 - Encode: `"myFieldName"` → `"my_field_name"`.
 - Round-trippable for standard snake_case/camelCase.
@@ -24,7 +26,8 @@ const SnakeToCamel = Schema.String.pipe(
 )
 ```
 
-See also:
+**See**
+
 - `trim`
 - `toLowerCase`
 
@@ -34,6 +37,6 @@ See also:
 declare const snakeToCamel: () => Transformation<string, string>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L525)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L534)
 
 Since v4.0.0

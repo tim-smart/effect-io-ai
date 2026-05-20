@@ -21,6 +21,6 @@ assert.deepStrictEqual(BigDecimal.negate(BigDecimal.fromStringUnsafe("-6")), Big
 declare const negate: (n: BigDecimal) => BigDecimal
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigDecimal.ts#L923)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigDecimal.ts#L932)
 
 Since v2.0.0

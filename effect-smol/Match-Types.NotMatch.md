@@ -5,6 +5,8 @@ Module: `Match`<br />
 
 Computes the remaining type when a pattern P is excluded from type R.
 
+**Details**
+
 This utility type determines what type remains after a `Match.not` pattern
 excludes certain values. It's the complement of `WhenMatch`, calculating
 what's left after removing the matched portion.
@@ -31,6 +33,6 @@ type NotSpecificValue = Match.Types.NotMatch<"a" | "b" | "c", "a">
 type NotMatch<R, P> = Exclude<R, ExtractMatch<R, PForNotMatch<P>>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L1926)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L1976)
 
 Since v4.0.0

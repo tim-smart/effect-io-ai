@@ -6,6 +6,17 @@ Module: `Effect`<br />
 Returns an effect that caches its result for a specified `Duration`,
 known as "timeToLive" (TTL).
 
+**When to use**
+
+Use this function when you have an effect that involves costly operations or
+computations, and you want to avoid repeating them within a short time frame.
+
+It's ideal for scenarios where the result of an effect doesn't change
+frequently and can be reused for a specified duration.
+
+By caching the result, you can improve efficiency and reduce unnecessary
+computations, especially in performance-critical applications.
+
 **Details**
 
 This function is used to cache the result of an effect for a specified amount
@@ -17,24 +28,6 @@ cached result will be used, avoiding recomputation.
 
 After the specified duration has passed, the cache expires, and the effect
 will be recomputed upon the next evaluation.
-
-**When to Use**
-
-Use this function when you have an effect that involves costly operations or
-computations, and you want to avoid repeating them within a short time frame.
-
-It's ideal for scenarios where the result of an effect doesn't change
-frequently and can be reused for a specified duration.
-
-By caching the result, you can improve efficiency and reduce unnecessary
-computations, especially in performance-critical applications.
-
-**See**
-
-- `cached` for a similar function that caches the result
-indefinitely.
-- `cachedInvalidateWithTTL` for a similar function that includes an
-additional effect for manually invalidating the cached value.
 
 **Example** (Memoizing an effect with TTL)
 
@@ -68,12 +61,19 @@ Effect.runFork(program)
 // result 2
 ```
 
+**See**
+
+- `cached` for a similar function that caches the result
+indefinitely.
+- `cachedInvalidateWithTTL` for a similar function that includes an
+additional effect for manually invalidating the cached value.
+
 **Signature**
 
 ```ts
 declare const cachedWithTTL: { (timeToLive: Duration.Input): <A, E, R>(self: Effect<A, E, R>) => Effect<Effect<A, E, R>>; <A, E, R>(self: Effect<A, E, R>, timeToLive: Duration.Input): Effect<Effect<A, E, R>>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L6545)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L6617)
 
 Since v2.0.0

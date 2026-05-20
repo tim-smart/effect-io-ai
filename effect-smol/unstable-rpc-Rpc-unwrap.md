@@ -12,6 +12,6 @@ input itself when it is already unwrapped.
 declare const unwrap: <A extends object>(value: WrapperOr<A>) => A
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Rpc.ts#L1204)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Rpc.ts#L1240)
 
 Since v4.0.0

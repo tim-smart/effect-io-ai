@@ -11,6 +11,6 @@ Narrows an `AST` to `Never`.
 declare const isNever: (ast: AST) => ast is Never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L194)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L196)
 
 Since v4.0.0

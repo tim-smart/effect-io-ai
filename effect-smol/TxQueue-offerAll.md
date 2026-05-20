@@ -6,12 +6,9 @@ Module: `TxQueue`<br />
 Offers multiple items to the queue, returning the items that were not
 accepted.
 
-Each item follows `offer` semantics: bounded queues retry while full,
-dropping queues reject new items when full, sliding queues evict old items to
-accept new items, and closing or done queues reject all items.
+**Details**
 
-**Mutation behavior**: This function mutates the original TxQueue by adding
-items according to the queue's strategy. It does not return a new TxQueue reference.
+Each item follows `offer` semantics: bounded queues retry while full, dropping queues reject new items when full, sliding queues evict old items to accept new items, and closing or done queues reject all items. This function mutates the original TxQueue by adding items according to the queue's strategy. It does not return a new TxQueue reference.
 
 **Example** (Offering multiple values)
 

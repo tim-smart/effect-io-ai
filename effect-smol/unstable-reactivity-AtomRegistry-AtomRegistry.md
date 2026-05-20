@@ -6,6 +6,8 @@ Module: `AtomRegistry`<br />
 The runtime registry that stores atom nodes and coordinates reads, writes,
 refreshes, subscriptions, and disposal.
 
+**Details**
+
 It also manages scheduler configuration, serializable preloaded values, and node
 addition/removal callbacks.
 
@@ -34,6 +36,6 @@ export interface AtomRegistry {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AtomRegistry.ts#L73)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AtomRegistry.ts#L75)
 
 Since v4.0.0

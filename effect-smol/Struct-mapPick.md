@@ -6,9 +6,13 @@ Module: `Struct`<br />
 Applies a `Lambda` transformation only to the specified keys; all
 other keys are copied unchanged.
 
-- Use when you want to apply the same transformation to a subset of
-  properties.
-- Does not mutate the input; returns a fresh object.
+**When to use**
+
+Use when you want to apply the same transformation to a subset of properties.
+
+**Details**
+
+This does not mutate the input and returns a fresh object.
 
 **Example** (Wrapping only selected values in arrays)
 
@@ -39,6 +43,6 @@ console.log(result) // { x: [1], y: 2, z: [3] }
 declare const mapPick: { <S extends object, const Keys extends ReadonlyArray<keyof S>, L extends Lambda>(keys: Keys, lambda: L): (self: S) => { [K in keyof S]: K extends Keys[number] ? Apply<L, S[K]> : S[K]; }; <S extends object, const Keys extends ReadonlyArray<keyof S>, L extends Lambda>(self: S, keys: Keys, lambda: L): { [K in keyof S]: K extends Keys[number] ? Apply<L, S[K]> : S[K]; }; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Struct.ts#L740)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Struct.ts#L817)
 
 Since v4.0.0

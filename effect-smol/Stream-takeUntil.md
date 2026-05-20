@@ -5,6 +5,8 @@ Module: `Stream`<br />
 
 Takes elements until the predicate matches.
 
+**Details**
+
 When `excludeLast` is `true`, the matching element is dropped.
 
 **Example** (Taking until a predicate matches)
@@ -37,6 +39,6 @@ const program = Effect.gen(function*() {
 declare const takeUntil: { <A>(predicate: (a: NoInfer<A>, n: number) => boolean, options?: { readonly excludeLast?: boolean | undefined; }): <E, R>(self: Stream<A, E, R>) => Stream<A, E, R>; <A, E, R>(self: Stream<A, E, R>, predicate: (a: A, n: number) => boolean, options?: { readonly excludeLast?: boolean | undefined; }): Stream<A, E, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L6127)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L6220)
 
 Since v2.0.0

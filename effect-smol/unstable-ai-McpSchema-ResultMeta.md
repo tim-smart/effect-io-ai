@@ -5,6 +5,8 @@ Module: `McpSchema`<br />
 
 Schema for optional MCP result metadata.
 
+**Details**
+
 The `_meta` field is reserved for protocol, extension, or implementation
 metadata attached to a result.
 
@@ -14,6 +16,6 @@ metadata attached to a result.
 declare class ResultMeta
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L177)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L187)
 
 Since v4.0.0

@@ -5,10 +5,16 @@ Module: `Newtype`<br />
 
 Lifts a `Reducer` for the carrier type into a `Reducer` for the newtype.
 
-- Use when you need to fold/reduce over a collection of newtype values.
-- The returned reducer delegates to the provided carrier reducer.
+**When to use**
 
-**Example** (reducing newtypes)
+Use this when you need to fold or reduce over a collection of newtype
+values.
+
+**Details**
+
+The returned reducer delegates to the provided carrier reducer.
+
+**Example** (Reducing newtypes)
 
 ```ts
 import { Newtype, Reducer } from "effect"
@@ -33,6 +39,6 @@ Newtype.value(total) // 6
 declare const makeReducer: <N extends Newtype.Any>(reducer: Reducer.Reducer<Newtype.Carrier<N>>) => Reducer.Reducer<N>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Newtype.ts#L320)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Newtype.ts#L359)
 
 Since v4.0.0

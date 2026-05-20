@@ -6,9 +6,15 @@ Module: `TxSemaphore`<br />
 Runs an effect while holding the specified number of permits from the
 semaphore.
 
+**Details**
+
 The permits are acquired before the effect starts and released after it
-completes, fails, or is interrupted. Passing a non-positive `n` dies with a
-defect; passing a value greater than the semaphore capacity can wait forever.
+completes, fails, or is interrupted.
+
+**Gotchas**
+
+Passing a non-positive `n` dies with a defect. Passing a value greater than
+the semaphore capacity can wait forever.
 
 **Example** (Running an effect with multiple permits)
 
@@ -40,6 +46,6 @@ const program = Effect.gen(function*() {
 declare const withPermits: { (self: TxSemaphore, n: number): <A, E, R>(effect: Effect.Effect<A, E, R>) => Effect.Effect<A, E, R>; <A, E, R>(self: TxSemaphore, n: number, effect: Effect.Effect<A, E, R>): Effect.Effect<A, E, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxSemaphore.ts#L497)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxSemaphore.ts#L518)
 
 Since v2.0.0

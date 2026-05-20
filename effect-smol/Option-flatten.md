@@ -9,7 +9,7 @@ Flattens a nested `Option<Option<A>>` into `Option<A>`.
 
 - Removing one layer of `Option` nesting
 
-**Behavior**
+**Details**
 
 - `Some(Some(value))` → `Some(value)`
 - `Some(None)` → `None`
@@ -37,6 +37,6 @@ console.log(Option.flatten(Option.some(Option.none())))
 declare const flatten: <A>(self: Option<Option<A>>) => Option<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L1475)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L1479)
 
 Since v2.0.0

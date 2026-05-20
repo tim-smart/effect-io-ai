@@ -5,7 +5,7 @@ Module: `SchemaIssue`<br />
 
 Callback type used to format `Leaf` issues into strings.
 
-When to use:
+**When to use**
 
 - Pass a custom `LeafHook` to `makeFormatterStandardSchemaV1` to
   override how terminal issues are rendered.
@@ -21,6 +21,6 @@ When to use:
 type LeafHook = (issue: Leaf) => string
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaIssue.ts#L938)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaIssue.ts#L940)
 
 Since v4.0.0

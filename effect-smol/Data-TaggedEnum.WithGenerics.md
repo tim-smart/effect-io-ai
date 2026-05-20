@@ -5,15 +5,17 @@ Module: `Data`<br />
 
 Defines a tagged enum shape that accepts generic type parameters.
 
+**When to use**
+
+Use `WithGenerics` when variant payloads need to be parameterized, such as `Result<E, A>`. Pass the interface, not the type alias, to `taggedEnum` to get generic-aware constructors.
+
+**Details**
+
 Extend this interface and set `taggedEnum` to your union type, using
 `this["A"]`, `this["B"]`, etc. as placeholders for the generics. The
 `Count` parameter declares how many generics are used (up to 4).
 
-- Use when variant payloads need to be parameterized (e.g., `Result<E, A>`).
-- Pass the interface (not the type alias) to `taggedEnum` to get
-  generic-aware constructors.
-
-**Example** (generic tagged enum)
+**Example** (Generic tagged enum)
 
 ```ts
 import { Data } from "effect"
@@ -52,6 +54,6 @@ export interface WithGenerics<Count extends number> {
   }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Data.ts#L272)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Data.ts#L283)
 
 Since v2.0.0

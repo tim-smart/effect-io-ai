@@ -5,6 +5,8 @@ Module: `DateTime`<br />
 
 Fixed-offset time zone.
 
+**Details**
+
 The `offset` is measured in milliseconds from UTC. Positive offsets are
 ahead of UTC, and negative offsets are behind UTC.
 
@@ -17,6 +19,6 @@ export interface Offset extends Proto {
   }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L325)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L351)
 
 Since v3.6.0

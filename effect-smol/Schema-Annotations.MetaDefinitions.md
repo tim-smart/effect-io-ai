@@ -5,6 +5,8 @@ Module: `Schema`<br />
 
 Augmentable registry of schema filter metadata payloads.
 
+**Details**
+
 Extend this interface to add custom values accepted by annotation `meta`
 fields.
 
@@ -14,6 +16,6 @@ fields.
 export interface MetaDefinitions extends BuiltInMetaDefinitions {}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L13124)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L13529)
 
 Since v4.0.0

@@ -5,6 +5,8 @@ Module: `Effect`<br />
 
 For all spans in this effect, add a link with the provided span.
 
+**Details**
+
 This is useful for connecting spans that are related but not in a direct
 parent-child relationship. For example, you might want to link spans from
 parallel operations or connect spans across different traces.
@@ -57,6 +59,6 @@ const program = Effect.gen(function*() {
 declare const linkSpans: { (span: AnySpan | ReadonlyArray<AnySpan>, attributes?: Record<string, unknown>): <A, E, R>(self: Effect<A, E, R>) => Effect<A, E, R>; <A, E, R>(self: Effect<A, E, R>, span: AnySpan | ReadonlyArray<AnySpan>, attributes?: Record<string, unknown>): Effect<A, E, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L7562)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L7639)
 
 Since v2.0.0

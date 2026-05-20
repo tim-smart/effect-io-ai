@@ -5,6 +5,8 @@ Module: `Telemetry`<br />
 
 Utility type for prefixing attribute names with a namespace.
 
+**Details**
+
 Transforms attribute keys by adding a prefix and formatting them according to
 OpenTelemetry conventions (camelCase to snake_case).
 
@@ -36,6 +38,6 @@ type AttributesWithPrefix<Attributes, Prefix> = {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Telemetry.ts#L266)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Telemetry.ts#L271)
 
 Since v4.0.0

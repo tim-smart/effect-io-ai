@@ -5,6 +5,8 @@ Module: `Match`<br />
 
 Represents a filter that excludes specific types from a union.
 
+**Details**
+
 `Without` is used internally to track which types should be excluded
 from consideration during pattern matching. It helps implement the
 type-level logic for `Match.not` and other exclusion operations.
@@ -31,6 +33,6 @@ export interface Without<out X> {
   }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L2095)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L2155)
 
 Since v4.0.0

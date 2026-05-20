@@ -3,8 +3,10 @@ Module: `Flag`<br />
 
 ## Flag.redacted
 
-Creates a string flag whose parsed value is wrapped in `Redacted.Redacted`
-so stringification and logging redact the value.
+Creates a string flag whose parsed value is wrapped in `Redacted.Redacted` so
+stringification and logging redact the value.
+
+**Gotchas**
 
 Values supplied on the command line may still be visible to the operating
 system or shell history.
@@ -33,6 +35,6 @@ const program = Effect.gen(function*() {
 declare const redacted: (name: string) => Flag<Redacted.Redacted<string>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Flag.ts#L283)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Flag.ts#L285)
 
 Since v4.0.0

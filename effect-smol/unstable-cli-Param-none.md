@@ -5,6 +5,8 @@ Module: `Param`<br />
 
 Creates an empty sentinel parameter that always fails to parse.
 
+**When to use**
+
 This is useful for creating placeholder parameters or for combinators.
 
 **Example** (Creating sentinel parameters)
@@ -29,6 +31,6 @@ console.log(makeDebugParam(false) === disabledDebugParam) // true
 declare const none: <Kind extends ParamKind>(kind: Kind) => Param<Kind, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Param.ts#L923)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Param.ts#L944)
 
 Since v4.0.0

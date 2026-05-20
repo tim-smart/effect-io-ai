@@ -5,6 +5,8 @@ Module: `Schema`<br />
 
 Constraint used to ensure a schema field does not already have a constructor default.
 
+**Details**
+
 Only schemas that satisfy this constraint can be passed to `withConstructorDefault`.
 
 **Signature**
@@ -15,6 +17,6 @@ export interface WithoutConstructorDefault {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L4668)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L4796)
 
 Since v4.0.0

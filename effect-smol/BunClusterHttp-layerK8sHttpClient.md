@@ -1,0 +1,16 @@
+Package: `@effect/platform-bun`<br />
+Module: `BunClusterHttp`<br />
+
+## BunClusterHttp.layerK8sHttpClient
+
+Kubernetes HTTP client layer used for runner health checks.
+
+**Signature**
+
+```ts
+declare const layerK8sHttpClient: Layer.Layer<K8sHttpClient, never, never>
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunClusterHttp.ts#L70)
+
+Since v4.0.0

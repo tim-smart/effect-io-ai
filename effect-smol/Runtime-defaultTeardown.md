@@ -3,12 +3,11 @@ Module: `Runtime`<br />
 
 ## Runtime.defaultTeardown
 
-The default teardown function that determines exit codes based on Effect completion.
+The default teardown function that determines exit codes from an Effect exit.
 
-This teardown function follows standard Unix conventions:
-- Returns exit code 0 for successful completion
-- Returns exit code 1 for failures (except interruption-only failures)
-- Returns exit code 130 for interruption-only failures
+**Details**
+
+This teardown function follows standard Unix conventions: exit code `0` for successful completion, exit code `1` for failures unless the squashed error has a `Runtime.errorExitCode` marker, and exit code `130` for interruption-only failures.
 
 **Example** (Using default teardown)
 

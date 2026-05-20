@@ -5,6 +5,8 @@ Module: `Array`<br />
 
 Splits an iterable into `n` roughly equal-sized chunks.
 
+**Details**
+
 - Uses `chunksOf(ceil(length / n))` internally.
 - The last chunk may be shorter.
 
@@ -26,6 +28,6 @@ console.log(Array.split([1, 2, 3, 4, 5, 6, 7, 8], 3)) // [[1, 2, 3], [4, 5, 6], 
 declare const split: { (n: number): <A>(self: Iterable<A>) => Array<Array<A>>; <A>(self: Iterable<A>, n: number): Array<Array<A>>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L2414)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L2520)
 
 Since v2.0.0

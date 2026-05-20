@@ -5,6 +5,8 @@ Module: `TxHashMap`<br />
 
 Looks up the value for the specified key using a caller-supplied hash.
 
+**Gotchas**
+
 The supplied hash must be the hash for the same key, such as a precomputed
 `Hash.hash(key)` value. If the hash does not match the key, an existing entry
 may not be found.
@@ -45,6 +47,6 @@ const program = Effect.gen(function*() {
 declare const getHash: { <K1 extends K, K>(key: K1, hash: number): <V>(self: TxHashMap<K, V>) => Effect.Effect<Option.Option<V>>; <K1 extends K, K, V>(self: TxHashMap<K, V>, key: K1, hash: number): Effect.Effect<Option.Option<V>>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashMap.ts#L1258)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashMap.ts#L1273)
 
 Since v4.0.0

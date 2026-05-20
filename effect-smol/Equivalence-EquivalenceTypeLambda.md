@@ -5,12 +5,14 @@ Module: `Equivalence`<br />
 
 Type lambda for `Equivalence`, used for higher-kinded type operations.
 
-When to use this:
-- Rarely needed in application code
-- Primarily for internal type system operations and HKT (Higher-Kinded Types) abstractions
-- When working with generic type constructors that require type lambdas
+**When to use**
 
-Behavior:
+- Rarely needed in application code
+- Use primarily for internal type system operations and HKT (Higher-Kinded Types) abstractions
+- Use when working with generic type constructors that require type lambdas
+
+**Details**
+
 - Enables `Equivalence` to work with the Effect type system's HKT infrastructure
 - Used internally for type-level computations and generic abstractions
 
@@ -30,7 +32,10 @@ type NumberEquivalence = HKT.Kind<
 // Equivalent to: Equivalence.Equivalence<number>
 ```
 
-See also: `Equivalence`, `TypeLambda`
+**See**
+
+- `Equivalence`
+- `TypeLambda`
 
 **Signature**
 
@@ -40,6 +45,6 @@ export interface EquivalenceTypeLambda extends TypeLambda {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Equivalence.ts#L138)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Equivalence.ts#L142)
 
 Since v2.0.0

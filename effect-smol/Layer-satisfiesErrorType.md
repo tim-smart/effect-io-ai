@@ -3,10 +3,12 @@ Module: `Layer`<br />
 
 ## Layer.satisfiesErrorType
 
-Ensures that an layer's error type extends a given type `E`.
+Ensures that a layer's error type extends a given type `E`.
+
+**Details**
 
 This function provides compile-time type checking to ensure that the error
-type of an layer conforms to a specific type constraint.
+type of a layer conforms to a specific type constraint.
 
 **Example** (Constraining layer error types)
 
@@ -35,6 +37,6 @@ const validLayer = satisfiesError(TypeErrorLayer)
 declare const satisfiesErrorType: <E>() => <ROut, E2 extends E, RIn>(layer: Layer<ROut, E2, RIn>) => Layer<ROut, E2, RIn>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L2103)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L2305)
 
 Since v4.0.0

@@ -22,6 +22,6 @@ console.log(result) // "hello\nworld"
 declare const stripMargin: (self: string) => string
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L1024)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L1030)
 
 Since v2.0.0

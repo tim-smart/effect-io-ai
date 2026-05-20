@@ -37,6 +37,6 @@ for (let i = 0; i < 10000; i++) {
 declare const append: <A>(self: MutableList<A>, message: A) => void
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableList.ts#L332)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableList.ts#L334)
 
 Since v2.0.0

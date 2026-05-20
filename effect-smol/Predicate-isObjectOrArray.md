@@ -5,10 +5,12 @@ Module: `Predicate`<br />
 
 Checks whether a value is an object or an array (non-null object).
 
-When to use:
+**When to use**
+
 - You want to accept plain objects and arrays, but not `null`.
 
-Behavior:
+**Details**
+
 - Pure; does not mutate input.
 - Uses `typeof input === "object" && input !== null`.
 - Includes arrays.
@@ -21,7 +23,10 @@ import { Predicate } from "effect"
 console.log(Predicate.isObjectOrArray([]))
 ```
 
-See also: `isObject`, `isObjectKeyword`
+**See**
+
+- `isObject`
+- `isObjectKeyword`
 
 **Signature**
 
@@ -29,6 +34,6 @@ See also: `isObject`, `isObjectKeyword`
 declare const isObjectOrArray: (input: unknown) => input is { [x: PropertyKey]: unknown; } | Array<unknown>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L991)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L1054)
 
 Since v4.0.0

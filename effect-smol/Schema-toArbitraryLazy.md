@@ -6,6 +6,8 @@ Module: `Schema`<br />
 Derives a `LazyArbitrary` from a schema. The result is memoized so
 repeated calls with the same schema are cheap.
 
+**Details**
+
 Prefer `toArbitrary` when you just need the arbitrary directly.
 
 **Signature**
@@ -14,6 +16,6 @@ Prefer `toArbitrary` when you just need the arbitrary directly.
 declare const toArbitraryLazy: <S extends Top>(schema: S) => LazyArbitrary<S["Type"]>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L11446)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L11811)
 
 Since v4.0.0

@@ -5,6 +5,8 @@ Module: `DateTime`<br />
 
 Format a `DateTime.Zoned` as a string.
 
+**Details**
+
 It uses the format: `YYYY-MM-DDTHH:mm:ss.sss+HH:MM[Time/Zone]`.
 
 **Example** (Formatting zoned DateTime values)
@@ -33,6 +35,6 @@ console.log(offsetFormatted) // "2024-06-15T17:30:45.123+03:00"
 declare const formatIsoZoned: (self: Zoned) => string
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L2587)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L2718)
 
 Since v3.6.0

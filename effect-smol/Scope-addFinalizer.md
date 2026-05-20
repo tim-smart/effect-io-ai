@@ -5,6 +5,8 @@ Module: `Scope`<br />
 
 Registers a finalizer effect on a scope.
 
+**Details**
+
 If the scope is open, the finalizer runs when the scope closes, regardless of
 whether the scope closes successfully or with an error. If the scope is
 already closed, the finalizer runs immediately.
@@ -36,6 +38,6 @@ const program = Effect.gen(function*() {
 declare const addFinalizer: (scope: Scope, finalizer: Effect<unknown>) => Effect<void>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Scope.ts#L377)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Scope.ts#L383)
 
 Since v2.0.0

@@ -5,7 +5,10 @@ Module: `Prompt`<br />
 
 Base interface for all content parts.
 
-Provides common structure including type and provider options.
+**Details**
+
+It provides the common structure shared by all content parts, including the
+part type and provider options.
 
 **Signature**
 
@@ -23,6 +26,6 @@ export interface BasePart<Type extends string, Options extends ProviderOptions> 
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L158)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L159)
 
 Since v4.0.0

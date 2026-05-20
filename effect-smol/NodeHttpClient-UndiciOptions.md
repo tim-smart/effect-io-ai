@@ -12,6 +12,6 @@ sent by `makeUndici`.
 declare const UndiciOptions: Context.Reference<Partial<Undici.Dispatcher.RequestOptions<null>>>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L132)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L138)
 
 Since v4.0.0

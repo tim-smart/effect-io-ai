@@ -5,7 +5,8 @@ Module: `AnthropicTool`<br />
 
 Computer-use action payload for zooming into a specific screen region.
 
-**Notes**
+**Details**
+
 The enclosing computer-use tool must be configured with `enableZoom: true`.
 
 **Signature**
@@ -14,6 +15,6 @@ The enclosing computer-use tool must be configured with `enableZoom: true`.
 type ComputerUseZoomAction = typeof ComputerUseZoomAction.Type
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L787)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L802)
 
 Since v4.0.0

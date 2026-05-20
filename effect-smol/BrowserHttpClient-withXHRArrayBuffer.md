@@ -11,6 +11,6 @@ Runs an effect with `CurrentXHRResponseType` set to `"arraybuffer"` so the XHR H
 declare const withXHRArrayBuffer: <A, E, R>(self: Effect.Effect<A, E, R>) => Effect.Effect<A, E, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/BrowserHttpClient.ts#L105)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/BrowserHttpClient.ts#L111)
 
 Since v4.0.0

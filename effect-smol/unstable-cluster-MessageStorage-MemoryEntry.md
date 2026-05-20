@@ -5,6 +5,8 @@ Module: `MessageStorage`<br />
 
 In-memory storage entry for a request envelope.
 
+**Details**
+
 It stores the encoded envelope, last acknowledged chunk, accumulated replies,
 and optional delivery time.
 
@@ -19,6 +21,6 @@ type MemoryEntry = {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MessageStorage.ts#L782)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MessageStorage.ts#L814)
 
 Since v4.0.0

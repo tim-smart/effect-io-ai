@@ -6,6 +6,8 @@ Module: `Array`<br />
 Sorts an array by multiple `Order`s applied in sequence: the first order is
 used first; ties are broken by the second order, and so on.
 
+**Details**
+
 - Data-last only (returns a function).
 - Preserves `NonEmptyArray` in the return type.
 
@@ -42,6 +44,6 @@ console.log(result)
 declare const sortBy: <S extends Iterable<any>>(...orders: ReadonlyArray<Order.Order<ReadonlyArray.Infer<S>>>) => (self: S) => S extends NonEmptyReadonlyArray<infer A> ? NonEmptyArray<A> : S extends Iterable<infer A> ? Array<A> : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L1919)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L2013)
 
 Since v2.0.0

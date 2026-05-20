@@ -5,10 +5,12 @@ Module: `SchemaGetter`<br />
 
 Encodes a nested object into a `FormData` instance using bracket-path notation.
 
-Use this when:
+**When to use**
+
 - Serializing structured data to `FormData` for HTTP requests.
 
-Behavior:
+**Details**
+
 - Pure, never fails.
 - Flattens nested objects/arrays into bracket-path keys (e.g. `user[name]`, `items[0]`).
 - Non-object inputs produce an empty `FormData`.
@@ -22,10 +24,11 @@ const encode = SchemaGetter.encodeFormData()
 // Getter<FormData, unknown>
 ```
 
-See also:
-- `decodeFormData` — inverse operation
-- `collectBracketPathEntries` — the underlying flattener
-- `encodeURLSearchParams` — similar for URLSearchParams
+**See**
+
+- `decodeFormData` - inverse operation
+- `collectBracketPathEntries` - the underlying flattener
+- `encodeURLSearchParams` - similar for URLSearchParams
 
 **Signature**
 
@@ -33,6 +36,6 @@ See also:
 declare const encodeFormData: () => Getter<FormData, unknown>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L1627)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L1659)
 
 Since v4.0.0

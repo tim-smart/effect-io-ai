@@ -22,6 +22,6 @@ Effect.gen(function*() {
 declare const now: Effect.Effect<Utc, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L773)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L821)
 
 Since v3.6.0

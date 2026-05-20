@@ -5,6 +5,8 @@ Module: `Config`<br />
 
 Creates a config for a finite number (rejects `NaN` and `Infinity`).
 
+**Details**
+
 Shortcut for `Config.schema(Schema.Finite, name)`.
 
 **See**
@@ -18,6 +20,6 @@ Shortcut for `Config.schema(Schema.Finite, name)`.
 declare const finite: (name?: string) => Config<number>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Config.ts#L932)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Config.ts#L992)
 
 Since v4.0.0

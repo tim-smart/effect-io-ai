@@ -6,6 +6,8 @@ Module: `Logger`<br />
 Creates a `Layer` which will overwrite the current set of loggers with the
 specified array of `loggers`.
 
+**Details**
+
 If the specified array of `loggers` should be _merged_ with the current set
 of loggers (instead of overwriting them), set `mergeWithExisting` to `true`.
 
@@ -47,6 +49,6 @@ const program = Effect.log("Application started").pipe(
 declare const layer: <const Loggers extends ReadonlyArray<Logger<unknown, unknown> | Effect.Effect<Logger<unknown, unknown>, any, any>>>(loggers: Loggers, options?: { readonly mergeWithExisting?: boolean | undefined; } | undefined) => Layer.Layer<never, Loggers extends readonly [] ? never : Effect.Error<Loggers[number]>, Exclude<Loggers extends readonly [] ? never : Effect.Services<Loggers[number]>, Scope.Scope>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Logger.ts#L1180)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Logger.ts#L1191)
 
 Since v4.0.0

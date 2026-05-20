@@ -5,6 +5,8 @@ Module: `Response`<br />
 
 Represents usage information for a request to a large language model provider.
 
+**Details**
+
 If the model provider returns additional usage information than what is
 specified here, you can generally find that information under the provider
 metadata of the finish part of the response.
@@ -15,6 +17,6 @@ metadata of the finish part of the response.
 declare class Usage
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Response.ts#L2338)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Response.ts#L2357)
 
 Since v4.0.0

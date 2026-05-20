@@ -5,6 +5,8 @@ Module: `SchemaAST`<br />
 
 AST node matching a specific `unique symbol` value.
 
+**Details**
+
 Parsing succeeds only when the input is reference-equal to the stored
 `symbol`.
 
@@ -24,6 +26,6 @@ declare class UniqueSymbol { constructor(
   ) }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L1024)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L1049)
 
 Since v3.10.0

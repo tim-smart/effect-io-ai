@@ -5,9 +5,13 @@ Module: `Struct`<br />
 
 Retrieves the value at `key` from a struct.
 
-- Use in a pipeline when you need to extract a single property.
-- Does not mutate the input.
-- The return type is narrowed to `S[K]`.
+**When to use**
+
+Use in a pipeline when you need to extract a single property.
+
+**Details**
+
+This does not mutate the input, and the return type is narrowed to `S[K]`.
 
 **Example** (Extracting a property in a pipeline)
 
@@ -29,6 +33,6 @@ console.log(name) // "Alice"
 declare const get: { <S extends object, const K extends keyof S>(key: K): (self: S) => S[K]; <S extends object, const K extends keyof S>(self: S, key: K): S[K]; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Struct.ts#L184)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Struct.ts#L198)
 
 Since v2.0.0

@@ -13,6 +13,6 @@ without any previous subscription from the client.
 declare class PromptListChangedNotification
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L1273)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L1303)
 
 Since v4.0.0

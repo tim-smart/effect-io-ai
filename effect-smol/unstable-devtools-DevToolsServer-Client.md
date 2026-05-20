@@ -5,6 +5,8 @@ Module: `DevToolsServer`<br />
 
 Handle for a connected devtools client.
 
+**Details**
+
 It exposes a queue of non-ping requests received from the socket and a
 `send` function for non-pong responses.
 
@@ -17,6 +19,6 @@ export interface Client {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DevToolsServer.ts#L39)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DevToolsServer.ts#L41)
 
 Since v4.0.0

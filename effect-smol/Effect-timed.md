@@ -5,6 +5,8 @@ Module: `Effect`<br />
 
 Measures the runtime of an effect and returns the duration with its result.
 
+**Details**
+
 The original success, failure, or interruption is preserved; only the success
 value is paired with the duration.
 
@@ -25,6 +27,6 @@ const program = Effect.gen(function*() {
 declare const timed: <A, E, R>(self: Effect<A, E, R>) => Effect<[duration: Duration.Duration, result: A], E, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L4332)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L4388)
 
 Since v2.0.0

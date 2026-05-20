@@ -5,6 +5,8 @@ Module: `Prompt`<br />
 
 Options for a file-system selection prompt.
 
+**Details**
+
 They control which path type can be selected, the starting directory, paging,
 and filtering of displayed entries.
 
@@ -13,39 +15,30 @@ and filtering of displayed entries.
 ```ts
 export interface FileOptions {
   /**
-   * The path type that will be selected.
-   *
-   * Defaults to `"file"`.
+   * The path type that will be selected, defaulting to `"file"`.
    */
   readonly type?: Primitive.PathType
   /**
-   * The message to display in the prompt.
-   *
-   * Defaults to `"Choose a file"`.
+   * The message to display in the prompt, defaulting to `"Choose a file"`.
    */
   readonly message?: string
   /**
-   * Where the user will initially be prompted to select files from.
-   *
-   * Defaults to the current working directory.
+   * Where the user will initially be prompted to select files from, defaulting
+   * to the current working directory.
    */
   readonly startingPath?: string
   /**
-   * The number of choices to display at one time
-   *
-   * Defaults to `10`.
+   * The number of choices to display at one time, defaulting to `10`.
    */
   readonly maxPerPage?: number
   /**
-   * A function which removes any file from the prompt display where the
-   * specified predicate returns `true`.
-   *
-   * Defaults to returning all files.
+   * A predicate or effect that keeps a file in the prompt when it returns
+   * `true`, defaulting to returning all files.
    */
   readonly filter?: (file: string) => boolean | Effect.Effect<boolean, never, Environment>
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L340)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L349)
 
 Since v4.0.0

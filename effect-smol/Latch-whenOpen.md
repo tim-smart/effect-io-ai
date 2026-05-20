@@ -5,6 +5,8 @@ Module: `Latch`<br />
 
 Waits on the latch, then runs the provided effect.
 
+**Details**
+
 If the latch is open, the effect runs immediately. If it is closed, the
 returned effect suspends until the latch is opened or the current waiters are
 released. The provided effect's success, failure, and requirements are
@@ -16,6 +18,6 @@ preserved.
 declare const whenOpen: { (self: Latch): <A, E, R>(effect: Effect.Effect<A, E, R>) => Effect.Effect<A, E, R>; <A, E, R>(self: Latch, effect: Effect.Effect<A, E, R>): Effect.Effect<A, E, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Latch.ts#L233)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Latch.ts#L255)
 
 Since v4.0.0

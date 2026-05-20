@@ -11,6 +11,6 @@ Provides `Persistence` backed by the current `Redis` service.
 declare const layerRedis: Layer.Layer<Persistence, never, Redis.Redis>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Persistence.ts#L1039)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Persistence.ts#L1051)
 
 Since v4.0.0

@@ -5,6 +5,8 @@ Module: `Tool`<br />
 
 Extracts the description from a tool's metadata.
 
+**Details**
+
 Returns the tool's description if explicitly set, otherwise attempts to
 extract it from the parameter schema's AST annotations.
 
@@ -27,6 +29,6 @@ console.log(description) // "This is an example tool"
 declare const getDescription: <Tool extends Any>(tool: Tool) => string | undefined
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tool.ts#L1561)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tool.ts#L1609)
 
 Since v4.0.0

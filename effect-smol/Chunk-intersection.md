@@ -3,9 +3,11 @@ Module: `Chunk`<br />
 
 ## Chunk.intersection
 
-Creates a Chunk of unique values that are included in all given Chunks.
+Creates a `Chunk` of values that are included in both chunks.
 
-The order and references of result values are determined by the Chunk.
+**Details**
+
+The order and references of result values are determined by the first chunk.
 
 **Example** (Intersecting chunks)
 
@@ -34,6 +36,6 @@ console.log(Chunk.toArray(Chunk.intersection(chunk3, chunk4))) // []
 declare const intersection: { <A>(that: Chunk<A>): <B>(self: Chunk<B>) => Chunk<A & B>; <A, B>(self: Chunk<A>, that: Chunk<B>): Chunk<A & B>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L1339)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L1341)
 
 Since v2.0.0

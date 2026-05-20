@@ -11,6 +11,6 @@ Generator return type accepted by `Effect.gen`.
 type Return<A, E, R> = Generator<Effect<any, E, R>, A, any>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L1392)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L1402)
 
 Since v4.0.0

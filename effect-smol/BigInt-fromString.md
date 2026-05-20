@@ -5,6 +5,8 @@ Module: `BigInt`<br />
 
 Converts a string to a `bigint`.
 
+**Details**
+
 If the string is empty or contains characters that cannot be converted into a
 `bigint`, it returns `Option.none()`.
 
@@ -24,6 +26,6 @@ BigInt.fromString("a") // Option.none()
 declare const fromString: (s: string) => Option.Option<bigint>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigInt.ts#L681)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigInt.ts#L698)
 
 Since v2.4.12

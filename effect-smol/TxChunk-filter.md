@@ -5,8 +5,10 @@ Module: `TxChunk`<br />
 
 Filters the `TxChunk` keeping only elements that satisfy the predicate.
 
-**Mutation behavior**: This function mutates the original TxChunk by removing
-elements that don't match the predicate. It does not return a new TxChunk reference.
+**Details**
+
+This function mutates the original TxChunk by removing elements that don't match the predicate. It
+does not return a new TxChunk reference.
 
 **Example** (Filtering elements)
 
@@ -30,6 +32,6 @@ const program = Effect.gen(function*() {
 declare const filter: { <A, B extends A>(refinement: (a: A) => a is B): (self: TxChunk<A>) => Effect.Effect<void>; <A>(predicate: (a: A) => boolean): (self: TxChunk<A>) => Effect.Effect<void>; <A, B extends A>(self: TxChunk<A>, refinement: (a: A) => a is B): Effect.Effect<void>; <A>(self: TxChunk<A>, predicate: (a: A) => boolean): Effect.Effect<void>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxChunk.ts#L665)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxChunk.ts#L694)
 
 Since v4.0.0

@@ -5,8 +5,10 @@ Module: `Iterable`<br />
 
 Creates an iterable containing a single element.
 
-This is useful for wrapping a single value in an iterable context,
-allowing it to be used with other iterable operations.
+**When to use**
+
+Use this to wrap a single value in an iterable context so it can be combined
+with other iterable operations.
 
 **Example** (Wrapping a single value)
 
@@ -38,6 +40,6 @@ console.log(Array.from(evensOnly)) // [2, 4]
 declare const of: <A>(a: A) => Iterable<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Iterable.ts#L1384)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Iterable.ts#L1406)
 
 Since v2.0.0

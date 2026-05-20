@@ -5,6 +5,8 @@ Module: `HttpBody`<br />
 
 Creates a JSON HTTP body using `JSON.stringify`, throwing if serialization fails.
 
+**Details**
+
 The content type defaults to `application/json`.
 
 **Signature**
@@ -13,6 +15,6 @@ The content type defaults to `application/json`.
 declare const jsonUnsafe: (body: unknown, contentType?: string) => Uint8Array
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpBody.ts#L277)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpBody.ts#L291)
 
 Since v4.0.0

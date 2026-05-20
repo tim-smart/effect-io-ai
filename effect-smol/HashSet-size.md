@@ -26,6 +26,6 @@ console.log(HashSet.size(withDuplicates)) // 3
 declare const size: <V>(self: HashSet<V>) => number
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashSet.ts#L352)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashSet.ts#L354)
 
 Since v2.0.0

@@ -5,6 +5,8 @@ Module: `Result`<br />
 
 The failure variant of `Result`. Wraps an error of type `E`.
 
+**Details**
+
 - Access the error via the `.failure` property
 - Use `isFailure` to narrow a `Result` to `Failure`
 - Create with `fail`
@@ -46,6 +48,6 @@ export interface Failure<out A, out E> extends Pipeable, Inspectable {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L150)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L154)
 
 Since v4.0.0

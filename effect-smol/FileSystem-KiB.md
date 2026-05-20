@@ -5,6 +5,8 @@ Module: `FileSystem`<br />
 
 Creates a `Size` representing kilobytes (1024 bytes).
 
+**Details**
+
 Converts a number of kilobytes to the equivalent size in bytes.
 Uses binary kilobytes (1024 bytes) rather than decimal (1000 bytes).
 
@@ -34,6 +36,6 @@ const program = Effect.gen(function*() {
 declare const KiB: (n: number) => Size
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FileSystem.ts#L493)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FileSystem.ts#L517)
 
 Since v4.0.0

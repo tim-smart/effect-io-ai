@@ -5,6 +5,8 @@ Module: `Cron`<br />
 
 Checks if a given value is a CronParseError instance.
 
+**Details**
+
 This function is a type guard that determines whether the provided
 value is a CronParseError by checking for the presence of the
 CronParseError type identifier.
@@ -30,6 +32,6 @@ console.log(Cron.isCronParseError("not an error")) // false
 declare const isCronParseError: (u: unknown) => u is CronParseError
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cron.ts#L511)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cron.ts#L520)
 
 Since v4.0.0

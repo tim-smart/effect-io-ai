@@ -11,6 +11,6 @@ Service identifier for the Anthropic client.
 declare class AnthropicClient
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicClient.ts#L138)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicClient.ts#L130)
 
 Since v4.0.0

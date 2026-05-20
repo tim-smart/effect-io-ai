@@ -6,9 +6,9 @@ Module: `TxQueue`<br />
 Removes and returns all currently buffered elements without changing the
 queue state.
 
-If the queue is already done with a `Cause.Done` error, returns an empty
-array. If the queue is done for any other cause, including interruption or
-failure, that cause is propagated.
+**Details**
+
+If the queue is already done with a `Cause.Done` error, returns an empty array. If the queue is done for any other cause, including interruption or failure, that cause is propagated.
 
 **Example** (Clearing queues)
 
@@ -36,6 +36,6 @@ const program = Effect.gen(function*() {
 declare const clear: <A, E>(self: TxEnqueue<A, E>) => Effect.Effect<Array<A>, ExcludeDone<E>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxQueue.ts#L1309)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxQueue.ts#L1297)
 
 Since v4.0.0

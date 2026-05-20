@@ -5,12 +5,21 @@ Module: `Exit`<br />
 
 Transforms the typed error of a failed Exit using the given function.
 
+**When to use**
+
 - Use to remap typed errors while preserving the Exit structure
+
+**Details**
+
 - Has no effect on successes, which pass through unchanged
-- Only transforms typed errors (Fail reasons). If the Cause contains only defects or interruptions, the failure passes through unchanged.
 
 Allocates a new Exit if the error is transformed. Does not mutate the input.
 Supports both curried and direct call styles.
+
+**Gotchas**
+
+Only transforms typed errors (Fail reasons). If the Cause contains only
+defects or interruptions, the failure passes through unchanged.
 
 **Example** (Mapping over an error)
 
@@ -35,6 +44,6 @@ console.log(Exit.isFailure(mapped)) // true
 declare const mapError: { <E, E2>(f: (a: NoInfer<E>) => E2): <A>(self: Exit<A, E>) => Exit<A, E2>; <A, E, E2>(self: Exit<A, E>, f: (a: NoInfer<E>) => E2): Exit<A, E2>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Exit.ts#L768)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Exit.ts#L884)
 
 Since v2.0.0

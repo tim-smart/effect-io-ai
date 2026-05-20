@@ -5,6 +5,8 @@ Module: `FileSystem`<br />
 
 Creates a `Size` representing pebibytes (1024⁵ bytes).
 
+**Details**
+
 Converts a number of pebibytes to the equivalent size in bytes.
 Uses binary pebibytes (1,125,899,906,842,624 bytes) rather than decimal petabytes.
 This function uses BigInt arithmetic to handle the very large numbers involved.
@@ -37,6 +39,6 @@ const program = Effect.gen(function*() {
 declare const PiB: (n: number) => Size
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FileSystem.ts#L632)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FileSystem.ts#L664)
 
 Since v4.0.0

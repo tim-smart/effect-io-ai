@@ -12,6 +12,6 @@ value.
 declare const confirm: (options: ConfirmOptions) => Prompt<boolean>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L710)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L714)
 
 Since v4.0.0

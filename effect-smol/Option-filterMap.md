@@ -5,6 +5,8 @@ Module: `Option`<br />
 
 Transforms and filters an `Option` using a `Filter` callback.
 
+**Details**
+
 The callback returns a `Result`: `Result.succeed` keeps and transforms the
 value, while `Result.fail` discards it.
 
@@ -30,6 +32,6 @@ console.log(Option.filterMap(
 declare const filterMap: { <A, B, X>(f: Filter.Filter<A, B, X>): (self: Option<A>) => Option<B>; <A, B, X>(self: Option<A>, f: Filter.Filter<A, B, X>): Option<B>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L1986)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L1992)
 
 Since v2.0.0

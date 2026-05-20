@@ -5,6 +5,8 @@ Module: `SchemaAST`<br />
 
 Bidirectional merge strategy for index signature key-value pairs.
 
+**Details**
+
 Used by `IndexSignature` when the same key appears multiple times
 (e.g. from `Schema.extend` or overlapping records). Provides separate
 `decode` and `encode` combiners that determine how duplicate entries are
@@ -23,6 +25,6 @@ declare class KeyValueCombiner { constructor(
   ) }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L1616)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L1651)
 
 Since v4.0.0

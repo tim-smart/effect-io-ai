@@ -6,9 +6,11 @@ Module: `Data`<br />
 Extracts the constructor argument type for a specific variant of a tagged
 union.
 
+**Details**
+
 Returns `void` if the variant has no fields beyond `_tag`.
 
-**Example** (extracting variant args)
+**Example** (Extracting variant args)
 
 ```ts
 import type { Data } from "effect"
@@ -37,6 +39,6 @@ type Args<A, K, E> = {
     : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Data.ts#L352)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Data.ts#L366)
 
 Since v2.0.0

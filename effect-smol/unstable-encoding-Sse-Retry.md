@@ -5,6 +5,8 @@ Module: `Sse`<br />
 
 Server-Sent Events retry directive.
 
+**Details**
+
 Decoders surface this value as a failure to request reconnection after
 `duration`; encoders serialize an upstream `Retry` failure as a `retry:` line.
 
@@ -14,6 +16,6 @@ Decoders surface this value as a failure to request reconnection after
 declare class Retry
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Sse.ts#L515)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Sse.ts#L520)
 
 Since v4.0.0

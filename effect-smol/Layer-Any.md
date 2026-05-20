@@ -3,10 +3,12 @@ Module: `Layer`<br />
 
 ## Layer.Any
 
-A constraint interface for working with any Layer type.
+A type-level constraint for working with any `Layer` type.
 
-This interface is used to constrain generic types to Layer types
-without specifying exact type parameters.
+**Details**
+
+This interface is used to constrain generic types to `Layer` values without
+specifying exact type parameters.
 
 **Signature**
 
@@ -20,6 +22,6 @@ export interface Any {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L113)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L129)
 
 Since v3.9.0

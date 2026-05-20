@@ -6,9 +6,14 @@ Module: `Types`<br />
 Recursively removes `readonly` from all properties, including nested
 objects, arrays, `Map`, and `Set`.
 
-- Use when you need a fully mutable version of a deeply readonly type.
-- Recursion stops at primitives (`string`, `number`, `boolean`, `bigint`,
-  `symbol`) and functions.
+**When to use**
+
+Use when you need a fully mutable version of a deeply readonly type.
+
+**Details**
+
+Recursion stops at primitives (`string`, `number`, `boolean`, `bigint`,
+`symbol`) and functions.
 
 **Example** (Deep mutable conversion)
 
@@ -35,6 +40,6 @@ type DeepMutable<T> = T extends ReadonlyMap<infer K, infer V> ? Map<DeepMutable<
   : { -readonly [K in keyof T]: DeepMutable<T[K]> }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Types.ts#L513)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Types.ts#L579)
 
 Since v3.1.0

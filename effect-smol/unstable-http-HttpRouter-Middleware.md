@@ -5,6 +5,8 @@ Module: `HttpRouter`<br />
 
 Composable descriptor for route-scoped HTTP router middleware.
 
+**Details**
+
 Its `layer` can be provided to route layers, and `combine` composes middleware
 while tracking provided services, handled errors, and remaining requirements at
 the type level.
@@ -53,6 +55,6 @@ export interface Middleware<
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpRouter.ts#L798)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpRouter.ts#L824)
 
 Since v4.0.0

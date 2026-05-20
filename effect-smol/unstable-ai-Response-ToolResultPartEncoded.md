@@ -33,12 +33,14 @@ export interface ToolResultPartEncoded extends BasePartEncoded<"tool-result", To
   /**
    * Whether this is a preliminary (intermediate) result.
    *
+   * **Gotchas**
+   *
    * Only applicable for framework-executed tools during streaming.
    */
   readonly preliminary?: boolean | undefined
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Response.ts#L1563)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Response.ts#L1568)
 
 Since v4.0.0

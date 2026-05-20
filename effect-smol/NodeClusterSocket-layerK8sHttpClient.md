@@ -12,6 +12,6 @@ Kubernetes-aware dispatcher.
 declare const layerK8sHttpClient: Layer.Layer<K8sHttpClient.K8sHttpClient, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeClusterSocket.ts#L186)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeClusterSocket.ts#L192)
 
 Since v4.0.0

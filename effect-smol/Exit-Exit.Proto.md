@@ -5,6 +5,8 @@ Module: `Exit`<br />
 
 Base interface shared by both Success and Failure.
 
+**Details**
+
 Every Exit is also an Effect, so you can yield it in `Effect.gen`.
 
 **Signature**
@@ -15,6 +17,6 @@ export interface Proto<out A, out E = never> extends Effect.Effect<A, E> {
   }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Exit.ts#L118)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Exit.ts#L124)
 
 Since v4.0.0

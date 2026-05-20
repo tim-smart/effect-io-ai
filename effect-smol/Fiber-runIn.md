@@ -5,6 +5,8 @@ Module: `Fiber`<br />
 
 Links a fiber to a `Scope` and returns the same fiber.
 
+**Details**
+
 When the scope is closed, the fiber is interrupted. If the scope is already
 closed, the fiber is interrupted immediately.
 
@@ -14,6 +16,6 @@ closed, the fiber is interrupted immediately.
 declare const runIn: { (scope: Scope): <A, E>(self: Fiber<A, E>) => Fiber<A, E>; <A, E>(self: Fiber<A, E>, scope: Scope): Fiber<A, E>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Fiber.ts#L509)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Fiber.ts#L513)
 
 Since v4.0.0

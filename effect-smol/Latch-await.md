@@ -11,6 +11,6 @@ Waits for the latch to be opened.
 declare const await: (self: Latch) => Effect.Effect<void>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Latch.ts#L195)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Latch.ts#L211)
 
 Since v4.0.0

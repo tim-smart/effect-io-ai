@@ -7,10 +7,14 @@ Transforms elements of a tuple by providing an array of transform functions.
 Each function applies to the element at the same position. Positions beyond
 the array's length are copied unchanged.
 
-- Use when you want to update the first N elements while keeping the rest.
-- Does not mutate the input; returns a fresh tuple.
-- Each transform function receives the current value and can return a
-  different type.
+**When to use**
+
+Use this when you want to update the first N elements while keeping the rest.
+
+**Details**
+
+Each transform function receives the current value and can return a different
+type. The input tuple is not mutated; a fresh tuple is returned.
 
 **Example** (Transforming selected elements)
 
@@ -38,6 +42,6 @@ console.log(result) // ["HELLO", 84, true]
 declare const evolve: { <const T extends ReadonlyArray<unknown>, const E extends Evolver<T>>(evolver: E): (self: T) => Evolved<T, E>; <const T extends ReadonlyArray<unknown>, const E extends Evolver<T>>(self: T, evolver: E): Evolved<T, E>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tuple.ts#L324)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tuple.ts#L345)
 
 Since v4.0.0

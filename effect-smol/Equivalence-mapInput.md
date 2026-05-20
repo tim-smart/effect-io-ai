@@ -5,18 +5,20 @@ Module: `Equivalence`<br />
 
 Transforms an equivalence relation by mapping the input values before comparison.
 
-When to use this:
-- When you need an equivalence for a complex type based on a single property
-- When you want to normalize values before comparison (e.g., case-insensitive strings)
-- When creating equivalences that focus on specific fields of objects
-- As a building block for creating equivalences via `combine` or `combineAll`
+**When to use**
 
-Behavior:
+- Use when you need an equivalence for a complex type based on a single property
+- Use when you want to normalize values before comparison, such as case-insensitive strings
+- Use when creating equivalences that focus on specific fields of objects
+- Use as a building block for creating equivalences via `combine` or `combineAll`
+
+**Details**
+
 - Does not mutate inputs
 - Applies the transformation function to both values before comparing
-- The transformation function should be pure (no side effects)
+- The transformation function should be pure and have no side effects
 - The resulting equivalence compares the transformed values using the provided equivalence
-- The result is also an equivalence (satisfies reflexive, symmetric, transitive properties)
+- The result is also an equivalence that satisfies reflexive, symmetric, and transitive properties
 
 **Example** (Equivalence based on object property)
 
@@ -57,7 +59,10 @@ console.log(caseInsensitiveEq("Hello", "HELLO")) // true
 console.log(caseInsensitiveEq("Hello", "World")) // false
 ```
 
-See also: `combine`, `Struct`
+**See**
+
+- `combine`
+- `Struct`
 
 **Signature**
 
@@ -65,6 +70,6 @@ See also: `combine`, `Struct`
 declare const mapInput: { <B, A>(f: (b: B) => A): (self: Equivalence<A>) => Equivalence<B>; <A, B>(self: Equivalence<A>, f: (b: B) => A): Equivalence<B>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Equivalence.ts#L503)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Equivalence.ts#L522)
 
 Since v2.0.0

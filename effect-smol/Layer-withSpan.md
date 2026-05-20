@@ -3,8 +3,10 @@ Module: `Layer`<br />
 
 ## Layer.withSpan
 
-Wraps a Layer with a new tracing span, making all operations in the layer
+Wraps a `Layer` with a new tracing span, making all operations in the layer
 constructor part of the named trace span.
+
+**Details**
 
 This creates a new span for the layer's construction and execution. The span
 is automatically ended when the layer's scope is closed. This is useful for
@@ -54,8 +56,7 @@ const program = Effect.gen(function*() {
 
   yield* logger.log("Application ready")
   return yield* database.query("SELECT * FROM users")
-}).pipe(Effect.provide(appLayer)
-)
+}).pipe(Effect.provide(appLayer))
 ```
 
 **Signature**
@@ -64,6 +65,6 @@ const program = Effect.gen(function*() {
 declare const withSpan: { (name: string, options?: SpanOptions): <A, E, R>(self: Layer<A, E, R>) => Layer<A, E, Exclude<R, Tracer.ParentSpan>>; <A, E, R>(self: Layer<A, E, R>, name: string, options?: SpanOptions): Layer<A, E, Exclude<R, Tracer.ParentSpan>>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L2323)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L2533)
 
 Since v2.0.0

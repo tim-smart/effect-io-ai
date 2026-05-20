@@ -5,6 +5,8 @@ Module: `Match`<br />
 
 Represents a filter that includes only specific types from a union.
 
+**Details**
+
 `Only` is used internally to track which types should be exclusively
 considered during pattern matching. It helps implement the type-level
 logic for positive matches and type narrowing.
@@ -31,6 +33,6 @@ export interface Only<out X> {
   }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L2123)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L2185)
 
 Since v4.0.0

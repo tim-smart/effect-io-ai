@@ -5,6 +5,8 @@ Module: `McpServer`<br />
 
 Runs an MCP server over the current `RpcServer.Protocol`.
 
+**Details**
+
 The server performs initialization and session handling, serves registered
 tools, resources, and prompts, and forwards queued server notifications to
 initialized clients.
@@ -15,6 +17,6 @@ initialized clients.
 declare const run: (options: { readonly name: string; readonly version: string; readonly extensions?: Record<`${string}/${string}`, unknown> | undefined; }) => Effect.Effect<never, never, McpServer | RpcServer.Protocol>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpServer.ts#L368)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpServer.ts#L372)
 
 Since v4.0.0

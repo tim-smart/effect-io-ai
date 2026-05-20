@@ -16,7 +16,7 @@ class Database extends Context.Service<Database, {
 
 // Build a layer to get its services
 const program = Effect.gen(function*() {
-  const dbLayer = Layer.succeed(Database)({
+  const dbLayer = Layer.succeed(Database, {
     query: Effect.fn("Database.query")((sql: string) => Effect.succeed("result"))
   })
 
@@ -36,6 +36,6 @@ const program = Effect.gen(function*() {
 declare const build: <RIn, E, ROut>(self: Layer<ROut, E, RIn>) => Effect<Context.Context<ROut>, E, RIn | Scope.Scope>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L599)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L625)
 
 Since v2.0.0

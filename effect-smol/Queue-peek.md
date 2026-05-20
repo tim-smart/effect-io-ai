@@ -5,6 +5,8 @@ Module: `Queue`<br />
 
 Views the next item without removing it.
 
+**Details**
+
 Blocks until an item is available. If the queue is done or fails, the error is propagated.
 
 **Example** (Peeking at the next value)
@@ -28,6 +30,6 @@ const program = Effect.gen(function*() {
 declare const peek: <A, E>(self: Dequeue<A, E>) => Effect<A, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Queue.ts#L1374)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Queue.ts#L1418)
 
 Since v4.0.0

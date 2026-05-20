@@ -21,6 +21,6 @@ console.log(hrtime) // [1, 500000000]
 declare const toHrTime: (input: Input) => [seconds: number, nanos: number]
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Duration.ts#L899)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Duration.ts#L911)
 
 Since v2.0.0

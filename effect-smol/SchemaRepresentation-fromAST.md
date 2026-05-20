@@ -5,9 +5,14 @@ Module: `SchemaRepresentation`<br />
 
 Converts a Schema AST into a `Document`.
 
-- Use when you have a single schema and need its representation.
-- Pure function; does not mutate the input AST.
-- Shared/recursive sub-schemas are extracted into the `references` map.
+**When to use**
+
+Use this when you have a single schema and need its representation.
+
+**Details**
+
+This is a pure function and does not mutate the input AST.
+Shared/recursive sub-schemas are extracted into the `references` map.
 
 **Example** (Converting a Schema to a Document)
 
@@ -35,6 +40,6 @@ console.log(doc.representation._tag)
 declare const fromAST: (ast: AST.AST) => Document
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaRepresentation.ts#L1614)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaRepresentation.ts#L1654)
 
 Since v4.0.0

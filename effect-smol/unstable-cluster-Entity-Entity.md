@@ -5,6 +5,8 @@ Module: `Entity`<br />
 
 Represents a cluster entity type and the RPC protocol it can handle.
 
+**Details**
+
 An entity defines how ids map to shard groups, exposes a sharded client, and
 can be registered as a layer using RPC handlers or a mailbox queue.
 
@@ -74,6 +76,8 @@ export interface Entity<
   /**
    * Create a Layer from an Entity.
    *
+   * **Details**
+   *
    * It will register the entity with the Sharding service.
    */
   toLayer<
@@ -104,6 +108,8 @@ export interface Entity<
 
   /**
    * Create a Layer from an Entity.
+   *
+   * **Details**
    *
    * It will register the entity with the Sharding service.
    */
@@ -144,6 +150,6 @@ export interface Entity<
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Entity.ts#L87)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Entity.ts#L89)
 
 Since v4.0.0

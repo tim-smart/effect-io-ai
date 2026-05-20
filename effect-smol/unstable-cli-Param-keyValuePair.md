@@ -4,10 +4,15 @@ Module: `Param`<br />
 ## Param.keyValuePair
 
 Creates a param that parses key=value pairs.
-Useful for options that accept configuration values.
 
-Note: Requires at least one key=value pair. The parsed pairs are merged
-into a single record object.
+**When to use**
+
+Use it for options that accept configuration values.
+
+**Details**
+
+Requires at least one key=value pair. The parsed pairs are merged into a
+single record object.
 
 **Example** (Parsing key-value pairs)
 
@@ -29,6 +34,6 @@ const props = Param.keyValuePair(Param.flagKind, "property")
 declare const keyValuePair: <Kind extends ParamKind>(kind: Kind, name: string) => Param<Kind, Record<string, string>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Param.ts#L883)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Param.ts#L902)
 
 Since v4.0.0

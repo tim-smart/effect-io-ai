@@ -5,6 +5,8 @@ Module: `HttpTraceContext`<br />
 
 Decodes an external span from the compact B3 `b3` header.
 
+**Details**
+
 Returns `Option.none` when the header is missing or does not contain trace and
 span identifiers.
 
@@ -14,6 +16,6 @@ span identifiers.
 declare const b3: FromHeaders
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpTraceContext.ts#L89)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpTraceContext.ts#L97)
 
 Since v4.0.0

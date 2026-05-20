@@ -3,10 +3,7 @@ Module: `LanguageModel`<br />
 
 ## LanguageModel.Service
 
-The service interface for language model operations.
-
-Defines the contract that all language model implementations must fulfill,
-providing text generation, structured output, and streaming capabilities.
+The service interface for language model operations, defining the contract that all language model implementations must fulfill.
 
 **Signature**
 
@@ -113,6 +110,6 @@ export interface Service {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/LanguageModel.ts#L122)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/LanguageModel.ts#L115)
 
 Since v4.0.0

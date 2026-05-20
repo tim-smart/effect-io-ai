@@ -5,10 +5,19 @@ Module: `Tuple`<br />
 
 Applies a `Struct.Lambda` transformation to every element in a tuple.
 
-- Use when you want to apply the same function to every element.
-- The lambda must be created with `Struct.lambda` so the compiler can
-  track the output types per element.
-- Does not mutate the input; returns a fresh tuple.
+**When to use**
+
+Use this when you want to apply the same transformation to every element.
+
+**Details**
+
+The lambda lets the compiler track the output type for each element. The
+input tuple is not mutated; a fresh tuple is returned.
+
+**Gotchas**
+
+The lambda must be created with `Struct.lambda`; a plain function will not
+type-check.
 
 **Example** (Wrapping every element in an array)
 
@@ -37,6 +46,6 @@ console.log(result) // [[1], ["hello"], [true]]
 declare const map: { <L extends Lambda>(lambda: L): <const T extends ReadonlyArray<unknown>>(self: T) => { [K in keyof T]: Apply<L, T[K]>; }; <const T extends ReadonlyArray<unknown>, L extends Lambda>(self: T, lambda: L): { [K in keyof T]: Apply<L, T[K]>; }; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tuple.ts#L406)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tuple.ts#L440)
 
 Since v3.9.0

@@ -5,8 +5,10 @@ Module: `TxChunk`<br />
 
 Creates a new empty `TxChunk`.
 
-**Return behavior**: This function returns a new TxChunk reference that is
-initially empty. No existing TxChunk instances are modified.
+**Details**
+
+This function returns a new TxChunk reference that is initially empty. No existing TxChunk
+instances are modified.
 
 **Example** (Creating an empty TxChunk)
 
@@ -35,6 +37,6 @@ const program = Effect.gen(function*() {
 declare const empty: <A = never>() => Effect.Effect<TxChunk<A>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxChunk.ts#L148)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxChunk.ts#L154)
 
 Since v4.0.0

@@ -5,6 +5,8 @@ Module: `Prompt`<br />
 
 Represents an interactive terminal prompt that produces an `Output` value.
 
+**Details**
+
 A `Prompt` is an `Effect` that may fail with `Terminal.QuitError` and
 requires the prompt environment needed to render frames, read input, and
 access files or paths when a prompt uses them.
@@ -19,6 +21,6 @@ export interface Prompt<Output> extends Effect.Effect<Output, Terminal.QuitError
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L59)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L61)
 
 Since v4.0.0

@@ -5,6 +5,8 @@ Module: `SchemaAST`<br />
 
 Returns all annotations from the AST node.
 
+**Details**
+
 If the node has `Checks`, returns annotations from the last check
 (which is where user-supplied annotations end up after `.pipe(Schema.annotations(...))`).
 Otherwise returns `Base.annotations` directly.
@@ -32,6 +34,6 @@ console.log(annotations?.title) // "Name"
 declare const resolve: (ast: AST) => Schema.Annotations.Annotations | undefined
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L3376)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L3432)
 
 Since v4.0.0

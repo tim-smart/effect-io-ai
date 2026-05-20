@@ -5,6 +5,8 @@ Module: `String`<br />
 
 Keep the specified number of characters from the start of a string.
 
+**Details**
+
 If `n` is larger than the available number of characters, the string will
 be returned whole.
 
@@ -27,6 +29,6 @@ assert.deepStrictEqual(String.takeLeft("Hello World", 5), "Hello")
 declare const takeLeft: { (n: number): (self: string) => string; (self: string, n: number): string; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L892)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L896)
 
 Since v2.0.0

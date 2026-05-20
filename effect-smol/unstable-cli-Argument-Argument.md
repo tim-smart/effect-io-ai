@@ -5,10 +5,12 @@ Module: `Argument`<br />
 
 Represents a positional command-line argument.
 
-Note: `boolean` is intentionally omitted from Argument constructors.
-Positional boolean arguments are ambiguous in CLI design since there's
-no flag name to negate (e.g., `--no-verbose`). Use Flag.boolean instead,
-or use Argument.choice with explicit "true"/"false" strings if needed.
+**Gotchas**
+
+`boolean` is intentionally omitted from Argument constructors. Positional
+boolean arguments are ambiguous in CLI design since there is no flag name to
+negate (for example, `--no-verbose`). Use Flag.boolean instead, or use
+Argument.choice with explicit "true" / "false" strings if needed.
 
 **Signature**
 
@@ -16,6 +18,6 @@ or use Argument.choice with explicit "true"/"false" strings if needed.
 export interface Argument<A> extends Param.Param<typeof Param.argumentKind, A> {}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Argument.ts#L52)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Argument.ts#L54)
 
 Since v4.0.0

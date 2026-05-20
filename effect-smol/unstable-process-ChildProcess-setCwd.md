@@ -5,6 +5,8 @@ Module: `ChildProcess`<br />
 
 Set the current working directory for a command.
 
+**Details**
+
 For pipelines, applies to each command in the pipeline.
 
 **Example** (Setting command working directories)
@@ -23,6 +25,6 @@ const cmd = ChildProcess.make`ls -la`.pipe(
 declare const setCwd: { (cwd: string): (self: Command) => Command; (self: Command, cwd: string): Command; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ChildProcess.ts#L775)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ChildProcess.ts#L798)
 
 Since v4.0.0

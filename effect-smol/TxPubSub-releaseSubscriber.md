@@ -5,8 +5,9 @@ Module: `TxPubSub`<br />
 
 Removes a subscriber queue from the pub/sub and shuts it down.
 
-This is the transactional release step of `subscribe`, exposed so that
-callers can compose it with other Tx operations in a single transaction.
+**Details**
+
+This is the transactional release step of `subscribe`, exposed so that callers can compose it with other Tx operations in a single transaction.
 
 **Signature**
 
@@ -14,6 +15,6 @@ callers can compose it with other Tx operations in a single transaction.
 declare const releaseSubscriber: { <A>(queue: TxQueue.TxQueue<A>): (self: TxPubSub<A>) => Effect.Effect<void, never, Effect.Transaction>; <A>(self: TxPubSub<A>, queue: TxQueue.TxQueue<A>): Effect.Effect<void, never, Effect.Transaction>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxPubSub.ts#L539)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxPubSub.ts#L537)
 
 Since v4.0.0

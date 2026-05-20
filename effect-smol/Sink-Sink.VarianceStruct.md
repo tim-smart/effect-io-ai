@@ -6,6 +6,8 @@ Module: `Sink`<br />
 Structural encoding used by `Sink.Variance` to record each `Sink` type
 parameter's variance.
 
+**Details**
+
 `_A`, `_L`, `_E`, and `_R` are covariant markers. `_In` is a
 contravariant marker.
 
@@ -21,6 +23,6 @@ export interface VarianceStruct<out A, in In, out L, out E, out R> {
   }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Sink.ts#L181)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Sink.ts#L191)
 
 Since v2.0.0

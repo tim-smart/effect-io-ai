@@ -5,13 +5,22 @@ Module: `Exit`<br />
 
 Transforms both the success value and typed error of an Exit.
 
+**When to use**
+
 - Use when you need to remap both channels in one step
+
+**Details**
+
 - `onSuccess` transforms the value if the Exit is a Success
 - `onFailure` transforms the typed error if the Exit is a Failure with a Fail reason
-- If the Cause contains only defects or interruptions, the failure passes through unchanged
 
 Allocates a new Exit. Does not mutate the input.
 Supports both curried and direct call styles.
+
+**Gotchas**
+
+If the Cause contains only defects or interruptions, the failure passes
+through unchanged.
 
 **Example** (Mapping both channels)
 
@@ -39,6 +48,6 @@ console.log(Exit.isSuccess(mapped) && mapped.value) // "42"
 declare const mapBoth: { <E, E2, A, A2>(options: { readonly onFailure: (e: E) => E2; readonly onSuccess: (a: A) => A2; }): (self: Exit<A, E>) => Exit<A2, E2>; <A, E, E2, A2>(self: Exit<A, E>, options: { readonly onFailure: (e: E) => E2; readonly onSuccess: (a: A) => A2; }): Exit<A2, E2>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Exit.ts#L805)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Exit.ts#L930)
 
 Since v2.0.0

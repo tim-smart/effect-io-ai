@@ -7,6 +7,8 @@ Base interface for error classes that can be yielded directly inside
 `Effect.gen`. Yielding one of these errors fails the generator with that
 error as the typed failure value.
 
+**Details**
+
 All built-in error classes in this module (`NoSuchElementError`,
 `TimeoutError`, `IllegalArgumentError`,
 `ExceededCapacityError`, `AsyncFiberError`, and
@@ -33,6 +35,6 @@ export interface YieldableError extends Error, Pipeable, Inspectable {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L1095)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L1153)
 
 Since v2.0.0

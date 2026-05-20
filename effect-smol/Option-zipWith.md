@@ -9,7 +9,7 @@ Combines two `Option`s using a provided function.
 
 - Merging two optional values into a computed result
 
-**Behavior**
+**Details**
 
 - Both `Some` → applies `f(a, b)` and wraps in `Some`
 - Either `None` → `None`
@@ -41,6 +41,6 @@ console.log(person)
 declare const zipWith: { <B, A, C>(that: Option<B>, f: (a: A, b: B) => C): (self: Option<A>) => Option<C>; <A, B, C>(self: Option<A>, that: Option<B>, f: (a: A, b: B) => C): Option<C>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L1827)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L1831)
 
 Since v2.0.0

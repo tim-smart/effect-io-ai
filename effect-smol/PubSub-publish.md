@@ -6,6 +6,8 @@ Module: `PubSub`<br />
 Attempts to publish a message synchronously without applying the PubSub
 strategy's effectful surplus handling.
 
+**Details**
+
 Returns `false` if the `PubSub` is shut down or the message cannot be
 accepted immediately, for example when a bounded PubSub is full. Prefer
 `publish` when backpressure or sliding behavior should be honored.
@@ -38,6 +40,6 @@ const program = Effect.gen(function*() {
 declare const publish: { <A>(value: A): (self: PubSub<A>) => Effect.Effect<boolean>; <A>(self: PubSub<A>, value: A): Effect.Effect<boolean>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PubSub.ts#L858)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PubSub.ts#L870)
 
 Since v2.0.0

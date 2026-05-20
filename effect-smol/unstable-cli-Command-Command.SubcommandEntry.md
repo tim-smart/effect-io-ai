@@ -11,6 +11,6 @@ Entry type accepted by `Command.withSubcommands`.
 type SubcommandEntry = Any | SubcommandGroup<ReadonlyArray<Any>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Command.ts#L341)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Command.ts#L359)
 
 Since v4.0.0

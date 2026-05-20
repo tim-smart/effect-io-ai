@@ -5,6 +5,8 @@ Module: `Etag`<br />
 
 Strong HTTP entity tag.
 
+**Details**
+
 The `value` is the raw tag value without the surrounding quotes.
 
 **Signature**
@@ -16,6 +18,6 @@ export interface Strong {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Etag.ts#L55)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Etag.ts#L59)
 
 Since v4.0.0

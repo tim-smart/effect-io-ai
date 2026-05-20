@@ -5,6 +5,8 @@ Module: `KeyValueStore`<br />
 
 Adapts a string-only backing store into a `KeyValueStore`.
 
+**Details**
+
 `Uint8Array` values are stored as base64 strings. `getUint8Array` decodes
 base64 values and falls back to UTF-8 encoding for non-base64 strings.
 
@@ -14,6 +16,6 @@ base64 values and falls back to UTF-8 encoding for non-base64 strings.
 declare const makeStringOnly: (options: MakeStringOptions) => KeyValueStore
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/KeyValueStore.ts#L269)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/KeyValueStore.ts#L275)
 
 Since v4.0.0

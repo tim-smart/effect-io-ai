@@ -5,6 +5,8 @@ Module: `DateTime`<br />
 
 Calendar and time components of a `DateTime`, without weekday information.
 
+**Details**
+
 `month` is one-based (`1` for January through `12` for December).
 
 **Signature**
@@ -21,6 +23,6 @@ export interface Parts {
   }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L219)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L233)
 
 Since v3.6.0

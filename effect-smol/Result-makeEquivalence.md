@@ -5,6 +5,8 @@ Module: `Result`<br />
 
 Creates an `Equivalence` for comparing two `Result` values.
 
+**Details**
+
 - Two `Success` values are equal when the `success` equivalence says so
 - Two `Failure` values are equal when the `failure` equivalence says so
 - A `Success` and a `Failure` are never equal
@@ -32,6 +34,6 @@ console.log(eq(Result.succeed(1), Result.fail("x")))
 declare const makeEquivalence: <A, E>(success: Equivalence.Equivalence<A>, failure: Equivalence.Equivalence<E>) => Equivalence.Equivalence<Result<A, E>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L677)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L715)
 
 Since v4.0.0

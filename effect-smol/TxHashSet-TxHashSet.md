@@ -3,21 +3,11 @@ Module: `TxHashSet`<br />
 
 ## TxHashSet.TxHashSet
 
-A TxHashSet is a transactional hash set data structure that provides atomic operations
-on unique values within Effect transactions. It uses an immutable HashSet internally
-with TxRef for transactional semantics, ensuring all operations are performed atomically.
+A TxHashSet is a transactional hash set data structure that provides atomic operations on unique values within Effect transactions. It uses an immutable HashSet internally with TxRef for transactional semantics, ensuring all operations are performed atomically.
 
-## Mutation vs Return Behavior
+**Details**
 
-**Mutation operations** (add, remove, clear) modify the original TxHashSet and return `Effect<void>` or `Effect<boolean>`:
-- These operations mutate the TxHashSet in place
-- They do not create new TxHashSet instances
-- Examples: `add`, `remove`, `clear`
-
-**Transform operations** (union, intersection, difference, map, filter) create new TxHashSet instances:
-- These operations return `Effect<TxHashSet<T>>` with a new instance
-- The original TxHashSet remains unchanged
-- Examples: `union`, `intersection`, `difference`, `map`, `filter`
+Mutation operations such as `add`, `remove`, and `clear` update the original TxHashSet and return `Effect<void>` or `Effect<boolean>`. Transform operations such as `union`, `intersection`, `difference`, `map`, and `filter` create new TxHashSet instances and leave the original TxHashSet unchanged.
 
 **Example** (Using transactional hash sets)
 
@@ -58,6 +48,6 @@ export interface TxHashSet<in out V> extends Inspectable, Pipeable {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashSet.ts#L108)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashSet.ts#L98)
 
 Since v4.0.0

@@ -5,6 +5,8 @@ Module: `SchemaParser`<br />
 
 Creates an effectful decoder for `unknown` input.
 
+**Details**
+
 The returned function succeeds with the schema's decoded `Type` or fails with a
 `SchemaIssue.Issue`. Decoding service requirements are preserved in the returned
 `Effect`. Parse options may be provided when creating the decoder and overridden
@@ -16,6 +18,6 @@ when applying it.
 declare const decodeUnknownEffect: <S extends Schema.Top>(schema: S, options?: AST.ParseOptions) => (input: unknown, options?: AST.ParseOptions) => Effect.Effect<S["Type"], Issue.Issue, S["DecodingServices"]>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaParser.ts#L189)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaParser.ts#L201)
 
 Since v4.0.0

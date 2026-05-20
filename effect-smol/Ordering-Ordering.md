@@ -5,6 +5,8 @@ Module: `Ordering`<br />
 
 Represents the result of comparing two values.
 
+**Details**
+
 - `-1` indicates the first value is less than the second
 - `0` indicates the values are equal
 - `1` indicates the first value is greater than the second
@@ -37,6 +39,6 @@ const compareStrings = (a: string, b: string): Ordering.Ordering => {
 type Ordering = -1 | 0 | 1
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Ordering.ts#L72)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Ordering.ts#L74)
 
 Since v2.0.0

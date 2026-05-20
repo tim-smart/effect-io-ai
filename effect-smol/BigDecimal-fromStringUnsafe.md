@@ -6,6 +6,8 @@ Module: `BigDecimal`<br />
 Parses a decimal string into a `BigDecimal`, throwing if the string is
 invalid.
 
+**Details**
+
 Accepts the same syntax as `fromString`. Use `fromString` when invalid input
 should be represented as `Option.none` instead of throwing.
 
@@ -26,6 +28,6 @@ assert.throws(() => BigDecimal.fromStringUnsafe("123.abc"))
 declare const fromStringUnsafe: (s: string) => BigDecimal
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigDecimal.ts#L1243)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigDecimal.ts#L1265)
 
 Since v4.0.0

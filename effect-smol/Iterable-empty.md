@@ -5,8 +5,10 @@ Module: `Iterable`<br />
 
 Creates an empty iterable that yields no elements.
 
-This function returns a reusable empty iterable that can be used as a base case
-for operations or when you need to represent "no data" in a type-safe way.
+**When to use**
+
+Use this reusable empty iterable as a base case for operations or when you
+need to represent "no data" in a type-safe way.
 
 **Example** (Creating an empty iterable)
 
@@ -30,6 +32,6 @@ const result = hasData
 declare const empty: <A = never>() => Iterable<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Iterable.ts#L1349)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Iterable.ts#L1369)
 
 Since v2.0.0

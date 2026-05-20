@@ -5,6 +5,8 @@ Module: `Rpc`<br />
 
 Represents the server-side implementation of an RPC.
 
+**Details**
+
 The handler receives the decoded request plus client, request id, headers,
 and RPC metadata, and returns either an effectful result or a stream result.
 
@@ -24,6 +26,6 @@ export interface Handler<Tag extends string> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Rpc.ts#L223)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Rpc.ts#L231)
 
 Since v4.0.0

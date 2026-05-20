@@ -5,6 +5,8 @@ Module: `Redis`<br />
 
 Typed descriptor for a Redis Lua script.
 
+**Details**
+
 It defines the Lua source, parameter-to-argument mapping, Redis key count,
 and result type used by `Redis.eval`.
 
@@ -35,6 +37,6 @@ export interface Script<
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Redis.ts#L120)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Redis.ts#L124)
 
 Since v4.0.0

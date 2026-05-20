@@ -6,9 +6,12 @@ Module: `ConfigProvider`<br />
 Creates an `Array` node representing an indexed container with a known
 length.
 
-When to use:
-- Describing a JSON array or a set of numerically-indexed env vars inside a
-  custom provider.
+**When to use**
+
+Use this when describing a JSON array or a set of numerically-indexed env
+vars inside a custom provider.
+
+**Details**
 
 The optional `value` allows a node to be both a container and a leaf at the
 same time.
@@ -33,6 +36,6 @@ const node = ConfigProvider.makeArray(3)
 declare const makeArray: (length: number, value?: string) => Node
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ConfigProvider.ts#L219)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ConfigProvider.ts#L233)
 
 Since v4.0.0

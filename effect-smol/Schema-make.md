@@ -5,6 +5,8 @@ Module: `Schema`<br />
 
 Creates a schema from an AST (Abstract Syntax Tree) node.
 
+**Details**
+
 This is the fundamental constructor for all schemas in the Effect Schema
 library. It takes an AST node and wraps it in a fully-typed schema that
 preserves all type information and provides the complete schema API.
@@ -20,6 +22,6 @@ schema.
 declare const make: <S extends Top>(ast: S["ast"], options?: object) => S
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L1533)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L1577)
 
 Since v3.10.0

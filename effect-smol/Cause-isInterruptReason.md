@@ -5,6 +5,8 @@ Module: `Cause`<br />
 
 Narrows a `Reason` to `Interrupt`.
 
+**When to use**
+
 Useful as a predicate for `Array.filter` when iterating over `cause.reasons`.
 
 **Example** (filtering interrupt reasons)
@@ -28,6 +30,6 @@ console.log(interrupts[0].fiberId) // 123
 declare const isInterruptReason: <E>(self: Reason<E>) => self is Interrupt
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L280)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L290)
 
 Since v4.0.0

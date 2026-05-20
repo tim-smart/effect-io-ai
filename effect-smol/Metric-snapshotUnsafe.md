@@ -6,6 +6,8 @@ Module: `Metric`<br />
 Synchronously captures a snapshot of all registered metrics using the provided
 service context.
 
+**Details**
+
 This is the "unsafe" version that bypasses Effect's safety guarantees and requires
 manual handling of the services context. Use the safe `snapshot` function for normal
 application code.
@@ -67,6 +69,6 @@ const safeSnapshotExample = Effect.gen(function*() {
 declare const snapshotUnsafe: (context: Context.Context<never>) => ReadonlyArray<Metric.Snapshot>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Metric.ts#L3220)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Metric.ts#L3265)
 
 Since v4.0.0

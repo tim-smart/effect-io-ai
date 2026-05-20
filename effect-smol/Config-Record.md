@@ -6,9 +6,12 @@ Module: `Config`<br />
 A `Schema.Codec` for key-value record types that can also be parsed from
 a flat comma-separated string.
 
-When to use:
+**When to use**
+
 - Reading key-value maps from a single env var (e.g. OpenTelemetry
   resource attributes).
+
+**Details**
 
 Accepts either a JSON-like record from the provider or a flat string like
 `"key1=val1,key2=val2"`. The `separator` (default `","`) and
@@ -43,6 +46,6 @@ console.dir(Effect.runSync(config.parse(provider)))
 declare const Record: <K extends Schema.Record.Key, V extends Schema.Top>(key: K, value: V, options?: { readonly separator?: string | undefined; readonly keyValueSeparator?: string | undefined; }) => Schema.Union<readonly [Schema.$Record<K, V>, Schema.compose<Schema.$Record<K, V>, Schema.decodeTo<Schema.$Record<Schema.String, Schema.String>, Schema.String, never, never>>]>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Config.ts#L803)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Config.ts#L852)
 
 Since v4.0.0

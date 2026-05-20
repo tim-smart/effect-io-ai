@@ -5,21 +5,17 @@ Module: `Effect`<br />
 
 Runs multiple effects concurrently and returns the first successful result.
 
+**When to use**
+
+Use `raceAll` when early failures should be ignored until a success occurs
+or all effects fail.
+
 **Details**
 
 Early failures do not finish the race; `raceAll` keeps waiting until one
 effect succeeds or every effect has failed. When one effect succeeds, the
 remaining effects are interrupted. If every effect fails, the returned effect
 fails with a cause containing the collected failure reasons.
-
-**When to Use**
-
-Use `raceAll` when early failures should be ignored until a success occurs
-or all effects fail.
-
-**See**
-
-- `race` for a version that handles only two effects.
 
 **Example** (Racing many effects)
 
@@ -37,12 +33,16 @@ const raced = Effect.raceAll([effect1, effect2, effect3])
 // Result: "Fast" (after ~100ms)
 ```
 
+**See**
+
+- `race` for a version that handles only two effects.
+
 **Signature**
 
 ```ts
 declare const raceAll: <Eff extends Effect<any, any, any>>(all: Iterable<Eff>, options?: { readonly onWinner?: (options: { readonly fiber: Fiber<any, any>; readonly index: number; readonly parentFiber: Fiber<any, any>; }) => void; }) => Effect<Success<Eff>, Error<Eff>, Services<Eff>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L4375)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L4430)
 
 Since v2.0.0

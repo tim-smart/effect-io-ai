@@ -6,6 +6,8 @@ Module: `SchemaParser`<br />
 Creates a synchronous decoder for input already typed as the schema's `Encoded`
 type.
 
+**Details**
+
 The returned function returns the decoded `Type` on success and throws an
 `Error` with the `SchemaIssue.Issue` in its `cause` on decoding failure.
 
@@ -15,6 +17,6 @@ The returned function returns the decoded `Type` on success and throws an
 declare const decodeSync: <S extends Schema.Decoder<unknown>>(schema: S, options?: AST.ParseOptions) => (input: S["Encoded"], options?: AST.ParseOptions) => S["Type"]
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaParser.ts#L368)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaParser.ts#L402)
 
 Since v3.10.0

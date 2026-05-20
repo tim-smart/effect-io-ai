@@ -6,6 +6,8 @@ Module: `Config`<br />
 Creates a config for a boolean value parsed from common string
 representations.
 
+**Details**
+
 Shortcut for `Config.schema(Config.Boolean, name)`.
 
 Accepted values: `true`, `false`, `yes`, `no`, `on`, `off`, `1`, `0`,
@@ -39,6 +41,6 @@ Effect.runSync(
 declare const boolean: (name?: string) => Config<boolean>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Config.ts#L1025)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Config.ts#L1093)
 
 Since v2.0.0

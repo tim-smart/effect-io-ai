@@ -5,6 +5,8 @@ Module: `Msgpack`<br />
 
 Schema type for values encoded as MessagePack bytes.
 
+**Details**
+
 It decodes a `Uint8Array` MessagePack payload to the target schema type and
 encodes the target type back to bytes.
 
@@ -14,6 +16,6 @@ encodes the target type back to bytes.
 export interface schema<S extends Schema.Top> extends Schema.decodeTo<S, Schema.instanceOf<Uint8Array<ArrayBuffer>>> {}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Msgpack.ts#L320)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Msgpack.ts#L336)
 
 Since v4.0.0

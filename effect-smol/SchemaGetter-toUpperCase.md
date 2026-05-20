@@ -5,7 +5,8 @@ Module: `SchemaGetter`<br />
 
 Converts a string to uppercase.
 
-Behavior:
+**Details**
+
 - Pure, delegates to `String.toUpperCase`.
 
 **Example** (To uppercase)
@@ -16,8 +17,9 @@ import { SchemaGetter } from "effect"
 const upper = SchemaGetter.toUpperCase<string>()
 ```
 
-See also:
-- `toLowerCase` — inverse operation
+**See**
+
+- `toLowerCase` - inverse operation
 
 **Signature**
 
@@ -25,6 +27,6 @@ See also:
 declare const toUpperCase: <E extends string>() => Getter<string, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L995)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L1020)
 
 Since v4.0.0

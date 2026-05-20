@@ -5,6 +5,8 @@ Module: `Array`<br />
 
 Counts the elements in an iterable that satisfy a predicate.
 
+**Details**
+
 - The predicate receives both the element and its index.
 - Returns `0` for an empty iterable.
 
@@ -27,6 +29,6 @@ console.log(result) // 2
 declare const countBy: { <A>(predicate: (a: NoInfer<A>, i: number) => boolean): (self: Iterable<A>) => number; <A>(self: Iterable<A>, predicate: (a: A, i: number) => boolean): number; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L4290)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L4446)
 
 Since v3.16.0

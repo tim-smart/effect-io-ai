@@ -6,7 +6,10 @@ Module: `SchemaAST`<br />
 AST node matching any `number` value (including `NaN`, `Infinity`,
 `-Infinity`).
 
+**Details**
+
 Default JSON serialization:
+
 - Finite numbers are serialized as JSON numbers.
 - `Infinity`, `-Infinity`, and `NaN` are serialized as JSON strings.
 
@@ -24,6 +27,6 @@ skipped since non-finite values cannot occur.
 declare class Number
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L1179)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L1207)
 
 Since v4.0.0

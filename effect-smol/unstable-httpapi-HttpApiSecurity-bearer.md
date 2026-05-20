@@ -3,10 +3,12 @@ Module: `HttpApiSecurity`<br />
 
 ## HttpApiSecurity.bearer
 
-Create an Bearer token security scheme.
+Creates a Bearer token security scheme.
 
-You can implement some api middleware for this security scheme using
-`HttpApiBuilder.middlewareSecurity`.
+**When to use**
+
+Use `HttpApiBuilder.middlewareSecurity` to implement API middleware for this
+security scheme.
 
 **Signature**
 
@@ -14,6 +16,6 @@ You can implement some api middleware for this security scheme using
 declare const bearer: Bearer
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiSecurity.ts#L131)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiSecurity.ts#L133)
 
 Since v4.0.0

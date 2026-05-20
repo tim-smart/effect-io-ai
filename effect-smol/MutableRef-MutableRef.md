@@ -5,6 +5,8 @@ Module: `MutableRef`<br />
 
 A synchronous mutable reference that stores a current value.
 
+**Details**
+
 Read or write the value directly through `.current`, or use the `MutableRef`
 helpers for pipeable updates such as `get`, `set`, `update`, and
 `compareAndSet`. All operations mutate the same reference in place.
@@ -50,6 +52,6 @@ export interface MutableRef<out T> extends Pipeable, Inspectable {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableRef.ts#L85)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableRef.ts#L87)
 
 Since v2.0.0

@@ -3,11 +3,12 @@ Module: `RunnerServer`<br />
 
 ## RunnerServer.layerClientOnly
 
-A `Runners` layer that is client only.
+Creates a client-only `Runners` layer.
 
-It will not register with the ShardManager and recieve shard assignments,
-so this layer can be used to embed a cluster client inside another effect
-application.
+**When to use**
+
+Use this layer to embed a cluster client inside another Effect application
+without registering with the ShardManager or receiving shard assignments.
 
 **Signature**
 

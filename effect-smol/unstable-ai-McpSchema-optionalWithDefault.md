@@ -5,6 +5,8 @@ Module: `McpSchema`<br />
 
 Schema type returned by `optionalWithDefault`.
 
+**Details**
+
 It represents an optional struct field that supplies a default value when the
 field is absent during decoding or construction.
 
@@ -16,6 +18,6 @@ export interface optionalWithDefault<S extends Schema.Top & Schema.WithoutConstr
 {}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L55)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L57)
 
 Since v4.0.0

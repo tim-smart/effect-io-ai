@@ -5,6 +5,8 @@ Module: `HttpServer`<br />
 
 Service tag for an HTTP server runtime.
 
+**Details**
+
 The service can serve an HTTP response effect and exposes the address where the
 server is listening.
 
@@ -14,6 +16,6 @@ server is listening.
 declare class HttpServer
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpServer.ts#L46)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpServer.ts#L48)
 
 Since v4.0.0

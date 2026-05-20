@@ -5,6 +5,8 @@ Module: `FileSystem`<br />
 
 Creates a branded file descriptor.
 
+**Details**
+
 File descriptors are integer handles that the operating system uses to identify
 open files. This branded type ensures type safety when working with file descriptors.
 
@@ -14,6 +16,6 @@ open files. This branded type ensures type safety when working with file descrip
 declare const FileDescriptor: Brand.Constructor<File.Descriptor>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FileSystem.ts#L1183)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FileSystem.ts#L1237)
 
 Since v4.0.0

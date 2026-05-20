@@ -6,6 +6,8 @@ Module: `Config`<br />
 Creates a config for a `Duration` value parsed from a human-readable
 string.
 
+**Details**
+
 Shortcut for `Config.schema(Schema.DurationFromString, name)`.
 
 Accepts any string that `Duration.fromInput` can parse (e.g.
@@ -39,6 +41,6 @@ Effect.runSync(
 declare const duration: (name?: string) => Config<Duration>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Config.ts#L1063)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Config.ts#L1133)
 
 Since v2.5.0

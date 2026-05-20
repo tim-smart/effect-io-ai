@@ -10,7 +10,7 @@ Converts a nullable value (`null` or `undefined`) into an `Option`.
 - Bridging from nullable APIs to `Option`
 - Wrapping values that may be `null` or `undefined`
 
-**Behavior**
+**Details**
 
 - `null` or `undefined` → `None`
 - Any other value → `Some` (typed as `NonNullable<A>`)
@@ -42,6 +42,6 @@ console.log(Option.fromNullishOr(1))
 declare const fromNullishOr: <A>(a: A) => Option<NonNullable<A>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L848)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L852)
 
 Since v4.0.0

@@ -5,6 +5,8 @@ Module: `UrlParams`<br />
 
 Record input whose fields can be coerced into URL parameter values.
 
+**Details**
+
 Nested records are rendered using bracket notation, and arrays produce repeated
 parameters.
 
@@ -16,6 +18,6 @@ type CoercibleRecord<A> = {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/UrlParams.ts#L113)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/UrlParams.ts#L121)
 
 Since v4.0.0

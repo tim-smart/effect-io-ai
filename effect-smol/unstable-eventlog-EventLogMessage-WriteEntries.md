@@ -5,6 +5,8 @@ Module: `EventLogMessage`<br />
 
 Msgpack-encodable payload for writing encrypted entries to a remote store.
 
+**Details**
+
 It includes the client public key, target store id, AES-GCM initialization
 vector, and encrypted entries.
 
@@ -14,6 +16,6 @@ vector, and encrypted entries.
 declare class WriteEntries
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventLogMessage.ts#L261)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventLogMessage.ts#L269)
 
 Since v4.0.0

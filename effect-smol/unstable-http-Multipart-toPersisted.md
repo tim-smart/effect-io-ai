@@ -5,9 +5,14 @@ Module: `Multipart`<br />
 
 Persists a stream of multipart parts into a record.
 
+**Details**
+
 Text fields are collected as strings, and file parts are written to files in a
-scoped temporary directory. Persisted file paths remain valid for the lifetime
-of the scope.
+scoped temporary directory.
+
+**Gotchas**
+
+Persisted file paths remain valid for the lifetime of the scope.
 
 **Signature**
 
@@ -15,6 +20,6 @@ of the scope.
 declare const toPersisted: (stream: Stream.Stream<Part, MultipartError>, writeFile?: (path: string, file: File) => Effect.Effect<void, MultipartError, FileSystem.FileSystem>) => Effect.Effect<Persisted, MultipartError, FileSystem.FileSystem | Path.Path | Scope.Scope>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Multipart.ts#L611)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Multipart.ts#L646)
 
 Since v4.0.0

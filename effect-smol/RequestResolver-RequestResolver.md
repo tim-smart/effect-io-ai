@@ -13,7 +13,7 @@ of `Request.Entry` values for a single batch key and must complete every
 received entry, usually by calling `completeUnsafe` or one of the `Request`
 completion helpers.
 
-**Notes**
+**Gotchas**
 
 If a resolver finishes without completing an entry, the waiting request fails
 because the resolver did not supply a result.

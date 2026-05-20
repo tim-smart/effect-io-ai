@@ -5,12 +5,14 @@ Module: `Order`<br />
 
 Tests whether one value is less than or equal to another according to the given order.
 
-When to use this:
+**When to use**
+
 - When you need a boolean predicate for non-strict comparison
 - When checking if a value is within a range (inclusive lower bound)
 - When implementing inclusive comparisons
 
-Behavior:
+**Details**
+
 - Pure function: does not mutate inputs
 - Returns `true` if the order returns `-1` or `0` (less than or equal)
 - Returns `false` only if the order returns `1` (greater than)
@@ -28,7 +30,8 @@ console.log(isLessThanOrEqualToNumber(1, 1)) // true
 console.log(isLessThanOrEqualToNumber(2, 1)) // false
 ```
 
-See also:
+**See**
+
 - `isLessThan` - Strict less than
 - `isGreaterThan` - Strict greater than
 
@@ -38,6 +41,6 @@ See also:
 declare const isLessThanOrEqualTo: <A>(O: Order<A>) => { (that: A): (self: A) => boolean; (self: A, that: A): boolean; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Order.ts#L829)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Order.ts#L831)
 
 Since v4.0.0

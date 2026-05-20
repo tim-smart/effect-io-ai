@@ -5,9 +5,9 @@ Module: `TxQueue`<br />
 
 Waits transactionally for the next item and returns it without removing it.
 
-If the queue is open but empty, the transaction retries until an item is
-available or the queue completes. If the queue is done, the queue's
-completion cause is propagated through the error channel.
+**Details**
+
+If the queue is open but empty, the transaction retries until an item is available or the queue completes. If the queue is done, the queue's completion cause is propagated through the error channel.
 
 **Example** (Peeking without removing values)
 
@@ -44,6 +44,6 @@ const errorExample = Effect.gen(function*() {
 declare const peek: <A, E>(self: TxDequeue<A, E>) => Effect.Effect<A, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxQueue.ts#L1029)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxQueue.ts#L1018)
 
 Since v2.0.0

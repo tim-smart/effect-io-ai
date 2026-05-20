@@ -6,6 +6,8 @@ Module: `Redacted`<br />
 Deletes the stored value for a `Redacted` wrapper, making future
 `Redacted.value` calls on that wrapper fail.
 
+**Gotchas**
+
 This unsafe operation does not zero memory and does not affect other
 references to the original value. It only removes the value from the
 internal redacted registry.
@@ -34,6 +36,6 @@ assert.throws(
 declare const wipeUnsafe: <T>(self: Redacted<T>) => boolean
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Redacted.ts#L232)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Redacted.ts#L242)
 
 Since v4.0.0

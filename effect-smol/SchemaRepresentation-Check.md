@@ -17,6 +17,6 @@ or a `FilterGroup` combining multiple checks.
 type Check<M> = Filter<M> | FilterGroup<M>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaRepresentation.ts#L527)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaRepresentation.ts#L558)
 
 Since v4.0.0

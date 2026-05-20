@@ -5,8 +5,14 @@ Module: `Latch`<br />
 
 Creates a `Latch` synchronously, outside of `Effect`.
 
-The latch starts closed by default; pass `true` to create it open. Use this
-only when synchronous allocation is required, otherwise prefer `make`.
+**When to use**
+
+Use this only when synchronous allocation is required; otherwise prefer
+`make`.
+
+**Details**
+
+The latch starts closed by default; pass `true` to create it open.
 
 **Example** (Creating a latch unsafely)
 
@@ -36,6 +42,6 @@ const program = Effect.all([waiter, opener])
 declare const makeUnsafe: (open?: boolean | undefined) => Latch
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Latch.ts#L115)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Latch.ts#L123)
 
 Since v4.0.0

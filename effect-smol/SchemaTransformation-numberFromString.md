@@ -6,10 +6,12 @@ Module: `SchemaTransformation`<br />
 Decodes a `string` into a `number` and encodes a `number` back to a
 `string`.
 
-When to use this:
+**When to use**
+
 - Parsing numeric strings from APIs, form data, or URL parameters.
 
-Behavior:
+**Details**
+
 - Decode: coerces the string to a number (like `Number(s)`).
 - Encode: coerces the number to a string (like `String(n)`).
 - Does not validate that the result is finite — combine with
@@ -25,7 +27,8 @@ const schema = Schema.String.pipe(
 )
 ```
 
-See also:
+**See**
+
 - `bigintFromString`
 - `transform`
 
@@ -35,6 +38,6 @@ See also:
 declare const numberFromString: Transformation<number, string, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L851)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L873)
 
 Since v4.0.0

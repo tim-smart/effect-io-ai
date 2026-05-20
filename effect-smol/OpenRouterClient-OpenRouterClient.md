@@ -11,6 +11,6 @@ Service identifier for the OpenRouter client.
 declare class OpenRouterClient
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openrouter/src/OpenRouterClient.ts#L102)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openrouter/src/OpenRouterClient.ts#L104)
 
 Since v4.0.0

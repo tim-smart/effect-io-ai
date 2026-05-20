@@ -32,6 +32,6 @@ const program = Effect.gen(function*() {
 declare const has: { <K>(key: K): <A, E>(self: FiberMap<K, A, E>) => Effect.Effect<boolean>; <K, A, E>(self: FiberMap<K, A, E>, key: K): Effect.Effect<boolean>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FiberMap.ts#L599)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FiberMap.ts#L614)
 
 Since v2.0.0

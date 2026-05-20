@@ -5,6 +5,8 @@ Module: `Match`<br />
 
 Converts an array type to an intersection of its element types.
 
+**Details**
+
 This utility type takes an array of types and converts them into a single
 intersection type. It's used internally when multiple patterns need to
 be satisfied simultaneously (like in `Match.whenAnd`).
@@ -35,6 +37,6 @@ type ArrayToIntersection<A> = T.UnionToIntersection<
   >
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L2279)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L2351)
 
 Since v4.0.0

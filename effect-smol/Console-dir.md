@@ -3,10 +3,7 @@ Module: `Console`<br />
 
 ## Console.dir
 
-Displays an interactive list of the properties of the specified object.
-
-This function provides a detailed view of an object's properties,
-which can be useful for debugging complex data structures.
+Displays an interactive list of the properties of the specified object, optionally using console-specific inspection options for debugging complex data structures.
 
 **Example** (Inspecting an object)
 
@@ -26,6 +23,6 @@ const program = Effect.gen(function*() {
 declare const dir: (item: any, options?: any) => Effect.Effect<void>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Console.ts#L322)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Console.ts#L300)
 
 Since v2.0.0

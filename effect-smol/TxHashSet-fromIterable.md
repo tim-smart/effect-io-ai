@@ -29,6 +29,6 @@ const program = Effect.gen(function*() {
 declare const fromIterable: <V>(values: Iterable<V>) => Effect.Effect<TxHashSet<V>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashSet.ts#L257)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashSet.ts#L247)
 
 Since v2.0.0

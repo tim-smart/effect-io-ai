@@ -5,6 +5,8 @@ Module: `Entity`<br />
 
 Service tag for the latch that coordinates entity keep-alive state.
 
+**Details**
+
 `keepAlive` closes the latch when keep-alive is active and opens it again when
 the resource no longer needs to keep the entity alive.
 
@@ -14,6 +16,6 @@ the resource no longer needs to keep the entity alive.
 declare class KeepAliveLatch
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Entity.ts#L749)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Entity.ts#L773)
 
 Since v4.0.0

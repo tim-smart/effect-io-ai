@@ -5,9 +5,11 @@ Module: `SchemaRepresentation`<br />
 
 A named property within an `Objects` representation.
 
-- `name` is the property key (string, number, or symbol).
-- `isOptional` indicates whether the key can be absent.
-- `isMutable` indicates whether the property is mutable (vs. readonly).
+**Details**
+
+`name` is the property key, which can be a string, number, or symbol.
+`isOptional` indicates whether the key can be absent. `isMutable` indicates
+whether the property is mutable rather than readonly.
 
 **See**
 
@@ -25,6 +27,6 @@ export interface PropertySignature {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaRepresentation.ts#L439)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaRepresentation.ts#L464)
 
 Since v4.0.0

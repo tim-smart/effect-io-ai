@@ -15,6 +15,6 @@ export interface OpenAPISpecLicense {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/OpenApi.ts#L797)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/OpenApi.ts#L799)
 
 Since v4.0.0

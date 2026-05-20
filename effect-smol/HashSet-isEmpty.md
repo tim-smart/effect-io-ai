@@ -23,6 +23,6 @@ console.log(HashSet.isEmpty(nonEmpty)) // false
 declare const isEmpty: <V>(self: HashSet<V>) => boolean
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashSet.ts#L372)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashSet.ts#L374)
 
 Since v4.0.0

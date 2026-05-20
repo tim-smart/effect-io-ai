@@ -5,6 +5,8 @@ Module: `DateTime`<br />
 
 Creates a `DateTime.Zoned` from an input and a time zone.
 
+**Details**
+
 By default, the input is interpreted as a UTC instant and the time zone is
 attached without changing that instant. When `adjustForTimeZone` is `true`,
 the input is interpreted as wall-clock time in the target zone.
@@ -42,6 +44,6 @@ if (result._tag === "Some") {
 declare const makeZoned: (input: DateTime.Input, options?: { readonly timeZone?: number | string | TimeZone | undefined; readonly adjustForTimeZone?: boolean | undefined; readonly disambiguation?: Disambiguation | undefined; }) => Option.Option<Zoned>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L678)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L722)
 
 Since v3.6.0

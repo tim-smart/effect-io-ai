@@ -5,6 +5,8 @@ Module: `Graph`<br />
 
 Checks if the graph is acyclic (contains no cycles).
 
+**Details**
+
 Uses depth-first search to detect back edges, which indicate cycles.
 For directed graphs, any back edge creates a cycle. For undirected graphs,
 a back edge that doesn't go to the immediate parent creates a cycle.
@@ -40,6 +42,6 @@ console.log(Graph.isAcyclic(cyclic)) // false
 declare const isAcyclic: <N, E, T extends Kind = "directed">(graph: Graph<N, E, T> | MutableGraph<N, E, T>) => boolean
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Graph.ts#L2424)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Graph.ts#L2438)
 
 Since v3.18.0

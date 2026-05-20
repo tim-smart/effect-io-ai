@@ -5,7 +5,7 @@ Module: `Effect`<br />
 
 Creates an `Effect` that represents a synchronous side-effectful computation.
 
-**When to Use**
+**When to use**
 
 Use `sync` when you are sure the operation will not fail.
 
@@ -18,10 +18,6 @@ This defect is not a standard error but indicates a flaw in the logic that
 was expected to be error-free. You can think of it similar to an unexpected
 crash in the program, which can be further managed or logged using tools like
 `catchDefect`.
-
-**See**
-
-- `| try` for a version that can handle failures.
 
 **Example** (Capturing synchronous logging in an Effect)
 
@@ -38,12 +34,16 @@ const log = (message: string) =>
 const program = log("Hello, World!")
 ```
 
+**See**
+
+- `| try` for a version that can handle failures.
+
 **Signature**
 
 ```ts
 declare const sync: <A>(thunk: LazyArg<A>) => Effect<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L1136)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L1142)
 
 Since v2.0.0

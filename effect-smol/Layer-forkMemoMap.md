@@ -12,6 +12,6 @@ parent while isolating any new layer allocations to the child map.
 declare const forkMemoMap: (parent: MemoMap) => Effect<MemoMap>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L481)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L505)
 
 Since v4.0.0

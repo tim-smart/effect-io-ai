@@ -5,6 +5,8 @@ Module: `HttpRouter`<br />
 
 Overloaded constructor type for router middleware.
 
+**Details**
+
 It builds either a route-scoped `Middleware` or, when `global` is `true`, a
 layer that installs middleware for all routes. The type tracks provided
 services, handled errors, middleware failures, and remaining requirements.
@@ -91,6 +93,6 @@ type Make<Provides, Handles> = {
   }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpRouter.ts#L1033)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpRouter.ts#L1063)
 
 Since v4.0.0

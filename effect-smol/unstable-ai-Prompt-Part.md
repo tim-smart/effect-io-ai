@@ -5,8 +5,11 @@ Module: `Prompt`<br />
 
 Union type representing all possible content parts within messages.
 
+**Details**
+
 Parts are the building blocks of message content, supporting text, files,
-reasoning, tool calls, and tool results.
+reasoning, tool calls, tool results, tool approval responses, and tool
+approval requests.
 
 **Signature**
 
@@ -20,6 +23,6 @@ type Part = | TextPart
   | ToolApprovalRequestPart
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L126)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L124)
 
 Since v4.0.0

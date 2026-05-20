@@ -5,8 +5,10 @@ Module: `TxChunk`<br />
 
 Creates a new `TxChunk` with the specified initial chunk.
 
-**Return behavior**: This function returns a new TxChunk reference containing
-the provided initial chunk. No existing TxChunk instances are modified.
+**Details**
+
+This function returns a new TxChunk reference containing the provided initial chunk. No existing
+TxChunk instances are modified.
 
 **Example** (Creating a TxChunk from a chunk)
 
@@ -30,6 +32,6 @@ const program = Effect.gen(function*() {
 declare const make: <A>(initial: Chunk.Chunk<A>) => Effect.Effect<TxChunk<A>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxChunk.ts#L115)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxChunk.ts#L119)
 
 Since v4.0.0

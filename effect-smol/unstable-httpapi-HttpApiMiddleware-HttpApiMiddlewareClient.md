@@ -5,6 +5,8 @@ Module: `HttpApiMiddleware`<br />
 
 Client-side middleware function for generated HTTP API clients.
 
+**Details**
+
 It receives endpoint/group metadata, the outgoing request, and a `next` function
 for continuing the request pipeline.
 
@@ -23,6 +25,6 @@ export interface HttpApiMiddlewareClient<_E, CE, R> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiMiddleware.ts#L122)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiMiddleware.ts#L128)
 
 Since v4.0.0

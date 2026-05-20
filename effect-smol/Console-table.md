@@ -3,10 +3,7 @@ Module: `Console`<br />
 
 ## Console.table
 
-Displays tabular data as a table in the console.
-
-This function takes tabular data and displays it in a formatted table,
-making it easier to read structured data.
+Displays tabular data as a formatted table in the console, optionally limited to selected properties.
 
 **Example** (Displaying tabular data)
 
@@ -30,6 +27,6 @@ const program = Effect.gen(function*() {
 declare const table: (tabularData: any, properties?: ReadonlyArray<string>) => Effect.Effect<void>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Console.ts#L514)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Console.ts#L476)
 
 Since v2.0.0

@@ -5,6 +5,8 @@ Module: `Chat`<br />
 
 Creates a new Chat service from an initial prompt.
 
+**Details**
+
 This is the primary constructor for creating chat instances. It initializes
 a new conversation with the provided prompt as the starting context.
 
@@ -65,6 +67,6 @@ const existingChat = Effect.gen(function*() {
 declare const fromPrompt: (prompt: Prompt.RawInput) => Effect.Effect<Service, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chat.ts#L555)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chat.ts#L573)
 
 Since v4.0.0

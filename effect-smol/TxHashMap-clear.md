@@ -5,8 +5,10 @@ Module: `TxHashMap`<br />
 
 Removes all entries from the TxHashMap.
 
-**Mutation behavior**: This function mutates the original TxHashMap by clearing
-all key-value pairs. It does not return a new TxHashMap reference.
+**Details**
+
+This function mutates the original TxHashMap by clearing all key-value pairs.
+It does not return a new TxHashMap reference.
 
 **Example** (Clearing all entries)
 
@@ -42,6 +44,6 @@ const program = Effect.gen(function*() {
 declare const clear: <K, V>(self: TxHashMap<K, V>) => Effect.Effect<void>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashMap.ts#L584)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashMap.ts#L590)
 
 Since v4.0.0

@@ -5,7 +5,12 @@ Module: `Exit`<br />
 
 Creates a failed Exit from a defect (unexpected error).
 
+**When to use**
+
 - Use for unexpected, unrecoverable errors that should not appear in the typed error channel
+
+**Details**
+
 - The defect is wrapped in a `Cause.Die` internally
 
 Returns a `Failure<never>` with `E = never`, since defects do not appear in
@@ -31,6 +36,6 @@ console.log(Exit.isFailure(exit)) // true
 declare const die: (defect: unknown) => Exit<never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Exit.ts#L314)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Exit.ts#L349)
 
 Since v2.0.0

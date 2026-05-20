@@ -5,6 +5,8 @@ Module: `Effect`<br />
 
 Transforms the current context using the provided function.
 
+**Details**
+
 This function allows you to access the complete context and perform
 computations based on all available services. This is useful when you need
 to conditionally execute logic based on what services are available.
@@ -50,6 +52,6 @@ const withCache = Effect.provideService(program, Cache, {
 declare const contextWith: <R, A, E, R2>(f: (context: Context.Context<R>) => Effect<A, E, R2>) => Effect<A, E, R | R2>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L5348)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L5412)
 
 Since v2.0.0

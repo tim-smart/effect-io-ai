@@ -5,11 +5,13 @@ Module: `Predicate`<br />
 
 Composes two predicates or refinements into one.
 
-When to use:
+**When to use**
+
 - You want to chain two refinements for progressive narrowing.
 - You want a predicate that applies two checks in sequence.
 
-Behavior:
+**Details**
+
 - Pure; does not mutate input.
 - For refinements, the output type is narrowed by both.
 - Short-circuits on the first `false`.
@@ -27,7 +29,10 @@ const isIntegerNumber = Predicate.compose(isNumber, isInteger)
 console.log(isIntegerNumber(1))
 ```
 
-See also: `and`, `Refinement`
+**See**
+
+- `and`
+- `Refinement`
 
 **Signature**
 
@@ -35,6 +40,6 @@ See also: `and`, `Refinement`
 declare const compose: { <A, B extends A, C extends B>(bc: Refinement<B, C>): (ab: Refinement<A, B>) => Refinement<A, C>; <A, B extends A>(bc: Predicate<NoInfer<B>>): (ab: Refinement<A, B>) => Refinement<A, B>; <A, B extends A, C extends B>(ab: Refinement<A, B>, bc: Refinement<B, C>): Refinement<A, C>; <A, B extends A>(ab: Refinement<A, B>, bc: Predicate<NoInfer<B>>): Refinement<A, B>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L1382)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L1464)
 
 Since v2.0.0

@@ -5,10 +5,12 @@ Module: `Predicate`<br />
 
 A utility type representing any predicate type.
 
-When to use:
+**When to use**
+
 - You need a constraint for "any predicate" in generic code.
 
-Behavior:
+**Details**
+
 - Type-only; no runtime value is created.
 
 **Example** (Generic constraint)
@@ -19,7 +21,9 @@ import { Predicate } from "effect"
 type AnyPredicate = Predicate.Predicate.Any
 ```
 
-See also: `Predicate.In`
+**See**
+
+- `Predicate.In`
 
 **Signature**
 
@@ -27,6 +31,6 @@ See also: `Predicate.In`
 type Any = Predicate<any>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L216)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L228)
 
 Since v3.6.0

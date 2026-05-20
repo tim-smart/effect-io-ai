@@ -5,11 +5,13 @@ Module: `Predicate`<br />
 
 Checks whether a value is a `string`.
 
-When to use:
+**When to use**
+
 - You need to guard an `unknown` value as a string.
 - You want to narrow in `if` statements.
 
-Behavior:
+**Details**
+
 - Pure; does not mutate input.
 - Uses `typeof input === "string"`.
 
@@ -25,7 +27,11 @@ if (Predicate.isString(data)) {
 }
 ```
 
-See also: `isNumber`, `isBoolean`, `Refinement`
+**See**
+
+- `isNumber`
+- `isBoolean`
+- `Refinement`
 
 **Signature**
 
@@ -33,6 +39,6 @@ See also: `isNumber`, `isBoolean`, `Refinement`
 declare const isString: (input: unknown) => input is string
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L543)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L578)
 
 Since v2.0.0

@@ -5,6 +5,8 @@ Module: `Rpc`<br />
 
 Extracts the error schema used in an RPC exit.
 
+**Details**
+
 For streaming RPCs, this includes both the stream error schema and the RPC
 error schema; otherwise it is the RPC error schema.
 
@@ -15,6 +17,6 @@ type ErrorExitSchema<R> = SuccessSchema<R> extends RpcSchema.Stream<infer _A, in
   : ErrorSchema<R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Rpc.ts#L392)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Rpc.ts#L406)
 
 Since v4.0.0

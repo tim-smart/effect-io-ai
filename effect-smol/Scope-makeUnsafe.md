@@ -28,6 +28,6 @@ const program = Effect.gen(function*() {
 declare const makeUnsafe: (finalizerStrategy?: "sequential" | "parallel") => Closeable
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Scope.ts#L273)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Scope.ts#L275)
 
 Since v4.0.0

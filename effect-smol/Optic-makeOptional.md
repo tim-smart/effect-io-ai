@@ -5,10 +5,12 @@ Module: `Optic`<br />
 
 Creates an `Optional` from a fallible getter and a fallible setter.
 
-When to use:
+**When to use**
+
 - Both reading and writing can fail.
 
-Behavior:
+**Details**
+
 - Does not mutate inputs.
 - `getResult` should return `Result.fail(message)` on mismatch.
 - `set` should return `Result.fail(message)` when the update cannot be
@@ -47,6 +49,6 @@ console.log(Result.isSuccess(atKey("x").getResult({ x: 1 })))
 declare const makeOptional: <S, A>(getResult: (s: S) => Result.Result<A, string>, set: (a: A, s: S) => Result.Result<S, string>) => Optional<S, A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Optic.ts#L1036)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Optic.ts#L1070)
 
 Since v4.0.0

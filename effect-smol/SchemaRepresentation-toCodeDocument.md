@@ -5,13 +5,18 @@ Module: `SchemaRepresentation`<br />
 
 Generates TypeScript code strings from a `MultiDocument`.
 
-- Use to produce source code for Schema definitions (e.g. for codegen tools).
-- `options.reviver` can customize code generation for `Declaration`
-  nodes. Return `undefined` to fall back to the default logic (which uses
-  `generation` annotations or the encoded schema).
-- Performs topological sorting of references to emit non-recursive
-  definitions before their dependents.
-- Produces sanitized JavaScript identifiers for `$ref` keys.
+**When to use**
+
+Use this to produce source code for Schema definitions, such as in codegen
+tools.
+
+**Details**
+
+`options.reviver` can customize code generation for `Declaration`
+nodes. Return `undefined` to fall back to the default logic, which uses
+`generation` annotations or the encoded schema. References are
+topologically sorted so non-recursive definitions are emitted before their
+dependents. `$ref` keys are converted to sanitized JavaScript identifiers.
 
 **Example** (Generating TypeScript code)
 
@@ -43,6 +48,6 @@ console.log(codeDoc.codes[0].runtime)
 declare const toCodeDocument: (multiDocument: MultiDocument, options?: { readonly reviver?: Reviver<Code> | undefined; }) => CodeDocument
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaRepresentation.ts#L2298)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaRepresentation.ts#L2383)
 
 Since v4.0.0

@@ -5,6 +5,8 @@ Module: `TxRef`<br />
 
 Synchronously creates a new `TxRef` with the specified initial value.
 
+**When to use**
+
 Prefer `make` in Effect code so allocation stays inside the Effect workflow.
 Use `makeUnsafe` only when a `TxRef` must be constructed outside an effect.
 
@@ -28,6 +30,6 @@ console.log(config.value) // { timeout: 5000, retries: 3 }
 declare const makeUnsafe: <A>(initial: A) => TxRef<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxRef.ts#L110)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxRef.ts#L114)
 
 Since v4.0.0

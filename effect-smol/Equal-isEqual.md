@@ -5,19 +5,21 @@ Module: `Equal`<br />
 
 Checks whether a value implements the `Equal` interface.
 
-When to use:
+**When to use**
+
 - To branch on whether a value supports custom equality before calling
   its `[Equal.symbol]` method directly.
 - In generic utility code that needs to distinguish `Equal` implementors
   from plain values.
 
-Behavior:
+**Details**
+
 - Pure function, no side effects.
 - Returns `true` if and only if `u` has a property keyed by
   `symbol`.
 - Acts as a TypeScript type guard, narrowing the input to `Equal`.
 
-**Example** (type guard)
+**Example** (Type Guard)
 
 ```ts
 import { Equal, Hash } from "effect"
@@ -48,6 +50,6 @@ console.log(Equal.isEqual(42))                // false
 declare const isEqual: (u: unknown) => u is Equal
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Equal.ts#L496)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Equal.ts#L502)
 
 Since v2.0.0

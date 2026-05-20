@@ -5,21 +5,17 @@ Module: `JsonPatch`<br />
 
 A JSON Patch document (an ordered list of operations).
 
-Represents a complete transformation as a sequence of operations. Operations are applied in order, and later operations observe the changes made by earlier ones.
+**When to use**
 
-## When to use this
+Use this type when storing, serializing, passing, or validating complete patch
+documents.
 
-- Storing or serializing patch documents
-- Passing patches between functions or systems
-- Type-checking patch arrays
-- Validating patch structure
+**Details**
 
-## Behavior
-
-- Operations are applied sequentially from first to last
-- Empty arrays represent no-op patches (return original document)
-- Later operations see the document state after earlier operations
-- The array is readonly; individual operations are immutable
+Represents a complete transformation as a readonly sequence of immutable
+operations. Operations are applied sequentially from first to last, and later
+operations observe the document state produced by earlier operations. An empty
+array represents a no-op patch and returns the original document.
 
 **Example** (Multi-operation patch)
 
@@ -36,7 +32,7 @@ const result = JsonPatch.apply(patch, { count: 3, oldField: "value" })
 // { count: 5, items: ["apple"] }
 ```
 
-## See also
+**See**
 
 - `JsonPatchOperation` - Individual operation types
 - `get` - Generates patches from value differences
@@ -48,6 +44,6 @@ const result = JsonPatch.apply(patch, { count: 3, oldField: "value" })
 type JsonPatch = ReadonlyArray<JsonPatchOperation>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/JsonPatch.ts#L179)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/JsonPatch.ts#L167)
 
 Since v4.0.0

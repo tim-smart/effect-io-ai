@@ -5,6 +5,8 @@ Module: `RpcSerialization`<br />
 
 A rpc serialization layer that uses JSON for serialization.
 
+**When to use**
+
 Use this if your protocol supports framing for messages, otherwise use
 `layerNdjson`.
 
@@ -14,6 +16,6 @@ Use this if your protocol supports framing for messages, otherwise use
 declare const layerJson: Layer.Layer<RpcSerialization, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RpcSerialization.ts#L506)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RpcSerialization.ts#L508)
 
 Since v4.0.0

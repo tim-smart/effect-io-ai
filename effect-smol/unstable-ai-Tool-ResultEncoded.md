@@ -6,6 +6,8 @@ Module: `Tool`<br />
 A utility type to extract the encoded type of the tool call result whether
 it succeeds or fails.
 
+**Details**
+
 When `failureMode` is `"return"`, the result may also be an encoded `AiError`.
 
 **Signature**
@@ -20,6 +22,6 @@ type ResultEncoded<T> = T extends Tool<
   : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tool.ts#L861)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tool.ts#L887)
 
 Since v4.0.0

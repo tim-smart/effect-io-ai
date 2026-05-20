@@ -6,8 +6,13 @@ Module: `Types`<br />
 Excludes a specific reason variant by its `_tag` from an error's `reason`
 field.
 
-- Use to remove a handled reason variant from an error's reason union.
-- Returns `never` if `E` has no `reason` field.
+**When to use**
+
+Use to remove a handled reason variant from an error's reason union.
+
+**Details**
+
+Returns `never` if `E` has no `reason` field.
 
 **Example** (Excluding a reason variant)
 
@@ -36,6 +41,6 @@ type ExcludeReason<E, K> = E extends { readonly reason: infer R }
   : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Types.ts#L998)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Types.ts#L1125)
 
 Since v4.0.0

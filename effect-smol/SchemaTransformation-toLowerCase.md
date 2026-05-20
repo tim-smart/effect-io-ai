@@ -6,10 +6,12 @@ Module: `SchemaTransformation`<br />
 A string-to-string transformation that lowercases on decode.
 Encode is passthrough.
 
-When to use this:
+**When to use**
+
 - Normalizing strings to lowercase (e.g. email addresses).
 
-Behavior:
+**Details**
+
 - Decode: applies `String.prototype.toLowerCase()`.
 - Encode: passthrough.
 - Not round-trippable if the original had uppercase characters.
@@ -24,7 +26,8 @@ const Lowered = Schema.String.pipe(
 )
 ```
 
-See also:
+**See**
+
 - `toUpperCase`
 - `trim`
 
@@ -34,6 +37,6 @@ See also:
 declare const toLowerCase: () => Transformation<string, string>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L561)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L571)
 
 Since v4.0.0

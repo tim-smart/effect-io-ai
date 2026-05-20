@@ -6,6 +6,8 @@ Module: `Stream`<br />
 A `Stream<A, E, R>` describes a program that can emit many `A` values, fail
 with `E`, and require `R`.
 
+**Details**
+
 Streams are pull-based with backpressure and emit chunks to amortize effect
 evaluation. They support monadic composition and error handling similar to
 `Effect`, adapted for multiple values.
@@ -40,6 +42,6 @@ export interface Stream<out A, out E = never, out R = never> extends Variance<A,
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L145)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L147)
 
 Since v2.0.0

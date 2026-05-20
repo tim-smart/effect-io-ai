@@ -3,7 +3,10 @@ Module: `Layer`<br />
 
 ## Layer.effectDiscard
 
-Constructs a layer from the specified scoped effect.
+Constructs a layer from an effect, discarding its value and providing no
+services.
+
+**When to use**
 
 This is useful when you want to run an Effect for its side effects during
 layer construction, but don't need to provide any services.
@@ -20,12 +23,16 @@ const initLayer = Layer.effectDiscard(
 )
 ```
 
+**See**
+
+- `empty` for a no-op layer that performs no construction work
+
 **Signature**
 
 ```ts
 declare const effectDiscard: <X, E, R>(effect: Effect<X, E, R>) => Layer<never, E, Exclude<R, Scope.Scope>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L936)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L1014)
 
 Since v2.0.0

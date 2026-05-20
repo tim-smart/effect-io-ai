@@ -45,20 +45,18 @@ export interface GenerateTextOptions<Tools extends Record<string, Tool.Any>> {
   readonly concurrency?: Concurrency | undefined
 
   /**
-   * When set to `true`, tool calls requested by the large language model
-   * will not be auto-resolved by the framework.
+   * When set to `true`, tool calls requested by the large language model are not auto-resolved by the framework.
    *
-   * This option is useful when:
-   *   1. The user wants to include tool call definitions from an `AiToolkit`
-   *      in requests to the large language model so that the model has the
-   *      capability to call tools
-   *   2. The user wants to control the execution of tool call resolvers
-   *      instead of having the framework handle tool call resolution
+   * **When to use**
+   *
+   * Use this when you want to include tool call definitions from an `AiToolkit`
+   * in requests to the large language model, while controlling tool call
+   * resolver execution yourself.
    */
   readonly disableToolCallResolution?: boolean | undefined
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/LanguageModel.ts#L254)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/LanguageModel.ts#L248)
 
 Since v4.0.0

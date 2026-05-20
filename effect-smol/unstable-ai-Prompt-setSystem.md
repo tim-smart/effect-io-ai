@@ -6,8 +6,10 @@ Module: `Prompt`<br />
 Creates a new prompt from the specified prompt with the system message set
 to the specified text content.
 
-**NOTE**: This method will remove and replace any previous system message
-from the prompt.
+**Gotchas**
+
+This method removes and replaces any previous system message from the
+prompt.
 
 **Example** (Replacing system instructions)
 
@@ -35,6 +37,6 @@ const replaced = Prompt.setSystem(
 declare const setSystem: { (content: string): (self: Prompt) => Prompt; (self: Prompt, content: string): Prompt; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L2129)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L2148)
 
 Since v4.0.0

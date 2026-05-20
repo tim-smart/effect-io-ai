@@ -5,6 +5,8 @@ Module: `Schema`<br />
 
 Annotations that can be attached to schema issues.
 
+**Details**
+
 The optional `message` field overrides the default issue message.
 
 **Signature**
@@ -15,6 +17,6 @@ export interface Issue extends Annotations {
   }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L12888)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L13289)
 
 Since v4.0.0

@@ -5,7 +5,7 @@ Module: `Request`<br />
 
 Creates a `Request.Entry` from its component fields.
 
-**Notes**
+**Details**
 
 This is a low-level helper for request runtime and resolver infrastructure;
 most application code receives entries from a `RequestResolver` instead of

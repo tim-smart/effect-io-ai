@@ -11,7 +11,7 @@ Transforms the value inside a `Some` using the provided function, leaving
 - Applying a pure transformation to an optional value
 - Chaining transformations in a pipeline
 
-**Behavior**
+**Details**
 
 - `Some` → applies `f` and wraps the result in a new `Some`
 - `None` → returns `None` unchanged
@@ -40,6 +40,6 @@ console.log(Option.map(Option.none(), (n: number) => n * 2))
 declare const map: { <A, B>(f: (a: A) => B): (self: Option<A>) => Option<B>; <A, B>(self: Option<A>, f: (a: A) => B): Option<B>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L1183)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L1187)
 
 Since v2.0.0

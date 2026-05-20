@@ -5,6 +5,8 @@ Module: `DateTime`<br />
 
 Create a named time zone from a IANA time zone identifier.
 
+**Details**
+
 If the time zone is invalid, `None` will be returned.
 
 **Example** (Creating optional named time zones)
@@ -25,6 +27,6 @@ console.log(invalidZone._tag === "None") // true
 declare const zoneMakeNamed: (zoneId: string) => Option.Option<TimeZone.Named>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L971)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L1029)
 
 Since v3.6.0

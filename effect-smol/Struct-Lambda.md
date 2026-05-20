@@ -6,9 +6,16 @@ Module: `Struct`<br />
 Interface for type-level functions used by `map`, `mapPick`, and
 `mapOmit`.
 
-- Extend this interface with concrete `~lambda.in` and `~lambda.out` types
-  to describe how a function transforms values at the type level.
-- At runtime, create lambda values with `lambda`.
+**When to use**
+
+Use this interface when defining a typed function for `map`,
+`mapPick`, or `mapOmit`.
+
+**Details**
+
+Extend this interface with concrete `~lambda.in` and `~lambda.out` types to
+describe how a function transforms values at the type level. At runtime,
+create lambda values with `lambda`.
 
 **Example** (Defining a lambda type)
 
@@ -35,6 +42,6 @@ export interface Lambda {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Struct.ts#L595)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Struct.ts#L661)
 
 Since v4.0.0

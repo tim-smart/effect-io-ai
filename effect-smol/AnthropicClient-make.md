@@ -5,13 +5,11 @@ Module: `AnthropicClient`<br />
 
 Creates an Anthropic client service with the given options.
 
-The client automatically handles:
-- API key authentication via the `x-api-key` header
-- API versioning via the `anthropic-version` header
-- Error mapping to the unified `AiError` type
-- Request/response transformations via `AnthropicConfig`
+**Details**
 
-Requires an `HttpClient` in the context.
+The client handles API key authentication via the `x-api-key` header, API versioning via the `anthropic-version`
+header, error mapping to the unified `AiError` type, and request/response transformations via `AnthropicConfig`. It
+requires an `HttpClient` in the context.
 
 **Signature**
 
@@ -19,6 +17,6 @@ Requires an `HttpClient` in the context.
 declare const make: (options: Options) => Effect.Effect<Service, never, HttpClient.HttpClient>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicClient.ts#L210)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicClient.ts#L192)
 
 Since v4.0.0

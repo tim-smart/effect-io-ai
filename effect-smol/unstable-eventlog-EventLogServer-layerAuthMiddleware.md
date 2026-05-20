@@ -6,6 +6,8 @@ Module: `EventLogServer`<br />
 Provides RPC authentication middleware that reads the authenticated
 `EventLog.Identity` from client annotations.
 
+**Details**
+
 Requests without an identity fail with a forbidden `EventLogProtocolError`.
 
 **Signature**
@@ -14,6 +16,6 @@ Requests without an identity fail with a forbidden `EventLogProtocolError`.
 declare const layerAuthMiddleware: Layer.Layer<EventLogAuthentication, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventLogServer.ts#L56)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventLogServer.ts#L58)
 
 Since v4.0.0

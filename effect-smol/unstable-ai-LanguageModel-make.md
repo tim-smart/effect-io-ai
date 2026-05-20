@@ -3,10 +3,7 @@ Module: `LanguageModel`<br />
 
 ## LanguageModel.make
 
-Creates a LanguageModel service from provider-specific implementations.
-
-This constructor takes provider-specific implementations for text generation
-and streaming text generation and returns a LanguageModel service.
+Creates a LanguageModel service from provider-specific text generation and streaming implementations.
 
 **Signature**
 
@@ -14,6 +11,6 @@ and streaming text generation and returns a LanguageModel service.
 declare const make: (params: { readonly generateText: (options: ProviderOptions) => Effect.Effect<Array<Response.PartEncoded>, AiError.AiError, IdGenerator>; readonly streamText: (options: ProviderOptions) => Stream.Stream<Response.StreamPartEncoded, AiError.AiError, IdGenerator>; readonly codecTransformer?: CodecTransformer | undefined; }) => Effect.Effect<Service>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/LanguageModel.ts#L751)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/LanguageModel.ts#L742)
 
 Since v4.0.0

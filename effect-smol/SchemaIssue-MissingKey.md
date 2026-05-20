@@ -5,13 +5,13 @@ Module: `SchemaIssue`<br />
 
 Issue produced when a required key or tuple index is missing from the input.
 
-When to use:
+**When to use**
 
 - Detect absent fields in struct/tuple validation.
 - Typically found inside a `Pointer` that indicates which key is
   missing.
 
-Behaviour:
+**Details**
 
 - Has no `actual` value — `getActual` returns `Option.none()`.
 - `annotations` may contain a custom `messageMissingKey` for formatting.
@@ -32,6 +32,6 @@ declare class MissingKey { constructor(
   ) }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaIssue.ts#L389)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaIssue.ts#L391)
 
 Since v4.0.0

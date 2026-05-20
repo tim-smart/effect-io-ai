@@ -11,7 +11,7 @@ flattening the result. Returns `None` if the input is `None`.
 - Chaining computations that each may fail (return `None`)
 - Sequencing dependent optional operations
 
-**Behavior**
+**Details**
 
 - `Some` → applies `f` to the value and returns its `Option` result
 - `None` → returns `None` without calling `f`
@@ -52,6 +52,6 @@ console.log(street)
 declare const flatMap: { <A, B>(f: (a: A) => Option<B>): (self: Option<A>) => Option<B>; <A, B>(self: Option<A>, f: (a: A) => Option<B>): Option<B>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L1329)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L1333)
 
 Since v2.0.0

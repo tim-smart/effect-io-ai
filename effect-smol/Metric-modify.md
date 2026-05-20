@@ -5,7 +5,10 @@ Module: `Metric`<br />
 
 Modifies the metric with the specified input.
 
+**Details**
+
 The behavior of `modify` depends on the metric type:
+
 - **Counter**: Adds the input value to the current count
 - **Gauge**: Adds the input value to the current gauge value
 - **Frequency**: Same as `update` - increments the occurrence count for the input string
@@ -46,6 +49,6 @@ const program = Effect.gen(function*() {
 declare const modify: { <Input>(input: Input): <State>(self: Metric<Input, State>) => Effect<void>; <Input, State>(self: Metric<Input, State>, input: Input): Effect<void>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Metric.ts#L2755)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Metric.ts#L2789)
 
 Since v3.6.5

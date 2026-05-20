@@ -6,6 +6,7 @@ Module: `Metric`<br />
 `Context.Reference` for the optional fiber runtime metrics service.
 
 **Details**
+
 When provided, the runtime can notify the service about child-fiber start and
 end events. When the reference is `undefined`, automatic fiber runtime metric
 collection is disabled.
@@ -56,6 +57,6 @@ const program = Effect.gen(function*() {
 declare const FiberRuntimeMetrics: Context.Reference<FiberRuntimeMetricsService | undefined>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Metric.ts#L3624)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Metric.ts#L3675)
 
 Since v4.0.0

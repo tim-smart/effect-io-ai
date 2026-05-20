@@ -11,6 +11,6 @@ Converts a string to snake_case (lowercase with underscores).
 declare const snakeCase: (self: string) => string
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L1320)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L1326)
 
 Since v4.0.0

@@ -3,8 +3,9 @@ Module: `AnthropicClient`<br />
 
 ## AnthropicClient.MessageStreamEvent
 
-Represents an event received from the Anthropic Messages API during a
-streaming request.
+Represents an event received from the Anthropic Messages API during a streaming request.
+
+**Details**
 
 Events include:
 - `message_start`: Initial event containing message metadata
@@ -27,6 +28,6 @@ type MessageStreamEvent = | typeof Generated.BetaMessageStartEvent.Type
   | typeof Generated.BetaErrorResponse.Type
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicClient.ts#L119)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicClient.ts#L111)
 
 Since v4.0.0

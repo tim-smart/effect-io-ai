@@ -5,15 +5,17 @@ Module: `ConfigProvider`<br />
 
 Creates a `ConfigProvider` by parsing the string contents of a `.env` file.
 
-When to use:
-- You already have the `.env` contents as a string (e.g. fetched from a
-  remote store or embedded in a test).
-- Use `fromDotEnv` instead if you want to read a `.env` file from
-  disk.
+**When to use**
 
-Supports `export` prefixes, single/double/backtick quoting, inline
-comments, and escaped newlines. Variable expansion (e.g. `${VAR}`) is
-disabled by default; enable with `{ expandVariables: true }`.
+Use this when you already have the `.env` contents as a string, such as
+contents fetched from a remote store or embedded in a test. Use
+`fromDotEnv` instead if you want to read a `.env` file from disk.
+
+**Details**
+
+Supports `export` prefixes, single/double/backtick quoting, inline comments,
+and escaped newlines. Variable expansion (for example, `${VAR}`) is disabled
+by default; enable with `{ expandVariables: true }`.
 
 Parsing is based on the `dotenv` / `dotenv-expand` algorithm.
 
@@ -44,6 +46,6 @@ const provider = ConfigProvider.fromDotEnvContents(contents)
 declare const fromDotEnvContents: (lines: string, options?: { readonly expandVariables?: boolean | undefined; }) => ConfigProvider
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ConfigProvider.ts#L913)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ConfigProvider.ts#L960)
 
 Since v4.0.0

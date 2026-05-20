@@ -6,6 +6,8 @@ Module: `Tool`<br />
 A utility which allows mapping between a provider-defined name for a tool
 and the name given to the tool by the Effect AI SDK.
 
+**Details**
+
 The custom names used by the Effect AI SDK are to allow for toolkits which
 contain tools from multiple different providers that would otherwise have
 naming conflicts (i.e. `"web_search"`) to instead use custom names (i.e.
@@ -17,6 +19,6 @@ naming conflicts (i.e. `"web_search"`) to instead use custom names (i.e.
 declare class NameMapper<Tools> { constructor(tools: Tools) }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tool.ts#L1489)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tool.ts#L1531)
 
 Since v4.0.0

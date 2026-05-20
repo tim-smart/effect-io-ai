@@ -5,6 +5,8 @@ Module: `Cron`<br />
 
 Returns `true` when a date/time matches a `Cron` schedule.
 
+**Details**
+
 Seconds, minutes, hours, months, and the optional timezone are checked
 directly. For day constraints, an empty `days` or `weekdays` set means that
 field matches every value; when both sets are non-empty, a date matches if
@@ -34,6 +36,6 @@ console.log(matches3) // false - wrong day
 declare const match: (cron: Cron, date: DateTime.DateTime.Input) => boolean
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cron.ts#L630)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cron.ts#L644)
 
 Since v2.0.0

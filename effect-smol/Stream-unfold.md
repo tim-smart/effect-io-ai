@@ -6,6 +6,8 @@ Module: `Stream`<br />
 Creates a stream by repeatedly applying an effectful step function to a
 state.
 
+**Details**
+
 Each `readonly [value, nextState]` result emits `value` and continues with
 `nextState`; returning `undefined` ends the stream.
 
@@ -30,6 +32,6 @@ Effect.runPromise(program)
 declare const unfold: <S, A, E, R>(s: S, f: (s: S) => Effect.Effect<readonly [A, S] | undefined, E, R>) => Stream<A, E, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L1616)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L1644)
 
 Since v2.0.0

@@ -5,6 +5,8 @@ Module: `HttpServerResponse`<br />
 
 Sets the HTTP status code of an `HttpServerResponse`.
 
+**Details**
+
 When `statusText` is omitted, the existing status text is preserved.
 
 **Signature**
@@ -13,6 +15,6 @@ When `statusText` is omitted, the existing status text is preserved.
 declare const setStatus: { (status: number, statusText?: string | undefined): (self: HttpServerResponse) => HttpServerResponse; (self: HttpServerResponse, status: number, statusText?: string | undefined): HttpServerResponse; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpServerResponse.ts#L891)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpServerResponse.ts#L935)
 
 Since v4.0.0

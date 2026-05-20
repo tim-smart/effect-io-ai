@@ -11,6 +11,6 @@ JSON-RPC error code for requests that are not valid request objects.
 declare const INVALID_REQUEST_ERROR_CODE: -32600
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L446)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L469)
 
 Since v4.0.0

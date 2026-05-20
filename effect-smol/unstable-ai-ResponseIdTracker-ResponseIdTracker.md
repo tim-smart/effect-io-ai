@@ -6,6 +6,8 @@ Module: `ResponseIdTracker`<br />
 Service tag for enabling provider previous-response ID reuse across language
 model calls.
 
+**When to use**
+
 When provided, language model operations can use the tracker to send only new
 prompt messages together with the provider's prior response ID.
 
@@ -15,6 +17,6 @@ prompt messages together with the provider's prior response ID.
 declare class ResponseIdTracker
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ResponseIdTracker.ts#L64)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ResponseIdTracker.ts#L70)
 
 Since v4.0.0

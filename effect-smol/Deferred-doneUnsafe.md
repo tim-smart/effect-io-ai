@@ -6,6 +6,8 @@ Module: `Deferred`<br />
 Synchronously attempts to complete the `Deferred` with the specified
 completion effect.
 
+**Details**
+
 This mutates the `Deferred` directly and should be reserved for low-level
 code; prefer the effectful completion APIs when possible. Returns `true` if
 this call completed the `Deferred`, or `false` if it was already completed.
@@ -26,6 +28,6 @@ console.log(success) // true
 declare const doneUnsafe: <A, E>(self: Deferred<A, E>, effect: Effect<A, E>) => boolean
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Deferred.ts#L752)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Deferred.ts#L781)
 
 Since v4.0.0

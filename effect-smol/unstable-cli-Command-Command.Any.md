@@ -20,9 +20,10 @@ export interface Any extends Effect.Effect<any, never, any> {
       readonly commands: NonEmptyReadonlyArray<Command.Any>
     }>
     readonly annotations: Context.Context<never>
+    readonly hidden: boolean
   }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Command.ts#L310)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Command.ts#L327)
 
 Since v4.0.0

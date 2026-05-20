@@ -5,6 +5,8 @@ Module: `Queue`<br />
 
 Creates an unbounded queue that can grow to any size without blocking producers.
 
+**When to use**
+
 Unlike bounded queues, unbounded queues never apply backpressure - producers
 can always add messages successfully. This is useful when you want to prioritize
 producer throughput over memory usage control.
@@ -38,6 +40,6 @@ const program = Effect.gen(function*() {
 declare const unbounded: <A, E = never>() => Effect<Queue<A, E>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Queue.ts#L561)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Queue.ts#L587)
 
 Since v2.0.0

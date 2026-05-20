@@ -14,12 +14,16 @@ export interface Filter extends Augment {
     /**
      * Complete message to use when this filter or refinement fails.
      *
+     * **Details**
+     *
      * The default formatter checks filter annotations in this order:
      * `message`, then `expected`, then `<filter>`.
      */
     readonly message?: string | undefined
     /**
      * Stable identifier for the schema after this filter is attached.
+     *
+     * **Details**
      *
      * This can affect schema tooling such as JSON Schema generation and
      * type-level failures before the filter runs, but it does not name the
@@ -39,12 +43,14 @@ export interface Filter extends Augment {
      * structure of the container (e.g., array length, object keys) rather than
      * the contents.
      *
+     * **Details**
+     *
      * Example: `minLength` on an array is a structural filter.
      */
     readonly "~structural"?: boolean | undefined
   }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L12692)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L13079)
 
 Since v3.10.0

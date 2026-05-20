@@ -6,6 +6,8 @@ Module: `Entity`<br />
 Maps each RPC in an entity protocol to the handler function expected by
 `Entity.toLayer`.
 
+**Details**
+
 Each handler receives the entity request envelope for that RPC and returns the
 RPC result or a supported RPC wrapper.
 
@@ -19,6 +21,6 @@ type HandlersFrom<Rpc> = {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Entity.ts#L237)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Entity.ts#L245)
 
 Since v4.0.0

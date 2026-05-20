@@ -6,8 +6,15 @@ Module: `Exit`<br />
 Extracts the first typed error value from a failed Exit for use in filter
 pipelines.
 
+**When to use**
+
 - Use when you need just the first `E` from the Cause
+
+**Details**
+
 - Returns the error `E` if one exists, or `Filter.fail` wrapping the original Exit if the Exit has no typed errors
+
+**Gotchas**
 
 Only finds the first Fail reason. If the Cause has multiple errors, the rest
 are ignored.
@@ -37,6 +44,6 @@ const noError = Exit.findError(defect)
 declare const findError: <A, E>(input: Exit<A, E>) => Result.Result<E, Exit<A, E>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Exit.ts#L635)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Exit.ts#L725)
 
 Since v4.0.0

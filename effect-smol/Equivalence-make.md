@@ -5,12 +5,14 @@ Module: `Equivalence`<br />
 
 Creates a custom equivalence relation with an optimized reference equality check.
 
-When to use this:
-- When you need a custom equivalence that isn't just strict equality
-- When creating equivalences for complex types with custom comparison logic
-- When you want the performance benefit of reference equality optimization
+**When to use**
 
-Behavior:
+- Use when you need a custom equivalence that is not just strict equality
+- Use when creating equivalences for complex types with custom comparison logic
+- Use when you want the performance benefit of reference equality optimization
+
+**Details**
+
 - Does not mutate inputs
 - First checks reference equality (`===`) for performance; if values are identical, returns `true` without calling the function
 - Falls back to the provided equivalence function if values are not the same reference
@@ -40,11 +42,14 @@ import { Equivalence } from "effect"
 
 const tolerance = Equivalence.make<number>((a, b) => Math.abs(a - b) < 0.0001)
 
-console.log(tolerance(1.0, 1.0001)) // false
+console.log(tolerance(1.0, 1.001)) // false
 console.log(tolerance(1.0, 1.00001)) // true
 ```
 
-See also: `strictEqual`, `mapInput`
+**See**
+
+- `strictEqual`
+- `mapInput`
 
 **Signature**
 
@@ -52,6 +57,6 @@ See also: `strictEqual`, `mapInput`
 declare const make: <A>(isEquivalent: (self: A, that: A) => boolean) => Equivalence<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Equivalence.ts#L189)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Equivalence.ts#L195)
 
 Since v2.0.0

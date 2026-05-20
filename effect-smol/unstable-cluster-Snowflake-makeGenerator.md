@@ -5,6 +5,8 @@ Module: `Snowflake`<br />
 
 Creates a stateful snowflake generator using `Clock`.
 
+**Details**
+
 The generator starts with a random machine id, never moves generated timestamps
 backward, resets the sequence each millisecond, and advances the timestamp when
 more than 4096 ids are requested in the same millisecond.
@@ -15,6 +17,6 @@ more than 4096 ids are requested in the same millisecond.
 declare const makeGenerator: Effect.Effect<Snowflake.Generator, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Snowflake.ts#L220)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Snowflake.ts#L222)
 
 Since v4.0.0

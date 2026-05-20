@@ -6,11 +6,16 @@ Module: `ConfigProvider`<br />
 Creates a `Record` node representing an object-like container with known
 child keys.
 
-When to use:
-- Describing a directory or JSON object inside a custom provider.
+**When to use**
+
+Use this when describing a directory or JSON object inside a custom
+provider.
+
+**Details**
 
 The optional `value` allows a node to be both a container and a leaf at the
-same time (e.g. an env var `A=x` that also has children `A_FOO`, `A_BAR`).
+same time (for example, an env var `A=x` that also has children `A_FOO` and
+`A_BAR`).
 
 **Example** (Creating a record node)
 
@@ -32,6 +37,6 @@ const node = ConfigProvider.makeRecord(new Set(["host", "port"]))
 declare const makeRecord: (keys: ReadonlySet<string>, value?: string) => Node
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ConfigProvider.ts#L189)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ConfigProvider.ts#L200)
 
 Since v4.0.0

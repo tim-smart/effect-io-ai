@@ -5,13 +5,22 @@ Module: `JsonSchema`<br />
 
 Parses a raw Draft-07 JSON Schema into a `Document<"draft-2020-12">`.
 
-- Use when you have a JSON Schema that follows Draft-07 conventions.
-- Converts Draft-07 tuple syntax (`items` as array + `additionalItems`)
-  to Draft-2020-12 form (`prefixItems` + `items`).
-- Rewrites `#/definitions/...` refs to `#/$defs/...`.
-- Extracts root-level `definitions` into the `definitions` field.
-- Does not mutate the input. Allocates a new `Document`.
-- Unsupported keywords (e.g. `if`/`then`/`else`, `$id`) are dropped.
+**When to use**
+
+Use this when you have a JSON Schema that follows Draft-07 conventions and
+need the canonical Draft-2020-12 document representation.
+
+**Details**
+
+This converts Draft-07 tuple syntax (`items` as array plus
+`additionalItems`) to Draft-2020-12 form (`prefixItems` plus `items`),
+rewrites `#/definitions/...` refs to `#/$defs/...`, and extracts root-level
+`definitions` into the `definitions` field. It does not mutate the input and
+allocates a new `Document`.
+
+**Gotchas**
+
+Unsupported keywords, such as `if`/`then`/`else` and `$id`, are dropped.
 
 **Example** (Parsing a Draft-07 schema)
 
@@ -45,6 +54,6 @@ console.log(doc.schema.properties) // { tags: { type: "array", items: { type: "s
 declare const fromSchemaDraft07: (js: JsonSchema) => Document<"draft-2020-12">
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/JsonSchema.ts#L257)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/JsonSchema.ts#L273)
 
 Since v4.0.0

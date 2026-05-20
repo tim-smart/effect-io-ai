@@ -6,9 +6,14 @@ Module: `Struct`<br />
 Merges two object types with properties from `U` taking precedence over `T`
 on overlapping keys (like `Object.assign` at the type level).
 
-- Use when you need the type-level equivalent of `{ ...T, ...U }`.
-- When no keys overlap, returns a simple intersection for efficiency.
-- When keys overlap, the type from `U` wins.
+**When to use**
+
+Use when you need the type-level equivalent of `{ ...T, ...U }`.
+
+**Details**
+
+When no keys overlap, this returns a simple intersection for efficiency.
+When keys overlap, the type from `U` wins.
 
 **Example** (Merging two types with overlapping keys)
 
@@ -32,6 +37,6 @@ type Merged = Struct.Assign<A, B>
 type { [K in keyof (keyof T & keyof U extends never ? T & U : Omit<T, keyof T & keyof U> & U)]: (keyof T & keyof U extends never ? T & U : Omit<T, keyof T & keyof U> & U)[K]; } = Simplify<keyof T & keyof U extends never ? T & U : Omit<T, keyof T & keyof U> & U>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Struct.ts#L160)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Struct.ts#L171)
 
 Since v4.0.0

@@ -7,9 +7,13 @@ Creates an `Equivalence` for tuples by comparing corresponding elements
 using the provided per-position `Equivalence`s. Two tuples are equivalent
 when all their corresponding elements are equivalent.
 
-Alias of `Equivalence.Tuple`.
+**When to use**
 
-- Use when you need to compare tuples element-by-element.
+Use this when you need to compare tuples element-by-element.
+
+**Details**
+
+This is an alias of `Equivalence.Tuple`.
 
 **Example** (Comparing tuples for equivalence)
 
@@ -35,6 +39,6 @@ console.log(eq(["Alice", 30], ["Bob", 30]))   // false
 declare const makeEquivalence: <const Elements extends ReadonlyArray<Equivalence.Equivalence<any>>>(elements: Elements) => Equivalence.Equivalence<{ readonly [I in keyof Elements]: [Elements[I]] extends [Equivalence.Equivalence<infer A>] ? A : never; }>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tuple.ts#L563)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tuple.ts#L608)
 
 Since v4.0.0

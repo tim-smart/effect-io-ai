@@ -5,6 +5,8 @@ Module: `Config`<br />
 
 Creates a config for a log level string.
 
+**Details**
+
 Shortcut for `Config.schema(Config.LogLevel, name)`.
 
 Accepted values: `"All"`, `"Fatal"`, `"Error"`, `"Warn"`, `"Info"`,
@@ -38,6 +40,6 @@ Effect.runSync(
 declare const logLevel: (name?: string) => Config<LogLevel_.LogLevel>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Config.ts#L1134)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Config.ts#L1208)
 
 Since v2.0.0

@@ -5,6 +5,8 @@ Module: `Telemetry`<br />
 
 Utility type for converting camelCase names to snake_case format.
 
+**Details**
+
 This type recursively transforms string literal types from camelCase to
 snake_case, which is the standard format for OpenTelemetry attributes.
 
@@ -28,6 +30,6 @@ type FormatAttributeName<T> = T extends string ?
   never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Telemetry.ts#L289)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Telemetry.ts#L296)
 
 Since v4.0.0

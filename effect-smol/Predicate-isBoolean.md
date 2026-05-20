@@ -5,10 +5,12 @@ Module: `Predicate`<br />
 
 Checks whether a value is a `boolean`.
 
-When to use:
+**When to use**
+
 - You need to guard an `unknown` value as a boolean.
 
-Behavior:
+**Details**
+
 - Pure; does not mutate input.
 - Uses `typeof input === "boolean"`.
 
@@ -24,7 +26,10 @@ if (Predicate.isBoolean(data)) {
 }
 ```
 
-See also: `isString`, `isNumber`
+**See**
+
+- `isString`
+- `isNumber`
 
 **Signature**
 
@@ -32,6 +37,6 @@ See also: `isString`, `isNumber`
 declare const isBoolean: (input: unknown) => input is boolean
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L606)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L645)
 
 Since v2.0.0

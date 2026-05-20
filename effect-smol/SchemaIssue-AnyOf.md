@@ -5,13 +5,13 @@ Module: `SchemaIssue`<br />
 
 Issue produced when a value does not match *any* member of a union schema.
 
-When to use:
+**When to use**
 
 - Inspect which union members were attempted and why each failed.
 - `issues` may be empty when the union has no members or when the input does
   not pass the initial type guard.
 
-Behaviour:
+**Details**
 
 - `ast` is the `Union` AST node.
 - `actual` is the raw input value (plain `unknown`).
@@ -42,6 +42,6 @@ declare class AnyOf { constructor(
   ) }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaIssue.ts#L725)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaIssue.ts#L727)
 
 Since v4.0.0

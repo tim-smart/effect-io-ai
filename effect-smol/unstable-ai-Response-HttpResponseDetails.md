@@ -5,6 +5,8 @@ Module: `Response`<br />
 
 Schema for HTTP response details associated with an AI response.
 
+**Details**
+
 Captures essential information about the HTTP response received from
 the AI provider, including status codes and headers for debugging and
 observability purposes.
@@ -29,6 +31,6 @@ const responseDetails: typeof Response.HttpResponseDetails.Type = {
 declare const HttpResponseDetails: Schema.Struct<{ readonly status: Schema.Number; readonly headers: Schema.$Record<Schema.String, Schema.Union<readonly [Schema.String, Schema.Redacted<Schema.String>]>>; }>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Response.ts#L2155)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Response.ts#L2168)
 
 Since v4.0.0

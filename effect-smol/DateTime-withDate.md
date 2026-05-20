@@ -3,11 +3,14 @@ Module: `DateTime`<br />
 
 ## DateTime.withDate
 
-Applies a function to a JavaScript `Date` representing the `DateTime`'s UTC
-instant and returns the function's result.
+Applies a function to a JavaScript `Date` representing the `DateTime` and
+returns the function's result.
 
-This ignores any associated time zone. Use `DateTime.withDate` when the
-callback should receive the time-zone-adjusted wall-clock date.
+**Details**
+
+The callback receives the time-zone-adjusted wall-clock date for
+`DateTime.Zoned` values. Use `DateTime.withDateUtc` when the callback should
+receive the UTC instant.
 
 **Example** (Using time zone adjusted Dates)
 
@@ -26,6 +29,6 @@ DateTime.makeZonedUnsafe(0, { timeZone: "Europe/London" }).pipe(
 declare const withDate: { <A>(f: (date: Date) => A): (self: DateTime) => A; <A>(self: DateTime, f: (date: Date) => A): A; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L2018)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L2123)
 
 Since v3.6.0

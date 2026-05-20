@@ -39,6 +39,6 @@ if (MutableRef.incrementAndGet(attempts) > 3) {
 declare const incrementAndGet: (self: MutableRef<number>) => number
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableRef.ts#L517)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableRef.ts#L519)
 
 Since v2.0.0

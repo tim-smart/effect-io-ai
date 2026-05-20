@@ -3,7 +3,7 @@ Module: `Layer`<br />
 
 ## Layer.Services
 
-Extracts the service dependencies (RIn) from a Layer type.
+Extracts the service requirements (`RIn`) from a `Layer` type.
 
 **Signature**
 
@@ -13,6 +13,6 @@ type Services<T> = T extends infer L
   : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L126)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L142)
 
 Since v4.0.0

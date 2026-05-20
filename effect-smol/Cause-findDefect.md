@@ -7,6 +7,8 @@ Returns a `Result` whose success value is the first defect value from a
 `Die` reason in the cause. If the cause has no `Die` reason, the
 failure value is the original cause.
 
+**When to use**
+
 Use `findDie` if you need the full `Die` reason (including
 annotations).
 
@@ -32,6 +34,6 @@ if (!Result.isFailure(result)) {
 declare const findDefect: <E>(self: Cause<E>) => Result.Result<unknown, Cause<E>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L896)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L944)
 
 Since v4.0.0

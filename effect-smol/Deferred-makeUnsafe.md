@@ -5,6 +5,8 @@ Module: `Deferred`<br />
 
 Synchronously creates an empty `Deferred` outside the `Effect` runtime.
 
+**When to use**
+
 Prefer `Deferred.make` in effectful code so allocation is represented in
 `Effect`; use this only when direct synchronous allocation is required.
 
@@ -23,6 +25,6 @@ console.log(deferred)
 declare const makeUnsafe: <A, E = never>() => Deferred<A, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Deferred.ts#L194)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Deferred.ts#L200)
 
 Since v4.0.0

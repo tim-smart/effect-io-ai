@@ -34,7 +34,9 @@ export interface Delete<
     /**
      * Invalidate any queries using Reactivity service with the provided keys.
      *
-     * Defaults to using the table name as a key if no keys are provided.
+     * **Details**
+     *
+     * If no keys are provided, the table name is used as the reactivity key.
      */
     readonly invalidate: (
       keys?: ReadonlyArray<unknown> | Record.ReadonlyRecord<string, ReadonlyArray<unknown>> | undefined

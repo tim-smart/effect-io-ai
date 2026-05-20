@@ -5,12 +5,14 @@ Module: `Order`<br />
 
 Returns the minimum of two values according to the given order. If they are equal, returns the first argument.
 
-When to use this:
+**When to use**
+
 - When you need to find the smaller of two values
 - When implementing min/max operations
 - When selecting values based on ordering
 
-Behavior:
+**Details**
+
 - Pure function: does not mutate inputs
 - Returns the value that compares as less than or equal to the other
 - If values are equal, returns the first argument
@@ -28,7 +30,8 @@ console.log(minNumber(2, 1)) // 1
 console.log(minNumber(1, 1)) // 1
 ```
 
-See also:
+**See**
+
 - `max` - Maximum of two values
 - `clamp` - Clamp a value between min and max
 
@@ -38,6 +41,6 @@ See also:
 declare const min: <A>(O: Order<A>) => { (that: A): (self: A) => A; (self: A, that: A): A; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Order.ts#L905)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Order.ts#L907)
 
 Since v2.0.0

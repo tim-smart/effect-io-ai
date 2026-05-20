@@ -5,6 +5,8 @@ Module: `Array`<br />
 
 Normalizes a value that is either a single element or an array into an array.
 
+**Details**
+
 - If the input is already an array, returns it by reference.
 - If the input is a single value, wraps it in a one-element array.
 - Useful for APIs that accept `A | Array<A>`.
@@ -29,6 +31,6 @@ console.log(Array.ensure(["a", "b", "c"])) // ["a", "b", "c"]
 declare const ensure: <A>(self: ReadonlyArray<A> | A) => Array<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L362)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L382)
 
 Since v3.3.0

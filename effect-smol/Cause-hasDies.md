@@ -25,6 +25,6 @@ console.log(Cause.hasDies(Cause.fail("error"))) // false
 declare const hasDies: <E>(self: Cause<E>) => boolean
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L843)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L887)
 
 Since v4.0.0

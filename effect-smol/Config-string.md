@@ -5,10 +5,13 @@ Module: `Config`<br />
 
 Creates a config for a single string value.
 
-Shortcut for `Config.schema(Schema.String, name)`.
+**When to use**
 
-When to use:
 - Reading a single string env var or config key.
+
+**Details**
+
+Shortcut for `Config.schema(Schema.String, name)`.
 
 **Example** (Reading a string config)
 
@@ -32,6 +35,6 @@ const provider = ConfigProvider.fromUnknown({ HOST: "localhost" })
 declare const string: (name?: string) => Config<string>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Config.ts#L887)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Config.ts#L941)
 
 Since v2.0.0

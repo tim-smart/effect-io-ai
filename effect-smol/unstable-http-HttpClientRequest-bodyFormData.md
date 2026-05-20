@@ -11,6 +11,6 @@ Sets a `FormData` request body.
 declare const bodyFormData: { (body: FormData): (self: HttpClientRequest) => HttpClientRequest; (self: HttpClientRequest, body: FormData): HttpClientRequest; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpClientRequest.ts#L755)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpClientRequest.ts#L757)
 
 Since v4.0.0

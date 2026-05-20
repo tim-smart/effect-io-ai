@@ -5,6 +5,8 @@ Module: `UrlParams`<br />
 
 Input accepted when constructing `UrlParams`.
 
+**Details**
+
 Values can be provided as a coercible record, an iterable of key-value pairs, or
 a native `URLSearchParams` value.
 
@@ -16,6 +18,6 @@ type Input = | CoercibleRecordInput
   | URLSearchParams
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/UrlParams.ts#L76)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/UrlParams.ts#L80)
 
 Since v4.0.0

@@ -5,11 +5,13 @@ Module: `Optic`<br />
 
 A `Prism` that focuses on the success value of a `Result`.
 
-When to use:
+**When to use**
+
 - You have a `Result<A, E>` and want to read/update `A` only when it
   is a `Success`.
 
-Behavior:
+**Details**
+
 - `getResult` fails when the result is a `Failure`.
 - `set(a)` produces `Result.succeed(a)`.
 
@@ -38,6 +40,6 @@ console.log(Result.isFailure(_ok.getResult(Result.fail("err"))))
 declare const success: <A, E>() => Prism<Result.Result<A, E>, A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Optic.ts#L1677)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Optic.ts#L1725)
 
 Since v4.0.0

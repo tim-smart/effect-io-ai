@@ -5,6 +5,8 @@ Module: `Cause`<br />
 
 Narrows a `Reason` to `Fail`.
 
+**When to use**
+
 Useful as a predicate for `Array.filter` when iterating over `cause.reasons`.
 
 **Example** (filtering fail reasons)
@@ -28,6 +30,6 @@ console.log(fails[0].error) // "error"
 declare const isFailReason: <E>(self: Reason<E>) => self is Fail<E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L234)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L240)
 
 Since v4.0.0

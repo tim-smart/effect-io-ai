@@ -6,6 +6,8 @@ Module: `Channel`<br />
 Structural encoding used by `Variance` to record each `Channel` type
 parameter's variance.
 
+**Details**
+
 The `_OutElem`, `_OutErr`, `_OutDone`, and `_Env` fields are covariant; the
 `_InElem`, `_InErr`, and `_InDone` fields are contravariant. Users normally
 do not need to reference this interface directly.
@@ -32,6 +34,6 @@ export interface VarianceStruct<
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L266)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L276)
 
 Since v2.0.0

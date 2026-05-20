@@ -5,8 +5,14 @@ Module: `Ref`<br />
 
 Creates a new Ref with the specified initial value (unsafe version).
 
-This function creates a Ref synchronously without wrapping in Effect.
-Use this only when you're sure about the safety of immediate creation.
+**When to use**
+
+Use this when you need immediate synchronous construction and can guarantee
+that creating the `Ref` outside of `Effect` is safe.
+
+**Gotchas**
+
+Prefer `Ref.make` for Effect-wrapped creation in Effect programs.
 
 **Example** (Creating a ref unsafely)
 
@@ -30,6 +36,6 @@ console.log(value) // 0
 declare const makeUnsafe: <A>(value: A) => Ref<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Ref.ts#L151)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Ref.ts#L158)
 
 Since v4.0.0

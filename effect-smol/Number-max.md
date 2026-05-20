@@ -20,6 +20,6 @@ assert.deepStrictEqual(Number.max(2, 3), 3)
 declare const max: { (that: number): (self: number) => number; (self: number, that: number): number; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Number.ts#L424)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Number.ts#L420)
 
 Since v2.0.0

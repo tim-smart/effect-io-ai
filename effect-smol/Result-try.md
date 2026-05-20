@@ -5,6 +5,8 @@ Module: `Result`<br />
 
 Wraps a synchronous computation that may throw into a `Result`.
 
+**Details**
+
 - If the function returns normally, the result is `Success<A>`
 - If the function throws, the exception is caught and becomes `Failure<E>`
 - With a single function argument, the error type is `unknown`
@@ -38,6 +40,6 @@ console.log(Result.isFailure(err))
 declare const try: { <A, E>(options: { readonly try: LazyArg<A>; readonly catch: (error: unknown) => E; }): Result<A, E>; <A>(evaluate: LazyArg<A>): Result<A, unknown>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L513)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L539)
 
 Since v2.0.0

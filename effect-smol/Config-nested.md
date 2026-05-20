@@ -5,10 +5,13 @@ Module: `Config`<br />
 
 Scopes a config under a named prefix.
 
-When to use:
+**When to use**
+
 - Grouping related config keys under a common namespace (e.g.
   `"database"`, `"redis"`).
 - Building reusable config fragments that callers nest at different paths.
+
+**Details**
 
 The prefix is prepended to every key the inner config reads. With
 `fromUnknown` this means an extra object level; with `fromEnv` it means
@@ -58,6 +61,6 @@ const provider = ConfigProvider.fromEnv({
 declare const nested: { (name: string): <A>(self: Config<A>) => Config<A>; <A>(self: Config<A>, name: string): Config<A>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Config.ts#L1298)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Config.ts#L1383)
 
 Since v2.0.0

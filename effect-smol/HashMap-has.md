@@ -26,6 +26,6 @@ console.log(hasB) // true
 declare const has: { <K1 extends K, K>(key: K1): <K, V>(self: HashMap<K, V>) => boolean; <K1 extends K, K, V>(self: HashMap<K, V>, key: K1): boolean; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashMap.ts#L495)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashMap.ts#L500)
 
 Since v2.0.0

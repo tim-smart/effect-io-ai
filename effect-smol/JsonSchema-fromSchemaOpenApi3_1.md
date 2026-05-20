@@ -5,10 +5,15 @@ Module: `JsonSchema`<br />
 
 Parses a raw OpenAPI 3.1 JSON Schema into a `Document<"draft-2020-12">`.
 
-- Use when consuming schemas from an OpenAPI 3.1 specification.
-- Rewrites `#/components/schemas/...` refs to `#/$defs/...`.
-- Delegates to `fromSchemaDraft2020_12` after rewriting refs.
-- Does not mutate the input. Allocates a new `Document`.
+**When to use**
+
+Use this when consuming schemas from an OpenAPI 3.1 specification.
+
+**Details**
+
+This rewrites `#/components/schemas/...` refs to `#/$defs/...`, then delegates
+to `fromSchemaDraft2020_12`. It does not mutate the input and allocates
+a new `Document`.
 
 **Example** (Parsing an OpenAPI 3.1 schema)
 
@@ -38,6 +43,6 @@ console.log(doc.schema.properties) // { user: { $ref: "#/$defs/User" } }
 declare const fromSchemaOpenApi3_1: (js: JsonSchema) => Document<"draft-2020-12">
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/JsonSchema.ts#L435)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/JsonSchema.ts#L459)
 
 Since v4.0.0

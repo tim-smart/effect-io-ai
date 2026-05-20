@@ -3,9 +3,8 @@ Module: `McpSchema`<br />
 
 ## McpSchema.InvalidRequest
 
-MCP/JSON-RPC error for a request object that is not valid.
-
-This error uses the standard invalid request code `-32600`.
+MCP/JSON-RPC error for a request object that is not valid. This error uses
+the standard invalid request code `-32600`.
 
 **Signature**
 
@@ -13,6 +12,6 @@ This error uses the standard invalid request code `-32600`.
 declare class InvalidRequest
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L499)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L520)
 
 Since v4.0.0

@@ -5,6 +5,8 @@ Module: `McpSchema`<br />
 
 Schema for optional MCP notification metadata.
 
+**Details**
+
 The `_meta` field is reserved for protocol, extension, or implementation
 metadata attached to a notification.
 
@@ -14,6 +16,6 @@ metadata attached to a notification.
 declare class NotificationMeta
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L194)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L206)
 
 Since v4.0.0

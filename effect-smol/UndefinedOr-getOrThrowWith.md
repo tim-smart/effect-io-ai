@@ -12,6 +12,6 @@ when the input is `undefined`.
 declare const getOrThrowWith: { (onUndefined: () => unknown): <A>(self: A | undefined) => A; <A>(self: A | undefined, onUndefined: () => unknown): A; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/UndefinedOr.ts#L79)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/UndefinedOr.ts#L77)
 
 Since v4.0.0

@@ -5,6 +5,8 @@ Module: `Cause`<br />
 
 An error indicating that an operation exceeded its time limit.
 
+**Details**
+
 Produced by `Effect.timeout` and related APIs. Implements
 `YieldableError`.
 
@@ -31,6 +33,6 @@ export interface TimeoutError extends YieldableError {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L1326)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L1390)
 
 Since v4.0.0

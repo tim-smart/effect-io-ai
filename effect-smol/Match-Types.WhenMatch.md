@@ -5,6 +5,8 @@ Module: `Match`<br />
 
 Computes the matched type when a pattern P is applied to type R.
 
+**Details**
+
 This utility type determines what type a value will have after successfully
 matching against a pattern. It handles refinements, predicates, and complex
 object patterns to provide accurate type narrowing.
@@ -44,6 +46,6 @@ type WhenMatch<R, P> = [0] extends [1 & R] ? ResolvePred<P> :
       : ExtractMatch<R, P>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L1886)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L1934)
 
 Since v4.0.0

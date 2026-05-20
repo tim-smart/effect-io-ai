@@ -6,10 +6,12 @@ Module: `SchemaTransformation`<br />
 A string-to-string transformation that uppercases on decode.
 Encode is passthrough.
 
-When to use this:
+**When to use**
+
 - Normalizing strings to uppercase (e.g. country codes).
 
-Behavior:
+**Details**
+
 - Decode: applies `String.prototype.toUpperCase()`.
 - Encode: passthrough.
 - Not round-trippable if the original had lowercase characters.
@@ -24,7 +26,8 @@ const Uppered = Schema.String.pipe(
 )
 ```
 
-See also:
+**See**
+
 - `toLowerCase`
 - `trim`
 
@@ -34,6 +37,6 @@ See also:
 declare const toUpperCase: () => Transformation<string, string>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L597)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L608)
 
 Since v4.0.0

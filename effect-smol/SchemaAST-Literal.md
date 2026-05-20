@@ -6,6 +6,8 @@ Module: `SchemaAST`<br />
 AST node matching an exact primitive value (string, number, boolean, or
 bigint).
 
+**Details**
+
 Parsing succeeds only when the input is strictly equal (`===`) to the
 stored `literal`. Numeric literals must be finite — `Infinity`, `-Infinity`,
 and `NaN` are rejected at construction time.
@@ -36,6 +38,6 @@ declare class Literal { constructor(
   ) }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L1085)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L1111)
 
 Since v3.10.0

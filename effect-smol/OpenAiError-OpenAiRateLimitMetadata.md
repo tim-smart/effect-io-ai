@@ -5,6 +5,8 @@ Module: `OpenAiError`<br />
 
 OpenAI-specific rate limit metadata fields.
 
+**Details**
+
 Extends base error metadata with rate limit specific information from
 OpenAI's rate limit headers.
 
@@ -31,6 +33,6 @@ type OpenAiRateLimitMetadata = OpenAiErrorMetadata & {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/OpenAiError.ts#L48)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/OpenAiError.ts#L50)
 
 Since v4.0.0

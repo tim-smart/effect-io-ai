@@ -5,6 +5,8 @@ Module: `SchemaAST`<br />
 
 A composite validation check grouping multiple `Check` values.
 
+**Details**
+
 Created by calling `.and()` on a `Filter` or another `FilterGroup`.
 All inner checks are run; failures from aborted filters still stop
 evaluation.
@@ -23,6 +25,6 @@ declare class FilterGroup<E> { constructor(
   ) }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L2569)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L2614)
 
 Since v4.0.0

@@ -13,6 +13,6 @@ yield checks. When set to `true`, the fiber run loop won't call
 declare const PreventSchedulerYield: Context.Reference<boolean>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Scheduler.ts#L240)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Scheduler.ts#L243)
 
 Since v4.0.0

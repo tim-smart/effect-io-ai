@@ -6,6 +6,8 @@ Module: `Latch`<br />
 Synchronously closes the latch so future `await` and `whenOpen` calls
 suspend.
 
+**Details**
+
 Returns `true` when this call changed the latch from open to closed, or
 `false` if it was already closed. This unsafe variant performs the state
 change immediately instead of returning an `Effect`.
@@ -16,6 +18,6 @@ change immediately instead of returning an `Effect`.
 declare const closeUnsafe: (self: Latch) => boolean
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Latch.ts#L220)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Latch.ts#L240)
 
 Since v4.0.0

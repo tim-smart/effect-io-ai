@@ -5,6 +5,8 @@ Module: `Schema`<br />
 
 The value a filter predicate (see `makeFilter`) may return.
 
+**Details**
+
 Each shape is normalized into an `Issue.Issue` (or `undefined` for
 success) before being attached to the parse result:
 
@@ -29,6 +31,6 @@ type FilterOutput = | undefined
   | ReadonlyArray<FilterIssue>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L5512)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L5662)
 
 Since v3.10.0

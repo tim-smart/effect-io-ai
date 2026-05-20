@@ -6,6 +6,8 @@ Module: `HttpRouter`<br />
 Creates a layer that accesses the current `HttpRouter` service and runs the
 supplied effect.
 
+**When to use**
+
 Use it to register routes or middleware with the router during layer
 construction.
 
@@ -28,6 +30,6 @@ const MyRoute = Layer.effectDiscard(Effect.gen(function*() {
 declare const use: <A, E, R>(f: (router: HttpRouter) => Effect.Effect<A, E, R>) => Layer.Layer<never, E, HttpRouter | Exclude<R, Scope.Scope>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpRouter.ts#L454)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpRouter.ts#L469)
 
 Since v4.0.0

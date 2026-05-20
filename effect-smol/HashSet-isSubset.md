@@ -26,6 +26,6 @@ console.log(HashSet.isSubset(small, small)) // true
 declare const isSubset: { <V1>(that: HashSet<V1>): <V0>(self: HashSet<V0>) => boolean; <V0, V1>(self: HashSet<V0>, that: HashSet<V1>): boolean; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashSet.ts#L476)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashSet.ts#L478)
 
 Since v2.0.0

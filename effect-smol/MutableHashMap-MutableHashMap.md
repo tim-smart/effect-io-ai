@@ -6,6 +6,8 @@ Module: `MutableHashMap`<br />
 A mutable hash map that stores key-value pairs and supports both referential
 and Effect structural equality.
 
+**Details**
+
 Operations mutate the map in place. Keys that implement `Equal` / `Hash` can
 be looked up structurally; other keys use normal JavaScript reference or
 primitive equality.
@@ -46,6 +48,6 @@ export interface MutableHashMap<out K, out V> extends Iterable<[K, V]>, Pipeable
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableHashMap.ts#L76)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableHashMap.ts#L78)
 
 Since v2.0.0

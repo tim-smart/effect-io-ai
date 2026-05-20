@@ -6,6 +6,8 @@ Module: `Queue`<br />
 Add multiple messages to the queue synchronously. Returns the remaining messages that
 were not added.
 
+**Gotchas**
+
 This is an unsafe operation that directly modifies the queue without Effect wrapping.
 
 **Example** (Offering multiple values synchronously)
@@ -33,6 +35,6 @@ const program = Effect.gen(function*() {
 declare const offerAllUnsafe: <A, E>(self: Enqueue<A, E>, messages: Iterable<A>) => Array<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Queue.ts#L734)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Queue.ts#L768)
 
 Since v4.0.0

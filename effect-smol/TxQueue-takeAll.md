@@ -5,13 +5,9 @@ Module: `TxQueue`<br />
 
 Takes all items from the queue. Blocks if the queue is empty.
 
-If the queue is already in a failed state, the error is propagated through the E-channel.
-Follows the same patterns as `take` - waits when there are no elements.
+**Details**
 
-Returns a non-empty array since it blocks until at least one item is available.
-
-**Mutation behavior**: This function mutates the original TxQueue by removing
-all items. It does not return a new TxQueue reference.
+If the queue is already in a failed state, the error is propagated through the E-channel. This follows the same patterns as `take` and waits when there are no elements. It returns a non-empty array because it blocks until at least one item is available. This function mutates the original TxQueue by removing all items. It does not return a new TxQueue reference.
 
 **Example** (Taking all queued values)
 
@@ -46,6 +42,6 @@ const errorExample = Effect.gen(function*() {
 declare const takeAll: <A, E>(self: TxDequeue<A, E>) => Effect.Effect<Arr.NonEmptyArray<A>, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxQueue.ts#L778)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxQueue.ts#L773)
 
 Since v2.0.0

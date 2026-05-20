@@ -5,6 +5,8 @@ Module: `Atom`<br />
 
 Runs synchronous atom updates as a batch.
 
+**Details**
+
 Stale nodes are rebuilt and listeners are notified after the callback completes,
 so dependent updates observe the final batched state.
 
@@ -14,6 +16,6 @@ so dependent updates observe the final batched state.
 declare const batch: (f: () => void) => void
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Atom.ts#L1997)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Atom.ts#L2020)
 
 Since v4.0.0

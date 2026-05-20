@@ -26,6 +26,6 @@ console.log(Option.isNone(pipe("hello", String.match(/x/)))) // true
 declare const match: (regExp: RegExp | string) => (self: string) => Option.Option<RegExpMatchArray>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L683)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L685)
 
 Since v2.0.0

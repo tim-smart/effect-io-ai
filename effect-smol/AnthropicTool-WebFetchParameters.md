@@ -11,6 +11,6 @@ Type of the parameters Claude supplies when invoking the Anthropic web fetch too
 type WebFetchParameters = typeof WebFetchParameters.Type
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L1562)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L1611)
 
 Since v4.0.0

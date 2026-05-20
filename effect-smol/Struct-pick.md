@@ -5,9 +5,17 @@ Module: `Struct`<br />
 
 Creates a new struct containing only the specified keys.
 
-- Use to narrow a struct down to a subset of its properties.
-- Does not mutate the input; returns a fresh object.
-- Keys not present in the struct are silently ignored.
+**When to use**
+
+Use to narrow a struct down to a subset of its properties.
+
+**Details**
+
+This does not mutate the input and returns a fresh object.
+
+**Gotchas**
+
+Keys not present in the struct are silently ignored.
 
 **Example** (Selecting specific properties)
 
@@ -30,6 +38,6 @@ console.log(nameAndAge) // { name: "Alice", age: 30 }
 declare const pick: { <S extends object, const Keys extends ReadonlyArray<keyof S>>(keys: Keys): (self: S) => Simplify<Pick<S, Keys[number]>>; <S extends object, const Keys extends ReadonlyArray<keyof S>>(self: S, keys: Keys): Simplify<Pick<S, Keys[number]>>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Struct.ts#L240)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Struct.ts#L268)
 
 Since v2.0.0

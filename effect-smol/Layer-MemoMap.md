@@ -3,9 +3,12 @@ Module: `Layer`<br />
 
 ## Layer.MemoMap
 
-A MemoMap is used to memoize layer construction and ensure sharing of layers.
+A `MemoMap` is used to memoize layer construction and ensure sharing of
+layers.
 
-The MemoMap prevents duplicate construction of the same layer instance,
+**Details**
+
+The `MemoMap` prevents duplicate construction of the same layer instance,
 enabling efficient resource sharing across layer dependencies.
 
 **Example** (Sharing layer construction with a memo map)
@@ -22,7 +25,7 @@ const program = Effect.gen(function*() {
   const memoMap = yield* Layer.makeMemoMap
   const scope = yield* Effect.scope
 
-  const dbLayer = Layer.succeed(Database)({
+  const dbLayer = Layer.succeed(Database, {
     query: Effect.fn("Database.query")((sql: string) => Effect.succeed("result"))
   })
   const context = yield* Layer.buildWithMemoMap(dbLayer, memoMap, scope)
@@ -48,6 +51,6 @@ export interface MemoMap {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L178)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L197)
 
 Since v2.0.0

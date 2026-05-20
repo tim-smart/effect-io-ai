@@ -5,6 +5,8 @@ Module: `HttpBody`<br />
 
 HTTP body variant backed by Web `FormData`.
 
+**Details**
+
 The content type and content length are left unset so the runtime can supply multipart boundaries.
 
 **Signature**
@@ -15,6 +17,6 @@ declare class FormData { constructor(
   ) }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpBody.ts#L331)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpBody.ts#L351)
 
 Since v4.0.0

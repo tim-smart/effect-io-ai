@@ -6,6 +6,8 @@ Module: `Cause`<br />
 A fiber interruption signal, optionally carrying the ID of the fiber that
 initiated the interruption.
 
+**Details**
+
 Use `isInterruptReason` to narrow a `Reason` to this type.
 
 **Example** (accessing the fiber ID)
@@ -33,6 +35,6 @@ export interface Interrupt extends Cause.ReasonProto<"Interrupt"> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L432)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L450)
 
 Since v2.0.0

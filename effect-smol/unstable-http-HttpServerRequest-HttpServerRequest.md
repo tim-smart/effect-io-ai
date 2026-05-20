@@ -5,6 +5,8 @@ Module: `HttpServerRequest`<br />
 
 Server-side representation of an incoming HTTP request.
 
+**Details**
+
 It extends `HttpIncomingMessage` with request metadata, parsed cookies,
 multipart accessors, WebSocket upgrade support, and a `modify` method for
 creating adjusted request views.
@@ -39,6 +41,6 @@ export interface HttpServerRequest extends HttpIncomingMessage.HttpIncomingMessa
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpServerRequest.ts#L72)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpServerRequest.ts#L76)
 
 Since v4.0.0

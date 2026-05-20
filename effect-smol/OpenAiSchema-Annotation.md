@@ -11,6 +11,6 @@ Citation or file-path annotation attached to output text content.
 type Annotation = typeof Annotation.Type
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiSchema.ts#L187)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiSchema.ts#L188)
 
 Since v4.0.0

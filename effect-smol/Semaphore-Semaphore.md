@@ -5,6 +5,8 @@ Module: `Semaphore`<br />
 
 A counting semaphore that coordinates concurrent access with permits.
 
+**Details**
+
 Effects can acquire permits, wait until enough permits are available,
 release permits, or run with permits that are automatically released when
 the effect exits.
@@ -95,6 +97,6 @@ export interface Semaphore {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Semaphore.ts#L55)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Semaphore.ts#L57)
 
 Since v4.0.0

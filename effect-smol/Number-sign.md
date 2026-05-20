@@ -22,6 +22,6 @@ assert.deepStrictEqual(Number.sign(5), 1)
 declare const sign: (n: number) => Ordering
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Number.ts#L446)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Number.ts#L442)
 
 Since v2.0.0

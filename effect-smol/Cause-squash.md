@@ -6,14 +6,20 @@ Module: `Cause`<br />
 Collapses a `Cause` into a single `unknown` value, picking the "most
 important" failure in this order:
 
+**Details**
+
 1. First `Fail` error (the `E` value)
 2. First `Die` defect
 3. A generic `Error("All fibers interrupted without error")` for interrupt-only causes
 4. A generic `Error("Empty cause")` for `empty`
 
 This is the function used by `Effect.runPromise` and `Effect.runSync` to
-decide what to throw. It is lossy — use `prettyErrors` or iterate
-`cause.reasons` when you need all failures.
+decide what to throw.
+
+**Gotchas**
+
+This function is lossy. Use `prettyErrors` or iterate `cause.reasons`
+when you need all failures.
 
 **Example** (squashing a cause)
 
@@ -35,6 +41,6 @@ console.log(Cause.squash(Cause.die("defect")))    // "defect"
 declare const squash: <E>(self: Cause<E>) => unknown
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L722)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L760)
 
 Since v2.0.0

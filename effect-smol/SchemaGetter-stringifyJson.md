@@ -5,10 +5,12 @@ Module: `SchemaGetter`<br />
 
 Stringifies a present value using `JSON.stringify`.
 
-Use this when:
+**When to use**
+
 - A decoded value needs to be serialized to JSON text during encoding.
 
-Behavior:
+**Details**
+
 - Skips `None` inputs.
 - On thrown stringify failures, such as circular references, fails with
   `Issue.InvalidValue`.
@@ -27,8 +29,9 @@ const stringify = SchemaGetter.stringifyJson()
 // Getter<string, unknown>
 ```
 
-See also:
-- `parseJson` — inverse operation
+**See**
+
+- `parseJson` - inverse operation
 
 **Signature**
 
@@ -36,6 +39,6 @@ See also:
 declare const stringifyJson: (options?: StringifyJsonOptions) => Getter<string, unknown>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L1077)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L1104)
 
 Since v4.0.0

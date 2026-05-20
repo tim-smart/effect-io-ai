@@ -5,6 +5,8 @@ Module: `Sink`<br />
 
 Creates a sink that publishes every consumed input element to a `PubSub`.
 
+**Details**
+
 The sink completes with `void` when the upstream stream ends.
 
 **Signature**
@@ -13,6 +15,6 @@ The sink completes with `void` when the upstream stream ends.
 declare const fromPubSub: <A>(pubsub: PubSub.PubSub<A>) => Sink<void, A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Sink.ts#L481)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Sink.ts#L505)
 
 Since v2.0.0

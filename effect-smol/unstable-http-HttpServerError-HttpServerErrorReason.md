@@ -3,9 +3,7 @@ Module: `HttpServerError`<br />
 
 ## HttpServerError.HttpServerErrorReason
 
-Reason carried by an `HttpServerError`.
-
-It is either a request-level error or a response-level error.
+Reason carried by an `HttpServerError`, either a request-level error or a response-level error.
 
 **Signature**
 
@@ -13,6 +11,6 @@ It is either a request-level error or a response-level error.
 type HttpServerErrorReason = RequestError | ResponseError
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpServerError.ts#L234)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpServerError.ts#L242)
 
 Since v4.0.0

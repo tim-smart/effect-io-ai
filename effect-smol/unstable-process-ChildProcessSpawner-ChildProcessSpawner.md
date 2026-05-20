@@ -11,6 +11,6 @@ Service tag for child process spawning.
 declare class ChildProcessSpawner
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ChildProcessSpawner.ts#L221)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ChildProcessSpawner.ts#L237)
 
 Since v4.0.0

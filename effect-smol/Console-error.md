@@ -3,10 +3,7 @@ Module: `Console`<br />
 
 ## Console.error
 
-Outputs an error message to the console.
-
-This function logs messages at the error level, typically displayed
-in red or with an error icon in most console implementations.
+Outputs an error-level message to the console, typically displayed with error styling by the active console implementation.
 
 **Example** (Writing error messages)
 
@@ -28,6 +25,6 @@ const program = Effect.gen(function*() {
 declare const error: (...args: ReadonlyArray<any>) => Effect.Effect<void>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Console.ts#L380)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Console.ts#L353)
 
 Since v2.0.0

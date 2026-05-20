@@ -5,10 +5,13 @@ Module: `Types`<br />
 
 Constructs a tuple type with exactly `N` elements of type `T`.
 
-- Use when you need a fixed-length array type.
-- Use instead of manually writing `[T, T, T, ...]` for longer tuples.
+**When to use**
 
-Behavior:
+Use when you need a fixed-length array type, especially instead of manually
+writing `[T, T, T, ...]` for longer tuples.
+
+**Details**
+
 - If `N` is a literal number, produces a tuple of that exact length.
 - If `N` is the general `number` type (non-literal), degrades to `Array<T>`.
 - Negative numbers produce `never`.
@@ -38,6 +41,6 @@ const tooMany: Types.TupleOf<3, number> = [1, 2, 3, 4]
 type TupleOf<N, T> = N extends N ? number extends N ? Array<T> : TupleOf_<T, N, []> : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Types.ts#L95)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Types.ts#L98)
 
 Since v3.3.0

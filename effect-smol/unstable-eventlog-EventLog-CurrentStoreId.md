@@ -6,6 +6,8 @@ Module: `EventLog`<br />
 Context reference for the store id used by event-log writes and remote
 replication.
 
+**Details**
+
 Defaults to the branded store id `"default"`.
 
 **Signature**
@@ -14,6 +16,6 @@ Defaults to the branded store id `"default"`.
 declare class CurrentStoreId
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventLog.ts#L410)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventLog.ts#L420)
 
 Since v4.0.0

@@ -5,6 +5,8 @@ Module: `Entity`<br />
 
 Returns `true` when the supplied value is a cluster `Entity`.
 
+**Details**
+
 The check is based on the internal entity type identifier.
 
 **Signature**
@@ -13,6 +15,6 @@ The check is based on the internal entity type identifier.
 declare const isEntity: (u: unknown) => u is Any
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Entity.ts#L251)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Entity.ts#L261)
 
 Since v4.0.0

@@ -34,6 +34,6 @@ console.log(largeValues) // [2, 3]
 declare const values: <K, V>(self: MutableHashMap<K, V>) => Iterable<V>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableHashMap.ts#L308)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableHashMap.ts#L312)
 
 Since v3.8.0

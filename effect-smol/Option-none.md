@@ -10,7 +10,7 @@ Creates an `Option` representing the absence of a value.
 - Representing a missing or uninitialized value
 - Returning "no result" from a function
 
-**Behavior**
+**Details**
 
 - Returns `Option<never>`, which is a subtype of `Option<A>` for any `A`
 - Always returns the same singleton instance
@@ -38,6 +38,6 @@ console.log(noValue)
 declare const none: <A = never>() => Option<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L288)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L292)
 
 Since v2.0.0

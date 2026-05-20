@@ -29,6 +29,6 @@ const program = Effect.gen(function*() {
 declare const empty: <V = never>() => Effect.Effect<TxHashSet<V>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashSet.ts#L195)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashSet.ts#L185)
 
 Since v2.0.0

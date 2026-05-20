@@ -12,6 +12,6 @@ protocol.
 type Any = Entity<string, Rpc.Any>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Entity.ts#L225)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Entity.ts#L231)
 
 Since v4.0.0

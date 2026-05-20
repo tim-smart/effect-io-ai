@@ -11,6 +11,6 @@ Lifecycle status shared by messages, reasoning items, and tool calls.
 type MessageStatus = typeof MessageStatus.Type
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiSchema.ts#L56)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiSchema.ts#L57)
 
 Since v4.0.0

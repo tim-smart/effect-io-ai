@@ -6,6 +6,8 @@ Module: `Schema`<br />
 This interface is used to define the annotations that can be attached to a
 schema. You can extend this interface to define your own annotations.
 
+**Details**
+
 Note that both a missing key or `undefined` is used to indicate that the
 annotation is not present.
 
@@ -48,6 +50,6 @@ export interface Annotations {
   }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L12505)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L12886)
 
 Since v3.10.0

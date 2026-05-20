@@ -11,6 +11,6 @@ Checks if a Cause contains any done errors.
 declare const isDoneCause: <E>(cause: Cause.Cause<E>) => boolean
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Pull.ts#L129)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Pull.ts#L133)
 
 Since v4.0.0

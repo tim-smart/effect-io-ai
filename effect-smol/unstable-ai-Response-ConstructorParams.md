@@ -18,6 +18,6 @@ type ConstructorParams<Part> = & Omit<Part, typeof PartTypeId | "type" | "source
   }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Response.ts#L558)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Response.ts#L559)
 
 Since v4.0.0

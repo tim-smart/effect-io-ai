@@ -6,6 +6,8 @@ Module: `Schema`<br />
 Adds key-level annotations to a schema field. This is the pipeable
 (curried) counterpart of the `.annotateKey` method.
 
+**Details**
+
 Key annotations apply to a field's position inside a `Struct` or `Tuple`
 rather than to the field's value type. They can carry a
 `messageMissingKey` to customise the error shown when the field is absent,
@@ -33,6 +35,6 @@ const schema = Schema.Struct({
 declare const annotateKey: <S extends Top>(annotations: Annotations.Key<S["Type"]>) => (self: S) => S["Rebuild"]
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L548)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L562)
 
 Since v4.0.0

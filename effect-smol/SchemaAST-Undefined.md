@@ -5,6 +5,8 @@ Module: `SchemaAST`<br />
 
 AST node matching the `undefined` value.
 
+**Details**
+
 Parsing succeeds only when the input is exactly `undefined`.
 
 **See**
@@ -18,6 +20,6 @@ Parsing succeeds only when the input is exactly `undefined`.
 declare class Undefined
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L665)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L682)
 
 Since v4.0.0

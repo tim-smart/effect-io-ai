@@ -5,6 +5,8 @@ Module: `Atom`<br />
 
 Attaches a diagnostic label to an atom.
 
+**Details**
+
 The label is used for inspection and debugging metadata and does not change the
 atom's read or write behavior.
 
@@ -14,6 +16,6 @@ atom's read or write behavior.
 declare const withLabel: { (name: string): <A extends Atom<any>>(self: A) => A; <A extends Atom<any>>(self: A, name: string): A; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Atom.ts#L1513)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Atom.ts#L1518)
 
 Since v4.0.0

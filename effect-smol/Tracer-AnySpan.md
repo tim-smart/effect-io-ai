@@ -30,6 +30,6 @@ const externalSpan = Tracer.externalSpan({
 type AnySpan = Span | ExternalSpan
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tracer.ts#L158)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tracer.ts#L155)
 
 Since v2.0.0

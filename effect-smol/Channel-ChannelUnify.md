@@ -5,6 +5,8 @@ Module: `Channel`<br />
 
 Type-level unification support for `Channel` values.
 
+**Details**
+
 This preserves all `Channel` type parameters when `Unify` normalizes unions
 or generic return types that include channels. Users normally do not need to
 reference this interface directly.
@@ -20,6 +22,6 @@ export interface ChannelUnify<A extends { [Unify.typeSymbol]?: any }> extends Ef
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L207)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L211)
 
 Since v2.0.0

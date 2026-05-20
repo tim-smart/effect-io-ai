@@ -7,6 +7,7 @@ Schema type returned by `Schema.Struct` for an object with a fixed set of
 schema-defined fields.
 
 **Details**
+
 The `fields` property exposes the original field map for reuse, and
 `mapFields` creates a new struct schema by transforming that field map.
 
@@ -50,7 +51,9 @@ export interface Struct<Fields extends Struct.Fields> extends
   /**
    * Returns a new struct with the fields modified by the provided function.
    *
-   * **Options**
+   * **Details**
+   *
+   * Options:
    *
    * - `unsafePreserveChecks` - if `true`, keep any `.check(...)` constraints
    *   that were attached to the original union. Defaults to `false`.
@@ -70,6 +73,6 @@ export interface Struct<Fields extends Struct.Fields> extends
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L2585)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L2643)
 
 Since v3.10.0

@@ -7,6 +7,8 @@ The `Effect` interface defines a value that lazily describes a workflow or
 job. The workflow requires some context `R`, and may fail with an error of
 type `E`, or succeed with a value of type `A`.
 
+**Details**
+
 `Effect` values model resourceful interaction with the outside world,
 including synchronous, asynchronous, concurrent, and parallel interaction.
 They use a fiber-based concurrency model, with built-in support for
@@ -28,6 +30,6 @@ export interface Effect<out A, out E = never, out R = never> extends Pipeable, I
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L169)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L171)
 
 Since v2.0.0

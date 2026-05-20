@@ -5,6 +5,8 @@ Module: `ErrorReporter`<br />
 
 Creates an `ErrorReporter` from a callback.
 
+**Details**
+
 The returned reporter automatically deduplicates causes and individual
 errors (the same object is never reported twice), skips interruptions,
 and resolves the `ignore`, `severity`, and `attributes` annotations on
@@ -29,6 +31,6 @@ const consoleReporter = ErrorReporter.make(
 declare const make: (report: (options: { readonly cause: Cause.Cause<unknown>; readonly error: Error; readonly attributes: ReadonlyRecord<string, unknown>; readonly severity: Severity; readonly fiber: Fiber.Fiber<unknown, unknown>; readonly timestamp: bigint; }) => void) => ErrorReporter
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ErrorReporter.ts#L126)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ErrorReporter.ts#L130)
 
 Since v4.0.0

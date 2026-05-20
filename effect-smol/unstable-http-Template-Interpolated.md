@@ -5,6 +5,8 @@ Module: `Template`<br />
 
 Value accepted by the string template constructor.
 
+**Details**
+
 Interpolations can be primitive values, optional primitive values, or effects
 that produce primitive values.
 
@@ -16,6 +18,6 @@ type Interpolated = | Primitive
   | Effect.Effect<Primitive, any, any>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Template.ts#L52)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Template.ts#L56)
 
 Since v4.0.0

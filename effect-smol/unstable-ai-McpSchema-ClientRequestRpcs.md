@@ -5,6 +5,8 @@ Module: `McpSchema`<br />
 
 RPC group for requests that MCP clients send to the server.
 
+**Details**
+
 The group includes initialization, resource, prompt, tool, logging,
 completion, and ping requests, and installs `McpServerClientMiddleware` for
 handlers.
@@ -15,6 +17,6 @@ handlers.
 declare class ClientRequestRpcs
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L2131)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L2181)
 
 Since v4.0.0

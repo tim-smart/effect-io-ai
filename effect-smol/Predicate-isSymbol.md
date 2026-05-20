@@ -5,10 +5,12 @@ Module: `Predicate`<br />
 
 Checks whether a value is a `symbol`.
 
-When to use:
+**When to use**
+
 - You need to guard an `unknown` value as a symbol.
 
-Behavior:
+**Details**
+
 - Pure; does not mutate input.
 - Uses `typeof input === "symbol"`.
 
@@ -24,7 +26,9 @@ if (Predicate.isSymbol(data)) {
 }
 ```
 
-See also: `isPropertyKey`
+**See**
+
+- `isPropertyKey`
 
 **Signature**
 
@@ -32,6 +36,6 @@ See also: `isPropertyKey`
 declare const isSymbol: (input: unknown) => input is symbol
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L668)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L709)
 
 Since v2.0.0

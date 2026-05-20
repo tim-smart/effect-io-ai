@@ -6,6 +6,8 @@ Module: `EventGroup`<br />
 Typed collection of event definitions that represents a portion of an event log
 domain.
 
+**When to use**
+
 Build groups from `empty.add(...)`, then provide implementations for the events
 with `EventLog.group`.
 
@@ -41,6 +43,6 @@ export interface EventGroup<
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventGroup.ts#L59)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventGroup.ts#L61)
 
 Since v4.0.0

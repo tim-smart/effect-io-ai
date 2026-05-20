@@ -11,6 +11,6 @@ A `Reducer` for reducing `number`s by keeping the maximum value.
 declare const ReducerMax: Reducer.Reducer<number>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Number.ts#L650)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Number.ts#L644)
 
 Since v4.0.0

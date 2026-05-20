@@ -5,6 +5,8 @@ Module: `BigDecimal`<br />
 
 Returns the remainder left over when one operand is divided by a second operand.
 
+**Details**
+
 If the divisor is `0`, the result will be `Option.none()`.
 
 **Example** (Computing remainders safely)
@@ -42,6 +44,6 @@ assert.deepStrictEqual(
 declare const remainder: { (divisor: BigDecimal): (self: BigDecimal) => Option.Option<BigDecimal>; (self: BigDecimal, divisor: BigDecimal): Option.Option<BigDecimal>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigDecimal.ts#L962)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigDecimal.ts#L973)
 
 Since v2.0.0

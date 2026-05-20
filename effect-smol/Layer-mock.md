@@ -4,8 +4,16 @@ Module: `Layer`<br />
 ## Layer.mock
 
 Creates a mock layer for testing purposes. You can provide a partial
-implementation of the service, and any methods not provided will
-throw an unimplemented defect when called.
+implementation of the service. Any missing members that are `Effect`s,
+`Stream`s, `Channel`s, or functions returning them will fail with an
+unimplemented defect when used.
+
+**Details**
+
+Missing members are represented by a value that can be used as an `Effect`,
+`Stream`, `Channel`, or as a function returning an `Effect`. This lets the
+mock preserve the shape of common service methods while still failing loudly
+when an unimplemented member is exercised.
 
 **Example** (Mocking services for tests)
 
@@ -52,6 +60,6 @@ const testProgram = Effect.gen(function*() {
 declare const mock: { <I, S extends object>(service: Context.Key<I, S>): (implementation: PartialEffectful<S>) => Layer<I>; <I, S extends object>(service: Context.Key<I, S>, implementation: Types.NoInfer<PartialEffectful<S>>): Layer<I>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L1984)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L2182)
 
 Since v3.17.0

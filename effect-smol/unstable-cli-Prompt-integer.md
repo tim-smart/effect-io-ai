@@ -5,6 +5,8 @@ Module: `Prompt`<br />
 
 Creates an integer prompt.
 
+**Details**
+
 The prompt supports minimum and maximum bounds, keyboard step sizes, and
 additional validation before submission.
 
@@ -14,6 +16,6 @@ additional validation before submission.
 declare const integer: (options: IntegerOptions) => Prompt<number>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L925)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L924)
 
 Since v4.0.0

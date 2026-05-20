@@ -5,10 +5,11 @@ Module: `BigDecimal`<br />
 
 Provides a division operation on `BigDecimal`s.
 
-If the dividend is not a multiple of the divisor, the result will be a `BigDecimal` value
-with up to the default division precision.
+**Details**
 
-If the divisor is `0`, the result will be `Option.none()`.
+If the dividend is not a multiple of the divisor, the result will be a `BigDecimal` value
+with up to the default division precision. If the divisor is `0`, the result
+will be `Option.none()`.
 
 **Example** (Dividing decimals safely)
 
@@ -47,6 +48,6 @@ console.log(
 declare const divide: { (that: BigDecimal): (self: BigDecimal) => Option.Option<BigDecimal>; (self: BigDecimal, that: BigDecimal): Option.Option<BigDecimal>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigDecimal.ts#L524)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigDecimal.ts#L527)
 
 Since v2.0.0

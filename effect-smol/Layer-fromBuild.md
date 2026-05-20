@@ -3,7 +3,10 @@ Module: `Layer`<br />
 
 ## Layer.fromBuild
 
-Constructs a Layer from a function that uses a `MemoMap` and `Scope` to build the layer.
+Constructs a `Layer` from a function that uses a `MemoMap` and `Scope` to
+build the layer.
+
+**Details**
 
 The function receives a `MemoMap` for memoization and a `Scope` for resource management.
 A child scope is created, and if the build fails, the child scope is closed.
@@ -32,6 +35,6 @@ const databaseLayer = Layer.fromBuild(() =>
 declare const fromBuild: <ROut, E, RIn>(build: (memoMap: MemoMap, scope: Scope.Scope) => Effect<Context.Context<ROut>, E, RIn>) => Layer<ROut, E, RIn>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L283)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L305)
 
 Since v4.0.0

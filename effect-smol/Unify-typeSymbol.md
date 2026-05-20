@@ -5,6 +5,8 @@ Module: `Unify`<br />
 
 The type of the typeSymbol.
 
+**Details**
+
 This type represents the unique symbol used for storing type information
 in types that support unification. It's used in type-level operations
 to access and manipulate type information.
@@ -15,6 +17,6 @@ to access and manipulate type information.
 type typeSymbol = typeof typeSymbol
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Unify.ts#L64)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Unify.ts#L72)
 
 Since v2.0.0

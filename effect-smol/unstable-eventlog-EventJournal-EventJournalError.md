@@ -5,6 +5,8 @@ Module: `EventJournal`<br />
 
 Error raised by event journal operations.
 
+**Details**
+
 The error records the journal method that failed and the underlying cause.
 
 **Signature**
@@ -13,6 +15,6 @@ The error records the journal method that failed and the underlying cause.
 declare class EventJournalError
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventJournal.ts#L121)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventJournal.ts#L127)
 
 Since v4.0.0

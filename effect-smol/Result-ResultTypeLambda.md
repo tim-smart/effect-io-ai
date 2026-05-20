@@ -5,6 +5,8 @@ Module: `Result`<br />
 
 Higher-kinded type representation for `Result`.
 
+**Details**
+
 Used internally to integrate `Result` with generic type-class utilities
 (e.g., `map`, `flatMap` abstractions). You typically do not need to
 reference this directly.
@@ -17,6 +19,6 @@ export interface ResultTypeLambda extends TypeLambda {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L252)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L264)
 
 Since v4.0.0

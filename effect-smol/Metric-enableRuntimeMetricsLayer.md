@@ -6,6 +6,8 @@ Module: `Metric`<br />
 A Layer that enables automatic collection of fiber runtime metrics across
 an entire Effect application.
 
+**When to use**
+
 Unlike the function version which wraps individual Effects, this layer provides
 runtime metrics collection to all Effects in the application context. This is
 the recommended approach for production applications that need comprehensive
@@ -103,6 +105,6 @@ const programWithDirectMetrics = application.pipe(
 declare const enableRuntimeMetricsLayer: Layer.Layer<never, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Metric.ts#L3787)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Metric.ts#L3840)
 
 Since v4.0.0

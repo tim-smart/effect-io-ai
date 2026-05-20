@@ -5,6 +5,8 @@ Module: `CliError`<br />
 
 Type of CLI errors that are not `ShowHelp`.
 
+**Details**
+
 These errors can be accumulated and attached to `ShowHelp.errors` when the
 runner should display help along with the underlying parse or validation
 failures.
@@ -15,6 +17,6 @@ failures.
 type NonShowHelpErrors = typeof NonShowHelpErrors.Type
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/CliError.ts#L533)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/CliError.ts#L537)
 
 Since v4.0.0

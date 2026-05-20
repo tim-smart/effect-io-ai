@@ -5,6 +5,8 @@ Module: `Redacted`<br />
 
 Creates a `Redacted` wrapper for a sensitive value.
 
+**Details**
+
 The wrapper redacts string, JSON, and inspection output to reduce accidental
 disclosure. The original value remains retrievable with `Redacted.value`
 until the wrapper is wiped or becomes unreachable.
@@ -23,6 +25,6 @@ const API_KEY = Redacted.make("1234567890")
 declare const make: <T>(value: T, options?: { readonly label?: string | undefined; }) => Redacted<T>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Redacted.ts#L146)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Redacted.ts#L154)
 
 Since v3.3.0

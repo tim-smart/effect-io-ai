@@ -5,6 +5,8 @@ Module: `Match`<br />
 
 Matches instances of a given class.
 
+**Details**
+
 This predicate checks if a value is an instance of the specified constructor,
 providing type-safe matching for class instances and built-in objects.
 
@@ -52,6 +54,6 @@ console.log(handleValue(new Map([["count", 1]]))) // "Map with 1 entries"
 declare const instanceOf: <A extends abstract new (...args: any) => any>(constructor: A) => SafeRefinement<InstanceType<A>, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L1576)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L1616)
 
 Since v4.0.0

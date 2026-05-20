@@ -5,12 +5,14 @@ Module: `Data`<br />
 
 The full constructor-object type returned by `taggedEnum`.
 
+**Details**
+
 Includes:
 - A constructor function for each variant (keyed by tag name)
 - `$is(tag)` — returns a type-guard for the given variant
 - `$match` — exhaustive pattern matching (data-last or data-first)
 
-**Example** (using the constructor object)
+**Example** (Using the constructor object)
 
 ```ts
 import { Data } from "effect"
@@ -77,6 +79,6 @@ type Constructor<A> = Types.Simplify<
   >
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Data.ts#L425)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Data.ts#L441)
 
 Since v3.1.0

@@ -5,9 +5,11 @@ Module: `SchemaRepresentation`<br />
 
 An object/struct type with named properties and optional index signatures.
 
-- `propertySignatures` are the explicitly named fields.
-- `indexSignatures` define catch-all key/value types (like `Record<string, T>`).
-- `checks` holds object-specific constraints (minProperties, maxProperties, etc.).
+**Details**
+
+`propertySignatures` are the explicitly named fields. `indexSignatures`
+define catch-all key/value types, such as `Record<string, T>`. `checks`
+holds object-specific constraints, such as minProperties and maxProperties.
 
 **See**
 
@@ -27,6 +29,6 @@ export interface Objects {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaRepresentation.ts#L419)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaRepresentation.ts#L442)
 
 Since v4.0.0

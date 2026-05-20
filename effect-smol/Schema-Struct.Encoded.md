@@ -6,6 +6,7 @@ Module: `Schema`<br />
 Computes the encoded object type for a struct field map.
 
 **Details**
+
 Field schemas contribute their `Encoded` type. Encoded-side optionality and
 mutability modifiers determine whether properties are optional or writable in
 the encoded shape.
@@ -16,6 +17,6 @@ the encoded shape.
 type { [K in keyof Encoded_<F, EncodedOptionalKeys<F>, EncodedMutableKeys<F>>]: Encoded_<F, EncodedOptionalKeys<F>, EncodedMutableKeys<F>>[K]; } = Simplify<Encoded_<F>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L2529)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L2585)
 
 Since v3.10.0

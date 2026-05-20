@@ -5,6 +5,8 @@ Module: `Match`<br />
 
 Matches values of type `bigint`.
 
+**Details**
+
 This predicate refines unknown values to bigints, allowing pattern matching
 on bigint types. BigInts are used for representing integers with arbitrary precision.
 
@@ -36,6 +38,6 @@ console.log(processLargeNumber("123")) // "Not a numeric type"
 declare const bigint: Predicate.Refinement<unknown, bigint>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L1420)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L1452)
 
 Since v4.0.0

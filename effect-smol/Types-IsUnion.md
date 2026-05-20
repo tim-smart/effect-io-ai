@@ -5,12 +5,12 @@ Module: `Types`<br />
 
 Checks whether a type `T` is a union type.
 
-- Returns `true` if `T` is a union of two or more members.
-- Returns `false` for single types, `never`, or `any`.
+**Details**
 
-Behavior:
 - Compares `[T]` against `[UnionToIntersection<T>]`. If they differ, `T`
   must be a union.
+- Returns `true` if `T` is a union of two or more members.
+- Returns `false` for single types, `never`, or `any`.
 
 **Example** (Detecting union types)
 
@@ -31,6 +31,6 @@ type No = Types.IsUnion<string> // false
 type IsUnion<T> = [T] extends [UnionToIntersection<T>] ? false : true
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Types.ts#L814)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Types.ts#L914)
 
 Since v4.0.0

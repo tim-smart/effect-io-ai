@@ -5,6 +5,8 @@ Module: `HttpServerResponse`<br />
 
 Creates a JSON HTTP response synchronously.
 
+**Gotchas**
+
 Unlike `json`, serialization errors from `JSON.stringify` are not captured in
 `Effect`.
 
@@ -14,6 +16,6 @@ Unlike `json`, serialization errors from `JSON.stringify` are not captured in
 declare const jsonUnsafe: (body: unknown, options?: Options.WithContentType | undefined) => HttpServerResponse
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpServerResponse.ts#L343)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpServerResponse.ts#L359)
 
 Since v4.0.0

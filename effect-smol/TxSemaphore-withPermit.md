@@ -7,8 +7,10 @@ Executes an effect with a single permit from the semaphore. The permit is
 automatically acquired before execution and released afterwards, even if the
 effect fails or is interrupted.
 
-**Note**: The permit acquisition and release operations use atomic semantics
-to ensure proper resource management with Effect's scoped operations.
+**Details**
+
+The permit acquisition and release operations use atomic semantics to ensure
+proper resource management with Effect's scoped operations.
 
 **Example** (Running an effect with a permit)
 
@@ -40,6 +42,6 @@ const program = Effect.gen(function*() {
 declare const withPermit: { (self: TxSemaphore): <A, E, R>(effect: Effect.Effect<A, E, R>) => Effect.Effect<A, E, R>; <A, E, R>(self: TxSemaphore, effect: Effect.Effect<A, E, R>): Effect.Effect<A, E, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxSemaphore.ts#L441)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxSemaphore.ts#L456)
 
 Since v2.0.0

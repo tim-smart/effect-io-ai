@@ -11,7 +11,7 @@ fail-fast semantics.
 - Wrapping an existing `Reducer` to work with `Option` values
 - Reductions where any `None` should abort the entire result
 
-**Behavior**
+**Details**
 
 - Initial value is `Some(reducer.initialValue)`
 - Combines only when both operands are `Some`
@@ -41,6 +41,6 @@ console.log(reducer.combineAll([Option.some(1), Option.none()]))
 declare const makeReducerFailFast: <A>(reducer: Reducer.Reducer<A>) => Reducer.Reducer<Option<A>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L2660)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L2666)
 
 Since v4.0.0

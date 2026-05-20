@@ -5,10 +5,12 @@ Module: `Predicate`<br />
 
 Checks whether a value is a `function`.
 
-When to use:
+**When to use**
+
 - You need to guard an `unknown` value as callable.
 
-Behavior:
+**Details**
+
 - Pure; does not mutate input.
 - Uses `typeof input === "function"`.
 
@@ -24,7 +26,9 @@ if (Predicate.isFunction(data)) {
 }
 ```
 
-See also: `isObjectKeyword`
+**See**
+
+- `isObjectKeyword`
 
 **Signature**
 
@@ -32,6 +36,6 @@ See also: `isObjectKeyword`
 declare const isFunction: (input: unknown) => input is Function
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L731)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L776)
 
 Since v2.0.0

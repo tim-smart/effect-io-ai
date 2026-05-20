@@ -5,6 +5,8 @@ Module: `Hash`<br />
 
 Computes a hash value for a number.
 
+**Details**
+
 This function creates a hash value for numeric inputs, handling special cases
 like NaN, Infinity, and -Infinity with distinct hash values. It uses bitwise operations to ensure good distribution
 of hash values across different numeric inputs.
@@ -29,6 +31,6 @@ console.log(Hash.number(100) === Hash.number(100)) // true
 declare const number: (n: number) => number
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Hash.ts#L281)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Hash.ts#L293)
 
 Since v2.0.0

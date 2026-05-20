@@ -5,6 +5,8 @@ Module: `DateTime`<br />
 
 Type-level helper used by constructors to preserve a zoned input.
 
+**Details**
+
 When the input type is `DateTime.Zoned`, the result type is
 `DateTime.Zoned`; otherwise the result type is `DateTime.Utc`.
 
@@ -14,6 +16,6 @@ When the input type is `DateTime.Zoned`, the result type is
 type PreserveZone<A> = A extends Zoned ? Zoned : Utc
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L142)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L150)
 
 Since v3.6.0

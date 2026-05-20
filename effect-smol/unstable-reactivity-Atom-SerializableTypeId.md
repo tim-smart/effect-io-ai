@@ -11,6 +11,6 @@ The literal type of the serializable atom marker.
 type SerializableTypeId = "~effect-atom/atom/Atom/Serializable"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Atom.ts#L2348)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Atom.ts#L2389)
 
 Since v4.0.0

@@ -5,6 +5,8 @@ Module: `DevToolsSchema`<br />
 
 Type of a devtools summary metric snapshot.
 
+**Details**
+
 The state contains quantile values plus the total count, minimum, maximum,
 and sum.
 
@@ -14,6 +16,6 @@ and sum.
 type Summary = Schema.Schema.Type<typeof Summary>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DevToolsSchema.ts#L418)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DevToolsSchema.ts#L436)
 
 Since v4.0.0

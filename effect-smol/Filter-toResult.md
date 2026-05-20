@@ -12,6 +12,6 @@ Converts a `Filter` into a function that returns the underlying
 declare const toResult: <A, Pass, Fail>(self: Filter<A, Pass, Fail>) => (input: A) => Result.Result<Pass, Fail>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Filter.ts#L677)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Filter.ts#L693)
 
 Since v4.0.0

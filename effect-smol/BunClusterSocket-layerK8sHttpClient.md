@@ -11,6 +11,6 @@ Layer that provides `K8sHttpClient`, using the Kubernetes service-account CA cer
 declare const layerK8sHttpClient: Layer.Layer<K8sHttpClient.K8sHttpClient, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunClusterSocket.ts#L155)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunClusterSocket.ts#L161)
 
 Since v4.0.0

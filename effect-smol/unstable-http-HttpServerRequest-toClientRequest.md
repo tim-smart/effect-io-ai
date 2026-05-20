@@ -5,6 +5,8 @@ Module: `HttpServerRequest`<br />
 
 Converts an `HttpServerRequest` into an `HttpClientRequest`.
 
+**Details**
+
 The converted request preserves the method, headers, body stream, and a URL
 derived from the request when possible.
 
@@ -14,6 +16,6 @@ derived from the request when possible.
 declare const toClientRequest: (request: HttpServerRequest) => HttpClientRequest.HttpClientRequest
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpServerRequest.ts#L393)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpServerRequest.ts#L417)
 
 Since v4.0.0

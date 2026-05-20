@@ -7,6 +7,7 @@ Computes the encoded object type for a record schema from the key and value
 schemas' encoded types.
 
 **Details**
+
 Encoded-side optionality and mutability on the value schema determine whether
 the encoded record properties are optional or writable.
 
@@ -21,6 +22,6 @@ type Encoded<Key, Value> = Value extends
     : { readonly [P in Key["Encoded"]]: Value["Encoded"] }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L2932)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L3003)
 
 Since v3.10.0

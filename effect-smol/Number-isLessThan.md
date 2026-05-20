@@ -22,6 +22,6 @@ assert.deepStrictEqual(Number.isLessThan(4, 3), false)
 declare const isLessThan: { (that: number): (self: number) => boolean; (self: number, that: number): boolean; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Number.ts#L254)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Number.ts#L248)
 
 Since v4.0.0

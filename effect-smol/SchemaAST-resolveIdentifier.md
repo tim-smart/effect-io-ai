@@ -5,6 +5,8 @@ Module: `SchemaAST`<br />
 
 Returns the `identifier` annotation from the AST node, if set.
 
+**Details**
+
 The identifier is typically set by `Schema.annotations({ identifier: "..." })`
 and is used for error messages and schema identification.
 
@@ -19,6 +21,6 @@ and is used for error messages and schema identification.
 declare const resolveIdentifier: (ast: AST) => string | undefined
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L3403)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L3461)
 
 Since v4.0.0

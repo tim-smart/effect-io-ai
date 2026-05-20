@@ -5,12 +5,14 @@ Module: `Order`<br />
 
 Represents a total ordering for values of type `A`.
 
-When to use this:
+**When to use**
+
 - When you need to define how values of a type should be compared
 - When implementing sorting, searching, or ordered data structures
 - When composing multiple comparison criteria
 
-Behavior:
+**Details**
+
 - Pure function: does not mutate inputs or have side effects
 - Returns `-1` if the first value is less than the second
 - Returns `0` if the values are equal according to this ordering
@@ -33,7 +35,8 @@ const person2 = { name: "Bob", age: 25 }
 console.log(byAge(person1, person2)) // 1
 ```
 
-See also:
+**See**
+
 - `make` - Create an order from a comparison function
 - `Ordering` - The result type of comparisons
 

@@ -5,17 +5,9 @@ Module: `Effect`<br />
 
 Signals that the current transaction needs to be retried.
 
+**Details**
+
 NOTE: the transaction retries on any change to transactional values (i.e. TxRef) accessed in its body.
-
-**Signature**
-
-```ts
-declare const txRetry: Effect<never, never, Transaction>
-```
-
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L13824)
-
-Since v4.0.0
 
 **Example** (Retrying transactions)
 
@@ -45,3 +37,13 @@ const program = Effect.gen(function*() {
 
 Effect.runPromise(program).catch(console.error)
 ```
+
+**Signature**
+
+```ts
+declare const txRetry: Effect<never, never, Transaction>
+```
+
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L13939)
+
+Since v4.0.0

@@ -11,6 +11,6 @@ A record of named JSON Schema definitions, keyed by definition name.
 export interface Definitions extends Record<string, JsonSchema> {}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/JsonSchema.ts#L133)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/JsonSchema.ts#L135)
 
 Since v4.0.0

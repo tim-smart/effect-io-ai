@@ -5,12 +5,9 @@ Module: `TxQueue`<br />
 
 Offers an item to the queue and returns whether it was accepted.
 
-Open unbounded queues always accept; open bounded queues retry while full;
-dropping queues return `false` when full; sliding queues evict the oldest item
-when full. Closing or done queues return `false`.
+**Details**
 
-**Mutation behavior**: This function mutates the original TxQueue by adding
-the item according to the queue's strategy. It does not return a new TxQueue reference.
+Open unbounded queues always accept; open bounded queues retry while full; dropping queues return `false` when full; sliding queues evict the oldest item when full. Closing or done queues return `false`. This function mutates the original TxQueue by adding the item according to the queue's strategy. It does not return a new TxQueue reference.
 
 **Example** (Offering a value)
 
@@ -32,6 +29,6 @@ const program = Effect.gen(function*() {
 declare const offer: { <A, E>(value: A): (self: TxEnqueue<A, E>) => Effect.Effect<boolean>; <A, E>(self: TxEnqueue<A, E>, value: A): Effect.Effect<boolean>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxQueue.ts#L542)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxQueue.ts#L545)
 
 Since v2.0.0

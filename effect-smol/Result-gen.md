@@ -5,6 +5,8 @@ Module: `Result`<br />
 
 Generator-based syntax for composing `Result` values sequentially.
 
+**Details**
+
 - Use `yield*` to unwrap a `Result` inside the generator; if any yielded
   `Result` is a `Failure`, the generator short-circuits and returns that failure
 - The return value of the generator is wrapped in `Success`
@@ -36,6 +38,6 @@ console.log(result)
 declare const gen: Gen.Gen<ResultTypeLambda>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L1405)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L1479)
 
 Since v2.0.0

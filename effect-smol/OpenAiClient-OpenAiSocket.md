@@ -11,6 +11,6 @@ Service for creating OpenAI response streams over a WebSocket connection.
 declare class OpenAiSocket
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L386)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L387)
 
 Since v4.0.0

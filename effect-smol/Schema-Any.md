@@ -15,6 +15,6 @@ Schema for the `any` type. Accepts any value without validation.
 export interface Any extends Bottom<any, any, never, never, AST.Any, Any> {}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L2196)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L2245)
 
 Since v3.10.0

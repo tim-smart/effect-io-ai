@@ -5,10 +5,12 @@ Module: `Predicate`<br />
 
 Checks whether a value is not `null` and not `undefined`.
 
-When to use:
+**When to use**
+
 - You want to filter out nullish values but keep other falsy ones.
 
-Behavior:
+**Details**
+
 - Pure; does not mutate input.
 - Uses `input != null`.
 
@@ -23,7 +25,11 @@ const present = values.filter(Predicate.isNotNullish)
 console.log(present)
 ```
 
-See also: `isNullish`, `isNotNull`, `isNotUndefined`
+**See**
+
+- `isNullish`
+- `isNotNull`
+- `isNotUndefined`
 
 **Signature**
 
@@ -31,6 +37,6 @@ See also: `isNullish`, `isNotNull`, `isNotUndefined`
 declare const isNotNullish: <A>(input: A) => input is NonNullable<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L909)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L968)
 
 Since v4.0.0

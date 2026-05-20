@@ -41,6 +41,6 @@ const MyResolver = RequestResolver.fromEffectTagged<MyRequest>()({
 declare const fromEffectTagged: <A extends Request.Any & { readonly _tag: string; }>() => <Fns extends { readonly [Tag in A["_tag"]]: [Extract<A, { readonly _tag: Tag; }>] extends [infer Req] ? Req extends Request.Request<infer ReqA, infer ReqE, infer _ReqR> ? (requests: Array<Request.Entry<Req>>) => Effect.Effect<Iterable<ReqA>, ReqE> : never : never; }>(fns: Fns) => RequestResolver<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RequestResolver.ts#L492)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RequestResolver.ts#L494)
 
 Since v2.0.0

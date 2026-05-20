@@ -5,8 +5,11 @@ Module: `Command`<br />
 
 Runs a command using the arguments supplied by the `Stdio` service.
 
-Use `runWith` when you need to execute a command with an explicit argument
-array, such as in tests.
+**When to use**
+
+Use `run` at an application entry point when arguments should come from
+`Stdio`; use `runWith` when you need an explicit argument array, such as in
+tests.
 
 **Example** (Running commands with standard input)
 
@@ -33,6 +36,6 @@ const program = Command.run(greetCommand, {
 declare const run: { (config: { readonly version: string; }): <Name extends string, Input, E, R, ContextInput>(command: Command<Name, Input, ContextInput, E, R>) => Effect.Effect<void, E | CliError.CliError, R | Environment>; <Name extends string, Input, E, R, ContextInput>(command: Command<Name, Input, ContextInput, E, R>, config: { readonly version: string; }): Effect.Effect<void, E | CliError.CliError, R | Environment>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Command.ts#L1332)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Command.ts#L1406)
 
 Since v4.0.0

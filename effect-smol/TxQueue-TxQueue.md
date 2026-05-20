@@ -38,6 +38,6 @@ export interface TxQueue<in out A, in out E = never> extends TxEnqueue<A, E>, Tx
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxQueue.ts#L241)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxQueue.ts#L243)
 
 Since v4.0.0

@@ -5,6 +5,8 @@ Module: `McpSchema`<br />
 
 Schema for MCP request metadata used by paginated requests.
 
+**Details**
+
 It includes the base request metadata fields plus an optional cursor
 indicating where the server should continue listing results.
 
@@ -14,6 +16,6 @@ indicating where the server should continue listing results.
 declare class PaginatedRequestMeta
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L229)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L245)
 
 Since v4.0.0

@@ -11,6 +11,6 @@ JSON-RPC error code for internal server errors.
 declare const INTERNAL_ERROR_CODE: -32603
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L468)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L491)
 
 Since v4.0.0

@@ -5,6 +5,8 @@ Module: `AiError`<br />
 
 Error indicating the user provided invalid input in their prompt.
 
+**Details**
+
 This error is raised when the prompt contains content that is structurally
 valid but not supported by the provider (e.g., unsupported media types,
 unsupported file formats, etc.).
@@ -29,6 +31,6 @@ console.log(error.message)
 declare class InvalidUserInputError
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AiError.ts#L1307)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AiError.ts#L1352)
 
 Since v4.0.0

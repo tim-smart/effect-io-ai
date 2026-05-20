@@ -5,7 +5,12 @@ Module: `Exit`<br />
 
 Extracts the Failure variant from an Exit for use in filter pipelines.
 
+**When to use**
+
 - Use with Filter-based composition
+
+**Details**
+
 - Returns the `Failure<never, E>` if the Exit failed, or a `Filter.fail` wrapping the Success otherwise
 
 **Example** (Filtering for failure)
@@ -30,6 +35,6 @@ const result = Exit.filterFailure(exit)
 declare const filterFailure: <A, E>(self: Exit<A, E>) => Result.Result<Failure<never, E>, Success<A>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Exit.ts#L577)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Exit.ts#L655)
 
 Since v4.0.0

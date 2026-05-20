@@ -5,8 +5,13 @@ Module: `Types`<br />
 
 Extracts a specific member of a tagged union by its `_tag` value.
 
-- Use to narrow a union down to a single variant.
-- Returns `never` if no member matches the tag.
+**When to use**
+
+Use to narrow a union down to a single variant.
+
+**Details**
+
+Returns `never` if no member matches the tag.
 
 **Example** (Extracting a variant)
 
@@ -32,6 +37,6 @@ type TimeoutError = Types.ExtractTag<MyError, "Timeout">
 type ExtractTag<E, K> = E extends { readonly _tag: infer T } ? K extends T ? E : never : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Types.ts#L208)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Types.ts#L229)
 
 Since v2.0.0

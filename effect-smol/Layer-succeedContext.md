@@ -3,11 +3,19 @@ Module: `Layer`<br />
 
 ## Layer.succeedContext
 
-Constructs a layer from the specified value, which must return one or more
-services.
+Constructs a layer that provides all services in an already available
+`Context`.
 
-This is a more general version of `succeed` that allows you to provide multiple
-services at once through a `Context`.
+**When to use**
+
+Use `succeedContext` when you already have a `Context` or need to provide
+multiple services at once. Use `succeed` when you only need to provide one
+service value.
+
+**Details**
+
+This is a more general version of `succeed` that allows you to provide
+multiple services at once through a `Context`.
 
 **Example** (Providing multiple services from a context)
 
@@ -33,12 +41,16 @@ const context = Context.make(Database, {
 const layer = Layer.succeedContext(context)
 ```
 
+**See**
+
+- `succeed` for providing a single service from a value
+
 **Signature**
 
 ```ts
 declare const succeedContext: <A>(context: Context.Context<A>) => Layer<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L753)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L775)
 
 Since v2.0.0

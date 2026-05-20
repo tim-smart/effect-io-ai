@@ -5,6 +5,8 @@ Module: `McpSchema`<br />
 
 Hints to use for model selection.
 
+**Details**
+
 Keys not declared here are currently left unspecified by the spec and are up
 to the client to interpret.
 
@@ -14,6 +16,6 @@ to the client to interpret.
 declare class ModelHint
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L1569)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L1605)
 
 Since v4.0.0

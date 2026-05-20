@@ -5,10 +5,12 @@ Module: `SchemaGetter`<br />
 
 Coerces a value to `bigint` using the global `BigInt()` constructor.
 
-Use this when:
+**When to use**
+
 - You need to convert strings, numbers, or booleans to `bigint`.
 
-Behavior:
+**Details**
+
 - Delegates to `globalThis.BigInt`.
 - Throws at runtime if the input cannot be converted (e.g. non-numeric string).
 
@@ -27,6 +29,6 @@ const toBigInt = SchemaGetter.BigInt<string>()
 declare const BigInt: <E extends string | number | bigint | boolean>() => Getter<bigint, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L807)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L828)
 
 Since v4.0.0

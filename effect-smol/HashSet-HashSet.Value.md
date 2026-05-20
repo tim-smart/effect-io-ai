@@ -5,6 +5,8 @@ Module: `HashSet`<br />
 
 Extracts the element type from a `HashSet`.
 
+**Details**
+
 For `HashSet.HashSet<A>`, `HashSet.Value<...>` resolves to `A`.
 
 **Example** (Extracting a HashSet value type)
@@ -26,6 +28,6 @@ const processNumber = (n: NumberType) => n * 2
 type Value<T> = T extends HashSet<infer V> ? V : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashSet.ts#L129)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashSet.ts#L131)
 
 Since v4.0.0

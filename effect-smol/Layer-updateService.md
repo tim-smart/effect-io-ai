@@ -5,6 +5,11 @@ Module: `Layer`<br />
 
 Updates a service in the context with a new implementation.
 
+**When to use**
+
+Use this to adapt or extend a service's behavior during the creation of a
+layer.
+
 **Details**
 
 This function modifies the existing implementation of a service in the
@@ -12,17 +17,12 @@ context. It retrieves the current service, applies the provided
 transformation function `f`, and replaces the old service with the
 transformed one.
 
-**When to Use**
-
-This is useful for adapting or extending a service's behavior during the
-creation of a layer.
-
 **Signature**
 
 ```ts
 declare const updateService: { <I, A>(service: Context.Key<I, A>, f: (a: Types.NoInfer<A>) => A): <A1, E1, R1>(layer: Layer<A1, E1, R1>) => Layer<A1, E1, I | R1>; <A1, E1, R1, I, A>(layer: Layer<A1, E1, R1>, service: Context.Key<I, A>, f: (a: Types.NoInfer<A>) => A): Layer<A1, E1, I | R1>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L1758)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L1931)
 
 Since v3.13.0

@@ -28,6 +28,6 @@ const program = Effect.gen(function*() {
 declare const set: { <A>(value: A): (self: TxRef<A>) => Effect.Effect<void>; <A>(self: TxRef<A>, value: A): Effect.Effect<void>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxRef.ts#L243)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxRef.ts#L247)
 
 Since v2.0.0

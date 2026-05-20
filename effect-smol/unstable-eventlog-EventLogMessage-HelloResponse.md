@@ -5,6 +5,8 @@ Module: `EventLogMessage`<br />
 
 Response sent by the remote server during the authentication handshake.
 
+**Details**
+
 It contains the server remote id and a challenge that must be signed by the
 client.
 
@@ -14,6 +16,6 @@ client.
 declare class HelloResponse
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventLogMessage.ts#L103)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventLogMessage.ts#L107)
 
 Since v4.0.0

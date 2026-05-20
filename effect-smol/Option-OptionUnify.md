@@ -5,6 +5,8 @@ Module: `Option`<br />
 
 Type-level unification support for `Option` values.
 
+**Details**
+
 This is used by Effect's `Unify` machinery to preserve the contained value
 type when generic code returns or combines `Option` values. Users normally
 do not need to reference this interface directly.
@@ -17,6 +19,6 @@ export interface OptionUnify<A extends { [Unify.typeSymbol]?: any }> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L205)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L207)
 
 Since v2.0.0

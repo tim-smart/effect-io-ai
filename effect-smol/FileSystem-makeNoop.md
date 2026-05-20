@@ -5,6 +5,8 @@ Module: `FileSystem`<br />
 
 Creates a stub `FileSystem` implementation for tests.
 
+**Details**
+
 By default, `exists` returns `false`, `remove` succeeds, many file operations
 fail with `PlatformError` `NotFound`, and temporary-directory/file operations
 die as not implemented. Pass method overrides to provide the behavior needed
@@ -54,6 +56,6 @@ const testProgram = Effect.provideService(
 declare const makeNoop: (fileSystem: Partial<FileSystem>) => FileSystem
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FileSystem.ts#L875)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FileSystem.ts#L915)
 
 Since v4.0.0

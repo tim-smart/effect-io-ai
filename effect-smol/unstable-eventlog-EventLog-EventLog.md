@@ -5,6 +5,8 @@ Module: `EventLog`<br />
 
 Service for writing typed event-log events through registered handlers.
 
+**Details**
+
 `write` encodes the event payload, runs the matching handler, commits the entry
 only when the handler succeeds, and exposes access to the underlying journal
 entries and destroy operation.
@@ -15,6 +17,6 @@ entries and destroy operation.
 declare class EventLog
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventLog.ts#L56)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventLog.ts#L58)
 
 Since v4.0.0

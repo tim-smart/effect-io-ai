@@ -19,6 +19,6 @@ export interface Variadic<Kind extends ParamKind, A> extends Param<Kind, Readonl
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Param.ts#L261)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Param.ts#L267)
 
 Since v4.0.0

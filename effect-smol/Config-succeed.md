@@ -6,7 +6,8 @@ Module: `Config`<br />
 Creates a config that always succeeds with the given value, ignoring the
 provider entirely.
 
-When to use:
+**When to use**
+
 - Providing a hardcoded constant inside `orElse`.
 - Testing.
 
@@ -26,6 +27,6 @@ const host = Config.string("HOST").pipe(
 declare const succeed: <T>(value: T) => Config<T>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Config.ts#L858)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Config.ts#L909)
 
 Since v2.0.0

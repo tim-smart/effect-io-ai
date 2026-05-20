@@ -5,8 +5,10 @@ Module: `TxHashMap`<br />
 
 Transforms all values in the TxHashMap using the provided function, preserving keys.
 
-**Return behavior**: This function returns a new TxHashMap reference with the
-transformed values. The original TxHashMap is not modified.
+**Details**
+
+This function returns a new TxHashMap reference with the transformed values.
+The original TxHashMap is not modified.
 
 **Example** (Mapping values)
 
@@ -51,6 +53,6 @@ const program = Effect.gen(function*() {
 declare const map: { <A, V, K>(f: (value: V, key: K) => A): (self: TxHashMap<K, V>) => Effect.Effect<TxHashMap<K, A>>; <K, V, A>(self: TxHashMap<K, V>, f: (value: V, key: K) => A): Effect.Effect<TxHashMap<K, A>>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashMap.ts#L1387)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashMap.ts#L1406)
 
 Since v4.0.0

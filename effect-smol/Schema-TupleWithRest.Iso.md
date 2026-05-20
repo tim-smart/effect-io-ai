@@ -6,6 +6,7 @@ Module: `Schema`<br />
 Computes the iso tuple type for a `TupleWithRest`.
 
 **Details**
+
 The output starts with the fixed tuple's `Iso` elements, continues with zero
 or more values using the first rest schema's `Iso`, and includes any trailing
 rest schemas as fixed tuple positions.
@@ -22,6 +23,6 @@ type Iso<T, Rest> = Rest extends
     T
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L3469)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L3555)
 
 Since v4.0.0

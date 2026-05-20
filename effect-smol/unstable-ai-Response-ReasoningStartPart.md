@@ -3,9 +3,8 @@ Module: `Response`<br />
 
 ## Response.ReasoningStartPart
 
-Response part indicating the start of streaming reasoning content.
-
-Marks the beginning of a reasoning chunk with a unique identifier.
+Response part indicating the start of streaming reasoning content with a
+unique reasoning chunk identifier.
 
 **Signature**
 
@@ -18,6 +17,6 @@ export interface ReasoningStartPart extends BasePart<"reasoning-start", Reasonin
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Response.ts#L907)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Response.ts#L904)
 
 Since v4.0.0

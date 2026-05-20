@@ -5,10 +5,12 @@ Module: `SchemaTransformation`<br />
 
 Returns `true` if `u` is a `Transformation` instance.
 
-When to use this:
+**When to use**
+
 - Checking whether a value is already a Transformation before wrapping it.
 
-Behavior:
+**Details**
+
 - Pure predicate, no side effects.
 - Acts as a TypeScript type guard.
 
@@ -24,7 +26,8 @@ SchemaTransformation.isTransformation({ decode: null, encode: null })
 // false
 ```
 
-See also:
+**See**
+
 - `Transformation`
 - `make`
 
@@ -34,6 +37,6 @@ See also:
 declare const isTransformation: (u: unknown) => u is Transformation<any, any, unknown, unknown>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L265)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L268)
 
 Since v4.0.0

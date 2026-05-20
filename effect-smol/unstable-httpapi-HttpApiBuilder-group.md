@@ -3,12 +3,13 @@ Module: `HttpApiBuilder`<br />
 
 ## HttpApiBuilder.group
 
-Create a `Layer` that will implement all the endpoints in an `HttpApi`.
+Create a `Layer` that implements all endpoints in an `HttpApi` group.
 
-An unimplemented `Handlers` instance is passed to the `build` function, which
-you can use to add handlers to the group.
+**Details**
 
-You can implement endpoints using the `handlers.handle` api.
+The `build` function receives an unimplemented `Handlers` instance that can
+be used to add handlers to the group. Implement endpoints with
+`handlers.handle`.
 
 **Signature**
 
@@ -16,6 +17,6 @@ You can implement endpoints using the `handlers.handle` api.
 declare const group: <ApiId extends string, Groups extends HttpApiGroup.Any, const Name extends HttpApiGroup.Name<Groups>, Return>(api: HttpApi.HttpApi<ApiId, Groups>, groupName: Name, build: (handlers: Handlers.FromGroup<HttpApiGroup.WithName<Groups, Name>>) => Handlers.ValidateReturn<Return>) => Layer.Layer<HttpApiGroup.ApiGroup<ApiId, Name>, Handlers.Error<Return>, Exclude<Handlers.Context<Return>, Scope.Scope>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiBuilder.ts#L134)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiBuilder.ts#L135)
 
 Since v4.0.0

@@ -5,7 +5,10 @@ Module: `Duration`<br />
 
 Adds two Durations together.
 
-**Infinity Addition Rules**
+**Details**
+
+Infinity addition follows these rules:
+
 - infinity + infinity = infinity
 - infinity + negativeInfinity = zero
 - infinity + finite = infinity
@@ -27,6 +30,6 @@ console.log(Duration.toSeconds(total)) // 8
 declare const sum: { (that: Duration): (self: Duration) => Duration; (self: Duration, that: Duration): Duration; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Duration.ts#L1393)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Duration.ts#L1421)
 
 Since v2.0.0

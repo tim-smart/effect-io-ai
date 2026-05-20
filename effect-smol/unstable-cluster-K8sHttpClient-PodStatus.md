@@ -11,6 +11,6 @@ Schema for the subset of Kubernetes Pod status used by cluster helpers.
 declare class PodStatus
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/K8sHttpClient.ts#L240)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/K8sHttpClient.ts#L246)
 
 Since v4.0.0

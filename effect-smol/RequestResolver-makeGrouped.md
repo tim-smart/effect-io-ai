@@ -5,6 +5,8 @@ Module: `RequestResolver`<br />
 
 Constructs a request resolver with the requests grouped by a calculated key.
 
+**Details**
+
 The key can use the Equal trait to determine if two keys are equal.
 
 **Example** (Grouping requests by key)
@@ -40,6 +42,6 @@ const UserByRoleResolver = RequestResolver.makeGrouped<GetUserByRole, string>({
 declare const makeGrouped: <A extends Request.Any, K>(options: { readonly key: (entry: Request.Entry<A>) => K; readonly resolver: (entries: NonEmptyArray<Request.Entry<A>>, key: K) => Effect.Effect<void, Request.Error<A>>; }) => RequestResolver<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RequestResolver.ts#L284)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RequestResolver.ts#L286)
 
 Since v4.0.0

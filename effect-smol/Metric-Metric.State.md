@@ -63,6 +63,6 @@ type State<A> = A extends Metric<infer _Input, infer _State> ? _State
     : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Metric.ts#L1377)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Metric.ts#L1389)
 
 Since v4.0.0

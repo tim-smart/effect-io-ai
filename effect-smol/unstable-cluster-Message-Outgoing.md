@@ -5,6 +5,8 @@ Module: `Message`<br />
 
 Message produced for storage or transport.
 
+**Details**
+
 An outgoing message is either an entity request or a control envelope.
 
 **Signature**
@@ -13,6 +15,6 @@ An outgoing message is either an entity request or a control envelope.
 type Outgoing<R> = OutgoingRequest<R> | OutgoingEnvelope
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Message.ts#L138)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Message.ts#L150)
 
 Since v4.0.0

@@ -5,12 +5,14 @@ Module: `Optic`<br />
 
 Creates a `Prism` from one or more `Schema` validation checks.
 
-When to use:
+**When to use**
+
 - You want to narrow `T` to the subset that passes certain validation
   rules (e.g. positive integer).
 - You already have `Schema.isGreaterThan`, `Schema.isInt`, etc.
 
-Behavior:
+**Details**
+
 - `getResult` runs all checks; fails with a combined error message when
   any check fails.
 - `set` is identity — the value passes through unchanged.
@@ -44,6 +46,6 @@ console.log(Result.isFailure(posInt.getResult(-1)))
 declare const fromChecks: <T>(checks_0: AST.Check<T>, ...checks: Array<AST.Check<T>>) => Prism<T, T>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Optic.ts#L389)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Optic.ts#L403)
 
 Since v4.0.0

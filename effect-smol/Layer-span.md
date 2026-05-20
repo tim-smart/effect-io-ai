@@ -6,9 +6,13 @@ Module: `Layer`<br />
 Constructs a new `Layer` which creates a span and registers it as the current
 parent span.
 
+**Details**
+
 This allows you to create a traced scope for layer construction, making all
 operations within the layer constructor part of the same trace span. The span
-is automatically closed when the layer's scope is closed.
+is automatically ended when the layer's scope is closed. If `onEnd` is
+provided, it receives the span and the layer scope's exit value when the span
+ends.
 
 **Example** (Tracing layer construction with a span)
 
@@ -52,6 +56,6 @@ const tracedLayer = Layer.span("service-initialization", {
 declare const span: (name: string, options?: SpanOptions) => Layer<Tracer.ParentSpan>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L2206)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L2414)
 
 Since v2.0.0

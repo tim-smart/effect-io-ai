@@ -5,6 +5,8 @@ Module: `McpSchema`<br />
 
 Server notification carrying a log message for the client.
 
+**Details**
+
 The notification includes the severity level, optional logger name, and
 JSON-serializable log data.
 
@@ -14,6 +16,6 @@ JSON-serializable log data.
 declare class LoggingMessageNotification
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L1526)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L1560)
 
 Since v4.0.0

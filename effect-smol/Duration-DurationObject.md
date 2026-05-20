@@ -6,6 +6,8 @@ Module: `Duration`<br />
 An object with optional duration components that can be combined to create
 a Duration. All fields are optional and additive.
 
+**Details**
+
 Compatible with Temporal.Duration-like objects.
 
 **Example** (Combining duration object fields)
@@ -33,6 +35,6 @@ export interface DurationObject {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Duration.ts#L128)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Duration.ts#L134)
 
 Since v4.0.0

@@ -6,6 +6,8 @@ Module: `DateTime`<br />
 Input accepted by `DateTime.make`, `DateTime.makeUnsafe`, and the zoned
 constructors.
 
+**Details**
+
 Includes existing `DateTime` values, partial date parts, epoch-millisecond
 objects, epoch milliseconds, JavaScript `Date` instances, and parseable date
 strings.
@@ -16,6 +18,6 @@ strings.
 type Input = DateTime | Partial<Parts> | Instant | InstantWithZone | Date | number | string
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L131)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L137)
 
 Since v3.6.0

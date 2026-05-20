@@ -5,6 +5,8 @@ Module: `Array`<br />
 
 Converts a record into an array of `[key, value]` tuples.
 
+**Details**
+
 - Key order follows `Object.entries` semantics.
 - Returns an empty array for an empty record.
 
@@ -23,6 +25,6 @@ console.log(result) // [["a", 1], ["b", 2], ["c", 3]]
 declare const fromRecord: <K extends string, A>(self: Readonly<Record<K, A>>) => Array<[K, A]>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L382)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L404)
 
 Since v2.0.0

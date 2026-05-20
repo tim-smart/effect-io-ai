@@ -5,6 +5,8 @@ Module: `Hydration`<br />
 
 A dehydrated serializable atom value.
 
+**Details**
+
 It stores the atom serialization key, encoded value, dehydration timestamp, and
 an optional promise used when an `AsyncResult.Initial` value is encoded as a
 future non-initial value.
@@ -20,6 +22,6 @@ export interface DehydratedAtomValue extends DehydratedAtom {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Hydration.ts#L45)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Hydration.ts#L47)
 
 Since v4.0.0

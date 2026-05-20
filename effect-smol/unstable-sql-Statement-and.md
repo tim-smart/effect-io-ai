@@ -12,6 +12,6 @@ Combines clauses with `AND`, parenthesizing multiple clauses and returning
 declare const and: (clauses: ReadonlyArray<string | Fragment>) => Fragment
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Statement.ts#L696)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Statement.ts#L700)
 
 Since v4.0.0

@@ -3,10 +3,9 @@ Module: `Tracer`<br />
 
 ## Tracer.SpanStatus
 
-Lifecycle state of a span.
-
-`Started` records the start time, while `Ended` records the start time, end
-time, and exit value with which the span completed.
+Lifecycle state of a span, where `Started` records the start time and
+`Ended` records the start time, end time, and exit value with which the span
+completed.
 
 **Example** (Creating span statuses)
 
@@ -47,6 +46,6 @@ type SpanStatus = {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tracer.ts#L123)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tracer.ts#L120)
 
 Since v2.0.0

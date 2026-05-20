@@ -17,6 +17,8 @@ export interface WithHandler<in out Tools extends Record<string, Tool.Any>> {
   /**
    * Executes a tool call by name.
    *
+   * **Details**
+   *
    * Validates the input parameters, executes the corresponding handler, and
    * streams back both the typed result and encoded result. Streaming allows
    * handlers to emit preliminary results before completion.
@@ -41,6 +43,6 @@ export interface WithHandler<in out Tools extends Record<string, Tool.Any>> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Toolkit.ts#L216)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Toolkit.ts#L220)
 
 Since v4.0.0

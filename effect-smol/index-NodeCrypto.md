@@ -1,4 +1,4 @@
-Package: `@effect/platform-node`<br />
+Package: `@effect/platform-node-shared`<br />
 Module: `index`<br />
 
 ## index.NodeCrypto
@@ -11,6 +11,6 @@ Re-exports all named exports from the "./NodeCrypto.ts" module as `NodeCrypto`.
 export * as NodeCrypto from "./NodeCrypto.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L96)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L42)
 
 Since v1.0.0

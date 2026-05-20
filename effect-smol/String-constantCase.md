@@ -11,6 +11,6 @@ Converts a string to CONSTANT_CASE (uppercase with underscores).
 declare const constantCase: (self: string) => string
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L1299)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L1305)
 
 Since v4.0.0

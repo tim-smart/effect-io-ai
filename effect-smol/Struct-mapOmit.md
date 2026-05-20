@@ -6,8 +6,13 @@ Module: `Struct`<br />
 Applies a `Lambda` transformation to all keys except the specified
 ones; the excluded keys are copied unchanged.
 
-- Use when most keys should be transformed but a few should be preserved.
-- Does not mutate the input; returns a fresh object.
+**When to use**
+
+Use when most keys should be transformed but a few should be preserved.
+
+**Details**
+
+This does not mutate the input and returns a fresh object.
 
 **Example** (Wrapping all values except one in arrays)
 
@@ -38,6 +43,6 @@ console.log(result) // { x: [1], y: 2, z: [3] }
 declare const mapOmit: { <S extends object, const Keys extends ReadonlyArray<keyof S>, L extends Lambda>(keys: Keys, lambda: L): (self: S) => { [K in keyof S]: K extends Keys[number] ? S[K] : Apply<L, S[K]>; }; <S extends object, const Keys extends ReadonlyArray<keyof S>, L extends Lambda>(self: S, keys: Keys, lambda: L): { [K in keyof S]: K extends Keys[number] ? S[K] : Apply<L, S[K]>; }; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Struct.ts#L794)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Struct.ts#L875)
 
 Since v4.0.0

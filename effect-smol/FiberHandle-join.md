@@ -5,6 +5,8 @@ Module: `FiberHandle`<br />
 
 Waits for the `FiberHandle` to fail or close.
 
+**Details**
+
 The returned Effect fails with the first managed fiber failure that is not
 ignored by the handle's interruption rules. Normal successful completion of
 a managed fiber only removes it from the handle; use `awaitEmpty` to wait
@@ -30,6 +32,6 @@ Effect.gen(function*() {
 declare const join: <A, E>(self: FiberHandle<A, E>) => Effect.Effect<void, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FiberHandle.ts#L782)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FiberHandle.ts#L797)
 
 Since v2.0.0

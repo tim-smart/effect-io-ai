@@ -5,13 +5,15 @@ Module: `Equal`<br />
 
 Creates a proxy that uses reference equality instead of structural equality.
 
-When to use:
+**When to use**
+
 - When you have a plain object or array that should be compared by identity
   (reference), not by contents.
 - When you want to preserve the original object unchanged and get a new
   reference-equal handle.
 
-Behavior:
+**Details**
+
 - Returns a `Proxy` wrapping `obj`. The proxy reads through to the
   original, so property access is unchanged.
 - The proxy is registered in an internal WeakSet; `equals` returns
@@ -20,7 +22,7 @@ Behavior:
 - Each call creates a **new** proxy, so `byReference(x) !== byReference(x)`.
 - Does **not** mutate the original object (unlike `byReferenceUnsafe`).
 
-**Example** (opting out of structural equality)
+**Example** (Opting Out of Structural Equality)
 
 ```ts
 import { Equal } from "effect"
@@ -48,6 +50,6 @@ console.log(aRef.x)                   // 1     (proxy reads through)
 declare const byReference: <T extends object>(obj: T) => T
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Equal.ts#L568)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Equal.ts#L576)
 
 Since v4.0.0

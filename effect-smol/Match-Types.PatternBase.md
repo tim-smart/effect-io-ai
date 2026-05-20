@@ -5,6 +5,8 @@ Module: `Match`<br />
 
 Defines the structure for complex object and array patterns.
 
+**Details**
+
 This type represents patterns that can match against complex data structures
 like objects and arrays. It supports nested pattern matching and partial
 object matching, enabling sophisticated pattern compositions.
@@ -43,6 +45,6 @@ type PatternBase<A> = A extends ReadonlyArray<infer _T> ? ReadonlyArray<any> | P
     : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L2054)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L2110)
 
 Since v4.0.0

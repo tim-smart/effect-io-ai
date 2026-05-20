@@ -5,6 +5,8 @@ Module: `Match`<br />
 
 Resolves a pattern to its matched type for use in type computations.
 
+**Details**
+
 This utility type processes patterns (predicates, refinements, objects)
 and resolves them to their corresponding matched types. It's used internally
 to compute type transformations during pattern matching.
@@ -29,6 +31,6 @@ type PForMatch<P> = [ResolvePred<P>] extends [infer X] ? X
     : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L1954)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L2006)
 
 Since v4.0.0

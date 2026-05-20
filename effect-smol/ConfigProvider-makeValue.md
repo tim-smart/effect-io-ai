@@ -5,10 +5,14 @@ Module: `ConfigProvider`<br />
 
 Creates a `Value` node representing a terminal string leaf.
 
-When to use:
-- Building nodes inside a custom `ConfigProvider`'s `get` callback.
+**When to use**
 
-Does not mutate input. Returns a new plain object.
+Use this when building nodes inside a custom `ConfigProvider`'s `get`
+callback.
+
+**Details**
+
+The function does not mutate input and returns a new plain object.
 
 **Example** (Creating a value node)
 
@@ -30,6 +34,6 @@ const node = ConfigProvider.makeValue("3000")
 declare const makeValue: (value: string) => Node
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ConfigProvider.ts#L160)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ConfigProvider.ts#L166)
 
 Since v4.0.0

@@ -22,6 +22,6 @@ const program = Effect.gen(function*() {
 declare const shuffle: <A>(elements: Iterable<A>) => Effect.Effect<Array<A>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Random.ts#L203)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Random.ts#L207)
 
 Since v2.0.0

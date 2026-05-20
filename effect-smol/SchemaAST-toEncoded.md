@@ -6,6 +6,8 @@ Module: `SchemaAST`<br />
 Returns the encoded (wire-format) AST by flipping and then stripping
 encodings.
 
+**Details**
+
 Equivalent to `toType(flip(ast))`. This gives you the AST that describes
 the shape of the serialized/encoded data.
 
@@ -33,6 +35,6 @@ console.log(encodedAst._tag) // "String"
 declare const toEncoded: (ast: AST) => AST
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L3029)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L3083)
 
 Since v4.0.0

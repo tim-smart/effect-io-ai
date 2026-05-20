@@ -5,6 +5,8 @@ Module: `Cookies`<br />
 
 Serialize a cookie into a string
 
+**Details**
+
 Adapted from https://github.com/fastify/fastify-cookie under MIT License
 
 **Signature**
@@ -13,6 +15,6 @@ Adapted from https://github.com/fastify/fastify-cookie under MIT License
 declare const serializeCookie: (self: Cookie) => string
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cookies.ts#L768)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cookies.ts#L784)
 
 Since v4.0.0

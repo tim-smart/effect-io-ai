@@ -5,6 +5,8 @@ Module: `Result`<br />
 
 Creates a `Result` holding a `Failure` value.
 
+**Details**
+
 - Use when you want to represent a failed computation
 - The success type `A` defaults to `never`
 - Does not mutate input; allocates a new `Failure` wrapper
@@ -31,6 +33,6 @@ console.log(Result.isFailure(result))
 declare const fail: <E>(left: E) => Result<never, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L343)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L359)
 
 Since v4.0.0

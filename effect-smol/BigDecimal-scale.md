@@ -5,6 +5,8 @@ Module: `BigDecimal`<br />
 
 Scales a `BigDecimal` to the specified scale.
 
+**Details**
+
 Increasing the scale appends decimal zeros. Decreasing the scale discards
 digits beyond the target scale by `bigint` division, which truncates toward
 zero.
@@ -31,6 +33,6 @@ console.log(BigDecimal.format(reduced)) // "123.4"
 declare const scale: { (scale: number): (self: BigDecimal) => BigDecimal; (self: BigDecimal, scale: number): BigDecimal; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigDecimal.ts#L233)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigDecimal.ts#L235)
 
 Since v2.0.0

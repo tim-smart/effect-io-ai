@@ -5,11 +5,14 @@ Module: `Types`<br />
 
 Transforms a union type into an intersection type.
 
-- Use to combine all members of a union into a single type with all
-  their properties.
-- Useful in advanced generic code where you need to merge union variants.
+**When to use**
 
-Behavior:
+Use to combine all members of a union into a single type with all their
+properties. This is useful in advanced generic code where you need to merge
+union variants.
+
+**Details**
+
 - Uses distributive conditional types and contra-variant inference.
 - If the union members are incompatible (e.g. `string | number`), the
   result is `never`.
@@ -35,6 +38,6 @@ type UnionToIntersection<T> = (T extends any ? (x: T) => any : never) extends (x
   : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Types.ts#L237)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Types.ts#L261)
 
 Since v2.0.0

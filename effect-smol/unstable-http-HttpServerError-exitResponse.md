@@ -12,6 +12,6 @@ from the failure cause.
 declare const exitResponse: <E>(exit: Exit.Exit<Response.HttpServerResponse, E>) => Response.HttpServerResponse
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpServerError.ts#L366)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpServerError.ts#L380)
 
 Since v4.0.0

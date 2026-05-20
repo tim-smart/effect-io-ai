@@ -5,6 +5,8 @@ Module: `Response`<br />
 
 Response part indicating the start of streaming tool parameters.
 
+**Details**
+
 Marks the beginning of tool parameter streaming with metadata about the tool
 call.
 
@@ -28,6 +30,6 @@ export interface ToolParamsStartPart extends BasePart<"tool-params-start", ToolP
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Response.ts#L1097)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Response.ts#L1094)
 
 Since v4.0.0

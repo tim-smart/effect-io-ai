@@ -5,6 +5,8 @@ Module: `Result`<br />
 
 Marker interface for ignoring unification in `Result` types.
 
+**Details**
+
 This is an internal interface used by the Effect type system. You typically
 do not need to reference it directly.
 
@@ -14,6 +16,6 @@ do not need to reference it directly.
 export interface ResultUnifyIgnore {}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L240)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L250)
 
 Since v4.0.0

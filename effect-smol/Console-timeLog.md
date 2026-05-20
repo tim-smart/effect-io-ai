@@ -3,10 +3,7 @@ Module: `Console`<br />
 
 ## Console.timeLog
 
-Logs the current value of a timer that was previously started by calling time.
-
-This function logs the elapsed time for a timer without stopping it,
-allowing you to track progress of long-running operations.
+Logs the elapsed time for an existing timer without stopping it, allowing progress reports for long-running operations.
 
 **Example** (Logging timer progress)
 
@@ -32,6 +29,6 @@ const program = Effect.gen(function*() {
 declare const timeLog: (label?: string, ...args: ReadonlyArray<any>) => Effect.Effect<void>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Console.ts#L587)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Console.ts#L543)
 
 Since v2.0.0

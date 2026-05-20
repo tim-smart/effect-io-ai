@@ -5,6 +5,8 @@ Module: `Match`<br />
 
 Unsafe variant of `instanceOf` that allows matching without type narrowing.
 
+**Details**
+
 This predicate checks if a value is an instance of the specified constructor
 but doesn't provide the same type safety guarantees as the regular `instanceOf`.
 Use this when you need more flexibility but understand the type safety implications.
@@ -37,6 +39,6 @@ const handleError = Match.type<unknown>().pipe(
 declare const instanceOfUnsafe: <A extends abstract new (...args: any) => any>(constructor: A) => SafeRefinement<InstanceType<A>, InstanceType<A>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L1612)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L1654)
 
 Since v4.0.0

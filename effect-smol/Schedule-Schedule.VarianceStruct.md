@@ -6,7 +6,8 @@ Module: `Schedule`<br />
 Type-level marker used by `Schedule.Variance` to record the variance of
 `Schedule` type parameters.
 
-**Notes**
+**Details**
+
 This interface exists for TypeScript inference and assignability. Users
 normally do not construct or inspect it directly.
 
@@ -21,6 +22,6 @@ export interface VarianceStruct<out Output, in Input, out Error, out Env> {
   }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L282)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L284)
 
 Since v4.0.0

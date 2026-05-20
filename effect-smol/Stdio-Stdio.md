@@ -5,9 +5,11 @@ Module: `Stdio`<br />
 
 Service interface for process standard I/O.
 
-It provides command-line arguments, sinks for standard output and standard
-error, and a stream of standard input bytes. I/O operations can fail with
-`PlatformError`.
+**Details**
+
+The service provides command-line arguments, sinks for standard output and
+standard error, and a stream of standard input bytes. I/O operations can fail
+with `PlatformError`.
 
 **Signature**
 
@@ -25,6 +27,6 @@ export interface Stdio {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stdio.ts#L53)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stdio.ts#L55)
 
 Since v4.0.0

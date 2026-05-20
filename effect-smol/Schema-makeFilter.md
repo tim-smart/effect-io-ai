@@ -6,6 +6,7 @@ Module: `Schema`<br />
 Creates a custom validation filter from a predicate function.
 
 **Details**
+
 The predicate receives the decoded input value, the schema AST, and parse
 options, and returns a `FilterOutput`. Non-success outputs are normalized into
 schema issues. The `annotations` parameter annotates the filter itself; with
@@ -62,6 +63,6 @@ console.log(String(Schema.decodeUnknownExit(schema)({ a: 1, b: 0, c: 0 })))
 declare const makeFilter: <T>(filter: (input: T, ast: AST.AST, options: AST.ParseOptions) => FilterOutput, annotations?: Annotations.Filter | undefined, abort?: boolean) => AST.Filter<T>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L5464)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L5610)
 
 Since v4.0.0

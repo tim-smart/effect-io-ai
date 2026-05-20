@@ -5,14 +5,15 @@ Module: `Combiner`<br />
 
 Creates a `Combiner` that always returns the first (left) argument.
 
-When to use:
-- You want "first write wins" semantics when merging values.
-- You need a combiner but the combining logic should be a no-op that keeps
-  the existing value.
+**When to use**
 
-Behavior:
-- `combine(self, that)` returns `self`, ignoring `that`.
-- Pure – the second argument is discarded, not mutated.
+Use this when you want "first write wins" semantics while merging values, or
+when the combining logic should keep the existing value.
+
+**Details**
+
+`combine(self, that)` returns `self` and ignores `that`. The second argument
+is discarded, not mutated.
 
 **Example** (keeping the first value)
 
@@ -35,6 +36,6 @@ console.log(First.combine(1, 2))
 declare const first: <A>() => Combiner<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Combiner.ts#L264)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Combiner.ts#L265)
 
 Since v4.0.0

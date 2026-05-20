@@ -5,10 +5,12 @@ Module: `SchemaTransformation`<br />
 
 Decodes a `string` into a `Date` and encodes a `Date` back to a `string`.
 
-When to use this:
+**When to use**
+
 - Parsing ISO 8601 date strings from APIs or user input.
 
-Behavior:
+**Details**
+
 - Decode: creates a `Date` from the string (like `new Date(s)`).
 - Encode: converts the `Date` to an ISO string (like `date.toISOString()`),
   returning `"Invalid Date"` for invalid dates.
@@ -23,7 +25,8 @@ const schema = Schema.String.pipe(
 )
 ```
 
-See also:
+**See**
+
 - `numberFromString`
 - `dateTimeUtcFromString`
 
@@ -33,6 +36,6 @@ See also:
 declare const dateFromString: Transformation<Date, string, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L918)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L942)
 
 Since v4.0.0

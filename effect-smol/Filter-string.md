@@ -20,6 +20,6 @@ console.log(Filter.string(42)) // fail
 declare const string: Filter<unknown, string, unknown>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Filter.ts#L279)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Filter.ts#L289)
 
 Since v4.0.0

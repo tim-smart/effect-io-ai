@@ -3,11 +3,14 @@ Module: `FiberMap`<br />
 
 ## FiberMap.make
 
-A FiberMap can be used to store a collection of fibers, indexed by some key.
-When the associated Scope is closed, all fibers in the map will be interrupted.
+Creates a scoped `FiberMap` for storing fibers by key.
 
-You can add fibers to the map using `FiberMap.set` or `FiberMap.run`, and the fibers will
-be automatically removed from the FiberMap when they complete.
+**Details**
+
+When the associated Scope is closed, all fibers in the map will be
+interrupted. You can add fibers to the map using `FiberMap.set` or
+`FiberMap.run`, and the fibers will be automatically removed from the
+`FiberMap` when they complete.
 
 **Example** (Creating a scoped FiberMap)
 
@@ -33,6 +36,6 @@ Effect.gen(function*() {
 declare const make: <K, A = unknown, E = unknown>() => Effect.Effect<FiberMap<K, A, E>, never, Scope.Scope>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FiberMap.ts#L177)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FiberMap.ts#L182)
 
 Since v2.0.0

@@ -5,6 +5,8 @@ Module: `Command`<br />
 
 Configuration shape accepted by `Command.withSharedFlags`.
 
+**Details**
+
 Only flags are allowed here; arguments are intentionally excluded.
 
 **Signature**
@@ -18,6 +20,6 @@ export interface FlagConfig {
   }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Command.ts#L242)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Command.ts#L257)
 
 Since v4.0.0

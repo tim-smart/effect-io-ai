@@ -6,6 +6,8 @@ Module: `Cause`<br />
 An error indicating that a function received an argument that violates
 its contract (e.g. negative where positive was expected).
 
+**Details**
+
 Implements `YieldableError`.
 
 **Example** (creating and checking)
@@ -31,6 +33,6 @@ export interface IllegalArgumentError extends YieldableError {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L1394)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L1460)
 
 Since v4.0.0

@@ -5,6 +5,8 @@ Module: `HttpServerResponse`<br />
 
 Creates a JSON response constructor backed by a schema encoder.
 
+**Details**
+
 The returned function encodes the value with the supplied schema before
 serializing it as JSON, and can fail with `HttpBodyError` if schema encoding or
 JSON serialization fails.
@@ -15,6 +17,6 @@ JSON serialization fails.
 declare const schemaJson: <A, I, RD, RE>(schema: Schema.Codec<A, I, RD, RE>, options?: ParseOptions | undefined) => (body: A, options?: Options.WithContentType | undefined) => Effect.Effect<HttpServerResponse, Body.HttpBodyError, RE>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpServerResponse.ts#L313)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpServerResponse.ts#L327)
 
 Since v4.0.0

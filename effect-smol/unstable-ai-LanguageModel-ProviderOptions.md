@@ -3,8 +3,9 @@ Module: `LanguageModel`<br />
 
 ## LanguageModel.ProviderOptions
 
-Configuration options passed along to language model provider
-implementations.
+Configuration options passed along to language model provider implementations.
+
+**Details**
 
 This interface defines the normalized options that are passed to the
 underlying provider implementation, regardless of the specific provider being
@@ -26,15 +27,14 @@ export interface ProviderOptions {
   readonly tools: ReadonlyArray<Tool.Any>
 
   /**
-   * The format which the response should be provided in.
+   * The format the response should be provided in.
    *
-   * If `"text"` is specified, the large language model response will be
-   * returned as text.
+   * **Details**
    *
-   * If `"json"` is specified, the large language model respose will be provided
-   * as an JSON object that conforms to the shape of the specified schema.
-   *
-   * Defaults to `{ type: "text" }`.
+   * If `"text"` is specified, the large language model response is returned as
+   * text. If `"json"` is specified, the large language model response is
+   * provided as a JSON object that conforms to the shape of the specified schema.
+   * The default is `{ type: "text" }`.
    */
   readonly responseFormat:
     | {
@@ -80,6 +80,6 @@ export interface ProviderOptions {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/LanguageModel.ts#L676)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/LanguageModel.ts#L671)
 
 Since v4.0.0

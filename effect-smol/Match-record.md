@@ -5,6 +5,8 @@ Module: `Match`<br />
 
 Matches non-null objects other than arrays.
 
+**Details**
+
 This predicate uses `Predicate.isObject`: it returns `true` for values whose
 runtime type is `"object"`, are not `null`, and are not arrays. It can match
 `Date`, `RegExp`, and class instances; use `instanceOf` or a more specific
@@ -40,6 +42,6 @@ console.log(analyzeValue("hello")) // "Not an object"
 declare const record: Predicate.Refinement<unknown, { [x: string]: unknown; [x: number]: unknown; [x: symbol]: unknown; }>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L1527)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L1565)
 
 Since v4.0.0

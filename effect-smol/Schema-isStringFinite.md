@@ -5,12 +5,14 @@ Module: `Schema`<br />
 
 Validates that a string represents a finite number.
 
-**JSON Schema**
+**Details**
+
+JSON Schema:
 
 This check corresponds to a `pattern` constraint in JSON Schema that matches
 strings representing finite numbers.
 
-**Arbitrary**
+Arbitrary:
 
 When generating test data with fast-check, this applies a `patterns`
 constraint to ensure generated strings match the number string pattern.
@@ -21,6 +23,6 @@ constraint to ensure generated strings match the number string pattern.
 declare const isStringFinite: (annotations?: Annotations.Filter) => AST.Filter<string>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L5603)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L5759)
 
 Since v4.0.0

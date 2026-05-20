@@ -5,10 +5,12 @@ Module: `SchemaGetter`<br />
 
 Creates a getter that always returns `None`, effectively omitting the value from output.
 
-Use this when:
+**When to use**
+
 - A field should be excluded during decoding or encoding.
 
-Behavior:
+**Details**
+
 - Always returns `Option.None` regardless of input.
 - Never fails.
 
@@ -20,9 +22,10 @@ import { SchemaGetter } from "effect"
 const omitField = SchemaGetter.omit<string>()
 ```
 
-See also:
-- `transformOptional` — when you want conditional omission
-- `forbidden` — when you want to fail instead of silently omit
+**See**
+
+- `transformOptional` - when you want conditional omission
+- `forbidden` - when you want to fail instead of silently omit
 
 **Signature**
 
@@ -30,6 +33,6 @@ See also:
 declare const omit: <T>() => Getter<never, T>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L661)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L675)
 
 Since v4.0.0

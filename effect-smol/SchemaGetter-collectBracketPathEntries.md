@@ -5,14 +5,16 @@ Module: `SchemaGetter`<br />
 
 Flattens a nested object into bracket-path entries, filtering leaf values by a type guard.
 
-This is the inverse of `makeTreeRecord`. It takes a nested object and produces
-flat `[bracketPath, value]` pairs suitable for `FormData` or `URLSearchParams`.
+**When to use**
 
-Use this when:
 - Serializing structured objects to flat key-value entries.
 - Building custom `FormData` or `URLSearchParams` encoders.
 
-Behavior:
+**Details**
+
+- This is the inverse of `makeTreeRecord`.
+- Takes a nested object and produces flat `[bracketPath, value]` pairs suitable for
+  `FormData` or `URLSearchParams`.
 - Returns a curried function: first call provides the leaf type guard, second call provides the object.
 - Recursively traverses objects and arrays.
 - If all elements of an array are leaves, encodes them as multiple entries with the same key
@@ -29,10 +31,11 @@ const entries = collectStrings({ user: { name: "Alice", tags: ["admin", "editor"
 // [["user[name]", "Alice"], ["user[tags]", "admin"], ["user[tags]", "editor"]]
 ```
 
-See also:
-- `makeTreeRecord` — inverse operation (flat entries to tree)
-- `encodeFormData` — uses this internally
-- `encodeURLSearchParams` — uses this internally
+**See**
+
+- `makeTreeRecord` - inverse operation (flat entries to tree)
+- `encodeFormData` - uses this internally
+- `encodeURLSearchParams` - uses this internally
 
 **Signature**
 
@@ -40,6 +43,6 @@ See also:
 declare const collectBracketPathEntries: <A>(isLeaf: (value: unknown) => value is A) => (input: object) => Array<[bracketPath: string, value: A]>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L1858)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L1893)
 
 Since v4.0.0

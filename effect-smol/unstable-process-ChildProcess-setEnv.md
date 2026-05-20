@@ -6,6 +6,8 @@ Module: `ChildProcess`<br />
 Adds environment variables to a command, merging them with any existing
 command environment and overriding duplicate keys.
 
+**Details**
+
 For pipelines, applies to each command in the pipeline.
 
 **Example** (Setting command environment variables)
@@ -24,6 +26,6 @@ const cmd = ChildProcess.make`node script.js`.pipe(
 declare const setEnv: { (env: Record<string, string>): (self: Command) => Command; (self: Command, env: Record<string, string>): Command; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ChildProcess.ts#L811)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ChildProcess.ts#L836)
 
 Since v4.0.0

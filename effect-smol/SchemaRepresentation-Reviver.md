@@ -6,10 +6,12 @@ Module: `SchemaRepresentation`<br />
 A callback that handles `Declaration` nodes during reconstruction
 (`toSchema`) or code generation (`toCodeDocument`).
 
-- Return a value to handle the declaration.
-- Return `undefined` to fall back to default behavior (use `encodedSchema`
-  for `toSchema`, or `generation` annotation for `toCodeDocument`).
-- `recur` processes child representations recursively.
+**Details**
+
+Return a value to handle the declaration. Return `undefined` to fall back to
+default behavior, which uses `encodedSchema` for `toSchema` or the
+`generation` annotation for `toCodeDocument`. `recur` processes child
+representations recursively.
 
 **See**
 
@@ -23,6 +25,6 @@ A callback that handles `Declaration` nodes during reconstruction
 type Reviver<T> = (declaration: Declaration, recur: (representation: Representation) => T) => T | undefined
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaRepresentation.ts#L1704)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaRepresentation.ts#L1758)
 
 Since v4.0.0

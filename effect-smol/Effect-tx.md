@@ -6,6 +6,8 @@ Module: `Effect`<br />
 Defines a transaction boundary. Transactions are "all or nothing" with respect to changes
 made to transactional values (i.e. TxRef) that occur within the transaction body.
 
+**Details**
+
 If called inside an active transaction, `tx` composes with the current transaction and reuses
 its journal and retry state instead of creating a nested boundary.
 
@@ -48,6 +50,6 @@ const program = Effect.gen(function*() {
 declare const tx: <A, E, R>(effect: Effect<A, E, R>) => Effect<A, E, Exclude<R, Transaction>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L13698)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L13811)
 
 Since v4.0.0

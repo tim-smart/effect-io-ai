@@ -5,6 +5,8 @@ Module: `Param`<br />
 
 Creates a param that reads and parses the content of the specified file.
 
+**Details**
+
 The parser that is utilized will depend on the specified `format`, or the
 extension of the file passed on the command-line if no `format` is specified.
 
@@ -31,6 +33,6 @@ const jsonConfig = Param.fileParse(Param.flagKind, "json-config", {
 declare const fileParse: <Kind extends ParamKind>(kind: Kind, name: string, options?: Primitive.FileParseOptions | undefined) => Param<Kind, unknown>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Param.ts#L805)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Param.ts#L819)
 
 Since v4.0.0

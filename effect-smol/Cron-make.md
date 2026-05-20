@@ -5,6 +5,8 @@ Module: `Cron`<br />
 
 Creates a Cron instance from time constraints.
 
+**Details**
+
 Constructs a cron schedule by specifying which seconds, minutes, hours,
 days, months, and weekdays the schedule should match. Empty arrays mean
 "match all" for that time unit.
@@ -103,6 +105,6 @@ const businessHours = Cron.make({
 declare const make: (values: { readonly seconds?: Iterable<number> | undefined; readonly minutes: Iterable<number>; readonly hours: Iterable<number>; readonly days: Iterable<number>; readonly months: Iterable<number>; readonly weekdays: Iterable<number>; readonly tz?: DateTime.TimeZone | undefined; }) => Cron
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cron.ts#L357)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cron.ts#L363)
 
 Since v2.0.0

@@ -5,10 +5,11 @@ Module: `Command`<br />
 
 Configuration object for defining command flags, arguments, and nested structures.
 
-Command.Config allows you to specify:
-- Individual flags and arguments using Param types
-- Nested configuration objects for organization
-- Arrays of parameters for repeated elements
+**Details**
+
+`Command.Config` can contain individual flags and arguments using `Param`
+types, nested configuration objects for organization, and arrays of
+parameters for repeated elements.
 
 **Example** (Configuring command input)
 
@@ -47,6 +48,6 @@ export interface Config {
   }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Command.ts#L227)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Command.ts#L240)
 
 Since v4.0.0

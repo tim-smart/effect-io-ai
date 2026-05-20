@@ -16,6 +16,6 @@ Creates an Effect that fails with a `Done` error. Shorthand for
 declare const done: <A = void>(value?: A) => Effect.Effect<never, Done<A>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L1278)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L1340)
 
 Since v4.0.0

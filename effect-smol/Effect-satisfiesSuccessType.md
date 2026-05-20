@@ -5,6 +5,8 @@ Module: `Effect`<br />
 
 Ensures that an effect's success type extends a given type `A`.
 
+**Details**
+
 This function provides compile-time type checking to ensure that the success
 value of an effect conforms to a specific type constraint.
 
@@ -31,6 +33,6 @@ const validEffect = satisfiesNumber(Effect.succeed(42))
 declare const satisfiesSuccessType: <A>() => <A2 extends A, E, R>(effect: Effect<A2, E, R>) => Effect<A2, E, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L14183)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L14300)
 
 Since v4.0.0

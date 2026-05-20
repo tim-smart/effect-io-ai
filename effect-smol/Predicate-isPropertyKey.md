@@ -5,10 +5,12 @@ Module: `Predicate`<br />
 
 Checks whether a value is a valid `PropertyKey` (string, number, or symbol).
 
-When to use:
+**When to use**
+
 - You need to guard unknown keys before indexing.
 
-Behavior:
+**Details**
+
 - Pure; does not mutate input.
 - Uses `isString`, `isNumber`, and `isSymbol`.
 
@@ -25,7 +27,11 @@ if (Predicate.isPropertyKey(key) && key in obj) {
 }
 ```
 
-See also: `isString`, `isNumber`, `isSymbol`
+**See**
+
+- `isString`
+- `isNumber`
+- `isSymbol`
 
 **Signature**
 
@@ -33,6 +39,6 @@ See also: `isString`, `isNumber`, `isSymbol`
 declare const isPropertyKey: (u: unknown) => u is PropertyKey
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L700)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L744)
 
 Since v4.0.0

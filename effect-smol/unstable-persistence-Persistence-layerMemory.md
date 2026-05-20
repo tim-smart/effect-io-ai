@@ -11,6 +11,6 @@ Provides `Persistence` backed by process-local in-memory storage.
 declare const layerMemory: Layer.Layer<Persistence, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Persistence.ts#L1029)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Persistence.ts#L1041)
 
 Since v4.0.0

@@ -5,10 +5,11 @@ Module: `BigDecimal`<br />
 
 Creates a `BigDecimal` from a `number` value.
 
-It is not recommended to convert a floating point number to a decimal directly,
-as the floating point representation may be unexpected.
+**Gotchas**
 
-Throws a `RangeError` if the number is not finite (`NaN`, `+Infinity` or `-Infinity`).
+It is not recommended to convert a floating point number to a decimal
+directly, as the floating point representation may be unexpected. Throws a
+`RangeError` if the number is not finite (`NaN`, `+Infinity` or `-Infinity`).
 
 **Example** (Creating decimals from finite numbers)
 
@@ -26,6 +27,6 @@ assert.deepStrictEqual(BigDecimal.fromNumberUnsafe(123.456), BigDecimal.make(123
 declare const fromNumberUnsafe: (n: number) => BigDecimal
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigDecimal.ts#L1110)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigDecimal.ts#L1124)
 
 Since v4.0.0

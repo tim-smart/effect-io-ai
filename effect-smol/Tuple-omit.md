@@ -5,9 +5,14 @@ Module: `Tuple`<br />
 
 Creates a new tuple with the elements at the specified indices removed.
 
-- Use to drop elements from a tuple by position.
-- Elements not at the specified indices are kept in their original order.
-- Does not mutate the input; returns a fresh tuple.
+**When to use**
+
+Use this to drop elements from a tuple by position.
+
+**Details**
+
+Elements not at the specified indices are kept in their original order. The
+input tuple is not mutated; a fresh tuple is returned.
 
 **Example** (Removing elements by index)
 
@@ -28,6 +33,6 @@ console.log(result) // ["a", "c"]
 declare const omit: { <const T extends ReadonlyArray<unknown>, const I extends ReadonlyArray<Indices<T>>>(indices: I): (self: T) => OmitTuple<T, I[number]>; <const T extends ReadonlyArray<unknown>, const I extends ReadonlyArray<Indices<T>>>(self: T, indices: I): OmitTuple<T, I[number]>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tuple.ts#L211)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tuple.ts#L228)
 
 Since v4.0.0

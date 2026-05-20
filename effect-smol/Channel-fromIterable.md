@@ -21,6 +21,6 @@ const channel = Channel.fromIterable(set)
 declare const fromIterable: <A, L>(iterable: Iterable<A, L>) => Channel<A, never, L>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L806)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L820)
 
 Since v4.0.0

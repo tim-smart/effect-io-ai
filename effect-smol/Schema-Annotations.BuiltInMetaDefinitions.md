@@ -5,6 +5,8 @@ Module: `Schema`<br />
 
 Registry of metadata payloads emitted by built-in schema filters and checks.
 
+**Details**
+
 Do not augment this interface with custom metadata; extend `MetaDefinitions`
 instead.
 
@@ -218,6 +220,6 @@ export interface BuiltInMetaDefinitions {
   }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L12901)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L13304)
 
 Since v4.0.0

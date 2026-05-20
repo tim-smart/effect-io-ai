@@ -17,6 +17,6 @@ echoes its input values at each step.
 declare const identity: <A>() => Schedule<A, A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L3203)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L3223)
 
 Since v2.0.0

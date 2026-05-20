@@ -5,10 +5,12 @@ Module: `Predicate`<br />
 
 A guard that always returns `true`.
 
-When to use:
+**When to use**
+
 - You need a predicate that always accepts, e.g. as a placeholder.
 
-Behavior:
+**Details**
+
 - Pure; does not mutate input.
 - Always returns `true`.
 
@@ -20,7 +22,9 @@ import { Predicate } from "effect"
 console.log(Predicate.isUnknown(123))
 ```
 
-See also: `isNever`
+**See**
+
+- `isNever`
 
 **Signature**
 
@@ -28,6 +32,6 @@ See also: `isNever`
 declare const isUnknown: (_: unknown) => _ is unknown
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L963)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L1024)
 
 Since v2.0.0

@@ -5,11 +5,13 @@ Module: `Predicate`<br />
 
 Checks whether a value has a given property key.
 
-When to use:
+**When to use**
+
 - You need to guard property access on `unknown` values.
 - You want a simple structural guard for objects.
 
-Behavior:
+**Details**
+
 - Pure; does not mutate input.
 - Uses the `in` operator and `isObjectKeyword`.
 - Does not check property value types.
@@ -27,7 +29,10 @@ if (hasName(data)) {
 }
 ```
 
-See also: `isTagged`, `isObjectKeyword`
+**See**
+
+- `isTagged`
+- `isObjectKeyword`
 
 **Signature**
 
@@ -35,6 +40,6 @@ See also: `isTagged`, `isObjectKeyword`
 declare const hasProperty: { <P extends PropertyKey>(property: P): (self: unknown) => self is { [K in P]: unknown; }; <P extends PropertyKey>(self: unknown, property: P): self is { [K in P]: unknown; }; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L1105)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L1175)
 
 Since v2.0.0

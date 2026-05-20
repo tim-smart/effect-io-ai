@@ -11,6 +11,6 @@ Constructs a new tool call part.
 declare const toolCallPart: (params: PartConstructorParams<ToolCallPart>) => ToolCallPart
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L636)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L642)
 
 Since v4.0.0

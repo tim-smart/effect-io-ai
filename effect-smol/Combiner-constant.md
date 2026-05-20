@@ -6,14 +6,16 @@ Module: `Combiner`<br />
 Creates a `Combiner` that ignores both arguments and always returns the
 given constant value.
 
-When to use:
-- You need a combiner that produces a fixed result regardless of input.
-- You are providing a combiner to a generic API but the combined value is
-  predetermined.
+**When to use**
 
-Behavior:
-- `combine(self, that)` returns the constant `a`, ignoring both arguments.
-- Pure – no mutation occurs.
+Use this when a combiner should produce a fixed result regardless of input,
+or when a generic API needs a combiner but the combined value is
+predetermined.
+
+**Details**
+
+`combine(self, that)` returns the constant `a` and ignores both arguments.
+No mutation occurs.
 
 **Example** (always returning zero)
 
@@ -37,6 +39,6 @@ console.log(Zero.combine(42, 99))
 declare const constant: <A>(a: A) => Combiner<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Combiner.ts#L329)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Combiner.ts#L332)
 
 Since v4.0.0

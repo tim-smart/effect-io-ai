@@ -6,6 +6,8 @@ Module: `Metric`<br />
 A helper method to create histogram bucket boundaries from an iterable set
 of values.
 
+**Details**
+
 Processes any iterable of numbers by removing duplicates, filtering out
 non-positive values, and automatically appending positive infinity as the
 final boundary.
@@ -71,6 +73,6 @@ const program = Effect.gen(function*() {
 declare const boundariesFromIterable: (iterable: Iterable<number>) => ReadonlyArray<number>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Metric.ts#L3355)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Metric.ts#L3402)
 
 Since v4.0.0

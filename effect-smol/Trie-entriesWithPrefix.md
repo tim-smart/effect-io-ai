@@ -29,6 +29,6 @@ assert.deepStrictEqual(result, [["she", 0], ["shells", 1]])
 declare const entriesWithPrefix: { (prefix: string): <V>(self: Trie<V>) => IterableIterator<[string, V]>; <V>(self: Trie<V>, prefix: string): IterableIterator<[string, V]>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Trie.ts#L374)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Trie.ts#L382)
 
 Since v2.0.0

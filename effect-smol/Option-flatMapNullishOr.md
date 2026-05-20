@@ -11,7 +11,7 @@ may return `null`/`undefined` to the value of a `Some`.
 - Chaining with functions that use `null`/`undefined` instead of `Option`
 - Navigating deeply nested optional properties
 
-**Behavior**
+**Details**
 
 - `None` → `None`
 - `Some` → applies `f`, then wraps via `fromNullishOr`
@@ -48,6 +48,6 @@ console.log(
 declare const flatMapNullishOr: { <A, B>(f: (a: A) => B): (self: Option<A>) => Option<NonNullable<B>>; <A, B>(self: Option<A>, f: (a: A) => B): Option<NonNullable<B>>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L1436)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L1440)
 
 Since v4.0.0

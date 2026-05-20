@@ -5,6 +5,8 @@ Module: `MessageStorage`<br />
 
 Low-level storage-driver contract for encoded envelopes and replies.
 
+**Details**
+
 Implementations persist encoded messages, track primary keys and delayed
 delivery, read unprocessed messages, and provide transaction wrapping.
 
@@ -43,8 +45,12 @@ type Encoded = {
   /**
    * Retrieves the replies for the specified requests.
    *
+   * **Details**
+   *
+   * This returns:
+   *
    * - Un-acknowledged chunk replies
-   * - WithExit replies
+   * - `WithExit` replies
    */
   readonly repliesFor: (requestIds: Arr.NonEmptyArray<string>) => Effect.Effect<
     Array<Reply.Encoded>,
@@ -62,12 +68,13 @@ type Encoded = {
   /**
    * Retrieves the unprocessed messages for the given shards.
    *
+   * **Details**
+   *
    * A message is unprocessed when:
    *
-   * - Requests that have no WithExit replies
-   *   - Or they have no unacknowledged chunk replies
-   * - The latest AckChunk envelope
-   * - All Interrupt's for unprocessed requests
+   * - Requests that have no `WithExit` replies or no unacknowledged chunk replies
+   * - The latest `AckChunk` envelope
+   * - All `Interrupt` envelopes for unprocessed requests
    */
   readonly unprocessedMessages: (
     shardIds: Arr.NonEmptyArray<string>,
@@ -124,6 +131,6 @@ type Encoded = {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MessageStorage.ts#L288)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MessageStorage.ts#L305)
 
 Since v4.0.0

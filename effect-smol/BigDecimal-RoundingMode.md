@@ -5,16 +5,18 @@ Module: `BigDecimal`<br />
 
 Rounding modes for `BigDecimal`.
 
-`ceil`: round towards positive infinity
-`floor`: round towards negative infinity
-`to-zero`: round towards zero
-`from-zero`: round away from zero
-`half-ceil`: round to the nearest neighbor; if equidistant round towards positive infinity
-`half-floor`: round to the nearest neighbor; if equidistant round towards negative infinity
-`half-to-zero`: round to the nearest neighbor; if equidistant round towards zero
-`half-from-zero`: round to the nearest neighbor; if equidistant round away from zero
-`half-even`: round to the nearest neighbor; if equidistant round to the neighbor with an even digit
-`half-odd`: round to the nearest neighbor; if equidistant round to the neighbor with an odd digit
+**Details**
+
+- `ceil`: round towards positive infinity
+- `floor`: round towards negative infinity
+- `to-zero`: round towards zero
+- `from-zero`: round away from zero
+- `half-ceil`: round to the nearest neighbor; if equidistant round towards positive infinity
+- `half-floor`: round to the nearest neighbor; if equidistant round towards negative infinity
+- `half-to-zero`: round to the nearest neighbor; if equidistant round towards zero
+- `half-from-zero`: round to the nearest neighbor; if equidistant round away from zero
+- `half-even`: round to the nearest neighbor; if equidistant round to the neighbor with an even digit
+- `half-odd`: round to the nearest neighbor; if equidistant round to the neighbor with an odd digit
 
 **Signature**
 
@@ -31,6 +33,6 @@ type RoundingMode = | "ceil"
   | "half-odd"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigDecimal.ts#L1448)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigDecimal.ts#L1476)
 
 Since v3.16.0

@@ -6,6 +6,8 @@ Module: `Schema`<br />
 Returns a "Standard Schema" object conforming to the [Standard Schema
 v1](https://standardschema.dev/) specification.
 
+**Details**
+
 This function creates a schema whose `validate` method attempts to decode and
 validate the provided input synchronously. If the underlying `Schema`
 includes any asynchronous components (e.g., asynchronous message resolutions
@@ -66,6 +68,6 @@ console.log(invalidResult) // { issues: [{ path: ["name"], message: "..." }, { p
 declare const toStandardSchemaV1: <S extends Decoder<unknown>>(self: S, options?: { readonly leafHook?: Issue.LeafHook | undefined; readonly checkHook?: Issue.CheckHook | undefined; readonly parseOptions?: AST.ParseOptions | undefined; }) => StandardSchemaV1<S["Encoded"], S["Type"]> & S
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L968)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L1001)
 
 Since v4.0.0

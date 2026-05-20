@@ -11,6 +11,6 @@ Narrows an `AST` to `String`.
 declare const isString: (ast: AST) => ast is String
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L218)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L220)
 
 Since v4.0.0

@@ -5,10 +5,12 @@ Module: `SchemaGetter`<br />
 
 Coerces any value to a `boolean` using the global `Boolean()` constructor.
 
-Use this when:
+**When to use**
+
 - You need boolean coercion (truthiness check) of an encoded value.
 
-Behavior:
+**Details**
+
 - Pure, never fails.
 - Delegates to `globalThis.Boolean`.
 
@@ -27,6 +29,6 @@ const toBool = SchemaGetter.Boolean<string>()
 declare const Boolean: <E>() => Getter<boolean, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L781)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L800)
 
 Since v4.0.0

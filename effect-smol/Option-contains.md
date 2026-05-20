@@ -10,7 +10,7 @@ structural equality.
 
 - Quick membership test with standard equality
 
-**Behavior**
+**Details**
 
 - `Some` where `Equal.equals(value, a)` is `true` → `true`
 - `Some` where not equal, or `None` → `false`
@@ -41,6 +41,6 @@ console.log(Option.none().pipe(Option.contains(2)))
 declare const contains: { <A>(a: A): (self: Option<A>) => boolean; <A>(self: Option<A>, a: A): boolean; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L2281)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L2287)
 
 Since v2.0.0

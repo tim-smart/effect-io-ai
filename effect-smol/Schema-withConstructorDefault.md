@@ -7,6 +7,7 @@ Schema type returned by `withConstructorDefault` after attaching a default used
 by constructor helpers.
 
 **Details**
+
 The default affects `make` and related constructor helpers only; decoding and
 encoding still use the original schema behavior. The schema is marked as
 already having a constructor default so another constructor default cannot be
@@ -42,6 +43,6 @@ export interface withConstructorDefault<S extends Top & WithoutConstructorDefaul
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L4686)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L4815)
 
 Since v3.10.0

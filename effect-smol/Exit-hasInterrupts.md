@@ -5,7 +5,12 @@ Module: `Exit`<br />
 
 Tests whether a failed Exit contains interruptions (Interrupt reasons).
 
+**When to use**
+
 - Use to check if a fiber was interrupted
+
+**Details**
+
 - Returns `false` for successful exits
 
 Only checks for `Interrupt` reasons in the Cause. A Cause with only `Fail`
@@ -32,6 +37,6 @@ console.log(Exit.hasInterrupts(Exit.succeed(42)))   // false
 declare const hasInterrupts: <A, E>(self: Exit<A, E>) => self is Failure<A, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Exit.ts#L500)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Exit.ts#L563)
 
 Since v4.0.0

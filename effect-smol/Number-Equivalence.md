@@ -3,9 +3,7 @@ Module: `Number`<br />
 
 ## Number.Equivalence
 
-An `Equivalence` instance for numbers.
-
-`NaN` is considered equal to `NaN`.
+An `Equivalence` instance for numbers where `NaN` is considered equal to `NaN`.
 
 **Example** (Comparing numbers for equivalence)
 
@@ -23,6 +21,6 @@ console.log(Number.Equivalence(NaN, NaN)) // true
 declare const Equivalence: Equ.Equivalence<number>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Number.ts#L235)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Number.ts#L229)
 
 Since v2.0.0

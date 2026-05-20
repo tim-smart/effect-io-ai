@@ -11,6 +11,6 @@ Computer-use action payload for holding a key for a specified duration.
 type ComputerUseHoldKeyAction = typeof ComputerUseHoldKeyAction.Type
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L552)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L560)
 
 Since v4.0.0

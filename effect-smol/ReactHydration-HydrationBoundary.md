@@ -6,6 +6,8 @@ Module: `ReactHydration`<br />
 Hydrates dehydrated Atom values into the current Atom registry for a React
 subtree.
 
+**Details**
+
 New Atom values are hydrated during render so descendants can read them
 immediately, while values for existing Atoms are deferred until after commit
 so transition data does not update the current UI before React accepts it.
@@ -16,6 +18,6 @@ so transition data does not update the current UI before React accepts it.
 declare const HydrationBoundary: React.FC<HydrationBoundaryProps>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/atom/react/src/ReactHydration.ts#L53)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/atom/react/src/ReactHydration.ts#L55)
 
 Since v4.0.0

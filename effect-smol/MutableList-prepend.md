@@ -37,6 +37,6 @@ console.log(MutableList.take(list)) // "priority"
 declare const prepend: <A>(self: MutableList<A>, message: A) => void
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableList.ts#L375)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableList.ts#L377)
 
 Since v2.0.0

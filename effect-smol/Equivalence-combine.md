@@ -5,16 +5,18 @@ Module: `Equivalence`<br />
 
 Combines two equivalence relations using logical AND.
 
-When to use this:
-- When you need to combine exactly two equivalences
-- When building complex equivalences from simpler ones
-- When you want both conditions to be satisfied (AND logic)
+**When to use**
 
-Behavior:
+- Use when you need to combine exactly two equivalences
+- Use when building complex equivalences from simpler ones
+- Use when you want both conditions to be satisfied
+
+**Details**
+
 - Does not mutate inputs
 - Returns `true` only if both equivalences return `true`
 - Short-circuits: if the first equivalence returns `false`, the second is not called
-- The result is also an equivalence (satisfies reflexive, symmetric, transitive properties)
+- The result is also an equivalence that satisfies reflexive, symmetric, and transitive properties
 
 **Example** (Combining name and age equivalences)
 
@@ -46,7 +48,10 @@ console.log(personEquivalence(person1, person2)) // true
 console.log(personEquivalence(person1, person3)) // false (different age)
 ```
 
-See also: `combineAll`, `mapInput`
+**See**
+
+- `combineAll`
+- `mapInput`
 
 **Signature**
 
@@ -54,6 +59,6 @@ See also: `combineAll`, `mapInput`
 declare const combine: { <A>(that: Equivalence<A>): (self: Equivalence<A>) => Equivalence<A>; <A>(self: Equivalence<A>, that: Equivalence<A>): Equivalence<A>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Equivalence.ts#L363)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Equivalence.ts#L378)
 
 Since v2.0.0

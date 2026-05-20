@@ -6,6 +6,8 @@ Module: `Metric`<br />
 Creates a timer metric, based on a `Histogram`, which keeps track of
 durations in milliseconds.
 
+**Details**
+
 The unit of time will automatically be added to the metric as a tag (i.e.
 `"time_unit: milliseconds"`).
 
@@ -48,6 +50,6 @@ const apiOperation = Effect.gen(function*() {
 declare const timer: (name: string, options?: { readonly description?: string | undefined; readonly attributes?: Metric.Attributes | undefined; readonly boundaries?: ReadonlyArray<number>; }) => Histogram<Duration.Duration>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Metric.ts#L2649)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Metric.ts#L2679)
 
 Since v2.0.0

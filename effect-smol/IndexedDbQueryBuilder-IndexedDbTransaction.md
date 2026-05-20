@@ -11,6 +11,6 @@ Service tag for the active `IDBTransaction` used to share a transaction across I
 declare class IndexedDbTransaction
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbQueryBuilder.ts#L719)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbQueryBuilder.ts#L733)
 
 Since v4.0.0

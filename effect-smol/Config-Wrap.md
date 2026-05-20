@@ -6,11 +6,14 @@ Module: `Config`<br />
 Utility type that recursively replaces primitives with `Config` in a nested
 structure.
 
-`Config.Wrap<{ key: string }>` becomes `{ key: Config<string> } | Config<{ key: string }>`
+**When to use**
 
-When to use:
 - Typing the input of `unwrap` so callers can pass either a `Config`
   or a record of `Config`s.
+
+**Details**
+
+`Config.Wrap<{ key: string }>` becomes `{ key: Config<string> } | Config<{ key: string }>`
 
 **See**
 
@@ -26,6 +29,6 @@ type Wrap<A> = [NonNullable<A>] extends [infer T] ? [IsPlainObject<T>] extends [
   : Config<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Config.ts#L497)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Config.ts#L530)
 
 Since v2.0.0

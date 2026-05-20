@@ -5,9 +5,10 @@ Module: `SchemaRepresentation`<br />
 
 A union of multiple representations.
 
-- `types` are the union members.
-- `mode` controls JSON Schema output: `"anyOf"` (default) or `"oneOf"`
-  (mutually exclusive).
+**Details**
+
+`types` are the union members. `mode` controls JSON Schema output as either
+`"anyOf"` (the default) or mutually exclusive `"oneOf"`.
 
 **Signature**
 
@@ -20,6 +21,6 @@ export interface Union {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaRepresentation.ts#L473)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaRepresentation.ts#L502)
 
 Since v4.0.0

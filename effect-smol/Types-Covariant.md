@@ -6,10 +6,15 @@ Module: `Types`<br />
 Function-type alias encoding covariant variance for a phantom type
 parameter.
 
-- Use as a phantom field type to make a type parameter covariant
-  (output position).
-- `Covariant<A>` is assignable to `Covariant<B>` when `A extends B`
-  (subtype direction).
+**When to use**
+
+Use as a phantom field type to make a type parameter covariant in output
+position.
+
+**Details**
+
+`Covariant<A>` is assignable to `Covariant<B>` when `A extends B`, following
+the subtype direction.
 
 **Example** (Covariant phantom type)
 
@@ -34,6 +39,6 @@ interface Producer<T> {
 type Covariant<A> = (_: never) => A
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Types.ts#L624)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Types.ts#L705)
 
 Since v2.0.0

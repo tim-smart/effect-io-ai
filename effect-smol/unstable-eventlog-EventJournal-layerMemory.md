@@ -5,6 +5,8 @@ Module: `EventJournal`<br />
 
 Layer that provides an in-memory `EventJournal`.
 
+**Gotchas**
+
 All journal data is stored in process memory and is not persisted across layer
 lifetimes.
 
@@ -14,6 +16,6 @@ lifetimes.
 declare const layerMemory: Layer.Layer<EventJournal, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventJournal.ts#L481)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventJournal.ts#L499)
 
 Since v4.0.0

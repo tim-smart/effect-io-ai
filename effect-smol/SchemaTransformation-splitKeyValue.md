@@ -6,10 +6,12 @@ Module: `SchemaTransformation`<br />
 A transformation that decodes a string into a record of key-value pairs and
 encodes a record of key-value pairs into a string.
 
-When to use this:
+**When to use**
+
 - Parsing query-string-like or config-file-like strings into records.
 
-Behavior:
+**Details**
+
 - Decode: splits the string by `separator` (default `","`) into pairs,
   then splits each pair by `keyValueSeparator` (default `"="`).
 - Encode: joins the record back into a string using the same separators.
@@ -29,7 +31,8 @@ const Config = Schema.String.pipe(
 // "host:localhost;port:3000" → { host: "localhost", port: "3000" }
 ```
 
-See also:
+**See**
+
 - `trim`
 - `snakeToCamel`
 
@@ -39,6 +42,6 @@ See also:
 declare const splitKeyValue: (options?: { readonly separator?: string | undefined; readonly keyValueSeparator?: string | undefined; }) => Transformation<Record<string, string>, string>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L708)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L722)
 
 Since v4.0.0

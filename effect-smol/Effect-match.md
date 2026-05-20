@@ -6,21 +6,17 @@ Module: `Effect`<br />
 Handles both success and failure cases of an effect without performing side
 effects.
 
+**When to use**
+
+This is useful for structuring your code to respond differently to success or
+failure without triggering side effects.
+
 **Details**
 
 `match` lets you define custom handlers for both success and failure
 scenarios. You provide separate functions to handle each case, allowing you
 to process the result if the effect succeeds, or handle the error if the
 effect fails.
-
-**When to Use**
-
-This is useful for structuring your code to respond differently to success or
-failure without triggering side effects.
-
-**See**
-
-- `matchEffect` if you need to perform side effects in the handlers.
 
 **Example** (Matching success and failure values)
 
@@ -54,12 +50,16 @@ Effect.runPromise(program2).then(console.log)
 // Output: "failure: Uh oh!"
 ```
 
+**See**
+
+- `matchEffect` if you need to perform side effects in the handlers.
+
 **Signature**
 
 ```ts
 declare const match: { <E, A2, A, A3>(options: { readonly onFailure: (error: E) => A2; readonly onSuccess: (value: A) => A3; }): <R>(self: Effect<A, E, R>) => Effect<A2 | A3, never, R>; <A, E, R, A2, A3>(self: Effect<A, E, R>, options: { readonly onFailure: (error: E) => A2; readonly onSuccess: (value: A) => A3; }): Effect<A2 | A3, never, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L4875)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L4932)
 
 Since v2.0.0

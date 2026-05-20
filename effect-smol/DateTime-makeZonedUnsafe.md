@@ -5,6 +5,8 @@ Module: `DateTime`<br />
 
 Create a `DateTime.Zoned` using `DateTime.makeUnsafe` and a time zone.
 
+**Details**
+
 The input is treated as UTC and then the time zone is attached, unless
 `adjustForTimeZone` is set to `true`. In that case, the input is treated as
 already in the time zone.
@@ -34,6 +36,6 @@ console.log(DateTime.formatIsoZoned(zoned)) // "2024-06-15T15:30:00.000+01:00[Eu
 declare const makeZonedUnsafe: (input: DateTime.Input, options?: { readonly timeZone?: number | string | TimeZone | undefined; readonly adjustForTimeZone?: boolean | undefined; readonly disambiguation?: Disambiguation | undefined; }) => Zoned
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L635)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L677)
 
 Since v4.0.0

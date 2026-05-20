@@ -5,9 +5,14 @@ Module: `Types`<br />
 
 Checks if an object type contains any of the specified keys.
 
-- Use to conditionally branch based on the presence of keys in a type.
-- Returns `true` if at least one key from `Key` exists in `A`, `false`
-  otherwise.
+**When to use**
+
+Use to conditionally branch based on the presence of keys in a type.
+
+**Details**
+
+Returns `true` if at least one key from `Key` exists in `A`, `false`
+otherwise.
 
 **Example** (Key presence check)
 
@@ -26,6 +31,6 @@ type Has<A, Key> = (Key extends infer K ? K extends keyof A ? true : never : nev
   : true
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Types.ts#L338)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Types.ts#L380)
 
 Since v2.0.0

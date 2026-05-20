@@ -5,6 +5,8 @@ Module: `Event`<br />
 
 Definition of an event type that can be written to an `EventLog`.
 
+**Details**
+
 An event definition contains its tag, primary-key function, payload schema,
 MessagePack payload schema, success schema, and error schema.
 
@@ -27,6 +29,6 @@ export interface Event<
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Event.ts#L58)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Event.ts#L60)
 
 Since v4.0.0

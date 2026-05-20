@@ -3,9 +3,7 @@ Module: `Response`<br />
 
 ## Response.TextEndPart
 
-Response part indicating the end of streaming text content.
-
-Marks the completion of a text chunk.
+Response part indicating the completion of a streaming text chunk.
 
 **Signature**
 
@@ -18,6 +16,6 @@ export interface TextEndPart extends BasePart<"text-end", TextEndPartMetadata> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Response.ts#L776)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Response.ts#L774)
 
 Since v4.0.0

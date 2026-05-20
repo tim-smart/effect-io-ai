@@ -6,8 +6,13 @@ Module: `Types`<br />
 Removes `readonly` from all properties of `T`. Supports arrays, tuples,
 and records.
 
-- Use when you need a mutable version of a readonly type.
-- Only affects the top level; nested properties remain readonly.
+**When to use**
+
+Use when you need a mutable version of a readonly type.
+
+**Details**
+
+Only affects the top level; nested properties remain readonly.
 
 **Example** (Shallow mutable conversion)
 
@@ -40,6 +45,6 @@ type Mutable<T> = {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Types.ts#L484)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Types.ts#L545)
 
 Since v2.0.0

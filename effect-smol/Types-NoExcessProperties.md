@@ -5,9 +5,14 @@ Module: `Types`<br />
 
 Constrains a type to prevent excess properties not present in `T`.
 
-- Use in generic functions to catch accidental extra properties at
-  compile time.
-- Extra keys from `U` that are not in `T` are mapped to `never`.
+**When to use**
+
+Use in generic functions to catch accidental extra properties at compile
+time.
+
+**Details**
+
+Extra keys from `U` that are not in `T` are mapped to `never`.
 
 **Example** (Preventing extra properties)
 
@@ -27,6 +32,6 @@ type Result = Types.NoExcessProperties<Expected, Input>
 type NoExcessProperties<T, U> = T & Readonly<Record<Exclude<keyof U, keyof T>, never>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Types.ts#L758)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Types.ts#L854)
 
 Since v3.9.0

@@ -5,6 +5,8 @@ Module: `Headers`<br />
 
 Returns a new `Headers` collection containing headers from both collections.
 
+**Details**
+
 Headers from the second collection override headers from the first collection with the same name.
 
 **Signature**
@@ -13,6 +15,6 @@ Headers from the second collection override headers from the first collection wi
 declare const merge: { (headers: Headers): (self: Headers) => Headers; (self: Headers, headers: Headers): Headers; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Headers.ts#L298)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Headers.ts#L318)
 
 Since v4.0.0

@@ -5,12 +5,15 @@ Module: `Types`<br />
 
 Constructs a tuple type with at least `N` elements of type `T`.
 
-- Use when you need a minimum-length array type that still allows additional
-  elements.
-- Useful for variadic function signatures that require a minimum arity.
+**When to use**
 
-Behavior:
-- Produces a tuple with `N` fixed positions followed by `...Array<T>`.
+Use when you need a minimum-length array type that still allows additional
+elements. This is useful for variadic function signatures that require a
+minimum arity.
+
+**Details**
+
+Produces a tuple with `N` fixed positions followed by `...Array<T>`.
 
 **Example** (Minimum-length tuple)
 
@@ -35,6 +38,6 @@ const bad: Types.TupleOfAtLeast<2, string> = ["a"]
 type [...TupleOf<N, T>, ...T[]] = [...TupleOf<N, T>, ...Array<T>]
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Types.ts#L125)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Types.ts#L131)
 
 Since v3.3.0

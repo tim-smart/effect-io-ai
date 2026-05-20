@@ -11,6 +11,6 @@ Narrows an `AST` to `Symbol`.
 declare const isSymbol: (ast: AST) => ast is Symbol
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L250)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L252)
 
 Since v4.0.0

@@ -26,6 +26,6 @@ console.log(HashSet.size(mixed)) // 3
 declare const make: <Values extends ReadonlyArray<any>>(...values: Values) => HashSet<Values[number]>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashSet.ts#L176)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashSet.ts#L178)
 
 Since v2.0.0

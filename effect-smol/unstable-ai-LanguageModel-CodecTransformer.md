@@ -3,8 +3,9 @@ Module: `LanguageModel`<br />
 
 ## LanguageModel.CodecTransformer
 
-A function that transforms a `Schema.Codec` into a provider-compatible form
-for structured output generation.
+A function that transforms a `Schema.Codec` into a provider-compatible form for structured output generation.
+
+**Details**
 
 Different language model providers have varying constraints on the JSON
 schemas they accept. A `CodecTransformer` rewrites a codec's encoded side to
@@ -19,6 +20,6 @@ type CodecTransformer = <T, E, RD, RE>(schema: Schema.Codec<T, E, RD, RE>) => {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/LanguageModel.ts#L234)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/LanguageModel.ts#L228)
 
 Since v4.0.0

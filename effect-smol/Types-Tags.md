@@ -5,8 +5,13 @@ Module: `Types`<br />
 
 Extracts the `_tag` string literal types from a union.
 
-- Use to get all discriminant values from a tagged union type.
-- Members without a `_tag` field are ignored (produce `never`).
+**When to use**
+
+Use to get all discriminant values from a tagged union type.
+
+**Details**
+
+Members without a `_tag` field are ignored and produce `never`.
 
 **Example** (Extracting tags)
 
@@ -33,6 +38,6 @@ type Result = Types.Tags<MyError>
 type Tags<E> = E extends { readonly _tag: string } ? E["_tag"] : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Types.ts#L153)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Types.ts#L164)
 
 Since v2.0.0

@@ -5,6 +5,8 @@ Module: `FileSystem`<br />
 
 Event representing the creation of a new file or directory.
 
+**Details**
+
 This event is triggered when a new file or directory is created
 in the watched location.
 
@@ -17,6 +19,6 @@ export interface Create {
   }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FileSystem.ts#L1219)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FileSystem.ts#L1277)
 
 Since v4.0.0

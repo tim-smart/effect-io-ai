@@ -5,8 +5,9 @@ Module: `AnthropicError`<br />
 
 Anthropic-specific rate limit metadata fields.
 
-Extends base error metadata with rate limit specific information from
-Anthropic's rate limit headers.
+**Details**
+
+Extends base error metadata with rate limit-specific information from Anthropic's rate limit headers.
 
 **Signature**
 
@@ -39,6 +40,6 @@ type AnthropicRateLimitMetadata = AnthropicErrorMetadata & {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicError.ts#L36)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicError.ts#L37)
 
 Since v4.0.0

@@ -5,16 +5,18 @@ Module: `Equal`<br />
 
 Wraps `equals` as an `Equivalence<A>`.
 
-When to use:
+**When to use**
+
 - When an API (e.g. `Array.dedupeWith`, `Equivalence.mapInput`) requires an
   `Equivalence` and you want to reuse `Equal.equals`.
 
-Behavior:
+**Details**
+
 - Returns a function `(a: A, b: A) => boolean` that delegates to
   `equals`.
 - Pure; allocates a thin wrapper on each call.
 
-**Example** (deduplicating with Equal semantics)
+**Example** (Deduplicating with Equal Semantics)
 
 ```ts
 import { Array, Equal } from "effect"
@@ -34,6 +36,6 @@ console.log(result) // [1, 2, 3]
 declare const asEquivalence: <A>() => Equivalence<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Equal.ts#L525)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Equal.ts#L532)
 
 Since v4.0.0

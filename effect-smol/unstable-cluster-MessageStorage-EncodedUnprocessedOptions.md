@@ -5,6 +5,8 @@ Module: `MessageStorage`<br />
 
 Cursor options for reading encoded unprocessed messages across shard sets.
 
+**Details**
+
 The fields distinguish existing shards from newly assigned shards and carry the
 driver-specific pagination cursor.
 
@@ -18,6 +20,6 @@ type EncodedUnprocessedOptions<A> = {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MessageStorage.ts#L409)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MessageStorage.ts#L433)
 
 Since v4.0.0

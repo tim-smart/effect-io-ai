@@ -5,8 +5,12 @@ Module: `SchemaAST`<br />
 
 AST node for user-defined opaque types with custom parsing logic.
 
+**When to use**
+
 Use when none of the built-in AST nodes fit. The `run` function receives
 `typeParameters` and returns a parser that validates/transforms raw input.
+
+**Details**
 
 - `typeParameters` — inner schemas this declaration is parameterized over
   (e.g. the element type for a custom collection).
@@ -31,6 +35,6 @@ declare class Declaration { constructor(
   ) }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L577)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L591)
 
 Since v3.10.0

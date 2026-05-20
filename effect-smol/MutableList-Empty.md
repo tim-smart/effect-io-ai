@@ -53,6 +53,6 @@ if (isEmpty(value)) {
 type Empty = typeof Empty
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableList.ts#L259)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableList.ts#L261)
 
 Since v4.0.0

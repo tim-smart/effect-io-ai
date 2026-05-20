@@ -12,6 +12,6 @@ attaches the `Stdio` type identifier.
 declare const make: (options: Omit<Stdio, TypeId>) => Stdio
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stdio.ts#L79)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stdio.ts#L81)
 
 Since v4.0.0

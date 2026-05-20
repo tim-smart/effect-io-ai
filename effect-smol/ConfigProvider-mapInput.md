@@ -5,16 +5,18 @@ Module: `ConfigProvider`<br />
 
 Transforms the path segments before they reach the underlying store.
 
-When to use:
-- Renaming or re-casing path segments (see `constantCase` for a
-  common specialization).
-- Adding suffixes or other per-segment transformations.
+**When to use**
+
+Use this for renaming or re-casing path segments, or for adding suffixes and
+other per-segment transformations. See `constantCase` for a common
+specialization.
+
+**Details**
 
 The function `f` receives the full path and must return a new path. If the
-provider already has a `mapInput`, the functions compose (existing first,
-then `f`).
-
-Supports both data-last and data-first calling conventions.
+provider already has a `mapInput`, the functions compose: the existing
+mapping runs first, then `f`. Supports both data-last and data-first calling
+conventions.
 
 **Example** (Uppercasing path segments)
 
@@ -43,6 +45,6 @@ const upper = ConfigProvider.mapInput(provider, (path) =>
 declare const mapInput: { (f: (path: Path) => Path): (self: ConfigProvider) => ConfigProvider; (self: ConfigProvider, f: (path: Path) => Path): ConfigProvider; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ConfigProvider.ts#L505)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ConfigProvider.ts#L530)
 
 Since v4.0.0

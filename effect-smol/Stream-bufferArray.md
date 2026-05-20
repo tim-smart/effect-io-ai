@@ -6,6 +6,8 @@ Module: `Stream`<br />
 Allows a faster producer to progress independently of a slower consumer by
 buffering up to `capacity` chunks in a queue.
 
+**Details**
+
 Finite buffers use the configured queue strategy: `"suspend"` applies
 backpressure, while `"dropping"` and `"sliding"` may discard chunks when the
 buffer is full. This combinator preserves chunking and is best with
@@ -33,6 +35,6 @@ const program = Effect.gen(function*() {
 declare const bufferArray: { (options: { readonly capacity: "unbounded"; } | { readonly capacity: number; readonly strategy?: "dropping" | "sliding" | "suspend" | undefined; }): <A, E, R>(self: Stream<A, E, R>) => Stream<A, E, R>; <A, E, R>(self: Stream<A, E, R>, options: { readonly capacity: "unbounded"; } | { readonly capacity: number; readonly strategy?: "dropping" | "sliding" | "suspend" | undefined; }): Stream<A, E, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L4696)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L4775)
 
 Since v4.0.0

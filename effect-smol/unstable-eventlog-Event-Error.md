@@ -11,6 +11,6 @@ Decoded error value type for an event definition.
 type Error<A> = Schema.Schema.Type<ErrorSchema<A>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Event.ts#L163)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Event.ts#L169)
 
 Since v4.0.0

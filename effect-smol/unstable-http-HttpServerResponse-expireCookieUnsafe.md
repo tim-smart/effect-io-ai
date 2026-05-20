@@ -6,6 +6,8 @@ Module: `HttpServerResponse`<br />
 Expires a cookie on an `HttpServerResponse`, throwing if the expiration cookie
 cannot be encoded.
 
+**When to use**
+
 Use `expireCookie` when cookie errors should be represented as `CookiesError`
 failures.
 
@@ -15,6 +17,6 @@ failures.
 declare const expireCookieUnsafe: { (name: string, options?: Omit<NonNullable<Cookies.Cookie["options"]>, "expires" | "maxAge">): (self: HttpServerResponse) => HttpServerResponse; (self: HttpServerResponse, name: string, options?: Omit<NonNullable<Cookies.Cookie["options"]>, "expires" | "maxAge">): HttpServerResponse; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpServerResponse.ts#L696)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpServerResponse.ts#L728)
 
 Since v4.0.0

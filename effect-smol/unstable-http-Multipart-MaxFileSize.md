@@ -5,6 +5,8 @@ Module: `Multipart`<br />
 
 Context reference for the maximum size of a multipart file part.
 
+**Details**
+
 The default is `undefined`, meaning no explicit per-file limit.
 
 **Signature**
@@ -13,6 +15,6 @@ The default is `undefined`, meaning no explicit per-file limit.
 declare const MaxFileSize: Context.Reference<FileSystem.SizeInput | undefined>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Multipart.ts#L776)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Multipart.ts#L821)
 
 Since v4.0.0

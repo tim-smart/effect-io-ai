@@ -5,6 +5,8 @@ Module: `Telemetry`<br />
 
 The `gen_ai.system` attribute has the following list of well-known values.
 
+**Details**
+
 If one of them applies, then the respective value **MUST** be used;
 otherwise, a custom value **MAY** be used.
 
@@ -27,6 +29,6 @@ type WellKnownSystem = | "anthropic"
   | "xai"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Telemetry.ts#L221)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Telemetry.ts#L224)
 
 Since v4.0.0

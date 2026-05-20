@@ -5,6 +5,8 @@ Module: `SchemaAST`<br />
 
 AST node matching any `bigint` value.
 
+**Details**
+
 When serialized to a string-based codec, bigints are converted to/from
 their decimal string representation.
 
@@ -19,6 +21,6 @@ their decimal string representation.
 declare class BigInt
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L1302)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L1332)
 
 Since v4.0.0

@@ -5,6 +5,8 @@ Module: `Primitive`<br />
 
 Creates a primitive that parses boolean values from string input.
 
+**Details**
+
 Recognizes various forms of true/false values:
 - True values: "true", "1", "y", "yes", "on"
 - False values: "false", "0", "n", "no", "off"
@@ -36,6 +38,6 @@ const parseBoolean = Effect.gen(function*() {
 declare const boolean: Primitive<boolean>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Primitive.ts#L150)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Primitive.ts#L152)
 
 Since v4.0.0

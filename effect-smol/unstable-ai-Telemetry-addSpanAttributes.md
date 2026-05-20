@@ -6,6 +6,8 @@ Module: `Telemetry`<br />
 Creates a reusable span-attribute writer for a key prefix and key
 transformer.
 
+**Details**
+
 The returned function mutates the supplied span by adding each non-nullish
 attribute as `${prefix}.${transformedKey}`.
 
@@ -36,6 +38,6 @@ addCustomAttributes(span, {
 declare const addSpanAttributes: (keyPrefix: string, transformKey: (key: string) => string) => <Attributes extends Record<string, any>>(span: Span, attributes: Attributes) => void
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Telemetry.ts#L326)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Telemetry.ts#L335)
 
 Since v4.0.0

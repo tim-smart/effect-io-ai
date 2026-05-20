@@ -5,11 +5,14 @@ Module: `SchemaGetter`<br />
 
 Returns the identity getter typed for the relationship `T extends E`.
 
+**When to use**
+
 Use this when no runtime conversion is needed but the getter should be typed
 as producing a decoded/output type that is narrower than the encoded/input
 type.
 
-Behavior:
+**Details**
+
 - Same singleton as `passthrough` — no allocation, optimized in composition.
 
 **Example** (Supertype passthrough)
@@ -21,9 +24,10 @@ import { SchemaGetter } from "effect"
 const g = SchemaGetter.passthroughSupertype<string, string>()
 ```
 
-See also:
-- `passthrough` — when types are identical
-- `passthroughSubtype` — when `E extends T`
+**See**
+
+- `passthrough` - when types are identical
+- `passthroughSubtype` - when `E extends T`
 
 **Signature**
 
@@ -31,6 +35,6 @@ See also:
 declare const passthroughSupertype: <T extends E, E>() => Getter<T, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L335)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L341)
 
 Since v4.0.0

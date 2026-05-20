@@ -5,6 +5,8 @@ Module: `Queue`<br />
 
 Type-level variance marker for `Queue`.
 
+**Details**
+
 A full `Queue` is invariant in both `A` and `E` because the same handle can
 both produce and consume values and failures.
 
@@ -17,6 +19,6 @@ export interface Variance<A, E> {
   }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Queue.ts#L293)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Queue.ts#L305)
 
 Since v4.0.0

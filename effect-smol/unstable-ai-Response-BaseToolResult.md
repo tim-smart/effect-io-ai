@@ -29,9 +29,13 @@ export interface BaseToolResult<Name extends string> extends BasePart<"tool-resu
   /**
    * Whether this is a preliminary (intermediate) result.
    *
+   * **Details**
+   *
    * Preliminary results represent progress updates during streaming tool
    * execution. Only the final result (where `preliminary` is `false` or
    * `undefined`) should be used as the authoritative output.
+   *
+   * **Gotchas**
    *
    * Only applicable for framework-executed tools during streaming.
    */
@@ -39,6 +43,6 @@ export interface BaseToolResult<Name extends string> extends BasePart<"tool-resu
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Response.ts#L1449)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Response.ts#L1450)
 
 Since v4.0.0

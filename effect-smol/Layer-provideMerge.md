@@ -3,9 +3,15 @@ Module: `Layer`<br />
 
 ## Layer.provideMerge
 
-Feeds the output services of this layer into the input of the specified
-layer, resulting in a new layer with the inputs of this layer, and the
-outputs of both layers.
+Feeds the output services of the dependency layer into the requirements of
+this layer, returning a layer that provides both sets of services.
+
+**When to use**
+
+Use this when callers need access to both the service being built and the
+dependency used to build it, such as a health check that needs both a
+repository and its database. Prefer `provide` when the dependency should stay
+private.
 
 **Example** (Providing dependencies while retaining services)
 
@@ -28,16 +34,16 @@ class UserService extends Context.Service<UserService, {
 }>()("UserService") {}
 
 // Create dependency layers
-const databaseLayer = Layer.succeed(Database)({
+const databaseLayer = Layer.succeed(Database, {
   query: Effect.fn("Database.query")((sql: string) => Effect.succeed(`DB: ${sql}`))
 })
 
-const loggerLayer = Layer.succeed(Logger)({
+const loggerLayer = Layer.succeed(Logger, {
   log: Effect.fn("Logger.log")((msg: string) => Effect.sync(() => console.log(`[LOG] ${msg}`)))
 })
 
 // UserService depends on Database and Logger
-const userServiceLayer = Layer.effect(UserService)(Effect.gen(function*() {
+const userServiceLayer = Layer.effect(UserService, Effect.gen(function*() {
   const database = yield* Database
   const logger = yield* Logger
 
@@ -72,12 +78,16 @@ const program = Effect.gen(function*() {
 )
 ```
 
+**See**
+
+- `provide` for keeping dependency services private
+
 **Signature**
 
 ```ts
 declare const provideMerge: { <RIn, E, ROut>(that: Layer<ROut, E, RIn>): <RIn2, E2, ROut2>(self: Layer<ROut2, E2, RIn2>) => Layer<ROut | ROut2, E | E2, RIn | Exclude<RIn2, ROut>>; <const Layers extends [Any, ...Array<Any>]>(that: Layers): <A, E, R>(self: Layer<A, E, R>) => Layer<A | Success<Layers[number]>, E | Error<Layers[number]>, Services<Layers[number]> | Exclude<R, Success<Layers[number]>>>; <RIn2, E2, ROut2, RIn, E, ROut>(self: Layer<ROut2, E2, RIn2>, that: Layer<ROut, E, RIn>): Layer<ROut | ROut2, E | E2, RIn | Exclude<RIn2, ROut>>; <A, E, R, const Layers extends [Any, ...Array<Any>]>(self: Layer<A, E, R>, that: Layers): Layer<A | Success<Layers[number]>, E | Error<Layers[number]>, Services<Layers[number]> | Exclude<R, Success<Layers[number]>>>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L1314)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L1443)
 
 Since v2.0.0

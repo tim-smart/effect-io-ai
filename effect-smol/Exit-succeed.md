@@ -5,8 +5,12 @@ Module: `Exit`<br />
 
 Creates a successful Exit containing the given value.
 
+**When to use**
+
 - Use to wrap a known success value into an Exit
 - Use when constructing test data or returning explicit results
+
+**Details**
 
 Returns a `Success<A>` with the provided value. Does not perform any
 computation.
@@ -31,6 +35,6 @@ console.log(Exit.isSuccess(exit)) // true
 declare const succeed: <A>(a: A) => Exit<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Exit.ts#L235)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Exit.ts#L256)
 
 Since v2.0.0

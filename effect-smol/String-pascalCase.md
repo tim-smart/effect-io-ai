@@ -11,6 +11,6 @@ Converts a string to PascalCase.
 declare const pascalCase: (self: string) => string
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L1272)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L1278)
 
 Since v4.0.0

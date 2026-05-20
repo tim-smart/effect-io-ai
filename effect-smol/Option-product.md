@@ -10,7 +10,7 @@ are `Some`.
 
 - Pairing two optional values together
 
-**Behavior**
+**Details**
 
 - Both `Some` → `Some([a, b])`
 - Either `None` → `None`
@@ -38,6 +38,6 @@ console.log(Option.product(Option.none(), Option.some(42)))
 declare const product: <A, B>(self: Option<A>, that: Option<B>) => Option<[A, B]>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L1662)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L1666)
 
 Since v2.0.0

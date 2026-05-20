@@ -10,7 +10,7 @@ all are `Some`.
 
 - Collecting several `Option`s of the same type into a non-empty tuple
 
-**Behavior**
+**Details**
 
 - All `Some` → `Some([self.value, ...rest])`
 - Any `None` → `None`
@@ -41,6 +41,6 @@ console.log(Option.productMany(first, [Option.some(2), Option.none()]))
 declare const productMany: <A>(self: Option<A>, collection: Iterable<Option<A>>) => Option<[A, ...Array<A>]>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L1699)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L1703)
 
 Since v2.0.0

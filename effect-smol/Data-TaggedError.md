@@ -5,15 +5,18 @@ Module: `Data`<br />
 
 Creates a tagged error class with a `_tag` discriminator.
 
+**When to use**
+
+Use `TaggedError` for domain errors in Effect applications where you want discriminated-union error handling.
+
+**Details**
+
 Like `Error`, but instances also carry a `readonly _tag` property,
 enabling `Effect.catchTag` and `Effect.catchTags` for tag-based recovery.
-The `_tag` is excluded from the constructor argument.
+The `_tag` is excluded from the constructor argument. Yielding an instance
+inside `Effect.gen` fails the effect with this error.
 
-- Use for domain errors in Effect applications where you want
-  discriminated-union error handling.
-- Yielding an instance inside `Effect.gen` fails the effect with this error.
-
-**Example** (tag-based error recovery)
+**Example** (Tag-based error recovery)
 
 ```ts
 import { Data, Effect } from "effect"
@@ -47,6 +50,6 @@ const recovered = program.pipe(
 declare const TaggedError: <Tag extends string>(tag: Tag) => new <A extends Record<string, any> = {}>(args: Types.VoidIfEmpty<{ readonly [P in keyof A as P extends "_tag" ? never : P]: A[P]; }>) => Cause.YieldableError & { readonly _tag: Tag; } & Readonly<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Data.ts#L769)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Data.ts#L801)
 
 Since v2.0.0

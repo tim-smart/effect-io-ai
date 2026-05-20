@@ -6,6 +6,8 @@ Module: `AiError`<br />
 Error indicating the LLM generated text that does not conform to the
 requested structured output schema.
 
+**Details**
+
 Structured output errors are retryable since LLM outputs are non-deterministic.
 
 **Example** (Creating a structured output error)
@@ -29,6 +31,6 @@ console.log(error.message)
 declare class StructuredOutputError
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AiError.ts#L804)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AiError.ts#L831)
 
 Since v4.0.0

@@ -5,8 +5,11 @@ Module: `EntityProxy`<br />
 
 Type-level conversion used by `toRpcGroup`.
 
-For each entity RPC it creates a prefixed request RPC and a discard RPC whose
-payload includes `entityId`, and whose errors include cluster client errors.
+**Details**
+
+For each entity RPC, this creates a prefixed request RPC and a discard RPC
+whose payload includes `entityId`, and whose errors include cluster client
+errors.
 
 **Signature**
 
@@ -52,6 +55,6 @@ type ConvertRpcs<Rpcs, Prefix> = Rpcs extends Rpc.Rpc<
   : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EntityProxy.ts#L112)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EntityProxy.ts#L115)
 
 Since v4.0.0

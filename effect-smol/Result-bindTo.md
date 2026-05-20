@@ -4,8 +4,12 @@ Module: `Result`<br />
 ## Result.bindTo
 
 Wraps the success value of a `Result` into a named field, producing a
-`Result<Record<N, A>>`. This is typically used to start a do-notation
-chain from an existing `Result`.
+`Result<Record<N, A>>`.
+
+**Details**
+
+This is typically used to start a do-notation chain from an existing
+`Result`.
 
 **Example** (Wrapping a value into a named field)
 
@@ -31,6 +35,6 @@ console.log(result)
 declare const bindTo: { <N extends string>(name: N): <R, L>(self: Result<R, L>) => Result<Record<N, R>, L>; <R, L, N extends string>(self: Result<R, L>, name: N): Result<Record<N, R>, L>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L1519)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L1601)
 
 Since v2.0.0

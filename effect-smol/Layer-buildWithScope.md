@@ -22,7 +22,7 @@ class Database extends Context.Service<Database, {
 const program = Effect.gen(function*() {
   const scope = yield* Effect.scope
 
-  const dbLayer = Layer.effect(Database)(Effect.gen(function*() {
+  const dbLayer = Layer.effect(Database, Effect.gen(function*() {
     console.log("Initializing database...")
     yield* Scope.addFinalizer(
       scope,
@@ -46,6 +46,6 @@ const program = Effect.gen(function*() {
 declare const buildWithScope: { (scope: Scope.Scope): <RIn, E, ROut>(self: Layer<ROut, E, RIn>) => Effect<Context.Context<ROut>, E, RIn>; <RIn, E, ROut>(self: Layer<ROut, E, RIn>, scope: Scope.Scope): Effect<Context.Context<ROut>, E, RIn>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L651)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L677)
 
 Since v2.0.0

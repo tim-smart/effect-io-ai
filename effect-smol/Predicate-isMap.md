@@ -5,10 +5,12 @@ Module: `Predicate`<br />
 
 Checks whether a value is a `Map`.
 
-When to use:
+**When to use**
+
 - You need a runtime guard for `Map` values.
 
-Behavior:
+**Details**
+
 - Pure; does not mutate input.
 - Uses `instanceof Map`.
 
@@ -24,7 +26,10 @@ if (Predicate.isMap(data)) {
 }
 ```
 
-See also: `isSet`, `isIterable`
+**See**
+
+- `isSet`
+- `isIterable`
 
 **Signature**
 
@@ -32,6 +37,6 @@ See also: `isSet`, `isIterable`
 declare const isMap: (input: unknown) => input is Map<unknown, unknown>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L511)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L543)
 
 Since v2.0.0

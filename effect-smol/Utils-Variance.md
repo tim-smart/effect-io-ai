@@ -6,19 +6,18 @@ Module: `Utils`<br />
 Type-level marker encoding the variance of a `TypeLambda`'s type
 parameters.
 
-When to use:
+**When to use**
 
-- Define variance constraints for a higher-kinded type so that
-  `Gen` can correctly infer `R`, `O`, and `E` from yielded values.
-- You typically don't construct values of this type — it exists purely for
-  type inference.
+Define variance constraints for a higher-kinded type so that `Gen`
+can correctly infer `R`, `O`, and `E` from yielded values. You typically
+don't construct values of this type — it exists purely for type inference.
 
-Behavior:
+**Details**
 
-- `F` is invariant (must match exactly).
-- `R` is contravariant (input / environment position).
-- `O` and `E` are covariant (output / error position).
-- Pure type-level construct — no runtime representation.
+`F` is invariant and must match exactly. `R` is contravariant in the input
+or environment position. `O` and `E` are covariant in the output and error
+positions. This is a pure type-level construct with no runtime
+representation.
 
 **Example** (Declaring variance for a TypeLambda)
 
@@ -48,6 +47,6 @@ export interface Variance<in out F extends TypeLambda, in R, out O, out E> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Utils.ts#L175)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Utils.ts#L171)
 
 Since v2.0.0

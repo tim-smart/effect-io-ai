@@ -6,6 +6,8 @@ Module: `HttpPlatform`<br />
 Provides the default `HttpPlatform` implementation for serving file paths and
 `File`-like values as streamed HTTP responses.
 
+**Details**
+
 The layer uses the `FileSystem` and weak ETag services to add file metadata
 headers such as `etag` and `last-modified`.
 
@@ -15,6 +17,6 @@ headers such as `etag` and `last-modified`.
 declare const layer: Layer.Layer<HttpPlatform, never, FileSystem.FileSystem>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpPlatform.ts#L154)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpPlatform.ts#L156)
 
 Since v4.0.0

@@ -6,6 +6,7 @@ Module: `Runtime`<br />
 Reads the runtime error-reporting marker from an unknown error value.
 
 **Details**
+
 Returns a boolean `[Runtime.errorReported]` property when it is present on an
 object. Otherwise returns `true`, so failures are logged by default.
 
@@ -15,6 +16,6 @@ object. Otherwise returns `true`, so failures are logged by default.
 declare const getErrorReported: (u: unknown) => boolean
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Runtime.ts#L326)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Runtime.ts#L329)
 
 Since v4.0.0

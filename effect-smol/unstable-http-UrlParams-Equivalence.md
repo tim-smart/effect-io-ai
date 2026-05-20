@@ -5,6 +5,8 @@ Module: `UrlParams`<br />
 
 Order-sensitive equivalence for `UrlParams`.
 
+**Details**
+
 Two values are equivalent when they contain the same key-value pairs in the same
 order.
 
@@ -14,6 +16,6 @@ order.
 declare const Equivalence: Equ.Equivalence<UrlParams>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/UrlParams.ts#L207)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/UrlParams.ts#L221)
 
 Since v4.0.0

@@ -5,9 +5,12 @@ Module: `ConfigProvider`<br />
 
 Converts all string path segments to `CONSTANT_CASE` before lookup.
 
-When to use:
-- Bridging camelCase schema keys to `SCREAMING_SNAKE_CASE` environment
-  variables (the most common pattern).
+**When to use**
+
+Use this to bridge camelCase schema keys to `SCREAMING_SNAKE_CASE`
+environment variables.
+
+**Details**
 
 Numeric segments are left unchanged. This is a specialization of
 `mapInput`.
@@ -34,6 +37,6 @@ const provider = ConfigProvider.fromEnv({
 declare const constantCase: (self: ConfigProvider) => ConfigProvider
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ConfigProvider.ts#L542)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ConfigProvider.ts#L570)
 
 Since v2.0.0

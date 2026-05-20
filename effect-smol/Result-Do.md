@@ -5,6 +5,8 @@ Module: `Result`<br />
 
 Starting point for the "do notation" simulation with `Result`.
 
+**Details**
+
 Creates a `Result<{}>` (success with an empty object). Use with
 `bind` to add `Result`-producing fields and `let`
 to add pure computed fields.
@@ -36,6 +38,6 @@ console.log(result)
 declare const Do: Result<{}, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L1452)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L1528)
 
 Since v2.0.0

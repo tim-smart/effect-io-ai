@@ -15,6 +15,8 @@ export interface Bottom<T, TypeParameters extends ReadonlyArray<Top>> extends Do
     /**
      * Complete message to use when this schema node reports an issue.
      *
+     * **Details**
+     *
      * This replaces the default message for matching issue types instead of
      * only changing the expected label. For a filter or refinement failure,
      * annotate the filter with `message` to replace the whole filter failure
@@ -28,6 +30,8 @@ export interface Bottom<T, TypeParameters extends ReadonlyArray<Top>> extends Do
     readonly messageUnexpectedKey?: string | undefined
     /**
      * Stable identifier for this schema node.
+     *
+     * **Details**
      *
      * Identifiers are used by schema tooling, including JSON Schema
      * generation, to name references. The default formatter also uses
@@ -54,6 +58,6 @@ export interface Bottom<T, TypeParameters extends ReadonlyArray<Top>> extends Do
   }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L12572)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L12955)
 
 Since v4.0.0

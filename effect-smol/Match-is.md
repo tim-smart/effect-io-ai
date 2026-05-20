@@ -5,6 +5,8 @@ Module: `Match`<br />
 
 Matches a specific set of literal values (e.g., `Match.is("a", 42, true)`).
 
+**Details**
+
 This function creates a predicate that matches any of the provided literal values.
 It's useful for matching against multiple specific values in a single pattern.
 
@@ -43,6 +45,6 @@ console.log(handleStatus("pending"))
 declare const is: <Literals extends ReadonlyArray<string | number | bigint | boolean | null>>(...literals: Literals) => SafeRefinement<Literals[number]>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L1189)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L1209)
 
 Since v4.0.0

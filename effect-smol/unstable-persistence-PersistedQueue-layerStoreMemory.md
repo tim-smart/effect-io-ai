@@ -5,6 +5,8 @@ Module: `PersistedQueue`<br />
 
 Provides an in-memory `PersistedQueueStore`.
 
+**Details**
+
 The store is process-local and volatile; failed takes are requeued until the
 configured maximum attempts is reached.
 
@@ -14,6 +16,6 @@ configured maximum attempts is reached.
 declare const layerStoreMemory: Layer.Layer<PersistedQueueStore, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PersistedQueue.ts#L295)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PersistedQueue.ts#L306)
 
 Since v4.0.0

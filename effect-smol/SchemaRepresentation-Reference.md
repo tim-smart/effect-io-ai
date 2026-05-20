@@ -5,9 +5,15 @@ Module: `SchemaRepresentation`<br />
 
 A named reference to a definition in the `References` map.
 
-- `$ref` is the key into `Document.references` or `MultiDocument.references`.
-- Resolved lazily by `toSchema` and `toCodeDocument`.
-- Throws at runtime if the key is not found in the references map.
+**Details**
+
+`$ref` is the key into `Document.references` or `MultiDocument.references`.
+References are resolved lazily by `toSchema` and
+`toCodeDocument`.
+
+**Gotchas**
+
+Resolution throws at runtime if the key is not found in the references map.
 
 **See**
 
@@ -23,6 +29,6 @@ export interface Reference {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaRepresentation.ts#L161)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaRepresentation.ts#L173)
 
 Since v4.0.0

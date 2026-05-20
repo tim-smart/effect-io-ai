@@ -5,12 +5,12 @@ Module: `SchemaIssue`<br />
 
 Extracts the actual input value from any `Issue` variant.
 
-When to use:
+**When to use**
 
 - Retrieve the offending value for logging or custom error rendering.
 - Uniformly access `actual` regardless of which issue variant you have.
 
-Behaviour:
+**Details**
 
 - Pure; does not mutate the issue.
 - Returns `Option.none()` for `Pointer` and `MissingKey` (they carry no
@@ -42,6 +42,6 @@ console.log(SchemaIssue.getActual(issue))
 declare const getActual: (issue: Issue) => Option.Option<unknown>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaIssue.ts#L854)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaIssue.ts#L856)
 
 Since v4.0.0

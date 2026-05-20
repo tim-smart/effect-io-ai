@@ -11,6 +11,6 @@ Re-exports all named exports from the "./PartitionedSemaphore.ts" module as `Par
 export * as PartitionedSemaphore from "./PartitionedSemaphore.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L3648)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L3659)
 
 Since v4.0.0

@@ -5,6 +5,8 @@ Module: `Effect`<br />
 
 Creates untraced function effects with eager evaluation optimization.
 
+**Details**
+
 Executes generator functions eagerly when all yielded effects are synchronous,
 stopping at the first async effect and deferring to normal execution.
 
@@ -28,6 +30,6 @@ const effect = computation() // Executed immediately if all effects are sync
 declare const fnUntracedEager: fn.Untraced
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L14490)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L14623)
 
 Since v4.0.0

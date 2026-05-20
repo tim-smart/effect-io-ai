@@ -5,18 +5,23 @@ Module: `Equivalence`<br />
 
 Creates an equivalence relation that uses strict equality (`===`) to compare values.
 
-When to use this:
-- For primitive types (numbers, strings, booleans) where `===` is appropriate
-- When you need reference equality for objects (same object instance)
-- As a building block for more complex equivalences via `mapInput` or `combine`
-- When performance is critical and you don't need structural equality
+**When to use**
 
-Behavior:
+- Use for primitive types where `===` is appropriate
+- Use when you need reference equality for objects
+- Use as a building block for more complex equivalences via `mapInput` or `combine`
+- Use when performance is critical and you do not need structural equality
+
+**Details**
+
 - Does not mutate inputs
 - Uses JavaScript's strict equality operator (`===`)
 - For primitives: compares values directly
-- For objects: compares by reference (same object instance)
-- Note: `NaN !== NaN`, so `NaN` values are never considered equivalent
+- For objects: compares by reference, so only the same object instance is equivalent
+
+**Gotchas**
+
+`NaN !== NaN`, so `NaN` values are never considered equivalent.
 
 **Example** (Primitive types)
 
@@ -42,7 +47,10 @@ console.log(strictObjEq(obj, obj)) // true
 console.log(strictObjEq(obj, { value: 42 })) // false (different references)
 ```
 
-See also: `make`, `Equal` (for structural equality)
+**See**
+
+- `make`
+- `Equal` for structural equality
 
 **Signature**
 
@@ -50,6 +58,6 @@ See also: `make`, `Equal` (for structural equality)
 declare const strictEqual: <A>() => Equivalence<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Equivalence.ts#L239)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Equivalence.ts#L250)
 
 Since v4.0.0

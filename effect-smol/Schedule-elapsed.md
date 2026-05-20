@@ -5,6 +5,8 @@ Module: `Schedule`<br />
 
 A schedule that always recurs and returns the total elapsed duration since the first recurrence.
 
+**Details**
+
 This schedule never stops and outputs the cumulative time that has passed since the schedule
 started executing. Useful for tracking execution time or implementing time-based logic.
 
@@ -33,6 +35,6 @@ const program = Effect.gen(function*() {
 declare const elapsed: Schedule<Duration.Duration, unknown, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L1896)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L1906)
 
 Since v2.0.0

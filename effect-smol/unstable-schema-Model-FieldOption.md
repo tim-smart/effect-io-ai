@@ -5,6 +5,8 @@ Module: `Model`<br />
 
 Convert a field to one that is optional for all variants.
 
+**Details**
+
 For the database variants, it will accept `null`able values.
 For the JSON variants, it will also accept missing keys.
 
@@ -23,6 +25,6 @@ export interface FieldOption<S extends Schema.Top> extends
 {}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Model.ts#L311)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Model.ts#L326)
 
 Since v4.0.0

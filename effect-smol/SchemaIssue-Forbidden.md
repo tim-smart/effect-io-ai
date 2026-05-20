@@ -6,12 +6,12 @@ Module: `SchemaIssue`<br />
 Issue produced when a forbidden operation is encountered during parsing,
 such as an asynchronous Effect running inside `Schema.decodeUnknownSync`.
 
-When to use:
+**When to use**
 
 - Detect that a schema requires async execution but was run synchronously.
 - Provide custom error messages via the `annotations.message` field.
 
-Behaviour:
+**Details**
 
 - `actual` is `Option.some(value)` when the input is known, or
   `Option.none()` when absent.
@@ -50,6 +50,6 @@ declare class Forbidden { constructor(
   ) }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaIssue.ts#L676)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaIssue.ts#L678)
 
 Since v3.10.0

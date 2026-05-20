@@ -5,6 +5,8 @@ Module: `Rpc`<br />
 
 Represents a typed RPC definition.
 
+**Details**
+
 An RPC is identified by a tag and carries payload, success, error, defect,
 middleware, and annotation metadata used by RPC clients and servers.
 
@@ -111,6 +113,6 @@ export interface Rpc<
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Rpc.ts#L90)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Rpc.ts#L94)
 
 Since v4.0.0

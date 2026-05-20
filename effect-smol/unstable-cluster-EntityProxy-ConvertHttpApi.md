@@ -5,8 +5,11 @@ Module: `EntityProxy`<br />
 
 Type-level conversion used by `toHttpApiGroup`.
 
-For each entity RPC it creates a POST endpoint at `/<tag>/:entityId` and a
-discard endpoint at `/<tag>/:entityId/discard`, including cluster client errors.
+**Details**
+
+For each entity RPC, this creates a POST endpoint at `/<tag>/:entityId` and a
+discard endpoint at `/<tag>/:entityId/discard`, including cluster client
+errors.
 
 **Signature**
 
@@ -47,6 +50,6 @@ type ConvertHttpApi<Rpcs> = Rpcs extends Rpc.Rpc<
   : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EntityProxy.ts#L238)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EntityProxy.ts#L244)
 
 Since v4.0.0

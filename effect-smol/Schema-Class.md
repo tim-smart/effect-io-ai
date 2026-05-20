@@ -5,6 +5,8 @@ Module: `Schema`<br />
 
 Interface for schema-backed classes created with `Class`.
 
+**Details**
+
 A `Class` is a TypeScript class whose constructor validates its input
 against a `Struct` schema. Instances are always structurally valid.
 
@@ -43,7 +45,9 @@ export interface Class<Self, S extends Top & { readonly fields: Struct.Fields },
   /**
    * Returns a new struct with the fields modified by the provided function.
    *
-   * **Options**
+   * **Details**
+   *
+   * Options:
    *
    * - `unsafePreserveChecks` - if `true`, keep any `.check(...)` constraints
    *   that were attached to the original struct. Defaults to `false`.
@@ -73,6 +77,6 @@ export interface Class<Self, S extends Top & { readonly fields: Struct.Fields },
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L10963)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L11320)
 
 Since v3.10.0

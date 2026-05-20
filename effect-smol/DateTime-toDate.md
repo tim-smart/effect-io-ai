@@ -5,6 +5,8 @@ Module: `DateTime`<br />
 
 Convert a `DateTime` to a `Date`, applying the time zone first.
 
+**Details**
+
 For `DateTime.Zoned`, this adjusts for the time zone before converting.
 For `DateTime.Utc`, this is equivalent to `toDateUtc`.
 
@@ -28,6 +30,6 @@ console.log(DateTime.toDate(zoned).toISOString())
 declare const toDate: (self: DateTime) => Date
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L1457)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L1535)
 
 Since v3.6.0

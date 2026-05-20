@@ -5,6 +5,8 @@ Module: `OtlpResource`<br />
 
 Returns the `service.name` attribute from an OTLP resource.
 
+**Gotchas**
+
 Throws if the resource does not contain a string `service.name` attribute.
 
 **Signature**
@@ -13,6 +15,6 @@ Throws if the resource does not contain a string `service.name` attribute.
 declare const serviceNameUnsafe: (resource: Resource) => string
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/OtlpResource.ts#L129)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/OtlpResource.ts#L135)
 
 Since v4.0.0

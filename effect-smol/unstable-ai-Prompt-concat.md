@@ -5,8 +5,10 @@ Module: `Prompt`<br />
 
 Concatenates a prompt with additional raw input by concatenating messages.
 
-Creates a new prompt containing all messages from both the original prompt,
-and the provided raw input, maintaining the order of messages.
+**Details**
+
+The returned prompt contains all messages from the original prompt followed
+by the provided raw input, preserving message order.
 
 **Example** (Concatenating prompts)
 
@@ -27,6 +29,6 @@ const merged = Prompt.concat(systemPrompt, "Hello, world!")
 declare const concat: { (input: RawInput): (self: Prompt) => Prompt; (self: Prompt, input: RawInput): Prompt; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L2081)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L2098)
 
 Since v4.0.0

@@ -6,12 +6,12 @@ Module: `PubSub`<br />
 Creates a bounded `PubSub` that applies backpressure when it reaches
 capacity.
 
+**Details**
+
 Published messages are retained until all current subscribers have taken
 them. When the capacity is full, publishers suspend until space is available.
 Pass an options object to configure both `capacity` and an optional replay
 buffer for late subscribers.
-
-                  with capacity and optional replay buffer size
 
 **Example** (Creating a bounded PubSub)
 

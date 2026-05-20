@@ -5,6 +5,8 @@ Module: `HttpServerRespondable`<br />
 
 Protocol for values that can be converted into an `HttpServerResponse`.
 
+**Details**
+
 Implement the protocol method to describe the response that should be sent for
 the value.
 
@@ -16,6 +18,6 @@ export interface Respondable {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpServerRespondable.ts#L46)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpServerRespondable.ts#L48)
 
 Since v4.0.0

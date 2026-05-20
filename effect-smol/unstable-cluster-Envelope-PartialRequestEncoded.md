@@ -5,6 +5,8 @@ Module: `Envelope`<br />
 
 Serialized JSON shape of a request envelope.
 
+**Details**
+
 Identifiers are encoded as strings and the RPC payload remains unknown until
 decoded with the RPC schema.
 
@@ -31,6 +33,6 @@ export interface PartialRequestEncoded {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Envelope.ts#L131)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Envelope.ts#L139)
 
 Since v4.0.0

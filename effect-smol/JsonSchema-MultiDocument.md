@@ -4,11 +4,16 @@ Module: `JsonSchema`<br />
 ## JsonSchema.MultiDocument
 
 Like `Document`, but carries multiple root schemas that share a
-single definitions pool. The `schemas` tuple is non-empty (at least one
-element).
+single definitions pool.
 
-- Use when generating several schemas (e.g. request body + response body)
-  that reference the same set of definitions.
+**When to use**
+
+Use `MultiDocument` when generating several schemas, such as a request body
+and a response body, that reference the same set of definitions.
+
+**Details**
+
+The `schemas` tuple is non-empty and contains at least one element.
 
 **See**
 
@@ -25,6 +30,6 @@ export interface MultiDocument<D extends Dialect> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/JsonSchema.ts#L193)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/JsonSchema.ts#L201)
 
 Since v4.0.0

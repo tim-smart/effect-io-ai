@@ -3,9 +3,11 @@ Module: `Command`<br />
 
 ## Command.runWith
 
-Runs a command with explicitly provided arguments instead of using process.argv.
+Runs a command with explicitly provided arguments instead of using arguments from `Stdio`.
 
-This function is useful for testing CLI applications or when you want to
+**When to use**
+
+Use this function for testing CLI applications or when you want to
 programmatically execute commands with specific arguments.
 
 **Example** (Running commands with explicit arguments)
@@ -45,6 +47,6 @@ const testProgram = Effect.gen(function*() {
 declare const runWith: <const Name extends string, Input, E, R, ContextInput>(command: Command<Name, Input, ContextInput, E, R>, config: { readonly version: string; }) => (input: ReadonlyArray<string>) => Effect.Effect<void, Exclude<E, Terminal.QuitError> | CliError.CliError, R | Environment>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Command.ts#L1397)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Command.ts#L1473)
 
 Since v4.0.0

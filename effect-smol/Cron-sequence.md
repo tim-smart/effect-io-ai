@@ -5,9 +5,11 @@ Module: `Cron`<br />
 
 Returns an infinite iterator that yields dates matching the Cron schedule.
 
-This function creates an iterator that generates an infinite sequence
-of dates when the cron schedule should trigger, starting from the
-specified date.
+**Details**
+
+The iterator generates an infinite sequence of dates when the cron schedule
+should trigger, starting after the specified date/time or after the current
+time when no date is provided.
 
 **Example** (Iterating scheduled occurrences)
 
@@ -30,6 +32,6 @@ console.log(next5)
 declare const sequence: (cron: Cron, now?: DateTime.DateTime.Input) => IterableIterator<Date>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cron.ts#L889)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cron.ts#L907)
 
 Since v2.0.0

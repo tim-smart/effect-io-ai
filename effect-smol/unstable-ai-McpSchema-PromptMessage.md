@@ -5,6 +5,8 @@ Module: `McpSchema`<br />
 
 Describes a message returned as part of a prompt.
 
+**Details**
+
 This is similar to `SamplingMessage`, but also supports the embedding of
 resources from the MCP server.
 
@@ -14,6 +16,6 @@ resources from the MCP server.
 declare class PromptMessage
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L1194)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L1224)
 
 Since v4.0.0

@@ -8,6 +8,7 @@ synchronously, returning the decoded value or throwing an `Error` whose cause
 contains the schema issue. For `unknown` input use `decodeUnknownSync`.
 
 **Details**
+
 Only service-free schemas can be decoded synchronously. Options may be
 provided either when creating the decoder or when applying it; application
 options override creation options.
@@ -18,6 +19,6 @@ options override creation options.
 declare const decodeSync: <S extends Decoder<unknown>>(schema: S, options?: AST.ParseOptions) => (input: S["Encoded"], options?: AST.ParseOptions) => S["Type"]
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L1329)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L1371)
 
 Since v4.0.0

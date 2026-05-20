@@ -5,6 +5,8 @@ Module: `HttpServerResponse`<br />
 
 Creates a streaming response from a stream of byte chunks.
 
+**Details**
+
 Optional response metadata can supply the status, headers, content type, and
 content length.
 
@@ -14,6 +16,6 @@ content length.
 declare const stream: <E>(body: Stream.Stream<Uint8Array, E>, options?: Options | undefined) => HttpServerResponse
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpServerResponse.ts#L433)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpServerResponse.ts#L453)
 
 Since v4.0.0

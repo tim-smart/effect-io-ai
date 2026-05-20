@@ -28,6 +28,6 @@ const program = Effect.gen(function*() {
 declare const isOpen: (self: TxQueueState) => Effect.Effect<boolean>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxQueue.ts#L1388)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxQueue.ts#L1373)
 
 Since v4.0.0

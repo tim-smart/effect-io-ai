@@ -5,6 +5,8 @@ Module: `Message`<br />
 
 Outgoing control envelope paired with RPC metadata.
 
+**When to use**
+
 Use `OutgoingEnvelope.interrupt` to construct an interrupt envelope for an
 in-flight request.
 
@@ -14,6 +16,6 @@ in-flight request.
 declare class OutgoingEnvelope
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Message.ts#L174)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Message.ts#L190)
 
 Since v4.0.0

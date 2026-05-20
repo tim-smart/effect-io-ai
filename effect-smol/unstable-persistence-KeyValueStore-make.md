@@ -5,6 +5,8 @@ Module: `KeyValueStore`<br />
 
 Constructs a `KeyValueStore` from primitive store operations.
 
+**Details**
+
 Default implementations are derived for `has`, `isEmpty`, `modify`, and
 `modifyUint8Array` unless they are provided in the options.
 
@@ -14,6 +16,6 @@ Default implementations are derived for `has`, `isEmpty`, `modify`, and
 declare const make: (options: MakeOptions) => KeyValueStore
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/KeyValueStore.ts#L227)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/KeyValueStore.ts#L231)
 
 Since v4.0.0

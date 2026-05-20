@@ -5,10 +5,12 @@ Module: `SchemaTransformation`<br />
 
 Decodes a hex encoded `string` into a UTF-8 `string` and encodes it back.
 
-When to use this:
+**When to use**
+
 - Handling text data transmitted as hexadecimal strings.
 
-Behavior:
+**Details**
+
 - Decode: parses the hex string into a UTF-8 string.
 - Encode: encodes the string as a hex string.
 
@@ -22,7 +24,8 @@ const schema = Schema.String.pipe(
 )
 ```
 
-See also:
+**See**
+
 - `stringFromBase64String`
 - `Schema.StringFromHex` - a ready-made schema wrapping this transformation.
 
@@ -32,6 +35,6 @@ See also:
 declare const stringFromHexString: Transformation<string, string, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L1464)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L1508)
 
 Since v4.0.0

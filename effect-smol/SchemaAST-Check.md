@@ -6,6 +6,8 @@ Module: `SchemaAST`<br />
 A validation check — either a single `Filter` or a composite
 `FilterGroup`.
 
+**Details**
+
 Stored in the `Checks` array on `Base.checks`.
 
 **See**
@@ -19,6 +21,6 @@ Stored in the `Checks` array on `Base.checks`.
 type Check<T> = Filter<T> | FilterGroup<T>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L2603)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L2649)
 
 Since v4.0.0

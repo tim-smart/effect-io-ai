@@ -5,6 +5,8 @@ Module: `AnthropicLanguageModel`<br />
 
 Represents a provider-defined tool that can be passed to the Anthropic API.
 
+**Details**
+
 These include Anthropic's built-in tools like computer use, code execution,
 web search, and text editing.
 
@@ -29,6 +31,6 @@ type AnthropicProviderDefinedTool = | typeof Generated.BetaBashTool_20241022.Enc
   | typeof Generated.BetaWebSearchTool_20250305.Encoded
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicLanguageModel.ts#L1146)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicLanguageModel.ts#L1194)
 
 Since v4.0.0

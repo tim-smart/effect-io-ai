@@ -5,6 +5,8 @@ Module: `Chat`<br />
 
 The `Chat` service tag for dependency injection.
 
+**Details**
+
 This tag provides access to chat functionality throughout your application,
 enabling persistent conversational AI interactions with full context
 management.
@@ -30,6 +32,6 @@ const program = Effect.gen(function*() {
 declare class Chat
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chat.ts#L96)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chat.ts#L98)
 
 Since v4.0.0

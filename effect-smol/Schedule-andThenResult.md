@@ -7,6 +7,8 @@ Returns a new `Schedule` that will first execute the left (i.e. `self`)
 schedule to completion. Once the left schedule is complete, the right (i.e.
 `other`) schedule will be executed to completion.
 
+**Details**
+
 The resulting schedule emits a `Result` to indicate which phase produced
 each output: outputs from `self` are emitted as `Failure`, and outputs from
 `other` are emitted as `Success`.
@@ -46,6 +48,6 @@ const program = Effect.gen(function*() {
 declare const andThenResult: { <Output2, Input2, Error2, Env2>(other: Schedule<Output2, Input2, Error2, Env2>): <Output, Input, Error, Env>(self: Schedule<Output, Input, Error, Env>) => Schedule<Result.Result<Output2, Output>, Input & Input2, Error | Error2, Env | Env2>; <Output, Input, Error, Env, Output2, Input2, Error2, Env2>(self: Schedule<Output, Input, Error, Env>, other: Schedule<Output2, Input2, Error2, Env2>): Schedule<Result.Result<Output2, Output>, Input & Input2, Error | Error2, Env | Env2>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L739)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L743)
 
 Since v4.0.0

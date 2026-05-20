@@ -6,14 +6,15 @@ Module: `Combiner`<br />
 Creates a `Combiner` that returns the smaller of two values according to
 the provided `Order`.
 
-When to use:
-- You want to accumulate the minimum value across a collection.
-- You are building a `Reducer` that tracks the running minimum.
+**When to use**
 
-Behavior:
-- Compares using the given `Order`. When values are equal, returns `that`
-  (the second argument).
-- Pure – does not mutate either argument.
+Use this when you want to accumulate the minimum value across a collection or
+build a `Reducer` that tracks the running minimum.
+
+**Details**
+
+The combiner compares values using the given `Order`. When values are equal,
+it returns `that` (the second argument). It does not mutate either argument.
 
 **Example** (minimum of two numbers)
 
@@ -39,6 +40,6 @@ console.log(Min.combine(1, 3))
 declare const min: <A>(order: Order.Order<A>) => Combiner<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Combiner.ts#L196)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Combiner.ts#L197)
 
 Since v4.0.0

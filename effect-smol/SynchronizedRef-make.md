@@ -11,6 +11,6 @@ Creates a `SynchronizedRef` from an initial value, wrapped in an `Effect`.
 declare const make: <A>(value: A) => Effect.Effect<SynchronizedRef<A>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SynchronizedRef.ts#L80)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SynchronizedRef.ts#L82)
 
 Since v2.0.0

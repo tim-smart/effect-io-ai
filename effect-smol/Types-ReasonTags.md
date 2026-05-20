@@ -5,8 +5,10 @@ Module: `Types`<br />
 
 Extracts the `_tag` values from the `reason` type of an error.
 
-- Shorthand for `Tags<ReasonOf<E>>`.
-- Returns `never` if `E` has no `reason` field or the reason has no `_tag`.
+**Details**
+
+This is shorthand for `Tags<ReasonOf<E>>`. It returns `never` if `E` has no
+`reason` field or the reason has no `_tag`.
 
 **Example** (Getting reason tags)
 
@@ -33,6 +35,6 @@ type ReasonTags<E> = E extends { readonly reason: { readonly _tag: string } } ? 
   : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Types.ts#L870)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Types.ts#L977)
 
 Since v4.0.0

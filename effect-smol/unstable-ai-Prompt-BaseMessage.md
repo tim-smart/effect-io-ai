@@ -5,7 +5,10 @@ Module: `Prompt`<br />
 
 Base interface for all message types.
 
-Provides common structure including role and provider options.
+**Details**
+
+It provides the common structure shared by all messages, including the role
+and provider options.
 
 **Signature**
 
@@ -23,6 +26,6 @@ export interface BaseMessage<Role extends string, Options extends ProviderOption
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L998)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L1011)
 
 Since v4.0.0

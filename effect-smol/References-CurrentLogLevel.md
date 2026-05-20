@@ -6,7 +6,8 @@ Module: `References`<br />
 Reference for the current log severity used by `Effect.log` when no explicit
 level is provided.
 
-**Notes**
+**Details**
+
 Use `MinimumLogLevel` to control which log entries are filtered out.
 
 **Example** (Changing the current log level)
@@ -50,6 +51,6 @@ const dynamicLogging = Effect.gen(function*() {
 declare const CurrentLogLevel: Context.Reference<Severity>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/References.ts#L199)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/References.ts#L212)
 
 Since v4.0.0

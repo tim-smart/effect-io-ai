@@ -5,10 +5,12 @@ Module: `SchemaGetter`<br />
 
 Encodes a nested object into a `URLSearchParams` instance using bracket-path notation.
 
-Use this when:
+**When to use**
+
 - Serializing structured data to query parameters for URLs.
 
-Behavior:
+**Details**
+
 - Pure, never fails.
 - Flattens nested objects/arrays into bracket-path keys.
 - Non-object inputs produce an empty `URLSearchParams`.
@@ -22,10 +24,11 @@ const encode = SchemaGetter.encodeURLSearchParams()
 // Getter<URLSearchParams, unknown>
 ```
 
-See also:
-- `decodeURLSearchParams` — inverse operation
-- `collectBracketPathEntries` — the underlying flattener
-- `encodeFormData` — similar for FormData
+**See**
+
+- `decodeURLSearchParams` - inverse operation
+- `collectBracketPathEntries` - the underlying flattener
+- `encodeFormData` - similar for FormData
 
 **Signature**
 
@@ -33,6 +36,6 @@ See also:
 declare const encodeURLSearchParams: () => Getter<URLSearchParams, unknown>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L1702)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L1736)
 
 Since v4.0.0

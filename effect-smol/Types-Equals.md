@@ -5,12 +5,15 @@ Module: `Types`<br />
 
 Determines if two types are exactly equal at the type level.
 
-- Use in conditional types or type-level tests to assert type equality.
-- Resolves to `true` if `X` and `Y` are identical, `false` otherwise.
+**When to use**
 
-Behavior:
+Use in conditional types or type-level tests to assert type equality.
+
+**Details**
+
 - Uses the `<T>() => T extends X ? 1 : 2` trick for exact equality,
   distinguishing between `any`, `unknown`, `never`, and other types.
+- Resolves to `true` if `X` and `Y` are identical, `false` otherwise.
 
 **Example** (Type equality check)
 
@@ -35,6 +38,6 @@ type Equals<X, Y> = (<T>() => T extends X ? 1 : 2) extends <
   : false
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Types.ts#L292)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Types.ts#L324)
 
 Since v2.0.0

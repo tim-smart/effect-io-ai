@@ -5,6 +5,8 @@ Module: `Result`<br />
 
 Transforms `Option<Result<A, E>>` into `Result<Option<A>, E>`.
 
+**Details**
+
 - `None` becomes `Success(None)`
 - `Some(Success(a))` becomes `Success(Some(a))`
 - `Some(Failure(e))` becomes `Failure(e)`
@@ -33,6 +35,6 @@ console.log(Result.transposeOption(none))
 declare const transposeOption: <A = never, E = never>(self: Option<Result<A, E>>) => Result<Option<A>, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L1594)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L1680)
 
 Since v3.14.0

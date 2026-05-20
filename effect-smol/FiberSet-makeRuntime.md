@@ -5,6 +5,8 @@ Module: `FiberSet`<br />
 
 Creates a scoped run function that forks effects into a new `FiberSet`.
 
+**Details**
+
 Each call returns the forked fiber and adds it to the set. Managed fibers are
 removed when they complete and are interrupted when the set's scope closes.
 
@@ -33,6 +35,6 @@ const program = Effect.gen(function*() {
 declare const makeRuntime: <R = never, A = unknown, E = unknown>() => Effect.Effect<(<XE extends E, XA extends A>(effect: Effect.Effect<XA, XE, R>, options?: (Effect.RunOptions & { readonly propagateInterruption?: boolean | undefined; }) | undefined) => Fiber.Fiber<XA, XE>), never, Scope.Scope | R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FiberSet.ts#L214)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FiberSet.ts#L219)
 
 Since v2.0.0

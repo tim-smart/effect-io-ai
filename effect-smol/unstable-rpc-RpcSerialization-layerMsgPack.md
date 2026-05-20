@@ -5,6 +5,8 @@ Module: `RpcSerialization`<br />
 
 A rpc serialization layer that uses MessagePack for serialization.
 
+**Details**
+
 MessagePack has a more compact binary format compared to JSON and NDJSON. It
 also has better support for binary data.
 
@@ -14,6 +16,6 @@ also has better support for binary data.
 declare const layerMsgPack: Layer.Layer<RpcSerialization, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RpcSerialization.ts#L549)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RpcSerialization.ts#L555)
 
 Since v4.0.0

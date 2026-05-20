@@ -5,6 +5,8 @@ Module: `DateTime`<br />
 
 Add a fixed offset time zone to a `DateTime`.
 
+**Details**
+
 The offset is in milliseconds.
 
 **Example** (Setting fixed-offset time zones)
@@ -26,6 +28,6 @@ Effect.gen(function*() {
 declare const setZoneOffset: { (offset: number, options?: { readonly adjustForTimeZone?: boolean | undefined; readonly disambiguation?: Disambiguation | undefined; }): (self: DateTime) => Zoned; (self: DateTime, offset: number, options?: { readonly adjustForTimeZone?: boolean | undefined; readonly disambiguation?: Disambiguation | undefined; }): Zoned; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L891)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L943)
 
 Since v3.6.0

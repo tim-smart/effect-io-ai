@@ -6,14 +6,16 @@ Module: `Effect`<br />
 Creates an `Effect` that represents a synchronous computation that might
 fail.
 
-**When to Use**
+**When to use**
 
 In situations where you need to perform synchronous operations that might
 fail, such as parsing JSON, you can use the `try` constructor. This
 constructor is designed to handle operations that could throw exceptions by
 capturing those exceptions and transforming them into manageable errors.
 
-**Error Handling**
+**Details**
+
+Error Handling:
 
 There are two ways to handle errors with `try`:
 
@@ -21,11 +23,6 @@ There are two ways to handle errors with `try`:
    effect fails with an `UnknownError`.
 2. If you provide a `catch` function, the error is caught and the `catch`
    function maps it to an error of type `E`.
-
-**See**
-
-- `sync` if the effectful computation is synchronous and does not
-throw errors.
 
 **Example** (Parsing JSON with typed error mapping)
 
@@ -64,12 +61,17 @@ Effect.runPromiseExit(parseJSON("invalid json")).then(console.log)
 // Output: Exit.failure with custom Error message
 ```
 
+**See**
+
+- `sync` if the effectful computation is synchronous and does not
+throw errors.
+
 **Signature**
 
 ```ts
 declare const try: <A, E>(options: { try: LazyArg<A>; catch: (error: unknown) => E; }) => Effect<A, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L1612)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L1627)
 
 Since v2.0.0

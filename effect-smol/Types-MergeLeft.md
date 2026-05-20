@@ -6,8 +6,13 @@ Module: `Types`<br />
 Merges two object types where keys from `Source` take precedence over
 `Target` on conflict.
 
-- Use when you want left-biased merging (first argument wins).
-- Implemented as `MergeRight<Target, Source>`.
+**When to use**
+
+Use when you want left-biased merging where the first argument wins.
+
+**Details**
+
+Implemented as `MergeRight<Target, Source>`.
 
 **Example** (Left-biased merge)
 
@@ -33,6 +38,6 @@ type Result = Types.MergeLeft<
 type MergeLeft<Source, Target> = MergeRight<Target, Source>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Types.ts#L368)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Types.ts#L415)
 
 Since v2.0.0

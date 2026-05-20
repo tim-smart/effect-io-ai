@@ -5,7 +5,7 @@ Module: `RequestResolver`<br />
 
 Variance marker carried by every `RequestResolver`.
 
-**Notes**
+**Details**
 
 This marker preserves the request type accepted by the resolver for
 Effect's type-level machinery. Users normally do not implement it directly.

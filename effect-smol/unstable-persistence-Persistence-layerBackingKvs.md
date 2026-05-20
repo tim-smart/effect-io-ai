@@ -5,6 +5,8 @@ Module: `Persistence`<br />
 
 Provides `BackingPersistence` using a `KeyValueStore`.
 
+**Details**
+
 Each store id becomes a key prefix, and values are stored as JSON with
 optional expiration timestamps.
 
@@ -14,6 +16,6 @@ optional expiration timestamps.
 declare const layerBackingKvs: Layer.Layer<BackingPersistence, never, KeyValueStore.KeyValueStore>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Persistence.ts#L921)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Persistence.ts#L933)
 
 Since v4.0.0

@@ -11,6 +11,6 @@ Incoming control envelope carrying an `AckChunk` or `Interrupt`.
 declare class IncomingEnvelope
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Message.ts#L125)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Message.ts#L135)
 
 Since v4.0.0

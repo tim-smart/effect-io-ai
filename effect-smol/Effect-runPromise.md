@@ -5,7 +5,7 @@ Module: `Effect`<br />
 
 Executes an effect and returns the result as a `Promise`.
 
-**When to Use**
+**When to use**
 
 Use `runPromise` when you need to execute an effect and work with the
 result using `Promise` syntax, typically for compatibility with other
@@ -13,10 +13,6 @@ promise-based code.
 
 If the effect succeeds, the promise will resolve with the result. If the
 effect fails, the promise will reject with an error.
-
-**See**
-
-- `runPromiseExit` for a version that returns an `Exit` type instead of rejecting.
 
 **Example** (Running a successful effect as a Promise)
 
@@ -38,12 +34,16 @@ Effect.runPromise(Effect.fail("my error")).catch(console.error)
 // (FiberFailure) Error: my error
 ```
 
+**See**
+
+- `runPromiseExit` for a version that returns an `Exit` type instead of rejecting.
+
 **Signature**
 
 ```ts
 declare const runPromise: <A, E>(effect: Effect<A, E>, options?: RunOptions | undefined) => Promise<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L8306)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L8396)
 
 Since v2.0.0

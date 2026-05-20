@@ -11,6 +11,6 @@ Creates a layer for the Anthropic client with the given options.
 declare const layer: (options: Options) => Layer.Layer<AnthropicClient, never, HttpClient.HttpClient>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicClient.ts#L358)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicClient.ts#L340)
 
 Since v4.0.0

@@ -6,13 +6,15 @@ Module: `Effect`<br />
 An optimized version of `map` that checks if an effect is already resolved
 and applies the mapping function eagerly when possible.
 
-**When to Use**
+**When to use**
 
 `mapEager` provides better performance for effects that are already resolved
 by applying the transformation immediately instead of deferring it through
 the effect pipeline.
 
-**Behavior**
+**Details**
+
+Behavior:
 
 - For **Success effects**: Applies the mapping function immediately to the value
 - For **Failure effects**: Returns the failure as-is without applying the mapping
@@ -38,6 +40,6 @@ const mappedPending = Effect.mapEager(pending, (n) => n * 2) // Uses regular map
 declare const mapEager: { <A, B>(f: (a: A) => B): <E, R>(self: Effect<A, E, R>) => Effect<B, E, R>; <A, E, R, B>(self: Effect<A, E, R>, f: (a: A) => B): Effect<B, E, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L14276)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L14399)
 
 Since v4.0.0

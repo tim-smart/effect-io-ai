@@ -3,23 +3,24 @@ Module: `JsonPointer`<br />
 
 ## JsonPointer.unescapeToken
 
-Unescapes a JSON Pointer reference token according to RFC 6901.
+Unescapes a JSON Pointer reference token according to RFC 6901 by decoding escaped characters to recover the original token value.
 
-Decodes escaped characters in a reference token to recover the original token value.
-
-## When to use this
+**When to use**
 
 - Parsing JSON Pointers to extract the original token values from escaped segments
 - Converting escaped tokens back to their original form for use as object keys or identifiers
 - Resolving schema references or JSON Patch paths that use escaped tokens
 
-## Behavior
+**Details**
 
 - Does not mutate the input string; returns a new unescaped string
 - Replaces `~1` with `/` (forward slash) and `~0` with `~` (tilde)
-- Replacement order matters: `~1` is replaced before `~0` to prevent incorrect decoding
 - Returns the input unchanged if it contains no escaped sequences
 - Empty strings are valid and returned unchanged
+
+**Gotchas**
+
+The replacement order matters: `~1` is replaced before `~0` to prevent incorrect decoding.
 
 **Example** (Unescaping special characters)
 
@@ -31,9 +32,9 @@ JsonPointer.unescapeToken("c~0d") // "c~d"
 JsonPointer.unescapeToken("path~1to~0key") // "path/to~key"
 ```
 
-## See also
+**See**
 
-- `escapeToken` - The inverse operation for encoding tokens
+- `escapeToken` The inverse operation for encoding tokens
 
 **Signature**
 
@@ -41,6 +42,6 @@ JsonPointer.unescapeToken("path~1to~0key") // "path/to~key"
 declare const unescapeToken: (token: string) => string
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/JsonPointer.ts#L131)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/JsonPointer.ts#L127)
 
 Since v4.0.0

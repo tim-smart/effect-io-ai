@@ -5,6 +5,8 @@ Module: `LanguageModel`<br />
 
 The supported toolkit input shapes for language model operation options.
 
+**Details**
+
 Unlike `ToolkitOption`, this type does not distribute over unions. It is
 intended for call-site assignability, while `ToolkitOption` remains the
 distributive helper used for extraction and inference.
@@ -21,6 +23,6 @@ type ToolkitInput<Tools, E, R> = | ToolkitOption<Tools, E, R>
   >
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/LanguageModel.ts#L554)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/LanguageModel.ts#L544)
 
 Since v4.0.0

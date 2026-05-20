@@ -12,6 +12,6 @@ cancellation, progress, initialization completion, and roots list changes.
 declare class ClientNotificationRpcs
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L2162)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L2212)
 
 Since v4.0.0

@@ -6,6 +6,8 @@ Module: `AiError`<br />
 Error indicating a codec transformer rejected a schema because it contains
 unsupported constructs.
 
+**Details**
+
 Unsupported schema errors are not retryable because they indicate a
 programmer error where the schema is incompatible with the provider.
 
@@ -29,6 +31,6 @@ console.log(error.message)
 declare class UnsupportedSchemaError
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AiError.ts#L882)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AiError.ts#L911)
 
 Since v4.0.0

@@ -5,6 +5,8 @@ Module: `DateTime`<br />
 
 Parses an ISO zoned date-time string into a `DateTime.Zoned`.
 
+**Details**
+
 Accepts named-zone strings such as
 `YYYY-MM-DDTHH:mm:ss.sss+HH:MM[Time/Zone]` and offset-only strings such as
 `YYYY-MM-DDTHH:mm:ss.sss+HH:MM`. Returns `None` when the input cannot be
@@ -33,6 +35,6 @@ console.log(invalid._tag === "None") // true
 declare const makeZonedFromString: (input: string) => Option.Option<Zoned>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L754)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L802)
 
 Since v3.6.0

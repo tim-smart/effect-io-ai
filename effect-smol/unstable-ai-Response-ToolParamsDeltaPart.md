@@ -5,6 +5,8 @@ Module: `Response`<br />
 
 Response part containing incremental tool parameter content.
 
+**Details**
+
 Represents a chunk of tool parameters being streamed, containing the
 incremental JSON content that forms the tool parameters.
 
@@ -23,6 +25,6 @@ export interface ToolParamsDeltaPart extends BasePart<"tool-params-delta", ToolP
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Response.ts#L1183)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Response.ts#L1182)
 
 Since v4.0.0

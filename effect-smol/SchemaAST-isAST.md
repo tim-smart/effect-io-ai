@@ -5,6 +5,8 @@ Module: `SchemaAST`<br />
 
 Returns `true` if the value is an `AST` node (any variant).
 
+**Details**
+
 Uses the internal `TypeId` brand to distinguish AST nodes from arbitrary
 objects.
 
@@ -18,6 +20,6 @@ objects.
 declare const isAST: (u: unknown) => u is AST
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L152)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L154)
 
 Since v4.0.0

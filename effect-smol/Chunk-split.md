@@ -5,6 +5,8 @@ Module: `Chunk`<br />
 
 Splits a chunk into up to `n` chunks, distributing elements in order.
 
+**Details**
+
 The chunk size is derived from the input length and `n`; the final chunk may
 contain fewer elements than the others.
 
@@ -36,6 +38,6 @@ console.log(Chunk.toArray(chunks3).map(Chunk.toArray))
 declare const split: { (n: number): <A>(self: Chunk<A>) => Chunk<Chunk<A>>; <A>(self: Chunk<A>, n: number): Chunk<Chunk<A>>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L2006)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L2019)
 
 Since v2.0.0

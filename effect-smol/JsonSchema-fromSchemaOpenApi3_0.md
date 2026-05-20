@@ -5,12 +5,17 @@ Module: `JsonSchema`<br />
 
 Parses a raw OpenAPI 3.0 JSON Schema into a `Document<"draft-2020-12">`.
 
-- Use when consuming schemas from an OpenAPI 3.0 specification.
-- Handles OpenAPI 3.0 extensions: `nullable`, singular `example`,
-  boolean `exclusiveMinimum`/`exclusiveMaximum`.
-- Normalizes the schema to Draft-07 first, then converts to
-  Draft-2020-12 via `fromSchemaDraft07`.
-- Does not mutate the input. Allocates a new `Document`.
+**When to use**
+
+Use this when consuming schemas from an OpenAPI 3.0 specification.
+
+**Details**
+
+This handles OpenAPI 3.0 extensions, including `nullable`, singular
+`example`, and boolean `exclusiveMinimum` or `exclusiveMaximum`. It
+normalizes the schema to Draft-07 first, then converts to Draft-2020-12 via
+`fromSchemaDraft07`. It does not mutate the input and allocates a new
+`Document`.
 
 **Example** (Parsing an OpenAPI 3.0 nullable schema)
 
@@ -38,6 +43,6 @@ console.log(doc.schema.type) // ["string", "null"]
 declare const fromSchemaOpenApi3_0: (schema: JsonSchema) => Document<"draft-2020-12">
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/JsonSchema.ts#L471)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/JsonSchema.ts#L499)
 
 Since v4.0.0

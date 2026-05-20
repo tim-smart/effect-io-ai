@@ -6,6 +6,8 @@ Module: `Prompt`<br />
 Creates a prompt that lets the user select a single value from a list of
 choices.
 
+**Gotchas**
+
 At most one choice may be marked as selected by default.
 
 **Signature**
@@ -14,6 +16,6 @@ At most one choice may be marked as selected by default.
 declare const select: <const A>(options: SelectOptions<A>) => Prompt<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L1049)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L1052)
 
 Since v4.0.0

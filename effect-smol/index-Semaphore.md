@@ -11,6 +11,6 @@ Re-exports all named exports from the "./Semaphore.ts" module as `Semaphore`.
 export * as Semaphore from "./Semaphore.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L5157)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L5168)
 
 Since v4.0.0

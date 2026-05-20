@@ -5,6 +5,8 @@ Module: `Duration`<br />
 
 Decomposes a `Duration` into normalized signed components.
 
+**Details**
+
 Finite durations are returned as `{ days, hours, minutes, seconds, millis,
 nanos }`. Infinite durations return every component as `Infinity` or
 `-Infinity`.
@@ -52,6 +54,6 @@ console.log(complexParts)
 declare const parts: (self: Duration) => { days: number; hours: number; minutes: number; seconds: number; millis: number; nanos: number; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Duration.ts#L1568)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Duration.ts#L1598)
 
 Since v3.8.0

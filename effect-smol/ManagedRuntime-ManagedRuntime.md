@@ -7,6 +7,7 @@ A runtime built from a layer that can execute effects requiring that layer's
 services.
 
 **Details**
+
 The runtime builds and caches its service context, owns the scope for
 resources acquired by the layer, and should be disposed with `dispose` or
 `disposeEffect` when it is no longer needed.
@@ -37,6 +38,8 @@ export interface ManagedRuntime<in R, out ER> {
   /**
    * Executes the effect synchronously returning the exit.
    *
+   * **When to use**
+   *
    * This method is effectful and should only be invoked at the edges of your
    * program.
    */
@@ -44,6 +47,8 @@ export interface ManagedRuntime<in R, out ER> {
 
   /**
    * Executes the effect synchronously throwing in case of errors or async boundaries.
+   *
+   * **When to use**
    *
    * This method is effectful and should only be invoked at the edges of your
    * program.
@@ -53,6 +58,8 @@ export interface ManagedRuntime<in R, out ER> {
   /**
    * Executes the effect asynchronously, eventually passing the exit value to
    * the specified callback.
+   *
+   * **When to use**
    *
    * This method is effectful and should only be invoked at the edges of your
    * program.
@@ -71,6 +78,8 @@ export interface ManagedRuntime<in R, out ER> {
    * with the value of the effect once the effect has been executed, or will be
    * rejected with the first error or exception throw by the effect.
    *
+   * **When to use**
+   *
    * This method is effectful and should only be used at the edges of your
    * program.
    */
@@ -79,6 +88,8 @@ export interface ManagedRuntime<in R, out ER> {
   /**
    * Runs the `Effect`, returning a JavaScript `Promise` that will be resolved
    * with the `Exit` state of the effect once the effect has been executed.
+   *
+   * **When to use**
    *
    * This method is effectful and should only be used at the edges of your
    * program.
@@ -100,6 +111,6 @@ export interface ManagedRuntime<in R, out ER> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ManagedRuntime.ts#L97)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ManagedRuntime.ts#L98)
 
 Since v2.0.0

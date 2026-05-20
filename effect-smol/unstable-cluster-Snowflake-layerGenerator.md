@@ -11,6 +11,6 @@ Layer that provides the default snowflake `Generator` service.
 declare const layerGenerator: Layer.Layer<Generator, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Snowflake.ts#L275)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Snowflake.ts#L277)
 
 Since v4.0.0

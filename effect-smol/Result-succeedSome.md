@@ -5,6 +5,8 @@ Module: `Result`<br />
 
 Creates a `Result<Option<A>>` that succeeds with `Some(a)`.
 
+**Details**
+
 - Equivalent to `Result.succeed(Option.some(a))`
 - Useful with `transposeOption` patterns
 
@@ -28,6 +30,6 @@ console.log(result)
 declare const succeedSome: <A, E = never>(a: A) => Result<Option<A>, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L1683)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L1775)
 
 Since v4.0.0

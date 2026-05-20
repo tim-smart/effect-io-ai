@@ -7,6 +7,8 @@ Context service that supplies the ambient `TimeZone` for APIs that work in
 the current zone, such as `DateTime.setZoneCurrent` and
 `DateTime.nowInCurrentZone`.
 
+**Details**
+
 Provide it with `DateTime.withCurrentZone`, one of the `withCurrentZone*`
 helpers, or one of the `layerCurrentZone*` layers.
 
@@ -32,6 +34,6 @@ Effect.provide(program, layer)
 declare class CurrentTimeZone
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L1744)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L1842)
 
 Since v3.11.0

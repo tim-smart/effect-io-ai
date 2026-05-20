@@ -5,6 +5,8 @@ Module: `ExecutionPlan`<br />
 
 Base type-level configuration carried by an `ExecutionPlan`.
 
+**Details**
+
 `provides` tracks services supplied by plan steps, `input` tracks the error
 input consumed by schedules and `while` predicates, `error` tracks failures
 from plan layers or predicates, and `requirements` tracks services needed to
@@ -21,6 +23,6 @@ type ConfigBase = {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ExecutionPlan.ts#L171)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ExecutionPlan.ts#L172)
 
 Since v4.0.0

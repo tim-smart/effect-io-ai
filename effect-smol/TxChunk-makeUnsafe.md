@@ -5,8 +5,10 @@ Module: `TxChunk`<br />
 
 Creates a new `TxChunk` with the specified TxRef.
 
-**Return behavior**: This function returns a new TxChunk reference wrapping
-the provided TxRef. No existing TxChunk instances are modified.
+**Details**
+
+This function returns a new TxChunk reference wrapping the provided TxRef. No existing TxChunk
+instances are modified.
 
 **Example** (Wrapping an existing TxRef)
 
@@ -24,6 +26,6 @@ const txChunk = TxChunk.makeUnsafe(ref)
 declare const makeUnsafe: <A>(ref: TxRef.TxRef<Chunk.Chunk<A>>) => TxChunk<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxChunk.ts#L208)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxChunk.ts#L218)
 
 Since v4.0.0

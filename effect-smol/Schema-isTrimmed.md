@@ -5,12 +5,14 @@ Module: `Schema`<br />
 
 Validates that a string has no leading or trailing whitespace.
 
-**JSON Schema**
+**Details**
+
+JSON Schema:
 
 This check corresponds to a `pattern` constraint in JSON Schema that
 matches strings without leading or trailing whitespace.
 
-**Arbitrary**
+Arbitrary:
 
 When generating test data with fast-check, this applies a `patterns`
 constraint to ensure generated strings match the trimmed pattern.
@@ -21,6 +23,6 @@ constraint to ensure generated strings match the trimmed pattern.
 declare const isTrimmed: (annotations?: Annotations.Filter) => AST.Filter<string>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L5550)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L5702)
 
 Since v4.0.0

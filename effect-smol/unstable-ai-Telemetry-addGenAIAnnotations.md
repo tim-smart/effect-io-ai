@@ -5,10 +5,14 @@ Module: `Telemetry`<br />
 
 Applies GenAI telemetry attributes to an OpenTelemetry span.
 
+**Details**
+
 This function adds standardized GenAI attributes to a span following OpenTelemetry
 semantic conventions. It supports both curried and direct application patterns.
 
-**Note**: This function mutates the provided span in-place.
+**Gotchas**
+
+This function mutates the provided span in-place.
 
 **Example** (Adding GenAI telemetry annotations)
 
@@ -33,6 +37,6 @@ const directUsage = Effect.gen(function*() {
 declare const addGenAIAnnotations: { (options: GenAITelemetryAttributeOptions): (span: Span) => void; (span: Span, options: GenAITelemetryAttributeOptions): void; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Telemetry.ts#L447)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Telemetry.ts#L462)
 
 Since v4.0.0

@@ -6,6 +6,8 @@ Module: `Cause`<br />
 Converts a `Cause` into an `Array<Error>` suitable for logging or
 rethrowing.
 
+**Details**
+
 Each `Fail` and `Die` reason is converted into a standard
 `Error`:
 
@@ -41,6 +43,6 @@ console.log(errors[0].message) // "boom"
 declare const prettyErrors: <E>(self: Cause<E>) => Array<Error>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L1031)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L1085)
 
 Since v3.2.0

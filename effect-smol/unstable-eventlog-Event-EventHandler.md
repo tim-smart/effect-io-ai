@@ -5,6 +5,8 @@ Module: `Event`<br />
 
 Marker service associated with the handler for an event tag.
 
+**Details**
+
 `ToService` derives this service from an `Event` so handler layers can expose
 which events they implement.
 
@@ -17,6 +19,6 @@ export interface EventHandler<in out Tag extends string> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Event.ts#L82)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Event.ts#L86)
 
 Since v4.0.0

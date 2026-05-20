@@ -21,6 +21,6 @@ assert.deepStrictEqual(pipe("hello world", String.startsWith("world")), false)
 declare const startsWith: (searchString: string, position?: number) => (self: string) => boolean
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L477)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L479)
 
 Since v2.0.0

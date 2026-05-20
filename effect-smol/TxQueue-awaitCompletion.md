@@ -28,6 +28,6 @@ const program = Effect.gen(function*() {
 declare const awaitCompletion: (self: TxQueueState) => Effect.Effect<void>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxQueue.ts#L1492)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxQueue.ts#L1477)
 
 Since v4.0.0

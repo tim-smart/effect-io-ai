@@ -5,6 +5,8 @@ Module: `Boolean`<br />
 
 A `Reducer` for combining `boolean`s using AND.
 
+**Details**
+
 The `initialValue` is `true`.
 
 **Signature**
@@ -13,6 +15,6 @@ The `initialValue` is `true`.
 declare const ReducerAnd: Reducer.Reducer<boolean>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Boolean.ts#L364)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Boolean.ts#L366)
 
 Since v4.0.0

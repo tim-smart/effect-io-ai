@@ -3,10 +3,12 @@ Module: `Tracer`<br />
 
 ## Tracer.withSpanContext
 
-Set the effect's parent span from the given opentelemetry `SpanContext`.
+Sets an effect's parent span from the given OpenTelemetry `SpanContext`.
 
-This is handy when you set up OpenTelemetry outside of Effect and want to
-attach to a parent span.
+**When to use**
+
+Use this when OpenTelemetry instrumentation outside Effect has already
+produced a parent span context and an effect should continue that trace.
 
 **Signature**
 
@@ -14,6 +16,6 @@ attach to a parent span.
 declare const withSpanContext: { (spanContext: Otel.SpanContext): <A, E, R>(self: Effect.Effect<A, E, R>) => Effect.Effect<A, E, Exclude<R, Tracer.ParentSpan>>; <A, E, R>(self: Effect.Effect<A, E, R>, spanContext: Otel.SpanContext): Effect.Effect<A, E, Exclude<R, Tracer.ParentSpan>>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Tracer.ts#L354)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Tracer.ts#L357)
 
 Since v4.0.0

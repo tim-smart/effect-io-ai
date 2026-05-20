@@ -5,10 +5,12 @@ Module: `Predicate`<br />
 
 Checks whether a value is an `object` in the JavaScript sense (objects, arrays, functions).
 
-When to use:
+**When to use**
+
 - You want to accept arrays and functions as well as objects.
 
-Behavior:
+**Details**
+
 - Pure; does not mutate input.
 - Returns `true` for arrays and functions, `false` for `null`.
 
@@ -21,7 +23,10 @@ console.log(Predicate.isObjectKeyword(() => 1))
 console.log(Predicate.isObjectKeyword(null))
 ```
 
-See also: `isObject`, `isObjectOrArray`
+**See**
+
+- `isObject`
+- `isObjectOrArray`
 
 **Signature**
 
@@ -29,6 +34,6 @@ See also: `isObject`, `isObjectOrArray`
 declare const isObjectKeyword: (input: unknown) => input is object
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L1071)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L1139)
 
 Since v4.0.0

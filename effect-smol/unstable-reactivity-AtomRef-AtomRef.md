@@ -5,6 +5,8 @@ Module: `AtomRef`<br />
 
 A mutable reactive reference.
 
+**Details**
+
 It supports replacing the whole value, updating it from the current value, and
 creating mutable references to nested properties.
 
@@ -18,6 +20,6 @@ export interface AtomRef<A> extends ReadonlyRef<A> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AtomRef.ts#L67)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AtomRef.ts#L71)
 
 Since v4.0.0

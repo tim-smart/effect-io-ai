@@ -6,6 +6,8 @@ Module: `Stream`<br />
 Zips this stream with another point-wise and keeps only the values from
 the left stream.
 
+**Details**
+
 The resulting stream ends when either side ends.
 
 **Example** (Zipping streams while keeping left values)
@@ -31,6 +33,6 @@ Effect.runPromise(program)
 declare const zipLeft: { <AR, ER, RR>(right: Stream<AR, ER, RR>): <AL, EL, RL>(left: Stream<AL, EL, RL>) => Stream<AL, ER | EL, RR | RL>; <AL, EL, RL, AR, ER, RR>(left: Stream<AL, EL, RL>, right: Stream<AR, ER, RR>): Stream<AL, EL | ER, RL | RR>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L3607)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L3662)
 
 Since v2.0.0

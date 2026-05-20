@@ -5,6 +5,8 @@ Module: `Trie`<br />
 
 Returns an `IterableIterator` of the keys within the `Trie`.
 
+**Details**
+
 The keys are returned in alphabetical order, regardless of insertion order.
 
 **Example** (Reading keys in alphabetical order)
@@ -29,6 +31,6 @@ assert.deepStrictEqual(result, ["abc", "bca", "cab"])
 declare const keys: <V>(self: Trie<V>) => IterableIterator<string>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Trie.ts#L212)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Trie.ts#L214)
 
 Since v2.0.0

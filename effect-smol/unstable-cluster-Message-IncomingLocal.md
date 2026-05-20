@@ -5,6 +5,8 @@ Module: `Message`<br />
 
 Locally decoded incoming message for in-process delivery.
 
+**Details**
+
 It is either a request with a decoded payload or an incoming control envelope.
 
 **Signature**
@@ -13,6 +15,6 @@ It is either a request with a decoded payload or an incoming control envelope.
 type IncomingLocal<R> = IncomingRequestLocal<R> | IncomingEnvelope
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Message.ts#L61)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Message.ts#L65)
 
 Since v4.0.0

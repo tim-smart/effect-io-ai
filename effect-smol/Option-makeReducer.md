@@ -11,7 +11,7 @@ value and combines values when both are `Some`.
 - Building a reducer that falls back to the first available value
 - Combining optional values where either side may be absent
 
-**Behavior**
+**Details**
 
 - `None` + `None` → `None`
 - `Some(a)` + `None` → `Some(a)`
@@ -39,6 +39,6 @@ console.log(reducer.combineAll([Option.some(1), Option.none(), Option.some(2)]))
 declare const makeReducer: <A>(combiner: Combiner.Combiner<A>) => Reducer.Reducer<Option<A>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L2579)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L2585)
 
 Since v4.0.0

@@ -5,6 +5,8 @@ Module: `DateTime`<br />
 
 Modify a `DateTime` by applying a function to a cloned `Date` instance.
 
+**Details**
+
 The `Date` will first have the time zone applied if possible, and then be
 converted back to a `DateTime` within the same time zone.
 
@@ -31,6 +33,6 @@ console.log(DateTime.formatIso(modified)) // "2024-01-01T15:30:00.000Z"
 declare const mutate: { (f: (date: Date) => void, options?: { readonly disambiguation?: Disambiguation | undefined; }): <A extends DateTime>(self: A) => A; <A extends DateTime>(self: A, f: (date: Date) => void, options?: { readonly disambiguation?: Disambiguation | undefined; }): A; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L1931)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L2033)
 
 Since v3.6.0

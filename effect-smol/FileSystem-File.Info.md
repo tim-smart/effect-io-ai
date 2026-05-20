@@ -5,6 +5,8 @@ Module: `FileSystem`<br />
 
 Comprehensive file information structure.
 
+**Details**
+
 Contains metadata about a file or directory including type, timestamps,
 permissions, and size information. This structure is returned by file
 stat operations.
@@ -63,6 +65,6 @@ export interface Info {
   }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FileSystem.ts#L1156)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FileSystem.ts#L1208)
 
 Since v4.0.0

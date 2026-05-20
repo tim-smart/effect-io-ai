@@ -12,6 +12,6 @@ workflow state.
 type Result<A, E> = Complete<A, E> | Suspended
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Workflow.ts#L461)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Workflow.ts#L464)
 
 Since v4.0.0

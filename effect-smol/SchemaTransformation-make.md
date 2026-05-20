@@ -6,11 +6,13 @@ Module: `SchemaTransformation`<br />
 Constructs a `Transformation` from an object with `decode` and `encode`
 `Getter`s. If the input is already a `Transformation`, returns it as-is.
 
-When to use this:
+**When to use**
+
 - You already have `Getter` instances and want to pair them.
 - You want idempotent wrapping (won't double-wrap).
 
-Behavior:
+**Details**
+
 - Does not mutate the input.
 - Returns the input unchanged if it is already a `Transformation`.
 
@@ -25,7 +27,8 @@ const t = SchemaTransformation.make({
 })
 ```
 
-See also:
+**See**
+
 - `transform` — simpler constructor from pure functions
 - `transformOrFail` — constructor from effectful functions
 - `Transformation`
@@ -36,6 +39,6 @@ See also:
 declare const make: <T, E, RD = never, RE = never>(options: { readonly decode: Getter.Getter<T, E, RD>; readonly encode: Getter.Getter<E, T, RE>; }) => Transformation<T, E, RD, RE>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L300)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L304)
 
 Since v3.10.0

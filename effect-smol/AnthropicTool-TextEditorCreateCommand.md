@@ -5,7 +5,8 @@ Module: `AnthropicTool`<br />
 
 Text editor command payload for creating a new file with the specified content.
 
-**Notes**
+**Gotchas**
+
 The command fails if the file already exists or if parent directories are missing.
 
 **Signature**
@@ -14,6 +15,6 @@ The command fails if the file already exists or if parent directories are missin
 type TextEditorCreateCommand = typeof TextEditorCreateCommand.Type
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L1138)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L1164)
 
 Since v4.0.0

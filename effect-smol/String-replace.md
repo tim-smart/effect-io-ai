@@ -5,6 +5,8 @@ Module: `String`<br />
 
 Replaces matches in a string using `String.prototype.replace`.
 
+**Details**
+
 String search values and non-global regular expressions replace the first
 match; global regular expressions replace every match.
 
@@ -27,6 +29,6 @@ assert.deepStrictEqual(
 declare const replace: (searchValue: string | RegExp, replaceValue: string) => (self: string) => string
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L240)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L242)
 
 Since v2.0.0

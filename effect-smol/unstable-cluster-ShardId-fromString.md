@@ -5,6 +5,8 @@ Module: `ShardId`<br />
 
 Parses a `group:id` string into a cached `ShardId`.
 
+**Details**
+
 Throws an `Error` when the string has no colon separator or the id segment is
 not numeric.
 
@@ -14,6 +16,6 @@ not numeric.
 declare const fromString: (s: string) => ShardId
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ShardId.ts#L166)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ShardId.ts#L170)
 
 Since v4.0.0

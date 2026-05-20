@@ -3,9 +3,7 @@ Module: `Ref`<br />
 
 ## Ref.getAndUpdate
 
-Atomically gets the current value of the Ref and updates it with the given function.
-
-Returns the value that was in the Ref before the update.
+Atomically gets the current value of the Ref, updates it with the given function, and returns the previous value.
 
 **Example** (Updating and returning the previous value)
 
@@ -30,6 +28,6 @@ const program = Effect.gen(function*() {
 declare const getAndUpdate: (<A>(f: (a: A) => A) => (self: Ref<A>) => Effect.Effect<A>) & (<A>(self: Ref<A>, f: (a: A) => A) => Effect.Effect<A>)
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Ref.ts#L289)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Ref.ts#L292)
 
 Since v2.0.0

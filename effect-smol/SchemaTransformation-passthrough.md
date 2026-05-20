@@ -6,12 +6,14 @@ Module: `SchemaTransformation`<br />
 The identity transformation — returns the input unchanged in both
 directions.
 
-When to use this:
+**When to use**
+
 - Connecting two schemas that share the same type with no conversion.
 - As a placeholder when `Schema.decodeTo` requires a transformation but
   no actual conversion is needed.
 
-Behavior:
+**Details**
+
 - Both decode and encode are no-ops.
 - Returns a shared singleton instance (no allocation per call).
 - By default, `T` and `E` must be the same type. Pass `{ strict: false }`
@@ -27,7 +29,8 @@ const schema = Schema.Trim.pipe(
 )
 ```
 
-See also:
+**See**
+
 - `passthroughSupertype`
 - `passthroughSubtype`
 - `transform`
@@ -38,6 +41,6 @@ See also:
 declare const passthrough: { <T, E>(options: { readonly strict: false; }): Transformation<T, E>; <T>(): Transformation<T, T>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L758)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L773)
 
 Since v4.0.0

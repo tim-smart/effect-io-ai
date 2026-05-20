@@ -6,6 +6,7 @@ Module: `Schema`<br />
 Validates that a string is unchanged by JavaScript's `toLowerCase()`.
 
 **Details**
+
 This accepts empty strings and characters that do not have uppercase forms,
 such as digits, punctuation, and whitespace. It rejects strings that would
 change when lowercased.
@@ -16,6 +17,6 @@ change when lowercased.
 declare const isLowercased: (annotations?: Annotations.Filter) => AST.Filter<string>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L5919)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L6093)
 
 Since v4.0.0

@@ -5,6 +5,8 @@ Module: `UrlParams`<br />
 
 Immutable collection of URL query parameters.
 
+**Details**
+
 Parameters are stored as ordered string key-value pairs and can contain multiple
 values for the same key.
 
@@ -17,6 +19,6 @@ export interface UrlParams extends Pipeable, Inspectable, Iterable<readonly [str
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/UrlParams.ts#L54)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/UrlParams.ts#L56)
 
 Since v4.0.0

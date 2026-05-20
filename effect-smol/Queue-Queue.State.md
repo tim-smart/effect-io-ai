@@ -5,6 +5,8 @@ Module: `Queue`<br />
 
 Tagged state of a `Queue`.
 
+**Details**
+
 `Open` queues can accept offers and takers, `Closing` queues are
 completing with a stored failure exit, and `Done` queues have finished.
 This is low-level metadata exposed by the queue model; most users should
@@ -32,6 +34,6 @@ type State<A, E> = | {
     }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Queue.ts#L309)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Queue.ts#L323)
 
 Since v4.0.0

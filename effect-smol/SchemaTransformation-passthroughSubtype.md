@@ -6,10 +6,12 @@ Module: `SchemaTransformation`<br />
 A passthrough transformation typed so that `E extends T` — the encoded
 type is a subtype of the decoded type.
 
-When to use this:
+**When to use**
+
 - Narrowing: the encoded side is more specific than the decoded side.
 
-Behavior:
+**Details**
+
 - Both decode and encode are no-ops (same as `passthrough`).
 - Returns a shared singleton instance.
 
@@ -21,7 +23,8 @@ import { SchemaTransformation } from "effect"
 const t = SchemaTransformation.passthroughSubtype<string, "a" | "b">()
 ```
 
-See also:
+**See**
+
 - `passthrough`
 - `passthroughSupertype`
 
@@ -31,6 +34,6 @@ See also:
 declare const passthroughSubtype: <T, E extends T>() => Transformation<T, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L817)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L838)
 
 Since v4.0.0

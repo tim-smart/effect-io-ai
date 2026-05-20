@@ -5,6 +5,8 @@ Module: `BigDecimal`<br />
 
 Formats a `BigDecimal` as a string.
 
+**Details**
+
 The value is normalized before formatting. Scientific notation is used when
 the absolute value of the normalized scale is at least `16`; otherwise plain
 decimal notation is used.
@@ -26,6 +28,6 @@ assert.deepStrictEqual(BigDecimal.format(BigDecimal.fromStringUnsafe("-0.0000012
 declare const format: (n: BigDecimal) => string
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigDecimal.ts#L1268)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigDecimal.ts#L1292)
 
 Since v2.0.0

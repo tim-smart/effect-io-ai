@@ -6,9 +6,14 @@ Module: `Types`<br />
 Prevents TypeScript from inferring a type parameter from a specific
 position.
 
-- Use on a function parameter when you want inference to come from other
-  parameters, not this one.
-- The parameter using `NoInfer` must still match the inferred type.
+**When to use**
+
+Use on a function parameter when you want inference to come from other
+parameters, not this one.
+
+**Details**
+
+The parameter using `NoInfer` must still match the inferred type.
 
 **Example** (Controlling inference)
 
@@ -27,6 +32,6 @@ const result = withDefault<"a" | "b">("a", "b")
 type NoInfer<A> = [A][A extends any ? 0 : never]
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Types.ts#L540)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Types.ts#L611)
 
 Since v2.0.0

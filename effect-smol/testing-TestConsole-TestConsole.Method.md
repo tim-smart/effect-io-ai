@@ -22,6 +22,6 @@ console.log(method) // "log"
 type Method = keyof Console.Console
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TestConsole.ts#L85)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TestConsole.ts#L87)
 
 Since v4.0.0

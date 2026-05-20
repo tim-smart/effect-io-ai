@@ -5,6 +5,8 @@ Module: `DevToolsSchema`<br />
 
 Devtools request messages excluding heartbeat pings.
 
+**Details**
+
 `DevToolsServer` handles `Ping` internally and exposes only these requests
 to client handlers.
 
@@ -14,6 +16,6 @@ to client handlers.
 type WithoutPing = Exclude<Request, { readonly _tag: "Ping" }>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DevToolsSchema.ts#L496)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DevToolsSchema.ts#L523)
 
 Since v4.0.0

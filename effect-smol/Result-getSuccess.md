@@ -5,6 +5,8 @@ Module: `Result`<br />
 
 Extracts the success value as an `Option`, discarding the failure.
 
+**Details**
+
 - `Success<A>` becomes `Some<A>`
 - `Failure<E>` becomes `None`
 - Use when you only care about the success case and want to discard error info
@@ -32,6 +34,6 @@ console.log(Result.getSuccess(Result.fail("err")))
 declare const getSuccess: <A, E>(self: Result<A, E>) => Option<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L621)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L655)
 
 Since v4.0.0

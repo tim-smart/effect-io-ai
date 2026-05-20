@@ -5,8 +5,10 @@ Module: `TxHashMap`<br />
 
 Removes all None values from a TxHashMap containing Option values.
 
-**Return behavior**: This function returns a new TxHashMap reference with only
-the Some values unwrapped. The original TxHashMap is not modified.
+**Details**
+
+This function returns a new TxHashMap reference with only the Some values
+unwrapped. The original TxHashMap is not modified.
 
 **Example** (Compacting optional values)
 
@@ -52,6 +54,6 @@ const program = Effect.gen(function*() {
 declare const compact: <K, A>(self: TxHashMap<K, Option.Option<A>>) => Effect.Effect<TxHashMap<K, A>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashMap.ts#L2060)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashMap.ts#L2087)
 
 Since v4.0.0

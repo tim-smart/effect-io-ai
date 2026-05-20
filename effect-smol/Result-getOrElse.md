@@ -5,6 +5,8 @@ Module: `Result`<br />
 
 Extracts the success value, or computes a fallback from the error.
 
+**Details**
+
 - `Success<A>` returns the inner value
 - `Failure<E>` applies `onFailure` to the error and returns the result
 - The return type is `A | A2` (union of both branches)
@@ -33,6 +35,6 @@ console.log(Result.getOrElse(Result.fail("err"), () => 0))
 declare const getOrElse: { <E, A2>(onFailure: (err: E) => A2): <A>(self: Result<A, E>) => A2 | A; <A, E, A2>(self: Result<A, E>, onFailure: (err: E) => A2): A | A2; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L1014)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L1068)
 
 Since v2.0.0

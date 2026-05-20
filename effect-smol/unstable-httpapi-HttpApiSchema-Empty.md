@@ -16,6 +16,6 @@ This is used to represent empty responses with a specific status code.
 declare const Empty: (code: number) => Schema.Void
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiSchema.ts#L194)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiSchema.ts#L195)
 
 Since v4.0.0

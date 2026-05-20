@@ -26,6 +26,6 @@ const TestCrypto = Layer.succeed(
 declare const make: (impl: { readonly randomBytes: (size: number) => Uint8Array; readonly digest: (algorithm: DigestAlgorithm, data: Uint8Array) => Effect.Effect<Uint8Array, PlatformError.PlatformError>; }) => Crypto
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Crypto.ts#L223)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Crypto.ts#L229)
 
 Since v4.0.0

@@ -5,6 +5,8 @@ Module: `Match`<br />
 
 Adds a type to the inclusion filter, refining what should be included.
 
+**Details**
+
 This utility type manages the refinement of included types during
 pattern matching. It ensures that only the most specific type
 constraints are maintained when multiple positive matches are applied.
@@ -32,6 +34,6 @@ type AddOnly<A, X> = [A] extends [Without<infer WX>] ? [X] extends [WX] ? never
     : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L2179)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L2245)
 
 Since v4.0.0

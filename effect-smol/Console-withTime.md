@@ -3,11 +3,7 @@ Module: `Console`<br />
 
 ## Console.withTime
 
-Wraps an Effect with a timer.
-
-This function measures the execution time of an Effect, automatically
-starting a timer before the Effect runs and logging the elapsed time
-after the Effect completes.
+Runs an Effect with a console timer, starting the timer before execution and ending it after the Effect completes.
 
 **Example** (Timing an effect)
 
@@ -31,6 +27,6 @@ const program = Effect.gen(function*() {
 declare const withTime: ((label?: string) => <A, E, R>(self: Effect.Effect<A, E, R>) => Effect.Effect<A, E, R>) & (<A, E, R>(self: Effect.Effect<A, E, R>, label?: string) => Effect.Effect<A, E, R>)
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Console.ts#L735)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Console.ts#L677)
 
 Since v2.0.0

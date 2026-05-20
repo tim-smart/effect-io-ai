@@ -5,6 +5,8 @@ Module: `Rpc`<br />
 
 The function signature for implementing an RPC handler.
 
+**Details**
+
 The function receives the decoded payload and request metadata, and returns
 the RPC result shape, optionally wrapped with `Wrapper` options.
 
@@ -22,6 +24,6 @@ type ToHandlerFn<Current, R> = (
 ) => WrapperOr<ResultFrom<Current, R>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Rpc.ts#L625)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Rpc.ts#L647)
 
 Since v4.0.0

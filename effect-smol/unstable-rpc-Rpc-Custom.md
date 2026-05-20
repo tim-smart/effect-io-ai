@@ -5,6 +5,8 @@ Module: `Rpc`<br />
 
 Defines the type-level contract for an RPC custom constructor.
 
+**Details**
+
 A custom constructor receives the original success, error, and defect schemas
 and returns transformed output schemas through `out`.
 
@@ -19,6 +21,6 @@ export interface Custom {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Rpc.ts#L1040)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Rpc.ts#L1070)
 
 Since v4.0.0

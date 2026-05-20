@@ -11,6 +11,6 @@ Narrows an `AST` to `Arrays`.
 declare const isArrays: (ast: AST) => ast is Arrays
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L298)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L300)
 
 Since v4.0.0

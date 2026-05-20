@@ -5,6 +5,8 @@ Module: `Scope`<br />
 
 Represents an open scope with no registered finalizers yet.
 
+**Details**
+
 Adding the first finalizer transitions the scope to `Open`; closing an
 empty scope transitions directly to `Closed` without producing a finalizer
 effect.
@@ -31,6 +33,6 @@ type Empty = {
   }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Scope.ts#L138)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Scope.ts#L140)
 
 Since v4.0.0

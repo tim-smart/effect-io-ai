@@ -5,6 +5,8 @@ Module: `Array`<br />
 
 Tests whether a value is an `Array`.
 
+**Details**
+
 - Acts as a type guard narrowing the input to `Array<unknown>`.
 - Delegates to `globalThis.Array.isArray`.
 
@@ -28,6 +30,6 @@ console.log(Array.isArray([1, 2, 3])) // true
 declare const isArray: { (self: unknown): self is Array<unknown>; <T>(self: T): self is Extract<T, ReadonlyArray<any>>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L758)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L800)
 
 Since v2.0.0

@@ -5,7 +5,9 @@ Module: `Chunk`<br />
 
 Returns the last element of this chunk.
 
-It will throw an error if the chunk is empty.
+**Gotchas**
+
+Throws an error if the chunk is empty.
 
 **Example** (Getting the last element unsafely)
 
@@ -28,6 +30,6 @@ console.log(Option.isNone(Chunk.last(Chunk.empty()))) // true
 declare const lastUnsafe: <A>(self: Chunk<A>) => A
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L1487)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L1493)
 
 Since v4.0.0

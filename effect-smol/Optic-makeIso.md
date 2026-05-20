@@ -5,11 +5,13 @@ Module: `Optic`<br />
 
 Creates an `Iso` from a pair of conversion functions.
 
-When to use:
+**When to use**
+
 - You have two pure functions that form a lossless round-trip between `S`
   and `A`.
 
-Behavior:
+**Details**
+
 - Does not mutate inputs.
 - The returned optic can be composed with any other optic.
 
@@ -42,6 +44,6 @@ console.log(meters.set(42))
 declare const makeIso: <S, A>(get: (s: S) => A, set: (a: A) => S) => Iso<S, A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Optic.ts#L183)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Optic.ts#L187)
 
 Since v4.0.0

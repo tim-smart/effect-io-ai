@@ -6,6 +6,12 @@ Module: `Effect`<br />
 Runs a sequence of effects and returns the result of the first successful
 one.
 
+**When to use**
+
+Use `firstSuccessOf` when you have prioritized fallback strategies, such as
+attempting multiple APIs, reading configuration from several sources, or
+trying alternative resource locations in order.
+
 **Details**
 
 This function executes the provided effects in sequence, stopping at the
@@ -15,12 +21,6 @@ no further effects in the sequence are executed.
 If all effects fail, the returned effect fails with the error from the last
 effect. If the collection is empty, the returned effect defects with an
 `Error` whose message is `"Received an empty collection of effects"`.
-
-**When to Use**
-
-Use `firstSuccessOf` when you have prioritized fallback strategies, such as
-attempting multiple APIs, reading configuration from several sources, or
-trying alternative resource locations in order.
 
 **Example** (Trying alternatives until one succeeds)
 
@@ -49,6 +49,6 @@ console.log(Effect.runSync(program))
 declare const firstSuccessOf: <Eff extends Effect<any, any, any>>(effects: Iterable<Eff>) => Effect<Success<Eff>, Error<Eff>, Services<Eff>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L4087)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L4138)
 
 Since v2.0.0

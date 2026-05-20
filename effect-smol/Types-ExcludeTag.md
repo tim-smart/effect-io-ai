@@ -5,8 +5,13 @@ Module: `Types`<br />
 
 Excludes members of a tagged union by their `_tag` value.
 
-- Use to narrow a union by removing a specific variant.
-- Non-tagged members of the union are preserved.
+**When to use**
+
+Use to narrow a union by removing a specific variant.
+
+**Details**
+
+Non-tagged members of the union are preserved.
 
 **Example** (Removing a variant)
 
@@ -33,6 +38,6 @@ type WithoutTimeout = Types.ExcludeTag<MyError, "Timeout">
 type ExcludeTag<E, K> = Exclude<E, { readonly _tag: K }>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Types.ts#L181)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Types.ts#L197)
 
 Since v2.0.0

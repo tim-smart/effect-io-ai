@@ -5,6 +5,8 @@ Module: `Channel`<br />
 
 Runs a channel and offers each output element into a queue.
 
+**Details**
+
 When the channel completes, the queue is ended. When the channel fails, the
 queue is failed with the channel's cause. The returned effect itself
 completes with `void`.
@@ -15,6 +17,6 @@ completes with `void`.
 declare const runIntoQueue: { <OutElem, OutErr>(queue: Queue.Queue<OutElem, OutErr | Cause.Done>): <OutDone, Env>(self: Channel<OutElem, OutErr, OutDone, unknown, unknown, unknown, Env>) => Effect.Effect<void, never, Env>; <OutElem, OutErr, OutDone, Env>(self: Channel<OutElem, OutErr, OutDone, unknown, unknown, unknown, Env>, queue: Queue.Queue<OutElem, OutErr | Cause.Done>): Effect.Effect<void, never, Env>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L7828)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L7948)
 
 Since v4.0.0

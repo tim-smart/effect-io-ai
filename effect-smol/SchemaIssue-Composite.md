@@ -5,13 +5,13 @@ Module: `SchemaIssue`<br />
 
 Issue that groups multiple child issues under a single schema node.
 
-When to use:
+**When to use**
 
 - Walk the issue tree for struct/tuple schemas that collect all field errors
   rather than failing on the first.
 - Match on `_tag === "Composite"` to iterate over `issues`.
 
-Behaviour:
+**Details**
 
 - `issues` is a non-empty readonly array (at least one child).
 - `actual` is `Option.some(value)` when the input was present, or
@@ -42,6 +42,6 @@ declare class Composite { constructor(
   ) }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaIssue.ts#L478)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaIssue.ts#L480)
 
 Since v3.10.0

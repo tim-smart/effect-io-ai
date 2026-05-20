@@ -6,6 +6,7 @@ Module: `Console`<br />
 Writes a debug message through the current `Console` service.
 
 **Details**
+
 The arguments are passed to the service's `debug` method when the returned
 Effect is executed. Any filtering behavior depends on the active console
 implementation.
@@ -27,6 +28,6 @@ const program = Effect.gen(function*() {
 declare const debug: (...args: ReadonlyArray<any>) => Effect.Effect<void>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Console.ts#L294)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Console.ts#L275)
 
 Since v2.0.0

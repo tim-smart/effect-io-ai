@@ -13,6 +13,6 @@ without any previous subscription from the client.
 declare class ResourceListChangedNotification
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L963)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L983)
 
 Since v4.0.0

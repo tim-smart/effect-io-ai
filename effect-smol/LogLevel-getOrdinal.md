@@ -11,6 +11,6 @@ Returns the ordinal value of the log level.
 declare const getOrdinal: (self: LogLevel) => number
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/LogLevel.ts#L148)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/LogLevel.ts#L153)
 
 Since v4.0.0

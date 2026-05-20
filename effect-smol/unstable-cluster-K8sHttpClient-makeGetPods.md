@@ -5,6 +5,8 @@ Module: `K8sHttpClient`<br />
 
 Creates a cached effect that fetches running Kubernetes pods.
 
+**Details**
+
 The request can be limited by namespace and label selector, and the result is a
 map keyed by pod IP address.
 
@@ -14,6 +16,6 @@ map keyed by pod IP address.
 declare const makeGetPods: (options?: { readonly namespace?: string | undefined; readonly labelSelector?: string | undefined; } | undefined) => Effect.Effect<Effect.Effect<Map<string, Pod>, HttpClientError.HttpClientError | Schema.SchemaError, never>, never, K8sHttpClient>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/K8sHttpClient.ts#L89)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/K8sHttpClient.ts#L93)
 
 Since v4.0.0

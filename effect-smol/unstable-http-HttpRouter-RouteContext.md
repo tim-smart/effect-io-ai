@@ -5,6 +5,8 @@ Module: `HttpRouter`<br />
 
 Request-scoped service containing information about the matched route.
 
+**Details**
+
 It provides the route definition and the path parameters captured by the route
 matcher.
 
@@ -14,6 +16,6 @@ matcher.
 declare class RouteContext
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpRouter.ts#L273)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpRouter.ts#L280)
 
 Since v4.0.0

@@ -5,6 +5,8 @@ Module: `Schedule`<br />
 
 Returns a new `Schedule` that will recur forever.
 
+**Details**
+
 The output of the schedule is the current count of its repetitions thus far
 (i.e. `0, 1, 2, ...`).
 
@@ -33,6 +35,6 @@ const program = Effect.gen(function*() {
 declare const forever: Schedule<number, unknown, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L3182)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L3202)
 
 Since v2.0.0

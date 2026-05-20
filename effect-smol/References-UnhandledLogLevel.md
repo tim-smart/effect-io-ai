@@ -12,6 +12,6 @@ level for unhandled errors that occur during Effect execution.
 declare const UnhandledLogLevel: Context.Reference<Severity | undefined>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/References.ts#L545)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/References.ts#L559)
 
 Since v4.0.0

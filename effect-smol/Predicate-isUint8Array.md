@@ -5,10 +5,12 @@ Module: `Predicate`<br />
 
 Checks whether a value is a `Uint8Array`.
 
-When to use:
+**When to use**
+
 - You need to guard binary data at runtime.
 
-Behavior:
+**Details**
+
 - Pure; does not mutate input.
 - Uses `instanceof Uint8Array`.
 
@@ -22,7 +24,10 @@ const data: unknown = new Uint8Array([1, 2])
 console.log(Predicate.isUint8Array(data))
 ```
 
-See also: `isIterable`, `isSet`
+**See**
+
+- `isIterable`
+- `isSet`
 
 **Signature**
 
@@ -30,6 +35,6 @@ See also: `isIterable`, `isSet`
 declare const isUint8Array: (input: unknown) => input is Uint8Array
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L1202)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L1276)
 
 Since v2.0.0

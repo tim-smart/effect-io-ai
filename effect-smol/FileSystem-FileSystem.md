@@ -5,6 +5,8 @@ Module: `FileSystem`<br />
 
 Core interface for file system operations in Effect.
 
+**Details**
+
 The FileSystem interface provides a comprehensive set of file and directory operations
 that work cross-platform. All operations return Effect values that can be composed,
 transformed, and executed safely with proper error handling.
@@ -56,6 +58,8 @@ export interface FileSystem {
   ) => Effect.Effect<void, PlatformError>
   /**
    * Copy a file or directory from `fromPath` to `toPath`.
+   *
+   * **Details**
    *
    * Equivalent to `cp -r`.
    */
@@ -116,6 +120,8 @@ export interface FileSystem {
   /**
    * Create a temporary directory.
    *
+   * **Details**
+   *
    * By default the directory will be created inside the system's default
    * temporary directory, but you can specify a different location by setting
    * the `directory` option.
@@ -129,6 +135,8 @@ export interface FileSystem {
   }) => Effect.Effect<string, PlatformError>
   /**
    * Create a temporary directory inside a scope.
+   *
+   * **Details**
    *
    * Functionally equivalent to `makeTempDirectory`, but the directory will be
    * automatically deleted when the scope is closed.
@@ -150,6 +158,8 @@ export interface FileSystem {
   /**
    * Create a temporary file inside a scope.
    *
+   * **Details**
+   *
    * Functionally equivalent to `makeTempFile`, but the file will be
    * automatically deleted when the scope is closed.
    */
@@ -160,6 +170,8 @@ export interface FileSystem {
   }) => Effect.Effect<string, PlatformError, Scope>
   /**
    * Open a file at `path` with the specified `options`.
+   *
+   * **Details**
    *
    * The file handle will be automatically closed when the scope is closed.
    */
@@ -172,6 +184,8 @@ export interface FileSystem {
   ) => Effect.Effect<File, PlatformError, Scope>
   /**
    * List the contents of a directory.
+   *
+   * **Details**
    *
    * You can recursively list the contents of nested directories by setting the
    * `recursive` option.
@@ -249,6 +263,8 @@ export interface FileSystem {
   /**
    * Create a readable `Stream` for the specified `path`.
    *
+   * **Details**
+   *
    * Changing the `bufferSize` option will change the internal buffer size of
    * the stream. It defaults to `4`.
    *
@@ -318,6 +334,6 @@ export interface FileSystem {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FileSystem.ts#L93)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FileSystem.ts#L95)
 
 Since v4.0.0

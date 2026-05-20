@@ -5,9 +5,13 @@ Module: `Cause`<br />
 
 Creates a `Cause` from an array of `Reason` values.
 
+**When to use**
+
 Use this when you already have individual reasons (e.g. from filtering or
 transforming another cause's `reasons` array) and need to wrap them back
 into a `Cause`.
+
+**Details**
 
 - Returns a new `Cause`; does not mutate the input array.
 - An empty array produces a cause equivalent to `empty`.
@@ -35,6 +39,6 @@ console.log(cause.reasons.length) // 2
 declare const fromReasons: <E>(reasons: ReadonlyArray<Reason<E>>) => Cause<E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L464)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L486)
 
 Since v4.0.0

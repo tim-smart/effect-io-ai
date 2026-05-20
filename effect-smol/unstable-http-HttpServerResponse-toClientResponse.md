@@ -5,6 +5,8 @@ Module: `HttpServerResponse`<br />
 
 Wraps an `HttpServerResponse` as an `HttpClientResponse`.
 
+**Details**
+
 An optional request can be supplied for client-response metadata and decode
 errors.
 
@@ -14,6 +16,6 @@ errors.
 declare const toClientResponse: (response: HttpServerResponse, options?: { readonly request?: HttpClientRequest.HttpClientRequest | undefined; }) => HttpClientResponse.HttpClientResponse
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpServerResponse.ts#L1001)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpServerResponse.ts#L1049)
 
 Since v4.0.0

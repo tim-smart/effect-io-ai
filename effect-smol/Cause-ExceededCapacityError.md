@@ -6,6 +6,8 @@ Module: `Cause`<br />
 An error indicating that a bounded resource (queue, pool, semaphore, etc.)
 has exceeded its capacity.
 
+**Details**
+
 Implements `YieldableError`.
 
 **Example** (creating and checking)
@@ -31,6 +33,6 @@ export interface ExceededCapacityError extends YieldableError {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L1462)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L1530)
 
 Since v4.0.0

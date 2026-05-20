@@ -6,6 +6,8 @@ Module: `Pull`<br />
 An effectful pull step that either produces a value, fails with `E`, or
 signals completion with `Cause.Done<Done>`.
 
+**Details**
+
 `Pull` represents completion in the error channel so low-level stream
 consumers can distinguish ordinary failures from end-of-input and carry a
 leftover value when needed.
@@ -18,6 +20,6 @@ export interface Pull<out A, out E = never, out Done = void, out R = never>
 {}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Pull.ts#L49)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Pull.ts#L51)
 
 Since v4.0.0

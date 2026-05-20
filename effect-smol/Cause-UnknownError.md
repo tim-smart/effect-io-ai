@@ -5,6 +5,8 @@ Module: `Cause`<br />
 
 A wrapper for errors whose type is not statically known.
 
+**Details**
+
 Produced by the runtime when an effect throws a non-`Error` value.
 The original thrown value is stored in the `cause` property (inherited
 from `Error`). Implements `YieldableError`.
@@ -32,6 +34,6 @@ export interface UnknownError extends YieldableError {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L1567)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L1637)
 
 Since v4.0.0

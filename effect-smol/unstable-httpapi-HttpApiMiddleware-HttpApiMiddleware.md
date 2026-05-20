@@ -5,6 +5,8 @@ Module: `HttpApiMiddleware`<br />
 
 Server-side middleware function for an HTTP API endpoint.
 
+**Details**
+
 It receives the endpoint response effect and endpoint/group metadata, and returns
 a new response effect that may require additional services and fail with the
 middleware's declared error schema.
@@ -21,6 +23,6 @@ type HttpApiMiddleware<Provides, E, Requires> = (
 ) => Effect.Effect<HttpServerResponse, unhandled | ErrorSchemaFromConstraint<E>["Type"], Requires | HttpRouter.Provided>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiMiddleware.ts#L76)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiMiddleware.ts#L78)
 
 Since v4.0.0

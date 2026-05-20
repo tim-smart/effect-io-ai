@@ -11,7 +11,7 @@ plain value, an `Option`, or a function returning either.
 - Flexible chaining where the next step may return `Option`, a plain value,
   or a function
 
-**Behavior**
+**Details**
 
 - If `self` is `None`, returns `None` immediately
 - If `f` is a function, calls it with the `Some` value
@@ -47,6 +47,6 @@ console.log(Option.andThen(Option.none(), (x) => Option.some(x * 2)))
 declare const andThen: { <A, B>(f: (a: A) => Option<B>): (self: Option<A>) => Option<B>; <B>(f: Option<B>): <A>(self: Option<A>) => Option<B>; <A, B>(f: (a: A) => B): (self: Option<A>) => Option<B>; <B>(f: NotFunction<B>): <A>(self: Option<A>) => Option<B>; <A, B>(self: Option<A>, f: (a: A) => Option<B>): Option<B>; <A, B>(self: Option<A>, f: Option<B>): Option<B>; <A, B>(self: Option<A>, f: (a: A) => B): Option<B>; <A, B>(self: Option<A>, f: NotFunction<B>): Option<B>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L1377)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L1381)
 
 Since v2.0.0

@@ -5,6 +5,8 @@ Module: `SchemaAST`<br />
 
 Abstract base class for all `AST` node variants.
 
+**Details**
+
 Every AST node extends `Base` and inherits these fields:
 
 - `annotations` — user-supplied metadata (identifier, title, description,
@@ -31,6 +33,6 @@ declare class Base { constructor(
   ) }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L538)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L549)
 
 Since v4.0.0

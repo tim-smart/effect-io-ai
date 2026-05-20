@@ -6,6 +6,8 @@ Module: `HttpServerRespondable`<br />
 Attempts to convert an unknown defect into an `HttpServerResponse`, falling
 back to the supplied response when no conversion is available.
 
+**Details**
+
 Only `HttpServerResponse` and `Respondable` values receive special handling.
 
 **Signature**
@@ -14,6 +16,6 @@ Only `HttpServerResponse` and `Respondable` values receive special handling.
 declare const toResponseOrElseDefect: (u: unknown, orElse: HttpServerResponse) => Effect.Effect<HttpServerResponse>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpServerRespondable.ts#L110)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpServerRespondable.ts#L118)
 
 Since v4.0.0

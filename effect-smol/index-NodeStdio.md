@@ -1,4 +1,4 @@
-Package: `@effect/platform-node`<br />
+Package: `@effect/platform-node-shared`<br />
 Module: `index`<br />
 
 ## index.NodeStdio
@@ -11,6 +11,6 @@ Re-exports all named exports from the "./NodeStdio.ts" module as `NodeStdio`.
 export * as NodeStdio from "./NodeStdio.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L409)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L190)
 
 Since v4.0.0

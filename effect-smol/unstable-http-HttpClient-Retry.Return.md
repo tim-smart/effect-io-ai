@@ -5,6 +5,8 @@ Module: `HttpClient`<br />
 
 Computes the client type returned by `retry` for a given set of retry options.
 
+**Details**
+
 The result includes errors and requirements introduced by schedules and effectful retry predicates.
 
 **Signature**
@@ -24,6 +26,6 @@ type HttpClient.With<(O extends { schedule: Schedule.Schedule<infer _O, infer _I
   > extends infer Z ? Z : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpClient.ts#L814)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpClient.ts#L826)
 
 Since v4.0.0

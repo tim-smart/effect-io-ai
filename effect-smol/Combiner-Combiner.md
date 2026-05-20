@@ -3,17 +3,17 @@ Module: `Combiner`<br />
 
 ## Combiner.Combiner
 
-Represents a strategy for combining two values of the same type `A`.
-
-A `Combiner` contains a single `combine` method that takes two values and
+Represents a strategy for combining two values of the same type `A`. A
+`Combiner` contains a single `combine` method that takes two values and
 returns a merged result. It does not include an identity/empty value; use
 `Reducer` when you need one.
 
-When to use:
-- You need to describe how two values of the same type merge.
-- You want to pass a reusable combining strategy to library functions like
-  `Struct.makeCombiner` or `Option.makeCombinerFailFast`.
-- You are building a `Reducer` and need to define the combining step first.
+**When to use**
+
+Use `Combiner` when you need to describe how two values of the same type
+merge, pass a reusable combining strategy to library functions like
+`Struct.makeCombiner` or `Option.makeCombinerFailFast`, or define the
+combining step for a `Reducer`.
 
 **Example** (number addition combiner)
 
@@ -41,6 +41,6 @@ export interface Combiner<A> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Combiner.ts#L94)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Combiner.ts#L93)
 
 Since v4.0.0

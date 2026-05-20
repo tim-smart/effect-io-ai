@@ -25,13 +25,13 @@ const program = Effect.gen(function*() {
   const scope = yield* Effect.scope
 
   // Build database layer with memoization
-  const dbLayer = Layer.succeed(Database)({
+  const dbLayer = Layer.succeed(Database, {
     query: Effect.fn("Database.query")((sql: string) => Effect.succeed("result"))
   })
   const dbContext = yield* Layer.buildWithMemoMap(dbLayer, memoMap, scope)
 
   // Build logger layer with same memoization (reuses memo if same layer)
-  const loggerLayer = Layer.succeed(Logger)({
+  const loggerLayer = Layer.succeed(Logger, {
     log: Effect.fn("Logger.log")((msg: string) => Effect.sync(() => console.log(msg)))
   })
   const loggerContext = yield* Layer.buildWithMemoMap(
@@ -53,6 +53,6 @@ const program = Effect.gen(function*() {
 declare const buildWithMemoMap: { (memoMap: MemoMap, scope: Scope.Scope): <RIn, E, ROut>(self: Layer<ROut, E, RIn>) => Effect<Context.Context<ROut>, E, RIn>; <RIn, E, ROut>(self: Layer<ROut, E, RIn>, memoMap: MemoMap, scope: Scope.Scope): Effect<Context.Context<ROut>, E, RIn>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L547)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L573)
 
 Since v2.0.0

@@ -6,6 +6,8 @@ Module: `HashRing`<br />
 A weighted consistent-hashing ring for assigning inputs to nodes with stable
 remapping as nodes are added or removed.
 
+**Details**
+
 Nodes are identified by their `PrimaryKey` value and can be iterated from the
 ring.
 
@@ -21,6 +23,6 @@ export interface HashRing<A extends PrimaryKey.PrimaryKey> extends Pipeable, Ite
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashRing.ts#L82)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashRing.ts#L84)
 
 Since v3.19.0

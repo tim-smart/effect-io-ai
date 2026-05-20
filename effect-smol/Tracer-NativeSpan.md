@@ -3,10 +3,9 @@ Module: `Tracer`<br />
 
 ## Tracer.NativeSpan
 
-Default in-memory `Span` implementation used by the native tracer.
-
-It generates span and trace identifiers, stores attributes, events, and
-links, and records `Started` or `Ended` status.
+Default in-memory `Span` implementation used by the native tracer. It
+generates span and trace identifiers, stores attributes, events, and links,
+and records `Started` or `Ended` status.
 
 **Signature**
 
@@ -22,6 +21,6 @@ declare class NativeSpan { constructor(options: {
   }) }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tracer.ts#L581)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tracer.ts#L571)
 
 Since v4.0.0

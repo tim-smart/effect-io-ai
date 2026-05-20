@@ -5,6 +5,8 @@ Module: `HttpBody`<br />
 
 Common protocol implemented by all HTTP body variants.
 
+**Details**
+
 It carries the variant tag plus optional `contentType` and `contentLength` metadata.
 
 **Signature**
@@ -18,6 +20,6 @@ export interface Proto extends Inspectable.Inspectable {
   }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpBody.ts#L66)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpBody.ts#L70)
 
 Since v4.0.0

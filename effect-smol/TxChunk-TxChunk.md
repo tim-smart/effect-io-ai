@@ -6,6 +6,8 @@ Module: `TxChunk`<br />
 TxChunk is a transactional chunk data structure that provides Software Transactional Memory (STM)
 semantics for chunk operations.
 
+**Details**
+
 Accessed values are tracked by the transaction in order to detect conflicts and to track changes.
 A transaction will retry whenever a conflict is detected or whenever the transaction explicitly
 calls `Effect.txRetry` and any of the accessed TxChunk values change.
@@ -50,6 +52,6 @@ export interface TxChunk<in out A> extends Inspectable, Pipeable {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxChunk.ts#L67)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxChunk.ts#L69)
 
 Since v4.0.0

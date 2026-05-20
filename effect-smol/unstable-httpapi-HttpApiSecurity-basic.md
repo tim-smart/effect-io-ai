@@ -5,8 +5,10 @@ Module: `HttpApiSecurity`<br />
 
 Creates an HTTP Basic authentication security scheme.
 
-You can implement API middleware for this security scheme with
-`HttpApiBuilder.middlewareSecurity`.
+**When to use**
+
+Use `HttpApiBuilder.middlewareSecurity` to implement API middleware for this
+security scheme.
 
 **Signature**
 
@@ -14,6 +16,6 @@ You can implement API middleware for this security scheme with
 declare const basic: Basic
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiSecurity.ts#L170)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiSecurity.ts#L176)
 
 Since v4.0.0

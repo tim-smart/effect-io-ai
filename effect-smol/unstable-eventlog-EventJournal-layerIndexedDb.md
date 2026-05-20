@@ -12,6 +12,6 @@ Provides `EventJournal` using the IndexedDB-backed implementation created by
 declare const layerIndexedDb: (options?: { readonly database?: string; }) => Layer.Layer<EventJournal, EventJournalError>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventJournal.ts#L754)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventJournal.ts#L774)
 
 Since v4.0.0

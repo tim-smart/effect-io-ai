@@ -5,6 +5,8 @@ Module: `Graph`<br />
 
 Creates an iterator over all edge indices in the graph.
 
+**Details**
+
 The iterator produces edge indices in the order they were added to the graph.
 This provides access to all edges regardless of connectivity.
 
@@ -31,6 +33,6 @@ console.log(indices) // [0, 1]
 declare const edges: <N, E, T extends Kind = "directed">(graph: Graph<N, E, T> | MutableGraph<N, E, T>) => EdgeWalker<E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Graph.ts#L4330)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Graph.ts#L4354)
 
 Since v3.18.0

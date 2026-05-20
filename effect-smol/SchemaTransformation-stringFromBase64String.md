@@ -6,10 +6,12 @@ Module: `SchemaTransformation`<br />
 Decodes a Base64-encoded `string` into a UTF-8 `string` and encodes a
 UTF-8 `string` back to a Base64 string.
 
-When to use this:
+**When to use**
+
 - Handling text data transmitted as Base64 strings.
 
-Behavior:
+**Details**
+
 - Decode: parses the Base64 string into a UTF-8 string.
 - Encode: encodes the string as a Base64 string.
 
@@ -23,7 +25,8 @@ const schema = Schema.String.pipe(
 )
 ```
 
-See also:
+**See**
+
 - `uint8ArrayFromBase64String`
 - `Schema.StringFromBase64` - a ready-made schema wrapping this transformation.
 
@@ -33,6 +36,6 @@ See also:
 declare const stringFromBase64String: Transformation<string, string, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L1400)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L1442)
 
 Since v4.0.0

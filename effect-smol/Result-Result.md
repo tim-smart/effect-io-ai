@@ -5,6 +5,8 @@ Module: `Result`<br />
 
 A value that is either `Success<A, E>` or `Failure<A, E>`.
 
+**Details**
+
 - Use `succeed` / `fail` to construct
 - Use `match` to fold both branches
 - Use `isSuccess` / `isFailure` to narrow the type
@@ -39,6 +41,6 @@ console.log(message)
 type Result<A, E> = Success<A, E> | Failure<A, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L121)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L123)
 
 Since v4.0.0

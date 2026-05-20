@@ -21,6 +21,6 @@ export interface AstarConfig<E, N> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Graph.ts#L3180)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Graph.ts#L3196)
 
 Since v3.18.0

@@ -11,6 +11,6 @@ Provider-specific metadata attached to `InvalidRequestError`.
 export interface InvalidRequestErrorMetadata extends ProviderMetadata {}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AiError.ts#L313)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AiError.ts#L324)
 
 Since v4.0.0

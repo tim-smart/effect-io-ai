@@ -5,6 +5,8 @@ Module: `HttpClient`<br />
 
 Constructs an `HttpClient` from a low-level request runner.
 
+**Details**
+
 The runner receives the request, resolved URL, abort signal, and current fiber. The client wrapper handles URL construction failures, tracing and propagation, header redaction, and aborting non-scoped requests on interruption.
 
 **Signature**
@@ -13,6 +15,6 @@ The runner receives the request, resolved URL, abort signal, and current fiber. 
 declare const make: (f: (request: HttpClientRequest.HttpClientRequest, url: URL, signal: AbortSignal, fiber: Fiber.Fiber<HttpClientResponse.HttpClientResponse, Error.HttpClientError>) => Effect.Effect<HttpClientResponse.HttpClientResponse, Error.HttpClientError>) => HttpClient
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpClient.ts#L613)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpClient.ts#L623)
 
 Since v4.0.0

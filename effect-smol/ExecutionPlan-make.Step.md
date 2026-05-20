@@ -5,6 +5,8 @@ Module: `ExecutionPlan`<br />
 
 Input shape for a single execution-plan step.
 
+**Details**
+
 Each step provides a `Context` or `Layer` and may limit attempts, add a
 `while` predicate for retry decisions, or attach a `Schedule` for retry
 timing.
@@ -20,6 +22,6 @@ type Step = {
   }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ExecutionPlan.ts#L271)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ExecutionPlan.ts#L274)
 
 Since v3.16.0

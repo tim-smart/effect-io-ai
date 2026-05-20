@@ -5,6 +5,8 @@ Module: `DevToolsSchema`<br />
 
 Type of devtools protocol responses sent by the server.
 
+**Details**
+
 Responses include heartbeat pongs and requests for metric snapshots.
 
 **Signature**
@@ -13,6 +15,6 @@ Responses include heartbeat pongs and requests for metric snapshots.
 type Response = Schema.Schema.Type<typeof Response>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DevToolsSchema.ts#L517)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DevToolsSchema.ts#L548)
 
 Since v4.0.0

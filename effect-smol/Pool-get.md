@@ -13,6 +13,6 @@ Retrying a failed acquisition attempt will repeat the acquisition attempt.
 declare const get: <A, E>(self: Pool<A, E>) => Effect.Effect<A, E, Scope.Scope>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Pool.ts#L338)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Pool.ts#L352)
 
 Since v2.0.0

@@ -5,9 +5,12 @@ Module: `Config`<br />
 
 A `Schema.Codec` for `LogLevel` string literals.
 
-When to use:
+**When to use**
+
 - Pass to `schema` for custom paths, or use the `logLevel`
   convenience constructor.
+
+**Details**
 
 Accepted values: `"All"`, `"Fatal"`, `"Error"`, `"Warn"`, `"Info"`,
 `"Debug"`, `"Trace"`, `"None"`.
@@ -22,6 +25,6 @@ Accepted values: `"All"`, `"Fatal"`, `"Error"`, `"Warn"`, `"Info"`,
 declare const LogLevel: Schema.Literals<ReadonlyArray<LogLevel_.LogLevel>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Config.ts#L763)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Config.ts#L809)
 
 Since v4.0.0

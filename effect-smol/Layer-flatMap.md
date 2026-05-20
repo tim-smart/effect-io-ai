@@ -24,7 +24,7 @@ class Logger extends Context.Service<Logger, {
 }>()("Logger") {}
 
 // Base config layer
-const configLayer = Layer.succeed(Config)({
+const configLayer = Layer.succeed(Config, {
   dbUrl: "postgres://localhost:5432/mydb",
   logLevel: "debug"
 })
@@ -35,7 +35,7 @@ const dynamicServiceLayer = configLayer.pipe(
     const config = Context.get(context, Config)
 
     // Create database layer based on config
-    const dbLayer = Layer.succeed(Database)({
+    const dbLayer = Layer.succeed(Database, {
       query: Effect.fn("Database.query")((sql: string) =>
         Effect.succeed(
           `Querying ${config.dbUrl}: ${sql}`
@@ -43,7 +43,7 @@ const dynamicServiceLayer = configLayer.pipe(
     })
 
     // Create logger layer based on config
-    const loggerLayer = Layer.succeed(Logger)({
+    const loggerLayer = Layer.succeed(Logger, {
       log: Effect.fn("Logger.log")((msg: string) =>
         config.logLevel === "debug"
           ? Effect.sync(() => console.log(`[DEBUG] ${msg}`))
@@ -76,6 +76,6 @@ const program = Effect.gen(function*() {
 declare const flatMap: { <A, A2, E2, R2>(f: (context: Context.Context<A>) => Layer<A2, E2, R2>): <E, R>(self: Layer<A, E, R>) => Layer<A2, E2 | E, R2 | R>; <A, E, R, A2, E2, R2>(self: Layer<A, E, R>, f: (context: Context.Context<A>) => Layer<A2, E2, R2>): Layer<A2, E | E2, R | R2>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L1422)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L1551)
 
 Since v2.0.0

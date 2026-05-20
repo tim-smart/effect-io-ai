@@ -5,6 +5,8 @@ Module: `HttpClient`<br />
 
 Parameterized HTTP client that may fail with `E` and require environment `R`.
 
+**Details**
+
 It exposes preprocessing, postprocessing, direct request execution, and method-specific helpers.
 
 **Signature**
@@ -49,6 +51,6 @@ export interface With<E, R = never> extends Pipeable, Inspectable.Inspectable {
   }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpClient.ts#L86)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpClient.ts#L88)
 
 Since v4.0.0

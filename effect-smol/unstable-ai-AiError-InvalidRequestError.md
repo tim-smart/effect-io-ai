@@ -5,6 +5,8 @@ Module: `AiError`<br />
 
 Error indicating the request had invalid or malformed parameters.
 
+**Details**
+
 Invalid request errors require fixing the request and are not retryable.
 
 **Example** (Creating an invalid request error)
@@ -29,6 +31,6 @@ console.log(invalidRequestError.message)
 declare class InvalidRequestError
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AiError.ts#L621)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AiError.ts#L642)
 
 Since v4.0.0

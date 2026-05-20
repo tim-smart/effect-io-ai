@@ -5,6 +5,8 @@ Module: `DateTime`<br />
 
 Calculate the time zone offset of a `DateTime.Zoned` in milliseconds.
 
+**Details**
+
 Returns the offset from UTC in milliseconds. Positive values indicate
 time zones ahead of UTC, negative values indicate time zones behind UTC.
 
@@ -27,6 +29,6 @@ console.log(offset) // 0 (London is UTC+0 in winter)
 declare const zonedOffset: (self: Zoned) => number
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L1481)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L1561)
 
 Since v3.6.0

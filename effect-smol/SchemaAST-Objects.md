@@ -5,6 +5,8 @@ Module: `SchemaAST`<br />
 
 AST node for object-like schemas, including structs and records.
 
+**Details**
+
 - `propertySignatures` — named properties with their types (struct fields).
 - `indexSignatures` — index signature entries (record patterns), each with
   a `parameter` AST for matching keys and a `type` AST for values.
@@ -12,6 +14,8 @@ AST node for object-like schemas, including structs and records.
 An `Objects` node with no properties and no index signatures performs only a
 non-nullish check: it accepts any value except `null` and `undefined`,
 including primitive values.
+
+**Gotchas**
 
 Duplicate property names throw at construction time.
 
@@ -51,6 +55,6 @@ declare class Objects { constructor(
   ) }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L1706)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L1747)
 
 Since v4.0.0

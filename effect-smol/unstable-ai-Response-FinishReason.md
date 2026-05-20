@@ -5,6 +5,8 @@ Module: `Response`<br />
 
 Type of the reason why a model stopped generating a response.
 
+**Details**
+
 Values include normal stops, token-limit stops, content filtering,
 tool-call pauses, provider errors, and unknown provider-specific finish
 reasons.
@@ -15,6 +17,6 @@ reasons.
 type FinishReason = typeof FinishReason.Type
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Response.ts#L2326)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Response.ts#L2343)
 
 Since v4.0.0

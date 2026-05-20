@@ -6,7 +6,7 @@ Module: `PubSub`<br />
 Synchronously returns the current number of messages retained by the `PubSub`
 for active subscribers.
 
-**Notes**
+**Details**
 
 Returns `0` after shutdown. Because this is an unsafe synchronous snapshot,
 prefer `size` in effectful code.
@@ -29,6 +29,6 @@ console.log("Current size:", size)
 declare const sizeUnsafe: <A>(self: PubSub<A>) => number
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PubSub.ts#L616)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PubSub.ts#L622)
 
 Since v4.0.0

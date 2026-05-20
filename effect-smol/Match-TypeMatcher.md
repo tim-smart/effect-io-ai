@@ -5,6 +5,8 @@ Module: `Match`<br />
 
 Represents a pattern matcher that operates on types rather than specific values.
 
+**Details**
+
 A `TypeMatcher` is created when using `Match.type<T>()` and allows you to define
 patterns that will be applied to values of the specified type. It maintains
 type-level information about the input type, applied filters, remaining cases,
@@ -43,6 +45,6 @@ export interface TypeMatcher<in Input, out Filters, out Remaining, out Result, o
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L102)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L106)
 
 Since v4.0.0

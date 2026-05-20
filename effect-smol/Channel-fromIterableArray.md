@@ -21,6 +21,6 @@ const channel = Channel.fromIterableArray(numbers)
 declare const fromIterableArray: <A, L>(iterable: Iterable<A, L>, chunkSize?: number) => Channel<Arr.NonEmptyReadonlyArray<A>, never, L>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L825)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L839)
 
 Since v4.0.0

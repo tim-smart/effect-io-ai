@@ -11,6 +11,6 @@ Type-level representation of the Effect AI tool runtime type identifier.
 type TypeId = "~effect/ai/Tool"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tool.ts#L65)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tool.ts#L67)
 
 Since v4.0.0

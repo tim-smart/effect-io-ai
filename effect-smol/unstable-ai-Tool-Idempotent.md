@@ -6,6 +6,8 @@ Module: `Tool`<br />
 Annotation indicating whether a tool can be called repeatedly with the same
 parameters without changing the result beyond the first call.
 
+**Details**
+
 This is emitted as the MCP `idempotentHint`; unannotated tools default to
 `false`.
 
@@ -24,6 +26,6 @@ const idempotentTool = Tool.make("get_current_time")
 declare const Idempotent: Context.Reference<boolean>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tool.ts#L1744)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tool.ts#L1802)
 
 Since v4.0.0

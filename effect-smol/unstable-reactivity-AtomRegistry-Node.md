@@ -5,6 +5,8 @@ Module: `AtomRegistry`<br />
 
 A registry node for a single atom.
 
+**Details**
+
 Nodes expose the current value, parent and child dependency links, listener set,
 and current lifecycle state.
 
@@ -21,6 +23,6 @@ export interface Node<A> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AtomRegistry.ts#L103)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AtomRegistry.ts#L107)
 
 Since v4.0.0

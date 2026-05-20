@@ -5,6 +5,8 @@ Module: `Queue`<br />
 
 Creates a bounded queue with the specified capacity that uses backpressure strategy.
 
+**Details**
+
 When the queue reaches capacity, producers will be suspended until space becomes available.
 This ensures all messages are processed but may slow down producers.
 
@@ -31,6 +33,6 @@ const program = Effect.gen(function*() {
 declare const bounded: <A, E = never>(capacity: number) => Effect<Queue<A, E>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Queue.ts#L458)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Queue.ts#L478)
 
 Since v2.0.0

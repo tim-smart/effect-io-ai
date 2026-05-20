@@ -5,8 +5,13 @@ Module: `TxSemaphore`<br />
 
 Releases the specified number of permits back to the semaphore.
 
-The available permit count is capped at the semaphore capacity. Passing a
-non-positive `n` dies with a defect.
+**Details**
+
+The available permit count is capped at the semaphore capacity.
+
+**Gotchas**
+
+Passing a non-positive `n` dies with a defect.
 
 **Example** (Releasing multiple permits)
 
@@ -34,6 +39,6 @@ const program = Effect.gen(function*() {
 declare const releaseN: (self: TxSemaphore, n: number) => Effect.Effect<void>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxSemaphore.ts#L396)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxSemaphore.ts#L409)
 
 Since v2.0.0

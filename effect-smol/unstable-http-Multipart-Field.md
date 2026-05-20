@@ -5,6 +5,8 @@ Module: `Multipart`<br />
 
 Multipart form field containing a decoded text value.
 
+**Details**
+
 The `key` is the field name, `contentType` is the part media type, and `value`
 is the decoded field content.
 
@@ -19,6 +21,6 @@ export interface Field extends Part.Proto {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Multipart.ts#L93)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Multipart.ts#L99)
 
 Since v4.0.0

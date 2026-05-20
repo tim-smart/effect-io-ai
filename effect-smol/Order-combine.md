@@ -6,12 +6,14 @@ Module: `Order`<br />
 Combines two `Order` instances to create a new `Order` that first compares using the first `Order`,
 and if the values are equal, then compares using the second `Order`.
 
-When to use this:
+**When to use**
+
 - When you need multi-criteria comparison (e.g., sort by age, then by name)
 - When creating composite orders from simpler orders
 - When implementing lexicographic ordering
 
-Behavior:
+**Details**
+
 - Pure function: does not mutate inputs
 - First applies the first order; if the result is non-zero, returns that result
 - If the first order returns `0` (equal), applies the second order
@@ -40,7 +42,8 @@ console.log(byAgeAndName(person1, person2)) // -1 (Same age, Alice < Bob)
 console.log(byAgeAndName(person1, person3)) // 1 (Alice (30) > Charlie (25))
 ```
 
-See also:
+**See**
+
 - `combineAll` - Combine multiple orders from a collection
 - `mapInput` - Transform orders to work with different types
 
@@ -50,6 +53,6 @@ See also:
 declare const combine: { <A>(that: Order<A>): (self: Order<A>) => Order<A>; <A>(self: Order<A>, that: Order<A>): Order<A>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Order.ts#L378)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Order.ts#L380)
 
 Since v2.0.0

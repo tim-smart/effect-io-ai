@@ -5,6 +5,8 @@ Module: `Channel`<br />
 
 Create a channel from a PubSub subscription that outputs arrays of values.
 
+**Details**
+
 This constructor creates a channel that reads from a PubSub subscription and outputs
 arrays of values in chunks. It's useful when you want to process multiple values at once
 for better performance.
@@ -105,6 +107,6 @@ const metricsAggregator = Effect.gen(function*() {
 declare const fromSubscriptionArray: <A>(subscription: PubSub.Subscription<A>) => Channel<Arr.NonEmptyReadonlyArray<A>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L1433)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L1453)
 
 Since v4.0.0

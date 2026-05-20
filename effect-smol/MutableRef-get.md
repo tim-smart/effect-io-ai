@@ -33,6 +33,6 @@ console.log(value1 === value2) // true
 declare const get: <T>(self: MutableRef<T>) => T
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableRef.ts#L275)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableRef.ts#L277)
 
 Since v2.0.0

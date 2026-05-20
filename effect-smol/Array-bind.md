@@ -5,6 +5,8 @@ Module: `Array`<br />
 
 Introduces a new array variable into a do-notation scope, producing the cartesian product with all previous bindings.
 
+**Details**
+
 - Each `bind` call adds a named property to the accumulated object.
 - The callback receives the current scope and must return an array.
 - Equivalent to `flatMap` + merging the new value into the scope object.
@@ -35,6 +37,6 @@ console.log(result)
 declare const bind: { <A extends object, N extends string, B>(tag: Exclude<N, keyof A>, f: (a: NoInfer<A>) => ReadonlyArray<B>): (self: ReadonlyArray<A>) => Array<{ [K in N | keyof A]: K extends keyof A ? A[K] : B; }>; <A extends object, N extends string, B>(self: ReadonlyArray<A>, tag: Exclude<N, keyof A>, f: (a: NoInfer<A>) => ReadonlyArray<B>): Array<{ [K in N | keyof A]: K extends keyof A ? A[K] : B; }>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L4159)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L4309)
 
 Since v3.2.0

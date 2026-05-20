@@ -5,6 +5,8 @@ Module: `Match`<br />
 
 Represents a positive pattern matching case.
 
+**Details**
+
 A `When` case contains the logic to test if a value matches a specific pattern
 and the function to evaluate when the pattern matches. It's the primary
 building block for pattern matching conditions.
@@ -35,6 +37,6 @@ export interface When {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L195)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L205)
 
 Since v4.0.0

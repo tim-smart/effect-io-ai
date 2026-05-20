@@ -6,6 +6,8 @@ Module: `ClusterSchema`<br />
 Annotation that controls whether client-side cluster request tracing is
 enabled.
 
+**Details**
+
 The default value is `true`.
 
 **Signature**
@@ -14,6 +16,6 @@ The default value is `true`.
 declare const ClientTracingEnabled: Context.Reference<boolean>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ClusterSchema.ts#L123)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ClusterSchema.ts#L131)
 
 Since v4.0.0

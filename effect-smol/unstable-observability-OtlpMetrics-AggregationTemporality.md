@@ -3,14 +3,13 @@ Module: `OtlpMetrics`<br />
 
 ## OtlpMetrics.AggregationTemporality
 
-Determines how metric values relate to the time interval over which they
-are aggregated.
+Determines how metric values relate to the time interval over which they are aggregated.
 
-- `"cumulative"`: Reports total since a fixed start time. Each data point
-  depends on all previous measurements. This is the default behavior.
+**Details**
 
-- `"delta"`: Reports changes since the last export. Each interval is
-  independent with no dependency on previous measurements.
+`"cumulative"` reports total since a fixed start time. Each data point depends on all previous measurements. This is the default behavior.
+
+`"delta"` reports changes since the last export. Each interval is independent with no dependency on previous measurements.
 
 **Example** (Configuring aggregation temporality)
 
@@ -36,6 +35,6 @@ const cumulativeLayer = OtlpMetrics.layer({
 type AggregationTemporality = "cumulative" | "delta"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/OtlpMetrics.ts#L72)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/OtlpMetrics.ts#L71)
 
 Since v4.0.0

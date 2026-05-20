@@ -5,6 +5,8 @@ Module: `Prompt`<br />
 
 Options for a floating-point number prompt.
 
+**Details**
+
 In addition to the numeric bounds and step settings from `IntegerOptions`,
 the prompt can be configured with a display precision.
 
@@ -19,6 +21,6 @@ export interface FloatOptions extends IntegerOptions {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L310)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L317)
 
 Since v4.0.0

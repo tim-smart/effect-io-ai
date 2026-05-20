@@ -5,6 +5,8 @@ Module: `Effect`<br />
 
 Applies an effectful function to each element and accumulates all failures.
 
+**Details**
+
 This function always evaluates every element. If at least one effect fails,
 all failures are returned as a non-empty array and successes are discarded.
 If all effects succeed, it returns all collected successes.
@@ -41,6 +43,6 @@ Effect.runPromiseExit(program).then(console.log)
 declare const validate: { <A, B, E, R>(f: (a: A, i: number) => Effect<B, E, R>, options?: { readonly concurrency?: Concurrency | undefined; readonly discard?: false | undefined; } | undefined): (elements: Iterable<A>) => Effect<Array<B>, Arr.NonEmptyArray<E>, R>; <A, B, E, R>(f: (a: A, i: number) => Effect<B, E, R>, options: { readonly concurrency?: Concurrency | undefined; readonly discard: true; }): (elements: Iterable<A>) => Effect<void, Arr.NonEmptyArray<E>, R>; <A, B, E, R>(elements: Iterable<A>, f: (a: A, i: number) => Effect<B, E, R>, options?: { readonly concurrency?: Concurrency | undefined; readonly discard?: false | undefined; } | undefined): Effect<Array<B>, Arr.NonEmptyArray<E>, R>; <A, B, E, R>(elements: Iterable<A>, f: (a: A, i: number) => Effect<B, E, R>, options: { readonly concurrency?: Concurrency | undefined; readonly discard: true; }): Effect<void, Arr.NonEmptyArray<E>, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L618)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L623)
 
 Since v2.0.0

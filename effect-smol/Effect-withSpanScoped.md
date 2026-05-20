@@ -5,6 +5,8 @@ Module: `Effect`<br />
 
 Wraps the effect with a new span for tracing.
 
+**Details**
+
 The span is ended when the Scope is finalized.
 
 **Example** (Creating a scoped child span)
@@ -27,6 +29,6 @@ const program = Effect.scoped(
 declare const withSpanScoped: { (name: string, options?: SpanOptions): <A, E, R>(self: Effect<A, E, R>) => Effect<A, E, Exclude<R, ParentSpan> | Scope>; <A, E, R>(self: Effect<A, E, R>, name: string, options?: SpanOptions): Effect<A, E, Exclude<R, ParentSpan> | Scope>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L7719)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L7802)
 
 Since v2.0.0

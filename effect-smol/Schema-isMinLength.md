@@ -6,12 +6,14 @@ Module: `Schema`<br />
 Validates that a value has at least the specified length. Works with strings
 and arrays.
 
-**JSON Schema**
+**Details**
+
+JSON Schema:
 
 This check corresponds to the `minLength` constraint for strings or the
 `minItems` constraint for arrays in JSON Schema.
 
-**Arbitrary**
+Arbitrary:
 
 When generating test data with fast-check, this applies a `minLength`
 constraint to ensure generated strings or arrays have at least the required
@@ -32,6 +34,6 @@ const NonEmptyArraySchema = Schema.Array(Schema.Number).check(Schema.isMinLength
 declare const isMinLength: (minLength: number, annotations?: Annotations.Filter) => AST.Filter<{ readonly length: number; }>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L6916)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L7137)
 
 Since v4.0.0

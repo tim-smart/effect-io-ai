@@ -14,6 +14,6 @@ type AddPrefix<Group, Prefix> = Group extends
   : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiGroup.ts#L271)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiGroup.ts#L277)
 
 Since v4.0.0

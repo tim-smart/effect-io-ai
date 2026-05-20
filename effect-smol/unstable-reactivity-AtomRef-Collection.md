@@ -5,6 +5,8 @@ Module: `AtomRef`<br />
 
 A reactive collection of mutable item references.
 
+**Details**
+
 The collection can push, insert, and remove item refs, and `toArray` returns the
 current raw item values.
 
@@ -19,6 +21,6 @@ export interface Collection<A> extends ReadonlyRef<ReadonlyArray<AtomRef<A>>> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AtomRef.ts#L82)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AtomRef.ts#L88)
 
 Since v4.0.0

@@ -6,6 +6,7 @@ Module: `Schema`<br />
 Iso representation used for `CauseReason` schemas.
 
 **Details**
+
 Failures are represented with a `Fail` tag and encoded error, defects with a
 `Die` tag and encoded defect, and interrupts with an optional `fiberId`.
 
@@ -24,6 +25,6 @@ type CauseReasonIso<E, D> = {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L8044)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L8304)
 
 Since v4.0.0

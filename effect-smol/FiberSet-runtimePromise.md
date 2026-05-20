@@ -3,9 +3,11 @@ Module: `FiberSet`<br />
 
 ## FiberSet.runtimePromise
 
-Capture a Runtime and use it to fork Effect's, adding the forked fibers to the FiberSet.
+Captures a Runtime and uses it to fork Effects into the `FiberSet`.
 
-The returned run function will return Promise's.
+**Details**
+
+The returned run function returns a `Promise` for each effect result.
 
 **Example** (Running effects as promises)
 
@@ -33,6 +35,6 @@ const program = Effect.gen(function*() {
 declare const runtimePromise: <A, E>(self: FiberSet<A, E>) => <R = never>() => Effect.Effect<(<XE extends E, XA extends A>(effect: Effect.Effect<XA, XE, R>, options?: (Effect.RunOptions & { readonly propagateInterruption?: boolean | undefined; }) | undefined) => Promise<XA>), never, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FiberSet.ts#L602)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FiberSet.ts#L613)
 
 Since v3.13.0

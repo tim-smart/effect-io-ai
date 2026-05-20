@@ -5,6 +5,8 @@ Module: `TxPubSub`<br />
 
 Publishes all messages from an iterable to all current subscribers.
 
+**Details**
+
 Returns `true` if all messages were delivered to all subscribers.
 
 **Example** (Publishing multiple messages to subscribers)
@@ -34,6 +36,6 @@ const program = Effect.gen(function*() {
 declare const publishAll: { <A>(values: Iterable<A>): (self: TxPubSub<A>) => Effect.Effect<boolean>; <A>(self: TxPubSub<A>, values: Iterable<A>): Effect.Effect<boolean>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxPubSub.ts#L452)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxPubSub.ts#L451)
 
 Since v2.0.0

@@ -5,6 +5,8 @@ Module: `Graph`<br />
 
 Mermaid diagram direction types for controlling layout orientation.
 
+**Details**
+
 Determines the flow direction of nodes and edges in the diagram:
 - `TB`/`TD`: Top to Bottom (vertical layout, default)
 - `BT`: Bottom to Top (reverse vertical)
@@ -42,6 +44,6 @@ type MermaidDirection = | "TB" // Top to Bottom (default)
   | "LR"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Graph.ts#L1954)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Graph.ts#L1960)
 
 Since v3.18.0

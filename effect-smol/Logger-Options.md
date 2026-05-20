@@ -6,6 +6,7 @@ Module: `Logger`<br />
 Information supplied to a `Logger` for a single log event.
 
 **Details**
+
 Includes the logged message, log level, cause, current fiber, and timestamp.
 
 **Example** (Accessing logger options)
@@ -42,6 +43,6 @@ export interface Options<out Message> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Logger.ts#L175)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Logger.ts#L177)
 
 Since v2.0.0

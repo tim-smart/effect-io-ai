@@ -3,10 +3,11 @@ Module: `Atom`<br />
 
 ## Atom.autoDispose
 
-Reverts the `keepAlive` behavior of a reactive value, allowing it to be
-disposed of when not in use.
+Reverts the `keepAlive` behavior of a reactive value, allowing it to be disposed of when not in use.
 
-Note that Atom's have this behavior by default.
+**Details**
+
+Atoms have this behavior by default, so use this to undo `keepAlive` on a copied atom.
 
 **Signature**
 
@@ -14,6 +15,6 @@ Note that Atom's have this behavior by default.
 declare const autoDispose: <A extends Atom<any>>(self: A) => A
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Atom.ts#L1480)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Atom.ts#L1481)
 
 Since v4.0.0

@@ -6,6 +6,8 @@ Module: `HttpServerError`<br />
 Converts a failed handler cause into the HTTP response that should be sent and
 the cause that should be reported.
 
+**Details**
+
 Respondable failures and defects can choose their own response, defects that
 are already `HttpServerResponse` values are used directly, and pure interrupts
 produce either `499` for client aborts or `503` for server aborts.
@@ -16,6 +18,6 @@ produce either `499` for client aborts or `503` for server aborts.
 declare const causeResponse: <E>(cause: Cause.Cause<E>) => Effect.Effect<readonly [Response.HttpServerResponse, Cause.Cause<E>]>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpServerError.ts#L282)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpServerError.ts#L294)
 
 Since v4.0.0

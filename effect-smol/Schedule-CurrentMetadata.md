@@ -6,6 +6,7 @@ Module: `Schedule`<br />
 Context reference containing metadata for the currently running schedule step.
 
 **Details**
+
 Repeat, retry, stream, and channel scheduling operations provide this service
 to effects run between schedule steps. The default value contains undefined
 input and output values, zero duration, and zeroed timing fields before any
@@ -17,6 +18,6 @@ schedule step has produced metadata.
 declare const CurrentMetadata: Context.Reference<Metadata<unknown, unknown>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L189)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L190)
 
 Since v4.0.0

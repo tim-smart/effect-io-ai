@@ -5,6 +5,8 @@ Module: `Exit`<br />
 
 Tests whether an Exit is a Failure.
 
+**When to use**
+
 - Use as a type guard to narrow `Exit<A, E>` to `Failure<A, E>`
 - After narrowing, the `cause` property becomes accessible
 
@@ -31,6 +33,6 @@ if (Exit.isFailure(exit)) {
 declare const isFailure: <A, E>(self: Exit<A, E>) => self is Failure<A, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Exit.ts#L419)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Exit.ts#L467)
 
 Since v2.0.0

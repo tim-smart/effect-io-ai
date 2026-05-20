@@ -5,6 +5,8 @@ Module: `FileSystem`<br />
 
 Event representing the modification of an existing file or directory.
 
+**Details**
+
 This event is triggered when an existing file or directory is
 modified in the watched location.
 
@@ -17,6 +19,6 @@ export interface Update {
   }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FileSystem.ts#L1233)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FileSystem.ts#L1293)
 
 Since v4.0.0

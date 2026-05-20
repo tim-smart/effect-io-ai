@@ -1,5 +1,197 @@
 [
   {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/platform-node-shared",
+    "name": "NodeChildProcessSpawner",
+    "description": "Re-exports all named exports from the \"./NodeChildProcessSpawner.ts\" module as `NodeChildProcessSpawner`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "4.0.0",
+    "category": null,
+    "signature": "export * as NodeChildProcessSpawner from \"./NodeChildProcessSpawner.ts\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L12"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/platform-node-shared",
+    "name": "NodeClusterSocket",
+    "description": "Re-exports all named exports from the \"./NodeClusterSocket.ts\" module as `NodeClusterSocket`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "4.0.0",
+    "category": null,
+    "signature": "export * as NodeClusterSocket from \"./NodeClusterSocket.ts\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L35"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/platform-node-shared",
+    "name": "NodeCrypto",
+    "description": "Re-exports all named exports from the \"./NodeCrypto.ts\" module as `NodeCrypto`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as NodeCrypto from \"./NodeCrypto.ts\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L42"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/platform-node-shared",
+    "name": "NodeFileSystem",
+    "description": "Re-exports all named exports from the \"./NodeFileSystem.ts\" module as `NodeFileSystem`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "4.0.0",
+    "category": null,
+    "signature": "export * as NodeFileSystem from \"./NodeFileSystem.ts\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L65"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/platform-node-shared",
+    "name": "NodePath",
+    "description": "Re-exports all named exports from the \"./NodePath.ts\" module as `NodePath`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "4.0.0",
+    "category": null,
+    "signature": "export * as NodePath from \"./NodePath.ts\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L84"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/platform-node-shared",
+    "name": "NodeRuntime",
+    "description": "Re-exports all named exports from the \"./NodeRuntime.ts\" module as `NodeRuntime`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "4.0.0",
+    "category": null,
+    "signature": "export * as NodeRuntime from \"./NodeRuntime.ts\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L106"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/platform-node-shared",
+    "name": "NodeSink",
+    "description": "Re-exports all named exports from the \"./NodeSink.ts\" module as `NodeSink`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "4.0.0",
+    "category": null,
+    "signature": "export * as NodeSink from \"./NodeSink.ts\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L128"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/platform-node-shared",
+    "name": "NodeSocket",
+    "description": "Re-exports all named exports from the \"./NodeSocket.ts\" module as `NodeSocket`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "4.0.0",
+    "category": null,
+    "signature": "export * as NodeSocket from \"./NodeSocket.ts\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L147"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/platform-node-shared",
+    "name": "NodeSocketServer",
+    "description": "Re-exports all named exports from the \"./NodeSocketServer.ts\" module as `NodeSocketServer`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "4.0.0",
+    "category": null,
+    "signature": "export * as NodeSocketServer from \"./NodeSocketServer.ts\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L169"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/platform-node-shared",
+    "name": "NodeStdio",
+    "description": "Re-exports all named exports from the \"./NodeStdio.ts\" module as `NodeStdio`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "4.0.0",
+    "category": null,
+    "signature": "export * as NodeStdio from \"./NodeStdio.ts\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L190"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/platform-node-shared",
+    "name": "NodeStream",
+    "description": "Re-exports all named exports from the \"./NodeStream.ts\" module as `NodeStream`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "4.0.0",
+    "category": null,
+    "signature": "export * as NodeStream from \"./NodeStream.ts\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L211"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/platform-node-shared",
+    "name": "NodeTerminal",
+    "description": "Re-exports all named exports from the \"./NodeTerminal.ts\" module as `NodeTerminal`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "4.0.0",
+    "category": null,
+    "signature": "export * as NodeTerminal from \"./NodeTerminal.ts\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L233"
+  },
+  {
     "_tag": "Constant",
     "module": {
       "name": "NodeChildProcessSpawner.ts",

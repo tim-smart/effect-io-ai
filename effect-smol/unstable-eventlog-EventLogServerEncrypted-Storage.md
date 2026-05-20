@@ -5,6 +5,8 @@ Module: `EventLogServerEncrypted`<br />
 
 Storage service used by the encrypted event-log server.
 
+**Details**
+
 It provides the server remote id, stores session authentication bindings,
 persists encrypted entries, and streams encrypted changes for a public key and
 store id.
@@ -15,6 +17,6 @@ store id.
 declare class Storage
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventLogServerEncrypted.ts#L142)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventLogServerEncrypted.ts#L146)
 
 Since v4.0.0

@@ -17,6 +17,6 @@ function or acquire a missing resource. Closed maps return `false`.
 declare const has: { <K>(key: K): <A, E>(self: RcMap<K, A, E>) => Effect.Effect<boolean>; <K, A, E>(self: RcMap<K, A, E>, key: K): Effect.Effect<boolean>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RcMap.ts#L469)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RcMap.ts#L473)
 
 Since v3.17.7

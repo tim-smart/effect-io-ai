@@ -12,6 +12,6 @@ without creating or owning a new agent.
 declare const dispatcherLayerGlobal: Layer.Layer<Dispatcher, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L123)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L129)
 
 Since v4.0.0

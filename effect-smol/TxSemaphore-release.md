@@ -6,6 +6,8 @@ Module: `TxSemaphore`<br />
 Releases one permit back to the semaphore, making it available for
 acquisition.
 
+**Details**
+
 If the semaphore is already at capacity, this operation leaves the permit
 count unchanged.
 
@@ -35,6 +37,6 @@ const program = Effect.gen(function*() {
 declare const release: (self: TxSemaphore) => Effect.Effect<void>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxSemaphore.ts#L364)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxSemaphore.ts#L372)
 
 Since v2.0.0

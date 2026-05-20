@@ -5,6 +5,8 @@ Module: `Option`<br />
 
 Marker interface used by Effect's `Unify` machinery for `Option` values.
 
+**Details**
+
 This supports type-level unification behavior for `Option`. Users normally
 do not need to reference this interface directly.
 
@@ -14,6 +16,6 @@ do not need to reference this interface directly.
 export interface OptionUnifyIgnore {}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L245)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L249)
 
 Since v2.0.0

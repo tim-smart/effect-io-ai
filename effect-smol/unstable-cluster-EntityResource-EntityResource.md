@@ -5,6 +5,8 @@ Module: `EntityResource`<br />
 
 A resource acquired inside a cluster entity and kept alive across restarts.
 
+**Details**
+
 `get` acquires or reuses the resource in the caller's scope, while `close`
 invalidates it so its close scope can be released.
 
@@ -18,6 +20,6 @@ export interface EntityResource<out A, out E = never> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EntityResource.ts#L63)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EntityResource.ts#L65)
 
 Since v4.0.0

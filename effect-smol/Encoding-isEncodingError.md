@@ -5,6 +5,8 @@ Module: `Encoding`<br />
 
 Checks whether a value is an `EncodingError`.
 
+**Details**
+
 Returns `true` when the value carries the `EncodingErrorTypeId` marker and
 narrows the value to `EncodingError`.
 
@@ -14,6 +16,6 @@ narrows the value to `EncodingError`.
 declare const isEncodingError: (u: unknown) => u is EncodingError
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Encoding.ts#L65)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Encoding.ts#L69)
 
 Since v4.0.0

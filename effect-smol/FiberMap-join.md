@@ -5,6 +5,8 @@ Module: `FiberMap`<br />
 
 Waits for the `FiberMap` to fail or close.
 
+**Details**
+
 The returned Effect fails with the first managed fiber failure that is not
 ignored by the map's interruption rules. Normal successful completion
 removes fibers from the map; use `awaitEmpty` to wait until the map has no
@@ -30,6 +32,6 @@ Effect.gen(function*() {
 declare const join: <K, A, E>(self: FiberMap<K, A, E>) => Effect.Effect<void, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FiberMap.ts#L982)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FiberMap.ts#L1005)
 
 Since v2.0.0

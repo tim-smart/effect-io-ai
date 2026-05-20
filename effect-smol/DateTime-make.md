@@ -3,7 +3,9 @@ Module: `DateTime`<br />
 
 ## DateTime.make
 
-Creates a `DateTime` from one of the following:
+Creates a `DateTime` from supported input values.
+
+**Details**
 
 - A `DateTime`
 - A JavaScript `Date`
@@ -42,6 +44,6 @@ console.log(invalid._tag) // "None"
 declare const make: <A extends DateTime.Input>(input: A) => Option.Option<DateTime.PreserveZone<A>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L724)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L770)
 
 Since v3.6.0

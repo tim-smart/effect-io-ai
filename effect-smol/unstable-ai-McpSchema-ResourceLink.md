@@ -3,9 +3,13 @@ Module: `McpSchema`<br />
 
 ## McpSchema.ResourceLink
 
-A resource that the server is capable of reading, included in a prompt or tool call result.
+A resource that the server is capable of reading, included in a prompt or
+tool call result.
 
-Note: resource links returned by tools are not guaranteed to appear in the results of `resources/list` requests.
+**Gotchas**
+
+Resource links returned by tools are not guaranteed to appear in the results
+of `resources/list` requests.
 
 **Signature**
 
@@ -13,6 +17,6 @@ Note: resource links returned by tools are not guaranteed to appear in the resul
 declare class ResourceLink
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L1165)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L1193)
 
 Since v4.0.0

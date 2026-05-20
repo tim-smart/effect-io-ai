@@ -5,6 +5,8 @@ Module: `DateTime`<br />
 
 Object input representing an absolute instant plus a time zone identifier.
 
+**Details**
+
 `DateTime.makeZoned` and `DateTime.makeZonedUnsafe` use `timeZoneId` when
 no explicit `timeZone` option is supplied.
 
@@ -17,6 +19,6 @@ export interface InstantWithZone {
   }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L268)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L286)
 
 Since v4.0.0

@@ -5,12 +5,14 @@ Module: `Order`<br />
 
 Creates an `Order` for structs by applying the given `Order`s to each property in sequence.
 
-When to use this:
+**When to use**
+
 - When comparing objects with multiple properties
 - When you need multi-field comparison for structs
 - When creating orders for complex data types
 
-Behavior:
+**Details**
+
 - Pure function: does not mutate inputs
 - Compares structs field-by-field in the order of keys in the fields object
 - Stops at the first non-zero comparison result
@@ -36,7 +38,8 @@ console.log(personOrder(person1, person3)) // 1 (same name, 30 > 25)
 console.log(personOrder(person1, person1)) // 0
 ```
 
-See also:
+**See**
+
 - `combine` - Combine orders manually
 - `mapInput` - Extract and compare by a single property
 
@@ -46,6 +49,6 @@ See also:
 declare const Struct: <const R extends { readonly [x: string]: Order<any>; }>(fields: R) => Order<{ [K in keyof R]: [R[K]] extends [Order<infer A>] ? A : never; }>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Order.ts#L705)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Order.ts#L707)
 
 Since v4.0.0

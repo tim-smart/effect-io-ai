@@ -5,6 +5,8 @@ Module: `Metric`<br />
 
 A Histogram metric that records observations in configurable buckets to analyze value distributions.
 
+**When to use**
+
 Histograms are ideal for measuring request durations, response sizes, and other continuous values
 where you need to understand the distribution of values rather than just aggregates.
 
@@ -90,6 +92,6 @@ const program = Effect.gen(function*() {
 export interface Histogram<Input> extends Metric<Input, HistogramState> {}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Metric.ts#L707)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Metric.ts#L717)
 
 Since v2.0.0

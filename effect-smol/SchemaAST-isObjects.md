@@ -11,6 +11,6 @@ Narrows an `AST` to `Objects`.
 declare const isObjects: (ast: AST) => ast is Objects
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L306)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L308)
 
 Since v4.0.0

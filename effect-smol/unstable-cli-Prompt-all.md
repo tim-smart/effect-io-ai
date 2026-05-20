@@ -6,6 +6,8 @@ Module: `Prompt`<br />
 Runs all the provided prompts in sequence respecting the structure provided
 in input.
 
+**Details**
+
 Supports either a tuple / iterable of prompts or a record / struct of prompts
 as an argument.
 
@@ -38,6 +40,6 @@ const allWithRecord = Prompt.all({ username, password })
 declare const all: <const Arg extends Iterable<Prompt<any>> | Record<string, Prompt<any>>>(arg: Arg) => All.Return<Arg>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L669)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L673)
 
 Since v4.0.0

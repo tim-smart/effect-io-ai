@@ -25,6 +25,6 @@ console.log(HashMap.has(map2, "a")) // true
 declare const remove: { <K>(key: K): <V>(self: HashMap<K, V>) => HashMap<K, V>; <K, V>(self: HashMap<K, V>, key: K): HashMap<K, V>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashMap.ts#L982)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashMap.ts#L997)
 
 Since v2.0.0

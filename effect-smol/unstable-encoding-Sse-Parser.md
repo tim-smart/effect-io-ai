@@ -5,6 +5,8 @@ Module: `Sse`<br />
 
 Stateful Server-Sent Events parser returned by `makeParser`.
 
+**Details**
+
 `feed` accepts additional text chunks and `reset` clears buffered parser state.
 
 **Signature**
@@ -16,6 +18,6 @@ export interface Parser {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Sse.ts#L331)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Sse.ts#L339)
 
 Since v4.0.0

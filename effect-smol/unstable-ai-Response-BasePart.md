@@ -3,9 +3,8 @@ Module: `Response`<br />
 
 ## Response.BasePart
 
-Base interface for all response content parts.
-
-Provides common structure including type identifier and optional metadata.
+Base interface for all response content parts, including the type identifier
+and optional metadata.
 
 **Signature**
 
@@ -23,6 +22,6 @@ export interface BasePart<Type extends string, Metadata extends ProviderMetadata
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Response.ts#L469)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Response.ts#L470)
 
 Since v4.0.0

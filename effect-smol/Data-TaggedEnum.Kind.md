@@ -6,10 +6,11 @@ Module: `Data`<br />
 Applies concrete type arguments to a `WithGenerics` definition, producing
 the resulting tagged union type.
 
-- Use to refer to a specific instantiation of a generic tagged enum in
-  type signatures.
+**When to use**
 
-**Example** (applying generics)
+Use `Kind` to refer to a specific instantiation of a generic tagged enum in type signatures.
+
+**Example** (Applying generics)
 
 ```ts
 import type { Data } from "effect"
@@ -42,6 +43,6 @@ type Kind<Z, A, B, C, D> = (Z & {
   })["taggedEnum"]
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Data.ts#L312)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Data.ts#L324)
 
 Since v2.0.0

@@ -5,19 +5,21 @@ Module: `Equivalence`<br />
 
 Creates an equivalence for objects by comparing their properties using provided equivalences.
 
-When to use this:
-- When comparing objects with known, fixed property names
-- When you need different equivalence logic for different properties
-- When working with struct/interface types with specific fields
-- Prefer over `Record` when you have a fixed set of known properties
+**When to use**
 
-Behavior:
+- Use when comparing objects with known, fixed property names
+- Use when you need different equivalence logic for different properties
+- Use when working with struct or interface types with specific fields
+- Prefer this over `Record` when you have a fixed set of known properties
+
+**Details**
+
 - Does not mutate inputs
 - Compares only the properties specified in the struct definition
 - Properties not in the struct are ignored
 - Returns `true` only if all specified properties are equivalent according to their equivalences
-- Supports both string and symbol keys (via `Reflect.ownKeys`)
-- The result is also an equivalence (satisfies reflexive, symmetric, transitive properties)
+- Supports both string and symbol keys via `Reflect.ownKeys`
+- The result is also an equivalence that satisfies reflexive, symmetric, and transitive properties
 
 **Example** (Struct with different equivalences per field)
 
@@ -65,7 +67,11 @@ const obj2 = { name: "Alice", age: 30, extra: "different" }
 console.log(nameAgeEq(obj1, obj2)) // true
 ```
 
-See also: `Record`, `mapInput`, `combine`
+**See**
+
+- `Record`
+- `mapInput`
+- `combine`
 
 **Signature**
 
@@ -73,6 +79,6 @@ See also: `Record`, `mapInput`, `combine`
 declare const Struct: <R extends Record<string, Equivalence<any>>>(fields: R) => Equivalence<{ readonly [K in keyof R]: [R[K]] extends [Equivalence<infer A>] ? A : never; }>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Equivalence.ts#L724)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Equivalence.ts#L750)
 
 Since v4.0.0

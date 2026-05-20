@@ -5,6 +5,8 @@ Module: `Match`<br />
 
 A safe refinement that narrows types without runtime errors.
 
+**Details**
+
 `SafeRefinement` provides a way to refine types in pattern matching while
 maintaining type safety. Unlike regular predicates, safe refinements can
 transform the matched value's type without throwing runtime errors.
@@ -36,6 +38,6 @@ export interface SafeRefinement<in A, out R = A> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L1839)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L1883)
 
 Since v4.0.0

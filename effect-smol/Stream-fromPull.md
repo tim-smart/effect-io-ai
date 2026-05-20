@@ -5,6 +5,8 @@ Module: `Stream`<br />
 
 Creates a stream from a pull effect, such as one produced by `Stream.toPull`.
 
+**Details**
+
 A pull effect yields chunks on demand and completes when the upstream stream ends.
 See `Stream.toPull` for a matching producer.
 
@@ -33,6 +35,6 @@ Effect.runPromise(program)
 declare const fromPull: <A, E, R, EX, RX>(pull: Effect.Effect<Pull.Pull<Arr.NonEmptyReadonlyArray<A>, E, void, R>, EX, RX>) => Stream<A, Pull.ExcludeDone<E> | EX, R | RX>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L623)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L631)
 
 Since v2.0.0

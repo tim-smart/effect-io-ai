@@ -6,6 +6,7 @@ Module: `Logger`<br />
 Creates, in a scope, a logger that writes string logger output to a file.
 
 **Details**
+
 The returned effect requires `FileSystem` and `Scope`. The file logger batches
 string output, writes each batch to the specified path, and flushes remaining
 entries when the scope closes.
@@ -102,6 +103,6 @@ const multiLogger = Effect.scoped(
 declare const toFile: ((path: string, options?: { readonly flag?: FileSystem.OpenFlag | undefined; readonly mode?: number | undefined; readonly batchWindow?: Duration.Input | undefined; } | undefined) => <Message>(self: Logger<Message, string>) => Effect.Effect<Logger<Message, void>, PlatformError, Scope.Scope | FileSystem.FileSystem>) & (<Message>(self: Logger<Message, string>, path: string, options?: { readonly flag?: FileSystem.OpenFlag | undefined; readonly mode?: number | undefined; readonly batchWindow?: Duration.Input | undefined; } | undefined) => Effect.Effect<Logger<Message, void>, PlatformError, Scope.Scope | FileSystem.FileSystem>)
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Logger.ts#L1301)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Logger.ts#L1313)
 
 Since v4.0.0

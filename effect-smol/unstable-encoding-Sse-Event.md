@@ -3,9 +3,7 @@ Module: `Sse`<br />
 
 ## Sse.Event
 
-Tagged model for a Server-Sent Events message.
-
-It contains the event name, optional event ID, and string data payload.
+Tagged model for a Server-Sent Events message containing the event name, optional event ID, and string data payload.
 
 **Signature**
 
@@ -18,6 +16,6 @@ export interface Event {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Sse.ts#L418)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Sse.ts#L428)
 
 Since v4.0.0

@@ -6,13 +6,13 @@ Module: `SchemaIssue`<br />
 Creates a `Formatter` that converts an `Issue` into a
 human-readable multi-line string.
 
-When to use:
+**When to use**
 
 - Produce error messages for logging, CLI output, or developer-facing
   diagnostics.
 - This is the default formatter used by `Issue.toString()`.
 
-Behaviour:
+**Details**
 
 - Flattens the issue tree into `{ message, path }` entries using
   `defaultLeafHook` and `defaultCheckHook`.
@@ -38,6 +38,6 @@ const formatter = SchemaIssue.makeFormatterDefault()
 declare const makeFormatterDefault: () => Formatter<string>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaIssue.ts#L1179)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaIssue.ts#L1181)
 
 Since v4.0.0

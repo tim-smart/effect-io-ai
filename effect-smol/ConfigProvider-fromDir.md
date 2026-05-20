@@ -6,16 +6,17 @@ Module: `ConfigProvider`<br />
 Creates a `ConfigProvider` that reads configuration from a directory tree
 on disk, where each file is a leaf value and each directory is a container.
 
-When to use:
-- Kubernetes ConfigMap / Secret volume mounts, where each key is a file
-  under a mount path.
-- Any file-per-key configuration layout.
+**When to use**
 
-Resolution rules:
-- Regular file → `Value` node (file contents trimmed).
-- Directory → `Record` node with immediate child names as keys.
-- Not found → tries as file first, then as directory; returns
-  `SourceError` if both fail.
+Use this for Kubernetes ConfigMap or Secret volume mounts, where each key is
+a file under a mount path, or for any file-per-key configuration layout.
+
+**Details**
+
+Resolution tries a regular file first and returns a `Value` node with
+trimmed file contents. If the file read fails, it tries a directory and
+returns a `Record` node with immediate child names as keys. If both fail, it
+returns `SourceError`.
 
 Requires `Path` and `FileSystem` in the Effect context. Defaults to root
 path `/`; override with `{ rootPath: "/etc/config" }`.
@@ -44,6 +45,6 @@ const program = Effect.gen(function*() {
 declare const fromDir: (options?: { readonly rootPath?: string | undefined; }) => Effect.Effect<ConfigProvider, never, Path_.Path | FileSystem.FileSystem>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ConfigProvider.ts#L1095)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ConfigProvider.ts#L1146)
 
 Since v4.0.0

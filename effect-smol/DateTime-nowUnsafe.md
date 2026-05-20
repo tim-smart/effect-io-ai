@@ -5,6 +5,8 @@ Module: `DateTime`<br />
 
 Get the current time using `Date.now`.
 
+**Details**
+
 This is a synchronous version of `now` that directly uses `Date.now()`
 instead of the Effect `Clock` service.
 
@@ -23,6 +25,6 @@ console.log(DateTime.formatIso(now))
 declare const nowUnsafe: LazyArg<Utc>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L812)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L862)
 
 Since v4.0.0

@@ -5,6 +5,8 @@ Module: `McpSchema`<br />
 
 Type represented by the MCP cursor schema.
 
+**Details**
+
 A cursor is an opaque string token used to continue paginated requests.
 
 **Signature**
@@ -13,6 +15,6 @@ A cursor is an opaque string token used to continue paginated requests.
 type Cursor = typeof Cursor.Type
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L218)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L232)
 
 Since v4.0.0

@@ -5,6 +5,8 @@ Module: `PersistedQueue`<br />
 
 Persistent queue of schema-encoded values.
 
+**Details**
+
 `offer` enqueues values by id, and `take` processes one value at a time,
 marking it complete on success or retrying it until the maximum attempts is
 reached.
@@ -16,7 +18,9 @@ export interface PersistedQueue<in out A, out R = never> {
   readonly [TypeId]: TypeId
 
   /**
-   * Adds an element to the queue. Returns the id of the enqueued element.
+   * Adds an element to the queue and returns the id of the enqueued element.
+   *
+   * **Details**
    *
    * If an element with the same id already exists in the queue, it will not be
    * added again.
@@ -26,13 +30,14 @@ export interface PersistedQueue<in out A, out R = never> {
   }) => Effect.Effect<string, PersistedQueueError | Schema.SchemaError, R>
 
   /**
-   * Takes an element from the queue.
-   * If the queue is empty, it will wait until an element is available.
+   * Takes an element from the queue, waiting until one is available when the
+   * queue is empty.
    *
-   * If the returned effect succeeds, the element is marked as processed,
-   * otherwise it will be retried according to the provided options.
+   * **Details**
    *
-   * By default, max attempts is set to 10.
+   * If the returned effect succeeds, the element is marked as processed;
+   * otherwise it will be retried according to the provided options. By default,
+   * max attempts is set to 10.
    */
   readonly take: <XA, XE, XR>(
     f: (value: A, metadata: {
@@ -46,6 +51,6 @@ export interface PersistedQueue<in out A, out R = never> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PersistedQueue.ts#L76)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PersistedQueue.ts#L78)
 
 Since v4.0.0

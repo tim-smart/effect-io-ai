@@ -6,18 +6,18 @@ Module: `Effect`<br />
 Handles both success and failure cases of an effect without performing side
 effects, with eager evaluation for resolved effects.
 
+**When to use**
+
+Use this when you need to handle both success and failure cases and want
+optimal performance for resolved effects. This is particularly useful in
+scenarios where you frequently work with already computed values.
+
 **Details**
 
 `matchEager` works like `match` but provides better performance for resolved
 effects (Success or Failure). When the effect is already resolved, it applies
 the handlers immediately without fiber scheduling. For unresolved effects,
 it falls back to the regular `match` behavior.
-
-**When to Use**
-
-Use this when you need to handle both success and failure cases and want
-optimal performance for resolved effects. This is particularly useful in
-scenarios where you frequently work with already computed values.
 
 **Example** (Pattern matching eagerly when possible)
 
@@ -44,6 +44,6 @@ const program = Effect.gen(function*() {
 declare const matchEager: { <E, A2, A, A3>(options: { readonly onFailure: (error: E) => A2; readonly onSuccess: (value: A) => A3; }): <R>(self: Effect<A, E, R>) => Effect<A2 | A3, never, R>; <A, E, R, A2, A3>(self: Effect<A, E, R>, options: { readonly onFailure: (error: E) => A2; readonly onSuccess: (value: A) => A3; }): Effect<A2 | A3, never, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L4926)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L4982)
 
 Since v4.0.0

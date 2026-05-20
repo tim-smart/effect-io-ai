@@ -14,6 +14,6 @@ type MakeIn<S, Records> = & S["~type.make"]
     & MergeTuple<{ readonly [K in keyof Records]: Records[K]["~type.make"] }>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L3134)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L3208)
 
 Since v4.0.0

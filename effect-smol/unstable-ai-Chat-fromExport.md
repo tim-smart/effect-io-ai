@@ -5,6 +5,8 @@ Module: `Chat`<br />
 
 Creates a Chat service from previously exported chat data.
 
+**Details**
+
 Restores a chat session from structured data that was previously exported
 using the `export` method. Useful for persisting and restoring conversation
 state.
@@ -51,6 +53,6 @@ const restoreChat = Effect.gen(function*() {
 declare const fromExport: (data: unknown) => Effect.Effect<Service, Schema.SchemaError>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chat.ts#L604)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chat.ts#L624)
 
 Since v4.0.0

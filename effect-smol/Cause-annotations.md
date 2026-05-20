@@ -5,6 +5,8 @@ Module: `Cause`<br />
 
 Reads the merged annotations from all reasons in a `Cause`.
 
+**Details**
+
 Annotations from later reasons overwrite earlier ones when keys collide.
 
 **See**
@@ -18,6 +20,6 @@ Annotations from later reasons overwrite earlier ones when keys collide.
 declare const annotations: <E>(self: Cause<E>) => Context.Context<never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L1654)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L1730)
 
 Since v4.0.0

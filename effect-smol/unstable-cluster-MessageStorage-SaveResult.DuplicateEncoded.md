@@ -5,6 +5,8 @@ Module: `MessageStorage`<br />
 
 Encoded duplicate-save variant returned by lower-level storage drivers.
 
+**Details**
+
 It carries the original request ID and the latest encoded reply, when one is
 available.
 
@@ -18,6 +20,6 @@ export interface DuplicateEncoded {
   }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MessageStorage.ts#L262)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MessageStorage.ts#L277)
 
 Since v4.0.0

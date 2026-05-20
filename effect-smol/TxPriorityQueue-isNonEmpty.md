@@ -23,6 +23,6 @@ const program = Effect.gen(function*() {
 declare const isNonEmpty: <A>(self: TxPriorityQueue<A>) => Effect.Effect<boolean>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxPriorityQueue.ts#L228)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxPriorityQueue.ts#L230)
 
 Since v2.0.0

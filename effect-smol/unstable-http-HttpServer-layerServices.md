@@ -6,6 +6,8 @@ Module: `HttpServer`<br />
 Testing layer that provides the platform services commonly needed by HTTP
 server tests.
 
+**Details**
+
 It includes `HttpPlatform`, `Path`, a weak ETag generator, and a no-op
 `FileSystem`.
 
@@ -15,6 +17,6 @@ It includes `HttpPlatform`, `Path`, a weak ETag generator, and a no-op
 declare const layerServices: Layer.Layer<Path.Path | FileSystem.FileSystem | Etag.Generator | HttpPlatform.HttpPlatform, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpServer.ts#L310)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpServer.ts#L328)
 
 Since v4.0.0

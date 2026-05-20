@@ -32,6 +32,6 @@ const program = Effect.succeed("Hello World").pipe(
 export interface SpanOptions extends SpanOptionsNoTrace, TraceOptions {}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tracer.ts#L259)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tracer.ts#L256)
 
 Since v3.1.0

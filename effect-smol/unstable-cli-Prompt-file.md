@@ -5,6 +5,8 @@ Module: `Prompt`<br />
 
 Creates a file-system selection prompt and returns the selected path.
 
+**Details**
+
 The prompt can be configured to select files, directories, or either path
 type.
 
@@ -14,6 +16,6 @@ type.
 declare const file: (options?: FileOptions) => Prompt<string>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L816)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L811)
 
 Since v4.0.0

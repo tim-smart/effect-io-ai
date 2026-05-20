@@ -17,6 +17,6 @@ type OpenAiTelemetryAttributeOptions = Telemetry.GenAITelemetryAttributeOptions 
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/OpenAiTelemetry.ts#L108)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/OpenAiTelemetry.ts#L111)
 
 Since v4.0.0

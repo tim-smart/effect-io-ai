@@ -5,6 +5,8 @@ Module: `Effect`<br />
 
 Type helper that keeps only error tags whose tagged error contains a tagged `reason` field.
 
+**Details**
+
 Used by `catchReasons` and `unwrapReason` to constrain the parent error tag to reason-bearing errors.
 
 **Signature**
@@ -15,6 +17,6 @@ type TagsWithReason<E> = {
 }[Tags<E>]
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L2876)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L2911)
 
 Since v4.0.0

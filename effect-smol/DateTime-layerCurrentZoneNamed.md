@@ -5,6 +5,8 @@ Module: `DateTime`<br />
 
 Create a Layer from the given IANA time zone identifier.
 
+**Details**
+
 This layer provides the `CurrentTimeZone` service with a named time zone.
 If the time zone identifier is invalid, the layer will fail.
 
@@ -29,6 +31,6 @@ Effect.provide(program, layer)
 declare const layerCurrentZoneNamed: (zoneId: string) => Layer.Layer<CurrentTimeZone, IllegalArgumentError>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L2669)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L2806)
 
 Since v3.6.0

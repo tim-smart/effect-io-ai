@@ -11,6 +11,6 @@ The `$schema` meta-schema URI for JSON Schema Draft 2020-12.
 declare const META_SCHEMA_URI_DRAFT_2020_12: "https://json-schema.org/draft/2020-12/schema"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/JsonSchema.ts#L213)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/JsonSchema.ts#L221)
 
 Since v4.0.0

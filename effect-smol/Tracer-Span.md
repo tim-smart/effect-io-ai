@@ -3,11 +3,9 @@ Module: `Tracer`<br />
 
 ## Tracer.Span
 
-A span created by an Effect tracer.
-
-It carries trace identity, parent, annotations, attributes, links, sampling
-and kind information, lifecycle status, and methods to end the span or add
-attributes, events, and links.
+A span created by an Effect tracer. It carries trace identity, parent,
+annotations, attributes, links, sampling and kind information, lifecycle
+status, and methods to end the span or add attributes, events, and links.
 
 **Example** (Working with spans)
 
@@ -80,6 +78,6 @@ export interface Span {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tracer.ts#L380)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tracer.ts#L374)
 
 Since v2.0.0

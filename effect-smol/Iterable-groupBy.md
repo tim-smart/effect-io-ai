@@ -5,6 +5,8 @@ Module: `Iterable`<br />
 
 Groups all elements by the string or symbol key returned by `f`.
 
+**Details**
+
 Each property in the returned record contains a non-empty array of elements
 that produced that key. Unlike `group`, matching elements do not need to be
 consecutive.
@@ -53,6 +55,6 @@ console.log(evenOdd)
 declare const groupBy: { <A, K extends string | symbol>(f: (a: A) => K): (self: Iterable<A>) => Record<Record.ReadonlyRecord.NonLiteralKey<K>, NonEmptyArray<A>>; <A, K extends string | symbol>(self: Iterable<A>, f: (a: A) => K): Record<Record.ReadonlyRecord.NonLiteralKey<K>, NonEmptyArray<A>>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Iterable.ts#L1289)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Iterable.ts#L1307)
 
 Since v2.0.0

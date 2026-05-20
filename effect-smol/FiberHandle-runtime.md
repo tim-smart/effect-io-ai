@@ -6,6 +6,8 @@ Module: `FiberHandle`<br />
 Captures the current runtime and returns a function for forking effects into
 an existing `FiberHandle`.
 
+**Details**
+
 Each call returns the forked fiber, stores it in the handle, and interrupts
 the previous fiber unless `onlyIfMissing` is set.
 
@@ -41,6 +43,6 @@ Effect.gen(function*() {
 declare const runtime: <A, E>(self: FiberHandle<A, E>) => <R = never>() => Effect.Effect<(<XE extends E, XA extends A>(effect: Effect.Effect<XA, XE, R>, options?: { readonly signal?: AbortSignal | undefined; readonly scheduler?: Scheduler | undefined; readonly onlyIfMissing?: boolean | undefined; readonly propagateInterruption?: boolean | undefined; } | undefined) => Fiber.Fiber<XA, XE>), never, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FiberHandle.ts#L645)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FiberHandle.ts#L656)
 
 Since v2.0.0

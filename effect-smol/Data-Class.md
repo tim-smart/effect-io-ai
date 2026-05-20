@@ -5,16 +5,17 @@ Module: `Data`<br />
 
 Base class for immutable data types.
 
+**When to use**
+
+Use `Class` when you need a lightweight immutable value type with `.pipe()` support. If you also need a `_tag` discriminator, use `TaggedClass`; if you need a yieldable error, use `Error` or `TaggedError`.
+
+**Details**
+
 Extend `Class` with a type parameter to declare fields. The constructor
 accepts those fields as a single object argument. When there are no fields
-the argument is optional.
+the argument is optional. Instances are `Readonly` and `Pipeable`.
 
-- Use when you need a lightweight immutable value type with `.pipe()` support.
-- Instances are `Readonly` and `Pipeable`.
-- If you also need a `_tag` discriminator, use `TaggedClass` instead.
-- If you need a yieldable error, use `Error` or `TaggedError`.
-
-**Example** (defining a value class)
+**Example** (Defining a value class)
 
 ```ts
 import { Data, Equal } from "effect"
@@ -39,6 +40,6 @@ console.log(Equal.equals(mike1, mike2))
 declare const Class: new <A extends Record<string, any> = {}>(args: Types.VoidIfEmpty<{ readonly [P in keyof A]: A[P]; }>) => Readonly<A> & Pipeable.Pipeable
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Data.ts#L113)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Data.ts#L114)
 
 Since v2.0.0

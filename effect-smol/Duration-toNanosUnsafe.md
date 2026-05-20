@@ -5,6 +5,8 @@ Module: `Duration`<br />
 
 Get the duration in nanoseconds as a bigint.
 
+**Gotchas**
+
 If the duration is infinite, it throws an error.
 
 **Example** (Reading nanoseconds unsafely)
@@ -26,6 +28,6 @@ console.log(nanos) // 2000000000n
 declare const toNanosUnsafe: (input: Input) => bigint
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Duration.ts#L849)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Duration.ts#L859)
 
 Since v4.0.0

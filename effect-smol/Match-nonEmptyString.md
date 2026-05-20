@@ -5,6 +5,8 @@ Module: `Match`<br />
 
 Matches non-empty strings.
 
+**Details**
+
 This predicate matches any string that contains at least one character,
 effectively filtering out empty strings ("").
 
@@ -35,6 +37,6 @@ console.log(processInput("   "))
 declare const nonEmptyString: SafeRefinement<string, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L1149)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L1167)
 
 Since v4.0.0

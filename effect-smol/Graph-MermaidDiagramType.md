@@ -5,6 +5,8 @@ Module: `Graph`<br />
 
 Mermaid diagram types for different visualization formats.
 
+**Details**
+
 Specifies the Mermaid diagram syntax to use:
 - `flowchart`: For directed graphs with arrows (`A --> B`)
 - `graph`: For undirected graphs with lines (`A --- B`)
@@ -38,6 +40,6 @@ type MermaidDiagramType = | "flowchart" // For directed graphs
   | "graph"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Graph.ts#L1993)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Graph.ts#L2001)
 
 Since v3.18.0

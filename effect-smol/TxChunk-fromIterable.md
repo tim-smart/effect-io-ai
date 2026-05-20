@@ -5,8 +5,10 @@ Module: `TxChunk`<br />
 
 Creates a new `TxChunk` from an iterable.
 
-**Return behavior**: This function returns a new TxChunk reference containing
-elements from the provided iterable. No existing TxChunk instances are modified.
+**Details**
+
+This function returns a new TxChunk reference containing elements from the provided iterable. No
+existing TxChunk instances are modified.
 
 **Example** (Creating from an iterable)
 
@@ -40,6 +42,6 @@ const program = Effect.gen(function*() {
 declare const fromIterable: <A>(iterable: Iterable<A>) => Effect.Effect<TxChunk<A>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxChunk.ts#L186)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxChunk.ts#L194)
 
 Since v4.0.0

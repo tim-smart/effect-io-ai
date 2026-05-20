@@ -6,6 +6,8 @@ Module: `Atom`<br />
 Creates a derived atom that reads the source and schedules a refresh after the
 specified duration.
 
+**Details**
+
 The scheduled refresh is canceled when the derived atom's lifetime is disposed.
 
 **Signature**
@@ -14,6 +16,6 @@ The scheduled refresh is canceled when the derived atom's lifetime is disposed.
 declare const withRefresh: { (duration: Duration.Input): <A extends Atom<any>>(self: A) => WithoutSerializable<A>; <A extends Atom<any>>(self: A, duration: Duration.Input): WithoutSerializable<A>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Atom.ts#L1709)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Atom.ts#L1726)
 
 Since v4.0.0

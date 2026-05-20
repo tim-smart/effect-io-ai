@@ -5,20 +5,22 @@ Module: `Equivalence`<br />
 
 Creates an equivalence for objects by comparing all properties using the same equivalence.
 
-When to use this:
-- When comparing objects with dynamic or unknown property names
-- When all property values should use the same equivalence logic
-- When working with record/dictionary types (key-value maps)
-- Prefer over `Struct` when you have variable properties or need to compare all properties uniformly
+**When to use**
 
-Behavior:
+- Use when comparing objects with dynamic or unknown property names
+- Use when all property values should use the same equivalence logic
+- Use when working with record or dictionary types
+- Prefer this over `Struct` when you have variable properties or need to compare all properties uniformly
+
+**Details**
+
 - Does not mutate inputs
 - Compares all properties present in both objects
 - Requires both objects to have the same set of keys; different keys result in `false`
 - All property values must be equivalent according to the provided equivalence
-- Supports both string and symbol keys (via `Reflect.ownKeys`)
+- Supports both string and symbol keys via `Reflect.ownKeys`
 - Empty objects are considered equivalent
-- The result is also an equivalence (satisfies reflexive, symmetric, transitive properties)
+- The result is also an equivalence that satisfies reflexive, symmetric, and transitive properties
 
 **Example** (Record with string values)
 
@@ -52,7 +54,10 @@ console.log(numberRecordEq(scores1, scores2)) // true
 console.log(numberRecordEq(scores1, scores3)) // false
 ```
 
-See also: `Struct`, `Array_`
+**See**
+
+- `Struct`
+- `Array_`
 
 **Signature**
 
@@ -60,6 +65,6 @@ See also: `Struct`, `Array_`
 declare const Record: <A>(value: Equivalence<A>) => Equivalence<Record<PropertyKey, A>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Equivalence.ts#L791)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Equivalence.ts#L819)
 
 Since v4.0.0

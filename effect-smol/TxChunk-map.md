@@ -6,9 +6,10 @@ Module: `TxChunk`<br />
 Maps each element of the `TxChunk` using a function that returns the same
 element type.
 
-**Mutation behavior**: This function mutates the original `TxChunk` by
-transforming each element in place. It does not return a new `TxChunk`
-reference.
+**Details**
+
+This function mutates the original `TxChunk` by transforming each element in place. It does not
+return a new `TxChunk` reference.
 
 **Example** (Mapping elements)
 
@@ -32,6 +33,6 @@ const program = Effect.gen(function*() {
 declare const map: { <A>(f: (a: NoInfer<A>) => A): (self: TxChunk<A>) => Effect.Effect<void>; <A>(self: TxChunk<A>, f: (a: A) => A): Effect.Effect<void>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxChunk.ts#L632)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxChunk.ts#L659)
 
 Since v4.0.0

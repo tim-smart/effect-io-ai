@@ -6,9 +6,11 @@ Module: `Flag`<br />
 Hides a flag from generated help output and shell completions while keeping
 it fully parseable on the command line.
 
-Useful for experimental or internal flags that should be accepted but not
-advertised — for example, `--experimental-foo`, debug toggles, or escape
-hatches that are not yet committed to the public CLI surface.
+**When to use**
+
+Use this for experimental or internal flags that should be accepted but not
+advertised, such as `--experimental-foo`, debug toggles, or escape hatches
+that are not yet committed to the public CLI surface.
 
 **Example** (Hiding a flag from help)
 
@@ -27,6 +29,6 @@ const experimental = Flag.boolean("experimental-foo").pipe(
 declare const withHidden: <A>(self: Flag<A>) => Flag<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Flag.ts#L512)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Flag.ts#L525)
 
 Since v4.0.0

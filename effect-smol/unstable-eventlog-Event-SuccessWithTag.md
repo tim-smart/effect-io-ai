@@ -11,6 +11,6 @@ Decoded success value type for the event in a union with the specified tag.
 type SuccessWithTag<Events, Tag> = Success<WithTag<Events, Tag>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Event.ts#L349)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Event.ts#L361)
 
 Since v4.0.0

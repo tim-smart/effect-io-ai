@@ -5,6 +5,8 @@ Module: `Hash`<br />
 
 Optimizes a hash value by applying bit manipulation techniques.
 
+**Details**
+
 This function takes a hash value and applies bitwise operations to improve
 the distribution of hash values, reducing the likelihood of collisions.
 
@@ -27,6 +29,6 @@ const stringHash = Hash.optimize(Hash.string("hello"))
 declare const optimize: (n: number) => number
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Hash.ts#L227)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Hash.ts#L235)
 
 Since v2.0.0

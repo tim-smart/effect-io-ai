@@ -5,6 +5,8 @@ Module: `Path`<br />
 
 Service interface for platform-specific path manipulation.
 
+**Details**
+
 The service exposes operations for joining, normalizing, parsing,
 formatting, and converting file system paths. URL conversion methods return
 `Effect`s because invalid file URLs or paths can fail with `BadArgument`.
@@ -64,6 +66,6 @@ export interface Path {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Path.ts#L91)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Path.ts#L93)
 
 Since v4.0.0

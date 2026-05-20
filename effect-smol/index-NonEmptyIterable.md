@@ -11,6 +11,6 @@ Re-exports all named exports from the "./NonEmptyIterable.ts" module as `NonEmpt
 export * as NonEmptyIterable from "./NonEmptyIterable.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L3339)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L3350)
 
 Since v2.0.0

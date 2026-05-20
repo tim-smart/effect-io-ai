@@ -5,6 +5,8 @@ Module: `MessageStorage`<br />
 
 Encoded storage-driver form of `SaveResult`.
 
+**Details**
+
 Duplicate results contain an encoded last received reply instead of a decoded
 reply.
 
@@ -14,6 +16,6 @@ reply.
 type Encoded = SaveResult.Success | SaveResult.DuplicateEncoded
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MessageStorage.ts#L226)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MessageStorage.ts#L237)
 
 Since v4.0.0

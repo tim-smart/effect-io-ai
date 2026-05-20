@@ -11,6 +11,6 @@ Tests if an arbitrary value is an `AsyncFiberError`.
 declare const isAsyncFiberError: (u: unknown) => u is AsyncFiberError
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L1498)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L1566)
 
 Since v4.0.0

@@ -5,6 +5,8 @@ Module: `Graph`<br />
 
 Mermaid node shape types for diagram visualization.
 
+**Details**
+
 Each shape produces different visual representations in Mermaid diagrams:
 - `rectangle`: Standard rectangular nodes `A["label"]`
 - `rounded`: Rounded rectangular nodes `A("label")`
@@ -47,6 +49,6 @@ type MermaidNodeShape = | "rectangle" // A["label"]
   | "cylindrical"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Graph.ts#L1911)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Graph.ts#L1915)
 
 Since v3.18.0

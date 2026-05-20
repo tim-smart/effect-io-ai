@@ -5,6 +5,8 @@ Module: `LanguageModel`<br />
 
 Utility type that extracts the error type from LanguageModel options.
 
+**Details**
+
 Automatically infers the possible error types based on toolkit configuration
 and tool call resolution settings.
 
@@ -24,6 +26,6 @@ type ExtractError<Options> = Options extends {
   : AiError.AiError
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/LanguageModel.ts#L633)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/LanguageModel.ts#L625)
 
 Since v4.0.0

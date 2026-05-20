@@ -6,6 +6,8 @@ Module: `SchemaAST`<br />
 A non-empty chain of `Link` values representing the transformation
 steps between a schema's decoded (type) form and its encoded (wire) form.
 
+**Details**
+
 Stored on `Base.encoding`. When `undefined`, the node has no
 encoding transformation (type and encoded forms are identical).
 
@@ -20,6 +22,6 @@ encoding transformation (type and encoded forms are identical).
 type Encoding = readonly [Link, ...Array<Link>]
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L371)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L376)
 
 Since v4.0.0

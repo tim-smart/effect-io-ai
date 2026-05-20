@@ -11,6 +11,6 @@ Constructs a new assistant message.
 declare const assistantMessage: (params: MessageConstructorParams<AssistantMessage>) => AssistantMessage
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L1536)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L1549)
 
 Since v4.0.0

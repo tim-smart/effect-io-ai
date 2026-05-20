@@ -11,6 +11,6 @@ Represents a user-defined tool that can be passed to the Anthropic API.
 type AnthropicUserDefinedTool = typeof Generated.BetaTool.Encoded
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicLanguageModel.ts#L1135)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicLanguageModel.ts#L1181)
 
 Since v4.0.0

@@ -3,8 +3,9 @@ Module: `Hash`<br />
 
 ## Hash.structure
 
-Computes a structural hash for an object using Effect's object key
-collection.
+Computes a structural hash for an object using Effect's object key collection.
+
+**Details**
 
 The hash is based on the object's structural keys and their values, including
 symbol keys and relevant prototype keys for non-plain objects.
@@ -32,6 +33,6 @@ console.log(Hash.structure(obj1) === Hash.structure(obj3)) // true
 declare const structure: <A extends object>(o: A) => number
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Hash.ts#L397)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Hash.ts#L414)
 
 Since v2.0.0

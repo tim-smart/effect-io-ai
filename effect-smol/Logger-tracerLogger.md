@@ -5,13 +5,15 @@ Module: `Logger`<br />
 
 A `Logger` which includes log messages as tracer span events.
 
+**Details**
+
 This logger integrates logging with distributed tracing by recording
 all log messages as events on the current trace span, making them visible
 in tracing tools like OpenTelemetry, Jaeger, or Zipkin.
 
-**Note**: This logger is included in the default set of loggers for all
-Effect programs, so log messages automatically appear as span events unless
-you override the default loggers.
+This logger is included in the default set of loggers for all Effect programs,
+so log messages automatically appear as span events unless you override the
+default loggers.
 
 **Example** (Recording logs as trace span events)
 
@@ -57,6 +59,6 @@ const distributedProgram = Effect.gen(function*() {
 declare const tracerLogger: Logger<unknown, void>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Logger.ts#L1136)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Logger.ts#L1145)
 
 Since v2.0.0

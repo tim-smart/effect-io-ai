@@ -5,8 +5,10 @@ Module: `TxChunk`<br />
 
 Modifies the value of the `TxChunk` using the provided function.
 
-**Mutation behavior**: This function mutates the original TxChunk by updating
-its internal state. It does not return a new TxChunk reference.
+**Details**
+
+This function mutates the original TxChunk by updating its internal state. It does not return a
+new TxChunk reference.
 
 **Example** (Modifying while returning a value)
 
@@ -35,6 +37,6 @@ const program = Effect.gen(function*() {
 declare const modify: { <A, R>(f: (current: Chunk.Chunk<NoInfer<A>>) => [returnValue: R, newValue: Chunk.Chunk<A>]): (self: TxChunk<A>) => Effect.Effect<R>; <A, R>(self: TxChunk<A>, f: (current: Chunk.Chunk<A>) => [returnValue: R, newValue: Chunk.Chunk<A>]): Effect.Effect<R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxChunk.ts#L245)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxChunk.ts#L257)
 
 Since v4.0.0

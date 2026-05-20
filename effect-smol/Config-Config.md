@@ -5,6 +5,8 @@ Module: `Config`<br />
 
 A recipe for extracting a typed value `T` from a `ConfigProvider`.
 
+**Details**
+
 Key members:
 - `parse(provider)` – runs the config against a specific provider,
   returning `Effect<T, ConfigError>`.
@@ -26,6 +28,6 @@ export interface Config<out T> extends Effect.Effect<T, ConfigError> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Config.ts#L162)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Config.ts#L168)
 
 Since v2.0.0

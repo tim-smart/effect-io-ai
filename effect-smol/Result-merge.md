@@ -6,6 +6,8 @@ Module: `Result`<br />
 Unwraps a `Result` into `A | E` by returning the inner value regardless
 of whether it is a success or failure.
 
+**Details**
+
 - `Success<A>` returns `A`
 - `Failure<E>` returns `E`
 - Useful when both channels share a compatible type
@@ -33,6 +35,6 @@ console.log(Result.merge(Result.fail("error")))
 declare const merge: <A, E>(self: Result<A, E>) => E | A
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L986)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L1038)
 
 Since v2.0.0

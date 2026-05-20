@@ -5,10 +5,12 @@ Module: `Optic`<br />
 
 A `Prism` that focuses on `Option.None`, exposing `undefined`.
 
-When to use:
+**When to use**
+
 - You want to match or construct `None` values within an optic chain.
 
-Behavior:
+**Details**
+
 - `getResult` succeeds with `undefined` when the option is `None`.
 - `getResult` fails when the option is `Some`.
 - `set(undefined)` produces `Option.none()`.
@@ -38,6 +40,6 @@ console.log(Result.isFailure(_none.getResult(Option.some(1))))
 declare const none: <A>() => Prism<Option.Option<A>, undefined>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Optic.ts#L1634)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Optic.ts#L1680)
 
 Since v4.0.0

@@ -6,10 +6,12 @@ Module: `Schedule`<br />
 Returns a `Schedule` that recurs on the specified fixed `interval` and
 outputs the number of repetitions of the schedule so far.
 
+**Details**
+
 If the action run between updates takes longer than the interval, then the
 action will be run immediately, but re-runs will not "pile up".
 
-```
+```text
 |-----interval-----|-----interval-----|-----interval-----|
 |---------action--------||action|-----|action|-----------|
 ```
@@ -68,6 +70,6 @@ const program = Effect.gen(function*() {
 declare const fixed: (interval: Duration.Input) => Schedule<number>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L2105)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L2117)
 
 Since v2.0.0

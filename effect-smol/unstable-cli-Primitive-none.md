@@ -5,6 +5,8 @@ Module: `Primitive`<br />
 
 A sentinel primitive that always fails to parse a value.
 
+**When to use**
+
 Used for flags that don't accept values.
 
 **Example** (Rejecting option values)
@@ -27,6 +29,6 @@ const program = Effect.gen(function*() {
 declare const none: Primitive<never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Primitive.ts#L693)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Primitive.ts#L701)
 
 Since v4.0.0

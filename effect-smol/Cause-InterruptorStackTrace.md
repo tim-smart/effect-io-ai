@@ -6,6 +6,8 @@ Module: `Cause`<br />
 `Context` key for the stack frame captured at the point of
 interruption.
 
+**Details**
+
 Similar to `StackTrace` but specific to `Interrupt` reasons.
 
 **Signature**
@@ -14,6 +16,6 @@ Similar to `StackTrace` but specific to `Interrupt` reasons.
 declare class InterruptorStackTrace
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L1677)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L1757)
 
 Since v4.0.0

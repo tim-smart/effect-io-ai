@@ -5,8 +5,10 @@ Module: `PrometheusMetrics`<br />
 
 Synchronously format all metrics in the registry to Prometheus exposition format.
 
-This is a low-level function that requires access to the context.
-Most users should use `format` instead.
+**When to use**
+
+Use this low-level function when you already have access to the context. Most
+users should use `format` instead.
 
 **Signature**
 
@@ -14,6 +16,6 @@ Most users should use `format` instead.
 declare const formatUnsafe: (context: Context.Context<never>, options?: FormatOptions | undefined) => string
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PrometheusMetrics.ts#L150)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PrometheusMetrics.ts#L152)
 
 Since v4.0.0

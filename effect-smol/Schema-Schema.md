@@ -5,6 +5,8 @@ Module: `Schema`<br />
 
 A typed view of a schema that tracks only the decoded (output) type `T`.
 
+**Details**
+
 Use `Schema<T>` as a constraint when you want to accept "any schema that
 decodes to `T`" and do not need to know or constrain the encoded
 representation, required services, or any other type parameters.
@@ -38,6 +40,6 @@ export interface Schema<out T> extends Top {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L643)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L661)
 
 Since v3.10.0

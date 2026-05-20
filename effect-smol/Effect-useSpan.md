@@ -6,6 +6,8 @@ Module: `Effect`<br />
 Create a new span for tracing, and automatically close it when the effect
 completes.
 
+**Details**
+
 The span is not added to the current span stack, so no child spans will be
 created for it.
 
@@ -30,6 +32,6 @@ const program = Effect.useSpan(
 declare const useSpan: { <A, E, R>(name: string, evaluate: (span: Span) => Effect<A, E, R>): Effect<A, E, R>; <A, E, R>(name: string, options: SpanOptionsNoTrace, evaluate: (span: Span) => Effect<A, E, R>): Effect<A, E, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L7655)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L7736)
 
 Since v2.0.0

@@ -5,6 +5,8 @@ Module: `FileSystem`<br />
 
 File open flags that determine how a file is opened and what operations are allowed.
 
+**Details**
+
 These flags correspond to standard POSIX file open modes and control the file access
 permissions and behavior when opening files.
 
@@ -56,6 +58,6 @@ type OpenFlag = | "r"
   | "ax+"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FileSystem.ts#L676)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FileSystem.ts#L710)
 
 Since v4.0.0

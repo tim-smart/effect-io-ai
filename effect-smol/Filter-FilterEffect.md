@@ -5,8 +5,11 @@ Module: `Filter`<br />
 
 Represents an effectful filter function that can produce Effects.
 
-Similar to a regular Filter, but the filtering operation itself can be effectful,
-allowing for asynchronous operations, error handling, and dependency injection.
+**Details**
+
+Similar to a regular `Filter`, but the filtering operation itself can be
+effectful, allowing for asynchronous operations, error handling, and
+dependency injection.
 
 **Example** (Defining an effectful user filter)
 
@@ -44,6 +47,6 @@ export interface FilterEffect<
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Filter.ts#L102)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Filter.ts#L107)
 
 Since v4.0.0

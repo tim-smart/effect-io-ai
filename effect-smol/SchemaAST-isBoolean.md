@@ -11,6 +11,6 @@ Narrows an `AST` to `Boolean`.
 declare const isBoolean: (ast: AST) => ast is Boolean
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L234)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L236)
 
 Since v4.0.0

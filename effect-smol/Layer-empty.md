@@ -3,18 +3,30 @@ Module: `Layer`<br />
 
 ## Layer.empty
 
-A Layer that constructs an empty Context.
+An empty layer that provides no services, cannot fail, has no requirements,
+and performs no construction or finalization work.
 
-This layer provides no services and can be used as a neutral element
-in layer composition or as a starting point for building layers.
+**When to use**
 
-**Example** (Creating an empty layer)
+Use `Layer.empty` as the no-op branch when conditionally composing layers.
+If you need to run an effect during layer construction while still providing
+no services, use `effectDiscard`.
+
+**Example** (Disabling optional lifecycle work)
 
 ```ts
-import { Layer } from "effect"
+import { Console, Layer } from "effect"
 
-const emptyLayer = Layer.empty
+declare const flag: boolean
+
+const StartupLogLive = flag
+  ? Layer.effectDiscard(Console.log("application starting"))
+  : Layer.empty
 ```
+
+**See**
+
+- `effectDiscard` for running an effect while providing no services
 
 **Signature**
 
@@ -22,6 +34,6 @@ const emptyLayer = Layer.empty
 declare const empty: Layer<never, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L773)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L805)
 
 Since v2.0.0

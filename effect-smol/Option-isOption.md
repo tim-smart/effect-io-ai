@@ -10,7 +10,7 @@ Determines whether the given value is an `Option`.
 - Validating unknown values at runtime boundaries
 - Type-narrowing in union types
 
-**Behavior**
+**Details**
 
 - Returns `true` for both `Some` and `None` instances
 - Acts as a type guard, narrowing the input to `Option<unknown>`
@@ -41,6 +41,6 @@ console.log(Option.isOption({}))
 declare const isOption: (input: unknown) => input is Option<unknown>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L357)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L361)
 
 Since v2.0.0

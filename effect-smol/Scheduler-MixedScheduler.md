@@ -3,15 +3,14 @@ Module: `Scheduler`<br />
 
 ## Scheduler.MixedScheduler
 
-A scheduler implementation that provides efficient task scheduling
-with support for both synchronous and asynchronous execution modes.
+A scheduler implementation that batches queued tasks and dispatches them by
+priority.
 
-Features:
-- Batches tasks for efficient execution
-- Supports priority-based task scheduling
-- Configurable execution mode (sync/async)
-- Automatic yielding based on operation count
-- Optimized for high-throughput scenarios
+**Details**
+
+`MixedScheduler` supports synchronous and asynchronous execution modes, uses
+operation counts to decide when fibers should yield, and is the default
+scheduler implementation.
 
 **Signature**
 
@@ -22,6 +21,6 @@ declare class MixedScheduler { constructor(
   ) }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Scheduler.ts#L130)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Scheduler.ts#L131)
 
 Since v2.0.0

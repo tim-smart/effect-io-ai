@@ -5,6 +5,8 @@ Module: `HttpServerRequest`<br />
 
 Creates an `HttpServerRequest` view of an `HttpClientRequest`.
 
+**Details**
+
 If the client request can be converted to an absolute URL, that URL is used as
 the original URL.
 
@@ -14,6 +16,6 @@ the original URL.
 declare const fromClientRequest: (request: HttpClientRequest.HttpClientRequest) => HttpServerRequest
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpServerRequest.ts#L364)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpServerRequest.ts#L384)
 
 Since v4.0.0

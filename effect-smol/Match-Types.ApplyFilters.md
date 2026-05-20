@@ -5,6 +5,8 @@ Module: `Match`<br />
 
 Applies accumulated filters to an input type, producing the final narrowed type.
 
+**Details**
+
 This utility type takes the collected inclusion/exclusion filters and
 applies them to the input type to compute the final narrowed result.
 It's the culmination of the type-level filtering process.
@@ -36,6 +38,6 @@ type ApplyFilters<I, A> = A extends Only<infer X> ? X
     : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L2214)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L2282)
 
 Since v4.0.0

@@ -6,12 +6,20 @@ Module: `JsonSchema`<br />
 Resolves a `$ref` string by looking up the last path segment in a
 definitions map.
 
-- Use when you need to dereference a `$ref` pointer to get the
-  actual schema it points to.
-- Only resolves the final segment of the ref path (e.g. `"User"` from
-  `"#/$defs/User"`); does not follow arbitrary JSON Pointer paths.
-- Returns `undefined` if the definition is not found.
-- Does not mutate anything. Pure function.
+**When to use**
+
+Use this when you need to dereference a `$ref` pointer to get the actual
+schema it points to.
+
+**Details**
+
+This only resolves the final segment of the ref path, such as `"User"` from
+`"#/$defs/User"`. It returns `undefined` if the definition is not found and
+does not mutate anything.
+
+**Gotchas**
+
+This function does not follow arbitrary JSON Pointer paths.
 
 **Example** (Resolving a $ref)
 
@@ -40,6 +48,6 @@ console.log(missing) // undefined
 declare const resolve$ref: ($ref: string, definitions: Definitions) => JsonSchema | undefined
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/JsonSchema.ts#L873)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/JsonSchema.ts#L919)
 
 Since v4.0.0

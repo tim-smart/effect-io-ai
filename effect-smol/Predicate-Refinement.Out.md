@@ -5,10 +5,12 @@ Module: `Predicate`<br />
 
 Extracts the output type `B` from a `Refinement<A, B>`.
 
-When to use:
+**When to use**
+
 - You want to infer the narrowed type from a refinement type.
 
-Behavior:
+**Details**
+
 - Type-only; no runtime value is created.
 - Resolves to `never` if the type does not match `Refinement`.
 
@@ -21,7 +23,9 @@ type R = Predicate.Refinement<unknown, string>
 type Output = Predicate.Refinement.Out<R>
 ```
 
-See also: `Refinement.In`
+**See**
+
+- `Refinement.In`
 
 **Signature**
 
@@ -29,6 +33,6 @@ See also: `Refinement.In`
 type Out<T> = [T] extends [Refinement<infer _, infer _B>] ? _B : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L296)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L313)
 
 Since v3.6.0

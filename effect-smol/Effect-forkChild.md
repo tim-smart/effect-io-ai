@@ -7,6 +7,8 @@ Returns an effect that forks this effect into its own separate fiber,
 returning the fiber immediately, without waiting for it to begin executing
 the effect.
 
+**Details**
+
 You can use the `forkChild` method whenever you want to execute an effect in a
 new fiber, concurrently and without "blocking" the fiber executing other
 effects. Using fibers can be tricky, so instead of using this method
@@ -52,6 +54,6 @@ const program = Effect.gen(function*() {
 declare const forkChild: <Arg extends Effect<any, any, any> | { readonly startImmediately?: boolean | undefined; readonly uninterruptible?: boolean | "inherit" | undefined; } | undefined = { readonly startImmediately?: boolean | undefined; readonly uninterruptible?: boolean | "inherit" | undefined; }>(effectOrOptions?: Arg, options?: { readonly startImmediately?: boolean | undefined; readonly uninterruptible?: boolean | "inherit" | undefined; } | undefined) => [Arg] extends [Effect<infer _A, infer _E, infer _R>] ? Effect<Fiber<_A, _E>, never, _R> : <A, E, R>(self: Effect<A, E, R>) => Effect<Fiber<A, E>, never, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L7871)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L7958)
 
 Since v4.0.0

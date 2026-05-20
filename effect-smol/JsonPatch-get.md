@@ -3,28 +3,27 @@ Module: `JsonPatch`<br />
 
 ## JsonPatch.get
 
-Computes a patch that transforms `oldValue` into `newValue`.
+Computes a structural patch that transforms `oldValue` into `newValue`.
+
+**When to use**
+
+Use `get` to compute differences between JSON documents, detect structural
+changes, or create deterministic update operations from before and after
+states.
+
+**Details**
 
 Generates a structural diff between two JSON values, producing a patch that
-yields `newValue` when applied to `oldValue`.
+yields `newValue` when applied to `oldValue`. It returns an empty array when
+values are identical, recursively diffs nested structures, emits root
+`replace` operations for primitive changes, and processes object keys in
+sorted order for stable output. Inputs are not mutated.
 
-## When to use this
+**Gotchas**
 
-- Computing differences between JSON documents
-- Detecting changes in data structures
-- Generating patches for synchronization or version control
-- Creating deterministic update operations from before/after states
-
-## Behavior
-
-- Returns an empty array if values are identical (same reference or deep equal)
-- Does not mutate inputs; returns a new patch array
-- Primitives (numbers, strings, booleans, null) result in a root `replace` operation
-- Arrays are compared by index position; no move or copy detection
-- Objects are compared by key; keys processed in sorted order for stable output
-- Array removals emitted from highest to lowest index to prevent index shifting
-- Output is deterministic but not guaranteed to be minimal
-- Nested structures are recursively diffed
+Arrays are compared by index position, with no move or copy detection. Array
+removals are emitted from highest to lowest index to prevent index shifting.
+The output is deterministic but not guaranteed to be minimal.
 
 **Example** (Computing object diff)
 
@@ -42,7 +41,7 @@ const patch = JsonPatch.get(oldValue, newValue)
 // ]
 ```
 
-## See also
+**See**
 
 - `apply` - Applies the generated patch to a document
 - `JsonPatchOperation` - The operation types in the patch
@@ -53,6 +52,6 @@ const patch = JsonPatch.get(oldValue, newValue)
 declare const get: (oldValue: Schema.Json, newValue: Schema.Json) => JsonPatch
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/JsonPatch.ts#L229)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/JsonPatch.ts#L213)
 
 Since v4.0.0

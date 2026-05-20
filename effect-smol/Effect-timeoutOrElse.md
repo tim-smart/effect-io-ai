@@ -5,6 +5,8 @@ Module: `Effect`<br />
 
 Applies a timeout to an effect, with a fallback effect executed if the timeout is reached.
 
+**Details**
+
 This function is useful when you want to set a maximum duration for an operation
 and provide an alternative action if the timeout is exceeded.
 
@@ -42,6 +44,6 @@ Effect.runPromise(program).then(console.log)
 declare const timeoutOrElse: { <A2, E2, R2>(options: { readonly duration: Duration.Input; readonly orElse: LazyArg<Effect<A2, E2, R2>>; }): <A, E, R>(self: Effect<A, E, R>) => Effect<A | A2, E | E2, R | R2>; <A, E, R, A2, E2, R2>(self: Effect<A, E, R>, options: { readonly duration: Duration.Input; readonly orElse: LazyArg<Effect<A2, E2, R2>>; }): Effect<A | A2, E | E2, R | R2>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L4242)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L4296)
 
 Since v4.0.0

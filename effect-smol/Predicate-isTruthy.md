@@ -5,11 +5,13 @@ Module: `Predicate`<br />
 
 Checks whether a value is truthy.
 
-When to use:
+**When to use**
+
 - You want a predicate that mirrors JavaScript truthiness.
 - You need to filter out falsy values like `0`, "", and `false`.
 
-Behavior:
+**Details**
+
 - Pure; does not mutate input.
 - Uses `!!input` under the hood.
 - Treats `0`, "", `false`, `null`, and `undefined` as false.
@@ -25,7 +27,10 @@ const truthy = values.filter(Predicate.isTruthy)
 console.log(truthy)
 ```
 
-See also: `isNullish`, `isNotNullish`
+**See**
+
+- `isNullish`
+- `isNotNullish`
 
 **Signature**
 
@@ -33,6 +38,6 @@ See also: `isNullish`, `isNotNullish`
 declare const isTruthy: (input: unknown) => boolean
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L449)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L477)
 
 Since v2.0.0

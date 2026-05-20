@@ -6,7 +6,7 @@ Module: `Effect`<br />
 Creates an `Effect` that represents an asynchronous computation guaranteed to
 succeed.
 
-**When to Use**
+**When to use**
 
 Use `promise` when you are sure the operation will not reject.
 
@@ -20,14 +20,10 @@ was expected to be error-free. You can think of it similar to an unexpected
 crash in the program, which can be further managed or logged using tools like
 `catchDefect`.
 
-**Interruptions**
+Interruptions:
 
 An optional `AbortSignal` can be provided to allow for interruption of the
 wrapped `Promise` API.
-
-**See**
-
-- `tryPromise` for a version that can handle failures.
 
 **Example** (Wrapping a non-rejecting Promise)
 
@@ -49,12 +45,16 @@ const delay = (message: string) =>
 const program = delay("Async operation completed successfully!")
 ```
 
+**See**
+
+- `tryPromise` for a version that can handle failures.
+
 **Signature**
 
 ```ts
 declare const promise: <A>(evaluate: (signal: AbortSignal) => PromiseLike<A>) => Effect<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L868)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L875)
 
 Since v2.0.0

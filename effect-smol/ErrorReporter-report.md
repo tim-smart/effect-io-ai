@@ -3,8 +3,10 @@ Module: `ErrorReporter`<br />
 
 ## ErrorReporter.report
 
-Manually report a `Cause` to all registered `ErrorReporter`s on the
+Manually reports a `Cause` to all registered `ErrorReporter`s on the
 current fiber.
+
+**When to use**
 
 This is useful when you want to report an error for observability without
 actually failing the fiber.
@@ -28,6 +30,6 @@ const program = Effect.gen(function*() {
 declare const report: <E>(cause: Cause.Cause<E>) => Effect.Effect<void>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ErrorReporter.ts#L270)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ErrorReporter.ts#L278)
 
 Since v4.0.0

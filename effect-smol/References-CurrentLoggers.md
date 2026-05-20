@@ -7,6 +7,7 @@ Reference containing the set of loggers currently used by Effect logging
 operations.
 
 **Details**
+
 Providing this reference changes which `Logger` instances receive log entries
 in the current context.
 
@@ -16,6 +17,6 @@ in the current context.
 declare const CurrentLoggers: Context.Reference<ReadonlySet<Logger<unknown, any>>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/References.ts#L574)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/References.ts#L590)
 
 Since v4.0.0

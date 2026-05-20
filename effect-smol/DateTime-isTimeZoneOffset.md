@@ -11,6 +11,6 @@ Checks if a value is an offset-based `TimeZone`.
 declare const isTimeZoneOffset: (u: unknown) => u is TimeZone.Offset
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L436)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L466)
 
 Since v3.6.0

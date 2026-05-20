@@ -6,6 +6,8 @@ Module: `Array`<br />
 Splits a non-empty array into all elements except the last, and the last
 element.
 
+**Details**
+
 - Returns a tuple `[init, last]`.
 - Requires a `NonEmptyReadonlyArray`.
 
@@ -30,6 +32,6 @@ console.log(result) // [[1, 2, 3], 4]
 declare const unappend: <A>(self: NonEmptyReadonlyArray<A>) => [arrayWithoutLastElement: Array<A>, lastElement: A]
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L980)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L1030)
 
 Since v2.0.0

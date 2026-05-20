@@ -5,6 +5,8 @@ Module: `Cause`<br />
 
 A single entry inside a `Cause`'s `reasons` array.
 
+**Details**
+
 Narrow to a concrete type with `isFailReason`, `isDieReason`,
 or `isInterruptReason`.
 
@@ -38,6 +40,6 @@ if (Cause.isFailReason(reason)) {
 type Reason<E> = Fail<E> | Die | Interrupt
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L211)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L215)
 
 Since v4.0.0

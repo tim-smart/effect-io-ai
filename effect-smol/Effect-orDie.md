@@ -6,14 +6,10 @@ Module: `Effect`<br />
 Converts typed failures from the error channel into defects, removing the
 error type from the returned effect.
 
-**When to Use**
+**When to use**
 
 Use `orDie` when a typed failure represents an unrecoverable bug or invalid
 state and should not be handled as a recoverable error.
-
-**See**
-
-- `mapError` to transform the error before converting it into a defect with `orDie`.
 
 **Example** (Converting typed failures into defects)
 
@@ -37,12 +33,16 @@ Effect.runPromise(program).catch(console.error)
 //   ...stack trace...
 ```
 
+**See**
+
+- `mapError` to transform the error before converting it into a defect with `orDie`.
+
 **Signature**
 
 ```ts
 declare const orDie: <A, E, R>(self: Effect<A, E, R>) => Effect<A, never, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L3321)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L3362)
 
 Since v2.0.0

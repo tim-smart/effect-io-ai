@@ -5,6 +5,8 @@ Module: `DateTime`<br />
 
 Shared protocol implemented by all `DateTime` values.
 
+**Details**
+
 Provides the `DateTime` type identifier along with pipe and inspection
 support.
 
@@ -16,6 +18,6 @@ export interface Proto extends Pipeable, Inspectable {
   }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L282)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L302)
 
 Since v3.6.0

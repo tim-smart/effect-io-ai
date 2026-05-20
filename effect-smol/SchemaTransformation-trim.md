@@ -6,10 +6,12 @@ Module: `SchemaTransformation`<br />
 A string-to-string transformation that trims whitespace on decode.
 Encode is passthrough (no change).
 
-When to use this:
+**When to use**
+
 - Normalizing user input by stripping leading/trailing whitespace.
 
-Behavior:
+**Details**
+
 - Decode: applies `String.prototype.trim()`.
 - Encode: passthrough (returns the string unchanged).
 - Not round-trippable if the original had whitespace.
@@ -24,7 +26,8 @@ const Trimmed = Schema.String.pipe(
 )
 ```
 
-See also:
+**See**
+
 - `toLowerCase`
 - `toUpperCase`
 - `snakeToCamel`
@@ -35,6 +38,6 @@ See also:
 declare const trim: () => Transformation<string, string>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L489)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L497)
 
 Since v4.0.0

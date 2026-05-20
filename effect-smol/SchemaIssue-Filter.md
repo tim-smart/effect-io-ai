@@ -5,12 +5,12 @@ Module: `SchemaIssue`<br />
 
 Issue produced when a schema filter (refinement check) fails.
 
-When to use:
+**When to use**
 
 - Inspect which filter rejected the value.
 - Walk the inner `issue` for the specific validation failure.
 
-Behaviour:
+**Details**
 
 - `actual` is the raw input value that was tested (plain `unknown`, not
   wrapped in `Option`).
@@ -54,6 +54,6 @@ declare class Filter { constructor(
   ) }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaIssue.ts#L226)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaIssue.ts#L228)
 
 Since v4.0.0

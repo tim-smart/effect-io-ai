@@ -5,6 +5,8 @@ Module: `Atom`<br />
 
 Serialization metadata attached to an atom.
 
+**Details**
+
 The key identifies the atom in dehydrated state, and the encode/decode
 functions convert between the atom value and the schema encoded value.
 
@@ -20,6 +22,6 @@ export interface Serializable<S extends Schema.Top> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Atom.ts#L2359)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Atom.ts#L2402)
 
 Since v4.0.0

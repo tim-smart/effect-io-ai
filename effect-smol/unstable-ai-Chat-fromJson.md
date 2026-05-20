@@ -5,6 +5,8 @@ Module: `Chat`<br />
 
 Creates a Chat service from previously exported JSON chat data.
 
+**Details**
+
 Restores a chat session from JSON string that was previously exported
 using the `exportJson` method. This is the most convenient way to
 persist and restore chat sessions to/from storage systems.
@@ -42,6 +44,6 @@ const restoreFromJson = Effect.gen(function*() {
 declare const fromJson: (data: string) => Effect.Effect<Service, Schema.SchemaError>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chat.ts#L646)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chat.ts#L668)
 
 Since v4.0.0

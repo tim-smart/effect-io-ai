@@ -5,6 +5,8 @@ Module: `ChildProcess`<br />
 
 Specifies which input to pipe to on the destination subprocess.
 
+**Details**
+
 - `"stdin"`: Pipe to stdin of the destination (default)
 - `` `fd${number}` ``: Pipe to a custom file descriptor (e.g., `"fd3"`)
 
@@ -14,6 +16,6 @@ Specifies which input to pipe to on the destination subprocess.
 type PipeToOption = "stdin" | `fd${number}`
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ChildProcess.ts#L132)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ChildProcess.ts#L133)
 
 Since v4.0.0

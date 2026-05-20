@@ -5,19 +5,21 @@ Module: `Equivalence`<br />
 
 Creates an equivalence for arrays where all elements are compared using the same equivalence.
 
-When to use this:
-- When comparing arrays with homogeneous element types
-- When all elements should use the same equivalence logic
-- When working with variable-length arrays (not fixed tuples)
-- Prefer over `Tuple` when you have arrays of the same type
+**When to use**
 
-Behavior:
+- Use when comparing arrays with homogeneous element types
+- Use when all elements should use the same equivalence logic
+- Use when working with variable-length arrays instead of fixed tuples
+- Prefer this over `Tuple` when you have arrays of the same type
+
+**Details**
+
 - Does not mutate inputs
 - Requires arrays to have the same length; different lengths are never equivalent
-- Compares elements positionally (index 0 with index 0, etc.)
+- Compares elements positionally, such as index `0` with index `0`
 - Returns `true` only if all corresponding elements are equivalent
 - Empty arrays are considered equivalent
-- The result is also an equivalence (satisfies reflexive, symmetric, transitive properties)
+- The result is also an equivalence that satisfies reflexive, symmetric, and transitive properties
 
 **Example** (Number array equivalence)
 
@@ -47,7 +49,10 @@ console.log(stringArrayEq(["Hello"], ["Hi"])) // false
 console.log(stringArrayEq([], [])) // true (empty arrays)
 ```
 
-See also: `Tuple`, `Record`
+**See**
+
+- `Tuple`
+- `Record`
 
 **Signature**
 
@@ -55,6 +60,6 @@ See also: `Tuple`, `Record`
 declare const Array: <A>(item: Equivalence<A>) => Equivalence<ReadonlyArray<A>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Equivalence.ts#L653)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Equivalence.ts#L676)
 
 Since v4.0.0

@@ -6,13 +6,18 @@ Module: `JsonSchema`<br />
 Converts a `MultiDocument<"draft-2020-12">` to a
 `MultiDocument<"openapi-3.1">`.
 
-- Use when generating an OpenAPI 3.1 specification from internal schemas.
-- Rewrites `#/$defs/...` refs to `#/components/schemas/...`.
-- Sanitizes definition keys to match the OpenAPI component key pattern
-  (`^[a-zA-Z0-9.\-_]+$`), replacing invalid characters with `_`.
-- Updates all `$ref` pointers to use the sanitized keys.
-- Converts all schemas and definitions in the multi-document.
-- Does not mutate the input. Allocates a new `MultiDocument`.
+**When to use**
+
+Use this when generating an OpenAPI 3.1 specification from internal schemas.
+
+**Details**
+
+This rewrites `#/$defs/...` refs to `#/components/schemas/...`, sanitizes
+definition keys to match the OpenAPI component key pattern
+(`^[a-zA-Z0-9.\-_]+$`) by replacing invalid characters with `_`, updates all
+`$ref` pointers to use the sanitized keys, and converts all schemas and
+definitions in the multi-document. It does not mutate the input and allocates
+a new `MultiDocument`.
 
 **Example** (Converting to OpenAPI 3.1)
 
@@ -43,6 +48,6 @@ console.log(openapi.schemas[0]) // { $ref: "#/components/schemas/User" }
 declare const toMultiDocumentOpenApi3_1: (multiDocument: MultiDocument<"draft-2020-12">) => MultiDocument<"openapi-3.1">
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/JsonSchema.ts#L655)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/JsonSchema.ts#L694)
 
 Since v4.0.0

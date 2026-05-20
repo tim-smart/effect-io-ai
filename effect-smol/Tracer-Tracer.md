@@ -3,11 +3,9 @@ Module: `Tracer`<br />
 
 ## Tracer.Tracer
 
-A tracing backend used by Effect to create spans.
-
-Custom tracers implement `span` to allocate a span from the supplied name,
-parent, annotations, links, start time, kind, root flag, and sampling
-decision.
+A tracing backend used by Effect to create spans. Custom tracers implement
+`span` to allocate a span from the supplied name, parent, annotations,
+links, start time, kind, root flag, and sampling decision.
 
 **Signature**
 
@@ -29,6 +27,6 @@ export interface Tracer {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tracer.ts#L60)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tracer.ts#L58)
 
 Since v2.0.0

@@ -7,6 +7,8 @@ A `TestConsole` provides a testable implementation of the Console interface.
 It captures all console output for testing purposes while maintaining full
 compatibility with the standard Console API.
 
+**Details**
+
 This interface extends the standard Console interface and adds methods to
 retrieve logged messages for verification in tests.
 
@@ -45,6 +47,6 @@ export interface TestConsole extends Console.Console {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TestConsole.ts#L48)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TestConsole.ts#L50)
 
 Since v4.0.0

@@ -5,10 +5,13 @@ Module: `Config`<br />
 
 Creates a `Config` from a raw parsing function.
 
-When to use:
+**When to use**
+
 - Building a custom config that cannot be expressed with `schema` or
   the convenience constructors.
 - Composing configs programmatically.
+
+**Details**
 
 The `parse` callback receives a `ConfigProvider` and must return
 `Effect<T, ConfigError>`.
@@ -40,6 +43,6 @@ const provider = ConfigProvider.fromUnknown({ host: "localhost", port: 3000 })
 declare const make: <T>(parse: (provider: ConfigProvider.ConfigProvider) => Effect.Effect<T, ConfigError>) => Config<T>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Config.ts#L215)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Config.ts#L224)
 
 Since v4.0.0

@@ -5,6 +5,8 @@ Module: `Cause`<br />
 
 `Context` key for the stack frame captured at the point of failure.
 
+**Details**
+
 The runtime annotates every reason with this when a stack frame is
 available. Retrieve it via
 `Context.get(Cause.reasonAnnotations(reason), Cause.StackTrace)`.
@@ -15,6 +17,6 @@ available. Retrieve it via
 declare class StackTrace
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L1666)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L1744)
 
 Since v4.0.0

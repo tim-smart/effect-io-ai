@@ -5,12 +5,12 @@ Module: `SchemaIssue`<br />
 
 Callback type used to format `Filter` issues into strings.
 
-When to use:
+**When to use**
 
 - Pass a custom `CheckHook` to `makeFormatterStandardSchemaV1` to
   override how filter failures are rendered.
 
-Behaviour:
+**Details**
 
 - Returns `string` to override the message, or `undefined` to fall back to
   the default formatting.
@@ -26,6 +26,6 @@ Behaviour:
 type CheckHook = (issue: Filter) => string | undefined
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaIssue.ts#L1014)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaIssue.ts#L1016)
 
 Since v4.0.0

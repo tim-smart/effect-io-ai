@@ -5,6 +5,8 @@ Module: `AiError`<br />
 
 Error indicating authentication or authorization failure.
 
+**Details**
+
 Authentication errors are never retryable without credential changes.
 
 **Example** (Creating an authentication error)
@@ -27,6 +29,6 @@ console.log(authError.message)
 declare class AuthenticationError
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AiError.ts#L510)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AiError.ts#L527)
 
 Since v4.0.0

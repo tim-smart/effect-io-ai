@@ -5,6 +5,8 @@ Module: `Schema`<br />
 
 A schema that additionally supports optic (lens/prism) operations.
 
+**Details**
+
 `Optic<T, Iso>` extends `Schema``<T>` with an `Iso` type that
 describes the isomorphic counterpart used by the optic layer. Crucially,
 decoding and encoding require *no* Effect services (`DecodingServices` and
@@ -26,6 +28,6 @@ export interface Optic<out T, out Iso> extends Schema<T> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L723)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L743)
 
 Since v4.0.0

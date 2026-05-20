@@ -5,6 +5,8 @@ Module: `IdGenerator`<br />
 
 The service interface for ID generation.
 
+**Details**
+
 Defines the contract that all ID generator implementations must fulfill.
 The service provides a single method for generating unique identifiers
 in an effectful context.
@@ -36,6 +38,6 @@ export interface Service {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/IdGenerator.ts#L113)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/IdGenerator.ts#L117)
 
 Since v4.0.0

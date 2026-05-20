@@ -5,6 +5,8 @@ Module: `Metric`<br />
 
 Enables automatic collection of fiber runtime metrics for the provided Effect.
 
+**Details**
+
 When enabled, automatically tracks fiber lifecycle metrics including active fibers,
 started fibers, successful completions, and failures. These metrics provide valuable
 insights into the concurrency patterns and health of your Effect application.
@@ -85,6 +87,6 @@ const programWithLayer = program.pipe(
 declare const enableRuntimeMetrics: <A, E, R>(self: Effect<A, E, R>) => Effect<A, E, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Metric.ts#L3910)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Metric.ts#L3965)
 
 Since v4.0.0

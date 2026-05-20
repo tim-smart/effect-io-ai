@@ -12,7 +12,7 @@ if it returns `None`.
 - Validating a value without transforming it
 - Adding a side-condition check in a pipeline
 
-**Behavior**
+**Details**
 
 - `None` → `None`
 - `Some` → calls `f(value)`; if result is `Some`, returns original `self`; if `None`, returns `None`
@@ -43,6 +43,6 @@ console.log(Option.tap(Option.some(1.14), getInteger))
 declare const tap: { <A, X>(f: (a: A) => Option<X>): (self: Option<A>) => Option<A>; <A, X>(self: Option<A>, f: (a: A) => Option<X>): Option<A>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L1626)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L1630)
 
 Since v2.0.0

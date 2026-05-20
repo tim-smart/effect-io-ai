@@ -5,6 +5,8 @@ Module: `FileSystem`<br />
 
 Event representing the deletion of a file or directory.
 
+**Details**
+
 This event is triggered when a file or directory is deleted
 from the watched location.
 
@@ -17,6 +19,6 @@ export interface Remove {
   }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FileSystem.ts#L1247)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FileSystem.ts#L1309)
 
 Since v4.0.0

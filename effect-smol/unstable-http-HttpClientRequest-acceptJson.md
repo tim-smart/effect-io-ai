@@ -11,6 +11,6 @@ Sets the `Accept` header to `application/json`.
 declare const acceptJson: (self: HttpClientRequest) => HttpClientRequest
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpClientRequest.ts#L395)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpClientRequest.ts#L397)
 
 Since v4.0.0

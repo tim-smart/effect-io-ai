@@ -5,6 +5,8 @@ Module: `AiError`<br />
 
 Error indicating an operation requires a toolkit but none was provided.
 
+**Details**
+
 This error occurs when tool approval responses are present in the prompt
 but no toolkit was provided to resolve them.
 
@@ -28,6 +30,6 @@ console.log(error.message)
 declare class ToolkitRequiredError
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AiError.ts#L1254)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AiError.ts#L1297)
 
 Since v4.0.0

@@ -6,6 +6,8 @@ Module: `SubscriptionRef`<br />
 Creates a stream that emits the current value and all subsequent changes to
 the `SubscriptionRef`.
 
+**Details**
+
 The stream will first emit the current value, then emit all future changes
 as they occur.
 
@@ -42,6 +44,6 @@ Effect.runPromise(program)
 declare const changes: <A>(self: SubscriptionRef<A>) => Stream.Stream<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SubscriptionRef.ts#L144)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SubscriptionRef.ts#L148)
 
 Since v4.0.0

@@ -5,7 +5,9 @@ Module: `Schema`<br />
 
 Validates that a Date is less than the specified value (exclusive).
 
-**Arbitrary**
+**Details**
+
+Arbitrary:
 
 When generating test data with fast-check, this applies a `max` constraint
 with `maxExcluded: true` to ensure generated Date objects are less than the
@@ -17,6 +19,6 @@ specified value.
 declare const isLessThanDate: (exclusiveMaximum: globalThis.Date, annotations?: Annotations.Filter) => AST.Filter<globalThis.Date>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L6605)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L6809)
 
 Since v4.0.0

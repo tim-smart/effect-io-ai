@@ -5,18 +5,20 @@ Module: `Equivalence`<br />
 
 Combines multiple equivalence relations into a single equivalence using logical AND.
 
-When to use this:
-- When you need to combine three or more equivalences
-- When you have a dynamic collection of equivalences to combine
-- When building equivalences from arrays or iterables
-- Prefer over multiple `combine` calls when you have many equivalences
+**When to use**
 
-Behavior:
+- Use when you need to combine three or more equivalences
+- Use when you have a dynamic collection of equivalences to combine
+- Use when building equivalences from arrays or iterables
+- Prefer this over multiple `combine` calls when you have many equivalences
+
+**Details**
+
 - Does not mutate inputs
 - Returns `true` only if all equivalences in the collection return `true`
 - Short-circuits: stops at the first equivalence that returns `false`
-- Empty collection edge case: returns an equivalence that always returns `true`
-- The result is also an equivalence (satisfies reflexive, symmetric, transitive properties)
+- Empty collections return an equivalence that always returns `true`
+- The result is also an equivalence that satisfies reflexive, symmetric, and transitive properties
 
 **Example** (Combining multiple field equivalences)
 
@@ -62,7 +64,10 @@ const alwaysEq = Equivalence.combineAll([])
 console.log(alwaysEq("anything", "else")) // true
 ```
 
-See also: `combine`, `mapInput`
+**See**
+
+- `combine`
+- `mapInput`
 
 **Signature**
 
@@ -70,6 +75,6 @@ See also: `combine`, `mapInput`
 declare const combineAll: <A>(collection: Iterable<Equivalence<A>>) => Equivalence<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Equivalence.ts#L433)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Equivalence.ts#L450)
 
 Since v2.0.0

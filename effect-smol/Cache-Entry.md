@@ -6,7 +6,7 @@ Module: `Cache`<br />
 Represents a low-level cache entry containing a deferred lookup result and
 an optional expiration timestamp.
 
-**Notes**
+**Details**
 
 An `expiresAt` value of `undefined` means the entry does not expire. Most
 users should interact with entries through the `Cache` combinators rather

@@ -12,6 +12,6 @@ primary key, or `null` when the envelope is not a keyed request.
 declare const primaryKey: <R extends Rpc.Any>(envelope: Envelope<R>) => string | null
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Envelope.ts#L408)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Envelope.ts#L424)
 
 Since v4.0.0

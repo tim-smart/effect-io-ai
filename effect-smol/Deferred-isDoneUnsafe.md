@@ -12,6 +12,6 @@ an error, `false` otherwise.
 declare const isDoneUnsafe: <A, E>(self: Deferred<A, E>) => boolean
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Deferred.ts#L638)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Deferred.ts#L661)
 
 Since v4.0.0

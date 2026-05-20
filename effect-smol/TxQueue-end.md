@@ -5,10 +5,9 @@ Module: `TxQueue`<br />
 
 Ends a queue by signaling completion with a `Cause.Done` error.
 
-This is a convenience wrapper around `failCause` for queues whose error
-channel can contain `Cause.Done`. If buffered items remain, the queue enters
-the closing state and those items may still be consumed before later `take` or
-`peek` operations fail with `Cause.Done`.
+**Details**
+
+This is a convenience wrapper around `failCause` for queues whose error channel can contain `Cause.Done`. If buffered items remain, the queue enters the closing state and those items may still be consumed before later `take` or `peek` operations fail with `Cause.Done`.
 
 **Example** (Ending queues)
 
@@ -37,6 +36,6 @@ const program = Effect.gen(function*() {
 declare const end: <A, E>(self: TxEnqueue<A, E | Cause.Done>) => Effect.Effect<boolean>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxQueue.ts#L1275)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxQueue.ts#L1263)
 
 Since v4.0.0

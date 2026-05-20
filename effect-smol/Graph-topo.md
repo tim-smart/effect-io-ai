@@ -5,6 +5,8 @@ Module: `Graph`<br />
 
 Creates a new topological sort iterator with optional configuration.
 
+**Details**
+
 The iterator uses Kahn's algorithm to lazily produce nodes in topological order.
 Throws an error if the graph contains cycles.
 
@@ -49,6 +51,6 @@ if (!Graph.isAcyclic(cyclicGraph)) {
 declare const topo: { (config?: TopoConfig): <N, E, T extends Kind = "directed">(graph: Graph<N, E, T> | MutableGraph<N, E, T>) => NodeWalker<N>; <N, E, T extends Kind = "directed">(graph: Graph<N, E, T> | MutableGraph<N, E, T>, config?: TopoConfig): NodeWalker<N>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Graph.ts#L4062)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Graph.ts#L4082)
 
 Since v3.18.0

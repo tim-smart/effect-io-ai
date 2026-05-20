@@ -5,12 +5,9 @@ Module: `TxPubSub`<br />
 
 Publishes a message to all current subscribers.
 
-Returns `true` if the message was delivered to all subscribers, or `false` if
-the hub is shut down or the message was dropped for any subscriber (dropping strategy).
+**Details**
 
-For bounded strategy, retries the transaction if any subscriber queue is full.
-For sliding strategy, drops oldest messages in full subscriber queues.
-For dropping strategy, drops the message for full subscriber queues and returns `false`.
+Returns `true` if the message was delivered to all subscribers, or `false` if the hub is shut down or the message was dropped for any subscriber. For the bounded strategy, the transaction retries if any subscriber queue is full. For the sliding strategy, full subscriber queues drop their oldest messages. For the dropping strategy, full subscriber queues drop the new message and the operation returns `false`.
 
 **Example** (Publishing a message to subscribers)
 
@@ -41,6 +38,6 @@ const program = Effect.gen(function*() {
 declare const publish: { <A>(value: A): (self: TxPubSub<A>) => Effect.Effect<boolean>; <A>(self: TxPubSub<A>, value: A): Effect.Effect<boolean>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxPubSub.ts#L402)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxPubSub.ts#L399)
 
 Since v2.0.0

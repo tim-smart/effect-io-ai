@@ -6,6 +6,8 @@ Module: `Telemetry`<br />
 The `gen_ai.operation.name` attribute has the following list of well-known
 values.
 
+**Details**
+
 If one of them applies, then the respective value **MUST** be used;
 otherwise, a custom value **MAY** be used.
 
@@ -15,6 +17,6 @@ otherwise, a custom value **MAY** be used.
 type WellKnownOperationName = "chat" | "embeddings" | "text_completion"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Telemetry.ts#L210)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Telemetry.ts#L211)
 
 Since v4.0.0

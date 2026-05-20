@@ -5,6 +5,8 @@ Module: `SchemaAST`<br />
 
 Returns a single annotation value by key from the AST node.
 
+**Details**
+
 Like `resolve`, reads from the last check's annotations when checks
 are present. Returns `undefined` if the key is not found.
 
@@ -18,6 +20,6 @@ are present. Returns `undefined` if the key is not found.
 declare const resolveAt: <A>(key: string) => (ast: AST) => A | undefined
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L3389)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L3446)
 
 Since v4.0.0

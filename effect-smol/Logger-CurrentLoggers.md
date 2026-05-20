@@ -6,6 +6,7 @@ Module: `Logger`<br />
 Context reference containing the active loggers for the current fiber.
 
 **Details**
+
 By default this set includes the default logger and the tracer logger.
 Providing `Logger.layer` replaces or merges with this set depending on its
 options.
@@ -37,6 +38,6 @@ const program = Effect.gen(function*() {
 declare const CurrentLoggers: Context.Reference<ReadonlySet<Logger<unknown, any>>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Logger.ts#L237)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Logger.ts#L240)
 
 Since v4.0.0

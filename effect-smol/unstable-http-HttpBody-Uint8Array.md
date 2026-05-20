@@ -5,6 +5,8 @@ Module: `HttpBody`<br />
 
 HTTP body variant backed by a `Uint8Array`.
 
+**Details**
+
 It stores the bytes, content type, and byte length.
 
 **Signature**
@@ -17,6 +19,6 @@ declare class Uint8Array { constructor(
   ) }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpBody.ts#L217)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpBody.ts#L225)
 
 Since v4.0.0

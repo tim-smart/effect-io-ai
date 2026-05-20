@@ -11,6 +11,6 @@ Layer that provides a `Generator` which produces strong ETags from file size and
 declare const layer: Layer.Layer<Generator, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Etag.ts#L104)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Etag.ts#L108)
 
 Since v4.0.0

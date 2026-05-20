@@ -5,14 +5,16 @@ Module: `Equivalence`<br />
 
 Creates a `Reducer` for combining `Equivalence` instances, useful for aggregating equivalences in collections.
 
-When to use this:
-- When you need to combine multiple equivalences from a collection using reducer patterns
-- When implementing fold operations over collections of equivalences
-- When working with reducers that operate on equivalences
+**When to use**
 
-Behavior:
+- Use when you need to combine multiple equivalences from a collection using reducer patterns
+- Use when implementing fold operations over collections of equivalences
+- Use when working with reducers that operate on equivalences
+
+**Details**
+
 - Returns a reducer that combines equivalences using `combine`
-- Uses an equivalence that always returns `true` as the identity element (for empty collections)
+- Uses an equivalence that always returns `true` as the identity element for empty collections
 - Uses `combineAll` for combining collections of equivalences
 - The reducer can be used with fold operations on collections
 
@@ -33,10 +35,11 @@ console.log(combined(1, 1)) // true (strict equal)
 console.log(combined(1, 1.5)) // false (strict equal fails)
 ```
 
-See also:
-- `combine` - Combine two equivalences
-- `combineAll` - Combine multiple equivalences
-- `Reducer` - Reducer type for collection operations
+**See**
+
+- `combine` Combine two equivalences
+- `combineAll` Combine multiple equivalences
+- `Reducer` Reducer type for collection operations
 
 **Signature**
 
@@ -44,6 +47,6 @@ See also:
 declare const makeReducer: <A>() => Reducer.Reducer<Equivalence<A>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Equivalence.ts#L847)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Equivalence.ts#L875)
 
 Since v4.0.0

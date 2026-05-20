@@ -6,6 +6,8 @@ Module: `SchemaAST`<br />
 Non-empty array of validation `Check` values attached to an AST node
 via `Base.checks`.
 
+**Details**
+
 Checks are run after basic type matching succeeds. They represent
 refinements like `minLength`, `pattern`, `int`, etc.
 
@@ -21,6 +23,6 @@ refinements like `minLength`, `pattern`, `int`, etc.
 type Checks = readonly [Check<any>, ...Array<Check<any>>]
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L515)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L525)
 
 Since v4.0.0

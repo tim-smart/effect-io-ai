@@ -3,9 +3,7 @@ Module: `Response`<br />
 
 ## Response.ReasoningEndPart
 
-Response part indicating the end of streaming reasoning content.
-
-Marks the completion of a chunk of reasoning content.
+Response part indicating the completion of a streaming reasoning chunk.
 
 **Signature**
 
@@ -18,6 +16,6 @@ export interface ReasoningEndPart extends BasePart<"reasoning-end", ReasoningEnd
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Response.ts#L1036)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Response.ts#L1031)
 
 Since v4.0.0

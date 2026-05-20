@@ -5,6 +5,8 @@ Module: `MessageStorage`<br />
 
 Variant indicating that the request duplicates an existing stored request.
 
+**Details**
+
 It carries the original request ID and the latest decoded reply, when one is
 available.
 
@@ -18,6 +20,6 @@ export interface Duplicate<R extends Rpc.Any> {
   }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MessageStorage.ts#L247)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MessageStorage.ts#L260)
 
 Since v4.0.0

@@ -6,6 +6,8 @@ Module: `Logger`<br />
 Returns a new `Logger` that writes all output of the specified `Logger` to
 the console using `console.error`.
 
+**When to use**
+
 This is particularly useful for error logging where you want to ensure
 log messages appear in the error stream (stderr) rather than standard output.
 
@@ -33,6 +35,6 @@ const program = Effect.logError("Database connection failed").pipe(
 declare const withConsoleError: <Message, Output>(self: Logger<Message, Output>) => Logger<Message, void>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Logger.ts#L357)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Logger.ts#L366)
 
 Since v2.0.0

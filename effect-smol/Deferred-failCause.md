@@ -5,6 +5,8 @@ Module: `Deferred`<br />
 
 Attempts to complete the `Deferred` with the specified `Cause`.
 
+**Details**
+
 Fibers waiting on the `Deferred` observe that cause only if this call
 completes it. The returned effect succeeds with `true` when this call
 completed the `Deferred`, or `false` if it was already completed.
@@ -30,6 +32,6 @@ const program = Effect.gen(function*() {
 declare const failCause: { <E>(cause: Cause.Cause<E>): <A>(self: Deferred<A, E>) => Effect<boolean>; <A, E>(self: Deferred<A, E>, cause: Cause.Cause<E>): Effect<boolean>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Deferred.ts#L440)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Deferred.ts#L453)
 
 Since v2.0.0

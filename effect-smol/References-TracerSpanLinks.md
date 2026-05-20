@@ -66,6 +66,6 @@ const spanLinksExample = Effect.gen(function*() {
 declare const TracerSpanLinks: Context.Reference<ReadonlyArray<SpanLink>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/References.ts#L492)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/References.ts#L506)
 
 Since v4.0.0

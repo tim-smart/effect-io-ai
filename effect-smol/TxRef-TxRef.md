@@ -5,6 +5,8 @@ Module: `TxRef`<br />
 
 TxRef is a transactional value, it can be read and modified within the body of a transaction.
 
+**Details**
+
 Accessed values are tracked by the transaction in order to detect conflicts and in order to
 track changes, a transaction will retry whenever a conflict is detected or whenever the
 transaction explicitely calls to `Effect.txRetry` and any of the accessed TxRef values
@@ -42,6 +44,6 @@ export interface TxRef<in out A> extends Pipeable {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxRef.ts#L50)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxRef.ts#L52)
 
 Since v4.0.0

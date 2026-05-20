@@ -5,6 +5,8 @@ Module: `Headers`<br />
 
 Returns a new `Headers` collection with all provided headers set.
 
+**Details**
+
 Input headers are normalized with `fromInput` and override existing headers with the same lowercase name.
 
 **Signature**
@@ -13,6 +15,6 @@ Input headers are normalized with `fromInput` and override existing headers with
 declare const setAll: { (headers: Input): (self: Headers) => Headers; (self: Headers, headers: Input): Headers; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Headers.ts#L278)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Headers.ts#L296)
 
 Since v4.0.0

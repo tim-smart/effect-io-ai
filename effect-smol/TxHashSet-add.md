@@ -5,8 +5,9 @@ Module: `TxHashSet`<br />
 
 Adds a value to the TxHashSet. If the value already exists, the operation has no effect.
 
-**Mutation behavior**: This function mutates the original TxHashSet by adding
-the specified value. It does not return a new TxHashSet reference.
+**Details**
+
+This function mutates the original TxHashSet by adding the specified value. It does not return a new TxHashSet reference.
 
 **Example** (Adding values)
 
@@ -32,6 +33,6 @@ const program = Effect.gen(function*() {
 declare const add: { <V>(value: V): (self: TxHashSet<V>) => Effect.Effect<void>; <V>(self: TxHashSet<V>, value: V): Effect.Effect<void>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashSet.ts#L347)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashSet.ts#L338)
 
 Since v2.0.0

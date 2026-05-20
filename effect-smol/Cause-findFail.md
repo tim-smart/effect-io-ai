@@ -8,6 +8,8 @@ the cause, including its annotations. If the cause has no `Fail` reason, the
 failure value is the original cause narrowed to `Cause<never>`, because it
 contains no typed error reasons.
 
+**When to use**
+
 Use `findError` if you only need the unwrapped error value `E`.
 
 **Example** (extracting the first Fail reason)
@@ -32,6 +34,6 @@ if (!Result.isFailure(result)) {
 declare const findFail: <E>(self: Cause<E>) => Result.Result<Fail<E>, Cause<never>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L769)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L809)
 
 Since v4.0.0

@@ -5,6 +5,8 @@ Module: `Match`<br />
 
 Union type for matchers created by `Match.type` and `Match.value`.
 
+**Details**
+
 A `Matcher` carries the input type, accumulated filters, remaining cases,
 result type, and, for value matchers, the provided value being matched.
 
@@ -38,6 +40,6 @@ type Matcher<Input, Filters, RemainingApplied, Result, Provided, Return> = | Typ
   | ValueMatcher<Input, Filters, RemainingApplied, Result, Provided, Return>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L71)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L73)
 
 Since v4.0.0

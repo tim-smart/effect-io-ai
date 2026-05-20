@@ -14,6 +14,6 @@ export interface DateTimeUtcFromString extends decodeTo<DateTimeUtc, String> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L10595)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L10932)
 
 Since v4.0.0

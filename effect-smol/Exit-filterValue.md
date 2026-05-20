@@ -5,7 +5,12 @@ Module: `Exit`<br />
 
 Extracts the success value from an Exit for use in filter pipelines.
 
+**When to use**
+
 - Use with Filter-based composition when you want the raw value, not the Success wrapper
+
+**Details**
+
 - Returns the value `A` if the Exit succeeded, or a `Filter.fail` wrapping the Failure otherwise
 
 **Example** (Filtering for the value)
@@ -30,6 +35,6 @@ const result = Exit.filterValue(exit)
 declare const filterValue: <A, E>(self: Exit<A, E>) => Result.Result<A, Failure<never, E>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Exit.ts#L552)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Exit.ts#L625)
 
 Since v4.0.0

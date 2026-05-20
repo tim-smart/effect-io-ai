@@ -9,7 +9,7 @@ Represents the absence of a value within an `Option`.
 
 - Use as a type guard target when narrowing via `isNone`
 
-**Behavior**
+**Details**
 
 - `_tag` is always `"None"`
 - Implements `Pipeable`, `Inspectable`, and structural equality

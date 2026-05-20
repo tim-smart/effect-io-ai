@@ -5,10 +5,12 @@ Module: `Predicate`<br />
 
 Checks whether a value is `null`.
 
-When to use:
+**When to use**
+
 - You need a guard for nullable values.
 
-Behavior:
+**Details**
+
 - Pure; does not mutate input.
 - Uses `input === null`.
 
@@ -22,7 +24,10 @@ const data: unknown = null
 console.log(Predicate.isNull(data))
 ```
 
-See also: `isNotNull`, `isNullish`
+**See**
+
+- `isNotNull`
+- `isNullish`
 
 **Signature**
 
@@ -30,6 +35,6 @@ See also: `isNotNull`, `isNullish`
 declare const isNull: (input: unknown) => input is null
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L819)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L870)
 
 Since v2.0.0

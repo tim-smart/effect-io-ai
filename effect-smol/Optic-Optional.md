@@ -5,13 +5,15 @@ Module: `Optic`<br />
 
 The most general optic — both reading and writing can fail.
 
-When to use:
+**When to use**
+
 - The focus may not exist in `S` **and** writing a new `A` back may also
   fail (e.g. the source no longer matches the expected shape).
 - As the base type: every optic (`Iso`, `Lens`, `Prism`,
   `Traversal`) extends `Optional`.
 
-Behavior:
+**Details**
+
 - `getResult(s)` returns `Result.Success<A>` or `Result.Failure<string>`.
 - `replaceResult(a, s)` returns `Result.Success<S>` or
   `Result.Failure<string>`.
@@ -50,9 +52,8 @@ console.log(_home.replace("/new", { PATH: "/bin" }))
 export interface Optional<in out S, in out A> {
   readonly node: Node
   /**
-   * Attempts to read the focus `A` from the whole `S`.
-   *
-   * Returns `Result.Success<A>` when the focus exists, or
+   * Attempts to read the focus `A` from the whole `S`. Returns
+   * `Result.Success<A>` when the focus exists, or
    * `Result.Failure<string>` with a descriptive error otherwise.
    */
   readonly getResult: (s: S) => Result.Result<A, string>
@@ -110,6 +111,8 @@ export interface Optional<in out S, in out A> {
   /**
    * Focuses on a property of the current struct/tuple focus.
    *
+   * **Details**
+   *
    * - On a {@link Lens}, returns a Lens.
    * - On an {@link Optional}, returns an Optional.
    * - Does **not** work on union types (compile error).
@@ -140,6 +143,8 @@ export interface Optional<in out S, in out A> {
   /**
    * Focuses on a key where setting `undefined` **removes** the key from the
    * struct (or splices the element from an array/tuple).
+   *
+   * **Details**
    *
    * - The focus type becomes `A[Key] | undefined`.
    * - Does **not** work on union types (compile error).
@@ -174,6 +179,8 @@ export interface Optional<in out S, in out A> {
    * Adds one or more `Schema` validation checks to the optic chain.
    * `getResult` fails when any check fails; `set` passes through unchanged.
    *
+   * **Details**
+   *
    * - On a {@link Prism}, returns a Prism.
    * - On an {@link Optional}, returns an Optional.
    *
@@ -198,6 +205,8 @@ export interface Optional<in out S, in out A> {
 
   /**
    * Narrows the focus to a subtype `B` using a type guard.
+   *
+   * **Details**
    *
    * - On a {@link Prism}, returns a Prism.
    * - On an {@link Optional}, returns an Optional.
@@ -237,6 +246,8 @@ export interface Optional<in out S, in out A> {
    * Narrows the focus to the variant of a tagged union with the given
    * `_tag` value.
    *
+   * **Details**
+   *
    * - On a {@link Prism}, returns a Prism.
    * - On an {@link Optional}, returns an Optional.
    * - Shorthand for `.refine(s => s._tag === tag)`.
@@ -274,6 +285,8 @@ export interface Optional<in out S, in out A> {
    * Focuses on a key only if it exists (`Object.hasOwn`). Both
    * `getResult` and `replaceResult` fail when the key is absent.
    *
+   * **Details**
+   *
    * Unlike `.key()`, which always succeeds on the read side, `.at()` is
    * useful for Records or arrays where the key/index may not be present.
    *
@@ -305,6 +318,8 @@ export interface Optional<in out S, in out A> {
 
   /**
    * Focuses on a subset of keys of the current struct focus.
+   *
+   * **Details**
    *
    * - On a {@link Lens}, returns a Lens.
    * - On an {@link Optional}, returns an Optional.
@@ -338,6 +353,8 @@ export interface Optional<in out S, in out A> {
 
   /**
    * Focuses on all keys **except** the specified ones.
+   *
+   * **Details**
    *
    * - On a {@link Lens}, returns a Lens.
    * - On an {@link Optional}, returns an Optional.
@@ -373,7 +390,6 @@ export interface Optional<in out S, in out A> {
 
   /**
    * Filters out `undefined` from the focus, producing a {@link Prism}.
-   *
    * `getResult` fails when the focus is `undefined`.
    *
    * **Example** (filtering undefined)
@@ -398,12 +414,12 @@ export interface Optional<in out S, in out A> {
   /**
    * Focuses **all elements** of an array-like focus and optionally narrows
    * to a subset using an element-level optic.
-   *
    * Available only on {@link Traversal} (i.e. when `A` is
    * `ReadonlyArray<Element>`). Returns a new Traversal focused on the
    * selected elements.
    *
-   * Behavior:
+   * **Details**
+   *
    * - **getResult** collects the values focused by `f(id<A>())` for each
    *   element. Non-focusable elements are skipped.
    * - **replaceResult** expects exactly as many values as were collected by
@@ -441,6 +457,8 @@ export interface Optional<in out S, in out A> {
   /**
    * Applies a function to **every** element focused by the traversal.
    *
+   * **Details**
+   *
    * Available only on {@link Traversal}. Returns a function `(s: S) => S`.
    * If the traversal cannot focus, the original `s` is returned unchanged.
    *
@@ -471,6 +489,6 @@ export interface Optional<in out S, in out A> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Optic.ts#L573)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Optic.ts#L589)
 
 Since v4.0.0

@@ -3,16 +3,15 @@ Module: `Formatter`<br />
 
 ## Formatter.Formatter
 
-A callable interface representing a function that converts a `Value` into a
-`Format` (defaults to `string`).
+A callable interface representing a function that converts a `Value` into a `Format`, which defaults to `string`.
 
-When to use:
-- You want to type a formatting / rendering function generically.
-- You are building a pipeline that accepts pluggable formatters.
+**When to use**
 
-Behavior:
-- Pure callable type; carries no runtime implementation.
-- Contravariant in `Value`, covariant in `Format`.
+Use `Formatter` when you want to type a formatting or rendering function generically, or when you are building a pipeline that accepts pluggable formatters.
+
+**Details**
+
+This is a pure callable type and carries no runtime implementation. It is contravariant in `Value` and covariant in `Format`.
 
 **Example** (Define a custom formatter)
 
@@ -25,7 +24,10 @@ console.log(upper("hello"))
 // HELLO
 ```
 
-See also: `format`, `formatJson`
+**See**
+
+- `format`
+- `formatJson`
 
 **Signature**
 
@@ -35,6 +37,6 @@ export interface Formatter<in Value, out Format = string> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Formatter.ts#L86)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Formatter.ts#L85)
 
 Since v4.0.0

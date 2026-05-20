@@ -5,6 +5,8 @@ Module: `AiError`<br />
 
 Error indicating the tool result cannot be encoded for sending back to the model.
 
+**Details**
+
 This error is not retryable because encoding failures indicate a bug in the
 tool schema definitions.
 
@@ -30,6 +32,6 @@ console.log(error.message)
 declare class ToolResultEncodingError
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AiError.ts#L1150)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AiError.ts#L1189)
 
 Since v4.0.0

@@ -5,6 +5,8 @@ Module: `Metric`<br />
 
 Returns a new metric that applies the specified attributes to all operations.
 
+**Details**
+
 Attributes are key-value pairs that provide additional context for metrics,
 enabling filtering, grouping, and more detailed analysis. Each combination
 of attribute values creates a separate metric series.
@@ -61,6 +63,6 @@ const viewMetrics = Effect.gen(function*() {
 declare const withAttributes: { (attributes: Metric.Attributes): <Input, State>(self: Metric<Input, State>) => Metric<Input, State>; <Input, State>(self: Metric<Input, State>, attributes: Metric.Attributes): Metric<Input, State>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Metric.ts#L2995)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Metric.ts#L3034)
 
 Since v4.0.0

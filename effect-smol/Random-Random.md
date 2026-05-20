@@ -5,6 +5,8 @@ Module: `Random`<br />
 
 Represents a service for generating pseudo-random numbers.
 
+**Gotchas**
+
 The default implementation is based on `Math.random` and is not
 cryptographically secure. Replace the service with a cryptographically secure
 implementation before using these generators for security-sensitive values.
@@ -31,6 +33,6 @@ const program = Effect.gen(function*() {
 declare const Random: Context.Reference<{ nextIntUnsafe(): number; nextDoubleUnsafe(): number; }>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Random.ts#L65)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Random.ts#L67)
 
 Since v2.0.0

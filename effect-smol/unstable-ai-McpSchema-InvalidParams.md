@@ -3,9 +3,8 @@ Module: `McpSchema`<br />
 
 ## McpSchema.InvalidParams
 
-MCP/JSON-RPC error for invalid method parameters.
-
-This error uses the standard invalid params code `-32602`.
+MCP/JSON-RPC error for invalid method parameters. This error uses the
+standard invalid params code `-32602`.
 
 **Signature**
 
@@ -13,6 +12,6 @@ This error uses the standard invalid params code `-32602`.
 declare class InvalidParams
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L527)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L546)
 
 Since v4.0.0

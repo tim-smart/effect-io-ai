@@ -5,10 +5,12 @@ Module: `Predicate`<br />
 
 Creates a predicate that returns `true` unless both predicates are `true`.
 
-When to use:
+**When to use**
+
 - You want the logical NAND of two conditions.
 
-Behavior:
+**Details**
+
 - Pure; does not mutate input.
 - Returns the negation of `and`.
 
@@ -22,7 +24,10 @@ const notBoth = Predicate.nand(Predicate.isString, Predicate.isNumber)
 console.log(notBoth("a"))
 ```
 
-See also: `and`, `not`
+**See**
+
+- `and`
+- `not`
 
 **Signature**
 
@@ -30,6 +35,6 @@ See also: `and`, `not`
 declare const nand: { <A>(that: Predicate<A>): (self: Predicate<A>) => Predicate<A>; <A>(self: Predicate<A>, that: Predicate<A>): Predicate<A>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L1749)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L1851)
 
 Since v2.0.0

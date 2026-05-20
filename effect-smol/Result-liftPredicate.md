@@ -5,6 +5,8 @@ Module: `Result`<br />
 
 Lifts a value into a `Result` based on a predicate or refinement.
 
+**Details**
+
 - If the predicate returns `true`, the value becomes `Success<A>`
 - If the predicate returns `false`, `orFailWith` produces the error for `Failure<E>`
 - Also accepts a `Refinement` to narrow the success type
@@ -37,6 +39,6 @@ console.log(ensurePositive)
 declare const liftPredicate: { <A, B extends A, E>(refinement: Refinement<A, B>, orFailWith: (a: A) => E): (a: A) => Result<B, E>; <B extends A, E, A = B>(predicate: Predicate<A>, orFailWith: (a: A) => E): (a: B) => Result<B, E>; <A, E, B extends A>(self: A, refinement: Refinement<A, B>, orFailWith: (a: A) => E): Result<B, E>; <B extends A, E, A = B>(self: B, predicate: Predicate<A>, orFailWith: (a: A) => E): Result<B, E>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L885)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L933)
 
 Since v3.4.0

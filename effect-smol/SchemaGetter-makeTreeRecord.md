@@ -5,15 +5,16 @@ Module: `SchemaGetter`<br />
 
 Builds a nested tree object from a list of bracket-path entries.
 
-A bracket path is a string like `"user[address][city]"` that describes nested
-object/array structure. This function interprets those paths and constructs the
-corresponding nested object.
+**When to use**
 
-Use this when:
 - Parsing FormData or URLSearchParams entries into structured objects.
 - You have flat key-value pairs with bracket-path keys that need nesting.
 
-Behavior:
+**Details**
+
+- A bracket path is a string like `"user[address][city]"` that describes nested
+  object/array structure.
+- Interprets bracket paths and constructs the corresponding nested object.
 - Mutates and returns a new object (does not mutate the input array).
 - Supported syntax:
   - `"foo"` → object key `"foo"`
@@ -36,10 +37,11 @@ const tree = SchemaGetter.makeTreeRecord([
 // { user: { name: "Alice", tags: ["admin", "editor"] } }
 ```
 
-See also:
-- `collectBracketPathEntries` — inverse operation (tree to flat entries)
-- `decodeFormData` — uses this internally
-- `decodeURLSearchParams` — uses this internally
+**See**
+
+- `collectBracketPathEntries` - inverse operation (tree to flat entries)
+- `decodeFormData` - uses this internally
+- `decodeURLSearchParams` - uses this internally
 
 **Signature**
 
@@ -47,6 +49,6 @@ See also:
 declare const makeTreeRecord: <A>(bracketPathEntries: ReadonlyArray<readonly [bracketPath: string, value: A]>) => Schema.TreeRecord<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L1771)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L1805)
 
 Since v4.0.0

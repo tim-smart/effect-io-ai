@@ -125,7 +125,7 @@
     "since": "4.0.0",
     "category": "constructors",
     "signature": "declare const make: Effect.Effect<Logger.Logger<unknown, void>, never, OtelLoggerProvider>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Logger.ts#L89"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Logger.ts#L92"
   },
   {
     "_tag": "Function",
@@ -135,13 +135,13 @@
     },
     "project": "@effect/opentelemetry",
     "name": "logLevelToSeverityNumber",
-    "description": "Maps an Effect `LogLevel` to the corresponding OpenTelemetry\n`SeverityNumber` (per the OTel logs data model, severity range 1-24).\n\nEffect's `LogLevel.getOrdinal` returns Effect's internal sort ordinal\n(e.g. Info=20000), which falls outside the OTel spec — backends that\nvalidate the field map such values to `UNSPECIFIED`.",
+    "description": "Maps an Effect `LogLevel` to the corresponding OpenTelemetry `SeverityNumber`.\n\n**Details**\n\nOpenTelemetry log severity numbers are in the range `1` through `24`. This\nfunction maps from Effect's log levels instead of using\n`LogLevel.getOrdinal`, whose internal sort ordinals, such as the `Info`\nordinal `20000`, fall outside the OpenTelemetry logs data model and can be\ntreated as `UNSPECIFIED` by validating backends.",
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
     "category": "converting",
     "signature": "declare const logLevelToSeverityNumber: (level: LogLevel.LogLevel) => SeverityNumber",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Logger.ts#L64"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Logger.ts#L67"
   },
   {
     "_tag": "Function",
@@ -157,7 +157,7 @@
     "since": "4.0.0",
     "category": "layers",
     "signature": "declare const layer: (options: { readonly mergeWithExisting?: boolean | undefined; }) => Layer.Layer<never, never, OtelLoggerProvider>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Logger.ts#L137"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Logger.ts#L140"
   },
   {
     "_tag": "Function",
@@ -173,7 +173,7 @@
     "since": "4.0.0",
     "category": "layers",
     "signature": "declare const layerLoggerProvider: (processor: Otel.LogRecordProcessor | NonEmptyReadonlyArray<Otel.LogRecordProcessor>, config?: Omit<Otel.LoggerProviderConfig, \"resource\"> & { readonly shutdownTimeout?: Duration.Input | undefined; }) => Layer.Layer<OtelLoggerProvider, never, Resource>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Logger.ts#L159"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Logger.ts#L166"
   },
   {
     "_tag": "Function",
@@ -189,7 +189,7 @@
     "since": "4.0.0",
     "category": "constructors",
     "signature": "declare const makeProducer: (temporality?: TemporalityPreference) => Effect.Effect<MetricProducer, never, Resource>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Metrics.ts#L51"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Metrics.ts#L52"
   },
   {
     "_tag": "Function",
@@ -205,7 +205,7 @@
     "since": "4.0.0",
     "category": "constructors",
     "signature": "declare const registerProducer: (self: MetricProducer, metricReader: LazyArg<MetricReader | Arr.NonEmptyReadonlyArray<MetricReader>>, options?: { readonly shutdownTimeout?: Duration.Input | undefined; }) => Effect.Effect<Array<any>, never, Scope.Scope>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Metrics.ts#L64"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Metrics.ts#L65"
   },
   {
     "_tag": "Function",
@@ -221,7 +221,7 @@
     "since": "4.0.0",
     "category": "layers",
     "signature": "declare const layer: (evaluate: LazyArg<MetricReader | Arr.NonEmptyReadonlyArray<MetricReader>>, options?: { readonly shutdownTimeout?: Duration.Input | undefined; readonly temporality?: TemporalityPreference | undefined; }) => Layer.Layer<never, never, Resource>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Metrics.ts#L121"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Metrics.ts#L122"
   },
   {
     "_tag": "TypeAlias",
@@ -231,13 +231,13 @@
     },
     "project": "@effect/opentelemetry",
     "name": "TemporalityPreference",
-    "description": "Determines how metric values relate to the time interval over which they\nare aggregated.\n\n- `cumulative`: Reports total since a fixed start time. Each data point\n  depends on all previous measurements. This is the default behavior.\n\n- `delta`: Reports changes since the last export. Each interval is\n  independent with no dependency on previous measurements.",
+    "description": "Determines how metric values relate to the time interval over which they\nare aggregated.\n\n**Details**\n\n`cumulative` reports total since a fixed start time. Each data point depends\non all previous measurements. This is the default behavior. `delta` reports\nchanges since the last export. Each interval is independent with no\ndependency on previous measurements.",
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
     "category": "models",
     "signature": "type TemporalityPreference = \"cumulative\" | \"delta\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Metrics.ts#L43"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Metrics.ts#L44"
   },
   {
     "_tag": "Constant",
@@ -567,13 +567,13 @@
     },
     "project": "@effect/opentelemetry",
     "name": "currentOtelSpan",
-    "description": "Get the current OpenTelemetry span.\n\nWorks with both the official OpenTelemetry API (via `Tracer.layer`,\n`NodeSdk.layer`, etc.) and the lightweight OTLP module (`OtlpTracer.layer`).\n\nWhen using OTLP, the returned span is a wrapper that conforms to the\nOpenTelemetry `Span` interface.",
+    "description": "Gets the current OpenTelemetry span.\n\n**Details**\n\nThis accessor works with both the official OpenTelemetry API, such as\n`Tracer.layer` and `NodeSdk.layer`, and the lightweight OTLP module, such as\n`OtlpTracer.layer`. When using OTLP, the returned span is a wrapper that\nconforms to the OpenTelemetry `Span` interface.",
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
     "category": "accessors",
     "signature": "declare const currentOtelSpan: Effect.Effect<Otel.Span, Cause.NoSuchElementError, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Tracer.ts#L251"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Tracer.ts#L252"
   },
   {
     "_tag": "Constant",
@@ -583,13 +583,13 @@
     },
     "project": "@effect/opentelemetry",
     "name": "withSpanContext",
-    "description": "Set the effect's parent span from the given opentelemetry `SpanContext`.\n\nThis is handy when you set up OpenTelemetry outside of Effect and want to\nattach to a parent span.",
+    "description": "Sets an effect's parent span from the given OpenTelemetry `SpanContext`.\n\n**When to use**\n\nUse this when OpenTelemetry instrumentation outside Effect has already\nproduced a parent span context and an effect should continue that trace.",
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
-    "category": "Propagation",
+    "category": "propagation",
     "signature": "declare const withSpanContext: { (spanContext: Otel.SpanContext): <A, E, R>(self: Effect.Effect<A, E, R>) => Effect.Effect<A, E, Exclude<R, Tracer.ParentSpan>>; <A, E, R>(self: Effect.Effect<A, E, R>, spanContext: Otel.SpanContext): Effect.Effect<A, E, Exclude<R, Tracer.ParentSpan>>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Tracer.ts#L354"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Tracer.ts#L357"
   },
   {
     "_tag": "Function",

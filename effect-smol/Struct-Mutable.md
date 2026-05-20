@@ -5,9 +5,14 @@ Module: `Struct`<br />
 
 Removes `readonly` modifiers from all properties of an object type.
 
-- Use when you need a mutable version of a readonly interface.
-- Purely cosmetic at the type level — no runtime effect.
-- Also flattens intersections like `Simplify`.
+**When to use**
+
+Use when you need a mutable version of a readonly interface.
+
+**Details**
+
+This helper is purely cosmetic at the type level and has no runtime effect.
+It also flattens intersections like `Simplify`.
 
 **Example** (Making a readonly type mutable)
 
@@ -29,6 +34,6 @@ type Writable = Struct.Mutable<ReadOnly>
 type { -readonly [K in keyof T]: T[K]; } = { -readonly [K in keyof T]: T[K] } & {}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Struct.ts#L133)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Struct.ts#L140)
 
 Since v4.0.0

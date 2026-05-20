@@ -5,6 +5,8 @@ Module: `Layer`<br />
 
 Lazily constructs a layer using the specified factory.
 
+**Details**
+
 The factory is evaluated only when the suspended layer is first built, and
 the result is memoized with normal layer sharing semantics.
 
@@ -19,8 +21,8 @@ const useProd = true
 
 const layer = Layer.suspend(() =>
   useProd
-    ? Layer.succeed(Config)("https://api.example.com")
-    : Layer.succeed(Config)("http://localhost:3000")
+    ? Layer.succeed(Config, "https://api.example.com")
+    : Layer.succeed(Config, "http://localhost:3000")
 )
 ```
 
@@ -30,6 +32,6 @@ const layer = Layer.suspend(() =>
 declare const suspend: <A, E, R>(evaluate: LazyArg<Layer<A, E, R>>) => Layer<A, E, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L964)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L1044)
 
 Since v2.0.0

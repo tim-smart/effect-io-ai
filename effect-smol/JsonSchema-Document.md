@@ -6,16 +6,19 @@ Module: `JsonSchema`<br />
 A structured container for a single JSON Schema and its associated
 definitions.
 
-- Use when you need to carry a root schema together with its
-  shared definitions.
-- Use when converting between dialects via the `from*` / `to*` functions.
+**When to use**
+
+Use `Document` when you need to carry a root schema together with its shared
+definitions, or when converting between dialects with the `from*` and `to*`
+functions.
+
+**Details**
 
 The `schema` field holds the root schema *without* the definitions
 collection. Root definitions are stored separately in `definitions` and
-referenced via:
-- `#/$defs/<name>` for Draft-2020-12
-- `#/definitions/<name>` for Draft-07
-- `#/components/schemas/<name>` for OpenAPI 3.1 and OpenAPI 3.0
+referenced via `#/$defs/<name>` for Draft-2020-12, `#/definitions/<name>`
+for Draft-07, and `#/components/schemas/<name>` for OpenAPI 3.1 and
+OpenAPI 3.0.
 
 **Example** (Inspecting a parsed document)
 
@@ -49,6 +52,6 @@ export interface Document<D extends Dialect> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/JsonSchema.ts#L173)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/JsonSchema.ts#L177)
 
 Since v4.0.0

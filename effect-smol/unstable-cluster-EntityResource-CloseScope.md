@@ -5,6 +5,8 @@ Module: `EntityResource`<br />
 
 A `Scope` that is only closed when the resource is explicitly closed.
 
+**Gotchas**
+
 It is not closed during restarts, due to shard movement or node shutdowns.
 
 **Signature**
@@ -13,6 +15,6 @@ It is not closed during restarts, due to shard movement or node shutdowns.
 declare class CloseScope
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EntityResource.ts#L77)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EntityResource.ts#L81)
 
 Since v4.0.0

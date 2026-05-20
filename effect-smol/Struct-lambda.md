@@ -6,10 +6,12 @@ Module: `Struct`<br />
 Wraps a plain function as a `Lambda` value so it can be used with
 `map`, `mapPick`, and `mapOmit`.
 
-- The type parameter `L` encodes both the input and output types at the type
-  level, allowing the compiler to track how struct value types change.
-- At runtime, the returned value is the same function — `lambda` only
-  adjusts the type.
+**Details**
+
+The type parameter `L` encodes both the input and output types at the type
+level, allowing the compiler to track how struct value types change. At
+runtime, the returned value is the same function; `lambda` only adjusts the
+type.
 
 **Example** (Wrapping values in arrays)
 
@@ -37,6 +39,6 @@ console.log(result) // { x: [1], y: ["hello"] }
 declare const lambda: <L extends (a: any) => any>(f: (a: Parameters<L>[0]) => ReturnType<L>) => L
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Struct.ts#L659)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Struct.ts#L730)
 
 Since v4.0.0

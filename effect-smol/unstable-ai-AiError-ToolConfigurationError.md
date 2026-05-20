@@ -5,6 +5,8 @@ Module: `AiError`<br />
 
 Error indicating a provider-defined tool was configured with invalid arguments.
 
+**Details**
+
 This error is not retryable because it indicates a programming error in the
 tool configuration that must be fixed in code.
 
@@ -29,6 +31,6 @@ console.log(error.message)
 declare class ToolConfigurationError
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AiError.ts#L1203)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AiError.ts#L1244)
 
 Since v4.0.0

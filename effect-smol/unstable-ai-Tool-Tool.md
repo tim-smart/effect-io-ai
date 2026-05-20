@@ -5,6 +5,8 @@ Module: `Tool`<br />
 
 A user-defined tool that language models can call to perform actions.
 
+**Details**
+
 Tools represent actionable capabilities that large language models can invoke
 to extend their functionality beyond text generation. Each tool has a defined
 schema for parameters, results, and failures.
@@ -66,6 +68,8 @@ export interface Tool<
    * The strategy used for handling errors returned from tool call handler
    * execution.
    *
+   * **Details**
+   *
    * If set to `"error"` (the default), errors that occur during tool call
    * handler execution will be returned in the error channel of the calling
    * effect.
@@ -101,6 +105,8 @@ export interface Tool<
   /**
    * Specifies whether user approval is required before executing this tool.
    *
+   * **Details**
+   *
    * - If `undefined` or `false`, the tool executes immediately.
    * - If `true`, the tool always requires approval.
    * - If a function, it is called with the tool parameters and context to
@@ -112,6 +118,8 @@ export interface Tool<
   /**
    * Adds a _request-level_ dependency which must be provided before the tool
    * call handler can be executed.
+   *
+   * **Details**
    *
    * This can be useful when you want to enforce that a particular dependency
    * **MUST** be provided to each request to the large language model provider
@@ -181,6 +189,6 @@ export interface Tool<
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tool.ts#L199)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tool.ts#L211)
 
 Since v4.0.0

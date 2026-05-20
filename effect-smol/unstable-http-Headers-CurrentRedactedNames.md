@@ -5,6 +5,8 @@ Module: `Headers`<br />
 
 Context reference listing header names or patterns that should be redacted when `Headers` are inspected or rendered.
 
+**Details**
+
 Defaults include `authorization`, `cookie`, `set-cookie`, and `x-api-key`.
 
 **Signature**
@@ -13,6 +15,6 @@ Defaults include `authorization`, `cookie`, `set-cookie`, and `x-api-key`.
 declare const CurrentRedactedNames: Context.Reference<ReadonlyArray<string | RegExp>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Headers.ts#L408)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Headers.ts#L436)
 
 Since v4.0.0

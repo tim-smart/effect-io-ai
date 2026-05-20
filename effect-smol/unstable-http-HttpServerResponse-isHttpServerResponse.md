@@ -11,6 +11,6 @@ Returns `true` when the supplied value is an `HttpServerResponse`.
 declare const isHttpServerResponse: (u: unknown) => u is HttpServerResponse
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpServerResponse.ts#L118)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpServerResponse.ts#L120)
 
 Since v4.0.0

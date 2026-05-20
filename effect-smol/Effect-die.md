@@ -5,7 +5,7 @@ Module: `Effect`<br />
 
 Creates an effect that terminates a fiber with a specified error.
 
-**When to Use**
+**When to use**
 
 Use `die` when encountering unexpected conditions in your code that should
 not be handled as regular errors but instead represent unrecoverable defects.
@@ -18,10 +18,6 @@ does not handle the error and instead terminates the fiber.
 
 The error channel of the resulting effect is of type `never`, indicating that
 it cannot recover from this failure.
-
-**See**
-
-- `die` for a variant that dies with an already computed defect.
 
 **Example** (Failing when division by zero)
 
@@ -43,12 +39,16 @@ Effect.runPromise(program).catch(console.error)
 //   ...stack trace...
 ```
 
+**See**
+
+- `die` for a variant that dies with an already computed defect.
+
 **Signature**
 
 ```ts
 declare const die: (defect: unknown) => Effect<never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L1541)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L1555)
 
 Since v2.0.0

@@ -6,6 +6,7 @@ Module: `AnthropicConfig`<br />
 Configuration provided through `AnthropicConfig`.
 
 **Details**
+
 Use `transformClient` to wrap or replace the `HttpClient` used by generated Anthropic API requests.
 
 **Signature**
@@ -16,6 +17,6 @@ export interface Service {
   }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicConfig.ts#L63)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicConfig.ts#L64)
 
 Since v4.0.0

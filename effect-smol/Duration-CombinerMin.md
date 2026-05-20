@@ -11,6 +11,6 @@ A `Combiner` that returns the minimum `Duration`.
 declare const CombinerMin: Combiner.Combiner<Duration>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Duration.ts#L1697)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Duration.ts#L1727)
 
 Since v4.0.0

@@ -5,6 +5,8 @@ Module: `Schema`<br />
 
 A schema that wraps another schema and intercepts its encoding pipeline.
 
+**Details**
+
 The interceptor receives the full encoding `Effect` and may replace, modify,
 or augment it — including adding service requirements via `RE`.
 
@@ -38,6 +40,6 @@ export interface middlewareEncoding<S extends Top, RE> extends
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L4287)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L4396)
 
 Since v4.0.0

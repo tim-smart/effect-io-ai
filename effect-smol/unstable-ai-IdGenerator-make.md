@@ -5,6 +5,8 @@ Module: `IdGenerator`<br />
 
 Creates a custom ID generator service with the specified options.
 
+**Details**
+
 Validates the configuration to ensure the separator is not part of the
 alphabet, which would cause ambiguity in parsing generated IDs.
 
@@ -59,6 +61,6 @@ const program = Effect.gen(function*() {
 declare const make: (args_0: MakeOptions) => Effect.Effect<{ readonly generateId: () => Effect.Effect<string, never, never>; }, Cause.IllegalArgumentError, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/IdGenerator.ts#L272)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/IdGenerator.ts#L280)
 
 Since v4.0.0

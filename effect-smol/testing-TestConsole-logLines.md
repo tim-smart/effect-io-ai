@@ -34,6 +34,6 @@ const program = Effect.gen(function*() {
 declare const logLines: Effect.Effect<ReadonlyArray<unknown>, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TestConsole.ts#L267)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TestConsole.ts#L269)
 
 Since v4.0.0

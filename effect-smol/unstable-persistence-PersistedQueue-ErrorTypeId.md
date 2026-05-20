@@ -11,6 +11,6 @@ Type-level identifier used to brand `PersistedQueueError` values.
 type ErrorTypeId = "~@effect/experimental/PersistedQueue/PersistedQueueError"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PersistedQueue.ts#L227)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PersistedQueue.ts#L234)
 
 Since v4.0.0

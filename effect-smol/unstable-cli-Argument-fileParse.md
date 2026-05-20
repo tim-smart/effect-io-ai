@@ -5,6 +5,8 @@ Module: `Argument`<br />
 
 Creates a positional argument that reads a file and parses its content.
 
+**Details**
+
 The parser is chosen from the explicit `format` option or, when omitted, the
 file extension. The parsed value is `unknown`; use `fileSchema` when the
 parsed content should also be decoded with a Schema.
@@ -23,6 +25,6 @@ const config = Argument.fileParse("config", { format: "json" })
 declare const fileParse: (name: string, options?: Primitive.FileParseOptions | undefined) => Argument<unknown>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Argument.ts#L247)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Argument.ts#L251)
 
 Since v4.0.0

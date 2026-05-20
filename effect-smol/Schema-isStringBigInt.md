@@ -7,11 +7,12 @@ Validates that a string is a signed base-10 integer literal for Effect's
 BigInt string encoding.
 
 **Details**
+
 The check uses the pattern `^-?\d+$`. It does not accept leading `+`, decimal
 points, exponent notation, separators, or non-decimal inputs such as
 hexadecimal strings.
 
-**JSON Schema**
+JSON Schema:
 This check corresponds to a `pattern` constraint with the same signed
 base-10 integer pattern.
 
@@ -21,6 +22,6 @@ base-10 integer pattern.
 declare const isStringBigInt: (annotations?: Annotations.Filter) => AST.Filter<string>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L5621)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L5778)
 
 Since v4.0.0

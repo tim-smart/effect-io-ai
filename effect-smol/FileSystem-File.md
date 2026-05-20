@@ -5,6 +5,8 @@ Module: `FileSystem`<br />
 
 Interface representing an open file handle.
 
+**Details**
+
 Provides low-level file operations including reading, writing, seeking,
 and retrieving file information. File handles are automatically managed
 within scoped operations to ensure proper cleanup.
@@ -58,6 +60,6 @@ export interface File {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FileSystem.ts#L1063)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FileSystem.ts#L1109)
 
 Since v4.0.0

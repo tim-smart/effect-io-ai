@@ -3,9 +3,7 @@ Module: `Number`<br />
 
 ## Number.divide
 
-Provides a division operation on `number`s.
-
-Returns `Option.none()` if the divisor is `0`.
+Provides a division operation on `number`s, returning `Option.none()` if the divisor is `0`.
 
 **Example** (Dividing numbers safely)
 
@@ -22,6 +20,6 @@ Number.divide(6, 0) // Option.none()
 declare const divide: { (that: number): (self: number) => Option.Option<number>; (self: number, that: number): Option.Option<number>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Number.ts#L130)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Number.ts#L128)
 
 Since v2.0.0

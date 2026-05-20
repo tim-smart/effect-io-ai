@@ -5,6 +5,8 @@ Module: `Sink`<br />
 
 Type-level unification support for `Sink` values.
 
+**Details**
+
 This preserves the result, input, leftover, error, and service type
 parameters when Effect's `Unify` machinery normalizes generic values that
 include sinks. Users normally do not need to reference this interface
@@ -27,6 +29,6 @@ export interface SinkUnify<A extends { [Unify.typeSymbol]?: any }> extends Effec
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Sink.ts#L125)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Sink.ts#L129)
 
 Since v2.0.0

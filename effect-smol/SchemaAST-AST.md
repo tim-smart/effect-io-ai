@@ -5,6 +5,8 @@ Module: `SchemaAST`<br />
 
 Discriminated union of all AST node types.
 
+**Details**
+
 Every `Schema` has an `.ast` property of this type. Use the guard functions
 (`isString`, `isObjects`, etc.) to narrow to a specific variant,
 then access variant-specific fields.
@@ -44,6 +46,6 @@ type AST = | Declaration
   | Suspend
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L114)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L115)
 
 Since v3.10.0

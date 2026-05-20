@@ -12,6 +12,6 @@ including the Anthropic-specific attributes.
 type AllAttributes = Telemetry.AllAttributes & RequestAttributes & ResponseAttributes
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTelemetry.ts#L38)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTelemetry.ts#L37)
 
 Since v4.0.0

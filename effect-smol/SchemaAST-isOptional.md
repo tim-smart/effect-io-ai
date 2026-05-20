@@ -5,6 +5,8 @@ Module: `SchemaAST`<br />
 
 Returns `true` if the AST node represents an optional property.
 
+**Details**
+
 Checks `ast.context?.isOptional`. Defaults to `false` when no
 `Context` is set.
 
@@ -19,6 +21,6 @@ Checks `ast.context?.isOptional`. Defaults to `false` when no
 declare const isOptional: (ast: AST) => boolean
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L2961)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L3013)
 
 Since v4.0.0

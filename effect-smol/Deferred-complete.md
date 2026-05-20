@@ -3,18 +3,19 @@ Module: `Deferred`<br />
 
 ## Deferred.complete
 
-Completes the `Deferred` with the supplied `Effect` without running or
-memoizing it.
+Runs the supplied `Effect` and attempts to complete the `Deferred` with its
+memoized result.
 
-Awaiting fibers run the stored effect when they await, so repeated awaits can
-repeat the effect. Returns `false` if the `Deferred` has already been
-completed.
+**When to use**
 
 Use `Deferred.complete` when the effect should be evaluated once and the
-resulting `Exit` memoized.
+resulting `Exit` memoized. Use `Deferred.completeWith` when you need to store
+an effect directly without memoizing its result.
 
-Note that `Deferred.completeWith` will be much faster, so consider using
-that if you do not need to memoize the result of the specified effect.
+**Details**
+
+The returned effect succeeds with `true` when this call completed the
+`Deferred`, or `false` if it was already completed.
 
 **Example** (Completing a Deferred from an effect)
 
@@ -37,6 +38,6 @@ const program = Effect.gen(function*() {
 declare const complete: { <A, E, R>(effect: Effect<A, E, R>): (self: Deferred<A, E>) => Effect<boolean, never, R>; <A, E, R>(self: Deferred<A, E>, effect: Effect<A, E, R>): Effect<boolean, never, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Deferred.ts#L290)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Deferred.ts#L297)
 
 Since v2.0.0

@@ -5,6 +5,8 @@ Module: `Schema`<br />
 
 A `Codec` view for APIs that only *encode* values.
 
+**Details**
+
 Use `Encoder<E, RE>` to accept "any schema that can encode to `E`" without
 constraining or depending on the decoded `Type` (`Type` is `unknown`) or
 decoding services.
@@ -28,6 +30,6 @@ export interface Encoder<out E, out RE = never> extends Codec<unknown, E, unknow
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L814)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L840)
 
 Since v4.0.0

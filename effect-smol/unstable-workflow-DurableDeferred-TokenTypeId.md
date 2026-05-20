@@ -11,6 +11,6 @@ Type-level brand identifier for `Token` values.
 type TokenTypeId = typeof TokenTypeId
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DurableDeferred.ts#L315)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DurableDeferred.ts#L318)
 
 Since v4.0.0

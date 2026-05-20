@@ -7,9 +7,13 @@ Creates an `Order` for tuples by comparing corresponding elements using the
 provided per-position `Order`s. Elements are compared left-to-right; the
 first non-zero comparison determines the result.
 
-Alias of `Order.Tuple`.
+**When to use**
 
-- Use to sort or compare tuples lexicographically by element position.
+Use this to sort or compare tuples lexicographically by element position.
+
+**Details**
+
+This is an alias of `Order.Tuple`.
 
 **Example** (Ordering tuples)
 
@@ -32,6 +36,6 @@ console.log(ord(["Alice", 30], ["Alice", 30])) // 0
 declare const makeOrder: <const Elements extends ReadonlyArray<order.Order<any>>>(elements: Elements) => order.Order<{ readonly [I in keyof Elements]: [Elements[I]] extends [order.Order<infer A>] ? A : never; }>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tuple.ts#L590)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tuple.ts#L638)
 
 Since v4.0.0

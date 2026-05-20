@@ -11,6 +11,6 @@ Extracts the decoded success value type from an `Rpc`.
 type Success<R> = SuccessSchema<R>["Type"]
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Rpc.ts#L307)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Rpc.ts#L315)
 
 Since v4.0.0

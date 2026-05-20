@@ -6,8 +6,14 @@ Module: `MutableList`<br />
 Removes all occurrences of a value from the `MutableList` using JavaScript
 strict equality semantics.
 
-The list is modified in place. Values are compared with `!==`, so this does
-not use Effect structural equality.
+**Details**
+
+The list is modified in place.
+
+**Gotchas**
+
+Values are compared with `!==`, so this does not use Effect structural
+equality.
 
 **Example** (Removing matching values)
 
@@ -50,6 +56,6 @@ console.log(MutableList.takeAll(tasks).map((task) => task.id)) // [1, 3]
 declare const remove: <A>(self: MutableList<A>, value: A) => void
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableList.ts#L956)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableList.ts#L974)
 
 Since v4.0.0

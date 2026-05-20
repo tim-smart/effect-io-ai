@@ -5,6 +5,8 @@ Module: `MessageStorage`<br />
 
 Cursor options for reading encoded replies across request sets.
 
+**Details**
+
 The fields distinguish existing requests from new requests and carry the
 driver-specific pagination cursor.
 
@@ -18,6 +20,6 @@ type EncodedRepliesOptions<A> = {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MessageStorage.ts#L424)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MessageStorage.ts#L450)
 
 Since v4.0.0

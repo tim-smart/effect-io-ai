@@ -5,12 +5,14 @@ Module: `Optic`<br />
 
 Focuses on exactly one part `A` inside a whole `S`.
 
-When to use:
+**When to use**
+
 - You always have a value to read (the part exists unconditionally).
 - You need the original `S` to produce the updated whole (unlike
   `Iso`).
 
-Behavior:
+**Details**
+
 - `get(s)` always succeeds and returns `A`.
 - `replace(a, s)` returns a new `S` with the focused part replaced.
 - Extends `Optional`.
@@ -44,6 +46,6 @@ export interface Lens<in out S, in out A> extends Optional<S, A> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Optic.ts#L222)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Optic.ts#L228)
 
 Since v4.0.0

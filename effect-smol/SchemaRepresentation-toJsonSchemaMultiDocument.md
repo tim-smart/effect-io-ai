@@ -6,8 +6,13 @@ Module: `SchemaRepresentation`<br />
 Converts a `MultiDocument` to a Draft 2020-12 JSON Schema
 multi-document.
 
-- Use when you have multiple schemas sharing references.
-- Pure function; does not mutate the input.
+**When to use**
+
+Use this when you have multiple schemas sharing references.
+
+**Details**
+
+This is a pure function and does not mutate the input.
 
 **See**
 
@@ -21,6 +26,6 @@ multi-document.
 declare const toJsonSchemaMultiDocument: (document: MultiDocument, options?: Schema.ToJsonSchemaOptions) => JsonSchema.MultiDocument<"draft-2020-12">
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaRepresentation.ts#L2173)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaRepresentation.ts#L2250)
 
 Since v4.0.0

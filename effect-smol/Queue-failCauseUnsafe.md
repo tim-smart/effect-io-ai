@@ -6,6 +6,8 @@ Module: `Queue`<br />
 Fail the queue with a cause synchronously. If the queue is already done, `false` is
 returned.
 
+**Gotchas**
+
 This is an unsafe operation that directly modifies the queue without Effect wrapping.
 
 **Example** (Failing queues with a cause synchronously)
@@ -32,6 +34,6 @@ const program = Effect.gen(function*() {
 declare const failCauseUnsafe: <A, E>(self: Enqueue<A, E>, cause: Cause<E>) => boolean
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Queue.ts#L856)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Queue.ts#L892)
 
 Since v4.0.0

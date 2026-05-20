@@ -7,7 +7,8 @@ The fully-parameterized base interface for all schemas. Exposes all 14 type
 parameters controlling type inference, mutability, optionality, services,
 and transformation behavior.
 
-When to use:
+**When to use**
+
 - You are writing advanced generic schema utilities or performing schema
   introspection.
 - In user code, prefer `Schema`, `Codec`, `Decoder`, or
@@ -73,6 +74,6 @@ export interface Bottom<
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L216)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L218)
 
 Since v4.0.0

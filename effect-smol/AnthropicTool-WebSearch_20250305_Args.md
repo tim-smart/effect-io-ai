@@ -11,6 +11,6 @@ Configuration arguments for the Anthropic web search tool, including usage limit
 type WebSearch_20250305_Args = typeof WebSearch_20250305_Args.Type
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L1413)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L1460)
 
 Since v4.0.0

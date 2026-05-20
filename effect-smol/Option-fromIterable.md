@@ -11,7 +11,7 @@ the iterable is empty.
 - Safely extracting the head of a collection
 - Working with generators or lazy iterables
 
-**Behavior**
+**Details**
 
 - Only consumes the first element; does not iterate the rest
 - Returns `None` for empty iterables
@@ -38,6 +38,6 @@ console.log(Option.fromIterable([]))
 declare const fromIterable: <A>(collection: Iterable<A>) => Option<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L542)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L546)
 
 Since v2.0.0

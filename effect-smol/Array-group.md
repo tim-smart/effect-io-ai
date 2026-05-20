@@ -5,6 +5,8 @@ Module: `Array`<br />
 
 Groups consecutive equal elements using `Equal.equivalence()`.
 
+**Details**
+
 - Only groups **adjacent** elements.
 
 **Example** (Grouping adjacent equal elements)
@@ -26,6 +28,6 @@ console.log(Array.group([1, 1, 2, 2, 2, 3, 1])) // [[1, 1], [2, 2, 2], [3], [1]]
 declare const group: <A>(self: NonEmptyReadonlyArray<A>) => NonEmptyArray<NonEmptyArray<A>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L2650)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L2768)
 
 Since v2.0.0

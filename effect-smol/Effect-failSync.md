@@ -5,6 +5,8 @@ Module: `Effect`<br />
 
 Creates an `Effect` that represents a recoverable error using a lazy evaluation.
 
+**Details**
+
 This function is useful when you need to create an error effect but want to
 defer the computation of the error value until the effect is actually run.
 
@@ -27,6 +29,6 @@ Effect.runPromiseExit(program).then(console.log)
 declare const failSync: <E>(evaluate: LazyArg<E>) => Effect<never, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L1447)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L1458)
 
 Since v2.0.0

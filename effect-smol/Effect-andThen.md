@@ -6,17 +6,7 @@ Module: `Effect`<br />
 Runs this effect and then runs another effect, optionally using the first
 effect's success value to choose the next effect.
 
-**Syntax**
-
-```ts
-const transformedEffect = pipe(myEffect, Effect.andThen(anotherEffect))
-// or
-const transformedEffect = Effect.andThen(myEffect, anotherEffect)
-// or
-const transformedEffect = myEffect.pipe(Effect.andThen(anotherEffect))
-```
-
-**When to Use**
+**When to use**
 
 Use `andThen` when one effect must run after another and the second effect
 may depend on the first effect's success value.
@@ -30,6 +20,19 @@ the next `Effect`.
 
 Failures or requirements from either effect are preserved in the returned
 effect.
+
+**Example** (Syntax)
+
+```ts
+import { Effect, pipe } from "effect"
+
+const myEffect = Effect.succeed(1)
+const anotherEffect = Effect.succeed("done")
+
+const transformedWithPipe = pipe(myEffect, Effect.andThen(anotherEffect))
+const transformedWithDataFirst = Effect.andThen(myEffect, anotherEffect)
+const transformedWithMethod = myEffect.pipe(Effect.andThen(anotherEffect))
+```
 
 **Example** (Sequencing a discount calculation after fetching a total)
 
@@ -77,6 +80,6 @@ Effect.runPromise(result2).then(console.log)
 declare const andThen: { <A, B, E2, R2>(f: (a: A) => Effect<B, E2, R2>): <E, R>(self: Effect<A, E, R>) => Effect<B, E | E2, R | R2>; <B, E2, R2>(f: Effect<B, E2, R2>): <A, E, R>(self: Effect<A, E, R>) => Effect<B, E | E2, R | R2>; <A, E, R, B, E2, R2>(self: Effect<A, E, R>, f: (a: A) => Effect<B, E2, R2>): Effect<B, E | E2, R | R2>; <A, E, R, B, E2, R2>(self: Effect<A, E, R>, f: Effect<B, E2, R2>): Effect<B, E | E2, R | R2>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L1939)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L1961)
 
 Since v2.0.0

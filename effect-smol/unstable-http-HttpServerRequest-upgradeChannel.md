@@ -5,6 +5,8 @@ Module: `HttpServerRequest`<br />
 
 Creates a channel backed by the current request's upgraded socket.
 
+**Details**
+
 The channel reads incoming socket messages and writes byte chunks to the
 socket, failing if the request cannot be upgraded or the socket fails.
 
@@ -14,6 +16,6 @@ socket, failing if the request cannot be upgraded or the socket fails.
 declare const upgradeChannel: <IE = never>() => Channel.Channel<Arr.NonEmptyReadonlyArray<Uint8Array>, HttpServerError | IE | Socket.SocketError, void, Arr.NonEmptyReadonlyArray<string | Uint8Array | Socket.CloseEvent>, IE, unknown, HttpServerRequest>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpServerRequest.ts#L156)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpServerRequest.ts#L166)
 
 Since v4.0.0

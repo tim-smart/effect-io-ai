@@ -5,6 +5,8 @@ Module: `Metric`<br />
 
 A Gauge metric that tracks instantaneous values that can go up or down.
 
+**When to use**
+
 Gauges are useful for tracking current state values like memory usage, CPU load,
 active connections, queue sizes, or any value that represents a current level.
 
@@ -62,6 +64,6 @@ const program = Effect.gen(function*() {
 export interface Gauge<in Input extends number | bigint> extends Metric<Input, GaugeState<Input>> {}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Metric.ts#L549)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Metric.ts#L557)
 
 Since v2.0.0

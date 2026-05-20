@@ -5,6 +5,8 @@ Module: `Array`<br />
 
 Folds an iterable from left to right into a single value.
 
+**Details**
+
 - The function receives `(accumulator, element, index)`.
 
 **Example** (Summing an array)
@@ -26,6 +28,6 @@ console.log(Array.reduce([1, 2, 3], 0, (acc, n) => acc + n)) // 6
 declare const reduce: { <B, A>(b: B, f: (b: B, a: A, i: number) => B): (self: Iterable<A>) => B; <A, B>(self: Iterable<A>, b: B, f: (b: B, a: A, i: number) => B): B; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L3422)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L3556)
 
 Since v2.0.0

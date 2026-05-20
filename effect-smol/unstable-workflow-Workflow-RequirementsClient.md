@@ -21,6 +21,6 @@ type RequirementsClient<Workflows> = Workflows extends Workflow<
   : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Workflow.ts#L274)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Workflow.ts#L277)
 
 Since v4.0.0

@@ -6,10 +6,11 @@ Module: `Logger`<br />
 A `Logger` which outputs logs using a structured format serialized as JSON
 on a single line and writes them to the console.
 
-For example:
-```
-{"message":["hello"],"level":"INFO","timestamp":"2025-01-03T14:28:57.508Z","annotations":{"key":"value"},"spans":{"label":0},"fiberId":"#1"}
-```
+**Details**
+
+For example, console JSON output can render as
+`{"message":["hello"],"level":"INFO","timestamp":"2025-01-03T14:28:57.508Z",
+"annotations":{"key":"value"},"spans":{"label":0},"fiberId":"#1"}`.
 
 **Example** (Logging JSON output to the console)
 
@@ -61,6 +62,6 @@ const containerProgram = Effect.log("Container ready", {
 declare const consoleJson: Logger<unknown, void>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Logger.ts#L1082)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Logger.ts#L1089)
 
 Since v4.0.0

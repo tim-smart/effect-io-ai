@@ -5,8 +5,13 @@ Module: `Exit`<br />
 
 A failed Exit containing a Cause.
 
+**When to use**
+
 - Use `isFailure` to narrow an `Exit` to `Failure`
 - Access the cause via the `cause` property after narrowing
+
+**Details**
+
 - The `Cause<E>` may contain typed errors, defects, or interruptions
 
 **Example** (Accessing the failure cause)
@@ -36,6 +41,6 @@ export interface Failure<out A, out E> extends Exit.Proto<A, E> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Exit.ts#L179)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Exit.ts#L192)
 
 Since v2.0.0

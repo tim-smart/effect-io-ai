@@ -6,6 +6,8 @@ Module: `Types`<br />
 Alias for `MergeLeft`. Merges two object types where keys from
 `Source` take precedence on conflict.
 
+**When to use**
+
 Prefer `MergeLeft` or `MergeRight` for clarity about which
 side wins.
 
@@ -32,6 +34,6 @@ type Result = Types.MergeRecord<
 type MergeRecord<Source, Target> = MergeLeft<Source, Target>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Types.ts#L427)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Types.ts#L481)
 
 Since v2.0.0

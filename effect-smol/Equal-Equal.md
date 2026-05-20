@@ -5,25 +5,27 @@ Module: `Equal`<br />
 
 The interface for types that define their own equality logic.
 
-Any object that implements both `[Equal.symbol]` (equality) and
-`[Hash.symbol]` (hashing) is recognized by `equals` and by
-hash-based collections such as `HashMap` and `HashSet`.
+**When to use**
 
-When to use:
 - When you need value-based equality for a class (e.g. domain IDs,
   coordinates, money values).
 - When your type will be stored in `HashMap` or `HashSet`.
 - When the default structural comparison is too broad or too narrow for
   your type.
 
-Behavior:
+**Details**
+
+Any object that implements both `[Equal.symbol]` (equality) and
+`[Hash.symbol]` (hashing) is recognized by `equals` and by hash-based
+collections such as `HashMap` and `HashSet`.
+
 - Extends `Hash.Hash`, so implementors **must** also provide `[Hash.symbol]`.
 - The hash contract: if `a[Equal.symbol](b)` returns `true`, then
   `Hash.hash(a)` must equal `Hash.hash(b)`.
 - `equals` delegates to this method when both operands implement it.
   If only one operand implements `Equal`, they are considered unequal.
 
-**Example** (coordinate with value equality)
+**Example** (Coordinate with Value Equality)
 
 ```ts
 import { Equal, Hash } from "effect"

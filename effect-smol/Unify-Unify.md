@@ -5,6 +5,8 @@ Module: `Unify`<br />
 
 Unifies types that implement the unification protocol.
 
+**Details**
+
 This type performs automatic type unification for types that contain
 the unification symbols (`unifySymbol`, `typeSymbol`, `ignoreSymbol`).
 It's primarily used internally by the Effect type system to handle
@@ -60,6 +62,6 @@ type Unify<A> = Values<
   : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Unify.ts#L155)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Unify.ts#L169)
 
 Since v2.0.0

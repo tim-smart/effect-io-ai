@@ -7,9 +7,14 @@ Selectively transforms both keys and values of a struct. Each per-key
 function receives `(key, value)` and must return a `[newKey, newValue]`
 tuple. Keys without a corresponding function are copied unchanged.
 
-- Use when you need to rename a key and change its value in one step.
-- Does not mutate the input; returns a fresh object.
-- The return type is fully tracked at the type level.
+**When to use**
+
+Use when you need to rename a key and change its value in one step.
+
+**Details**
+
+This does not mutate the input and returns a fresh object. The return type is
+fully tracked at the type level.
 
 **Example** (Transforming keys and values together)
 
@@ -37,6 +42,6 @@ console.log(result) // { amountCents: 10000, label: "TOTAL" }
 declare const evolveEntries: { <S extends object, E extends EntryEvolver<S>>(e: E): (self: S) => EntryEvolved<S, E>; <S extends object, E extends EntryEvolver<S>>(self: S, e: E): EntryEvolved<S, E>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Struct.ts#L456)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Struct.ts#L506)
 
 Since v4.0.0

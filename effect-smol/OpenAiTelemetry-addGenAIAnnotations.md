@@ -6,7 +6,9 @@ Module: `OpenAiTelemetry`<br />
 Applies the specified OpenAi GenAI telemetry attributes to the provided
 `Span`.
 
-**NOTE**: This method will mutate the `Span` **in-place**.
+**Gotchas**
+
+This method will mutate the `Span` **in-place**.
 
 **Signature**
 
@@ -14,6 +16,6 @@ Applies the specified OpenAi GenAI telemetry attributes to the provided
 declare const addGenAIAnnotations: { (options: OpenAiTelemetryAttributeOptions): (span: Span) => void; (span: Span, options: OpenAiTelemetryAttributeOptions): void; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/OpenAiTelemetry.ts#L131)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/OpenAiTelemetry.ts#L136)
 
 Since v4.0.0

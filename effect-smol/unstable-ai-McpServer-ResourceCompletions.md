@@ -5,6 +5,8 @@ Module: `McpServer`<br />
 
 Completion-handler map for a resource URI template.
 
+**Details**
+
 Each schema interpolation contributes a parameter key, using an explicit
 `Param` name when present or `paramN` otherwise, and each handler returns
 candidate values for that parameter.
@@ -20,6 +22,6 @@ type ResourceCompletions<Schemas> = {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpServer.ts#L759)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpServer.ts#L765)
 
 Since v4.0.0

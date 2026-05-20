@@ -6,6 +6,8 @@ Module: `Queue`<br />
 Creates a bounded queue with dropping strategy. When the queue reaches capacity,
 new elements are dropped and the offer operation returns false.
 
+**When to use**
+
 This strategy prevents producers from being blocked and preserves existing messages,
 but new messages may be lost when the queue is full.
 
@@ -37,6 +39,6 @@ const program = Effect.gen(function*() {
 declare const dropping: <A, E = never>(capacity: number) => Effect<Queue<A, E>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Queue.ts#L525)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Queue.ts#L549)
 
 Since v2.0.0

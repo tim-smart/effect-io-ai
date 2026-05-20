@@ -5,6 +5,8 @@ Module: `Metric`<br />
 
 A Frequency metric interface that counts occurrences of discrete string values.
 
+**When to use**
+
 Frequency metrics are ideal for tracking categorical data where you want to count
 how many times specific string values occur, such as HTTP status codes, user actions,
 error types, or any discrete string-based events.
@@ -86,6 +88,6 @@ const program = Effect.gen(function*() {
 export interface Frequency extends Metric<string, FrequencyState> {}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Metric.ts#L403)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Metric.ts#L409)
 
 Since v2.0.0

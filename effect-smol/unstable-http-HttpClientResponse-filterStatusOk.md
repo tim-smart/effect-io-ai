@@ -11,6 +11,6 @@ Succeeds with the response only when its status is in the 2xx range, otherwise f
 declare const filterStatusOk: (self: HttpClientResponse) => Effect.Effect<HttpClientResponse, Error.HttpClientError>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpClientResponse.ts#L238)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpClientResponse.ts#L244)
 
 Since v4.0.0

@@ -6,13 +6,18 @@ Module: `Newtype`<br />
 A tagged interface that wraps a carrier type under a unique key, preventing
 accidental interchange of structurally identical values.
 
-- Define your newtype as an `interface` extending
-  `Newtype<"MyKey", CarrierType>`.
-- The tag is compile-time only; no runtime wrapper is allocated.
-- Use `makeIso` to create a two-way conversion, or `value` to
-  unwrap.
+**When to use**
 
-**Example** (defining a newtype)
+Define your newtype as an `interface` extending
+`Newtype<"MyKey", CarrierType>` when you need two structurally identical
+carrier types to remain distinct in TypeScript.
+
+**Details**
+
+The tag is compile-time only, so no runtime wrapper is allocated. Use
+`makeIso` to create a two-way conversion, or `value` to unwrap.
+
+**Example** (Defining a newtype)
 
 ```ts
 import { Newtype } from "effect"
@@ -40,6 +45,6 @@ export interface Newtype<in out Key extends string, out Carrier> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Newtype.ts#L103)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Newtype.ts#L108)
 
 Since v4.0.0

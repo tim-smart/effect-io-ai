@@ -11,6 +11,6 @@ Narrows an `AST` to `ObjectKeyword`.
 declare const isObjectKeyword: (ast: AST) => ast is ObjectKeyword
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L274)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L276)
 
 Since v3.10.0

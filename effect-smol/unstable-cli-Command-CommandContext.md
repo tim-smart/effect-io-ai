@@ -5,6 +5,8 @@ Module: `Command`<br />
 
 Service context for a specific command, enabling subcommands to access their parent's parsed configuration.
 
+**Details**
+
 When a subcommand handler needs access to flags or arguments from a parent command,
 it can yield the parent command directly to retrieve its config. This is powered by
 Effect's service system - each command automatically creates a service that provides
@@ -47,6 +49,6 @@ export interface CommandContext<Name extends string> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Command.ts#L410)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Command.ts#L432)
 
 Since v4.0.0

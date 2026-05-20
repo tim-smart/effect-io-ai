@@ -5,7 +5,8 @@ Module: `SchemaGetter`<br />
 
 Converts a `snake_case` string to `camelCase`.
 
-Behavior:
+**Details**
+
 - Pure, delegates to `String.snakeToCamel`.
 
 **Example** (Snake to camel)
@@ -16,8 +17,9 @@ import { SchemaGetter } from "effect"
 const toCamel = SchemaGetter.snakeToCamel<string>()
 ```
 
-See also:
-- `camelToSnake` — inverse operation
+**See**
+
+- `camelToSnake` - inverse operation
 
 **Signature**
 
@@ -25,6 +27,6 @@ See also:
 declare const snakeToCamel: <E extends string>() => Getter<string, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L923)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L948)
 
 Since v4.0.0

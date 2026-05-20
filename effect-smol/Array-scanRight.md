@@ -5,6 +5,8 @@ Module: `Array`<br />
 
 Right-to-left fold that keeps every intermediate accumulator value.
 
+**Details**
+
 - The output length is `input.length + 1` (ends with the initial value).
 - Always returns a `NonEmptyArray`.
 
@@ -28,6 +30,6 @@ console.log(result) // [10, 9, 7, 4, 0]
 declare const scanRight: { <B, A>(b: B, f: (b: B, a: A) => B): (self: Iterable<A>) => NonEmptyArray<B>; <A, B>(self: Iterable<A>, b: B, f: (b: B, a: A) => B): NonEmptyArray<B>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L724)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L764)
 
 Since v2.0.0

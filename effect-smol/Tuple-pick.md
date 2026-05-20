@@ -5,9 +5,14 @@ Module: `Tuple`<br />
 
 Creates a new tuple containing only the elements at the specified indices.
 
-- Use to select a subset of elements from a tuple by position.
-- The result order matches the order of the provided indices.
-- Does not mutate the input; returns a fresh tuple.
+**When to use**
+
+Use this to select a subset of elements from a tuple by position.
+
+**Details**
+
+The result order matches the order of the provided indices. The input tuple is
+not mutated; a fresh tuple is returned.
 
 **Example** (Selecting elements by index)
 
@@ -29,6 +34,6 @@ console.log(result) // ["a", "c", "d"]
 declare const pick: { <const T extends ReadonlyArray<unknown>, const I extends ReadonlyArray<Indices<T>>>(indices: I): (self: T) => PickTuple<T, I[number]>; <const T extends ReadonlyArray<unknown>, const I extends ReadonlyArray<Indices<T>>>(self: T, indices: I): PickTuple<T, I[number]>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tuple.ts#L170)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tuple.ts#L183)
 
 Since v4.0.0

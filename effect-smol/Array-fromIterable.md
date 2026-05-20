@@ -5,6 +5,8 @@ Module: `Array`<br />
 
 Converts an `Iterable` to an `Array`.
 
+**Details**
+
 - If the input is already an array, returns it **by reference** (no copy).
 - Otherwise, creates a new array from the iterable.
 - Use `copy` if you need a fresh array even when the input is already
@@ -30,6 +32,6 @@ console.log(result) // [1, 2, 3]
 declare const fromIterable: <A>(collection: Iterable<A>) => Array<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L337)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L355)
 
 Since v2.0.0

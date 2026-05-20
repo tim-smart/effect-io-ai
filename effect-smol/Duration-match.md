@@ -5,6 +5,8 @@ Module: `Duration`<br />
 
 Pattern matches on the representation of a `Duration`.
 
+**Details**
+
 Provide handlers for millisecond-backed values, nanosecond-backed values,
 and positive infinity. Use `onNegativeInfinity` to handle negative infinity
 separately; otherwise negative infinity is handled by `onInfinity`.
@@ -28,6 +30,6 @@ console.log(result) // "5000 milliseconds"
 declare const match: { <A, B, C, D = C>(options: { readonly onMillis: (millis: number) => A; readonly onNanos: (nanos: bigint) => B; readonly onInfinity: () => C; readonly onNegativeInfinity?: () => D; }): (self: Duration) => A | B | C | D; <A, B, C, D = C>(self: Duration, options: { readonly onMillis: (millis: number) => A; readonly onNanos: (nanos: bigint) => B; readonly onInfinity: () => C; readonly onNegativeInfinity?: () => D; }): A | B | C | D; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Duration.ts#L950)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Duration.ts#L964)
 
 Since v2.0.0

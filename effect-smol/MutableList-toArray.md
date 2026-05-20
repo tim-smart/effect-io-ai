@@ -6,6 +6,8 @@ Module: `MutableList`<br />
 Copies all current elements of the `MutableList` into a new array without
 modifying the list.
 
+**When to use**
+
 Use `takeAll` when the list should be emptied after converting it to an
 array.
 
@@ -15,6 +17,6 @@ array.
 declare const toArray: <A>(self: MutableList<A>) => Array<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableList.ts#L845)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableList.ts#L857)
 
 Since v4.0.0

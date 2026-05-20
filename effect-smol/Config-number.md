@@ -5,6 +5,8 @@ Module: `Config`<br />
 
 Creates a config for a numeric value (including `NaN`, `Infinity`).
 
+**Details**
+
 Shortcut for `Config.schema(Schema.Number, name)`.
 
 **See**
@@ -18,6 +20,6 @@ Shortcut for `Config.schema(Schema.Number, name)`.
 declare const number: (name?: string) => Config<number>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Config.ts#L917)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Config.ts#L975)
 
 Since v2.0.0

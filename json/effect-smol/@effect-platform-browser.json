@@ -45,7 +45,7 @@
     "since": "4.0.0",
     "category": "services",
     "signature": "declare class XMLHttpRequest",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/BrowserHttpClient.ts#L120"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/BrowserHttpClient.ts#L126"
   },
   {
     "_tag": "Constant",
@@ -61,7 +61,7 @@
     "since": "4.0.0",
     "category": "references",
     "signature": "declare const CurrentXHRResponseType: Context.Reference<XHRResponseType>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/BrowserHttpClient.ts#L94"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/BrowserHttpClient.ts#L100"
   },
   {
     "_tag": "Constant",
@@ -77,7 +77,7 @@
     "since": "4.0.0",
     "category": "layers",
     "signature": "declare const layerXMLHttpRequest: Layer.Layer<HttpClient.HttpClient, never, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/BrowserHttpClient.ts#L429"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/BrowserHttpClient.ts#L435"
   },
   {
     "_tag": "Function",
@@ -93,7 +93,7 @@
     "since": "4.0.0",
     "category": "references",
     "signature": "declare const withXHRArrayBuffer: <A, E, R>(self: Effect.Effect<A, E, R>) => Effect.Effect<A, E, R>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/BrowserHttpClient.ts#L105"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/BrowserHttpClient.ts#L111"
   },
   {
     "_tag": "TypeAlias",
@@ -109,7 +109,7 @@
     "since": "4.0.0",
     "category": "models",
     "signature": "type XHRResponseType = \"arraybuffer\" | \"text\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/BrowserHttpClient.ts#L86"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/BrowserHttpClient.ts#L92"
   },
   {
     "_tag": "Export",
@@ -119,12 +119,13 @@
     },
     "project": "@effect/platform-browser",
     "name": "Fetch",
+    "description": "Context reference for the `fetch` implementation used by the fetch-based HTTP client.",
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
     "category": "Fetch",
     "signature": "declare const Fetch: Context.Reference<{ (input: RequestInfo | URL, init?: RequestInit): Promise<Response>; (input: string | URL | Request, init?: RequestInit): Promise<Response>; }>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/BrowserHttpClient.ts#L63"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/BrowserHttpClient.ts#L65"
   },
   {
     "_tag": "Export",
@@ -134,12 +135,13 @@
     },
     "project": "@effect/platform-browser",
     "name": "layerFetch",
+    "description": "Layer that provides an `HttpClient` implementation backed by the configured `Fetch` function.",
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
     "category": "Fetch",
     "signature": "declare const layerFetch: Layer.Layer<HttpClient.HttpClient, never, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/BrowserHttpClient.ts#L68"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/BrowserHttpClient.ts#L72"
   },
   {
     "_tag": "Export",
@@ -149,12 +151,13 @@
     },
     "project": "@effect/platform-browser",
     "name": "RequestInit",
+    "description": "Service containing default `RequestInit` options for the fetch-based HTTP client.",
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
     "category": "Fetch",
     "signature": "declare const RequestInit: typeof RequestInit",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/BrowserHttpClient.ts#L73"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/BrowserHttpClient.ts#L79"
   },
   {
     "_tag": "Constant",
@@ -164,13 +167,13 @@
     },
     "project": "@effect/platform-browser",
     "name": "layerLocalStorage",
-    "description": "Creates a `KeyValueStore` layer that uses the browser's `localStorage` api.\n\nValues are stored between sessions.",
+    "description": "Creates a `KeyValueStore` layer that uses the browser's `localStorage` API and stores values between browser sessions.",
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
     "category": "layers",
     "signature": "declare const layerLocalStorage: Layer.Layer<KeyValueStore.KeyValueStore, never, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/BrowserKeyValueStore.ts#L33"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/BrowserKeyValueStore.ts#L31"
   },
   {
     "_tag": "Constant",
@@ -180,13 +183,13 @@
     },
     "project": "@effect/platform-browser",
     "name": "layerSessionStorage",
-    "description": "Creates a `KeyValueStore` layer that uses the browser's `sessionStorage` api.\n\nValues are stored only for the current session.",
+    "description": "Creates a `KeyValueStore` layer that uses the browser's `sessionStorage` API and stores values only for the current session.",
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
     "category": "layers",
     "signature": "declare const layerSessionStorage: Layer.Layer<KeyValueStore.KeyValueStore, never, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/BrowserKeyValueStore.ts#L45"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/BrowserKeyValueStore.ts#L41"
   },
   {
     "_tag": "Function",
@@ -202,7 +205,7 @@
     "since": "4.0.0",
     "category": "layers",
     "signature": "declare const layerIndexedDb: (options?: { readonly database?: string | undefined; }) => Layer.Layer<KeyValueStore.KeyValueStore, never, IndexedDb>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/BrowserKeyValueStore.ts#L55"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/BrowserKeyValueStore.ts#L51"
   },
   {
     "_tag": "Function",
@@ -292,13 +295,13 @@
     },
     "project": "@effect/platform-browser",
     "name": "fromEventListenerWindow",
-    "description": "Creates a `Stream` from `window.addEventListener`.\n\nBy default, the underlying buffer is unbounded in size. You can customize the\nbuffer size an object as the second argument with the `bufferSize` field.",
+    "description": "Creates a `Stream` from `window.addEventListener`.\n\n**Details**\n\nBy default, the underlying buffer is unbounded in size. You can customize the\nbuffer size by passing an object as the second argument with the `bufferSize`\nfield.",
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
     "category": "Streams",
     "signature": "declare const fromEventListenerWindow: <K extends keyof WindowEventMap>(type: K, options?: boolean | { readonly capture?: boolean; readonly passive?: boolean; readonly once?: boolean; readonly bufferSize?: number | undefined; } | undefined) => Stream.Stream<WindowEventMap[K], never, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/BrowserStream.ts#L38"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/BrowserStream.ts#L41"
   },
   {
     "_tag": "Function",
@@ -308,13 +311,13 @@
     },
     "project": "@effect/platform-browser",
     "name": "fromEventListenerDocument",
-    "description": "Creates a `Stream` from `document.addEventListener`.\n\nBy default, the underlying buffer is unbounded in size. You can customize the\nbuffer size an object as the second argument with the `bufferSize` field.",
+    "description": "Creates a `Stream` from `document.addEventListener`.\n\n**Details**\n\nBy default, the underlying buffer is unbounded in size. You can customize the\nbuffer size by passing an object as the second argument with the `bufferSize`\nfield.",
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
     "category": "Streams",
     "signature": "declare const fromEventListenerDocument: <K extends keyof DocumentEventMap>(type: K, options?: boolean | { readonly capture?: boolean; readonly passive?: boolean; readonly once?: boolean; readonly bufferSize?: number | undefined; } | undefined) => Stream.Stream<DocumentEventMap[K], never, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/BrowserStream.ts#L57"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/BrowserStream.ts#L63"
   },
   {
     "_tag": "Constant",
@@ -1178,7 +1181,7 @@
     "since": "4.0.0",
     "category": "models",
     "signature": "declare class IndexedDbTransaction",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbQueryBuilder.ts#L719"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbQueryBuilder.ts#L733"
   },
   {
     "_tag": "Function",
@@ -1194,7 +1197,7 @@
     "since": "4.0.0",
     "category": "constructors",
     "signature": "declare const make: <Source extends IndexedDbVersion.AnyWithProps>({ IDBKeyRange, database, tables, reactivity }: { readonly database: MutableRef.MutableRef<globalThis.IDBDatabase>; readonly IDBKeyRange: typeof globalThis.IDBKeyRange; readonly tables: ReadonlyMap<string, IndexedDbVersion.Tables<Source>>; readonly reactivity: Reactivity.Reactivity[\"Service\"]; }) => IndexedDbQueryBuilder<Source>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbQueryBuilder.ts#L1998"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbQueryBuilder.ts#L2012"
   },
   {
     "_tag": "Interface",
@@ -1337,7 +1340,7 @@
     "examples": [],
     "since": "4.0.0",
     "category": "models",
-    "signature": "export interface Delete<\n    Table extends IndexedDbTable.AnyWithProps,\n    Index extends IndexedDbDatabase.IndexFromTable<Table>,\n    ExcludedKeys extends string = never\n  > extends Effect.Effect<void, IndexedDbQueryError> {\n    readonly delete: DeletePartial<Table, Index>\n    readonly index?: Index\n    readonly limitValue?: number\n    readonly only?: ExtractIndexType<Table, Index>\n    readonly lowerBound?: ExtractIndexType<Table, Index>\n    readonly upperBound?: ExtractIndexType<Table, Index>\n    readonly excludeLowerBound?: boolean\n    readonly excludeUpperBound?: boolean\n    readonly predicate?: (item: IndexedDbTable.Encoded<Table>) => boolean\n\n    readonly limit: (\n      limit: number\n    ) => DeleteWithout<Table, Index, ExcludedKeys | \"limit\">\n\n    readonly filter: (\n      f: (value: IndexedDbTable.Encoded<Table>) => boolean\n    ) => DeleteWithout<Table, Index, ExcludedKeys>\n\n    /**\n     * Invalidate any queries using Reactivity service with the provided keys.\n     *\n     * Defaults to using the table name as a key if no keys are provided.\n     */\n    readonly invalidate: (\n      keys?: ReadonlyArray<unknown> | Record.ReadonlyRecord<string, ReadonlyArray<unknown>> | undefined\n    ) => Effect.Effect<void, IndexedDbQueryError, IndexedDbTable.Context<Table>>\n  }",
+    "signature": "export interface Delete<\n    Table extends IndexedDbTable.AnyWithProps,\n    Index extends IndexedDbDatabase.IndexFromTable<Table>,\n    ExcludedKeys extends string = never\n  > extends Effect.Effect<void, IndexedDbQueryError> {\n    readonly delete: DeletePartial<Table, Index>\n    readonly index?: Index\n    readonly limitValue?: number\n    readonly only?: ExtractIndexType<Table, Index>\n    readonly lowerBound?: ExtractIndexType<Table, Index>\n    readonly upperBound?: ExtractIndexType<Table, Index>\n    readonly excludeLowerBound?: boolean\n    readonly excludeUpperBound?: boolean\n    readonly predicate?: (item: IndexedDbTable.Encoded<Table>) => boolean\n\n    readonly limit: (\n      limit: number\n    ) => DeleteWithout<Table, Index, ExcludedKeys | \"limit\">\n\n    readonly filter: (\n      f: (value: IndexedDbTable.Encoded<Table>) => boolean\n    ) => DeleteWithout<Table, Index, ExcludedKeys>\n\n    /**\n     * Invalidate any queries using Reactivity service with the provided keys.\n     *\n     * **Details**\n     *\n     * If no keys are provided, the table name is used as the reactivity key.\n     */\n    readonly invalidate: (\n      keys?: ReadonlyArray<unknown> | Record.ReadonlyRecord<string, ReadonlyArray<unknown>> | undefined\n    ) => Effect.Effect<void, IndexedDbQueryError, IndexedDbTable.Context<Table>>\n  }",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbQueryBuilder.ts#L442"
   },
   {
@@ -1353,8 +1356,8 @@
     "examples": [],
     "since": "4.0.0",
     "category": "models",
-    "signature": "export interface Select<\n    Table extends IndexedDbTable.AnyWithProps,\n    Index extends IndexedDbDatabase.IndexFromTable<Table>,\n    ExcludedKeys extends string = never\n  > extends\n    Effect.Effect<\n      Array<SelectType<Table>>,\n      IndexedDbQueryError,\n      IndexedDbTable.Context<Table>\n    >\n  {\n    readonly from: From<Table>\n    readonly index?: Index\n    readonly limitValue?: number\n    readonly offsetValue?: number\n    readonly reverseValue?: boolean\n    readonly only?: ExtractIndexType<Table, Index>\n    readonly lowerBound?: ExtractIndexType<Table, Index>\n    readonly upperBound?: ExtractIndexType<Table, Index>\n    readonly excludeLowerBound?: boolean\n    readonly excludeUpperBound?: boolean\n    readonly predicate?: (item: IndexedDbTable.Encoded<Table>) => boolean\n\n    readonly equals: (\n      value: EqualsType<Table, Index>\n    ) => SelectWithout<Table, Index, ExcludedKeys | ComparisonKeys>\n\n    readonly gte: (\n      value: ExtractIndexType<Table, Index>\n    ) => SelectWithout<Table, Index, ExcludedKeys | ComparisonKeys>\n\n    readonly lte: (\n      value: ExtractIndexType<Table, Index>\n    ) => SelectWithout<Table, Index, ExcludedKeys | ComparisonKeys>\n\n    readonly gt: (\n      value: ExtractIndexType<Table, Index>\n    ) => SelectWithout<Table, Index, ExcludedKeys | ComparisonKeys>\n\n    readonly lt: (\n      value: ExtractIndexType<Table, Index>\n    ) => SelectWithout<Table, Index, ExcludedKeys | ComparisonKeys>\n\n    readonly between: (\n      lowerBound: ExtractIndexType<Table, Index>,\n      upperBound: ExtractIndexType<Table, Index>,\n      options?: { excludeLowerBound?: boolean; excludeUpperBound?: boolean }\n    ) => SelectWithout<Table, Index, ExcludedKeys | ComparisonKeys>\n\n    readonly limit: (\n      limit: number\n    ) => SelectWithout<Table, Index, ExcludedKeys | \"limit\" | \"first\">\n\n    readonly offset: (\n      offset: number\n    ) => SelectWithout<Table, Index, ExcludedKeys | \"offset\" | \"first\">\n\n    readonly reverse: () => SelectWithout<Table, Index, ExcludedKeys | \"reverse\" | \"first\">\n\n    readonly filter: (\n      f: (value: IndexedDbTable.Encoded<Table>) => boolean\n    ) => SelectWithout<Table, Index, ExcludedKeys | \"first\">\n\n    readonly first: () => First<Table, Index>\n\n    /**\n     * Stream the selected data.\n     *\n     * Defaults to a chunk size of 100.\n     */\n    readonly stream: (options?: {\n      readonly chunkSize?: number | undefined\n    }) => Stream.Stream<\n      SelectType<Table>,\n      IndexedDbQueryError,\n      IndexedDbTable.Context<Table>\n    >\n\n    /**\n     * Use the Reactivity service to react to changes to the selected data.\n     *\n     * By default it uses the table name as a key.\n     */\n    readonly reactive: (\n      keys?: ReadonlyArray<unknown> | Record.ReadonlyRecord<string, ReadonlyArray<unknown>> | undefined\n    ) => Stream.Stream<\n      Array<SelectType<Table>>,\n      IndexedDbQueryError,\n      IndexedDbTable.Context<Table>\n    >\n    readonly reactiveQueue: (\n      keys?: ReadonlyArray<unknown> | Record.ReadonlyRecord<string, ReadonlyArray<unknown>> | undefined\n    ) => Effect.Effect<\n      Queue.Dequeue<Array<SelectType<Table>>, IndexedDbQueryError>,\n      never,\n      Scope.Scope | IndexedDbTable.Context<Table>\n    >\n  }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbQueryBuilder.ts#L487"
+    "signature": "export interface Select<\n    Table extends IndexedDbTable.AnyWithProps,\n    Index extends IndexedDbDatabase.IndexFromTable<Table>,\n    ExcludedKeys extends string = never\n  > extends\n    Effect.Effect<\n      Array<SelectType<Table>>,\n      IndexedDbQueryError,\n      IndexedDbTable.Context<Table>\n    >\n  {\n    readonly from: From<Table>\n    readonly index?: Index\n    readonly limitValue?: number\n    readonly offsetValue?: number\n    readonly reverseValue?: boolean\n    readonly only?: ExtractIndexType<Table, Index>\n    readonly lowerBound?: ExtractIndexType<Table, Index>\n    readonly upperBound?: ExtractIndexType<Table, Index>\n    readonly excludeLowerBound?: boolean\n    readonly excludeUpperBound?: boolean\n    readonly predicate?: (item: IndexedDbTable.Encoded<Table>) => boolean\n\n    readonly equals: (\n      value: EqualsType<Table, Index>\n    ) => SelectWithout<Table, Index, ExcludedKeys | ComparisonKeys>\n\n    readonly gte: (\n      value: ExtractIndexType<Table, Index>\n    ) => SelectWithout<Table, Index, ExcludedKeys | ComparisonKeys>\n\n    readonly lte: (\n      value: ExtractIndexType<Table, Index>\n    ) => SelectWithout<Table, Index, ExcludedKeys | ComparisonKeys>\n\n    readonly gt: (\n      value: ExtractIndexType<Table, Index>\n    ) => SelectWithout<Table, Index, ExcludedKeys | ComparisonKeys>\n\n    readonly lt: (\n      value: ExtractIndexType<Table, Index>\n    ) => SelectWithout<Table, Index, ExcludedKeys | ComparisonKeys>\n\n    readonly between: (\n      lowerBound: ExtractIndexType<Table, Index>,\n      upperBound: ExtractIndexType<Table, Index>,\n      options?: { excludeLowerBound?: boolean; excludeUpperBound?: boolean }\n    ) => SelectWithout<Table, Index, ExcludedKeys | ComparisonKeys>\n\n    readonly limit: (\n      limit: number\n    ) => SelectWithout<Table, Index, ExcludedKeys | \"limit\" | \"first\">\n\n    readonly offset: (\n      offset: number\n    ) => SelectWithout<Table, Index, ExcludedKeys | \"offset\" | \"first\">\n\n    readonly reverse: () => SelectWithout<Table, Index, ExcludedKeys | \"reverse\" | \"first\">\n\n    readonly filter: (\n      f: (value: IndexedDbTable.Encoded<Table>) => boolean\n    ) => SelectWithout<Table, Index, ExcludedKeys | \"first\">\n\n    readonly first: () => First<Table, Index>\n\n    /**\n     * Stream the selected data.\n     *\n     * **Details**\n     *\n     * The default chunk size is 100.\n     */\n    readonly stream: (options?: {\n      readonly chunkSize?: number | undefined\n    }) => Stream.Stream<\n      SelectType<Table>,\n      IndexedDbQueryError,\n      IndexedDbTable.Context<Table>\n    >\n\n    /**\n     * Use the Reactivity service to react to changes to the selected data.\n     *\n     * **Details**\n     *\n     * By default, the table name is used as the reactivity key.\n     */\n    readonly reactive: (\n      keys?: ReadonlyArray<unknown> | Record.ReadonlyRecord<string, ReadonlyArray<unknown>> | undefined\n    ) => Stream.Stream<\n      Array<SelectType<Table>>,\n      IndexedDbQueryError,\n      IndexedDbTable.Context<Table>\n    >\n    readonly reactiveQueue: (\n      keys?: ReadonlyArray<unknown> | Record.ReadonlyRecord<string, ReadonlyArray<unknown>> | undefined\n    ) => Effect.Effect<\n      Queue.Dequeue<Array<SelectType<Table>>, IndexedDbQueryError>,\n      never,\n      Scope.Scope | IndexedDbTable.Context<Table>\n    >\n  }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbQueryBuilder.ts#L489"
   },
   {
     "_tag": "Interface",
@@ -1369,8 +1372,8 @@
     "examples": [],
     "since": "4.0.0",
     "category": "models",
-    "signature": "export interface First<\n    Table extends IndexedDbTable.AnyWithProps,\n    Index extends IndexedDbDatabase.IndexFromTable<Table>\n  > extends\n    Effect.Effect<\n      SelectType<Table>,\n      IndexedDbQueryError | Cause.NoSuchElementError,\n      IndexedDbTable.Context<Table>\n    >\n  {\n    readonly select: Select<Table, Index>\n\n    /**\n     * Use the Reactivity service to react to changes to the selected data.\n     *\n     * By default it uses the table name as a key.\n     */\n    readonly reactive: (\n      keys?: ReadonlyArray<unknown> | Record.ReadonlyRecord<string, ReadonlyArray<unknown>> | undefined\n    ) => Stream.Stream<\n      SelectType<Table>,\n      IndexedDbQueryError | Cause.NoSuchElementError,\n      IndexedDbTable.Context<Table>\n    >\n\n    /**\n     * Use the Reactivity service to react to changes to the selected data.\n     *\n     * By default it uses the table name as a key.\n     */\n    readonly reactiveQueue: (\n      keys: ReadonlyArray<unknown> | Record.ReadonlyRecord<string, ReadonlyArray<unknown>>\n    ) => Effect.Effect<\n      Queue.Dequeue<SelectType<Table>, IndexedDbQueryError | Cause.NoSuchElementError>,\n      never,\n      Scope.Scope | IndexedDbTable.Context<Table>\n    >\n  }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbQueryBuilder.ts#L592"
+    "signature": "export interface First<\n    Table extends IndexedDbTable.AnyWithProps,\n    Index extends IndexedDbDatabase.IndexFromTable<Table>\n  > extends\n    Effect.Effect<\n      SelectType<Table>,\n      IndexedDbQueryError | Cause.NoSuchElementError,\n      IndexedDbTable.Context<Table>\n    >\n  {\n    readonly select: Select<Table, Index>\n\n    /**\n     * Use the Reactivity service to react to changes to the selected data.\n     *\n     * **Details**\n     *\n     * By default, the table name is used as the reactivity key.\n     */\n    readonly reactive: (\n      keys?: ReadonlyArray<unknown> | Record.ReadonlyRecord<string, ReadonlyArray<unknown>> | undefined\n    ) => Stream.Stream<\n      SelectType<Table>,\n      IndexedDbQueryError | Cause.NoSuchElementError,\n      IndexedDbTable.Context<Table>\n    >\n\n    /**\n     * Use the Reactivity service to react to changes to the selected data.\n     *\n     * **Details**\n     *\n     * By default, the table name is used as the reactivity key.\n     */\n    readonly reactiveQueue: (\n      keys: ReadonlyArray<unknown> | Record.ReadonlyRecord<string, ReadonlyArray<unknown>>\n    ) => Effect.Effect<\n      Queue.Dequeue<SelectType<Table>, IndexedDbQueryError | Cause.NoSuchElementError>,\n      never,\n      Scope.Scope | IndexedDbTable.Context<Table>\n    >\n  }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbQueryBuilder.ts#L598"
   },
   {
     "_tag": "Interface",
@@ -1386,7 +1389,7 @@
     "since": "4.0.0",
     "category": "models",
     "signature": "export interface Filter<\n    Table extends IndexedDbTable.AnyWithProps,\n    Index extends IndexedDbDatabase.IndexFromTable<Table>\n  > extends\n    Effect.Effect<\n      Array<SelectType<Table>>,\n      IndexedDbQueryError,\n      IndexedDbTable.Context<Table>\n    >\n  {\n    readonly select: Select<Table, Index>\n    readonly predicate: (item: IndexedDbTable.Encoded<Table>) => boolean\n    readonly filter: (\n      f: (value: IndexedDbTable.Encoded<Table>) => boolean\n    ) => Filter<Table, Index>\n  }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbQueryBuilder.ts#L637"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbQueryBuilder.ts#L647"
   },
   {
     "_tag": "Interface",
@@ -1401,8 +1404,8 @@
     "examples": [],
     "since": "4.0.0",
     "category": "models",
-    "signature": "export interface Modify<\n    Table extends IndexedDbTable.AnyWithProps\n  > extends\n    Effect.Effect<\n      globalThis.IDBValidKey,\n      IndexedDbQueryError,\n      IndexedDbTable.Context<Table>\n    >\n  {\n    readonly operation: \"add\" | \"put\"\n    readonly from: From<Table>\n    readonly value: ModifyWithKey<Table>\n\n    /**\n     * Invalidate any queries using Reactivity service with the provided keys.\n     *\n     * Defaults to using the table name as a key if no keys are provided.\n     */\n    readonly invalidate: (\n      keys?: ReadonlyArray<unknown> | Record.ReadonlyRecord<string, ReadonlyArray<unknown>> | undefined\n    ) => Effect.Effect<globalThis.IDBValidKey, IndexedDbQueryError, IndexedDbTable.Context<Table>>\n  }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbQueryBuilder.ts#L660"
+    "signature": "export interface Modify<\n    Table extends IndexedDbTable.AnyWithProps\n  > extends\n    Effect.Effect<\n      globalThis.IDBValidKey,\n      IndexedDbQueryError,\n      IndexedDbTable.Context<Table>\n    >\n  {\n    readonly operation: \"add\" | \"put\"\n    readonly from: From<Table>\n    readonly value: ModifyWithKey<Table>\n\n    /**\n     * Invalidate any queries using Reactivity service with the provided keys.\n     *\n     * **Details**\n     *\n     * If no keys are provided, the table name is used as the reactivity key.\n     */\n    readonly invalidate: (\n      keys?: ReadonlyArray<unknown> | Record.ReadonlyRecord<string, ReadonlyArray<unknown>> | undefined\n    ) => Effect.Effect<globalThis.IDBValidKey, IndexedDbQueryError, IndexedDbTable.Context<Table>>\n  }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbQueryBuilder.ts#L670"
   },
   {
     "_tag": "Interface",
@@ -1417,8 +1420,8 @@
     "examples": [],
     "since": "4.0.0",
     "category": "models",
-    "signature": "export interface ModifyAll<\n    Table extends IndexedDbTable.AnyWithProps\n  > extends\n    Effect.Effect<\n      Array<globalThis.IDBValidKey>,\n      IndexedDbQueryError,\n      IndexedDbTable.Context<Table>\n    >\n  {\n    readonly operation: \"add\" | \"put\"\n    readonly from: From<Table>\n    readonly values: Array<ModifyWithKey<Table>>\n\n    /**\n     * Invalidate any queries using Reactivity service with the provided keys.\n     *\n     * Defaults to using the table name as a key if no keys are provided.\n     */\n    readonly invalidate: (\n      keys?: ReadonlyArray<unknown> | Record.ReadonlyRecord<string, ReadonlyArray<unknown>> | undefined\n    ) => Effect.Effect<globalThis.IDBValidKey, IndexedDbQueryError, IndexedDbTable.Context<Table>>\n  }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbQueryBuilder.ts#L689"
+    "signature": "export interface ModifyAll<\n    Table extends IndexedDbTable.AnyWithProps\n  > extends\n    Effect.Effect<\n      Array<globalThis.IDBValidKey>,\n      IndexedDbQueryError,\n      IndexedDbTable.Context<Table>\n    >\n  {\n    readonly operation: \"add\" | \"put\"\n    readonly from: From<Table>\n    readonly values: Array<ModifyWithKey<Table>>\n\n    /**\n     * Invalidate any queries using Reactivity service with the provided keys.\n     *\n     * **Details**\n     *\n     * If no keys are provided, the table name is used as the reactivity key.\n     */\n    readonly invalidate: (\n      keys?: ReadonlyArray<unknown> | Record.ReadonlyRecord<string, ReadonlyArray<unknown>> | undefined\n    ) => Effect.Effect<globalThis.IDBValidKey, IndexedDbQueryError, IndexedDbTable.Context<Table>>\n  }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbQueryBuilder.ts#L701"
   },
   {
     "_tag": "TypeAlias",

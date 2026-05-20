@@ -9,7 +9,7 @@ Checks whether an `Option` is `None` (absent).
 
 - Branching on absence before accessing `.value`
 
-**Behavior**
+**Details**
 
 - Acts as a type guard, narrowing to `None<A>`
 
@@ -35,6 +35,6 @@ console.log(Option.isNone(Option.none()))
 declare const isNone: <A>(self: Option<A>) => self is None<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L387)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L391)
 
 Since v2.0.0

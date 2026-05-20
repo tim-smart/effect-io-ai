@@ -11,6 +11,6 @@ Accumulates incoming elements into an array.
 declare const collect: <In>() => Sink<Array<In>, In>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Sink.ts#L1371)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Sink.ts#L1409)
 
 Since v4.0.0

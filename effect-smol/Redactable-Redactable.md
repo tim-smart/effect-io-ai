@@ -5,10 +5,15 @@ Module: `Redactable`<br />
 
 Interface for objects that provide context-aware redacted representations.
 
-- Implement this interface on any class or object that holds sensitive data
-  and should present a sanitized form when inspected or logged.
-- The `[symbolRedactable]` method receives the current fiber's `Context`.
-- If no fiber is active, an empty `Context` is provided.
+**When to use**
+
+Implement this interface on any class or object that holds sensitive data and
+should present a sanitized form when inspected or logged.
+
+**Details**
+
+The `[symbolRedactable]` method receives the current fiber's `Context`. If no
+fiber is active, an empty `Context` is provided.
 
 **Example** (Masking an API key)
 
@@ -24,7 +29,8 @@ class ApiKey {
 }
 ```
 
-See also:
+**See**
+
 - `symbolRedactable` - the symbol key to implement
 - `redact` - apply redaction to any value
 - `isRedactable` - type guard for this interface
@@ -37,6 +43,6 @@ export interface Redactable {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Redactable.ts#L137)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Redactable.ts#L142)
 
 Since v3.10.0

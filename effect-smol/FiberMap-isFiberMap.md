@@ -5,6 +5,8 @@ Module: `FiberMap`<br />
 
 Returns `true` if a value is a `FiberMap`.
 
+**Details**
+
 This is a type guard that checks for the `FiberMap` runtime marker.
 
 **Example** (Checking if a value is a FiberMap)
@@ -27,6 +29,6 @@ const program = Effect.gen(function*() {
 declare const isFiberMap: (u: unknown) => u is FiberMap<unknown>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FiberMap.ts#L120)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FiberMap.ts#L122)
 
 Since v2.0.0

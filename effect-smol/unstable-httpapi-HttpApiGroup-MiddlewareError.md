@@ -11,6 +11,6 @@ Computes the middleware error union for every endpoint in a group.
 type MiddlewareError<Group> = HttpApiEndpoint.MiddlewareError<Endpoints<Group>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiGroup.ts#L220)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiGroup.ts#L226)
 
 Since v4.0.0

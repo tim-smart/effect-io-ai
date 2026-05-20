@@ -5,6 +5,8 @@ Module: `DateTime`<br />
 
 Format a `DateTime` as a string using the `DateTimeFormat` API.
 
+**Details**
+
 This forces the time zone to be UTC.
 
 **Example** (Formatting DateTime values in UTC)
@@ -35,6 +37,6 @@ console.log(utcFormatted) // "06/15/2024, 02:30 PM UTC"
 declare const formatUtc: { (options?: (Intl.DateTimeFormatOptions & { readonly locale?: string | undefined; }) | undefined): (self: DateTime) => string; (self: DateTime, options?: (Intl.DateTimeFormatOptions & { readonly locale?: string | undefined; }) | undefined): string; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L2412)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L2533)
 
 Since v3.6.0

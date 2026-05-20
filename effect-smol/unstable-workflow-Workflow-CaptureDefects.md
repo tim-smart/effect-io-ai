@@ -3,10 +3,11 @@ Module: `Workflow`<br />
 
 ## Workflow.CaptureDefects
 
-If you set this annotation to `true` for a workflow, it will capture defects
-and include them in the result of the workflow or it's activities.
+Captures defects for a workflow and includes them in the result of the workflow or its activities.
 
-By default, this is set to `true`, meaning that defects will be captured.
+**Details**
+
+By default, this annotation is set to `true`, meaning defects are captured.
 
 **Signature**
 
@@ -14,6 +15,6 @@ By default, this is set to `true`, meaning that defects will be captured.
 declare const CaptureDefects: Context.Reference<boolean>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Workflow.ts#L853)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Workflow.ts#L854)
 
 Since v4.0.0

@@ -11,6 +11,6 @@ Narrows an `AST` to `Number`.
 declare const isNumber: (ast: AST) => ast is Number
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L226)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L228)
 
 Since v4.0.0

@@ -5,6 +5,8 @@ Module: `Envelope`<br />
 
 Union of cluster envelopes exchanged for an RPC request.
 
+**Details**
+
 An envelope is either a request, an acknowledgement for a streamed reply chunk,
 or an interrupt signal.
 
@@ -14,6 +16,6 @@ or an interrupt signal.
 type Envelope<R> = Request<R> | AckChunk | Interrupt
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Envelope.ts#L54)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Envelope.ts#L56)
 
 Since v4.0.0

@@ -6,6 +6,8 @@ Module: `Stream`<br />
 Runs both streams concurrently until one stream emits its first value, then
 mirrors that winning stream and interrupts the other.
 
+**Details**
+
 A failure or completion from one side before the other side emits does not
 win the race unless both sides fail or complete before emitting. After a
 winner is chosen, that stream's later failures are propagated.
@@ -35,6 +37,6 @@ Effect.runPromise(program)
 declare const race: { <AR, ER, RR>(right: Stream<AR, ER, RR>): <AL, EL, RL>(left: Stream<AL, EL, RL>) => Stream<AL | AR, EL | ER, RL | RR>; <AL, EL, RL, AR, ER, RR>(left: Stream<AL, EL, RL>, right: Stream<AR, ER, RR>): Stream<AL | AR, EL | ER, RL | RR>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L4126)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L4193)
 
 Since v3.7.0

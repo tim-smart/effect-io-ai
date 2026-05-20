@@ -6,7 +6,7 @@ Module: `Effect`<br />
 Runs an effect and returns a `Promise` that resolves to an `Exit`, which
 represents the outcome (success or failure) of the effect.
 
-**When to Use**
+**When to use**
 
 Use `runPromiseExit` when you need to determine if an effect succeeded
 or failed, including any defects, and you want to work with a `Promise`.
@@ -52,6 +52,6 @@ Effect.runPromiseExit(Effect.fail("my error")).then(console.log)
 declare const runPromiseExit: <A, E>(effect: Effect<A, E>, options?: RunOptions | undefined) => Promise<Exit.Exit<A, E>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L8391)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L8481)
 
 Since v2.0.0

@@ -5,6 +5,8 @@ Module: `Queue`<br />
 
 Interrupts the queue gracefully, transitioning it to a closing state.
 
+**Details**
+
 This operation stops accepting new offers but allows existing messages to be consumed.
 Once all messages are drained, the queue transitions to the Done state with an interrupt cause.
 
@@ -47,6 +49,6 @@ const program = Effect.gen(function*() {
 declare const interrupt: <A, E>(self: Enqueue<A, E>) => Effect<boolean>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Queue.ts#L989)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Queue.ts#L1029)
 
 Since v4.0.0

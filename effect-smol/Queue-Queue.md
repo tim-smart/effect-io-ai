@@ -5,6 +5,8 @@ Module: `Queue`<br />
 
 A `Queue` is an asynchronous queue that can be offered to and taken from.
 
+**Details**
+
 It also supports signaling that it is done or failed.
 
 **Example** (Offering and taking queue values)
@@ -37,6 +39,6 @@ export interface Queue<in out A, in out E = never> extends Enqueue<A, E>, Dequeu
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Queue.ts#L273)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Queue.ts#L283)
 
 Since v2.0.0

@@ -5,6 +5,8 @@ Module: `Rpc`<br />
 
 Computes the allowed handler result type for an RPC.
 
+**Details**
+
 Streaming RPCs may return a stream or an effect that produces a queue. Other
 RPCs return an effect that succeeds with the success value or a deferred
 success value.
@@ -38,6 +40,6 @@ type ResultFrom<R, Services> = R extends Rpc<
   never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Rpc.ts#L723)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Rpc.ts#L747)
 
 Since v4.0.0

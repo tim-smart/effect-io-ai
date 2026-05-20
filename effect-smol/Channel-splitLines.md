@@ -7,6 +7,8 @@ Splits upstream string chunks into lines, recognizing `\n`, `\r\n`, and
 standalone `\r` as line terminators. The behavior matches
 `String.linesIterator` regardless of how the input is chunked.
 
+**Details**
+
 A line terminator at the very end of the stream does **not** produce a
 trailing empty line (consistent with `String.linesIterator`). Conversely,
 if the stream ends without a terminator the final partial line is still
@@ -32,6 +34,6 @@ Effect.runPromise(Effect.gen(function*() {
 declare const splitLines: <Err, Done>() => Channel<Arr.NonEmptyReadonlyArray<string>, Err, Done, Arr.NonEmptyReadonlyArray<string>, Err, Done>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L6147)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L6225)
 
 Since v2.0.0

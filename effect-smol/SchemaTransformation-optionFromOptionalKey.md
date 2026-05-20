@@ -6,11 +6,13 @@ Module: `SchemaTransformation`<br />
 Decodes an optional struct key into `Option<T>` and encodes `Option<T>`
 back to an optional key.
 
-When to use this:
+**When to use**
+
 - Converting optional struct keys (declared with `Schema.optionalKey`) to
   `Option` values.
 
-Behavior:
+**Details**
+
 - Decode: absent key (`None`) → `Some(None)`, present key (`Some(v)`) → `Some(Some(v))`.
 - Encode: `Some(None)` → `None` (omit key), `Some(Some(v))` → `Some(v)`.
 - Uses `transformOptional` under the hood.
@@ -30,7 +32,8 @@ const schema = Schema.Struct({
 })
 ```
 
-See also:
+**See**
+
 - `optionFromOptional`
 - `optionFromUndefinedOr`
 - `transformOptional`
@@ -41,6 +44,6 @@ See also:
 declare const optionFromOptionalKey: <T>() => Transformation<Option.Option<T>, T>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L1223)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L1259)
 
 Since v4.0.0

@@ -5,8 +5,14 @@ Module: `LogLevel`<br />
 
 Determines if the first log level is more severe than the second.
 
+**When to use**
+
+Use this for strict severity comparisons when filtering logs based on minimum
+severity requirements.
+
+**Details**
+
 Returns `true` if `self` represents a more severe level than `that`.
-This is useful for filtering logs based on minimum severity requirements.
 
 **Example** (Checking higher severity)
 
@@ -37,6 +43,6 @@ console.log(isMoreSevereThanInfo("Debug")) // false
 declare const isGreaterThan: { (that: LogLevel): (self: LogLevel) => boolean; (self: LogLevel, that: LogLevel): boolean; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/LogLevel.ts#L182)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/LogLevel.ts#L193)
 
 Since v4.0.0

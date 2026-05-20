@@ -5,6 +5,8 @@ Module: `HttpRouter`<br />
 
 Adds a path prefix to a route path.
 
+**Details**
+
 Trailing slashes are removed from the prefix; `/` becomes the prefix itself and
 `*` becomes a wildcard route under the prefix.
 
@@ -14,6 +16,6 @@ Trailing slashes are removed from the prefix; `/` becomes the prefix itself and
 declare const prefixPath: { (prefix: string): (self: string) => string; (self: string, prefix: string): string; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpRouter.ts#L683)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpRouter.ts#L705)
 
 Since v4.0.0

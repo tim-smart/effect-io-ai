@@ -5,6 +5,8 @@ Module: `Response`<br />
 
 Response part indicating the end of streaming tool parameters.
 
+**Details**
+
 Marks the completion of a tool parameter stream, indicating that all
 parameter data has been sent and the tool call is ready to be executed.
 
@@ -19,6 +21,6 @@ export interface ToolParamsEndPart extends BasePart<"tool-params-end", ToolParam
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Response.ts#L1257)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Response.ts#L1258)
 
 Since v4.0.0

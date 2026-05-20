@@ -12,6 +12,6 @@ or Closed (shutdown and no longer accepting operations).
 type State<K, A, E> = State.Open<K, A, E> | State.Closed
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RcMap.ts#L89)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RcMap.ts#L90)
 
 Since v4.0.0

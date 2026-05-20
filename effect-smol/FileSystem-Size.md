@@ -5,6 +5,8 @@ Module: `FileSystem`<br />
 
 Represents a file size in bytes using a branded bigint.
 
+**Details**
+
 This type ensures type safety when working with file sizes, preventing
 accidental mixing of regular numbers with size values. The underlying
 bigint allows for handling very large file sizes beyond JavaScript's
@@ -32,6 +34,6 @@ const truncateToSize = Effect.fnUntraced(function*(path: string, size: FileSyste
 type Size = Brand.Branded<bigint, "Size">
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FileSystem.ts#L398)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FileSystem.ts#L416)
 
 Since v4.0.0

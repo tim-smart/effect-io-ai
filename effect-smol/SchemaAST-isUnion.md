@@ -11,6 +11,6 @@ Narrows an `AST` to `Union`.
 declare const isUnion: (ast: AST) => ast is Union<AST>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L314)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L316)
 
 Since v3.10.0

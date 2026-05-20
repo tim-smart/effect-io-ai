@@ -5,6 +5,8 @@ Module: `BigInt`<br />
 
 Safely divides one `bigint` by another.
 
+**Details**
+
 Uses JavaScript `bigint` division, so non-exact quotients are truncated
 toward zero. Returns `Option.none()` when the divisor is `0n`.
 
@@ -24,6 +26,6 @@ assert.deepStrictEqual(BigInt.divide(6n, 0n), Option.none())
 declare const divide: { (that: bigint): (self: bigint) => Option.Option<bigint>; (self: bigint, that: bigint): Option.Option<bigint>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigInt.ts#L138)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigInt.ts#L140)
 
 Since v2.0.0

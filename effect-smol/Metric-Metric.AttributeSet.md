@@ -81,6 +81,6 @@ const program = Effect.gen(function*() {
 type AttributeSet = Readonly<Record<string, string>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Metric.ts#L1267)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Metric.ts#L1279)
 
 Since v4.0.0

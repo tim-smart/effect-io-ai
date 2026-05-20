@@ -12,6 +12,6 @@ found in the parsed JSON or if the provided JSON text is not parseable.
 declare const unsafeSecureJsonParse: (text: string) => unknown
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tool.ts#L1889)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tool.ts#L1951)
 
 Since v4.0.0

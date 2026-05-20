@@ -5,6 +5,8 @@ Module: `EventJournal`<br />
 
 Schema model for a committed event journal entry.
 
+**Details**
+
 An entry records its ID, event tag, primary key, and MessagePack-encoded
 payload, with helpers for array MessagePack encoding and creation timestamps.
 
@@ -14,6 +16,6 @@ payload, with helpers for array MessagePack encoding and creation timestamps.
 declare class Entry
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventJournal.ts#L259)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventJournal.ts#L271)
 
 Since v4.0.0

@@ -3,9 +3,7 @@ Module: `Sse`<br />
 
 ## Sse.EventEncoded
 
-Untagged Server-Sent Events payload shape.
-
-It contains the event name, optional event ID, and string data payload.
+Untagged Server-Sent Events payload shape containing the event name, optional event ID, and string data payload.
 
 **Signature**
 
@@ -17,6 +15,6 @@ export interface EventEncoded {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Sse.ts#L498)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Sse.ts#L501)
 
 Since v4.0.0

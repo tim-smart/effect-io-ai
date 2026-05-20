@@ -5,6 +5,8 @@ Module: `Result`<br />
 
 Checks whether a `Result` is a `Failure`.
 
+**Details**
+
 - Acts as a TypeScript type guard, narrowing to `Failure<A, E>`
 - After narrowing, you can access `.failure` to read the error value
 
@@ -32,6 +34,6 @@ if (Result.isFailure(result)) {
 declare const isFailure: <A, E>(self: Result<A, E>) => self is Failure<A, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L567)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L597)
 
 Since v4.0.0

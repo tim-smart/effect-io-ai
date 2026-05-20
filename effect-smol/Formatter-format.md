@@ -5,14 +5,16 @@ Module: `Formatter`<br />
 
 Converts any JavaScript value into a human-readable string.
 
-When to use:
+**When to use**
+
 - Pretty-printing values for debugging, logging, or error messages.
 - You need to handle `BigInt`, `Symbol`, `Set`, `Map`, `Date`, `RegExp`,
   or class instances that `JSON.stringify` cannot represent.
 - You want circular references shown as `"[Circular]"` instead of
   throwing.
 
-Behavior:
+**Details**
+
 - Does not mutate input.
 - Output is **not** valid JSON; use `formatJson` when you need
   parseable JSON.
@@ -28,8 +30,6 @@ Behavior:
 - Arrays/objects with 0–1 entries are inline; larger ones are
   pretty-printed when `space` is set.
 - Circular references are replaced with `"[Circular]"`.
-
-Options:
 - `space` — indentation unit (number of spaces, or a string like
   `"\t"`). Defaults to `0` (compact).
 - `ignoreToString` — skip calling `toString()`. Defaults to `false`.
@@ -69,7 +69,10 @@ console.log(Formatter.format(obj))
 // {"name":"loop","self":[Circular]}
 ```
 
-See also: `formatJson`, `Formatter`
+**See**
+
+- `formatJson`
+- `Formatter`
 
 **Signature**
 
@@ -77,6 +80,6 @@ See also: `formatJson`, `Formatter`
 declare const format: (input: unknown, options?: { readonly space?: number | string | undefined; readonly ignoreToString?: boolean | undefined; }) => string
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Formatter.ts#L162)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Formatter.ts#L161)
 
 Since v2.0.0

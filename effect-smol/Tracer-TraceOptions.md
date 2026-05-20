@@ -4,7 +4,6 @@ Module: `Tracer`<br />
 ## Tracer.TraceOptions
 
 Options that control stack trace capture for tracing wrappers.
-
 `captureStackTrace` can disable capture or provide a lazy stack string.
 
 **Signature**
@@ -15,6 +14,6 @@ export interface TraceOptions {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tracer.ts#L288)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tracer.ts#L284)
 
 Since v4.0.0

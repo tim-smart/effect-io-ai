@@ -5,14 +5,15 @@ Module: `SchemaGetter`<br />
 
 Creates a getter that applies a pure function to present values.
 
-This is the most commonly used constructor. It transforms `Some(e)` to
-`Some(f(e))` and leaves `None` unchanged.
+**When to use**
 
-Use this when:
 - You have a pure, infallible transformation between types.
 - Building encode/decode pairs for `Schema.decodeTo`.
 
-Behavior:
+**Details**
+
+- This is the most commonly used constructor.
+- Transforms `Some(e)` to `Some(f(e))` and leaves `None` unchanged.
 - Pure, does not mutate input.
 - Skips `None` inputs — only called when a value is present.
 - Never fails.
@@ -30,10 +31,11 @@ const NumberFromString = Schema.String.pipe(
 )
 ```
 
-See also:
-- `transformOrFail` — when the transformation can fail
-- `transformOptional` — when you need to handle `None` inputs
-- `passthrough` — when no transformation is needed
+**See**
+
+- `transformOrFail` - when the transformation can fail
+- `transformOptional` - when you need to handle `None` inputs
+- `passthrough` - when no transformation is needed
 
 **Signature**
 
@@ -41,6 +43,6 @@ See also:
 declare const transform: <T, E>(f: (e: E) => T) => Getter<T, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L560)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L571)
 
 Since v4.0.0

@@ -6,6 +6,8 @@ Module: `SchemaParser`<br />
 Creates an encoder for input already typed as the schema's decoded `Type`,
 returning a `Result`.
 
+**Details**
+
 The returned function produces `Result.succeed` with the schema's `Encoded`
 value on success or `Result.fail` with a `SchemaIssue.Issue` on encoding
 failure.
@@ -16,6 +18,6 @@ failure.
 declare const encodeResult: <S extends Schema.Encoder<unknown>>(schema: S, options?: AST.ParseOptions) => (input: S["Type"], options?: AST.ParseOptions) => Result.Result<S["Encoded"], Issue.Issue>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaParser.ts#L531)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaParser.ts#L585)
 
 Since v4.0.0

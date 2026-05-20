@@ -5,6 +5,8 @@ Module: `Cause`<br />
 
 Narrows a `Reason` to `Die`.
 
+**When to use**
+
 Useful as a predicate for `Array.filter` when iterating over `cause.reasons`.
 
 **Example** (filtering die reasons)
@@ -28,6 +30,6 @@ console.log(dies[0].defect) // "defect"
 declare const isDieReason: <E>(self: Reason<E>) => self is Die
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L257)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L265)
 
 Since v4.0.0

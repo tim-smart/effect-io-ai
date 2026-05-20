@@ -5,6 +5,8 @@ Module: `HttpRouter`<br />
 
 Service interface for registering HTTP routes and middleware.
 
+**Details**
+
 An `HttpRouter` can add routes, apply path prefixes, install global middleware,
 and expose the registered routes as an Effect that handles the current server
 request.
@@ -61,6 +63,6 @@ export interface HttpRouter {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpRouter.ts#L54)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpRouter.ts#L56)
 
 Since v4.0.0

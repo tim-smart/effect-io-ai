@@ -6,11 +6,13 @@ Module: `Schema`<br />
 Validates that an object contains at most the specified number of properties.
 This includes both string and symbol keys when counting properties.
 
-**JSON Schema**
+**Details**
+
+JSON Schema:
 
 This check corresponds to the `maxProperties` constraint in JSON Schema.
 
-**Arbitrary**
+Arbitrary:
 
 When generating test data with fast-check, this applies a `maxLength`
 constraint to the array of entries that is generated before being converted
@@ -23,6 +25,6 @@ of properties.
 declare const isMaxProperties: (maxProperties: number, annotations?: Annotations.Filter) => AST.Filter<object>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L7231)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L7468)
 
 Since v4.0.0

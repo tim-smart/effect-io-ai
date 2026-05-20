@@ -3,10 +3,10 @@ Module: `TxSemaphore`<br />
 
 ## TxSemaphore.TxSemaphore
 
-A transactional semaphore that manages permits using Software Transactional Memory (STM) semantics.
-
-TxSemaphore provides atomic permit acquisition and release operations within Effect transactions,
-ensuring thread-safe concurrency control for limited resources.
+A transactional semaphore that manages permits using Software Transactional
+Memory (STM) semantics, providing atomic permit acquisition and release
+operations within Effect transactions for concurrency control over limited
+resources.
 
 **Example** (Managing permits transactionally)
 

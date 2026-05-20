@@ -10,7 +10,7 @@ Wraps the given value into an `Option` to represent its presence.
 - Wrapping a known-present value as `Option`
 - Returning a successful result from a partial function
 
-**Behavior**
+**Details**
 
 - Always returns `Some<A>`
 - Does not filter `null` or `undefined`; use `fromNullishOr` for that
@@ -38,6 +38,6 @@ console.log(value)
 declare const some: <A>(value: A) => Option<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L321)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L325)
 
 Since v2.0.0

@@ -10,7 +10,7 @@ Represents the presence of a value within an `Option`.
 - Use as a type guard target when narrowing via `isSome`
 - Access the inner value via `.value`
 
-**Behavior**
+**Details**
 
 - `_tag` is always `"Some"`
 - `.value` holds the contained value of type `A`

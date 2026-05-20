@@ -12,6 +12,6 @@ default of the current `DateTime.Utc`.
 declare const DateTimeFromNumberWithNow: VariantSchema.Overrideable<Schema.DateTimeUtcFromMillis>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Model.ts#L447)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Model.ts#L464)
 
 Since v4.0.0

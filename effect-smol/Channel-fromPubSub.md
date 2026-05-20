@@ -5,6 +5,8 @@ Module: `Channel`<br />
 
 Create a channel from a PubSub that outputs individual values.
 
+**Details**
+
 This constructor creates a channel that reads from a PubSub by automatically
 subscribing to it. The channel outputs individual values as they are published
 to the PubSub, making it ideal for real-time streaming scenarios.
@@ -96,6 +98,6 @@ const eventProcessor = Effect.gen(function*() {
 declare const fromPubSub: <A>(pubsub: PubSub.PubSub<A>) => Channel<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L1529)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L1551)
 
 Since v2.0.0

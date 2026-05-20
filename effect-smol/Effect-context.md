@@ -5,6 +5,8 @@ Module: `Effect`<br />
 
 Returns the complete context.
 
+**Details**
+
 This function allows you to access all services that are currently available
 in the effect's environment. This can be useful for debugging, introspection,
 or when you need to pass the entire context to another function.
@@ -44,6 +46,6 @@ const provided = Effect.provideContext(program, context)
 declare const context: <R = never>() => Effect<Context.Context<R>, never, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L5301)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L5363)
 
 Since v2.0.0

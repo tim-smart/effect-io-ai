@@ -5,18 +5,20 @@ Module: `Reducer`<br />
 
 Creates a `Reducer` from a `combine` function and an `initialValue`.
 
-When to use:
+**When to use**
+
 - You have a custom reducing operation not covered by a pre-built reducer.
 - You want to provide an optimized `combineAll` (e.g. short-circuiting on
   a known absorbing element like `0` for multiplication).
 
-Behavior:
+**Details**
+
 - If `combineAll` is omitted, a default left-to-right fold starting from
   `initialValue` is used.
 - If `combineAll` is provided, it completely replaces the default fold.
 - Pure – the returned reducer does not mutate its arguments.
 
-**Example** (multiplication with short-circuit)
+**Example** (Multiplication with short-circuit)
 
 ```ts
 import { Reducer } from "effect"
@@ -52,6 +54,6 @@ console.log(Product.combineAll([2, 0, 4]))
 declare const make: <A>(combine: (self: A, that: A) => A, initialValue: A, combineAll?: (collection: Iterable<A>) => A) => Reducer<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Reducer.ts#L162)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Reducer.ts#L169)
 
 Since v4.0.0

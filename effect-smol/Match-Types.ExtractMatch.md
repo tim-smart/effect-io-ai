@@ -5,6 +5,8 @@ Module: `Match`<br />
 
 Extracts and narrows the matched type from an input type given a pattern.
 
+**Details**
+
 This is the core type utility that performs the actual type extraction
 and narrowing logic. It handles the complex type-level computation that
 determines what type results from applying a pattern to an input type.
@@ -38,6 +40,6 @@ type ExtractMatch<I, P> = [ExtractAndNarrow<I, P>] extends [infer EI] ? EI
     : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L2315)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L2389)
 
 Since v4.0.0

@@ -5,9 +5,12 @@ Module: `ConfigProvider`<br />
 
 Creates a `ConfigProvider` from a raw lookup function.
 
-When to use:
-- Implementing a provider backed by a custom store (database, remote API,
-  in-memory map, etc.).
+**When to use**
+
+Use this when implementing a provider backed by a custom store, such as a
+database, remote API, or in-memory map.
+
+**Details**
 
 The `get` callback receives a `Path` and must return
 `Effect<Node | undefined, SourceError>`. Return `undefined` when the path
@@ -47,6 +50,6 @@ const provider = ConfigProvider.make((path) => {
 declare const make: (get: (path: Path) => Effect.Effect<Node | undefined, SourceError>, mapInput?: (path: Path) => Path, prefix?: Path) => ConfigProvider
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ConfigProvider.ts#L412)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ConfigProvider.ts#L430)
 
 Since v2.0.0

@@ -5,6 +5,8 @@ Module: `Sink`<br />
 
 Overloaded function type returned by `Sink.make`.
 
+**Details**
+
 The first pipeline function receives the sink input as a `Stream<In>`. The
 final pipeline step must return an `Effect`, whose success value becomes
 the sink result.
@@ -102,6 +104,6 @@ export interface Constructor<In> {
   }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Sink.ts#L333)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Sink.ts#L349)
 
 Since v4.0.0

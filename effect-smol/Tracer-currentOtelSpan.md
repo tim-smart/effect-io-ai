@@ -3,13 +3,14 @@ Module: `Tracer`<br />
 
 ## Tracer.currentOtelSpan
 
-Get the current OpenTelemetry span.
+Gets the current OpenTelemetry span.
 
-Works with both the official OpenTelemetry API (via `Tracer.layer`,
-`NodeSdk.layer`, etc.) and the lightweight OTLP module (`OtlpTracer.layer`).
+**Details**
 
-When using OTLP, the returned span is a wrapper that conforms to the
-OpenTelemetry `Span` interface.
+This accessor works with both the official OpenTelemetry API, such as
+`Tracer.layer` and `NodeSdk.layer`, and the lightweight OTLP module, such as
+`OtlpTracer.layer`. When using OTLP, the returned span is a wrapper that
+conforms to the OpenTelemetry `Span` interface.
 
 **Signature**
 
@@ -17,6 +18,6 @@ OpenTelemetry `Span` interface.
 declare const currentOtelSpan: Effect.Effect<Otel.Span, Cause.NoSuchElementError, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Tracer.ts#L251)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Tracer.ts#L252)
 
 Since v4.0.0

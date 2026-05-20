@@ -5,7 +5,12 @@ Module: `Exit`<br />
 
 Extracts the Cause from a failed Exit for use in filter pipelines.
 
+**When to use**
+
 - Use with Filter-based composition when you want the raw Cause, not the Failure wrapper
+
+**Details**
+
 - Returns the `Cause<E>` if the Exit failed, or a `Filter.fail` wrapping the Success otherwise
 
 **Example** (Filtering for the cause)
@@ -30,6 +35,6 @@ const result = Exit.filterCause(exit)
 declare const filterCause: <A, E>(self: Exit<A, E>) => Result.Result<Cause.Cause<E>, Success<A>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Exit.ts#L603)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Exit.ts#L686)
 
 Since v4.0.0

@@ -5,6 +5,8 @@ Module: `Effect`<br />
 
 Ensures that an effect's requirements type extends a given type `R`.
 
+**Details**
+
 This function provides compile-time type checking to ensure that the
 requirements (context) type of an effect conforms to a specific type constraint.
 
@@ -31,6 +33,6 @@ const constrainedEffect = satisfiesStringServices(validEffect)
 declare const satisfiesServicesType: <R>() => <A, E, R2 extends R>(effect: Effect<A, E, R2>) => Effect<A, E, R2>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L14241)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L14362)
 
 Since v4.0.0

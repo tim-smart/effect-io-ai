@@ -5,11 +5,13 @@ Module: `Optic`<br />
 
 A `Prism` that focuses on the value inside `Option.Some`.
 
-When to use:
+**When to use**
+
 - You have an `Option<A>` and want to read/update the inner value only
   when it is `Some`.
 
-Behavior:
+**Details**
+
 - `getResult` fails with an error message when the option is `None`.
 - `set(a)` wraps `a` in `Option.some(a)`.
 
@@ -41,6 +43,6 @@ console.log(_some.set(10))
 declare const some: <A>() => Prism<Option.Option<A>, A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Optic.ts#L1591)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Optic.ts#L1635)
 
 Since v4.0.0

@@ -11,6 +11,6 @@ Text editor command payload for viewing file contents or listing directory conte
 type TextEditorViewCommand = typeof TextEditorViewCommand.Type
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L1108)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L1131)
 
 Since v4.0.0

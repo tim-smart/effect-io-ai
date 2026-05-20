@@ -5,6 +5,8 @@ Module: `Cause`<br />
 
 Creates a standalone `Fail` reason (not wrapped in a `Cause`).
 
+**When to use**
+
 Use this when you need to construct individual reasons for
 `fromReasons` or for direct comparison.
 
@@ -29,6 +31,6 @@ console.log(reason.error) // "error"
 declare const makeFailReason: <E>(error: E) => Fail<E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L569)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L595)
 
 Since v4.0.0

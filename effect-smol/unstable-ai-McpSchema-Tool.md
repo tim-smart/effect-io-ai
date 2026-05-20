@@ -11,6 +11,6 @@ Definition for a tool the client can call.
 declare class Tool
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L1340)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L1374)
 
 Since v4.0.0

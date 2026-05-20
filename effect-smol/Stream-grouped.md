@@ -5,6 +5,8 @@ Module: `Stream`<br />
 
 Partitions the stream into non-empty arrays of the specified size.
 
+**Details**
+
 The final array may be smaller if there are not enough elements to fill it.
 
 **Example** (Grouping elements by size)
@@ -30,6 +32,6 @@ Effect.runPromise(program)
 declare const grouped: { (n: number): <A, E, R>(self: Stream<A, E, R>) => Stream<Arr.NonEmptyReadonlyArray<A>, E, R>; <A, E, R>(self: Stream<A, E, R>, n: number): Stream<Arr.NonEmptyReadonlyArray<A>, E, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L7811)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L7928)
 
 Since v2.0.0

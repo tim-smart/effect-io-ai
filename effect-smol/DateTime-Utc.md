@@ -6,6 +6,8 @@ Module: `DateTime`<br />
 Represents a `DateTime` stored as an absolute UTC instant with no associated
 time zone.
 
+**Details**
+
 Use `DateTime.isUtc` to narrow a `DateTime` to this variant.
 
 **Signature**
@@ -18,6 +20,6 @@ export interface Utc extends DateTime.Proto {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L88)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L90)
 
 Since v3.6.0

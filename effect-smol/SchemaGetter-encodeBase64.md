@@ -5,7 +5,8 @@ Module: `SchemaGetter`<br />
 
 Encodes a `Uint8Array` or string to a Base64 string.
 
-Behavior:
+**Details**
+
 - Pure, never fails.
 
 **Example** (Encode to Base64)
@@ -16,10 +17,11 @@ import { SchemaGetter } from "effect"
 const encode = SchemaGetter.encodeBase64<Uint8Array>()
 ```
 
-See also:
-- `decodeBase64` — inverse (to `Uint8Array`)
-- `decodeBase64String` — inverse (to `string`)
-- `encodeBase64Url` — URL-safe variant
+**See**
+
+- `decodeBase64` - inverse (to `Uint8Array`)
+- `decodeBase64String` - inverse (to `string`)
+- `encodeBase64Url` - URL-safe variant
 
 **Signature**
 
@@ -27,6 +29,6 @@ See also:
 declare const encodeBase64: <E extends Uint8Array | string>() => Getter<string, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L1222)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L1252)
 
 Since v4.0.0

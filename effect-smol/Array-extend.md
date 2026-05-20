@@ -6,6 +6,8 @@ Module: `Array`<br />
 Applies a function to each suffix of the array (starting from each index),
 collecting the results.
 
+**Details**
+
 - For index `i`, the function receives `self.slice(i)`.
 
 **Example** (Suffix lengths)
@@ -22,6 +24,6 @@ console.log(Array.extend([1, 2, 3], (as) => as.length)) // [3, 2, 1]
 declare const extend: { <A, B>(f: (as: ReadonlyArray<A>) => B): (self: ReadonlyArray<A>) => Array<B>; <A, B>(self: ReadonlyArray<A>, f: (as: ReadonlyArray<A>) => B): Array<B>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L3697)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L3835)
 
 Since v2.0.0

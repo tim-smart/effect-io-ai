@@ -5,6 +5,8 @@ Module: `HttpServer`<br />
 
 Formats a server address as a display string.
 
+**Details**
+
 TCP addresses are formatted as `http://host:port`; Unix socket addresses are
 formatted as `unix://path`.
 
@@ -14,6 +16,6 @@ formatted as `unix://path`.
 declare const formatAddress: (address: Address) => string
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpServer.ts#L216)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpServer.ts#L226)
 
 Since v4.0.0

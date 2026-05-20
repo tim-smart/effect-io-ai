@@ -5,6 +5,8 @@ Module: `Tool`<br />
 
 A dynamic tool is a tool where the schema may not be known at compile time.
 
+**Details**
+
 Dynamic tools support two modes:
 - **Effect Schema mode**: Full type safety with validation (like `Tool.make`)
 - **JSON Schema mode**: Raw JSON Schema for the model, handler receives `unknown`
@@ -73,6 +75,6 @@ export interface Dynamic<
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tool.ts#L474)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tool.ts#L496)
 
 Since v4.0.0

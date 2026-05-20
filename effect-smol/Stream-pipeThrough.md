@@ -5,6 +5,8 @@ Module: `Stream`<br />
 
 Pipes the stream through `Sink.toChannel`, emitting only the sink leftovers.
 
+**Details**
+
 If the sink completes mid-chunk, the remaining elements become the output stream.
 
 **Example** (Piping through a sink)
@@ -31,6 +33,6 @@ Effect.runPromise(program)
 declare const pipeThrough: { <A2, A, L, E2, R2>(sink: Sink.Sink<A2, A, L, E2, R2>): <E, R>(self: Stream<A, E, R>) => Stream<L, E2 | E, R2 | R>; <A, E, R, A2, L, E2, R2>(self: Stream<A, E, R>, sink: Sink.Sink<A2, A, L, E2, R2>): Stream<L, E | E2, R | R2>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L8740)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L8875)
 
 Since v2.0.0

@@ -11,6 +11,6 @@ Returns `true` if the provided value is a `SubscriptionRef`.
 declare const isSubscriptionRef: (u: unknown) => u is SubscriptionRef<unknown>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SubscriptionRef.ts#L53)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SubscriptionRef.ts#L55)
 
 Since v4.0.0

@@ -5,6 +5,8 @@ Module: `Pull`<br />
 
 Finds a `Cause.Done` failure in a `Cause`.
 
+**Details**
+
 Returns a successful `Result` with the `Cause.Done` value when one is
 present, otherwise returns a failed `Result` containing the non-done cause.
 
@@ -14,6 +16,6 @@ present, otherwise returns a failed `Result` containing the non-done cause.
 declare const filterDone: <E>(input: Cause.Cause<E>) => Result.Result<Cause.Done.Only<E>, Cause.Cause<ExcludeDone<E>>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Pull.ts#L150)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Pull.ts#L156)
 
 Since v4.0.0

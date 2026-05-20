@@ -3,7 +3,11 @@ Module: `EventLogSessionAuth`<br />
 
 ## EventLogSessionAuth.encodeSessionAuthPayload
 
-Canonical payload format uses ordered big-endian length-prefixed fields:
+Encodes a session authentication payload into the canonical byte format.
+
+**Details**
+
+The canonical payload format uses ordered big-endian length-prefixed fields:
 
 1. context (fixed: eventlog-auth-v1)
 2. remoteId
@@ -17,6 +21,6 @@ Canonical payload format uses ordered big-endian length-prefixed fields:
 declare const encodeSessionAuthPayload: (payload: SessionAuthPayload) => Effect.Effect<Uint8Array<ArrayBuffer>, EventLogSessionAuthError, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventLogSessionAuth.ts#L255)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventLogSessionAuth.ts#L259)
 
 Since v4.0.0

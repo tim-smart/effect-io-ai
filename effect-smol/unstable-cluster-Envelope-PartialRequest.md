@@ -5,6 +5,8 @@ Module: `Envelope`<br />
 
 Schema for a request envelope before its RPC payload has been decoded.
 
+**Details**
+
 The envelope metadata is decoded, while the payload remains `unknown` until it
 is decoded with the target RPC payload schema.
 
@@ -14,6 +16,6 @@ is decoded with the target RPC payload schema.
 declare class PartialRequest
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Envelope.ts#L110)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Envelope.ts#L116)
 
 Since v4.0.0

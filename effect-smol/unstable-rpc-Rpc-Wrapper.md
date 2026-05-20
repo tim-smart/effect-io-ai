@@ -5,6 +5,8 @@ Module: `Rpc`<br />
 
 Wraps a handler result with execution options for the RPC server.
 
+**Details**
+
 `fork` requests concurrent execution, and `uninterruptible` requests
 uninterruptible execution.
 
@@ -19,6 +21,6 @@ export interface Wrapper<A> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Rpc.ts#L1145)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Rpc.ts#L1179)
 
 Since v4.0.0

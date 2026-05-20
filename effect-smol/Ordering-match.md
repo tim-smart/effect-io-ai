@@ -28,6 +28,6 @@ assert.deepStrictEqual(toMessage(1), "greater than")
 declare const match: { <A, B, C = B>(options: { readonly onLessThan: LazyArg<A>; readonly onEqual: LazyArg<B>; readonly onGreaterThan: LazyArg<C>; }): (self: Ordering) => A | B | C; <A, B, C = B>(o: Ordering, options: { readonly onLessThan: LazyArg<A>; readonly onEqual: LazyArg<B>; readonly onGreaterThan: LazyArg<C>; }): A | B | C; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Ordering.ts#L134)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Ordering.ts#L136)
 
 Since v2.0.0

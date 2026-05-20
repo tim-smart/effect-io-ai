@@ -5,6 +5,8 @@ Module: `Telemetry`<br />
 
 Configuration options for GenAI telemetry attributes.
 
+**Details**
+
 Combines base attributes with optional grouped attributes for comprehensive
 telemetry coverage of AI operations.
 
@@ -62,6 +64,6 @@ type GenAITelemetryAttributeOptions = BaseAttributes & {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Telemetry.ts#L396)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Telemetry.ts#L407)
 
 Since v4.0.0

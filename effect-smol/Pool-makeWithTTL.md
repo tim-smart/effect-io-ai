@@ -20,23 +20,34 @@ utilized before creating more items.
 from item creation, while `"usage"` measures from pool usage. The default is
 `"usage"`.
 
+**Example** (Create a connection pool)
+
 ```ts
 import { Duration, Effect, Pool } from "effect"
-import { createConnection } from "mysql2"
+
+interface Connection {
+  readonly execute: (sql: string) => Effect.Effect<ReadonlyArray<string>>
+  readonly close: Effect.Effect<void>
+}
 
 const acquireDBConnection = Effect.acquireRelease(
-  Effect.sync(() => createConnection("mysql://...")),
-  (connection) => Effect.sync(() => connection.end(() => {}))
+  Effect.succeed({
+    execute: (sql) => Effect.succeed([`executed: ${sql}`]),
+    close: Effect.void
+  } satisfies Connection),
+  (connection) => connection.close
 )
 
-const connectionPool = Effect.flatMap(
-  Pool.makeWithTTL({
-    acquire: acquireDBConnection,
-    min: 10,
-    max: 20,
-    timeToLive: Duration.seconds(60)
-  }),
-  (pool) => pool.get
+const program = Effect.scoped(
+  Effect.flatMap(
+    Pool.makeWithTTL({
+      acquire: acquireDBConnection,
+      min: 10,
+      max: 20,
+      timeToLive: Duration.seconds(60)
+    }),
+    (pool) => Effect.flatMap(Pool.get(pool), (connection) => connection.execute("select 1"))
+  )
 )
 ```
 
@@ -46,6 +57,6 @@ const connectionPool = Effect.flatMap(
 declare const makeWithTTL: <A, E, R>(options: { readonly acquire: Effect.Effect<A, E, R>; readonly min: number; readonly max: number; readonly concurrency?: number | undefined; readonly targetUtilization?: number | undefined; readonly timeToLive: Duration.Input; readonly timeToLiveStrategy?: "creation" | "usage" | undefined; }) => Effect.Effect<Pool<A, E>, never, R | Scope.Scope>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Pool.ts#L224)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Pool.ts#L238)
 
 Since v2.0.0

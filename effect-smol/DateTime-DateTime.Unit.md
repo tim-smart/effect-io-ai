@@ -6,6 +6,8 @@ Module: `DateTime`<br />
 Date and time unit name accepted by `DateTime` rounding and arithmetic
 APIs.
 
+**Details**
+
 Includes both singular units, such as `"day"`, and plural units, such as
 `"days"`.
 
@@ -15,6 +17,6 @@ Includes both singular units, such as `"day"`, and plural units, such as
 type Unit = UnitSingular | UnitPlural
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L154)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L164)
 
 Since v3.6.0

@@ -11,6 +11,6 @@ Accepted runtime representations for an OTLP/protobuf fixed 64-bit value.
 type Fixed64 = LongBits | string | number
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/OtlpResource.ts#L276)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/OtlpResource.ts#L284)
 
 Since v4.0.0

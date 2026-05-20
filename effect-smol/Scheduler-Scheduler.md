@@ -3,14 +3,14 @@ Module: `Scheduler`<br />
 
 ## Scheduler.Scheduler
 
-A scheduler manages the execution of Effects by controlling when and how tasks
-are scheduled and executed. It determines the execution mode (synchronous or
-asynchronous) and handles task prioritization and yielding behavior.
+A scheduler manages the execution of Effect fibers by controlling when queued
+tasks run.
 
-The scheduler is responsible for:
-- Scheduling tasks with different priorities
-- Determining when fibers should yield control
-- Managing the execution flow of Effects
+**Details**
+
+A scheduler determines the execution mode, schedules tasks with different
+priorities, and decides when fibers should yield control after consuming
+their operation budget.
 
 **Signature**
 

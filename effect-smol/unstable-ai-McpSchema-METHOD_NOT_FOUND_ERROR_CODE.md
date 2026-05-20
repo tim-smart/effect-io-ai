@@ -12,6 +12,6 @@ available.
 declare const METHOD_NOT_FOUND_ERROR_CODE: -32601
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L454)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L477)
 
 Since v4.0.0

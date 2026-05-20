@@ -5,14 +5,9 @@ Module: `TxQueue`<br />
 
 Takes up to `n` items from the queue in a single transaction.
 
-For an open queue, waits until `min(n, capacity)` items are available, then
-removes that many items. If `n` is less than or equal to zero, returns an
-empty array without modifying the queue. If the queue is closing, drains the
-currently available items and transitions to `Done`. If the queue is already
-done, the effect fails with the queue's completion cause.
+**Details**
 
-**Mutation behavior**: This function mutates the original TxQueue by removing
-the taken items. It does not return a new TxQueue reference.
+For an open queue, waits until `min(n, capacity)` items are available, then removes that many items. If `n` is less than or equal to zero, returns an empty array without modifying the queue. If the queue is closing, drains the currently available items and transitions to `Done`. If the queue is already done, the effect fails with the queue's completion cause. This function mutates the original TxQueue by removing the taken items. It does not return a new TxQueue reference.
 
 **Example** (Taking a fixed number of values)
 
@@ -39,6 +34,6 @@ const program = Effect.gen(function*() {
 declare const takeN: { (n: number): <A, E>(self: TxDequeue<A, E>) => Effect.Effect<Array<A>, E>; <A, E>(self: TxDequeue<A, E>, n: number): Effect.Effect<Array<A>, E>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxQueue.ts#L840)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxQueue.ts#L830)
 
 Since v2.0.0

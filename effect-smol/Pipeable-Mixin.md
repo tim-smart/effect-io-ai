@@ -6,6 +6,8 @@ Module: `Pipeable`<br />
 Returns a subclass of the provided class that adds the standard `pipe`
 method.
 
+**Details**
+
 The original constructor and instance members are preserved, and the added
 method delegates to `pipeArguments`.
 
@@ -15,6 +17,6 @@ method delegates to `pipeArguments`.
 declare const Mixin: <TBase extends new (...args: ReadonlyArray<any>) => any>(klass: TBase) => TBase & PipeableConstructor
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Pipeable.ts#L644)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Pipeable.ts#L654)
 
 Since v4.0.0

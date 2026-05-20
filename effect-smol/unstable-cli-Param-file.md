@@ -5,6 +5,8 @@ Module: `Param`<br />
 
 Creates a file path parameter.
 
+**Details**
+
 This is a convenience function that creates a path parameter with a
 `pathType` set to `"file"` and a default type name of `"file"`.
 
@@ -30,6 +32,6 @@ const inputFile = Param.file(Param.flagKind, "input", { mustExist: true })
 declare const file: <Kind extends ParamKind>(kind: Kind, name: string, options?: { readonly mustExist?: boolean | undefined; }) => Param<Kind, string>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Param.ts#L704)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Param.ts#L716)
 
 Since v4.0.0

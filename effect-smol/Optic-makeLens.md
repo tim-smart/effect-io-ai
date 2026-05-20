@@ -5,11 +5,13 @@ Module: `Optic`<br />
 
 Creates a `Lens` from a getter and a replacer.
 
-When to use:
+**When to use**
+
 - You can always extract `A` from `S` and produce a new `S` by
   substituting a new `A`.
 
-Behavior:
+**Details**
+
 - Does not mutate inputs.
 - `replace(a, s)` should return a structurally new `S` with `a` in place
   of the old focus.
@@ -42,6 +44,6 @@ console.log(_first.replace("world", ["hello", 42]))
 declare const makeLens: <S, A>(get: (s: S) => A, replace: (a: A, s: S) => S) => Lens<S, A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Optic.ts#L261)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Optic.ts#L269)
 
 Since v4.0.0

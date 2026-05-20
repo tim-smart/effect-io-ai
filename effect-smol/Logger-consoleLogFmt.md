@@ -6,10 +6,10 @@ Module: `Logger`<br />
 A `Logger` which outputs logs using the [logfmt](https://brandur.org/logfmt)
 style and writes them to the console.
 
-For example:
-```
-timestamp=2025-01-03T14:22:47.570Z level=INFO fiber=#1 message=info
-```
+**Details**
+
+For example, a console logfmt entry is rendered as
+`timestamp=2025-01-03T14:22:47.570Z level=INFO fiber=#1 message=info`.
 
 **Example** (Logging logfmt output to the console)
 
@@ -48,6 +48,6 @@ const multiLoggerLive = Logger.layer([
 declare const consoleLogFmt: Logger<unknown, void>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Logger.ts#L964)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Logger.ts#L974)
 
 Since v4.0.0

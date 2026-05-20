@@ -5,13 +5,14 @@ Module: `OpenAiClient`<br />
 
 Uses OpenAI's websocket mode for all responses within the provided effect.
 
-Note: This only works with the following WebSocket constructor layers:
+**Gotchas**
+
+This only works with the following WebSocket constructor layers:
 
 - `NodeSocket.layerWebSocketConstructorWS`
 - `BunSocket.layerWebSocketConstructor`
 
-This is because it needs to use non-standard options for setting the
-Authorization header.
+This is because it needs to use non-standard options for setting the Authorization header.
 
 **Signature**
 
@@ -19,6 +20,6 @@ Authorization header.
 declare const withWebSocketMode: <A, E, R>(effect: Effect.Effect<A, E, R>) => Effect.Effect<A, E, Exclude<R, OpenAiSocket | ResponseIdTracker.ResponseIdTracker> | OpenAiClient | Socket.WebSocketConstructor>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L600)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L602)
 
 Since v4.0.0

@@ -10,7 +10,9 @@ Configuration for the child process standard output stream.
 ```ts
 export interface StdoutConfig {
   /**
-   * The configuration for the standard ouput stream of the child process.
+   * The configuration for the standard output stream of the child process.
+   *
+   * **Details**
    *
    * Can be a string indicating how the operating system should configure the
    * pipe established between the child process `stdout` and the parent process.
@@ -24,6 +26,6 @@ export interface StdoutConfig {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ChildProcess.ts#L326)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ChildProcess.ts#L325)
 
 Since v4.0.0

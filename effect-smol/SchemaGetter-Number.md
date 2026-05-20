@@ -5,10 +5,12 @@ Module: `SchemaGetter`<br />
 
 Coerces any value to a `number` using the global `Number()` constructor.
 
-Use this when:
+**When to use**
+
 - You need numeric coercion of an encoded value.
 
-Behavior:
+**Details**
+
 - Pure, never fails (may produce `NaN` for non-numeric inputs).
 - Delegates to `globalThis.Number`.
 
@@ -21,8 +23,9 @@ const toNumber = SchemaGetter.Number<string>()
 // Getter<number, string>
 ```
 
-See also:
-- `transformOrFail` — for validated number parsing
+**See**
+
+- `transformOrFail` - for validated number parsing
 
 **Signature**
 
@@ -30,6 +33,6 @@ See also:
 declare const Number: <E>() => Getter<number, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L755)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L772)
 
 Since v4.0.0

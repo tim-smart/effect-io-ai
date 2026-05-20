@@ -5,6 +5,8 @@ Module: `LanguageModel`<br />
 
 Utility type that extracts the context requirements from LanguageModel options.
 
+**Details**
+
 Automatically infers the required services based on the toolkit configuration.
 
 **Signature**
@@ -19,6 +21,6 @@ type ExtractServices<Options> = Options extends {
   : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/LanguageModel.ts#L653)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/LanguageModel.ts#L647)
 
 Since v4.0.0

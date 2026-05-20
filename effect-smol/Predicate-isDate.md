@@ -5,10 +5,12 @@ Module: `Predicate`<br />
 
 Checks whether a value is a `Date`.
 
-When to use:
+**When to use**
+
 - You need to guard dates at runtime.
 
-Behavior:
+**Details**
+
 - Pure; does not mutate input.
 - Uses `instanceof Date`.
 
@@ -22,7 +24,9 @@ const data: unknown = new Date()
 console.log(Predicate.isDate(data))
 ```
 
-See also: `isRegExp`
+**See**
+
+- `isRegExp`
 
 **Signature**
 
@@ -30,6 +34,6 @@ See also: `isRegExp`
 declare const isDate: (input: unknown) => input is Date
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L1231)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L1306)
 
 Since v2.0.0

@@ -5,6 +5,8 @@ Module: `Queue`<br />
 
 An `Enqueue` is a queue that can be offered to.
 
+**Details**
+
 This interface represents the write-only part of a Queue, allowing you to offer
 elements to the queue but not take elements from it.
 
@@ -40,6 +42,6 @@ export interface Enqueue<in A, in E = never> extends Inspectable {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Queue.ts#L149)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Queue.ts#L151)
 
 Since v2.0.0

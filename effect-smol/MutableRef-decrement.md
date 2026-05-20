@@ -35,6 +35,6 @@ while (MutableRef.get(countdown) > 0) {
 declare const decrement: (self: MutableRef<number>) => MutableRef<number>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableRef.ts#L213)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableRef.ts#L215)
 
 Since v2.0.0

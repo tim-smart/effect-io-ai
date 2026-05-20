@@ -5,10 +5,12 @@ Module: `SchemaGetter`<br />
 
 Splits a string into an array of strings by a separator.
 
-Use this when:
+**When to use**
+
 - An encoded string is a delimited list (e.g. CSV values).
 
-Behavior:
+**Details**
+
 - Splits by `separator` (default `,`).
 - An empty string produces an empty array (not `[""]`).
 - Pure, never fails.
@@ -23,8 +25,9 @@ const splitComma = SchemaGetter.split<string>()
 // "" -> []
 ```
 
-See also:
-- `splitKeyValue` — when values are key-value pairs
+**See**
+
+- `splitKeyValue` - when values are key-value pairs
 
 **Signature**
 
@@ -32,6 +35,6 @@ See also:
 declare const split: <E extends string>(options?: { readonly separator?: string | undefined; }) => Getter<ReadonlyArray<string>, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L1193)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L1223)
 
 Since v4.0.0

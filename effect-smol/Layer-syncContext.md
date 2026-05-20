@@ -3,10 +3,17 @@ Module: `Layer`<br />
 
 ## Layer.syncContext
 
-Lazily constructs a layer from the specified value, which must return one or more
-services.
+Lazily constructs a layer that provides all services in a `Context`.
 
-This is a lazy version of `succeedContext` where the Context is computed
+**When to use**
+
+Use `syncContext` when multiple services can be created synchronously and
+should be deferred until the layer is built. Use `sync` when you only need to
+provide one service.
+
+**Details**
+
+This is a lazy version of `succeedContext` where the `Context` is computed
 synchronously only when the layer is built.
 
 **Example** (Lazily providing a context)
@@ -25,12 +32,17 @@ const layer = Layer.syncContext(() =>
 )
 ```
 
+**See**
+
+- `sync` for lazily providing a single service
+- `succeedContext` for providing an already available context
+
 **Signature**
 
 ```ts
 declare const syncContext: <A>(evaluate: LazyArg<Context.Context<A>>) => Layer<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L834)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L886)
 
 Since v2.0.0

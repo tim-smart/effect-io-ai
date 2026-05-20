@@ -5,8 +5,13 @@ Module: `Types`<br />
 
 Excludes function types from a union, keeping only non-function members.
 
-- Use to filter out callable types from a union.
-- Returns `never` if the entire union consists of function types.
+**When to use**
+
+Use to filter out callable types from a union.
+
+**Details**
+
+Returns `never` if the entire union consists of function types.
 
 **Example** (Filtering out functions)
 
@@ -23,6 +28,6 @@ type Result = Types.NotFunction<string | (() => void) | number>
 type NotFunction<T> = T extends Function ? never : T
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Types.ts#L734)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Types.ts#L825)
 
 Since v2.0.0

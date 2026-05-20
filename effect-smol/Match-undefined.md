@@ -11,6 +11,6 @@ Matches the value `undefined`.
 declare const undefined: Predicate.Refinement<unknown, undefined>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L1375)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L1405)
 
 Since v4.0.0

@@ -6,6 +6,8 @@ Module: `Semaphore`<br />
 Synchronously creates a `Semaphore` initialized with the specified total
 number of permits.
 
+**When to use**
+
 Use this low-level constructor when an immediate semaphore value is required;
 otherwise prefer the effectful `make` constructor.
 
@@ -41,6 +43,6 @@ const program = Effect.all([
 declare const makeUnsafe: (permits: number) => Semaphore
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Semaphore.ts#L158)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Semaphore.ts#L162)
 
 Since v4.0.0

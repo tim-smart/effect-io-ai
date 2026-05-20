@@ -13,19 +13,15 @@ iterable, producing a new effect that returns an array of results.
 If any effect fails, the iteration stops immediately (short-circuiting), and
 the error is propagated.
 
-**Concurrency**
+Concurrency:
 
 The `concurrency` option controls how many operations are performed
 concurrently. By default, the operations are performed sequentially.
 
-**Discarding Results**
+Discarding Results:
 
 If the `discard` option is set to `true`, the intermediate results are not
 collected, and the final result of the operation is `void`.
-
-**See**
-
-- `all` for combining multiple effects into one.
 
 **Example** (Mapping over an iterable with effects)
 
@@ -71,12 +67,16 @@ Effect.runPromise(result).then(console.log)
 // undefined
 ```
 
+**See**
+
+- `all` for combining multiple effects into one.
+
 **Signature**
 
 ```ts
 declare const forEach: { <B, E, R, S extends Iterable<any>, const Discard extends boolean = false>(f: (a: Arr.ReadonlyArray.Infer<S>, i: number) => Effect<B, E, R>, options?: { readonly concurrency?: Concurrency | undefined; readonly discard?: Discard | undefined; } | undefined): (self: S) => Effect<Discard extends false ? Arr.ReadonlyArray.With<S, B> : void, E, R>; <B, E, R, S extends Iterable<any>, const Discard extends boolean = false>(self: S, f: (a: Arr.ReadonlyArray.Infer<S>, i: number) => Effect<B, E, R>, options?: { readonly concurrency?: Concurrency | undefined; readonly discard?: Discard | undefined; } | undefined): Effect<Discard extends false ? Arr.ReadonlyArray.With<S, B> : void, E, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L770)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L778)
 
 Since v2.0.0

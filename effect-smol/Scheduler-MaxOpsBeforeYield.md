@@ -4,11 +4,13 @@ Module: `Scheduler`<br />
 ## Scheduler.MaxOpsBeforeYield
 
 A service reference that controls the maximum number of operations a fiber
-can perform before yielding control back to the scheduler. This helps
-prevent long-running fibers from monopolizing the execution thread.
+can perform before yielding control back to the scheduler.
 
-The default value is 2048 operations, which provides a good balance between
-performance and fairness in concurrent execution.
+**Details**
+
+The default value is `2048` operations, which balances performance and
+fairness by helping prevent long-running fibers from monopolizing the
+execution thread.
 
 **Signature**
 
@@ -16,6 +18,6 @@ performance and fairness in concurrent execution.
 declare const MaxOpsBeforeYield: Context.Reference<number>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Scheduler.ts#L228)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Scheduler.ts#L231)
 
 Since v4.0.0

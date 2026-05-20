@@ -27,6 +27,6 @@ console.log(HashMap.size(map1)) // 1
 declare const set: { <K, V>(key: K, value: V): (self: HashMap<K, V>) => HashMap<K, V>; <K, V>(self: HashMap<K, V>, key: K, value: V): HashMap<K, V>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashMap.ts#L578)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashMap.ts#L583)
 
 Since v2.0.0

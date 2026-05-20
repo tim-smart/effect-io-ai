@@ -17,6 +17,6 @@ scopes close; otherwise it is closed immediately.
 declare const invalidate: <A, E>(self: RcRef<A, E>) => Effect.Effect<void>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RcRef.ts#L202)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RcRef.ts#L204)
 
 Since v3.19.6

@@ -5,6 +5,8 @@ Module: `Match`<br />
 
 Extracts tag values from a discriminated union based on a discriminant field.
 
+**Details**
+
 This utility type extracts the possible values of a discriminant field
 from a union type. It's used internally to implement tag-based pattern
 matching for discriminated unions.
@@ -36,6 +38,6 @@ type CustomTags = Match.Types.Tags<
 type Tags<D, P> = P extends Record<D, infer X> ? X : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L2249)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L2319)
 
 Since v4.0.0

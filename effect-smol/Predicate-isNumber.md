@@ -5,10 +5,12 @@ Module: `Predicate`<br />
 
 Checks whether a value is a `number`.
 
-When to use:
+**When to use**
+
 - You need to guard an `unknown` value as a number.
 
-Behavior:
+**Details**
+
 - Pure; does not mutate input.
 - Uses `typeof input === "number"`.
 - Does not exclude `NaN` or `Infinity`.
@@ -25,7 +27,10 @@ if (Predicate.isNumber(data)) {
 }
 ```
 
-See also: `isBigInt`, `isString`
+**See**
+
+- `isBigInt`
+- `isString`
 
 **Signature**
 
@@ -33,6 +38,6 @@ See also: `isBigInt`, `isString`
 declare const isNumber: (input: unknown) => input is number
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L575)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L612)
 
 Since v2.0.0

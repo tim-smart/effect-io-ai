@@ -5,6 +5,8 @@ Module: `Tool`<br />
 
 Annotation controlling whether strict JSON schema mode is enabled for a tool.
 
+**Details**
+
 When `true`, providers that support strict mode will send `strict: true` to
 the model API (e.g. OpenAI's Structured Outputs).
 
@@ -28,6 +30,6 @@ const flexibleTool = Tool.make("search")
 declare const Strict: Context.Reference<boolean | undefined>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tool.ts#L1794)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tool.ts#L1856)
 
 Since v4.0.0

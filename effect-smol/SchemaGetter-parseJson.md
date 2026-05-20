@@ -5,10 +5,12 @@ Module: `SchemaGetter`<br />
 
 Parses a JSON string into a value.
 
-Use this when:
+**When to use**
+
 - An encoded value is a JSON string that needs to be parsed during decoding.
 
-Behavior:
+**Details**
+
 - Skips `None` inputs.
 - Without `reviver`: returns `Schema.MutableJson` (typed JSON).
 - With `reviver`: returns `unknown` (reviver may produce arbitrary values).
@@ -23,8 +25,9 @@ const parse = SchemaGetter.parseJson<string>()
 // Getter<MutableJson, string>
 ```
 
-See also:
-- `stringifyJson` — inverse operation
+**See**
+
+- `stringifyJson` - inverse operation
 
 **Signature**
 
@@ -32,6 +35,6 @@ See also:
 declare const parseJson: { <E extends string>(): Getter<Schema.MutableJson, E>; <E extends string>(options: ParseJsonOptions): Getter<unknown, E>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L1032)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L1058)
 
 Since v4.0.0

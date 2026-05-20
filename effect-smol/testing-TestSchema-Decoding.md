@@ -3,22 +3,15 @@ Module: `TestSchema`<br />
 
 ## TestSchema.Decoding
 
-Decoding test helper. Wraps a schema and exposes `succeed` and `fail`
-methods that run the schema's decoder and compare the result.
+Decoding test helper that wraps a schema and exposes `succeed` and `fail` methods that run the schema's decoder and compare the result.
 
-When to use:
-- You want to assert that specific inputs decode to expected values.
-- You want to assert that invalid inputs produce specific error messages.
-- You need to provide services required by the schema's decoding pipeline.
+**When to use**
 
-Behavior:
-- All assertions are async and use `assert.deepStrictEqual` internally.
-- `succeed(input)` asserts the decoded output equals `input` (identity).
-- `succeed(input, expected)` asserts the decoded output equals `expected`.
-- `fail(input, message)` asserts decoding fails and the stringified issue
-  equals `message`.
-- `provide(key, impl)` returns a new `Decoding` with the service injected
-  into the decoding context.
+Use `Decoding` when you want to assert that specific inputs decode to expected values, invalid inputs produce specific error messages, or schemas receive required decoding services.
+
+**Details**
+
+All assertions are async and use `assert.deepStrictEqual` internally. `succeed(input)` asserts the decoded output equals `input`; `succeed(input, expected)` asserts it equals `expected`; `fail(input, message)` asserts decoding fails and the stringified issue equals `message`. `provide(key, impl)` returns a new `Decoding` with the service injected into the decoding context.
 
 **Example** (Decoding with service provision)
 
@@ -44,6 +37,6 @@ declare class Decoding<S> { constructor(schema: S, options?: {
   }) }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TestSchema.ts#L352)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TestSchema.ts#L336)
 
 Since v4.0.0

@@ -5,6 +5,8 @@ Module: `Cause`<br />
 
 A `Cause` with an empty `reasons` array.
 
+**Details**
+
 Represents the absence of failure. Combining any cause with `empty` via
 `combine` returns the original cause unchanged.
 
@@ -18,6 +20,6 @@ Represents the absence of failure. Combining any cause with `empty` via
 declare const empty: Cause<never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L479)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L503)
 
 Since v2.0.0

@@ -5,13 +5,13 @@ Module: `SchemaIssue`<br />
 
 Issue produced when a schema transformation (encode/decode step) fails.
 
-When to use:
+**When to use**
 
 - Inspect failures from `Schema.decodeTo` / `Schema.encodeTo`
   transformations.
 - Walk the inner `issue` for the root cause of the transformation failure.
 
-Behaviour:
+**Details**
 
 - `ast` is the AST node for the transformation that failed.
 - `actual` is `Option.some(value)` when the input was present, or
@@ -42,6 +42,6 @@ declare class Encoding { constructor(
   ) }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaIssue.ts#L284)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaIssue.ts#L286)
 
 Since v4.0.0

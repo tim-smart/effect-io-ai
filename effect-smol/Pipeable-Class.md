@@ -6,6 +6,8 @@ Module: `Pipeable`<br />
 Base constructor whose instances implement the standard `Pipeable.pipe`
 method.
 
+**When to use**
+
 Extend or compose this constructor when defining a class that should support
 Effect-style method chaining through `.pipe(...)`.
 
@@ -15,6 +17,6 @@ Effect-style method chaining through `.pipe(...)`.
 declare const Class: new () => Pipeable
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Pipeable.ts#L618)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Pipeable.ts#L626)
 
 Since v3.15.0

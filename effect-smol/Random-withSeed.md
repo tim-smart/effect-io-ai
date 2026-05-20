@@ -5,9 +5,14 @@ Module: `Random`<br />
 
 Seeds the pseudo-random number generator with the specified value.
 
+**Details**
+
 Using the same seed produces the same random sequence, which is useful for
-tests and reproducible simulations. Use an unpredictable seed when uniqueness
-or unpredictability matters.
+tests and reproducible simulations.
+
+**Gotchas**
+
+Use an unpredictable seed when uniqueness or unpredictability matters.
 
 **Example** (Seeding random generation)
 
@@ -35,6 +40,6 @@ Effect.runPromise(seeded2)
 declare const withSeed: { (seed: string | number): <A, E, R>(self: Effect.Effect<A, E, R>) => Effect.Effect<A, E, R>; <A, E, R>(self: Effect.Effect<A, E, R>, seed: string | number): Effect.Effect<A, E, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Random.ts#L245)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Random.ts#L254)
 
 Since v4.0.0

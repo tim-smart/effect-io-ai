@@ -12,6 +12,6 @@ destroys both agents when the enclosing scope is finalized.
 declare const makeAgent: (options?: Https.AgentOptions) => Effect.Effect<HttpAgent["Service"], never, Scope.Scope>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L400)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L406)
 
 Since v4.0.0

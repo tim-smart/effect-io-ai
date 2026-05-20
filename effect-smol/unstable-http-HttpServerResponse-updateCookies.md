@@ -6,6 +6,8 @@ Module: `HttpServerResponse`<br />
 Updates the cookies attached to an `HttpServerResponse` using the supplied
 function.
 
+**Details**
+
 The original response is not mutated; a new response is returned with the
 callback result as its cookie collection.
 
@@ -15,6 +17,6 @@ callback result as its cookie collection.
 declare const updateCookies: { (f: (cookies: Cookies.Cookies) => Cookies.Cookies): (self: HttpServerResponse) => HttpServerResponse; (self: HttpServerResponse, f: (cookies: Cookies.Cookies) => Cookies.Cookies): HttpServerResponse; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpServerResponse.ts#L729)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpServerResponse.ts#L763)
 
 Since v4.0.0

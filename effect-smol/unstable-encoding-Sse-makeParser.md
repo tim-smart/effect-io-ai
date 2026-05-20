@@ -5,6 +5,8 @@ Module: `Sse`<br />
 
 Creates a stateful Server-Sent Events parser.
 
+**Details**
+
 Call `feed` with text chunks to parse `Event` and `Retry` values through the
 callback, and call `reset` to clear any buffered event state.
 
@@ -14,6 +16,6 @@ callback, and call `reset` to clear any buffered event state.
 declare const makeParser: (onParse: (event: AnyEvent) => void) => Parser
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Sse.ts#L165)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Sse.ts#L171)
 
 Since v4.0.0

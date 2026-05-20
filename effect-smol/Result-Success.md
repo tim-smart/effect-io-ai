@@ -5,6 +5,8 @@ Module: `Result`<br />
 
 The success variant of `Result`. Wraps a value of type `A`.
 
+**Details**
+
 - Access the value via the `.success` property
 - Use `isSuccess` to narrow a `Result` to `Success`
 - Create with `succeed`
@@ -46,6 +48,6 @@ export interface Success<out A, out E> extends Pipeable, Inspectable {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L204)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L210)
 
 Since v4.0.0

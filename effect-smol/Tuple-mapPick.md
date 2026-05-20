@@ -6,9 +6,14 @@ Module: `Tuple`<br />
 Applies a `Struct.Lambda` transformation only to the elements at the
 specified indices; all other elements are copied unchanged.
 
-- Use when you want to apply the same transformation to a subset of
-  positions.
-- Does not mutate the input; returns a fresh tuple.
+**When to use**
+
+Use this when you want to apply the same transformation to a subset of
+positions.
+
+**Details**
+
+The input tuple is not mutated; a fresh tuple is returned.
 
 **Example** (Wrapping only selected elements in arrays)
 
@@ -39,6 +44,6 @@ console.log(result) // [[1], "hello", [true]]
 declare const mapPick: { <const T extends ReadonlyArray<unknown>, const I extends ReadonlyArray<Indices<T>>, L extends Lambda>(indices: I, lambda: L): (self: T) => { [K in keyof T]: K extends `${I[number]}` ? Apply<L, T[K]> : T[K]; }; <const T extends ReadonlyArray<unknown>, const I extends ReadonlyArray<Indices<T>>, L extends Lambda>(self: T, indices: I, lambda: L): { [K in keyof T]: K extends `${I[number]}` ? Apply<L, T[K]> : T[K]; }; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tuple.ts#L455)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tuple.ts#L493)
 
 Since v4.0.0

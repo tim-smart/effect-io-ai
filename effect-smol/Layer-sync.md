@@ -3,7 +3,15 @@ Module: `Layer`<br />
 
 ## Layer.sync
 
-Lazily constructs a layer from the specified value.
+Lazily constructs a layer that provides a single service.
+
+**When to use**
+
+Use `sync` when the service can be created synchronously but should be
+deferred until the layer is built. Use `succeed` when the service value is
+already available.
+
+**Details**
 
 This is a lazy version of `succeed` where the service value is computed
 synchronously only when the layer is built.
@@ -17,10 +25,14 @@ class Database extends Context.Service<Database, {
   readonly query: (sql: string) => Effect.Effect<string>
 }>()("Database") {}
 
-const layer = Layer.sync(Database)(() => ({
+const layer = Layer.sync(Database, () => ({
   query: (sql: string) => Effect.succeed(`Query: ${sql}`)
 }))
 ```
+
+**See**
+
+- `succeed` for constructing layers from static values
 
 **Signature**
 
@@ -28,6 +40,6 @@ const layer = Layer.sync(Database)(() => ({
 declare const sync: { <I, S>(service: Context.Key<I, S>): (evaluate: LazyArg<S>) => Layer<I>; <I, S>(service: Context.Key<I, S>, evaluate: LazyArg<Types.NoInfer<S>>): Layer<I>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L798)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L840)
 
 Since v2.0.0

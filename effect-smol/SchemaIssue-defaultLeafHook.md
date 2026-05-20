@@ -5,13 +5,13 @@ Module: `SchemaIssue`<br />
 
 The built-in `LeafHook` used by default formatters.
 
-When to use:
+**When to use**
 
 - Use as-is when you only need to customise the `CheckHook` but want
   the default leaf rendering.
 - Reference as a starting point for custom `LeafHook` implementations.
 
-Behaviour:
+**Details**
 
 - Checks for a `message` annotation first; returns it if present.
 - Otherwise generates a default message per `_tag`:
@@ -43,6 +43,6 @@ const formatter = SchemaIssue.makeFormatterStandardSchemaV1({
 declare const defaultLeafHook: LeafHook
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaIssue.ts#L976)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaIssue.ts#L978)
 
 Since v4.0.0

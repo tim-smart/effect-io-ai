@@ -5,6 +5,8 @@ Module: `DateTime`<br />
 
 Represents a time zone used by `DateTime.Zoned`.
 
+**Details**
+
 A `TimeZone` is either a fixed offset from UTC or a named IANA time zone.
 
 **Signature**
@@ -13,6 +15,6 @@ A `TimeZone` is either a fixed offset from UTC or a named IANA time zone.
 type TimeZone = TimeZone.Offset | TimeZone.Named
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L295)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L317)
 
 Since v3.6.0

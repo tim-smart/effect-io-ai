@@ -5,6 +5,8 @@ Module: `Result`<br />
 
 Runs a side-effect on the success value without altering the `Result`.
 
+**Details**
+
 - If the result is a `Success`, calls `f` with the value (return value is ignored)
 - If the result is a `Failure`, `f` is not called
 - Returns the original `Result` unchanged (same reference)
@@ -35,6 +37,6 @@ console.log(Result.isSuccess(result))
 declare const tap: { <A>(f: (a: A) => void): <E>(self: Result<A, E>) => Result<A, E>; <A, E>(self: Result<A, E>, f: (a: A) => void): Result<A, E>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L1713)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L1807)
 
 Since v4.0.0

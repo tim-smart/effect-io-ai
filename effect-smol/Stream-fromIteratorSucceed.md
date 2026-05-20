@@ -5,6 +5,8 @@ Module: `Stream`<br />
 
 Creates a stream that consumes values from an iterator.
 
+**Details**
+
 The `maxChunkSize` parameter controls how many values are pulled per chunk.
 
 **Example** (Consuming values from an iterator)
@@ -35,6 +37,6 @@ Effect.runPromise(program)
 declare const fromIteratorSucceed: <A>(iterator: IterableIterator<A>, maxChunkSize?: number) => Stream<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L1071)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L1089)
 
 Since v2.0.0

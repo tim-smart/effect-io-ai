@@ -6,6 +6,7 @@ Module: `Schema`<br />
 Schema interface produced by `Schema.Array` for readonly arrays.
 
 **Details**
+
 The decoded type is `ReadonlyArray<S["Type"]>`, the encoded type is
 `ReadonlyArray<S["Encoded"]>`, and the element schema is available as
 `schema`.
@@ -29,6 +30,6 @@ export interface $Array<S extends Top> extends
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L3589)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L3679)
 
 Since v4.0.0

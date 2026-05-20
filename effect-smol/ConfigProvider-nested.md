@@ -6,15 +6,21 @@ Module: `ConfigProvider`<br />
 Scopes a provider so that all lookups are prefixed with the given path
 segments.
 
-When to use:
-- Namespacing config under a prefix like `"app"` or `"database"`.
-- Reusing the same provider shape for multiple sub-configs.
+**When to use**
 
-Accepts a single string or a full `Path` array. The prefix is prepended
-*after* any `mapInput` transformation runs, so ordering matters when
-composing with `mapInput` or `constantCase`.
+Use this to namespace config under a prefix like `"app"` or `"database"`, or
+to reuse the same provider shape for multiple sub-configs.
 
-Supports both data-last and data-first calling conventions.
+**Details**
+
+Accepts a single string or a full `Path` array. Supports both data-last and
+data-first calling conventions.
+
+**Gotchas**
+
+The prefix is prepended after any `mapInput` transformation runs, so
+ordering matters when composing with `mapInput` or
+`constantCase`.
 
 **Example** (Nesting under a prefix)
 
@@ -39,6 +45,6 @@ const scoped = ConfigProvider.nested(provider, "APP")
 declare const nested: { (prefix: string | Path): (self: ConfigProvider) => ConfigProvider; (self: ConfigProvider, prefix: string | Path): ConfigProvider; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ConfigProvider.ts#L578)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ConfigProvider.ts#L612)
 
 Since v2.0.0

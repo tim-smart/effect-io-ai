@@ -6,6 +6,8 @@ Module: `Effect`<br />
 The `flip` function swaps the success and error channels of an effect,
 so that the success becomes the error, and the error becomes the success.
 
+**Details**
+
 This function is useful when you need to reverse the flow of an effect,
 treating the previously successful values as errors and vice versa. This can
 be helpful in scenarios where you want to handle a success as a failure or
@@ -31,6 +33,6 @@ const flipped = Effect.flip(program)
 declare const flip: <A, E, R>(self: Effect<A, E, R>) => Effect<E, A, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L2297)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L2325)
 
 Since v2.0.0

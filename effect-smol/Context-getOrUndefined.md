@@ -6,7 +6,7 @@ Module: `Context`<br />
 Returns the service currently stored for a key, or `undefined` when the key
 is absent.
 
-**Notes**
+**Details**
 
 This is a raw lookup and does not resolve default values for
 `Context.Reference` keys.

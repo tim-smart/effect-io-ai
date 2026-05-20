@@ -6,11 +6,13 @@ Module: `Optic`<br />
 An `Iso` that converts a `Record<string, A>` to an array of
 `[key, value]` entries and back.
 
-When to use:
+**When to use**
+
 - You want to traverse or manipulate record entries as an array (e.g.
   with `.forEach()`).
 
-Behavior:
+**Details**
+
 - `get` uses `Object.entries`.
 - `set` uses `Object.fromEntries`.
 - Round-trip is lossless for `Record<string, A>`.
@@ -40,6 +42,6 @@ console.log(inc({ a: 0, b: 3, c: -1 }))
 declare const entries: <A>() => Iso<Record<string, A>, ReadonlyArray<readonly [string, A]>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Optic.ts#L1553)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Optic.ts#L1595)
 
 Since v4.0.0

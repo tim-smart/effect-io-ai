@@ -5,7 +5,9 @@ Module: `Chunk`<br />
 
 Returns the first element of this chunk.
 
-It will throw an error if the chunk is empty.
+**Gotchas**
+
+Throws an error if the chunk is empty.
 
 **Example** (Getting the first element unsafely)
 
@@ -28,6 +30,6 @@ console.log(Option.isNone(Chunk.head(Chunk.empty()))) // true
 declare const headUnsafe: <A>(self: Chunk<A>) => A
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L1422)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L1426)
 
 Since v4.0.0

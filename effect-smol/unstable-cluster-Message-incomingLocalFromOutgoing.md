@@ -5,6 +5,8 @@ Module: `Message`<br />
 
 Converts an outgoing message into a locally deliverable incoming message.
 
+**Details**
+
 Request messages keep their decoded payload and response callback, while
 control envelopes are wrapped as incoming envelopes.
 
@@ -14,6 +16,6 @@ control envelopes are wrapped as incoming envelopes.
 declare const incomingLocalFromOutgoing: <R extends Rpc.Any>(self: Outgoing<R>) => IncomingLocal<R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Message.ts#L72)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Message.ts#L78)
 
 Since v4.0.0

@@ -5,11 +5,13 @@ Module: `SchemaGetter`<br />
 
 Creates a getter that fails with `MissingKey` if the input is absent (`Option.None`).
 
-Use this when:
+**When to use**
+
 - A struct field must be present in the encoded input.
 - You want schema validation to report a missing key error.
 
-Behavior:
+**Details**
+
 - When input is `None`, fails with `Issue.MissingKey`.
 - When input is `Some`, passes it through unchanged.
 - Optional `annotations` customize the error message for the missing key.
@@ -22,9 +24,10 @@ import { SchemaGetter } from "effect"
 const mustExist = SchemaGetter.required<string>()
 ```
 
-See also:
-- `onNone` — provide a fallback instead of failing
-- `withDefault` — substitute a default for undefined values
+**See**
+
+- `onNone` - provide a fallback instead of failing
+- `withDefault` - substitute a default for undefined values
 
 **Signature**
 
@@ -32,6 +35,6 @@ See also:
 declare const required: <T, E extends T = T>(annotations?: Schema.Annotations.Key<T>) => Getter<T, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L433)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L442)
 
 Since v4.0.0

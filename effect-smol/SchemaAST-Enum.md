@@ -5,6 +5,8 @@ Module: `SchemaAST`<br />
 
 AST node representing a TypeScript `enum`.
 
+**Details**
+
 Holds `enums` as an array of `[name, value]` pairs where values are
 `string | number`. Parsing succeeds when the input matches any enum value.
 
@@ -24,6 +26,6 @@ declare class Enum { constructor(
   ) }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L871)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L894)
 
 Since v4.0.0

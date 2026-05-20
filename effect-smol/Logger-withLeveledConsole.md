@@ -6,6 +6,8 @@ Module: `Logger`<br />
 Returns a new `Logger` that writes all output of the specified `Logger` to
 the console.
 
+**Details**
+
 Will use the appropriate console method (i.e. `console.log`, `console.error`,
 etc.) based upon the current `LogLevel`.
 
@@ -43,6 +45,6 @@ const program = Effect.gen(function*() {
 declare const withLeveledConsole: <Message, Output>(self: Logger<Message, Output>) => Logger<Message, void>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Logger.ts#L402)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Logger.ts#L413)
 
 Since v3.8.0

@@ -5,6 +5,8 @@ Module: `DateTime`<br />
 
 Named IANA time zone.
 
+**Details**
+
 The `id` field contains the resolved time zone identifier, such as
 `"Europe/London"` or `"America/New_York"`.
 
@@ -19,6 +21,6 @@ export interface Named extends Proto {
   }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L339)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L367)
 
 Since v3.6.0

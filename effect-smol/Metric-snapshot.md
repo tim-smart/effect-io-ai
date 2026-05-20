@@ -5,6 +5,8 @@ Module: `Metric`<br />
 
 Captures a snapshot of all registered metrics in the current context.
 
+**Details**
+
 Returns an array of metric snapshots, each containing the metric's metadata
 (name, description, type) and current state (values, counts, etc.).
 
@@ -54,6 +56,6 @@ const program = Effect.gen(function*() {
 declare const snapshot: Effect<ReadonlyArray<Metric.Snapshot>, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Metric.ts#L3063)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Metric.ts#L3104)
 
 Since v2.0.0

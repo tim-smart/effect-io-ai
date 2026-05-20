@@ -6,14 +6,19 @@ Module: `ConfigProvider`<br />
 Returns a provider that falls back to `that` when `self` returns `undefined`
 for a path.
 
-When to use:
-- Layering multiple config sources (e.g. env vars + defaults file).
-- Providing partial overrides on top of a base config.
+**When to use**
 
-Only triggers the fallback when the path is not found (`undefined`). A
-`SourceError` from `self` is **not** caught — it propagates immediately.
+Use this to layer multiple config sources, such as env vars plus a defaults
+file, or to provide partial overrides on top of a base config.
+
+**Details**
 
 Supports both data-last and data-first calling conventions.
+
+**Gotchas**
+
+The fallback only runs when the path is not found (`undefined`). A
+`SourceError` from `self` is not caught; it propagates immediately.
 
 **Example** (Falling back to a default provider)
 
@@ -38,6 +43,6 @@ const combined = ConfigProvider.orElse(envProvider, defaults)
 declare const orElse: { (that: ConfigProvider): (self: ConfigProvider) => ConfigProvider; (self: ConfigProvider, that: ConfigProvider): ConfigProvider; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ConfigProvider.ts#L460)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ConfigProvider.ts#L483)
 
 Since v2.0.0

@@ -5,6 +5,8 @@ Module: `HashMap`<br />
 
 Sets or removes the specified key using an update function.
 
+**Details**
+
 The update function receives `Some(value)` when the key exists or `None`
 when it does not. Returning `Some(newValue)` stores the value, and returning
 `None` removes the key or leaves it absent.
@@ -30,6 +32,6 @@ console.log(HashMap.get(updated, "a")) // Option.some(2)
 declare const modifyAt: { <K, V>(key: K, f: HashMap.UpdateFn<V>): (self: HashMap<K, V>) => HashMap<K, V>; <K, V>(self: HashMap<K, V>, key: K, f: HashMap.UpdateFn<V>): HashMap<K, V>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashMap.ts#L854)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashMap.ts#L865)
 
 Since v2.0.0

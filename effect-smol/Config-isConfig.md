@@ -5,7 +5,8 @@ Module: `Config`<br />
 
 Returns `true` if `u` is a `Config` instance.
 
-When to use:
+**When to use**
+
 - Runtime type-checking before calling `.parse()` on an unknown value.
 - Distinguishing a `Config` from a plain value inside `unwrap`.
 
@@ -24,6 +25,6 @@ console.log(Config.isConfig("not a config"))        // false
 declare const isConfig: (u: unknown) => u is Config<unknown>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Config.ts#L110)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Config.ts#L111)
 
 Since v2.0.0

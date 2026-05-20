@@ -5,6 +5,8 @@ Module: `DateTime`<br />
 
 Get a part of a `DateTime` as a number.
 
+**Details**
+
 The part will be in the UTC time zone.
 
 **Example** (Reading UTC DateTime parts by key)
@@ -23,6 +25,6 @@ console.log(year) // 2024
 declare const getPartUtc: { (part: keyof DateTime.PartsWithWeekday): (self: DateTime) => number; (self: DateTime, part: keyof DateTime.PartsWithWeekday): number; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L1628)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L1718)
 
 Since v3.6.0

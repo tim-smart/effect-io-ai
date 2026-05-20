@@ -5,11 +5,13 @@ Module: `SchemaGetter`<br />
 
 Returns the identity getter — passes the value through unchanged.
 
-Use this when:
+**When to use**
+
 - No transformation is needed between encoded and decoded types.
 - One side of a `decodeTo` pair (encode or decode) should be a no-op.
 
-Behavior:
+**Details**
+
 - Pure, no allocation (singleton instance).
 - Optimized away during `.compose()` — composing with a passthrough is free.
 - The default overload requires `T === E`. Pass `{ strict: false }` to opt
@@ -29,10 +31,11 @@ const StringToString = Schema.String.pipe(
 )
 ```
 
-See also:
-- `passthroughSupertype` — when `T extends E`
-- `passthroughSubtype` — when `E extends T`
-- `transform` — when you need to change the value
+**See**
+
+- `passthroughSupertype` - when `T extends E`
+- `passthroughSubtype` - when `E extends T`
+- `transform` - when you need to change the value
 
 **Signature**
 
@@ -40,6 +43,6 @@ See also:
 declare const passthrough: { <T, E>(options: { readonly strict: false; }): Getter<T, E>; <T>(): Getter<T, T>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L304)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L308)
 
 Since v4.0.0

@@ -5,6 +5,8 @@ Module: `SchemaAST`<br />
 
 A single validation check attached to an AST node.
 
+**Details**
+
 - `run` — the validation function. Returns `undefined` on success, or an
   `Issue` on failure.
 - `annotations` — optional filter-level metadata (expected message, meta
@@ -34,6 +36,6 @@ declare class Filter<E> { constructor(
   ) }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L2522)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L2566)
 
 Since v4.0.0

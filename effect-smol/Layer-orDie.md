@@ -3,8 +3,13 @@ Module: `Layer`<br />
 
 ## Layer.orDie
 
-Translates effect failure into death of the fiber, making all failures
-unchecked and not a part of the type of the layer.
+Converts layer construction failures into defects, removing them from the
+layer's error type.
+
+**Details**
+
+Use this only when failures should be treated as unrecoverable defects rather
+than typed errors that callers can handle.
 
 **Example** (Converting layer failures to defects)
 
@@ -20,7 +25,7 @@ class Database extends Context.Service<Database, {
 }>()("Database") {}
 
 // Layer that can fail during construction
-const flakyDatabaseLayer = Layer.effect(Database)(Effect.gen(function*() {
+const flakyDatabaseLayer = Layer.effect(Database, Effect.gen(function*() {
   console.log("connecting")
   return yield* new DatabaseError({ message: "Connection failed" })
 }))
@@ -46,6 +51,6 @@ const program = Effect.gen(function*() {
 declare const orDie: <A, E, R>(self: Layer<A, E, R>) => Layer<A, never, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L1564)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L1710)
 
 Since v2.0.0

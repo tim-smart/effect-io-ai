@@ -5,8 +5,10 @@ Module: `Flag`<br />
 
 Sets a custom metavar (placeholder name) for the flag in help documentation.
 
-The metavar is displayed in usage text to indicate what value the user should provide.
-For example, `--output FILE` shows `FILE` as the metavar.
+**Details**
+
+The metavar is displayed in usage text to indicate what value the user should
+provide. For example, `--output FILE` shows `FILE` as the metavar.
 
 **Example** (Setting metavars)
 
@@ -31,6 +33,6 @@ const timeoutFlag = Flag.integer("timeout").pipe(
 declare const withMetavar: { <A>(metavar: string): (self: Flag<A>) => Flag<A>; <A>(self: Flag<A>, metavar: string): Flag<A>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Flag.ts#L485)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Flag.ts#L496)
 
 Since v4.0.0

@@ -6,10 +6,13 @@ Module: `SchemaRepresentation`<br />
 The output of `toCodeDocument`: generated TypeScript code for one or
 more schemas plus their shared references and auxiliary artifacts.
 
-- `codes` — one `Code` per input representation.
-- `references.nonRecursives` — topologically sorted non-recursive definitions.
-- `references.recursives` — definitions involved in cycles.
-- `artifacts` — symbols, enums, and import statements needed by the code.
+**Details**
+
+`codes` contains one `Code` per input representation.
+`references.nonRecursives` contains topologically sorted non-recursive
+definitions. `references.recursives` contains definitions involved in cycles.
+`artifacts` contains symbols, enums, and import statements needed by the
+code.
 
 **See**
 
@@ -35,6 +38,6 @@ type CodeDocument = {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaRepresentation.ts#L2248)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaRepresentation.ts#L2328)
 
 Since v4.0.0

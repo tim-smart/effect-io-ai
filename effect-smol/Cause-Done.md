@@ -5,6 +5,8 @@ Module: `Cause`<br />
 
 A graceful completion signal for queues and streams.
 
+**Details**
+
 `Done` indicates that a producer has finished normally — no more elements
 will arrive. It is distinct from an error or interruption; it represents
 successful completion. The optional `value` field can carry a final
@@ -40,6 +42,6 @@ export interface Done<A = void> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L1229)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L1291)
 
 Since v4.0.0

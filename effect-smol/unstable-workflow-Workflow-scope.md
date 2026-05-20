@@ -3,10 +3,7 @@ Module: `Workflow`<br />
 
 ## Workflow.scope
 
-Accesses the workflow scope.
-
-The workflow scope is only closed when the workflow execution fully
-completes.
+Accesses the workflow scope, which is only closed when the workflow execution fully completes.
 
 **Signature**
 

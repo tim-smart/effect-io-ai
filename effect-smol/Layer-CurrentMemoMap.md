@@ -5,6 +5,8 @@ Module: `Layer`<br />
 
 A service reference for the current `MemoMap` used in layer construction.
 
+**Details**
+
 This service provides access to the current memoization map during layer building,
 allowing layers to share memoized results.
 
@@ -14,6 +16,6 @@ allowing layers to share memoized results.
 declare class CurrentMemoMap
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L492)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L518)
 
 Since v3.13.0

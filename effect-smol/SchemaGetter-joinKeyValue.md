@@ -5,10 +5,12 @@ Module: `SchemaGetter`<br />
 
 Joins a record of key-value pairs into a delimited string.
 
-Use this when:
+**When to use**
+
 - A decoded record needs to be serialized as a delimited key-value string.
 
-Behavior:
+**Details**
+
 - Joins entries with `separator` (default `,`) and key/value with `keyValueSeparator` (default `=`).
 - Pure, never fails.
 
@@ -21,8 +23,9 @@ const join = SchemaGetter.joinKeyValue()
 // { a: "1", b: "2" } -> "a=1,b=2"
 ```
 
-See also:
-- `splitKeyValue` — inverse operation
+**See**
+
+- `splitKeyValue` - inverse operation
 
 **Signature**
 
@@ -30,6 +33,6 @@ See also:
 declare const joinKeyValue: <E extends Record<PropertyKey, string>>(options?: { readonly separator?: string | undefined; readonly keyValueSeparator?: string | undefined; }) => Getter<string, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L1155)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L1184)
 
 Since v4.0.0

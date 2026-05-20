@@ -5,6 +5,8 @@ Module: `Array`<br />
 
 Computes the cartesian product of two arrays, applying a combiner to each pair.
 
+**Details**
+
 - Produces every combination of an element from `self` with an element from `that`.
 - Result length is `self.length * that.length`.
 - Order: iterates `that` for each element of `self`.
@@ -28,6 +30,6 @@ console.log(result) // ["1-a", "1-b", "2-a", "2-b"]
 declare const cartesianWith: { <A, B, C>(that: ReadonlyArray<B>, f: (a: A, b: B) => C): (self: ReadonlyArray<A>) => Array<C>; <A, B, C>(self: ReadonlyArray<A>, that: ReadonlyArray<B>, f: (a: A, b: B) => C): Array<C>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L4059)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L4203)
 
 Since v2.0.0

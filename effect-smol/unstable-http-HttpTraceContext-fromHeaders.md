@@ -5,6 +5,8 @@ Module: `HttpTraceContext`<br />
 
 Decodes an external span from HTTP trace propagation headers.
 
+**Details**
+
 W3C `traceparent` is tried first, followed by compact B3 (`b3`) and then
 multi-header B3 (`x-b3-*`).
 
@@ -14,6 +16,6 @@ multi-header B3 (`x-b3-*`).
 declare const fromHeaders: (headers: Headers.Headers) => Option.Option<Tracer.ExternalSpan>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpTraceContext.ts#L68)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpTraceContext.ts#L74)
 
 Since v4.0.0

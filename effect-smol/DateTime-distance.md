@@ -6,6 +6,8 @@ Module: `DateTime`<br />
 Calulate the difference between two `DateTime` values, returning a
 `Duration` representing the amount of time between them.
 
+**Details**
+
 If `other` is *after* `self`, the result will be a positive `Duration`. If
 `other` is *before* `self`, the result will be a negative `Duration`. If they
 are equal, the result will be a `Duration` of zero.
@@ -30,6 +32,6 @@ Effect.gen(function*() {
 declare const distance: { (other: DateTime): (self: DateTime) => Duration.Duration; (self: DateTime, other: DateTime): Duration.Duration; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L1149)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L1215)
 
 Since v3.6.0

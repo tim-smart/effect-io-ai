@@ -5,9 +5,12 @@ Module: `Combiner`<br />
 
 Creates a `Combiner` from a binary function.
 
-When to use:
-- You have a custom combining operation that is not covered by the built-in
-  constructors (`min`, `max`, `first`, `last`, `constant`).
+**When to use**
+
+Use this when you have a custom combining operation that is not covered by
+the built-in constructors (`min`, `max`, `first`, `last`, `constant`).
+
+**Details**
 
 The returned combiner's `combine` method delegates to the provided function.
 Any purity, associativity, or mutation behavior comes from that function.
@@ -33,6 +36,6 @@ console.log(Product.combine(3, 5))
 declare const make: <A>(combine: (self: A, that: A) => A) => Combiner<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Combiner.ts#L127)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Combiner.ts#L128)
 
 Since v4.0.0

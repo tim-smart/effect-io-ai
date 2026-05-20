@@ -6,6 +6,8 @@ Module: `Schema`<br />
 Error thrown (or returned as the error channel value) when schema decoding
 or encoding fails.
 
+**Details**
+
 The `issue` field contains a structured `Issue.Issue` tree describing
 every validation failure, including the path to the problematic value,
 expected types, and actual values received. `message` renders the issue tree
@@ -34,6 +36,6 @@ try {
 declare const SchemaError: typeof InternalSchema.SchemaError
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L874)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L905)
 
 Since v4.0.0

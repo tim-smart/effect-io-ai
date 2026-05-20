@@ -5,6 +5,8 @@ Module: `Result`<br />
 
 A flexible variant of `flatMap` that accepts multiple input shapes.
 
+**Details**
+
 The second argument can be:
 - A function `(a: A) => Result<A2, E2>` (same as `flatMap`)
 - A function `(a: A) => A2` (auto-wrapped in `succeed`)
@@ -47,6 +49,6 @@ console.log(a, b, c)
 declare const andThen: { <A, A2, E2>(f: (a: A) => Result<A2, E2>): <E>(self: Result<A, E>) => Result<A2, E | E2>; <A2, E2>(f: Result<A2, E2>): <A, E>(self: Result<A, E>) => Result<A2, E | E2>; <A, A2>(f: (a: A) => A2): <E>(self: Result<A, E>) => Result<A2, E>; <A2>(right: NotFunction<A2>): <A, E>(self: Result<A, E>) => Result<A2, E>; <A, E, A2, E2>(self: Result<A, E>, f: (a: A) => Result<A2, E2>): Result<A2, E | E2>; <A, E, A2, E2>(self: Result<A, E>, f: Result<A2, E2>): Result<A2, E | E2>; <A, E, A2>(self: Result<A, E>, f: (a: A) => A2): Result<A2, E>; <A, E, A2>(self: Result<A, E>, f: NotFunction<A2>): Result<A2, E>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L1259)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L1327)
 
 Since v2.0.0

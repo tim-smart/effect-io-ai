@@ -6,11 +6,13 @@ Module: `SchemaTransformation`<br />
 Creates a `Transformation` from effectful decode and encode functions that
 can fail with `Issue`.
 
-When to use this:
+**When to use**
+
 - The transformation can fail (e.g. parsing, validation).
 - The transformation requires Effect services.
 
-Behavior:
+**Details**
+
 - Each function receives the input value and `ParseOptions`.
 - Must return an `Effect` that succeeds with the output or fails with `Issue`.
 - Skips `None` inputs (missing keys) — functions are only called on present values.
@@ -36,7 +38,8 @@ const DateFromString = Schema.String.pipe(
 )
 ```
 
-See also:
+**See**
+
 - `transform` — for infallible, pure transformations
 - `transformOptional` — for transformations that handle missing keys
 - `make` — for transformations from existing Getters
@@ -47,6 +50,6 @@ See also:
 declare const transformOrFail: <T, E, RD = never, RE = never>(options: { readonly decode: (e: E, options: AST.ParseOptions) => Effect.Effect<T, Issue.Issue, RD>; readonly encode: (t: T, options: AST.ParseOptions) => Effect.Effect<E, Issue.Issue, RE>; }) => Transformation<T, E, RD, RE>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L352)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L357)
 
 Since v3.10.0

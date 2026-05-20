@@ -11,6 +11,6 @@ Create a Cookies object from a set of Set-Cookie headers
 declare const fromSetCookie: (headers: Iterable<string> | string) => Cookies
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cookies.ts#L267)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cookies.ts#L271)
 
 Since v4.0.0

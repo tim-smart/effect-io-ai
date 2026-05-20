@@ -8,6 +8,8 @@ acquisition of a resource (for example, opening a file, launching a thread,
 etc.) will not be interrupted, and that the resource will always be released
 when the `Effect` value completes execution.
 
+**Details**
+
 `acquireUseRelease` does the following:
 
   1. Ensures that the `Effect` value that acquires the resource will not be
@@ -77,6 +79,6 @@ Effect.runPromise(program)
 declare const acquireUseRelease: <Resource, E, R, A, E2, R2, E3, R3>(acquire: Effect<Resource, E, R>, use: (a: Resource) => Effect<A, E2, R2>, release: (a: Resource, exit: Exit.Exit<A, E2>) => Effect<void, E3, R3>) => Effect<A, E | E2 | E3, R | R2 | R3>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L6108)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L6178)
 
 Since v2.0.0

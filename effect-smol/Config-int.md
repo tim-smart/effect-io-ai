@@ -5,6 +5,8 @@ Module: `Config`<br />
 
 Creates a config for an integer value. Rejects floats.
 
+**Details**
+
 Shortcut for `Config.schema(Schema.Int, name)`.
 
 **See**
@@ -18,6 +20,6 @@ Shortcut for `Config.schema(Schema.Int, name)`.
 declare const int: (name?: string) => Config<number>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Config.ts#L947)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Config.ts#L1009)
 
 Since v4.0.0

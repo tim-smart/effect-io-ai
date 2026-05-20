@@ -5,6 +5,8 @@ Module: `McpSchema`<br />
 
 Schema for MCP result metadata returned by paginated operations.
 
+**Details**
+
 It includes the base result metadata fields plus an optional `nextCursor`,
 which indicates that more results may be available.
 
@@ -14,6 +16,6 @@ which indicates that more results may be available.
 declare class PaginatedResultMeta
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L247)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L265)
 
 Since v4.0.0

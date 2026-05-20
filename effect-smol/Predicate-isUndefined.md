@@ -5,10 +5,12 @@ Module: `Predicate`<br />
 
 Checks whether a value is `undefined`.
 
-When to use:
+**When to use**
+
 - You need a guard for optional values.
 
-Behavior:
+**Details**
+
 - Pure; does not mutate input.
 - Uses `input === undefined`.
 
@@ -22,7 +24,10 @@ const data: unknown = undefined
 console.log(Predicate.isUndefined(data))
 ```
 
-See also: `isNotUndefined`, `isNullish`
+**See**
+
+- `isNotUndefined`
+- `isNullish`
 
 **Signature**
 
@@ -30,6 +35,6 @@ See also: `isNotUndefined`, `isNullish`
 declare const isUndefined: (input: unknown) => input is undefined
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L760)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L807)
 
 Since v2.0.0

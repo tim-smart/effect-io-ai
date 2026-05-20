@@ -5,7 +5,10 @@ Module: `Prompt`<br />
 
 Content part representing plain text.
 
-The most basic content type used for textual information in messages.
+**Details**
+
+Text parts are the basic content type used for textual information in
+messages.
 
 **Example** (Creating text parts)
 
@@ -28,6 +31,6 @@ export interface TextPart extends BasePart<"text", TextPartOptions> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L273)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L277)
 
 Since v4.0.0

@@ -5,6 +5,8 @@ Module: `Stream`<br />
 
 Creates a stream from a PubSub of `Take` values.
 
+**Details**
+
 `Take` values include end and failure signals.
 
 **Example** (Creating a stream from PubSub takes)
@@ -35,6 +37,6 @@ Effect.runPromise(program)
 declare const fromPubSubTake: <A, E>(pubsub: PubSub.PubSub<Take.Take<A, E>>) => Stream<A, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L1347)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L1369)
 
 Since v4.0.0

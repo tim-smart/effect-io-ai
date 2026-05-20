@@ -5,11 +5,13 @@ Module: `SchemaGetter`<br />
 
 Creates a getter that validates a value using an effectful check function.
 
-Use this when:
+**When to use**
+
 - You need to validate a decoded value (e.g. check a constraint or call an external service).
 - The validation may be asynchronous or require Effect services.
 
-Behavior:
+**Details**
+
 - Only runs when input is `Some` — `None` passes through.
 - The check function returns a validation result:
   - `undefined` or `true` — value is valid, passes through.
@@ -29,9 +31,10 @@ const nonNegative = SchemaGetter.checkEffect<number>((n) =>
 )
 ```
 
-See also:
-- `transform` — when you need to change the value, not just validate
-- `fail` — unconditional failure
+**See**
+
+- `transform` - when you need to change the value, not just validate
+- `fail` - unconditional failure
 
 **Signature**
 
@@ -39,6 +42,6 @@ See also:
 declare const checkEffect: <T, R = never>(f: (input: T, options: AST.ParseOptions) => Effect.Effect<undefined | boolean | Schema.FilterIssue, never, R>) => Getter<T, T, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L507)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L518)
 
 Since v4.0.0

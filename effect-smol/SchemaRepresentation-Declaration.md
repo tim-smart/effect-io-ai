@@ -3,14 +3,18 @@ Module: `SchemaRepresentation`<br />
 
 ## SchemaRepresentation.Declaration
 
-A custom type declaration (e.g. `Date`, `Option`, `ReadonlySet`).
+A custom type declaration, such as `Date`, `Option`, or `ReadonlySet`.
 
-- Use when inspecting or transforming non-primitive schema types.
-- `typeParameters` holds the inner type arguments (e.g. the `A` in `Option<A>`).
-- `encodedSchema` is the fallback representation when no `Reviver`
-  recognizes this declaration.
-- `annotations.typeConstructor` identifies the declaration kind (e.g.
-  `{ _tag: "effect/Option" }`).
+**When to use**
+
+Use this when inspecting or transforming non-primitive schema types.
+
+**Details**
+
+`typeParameters` holds the inner type arguments, such as the `A` in
+`Option<A>`. `encodedSchema` is the fallback representation when no
+`Reviver` recognizes this declaration. `annotations.typeConstructor`
+identifies the declaration kind, such as `{ _tag: "effect/Option" }`.
 
 **See**
 
@@ -29,6 +33,6 @@ export interface Declaration {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaRepresentation.ts#L122)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaRepresentation.ts#L126)
 
 Since v4.0.0

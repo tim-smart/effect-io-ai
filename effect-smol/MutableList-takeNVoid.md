@@ -6,6 +6,8 @@ Module: `MutableList`<br />
 Removes up to `n` elements from the beginning of the `MutableList` without
 returning them.
 
+**Details**
+
 If `n` is less than or equal to zero, or the list is empty, the list is left
 unchanged. If `n` is greater than or equal to the current length, the list is
 cleared.
@@ -16,6 +18,6 @@ cleared.
 declare const takeNVoid: <A>(self: MutableList<A>, n: number) => void
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableList.ts#L678)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableList.ts#L686)
 
 Since v4.0.0

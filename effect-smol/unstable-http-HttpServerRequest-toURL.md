@@ -5,6 +5,8 @@ Module: `HttpServerRequest`<br />
 
 Attempts to construct an absolute `URL` for a server request.
 
+**Details**
+
 The host comes from the `host` header, defaulting to `localhost`, and the
 protocol is `https` only when `x-forwarded-proto` is `https`; invalid URLs
 return `Option.none`.
@@ -15,6 +17,6 @@ return `Option.none`.
 declare const toURL: (self: HttpServerRequest) => Option.Option<URL>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpServerRequest.ts#L977)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpServerRequest.ts#L1003)
 
 Since v4.0.0

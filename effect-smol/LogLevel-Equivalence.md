@@ -20,6 +20,6 @@ console.log(LogLevel.Equivalence("Error", "Info")) // false
 declare const Equivalence: Equ.Equivalence<LogLevel>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/LogLevel.ts#L140)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/LogLevel.ts#L145)
 
 Since v4.0.0

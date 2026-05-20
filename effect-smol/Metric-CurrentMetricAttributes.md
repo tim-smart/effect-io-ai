@@ -7,6 +7,7 @@ Module: `Metric`<br />
 context.
 
 **Details**
+
 The default value is an empty attribute set. Metric reads and updates merge
 these contextual attributes with the metric's own attributes to select the
 metric series being accessed.
@@ -46,6 +47,6 @@ const program = Effect.gen(function*() {
 declare const CurrentMetricAttributes: Context.Reference<Readonly<Record<string, string>>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Metric.ts#L1739)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Metric.ts#L1752)
 
 Since v4.0.0

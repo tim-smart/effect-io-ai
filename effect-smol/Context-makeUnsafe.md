@@ -6,7 +6,7 @@ Module: `Context`<br />
 Creates a `Context` from an existing service map without validating or
 copying it.
 
-**Notes**
+**Gotchas**
 
 This is unsafe because later mutation of the provided map can affect the
 created `Context`. Prefer `empty`, `make`, `add`, or `merge` for normal

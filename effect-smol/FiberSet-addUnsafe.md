@@ -6,6 +6,8 @@ Module: `FiberSet`<br />
 Adds an existing fiber to the `FiberSet` using a synchronous, unsafe
 mutation.
 
+**Details**
+
 When the fiber completes, it is removed from the set. If the set is already
 closed, the supplied fiber is interrupted immediately. Non-interruption
 failures are recorded for `FiberSet.join`.
@@ -33,6 +35,6 @@ const program = Effect.gen(function*() {
 declare const addUnsafe: { <A, E, XE extends E, XA extends A>(fiber: Fiber.Fiber<XA, XE>, options?: { readonly propagateInterruption?: boolean | undefined; } | undefined): (self: FiberSet<A, E>) => void; <A, E, XE extends E, XA extends A>(self: FiberSet<A, E>, fiber: Fiber.Fiber<XA, XE>, options?: { readonly propagateInterruption?: boolean | undefined; } | undefined): void; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FiberSet.ts#L304)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FiberSet.ts#L313)
 
 Since v4.0.0

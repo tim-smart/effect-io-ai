@@ -5,9 +5,12 @@ Module: `Config`<br />
 
 Transforms the parsed value of a config with a pure function.
 
-When to use:
+**When to use**
+
 - Post-processing a config value (e.g. trimming, uppercasing, wrapping).
 - The transformation cannot fail. Use `mapOrFail` if it can.
+
+**Details**
 
 Supports both data-last and data-first calling conventions.
 
@@ -34,6 +37,6 @@ const provider = ConfigProvider.fromUnknown({ name: "alice" })
 declare const map: { <A, B>(f: (a: A) => B): (self: Config<A>) => Config<B>; <A, B>(self: Config<A>, f: (a: A) => B): Config<B>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Config.ts#L250)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Config.ts#L262)
 
 Since v2.0.0

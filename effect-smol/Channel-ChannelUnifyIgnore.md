@@ -5,6 +5,8 @@ Module: `Channel`<br />
 
 Marker used by `Unify` while resolving `Channel` values.
 
+**Details**
+
 It prevents the inherited `Effect` unifier from being selected when the
 channel-specific unifier should preserve `Channel` input, output, and
 environment type parameters. Users normally do not need to reference this
@@ -18,6 +20,6 @@ export interface ChannelUnifyIgnore {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L225)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L231)
 
 Since v2.0.0

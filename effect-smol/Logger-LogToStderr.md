@@ -12,6 +12,6 @@ Context reference that controls whether console-style loggers write to
 declare const LogToStderr: Context.Reference<boolean>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Logger.ts#L246)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Logger.ts#L249)
 
 Since v4.0.0

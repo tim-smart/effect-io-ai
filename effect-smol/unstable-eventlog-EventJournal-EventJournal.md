@@ -5,6 +5,8 @@ Module: `EventJournal`<br />
 
 Context service for storing and replaying event journal entries.
 
+**Details**
+
 The service writes local entries, imports entries from remote journals, exposes
 a stream of local changes, and provides per-store locking.
 
@@ -14,6 +16,6 @@ a stream of local changes, and provides per-store locking.
 declare class EventJournal
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventJournal.ts#L44)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventJournal.ts#L46)
 
 Since v4.0.0

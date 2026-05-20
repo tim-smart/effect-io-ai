@@ -11,6 +11,6 @@ Extracts the successfully parsed value type from a `Config`.
 type Success<T> = [T] extends [Config<infer A>] ? A : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Config.ts#L480)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Config.ts#L510)
 
 Since v2.5.0

@@ -12,6 +12,6 @@ Provides the `HttpAgent` service using default scoped Node `http` and
 declare const layerAgent: Layer.Layer<HttpAgent, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L431)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L437)
 
 Since v4.0.0

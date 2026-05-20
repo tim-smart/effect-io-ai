@@ -6,10 +6,10 @@ Module: `Logger`<br />
 A `Logger` which outputs logs using the [logfmt](https://brandur.org/logfmt)
 style.
 
-For example:
-```
-timestamp=2025-01-03T14:22:47.570Z level=INFO fiber=#1 message=hello
-```
+**Details**
+
+For example, a logfmt entry is rendered as
+`timestamp=2025-01-03T14:22:47.570Z level=INFO fiber=#1 message=hello`.
 
 **Example** (Formatting logs as logfmt)
 
@@ -42,6 +42,6 @@ const productionLogger = Logger.formatLogFmt
 declare const formatLogFmt: Logger<unknown, string>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Logger.ts#L631)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Logger.ts#L644)
 
 Since v4.0.0

@@ -5,8 +5,10 @@ Module: `TxChunk`<br />
 
 Prepends an element to the beginning of the `TxChunk`.
 
-**Mutation behavior**: This function mutates the original TxChunk by adding
-the element to the beginning. It does not return a new TxChunk reference.
+**Details**
+
+This function mutates the original TxChunk by adding the element to the beginning. It does not
+return a new TxChunk reference.
 
 **Example** (Prepending an element)
 
@@ -30,6 +32,6 @@ const program = Effect.gen(function*() {
 declare const prepend: { <A>(element: A): (self: TxChunk<A>) => Effect.Effect<void>; <A>(self: TxChunk<A>, element: A): Effect.Effect<void>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxChunk.ts#L415)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxChunk.ts#L435)
 
 Since v4.0.0

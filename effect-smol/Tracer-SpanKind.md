@@ -32,6 +32,6 @@ const internalSpan = Effect.withSpan("internal-process", {
 type SpanKind = "internal" | "server" | "client" | "producer" | "consumer"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tracer.ts#L319)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tracer.ts#L315)
 
 Since v3.1.0

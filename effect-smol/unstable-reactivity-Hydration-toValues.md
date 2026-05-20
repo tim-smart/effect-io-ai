@@ -11,6 +11,6 @@ Returns dehydrated state entries as `DehydratedAtomValue` records.
 declare const toValues: (state: ReadonlyArray<DehydratedAtom>) => Array<DehydratedAtomValue>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Hydration.ts#L113)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Hydration.ts#L117)
 
 Since v4.0.0

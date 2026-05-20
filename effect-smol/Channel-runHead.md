@@ -6,6 +6,8 @@ Module: `Channel`<br />
 Runs a channel until the first output element is available, returning it in
 an `Option`.
 
+**Details**
+
 Returns `Option.some` with the first output element, or `Option.none` if the
 channel completes without emitting output.
 
@@ -15,6 +17,6 @@ channel completes without emitting output.
 declare const runHead: <OutElem, OutErr, OutDone, Env>(self: Channel<OutElem, OutErr, OutDone, unknown, unknown, unknown, Env>) => Effect.Effect<Option.Option<OutElem>, OutErr, Env>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L7586)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L7698)
 
 Since v4.0.0

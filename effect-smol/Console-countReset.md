@@ -3,10 +3,7 @@ Module: `Console`<br />
 
 ## Console.countReset
 
-Resets the counter for the given label.
-
-This function resets the counter associated with the specified label
-back to zero.
+Resets the counter associated with the specified label back to zero.
 
 **Example** (Resetting a counter)
 
@@ -27,6 +24,6 @@ const program = Effect.gen(function*() {
 declare const countReset: (label?: string) => Effect.Effect<void>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Console.ts#L265)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Console.ts#L245)
 
 Since v2.0.0

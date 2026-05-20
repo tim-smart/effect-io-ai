@@ -5,6 +5,8 @@ Module: `Stream`<br />
 
 Converts the stream to a `ReadableStream` using the provided services.
 
+**Details**
+
 See https://developer.mozilla.org/en-US/docs/Web/API/ReadableStream.
 
 **Example** (Converting to a ReadableStream with services)
@@ -22,6 +24,6 @@ const readableStream = Stream.toReadableStreamWith(stream, Context.empty())
 declare const toReadableStreamWith: (<A, XR>(context: Context.Context<XR>, options?: { readonly strategy?: QueuingStrategy<A> | undefined; }) => <E, R extends XR>(self: Stream<A, E, R>) => ReadableStream<A>) & (<A, E, XR, R extends XR>(self: Stream<A, E, R>, context: Context.Context<XR>, options?: { readonly strategy?: QueuingStrategy<A> | undefined; }) => ReadableStream<A>)
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L10690)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L10840)
 
 Since v4.0.0

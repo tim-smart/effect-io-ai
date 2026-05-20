@@ -12,6 +12,6 @@ the upstream done value unchanged.
 declare const identity: <Elem, Err, Done>() => Channel<Elem, Err, Done, Elem, Err, Done>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L1282)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L1300)
 
 Since v2.0.0

@@ -5,6 +5,8 @@ Module: `Array`<br />
 
 Splits a non-empty array into its first element and the remaining elements.
 
+**Details**
+
 - Returns a tuple `[head, tail]`.
 - Requires a `NonEmptyReadonlyArray`.
 
@@ -29,6 +31,6 @@ console.log(result) // [1, [2, 3, 4]]
 declare const unprepend: <A>(self: NonEmptyReadonlyArray<A>) => [firstElement: A, remainingElements: Array<A>]
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L953)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L1001)
 
 Since v2.0.0

@@ -5,10 +5,12 @@ Module: `Predicate`<br />
 
 Checks whether a value is a `bigint`.
 
-When to use:
+**When to use**
+
 - You need to guard an `unknown` value as a bigint.
 
-Behavior:
+**Details**
+
 - Pure; does not mutate input.
 - Uses `typeof input === "bigint"`.
 
@@ -24,7 +26,9 @@ if (Predicate.isBigInt(data)) {
 }
 ```
 
-See also: `isNumber`
+**See**
+
+- `isNumber`
 
 **Signature**
 
@@ -32,6 +36,6 @@ See also: `isNumber`
 declare const isBigInt: (input: unknown) => input is bigint
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L637)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L677)
 
 Since v2.0.0

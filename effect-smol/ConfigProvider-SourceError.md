@@ -5,13 +5,16 @@ Module: `ConfigProvider`<br />
 
 Typed error indicating that a configuration source could not be read.
 
-When to use:
-- Return from a custom provider's `get` callback when the underlying store
-  is unreachable or produces an I/O error.
-- Match on in error channels when consuming provider output directly.
+**When to use**
 
-Not used for "key not found" — that case is represented by returning
-`undefined` from `load` / `get`.
+Use this from a custom provider's `get` callback when the underlying store
+is unreachable or produces an I/O error, or match on it in error channels
+when consuming provider output directly.
+
+**Gotchas**
+
+Do not use `SourceError` for "key not found". That case is represented by
+returning `undefined` from `load` or `get`.
 
 **Example** (Failing with a SourceError)
 
@@ -36,6 +39,6 @@ const provider = ConfigProvider.make((_path) =>
 declare class SourceError
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ConfigProvider.ts#L252)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ConfigProvider.ts#L269)
 
 Since v4.0.0

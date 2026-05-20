@@ -6,6 +6,7 @@ Module: `ManagedRuntime`<br />
 Creates a `ManagedRuntime` from a layer.
 
 **Details**
+
 The layer is built lazily on first use and its context is cached for
 subsequent runs. Resources acquired by the layer are owned by the runtime and
 are released when `dispose` or `disposeEffect` is run.
@@ -42,6 +43,6 @@ runtime.runPromise(program)
 declare const make: <R, ER>(layer: Layer.Layer<R, ER, never>, options?: { readonly memoMap?: Layer.MemoMap | undefined; } | undefined) => ManagedRuntime<R, ER>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ManagedRuntime.ts#L219)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ManagedRuntime.ts#L231)
 
 Since v2.0.0

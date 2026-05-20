@@ -5,9 +5,11 @@ Module: `SchemaRepresentation`<br />
 
 One or more `Representation`s sharing a common `References` map.
 
-- Use `fromASTs` to create from multiple Schema ASTs.
-- Use `toCodeDocument` to generate TypeScript code.
-- Use `toJsonSchemaMultiDocument` to convert to JSON Schema.
+**When to use**
+
+Use `fromASTs` to create this from multiple Schema ASTs,
+`toCodeDocument` to generate TypeScript code, and
+`toJsonSchemaMultiDocument` to convert to JSON Schema.
 
 **See**
 
@@ -23,6 +25,6 @@ type MultiDocument = {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaRepresentation.ts#L757)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaRepresentation.ts#L792)
 
 Since v4.0.0

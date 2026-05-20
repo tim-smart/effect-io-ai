@@ -6,11 +6,13 @@ Module: `SchemaTransformation`<br />
 Creates a `Transformation` from pure (sync, infallible) decode and encode
 functions.
 
-When to use this:
+**When to use**
+
 - The conversion cannot fail.
 - No Effect services are needed.
 
-Behavior:
+**Details**
+
 - Each function receives the input and returns the output directly.
 - Skips `None` inputs (missing keys) — functions are only called on present values.
 - Does not allocate Effects internally; uses optimized sync path.
@@ -31,7 +33,8 @@ const CentsFromDollars = Schema.Number.pipe(
 )
 ```
 
-See also:
+**See**
+
 - `transformOrFail` — for fallible or effectful transformations
 - `transformOptional` — for transformations that handle missing keys
 - `passthrough` — when no conversion is needed
@@ -42,6 +45,6 @@ See also:
 declare const transform: <T, E>(options: { readonly decode: (input: E) => T; readonly encode: (input: T) => E; }) => Transformation<T, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L399)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L405)
 
 Since v3.10.0

@@ -5,6 +5,8 @@ Module: `DateTime`<br />
 
 Create a fixed offset time zone.
 
+**Details**
+
 The offset is specified in milliseconds from UTC. Positive values are
 ahead of UTC, negative values are behind UTC.
 
@@ -27,6 +29,6 @@ const dt = DateTime.makeZonedUnsafe("2024-01-01T12:00:00Z", {
 declare const zoneMakeOffset: (offset: number) => TimeZone.Offset
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L949)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L1005)
 
 Since v3.6.0

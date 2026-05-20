@@ -34,6 +34,6 @@ const loadConfig = Effect.gen(function*() {
 declare const fileSchema: <A>(schema: Schema.Decoder<A>, options?: FileSchemaOptions | undefined) => Primitive<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Primitive.ts#L611)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Primitive.ts#L617)
 
 Since v4.0.0

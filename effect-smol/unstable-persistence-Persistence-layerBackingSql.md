@@ -5,6 +5,8 @@ Module: `Persistence`<br />
 
 Provides SQL-backed persistence using a shared `effect_persistence` table.
 
+**Details**
+
 Rows are partitioned by `store_id` and store JSON-encoded values with
 optional expiration timestamps.
 
@@ -14,6 +16,6 @@ optional expiration timestamps.
 declare const layerBackingSql: Layer.Layer<BackingPersistence, never, SqlClient.SqlClient>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Persistence.ts#L519)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Persistence.ts#L527)
 
 Since v4.0.0

@@ -5,12 +5,12 @@ Module: `SchemaIssue`<br />
 
 Returns `true` if the given value is an `Issue`.
 
-When to use:
+**When to use**
 
 - Narrowing an `unknown` value to `Issue` in error-handling code.
 - Distinguishing an `Issue` from other error types in a catch-all handler.
 
-Behaviour:
+**Details**
 
 - Pure; does not mutate input.
 - Checks for the internal `TypeId` brand on the value.

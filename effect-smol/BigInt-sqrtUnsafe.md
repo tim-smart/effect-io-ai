@@ -5,8 +5,14 @@ Module: `BigInt`<br />
 
 Returns the integer square root of a non-negative `bigint`.
 
+**Details**
+
 For non-perfect squares, returns the largest `bigint` whose square is less
-than or equal to the input. Throws a `RangeError` if the input is negative.
+than or equal to the input.
+
+**Gotchas**
+
+Throws a `RangeError` if the input is negative.
 
 **Example** (Calculating square roots unsafely)
 
@@ -25,6 +31,6 @@ assert.deepStrictEqual(BigInt.sqrtUnsafe(16n), 4n)
 declare const sqrtUnsafe: (n: bigint) => bigint
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigInt.ts#L544)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigInt.ts#L560)
 
 Since v4.0.0

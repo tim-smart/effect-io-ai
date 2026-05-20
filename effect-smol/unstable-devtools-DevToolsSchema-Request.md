@@ -5,6 +5,8 @@ Module: `DevToolsSchema`<br />
 
 Type of devtools protocol requests accepted by the server.
 
+**Details**
+
 Requests include heartbeat pings, spans, span events, and metric snapshots.
 
 **Signature**
@@ -13,6 +15,6 @@ Requests include heartbeat pings, spans, span events, and metric snapshots.
 type Request = Schema.Schema.Type<typeof Request>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DevToolsSchema.ts#L479)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DevToolsSchema.ts#L505)
 
 Since v4.0.0

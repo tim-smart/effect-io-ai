@@ -6,6 +6,8 @@ Module: `Metric`<br />
 A `Metric<Input, State>` represents a concurrent metric which accepts update
 values of type `Input` and are aggregated to a value of type `State`.
 
+**Details**
+
 For example, a counter metric would have type `Metric<number, number>`,
 representing the fact that the metric can be updated with numbers (the amount
 to increment or decrement the counter by), and the state of the counter is a
@@ -91,6 +93,6 @@ export interface Metric<in Input, out State> extends Pipeable {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Metric.ts#L178)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Metric.ts#L180)
 
 Since v2.0.0

@@ -11,6 +11,6 @@ Sets a single request header, replacing any existing value for that header.
 declare const setHeader: { (key: string, value: string): (self: HttpClientRequest) => HttpClientRequest; (self: HttpClientRequest, key: string, value: string): HttpClientRequest; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpClientRequest.ts#L305)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpClientRequest.ts#L307)
 
 Since v4.0.0

@@ -5,6 +5,8 @@ Module: `Sse`<br />
 
 Default Server-Sent Events encoder.
 
+**Details**
+
 It renders `Event` values as `id`, `event`, and `data` lines and renders
 `Retry` values as `retry:` directives.
 
@@ -14,6 +16,6 @@ It renders `Event` values as `id`, `event`, and `data` lines and renders
 declare const encoder: Encoder
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Sse.ts#L561)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Sse.ts#L568)
 
 Since v4.0.0

@@ -7,9 +7,11 @@ A `Deferred` represents an asynchronous variable that can be set exactly
 once, with the ability for an arbitrary number of fibers to suspend (by
 calling `Deferred.await`) and automatically resume when the variable is set.
 
-`Deferred` can be used for building primitive actions whose completions
-require the coordinated action of multiple fibers, and for building
-higher-level concurrent or asynchronous structures.
+**When to use**
+
+Use `Deferred` for primitive actions whose completions require the
+coordinated action of multiple fibers, and for building higher-level
+concurrent or asynchronous structures.
 
 **Example** (Creating a Deferred for inter-fiber communication)
 
@@ -54,6 +56,6 @@ export interface Deferred<in out A, in out E = never> extends Deferred.Variance<
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Deferred.ts#L130)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Deferred.ts#L132)
 
 Since v2.0.0

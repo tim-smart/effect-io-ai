@@ -5,6 +5,8 @@ Module: `EntityProxyServer`<br />
 
 Union of RPC handler services required to serve the proxy RPCs for an entity.
 
+**Details**
+
 Includes both the normal prefixed RPC handler and its discard variant.
 
 **Signature**
@@ -21,6 +23,6 @@ type RpcHandlers<Rpcs, Prefix> = Rpcs extends Rpc.Rpc<
   : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EntityProxyServer.ts#L147)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EntityProxyServer.ts#L153)
 
 Since v4.0.0

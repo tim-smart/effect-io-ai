@@ -11,6 +11,6 @@ Narrows an `AST` to `Enum`.
 declare const isEnum: (ast: AST) => ast is Enum
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L282)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L284)
 
 Since v4.0.0

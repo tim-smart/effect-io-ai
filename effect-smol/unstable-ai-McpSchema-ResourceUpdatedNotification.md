@@ -5,6 +5,8 @@ Module: `McpSchema`<br />
 
 Notification sent by the server when a subscribed resource URI has changed.
 
+**Details**
+
 The URI may identify a sub-resource of the resource that the client
 originally subscribed to.
 
@@ -14,6 +16,6 @@ originally subscribed to.
 declare class ResourceUpdatedNotification
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L1015)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L1037)
 
 Since v4.0.0

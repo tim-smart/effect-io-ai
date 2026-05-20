@@ -5,6 +5,8 @@ Module: `SchemaAST`<br />
 
 AST node matching the `void` type (accepts `undefined` at runtime).
 
+**Details**
+
 Behaves like `Undefined` for parsing but represents the TypeScript
 `void` type semantically.
 
@@ -19,6 +21,6 @@ Behaves like `Undefined` for parsing but represents the TypeScript
 declare class Void
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L711)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L730)
 
 Since v4.0.0

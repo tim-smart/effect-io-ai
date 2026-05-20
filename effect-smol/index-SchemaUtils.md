@@ -11,6 +11,6 @@ Re-exports all named exports from the "./SchemaUtils.ts" module as `SchemaUtils`
 export * as SchemaUtils from "./SchemaUtils.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L5062)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L5073)
 
 Since v4.0.0

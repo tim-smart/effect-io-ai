@@ -6,6 +6,7 @@ Module: `Schema`<br />
 Validates that a string is unchanged by JavaScript's `toUpperCase()`.
 
 **Details**
+
 This accepts empty strings and characters that do not have lowercase forms,
 such as digits, punctuation, and whitespace. It rejects strings that would
 change when uppercased.
@@ -16,6 +17,6 @@ change when uppercased.
 declare const isUppercased: (annotations?: Annotations.Filter) => AST.Filter<string>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L5887)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L6060)
 
 Since v4.0.0

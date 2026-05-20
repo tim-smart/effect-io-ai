@@ -5,6 +5,8 @@ Module: `UrlParams`<br />
 
 Builds a readonly record from `UrlParams`.
 
+**Details**
+
 Keys with one value map to a string, and keys with multiple values map to a
 non-empty readonly array of strings.
 
@@ -14,6 +16,6 @@ non-empty readonly array of strings.
 declare const toReadonlyRecord: (self: UrlParams) => ReadonlyRecord<string, string | Arr.NonEmptyReadonlyArray<string>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/UrlParams.ts#L535)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/UrlParams.ts#L569)
 
 Since v4.0.0

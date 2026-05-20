@@ -11,6 +11,6 @@ Narrows an `AST` to `Null`.
 declare const isNull: (ast: AST) => ast is Null
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L170)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L172)
 
 Since v4.0.0

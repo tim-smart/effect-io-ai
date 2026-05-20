@@ -5,9 +5,11 @@ Module: `TxHashMap`<br />
 
 Updates the value for the specified key using an Option-based update function.
 
-**Mutation behavior**: This function mutates the original TxHashMap by updating,
-adding, or removing the key-value pair based on the function result. It does not
-return a new TxHashMap reference.
+**Details**
+
+This function mutates the original TxHashMap by updating, adding, or removing
+the key-value pair based on the function result. It does not return a new
+TxHashMap reference.
 
 **Example** (Updating values with Option)
 
@@ -55,6 +57,6 @@ const program = Effect.gen(function*() {
 declare const modifyAt: { <K, V>(key: K, f: (value: Option.Option<V>) => Option.Option<V>): (self: TxHashMap<K, V>) => Effect.Effect<void>; <K, V>(self: TxHashMap<K, V>, key: K, f: (value: Option.Option<V>) => Option.Option<V>): Effect.Effect<void>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashMap.ts#L809)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashMap.ts#L816)
 
 Since v4.0.0

@@ -5,8 +5,12 @@ Module: `Exit`<br />
 
 Represents the result of an Effect computation.
 
+**When to use**
+
 - Use when you need to synchronously inspect whether a computation succeeded or failed
 - Use as an alternative to try/catch for Effect-based code
+
+**Details**
 
 An `Exit<A, E>` is either:
 - `Success<A, E>` containing a value of type `A`
@@ -40,6 +44,6 @@ const result = Exit.match(success, {
 type Exit<A, E> = Success<A, E> | Failure<A, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Exit.ts#L102)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Exit.ts#L106)
 
 Since v2.0.0

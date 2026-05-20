@@ -5,18 +5,18 @@ Module: `Equal`<br />
 
 The unique string identifier for the `Equal` interface.
 
-Use this as a computed property key when implementing custom equality on a
-class or object literal.
+**When to use**
 
-When to use:
-- As the method name when implementing the `Equal` interface.
-- To check manually whether an object carries an equality method (prefer
+- Use it as the computed property key when implementing custom equality on a
+  class or object literal.
+- Use it to check manually whether an object carries an equality method (prefer
   `isEqual` instead).
 
-Behavior:
-- Pure constant — no allocation or side effects.
+**Details**
 
-**Example** (implementing Equal on a class)
+This is a pure constant with no allocation or side effects.
+
+**Example** (Implementing Equal on a Class)
 
 ```ts
 import { Equal, Hash } from "effect"
@@ -45,6 +45,6 @@ class UserId implements Equal.Equal {
 declare const symbol: "~effect/interfaces/Equal"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Equal.ts#L115)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Equal.ts#L114)
 
 Since v2.0.0

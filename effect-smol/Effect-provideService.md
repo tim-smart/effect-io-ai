@@ -6,15 +6,13 @@ Module: `Effect`<br />
 The `provideService` function is used to provide an actual
 implementation for a service in the context of an effect.
 
+**Details**
+
 This function allows you to associate a service with its implementation so
 that it can be used in your program. You define the service (e.g., a random
 number generator), and then you use `provideService` to link that
 service to its implementation. Once the implementation is provided, the
 effect can be run successfully without further requirements.
-
-**See**
-
-- `provide` for providing multiple layers to an effect.
 
 **Example** (Providing a service value)
 
@@ -47,12 +45,16 @@ Effect.runPromise(program).then(console.log)
 // data
 ```
 
+**See**
+
+- `provide` for providing multiple layers to an effect.
+
 **Signature**
 
 ```ts
 declare const provideService: { <I, S>(service: Context.Key<I, S>): { (implementation: S): <A, E, R>(self: Effect<A, E, R>) => Effect<A, E, Exclude<R, I>>; <A, E, R>(self: Effect<A, E, R>, implementation: S): Effect<A, E, Exclude<R, I>>; }; <I, S>(service: Context.Key<I, S>, implementation: S): <A, E, R>(self: Effect<A, E, R>) => Effect<A, E, Exclude<R, I>>; <A, E, R, I, S>(self: Effect<A, E, R>, service: Context.Key<I, S>, implementation: S): Effect<A, E, Exclude<R, I>>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L5688)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L5755)
 
 Since v2.0.0

@@ -11,6 +11,6 @@ Context service for a stateful snowflake id generator.
 declare class Generator
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Snowflake.ts#L264)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Snowflake.ts#L266)
 
 Since v4.0.0

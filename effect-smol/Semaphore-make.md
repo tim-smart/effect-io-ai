@@ -5,6 +5,8 @@ Module: `Semaphore`<br />
 
 Creates a `Semaphore` initialized with the specified total number of permits.
 
+**When to use**
+
 Use the returned semaphore to limit concurrency with `withPermit` or
 `withPermits`, or to manually `take` and `release` permits.
 
@@ -36,6 +38,6 @@ const program = Effect.gen(function*() {
 declare const make: (permits: number) => Effect.Effect<Semaphore>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Semaphore.ts#L295)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Semaphore.ts#L301)
 
 Since v4.0.0

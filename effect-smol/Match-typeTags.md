@@ -5,6 +5,8 @@ Module: `Match`<br />
 
 Creates a type-safe match function for discriminated unions based on `_tag` field.
 
+**Details**
+
 This function allows you to define exhaustive pattern matching for discriminated unions
 by providing handlers for each possible `_tag` value. It ensures type safety and
 can optionally enforce a specific return type across all branches.
@@ -49,6 +51,6 @@ console.log(processResult({ _tag: "Loading" }))
 declare const typeTags: { <I, Ret>(): <P extends { readonly [Tag in Types.Tags<"_tag", I> & string]: (_: Extract<I, { readonly _tag: Tag; }>) => Ret; } & { readonly [Tag in Exclude<keyof P, Types.Tags<"_tag", I>>]: never; }>(fields: P) => (input: I) => Ret; <I>(): <P extends { readonly [Tag in Types.Tags<"_tag", I> & string]: (_: Extract<I, { readonly _tag: Tag; }>) => any; } & { readonly [Tag in Exclude<keyof P, Types.Tags<"_tag", I>>]: never; }>(fields: P) => (input: I) => Unify<ReturnType<P[keyof P]>>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L405)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L421)
 
 Since v4.0.0

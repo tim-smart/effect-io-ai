@@ -5,6 +5,8 @@ Module: `Array`<br />
 
 A readonly array guaranteed to have at least one element.
 
+**When to use**
+
 Use this type when you need to ensure non-emptiness at the type level while
 preventing mutation. Many Array module functions accept or return this type.
 
@@ -28,6 +30,6 @@ const head: number = nonEmpty[0] // guaranteed to exist
 type readonly [A, ...A[]] = readonly [A, ...Array<A>]
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L154)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L158)
 
 Since v2.0.0

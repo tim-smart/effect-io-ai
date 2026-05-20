@@ -5,6 +5,8 @@ Module: `McpSchema`<br />
 
 The contents of a resource, embedded into a prompt or tool call result.
 
+**Details**
+
 It is up to the client how best to render embedded resources for the benefit
 of the LLM and/or the user.
 
@@ -14,6 +16,6 @@ of the LLM and/or the user.
 declare class EmbeddedResource
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L1148)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L1172)
 
 Since v4.0.0

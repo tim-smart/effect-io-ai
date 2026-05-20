@@ -5,10 +5,12 @@ Module: `Predicate`<br />
 
 Checks whether a value is an `Error`.
 
-When to use:
+**When to use**
+
 - You need to guard errors caught from unknown sources.
 
-Behavior:
+**Details**
+
 - Pure; does not mutate input.
 - Uses `instanceof Error`.
 
@@ -22,7 +24,9 @@ const data: unknown = new Error("boom")
 console.log(Predicate.isError(data))
 ```
 
-See also: `isUnknown`
+**See**
+
+- `isUnknown`
 
 **Signature**
 
@@ -30,6 +34,6 @@ See also: `isUnknown`
 declare const isError: (input: unknown) => input is Error
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L1173)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L1245)
 
 Since v2.0.0

@@ -5,6 +5,8 @@ Module: `RateLimiter`<br />
 
 Creates a `RateLimiter` from the current `RateLimiterStore`.
 
+**Details**
+
 The limiter supports fixed-window and token-bucket algorithms and either
 fails or returns a delay when a limit is exceeded.
 
@@ -14,6 +16,6 @@ fails or returns a delay when a limit is exceeded.
 declare const make: Effect.Effect<RateLimiter, never, RateLimiterStore>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RateLimiter.ts#L91)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RateLimiter.ts#L93)
 
 Since v4.0.0

@@ -3,10 +3,7 @@ Module: `Console`<br />
 
 ## Console.warn
 
-Outputs a warning message to the console.
-
-This function logs messages at the warning level, typically displayed
-in yellow or with a warning icon in most console implementations.
+Outputs a warning-level message to the console, typically displayed with warning styling by the active console implementation.
 
 **Example** (Writing warning messages)
 
@@ -27,6 +24,6 @@ const program = Effect.gen(function*() {
 declare const warn: (...args: ReadonlyArray<any>) => Effect.Effect<void>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Console.ts#L643)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Console.ts#L593)
 
 Since v2.0.0

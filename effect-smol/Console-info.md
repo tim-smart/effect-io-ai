@@ -3,10 +3,7 @@ Module: `Console`<br />
 
 ## Console.info
 
-Outputs an informational message to the console.
-
-This function logs messages at the info level, typically displayed
-with an info icon in most console implementations.
+Outputs an informational message to the console, typically displayed with info styling by the active console implementation.
 
 **Example** (Writing informational messages)
 
@@ -28,6 +25,6 @@ const program = Effect.gen(function*() {
 declare const info: (...args: ReadonlyArray<any>) => Effect.Effect<void>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Console.ts#L455)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Console.ts#L422)
 
 Since v2.0.0

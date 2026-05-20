@@ -5,6 +5,8 @@ Module: `Prompt`<br />
 
 Creates a floating-point number prompt.
 
+**Details**
+
 The prompt supports minimum and maximum bounds, keyboard step sizes, display
 precision, and additional validation before submission.
 
@@ -14,6 +16,6 @@ precision, and additional validation before submission.
 declare const float: (options: FloatOptions) => Prompt<number>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L876)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L873)
 
 Since v4.0.0

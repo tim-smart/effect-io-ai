@@ -5,6 +5,8 @@ Module: `Command`<br />
 
 Sets an alias for a command.
 
+**Details**
+
 Aliases are accepted as alternate subcommand names during parsing and are
 shown in help output as `name, alias`.
 
@@ -14,6 +16,6 @@ shown in help output as `name, alias`.
 declare const withAlias: { (alias: string): <const Name extends string, Input, E, R, ContextInput>(self: Command<Name, Input, ContextInput, E, R>) => Command<Name, Input, ContextInput, E, R>; <const Name extends string, Input, E, R, ContextInput>(self: Command<Name, Input, ContextInput, E, R>, alias: string): Command<Name, Input, ContextInput, E, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Command.ts#L989)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Command.ts#L1025)
 
 Since v4.0.0

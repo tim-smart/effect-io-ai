@@ -5,9 +5,11 @@ Module: `Ref`<br />
 
 Atomically updates the value of the Ref using the given partial function and returns the current value.
 
-If the partial function returns `Option.some`, the Ref is updated with the new value.
-If it returns `Option.none`, the Ref is left unchanged.
-Returns the current value of the Ref after the potential update.
+**Details**
+
+If the partial function returns `Option.some`, the Ref is updated with the
+new value. If it returns `Option.none`, the Ref is left unchanged. The effect
+returns the current value of the Ref after the potential update.
 
 **Example** (Conditionally updating and returning the current value)
 
@@ -39,6 +41,6 @@ const program = Effect.gen(function*() {
 declare const updateSomeAndGet: (<A>(pf: (a: A) => Option.Option<A>) => (self: Ref<A>) => Effect.Effect<A>) & (<A>(self: Ref<A>, pf: (a: A) => Option.Option<A>) => Effect.Effect<A>)
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Ref.ts#L661)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Ref.ts#L676)
 
 Since v2.0.0

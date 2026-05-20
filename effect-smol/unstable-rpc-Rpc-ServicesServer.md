@@ -5,6 +5,8 @@ Module: `Rpc`<br />
 
 Extracts the schema services required on the server side of an RPC.
 
+**Details**
+
 This includes payload decoding services and success, error, and middleware
 error encoding services.
 
@@ -26,6 +28,6 @@ type ServicesServer<R> = R extends Rpc<
   : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Rpc.ts#L504)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Rpc.ts#L524)
 
 Since v4.0.0

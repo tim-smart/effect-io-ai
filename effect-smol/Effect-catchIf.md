@@ -5,7 +5,7 @@ Module: `Effect`<br />
 
 Recovers from specific errors using a `Predicate` or `Refinement`.
 
-**When to Use**
+**When to use**
 
 `catchIf` lets you recover from errors that match a condition. Use a
 `Refinement` for type narrowing or a `Predicate` for simple boolean
@@ -44,6 +44,6 @@ const recovered2 = program.pipe(
 declare const catchIf: { <E, EB extends E, A2, E2, R2, A3 = never, E3 = Exclude<E, EB>, R3 = never>(refinement: Predicate.Refinement<NoInfer<E>, EB>, f: (e: EB) => Effect<A2, E2, R2>, orElse?: ((e: Exclude<E, EB>) => Effect<A3, E3, R3>) | undefined): <A, R>(self: Effect<A, E, R>) => Effect<A | A2 | A3, E2 | E3, R | R2 | R3>; <E, A2, E2, R2, A3 = never, E3 = E, R3 = never>(predicate: Predicate.Predicate<NoInfer<E>>, f: (e: NoInfer<E>) => Effect<A2, E2, R2>, orElse?: ((e: NoInfer<E>) => Effect<A3, E3, R3>) | undefined): <A, R>(self: Effect<A, E, R>) => Effect<A | A2 | A3, E2 | E3, R | R2 | R3>; <A, E, R, EB extends E, A2, E2, R2, A3 = never, E3 = Exclude<E, EB>, R3 = never>(self: Effect<A, E, R>, refinement: Predicate.Refinement<E, EB>, f: (e: EB) => Effect<A2, E2, R2>, orElse?: ((e: Exclude<E, EB>) => Effect<A3, E3, R3>) | undefined): Effect<A | A2 | A3, E2 | E3, R | R2 | R3>; <A, E, R, A2, E2, R2, A3 = never, E3 = E, R3 = never>(self: Effect<A, E, R>, predicate: Predicate.Predicate<E>, f: (e: E) => Effect<A2, E2, R2>, orElse?: ((e: E) => Effect<A3, E3, R3>) | undefined): Effect<A | A2 | A3, E2 | E3, R | R2 | R3>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L3067)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L3104)
 
 Since v2.0.0

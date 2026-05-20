@@ -6,8 +6,11 @@ Module: `ConfigProvider`<br />
 Installs a `ConfigProvider` as the active provider for all downstream
 effects, replacing any previously installed provider.
 
-When to use:
-- Setting the config source for an entire application or test suite.
+**When to use**
+
+Use this to set the config source for an entire application or test suite.
+
+**Details**
 
 Accepts either a plain `ConfigProvider` or an `Effect` that produces one.
 When given an Effect, it is evaluated once when the layer is built.
@@ -39,6 +42,6 @@ const program = Effect.gen(function*() {
 declare const layer: <E = never, R = never>(self: ConfigProvider | Effect.Effect<ConfigProvider, E, R>) => Layer.Layer<never, E, Exclude<R, Scope>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ConfigProvider.ts#L621)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ConfigProvider.ts#L658)
 
 Since v4.0.0

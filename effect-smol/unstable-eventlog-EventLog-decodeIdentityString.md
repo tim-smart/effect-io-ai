@@ -5,6 +5,8 @@ Module: `EventLog`<br />
 
 Decodes a base64url identity string produced by `encodeIdentityString`.
 
+**Gotchas**
+
 Invalid input throws a schema decoding error.
 
 **Signature**
@@ -13,6 +15,6 @@ Invalid input throws a schema decoding error.
 declare const decodeIdentityString: (value: string) => Identity["Service"]
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventLog.ts#L450)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventLog.ts#L462)
 
 Since v4.0.0

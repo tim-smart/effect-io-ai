@@ -6,11 +6,15 @@ Module: `Metric`<br />
 Creates a `Summary` metric that records observations with explicit
 timestamps and calculates quantiles.
 
-Summary metrics are most suitable for statistical information about a set of
-values. Inputs to this metric are `[value, timestamp]` pairs; the current
-clock is used when reading quantiles against the configured `maxAge`.
+**When to use**
 
-**Options**
+Summary metrics are most suitable for statistical information about a set of
+values.
+
+**Details**
+
+Inputs to this metric are `[value, timestamp]` pairs; the current clock is
+used when reading quantiles against the configured `maxAge`.
 
 - `description` - An description of the `Summary`.
 - `attributes`  - The attributes to associate with the `Summary`.
@@ -40,6 +44,6 @@ const responseTimesSummary = Metric.summaryWithTimestamp(
 declare const summaryWithTimestamp: (name: string, options: { readonly description?: string | undefined; readonly attributes?: Metric.Attributes | undefined; readonly maxAge: Duration.Input; readonly maxSize: number; readonly quantiles: ReadonlyArray<number>; }) => Summary<[value: number, timestamp: number]>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Metric.ts#L2598)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Metric.ts#L2626)
 
 Since v4.0.0

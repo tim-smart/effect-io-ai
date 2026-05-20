@@ -3,10 +3,13 @@ Module: `Function`<br />
 
 ## Function.SK
 
-The SK combinator, also known as the "S-K combinator" or "S-combinator", is a fundamental combinator in the
-lambda calculus and the SKI combinator calculus.
+The SK combinator, also known as the "S-K combinator" or "S-combinator", is
+a fundamental combinator in the lambda calculus and the SKI combinator
+calculus.
 
-This function is useful for discarding the first argument passed to it and returning the second argument.
+**When to use**
+
+Use `SK` to discard the first argument and return the second argument.
 
 **Example** (Discarding the first argument)
 
@@ -23,6 +26,6 @@ assert.deepStrictEqual(Function.SK(0, "hello"), "hello")
 declare const SK: <A, B>(_: A, b: B) => B
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Function.ts#L1307)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Function.ts#L1313)
 
 Since v2.0.0

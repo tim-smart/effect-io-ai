@@ -5,6 +5,8 @@ Module: `Config`<br />
 
 Creates a config for a `URL` value parsed from a string.
 
+**Gotchas**
+
 Fails if the string cannot be parsed by the `URL` constructor.
 
 **Example** (Reading a URL)
@@ -49,6 +51,6 @@ Effect.runSync(
 declare const url: (name?: string) => Config<URL>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Config.ts#L1217)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Config.ts#L1295)
 
 Since v3.11.0

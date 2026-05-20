@@ -3,11 +3,12 @@ Module: `Prompt`<br />
 
 ## Prompt.Handlers
 
-Represents the set of handlers used by a `Prompt` to:
+Represents the set of handlers used by a `Prompt`.
 
-  - Render the current frame of the prompt
-  - Process user input and determine the next `Prompt.Action` to take
-  - Clear the terminal screen before the next frame
+**Details**
+
+The handlers render the current frame, process user input into the next
+`Prompt.Action`, and clear the terminal screen before the next frame.
 
 **Signature**
 
@@ -39,6 +40,6 @@ export interface Handlers<State, Output> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L117)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L122)
 
 Since v4.0.0

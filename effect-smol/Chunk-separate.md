@@ -6,6 +6,8 @@ Module: `Chunk`<br />
 Separates a chunk of `Result` values into a chunk of failures and a chunk of
 successes.
 
+**Details**
+
 The returned tuple is `[failures, successes]`, preserving the original order
 within each side.
 
@@ -39,6 +41,6 @@ console.log(Chunk.toArray(allValues)) // [1, 2]
 declare const separate: <A, B>(self: Chunk<Result<B, A>>) => [Chunk<A>, Chunk<B>]
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L1806)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L1815)
 
 Since v2.0.0

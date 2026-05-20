@@ -5,16 +5,6 @@ Module: `Effect`<br />
 
 Transforms the value inside an effect by applying a function to it.
 
-**Syntax**
-
-```ts
-const mappedEffect = pipe(myEffect, Effect.map(transformation))
-// or
-const mappedEffect = Effect.map(myEffect, transformation)
-// or
-const mappedEffect = myEffect.pipe(Effect.map(transformation))
-```
-
 **Details**
 
 `map` takes a function and applies it to the value contained within an
@@ -23,6 +13,19 @@ effect, creating a new effect with the transformed value.
 It's important to note that effects are immutable, meaning that the original
 effect is not modified. Instead, a new effect is returned with the updated
 value.
+
+**Example** (Syntax)
+
+```ts
+import { Effect, pipe } from "effect"
+
+const myEffect = Effect.succeed(1)
+const transformation = (n: number) => n + 1
+
+const mappedWithPipe = pipe(myEffect, Effect.map(transformation))
+const mappedWithDataFirst = Effect.map(myEffect, transformation)
+const mappedWithMethod = myEffect.pipe(Effect.map(transformation))
+```
 
 **Example** (Adding a service charge)
 
@@ -54,6 +57,6 @@ Effect.runPromise(finalAmount).then(console.log)
 declare const map: { <A, B>(f: (a: A) => B): <E, R>(self: Effect<A, E, R>) => Effect<B, E, R>; <A, E, R, B>(self: Effect<A, E, R>, f: (a: A) => B): Effect<B, E, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L2197)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L2221)
 
 Since v2.0.0

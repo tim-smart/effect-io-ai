@@ -6,6 +6,8 @@ Module: `Array`<br />
 Creates a `NonEmptyArray` containing a range of integers, inclusive on both
 ends.
 
+**When to use**
+
 - Use when you need a sequence of consecutive integers.
 - If `start > end`, returns `[start]`.
 - Always returns a `NonEmptyArray`.
@@ -29,6 +31,6 @@ console.log(result) // [1, 2, 3]
 declare const range: (start: number, end: number) => NonEmptyArray<number>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L285)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L299)
 
 Since v2.0.0

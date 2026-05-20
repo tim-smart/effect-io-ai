@@ -5,20 +5,19 @@ Module: `JsonPatch`<br />
 
 A single JSON Patch operation.
 
-Represents one transformation step in a JSON Patch document. This is a subset of RFC 6902, restricted to operations that can be applied deterministically without additional context.
+**When to use**
 
-## When to use this
+Use this type when manually constructing patch operations, accepting patch
+operations from callers, or type-checking patch operation structures.
 
-- Defining patch operation types in your code
-- Manually constructing patch operations
-- Type-checking patch operation structures
+**Details**
 
-## Behavior
-
-- All fields are readonly; operations are immutable value objects
-- Paths use JSON Pointer syntax; empty string `""` refers to the root document
-- The `description` field is optional and can be used for documentation
-- Operations are discriminated unions based on the `op` field
+Represents one transformation step in a JSON Patch document. This is a subset
+of RFC 6902, restricted to operations that can be applied deterministically
+without additional context. All fields are readonly, paths use JSON Pointer
+syntax, and the empty string `""` refers to the root document. Operations are
+discriminated by the `op` field, and the optional `description` field can be
+used for documentation.
 
 **Example** (All operation types)
 
@@ -43,7 +42,7 @@ const replaceOp: JsonPatch.JsonPatchOperation = {
 }
 ```
 
-## See also
+**See**
 
 - `JsonPatch` - Array of operations forming a complete patch
 - `get` - Computes operations automatically from value differences
@@ -55,9 +54,8 @@ const replaceOp: JsonPatch.JsonPatchOperation = {
 type JsonPatchOperation = | {
     readonly op: "add"
     /**
-     * JSON Pointer to the target location.
-     *
-     * For arrays, the last token may be `-` to append.
+     * JSON Pointer to the target location. For arrays, the last token may be `-`
+     * to append.
      */
     readonly path: string
     readonly value: Schema.Json
@@ -78,6 +76,6 @@ type JsonPatchOperation = | {
   }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/JsonPatch.ts#L110)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/JsonPatch.ts#L106)
 
 Since v4.0.0

@@ -6,6 +6,8 @@ Module: `Schema`<br />
 A schema that tracks the decoded type `T`, the encoded type `E`, and the
 Effect services required during decoding (`RD`) and encoding (`RE`).
 
+**Details**
+
 Use `Codec<T, E, RD, RE>` when you need to preserve full type information
 about a schema — both what it decodes to and what it serializes from/to.
 Most concrete schemas produced by this module implement `Codec`.
@@ -43,6 +45,6 @@ export interface Codec<out T, out E = T, out RD = never, out RE = never> extends
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L761)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L783)
 
 Since v4.0.0

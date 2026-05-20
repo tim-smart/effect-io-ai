@@ -6,12 +6,14 @@ Module: `Order`<br />
 Combines all `Order` instances in the provided collection into a single `Order`.
 The resulting `Order` compares using each `Order` in sequence until a non-zero result is found.
 
-When to use this:
+**When to use**
+
 - When you have a variable number of orders to combine
 - When combining orders from a collection or array
 - When implementing dynamic multi-criteria sorting
 
-Behavior:
+**Details**
+
 - Pure function: does not mutate inputs
 - Applies orders in iteration order
 - Returns the first non-zero result from any order
@@ -40,7 +42,8 @@ const person2 = { name: "Bob", age: 30 }
 console.log(combinedOrder(person1, person2)) // -1 (Same age, Alice < Bob)
 ```
 
-See also:
+**See**
+
 - `combine` - Combine two orders
 - `makeReducer` - Create a reducer for combining orders
 
@@ -50,6 +53,6 @@ See also:
 declare const combineAll: <A>(collection: Iterable<Order<A>>) => Order<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Order.ts#L470)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Order.ts#L472)
 
 Since v2.0.0

@@ -30,6 +30,6 @@ console.log(obj) // CustomObject(test)
 type NodeInspectSymbol = typeof NodeInspectSymbol
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Inspectable.ts#L98)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Inspectable.ts#L100)
 
 Since v2.0.0

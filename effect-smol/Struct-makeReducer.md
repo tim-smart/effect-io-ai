@@ -8,10 +8,14 @@ property. The initial value is derived from each property's
 `Reducer.initialValue`. When reducing a collection of structs, each property
 is combined independently.
 
-- Use to fold a collection of structs into a single summary struct.
-- Pass `omitKeyWhen` to drop properties whose reduced value matches a
-  predicate.
-- Does not mutate the inputs; returns a fresh object.
+**When to use**
+
+Use to fold a collection of structs into a single summary struct.
+
+**Details**
+
+Pass `omitKeyWhen` to drop properties whose reduced value matches a
+predicate. This does not mutate the inputs and returns a fresh object.
 
 **Example** (Reducing a collection of structs)
 
@@ -41,6 +45,6 @@ console.log(result) // { n: 6, s: "abc" }
 declare const makeReducer: <A>(reducers: { readonly [K in keyof A]: Reducer.Reducer<A[K]>; }, options?: { readonly omitKeyWhen?: ((a: A[keyof A]) => boolean) | undefined; }) => Reducer.Reducer<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Struct.ts#L927)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Struct.ts#L1015)
 
 Since v4.0.0

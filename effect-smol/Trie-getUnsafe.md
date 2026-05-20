@@ -3,10 +3,12 @@ Module: `Trie`<br />
 
 ## Trie.getUnsafe
 
-Unsafely lookup the value for the specified key in the `Trie`.
+Unsafely looks up the value for the specified key in the `Trie`.
 
-`getUnsafe` will throw if the key is not found. Use `get` instead to safely
-get a value from the `Trie`.
+**Gotchas**
+
+`getUnsafe` throws if the key is not found. Use `get` instead to safely get
+a value from the `Trie`.
 
 **Example** (Looking up values unsafely)
 
@@ -28,6 +30,6 @@ assert.throws(() => Trie.getUnsafe(trie, "mae"))
 declare const getUnsafe: { (key: string): <V>(self: Trie<V>) => V; <V>(self: Trie<V>, key: string): V; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Trie.ts#L576)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Trie.ts#L586)
 
 Since v4.0.0

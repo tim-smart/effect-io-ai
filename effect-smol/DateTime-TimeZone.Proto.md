@@ -5,6 +5,8 @@ Module: `DateTime`<br />
 
 Shared protocol implemented by all `TimeZone` values.
 
+**Details**
+
 Provides the `TimeZone` type identifier and inspection support.
 
 **Signature**
@@ -15,6 +17,6 @@ export interface Proto extends Inspectable {
   }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L312)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L336)
 
 Since v3.6.0

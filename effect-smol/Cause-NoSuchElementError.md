@@ -5,11 +5,13 @@ Module: `Cause`<br />
 
 An error indicating that an expected value was absent.
 
+**Details**
+
 Used by APIs that convert absence into an exception or effect failure, such
 as `Option.getOrThrow`. Implements `YieldableError` so it can be
 yielded directly in `Effect.gen`.
 
-**Notes**
+**Gotchas**
 
 Safe lookup APIs that return `Option` should document the `None` case rather
 than describing it as a thrown `NoSuchElementError`.
@@ -38,6 +40,6 @@ export interface NoSuchElementError extends YieldableError {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L1153)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L1213)
 
 Since v4.0.0

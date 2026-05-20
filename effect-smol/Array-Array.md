@@ -5,6 +5,8 @@ Module: `Array`<br />
 
 Reference to the global `Array` constructor.
 
+**When to use**
+
 Use this when you need the native `Array` constructor while the `Array`
 namespace is in scope (e.g. `Array.Array.isArray`, `Array.Array.from`).
 
@@ -23,6 +25,6 @@ console.log(arr) // [undefined, undefined, undefined]
 declare const Array: ArrayConstructor
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L121)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L123)
 
 Since v4.0.0

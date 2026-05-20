@@ -3,11 +3,12 @@ Module: `Cron`<br />
 
 ## Cron.parseUnsafe
 
-Parses a cron expression into a Cron instance, throwing on failure.
+Parses a cron expression into a `Cron` instance, throwing on failure.
 
-This function provides a convenience method for parsing cron expressions
-when you're confident the input is valid and want to avoid handling
-the Result type.
+**When to use**
+
+Use this when the input is expected to be valid and you want to avoid
+handling the `Result` type.
 
 **Example** (Parsing cron expressions unsafely)
 
@@ -30,6 +31,6 @@ const cronWithTz = Cron.parseUnsafe("0 0 9 * * *", "America/New_York")
 declare const parseUnsafe: (cron: string, tz?: DateTime.TimeZone | string) => Cron
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cron.ts#L599)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cron.ts#L611)
 
 Since v4.0.0

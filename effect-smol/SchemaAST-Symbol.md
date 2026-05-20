@@ -5,6 +5,8 @@ Module: `SchemaAST`<br />
 
 AST node matching any `symbol` value.
 
+**Details**
+
 When serialized to a string-based codec, symbols are converted via
 `Symbol.keyFor` and must be registered with `Symbol.for`.
 
@@ -19,6 +21,6 @@ When serialized to a string-based codec, symbols are converted via
 declare class Symbol
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L1266)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L1295)
 
 Since v4.0.0

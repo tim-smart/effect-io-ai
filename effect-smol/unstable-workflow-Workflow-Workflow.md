@@ -113,12 +113,15 @@ export interface Workflow<
   ) => Effect.Effect<string>
 
   /**
-   * Add compensation logic to an effect inside a Workflow. The compensation finalizer will be
-   * called if the entire workflow fails, allowing you to perform cleanup or
-   * other actions based on the success value and the cause of the workflow failure.
+   * Add compensation logic to an effect inside a Workflow.
    *
-   * NOTE: Compensation will not work for nested activities. Compensation
-   * finalizers are only registered for top-level effects in the workflow.
+   * **Details**
+   *
+   * The compensation finalizer is called if the entire workflow fails, allowing you to perform cleanup or other actions based on the success value and the cause of the workflow failure.
+   *
+   * **Gotchas**
+   *
+   * Compensation finalizers are only registered for top-level effects in the workflow and do not work for nested activities.
    */
   readonly withCompensation: {
     <A, R2>(

@@ -3,8 +3,16 @@ Module: `Layer`<br />
 
 ## Layer.launch
 
-Builds this layer and uses it until it is interrupted. This is useful when
-your entire application is a layer, such as an HTTP server.
+Builds this layer and keeps it alive until the returned effect is interrupted.
+
+**When to use**
+
+Use this when your entire application is a layer, such as an HTTP server.
+
+**Details**
+
+When the returned effect is interrupted, the layer scope is closed and all
+finalizers registered during layer acquisition are run.
 
 **Example** (Launching an application layer)
 
@@ -21,7 +29,7 @@ class Logger extends Context.Service<Logger, {
 }>()("Logger") {}
 
 // Server layer that starts an HTTP server
-const serverLayer = Layer.effect(HttpServer)(Effect.gen(function*() {
+const serverLayer = Layer.effect(HttpServer, Effect.gen(function*() {
   yield* Console.log("Starting HTTP server...")
 
   return {
@@ -36,7 +44,7 @@ const serverLayer = Layer.effect(HttpServer)(Effect.gen(function*() {
   }
 }))
 
-const loggerLayer = Layer.succeed(Logger)({
+const loggerLayer = Layer.succeed(Logger, {
   log: Effect.fn("Logger.log")((msg: string) => Console.log(`[LOG] ${msg}`))
 })
 
@@ -60,6 +68,6 @@ const application = appLayer.pipe(
 declare const launch: <RIn, E, ROut>(self: Layer<ROut, E, RIn>) => Effect<never, E, RIn>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L1907)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L2095)
 
 Since v2.0.0

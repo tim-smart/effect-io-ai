@@ -5,6 +5,13 @@ Module: `Layer`<br />
 
 Creates a fresh version of this layer that will not be shared.
 
+**When to use**
+
+Use `fresh` when two parts of an application must receive separate instances
+of a resource, such as two independent client sessions. Do not use it just to
+work around confusing composition: by default, sharing the same layer value is
+usually the desired behavior.
+
 **Example** (Creating non-shared layer instances)
 
 ```ts
@@ -22,12 +29,12 @@ class Right extends Context.Service<Right, {
   readonly counterId: number
 }>()("Right") {}
 
-const leftLayer = Layer.effect(Left)(Effect.gen(function*() {
+const leftLayer = Layer.effect(Left, Effect.gen(function*() {
   const counter = yield* Counter
   return { counterId: counter.id }
 }))
 
-const rightLayer = Layer.effect(Right)(Effect.gen(function*() {
+const rightLayer = Layer.effect(Right, Effect.gen(function*() {
   const counter = yield* Counter
   return { counterId: counter.id }
 }))
@@ -41,7 +48,7 @@ const showIds = Effect.gen(function*() {
 const program = Effect.gen(function*() {
   const nextId = yield* Ref.make(0)
 
-  const counterLayer = Layer.effect(Counter)(Effect.gen(function*() {
+  const counterLayer = Layer.effect(Counter, Effect.gen(function*() {
     const id = yield* Ref.updateAndGet(nextId, (n) => n + 1)
     console.log("constructed Counter")
     return { id }
@@ -77,6 +84,6 @@ Effect.runPromise(program)
 declare const fresh: <A, E, R>(self: Layer<A, E, R>) => Layer<A, E, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L1849)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L2029)
 
 Since v2.0.0

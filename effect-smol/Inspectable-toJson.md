@@ -3,8 +3,9 @@ Module: `Inspectable`<br />
 
 ## Inspectable.toJson
 
-Safely converts a value to a JSON-serializable representation, useful for
-implementing the `toJSON` method of the `Inspectable` interface.
+Safely converts a value to a JSON-serializable representation.
+
+**Details**
 
 This function attempts to extract JSON data from objects that implement the
 `toJSON` method, recursively processes arrays, and handles errors gracefully.
@@ -17,6 +18,6 @@ protect sensitive information.
 declare const toJson: (input: unknown) => unknown
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Inspectable.ts#L156)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Inspectable.ts#L161)
 
 Since v4.0.0

@@ -10,7 +10,9 @@ Configuration for the child process standard error stream.
 ```ts
 export interface StderrConfig {
   /**
-   * The configuration for the standard ouput stream of the child process.
+   * The configuration for the standard error stream of the child process.
+   *
+   * **Details**
    *
    * Can be a string indicating how the operating system should configure the
    * pipe established between the child process `stderr` and the parent process.
@@ -24,6 +26,6 @@ export interface StderrConfig {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ChildProcess.ts#L347)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ChildProcess.ts#L348)
 
 Since v4.0.0

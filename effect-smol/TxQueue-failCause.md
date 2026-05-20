@@ -5,9 +5,9 @@ Module: `TxQueue`<br />
 
 Completes the queue with the specified cause.
 
-If the queue is empty, it transitions directly to done. If it still contains
-items, it enters the closing state so buffered items can be drained before the
-cause is observed. Returns `false` if the queue was already closing or done.
+**Details**
+
+If the queue is empty, it transitions directly to done. If it still contains items, it enters the closing state so buffered items can be drained before the cause is observed. Returns `false` if the queue was already closing or done.
 
 **Example** (Failing queues with causes)
 
@@ -30,6 +30,6 @@ const program = Effect.gen(function*() {
 declare const failCause: { <E>(cause: Cause.Cause<E>): <A>(self: TxEnqueue<A, E>) => Effect.Effect<boolean>; <A, E>(self: TxEnqueue<A, E>, cause: Cause.Cause<E>): Effect.Effect<boolean>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxQueue.ts#L1218)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxQueue.ts#L1207)
 
 Since v4.0.0

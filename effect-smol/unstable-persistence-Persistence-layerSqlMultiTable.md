@@ -11,6 +11,6 @@ Provides `Persistence` backed by SQL with one table per store id.
 declare const layerSqlMultiTable: Layer.Layer<Persistence, never, SqlClient.SqlClient>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Persistence.ts#L1049)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Persistence.ts#L1061)
 
 Since v4.0.0

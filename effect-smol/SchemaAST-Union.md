@@ -5,6 +5,8 @@ Module: `SchemaAST`<br />
 
 AST node representing a union of schemas.
 
+**Details**
+
 - `types` — the member AST nodes.
 - `mode` — `"anyOf"` succeeds on the first match (like TypeScript unions);
   `"oneOf"` requires exactly one member to match (fails if multiple do).
@@ -44,6 +46,6 @@ declare class Union<A> { constructor(
   ) }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L2273)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L2315)
 
 Since v3.10.0

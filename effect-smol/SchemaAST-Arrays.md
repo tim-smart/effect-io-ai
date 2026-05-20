@@ -5,6 +5,8 @@ Module: `SchemaAST`<br />
 
 AST node for array-like types — both tuples and arrays.
 
+**Details**
+
 - `elements` — positional element types (tuple elements). An element is
   optional if its `Context.isOptional` is `true`.
 - `rest` — the rest/variadic element types. When non-empty, the first
@@ -12,6 +14,8 @@ AST node for array-like types — both tuples and arrays.
   entries are trailing positional elements after the spread.
 - `isMutable` — whether the resulting array is `readonly` (`false`) or
   mutable (`true`).
+
+**Gotchas**
 
 Construction enforces TypeScript ordering rules: a required element
 cannot follow an optional one, and an optional element cannot follow a
@@ -50,6 +54,6 @@ declare class Arrays { constructor(
   ) }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L1361)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L1394)
 
 Since v4.0.0

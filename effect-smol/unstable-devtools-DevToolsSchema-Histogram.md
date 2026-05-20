@@ -5,6 +5,8 @@ Module: `DevToolsSchema`<br />
 
 Type of a devtools histogram metric snapshot.
 
+**Details**
+
 The state includes bucket counts plus the total count, minimum, maximum, and
 sum.
 
@@ -14,6 +16,6 @@ sum.
 type Histogram = Schema.Schema.Type<typeof Histogram>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DevToolsSchema.ts#L387)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DevToolsSchema.ts#L401)
 
 Since v4.0.0

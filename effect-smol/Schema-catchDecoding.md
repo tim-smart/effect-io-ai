@@ -5,6 +5,8 @@ Module: `Schema`<br />
 
 Recovers from a decoding error by providing a fallback value.
 
+**Details**
+
 The handler receives the `Issue` and returns an `Effect` that either
 succeeds with a fallback value or re-fails with a (possibly different) issue.
 
@@ -28,6 +30,6 @@ const schema = Schema.Number.pipe(
 declare const catchDecoding: <S extends Top>(f: (issue: Issue.Issue) => Effect.Effect<Option_.Option<S["Type"]>, Issue.Issue>) => (self: S) => S["Rebuild"]
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L4365)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L4478)
 
 Since v4.0.0

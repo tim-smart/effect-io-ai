@@ -5,6 +5,8 @@ Module: `Queue`<br />
 
 Add a message to the queue. Returns `false` if the queue is done.
 
+**Details**
+
 For bounded queues, this operation may suspend if the queue is at capacity,
 depending on the backpressure strategy. For dropping/sliding queues, it may
 return false or succeed immediately by dropping/sliding existing messages.
@@ -34,6 +36,6 @@ const program = Effect.gen(function*() {
 declare const offer: <A, E>(self: Enqueue<A, E>, message: Types.NoInfer<A>) => Effect<boolean>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Queue.ts#L592)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Queue.ts#L620)
 
 Since v2.0.0

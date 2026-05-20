@@ -5,6 +5,8 @@ Module: `HttpBody`<br />
 
 Creates a streaming HTTP body from a stream of byte chunks.
 
+**Details**
+
 The content type defaults to `application/octet-stream`; content length is optional.
 
 **Signature**
@@ -13,6 +15,6 @@ The content type defaults to `application/octet-stream`; content length is optio
 declare const stream: (body: Stream_.Stream<globalThis.Uint8Array, unknown>, contentType?: string, contentLength?: number) => Stream
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpBody.ts#L453)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpBody.ts#L481)
 
 Since v4.0.0

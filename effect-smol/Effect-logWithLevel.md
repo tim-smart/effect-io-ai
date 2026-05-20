@@ -5,6 +5,8 @@ Module: `Effect`<br />
 
 Creates a logger function that logs at the specified level.
 
+**Details**
+
 If no level is provided, the logger uses the fiber's current log level and
 extracts any `Cause` values from the message list.
 
@@ -26,6 +28,6 @@ const program = Effect.gen(function*() {
 declare const logWithLevel: (level?: Severity) => (...message: ReadonlyArray<any>) => Effect<void>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L12810)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L12907)
 
 Since v2.0.0

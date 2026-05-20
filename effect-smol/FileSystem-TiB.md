@@ -5,6 +5,8 @@ Module: `FileSystem`<br />
 
 Creates a `Size` representing tebibytes (1024⁴ bytes).
 
+**Details**
+
 Converts a number of tebibytes to the equivalent size in bytes.
 Uses binary tebibytes (1,099,511,627,776 bytes) rather than decimal terabytes.
 
@@ -37,6 +39,6 @@ const program = Effect.gen(function*() {
 declare const TiB: (n: number) => Size
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FileSystem.ts#L595)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FileSystem.ts#L625)
 
 Since v4.0.0

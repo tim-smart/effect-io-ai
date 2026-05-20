@@ -5,6 +5,8 @@ Module: `Param`<br />
 
 Creates a directory path parameter.
 
+**Details**
+
 This is a convenience function that creates a path parameter with the
 `pathType` set to `"directory"` and a default type name of `"directory"`.
 
@@ -30,6 +32,6 @@ const sourceDir = Param.directory(Param.flagKind, "source", { mustExist: true })
 declare const directory: <Kind extends ParamKind>(kind: Kind, name: string, options?: { readonly mustExist?: boolean | undefined; }) => Param<Kind, string>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Param.ts#L666)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Param.ts#L676)
 
 Since v4.0.0

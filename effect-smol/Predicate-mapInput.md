@@ -5,11 +5,13 @@ Module: `Predicate`<br />
 
 Transforms the input of a predicate using a mapping function.
 
-When to use:
+**When to use**
+
 - You have a predicate on `A` and want one on `B` via `B -> A`.
 - You want to check derived values (lengths, projections, etc.).
 
-Behavior:
+**Details**
+
 - Pure; does not mutate input.
 - Returns a new predicate that applies `f` before `self`.
 - No short-circuit beyond what `self` does.
@@ -26,7 +28,11 @@ const isLongerThan2 = Predicate.mapInput((s: string) => s.length)(
 console.log(isLongerThan2("hello"))
 ```
 
-See also: `Predicate`, `and`, `not`
+**See**
+
+- `Predicate`
+- `and`
+- `not`
 
 **Signature**
 
@@ -34,6 +40,6 @@ See also: `Predicate`, `and`, `not`
 declare const mapInput: { <B, A>(f: (b: B) => A): (self: Predicate<A>) => Predicate<B>; <A, B>(self: Predicate<A>, f: (b: B) => A): Predicate<B>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L352)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L374)
 
 Since v2.0.0

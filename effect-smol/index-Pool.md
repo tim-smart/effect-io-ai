@@ -11,6 +11,6 @@ Re-exports all named exports from the "./Pool.ts" module as `Pool`.
 export * as Pool from "./Pool.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L3776)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L3787)
 
 Since v2.0.0

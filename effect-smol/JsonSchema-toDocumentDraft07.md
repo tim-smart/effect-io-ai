@@ -5,13 +5,21 @@ Module: `JsonSchema`<br />
 
 Converts a `Document<"draft-2020-12">` to a `Document<"draft-07">`.
 
-- Use when you need to output a schema in Draft-07 format.
-- Rewrites `#/$defs/...` refs to `#/definitions/...`.
-- Converts Draft-2020-12 tuple syntax (`prefixItems` + `items`) to
-  Draft-07 form (`items` as array + `additionalItems`).
-- Converts both the root schema and all definitions.
-- Does not mutate the input. Allocates a new `Document`.
-- Unsupported Draft-2020-12 keywords are dropped.
+**When to use**
+
+Use this when you need to output a schema in Draft-07 format.
+
+**Details**
+
+This rewrites `#/$defs/...` refs to `#/definitions/...`, converts
+Draft-2020-12 tuple syntax (`prefixItems` plus `items`) to Draft-07 form
+(`items` as array plus `additionalItems`), and converts both the root schema
+and all definitions. It does not mutate the input and allocates a new
+`Document`.
+
+**Gotchas**
+
+Unsupported Draft-2020-12 keywords are dropped.
 
 **Example** (Converting to Draft-07)
 
@@ -41,6 +49,6 @@ console.log(draft07.schema.additionalItems) // { type: "boolean" }
 declare const toDocumentDraft07: (document: Document<"draft-2020-12">) => Document<"draft-07">
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/JsonSchema.ts#L510)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/JsonSchema.ts#L545)
 
 Since v4.0.0

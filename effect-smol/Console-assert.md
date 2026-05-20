@@ -3,10 +3,7 @@ Module: `Console`<br />
 
 ## Console.assert
 
-Writes an assertion message to the console if the condition is false.
-
-If the condition is true, nothing happens. If the condition is false,
-the message is logged to the console as an error.
+Writes the supplied assertion message to the console as an error when `condition` is false; when `condition` is true, no console output is produced.
 
 **Example** (Logging failed assertions)
 
@@ -25,6 +22,6 @@ const program = Effect.gen(function*() {
 declare const assert: (condition: boolean, ...args: ReadonlyArray<any>) => Effect.Effect<void>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Console.ts#L182)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Console.ts#L170)
 
 Since v2.0.0

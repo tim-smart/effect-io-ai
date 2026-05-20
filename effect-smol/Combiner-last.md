@@ -5,13 +5,15 @@ Module: `Combiner`<br />
 
 Creates a `Combiner` that always returns the last (right) argument.
 
-When to use:
-- You want "last write wins" semantics when merging values.
-- You need a combiner that replaces the accumulator with each new value.
+**When to use**
 
-Behavior:
-- `combine(self, that)` returns `that`, ignoring `self`.
-- Pure – the first argument is discarded, not mutated.
+Use this when you want "last write wins" semantics while merging values, or
+when each new value should replace the accumulator.
+
+**Details**
+
+`combine(self, that)` returns `that` and ignores `self`. The first argument
+is discarded, not mutated.
 
 **Example** (keeping the last value)
 
@@ -34,6 +36,6 @@ console.log(Last.combine(1, 2))
 declare const last: <A>() => Combiner<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Combiner.ts#L295)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Combiner.ts#L297)
 
 Since v4.0.0

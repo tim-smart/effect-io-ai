@@ -5,6 +5,8 @@ Module: `AiError`<br />
 
 Error indicating the AI provider experienced an internal error.
 
+**Details**
+
 Internal provider errors are typically transient and are retryable.
 
 **Example** (Creating an internal provider error)
@@ -27,6 +29,6 @@ console.log(providerError.message)
 declare class InternalProviderError
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AiError.ts#L678)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AiError.ts#L701)
 
 Since v4.0.0

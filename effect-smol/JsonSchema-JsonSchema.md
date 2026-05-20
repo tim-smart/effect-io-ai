@@ -5,9 +5,10 @@ Module: `JsonSchema`<br />
 
 A plain object representing a single JSON Schema node.
 
-This is an open record type (`[x: string]: unknown`) so it can hold any
-JSON Schema keyword. Most functions in this module accept or return this
-type.
+**Details**
+
+This is an open record type (`[x: string]: unknown`) so it can hold any JSON
+Schema keyword. Most functions in this module accept or return this type.
 
 **Signature**
 
@@ -17,6 +18,6 @@ export interface JsonSchema {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/JsonSchema.ts#L102)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/JsonSchema.ts#L103)
 
 Since v4.0.0

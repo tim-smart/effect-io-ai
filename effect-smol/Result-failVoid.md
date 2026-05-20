@@ -5,6 +5,8 @@ Module: `Result`<br />
 
 A pre-built failed `Result` whose failure value is `undefined`.
 
+**Details**
+
 This is equivalent to `Result.fail(undefined)` with type
 `Result<never, void>`, but avoids allocating a new `Failure` wrapper.
 
@@ -18,6 +20,6 @@ This is equivalent to `Result.fail(undefined)` with type
 declare const failVoid: Result<never, void>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L383)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L403)
 
 Since v4.0.0

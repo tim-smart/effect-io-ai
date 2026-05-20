@@ -5,7 +5,8 @@ Module: `Config`<br />
 
 Creates a config that always fails with the given error.
 
-When to use:
+**When to use**
+
 - Inside `orElse` to re-raise a specific error.
 - Testing error handling paths.
 
@@ -15,6 +16,6 @@ When to use:
 declare const fail: (err: SourceError | Schema.SchemaError) => Config<never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Config.ts#L833)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Config.ts#L883)
 
 Since v2.0.0

@@ -51,6 +51,6 @@ const fibChannel = Channel.fromIteratorArray(() => fibonacci(), 3)
 declare const fromIteratorArray: <A, L>(iterator: LazyArg<Iterator<A, L>>, chunkSize?: number) => Channel<Arr.NonEmptyReadonlyArray<A>, never, L>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L763)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L777)
 
 Since v4.0.0

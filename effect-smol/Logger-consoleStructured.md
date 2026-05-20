@@ -3,20 +3,16 @@ Module: `Logger`<br />
 
 ## Logger.consoleStructured
 
-A `Logger` which outputs logs using a strctured format and writes them to
+A `Logger` which outputs logs using a structured format and writes them to
 the console.
 
-For example:
-```
-{
-  message: [ 'info', 'message' ],
-  level: 'INFO',
-  timestamp: '2025-01-03T14:25:39.666Z',
-  annotations: { key: 'value' },
-  spans: { label: 0 },
-  fiberId: '#1'
-}
-```
+**Details**
+
+For example, console structured output can contain
+`message: [ "info", "message" ]`, `level: "INFO"`,
+`timestamp: "2025-01-03T14:25:39.666Z"`,
+`annotations: { key: "value" }`, `spans: { label: 0 }`, and
+`fiberId: "#1"`.
 
 **Example** (Logging structured output to the console)
 
@@ -63,6 +59,6 @@ const inspectionProgram = Effect.gen(function*() {
 declare const consoleStructured: Logger<unknown, void>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Logger.ts#L1024)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Logger.ts#L1030)
 
 Since v4.0.0

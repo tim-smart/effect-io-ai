@@ -5,6 +5,8 @@ Module: `Channel`<br />
 
 Converts a channel to a scoped `Pull` for low-level consumption.
 
+**Details**
+
 The effect requires a `Scope`. The returned pull should be consumed only
 while that scope remains open. Pulls are serialized so only one pull is
 evaluated at a time.
@@ -35,6 +37,6 @@ const pullEffect = Effect.scoped(
 declare const toPull: <OutElem, OutErr, OutDone, Env>(self: Channel<OutElem, OutErr, OutDone, unknown, unknown, unknown, Env>) => Effect.Effect<Pull.Pull<OutElem, OutErr, OutDone>, never, Env | Scope.Scope>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L7764)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L7882)
 
 Since v2.0.0

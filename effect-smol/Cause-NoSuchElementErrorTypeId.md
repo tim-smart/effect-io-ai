@@ -11,6 +11,6 @@ Unique brand for `NoSuchElementError`.
 declare const NoSuchElementErrorTypeId: "~effect/Cause/NoSuchElementError"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L1123)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L1181)
 
 Since v4.0.0

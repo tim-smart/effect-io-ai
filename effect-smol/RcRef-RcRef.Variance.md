@@ -5,7 +5,7 @@ Module: `RcRef`<br />
 
 Type-level variance marker for `RcRef`.
 
-**Notes**
+**Details**
 
 This interface records the covariant value and error types carried by an
 `RcRef`. It is used by Effect's type machinery and is not normally
@@ -20,6 +20,6 @@ export interface Variance<A, E> {
   }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RcRef.ts#L97)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RcRef.ts#L99)
 
 Since v3.5.0

@@ -6,6 +6,8 @@ Module: `Cause`<br />
 Renders a `Cause` as a human-readable string for logging or
 debugging.
 
+**Details**
+
 Delegates to `prettyErrors` to convert each reason to an `Error`,
 then joins their stack traces with newlines. Nested `Error.cause` chains
 are rendered inline with indentation:
@@ -42,6 +44,6 @@ console.log(Cause.pretty(cause))
 declare const pretty: <E>(cause: Cause<E>) => string
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L1068)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L1124)
 
 Since v2.0.0

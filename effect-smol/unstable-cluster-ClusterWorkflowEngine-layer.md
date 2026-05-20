@@ -6,6 +6,8 @@ Module: `ClusterWorkflowEngine`<br />
 Layer that provides `WorkflowEngine.WorkflowEngine` using the cluster workflow
 engine implementation.
 
+**Details**
+
 It requires cluster sharding and message storage, and also registers the
 durable clock entity used for workflow wakeups.
 
@@ -15,6 +17,6 @@ durable clock entity used for workflow wakeups.
 declare const layer: Layer.Layer<WorkflowEngine.WorkflowEngine, never, Sharding.Sharding | MessageStorage>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ClusterWorkflowEngine.ts#L732)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ClusterWorkflowEngine.ts#L736)
 
 Since v4.0.0

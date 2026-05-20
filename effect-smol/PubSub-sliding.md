@@ -6,6 +6,8 @@ Module: `PubSub`<br />
 Creates a bounded `PubSub` with the sliding strategy. The `PubSub` will add new
 messages and drop old messages if the `PubSub` is at capacity.
 
+**Details**
+
 For best performance use capacities that are powers of two.
 
 **Example** (Sliding old messages when full)
@@ -44,6 +46,6 @@ const program = Effect.gen(function*() {
 declare const sliding: <A>(capacity: number | { readonly capacity: number; readonly replay?: number | undefined; }) => Effect.Effect<PubSub<A>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PubSub.ts#L443)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PubSub.ts#L447)
 
 Since v2.0.0

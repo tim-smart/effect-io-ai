@@ -11,7 +11,7 @@ optional values. Yielding a `None` short-circuits the generator to `None`.
 - Writing imperative-style code that chains multiple `Option`s
 - Readability when many sequential optional steps are involved
 
-**Behavior**
+**Details**
 
 - Each `yield*` unwraps a `Some` value or short-circuits to `None`
 - The return value is wrapped in `Some`
@@ -46,6 +46,6 @@ console.log(person)
 declare const gen: Gen.Gen<OptionTypeLambda>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L2533)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L2539)
 
 Since v2.0.0

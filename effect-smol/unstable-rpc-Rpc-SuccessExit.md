@@ -5,6 +5,8 @@ Module: `Rpc`<br />
 
 Extracts the decoded success value carried by an RPC exit.
 
+**Details**
+
 For streaming RPCs, the immediate exit success is `void` because stream
 elements are delivered separately.
 
@@ -15,6 +17,6 @@ type SuccessExit<R> = Success<R> extends infer T ? T extends Stream<infer _A, in
   : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Rpc.ts#L345)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Rpc.ts#L357)
 
 Since v4.0.0

@@ -10,7 +10,7 @@ Extracts the value from a `Some`, or throws a custom error for `None`.
 - Fail-fast unwrapping when absence is unexpected
 - Providing a descriptive error for debugging
 
-**Behavior**
+**Details**
 
 - `Some` → returns the inner value
 - `None` → throws the value returned by `onNone()`
@@ -38,6 +38,6 @@ Option.getOrThrowWith(Option.none(), () => new Error("missing"))
 declare const getOrThrowWith: { (onNone: () => unknown): <A>(self: Option<A>) => A; <A>(self: Option<A>, onNone: () => unknown): A; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L1108)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L1112)
 
 Since v2.0.0

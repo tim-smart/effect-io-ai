@@ -23,6 +23,6 @@ console.log(
 declare const matchAll: (regExp: RegExp) => (self: string) => IterableIterator<RegExpMatchArray>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L704)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L706)
 
 Since v2.0.0

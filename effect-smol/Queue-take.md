@@ -6,6 +6,8 @@ Module: `Queue`<br />
 Take a single message from the queue, or wait for a message to be
 available.
 
+**Details**
+
 If the queue is done, it will fail with `Done`. If the
 queue fails, the Effect will fail with the error.
 
@@ -44,6 +46,6 @@ const program = Effect.gen(function*() {
 declare const take: <A, E>(self: Dequeue<A, E>) => Effect<A, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Queue.ts#L1301)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Queue.ts#L1343)
 
 Since v2.0.0

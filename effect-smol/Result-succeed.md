@@ -5,6 +5,8 @@ Module: `Result`<br />
 
 Creates a `Result` holding a `Success` value.
 
+**Details**
+
 - Use when you have a value and want to lift it into the `Result` type
 - The error type `E` defaults to `never`
 - Does not mutate input; allocates a new `Success` wrapper
@@ -31,6 +33,6 @@ console.log(Result.isSuccess(result))
 declare const succeed: <A>(right: A) => Result<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L317)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L331)
 
 Since v4.0.0

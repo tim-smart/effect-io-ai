@@ -6,6 +6,8 @@ Module: `Layer`<br />
 Type-level hook that allows `Layer` values to participate in `Unify`
 inference.
 
+**Details**
+
 This is used by Effect's pipe and unification machinery to preserve the
 provided services, error, and requirements of a `Layer`.
 
@@ -22,6 +24,6 @@ export interface LayerUnify<A extends { [Unify.typeSymbol]?: any }> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L73)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L87)
 
 Since v4.0.0

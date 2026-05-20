@@ -6,6 +6,8 @@ Module: `Effect`<br />
 Updates the provided `Metric` every time the wrapped `Effect` fails with an
 **unexpected** error (i.e. a defect).
 
+**Details**
+
 Also accepts an optional function which can be used to map the defect value
 of the `Effect` into a valid `Input` for the `Metric`.
 
@@ -55,6 +57,6 @@ Effect.runPromiseExit(program).then(() =>
 declare const trackDefects: { <Input, State>(metric: Metric.Metric<Input, State>, f: (defect: unknown) => Input): <A, E, R>(self: Effect<A, E, R>) => Effect<A, E, R>; <State, E>(metric: Metric.Metric<unknown, State>): <A, R>(self: Effect<A, E, R>) => Effect<A, E, R>; <A, E, R, Input, State>(self: Effect<A, E, R>, metric: Metric.Metric<Input, State>, f: (defect: unknown) => Input): Effect<A, E, R>; <A, E, R, State>(self: Effect<A, E, R>, metric: Metric.Metric<unknown, State>): Effect<A, E, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L13505)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L13612)
 
 Since v4.0.0

@@ -65,6 +65,6 @@ const logSpanExample = Effect.gen(function*() {
 declare const CurrentLogSpans: Context.Reference<ReadonlyArray<[label: string, timestamp: number]>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/References.ts#L261)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/References.ts#L274)
 
 Since v4.0.0

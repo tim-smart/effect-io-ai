@@ -5,7 +5,8 @@ Module: `SchemaGetter`<br />
 
 Encodes a `Uint8Array` or string to a hexadecimal string.
 
-Behavior:
+**Details**
+
 - Pure, never fails.
 
 **Example** (Encode to hex)
@@ -16,9 +17,10 @@ import { SchemaGetter } from "effect"
 const encode = SchemaGetter.encodeHex<Uint8Array>()
 ```
 
-See also:
-- `decodeHex` — inverse (to `Uint8Array`)
-- `decodeHexString` — inverse (to `string`)
+**See**
+
+- `decodeHex` - inverse (to `Uint8Array`)
+- `decodeHexString` - inverse (to `string`)
 
 **Signature**
 
@@ -26,6 +28,6 @@ See also:
 declare const encodeHex: <E extends Uint8Array | string>() => Getter<string, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L1273)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L1303)
 
 Since v4.0.0

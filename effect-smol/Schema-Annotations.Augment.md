@@ -13,6 +13,8 @@ export interface Augment extends Annotations {
     /**
      * Human-readable description of what a value is expected to satisfy.
      *
+     * **Details**
+     *
      * For filter and refinement failures, the default formatter uses
      * `message` first, then `expected`, and finally falls back to `<filter>`.
      *
@@ -31,6 +33,6 @@ export interface Augment extends Annotations {
   }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L12516)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L12897)
 
 Since v4.0.0

@@ -5,6 +5,8 @@ Module: `Result`<br />
 
 Tests whether a value is a `Result` (either `Success` or `Failure`).
 
+**Details**
+
 - Use to validate unknown input before operating on it as a `Result`
 - Returns `true` for both `Success` and `Failure` variants
 - Acts as a TypeScript type guard, narrowing to `Result<unknown, unknown>`
@@ -31,6 +33,6 @@ console.log(Result.isResult({ value: 1 }))
 declare const isResult: (input: unknown) => input is Result<unknown, unknown>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L540)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L568)
 
 Since v4.0.0

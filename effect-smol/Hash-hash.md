@@ -5,19 +5,19 @@ Module: `Hash`<br />
 
 Computes a hash value for any given value.
 
+**Details**
+
 This function can hash primitives (numbers, strings, booleans, etc.) as well as
 objects, arrays, and other complex data structures. It automatically handles
 different types and provides a consistent hash value for equivalent inputs.
 
-**⚠️ CRITICAL IMMUTABILITY REQUIREMENT**: Objects being hashed must be treated as
-immutable after their first hash computation. Hash results are cached, so mutating
-an object after hashing will lead to stale cached values and broken hash-based
-operations. For mutable objects, use referential equality by implementing custom
-`Hash` interface that hashes the object reference, not its content.
+**Gotchas**
 
-**FORBIDDEN**: Modifying objects after `Hash.hash()` has been called on them
-**ALLOWED**: Using immutable objects, or mutable objects with custom `Hash` interface
-that uses referential equality (hashes the object reference, not content)
+Objects being hashed must be treated as immutable after their first hash
+computation. Hash results are cached, so mutating an object after hashing will
+lead to stale cached values and broken hash-based operations. For mutable
+objects, implement a custom `Hash` interface that hashes the object reference
+rather than its content.
 
 **Example** (Hashing different values)
 
@@ -41,6 +41,6 @@ console.log(Hash.hash({ id: "user-1", roles: ["admin", "editor"] }))
 declare const hash: <A>(self: A) => number
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Hash.ts#L88)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Hash.ts#L90)
 
 Since v2.0.0

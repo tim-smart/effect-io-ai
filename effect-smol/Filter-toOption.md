@@ -12,6 +12,6 @@ and `None` for filtered-out values.
 declare const toOption: <A, Pass, Fail>(self: Filter<A, Pass, Fail>) => (input: A) => Option.Option<Pass>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Filter.ts#L662)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Filter.ts#L678)
 
 Since v4.0.0

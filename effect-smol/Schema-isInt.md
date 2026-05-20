@@ -6,11 +6,13 @@ Module: `Schema`<br />
 Validates that a number is a safe integer (within the safe integer range
 that can be exactly represented in JavaScript).
 
-**JSON Schema**
+**Details**
+
+JSON Schema:
 
 This check corresponds to the `type: "integer"` constraint in JSON Schema.
 
-**Arbitrary**
+Arbitrary:
 
 When generating test data with fast-check, this applies an `isInteger: true`
 constraint to ensure generated numbers are integers.
@@ -21,6 +23,6 @@ constraint to ensure generated numbers are integers.
 declare const isInt: (annotations?: Annotations.Filter) => AST.Filter<number>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L6419)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L6611)
 
 Since v4.0.0

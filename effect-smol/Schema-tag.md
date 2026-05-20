@@ -5,6 +5,8 @@ Module: `Schema`<br />
 
 The type produced by `tag` — a literal schema with a constructor default.
 
+**Details**
+
 Used as the type of the `_tag` field in `TaggedStruct` and related helpers.
 
 **See**
@@ -17,6 +19,6 @@ Used as the type of the `_tag` field in `TaggedStruct` and related helpers.
 export interface tag<Tag extends AST.LiteralValue> extends withConstructorDefault<Literal<Tag>> {}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L4973)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L5116)
 
 Since v3.10.0

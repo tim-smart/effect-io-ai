@@ -3,9 +3,8 @@ Module: `Response`<br />
 
 ## Response.UrlSourcePart
 
-Response part representing a URL source reference.
-
-Used to reference web URLs that were used in generating the response.
+Response part representing a URL source reference used in generating the
+response.
 
 **Signature**
 
@@ -30,6 +29,6 @@ export interface UrlSourcePart extends BasePart<"source", UrlSourcePartMetadata>
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Response.ts#L2011)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Response.ts#L2020)
 
 Since v4.0.0

@@ -7,11 +7,15 @@ Creates an `Equivalence` for a struct by providing an `Equivalence` for each
 property. Two structs are equivalent when all their corresponding properties
 are equivalent.
 
-Alias of `Equivalence.Struct`.
+**When to use**
 
-- Use when you need to compare structs property-by-property.
-- Each property's equivalence is checked independently; all must return
-  `true` for the overall result to be `true`.
+Use when you need to compare structs property-by-property.
+
+**Details**
+
+This is an alias of `Equivalence.Struct`. Each property's equivalence is
+checked independently; all must return `true` for the overall result to be
+`true`.
 
 **Example** (Comparing structs for equivalence)
 
@@ -39,6 +43,6 @@ console.log(PersonEquivalence({ name: "Alice", age: 30 }, { name: "Bob", age: 30
 declare const makeEquivalence: <R extends Record<string, Equivalence.Equivalence<any>>>(fields: R) => Equivalence.Equivalence<{ readonly [K in keyof R]: [R[K]] extends [Equivalence.Equivalence<infer A>] ? A : never; }>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Struct.ts#L536)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Struct.ts#L593)
 
 Since v4.0.0

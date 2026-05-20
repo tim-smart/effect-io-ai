@@ -13,6 +13,6 @@ export interface Constructor extends Data.TaggedEnum.WithGenerics<1> {
   }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MessageStorage.ts#L274)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MessageStorage.ts#L289)
 
 Since v4.0.0

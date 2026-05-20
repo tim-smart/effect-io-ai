@@ -6,6 +6,8 @@ Module: `Command`<br />
 Creates a `Command` from a name, an optional configuration, and an optional
 handler.
 
+**Details**
+
 Use `withDescription` and related metadata combinators to add help text. The
 overloads support simple commands, configured commands, and commands with
 effectful handlers.
@@ -60,6 +62,6 @@ const deployWithHandler = Command.make("deploy", {
 declare const make: { <Name extends string>(name: Name): Command<Name, {}, {}, never, never>; <Name extends string, const Config extends Command.Config>(name: Name, config: Config): Command<Name, Command.Config.Infer<Config>, {}, never, never>; <Name extends string, const Config extends Command.Config, R, E>(name: Name, config: Config, handler: (config: Command.Config.Infer<Config>) => Effect.Effect<void, E, R>): Command<Name, Command.Config.Infer<Config>, {}, E, Exclude<R, GlobalFlag.BuiltInSettingContext>>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Command.ts#L498)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Command.ts#L522)
 
 Since v4.0.0

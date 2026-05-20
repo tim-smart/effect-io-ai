@@ -5,12 +5,14 @@ Module: `Optic`<br />
 
 A lossless, reversible conversion between types `S` and `A`.
 
-When to use:
+**When to use**
+
 - You have a pair of functions that convert back and forth without losing
   information (e.g. `Record ↔ entries`, `Celsius ↔ Fahrenheit`).
 - You want the strongest optic that can be composed with any other.
 
-Behavior:
+**Details**
+
 - `get(s)` always succeeds and returns an `A`.
 - `set(a)` always succeeds and returns an `S`.
 - `get(set(a)) === a` and `set(get(s))` equals `s` (round-trip laws).
@@ -45,6 +47,6 @@ console.log(fahrenheit.set(32))
 export interface Iso<in out S, in out A> extends Lens<S, A>, Prism<S, A> {}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Optic.ts#L146)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Optic.ts#L148)
 
 Since v4.0.0

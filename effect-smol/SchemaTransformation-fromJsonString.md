@@ -6,10 +6,15 @@ Module: `SchemaTransformation`<br />
 Decodes a JSON string with `JSON.parse` and encodes a value with
 `JSON.stringify`.
 
+**When to use**
+
 Use this for JSON stored or transmitted as a string, usually before composing
-with another schema that validates the parsed structure. Decode fails with
-`InvalidValue` for invalid JSON, and encode can fail with `InvalidValue` when
-`JSON.stringify` cannot serialize the value.
+with another schema that validates the parsed structure.
+
+**Details**
+
+Decode fails with `InvalidValue` for invalid JSON, and encode can fail with
+`InvalidValue` when `JSON.stringify` cannot serialize the value.
 
 **Example** (Parsing JSON)
 
@@ -21,7 +26,8 @@ const schema = Schema.String.pipe(
 )
 ```
 
-See also:
+**See**
+
 - `uint8ArrayFromBase64String`
 - `fromFormData`
 
@@ -31,6 +37,6 @@ See also:
 declare const fromJsonString: Transformation<unknown, string, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L1530)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L1579)
 
 Since v4.0.0

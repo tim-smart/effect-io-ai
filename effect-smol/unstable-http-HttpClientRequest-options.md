@@ -11,6 +11,6 @@ Creates an `OPTIONS` request for the specified URL.
 declare const options: (url: string | URL, options?: Options.NoUrl) => HttpClientRequest
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpClientRequest.ts#L234)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpClientRequest.ts#L236)
 
 Since v4.0.0

@@ -5,6 +5,8 @@ Module: `PlatformError`<br />
 
 Normalized category for failures reported by platform or system operations.
 
+**Details**
+
 The tags group lower-level platform errors into a stable set such as
 `NotFound`, `PermissionDenied`, `TimedOut`, and `Unknown`.
 
@@ -24,6 +26,6 @@ type SystemErrorTag = | "AlreadyExists"
   | "WriteZero"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PlatformError.ts#L72)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PlatformError.ts#L76)
 
 Since v4.0.0

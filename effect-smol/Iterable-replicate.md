@@ -5,7 +5,9 @@ Module: `Iterable`<br />
 
 Return a `Iterable` containing a value repeated the specified number of times.
 
-**Note**. `n` is normalized to an integer >= 1.
+**Details**
+
+`n` is normalized to an integer greater than or equal to `1`.
 
 **Example** (Repeating a value)
 
@@ -22,6 +24,6 @@ assert.deepStrictEqual(Array.from(Iterable.replicate("a", 3)), ["a", "a", "a"])
 declare const replicate: { (n: number): <A>(a: A) => Iterable<A>; <A>(a: A, n: number): Iterable<A>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Iterable.ts#L139)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Iterable.ts#L145)
 
 Since v2.0.0

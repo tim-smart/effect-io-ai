@@ -6,9 +6,12 @@ Module: `Config`<br />
 Makes a config optional: returns `Some(value)` on success and `None` when
 data is missing.
 
-When to use:
+**When to use**
+
 - A config key may or may not be present and you want to handle both
   cases explicitly.
+
+**Gotchas**
 
 Like `withDefault`, only missing-data errors produce `None`.
 Validation errors still propagate.
@@ -34,6 +37,6 @@ const provider = ConfigProvider.fromUnknown({})
 declare const option: <A>(self: Config<A>) => Config<Option.Option<A>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Config.ts#L471)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Config.ts#L501)
 
 Since v2.0.0

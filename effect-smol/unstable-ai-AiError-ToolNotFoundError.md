@@ -5,6 +5,8 @@ Module: `AiError`<br />
 
 Error indicating the model requested a tool that doesn't exist in the toolkit.
 
+**Details**
+
 This error is retryable because the model may self-correct when provided
 with the list of available tools.
 
@@ -29,6 +31,6 @@ console.log(error.message)
 declare class ToolNotFoundError
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AiError.ts#L989)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AiError.ts#L1022)
 
 Since v4.0.0

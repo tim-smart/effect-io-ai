@@ -5,6 +5,8 @@ Module: `HttpServerError`<br />
 
 Error describing a failure related to an HTTP response.
 
+**Details**
+
 It carries the request and response involved in the failure. When converted to
 a response it produces an empty `500` response.
 
@@ -14,6 +16,6 @@ a response it produces an empty `500` response.
 declare class ResponseError
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpServerError.ts#L198)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpServerError.ts#L208)
 
 Since v4.0.0

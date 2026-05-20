@@ -3,10 +3,7 @@ Module: `Console`<br />
 
 ## Console.group
 
-Creates a new inline group in the console and returns a scoped Effect.
-
-This function creates a collapsible group of console messages. The group
-is automatically closed when the Effect's scope is finalized.
+Creates a scoped console group, optionally collapsed and labeled, and closes it automatically when the Effect scope is finalized.
 
 **Example** (Grouping scoped output)
 
@@ -31,6 +28,6 @@ const program = Effect.gen(function*() {
 declare const group: (options?: { label?: string | undefined; collapsed?: boolean | undefined; } | undefined) => Effect.Effect<void, never, Scope>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Console.ts#L413)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Console.ts#L383)
 
 Since v2.0.0

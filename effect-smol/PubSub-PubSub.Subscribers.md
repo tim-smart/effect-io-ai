@@ -5,7 +5,7 @@ Module: `PubSub`<br />
 
 Tracks the pollers currently waiting on each backing subscription.
 
-**Notes**
+**Details**
 
 This type is part of the low-level `PubSub.Strategy` contract. Most
 application code should use `subscribe`, `take`, and the other `PubSub`

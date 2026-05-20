@@ -5,6 +5,8 @@ Module: `Param`<br />
 
 Leaf parameter that reads one named argument or flag with a primitive parser.
 
+**Details**
+
 Single parameters carry the user-facing name, aliases, description, primitive
 type, and optional metavar/type name used in help output.
 
@@ -23,6 +25,6 @@ export interface Single<Kind extends ParamKind, out A> extends Param<Kind, A> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Param.ts#L200)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Param.ts#L206)
 
 Since v4.0.0

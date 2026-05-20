@@ -3,11 +3,18 @@ Module: `Layer`<br />
 
 ## Layer.effectContext
 
-Constructs a layer from the specified scoped effect, which must return one
-or more services.
+Constructs a layer from an effect that produces all services in a `Context`.
 
-This allows you to create a Layer from an effectful computation that returns
-multiple services. The Effect is executed in the scope of the layer.
+**When to use**
+
+Use `effectContext` when effectful construction needs to provide multiple
+services at once. Use `effect` when the effect produces one service value.
+
+**Details**
+
+This allows you to create a `Layer` from an effectful computation that
+returns multiple services. The `Effect` is executed in the scope of the
+layer.
 
 **Example** (Creating a layer from an effectful context)
 
@@ -26,12 +33,16 @@ const layer = Layer.effectContext(
 )
 ```
 
+**See**
+
+- `effect` for effectfully providing a single service
+
 **Signature**
 
 ```ts
 declare const effectContext: <A, E, R>(effect: Effect<Context.Context<A>, E, R>) => Layer<A, E, Exclude<R, Scope.Scope>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L911)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L984)
 
 Since v2.0.0

@@ -11,6 +11,6 @@ Generated OpenAPI security requirement, keyed by security scheme name.
 type OpenAPISecurityRequirement = Record<string, Array<string>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/OpenApi.ts#L979)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/OpenApi.ts#L981)
 
 Since v4.0.0

@@ -5,6 +5,8 @@ Module: `Crypto`<br />
 
 Platform-agnostic cryptographic operations.
 
+**Details**
+
 `Crypto` implementations must use cryptographically secure platform APIs.
 The random generator helpers are derived by the `make` constructor from
 the random methods on this service.
@@ -90,6 +92,8 @@ export interface Crypto {
   /**
    * Generates a cryptographically secure random integer between `min` and `max`.
    *
+   * **Details**
+   *
    * The lower bound is rounded up with `Math.ceil` and the upper bound is
    * rounded down with `Math.floor`. By default the range is inclusive; set
    * `options.halfOpen: true` to exclude the upper bound.
@@ -116,6 +120,6 @@ export interface Crypto {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Crypto.ts#L116)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Crypto.ts#L120)
 
 Since v4.0.0

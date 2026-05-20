@@ -12,6 +12,6 @@ configured key prefix.
 declare const makeStoreRedis: (options?: { readonly prefix?: string | undefined; } | undefined) => Effect.Effect<{ readonly fixedWindow: (options: { readonly key: string; readonly tokens: number; readonly refillRate: Duration.Duration; readonly limit: number | undefined; }) => Effect.Effect<readonly [count: number, ttl: number], RateLimiterError>; readonly tokenBucket: (options: { readonly key: string; readonly tokens: number; readonly limit: number; readonly refillRate: Duration.Duration; readonly allowOverflow: boolean; }) => Effect.Effect<number, RateLimiterError>; }, never, Redis.Redis>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RateLimiter.ts#L592)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RateLimiter.ts#L595)
 
 Since v4.0.0

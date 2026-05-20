@@ -5,6 +5,8 @@ Module: `DevToolsSchema`<br />
 
 Type of a devtools counter metric snapshot.
 
+**Details**
+
 The state contains the current count and whether the counter reports
 incremental updates.
 
@@ -14,6 +16,6 @@ incremental updates.
 type Counter = Schema.Schema.Type<typeof Counter>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DevToolsSchema.ts#L306)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DevToolsSchema.ts#L308)
 
 Since v4.0.0

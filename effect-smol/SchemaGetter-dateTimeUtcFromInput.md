@@ -5,14 +5,15 @@ Module: `SchemaGetter`<br />
 
 Parses a `DateTime.Input` value into a `DateTime.Utc`.
 
-Accepted input includes existing `DateTime` values, partial date/time parts,
-instant objects, zoned instant objects, JavaScript `Date` instances, epoch
-milliseconds, and date strings.
+**When to use**
 
-Use this when:
 - An encoded value represents a date/time and should be decoded to a `DateTime.Utc`.
 
-Behavior:
+**Details**
+
+- Accepted input includes existing `DateTime` values, partial date/time parts,
+  instant objects, zoned instant objects, JavaScript `Date` instances, epoch
+  milliseconds, and date strings.
 - Converts successfully parsed values to UTC.
 - Fails with `Issue.InvalidValue` if the input cannot be parsed as a valid
   `DateTime`.
@@ -26,8 +27,9 @@ const parseDate = SchemaGetter.dateTimeUtcFromInput<string>()
 // Getter<DateTime.Utc, string>
 ```
 
-See also:
-- `Date` — simpler coercion to `Date` (no validation)
+**See**
+
+- `Date` - simpler coercion to `Date` (no validation)
 
 **Signature**
 
@@ -35,6 +37,6 @@ See also:
 declare const dateTimeUtcFromInput: <E extends DateTime.DateTime.Input>() => Getter<DateTime.Utc, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L1554)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L1584)
 
 Since v4.0.0

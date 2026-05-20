@@ -5,6 +5,8 @@ Module: `Cause`<br />
 
 Attaches metadata to every reason in a `Cause`.
 
+**Details**
+
 Annotations are stored as a `Context` on each reason and can be
 retrieved later via `reasonAnnotations` or `annotations`.
 The runtime uses this to attach stack traces and spans.
@@ -33,6 +35,6 @@ const annotated = Cause.annotate(cause, Context.empty())
 declare const annotate: { (annotations: Context.Context<never>, options?: { readonly overwrite?: boolean | undefined; }): <E>(self: Cause<E>) => Cause<E>; <E>(self: Cause<E>, annotations: Context.Context<never>, options?: { readonly overwrite?: boolean | undefined; }): Cause<E>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L1617)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L1689)
 
 Since v4.0.0

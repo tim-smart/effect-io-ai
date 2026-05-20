@@ -5,8 +5,9 @@ Module: `Runtime`<br />
 
 Represents a teardown function that handles program completion and determines the exit code.
 
-The teardown function is called when an Effect program completes (either successfully or with failure)
-and is responsible for determining the appropriate exit code and performing any cleanup operations.
+**Details**
+
+A teardown function is called when an Effect program completes, either successfully or with a failure. It determines the appropriate exit code and can perform cleanup before invoking the supplied `onExit` callback.
 
 **Example** (Customizing teardown behavior)
 
@@ -45,6 +46,6 @@ export interface Teardown {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Runtime.ts#L74)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Runtime.ts#L75)
 
 Since v4.0.0

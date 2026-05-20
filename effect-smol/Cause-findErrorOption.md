@@ -6,6 +6,8 @@ Module: `Cause`<br />
 Returns the first typed error value `E` from a cause wrapped in
 `Option.some`, or `Option.none` if no `Fail` reason exists.
 
+**When to use**
+
 This is the `Option`-returning variant of `findError` for code that
 does not need the original cause returned in a failed `Result`.
 
@@ -31,6 +33,6 @@ console.log(Option.isNone(none)) // true
 declare const findErrorOption: <E>(input: Cause<E>) => Option<E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L823)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L867)
 
 Since v4.0.0

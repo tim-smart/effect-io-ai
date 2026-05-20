@@ -11,6 +11,6 @@ Token accounting reported on OpenAI Responses API response objects.
 type ResponseUsage = typeof ResponseUsage.Type
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiSchema.ts#L553)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiSchema.ts#L554)
 
 Since v4.0.0

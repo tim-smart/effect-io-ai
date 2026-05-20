@@ -5,6 +5,8 @@ Module: `Encoding`<br />
 
 Decodes a URL-safe base64 string into bytes.
 
+**Details**
+
 Returns `Result.succeed` with a `Uint8Array` when decoding succeeds, or
 `Result.fail` with an `EncodingError` when the input is not valid URL-safe
 base64. Both padded and unpadded URL-safe base64 forms are accepted when
@@ -27,6 +29,6 @@ if (Result.isSuccess(result)) {
 declare const decodeBase64Url: (str: string) => Result.Result<Uint8Array, EncodingError>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Encoding.ts#L235)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Encoding.ts#L245)
 
 Since v2.0.0

@@ -11,6 +11,6 @@ Type of the parameters Claude supplies when invoking regex-based Anthropic tool 
 type ToolSearchRegexParameters = typeof ToolSearchRegexParameters.Type
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L1618)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L1670)
 
 Since v4.0.0

@@ -6,15 +6,17 @@ Module: `ConfigProvider`<br />
 Creates a Layer that composes a new `ConfigProvider` with the currently
 active one, rather than replacing it.
 
-When to use:
-- Adding defaults that should only apply when the primary provider has no
-  value for a path.
-- Overriding specific keys while keeping the rest from the existing provider
-  (use `asPrimary: true`).
+**When to use**
 
-By default, the new provider acts as a **fallback** (consulted only when
-the current provider returns `undefined`). Set `asPrimary: true` to make
-the new provider the **primary** source, with the existing one as fallback.
+Use this to add defaults that should only apply when the primary provider
+has no value for a path, or to override specific keys while keeping the rest
+from the existing provider by setting `asPrimary: true`.
+
+**Details**
+
+By default, the new provider acts as a fallback and is consulted only when
+the current provider returns `undefined`. Set `asPrimary: true` to make the
+new provider the primary source, with the existing one as fallback.
 
 **Example** (Adding default values)
 
@@ -41,6 +43,6 @@ const DefaultsLayer = ConfigProvider.layerAdd(defaults)
 declare const layerAdd: <E = never, R = never>(self: ConfigProvider | Effect.Effect<ConfigProvider, E, R>, options?: { readonly asPrimary?: boolean | undefined; } | undefined) => Layer.Layer<never, E, Exclude<R, Scope>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ConfigProvider.ts#L660)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ConfigProvider.ts#L699)
 
 Since v4.0.0

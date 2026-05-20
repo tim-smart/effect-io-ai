@@ -3,9 +3,8 @@ Module: `Response`<br />
 
 ## Response.DocumentSourcePart
 
-Response part representing a document source reference.
-
-Used to reference documents that were used in generating the response.
+Response part representing a document source reference used in generating the
+response.
 
 **Signature**
 
@@ -34,6 +33,6 @@ export interface DocumentSourcePart extends BasePart<"source", DocumentSourcePar
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Response.ts#L1911)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Response.ts#L1921)
 
 Since v4.0.0

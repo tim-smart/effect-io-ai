@@ -5,6 +5,8 @@ Module: `HttpServerRequest`<br />
 
 Converts a `URL` object's search parameters into a record.
 
+**Details**
+
 Repeated parameters are represented as arrays in insertion order.
 
 **Signature**
@@ -13,6 +15,6 @@ Repeated parameters are represented as arrays in insertion order.
 declare const searchParamsFromURL: (url: URL) => ReadonlyRecord<string, string | Array<string>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpServerRequest.ts#L130)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpServerRequest.ts#L138)
 
 Since v4.0.0

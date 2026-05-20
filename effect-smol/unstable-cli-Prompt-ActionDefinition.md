@@ -5,6 +5,8 @@ Module: `Prompt`<br />
 
 Type-level definition for the tagged `Prompt.Action` variants.
 
+**Details**
+
 It connects the action state and output type parameters to the `Beep`,
 `NextFrame`, and `Submit` action cases.
 
@@ -16,6 +18,6 @@ export interface ActionDefinition extends Data.TaggedEnum.WithGenerics<2> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L103)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L107)
 
 Since v4.0.0

@@ -6,12 +6,14 @@ Module: `Schema`<br />
 Validates that a string is a valid ULID (Universally Unique Lexicographically
 Sortable Identifier).
 
-**JSON Schema**
+**Details**
+
+JSON Schema:
 
 This check corresponds to a `pattern` constraint in JSON Schema that matches
 the ULID format.
 
-**Arbitrary**
+Arbitrary:
 
 When generating test data with fast-check, this applies a `patterns`
 constraint to ensure generated strings match the ULID pattern.
@@ -22,6 +24,6 @@ constraint to ensure generated strings match the ULID pattern.
 declare const isULID: (annotations?: Annotations.Filter) => AST.Filter<string>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L5701)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L5863)
 
 Since v4.0.0

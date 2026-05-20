@@ -11,6 +11,6 @@ Type-level representation of the dynamic tool runtime type identifier.
 type DynamicTypeId = "~effect/ai/Tool/Dynamic"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tool.ts#L104)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tool.ts#L110)
 
 Since v4.0.0

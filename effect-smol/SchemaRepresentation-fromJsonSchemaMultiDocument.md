@@ -6,10 +6,18 @@ Module: `SchemaRepresentation`<br />
 Parses a Draft 2020-12 JSON Schema multi-document into a
 `MultiDocument`.
 
-- Use to import multiple JSON Schemas sharing definitions.
-- `options.onEnter` is an optional hook called on each JSON Schema node
-  before processing.
-- Throws if a `$ref` cannot be resolved.
+**When to use**
+
+Use this to import multiple JSON Schemas sharing definitions.
+
+**Details**
+
+`options.onEnter` is an optional hook called on each JSON Schema node before
+processing.
+
+**Gotchas**
+
+This throws if a `$ref` cannot be resolved.
 
 **See**
 
@@ -23,6 +31,6 @@ Parses a Draft 2020-12 JSON Schema multi-document into a
 declare const fromJsonSchemaMultiDocument: (document: JsonSchema.MultiDocument<"draft-2020-12">, options?: { readonly onEnter?: ((js: JsonSchema.JsonSchema) => JsonSchema.JsonSchema) | undefined; }) => MultiDocument
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaRepresentation.ts#L2939)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaRepresentation.ts#L3041)
 
 Since v4.0.0

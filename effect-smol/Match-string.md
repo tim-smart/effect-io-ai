@@ -5,6 +5,8 @@ Module: `Match`<br />
 
 Matches values of type `string`.
 
+**Details**
+
 This predicate refines unknown values to strings, allowing pattern matching
 on string types. It's commonly used in type-based matchers to handle string cases.
 
@@ -31,6 +33,6 @@ console.log(processValue(true)) // "Boolean: yes"
 declare const string: Predicate.Refinement<unknown, string>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L1219)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L1241)
 
 Since v4.0.0

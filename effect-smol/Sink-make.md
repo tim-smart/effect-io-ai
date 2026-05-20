@@ -5,6 +5,8 @@ Module: `Sink`<br />
 
 Creates a pipe-style constructor for sinks over input type `In`.
 
+**Details**
+
 The returned function exposes the sink input as a `Stream<In>`, applies the
 provided pipeline, and uses the final effect's success value as the sink
 result.
@@ -15,6 +17,6 @@ result.
 declare const make: <In>() => make.Constructor<In>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Sink.ts#L306)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Sink.ts#L320)
 
 Since v4.0.0

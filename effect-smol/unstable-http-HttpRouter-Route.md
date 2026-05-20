@@ -5,6 +5,8 @@ Module: `HttpRouter`<br />
 
 Description of a registered HTTP route.
 
+**Details**
+
 A route pairs an HTTP method and path pattern with a response handler, plus
 metadata used for prefix handling and interruptibility.
 
@@ -21,6 +23,6 @@ export interface Route<E = never, R = never> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpRouter.ts#L581)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpRouter.ts#L600)
 
 Since v4.0.0

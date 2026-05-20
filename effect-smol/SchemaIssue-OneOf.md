@@ -6,12 +6,12 @@ Module: `SchemaIssue`<br />
 Issue produced when a value matches *multiple* members of a union that is
 configured to allow exactly one match (oneOf mode).
 
-When to use:
+**When to use**
 
 - Detect ambiguous union matches when `oneOf` validation is enabled.
 - Inspect `successes` to see which members matched.
 
-Behaviour:
+**Details**
 
 - `ast` is the `Union` AST node.
 - `actual` is the raw input value (plain `unknown`).
@@ -42,6 +42,6 @@ declare class OneOf { constructor(
   ) }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaIssue.ts#L783)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaIssue.ts#L785)
 
 Since v4.0.0

@@ -3,11 +3,14 @@ Module: `FiberHandle`<br />
 
 ## FiberHandle.make
 
-A FiberHandle can be used to store a single fiber.
-When the associated Scope is closed, the contained fiber will be interrupted.
+Creates a scoped `FiberHandle` that can store a single fiber.
 
-You can add a fiber to the handle using `FiberHandle.run`, and the fiber will
-be automatically removed from the FiberHandle when it completes.
+**Details**
+
+When the associated `Scope` is closed, the contained fiber will be
+interrupted. You can add a fiber to the handle using `FiberHandle.run`, and
+the fiber will be automatically removed from the `FiberHandle` when it
+completes.
 
 **Example** (Creating a scoped fiber handle)
 
@@ -34,6 +37,6 @@ Effect.gen(function*() {
 declare const make: <A = unknown, E = unknown>() => Effect.Effect<FiberHandle<A, E>, never, Scope.Scope>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FiberHandle.ts#L167)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FiberHandle.ts#L168)
 
 Since v2.0.0

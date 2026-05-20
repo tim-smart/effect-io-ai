@@ -5,12 +5,9 @@ Module: `TxQueue`<br />
 
 Shuts down the queue immediately by clearing all items and interrupting it (legacy compatibility).
 
-This operation performs two atomic steps:
-1. **Clears** all items from the queue using `clear()`
-2. **Interrupts** the queue using `interrupt()`
+**Details**
 
-**Mutation behavior**: This function mutates the original TxQueue by clearing
-its contents and marking it as shutdown. It does not return a new TxQueue reference.
+This operation clears all items from the queue using `clear`, then interrupts the queue using `interrupt`. This function mutates the original TxQueue by clearing its contents and marking it as shutdown. It does not return a new TxQueue reference.
 
 **Example** (Shutting down queues)
 
@@ -40,6 +37,6 @@ const program = Effect.gen(function*() {
 declare const shutdown: <A, E>(self: TxEnqueue<A, E>) => Effect.Effect<boolean>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxQueue.ts#L1359)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxQueue.ts#L1344)
 
 Since v2.0.0

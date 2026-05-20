@@ -13,6 +13,6 @@ ids with `NoSuchElementError`.
 declare const findById: <Id extends Schema.Top, Res extends Schema.Top, Row, E, R>(options: { readonly Id: Id; readonly Result: Res; readonly ResultId: (result: Res["Type"], row: Types.NoInfer<Row>) => Id["Type"]; readonly execute: (requests: Arr.NonEmptyArray<Id["Encoded"]>) => Effect.Effect<ReadonlyArray<Row>, E, R>; }) => RequestResolver.RequestResolver<SqlRequest<Id["Type"], Res["Type"], E | Schema.SchemaError | Cause.NoSuchElementError, Id["EncodingServices"] | Res["DecodingServices"] | R>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SqlResolver.ts#L232)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SqlResolver.ts#L234)
 
 Since v4.0.0

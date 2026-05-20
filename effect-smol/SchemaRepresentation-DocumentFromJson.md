@@ -5,8 +5,10 @@ Module: `SchemaRepresentation`<br />
 
 Schema codec that decodes a `Document` from JSON and encodes it back.
 
-- Use with `Schema.decodeUnknownSync` / `Schema.encodeSync` to
-  serialize/deserialize documents.
+**When to use**
+
+Use this with `Schema.decodeUnknownSync` or `Schema.encodeSync` to serialize
+and deserialize documents.
 
 **Example** (Round-tripping a Document through JSON)
 
@@ -29,6 +31,6 @@ const back = Schema.decodeUnknownSync(SchemaRepresentation.DocumentFromJson)(jso
 declare const DocumentFromJson: Schema.Codec<Document, Schema.Json, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaRepresentation.ts#L1653)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaRepresentation.ts#L1700)
 
 Since v4.0.0

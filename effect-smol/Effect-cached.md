@@ -6,26 +6,19 @@ Module: `Effect`<br />
 Returns an effect that lazily computes a result and caches it for subsequent
 evaluations.
 
-**Details**
-
-This function wraps an effect and ensures that its result is computed only
-once. Once the result is computed, it is cached, meaning that subsequent
-evaluations of the same effect will return the cached result without
-re-executing the logic.
-
-**When to Use**
+**When to use**
 
 Use this function when you have an expensive or time-consuming operation that
 you want to avoid repeating. The first evaluation will compute the result,
 and all following evaluations will immediately return the cached value,
 improving performance and reducing unnecessary work.
 
-**See**
+**Details**
 
-- `cachedWithTTL` for a similar function that includes a
-time-to-live duration for the cached value.
-- `cachedInvalidateWithTTL` for a similar function that includes an
-additional effect for manually invalidating the cached value.
+This function wraps an effect and ensures that its result is computed only
+once. Once the result is computed, it is cached, meaning that subsequent
+evaluations of the same effect will return the cached result without
+re-executing the logic.
 
 **Example** (Memoizing an effect until invalidated)
 
@@ -65,12 +58,19 @@ Effect.runFork(program)
 // result 3
 ```
 
+**See**
+
+- `cachedWithTTL` for a similar function that includes a
+time-to-live duration for the cached value.
+- `cachedInvalidateWithTTL` for a similar function that includes an
+additional effect for manually invalidating the cached value.
+
 **Signature**
 
 ```ts
 declare const cached: <A, E, R>(self: Effect<A, E, R>) => Effect<Effect<A, E, R>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L6476)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L6549)
 
 Since v2.0.0

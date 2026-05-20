@@ -5,6 +5,8 @@ Module: `MessageStorage`<br />
 
 Result of saving a request or envelope into message storage.
 
+**Details**
+
 A duplicate result carries the original request ID and the last reply already
 received for the duplicated request.
 
@@ -14,6 +16,6 @@ received for the duplicated request.
 type SaveResult<R> = SaveResult.Success | SaveResult.Duplicate<R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MessageStorage.ts#L192)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MessageStorage.ts#L201)
 
 Since v4.0.0

@@ -5,8 +5,12 @@ Module: `BigDecimal`<br />
 
 Provides an unsafe division operation on `BigDecimal`s.
 
+**Details**
+
 If the dividend is not a multiple of the divisor, the result will be a `BigDecimal` value
 with up to the default division precision.
+
+**Gotchas**
 
 Throws a `RangeError` if the divisor is `0`.
 
@@ -25,6 +29,6 @@ console.log(BigDecimal.divideUnsafe(BigDecimal.fromStringUnsafe("6"), BigDecimal
 declare const divideUnsafe: { (that: BigDecimal): (self: BigDecimal) => BigDecimal; (self: BigDecimal, that: BigDecimal): BigDecimal; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigDecimal.ts#L564)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigDecimal.ts#L571)
 
 Since v4.0.0

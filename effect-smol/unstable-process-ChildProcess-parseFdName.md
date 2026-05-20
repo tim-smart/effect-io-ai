@@ -12,6 +12,6 @@ Returns undefined if the name is invalid.
 declare const parseFdName: (name: string) => number | undefined
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ChildProcess.ts#L845)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ChildProcess.ts#L870)
 
 Since v4.0.0

@@ -5,6 +5,8 @@ Module: `Message`<br />
 
 Serializes an outgoing message into its JSON envelope representation.
 
+**Details**
+
 Schema encoding failures are converted to `MalformedMessage`.
 
 **Signature**
@@ -13,6 +15,6 @@ Schema encoding failures are converted to `MalformedMessage`.
 declare const serializeEnvelope: <Rpc extends Rpc.Any>(message: Outgoing<Rpc>) => Effect.Effect<Envelope.Encoded, MalformedMessage, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Message.ts#L231)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Message.ts#L251)
 
 Since v4.0.0

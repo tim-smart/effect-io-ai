@@ -5,6 +5,8 @@ Module: `Array`<br />
 
 A mutable array guaranteed to have at least one element.
 
+**Details**
+
 This is the mutable counterpart of `NonEmptyReadonlyArray`. Most Array
 module functions return `NonEmptyArray` when the result is guaranteed
 non-empty.
@@ -29,6 +31,6 @@ nonEmpty.push(4)
 type [A, ...A[]] = [A, ...Array<A>]
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L178)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L184)
 
 Since v2.0.0

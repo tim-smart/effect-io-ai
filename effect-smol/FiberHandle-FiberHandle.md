@@ -3,10 +3,9 @@ Module: `FiberHandle`<br />
 
 ## FiberHandle.FiberHandle
 
-Scoped handle that manages at most one fiber.
-
-The current fiber is interrupted when the handle's scope closes, and managed
-fibers are removed from the handle when they complete.
+Scoped handle that manages at most one fiber, interrupts the current fiber
+when the handle's scope closes, and removes managed fibers from the handle
+when they complete.
 
 **Example** (Managing a single fiber)
 
@@ -39,6 +38,6 @@ export interface FiberHandle<out A = unknown, out E = unknown> extends Pipeable,
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FiberHandle.ts#L86)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FiberHandle.ts#L85)
 
 Since v2.0.0

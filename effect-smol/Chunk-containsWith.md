@@ -34,6 +34,6 @@ console.log(containsCaseInsensitive(words, "grape")) // false
 declare const containsWith: <A>(isEquivalent: (self: A, that: A) => boolean) => { (a: A): (self: Chunk<A>) => boolean; (self: Chunk<A>, a: A): boolean; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L2556)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L2575)
 
 Since v2.0.0

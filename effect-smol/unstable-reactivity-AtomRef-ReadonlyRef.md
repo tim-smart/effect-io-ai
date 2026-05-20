@@ -5,6 +5,8 @@ Module: `AtomRef`<br />
 
 A read-only reactive reference.
 
+**Details**
+
 It exposes a stable key, the current value, subscriptions to value changes, and
 `map` for creating derived read-only references. Equality and hashing are based
 on the current value.
@@ -21,6 +23,6 @@ export interface ReadonlyRef<A> extends Equal.Equal {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AtomRef.ts#L50)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AtomRef.ts#L52)
 
 Since v4.0.0

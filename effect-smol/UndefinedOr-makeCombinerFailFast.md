@@ -6,8 +6,11 @@ Module: `UndefinedOr`<br />
 Creates a `Combiner` for `A | undefined` that combines values only when both
 operands are defined.
 
-If either operand is `undefined`, the combined result is `undefined`. When
-both operands are defined, the wrapped combiner combines the two values.
+**Details**
+
+- `undefined` combined with any value returns `undefined`
+- Any value combined with `undefined` returns `undefined`
+- `a` combined with `b` returns `combiner.combine(a, b)`
 
 **See**
 
@@ -20,6 +23,6 @@ to `UndefinedOr` values.
 declare const makeCombinerFailFast: <A>(combiner: Combiner.Combiner<A>) => Combiner.Combiner<A | undefined>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/UndefinedOr.ts#L162)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/UndefinedOr.ts#L161)
 
 Since v4.0.0

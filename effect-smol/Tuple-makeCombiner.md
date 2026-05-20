@@ -7,9 +7,14 @@ Creates a `Combiner` for a tuple shape by providing a `Combiner` for each
 position. When two tuples are combined, each element is merged using its
 corresponding combiner.
 
-- Use when you need to merge two tuples of the same shape (e.g., summing
-  counters, concatenating strings).
-- Does not mutate the inputs; returns a fresh tuple.
+**When to use**
+
+Use this when you need to merge two tuples of the same shape, such as summing
+counters or concatenating strings.
+
+**Details**
+
+The inputs are not mutated; a fresh tuple is returned.
 
 **Example** (Combining tuple elements)
 
@@ -35,6 +40,6 @@ console.log(result) // [3, "hello world"]
 declare const makeCombiner: <A extends ReadonlyArray<unknown>>(combiners: { readonly [K in keyof A]: Combiner.Combiner<A[K]>; }) => Combiner.Combiner<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tuple.ts#L679)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tuple.ts#L744)
 
 Since v4.0.0

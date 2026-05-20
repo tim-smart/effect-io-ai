@@ -5,6 +5,8 @@ Module: `Envelope`<br />
 
 Runtime envelope for an RPC request addressed to a specific entity.
 
+**Details**
+
 It carries the request ID, entity address, RPC tag, decoded payload, request
 headers, and optional tracing context.
 
@@ -25,6 +27,6 @@ export interface Request<in out Rpc extends Rpc.Any> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Envelope.ts#L88)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Envelope.ts#L92)
 
 Since v4.0.0

@@ -5,7 +5,7 @@ Module: `Request`<br />
 
 Prototype used by Effect's request constructors.
 
-**Notes**
+**Details**
 
 This low-level value provides the structural request marker for values
 created by `Request.of`, `Request.tagged`, `Request.Class`, and

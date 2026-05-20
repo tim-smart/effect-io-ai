@@ -5,6 +5,8 @@ Module: `Tool`<br />
 
 Annotation indicating whether a tool may perform destructive operations.
 
+**Details**
+
 This is emitted as the MCP `destructiveHint`; unannotated tools default to
 `true`, so annotate safe tools with `false`.
 
@@ -23,6 +25,6 @@ const safeTool = Tool.make("search_database")
 declare const Destructive: Context.Reference<boolean>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tool.ts#L1721)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tool.ts#L1777)
 
 Since v4.0.0

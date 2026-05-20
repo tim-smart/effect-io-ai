@@ -5,6 +5,8 @@ Module: `Cron`<br />
 
 Checks whether two `Cron` instances have the same field restrictions.
 
+**Details**
+
 The comparison checks seconds, minutes, hours, days, months, and weekdays.
 It does not compare the optional timezone.
 
@@ -39,6 +41,6 @@ console.log(Cron.equals(cron1)(cron2)) // true (curried form)
 declare const equals: { (that: Cron): (self: Cron) => boolean; (self: Cron, that: Cron): boolean; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cron.ts#L976)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cron.ts#L998)
 
 Since v2.0.0

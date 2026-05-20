@@ -11,6 +11,6 @@ Service for generating ETags from filesystem file information or Web `File`-like
 declare class Generator
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Etag.ts#L81)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Etag.ts#L85)
 
 Since v4.0.0

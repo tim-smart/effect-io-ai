@@ -76,7 +76,9 @@ export interface Select<
     /**
      * Stream the selected data.
      *
-     * Defaults to a chunk size of 100.
+     * **Details**
+     *
+     * The default chunk size is 100.
      */
     readonly stream: (options?: {
       readonly chunkSize?: number | undefined
@@ -89,7 +91,9 @@ export interface Select<
     /**
      * Use the Reactivity service to react to changes to the selected data.
      *
-     * By default it uses the table name as a key.
+     * **Details**
+     *
+     * By default, the table name is used as the reactivity key.
      */
     readonly reactive: (
       keys?: ReadonlyArray<unknown> | Record.ReadonlyRecord<string, ReadonlyArray<unknown>> | undefined
@@ -108,6 +112,6 @@ export interface Select<
   }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbQueryBuilder.ts#L487)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbQueryBuilder.ts#L489)
 
 Since v4.0.0

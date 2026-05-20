@@ -5,6 +5,8 @@ Module: `Param`<br />
 
 Makes a flag or positional argument optional.
 
+**Details**
+
 When the parameter is absent, parsing succeeds with `Option.none()` instead
 of failing with a missing option or missing argument error. When present, the
 parsed value is wrapped in `Option.some()`.
@@ -26,6 +28,6 @@ const port = Param.optional(Param.integer(Param.flagKind, "port"))
 declare const optional: <Kind extends ParamKind, A>(param: Param<Kind, A>) => Param<Kind, Option.Option<A>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Param.ts#L1218)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Param.ts#L1249)
 
 Since v4.0.0

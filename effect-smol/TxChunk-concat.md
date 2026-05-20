@@ -5,8 +5,10 @@ Module: `TxChunk`<br />
 
 Concatenates another `TxChunk` to the end of this `TxChunk`.
 
-**Mutation behavior**: This function mutates the original TxChunk by appending
-all elements from the other TxChunk. It does not return a new TxChunk reference.
+**Details**
+
+This function mutates the original TxChunk by appending all elements from the other TxChunk. It
+does not return a new TxChunk reference.
 
 **Example** (Concatenating TxChunks)
 
@@ -35,6 +37,6 @@ const program = Effect.gen(function*() {
 declare const concat: { <A>(other: TxChunk<A>): (self: TxChunk<A>) => Effect.Effect<void>; <A>(self: TxChunk<A>, other: TxChunk<A>): Effect.Effect<void>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxChunk.ts#L776)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxChunk.ts#L811)
 
 Since v4.0.0

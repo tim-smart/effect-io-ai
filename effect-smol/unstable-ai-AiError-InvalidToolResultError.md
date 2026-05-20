@@ -6,6 +6,8 @@ Module: `AiError`<br />
 Error indicating the tool handler returned an invalid result that does not
 match the tool's schema.
 
+**Details**
+
 This error is not retryable because invalid results indicate a bug in the
 tool handler implementation.
 
@@ -30,6 +32,6 @@ console.log(error.message)
 declare class InvalidToolResultError
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AiError.ts#L1097)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AiError.ts#L1134)
 
 Since v4.0.0

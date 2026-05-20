@@ -13,6 +13,6 @@ type IncludeEnum = | "message.input_image.image_url"
   | "message.output_text.logprobs"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/OpenAiClient.ts#L308)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/OpenAiClient.ts#L313)
 
 Since v4.0.0

@@ -6,8 +6,13 @@ Module: `Types`<br />
 Merges two object types where keys from `Source` take precedence over
 `Target` on conflict.
 
-- Use when you want right-biased merging (second argument wins).
-- The result is automatically simplified via `Simplify`.
+**When to use**
+
+Use when you want right-biased merging where the second argument wins.
+
+**Details**
+
+The result is automatically simplified via `Simplify`.
 
 **Example** (Right-biased merge)
 
@@ -37,6 +42,6 @@ type MergeRight<Target, Source> = Simplify<
 >
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Types.ts#L395)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Types.ts#L447)
 
 Since v2.0.0

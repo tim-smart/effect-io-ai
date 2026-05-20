@@ -3,10 +3,12 @@ Module: `Layer`<br />
 
 ## Layer.satisfiesSuccessType
 
-Ensures that an layer's success type extends a given type `ROut`.
+Ensures that a layer's success type extends a given type `ROut`.
+
+**Details**
 
 This function provides compile-time type checking to ensure that the success
-value of an layer conforms to a specific type constraint.
+value of a layer conforms to a specific type constraint.
 
 **Example** (Constraining layer success types)
 
@@ -34,6 +36,6 @@ const validLayer = satisfiesNumber(FortyTwoLayer)
 declare const satisfiesSuccessType: <ROut>() => <ROut2 extends ROut, E, RIn>(layer: Layer<ROut2, E, RIn>) => Layer<ROut2, E, RIn>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L2070)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L2270)
 
 Since v4.0.0

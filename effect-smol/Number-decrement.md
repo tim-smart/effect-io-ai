@@ -20,6 +20,6 @@ assert.deepStrictEqual(Number.decrement(3), 2)
 declare const decrement: (n: number) => number
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Number.ts#L197)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Number.ts#L193)
 
 Since v2.0.0

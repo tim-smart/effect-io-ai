@@ -6,9 +6,14 @@ Module: `Types`<br />
 Narrows an error's `reason` field to exclude a specific reason variant by
 its `_tag`.
 
-- Use to narrow the error to only the remaining reason variants after
-  excluding the matched one.
-- Returns `never` if `E` has no `reason` field or no remaining variants.
+**When to use**
+
+Use to narrow the error to only the remaining reason variants after
+excluding the matched one.
+
+**Details**
+
+Returns `never` if `E` has no `reason` field or no remaining variants.
 
 **Example** (Omitting a reason variant)
 
@@ -39,6 +44,6 @@ type OmitReason<E, K> = E extends { readonly reason: infer R }
   : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Types.ts#L966)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Types.ts#L1088)
 
 Since v4.0.0

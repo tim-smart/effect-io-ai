@@ -5,6 +5,8 @@ Module: `Entity`<br />
 
 Reply API passed to queue-based entity handlers.
 
+**When to use**
+
 Use it to complete an entity request by succeeding, failing, failing with a
 cause, or supplying an explicit `Exit`.
 
@@ -34,6 +36,6 @@ export interface Replier<Rpcs extends Rpc.Any> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Entity.ts#L486)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Entity.ts#L498)
 
 Since v4.0.0

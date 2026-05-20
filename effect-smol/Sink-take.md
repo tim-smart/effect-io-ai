@@ -5,6 +5,8 @@ Module: `Sink`<br />
 
 Collects up to `n` input elements into an array.
 
+**Details**
+
 If `n` is less than or equal to zero, the sink completes with an empty array.
 If more elements are pulled than needed, the remaining elements from the same
 array are returned as leftovers.
@@ -15,6 +17,6 @@ array are returned as leftovers.
 declare const take: <In>(n: number) => Sink<Array<In>, In, In>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Sink.ts#L1022)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Sink.ts#L1058)
 
 Since v2.0.0

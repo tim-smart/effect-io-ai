@@ -6,6 +6,8 @@ Module: `SchemaAST`<br />
 Marks an AST node's property key as optional by setting
 `Context.isOptional` to `true`.
 
+**Details**
+
 Also propagates the optional flag through the last link of the encoding
 chain if present.
 
@@ -20,6 +22,6 @@ chain if present.
 declare const optionalKey: <A extends AST>(ast: A) => A
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L2834)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L2884)
 
 Since v4.0.0

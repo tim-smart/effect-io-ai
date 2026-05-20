@@ -5,6 +5,8 @@ Module: `SchemaAST`<br />
 
 A named property within an `Objects` node.
 
+**Details**
+
 Pairs a `name` (any `PropertyKey`) with a `type` (`AST`). The
 property's optionality and mutability are determined by the `type`'s
 `Context`.
@@ -22,6 +24,6 @@ declare class PropertySignature { constructor(
   ) }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L1590)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L1624)
 
 Since v3.10.0

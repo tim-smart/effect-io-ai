@@ -5,6 +5,8 @@ Module: `Latch`<br />
 
 Closes the latch so future `await` and `whenOpen` calls suspend.
 
+**Details**
+
 The returned effect succeeds with `true` when this call changed the latch
 from open to closed, or `false` if it was already closed.
 
@@ -14,6 +16,6 @@ from open to closed, or `false` if it was already closed.
 declare const close: (self: Latch) => Effect.Effect<boolean>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Latch.ts#L207)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Latch.ts#L225)
 
 Since v4.0.0

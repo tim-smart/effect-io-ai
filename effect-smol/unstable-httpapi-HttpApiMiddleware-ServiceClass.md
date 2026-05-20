@@ -5,6 +5,8 @@ Module: `HttpApiMiddleware`<br />
 
 Class type produced by `Service` for an HTTP API middleware service.
 
+**Details**
+
 It combines a `Context.Service` class with the middleware metadata used by
 endpoints, builders, and generated clients.
 
@@ -33,6 +35,6 @@ type ServiceClass<Self, Id, Config, Service> = & Context.Service<Self, Service>
   })
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiMiddleware.ts#L278)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiMiddleware.ts#L286)
 
 Since v4.0.0

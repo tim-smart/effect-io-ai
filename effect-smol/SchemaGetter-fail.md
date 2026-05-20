@@ -5,11 +5,13 @@ Module: `SchemaGetter`<br />
 
 Creates a getter that always fails with the given issue.
 
-Use this when:
+**When to use**
+
 - A transformation should unconditionally reject input.
 - Building custom validation getters that produce specific error types.
 
-Behavior:
+**Details**
+
 - Always fails with the `Issue` returned by `f`.
 - The failure function receives the original `Option<E>` input for error context.
 
@@ -23,9 +25,10 @@ const rejectAll = SchemaGetter.fail<string, string>(
 )
 ```
 
-See also:
-- `forbidden` — convenience for `Forbidden` issues
-- `checkEffect` — fail conditionally based on input value
+**See**
+
+- `forbidden` - convenience for `Forbidden` issues
+- `checkEffect` - fail conditionally based on input value
 
 **Signature**
 
@@ -33,6 +36,6 @@ See also:
 declare const fail: <T, E>(f: (oe: Option.Option<E>) => Issue.Issue) => Getter<T, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L226)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L228)
 
 Since v4.0.0

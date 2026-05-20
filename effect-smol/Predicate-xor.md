@@ -5,10 +5,12 @@ Module: `Predicate`<br />
 
 Creates a predicate that returns `true` if exactly one predicate is `true`.
 
-When to use:
+**When to use**
+
 - You want an exclusive-or between two conditions.
 
-Behavior:
+**Details**
+
 - Pure; does not mutate input.
 - Returns `true` when results differ.
 
@@ -24,7 +26,10 @@ const either = Predicate.xor(isEven, isPositive)
 console.log(either(-2))
 ```
 
-See also: `or`, `and`
+**See**
+
+- `or`
+- `and`
 
 **Signature**
 
@@ -32,6 +37,6 @@ See also: `or`, `and`
 declare const xor: { <A>(that: Predicate<A>): (self: Predicate<A>) => Predicate<A>; <A>(self: Predicate<A>, that: Predicate<A>): Predicate<A>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L1619)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L1714)
 
 Since v2.0.0

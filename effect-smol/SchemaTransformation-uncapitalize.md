@@ -6,10 +6,12 @@ Module: `SchemaTransformation`<br />
 A string-to-string transformation that lowercases the first character on
 decode. Encode is passthrough.
 
-When to use this:
+**When to use**
+
 - Normalizing identifiers or field names.
 
-Behavior:
+**Details**
+
 - Decode: lowercases the first character, leaves the rest unchanged.
 - Encode: passthrough.
 
@@ -23,7 +25,8 @@ const Uncapitalized = Schema.String.pipe(
 )
 ```
 
-See also:
+**See**
+
 - `capitalize`
 - `toLowerCase`
 
@@ -33,6 +36,6 @@ See also:
 declare const uncapitalize: () => Transformation<string, string>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L667)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L680)
 
 Since v4.0.0

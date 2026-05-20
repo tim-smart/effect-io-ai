@@ -11,6 +11,6 @@ Describes how merged streams decide when to halt.
 type HaltStrategy = Channel.HaltStrategy
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L331)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L337)
 
 Since v4.0.0

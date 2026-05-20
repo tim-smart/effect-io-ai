@@ -5,7 +5,8 @@ Module: `SchemaGetter`<br />
 
 Converts a string to lowercase.
 
-Behavior:
+**Details**
+
 - Pure, delegates to `String.toLowerCase`.
 
 **Example** (To lowercase)
@@ -16,8 +17,9 @@ import { SchemaGetter } from "effect"
 const lower = SchemaGetter.toLowerCase<string>()
 ```
 
-See also:
-- `toUpperCase` — inverse operation
+**See**
+
+- `toUpperCase` - inverse operation
 
 **Signature**
 
@@ -25,6 +27,6 @@ See also:
 declare const toLowerCase: <E extends string>() => Getter<string, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L971)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L996)
 
 Since v4.0.0

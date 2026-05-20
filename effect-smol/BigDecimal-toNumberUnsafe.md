@@ -5,6 +5,8 @@ Module: `BigDecimal`<br />
 
 Converts a `BigDecimal` to a JavaScript `number`.
 
+**Gotchas**
+
 This conversion is unsafe because the result can lose integer or fractional
 precision, round to a nearby representable value, or become `Infinity` when
 the decimal cannot be represented as a finite JavaScript `number`.
@@ -24,6 +26,6 @@ assert.deepStrictEqual(BigDecimal.toNumberUnsafe(BigDecimal.fromStringUnsafe("12
 declare const toNumberUnsafe: (n: BigDecimal) => number
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigDecimal.ts#L1352)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigDecimal.ts#L1378)
 
 Since v4.0.0

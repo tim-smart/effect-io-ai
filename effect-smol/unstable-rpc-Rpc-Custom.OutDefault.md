@@ -12,6 +12,6 @@ schemas.
 type OutDefault = Out<Schema.Top, Schema.Top>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Rpc.ts#L1075)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Rpc.ts#L1105)
 
 Since v4.0.0

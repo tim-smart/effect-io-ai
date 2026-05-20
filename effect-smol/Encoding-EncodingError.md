@@ -6,6 +6,8 @@ Module: `Encoding`<br />
 Error returned when an encoding or decoding operation cannot process its
 input.
 
+**Details**
+
 The error records whether the failure happened during encoding or decoding,
 which encoding module reported it, the original input, and a human-readable
 message.
@@ -16,6 +18,6 @@ message.
 declare class EncodingError
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Encoding.ts#L42)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Encoding.ts#L44)
 
 Since v4.0.0

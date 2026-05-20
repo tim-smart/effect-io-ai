@@ -5,9 +5,12 @@ Module: `Config`<br />
 
 Constructs a `Config<T>` from a value matching `Wrap<T>`.
 
-When to use:
+**When to use**
+
 - Accepting config from callers who may pass either a single `Config` or a
   record of individual `Config`s.
+
+**Details**
 
 If the input is already a `Config`, it is returned as-is. Otherwise, each
 key is recursively unwrapped and combined.
@@ -35,6 +38,6 @@ const makeConfig = (config: Config.Wrap<Options>): Config.Config<Options> =>
 declare const unwrap: <T>(wrapped: Wrap<T>) => Config<T>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Config.ts#L535)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Config.ts#L571)
 
 Since v2.0.0

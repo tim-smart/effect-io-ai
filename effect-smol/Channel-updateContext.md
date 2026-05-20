@@ -5,6 +5,8 @@ Module: `Channel`<br />
 
 Transforms the current context before running the channel.
 
+**Details**
+
 The function receives the surrounding context and returns the context to
 provide to the channel. The returned channel requires the services needed to
 build that context.
@@ -15,6 +17,6 @@ build that context.
 declare const updateContext: { <Env, R2>(f: (context: Context.Context<R2>) => Context.Context<Env>): <OutElem, OutErr, OutDone, InElem, InErr, InDone>(self: Channel<OutElem, InElem, OutErr, InErr, OutDone, InDone, Env>) => Channel<OutElem, InElem, OutErr, InErr, OutDone, InDone, R2>; <OutElem, OutErr, OutDone, InElem, InErr, InDone, Env, R2>(self: Channel<OutElem, InElem, OutErr, InErr, OutDone, InDone, Env>, f: (context: Context.Context<R2>) => Context.Context<Env>): Channel<OutElem, InElem, OutErr, InErr, OutDone, InDone, R2>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L7086)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L7186)
 
 Since v4.0.0

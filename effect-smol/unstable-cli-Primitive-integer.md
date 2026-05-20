@@ -29,6 +29,6 @@ const parseInteger = Effect.gen(function*() {
 declare const integer: Primitive<number>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Primitive.ts#L208)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Primitive.ts#L210)
 
 Since v4.0.0

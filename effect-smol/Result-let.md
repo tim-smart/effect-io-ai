@@ -6,6 +6,8 @@ Module: `Result`<br />
 Adds a named field to the do-notation accumulator by computing a pure
 (non-Result) value from the current accumulated object.
 
+**Details**
+
 - Use `bind` when the computation returns a `Result`
 - The field name must not collide with existing keys
 
@@ -35,6 +37,6 @@ console.log(result)
 declare const let: { <N extends string, R extends object, B>(name: Exclude<N, keyof R>, f: (r: NoInfer<R>) => B): <L>(self: Result<R, L>) => Result<{ [K in N | keyof R]: K extends keyof R ? R[K] : B; }, L>; <R extends object, L, N extends string, B>(self: Result<R, L>, name: Exclude<N, keyof R>, f: (r: NoInfer<R>) => B): Result<{ [K in N | keyof R]: K extends keyof R ? R[K] : B; }, L>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L1565)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L1649)
 
 Since v2.0.0

@@ -5,12 +5,14 @@ Module: `Order`<br />
 
 Creates a new `Order` instance from a comparison function.
 
-When to use this:
+**When to use**
+
 - When creating a custom order for a type that doesn't have a built-in order
 - When you need fine-grained control over comparison logic
 - When implementing orders for complex types
 
-Behavior:
+**Details**
+
 - Pure function: does not mutate inputs
 - Uses reference equality (`===`) as a shortcut: if `self === that`, returns `0` without calling the comparison function
 - The comparison function should return `-1`, `0`, or `1` based on the comparison result
@@ -31,7 +33,8 @@ console.log(byAge({ name: "Alice", age: 30 }, { name: "Bob", age: 25 })) // 1
 console.log(byAge({ name: "Alice", age: 25 }, { name: "Bob", age: 30 })) // -1
 ```
 
-See also:
+**See**
+
 - `mapInput` - Transform an order by mapping the input type
 - `combine` - Combine multiple orders
 
@@ -41,6 +44,6 @@ See also:
 declare const make: <A>(compare: (self: A, that: A) => -1 | 0 | 1) => Order<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Order.ts#L153)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Order.ts#L155)
 
 Since v2.0.0

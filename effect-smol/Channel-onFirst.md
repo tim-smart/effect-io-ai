@@ -5,6 +5,8 @@ Module: `Channel`<br />
 
 Runs an effect the first time the channel emits an output element.
 
+**Details**
+
 The effect receives the first emitted element. The first element is still
 emitted unchanged. The effect is not run if the channel completes without
 emitting an element.
@@ -15,6 +17,6 @@ emitting an element.
 declare const onFirst: { <OutElem, A, E, R>(onFirst: (element: Types.NoInfer<OutElem>) => Effect.Effect<A, E, R>): <OutErr, OutDone, InElem, InErr, InDone, Env>(self: Channel<OutElem, OutErr, OutDone, InElem, InErr, InDone, Env>) => Channel<OutElem, OutErr | E, OutDone, InElem, InErr, InDone, Env | R>; <OutElem, OutErr, OutDone, InElem, InErr, InDone, Env, A, E, R>(self: Channel<OutElem, OutErr, OutDone, InElem, InErr, InDone, Env>, onFirst: (element: Types.NoInfer<OutElem>) => Effect.Effect<A, E, R>): Channel<OutElem, OutErr | E, OutDone, InElem, InErr, InDone, Env | R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L6804)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L6896)
 
 Since v4.0.0

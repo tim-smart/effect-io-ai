@@ -5,18 +5,20 @@ Module: `Equivalence`<br />
 
 Creates an equivalence for tuples with heterogeneous element types.
 
-When to use this:
-- When comparing tuples with different types at each position
-- When you need different equivalence logic for each tuple element
-- When working with fixed-length tuples (not arrays)
-- Prefer over `Array` when you have a known tuple structure with different types
+**When to use**
 
-Behavior:
+- Use when comparing tuples with different types at each position
+- Use when you need different equivalence logic for each tuple element
+- Use when working with fixed-length tuples instead of arrays
+- Prefer this over `Array` when you have a known tuple structure with different types
+
+**Details**
+
 - Does not mutate inputs
 - Requires tuples to have the same length; different lengths are never equivalent
 - Applies each equivalence to the corresponding element position
 - Returns `true` only if all elements are equivalent according to their respective equivalences
-- The result is also an equivalence (satisfies reflexive, symmetric, transitive properties)
+- The result is also an equivalence that satisfies reflexive, symmetric, and transitive properties
 
 **Example** (Homogeneous tuple equivalence)
 
@@ -37,7 +39,7 @@ console.log(stringTupleEq(tuple1, tuple2)) // true
 console.log(stringTupleEq(tuple1, tuple3)) // false (different third element)
 ```
 
-**Example** (Heterogeneous tuple with custom equivalences)
+**Example** (Tuple with custom equivalences)
 
 ```ts
 import { Equivalence } from "effect"
@@ -58,7 +60,10 @@ console.log(
 ) // true
 ```
 
-See also: `Array_`, `Struct`
+**See**
+
+- `Array_`
+- `Struct`
 
 **Signature**
 
@@ -66,6 +71,6 @@ See also: `Array_`, `Struct`
 declare const Tuple: <const Elements extends ReadonlyArray<Equivalence<any>>>(elements: Elements) => Equivalence<{ readonly [I in keyof Elements]: [Elements[I]] extends [Equivalence<infer A>] ? A : never; }>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Equivalence.ts#L572)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Equivalence.ts#L593)
 
 Since v4.0.0

@@ -5,9 +5,9 @@ Module: `Runtime`<br />
 
 Creates a platform-specific main program runner that handles Effect execution lifecycle.
 
-This function creates a runner that can execute Effect programs as main entry points,
-handling process signals, fiber management, and teardown operations. The provided
-function receives a fiber and teardown callback to implement platform-specific behavior.
+**Details**
+
+The runner executes Effect programs as main entry points. The provided function receives a forked fiber and a teardown callback so it can install platform-specific signal handling, fiber observers, and final exit behavior.
 
 **Example** (Creating platform runners)
 

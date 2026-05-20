@@ -6,10 +6,9 @@ Module: `TxQueue`<br />
 Takes between `min` and `max` currently available items, waiting for `min` on
 an open queue.
 
-If the queue is closing, drains the currently available items even when fewer
-than `min` are available and transitions to `Done`. Invalid ranges
-(`min <= 0`, `max <= 0`, or `min > max`) return an empty array. If the queue
-is already done, the effect fails with the queue's completion cause.
+**Details**
+
+If the queue is closing, drains the currently available items even when fewer than `min` are available and transitions to `Done`. Invalid ranges (`min <= 0`, `max <= 0`, or `min > max`) return an empty array. If the queue is already done, the effect fails with the queue's completion cause.
 
 **Example** (Taking batches within bounds)
 
@@ -39,6 +38,6 @@ const program = Effect.gen(function*() {
 declare const takeBetween: { (min: number, max: number): <A, E>(self: TxDequeue<A, E>) => Effect.Effect<Array<A>, E>; <A, E>(self: TxDequeue<A, E>, min: number, max: number): Effect.Effect<Array<A>, E>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxQueue.ts#L934)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxQueue.ts#L923)
 
 Since v2.0.0

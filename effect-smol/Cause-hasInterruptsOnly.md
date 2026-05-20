@@ -6,6 +6,8 @@ Module: `Cause`<br />
 Returns `true` if every reason in the cause is an `Interrupt` (and
 there is at least one reason).
 
+**When to use**
+
 Useful for deciding whether a failure was entirely due to interruption and
 can be silently discarded.
 
@@ -29,6 +31,6 @@ console.log(Cause.hasInterruptsOnly(Cause.empty))          // false
 declare const hasInterruptsOnly: <E>(self: Cause<E>) => boolean
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L635)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L663)
 
 Since v4.0.0

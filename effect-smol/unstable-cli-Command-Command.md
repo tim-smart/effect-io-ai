@@ -5,7 +5,10 @@ Module: `Command`<br />
 
 Represents a CLI command with its configuration, handler, and metadata.
 
+**Details**
+
 Commands are the core building blocks of CLI applications. They define:
+
 - The command name and description
 - Configuration including flags and arguments
 - Handler function for execution
@@ -95,9 +98,16 @@ export interface Command<in out Name extends string, in Input, out ContextInput 
    * Custom annotations associated with this command.
    */
   readonly annotations: Context.Context<never>
+
+  /**
+   * Whether this command is hidden from parent help output, shell
+   * completions, and unknown-subcommand suggestions. Hidden commands still
+   * parse and execute normally when invoked by exact name.
+   */
+  readonly hidden: boolean
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Command.ts#L108)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Command.ts#L111)
 
 Since v4.0.0

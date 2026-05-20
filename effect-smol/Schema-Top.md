@@ -5,6 +5,8 @@ Module: `Schema`<br />
 
 The existential "any schema" type — all type parameters are erased to `unknown`.
 
+**Details**
+
 Use `Top` as a constraint when writing generic utilities that must accept *any*
 schema regardless of its `Type`, `Encoded`, or service requirements. It is the
 widest possible schema type and therefore gives you the least static information.
@@ -39,6 +41,6 @@ export interface Top extends
 {}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L570)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L586)
 
 Since v4.0.0

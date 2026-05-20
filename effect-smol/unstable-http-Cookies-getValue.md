@@ -5,6 +5,8 @@ Module: `Cookies`<br />
 
 Gets the decoded value of a cookie by name.
 
+**Details**
+
 Returns `Option.none()` when the cookie is not present.
 
 **Signature**
@@ -13,6 +15,6 @@ Returns `Option.none()` when the cookie is not present.
 declare const getValue: { (name: string): (self: Cookies) => Option.Option<string>; (self: Cookies, name: string): Option.Option<string>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cookies.ts#L582)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cookies.ts#L590)
 
 Since v4.0.0

@@ -6,10 +6,15 @@ Module: `Struct`<br />
 Applies a `Lambda` type-level function to a value type `V`, producing
 the output type.
 
-- Use this when you need to compute what type a Lambda would produce for a
-  given input.
-- Works by intersecting the Lambda with `{ "~lambda.in": V }` and reading
-  `"~lambda.out"`.
+**When to use**
+
+Use this when you need to compute what type a Lambda would produce for a
+given input.
+
+**Details**
+
+This works by intersecting the Lambda with `{ "~lambda.in": V }` and reading
+`"~lambda.out"`.
 
 **Example** (Computing the output type of a lambda)
 
@@ -34,6 +39,6 @@ type Result = Struct.Apply<ToString, number>
 type Apply<L, V> = (L & { readonly "~lambda.in": V })["~lambda.out"]
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Struct.ts#L627)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Struct.ts#L697)
 
 Since v4.0.0

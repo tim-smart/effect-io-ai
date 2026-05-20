@@ -6,6 +6,8 @@ Module: `SubscriptionRef`<br />
 A mutable reference whose updates are serialized and published to
 subscribers.
 
+**When to use**
+
 Use `changes` to observe the current value and subsequent updates as a
 stream.
 
@@ -19,6 +21,6 @@ export interface SubscriptionRef<in out A> extends SubscriptionRef.Variance<A>, 
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SubscriptionRef.ts#L41)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SubscriptionRef.ts#L43)
 
 Since v2.0.0

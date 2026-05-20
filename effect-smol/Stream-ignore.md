@@ -5,6 +5,8 @@ Module: `Stream`<br />
 
 Ignores failures and ends the stream on error.
 
+**When to use**
+
 Use the `log` option to emit the full `Cause` when the stream fails.
 
 **Example** (Ignoring stream failures)
@@ -47,6 +49,6 @@ Effect.runPromise(Effect.gen(function*() {
 declare const ignore: <Arg extends Stream<any, any, any> | { readonly log?: boolean | Severity | undefined; } | undefined>(selfOrOptions: Arg, options?: { readonly log?: boolean | Severity | undefined; } | undefined) => [Arg] extends [Stream<infer A, infer _E, infer R>] ? Stream<A, never, R> : <A, E, R>(self: Stream<A, E, R>) => Stream<A, never, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L5768)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L5853)
 
 Since v4.0.0

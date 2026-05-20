@@ -5,6 +5,8 @@ Module: `Result`<br />
 
 Converts an `Option<A>` into a `Result<A, E>`.
 
+**Details**
+
 - `Some<A>` becomes `Success<A>`
 - `None` becomes `Failure<E>` using the provided function
 - Supports both data-first and data-last (piped) usage
@@ -34,6 +36,6 @@ console.log(none)
 declare const fromOption: { <E>(onNone: () => E): <A>(self: Option<A>) => Result<A, E>; <A, E>(self: Option<A>, onNone: () => E): Result<A, E>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L447)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L471)
 
 Since v2.0.0

@@ -3,9 +3,7 @@ Module: `Ref`<br />
 
 ## Ref.getAndSet
 
-Atomically gets the current value of the Ref and sets it to the specified value.
-
-Returns the value that was in the Ref before the update.
+Atomically gets the current value of the Ref, sets it to the specified value, and returns the previous value.
 
 **Example** (Replacing a value atomically)
 
@@ -30,6 +28,6 @@ const program = Effect.gen(function*() {
 declare const getAndSet: (<A>(value: A) => (self: Ref<A>) => Effect.Effect<A>) & (<A>(self: Ref<A>, value: A) => Effect.Effect<A>)
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Ref.ts#L254)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Ref.ts#L259)
 
 Since v2.0.0

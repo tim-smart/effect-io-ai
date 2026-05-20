@@ -5,6 +5,8 @@ Module: `FileSystem`<br />
 
 Branded type for file descriptors.
 
+**Details**
+
 File descriptors are numeric handles used by the operating system
 to identify open files. The branded type ensures type safety.
 
@@ -14,6 +16,6 @@ to identify open files. The branded type ensures type safety.
 type Descriptor = Brand.Branded<number, "FileDescriptor">
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FileSystem.ts#L1092)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FileSystem.ts#L1140)
 
 Since v4.0.0

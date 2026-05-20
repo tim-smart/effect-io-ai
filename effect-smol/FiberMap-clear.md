@@ -33,6 +33,6 @@ const program = Effect.gen(function*() {
 declare const clear: <K, A, E>(self: FiberMap<K, A, E>) => Effect.Effect<void>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FiberMap.ts#L685)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FiberMap.ts#L700)
 
 Since v2.0.0

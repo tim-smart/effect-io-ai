@@ -3,15 +3,15 @@ Module: `HKT`<br />
 
 ## HKT.Kind
 
-Applies type parameters to a TypeLambda to get the concrete type.
+Applies type parameters to a `TypeLambda` to get the concrete type.
 
-This type-level function takes a TypeLambda and four type parameters,
-then "applies" them to get the actual type. It handles the variance
-correctly, ensuring contravariant parameters are used as inputs and
-covariant parameters as outputs.
+**Details**
 
-This is the core mechanism that allows HKT to work - it transforms
-abstract type constructors into concrete types by applying arguments.
+This type-level function takes a `TypeLambda` and four type parameters, then
+"applies" them to get the actual type. It handles variance correctly, ensuring
+contravariant parameters are used as inputs and covariant parameters as
+outputs. This is the core mechanism that allows HKT to transform abstract type
+constructors into concrete types by applying arguments.
 
 **Example** (Applying type lambdas)
 
@@ -70,6 +70,6 @@ type Kind<F, In, Out2, Out1, Target> = F extends {
   }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HKT.ts#L207)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HKT.ts#L208)
 
 Since v2.0.0

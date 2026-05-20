@@ -6,14 +6,17 @@ Module: `ConfigProvider`<br />
 Creates a `ConfigProvider` backed by an in-memory JavaScript value
 (typically a parsed JSON object).
 
-When to use:
-- Unit / integration tests where you want deterministic config without
-  touching the environment.
-- Embedding config directly in code or reading a JSON file.
+**When to use**
 
-Path traversal follows standard JS rules: string segments index into
-object keys, numeric segments index into arrays. Returns `undefined`
-for any path that cannot be resolved. Never fails with `SourceError`.
+Use this in unit or integration tests where you want deterministic config
+without touching the environment, or when embedding config directly in code
+or reading a JSON file.
+
+**Details**
+
+Path traversal follows standard JS rules: string segments index into object
+keys, numeric segments index into arrays. Returns `undefined` for any path
+that cannot be resolved. Never fails with `SourceError`.
 
 Primitive values (`number`, `boolean`, `bigint`) are stringified via
 `String(...)`.
@@ -48,6 +51,6 @@ const host = Config.string("host").parse(
 declare const fromUnknown: (root: unknown) => ConfigProvider
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ConfigProvider.ts#L715)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ConfigProvider.ts#L757)
 
 Since v4.0.0

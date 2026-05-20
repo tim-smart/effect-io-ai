@@ -5,6 +5,8 @@ Module: `FileSystem`<br />
 
 Enumeration of possible file system entry types.
 
+**Details**
+
 Represents the different types of entries that can exist in a file system,
 from regular files to special device files and symbolic links.
 
@@ -21,6 +23,6 @@ type Type = | "File"
     | "Unknown"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FileSystem.ts#L1103)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FileSystem.ts#L1153)
 
 Since v4.0.0

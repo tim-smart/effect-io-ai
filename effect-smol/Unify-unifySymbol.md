@@ -5,6 +5,8 @@ Module: `Unify`<br />
 
 The type of the unifySymbol.
 
+**Details**
+
 This type represents the unique symbol used for identifying unification
 behavior in Effect types. It's typically used in type-level operations
 to enable automatic type unification.
@@ -15,6 +17,6 @@ to enable automatic type unification.
 type unifySymbol = typeof unifySymbol
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Unify.ts#L41)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Unify.ts#L45)
 
 Since v2.0.0

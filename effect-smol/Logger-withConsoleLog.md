@@ -6,6 +6,8 @@ Module: `Logger`<br />
 Returns a new `Logger` that writes all output of the specified `Logger` to
 the console using `console.log`.
 
+**When to use**
+
 This is useful for taking any logger that produces string or object output
 and routing it to the console for development or debugging purposes.
 
@@ -33,6 +35,6 @@ const program = Effect.log("Hello World").pipe(
 declare const withConsoleLog: <Message, Output>(self: Logger<Message, Output>) => Logger<Message, void>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Logger.ts#L322)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Logger.ts#L329)
 
 Since v2.0.0

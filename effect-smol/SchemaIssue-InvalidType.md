@@ -6,13 +6,13 @@ Module: `SchemaIssue`<br />
 Issue produced when the runtime type of the input does not match the type
 expected by the schema (e.g. got `null` when `string` was expected).
 
-When to use:
+**When to use**
 
 - Detect basic type mismatches (wrong primitive, null where object expected,
   etc.).
 - The most common leaf issue in typical validation failures.
 
-Behaviour:
+**Details**
 
 - `ast` is the schema node that expected a different type.
 - `actual` is `Option.some(value)` when the input was present, or
@@ -53,6 +53,6 @@ declare class InvalidType { constructor(
   ) }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaIssue.ts#L551)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaIssue.ts#L553)
 
 Since v4.0.0

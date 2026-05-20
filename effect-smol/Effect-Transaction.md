@@ -5,6 +5,8 @@ Module: `Effect`<br />
 
 Service that holds the current transaction state, it includes
 
+**Details**
+
 - a journal that stores any non committed change to TxRef values
 - a retry flag to know if the transaction should be retried
 
@@ -27,6 +29,6 @@ const txEffect = Effect.gen(function*() {
 declare class Transaction
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L13641)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L13752)
 
 Since v4.0.0

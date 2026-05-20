@@ -5,6 +5,8 @@ Module: `OpenAiClient`<br />
 
 Item shapes accepted by a Responses-style `input` field.
 
+**Details**
+
 Supports input messages, output messages, tool calls, tool outputs, reasoning
 items, custom tool interactions, and item references.
 
@@ -31,6 +33,6 @@ type InputItem = | {
   | ItemReference
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/OpenAiClient.ts#L511)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/OpenAiClient.ts#L518)
 
 Since v4.0.0

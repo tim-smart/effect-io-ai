@@ -12,6 +12,8 @@ export interface Service {
   /**
    * Reference to the chat history.
    *
+   * **Details**
+   *
    * Provides direct access to the conversation history for advanced use cases
    * like custom history manipulation or inspection.
    *
@@ -33,6 +35,8 @@ export interface Service {
 
   /**
    * Exports the chat history into a structured format.
+   *
+   * **Details**
    *
    * Returns the complete conversation history as a structured object
    * that can be stored, transmitted, or processed by other systems.
@@ -58,6 +62,8 @@ export interface Service {
 
   /**
    * Exports the chat history as a JSON string.
+   *
+   * **Details**
    *
    * Provides a convenient way to serialize the entire conversation
    * for storage or transmission in JSON format.
@@ -85,6 +91,8 @@ export interface Service {
 
   /**
    * Generate text using a language model for the specified prompt.
+   *
+   * **Details**
    *
    * If a toolkit is specified, the language model will have access to tools
    * for function calling and enhanced capabilities. Both input and output
@@ -152,6 +160,8 @@ export interface Service {
   /**
    * Generate text using a language model with streaming output.
    *
+   * **Details**
+   *
    * Returns a stream of response parts that are emitted as soon as they're
    * available from the model. Supports tool calling and maintains chat history.
    *
@@ -216,6 +226,8 @@ export interface Service {
   /**
    * Generate a structured object using a language model and schema.
    *
+   * **Details**
+   *
    * Forces the model to return data that conforms to the specified schema,
    * enabling structured data extraction and type-safe responses. The
    * conversation history is maintained across calls.
@@ -261,6 +273,6 @@ export interface Service {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chat.ts#L106)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chat.ts#L108)
 
 Since v4.0.0

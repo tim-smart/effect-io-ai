@@ -3,9 +3,11 @@ Module: `Chunk`<br />
 
 ## Chunk.makeBy
 
-Return a Chunk of length n with element i initialized with f(i).
+Returns a non-empty `Chunk` of length `n` with element `i` initialized by `f(i)`.
 
-**Note**. `n` is normalized to an integer >= 1.
+**Details**
+
+`n` is normalized to an integer greater than or equal to `1`.
 
 **Example** (Generating chunks from indices)
 
@@ -22,6 +24,6 @@ console.log(Chunk.toArray(chunk)) // [0, 2, 4, 6, 8]
 declare const makeBy: { <A>(f: (i: number) => A): (n: number) => NonEmptyChunk<A>; <A>(n: number, f: (i: number) => A): NonEmptyChunk<A>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L2466)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L2483)
 
 Since v2.0.0

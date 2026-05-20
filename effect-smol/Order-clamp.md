@@ -5,12 +5,14 @@ Module: `Order`<br />
 
 Clamps a value between a minimum and a maximum according to the given order.
 
-When to use this:
+**When to use**
+
 - When you need to restrict a value to a specific range
 - When implementing bounds checking and normalization
 - When ensuring values stay within valid ranges
 
-Behavior:
+**Details**
+
 - Pure function: does not mutate inputs
 - Returns the value if it's between minimum and maximum (inclusive)
 - Returns minimum if the value is less than minimum
@@ -30,7 +32,8 @@ console.log(clamp(0)) // 1
 console.log(clamp(6)) // 5
 ```
 
-See also:
+**See**
+
 - `min` - Minimum of two values
 - `max` - Maximum of two values
 - `isBetween` - Check if a value is within a range
@@ -41,6 +44,6 @@ See also:
 declare const clamp: <A>(O: Order<A>) => { (options: { minimum: A; maximum: A; }): (self: A) => A; (self: A, options: { minimum: A; maximum: A; }): A; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Order.ts#L984)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Order.ts#L986)
 
 Since v2.0.0

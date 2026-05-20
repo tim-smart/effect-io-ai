@@ -11,6 +11,6 @@ Type identifier for `HttpClientResponse` values.
 declare const TypeId: "~effect/http/HttpClientResponse"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpClientResponse.ts#L61)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpClientResponse.ts#L67)
 
 Since v4.0.0

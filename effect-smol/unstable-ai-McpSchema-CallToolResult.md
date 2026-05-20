@@ -5,14 +5,14 @@ Module: `McpSchema`<br />
 
 The server's response to a tool call.
 
+**Details**
+
 Any errors that originate from the tool SHOULD be reported inside the result
 object, with `isError` set to true, _not_ as an MCP protocol-level error
 response. Otherwise, the LLM would not be able to see that an error occurred
-and self-correct.
-
-However, any errors in _finding_ the tool, an error indicating that the
-server does not support tool calls, or any other exceptional conditions,
-should be reported as an MCP error response.
+and self-correct. However, any errors in _finding_ the tool, an error
+indicating that the server does not support tool calls, or any other
+exceptional conditions, should be reported as an MCP error response.
 
 **Signature**
 
@@ -20,6 +20,6 @@ should be reported as an MCP error response.
 declare class CallToolResult
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L1411)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L1445)
 
 Since v4.0.0

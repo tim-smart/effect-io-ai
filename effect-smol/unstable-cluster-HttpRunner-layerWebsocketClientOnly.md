@@ -5,6 +5,8 @@ Module: `HttpRunner`<br />
 
 Client-only WebSocket runner layer.
 
+**Details**
+
 It configures runner clients to communicate over WebSocket without serving
 runner WebSocket routes.
 
@@ -14,6 +16,6 @@ runner WebSocket routes.
 declare const layerWebsocketClientOnly: Layer.Layer<Sharding.Sharding | Runners.Runners, never, Socket.WebSocketConstructor | RpcSerialization.RpcSerialization | MessageStorage | RunnerStorage | ShardingConfig.ShardingConfig>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpRunner.ts#L326)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpRunner.ts#L342)
 
 Since v4.0.0

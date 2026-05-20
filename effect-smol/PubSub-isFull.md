@@ -5,6 +5,8 @@ Module: `PubSub`<br />
 
 Returns `true` when the `PubSub` has reached its configured capacity.
 
+**Details**
+
 For unbounded PubSubs this is normally `false`.
 
 **Example** (Checking whether a PubSub is full)
@@ -40,6 +42,6 @@ const program = Effect.gen(function*() {
 declare const isFull: <A>(self: PubSub<A>) => Effect.Effect<boolean>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PubSub.ts#L658)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PubSub.ts#L666)
 
 Since v2.0.0

@@ -5,6 +5,8 @@ Module: `SchemaAST`<br />
 
 Options that control schema parsing, validation, transformation, and output behavior.
 
+**Details**
+
 Pass to `Schema.decodeUnknown`, `Schema.encode`, and related APIs to customize
 error reporting, excess property handling, output key ordering, check
 execution, and asynchronous parser concurrency.
@@ -25,31 +27,28 @@ execution, and asynchronous parser concurrency.
 ```ts
 export interface ParseOptions {
   /**
-   * The `errors` option allows you to receive all parsing errors when
-   * attempting to parse a value using a schema. By default only the first error
-   * is returned, but by setting the `errors` option to `"all"`, you can receive
-   * all errors that occurred during the parsing process. This can be useful for
-   * debugging or for providing more comprehensive error messages to the user.
+   * Controls how many parsing errors are reported.
    *
-   * default: "first"
+   * **Details**
+   *
+   * The default, `"first"`, stops at the first error. Set the option to `"all"`
+   * to collect every parsing error, which can help with debugging or with
+   * presenting more complete error messages to a user.
+   *
+   * @default "first"
    */
   readonly errors?: "first" | "all" | undefined
 
   /**
-   * When using a `Objects` to parse a value, by default any properties that
-   * are not specified in the schema will be stripped out from the output. This
-   * is because the `Objects` is expecting a specific shape for the parsed
-   * value, and any excess properties do not conform to that shape.
+   * Controls how object parsing handles keys that are not declared by the schema.
    *
-   * However, you can use the `onExcessProperty` option (default value:
-   * `"ignore"`) to trigger a parsing error. This can be particularly useful in
-   * cases where you need to detect and handle potential errors or unexpected
-   * values.
+   * **Details**
    *
-   * If you want to allow excess properties to remain, you can use
-   * `onExcessProperty` set to `"preserve"`.
+   * The default, `"ignore"`, strips unspecified properties from the output. Use
+   * `"error"` to fail when an excess property is present, or `"preserve"` to
+   * keep excess properties in the output.
    *
-   * default: "ignore"
+   * @default "ignore"
    */
   readonly onExcessProperty?: "ignore" | "error" | "preserve" | undefined
 
@@ -59,16 +58,20 @@ export interface ParseOptions {
    * important for the consuming processes or when maintaining the input order
    * enhances readability and usability.
    *
+   * **Details**
+   *
    * By default, the `propertyOrder` option is set to `"none"`. This means that
    * the internal system decides the order of keys to optimize parsing speed.
-   * The order of keys in this mode should not be considered stable, and it's
-   * recommended not to rely on key ordering as it may change in future updates
-   * without notice.
    *
    * Setting `propertyOrder` to `"original"` ensures that the keys are ordered
    * as they appear in the input during the decoding/encoding process.
    *
-   * default: "none"
+   * **Gotchas**
+   *
+   * The key order for `"none"` should not be considered stable and may change
+   * in future updates without notice.
+   *
+   * @default "none"
    */
   readonly propertyOrder?: "none" | "original" | undefined
 
@@ -81,12 +84,12 @@ export interface ParseOptions {
   /**
    * The maximum number of async effects to run concurrently.
    *
-   * Defaults to 1.
+   * @default 1
    */
   readonly concurrency?: number | "unbounded" | undefined
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L394)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L401)
 
 Since v3.10.0

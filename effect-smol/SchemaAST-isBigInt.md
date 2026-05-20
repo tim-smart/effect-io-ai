@@ -11,6 +11,6 @@ Narrows an `AST` to `BigInt`.
 declare const isBigInt: (ast: AST) => ast is BigInt
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L242)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L244)
 
 Since v4.0.0

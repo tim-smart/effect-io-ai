@@ -12,6 +12,6 @@ type Error<P> = P extends Effect<infer _A, infer _E, infer _R> ? _E extends Caus
   : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Pull.ts#L67)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Pull.ts#L69)
 
 Since v4.0.0

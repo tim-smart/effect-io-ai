@@ -5,6 +5,8 @@ Module: `DateTime`<br />
 
 Represents a `DateTime` with an associated `TimeZone`.
 
+**Details**
+
 A zoned value still represents an absolute instant through
 `epochMilliseconds`, while the time zone is used for wall-clock parts,
 formatting, and zone-aware transformations.
@@ -22,6 +24,6 @@ export interface Zoned extends DateTime.Proto {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L104)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L108)
 
 Since v3.6.0

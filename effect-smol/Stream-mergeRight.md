@@ -6,6 +6,8 @@ Module: `Stream`<br />
 Merges this stream and the specified stream together, emitting only the
 values from the right stream while the left stream runs for its effects.
 
+**Details**
+
 The merged stream ends when the right stream completes, interrupting the
 left stream. Failures from the left stream still fail the merged stream.
 
@@ -36,6 +38,6 @@ Effect.runPromise(program)
 declare const mergeRight: { <AR, ER, RR>(right: Stream<AR, ER, RR>): <AL, EL, RL>(left: Stream<AL, EL, RL>) => Stream<AR, ER | EL, RR | RL>; <AL, EL, RL, AR, ER, RR>(left: Stream<AL, EL, RL>, right: Stream<AR, ER, RR>): Stream<AR, EL | ER, RL | RR>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L3242)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L3289)
 
 Since v2.0.0

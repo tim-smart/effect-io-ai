@@ -5,7 +5,8 @@ Module: `Schema`<br />
 
 Options for `makeEffect`, `make`, and Class constructors.
 
-When to use:
+**When to use**
+
 - Pass `disableChecks: true` to skip validation when you trust the data.
 - Pass `parseOptions` to control error reporting behavior.
 
@@ -29,6 +30,6 @@ export interface MakeOptions {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L187)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L188)
 
 Since v3.13.4

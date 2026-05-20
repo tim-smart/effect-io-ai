@@ -13,6 +13,8 @@ export interface ToJsonSchemaOptions {
    * Controls how additional properties are handled while resolving the JSON
    * schema.
    *
+   * **Details**
+   *
    * Possible values include:
    * - `false`: Disallow additional properties (default)
    * - `true`: Allow additional properties
@@ -27,6 +29,6 @@ export interface ToJsonSchemaOptions {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L11709)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L12078)
 
 Since v4.0.0

@@ -5,6 +5,8 @@ Module: `DateTime`<br />
 
 Get the milliseconds since the Unix epoch of a `DateTime`.
 
+**Details**
+
 This returns the UTC timestamp regardless of any time zone information.
 
 **Example** (Reading epoch milliseconds)
@@ -24,6 +26,6 @@ console.log(epochMillis) // 1704067200000
 declare const toEpochMillis: (self: DateTime) => number
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L1525)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L1609)
 
 Since v3.6.0

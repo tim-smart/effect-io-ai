@@ -6,13 +6,13 @@ Module: `SchemaIssue`<br />
 Issue produced when an input object or tuple contains a key/index not
 declared by the schema.
 
-When to use:
+**When to use**
 
 - Detect excess properties during strict struct/tuple validation.
 - Typically found inside a `Pointer` that indicates which key was
   unexpected.
 
-Behaviour:
+**Details**
 
 - `actual` is the raw value at the unexpected key (plain `unknown`).
 - `ast` is the schema that was being validated against.
@@ -38,6 +38,6 @@ declare class UnexpectedKey { constructor(
   ) }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaIssue.ts#L429)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaIssue.ts#L431)
 
 Since v4.0.0

@@ -10,7 +10,7 @@ unchanged.
 
 - Discarding the value while preserving presence/absence
 
-**Behavior**
+**Details**
 
 - `Some` → `Some(undefined)`
 - `None` → `None`
@@ -37,6 +37,6 @@ console.log(Option.asVoid(Option.none()))
 declare const asVoid: <_>(self: Option<_>) => Option<void>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L1256)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L1260)
 
 Since v2.0.0

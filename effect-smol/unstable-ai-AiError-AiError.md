@@ -5,12 +5,14 @@ Module: `AiError`<br />
 
 Top-level AI error wrapper using the `reason` pattern.
 
-This error wraps semantic error reasons and provides:
-- `module` and `method` context for where the error occurred
-- `reason` field containing the semantic error type
-- Delegated `isRetryable` and `retryAfter` to the underlying reason
+**When to use**
 
-Use with `Effect.catchReason` for ergonomic error handling:
+Use with `Effect.catchReason` for ergonomic error handling.
+
+**Details**
+
+This error stores `module` and `method` context, the semantic `reason`, and
+delegates `isRetryable` and `retryAfter` to the underlying reason.
 
 **Example** (Handling an AI error by tag)
 
@@ -37,6 +39,6 @@ const handled = aiOperation.pipe(
 declare class AiError
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AiError.ts#L1452)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AiError.ts#L1501)
 
 Since v4.0.0

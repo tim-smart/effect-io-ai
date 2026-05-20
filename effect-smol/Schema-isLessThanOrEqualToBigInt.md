@@ -6,7 +6,9 @@ Module: `Schema`<br />
 Validates that a BigInt is less than or equal to the specified value
 (inclusive).
 
-**Arbitrary**
+**Details**
+
+Arbitrary:
 
 When generating test data with fast-check, this applies a `max` constraint
 to ensure generated BigInt values are less than or equal to the specified
@@ -18,6 +20,6 @@ value.
 declare const isLessThanOrEqualToBigInt: (maximum: bigint, annotations?: Annotations.Filter) => AST.Filter<bigint>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L6784)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L7000)
 
 Since v4.0.0

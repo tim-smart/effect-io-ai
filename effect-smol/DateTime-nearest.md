@@ -5,6 +5,8 @@ Module: `DateTime`<br />
 
 Converts a `DateTime` to the nearest given `part`.
 
+**Details**
+
 If the part is `week`, the `weekStartsOn` option can be used to specify the
 day of the week that the week starts on. The default is 0 (Sunday).
 
@@ -26,6 +28,6 @@ DateTime.makeUnsafe("2024-01-01T12:01:00Z").pipe(
 declare const nearest: { (part: DateTime.UnitSingular, options?: { readonly weekStartsOn?: 0 | 1 | 2 | 3 | 4 | 5 | 6 | undefined; }): <A extends DateTime>(self: A) => A; <A extends DateTime>(self: A, part: DateTime.UnitSingular, options?: { readonly weekStartsOn?: 0 | 1 | 2 | 3 | 4 | 5 | 6 | undefined; }): A; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L2272)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L2387)
 
 Since v3.6.0

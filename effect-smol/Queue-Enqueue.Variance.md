@@ -5,6 +5,8 @@ Module: `Queue`<br />
 
 Type-level variance marker for `Enqueue`.
 
+**Details**
+
 `Enqueue` is contravariant in both its offered value type `A` and failure
 type `E`, because values and failures flow into the queue through this
 handle.
@@ -18,6 +20,6 @@ export interface Variance<A, E> {
   }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Queue.ts#L176)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Queue.ts#L180)
 
 Since v4.0.0

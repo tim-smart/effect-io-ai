@@ -5,6 +5,8 @@ Module: `DateTime`<br />
 
 Checks if a `DateTime` is in the past compared to the current time.
 
+**Details**
+
 This is a synchronous version that uses `Date.now()` directly.
 
 **Example** (Checking past DateTime values unsafely)
@@ -25,6 +27,6 @@ console.log(DateTime.isPastUnsafe(now)) // false
 declare const isPastUnsafe: (self: DateTime) => boolean
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L1405)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L1479)
 
 Since v4.0.0

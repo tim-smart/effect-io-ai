@@ -22,6 +22,6 @@ const program = Effect.gen(function*() {
 declare const next: Effect.Effect<number, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Random.ts#L90)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Random.ts#L92)
 
 Since v2.0.0

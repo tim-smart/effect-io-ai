@@ -5,10 +5,12 @@ Module: `Predicate`<br />
 
 Creates a predicate that returns `true` when both predicates agree.
 
-When to use:
+**When to use**
+
 - You want to check equivalence of two predicates.
 
-Behavior:
+**Details**
+
 - Pure; does not mutate input.
 - Returns `true` when both results are equal.
 
@@ -23,7 +25,9 @@ const same = Predicate.eqv(isEven, isEven)
 console.log(same(3))
 ```
 
-See also: `xor`
+**See**
+
+- `xor`
 
 **Signature**
 
@@ -31,6 +35,6 @@ See also: `xor`
 declare const eqv: { <A>(that: Predicate<A>): (self: Predicate<A>) => Predicate<A>; <A>(self: Predicate<A>, that: Predicate<A>): Predicate<A>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L1650)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L1746)
 
 Since v2.0.0

@@ -17,6 +17,6 @@ type PartEncoded = | TextPartEncoded
   | ToolApprovalRequestPartEncoded
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L141)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L139)
 
 Since v4.0.0

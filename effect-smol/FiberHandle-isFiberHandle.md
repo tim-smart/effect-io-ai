@@ -3,9 +3,8 @@ Module: `FiberHandle`<br />
 
 ## FiberHandle.isFiberHandle
 
-Returns `true` if a value is a `FiberHandle`.
-
-This is a type guard that checks for the `FiberHandle` runtime marker.
+Returns `true` if a value is a `FiberHandle` by checking for the
+`FiberHandle` runtime marker.
 
 **Example** (Checking fiber handles)
 
@@ -26,6 +25,6 @@ Effect.gen(function*() {
 declare const isFiberHandle: (u: unknown) => u is FiberHandle
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FiberHandle.ts#L118)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FiberHandle.ts#L116)
 
 Since v2.0.0

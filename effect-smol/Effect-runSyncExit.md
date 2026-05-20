@@ -6,7 +6,7 @@ Module: `Effect`<br />
 Runs an effect synchronously and returns the result as an `Exit` type, which
 represents the outcome (success or failure) of the effect.
 
-**When to Use**
+**When to use**
 
 Use `runSyncExit` to find out whether an effect succeeded or failed,
 including any defects, without dealing with asynchronous operations.
@@ -76,6 +76,6 @@ console.log(Effect.runSyncExit(Effect.promise(() => Promise.resolve(1))))
 declare const runSyncExit: <A, E>(effect: Effect<A, E>) => Exit.Exit<A, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L8601)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L8690)
 
 Since v2.0.0

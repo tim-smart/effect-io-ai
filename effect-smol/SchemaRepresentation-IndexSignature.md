@@ -3,10 +3,13 @@ Module: `SchemaRepresentation`<br />
 
 ## SchemaRepresentation.IndexSignature
 
-An index signature (e.g. `[key: string]: number`) within an `Objects`.
+An index signature, such as `[key: string]: number`, within an
+`Objects`.
 
-- `parameter` is the key type representation.
-- `type` is the value type representation.
+**Details**
+
+`parameter` is the key type representation. `type` is the value type
+representation.
 
 **See**
 
@@ -21,6 +24,6 @@ export interface IndexSignature {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaRepresentation.ts#L458)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaRepresentation.ts#L486)
 
 Since v4.0.0

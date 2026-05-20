@@ -5,6 +5,8 @@ Module: `EventLog`<br />
 
 Builder for the handlers associated with an `EventGroup`.
 
+**Details**
+
 The `Events` type parameter tracks the event tags that still need handlers, and
 each call to `handle` records a handler while accumulating any required
 services.
@@ -44,6 +46,6 @@ export interface Handlers<
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventLog.ts#L267)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventLog.ts#L273)
 
 Since v4.0.0

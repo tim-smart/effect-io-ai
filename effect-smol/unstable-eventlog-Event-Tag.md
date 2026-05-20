@@ -17,6 +17,6 @@ type Tag<A> = A extends Event<
   never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Event.ts#L135)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Event.ts#L141)
 
 Since v4.0.0

@@ -5,6 +5,8 @@ Module: `McpSchema`<br />
 
 Schema wrapper used for resource URI template parameters.
 
+**Details**
+
 A `Param` behaves like the wrapped schema while carrying the parameter name
 used for template compilation and completion lookup.
 
@@ -37,6 +39,6 @@ export interface Param<Name extends string, S extends Schema.Top> extends
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L2313)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L2365)
 
 Since v4.0.0

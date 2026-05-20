@@ -6,6 +6,7 @@ Module: `Schema`<br />
 Computes the decoded tuple type produced by `TemplateLiteralParser`.
 
 **Details**
+
 Literal parts contribute their literal value to the tuple. Schema parts
 contribute their decoded `Type`.
 
@@ -21,6 +22,6 @@ type Type<Parts> = Parts extends readonly [infer Head, ...infer Tail] ? readonly
     : []
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L2074)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L2123)
 
 Since v3.10.0

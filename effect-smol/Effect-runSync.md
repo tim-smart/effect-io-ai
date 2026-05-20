@@ -5,7 +5,7 @@ Module: `Effect`<br />
 
 Executes an effect synchronously and returns its success value.
 
-**When to Use**
+**When to use**
 
 Use `runSync` only for effects that can complete synchronously.
 
@@ -14,11 +14,6 @@ Use `runSync` only for effects that can complete synchronously.
 If the effect fails, dies, is interrupted, or performs asynchronous work,
 `runSync` throws a `FiberFailure` instead of returning a value. Use
 `runSyncExit` when you want the failure captured as an `Exit`.
-
-**See**
-
-- `runSyncExit` for a version that returns an `Exit` type instead of
-throwing an error.
 
 **Example** (Running a synchronous effect)
 
@@ -61,12 +56,17 @@ try {
 // (FiberFailure) AsyncFiberException: Fiber #0 cannot be resolved synchronously. This is caused by using runSync on an effect that performs async work
 ```
 
+**See**
+
+- `runSyncExit` for a version that returns an `Exit` type instead of
+throwing an error.
+
 **Signature**
 
 ```ts
 declare const runSync: <A, E>(effect: Effect<A, E>) => A
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L8494)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L8583)
 
 Since v2.0.0

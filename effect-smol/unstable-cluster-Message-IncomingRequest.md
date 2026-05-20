@@ -6,6 +6,8 @@ Module: `Message`<br />
 Incoming persisted request whose payload has not yet been decoded with the RPC
 schema.
 
+**Details**
+
 It carries the last reply that was sent and a callback for persisting encoded
 replies.
 
@@ -15,6 +17,6 @@ replies.
 declare class IncomingRequest<R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Message.ts#L97)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Message.ts#L105)
 
 Since v4.0.0

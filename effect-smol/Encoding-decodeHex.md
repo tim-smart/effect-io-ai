@@ -5,6 +5,8 @@ Module: `Encoding`<br />
 
 Decodes a hexadecimal string into bytes.
 
+**Details**
+
 Returns `Result.succeed` with a `Uint8Array` when decoding succeeds, or
 `Result.fail` with an `EncodingError` when the input has an odd length or
 contains invalid hex characters.
@@ -26,6 +28,6 @@ if (Result.isSuccess(result)) {
 declare const decodeHex: (str: string) => Result.Result<Uint8Array, EncodingError>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Encoding.ts#L337)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Encoding.ts#L351)
 
 Since v2.0.0

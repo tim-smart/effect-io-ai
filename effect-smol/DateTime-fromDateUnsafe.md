@@ -5,6 +5,8 @@ Module: `DateTime`<br />
 
 Create a `DateTime` from a `Date`.
 
+**Details**
+
 If the `Date` is invalid, an `IllegalArgumentError` will be thrown.
 
 **Example** (Creating DateTime values from Dates)
@@ -24,6 +26,6 @@ console.log(DateTime.formatIso(dateTime)) // "2024-01-01T12:00:00.000Z"
 declare const fromDateUnsafe: (date: Date) => Utc
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L572)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L610)
 
 Since v4.0.0

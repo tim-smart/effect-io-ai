@@ -5,6 +5,8 @@ Module: `Record`<br />
 
 Checks whether the first record is a subrecord of the second record.
 
+**Details**
+
 Returns `true` when every key and value in `self` is also present in `that`.
 Values are compared with Effect equality via `Equal.asEquivalence()`.
 
@@ -30,6 +32,6 @@ assert.deepStrictEqual(
 declare const isSubrecord: { <K extends string, A>(that: ReadonlyRecord<K, A>): (self: ReadonlyRecord<K, A>) => boolean; <K extends string, A>(self: ReadonlyRecord<K, A>, that: ReadonlyRecord<K, A>): boolean; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Record.ts#L1109)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Record.ts#L1117)
 
 Since v2.0.0

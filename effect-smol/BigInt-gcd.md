@@ -22,6 +22,6 @@ assert.deepStrictEqual(BigInt.gcd(16n, 24n), 8n)
 declare const gcd: { (that: bigint): (self: bigint) => bigint; (self: bigint, that: bigint): bigint; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigInt.ts#L490)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigInt.ts#L500)
 
 Since v2.0.0

@@ -5,12 +5,14 @@ Module: `Formatter`<br />
 
 Safely stringifies a value to JSON, silently dropping circular references.
 
-When to use:
+**When to use**
+
 - You need valid JSON output (unlike `format`).
 - The input may contain circular references and you want them silently
   omitted rather than throwing a `TypeError`.
 
-Behavior:
+**Details**
+
 - Does not mutate input.
 - Uses `JSON.stringify` internally with a replacer that tracks the
   current object ancestry.
@@ -20,8 +22,6 @@ Behavior:
 - Types not supported by JSON (`BigInt`, `Symbol`, `undefined`,
   functions) follow standard `JSON.stringify` behavior (omitted or
   `null` in arrays).
-
-Options:
 - `space` — indentation unit (number of spaces, or a string like
   `"\t"`). Defaults to `0` (compact).
 
@@ -57,7 +57,10 @@ console.log(Formatter.formatJson({ name: "Alice", age: 30 }, { space: 2 }))
 // }
 ```
 
-See also: `format`, `Formatter`
+**See**
+
+- `format`
+- `Formatter`
 
 **Signature**
 
@@ -65,6 +68,6 @@ See also: `format`, `Formatter`
 declare const formatJson: (input: unknown, options?: { readonly space?: number | string | undefined; }) => string
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Formatter.ts#L348)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Formatter.ts#L347)
 
 Since v4.0.0

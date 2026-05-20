@@ -6,10 +6,12 @@ Module: `Metric`<br />
 Creates a `Summary` metric that records observations and calculates quantiles
 which takes a value as input and uses the current time.
 
+**When to use**
+
 Summary metrics are most suitable for providing statistical information about
 a set of values, including quantiles.
 
-**Options**
+**Details**
 
 - `description` - An description of the `Summary`.
 - `attributes`  - The attributes to associate with the `Summary`.
@@ -86,6 +88,6 @@ const program = Effect.gen(function*() {
 declare const summary: (name: string, options: { readonly description?: string | undefined; readonly attributes?: Metric.Attributes | undefined; readonly maxAge: Duration.Input; readonly maxSize: number; readonly quantiles: ReadonlyArray<number>; }) => Summary<number>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Metric.ts#L2550)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Metric.ts#L2574)
 
 Since v2.0.0

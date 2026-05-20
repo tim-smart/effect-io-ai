@@ -5,6 +5,8 @@ Module: `Telemetry`<br />
 
 A function that can transform OpenTelemetry spans based on AI operation data.
 
+**Details**
+
 Span transformers receive the complete request/response context from AI operations
 and can add custom telemetry attributes, metrics, or other observability data.
 
@@ -39,6 +41,6 @@ export interface SpanTransformer {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Telemetry.ts#L484)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Telemetry.ts#L501)
 
 Since v4.0.0

@@ -31,6 +31,6 @@ Effect.gen(function*() {
 declare const get: <A, E>(self: FiberHandle<A, E>) => Effect.Effect<Option.Option<Fiber.Fiber<A, E>>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FiberHandle.ts#L476)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FiberHandle.ts#L483)
 
 Since v2.0.0

@@ -5,10 +5,12 @@ Module: `Schema`<br />
 
 Validates that all items in an array are unique according to Effect equality.
 
-**JSON Schema**
+**Details**
+
+JSON Schema:
 This check corresponds to the `uniqueItems: true` constraint in JSON Schema.
 
-**Arbitrary**
+Arbitrary:
 When generating test data with fast-check, this applies a comparator based on
 Effect equality to ensure generated arrays contain only unique items.
 
@@ -18,6 +20,6 @@ Effect equality to ensure generated arrays contain only unique items.
 declare const isUnique: <T>(annotations?: Annotations.Filter) => AST.Filter<ReadonlyArray<T>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L7355)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L7597)
 
 Since v4.0.0

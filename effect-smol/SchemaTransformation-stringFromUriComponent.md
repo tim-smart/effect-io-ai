@@ -6,11 +6,13 @@ Module: `SchemaTransformation`<br />
 Decodes a URI component encoded string into a UTF-8 string and encodes a
 UTF-8 string into a URI component encoded string.
 
-When to use this:
+**When to use**
+
 - Storing structured data in URL query parameters or fragments.
 - Composing with `Schema.parseJson` to round-trip JSON through a URL.
 
-Behavior:
+**Details**
+
 - Decode: calls `decodeURIComponent`. Fails if the input contains malformed
   percent-encoding sequences.
 - Encode: calls `encodeURIComponent`.
@@ -25,7 +27,8 @@ const schema = Schema.String.pipe(
 )
 ```
 
-See also:
+**See**
+
 - `stringFromBase64String`
 - `Schema.StringFromUriComponent` - a ready-made schema wrapping this transformation.
 
@@ -35,6 +38,6 @@ See also:
 declare const stringFromUriComponent: Transformation<string, string, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L1499)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L1544)
 
 Since v4.0.0

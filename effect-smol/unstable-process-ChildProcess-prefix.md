@@ -5,6 +5,8 @@ Module: `ChildProcess`<br />
 
 Prefix a command with another command.
 
+**Details**
+
 For pipelines, only the leftmost command is prefixed.
 
 **Example** (Prefixing commands)
@@ -27,6 +29,6 @@ const prefixed = command.pipe(
 declare const prefix: { (command: string, args?: ReadonlyArray<string>): (self: Command) => Command; (templates: TemplateStringsArray, ...expressions: ReadonlyArray<TemplateExpression>): (self: Command) => Command; (self: Command, command: string, args?: ReadonlyArray<string>): Command; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ChildProcess.ts#L713)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ChildProcess.ts#L734)
 
 Since v4.0.0

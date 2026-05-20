@@ -3,9 +3,7 @@ Module: `Console`<br />
 
 ## Console.log
 
-Outputs a message to the console.
-
-This is the most commonly used console method for general purpose logging.
+Outputs a general-purpose message to the console for ordinary logging.
 
 **Example** (Writing log messages)
 
@@ -25,6 +23,6 @@ const program = Effect.gen(function*() {
 declare const log: (...args: ReadonlyArray<any>) => Effect.Effect<void>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Console.ts#L482)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Console.ts#L447)
 
 Since v2.0.0

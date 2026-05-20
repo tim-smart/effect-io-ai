@@ -5,7 +5,8 @@ Module: `SchemaGetter`<br />
 
 Capitalizes the first character of a string.
 
-Behavior:
+**Details**
+
 - Pure, delegates to `String.capitalize`.
 
 **Example** (Capitalize string)
@@ -22,6 +23,6 @@ const cap = SchemaGetter.capitalize<string>()
 declare const capitalize: <E extends string>() => Getter<string, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L878)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L902)
 
 Since v4.0.0

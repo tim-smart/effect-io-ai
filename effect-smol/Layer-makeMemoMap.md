@@ -19,7 +19,7 @@ const program = Effect.gen(function*() {
   const memoMap = yield* Layer.makeMemoMap
   const scope = yield* Effect.scope
 
-  const dbLayer = Layer.succeed(Database)({
+  const dbLayer = Layer.succeed(Database, {
     query: Effect.fn("Database.query")((sql: string) => Effect.succeed("result"))
   })
   const context = yield* Layer.buildWithMemoMap(dbLayer, memoMap, scope)
@@ -34,6 +34,6 @@ const program = Effect.gen(function*() {
 declare const makeMemoMap: Effect<MemoMap, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L472)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L496)
 
 Since v2.0.0

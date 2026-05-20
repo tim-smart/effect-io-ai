@@ -5,6 +5,8 @@ Module: `FileSystem`<br />
 
 Creates a `Size` representing mebibytes (1024² bytes).
 
+**Details**
+
 Converts a number of mebibytes to the equivalent size in bytes.
 Uses binary mebibytes (1,048,576 bytes) rather than decimal megabytes.
 
@@ -38,6 +40,6 @@ const program = Effect.gen(function*() {
 declare const MiB: (n: number) => Size
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FileSystem.ts#L528)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FileSystem.ts#L554)
 
 Since v4.0.0

@@ -6,6 +6,8 @@ Module: `Schema`<br />
 Widens a schema's type to the fully-parameterized `Bottom` interface,
 making all 14 type parameters visible to TypeScript.
 
+**Details**
+
 Normally, concrete schema interfaces (e.g. `Schema<string>`) hide most type
 parameters. `revealBottom` is useful when writing generic utilities that need
 to inspect or propagate the complete set of type parameters.
@@ -32,6 +34,6 @@ type E = typeof bottom["Encoded"]  // string
 declare const revealBottom: <S extends Top>(bottom: S) => Bottom<S["Type"], S["Encoded"], S["DecodingServices"], S["EncodingServices"], S["ast"], S["Rebuild"], S["~type.make.in"], S["Iso"], S["~type.parameters"], S["~type.make"], S["~type.mutability"], S["~type.optionality"], S["~type.constructor.default"], S["~encoded.mutability"], S["~encoded.optionality"]>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L436)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L444)
 
 Since v4.0.0

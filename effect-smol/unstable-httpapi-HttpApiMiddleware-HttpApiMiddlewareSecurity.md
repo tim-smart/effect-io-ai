@@ -5,6 +5,8 @@ Module: `HttpApiMiddleware`<br />
 
 Server-side middleware implementations for one or more security schemes.
 
+**Details**
+
 Each property handles the credential decoded for that scheme and wraps the
 endpoint response effect with the middleware's declared requirements and errors.
 
@@ -27,6 +29,6 @@ type HttpApiMiddlewareSecurity<Security, Provides, E, Requires> = {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiMiddleware.ts#L93)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiMiddleware.ts#L97)
 
 Since v4.0.0

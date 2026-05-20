@@ -5,7 +5,7 @@ Module: `Request`<br />
 
 Variance marker carried by every `Request`.
 
-**Notes**
+**Details**
 
 This marker preserves the success, error, and service requirement types for
 Effect's type-level machinery. Users normally get it by extending `Request`.

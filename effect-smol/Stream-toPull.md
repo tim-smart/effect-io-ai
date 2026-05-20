@@ -5,6 +5,8 @@ Module: `Stream`<br />
 
 Returns a scoped pull for manually consuming the stream's output chunks.
 
+**Details**
+
 The pull fails with `Cause.Done` when the stream ends and with the stream
 error on failure.
 
@@ -33,6 +35,6 @@ Effect.runPromise(program)
 declare const toPull: <A, E, R>(self: Stream<A, E, R>) => Effect.Effect<Pull.Pull<Arr.NonEmptyReadonlyArray<A>, E>, never, R | Scope.Scope>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L10589)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L10737)
 
 Since v2.0.0

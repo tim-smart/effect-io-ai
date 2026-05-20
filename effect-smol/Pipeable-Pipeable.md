@@ -5,6 +5,8 @@ Module: `Pipeable`<br />
 
 Interface for values that support method-style `pipe` composition.
 
+**Details**
+
 Calling `value.pipe(f, g, h)` passes the value through each function from
 left to right, returning the final result. Many Effect data types implement
 this so operations can be chained without nesting function calls.
@@ -508,6 +510,6 @@ export interface Pipeable {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Pipeable.ts#L48)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Pipeable.ts#L50)
 
 Since v2.0.0

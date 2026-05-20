@@ -5,7 +5,9 @@ Module: `Newtype`<br />
 
 Extracts the carrier (underlying) type from a newtype.
 
-- Useful when you need to refer to the wrapped type in generic utilities.
+**When to use**
+
+Use this when you need to refer to the wrapped type in generic utilities.
 
 **Signature**
 
@@ -13,6 +15,6 @@ Extracts the carrier (underlying) type from a newtype.
 type Carrier<N> = N extends Newtype<infer _Key, infer Carrier> ? Carrier : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Newtype.ts#L146)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Newtype.ts#L155)
 
 Since v4.0.0

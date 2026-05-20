@@ -5,6 +5,8 @@ Module: `Config`<br />
 
 Creates a config for a port number (integer in 1–65535).
 
+**Details**
+
 Shortcut for `Config.schema(Config.Port, name)`.
 
 **Example** (Reading a port)
@@ -35,6 +37,6 @@ Effect.runSync(
 declare const port: (name?: string) => Config<number>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Config.ts#L1097)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Config.ts#L1169)
 
 Since v3.16.0

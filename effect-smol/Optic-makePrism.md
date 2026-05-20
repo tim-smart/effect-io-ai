@@ -5,11 +5,13 @@ Module: `Optic`<br />
 
 Creates a `Prism` from a fallible getter and an infallible setter.
 
-When to use:
+**When to use**
+
 - Reading can fail (the part may not exist in `S`), but building `S`
   from `A` always succeeds.
 
-Behavior:
+**Details**
+
 - Does not mutate inputs.
 - `getResult` should return `Result.fail(message)` on mismatch.
 
@@ -44,6 +46,6 @@ console.log(numeric.set(42))
 declare const makePrism: <S, A>(getResult: (s: S) => Result.Result<A, string>, set: (a: A) => S) => Prism<S, A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Optic.ts#L348)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Optic.ts#L360)
 
 Since v4.0.0

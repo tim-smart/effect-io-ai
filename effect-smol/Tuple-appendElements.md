@@ -5,9 +5,10 @@ Module: `Tuple`<br />
 
 Concatenates two tuples into a single tuple.
 
-- The result type is `[...T1, ...T2]`, preserving all element types from
-  both tuples.
-- Does not mutate either input; returns a fresh tuple.
+**Details**
+
+The result type is `[...T1, ...T2]`, preserving all element types from both
+tuples. Neither input tuple is mutated; a fresh tuple is returned.
 
 **Example** (Concatenating tuples)
 
@@ -28,6 +29,6 @@ console.log(result) // [1, 2, "a", "b"]
 declare const appendElements: { <const T2 extends ReadonlyArray<unknown>>(that: T2): <const T1 extends ReadonlyArray<unknown>>(self: T1) => [...T1, ...T2]; <const T1 extends ReadonlyArray<unknown>, const T2 extends ReadonlyArray<unknown>>(self: T1, that: T2): [...T1, ...T2]; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tuple.ts#L276)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tuple.ts#L294)
 
 Since v4.0.0

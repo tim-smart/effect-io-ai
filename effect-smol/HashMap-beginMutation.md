@@ -5,6 +5,8 @@ Module: `HashMap`<br />
 
 Creates a transient mutable `HashMap` for efficient batched updates.
 
+**Details**
+
 Apply updates to the returned map, then call `endMutation` to finish the
 mutation window and use the result as an immutable `HashMap`.
 
@@ -34,6 +36,6 @@ console.log(HashMap.size(result)) // 2
 declare const beginMutation: <K, V>(self: HashMap<K, V>) => HashMap<K, V>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashMap.ts#L767)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashMap.ts#L774)
 
 Since v2.0.0

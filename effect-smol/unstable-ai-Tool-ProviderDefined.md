@@ -6,6 +6,8 @@ Module: `Tool`<br />
 A provider-defined tool is a tool which is built into a large language model
 provider (e.g. web search, code execution).
 
+**Details**
+
 These tools are executed by the large language model provider rather than
 by your application. However, they can optionally require custom handlers
 implemented in your application to process provider generated results.
@@ -91,6 +93,6 @@ export interface ProviderDefined<
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tool.ts#L381)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tool.ts#L401)
 
 Since v4.0.0

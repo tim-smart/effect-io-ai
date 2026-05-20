@@ -6,6 +6,7 @@ Module: `Schema`<br />
 Iso representation used for `Option` schemas.
 
 **Details**
+
 `None` is represented as `{ _tag: "None" }`, while `Some` is represented as
 `{ _tag: "Some", value }` using the wrapped schema's `Iso` type.
 
@@ -16,6 +17,6 @@ type OptionIso<A> = | { readonly _tag: "None" }
   | { readonly _tag: "Some"; readonly value: A["Iso"] }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L7459)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L7702)
 
 Since v4.0.0

@@ -20,6 +20,6 @@ console.log(record) // { a: "value", b: "value" }
 declare const Record: <const Keys extends ReadonlyArray<string | symbol>, Value>(keys: Keys, value: Value) => Record<Keys[number], Value>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Struct.ts#L958)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Struct.ts#L1046)
 
 Since v4.0.0

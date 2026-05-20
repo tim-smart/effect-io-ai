@@ -5,6 +5,8 @@ Module: `Event`<br />
 
 Tagged payload value for an event definition.
 
+**Details**
+
 The result contains `_tag` set to the event tag and `payload` set to the
 decoded payload value.
 
@@ -23,6 +25,6 @@ type TaggedPayload<A> = A extends Event<
   : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Event.ts#L225)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Event.ts#L233)
 
 Since v4.0.0

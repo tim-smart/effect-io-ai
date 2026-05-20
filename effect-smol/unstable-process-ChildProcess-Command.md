@@ -3,10 +3,7 @@ Module: `ChildProcess`<br />
 
 ## ChildProcess.Command
 
-A command that can be executed as a child process.
-
-Commands are built using `make` and can be combined using `pipeTo`.
-They are executed using `exec` or `spawn`.
+A command that can be built using `make`, combined using `pipeTo`, and executed using `exec` or `spawn`.
 
 **Signature**
 
@@ -15,6 +12,6 @@ type Command = | StandardCommand
   | PipedCommand
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ChildProcess.ts#L67)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ChildProcess.ts#L64)
 
 Since v4.0.0

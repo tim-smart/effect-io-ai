@@ -36,6 +36,6 @@ const delayedResolver2 = RequestResolver.setDelay(resolver, 100)
 declare const setDelay: { (duration: Duration.Input): <A extends Request.Any>(self: RequestResolver<A>) => RequestResolver<A>; <A extends Request.Any>(self: RequestResolver<A>, duration: Duration.Input): RequestResolver<A>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RequestResolver.ts#L614)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RequestResolver.ts#L616)
 
 Since v4.0.0

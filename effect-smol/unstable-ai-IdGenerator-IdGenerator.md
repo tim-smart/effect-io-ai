@@ -5,6 +5,8 @@ Module: `IdGenerator`<br />
 
 The `IdGenerator` service tag for dependency injection.
 
+**Details**
+
 This tag is used to provide and access ID generation functionality throughout
 the application. It follows Effect's standard service pattern for type-safe
 dependency injection.
@@ -28,6 +30,6 @@ const useIdGenerator = Effect.gen(function*() {
 declare class IdGenerator
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/IdGenerator.ts#L80)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/IdGenerator.ts#L82)
 
 Since v4.0.0

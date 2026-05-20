@@ -6,6 +6,8 @@ Module: `Stream`<br />
 Structural encoding used by `Variance` to record each `Stream` type
 parameter's variance.
 
+**Details**
+
 `_A`, `_E`, and `_R` are covariant markers.
 
 **Signature**
@@ -18,6 +20,6 @@ export interface VarianceStruct<out A, out E, out R> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L214)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L220)
 
 Since v3.4.0

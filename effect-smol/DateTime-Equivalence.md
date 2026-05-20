@@ -5,6 +5,8 @@ Module: `DateTime`<br />
 
 An `Equivalence` for comparing two `DateTime` values for equality.
 
+**Details**
+
 Two `DateTime` values are considered equivalent if they represent the same
 point in time, regardless of their time zone.
 
@@ -27,6 +29,6 @@ console.log(DateTime.Equivalence(utc, zoned)) // true
 declare const Equivalence: Equ.Equivalence<DateTime>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L488)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L520)
 
 Since v3.6.0

@@ -5,11 +5,13 @@ Module: `SchemaGetter`<br />
 
 Creates a getter that applies a fallible, effectful transformation to present values.
 
-Use this when:
+**When to use**
+
 - The transformation may fail (e.g. parsing, validation).
 - The transformation needs Effect services or is async.
 
-Behavior:
+**Details**
+
 - Skips `None` inputs — only called when a value is present.
 - On success, wraps the result in `Some`.
 - On failure, propagates the `Issue`.
@@ -29,9 +31,10 @@ const safeParseInt = SchemaGetter.transformOrFail<number, string>(
 )
 ```
 
-See also:
-- `transform` — when transformation cannot fail
-- `onSome` — when you need full `Option` control over the output
+**See**
+
+- `transform` - when transformation cannot fail
+- `onSome` - when you need full `Option` control over the output
 
 **Signature**
 
@@ -39,6 +42,6 @@ See also:
 declare const transformOrFail: <T, E, R = never>(f: (e: E, options: AST.ParseOptions) => Effect.Effect<T, Issue.Issue, R>) => Getter<T, E, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L598)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L610)
 
 Since v4.0.0

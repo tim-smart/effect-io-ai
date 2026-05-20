@@ -5,6 +5,8 @@ Module: `Redacted`<br />
 
 Returns `true` if a value is a `Redacted` wrapper.
 
+**Details**
+
 When this function returns `true`, TypeScript narrows the value to
 `Redacted<unknown>`.
 
@@ -26,6 +28,6 @@ console.log(Redacted.isRedacted(plainString)) // false
 declare const isRedacted: (u: unknown) => u is Redacted<unknown>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Redacted.ts#L126)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Redacted.ts#L132)
 
 Since v3.3.0

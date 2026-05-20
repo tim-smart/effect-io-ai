@@ -5,8 +5,9 @@ Module: `TestRunner`<br />
 
 An in-memory cluster that can be used for testing purposes.
 
-MessageStorage is backed by an in-memory driver, and RunnerStorage is backed
-by an in-memory driver.
+**Details**
+
+`MessageStorage` and `RunnerStorage` are backed by in-memory drivers.
 
 **Signature**
 
@@ -14,6 +15,6 @@ by an in-memory driver.
 declare const layer: Layer.Layer<Sharding.Sharding | Runners.Runners | MessageStorage.MessageStorage | MessageStorage.MemoryDriver, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TestRunner.ts#L38)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TestRunner.ts#L39)
 
 Since v4.0.0

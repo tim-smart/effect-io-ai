@@ -8,8 +8,13 @@ position. The initial value is derived from each position's
 `Reducer.initialValue`. When reducing a collection of tuples, each element
 is combined independently.
 
-- Use to fold a collection of tuples into a single summary tuple.
-- Does not mutate the inputs; returns a fresh tuple.
+**When to use**
+
+Use this to fold a collection of tuples into a single summary tuple.
+
+**Details**
+
+The inputs are not mutated; a fresh tuple is returned.
 
 **Example** (Reducing a collection of tuples)
 
@@ -39,6 +44,6 @@ console.log(result) // [6, "abc"]
 declare const makeReducer: <A extends ReadonlyArray<unknown>>(reducers: { readonly [K in keyof A]: Reducer.Reducer<A[K]>; }) => Reducer.Reducer<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tuple.ts#L723)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tuple.ts#L792)
 
 Since v4.0.0

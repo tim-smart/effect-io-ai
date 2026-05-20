@@ -5,6 +5,8 @@ Module: `DateTime`<br />
 
 Get the different parts of a `DateTime` as an object.
 
+**Details**
+
 The parts will always be in UTC, ignoring any time zone information.
 
 **Example** (Reading UTC DateTime parts)
@@ -27,6 +29,6 @@ console.log(parts)
 declare const toPartsUtc: (self: DateTime) => DateTime.PartsWithWeekday
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L1608)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L1696)
 
 Since v3.6.0

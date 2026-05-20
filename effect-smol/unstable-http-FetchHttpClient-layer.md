@@ -11,6 +11,6 @@ Layer that provides an `HttpClient` implementation backed by the configured `Fet
 declare const layer: Layer.Layer<HttpClient.HttpClient, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FetchHttpClient.ts#L100)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FetchHttpClient.ts#L104)
 
 Since v4.0.0

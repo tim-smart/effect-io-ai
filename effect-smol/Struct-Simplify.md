@@ -5,10 +5,14 @@ Module: `Struct`<br />
 
 Flattens intersection types into a single object type for readability.
 
-- Use when hovering over a type shows `A & B & C` instead of the merged
-  shape.
-- Purely cosmetic — no runtime effect.
-- Preserves `readonly` modifiers; use `Mutable` to strip them.
+**When to use**
+
+Use when hovering over a type shows `A & B & C` instead of the merged shape.
+
+**Details**
+
+This helper is purely cosmetic at the type level and has no runtime effect.
+It preserves `readonly` modifiers; use `Mutable` to strip them.
 
 **Example** (Flattening an intersection)
 
@@ -33,6 +37,6 @@ type Simplified = Struct.Simplify<Original>
 type { [K in keyof T]: T[K]; } = { [K in keyof T]: T[K] } & {}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Struct.ts#L109)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Struct.ts#L112)
 
 Since v4.0.0

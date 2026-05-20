@@ -11,6 +11,6 @@ Type of a devtools protocol message containing the current metric snapshots.
 type MetricsSnapshot = Schema.Schema.Type<typeof MetricsSnapshot>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DevToolsSchema.ts#L459)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DevToolsSchema.ts#L481)
 
 Since v4.0.0

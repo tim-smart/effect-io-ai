@@ -6,6 +6,8 @@ Module: `HashMap`<br />
 Runs a batch of updates against a transient mutable copy of the `HashMap`
 and returns the finalized immutable result.
 
+**Details**
+
 The callback may call mutation-oriented helpers such as `set` and `remove`
 on the transient map.
 
@@ -28,6 +30,6 @@ const map2 = HashMap.mutate(map1, (mutable) => {
 declare const mutate: { <K, V>(f: (self: HashMap<K, V>) => void): (self: HashMap<K, V>) => HashMap<K, V>; <K, V>(self: HashMap<K, V>, f: (self: HashMap<K, V>) => void): HashMap<K, V>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashMap.ts#L824)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashMap.ts#L833)
 
 Since v2.0.0

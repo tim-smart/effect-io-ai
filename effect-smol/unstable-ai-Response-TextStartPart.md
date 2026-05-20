@@ -3,9 +3,8 @@ Module: `Response`<br />
 
 ## Response.TextStartPart
 
-Response part indicating the start of streaming text content.
-
-Marks the beginning of a text chunk with a unique identifier.
+Response part indicating the start of streaming text content with a unique
+text chunk identifier.
 
 **Signature**
 

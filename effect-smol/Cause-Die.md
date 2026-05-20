@@ -5,6 +5,8 @@ Module: `Cause`<br />
 
 An untyped defect — typically a programming error or an uncaught exception.
 
+**Details**
+
 The `defect` property is `unknown` because defects are not part of the
 typed error channel. Use `isDieReason` to narrow a `Reason`
 to this type.
@@ -34,6 +36,6 @@ export interface Die extends Cause.ReasonProto<"Die"> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L376)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L390)
 
 Since v2.0.0
