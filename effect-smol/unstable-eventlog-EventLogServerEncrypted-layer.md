@@ -9,7 +9,7 @@ encrypted server RPC handlers.
 **Signature**
 
 ```ts
-declare const layer: Layer.Layer<never, never, Storage | RpcServer.Protocol>
+declare const layer: Layer.Layer<never, never, RpcServer.Protocol | Storage>
 ```
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventLogServerEncrypted.ts#L105)

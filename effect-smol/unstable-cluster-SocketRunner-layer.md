@@ -9,7 +9,7 @@ Layer that runs a cluster runner over the socket RPC protocol, providing
 **Signature**
 
 ```ts
-declare const layer: Layer.Layer<Sharding.Sharding | Runners.Runners, never, SocketServer | MessageStorage | RunnerStorage.RunnerStorage | ShardingConfig | Runners.RpcClientProtocol | RpcSerialization.RpcSerialization | RunnerHealth>
+declare const layer: Layer.Layer<Sharding.Sharding | Runners.Runners, never, RpcSerialization.RpcSerialization | SocketServer | MessageStorage | RunnerStorage.RunnerStorage | ShardingConfig | Runners.RpcClientProtocol | RunnerHealth>
 ```
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SocketRunner.ts#L57)
