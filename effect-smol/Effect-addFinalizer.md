@@ -11,7 +11,7 @@ Finalizers are useful for cleanup operations that must run regardless of
 whether the effect succeeds or fails. They're commonly used for resource
 cleanup, logging, or other side effects that should always occur.
 
-**Example** (Usage)
+**Example** (Registering scope finalizers)
 
 ```ts
 import { Console, Effect, Exit } from "effect"

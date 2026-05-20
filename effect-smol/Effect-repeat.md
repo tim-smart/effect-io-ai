@@ -24,7 +24,7 @@ You can combine schedules for more advanced repetition logic, such as adding
 delays, limiting recursions, or dynamically adjusting based on the outcome of
 each execution.
 
-**Example** (Usage)
+**Example** (Repeating successful effects with a schedule)
 
 ```ts
 // Success Example
@@ -37,7 +37,7 @@ const program = Effect.repeat(action, policy)
 // Effect.runPromise(program).then((n) => console.log(`repetitions: ${n}`))
 ```
 
-**Example** (Usage)
+**Example** (Stopping repetition on failure)
 
 ```ts
 // Failure Example

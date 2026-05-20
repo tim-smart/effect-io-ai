@@ -5,7 +5,7 @@ Module: `Effect`<br />
 
 Logs one or more messages at the FATAL level.
 
-**Example** (Usage)
+**Example** (Logging fatal messages)
 
 ```ts
 import { Effect } from "effect"

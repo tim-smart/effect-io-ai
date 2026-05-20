@@ -5,7 +5,7 @@ Module: `Effect`<br />
 
 Creates a scoped effect by providing access to the scope.
 
-**Example** (Usage)
+**Example** (Working with an explicit scope)
 
 ```ts
 import { Console, Effect, Scope } from "effect"

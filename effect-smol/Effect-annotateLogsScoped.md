@@ -9,7 +9,7 @@ This differs from `annotateLogs`, which only annotates a specific effect.
 `annotateLogsScoped` updates annotations for the entire current `Scope` and
 restores the previous annotations when the scope closes.
 
-**Example** (Usage)
+**Example** (Adding scoped log annotations)
 
 ```ts
 import { Effect } from "effect"

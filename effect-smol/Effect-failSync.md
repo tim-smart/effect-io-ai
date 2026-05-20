@@ -8,7 +8,7 @@ Creates an `Effect` that represents a recoverable error using a lazy evaluation.
 This function is useful when you need to create an error effect but want to
 defer the computation of the error value until the effect is actually run.
 
-**Example** (Usage)
+**Example** (Lazily creating failures)
 
 ```ts
 import { Data, Effect } from "effect"

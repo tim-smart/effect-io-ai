@@ -25,7 +25,7 @@ are encapsulated.
 The resulting effect cannot fail directly because all recoverable failures
 are represented inside the `Result` type.
 
-**Example** (Usage)
+**Example** (Capturing success or failure as Result)
 
 ```ts
 import { Effect } from "effect"

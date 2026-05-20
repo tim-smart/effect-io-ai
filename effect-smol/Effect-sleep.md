@@ -6,7 +6,7 @@ Module: `Effect`<br />
 Returns an effect that suspends the current fiber for the specified duration
 without blocking a JavaScript thread.
 
-**Example** (Usage)
+**Example** (Pausing without blocking)
 
 ```ts
 import { Console, Effect } from "effect"

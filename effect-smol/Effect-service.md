@@ -5,7 +5,7 @@ Module: `Effect`<br />
 
 Accesses a service from the context.
 
-**Example** (Usage)
+**Example** (Accessing a required service)
 
 ```ts
 import { Context, Effect } from "effect"

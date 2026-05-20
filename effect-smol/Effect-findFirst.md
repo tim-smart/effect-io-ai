@@ -8,7 +8,7 @@ Returns the first element that satisfies an effectful predicate.
 The predicate receives the element and its index. Evaluation short-circuits
 as soon as an element matches.
 
-**Example** (Usage)
+**Example** (Finding the first successful match)
 
 ```ts
 import { Effect } from "effect"

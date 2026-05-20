@@ -11,6 +11,6 @@ The starting channel for Do notation, emitting an empty object.
 declare const Do: Channel<{}, never, void, unknown, unknown, unknown, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L7189)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L7194)
 
 Since v4.0.0

@@ -8,7 +8,7 @@ Ensures that an effect's requirements type extends a given type `R`.
 This function provides compile-time type checking to ensure that the
 requirements (context) type of an effect conforms to a specific type constraint.
 
-**Example** (Usage)
+**Example** (Constraining the services type)
 
 ```ts
 import { Effect } from "effect"

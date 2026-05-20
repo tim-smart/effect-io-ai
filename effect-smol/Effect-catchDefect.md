@@ -21,7 +21,7 @@ Defects are unexpected errors that typically should not be recovered from, as
 they often indicate serious issues. In some cases, such as dynamically loaded
 plugins, controlled recovery may be needed.
 
-**Example** (Usage)
+**Example** (Recovering from defects)
 
 ```ts
 import { Console, Effect } from "effect"

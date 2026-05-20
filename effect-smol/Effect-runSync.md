@@ -20,7 +20,7 @@ If the effect fails, dies, is interrupted, or performs asynchronous work,
 - `runSyncExit` for a version that returns an `Exit` type instead of
 throwing an error.
 
-**Example** (Synchronous Logging)
+**Example** (Running a synchronous effect)
 
 ```ts
 import { Effect } from "effect"
@@ -37,7 +37,7 @@ console.log(result)
 // Output: 1
 ```
 
-**Example** (Incorrect Usage with Failing or Async Effects)
+**Example** (Throwing for failed or async effects)
 
 ```ts
 import { Effect } from "effect"

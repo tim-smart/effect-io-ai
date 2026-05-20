@@ -12,7 +12,7 @@ implementation, removes that service from the wrapped effect's requirements,
 and leaves any other requirements to be provided later. Acquisition failures
 are included in the returned effect's error channel.
 
-**Example** (Usage)
+**Example** (Providing a service with an effect)
 
 ```ts
 import { Console, Context, Effect } from "effect"

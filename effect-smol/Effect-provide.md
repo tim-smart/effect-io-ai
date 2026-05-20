@@ -7,7 +7,7 @@ Provides dependencies to an effect using layers or a context. Use `options.local
 to build the layer every time; by default, layers are shared between provide
 calls.
 
-**Example** (Usage)
+**Example** (Providing dependencies with a layer)
 
 ```ts
 import { Context, Effect, Layer } from "effect"

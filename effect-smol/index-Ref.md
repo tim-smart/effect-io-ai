@@ -11,6 +11,6 @@ Re-exports all named exports from the "./Ref.ts" module as `Ref`.
 export * as Ref from "./Ref.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L4229)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L4222)
 
 Since v2.0.0

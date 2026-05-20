@@ -5,7 +5,7 @@ Module: `Effect`<br />
 
 Runs an effect and returns a Promise of Exit with provided services.
 
-**Example** (Usage)
+**Example** (Running with services as an Exit promise)
 
 ```ts
 import { Context, Effect, Exit } from "effect"

@@ -18,7 +18,7 @@ the effect pipeline.
 - For **Failure effects**: Applies the `onFailure` function immediately to the error
 - For **Pending effects**: Falls back to the regular `mapBoth` behavior
 
-**Example** (Usage)
+**Example** (Mapping both channels eagerly when possible)
 
 ```ts
 import { Effect } from "effect"

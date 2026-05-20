@@ -8,7 +8,7 @@ original `Effect` value succeeds, the returned `Effect` value will also
 succeed. If the original `Effect` value fails, the returned `Effect` value
 will fail with the same error.
 
-**Example** (Usage)
+**Example** (Discarding success values)
 
 ```ts
 import { Effect } from "effect"

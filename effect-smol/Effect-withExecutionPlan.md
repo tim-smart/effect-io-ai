@@ -10,7 +10,7 @@ Each attempt updates `ExecutionPlan.CurrentMetadata` (attempt and step index),
 and retry timing is derived per step (the first attempt uses the remaining
 attempts schedule; later retries apply the step schedule at least once).
 
-**Example** (Usage)
+**Example** (Retrying with an execution plan)
 
 ```ts
 import { Context, Effect, ExecutionPlan, Layer } from "effect"

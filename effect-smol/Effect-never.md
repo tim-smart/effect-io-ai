@@ -6,7 +6,7 @@ Module: `Effect`<br />
 Returns an effect that will never produce anything. The moral equivalent of
 `while(true) {}`, only without the wasted CPU cycles.
 
-**Example** (Usage)
+**Example** (Creating a never-ending effect)
 
 ```ts
 import { Effect } from "effect"

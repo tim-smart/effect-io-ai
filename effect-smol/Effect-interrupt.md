@@ -5,7 +5,7 @@ Module: `Effect`<br />
 
 Returns an effect that is immediately interrupted.
 
-**Example** (Usage)
+**Example** (Creating an interrupted effect)
 
 ```ts
 import { Effect } from "effect"

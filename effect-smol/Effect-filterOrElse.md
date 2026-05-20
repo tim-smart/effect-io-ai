@@ -12,7 +12,7 @@ predicate evaluates to `false`, it executes the `orElse` effect instead. The
 `orElse` effect can produce an alternative value or perform additional
 computations.
 
-**Example** (Usage)
+**Example** (Filtering with a fallback effect)
 
 ```ts
 import { Effect } from "effect"

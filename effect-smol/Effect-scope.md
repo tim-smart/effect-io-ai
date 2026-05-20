@@ -5,7 +5,7 @@ Module: `Effect`<br />
 
 Returns the current scope for resource management.
 
-**Example** (Usage)
+**Example** (Accessing the current scope)
 
 ```ts
 import { Console, Effect } from "effect"

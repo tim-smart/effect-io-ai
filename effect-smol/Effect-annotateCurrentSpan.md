@@ -5,7 +5,7 @@ Module: `Effect`<br />
 
 Adds an annotation to the current span if available.
 
-**Example** (Usage)
+**Example** (Annotating the current span)
 
 ```ts
 import { Effect } from "effect"

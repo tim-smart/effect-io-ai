@@ -5,7 +5,7 @@ Module: `Effect`<br />
 
 Executes a body effect repeatedly while a condition holds true.
 
-**Example** (Usage)
+**Example** (Repeating an effectful loop)
 
 ```ts
 import { Effect } from "effect"

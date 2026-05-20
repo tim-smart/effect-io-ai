@@ -28,7 +28,7 @@ There are two ways to handle errors with `tryPromise`:
 An optional `AbortSignal` can be provided to allow for interruption of the
 wrapped `Promise` API.
 
-**Example** (Fetching a TODO Item)
+**Example** (Wrapping a fetch request that may fail)
 
 ```ts
 import { Effect } from "effect"
@@ -44,7 +44,7 @@ const getTodo = (id: number) =>
 const program = getTodo(1)
 ```
 
-**Example** (Custom Error Handling)
+**Example** (Mapping Promise rejections to a tagged error)
 
 ```ts
 import { Data, Effect } from "effect"

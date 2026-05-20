@@ -12,7 +12,7 @@ service is available, it returns `Some(service)`. If the service is not
 available, it returns `None`. Unlike `service`, this function does not
 require the service to be present in the environment.
 
-**Example** (Usage)
+**Example** (Accessing an optional service)
 
 ```ts
 import { Context, Effect, Option } from "effect"

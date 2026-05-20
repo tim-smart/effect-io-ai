@@ -14,7 +14,7 @@ successful callback value becomes the effect success. Use `onError` to map
 callback errors and `onSyncError` to turn synchronous throws into typed
 failures; otherwise synchronous throws become defects.
 
-**Example** (Basic Usage)
+**Example** (Converting callbacks to effects)
 
 ```ts
 import { Effect } from "effect"
@@ -30,7 +30,7 @@ Effect.runPromise(program).then(console.log)
 // Output: contents of package.json
 ```
 
-**Example** (Custom Error Handling)
+**Example** (Mapping callback errors to typed failures)
 
 ```ts
 import { Effect } from "effect"

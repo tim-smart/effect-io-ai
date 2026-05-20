@@ -10,7 +10,7 @@ Returns the tracing span links currently carried in the effect context.
 These links are attached to spans created inside the context. Span links
 connect related spans without making one span the parent of another.
 
-**Example** (Usage)
+**Example** (Providing span links)
 
 ```ts
 import { Effect } from "effect"

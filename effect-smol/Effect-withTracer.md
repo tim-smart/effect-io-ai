@@ -5,7 +5,7 @@ Module: `Effect`<br />
 
 Provides a tracer to an effect.
 
-**Example** (Usage)
+**Example** (Providing a tracer)
 
 ```ts
 import { Effect } from "effect"

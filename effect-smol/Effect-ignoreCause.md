@@ -8,7 +8,7 @@ Ignores the effect's failure cause, including defects and interruptions.
 Use the `log` option to emit the full `Cause` when the effect fails,
 and `message` to prepend a custom log message.
 
-**Example** (Usage)
+**Example** (Ignoring failures and logging causes)
 
 ```ts
 import { Effect } from "effect"

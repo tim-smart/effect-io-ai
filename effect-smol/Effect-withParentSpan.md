@@ -5,7 +5,7 @@ Module: `Effect`<br />
 
 Adds the provided span to the current span stack.
 
-**Example** (Usage)
+**Example** (Setting a parent span)
 
 ```ts
 import { Effect } from "effect"

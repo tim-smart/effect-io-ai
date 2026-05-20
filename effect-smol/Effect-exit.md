@@ -15,7 +15,7 @@ The resulting effect cannot fail because the failure is encapsulated within
 the `Exit.Failure` type. The error type is set to `never`, indicating that
 the effect is structured to never fail directly.
 
-**Example** (Usage)
+**Example** (Capturing completion as Exit)
 
 ```ts
 import { Effect } from "effect"

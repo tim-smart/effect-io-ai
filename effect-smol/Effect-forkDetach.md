@@ -7,7 +7,7 @@ Forks the effect into a new fiber attached to the global scope. Because the
 new fiber is attached to the global scope, when the fiber executing the
 returned effect terminates, the forked fiber will continue running.
 
-**Example** (Usage)
+**Example** (Forking a detached fiber)
 
 ```ts
 import { Effect } from "effect"

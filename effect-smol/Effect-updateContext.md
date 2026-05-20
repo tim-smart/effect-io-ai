@@ -10,7 +10,7 @@ Provides part of the required context while leaving the rest unchanged.
 This function allows you to transform the context required by an effect,
 providing part of the context and leaving the rest to be fulfilled later.
 
-**Example** (Usage)
+**Example** (Updating the context before running)
 
 ```ts
 import { Context, Effect } from "effect"

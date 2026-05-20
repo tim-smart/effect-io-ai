@@ -8,7 +8,7 @@ Replaces the value inside an effect with a constant value.
 `as` allows you to ignore the original value inside an effect and
 replace it with a new constant value.
 
-**Example** (Replacing a Value)
+**Example** (Replacing a success value)
 
 ```ts
 import { Effect, pipe } from "effect"

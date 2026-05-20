@@ -4,8 +4,8 @@ Module: `Migrator`<br />
 ## Migrator.fromGlob
 
 Creates a migration loader from a glob record of dynamic import functions,
-parsing files named `<id>_<name>.js` or `<id>_<name>.ts` and sorting
-migrations by id.
+parsing files named `<id>_<name>.js`, `<id>_<name>.ts`,
+`<id>_<name>.mjs`, or `<id>_<name>.mts` and sorting migrations by id.
 
 **Signature**
 

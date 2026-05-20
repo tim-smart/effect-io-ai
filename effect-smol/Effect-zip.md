@@ -18,7 +18,7 @@ use the `{ concurrent: true }` option.
 - `zipWith` for a version that combines the results with a custom function.
 - `validate` for a version that accumulates errors.
 
-**Example** (Combining Two Effects Sequentially)
+**Example** (Combining two effects sequentially)
 
 ```ts
 import { Effect } from "effect"
@@ -45,7 +45,7 @@ Effect.runPromise(program).then(console.log)
 // [ 1, 'hello' ]
 ```
 
-**Example** (Combining Two Effects Concurrently)
+**Example** (Combining two effects concurrently)
 
 ```ts
 import { Effect } from "effect"

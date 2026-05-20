@@ -11,7 +11,7 @@ Use `sandbox` when downstream error handling needs to distinguish typed
 failures, defects, and interruptions. Use `unsandbox` to restore the original
 typed error channel after cause-level handling.
 
-**Example** (Usage)
+**Example** (Exposing failures as causes)
 
 ```ts
 import { Cause, Effect } from "effect"

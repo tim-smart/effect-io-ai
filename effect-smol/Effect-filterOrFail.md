@@ -11,7 +11,7 @@ This function applies a predicate to the result of an effect. If the
 predicate evaluates to `false`, the effect fails with either a custom
 error (if `orFailWith` is provided) or a `NoSuchElementError`.
 
-**Example** (Usage)
+**Example** (Filtering with a custom failure)
 
 ```ts
 import { Effect } from "effect"

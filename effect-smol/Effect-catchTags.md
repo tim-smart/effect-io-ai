@@ -17,7 +17,7 @@ unhandled errors.
 The error type must have a readonly `_tag` field to use `catchTag`. This
 field is used to identify and match errors.
 
-**Example** (Usage)
+**Example** (Handling multiple tagged errors)
 
 ```ts
 import { Data, Effect } from "effect"

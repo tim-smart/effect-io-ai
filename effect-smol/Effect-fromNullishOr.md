@@ -6,7 +6,7 @@ Module: `Effect`<br />
 Converts a nullable value to an `Effect`, failing with a `NoSuchElementError`
 when the value is `null` or `undefined`.
 
-**Example** (Usage)
+**Example** (Failing on nullish values)
 
 ```ts
 import { Console, Effect } from "effect"

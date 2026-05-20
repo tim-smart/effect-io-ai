@@ -8,7 +8,7 @@ Races two effects and returns the first successful result.
 If one effect succeeds, the other is interrupted and `onWinner` can observe the
 winning fiber. If both fail, the race fails.
 
-**Example** (Usage)
+**Example** (Racing two effects)
 
 ```ts
 import { Console, Duration, Effect } from "effect"

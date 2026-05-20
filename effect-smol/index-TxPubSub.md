@@ -11,6 +11,6 @@ Re-exports all named exports from the "./TxPubSub.ts" module as `TxPubSub`.
 export * as TxPubSub from "./TxPubSub.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L5682)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L5674)
 
 Since v4.0.0

@@ -5,7 +5,7 @@ Module: `Effect`<br />
 
 Wraps the effect with a new span for tracing.
 
-**Example** (Usage)
+**Example** (Wrapping an effect in a child span)
 
 ```ts
 import { Effect } from "effect"

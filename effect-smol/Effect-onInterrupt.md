@@ -5,7 +5,7 @@ Module: `Effect`<br />
 
 Runs the specified finalizer effect if this effect is interrupted.
 
-**Example** (Usage)
+**Example** (Running cleanup on interruption)
 
 ```ts
 import { Console, Effect, Fiber } from "effect"

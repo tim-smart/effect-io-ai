@@ -5,7 +5,7 @@ Module: `Effect`<br />
 
 Tests if a value is an `Effect`.
 
-**Example** (Usage)
+**Example** (Checking whether a value is an Effect)
 
 ```ts
 import { Effect } from "effect"

@@ -5,7 +5,7 @@ Module: `Effect`<br />
 
 Logs one or more messages at the DEBUG level.
 
-**Example** (Usage)
+**Example** (Logging debug messages)
 
 ```ts
 import { Effect } from "effect"

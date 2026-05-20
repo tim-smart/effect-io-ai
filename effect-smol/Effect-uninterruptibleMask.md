@@ -6,7 +6,7 @@ Module: `Effect`<br />
 Disables interruption and provides a restore function to restore the
 interruptible state within the effect.
 
-**Example** (Usage)
+**Example** (Restoring interruption in protected regions)
 
 ```ts
 import { Console, Effect } from "effect"

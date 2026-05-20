@@ -5,7 +5,7 @@ Module: `Effect`<br />
 
 Catches multiple reasons within a tagged error using an object of handlers.
 
-**Example** (Usage)
+**Example** (Handling multiple error reasons)
 
 ```ts
 import { Data, Effect } from "effect"

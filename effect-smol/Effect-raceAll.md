@@ -21,7 +21,7 @@ or all effects fail.
 
 - `race` for a version that handles only two effects.
 
-**Example** (Usage)
+**Example** (Racing many effects)
 
 ```ts
 import { Duration, Effect } from "effect"

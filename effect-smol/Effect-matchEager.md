@@ -19,7 +19,7 @@ Use this when you need to handle both success and failure cases and want
 optimal performance for resolved effects. This is particularly useful in
 scenarios where you frequently work with already computed values.
 
-**Example** (Usage)
+**Example** (Pattern matching eagerly when possible)
 
 ```ts
 import { Effect } from "effect"

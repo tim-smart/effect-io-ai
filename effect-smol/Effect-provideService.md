@@ -16,7 +16,7 @@ effect can be run successfully without further requirements.
 
 - `provide` for providing multiple layers to an effect.
 
-**Example** (Usage)
+**Example** (Providing a service value)
 
 ```ts
 import { Console, Context, Effect } from "effect"

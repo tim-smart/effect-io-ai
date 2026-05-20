@@ -13,7 +13,7 @@ value, removing the typed error from the returned effect.
 
 Defects and interruptions are not recovered by this operator.
 
-**Example** (Usage)
+**Example** (Replacing failures with a value)
 
 ```ts
 import { Effect } from "effect"

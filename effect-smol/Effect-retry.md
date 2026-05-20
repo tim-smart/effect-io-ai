@@ -19,7 +19,7 @@ Defects and interruptions are not retried as typed failures.
 Use `retry` when typed failures may be transient, such as network issues or
 temporary resource unavailability.
 
-**Example** (Usage)
+**Example** (Retrying with a schedule)
 
 ```ts
 import { Data, Effect, Schedule } from "effect"

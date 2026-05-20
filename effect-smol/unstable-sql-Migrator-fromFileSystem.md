@@ -4,7 +4,8 @@ Module: `Migrator`<br />
 ## Migrator.fromFileSystem
 
 Creates a migration loader that reads a directory with `FileSystem`, imports
-files named `<id>_<name>.js` or `<id>_<name>.ts`, and sorts migrations by id.
+files named `<id>_<name>.js`, `<id>_<name>.ts`,
+`<id>_<name>.mjs`, or `<id>_<name>.mts`, and sorts migrations by id.
 
 **Signature**
 
@@ -12,6 +13,6 @@ files named `<id>_<name>.js` or `<id>_<name>.ts`, and sorts migrations by id.
 declare const fromFileSystem: (directory: string) => Loader<FileSystem>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Migrator.ts#L418)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Migrator.ts#L420)
 
 Since v4.0.0

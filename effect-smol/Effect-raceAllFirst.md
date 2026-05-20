@@ -12,7 +12,7 @@ After the first effect completes, all remaining effects are interrupted. Use
 `raceAll` when early failures should be ignored until a success occurs or
 all effects fail.
 
-**Example** (Usage)
+**Example** (Taking the first settled result)
 
 ```ts
 import { Duration, Effect } from "effect"

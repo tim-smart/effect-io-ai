@@ -18,7 +18,7 @@ The `Exit` type represents the result of the effect:
 - If it fails, the failure information is provided as a `Failure` containing
   a `Cause` type.
 
-**Example** (Handling Results as Exit)
+**Example** (Observing promise results as Exit)
 
 ```ts
 import { Effect } from "effect"

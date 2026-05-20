@@ -5,7 +5,7 @@ Module: `Effect`<br />
 
 Sets the concurrency level for parallel operations within an effect.
 
-**Example** (Usage)
+**Example** (Setting local concurrency)
 
 ```ts
 import { Console, Effect } from "effect"

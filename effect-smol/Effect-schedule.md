@@ -14,7 +14,7 @@ whether to run again. The returned effect fails if the effect or schedule
 fails, and otherwise succeeds with the schedule output when the schedule
 completes.
 
-**Example** (Usage)
+**Example** (Scheduling repeated execution)
 
 ```ts
 import { Console, Effect, Schedule } from "effect"

@@ -8,7 +8,7 @@ Catches `NoSuchElementError` failures and converts them to `Option.none`.
 Success values become `Option.some`, `NoSuchElementError` becomes
 `Option.none`, and all other errors are preserved.
 
-**Example** (Usage)
+**Example** (Recovering from missing Option values)
 
 ```ts
 import { Effect, Option } from "effect"

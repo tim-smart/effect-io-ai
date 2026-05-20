@@ -9,7 +9,7 @@ returning an interruptor.
 The interruptor calls `fiber.interruptUnsafe` with the optional interruptor
 id.
 
-**Example** (Usage)
+**Example** (Running with a callback)
 
 ```ts
 import { Console, Effect, Exit } from "effect"

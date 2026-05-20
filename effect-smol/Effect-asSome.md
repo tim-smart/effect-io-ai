@@ -7,7 +7,7 @@ This function maps the success value of an `Effect` value to a `Some` value
 in an `Option` value. If the original `Effect` value fails, the returned
 `Effect` value will also fail.
 
-**Example** (Usage)
+**Example** (Wrapping success in Option.some)
 
 ```ts
 import { Effect } from "effect"

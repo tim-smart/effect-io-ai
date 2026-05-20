@@ -17,7 +17,7 @@ effects, combining them into a single value.
 By default, the effects are run sequentially. To execute them concurrently,
 use the `{ concurrent: true }` option.
 
-**Example** (Combining Effects with a Custom Function)
+**Example** (Combining two success values with a function)
 
 ```ts
 import { Effect } from "effect"

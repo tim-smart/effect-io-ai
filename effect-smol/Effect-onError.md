@@ -6,7 +6,7 @@ Module: `Effect`<br />
 Runs the specified effect if this effect fails, providing the error to the
 effect if it exists. The provided effect will not be interrupted.
 
-**Example** (Usage)
+**Example** (Running cleanup on failure)
 
 ```ts
 import { Cause, Console, Data, Effect } from "effect"

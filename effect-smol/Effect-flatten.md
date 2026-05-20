@@ -5,7 +5,7 @@ Module: `Effect`<br />
 
 Flattens an `Effect` that produces another `Effect` into a single effect.
 
-**Example** (Usage)
+**Example** (Flattening nested effects)
 
 ```ts
 import { Console, Effect } from "effect"

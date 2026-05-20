@@ -6,7 +6,7 @@ Module: `Effect`<br />
 Runs the cleanup effect only when the `Exit` satisfies the provided
 predicate.
 
-**Example** (Usage)
+**Example** (Observing selected exits)
 
 ```ts
 import { Console, Effect, Exit } from "effect"

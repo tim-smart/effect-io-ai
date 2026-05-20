@@ -8,7 +8,7 @@ Applies a timeout to an effect, with a fallback effect executed if the timeout i
 This function is useful when you want to set a maximum duration for an operation
 and provide an alternative action if the timeout is exceeded.
 
-**Example** (Usage)
+**Example** (Falling back on timeout)
 
 ```ts
 import { Console, Effect } from "effect"

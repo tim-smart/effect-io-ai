@@ -6,7 +6,7 @@ Module: `Effect`<br />
 Returns an effect that is delayed from this effect by the specified
 `Duration`.
 
-**Example** (Usage)
+**Example** (Delaying an effect)
 
 ```ts
 import { Console, Effect } from "effect"

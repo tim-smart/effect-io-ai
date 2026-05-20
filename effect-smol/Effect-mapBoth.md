@@ -12,7 +12,7 @@ and one for the success channel. You can use it when you want to modify both
 the error and the success values without altering the overall success or
 failure status of the effect.
 
-**Example** (Usage)
+**Example** (Transforming success and failure channels)
 
 ```ts
 import { Data, Effect } from "effect"

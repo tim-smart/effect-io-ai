@@ -18,6 +18,6 @@ export interface Transform<Kind extends ParamKind, in out A, out B> extends Para
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Param.ts#L232)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Param.ts#L233)
 
 Since v4.0.0

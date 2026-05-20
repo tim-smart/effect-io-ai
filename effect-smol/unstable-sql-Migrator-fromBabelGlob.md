@@ -4,7 +4,8 @@ Module: `Migrator`<br />
 ## Migrator.fromBabelGlob
 
 Creates a migration loader from a Babel-style glob record, parsing keys such
-as `_<id>_<name>Js` or `_<id>_<name>Ts` and sorting migrations by id.
+as `_<id>_<name>Js`, `_<id>_<name>Ts`, `_<id>_<name>Mjs`, or
+`_<id>_<name>Mts` and sorting migrations by id.
 
 **Signature**
 
@@ -12,6 +13,6 @@ as `_<id>_<name>Js` or `_<id>_<name>Ts` and sorting migrations by id.
 declare const fromBabelGlob: (migrations: Record<string, any>) => Loader
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Migrator.ts#L374)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Migrator.ts#L375)
 
 Since v4.0.0

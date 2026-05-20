@@ -19,6 +19,7 @@ export interface Single<Kind extends ParamKind, out A> extends Param<Kind, A> {
   readonly aliases: ReadonlyArray<string>
   readonly primitiveType: Primitive.Primitive<A>
   readonly typeName?: string | undefined
+  readonly hidden: boolean
 }
 ```
 

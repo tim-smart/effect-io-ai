@@ -9,7 +9,7 @@ Updates the provided `Metric` every time the wrapped `Effect` fails with an
 Also accepts an optional function which can be used to map the error value
 of the `Effect` into a valid `Input` for the `Metric`.
 
-**Example** (Usage)
+**Example** (Counting expected failures)
 
 ```ts
 import { Effect, Metric } from "effect"
@@ -28,7 +28,7 @@ Effect.runPromiseExit(program).then(() =>
 )
 ```
 
-**Example** (Usage)
+**Example** (Mapping errors before tracking)
 
 ```ts
 import { Data, Effect, Metric } from "effect"

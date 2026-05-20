@@ -12,7 +12,7 @@ Use this for logging, metrics, or other failure-side observations. If the
 operation passed to `tapError` fails, that error is also represented in the
 returned effect's error channel.
 
-**Example** (Usage)
+**Example** (Running effects on failure)
 
 ```ts
 import { Console, Effect } from "effect"

@@ -8,7 +8,7 @@ Creates an `Effect` that represents a failure with a specific `Cause`.
 This function allows you to create effects that fail with complex error
 structures, including multiple errors, defects, interruptions, and more.
 
-**Example** (Usage)
+**Example** (Failing with a full Cause)
 
 ```ts
 import { Cause, Effect } from "effect"

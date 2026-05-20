@@ -12,7 +12,7 @@ Use this to log or inspect typed failures, defects, and interruptions. When
 the operation succeeds, the original cause is preserved. If the operation
 fails, its error is also represented in the returned effect.
 
-**Example** (Usage)
+**Example** (Observing full failure causes)
 
 ```ts
 import { Cause, Console, Effect } from "effect"

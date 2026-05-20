@@ -20,7 +20,7 @@ Use this when the failure or success branch must run additional effects.
 - `match` if you don't need side effects and only want to handle the
 result or failure.
 
-**Example** (Handling Both Success and Failure Cases with Side Effects)
+**Example** (Matching success and failure with effectful handlers)
 
 ```ts
 import { Data, Effect } from "effect"

@@ -9,7 +9,7 @@ This function allows you to access the complete context and perform
 computations based on all available services. This is useful when you need
 to conditionally execute logic based on what services are available.
 
-**Example** (Usage)
+**Example** (Deriving values from the context)
 
 ```ts
 import { Console, Context, Effect, Option } from "effect"

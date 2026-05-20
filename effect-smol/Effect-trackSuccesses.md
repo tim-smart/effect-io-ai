@@ -9,7 +9,7 @@ a value.
 Also accepts an optional function which can be used to map the success value
 of the `Effect` into a valid `Input` for the `Metric`.
 
-**Example** (Usage)
+**Example** (Counting successful results)
 
 ```ts
 import { Effect, Metric } from "effect"
@@ -28,7 +28,7 @@ Effect.runPromise(program).then(() =>
 )
 ```
 
-**Example** (Usage)
+**Example** (Mapping successes before tracking)
 
 ```ts
 import { Effect, Metric } from "effect"

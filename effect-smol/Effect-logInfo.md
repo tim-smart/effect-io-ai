@@ -5,7 +5,7 @@ Module: `Effect`<br />
 
 Logs one or more messages at the INFO level.
 
-**Example** (Usage)
+**Example** (Logging information)
 
 ```ts
 import { Effect } from "effect"

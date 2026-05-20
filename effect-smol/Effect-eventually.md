@@ -7,7 +7,7 @@ Retries an effect until it succeeds, discarding failures.
 
 Yields between attempts so other fibers can run.
 
-**Example** (Usage)
+**Example** (Retrying until success)
 
 ```ts
 import { Console, Effect } from "effect"

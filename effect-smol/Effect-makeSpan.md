@@ -11,7 +11,7 @@ The span is not added to the current span stack and is not ended
 automatically. Use `withSpan`, `useSpan`, or `makeSpanScoped` when the span
 should be installed as context or closed automatically.
 
-**Example** (Usage)
+**Example** (Creating a span manually)
 
 ```ts
 import { Effect } from "effect"

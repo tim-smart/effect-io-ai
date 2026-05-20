@@ -22,7 +22,7 @@ If the effect contains asynchronous operations, `runSyncExit` will
 return an `Failure` with a `Die` cause, indicating that the effect cannot be
 resolved synchronously.
 
-**Example** (Handling Results as Exit)
+**Example** (Observing synchronous results as Exit)
 
 ```ts
 import { Effect } from "effect"
@@ -48,7 +48,7 @@ console.log(Effect.runSyncExit(Effect.fail("my error")))
 // }
 ```
 
-**Example** (Asynchronous Operation Resulting in Die)
+**Example** (Capturing async work as a Die cause)
 
 ```ts
 import { Effect } from "effect"

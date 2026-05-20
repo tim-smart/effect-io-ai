@@ -14,6 +14,6 @@ The channel's output values are published as individual PubSub messages. Use
 declare const runIntoPubSub: { <OutElem>(pubsub: PubSub.PubSub<OutElem>, options?: { readonly shutdownOnEnd?: boolean | undefined; } | undefined): <OutErr, OutDone, Env>(self: Channel<OutElem, OutErr, OutDone, unknown, unknown, unknown, Env>) => Effect.Effect<void, never, Env>; <OutElem, OutErr, OutDone, Env>(self: Channel<OutElem, OutErr, OutDone, unknown, unknown, unknown, Env>, pubsub: PubSub.PubSub<OutElem>, options?: { readonly shutdownOnEnd?: boolean | undefined; } | undefined): Effect.Effect<void, never, Env>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L8087)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L8092)
 
 Since v4.0.0

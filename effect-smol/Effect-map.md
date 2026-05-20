@@ -24,7 +24,7 @@ It's important to note that effects are immutable, meaning that the original
 effect is not modified. Instead, a new effect is returned with the updated
 value.
 
-**Example** (Adding a Service Charge)
+**Example** (Adding a service charge)
 
 ```ts
 import { Effect, pipe } from "effect"

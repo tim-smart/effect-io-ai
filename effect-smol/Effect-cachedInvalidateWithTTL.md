@@ -36,7 +36,7 @@ indefinitely.
 - `cachedWithTTL` for a similar function that caches the result for
 a specified duration but does not include an effect for manual invalidation.
 
-**Example** (Usage)
+**Example** (Memoizing with TTL and invalidation)
 
 ```ts
 import { Console, Effect } from "effect"

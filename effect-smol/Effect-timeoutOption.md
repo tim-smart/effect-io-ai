@@ -18,7 +18,7 @@ source effect fails before the timeout, that failure is preserved.
 - `timeout` for a version that raises a `TimeoutException`.
 - `timeoutOrElse` for a version that allows specifying both success and timeout handlers.
 
-**Example** (Usage)
+**Example** (Returning None on timeout)
 
 ```ts
 import { Effect } from "effect"

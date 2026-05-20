@@ -5,7 +5,7 @@ Module: `Effect`<br />
 
 Logs one or more messages at the ERROR level.
 
-**Example** (Usage)
+**Example** (Logging errors)
 
 ```ts
 import { Effect } from "effect"

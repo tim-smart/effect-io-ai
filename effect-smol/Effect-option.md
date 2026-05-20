@@ -10,7 +10,7 @@ Convert success to `Option.some` and failure to `Option.none`.
 Success values become `Option.some`, recoverable failures become
 `Option.none`, and defects still fail the effect.
 
-**Example** (Usage)
+**Example** (Capturing success or failure as Option)
 
 ```ts
 import { Console, Effect, Option } from "effect"

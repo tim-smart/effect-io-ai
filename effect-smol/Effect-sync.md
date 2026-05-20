@@ -23,7 +23,7 @@ crash in the program, which can be further managed or logged using tools like
 
 - `| try` for a version that can handle failures.
 
-**Example** (Logging a Message)
+**Example** (Capturing synchronous logging in an Effect)
 
 ```ts
 import { Effect } from "effect"

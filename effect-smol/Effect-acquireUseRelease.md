@@ -25,7 +25,7 @@ fail, even if the `use` `Effect` value succeeds. If this fail-fast behavior
 is not desired, errors produced by the `release` `Effect` value can be caught
 and ignored.
 
-**Example** (Usage)
+**Example** (Using a resource with cleanup)
 
 ```ts
 import { Console, Effect, Exit } from "effect"

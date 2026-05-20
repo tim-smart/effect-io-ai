@@ -5,7 +5,7 @@ Module: `Effect`<br />
 
 Runs an effect synchronously with provided services, returning an Exit result.
 
-**Example** (Usage)
+**Example** (Running synchronously with services as Exit)
 
 ```ts
 import { Context, Effect, Exit } from "effect"

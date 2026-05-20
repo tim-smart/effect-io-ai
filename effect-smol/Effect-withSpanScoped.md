@@ -7,7 +7,7 @@ Wraps the effect with a new span for tracing.
 
 The span is ended when the Scope is finalized.
 
-**Example** (Usage)
+**Example** (Creating a scoped child span)
 
 ```ts
 import { Effect } from "effect"

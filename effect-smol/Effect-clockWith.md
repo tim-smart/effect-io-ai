@@ -6,7 +6,7 @@ Module: `Effect`<br />
 Retrieves the `Clock` service from the context and provides it to the
 specified effectful function.
 
-**Example** (Usage)
+**Example** (Accessing the Clock service)
 
 ```ts
 import { Console, Effect } from "effect"

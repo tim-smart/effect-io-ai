@@ -27,6 +27,6 @@ const thresholdArg = Param.float(Param.argumentKind, "threshold")
 declare const float: <const Kind extends ParamKind>(kind: Kind, name: string) => Param<Kind, number>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Param.ts#L482)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Param.ts#L485)
 
 Since v4.0.0

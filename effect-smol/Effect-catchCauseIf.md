@@ -9,7 +9,7 @@ This function allows you to conditionally catch and recover from failures
 that match a specific predicate. This is useful when you want to handle
 only certain types of errors while letting others propagate.
 
-**Example** (Usage)
+**Example** (Recovering from selected causes)
 
 ```ts
 import { Cause, Console, Effect } from "effect"

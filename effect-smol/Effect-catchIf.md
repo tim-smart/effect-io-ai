@@ -12,7 +12,7 @@ Recovers from specific errors using a `Predicate` or `Refinement`.
 matching. Non-matching errors re-fail with the original cause. Defects and
 interrupts are not caught.
 
-**Example** (Usage)
+**Example** (Recovering when a predicate matches)
 
 ```ts
 import { Data, Effect, Filter } from "effect"

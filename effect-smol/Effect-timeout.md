@@ -16,7 +16,7 @@ indefinitely if the task takes too long.
 
 - `timeoutOrElse` for a version that allows specifying both success and timeout handlers.
 
-**Example** (Usage)
+**Example** (Failing when work takes too long)
 
 ```ts
 import { Effect } from "effect"

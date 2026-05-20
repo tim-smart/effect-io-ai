@@ -11,6 +11,6 @@ Re-exports all named exports from the "./PrimaryKey.ts" module as `PrimaryKey`.
 export * as PrimaryKey from "./PrimaryKey.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L3839)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L3832)
 
 Since v2.0.0

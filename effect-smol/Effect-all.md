@@ -20,7 +20,7 @@ Use `concurrency` to control sequential or concurrent execution. Use
 `Result` in the same output shape. Use `discard: true` to ignore successful
 values and return `void`.
 
-**Example** (Combining Effects in Tuples)
+**Example** (Collecting tuple results in order)
 
 ```ts
 import { Console, Effect } from "effect"
@@ -41,7 +41,7 @@ Effect.runPromise(resultsAsTuple).then(console.log)
 // [ 42, 'Hello' ]
 ```
 
-**Example** (Combining Effects in Iterables)
+**Example** (Collecting iterable results in order)
 
 ```ts
 import { Console, Effect } from "effect"
@@ -62,7 +62,7 @@ Effect.runPromise(resultsAsArray).then(console.log)
 // [ 1, 2, 3 ]
 ```
 
-**Example** (Combining Effects in Structs)
+**Example** (Collecting struct results by key)
 
 ```ts
 import { Console, Effect } from "effect"
@@ -83,7 +83,7 @@ Effect.runPromise(resultsAsStruct).then(console.log)
 // { a: 42, b: 'Hello' }
 ```
 
-**Example** (Combining Effects in Records)
+**Example** (Collecting record results by key)
 
 ```ts
 import { Console, Effect } from "effect"
@@ -104,7 +104,7 @@ Effect.runPromise(resultsAsRecord).then(console.log)
 // { key1: 1, key2: 2 }
 ```
 
-**Example** (Short-Circuiting Behavior)
+**Example** (Stopping on the first failure)
 
 ```ts
 import { Console, Effect } from "effect"

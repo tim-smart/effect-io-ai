@@ -6,7 +6,7 @@ Module: `Effect`<br />
 Filters elements of an iterable using a predicate, refinement, or effectful
 predicate.
 
-**Example** (Usage)
+**Example** (Filtering success values)
 
 ```ts
 import { Effect } from "effect"

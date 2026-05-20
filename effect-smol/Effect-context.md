@@ -9,7 +9,7 @@ This function allows you to access all services that are currently available
 in the effect's environment. This can be useful for debugging, introspection,
 or when you need to pass the entire context to another function.
 
-**Example** (Usage)
+**Example** (Reading the full context)
 
 ```ts
 import { Console, Context, Effect, Option } from "effect"

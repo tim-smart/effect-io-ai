@@ -8,7 +8,7 @@ Creates a logger function that logs at the specified level.
 If no level is provided, the logger uses the fiber's current log level and
 extracts any `Cause` values from the message list.
 
-**Example** (Usage)
+**Example** (Logging at a dynamic level)
 
 ```ts
 import { Effect } from "effect"

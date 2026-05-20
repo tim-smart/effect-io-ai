@@ -14,7 +14,7 @@ specific value without any errors or external dependencies.
 
 - `fail` to create an effect that represents a failure.
 
-**Example** (Creating a Successful Effect)
+**Example** (Creating a successful effect)
 
 ```ts
 import { Effect } from "effect"

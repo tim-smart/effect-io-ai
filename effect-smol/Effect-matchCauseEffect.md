@@ -14,7 +14,7 @@ making it possible to differentiate between various failure types, and allows
 you to respond accordingly while performing side effects (like logging or
 other operations).
 
-**Example** (Usage)
+**Example** (Effectfully matching on causes)
 
 ```ts
 import { Cause, Console, Data, Effect, Result } from "effect"

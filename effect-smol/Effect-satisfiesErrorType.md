@@ -8,7 +8,7 @@ Ensures that an effect's error type extends a given type `E`.
 This function provides compile-time type checking to ensure that the error
 type of an effect conforms to a specific type constraint.
 
-**Example** (Usage)
+**Example** (Constraining the error type)
 
 ```ts
 import { Data, Effect } from "effect"

@@ -10,7 +10,7 @@ Returns the currently active local tracing span.
 The effect fails with `NoSuchElementError` when there is no active local
 `Span`.
 
-**Example** (Usage)
+**Example** (Reading the current span)
 
 ```ts
 import { Effect } from "effect"

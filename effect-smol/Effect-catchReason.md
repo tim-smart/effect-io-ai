@@ -8,7 +8,7 @@ Catches a specific reason within a tagged error.
 Use this to handle nested error causes without removing the parent error
 from the error channel. The handler receives the unwrapped reason.
 
-**Example** (Usage)
+**Example** (Handling an error reason)
 
 ```ts
 import { Data, Effect } from "effect"

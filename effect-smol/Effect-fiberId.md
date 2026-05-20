@@ -5,7 +5,7 @@ Module: `Effect`<br />
 
 Access the current fiber id executing the effect.
 
-**Example** (Usage)
+**Example** (Accessing the current fiber id)
 
 ```ts
 import { Effect } from "effect"

@@ -5,7 +5,7 @@ Module: `Effect`<br />
 
 Returns an effect which succeeds with the value wrapped in a `Some`.
 
-**Example** (Usage)
+**Example** (Succeeding with Option.some)
 
 ```ts
 import { Effect } from "effect"

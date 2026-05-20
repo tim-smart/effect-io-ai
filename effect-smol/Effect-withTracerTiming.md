@@ -5,7 +5,7 @@ Module: `Effect`<br />
 
 Enables or disables tracer timing for the given Effect.
 
-**Example** (Usage)
+**Example** (Enabling or disabling tracing timing)
 
 ```ts
 import { Effect } from "effect"

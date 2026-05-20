@@ -5,7 +5,7 @@ Module: `Effect`<br />
 
 Logs one or more messages at the WARNING level.
 
-**Example** (Usage)
+**Example** (Logging warnings)
 
 ```ts
 import { Effect } from "effect"

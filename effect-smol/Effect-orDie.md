@@ -15,7 +15,7 @@ state and should not be handled as a recoverable error.
 
 - `mapError` to transform the error before converting it into a defect with `orDie`.
 
-**Example** (Propagating an Error as a Defect)
+**Example** (Converting typed failures into defects)
 
 ```ts
 import { Data, Effect } from "effect"

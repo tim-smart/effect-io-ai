@@ -6,7 +6,7 @@ Module: `Effect`<br />
 An `Effect` containing an empty record `{}`, used as the starting point for
 do notation chains.
 
-**Example** (Usage)
+**Example** (Starting do notation)
 
 ```ts
 import { Effect, pipe } from "effect"

@@ -18,7 +18,7 @@ the effect pipeline.
 - For **Failure effects**: Applies the catch function immediately to the error
 - For **Pending effects**: Falls back to the regular `catch` behavior
 
-**Example** (Usage)
+**Example** (Catching failures eagerly when possible)
 
 ```ts
 import { Effect } from "effect"

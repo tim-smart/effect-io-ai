@@ -9,7 +9,7 @@ This function allows you to tap into the cause of an effect's failure only when
 the cause matches a specific predicate. This is useful for conditional logging,
 monitoring, or other side effects based on the type of failure.
 
-**Example** (Usage)
+**Example** (Observing selected failure causes)
 
 ```ts
 import { Cause, Console, Effect } from "effect"

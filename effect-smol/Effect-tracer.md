@@ -5,7 +5,7 @@ Module: `Effect`<br />
 
 Returns the current tracer from the context.
 
-**Example** (Usage)
+**Example** (Accessing the current tracer)
 
 ```ts
 import { Effect } from "effect"

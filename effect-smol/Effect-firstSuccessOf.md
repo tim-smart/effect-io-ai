@@ -22,7 +22,7 @@ Use `firstSuccessOf` when you have prioritized fallback strategies, such as
 attempting multiple APIs, reading configuration from several sources, or
 trying alternative resource locations in order.
 
-**Example** (Usage)
+**Example** (Trying alternatives until one succeeds)
 
 ```ts
 import { Effect } from "effect"

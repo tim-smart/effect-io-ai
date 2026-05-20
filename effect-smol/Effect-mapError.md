@@ -17,7 +17,7 @@ operates on the error channel and leaves the success channel unchanged.
 - `mapBoth` for a version that operates on both channels.
 - `mapError` if you want to replace the error with a new one.
 
-**Example** (Usage)
+**Example** (Transforming the error channel)
 
 ```ts
 import { Data, Effect } from "effect"

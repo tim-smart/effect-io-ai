@@ -22,7 +22,7 @@ failure without triggering side effects.
 
 - `matchEffect` if you need to perform side effects in the handlers.
 
-**Example** (Handling Both Success and Failure Cases)
+**Example** (Matching success and failure values)
 
 ```ts
 import { Data, Effect } from "effect"

@@ -10,7 +10,7 @@ Also accepts an optional function which can be used to map the `Duration`
 that the wrapped `Effect` took to complete into a valid `Input` for the
 `Metric`.
 
-**Example** (Usage)
+**Example** (Recording execution duration)
 
 ```ts
 import { Effect, Metric } from "effect"
@@ -27,7 +27,7 @@ Effect.runPromise(program).then(() =>
 )
 ```
 
-**Example** (Usage)
+**Example** (Mapping duration before tracking)
 
 ```ts
 import { Duration, Effect, Metric } from "effect"

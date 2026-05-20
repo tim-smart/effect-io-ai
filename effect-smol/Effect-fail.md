@@ -15,7 +15,7 @@ functions like `catchTag` or `catchTags`.
 
 - `succeed` to create an effect that represents a successful value.
 
-**Example** (Creating a Failed Effect)
+**Example** (Creating a failed effect)
 
 ```ts
 import { Data, Effect } from "effect"

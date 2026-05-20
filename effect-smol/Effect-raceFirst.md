@@ -8,7 +8,7 @@ it succeeds or fails.
 
 The losing effect is interrupted, and `onWinner` can observe the winning fiber.
 
-**Example** (Usage)
+**Example** (Observing the winning fiber)
 
 ```ts
 import { Console, Duration, Effect } from "effect"

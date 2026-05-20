@@ -7,7 +7,7 @@ Forks an effect with the provided services, registers `onExit` as a fiber observ
 
 The returned interruptor calls `fiber.interruptUnsafe`, optionally with an interruptor id.
 
-**Example** (Usage)
+**Example** (Running with services and a callback)
 
 ```ts
 import { Console, Context, Effect, Exit } from "effect"

@@ -9,7 +9,7 @@ This is useful for connecting spans that are related but not in a direct
 parent-child relationship. For example, you might want to link spans from
 parallel operations or connect spans across different traces.
 
-**Example** (Usage)
+**Example** (Linking one span to another span)
 
 ```ts
 import { Effect } from "effect"
@@ -32,7 +32,7 @@ const program = Effect.gen(function*() {
 })
 ```
 
-**Example** (Usage)
+**Example** (Linking multiple spans at once)
 
 ```ts
 import { Effect } from "effect"

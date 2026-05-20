@@ -15,7 +15,7 @@ that can be observed or interrupted.
 Unless you specifically need a `Promise` or synchronous operation,
 `runFork` is a good default choice.
 
-**Example** (Running an Effect in the Background)
+**Example** (Running an effect in the background)
 
 ```ts
 import { Console, Effect, Fiber, Schedule } from "effect"

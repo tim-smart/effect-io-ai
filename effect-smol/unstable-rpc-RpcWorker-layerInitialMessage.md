@@ -12,6 +12,6 @@ capturing the layer context and dying if schema encoding fails.
 declare const layerInitialMessage: <S extends Schema.Top, R2>(schema: S, build: Effect.Effect<S["Type"], never, R2>) => Layer.Layer<InitialMessage, never, S["EncodingServices"] | R2>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RpcWorker.ts#L99)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RpcWorker.ts#L101)
 
 Since v4.0.0

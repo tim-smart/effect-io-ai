@@ -22,7 +22,7 @@ specifying an alternative action after repeated failures.
 
 - `retry` for a version that does not run a fallback effect.
 
-**Example** (Usage)
+**Example** (Falling back after retries are exhausted)
 
 ```ts
 import { Console, Data, Effect, Schedule } from "effect"

@@ -7,7 +7,7 @@ This function behaves like `interruptible`, but it also provides a
 `restore` function. This function can be used to restore the interruptibility
 of any specific region of code.
 
-**Example** (Usage)
+**Example** (Controlling interruptibility locally)
 
 ```ts
 import { Console, Effect } from "effect"

@@ -7,7 +7,7 @@ Performs this effect `n` times and collects results with `Effect.all` semantics.
 
 Use `concurrency` to control parallelism and `discard: true` to ignore results.
 
-**Example** (Usage)
+**Example** (Replicating an effect)
 
 ```ts
 import { Console, Effect } from "effect"

@@ -5,7 +5,7 @@ Module: `Effect`<br />
 
 Executes an effect synchronously with provided services.
 
-**Example** (Usage)
+**Example** (Running synchronously with services)
 
 ```ts
 import { Context, Effect } from "effect"

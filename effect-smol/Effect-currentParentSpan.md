@@ -11,7 +11,7 @@ The effect succeeds with either a local span or external span when one is
 present, and fails with `NoSuchElementError` when no parent span is
 available.
 
-**Example** (Usage)
+**Example** (Reading the parent span)
 
 ```ts
 import { Effect } from "effect"

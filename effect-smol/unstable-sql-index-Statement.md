@@ -11,6 +11,6 @@ Re-exports all named exports from the "./Statement.ts" module as `Statement`.
 export * as Statement from "./Statement.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L229)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L228)
 
 Since v4.0.0

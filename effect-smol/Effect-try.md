@@ -27,7 +27,7 @@ There are two ways to handle errors with `try`:
 - `sync` if the effectful computation is synchronous and does not
 throw errors.
 
-**Example** (Basic Usage with Default Error Handling)
+**Example** (Parsing JSON with typed error mapping)
 
 ```ts
 import { Effect } from "effect"
@@ -47,7 +47,7 @@ Effect.runPromiseExit(parseJSON("invalid json")).then(console.log)
 // Output: Exit.failure with Error
 ```
 
-**Example** (Custom Error Handling)
+**Example** (Mapping synchronous exceptions to a tagged error)
 
 ```ts
 import { Data, Effect } from "effect"

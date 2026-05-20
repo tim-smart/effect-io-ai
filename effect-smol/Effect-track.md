@@ -8,7 +8,7 @@ Updates the `Metric` every time the `Effect` is executed.
 Also accepts an optional function which can be used to map the `Exit` value
 of the `Effect` into a valid `Input` for the `Metric`.
 
-**Example** (Usage)
+**Example** (Incrementing a metric for each execution)
 
 ```ts
 import { Effect, Metric } from "effect"
@@ -28,7 +28,7 @@ Effect.runPromise(program).then(() =>
 )
 ```
 
-**Example** (Usage)
+**Example** (Mapping exits before updating a metric)
 
 ```ts
 import { Effect, Exit, Metric } from "effect"

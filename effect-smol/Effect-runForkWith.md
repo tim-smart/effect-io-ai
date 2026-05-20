@@ -5,7 +5,7 @@ Module: `Effect`<br />
 
 Runs an effect in the background with the provided services.
 
-**Example** (Usage)
+**Example** (Running with services in the background)
 
 ```ts
 import { Context, Effect } from "effect"

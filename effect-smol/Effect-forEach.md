@@ -27,7 +27,7 @@ collected, and the final result of the operation is `void`.
 
 - `all` for combining multiple effects into one.
 
-**Example** (Applying Effects to Iterable Elements)
+**Example** (Mapping over an iterable with effects)
 
 ```ts
 import { Console, Effect } from "effect"
@@ -48,7 +48,7 @@ Effect.runPromise(result).then(console.log)
 // [ 2, 4, 6, 8, 10 ]
 ```
 
-**Example** (Using discard to Ignore Results)
+**Example** (Running effects without collecting results)
 
 ```ts
 import { Console, Effect } from "effect"

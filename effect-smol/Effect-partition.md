@@ -14,7 +14,7 @@ The returned tuple is `[excluded, satisfying]`, where:
 This function runs every effect and never fails. Use `concurrency` to control
 parallelism.
 
-**Example** (Usage)
+**Example** (Separating successes and failures)
 
 ```ts
 import { Effect } from "effect"

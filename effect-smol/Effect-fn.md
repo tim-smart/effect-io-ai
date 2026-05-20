@@ -7,7 +7,7 @@ Creates a traced function with an optional span name and `SpanOptionsNoTrace` th
 
 Pipeable functions run after the body and can transform the resulting Effect.
 
-**Example** (Usage)
+**Example** (Defining traced effect functions)
 
 ```ts
 import { Console, Effect } from "effect"

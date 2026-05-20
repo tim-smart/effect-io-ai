@@ -11,6 +11,6 @@ Re-exports all named exports from the "./LogLevel.ts" module as `LogLevel`.
 export * as LogLevel from "./LogLevel.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L2777)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L2778)
 
 Since v2.0.0

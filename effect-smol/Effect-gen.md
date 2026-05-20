@@ -17,7 +17,7 @@ The generator functions work similarly to `async/await` but with more
 explicit control over the execution of effects. You can `yield*` values from
 effects and return the final result at the end.
 
-**Example** (Usage)
+**Example** (Sequencing effects with generators)
 
 ```ts
 import { Data, Effect } from "effect"

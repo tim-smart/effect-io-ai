@@ -9,7 +9,7 @@ Use this with tagged-union errors to perform side effects for one tag or a
 list of tags. When the handler succeeds, the original failure is preserved;
 if the handler fails, its error is also included in the returned effect.
 
-**Example** (Usage)
+**Example** (Running effects for tagged failures)
 
 ```ts
 import { Console, Data, Effect } from "effect"

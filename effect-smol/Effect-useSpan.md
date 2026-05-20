@@ -9,7 +9,7 @@ completes.
 The span is not added to the current span stack, so no child spans will be
 created for it.
 
-**Example** (Usage)
+**Example** (Running an effect with a standalone span)
 
 ```ts
 import { Effect } from "effect"

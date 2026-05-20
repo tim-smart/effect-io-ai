@@ -16,7 +16,7 @@ This is useful for differentiating between different types of errors, such as
 regular failures, defects, or interruptions. You can provide specific
 handling logic for each failure type based on the cause.
 
-**Example** (Usage)
+**Example** (Matching on success or failure causes)
 
 ```ts
 import { Cause, Effect } from "effect"

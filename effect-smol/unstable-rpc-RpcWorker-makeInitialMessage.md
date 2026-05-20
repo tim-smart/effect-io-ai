@@ -12,6 +12,6 @@ the encoded value together with collected transferables.
 declare const makeInitialMessage: <S extends Schema.Top, E, R2>(schema: S, effect: Effect.Effect<S["Type"], E, R2>) => Effect.Effect<readonly [data: unknown, transferables: ReadonlyArray<globalThis.Transferable>], E | Schema.SchemaError, S["EncodingServices"] | R2>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RpcWorker.ts#L74)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RpcWorker.ts#L76)
 
 Since v4.0.0

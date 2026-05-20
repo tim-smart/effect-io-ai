@@ -16,6 +16,6 @@ export interface Optional<Kind extends ParamKind, A> extends Param<Kind, Option.
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Param.ts#L246)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Param.ts#L247)
 
 Since v4.0.0

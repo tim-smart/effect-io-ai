@@ -23,7 +23,7 @@ it cannot recover from this failure.
 
 - `die` for a variant that dies with an already computed defect.
 
-**Example** (Terminating on Division by Zero with a Specified Error)
+**Example** (Failing when division by zero)
 
 ```ts
 import { Effect } from "effect"

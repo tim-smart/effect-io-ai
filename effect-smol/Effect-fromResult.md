@@ -5,7 +5,7 @@ Module: `Effect`<br />
 
 Converts a `Result` to an `Effect`.
 
-**Example** (Usage)
+**Example** (Converting a Result into an Effect)
 
 ```ts
 import { Effect, Result } from "effect"

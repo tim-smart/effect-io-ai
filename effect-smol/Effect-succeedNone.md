@@ -5,7 +5,7 @@ Module: `Effect`<br />
 
 Returns an effect which succeeds with `None`.
 
-**Example** (Usage)
+**Example** (Succeeding with Option.none)
 
 ```ts
 import { Effect } from "effect"

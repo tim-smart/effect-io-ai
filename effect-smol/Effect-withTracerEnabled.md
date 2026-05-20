@@ -10,7 +10,7 @@ Enables or disables tracing for spans created by the given effect.
 When `enabled` is `false`, spans created inside the effect are not registered
 with the current tracer and do not propagate as normal trace parents.
 
-**Example** (Usage)
+**Example** (Enabling or disabling tracing)
 
 ```ts
 import { Effect } from "effect"

@@ -6,7 +6,7 @@ Module: `Effect`<br />
 Runs the finalizer only when this effect fails and the `Cause` matches the
 provided predicate.
 
-**Example** (Usage)
+**Example** (Running cleanup for selected failures)
 
 ```ts
 import { Cause, Console, Effect } from "effect"

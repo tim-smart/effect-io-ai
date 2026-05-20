@@ -5,7 +5,7 @@ Module: `Effect`<br />
 
 Adds an annotation to each log line in this effect.
 
-**Example** (Usage)
+**Example** (Adding log annotations)
 
 ```ts
 import { Effect } from "effect"

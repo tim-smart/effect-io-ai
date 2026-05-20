@@ -27,7 +27,7 @@ time-to-live duration for the cached value.
 - `cachedInvalidateWithTTL` for a similar function that includes an
 additional effect for manually invalidating the cached value.
 
-**Example** (Usage)
+**Example** (Memoizing an effect until invalidated)
 
 ```ts
 import { Console, Effect } from "effect"

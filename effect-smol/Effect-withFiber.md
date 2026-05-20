@@ -5,7 +5,7 @@ Module: `Effect`<br />
 
 Provides access to the current fiber within an effect computation.
 
-**Example** (Usage)
+**Example** (Reading the current fiber)
 
 ```ts
 import { Effect } from "effect"

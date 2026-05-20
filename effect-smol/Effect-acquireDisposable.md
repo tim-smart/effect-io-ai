@@ -19,7 +19,7 @@ function.
 
 - [JavaScript `using` declarations](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/using)
 
-**Example** (Usage)
+**Example** (Acquiring a disposable resource)
 
 ```ts
 import sqlite from "node:sqlite";

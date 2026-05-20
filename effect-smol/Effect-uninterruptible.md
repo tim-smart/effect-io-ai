@@ -5,7 +5,7 @@ Module: `Effect`<br />
 
 Returns a new effect that disables interruption for the given effect.
 
-**Example** (Usage)
+**Example** (Preventing interruption)
 
 ```ts
 import { Console, Effect, Fiber } from "effect"

@@ -23,7 +23,7 @@ terminates, the child fiber will be terminated as well, ensuring that no
 fibers leak. This behavior is called "auto supervision", and if this
 behavior is not desired, you may use the `forkDetach` or `forkIn` methods.
 
-**Example** (Usage)
+**Example** (Forking a child fiber)
 
 ```ts
 import { Effect, Fiber } from "effect"

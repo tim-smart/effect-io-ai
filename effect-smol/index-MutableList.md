@@ -11,6 +11,6 @@ Re-exports all named exports from the "./MutableList.ts" module as `MutableList`
 export * as MutableList from "./MutableList.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L3095)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L3091)
 
 Since v4.0.0

@@ -17,7 +17,7 @@ declare const txRetry: Effect<never, never, Transaction>
 
 Since v4.0.0
 
-**Example** (Usage)
+**Example** (Retrying transactions)
 
 ```ts
 import { Effect, TxRef } from "effect"

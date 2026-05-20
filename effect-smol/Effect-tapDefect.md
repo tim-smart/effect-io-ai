@@ -12,7 +12,7 @@ values passed to `die`. Recoverable failures are not handled. When the
 operation succeeds, the original defect is preserved; if the operation fails,
 its error is also represented in the returned effect.
 
-**Example** (Usage)
+**Example** (Observing defects)
 
 ```ts
 import { Console, Effect } from "effect"

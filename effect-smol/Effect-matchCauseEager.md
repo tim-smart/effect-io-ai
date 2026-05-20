@@ -17,7 +17,7 @@ This is useful when you have effects that are likely to be already resolved
 and you want to avoid the overhead of the effect pipeline. For pending effects,
 it automatically falls back to the regular `matchCause` behavior.
 
-**Example** (Usage)
+**Example** (Eagerly matching already completed effects)
 
 ```ts
 import { Effect } from "effect"

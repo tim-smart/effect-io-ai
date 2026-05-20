@@ -9,7 +9,7 @@ function.
 The service must be available in the effect's context; `updateService`
 replaces it for the wrapped effect with the value returned by the updater.
 
-**Example** (Usage)
+**Example** (Replacing a service for one effect)
 
 ```ts
 import { Console, Context, Effect } from "effect"

@@ -8,7 +8,7 @@ Creates untraced function effects with eager evaluation optimization.
 Executes generator functions eagerly when all yielded effects are synchronous,
 stopping at the first async effect and deferring to normal execution.
 
-**Example** (Usage)
+**Example** (Defining eager untraced effect functions)
 
 ```ts
 import { Effect } from "effect"

@@ -5,7 +5,7 @@ Module: `Effect`<br />
 
 Yields control back to the Effect runtime with a specified priority, allowing other fibers to execute.
 
-**Example** (Usage)
+**Example** (Yielding with priority)
 
 ```ts
 import { Effect } from "effect"

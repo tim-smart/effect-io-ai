@@ -5,7 +5,7 @@ Module: `Effect`<br />
 
 Executes an effect as a Promise with the provided services.
 
-**Example** (Usage)
+**Example** (Running with services as a promise)
 
 ```ts
 import { Context, Effect } from "effect"

@@ -18,7 +18,7 @@ the effect pipeline.
 - For **Failure effects**: Returns the failure as-is without applying the mapping
 - For **Pending effects**: Falls back to the regular `map` behavior
 
-**Example** (Usage)
+**Example** (Mapping already completed effects)
 
 ```ts
 import { Effect } from "effect"

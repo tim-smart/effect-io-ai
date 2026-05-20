@@ -26,6 +26,6 @@ const port = Param.optional(Param.integer(Param.flagKind, "port"))
 declare const optional: <Kind extends ParamKind, A>(param: Param<Kind, A>) => Param<Kind, Option.Option<A>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Param.ts#L1186)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Param.ts#L1218)
 
 Since v4.0.0

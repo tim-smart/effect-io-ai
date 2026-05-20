@@ -5,7 +5,7 @@ Module: `Effect`<br />
 
 Returns a new effect that allows the effect to be interruptible.
 
-**Example** (Usage)
+**Example** (Allowing interruption)
 
 ```ts
 import { Effect } from "effect"

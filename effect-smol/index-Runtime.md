@@ -11,6 +11,6 @@ Re-exports all named exports from the "./Runtime.ts" module as `Runtime`.
 export * as Runtime from "./Runtime.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L4454)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L4447)
 
 Since v4.0.0

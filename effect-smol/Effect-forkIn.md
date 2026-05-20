@@ -6,7 +6,7 @@ Module: `Effect`<br />
 Forks the effect in the specified scope. The fiber will be interrupted
 when the scope is closed.
 
-**Example** (Usage)
+**Example** (Forking into a supplied scope)
 
 ```ts
 import { Effect } from "effect"

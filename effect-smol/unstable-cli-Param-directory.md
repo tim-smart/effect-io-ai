@@ -30,6 +30,6 @@ const sourceDir = Param.directory(Param.flagKind, "source", { mustExist: true })
 declare const directory: <Kind extends ParamKind>(kind: Kind, name: string, options?: { readonly mustExist?: boolean | undefined; }) => Param<Kind, string>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Param.ts#L663)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Param.ts#L666)
 
 Since v4.0.0

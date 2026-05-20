@@ -14,7 +14,7 @@ fed back into the schedule to decide whether to continue. The returned effect
 succeeds with the schedule output when the schedule completes and fails if
 the effect or schedule fails.
 
-**Example** (Usage)
+**Example** (Scheduling from an initial value)
 
 ```ts
 import { Console, Effect, Schedule } from "effect"

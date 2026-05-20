@@ -11,7 +11,7 @@ treating the previously successful values as errors and vice versa. This can
 be helpful in scenarios where you want to handle a success as a failure or
 treat an error as a valid result.
 
-**Example** (Usage)
+**Example** (Swapping success and failure channels)
 
 ```ts
 import { Effect } from "effect"

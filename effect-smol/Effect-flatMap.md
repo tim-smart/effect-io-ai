@@ -32,7 +32,7 @@ Use `flatMap` when you need to chain multiple effects, ensuring that each
 step produces a new `Effect` while flattening any nested effects that may
 occur.
 
-**Example** (Usage)
+**Example** (Sequencing dependent effects)
 
 ```ts
 import { Data, Effect, pipe } from "effect"

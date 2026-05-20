@@ -5,7 +5,7 @@ Module: `Effect`<br />
 
 Yields control back to the Effect runtime, allowing other fibers to execute.
 
-**Example** (Usage)
+**Example** (Yielding to other fibers)
 
 ```ts
 import { Effect } from "effect"

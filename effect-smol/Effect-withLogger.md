@@ -5,7 +5,7 @@ Module: `Effect`<br />
 
 Adds a logger to the set of loggers which will output logs for this effect.
 
-**Example** (Usage)
+**Example** (Adding a logger to an effect)
 
 ```ts
 import { Effect, Logger } from "effect"

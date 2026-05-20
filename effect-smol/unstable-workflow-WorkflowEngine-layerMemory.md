@@ -13,6 +13,6 @@ provide durability guarantees.
 declare const layerMemory: Layer.Layer<WorkflowEngine, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/WorkflowEngine.ts#L565)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/WorkflowEngine.ts#L561)
 
 Since v4.0.0

@@ -6,7 +6,7 @@ Module: `Effect`<br />
 Ensures that a cleanup functions runs, whether this effect succeeds, fails,
 or is interrupted.
 
-**Example** (Usage)
+**Example** (Observing every exit)
 
 ```ts
 import { Console, Effect, Exit } from "effect"

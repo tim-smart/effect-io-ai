@@ -8,7 +8,7 @@ Measures the runtime of an effect and returns the duration with its result.
 The original success, failure, or interruption is preserved; only the success
 value is paired with the duration.
 
-**Example** (Usage)
+**Example** (Measuring execution time)
 
 ```ts
 import { Console, Duration, Effect } from "effect"

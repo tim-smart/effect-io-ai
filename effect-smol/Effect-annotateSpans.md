@@ -5,7 +5,7 @@ Module: `Effect`<br />
 
 Adds an annotation to each span in this effect.
 
-**Example** (Usage)
+**Example** (Annotating all spans)
 
 ```ts
 import { Effect } from "effect"

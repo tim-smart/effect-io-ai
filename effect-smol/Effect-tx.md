@@ -20,7 +20,7 @@ In Effect transactions are optimistic with retry, that means transactions are re
 The outermost `tx` call creates the transaction boundary and commits or rolls back the full
 composed transaction.
 
-**Example** (Usage)
+**Example** (Running a transaction)
 
 ```ts
 import { Effect, TxRef } from "effect"

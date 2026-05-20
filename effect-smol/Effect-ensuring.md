@@ -13,7 +13,7 @@ Finalizers offer very powerful guarantees, but they are low-level, and
 should generally not be used for releasing resources. For higher-level
 logic built on `ensuring`, see the `acquireRelease` family of methods.
 
-**Example** (Usage)
+**Example** (Always running cleanup)
 
 ```ts
 import { Console, Effect } from "effect"

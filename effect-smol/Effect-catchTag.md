@@ -16,7 +16,7 @@ handling, ensuring that only specific errors are caught and handled.
 The error type must have a readonly `_tag` field to use `catchTag`. This
 field is used to identify and match errors.
 
-**Example** (Usage)
+**Example** (Handling a tagged error)
 
 ```ts
 import { Effect } from "effect"

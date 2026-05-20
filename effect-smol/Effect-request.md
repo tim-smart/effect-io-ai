@@ -15,7 +15,7 @@ declare const request: { <A extends Request.Any, EX = never, RX = never>(resolve
 
 Since v2.0.0
 
-**Example** (Usage)
+**Example** (Executing a request through a resolver)
 
 ```ts
 import { Console, Effect, Exit, Request, RequestResolver } from "effect"

@@ -5,7 +5,7 @@ Module: `Effect`<br />
 
 Repeats this effect forever (until the first error).
 
-**Example** (Usage)
+**Example** (Repeating forever)
 
 ```ts
 import { Console, Effect, Fiber } from "effect"

@@ -13,7 +13,7 @@ and the latest schedule metadata when at least one schedule step has run;
 otherwise it receives `None`. If the schedule completes normally, the
 returned effect succeeds with the schedule's output.
 
-**Example** (Usage)
+**Example** (Recovering after repetition stops)
 
 ```ts
 import { Console, Effect, Option, Schedule } from "effect"

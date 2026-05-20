@@ -12,7 +12,7 @@ If all effects succeed, it returns all collected successes.
 Use `discard: true` to ignore successful values while still validating all
 elements.
 
-**Example** (Usage)
+**Example** (Validating every element)
 
 ```ts
 import { Effect } from "effect"

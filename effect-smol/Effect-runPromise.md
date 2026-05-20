@@ -18,7 +18,7 @@ effect fails, the promise will reject with an error.
 
 - `runPromiseExit` for a version that returns an `Exit` type instead of rejecting.
 
-**Example** (Running a Successful Effect as a Promise)
+**Example** (Running a successful effect as a Promise)
 
 ```ts
 import { Effect } from "effect"
@@ -27,7 +27,7 @@ Effect.runPromise(Effect.succeed(1)).then(console.log)
 // Output: 1
 ```
 
-**Example** (Usage)
+**Example** (Running effects as promises)
 
 ```ts
 //Example: Handling a Failing Effect as a Rejected Promise

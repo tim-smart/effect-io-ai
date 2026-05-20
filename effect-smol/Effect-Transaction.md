@@ -8,7 +8,7 @@ Service that holds the current transaction state, it includes
 - a journal that stores any non committed change to TxRef values
 - a retry flag to know if the transaction should be retried
 
-**Example** (Usage)
+**Example** (Building transactions)
 
 ```ts
 import { Effect } from "effect"

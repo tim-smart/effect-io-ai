@@ -17,7 +17,7 @@ effect from the registration function to run if the fiber is interrupted.
 Use `Effect.callback` when integrating APIs that complete through callbacks
 instead of returning a `Promise`.
 
-**Example** (Usage)
+**Example** (Integrating callback APIs)
 
 ```ts
 import { Effect } from "effect"

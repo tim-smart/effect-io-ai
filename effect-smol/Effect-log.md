@@ -5,7 +5,7 @@ Module: `Effect`<br />
 
 Logs one or more messages using the default log level.
 
-**Example** (Usage)
+**Example** (Logging at the default level)
 
 ```ts
 import { Effect } from "effect"

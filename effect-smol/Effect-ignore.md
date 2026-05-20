@@ -14,7 +14,7 @@ effects of the effect and do not need to handle or process its outcome.
 Use the `log` option to emit the full `Cause` when the effect fails,
 and `message` to prepend a custom log message.
 
-**Example** (Using Effect.ignore to Discard Values)
+**Example** (Discarding success and failure values)
 
 ```ts
 import { Effect } from "effect"

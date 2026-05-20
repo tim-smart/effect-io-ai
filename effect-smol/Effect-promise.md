@@ -29,7 +29,7 @@ wrapped `Promise` API.
 
 - `tryPromise` for a version that can handle failures.
 
-**Example** (Delayed Message)
+**Example** (Wrapping a non-rejecting Promise)
 
 ```ts
 import { Effect } from "effect"

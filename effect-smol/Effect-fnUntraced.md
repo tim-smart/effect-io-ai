@@ -7,7 +7,7 @@ Creates an Effect-returning function without tracing.
 
 `Effect.fnUntraced` also acts as a `pipe` function, so you can append transforms after the body.
 
-**Example** (Usage)
+**Example** (Defining untraced effect functions)
 
 ```ts
 import { Console, Effect } from "effect"

@@ -6,7 +6,7 @@ Module: `Effect`<br />
 Promotes nested reason errors into the Effect error channel, replacing
 the parent error.
 
-**Example** (Usage)
+**Example** (Extracting the reason from a tagged error)
 
 ```ts
 import { Data, Effect } from "effect"

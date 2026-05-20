@@ -15,7 +15,7 @@ and is guaranteed to run when that scope closes. The finalizer receives the
 By default, acquisition is protected by an uninterruptible region. Pass
 `{ interruptible: true }` to allow the acquisition effect to be interrupted.
 
-**Example** (Usage)
+**Example** (Acquiring and releasing a resource)
 
 ```ts
 import { Console, Effect, Exit } from "effect"

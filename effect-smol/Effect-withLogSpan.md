@@ -5,7 +5,7 @@ Module: `Effect`<br />
 
 Adds a span to each log line in this effect.
 
-**Example** (Usage)
+**Example** (Adding a log span)
 
 ```ts
 import { Effect } from "effect"

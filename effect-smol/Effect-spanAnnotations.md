@@ -10,7 +10,7 @@ Returns the tracing span annotations currently carried in the effect context.
 These annotations are applied to spans created inside the context, such as
 spans created by `withSpan`, `useSpan`, or `makeSpan`.
 
-**Example** (Usage)
+**Example** (Providing span annotations)
 
 ```ts
 import { Effect } from "effect"

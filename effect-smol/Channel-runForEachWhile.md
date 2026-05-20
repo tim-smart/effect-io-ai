@@ -15,6 +15,6 @@ consumption early. The returned effect completes with `void`.
 declare const runForEachWhile: { <OutElem, EX, RX>(f: (o: OutElem) => Effect.Effect<boolean, EX, RX>): <OutErr, OutDone, Env>(self: Channel<OutElem, OutErr, OutDone, unknown, unknown, unknown, Env>) => Effect.Effect<void, OutErr | EX, Env | RX>; <OutElem, OutErr, OutDone, Env, EX, RX>(self: Channel<OutElem, OutErr, OutDone, unknown, unknown, unknown, Env>, f: (o: OutElem) => Effect.Effect<boolean, EX, RX>): Effect.Effect<void, OutErr | EX, Env | RX>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L7505)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L7510)
 
 Since v4.0.0

@@ -8,7 +8,7 @@ Converts an `Option` into an `Effect`.
 `Option.some` becomes a successful effect with the contained value, while
 `Option.none` becomes a failed effect with `NoSuchElementError`.
 
-**Example** (Usage)
+**Example** (Converting an Option into an Effect)
 
 ```ts
 import { Effect, Option } from "effect"

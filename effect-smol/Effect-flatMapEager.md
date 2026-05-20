@@ -18,7 +18,7 @@ the effect pipeline.
 - For **Failure effects**: Returns the failure as-is without applying the flatMap
 - For **Pending effects**: Falls back to the regular `flatMap` behavior
 
-**Example** (Usage)
+**Example** (Flat mapping eagerly when possible)
 
 ```ts
 import { Effect } from "effect"

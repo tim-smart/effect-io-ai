@@ -29,6 +29,6 @@ console.log(makeDebugParam(false) === disabledDebugParam) // true
 declare const none: <Kind extends ParamKind>(kind: Kind) => Param<Kind, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Param.ts#L920)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Param.ts#L923)
 
 Since v4.0.0

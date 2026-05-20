@@ -8,7 +8,7 @@ Ensures that an effect's success type extends a given type `A`.
 This function provides compile-time type checking to ensure that the success
 value of an effect conforms to a specific type constraint.
 
-**Example** (Usage)
+**Example** (Constraining the success type)
 
 ```ts
 import { Effect } from "effect"

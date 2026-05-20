@@ -18,7 +18,7 @@ succeeds with `false`, the source effect is skipped and the result is
 Use this when an effectful check decides whether to run another effect while
 representing the skipped case explicitly.
 
-**Example** (Usage)
+**Example** (Conditionally running an effect)
 
 ```ts
 import { Console, Effect } from "effect"

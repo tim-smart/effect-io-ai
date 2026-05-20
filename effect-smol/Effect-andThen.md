@@ -31,7 +31,7 @@ the next `Effect`.
 Failures or requirements from either effect are preserved in the returned
 effect.
 
-**Example** (Applying a Discount Based on Fetched Amount)
+**Example** (Sequencing a discount calculation after fetching a total)
 
 ```ts
 import { Data, Effect, pipe } from "effect"

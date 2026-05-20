@@ -11,7 +11,7 @@ This function provides multiple services at once by supplying a context
 that contains all the required services. It removes the provided services
 from the effect's requirements, making them available to the effect.
 
-**Example** (Usage)
+**Example** (Providing a complete context)
 
 ```ts
 import { Context, Effect } from "effect"
