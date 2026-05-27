@@ -7,7 +7,7 @@ Stringifies a present value using `JSON.stringify`.
 
 **When to use**
 
-- A decoded value needs to be serialized to JSON text during encoding.
+Use when a decoded value needs to be serialized to JSON text during encoding.
 
 **Details**
 
@@ -31,7 +31,7 @@ const stringify = SchemaGetter.stringifyJson()
 
 **See**
 
-- `parseJson` - inverse operation
+- `parseJson` for the inverse operation
 
 **Signature**
 

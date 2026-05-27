@@ -7,7 +7,7 @@ Creates an equivalence relation that uses strict equality (`===`) to compare val
 
 **When to use**
 
-- Use for primitive types where `===` is appropriate
+Use when you need primitive types where `===` is appropriate
 - Use when you need reference equality for objects
 - Use as a building block for more complex equivalences via `mapInput` or `combine`
 - Use when performance is critical and you do not need structural equality

@@ -38,6 +38,6 @@ type CustomTags = Match.Types.Tags<
 type Tags<D, P> = P extends Record<D, infer X> ? X : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L2319)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L2515)
 
 Since v4.0.0

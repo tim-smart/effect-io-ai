@@ -7,8 +7,8 @@ Represents the result of an Effect computation.
 
 **When to use**
 
-- Use when you need to synchronously inspect whether a computation succeeded or failed
-- Use as an alternative to try/catch for Effect-based code
+Use when you need to synchronously inspect whether an Effect computation
+succeeded or failed.
 
 **Details**
 

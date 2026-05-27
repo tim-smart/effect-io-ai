@@ -7,8 +7,7 @@ Constrains a type to prevent excess properties not present in `T`.
 
 **When to use**
 
-Use in generic functions to catch accidental extra properties at compile
-time.
+Use to catch accidental extra properties in generic functions at compile time.
 
 **Details**
 
@@ -32,6 +31,6 @@ type Result = Types.NoExcessProperties<Expected, Input>
 type NoExcessProperties<T, U> = T & Readonly<Record<Exclude<keyof U, keyof T>, never>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Types.ts#L854)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Types.ts#L885)
 
 Since v3.9.0

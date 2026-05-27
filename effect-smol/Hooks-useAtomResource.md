@@ -11,6 +11,6 @@ Converts an `AsyncResult` atom into a Solid resource.
 declare const useAtomResource: <A, E>(atom: () => Atom.Atom<AsyncResult.AsyncResult<A, E>>, options?: ResourceOptions<A> & { readonly suspendOnWaiting?: boolean | undefined; }) => ResourceReturn<A, void>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/atom/solid/src/Hooks.ts#L236)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/atom/solid/src/Hooks.ts#L270)
 
 Since v4.0.0

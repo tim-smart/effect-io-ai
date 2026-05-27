@@ -6,12 +6,27 @@ Module: `ClusterMetrics`<br />
 Gauge tracking the number of active entity instances for each entity type on
 the current runner.
 
+**Details**
+
+Bigint gauge named `effect_cluster_entities`, updated with the entity type as
+a metric tag.
+
+**Gotchas**
+
+This gauge is runner-local and sampled by the entity manager loop. Aggregate
+across runners and expect up to roughly one polling interval of lag.
+
+**See**
+
+- `singletons` for singleton process counts on the current runner
+- `shards` for shard ownership on the current runner
+
 **Signature**
 
 ```ts
 declare const entities: Metric.Gauge<bigint>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ClusterMetrics.ts#L35)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ClusterMetrics.ts#L48)
 
 Since v4.0.0

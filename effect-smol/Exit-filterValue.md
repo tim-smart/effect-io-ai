@@ -3,25 +3,33 @@ Module: `Exit`<br />
 
 ## Exit.filterValue
 
-Extracts the success value from an Exit for use in filter pipelines.
+Extracts the success value from an Exit as a Result.
 
 **When to use**
 
-- Use with Filter-based composition when you want the raw value, not the Success wrapper
+Use when composing Exit checks with `Filter` or other `Result`-based
+filtering APIs and you want the raw success value rather than the Success
+wrapper.
 
 **Details**
 
-- Returns the value `A` if the Exit succeeded, or a `Filter.fail` wrapping the Failure otherwise
+Returns `Result.succeed(value)` when the Exit is a Success, or
+`Result.fail(failure)` with the original Failure otherwise.
+
+**Gotchas**
+
+This is not an `Option` accessor or an Effect failure. A failed extraction is
+represented as data in the `Result` failure channel.
 
 **Example** (Filtering for the value)
 
 ```ts
-import { Exit, Filter } from "effect"
+import { Exit, Result } from "effect"
 
 const exit = Exit.succeed(42)
 const result = Exit.filterValue(exit)
-// If exit is a success, result is 42
-// If exit is a failure, result is a Filter.fail marker
+
+console.log(Result.isSuccess(result) && result.success) // 42
 ```
 
 **See**
@@ -35,6 +43,6 @@ const result = Exit.filterValue(exit)
 declare const filterValue: <A, E>(self: Exit<A, E>) => Result.Result<A, Failure<never, E>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Exit.ts#L625)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Exit.ts#L649)
 
 Since v4.0.0

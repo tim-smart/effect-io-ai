@@ -5,6 +5,11 @@ Module: `Clock`<br />
 
 Returns an Effect that succeeds with the current time in milliseconds.
 
+**When to use**
+
+Use to read wall-clock time from the active Clock service with millisecond
+precision.
+
 **Example** (Reading milliseconds)
 
 ```ts
@@ -17,12 +22,17 @@ const program = Effect.gen(function*() {
 })
 ```
 
+**See**
+
+- `currentTimeNanos` for nanosecond precision
+- `clockWith` for accessing the full Clock service
+
 **Signature**
 
 ```ts
 declare const currentTimeMillis: Effect<number, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Clock.ts#L169)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Clock.ts#L221)
 
 Since v2.0.0

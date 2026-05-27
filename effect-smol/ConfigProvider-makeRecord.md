@@ -8,7 +8,7 @@ child keys.
 
 **When to use**
 
-Use this when describing a directory or JSON object inside a custom
+Use when describing a directory or JSON object inside a custom
 provider.
 
 **Details**

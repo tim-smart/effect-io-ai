@@ -7,7 +7,7 @@ Parses a raw OpenAPI 3.0 JSON Schema into a `Document<"draft-2020-12">`.
 
 **When to use**
 
-Use this when consuming schemas from an OpenAPI 3.0 specification.
+Use when consuming schemas from an OpenAPI 3.0 specification.
 
 **Details**
 
@@ -43,6 +43,6 @@ console.log(doc.schema.type) // ["string", "null"]
 declare const fromSchemaOpenApi3_0: (schema: JsonSchema) => Document<"draft-2020-12">
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/JsonSchema.ts#L499)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/JsonSchema.ts#L553)
 
 Since v4.0.0

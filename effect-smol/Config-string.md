@@ -7,7 +7,7 @@ Creates a config for a single string value.
 
 **When to use**
 
-- Reading a single string env var or config key.
+Use when reading a single string env var or config key.
 
 **Details**
 
@@ -35,6 +35,6 @@ const provider = ConfigProvider.fromUnknown({ HOST: "localhost" })
 declare const string: (name?: string) => Config<string>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Config.ts#L941)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Config.ts#L954)
 
 Since v2.0.0

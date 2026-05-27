@@ -7,7 +7,7 @@ Parses a cron expression into a `Cron` instance, throwing on failure.
 
 **When to use**
 
-Use this when the input is expected to be valid and you want to avoid
+Use when the input is expected to be valid and you want to avoid
 handling the `Result` type.
 
 **Example** (Parsing cron expressions unsafely)
@@ -31,6 +31,6 @@ const cronWithTz = Cron.parseUnsafe("0 0 9 * * *", "America/New_York")
 declare const parseUnsafe: (cron: string, tz?: DateTime.TimeZone | string) => Cron
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cron.ts#L611)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cron.ts#L656)
 
 Since v4.0.0

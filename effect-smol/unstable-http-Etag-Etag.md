@@ -11,6 +11,6 @@ Represents an HTTP entity tag, either weak or strong.
 type Etag = Weak | Strong
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Etag.ts#L32)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Etag.ts#L46)
 
 Since v4.0.0

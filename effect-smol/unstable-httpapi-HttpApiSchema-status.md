@@ -17,6 +17,6 @@ common literal name (for example, `"Created"`).
 declare const status: { (code: number): <S extends Schema.Top>(self: S) => S["Rebuild"]; (code: StatusLiteral): <S extends Schema.Top>(self: S) => S["Rebuild"]; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiSchema.ts#L179)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiSchema.ts#L182)
 
 Since v4.0.0

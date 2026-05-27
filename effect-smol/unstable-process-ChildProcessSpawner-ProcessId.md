@@ -12,6 +12,6 @@ child process.
 type ProcessId = Brand.Branded<number, "ProcessId">
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ChildProcessSpawner.ts#L42)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ChildProcessSpawner.ts#L54)
 
 Since v4.0.0

@@ -7,7 +7,7 @@ Converts one or more Schema ASTs into a `MultiDocument`.
 
 **When to use**
 
-Use this when you have multiple schemas that may share references.
+Use when you have multiple schemas that may share references.
 
 **Details**
 
@@ -25,6 +25,6 @@ a single `references` map.
 declare const fromASTs: (asts: readonly [AST.AST, ...Array<AST.AST>]) => MultiDocument
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaRepresentation.ts#L1674)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaRepresentation.ts#L1718)
 
 Since v4.0.0

@@ -12,6 +12,6 @@ Creates a client `Protocol` that sends each RPC request through the supplied
 declare const makeProtocolHttp: (client: HttpClient.HttpClient) => Effect.Effect<Protocol["Service"], never, RpcSerialization.RpcSerialization>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RpcClient.ts#L879)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RpcClient.ts#L888)
 
 Since v4.0.0

@@ -7,7 +7,7 @@ Creates an `Optional` from a fallible getter and a fallible setter.
 
 **When to use**
 
-- Both reading and writing can fail.
+Use when both reading and writing can fail.
 
 **Details**
 

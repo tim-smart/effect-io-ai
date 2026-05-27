@@ -11,6 +11,6 @@ Re-exports all named exports from the "./PrometheusMetrics.ts" module as `Promet
 export * as PrometheusMetrics from "./PrometheusMetrics.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L228)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L45)
 
 Since v4.0.0

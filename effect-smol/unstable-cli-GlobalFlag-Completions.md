@@ -3,8 +3,13 @@ Module: `GlobalFlag`<br />
 
 ## GlobalFlag.Completions
 
-The `--completions` global flag.
-Prints shell completion script for the given shell.
+The `--completions` global flag, which prints a shell completion script for
+the given shell.
+
+**Details**
+
+Accepted values are `bash`, `zsh`, `fish`, and `sh`; `sh` is normalized to
+`bash`.
 
 **Signature**
 
@@ -12,6 +17,6 @@ Prints shell completion script for the given shell.
 declare const Completions: Action<Option.Option<"bash" | "zsh" | "fish">>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/GlobalFlag.ts#L203)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/GlobalFlag.ts#L211)
 
 Since v4.0.0

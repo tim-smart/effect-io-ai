@@ -16,6 +16,6 @@ lifetimes.
 declare const layerMemory: Layer.Layer<EventJournal, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventJournal.ts#L499)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventJournal.ts#L516)
 
 Since v4.0.0

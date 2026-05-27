@@ -19,6 +19,6 @@ type ToHandler<R> = R extends Rpc<
   never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Rpc.ts#L626)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Rpc.ts#L637)
 
 Since v4.0.0

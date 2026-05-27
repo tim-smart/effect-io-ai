@@ -5,6 +5,10 @@ Module: `Cron`<br />
 
 Checks if a given value is a Cron instance.
 
+**When to use**
+
+Use to narrow an unknown value before treating it as a `Cron` schedule.
+
 **Details**
 
 This function is a type guard that determines whether the provided
@@ -29,12 +33,17 @@ console.log(Cron.isCron({})) // false
 console.log(Cron.isCron("not a cron")) // false
 ```
 
+**See**
+
+- `make` for constructing a `Cron` value directly
+- `parse` for constructing a `Cron` value from a string
+
 **Signature**
 
 ```ts
 declare const isCron: (u: unknown) => u is Cron
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cron.ts#L261)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cron.ts#L278)
 
 Since v2.0.0

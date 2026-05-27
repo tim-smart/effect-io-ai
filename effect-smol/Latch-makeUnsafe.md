@@ -7,8 +7,7 @@ Creates a `Latch` synchronously, outside of `Effect`.
 
 **When to use**
 
-Use this only when synchronous allocation is required; otherwise prefer
-`make`.
+Use when synchronous allocation is required outside an Effect workflow.
 
 **Details**
 
@@ -36,12 +35,16 @@ const opener = Effect.gen(function*() {
 const program = Effect.all([waiter, opener])
 ```
 
+**See**
+
+- `make` for creating a latch inside Effect code
+
 **Signature**
 
 ```ts
 declare const makeUnsafe: (open?: boolean | undefined) => Latch
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Latch.ts#L123)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Latch.ts#L182)
 
 Since v4.0.0

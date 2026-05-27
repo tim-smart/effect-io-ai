@@ -5,12 +5,18 @@ Module: `EmbeddingModel`<br />
 
 Token usage metadata for embedding operations.
 
+**Details**
+
+Contains optional provider-reported `inputTokens`. The value may be
+`undefined` when the provider does not report usage or when `embedMany([])`
+bypasses the provider.
+
 **Signature**
 
 ```ts
 declare class EmbeddingUsage
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EmbeddingModel.ts#L52)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EmbeddingModel.ts#L106)
 
 Since v4.0.0

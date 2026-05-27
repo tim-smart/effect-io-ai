@@ -8,7 +8,7 @@ to `T | undefined`.
 
 **When to use**
 
-- Converting undefined-or API fields to `Option`.
+Use to convert undefined-or API fields to `Option`.
 
 **Details**
 

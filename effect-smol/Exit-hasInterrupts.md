@@ -7,7 +7,7 @@ Tests whether a failed Exit contains interruptions (Interrupt reasons).
 
 **When to use**
 
-- Use to check if a fiber was interrupted
+Use to check if a fiber was interrupted
 
 **Details**
 
@@ -37,6 +37,6 @@ console.log(Exit.hasInterrupts(Exit.succeed(42)))   // false
 declare const hasInterrupts: <A, E>(self: Exit<A, E>) => self is Failure<A, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Exit.ts#L563)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Exit.ts#L572)
 
 Since v4.0.0

@@ -7,7 +7,7 @@ Converts a `Result` into an `Option`, keeping only the success value.
 
 **When to use**
 
-- Discarding the failure channel when you only care about success
+Use when discarding the failure channel when you only care about success
 
 **Details**
 
@@ -36,6 +36,6 @@ console.log(Option.getSuccess(Result.fail("err")))
 declare const getSuccess: <A, E>(self: Result<A, E>) => Option<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L582)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L609)
 
 Since v4.0.0

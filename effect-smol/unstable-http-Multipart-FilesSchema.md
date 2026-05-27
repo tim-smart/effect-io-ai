@@ -11,6 +11,6 @@ Schema for an array of persisted multipart files.
 declare const FilesSchema: Schema.$Array<PersistedFileSchema>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Multipart.ts#L308)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Multipart.ts#L328)
 
 Since v4.0.0

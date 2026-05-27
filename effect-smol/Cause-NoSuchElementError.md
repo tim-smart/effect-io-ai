@@ -5,6 +5,10 @@ Module: `Cause`<br />
 
 An error indicating that an expected value was absent.
 
+**When to use**
+
+Use to model APIs that intentionally turn absence into an error.
+
 **Details**
 
 Used by APIs that convert absence into an exception or effect failure, such
@@ -13,8 +17,9 @@ yielded directly in `Effect.gen`.
 
 **Gotchas**
 
-Safe lookup APIs that return `Option` should document the `None` case rather
-than describing it as a thrown `NoSuchElementError`.
+Prefer APIs that return `Option` or a typed failure when absence is an
+expected case. This error is mainly for APIs that intentionally turn absence
+into a thrown value or failed effect.
 
 **Example** (creating and checking)
 
@@ -26,11 +31,6 @@ console.log(error._tag)    // "NoSuchElementError"
 console.log(error.message) // "Element not found"
 ```
 
-**See**
-
-- `isNoSuchElementError` — type guard
-- `| NoSuchElementError constructor`
-
 **Signature**
 
 ```ts
@@ -40,6 +40,6 @@ export interface NoSuchElementError extends YieldableError {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L1213)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L1315)
 
 Since v4.0.0

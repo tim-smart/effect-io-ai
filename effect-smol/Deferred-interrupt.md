@@ -5,6 +5,10 @@ Module: `Deferred`<br />
 
 Attempts to complete the `Deferred` with interruption by the current fiber.
 
+**When to use**
+
+Use to complete a `Deferred` as interrupted by the current fiber.
+
 **Details**
 
 Fibers waiting on the `Deferred` are interrupted with the current fiber id
@@ -30,6 +34,6 @@ const program = Effect.gen(function*() {
 declare const interrupt: <A, E>(self: Deferred<A, E>) => Effect<boolean>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Deferred.ts#L592)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Deferred.ts#L674)
 
 Since v2.0.0

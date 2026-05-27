@@ -6,6 +6,10 @@ Module: `Array`<br />
 Applies a function to the first element of a non-empty array, returning a
 new array.
 
+**When to use**
+
+Use to transform the first element of a non-empty array while preserving the rest.
+
 **Example** (Modifying the head)
 
 ```ts
@@ -25,6 +29,6 @@ console.log(Array.modifyHeadNonEmpty([1, 2, 3], (n) => n * 10)) // [10, 2, 3]
 declare const modifyHeadNonEmpty: { <A, B>(f: (a: A) => B): (self: NonEmptyReadonlyArray<A>) => NonEmptyArray<A | B>; <A, B>(self: NonEmptyReadonlyArray<A>, f: (a: A) => B): NonEmptyArray<A | B>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L2191)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L2433)
 
 Since v4.0.0

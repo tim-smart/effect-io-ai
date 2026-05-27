@@ -6,6 +6,11 @@ Module: `MutableRef`<br />
 Updates the MutableRef with the result of applying a function to its current value,
 and returns the reference.
 
+**When to use**
+
+Use to transform the current value in place when you want the same reference
+back.
+
 **Example** (Updating values)
 
 ```ts
@@ -49,6 +54,6 @@ console.log(MutableRef.get(list)) // [1, 2, 3, 4]
 declare const update: { <T>(f: (value: T) => T): (self: MutableRef<T>) => MutableRef<T>; <T>(self: MutableRef<T>, f: (value: T) => T): MutableRef<T>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableRef.ts#L661)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableRef.ts#L726)
 
 Since v2.0.0

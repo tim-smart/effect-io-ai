@@ -6,6 +6,11 @@ Module: `Match`<br />
 Matches values based on a field that serves as a discriminator, mapping each
 possible value to a corresponding handler.
 
+**When to use**
+
+Use to define several discriminator handlers at once without finalizing the
+matcher.
+
 **Details**
 
 This function simplifies working with discriminated unions by letting you
@@ -36,12 +41,17 @@ const match = pipe(
 )
 ```
 
+**See**
+
+- `discriminator` for adding one discriminator case to a matcher pipeline
+- `discriminatorsExhaustive` for handling every discriminator value and finalizing the matcher
+
 **Signature**
 
 ```ts
 declare const discriminators: <D extends string>(field: D) => <R, Ret, P extends { readonly [Tag in Types.Tags<D, R> & string]?: ((_: Extract<R, Record<D, Tag>>) => Ret) | undefined; } & { readonly [Tag in Exclude<keyof P, Types.Tags<D, R>>]: never; }>(fields: P) => <I, F, A, Pr>(self: Matcher<I, F, R, A, Pr, Ret>) => Matcher<I, Types.AddWithout<F, Extract<R, Record<D, keyof P>>>, Types.ApplyFilters<I, Types.AddWithout<F, Extract<R, Record<D, keyof P>>>>, A | ReturnType<P[keyof P] & {}>, Pr, Ret>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L801)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L862)
 
 Since v4.0.0

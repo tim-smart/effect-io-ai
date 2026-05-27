@@ -8,7 +8,7 @@ variant or a validated subset).
 
 **When to use**
 
-- The focus is conditional — reading can fail (wrong variant, failed
+Use when the focus is conditional — reading can fail (wrong variant, failed
   validation).
 - Building a new `S` from `A` does **not** require the original `S`.
 

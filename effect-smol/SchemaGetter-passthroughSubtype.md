@@ -7,7 +7,7 @@ Returns the identity getter, typed for when the encoded type `E` is a subtype of
 
 **When to use**
 
-- The encoded type is narrower than the decoded type.
+Use when the encoded type is narrower than the decoded type.
 - You need type-safe passthrough without `{ strict: false }`.
 
 **Details**
@@ -25,8 +25,8 @@ const g = SchemaGetter.passthroughSubtype<string, "hello">()
 
 **See**
 
-- `passthrough` - when types are identical
-- `passthroughSupertype` - when `T extends E`
+- `passthrough` when types are identical
+- `passthroughSupertype` when `T extends E`
 
 **Signature**
 

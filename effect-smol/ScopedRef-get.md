@@ -5,12 +5,21 @@ Module: `ScopedRef`<br />
 
 Retrieves the current value of the scoped reference.
 
+**When to use**
+
+Use to read the value currently stored in a `ScopedRef` inside an `Effect`
+workflow.
+
+**See**
+
+- `getUnsafe` for reading the current value synchronously when an unsafe read is acceptable
+
 **Signature**
 
 ```ts
 declare const get: <A>(self: ScopedRef<A>) => Effect.Effect<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ScopedRef.ts#L105)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ScopedRef.ts#L131)
 
 Since v2.0.0

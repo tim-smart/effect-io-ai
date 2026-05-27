@@ -7,13 +7,25 @@ Reads the annotations from a single `Reason` as a `Context`.
 
 **When to use**
 
-Use this when you need tracing metadata (e.g. `StackTrace`) from
+Use when you need tracing metadata (e.g. `StackTrace`) from
 a specific reason rather than the whole cause.
+
+**Example** (reading reason annotations)
+
+```ts
+import { Cause, Context } from "effect"
+
+class RequestId extends Context.Service<RequestId, string>()("RequestId") {}
+
+const reason = Cause.makeFailReason("error")
+const annotated = reason.annotate(Context.make(RequestId, "req-1"))
+
+console.log(Context.getOrUndefined(Cause.reasonAnnotations(annotated), RequestId)) // "req-1"
+```
 
 **See**
 
 - `annotations` — merged annotations from all reasons in a cause
-- `annotate` — attach annotations
 
 **Signature**
 
@@ -21,6 +33,6 @@ a specific reason rather than the whole cause.
 declare const reasonAnnotations: <E>(self: Reason<E>) => Context.Context<never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L1715)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L1928)
 
 Since v4.0.0

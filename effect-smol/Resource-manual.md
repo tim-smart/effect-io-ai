@@ -5,12 +5,22 @@ Module: `Resource`<br />
 
 Creates a `Resource` that must be refreshed manually.
 
+**When to use**
+
+Use when you need to control the timing of resource refreshes yourself rather
+than relying on an automatic schedule.
+
+**See**
+
+- `auto` for schedule-driven automatic refreshes
+- `refresh` to manually trigger a resource refresh
+
 **Signature**
 
 ```ts
 declare const manual: <A, E, R>(acquire: Effect.Effect<A, E, R>) => Effect.Effect<Resource<A, E>, never, Scope.Scope | R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Resource.ts#L98)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Resource.ts#L124)
 
 Since v2.0.0

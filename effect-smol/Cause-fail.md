@@ -6,6 +6,10 @@ Module: `Cause`<br />
 Creates a `Cause` containing a single `Fail` reason with the
 given typed error.
 
+**When to use**
+
+Use to construct a cause from an expected typed error.
+
 **Example** (creating a fail cause)
 
 ```ts
@@ -27,6 +31,6 @@ console.log(Cause.isFailReason(cause.reasons[0])) // true
 declare const fail: <E>(error: E) => Cause<E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L525)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L556)
 
 Since v2.0.0

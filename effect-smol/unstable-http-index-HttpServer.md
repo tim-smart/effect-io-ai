@@ -11,6 +11,6 @@ Re-exports all named exports from the "./HttpServer.ts" module as `HttpServer`.
 export * as HttpServer from "./HttpServer.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L367)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L90)
 
 Since v4.0.0

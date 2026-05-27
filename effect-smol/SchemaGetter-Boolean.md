@@ -7,7 +7,7 @@ Coerces any value to a `boolean` using the global `Boolean()` constructor.
 
 **When to use**
 
-- You need boolean coercion (truthiness check) of an encoded value.
+Use when you need boolean coercion (truthiness check) of an encoded value.
 
 **Details**
 

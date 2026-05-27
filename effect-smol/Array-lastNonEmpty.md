@@ -6,6 +6,11 @@ Module: `Array`<br />
 Returns the last element of a `NonEmptyReadonlyArray` directly (no `Option`
 wrapper).
 
+**When to use**
+
+Use to get the last element without `Option` wrapping when the array is known
+to be non-empty.
+
 **Example** (Getting the last of a non-empty array)
 
 ```ts
@@ -24,6 +29,6 @@ console.log(Array.lastNonEmpty([1, 2, 3, 4])) // 4
 declare const lastNonEmpty: <A>(self: NonEmptyReadonlyArray<A>) => A
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L1113)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L1223)
 
 Since v2.0.0

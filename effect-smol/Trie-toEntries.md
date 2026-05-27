@@ -30,6 +30,6 @@ assert.deepStrictEqual(result, [["call", 0], ["me", 1]])
 declare const toEntries: <V>(self: Trie<V>) => Array<[string, V]>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Trie.ts#L296)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Trie.ts#L335)
 
 Since v2.0.0

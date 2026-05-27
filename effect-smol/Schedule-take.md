@@ -7,6 +7,18 @@ Returns a new `Schedule` that takes at most the specified number of outputs
 from the schedule. Once the specified number of outputs is reached, the
 schedule will stop.
 
+**When to use**
+
+Use to limit an existing schedule while preserving its output and
+delay behavior. Use `recurs` when you only need an immediate counter
+schedule.
+
+**Gotchas**
+
+`take(n)` limits schedule outputs. When used with repeat or retry, the
+effect is evaluated once before the schedule is stepped, so the total number
+of evaluations can be one greater than the number of outputs taken.
+
 **Example** (Taking a limited number of recurrences)
 
 ```ts
@@ -14,9 +26,9 @@ import { Console, Data, Effect, Schedule } from "effect"
 
 class RetryAttemptError extends Data.TaggedError("RetryAttemptError")<{ readonly message: string }> {}
 
-// Limit an infinite schedule to run only 5 times
+// Limit an infinite schedule to five recurrences
 const limitedHeartbeat = Schedule.spaced("1 second").pipe(
-  Schedule.take(5) // Will stop after 5 executions
+  Schedule.take(5) // Will stop after 5 schedule outputs
 )
 
 const heartbeatProgram = Effect.gen(function*() {
@@ -62,7 +74,7 @@ const retryProgram = Effect.gen(function*() {
 
 // Combine take with other schedule operations
 const samplingSchedule = Schedule.fixed("500 millis").pipe(
-  Schedule.take(10), // Sample exactly 10 times
+  Schedule.take(10), // Take at most 10 schedule outputs
   Schedule.map((count) => Effect.succeed(`Sample #${count + 1}`))
 )
 
@@ -80,12 +92,16 @@ const samplingProgram = Effect.gen(function*() {
 })
 ```
 
+**See**
+
+- `recurs` for creating a count-limited schedule
+
 **Signature**
 
 ```ts
 declare const take: { (n: number): <Output, Input, Error, Env>(self: Schedule<Output, Input, Error, Env>) => Schedule<Output, Input, Error, Env>; <Output, Input, Error, Env>(self: Schedule<Output, Input, Error, Env>, n: number): Schedule<Output, Input, Error, Env>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L2951)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L3142)
 
 Since v4.0.0

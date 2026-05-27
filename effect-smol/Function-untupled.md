@@ -5,6 +5,10 @@ Module: `Function`<br />
 
 Inverse function of `tupled`
 
+**When to use**
+
+Use to adapt a tuple-argument function so it accepts multiple arguments.
+
 **Example** (Converting a tuple to arguments)
 
 ```ts
@@ -16,12 +20,16 @@ const getFirst = Function.untupled(<A, B>(tuple: [A, B]): A => tuple[0])
 assert.deepStrictEqual(getFirst(1, 2), 1)
 ```
 
+**See**
+
+- `tupled` for adapting a multi-argument function to one tuple argument
+
 **Signature**
 
 ```ts
 declare const untupled: <A extends ReadonlyArray<unknown>, B>(f: (a: A) => B) => (...a: A) => B
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Function.ts#L515)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Function.ts#L608)
 
 Since v2.0.0

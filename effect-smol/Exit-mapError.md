@@ -7,7 +7,7 @@ Transforms the typed error of a failed Exit using the given function.
 
 **When to use**
 
-- Use to remap typed errors while preserving the Exit structure
+Use to remap typed errors while preserving the Exit structure
 
 **Details**
 
@@ -44,6 +44,6 @@ console.log(Exit.isFailure(mapped)) // true
 declare const mapError: { <E, E2>(f: (a: NoInfer<E>) => E2): <A>(self: Exit<A, E>) => Exit<A, E2>; <A, E, E2>(self: Exit<A, E>, f: (a: NoInfer<E>) => E2): Exit<A, E2>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Exit.ts#L884)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Exit.ts#L925)
 
 Since v2.0.0

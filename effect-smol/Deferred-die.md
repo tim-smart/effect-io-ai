@@ -5,6 +5,10 @@ Module: `Deferred`<br />
 
 Attempts to complete the `Deferred` with a defect.
 
+**When to use**
+
+Use to complete a `Deferred` with an unexpected defect.
+
 **Details**
 
 Fibers waiting on the `Deferred` die with that defect only if this call
@@ -32,6 +36,6 @@ const program = Effect.gen(function*() {
 declare const die: { (defect: unknown): <A, E>(self: Deferred<A, E>) => Effect<boolean>; <A, E>(self: Deferred<A, E>, defect: unknown): Effect<boolean>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Deferred.ts#L525)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Deferred.ts#L599)
 
 Since v2.0.0

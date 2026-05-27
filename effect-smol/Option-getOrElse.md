@@ -7,7 +7,7 @@ Extracts the value from a `Some`, or evaluates a fallback thunk on `None`.
 
 **When to use**
 
-- Providing a default value for an absent `Option`
+Use when providing a default value for an absent `Option`
 - Unwrapping with lazy evaluation of the fallback
 
 **Details**
@@ -40,6 +40,6 @@ console.log(Option.none().pipe(Option.getOrElse(() => 0)))
 declare const getOrElse: { <B>(onNone: LazyArg<B>): <A>(self: Option<A>) => B | A; <A, B>(self: Option<A>, onNone: LazyArg<B>): A | B; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L648)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L675)
 
 Since v2.0.0

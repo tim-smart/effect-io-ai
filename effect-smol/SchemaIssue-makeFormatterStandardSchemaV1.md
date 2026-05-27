@@ -7,7 +7,7 @@ Creates a `Formatter` that produces a `StandardSchemaV1.FailureResult`.
 
 **When to use**
 
-- Integrate with libraries that consume the
+Use when integrate with libraries that consume the
   [Standard Schema V1](https://github.com/standard-schema/standard-schema)
   error format.
 - Customise error rendering by providing `leafHook` and/or `checkHook`.
@@ -40,6 +40,6 @@ const formatter = SchemaIssue.makeFormatterStandardSchemaV1()
 declare const makeFormatterStandardSchemaV1: (options?: { readonly leafHook?: LeafHook | undefined; readonly checkHook?: CheckHook | undefined; }) => Formatter<StandardSchemaV1.FailureResult>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaIssue.ts#L1076)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaIssue.ts#L1077)
 
 Since v4.0.0

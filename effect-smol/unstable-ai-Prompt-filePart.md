@@ -3,7 +3,16 @@ Module: `Prompt`<br />
 
 ## Prompt.filePart
 
-Constructs a new file part.
+Constructs a `FilePart` for prompt file attachments.
+
+**When to use**
+
+Use to create the file-attachment part of a prompt from typed file part
+parameters.
+
+**See**
+
+- `makePart` for the generic part constructor
 
 **Signature**
 
@@ -11,6 +20,6 @@ Constructs a new file part.
 declare const filePart: (params: PartConstructorParams<FilePart>) => FilePart
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L530)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L537)
 
 Since v4.0.0

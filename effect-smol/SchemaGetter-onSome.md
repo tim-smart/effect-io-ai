@@ -7,7 +7,7 @@ Creates a getter that handles present values (`Option.Some`), passing `None` thr
 
 **When to use**
 
-- You need to transform or validate only when a value is present.
+Use when you need to transform or validate only when a value is present.
 - Missing keys should remain absent in the output.
 
 **Details**
@@ -28,9 +28,9 @@ const parseIfPresent = SchemaGetter.onSome<number, string>(
 
 **See**
 
-- `onNone` - handle only absent values
-- `transform` - simpler pure transformation of present values
-- `transformOrFail` - fallible transformation of present values
+- `onNone` to handle only absent values
+- `transform` for a simpler pure transformation of present values
+- `transformOrFail` for fallible transformation of present values
 
 **Signature**
 

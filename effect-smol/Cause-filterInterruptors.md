@@ -9,17 +9,23 @@ reason, the failure value is the original cause.
 
 **When to use**
 
-Use `interruptors` if you always want a `Set` without `Result`
+Use when you use `interruptors` if you always want a `Set` without `Result`
 wrapping.
 
-**Example** (extracting interruptors with Filter)
+**Gotchas**
+
+Interrupt reasons without a `fiberId` still count as interrupts, so the
+function succeeds with an empty `Set` when every interrupt reason has an
+undefined fiber ID.
+
+**Example** (extracting interruptors with Result)
 
 ```ts
 import { Cause, Result } from "effect"
 
 const result = Cause.filterInterruptors(Cause.interrupt(1))
 if (!Result.isFailure(result)) {
-  console.log(result.success) // Set { 1 }
+  console.log(result.success) // Set(1) { 1 }
 }
 ```
 
@@ -33,6 +39,6 @@ if (!Result.isFailure(result)) {
 declare const filterInterruptors: <E>(self: Cause<E>) => Result.Result<Set<number>, Cause<E>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L1046)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L1132)
 
 Since v4.0.0

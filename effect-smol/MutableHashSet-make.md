@@ -6,6 +6,10 @@ Module: `MutableHashSet`<br />
 Creates a MutableHashSet from a variable number of values.
 Duplicates are automatically removed.
 
+**When to use**
+
+Use to build a mutable hash set from explicit values.
+
 **Example** (Creating a set from values)
 
 ```ts
@@ -32,6 +36,6 @@ console.log(MutableHashSet.size(mixed)) // 3
 declare const make: <Keys extends ReadonlyArray<unknown>>(...keys: Keys) => MutableHashSet<Keys[number]>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableHashSet.ts#L245)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableHashSet.ts#L281)
 
 Since v2.0.0

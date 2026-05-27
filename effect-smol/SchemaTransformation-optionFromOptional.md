@@ -8,7 +8,7 @@ to `T | undefined`.
 
 **When to use**
 
-- Converting optional (possibly `undefined`) values to `Option`.
+Use to convert optional (possibly `undefined`) values to `Option`.
 
 **Details**
 

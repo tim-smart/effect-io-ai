@@ -5,6 +5,11 @@ Module: `Function`<br />
 
 Represents a function with multiple arguments.
 
+**When to use**
+
+Use to describe a function whose argument list is represented as a tuple
+type.
+
 **Example** (Typing a variadic function)
 
 ```ts
@@ -21,6 +26,6 @@ assert.deepStrictEqual(sum(2, 3), 5)
 type FunctionN<A, B> = (...args: A) => B
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Function.ts#L235)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Function.ts#L264)
 
 Since v2.0.0

@@ -5,11 +5,23 @@ Module: `RcRef`<br />
 
 Invalidates the currently cached resource, if one has been acquired.
 
+**When to use**
+
+Use to force future `RcRef.get` calls to acquire a fresh resource when the
+currently cached resource should no longer be reused.
+
 **Details**
 
-After invalidation, the next `get` acquires a fresh resource. If the current
-resource is still referenced by active scopes, it remains usable until those
-scopes close; otherwise it is closed immediately.
+After invalidation, the next `get` acquires a fresh resource.
+
+**Gotchas**
+
+Invalidation does not revoke resources already borrowed by active scopes;
+those remain usable until their scopes close.
+
+**See**
+
+- `get` for acquiring the current cached resource or the fresh resource after invalidation
 
 **Signature**
 
@@ -17,6 +29,6 @@ scopes close; otherwise it is closed immediately.
 declare const invalidate: <A, E>(self: RcRef<A, E>) => Effect.Effect<void>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RcRef.ts#L204)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RcRef.ts#L259)
 
 Since v3.19.6

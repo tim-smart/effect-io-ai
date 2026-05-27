@@ -5,6 +5,10 @@ Module: `MutableHashMap`<br />
 
 Creates a MutableHashMap from an iterable collection of key-value pairs.
 
+**When to use**
+
+Use to create a mutable hash map from an existing iterable of entries.
+
 **Example** (Creating a map from an iterable)
 
 ```ts
@@ -26,12 +30,17 @@ const fromMap = MutableHashMap.fromIterable(new Map([["x", 10], ["y", 20]]))
 console.log(MutableHashMap.get(fromMap, "x")) // Some(10)
 ```
 
+**See**
+
+- `make` for creating a map from explicit entries
+- `empty` for creating an empty map
+
 **Signature**
 
 ```ts
 declare const fromIterable: <K, V>(entries: Iterable<readonly [K, V]>) => MutableHashMap<K, V>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableHashMap.ts#L196)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableHashMap.ts#L259)
 
 Since v2.0.0

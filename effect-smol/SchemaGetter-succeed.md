@@ -7,7 +7,7 @@ Creates a getter that always produces the given constant value, ignoring the inp
 
 **When to use**
 
-- A schema field should always decode to a fixed value.
+Use when a schema field should always decode to a fixed value.
 - You need a placeholder getter that produces a known default.
 
 **Details**
@@ -26,8 +26,8 @@ const alwaysZero = SchemaGetter.succeed(0)
 
 **See**
 
-- `transform` - when you need to use the input value
-- `passthrough` - when you want to keep the input as-is
+- `transform` when you need to use the input value
+- `passthrough` when you want to keep the input as-is
 
 **Signature**
 

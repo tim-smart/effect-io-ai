@@ -15,6 +15,6 @@ The address is either a TCP host and port or a Unix domain socket path.
 type Address = UnixAddress | TcpAddress
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpServer.ts#L78)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpServer.ts#L91)
 
 Since v4.0.0

@@ -8,7 +8,7 @@ invalidation before expiration.
 
 **When to use**
 
-Use this function when you have an effect whose result needs to be cached for
+Use when you use this function when you have an effect whose result needs to be cached for
 a certain period, but you also want the option to refresh the cache manually
 before the expiration time.
 
@@ -77,6 +77,6 @@ a specified duration but does not include an effect for manual invalidation.
 declare const cachedInvalidateWithTTL: { (timeToLive: Duration.Input): <A, E, R>(self: Effect<A, E, R>) => Effect<[Effect<A, E, R>, Effect<void>]>; <A, E, R>(self: Effect<A, E, R>, timeToLive: Duration.Input): Effect<[Effect<A, E, R>, Effect<void>]>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L6691)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L7157)
 
 Since v2.0.0

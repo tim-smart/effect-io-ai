@@ -5,6 +5,10 @@ Module: `BigDecimal`<br />
 
 Takes an `Iterable` of `BigDecimal`s and returns their sum as a single `BigDecimal`.
 
+**When to use**
+
+Use to sum all `BigDecimal` values in an iterable.
+
 **Example** (Adding multiple decimals)
 
 ```ts
@@ -17,12 +21,16 @@ assert.deepStrictEqual(
 )
 ```
 
+**See**
+
+- `sum` for adding two `BigDecimal` values
+
 **Signature**
 
 ```ts
 declare const sumAll: (collection: Iterable<BigDecimal>) => BigDecimal
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigDecimal.ts#L309)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigDecimal.ts#L394)
 
 Since v3.16.0

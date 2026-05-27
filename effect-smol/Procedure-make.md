@@ -11,6 +11,6 @@ Creates an empty SQL Server stored procedure definition for the given procedure 
 declare const make: (name: string) => Procedure<{}, {}>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/sql/d1/src/Procedure.ts#L134)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/sql/d1/src/Procedure.ts#L148)
 
 Since v4.0.0

@@ -11,6 +11,6 @@ Re-exports all named exports from the "./EmbeddingModel.ts" module as `Embedding
 export * as EmbeddingModel from "./EmbeddingModel.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L177)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L25)
 
 Since v4.0.0

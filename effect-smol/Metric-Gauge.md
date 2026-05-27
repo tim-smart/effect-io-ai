@@ -7,7 +7,7 @@ A Gauge metric that tracks instantaneous values that can go up or down.
 
 **When to use**
 
-Gauges are useful for tracking current state values like memory usage, CPU load,
+Use when gauges are useful for tracking current state values like memory usage, CPU load,
 active connections, queue sizes, or any value that represents a current level.
 
 **Example** (Using gauge metrics)

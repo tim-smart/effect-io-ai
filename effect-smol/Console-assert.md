@@ -22,6 +22,6 @@ const program = Effect.gen(function*() {
 declare const assert: (condition: boolean, ...args: ReadonlyArray<any>) => Effect.Effect<void>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Console.ts#L170)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Console.ts#L181)
 
 Since v2.0.0

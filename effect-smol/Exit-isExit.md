@@ -7,7 +7,7 @@ Tests whether an unknown value is an Exit.
 
 **When to use**
 
-- Use to validate unknown values at system boundaries
+Use to validate unknown values at system boundaries
 - Works as a type guard, narrowing to `Exit<unknown, unknown>`
 
 **Details**
@@ -36,6 +36,6 @@ console.log(Exit.isExit("not an exit"))    // false
 declare const isExit: (u: unknown) => u is Exit<unknown, unknown>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Exit.ts#L226)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Exit.ts#L235)
 
 Since v2.0.0

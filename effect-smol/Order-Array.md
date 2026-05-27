@@ -7,7 +7,7 @@ Creates an `Order` for arrays by applying the given `Order` to each element, the
 
 **When to use**
 
-- When comparing arrays of the same element type
+Use when when comparing arrays of the same element type
 - When you want shorter arrays to be considered less than longer arrays
 - When sorting collections of arrays
 
@@ -34,7 +34,7 @@ console.log(arrayOrder([1, 2], [1, 2])) // 0
 
 **See**
 
-- `Tuple` - Type-safe tuple ordering
+- `Tuple` for type-safe tuple ordering
 
 **Signature**
 
@@ -42,6 +42,6 @@ console.log(arrayOrder([1, 2], [1, 2])) // 0
 declare const Array: <A>(O: Order<A>) => Order<ReadonlyArray<A>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Order.ts#L663)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Order.ts#L692)
 
 Since v4.0.0

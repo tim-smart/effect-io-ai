@@ -7,7 +7,7 @@ Creates a new `Order` that reverses the comparison order of the input `Order`.
 
 **When to use**
 
-- When you need descending order instead of ascending
+Use when when you need descending order instead of ascending
 - When reversing an existing order without modifying the original
 - When creating orders that compare in the opposite direction
 
@@ -32,7 +32,7 @@ console.log(flip(1, 1)) // 0
 
 **See**
 
-- `combine` - Combine orders for multi-criteria comparison
+- `combine` to combine orders for multi-criteria comparison
 
 **Signature**
 
@@ -40,6 +40,6 @@ console.log(flip(1, 1)) // 0
 declare const flip: <A>(O: Order<A>) => Order<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Order.ts#L331)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Order.ts#L360)
 
 Since v4.0.0

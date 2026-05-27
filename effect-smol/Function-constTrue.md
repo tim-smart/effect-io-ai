@@ -5,6 +5,10 @@ Module: `Function`<br />
 
 A thunk that returns always `true`.
 
+**When to use**
+
+Use when an API expects a thunk and every invocation should return `true`.
+
 **Example** (Returning true from a thunk)
 
 ```ts
@@ -20,6 +24,6 @@ assert.deepStrictEqual(Function.constTrue(), true)
 declare const constTrue: LazyArg<boolean>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Function.ts#L331)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Function.ts#L382)
 
 Since v2.0.0

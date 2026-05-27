@@ -23,6 +23,6 @@ const program = Effect.gen(function*() {
 declare const empty: <A>(order: Order<A>) => Effect.Effect<TxPriorityQueue<A>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxPriorityQueue.ts#L116)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxPriorityQueue.ts#L143)
 
 Since v2.0.0

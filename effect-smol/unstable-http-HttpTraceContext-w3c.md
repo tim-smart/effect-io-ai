@@ -15,6 +15,6 @@ Only version `00` headers with valid trace and span identifiers are accepted.
 declare const w3c: FromHeaders
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpTraceContext.ts#L147)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpTraceContext.ts#L160)
 
 Since v4.0.0

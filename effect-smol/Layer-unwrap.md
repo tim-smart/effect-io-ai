@@ -7,7 +7,7 @@ Unwraps a `Layer` from an `Effect`, flattening the nested structure.
 
 **When to use**
 
-Use this when you have an `Effect` that produces a `Layer` and you want to
+Use when you have an `Effect` that produces a `Layer` and you want to
 use that layer directly.
 
 **Details**
@@ -37,6 +37,6 @@ const unwrappedLayer = Layer.unwrap(layerEffect)
 declare const unwrap: <A, E1, R1, E, R>(self: Effect<Layer<A, E1, R1>, E, R>) => Layer<A, E | E1, R1 | Exclude<R, Scope.Scope>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L1079)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L1158)
 
 Since v4.0.0

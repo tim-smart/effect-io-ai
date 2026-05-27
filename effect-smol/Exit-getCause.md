@@ -7,7 +7,7 @@ Returns the Cause of a failed Exit as an Option.
 
 **When to use**
 
-- Use when you want to optionally inspect the failure cause
+Use when you want to optionally inspect the failure cause
 
 **Details**
 
@@ -33,6 +33,6 @@ console.log(Exit.getCause(Exit.succeed(42))) // { _tag: "None" }
 declare const getCause: <A, E>(self: Exit<A, E>) => Option<Cause.Cause<E>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Exit.ts#L1061)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Exit.ts#L1102)
 
 Since v4.0.0

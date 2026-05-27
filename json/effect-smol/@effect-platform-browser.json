@@ -13,7 +13,7 @@
     "since": "1.0.0",
     "category": "models",
     "signature": "declare const WebCrypto: Context.Reference<Crypto>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/BrowserCrypto.ts#L18"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/BrowserCrypto.ts#L60"
   },
   {
     "_tag": "Constant",
@@ -23,13 +23,13 @@
     },
     "project": "@effect/platform-browser",
     "name": "layer",
-    "description": "A layer that directly interfaces with the Web Crypto API.",
+    "description": "A layer that directly interfaces with the Web Crypto API.\n\n**When to use**\n\nUse to provide cryptographic randomness, UUID generation, and digest\noperations in browser runtimes backed by `globalThis.crypto`.\n\n**Details**\n\nRandom bytes are produced with `crypto.getRandomValues`. Digests are computed\nwith `crypto.subtle.digest` and returned as `Uint8Array` values.\n\n**Gotchas**\n\nThe layer dies if the Web Crypto object is unavailable. Digest operations\nfail with `PlatformError` when `crypto.subtle.digest` is unavailable or the\nbrowser rejects the digest request.",
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "layers",
     "signature": "declare const layer: Layer.Layer<EffectCrypto.Crypto, never, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/BrowserCrypto.ts#L28"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/BrowserCrypto.ts#L86"
   },
   {
     "_tag": "Class",
@@ -45,7 +45,7 @@
     "since": "4.0.0",
     "category": "services",
     "signature": "declare class XMLHttpRequest",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/BrowserHttpClient.ts#L126"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/BrowserHttpClient.ts#L134"
   },
   {
     "_tag": "Constant",
@@ -55,13 +55,13 @@
     },
     "project": "@effect/platform-browser",
     "name": "CurrentXHRResponseType",
-    "description": "Reference that controls the `XMLHttpRequest.responseType` used by the browser XHR HTTP client, defaulting to `\"text\"`.",
+    "description": "Reference that controls the `XMLHttpRequest.responseType` used by the browser XHR HTTP client, defaulting to `\"text\"`.\n\n**When to use**\n\nUse when XHR-backed HTTP requests need to receive response bodies as text or\nas raw `ArrayBuffer` values.",
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
     "category": "references",
     "signature": "declare const CurrentXHRResponseType: Context.Reference<XHRResponseType>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/BrowserHttpClient.ts#L100"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/BrowserHttpClient.ts#L108"
   },
   {
     "_tag": "Constant",
@@ -77,7 +77,7 @@
     "since": "4.0.0",
     "category": "layers",
     "signature": "declare const layerXMLHttpRequest: Layer.Layer<HttpClient.HttpClient, never, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/BrowserHttpClient.ts#L435"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/BrowserHttpClient.ts#L443"
   },
   {
     "_tag": "Function",
@@ -93,7 +93,7 @@
     "since": "4.0.0",
     "category": "references",
     "signature": "declare const withXHRArrayBuffer: <A, E, R>(self: Effect.Effect<A, E, R>) => Effect.Effect<A, E, R>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/BrowserHttpClient.ts#L111"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/BrowserHttpClient.ts#L119"
   },
   {
     "_tag": "TypeAlias",
@@ -173,7 +173,7 @@
     "since": "4.0.0",
     "category": "layers",
     "signature": "declare const layerLocalStorage: Layer.Layer<KeyValueStore.KeyValueStore, never, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/BrowserKeyValueStore.ts#L31"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/BrowserKeyValueStore.ts#L66"
   },
   {
     "_tag": "Constant",
@@ -189,7 +189,7 @@
     "since": "4.0.0",
     "category": "layers",
     "signature": "declare const layerSessionStorage: Layer.Layer<KeyValueStore.KeyValueStore, never, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/BrowserKeyValueStore.ts#L41"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/BrowserKeyValueStore.ts#L76"
   },
   {
     "_tag": "Function",
@@ -199,13 +199,13 @@
     },
     "project": "@effect/platform-browser",
     "name": "layerIndexedDb",
-    "description": "Creates a `KeyValueStore` layer backed by IndexedDB.",
+    "description": "Creates a `KeyValueStore` layer backed by IndexedDB.\n\n**When to use**\n\nUse when a browser `KeyValueStore` needs persistent asynchronous IndexedDB\nstorage instead of the synchronous Web Storage APIs.\n\n**Details**\n\nThe database name defaults to `\"effect_key_value_store\"`. The layer requires\nthe `IndexedDb` service and stores string and `Uint8Array` values in the same\nbacking object store.\n\n**Gotchas**\n\nIndexedDB may be unavailable or blocked by browser settings, private browsing,\nquota limits, or restricted contexts. The string and `Uint8Array` accessors do\nnot coerce values stored with the other representation.",
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
     "category": "layers",
     "signature": "declare const layerIndexedDb: (options?: { readonly database?: string | undefined; }) => Layer.Layer<KeyValueStore.KeyValueStore, never, IndexedDb>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/BrowserKeyValueStore.ts#L51"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/BrowserKeyValueStore.ts#L106"
   },
   {
     "_tag": "Function",
@@ -215,13 +215,13 @@
     },
     "project": "@effect/platform-browser",
     "name": "layerBackingIndexedDb",
-    "description": "Creates a `BackingPersistence` layer backed by IndexedDB, optionally using the provided database name.",
+    "description": "Creates a `BackingPersistence` layer backed by IndexedDB, optionally using the provided database name.\n\n**When to use**\n\nUse when composing persistence manually and the lower-level\n`BackingPersistence` service should be backed by browser IndexedDB.\n\n**Details**\n\nThe database name defaults to `\"effect_persistence\"`. Entries are stored by\npersistence store id and key in a shared object store, and TTL expiration is\nchecked when values are read.\n\n**Gotchas**\n\nOpening the database is defected during layer acquisition if IndexedDB is\nunavailable or cannot be opened. Store operations report `PersistenceError`\nfor IndexedDB request, transaction, quota, and structured-clone failures.",
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
     "category": "layers",
     "signature": "declare const layerBackingIndexedDb: (options?: { readonly database?: string | undefined; }) => Layer.Layer<Persistence.BackingPersistence>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/BrowserPersistence.ts#L29"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/BrowserPersistence.ts#L86"
   },
   {
     "_tag": "Function",
@@ -237,7 +237,7 @@
     "since": "4.0.0",
     "category": "layers",
     "signature": "declare const layerIndexedDb: (options?: { readonly database?: string | undefined; }) => Layer.Layer<Persistence.Persistence>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/BrowserPersistence.ts#L64"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/BrowserPersistence.ts#L121"
   },
   {
     "_tag": "Constant",
@@ -247,13 +247,13 @@
     },
     "project": "@effect/platform-browser",
     "name": "runMain",
-    "description": "Runs an effect as the browser main program and interrupts its fiber when the page receives a `beforeunload` event.",
+    "description": "Runs an effect as the browser main program and interrupts its fiber when the page receives a `beforeunload` event.\n\n**When to use**\n\nUse to launch a browser page, single-page application, demo, or browser test\nharness as a root Effect program.\n\n**Details**\n\nSupports both direct and curried call forms. Options are forwarded to\n`makeRunMain`, including `disableErrorReporting` and custom `teardown`\nbehavior.\n\n**Gotchas**\n\nThe `beforeunload` interruption is best-effort. Browser teardown may prevent\nasynchronous finalizers, network work, timers, or prompts from completing.",
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
     "category": "Runtime",
     "signature": "declare const runMain: { (options?: { readonly disableErrorReporting?: boolean | undefined; readonly teardown?: Teardown | undefined; }): <E, A>(effect: Effect.Effect<A, E>) => void; <E, A>(effect: Effect.Effect<A, E>, options?: { readonly disableErrorReporting?: boolean | undefined; readonly teardown?: Teardown | undefined; }): void; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/BrowserRuntime.ts#L34"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/BrowserRuntime.ts#L50"
   },
   {
     "_tag": "Constant",
@@ -269,7 +269,7 @@
     "since": "4.0.0",
     "category": "layers",
     "signature": "declare const layerWebSocketConstructor: Layer.Layer<Socket.WebSocketConstructor, never, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/BrowserSocket.ts#L49"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/BrowserSocket.ts#L82"
   },
   {
     "_tag": "Function",
@@ -279,13 +279,13 @@
     },
     "project": "@effect/platform-browser",
     "name": "layerWebSocket",
-    "description": "Creates a `Socket` layer connected to the given URL using the browser `WebSocket` constructor.",
+    "description": "Creates a `Socket` layer connected to the given URL using the browser `WebSocket` constructor.\n\n**When to use**\n\nUse when browser or client-side code needs a complete `Socket` layer\nconnected to a WebSocket URL.\n\n**Details**\n\nDelegates socket construction to `Socket.makeWebSocket` and provides the\nbrowser-backed `WebSocketConstructor` service.\n\n**Gotchas**\n\nBrowser WebSocket rules still control URL schemes, mixed-content blocking,\ncookies, authentication, origin checks, subprotocols, and extensions. Close\nevents are errors unless `closeCodeIsError` classifies the close code as\nclean.",
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
     "category": "layers",
     "signature": "declare const layerWebSocket: (url: string, options?: { readonly closeCodeIsError?: (code: number) => boolean; }) => Layer.Layer<Socket.Socket>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/BrowserSocket.ts#L36"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/BrowserSocket.ts#L69"
   },
   {
     "_tag": "Function",
@@ -301,7 +301,7 @@
     "since": "4.0.0",
     "category": "Streams",
     "signature": "declare const fromEventListenerWindow: <K extends keyof WindowEventMap>(type: K, options?: boolean | { readonly capture?: boolean; readonly passive?: boolean; readonly once?: boolean; readonly bufferSize?: number | undefined; } | undefined) => Stream.Stream<WindowEventMap[K], never, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/BrowserStream.ts#L41"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/BrowserStream.ts#L56"
   },
   {
     "_tag": "Function",
@@ -317,7 +317,7 @@
     "since": "4.0.0",
     "category": "Streams",
     "signature": "declare const fromEventListenerDocument: <K extends keyof DocumentEventMap>(type: K, options?: boolean | { readonly capture?: boolean; readonly passive?: boolean; readonly once?: boolean; readonly bufferSize?: number | undefined; } | undefined) => Stream.Stream<DocumentEventMap[K], never, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/BrowserStream.ts#L63"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/BrowserStream.ts#L78"
   },
   {
     "_tag": "Constant",
@@ -333,7 +333,7 @@
     "since": "4.0.0",
     "category": "layers",
     "signature": "declare const layerPlatform: Layer.Layer<Worker.WorkerPlatform, never, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/BrowserWorker.ts#L51"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/BrowserWorker.ts#L83"
   },
   {
     "_tag": "Function",
@@ -343,13 +343,13 @@
     },
     "project": "@effect/platform-browser",
     "name": "layer",
-    "description": "Creates browser worker layers by combining the default `WorkerPlatform` with a spawner for `Worker`, `SharedWorker`, or `MessagePort` instances.",
+    "description": "Creates browser worker layers by combining the default `WorkerPlatform` with a spawner for `Worker`, `SharedWorker`, or `MessagePort` instances.\n\n**When to use**\n\nUse when browser parent or client code needs both the browser\n`WorkerPlatform` and a `Spawner` from one layer.\n\n**Details**\n\nThe `spawn` callback receives the numeric worker id and may return a\n`Worker`, `SharedWorker`, or `MessagePort`.\n\n**Gotchas**\n\nScope finalization sends the worker close protocol over the port. Dedicated\nworkers created by `spawn` are not terminated by this layer.",
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
     "category": "layers",
     "signature": "declare const layer: (spawn: (id: number) => Worker | SharedWorker | MessagePort) => Layer.Layer<Worker.WorkerPlatform | Worker.Spawner>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/BrowserWorker.ts#L37"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/BrowserWorker.ts#L69"
   },
   {
     "_tag": "Constant",
@@ -359,13 +359,13 @@
     },
     "project": "@effect/platform-browser",
     "name": "layer",
-    "description": "Layer that provides a browser `WorkerRunnerPlatform` using the global `self` worker context.",
+    "description": "Layer that provides a browser `WorkerRunnerPlatform` using the global `self` worker context.\n\n**When to use**\n\nUse when a browser worker entry point uses the ambient `self` object as the\nworker transport.\n\n**Details**\n\nDelegates to `make(self)` and provides the runner-side platform used by\nprotocols such as `RpcServer.layerProtocolWorkerRunner`.\n\n**Gotchas**\n\nThis layer depends on the browser worker global `self`. Use\n`layerMessagePort` when the transport is an explicit `MessagePort` or\n`Window`.",
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
     "category": "layers",
     "signature": "declare const layer: Layer.Layer<WorkerRunner.WorkerRunnerPlatform, never, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/BrowserWorkerRunner.ts#L179"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/BrowserWorkerRunner.ts#L210"
   },
   {
     "_tag": "Function",
@@ -381,7 +381,7 @@
     "since": "4.0.0",
     "category": "constructors",
     "signature": "declare const make: (self: MessagePort | Window) => WorkerRunner.WorkerRunnerPlatform[\"Service\"]",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/BrowserWorkerRunner.ts#L48"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/BrowserWorkerRunner.ts#L60"
   },
   {
     "_tag": "Function",
@@ -397,7 +397,7 @@
     "since": "4.0.0",
     "category": "layers",
     "signature": "declare const layerMessagePort: (port: MessagePort | Window) => Layer.Layer<WorkerRunner.WorkerRunnerPlatform>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/BrowserWorkerRunner.ts#L189"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/BrowserWorkerRunner.ts#L220"
   },
   {
     "_tag": "Class",
@@ -413,7 +413,7 @@
     "since": "4.0.0",
     "category": "errors",
     "signature": "declare class ClipboardError",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/Clipboard.ts#L50"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/Clipboard.ts#L79"
   },
   {
     "_tag": "Constant",
@@ -423,13 +423,13 @@
     },
     "project": "@effect/platform-browser",
     "name": "Clipboard",
-    "description": "Service tag for the browser `Clipboard` service.",
+    "description": "Service tag for the browser `Clipboard` service.\n\n**When to use**\n\nUse when an Effect needs to require or provide clipboard capabilities through\nthe context.",
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
     "category": "services",
     "signature": "declare const Clipboard: Context.Service<Clipboard, Clipboard>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/Clipboard.ts#L63"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/Clipboard.ts#L100"
   },
   {
     "_tag": "Constant",
@@ -445,7 +445,7 @@
     "since": "4.0.0",
     "category": "layers",
     "signature": "declare const layer: Layer.Layer<Clipboard, never, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/Clipboard.ts#L87"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/Clipboard.ts#L124"
   },
   {
     "_tag": "Function",
@@ -461,7 +461,7 @@
     "since": "4.0.0",
     "category": "constructors",
     "signature": "declare const make: (impl: Omit<Clipboard, \"clear\" | \"writeBlob\" | typeof TypeId>) => Clipboard",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/Clipboard.ts#L71"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/Clipboard.ts#L108"
   },
   {
     "_tag": "Interface",
@@ -471,13 +471,13 @@
     },
     "project": "@effect/platform-browser",
     "name": "Clipboard",
-    "description": "Service interface for reading from, writing to, and clearing the browser clipboard.",
+    "description": "Service interface for reading from, writing to, and clearing the browser clipboard.\n\n**Details**\n\n`read` and `write` work with `ClipboardItem` arrays. `readString` and\n`writeString` use text, `writeBlob` writes one `Blob`, and `clear` writes an\nempty string.\n\n**Gotchas**\n\nClipboard access generally requires a secure context and may require user\nactivation, permissions, or a focused document. `ClipboardItem` and non-text\nMIME type support varies by browser. Failed browser operations are surfaced\nas `ClipboardError`.",
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
     "category": "models",
     "signature": "export interface Clipboard {\n  readonly [TypeId]: typeof TypeId\n  readonly read: Effect.Effect<ClipboardItems, ClipboardError>\n  readonly readString: Effect.Effect<string, ClipboardError>\n  readonly write: (items: ClipboardItems) => Effect.Effect<void, ClipboardError>\n  readonly writeString: (text: string) => Effect.Effect<void, ClipboardError>\n  readonly writeBlob: (blob: Blob) => Effect.Effect<void, ClipboardError>\n  readonly clear: Effect.Effect<void, ClipboardError>\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/Clipboard.ts#L34"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/Clipboard.ts#L63"
   },
   {
     "_tag": "Class",
@@ -493,7 +493,7 @@
     "since": "4.0.0",
     "category": "errors",
     "signature": "declare class GeolocationError { constructor(props: {\n    readonly reason: GeolocationErrorReason\n  }) }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/Geolocation.ts#L65"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/Geolocation.ts#L108"
   },
   {
     "_tag": "Class",
@@ -509,7 +509,7 @@
     "since": "4.0.0",
     "category": "errors",
     "signature": "declare class PositionUnavailable",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/Geolocation.ts#L90"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/Geolocation.ts#L133"
   },
   {
     "_tag": "Class",
@@ -525,7 +525,7 @@
     "since": "4.0.0",
     "category": "errors",
     "signature": "declare class PermissionDenied",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/Geolocation.ts#L104"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/Geolocation.ts#L147"
   },
   {
     "_tag": "Class",
@@ -541,7 +541,7 @@
     "since": "4.0.0",
     "category": "errors",
     "signature": "declare class Timeout",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/Geolocation.ts#L118"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/Geolocation.ts#L161"
   },
   {
     "_tag": "Constant",
@@ -551,13 +551,13 @@
     },
     "project": "@effect/platform-browser",
     "name": "Geolocation",
-    "description": "Service tag for the browser `Geolocation` service.",
+    "description": "Service tag for the browser `Geolocation` service.\n\n**When to use**\n\nUse when an Effect needs to access or provide geolocation capabilities\nthrough the context.",
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
     "category": "services",
     "signature": "declare const Geolocation: Context.Service<Geolocation, Geolocation>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/Geolocation.ts#L57"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/Geolocation.ts#L100"
   },
   {
     "_tag": "Constant",
@@ -573,7 +573,7 @@
     "since": "4.0.0",
     "category": "layers",
     "signature": "declare const layer: Layer.Layer<Geolocation, never, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/Geolocation.ts#L179"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/Geolocation.ts#L222"
   },
   {
     "_tag": "Function",
@@ -589,7 +589,7 @@
     "since": "4.0.0",
     "category": "Accessors",
     "signature": "declare const watchPosition: (options?: (PositionOptions & { readonly bufferSize?: number | undefined; }) | undefined) => Stream.Stream<GeolocationPosition, GeolocationError, Geolocation>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/Geolocation.ts#L202"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/Geolocation.ts#L245"
   },
   {
     "_tag": "Interface",
@@ -599,13 +599,13 @@
     },
     "project": "@effect/platform-browser",
     "name": "Geolocation",
-    "description": "Service interface for browser geolocation, providing effects for the current position and streams of watched positions.",
+    "description": "Service interface for browser geolocation, providing effects for the current position and streams of watched positions.\n\n**When to use**\n\nUse when browser code needs a typed Effect service for one-shot location\nreads or streamed location updates.\n\n**Details**\n\n`getCurrentPosition` returns one position effect. `watchPosition` returns a\nstream and accepts the browser `PositionOptions` plus an optional sliding\n`bufferSize`.\n\n**Gotchas**\n\nBrowser permission prompts, denied permissions, timeouts, unavailable\nposition data, secure-context restrictions, and policy restrictions are\nsurfaced as `GeolocationError`.",
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
     "category": "models",
     "signature": "export interface Geolocation {\n  readonly [TypeId]: typeof TypeId\n  readonly getCurrentPosition: (\n    options?: PositionOptions | undefined\n  ) => Effect.Effect<GeolocationPosition, GeolocationError>\n  readonly watchPosition: (\n    options?:\n      | PositionOptions & {\n        readonly bufferSize?: number | undefined\n      }\n      | undefined\n  ) => Stream.Stream<GeolocationPosition, GeolocationError>\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/Geolocation.ts#L37"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/Geolocation.ts#L73"
   },
   {
     "_tag": "TypeAlias",
@@ -621,7 +621,7 @@
     "since": "4.0.0",
     "category": "errors",
     "signature": "type GeolocationErrorReason = PositionUnavailable | PermissionDenied | Timeout",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/Geolocation.ts#L132"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/Geolocation.ts#L175"
   },
   {
     "_tag": "Export",
@@ -637,7 +637,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "export * as BrowserCrypto from \"./BrowserCrypto.ts\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/index.ts#L12"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/index.ts#L10"
   },
   {
     "_tag": "Export",
@@ -653,7 +653,7 @@
     "since": "4.0.0",
     "category": null,
     "signature": "export * as BrowserHttpClient from \"./BrowserHttpClient.ts\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/index.ts#L46"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/index.ts#L15"
   },
   {
     "_tag": "Export",
@@ -669,7 +669,7 @@
     "since": "4.0.0",
     "category": null,
     "signature": "export * as BrowserKeyValueStore from \"./BrowserKeyValueStore.ts\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/index.ts#L67"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/index.ts#L20"
   },
   {
     "_tag": "Export",
@@ -685,7 +685,7 @@
     "since": "4.0.0",
     "category": null,
     "signature": "export * as BrowserPersistence from \"./BrowserPersistence.ts\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/index.ts#L84"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/index.ts#L25"
   },
   {
     "_tag": "Export",
@@ -701,7 +701,7 @@
     "since": "4.0.0",
     "category": null,
     "signature": "export * as BrowserRuntime from \"./BrowserRuntime.ts\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/index.ts#L110"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/index.ts#L30"
   },
   {
     "_tag": "Export",
@@ -717,7 +717,7 @@
     "since": "4.0.0",
     "category": null,
     "signature": "export * as BrowserSocket from \"./BrowserSocket.ts\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/index.ts#L138"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/index.ts#L35"
   },
   {
     "_tag": "Export",
@@ -733,7 +733,7 @@
     "since": "4.0.0",
     "category": null,
     "signature": "export * as BrowserStream from \"./BrowserStream.ts\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/index.ts#L165"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/index.ts#L40"
   },
   {
     "_tag": "Export",
@@ -749,7 +749,7 @@
     "since": "4.0.0",
     "category": null,
     "signature": "export * as BrowserWorker from \"./BrowserWorker.ts\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/index.ts#L190"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/index.ts#L45"
   },
   {
     "_tag": "Export",
@@ -765,7 +765,7 @@
     "since": "4.0.0",
     "category": null,
     "signature": "export * as BrowserWorkerRunner from \"./BrowserWorkerRunner.ts\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/index.ts#L213"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/index.ts#L50"
   },
   {
     "_tag": "Export",
@@ -781,7 +781,7 @@
     "since": "4.0.0",
     "category": null,
     "signature": "export * as Clipboard from \"./Clipboard.ts\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/index.ts#L234"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/index.ts#L55"
   },
   {
     "_tag": "Export",
@@ -797,7 +797,7 @@
     "since": "4.0.0",
     "category": null,
     "signature": "export * as Geolocation from \"./Geolocation.ts\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/index.ts#L255"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/index.ts#L60"
   },
   {
     "_tag": "Export",
@@ -813,7 +813,7 @@
     "since": "4.0.0",
     "category": null,
     "signature": "export * as IndexedDb from \"./IndexedDb.ts\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/index.ts#L282"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/index.ts#L65"
   },
   {
     "_tag": "Export",
@@ -829,7 +829,7 @@
     "since": "4.0.0",
     "category": null,
     "signature": "export * as IndexedDbDatabase from \"./IndexedDbDatabase.ts\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/index.ts#L312"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/index.ts#L70"
   },
   {
     "_tag": "Export",
@@ -845,7 +845,7 @@
     "since": "4.0.0",
     "category": null,
     "signature": "export * as IndexedDbQueryBuilder from \"./IndexedDbQueryBuilder.ts\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/index.ts#L343"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/index.ts#L75"
   },
   {
     "_tag": "Export",
@@ -861,7 +861,7 @@
     "since": "4.0.0",
     "category": null,
     "signature": "export * as IndexedDbTable from \"./IndexedDbTable.ts\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/index.ts#L366"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/index.ts#L80"
   },
   {
     "_tag": "Export",
@@ -877,7 +877,7 @@
     "since": "4.0.0",
     "category": null,
     "signature": "export * as IndexedDbVersion from \"./IndexedDbVersion.ts\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/index.ts#L387"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/index.ts#L85"
   },
   {
     "_tag": "Export",
@@ -893,7 +893,7 @@
     "since": "4.0.0",
     "category": null,
     "signature": "export * as Permissions from \"./Permissions.ts\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/index.ts#L409"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/index.ts#L90"
   },
   {
     "_tag": "Constant",
@@ -935,13 +935,13 @@
     },
     "project": "@effect/platform-browser",
     "name": "AutoIncrement",
-    "description": "Schema for auto-incremented IndexedDB keys, accepting integers from 1 through `2 ** 53`.",
+    "description": "Schema for auto-incremented IndexedDB keys, accepting integers from 1 through `2 ** 53`.\n\n**When to use**\n\nUse when defining numeric key-path fields for `IndexedDbTable` definitions\nthat use IndexedDB auto-increment keys.\n\n**Details**\n\nThe schema accepts integer values from `1` through `2 ** 53`, matching the\nrange used for generated IndexedDB auto-increment keys.",
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
     "category": "schemas",
     "signature": "declare const AutoIncrement: Schema.Int",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDb.ts#L79"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDb.ts#L91"
   },
   {
     "_tag": "Constant",
@@ -957,7 +957,7 @@
     "since": "4.0.0",
     "category": "constructors",
     "signature": "declare const layerWindow: Layer.Layer<IndexedDb, never, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDb.ts#L101"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDb.ts#L113"
   },
   {
     "_tag": "Function",
@@ -973,7 +973,7 @@
     "since": "4.0.0",
     "category": "constructors",
     "signature": "declare const make: (impl: Omit<IndexedDb, typeof TypeId>) => IndexedDb",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDb.ts#L93"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDb.ts#L105"
   },
   {
     "_tag": "Interface",
@@ -1015,13 +1015,13 @@
     },
     "project": "@effect/platform-browser",
     "name": "IndexedDbDatabase",
-    "description": "Service tag for an open IndexedDB database, its `IDBKeyRange` constructor, reactivity service, and rebuild effect.",
+    "description": "Service tag for an open IndexedDB database, its `IDBKeyRange` constructor, reactivity service, and rebuild effect.\n\n**When to use**\n\nUse when an effect needs access to the live database service after an\n`IndexedDbSchema` layer has been provided, especially for `rebuild` or\nlower-level database primitives.\n\n**Details**\n\n`database` is a mutable reference to the current `IDBDatabase`. `IDBKeyRange`\nand `reactivity` are shared with query builders created from the schema.\n\n**Gotchas**\n\n`rebuild` closes and deletes the browser database, then reopens it and reruns\nmigrations. Records not recreated by migrations are removed.",
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
     "category": "models",
     "signature": "declare class IndexedDbDatabase",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbDatabase.ts#L129"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbDatabase.ts#L148"
   },
   {
     "_tag": "Function",
@@ -1037,7 +1037,7 @@
     "since": "4.0.0",
     "category": "constructors",
     "signature": "declare const make: <InitialVersion extends IndexedDbVersion.AnyWithProps, Error>(initialVersion: InitialVersion, init: (toQuery: Transaction<InitialVersion>) => Effect.Effect<void, Error>) => IndexedDbSchema<never, InitialVersion, Error>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbDatabase.ts#L290"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbDatabase.ts#L309"
   },
   {
     "_tag": "Interface",
@@ -1053,7 +1053,7 @@
     "since": "4.0.0",
     "category": "models",
     "signature": "export interface IndexedDbSchema<\n  in out FromVersion extends IndexedDbVersion.AnyWithProps,\n  in out ToVersion extends IndexedDbVersion.AnyWithProps,\n  out Error = never\n> extends\n  Effect.Effect<\n    IndexedDbQueryBuilder.IndexedDbQueryBuilder<ToVersion>,\n    never,\n    IndexedDbDatabase\n  >\n{\n  new(_: never): {}\n\n  readonly previous: [FromVersion] extends [never] ? undefined\n    : IndexedDbSchema<never, FromVersion, Error>\n  readonly fromVersion: FromVersion\n  readonly version: ToVersion\n\n  readonly migrate: [FromVersion] extends [never] ? (query: Transaction<ToVersion>) => Effect.Effect<void, Error>\n    : (\n      fromQuery: Transaction<FromVersion>,\n      toQuery: Transaction<ToVersion>\n    ) => Effect.Effect<void, Error>\n\n  readonly add: <Version extends IndexedDbVersion.AnyWithProps, MigrationError>(\n    version: Version,\n    migrate: (\n      fromQuery: Transaction<ToVersion>,\n      toQuery: Transaction<Version>\n    ) => Effect.Effect<void, MigrationError>\n  ) => IndexedDbSchema<ToVersion, Version, MigrationError | Error>\n\n  readonly getQueryBuilder: Effect.Effect<\n    IndexedDbQueryBuilder.IndexedDbQueryBuilder<ToVersion>,\n    never,\n    IndexedDbDatabase\n  >\n\n  readonly layer: (\n    databaseName: string\n  ) => Layer.Layer<\n    IndexedDbDatabase,\n    IndexedDbDatabaseError,\n    IndexedDb.IndexedDb\n  >\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbDatabase.ts#L145"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbDatabase.ts#L164"
   },
   {
     "_tag": "Interface",
@@ -1069,7 +1069,7 @@
     "since": "4.0.0",
     "category": "models",
     "signature": "export interface Transaction<\n  Source extends IndexedDbVersion.AnyWithProps = never\n> extends Omit<IndexedDbQueryBuilder.IndexedDbQueryBuilder<Source>, \"transaction\"> {\n  readonly transaction: globalThis.IDBTransaction\n\n  readonly createObjectStore: <\n    A extends IndexedDbTable.TableName<IndexedDbVersion.Tables<Source>>\n  >(\n    table: A\n  ) => Effect.Effect<globalThis.IDBObjectStore, IndexedDbDatabaseError>\n\n  readonly deleteObjectStore: <\n    A extends IndexedDbTable.TableName<IndexedDbVersion.Tables<Source>>\n  >(\n    table: A\n  ) => Effect.Effect<void, IndexedDbDatabaseError>\n\n  readonly createIndex: <\n    Name extends IndexedDbTable.TableName<IndexedDbVersion.Tables<Source>>\n  >(\n    table: Name,\n    indexName: IndexFromTableName<Source, Name>,\n    options?: IDBIndexParameters\n  ) => Effect.Effect<globalThis.IDBIndex, IndexedDbDatabaseError>\n\n  readonly deleteIndex: <\n    Name extends IndexedDbTable.TableName<IndexedDbVersion.Tables<Source>>\n  >(\n    table: Name,\n    indexName: IndexFromTableName<Source, Name>\n  ) => Effect.Effect<void, IndexedDbDatabaseError>\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbDatabase.ts#L198"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbDatabase.ts#L217"
   },
   {
     "_tag": "Interface",
@@ -1085,7 +1085,7 @@
     "since": "4.0.0",
     "category": "models",
     "signature": "export interface Any {\n  readonly previous?: Any | undefined\n  readonly layer: (\n    databaseName: string\n  ) => Layer.Layer<\n    IndexedDbDatabase,\n    IndexedDbDatabaseError,\n    IndexedDb.IndexedDb\n  >\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbDatabase.ts#L261"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbDatabase.ts#L280"
   },
   {
     "_tag": "TypeAlias",
@@ -1117,7 +1117,7 @@
     "since": "4.0.0",
     "category": "models",
     "signature": "type IndexFromTable<Table> = IsStringLiteral<\n  Extract<keyof IndexedDbTable.Indexes<Table>, string>\n> extends true ? Extract<keyof IndexedDbTable.Indexes<Table>, string>\n  : never",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbDatabase.ts#L237"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbDatabase.ts#L256"
   },
   {
     "_tag": "TypeAlias",
@@ -1133,7 +1133,7 @@
     "since": "4.0.0",
     "category": "models",
     "signature": "type IndexFromTableName<Version, Table> = IndexFromTable<\n  IndexedDbTable.WithName<IndexedDbVersion.Tables<Version>, Table>\n>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbDatabase.ts#L248"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbDatabase.ts#L267"
   },
   {
     "_tag": "TypeAlias",
@@ -1149,7 +1149,7 @@
     "since": "4.0.0",
     "category": "models",
     "signature": "type AnySchema = IndexedDbSchema<\n  IndexedDbVersion.AnyWithProps,\n  IndexedDbVersion.AnyWithProps,\n  any\n>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbDatabase.ts#L278"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbDatabase.ts#L297"
   },
   {
     "_tag": "Class",
@@ -1159,13 +1159,13 @@
     },
     "project": "@effect/platform-browser",
     "name": "IndexedDbQueryError",
-    "description": "Tagged error for IndexedDB query operations, carrying a query error reason and the original cause.",
+    "description": "Tagged error for IndexedDB query operations, carrying a query error reason and the original cause.\n\n**Details**\n\n`reason` is the query failure category, `cause` preserves the underlying\nschema, IndexedDB request, transaction, or user callback failure, and\n`message` is set to the reason.",
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
     "category": "errors",
     "signature": "declare class IndexedDbQueryError",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbQueryBuilder.ts#L90"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbQueryBuilder.ts#L98"
   },
   {
     "_tag": "Class",
@@ -1181,7 +1181,7 @@
     "since": "4.0.0",
     "category": "models",
     "signature": "declare class IndexedDbTransaction",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbQueryBuilder.ts#L733"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbQueryBuilder.ts#L741"
   },
   {
     "_tag": "Function",
@@ -1197,7 +1197,7 @@
     "since": "4.0.0",
     "category": "constructors",
     "signature": "declare const make: <Source extends IndexedDbVersion.AnyWithProps>({ IDBKeyRange, database, tables, reactivity }: { readonly database: MutableRef.MutableRef<globalThis.IDBDatabase>; readonly IDBKeyRange: typeof globalThis.IDBKeyRange; readonly tables: ReadonlyMap<string, IndexedDbVersion.Tables<Source>>; readonly reactivity: Reactivity.Reactivity[\"Service\"]; }) => IndexedDbQueryBuilder<Source>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbQueryBuilder.ts#L2012"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbQueryBuilder.ts#L2020"
   },
   {
     "_tag": "Interface",
@@ -1213,7 +1213,7 @@
     "since": "4.0.0",
     "category": "models",
     "signature": "export interface IndexedDbQueryBuilder<\n  Source extends IndexedDbVersion.AnyWithProps\n> extends Pipeable.Pipeable, Inspectable {\n  readonly tables: ReadonlyMap<string, IndexedDbVersion.Tables<Source>>\n  readonly database: MutableRef.MutableRef<globalThis.IDBDatabase>\n  readonly reactivity: Reactivity.Reactivity[\"Service\"]\n  readonly IDBKeyRange: typeof globalThis.IDBKeyRange\n  readonly IDBTransaction: globalThis.IDBTransaction | undefined\n\n  readonly use: <A = unknown>(\n    f: (database: globalThis.IDBDatabase) => A\n  ) => Effect.Effect<A, IndexedDbQueryError>\n\n  readonly from: <\n    const Name extends IndexedDbTable.TableName<\n      IndexedDbVersion.Tables<Source>\n    >\n  >(\n    table: Name\n  ) => IndexedDbQuery.From<IndexedDbVersion.TableWithName<Source, Name>>\n\n  /** @internal */\n  readonly fromCache: Map<string, IndexedDbQuery.From<IndexedDbVersion.TableWithName<Source, any>>>\n\n  readonly clearAll: Effect.Effect<void, IndexedDbQueryError>\n\n  readonly withTransaction: <\n    Tables extends NonEmptyReadonlyArray<\n      IndexedDbTable.TableName<IndexedDbVersion.Tables<Source>>\n    >,\n    Mode extends \"readonly\" | \"readwrite\"\n  >(options: {\n    readonly tables: Tables\n    readonly mode: Mode\n    readonly durability?: IDBTransactionDurability\n  }) => <A, E, R>(effect: Effect.Effect<A, E, R>) => Effect.Effect<A, E, Exclude<R, IndexedDbTransaction>>\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbQueryBuilder.ts#L112"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbQueryBuilder.ts#L120"
   },
   {
     "_tag": "TypeAlias",
@@ -1245,7 +1245,7 @@
     "since": "4.0.0",
     "category": "models",
     "signature": "type KeyPath<TableSchema> = | IndexedDbValidKeys<TableSchema>\n  | NonEmptyReadonlyArray<IndexedDbValidKeys<TableSchema>>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbQueryBuilder.ts#L156"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbQueryBuilder.ts#L164"
   },
   {
     "_tag": "TypeAlias",
@@ -1261,7 +1261,7 @@
     "since": "4.0.0",
     "category": "models",
     "signature": "type KeyPathNumber<TableSchema> = | IndexedDbValidNumberKeys<TableSchema>\n  | NonEmptyReadonlyArray<IndexedDbValidNumberKeys<TableSchema>>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbQueryBuilder.ts#L166"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbQueryBuilder.ts#L174"
   },
   {
     "_tag": "Interface",
@@ -1277,7 +1277,7 @@
     "since": "4.0.0",
     "category": "models",
     "signature": "export interface From<Table extends IndexedDbTable.AnyWithProps> {\n    readonly table: Table\n    readonly database: MutableRef.MutableRef<globalThis.IDBDatabase>\n    readonly IDBKeyRange: typeof globalThis.IDBKeyRange\n    readonly reactivity: Reactivity.Reactivity[\"Service\"]\n\n    readonly clear: Effect.Effect<void, IndexedDbQueryError>\n\n    readonly select: {\n      <Index extends IndexedDbDatabase.IndexFromTable<Table>>(\n        index: Index\n      ): Select<Table, Index>\n      (): Select<Table, never>\n    }\n\n    /** @internal */\n    readonly selectCache: Map<\n      string | undefined,\n      IndexedDbQuery.Select<any, never>\n    >\n\n    readonly count: {\n      <Index extends IndexedDbDatabase.IndexFromTable<Table>>(\n        index: Index\n      ): Count<Table, Index>\n      (): Count<Table, never>\n    }\n\n    /** @internal */\n    readonly countCache: Map<\n      string | undefined,\n      IndexedDbQuery.Count<any, never>\n    >\n\n    readonly delete: {\n      <Index extends IndexedDbDatabase.IndexFromTable<Table>>(\n        index: Index\n      ): DeletePartial<Table, Index>\n      (): DeletePartial<Table, never>\n    }\n\n    /** @internal */\n    readonly deleteCache: Map<\n      string | undefined,\n      IndexedDbQuery.DeletePartial<any, never>\n    >\n\n    readonly insert: (value: ModifyWithKey<Table>) => Modify<Table>\n    readonly insertAll: (\n      values: Array<ModifyWithKey<Table>>\n    ) => ModifyAll<Table>\n    readonly upsert: (value: ModifyWithKey<Table>) => Modify<Table>\n    readonly upsertAll: (\n      values: Array<ModifyWithKey<Table>>\n    ) => ModifyAll<Table>\n  }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbQueryBuilder.ts#L270"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbQueryBuilder.ts#L278"
   },
   {
     "_tag": "Interface",
@@ -1293,7 +1293,7 @@
     "since": "4.0.0",
     "category": "models",
     "signature": "export interface Clear<\n    Table extends IndexedDbTable.AnyWithProps\n  > extends Effect.Effect<void, IndexedDbQueryError> {\n    readonly from: From<Table>\n  }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbQueryBuilder.ts#L333"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbQueryBuilder.ts#L341"
   },
   {
     "_tag": "Interface",
@@ -1309,7 +1309,7 @@
     "since": "4.0.0",
     "category": "models",
     "signature": "export interface Count<\n    Table extends IndexedDbTable.AnyWithProps,\n    Index extends IndexedDbDatabase.IndexFromTable<Table>\n  > extends Effect.Effect<number, IndexedDbQueryError> {\n    readonly from: From<Table>\n    readonly index?: Index\n    readonly only?: ExtractIndexType<Table, Index>\n    readonly lowerBound?: ExtractIndexType<Table, Index>\n    readonly upperBound?: ExtractIndexType<Table, Index>\n    readonly excludeLowerBound?: boolean\n    readonly excludeUpperBound?: boolean\n\n    readonly equals: (\n      value: EqualsType<Table, Index>\n    ) => Omit<Count<Table, Index>, ComparisonKeys>\n\n    readonly gte: (\n      value: ExtractIndexType<Table, Index>\n    ) => Omit<Count<Table, Index>, ComparisonKeys>\n\n    readonly lte: (\n      value: ExtractIndexType<Table, Index>\n    ) => Omit<Count<Table, Index>, ComparisonKeys>\n\n    readonly gt: (\n      value: ExtractIndexType<Table, Index>\n    ) => Omit<Count<Table, Index>, ComparisonKeys>\n\n    readonly lt: (\n      value: ExtractIndexType<Table, Index>\n    ) => Omit<Count<Table, Index>, ComparisonKeys>\n\n    readonly between: (\n      lowerBound: ExtractIndexType<Table, Index>,\n      upperBound: ExtractIndexType<Table, Index>,\n      options?: { excludeLowerBound?: boolean; excludeUpperBound?: boolean }\n    ) => Omit<Count<Table, Index>, ComparisonKeys>\n  }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbQueryBuilder.ts#L347"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbQueryBuilder.ts#L355"
   },
   {
     "_tag": "Interface",
@@ -1325,7 +1325,7 @@
     "since": "4.0.0",
     "category": "models",
     "signature": "export interface DeletePartial<\n    Table extends IndexedDbTable.AnyWithProps,\n    Index extends IndexedDbDatabase.IndexFromTable<Table>\n  > {\n    readonly from: From<Table>\n    readonly index?: Index\n\n    readonly equals: (\n      value: EqualsType<Table, Index>\n    ) => Delete<Table, Index>\n\n    readonly gte: (\n      value: ExtractIndexType<Table, Index>\n    ) => Delete<Table, Index>\n\n    readonly lte: (\n      value: ExtractIndexType<Table, Index>\n    ) => Delete<Table, Index>\n\n    readonly gt: (\n      value: ExtractIndexType<Table, Index>\n    ) => Delete<Table, Index>\n\n    readonly lt: (\n      value: ExtractIndexType<Table, Index>\n    ) => Delete<Table, Index>\n\n    readonly between: (\n      lowerBound: ExtractIndexType<Table, Index>,\n      upperBound: ExtractIndexType<Table, Index>,\n      options?: { excludeLowerBound?: boolean; excludeUpperBound?: boolean }\n    ) => Delete<Table, Index>\n\n    readonly limit: (\n      limit: number\n    ) => DeleteWithout<Table, Index, \"limit\">\n  }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbQueryBuilder.ts#L392"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbQueryBuilder.ts#L400"
   },
   {
     "_tag": "Interface",
@@ -1341,7 +1341,7 @@
     "since": "4.0.0",
     "category": "models",
     "signature": "export interface Delete<\n    Table extends IndexedDbTable.AnyWithProps,\n    Index extends IndexedDbDatabase.IndexFromTable<Table>,\n    ExcludedKeys extends string = never\n  > extends Effect.Effect<void, IndexedDbQueryError> {\n    readonly delete: DeletePartial<Table, Index>\n    readonly index?: Index\n    readonly limitValue?: number\n    readonly only?: ExtractIndexType<Table, Index>\n    readonly lowerBound?: ExtractIndexType<Table, Index>\n    readonly upperBound?: ExtractIndexType<Table, Index>\n    readonly excludeLowerBound?: boolean\n    readonly excludeUpperBound?: boolean\n    readonly predicate?: (item: IndexedDbTable.Encoded<Table>) => boolean\n\n    readonly limit: (\n      limit: number\n    ) => DeleteWithout<Table, Index, ExcludedKeys | \"limit\">\n\n    readonly filter: (\n      f: (value: IndexedDbTable.Encoded<Table>) => boolean\n    ) => DeleteWithout<Table, Index, ExcludedKeys>\n\n    /**\n     * Invalidate any queries using Reactivity service with the provided keys.\n     *\n     * **Details**\n     *\n     * If no keys are provided, the table name is used as the reactivity key.\n     */\n    readonly invalidate: (\n      keys?: ReadonlyArray<unknown> | Record.ReadonlyRecord<string, ReadonlyArray<unknown>> | undefined\n    ) => Effect.Effect<void, IndexedDbQueryError, IndexedDbTable.Context<Table>>\n  }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbQueryBuilder.ts#L442"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbQueryBuilder.ts#L450"
   },
   {
     "_tag": "Interface",
@@ -1357,7 +1357,7 @@
     "since": "4.0.0",
     "category": "models",
     "signature": "export interface Select<\n    Table extends IndexedDbTable.AnyWithProps,\n    Index extends IndexedDbDatabase.IndexFromTable<Table>,\n    ExcludedKeys extends string = never\n  > extends\n    Effect.Effect<\n      Array<SelectType<Table>>,\n      IndexedDbQueryError,\n      IndexedDbTable.Context<Table>\n    >\n  {\n    readonly from: From<Table>\n    readonly index?: Index\n    readonly limitValue?: number\n    readonly offsetValue?: number\n    readonly reverseValue?: boolean\n    readonly only?: ExtractIndexType<Table, Index>\n    readonly lowerBound?: ExtractIndexType<Table, Index>\n    readonly upperBound?: ExtractIndexType<Table, Index>\n    readonly excludeLowerBound?: boolean\n    readonly excludeUpperBound?: boolean\n    readonly predicate?: (item: IndexedDbTable.Encoded<Table>) => boolean\n\n    readonly equals: (\n      value: EqualsType<Table, Index>\n    ) => SelectWithout<Table, Index, ExcludedKeys | ComparisonKeys>\n\n    readonly gte: (\n      value: ExtractIndexType<Table, Index>\n    ) => SelectWithout<Table, Index, ExcludedKeys | ComparisonKeys>\n\n    readonly lte: (\n      value: ExtractIndexType<Table, Index>\n    ) => SelectWithout<Table, Index, ExcludedKeys | ComparisonKeys>\n\n    readonly gt: (\n      value: ExtractIndexType<Table, Index>\n    ) => SelectWithout<Table, Index, ExcludedKeys | ComparisonKeys>\n\n    readonly lt: (\n      value: ExtractIndexType<Table, Index>\n    ) => SelectWithout<Table, Index, ExcludedKeys | ComparisonKeys>\n\n    readonly between: (\n      lowerBound: ExtractIndexType<Table, Index>,\n      upperBound: ExtractIndexType<Table, Index>,\n      options?: { excludeLowerBound?: boolean; excludeUpperBound?: boolean }\n    ) => SelectWithout<Table, Index, ExcludedKeys | ComparisonKeys>\n\n    readonly limit: (\n      limit: number\n    ) => SelectWithout<Table, Index, ExcludedKeys | \"limit\" | \"first\">\n\n    readonly offset: (\n      offset: number\n    ) => SelectWithout<Table, Index, ExcludedKeys | \"offset\" | \"first\">\n\n    readonly reverse: () => SelectWithout<Table, Index, ExcludedKeys | \"reverse\" | \"first\">\n\n    readonly filter: (\n      f: (value: IndexedDbTable.Encoded<Table>) => boolean\n    ) => SelectWithout<Table, Index, ExcludedKeys | \"first\">\n\n    readonly first: () => First<Table, Index>\n\n    /**\n     * Stream the selected data.\n     *\n     * **Details**\n     *\n     * The default chunk size is 100.\n     */\n    readonly stream: (options?: {\n      readonly chunkSize?: number | undefined\n    }) => Stream.Stream<\n      SelectType<Table>,\n      IndexedDbQueryError,\n      IndexedDbTable.Context<Table>\n    >\n\n    /**\n     * Use the Reactivity service to react to changes to the selected data.\n     *\n     * **Details**\n     *\n     * By default, the table name is used as the reactivity key.\n     */\n    readonly reactive: (\n      keys?: ReadonlyArray<unknown> | Record.ReadonlyRecord<string, ReadonlyArray<unknown>> | undefined\n    ) => Stream.Stream<\n      Array<SelectType<Table>>,\n      IndexedDbQueryError,\n      IndexedDbTable.Context<Table>\n    >\n    readonly reactiveQueue: (\n      keys?: ReadonlyArray<unknown> | Record.ReadonlyRecord<string, ReadonlyArray<unknown>> | undefined\n    ) => Effect.Effect<\n      Queue.Dequeue<Array<SelectType<Table>>, IndexedDbQueryError>,\n      never,\n      Scope.Scope | IndexedDbTable.Context<Table>\n    >\n  }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbQueryBuilder.ts#L489"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbQueryBuilder.ts#L497"
   },
   {
     "_tag": "Interface",
@@ -1373,7 +1373,7 @@
     "since": "4.0.0",
     "category": "models",
     "signature": "export interface First<\n    Table extends IndexedDbTable.AnyWithProps,\n    Index extends IndexedDbDatabase.IndexFromTable<Table>\n  > extends\n    Effect.Effect<\n      SelectType<Table>,\n      IndexedDbQueryError | Cause.NoSuchElementError,\n      IndexedDbTable.Context<Table>\n    >\n  {\n    readonly select: Select<Table, Index>\n\n    /**\n     * Use the Reactivity service to react to changes to the selected data.\n     *\n     * **Details**\n     *\n     * By default, the table name is used as the reactivity key.\n     */\n    readonly reactive: (\n      keys?: ReadonlyArray<unknown> | Record.ReadonlyRecord<string, ReadonlyArray<unknown>> | undefined\n    ) => Stream.Stream<\n      SelectType<Table>,\n      IndexedDbQueryError | Cause.NoSuchElementError,\n      IndexedDbTable.Context<Table>\n    >\n\n    /**\n     * Use the Reactivity service to react to changes to the selected data.\n     *\n     * **Details**\n     *\n     * By default, the table name is used as the reactivity key.\n     */\n    readonly reactiveQueue: (\n      keys: ReadonlyArray<unknown> | Record.ReadonlyRecord<string, ReadonlyArray<unknown>>\n    ) => Effect.Effect<\n      Queue.Dequeue<SelectType<Table>, IndexedDbQueryError | Cause.NoSuchElementError>,\n      never,\n      Scope.Scope | IndexedDbTable.Context<Table>\n    >\n  }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbQueryBuilder.ts#L598"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbQueryBuilder.ts#L606"
   },
   {
     "_tag": "Interface",
@@ -1389,7 +1389,7 @@
     "since": "4.0.0",
     "category": "models",
     "signature": "export interface Filter<\n    Table extends IndexedDbTable.AnyWithProps,\n    Index extends IndexedDbDatabase.IndexFromTable<Table>\n  > extends\n    Effect.Effect<\n      Array<SelectType<Table>>,\n      IndexedDbQueryError,\n      IndexedDbTable.Context<Table>\n    >\n  {\n    readonly select: Select<Table, Index>\n    readonly predicate: (item: IndexedDbTable.Encoded<Table>) => boolean\n    readonly filter: (\n      f: (value: IndexedDbTable.Encoded<Table>) => boolean\n    ) => Filter<Table, Index>\n  }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbQueryBuilder.ts#L647"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbQueryBuilder.ts#L655"
   },
   {
     "_tag": "Interface",
@@ -1405,7 +1405,7 @@
     "since": "4.0.0",
     "category": "models",
     "signature": "export interface Modify<\n    Table extends IndexedDbTable.AnyWithProps\n  > extends\n    Effect.Effect<\n      globalThis.IDBValidKey,\n      IndexedDbQueryError,\n      IndexedDbTable.Context<Table>\n    >\n  {\n    readonly operation: \"add\" | \"put\"\n    readonly from: From<Table>\n    readonly value: ModifyWithKey<Table>\n\n    /**\n     * Invalidate any queries using Reactivity service with the provided keys.\n     *\n     * **Details**\n     *\n     * If no keys are provided, the table name is used as the reactivity key.\n     */\n    readonly invalidate: (\n      keys?: ReadonlyArray<unknown> | Record.ReadonlyRecord<string, ReadonlyArray<unknown>> | undefined\n    ) => Effect.Effect<globalThis.IDBValidKey, IndexedDbQueryError, IndexedDbTable.Context<Table>>\n  }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbQueryBuilder.ts#L670"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbQueryBuilder.ts#L678"
   },
   {
     "_tag": "Interface",
@@ -1421,7 +1421,7 @@
     "since": "4.0.0",
     "category": "models",
     "signature": "export interface ModifyAll<\n    Table extends IndexedDbTable.AnyWithProps\n  > extends\n    Effect.Effect<\n      Array<globalThis.IDBValidKey>,\n      IndexedDbQueryError,\n      IndexedDbTable.Context<Table>\n    >\n  {\n    readonly operation: \"add\" | \"put\"\n    readonly from: From<Table>\n    readonly values: Array<ModifyWithKey<Table>>\n\n    /**\n     * Invalidate any queries using Reactivity service with the provided keys.\n     *\n     * **Details**\n     *\n     * If no keys are provided, the table name is used as the reactivity key.\n     */\n    readonly invalidate: (\n      keys?: ReadonlyArray<unknown> | Record.ReadonlyRecord<string, ReadonlyArray<unknown>> | undefined\n    ) => Effect.Effect<globalThis.IDBValidKey, IndexedDbQueryError, IndexedDbTable.Context<Table>>\n  }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbQueryBuilder.ts#L701"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbQueryBuilder.ts#L709"
   },
   {
     "_tag": "TypeAlias",
@@ -1437,7 +1437,7 @@
     "since": "4.0.0",
     "category": "models",
     "signature": "type SelectType<Table> = [IndexedDbTable.KeyPath<Table>] extends [undefined] ? IndexedDbTable.TableSchema<Table>[\"Type\"] & {\n      readonly key: (typeof IndexedDb.IDBValidKey)[\"Type\"]\n    } :\n    IndexedDbTable.TableSchema<Table>[\"Type\"]",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbQueryBuilder.ts#L182"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbQueryBuilder.ts#L190"
   },
   {
     "_tag": "TypeAlias",
@@ -1453,7 +1453,7 @@
     "since": "4.0.0",
     "category": "models",
     "signature": "type ModifyType<Table> = & (IndexedDbTable.AutoIncrement<Table> extends true ?\n        & {\n          [\n            key in keyof Schema.Struct.MakeIn<\n              Omit<\n                IndexedDbTable.TableSchema<Table>[\"fields\"],\n                IndexedDbTable.KeyPath<Table>\n              >\n            >\n          ]: key extends keyof Schema.Struct.MakeIn<\n            IndexedDbTable.TableSchema<Table>[\"fields\"]\n          > ? Schema.Struct.MakeIn<\n              IndexedDbTable.TableSchema<Table>[\"fields\"]\n            >[key]\n            : never\n        }\n        & {\n          [key in IndexedDbTable.KeyPath<Table>]?: number | undefined\n        }\n      : Schema.Struct.MakeIn<IndexedDbTable.TableSchema<Table>[\"fields\"]>)\n    & ([IndexedDbTable.KeyPath<Table>] extends [undefined] ? {\n        key: IDBValidKey\n      }\n      : {})",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbQueryBuilder.ts#L195"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbQueryBuilder.ts#L203"
   },
   {
     "_tag": "TypeAlias",
@@ -1469,7 +1469,7 @@
     "since": "4.0.0",
     "category": "models",
     "signature": "type EqualsType<Table, Index, KeyPath, Type> = KeyPath extends keyof Type ? Type[KeyPath]\n    : { [I in keyof KeyPath]: KeyPath[I] extends keyof Type ? Type[KeyPath[I]] | [] : never }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbQueryBuilder.ts#L229"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbQueryBuilder.ts#L237"
   },
   {
     "_tag": "TypeAlias",
@@ -1485,7 +1485,7 @@
     "since": "4.0.0",
     "category": "models",
     "signature": "type ExtractIndexType<Table, Index, KeyPath, Type> = KeyPath extends keyof Type ? Type[KeyPath]\n    : KeyPath extends readonly [infer K, ...infer Rest] ? K extends keyof Type ? [\n          Type[K],\n          ...{ [P in keyof Rest]?: Rest[P] extends keyof Type ? Type[Rest[P]] | [] : never }\n        ] :\n      never :\n    never",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbQueryBuilder.ts#L243"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbQueryBuilder.ts#L251"
   },
   {
     "_tag": "TypeAlias",
@@ -1501,7 +1501,7 @@
     "since": "4.0.0",
     "category": "models",
     "signature": "type ModifyWithKey<Table> = ModifyType<Table>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbQueryBuilder.ts#L262"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbQueryBuilder.ts#L270"
   },
   {
     "_tag": "Function",
@@ -1511,13 +1511,13 @@
     },
     "project": "@effect/platform-browser",
     "name": "make",
-    "description": "Creates a typed IndexedDB table definition from its name, schema, optional key path, indexes, auto-increment flag, and durability.",
+    "description": "Creates a typed IndexedDB table definition from its name, schema, optional key path, indexes, auto-increment flag, and durability.\n\n**When to use**\n\nUse to define a typed object-store descriptor for inclusion in an\n`IndexedDbVersion` and for migration or query APIs.\n\n**Details**\n\n`autoIncrement` defaults to `false` and `durability` defaults to `\"relaxed\"`.\nTables without a key path get a read schema that includes an out-of-line\n`key`, while auto-increment tables use a write schema where the generated key\nmay be omitted.\n\n**Gotchas**\n\nTables without a key path cannot define a `key` field in their row schema.\nKey paths and index paths must point to encoded fields whose values are valid\nIndexedDB keys, and declared indexes still need to be created during\ndatabase migrations.",
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
     "category": "constructors",
     "signature": "declare const make: <const Name extends string, TableSchema extends AnySchemaStruct, const Indexes extends Record<string, IndexedDbQueryBuilder.KeyPath<TableSchema>>, const KeyPath extends (AutoIncrement extends true ? IndexedDbQueryBuilder.KeyPathNumber<NoInfer<TableSchema>> : IndexedDbQueryBuilder.KeyPath<NoInfer<TableSchema>>) | undefined = undefined, const AutoIncrement extends boolean = false>(options: { readonly name: Name; readonly schema: [KeyPath] extends [undefined] ? \"key\" extends keyof TableSchema[\"fields\"] ? \"Cannot have a 'key' field when keyPath is undefined\" : TableSchema : TableSchema; readonly keyPath?: KeyPath; readonly indexes?: Indexes | undefined; readonly autoIncrement?: IsValidAutoIncrementKeyPath<TableSchema, KeyPath> extends true ? AutoIncrement | undefined : never; readonly durability?: IDBTransactionDurability | undefined; }) => IndexedDbTable<Name, TableSchema, Indexes, Extract<KeyPath, Readonly<IDBValidKey | undefined>>, AutoIncrement>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbTable.ts#L182"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbTable.ts#L220"
   },
   {
     "_tag": "Interface",
@@ -1533,7 +1533,7 @@
     "since": "4.0.0",
     "category": "interface",
     "signature": "export interface IndexedDbTable<\n  out Name extends string,\n  out TableSchema extends AnySchemaStruct,\n  out Indexes extends Record<\n    string,\n    IndexedDbQueryBuilder.KeyPath<TableSchema>\n  >,\n  out KeyPath extends Readonly<IDBValidKey | undefined>,\n  out AutoIncrement extends boolean\n> extends Pipeable {\n  new(_: never): {}\n  readonly [TypeId]: typeof TypeId\n  readonly tableName: Name\n  readonly tableSchema: TableSchema\n  readonly readSchema: Schema.Top\n  readonly autoincrementSchema: Schema.Top\n  readonly arraySchema: Schema.Top\n  readonly keyPath: KeyPath\n  readonly indexes: Indexes\n  readonly autoIncrement: AutoIncrement\n  readonly durability: IDBTransactionDurability\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbTable.ts#L37"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbTable.ts#L54"
   },
   {
     "_tag": "Interface",
@@ -1549,7 +1549,7 @@
     "since": "4.0.0",
     "category": "models",
     "signature": "export interface Any {\n  readonly [TypeId]: typeof TypeId\n  readonly keyPath: any\n  readonly tableName: string\n  readonly tableSchema: Schema.Top\n  readonly readSchema: Schema.Top\n  readonly autoincrementSchema: Schema.Top\n  readonly arraySchema: Schema.Top\n  readonly autoIncrement: boolean\n  readonly indexes: any\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbTable.ts#L76"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbTable.ts#L93"
   },
   {
     "_tag": "TypeAlias",
@@ -1565,7 +1565,7 @@
     "since": "4.0.0",
     "category": "models",
     "signature": "type AnySchemaStruct = Schema.Top & {\n  readonly fields: Schema.Struct.Fields\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbTable.ts#L66"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbTable.ts#L83"
   },
   {
     "_tag": "TypeAlias",
@@ -1581,7 +1581,7 @@
     "since": "4.0.0",
     "category": "models",
     "signature": "type AnyWithProps = IndexedDbTable<\n  string,\n  AnySchemaStruct,\n  any,\n  any,\n  boolean\n>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbTable.ts#L94"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbTable.ts#L111"
   },
   {
     "_tag": "TypeAlias",
@@ -1597,7 +1597,7 @@
     "since": "4.0.0",
     "category": "models",
     "signature": "type TableName<Table> = Table[\"tableName\"]",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbTable.ts#L108"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbTable.ts#L125"
   },
   {
     "_tag": "TypeAlias",
@@ -1613,7 +1613,7 @@
     "since": "4.0.0",
     "category": "models",
     "signature": "type KeyPath<Table> = Table[\"keyPath\"]",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbTable.ts#L115"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbTable.ts#L132"
   },
   {
     "_tag": "TypeAlias",
@@ -1629,7 +1629,7 @@
     "since": "4.0.0",
     "category": "models",
     "signature": "type AutoIncrement<Table> = Table[\"autoIncrement\"]",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbTable.ts#L123"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbTable.ts#L140"
   },
   {
     "_tag": "TypeAlias",
@@ -1645,7 +1645,7 @@
     "since": "4.0.0",
     "category": "models",
     "signature": "type TableSchema<Table> = Table[\"tableSchema\"]",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbTable.ts#L131"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbTable.ts#L148"
   },
   {
     "_tag": "TypeAlias",
@@ -1661,7 +1661,7 @@
     "since": "4.0.0",
     "category": "models",
     "signature": "type Context<Table> = | Table[\"tableSchema\"][\"DecodingServices\"]\n  | Table[\"tableSchema\"][\"EncodingServices\"]",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbTable.ts#L138"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbTable.ts#L155"
   },
   {
     "_tag": "TypeAlias",
@@ -1677,7 +1677,7 @@
     "since": "4.0.0",
     "category": "models",
     "signature": "type Encoded<Table> = Table[\"tableSchema\"][\"Encoded\"]",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbTable.ts#L148"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbTable.ts#L165"
   },
   {
     "_tag": "TypeAlias",
@@ -1693,7 +1693,7 @@
     "since": "4.0.0",
     "category": "models",
     "signature": "type Indexes<Table> = Table[\"indexes\"]",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbTable.ts#L156"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbTable.ts#L173"
   },
   {
     "_tag": "TypeAlias",
@@ -1709,7 +1709,7 @@
     "since": "4.0.0",
     "category": "models",
     "signature": "type WithName<Table, TableName> = Extract<\n  Table,\n  { readonly tableName: TableName }\n>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbTable.ts#L164"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbTable.ts#L181"
   },
   {
     "_tag": "Function",
@@ -1719,13 +1719,13 @@
     },
     "project": "@effect/platform-browser",
     "name": "make",
-    "description": "Creates an `IndexedDbVersion` from one or more table definitions.",
+    "description": "Creates an `IndexedDbVersion` from one or more table definitions.\n\n**Details**\n\nThe returned version exposes a `tables` map keyed by each table's\n`tableName`, and its type is the union of the supplied table definitions.\n\n**Gotchas**\n\nThis constructor only describes the target schema; object stores and indexes\nstill need to be created in the corresponding `IndexedDbDatabase` migration.\nDuplicate table names are not rejected, and the runtime map keeps the later\ntable for a repeated key.",
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
     "category": "constructors",
     "signature": "declare const make: <const Tables extends NonEmptyReadonlyArray<IndexedDbTable.AnyWithProps>>(...tables: Tables) => IndexedDbVersion<Tables[number]>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbVersion.ts#L112"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbVersion.ts#L126"
   },
   {
     "_tag": "Interface",
@@ -1837,7 +1837,7 @@
     "since": "4.0.0",
     "category": "errors",
     "signature": "declare class PermissionsInvalidStateError",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/Permissions.ts#L58"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/Permissions.ts#L73"
   },
   {
     "_tag": "Class",
@@ -1853,7 +1853,7 @@
     "since": "4.0.0",
     "category": "errors",
     "signature": "declare class PermissionsTypeError",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/Permissions.ts#L72"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/Permissions.ts#L87"
   },
   {
     "_tag": "Class",
@@ -1869,7 +1869,7 @@
     "since": "4.0.0",
     "category": "errors",
     "signature": "declare class PermissionsError { constructor(props: { readonly reason: PermissionsErrorReason }) }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/Permissions.ts#L94"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/Permissions.ts#L109"
   },
   {
     "_tag": "Constant",
@@ -1879,13 +1879,13 @@
     },
     "project": "@effect/platform-browser",
     "name": "Permissions",
-    "description": "Service tag for the browser `Permissions` service.",
+    "description": "Service tag for the browser `Permissions` service.\n\n**When to use**\n\nUse when an Effect needs to require or provide browser permission querying\nthrough the context.",
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
     "category": "services",
     "signature": "declare const Permissions: Context.Service<Permissions, Permissions>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/Permissions.ts#L117"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/Permissions.ts#L137"
   },
   {
     "_tag": "Constant",
@@ -1895,13 +1895,13 @@
     },
     "project": "@effect/platform-browser",
     "name": "layer",
-    "description": "A layer that directly interfaces with the `navigator.permissions` api",
+    "description": "Provides the `Permissions` service using the browser `navigator.permissions` API.\n\n**When to use**\n\nUse when browser programs need a live `Permissions` service backed by the\nambient `navigator.permissions` implementation.\n\n**Details**\n\n`query` delegates to `navigator.permissions.query({ name })` and wraps\nrejected browser operations in `PermissionsError`.",
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
     "category": "layers",
     "signature": "declare const layer: Layer.Layer<Permissions, never, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/Permissions.ts#L125"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/Permissions.ts#L155"
   },
   {
     "_tag": "Interface",
@@ -1917,7 +1917,7 @@
     "since": "4.0.0",
     "category": "models",
     "signature": "export interface Permissions {\n  readonly [TypeId]: typeof TypeId\n\n  /**\n   * Returns the state of a user permission on the global scope.\n   */\n  readonly query: <Name extends PermissionName>(\n    name: Name\n  ) => Effect.Effect<\n    // `name` is identical to the name passed to Permissions.query\n    // https://developer.mozilla.org/en-US/docs/Web/API/PermissionStatus\n    Omit<PermissionStatus, \"name\"> & { name: Name },\n    PermissionsError\n  >\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/Permissions.ts#L36"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/Permissions.ts#L51"
   },
   {
     "_tag": "TypeAlias",
@@ -1933,6 +1933,6 @@
     "since": "4.0.0",
     "category": "errors",
     "signature": "type PermissionsErrorReason = PermissionsInvalidStateError | PermissionsTypeError",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/Permissions.ts#L86"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/Permissions.ts#L101"
   }
 ]

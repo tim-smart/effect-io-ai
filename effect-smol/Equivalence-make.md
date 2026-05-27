@@ -7,7 +7,7 @@ Creates a custom equivalence relation with an optimized reference equality check
 
 **When to use**
 
-- Use when you need a custom equivalence that is not just strict equality
+Use when you need a custom equivalence that is not just strict equality
 - Use when creating equivalences for complex types with custom comparison logic
 - Use when you want the performance benefit of reference equality optimization
 

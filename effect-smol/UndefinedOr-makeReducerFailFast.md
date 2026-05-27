@@ -8,8 +8,8 @@ fail-fast semantics.
 
 **When to use**
 
-- Wrapping an existing `Reducer` to work with `A | undefined` values
-- Reductions where any `undefined` value should abort the entire result
+Use to wrap an existing `Reducer` so any `undefined` value aborts the entire
+reduction result.
 
 **Details**
 
@@ -28,6 +28,6 @@ lift it to `UndefinedOr` values.
 declare const makeReducerFailFast: <A>(reducer: Reducer.Reducer<A>) => Reducer.Reducer<A | undefined>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/UndefinedOr.ts#L189)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/UndefinedOr.ts#L274)
 
 Since v4.0.0

@@ -32,6 +32,6 @@ export interface refine<T extends S["Type"], S extends Top> extends
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L4208)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L4314)
 
 Since v3.10.0

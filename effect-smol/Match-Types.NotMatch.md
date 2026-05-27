@@ -33,6 +33,6 @@ type NotSpecificValue = Match.Types.NotMatch<"a" | "b" | "c", "a">
 type NotMatch<R, P> = Exclude<R, ExtractMatch<R, PForNotMatch<P>>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L1976)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L2172)
 
 Since v4.0.0

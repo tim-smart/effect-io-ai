@@ -11,6 +11,6 @@ Asserts that `a` is `undefined`.
 declare const assertUndefined: <A>(a: A | undefined, ..._: Array<never>) => asserts a is undefined
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/vitest/src/utils.ts#L242)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/vitest/src/utils.ts#L257)
 
 Since v4.0.0

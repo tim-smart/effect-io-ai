@@ -8,7 +8,7 @@ and applies the flatMap function eagerly when possible.
 
 **When to use**
 
-`flatMapEager` provides better performance for effects that are already resolved
+Use when `flatMapEager` provides better performance for effects that are already resolved
 by applying the transformation immediately instead of deferring it through
 the effect pipeline.
 
@@ -43,6 +43,6 @@ const flatMappedPending = Effect.flatMapEager(
 declare const flatMapEager: { <A, B, E2, R2>(f: (a: A) => Effect<B, E2, R2>): <E, R>(self: Effect<A, E, R>) => Effect<B, E | E2, R | R2>; <A, E, R, B, E2, R2>(self: Effect<A, E, R>, f: (a: A) => Effect<B, E2, R2>): Effect<B, E | E2, R | R2>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L14535)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L15100)
 
 Since v4.0.0

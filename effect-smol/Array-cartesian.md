@@ -5,6 +5,10 @@ Module: `Array`<br />
 
 Computes the cartesian product of two arrays, returning all pairs as tuples.
 
+**When to use**
+
+Use when you need every `[a, b]` pair from two arrays as tuples.
+
 **Details**
 
 - Produces every `[a, b]` combination of an element from `self` with an element from `that`.
@@ -29,6 +33,6 @@ console.log(result) // [[1, "a"], [1, "b"], [2, "a"], [2, "b"]]
 declare const cartesian: { <B>(that: ReadonlyArray<B>): <A>(self: ReadonlyArray<A>) => Array<[A, B]>; <A, B>(self: ReadonlyArray<A>, that: ReadonlyArray<B>): Array<[A, B]>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L4234)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L4693)
 
 Since v2.0.0

@@ -5,12 +5,22 @@ Module: `SchemaRepresentation`<br />
 
 Schema codec for `PrimitiveTree`.
 
+**When to use**
+
+Use to validate recursive annotation metadata trees whose leaves are `null`,
+`number`, `boolean`, `bigint`, `symbol`, or `string`.
+
+**See**
+
+- `PrimitiveTree` for the recursive tree type accepted by this codec
+- `$Annotations` for the annotation codec that filters values through this codec
+
 **Signature**
 
 ```ts
 declare const $PrimitiveTree: Schema.Codec<PrimitiveTree, PrimitiveTree, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaRepresentation.ts#L824)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaRepresentation.ts#L832)
 
 Since v4.0.0

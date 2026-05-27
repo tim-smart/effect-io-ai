@@ -144,6 +144,6 @@ export interface RpcGroup<in out R extends Rpc.Any> extends Pipeable {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RpcGroup.ts#L49)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RpcGroup.ts#L60)
 
 Since v4.0.0

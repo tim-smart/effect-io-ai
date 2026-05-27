@@ -5,6 +5,10 @@ Module: `Config`<br />
 
 Creates a config that only accepts a specific literal value.
 
+**When to use**
+
+Use to restrict a config to a single, specific literal value.
+
 **Details**
 
 Shortcut for `Config.schema(Schema.Literal(literal), name)`.
@@ -17,12 +21,16 @@ import { Config } from "effect"
 const env = Config.literal("production", "ENV")
 ```
 
+**See**
+
+- `literals` – accepts multiple literal values
+
 **Signature**
 
 ```ts
 declare const literal: <L extends AST.LiteralValue>(literal: L, name?: string) => Config<L>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Config.ts#L1031)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Config.ts#L1065)
 
 Since v2.0.0

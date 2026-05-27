@@ -24,6 +24,6 @@ assert.deepStrictEqual(pipe("a", String.localeCompare("a")), 0)
 declare const localeCompare: (that: string, locales?: Array<string>, options?: Intl.CollatorOptions) => (self: string) => Ordering.Ordering
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L660)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L734)
 
 Since v2.0.0

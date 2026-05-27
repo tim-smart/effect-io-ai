@@ -3,7 +3,8 @@ Module: `Cause`<br />
 
 ## Cause.AsyncFiberErrorTypeId
 
-Unique brand for `AsyncFiberError`.
+Unique brand present on `AsyncFiberError` values and used by
+`isAsyncFiberError` for runtime checks.
 
 **Signature**
 
@@ -11,6 +12,6 @@ Unique brand for `AsyncFiberError`.
 declare const AsyncFiberErrorTypeId: "~effect/Cause/AsyncFiberError"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L1558)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L1697)
 
 Since v4.0.0

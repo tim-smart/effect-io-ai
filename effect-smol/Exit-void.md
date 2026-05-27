@@ -7,7 +7,7 @@ A pre-allocated successful Exit with a `void` value.
 
 **When to use**
 
-- Use when you need a success Exit but do not care about the value
+Use when you need a success Exit but do not care about the value
 - Avoids allocating a new Exit for a common case
 
 **Details**
@@ -34,6 +34,6 @@ console.log(Exit.isSuccess(exit)) // true
 declare const void: Exit<void, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Exit.ts#L410)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Exit.ts#L419)
 
 Since v2.0.0

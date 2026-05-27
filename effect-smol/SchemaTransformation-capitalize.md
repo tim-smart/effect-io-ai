@@ -8,7 +8,7 @@ decode. Encode is passthrough.
 
 **When to use**
 
-- Normalizing display names or titles.
+Use to normalize display names or titles.
 
 **Details**
 

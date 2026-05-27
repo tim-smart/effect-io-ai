@@ -5,6 +5,10 @@ Module: `BigInt`<br />
 
 Determines the sign of a given `bigint`.
 
+**When to use**
+
+Use to classify a `bigint` as negative, zero, or positive.
+
 **Example** (Determining bigint signs)
 
 ```ts
@@ -22,6 +26,6 @@ assert.deepStrictEqual(BigInt.sign(5n), 1)
 declare const sign: (n: bigint) => Ordering
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigInt.ts#L462)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigInt.ts#L633)
 
 Since v2.0.0

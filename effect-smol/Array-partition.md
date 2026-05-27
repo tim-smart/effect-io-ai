@@ -5,6 +5,11 @@ Module: `Array`<br />
 
 Splits an iterable using a `Filter` into failures and successes.
 
+**When to use**
+
+Use to evaluate each element with a `Result`-returning filter and keep both
+failure and success values.
+
 **Details**
 
 - Returns `[excluded, satisfying]`.
@@ -24,6 +29,7 @@ console.log(Array.partition([1, -2, 3], (n, i) =>
 **See**
 
 - `filter` — keep only matching elements
+- `filterMap` for discarding failures
 - `separate` — split an iterable of `Result` values
 
 **Signature**
@@ -32,6 +38,6 @@ console.log(Array.partition([1, -2, 3], (n, i) =>
 declare const partition: { <A, Pass, Fail>(f: (input: NoInfer<A>, i: number) => Result.Result<Pass, Fail>): (self: Iterable<A>) => [excluded: Array<Fail>, satisfying: Array<Pass>]; <A, Pass, Fail>(self: Iterable<A>, f: (input: A, i: number) => Result.Result<Pass, Fail>): [excluded: Array<Fail>, satisfying: Array<Pass>]; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L3473)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L3852)
 
 Since v2.0.0

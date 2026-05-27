@@ -11,6 +11,6 @@ RPC used to authenticate a remote event-log session after `HelloRpc`.
 declare class AuthenticateRpc
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventLogMessage.ts#L142)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventLogMessage.ts#L151)
 
 Since v4.0.0

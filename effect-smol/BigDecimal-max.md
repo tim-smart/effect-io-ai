@@ -5,6 +5,10 @@ Module: `BigDecimal`<br />
 
 Returns the maximum between two `BigDecimal`s.
 
+**When to use**
+
+Use to select the larger of two `BigDecimal` values.
+
 **Example** (Selecting the larger decimal)
 
 ```ts
@@ -17,12 +21,16 @@ assert.deepStrictEqual(
 )
 ```
 
+**See**
+
+- `min` for selecting the smaller value
+
 **Signature**
 
 ```ts
 declare const max: { (that: BigDecimal): (self: BigDecimal) => BigDecimal; (self: BigDecimal, that: BigDecimal): BigDecimal; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigDecimal.ts#L873)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigDecimal.ts#L1033)
 
 Since v2.0.0

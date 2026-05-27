@@ -12,6 +12,6 @@ type Tool = | FunctionTool
   | CustomToolParam
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/OpenAiClient.ts#L559)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/OpenAiClient.ts#L610)
 
 Since v4.0.0

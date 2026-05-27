@@ -20,6 +20,6 @@ console.log(Filter.number("42")) // fail
 declare const number: Filter<unknown, number, unknown>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Filter.ts#L339)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Filter.ts#L388)
 
 Since v4.0.0

@@ -11,6 +11,6 @@ Constructs a SQL `Fragment` from low-level statement segments.
 declare const fragment: (segments: ReadonlyArray<Segment>) => Fragment
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Statement.ts#L55)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Statement.ts#L75)
 
 Since v4.0.0

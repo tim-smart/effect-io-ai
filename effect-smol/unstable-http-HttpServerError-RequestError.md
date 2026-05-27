@@ -11,6 +11,6 @@ Union of errors that are tied directly to an incoming server request.
 type RequestError = RequestParseError | RouteNotFound | InternalError
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpServerError.ts#L234)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpServerError.ts#L247)
 
 Since v4.0.0

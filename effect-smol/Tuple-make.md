@@ -7,7 +7,7 @@ Creates a tuple from the provided arguments.
 
 **When to use**
 
-Use this instead of `[a, b, c] as const` when you want a properly typed tuple
+Use when you use this instead of `[a, b, c] as const` when you want a properly typed tuple
 without a manual cast.
 
 **Details**
@@ -35,6 +35,6 @@ console.log(point) // [10, 20, "red"]
 declare const make: <Elements extends ReadonlyArray<unknown>>(...elements: Elements) => Elements
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tuple.ts#L106)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tuple.ts#L105)
 
 Since v2.0.0

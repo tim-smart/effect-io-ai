@@ -11,6 +11,6 @@ The reusable `Eof` message value.
 declare const constEof: Eof
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RpcMessage.ts#L172)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RpcMessage.ts#L190)
 
 Since v4.0.0

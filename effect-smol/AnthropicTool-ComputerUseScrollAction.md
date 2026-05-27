@@ -11,6 +11,6 @@ Computer-use action payload for scrolling by a specified amount in a specified d
 type ComputerUseScrollAction = typeof ComputerUseScrollAction.Type
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L711)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L1148)
 
 Since v4.0.0

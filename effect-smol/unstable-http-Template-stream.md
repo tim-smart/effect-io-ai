@@ -17,6 +17,6 @@ output.
 declare const stream: <A extends ReadonlyArray<InterpolatedWithStream>>(strings: TemplateStringsArray, ...args: A) => Stream.Stream<string, Interpolated.Error<A[number]>, Interpolated.Context<A[number]>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Template.ts#L185)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Template.ts#L198)
 
 Since v4.0.0

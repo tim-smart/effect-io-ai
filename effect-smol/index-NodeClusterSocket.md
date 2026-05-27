@@ -11,6 +11,6 @@ Re-exports all named exports from the "./NodeClusterSocket.ts" module as `NodeCl
 export * as NodeClusterSocket from "./NodeClusterSocket.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L35)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L15)
 
 Since v4.0.0

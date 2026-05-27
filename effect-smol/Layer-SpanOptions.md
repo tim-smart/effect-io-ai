@@ -6,6 +6,22 @@ Module: `Layer`<br />
 Represents options that can be used to control the behavior of spans created
 for layers.
 
+**When to use**
+
+Use to configure tracing metadata, stack trace capture, and `onEnd`
+finalization for spans created by `Layer.span` and `Layer.withSpan` during
+layer construction.
+
+**Details**
+
+Extends `Tracer.SpanOptions` with `onEnd`, which runs when the layer span
+ends as the layer scope closes.
+
+**See**
+
+- `span` for creating a layer span
+- `withSpan` for wrapping layer construction in a span
+
 **Signature**
 
 ```ts
@@ -20,6 +36,6 @@ export interface SpanOptions extends Tracer.SpanOptions {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L2353)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L2479)
 
 Since v4.0.0

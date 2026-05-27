@@ -3,8 +3,12 @@ Module: `ClusterError`<br />
 
 ## ClusterError.AlreadyProcessingMessage
 
-Represents an error that occurs when the entity is already processing a
-request.
+Represents an error that occurs when the same request envelope is already
+being processed.
+
+**Details**
+
+Carries the `address` and `envelopeId` for the affected request envelope.
 
 **Signature**
 
@@ -12,6 +16,6 @@ request.
 declare class AlreadyProcessingMessage
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ClusterError.ts#L212)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ClusterError.ts#L251)
 
 Since v4.0.0

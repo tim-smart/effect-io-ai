@@ -20,6 +20,6 @@ are composed using their natural encoding/decoding chain.
 export interface compose<To extends Top, From extends Top> extends decodeTo<To, From> {}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L4577)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L4728)
 
 Since v3.10.0

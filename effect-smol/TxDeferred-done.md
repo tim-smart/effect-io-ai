@@ -6,6 +6,10 @@ Module: `TxDeferred`<br />
 Completes the deferred with a `Result`. Returns `true` if this was the first
 completion, `false` if already completed.
 
+**When to use**
+
+Use to complete a `TxDeferred` with an already computed `Result`.
+
 **Example** (Completing with a result)
 
 ```ts
@@ -26,6 +30,6 @@ const program = Effect.gen(function*() {
 declare const done: { <A, E>(result: Result<A, E>): (self: TxDeferred<A, E>) => Effect.Effect<boolean>; <A, E>(self: TxDeferred<A, E>, result: Result<A, E>): Effect.Effect<boolean>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxDeferred.ts#L188)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxDeferred.ts#L235)
 
 Since v2.0.0

@@ -7,7 +7,7 @@ Reusable prototype that implements `Pipeable.pipe`.
 
 **When to use**
 
-Classes or object prototypes can reuse this value when they need the
+Use when classes or object prototypes can reuse this value when they need the
 standard pipe implementation backed by `pipeArguments`.
 
 **Signature**
@@ -16,6 +16,6 @@ standard pipe implementation backed by `pipeArguments`.
 declare const Prototype: Pipeable
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Pipeable.ts#L608)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Pipeable.ts#L617)
 
 Since v3.15.0

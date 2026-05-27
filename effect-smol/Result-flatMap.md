@@ -5,6 +5,11 @@ Module: `Result`<br />
 
 Chains a function that returns a `Result` onto a successful value.
 
+**When to use**
+
+Use to sequence `Result`-returning computations that should short-circuit on
+failure.
+
 **Details**
 
 - If `self` is a `Success`, applies `f` to the value and returns the resulting `Result`
@@ -38,6 +43,6 @@ console.log(result)
 declare const flatMap: { <A, A2, E2>(f: (a: A) => Result<A2, E2>): <E>(self: Result<A, E>) => Result<A2, E | E2>; <A, E, A2, E2>(self: Result<A, E>, f: (a: A) => Result<A2, E2>): Result<A2, E | E2>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L1276)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L1362)
 
 Since v2.0.0

@@ -6,10 +6,14 @@ Module: `Redactable`<br />
 Type guard that checks whether a value implements the `Redactable`
 interface.
 
+**When to use**
+
+Use to narrow an unknown value before calling redaction-specific helpers.
+
 **See**
 
-- `Redactable` - the interface being checked
-- `redact` - applies redaction if the value is redactable
+- `Redactable` for the interface being checked
+- `redact` to apply redaction if the value is redactable
 
 **Signature**
 
@@ -17,6 +21,6 @@ interface.
 declare const isRedactable: (u: unknown) => u is Redactable
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Redactable.ts#L155)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Redactable.ts#L159)
 
 Since v3.10.0

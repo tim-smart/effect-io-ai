@@ -38,6 +38,6 @@ const program = Effect.gen(function*() {
 declare const end: <A, E>(self: Enqueue<A, E | Done>) => Effect<boolean>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Queue.ts#L942)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Queue.ts#L1012)
 
 Since v4.0.0

@@ -5,6 +5,17 @@ Module: `Chat`<br />
 
 Represents the interface that the `Chat` service provides.
 
+**When to use**
+
+Use as the service contract for code that receives or constructs a stateful
+chat session and needs history, export, text generation, streaming, and
+structured-output operations.
+
+**See**
+
+- `Chat` for the context tag that provides this service
+- `Persisted` for the persistence-backed extension
+
 **Signature**
 
 ```ts
@@ -273,6 +284,6 @@ export interface Service {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chat.ts#L108)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chat.ts#L127)
 
 Since v4.0.0

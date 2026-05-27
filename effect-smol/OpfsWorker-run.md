@@ -11,6 +11,6 @@ Runs the SQLite OPFS worker loop, opening the configured database, posting a rea
 declare const run: (options: OpfsWorkerConfig) => Effect.Effect<void, SqlError>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/sql/do/src/OpfsWorker.ts#L52)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/sql/do/src/OpfsWorker.ts#L72)
 
 Since v4.0.0

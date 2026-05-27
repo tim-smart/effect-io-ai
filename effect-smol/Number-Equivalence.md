@@ -5,6 +5,10 @@ Module: `Number`<br />
 
 An `Equivalence` instance for numbers where `NaN` is considered equal to `NaN`.
 
+**When to use**
+
+Use when an API needs an `Equivalence` instance for numeric equality.
+
 **Example** (Comparing numbers for equivalence)
 
 ```ts
@@ -21,6 +25,6 @@ console.log(Number.Equivalence(NaN, NaN)) // true
 declare const Equivalence: Equ.Equivalence<number>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Number.ts#L229)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Number.ts#L345)
 
 Since v2.0.0

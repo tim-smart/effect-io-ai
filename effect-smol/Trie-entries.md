@@ -30,6 +30,6 @@ assert.deepStrictEqual(result, [["call", 0], ["me", 1]])
 declare const entries: <V>(self: Trie<V>) => IterableIterator<[string, V]>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Trie.ts#L269)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Trie.ts#L308)
 
 Since v2.0.0

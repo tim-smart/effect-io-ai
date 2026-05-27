@@ -7,7 +7,7 @@ Decoding test helper that wraps a schema and exposes `succeed` and `fail` method
 
 **When to use**
 
-Use `Decoding` when you want to assert that specific inputs decode to expected values, invalid inputs produce specific error messages, or schemas receive required decoding services.
+Use when you want to assert that specific inputs decode to expected values, invalid inputs produce specific error messages, or schemas receive required decoding services.
 
 **Details**
 
@@ -37,6 +37,6 @@ declare class Decoding<S> { constructor(schema: S, options?: {
   }) }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TestSchema.ts#L336)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TestSchema.ts#L373)
 
 Since v4.0.0

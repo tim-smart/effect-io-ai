@@ -11,6 +11,6 @@ Layer that provides SQL-backed `MessageStorage` using a custom table prefix.
 declare const layerWith: (options: { readonly prefix?: string | undefined; }) => Layer.Layer<MessageStorage.MessageStorage, never, SqlClient.SqlClient | ShardingConfig>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SqlMessageStorage.ts#L645)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SqlMessageStorage.ts#L705)
 
 Since v4.0.0

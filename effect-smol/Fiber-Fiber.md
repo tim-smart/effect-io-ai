@@ -8,6 +8,23 @@ the unit of concurrency in Effect. They provide a way to run multiple
 Effects concurrently while maintaining structured concurrency and
 cancellation safety.
 
+**When to use**
+
+Use to observe, join, interrupt, or coordinate work that has already been
+forked.
+
+**Details**
+
+A fiber exposes both safe Effect-based operations, such as `await`,
+`join`, and `interrupt`, and low-level runtime fields used by
+the scheduler and runtime internals.
+
+**Gotchas**
+
+Prefer the exported functions in this module over calling `interruptUnsafe`
+or `pollUnsafe` directly. The unsafe methods are immediate runtime hooks and
+do not provide the same Effect-based sequencing guarantees.
+
 **Example** (Awaiting a forked fiber)
 
 ```ts
@@ -53,6 +70,6 @@ export interface Fiber<out A, out E = never> extends Pipeable {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Fiber.ts#L119)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Fiber.ts#L117)
 
 Since v2.0.0

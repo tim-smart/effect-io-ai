@@ -21,6 +21,6 @@ export interface withDecodingDefaultTypeKey<S extends Top, R = never>
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L4957)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L5108)
 
 Since v4.0.0

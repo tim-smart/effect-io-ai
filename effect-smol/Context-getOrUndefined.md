@@ -6,10 +6,19 @@ Module: `Context`<br />
 Returns the service currently stored for a key, or `undefined` when the key
 is absent.
 
-**Details**
+**When to use**
+
+Use when you use `getOrUndefined` for raw map-style lookup. Use `getOption` when you want
+the usual `Context.Reference` default-value behavior.
+
+**Gotchas**
 
 This is a raw lookup and does not resolve default values for
 `Context.Reference` keys.
+
+**See**
+
+- `getOption` for a reference-aware optional lookup
 
 **Signature**
 
@@ -17,6 +26,6 @@ This is a raw lookup and does not resolve default values for
 declare const getOrUndefined: { <S, I>(key: Key<I, S>): <Services>(self: Context<Services>) => S | undefined; <Services, S, I>(self: Context<Services>, key: Key<I, S>): S | undefined; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Context.ts#L737)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Context.ts#L876)
 
 Since v4.0.0

@@ -25,6 +25,6 @@ export interface HttpApiMiddlewareClient<_E, CE, R> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiMiddleware.ts#L128)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiMiddleware.ts#L152)
 
 Since v4.0.0

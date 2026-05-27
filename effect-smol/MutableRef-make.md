@@ -5,6 +5,10 @@ Module: `MutableRef`<br />
 
 Creates a new MutableRef with the specified initial value.
 
+**When to use**
+
+Use to create a synchronous mutable reference initialized with a value.
+
 **Example** (Creating mutable refs)
 
 ```ts
@@ -30,6 +34,6 @@ console.log(MutableRef.get(status)) // "running"
 declare const make: <T>(value: T) => MutableRef<T>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableRef.ts#L128)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableRef.ts#L136)
 
 Since v2.0.0

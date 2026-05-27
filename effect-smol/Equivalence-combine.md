@@ -7,7 +7,7 @@ Combines two equivalence relations using logical AND.
 
 **When to use**
 
-- Use when you need to combine exactly two equivalences
+Use when you need to combine exactly two equivalences
 - Use when building complex equivalences from simpler ones
 - Use when you want both conditions to be satisfied
 
@@ -59,6 +59,6 @@ console.log(personEquivalence(person1, person3)) // false (different age)
 declare const combine: { <A>(that: Equivalence<A>): (self: Equivalence<A>) => Equivalence<A>; <A>(self: Equivalence<A>, that: Equivalence<A>): Equivalence<A>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Equivalence.ts#L378)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Equivalence.ts#L395)
 
 Since v2.0.0

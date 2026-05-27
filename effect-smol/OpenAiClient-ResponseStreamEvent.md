@@ -24,6 +24,6 @@ type ResponseStreamEvent = | ResponseCreatedEvent
   | UnknownResponseStreamEvent
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/OpenAiClient.ts#L800)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/OpenAiClient.ts#L851)
 
 Since v4.0.0

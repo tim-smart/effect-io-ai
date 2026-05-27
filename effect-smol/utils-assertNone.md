@@ -11,6 +11,6 @@ Asserts that `option` is `None`.
 declare const assertNone: <A>(option: Option.Option<A>, ..._: Array<never>) => asserts option is Option.None<never>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/vitest/src/utils.ts#L217)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/vitest/src/utils.ts#L232)
 
 Since v4.0.0

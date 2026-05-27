@@ -11,6 +11,6 @@ Re-exports all named exports from the "./D1Client.ts" module as `D1Client`.
 export * as D1Client from "./D1Client.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/sql/d1/src/index.ts#L31)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/sql/d1/src/index.ts#L10)
 
 Since v4.0.0

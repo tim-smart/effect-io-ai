@@ -11,6 +11,6 @@ Built-in setting context identifiers.
 type BuiltInSettingContext = Setting.Identifier<"log-level">
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/GlobalFlag.ts#L270)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/GlobalFlag.ts#L294)
 
 Since v4.0.0

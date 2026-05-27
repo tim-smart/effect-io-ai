@@ -39,6 +39,6 @@ interface Container<T> {
 type Invariant<A> = (_: A) => A
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Types.ts#L645)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Types.ts#L649)
 
 Since v2.0.0

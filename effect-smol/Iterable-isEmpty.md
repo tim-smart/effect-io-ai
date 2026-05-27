@@ -21,6 +21,6 @@ assert.deepStrictEqual(Iterable.isEmpty([1, 2, 3]), false)
 declare const isEmpty: <A>(self: Iterable<A>) => self is Iterable<never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Iterable.ts#L411)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Iterable.ts#L483)
 
 Since v2.0.0

@@ -7,7 +7,7 @@ Issue that groups multiple child issues under a single schema node.
 
 **When to use**
 
-- Walk the issue tree for struct/tuple schemas that collect all field errors
+Use when walk the issue tree for struct/tuple schemas that collect all field errors
   rather than failing on the first.
 - Match on `_tag === "Composite"` to iterate over `issues`.
 

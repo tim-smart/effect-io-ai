@@ -7,7 +7,7 @@ Discards the success value of an Exit, replacing it with `void`.
 
 **When to use**
 
-- Use when you only care about whether the computation succeeded or failed, not the value
+Use when you only care about whether the computation succeeded or failed, not the value
 
 **Details**
 
@@ -36,6 +36,6 @@ console.log(Exit.isSuccess(voided)) // true
 declare const asVoid: <A, E>(self: Exit<A, E>) => Exit<void, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Exit.ts#L969)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Exit.ts#L1010)
 
 Since v2.0.0

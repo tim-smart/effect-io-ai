@@ -5,10 +5,20 @@ Module: `ScopedCache`<br />
 
 Forces a refresh of the value associated with the specified key in the cache.
 
+**When to use**
+
+Use to recompute a scoped cache entry immediately, even when an unexpired
+value is already cached.
+
 **Details**
 
 It will always invoke the lookup function to construct a new value,
 overwriting any existing value for that key.
+
+**See**
+
+- `get` for reusing an unexpired entry before running the lookup
+- `invalidate` for removing an entry without recomputing it
 
 **Signature**
 
@@ -16,6 +26,6 @@ overwriting any existing value for that key.
 declare const refresh: { <Key, A>(key: Key): <E, R>(self: ScopedCache<Key, A, E, R>) => Effect.Effect<A, E, R>; <Key, A, E, R>(self: ScopedCache<Key, A, E, R>, key: Key): Effect.Effect<A, E, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ScopedCache.ts#L515)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ScopedCache.ts#L637)
 
 Since v4.0.0

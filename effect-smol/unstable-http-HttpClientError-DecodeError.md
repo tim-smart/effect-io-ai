@@ -11,6 +11,6 @@ Response error for failures while decoding an HTTP response body.
 declare class DecodeError
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpClientError.ts#L217)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpClientError.ts#L233)
 
 Since v4.0.0

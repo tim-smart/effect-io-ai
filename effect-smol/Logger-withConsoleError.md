@@ -8,7 +8,7 @@ the console using `console.error`.
 
 **When to use**
 
-This is particularly useful for error logging where you want to ensure
+Use when this is particularly useful for error logging where you want to ensure
 log messages appear in the error stream (stderr) rather than standard output.
 
 **Example** (Writing logger output with console.error)
@@ -35,6 +35,6 @@ const program = Effect.logError("Database connection failed").pipe(
 declare const withConsoleError: <Message, Output>(self: Logger<Message, Output>) => Logger<Message, void>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Logger.ts#L366)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Logger.ts#L380)
 
 Since v2.0.0

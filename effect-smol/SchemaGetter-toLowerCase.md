@@ -19,7 +19,7 @@ const lower = SchemaGetter.toLowerCase<string>()
 
 **See**
 
-- `toUpperCase` - inverse operation
+- `toUpperCase` for the inverse operation
 
 **Signature**
 

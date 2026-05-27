@@ -5,6 +5,11 @@ Module: `Config`<br />
 
 A recipe for extracting a typed value `T` from a `ConfigProvider`.
 
+**When to use**
+
+Use to describe typed configuration that can be parsed from a provider or
+yielded inside `Effect.gen`.
+
 **Details**
 
 Key members:
@@ -28,6 +33,6 @@ export interface Config<out T> extends Effect.Effect<T, ConfigError> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Config.ts#L168)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Config.ts#L173)
 
 Since v2.0.0

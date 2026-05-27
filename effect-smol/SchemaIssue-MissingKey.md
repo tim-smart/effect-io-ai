@@ -7,7 +7,7 @@ Issue produced when a required key or tuple index is missing from the input.
 
 **When to use**
 
-- Detect absent fields in struct/tuple validation.
+Use when detect absent fields in struct/tuple validation.
 - Typically found inside a `Pointer` that indicates which key is
   missing.
 

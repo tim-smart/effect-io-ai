@@ -7,7 +7,7 @@ Creates a getter that validates a value using an effectful check function.
 
 **When to use**
 
-- You need to validate a decoded value (e.g. check a constraint or call an external service).
+Use when you need to validate a decoded value (e.g. check a constraint or call an external service).
 - The validation may be asynchronous or require Effect services.
 
 **Details**
@@ -33,8 +33,8 @@ const nonNegative = SchemaGetter.checkEffect<number>((n) =>
 
 **See**
 
-- `transform` - when you need to change the value, not just validate
-- `fail` - unconditional failure
+- `transform` when you need to change the value, not just validate
+- `fail` for unconditional failure
 
 **Signature**
 

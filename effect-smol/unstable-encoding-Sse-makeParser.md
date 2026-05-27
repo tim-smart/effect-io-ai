@@ -16,6 +16,6 @@ callback, and call `reset` to clear any buffered event state.
 declare const makeParser: (onParse: (event: AnyEvent) => void) => Parser
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Sse.ts#L171)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Sse.ts#L192)
 
 Since v4.0.0

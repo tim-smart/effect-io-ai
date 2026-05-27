@@ -8,7 +8,7 @@ fail.
 
 **When to use**
 
-In situations where you need to perform synchronous operations that might
+Use when in situations where you need to perform synchronous operations that might
 fail, such as parsing JSON, you can use the `try` constructor. This
 constructor is designed to handle operations that could throw exceptions by
 capturing those exceptions and transforming them into manageable errors.
@@ -72,6 +72,6 @@ throw errors.
 declare const try: <A, E>(options: { try: LazyArg<A>; catch: (error: unknown) => E; }) => Effect<A, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L1627)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L1733)
 
 Since v2.0.0

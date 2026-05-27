@@ -11,6 +11,6 @@ Type-erased event group with its events record available structurally.
 type AnyWithProps = EventGroup<Event.Any>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventGroup.ts#L105)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventGroup.ts#L113)
 
 Since v4.0.0

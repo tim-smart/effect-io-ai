@@ -11,6 +11,6 @@ Tagged error wrapping a browser Permissions API failure reason.
 declare class PermissionsError { constructor(props: { readonly reason: PermissionsErrorReason }) }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/Permissions.ts#L94)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/Permissions.ts#L109)
 
 Since v4.0.0

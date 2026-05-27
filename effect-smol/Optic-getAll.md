@@ -8,7 +8,7 @@ Returns a function that extracts all elements focused by a
 
 **When to use**
 
-- You need the focused values as a simple `Array<A>` for further
+Use when you need the focused values as a simple `Array<A>` for further
   processing.
 
 **Details**

@@ -15,6 +15,6 @@ The union covers counters, frequencies, gauges, histograms, and summaries.
 type Metric = Schema.Schema.Type<typeof Metric>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DevToolsSchema.ts#L461)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DevToolsSchema.ts#L469)
 
 Since v4.0.0

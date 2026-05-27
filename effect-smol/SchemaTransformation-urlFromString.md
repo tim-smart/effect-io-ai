@@ -8,7 +8,7 @@ string.
 
 **When to use**
 
-- Parsing URL strings from user input or API responses.
+Use to parse URL strings from user input or API responses.
 
 **Details**
 

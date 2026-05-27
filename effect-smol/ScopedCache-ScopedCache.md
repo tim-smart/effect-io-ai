@@ -6,12 +6,22 @@ Module: `ScopedCache`<br />
 A scoped cache whose values are acquired by a lookup effect and stored in
 per-entry scopes.
 
+**When to use**
+
+Use to cache values that acquire scoped resources and must release those
+resources when entries expire, are evicted, or are invalidated.
+
 **Details**
 
 Concurrent requests for the same key share the same in-flight lookup.
 Entries can expire based on the lookup exit, are evicted when capacity is
 exceeded, and release their entry scopes when invalidated, evicted, expired,
 or when the cache's owning scope closes.
+
+**See**
+
+- `make` for creating a scoped cache with a fixed time-to-live
+- `makeWith` for creating a scoped cache with dynamic time-to-live
 
 **Signature**
 
@@ -25,6 +35,6 @@ export interface ScopedCache<in out Key, in out A, in out E = never, out R = nev
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ScopedCache.ts#L61)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ScopedCache.ts#L69)
 
 Since v2.0.0

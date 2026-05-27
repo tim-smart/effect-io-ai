@@ -5,6 +5,11 @@ Module: `Array`<br />
 
 Removes consecutive duplicate elements using `Equal.equivalence()`.
 
+**When to use**
+
+Use when you need to collapse consecutive duplicates while preserving later
+non-consecutive repeats, and the default equality is sufficient.
+
 **Example** (Removing adjacent duplicates)
 
 ```ts
@@ -24,6 +29,6 @@ console.log(Array.dedupeAdjacent([1, 1, 2, 2, 3, 3])) // [1, 2, 3]
 declare const dedupeAdjacent: <A>(self: Iterable<A>) => Array<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L4106)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L4551)
 
 Since v2.0.0

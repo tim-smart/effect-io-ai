@@ -6,6 +6,10 @@ Module: `TestConsole`<br />
 Represents a single console method invocation captured by the TestConsole.
 Each entry contains the method name and the parameters passed to it.
 
+**When to use**
+
+Use to inspect or type one captured console invocation.
+
 **Example** (Typing captured console entries)
 
 ```ts
@@ -29,6 +33,6 @@ export interface Entry {
   }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TestConsole.ts#L110)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TestConsole.ts#L169)
 
 Since v4.0.0

@@ -9,9 +9,9 @@ Validates that a Date is greater than the specified value (exclusive).
 
 Arbitrary:
 
-When generating test data with fast-check, this applies a `min` constraint
-with `minExcluded: true` to ensure generated Date objects are greater than the
-specified value.
+When generating test data with fast-check, this applies a `min` constraint of
+one millisecond after the specified value to ensure generated Date objects are
+greater than it.
 
 **Signature**
 
@@ -19,6 +19,6 @@ specified value.
 declare const isGreaterThanDate: (exclusiveMinimum: globalThis.Date, annotations?: Annotations.Filter) => AST.Filter<globalThis.Date>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L6744)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L6899)
 
 Since v4.0.0

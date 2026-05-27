@@ -21,6 +21,6 @@ export interface Collection<A> extends ReadonlyRef<ReadonlyArray<AtomRef<A>>> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AtomRef.ts#L88)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AtomRef.ts#L104)
 
 Since v4.0.0

@@ -11,6 +11,6 @@ Re-exports all named exports from the "./OpenAiClientGenerated.ts" module as `Op
 export * as OpenAiClientGenerated from "./OpenAiClientGenerated.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/index.ts#L25)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/index.ts#L20)
 
 Since v4.0.0

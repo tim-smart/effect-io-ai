@@ -5,6 +5,10 @@ Module: `Array`<br />
 
 Keeps only elements satisfying a predicate (or refinement).
 
+**When to use**
+
+Use to keep original elements that satisfy a boolean predicate or refinement.
+
 **Details**
 
 - The predicate receives `(element, index)`.
@@ -21,6 +25,7 @@ console.log(Array.filter([1, 2, 3, 4], (x) => x % 2 === 0)) // [2, 4]
 **See**
 
 - `partition` — split into matching and non-matching
+- `filterMap` for transforming while filtering
 
 **Signature**
 
@@ -28,6 +33,6 @@ console.log(Array.filter([1, 2, 3, 4], (x) => x % 2 === 0)) // [2, 4]
 declare const filter: { <A, B extends A>(refinement: (a: NoInfer<A>, i: number) => a is B): (self: Iterable<A>) => Array<B>; <A>(predicate: (a: NoInfer<A>, i: number) => boolean): (self: Iterable<A>) => Array<A>; <A, B extends A>(self: Iterable<A>, refinement: (a: A, i: number) => a is B): Array<B>; <A>(self: Iterable<A>, predicate: (a: A, i: number) => boolean): Array<A>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L3429)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L3802)
 
 Since v2.0.0

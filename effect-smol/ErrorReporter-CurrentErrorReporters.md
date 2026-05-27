@@ -8,9 +8,8 @@ current fiber. Defaults to an empty set (no reporting).
 
 **When to use**
 
-Prefer `layer` to configure reporters via the `Layer` API. Use this
-reference directly only when you need low-level control (e.g. reading the
-current reporters or swapping them inside a `FiberRef`).
+Use when low-level code needs to read or replace the current set of reporters
+directly.
 
 **Signature**
 
@@ -18,6 +17,6 @@ current reporters or swapping them inside a `FiberRef`).
 declare const CurrentErrorReporters: Context.Reference<ReadonlySet<ErrorReporter>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ErrorReporter.ts#L181)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ErrorReporter.ts#L206)
 
 Since v4.0.0

@@ -11,6 +11,6 @@ Number of random bytes generated for a session authentication challenge.
 declare const SessionAuthChallengeLength: 32
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventLogSessionAuth.ts#L61)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventLogSessionAuth.ts#L79)
 
 Since v4.0.0

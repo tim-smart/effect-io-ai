@@ -5,6 +5,11 @@ Module: `Redacted`<br />
 
 Creates a `Redacted` wrapper for a sensitive value.
 
+**When to use**
+
+Use to wrap a sensitive value so normal string, JSON, and inspection output
+is redacted.
+
 **Details**
 
 The wrapper redacts string, JSON, and inspection output to reduce accidental
@@ -25,6 +30,6 @@ const API_KEY = Redacted.make("1234567890")
 declare const make: <T>(value: T, options?: { readonly label?: string | undefined; }) => Redacted<T>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Redacted.ts#L154)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Redacted.ts#L218)
 
 Since v3.3.0

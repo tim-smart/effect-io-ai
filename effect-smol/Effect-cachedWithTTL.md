@@ -8,7 +8,7 @@ known as "timeToLive" (TTL).
 
 **When to use**
 
-Use this function when you have an effect that involves costly operations or
+Use when you use this function when you have an effect that involves costly operations or
 computations, and you want to avoid repeating them within a short time frame.
 
 It's ideal for scenarios where the result of an effect doesn't change
@@ -74,6 +74,6 @@ additional effect for manually invalidating the cached value.
 declare const cachedWithTTL: { (timeToLive: Duration.Input): <A, E, R>(self: Effect<A, E, R>) => Effect<Effect<A, E, R>>; <A, E, R>(self: Effect<A, E, R>, timeToLive: Duration.Input): Effect<Effect<A, E, R>>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L6617)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L7083)
 
 Since v2.0.0

@@ -7,7 +7,7 @@ Creates a `Combiner` from a binary function.
 
 **When to use**
 
-Use this when you have a custom combining operation that is not covered by
+Use when you have a custom combining operation that is not covered by
 the built-in constructors (`min`, `max`, `first`, `last`, `constant`).
 
 **Details**
@@ -36,6 +36,6 @@ console.log(Product.combine(3, 5))
 declare const make: <A>(combine: (self: A, that: A) => A) => Combiner<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Combiner.ts#L128)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Combiner.ts#L132)
 
 Since v4.0.0

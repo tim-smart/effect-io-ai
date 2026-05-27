@@ -17,6 +17,6 @@ final accumulator value.
 declare const runFoldEffect: { <OutElem, Z, E, R>(initial: LazyArg<Z>, f: (acc: Z, o: OutElem) => Effect.Effect<Z, E, R>): <OutErr, OutDone, Env>(self: Channel<OutElem, OutErr, OutDone, unknown, unknown, unknown, Env>) => Effect.Effect<Z, OutErr | E, Env | R>; <OutElem, OutErr, OutDone, Env, Z, E, R>(self: Channel<OutElem, OutErr, OutDone, unknown, unknown, unknown, Env>, initial: LazyArg<Z>, f: (acc: Z, o: OutElem) => Effect.Effect<Z, E, R>): Effect.Effect<Z, OutErr | E, Env | R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L7814)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L7952)
 
 Since v4.0.0

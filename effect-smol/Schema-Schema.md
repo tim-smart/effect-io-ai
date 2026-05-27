@@ -40,6 +40,6 @@ export interface Schema<out T> extends Top {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L661)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L708)
 
 Since v3.10.0

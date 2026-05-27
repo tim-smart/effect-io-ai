@@ -6,6 +6,10 @@ Module: `TxSubscriptionRef`<br />
 Updates the value of the TxSubscriptionRef using a function and publishes the new
 value to all subscribers.
 
+**When to use**
+
+Use to derive the next value from the current value and publish it.
+
 **Example** (Updating a value)
 
 ```ts
@@ -18,12 +22,17 @@ const program = Effect.gen(function*() {
 })
 ```
 
+**See**
+
+- `set` for replacing the value directly
+- `updateAndGet` for returning the new value after the update
+
 **Signature**
 
 ```ts
 declare const update: { <A>(f: (current: A) => A): (self: TxSubscriptionRef<A>) => Effect.Effect<void>; <A>(self: TxSubscriptionRef<A>, f: (current: A) => A): Effect.Effect<void>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxSubscriptionRef.ts#L224)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxSubscriptionRef.ts#L302)
 
 Since v3.10.0

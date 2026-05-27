@@ -16,6 +16,6 @@ extend.
 declare class ServerClient { constructor(id: number) }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Rpc.ts#L204)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Rpc.ts#L215)
 
 Since v4.0.0

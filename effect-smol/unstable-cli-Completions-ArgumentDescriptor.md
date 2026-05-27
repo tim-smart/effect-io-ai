@@ -17,6 +17,6 @@ export interface ArgumentDescriptor {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Completions.ts#L66)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Completions.ts#L93)
 
 Since v4.0.0

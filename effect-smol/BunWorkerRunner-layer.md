@@ -13,6 +13,6 @@ through the worker port.
 declare const layer: Layer.Layer<WorkerRunner.WorkerRunnerPlatform, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunWorkerRunner.ts#L43)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunWorkerRunner.ts#L57)
 
 Since v4.0.0

@@ -6,6 +6,10 @@ Module: `ErrorReporter`<br />
 String property key used to attach extra key/value metadata to an object
 error report.
 
+**When to use**
+
+Use to type the property key that attaches metadata to object error reports.
+
 **Details**
 
 Reporters receive these attributes alongside the error, making it easy to
@@ -18,6 +22,6 @@ domain-specific debugging data.
 type attributes = "~effect/ErrorReporter/attributes"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ErrorReporter.ts#L422)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ErrorReporter.ts#L511)
 
 Since v4.0.0

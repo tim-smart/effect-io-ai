@@ -12,6 +12,6 @@ changes endpoints.
 declare class EventLogRemoteRpcs
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventLogMessage.ts#L355)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventLogMessage.ts#L364)
 
 Since v4.0.0

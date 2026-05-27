@@ -11,6 +11,6 @@ Re-exports all named exports from the "./WebSdk.ts" module as `WebSdk`.
 export * as WebSdk from "./WebSdk.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/index.ts#L154)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/index.ts#L35)
 
 Since v4.0.0

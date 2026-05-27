@@ -12,6 +12,6 @@ No-content schema variant for `Forbidden`, decoding an empty 403 response into a
 declare const ForbiddenNoContent: HttpApiSchema.asNoContent<typeof Forbidden>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiError.ts#L132)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiError.ts#L152)
 
 Since v4.0.0

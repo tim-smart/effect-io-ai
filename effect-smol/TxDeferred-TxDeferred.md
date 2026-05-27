@@ -7,6 +7,11 @@ A transactional deferred is a write-once cell readable within transactions.
 Readers block (retry the transaction) until a value is committed, and writers
 succeed only on the first call; subsequent writes return `false`.
 
+**When to use**
+
+Use to coordinate transaction-local readers and one-time completion with a
+success or failure result.
+
 **Example** (Completing a transactional deferred)
 
 ```ts
@@ -38,6 +43,6 @@ export interface TxDeferred<in out A, in out E = never> extends Inspectable, Pip
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxDeferred.ts#L53)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxDeferred.ts#L81)
 
 Since v4.0.0

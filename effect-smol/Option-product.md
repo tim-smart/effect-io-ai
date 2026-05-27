@@ -8,7 +8,7 @@ are `Some`.
 
 **When to use**
 
-- Pairing two optional values together
+Use when pairing two optional values together
 
 **Details**
 
@@ -38,6 +38,6 @@ console.log(Option.product(Option.none(), Option.some(42)))
 declare const product: <A, B>(self: Option<A>, that: Option<B>) => Option<[A, B]>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L1666)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L1693)
 
 Since v2.0.0

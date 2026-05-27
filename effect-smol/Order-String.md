@@ -7,7 +7,7 @@ An `Order` instance for strings that compares them lexicographically using JavaS
 
 **When to use**
 
-- When comparing strings alphabetically
+Use when when comparing strings alphabetically
 - When sorting string collections
 - As a base for creating orders on types containing strings
 
@@ -30,8 +30,8 @@ console.log(Order.String("apple", "apple")) // 0
 
 **See**
 
-- `mapInput` - Use this order to compare objects by a string property
-- `Struct` - Combine with other orders for struct comparison
+- `mapInput` to compare objects by a string property
+- `Struct` to combine with other orders for struct comparison
 
 **Signature**
 
@@ -39,6 +39,6 @@ console.log(Order.String("apple", "apple")) // 0
 declare const String: Order<string>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Order.ts#L192)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Order.ts#L221)
 
 Since v4.0.0

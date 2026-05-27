@@ -5,6 +5,10 @@ Module: `HKT`<br />
 
 Base interface for defining Higher-Kinded Type parameters.
 
+**When to use**
+
+Use to encode a type constructor for higher-kinded generic programming.
+
 **Details**
 
 A `TypeLambda` encodes the "shape" of a type constructor, specifying how many
@@ -45,6 +49,6 @@ export interface TypeLambda {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HKT.ts#L150)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HKT.ts#L178)
 
 Since v2.0.0

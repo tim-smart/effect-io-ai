@@ -11,6 +11,6 @@ The literal type used to identify `AtomRegistry` services and values.
 type TypeId = "~effect/reactivity/AtomRegistry"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AtomRegistry.ts#L45)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AtomRegistry.ts#L101)
 
 Since v4.0.0

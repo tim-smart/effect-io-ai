@@ -15,6 +15,6 @@ It pairs the remote sequence number with the journal entry payload.
 declare class RemoteEntry
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventJournal.ts#L343)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventJournal.ts#L360)
 
 Since v4.0.0

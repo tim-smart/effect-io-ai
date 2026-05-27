@@ -13,6 +13,6 @@ export interface Bearer extends HttpApiSecurity.Proto<Redacted> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiSecurity.ts#L78)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiSecurity.ts#L90)
 
 Since v4.0.0

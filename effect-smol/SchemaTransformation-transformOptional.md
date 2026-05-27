@@ -8,7 +8,7 @@ values, giving full control over missing-key handling.
 
 **When to use**
 
-- You need to produce or consume `Option.None` to represent absent keys.
+Use when you need to produce or consume `Option.None` to represent absent keys.
 - You are working with optional struct fields.
 
 **Details**

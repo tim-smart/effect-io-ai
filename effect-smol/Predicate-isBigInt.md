@@ -7,7 +7,7 @@ Checks whether a value is a `bigint`.
 
 **When to use**
 
-- You need to guard an `unknown` value as a bigint.
+Use when you need to guard an `unknown` value as a bigint.
 
 **Details**
 
@@ -36,6 +36,6 @@ if (Predicate.isBigInt(data)) {
 declare const isBigInt: (input: unknown) => input is bigint
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L677)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L702)
 
 Since v2.0.0

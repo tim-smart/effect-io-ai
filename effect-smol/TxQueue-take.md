@@ -36,6 +36,6 @@ const program = Effect.gen(function*() {
 declare const take: <A, E>(self: TxDequeue<A, E>) => Effect.Effect<A, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxQueue.ts#L664)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxQueue.ts#L705)
 
 Since v2.0.0

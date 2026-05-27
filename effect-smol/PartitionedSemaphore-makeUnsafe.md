@@ -7,8 +7,8 @@ Constructs a `PartitionedSemaphore` synchronously, outside of `Effect`.
 
 **When to use**
 
-Prefer `make` when the semaphore should be created inside an `Effect`
-workflow.
+Use when a partitioned semaphore must be constructed synchronously outside an
+`Effect` workflow.
 
 **Details**
 
@@ -16,12 +16,16 @@ Negative permit counts are clamped to `0`. Non-finite permit counts create
 an unbounded semaphore whose acquire and release operations complete
 immediately.
 
+**See**
+
+- `make` for creating a partitioned semaphore inside `Effect`
+
 **Signature**
 
 ```ts
 declare const makeUnsafe: <K = unknown>(options: { readonly permits: number; }) => PartitionedSemaphore<K>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PartitionedSemaphore.ts#L128)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PartitionedSemaphore.ts#L147)
 
 Since v3.19.4

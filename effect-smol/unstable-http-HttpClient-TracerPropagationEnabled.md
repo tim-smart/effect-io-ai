@@ -11,6 +11,6 @@ Context reference that controls whether outgoing client spans are propagated to 
 declare const TracerPropagationEnabled: Context.Reference<boolean>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpClient.ts#L1440)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpClient.ts#L1464)
 
 Since v4.0.0

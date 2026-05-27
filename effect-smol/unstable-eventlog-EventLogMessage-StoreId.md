@@ -11,6 +11,6 @@ Branded string identifying a logical event-log store.
 type StoreId = string & Brand<StoreIdTypeId>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventLogMessage.ts#L52)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventLogMessage.ts#L61)
 
 Since v4.0.0

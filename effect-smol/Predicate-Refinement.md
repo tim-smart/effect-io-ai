@@ -7,7 +7,7 @@ A predicate that also narrows the input type when it returns `true`.
 
 **When to use**
 
-- You want a runtime check that refines `A` to `B` for TypeScript.
+Use when you want a runtime check that refines `A` to `B` for TypeScript.
 - You want to compose multiple type guards with `compose`.
 - You need to guard `unknown` values safely.
 
@@ -44,6 +44,6 @@ export interface Refinement<in A, out B extends A> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L145)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L170)
 
 Since v2.0.0

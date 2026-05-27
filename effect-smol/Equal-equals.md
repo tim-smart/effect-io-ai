@@ -7,7 +7,7 @@ Compares two values for deep structural equality.
 
 **When to use**
 
-- As the default equality check throughout Effect code.
+Use when as the default equality check throughout Effect code.
 - In data-level assertions or conditional logic where structural comparison
   is needed.
 - In its curried (single-argument) form to build reusable predicates.

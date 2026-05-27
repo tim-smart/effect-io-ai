@@ -6,6 +6,10 @@ Module: `TxSemaphore`<br />
 Releases one permit back to the semaphore, making it available for
 acquisition.
 
+**When to use**
+
+Use to manually return one permit after a transactional acquire.
+
 **Details**
 
 If the semaphore is already at capacity, this operation leaves the permit
@@ -31,12 +35,17 @@ const program = Effect.gen(function*() {
 })
 ```
 
+**See**
+
+- `acquire` for manually acquiring one permit
+- `releaseN` for returning multiple permits
+
 **Signature**
 
 ```ts
 declare const release: (self: TxSemaphore) => Effect.Effect<void>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxSemaphore.ts#L372)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxSemaphore.ts#L459)
 
 Since v2.0.0

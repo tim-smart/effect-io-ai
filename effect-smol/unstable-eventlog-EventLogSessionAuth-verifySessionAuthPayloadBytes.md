@@ -17,6 +17,6 @@ calling `SubtleCrypto.verify`.
 declare const verifySessionAuthPayloadBytes: (options: { readonly payload: Uint8Array; readonly signingPublicKey: Uint8Array; readonly signature: Uint8Array; }) => Effect.Effect<boolean, EventLogSessionAuthError, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventLogSessionAuth.ts#L390)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventLogSessionAuth.ts#L408)
 
 Since v4.0.0

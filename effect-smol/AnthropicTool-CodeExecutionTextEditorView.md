@@ -3,7 +3,28 @@ Module: `AnthropicTool`<br />
 
 ## AnthropicTool.CodeExecutionTextEditorView
 
-Input payload for viewing a file through the text editor code execution tool.
+Input payload for the `view` command of Anthropic's text editor code execution tool.
+
+**When to use**
+
+Use when handling or validating the `view` command for Anthropic's text
+editor code execution tool.
+
+**Details**
+
+The payload is discriminated by `type: "text_editor_code_execution"` and
+`command: "view"`. The `path` field identifies the file to view.
+
+**Gotchas**
+
+This code execution view payload does not include `view_range`; line ranges
+are part of the standalone text editor view payload, not this code execution
+payload.
+
+**See**
+
+- `CodeExecution_20250522` for the provider-defined code execution tool that includes this payload
+- `TextEditorViewCommand` for the standalone text editor view payload
 
 **Signature**
 
@@ -11,6 +32,6 @@ Input payload for viewing a file through the text editor code execution tool.
 type CodeExecutionTextEditorView = typeof CodeExecutionTextEditorView.Type
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L157)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L300)
 
 Since v4.0.0

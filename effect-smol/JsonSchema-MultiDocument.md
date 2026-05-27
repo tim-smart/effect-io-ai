@@ -8,7 +8,7 @@ single definitions pool.
 
 **When to use**
 
-Use `MultiDocument` when generating several schemas, such as a request body
+Use when generating several schemas, such as a request body
 and a response body, that reference the same set of definitions.
 
 **Details**
@@ -30,6 +30,6 @@ export interface MultiDocument<D extends Dialect> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/JsonSchema.ts#L201)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/JsonSchema.ts#L231)
 
 Since v4.0.0

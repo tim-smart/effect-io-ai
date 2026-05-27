@@ -7,8 +7,8 @@ Retries a failing effect and runs a fallback effect if retries are exhausted.
 
 **When to use**
 
-This function is useful when you want to handle failures gracefully by
-specifying an alternative action after repeated failures.
+Use when you want to handle failures gracefully by specifying an alternative
+action after repeated failures.
 
 **Details**
 
@@ -64,6 +64,6 @@ Effect.runPromise(program).then(console.log)
 declare const retryOrElse: { <A1, E, E1, R1, A2, E2, R2>(policy: Schedule<A1, NoInfer<E>, E1, R1>, orElse: (e: NoInfer<E>, out: A1) => Effect<A2, E2, R2>): <A, R>(self: Effect<A, E, R>) => Effect<A | A2, E1 | E2, R | R1 | R2>; <A, E, R, A1, E1, R1, A2, E2, R2>(self: Effect<A, E, R>, policy: Schedule<A1, NoInfer<E>, E1, R1>, orElse: (e: NoInfer<E>, out: A1) => Effect<A2, E2, R2>): Effect<A | A2, E1 | E2, R | R1 | R2>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L3832)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L4115)
 
 Since v2.0.0

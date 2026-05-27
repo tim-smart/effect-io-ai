@@ -16,6 +16,6 @@ Decoders surface this value as a failure to request reconnection after
 declare class Retry
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Sse.ts#L520)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Sse.ts#L541)
 
 Since v4.0.0

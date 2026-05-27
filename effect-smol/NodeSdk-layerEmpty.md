@@ -11,6 +11,6 @@ Layer that provides an empty OpenTelemetry `Resource`.
 declare const layerEmpty: Layer.Layer<Resource.Resource, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/NodeSdk.ts#L158)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/NodeSdk.ts#L175)
 
 Since v2.0.0

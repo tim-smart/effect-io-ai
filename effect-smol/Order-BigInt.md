@@ -7,7 +7,7 @@ An `Order` instance for bigints that compares them numerically.
 
 **When to use**
 
-- When comparing bigint values for sorting or searching
+Use when when comparing bigint values for sorting or searching
 - As a base for creating orders on types containing bigints
 - When working with large integers that exceed number precision
 
@@ -29,8 +29,8 @@ console.log(Order.BigInt(1n, 1n)) // 0
 
 **See**
 
-- `Number` - For regular number comparisons
-- `mapInput` - Use this order to compare objects by a bigint property
+- `Number` for regular number comparisons
+- `mapInput` to compare objects by a bigint property
 
 **Signature**
 
@@ -38,6 +38,6 @@ console.log(Order.BigInt(1n, 1n)) // 0
 declare const BigInt: Order<bigint>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Order.ts#L297)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Order.ts#L326)
 
 Since v4.0.0

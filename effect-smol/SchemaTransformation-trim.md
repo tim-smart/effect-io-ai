@@ -8,7 +8,7 @@ Encode is passthrough (no change).
 
 **When to use**
 
-- Normalizing user input by stripping leading/trailing whitespace.
+Use to normalize user input by stripping leading/trailing whitespace.
 
 **Details**
 

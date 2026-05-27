@@ -11,6 +11,6 @@ Re-exports all named exports from the "./PersistedCache.ts" module as `Persisted
 export * as PersistedCache from "./PersistedCache.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L78)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L20)
 
 Since v4.0.0

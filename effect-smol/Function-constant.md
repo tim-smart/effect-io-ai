@@ -7,7 +7,7 @@ Creates a zero-argument function that always returns the provided value.
 
 **When to use**
 
-Use `constant` when an API expects a thunk or callback and every invocation
+Use when an API expects a thunk or callback and every invocation
 should return the same value.
 
 **Example** (Creating a constant thunk)
@@ -28,6 +28,6 @@ assert.deepStrictEqual(constNull(), null)
 declare const constant: <A>(value: A) => LazyArg<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Function.ts#L314)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Function.ts#L361)
 
 Since v2.0.0

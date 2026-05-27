@@ -12,6 +12,6 @@ method per RPC tag.
 type { [K in keyof RpcClient.From<Rpcs, E>]: RpcClient.From<Rpcs, E>[K]; } = Struct.Simplify<RpcClient.From<Rpcs, E>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RpcClient.ts#L77)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RpcClient.ts#L86)
 
 Since v4.0.0

@@ -5,6 +5,11 @@ Module: `Array`<br />
 
 Removes the first `n` elements, creating a new array.
 
+**When to use**
+
+Use to keep the suffix of an iterable after skipping a fixed number of
+leading elements.
+
 **Details**
 
 - `n` is clamped to `[0, length]`.
@@ -20,9 +25,9 @@ console.log(Array.drop([1, 2, 3, 4, 5], 2)) // [3, 4, 5]
 
 **See**
 
-- `dropRight` — remove from the end
-- `dropWhile` — remove while predicate holds
-- `take` — keep from the start
+- `dropRight` for removing a fixed number of elements from the end
+- `dropWhile` for removing a prefix based on a predicate instead of a fixed count
+- `take` for keeping a fixed number of elements from the start
 
 **Signature**
 
@@ -30,6 +35,6 @@ console.log(Array.drop([1, 2, 3, 4, 5], 2)) // [3, 4, 5]
 declare const drop: { (n: number): <A>(self: Iterable<A>) => Array<A>; <A>(self: Iterable<A>, n: number): Array<A>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L1418)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L1575)
 
 Since v2.0.0

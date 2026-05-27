@@ -11,6 +11,6 @@ Re-exports all named exports from the "./HttpServerResponse.ts" module as `HttpS
 export * as HttpServerResponse from "./HttpServerResponse.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L461)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L110)
 
 Since v4.0.0

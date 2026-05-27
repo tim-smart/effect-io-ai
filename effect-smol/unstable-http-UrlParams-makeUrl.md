@@ -16,6 +16,6 @@ constructed.
 declare const makeUrl: (url: string, params: UrlParams, hash: string | undefined) => Result.Result<URL, UrlParamsError>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/UrlParams.ts#L473)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/UrlParams.ts#L488)
 
 Since v4.0.0

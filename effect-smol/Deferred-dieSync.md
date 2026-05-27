@@ -6,6 +6,10 @@ Module: `Deferred`<br />
 Computes a defect when the returned effect is run, then attempts to complete
 the `Deferred` with that defect.
 
+**When to use**
+
+Use to lazily compute an unexpected defect when the completion effect runs.
+
 **Details**
 
 Fibers waiting on the `Deferred` die with the computed defect only if this
@@ -33,6 +37,6 @@ const program = Effect.gen(function*() {
 declare const dieSync: { (evaluate: LazyArg<unknown>): <A, E>(self: Deferred<A, E>) => Effect<boolean>; <A, E>(self: Deferred<A, E>, evaluate: LazyArg<unknown>): Effect<boolean>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Deferred.ts#L558)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Deferred.ts#L636)
 
 Since v2.0.0

@@ -7,7 +7,7 @@ An `Order` instance for numbers that compares them numerically.
 
 **When to use**
 
-- When comparing numbers for sorting or searching
+Use when when comparing numbers for sorting or searching
 - As a base for creating orders on types containing numbers
 - When implementing numeric comparisons in data structures
 
@@ -34,8 +34,8 @@ console.log(Order.Number(NaN, 1)) // -1
 
 **See**
 
-- `mapInput` - Use this order to compare objects by a number property
-- `BigInt` - For bigint comparisons
+- `mapInput` to compare objects by a number property
+- `BigInt` for bigint comparisons
 
 **Signature**
 
@@ -43,6 +43,6 @@ console.log(Order.Number(NaN, 1)) // -1
 declare const Number: Order<number>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Order.ts#L229)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Order.ts#L258)
 
 Since v4.0.0

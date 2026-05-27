@@ -5,6 +5,10 @@ Module: `Number`<br />
 
 Returns the next power of 2 from the given number.
 
+**When to use**
+
+Use to round a number up to the next power of two.
+
 **Example** (Finding the next power of two)
 
 ```ts
@@ -21,6 +25,6 @@ assert.deepStrictEqual(Number.nextPow2(17), 32)
 declare const nextPow2: (n: number) => number
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Number.ts#L549)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Number.ts#L734)
 
 Since v2.0.0

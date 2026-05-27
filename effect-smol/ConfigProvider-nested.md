@@ -8,7 +8,7 @@ segments.
 
 **When to use**
 
-Use this to namespace config under a prefix like `"app"` or `"database"`, or
+Use to namespace config under a prefix like `"app"` or `"database"`, or
 to reuse the same provider shape for multiple sub-configs.
 
 **Details**
@@ -45,6 +45,6 @@ const scoped = ConfigProvider.nested(provider, "APP")
 declare const nested: { (prefix: string | Path): (self: ConfigProvider) => ConfigProvider; (self: ConfigProvider, prefix: string | Path): ConfigProvider; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ConfigProvider.ts#L612)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ConfigProvider.ts#L635)
 
 Since v2.0.0

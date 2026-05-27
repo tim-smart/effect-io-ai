@@ -3,31 +3,32 @@ Module: `Schedule`<br />
 
 ## Schedule.satisfiesServicesType
 
-Ensures that the provided schedule respects a specified context type.
+Ensures that a schedule's context type extends a given type `T`.
+
+**Details**
+
+This helper is checked at compile time and does not change the schedule's
+runtime behavior.
 
 **Example** (Constraining schedule service types)
 
 ```ts
-import { Effect, Schedule } from "effect"
+import { Schedule } from "effect"
 
-// Define service interfaces (type-level only)
 interface Logger {
   readonly log: (message: string) => void
 }
 
-interface Database {
-  readonly query: (sql: string) => Effect.Effect<ReadonlyArray<unknown>>
-}
+declare const LoggerSchedule: Schedule.Schedule<number, unknown, never, Logger>
+declare const NumberSchedule: Schedule.Schedule<number, unknown, never, number>
 
-// Ensure schedule requires Logger service
-const loggerSchedule = Schedule.spaced("1 second").pipe(
-  Schedule.satisfiesServicesType<Logger>()
-)
+const satisfiesLogger = Schedule.satisfiesServicesType<Logger>()
 
-// Ensure schedule requires both Logger and Database services
-const multiServiceSchedule = Schedule.exponential("100 millis").pipe(
-  Schedule.satisfiesServicesType<Logger | Database>()
-)
+// This works because the schedule context type is Logger.
+const validSchedule = satisfiesLogger(LoggerSchedule)
+
+// This would cause a TypeScript compilation error:
+// const invalidSchedule = satisfiesLogger(NumberSchedule)
 ```
 
 **Signature**
@@ -36,6 +37,6 @@ const multiServiceSchedule = Schedule.exponential("100 millis").pipe(
 declare const satisfiesServicesType: <T>() => <Env extends T, Output = never, Input = unknown, Error = never>(self: Schedule<Output, Input, Error, Env>) => Schedule<Output, Input, Error, Env>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L3356)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L3605)
 
 Since v4.0.0

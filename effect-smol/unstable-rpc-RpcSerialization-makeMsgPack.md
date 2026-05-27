@@ -11,6 +11,6 @@ Create a MessagePack serialization with custom msgpackr options.
 declare const makeMsgPack: (options?: Msgpackr.Options | undefined) => RpcSerialization["Service"]
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RpcSerialization.ts#L452)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RpcSerialization.ts#L462)
 
 Since v4.0.0

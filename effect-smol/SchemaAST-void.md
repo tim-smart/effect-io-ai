@@ -5,12 +5,23 @@ Module: `SchemaAST`<br />
 
 Singleton `Void` AST instance.
 
+**When to use**
+
+Use when constructing or comparing AST nodes that represent the TypeScript
+`void` type and accept `undefined` at runtime.
+
+**See**
+
+- `Void` for the AST node class
+- `undefined` for the sibling AST singleton that matches exactly `undefined`
+- `isVoid` for narrowing an AST to a `Void` node
+
 **Signature**
 
 ```ts
 declare const void: Void
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L754)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L881)
 
 Since v4.0.0

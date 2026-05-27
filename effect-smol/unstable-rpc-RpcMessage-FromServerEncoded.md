@@ -15,6 +15,6 @@ type FromServerEncoded = | ResponseChunkEncoded
   | ClientProtocolError
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RpcMessage.ts#L200)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RpcMessage.ts#L218)
 
 Since v4.0.0

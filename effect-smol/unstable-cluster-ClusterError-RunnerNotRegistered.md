@@ -12,6 +12,6 @@ manager.
 declare class RunnerNotRegistered
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ClusterError.ts#L139)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ClusterError.ts#L165)
 
 Since v4.0.0

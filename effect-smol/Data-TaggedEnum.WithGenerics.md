@@ -7,7 +7,7 @@ Defines a tagged enum shape that accepts generic type parameters.
 
 **When to use**
 
-Use `WithGenerics` when variant payloads need to be parameterized, such as `Result<E, A>`. Pass the interface, not the type alias, to `taggedEnum` to get generic-aware constructors.
+Use when variant payloads need to be parameterized, such as `Result<E, A>`. Pass the interface, not the type alias, to `taggedEnum` to get generic-aware constructors.
 
 **Details**
 
@@ -54,6 +54,6 @@ export interface WithGenerics<Count extends number> {
   }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Data.ts#L283)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Data.ts#L292)
 
 Since v2.0.0

@@ -11,6 +11,6 @@ Brand identifier used for `RemoteId` values.
 type RemoteIdTypeId = "effect/eventlog/EventJournal/RemoteId"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventJournal.ts#L145)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventJournal.ts#L162)
 
 Since v4.0.0

@@ -15,6 +15,6 @@ Schema for the `undefined` literal. Validates that the input is strictly `undefi
 export interface Undefined extends Bottom<undefined, undefined, never, never, AST.Undefined, Undefined> {}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L2299)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L2346)
 
 Since v3.10.0

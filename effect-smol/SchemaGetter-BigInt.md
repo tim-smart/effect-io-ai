@@ -7,7 +7,7 @@ Coerces a value to `bigint` using the global `BigInt()` constructor.
 
 **When to use**
 
-- You need to convert strings, numbers, or booleans to `bigint`.
+Use when you need to convert strings, numbers, or booleans to `bigint`.
 
 **Details**
 

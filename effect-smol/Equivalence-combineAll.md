@@ -7,7 +7,7 @@ Combines multiple equivalence relations into a single equivalence using logical 
 
 **When to use**
 
-- Use when you need to combine three or more equivalences
+Use when you need to combine three or more equivalences
 - Use when you have a dynamic collection of equivalences to combine
 - Use when building equivalences from arrays or iterables
 - Prefer this over multiple `combine` calls when you have many equivalences
@@ -75,6 +75,6 @@ console.log(alwaysEq("anything", "else")) // true
 declare const combineAll: <A>(collection: Iterable<Equivalence<A>>) => Equivalence<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Equivalence.ts#L450)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Equivalence.ts#L467)
 
 Since v2.0.0

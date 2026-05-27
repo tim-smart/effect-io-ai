@@ -55,6 +55,6 @@ if (Result.isSuccess(relativeParsed)) {
 declare const fromString: (url: string, base?: string | URL | undefined) => Result.Result<URL, Cause.IllegalArgumentError>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Url.ts#L74)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Url.ts#L90)
 
 Since v4.0.0

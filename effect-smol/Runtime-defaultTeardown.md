@@ -5,9 +5,25 @@ Module: `Runtime`<br />
 
 The default teardown function that determines exit codes from an Effect exit.
 
+**When to use**
+
+Use as the standard teardown for main programs when you want conventional
+process exit codes and support for `errorExitCode`.
+
 **Details**
 
-This teardown function follows standard Unix conventions: exit code `0` for successful completion, exit code `1` for failures unless the squashed error has a `Runtime.errorExitCode` marker, and exit code `130` for interruption-only failures.
+This teardown follows these exit-code rules:
+
+- `0` for successful completion.
+- `130` for interruption-only failures.
+- The squashed error's `errorExitCode` value for other failures when
+  present.
+- `1` for other failures.
+
+**Gotchas**
+
+The `130` code is used only when the Cause contains interruptions and no
+other failure reasons. Mixed causes use the squashed error path instead.
 
 **Example** (Using default teardown)
 
@@ -30,12 +46,16 @@ logExitCode(Exit.interrupt(123))
 // Output: Exit code: 130
 ```
 
+**See**
+
+- `errorExitCode` for customizing failure exit codes
+
 **Signature**
 
 ```ts
 declare const defaultTeardown: Teardown
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Runtime.ts#L110)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Runtime.ts#L165)
 
 Since v4.0.0

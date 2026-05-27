@@ -7,7 +7,7 @@ Coerces a value to a `Date` using `new Date(input)`.
 
 **When to use**
 
-- You need to parse a string, number, or Date into a `Date` object.
+Use when you need to parse a string, number, or Date into a `Date` object.
 
 **Details**
 
@@ -25,7 +25,7 @@ const toDate = SchemaGetter.Date<string>()
 
 **See**
 
-- `dateTimeUtcFromInput` - validated DateTime parsing
+- `dateTimeUtcFromInput` for validated DateTime parsing
 
 **Signature**
 

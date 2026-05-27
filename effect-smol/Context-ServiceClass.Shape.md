@@ -16,6 +16,6 @@ export interface Shape<Identifier extends string, Service> {
   }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Context.ts#L130)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Context.ts#L184)
 
 Since v4.0.0

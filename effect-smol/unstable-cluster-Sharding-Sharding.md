@@ -13,6 +13,6 @@ storage for persisted work.
 declare class Sharding
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Sharding.ts#L94)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Sharding.ts#L113)
 
 Since v4.0.0

@@ -11,6 +11,6 @@ Creates an `application/x-www-form-urlencoded` HTTP body from `UrlParams`.
 declare const urlParams: (urlParams: UrlParams.UrlParams, contentType?: string) => Uint8Array
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpBody.ts#L338)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpBody.ts#L378)
 
 Since v4.0.0

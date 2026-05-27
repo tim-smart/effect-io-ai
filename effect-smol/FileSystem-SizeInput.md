@@ -32,6 +32,6 @@ const program = Effect.gen(function*() {
 type SizeInput = bigint | number | Size
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FileSystem.ts#L445)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FileSystem.ts#L462)
 
 Since v4.0.0

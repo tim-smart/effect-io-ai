@@ -6,6 +6,11 @@ Module: `Array`<br />
 Tests whether an array contains a value, using `Equal.equivalence()` for
 comparison.
 
+**When to use**
+
+Use to check membership with Effect's default equality instead of providing a
+comparison function.
+
 **Example** (Checking membership)
 
 ```ts
@@ -24,6 +29,6 @@ console.log(pipe(["a", "b", "c", "d"], Array.contains("c"))) // true
 declare const contains: { <A>(a: A): (self: Iterable<A>) => boolean; <A>(self: Iterable<A>, a: A): boolean; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L2369)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L2629)
 
 Since v2.0.0

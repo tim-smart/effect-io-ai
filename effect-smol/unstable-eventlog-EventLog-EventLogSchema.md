@@ -14,6 +14,6 @@ export interface EventLogSchema<Groups extends EventGroup.Any> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventLog.ts#L224)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventLog.ts#L238)
 
 Since v4.0.0

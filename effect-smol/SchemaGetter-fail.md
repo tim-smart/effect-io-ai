@@ -7,7 +7,7 @@ Creates a getter that always fails with the given issue.
 
 **When to use**
 
-- A transformation should unconditionally reject input.
+Use when a transformation should unconditionally reject input.
 - Building custom validation getters that produce specific error types.
 
 **Details**
@@ -27,8 +27,8 @@ const rejectAll = SchemaGetter.fail<string, string>(
 
 **See**
 
-- `forbidden` - convenience for `Forbidden` issues
-- `checkEffect` - fail conditionally based on input value
+- `forbidden` for a convenience helper for `Forbidden` issues
+- `checkEffect` to fail conditionally based on input value
 
 **Signature**
 

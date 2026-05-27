@@ -20,6 +20,6 @@ assert.strictEqual(Context.isKey(Context.Service("Service")), true)
 declare const isKey: (u: unknown) => u is Key<any, any>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Context.ts#L533)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Context.ts#L618)
 
 Since v4.0.0

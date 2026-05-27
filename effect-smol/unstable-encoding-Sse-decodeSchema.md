@@ -16,6 +16,6 @@ string `data`.
 declare const decodeSchema: <Type extends { readonly id?: string | undefined; readonly event: string; readonly data: string; }, DecodingServices, IE, Done>(schema: Schema.Decoder<Type, DecodingServices>) => Channel.Channel<NonEmptyReadonlyArray<Type>, IE | Retry | Schema.SchemaError, Done, NonEmptyReadonlyArray<string>, IE, Done, DecodingServices>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Sse.ts#L97)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Sse.ts#L118)
 
 Since v4.0.0

@@ -16,6 +16,6 @@ schema validation.
 declare const makeRemoteIdUnsafe: () => RemoteId
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventJournal.ts#L182)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventJournal.ts#L199)
 
 Since v4.0.0

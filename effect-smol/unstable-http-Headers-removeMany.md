@@ -15,6 +15,6 @@ Each provided header name is normalized to lowercase before removal.
 declare const removeMany: { (keys: Iterable<string>): (self: Headers) => Headers; (self: Headers, keys: Iterable<string>): Headers; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Headers.ts#L362)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Headers.ts#L399)
 
 Since v4.0.0

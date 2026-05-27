@@ -5,6 +5,10 @@ Module: `Array`<br />
 
 Splits an iterable into two arrays at the given index.
 
+**When to use**
+
+Use to divide an array into a prefix and suffix at a specific position.
+
 **Details**
 
 - `n` can be `0` (all elements in the second array).
@@ -29,6 +33,6 @@ console.log(Array.splitAt([1, 2, 3, 4, 5], 3)) // [[1, 2, 3], [4, 5]]
 declare const splitAt: { (n: number): <A>(self: Iterable<A>) => [beforeIndex: Array<A>, fromIndex: Array<A>]; <A>(self: Iterable<A>, n: number): [beforeIndex: Array<A>, fromIndex: Array<A>]; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L2456)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L2725)
 
 Since v2.0.0

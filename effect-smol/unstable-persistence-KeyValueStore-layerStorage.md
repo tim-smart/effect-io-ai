@@ -6,9 +6,10 @@ Module: `KeyValueStore`<br />
 Provides a `KeyValueStore` backed by a Web `Storage` instance such as
 `localStorage` or `sessionStorage`.
 
-**See**
+**Details**
 
-- https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API
+This layer uses the Web Storage API:
+https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API
 
 **Signature**
 
@@ -16,6 +17,6 @@ Provides a `KeyValueStore` backed by a Web `Storage` instance such as
 declare const layerStorage: (evaluate: LazyArg<Storage>) => Layer.Layer<KeyValueStore>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/KeyValueStore.ts#L806)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/KeyValueStore.ts#L809)
 
 Since v4.0.0

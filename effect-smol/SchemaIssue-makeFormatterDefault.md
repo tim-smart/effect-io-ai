@@ -8,7 +8,7 @@ human-readable multi-line string.
 
 **When to use**
 
-- Produce error messages for logging, CLI output, or developer-facing
+Use when produce error messages for logging, CLI output, or developer-facing
   diagnostics.
 - This is the default formatter used by `Issue.toString()`.
 
@@ -38,6 +38,6 @@ const formatter = SchemaIssue.makeFormatterDefault()
 declare const makeFormatterDefault: () => Formatter<string>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaIssue.ts#L1181)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaIssue.ts#L1182)
 
 Since v4.0.0

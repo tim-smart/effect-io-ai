@@ -7,7 +7,7 @@ Coerces any value to a `string` using the global `String()` constructor.
 
 **When to use**
 
-- You need a string representation of an arbitrary encoded value.
+Use when you need a string representation of an arbitrary encoded value.
 
 **Details**
 
@@ -25,7 +25,7 @@ const toString = SchemaGetter.String<number>()
 
 **See**
 
-- `transform` - for custom string conversions
+- `transform` for custom string conversions
 
 **Signature**
 

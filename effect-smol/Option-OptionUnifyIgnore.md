@@ -5,6 +5,10 @@ Module: `Option`<br />
 
 Marker interface used by Effect's `Unify` machinery for `Option` values.
 
+**When to use**
+
+Use when marking generic code so `Option` unification should be ignored.
+
 **Details**
 
 This supports type-level unification behavior for `Option`. Users normally
@@ -16,6 +20,6 @@ do not need to reference this interface directly.
 export interface OptionUnifyIgnore {}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L249)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L272)
 
 Since v2.0.0

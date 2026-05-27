@@ -5,6 +5,10 @@ Module: `Ref`<br />
 
 Atomically updates the value of the Ref using the given function and returns the new value.
 
+**When to use**
+
+Use to apply a state transition and return the new stored value.
+
 **Example** (Updating and returning the new value)
 
 ```ts
@@ -23,12 +27,17 @@ const program = Effect.gen(function*() {
 })
 ```
 
+**See**
+
+- `update` for updating without returning the new value
+- `getAndUpdate` for returning the previous value instead
+
 **Signature**
 
 ```ts
 declare const updateAndGet: (<A>(f: (a: A) => A) => (self: Ref<A>) => Effect.Effect<A>) & (<A>(self: Ref<A>, f: (a: A) => A) => Effect.Effect<A>)
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Ref.ts#L584)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Ref.ts#L692)
 
 Since v2.0.0

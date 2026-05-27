@@ -5,12 +5,22 @@ Module: `Context`<br />
 
 Typed identifier for a service stored in a `Context`.
 
+**When to use**
+
+Use as the typed handle for storing, retrieving, and requiring a specific
+service in a `Context`.
+
 **Details**
 
 `Identifier` tracks the requirement in Effect types, while `Shape` is the
 service implementation retrieved by the key. A key is also an Effect value,
 so yielding it inside `Effect.gen` retrieves the service from the current
 fiber context.
+
+**See**
+
+- `Service` for creating required service keys
+- `Reference` for creating service keys with default values
 
 **Signature**
 
@@ -24,6 +34,6 @@ export interface Key<out Identifier, out Shape> extends Effect<Shape, never, Ide
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Context.ts#L57)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Context.ts#L104)
 
 Since v4.0.0

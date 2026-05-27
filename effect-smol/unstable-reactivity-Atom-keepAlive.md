@@ -11,6 +11,6 @@ Returns a copy of an atom that remains cached and mounted even when no subscribe
 declare const keepAlive: <A extends Atom<any>>(self: A) => A
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Atom.ts#L1465)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Atom.ts#L1479)
 
 Since v4.0.0

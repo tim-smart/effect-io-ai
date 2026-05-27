@@ -9,9 +9,8 @@ calling `Deferred.await`) and automatically resume when the variable is set.
 
 **When to use**
 
-Use `Deferred` for primitive actions whose completions require the
-coordinated action of multiple fibers, and for building higher-level
-concurrent or asynchronous structures.
+Use to coordinate multiple fibers around a value or failure that will be
+supplied exactly once.
 
 **Example** (Creating a Deferred for inter-fiber communication)
 
@@ -56,6 +55,6 @@ export interface Deferred<in out A, in out E = never> extends Deferred.Variance<
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Deferred.ts#L132)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Deferred.ts#L124)
 
 Since v2.0.0

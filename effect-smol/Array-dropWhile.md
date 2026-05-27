@@ -5,9 +5,13 @@ Module: `Array`<br />
 
 Drops elements from the start while the predicate holds, returning the rest.
 
+**When to use**
+
+Use to remove a leading prefix of elements that satisfy a predicate.
+
 **Details**
 
-- The predicate receives `(element, index)`.
+The predicate receives `(element, index)`.
 
 **Example** (Dropping while condition holds)
 
@@ -28,6 +32,6 @@ console.log(Array.dropWhile([1, 2, 3, 4, 5], (x) => x < 4)) // [4, 5]
 declare const dropWhile: { <A>(predicate: (a: NoInfer<A>, i: number) => boolean): (self: Iterable<A>) => Array<A>; <A>(self: Iterable<A>, predicate: (a: A, i: number) => boolean): Array<A>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L1476)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L1641)
 
 Since v2.0.0

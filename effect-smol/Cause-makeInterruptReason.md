@@ -6,6 +6,11 @@ Module: `Cause`<br />
 Creates a standalone `Interrupt` reason (not wrapped in a `Cause`),
 optionally carrying the interrupting fiber's ID.
 
+**When to use**
+
+Use when you need to construct individual reasons for
+`fromReasons` or for direct comparison.
+
 **Example** (creating an Interrupt reason)
 
 ```ts
@@ -27,6 +32,6 @@ console.log(reason.fiberId) // 42
 declare const makeInterruptReason: (fiberId?: number | undefined) => Interrupt
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L637)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L683)
 
 Since v4.0.0

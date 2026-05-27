@@ -5,6 +5,11 @@ Module: `Match`<br />
 
 Excludes a specific value from matching while allowing all others.
 
+**When to use**
+
+Use to add a negative pattern case for inputs that should match when another
+pattern does not.
+
 **Details**
 
 This function is useful when you need to **handle all values except one or
@@ -33,12 +38,16 @@ console.log(match("hi"))
 // Output: "fallback"
 ```
 
+**See**
+
+- `when` for adding a positive pattern case
+
 **Signature**
 
 ```ts
 declare const not: <R, const P extends Types.PatternPrimitive<R> | Types.PatternBase<R>, Ret, Fn extends (_: Types.NotMatch<R, P>) => Ret>(pattern: P, f: Fn) => <I, F, A, Pr>(self: Matcher<I, F, R, A, Pr, Ret>) => Matcher<I, Types.AddOnly<F, Types.WhenMatch<R, P>>, Types.ApplyFilters<I, Types.AddOnly<F, Types.WhenMatch<R, P>>>, A | ReturnType<Fn>, Pr, Ret>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L1116)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L1191)
 
 Since v4.0.0

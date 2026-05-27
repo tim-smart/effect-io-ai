@@ -6,6 +6,19 @@ Module: `Fiber`<br />
 Interrupts a fiber, causing it to stop executing and clean up any
 acquired resources.
 
+**When to use**
+
+Use when a forked fiber is no longer needed and should be cancelled.
+
+**Details**
+
+The returned Effect completes only after the interrupted fiber has completed.
+
+**Gotchas**
+
+Interruption is cooperative. A fiber can continue running while it is inside
+uninterruptible work or finalizers.
+
 **Example** (Interrupting a fiber)
 
 ```ts
@@ -20,12 +33,17 @@ const program = Effect.gen(function*() {
 })
 ```
 
+**See**
+
+- `interruptAs` for specifying the interrupting fiber ID
+- `await` for observing the interrupted fiber's Exit
+
 **Signature**
 
 ```ts
 declare const interrupt: <A, E>(self: Fiber<A, E>) => Effect<void>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Fiber.ts#L311)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Fiber.ts#L392)
 
 Since v2.0.0

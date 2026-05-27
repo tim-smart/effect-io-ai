@@ -18,6 +18,6 @@ type Success<R> = Rpc.Success<R> extends Stream.Stream<infer _A, infer _E, infer
     : Rpc.Success<R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Entity.ts#L537)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Entity.ts#L554)
 
 Since v4.0.0

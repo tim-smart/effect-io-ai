@@ -7,7 +7,7 @@ Creates an equivalence for objects by comparing their properties using provided 
 
 **When to use**
 
-- Use when comparing objects with known, fixed property names
+Use when comparing objects with known, fixed property names
 - Use when you need different equivalence logic for different properties
 - Use when working with struct or interface types with specific fields
 - Prefer this over `Record` when you have a fixed set of known properties
@@ -79,6 +79,6 @@ console.log(nameAgeEq(obj1, obj2)) // true
 declare const Struct: <R extends Record<string, Equivalence<any>>>(fields: R) => Equivalence<{ readonly [K in keyof R]: [R[K]] extends [Equivalence<infer A>] ? A : never; }>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Equivalence.ts#L750)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Equivalence.ts#L765)
 
 Since v4.0.0

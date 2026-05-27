@@ -10,9 +10,8 @@ error as the typed failure value.
 **Details**
 
 All built-in error classes in this module (`NoSuchElementError`,
-`TimeoutError`, `IllegalArgumentError`,
-`ExceededCapacityError`, `AsyncFiberError`, and
-`UnknownError`) implement this interface.
+`TimeoutError`, `IllegalArgumentError`, `ExceededCapacityError`,
+`AsyncFiberError`, and `UnknownError`) implement this interface.
 
 **Example** (yielding an error in Effect.gen)
 
@@ -35,6 +34,6 @@ export interface YieldableError extends Error, Pipeable, Inspectable {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L1153)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L1253)
 
 Since v2.0.0

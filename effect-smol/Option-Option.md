@@ -8,7 +8,7 @@ The `Option` data type represents optional values. An `Option<A>` is either
 
 **When to use**
 
-- Representing initial values that may not yet exist
+Use to represent initial values that may not yet exist
 - Returning from partial functions (not defined for all inputs)
 - Managing optional fields in data structures
 

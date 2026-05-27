@@ -6,6 +6,10 @@ Module: `Data`<br />
 Function type that constructs a tagged-union variant from its fields,
 excluding the keys listed in `Tag`.
 
+**When to use**
+
+Use to type an individual constructor for one tagged-union variant.
+
 **Details**
 
 The constructor returns the full variant type `A`. If no fields remain
@@ -19,6 +23,6 @@ type ConstructorFrom<A, Tag> = (
   ) => A
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Data.ts#L487)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Data.ts#L516)
 
 Since v4.0.0

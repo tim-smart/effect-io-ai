@@ -15,6 +15,6 @@ Returns a `CookiesError` in the `Result` failure channel when validation fails.
 declare const makeCookie: (name: string, value: string, options?: Cookie["options"] | undefined) => Result.Result<Cookie, CookiesError>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cookies.ts#L457)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cookies.ts#L503)
 
 Since v4.0.0

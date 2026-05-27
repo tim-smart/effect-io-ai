@@ -7,7 +7,7 @@ Creates an `Order` for structs by applying the given `Order`s to each property i
 
 **When to use**
 
-- When comparing objects with multiple properties
+Use when when comparing objects with multiple properties
 - When you need multi-field comparison for structs
 - When creating orders for complex data types
 
@@ -40,8 +40,8 @@ console.log(personOrder(person1, person1)) // 0
 
 **See**
 
-- `combine` - Combine orders manually
-- `mapInput` - Extract and compare by a single property
+- `combine` to combine orders manually
+- `mapInput` to extract and compare by a single property
 
 **Signature**
 
@@ -49,6 +49,6 @@ console.log(personOrder(person1, person1)) // 0
 declare const Struct: <const R extends { readonly [x: string]: Order<any>; }>(fields: R) => Order<{ [K in keyof R]: [R[K]] extends [Order<infer A>] ? A : never; }>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Order.ts#L707)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Order.ts#L736)
 
 Since v4.0.0

@@ -3,7 +3,17 @@ Module: `Console`<br />
 
 ## Console.clear
 
-Clears all previously logged messages from the console.
+Invokes the current console service's clear operation.
+
+**When to use**
+
+Use to request that the active console implementation clear its visible
+output.
+
+**Gotchas**
+
+The clearing behavior depends on the active console implementation and host
+environment.
 
 **Example** (Clearing console output)
 
@@ -23,6 +33,6 @@ const program = Effect.gen(function*() {
 declare const clear: Effect.Effect<void, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Console.ts#L195)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Console.ts#L216)
 
 Since v2.0.0

@@ -7,7 +7,7 @@ Callback type used to format `Leaf` issues into strings.
 
 **When to use**
 
-- Pass a custom `LeafHook` to `makeFormatterStandardSchemaV1` to
+Use when passing a custom `LeafHook` to `makeFormatterStandardSchemaV1` to
   override how terminal issues are rendered.
 
 **See**

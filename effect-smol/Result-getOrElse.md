@@ -5,6 +5,11 @@ Module: `Result`<br />
 
 Extracts the success value, or computes a fallback from the error.
 
+**When to use**
+
+Use when you need the success value from a `Result`, with a fallback computed
+from the failure value.
+
 **Details**
 
 - `Success<A>` returns the inner value
@@ -28,6 +33,7 @@ console.log(Result.getOrElse(Result.fail("err"), () => 0))
 - `getOrNull` / `getOrUndefined` for simpler fallbacks
 - `getOrThrow` to throw on failure
 - `match` to map both branches
+- `orElse` to recover with another Result instead of unwrapping
 
 **Signature**
 
@@ -35,6 +41,6 @@ console.log(Result.getOrElse(Result.fail("err"), () => 0))
 declare const getOrElse: { <E, A2>(onFailure: (err: E) => A2): <A>(self: Result<A, E>) => A2 | A; <A, E, A2>(self: Result<A, E>, onFailure: (err: E) => A2): A | A2; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L1068)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L1136)
 
 Since v2.0.0

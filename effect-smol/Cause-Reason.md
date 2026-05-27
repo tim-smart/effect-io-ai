@@ -28,18 +28,12 @@ if (Cause.isFailReason(reason)) {
 }
 ```
 
-**See**
-
-- `Fail` — typed error reason
-- `Die` — untyped defect reason
-- `Interrupt` — interruption reason
-
 **Signature**
 
 ```ts
 type Reason<E> = Fail<E> | Die | Interrupt
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L215)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L212)
 
 Since v4.0.0

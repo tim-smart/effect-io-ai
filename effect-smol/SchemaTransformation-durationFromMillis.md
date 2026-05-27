@@ -8,7 +8,7 @@ back to milliseconds.
 
 **When to use**
 
-Use this for timeouts, delays, elapsed intervals, or other duration values
+Use when you use this for timeouts, delays, elapsed intervals, or other duration values
 stored as millisecond counts.
 
 **Details**

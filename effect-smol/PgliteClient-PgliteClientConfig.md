@@ -11,6 +11,6 @@ Configuration for a PGlite client, either by supplying PGlite creation options o
 type PgliteClientConfig = PgliteClientConfig.Create | PgliteClientConfig.Live
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/sql/pglite/src/PgliteClient.ts#L100)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/sql/pglite/src/PgliteClient.ts#L114)
 
 Since v4.0.0

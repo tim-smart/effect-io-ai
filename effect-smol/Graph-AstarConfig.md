@@ -5,10 +5,21 @@ Module: `Graph`<br />
 
 Configuration for finding a shortest path with the A* algorithm.
 
+**When to use**
+
+Use when configuring `astar` for point-to-point shortest-path searches where
+node data can provide a heuristic estimate toward the target.
+
 **Details**
 
 Specifies the source and target node indices, an edge-cost function, and a
 heuristic that estimates the remaining cost from a node to the target.
+
+**See**
+
+- `astar` for the algorithm that consumes this configuration
+- `DijkstraConfig` for shortest paths without a heuristic
+- `BellmanFordConfig` for shortest paths that may include negative edge weights
 
 **Signature**
 
@@ -21,6 +32,6 @@ export interface AstarConfig<E, N> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Graph.ts#L3196)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Graph.ts#L3412)
 
 Since v3.18.0

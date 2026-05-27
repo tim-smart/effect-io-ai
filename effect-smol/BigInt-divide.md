@@ -5,6 +5,11 @@ Module: `BigInt`<br />
 
 Safely divides one `bigint` by another.
 
+**When to use**
+
+Use to divide `bigint` values while representing division by zero as
+`Option.none`.
+
 **Details**
 
 Uses JavaScript `bigint` division, so non-exact quotients are truncated
@@ -20,12 +25,17 @@ assert.deepStrictEqual(BigInt.divide(6n, 3n), Option.some(2n))
 assert.deepStrictEqual(BigInt.divide(6n, 0n), Option.none())
 ```
 
+**See**
+
+- `divideUnsafe` for division that throws when the divisor is `0n`
+- `remainder` for the JavaScript remainder operation
+
 **Signature**
 
 ```ts
 declare const divide: { (that: bigint): (self: bigint) => Option.Option<bigint>; (self: bigint, that: bigint): Option.Option<bigint>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigInt.ts#L140)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigInt.ts#L244)
 
 Since v2.0.0

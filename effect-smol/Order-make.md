@@ -7,7 +7,7 @@ Creates a new `Order` instance from a comparison function.
 
 **When to use**
 
-- When creating a custom order for a type that doesn't have a built-in order
+Use when when creating a custom order for a type that doesn't have a built-in order
 - When you need fine-grained control over comparison logic
 - When implementing orders for complex types
 
@@ -35,8 +35,8 @@ console.log(byAge({ name: "Alice", age: 25 }, { name: "Bob", age: 30 })) // -1
 
 **See**
 
-- `mapInput` - Transform an order by mapping the input type
-- `combine` - Combine multiple orders
+- `mapInput` to transform an order by mapping the input type
+- `combine` to combine multiple orders
 
 **Signature**
 
@@ -44,6 +44,6 @@ console.log(byAge({ name: "Alice", age: 25 }, { name: "Bob", age: 30 })) // -1
 declare const make: <A>(compare: (self: A, that: A) => -1 | 0 | 1) => Order<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Order.ts#L155)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Order.ts#L184)
 
 Since v2.0.0

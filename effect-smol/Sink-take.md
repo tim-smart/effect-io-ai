@@ -17,6 +17,6 @@ array are returned as leftovers.
 declare const take: <In>(n: number) => Sink<Array<In>, In, In>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Sink.ts#L1058)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Sink.ts#L1144)
 
 Since v2.0.0

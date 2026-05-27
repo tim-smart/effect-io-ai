@@ -8,7 +8,7 @@ cannot be encoded.
 
 **When to use**
 
-Use `expireCookie` when cookie errors should be represented as `CookiesError`
+Use when cookie errors should be represented as `CookiesError`
 failures.
 
 **Signature**
@@ -17,6 +17,6 @@ failures.
 declare const expireCookieUnsafe: { (name: string, options?: Omit<NonNullable<Cookies.Cookie["options"]>, "expires" | "maxAge">): (self: HttpServerResponse) => HttpServerResponse; (self: HttpServerResponse, name: string, options?: Omit<NonNullable<Cookies.Cookie["options"]>, "expires" | "maxAge">): HttpServerResponse; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpServerResponse.ts#L728)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpServerResponse.ts#L750)
 
 Since v4.0.0

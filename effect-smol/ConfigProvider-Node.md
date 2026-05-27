@@ -8,7 +8,7 @@ given path.
 
 **When to use**
 
-Use `Node` when implementing a custom `ConfigProvider` by returning raw
+Use when implementing a custom `ConfigProvider` by returning raw
 nodes from the `get` callback passed to `make`, or when inspecting raw
 provider output before schema parsing.
 

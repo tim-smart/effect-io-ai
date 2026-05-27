@@ -5,6 +5,11 @@ Module: `Chunk`<br />
 
 Appends the specified element to the end of the `Chunk`.
 
+**When to use**
+
+Use to add one element after the existing elements and get a non-empty
+result.
+
 **Example** (Appending an element)
 
 ```ts
@@ -20,12 +25,17 @@ const singleElement = Chunk.append(emptyChunk, 42)
 console.log(Chunk.toArray(singleElement)) // [42]
 ```
 
+**See**
+
+- `prepend` for adding one element before the existing elements
+- `appendAll` for appending all elements from another chunk
+
 **Signature**
 
 ```ts
 declare const append: { <A2>(a: A2): <A>(self: Chunk<A>) => NonEmptyChunk<A2 | A>; <A, A2>(self: Chunk<A>, a: A2): NonEmptyChunk<A | A2>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L712)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L720)
 
 Since v2.0.0

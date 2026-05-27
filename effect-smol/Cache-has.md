@@ -5,6 +5,11 @@ Module: `Cache`<br />
 
 Checks if the cache contains an entry for the specified key.
 
+**Details**
+
+This checks for an existing non-expired entry without invoking the cache
+lookup function. Expired entries are treated as absent.
+
 **Example** (Checking for cached keys)
 
 ```ts
@@ -89,6 +94,6 @@ const program = Effect.gen(function*() {
 declare const has: { <Key, A>(key: Key): <E, R>(self: Cache<Key, A, E, R>) => Effect.Effect<boolean>; <Key, A, E, R>(self: Cache<Key, A, E, R>, key: Key): Effect.Effect<boolean>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cache.ts#L827)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cache.ts#L864)
 
 Since v4.0.0

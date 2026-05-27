@@ -21,6 +21,6 @@ console.log(Array.from(lines)) // ["hello\n", "world\n"]
 declare const linesWithSeparators: (s: string) => LinesIterator
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L970)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L1044)
 
 Since v2.0.0

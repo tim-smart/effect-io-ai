@@ -5,6 +5,10 @@ Module: `BigDecimal`<br />
 
 Safely parses a decimal string into a `BigDecimal`.
 
+**When to use**
+
+Use to parse external decimal text without throwing on invalid input.
+
 **Details**
 
 Returns `Option.some` for valid decimal or exponent notation and
@@ -25,12 +29,17 @@ assert.deepStrictEqual(
 assert.deepStrictEqual(BigDecimal.fromString("123.abc"), Option.none())
 ```
 
+**See**
+
+- `fromStringUnsafe` for parsing that throws on invalid input
+- `fromNumber` for converting finite JavaScript numbers
+
 **Signature**
 
 ```ts
 declare const fromString: (s: string) => Option.Option<BigDecimal>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigDecimal.ts#L1197)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigDecimal.ts#L1422)
 
 Since v2.0.0

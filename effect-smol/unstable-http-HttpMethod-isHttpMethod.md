@@ -24,6 +24,6 @@ console.log(HttpMethod.isHttpMethod(1))
 declare const isHttpMethod: (u: unknown) => u is HttpMethod
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpMethod.ts#L122)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpMethod.ts#L137)
 
 Since v4.0.0

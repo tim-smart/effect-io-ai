@@ -7,6 +7,21 @@ Interrupts all fibers in the provided iterable using the specified fiber ID as t
 interrupting fiber. This allows you to control which fiber is considered the source
 of the interruption, which can be useful for debugging and tracing.
 
+**When to use**
+
+Use to interrupt several fibers while recording a specific fiber ID as the
+interruptor.
+
+**Details**
+
+The returned Effect completes only after all interrupted fibers have
+completed.
+
+**Gotchas**
+
+The supplied ID affects the recorded interruptor. It does not make
+interruption synchronous or force uninterruptible regions to stop early.
+
 **Example** (Interrupting multiple fibers as another fiber)
 
 ```ts
@@ -41,12 +56,16 @@ const program = Effect.gen(function*() {
 })
 ```
 
+**See**
+
+- `interruptAll` for using the current fiber as the interruptor
+
 **Signature**
 
 ```ts
 declare const interruptAllAs: { (fiberId: number): <A extends Iterable<Fiber<any, any>>>(fibers: A) => Effect<void>; <A extends Iterable<Fiber<any, any>>>(fibers: A, fiberId: number): Effect<void>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Fiber.ts#L440)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Fiber.ts#L570)
 
 Since v2.0.0

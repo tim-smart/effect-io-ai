@@ -22,6 +22,6 @@ type ChatCompletionResponseFormat = | {
   }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/OpenAiClient.ts#L964)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/OpenAiClient.ts#L1015)
 
 Since v4.0.0

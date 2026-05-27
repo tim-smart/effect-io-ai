@@ -7,7 +7,7 @@ The interface for types that define their own equality logic.
 
 **When to use**
 
-- When you need value-based equality for a class (e.g. domain IDs,
+Use when when you need value-based equality for a class (e.g. domain IDs,
   coordinates, money values).
 - When your type will be stored in `HashMap` or `HashSet`.
 - When the default structural comparison is too broad or too narrow for

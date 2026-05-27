@@ -6,6 +6,10 @@ Module: `MutableHashMap`<br />
 Removes the specified key from the MutableHashMap, mutating the map in place.
 If the key doesn't exist, the map remains unchanged.
 
+**When to use**
+
+Use to delete one key from a mutable hash map in place.
+
 **Example** (Removing a key)
 
 ```ts
@@ -34,12 +38,17 @@ removeKey(map)
 console.log(MutableHashMap.size(map)) // 1
 ```
 
+**See**
+
+- `clear` for removing all entries
+- `modifyAt` for conditionally removing based on the current value
+
 **Signature**
 
 ```ts
 declare const remove: { <K>(key: K): <V>(self: MutableHashMap<K, V>) => MutableHashMap<K, V>; <K, V>(self: MutableHashMap<K, V>, key: K): MutableHashMap<K, V>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableHashMap.ts#L606)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableHashMap.ts#L726)
 
 Since v2.0.0

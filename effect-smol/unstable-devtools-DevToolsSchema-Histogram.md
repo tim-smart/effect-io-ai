@@ -16,6 +16,6 @@ sum.
 type Histogram = Schema.Schema.Type<typeof Histogram>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DevToolsSchema.ts#L401)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DevToolsSchema.ts#L409)
 
 Since v4.0.0

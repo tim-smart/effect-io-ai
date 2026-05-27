@@ -5,6 +5,11 @@ Module: `Ref`<br />
 
 Atomically modifies the value of the Ref using the given function.
 
+**When to use**
+
+Use to compute both a separate return value and the next stored value in one
+atomic update.
+
 **Details**
 
 The function receives the current value and returns a tuple of
@@ -44,12 +49,17 @@ const program2 = Effect.gen(function*() {
 })
 ```
 
+**See**
+
+- `updateAndGet` for returning the new stored value
+- `modifySome` for optionally updating while returning a separate result
+
 **Signature**
 
 ```ts
 declare const modify: (<A, B>(f: (a: A) => readonly [B, A]) => (self: Ref<A>) => Effect.Effect<B>) & (<A, B>(self: Ref<A>, f: (a: A) => readonly [B, A]) => Effect.Effect<B>)
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Ref.ts#L444)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Ref.ts#L531)
 
 Since v2.0.0

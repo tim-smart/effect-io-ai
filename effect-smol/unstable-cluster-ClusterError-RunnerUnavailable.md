@@ -11,6 +11,6 @@ Represents an error that occurs when a Runner is unresponsive.
 declare class RunnerUnavailable
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ClusterError.ts#L157)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ClusterError.ts#L183)
 
 Since v4.0.0

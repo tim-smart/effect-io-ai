@@ -7,7 +7,7 @@ An optic that focuses on **zero or more** elements of type `A` inside `S`.
 
 **When to use**
 
-- You want to read/update multiple elements at once (e.g. all items in
+Use when you want to read/update multiple elements at once (e.g. all items in
   an array, or a filtered subset).
 
 **Details**

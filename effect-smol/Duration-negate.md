@@ -20,6 +20,6 @@ Duration.negate(Duration.infinity) === Duration.negativeInfinity // true
 declare const negate: (self: Duration) => Duration
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Duration.ts#L501)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Duration.ts#L576)
 
 Since v4.0.0

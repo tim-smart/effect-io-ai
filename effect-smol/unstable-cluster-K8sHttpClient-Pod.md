@@ -15,6 +15,6 @@ The model exposes readiness helpers derived from the pod status conditions.
 declare class Pod
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/K8sHttpClient.ts#L267)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/K8sHttpClient.ts#L286)
 
 Since v4.0.0

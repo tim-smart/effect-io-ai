@@ -23,6 +23,6 @@ export interface Procedure<
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/sql/d1/src/Procedure.ts#L52)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/sql/d1/src/Procedure.ts#L66)
 
 Since v4.0.0

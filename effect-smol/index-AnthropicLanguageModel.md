@@ -11,6 +11,6 @@ Re-exports all named exports from the "./AnthropicLanguageModel.ts" module as `A
 export * as AnthropicLanguageModel from "./AnthropicLanguageModel.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/index.ts#L79)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/index.ts#L25)
 
 Since v4.0.0

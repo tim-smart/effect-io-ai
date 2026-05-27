@@ -5,6 +5,12 @@ Module: `AnthropicStructuredOutput`<br />
 
 Transforms a `Schema.Codec` into a form compatible with Anthropic's structured output constraints.
 
+**When to use**
+
+Use to adapt an `Effect` `Schema.Codec` for Anthropic structured output by
+returning an Anthropic-compatible JSON Schema together with a codec that
+preserves the decoded value type.
+
 **Details**
 
 The transformation walks the schema AST and rewrites constructs that Anthropic does not support natively:
@@ -24,12 +30,17 @@ The transformation walks the schema AST and rewrites constructs that Anthropic d
 If the schema is already compatible, the original codec is returned
 unchanged.
 
+**See**
+
+- `LanguageModel.CodecTransformer` for the structured-output transformer contract
+- `OpenAiStructuredOutput.toCodecOpenAI` for the OpenAI-specific transformer
+
 **Signature**
 
 ```ts
 declare const toCodecAnthropic: <T, E, RD, RE>(schema: Schema.Codec<T, E, RD, RE>) => { readonly codec: Schema.Codec<T, unknown, RD, RE>; readonly jsonSchema: JsonSchema.JsonSchema; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AnthropicStructuredOutput.ts#L52)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AnthropicStructuredOutput.ts#L84)
 
 Since v4.0.0

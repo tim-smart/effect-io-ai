@@ -5,6 +5,10 @@ Module: `Effect`<br />
 
 Transforms the current context using the provided function.
 
+**When to use**
+
+Use to derive an effect from the complete `Context`.
+
 **Details**
 
 This function allows you to access the complete context and perform
@@ -46,12 +50,17 @@ const withCache = Effect.provideService(program, Cache, {
 })
 ```
 
+**See**
+
+- `context` for reading the complete context as a value
+- `service` for reading one service from the context
+
 **Signature**
 
 ```ts
 declare const contextWith: <R, A, E, R2>(f: (context: Context.Context<R>) => Effect<A, E, R2>) => Effect<A, E, R | R2>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L5412)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L5812)
 
 Since v2.0.0

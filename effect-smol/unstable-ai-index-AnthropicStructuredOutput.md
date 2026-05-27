@@ -11,6 +11,6 @@ Re-exports all named exports from the "./AnthropicStructuredOutput.ts" module as
 export * as AnthropicStructuredOutput from "./AnthropicStructuredOutput.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L108)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L15)
 
 Since v4.0.0

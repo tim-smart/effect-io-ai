@@ -16,6 +16,6 @@ It renders `Event` values as `id`, `event`, and `data` lines and renders
 declare const encoder: Encoder
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Sse.ts#L568)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Sse.ts#L589)
 
 Since v4.0.0

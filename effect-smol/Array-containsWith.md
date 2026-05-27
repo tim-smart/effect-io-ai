@@ -5,6 +5,11 @@ Module: `Array`<br />
 
 Returns a membership-test function using a custom equivalence.
 
+**When to use**
+
+Use when checking membership with caller-provided equality instead of
+`Equal.equivalence()`.
+
 **Example** (Custom equality check)
 
 ```ts
@@ -16,7 +21,7 @@ console.log(pipe([1, 2, 3, 4], containsNumber(3))) // true
 
 **See**
 
-- `contains` — uses default `Equal.equivalence()`
+- `contains` for the `Equal.equivalence()` variant
 
 **Signature**
 
@@ -24,6 +29,6 @@ console.log(pipe([1, 2, 3, 4], containsNumber(3))) // true
 declare const containsWith: <A>(isEquivalent: (self: A, that: A) => boolean) => { (a: A): (self: Iterable<A>) => boolean; (self: Iterable<A>, a: A): boolean; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L2339)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L2594)
 
 Since v2.0.0

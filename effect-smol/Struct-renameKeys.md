@@ -8,7 +8,7 @@ not mentioned in the mapping are copied unchanged.
 
 **When to use**
 
-Use for simple, declarative key renaming without custom logic.
+Use when you need simple, declarative key renaming without custom logic.
 
 **Details**
 

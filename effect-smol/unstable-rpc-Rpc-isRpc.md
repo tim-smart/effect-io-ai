@@ -11,6 +11,6 @@ Returns `true` when the value is an `Rpc` definition.
 declare const isRpc: (u: unknown) => u is Rpc<any, any, any>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Rpc.ts#L61)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Rpc.ts#L72)
 
 Since v4.0.0

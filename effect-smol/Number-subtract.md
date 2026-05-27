@@ -5,6 +5,10 @@ Module: `Number`<br />
 
 Provides a subtraction operation on `number`s.
 
+**When to use**
+
+Use to subtract one number from another.
+
 **Example** (Subtracting numbers)
 
 ```ts
@@ -20,6 +24,6 @@ assert.deepStrictEqual(Number.subtract(2, 3), -1)
 declare const subtract: { (that: number): (self: number) => number; (self: number, that: number): number; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Number.ts#L108)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Number.ts#L194)
 
 Since v2.0.0

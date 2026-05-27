@@ -28,6 +28,6 @@ if (Option.isSome(nodeData)) {
 declare const getNode: { <N, E, T extends Kind = "directed">(nodeIndex: NodeIndex): (graph: Graph<N, E, T> | MutableGraph<N, E, T>) => Option.Option<N>; <N, E, T extends Kind = "directed">(graph: Graph<N, E, T> | MutableGraph<N, E, T>, nodeIndex: NodeIndex): Option.Option<N>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Graph.ts#L561)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Graph.ts#L708)
 
 Since v3.18.0

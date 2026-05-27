@@ -7,7 +7,7 @@ Checks whether a value is iterable.
 
 **When to use**
 
-- You need a guard before iterating an unknown value.
+Use when you need a guard before iterating an unknown value.
 
 **Details**
 
@@ -36,6 +36,6 @@ console.log(Predicate.isIterable(data))
 declare const isIterable: (input: unknown) => input is Iterable<unknown>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L1338)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L1372)
 
 Since v2.0.0

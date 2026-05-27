@@ -11,6 +11,6 @@ Worker error reason for failures while sending a message to a worker.
 declare class WorkerSendError
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/WorkerError.ts#L64)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/WorkerError.ts#L80)
 
 Since v4.0.0

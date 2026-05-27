@@ -10,7 +10,7 @@ not a `$ref` or if the referenced definition is not found.
 
 **When to use**
 
-Use this to dereference a top-level `$ref` before inspecting the root
+Use to dereference a top-level `$ref` before inspecting the root
 schema's properties directly.
 
 **Details**
@@ -46,6 +46,6 @@ console.log(resolved.schema) // { type: "object", properties: { name: { type: "s
 declare const resolveTopLevel$ref: (document: Document<"draft-2020-12">) => Document<"draft-2020-12">
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/JsonSchema.ts#L968)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/JsonSchema.ts#L1022)
 
 Since v4.0.0

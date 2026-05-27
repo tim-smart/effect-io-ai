@@ -7,7 +7,7 @@ Represents a total ordering for values of type `A`.
 
 **When to use**
 
-- When you need to define how values of a type should be compared
+Use when when you need to define how values of a type should be compared
 - When implementing sorting, searching, or ordered data structures
 - When composing multiple comparison criteria
 
@@ -37,8 +37,8 @@ console.log(byAge(person1, person2)) // 1
 
 **See**
 
-- `make` - Create an order from a comparison function
-- `Ordering` - The result type of comparisons
+- `make` to create an order from a comparison function
+- `Ordering` for the result type of comparisons
 
 **Signature**
 
@@ -48,6 +48,6 @@ export interface Order<in A> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Order.ts#L95)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Order.ts#L124)
 
 Since v2.0.0

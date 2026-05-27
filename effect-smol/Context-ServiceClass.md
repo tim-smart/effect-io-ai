@@ -5,10 +5,19 @@ Module: `Context`<br />
 
 Class-style service key produced by `Context.Service<Self, Shape>()("Id")`.
 
+**When to use**
+
+Use when declaring a service as a class so the class value can serve as the
+`Context` key.
+
 **Details**
 
-Use this shape when declaring services as classes. The class itself is the
-Context key, and its string `key` identifies the service at runtime.
+The class itself is the `Context` key, and its string `key` identifies the
+service at runtime.
+
+**See**
+
+- `Service` for creating function-style keys or class-style service keys
 
 **Signature**
 
@@ -21,6 +30,6 @@ export interface ServiceClass<in out Self, in out Identifier extends string, in 
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Context.ts#L109)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Context.ts#L163)
 
 Since v4.0.0

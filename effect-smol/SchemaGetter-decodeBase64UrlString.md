@@ -20,8 +20,8 @@ const decode = SchemaGetter.decodeBase64UrlString<string>()
 
 **See**
 
-- `decodeBase64Url` - decode to `Uint8Array` instead
-- `encodeBase64Url` - inverse operation
+- `decodeBase64Url` to decode to `Uint8Array` instead
+- `encodeBase64Url` for the inverse operation
 
 **Signature**
 

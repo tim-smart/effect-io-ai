@@ -14,6 +14,6 @@ export interface SpawnerFn<W = unknown> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Worker.ts#L138)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Worker.ts#L151)
 
 Since v4.0.0

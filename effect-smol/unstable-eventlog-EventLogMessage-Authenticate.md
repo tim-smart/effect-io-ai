@@ -12,6 +12,6 @@ key, signature over the session challenge payload, and algorithm name.
 declare class Authenticate
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventLogMessage.ts#L129)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventLogMessage.ts#L138)
 
 Since v4.0.0

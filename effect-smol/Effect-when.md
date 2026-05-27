@@ -8,7 +8,7 @@ condition.
 
 **When to use**
 
-Use this when an effectful check decides whether to run another effect while
+Use when an effectful check decides whether to run another effect while
 representing the skipped case explicitly.
 
 **Details**
@@ -35,16 +35,12 @@ Effect.runPromise(program).then(console.log)
 // { _id: 'Option', _tag: 'Some', value: undefined }
 ```
 
-**See**
-
-- `when` for conditional execution with a boolean condition.
-
 **Signature**
 
 ```ts
 declare const when: { <E2 = never, R2 = never>(condition: Effect<boolean, E2, R2>): <A, E, R>(self: Effect<A, E, R>) => Effect<Option<A>, E | E2, R | R2>; <A, E, R, E2 = never, R2 = never>(self: Effect<A, E, R>, condition: Effect<boolean, E2, R2>): Effect<Option<A>, E | E2, R | R2>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L4866)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L5237)
 
 Since v2.0.0

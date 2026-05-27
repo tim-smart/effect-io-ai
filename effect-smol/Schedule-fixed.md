@@ -6,10 +6,15 @@ Module: `Schedule`<br />
 Returns a `Schedule` that recurs on the specified fixed `interval` and
 outputs the number of repetitions of the schedule so far.
 
-**Details**
+**When to use**
 
-If the action run between updates takes longer than the interval, then the
-action will be run immediately, but re-runs will not "pile up".
+Use when recurrences should stay aligned to a regular cadence. Use
+`spaced` when each delay should start after the previous action completes.
+
+**Gotchas**
+
+If the action run between recurrences takes longer than the interval, the
+next recurrence happens immediately, but missed intervals are not replayed.
 
 ```text
 |-----interval-----|-----interval-----|-----interval-----|
@@ -21,7 +26,7 @@ action will be run immediately, but re-runs will not "pile up".
 ```ts
 import { Console, Effect, Schedule } from "effect"
 
-// Fixed interval schedule - runs exactly every 1 second
+// Fixed interval schedule - recurs on a one-second cadence
 const everySecond = Schedule.fixed("1 second")
 
 // Health check that runs at fixed intervals
@@ -64,12 +69,16 @@ const program = Effect.gen(function*() {
 })
 ```
 
+**See**
+
+- `spaced` for delaying after each action completes
+
 **Signature**
 
 ```ts
 declare const fixed: (interval: Duration.Input) => Schedule<number>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L2117)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L2212)
 
 Since v2.0.0

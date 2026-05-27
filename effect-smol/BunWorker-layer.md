@@ -12,6 +12,6 @@ from the supplied worker spawning function.
 declare const layer: (spawn: (id: number) => globalThis.Worker) => Layer.Layer<Worker.WorkerPlatform | Worker.Spawner>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunWorker.ts#L37)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunWorker.ts#L54)
 
 Since v4.0.0

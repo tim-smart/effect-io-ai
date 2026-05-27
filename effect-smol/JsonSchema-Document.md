@@ -8,7 +8,7 @@ definitions.
 
 **When to use**
 
-Use `Document` when you need to carry a root schema together with its shared
+Use when you need to carry a root schema together with its shared
 definitions, or when converting between dialects with the `from*` and `to*`
 functions.
 
@@ -52,6 +52,6 @@ export interface Document<D extends Dialect> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/JsonSchema.ts#L177)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/JsonSchema.ts#L207)
 
 Since v4.0.0

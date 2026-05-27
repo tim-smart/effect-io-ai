@@ -7,7 +7,7 @@ Empty event group used as the starting point for defining a group.
 
 **When to use**
 
-Call `.add(...)` to add event definitions and build a typed `EventGroup`.
+Use when call `.add(...)` to add event definitions and build a typed `EventGroup`.
 
 **Signature**
 
@@ -15,6 +15,6 @@ Call `.add(...)` to add event definitions and build a typed `EventGroup`.
 declare const empty: EventGroup<never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventGroup.ts#L199)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventGroup.ts#L207)
 
 Since v4.0.0

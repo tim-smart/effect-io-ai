@@ -7,7 +7,7 @@ Extracts the value from a `Some`, or throws a default `Error` for `None`.
 
 **When to use**
 
-- Quick fail-fast unwrapping when a generic error is acceptable
+Use when quick fail-fast unwrapping when a generic error is acceptable
 
 **Details**
 
@@ -37,6 +37,6 @@ Option.getOrThrow(Option.none())
 declare const getOrThrow: <A>(self: Option<A>) => A
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L1152)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L1179)
 
 Since v2.0.0

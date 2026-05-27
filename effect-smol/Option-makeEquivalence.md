@@ -7,7 +7,7 @@ Creates an `Equivalence` for `Option<A>` from an `Equivalence` for `A`.
 
 **When to use**
 
-- Comparing two `Option` values for structural equality
+Use to compare two `Option` values for structural equality
 
 **Details**
 
@@ -38,6 +38,6 @@ console.log(eq(Option.none(), Option.none()))
 declare const makeEquivalence: <A>(isEquivalent: Equivalence.Equivalence<A>) => Equivalence.Equivalence<Option<A>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L2087)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L2118)
 
 Since v4.0.0

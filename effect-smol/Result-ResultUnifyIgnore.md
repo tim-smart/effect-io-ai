@@ -16,6 +16,6 @@ do not need to reference it directly.
 export interface ResultUnifyIgnore {}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L250)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L257)
 
 Since v4.0.0

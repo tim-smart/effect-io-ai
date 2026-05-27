@@ -5,6 +5,10 @@ Module: `Array`<br />
 
 Tests whether a value is an `Array`.
 
+**When to use**
+
+Use to verify a value is a mutable array, narrowing its type to `Array<unknown>`.
+
 **Details**
 
 - Acts as a type guard narrowing the input to `Array<unknown>`.
@@ -30,6 +34,6 @@ console.log(Array.isArray([1, 2, 3])) // true
 declare const isArray: { (self: unknown): self is Array<unknown>; <T>(self: T): self is Extract<T, ReadonlyArray<any>>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L800)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L868)
 
 Since v2.0.0

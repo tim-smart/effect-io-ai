@@ -7,7 +7,7 @@ Returns the fallback `Option` if `self` is `None`; otherwise returns `self`.
 
 **When to use**
 
-- Chaining fallback `Option` computations
+Use when chaining fallback `Option` computations
 - Building priority chains of optional values
 
 **Details**
@@ -39,6 +39,6 @@ console.log(Option.some("a").pipe(Option.orElse(() => Option.some("b"))))
 declare const orElse: { <B>(that: LazyArg<Option<B>>): <A>(self: Option<A>) => Option<B | A>; <A, B>(self: Option<A>, that: LazyArg<Option<B>>): Option<A | B>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L688)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L715)
 
 Since v2.0.0

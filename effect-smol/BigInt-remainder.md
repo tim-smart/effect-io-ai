@@ -5,6 +5,10 @@ Module: `BigInt`<br />
 
 Returns the JavaScript remainder of dividing one `bigint` by another.
 
+**When to use**
+
+Use to compute the JavaScript `%` remainder for two `bigint` values.
+
 **Details**
 
 The result follows JavaScript `%` semantics, including the sign of the
@@ -24,12 +28,16 @@ BigInt.remainder(10n, 3n) // 1n
 BigInt.remainder(15n, 4n) // 3n
 ```
 
+**See**
+
+- `divide` for quotient calculation with division-by-zero represented as `Option.none`
+
 **Signature**
 
 ```ts
 declare const remainder: { (divisor: bigint): (self: bigint) => bigint; (self: bigint, divisor: bigint): bigint; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigInt.ts#L768)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigInt.ts#L1008)
 
 Since v4.0.0

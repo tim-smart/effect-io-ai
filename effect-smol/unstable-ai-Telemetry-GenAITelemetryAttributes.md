@@ -6,9 +6,11 @@ Module: `Telemetry`<br />
 The attributes used to describe telemetry in the context of Generative
 Artificial Intelligence (GenAI) models requests and responses.
 
-**See**
+**Details**
 
-- https://opentelemetry.io/docs/specs/semconv/attributes-registry/gen-ai/
+These attributes follow the OpenTelemetry generative AI semantic
+conventions:
+https://opentelemetry.io/docs/specs/semconv/attributes-registry/gen-ai/
 
 **Signature**
 
@@ -23,6 +25,6 @@ type GenAITelemetryAttributes = Struct.Simplify<
 >
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Telemetry.ts#L52)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Telemetry.ts#L58)
 
 Since v4.0.0

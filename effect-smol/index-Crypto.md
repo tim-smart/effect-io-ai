@@ -11,6 +11,6 @@ Re-exports all named exports from the "./Crypto.ts" module as `Crypto`.
 export * as Crypto from "./Crypto.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L942)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L122)
 
 Since v4.0.0

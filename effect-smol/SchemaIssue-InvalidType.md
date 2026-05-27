@@ -8,7 +8,7 @@ expected by the schema (e.g. got `null` when `string` was expected).
 
 **When to use**
 
-- Detect basic type mismatches (wrong primitive, null where object expected,
+Use when detect basic type mismatches (wrong primitive, null where object expected,
   etc.).
 - The most common leaf issue in typical validation failures.
 

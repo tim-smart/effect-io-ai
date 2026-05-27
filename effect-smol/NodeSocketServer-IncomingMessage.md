@@ -12,6 +12,6 @@ WebSocket server connection.
 declare class IncomingMessage
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeSocketServer.ts#L46)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeSocketServer.ts#L64)
 
 Since v4.0.0

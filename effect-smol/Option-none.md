@@ -7,8 +7,8 @@ Creates an `Option` representing the absence of a value.
 
 **When to use**
 
-- Representing a missing or uninitialized value
-- Returning "no result" from a function
+Use to represent a missing or uninitialized value, such as returning "no
+result" from a function.
 
 **Details**
 
@@ -38,6 +38,6 @@ console.log(noValue)
 declare const none: <A = never>() => Option<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L292)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L319)
 
 Since v2.0.0

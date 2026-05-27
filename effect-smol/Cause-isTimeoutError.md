@@ -20,6 +20,6 @@ console.log(Cause.isTimeoutError("nope")) // false
 declare const isTimeoutError: (u: unknown) => u is TimeoutError
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L1365)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L1498)
 
 Since v4.0.0

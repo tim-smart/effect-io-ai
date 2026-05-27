@@ -5,6 +5,10 @@ Module: `Hash`<br />
 
 Computes a structural hash for an object using Effect's object key collection.
 
+**When to use**
+
+Use to hash an object from all structural keys collected by Effect.
+
 **Details**
 
 The hash is based on the object's structural keys and their values, including
@@ -33,6 +37,6 @@ console.log(Hash.structure(obj1) === Hash.structure(obj3)) // true
 declare const structure: <A extends object>(o: A) => number
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Hash.ts#L414)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Hash.ts#L511)
 
 Since v2.0.0

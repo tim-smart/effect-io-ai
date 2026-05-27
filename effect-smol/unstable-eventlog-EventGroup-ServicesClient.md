@@ -11,6 +11,6 @@ Client-side schema services required by all events in an event group.
 type ServicesClient<Group> = Event.ServicesClient<Events<Group>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventGroup.ts#L131)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventGroup.ts#L139)
 
 Since v4.0.0

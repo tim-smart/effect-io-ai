@@ -5,6 +5,10 @@ Module: `Array`<br />
 
 Creates overlapping sliding windows of size `n`.
 
+**When to use**
+
+Use to process sequences with a moving window, such as for computing running averages or detecting patterns.
+
 **Details**
 
 - Returns an empty array if `n <= 0` or the array has fewer than `n` elements.
@@ -29,6 +33,6 @@ console.log(Array.window([1, 2, 3, 4, 5], 6)) // []
 declare const window: { <N extends number>(n: N): <A>(self: Iterable<A>) => Array<TupleOf<N, A>>; <A, N extends number>(self: Iterable<A>, n: N): Array<TupleOf<N, A>>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L2688)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L2983)
 
 Since v3.13.2

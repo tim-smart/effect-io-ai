@@ -45,6 +45,6 @@ export interface TypeMatcher<in Input, out Filters, out Remaining, out Result, o
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L106)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L124)
 
 Since v4.0.0

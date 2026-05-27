@@ -7,12 +7,17 @@ Distributes `count` shards across the nodes in the ring, attempting to
 balance the number of shards allocated to each node. Returns undefined if
 the hashring has no elements with weight.
 
+**When to use**
+
+Use to precompute ownership for a fixed number of shard indexes across the
+current ring members.
+
 **Signature**
 
 ```ts
 declare const getShards: <A extends PrimaryKey.PrimaryKey>(self: HashRing<A>, count: number) => Array<A> | undefined
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashRing.ts#L272)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashRing.ts#L369)
 
 Since v3.19.0

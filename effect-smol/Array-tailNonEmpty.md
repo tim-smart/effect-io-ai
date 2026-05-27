@@ -5,6 +5,10 @@ Module: `Array`<br />
 
 Returns all elements except the first of a `NonEmptyReadonlyArray`.
 
+**When to use**
+
+Use to get all elements after the first when the array is known to be non-empty.
+
 **Example** (Getting the tail of a non-empty array)
 
 ```ts
@@ -24,6 +28,6 @@ console.log(Array.tailNonEmpty([1, 2, 3, 4])) // [2, 3, 4]
 declare const tailNonEmpty: <A>(self: NonEmptyReadonlyArray<A>) => Array<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L1160)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L1278)
 
 Since v2.0.0

@@ -5,6 +5,10 @@ Module: `Function`<br />
 
 Creates a compile-time placeholder for a value of any type.
 
+**When to use**
+
+Use as a temporary typed placeholder while developing incomplete code.
+
 **Gotchas**
 
 `hole` is intended for temporary development use. If the placeholder is
@@ -30,6 +34,6 @@ console.log(typeof buildUser) // "function"
 declare const hole: <T>() => T
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Function.ts#L1290)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Function.ts#L1395)
 
 Since v2.0.0

@@ -11,6 +11,6 @@ Re-exports all named exports from the "./HttpApiSwagger.ts" module as `HttpApiSw
 export * as HttpApiSwagger from "./HttpApiSwagger.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L322)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L60)
 
 Since v4.0.0

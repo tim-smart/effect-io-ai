@@ -11,6 +11,6 @@ Re-exports all named exports from the "./HttpBody.ts" module as `HttpBody`.
 export * as HttpBody from "./HttpBody.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L110)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L35)
 
 Since v4.0.0

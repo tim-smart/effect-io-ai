@@ -7,7 +7,7 @@ Union of all terminal (leaf) issue types that have no inner `Issue` children.
 
 **When to use**
 
-- Constraining formatter hooks to only handle terminal nodes.
+Use when constraining formatter hooks to only handle terminal nodes.
 - Pattern-matching on the `_tag` of an issue when you only care about leaves.
 
 **Details**

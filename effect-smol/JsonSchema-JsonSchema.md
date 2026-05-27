@@ -5,6 +5,10 @@ Module: `JsonSchema`<br />
 
 A plain object representing a single JSON Schema node.
 
+**When to use**
+
+Use to represent an arbitrary JSON Schema object regardless of dialect.
+
 **Details**
 
 This is an open record type (`[x: string]: unknown`) so it can hold any JSON
@@ -18,6 +22,6 @@ export interface JsonSchema {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/JsonSchema.ts#L103)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/JsonSchema.ts#L107)
 
 Since v4.0.0

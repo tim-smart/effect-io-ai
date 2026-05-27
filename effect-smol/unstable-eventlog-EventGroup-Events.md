@@ -12,6 +12,6 @@ type Events<Group> = Group extends EventGroup<infer _Events> ? _Events
   : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventGroup.ts#L122)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventGroup.ts#L130)
 
 Since v4.0.0

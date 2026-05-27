@@ -11,6 +11,6 @@ Returns `true` when a value is a SQL `Fragment`.
 declare const isFragment: (u: unknown) => u is Fragment
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Statement.ts#L121)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Statement.ts#L141)
 
 Since v4.0.0

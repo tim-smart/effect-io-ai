@@ -7,7 +7,7 @@ Lifts a binary function to operate on two `Option` values.
 
 **When to use**
 
-- Reusing an existing binary function in an `Option` context
+Use when reusing an existing binary function in an `Option` context
 
 **Details**
 
@@ -38,6 +38,6 @@ console.log(addOptions(Option.some(2), Option.none()))
 declare const lift2: <A, B, C>(f: (a: A, b: B) => C) => { (that: Option<B>): (self: Option<A>) => Option<C>; (self: Option<A>, that: Option<B>): Option<C>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L2157)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L2188)
 
 Since v2.0.0

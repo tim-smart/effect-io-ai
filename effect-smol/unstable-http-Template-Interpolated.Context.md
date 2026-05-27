@@ -19,6 +19,6 @@ type Context<A> = A extends infer T ? T extends Option.Option<infer _> ? never
     : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Template.ts#L90)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Template.ts#L103)
 
 Since v4.0.0

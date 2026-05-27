@@ -5,6 +5,17 @@ Module: `Pipeable`<br />
 
 Constructor type for classes whose instances implement `Pipeable`.
 
+**When to use**
+
+Use as the constructor-side type when a class value should be known to create
+instances that support Effect-style method chaining with `.pipe(...)`.
+
+**See**
+
+- `Pipeable` for the instance-side contract
+- `Class` for the base constructor
+- `Mixin` for wrapping an existing class constructor
+
 **Signature**
 
 ```ts
@@ -13,6 +24,6 @@ export interface PipeableConstructor {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Pipeable.ts#L638)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Pipeable.ts#L656)
 
 Since v3.15.0

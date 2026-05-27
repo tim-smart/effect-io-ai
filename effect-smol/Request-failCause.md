@@ -5,10 +5,17 @@ Module: `Request`<br />
 
 Completes a request entry with a failure `Cause`.
 
-**Details**
+**When to use**
 
-Use this when the request should fail with structured cause information
-rather than only the request's typed error value.
+Use when a `RequestResolver` needs to complete an entry with structured cause
+information rather than only the request's typed error value.
+
+**See**
+
+- `fail` for completing an entry with a typed error value
+- `complete` for completing an entry with an existing `Exit`
+- `completeEffect` for completing an entry from an effect result
+- `succeed` for completing an entry successfully
 
 **Signature**
 
@@ -16,6 +23,6 @@ rather than only the request's typed error value.
 declare const failCause: { <A extends Any>(cause: Cause.Cause<Error<A>>): (self: Entry<A>) => Effect.Effect<void>; <A extends Any>(self: Entry<A>, cause: Cause.Cause<Error<A>>): Effect.Effect<void>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Request.ts#L470)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Request.ts#L549)
 
 Since v2.0.0

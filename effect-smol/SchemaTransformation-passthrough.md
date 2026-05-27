@@ -8,7 +8,7 @@ directions.
 
 **When to use**
 
-- Connecting two schemas that share the same type with no conversion.
+Use when connecting two schemas that share the same type with no conversion.
 - As a placeholder when `Schema.decodeTo` requires a transformation but
   no actual conversion is needed.
 

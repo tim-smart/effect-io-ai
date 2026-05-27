@@ -16,6 +16,6 @@ error code, and a human-readable message.
 declare class EventLogProtocolError
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventLogMessage.ts#L73)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventLogMessage.ts#L82)
 
 Since v4.0.0

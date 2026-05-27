@@ -31,6 +31,6 @@ Effect.provide(program, layer)
 declare const layerCurrentZoneOffset: (offset: number) => Layer.Layer<CurrentTimeZone>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L2777)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L2856)
 
 Since v3.6.0

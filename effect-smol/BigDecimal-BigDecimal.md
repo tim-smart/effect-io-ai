@@ -5,6 +5,11 @@ Module: `BigDecimal`<br />
 
 Represents an arbitrary precision decimal number.
 
+**When to use**
+
+Use when decimal arithmetic needs to avoid JavaScript floating point
+representation errors.
+
 **Example** (Inspecting BigDecimal storage)
 
 ```ts
@@ -28,6 +33,6 @@ export interface BigDecimal extends Equal.Equal, Pipeable, Inspectable {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigDecimal.ts#L50)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigDecimal.ts#L99)
 
 Since v2.0.0

@@ -11,6 +11,6 @@ Layer that provides the default `Path` service for Bun using the shared Node pat
 declare const layer: Layer.Layer<Path, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunPath.ts#L31)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunPath.ts#L43)
 
 Since v4.0.0

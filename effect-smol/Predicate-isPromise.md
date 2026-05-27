@@ -7,7 +7,7 @@ Checks whether a value is a `Promise`-like object with `then` and `catch`.
 
 **When to use**
 
-- You need to detect promise instances across realms.
+Use when you need to detect promise instances across realms.
 
 **Details**
 
@@ -34,6 +34,6 @@ console.log(Predicate.isPromise(data))
 declare const isPromise: (input: unknown) => input is Promise<unknown>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L1368)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L1402)
 
 Since v2.0.0

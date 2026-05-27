@@ -26,6 +26,6 @@ export interface Stream<A extends Schema.Top, E extends Schema.Top> extends
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RpcSchema.ts#L68)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RpcSchema.ts#L78)
 
 Since v4.0.0

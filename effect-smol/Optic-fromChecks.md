@@ -7,7 +7,7 @@ Creates a `Prism` from one or more `Schema` validation checks.
 
 **When to use**
 
-- You want to narrow `T` to the subset that passes certain validation
+Use when you want to narrow `T` to the subset that passes certain validation
   rules (e.g. positive integer).
 - You already have `Schema.isGreaterThan`, `Schema.isInt`, etc.
 

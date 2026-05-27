@@ -5,6 +5,10 @@ Module: `Number`<br />
 
 Returns the maximum between two `number`s.
 
+**When to use**
+
+Use to select the larger of two numbers.
+
 **Example** (Finding the maximum)
 
 ```ts
@@ -14,12 +18,16 @@ import * as assert from "node:assert"
 assert.deepStrictEqual(Number.max(2, 3), 3)
 ```
 
+**See**
+
+- `min` for selecting the smaller value
+
 **Signature**
 
 ```ts
 declare const max: { (that: number): (self: number) => number; (self: number, that: number): number; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Number.ts#L420)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Number.ts#L576)
 
 Since v2.0.0

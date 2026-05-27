@@ -7,7 +7,7 @@ Transforms both the success value and typed error of an Exit.
 
 **When to use**
 
-- Use when you need to remap both channels in one step
+Use when you need to remap both channels in one step
 
 **Details**
 
@@ -48,6 +48,6 @@ console.log(Exit.isSuccess(mapped) && mapped.value) // "42"
 declare const mapBoth: { <E, E2, A, A2>(options: { readonly onFailure: (e: E) => E2; readonly onSuccess: (a: A) => A2; }): (self: Exit<A, E>) => Exit<A2, E2>; <A, E, E2, A2>(self: Exit<A, E>, options: { readonly onFailure: (e: E) => E2; readonly onSuccess: (a: A) => A2; }): Exit<A2, E2>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Exit.ts#L930)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Exit.ts#L971)
 
 Since v2.0.0

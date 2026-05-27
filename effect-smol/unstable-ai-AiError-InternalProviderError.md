@@ -29,6 +29,6 @@ console.log(providerError.message)
 declare class InternalProviderError
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AiError.ts#L701)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AiError.ts#L714)
 
 Since v4.0.0

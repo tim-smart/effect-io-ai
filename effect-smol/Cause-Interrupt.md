@@ -22,11 +22,6 @@ if (Cause.isInterruptReason(reason)) {
 }
 ```
 
-**See**
-
-- `interrupt` — create a `Cause` containing a single `Interrupt`
-- `isInterruptReason` — type guard
-
 **Signature**
 
 ```ts
@@ -35,6 +30,6 @@ export interface Interrupt extends Cause.ReasonProto<"Interrupt"> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L450)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L456)
 
 Since v2.0.0

@@ -6,6 +6,11 @@ Module: `Struct`<br />
 Wraps a plain function as a `Lambda` value so it can be used with
 `map`, `mapPick`, and `mapOmit`.
 
+**When to use**
+
+Use to create a typed lambda for struct mapping APIs that need type-level
+input and output tracking.
+
 **Details**
 
 The type parameter `L` encodes both the input and output types at the type
@@ -39,6 +44,6 @@ console.log(result) // { x: [1], y: ["hello"] }
 declare const lambda: <L extends (a: any) => any>(f: (a: Parameters<L>[0]) => ReturnType<L>) => L
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Struct.ts#L730)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Struct.ts#L735)
 
 Since v4.0.0

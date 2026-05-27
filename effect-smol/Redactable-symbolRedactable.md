@@ -8,7 +8,7 @@ protocol.
 
 **When to use**
 
-Use this symbol as the property key when implementing `Redactable`.
+Use as the property key when implementing the `Redactable` protocol.
 
 **Details**
 
@@ -33,8 +33,8 @@ class ApiKey {
 
 **See**
 
-- `Redactable` - the interface this symbol belongs to
-- `isRedactable` - check whether a value has this symbol
+- `Redactable` for the interface this symbol belongs to
+- `isRedactable` to check whether a value has this symbol
 
 **Signature**
 

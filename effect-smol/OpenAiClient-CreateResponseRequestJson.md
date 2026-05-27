@@ -11,6 +11,6 @@ JSON request body used by this client when creating a chat completion response.
 type CreateResponseRequestJson = ChatCompletionRequest
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/OpenAiClient.ts#L1009)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/OpenAiClient.ts#L1060)
 
 Since v4.0.0

@@ -6,6 +6,10 @@ Module: `Newtype`<br />
 A type that matches any `Newtype`, useful as a generic constraint:
 `<N extends Newtype.Any>`.
 
+**When to use**
+
+Use as a generic constraint when a type parameter can be any `Newtype`.
+
 **See**
 
 - `Newtype` — the base tagged interface
@@ -16,6 +20,6 @@ A type that matches any `Newtype`, useful as a generic constraint:
 type Any = Newtype<any, unknown>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Newtype.ts#L131)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Newtype.ts#L140)
 
 Since v4.0.0

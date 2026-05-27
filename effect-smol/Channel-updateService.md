@@ -16,6 +16,6 @@ provided to the channel under the same key.
 declare const updateService: { <I, S>(key: Context.Key<I, S>, f: (service: NoInfer<S>) => S): <OutElem, OutErr, OutDone, InElem, InErr, InDone, Env>(self: Channel<OutElem, InElem, OutErr, InErr, OutDone, InDone, Env>) => Channel<OutElem, InElem, OutErr, InErr, OutDone, InDone, Env | I>; <OutElem, OutErr, OutDone, InElem, InErr, InDone, Env, I, S>(self: Channel<OutElem, InElem, OutErr, InErr, OutDone, InDone, Env>, service: Context.Key<I, S>, f: (service: NoInfer<S>) => S): Channel<OutElem, InElem, OutErr, InErr, OutDone, InDone, Env | I>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L7218)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L7347)
 
 Since v2.0.0

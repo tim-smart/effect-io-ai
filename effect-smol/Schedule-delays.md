@@ -3,7 +3,7 @@ Module: `Schedule`<br />
 
 ## Schedule.delays
 
-Returns a new schedule that outputs the delay between each occurence.
+Returns a new schedule that outputs the delay between each occurrence.
 
 **Example** (Extracting schedule delays)
 
@@ -29,7 +29,7 @@ const delayProgram = Effect.gen(function*() {
   )
 })
 
-// Monitor delays from a fibonacci schedule
+// Monitor delays from a Fibonacci schedule
 const fibonacciDelays = Schedule.delays(
   Schedule.fibonacci("200 millis").pipe(Schedule.take(8))
 )
@@ -89,6 +89,6 @@ const customTimingSchedule = Schedule.delays(
 declare const delays: <Out, In, E, R>(self: Schedule<Out, In, E, R>) => Schedule<Duration.Duration, In, E, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L1475)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L1531)
 
 Since v2.0.0

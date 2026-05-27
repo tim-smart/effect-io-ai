@@ -13,6 +13,6 @@ type IndexFromTableName<Version, Table> = IndexFromTable<
 >
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbDatabase.ts#L248)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbDatabase.ts#L267)
 
 Since v4.0.0

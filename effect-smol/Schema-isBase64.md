@@ -23,6 +23,6 @@ constraint to ensure generated strings match the Base64 pattern.
 declare const isBase64: (annotations?: Annotations.Filter) => AST.Filter<string>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L5895)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L6046)
 
 Since v4.0.0

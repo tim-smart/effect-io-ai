@@ -47,6 +47,6 @@ function drainAndProcess<T>(
 declare const takeAll: <A>(self: MutableList<A>) => Array<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableList.ts#L752)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableList.ts#L760)
 
 Since v4.0.0

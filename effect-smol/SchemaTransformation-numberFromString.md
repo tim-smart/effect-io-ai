@@ -8,7 +8,7 @@ Decodes a `string` into a `number` and encodes a `number` back to a
 
 **When to use**
 
-- Parsing numeric strings from APIs, form data, or URL parameters.
+Use to parse numeric strings from APIs, form data, or URL parameters.
 
 **Details**
 

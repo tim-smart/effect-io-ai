@@ -7,7 +7,7 @@ Creates a getter that handles the case when the input is absent (`Option.None`).
 
 **When to use**
 
-- You need to provide a fallback or computed value for missing struct keys.
+Use when you need to provide a fallback or computed value for missing struct keys.
 - Building custom "default value" logic more complex than `withDefault`.
 
 **Details**
@@ -28,9 +28,9 @@ const withTimestamp = SchemaGetter.onNone<number>(() =>
 
 **See**
 
-- `required` - fails if input is absent
-- `withDefault` - simpler default value for undefined inputs
-- `onSome` - handle only present values
+- `required` when absent input should fail
+- `withDefault` for a simpler default value for undefined inputs
+- `onSome` to handle only present values
 
 **Signature**
 

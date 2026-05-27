@@ -11,6 +11,6 @@ Re-exports all named exports from the "./HttpApiSecurity.ts" module as `HttpApiS
 export * as HttpApiSecurity from "./HttpApiSecurity.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L298)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L55)
 
 Since v4.0.0

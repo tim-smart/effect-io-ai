@@ -11,6 +11,6 @@ Re-exports all named exports from the "./BigDecimal.ts" module as `BigDecimal`.
 export * as BigDecimal from "./BigDecimal.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L136)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L42)
 
 Since v2.0.0

@@ -8,7 +8,7 @@ Creates a `ConfigProvider` backed by an in-memory JavaScript value
 
 **When to use**
 
-Use this in unit or integration tests where you want deterministic config
+Use when you use this in unit or integration tests where you want deterministic config
 without touching the environment, or when embedding config directly in code
 or reading a JSON file.
 
@@ -51,6 +51,6 @@ const host = Config.string("host").parse(
 declare const fromUnknown: (root: unknown) => ConfigProvider
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ConfigProvider.ts#L757)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ConfigProvider.ts#L780)
 
 Since v4.0.0

@@ -8,7 +8,7 @@ modifying the list.
 
 **When to use**
 
-Use `takeAll` when the list should be emptied after converting it to an
+Use when the list should be emptied after converting it to an
 array.
 
 **Signature**
@@ -17,6 +17,6 @@ array.
 declare const toArray: <A>(self: MutableList<A>) => Array<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableList.ts#L857)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableList.ts#L865)
 
 Since v4.0.0

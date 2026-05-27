@@ -5,6 +5,14 @@ Module: `Config`<br />
 
 Creates a config for a `URL` value parsed from a string.
 
+**When to use**
+
+Use to read configuration values that must be valid URL strings.
+
+**Details**
+
+This is a shortcut for `Config.schema(Schema.URL, name)`.
+
 **Gotchas**
 
 Fails if the string cannot be parsed by the `URL` constructor.
@@ -45,12 +53,16 @@ Effect.runSync(
 // }
 ```
 
+**See**
+
+- `schema` for decoding configuration values with a custom codec
+
 **Signature**
 
 ```ts
 declare const url: (name?: string) => Config<URL>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Config.ts#L1295)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Config.ts#L1377)
 
 Since v3.11.0

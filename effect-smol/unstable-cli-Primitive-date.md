@@ -29,6 +29,6 @@ const parseDate = Effect.gen(function*() {
 declare const date: Primitive<Date>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Primitive.ts#L239)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Primitive.ts#L288)
 
 Since v4.0.0

@@ -5,13 +5,19 @@ Module: `Cause`<br />
 
 Creates a standalone `Die` reason (not wrapped in a `Cause`).
 
+**When to use**
+
+Use when you need to construct individual reasons for
+`fromReasons` or for direct comparison.
+
 **Example** (creating a Die reason)
 
 ```ts
 import { Cause } from "effect"
 
-const reason = Cause.makeDieReason(new Error("bug"))
+const reason = Cause.makeDieReason("bug")
 console.log(reason._tag) // "Die"
+console.log(reason.defect) // "bug"
 ```
 
 **See**
@@ -25,6 +31,6 @@ console.log(reason._tag) // "Die"
 declare const makeDieReason: (defect: unknown) => Die
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L615)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L656)
 
 Since v4.0.0

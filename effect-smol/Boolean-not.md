@@ -5,6 +5,10 @@ Module: `Boolean`<br />
 
 Negates the given boolean: `!self`
 
+**When to use**
+
+Use to invert a boolean value.
+
 **Example** (Negating booleans)
 
 ```ts
@@ -21,6 +25,6 @@ assert.deepStrictEqual(Boolean.not(false), true)
 declare const not: (self: boolean) => boolean
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Boolean.ts#L143)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Boolean.ts#L226)
 
 Since v2.0.0

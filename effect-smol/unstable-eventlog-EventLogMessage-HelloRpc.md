@@ -11,6 +11,6 @@ RPC used to start an event-log remote session and receive a `HelloResponse`.
 declare class HelloRpc
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventLogMessage.ts#L118)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventLogMessage.ts#L127)
 
 Since v4.0.0

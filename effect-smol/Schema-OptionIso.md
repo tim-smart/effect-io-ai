@@ -17,6 +17,6 @@ type OptionIso<A> = | { readonly _tag: "None" }
   | { readonly _tag: "Some"; readonly value: A["Iso"] }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L7702)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L7871)
 
 Since v4.0.0

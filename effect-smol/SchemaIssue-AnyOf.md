@@ -7,7 +7,7 @@ Issue produced when a value does not match *any* member of a union schema.
 
 **When to use**
 
-- Inspect which union members were attempted and why each failed.
+Use when inspect which union members were attempted and why each failed.
 - `issues` may be empty when the union has no members or when the input does
   not pass the initial type guard.
 

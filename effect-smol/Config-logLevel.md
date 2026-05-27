@@ -5,6 +5,10 @@ Module: `Config`<br />
 
 Creates a config for a log level string.
 
+**When to use**
+
+Use to read Effect log-level settings from configuration.
+
 **Details**
 
 Shortcut for `Config.schema(Config.LogLevel, name)`.
@@ -34,12 +38,16 @@ Effect.runSync(
 // Output: "Info"
 ```
 
+**See**
+
+- `LogLevel` for the underlying log-level codec
+
 **Signature**
 
 ```ts
 declare const logLevel: (name?: string) => Config<LogLevel_.LogLevel>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Config.ts#L1208)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Config.ts#L1273)
 
 Since v2.0.0

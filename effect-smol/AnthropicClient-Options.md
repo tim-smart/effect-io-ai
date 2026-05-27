@@ -5,6 +5,23 @@ Module: `AnthropicClient`<br />
 
 Configuration options for creating an Anthropic client.
 
+**When to use**
+
+Use when the Anthropic client settings are already available as values and
+should be passed directly to `make` or `layer`.
+
+**Details**
+
+These options configure the base Anthropic URL, the `x-api-key`
+authentication header, the `anthropic-version` header, and an optional
+transformation of the underlying `HttpClient`.
+
+**See**
+
+- `make` for constructing an Anthropic client from explicit options
+- `layer` for providing an Anthropic client from explicit options
+- `layerConfig` for loading Anthropic client settings from `Config`
+
 **Signature**
 
 ```ts
@@ -37,6 +54,6 @@ type Options = {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicClient.ts#L144)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicClient.ts#L194)
 
 Since v4.0.0

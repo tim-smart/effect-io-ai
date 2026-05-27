@@ -20,8 +20,8 @@ const decode = SchemaGetter.decodeHex<string>()
 
 **See**
 
-- `decodeHexString` - decode to `string` instead
-- `encodeHex` - inverse operation
+- `decodeHexString` to decode to `string` instead
+- `encodeHex` for the inverse operation
 
 **Signature**
 

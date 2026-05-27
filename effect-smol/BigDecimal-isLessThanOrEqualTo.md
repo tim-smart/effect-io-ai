@@ -5,6 +5,10 @@ Module: `BigDecimal`<br />
 
 Checks if a given `BigDecimal` is less than or equal to the provided one.
 
+**When to use**
+
+Use to test whether one `BigDecimal` is less than or equal to another.
+
 **Example** (Checking less-than-or-equal comparisons)
 
 ```ts
@@ -31,6 +35,6 @@ assert.deepStrictEqual(
 declare const isLessThanOrEqualTo: { (that: BigDecimal): (self: BigDecimal) => boolean; (self: BigDecimal, that: BigDecimal): boolean; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigDecimal.ts#L684)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigDecimal.ts#L812)
 
 Since v4.0.0

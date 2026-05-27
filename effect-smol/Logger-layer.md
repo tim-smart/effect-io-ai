@@ -49,6 +49,6 @@ const program = Effect.log("Application started").pipe(
 declare const layer: <const Loggers extends ReadonlyArray<Logger<unknown, unknown> | Effect.Effect<Logger<unknown, unknown>, any, any>>>(loggers: Loggers, options?: { readonly mergeWithExisting?: boolean | undefined; } | undefined) => Layer.Layer<never, Loggers extends readonly [] ? never : Effect.Error<Loggers[number]>, Exclude<Loggers extends readonly [] ? never : Effect.Services<Loggers[number]>, Scope.Scope>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Logger.ts#L1191)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Logger.ts#L1207)
 
 Since v4.0.0

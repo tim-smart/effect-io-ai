@@ -27,6 +27,6 @@ encoding chain.
 declare const decodeTo: <A extends AST>(from: AST, to: A, transformation: Transformation.Transformation<any, any, any, any>) => A
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L2940)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L3143)
 
 Since v4.0.0

@@ -14,6 +14,6 @@ type IsDiscard<A> = [Extract<A, { readonly discard: true }>] extends [
     : true
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L369)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L416)
 
 Since v2.0.0

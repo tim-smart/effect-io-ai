@@ -11,6 +11,6 @@ Returns whether an `AsyncResult` is currently waiting for an asynchronous comput
 declare const isWaiting: <A, E>(result: AsyncResult<A, E>) => boolean
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AsyncResult.ts#L158)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AsyncResult.ts#L179)
 
 Since v4.0.0

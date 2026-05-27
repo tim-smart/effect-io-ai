@@ -5,6 +5,20 @@ Module: `Number`<br />
 
 The global `Number` constructor.
 
+**When to use**
+
+Use when you want native `Number` constructor coercion from the Effect module
+namespace.
+
+**Gotchas**
+
+This follows native `Number` coercion rules, including empty strings
+becoming `0` and invalid numeric strings becoming `NaN`.
+
+**See**
+
+- `parse` for parsing strings into an `Option`
+
 **Example** (Coercing values to numbers)
 
 ```ts
@@ -23,6 +37,6 @@ console.log(float) // 3.14
 declare const Number: NumberConstructor
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Number.ts#L33)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Number.ts#L99)
 
 Since v4.0.0

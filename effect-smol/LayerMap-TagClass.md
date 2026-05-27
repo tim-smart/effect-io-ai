@@ -5,10 +5,20 @@ Module: `LayerMap`<br />
 
 Service class shape produced by `LayerMap.Service`.
 
+**When to use**
+
+Use as the public type for classes returned by `LayerMap.Service` when an API
+needs to accept, return, or alias the generated service class and its static
+helpers.
+
 **Details**
 
 It combines a `Context.Service` tag for the `LayerMap` with default layers
 and helper accessors for retrieving, using, and invalidating keyed resources.
+
+**See**
+
+- `Service` for creating concrete `LayerMap` service classes
 
 **Signature**
 
@@ -55,6 +65,6 @@ export interface TagClass<
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/LayerMap.ts#L283)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/LayerMap.ts#L291)
 
 Since v3.14.0

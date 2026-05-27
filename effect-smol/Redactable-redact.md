@@ -8,7 +8,7 @@ unchanged.
 
 **When to use**
 
-Use this as the general-purpose entry point for redaction when the input may
+Use as the general-purpose entry point for redaction when the input may
 or may not implement the redaction protocol.
 
 **Details**
@@ -23,8 +23,8 @@ object are not automatically redacted.
 
 **See**
 
-- `isRedactable` - check before redacting
-- `getRedacted` - lower-level variant for known redactables
+- `isRedactable` to check before redacting
+- `getRedacted` for the lower-level variant for known redactables
 
 **Signature**
 
@@ -32,6 +32,6 @@ object are not automatically redacted.
 declare const redact: (u: unknown) => unknown
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Redactable.ts#L181)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Redactable.ts#L185)
 
 Since v3.10.0

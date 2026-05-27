@@ -7,7 +7,7 @@ Parses a `DateTime.Input` value into a `DateTime.Utc`.
 
 **When to use**
 
-- An encoded value represents a date/time and should be decoded to a `DateTime.Utc`.
+Use when an encoded value represents a date/time and should be decoded to a `DateTime.Utc`.
 
 **Details**
 
@@ -29,7 +29,7 @@ const parseDate = SchemaGetter.dateTimeUtcFromInput<string>()
 
 **See**
 
-- `Date` - simpler coercion to `Date` (no validation)
+- `Date` for a simpler coercion to `Date` (no validation)
 
 **Signature**
 

@@ -6,6 +6,10 @@ Module: `References`<br />
 Reference for managing span links that are automatically added to all new spans.
 Span links connect related spans that are not in a parent-child relationship.
 
+**When to use**
+
+Use to attach shared links to every span created in the current context.
+
 **Example** (Managing span links)
 
 ```ts
@@ -66,6 +70,6 @@ const spanLinksExample = Effect.gen(function*() {
 declare const TracerSpanLinks: Context.Reference<ReadonlyArray<SpanLink>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/References.ts#L506)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/References.ts#L658)
 
 Since v4.0.0

@@ -6,6 +6,12 @@ Module: `Schedule`<br />
 Returns a schedule that recurs continuously, each repetition spaced the
 specified duration from the last run.
 
+**When to use**
+
+Use when each delay should start after the previous action
+completes. Use `fixed` when recurrences should stay aligned to a regular
+cadence.
+
 **Example** (Repeating with fixed spacing)
 
 ```ts
@@ -49,12 +55,16 @@ const program = Effect.gen(function*() {
 })
 ```
 
+**See**
+
+- `fixed` for recurrence aligned to a regular cadence
+
 **Signature**
 
 ```ts
 declare const spaced: (duration: Duration.Input) => Schedule<number>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L2615)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L2738)
 
 Since v2.0.0

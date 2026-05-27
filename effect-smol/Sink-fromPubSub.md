@@ -15,6 +15,6 @@ The sink completes with `void` when the upstream stream ends.
 declare const fromPubSub: <A>(pubsub: PubSub.PubSub<A>) => Sink<void, A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Sink.ts#L505)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Sink.ts#L511)
 
 Since v2.0.0

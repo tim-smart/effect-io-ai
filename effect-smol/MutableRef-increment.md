@@ -5,6 +5,11 @@ Module: `MutableRef`<br />
 
 Increments a numeric MutableRef by 1 and returns the reference.
 
+**When to use**
+
+Use to increment a numeric reference in place when you want the same
+reference back.
+
 **Example** (Incrementing numeric refs)
 
 ```ts
@@ -38,6 +43,6 @@ console.log(result === counter) // true
 declare const increment: (self: MutableRef<number>) => MutableRef<number>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableRef.ts#L483)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableRef.ts#L530)
 
 Since v2.0.0

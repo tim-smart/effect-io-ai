@@ -12,6 +12,6 @@ package.
 declare const layerWebSocketConstructorWS: Layer.Layer<Socket.WebSocketConstructor, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeSocket.ts#L56)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeSocket.ts#L71)
 
 Since v4.0.0

@@ -5,6 +5,10 @@ Module: `BigDecimal`<br />
 
 Provides a negate operation on `BigDecimal`s.
 
+**When to use**
+
+Use to flip the sign of a `BigDecimal`.
+
 **Example** (Negating decimals)
 
 ```ts
@@ -21,6 +25,6 @@ assert.deepStrictEqual(BigDecimal.negate(BigDecimal.fromStringUnsafe("-6")), Big
 declare const negate: (n: BigDecimal) => BigDecimal
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigDecimal.ts#L932)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigDecimal.ts#L1104)
 
 Since v2.0.0

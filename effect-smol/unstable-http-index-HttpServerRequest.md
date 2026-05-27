@@ -11,6 +11,6 @@ Re-exports all named exports from the "./HttpServerRequest.ts" module as `HttpSe
 export * as HttpServerRequest from "./HttpServerRequest.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L414)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L100)
 
 Since v4.0.0

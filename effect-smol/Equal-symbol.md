@@ -7,7 +7,7 @@ The unique string identifier for the `Equal` interface.
 
 **When to use**
 
-- Use it as the computed property key when implementing custom equality on a
+Use when you use it as the computed property key when implementing custom equality on a
   class or object literal.
 - Use it to check manually whether an object carries an equality method (prefer
   `isEqual` instead).

@@ -12,6 +12,6 @@ value wrapped in `Redacted`.
 declare const password: (options: TextOptions) => Prompt<Redacted.Redacted>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L991)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L1016)
 
 Since v4.0.0

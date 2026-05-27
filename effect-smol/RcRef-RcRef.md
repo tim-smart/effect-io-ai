@@ -5,6 +5,11 @@ Module: `RcRef`<br />
 
 A reference counted reference that manages resource lifecycle.
 
+**When to use**
+
+Use to share a scoped resource across active users with reference-counted
+acquisition and release.
+
 **Details**
 
 An RcRef wraps a resource that can be acquired and released multiple times.
@@ -45,6 +50,6 @@ export interface RcRef<out A, out E = never> extends Pipeable {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RcRef.ts#L67)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RcRef.ts#L93)
 
 Since v3.5.0

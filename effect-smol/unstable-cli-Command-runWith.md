@@ -7,7 +7,7 @@ Runs a command with explicitly provided arguments instead of using arguments fro
 
 **When to use**
 
-Use this function for testing CLI applications or when you want to
+Use when you use this function for testing CLI applications or when you want to
 programmatically execute commands with specific arguments.
 
 **Example** (Running commands with explicit arguments)
@@ -47,6 +47,6 @@ const testProgram = Effect.gen(function*() {
 declare const runWith: <const Name extends string, Input, E, R, ContextInput>(command: Command<Name, Input, ContextInput, E, R>, config: { readonly version: string; }) => (input: ReadonlyArray<string>) => Effect.Effect<void, Exclude<E, Terminal.QuitError> | CliError.CliError, R | Environment>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Command.ts#L1473)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Command.ts#L1519)
 
 Since v4.0.0

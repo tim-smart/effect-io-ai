@@ -7,7 +7,7 @@ Checks whether a readonly array has at least `n` elements.
 
 **When to use**
 
-- You need a runtime check for tuple-like minimum length.
+Use when you need a runtime check for tuple-like minimum length.
 - You want to narrow `ReadonlyArray<T>` to `TupleOfAtLeast<N, T>`.
 
 **Details**
@@ -37,6 +37,6 @@ console.log(hasAtLeast2([1, 2, 3]))
 declare const isTupleOfAtLeast: { <N extends number>(n: N): <T>(self: ReadonlyArray<T>) => self is TupleOfAtLeast<N, T>; <T, N extends number>(self: ReadonlyArray<T>, n: N): self is TupleOfAtLeast<N, T>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L442)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L467)
 
 Since v3.3.0

@@ -5,6 +5,11 @@ Module: `Clock`<br />
 
 Returns an Effect that succeeds with the current time in nanoseconds.
 
+**When to use**
+
+Use to read wall-clock time from the active `Clock` service with nanosecond
+precision.
+
 **Example** (Reading nanoseconds)
 
 ```ts
@@ -23,6 +28,6 @@ const program = Effect.gen(function*() {
 declare const currentTimeNanos: Effect<bigint, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Clock.ts#L189)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Clock.ts#L246)
 
 Since v2.0.0

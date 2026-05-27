@@ -5,6 +5,21 @@ Module: `Iterable`<br />
 
 Append an element to the end of an `Iterable`, creating a new `Iterable`.
 
+**When to use**
+
+Use to add one element after all elements of an iterable while keeping the
+result as a lazy `Iterable`.
+
+**Details**
+
+The result yields every element from `self` first, then yields `last` after
+`self` is exhausted.
+
+**Gotchas**
+
+If `self` is infinite or never completes, the appended element is never
+reached.
+
 **Example** (Appending an element)
 
 ```ts
@@ -22,12 +37,17 @@ const result = Iterable.append(
 console.log(Array.from(result)) // [1, 2, 3, 4]
 ```
 
+**See**
+
+- `prepend` for adding one element before the existing elements
+- `appendAll` for appending all elements from another iterable
+
 **Signature**
 
 ```ts
 declare const append: { <B>(last: B): <A>(self: Iterable<A>) => Iterable<A | B>; <A, B>(self: Iterable<A>, last: B): Iterable<A | B>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Iterable.ts#L283)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Iterable.ts#L338)
 
 Since v2.0.0

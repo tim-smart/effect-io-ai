@@ -7,7 +7,7 @@ Unescapes a JSON Pointer reference token according to RFC 6901 by decoding escap
 
 **When to use**
 
-- Parsing JSON Pointers to extract the original token values from escaped segments
+Use to parse JSON Pointers to extract the original token values from escaped segments
 - Converting escaped tokens back to their original form for use as object keys or identifiers
 - Resolving schema references or JSON Patch paths that use escaped tokens
 

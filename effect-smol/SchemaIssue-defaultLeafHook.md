@@ -7,8 +7,8 @@ The built-in `LeafHook` used by default formatters.
 
 **When to use**
 
-- Use as-is when you only need to customise the `CheckHook` but want
-  the default leaf rendering.
+Use as the default leaf renderer when you only need to customise the
+`CheckHook`.
 - Reference as a starting point for custom `LeafHook` implementations.
 
 **Details**

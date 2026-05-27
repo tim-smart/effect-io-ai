@@ -11,6 +11,6 @@ Re-exports all named exports from the "./AtomRegistry.ts" module as `AtomRegistr
 export * as AtomRegistry from "./AtomRegistry.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L136)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L30)
 
 Since v4.0.0

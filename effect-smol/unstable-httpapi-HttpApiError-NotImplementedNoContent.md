@@ -12,6 +12,6 @@ into a `NotImplemented` error value.
 declare const NotImplementedNoContent: HttpApiSchema.asNoContent<typeof NotImplemented>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiError.ts#L372)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiError.ts#L392)
 
 Since v4.0.0

@@ -5,6 +5,10 @@ Module: `TxDeferred`<br />
 
 Creates a new empty `TxDeferred`.
 
+**When to use**
+
+Use to create a transactional deferred that can be completed exactly once.
+
 **Example** (Creating a transactional deferred)
 
 ```ts
@@ -23,6 +27,6 @@ const program = Effect.gen(function*() {
 declare const make: <A, E = never>() => Effect.Effect<TxDeferred<A, E>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxDeferred.ts#L97)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxDeferred.ts#L129)
 
 Since v2.0.0

@@ -11,6 +11,6 @@ Type of the `Handlers` type identifier symbol.
 type HandlersTypeId = typeof HandlersTypeId
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiBuilder.ts#L186)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiBuilder.ts#L200)
 
 Since v4.0.0

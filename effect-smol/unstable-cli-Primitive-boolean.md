@@ -38,6 +38,6 @@ const parseBoolean = Effect.gen(function*() {
 declare const boolean: Primitive<boolean>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Primitive.ts#L152)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Primitive.ts#L201)
 
 Since v4.0.0

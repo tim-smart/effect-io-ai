@@ -6,6 +6,10 @@ Module: `Effect`<br />
 The `provideService` function is used to provide an actual
 implementation for a service in the context of an effect.
 
+**When to use**
+
+Use to satisfy one service requirement with an already-built implementation.
+
 **Details**
 
 This function allows you to associate a service with its implementation so
@@ -48,6 +52,8 @@ Effect.runPromise(program).then(console.log)
 **See**
 
 - `provide` for providing multiple layers to an effect.
+- `provideServiceEffect` for acquiring the service implementation effectfully.
+- `provideContext` for providing a complete context.
 
 **Signature**
 
@@ -55,6 +61,6 @@ Effect.runPromise(program).then(console.log)
 declare const provideService: { <I, S>(service: Context.Key<I, S>): { (implementation: S): <A, E, R>(self: Effect<A, E, R>) => Effect<A, E, Exclude<R, I>>; <A, E, R>(self: Effect<A, E, R>, implementation: S): Effect<A, E, Exclude<R, I>>; }; <I, S>(service: Context.Key<I, S>, implementation: S): <A, E, R>(self: Effect<A, E, R>) => Effect<A, E, Exclude<R, I>>; <A, E, R, I, S>(self: Effect<A, E, R>, service: Context.Key<I, S>, implementation: S): Effect<A, E, Exclude<R, I>>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L5755)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L6161)
 
 Since v2.0.0

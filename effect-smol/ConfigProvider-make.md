@@ -7,7 +7,7 @@ Creates a `ConfigProvider` from a raw lookup function.
 
 **When to use**
 
-Use this when implementing a provider backed by a custom store, such as a
+Use when implementing a provider backed by a custom store, such as a
 database, remote API, or in-memory map.
 
 **Details**
@@ -50,6 +50,6 @@ const provider = ConfigProvider.make((path) => {
 declare const make: (get: (path: Path) => Effect.Effect<Node | undefined, SourceError>, mapInput?: (path: Path) => Path, prefix?: Path) => ConfigProvider
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ConfigProvider.ts#L430)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ConfigProvider.ts#L453)
 
 Since v2.0.0

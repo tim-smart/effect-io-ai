@@ -6,12 +6,22 @@ Module: `Schema`<br />
 Iso representation used for `Cause` schemas: an ordered array of
 `CauseReasonIso` values.
 
+**When to use**
+
+Use when working with the ISO shape of a `Cause` schema, such as `toIso`
+optics or codecs that expose a cause as its ordered array of encoded reasons.
+
+**See**
+
+- `Cause` for constructing schemas for full Cause values
+- `CauseReasonIso` for the ISO shape of each array element
+
 **Signature**
 
 ```ts
 type CauseIso<E, D> = ReadonlyArray<CauseReasonIso<E, D>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L8461)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L8677)
 
 Since v4.0.0

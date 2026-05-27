@@ -7,7 +7,7 @@ Creates a config that always fails with the given error.
 
 **When to use**
 
-- Inside `orElse` to re-raise a specific error.
+Use when inside `orElse` to re-raise a specific error.
 - Testing error handling paths.
 
 **Signature**
@@ -16,6 +16,6 @@ Creates a config that always fails with the given error.
 declare const fail: (err: SourceError | Schema.SchemaError) => Config<never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Config.ts#L883)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Config.ts#L896)
 
 Since v2.0.0

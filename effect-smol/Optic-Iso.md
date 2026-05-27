@@ -7,7 +7,7 @@ A lossless, reversible conversion between types `S` and `A`.
 
 **When to use**
 
-- You have a pair of functions that convert back and forth without losing
+Use when you have a pair of functions that convert back and forth without losing
   information (e.g. `Record ↔ entries`, `Celsius ↔ Fahrenheit`).
 - You want the strongest optic that can be composed with any other.
 

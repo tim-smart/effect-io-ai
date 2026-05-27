@@ -7,7 +7,7 @@ Parses a Draft 2020-12 JSON Schema document into a `Document`.
 
 **When to use**
 
-Use this to import external JSON Schemas into the Effect representation
+Use to import external JSON Schemas into the Effect representation
 system.
 
 **Details**
@@ -32,6 +32,6 @@ Circular `$ref`s are detected and cause an error.
 declare const fromJsonSchemaDocument: (document: JsonSchema.Document<"draft-2020-12">, options?: { readonly onEnter?: ((js: JsonSchema.JsonSchema) => JsonSchema.JsonSchema) | undefined; }) => Document
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaRepresentation.ts#L3003)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaRepresentation.ts#L3047)
 
 Since v4.0.0

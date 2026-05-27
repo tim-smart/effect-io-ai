@@ -7,7 +7,7 @@ A function that decides whether a value of type `A` satisfies a condition.
 
 **When to use**
 
-- You want a reusable boolean check for `A`.
+Use when you want a reusable boolean check for `A`.
 - You plan to combine checks with `and`/`or`.
 - You want a simple filter predicate for arrays or iterables.
 
@@ -41,6 +41,6 @@ export interface Predicate<in A> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L77)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L102)
 
 Since v2.0.0

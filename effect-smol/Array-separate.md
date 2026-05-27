@@ -5,6 +5,10 @@ Module: `Array`<br />
 
 Separates an iterable of `Result`s into failure values and success values.
 
+**When to use**
+
+Use to split existing `Result` values into failure and success arrays.
+
 **Details**
 
 - Returns `[failures, successes]`.
@@ -26,6 +30,7 @@ console.log(successes) // [1, 2]
 
 - `getFailures` — extract only failures
 - `getSuccesses` — extract only successes
+- `partition` for computing `Result` values while splitting
 
 **Signature**
 
@@ -33,6 +38,6 @@ console.log(successes) // [1, 2]
 declare const separate: <T extends Iterable<Result.Result<any, any>>>(self: T) => [failures: Array<Result.Result.Failure<ReadonlyArray.Infer<T>>>, successes: Array<Result.Result.Success<ReadonlyArray.Infer<T>>>]
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L3528)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L3912)
 
 Since v2.0.0

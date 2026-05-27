@@ -5,6 +5,10 @@ Module: `BigInt`<br />
 
 Determines the absolute value of a given `bigint`.
 
+**When to use**
+
+Use to remove the sign from a `bigint` while preserving its magnitude.
+
 **Example** (Calculating absolute values)
 
 ```ts
@@ -22,6 +26,6 @@ assert.deepStrictEqual(BigInt.abs(5n), 5n)
 declare const abs: (n: bigint) => bigint
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigInt.ts#L481)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigInt.ts#L656)
 
 Since v2.0.0

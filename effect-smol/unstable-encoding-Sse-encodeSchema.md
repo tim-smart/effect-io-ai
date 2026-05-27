@@ -16,6 +16,6 @@ Values are schema-encoded to the untagged SSE event shape, transformed to
 declare const encodeSchema: <S extends Schema.Encoder<{ readonly id?: string | undefined; readonly event: string; readonly data: string; }, unknown>, IE, Done>(schema: S) => Channel.Channel<NonEmptyReadonlyArray<string>, IE | Schema.SchemaError, void, NonEmptyReadonlyArray<S["Type"]>, IE | Retry, Done, S["EncodingServices"]>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Sse.ts#L389)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Sse.ts#L410)
 
 Since v4.0.0

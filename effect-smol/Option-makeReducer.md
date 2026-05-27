@@ -8,7 +8,7 @@ value and combines values when both are `Some`.
 
 **When to use**
 
-- Building a reducer that falls back to the first available value
+Use to build a reducer that falls back to the first available value
 - Combining optional values where either side may be absent
 
 **Details**
@@ -39,6 +39,6 @@ console.log(reducer.combineAll([Option.some(1), Option.none(), Option.some(2)]))
 declare const makeReducer: <A>(combiner: Combiner.Combiner<A>) => Reducer.Reducer<Option<A>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L2585)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L2616)
 
 Since v4.0.0

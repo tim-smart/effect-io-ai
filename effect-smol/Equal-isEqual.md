@@ -7,7 +7,7 @@ Checks whether a value implements the `Equal` interface.
 
 **When to use**
 
-- To branch on whether a value supports custom equality before calling
+Use when to branch on whether a value supports custom equality before calling
   its `[Equal.symbol]` method directly.
 - In generic utility code that needs to distinguish `Equal` implementors
   from plain values.

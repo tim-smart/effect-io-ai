@@ -5,18 +5,12 @@ Module: `index`<br />
 
 Re-exports all named exports from the "./Config.ts" module as `Config`.
 
-**See**
-
-- `schema` – build a Config from any Schema.Codec
-- `ConfigError` – the error type for config failures
-- `make` – low-level Config constructor
-
 **Signature**
 
 ```ts
 export * as Config from "./Config.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L666)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L97)
 
 Since v4.0.0

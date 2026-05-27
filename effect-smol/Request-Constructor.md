@@ -34,6 +34,6 @@ export interface Constructor<R extends Request<any, any, any>, T extends keyof R
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Request.ts#L110)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Request.ts#L152)
 
 Since v2.0.0

@@ -3,7 +3,18 @@ Module: `Boolean`<br />
 
 ## Boolean.Boolean
 
-Reference to the global Boolean constructor.
+Reference to the global `Boolean` constructor for JavaScript truthiness
+coercion.
+
+**When to use**
+
+Use when you want native `Boolean` constructor coercion from the Effect module
+namespace.
+
+**Gotchas**
+
+This follows native truthiness rules. For example, non-empty strings such as
+`"false"` coerce to `true`.
 
 **Example** (Coercing values to booleans)
 
@@ -26,6 +37,6 @@ console.log(fromZero) // false
 declare const Boolean: BooleanConstructor
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Boolean.ts#L35)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Boolean.ts#L97)
 
 Since v4.0.0

@@ -8,7 +8,7 @@ them together.
 
 **When to use**
 
-- Building pipelines of partial functions (Kleisli composition)
+Use to build pipelines of partial functions (Kleisli composition)
 
 **Details**
 
@@ -45,6 +45,6 @@ console.log(parseAndDouble("not a number"))
 declare const composeK: { <B, C>(bfc: (b: B) => Option<C>): <A>(afb: (a: A) => Option<B>) => (a: A) => Option<C>; <A, B, C>(afb: (a: A) => Option<B>, bfc: (b: B) => Option<C>): (a: A) => Option<C>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L1589)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L1616)
 
 Since v2.0.0

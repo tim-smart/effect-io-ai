@@ -3,7 +3,12 @@ Module: `OpenAiClient`<br />
 
 ## OpenAiClient.withWebSocketMode
 
-Uses OpenAI's websocket mode for all responses within the provided effect.
+Uses OpenAI's WebSocket mode for response streams within the provided effect.
+
+**When to use**
+
+Use to enable WebSocket mode around one effect that creates OpenAI response
+streams.
 
 **Gotchas**
 
@@ -14,12 +19,17 @@ This only works with the following WebSocket constructor layers:
 
 This is because it needs to use non-standard options for setting the Authorization header.
 
+**See**
+
+- `layerWebSocketMode` for providing WebSocket mode through a layer
+- `OpenAiSocket` for direct access to the WebSocket-backed streaming service
+
 **Signature**
 
 ```ts
 declare const withWebSocketMode: <A, E, R>(effect: Effect.Effect<A, E, R>) => Effect.Effect<A, E, Exclude<R, OpenAiSocket | ResponseIdTracker.ResponseIdTracker> | OpenAiClient | Socket.WebSocketConstructor>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L602)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L707)
 
 Since v4.0.0

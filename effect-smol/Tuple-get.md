@@ -7,7 +7,7 @@ Retrieves the element at the specified index from a tuple.
 
 **When to use**
 
-Use this in a pipeline when you need to extract a single element.
+Use when you use this in a pipeline when you need to extract a single element.
 
 **Details**
 
@@ -34,6 +34,6 @@ console.log(last) // "hello"
 declare const get: { <const T extends ReadonlyArray<unknown>, I extends Indices<T> & keyof T>(index: I): (self: T) => T[I]; <const T extends ReadonlyArray<unknown>, I extends Indices<T> & keyof T>(self: T, index: I): T[I]; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tuple.ts#L136)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tuple.ts#L135)
 
 Since v4.0.0

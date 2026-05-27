@@ -5,6 +5,11 @@ Module: `Context`<br />
 
 Returns a new `Context` with the specified service keys removed.
 
+**When to use**
+
+Use when you want to remove a small denylist of services. Use `pick`
+when it is easier to name the services to keep.
+
 **Example** (Omitting services from a context)
 
 ```ts
@@ -28,12 +33,16 @@ assert.deepStrictEqual(
 assert.deepStrictEqual(Context.getOption(context, Timeout), Option.none())
 ```
 
+**See**
+
+- `pick` for keeping selected services
+
 **Signature**
 
 ```ts
 declare const omit: <S extends ReadonlyArray<Key<any, any>>>(...keys: S) => <Services>(self: Context<Services>) => Context<Exclude<Services, Service.Identifier<S[number]>>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Context.ts#L1074)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Context.ts#L1282)
 
 Since v2.0.0

@@ -8,7 +8,7 @@ Interface for type-level functions used by `map`, `mapPick`, and
 
 **When to use**
 
-Use this interface when defining a typed function for `map`,
+Use when you use this interface when defining a typed function for `map`,
 `mapPick`, or `mapOmit`.
 
 **Details**

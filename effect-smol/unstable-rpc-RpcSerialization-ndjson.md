@@ -12,6 +12,6 @@ with a trailing newline.
 declare const ndjson: { makeUnsafe(): Parser; readonly contentType: string; readonly includesFraming: boolean; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RpcSerialization.ts#L91)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RpcSerialization.ts#L101)
 
 Since v4.0.0

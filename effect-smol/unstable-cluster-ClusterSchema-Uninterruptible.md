@@ -18,6 +18,6 @@ interruption.
 declare const Uninterruptible: Context.Reference<boolean | "server" | "client">
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ClusterSchema.ts#L76)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ClusterSchema.ts#L108)
 
 Since v4.0.0

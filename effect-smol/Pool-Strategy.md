@@ -6,11 +6,20 @@ Module: `Pool`<br />
 Strategy used by a `Pool` to manage background resizing and item
 reclamation.
 
+**When to use**
+
+Use when defining a custom pool lifecycle policy that needs to run background
+work, observe acquired items, or choose items for reclamation.
+
 **Details**
 
 `run` starts any strategy-specific background work, `onAcquire` is invoked
 when an item is acquired, and `reclaim` selects an item that can be removed
 or replaced.
+
+**See**
+
+- `makeWithStrategy` for constructing a pool from a custom `Strategy`
 
 **Signature**
 
@@ -22,6 +31,6 @@ export interface Strategy<A, E> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Pool.ts#L142)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Pool.ts#L205)
 
 Since v4.0.0

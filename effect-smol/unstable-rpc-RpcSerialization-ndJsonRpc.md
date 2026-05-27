@@ -12,6 +12,6 @@ messages.
 declare const ndJsonRpc: (options?: { readonly contentType?: string | undefined; }) => RpcSerialization["Service"]
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RpcSerialization.ts#L168)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RpcSerialization.ts#L178)
 
 Since v4.0.0

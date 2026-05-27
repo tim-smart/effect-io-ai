@@ -7,7 +7,7 @@ Checks whether a value is a `number`.
 
 **When to use**
 
-- You need to guard an `unknown` value as a number.
+Use when you need to guard an `unknown` value as a number.
 
 **Details**
 
@@ -38,6 +38,6 @@ if (Predicate.isNumber(data)) {
 declare const isNumber: (input: unknown) => input is number
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L612)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L637)
 
 Since v2.0.0

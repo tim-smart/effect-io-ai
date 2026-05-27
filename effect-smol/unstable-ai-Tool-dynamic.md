@@ -8,7 +8,7 @@ JSON Schema for its parameters.
 
 **When to use**
 
-This is useful for tools where the schema isn't known at compile time,
+Use when this is useful for tools where the schema isn't known at compile time,
 such as MCP tools discovered at runtime or tools from external configurations.
 
 **Details**
@@ -49,6 +49,6 @@ const McpTool = Tool.dynamic("McpTool", {
 declare const dynamic: <const Name extends string, const Options extends { readonly description?: string | undefined; readonly parameters?: Schema.Top | JsonSchema.JsonSchema | undefined; readonly success?: Schema.Top | undefined; readonly failure?: Schema.Top | undefined; readonly failureMode?: FailureMode | undefined; readonly needsApproval?: NeedsApproval<any> | undefined; }>(name: Name, options?: Options) => Dynamic<Name, { readonly parameters: Options extends { readonly parameters: infer P; } ? P extends Schema.Top ? P : P extends JsonSchema.JsonSchema ? P : typeof Schema.Unknown : typeof Schema.Unknown; readonly success: Options extends { readonly success: infer S extends Schema.Top; } ? S : typeof Schema.Unknown; readonly failure: Options extends { readonly failure: infer F extends Schema.Top; } ? F : typeof Schema.Never; readonly failureMode: Options extends { readonly failureMode: infer M extends FailureMode; } ? M : "error"; }>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tool.ts#L1330)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tool.ts#L1359)
 
 Since v4.0.0

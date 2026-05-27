@@ -11,6 +11,6 @@ A layer that directly interfaces with the navigator.clipboard api
 declare const layer: Layer.Layer<Clipboard, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/Clipboard.ts#L87)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/Clipboard.ts#L124)
 
 Since v4.0.0

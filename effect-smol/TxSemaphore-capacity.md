@@ -5,6 +5,10 @@ Module: `TxSemaphore`<br />
 
 Gets the maximum capacity (total permits) of the semaphore.
 
+**When to use**
+
+Use to inspect the fixed total number of permits managed by the semaphore.
+
 **Example** (Checking semaphore capacity)
 
 ```ts
@@ -23,12 +27,16 @@ const program = Effect.gen(function*() {
 })
 ```
 
+**See**
+
+- `available` for reading the current available permit count
+
 **Signature**
 
 ```ts
 declare const capacity: (self: TxSemaphore) => Effect.Effect<number>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxSemaphore.ts#L184)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxSemaphore.ts#L230)
 
 Since v4.0.0

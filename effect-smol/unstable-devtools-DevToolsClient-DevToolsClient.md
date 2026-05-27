@@ -12,6 +12,6 @@ connection.
 declare class DevToolsClient
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DevToolsClient.ts#L42)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DevToolsClient.ts#L61)
 
 Since v4.0.0

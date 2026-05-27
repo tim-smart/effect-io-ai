@@ -7,7 +7,7 @@ Splits a string into an array of strings by a separator.
 
 **When to use**
 
-- An encoded string is a delimited list (e.g. CSV values).
+Use when an encoded string is a delimited list (e.g. CSV values).
 
 **Details**
 
@@ -27,7 +27,7 @@ const splitComma = SchemaGetter.split<string>()
 
 **See**
 
-- `splitKeyValue` - when values are key-value pairs
+- `splitKeyValue` when values are key-value pairs
 
 **Signature**
 

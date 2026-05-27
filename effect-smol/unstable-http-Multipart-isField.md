@@ -11,6 +11,6 @@ Returns `true` when a value is a multipart text `Field`.
 declare const isField: (u: unknown) => u is Field
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Multipart.ts#L120)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Multipart.ts#L140)
 
 Since v4.0.0

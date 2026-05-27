@@ -5,6 +5,11 @@ Module: `Differ`<br />
 
 Describes how to compute, combine, and apply patches for values of type `T`.
 
+**When to use**
+
+Use to model patch-based updates for a value type when callers need to
+compute a patch from two values, combine patches, and apply a patch later.
+
 **Details**
 
 A `Differ` provides an empty patch, computes the patch between two values,
@@ -22,6 +27,6 @@ export interface Differ<in out T, in out Patch> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Differ.ts#L53)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Differ.ts#L58)
 
 Since v2.0.0

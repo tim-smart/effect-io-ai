@@ -5,6 +5,10 @@ Module: `Effect`<br />
 
 Recovers from specific failures based on a predicate.
 
+**When to use**
+
+Use to recover from full causes selected by a predicate.
+
 **Details**
 
 This function allows you to conditionally catch and recover from failures
@@ -34,12 +38,18 @@ Effect.runPromise(program).then(console.log)
 // Then: "Fallback response"
 ```
 
+**See**
+
+- `catchCause` for recovering from every cause
+- `catchCauseFilter` for selecting full causes with a `Filter`
+- `catchIf` for predicate-based recovery from typed errors
+
 **Signature**
 
 ```ts
 declare const catchCauseIf: { <E, B, E2, R2>(predicate: Predicate.Predicate<Cause.Cause<E>>, f: (cause: Cause.Cause<E>) => Effect<B, E2, R2>): <A, R>(self: Effect<A, E, R>) => Effect<A | B, E | E2, R | R2>; <A, E, R, B, E2, R2>(self: Effect<A, E, R>, predicate: Predicate.Predicate<Cause.Cause<E>>, f: (cause: Cause.Cause<E>) => Effect<B, E2, R2>): Effect<A | B, E | E2, R | R2>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L3211)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L3450)
 
 Since v4.0.0

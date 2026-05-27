@@ -28,6 +28,6 @@ const program = Effect.gen(function*() {
 declare const logWithLevel: (level?: Severity) => (...message: ReadonlyArray<any>) => Effect<void>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L12907)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L13466)
 
 Since v2.0.0

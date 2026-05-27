@@ -11,6 +11,6 @@ Creates a memoized atom factory that returns the same object for the same argume
 declare const family: <Arg, T extends object>(f: (arg: Arg) => T) => (arg: Arg) => T
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Atom.ts#L1342)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Atom.ts#L1356)
 
 Since v4.0.0

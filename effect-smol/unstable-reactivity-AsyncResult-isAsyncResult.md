@@ -11,6 +11,6 @@ Returns `true` when a value is an `AsyncResult`.
 declare const isAsyncResult: (u: unknown) => u is AsyncResult<unknown, unknown>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AsyncResult.ts#L72)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AsyncResult.ts#L93)
 
 Since v4.0.0

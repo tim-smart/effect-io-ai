@@ -7,7 +7,7 @@ Extracts the input type `A` from a `Refinement<A, B>`.
 
 **When to use**
 
-- You want to infer the input type from a refinement type.
+Use when you want to infer the input type from a refinement type.
 
 **Details**
 
@@ -34,6 +34,6 @@ type Input = Predicate.Refinement.In<R>
 type In<T> = [T] extends [Refinement<infer _A, infer _>] ? _A : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L286)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L311)
 
 Since v3.6.0

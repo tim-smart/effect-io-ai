@@ -5,12 +5,15 @@ Module: `Result`<br />
 
 Extracts the success value or throws a custom error derived from the failure.
 
+**When to use**
+
+Use when converting a `Result` into a thrown exception with a custom error
+message or error type.
+
 **Details**
 
 - `Success<A>` returns `A`
 - `Failure<E>` throws the value returned by `onFailure(e)`
-- Use when you want to convert a `Result` into a thrown exception with a
-  custom error message or error type
 
 **Example** (Throwing a custom error)
 
@@ -40,6 +43,6 @@ console.log(
 declare const getOrThrowWith: { <E>(onFailure: (err: E) => unknown): <A>(self: Result<A, E>) => A; <A, E>(self: Result<A, E>, onFailure: (err: E) => unknown): A; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L1168)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L1245)
 
 Since v2.0.0

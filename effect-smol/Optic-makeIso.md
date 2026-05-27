@@ -7,7 +7,7 @@ Creates an `Iso` from a pair of conversion functions.
 
 **When to use**
 
-- You have two pure functions that form a lossless round-trip between `S`
+Use when you have two pure functions that form a lossless round-trip between `S`
   and `A`.
 
 **Details**

@@ -5,6 +5,11 @@ Module: `Hash`<br />
 
 Computes a hash value for any given value.
 
+**When to use**
+
+Use to compute an Effect hash for primitives, collections, and hashable
+objects.
+
 **Details**
 
 This function can hash primitives (numbers, strings, booleans, etc.) as well as
@@ -41,6 +46,6 @@ console.log(Hash.hash({ id: "user-1", roles: ["admin", "editor"] }))
 declare const hash: <A>(self: A) => number
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Hash.ts#L90)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Hash.ts#L152)
 
 Since v2.0.0

@@ -17,6 +17,6 @@ export interface AnyServiceWithProps extends Context.Key<any, RpcMiddleware<any,
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RpcMiddleware.ts#L260)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RpcMiddleware.ts#L270)
 
 Since v4.0.0

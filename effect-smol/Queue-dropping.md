@@ -8,7 +8,7 @@ new elements are dropped and the offer operation returns false.
 
 **When to use**
 
-This strategy prevents producers from being blocked and preserves existing messages,
+Use when producers should not block and existing messages should be preserved,
 but new messages may be lost when the queue is full.
 
 **Example** (Creating dropping queues)
@@ -39,6 +39,6 @@ const program = Effect.gen(function*() {
 declare const dropping: <A, E = never>(capacity: number) => Effect<Queue<A, E>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Queue.ts#L549)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Queue.ts#L619)
 
 Since v2.0.0

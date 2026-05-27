@@ -7,6 +7,12 @@ Combines two `Schedule`s by recurring if both of the two schedules want
 to recur, using the maximum of the two durations between recurrences and
 outputting a tuple of the outputs of both schedules.
 
+**When to use**
+
+Use when the combined schedule should continue only while both
+schedules still recur. Use `either` when either schedule should be enough to
+continue.
+
 **Example** (Combining time and attempt limits)
 
 ```ts
@@ -69,12 +75,16 @@ const retryProgram = Effect.gen(function*() {
 // Compare with either which provides union semantics (OR logic)
 ```
 
+**See**
+
+- `either` for continuing while either schedule still recurs
+
 **Signature**
 
 ```ts
 declare const both: { <Output2, Input2, Error2, Env2, Output>(other: Schedule<Output2, Input2, Error2, Env2>): <Input, Error, Env>(self: Schedule<Output, Input, Error, Env>) => Schedule<[Output, Output2], Input & Input2, Error | Error2, Env | Env2>; <Output, Input, Error, Env, Output2, Input2, Error2, Env2>(self: Schedule<Output, Input, Error, Env>, other: Schedule<Output2, Input2, Error2, Env2>): Schedule<[Output, Output2], Input & Input2, Error | Error2, Env | Env2>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L872)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L928)
 
 Since v2.0.0

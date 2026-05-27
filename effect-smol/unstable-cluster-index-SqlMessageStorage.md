@@ -11,6 +11,6 @@ Re-exports all named exports from the "./SqlMessageStorage.ts" module as `SqlMes
 export * as SqlMessageStorage from "./SqlMessageStorage.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L929)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L185)
 
 Since v4.0.0

@@ -8,7 +8,7 @@ proxy.
 
 **When to use**
 
-- When you want reference equality semantics and can accept that the
+Use when when you want reference equality semantics and can accept that the
   original object is **permanently** modified.
 - When proxy overhead is unacceptable (hot paths, large collections).
 

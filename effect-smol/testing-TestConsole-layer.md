@@ -7,6 +7,10 @@ Creates a `Layer` which constructs a `TestConsole`.
 This layer can be used to provide a TestConsole implementation
 for testing purposes.
 
+**When to use**
+
+Use to run an effect with console calls captured by `TestConsole`.
+
 **Example** (Providing a test console layer)
 
 ```ts
@@ -25,12 +29,17 @@ const program = Effect.gen(function*() {
 }).pipe(Effect.provide(TestConsole.layer))
 ```
 
+**See**
+
+- `make` for constructing the service value directly
+- `testConsoleWith` for accessing the provided test console service
+
 **Signature**
 
 ```ts
 declare const layer: Layer.Layer<TestConsole, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TestConsole.ts#L238)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TestConsole.ts#L318)
 
 Since v4.0.0

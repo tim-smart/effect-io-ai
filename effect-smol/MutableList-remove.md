@@ -56,6 +56,6 @@ console.log(MutableList.takeAll(tasks).map((task) => task.id)) // [1, 3]
 declare const remove: <A>(self: MutableList<A>, value: A) => void
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableList.ts#L974)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableList.ts#L982)
 
 Since v4.0.0

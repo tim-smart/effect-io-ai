@@ -49,6 +49,6 @@ type MermaidNodeShape = | "rectangle" // A["label"]
   | "cylindrical"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Graph.ts#L1915)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Graph.ts#L2083)
 
 Since v3.18.0

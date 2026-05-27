@@ -5,6 +5,12 @@ Module: `Match`<br />
 
 Defines a condition for matching values.
 
+**When to use**
+
+Use to add one positive pattern case to a `Match.type` or `Match.value`
+pipeline when a direct value, predicate, or structured object pattern should
+run a handler for matching input.
+
 **Details**
 
 This function enables pattern matching by checking whether a given value
@@ -46,10 +52,10 @@ console.log(match({ age: 4 }))
 
 **See**
 
-- `whenOr` Use this when multiple patterns should match in a single
-condition.
-- `whenAnd` Use this when a value must match all provided patterns.
-- `orElse` Provides a fallback when no patterns match.
+- `whenOr` for handling any one of several patterns with the same handler
+- `whenAnd` for requiring all provided patterns to match before running a handler
+- `not` for handling inputs that do not match a pattern
+- `orElse` for providing a fallback when no pattern case matches
 
 **Signature**
 
@@ -57,6 +63,6 @@ condition.
 declare const when: <R, const P extends Types.PatternPrimitive<R> | Types.PatternBase<R>, Ret, Fn extends (_: Types.WhenMatch<R, P>) => Ret>(pattern: P, f: Fn) => <I, F, A, Pr>(self: Matcher<I, F, R, A, Pr, Ret>) => Matcher<I, Types.AddWithout<F, Types.PForExclude<P>>, Types.ApplyFilters<I, Types.AddWithout<F, Types.PForExclude<P>>>, A | ReturnType<Fn>, Pr, Ret>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L529)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L569)
 
 Since v4.0.0

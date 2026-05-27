@@ -11,6 +11,6 @@ Type-level identifier used to mark Bun `SqliteClient` values.
 type TypeId = "~@effect/sql-sqlite-bun/SqliteClient"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/sql/sqlite-bun/src/SqliteClient.ts#L56)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/sql/sqlite-bun/src/SqliteClient.ts#L82)
 
 Since v4.0.0

@@ -6,6 +6,11 @@ Module: `References`<br />
 Reference for managing log spans that track the duration and hierarchy of operations.
 Each span represents a labeled time period for performance analysis and debugging.
 
+**When to use**
+
+Use to carry the active log span stack that should be included with log
+entries in the current context.
+
 **Example** (Tracking log spans)
 
 ```ts
@@ -65,6 +70,6 @@ const logSpanExample = Effect.gen(function*() {
 declare const CurrentLogSpans: Context.Reference<ReadonlyArray<[label: string, timestamp: number]>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/References.ts#L274)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/References.ts#L403)
 
 Since v4.0.0

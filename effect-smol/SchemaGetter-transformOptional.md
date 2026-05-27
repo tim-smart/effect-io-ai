@@ -7,7 +7,7 @@ Creates a getter that transforms the full `Option` — both present and absent v
 
 **When to use**
 
-- You need to handle both `Some` and `None` cases.
+Use when you need to handle both `Some` and `None` cases.
 - You want to turn a present value into absent, or vice versa.
 
 **Details**
@@ -27,8 +27,8 @@ const skipEmpty = SchemaGetter.transformOptional<string, string>((o) =>
 
 **See**
 
-- `transform` - simpler, only handles present values
-- `omit` - always returns `None`
+- `transform` when you only need to transform present values
+- `omit` when you always want `None`
 
 **Signature**
 

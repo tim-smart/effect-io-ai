@@ -8,7 +8,7 @@ decode and encode directions.
 
 **When to use**
 
-- You need to catch or recover from parsing errors (e.g. `Schema.catchDecoding`).
+Use when you need to catch or recover from parsing errors (e.g. `Schema.catchDecoding`).
 - You need to run side effects around the parsing pipeline.
 - You need access to the full `Effect` rather than a single decoded value.
 

@@ -3,16 +3,17 @@ Module: `Exit`<br />
 
 ## Exit.findError
 
-Extracts the first typed error value from a failed Exit for use in filter
-pipelines.
+Extracts the first typed error value from a failed Exit as a Result.
 
 **When to use**
 
-- Use when you need just the first `E` from the Cause
+Use when composing Exit checks with `Filter` or other `Result`-based
+filtering APIs and you only need the first typed error in the Cause.
 
 **Details**
 
-- Returns the error `E` if one exists, or `Filter.fail` wrapping the original Exit if the Exit has no typed errors
+Returns `Result.succeed(error)` when the Cause contains a Fail reason, or
+`Result.fail(exit)` with the original Exit otherwise.
 
 **Gotchas**
 
@@ -22,15 +23,15 @@ are ignored.
 **Example** (Finding the first typed error)
 
 ```ts
-import { Exit, Filter } from "effect"
+import { Exit, Result } from "effect"
 
 const exit = Exit.fail("not found")
 const result = Exit.findError(exit)
-// result is "not found"
+console.log(Result.isSuccess(result) && result.success) // "not found"
 
 const defect = Exit.die(new Error("bug"))
 const noError = Exit.findError(defect)
-// noError is a Filter.fail marker
+console.log(Result.isFailure(noError)) // true
 ```
 
 **See**
@@ -44,6 +45,6 @@ const noError = Exit.findError(defect)
 declare const findError: <A, E>(input: Exit<A, E>) => Result.Result<E, Exit<A, E>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Exit.ts#L725)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Exit.ts#L764)
 
 Since v4.0.0

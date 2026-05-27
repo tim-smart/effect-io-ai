@@ -11,6 +11,6 @@ Request initialization options accepted by the fetch-based HTTP client.
 declare const RequestInit: typeof RequestInit
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L84)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L93)
 
 Since v4.0.0

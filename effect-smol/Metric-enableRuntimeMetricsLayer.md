@@ -8,10 +8,8 @@ an entire Effect application.
 
 **When to use**
 
-Unlike the function version which wraps individual Effects, this layer provides
-runtime metrics collection to all Effects in the application context. This is
-the recommended approach for production applications that need comprehensive
-fiber monitoring.
+Use when you need runtime metrics collection for all Effects in the
+application context rather than wrapping individual Effects.
 
 **Example** (Enabling runtime metrics with a layer)
 
@@ -105,6 +103,6 @@ const programWithDirectMetrics = application.pipe(
 declare const enableRuntimeMetricsLayer: Layer.Layer<never, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Metric.ts#L3840)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Metric.ts#L3853)
 
 Since v4.0.0

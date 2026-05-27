@@ -7,7 +7,7 @@ Gets the current value of the Ref synchronously (unsafe version).
 
 **When to use**
 
-Use this when you need immediate synchronous access and can guarantee that
+Use when you need immediate synchronous access and can guarantee that
 reading the `Ref` outside of `Effect` is safe.
 
 **Gotchas**
@@ -36,6 +36,6 @@ console.log(value) // 42
 declare const getUnsafe: <A>(self: Ref<A>) => A
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Ref.ts#L719)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Ref.ts#L841)
 
 Since v4.0.0

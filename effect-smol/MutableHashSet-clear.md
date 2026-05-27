@@ -6,6 +6,10 @@ Module: `MutableHashSet`<br />
 Removes all values from the MutableHashSet, mutating the set in place.
 The set becomes empty after this operation.
 
+**When to use**
+
+Use to empty a mutable set while keeping the same set instance.
+
 **Example** (Clearing all values)
 
 ```ts
@@ -33,6 +37,6 @@ console.log(MutableHashSet.size(set)) // 1
 declare const clear: <V>(self: MutableHashSet<V>) => MutableHashSet<V>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableHashSet.ts#L416)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableHashSet.ts#L480)
 
 Since v2.0.0

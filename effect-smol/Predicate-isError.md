@@ -7,7 +7,7 @@ Checks whether a value is an `Error`.
 
 **When to use**
 
-- You need to guard errors caught from unknown sources.
+Use when you need to guard errors caught from unknown sources.
 
 **Details**
 
@@ -34,6 +34,6 @@ console.log(Predicate.isError(data))
 declare const isError: (input: unknown) => input is Error
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L1245)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L1279)
 
 Since v2.0.0

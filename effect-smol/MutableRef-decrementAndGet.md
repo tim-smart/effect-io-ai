@@ -5,6 +5,10 @@ Module: `MutableRef`<br />
 
 Decrements a numeric MutableRef by 1 and returns the new value.
 
+**When to use**
+
+Use to decrement a numeric reference and immediately read the updated value.
+
 **Example** (Decrementing and reading refs)
 
 ```ts
@@ -35,6 +39,6 @@ while (MutableRef.decrementAndGet(attempts) >= 0) {
 declare const decrementAndGet: (self: MutableRef<number>) => number
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableRef.ts#L247)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableRef.ts#L269)
 
 Since v2.0.0

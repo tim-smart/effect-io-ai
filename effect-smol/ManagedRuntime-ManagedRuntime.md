@@ -6,11 +6,26 @@ Module: `ManagedRuntime`<br />
 A runtime built from a layer that can execute effects requiring that layer's
 services.
 
+**When to use**
+
+Use as the reusable runtime value returned by `make` when application entry
+points or integration code need to run many effects against the same
+layer-built services.
+
 **Details**
 
-The runtime builds and caches its service context, owns the scope for
-resources acquired by the layer, and should be disposed with `dispose` or
-`disposeEffect` when it is no longer needed.
+The runtime builds and caches its service context and owns the scope for
+resources acquired by the layer.
+
+**Gotchas**
+
+Dispose the runtime with `dispose` or `disposeEffect` when it is no longer
+needed.
+
+**See**
+
+- `make` for constructing a managed runtime from a layer
+- `Layer.build` for lower-level scoped layer construction
 
 **Signature**
 
@@ -29,6 +44,11 @@ export interface ManagedRuntime<in R, out ER> {
   /**
    * Executes the effect using the provided Scheduler or using the global
    * Scheduler if not provided
+   *
+   * **When to use**
+   *
+   * Use to fork an effect against this runtime's services and get the running
+   * fiber.
    */
   readonly runFork: <A, E>(
     self: Effect.Effect<A, E, R>,
@@ -40,7 +60,7 @@ export interface ManagedRuntime<in R, out ER> {
    *
    * **When to use**
    *
-   * This method is effectful and should only be invoked at the edges of your
+   * Use when invoking this effectful method at the edges of your
    * program.
    */
   readonly runSyncExit: <A, E>(effect: Effect.Effect<A, E, R>) => Exit.Exit<A, ER | E>
@@ -50,7 +70,7 @@ export interface ManagedRuntime<in R, out ER> {
    *
    * **When to use**
    *
-   * This method is effectful and should only be invoked at the edges of your
+   * Use when invoking this effectful method at the edges of your
    * program.
    */
   readonly runSync: <A, E>(effect: Effect.Effect<A, E, R>) => A
@@ -61,7 +81,7 @@ export interface ManagedRuntime<in R, out ER> {
    *
    * **When to use**
    *
-   * This method is effectful and should only be invoked at the edges of your
+   * Use when invoking this effectful method at the edges of your
    * program.
    */
   readonly runCallback: <A, E>(
@@ -80,7 +100,7 @@ export interface ManagedRuntime<in R, out ER> {
    *
    * **When to use**
    *
-   * This method is effectful and should only be used at the edges of your
+   * Use when invoking this effectful method at the edges of your
    * program.
    */
   readonly runPromise: <A, E>(effect: Effect.Effect<A, E, R>, options?: Effect.RunOptions) => Promise<A>
@@ -91,7 +111,7 @@ export interface ManagedRuntime<in R, out ER> {
    *
    * **When to use**
    *
-   * This method is effectful and should only be used at the edges of your
+   * Use when invoking this effectful method at the edges of your
    * program.
    */
   readonly runPromiseExit: <A, E>(
@@ -101,16 +121,24 @@ export interface ManagedRuntime<in R, out ER> {
 
   /**
    * Dispose of the resources associated with the runtime.
+   *
+   * **When to use**
+   *
+   * Use to release this runtime's layer resources from Promise-based code.
    */
   readonly dispose: () => Promise<void>
 
   /**
    * Dispose of the resources associated with the runtime.
+   *
+   * **When to use**
+   *
+   * Use to release this runtime's layer resources from an `Effect` workflow.
    */
   readonly disposeEffect: Effect.Effect<void, never, never>
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ManagedRuntime.ts#L98)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ManagedRuntime.ts#L142)
 
 Since v2.0.0

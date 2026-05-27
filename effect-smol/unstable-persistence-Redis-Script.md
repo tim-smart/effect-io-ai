@@ -37,6 +37,6 @@ export interface Script<
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Redis.ts#L124)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Redis.ts#L142)
 
 Since v4.0.0

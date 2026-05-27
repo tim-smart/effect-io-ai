@@ -3,12 +3,22 @@ Module: `FileSystem`<br />
 
 ## FileSystem.SeekMode
 
-Specifies the reference point for seeking within a file.
+Specifies the reference point for seeking within an open file.
+
+**When to use**
+
+Use with `File` handles when positioning the cursor before a read or write
+and the offset must be interpreted from either the start of the file or the
+current cursor.
 
 **Details**
 
-- `"start"` - Seek from the beginning of the file
-- `"current"` - Seek from the current position
+- `"start"` seeks from the beginning of the file.
+- `"current"` seeks from the current cursor position.
+
+**See**
+
+- `File` for the open file handle API whose `seek` method consumes this mode
 
 **Signature**
 
@@ -16,6 +26,6 @@ Specifies the reference point for seeking within a file.
 type SeekMode = "start" | "current"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FileSystem.ts#L1250)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FileSystem.ts#L1314)
 
 Since v4.0.0

@@ -12,6 +12,6 @@ file operations, directory operations, links, metadata, and file watching.
 declare const layer: Layer.Layer<FileSystem.FileSystem, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeFileSystem.ts#L662)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeFileSystem.ts#L675)
 
 Since v4.0.0

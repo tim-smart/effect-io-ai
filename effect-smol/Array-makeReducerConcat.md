@@ -15,6 +15,6 @@ Returns a `Reducer` that combines `Array` values by concatenation.
 declare const makeReducerConcat: <A>() => Reducer.Reducer<Array<A>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L4420)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L4889)
 
 Since v4.0.0

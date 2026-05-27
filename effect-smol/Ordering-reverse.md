@@ -6,6 +6,11 @@ Module: `Ordering`<br />
 Inverts the ordering of the input Ordering.
 This is useful for creating descending sort orders from ascending ones.
 
+**When to use**
+
+Use to flip an ordering result when reversing sort direction or comparison
+priority.
+
 **Example** (Reversing comparison order)
 
 ```ts
@@ -40,6 +45,6 @@ const createSorter = (ascending: boolean) => (a: number, b: number) => {
 declare const reverse: (o: Ordering) => Ordering
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Ordering.ts#L111)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Ordering.ts#L121)
 
 Since v2.0.0

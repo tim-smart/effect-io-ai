@@ -11,6 +11,6 @@ Re-exports all named exports from the "./NodeSink.ts" module as `NodeSink`.
 export * as NodeSink from "./NodeSink.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L128)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L40)
 
 Since v4.0.0

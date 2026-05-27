@@ -11,6 +11,6 @@ Type-level identifier used to brand `WorkerError` values.
 type TypeId = typeof TypeId
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/WorkerError.ts#L34)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/WorkerError.ts#L50)
 
 Since v4.0.0

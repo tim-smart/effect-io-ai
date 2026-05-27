@@ -5,6 +5,10 @@ Module: `Random`<br />
 
 Generates a random number between `min` (inclusive) and `max` (exclusive).
 
+**When to use**
+
+Use to generate a pseudo-random floating-point number within a numeric range.
+
 **Example** (Generating a bounded random number)
 
 ```ts
@@ -22,6 +26,6 @@ const program = Effect.gen(function*() {
 declare const nextBetween: (min: number, max: number) => Effect.Effect<number>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Random.ts#L150)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Random.ts#L185)
 
 Since v4.0.0

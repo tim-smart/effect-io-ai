@@ -7,7 +7,7 @@ An `Order` instance for `Date` objects that compares them chronologically by the
 
 **When to use**
 
-- When comparing dates for sorting or searching
+Use when when comparing dates for sorting or searching
 - As a base for creating orders on types containing dates
 - When implementing time-based comparisons
 
@@ -33,7 +33,7 @@ console.log(Order.Date(date1, date1)) // 0
 
 **See**
 
-- `mapInput` - Use this order to compare objects by a date property
+- `mapInput` to compare objects by a date property
 
 **Signature**
 
@@ -41,6 +41,6 @@ console.log(Order.Date(date1, date1)) // 0
 declare const Date: Order<Date>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Order.ts#L560)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Order.ts#L589)
 
 Since v2.0.0

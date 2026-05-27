@@ -7,7 +7,7 @@ Decodes a `FormData` object into a nested tree structure using bracket-path nota
 
 **When to use**
 
-- Parsing `FormData` from HTTP requests into structured objects.
+Use to parse `FormData` from HTTP requests into structured objects.
 
 **Details**
 
@@ -26,9 +26,9 @@ const decode = SchemaGetter.decodeFormData()
 
 **See**
 
-- `encodeFormData` - inverse operation
-- `makeTreeRecord` - the underlying bracket-path parser
-- `decodeURLSearchParams` - similar for URLSearchParams
+- `encodeFormData` for the inverse operation
+- `makeTreeRecord` for the underlying bracket-path parser
+- `decodeURLSearchParams` for the URLSearchParams variant
 
 **Signature**
 

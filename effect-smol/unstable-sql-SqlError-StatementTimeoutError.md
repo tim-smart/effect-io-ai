@@ -11,6 +11,6 @@ SQL error reason for a statement or query timeout; marked retryable.
 declare class StatementTimeoutError
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SqlError.ts#L290)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SqlError.ts#L306)
 
 Since v4.0.0

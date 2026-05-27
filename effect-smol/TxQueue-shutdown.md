@@ -37,6 +37,6 @@ const program = Effect.gen(function*() {
 declare const shutdown: <A, E>(self: TxEnqueue<A, E>) => Effect.Effect<boolean>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxQueue.ts#L1344)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxQueue.ts#L1385)
 
 Since v2.0.0

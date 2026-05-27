@@ -7,7 +7,7 @@ Creates a getter that always fails with a `Forbidden` issue.
 
 **When to use**
 
-- A field or direction (encode/decode) should be disallowed entirely.
+Use when a field or direction (encode/decode) should be disallowed entirely.
 - You want a clear "forbidden" error message in schema validation output.
 
 **Details**
@@ -27,7 +27,7 @@ const noEncode = SchemaGetter.forbidden<string, number>(
 
 **See**
 
-- `fail` - fail with a custom issue type
+- `fail` to fail with a custom issue type
 
 **Signature**
 

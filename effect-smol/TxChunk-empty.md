@@ -37,6 +37,6 @@ const program = Effect.gen(function*() {
 declare const empty: <A = never>() => Effect.Effect<TxChunk<A>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxChunk.ts#L154)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxChunk.ts#L187)
 
 Since v4.0.0

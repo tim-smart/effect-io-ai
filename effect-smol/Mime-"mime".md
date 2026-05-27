@@ -11,6 +11,6 @@ Re-exports all named exports from the "mime" module.
 export * from "mime"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/Mime.ts#L12)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/Mime.ts#L19)
 
 Since v4.0.0

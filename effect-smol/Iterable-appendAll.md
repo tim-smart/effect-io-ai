@@ -5,6 +5,20 @@ Module: `Iterable`<br />
 
 Concatenates two iterables, combining their elements.
 
+**When to use**
+
+Use to lazily concatenate two iterables while preserving order, yielding all
+elements from `self` before `that`.
+
+**Details**
+
+The result is lazy. The iterator for `that` is not created or read until
+`self` is exhausted.
+
+**Gotchas**
+
+If `self` is infinite or never completes, `that` is never reached.
+
 **Example** (Concatenating iterables)
 
 ```ts
@@ -28,12 +42,17 @@ const result = Iterable.take(Iterable.appendAll(finite, infinite), 5)
 console.log(Array.from(result)) // [0, -1, -2, 1, 2]
 ```
 
+**See**
+
+- `append` for appending one value instead of another iterable
+- `prependAll` for yielding another iterable before `self`
+
 **Signature**
 
 ```ts
 declare const appendAll: { <B>(that: Iterable<B>): <A>(self: Iterable<A>) => Iterable<A | B>; <A, B>(self: Iterable<A>, that: Iterable<B>): Iterable<A | B>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Iterable.ts#L317)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Iterable.ts#L389)
 
 Since v2.0.0

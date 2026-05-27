@@ -11,6 +11,6 @@ Re-exports all named exports from the "./Rpc.ts" module as `Rpc`.
 export * as Rpc from "./Rpc.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L40)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L10)
 
 Since v4.0.0

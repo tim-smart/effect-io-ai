@@ -11,6 +11,6 @@ Context service containing the OpenTelemetry `LoggerProvider` used to emit Effec
 declare class OtelLoggerProvider
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Logger.ts#L48)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Logger.ts#L59)
 
 Since v4.0.0

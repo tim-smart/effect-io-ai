@@ -7,7 +7,7 @@ Lifts a function that may throw into one that returns an `Option`.
 
 **When to use**
 
-- Wrapping exception-throwing APIs (e.g. `JSON.parse`) for safe usage
+Use to wrap exception-throwing APIs (e.g. `JSON.parse`) for safe usage
 
 **Details**
 
@@ -38,6 +38,6 @@ console.log(parse(""))
 declare const liftThrowable: <A extends ReadonlyArray<unknown>, B>(f: (...a: A) => B) => (...a: A) => Option<B>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L1070)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L1097)
 
 Since v2.0.0

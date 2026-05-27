@@ -5,6 +5,11 @@ Module: `Cron`<br />
 
 Represents a cron schedule with time constraints and timezone information.
 
+**When to use**
+
+Use to represent a recurring calendar schedule that can be matched against
+dates or used to compute scheduled occurrences.
+
 **Details**
 
 A `Cron` instance defines when a scheduled task should run, supporting
@@ -62,6 +67,13 @@ const matches = Cron.match(weekdayMorning, new Date("2023-06-05T09:00:00"))
 console.log(matches) // true if it's 9 AM on a weekday
 ```
 
+**See**
+
+- `make` for creating a schedule from explicit field constraints
+- `parse` for creating a schedule from a cron expression string
+- `match` for testing a date against a schedule
+- `next` for finding the next scheduled occurrence
+
 **Signature**
 
 ```ts
@@ -113,6 +125,6 @@ export interface Cron extends Pipeable, Equal.Equal, Inspectable {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cron.ts#L129)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cron.ts#L139)
 
 Since v2.0.0

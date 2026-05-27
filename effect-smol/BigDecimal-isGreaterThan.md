@@ -5,6 +5,10 @@ Module: `BigDecimal`<br />
 
 Returns `true` if the first argument is greater than the second, otherwise `false`.
 
+**When to use**
+
+Use to test whether one `BigDecimal` is strictly greater than another.
+
 **Example** (Checking greater-than comparisons)
 
 ```ts
@@ -31,6 +35,6 @@ assert.deepStrictEqual(
 declare const isGreaterThan: { (that: BigDecimal): (self: BigDecimal) => boolean; (self: BigDecimal, that: BigDecimal): boolean; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigDecimal.ts#L715)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigDecimal.ts#L847)
 
 Since v4.0.0

@@ -3,7 +3,15 @@ Module: `Boolean`<br />
 
 ## Boolean.and
 
-Combines two boolean using AND: `self && that`.
+Combines two booleans using logical AND: `self && that`.
+
+**When to use**
+
+Use to require both boolean operands to be `true`.
+
+**Details**
+
+Supports both data-first and data-last forms.
 
 **Example** (Combining booleans with AND)
 
@@ -23,6 +31,6 @@ assert.deepStrictEqual(Boolean.and(false, false), false)
 declare const and: { (that: boolean): (self: boolean) => boolean; (self: boolean, that: boolean): boolean; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Boolean.ts#L163)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Boolean.ts#L254)
 
 Since v2.0.0

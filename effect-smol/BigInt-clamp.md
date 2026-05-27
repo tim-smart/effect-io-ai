@@ -5,6 +5,10 @@ Module: `BigInt`<br />
 
 Restricts the given `bigint` to be within the range specified by the `minimum` and `maximum` values.
 
+**When to use**
+
+Use to force a `bigint` into an inclusive range.
+
 **Details**
 
 - If the `bigint` is less than the `minimum` value, the function returns the `minimum` value.
@@ -24,12 +28,16 @@ assert.equal(clamp(0n), 1n)
 assert.equal(clamp(6n), 5n)
 ```
 
+**See**
+
+- `between` for checking whether a `bigint` is already inside a range
+
 **Signature**
 
 ```ts
 declare const clamp: { (options: { minimum: bigint; maximum: bigint; }): (self: bigint) => bigint; (self: bigint, options: { minimum: bigint; maximum: bigint; }): bigint; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigInt.ts#L394)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigInt.ts#L549)
 
 Since v2.0.0

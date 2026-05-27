@@ -5,6 +5,10 @@ Module: `BigDecimal`<br />
 
 Restricts the given `BigDecimal` to be within the range specified by the `minimum` and `maximum` values.
 
+**When to use**
+
+Use to force a `BigDecimal` into an inclusive range.
+
 **Details**
 
 If the `BigDecimal` is less than the `minimum` value, the function returns
@@ -36,12 +40,16 @@ assert.deepStrictEqual(
 )
 ```
 
+**See**
+
+- `between` for checking whether a `BigDecimal` is already inside a range
+
 **Signature**
 
 ```ts
 declare const clamp: { (options: { minimum: BigDecimal; maximum: BigDecimal; }): (self: BigDecimal) => BigDecimal; (self: BigDecimal, options: { minimum: BigDecimal; maximum: BigDecimal; }): BigDecimal; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigDecimal.ts#L821)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigDecimal.ts#L969)
 
 Since v2.0.0

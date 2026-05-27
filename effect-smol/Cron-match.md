@@ -5,6 +5,10 @@ Module: `Cron`<br />
 
 Returns `true` when a date/time matches a `Cron` schedule.
 
+**When to use**
+
+Use to test whether a specific date/time satisfies a cron schedule.
+
 **Details**
 
 Seconds, minutes, hours, months, and the optional timezone are checked
@@ -30,12 +34,17 @@ const matches3 = Cron.match(cron, new Date("2021-01-07T04:00:00Z"))
 console.log(matches3) // false - wrong day
 ```
 
+**See**
+
+- `next` for finding the next matching date/time
+- `prev` for finding the previous matching date/time
+
 **Signature**
 
 ```ts
 declare const match: (cron: Cron, date: DateTime.DateTime.Input) => boolean
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cron.ts#L644)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cron.ts#L696)
 
 Since v2.0.0

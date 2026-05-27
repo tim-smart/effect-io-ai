@@ -5,6 +5,10 @@ Module: `MutableHashMap`<br />
 
 Creates a MutableHashMap from a variable number of key-value pairs.
 
+**When to use**
+
+Use to create a mutable hash map from explicit entries known at the call site.
+
 **Example** (Creating a map from entries)
 
 ```ts
@@ -20,12 +24,17 @@ console.log(MutableHashMap.get(map, "key1")) // Some(42)
 console.log(MutableHashMap.size(map)) // 3
 ```
 
+**See**
+
+- `empty` for creating an empty map
+- `fromIterable` for creating a map from an iterable of entries
+
 **Signature**
 
 ```ts
 declare const make: <Entries extends Array<readonly [any, any]>>(...entries: Entries) => MutableHashMap<Entries[number] extends readonly [infer K, any] ? K : never, Entries[number] extends readonly [any, infer V] ? V : never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableHashMap.ts#L162)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableHashMap.ts#L218)
 
 Since v2.0.0

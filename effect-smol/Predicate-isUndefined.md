@@ -7,7 +7,7 @@ Checks whether a value is `undefined`.
 
 **When to use**
 
-- You need a guard for optional values.
+Use when you need a guard for optional values.
 
 **Details**
 
@@ -35,6 +35,6 @@ console.log(Predicate.isUndefined(data))
 declare const isUndefined: (input: unknown) => input is undefined
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L807)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L832)
 
 Since v2.0.0

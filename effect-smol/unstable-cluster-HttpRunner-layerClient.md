@@ -12,6 +12,6 @@ client protocol and storage services.
 declare const layerClient: Layer.Layer<Sharding.Sharding | Runners.Runners, never, MessageStorage | RunnerStorage | ShardingConfig.ShardingConfig | Runners.RpcClientProtocol | RunnerHealth>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpRunner.ts#L202)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpRunner.ts#L214)
 
 Since v4.0.0

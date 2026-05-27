@@ -7,7 +7,7 @@ Determines if two types are exactly equal at the type level.
 
 **When to use**
 
-Use in conditional types or type-level tests to assert type equality.
+Use to assert type equality in conditional types or type-level tests.
 
 **Details**
 

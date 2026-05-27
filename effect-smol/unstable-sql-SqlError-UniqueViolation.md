@@ -12,6 +12,6 @@ constraint identifier; not marked retryable.
 declare class UniqueViolation
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SqlError.ts#L154)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SqlError.ts#L170)
 
 Since v4.0.0

@@ -11,6 +11,6 @@ Re-exports all named exports from the "./Brand.ts" module as `Brand`.
 export * as Brand from "./Brand.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L161)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L57)
 
 Since v2.0.0

@@ -8,7 +8,7 @@ Decodes `T | null` into `Option<T>` and encodes `Option<T>` back to
 
 **When to use**
 
-- Converting nullable API fields to `Option`.
+Use to convert nullable API fields to `Option`.
 
 **Details**
 

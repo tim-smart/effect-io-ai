@@ -11,6 +11,6 @@ Re-exports all named exports from the "./Redis.ts" module as `Redis`.
 export * as Redis from "./Redis.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L187)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L40)
 
 Since v4.0.0

@@ -11,6 +11,6 @@ Extracts the Unix timestamp in milliseconds from a snowflake id.
 declare const timestamp: (snowflake: Snowflake) => number
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Snowflake.ts#L171)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Snowflake.ts#L184)
 
 Since v4.0.0

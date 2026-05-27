@@ -5,14 +5,18 @@ Module: `Config`<br />
 
 Creates a config for a finite number (rejects `NaN` and `Infinity`).
 
+**When to use**
+
+Use to read a numeric config value that must be finite.
+
 **Details**
 
 Shortcut for `Config.schema(Schema.Finite, name)`.
 
 **See**
 
-- `number` – allows `NaN` and `Infinity`
-- `int` – only integers
+- `number` for accepting `NaN` and `Infinity`
+- `int` for accepting only integers
 
 **Signature**
 
@@ -20,6 +24,6 @@ Shortcut for `Config.schema(Schema.Finite, name)`.
 declare const finite: (name?: string) => Config<number>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Config.ts#L992)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Config.ts#L1017)
 
 Since v4.0.0

@@ -7,7 +7,7 @@ Parses a JSON string into a value.
 
 **When to use**
 
-- An encoded value is a JSON string that needs to be parsed during decoding.
+Use when an encoded value is a JSON string that needs to be parsed during decoding.
 
 **Details**
 
@@ -27,7 +27,7 @@ const parse = SchemaGetter.parseJson<string>()
 
 **See**
 
-- `stringifyJson` - inverse operation
+- `stringifyJson` for the inverse operation
 
 **Signature**
 

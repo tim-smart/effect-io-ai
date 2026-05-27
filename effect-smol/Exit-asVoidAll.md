@@ -7,7 +7,7 @@ Combines multiple Exit values into a single `Exit<void, E>`.
 
 **When to use**
 
-- Use to validate that all exits in a collection succeeded
+Use to validate that all exits in a collection succeeded
 
 **Details**
 
@@ -39,6 +39,6 @@ console.log(Exit.isFailure(Exit.asVoidAll(mixed))) // true
 declare const asVoidAll: <I extends Iterable<Exit<any, any>>>(exits: I) => Exit<void, I extends Iterable<Exit<infer _A, infer _E>> ? _E : never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Exit.ts#L1003)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Exit.ts#L1044)
 
 Since v4.0.0

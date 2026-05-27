@@ -11,6 +11,6 @@ Extracts the services provided by a middleware identifier.
 type Provides<A> = A extends { readonly [TypeId]: { readonly provides: infer P } } ? P : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiMiddleware.ts#L197)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiMiddleware.ts#L221)
 
 Since v4.0.0

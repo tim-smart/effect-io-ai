@@ -5,6 +5,10 @@ Module: `TxRef`<br />
 
 Updates the value of the `TxRef` using the provided function.
 
+**When to use**
+
+Use to transform a transactional reference when no result value is needed.
+
 **Example** (Updating transactional references)
 
 ```ts
@@ -28,6 +32,6 @@ const program = Effect.gen(function*() {
 declare const update: { <A>(f: (current: NoInfer<A>) => A): (self: TxRef<A>) => Effect.Effect<void>; <A>(self: TxRef<A>, f: (current: A) => A): Effect.Effect<void>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxRef.ts#L191)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxRef.ts#L262)
 
 Since v2.0.0

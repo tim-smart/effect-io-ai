@@ -11,6 +11,6 @@ Re-exports all named exports from the "./BrowserRuntime.ts" module as `BrowserRu
 export * as BrowserRuntime from "./BrowserRuntime.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/index.ts#L110)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/index.ts#L30)
 
 Since v4.0.0

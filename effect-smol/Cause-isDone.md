@@ -20,6 +20,6 @@ console.log(Cause.isDone("not done"))   // false
 declare const isDone: (u: unknown) => u is Done<any>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L1250)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L1359)
 
 Since v4.0.0

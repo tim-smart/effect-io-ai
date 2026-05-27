@@ -29,7 +29,7 @@
     "since": "4.0.0",
     "category": null,
     "signature": "export * as NodeChildProcessSpawner from \"./NodeChildProcessSpawner.ts\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L17"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L15"
   },
   {
     "_tag": "Export",
@@ -45,7 +45,7 @@
     "since": "4.0.0",
     "category": null,
     "signature": "export * as NodeClusterHttp from \"./NodeClusterHttp.ts\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L55"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L20"
   },
   {
     "_tag": "Export",
@@ -61,7 +61,7 @@
     "since": "4.0.0",
     "category": null,
     "signature": "export * as NodeClusterSocket from \"./NodeClusterSocket.ts\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L89"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L25"
   },
   {
     "_tag": "Export",
@@ -77,7 +77,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "export * as NodeCrypto from \"./NodeCrypto.ts\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L96"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L30"
   },
   {
     "_tag": "Export",
@@ -93,7 +93,7 @@
     "since": "4.0.0",
     "category": null,
     "signature": "export * as NodeFileSystem from \"./NodeFileSystem.ts\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L118"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L35"
   },
   {
     "_tag": "Export",
@@ -109,7 +109,7 @@
     "since": "4.0.0",
     "category": null,
     "signature": "export * as NodeHttpClient from \"./NodeHttpClient.ts\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L149"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L40"
   },
   {
     "_tag": "Export",
@@ -125,7 +125,7 @@
     "since": "4.0.0",
     "category": null,
     "signature": "export * as NodeHttpIncomingMessage from \"./NodeHttpIncomingMessage.ts\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L166"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L45"
   },
   {
     "_tag": "Export",
@@ -141,7 +141,7 @@
     "since": "4.0.0",
     "category": null,
     "signature": "export * as NodeHttpPlatform from \"./NodeHttpPlatform.ts\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L192"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L50"
   },
   {
     "_tag": "Export",
@@ -157,7 +157,7 @@
     "since": "4.0.0",
     "category": null,
     "signature": "export * as NodeHttpServer from \"./NodeHttpServer.ts\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L226"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L55"
   },
   {
     "_tag": "Export",
@@ -173,7 +173,7 @@
     "since": "4.0.0",
     "category": null,
     "signature": "export * as NodeHttpServerRequest from \"./NodeHttpServerRequest.ts\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L250"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L60"
   },
   {
     "_tag": "Export",
@@ -189,7 +189,7 @@
     "since": "4.0.0",
     "category": null,
     "signature": "export * as NodeMultipart from \"./NodeMultipart.ts\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L272"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L65"
   },
   {
     "_tag": "Export",
@@ -205,7 +205,7 @@
     "since": "4.0.0",
     "category": null,
     "signature": "export * as NodePath from \"./NodePath.ts\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L291"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L70"
   },
   {
     "_tag": "Export",
@@ -221,7 +221,7 @@
     "since": "4.0.0",
     "category": null,
     "signature": "export * as NodeRedis from \"./NodeRedis.ts\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L315"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L75"
   },
   {
     "_tag": "Export",
@@ -237,7 +237,7 @@
     "since": "4.0.0",
     "category": null,
     "signature": "export * as NodeRuntime from \"./NodeRuntime.ts\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L334"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L80"
   },
   {
     "_tag": "Export",
@@ -253,7 +253,7 @@
     "since": "4.0.0",
     "category": null,
     "signature": "export * as NodeServices from \"./NodeServices.ts\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L356"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L85"
   },
   {
     "_tag": "Export",
@@ -269,7 +269,7 @@
     "since": "4.0.0",
     "category": null,
     "signature": "export * as NodeSink from \"./NodeSink.ts\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L361"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L90"
   },
   {
     "_tag": "Export",
@@ -285,7 +285,7 @@
     "since": "4.0.0",
     "category": null,
     "signature": "export * as NodeSocket from \"./NodeSocket.ts\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L383"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L95"
   },
   {
     "_tag": "Export",
@@ -301,7 +301,7 @@
     "since": "4.0.0",
     "category": null,
     "signature": "export * as NodeSocketServer from \"./NodeSocketServer.ts\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L388"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L100"
   },
   {
     "_tag": "Export",
@@ -317,7 +317,7 @@
     "since": "4.0.0",
     "category": null,
     "signature": "export * as NodeStdio from \"./NodeStdio.ts\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L409"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L105"
   },
   {
     "_tag": "Export",
@@ -333,7 +333,7 @@
     "since": "4.0.0",
     "category": null,
     "signature": "export * as NodeStream from \"./NodeStream.ts\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L414"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L110"
   },
   {
     "_tag": "Export",
@@ -349,7 +349,7 @@
     "since": "4.0.0",
     "category": null,
     "signature": "export * as NodeTerminal from \"./NodeTerminal.ts\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L429"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L115"
   },
   {
     "_tag": "Export",
@@ -365,7 +365,7 @@
     "since": "4.0.0",
     "category": null,
     "signature": "export * as NodeWorker from \"./NodeWorker.ts\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L452"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L120"
   },
   {
     "_tag": "Export",
@@ -381,7 +381,7 @@
     "since": "4.0.0",
     "category": null,
     "signature": "export * as NodeWorkerRunner from \"./NodeWorkerRunner.ts\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L475"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L125"
   },
   {
     "_tag": "Export",
@@ -397,7 +397,7 @@
     "since": "4.0.0",
     "category": null,
     "signature": "export * as Undici from \"./Undici.ts\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L480"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L130"
   },
   {
     "_tag": "Export",
@@ -413,7 +413,7 @@
     "since": "4.0.0",
     "category": "re-exports",
     "signature": "export * from \"mime\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/Mime.ts#L12"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/Mime.ts#L19"
   },
   {
     "_tag": "Export",
@@ -573,7 +573,7 @@
     "since": "1.0.0",
     "category": "layers",
     "signature": "declare const layer: Layer.Layer<Crypto.Crypto, never, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeCrypto.ts#L16"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeCrypto.ts#L24"
   },
   {
     "_tag": "Constant",
@@ -589,7 +589,7 @@
     "since": "4.0.0",
     "category": "layers",
     "signature": "declare const layer: Layer.Layer<FileSystem, never, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeFileSystem.ts#L31"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeFileSystem.ts#L39"
   },
   {
     "_tag": "Class",
@@ -605,7 +605,7 @@
     "since": "4.0.0",
     "category": "Dispatcher",
     "signature": "declare class Dispatcher",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L98"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L107"
   },
   {
     "_tag": "Class",
@@ -621,7 +621,7 @@
     "since": "4.0.0",
     "category": "HttpAgent",
     "signature": "declare class HttpAgent",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L394"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L403"
   },
   {
     "_tag": "Constant",
@@ -637,7 +637,7 @@
     "since": "4.0.0",
     "category": "Dispatcher",
     "signature": "declare const makeDispatcher: Effect.Effect<Undici.Dispatcher, never, Scope.Scope>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L109"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L118"
   },
   {
     "_tag": "Constant",
@@ -653,7 +653,7 @@
     "since": "4.0.0",
     "category": "Dispatcher",
     "signature": "declare const layerDispatcher: Layer.Layer<Dispatcher, never, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L120"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L129"
   },
   {
     "_tag": "Constant",
@@ -669,7 +669,7 @@
     "since": "4.0.0",
     "category": "Dispatcher",
     "signature": "declare const dispatcherLayerGlobal: Layer.Layer<Dispatcher, never, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L129"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L138"
   },
   {
     "_tag": "Constant",
@@ -685,7 +685,7 @@
     "since": "4.0.0",
     "category": "undici",
     "signature": "declare const UndiciOptions: Context.Reference<Partial<Undici.Dispatcher.RequestOptions<null>>>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L138"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L147"
   },
   {
     "_tag": "Constant",
@@ -701,7 +701,7 @@
     "since": "4.0.0",
     "category": "undici",
     "signature": "declare const makeUndici: Effect.Effect<Client.HttpClient, never, Dispatcher>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L151"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L160"
   },
   {
     "_tag": "Constant",
@@ -717,7 +717,7 @@
     "since": "4.0.0",
     "category": "Undici",
     "signature": "declare const layerUndiciNoDispatcher: Layer.Layer<Client.HttpClient, never, Dispatcher>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L368"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L377"
   },
   {
     "_tag": "Constant",
@@ -733,7 +733,7 @@
     "since": "4.0.0",
     "category": "Undici",
     "signature": "declare const layerUndici: Layer.Layer<Client.HttpClient, never, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L381"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L390"
   },
   {
     "_tag": "Constant",
@@ -749,7 +749,7 @@
     "since": "4.0.0",
     "category": "HttpAgent",
     "signature": "declare const layerAgentOptions: (options?: Https.AgentOptions | undefined) => Layer.Layer<HttpAgent>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L426"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L435"
   },
   {
     "_tag": "Constant",
@@ -765,7 +765,7 @@
     "since": "4.0.0",
     "category": "HttpAgent",
     "signature": "declare const layerAgent: Layer.Layer<HttpAgent, never, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L437"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L446"
   },
   {
     "_tag": "Constant",
@@ -781,7 +781,7 @@
     "since": "4.0.0",
     "category": "node:http",
     "signature": "declare const makeNodeHttp: Effect.Effect<Client.HttpClient, never, HttpAgent>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L447"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L456"
   },
   {
     "_tag": "Constant",
@@ -797,7 +797,7 @@
     "since": "4.0.0",
     "category": "node:http",
     "signature": "declare const layerNodeHttpNoAgent: Layer.Layer<Client.HttpClient, never, HttpAgent>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L660"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L669"
   },
   {
     "_tag": "Constant",
@@ -813,7 +813,7 @@
     "since": "4.0.0",
     "category": "node:http",
     "signature": "declare const layerNodeHttp: Layer.Layer<Client.HttpClient, never, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L673"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L682"
   },
   {
     "_tag": "Function",
@@ -829,7 +829,7 @@
     "since": "4.0.0",
     "category": "HttpAgent",
     "signature": "declare const makeAgent: (options?: Https.AgentOptions) => Effect.Effect<HttpAgent[\"Service\"], never, Scope.Scope>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L406"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L415"
   },
   {
     "_tag": "Export",
@@ -845,7 +845,7 @@
     "since": "4.0.0",
     "category": "Fetch",
     "signature": "declare const Fetch: Context.Reference<{ (input: RequestInfo | URL, init?: RequestInit): Promise<Response>; (input: string | URL | Request, init?: RequestInit): Promise<Response>; }>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L70"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L79"
   },
   {
     "_tag": "Export",
@@ -861,7 +861,7 @@
     "since": "4.0.0",
     "category": "Fetch",
     "signature": "declare const layerFetch: Layer.Layer<Client.HttpClient, never, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L77"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L86"
   },
   {
     "_tag": "Export",
@@ -877,7 +877,7 @@
     "since": "4.0.0",
     "category": "Fetch",
     "signature": "declare const RequestInit: typeof RequestInit",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L84"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L93"
   },
   {
     "_tag": "Class",
@@ -893,7 +893,7 @@
     "since": "4.0.0",
     "category": "constructors",
     "signature": "declare class NodeHttpIncomingMessage<E> { constructor(\n    source: Http.IncomingMessage,\n    onError: (error: unknown) => E,\n    remoteAddressOverride?: Option.Option<string>\n  ) }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpIncomingMessage.ts#L35"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpIncomingMessage.ts#L48"
   },
   {
     "_tag": "Constant",
@@ -1101,7 +1101,7 @@
     "since": "4.0.0",
     "category": "constructors",
     "signature": "declare const stream: (source: Readable, headers: IncomingHttpHeaders) => Stream.Stream<Multipart.Part, Multipart.MultipartError>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeMultipart.ts#L43"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeMultipart.ts#L58"
   },
   {
     "_tag": "Function",
@@ -1117,7 +1117,7 @@
     "since": "4.0.0",
     "category": "constructors",
     "signature": "declare const persisted: (source: Readable, headers: IncomingHttpHeaders) => Effect.Effect<Multipart.Persisted, Multipart.MultipartError, Scope.Scope | FileSystem.FileSystem | Path.Path>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeMultipart.ts#L69"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeMultipart.ts#L84"
   },
   {
     "_tag": "Function",
@@ -1133,7 +1133,7 @@
     "since": "4.0.0",
     "category": "converting",
     "signature": "declare const fileToReadable: (file: Multipart.File) => Readable",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeMultipart.ts#L90"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeMultipart.ts#L105"
   },
   {
     "_tag": "Constant",
@@ -1149,7 +1149,7 @@
     "since": "4.0.0",
     "category": "layers",
     "signature": "declare const layer: Layer.Layer<Path, never, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodePath.ts#L29"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodePath.ts#L42"
   },
   {
     "_tag": "Constant",
@@ -1165,7 +1165,7 @@
     "since": "4.0.0",
     "category": "layers",
     "signature": "declare const layerPosix: Layer.Layer<Path, never, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodePath.ts#L38"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodePath.ts#L51"
   },
   {
     "_tag": "Constant",
@@ -1181,7 +1181,7 @@
     "since": "4.0.0",
     "category": "layers",
     "signature": "declare const layerWin32: Layer.Layer<Path, never, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodePath.ts#L47"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodePath.ts#L60"
   },
   {
     "_tag": "Class",
@@ -1197,7 +1197,7 @@
     "since": "4.0.0",
     "category": "services",
     "signature": "declare class NodeRedis",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeRedis.ts#L40"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeRedis.ts#L58"
   },
   {
     "_tag": "Function",
@@ -1213,7 +1213,7 @@
     "since": "4.0.0",
     "category": "layers",
     "signature": "declare const layer: (options?: IoRedis.RedisOptions | undefined) => Layer.Layer<Redis.Redis | NodeRedis>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeRedis.ts#L83"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeRedis.ts#L101"
   },
   {
     "_tag": "Function",
@@ -1229,7 +1229,7 @@
     "since": "4.0.0",
     "category": "layers",
     "signature": "declare const layerConfig: (options: Config.Wrap<IoRedis.RedisOptions>) => Layer.Layer<Redis.Redis | NodeRedis, Config.ConfigError>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeRedis.ts#L94"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeRedis.ts#L112"
   },
   {
     "_tag": "Constant",
@@ -1239,13 +1239,13 @@
     },
     "project": "@effect/platform-node",
     "name": "runMain",
-    "description": "Helps you run a main effect with built-in error handling, logging, and signal management.\n\n**When to use**\n\nUse this function to run an Effect as your application's main program, especially\nwhen you need structured error handling, log management, interrupt support,\nor advanced teardown capabilities.\n\n**Details**\n\nThis function launches an Effect as the main entry point, setting exit codes\nbased on success or failure, handling interrupts (e.g., Ctrl+C), and optionally\nlogging errors. By default, it logs errors and uses a \"pretty\" format, but both\nbehaviors can be turned off. You can also provide custom teardown logic to\nfinalize resources or produce different exit codes.\n\nThe optional configuration object can include:\n- `disableErrorReporting`: Turn off automatic error logging.\n- `teardown`: Provide custom finalization logic.",
+    "description": "Helps you run a main effect with built-in error handling, logging, and signal management.\n\n**When to use**\n\nUse to run an Effect as your application's main program, especially\nwhen you need structured error handling, log management, interrupt support,\nor advanced teardown capabilities.\n\n**Details**\n\nThis function launches an Effect as the main entry point, setting exit codes\nbased on success or failure, handling interrupts (e.g., Ctrl+C), and optionally\nlogging errors. By default, it logs errors and uses a \"pretty\" format, but both\nbehaviors can be turned off. You can also provide custom teardown logic to\nfinalize resources or produce different exit codes.\n\nThe optional configuration object can include:\n- `disableErrorReporting`: Turn off automatic error logging.\n- `teardown`: Provide custom finalization logic.",
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
     "category": "running",
     "signature": "declare const runMain: { (options?: { readonly disableErrorReporting?: boolean | undefined; readonly teardown?: Runtime.Teardown | undefined; }): <E, A>(effect: Effect<A, E>) => void; <E, A>(effect: Effect<A, E>, options?: { readonly disableErrorReporting?: boolean | undefined; readonly teardown?: Runtime.Teardown | undefined; }): void; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeRuntime.ts#L46"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeRuntime.ts#L60"
   },
   {
     "_tag": "Constant",
@@ -1261,7 +1261,7 @@
     "since": "4.0.0",
     "category": "layers",
     "signature": "declare const layer: Layer.Layer<NodeServices, never, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeServices.ts#L51"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeServices.ts#L66"
   },
   {
     "_tag": "TypeAlias",
@@ -1277,7 +1277,7 @@
     "since": "4.0.0",
     "category": "models",
     "signature": "type NodeServices = ChildProcessSpawner | Crypto | FileSystem | Path | Stdio | Terminal",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeServices.ts#L42"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeServices.ts#L57"
   },
   {
     "_tag": "Export",
@@ -1309,7 +1309,7 @@
     "since": "4.0.0",
     "category": "layers",
     "signature": "declare const layerWebSocketConstructor: Layer.Layer<Socket.WebSocketConstructor, never, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeSocket.ts#L40"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeSocket.ts#L55"
   },
   {
     "_tag": "Constant",
@@ -1325,7 +1325,7 @@
     "since": "4.0.0",
     "category": "layers",
     "signature": "declare const layerWebSocketConstructorWS: Layer.Layer<Socket.WebSocketConstructor, never, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeSocket.ts#L56"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeSocket.ts#L71"
   },
   {
     "_tag": "Constant",
@@ -1341,7 +1341,7 @@
     "since": "4.0.0",
     "category": "layers",
     "signature": "declare const layerWebSocket: (url: string | Effect.Effect<string>, options?: { readonly closeCodeIsError?: ((code: number) => boolean) | undefined; readonly openTimeout?: Duration.Input | undefined; readonly protocols?: string | Array<string> | undefined; } | undefined) => Layer.Layer<Socket.Socket, never, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeSocket.ts#L70"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeSocket.ts#L85"
   },
   {
     "_tag": "Export",
@@ -1357,7 +1357,7 @@
     "since": "4.0.0",
     "category": null,
     "signature": "export * from \"@effect/platform-node-shared/NodeSocket\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeSocket.ts#L31"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeSocket.ts#L46"
   },
   {
     "_tag": "Export",
@@ -1389,7 +1389,7 @@
     "since": "4.0.0",
     "category": "layers",
     "signature": "declare const layer: Layer.Layer<Stdio, never, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeStdio.ts#L31"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeStdio.ts#L39"
   },
   {
     "_tag": "Export",
@@ -1421,7 +1421,7 @@
     "since": "4.0.0",
     "category": "constructors",
     "signature": "declare const make: (shouldQuit?: (input: UserInput) => boolean) => Effect<Terminal, never, Scope>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeTerminal.ts#L27"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeTerminal.ts#L37"
   },
   {
     "_tag": "Constant",
@@ -1437,7 +1437,7 @@
     "since": "4.0.0",
     "category": "layers",
     "signature": "declare const layer: Layer<Terminal, never, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeTerminal.ts#L36"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeTerminal.ts#L46"
   },
   {
     "_tag": "Constant",
@@ -1453,7 +1453,7 @@
     "since": "4.0.0",
     "category": "layers",
     "signature": "declare const layerPlatform: Layer.Layer<Worker.WorkerPlatform, never, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeWorker.ts#L40"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeWorker.ts#L54"
   },
   {
     "_tag": "Function",
@@ -1469,7 +1469,7 @@
     "since": "4.0.0",
     "category": "layers",
     "signature": "declare const layer: (spawn: (id: number) => WorkerThreads.Worker | ChildProcess.ChildProcess) => Layer.Layer<Worker.WorkerPlatform | Worker.Spawner>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeWorker.ts#L124"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeWorker.ts#L138"
   },
   {
     "_tag": "Constant",
@@ -1485,7 +1485,7 @@
     "since": "4.0.0",
     "category": "layers",
     "signature": "declare const layer: Layer.Layer<WorkerRunner.WorkerRunnerPlatform, never, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeWorkerRunner.ts#L40"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeWorkerRunner.ts#L60"
   },
   {
     "_tag": "Export",
@@ -1501,6 +1501,6 @@
     "since": "4.0.0",
     "category": "undici",
     "signature": "export * from \"undici\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/Undici.ts#L10"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/Undici.ts#L23"
   }
 ]

@@ -11,6 +11,6 @@ Extracts the failure error type from an atom whose value is an `AsyncResult`.
 type Failure<T> = T extends Atom<AsyncResult.AsyncResult<infer _, infer E>> ? E : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Atom.ts#L129)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Atom.ts#L143)
 
 Since v4.0.0

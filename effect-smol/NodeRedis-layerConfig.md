@@ -12,6 +12,6 @@ options, closing the client when the layer scope ends.
 declare const layerConfig: (options: Config.Wrap<IoRedis.RedisOptions>) => Layer.Layer<Redis.Redis | NodeRedis, Config.ConfigError>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeRedis.ts#L94)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeRedis.ts#L112)
 
 Since v4.0.0

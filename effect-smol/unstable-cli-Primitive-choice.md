@@ -35,6 +35,6 @@ const parseLogLevel = Effect.gen(function*() {
 declare const choice: <A>(choices: ReadonlyArray<readonly [string, A]>) => Primitive<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Primitive.ts#L300)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Primitive.ts#L349)
 
 Since v4.0.0

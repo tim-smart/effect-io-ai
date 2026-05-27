@@ -6,6 +6,11 @@ Module: `Fiber`<br />
 Variance encoding for the Fiber type, specifying covariance in both the
 success type `A` and the error type `E`.
 
+**When to use**
+
+Use to carry the success and error type parameters for `Fiber` in Effect's
+type machinery.
+
 **Example** (Upcasting fibers safely)
 
 ```ts
@@ -25,6 +30,6 @@ export interface Variance<out A, out E = never> {
   }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Fiber.ts#L188)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Fiber.ts#L200)
 
 Since v2.0.0

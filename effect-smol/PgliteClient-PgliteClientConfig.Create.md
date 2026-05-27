@@ -11,6 +11,6 @@ Configuration used to create a managed PGlite instance from PGlite constructor o
 export interface Create extends Base, PGliteOptions {}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/sql/pglite/src/PgliteClient.ts#L127)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/sql/pglite/src/PgliteClient.ts#L141)
 
 Since v4.0.0

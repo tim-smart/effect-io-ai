@@ -47,6 +47,6 @@ console.log(Tool.isUserDefined(ProviderDefinedTool)) // false
 declare const isUserDefined: (u: unknown) => u is Tool<string, any, any>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tool.ts#L572)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tool.ts#L601)
 
 Since v4.0.0

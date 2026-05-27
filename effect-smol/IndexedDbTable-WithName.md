@@ -14,6 +14,6 @@ type WithName<Table, TableName> = Extract<
 >
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbTable.ts#L164)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbTable.ts#L181)
 
 Since v4.0.0

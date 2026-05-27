@@ -7,7 +7,7 @@ Checks whether a value is a `string`.
 
 **When to use**
 
-- You need to guard an `unknown` value as a string.
+Use when you need to guard an `unknown` value as a string.
 - You want to narrow in `if` statements.
 
 **Details**
@@ -39,6 +39,6 @@ if (Predicate.isString(data)) {
 declare const isString: (input: unknown) => input is string
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L578)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L603)
 
 Since v2.0.0

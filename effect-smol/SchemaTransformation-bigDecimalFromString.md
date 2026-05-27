@@ -8,7 +8,7 @@ its string representation.
 
 **When to use**
 
-- Parsing decimal number strings from APIs or user input.
+Use to parse decimal number strings from APIs or user input.
 
 **Details**
 

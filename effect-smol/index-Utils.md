@@ -5,18 +5,12 @@ Module: `index`<br />
 
 Re-exports all named exports from the "./Utils.ts" module as `Utils`.
 
-**See**
-
-- `SingleShotGen`
-- `Gen`
-- `Variance`
-
 **Signature**
 
 ```ts
 export * as Utils from "./Utils.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L5917)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L712)
 
 Since v2.0.0

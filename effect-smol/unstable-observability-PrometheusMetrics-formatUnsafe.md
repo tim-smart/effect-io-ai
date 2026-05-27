@@ -7,7 +7,7 @@ Synchronously format all metrics in the registry to Prometheus exposition format
 
 **When to use**
 
-Use this low-level function when you already have access to the context. Most
+Use when you use this low-level function when you already have access to the context. Most
 users should use `format` instead.
 
 **Signature**

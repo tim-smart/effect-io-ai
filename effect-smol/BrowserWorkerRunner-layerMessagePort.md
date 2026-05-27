@@ -11,6 +11,6 @@ Layer that provides a `WorkerRunnerPlatform` using the supplied `MessagePort` or
 declare const layerMessagePort: (port: MessagePort | Window) => Layer.Layer<WorkerRunner.WorkerRunnerPlatform>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/BrowserWorkerRunner.ts#L189)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/BrowserWorkerRunner.ts#L220)
 
 Since v4.0.0

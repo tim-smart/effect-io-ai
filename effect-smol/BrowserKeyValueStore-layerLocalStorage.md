@@ -11,6 +11,6 @@ Creates a `KeyValueStore` layer that uses the browser's `localStorage` API and s
 declare const layerLocalStorage: Layer.Layer<KeyValueStore.KeyValueStore, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/BrowserKeyValueStore.ts#L31)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/BrowserKeyValueStore.ts#L66)
 
 Since v4.0.0

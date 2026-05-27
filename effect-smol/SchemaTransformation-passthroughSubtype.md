@@ -8,7 +8,7 @@ type is a subtype of the decoded type.
 
 **When to use**
 
-- Narrowing: the encoded side is more specific than the decoded side.
+Use when narrowing: the encoded side is more specific than the decoded side.
 
 **Details**
 

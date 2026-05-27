@@ -7,7 +7,7 @@ Helps you run a main effect with built-in error handling, logging, and signal ma
 
 **When to use**
 
-Use this function to run an Effect as your application's main program,
+Use to run an Effect as your application's main program,
 especially when you need structured error handling, log management,
 interrupt support, or advanced teardown capabilities.
 
@@ -30,6 +30,6 @@ An optional object that can include:
 declare const runMain: { (options?: { readonly disableErrorReporting?: boolean | undefined; readonly teardown?: Teardown | undefined; }): <E, A>(effect: Effect<A, E>) => void; <E, A>(effect: Effect<A, E>, options?: { readonly disableErrorReporting?: boolean | undefined; readonly teardown?: Teardown | undefined; }): void; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunRuntime.ts#L49)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunRuntime.ts#L62)
 
 Since v4.0.0

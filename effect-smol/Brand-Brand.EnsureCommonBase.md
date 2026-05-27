@@ -18,6 +18,6 @@ type EnsureCommonBase<Brands> = {
   }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Brand.ts#L162)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Brand.ts#L238)
 
 Since v2.0.0

@@ -7,6 +7,10 @@ Extends the idle time for a resource in the RcMap. If the RcMap has an
 `idleTimeToLive` configured, calling `touch` will reset the expiration
 timer for the specified key.
 
+**When to use**
+
+Use to keep an idle resource alive longer without acquiring a new reference.
+
 **Example** (Extending resource idle time)
 
 ```ts
@@ -34,12 +38,16 @@ Effect.gen(function*() {
 }).pipe(Effect.scoped)
 ```
 
+**See**
+
+- `invalidate` for removing the resource instead of extending it
+
 **Signature**
 
 ```ts
 declare const touch: { <K>(key: K): <A, E>(self: RcMap<K, A, E>) => Effect.Effect<void>; <K, A, E>(self: RcMap<K, A, E>, key: K): Effect.Effect<void>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RcMap.ts#L520)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RcMap.ts#L602)
 
 Since v3.13.0

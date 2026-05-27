@@ -8,7 +8,7 @@ encodes a record of key-value pairs into a string.
 
 **When to use**
 
-- Parsing query-string-like or config-file-like strings into records.
+Use to parse query-string-like or config-file-like strings into records.
 
 **Details**
 

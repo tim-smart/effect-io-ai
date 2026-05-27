@@ -5,9 +5,26 @@ Module: `Runtime`<br />
 
 Creates a platform-specific main program runner that handles Effect execution lifecycle.
 
+**When to use**
+
+Use when building a runtime adapter for a host platform. Most applications
+should use a platform-provided runner, such as `NodeRuntime.runMain`, rather
+than constructing one directly.
+
 **Details**
 
 The runner executes Effect programs as main entry points. The provided function receives a forked fiber and a teardown callback so it can install platform-specific signal handling, fiber observers, and final exit behavior.
+
+`disableErrorReporting` disables the automatic log emitted for unreported
+non-interruption failures. It does not change exit-code calculation or the
+custom teardown callback.
+
+**Gotchas**
+
+The setup function is responsible for observing the fiber and eventually
+invoking teardown. `makeRunMain` also tries to keep the host process alive
+with a long interval while the main fiber is running; if the host blocks
+timers, the runner still starts but cannot use that keep-alive fallback.
 
 **Example** (Creating platform runners)
 
@@ -60,6 +77,6 @@ runMain(program, {
 declare const makeRunMain: (f: <E, A>(options: { readonly fiber: Fiber.Fiber<A, E>; readonly teardown: Teardown; }) => void) => { (options?: { readonly disableErrorReporting?: boolean | undefined; readonly teardown?: Teardown | undefined; }): <E, A>(effect: Effect.Effect<A, E>) => void; <E, A>(effect: Effect.Effect<A, E>, options?: { readonly disableErrorReporting?: boolean | undefined; readonly teardown?: Teardown | undefined; }): void; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Runtime.ts#L174)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Runtime.ts#L246)
 
 Since v4.0.0

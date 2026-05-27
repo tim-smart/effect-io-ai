@@ -5,6 +5,11 @@ Module: `Match`<br />
 
 Matches instances of a given class.
 
+**When to use**
+
+Use to match values that are instances of a constructor with type-safe
+narrowing.
+
 **Details**
 
 This predicate checks if a value is an instance of the specified constructor,
@@ -48,12 +53,17 @@ console.log(handleValue([1, 2, 3])) // "Array with 3 items"
 console.log(handleValue(new Map([["count", 1]]))) // "Map with 1 entries"
 ```
 
+**See**
+
+- `instanceOfUnsafe` for constructor matching without the same type-safety guarantee
+- `record` for matching broad non-null, non-array objects
+
 **Signature**
 
 ```ts
 declare const instanceOf: <A extends abstract new (...args: any) => any>(constructor: A) => SafeRefinement<InstanceType<A>, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L1616)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L1782)
 
 Since v4.0.0

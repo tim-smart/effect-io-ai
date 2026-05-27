@@ -7,7 +7,7 @@ A layer which will **always** consider a Runner healthy.
 
 **When to use**
 
-This is useful for testing.
+Use when this is useful for testing.
 
 **Signature**
 
@@ -15,6 +15,6 @@ This is useful for testing.
 declare const layerNoop: Layer.Layer<RunnerHealth, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RunnerHealth.ts#L62)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RunnerHealth.ts#L79)
 
 Since v4.0.0

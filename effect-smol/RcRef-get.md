@@ -5,6 +5,11 @@ Module: `RcRef`<br />
 
 Gets the value from an `RcRef`, acquiring it first if needed.
 
+**When to use**
+
+Use to borrow the current resource within a `Scope`, acquiring it first if
+necessary.
+
 **Details**
 
 The reference count is incremented for the current `Scope`, and a release
@@ -43,6 +48,6 @@ const program = Effect.gen(function*() {
 declare const get: <A, E>(self: RcRef<A, E>) => Effect.Effect<A, E, Scope>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RcRef.ts#L190)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RcRef.ts#L235)
 
 Since v3.5.0

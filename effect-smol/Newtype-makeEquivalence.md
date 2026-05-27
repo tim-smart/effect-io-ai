@@ -8,7 +8,7 @@ newtype.
 
 **When to use**
 
-Use this when you need to compare two newtype values for equality.
+Use when you need to compare two newtype values for equality.
 
 **Details**
 
@@ -39,6 +39,6 @@ eq(iso.set("a"), iso.set("b")) // false
 declare const makeEquivalence: <N extends Newtype.Any>(equivalence: Equivalence.Equivalence<Newtype.Carrier<N>>) => Equivalence.Equivalence<N>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Newtype.ts#L257)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Newtype.ts#L266)
 
 Since v4.0.0

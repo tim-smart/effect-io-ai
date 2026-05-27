@@ -19,6 +19,6 @@ export interface RecordUpdateHelperSingle {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Statement.ts#L330)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Statement.ts#L350)
 
 Since v4.0.0

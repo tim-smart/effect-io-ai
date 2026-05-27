@@ -12,6 +12,6 @@ deriving the content length from the body.
 export interface WithContentType extends Omit<Options, "contentLength"> {}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpServerResponse.ts#L111)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpServerResponse.ts#L133)
 
 Since v4.0.0

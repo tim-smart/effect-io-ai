@@ -12,6 +12,6 @@ socket connection.
 declare class NetSocket
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeSocket.ts#L47)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeSocket.ts#L57)
 
 Since v4.0.0

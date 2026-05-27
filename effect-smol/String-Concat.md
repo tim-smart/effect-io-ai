@@ -20,6 +20,6 @@ type Result = String.Concat<"hello", "world"> // "helloworld"
 type `${A}${B}` = `${A}${B}`
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L113)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L187)
 
 Since v2.0.0

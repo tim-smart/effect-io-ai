@@ -7,8 +7,7 @@ A JSON Patch document (an ordered list of operations).
 
 **When to use**
 
-Use this type when storing, serializing, passing, or validating complete patch
-documents.
+Use to store, serialize, pass, or validate complete patch documents.
 
 **Details**
 
@@ -34,9 +33,9 @@ const result = JsonPatch.apply(patch, { count: 3, oldField: "value" })
 
 **See**
 
-- `JsonPatchOperation` - Individual operation types
-- `get` - Generates patches from value differences
-- `apply` - Executes patches to transform documents
+- `JsonPatchOperation` for individual operation types
+- `get` to generate patches from value differences
+- `apply` to execute patches to transform documents
 
 **Signature**
 
@@ -44,6 +43,6 @@ const result = JsonPatch.apply(patch, { count: 3, oldField: "value" })
 type JsonPatch = ReadonlyArray<JsonPatchOperation>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/JsonPatch.ts#L167)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/JsonPatch.ts#L190)
 
 Since v4.0.0

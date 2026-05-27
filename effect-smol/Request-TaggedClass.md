@@ -30,6 +30,6 @@ console.log(request.id) // 123
 declare const TaggedClass: <Tag extends string>(tag: Tag) => new <A extends Record<string, any>, Success, Error = never, Services = never>(args: Types.Equals<Omit<A, keyof Request<unknown, unknown>>, {}> extends true ? void : { readonly [P in keyof A as P extends "_tag" | keyof Request<any, any, any> ? never : P]: A[P]; }) => Request<Success, Error, Services> & Readonly<A> & { readonly _tag: Tag; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Request.ts#L394)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Request.ts#L436)
 
 Since v2.0.0

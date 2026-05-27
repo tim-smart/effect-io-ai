@@ -7,7 +7,7 @@ Creates a failed Exit from a Cause.
 
 **When to use**
 
-- Use when you already have a `Cause<E>` and want to wrap it in an Exit
+Use when you already have a `Cause<E>` and want to wrap it in an Exit
 - Use for advanced error handling where you need full control over the Cause structure
 
 **Details**
@@ -36,6 +36,6 @@ console.log(Exit.isFailure(exit)) // true
 declare const failCause: <E>(cause: Cause.Cause<E>) => Exit<never, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Exit.ts#L287)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Exit.ts#L296)
 
 Since v2.0.0

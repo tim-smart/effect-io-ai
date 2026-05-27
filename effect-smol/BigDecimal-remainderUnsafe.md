@@ -5,6 +5,11 @@ Module: `BigDecimal`<br />
 
 Returns the remainder left over when one operand is divided by a second operand.
 
+**When to use**
+
+Use when the divisor is known to be non-zero and division by zero should be a
+thrown exception.
+
 **Gotchas**
 
 Throws a `RangeError` if the divisor is `0`.
@@ -29,12 +34,16 @@ assert.deepStrictEqual(
 )
 ```
 
+**See**
+
+- `remainder` for returning `Option.none` when the divisor is zero
+
 **Signature**
 
 ```ts
 declare const remainderUnsafe: { (divisor: BigDecimal): (self: BigDecimal) => BigDecimal; (self: BigDecimal, divisor: BigDecimal): BigDecimal; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigDecimal.ts#L1015)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigDecimal.ts#L1202)
 
 Since v4.0.0

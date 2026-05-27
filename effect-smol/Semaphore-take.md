@@ -3,8 +3,23 @@ Module: `Semaphore`<br />
 
 ## Semaphore.take
 
-Acquires the specified number of permits and returns the resulting available
-permits, suspending the task if they are not yet available.
+Acquires the specified number of permits and returns the acquired permit
+count.
+
+**When to use**
+
+Use to manually acquire permits when a lower-level permit protocol needs
+explicit acquisition and release control.
+
+**Details**
+
+The effect waits until enough permits are available.
+
+**See**
+
+- `withPermit` for automatically acquiring and releasing one permit around an effect
+- `withPermits` for automatically acquiring and releasing multiple permits around an effect
+- `release` for returning manually acquired permits
 
 **Signature**
 
@@ -12,6 +27,6 @@ permits, suspending the task if they are not yet available.
 declare const take: { (permits: number): (self: Semaphore) => Effect.Effect<number>; (self: Semaphore, permits: number): Effect.Effect<number>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Semaphore.ts#L370)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Semaphore.ts#L486)
 
 Since v4.0.0

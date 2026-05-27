@@ -5,6 +5,11 @@ Module: `Result`<br />
 
 Converts an `Option<A>` into a `Result<A, E>`.
 
+**When to use**
+
+Use when an existing `Option` should become a `Result`, preserving `Some` as
+success and turning `None` into a caller-provided failure.
+
 **Details**
 
 - `Some<A>` becomes `Success<A>`
@@ -27,8 +32,9 @@ console.log(none)
 
 **See**
 
-- `getSuccess` / `getFailure` to convert back to Option
-- `fromNullishOr` to convert from nullable values
+- `getSuccess` to extract the success value as an Option
+- `getFailure` to extract the failure value as an Option
+- `fromNullishOr` to build a Result from nullable values
 
 **Signature**
 
@@ -36,6 +42,6 @@ console.log(none)
 declare const fromOption: { <E>(onNone: () => E): <A>(self: Option<A>) => Result<A, E>; <A, E>(self: Option<A>, onNone: () => E): Result<A, E>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L471)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L493)
 
 Since v2.0.0

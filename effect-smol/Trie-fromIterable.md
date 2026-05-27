@@ -37,6 +37,6 @@ assert.equal(
 declare const fromIterable: <V>(entries: Iterable<readonly [string, V]>) => Trie<V>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Trie.ts#L128)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Trie.ts#L167)
 
 Since v2.0.0

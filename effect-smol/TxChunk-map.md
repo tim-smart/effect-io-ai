@@ -33,6 +33,6 @@ const program = Effect.gen(function*() {
 declare const map: { <A>(f: (a: NoInfer<A>) => A): (self: TxChunk<A>) => Effect.Effect<void>; <A>(self: TxChunk<A>, f: (a: A) => A): Effect.Effect<void>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxChunk.ts#L659)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxChunk.ts#L692)
 
 Since v4.0.0

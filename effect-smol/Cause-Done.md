@@ -5,6 +5,11 @@ Module: `Cause`<br />
 
 A graceful completion signal for queues and streams.
 
+**When to use**
+
+Use to model normal producer completion through a stream or queue error
+channel.
+
 **Details**
 
 `Done` indicates that a producer has finished normally — no more elements
@@ -27,11 +32,6 @@ const program = Effect.gen(function*() {
 })
 ```
 
-**See**
-
-- `isDone` — type guard
-- `done` — create a failing Effect with `Done`
-
 **Signature**
 
 ```ts
@@ -42,6 +42,6 @@ export interface Done<A = void> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L1291)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L1402)
 
 Since v4.0.0

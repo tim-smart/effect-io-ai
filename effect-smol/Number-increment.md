@@ -5,6 +5,10 @@ Module: `Number`<br />
 
 Returns the result of adding `1` to a given number.
 
+**When to use**
+
+Use to increment a numeric counter by one.
+
 **Example** (Incrementing a number)
 
 ```ts
@@ -20,6 +24,6 @@ assert.deepStrictEqual(Number.increment(2), 3)
 declare const increment: (n: number) => number
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Number.ts#L176)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Number.ts#L280)
 
 Since v2.0.0

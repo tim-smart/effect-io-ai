@@ -8,7 +8,7 @@ Encode is passthrough.
 
 **When to use**
 
-- Normalizing strings to uppercase (e.g. country codes).
+Use to normalize strings to uppercase (e.g. country codes).
 
 **Details**
 

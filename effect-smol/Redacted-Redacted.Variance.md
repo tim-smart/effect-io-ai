@@ -5,6 +5,11 @@ Module: `Redacted`<br />
 
 Type-level variance marker for `Redacted`.
 
+**When to use**
+
+Use when defining internals that need to preserve the covariant value type
+carried by `Redacted`.
+
 **Details**
 
 This interface records the covariant value type carried by a `Redacted`
@@ -20,6 +25,6 @@ export interface Variance<out A> {
   }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Redacted.ts#L79)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Redacted.ts#L130)
 
 Since v3.3.0

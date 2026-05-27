@@ -11,6 +11,6 @@ Re-exports all named exports from the "./SqlEventJournal.ts" module as `SqlEvent
 export * as SqlEventJournal from "./SqlEventJournal.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L269)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L65)
 
 Since v4.0.0

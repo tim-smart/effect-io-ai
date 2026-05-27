@@ -11,6 +11,6 @@ Type-level identifier used to mark SQL Server stored procedure parameter metadat
 type TypeId = "~@effect/sql-mssql/Parameter"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/sql/d1/src/Parameter.ts#L42)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/sql/d1/src/Parameter.ts#L57)
 
 Since v4.0.0

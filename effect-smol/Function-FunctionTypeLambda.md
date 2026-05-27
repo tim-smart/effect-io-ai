@@ -5,6 +5,10 @@ Module: `Function`<br />
 
 Type lambda for function types, used for higher-kinded type operations.
 
+**When to use**
+
+Use to represent unary function types in higher-kinded type operations.
+
 **Example** (Creating a function type with a type lambda)
 
 ```ts
@@ -23,6 +27,6 @@ export interface FunctionTypeLambda extends TypeLambda {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Function.ts#L68)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Function.ts#L72)
 
 Since v2.0.0

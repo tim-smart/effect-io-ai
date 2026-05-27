@@ -7,7 +7,7 @@ Entry point for schema test assertions. Wraps a schema and exposes operation-spe
 
 **When to use**
 
-Use `Asserts` when writing schema unit tests for decoding, encoding, construction, property-based round-trip, or generation behavior.
+Use when writing schema unit tests for decoding, encoding, construction, property-based round-trip, or generation behavior.
 
 **Example** (Decoding and encoding a struct)
 

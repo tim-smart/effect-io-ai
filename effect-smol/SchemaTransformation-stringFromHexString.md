@@ -7,7 +7,7 @@ Decodes a hex encoded `string` into a UTF-8 `string` and encodes it back.
 
 **When to use**
 
-- Handling text data transmitted as hexadecimal strings.
+Use when handling text data transmitted as hexadecimal strings.
 
 **Details**
 

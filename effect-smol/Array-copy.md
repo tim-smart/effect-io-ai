@@ -5,6 +5,11 @@ Module: `Array`<br />
 
 Creates a shallow copy of an array.
 
+**When to use**
+
+Use to create a distinct array reference for an existing array, for example
+before mutating the returned array.
+
 **Details**
 
 - Preserves `NonEmptyArray` in the return type.
@@ -31,6 +36,6 @@ console.log(original === copied) // false
 declare const copy: { <A>(self: NonEmptyReadonlyArray<A>): NonEmptyArray<A>; <A>(self: ReadonlyArray<A>): Array<A>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L2581)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L2863)
 
 Since v2.0.0

@@ -5,6 +5,10 @@ Module: `HKT`<br />
 
 Base interface for type classes that work with Higher-Kinded Types.
 
+**When to use**
+
+Use to define type class interfaces parameterized by a `TypeLambda`.
+
 **Details**
 
 A `TypeClass` defines operations that can be performed on any type constructor
@@ -41,6 +45,6 @@ export interface TypeClass<F extends TypeLambda> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HKT.ts#L111)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HKT.ts#L135)
 
 Since v2.0.0

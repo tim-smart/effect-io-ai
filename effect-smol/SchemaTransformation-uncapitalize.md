@@ -8,7 +8,7 @@ decode. Encode is passthrough.
 
 **When to use**
 
-- Normalizing identifiers or field names.
+Use to normalize identifiers or field names.
 
 **Details**
 

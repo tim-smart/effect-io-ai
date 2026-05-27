@@ -7,7 +7,7 @@ Updates a service in the context with a new implementation.
 
 **When to use**
 
-Use this to adapt or extend a service's behavior during the creation of a
+Use to adapt or extend a service's behavior during the creation of a
 layer.
 
 **Details**
@@ -23,6 +23,6 @@ transformed one.
 declare const updateService: { <I, A>(service: Context.Key<I, A>, f: (a: Types.NoInfer<A>) => A): <A1, E1, R1>(layer: Layer<A1, E1, R1>) => Layer<A1, E1, I | R1>; <A1, E1, R1, I, A>(layer: Layer<A1, E1, R1>, service: Context.Key<I, A>, f: (a: Types.NoInfer<A>) => A): Layer<A1, E1, I | R1>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L1931)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L2035)
 
 Since v3.13.0

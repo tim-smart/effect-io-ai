@@ -7,7 +7,7 @@ Escapes a JSON Pointer reference token according to RFC 6901 by encoding special
 
 **When to use**
 
-- Building JSON Pointers from object keys or path segments that may contain special characters
+Use to build JSON Pointers from object keys or path segments that may contain special characters
 - Escaping tokens before joining them with `/` to form a complete JSON Pointer
 - Preparing reference tokens for use in JSON Patch operations or schema references
 

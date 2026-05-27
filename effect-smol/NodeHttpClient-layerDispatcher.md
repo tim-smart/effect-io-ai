@@ -11,6 +11,6 @@ Provides the `Dispatcher` service using a scoped Undici `Agent`.
 declare const layerDispatcher: Layer.Layer<Dispatcher, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L120)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L129)
 
 Since v4.0.0

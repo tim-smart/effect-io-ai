@@ -7,7 +7,7 @@ Returns the identity getter typed for the relationship `T extends E`.
 
 **When to use**
 
-Use this when no runtime conversion is needed but the getter should be typed
+Use when no runtime conversion is needed but the getter should be typed
 as producing a decoded/output type that is narrower than the encoded/input
 type.
 
@@ -26,8 +26,8 @@ const g = SchemaGetter.passthroughSupertype<string, string>()
 
 **See**
 
-- `passthrough` - when types are identical
-- `passthroughSubtype` - when `E extends T`
+- `passthrough` when types are identical
+- `passthroughSubtype` when `E extends T`
 
 **Signature**
 

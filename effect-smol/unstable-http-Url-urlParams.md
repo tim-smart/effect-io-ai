@@ -31,6 +31,6 @@ console.log(params)
 declare const urlParams: (url: URL) => UrlParams.UrlParams
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Url.ts#L303)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Url.ts#L319)
 
 Since v4.0.0

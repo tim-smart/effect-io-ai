@@ -12,6 +12,6 @@ route on the current `HttpRouter`.
 declare const makeProtocolHttp: (options: { readonly path: HttpRouter.PathInput; }) => Effect.Effect<Protocol["Service"], never, RpcSerialization.RpcSerialization | HttpRouter.HttpRouter>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RpcServer.ts#L1152)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RpcServer.ts#L1160)
 
 Since v4.0.0

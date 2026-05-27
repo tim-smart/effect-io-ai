@@ -8,7 +8,7 @@ on decode and camelCase to snake_case on encode.
 
 **When to use**
 
-- Converting API field names between snake_case and camelCase conventions.
+Use to convert API field names between snake_case and camelCase conventions.
 
 **Details**
 

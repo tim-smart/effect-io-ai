@@ -10,7 +10,7 @@ is combined independently.
 
 **When to use**
 
-Use this to fold a collection of tuples into a single summary tuple.
+Use to fold a collection of tuples into a single summary tuple.
 
 **Details**
 
@@ -44,6 +44,6 @@ console.log(result) // [6, "abc"]
 declare const makeReducer: <A extends ReadonlyArray<unknown>>(reducers: { readonly [K in keyof A]: Reducer.Reducer<A[K]>; }) => Reducer.Reducer<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tuple.ts#L792)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tuple.ts#L803)
 
 Since v4.0.0

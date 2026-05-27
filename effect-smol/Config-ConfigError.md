@@ -7,7 +7,7 @@ The error type produced when config loading or validation fails.
 
 **When to use**
 
-- Match on `error.cause._tag` to distinguish source failures from
+Use when match on `error.cause._tag` to distinguish source failures from
   validation failures.
 - Pass to `fail` to create a Config that always errors.
 

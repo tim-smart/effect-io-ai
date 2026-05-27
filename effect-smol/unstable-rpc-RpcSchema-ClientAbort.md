@@ -12,6 +12,6 @@ abort.
 declare class ClientAbort
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RpcSchema.ts#L104)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RpcSchema.ts#L114)
 
 Since v4.0.0

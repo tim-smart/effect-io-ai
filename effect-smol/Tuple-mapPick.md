@@ -8,7 +8,7 @@ specified indices; all other elements are copied unchanged.
 
 **When to use**
 
-Use this when you want to apply the same transformation to a subset of
+Use when you want to apply the same transformation to a subset of
 positions.
 
 **Details**
@@ -44,6 +44,6 @@ console.log(result) // [[1], "hello", [true]]
 declare const mapPick: { <const T extends ReadonlyArray<unknown>, const I extends ReadonlyArray<Indices<T>>, L extends Lambda>(indices: I, lambda: L): (self: T) => { [K in keyof T]: K extends `${I[number]}` ? Apply<L, T[K]> : T[K]; }; <const T extends ReadonlyArray<unknown>, const I extends ReadonlyArray<Indices<T>>, L extends Lambda>(self: T, indices: I, lambda: L): { [K in keyof T]: K extends `${I[number]}` ? Apply<L, T[K]> : T[K]; }; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tuple.ts#L493)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tuple.ts#L504)
 
 Since v4.0.0

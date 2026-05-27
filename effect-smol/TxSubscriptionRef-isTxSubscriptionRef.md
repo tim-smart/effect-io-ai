@@ -5,6 +5,10 @@ Module: `TxSubscriptionRef`<br />
 
 Checks if the given value is a TxSubscriptionRef.
 
+**When to use**
+
+Use to narrow an unknown value before treating it as a `TxSubscriptionRef`.
+
 **Example** (Checking transactional subscription references)
 
 ```ts
@@ -17,12 +21,16 @@ if (TxSubscriptionRef.isTxSubscriptionRef(someValue)) {
 }
 ```
 
+**See**
+
+- `make` for creating a `TxSubscriptionRef`
+
 **Signature**
 
 ```ts
 declare const isTxSubscriptionRef: (u: unknown) => u is TxSubscriptionRef<unknown>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxSubscriptionRef.ts#L423)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxSubscriptionRef.ts#L540)
 
 Since v4.0.0

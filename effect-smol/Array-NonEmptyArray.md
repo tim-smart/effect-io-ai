@@ -5,6 +5,11 @@ Module: `Array`<br />
 
 A mutable array guaranteed to have at least one element.
 
+**When to use**
+
+Use when mutation is acceptable and non-emptiness must be tracked at the type
+level.
+
 **Details**
 
 This is the mutable counterpart of `NonEmptyReadonlyArray`. Most Array
@@ -31,6 +36,6 @@ nonEmpty.push(4)
 type [A, ...A[]] = [A, ...Array<A>]
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L184)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L192)
 
 Since v2.0.0

@@ -7,7 +7,7 @@ A Histogram metric that records observations in configurable buckets to analyze 
 
 **When to use**
 
-Histograms are ideal for measuring request durations, response sizes, and other continuous values
+Use when histograms are ideal for measuring request durations, response sizes, and other continuous values
 where you need to understand the distribution of values rather than just aggregates.
 
 **Example** (Using histogram metrics)

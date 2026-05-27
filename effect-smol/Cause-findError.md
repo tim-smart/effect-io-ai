@@ -10,7 +10,7 @@ it contains no typed error reasons.
 
 **When to use**
 
-Use `findFail` if you need the full `Fail` reason (including
+Use when you use `findFail` if you need the full `Fail` reason (including
 annotations). Use `findErrorOption` if you prefer an `Option`.
 
 **Example** (extracting the first error value)
@@ -35,6 +35,6 @@ if (!Result.isFailure(result)) {
 declare const findError: <E>(self: Cause<E>) => Result.Result<E, Cause<never>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L839)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L908)
 
 Since v4.0.0

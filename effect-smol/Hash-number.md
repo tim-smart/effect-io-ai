@@ -5,6 +5,10 @@ Module: `Hash`<br />
 
 Computes a hash value for a number.
 
+**When to use**
+
+Use to hash a JavaScript number with Effect's numeric hash semantics.
+
 **Details**
 
 This function creates a hash value for numeric inputs, handling special cases
@@ -31,6 +35,6 @@ console.log(Hash.number(100) === Hash.number(100)) // true
 declare const number: (n: number) => number
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Hash.ts#L293)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Hash.ts#L378)
 
 Since v2.0.0

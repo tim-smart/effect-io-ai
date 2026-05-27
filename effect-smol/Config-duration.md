@@ -6,6 +6,10 @@ Module: `Config`<br />
 Creates a config for a `Duration` value parsed from a human-readable
 string.
 
+**When to use**
+
+Use to read time duration settings such as timeouts, intervals, or TTLs.
+
 **Details**
 
 Shortcut for `Config.schema(Schema.DurationFromString, name)`.
@@ -35,12 +39,16 @@ Effect.runSync(
 // Output: Duration { _tag: "millis", value: 10000 }
 ```
 
+**See**
+
+- `schema` for decoding configuration values with a custom codec
+
 **Signature**
 
 ```ts
 declare const duration: (name?: string) => Config<Duration>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Config.ts#L1133)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Config.ts#L1185)
 
 Since v2.5.0

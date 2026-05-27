@@ -26,6 +26,6 @@ type Result<T> = T extends Request<infer A, infer E, infer _R> ? Exit.Exit<A, E>
   : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Request.ts#L187)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Request.ts#L229)
 
 Since v2.0.0

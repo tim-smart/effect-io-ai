@@ -6,17 +6,18 @@ Module: `Effect`<br />
 Runs an effect with a time limit and represents only the timeout case as
 `Option.none`.
 
+**When to use**
+
+Use when a timeout should be handled as absence. Use
+`timeout` when a timeout should fail the effect, and `timeoutOrElse` when
+you want to run a fallback effect.
+
 **Details**
 
 If the source effect succeeds before the timeout, the returned effect
 succeeds with `Option.some(value)`. If the timeout wins, the source effect is
 interrupted and the returned effect succeeds with `Option.none`. If the
 source effect fails before the timeout, that failure is preserved.
-
-**See**
-
-- `timeout` for a version that raises a `TimeoutException`.
-- `timeoutOrElse` for a version that allows specifying both success and timeout handlers.
 
 **Example** (Returning None on timeout)
 
@@ -46,12 +47,17 @@ Effect.runPromise(timedOutEffect).then(console.log)
 // ]
 ```
 
+**See**
+
+- `timeout` for a version that raises a `TimeoutException`.
+- `timeoutOrElse` for a version that allows specifying both success and timeout handlers.
+
 **Signature**
 
 ```ts
 declare const timeoutOption: { (duration: Duration.Input): <A, E, R>(self: Effect<A, E, R>) => Effect<Option<A>, E, R>; <A, E, R>(self: Effect<A, E, R>, duration: Duration.Input): Effect<Option<A>, E, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L4247)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L4546)
 
 Since v3.1.0

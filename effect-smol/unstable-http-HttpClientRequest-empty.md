@@ -11,6 +11,6 @@ An empty `GET` request with no URL, query parameters, hash, headers, or body.
 declare const empty: HttpClientRequest
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpClientRequest.ts#L150)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpClientRequest.ts#L171)
 
 Since v4.0.0

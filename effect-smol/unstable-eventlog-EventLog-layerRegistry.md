@@ -12,6 +12,6 @@ replicas, and reactivity keys.
 declare const layerRegistry: Layer.Layer<Registry, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventLog.ts#L117)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventLog.ts#L131)
 
 Since v4.0.0

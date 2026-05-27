@@ -11,6 +11,6 @@ Updates the port of the URL.
 declare const setPort: { (port: string | number): (url: URL) => URL; (url: URL, port: string | number): URL; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Url.ts#L202)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Url.ts#L218)
 
 Since v4.0.0

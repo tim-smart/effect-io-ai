@@ -23,6 +23,6 @@ export interface ReadonlyRef<A> extends Equal.Equal {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AtomRef.ts#L52)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AtomRef.ts#L68)
 
 Since v4.0.0

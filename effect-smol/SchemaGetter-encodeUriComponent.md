@@ -21,7 +21,7 @@ const encode = SchemaGetter.encodeUriComponent<string>()
 
 **See**
 
-- `decodeUriComponent` - inverse operation
+- `decodeUriComponent` for the inverse operation
 
 **Signature**
 

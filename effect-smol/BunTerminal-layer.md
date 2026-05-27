@@ -12,6 +12,6 @@ the default quit keys.
 declare const layer: Layer<Terminal, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunTerminal.ts#L40)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunTerminal.ts#L58)
 
 Since v4.0.0

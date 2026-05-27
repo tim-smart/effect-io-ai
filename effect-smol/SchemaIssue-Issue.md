@@ -7,7 +7,7 @@ The root discriminated union of all validation error nodes.
 
 **When to use**
 
-- Typing the error channel in `Effect<A, Issue, R>` results from schema
+Use when typing the error channel in `Effect<A, Issue, R>` results from schema
   parsing.
 - Writing custom formatters or issue-tree walkers.
 

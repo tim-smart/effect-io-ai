@@ -21,6 +21,6 @@ Behaves like `Undefined` for parsing but represents the TypeScript
 declare class Void
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L730)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L848)
 
 Since v4.0.0

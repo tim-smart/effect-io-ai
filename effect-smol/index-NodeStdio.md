@@ -11,6 +11,6 @@ Re-exports all named exports from the "./NodeStdio.ts" module as `NodeStdio`.
 export * as NodeStdio from "./NodeStdio.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L190)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L55)
 
 Since v4.0.0

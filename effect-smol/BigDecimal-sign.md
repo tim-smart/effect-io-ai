@@ -5,6 +5,10 @@ Module: `BigDecimal`<br />
 
 Determines the sign of a given `BigDecimal`.
 
+**When to use**
+
+Use to classify a `BigDecimal` as negative, zero, or positive.
+
 **Example** (Reading decimal signs)
 
 ```ts
@@ -22,6 +26,6 @@ assert.deepStrictEqual(BigDecimal.sign(BigDecimal.fromStringUnsafe("5")), 1)
 declare const sign: (n: BigDecimal) => Ordering
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigDecimal.ts#L895)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigDecimal.ts#L1059)
 
 Since v2.0.0

@@ -7,7 +7,7 @@ A `Prism` that focuses on `Option.None`, exposing `undefined`.
 
 **When to use**
 
-- You want to match or construct `None` values within an optic chain.
+Use when you want to match or construct `None` values within an optic chain.
 
 **Details**
 

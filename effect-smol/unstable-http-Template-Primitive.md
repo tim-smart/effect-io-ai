@@ -16,6 +16,6 @@ results.
 type Primitive = PrimitiveValue | ReadonlyArray<PrimitiveValue>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Template.ts#L43)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Template.ts#L56)
 
 Since v4.0.0

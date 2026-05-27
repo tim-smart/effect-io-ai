@@ -5,6 +5,10 @@ Module: `Match`<br />
 
 Matches values where a specified field starts with a given prefix.
 
+**When to use**
+
+Use to match string discriminator values by prefix instead of exact value.
+
 **Details**
 
 This function is useful for working with discriminated unions where the
@@ -34,12 +38,16 @@ console.log(match({ type: "B" })) // 2
 console.log(match({ type: "A.A" })) // 1
 ```
 
+**See**
+
+- `discriminator` for matching exact discriminator values
+
 **Signature**
 
 ```ts
 declare const discriminatorStartsWith: <D extends string>(field: D) => <R, P extends string, Ret, Fn extends (_: Extract<R, Record<D, `${P}${string}`>>) => Ret>(pattern: P, f: Fn) => <I, F, A, Pr>(self: Matcher<I, F, R, A, Pr, Ret>) => Matcher<I, Types.AddWithout<F, Extract<R, Record<D, `${P}${string}`>>>, Types.ApplyFilters<I, Types.AddWithout<F, Extract<R, Record<D, `${P}${string}`>>>>, A | ReturnType<Fn>, Pr, Ret>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L748)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L801)
 
 Since v4.0.0

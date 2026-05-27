@@ -10,7 +10,7 @@ contains no typed error reasons.
 
 **When to use**
 
-Use `findError` if you only need the unwrapped error value `E`.
+Use when you use `findError` if you only need the unwrapped error value `E`.
 
 **Example** (extracting the first Fail reason)
 
@@ -34,6 +34,6 @@ if (!Result.isFailure(result)) {
 declare const findFail: <E>(self: Cause<E>) => Result.Result<Fail<E>, Cause<never>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L809)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L878)
 
 Since v4.0.0

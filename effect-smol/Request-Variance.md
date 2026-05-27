@@ -22,6 +22,6 @@ export interface Variance<out A, out E, out R> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Request.ts#L75)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Request.ts#L117)
 
 Since v2.0.0

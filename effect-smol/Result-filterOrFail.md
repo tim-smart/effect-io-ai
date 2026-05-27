@@ -6,6 +6,11 @@ Module: `Result`<br />
 Validates the success value of a `Result` using a predicate, failing with a
 custom error if the predicate returns `false`.
 
+**When to use**
+
+Use to validate an already-successful `Result` value with a predicate or
+refinement.
+
 **Details**
 
 - If the result is already a `Failure`, it is returned as-is
@@ -41,6 +46,6 @@ console.log(result)
 declare const filterOrFail: { <A, B extends A, E2>(refinement: Refinement<NoInfer<A>, B>, orFailWith: (value: NoInfer<A>) => E2): <E>(self: Result<A, E>) => Result<B, E2 | E>; <A, E2>(predicate: Predicate<NoInfer<A>>, orFailWith: (value: NoInfer<A>) => E2): <E>(self: Result<A, E>) => Result<A, E2 | E>; <A, E, B extends A, E2>(self: Result<A, E>, refinement: Refinement<A, B>, orFailWith: (value: A) => E2): Result<B, E | E2>; <A, E, E2>(self: Result<A, E>, predicate: Predicate<A>, orFailWith: (value: A) => E2): Result<A, E | E2>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L989)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L1051)
 
 Since v4.0.0

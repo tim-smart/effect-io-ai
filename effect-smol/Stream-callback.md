@@ -7,7 +7,7 @@ Creates a stream from a callback that can emit values into a queue.
 
 **When to use**
 
-You can use the `Queue` with the apis from the `Queue` module to emit
+Use when you can use the `Queue` with the apis from the `Queue` module to emit
 values to the stream or to signal the stream ending.
 
 By default it uses an "unbounded" buffer size.
@@ -45,6 +45,6 @@ Effect.runPromise(program)
 declare const callback: <A, E = never, R = never>(f: (queue: Queue.Queue<A, E | Cause.Done>) => Effect.Effect<unknown, E, R | Scope.Scope>, options?: { readonly bufferSize?: number | undefined; readonly strategy?: "sliding" | "dropping" | "suspend" | undefined; }) => Stream<A, E, Exclude<R, Scope.Scope>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L794)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L844)
 
 Since v4.0.0

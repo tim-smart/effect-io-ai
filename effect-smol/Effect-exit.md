@@ -6,6 +6,12 @@ Module: `Effect`<br />
 Transforms an effect to encapsulate both failure and success using the `Exit`
 data type.
 
+**When to use**
+
+Use when you need to inspect the full outcome, including typed
+failures, defects, and interruptions. Use `result` or `option` when you only
+need to handle typed failures.
+
 **Details**
 
 `exit` wraps an effect's success or failure inside an `Exit` type, allowing
@@ -44,6 +50,6 @@ Effect.runPromise(program2).then(console.log)
 declare const exit: <A, E, R>(self: Effect<A, E, R>) => Effect<Exit.Exit<A, E>, never, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L2168)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L2302)
 
 Since v2.0.0

@@ -9,7 +9,7 @@ failure value is the original cause.
 
 **When to use**
 
-Use `findDefect` if you only need the unwrapped defect value.
+Use when you use `findDefect` if you only need the unwrapped defect value.
 
 **Example** (extracting the first Die reason)
 
@@ -33,6 +33,6 @@ if (!Result.isFailure(result)) {
 declare const findDie: <E>(self: Cause<E>) => Result.Result<Die, Cause<E>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L915)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L989)
 
 Since v4.0.0

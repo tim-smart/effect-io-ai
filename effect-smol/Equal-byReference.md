@@ -7,7 +7,7 @@ Creates a proxy that uses reference equality instead of structural equality.
 
 **When to use**
 
-- When you have a plain object or array that should be compared by identity
+Use when when you have a plain object or array that should be compared by identity
   (reference), not by contents.
 - When you want to preserve the original object unchanged and get a new
   reference-equal handle.

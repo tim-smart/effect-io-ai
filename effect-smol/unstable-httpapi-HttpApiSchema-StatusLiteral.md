@@ -11,6 +11,6 @@ Common HTTP status code literals accepted by `status`.
 type StatusLiteral = keyof typeof statusCodeByLiteral
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiSchema.ts#L163)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiSchema.ts#L166)
 
 Since v4.0.0

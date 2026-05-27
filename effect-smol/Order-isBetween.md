@@ -7,7 +7,7 @@ Tests whether a value is between a minimum and a maximum (inclusive) according t
 
 **When to use**
 
-- When validating that a value is within a valid range
+Use when when validating that a value is within a valid range
 - When implementing range checks for bounds validation
 - When filtering or selecting values within a range
 
@@ -35,9 +35,9 @@ console.log(betweenNumber(11, { minimum: 1, maximum: 10 })) // false
 
 **See**
 
-- `clamp` - Clamp a value to a range
-- `isLessThanOrEqualTo` - Less than or equal check
-- `isGreaterThanOrEqualTo` - Greater than or equal check
+- `clamp` to clamp a value to a range
+- `isLessThanOrEqualTo` for less than or equal check
+- `isGreaterThanOrEqualTo` for greater than or equal check
 
 **Signature**
 
@@ -45,6 +45,6 @@ console.log(betweenNumber(11, { minimum: 1, maximum: 10 })) // false
 declare const isBetween: <A>(O: Order<A>) => { (options: { minimum: A; maximum: A; }): (self: A) => boolean; (self: A, options: { minimum: A; maximum: A; }): boolean; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Order.ts#L1041)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Order.ts#L1070)
 
 Since v4.0.0

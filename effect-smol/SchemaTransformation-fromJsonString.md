@@ -8,7 +8,7 @@ Decodes a JSON string with `JSON.parse` and encodes a value with
 
 **When to use**
 
-Use this for JSON stored or transmitted as a string, usually before composing
+Use when you use this for JSON stored or transmitted as a string, usually before composing
 with another schema that validates the parsed structure.
 
 **Details**

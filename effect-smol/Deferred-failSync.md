@@ -6,6 +6,10 @@ Module: `Deferred`<br />
 Computes an error when the returned effect is run, then attempts to complete
 the `Deferred` with that error.
 
+**When to use**
+
+Use to lazily compute a typed failure value when the completion effect runs.
+
 **Details**
 
 Fibers waiting on the `Deferred` fail with the computed error only if this
@@ -30,6 +34,6 @@ const program = Effect.gen(function*() {
 declare const failSync: { <E>(evaluate: LazyArg<E>): <A>(self: Deferred<A, E>) => Effect<boolean>; <A, E>(self: Deferred<A, E>, evaluate: LazyArg<E>): Effect<boolean>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Deferred.ts#L417)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Deferred.ts#L479)
 
 Since v2.0.0

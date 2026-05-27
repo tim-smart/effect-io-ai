@@ -28,6 +28,6 @@ const program = Effect.gen(function*() {
 declare const withGroup: ((options?: { readonly label?: string | undefined; readonly collapsed?: boolean | undefined; }) => <A, E, R>(self: Effect.Effect<A, E, R>) => Effect.Effect<A, E, R>) & (<A, E, R>(self: Effect.Effect<A, E, R>, options?: { readonly label?: string | undefined; readonly collapsed?: boolean | undefined; }) => Effect.Effect<A, E, R>)
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Console.ts#L623)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Console.ts#L644)
 
 Since v2.0.0

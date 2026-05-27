@@ -7,8 +7,9 @@ Callback type used to format `Filter` issues into strings.
 
 **When to use**
 
-- Pass a custom `CheckHook` to `makeFormatterStandardSchemaV1` to
-  override how filter failures are rendered.
+Use when passing a custom `CheckHook` to
+`makeFormatterStandardSchemaV1` to override how filter failures are
+rendered.
 
 **Details**
 
@@ -26,6 +27,6 @@ Callback type used to format `Filter` issues into strings.
 type CheckHook = (issue: Filter) => string | undefined
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaIssue.ts#L1016)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaIssue.ts#L1017)
 
 Since v4.0.0

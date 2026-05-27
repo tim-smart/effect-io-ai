@@ -8,7 +8,7 @@ Parses a Draft 2020-12 JSON Schema multi-document into a
 
 **When to use**
 
-Use this to import multiple JSON Schemas sharing definitions.
+Use to import multiple JSON Schemas sharing definitions.
 
 **Details**
 
@@ -31,6 +31,6 @@ This throws if a `$ref` cannot be resolved.
 declare const fromJsonSchemaMultiDocument: (document: JsonSchema.MultiDocument<"draft-2020-12">, options?: { readonly onEnter?: ((js: JsonSchema.JsonSchema) => JsonSchema.JsonSchema) | undefined; }) => MultiDocument
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaRepresentation.ts#L3041)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaRepresentation.ts#L3085)
 
 Since v4.0.0

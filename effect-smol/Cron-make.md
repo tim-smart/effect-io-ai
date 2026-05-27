@@ -5,6 +5,10 @@ Module: `Cron`<br />
 
 Creates a Cron instance from time constraints.
 
+**When to use**
+
+Use to build a cron schedule from explicit sets of allowed time-field values.
+
 **Details**
 
 Constructs a cron schedule by specifying which seconds, minutes, hours,
@@ -99,12 +103,16 @@ const businessHours = Cron.make({
 })
 ```
 
+**See**
+
+- `parse` for building a schedule from a cron expression string
+
 **Signature**
 
 ```ts
 declare const make: (values: { readonly seconds?: Iterable<number> | undefined; readonly minutes: Iterable<number>; readonly hours: Iterable<number>; readonly days: Iterable<number>; readonly months: Iterable<number>; readonly weekdays: Iterable<number>; readonly tz?: DateTime.TimeZone | undefined; }) => Cron
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cron.ts#L363)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cron.ts#L386)
 
 Since v2.0.0

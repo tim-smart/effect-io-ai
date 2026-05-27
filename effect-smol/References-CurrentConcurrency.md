@@ -6,6 +6,11 @@ Module: `References`<br />
 Reference for controlling the current concurrency limit. Can be set to "unbounded"
 for unlimited concurrency or a specific number to limit concurrent operations.
 
+**When to use**
+
+Use to configure the default concurrency limit for operations that read
+concurrency from the current context.
+
 **Example** (Setting current concurrency)
 
 ```ts
@@ -44,6 +49,6 @@ const limitConcurrency = Effect.gen(function*() {
 declare const CurrentConcurrency: Context.Reference<number | "unbounded">
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/References.ts#L106)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/References.ts#L220)
 
 Since v4.0.0

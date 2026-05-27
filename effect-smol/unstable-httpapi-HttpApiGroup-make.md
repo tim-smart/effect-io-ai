@@ -17,6 +17,6 @@ directly instead of nesting them under the group name.
 declare const make: <const Id extends string, const TopLevel extends boolean = false>(identifier: Id, options?: { readonly topLevel?: TopLevel | undefined; }) => HttpApiGroup<Id, never, TopLevel>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiGroup.ts#L388)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiGroup.ts#L399)
 
 Since v4.0.0

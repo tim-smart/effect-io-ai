@@ -11,6 +11,6 @@ Re-exports all named exports from the "./Param.ts" module as `Param`.
 export * as Param from "./Param.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L236)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L50)
 
 Since v4.0.0

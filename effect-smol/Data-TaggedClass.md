@@ -7,7 +7,7 @@ Base class for immutable data types with a `_tag` discriminator.
 
 **When to use**
 
-Use `TaggedClass` when you need a single-variant tagged type or an ad-hoc discriminator. For multi-variant unions, prefer `TaggedEnum` with `taggedEnum`; for yieldable errors, use `TaggedError`.
+Use when you need a single-variant tagged type or an ad-hoc discriminator. For multi-variant unions, prefer `TaggedEnum` with `taggedEnum`; for yieldable errors, use `TaggedError`.
 
 **Details**
 
@@ -41,6 +41,6 @@ console.log(mike._tag)
 declare const TaggedClass: <Tag extends string>(tag: Tag) => new <A extends Record<string, any> = {}>(args: Types.VoidIfEmpty<{ readonly [P in keyof A as P extends "_tag" ? never : P]: A[P]; }>) => Readonly<A> & { readonly _tag: Tag; } & Pipeable.Pipeable
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Data.ts#L159)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Data.ts#L163)
 
 Since v2.0.0

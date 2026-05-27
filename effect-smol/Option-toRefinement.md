@@ -7,7 +7,7 @@ Converts an `Option`-returning function into a type guard (refinement).
 
 **When to use**
 
-- Turning a parsing function into a type-narrowing predicate
+Use when turning a parsing function into a type-narrowing predicate
 - Filtering arrays with `Array.prototype.filter`
 
 **Details**
@@ -47,6 +47,6 @@ console.log(isString(1))
 declare const toRefinement: <A, B extends A>(f: (a: A) => Option<B>) => (a: A) => a is B
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L513)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L540)
 
 Since v2.0.0

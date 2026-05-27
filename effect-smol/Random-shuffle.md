@@ -5,6 +5,10 @@ Module: `Random`<br />
 
 Uses the pseudo-random number generator to shuffle the specified iterable.
 
+**When to use**
+
+Use to randomly reorder an iterable using the active `Random` service.
+
 **Example** (Shuffling values)
 
 ```ts
@@ -22,6 +26,6 @@ const program = Effect.gen(function*() {
 declare const shuffle: <A>(elements: Iterable<A>) => Effect.Effect<Array<A>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Random.ts#L207)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Random.ts#L250)
 
 Since v2.0.0

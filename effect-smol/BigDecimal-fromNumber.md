@@ -5,6 +5,11 @@ Module: `BigDecimal`<br />
 
 Creates a `BigDecimal` from a `number` value.
 
+**When to use**
+
+Use to convert a finite JavaScript number to a `BigDecimal` without throwing
+on invalid input.
+
 **Details**
 
 Returns `Option.none()` for `NaN`, `+Infinity` or `-Infinity`.
@@ -28,12 +33,17 @@ assert.deepStrictEqual(
 assert.deepStrictEqual(BigDecimal.fromNumber(Infinity), Option.none())
 ```
 
+**See**
+
+- `fromNumberUnsafe` for throwing when the number is not finite
+- `fromString` for parsing decimal strings directly
+
 **Signature**
 
 ```ts
 declare const fromNumber: (n: number) => Option.Option<BigDecimal>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigDecimal.ts#L1157)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigDecimal.ts#L1375)
 
 Since v2.0.0

@@ -20,6 +20,6 @@ pipe("abbbc", String.indexOf("z")) // Option.none()
 declare const indexOf: (searchString: string) => (self: string) => Option.Option<number>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L620)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L694)
 
 Since v2.0.0

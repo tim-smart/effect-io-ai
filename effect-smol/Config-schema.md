@@ -7,7 +7,7 @@ Creates a `Config<T>` from a `Schema.Codec`.
 
 **When to use**
 
-- Reading structured or validated config (structs, arrays, unions, branded
+Use when reading structured or validated config (structs, arrays, unions, branded
   types, etc.).
 - All convenience constructors (`string`, `number`, …) delegate to this.
 
@@ -51,6 +51,6 @@ const provider = ConfigProvider.fromUnknown({
 declare const schema: <T, E>(codec: Schema.Codec<T, E>, path?: string | ConfigProvider.Path) => Config<T>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Config.ts#L722)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Config.ts#L735)
 
 Since v4.0.0

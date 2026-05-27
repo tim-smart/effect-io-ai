@@ -17,6 +17,6 @@ export interface HttpClientResponse extends HttpIncomingMessage.HttpIncomingMess
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpClientResponse.ts#L75)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpClientResponse.ts#L94)
 
 Since v4.0.0

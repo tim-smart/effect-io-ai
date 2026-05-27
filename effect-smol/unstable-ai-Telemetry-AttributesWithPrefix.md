@@ -38,6 +38,6 @@ type AttributesWithPrefix<Attributes, Prefix> = {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Telemetry.ts#L271)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Telemetry.ts#L277)
 
 Since v4.0.0

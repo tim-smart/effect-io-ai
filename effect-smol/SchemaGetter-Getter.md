@@ -7,7 +7,7 @@ A composable transformation from an encoded type `E` to a decoded type `T`.
 
 **When to use**
 
-- Building custom schema transformations with `Schema.decodeTo` or `Schema.decode`.
+Use to build custom schema transformations with `Schema.decodeTo` or `Schema.decode`.
 - Composing multiple transformation steps into a single getter.
 
 **Details**
@@ -35,9 +35,9 @@ const composed = parseNumber.compose(double)
 
 **See**
 
-- `transform` - create a getter from a pure function
-- `passthrough` - identity getter
-- `transformOrFail` - fallible transformation
+- `transform` to create a getter from a pure function
+- `passthrough` for the identity getter
+- `transformOrFail` for fallible transformation
 
 **Signature**
 

@@ -8,7 +8,7 @@ The resulting `Order` compares using each `Order` in sequence until a non-zero r
 
 **When to use**
 
-- When you have a variable number of orders to combine
+Use when when you have a variable number of orders to combine
 - When combining orders from a collection or array
 - When implementing dynamic multi-criteria sorting
 
@@ -44,8 +44,8 @@ console.log(combinedOrder(person1, person2)) // -1 (Same age, Alice < Bob)
 
 **See**
 
-- `combine` - Combine two orders
-- `makeReducer` - Create a reducer for combining orders
+- `combine` to combine two orders
+- `makeReducer` to create a reducer for combining orders
 
 **Signature**
 
@@ -53,6 +53,6 @@ console.log(combinedOrder(person1, person2)) // -1 (Same age, Alice < Bob)
 declare const combineAll: <A>(collection: Iterable<Order<A>>) => Order<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Order.ts#L472)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Order.ts#L501)
 
 Since v2.0.0

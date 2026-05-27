@@ -5,6 +5,10 @@ Module: `Number`<br />
 
 Restricts the given `number` to be within the range specified by the `minimum` and `maximum` values.
 
+**When to use**
+
+Use to force a number into an inclusive range.
+
 **Details**
 
 - If the `number` is less than the `minimum` value, the function returns the `minimum` value.
@@ -24,12 +28,16 @@ assert.equal(clamp(0), 1)
 assert.equal(clamp(6), 5)
 ```
 
+**See**
+
+- `between` for checking whether a number is already inside a range
+
 **Signature**
 
 ```ts
 declare const clamp: { (options: { minimum: number; maximum: number; }): (self: number) => number; (self: number, options: { minimum: number; maximum: number; }): number; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Number.ts#L374)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Number.ts#L518)
 
 Since v2.0.0

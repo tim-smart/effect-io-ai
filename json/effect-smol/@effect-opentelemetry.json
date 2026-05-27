@@ -13,7 +13,7 @@
     "since": "4.0.0",
     "category": null,
     "signature": "export * as Logger from \"./Logger.ts\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/index.ts#L31"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/index.ts#L10"
   },
   {
     "_tag": "Export",
@@ -29,7 +29,7 @@
     "since": "4.0.0",
     "category": null,
     "signature": "export * as Metrics from \"./Metrics.ts\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/index.ts#L52"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/index.ts#L15"
   },
   {
     "_tag": "Export",
@@ -45,7 +45,7 @@
     "since": "4.0.0",
     "category": null,
     "signature": "export * as NodeSdk from \"./NodeSdk.ts\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/index.ts#L79"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/index.ts#L20"
   },
   {
     "_tag": "Export",
@@ -61,7 +61,7 @@
     "since": "4.0.0",
     "category": null,
     "signature": "export * as Resource from \"./Resource.ts\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/index.ts#L101"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/index.ts#L25"
   },
   {
     "_tag": "Export",
@@ -77,7 +77,7 @@
     "since": "4.0.0",
     "category": null,
     "signature": "export * as Tracer from \"./Tracer.ts\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/index.ts#L123"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/index.ts#L30"
   },
   {
     "_tag": "Export",
@@ -93,7 +93,7 @@
     "since": "4.0.0",
     "category": null,
     "signature": "export * as WebSdk from \"./WebSdk.ts\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/index.ts#L154"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/index.ts#L35"
   },
   {
     "_tag": "Class",
@@ -109,7 +109,7 @@
     "since": "4.0.0",
     "category": "services",
     "signature": "declare class OtelLoggerProvider",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Logger.ts#L48"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Logger.ts#L59"
   },
   {
     "_tag": "Constant",
@@ -125,7 +125,7 @@
     "since": "4.0.0",
     "category": "constructors",
     "signature": "declare const make: Effect.Effect<Logger.Logger<unknown, void>, never, OtelLoggerProvider>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Logger.ts#L92"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Logger.ts#L103"
   },
   {
     "_tag": "Function",
@@ -141,7 +141,7 @@
     "since": "4.0.0",
     "category": "converting",
     "signature": "declare const logLevelToSeverityNumber: (level: LogLevel.LogLevel) => SeverityNumber",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Logger.ts#L67"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Logger.ts#L78"
   },
   {
     "_tag": "Function",
@@ -151,13 +151,13 @@
     },
     "project": "@effect/opentelemetry",
     "name": "layer",
-    "description": "Creates a layer that installs the OpenTelemetry-backed Effect logger, merging with existing loggers by default.",
+    "description": "Creates a layer that installs the OpenTelemetry-backed Effect logger, merging with existing loggers by default.\n\n**When to use**\n\nUse to install the OpenTelemetry-backed Effect logger in an application that\nhas an `OtelLoggerProvider`, so standard Effect logging emits OpenTelemetry\nlog records.\n\n**Details**\n\nThe layer installs the logger created by `make`. `mergeWithExisting` defaults\nto `true`; set it to `false` to replace the current logger set.",
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
     "category": "layers",
     "signature": "declare const layer: (options: { readonly mergeWithExisting?: boolean | undefined; }) => Layer.Layer<never, never, OtelLoggerProvider>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Logger.ts#L140"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Logger.ts#L165"
   },
   {
     "_tag": "Function",
@@ -173,7 +173,7 @@
     "since": "4.0.0",
     "category": "layers",
     "signature": "declare const layerLoggerProvider: (processor: Otel.LogRecordProcessor | NonEmptyReadonlyArray<Otel.LogRecordProcessor>, config?: Omit<Otel.LoggerProviderConfig, \"resource\"> & { readonly shutdownTimeout?: Duration.Input | undefined; }) => Layer.Layer<OtelLoggerProvider, never, Resource>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Logger.ts#L166"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Logger.ts#L191"
   },
   {
     "_tag": "Function",
@@ -183,13 +183,13 @@
     },
     "project": "@effect/opentelemetry",
     "name": "makeProducer",
-    "description": "Creates an OpenTelemetry metric producer from Effect metrics.",
+    "description": "Creates an OpenTelemetry metric producer from Effect metrics.\n\n**When to use**\n\nUse to create a `MetricProducer` when you need to wire Effect metrics into\nOpenTelemetry manually instead of using the scoped `layer` helper.\n\n**Details**\n\nRequires the current OpenTelemetry `Resource`, captures the current Effect\ncontext, and uses cumulative temporality by default. Pass `\"delta\"` for\ninterval-based values.",
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
     "category": "constructors",
     "signature": "declare const makeProducer: (temporality?: TemporalityPreference) => Effect.Effect<MetricProducer, never, Resource>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Metrics.ts#L52"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Metrics.ts#L82"
   },
   {
     "_tag": "Function",
@@ -205,7 +205,7 @@
     "since": "4.0.0",
     "category": "constructors",
     "signature": "declare const registerProducer: (self: MetricProducer, metricReader: LazyArg<MetricReader | Arr.NonEmptyReadonlyArray<MetricReader>>, options?: { readonly shutdownTimeout?: Duration.Input | undefined; }) => Effect.Effect<Array<any>, never, Scope.Scope>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Metrics.ts#L65"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Metrics.ts#L95"
   },
   {
     "_tag": "Function",
@@ -221,7 +221,7 @@
     "since": "4.0.0",
     "category": "layers",
     "signature": "declare const layer: (evaluate: LazyArg<MetricReader | Arr.NonEmptyReadonlyArray<MetricReader>>, options?: { readonly shutdownTimeout?: Duration.Input | undefined; readonly temporality?: TemporalityPreference | undefined; }) => Layer.Layer<never, never, Resource>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Metrics.ts#L122"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Metrics.ts#L152"
   },
   {
     "_tag": "TypeAlias",
@@ -237,7 +237,7 @@
     "since": "4.0.0",
     "category": "models",
     "signature": "type TemporalityPreference = \"cumulative\" | \"delta\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Metrics.ts#L44"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Metrics.ts#L60"
   },
   {
     "_tag": "Constant",
@@ -253,7 +253,7 @@
     "since": "2.0.0",
     "category": "layers",
     "signature": "declare const layerEmpty: Layer.Layer<Resource.Resource, never, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/NodeSdk.ts#L158"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/NodeSdk.ts#L175"
   },
   {
     "_tag": "Function",
@@ -279,13 +279,13 @@
     },
     "project": "@effect/opentelemetry",
     "name": "layer",
-    "description": "Creates a Node OpenTelemetry layer from configuration, enabling tracing, metrics, and logging only when their processors or readers are supplied.",
+    "description": "Creates a Node OpenTelemetry layer from configuration, enabling tracing, metrics, and logging only when their processors or readers are supplied.\n\n**When to use**\n\nUse to install OpenTelemetry support for a Node.js Effect application from\none configuration object, enabling tracing, metrics, logging, or any\ncombination of those signals based on the processors and readers supplied.\n\n**Details**\n\nThe configuration can be provided lazily or effectfully. The layer always\nprovides `Resource.Resource`, building it from environment variables and any\nexplicit resource metadata in the configuration.\n\n**Gotchas**\n\nRegister Node auto-instrumentations before importing modules that should be\npatched, because many Node instrumentations hook module loading.",
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
     "category": "layers",
     "signature": "declare const layer: { (evaluate: LazyArg<Configuration>): Layer.Layer<Resource.Resource>; <R, E>(evaluate: Effect.Effect<Configuration, E, R>): Layer.Layer<Resource.Resource, E, R>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/NodeSdk.ts#L105"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/NodeSdk.ts#L122"
   },
   {
     "_tag": "Interface",
@@ -317,7 +317,7 @@
     "since": "4.0.0",
     "category": "services",
     "signature": "declare class Resource",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Resource.ts#L36"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Resource.ts#L49"
   },
   {
     "_tag": "Constant",
@@ -333,7 +333,7 @@
     "since": "4.0.0",
     "category": "layers",
     "signature": "declare const layerEmpty: Layer.Layer<Resource, never, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Resource.ts#L127"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Resource.ts#L160"
   },
   {
     "_tag": "Function",
@@ -349,7 +349,7 @@
     "since": "4.0.0",
     "category": "layers",
     "signature": "declare const layer: (config: { readonly serviceName: string; readonly serviceVersion?: string; readonly attributes?: OtelApi.Attributes; }) => Layer.Layer<Resource, never, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Resource.ts#L47"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Resource.ts#L60"
   },
   {
     "_tag": "Function",
@@ -359,13 +359,13 @@
     },
     "project": "@effect/opentelemetry",
     "name": "configToAttributes",
-    "description": "Converts resource configuration into OpenTelemetry attributes, adding service name, optional service version, and telemetry SDK metadata.",
+    "description": "Converts resource configuration into OpenTelemetry attributes, adding service name, optional service version, and telemetry SDK metadata.\n\n**When to use**\n\nUse to turn explicit service metadata into a raw OpenTelemetry attribute map\nfor lower-level resource construction or for merging with environment-derived\nattributes via `layerFromEnv`.\n\n**Details**\n\nThe returned record copies `attributes` first, then sets `service.name`,\n`telemetry.sdk.name`, and `telemetry.sdk.language`. `service.version` is\nincluded only when `serviceVersion` is provided.\n\n**Gotchas**\n\nCustom values for `service.name` and `telemetry.sdk.*` are overwritten by this\nhelper. An empty `serviceVersion` is treated as absent.",
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
     "category": "configuration",
     "signature": "declare const configToAttributes: (options: { readonly serviceName: string; readonly serviceVersion?: string; readonly attributes?: OtelApi.Attributes; }) => Record<string, string>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Resource.ts#L63"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Resource.ts#L96"
   },
   {
     "_tag": "Function",
@@ -381,7 +381,7 @@
     "since": "4.0.0",
     "category": "layers",
     "signature": "declare const layerFromEnv: (additionalAttributes?: OtelApi.Attributes | undefined) => Layer.Layer<Resource>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Resource.ts#L88"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Resource.ts#L121"
   },
   {
     "_tag": "Class",
@@ -551,13 +551,13 @@
     },
     "project": "@effect/opentelemetry",
     "name": "layer",
-    "description": "Layer that creates an OpenTelemetry tracer from a provider and resource, then installs it as the Effect tracer.",
+    "description": "Layer that creates an OpenTelemetry tracer from a provider and resource, then installs it as the Effect tracer.\n\n**When to use**\n\nUse when your application already supplies an `OtelTracerProvider` and a\n`Resource`, and you want Effect spans to be created by an OpenTelemetry\ntracer derived from those services.",
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
     "category": "layers",
     "signature": "declare const layer: Layer.Layer<OtelTracer, never, OtelTracerProvider | Resource>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Tracer.ts#L228"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Tracer.ts#L238"
   },
   {
     "_tag": "Constant",
@@ -573,7 +573,7 @@
     "since": "4.0.0",
     "category": "accessors",
     "signature": "declare const currentOtelSpan: Effect.Effect<Otel.Span, Cause.NoSuchElementError, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Tracer.ts#L252"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Tracer.ts#L262"
   },
   {
     "_tag": "Constant",
@@ -583,13 +583,13 @@
     },
     "project": "@effect/opentelemetry",
     "name": "withSpanContext",
-    "description": "Sets an effect's parent span from the given OpenTelemetry `SpanContext`.\n\n**When to use**\n\nUse this when OpenTelemetry instrumentation outside Effect has already\nproduced a parent span context and an effect should continue that trace.",
+    "description": "Sets an effect's parent span from the given OpenTelemetry `SpanContext`.\n\n**When to use**\n\nUse when OpenTelemetry instrumentation outside Effect has already\nproduced a parent span context and an effect should continue that trace.",
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
     "category": "propagation",
     "signature": "declare const withSpanContext: { (spanContext: Otel.SpanContext): <A, E, R>(self: Effect.Effect<A, E, R>) => Effect.Effect<A, E, Exclude<R, Tracer.ParentSpan>>; <A, E, R>(self: Effect.Effect<A, E, R>, spanContext: Otel.SpanContext): Effect.Effect<A, E, Exclude<R, Tracer.ParentSpan>>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Tracer.ts#L357"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Tracer.ts#L367"
   },
   {
     "_tag": "Function",
@@ -631,13 +631,13 @@
     },
     "project": "@effect/opentelemetry",
     "name": "layer",
-    "description": "Creates a Web OpenTelemetry layer from configuration, providing the resource and enabling tracing, metrics, and logging when configured.",
+    "description": "Creates a Web OpenTelemetry layer from configuration, providing the resource and enabling tracing, metrics, and logging when configured.\n\n**When to use**\n\nUse to install browser OpenTelemetry support for an Effect application when\nservice metadata is provided in code and tracing, metrics, or logging should\nbe enabled from supplied span processors, metric readers, or log record\nprocessors.\n\n**Details**\n\nThe configuration can be provided lazily or effectfully. The layer always\nprovides `Resource.Resource`; tracing, metrics, and logging are installed only\nwhen the corresponding processors or readers are non-empty.\n\n**Gotchas**\n\nBrowser resource metadata is explicit; this layer does not read\nOpenTelemetry environment variables. Empty processor or reader arrays are\ntreated as not configured.",
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
     "category": "layers",
     "signature": "declare const layer: { (evaluate: LazyArg<Configuration>): Layer.Layer<Resource.Resource>; <E, R>(evaluate: Effect.Effect<Configuration, E, R>): Layer.Layer<Resource.Resource, E, R>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/WebSdk.ts#L103"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/WebSdk.ts#L122"
   },
   {
     "_tag": "Interface",

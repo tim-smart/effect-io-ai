@@ -11,6 +11,6 @@ Re-exports all named exports from the "./Channel.ts" module as `Channel`.
 export * as Channel from "./Channel.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L344)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L72)
 
 Since v2.0.0

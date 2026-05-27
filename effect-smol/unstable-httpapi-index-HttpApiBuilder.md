@@ -11,6 +11,6 @@ Re-exports all named exports from the "./HttpApiBuilder.ts" module as `HttpApiBu
 export * as HttpApiBuilder from "./HttpApiBuilder.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L65)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L15)
 
 Since v4.0.0

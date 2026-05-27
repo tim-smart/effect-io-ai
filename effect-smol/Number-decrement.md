@@ -5,6 +5,10 @@ Module: `Number`<br />
 
 Decrements a number by `1`.
 
+**When to use**
+
+Use to decrement a numeric counter by one.
+
 **Example** (Decrementing a number)
 
 ```ts
@@ -20,6 +24,6 @@ assert.deepStrictEqual(Number.decrement(3), 2)
 declare const decrement: (n: number) => number
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Number.ts#L193)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Number.ts#L301)
 
 Since v2.0.0

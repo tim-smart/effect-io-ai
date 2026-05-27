@@ -6,6 +6,10 @@ Module: `Deferred`<br />
 Computes a `Cause` when the returned effect is run, then attempts to
 complete the `Deferred` with that cause.
 
+**When to use**
+
+Use to lazily compute a full failure cause when the completion effect runs.
+
 **Details**
 
 Fibers waiting on the `Deferred` observe the computed cause only if this
@@ -33,6 +37,6 @@ const program = Effect.gen(function*() {
 declare const failCauseSync: { <E>(evaluate: LazyArg<Cause.Cause<E>>): <A>(self: Deferred<A, E>) => Effect<boolean>; <A, E>(self: Deferred<A, E>, evaluate: LazyArg<Cause.Cause<E>>): Effect<boolean>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Deferred.ts#L489)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Deferred.ts#L559)
 
 Since v2.0.0

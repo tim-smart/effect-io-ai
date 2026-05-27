@@ -11,6 +11,6 @@ Computer-use action payload for performing a middle click, optionally at a speci
 type ComputerUseMiddleClickAction = typeof ComputerUseMiddleClickAction.Type
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L659)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L1064)
 
 Since v4.0.0

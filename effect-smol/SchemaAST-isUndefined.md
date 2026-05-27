@@ -5,12 +5,21 @@ Module: `SchemaAST`<br />
 
 Narrows an `AST` to `Undefined`.
 
+**When to use**
+
+Use to identify AST nodes that represent exactly the JavaScript `undefined`
+value.
+
+**See**
+
+- `isVoid` for narrowing AST nodes that represent TypeScript `void` instead of exact `undefined`
+
 **Signature**
 
 ```ts
 declare const isUndefined: (ast: AST) => ast is Undefined
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L180)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L203)
 
 Since v4.0.0

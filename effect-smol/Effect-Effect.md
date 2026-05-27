@@ -7,6 +7,11 @@ The `Effect` interface defines a value that lazily describes a workflow or
 job. The workflow requires some context `R`, and may fail with an error of
 type `E`, or succeed with a value of type `A`.
 
+**When to use**
+
+Use when you need to represent a lazy, composable workflow that can require
+services, fail with a typed error, or succeed with a typed value.
+
 **Details**
 
 `Effect` values model resourceful interaction with the outside world,
@@ -30,6 +35,6 @@ export interface Effect<out A, out E = never, out R = never> extends Pipeable, I
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L171)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L183)
 
 Since v2.0.0

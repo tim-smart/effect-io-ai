@@ -16,6 +16,6 @@ when the atom is disposed.
 declare const windowFocusSignal: Atom<number>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Atom.ts#L2037)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Atom.ts#L2051)
 
 Since v4.0.0

@@ -5,6 +5,10 @@ Module: `Deferred`<br />
 
 Attempts to complete the `Deferred` with the specified value.
 
+**When to use**
+
+Use to complete a `Deferred` with a successful value.
+
 **Details**
 
 Fibers waiting on the `Deferred` receive the value only if this call
@@ -31,6 +35,6 @@ const program = Effect.gen(function*() {
 declare const succeed: { <A>(value: A): <E>(self: Deferred<A, E>) => Effect<boolean>; <A, E>(self: Deferred<A, E>, value: A): Effect<boolean>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Deferred.ts#L717)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Deferred.ts#L823)
 
 Since v2.0.0

@@ -5,6 +5,10 @@ Module: `Types`<br />
 
 Extracts the type parameter `A` from a `Contravariant<A>`.
 
+**When to use**
+
+Use to recover the carried type from a contravariant phantom marker.
+
 **Example** (Extracting the inner type)
 
 ```ts
@@ -24,6 +28,6 @@ type Inner = Types.Contravariant.Type<Types.Contravariant<string>>
 type Type<A> = A extends Contravariant<infer U> ? U : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Types.ts#L790)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Types.ts#L818)
 
 Since v3.9.0

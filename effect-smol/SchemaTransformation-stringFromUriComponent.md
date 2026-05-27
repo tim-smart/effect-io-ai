@@ -8,7 +8,7 @@ UTF-8 string into a URI component encoded string.
 
 **When to use**
 
-- Storing structured data in URL query parameters or fragments.
+Use when storing structured data in URL query parameters or fragments.
 - Composing with `Schema.parseJson` to round-trip JSON through a URL.
 
 **Details**

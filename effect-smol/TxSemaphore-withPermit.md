@@ -7,6 +7,11 @@ Executes an effect with a single permit from the semaphore. The permit is
 automatically acquired before execution and released afterwards, even if the
 effect fails or is interrupted.
 
+**When to use**
+
+Use to run an effect while automatically acquiring and releasing one
+transactional permit.
+
 **Details**
 
 The permit acquisition and release operations use atomic semantics to ensure
@@ -36,12 +41,18 @@ const program = Effect.gen(function*() {
 })
 ```
 
+**See**
+
+- `withPermits` for automatically acquiring and releasing multiple permits
+- `withPermitScoped` for acquiring one permit for the current scope
+- `acquire` for manual single-permit acquisition
+
 **Signature**
 
 ```ts
 declare const withPermit: { (self: TxSemaphore): <A, E, R>(effect: Effect.Effect<A, E, R>) => Effect.Effect<A, E, R>; <A, E, R>(self: TxSemaphore, effect: Effect.Effect<A, E, R>): Effect.Effect<A, E, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxSemaphore.ts#L456)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxSemaphore.ts#L559)
 
 Since v2.0.0

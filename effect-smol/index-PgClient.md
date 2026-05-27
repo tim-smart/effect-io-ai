@@ -11,6 +11,6 @@ Re-exports all named exports from the "./PgClient.ts" module as `PgClient`.
 export * as PgClient from "./PgClient.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/sql/pg/src/index.ts#L27)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/sql/pg/src/index.ts#L10)
 
 Since v4.0.0

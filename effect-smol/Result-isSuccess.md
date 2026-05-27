@@ -5,6 +5,10 @@ Module: `Result`<br />
 
 Checks whether a `Result` is a `Success`.
 
+**When to use**
+
+Use to narrow a known `Result` to the `Success` variant.
+
 **Details**
 
 - Acts as a TypeScript type guard, narrowing to `Success<A, E>`
@@ -34,6 +38,6 @@ if (Result.isSuccess(result)) {
 declare const isSuccess: <A, E>(self: Result<A, E>) => self is Success<A, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L626)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L659)
 
 Since v4.0.0

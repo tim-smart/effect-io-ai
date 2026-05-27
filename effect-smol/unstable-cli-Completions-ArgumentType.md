@@ -16,6 +16,6 @@ type ArgumentType = | { readonly _tag: "String" }
   | { readonly _tag: "Path"; readonly pathType: "file" | "directory" | "either" }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Completions.ts#L80)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Completions.ts#L107)
 
 Since v4.0.0

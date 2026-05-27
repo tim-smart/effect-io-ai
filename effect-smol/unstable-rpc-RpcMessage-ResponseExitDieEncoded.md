@@ -12,6 +12,6 @@ encoded with `Schema.Defect`.
 declare const ResponseExitDieEncoded: (options: { readonly requestId: RequestId; readonly defect: unknown; }) => ResponseExitEncoded
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RpcMessage.ts#L344)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RpcMessage.ts#L362)
 
 Since v4.0.0

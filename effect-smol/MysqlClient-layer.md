@@ -11,6 +11,6 @@ Creates a layer from a concrete MySQL client configuration, providing both `Mysq
 declare const layer: (config: MysqlClientConfig) => Layer.Layer<MysqlClient | Client.SqlClient, Config.ConfigError | SqlError>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/sql/mysql2/src/MysqlClient.ts#L439)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/sql/mysql2/src/MysqlClient.ts#L453)
 
 Since v4.0.0

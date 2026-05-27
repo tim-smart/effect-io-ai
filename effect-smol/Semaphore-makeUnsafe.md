@@ -8,8 +8,8 @@ number of permits.
 
 **When to use**
 
-Use this low-level constructor when an immediate semaphore value is required;
-otherwise prefer the effectful `make` constructor.
+Use to construct a semaphore synchronously when an immediate value is
+required outside an Effect workflow.
 
 **Example** (Creating an unsafe semaphore)
 
@@ -43,6 +43,6 @@ const program = Effect.all([
 declare const makeUnsafe: (permits: number) => Semaphore
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Semaphore.ts#L162)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Semaphore.ts#L212)
 
 Since v4.0.0

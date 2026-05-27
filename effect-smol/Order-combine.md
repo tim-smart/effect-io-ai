@@ -8,7 +8,7 @@ and if the values are equal, then compares using the second `Order`.
 
 **When to use**
 
-- When you need multi-criteria comparison (e.g., sort by age, then by name)
+Use when when you need multi-criteria comparison (e.g., sort by age, then by name)
 - When creating composite orders from simpler orders
 - When implementing lexicographic ordering
 
@@ -44,8 +44,8 @@ console.log(byAgeAndName(person1, person3)) // 1 (Alice (30) > Charlie (25))
 
 **See**
 
-- `combineAll` - Combine multiple orders from a collection
-- `mapInput` - Transform orders to work with different types
+- `combineAll` to combine multiple orders from a collection
+- `mapInput` to transform orders to work with different types
 
 **Signature**
 
@@ -53,6 +53,6 @@ console.log(byAgeAndName(person1, person3)) // 1 (Alice (30) > Charlie (25))
 declare const combine: { <A>(that: Order<A>): (self: Order<A>) => Order<A>; <A>(self: Order<A>, that: Order<A>): Order<A>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Order.ts#L380)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Order.ts#L409)
 
 Since v2.0.0

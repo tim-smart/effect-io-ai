@@ -5,6 +5,11 @@ Module: `Context`<br />
 
 Gets the service for a key wrapped in an `Option`.
 
+**When to use**
+
+Use when service absence is expected and should be represented
+as data. Use `getOrElse` when you want to provide a fallback value directly.
+
 **Details**
 
 Returns `Option.some` when the service is stored in the context. If the key
@@ -29,12 +34,16 @@ assert.deepStrictEqual(
 assert.deepStrictEqual(Context.getOption(context, Timeout), Option.none())
 ```
 
+**See**
+
+- `getOrElse` for returning a fallback value directly
+
 **Signature**
 
 ```ts
 declare const getOption: { <S, I>(service: Key<I, S>): <Services>(self: Context<Services>) => Option.Option<S>; <Services, S, I>(self: Context<Services>, service: Key<I, S>): Option.Option<S>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Context.ts#L906)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Context.ts#L1086)
 
 Since v2.0.0

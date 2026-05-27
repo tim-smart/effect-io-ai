@@ -8,7 +8,7 @@ array without modifying the list.
 
 **When to use**
 
-Use `takeN` when the copied elements should also be removed from the list.
+Use when the copied elements should also be removed from the list.
 
 **Signature**
 
@@ -16,6 +16,6 @@ Use `takeN` when the copied elements should also be removed from the list.
 declare const toArrayN: <A>(self: MutableList<A>, n: number) => Array<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableList.ts#L830)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableList.ts#L838)
 
 Since v4.0.0

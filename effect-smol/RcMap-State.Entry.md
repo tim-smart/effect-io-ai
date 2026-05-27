@@ -6,6 +6,11 @@ Module: `RcMap`<br />
 Represents an individual entry in the RcMap, containing the resource's
 metadata including reference count, expiration time, and lifecycle management.
 
+**When to use**
+
+Use when inspecting the stored resource, reference count, and idle lifecycle
+metadata for a single key.
+
 **Signature**
 
 ```ts
@@ -20,6 +25,6 @@ export interface Entry<A, E> {
   }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RcMap.ts#L128)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RcMap.ts#L164)
 
 Since v4.0.0

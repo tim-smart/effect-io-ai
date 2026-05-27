@@ -11,6 +11,6 @@ Returns `true` if the provided value is an `HttpBody`.
 declare const isHttpBody: (u: unknown) => u is HttpBody
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpBody.ts#L40)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpBody.ts#L80)
 
 Since v4.0.0

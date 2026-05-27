@@ -16,7 +16,8 @@ validates date strings, not Date objects.
 Arbitrary:
 
 When generating test data with fast-check, this applies `min` and `max`
-constraints to ensure generated Date objects fall within the specified range.
+constraints to ensure generated Date objects fall within the specified range,
+shifting exclusive bounds by one millisecond.
 
 **Signature**
 
@@ -24,6 +25,6 @@ constraints to ensure generated Date objects fall within the specified range.
 declare const isBetweenDate: (options: { readonly minimum: globalThis.Date; readonly maximum: globalThis.Date; readonly exclusiveMinimum?: boolean | undefined; readonly exclusiveMaximum?: boolean | undefined; }, annotations?: Annotations.Filter) => AST.Filter<globalThis.Date>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L6879)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L7033)
 
 Since v4.0.0

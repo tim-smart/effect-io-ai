@@ -31,6 +31,6 @@ const program = Effect.gen(function*() {
 declare const bounded: <A = never>(capacity: number) => Effect.Effect<TxPubSub<A>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxPubSub.ts#L123)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxPubSub.ts#L163)
 
 Since v2.0.0

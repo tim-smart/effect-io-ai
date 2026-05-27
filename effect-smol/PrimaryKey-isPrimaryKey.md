@@ -5,10 +5,22 @@ Module: `PrimaryKey`<br />
 
 Checks whether a value implements the `PrimaryKey` protocol.
 
+**When to use**
+
+Use to narrow an unknown value before treating it as a `PrimaryKey`.
+
 **Details**
 
-This is a structural guard for the `PrimaryKey.symbol` property. It does not
-call the method or verify that it returns a string.
+This is a structural guard for the `PrimaryKey.symbol` property.
+
+**Gotchas**
+
+This guard does not call the method or verify that it returns a string.
+
+**See**
+
+- `PrimaryKey` for the protocol being checked
+- `value` for extracting the string value after narrowing
 
 **Signature**
 
@@ -16,6 +28,6 @@ call the method or verify that it returns a string.
 declare const isPrimaryKey: (u: unknown) => u is PrimaryKey
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PrimaryKey.ts#L66)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PrimaryKey.ts#L127)
 
 Since v4.0.0

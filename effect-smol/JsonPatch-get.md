@@ -7,7 +7,7 @@ Computes a structural patch that transforms `oldValue` into `newValue`.
 
 **When to use**
 
-Use `get` to compute differences between JSON documents, detect structural
+Use to compute differences between JSON documents, detect structural
 changes, or create deterministic update operations from before and after
 states.
 
@@ -43,8 +43,8 @@ const patch = JsonPatch.get(oldValue, newValue)
 
 **See**
 
-- `apply` - Applies the generated patch to a document
-- `JsonPatchOperation` - The operation types in the patch
+- `apply` to apply the generated patch to a document
+- `JsonPatchOperation` for the operation types in the patch
 
 **Signature**
 
@@ -52,6 +52,6 @@ const patch = JsonPatch.get(oldValue, newValue)
 declare const get: (oldValue: Schema.Json, newValue: Schema.Json) => JsonPatch
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/JsonPatch.ts#L213)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/JsonPatch.ts#L236)
 
 Since v4.0.0

@@ -8,7 +8,7 @@ constraint (e.g. a string that is too short, a number out of range).
 
 **When to use**
 
-- Detect constraint violations from `Schema.filter`, `Schema.minLength`,
+Use when detect constraint violations from `Schema.filter`, `Schema.minLength`,
   `Schema.greaterThan`, etc.
 - Create custom validation errors in `Schema.makeFilter` callbacks.
 

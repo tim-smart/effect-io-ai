@@ -7,7 +7,7 @@ Builds a nested tree object from a list of bracket-path entries.
 
 **When to use**
 
-- Parsing FormData or URLSearchParams entries into structured objects.
+Use to parse FormData or URLSearchParams entries into structured objects.
 - You have flat key-value pairs with bracket-path keys that need nesting.
 
 **Details**
@@ -39,9 +39,9 @@ const tree = SchemaGetter.makeTreeRecord([
 
 **See**
 
-- `collectBracketPathEntries` - inverse operation (tree to flat entries)
-- `decodeFormData` - uses this internally
-- `decodeURLSearchParams` - uses this internally
+- `collectBracketPathEntries` for the inverse operation (tree to flat entries)
+- `decodeFormData` for a higher-level FormData decoder
+- `decodeURLSearchParams` for a higher-level URLSearchParams decoder
 
 **Signature**
 

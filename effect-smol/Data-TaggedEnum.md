@@ -7,7 +7,7 @@ Transforms a record of variant definitions into a discriminated union type.
 
 **When to use**
 
-Use `TaggedEnum` when you have two or more variants that share a common `_tag` discriminator. For generic tagged enums, see `TaggedEnum.WithGenerics`.
+Use when you have two or more variants that share a common `_tag` discriminator. For generic tagged enums, see `TaggedEnum.WithGenerics`.
 
 **Details**
 
@@ -56,6 +56,6 @@ type TaggedEnum<A> = keyof A extends infer Tag ? Tag extends keyof A ? Types.Sim
   : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Data.ts#L213)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Data.ts#L217)
 
 Since v2.0.0

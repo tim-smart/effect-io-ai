@@ -7,7 +7,7 @@ Creates an `Order` for `Option<A>` from an `Order` for `A`.
 
 **When to use**
 
-- Sorting collections of `Option` values
+Use to sort collections of `Option` values
 
 **Details**
 
@@ -38,6 +38,6 @@ console.log(ord(Option.some(1), Option.some(2)))
 declare const makeOrder: <A>(O: Order<A>) => Order<Option<A>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L2123)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L2154)
 
 Since v4.0.0

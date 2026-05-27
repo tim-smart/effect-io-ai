@@ -5,6 +5,10 @@ Module: `Function`<br />
 
 A thunk that returns always `false`.
 
+**When to use**
+
+Use when an API expects a thunk and every invocation should return `false`.
+
 **Example** (Returning false from a thunk)
 
 ```ts
@@ -20,6 +24,6 @@ assert.deepStrictEqual(Function.constFalse(), false)
 declare const constFalse: LazyArg<boolean>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Function.ts#L348)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Function.ts#L403)
 
 Since v2.0.0

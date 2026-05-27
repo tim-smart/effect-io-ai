@@ -12,6 +12,6 @@ additional message framing.
 declare const jsonRpc: (options?: { readonly contentType?: string | undefined; }) => RpcSerialization["Service"]
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RpcSerialization.ts#L134)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RpcSerialization.ts#L144)
 
 Since v4.0.0

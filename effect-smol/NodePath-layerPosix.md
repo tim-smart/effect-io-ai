@@ -12,6 +12,6 @@ file URL conversion helpers.
 declare const layerPosix: Layer.Layer<Path, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodePath.ts#L54)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodePath.ts#L63)
 
 Since v4.0.0

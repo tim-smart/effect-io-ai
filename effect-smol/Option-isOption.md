@@ -7,8 +7,8 @@ Determines whether the given value is an `Option`.
 
 **When to use**
 
-- Validating unknown values at runtime boundaries
-- Type-narrowing in union types
+Use to validate unknown values at runtime boundaries, such as type-narrowing
+in union types.
 
 **Details**
 
@@ -41,6 +41,6 @@ console.log(Option.isOption({}))
 declare const isOption: (input: unknown) => input is Option<unknown>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L361)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L388)
 
 Since v2.0.0

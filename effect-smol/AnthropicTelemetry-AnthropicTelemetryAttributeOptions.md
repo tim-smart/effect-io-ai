@@ -16,6 +16,6 @@ type AnthropicTelemetryAttributeOptions = Telemetry.GenAITelemetryAttributeOptio
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTelemetry.ts#L85)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTelemetry.ts#L119)
 
 Since v4.0.0

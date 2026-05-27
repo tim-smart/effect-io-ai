@@ -8,7 +8,7 @@ such as an asynchronous Effect running inside `Schema.decodeUnknownSync`.
 
 **When to use**
 
-- Detect that a schema requires async execution but was run synchronously.
+Use when detect that a schema requires async execution but was run synchronously.
 - Provide custom error messages via the `annotations.message` field.
 
 **Details**

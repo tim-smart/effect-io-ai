@@ -5,10 +5,15 @@ Module: `Hooks`<br />
 
 Seeds initial atom values in the current React atom registry.
 
-**Details**
+**When to use**
 
-Each atom is initialized at most once for a given registry, so subsequent
-renders do not overwrite values that have already been established.
+Use to seed atom values from a React component after the current registry
+already exists.
+
+**Gotchas**
+
+Each atom is initialized at most once for a given registry by this hook, so
+later calls for the same atom in that registry are ignored.
 
 **Signature**
 
@@ -16,6 +21,6 @@ renders do not overwrite values that have already been established.
 declare const useAtomInitialValues: (initialValues: Iterable<readonly [Atom.Atom<any>, any]>) => void
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/atom/react/src/Hooks.ts#L86)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/atom/react/src/Hooks.ts#L91)
 
 Since v4.0.0

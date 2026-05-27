@@ -8,7 +8,7 @@ control flow and error handling.
 
 **When to use**
 
-`gen` allows you to write code that looks and behaves like synchronous
+Use when `gen` allows you to write code that looks and behaves like synchronous
 code, but it can handle asynchronous tasks, errors, and complex control flow
 (like loops and conditions). It helps make asynchronous code more readable
 and easier to manage.
@@ -56,6 +56,6 @@ export const program = Effect.gen(function*() {
 declare const gen: { <Eff extends Effect<any, any, any>, AEff>(f: () => Generator<Eff, AEff, never>): Effect<AEff, [Eff] extends [never] ? never : [Eff] extends [Effect<infer _A, infer E, infer _R>] ? E : never, [Eff] extends [never] ? never : [Eff] extends [Effect<infer _A, infer _E, infer R>] ? R : never>; <Self, Eff extends Effect<any, any, any>, AEff>(options: { readonly self: Self; }, f: (this: Self) => Generator<Eff, AEff, never>): Effect<AEff, [Eff] extends [never] ? never : [Eff] extends [Effect<infer _A, infer E, infer _R>] ? E : never, [Eff] extends [never] ? never : [Eff] extends [Effect<infer _A, infer _E, infer R>] ? R : never>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L1362)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L1469)
 
 Since v2.0.0

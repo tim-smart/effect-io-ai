@@ -7,7 +7,7 @@ Creates a predicate that returns `true` if all predicates in the collection retu
 
 **When to use**
 
-- You have a dynamic list of predicates to apply.
+Use when you have a dynamic list of predicates to apply.
 
 **Details**
 
@@ -36,6 +36,6 @@ console.log(allChecks(2))
 declare const every: <A>(collection: Iterable<Predicate<A>>) => Predicate<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L1887)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L1921)
 
 Since v2.0.0

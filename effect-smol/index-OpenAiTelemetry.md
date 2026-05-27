@@ -11,6 +11,6 @@ Re-exports all named exports from the "./OpenAiTelemetry.ts" module as `OpenAiTe
 export * as OpenAiTelemetry from "./OpenAiTelemetry.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/index.ts#L106)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/index.ts#L35)
 
 Since v4.0.0

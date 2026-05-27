@@ -7,7 +7,7 @@ A Summary metric that calculates quantiles over a sliding time window of observa
 
 **When to use**
 
-Summaries provide statistical insights into value distributions by tracking specific quantiles
+Use when summaries provide statistical insights into value distributions by tracking specific quantiles
 (percentiles) such as median (50th), 95th percentile, 99th percentile, etc. They're ideal for
 understanding performance characteristics like response time distributions.
 

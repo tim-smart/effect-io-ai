@@ -8,7 +8,7 @@ merged input, error, and output types.
 
 **When to use**
 
-Use this when you need to combine multiple independent layers.
+Use when you need to combine multiple independent layers.
 
 **Details**
 
@@ -51,6 +51,6 @@ const mergedLayer = Layer.mergeAll(dbLayer, loggerLayer)
 declare const mergeAll: <Layers extends [Layer<never, any, any>, ...Array<Layer<never, any, any>>]>(...layers: Layers) => Layer<Success<Layers[number]>, Error<Layers[number]>, Services<Layers[number]>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L1147)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L1226)
 
 Since v2.0.0

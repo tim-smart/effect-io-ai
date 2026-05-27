@@ -15,6 +15,6 @@ Request-specific method, headers, body, and abort signal are supplied by the cli
 declare class RequestInit
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FetchHttpClient.ts#L53)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FetchHttpClient.ts#L67)
 
 Since v4.0.0

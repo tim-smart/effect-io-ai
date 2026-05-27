@@ -7,7 +7,7 @@ Checks whether an `Option` contains a value (`Some`).
 
 **When to use**
 
-- Branching on presence before accessing `.value`
+Use when branching on presence before accessing `.value`
 
 **Details**
 
@@ -35,6 +35,6 @@ console.log(Option.isSome(Option.none()))
 declare const isSome: <A>(self: Option<A>) => self is Some<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L421)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L448)
 
 Since v2.0.0

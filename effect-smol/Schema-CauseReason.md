@@ -7,10 +7,20 @@ Schema for a single `Cause.Reason`, representing one reason a fiber may fail:
 a typed error (`Fail`), an unexpected defect (`Die`), or an interrupt
 (`Interrupt`).
 
+**When to use**
+
+Use as the schema type returned by `CauseReason` when generic code needs to
+retain the typed failure and defect schemas.
+
 **Details**
 
 The `error` schema validates typed failures and the `defect` schema validates
 unexpected defects.
+
+**See**
+
+- `CauseReason` for constructing this schema type
+- `CauseReasonIso` for the ISO shape of each cause reason
 
 **Signature**
 
@@ -29,6 +39,6 @@ export interface CauseReason<E extends Top, D extends Top> extends
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L8280)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L8467)
 
 Since v4.0.0

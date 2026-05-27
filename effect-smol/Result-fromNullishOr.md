@@ -5,6 +5,12 @@ Module: `Result`<br />
 
 Converts a possibly `null` or `undefined` value into a `Result`.
 
+**When to use**
+
+Use when an input may be `null` or `undefined` and absence should be
+represented as a `Failure` while present values should remain available as
+`Success`.
+
 **Details**
 
 - Non-nullish values become `Success<NonNullable<A>>`
@@ -35,6 +41,6 @@ console.log(Result.fromNullishOr(null, () => "fallback"))
 declare const fromNullishOr: { <A, E>(onNullish: (a: A) => E): (self: A) => Result<NonNullable<A>, E>; <A, E>(self: A, onNullish: (a: A) => E): Result<NonNullable<A>, E>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L433)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L449)
 
 Since v4.0.0

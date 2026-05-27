@@ -7,6 +7,11 @@ An `RcMap` is a reference-counted map data structure that manages the lifecycle
 of resources indexed by keys. Resources are lazily acquired and automatically
 released when no longer in use.
 
+**When to use**
+
+Use to share scoped resources by key while automatically releasing them after
+their last active reference is gone.
+
 **Example** (Inspecting a reference-counted map)
 
 ```ts
@@ -34,6 +39,11 @@ Effect.gen(function*() {
 }).pipe(Effect.scoped)
 ```
 
+**See**
+
+- `make` for creating an `RcMap`
+- `get` for acquiring or retaining a resource by key
+
 **Signature**
 
 ```ts
@@ -48,6 +58,6 @@ export interface RcMap<in out K, in out A, in out E = never> extends Pipeable {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RcMap.ts#L73)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RcMap.ts#L81)
 
 Since v3.5.0

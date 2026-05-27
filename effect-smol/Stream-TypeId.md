@@ -11,6 +11,6 @@ String literal type used as the unique brand for `Stream` values.
 type TypeId = "~effect/Stream"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L104)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L147)
 
 Since v4.0.0

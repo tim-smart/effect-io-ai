@@ -5,6 +5,11 @@ Module: `Encoding`<br />
 
 Decodes a URL-safe base64 string into a UTF-8 string.
 
+**When to use**
+
+Use to decode padded or unpadded Base64Url text into UTF-8 text without
+throwing on invalid input.
+
 **Details**
 
 Returns `Result.succeed` with the decoded text when decoding succeeds, or
@@ -28,6 +33,6 @@ if (Result.isSuccess(result)) {
 declare const decodeBase64UrlString: (str: string) => Result.Result<string, EncodingError>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Encoding.ts#L300)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Encoding.ts#L421)
 
 Since v2.0.0

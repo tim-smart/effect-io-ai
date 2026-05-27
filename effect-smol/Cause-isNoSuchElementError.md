@@ -20,6 +20,6 @@ console.log(Cause.isNoSuchElementError("nope")) // false
 declare const isNoSuchElementError: (u: unknown) => u is NoSuchElementError
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L1173)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L1273)
 
 Since v4.0.0

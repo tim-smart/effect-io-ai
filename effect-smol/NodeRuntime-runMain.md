@@ -13,6 +13,6 @@ process exit code.
 declare const runMain: { (options?: { readonly disableErrorReporting?: boolean | undefined; readonly teardown?: Runtime.Teardown | undefined; }): <E, A>(effect: Effect<A, E>) => void; <E, A>(effect: Effect<A, E>, options?: { readonly disableErrorReporting?: boolean | undefined; readonly teardown?: Runtime.Teardown | undefined; }): void; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeRuntime.ts#L32)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeRuntime.ts#L44)
 
 Since v4.0.0

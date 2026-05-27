@@ -5,6 +5,10 @@ Module: `Unify`<br />
 
 Unifies types that implement the unification protocol.
 
+**When to use**
+
+Use to normalize unions of types that expose Effect's unification protocol.
+
 **Details**
 
 This type performs automatic type unification for types that contain
@@ -35,6 +39,10 @@ type Unified = Unify.Unify<UnifiableA | UnifiableB>
 // Results in a properly unified type
 ```
 
+**See**
+
+- `unify` for applying this normalization to a value or function
+
 **Signature**
 
 ```ts
@@ -62,6 +70,6 @@ type Unify<A> = Values<
   : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Unify.ts#L169)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Unify.ts#L228)
 
 Since v2.0.0

@@ -11,6 +11,6 @@ For streaming server responses, transfers request scope ownership to the body st
 declare const scopeTransferToStream: (response: HttpServerResponse) => HttpServerResponse
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpEffect.ts#L150)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpEffect.ts#L167)
 
 Since v4.0.0

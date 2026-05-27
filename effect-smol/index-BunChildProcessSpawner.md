@@ -11,6 +11,6 @@ Re-exports all named exports from the "./BunChildProcessSpawner.ts" module as `B
 export * as BunChildProcessSpawner from "./BunChildProcessSpawner.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/index.ts#L12)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/index.ts#L10)
 
 Since v4.0.0

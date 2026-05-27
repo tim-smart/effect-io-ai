@@ -16,6 +16,6 @@ type AssistantMessagePartEncoded = | TextPartEncoded
   | ToolApprovalRequestPartEncoded
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L1459)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L1466)
 
 Since v4.0.0

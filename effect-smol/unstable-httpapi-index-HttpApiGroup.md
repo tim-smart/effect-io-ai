@@ -11,6 +11,6 @@ Re-exports all named exports from the "./HttpApiGroup.ts" module as `HttpApiGrou
 export * as HttpApiGroup from "./HttpApiGroup.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L173)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L35)
 
 Since v4.0.0

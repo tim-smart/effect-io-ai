@@ -3,8 +3,12 @@ Module: `Runtime`<br />
 
 ## Runtime.errorReported
 
-Type-level key for the `Runtime.errorReported` property that controls default
-`runMain` error logging for an `Error`.
+Type-level key for the `Runtime.errorReported` marker.
+
+**When to use**
+
+Use to type properties keyed by `Runtime.errorReported` on custom error
+values.
 
 **Signature**
 
@@ -12,6 +16,6 @@ Type-level key for the `Runtime.errorReported` property that controls default
 type errorReported = "~effect/Runtime/errorReported"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Runtime.ts#L287)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Runtime.ts#L399)
 
 Since v4.0.0

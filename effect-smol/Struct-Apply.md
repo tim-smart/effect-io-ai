@@ -8,7 +8,7 @@ the output type.
 
 **When to use**
 
-Use this when you need to compute what type a Lambda would produce for a
+Use when you need to compute what type a Lambda would produce for a
 given input.
 
 **Details**

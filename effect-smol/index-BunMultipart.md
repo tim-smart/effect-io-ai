@@ -11,6 +11,6 @@ Re-exports all named exports from the "./BunMultipart.ts" module as `BunMultipar
 export * as BunMultipart from "./BunMultipart.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/index.ts#L243)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/index.ts#L55)
 
 Since v4.0.0

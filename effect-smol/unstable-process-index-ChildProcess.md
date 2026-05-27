@@ -11,6 +11,6 @@ Re-exports all named exports from the "./ChildProcess.ts" module as `ChildProces
 export * as ChildProcess from "./ChildProcess.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L50)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L10)
 
 Since v4.0.0

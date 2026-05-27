@@ -29,6 +29,6 @@ const program = Effect.gen(function*() {
 declare const get: <A>(self: TxChunk<A>) => Effect.Effect<Chunk.Chunk<A>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxChunk.ts#L335)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxChunk.ts#L368)
 
 Since v4.0.0

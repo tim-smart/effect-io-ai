@@ -14,6 +14,6 @@ in the loop) and decide whether to approve it.
 declare class CreateMessage
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L1706)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L1714)
 
 Since v4.0.0

@@ -5,6 +5,10 @@ Module: `TxSemaphore`<br />
 
 Determines if the provided value is a TxSemaphore.
 
+**When to use**
+
+Use to narrow an unknown value before treating it as a `TxSemaphore`.
+
 **Example** (Checking semaphore values)
 
 ```ts
@@ -25,12 +29,16 @@ const program = Effect.gen(function*() {
 })
 ```
 
+**See**
+
+- `make` for creating a `TxSemaphore`
+
 **Signature**
 
 ```ts
 declare const isTxSemaphore: (u: unknown) => u is TxSemaphore
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxSemaphore.ts#L610)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxSemaphore.ts#L735)
 
 Since v4.0.0

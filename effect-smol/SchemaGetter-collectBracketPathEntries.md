@@ -7,7 +7,7 @@ Flattens a nested object into bracket-path entries, filtering leaf values by a t
 
 **When to use**
 
-- Serializing structured objects to flat key-value entries.
+Use to serialize structured objects to flat key-value entries.
 - Building custom `FormData` or `URLSearchParams` encoders.
 
 **Details**
@@ -33,9 +33,9 @@ const entries = collectStrings({ user: { name: "Alice", tags: ["admin", "editor"
 
 **See**
 
-- `makeTreeRecord` - inverse operation (flat entries to tree)
-- `encodeFormData` - uses this internally
-- `encodeURLSearchParams` - uses this internally
+- `makeTreeRecord` for the inverse operation (flat entries to tree)
+- `encodeFormData` for a higher-level FormData encoder
+- `encodeURLSearchParams` for a higher-level URLSearchParams encoder
 
 **Signature**
 

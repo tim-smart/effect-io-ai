@@ -7,7 +7,7 @@ A `Prism` that focuses on the value inside `Option.Some`.
 
 **When to use**
 
-- You have an `Option<A>` and want to read/update the inner value only
+Use when you have an `Option<A>` and want to read/update the inner value only
   when it is `Some`.
 
 **Details**

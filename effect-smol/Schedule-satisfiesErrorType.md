@@ -3,7 +3,12 @@ Module: `Schedule`<br />
 
 ## Schedule.satisfiesErrorType
 
-Ensures that the provided schedule respects a specified error type.
+Ensures that a schedule's error type extends a given type `T`.
+
+**Details**
+
+This helper is checked at compile time and does not change the schedule's
+runtime behavior.
 
 **Example** (Constraining schedule error types)
 
@@ -15,15 +20,16 @@ class CustomError extends Data.TaggedError("CustomError")<{
   message: string
 }> {}
 
-// Ensure schedule handles CustomError types
-const errorSchedule = Schedule.exponential("100 millis").pipe(
-  Schedule.satisfiesErrorType<CustomError>()
-)
+declare const CustomErrorSchedule: Schedule.Schedule<number, unknown, CustomError>
+declare const StringErrorSchedule: Schedule.Schedule<number, unknown, string>
 
-// Ensure schedule handles never errors (no errors)
-const safeSchedule = Schedule.spaced("1 second").pipe(
-  Schedule.satisfiesErrorType<never>()
-)
+const satisfiesCustomError = Schedule.satisfiesErrorType<CustomError>()
+
+// This works because the schedule error type is CustomError.
+const validSchedule = satisfiesCustomError(CustomErrorSchedule)
+
+// This would cause a TypeScript compilation error:
+// const invalidSchedule = satisfiesCustomError(StringErrorSchedule)
 ```
 
 **Signature**
@@ -32,6 +38,6 @@ const safeSchedule = Schedule.spaced("1 second").pipe(
 declare const satisfiesErrorType: <T>() => <Error extends T, Output = never, Input = unknown, Env = never>(self: Schedule<Output, Input, Error, Env>) => Schedule<Output, Input, Error, Env>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L3320)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L3568)
 
 Since v4.0.0

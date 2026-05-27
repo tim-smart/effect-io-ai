@@ -5,12 +5,22 @@ Module: `Param`<br />
 
 Kind discriminator for positional argument parameters.
 
+**When to use**
+
+Use to build low-level `Param` constructors or type positions for positional
+argument parameters.
+
+**See**
+
+- `flagKind` for the named flag parameter discriminator
+- `ParamKind` for the full parameter kind union
+
 **Signature**
 
 ```ts
 declare const argumentKind: "argument"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Param.ts#L91)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Param.ts#L99)
 
 Since v4.0.0

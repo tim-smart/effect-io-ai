@@ -7,7 +7,7 @@ Creates an `Order` for a tuple type based on orders for each element.
 
 **When to use**
 
-- When comparing tuples with different types for each position
+Use when when comparing tuples with different types for each position
 - When you need type-safe tuple ordering
 - When working with fixed-length heterogeneous collections
 
@@ -33,7 +33,7 @@ console.log(tupleOrder([1, "a"], [1, "a"])) // 0
 
 **See**
 
-- `Array` - Compare arrays with length consideration
+- `Array` to compare arrays with length consideration
 
 **Signature**
 
@@ -41,6 +41,6 @@ console.log(tupleOrder([1, "a"], [1, "a"])) // 0
 declare const Tuple: <const Elements extends ReadonlyArray<Order<any>>>(elements: Elements) => Order<{ readonly [I in keyof Elements]: [Elements[I]] extends [Order<infer A>] ? A : never; }>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Order.ts#L595)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Order.ts#L624)
 
 Since v4.0.0

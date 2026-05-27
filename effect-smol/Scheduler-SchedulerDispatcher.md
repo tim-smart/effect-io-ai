@@ -6,11 +6,17 @@ Module: `Scheduler`<br />
 A dispatcher created by a `Scheduler` for enqueuing tasks and forcing queued
 tasks to run.
 
+**When to use**
+
+Use when implementing or testing scheduler-created dispatchers that enqueue
+prioritized runtime tasks and flush queued work deterministically.
+
 **Details**
 
 `scheduleTask` queues a task with a priority. `flush` drains pending work
 synchronously, which is useful when callers need deterministic completion of
-already scheduled tasks.
+already scheduled tasks. Lower priority numbers run first, and equal
+priorities run in FIFO order.
 
 **Signature**
 
@@ -21,6 +27,6 @@ export interface SchedulerDispatcher {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Scheduler.ts#L58)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Scheduler.ts#L68)
 
 Since v4.0.0

@@ -11,6 +11,6 @@ Re-exports all named exports from the "./TestConsole.ts" module as `TestConsole`
 export * as TestConsole from "./TestConsole.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L62)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L20)
 
 Since v4.0.0

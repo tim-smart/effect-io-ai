@@ -6,6 +6,11 @@ Module: `TxSemaphore`<br />
 Runs an effect while holding the specified number of permits from the
 semaphore.
 
+**When to use**
+
+Use to run an effect while automatically acquiring and releasing multiple
+transactional permits.
+
 **Details**
 
 The permits are acquired before the effect starts and released after it
@@ -40,12 +45,17 @@ const program = Effect.gen(function*() {
 })
 ```
 
+**See**
+
+- `withPermit` for automatically acquiring and releasing one permit
+- `acquireN` for manual multi-permit acquisition
+
 **Signature**
 
 ```ts
 declare const withPermits: { (self: TxSemaphore, n: number): <A, E, R>(effect: Effect.Effect<A, E, R>) => Effect.Effect<A, E, R>; <A, E, R>(self: TxSemaphore, n: number, effect: Effect.Effect<A, E, R>): Effect.Effect<A, E, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxSemaphore.ts#L518)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxSemaphore.ts#L629)
 
 Since v2.0.0

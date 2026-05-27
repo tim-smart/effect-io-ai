@@ -16,6 +16,6 @@ not numeric.
 declare const fromString: (s: string) => ShardId
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ShardId.ts#L170)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ShardId.ts#L192)
 
 Since v4.0.0

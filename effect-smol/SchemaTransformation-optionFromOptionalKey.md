@@ -8,7 +8,7 @@ back to an optional key.
 
 **When to use**
 
-- Converting optional struct keys (declared with `Schema.optionalKey`) to
+Use to convert optional struct keys (declared with `Schema.optionalKey`) to
   `Option` values.
 
 **Details**

@@ -7,7 +7,7 @@ Creates an equivalence for tuples with heterogeneous element types.
 
 **When to use**
 
-- Use when comparing tuples with different types at each position
+Use when comparing tuples with different types at each position
 - Use when you need different equivalence logic for each tuple element
 - Use when working with fixed-length tuples instead of arrays
 - Prefer this over `Array` when you have a known tuple structure with different types
@@ -60,17 +60,12 @@ console.log(
 ) // true
 ```
 
-**See**
-
-- `Array_`
-- `Struct`
-
 **Signature**
 
 ```ts
 declare const Tuple: <const Elements extends ReadonlyArray<Equivalence<any>>>(elements: Elements) => Equivalence<{ readonly [I in keyof Elements]: [Elements[I]] extends [Equivalence<infer A>] ? A : never; }>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Equivalence.ts#L593)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Equivalence.ts#L608)
 
 Since v4.0.0

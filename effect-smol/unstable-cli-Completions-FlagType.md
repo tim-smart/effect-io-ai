@@ -17,6 +17,6 @@ type FlagType = | { readonly _tag: "Boolean" }
   | { readonly _tag: "Path"; readonly pathType: "file" | "directory" | "either" }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Completions.ts#L51)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Completions.ts#L78)
 
 Since v4.0.0

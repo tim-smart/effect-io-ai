@@ -6,6 +6,10 @@ Module: `RcMap`<br />
 Gets the resource for a key, acquiring it with the map's lookup function when
 the key is not already cached.
 
+**When to use**
+
+Use to acquire or retain the resource for a key within the current scope.
+
 **Details**
 
 The resource's reference count is incremented for the current `Scope`, and a
@@ -33,12 +37,17 @@ Effect.gen(function*() {
 }).pipe(Effect.scoped)
 ```
 
+**See**
+
+- `make` for creating the reference-counted map
+- `invalidate` for removing a resource by key
+
 **Signature**
 
 ```ts
 declare const get: { <K>(key: K): <A, E>(self: RcMap<K, A, E>) => Effect.Effect<A, E, Scope.Scope>; <K, A, E>(self: RcMap<K, A, E>, key: K): Effect.Effect<A, E, Scope.Scope>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RcMap.ts#L283)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RcMap.ts#L334)
 
 Since v3.5.0

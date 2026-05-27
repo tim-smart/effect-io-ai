@@ -47,6 +47,6 @@ export interface ValueMatcher<in Input, Filters, out Remaining, out Result, Prov
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L148)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L166)
 
 Since v4.0.0

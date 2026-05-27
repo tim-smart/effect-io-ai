@@ -5,12 +5,21 @@ Module: `ScopedRef`<br />
 
 Retrieves the current value of the scoped reference.
 
+**When to use**
+
+Use when you need immediate synchronous access to the current `ScopedRef`
+value and can guarantee that reading outside the `Effect` API is safe.
+
+**See**
+
+- `get` for Effect-wrapped access in Effect programs
+
 **Signature**
 
 ```ts
 declare const getUnsafe: <A>(self: ScopedRef<A>) => A
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ScopedRef.ts#L97)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ScopedRef.ts#L116)
 
 Since v4.0.0

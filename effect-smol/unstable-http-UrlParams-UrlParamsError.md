@@ -11,6 +11,6 @@ Error returned when constructing a `URL` from `UrlParams` fails.
 declare class UrlParamsError
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/UrlParams.ts#L458)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/UrlParams.ts#L473)
 
 Since v4.0.0

@@ -8,7 +8,7 @@ operations that depend on previous results.
 
 **When to use**
 
-Use `flatMap` when you need to chain multiple effects, ensuring that each
+Use when you need to chain multiple effects, ensuring that each
 step produces a new `Effect` while flattening any nested effects that may
 occur.
 
@@ -74,6 +74,6 @@ Effect.runPromise(finalAmount).then(console.log)
 declare const flatMap: { <A, B, E1, R1>(f: (a: A) => Effect<B, E1, R1>): <E, R>(self: Effect<A, E, R>) => Effect<B, E1 | E, R1 | R>; <A, E, R, B, E1, R1>(self: Effect<A, E, R>, f: (a: A) => Effect<B, E1, R1>): Effect<B, E | E1, R | R1>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L1853)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L1959)
 
 Since v2.0.0

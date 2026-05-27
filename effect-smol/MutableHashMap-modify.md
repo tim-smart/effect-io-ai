@@ -6,6 +6,10 @@ Module: `MutableHashMap`<br />
 Updates the value of the specified key within the MutableHashMap if it exists.
 If the key doesn't exist, the map remains unchanged.
 
+**When to use**
+
+Use to transform an existing value in place without inserting missing keys.
+
 **Example** (Modifying existing values)
 
 ```ts
@@ -30,12 +34,17 @@ const increment = MutableHashMap.modify("count", (n: number) => n + 1)
 increment(map)
 ```
 
+**See**
+
+- `set` for inserting or replacing a value directly
+- `modifyAt` for handling both missing and existing keys
+
 **Signature**
 
 ```ts
 declare const modify: { <K, V>(key: K, f: (v: V) => V): (self: MutableHashMap<K, V>) => MutableHashMap<K, V>; <K, V>(self: MutableHashMap<K, V>, key: K, f: (v: V) => V): MutableHashMap<K, V>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableHashMap.ts#L466)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableHashMap.ts#L570)
 
 Since v2.0.0

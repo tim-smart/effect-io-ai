@@ -7,7 +7,7 @@ Creates a failed Exit from a typed error value.
 
 **When to use**
 
-- Use for expected, recoverable failures
+Use when you need expected, recoverable failures
 
 **Details**
 
@@ -36,6 +36,6 @@ console.log(Exit.isFailure(exit)) // true
 declare const fail: <E>(e: E) => Exit<never, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Exit.ts#L318)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Exit.ts#L327)
 
 Since v2.0.0

@@ -7,7 +7,7 @@ Creates a new Ref with the specified initial value (unsafe version).
 
 **When to use**
 
-Use this when you need immediate synchronous construction and can guarantee
+Use when you need immediate synchronous construction and can guarantee
 that creating the `Ref` outside of `Effect` is safe.
 
 **Gotchas**
@@ -36,6 +36,6 @@ console.log(value) // 0
 declare const makeUnsafe: <A>(value: A) => Ref<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Ref.ts#L158)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Ref.ts#L197)
 
 Since v4.0.0

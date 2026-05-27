@@ -5,6 +5,10 @@ Module: `Ref`<br />
 
 Atomically computes a result and optionally updates the value of the `Ref`.
 
+**When to use**
+
+Use to compute a return value while optionally updating the stored value.
+
 **Details**
 
 The callback receives the current value and returns `[result, nextValue]`,
@@ -50,12 +54,17 @@ const program = Effect.gen(function*() {
 })
 ```
 
+**See**
+
+- `modify` for always storing a new value
+- `updateSome` for optional updates without a separate return value
+
 **Signature**
 
 ```ts
 declare const modifySome: { <B, A>(pf: (a: A) => readonly [B, Option.Option<A>]): (self: Ref<A>) => Effect.Effect<B>; <A, B>(self: Ref<A>, pf: (a: A) => readonly [B, Option.Option<A>]): Effect.Effect<B>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Ref.ts#L505)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Ref.ts#L599)
 
 Since v2.0.0

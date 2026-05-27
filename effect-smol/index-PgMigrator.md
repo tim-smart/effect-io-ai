@@ -11,6 +11,6 @@ Re-exports all named exports from the "./PgMigrator.ts" module as `PgMigrator`.
 export * as PgMigrator from "./PgMigrator.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/sql/pg/src/index.ts#L52)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/sql/pg/src/index.ts#L15)
 
 Since v4.0.0

@@ -3,21 +3,28 @@ Module: `Schedule`<br />
 
 ## Schedule.satisfiesOutputType
 
-Ensures that the provided schedule respects a specified output type.
+Ensures that a schedule's output type extends a given type `T`.
+
+**Details**
+
+This helper is checked at compile time and does not change the schedule's
+runtime behavior.
 
 **Example** (Constraining schedule output types)
 
 ```ts
-import { Effect, Schedule } from "effect"
+import { Schedule } from "effect"
 
-// satisfiesOutputType is a type-level function for compile-time constraints
-// It ensures that a schedule's output type matches the specified type
+declare const StringOutputSchedule: Schedule.Schedule<string>
+declare const NumberOutputSchedule: Schedule.Schedule<number>
 
-// Example with string output
-const stringSchedule = Schedule.exponential("100 millis").pipe(
-  Schedule.map(() => Effect.succeed("hello")),
-  Schedule.satisfiesOutputType<string>()
-)
+const satisfiesStringOutput = Schedule.satisfiesOutputType<string>()
+
+// This works because the schedule output type is string.
+const validSchedule = satisfiesStringOutput(StringOutputSchedule)
+
+// This would cause a TypeScript compilation error:
+// const invalidSchedule = satisfiesStringOutput(NumberOutputSchedule)
 ```
 
 **Signature**
@@ -26,6 +33,6 @@ const stringSchedule = Schedule.exponential("100 millis").pipe(
 declare const satisfiesOutputType: <T>() => <Output extends T, Error = never, Input = unknown, Env = never>(self: Schedule<Output, Input, Error, Env>) => Schedule<Output, Input, Error, Env>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L3288)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L3530)
 
 Since v4.0.0

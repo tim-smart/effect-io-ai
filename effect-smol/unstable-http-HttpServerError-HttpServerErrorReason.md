@@ -11,6 +11,6 @@ Reason carried by an `HttpServerError`, either a request-level error or a respon
 type HttpServerErrorReason = RequestError | ResponseError
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpServerError.ts#L242)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpServerError.ts#L255)
 
 Since v4.0.0

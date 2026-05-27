@@ -15,6 +15,6 @@ Repeated parameters are represented as arrays in insertion order.
 declare const searchParamsFromURL: (url: URL) => ReadonlyRecord<string, string | Array<string>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpServerRequest.ts#L138)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpServerRequest.ts#L155)
 
 Since v4.0.0

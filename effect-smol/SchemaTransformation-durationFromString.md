@@ -8,7 +8,7 @@ parseable `string`.
 
 **When to use**
 
-- Parsing human-readable duration strings from APIs, config, or user input.
+Use to parse human-readable duration strings from APIs, config, or user input.
 
 **Details**
 

@@ -7,7 +7,7 @@ Represents the presence of a value within an `Option`.
 
 **When to use**
 
-- Use as a type guard target when narrowing via `isSome`
+Use as a type guard target when narrowing via `isSome`
 - Access the inner value via `.value`
 
 **Details**
@@ -39,6 +39,6 @@ export interface Some<out A> extends Pipeable, Inspectable {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L181)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L188)
 
 Since v2.0.0

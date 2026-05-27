@@ -8,7 +8,7 @@ type `T` is a subtype of the encoded type `E`.
 
 **When to use**
 
-Use this when the runtime value is unchanged but the decoded side should be
+Use when the runtime value is unchanged but the decoded side should be
 narrower than the encoded side.
 
 **Details**

@@ -7,7 +7,7 @@ Creates a predicate that returns `true` if either predicate is `true`.
 
 **When to use**
 
-- You want to accept values that satisfy at least one condition.
+Use when you want to accept values that satisfy at least one condition.
 - You want to combine refinements with union narrowing.
 
 **Details**
@@ -37,6 +37,6 @@ console.log(isStringOrNumber("a"))
 declare const or: { <A, C extends A>(that: Refinement<A, C>): <B extends A>(self: Refinement<A, B>) => Refinement<A, B | C>; <A, B extends A, C extends A>(self: Refinement<A, B>, that: Refinement<A, C>): Refinement<A, B | C>; <A>(that: Predicate<A>): (self: Predicate<A>) => Predicate<A>; <A>(self: Predicate<A>, that: Predicate<A>): Predicate<A>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L1634)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L1668)
 
 Since v2.0.0

@@ -5,6 +5,10 @@ Module: `TxSemaphore`<br />
 
 Releases the specified number of permits back to the semaphore.
 
+**When to use**
+
+Use to manually return multiple permits after a transactional acquire.
+
 **Details**
 
 The available permit count is capped at the semaphore capacity.
@@ -33,12 +37,17 @@ const program = Effect.gen(function*() {
 })
 ```
 
+**See**
+
+- `acquireN` for manually acquiring multiple permits
+- `release` for returning one permit
+
 **Signature**
 
 ```ts
 declare const releaseN: (self: TxSemaphore, n: number) => Effect.Effect<void>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxSemaphore.ts#L409)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxSemaphore.ts#L503)
 
 Since v2.0.0

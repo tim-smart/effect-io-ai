@@ -5,6 +5,11 @@ Module: `Path`<br />
 
 Structured representation of a parsed file system path.
 
+**When to use**
+
+Use to model the object form produced by `Path.parse` and consumed by
+`Path.format`.
+
 **Details**
 
 The fields correspond to the path root, directory, base filename,
@@ -52,6 +57,6 @@ export interface Parsed {
   }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Path.ts#L183)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Path.ts#L208)
 
 Since v4.0.0

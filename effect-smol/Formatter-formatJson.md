@@ -7,7 +7,7 @@ Safely stringifies a value to JSON, silently dropping circular references.
 
 **When to use**
 
-- You need valid JSON output (unlike `format`).
+Use when you need valid JSON output (unlike `format`).
 - The input may contain circular references and you want them silently
   omitted rather than throwing a `TypeError`.
 

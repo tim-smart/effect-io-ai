@@ -11,6 +11,6 @@ A layer that provides the Bun Crypto service implementation.
 declare const layer: Layer.Layer<Crypto.Crypto, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunCrypto.ts#L16)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunCrypto.ts#L24)
 
 Since v1.0.0

@@ -15,6 +15,6 @@ The content type defaults to `application/octet-stream`, and the content length 
 declare const uint8Array: (body: globalThis.Uint8Array, contentType?: string) => Uint8Array
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpBody.ts#L263)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpBody.ts#L303)
 
 Since v4.0.0

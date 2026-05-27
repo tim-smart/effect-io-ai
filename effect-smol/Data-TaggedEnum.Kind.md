@@ -8,7 +8,7 @@ the resulting tagged union type.
 
 **When to use**
 
-Use `Kind` to refer to a specific instantiation of a generic tagged enum in type signatures.
+Use to refer to a specific instantiation of a generic tagged enum in type signatures.
 
 **Example** (Applying generics)
 
@@ -43,6 +43,6 @@ type Kind<Z, A, B, C, D> = (Z & {
   })["taggedEnum"]
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Data.ts#L324)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Data.ts#L333)
 
 Since v2.0.0

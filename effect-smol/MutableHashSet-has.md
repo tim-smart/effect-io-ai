@@ -5,6 +5,15 @@ Module: `MutableHashSet`<br />
 
 Checks if the MutableHashSet contains the specified value.
 
+**When to use**
+
+Use to test whether a mutable set currently contains a value.
+
+**Details**
+
+Membership follows the same hashing and equality rules as the underlying
+`MutableHashMap`.
+
 **Example** (Checking for a value)
 
 ```ts
@@ -24,12 +33,17 @@ MutableHashSet.add(set, "grape")
 console.log(MutableHashSet.has(set, "grape")) // true
 ```
 
+**See**
+
+- `add` for adding a value to the set
+- `remove` for removing a value from the set
+
 **Signature**
 
 ```ts
 declare const has: { <V>(key: V): (self: MutableHashSet<V>) => boolean; <V>(self: MutableHashSet<V>, key: V): boolean; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableHashSet.ts#L313)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableHashSet.ts#L365)
 
 Since v2.0.0

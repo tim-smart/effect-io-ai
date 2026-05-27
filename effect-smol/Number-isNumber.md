@@ -5,6 +5,10 @@ Module: `Number`<br />
 
 Tests if a value is a `number`.
 
+**When to use**
+
+Use to validate unknown input and narrow it to `number`.
+
 **Example** (Checking for numbers)
 
 ```ts
@@ -21,6 +25,6 @@ assert.deepStrictEqual(Number.isNumber("2"), false)
 declare const isNumber: (input: unknown) => input is number
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Number.ts#L51)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Number.ts#L121)
 
 Since v2.0.0

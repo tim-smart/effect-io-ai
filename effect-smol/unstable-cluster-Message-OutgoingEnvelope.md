@@ -7,7 +7,7 @@ Outgoing control envelope paired with RPC metadata.
 
 **When to use**
 
-Use `OutgoingEnvelope.interrupt` to construct an interrupt envelope for an
+Use to construct an interrupt envelope for an
 in-flight request.
 
 **Signature**

@@ -11,6 +11,6 @@ Re-exports all named exports from the "./JsonPatch.ts" module as `JsonPatch`.
 export * as JsonPatch from "./JsonPatch.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L2411)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L272)
 
 Since v4.0.0

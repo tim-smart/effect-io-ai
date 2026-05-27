@@ -5,12 +5,25 @@ Module: `ScopedCache`<br />
 
 Retrieves all active keys from the cache, automatically filtering out expired entries.
 
+**When to use**
+
+Use to inspect currently cached unexpired keys without running cache lookups.
+
+**Gotchas**
+
+Expired entries are removed and their scopes are closed while filtering.
+
+**See**
+
+- `entries` for retrieving successful cached key-value pairs
+- `values` for retrieving only successfully cached values
+
 **Signature**
 
 ```ts
 declare const keys: <Key, A, E, R>(self: ScopedCache<Key, A, E, R>) => Effect.Effect<Array<Key>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ScopedCache.ts#L611)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ScopedCache.ts#L754)
 
 Since v4.0.0

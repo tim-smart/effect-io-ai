@@ -11,6 +11,6 @@ Re-exports all named exports from the "./MysqlMigrator.ts" module as `MysqlMigra
 export * as MysqlMigrator from "./MysqlMigrator.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/sql/mysql2/src/index.ts#L50)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/sql/mysql2/src/index.ts#L15)
 
 Since v4.0.0

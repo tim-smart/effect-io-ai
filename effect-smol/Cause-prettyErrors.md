@@ -6,6 +6,11 @@ Module: `Cause`<br />
 Converts a `Cause` into an `Array<Error>` suitable for logging or
 rethrowing.
 
+**When to use**
+
+Use to convert every renderable failure in a cause into individual `Error`
+values before logging or rethrowing.
+
 **Details**
 
 Each `Fail` and `Die` reason is converted into a standard
@@ -21,6 +26,8 @@ Each `Fail` and `Die` reason is converted into a standard
 `Interrupt` reasons are collected separately. If the cause contains
 **only** interrupts (no `Fail` or `Die`), a single `InterruptError` is
 returned whose `cause` lists the interrupting fiber IDs.
+
+An empty cause returns an empty array.
 
 **Example** (converting a cause to errors)
 
@@ -43,6 +50,6 @@ console.log(errors[0].message) // "boom"
 declare const prettyErrors: <E>(self: Cause<E>) => Array<Error>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L1085)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L1178)
 
 Since v3.2.0

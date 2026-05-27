@@ -8,9 +8,8 @@ parameters.
 
 **When to use**
 
-Define variance constraints for a higher-kinded type so that `Gen`
-can correctly infer `R`, `O`, and `E` from yielded values. You typically
-don't construct values of this type — it exists purely for type inference.
+Use to define variance constraints for a higher-kinded type so that
+`Gen` can correctly infer `R`, `O`, and `E` from yielded values.
 
 **Details**
 
@@ -34,7 +33,7 @@ declare const variance: Utils.Variance<
 
 **See**
 
-- `Gen` — uses `Variance` for type parameter inference
+- `Gen` for the type-level signature that uses `Variance`
 
 **Signature**
 
@@ -47,6 +46,6 @@ export interface Variance<in out F extends TypeLambda, in R, out O, out E> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Utils.ts#L171)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Utils.ts#L179)
 
 Since v2.0.0

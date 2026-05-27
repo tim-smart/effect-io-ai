@@ -7,7 +7,7 @@ One or more `Representation`s sharing a common `References` map.
 
 **When to use**
 
-Use `fromASTs` to create this from multiple Schema ASTs,
+Use when you use `fromASTs` to create this from multiple Schema ASTs,
 `toCodeDocument` to generate TypeScript code, and
 `toJsonSchemaMultiDocument` to convert to JSON Schema.
 

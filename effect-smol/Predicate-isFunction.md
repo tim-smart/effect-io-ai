@@ -7,7 +7,7 @@ Checks whether a value is a `function`.
 
 **When to use**
 
-- You need to guard an `unknown` value as callable.
+Use when you need to guard an `unknown` value as callable.
 
 **Details**
 
@@ -36,6 +36,6 @@ if (Predicate.isFunction(data)) {
 declare const isFunction: (input: unknown) => input is Function
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L776)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L801)
 
 Since v2.0.0

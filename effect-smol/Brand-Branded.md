@@ -11,6 +11,6 @@ A type alias for creating branded types more concisely.
 type Branded<A, Key> = A & Brand<Key>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Brand.ts#L180)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Brand.ts#L256)
 
 Since v2.0.0

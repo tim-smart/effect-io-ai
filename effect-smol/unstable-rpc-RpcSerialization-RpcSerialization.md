@@ -13,6 +13,6 @@ message framing.
 declare class RpcSerialization
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RpcSerialization.ts#L43)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RpcSerialization.ts#L53)
 
 Since v4.0.0

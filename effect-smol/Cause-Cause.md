@@ -5,6 +5,11 @@ Module: `Cause`<br />
 
 A structured representation of how an Effect failed.
 
+**When to use**
+
+Use to preserve the full structured failure information for an effect instead
+of collapsing it to a single error value.
+
 **Details**
 
 Access the individual failure entries through the `reasons` array, then
@@ -30,10 +35,6 @@ console.log(cause.reasons.length) // 1
 console.log(Cause.isFailReason(cause.reasons[0])) // true
 ```
 
-**See**
-
-- `Reason` — the union type stored in `reasons`
-
 **Signature**
 
 ```ts
@@ -43,6 +44,6 @@ export interface Cause<out E> extends Pipeable, Inspectable, Equal {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L142)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L143)
 
 Since v2.0.0

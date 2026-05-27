@@ -11,6 +11,6 @@ Type-level identifier used to recognize `AsyncResult` values.
 type TypeId = "~effect/reactivity/AsyncResult"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AsyncResult.ts#L48)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AsyncResult.ts#L69)
 
 Since v4.0.0

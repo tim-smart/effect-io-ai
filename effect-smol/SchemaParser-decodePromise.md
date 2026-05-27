@@ -6,10 +6,20 @@ Module: `SchemaParser`<br />
 Creates a Promise-based decoder for input already typed as the schema's
 `Encoded` type.
 
+**When to use**
+
+Use when the input is already typed as the schema's `Encoded` type and you
+need a native `Promise` boundary.
+
 **Details**
 
 The returned function resolves with the decoded `Type` on success and rejects
 with a `SchemaIssue.Issue` on decoding failure.
+
+**See**
+
+- `decodeUnknownPromise` for untyped input at a `Promise` boundary
+- `decodeEffect` for preserving decoding services and failures in `Effect`
 
 **Signature**
 
@@ -17,6 +27,6 @@ with a `SchemaIssue.Issue` on decoding failure.
 declare const decodePromise: <S extends Schema.Decoder<unknown>>(schema: S, options?: AST.ParseOptions) => (input: S["Encoded"], options?: AST.ParseOptions) => Promise<S["Type"]>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaParser.ts#L260)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaParser.ts#L335)
 
 Since v3.10.0

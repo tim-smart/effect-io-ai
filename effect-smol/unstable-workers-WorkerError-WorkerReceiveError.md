@@ -12,6 +12,6 @@ worker.
 declare class WorkerReceiveError
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/WorkerError.ts#L79)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/WorkerError.ts#L95)
 
 Since v4.0.0

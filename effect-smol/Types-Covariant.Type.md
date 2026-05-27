@@ -5,6 +5,10 @@ Module: `Types`<br />
 
 Extracts the type parameter `A` from a `Covariant<A>`.
 
+**When to use**
+
+Use to recover the carried type from a covariant phantom marker.
+
 **Example** (Extracting the inner type)
 
 ```ts
@@ -24,6 +28,6 @@ type Inner = Types.Covariant.Type<Types.Covariant<string>>
 type Type<A> = A extends Covariant<infer U> ? U : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Types.ts#L730)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Types.ts#L750)
 
 Since v3.9.0

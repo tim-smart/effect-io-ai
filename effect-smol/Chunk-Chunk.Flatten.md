@@ -25,6 +25,6 @@ type Flatten<T> = T extends NonEmptyChunk<NonEmptyChunk<infer A>> ? NonEmptyChun
     : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L1668)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L1700)
 
 Since v2.0.0

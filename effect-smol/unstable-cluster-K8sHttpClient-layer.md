@@ -17,6 +17,6 @@ transient failures.
 declare const layer: Layer.Layer<K8sHttpClient, never, FileSystem.FileSystem | HttpClient.HttpClient>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/K8sHttpClient.ts#L60)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/K8sHttpClient.ts#L79)
 
 Since v4.0.0

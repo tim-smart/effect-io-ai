@@ -7,7 +7,7 @@ The identity `Iso`. Focuses on the whole value unchanged.
 
 **When to use**
 
-- As the starting point of an optic chain: `Optic.id<S>().key("x")...`
+Use when as the starting point of an optic chain: `Optic.id<S>().key("x")...`
 - Anywhere an `Iso<S, S>` is needed.
 
 **Details**

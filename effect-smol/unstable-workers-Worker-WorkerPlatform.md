@@ -12,6 +12,6 @@ the configured `Spawner`.
 declare class WorkerPlatform
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Worker.ts#L44)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Worker.ts#L57)
 
 Since v4.0.0

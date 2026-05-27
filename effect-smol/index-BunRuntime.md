@@ -11,6 +11,6 @@ Re-exports all named exports from the "./BunRuntime.ts" module as `BunRuntime`.
 export * as BunRuntime from "./BunRuntime.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/index.ts#L315)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/index.ts#L70)
 
 Since v4.0.0

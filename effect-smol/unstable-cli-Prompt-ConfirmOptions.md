@@ -15,7 +15,7 @@ export interface ConfirmOptions {
    */
   readonly message: string
   /**
-   * The intitial value of the confirm prompt (defaults to `false`).
+   * The initial value of the confirm prompt (defaults to `false`).
    */
   readonly initial?: boolean
   /**

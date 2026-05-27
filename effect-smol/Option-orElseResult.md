@@ -8,7 +8,7 @@ source of the value.
 
 **When to use**
 
-- Distinguishing whether a value came from the primary or fallback `Option`
+Use when distinguishing whether a value came from the primary or fallback `Option`
 
 **Details**
 
@@ -38,6 +38,6 @@ console.log(Option.orElseResult(Option.none(), () => Option.some("fallback")))
 declare const orElseResult: { <B>(that: LazyArg<Option<B>>): <A>(self: Option<A>) => Option<Result<B, A>>; <A, B>(self: Option<A>, that: LazyArg<Option<B>>): Option<Result<B, A>>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L765)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L792)
 
 Since v4.0.0

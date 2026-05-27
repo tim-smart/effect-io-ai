@@ -8,7 +8,7 @@ fail-fast semantics.
 
 **When to use**
 
-- Wrapping an existing `Reducer` to work with `Option` values
+Use to wrap an existing `Reducer` to work with `Option` values
 - Reductions where any `None` should abort the entire result
 
 **Details**
@@ -41,6 +41,6 @@ console.log(reducer.combineAll([Option.some(1), Option.none()]))
 declare const makeReducerFailFast: <A>(reducer: Reducer.Reducer<A>) => Reducer.Reducer<Option<A>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L2666)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L2697)
 
 Since v4.0.0

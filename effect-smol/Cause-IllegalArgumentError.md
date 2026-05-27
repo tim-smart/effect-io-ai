@@ -20,10 +20,6 @@ console.log(error._tag)    // "IllegalArgumentError"
 console.log(error.message) // "Expected positive number"
 ```
 
-**See**
-
-- `isIllegalArgumentError` — type guard
-
 **Signature**
 
 ```ts
@@ -33,6 +29,6 @@ export interface IllegalArgumentError extends YieldableError {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L1460)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L1589)
 
 Since v4.0.0

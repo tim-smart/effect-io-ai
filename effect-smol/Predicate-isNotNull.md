@@ -7,7 +7,7 @@ Checks whether a value is not `null`.
 
 **When to use**
 
-- You want to filter out `null` while preserving other falsy values.
+Use when you want to filter out `null` while preserving other falsy values.
 
 **Details**
 
@@ -36,6 +36,6 @@ console.log(nonNull)
 declare const isNotNull: <A>(input: A) => input is Exclude<A, null>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L902)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L927)
 
 Since v2.0.0

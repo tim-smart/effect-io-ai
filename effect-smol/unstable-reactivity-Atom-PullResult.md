@@ -14,6 +14,6 @@ type PullResult<A, E> = AsyncResult.AsyncResult<{
 }, E | Cause.NoSuchElementError>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Atom.ts#L1232)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Atom.ts#L1246)
 
 Since v4.0.0

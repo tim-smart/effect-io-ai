@@ -5,6 +5,10 @@ Module: `MutableRef`<br />
 
 Sets the MutableRef to a new value and returns the previous value.
 
+**When to use**
+
+Use to replace the current value while keeping the previous value.
+
 **Example** (Reading before setting)
 
 ```ts
@@ -40,6 +44,6 @@ console.log(MutableRef.get(buffer)) // []
 declare const getAndSet: { <T>(value: T): (self: MutableRef<T>) => T; <T>(self: MutableRef<T>, value: T): T; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableRef.ts#L388)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableRef.ts#L426)
 
 Since v2.0.0

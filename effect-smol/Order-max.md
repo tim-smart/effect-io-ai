@@ -7,7 +7,7 @@ Returns the maximum of two values according to the given order. If they are equa
 
 **When to use**
 
-- When you need to find the larger of two values
+Use when when you need to find the larger of two values
 - When implementing min/max operations
 - When selecting values based on ordering
 
@@ -32,8 +32,8 @@ console.log(maxNumber(1, 1)) // 1
 
 **See**
 
-- `min` - Minimum of two values
-- `clamp` - Clamp a value between min and max
+- `min` for the minimum of two values
+- `clamp` to clamp a value between min and max
 
 **Signature**
 
@@ -41,6 +41,6 @@ console.log(maxNumber(1, 1)) // 1
 declare const max: <A>(O: Order<A>) => { (that: A): (self: A) => A; (self: A, that: A): A; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Order.ts#L945)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Order.ts#L974)
 
 Since v2.0.0

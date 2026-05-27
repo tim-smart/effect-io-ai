@@ -7,7 +7,7 @@ Reverses the argument order of a reducer's `combine` method.
 
 **When to use**
 
-- You need the "right" value to act as the accumulator side.
+Use when you need the "right" value to act as the accumulator side.
 - You want to reverse the natural direction of a non-commutative reducer
   (e.g. string concatenation becomes prepend).
 
@@ -45,6 +45,6 @@ console.log(Prepend.combineAll(["a", "b", "c"]))
 declare const flip: <A>(reducer: Reducer<A>) => Reducer<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Reducer.ts#L226)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Reducer.ts#L238)
 
 Since v4.0.0

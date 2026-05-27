@@ -6,6 +6,11 @@ Module: `Array`<br />
 Splits a non-empty array into all elements except the last, and the last
 element.
 
+**When to use**
+
+Use to split a non-empty array from the end when you need both the elements
+before the last element and the last element.
+
 **Details**
 
 - Returns a tuple `[init, last]`.
@@ -22,9 +27,9 @@ console.log(result) // [[1, 2, 3], 4]
 
 **See**
 
-- `unprepend` — split into head + tail
-- `initNonEmpty` — get only the init
-- `lastNonEmpty` — get only the last
+- `unprepend` for splitting a non-empty array into head and tail
+- `initNonEmpty` for getting only the elements before the last
+- `lastNonEmpty` for getting only the last element
 
 **Signature**
 
@@ -32,6 +37,6 @@ console.log(result) // [[1, 2, 3], 4]
 declare const unappend: <A>(self: NonEmptyReadonlyArray<A>) => [arrayWithoutLastElement: Array<A>, lastElement: A]
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L1030)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L1122)
 
 Since v2.0.0

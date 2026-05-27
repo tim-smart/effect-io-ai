@@ -7,7 +7,7 @@ Creates a `Prism` from a fallible getter and an infallible setter.
 
 **When to use**
 
-- Reading can fail (the part may not exist in `S`), but building `S`
+Use when reading can fail (the part may not exist in `S`), but building `S`
   from `A` always succeeds.
 
 **Details**

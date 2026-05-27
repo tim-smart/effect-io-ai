@@ -8,7 +8,7 @@ new elements are added and the oldest elements are dropped.
 
 **When to use**
 
-This strategy prevents producers from being blocked but may result in message loss.
+Use when producers should not block and message loss is acceptable.
 Useful when you want to maintain a rolling window of the most recent messages.
 
 **Example** (Creating sliding queues)
@@ -38,6 +38,6 @@ const program = Effect.gen(function*() {
 declare const sliding: <A, E = never>(capacity: number) => Effect<Queue<A, E>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Queue.ts#L513)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Queue.ts#L583)
 
 Since v2.0.0

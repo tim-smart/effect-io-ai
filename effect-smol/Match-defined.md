@@ -5,6 +5,10 @@ Module: `Match`<br />
 
 Matches any defined (non-null and non-undefined) value.
 
+**When to use**
+
+Use to exclude only `null` and `undefined` from a match branch.
+
 **Details**
 
 This predicate matches values that are neither `null` nor `undefined`,
@@ -40,12 +44,16 @@ console.log(processValue(undefined))
 // Output: "Value is null or undefined"
 ```
 
+**See**
+
+- `any` for matching every value without excluding nullish inputs
+
 **Signature**
 
 ```ts
 declare const defined: <A>(u: A) => u is A & {}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L1360)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L1469)
 
 Since v4.0.0

@@ -3,7 +3,11 @@ Module: `AnthropicTool`<br />
 
 ## AnthropicTool.ModifierKey
 
-Modifier key that can be held during computer-use click or scroll actions.
+Modifier key literal.
+
+**Details**
+
+Allowed values are `"alt"`, `"ctrl"`, `"meta"`, and `"shift"`.
 
 **Signature**
 
@@ -11,6 +15,6 @@ Modifier key that can be held during computer-use click or scroll actions.
 type ModifierKey = typeof ModifierKey.Type
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L367)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L600)
 
 Since v4.0.0

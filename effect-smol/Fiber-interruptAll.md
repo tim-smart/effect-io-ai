@@ -6,6 +6,20 @@ Module: `Fiber`<br />
 Interrupts all fibers in the provided iterable, causing them to stop executing
 and clean up any acquired resources.
 
+**When to use**
+
+Use when a group of forked fibers is no longer needed.
+
+**Details**
+
+The current fiber is recorded as the interruptor. The returned Effect
+completes only after all interrupted fibers have completed.
+
+**Gotchas**
+
+Interruption is cooperative for each fiber. The returned Effect can wait for
+uninterruptible work and finalizers in any interrupted fiber.
+
 **Example** (Interrupting multiple fibers)
 
 ```ts
@@ -45,12 +59,16 @@ const program = Effect.gen(function*() {
 })
 ```
 
+**See**
+
+- `interruptAllAs` for specifying the interrupting fiber ID
+
 **Signature**
 
 ```ts
 declare const interruptAll: <A extends Iterable<Fiber<any, any>>>(fibers: A) => Effect<void>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Fiber.ts#L394)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Fiber.ts#L507)
 
 Since v2.0.0

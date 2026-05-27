@@ -11,6 +11,6 @@ HTTP body variant representing the absence of request content.
 declare class Empty
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpBody.ts#L150)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpBody.ts#L190)
 
 Since v4.0.0

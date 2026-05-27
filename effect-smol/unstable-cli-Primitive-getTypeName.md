@@ -7,7 +7,7 @@ Gets a human-readable type name for a primitive.
 
 **When to use**
 
-Used for generating help documentation.
+Use when you need generating help documentation.
 
 **Example** (Getting primitive type names)
 
@@ -33,6 +33,6 @@ console.log(Primitive.getTypeName(logLevelChoice)) // "choice"
 declare const getTypeName: <A>(primitive: Primitive<A>) => string
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Primitive.ts#L731)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Primitive.ts#L780)
 
 Since v4.0.0

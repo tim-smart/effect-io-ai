@@ -5,9 +5,10 @@ Module: `HttpApiScalar`<br />
 
 Configuration passed to the embedded Scalar API reference UI.
 
-**See**
+**Details**
 
-- https://github.com/scalar/scalar/blob/main/documentation/configuration.md
+This configuration follows Scalar's API reference configuration:
+https://github.com/scalar/scalar/blob/main/documentation/configuration.md
 
 **Signature**
 
@@ -103,6 +104,6 @@ type ScalarConfig = {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiScalar.ts#L61)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiScalar.ts#L76)
 
 Since v4.0.0

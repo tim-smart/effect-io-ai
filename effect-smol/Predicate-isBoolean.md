@@ -7,7 +7,7 @@ Checks whether a value is a `boolean`.
 
 **When to use**
 
-- You need to guard an `unknown` value as a boolean.
+Use when you need to guard an `unknown` value as a boolean.
 
 **Details**
 
@@ -37,6 +37,6 @@ if (Predicate.isBoolean(data)) {
 declare const isBoolean: (input: unknown) => input is boolean
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L645)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L670)
 
 Since v2.0.0

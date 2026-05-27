@@ -7,7 +7,7 @@ A Frequency metric interface that counts occurrences of discrete string values.
 
 **When to use**
 
-Frequency metrics are ideal for tracking categorical data where you want to count
+Use when frequency metrics are ideal for tracking categorical data where you want to count
 how many times specific string values occur, such as HTTP status codes, user actions,
 error types, or any discrete string-based events.
 

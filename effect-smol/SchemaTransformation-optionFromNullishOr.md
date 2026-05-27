@@ -9,7 +9,7 @@ back to `T | null` or `T | undefined` depending on the provided
 
 **When to use**
 
-- Converting nullish API fields to `Option` when both `null` and
+Use to convert nullish API fields to `Option` when both `null` and
   `undefined` represent absence.
 
 **Details**

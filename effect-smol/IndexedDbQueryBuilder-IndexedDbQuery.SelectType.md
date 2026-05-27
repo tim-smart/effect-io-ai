@@ -14,6 +14,6 @@ type SelectType<Table> = [IndexedDbTable.KeyPath<Table>] extends [undefined] ? I
     IndexedDbTable.TableSchema<Table>["Type"]
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbQueryBuilder.ts#L182)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbQueryBuilder.ts#L190)
 
 Since v4.0.0

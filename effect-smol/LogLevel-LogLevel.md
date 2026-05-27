@@ -6,6 +6,11 @@ Module: `LogLevel`<br />
 Represents every level used by Effect logging, including concrete message
 severities and the `All` and `None` sentinel levels.
 
+**When to use**
+
+Use to type values that may be either concrete log message severities or
+logging configuration sentinels.
+
 **Details**
 
 The levels are ordered from most severe to least severe:
@@ -44,6 +49,6 @@ const debugLevel = "Debug" // LogLevel
 type LogLevel = "All" | "Fatal" | "Error" | "Warn" | "Info" | "Debug" | "Trace" | "None"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/LogLevel.ts#L86)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/LogLevel.ts#L91)
 
 Since v2.0.0

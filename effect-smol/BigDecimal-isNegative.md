@@ -5,6 +5,10 @@ Module: `BigDecimal`<br />
 
 Checks if a given `BigDecimal` is negative.
 
+**When to use**
+
+Use to test whether a `BigDecimal` is less than zero.
+
 **Example** (Checking negative decimals)
 
 ```ts
@@ -22,6 +26,6 @@ assert.deepStrictEqual(BigDecimal.isNegative(BigDecimal.fromStringUnsafe("1")), 
 declare const isNegative: (n: BigDecimal) => boolean
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigDecimal.ts#L1434)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigDecimal.ts#L1696)
 
 Since v2.0.0

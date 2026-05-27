@@ -26,6 +26,6 @@ const program = Effect.gen(function*() {
 declare const DisablePropagation: Context.Reference<boolean>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tracer.ts#L495)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tracer.ts#L508)
 
 Since v3.12.0

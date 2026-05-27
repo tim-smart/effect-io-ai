@@ -5,6 +5,11 @@ Module: `Cause`<br />
 
 An untyped defect — typically a programming error or an uncaught exception.
 
+**When to use**
+
+Use when inspecting `Cause` reasons that represent defects instead of typed
+failures or interruptions.
+
 **Details**
 
 The `defect` property is `unknown` because defects are not part of the
@@ -16,17 +21,17 @@ to this type.
 ```ts
 import { Cause } from "effect"
 
-const cause = Cause.die(new Error("Unexpected"))
+const cause = Cause.die("Unexpected")
 const reason = cause.reasons[0]
 if (Cause.isDieReason(reason)) {
-  console.log(reason.defect) // Error: Unexpected
+  console.log(reason.defect) // "Unexpected"
 }
 ```
 
 **See**
 
-- `die` — create a `Cause` containing a single `Die`
-- `isDieReason` — type guard
+- `die` for constructing a cause with a single `Die` reason
+- `isDieReason` for narrowing a `Reason` to `Die`
 
 **Signature**
 
@@ -36,6 +41,6 @@ export interface Die extends Cause.ReasonProto<"Die"> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L390)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L394)
 
 Since v2.0.0

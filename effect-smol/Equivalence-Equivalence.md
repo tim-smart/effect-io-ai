@@ -7,7 +7,7 @@ Represents an equivalence relation over type `A`.
 
 **When to use**
 
-- Use as a type annotation for equivalence functions
+Use as a type annotation for equivalence functions
 - Use when implementing custom equivalence logic
 - Use when working with collection operations that require equivalence relations
 

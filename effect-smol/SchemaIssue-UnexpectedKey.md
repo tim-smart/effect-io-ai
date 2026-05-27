@@ -8,7 +8,7 @@ declared by the schema.
 
 **When to use**
 
-- Detect excess properties during strict struct/tuple validation.
+Use when detect excess properties during strict struct/tuple validation.
 - Typically found inside a `Pointer` that indicates which key was
   unexpected.
 

@@ -12,6 +12,6 @@ optional predicate to decide when key input should end the input stream.
 declare const make: (shouldQuit?: (input: UserInput) => boolean) => Effect<Terminal, never, Scope>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunTerminal.ts#L31)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunTerminal.ts#L49)
 
 Since v4.0.0

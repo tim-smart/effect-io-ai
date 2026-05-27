@@ -5,6 +5,10 @@ Module: `Random`<br />
 
 Generates a random boolean value.
 
+**When to use**
+
+Use to make a pseudo-random true-or-false choice.
+
 **Example** (Generating a random boolean)
 
 ```ts
@@ -22,6 +26,6 @@ const program = Effect.gen(function*() {
 declare const nextBoolean: Effect.Effect<boolean, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Random.ts#L111)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Random.ts#L137)
 
 Since v2.0.0

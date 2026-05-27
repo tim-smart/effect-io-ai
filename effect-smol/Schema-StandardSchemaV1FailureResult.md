@@ -16,6 +16,6 @@ optional path made of property keys or keyed path segments.
 declare const StandardSchemaV1FailureResult: Struct<{ readonly issues: $Array<Struct<{ readonly message: String; readonly path: optional<$Array<Union<readonly [Union<readonly [Finite, Symbol, String]>, Struct<{ readonly key: Union<readonly [Finite, Symbol, String]>; }>]>>>; }>>; }>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L10666)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L10971)
 
 Since v4.0.0

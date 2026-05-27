@@ -5,6 +5,11 @@ Module: `TxSubscriptionRef`<br />
 
 Reads the current value of the TxSubscriptionRef.
 
+**When to use**
+
+Use to read the current transactional value without subscribing to future
+changes.
+
 **Example** (Reading the current value)
 
 ```ts
@@ -17,12 +22,16 @@ const program = Effect.gen(function*() {
 })
 ```
 
+**See**
+
+- `changes` for reading the current value and subsequent updates
+
 **Signature**
 
 ```ts
 declare const get: <A>(self: TxSubscriptionRef<A>) => Effect.Effect<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxSubscriptionRef.ts#L130)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxSubscriptionRef.ts#L186)
 
 Since v3.10.0

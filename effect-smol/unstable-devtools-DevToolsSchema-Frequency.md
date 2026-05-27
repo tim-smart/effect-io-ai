@@ -15,6 +15,6 @@ The state maps observed string values to occurrence counts.
 type Frequency = Schema.Schema.Type<typeof Frequency>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DevToolsSchema.ts#L337)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DevToolsSchema.ts#L345)
 
 Since v4.0.0

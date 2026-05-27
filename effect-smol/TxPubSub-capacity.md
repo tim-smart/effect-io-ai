@@ -22,6 +22,6 @@ const program = Effect.gen(function*() {
 declare const capacity: <A>(self: TxPubSub<A>) => number
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxPubSub.ts#L254)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxPubSub.ts#L294)
 
 Since v2.0.0

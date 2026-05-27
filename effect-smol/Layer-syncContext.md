@@ -7,7 +7,7 @@ Lazily constructs a layer that provides all services in a `Context`.
 
 **When to use**
 
-Use `syncContext` when multiple services can be created synchronously and
+Use when multiple services can be created synchronously and
 should be deferred until the layer is built. Use `sync` when you only need to
 provide one service.
 
@@ -43,6 +43,6 @@ const layer = Layer.syncContext(() =>
 declare const syncContext: <A>(evaluate: LazyArg<Context.Context<A>>) => Layer<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L886)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L965)
 
 Since v2.0.0

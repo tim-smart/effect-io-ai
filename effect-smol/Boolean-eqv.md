@@ -5,6 +5,10 @@ Module: `Boolean`<br />
 
 Combines two booleans using EQV (aka XNOR): `!xor(self, that)`.
 
+**When to use**
+
+Use to accept when both boolean operands have the same truth value.
+
 **Example** (Checking boolean equivalence)
 
 ```ts
@@ -23,6 +27,6 @@ assert.deepStrictEqual(Boolean.eqv(false, false), true)
 declare const eqv: { (that: boolean): (self: boolean) => boolean; (self: boolean, that: boolean): boolean; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Boolean.ts#L278)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Boolean.ts#L389)
 
 Since v2.0.0

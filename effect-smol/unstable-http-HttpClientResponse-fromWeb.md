@@ -11,6 +11,6 @@ Wraps a Web `Response` and its original `HttpClientRequest` as an `HttpClientRes
 declare const fromWeb: (request: HttpClientRequest.HttpClientRequest, source: Response) => HttpClientResponse
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpClientResponse.ts#L89)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpClientResponse.ts#L108)
 
 Since v4.0.0

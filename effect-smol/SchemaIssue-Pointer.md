@@ -8,7 +8,7 @@ a nested structure the error occurred.
 
 **When to use**
 
-- Walk the issue tree to accumulate path segments for error reporting.
+Use when walk the issue tree to accumulate path segments for error reporting.
 - Match on `_tag === "Pointer"` when flattening nested issues.
 
 **Details**

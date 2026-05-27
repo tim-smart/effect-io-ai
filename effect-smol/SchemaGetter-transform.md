@@ -7,7 +7,7 @@ Creates a getter that applies a pure function to present values.
 
 **When to use**
 
-- You have a pure, infallible transformation between types.
+Use when you have a pure, infallible transformation between types.
 - Building encode/decode pairs for `Schema.decodeTo`.
 
 **Details**
@@ -33,9 +33,9 @@ const NumberFromString = Schema.String.pipe(
 
 **See**
 
-- `transformOrFail` - when the transformation can fail
-- `transformOptional` - when you need to handle `None` inputs
-- `passthrough` - when no transformation is needed
+- `transformOrFail` when the transformation can fail
+- `transformOptional` when you need to handle `None` inputs
+- `passthrough` when no transformation is needed
 
 **Signature**
 

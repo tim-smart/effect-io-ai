@@ -11,6 +11,6 @@ Decoded success value type for an event definition.
 type Success<A> = Schema.Schema.Type<SuccessSchema<A>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Event.ts#L264)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Event.ts#L279)
 
 Since v4.0.0

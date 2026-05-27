@@ -7,7 +7,7 @@ Creates a getter that always returns `None`, effectively omitting the value from
 
 **When to use**
 
-- A field should be excluded during decoding or encoding.
+Use when a field should be excluded during decoding or encoding.
 
 **Details**
 
@@ -24,8 +24,8 @@ const omitField = SchemaGetter.omit<string>()
 
 **See**
 
-- `transformOptional` - when you want conditional omission
-- `forbidden` - when you want to fail instead of silently omit
+- `transformOptional` when you want conditional omission
+- `forbidden` when you want to fail instead of silently omit
 
 **Signature**
 

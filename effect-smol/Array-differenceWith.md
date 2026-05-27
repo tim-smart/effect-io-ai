@@ -6,6 +6,11 @@ Module: `Array`<br />
 Computes elements in the first array that are not in the second, using a
 custom equivalence.
 
+**When to use**
+
+Use when keeping only values from the first array and equality must be
+defined by a custom comparator, such as matching objects by id.
+
 **Example** (Difference with custom equality)
 
 ```ts
@@ -17,9 +22,9 @@ console.log(diff) // [1]
 
 **See**
 
-- `difference` — uses default equality
-- `union` — elements in either array
-- `intersection` — elements in both arrays
+- `difference` for the `Equal.equivalence()` variant
+- `unionWith` for keeping values from either array with custom equality
+- `intersectionWith` for keeping values present in both arrays with custom equality
 
 **Signature**
 
@@ -27,6 +32,6 @@ console.log(diff) // [1]
 declare const differenceWith: <A>(isEquivalent: (self: A, that: A) => boolean) => { (that: Iterable<A>): (self: Iterable<A>) => Array<A>; (self: Iterable<A>, that: Iterable<A>): Array<A>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L2989)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L3313)
 
 Since v2.0.0

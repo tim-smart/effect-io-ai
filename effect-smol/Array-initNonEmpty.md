@@ -5,6 +5,10 @@ Module: `Array`<br />
 
 Returns all elements except the last of a `NonEmptyReadonlyArray`.
 
+**When to use**
+
+Use to get all elements before the last when the array is known to be non-empty.
+
 **Example** (Getting init of a non-empty array)
 
 ```ts
@@ -24,6 +28,6 @@ console.log(Array.initNonEmpty([1, 2, 3, 4])) // [1, 2, 3]
 declare const initNonEmpty: <A>(self: NonEmptyReadonlyArray<A>) => Array<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L1207)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L1333)
 
 Since v2.0.0

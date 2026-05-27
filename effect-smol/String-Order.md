@@ -21,6 +21,6 @@ console.log(String.Order("apple", "apple")) // 0
 declare const Order: order.Order<string>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L62)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L136)
 
 Since v2.0.0

@@ -7,7 +7,7 @@ Creates a `Lens` from a getter and a replacer.
 
 **When to use**
 
-- You can always extract `A` from `S` and produce a new `S` by
+Use when you can always extract `A` from `S` and produce a new `S` by
   substituting a new `A`.
 
 **Details**

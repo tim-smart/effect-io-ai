@@ -5,6 +5,10 @@ Module: `Array`<br />
 
 Returns the number of elements in a `ReadonlyArray`.
 
+**When to use**
+
+Use when you need length as a composable function rather than a property access.
+
 **Example** (Getting the length)
 
 ```ts
@@ -19,6 +23,6 @@ console.log(Array.length([1, 2, 3])) // 3
 declare const length: <A>(self: ReadonlyArray<A>) => number
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L902)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L974)
 
 Since v2.0.0

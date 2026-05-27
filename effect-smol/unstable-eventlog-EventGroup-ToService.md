@@ -12,6 +12,6 @@ type ToService<A> = A extends EventGroup<infer _Events> ? Event.ToService<_Event
   : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventGroup.ts#L113)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventGroup.ts#L121)
 
 Since v4.0.0

@@ -12,6 +12,6 @@ stdin, stdout, and stderr streams.
 declare const layer: Layer.Layer<Stdio, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunStdio.ts#L33)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunStdio.ts#L45)
 
 Since v4.0.0

@@ -5,6 +5,10 @@ Module: `TxSemaphore`<br />
 
 Gets the current number of available permits in the semaphore.
 
+**When to use**
+
+Use to inspect how many permits are currently available.
+
 **Example** (Checking available permits)
 
 ```ts
@@ -27,12 +31,16 @@ const program = Effect.gen(function*() {
 })
 ```
 
+**See**
+
+- `capacity` for reading the fixed total permit count
+
 **Signature**
 
 ```ts
 declare const available: (self: TxSemaphore) => Effect.Effect<number>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxSemaphore.ts#L158)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxSemaphore.ts#L198)
 
 Since v2.0.0

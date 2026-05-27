@@ -17,6 +17,6 @@ depending on `kind`.
 declare const makeSingle: <const Kind extends ParamKind, A>(params: { readonly kind: Kind; readonly name: string; readonly primitiveType: Primitive.Primitive<A>; readonly typeName?: string | undefined; readonly description?: Option.Option<string> | undefined; readonly aliases?: ReadonlyArray<string> | undefined; readonly hidden?: boolean | undefined; }) => Single<Kind, A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Param.ts#L351)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Param.ts#L366)
 
 Since v4.0.0

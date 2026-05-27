@@ -8,7 +8,7 @@ there is at least one reason).
 
 **When to use**
 
-Useful for deciding whether a failure was entirely due to interruption and
+Use when deciding whether a failure was entirely due to interruption and
 can be silently discarded.
 
 **Example** (checking interrupt-only causes)
@@ -31,6 +31,6 @@ console.log(Cause.hasInterruptsOnly(Cause.empty))          // false
 declare const hasInterruptsOnly: <E>(self: Cause<E>) => boolean
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L663)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L709)
 
 Since v4.0.0

@@ -5,6 +5,10 @@ Module: `Array`<br />
 
 Returns all elements except the last, wrapped in an `Option`.
 
+**When to use**
+
+Use to safely get all elements before the last when the iterable may be empty.
+
 **Details**
 
 - Allocates a new array via `slice(0, -1)`.
@@ -30,6 +34,6 @@ console.log(Array.init([])) // Option.none()
 declare const init: <A>(self: Iterable<A>) => Option.Option<Array<A>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L1185)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L1307)
 
 Since v2.0.0

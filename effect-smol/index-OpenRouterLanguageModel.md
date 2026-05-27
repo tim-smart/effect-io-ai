@@ -11,6 +11,6 @@ Re-exports all named exports from the "./OpenRouterLanguageModel.ts" module as `
 export * as OpenRouterLanguageModel from "./OpenRouterLanguageModel.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openrouter/src/index.ts#L95)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openrouter/src/index.ts#L30)
 
 Since v4.0.0

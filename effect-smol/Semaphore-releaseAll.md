@@ -6,12 +6,22 @@ Module: `Semaphore`<br />
 Releases all permits held by this semaphore and returns the resulting
 available permits.
 
+**When to use**
+
+Use to return every currently taken permit to a semaphore at once, typically
+during cleanup of manual `take` / `release` protocols.
+
+**See**
+
+- `release` for releasing a known permit count
+- `withPermits` for automatic acquire and release around an effect
+
 **Signature**
 
 ```ts
 declare const releaseAll: (self: Semaphore) => Effect.Effect<number>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Semaphore.ts#L394)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Semaphore.ts#L539)
 
 Since v4.0.0

@@ -11,6 +11,6 @@ Re-exports all named exports from the "./Sink.ts" module as `Sink`.
 export * as Sink from "./Sink.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L5204)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L577)
 
 Since v2.0.0

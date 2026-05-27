@@ -5,6 +5,10 @@ Module: `Cause`<br />
 
 Attaches metadata to every reason in a `Cause`.
 
+**When to use**
+
+Use to attach diagnostic metadata to every reason in a cause.
+
 **Details**
 
 Annotations are stored as a `Context` on each reason and can be
@@ -20,14 +24,18 @@ The runtime uses this to attach stack traces and spans.
 ```ts
 import { Cause, Context } from "effect"
 
+class RequestId extends Context.Service<RequestId, string>()("RequestId") {}
+
 const cause = Cause.fail("error")
-const annotated = Cause.annotate(cause, Context.empty())
+const annotated = Cause.annotate(cause, Context.make(RequestId, "req-1"))
+
+console.log(Context.getOrUndefined(Cause.annotations(annotated), RequestId)) // "req-1"
 ```
 
 **See**
 
-- `annotations` — read merged annotations from a cause
-- `reasonAnnotations` — read annotations from a single reason
+- `annotations` for reading merged annotations from a cause
+- `reasonAnnotations` for reading annotations from a single reason
 
 **Signature**
 
@@ -35,6 +43,6 @@ const annotated = Cause.annotate(cause, Context.empty())
 declare const annotate: { (annotations: Context.Context<never>, options?: { readonly overwrite?: boolean | undefined; }): <E>(self: Cause<E>) => Cause<E>; <E>(self: Cause<E>, annotations: Context.Context<never>, options?: { readonly overwrite?: boolean | undefined; }): Cause<E>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L1689)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L1890)
 
 Since v4.0.0

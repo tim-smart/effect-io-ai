@@ -8,7 +8,7 @@ Decodes a `string` into a `bigint` and encodes a `bigint` back to a
 
 **When to use**
 
-- Parsing large integer strings (e.g. database IDs, blockchain values).
+Use to parse large integer strings (e.g. database IDs, blockchain values).
 
 **Details**
 

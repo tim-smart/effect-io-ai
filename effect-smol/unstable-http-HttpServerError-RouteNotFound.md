@@ -16,6 +16,6 @@ ignored by the error reporter.
 declare class RouteNotFound
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpServerError.ts#L136)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpServerError.ts#L149)
 
 Since v4.0.0

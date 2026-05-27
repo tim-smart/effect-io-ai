@@ -5,6 +5,10 @@ Module: `Equivalence`<br />
 
 An `Equivalence` instance for `Date` objects that compares their `getTime()` values using `Equivalence.Number`.
 
+**When to use**
+
+Use when comparing `Date` values by their millisecond timestamp.
+
 **Details**
 
 Different `Date` instances that represent the same millisecond timestamp are equivalent. Because `Equivalence.Number`
@@ -41,9 +45,9 @@ console.log(Equivalence.Date(d1, d2)) // true (same time value)
 
 **See**
 
-- `Number`
-- `mapInput`
-- `strictEqual`
+- `Number` for the numeric equivalence applied to each `Date#getTime()` result
+- `mapInput` for deriving an equivalence by mapping inputs before comparison
+- `strictEqual` for reference equality when two values must be the same object
 
 **Signature**
 
@@ -51,6 +55,6 @@ console.log(Equivalence.Date(d1, d2)) // true (same time value)
 declare const Date: Equivalence<Date>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Equivalence.ts#L926)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Equivalence.ts#L943)
 
 Since v2.0.0

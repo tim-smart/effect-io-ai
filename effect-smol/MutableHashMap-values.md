@@ -5,6 +5,10 @@ Module: `MutableHashMap`<br />
 
 Returns an iterable over the values in the `MutableHashMap`.
 
+**When to use**
+
+Use to iterate over the values currently stored in a mutable hash map.
+
 **Example** (Reading values)
 
 ```ts
@@ -28,12 +32,16 @@ const largeValues = allValues.filter((value) => value > 1)
 console.log(largeValues) // [2, 3]
 ```
 
+**See**
+
+- `keys` for iterating over stored keys
+
 **Signature**
 
 ```ts
 declare const values: <K, V>(self: MutableHashMap<K, V>) => Iterable<V>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableHashMap.ts#L312)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableHashMap.ts#L395)
 
 Since v3.8.0

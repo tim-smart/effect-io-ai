@@ -5,6 +5,11 @@ Module: `Cron`<br />
 
 Checks whether two `Cron` instances have the same field restrictions.
 
+**When to use**
+
+Use to directly compare whether two cron schedules have the same field
+restrictions.
+
 **Details**
 
 The comparison checks seconds, minutes, hours, days, months, and weekdays.
@@ -35,12 +40,16 @@ console.log(Cron.equals(cron1, cron2)) // true
 console.log(Cron.equals(cron1)(cron2)) // true (curried form)
 ```
 
+**See**
+
+- `Equivalence` for the reusable equivalence instance
+
 **Signature**
 
 ```ts
 declare const equals: { (that: Cron): (self: Cron) => boolean; (self: Cron, that: Cron): boolean; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cron.ts#L998)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cron.ts#L1093)
 
 Since v2.0.0

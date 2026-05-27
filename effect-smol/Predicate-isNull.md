@@ -7,7 +7,7 @@ Checks whether a value is `null`.
 
 **When to use**
 
-- You need a guard for nullable values.
+Use when you need a guard for nullable values.
 
 **Details**
 
@@ -35,6 +35,6 @@ console.log(Predicate.isNull(data))
 declare const isNull: (input: unknown) => input is null
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L870)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L895)
 
 Since v2.0.0

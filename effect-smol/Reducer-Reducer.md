@@ -8,7 +8,7 @@ a single result.
 
 **When to use**
 
-- You need to fold/reduce a collection into a single value.
+Use when you need to fold/reduce a collection into a single value.
 - You want a reusable reducing strategy that can be passed to library
   functions like `Struct.makeReducer`, `Option.makeReducer`, or
   `Record.makeReducerUnion`.
@@ -47,10 +47,22 @@ console.log(Concat.combineAll(["hello", " ", "world"]))
 
 ```ts
 export interface Reducer<A> extends Combiner.Combiner<A> {
-  /** Neutral starting value (combining with this changes nothing). */
+  /**
+   * Neutral starting value (combining with this changes nothing).
+   *
+   * **When to use**
+   *
+   * Use to seed a reduction and represent the result of reducing an empty collection.
+   */
   readonly initialValue: A
 
-  /** Combines all values in the collection, starting from `initialValue`. */
+  /**
+   * Combines all values in the collection, starting from `initialValue`.
+   *
+   * **When to use**
+   *
+   * Use to reduce an iterable with this reducer's initial value and combining operation.
+   */
   readonly combineAll: (collection: Iterable<A>) => A
 }
 ```

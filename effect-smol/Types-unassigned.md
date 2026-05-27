@@ -5,6 +5,11 @@ Module: `Types`<br />
 
 Branded marker interface representing an unassigned type parameter.
 
+**When to use**
+
+Use when Effect's type-level machinery needs to represent a type parameter
+that has not been assigned yet.
+
 **Details**
 
 Used internally by the Effect type system to indicate that a type parameter
@@ -22,6 +27,6 @@ export interface unassigned {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Types.ts#L869)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Types.ts#L905)
 
 Since v4.0.0

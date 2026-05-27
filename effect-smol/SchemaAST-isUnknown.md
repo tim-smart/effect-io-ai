@@ -5,12 +5,21 @@ Module: `SchemaAST`<br />
 
 Narrows an `AST` to `Unknown`.
 
+**When to use**
+
+Use when inspecting a schema AST and you need to handle the `Unknown` node
+variant specifically.
+
+**See**
+
+- `isAny` for the guard for the `Any` node, whose parsed result is typed as `any` rather than `unknown`
+
 **Signature**
 
 ```ts
 declare const isUnknown: (ast: AST) => ast is Unknown
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L204)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L249)
 
 Since v4.0.0

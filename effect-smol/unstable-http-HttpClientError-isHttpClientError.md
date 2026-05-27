@@ -11,6 +11,6 @@ Returns `true` when a value is an `HttpClientError`.
 declare const isHttpClientError: (u: unknown) => u is HttpClientError
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpClientError.ts#L30)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpClientError.ts#L46)
 
 Since v4.0.0

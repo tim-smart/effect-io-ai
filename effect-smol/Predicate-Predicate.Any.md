@@ -7,7 +7,7 @@ A utility type representing any predicate type.
 
 **When to use**
 
-- You need a constraint for "any predicate" in generic code.
+Use when you need a constraint for "any predicate" in generic code.
 
 **Details**
 
@@ -31,6 +31,6 @@ type AnyPredicate = Predicate.Predicate.Any
 type Any = Predicate<any>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L228)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L253)
 
 Since v3.6.0

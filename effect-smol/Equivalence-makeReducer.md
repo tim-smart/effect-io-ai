@@ -7,7 +7,7 @@ Creates a `Reducer` for combining `Equivalence` instances, useful for aggregatin
 
 **When to use**
 
-- Use when you need to combine multiple equivalences from a collection using reducer patterns
+Use when you need to combine multiple equivalences from a collection using reducer patterns
 - Use when implementing fold operations over collections of equivalences
 - Use when working with reducers that operate on equivalences
 
@@ -47,6 +47,6 @@ console.log(combined(1, 1.5)) // false (strict equal fails)
 declare const makeReducer: <A>() => Reducer.Reducer<Equivalence<A>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Equivalence.ts#L875)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Equivalence.ts#L888)
 
 Since v4.0.0

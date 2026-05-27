@@ -15,6 +15,6 @@ The state contains the current numeric or bigint value.
 type Gauge = Schema.Schema.Type<typeof Gauge>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DevToolsSchema.ts#L366)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DevToolsSchema.ts#L374)
 
 Since v4.0.0

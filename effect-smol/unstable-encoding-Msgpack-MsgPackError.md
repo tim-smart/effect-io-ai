@@ -16,6 +16,6 @@ unpacking, and `cause` preserves the original error.
 declare class MsgPackError
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Msgpack.ts#L48)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Msgpack.ts#L63)
 
 Since v4.0.0

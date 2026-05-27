@@ -16,6 +16,6 @@ in, and a relative `weight` used when assigning shards across runners.
 declare class Runner
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Runner.ts#L47)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Runner.ts#L61)
 
 Since v4.0.0

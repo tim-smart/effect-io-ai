@@ -6,6 +6,10 @@ Module: `Array`<br />
 Groups elements into a record by a key-returning function. Each key maps
 to a `NonEmptyArray` of elements that produced that key.
 
+**When to use**
+
+Use to build buckets of elements indexed by a computed string or symbol key.
+
 **Details**
 
 - Unlike `group`/`groupWith`, elements do not need to be
@@ -39,6 +43,6 @@ console.log(result)
 declare const groupBy: { <A, K extends string | symbol>(f: (a: A) => K): (self: Iterable<A>) => Record<Record.ReadonlyRecord.NonLiteralKey<K>, NonEmptyArray<A>>; <A, K extends string | symbol>(self: Iterable<A>, f: (a: A) => K): Record<Record.ReadonlyRecord.NonLiteralKey<K>, NonEmptyArray<A>>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L2804)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L3113)
 
 Since v2.0.0

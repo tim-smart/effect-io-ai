@@ -8,7 +8,7 @@ UTF-8 `string` back to a Base64 string.
 
 **When to use**
 
-- Handling text data transmitted as Base64 strings.
+Use when handling text data transmitted as Base64 strings.
 
 **Details**
 

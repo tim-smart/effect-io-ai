@@ -12,6 +12,6 @@ below the threshold and scheduling a durable clock for longer durations.
 declare const sleep: (options: { readonly name: string; readonly duration: Duration.Input; readonly inMemoryThreshold?: Duration.Input | undefined; }) => Effect.Effect<void, never, WorkflowEngine | WorkflowInstance>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DurableClock.ts#L77)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DurableClock.ts#L89)
 
 Since v4.0.0

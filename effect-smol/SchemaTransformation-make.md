@@ -8,7 +8,7 @@ Constructs a `Transformation` from an object with `decode` and `encode`
 
 **When to use**
 
-- You already have `Getter` instances and want to pair them.
+Use when you already have `Getter` instances and want to pair them.
 - You want idempotent wrapping (won't double-wrap).
 
 **Details**

@@ -6,10 +6,20 @@ Module: `Pipeable`<br />
 Returns a subclass of the provided class that adds the standard `pipe`
 method.
 
+**When to use**
+
+Use to add pipe support to an existing class without extending a base class
+or modifying its prototype.
+
 **Details**
 
 The original constructor and instance members are preserved, and the added
 method delegates to `pipeArguments`.
+
+**See**
+
+- `Prototype` for a reusable prototype object
+- `Class` for a base constructor to extend
 
 **Signature**
 
@@ -17,6 +27,6 @@ method delegates to `pipeArguments`.
 declare const Mixin: <TBase extends new (...args: ReadonlyArray<any>) => any>(klass: TBase) => TBase & PipeableConstructor
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Pipeable.ts#L654)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Pipeable.ts#L679)
 
 Since v4.0.0

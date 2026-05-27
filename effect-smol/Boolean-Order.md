@@ -6,6 +6,11 @@ Module: `Boolean`<br />
 Provides an `Order` instance for `boolean` that allows comparing and sorting boolean values.
 In this ordering, `false` is considered less than `true`.
 
+**When to use**
+
+Use when an API needs an `Order` instance for booleans with `false` before
+`true`.
+
 **Example** (Comparing booleans)
 
 ```ts
@@ -22,6 +27,6 @@ console.log(Boolean.Order(true, true)) // 0 (true === true)
 declare const Order: order.Order<boolean>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Boolean.ts#L108)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Boolean.ts#L183)
 
 Since v2.0.0

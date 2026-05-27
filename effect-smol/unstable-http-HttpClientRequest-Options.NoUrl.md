@@ -11,6 +11,6 @@ Request options that omit the method and URL for helpers that already receive th
 export interface NoUrl extends Omit<Options, "method" | "url"> {}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpClientRequest.ts#L98)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpClientRequest.ts#L119)
 
 Since v4.0.0

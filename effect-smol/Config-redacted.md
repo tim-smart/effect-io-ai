@@ -6,6 +6,11 @@ Module: `Config`<br />
 Creates a config for a redacted string value. The parsed result is wrapped
 in a `Redacted` container that hides the value from logs and `toString`.
 
+**When to use**
+
+Use to read secret string settings that should not be exposed in logs or
+string output.
+
 **Details**
 
 Shortcut for `Config.schema(Schema.Redacted(Schema.String), name)`.
@@ -32,12 +37,16 @@ Effect.runSync(
 // Output: <redacted>
 ```
 
+**See**
+
+- `string` for non-secret string settings
+
 **Signature**
 
 ```ts
 declare const redacted: (name?: string) => Config<Redacted<string>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Config.ts#L1245)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Config.ts#L1317)
 
 Since v2.0.0

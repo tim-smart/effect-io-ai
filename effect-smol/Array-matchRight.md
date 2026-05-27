@@ -6,10 +6,14 @@ Module: `Array`<br />
 Pattern-matches on an array from the right, providing all elements except the
 last and the last element separately.
 
+**When to use**
+
+Use to pattern-match when you need all but the last element and the last element
+as separate values.
+
 **Details**
 
-- `onNonEmpty` receives `(init, last)` where `init` is everything but the last element.
-- Use when you want to process the last element differently from the rest.
+`onNonEmpty` receives `(init, last)` where `init` is everything but the last element.
 
 **Example** (Init and last destructuring)
 
@@ -35,6 +39,6 @@ console.log(matchRight([1, 2, 3])) // "init: 2, last: 3"
 declare const matchRight: { <B, A, C = B>(options: { readonly onEmpty: LazyArg<B>; readonly onNonEmpty: (init: Array<A>, last: A) => C; }): (self: ReadonlyArray<A>) => B | C; <A, B, C = B>(self: ReadonlyArray<A>, options: { readonly onEmpty: LazyArg<B>; readonly onNonEmpty: (init: Array<A>, last: A) => C; }): B | C; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L553)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L590)
 
 Since v2.0.0

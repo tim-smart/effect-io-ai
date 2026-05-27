@@ -8,7 +8,7 @@ maps values of type `B` to values of type `A`.
 
 **When to use**
 
-- When you have an order for a property type and want to compare objects by that property
+Use when when you have an order for a property type and want to compare objects by that property
 - When extracting a comparable value from a complex type
 - When creating orders for types that contain comparable values
 
@@ -33,8 +33,8 @@ console.log(byLength("aa", "bb")) // 0
 
 **See**
 
-- `combine` - Combine mapped orders for multi-criteria comparison
-- `Struct` - Create orders for structs with multiple fields
+- `combine` to combine mapped orders for multi-criteria comparison
+- `Struct` to create orders for structs with multiple fields
 
 **Signature**
 
@@ -42,6 +42,6 @@ console.log(byLength("aa", "bb")) // 0
 declare const mapInput: { <B, A>(f: (b: B) => A): (self: Order<A>) => Order<B>; <A, B>(self: Order<A>, f: (b: B) => A): Order<B>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Order.ts#L519)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Order.ts#L548)
 
 Since v2.0.0

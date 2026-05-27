@@ -5,6 +5,12 @@ Module: `Result`<br />
 
 Starting point for the "do notation" simulation with `Result`.
 
+**When to use**
+
+Use to start a `Result` do-notation pipeline from an empty successful record
+before adding named fields from `Result`-producing computations and pure
+computed values.
+
 **Details**
 
 Creates a `Result<{}>` (success with an empty object). Use with
@@ -31,6 +37,7 @@ console.log(result)
 - `bind` to add Result-producing fields
 - `let` to add pure computed fields
 - `gen` for an alternative generator-based syntax
+- `bindTo` for starting a do-notation chain from an existing Result
 
 **Signature**
 
@@ -38,6 +45,6 @@ console.log(result)
 declare const Do: Result<{}, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L1528)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L1641)
 
 Since v2.0.0

@@ -5,12 +5,21 @@ Module: `OpenRouterLanguageModel`<br />
 
 Service definition for OpenRouter language model configuration.
 
+**When to use**
+
+Use to provide scoped OpenRouter chat completion defaults or per-operation
+overrides for an OpenRouter language model service.
+
+**See**
+
+- `withConfigOverride` for scoping language model request overrides
+
 **Signature**
 
 ```ts
 declare class Config
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openrouter/src/OpenRouterLanguageModel.ts#L66)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openrouter/src/OpenRouterLanguageModel.ts#L92)
 
 Since v4.0.0

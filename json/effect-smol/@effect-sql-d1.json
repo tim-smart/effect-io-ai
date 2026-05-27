@@ -141,6 +141,6 @@
     "since": "4.0.0",
     "category": null,
     "signature": "export * as D1Client from \"./D1Client.ts\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/d1/src/index.ts#L31"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/d1/src/index.ts#L10"
   }
 ]

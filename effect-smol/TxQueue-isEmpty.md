@@ -28,6 +28,6 @@ const program = Effect.gen(function*() {
 declare const isEmpty: (self: TxQueueState) => Effect.Effect<boolean>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxQueue.ts#L1079)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxQueue.ts#L1120)
 
 Since v2.0.0

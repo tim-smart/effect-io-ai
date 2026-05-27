@@ -7,7 +7,7 @@ Creates a predicate that returns `true` when neither predicate is `true`.
 
 **When to use**
 
-- You want the logical NOR of two conditions.
+Use when you want the logical NOR of two conditions.
 
 **Details**
 
@@ -35,6 +35,6 @@ console.log(neither(true))
 declare const nor: { <A>(that: Predicate<A>): (self: Predicate<A>) => Predicate<A>; <A>(self: Predicate<A>, that: Predicate<A>): Predicate<A>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L1816)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L1850)
 
 Since v2.0.0

@@ -15,6 +15,6 @@ The lookup lowercases the provided header name and returns `Option.none()` when 
 declare const get: { (key: string): (self: Headers) => Option.Option<string>; (self: Headers, key: string): Option.Option<string>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Headers.ts#L256)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Headers.ts#L293)
 
 Since v4.0.0

@@ -5,6 +5,11 @@ Module: `Array`<br />
 
 Groups consecutive equal elements using a custom equivalence function.
 
+**When to use**
+
+Use when a non-empty array is already arranged so matching elements are
+adjacent and you need a custom equivalence function.
+
 **Details**
 
 - Only groups **adjacent** elements — non-adjacent duplicates stay separate.
@@ -21,8 +26,8 @@ console.log(Array.groupWith(["a", "a", "b", "b", "b", "c", "a"], (x, y) => x ===
 
 **See**
 
-- `group` — uses default equality
-- `groupBy` — group by a key function into a record
+- `group` for grouping adjacent elements with `Equal.equivalence()`
+- `groupBy` for grouping all elements into a record by key, regardless of adjacency
 
 **Signature**
 
@@ -30,6 +35,6 @@ console.log(Array.groupWith(["a", "a", "b", "b", "b", "c", "a"], (x, y) => x ===
 declare const groupWith: { <A>(isEquivalent: (self: A, that: A) => boolean): (self: NonEmptyReadonlyArray<A>) => NonEmptyArray<NonEmptyArray<A>>; <A>(self: NonEmptyReadonlyArray<A>, isEquivalent: (self: A, that: A) => boolean): NonEmptyArray<NonEmptyArray<A>>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L2725)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L3025)
 
 Since v2.0.0

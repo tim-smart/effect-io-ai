@@ -7,7 +7,7 @@ Creates an `Effect` that always succeeds with a given value.
 
 **When to use**
 
-Use this function when you need an effect that completes successfully with a
+Use when you use this function when you need an effect that completes successfully with a
 specific value without any errors or external dependencies.
 
 **Example** (Creating a successful effect)
@@ -32,6 +32,6 @@ const success = Effect.succeed(42)
 declare const succeed: <A>(value: A) => Effect<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L976)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L1039)
 
 Since v2.0.0

@@ -8,7 +8,7 @@ optional values. Yielding a `None` short-circuits the generator to `None`.
 
 **When to use**
 
-- Writing imperative-style code that chains multiple `Option`s
+Use when writing imperative-style code that chains multiple `Option`s
 - Readability when many sequential optional steps are involved
 
 **Details**
@@ -46,6 +46,6 @@ console.log(person)
 declare const gen: Gen.Gen<OptionTypeLambda>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L2539)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L2570)
 
 Since v2.0.0

@@ -8,7 +8,7 @@ all are `Some`.
 
 **When to use**
 
-- Collecting several `Option`s of the same type into a non-empty tuple
+Use when collecting several `Option`s of the same type into a non-empty tuple
 
 **Details**
 
@@ -41,6 +41,6 @@ console.log(Option.productMany(first, [Option.some(2), Option.none()]))
 declare const productMany: <A>(self: Option<A>, collection: Iterable<Option<A>>) => Option<[A, ...Array<A>]>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L1703)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L1730)
 
 Since v2.0.0

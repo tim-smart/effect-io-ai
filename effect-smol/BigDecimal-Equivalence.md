@@ -5,6 +5,10 @@ Module: `BigDecimal`<br />
 
 Provides an `Equivalence` instance for `BigDecimal` that determines equality between BigDecimal values.
 
+**When to use**
+
+Use when an API needs an `Equivalence` instance for decimal equality.
+
 **Example** (Checking decimal equivalence)
 
 ```ts
@@ -24,6 +28,6 @@ console.log(BigDecimal.Equivalence(a, c)) // false (1.50 !== 2.0)
 declare const Equivalence: Equ.Equivalence<BigDecimal>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigDecimal.ts#L1046)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigDecimal.ts#L1237)
 
 Since v2.0.0

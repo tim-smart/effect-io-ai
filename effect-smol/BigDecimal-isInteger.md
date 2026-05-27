@@ -5,6 +5,10 @@ Module: `BigDecimal`<br />
 
 Checks if a given `BigDecimal` is an integer.
 
+**When to use**
+
+Use to test whether a `BigDecimal` has no fractional decimal part.
+
 **Example** (Checking integer decimals)
 
 ```ts
@@ -22,6 +26,6 @@ assert.deepStrictEqual(BigDecimal.isInteger(BigDecimal.fromStringUnsafe("1.1")),
 declare const isInteger: (n: BigDecimal) => boolean
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigDecimal.ts#L1397)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigDecimal.ts#L1651)
 
 Since v2.0.0

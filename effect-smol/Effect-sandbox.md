@@ -28,16 +28,12 @@ Effect.runPromise(program).then(console.log)
 // Output: "Caught cause: Something went wrong"
 ```
 
-**See**
-
-- `sandbox` to expose failures as full causes.
-
 **Signature**
 
 ```ts
 declare const sandbox: <A, E, R>(self: Effect<A, E, R>) => Effect<A, Cause.Cause<E>, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L3875)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L4156)
 
 Since v2.0.0

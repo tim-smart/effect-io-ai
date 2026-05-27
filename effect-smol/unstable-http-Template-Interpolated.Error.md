@@ -19,6 +19,6 @@ type Error<A> = A extends infer T ? T extends Option.Option<infer _> ? never
     : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Template.ts#L106)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Template.ts#L119)
 
 Since v4.0.0

@@ -30,6 +30,6 @@ const program = Effect.gen(function*() {
 declare const unbounded: <A = never>() => Effect.Effect<TxPubSub<A>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxPubSub.ts#L226)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxPubSub.ts#L266)
 
 Since v2.0.0

@@ -32,6 +32,6 @@ console.log(error.message)
 declare class ToolParameterValidationError
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AiError.ts#L1078)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AiError.ts#L1091)
 
 Since v4.0.0

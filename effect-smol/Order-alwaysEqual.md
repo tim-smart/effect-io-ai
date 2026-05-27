@@ -7,7 +7,7 @@ Creates an `Order` that considers all values as equal.
 
 **When to use**
 
-- When you need an order that doesn't distinguish between values
+Use when when you need an order that doesn't distinguish between values
 - As a default or fallback order when no meaningful comparison exists
 - When implementing optional ordering where equality is sufficient
 
@@ -31,7 +31,7 @@ console.log(alwaysEqualOrder(1, 1)) // 0
 
 **See**
 
-- `combine` - Combine with other orders
+- `combine` to combine with other orders
 
 **Signature**
 
@@ -39,6 +39,6 @@ console.log(alwaysEqualOrder(1, 1)) // 0
 declare const alwaysEqual: <A>() => Order<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Order.ts#L423)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Order.ts#L452)
 
 Since v4.0.0

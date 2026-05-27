@@ -11,6 +11,6 @@ Browser Web Crypto APIs used by the Crypto service implementation.
 declare const WebCrypto: Context.Reference<Crypto>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/BrowserCrypto.ts#L18)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/BrowserCrypto.ts#L60)
 
 Since v1.0.0

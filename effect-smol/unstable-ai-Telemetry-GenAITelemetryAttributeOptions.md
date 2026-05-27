@@ -64,6 +64,6 @@ type GenAITelemetryAttributeOptions = BaseAttributes & {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Telemetry.ts#L407)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Telemetry.ts#L413)
 
 Since v4.0.0

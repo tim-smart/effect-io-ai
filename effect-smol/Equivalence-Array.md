@@ -7,7 +7,7 @@ Creates an equivalence for arrays where all elements are compared using the same
 
 **When to use**
 
-- Use when comparing arrays with homogeneous element types
+Use when comparing arrays with homogeneous element types
 - Use when all elements should use the same equivalence logic
 - Use when working with variable-length arrays instead of fixed tuples
 - Prefer this over `Tuple` when you have arrays of the same type
@@ -60,6 +60,6 @@ console.log(stringArrayEq([], [])) // true (empty arrays)
 declare const Array: <A>(item: Equivalence<A>) => Equivalence<ReadonlyArray<A>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Equivalence.ts#L676)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Equivalence.ts#L691)
 
 Since v4.0.0

@@ -11,6 +11,6 @@ Re-exports all named exports from the "./FiberSet.ts" module as `FiberSet`.
 export * as FiberSet from "./FiberSet.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L1807)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L207)
 
 Since v2.0.0

@@ -16,6 +16,6 @@ from the response conversion are converted to defects.
 declare const toResponse: (self: Respondable) => Effect.Effect<HttpServerResponse>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpServerRespondable.ts#L74)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpServerRespondable.ts#L88)
 
 Since v4.0.0

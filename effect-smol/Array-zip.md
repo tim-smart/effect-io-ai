@@ -6,6 +6,10 @@ Module: `Array`<br />
 Pairs elements from two iterables by position. If the iterables differ in
 length, the extra elements from the longer one are discarded.
 
+**When to use**
+
+Use to pair corresponding elements from two iterables when you need simple pairs without a custom combiner.
+
 **Details**
 
 - Returns `NonEmptyArray` when both inputs are non-empty.
@@ -29,6 +33,6 @@ console.log(Array.zip([1, 2, 3], ["a", "b"])) // [[1, "a"], [2, "b"]]
 declare const zip: { <B>(that: NonEmptyReadonlyArray<B>): <A>(self: NonEmptyReadonlyArray<A>) => NonEmptyArray<[A, B]>; <B>(that: Iterable<B>): <A>(self: Iterable<A>) => Array<[A, B]>; <A, B>(self: NonEmptyReadonlyArray<A>, that: NonEmptyReadonlyArray<B>): NonEmptyArray<[A, B]>; <A, B>(self: Iterable<A>, that: Iterable<B>): Array<[A, B]>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L2050)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L2284)
 
 Since v2.0.0

@@ -8,7 +8,7 @@ represents the outcome (success or failure) of the effect.
 
 **When to use**
 
-Use `runPromiseExit` when you need to determine if an effect succeeded
+Use when you need to determine if an effect succeeded
 or failed, including any defects, and you want to work with a `Promise`.
 
 **Details**
@@ -46,12 +46,16 @@ Effect.runPromiseExit(Effect.fail("my error")).then(console.log)
 // }
 ```
 
+**See**
+
+- `runPromise` for a version that rejects on failure.
+
 **Signature**
 
 ```ts
 declare const runPromiseExit: <A, E>(effect: Effect<A, E>, options?: RunOptions | undefined) => Promise<Exit.Exit<A, E>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L8481)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L9038)
 
 Since v2.0.0

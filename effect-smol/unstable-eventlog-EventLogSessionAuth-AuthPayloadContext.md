@@ -11,6 +11,6 @@ Domain-separation string embedded in canonical session authentication payloads.
 declare const AuthPayloadContext: "eventlog-auth-v1"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventLogSessionAuth.ts#L36)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventLogSessionAuth.ts#L54)
 
 Since v4.0.0

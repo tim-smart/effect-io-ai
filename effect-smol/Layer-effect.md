@@ -7,7 +7,7 @@ Constructs a layer from an effect that produces a single service.
 
 **When to use**
 
-Use `effect` when constructing the service requires effects, dependencies, or
+Use when constructing the service requires effects, dependencies, or
 scoped resource acquisition. Use `effectContext` when the effect produces
 multiple services in a `Context`, and `effectDiscard` when construction work
 should provide no services.
@@ -45,6 +45,6 @@ const layer = Layer.effect(Database,
 declare const effect: { <I, S>(service: Context.Key<I, S>): <E, R>(effect: Effect<S, E, R>) => Layer<I, E, Exclude<R, Scope.Scope>>; <I, S, E, R>(service: Context.Key<I, S>, effect: Effect<Types.NoInfer<S>, E, R>): Layer<I, E, Exclude<R, Scope.Scope>>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L927)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L1006)
 
 Since v2.0.0

@@ -6,6 +6,11 @@ Module: `References`<br />
 Reference for the current scheduler implementation used by the Effect runtime.
 Controls how Effects are scheduled and executed.
 
+**When to use**
+
+Use to provide the scheduler implementation that fibers use in the current
+context.
+
 **Example** (Providing a custom scheduler)
 
 ```ts
@@ -37,6 +42,6 @@ const customScheduling = Effect.gen(function*() {
 declare const Scheduler: Context.Reference<Scheduler>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/References.ts#L638)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/References.ts#L834)
 
 Since v4.0.0

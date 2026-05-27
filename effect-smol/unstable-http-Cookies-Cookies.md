@@ -14,6 +14,6 @@ export interface Cookies extends Pipeable, Inspectable.Inspectable {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cookies.ts#L47)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cookies.ts#L93)
 
 Since v4.0.0

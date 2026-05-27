@@ -36,6 +36,6 @@ const readConfigFile = Effect.gen(function*() {
 declare const fileText: Primitive<string>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Primitive.ts#L470)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Primitive.ts#L519)
 
 Since v4.0.0

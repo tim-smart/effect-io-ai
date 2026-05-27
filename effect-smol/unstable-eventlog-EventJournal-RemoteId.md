@@ -11,6 +11,6 @@ Branded byte identifier for a remote event journal source.
 type RemoteId = Uint8Array & Brand<RemoteIdTypeId>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventJournal.ts#L161)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventJournal.ts#L178)
 
 Since v4.0.0

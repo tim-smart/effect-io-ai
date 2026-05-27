@@ -5,6 +5,11 @@ Module: `Context`<br />
 
 Merges any number of `Context`s into one.
 
+**When to use**
+
+Use when the number of contexts is variadic. Use `merge` when
+combining exactly two contexts.
+
 **Details**
 
 When multiple contexts contain the same service key, the service from the
@@ -35,12 +40,16 @@ assert.deepStrictEqual(Context.get(context, Timeout), { TIMEOUT: 5000 })
 assert.deepStrictEqual(Context.get(context, Host), { HOST: "localhost" })
 ```
 
+**See**
+
+- `merge` for merging two contexts
+
 **Signature**
 
 ```ts
 declare const mergeAll: <T extends Array<unknown>>(...ctxs: { [K in keyof T]: Context<T[K]>; }) => Context<T[number]>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Context.ts#L992)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Context.ts#L1186)
 
 Since v3.12.0

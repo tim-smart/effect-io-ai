@@ -5,6 +5,10 @@ Module: `BigInt`<br />
 
 Returns the result of subtracting `1n` from a `bigint`.
 
+**When to use**
+
+Use to decrement a `bigint` counter by one.
+
 **Example** (Decrementing a bigint)
 
 ```ts
@@ -20,6 +24,6 @@ assert.deepStrictEqual(BigInt.decrement(3n), 2n)
 declare const decrement: (n: bigint) => bigint
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigInt.ts#L210)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigInt.ts#L329)
 
 Since v2.0.0

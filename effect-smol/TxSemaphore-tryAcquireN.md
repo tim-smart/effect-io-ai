@@ -7,6 +7,11 @@ Tries to acquire the specified number of permits from the semaphore without
 blocking, returning `true` if successful or `false` if not enough permits are
 available.
 
+**When to use**
+
+Use to attempt a multi-permit acquisition without retrying when not enough
+permits are available.
+
 **Example** (Trying to acquire multiple permits)
 
 ```ts
@@ -25,12 +30,17 @@ const program = Effect.gen(function*() {
 })
 ```
 
+**See**
+
+- `acquireN` for waiting until all requested permits are available
+- `tryAcquire` for attempting to acquire one permit without blocking
+
 **Signature**
 
 ```ts
 declare const tryAcquireN: (self: TxSemaphore, n: number) => Effect.Effect<boolean>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxSemaphore.ts#L328)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxSemaphore.ts#L408)
 
 Since v4.0.0

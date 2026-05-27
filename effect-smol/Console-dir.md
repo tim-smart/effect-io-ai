@@ -23,6 +23,6 @@ const program = Effect.gen(function*() {
 declare const dir: (item: any, options?: any) => Effect.Effect<void>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Console.ts#L300)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Console.ts#L321)
 
 Since v2.0.0

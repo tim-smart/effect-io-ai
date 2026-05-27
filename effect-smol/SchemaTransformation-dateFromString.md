@@ -7,7 +7,7 @@ Decodes a `string` into a `Date` and encodes a `Date` back to a `string`.
 
 **When to use**
 
-- Parsing ISO 8601 date strings from APIs or user input.
+Use to parse ISO 8601 date strings from APIs or user input.
 
 **Details**
 

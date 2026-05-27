@@ -6,6 +6,11 @@ Module: `Array`<br />
 Computes the intersection of two arrays using a custom equivalence. Order is
 determined by the first array.
 
+**When to use**
+
+Use when keeping only values present in both arrays and equality must be
+defined by a custom comparator, such as matching objects by id.
+
 **Example** (Intersection with custom equality)
 
 ```ts
@@ -19,9 +24,9 @@ console.log(Array.intersectionWith(isEquivalent)(array2)(array1)) // [{ id: 1 },
 
 **See**
 
-- `intersection` — uses default equality
-- `union` — elements in either array
-- `difference` — elements only in the first array
+- `intersection` for the `Equal.equivalence()` variant
+- `unionWith` for keeping values from either array with custom equality
+- `differenceWith` for keeping values only from the first array with custom equality
 
 **Signature**
 
@@ -29,6 +34,6 @@ console.log(Array.intersectionWith(isEquivalent)(array2)(array1)) // [{ id: 1 },
 declare const intersectionWith: <A>(isEquivalent: (self: A, that: A) => boolean) => { (that: Iterable<A>): (self: Iterable<A>) => Array<A>; (self: Iterable<A>, that: Iterable<A>): Array<A>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L2931)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L3250)
 
 Since v2.0.0

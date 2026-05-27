@@ -7,7 +7,7 @@ Returns `true` if `u` is a `Transformation` instance.
 
 **When to use**
 
-- Checking whether a value is already a Transformation before wrapping it.
+Use to check whether a value is already a Transformation before wrapping it.
 
 **Details**
 

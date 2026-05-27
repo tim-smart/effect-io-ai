@@ -7,7 +7,7 @@ Typed error indicating that a configuration source could not be read.
 
 **When to use**
 
-Use this from a custom provider's `get` callback when the underlying store
+Use when you use this from a custom provider's `get` callback when the underlying store
 is unreachable or produces an I/O error, or match on it in error channels
 when consuming provider output directly.
 

@@ -4,12 +4,20 @@ Module: `Cause`<br />
 ## Cause.map
 
 Transforms the typed error values inside a `Cause` using the
-provided function. Only `Fail` reasons are affected; `Die`
-and `Interrupt` reasons pass through unchanged.
+provided function. Only `Fail` reasons are affected; `Die` and `Interrupt`
+reasons pass through unchanged.
+
+**When to use**
+
+Use to transform expected typed failures while preserving defects and
+interruptions unchanged.
 
 **Details**
 
-Returns a new `Cause`; does not mutate the original.
+If at least one `Fail` reason exists, this returns a new `Cause`
+containing the mapped failures. If the cause has no `Fail` reasons, the
+original cause is returned unchanged. In either case, the original cause is
+not mutated.
 
 **Example** (mapping errors to uppercase)
 
@@ -30,6 +38,6 @@ if (Cause.isFailReason(reason)) {
 declare const map: { <E, E2>(f: (error: Types.NoInfer<E>) => E2): (self: Cause<E>) => Cause<E2>; <E, E2>(self: Cause<E>, f: (error: Types.NoInfer<E>) => E2): Cause<E2>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L690)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L744)
 
 Since v2.0.0

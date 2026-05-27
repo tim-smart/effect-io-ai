@@ -6,6 +6,11 @@ Module: `Pipeable`<br />
 Applies a `pipe` method's variadic arguments to an initial value from left
 to right.
 
+**When to use**
+
+Use to implement a custom `.pipe(...)` method from JavaScript's `arguments`
+object.
+
 **Details**
 
 This helper is intended for implementing `Pipeable.pipe` methods that
@@ -38,6 +43,6 @@ console.log(result) // 21
 declare const pipeArguments: <A>(self: A, args: IArguments) => unknown
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Pipeable.ts#L565)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Pipeable.ts#L574)
 
 Since v2.0.0

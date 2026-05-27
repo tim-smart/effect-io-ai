@@ -19,6 +19,6 @@ type OpenAiTool = | ReturnType<typeof ApplyPatch>
   | ReturnType<typeof WebSearchPreview>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiTool.ts#L19)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiTool.ts#L38)
 
 Since v4.0.0

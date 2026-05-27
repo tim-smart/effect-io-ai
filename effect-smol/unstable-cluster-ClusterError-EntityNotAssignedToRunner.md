@@ -4,7 +4,7 @@ Module: `ClusterError`<br />
 ## ClusterError.EntityNotAssignedToRunner
 
 Represents an error that occurs when a Runner receives a message for an entity
-that it is not assigned to it.
+that is not assigned to the receiving runner.
 
 **Signature**
 
@@ -12,6 +12,6 @@ that it is not assigned to it.
 declare class EntityNotAssignedToRunner
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ClusterError.ts#L42)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ClusterError.ts#L63)
 
 Since v4.0.0

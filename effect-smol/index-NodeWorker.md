@@ -11,6 +11,6 @@ Re-exports all named exports from the "./NodeWorker.ts" module as `NodeWorker`.
 export * as NodeWorker from "./NodeWorker.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L452)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L120)
 
 Since v4.0.0

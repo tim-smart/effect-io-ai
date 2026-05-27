@@ -5,6 +5,10 @@ Module: `Option`<br />
 
 Extracts the type of the value contained in an `Option`.
 
+**When to use**
+
+Use to infer the inner value type from an existing `Option` type.
+
 **Example** (Extracting the value type)
 
 ```ts
@@ -23,6 +27,6 @@ type MyType = Option.Option.Value<typeof myOption>
 type Value<T> = [T] extends [Option<infer _A>] ? _A : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L235)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L254)
 
 Since v2.0.0

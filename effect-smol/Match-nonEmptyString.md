@@ -5,6 +5,10 @@ Module: `Match`<br />
 
 Matches non-empty strings.
 
+**When to use**
+
+Use to match strings whose length is greater than zero.
+
 **Details**
 
 This predicate matches any string that contains at least one character,
@@ -31,12 +35,16 @@ console.log(processInput("   "))
 // Output: "Valid input:    " (whitespace-only strings are considered non-empty)
 ```
 
+**See**
+
+- `string` for matching any string
+
 **Signature**
 
 ```ts
 declare const nonEmptyString: SafeRefinement<string, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L1167)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L1248)
 
 Since v4.0.0

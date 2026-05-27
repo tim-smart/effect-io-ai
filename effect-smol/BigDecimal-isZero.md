@@ -5,6 +5,10 @@ Module: `BigDecimal`<br />
 
 Checks if a given `BigDecimal` is `0`.
 
+**When to use**
+
+Use to test whether a `BigDecimal` is exactly zero.
+
 **Example** (Checking zero decimals)
 
 ```ts
@@ -21,6 +25,6 @@ assert.deepStrictEqual(BigDecimal.isZero(BigDecimal.fromStringUnsafe("1")), fals
 declare const isZero: (n: BigDecimal) => boolean
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigDecimal.ts#L1415)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigDecimal.ts#L1673)
 
 Since v2.0.0

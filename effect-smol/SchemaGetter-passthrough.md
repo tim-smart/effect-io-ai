@@ -7,7 +7,7 @@ Returns the identity getter — passes the value through unchanged.
 
 **When to use**
 
-- No transformation is needed between encoded and decoded types.
+Use when no transformation is needed between encoded and decoded types.
 - One side of a `decodeTo` pair (encode or decode) should be a no-op.
 
 **Details**
@@ -33,9 +33,9 @@ const StringToString = Schema.String.pipe(
 
 **See**
 
-- `passthroughSupertype` - when `T extends E`
-- `passthroughSubtype` - when `E extends T`
-- `transform` - when you need to change the value
+- `passthroughSupertype` when `T extends E`
+- `passthroughSubtype` when `E extends T`
+- `transform` when you need to change the value
 
 **Signature**
 

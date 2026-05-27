@@ -25,6 +25,6 @@ Effect.runPromise(program)
 declare const empty: Stream<never, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L822)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L872)
 
 Since v2.0.0

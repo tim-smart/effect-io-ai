@@ -30,6 +30,6 @@ const program = Effect.gen(function*() {
 declare const getUnsafe: <A>(self: SubscriptionRef<A>) => A
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SubscriptionRef.ts#L175)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SubscriptionRef.ts#L234)
 
 Since v4.0.0

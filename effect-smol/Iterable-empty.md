@@ -7,7 +7,7 @@ Creates an empty iterable that yields no elements.
 
 **When to use**
 
-Use this reusable empty iterable as a base case for operations or when you
+Use as a base case for operations or when you
 need to represent "no data" in a type-safe way.
 
 **Example** (Creating an empty iterable)
@@ -32,6 +32,6 @@ const result = hasData
 declare const empty: <A = never>() => Iterable<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Iterable.ts#L1369)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Iterable.ts#L1441)
 
 Since v2.0.0

@@ -44,6 +44,6 @@ export interface Dequeue<out A, out E = never> extends Inspectable {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Queue.ts#L217)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Queue.ts#L287)
 
 Since v2.0.0

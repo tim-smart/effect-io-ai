@@ -12,6 +12,6 @@ values are derived from its `SqlErrorReason`.
 declare class SqlError
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SqlError.ts#L396)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SqlError.ts#L412)
 
 Since v4.0.0

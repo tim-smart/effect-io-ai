@@ -26,6 +26,6 @@ type DatabaseService = Context.Service.Shape<typeof Database>
 type Shape<T> = T extends Key<infer _I, infer S> ? S : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Context.ts#L372)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Context.ts#L439)
 
 Since v4.0.0

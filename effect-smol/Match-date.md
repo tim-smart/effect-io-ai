@@ -5,6 +5,10 @@ Module: `Match`<br />
 
 Matches values that are instances of `Date`.
 
+**When to use**
+
+Use to match `Date` instances.
+
 **Details**
 
 This predicate refines unknown values to Date instances, allowing pattern
@@ -33,12 +37,16 @@ console.log(processDateValue("2024-01-01")) // "Date string: 2024-01-01"
 console.log(processDateValue(1704067200000)) // "Not a date-related value"
 ```
 
+**See**
+
+- `instanceOf` for matching instances of any constructor
+
 **Signature**
 
 ```ts
 declare const date: Predicate.Refinement<unknown, Date>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L1526)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L1678)
 
 Since v4.0.0

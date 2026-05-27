@@ -7,7 +7,7 @@ Retries typed failures from an effect according to a retry policy.
 
 **When to use**
 
-Use `retry` when typed failures may be transient, such as network issues or
+Use when typed failures may be transient, such as network issues or
 temporary resource unavailability.
 
 **Details**
@@ -17,7 +17,13 @@ object using `schedule`, `times`, `while`, or `until`. If a retry eventually
 succeeds, the returned effect succeeds with that value. If the policy stops
 while the effect is still failing, the last failure is propagated.
 
-Defects and interruptions are not retried as typed failures.
+**Gotchas**
+
+The source effect is always evaluated once before any retry policy is
+applied. For example, `Schedule.recurs(3)` allows up to three retries after
+the initial attempt.
+
+Defects and interruptions are not retried.
 
 **Example** (Retrying with a schedule)
 
@@ -54,6 +60,6 @@ Effect.runPromise(program).then(console.log)
 declare const retry: { <E, O extends Retry.Options<E>>(options: O): <A, R>(self: Effect<A, E, R>) => Retry.Return<R, E, A, O>; <B, E, Error, Env>(policy: Schedule<B, NoInfer<E>, Error, Env>): <A, R>(self: Effect<A, E, R>) => Effect<A, E | Error, R | Env>; <B, E, Error, Env>(builder: ($: <O, SE, R>(_: Schedule<O, NoInfer<E>, SE, R>) => Schedule<O, E, SE, R>) => Schedule<B, NoInfer<E>, Error, Env>): <A, R>(self: Effect<A, E, R>) => Effect<A, E | Error, R | Env>; <A, E, R, O extends Retry.Options<E>>(self: Effect<A, E, R>, options: O): Retry.Return<R, E, A, O>; <A, E, R, B, Error, Env>(self: Effect<A, E, R>, policy: Schedule<B, NoInfer<E>, Error, Env>): Effect<A, E | Error, R | Env>; <A, E, R, B, Error, Env>(self: Effect<A, E, R>, builder: ($: <O, SE, R>(_: Schedule<O, NoInfer<E>, SE, R>) => Schedule<O, E, SE, R>) => Schedule<B, NoInfer<E>, Error, Env>): Effect<A, E | Error, R | Env>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L3753)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L4036)
 
 Since v2.0.0

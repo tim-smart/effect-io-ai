@@ -7,6 +7,11 @@ An `RcMap` can contain multiple reference counted resources that can be indexed
 by a key. The resources are lazily acquired on the first call to `get` and
 released when the last reference is released.
 
+**When to use**
+
+Use to create a scoped reference-counted map for resources that should be
+acquired once per key and shared while in use.
+
 **Details**
 
 Complex keys can extend `Equal` and `Hash` to allow lookups by value.
@@ -37,12 +42,17 @@ Effect.gen(function*() {
 })
 ```
 
+**See**
+
+- `get` for acquiring or retaining a resource by key
+- `invalidate` for removing a resource from the map
+
 **Signature**
 
 ```ts
 declare const make: { <K, A, E, R>(options: { readonly lookup: (key: K) => Effect.Effect<A, E, R>; readonly idleTimeToLive?: Duration.Input | ((key: K) => Duration.Input) | undefined; readonly capacity?: undefined; }): Effect.Effect<RcMap<K, A, E>, never, Scope.Scope | R>; <K, A, E, R>(options: { readonly lookup: (key: K) => Effect.Effect<A, E, R>; readonly idleTimeToLive?: Duration.Input | ((key: K) => Duration.Input) | undefined; readonly capacity: number; }): Effect.Effect<RcMap<K, A, E | Cause.ExceededCapacityError>, never, Scope.Scope | R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RcMap.ts#L199)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RcMap.ts#L243)
 
 Since v3.5.0

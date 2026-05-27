@@ -8,7 +8,7 @@ Calls `[symbolRedactable]` on a value that is already known to be
 
 **When to use**
 
-Use this when you have already verified the value is `Redactable`, for
+Use when you have already verified the value is `Redactable`, for
 example with `isRedactable`, and want to avoid a second check.
 
 **Details**
@@ -22,8 +22,8 @@ If no fiber is active, an empty `Context` is passed to the redaction method.
 
 **See**
 
-- `redact` - higher-level variant that handles non-redactable values
-- `isRedactable` - type guard to verify before calling this
+- `redact` for the higher-level variant that handles non-redactable values
+- `isRedactable` for the type guard to verify before calling this
 
 **Signature**
 
@@ -31,6 +31,6 @@ If no fiber is active, an empty `Context` is passed to the redaction method.
 declare const getRedacted: (redactable: Redactable) => unknown
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Redactable.ts#L209)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Redactable.ts#L213)
 
 Since v4.0.0

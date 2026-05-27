@@ -34,6 +34,6 @@ const request = GetUserProfile({
 declare const of: <R extends Request<any, any, any>>() => Constructor<R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Request.ts#L275)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Request.ts#L317)
 
 Since v2.0.0

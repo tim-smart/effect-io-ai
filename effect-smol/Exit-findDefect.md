@@ -3,15 +3,17 @@ Module: `Exit`<br />
 
 ## Exit.findDefect
 
-Extracts the first defect from a failed Exit for use in filter pipelines.
+Extracts the first defect from a failed Exit as a Result.
 
 **When to use**
 
-- Use when you need to inspect unexpected errors
+Use when composing Exit checks with `Filter` or other `Result`-based
+filtering APIs and you only need the first defect in the Cause.
 
 **Details**
 
-- Returns the defect value if one exists, or `Filter.fail` wrapping the original Exit if the Exit has no defects
+Returns `Result.succeed(defect)` when the Cause contains a Die reason, or
+`Result.fail(exit)` with the original Exit otherwise.
 
 **Gotchas**
 
@@ -21,15 +23,15 @@ are ignored.
 **Example** (Finding the first defect)
 
 ```ts
-import { Exit, Filter } from "effect"
+import { Exit, Result } from "effect"
 
 const exit = Exit.die("boom")
 const result = Exit.findDefect(exit)
-// result is "boom"
+console.log(Result.isSuccess(result) && result.success) // "boom"
 
 const typed = Exit.fail("err")
 const noDefect = Exit.findDefect(typed)
-// noDefect is a Filter.fail marker
+console.log(Result.isFailure(noDefect)) // true
 ```
 
 **See**
@@ -43,6 +45,6 @@ const noDefect = Exit.findDefect(typed)
 declare const findDefect: <A, E>(input: Exit<A, E>) => Result.Result<unknown, Exit<A, E>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Exit.ts#L763)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Exit.ts#L804)
 
 Since v4.0.0

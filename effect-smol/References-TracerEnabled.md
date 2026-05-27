@@ -6,6 +6,10 @@ Module: `References`<br />
 Reference for controlling whether tracing is enabled globally. When set to false,
 spans will not be registered with the tracer and tracing overhead is minimized.
 
+**When to use**
+
+Use to disable or re-enable span registration in the current context.
+
 **Example** (Toggling tracing)
 
 ```ts
@@ -50,6 +54,6 @@ const tracingControl = Effect.gen(function*() {
 declare const TracerEnabled: Context.Reference<boolean>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/References.ts#L389)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/References.ts#L533)
 
 Since v4.0.0

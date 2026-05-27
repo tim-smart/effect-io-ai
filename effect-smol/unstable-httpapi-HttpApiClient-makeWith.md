@@ -13,6 +13,6 @@ responses.
 declare const makeWith: <ApiId extends string, Groups extends HttpApiGroup.Any, E, R>(api: HttpApi.HttpApi<ApiId, Groups>, options: { readonly httpClient: HttpClient.HttpClient.With<E, R>; readonly transformResponse?: ((effect: Effect.Effect<unknown, unknown, unknown>) => Effect.Effect<unknown, unknown, unknown>) | undefined; readonly baseUrl?: URL | string | undefined; }) => Effect.Effect<Client<Groups, E, R>, never, HttpApiGroup.MiddlewareClient<Groups>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiClient.ts#L454)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiClient.ts#L466)
 
 Since v4.0.0

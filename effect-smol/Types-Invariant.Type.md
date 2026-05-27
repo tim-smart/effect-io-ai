@@ -5,6 +5,10 @@ Module: `Types`<br />
 
 Extracts the type parameter `A` from an `Invariant<A>`.
 
+**When to use**
+
+Use to recover the carried type from an invariant phantom marker.
+
 **Example** (Extracting the inner type)
 
 ```ts
@@ -24,6 +28,6 @@ type Inner = Types.Invariant.Type<Types.Invariant<number>>
 type Type<A> = A extends Invariant<infer U> ? U : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Types.ts#L670)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Types.ts#L682)
 
 Since v3.9.0

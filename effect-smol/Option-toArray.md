@@ -7,7 +7,7 @@ Converts an `Option` into an `Array`.
 
 **When to use**
 
-- Interfacing with array-based APIs
+Use when interfacing with array-based APIs
 - Spreading optional values into collections
 
 **Details**
@@ -37,6 +37,6 @@ console.log(Option.toArray(Option.none()))
 declare const toArray: <A>(self: Option<A>) => Array<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L1913)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L1940)
 
 Since v2.0.0

@@ -11,6 +11,6 @@ Re-exports all named exports from the "./Combiner.ts" module as `Combiner`.
 export * as Combiner from "./Combiner.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L591)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L92)
 
 Since v4.0.0

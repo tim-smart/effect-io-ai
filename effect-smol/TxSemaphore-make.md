@@ -5,6 +5,10 @@ Module: `TxSemaphore`<br />
 
 Creates a new TxSemaphore with the specified number of permits.
 
+**When to use**
+
+Use to create a transactional semaphore with a fixed permit capacity.
+
 **Example** (Creating a semaphore)
 
 ```ts
@@ -26,12 +30,17 @@ const program = Effect.gen(function*() {
 })
 ```
 
+**See**
+
+- `available` for reading the current available permit count
+- `capacity` for reading the fixed total permit count
+
 **Signature**
 
 ```ts
 declare const make: (permits: number) => Effect.Effect<TxSemaphore>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxSemaphore.ts#L120)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxSemaphore.ts#L154)
 
 Since v2.0.0

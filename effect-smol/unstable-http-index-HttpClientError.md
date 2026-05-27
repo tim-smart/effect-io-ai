@@ -11,6 +11,6 @@ Re-exports all named exports from the "./HttpClientError.ts" module as `HttpClie
 export * as HttpClientError from "./HttpClientError.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L151)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L45)
 
 Since v4.0.0

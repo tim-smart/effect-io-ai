@@ -7,7 +7,7 @@ A single `Representation` together with its named `References`.
 
 **When to use**
 
-Use `fromAST` to create a `Document` from a Schema AST, `toSchema`
+Use when you use `fromAST` to create a `Document` from a Schema AST, `toSchema`
 to reconstruct a runtime Schema, `toJsonSchemaDocument` to convert to
 JSON Schema, and `toMultiDocument` to wrap it as a
 `MultiDocument`.

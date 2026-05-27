@@ -36,6 +36,6 @@ const program = Effect.gen(function*() {
 declare const publishAll: { <A>(values: Iterable<A>): (self: TxPubSub<A>) => Effect.Effect<boolean>; <A>(self: TxPubSub<A>, values: Iterable<A>): Effect.Effect<boolean>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxPubSub.ts#L451)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxPubSub.ts#L491)
 
 Since v2.0.0

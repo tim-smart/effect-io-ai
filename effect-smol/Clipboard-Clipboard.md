@@ -5,6 +5,19 @@ Module: `Clipboard`<br />
 
 Service interface for reading from, writing to, and clearing the browser clipboard.
 
+**Details**
+
+`read` and `write` work with `ClipboardItem` arrays. `readString` and
+`writeString` use text, `writeBlob` writes one `Blob`, and `clear` writes an
+empty string.
+
+**Gotchas**
+
+Clipboard access generally requires a secure context and may require user
+activation, permissions, or a focused document. `ClipboardItem` and non-text
+MIME type support varies by browser. Failed browser operations are surfaced
+as `ClipboardError`.
+
 **Signature**
 
 ```ts
@@ -19,6 +32,6 @@ export interface Clipboard {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/Clipboard.ts#L34)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/Clipboard.ts#L63)
 
 Since v4.0.0

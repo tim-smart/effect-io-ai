@@ -7,7 +7,7 @@ Converts all string path segments to `CONSTANT_CASE` before lookup.
 
 **When to use**
 
-Use this to bridge camelCase schema keys to `SCREAMING_SNAKE_CASE`
+Use to bridge camelCase schema keys to `SCREAMING_SNAKE_CASE`
 environment variables.
 
 **Details**
@@ -37,6 +37,6 @@ const provider = ConfigProvider.fromEnv({
 declare const constantCase: (self: ConfigProvider) => ConfigProvider
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ConfigProvider.ts#L570)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ConfigProvider.ts#L593)
 
 Since v2.0.0

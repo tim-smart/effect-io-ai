@@ -17,6 +17,6 @@ result.
 declare const make: <In>() => make.Constructor<In>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Sink.ts#L320)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Sink.ts#L326)
 
 Since v4.0.0

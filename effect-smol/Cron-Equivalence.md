@@ -6,6 +6,10 @@ Module: `Cron`<br />
 An `Equivalence` instance for comparing the field restrictions of two `Cron`
 schedules.
 
+**When to use**
+
+Use to compare cron schedules through APIs that accept an `Equivalence`.
+
 **Details**
 
 This comparison checks seconds, minutes, hours, days, months, and weekdays.
@@ -35,12 +39,16 @@ const cron2 = Cron.make({
 console.log(Cron.Equivalence(cron1, cron2)) // true
 ```
 
+**See**
+
+- `equals` for directly comparing two `Cron` values
+
 **Signature**
 
 ```ts
 declare const Equivalence: Equ.Equivalence<Cron>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cron.ts#L949)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cron.ts#L1037)
 
 Since v2.0.0

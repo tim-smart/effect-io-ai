@@ -8,7 +8,7 @@ type.
 
 **When to use**
 
-Use `absurd` when exhaustive checks prove a branch cannot be reached, but
+Use when exhaustive checks prove a branch cannot be reached, but
 TypeScript still needs a return value.
 
 **Gotchas**
@@ -32,6 +32,6 @@ const handleNever = (value: never) => {
 declare const absurd: <A>(_: never) => A
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Function.ts#L475)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Function.ts#L556)
 
 Since v2.0.0

@@ -7,7 +7,7 @@ Lazily constructs a layer that provides a single service.
 
 **When to use**
 
-Use `sync` when the service can be created synchronously but should be
+Use when the service can be created synchronously but should be
 deferred until the layer is built. Use `succeed` when the service value is
 already available.
 
@@ -40,6 +40,6 @@ const layer = Layer.sync(Database, () => ({
 declare const sync: { <I, S>(service: Context.Key<I, S>): (evaluate: LazyArg<S>) => Layer<I>; <I, S>(service: Context.Key<I, S>, evaluate: LazyArg<Types.NoInfer<S>>): Layer<I>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L840)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L919)
 
 Since v2.0.0

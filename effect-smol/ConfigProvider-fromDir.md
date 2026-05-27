@@ -8,7 +8,7 @@ on disk, where each file is a leaf value and each directory is a container.
 
 **When to use**
 
-Use this for Kubernetes ConfigMap or Secret volume mounts, where each key is
+Use when you use this for Kubernetes ConfigMap or Secret volume mounts, where each key is
 a file under a mount path, or for any file-per-key configuration layout.
 
 **Details**
@@ -45,6 +45,6 @@ const program = Effect.gen(function*() {
 declare const fromDir: (options?: { readonly rootPath?: string | undefined; }) => Effect.Effect<ConfigProvider, never, Path_.Path | FileSystem.FileSystem>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ConfigProvider.ts#L1146)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ConfigProvider.ts#L1169)
 
 Since v4.0.0

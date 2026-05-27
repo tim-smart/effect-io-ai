@@ -9,7 +9,7 @@ ignored. Returns an empty set when the cause has no interrupting fiber IDs.
 
 **When to use**
 
-This always succeeds. Use `filterInterruptors` when you want a
+Use when this always succeeds. Use `filterInterruptors` when you want a
 `Result` that fails with the original cause if there are no `Interrupt`
 reasons.
 
@@ -22,12 +22,13 @@ const cause = Cause.combine(
   Cause.interrupt(1),
   Cause.interrupt(2)
 )
-console.log(Cause.interruptors(cause)) // Set { 1, 2 }
+
+console.log(Cause.interruptors(cause)) // Set(2) { 1, 2 }
 ```
 
 **See**
 
-- `filterInterruptors` — `Filter`-based variant
+- `filterInterruptors` — `Result`-based variant
 
 **Signature**
 
@@ -35,6 +36,6 @@ console.log(Cause.interruptors(cause)) // Set { 1, 2 }
 declare const interruptors: <E>(self: Cause<E>) => ReadonlySet<number>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L1018)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L1098)
 
 Since v2.0.0

@@ -7,12 +7,17 @@ Returns the first typed error from a failed Exit as an Option.
 
 **When to use**
 
-- Use when you want to optionally extract a typed error without dealing with the full Cause
+Use when you want to optionally extract a typed error without dealing with the full Cause
 
 **Details**
 
 - Returns `Option.some(error)` if the Cause contains a Fail reason, `Option.none()` otherwise
 - Returns `Option.none()` for successes, defect-only failures, and interrupt-only failures
+
+**Gotchas**
+
+Only finds the first Fail reason. If the Cause has multiple typed errors,
+the rest are ignored.
 
 **Example** (Getting the first error)
 
@@ -35,6 +40,6 @@ console.log(Exit.findErrorOption(Exit.succeed(42)))            // { _tag: "None"
 declare const findErrorOption: <A, E>(self: Exit<A, E>) => Option<E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Exit.ts#L1091)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Exit.ts#L1137)
 
 Since v4.0.0

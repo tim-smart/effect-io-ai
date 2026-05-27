@@ -7,7 +7,7 @@ Pattern-matches on an `Option`, handling both `None` and `Some` cases.
 
 **When to use**
 
-- Exhaustively handling both branches in one expression
+Use when exhaustively handling both branches in one expression
 - Transforming an `Option` into a plain value
 
 **Details**
@@ -40,6 +40,6 @@ console.log(message)
 declare const match: { <B, A, C = B>(options: { readonly onNone: LazyArg<B>; readonly onSome: (a: A) => C; }): (self: Option<A>) => B | C; <A, B, C = B>(self: Option<A>, options: { readonly onNone: LazyArg<B>; readonly onSome: (a: A) => C; }): B | C; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L456)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L483)
 
 Since v2.0.0

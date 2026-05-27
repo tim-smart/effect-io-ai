@@ -5,11 +5,20 @@ Module: `Match`<br />
 
 Matches any value without restrictions.
 
+**When to use**
+
+Use to define an explicit catch-all pattern when the handler should receive
+the unmatched value.
+
 **Details**
 
-This predicate matches absolutely any value, including `undefined`, `null`,
-objects, primitives, functions, etc. It's useful as a catch-all pattern
-or when you need to match any remaining cases.
+This predicate matches every input, including `undefined`, `null`, objects,
+primitives, and functions.
+
+**Gotchas**
+
+`Match.any` should usually be last because cases are checked in order and
+the first matching case wins.
 
 **Example** (Matching any remaining value)
 
@@ -38,12 +47,17 @@ console.log(describeValue(null))
 // Output: "Other: object"
 ```
 
+**See**
+
+- `defined` for matching only non-nullish values
+- `orElse` for providing a fallback after earlier cases
+
 **Signature**
 
 ```ts
 declare const any: SafeRefinement<unknown, any>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L1317)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L1420)
 
 Since v4.0.0

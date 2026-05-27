@@ -6,6 +6,10 @@ Module: `Deferred`<br />
 Computes a value when the returned effect is run, then attempts to complete
 the `Deferred` with that value.
 
+**When to use**
+
+Use to lazily compute a successful value when the completion effect runs.
+
 **Details**
 
 Fibers waiting on the `Deferred` receive the computed value only if this call
@@ -32,6 +36,6 @@ const program = Effect.gen(function*() {
 declare const sync: { <A>(evaluate: LazyArg<A>): <E>(self: Deferred<A, E>) => Effect<boolean>; <A, E>(self: Deferred<A, E>, evaluate: LazyArg<A>): Effect<boolean>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Deferred.ts#L749)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Deferred.ts#L859)
 
 Since v2.0.0

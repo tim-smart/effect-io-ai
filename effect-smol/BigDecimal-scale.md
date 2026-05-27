@@ -5,6 +5,10 @@ Module: `BigDecimal`<br />
 
 Scales a `BigDecimal` to the specified scale.
 
+**When to use**
+
+Use to change how many decimal places are represented by a `BigDecimal`.
+
 **Details**
 
 Increasing the scale appends decimal zeros. Decreasing the scale discards
@@ -27,12 +31,16 @@ const reduced = BigDecimal.scale(decimal, 1)
 console.log(BigDecimal.format(reduced)) // "123.4"
 ```
 
+**See**
+
+- `round` for changing scale with configurable rounding
+
 **Signature**
 
 ```ts
 declare const scale: { (scale: number): (self: BigDecimal) => BigDecimal; (self: BigDecimal, scale: number): BigDecimal; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigDecimal.ts#L235)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigDecimal.ts#L308)
 
 Since v2.0.0

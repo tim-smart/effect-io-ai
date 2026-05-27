@@ -51,6 +51,6 @@ export interface With<E, R = never> extends Pipeable, Inspectable.Inspectable {
   }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpClient.ts#L88)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpClient.ts#L104)
 
 Since v4.0.0

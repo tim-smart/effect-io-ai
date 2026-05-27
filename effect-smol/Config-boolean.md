@@ -6,6 +6,10 @@ Module: `Config`<br />
 Creates a config for a boolean value parsed from common string
 representations.
 
+**When to use**
+
+Use to read boolean flags from string-like config sources.
+
 **Details**
 
 Shortcut for `Config.schema(Config.Boolean, name)`.
@@ -35,12 +39,16 @@ Effect.runSync(
 // Output: true
 ```
 
+**See**
+
+- `Boolean` for the underlying boolean codec
+
 **Signature**
 
 ```ts
 declare const boolean: (name?: string) => Config<boolean>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Config.ts#L1093)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Config.ts#L1139)
 
 Since v2.0.0

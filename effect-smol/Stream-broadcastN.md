@@ -44,6 +44,6 @@ Effect.runPromise(program)
 declare const broadcastN: { <const N extends number>(options: { readonly n: N; readonly capacity: "unbounded"; readonly replay?: number | undefined; } | { readonly n: N; readonly capacity: number; readonly strategy?: "sliding" | "dropping" | "suspend" | undefined; readonly replay?: number | undefined; }): <A, E, R>(self: Stream<A, E, R>) => Effect.Effect<TupleOf<N, Stream<A, E>>, never, Scope.Scope | R>; <A, E, R, const N extends number>(self: Stream<A, E, R>, options: { readonly n: N; readonly capacity: "unbounded"; readonly replay?: number | undefined; } | { readonly capacity: number; readonly n: N; readonly strategy?: "sliding" | "dropping" | "suspend" | undefined; readonly replay?: number | undefined; }): Effect.Effect<TupleOf<N, Stream<A, E>>, never, Scope.Scope | R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L8518)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L8735)
 
 Since v4.0.0

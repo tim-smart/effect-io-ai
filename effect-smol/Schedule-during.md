@@ -6,6 +6,11 @@ Module: `Schedule`<br />
 Returns a new `Schedule` that will always recur, but only during the
 specified `duration` of time.
 
+**When to use**
+
+Use to bound a repeating or retrying schedule by elapsed time. Use
+`duration` when you need one delayed recurrence.
+
 **Example** (Repeating work during a duration)
 
 ```ts
@@ -84,12 +89,16 @@ const retryProgram = Effect.gen(function*() {
 )
 ```
 
+**See**
+
+- `duration` for one delayed recurrence
+
 **Signature**
 
 ```ts
 declare const during: (duration: Duration.Input) => Schedule<Duration.Duration>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L1592)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L1673)
 
 Since v4.0.0

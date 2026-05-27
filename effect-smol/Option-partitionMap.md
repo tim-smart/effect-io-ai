@@ -7,7 +7,7 @@ Splits an `Option` into two `Option`s using a function that returns a `Result`.
 
 **When to use**
 
-- Categorizing an optional value into "left" (failure) and "right" (success) channels
+Use when categorizing an optional value into "left" (failure) and "right" (success) channels
 
 **Details**
 
@@ -45,6 +45,6 @@ console.log(Option.partitionMap(Option.none(), parseNumber))
 declare const partitionMap: { <A, B, C>(f: (a: A) => Result<C, B>): (self: Option<A>) => [left: Option<B>, right: Option<C>]; <A, B, C>(self: Option<A>, f: (a: A) => Result<C, B>): [left: Option<B>, right: Option<C>]; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L1953)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L1980)
 
 Since v2.0.0

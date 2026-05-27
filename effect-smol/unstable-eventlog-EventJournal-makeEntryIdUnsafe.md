@@ -17,6 +17,6 @@ schema validation.
 declare const makeEntryIdUnsafe: (options?: { msecs?: number; }) => EntryId
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventJournal.ts#L245)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventJournal.ts#L262)
 
 Since v4.0.0

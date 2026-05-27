@@ -6,6 +6,12 @@ Module: `Scheduler`<br />
 A scheduler implementation that batches queued tasks and dispatches them by
 priority.
 
+**When to use**
+
+Use when you need the default runtime scheduler directly, including a
+scheduler that batches queued work by priority and preserves FIFO order within
+each priority.
+
 **Details**
 
 `MixedScheduler` supports synchronous and asynchronous execution modes, uses
@@ -21,6 +27,6 @@ declare class MixedScheduler { constructor(
   ) }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Scheduler.ts#L131)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Scheduler.ts#L151)
 
 Since v2.0.0

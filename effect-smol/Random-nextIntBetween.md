@@ -5,6 +5,10 @@ Module: `Random`<br />
 
 Generates a random integer between `min` and `max`.
 
+**When to use**
+
+Use to generate a pseudo-random integer within a rounded numeric range.
+
 **Details**
 
 The lower bound is rounded up with `Math.ceil` and the upper bound is
@@ -31,6 +35,6 @@ const program = Effect.gen(function*() {
 declare const nextIntBetween: (min: number, max: number, options?: { readonly halfOpen?: boolean; }) => Effect.Effect<number>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Random.ts#L179)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Random.ts#L218)
 
 Since v2.0.0

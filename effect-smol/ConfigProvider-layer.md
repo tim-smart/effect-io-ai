@@ -8,7 +8,7 @@ effects, replacing any previously installed provider.
 
 **When to use**
 
-Use this to set the config source for an entire application or test suite.
+Use to set the config source for an entire application or test suite.
 
 **Details**
 
@@ -42,6 +42,6 @@ const program = Effect.gen(function*() {
 declare const layer: <E = never, R = never>(self: ConfigProvider | Effect.Effect<ConfigProvider, E, R>) => Layer.Layer<never, E, Exclude<R, Scope>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ConfigProvider.ts#L658)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ConfigProvider.ts#L681)
 
 Since v4.0.0

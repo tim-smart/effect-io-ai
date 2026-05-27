@@ -5,6 +5,10 @@ Module: `Effect`<br />
 
 Adds log annotations to the current scope.
 
+**When to use**
+
+Use to attach log annotations that last until the current scope closes.
+
 **Details**
 
 This differs from `annotateLogs`, which only annotates a specific effect.
@@ -27,12 +31,16 @@ const program = Effect.scoped(
 Effect.runPromise(program)
 ```
 
+**See**
+
+- `annotateLogs` for annotating one effect
+
 **Signature**
 
 ```ts
 declare const annotateLogsScoped: { (key: string, value: unknown): Effect<void, never, Scope>; (values: Record<string, unknown>): Effect<void, never, Scope>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L13265)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L13830)
 
 Since v3.1.0

@@ -8,7 +8,7 @@ the iterable is empty.
 
 **When to use**
 
-- Safely extracting the head of a collection
+Use when safely extracting the head of a collection
 - Working with generators or lazy iterables
 
 **Details**
@@ -38,6 +38,6 @@ console.log(Option.fromIterable([]))
 declare const fromIterable: <A>(collection: Iterable<A>) => Option<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L546)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L573)
 
 Since v2.0.0

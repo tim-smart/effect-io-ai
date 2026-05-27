@@ -5,6 +5,10 @@ Module: `MutableHashMap`<br />
 
 Looks up a key in the `MutableHashMap`.
 
+**When to use**
+
+Use to safely read the value for a key as an `Option`.
+
 **Details**
 
 Returns `Some(value)` when an equal key is present and `None` when the key is
@@ -25,12 +29,17 @@ const getValue = MutableHashMap.get("key1")
 console.log(getValue(map)) // Some(42)
 ```
 
+**See**
+
+- `has` for checking only whether a key is present
+- `set` for inserting or replacing a value by key
+
 **Signature**
 
 ```ts
 declare const get: { <K>(key: K): <V>(self: MutableHashMap<K, V>) => Option.Option<V>; <K, V>(self: MutableHashMap<K, V>, key: K): Option.Option<V>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableHashMap.ts#L230)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableHashMap.ts#L300)
 
 Since v2.0.0

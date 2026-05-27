@@ -5,6 +5,10 @@ Module: `Array`<br />
 
 Prepends all elements from a prefix iterable to the front of an array.
 
+**When to use**
+
+Use to prepend multiple elements from an iterable to the front of an array.
+
 **Details**
 
 - If either input is non-empty, the result is a `NonEmptyArray`.
@@ -30,6 +34,6 @@ console.log(result) // [0, 1, 2, 3]
 declare const prependAll: { <S extends Iterable<any>, T extends Iterable<any>>(that: T): (self: S) => ReadonlyArray.OrNonEmpty<S, T, ReadonlyArray.Infer<S> | ReadonlyArray.Infer<T>>; <A, B>(self: Iterable<A>, that: NonEmptyReadonlyArray<B>): NonEmptyArray<A | B>; <A, B>(self: NonEmptyReadonlyArray<A>, that: Iterable<B>): NonEmptyArray<A | B>; <A, B>(self: Iterable<A>, that: Iterable<B>): Array<A | B>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L629)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L674)
 
 Since v2.0.0

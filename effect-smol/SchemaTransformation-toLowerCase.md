@@ -8,7 +8,7 @@ Encode is passthrough.
 
 **When to use**
 
-- Normalizing strings to lowercase (e.g. email addresses).
+Use to normalize strings to lowercase (e.g. email addresses).
 
 **Details**
 

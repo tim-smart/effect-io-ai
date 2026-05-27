@@ -6,6 +6,10 @@ Module: `Types`<br />
 Describes the concurrency level for Effect operations that run multiple
 effects.
 
+**When to use**
+
+Use to type options that control how many effects may run at the same time.
+
 **Details**
 
 - `number` — run at most N effects concurrently.
@@ -29,6 +33,6 @@ const inherit: Types.Concurrency = "inherit"
 type Concurrency = number | "unbounded" | "inherit"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Types.ts#L507)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Types.ts#L511)
 
 Since v2.0.0

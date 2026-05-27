@@ -7,7 +7,7 @@ Type lambda for the `Order` type class, used internally for higher-kinded type o
 
 **When to use**
 
-- When working with type-level operations that require higher-kinded types
+Use when when working with type-level operations that require higher-kinded types
 - When implementing generic type classes that work with orders
 
 **Details**
@@ -23,6 +23,6 @@ export interface OrderTypeLambda extends TypeLambda {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Order.ts#L115)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Order.ts#L144)
 
 Since v2.0.0

@@ -16,6 +16,6 @@ received for the duplicated request.
 type SaveResult<R> = SaveResult.Success | SaveResult.Duplicate<R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MessageStorage.ts#L201)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MessageStorage.ts#L215)
 
 Since v4.0.0

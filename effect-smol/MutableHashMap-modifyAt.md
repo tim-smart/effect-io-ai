@@ -8,6 +8,11 @@ The function receives the current value as an Option and returns an Option.
 If the function returns Some, the key is set to that value.
 If the function returns None, the key is removed.
 
+**When to use**
+
+Use to decide whether to insert, update, or remove a key based on its current
+optional value.
+
 **Example** (Updating or removing a key)
 
 ```ts
@@ -44,12 +49,18 @@ MutableHashMap.modifyAt(
 console.log(MutableHashMap.has(map, "new")) // false (42 <= 50)
 ```
 
+**See**
+
+- `modify` for updating only when the key already exists
+- `set` for inserting or replacing directly
+- `remove` for deleting directly
+
 **Signature**
 
 ```ts
 declare const modifyAt: { <K, V>(key: K, f: (value: Option.Option<V>) => Option.Option<V>): (self: MutableHashMap<K, V>) => MutableHashMap<K, V>; <K, V>(self: MutableHashMap<K, V>, key: K, f: (value: Option.Option<V>) => Option.Option<V>): MutableHashMap<K, V>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableHashMap.ts#L545)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableHashMap.ts#L658)
 
 Since v2.0.0

@@ -8,10 +8,8 @@ Type-level signature for generator-based monadic composition over any
 
 **When to use**
 
-Type the `gen` function of a module that supports generator syntax, such as
-`Option.gen`, `Result.gen`, and `Effect.gen`. It accepts either `(body)` or
-`(self, body)` where `body` is a generator function. The `self` overload
-binds `this` inside the generator.
+Use to type the `gen` function of a module that supports generator syntax,
+such as `Option.gen`, `Result.gen`, and `Effect.gen`.
 
 **Details**
 
@@ -29,8 +27,8 @@ declare const gen: Utils.Gen<Option.OptionTypeLambda>
 
 **See**
 
-- `Variance` — encodes the variance used for inference
-- `SingleShotGen` — the iterator protocol that makes yielding work
+- `Variance` for encoding the variance used for inference
+- `SingleShotGen` for the iterator protocol that makes yielding work
 
 **Signature**
 
@@ -63,6 +61,6 @@ type Gen<F> = <
 >
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Utils.ts#L208)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Utils.ts#L214)
 
 Since v2.0.0

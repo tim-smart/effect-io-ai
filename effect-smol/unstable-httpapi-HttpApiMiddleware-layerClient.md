@@ -16,6 +16,6 @@ through the `ForClient` service marker used by HTTP API clients.
 declare const layerClient: <Id extends AnyId, S, R, EX = never, RX = never>(tag: Context.Key<Id, S>, service: HttpApiMiddlewareClient<Error<Id>, Id[typeof TypeId]["clientError"], R> | Effect.Effect<HttpApiMiddlewareClient<Error<Id>, Id[typeof TypeId]["clientError"], R>, EX, RX>) => Layer.Layer<ForClient<Id>, EX, R | Exclude<RX, Scope>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiMiddleware.ts#L468)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiMiddleware.ts#L492)
 
 Since v4.0.0

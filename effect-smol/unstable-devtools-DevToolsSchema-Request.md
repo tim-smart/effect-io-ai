@@ -15,6 +15,6 @@ Requests include heartbeat pings, spans, span events, and metric snapshots.
 type Request = Schema.Schema.Type<typeof Request>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DevToolsSchema.ts#L505)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DevToolsSchema.ts#L513)
 
 Since v4.0.0

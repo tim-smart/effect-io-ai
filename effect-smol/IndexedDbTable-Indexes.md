@@ -11,6 +11,6 @@ Extracts the index definition map from an `IndexedDbTable`.
 type Indexes<Table> = Table["indexes"]
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbTable.ts#L156)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbTable.ts#L173)
 
 Since v4.0.0

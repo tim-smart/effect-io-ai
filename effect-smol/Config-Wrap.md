@@ -8,7 +8,7 @@ structure.
 
 **When to use**
 
-- Typing the input of `unwrap` so callers can pass either a `Config`
+Use when typing the input of `unwrap` so callers can pass either a `Config`
   or a record of `Config`s.
 
 **Details**
@@ -29,6 +29,6 @@ type Wrap<A> = [NonNullable<A>] extends [infer T] ? [IsPlainObject<T>] extends [
   : Config<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Config.ts#L530)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Config.ts#L543)
 
 Since v2.0.0

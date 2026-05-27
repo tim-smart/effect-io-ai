@@ -23,6 +23,6 @@ export interface DefectSchema extends Schema.Top {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Rpc.ts#L74)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Rpc.ts#L85)
 
 Since v4.0.0

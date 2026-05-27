@@ -4,7 +4,7 @@ Module: `McpSchema`<br />
 ## McpSchema.Annotations
 
 Optional annotations for the client. The client can use annotations to
-inform how objects are used or displayed
+inform how objects are used or displayed.
 
 **Signature**
 

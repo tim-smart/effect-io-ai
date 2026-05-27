@@ -5,6 +5,11 @@ Module: `PrimaryKey`<br />
 
 An interface for objects that can provide a string-based primary key.
 
+**When to use**
+
+Use to define values that expose a stable string identifier through the
+`PrimaryKey` protocol.
+
 **Details**
 
 Objects implementing this interface must provide a method that returns
@@ -35,6 +40,6 @@ export interface PrimaryKey {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PrimaryKey.ts#L51)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PrimaryKey.ts#L102)
 
 Since v2.0.0

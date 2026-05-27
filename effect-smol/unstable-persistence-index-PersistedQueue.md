@@ -11,6 +11,6 @@ Re-exports all named exports from the "./PersistedQueue.ts" module as `Persisted
 export * as PersistedQueue from "./PersistedQueue.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L108)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L25)
 
 Since v4.0.0

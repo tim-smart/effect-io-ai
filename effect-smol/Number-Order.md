@@ -5,6 +5,10 @@ Module: `Number`<br />
 
 An `Order` instance for `number` values.
 
+**When to use**
+
+Use when an API needs an `Order` instance for numbers.
+
 **Example** (Comparing numbers)
 
 ```ts
@@ -21,6 +25,6 @@ console.log(Number.Order(1, 1)) // 0
 declare const Order: order.Order<number>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Number.ts#L211)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Number.ts#L323)
 
 Since v2.0.0

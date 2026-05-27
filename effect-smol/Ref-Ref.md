@@ -5,6 +5,11 @@ Module: `Ref`<br />
 
 A mutable reference that provides atomic read, write, and update operations.
 
+**When to use**
+
+Use to keep shared mutable state that is read and updated inside Effect
+programs.
+
 **Details**
 
 A `Ref` is a thread-safe mutable reference type for shared state. It supports
@@ -32,6 +37,12 @@ const program = Effect.gen(function*() {
 })
 ```
 
+**See**
+
+- `make` for creating a `Ref`
+- `get` for reading the current value
+- `set` for replacing the current value
+
 **Signature**
 
 ```ts
@@ -40,6 +51,6 @@ export interface Ref<in out A> extends Ref.Variance<A>, Pipeable {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Ref.ts#L75)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Ref.ts#L106)
 
 Since v2.0.0

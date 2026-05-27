@@ -12,6 +12,6 @@ failing if no initial message is available or decoding fails.
 declare const initialMessage: <S extends Schema.Top>(schema: S) => Effect.Effect<S["Type"], NoSuchElementError | Schema.SchemaError, Protocol | S["DecodingServices"]>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RpcWorker.ts#L120)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RpcWorker.ts#L135)
 
 Since v4.0.0

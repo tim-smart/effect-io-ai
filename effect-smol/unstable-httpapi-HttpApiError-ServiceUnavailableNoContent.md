@@ -12,6 +12,6 @@ response into a `ServiceUnavailable` error value.
 declare const ServiceUnavailableNoContent: HttpApiSchema.asNoContent<typeof ServiceUnavailable>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiError.ts#L403)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiError.ts#L423)
 
 Since v4.0.0

@@ -8,7 +8,7 @@ Alias for `MergeLeft`. Merges two object types where keys from
 
 **When to use**
 
-Prefer `MergeLeft` or `MergeRight` for clarity about which
+Use when prefer `MergeLeft` or `MergeRight` for clarity about which
 side wins.
 
 **Example** (Merging records)

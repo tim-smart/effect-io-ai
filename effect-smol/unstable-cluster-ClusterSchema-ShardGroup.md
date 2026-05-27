@@ -15,6 +15,6 @@ By default, every entity id is assigned to the `"default"` shard group.
 declare const ShardGroup: Context.Reference<(entityId: EntityId) => string>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ClusterSchema.ts#L115)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ClusterSchema.ts#L167)
 
 Since v4.0.0

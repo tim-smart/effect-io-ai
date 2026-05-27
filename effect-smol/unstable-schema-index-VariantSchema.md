@@ -11,6 +11,6 @@ Re-exports all named exports from the "./VariantSchema.ts" module as `VariantSch
 export * as VariantSchema from "./VariantSchema.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L52)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L15)
 
 Since v4.0.0

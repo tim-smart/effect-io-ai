@@ -17,6 +17,6 @@ cleared when the derived atom is disposed.
 declare const debounce: { (duration: Duration.Input): <A extends Atom<any>>(self: A) => WithoutSerializable<A>; <A extends Atom<any>>(self: A, duration: Duration.Input): WithoutSerializable<A>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Atom.ts#L1688)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Atom.ts#L1702)
 
 Since v4.0.0

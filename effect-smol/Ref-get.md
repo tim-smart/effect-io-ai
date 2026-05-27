@@ -5,6 +5,10 @@ Module: `Ref`<br />
 
 Gets the current value of the Ref.
 
+**When to use**
+
+Use to read the current value without changing it.
+
 **Example** (Getting the current value)
 
 ```ts
@@ -17,12 +21,16 @@ const program = Effect.gen(function*() {
 })
 ```
 
+**See**
+
+- `set` for replacing the current value
+
 **Signature**
 
 ```ts
 declare const get: <A>(self: Ref<A>) => Effect.Effect<A, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Ref.ts#L202)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Ref.ts#L253)
 
 Since v2.0.0

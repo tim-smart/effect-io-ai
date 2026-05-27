@@ -12,6 +12,6 @@ type Context<Table> = | Table["tableSchema"]["DecodingServices"]
   | Table["tableSchema"]["EncodingServices"]
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbTable.ts#L138)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbTable.ts#L155)
 
 Since v4.0.0

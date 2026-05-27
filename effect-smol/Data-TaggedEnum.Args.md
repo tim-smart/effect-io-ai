@@ -6,6 +6,11 @@ Module: `Data`<br />
 Extracts the constructor argument type for a specific variant of a tagged
 union.
 
+**When to use**
+
+Use to derive the argument object expected by a constructor for one tagged
+union variant.
+
 **Details**
 
 Returns `void` if the variant has no fields beyond `_tag`.
@@ -39,6 +44,6 @@ type Args<A, K, E> = {
     : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Data.ts#L366)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Data.ts#L380)
 
 Since v2.0.0

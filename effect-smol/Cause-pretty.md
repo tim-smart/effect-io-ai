@@ -6,6 +6,11 @@ Module: `Cause`<br />
 Renders a `Cause` as a human-readable string for logging or
 debugging.
 
+**When to use**
+
+Use to render a whole cause as one human-readable string for logs or
+diagnostics.
+
 **Details**
 
 Delegates to `prettyErrors` to convert each reason to an `Error`,
@@ -23,15 +28,18 @@ ErrorName: message
 
 Span annotations are appended to the relevant stack frames when available.
 
+**Gotchas**
+
+Rendering an empty cause produces an empty string because there are no
+errors to render.
+
 **Example** (rendering a cause)
 
 ```ts
 import { Cause } from "effect"
 
-const cause = Cause.fail("something went wrong")
-console.log(Cause.pretty(cause))
-// Error: something went wrong
-//     at ...
+const rendered = Cause.pretty(Cause.fail("something went wrong"))
+console.log(rendered.includes("something went wrong")) // true
 ```
 
 **See**
@@ -44,6 +52,6 @@ console.log(Cause.pretty(cause))
 declare const pretty: <E>(cause: Cause<E>) => string
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L1124)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L1225)
 
 Since v2.0.0

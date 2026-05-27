@@ -11,6 +11,6 @@ Re-exports all named exports from the "./AnthropicTelemetry.ts" module as `Anthr
 export * as AnthropicTelemetry from "./AnthropicTelemetry.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/index.ts#L90)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/index.ts#L30)
 
 Since v4.0.0

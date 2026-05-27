@@ -5,6 +5,11 @@ Module: `TxSubscriptionRef`<br />
 
 Creates a new TxSubscriptionRef with the specified initial value.
 
+**When to use**
+
+Use to create transactional state that also publishes every committed update
+to subscribers.
+
 **Example** (Creating a transactional subscription reference)
 
 ```ts
@@ -17,12 +22,16 @@ const program = Effect.gen(function*() {
 })
 ```
 
+**See**
+
+- `changes` for subscribing to the created reference
+
 **Signature**
 
 ```ts
 declare const make: <A>(value: A) => Effect.Effect<TxSubscriptionRef<A>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxSubscriptionRef.ts#L97)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxSubscriptionRef.ts#L146)
 
 Since v3.10.0

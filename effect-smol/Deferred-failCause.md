@@ -5,6 +5,10 @@ Module: `Deferred`<br />
 
 Attempts to complete the `Deferred` with the specified `Cause`.
 
+**When to use**
+
+Use to complete a `Deferred` with a full failure cause.
+
 **Details**
 
 Fibers waiting on the `Deferred` observe that cause only if this call
@@ -32,6 +36,6 @@ const program = Effect.gen(function*() {
 declare const failCause: { <E>(cause: Cause.Cause<E>): <A>(self: Deferred<A, E>) => Effect<boolean>; <A, E>(self: Deferred<A, E>, cause: Cause.Cause<E>): Effect<boolean>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Deferred.ts#L453)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Deferred.ts#L519)
 
 Since v2.0.0

@@ -5,6 +5,11 @@ Module: `Types`<br />
 
 Branded marker interface representing an unhandled error type.
 
+**When to use**
+
+Use when Effect's type-level machinery needs to represent an error type that
+has not been handled yet.
+
 **Details**
 
 Used internally by the Effect type system to indicate that an error type
@@ -22,6 +27,6 @@ export interface unhandled {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Types.ts#L886)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Types.ts#L927)
 
 Since v4.0.0

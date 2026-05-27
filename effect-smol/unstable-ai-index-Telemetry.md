@@ -11,6 +11,6 @@ Re-exports all named exports from the "./Telemetry.ts" module as `Telemetry`.
 export * as Telemetry from "./Telemetry.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L524)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L75)
 
 Since v4.0.0

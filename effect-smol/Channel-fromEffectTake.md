@@ -17,6 +17,6 @@ value.
 declare const fromEffectTake: <A, E, Done, E2, R>(effect: Effect.Effect<Take.Take<A, E, Done>, E2, R>) => Channel<Arr.NonEmptyReadonlyArray<A>, E | E2, Done, unknown, unknown, unknown, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L1198)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L1217)
 
 Since v4.0.0

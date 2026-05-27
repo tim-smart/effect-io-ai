@@ -7,8 +7,8 @@ A `Schema.Codec` for boolean values encoded as strings.
 
 **When to use**
 
-- Pass to `schema` for custom paths, or use the `boolean`
-  convenience constructor.
+Use when passing to `schema` for custom paths, or use the
+`boolean` convenience constructor.
 
 **Details**
 
@@ -25,6 +25,6 @@ Accepted string values: `true`, `false`, `yes`, `no`, `on`, `off`, `1`,
 declare const Boolean: Schema.decodeTo<Schema.Boolean, Schema.Literals<readonly ["true", "yes", "on", "1", "y", "false", "no", "off", "0", "n"]>, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Config.ts#L766)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Config.ts#L779)
 
 Since v4.0.0

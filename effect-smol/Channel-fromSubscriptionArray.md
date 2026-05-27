@@ -107,6 +107,6 @@ const metricsAggregator = Effect.gen(function*() {
 declare const fromSubscriptionArray: <A>(subscription: PubSub.Subscription<A>) => Channel<Arr.NonEmptyReadonlyArray<A>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L1453)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L1472)
 
 Since v4.0.0

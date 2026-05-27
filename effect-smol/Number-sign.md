@@ -5,6 +5,10 @@ Module: `Number`<br />
 
 Determines the sign of a given `number`.
 
+**When to use**
+
+Use to classify a number as negative, zero, or positive.
+
 **Example** (Determining the sign)
 
 ```ts
@@ -22,6 +26,6 @@ assert.deepStrictEqual(Number.sign(5), 1)
 declare const sign: (n: number) => Ordering
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Number.ts#L442)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Number.ts#L602)
 
 Since v2.0.0

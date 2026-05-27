@@ -7,7 +7,7 @@ Reconstructs a runtime Schema from a `Document`.
 
 **When to use**
 
-Use this when you have a serialized or computed representation and need a
+Use when you have a serialized or computed representation and need a
 working Schema for decoding/encoding.
 
 **Details**
@@ -46,6 +46,6 @@ console.log(JSON.stringify(Schema.toJsonSchemaDocument(schema), null, 2))
 declare const toSchema: <S extends Schema.Top = Schema.Top>(document: Document, options?: { readonly reviver?: Reviver<Schema.Top> | undefined; }) => S
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaRepresentation.ts#L1889)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaRepresentation.ts#L1933)
 
 Since v4.0.0

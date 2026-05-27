@@ -7,7 +7,7 @@ Transforms the input of a predicate using a mapping function.
 
 **When to use**
 
-- You have a predicate on `A` and want one on `B` via `B -> A`.
+Use when you have a predicate on `A` and want one on `B` via `B -> A`.
 - You want to check derived values (lengths, projections, etc.).
 
 **Details**
@@ -40,6 +40,6 @@ console.log(isLongerThan2("hello"))
 declare const mapInput: { <B, A>(f: (b: B) => A): (self: Predicate<A>) => Predicate<B>; <A, B>(self: Predicate<A>, f: (b: B) => A): Predicate<B>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L374)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L399)
 
 Since v2.0.0

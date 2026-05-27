@@ -6,6 +6,10 @@ Module: `RcMap`<br />
 Invalidates and removes a specific key from the RcMap. If the resource is not
 currently in use (reference count is 0), it will be immediately released.
 
+**When to use**
+
+Use to remove a resource by key so the next access performs a fresh lookup.
+
 **Example** (Invalidating a resource)
 
 ```ts
@@ -32,12 +36,17 @@ Effect.gen(function*() {
 }).pipe(Effect.scoped)
 ```
 
+**See**
+
+- `get` for acquiring or retaining the resource for a key
+- `touch` for extending the idle lifetime without removing the entry
+
 **Signature**
 
 ```ts
 declare const invalidate: { <K>(key: K): <A, E>(self: RcMap<K, A, E>) => Effect.Effect<void>; <K, A, E>(self: RcMap<K, A, E>, key: K): Effect.Effect<void>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RcMap.ts#L444)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RcMap.ts#L508)
 
 Since v3.13.0

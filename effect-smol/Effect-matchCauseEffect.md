@@ -5,6 +5,11 @@ Module: `Effect`<br />
 
 Handles failures with access to the cause and allows performing side effects.
 
+**When to use**
+
+Use when both success and failure handling must return effects and the
+failure branch needs the full `Cause`.
+
 **Details**
 
 The `matchCauseEffect` function works similarly to `matchCause`, but it
@@ -61,6 +66,6 @@ Effect.runPromise(program).then(console.log)
 declare const matchCauseEffect: { <E, A2, E2, R2, A, A3, E3, R3>(options: { readonly onFailure: (cause: Cause.Cause<E>) => Effect<A2, E2, R2>; readonly onSuccess: (a: A) => Effect<A3, E3, R3>; }): <R>(self: Effect<A, E, R>) => Effect<A2 | A3, E2 | E3, R2 | R3 | R>; <A, E, R, A2, E2, R2, A3, E3, R3>(self: Effect<A, E, R>, options: { readonly onFailure: (cause: Cause.Cause<E>) => Effect<A2, E2, R2>; readonly onSuccess: (a: A) => Effect<A3, E3, R3>; }): Effect<A2 | A3, E2 | E3, R2 | R3 | R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L5170)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L5556)
 
 Since v2.0.0

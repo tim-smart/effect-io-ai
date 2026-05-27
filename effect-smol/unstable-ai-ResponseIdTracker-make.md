@@ -18,6 +18,6 @@ otherwise it clears the tracked state and returns `Option.none()`.
 declare const make: Effect.Effect<Service, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ResponseIdTracker.ts#L85)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ResponseIdTracker.ts#L107)
 
 Since v4.0.0

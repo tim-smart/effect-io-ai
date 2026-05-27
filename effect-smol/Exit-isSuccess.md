@@ -7,7 +7,7 @@ Tests whether an Exit is a Success.
 
 **When to use**
 
-- Use as a type guard to narrow `Exit<A, E>` to `Success<A, E>`
+Use as a type guard to narrow `Exit<A, E>` to `Success<A, E>`
 - After narrowing, the `value` property becomes accessible
 
 **Example** (Narrowing to Success)
@@ -33,6 +33,6 @@ if (Exit.isSuccess(exit)) {
 declare const isSuccess: <A, E>(self: Exit<A, E>) => self is Success<A, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Exit.ts#L439)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Exit.ts#L448)
 
 Since v2.0.0

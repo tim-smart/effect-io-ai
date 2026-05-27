@@ -11,6 +11,6 @@ Type-level identifier used to mark `PgClient` values.
 type TypeId = "~@effect/sql-pg/PgClient"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/sql/pg/src/PgClient.ts#L78)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/sql/pg/src/PgClient.ts#L96)
 
 Since v4.0.0

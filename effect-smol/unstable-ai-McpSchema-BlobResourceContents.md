@@ -3,7 +3,7 @@ Module: `McpSchema`<br />
 
 ## McpSchema.BlobResourceContents
 
-The contents of a binary resource, which can be represented as an Uint8Array
+The contents of a binary resource, which can be represented as a Uint8Array.
 
 **Signature**
 

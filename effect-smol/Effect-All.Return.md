@@ -14,6 +14,6 @@ type Return<Arg, O> = [Arg] extends [ReadonlyArray<EffectAny>] ? ReturnTuple<Arg
     : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L388)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L435)
 
 Since v2.0.0

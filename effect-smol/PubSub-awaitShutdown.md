@@ -40,6 +40,6 @@ const program = Effect.gen(function*() {
 declare const awaitShutdown: <A>(self: PubSub<A>) => Effect.Effect<void>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PubSub.ts#L833)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PubSub.ts#L897)
 
 Since v2.0.0

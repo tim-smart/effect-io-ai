@@ -5,6 +5,11 @@ Module: `Cause`<br />
 
 Returns `true` if the cause contains at least one `Die` reason.
 
+**When to use**
+
+Use to check whether a cause includes defects before extracting or rendering
+them.
+
 **Example** (checking for defects)
 
 ```ts
@@ -25,6 +30,6 @@ console.log(Cause.hasDies(Cause.fail("error"))) // false
 declare const hasDies: <E>(self: Cause<E>) => boolean
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L887)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L961)
 
 Since v4.0.0

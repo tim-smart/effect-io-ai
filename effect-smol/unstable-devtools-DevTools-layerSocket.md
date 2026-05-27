@@ -11,6 +11,6 @@ Layer that installs the devtools tracer using an existing `Socket`.
 declare const layerSocket: Layer.Layer<never, never, Socket.Socket>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DevTools.ts#L29)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DevTools.ts#L39)
 
 Since v4.0.0

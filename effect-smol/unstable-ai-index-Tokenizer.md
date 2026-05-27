@@ -11,6 +11,6 @@ Re-exports all named exports from the "./Tokenizer.ts" module as `Tokenizer`.
 export * as Tokenizer from "./Tokenizer.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L565)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L80)
 
 Since v4.0.0

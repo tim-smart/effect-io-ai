@@ -5,6 +5,10 @@ Module: `Match`<br />
 
 Matches non-null objects other than arrays.
 
+**When to use**
+
+Use to match broad non-null, non-array object values.
+
 **Details**
 
 This predicate uses `Predicate.isObject`: it returns `true` for values whose
@@ -36,12 +40,16 @@ console.log(analyzeValue(null)) // "Not an object"
 console.log(analyzeValue("hello")) // "Not an object"
 ```
 
+**See**
+
+- `instanceOf` for matching a specific constructor
+
 **Signature**
 
 ```ts
 declare const record: Predicate.Refinement<unknown, { [x: string]: unknown; [x: number]: unknown; [x: symbol]: unknown; }>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L1565)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L1723)
 
 Since v4.0.0

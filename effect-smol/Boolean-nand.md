@@ -5,6 +5,10 @@ Module: `Boolean`<br />
 
 Combines two boolean using NAND: `!(self && that)`.
 
+**When to use**
+
+Use to negate a logical AND result.
+
 **Example** (Combining booleans with NAND)
 
 ```ts
@@ -23,6 +27,6 @@ assert.deepStrictEqual(Boolean.nand(false, false), true)
 declare const nand: { (that: boolean): (self: boolean) => boolean; (self: boolean, that: boolean): boolean; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Boolean.ts#L186)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Boolean.ts#L281)
 
 Since v2.0.0

@@ -7,7 +7,7 @@ A `Prism` that focuses on the failure value of a `Result`.
 
 **When to use**
 
-- You have a `Result<A, E>` and want to read/update `E` only when it
+Use when you have a `Result<A, E>` and want to read/update `E` only when it
   is a `Failure`.
 
 **Details**

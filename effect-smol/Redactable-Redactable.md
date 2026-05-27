@@ -7,8 +7,8 @@ Interface for objects that provide context-aware redacted representations.
 
 **When to use**
 
-Implement this interface on any class or object that holds sensitive data and
-should present a sanitized form when inspected or logged.
+Use to define classes or objects that hold sensitive data and should present
+a sanitized form when inspected or logged.
 
 **Details**
 
@@ -31,9 +31,9 @@ class ApiKey {
 
 **See**
 
-- `symbolRedactable` - the symbol key to implement
-- `redact` - apply redaction to any value
-- `isRedactable` - type guard for this interface
+- `symbolRedactable` for the symbol key to implement
+- `redact` to apply redaction to any value
+- `isRedactable` for the type guard for this interface
 
 **Signature**
 

@@ -8,8 +8,8 @@ Transforms the value inside a `Some` using the provided function, leaving
 
 **When to use**
 
-- Applying a pure transformation to an optional value
-- Chaining transformations in a pipeline
+Use to apply a pure transformation to an optional value, especially when
+chaining transformations in a pipeline.
 
 **Details**
 
@@ -40,6 +40,6 @@ console.log(Option.map(Option.none(), (n: number) => n * 2))
 declare const map: { <A, B>(f: (a: A) => B): (self: Option<A>) => Option<B>; <A, B>(self: Option<A>, f: (a: A) => B): Option<B>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L1187)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L1214)
 
 Since v2.0.0

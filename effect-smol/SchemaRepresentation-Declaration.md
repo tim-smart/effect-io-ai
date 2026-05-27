@@ -7,7 +7,7 @@ A custom type declaration, such as `Date`, `Option`, or `ReadonlySet`.
 
 **When to use**
 
-Use this when inspecting or transforming non-primitive schema types.
+Use when inspecting or transforming non-primitive schema types.
 
 **Details**
 

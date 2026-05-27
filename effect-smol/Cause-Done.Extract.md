@@ -12,6 +12,6 @@ error union.
 type Extract<E> = E extends Done<infer L> ? L : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L1310)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L1421)
 
 Since v4.0.0

@@ -12,6 +12,6 @@ including the OpenAi-specific attributes.
 type AllAttributes = Telemetry.AllAttributes & RequestAttributes & ResponseAttributes
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/OpenAiTelemetry.ts#L37)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/OpenAiTelemetry.ts#L68)
 
 Since v4.0.0

@@ -7,7 +7,7 @@ Checks whether a value is truthy.
 
 **When to use**
 
-- You want a predicate that mirrors JavaScript truthiness.
+Use when you want a predicate that mirrors JavaScript truthiness.
 - You need to filter out falsy values like `0`, "", and `false`.
 
 **Details**
@@ -38,6 +38,6 @@ console.log(truthy)
 declare const isTruthy: (input: unknown) => boolean
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L477)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L502)
 
 Since v2.0.0

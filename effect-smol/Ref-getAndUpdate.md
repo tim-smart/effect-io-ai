@@ -5,6 +5,10 @@ Module: `Ref`<br />
 
 Atomically gets the current value of the Ref, updates it with the given function, and returns the previous value.
 
+**When to use**
+
+Use to derive a new value while returning the previous value.
+
 **Example** (Updating and returning the previous value)
 
 ```ts
@@ -22,12 +26,17 @@ const program = Effect.gen(function*() {
 })
 ```
 
+**See**
+
+- `update` for updating without returning the previous value
+- `updateAndGet` for returning the new value instead
+
 **Signature**
 
 ```ts
 declare const getAndUpdate: (<A>(f: (a: A) => A) => (self: Ref<A>) => Effect.Effect<A>) & (<A>(self: Ref<A>, f: (a: A) => A) => Effect.Effect<A>)
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Ref.ts#L292)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Ref.ts#L364)
 
 Since v2.0.0

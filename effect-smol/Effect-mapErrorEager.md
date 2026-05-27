@@ -8,7 +8,7 @@ and applies the error mapping function eagerly when possible.
 
 **When to use**
 
-`mapErrorEager` provides better performance for effects that are already resolved
+Use when `mapErrorEager` provides better performance for effects that are already resolved
 by applying the error transformation immediately instead of deferring it through
 the effect pipeline.
 
@@ -43,6 +43,6 @@ const mappedPending = Effect.mapErrorEager(
 declare const mapErrorEager: { <E, E2>(f: (e: E) => E2): <A, R>(self: Effect<A, E, R>) => Effect<A, E2, R>; <A, E, R, E2>(self: Effect<A, E, R>, f: (e: E) => E2): Effect<A, E2, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L14442)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L15007)
 
 Since v4.0.0

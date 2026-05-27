@@ -11,6 +11,6 @@ Re-exports all named exports from the "./FetchHttpClient.ts" module as `FetchHtt
 export * as FetchHttpClient from "./FetchHttpClient.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L65)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L20)
 
 Since v4.0.0

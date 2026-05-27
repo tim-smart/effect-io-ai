@@ -20,6 +20,6 @@ console.log(String.isEmpty(String.empty)) // true
 declare const empty: ""
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L96)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L170)
 
 Since v2.0.0

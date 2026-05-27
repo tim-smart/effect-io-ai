@@ -5,6 +5,10 @@ Module: `NonEmptyIterable`<br />
 
 Represents an iterable that is guaranteed to contain at least one element.
 
+**When to use**
+
+Use to require an iterable input that must provide at least one element.
+
 **Details**
 
 `NonEmptyIterable<A>` extends the standard `Iterable<A>` interface with a type-level
@@ -64,6 +68,6 @@ export interface NonEmptyIterable<out A> extends Iterable<A> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/NonEmptyIterable.ts#L216)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/NonEmptyIterable.ts#L227)
 
 Since v2.0.0

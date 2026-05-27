@@ -11,6 +11,6 @@ Default mapping from Effect SQL primitive value kinds to Tedious SQL Server para
 declare const defaultParameterTypes: Record<Statement.PrimitiveKind, DataType>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/sql/d1/src/MssqlClient.ts#L701)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/sql/d1/src/MssqlClient.ts#L710)
 
 Since v4.0.0

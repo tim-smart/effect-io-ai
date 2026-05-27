@@ -11,6 +11,6 @@ Formats a shard identifier as `group:id`.
 declare const toString: (shardId: { readonly group: string; readonly id: number; }) => string
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ShardId.ts#L126)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ShardId.ts#L148)
 
 Since v4.0.0

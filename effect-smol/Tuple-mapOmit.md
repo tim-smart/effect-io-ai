@@ -8,7 +8,7 @@ specified indices; the excluded elements are copied unchanged.
 
 **When to use**
 
-Use this when most elements should be transformed but a few should be
+Use when most elements should be transformed but a few should be
 preserved.
 
 **Details**
@@ -44,6 +44,6 @@ console.log(result) // [[1], "hello", [true]]
 declare const mapOmit: { <const T extends ReadonlyArray<unknown>, const I extends ReadonlyArray<Indices<T>>, L extends Lambda>(indices: I, lambda: L): (self: T) => { [K in keyof T]: K extends `${I[number]}` ? T[K] : Apply<L, T[K]>; }; <const T extends ReadonlyArray<unknown>, const I extends ReadonlyArray<Indices<T>>, L extends Lambda>(self: T, indices: I, lambda: L): { [K in keyof T]: K extends `${I[number]}` ? T[K] : Apply<L, T[K]>; }; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tuple.ts#L553)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tuple.ts#L564)
 
 Since v4.0.0

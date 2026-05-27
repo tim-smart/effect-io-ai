@@ -29,6 +29,6 @@ Effect.runPromise(program)
 declare const sync: <A>(evaluate: LazyArg<A>) => Stream<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L893)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L943)
 
 Since v2.0.0

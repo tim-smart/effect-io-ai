@@ -12,6 +12,6 @@ group interface.
 declare const isHttpApiGroup: (u: unknown) => u is Any
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiGroup.ts#L46)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiGroup.ts#L57)
 
 Since v4.0.0

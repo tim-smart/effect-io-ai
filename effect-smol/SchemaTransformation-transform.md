@@ -8,7 +8,7 @@ functions.
 
 **When to use**
 
-- The conversion cannot fail.
+Use when the conversion cannot fail.
 - No Effect services are needed.
 
 **Details**

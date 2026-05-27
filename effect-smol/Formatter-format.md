@@ -7,7 +7,7 @@ Converts any JavaScript value into a human-readable string.
 
 **When to use**
 
-- Pretty-printing values for debugging, logging, or error messages.
+Use to pretty-print values for debugging, logging, or error messages.
 - You need to handle `BigInt`, `Symbol`, `Set`, `Map`, `Date`, `RegExp`,
   or class instances that `JSON.stringify` cannot represent.
 - You want circular references shown as `"[Circular]"` instead of

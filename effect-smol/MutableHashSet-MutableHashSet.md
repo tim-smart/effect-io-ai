@@ -6,6 +6,11 @@ Module: `MutableHashSet`<br />
 A mutable hash set for storing unique values with Effect structural equality
 support.
 
+**When to use**
+
+Use to store and mutate a collection of unique values with Effect hashing and
+equality semantics.
+
 **Details**
 
 Operations mutate the set in place. Values that implement `Equal` / `Hash`
@@ -48,6 +53,6 @@ export interface MutableHashSet<out V> extends Iterable<V>, Pipeable, Inspectabl
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableHashSet.ts#L123)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableHashSet.ts#L125)
 
 Since v2.0.0

@@ -16,6 +16,6 @@ failures fail the stream with the result cause.
 declare const toStreamResult: <A, E>(self: Atom<AsyncResult.AsyncResult<A, E>>) => Stream.Stream<A, E, AtomRegistry>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Atom.ts#L2270)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Atom.ts#L2284)
 
 Since v4.0.0

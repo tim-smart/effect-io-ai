@@ -12,6 +12,6 @@ during unification.
 export interface LayerUnifyIgnore {}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L103)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L122)
 
 Since v4.0.0

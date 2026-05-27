@@ -8,7 +8,7 @@ encodes object-like values back into `FormData`.
 
 **When to use**
 
-Use this for form or multipart payloads where keys such as `user[name]` or
+Use when you use this for form or multipart payloads where keys such as `user[name]` or
 `items[0]` should become nested data.
 
 **Details**

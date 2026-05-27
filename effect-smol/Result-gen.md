@@ -5,6 +5,11 @@ Module: `Result`<br />
 
 Generator-based syntax for composing `Result` values sequentially.
 
+**When to use**
+
+Use when sequential `Result` composition is clearer with generator syntax
+than nested `flatMap` calls.
+
 **Details**
 
 - Use `yield*` to unwrap a `Result` inside the generator; if any yielded
@@ -38,6 +43,6 @@ console.log(result)
 declare const gen: Gen.Gen<ResultTypeLambda>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L1479)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L1585)
 
 Since v2.0.0

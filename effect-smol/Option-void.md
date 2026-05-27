@@ -7,7 +7,7 @@ A pre-built `Some(undefined)` constant.
 
 **When to use**
 
-- Returning a "success with no meaningful value" from an `Option`-returning function
+Use to return a "success with no meaningful value" from an `Option`-returning function
 
 **Example** (Using Option.void)
 
@@ -28,6 +28,6 @@ console.log(Option.void)
 declare const void: Option<void>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L1285)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L1312)
 
 Since v2.0.0

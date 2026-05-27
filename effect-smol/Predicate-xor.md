@@ -7,7 +7,7 @@ Creates a predicate that returns `true` if exactly one predicate is `true`.
 
 **When to use**
 
-- You want an exclusive-or between two conditions.
+Use when you want an exclusive-or between two conditions.
 
 **Details**
 
@@ -37,6 +37,6 @@ console.log(either(-2))
 declare const xor: { <A>(that: Predicate<A>): (self: Predicate<A>) => Predicate<A>; <A>(self: Predicate<A>, that: Predicate<A>): Predicate<A>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L1714)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L1748)
 
 Since v2.0.0

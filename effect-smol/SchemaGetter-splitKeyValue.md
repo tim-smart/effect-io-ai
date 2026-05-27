@@ -7,7 +7,7 @@ Parses a string into a record of key-value pairs.
 
 **When to use**
 
-- An encoded string contains delimited key-value pairs (e.g. `"a=1,b=2"`).
+Use when an encoded string contains delimited key-value pairs (e.g. `"a=1,b=2"`).
 
 **Details**
 
@@ -26,8 +26,8 @@ const parse = SchemaGetter.splitKeyValue<string>()
 
 **See**
 
-- `joinKeyValue` - inverse operation
-- `split` - split into an array of strings
+- `joinKeyValue` for the inverse operation
+- `split` to split into an array of strings
 
 **Signature**
 

@@ -7,7 +7,7 @@ Issue produced when a schema filter (refinement check) fails.
 
 **When to use**
 
-- Inspect which filter rejected the value.
+Use when inspect which filter rejected the value.
 - Walk the inner `issue` for the specific validation failure.
 
 **Details**

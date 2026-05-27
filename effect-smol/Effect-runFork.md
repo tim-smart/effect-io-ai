@@ -8,7 +8,7 @@ be observed or interrupted.
 
 **When to use**
 
-`runFork` is used to run an effect in the background by creating a
+Use when `runFork` is used to run an effect in the background by creating a
 fiber. It is the base function for all other run functions. It starts a fiber
 that can be observed or interrupted.
 
@@ -42,6 +42,6 @@ setTimeout(() => {
 declare const runFork: <A, E>(effect: Effect<A, E, never>, options?: RunOptions | undefined) => Fiber<A, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L8228)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L8783)
 
 Since v2.0.0

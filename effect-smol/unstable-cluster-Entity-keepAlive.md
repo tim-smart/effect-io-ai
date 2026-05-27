@@ -16,6 +16,6 @@ disabled it releases the keep-alive latch if one is present.
 declare const keepAlive: (enabled: boolean) => Effect.Effect<void, never, Sharding | CurrentAddress>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Entity.ts#L702)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Entity.ts#L719)
 
 Since v4.0.0

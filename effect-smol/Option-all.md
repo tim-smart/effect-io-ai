@@ -8,7 +8,7 @@ Combines a structure of `Option`s (tuple, struct, or iterable) into a single
 
 **When to use**
 
-- Collecting multiple `Option`s into one, preserving the input shape
+Use when collecting multiple `Option`s into one, preserving the input shape
 - "All or nothing" combination — any `None` makes the result `None`
 
 **Details**
@@ -52,6 +52,6 @@ console.log(struct)
 declare const all: <const I extends Iterable<Option<any>> | Record<string, Option<any>>>(input: I) => [I] extends [ReadonlyArray<Option<any>>] ? Option<{ -readonly [K in keyof I]: [I[K]] extends [Option<infer A>] ? A : never; }> : [I] extends [Iterable<Option<infer A>>] ? Option<Array<A>> : Option<{ -readonly [K in keyof I]: [I[K]] extends [Option<infer A>] ? A : never; }>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L1766)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L1793)
 
 Since v2.0.0

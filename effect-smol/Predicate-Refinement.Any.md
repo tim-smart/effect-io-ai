@@ -7,7 +7,7 @@ A utility type representing any refinement type.
 
 **When to use**
 
-- You need a constraint for "any refinement" in generic code.
+Use when you need a constraint for "any refinement" in generic code.
 
 **Details**
 
@@ -32,6 +32,6 @@ type AnyRefinement = Predicate.Refinement.Any
 type Any = Refinement<any, any>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L339)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L364)
 
 Since v3.6.0

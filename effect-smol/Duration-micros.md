@@ -20,6 +20,6 @@ console.log(Duration.toMillis(duration)) // 500
 declare const micros: (micros: bigint) => Duration
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Duration.ts#L594)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Duration.ts#L669)
 
 Since v2.0.0

@@ -11,6 +11,6 @@ Error raised by Redis command or script execution.
 declare class RedisError
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Redis.ts#L98)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Redis.ts#L116)
 
 Since v4.0.0

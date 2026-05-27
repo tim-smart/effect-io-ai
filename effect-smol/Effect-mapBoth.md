@@ -5,6 +5,11 @@ Module: `Effect`<br />
 
 Applies transformations to both the success and error channels of an effect.
 
+**When to use**
+
+Use to transform both success and failure values without changing whether the
+effect succeeds or fails.
+
 **Details**
 
 This function takes two map functions as arguments: one for the error channel
@@ -42,6 +47,6 @@ const modified = Effect.mapBoth(simulatedTask, {
 declare const mapBoth: { <E, E2, A, A2>(options: { readonly onFailure: (e: E) => E2; readonly onSuccess: (a: A) => A2; }): <R>(self: Effect<A, E, R>) => Effect<A2, E2, R>; <A, E, R, E2, A2>(self: Effect<A, E, R>, options: { readonly onFailure: (e: E) => E2; readonly onSuccess: (a: A) => A2; }): Effect<A2, E2, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L3317)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L3580)
 
 Since v2.0.0

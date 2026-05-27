@@ -11,6 +11,6 @@ Narrows an `AST` to `TemplateLiteral`.
 declare const isTemplateLiteral: (ast: AST) => ast is TemplateLiteral
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L292)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L403)
 
 Since v3.10.0

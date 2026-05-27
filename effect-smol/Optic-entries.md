@@ -8,7 +8,7 @@ An `Iso` that converts a `Record<string, A>` to an array of
 
 **When to use**
 
-- You want to traverse or manipulate record entries as an array (e.g.
+Use when you want to traverse or manipulate record entries as an array (e.g.
   with `.forEach()`).
 
 **Details**

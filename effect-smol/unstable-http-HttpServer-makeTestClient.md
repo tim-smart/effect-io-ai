@@ -20,6 +20,6 @@ Unix socket addresses are not supported.
 declare const makeTestClient: Effect.Effect<HttpClient.HttpClient, never, HttpClient.HttpClient | HttpServer>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpServer.ts#L288)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpServer.ts#L301)
 
 Since v4.0.0

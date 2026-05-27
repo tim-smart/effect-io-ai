@@ -8,7 +8,7 @@ configured to allow exactly one match (oneOf mode).
 
 **When to use**
 
-- Detect ambiguous union matches when `oneOf` validation is enabled.
+Use when detect ambiguous union matches when `oneOf` validation is enabled.
 - Inspect `successes` to see which members matched.
 
 **Details**

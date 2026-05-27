@@ -13,6 +13,6 @@ declaring transport capabilities.
 declare class Protocol
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RpcServer.ts#L850)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RpcServer.ts#L858)
 
 Since v4.0.0

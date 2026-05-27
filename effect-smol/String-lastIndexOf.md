@@ -20,6 +20,6 @@ pipe("abbbc", String.lastIndexOf("d")) // Option.none()
 declare const lastIndexOf: (searchString: string) => (self: string) => Option.Option<number>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L638)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L712)
 
 Since v2.0.0

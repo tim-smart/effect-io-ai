@@ -7,7 +7,7 @@ A successful Exit containing a value.
 
 **When to use**
 
-- Use `isSuccess` to narrow an `Exit` to `Success`
+Use when you use `isSuccess` to narrow an `Exit` to `Success`
 - Access the value via the `value` property after narrowing
 
 **Example** (Accessing the success value)
@@ -37,6 +37,6 @@ export interface Success<out A, out E = never> extends Exit.Proto<A, E> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Exit.ts#L156)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Exit.ts#L165)
 
 Since v2.0.0

@@ -7,7 +7,7 @@ Encodes a nested object into a `URLSearchParams` instance using bracket-path not
 
 **When to use**
 
-- Serializing structured data to query parameters for URLs.
+Use to serialize structured data to query parameters for URLs.
 
 **Details**
 
@@ -26,9 +26,9 @@ const encode = SchemaGetter.encodeURLSearchParams()
 
 **See**
 
-- `decodeURLSearchParams` - inverse operation
-- `collectBracketPathEntries` - the underlying flattener
-- `encodeFormData` - similar for FormData
+- `decodeURLSearchParams` for the inverse operation
+- `collectBracketPathEntries` for the underlying flattener
+- `encodeFormData` for the FormData variant
 
 **Signature**
 

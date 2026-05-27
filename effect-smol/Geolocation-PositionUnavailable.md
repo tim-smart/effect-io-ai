@@ -11,6 +11,6 @@ Error reason for the browser geolocation `POSITION_UNAVAILABLE` failure.
 declare class PositionUnavailable
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/Geolocation.ts#L90)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/Geolocation.ts#L133)
 
 Since v4.0.0

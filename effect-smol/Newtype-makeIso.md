@@ -8,7 +8,7 @@ unwrapping (`get`).
 
 **When to use**
 
-Use this as the primary way to construct and deconstruct newtype values.
+Use as the primary way to construct and deconstruct newtype values.
 
 **Details**
 
@@ -38,6 +38,6 @@ const str: string = labelIso.get(label) // "world"
 declare const makeIso: <N extends Newtype.Any>() => Optic.Iso<N, Newtype.Carrier<N>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Newtype.ts#L221)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Newtype.ts#L230)
 
 Since v4.0.0

@@ -18,6 +18,6 @@ schedule step has produced metadata.
 declare const CurrentMetadata: Context.Reference<Metadata<unknown, unknown>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L190)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L224)
 
 Since v4.0.0

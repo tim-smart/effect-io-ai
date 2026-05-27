@@ -23,6 +23,6 @@ console.log(DateTime.isGreaterThan(date2, date1)) // false
 declare const isGreaterThan: { (that: DateTime): (self: DateTime) => boolean; (self: DateTime, that: DateTime): boolean; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L1284)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L1331)
 
 Since v4.0.0

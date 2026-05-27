@@ -17,6 +17,6 @@ type AnyWithProps = IndexedDbTable<
 >
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbTable.ts#L94)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbTable.ts#L111)
 
 Since v4.0.0

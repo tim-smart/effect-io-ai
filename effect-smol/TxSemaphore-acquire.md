@@ -6,6 +6,11 @@ Module: `TxSemaphore`<br />
 Acquires a single permit from the semaphore. If no permits are available,
 the effect will block until one becomes available.
 
+**When to use**
+
+Use to manually acquire one permit transactionally, waiting until one is
+available.
+
 **Example** (Acquiring a permit)
 
 ```ts
@@ -27,12 +32,18 @@ const program = Effect.gen(function*() {
 })
 ```
 
+**See**
+
+- `tryAcquire` for a non-blocking single-permit attempt
+- `release` for returning one permit
+- `withPermit` for automatic acquire and release around an effect
+
 **Signature**
 
 ```ts
 declare const acquire: (self: TxSemaphore) => Effect.Effect<void>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxSemaphore.ts#L214)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxSemaphore.ts#L269)
 
 Since v2.0.0

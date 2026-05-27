@@ -11,6 +11,6 @@ Effect that returns the path parameters captured for the current matched route.
 declare const params: Effect.Effect<ReadonlyRecord<string, string | undefined>, never, RouteContext>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpRouter.ts#L291)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpRouter.ts#L314)
 
 Since v4.0.0

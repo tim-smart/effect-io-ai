@@ -7,7 +7,7 @@ Creates a `Value` node representing a terminal string leaf.
 
 **When to use**
 
-Use this when building nodes inside a custom `ConfigProvider`'s `get`
+Use when building nodes inside a custom `ConfigProvider`'s `get`
 callback.
 
 **Details**

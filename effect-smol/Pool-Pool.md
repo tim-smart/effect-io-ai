@@ -7,6 +7,19 @@ A `Pool<A, E>` is a pool of items of type `A`, each of which may be
 associated with the acquisition and release of resources. An attempt to get
 an item `A` from a pool may fail with an error of type `E`.
 
+**When to use**
+
+Use when you need to share a bounded set of scoped resources across fibers
+while the pool manages acquisition, reuse, and release.
+
+**See**
+
+- `make` for creating a pool with size bounds
+- `makeWithTTL` for creating a pool with idle item expiration
+- `makeWithStrategy` for creating a pool with a custom strategy
+- `get` for acquiring an item from a pool
+- `invalidate` for removing a broken item from the pool
+
 **Signature**
 
 ```ts
@@ -17,6 +30,6 @@ export interface Pool<in out A, in out E = never> extends Pipeable {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Pool.ts#L59)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Pool.ts#L86)
 
 Since v2.0.0

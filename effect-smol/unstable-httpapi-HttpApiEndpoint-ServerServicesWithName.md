@@ -14,6 +14,6 @@ type ServerServicesWithName<Endpoints, Name> = ServerServices<
 >
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiEndpoint.ts#L771)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiEndpoint.ts#L799)
 
 Since v4.0.0

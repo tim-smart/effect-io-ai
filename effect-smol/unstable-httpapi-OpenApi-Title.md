@@ -11,6 +11,6 @@ OpenAPI annotation for setting the API title or group tag name.
 declare class Title
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/OpenApi.ts#L66)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/OpenApi.ts#L78)
 
 Since v4.0.0

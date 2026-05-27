@@ -7,7 +7,7 @@ Represents a `Histogram` metric that records observations into buckets.
 
 **When to use**
 
-Histogram metrics are most suitable for measuring the distribution of values
+Use when histogram metrics are most suitable for measuring the distribution of values
 within a range.
 
 **Details**
@@ -78,6 +78,6 @@ const program = Effect.gen(function*() {
 declare const histogram: (name: string, options: { readonly description?: string | undefined; readonly attributes?: Metric.Attributes | undefined; readonly boundaries: ReadonlyArray<number>; }) => Histogram<number>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Metric.ts#L2485)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Metric.ts#L2500)
 
 Since v2.0.0

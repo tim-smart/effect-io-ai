@@ -7,7 +7,7 @@ Creates a `Reducer` from a `combine` function and an `initialValue`.
 
 **When to use**
 
-- You have a custom reducing operation not covered by a pre-built reducer.
+Use when you have a custom reducing operation not covered by a pre-built reducer.
 - You want to provide an optimized `combineAll` (e.g. short-circuiting on
   a known absorbing element like `0` for multiplication).
 
@@ -54,6 +54,6 @@ console.log(Product.combineAll([2, 0, 4]))
 declare const make: <A>(combine: (self: A, that: A) => A, initialValue: A, combineAll?: (collection: Iterable<A>) => A) => Reducer<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Reducer.ts#L169)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Reducer.ts#L181)
 
 Since v4.0.0

@@ -5,10 +5,19 @@ Module: `Layer`<br />
 
 A service reference for the current `MemoMap` used in layer construction.
 
+**When to use**
+
+Use when building custom layer operations that need to access the current
+memoization map from the fiber context.
+
 **Details**
 
-This service provides access to the current memoization map during layer building,
-allowing layers to share memoized results.
+This service wraps a `MemoMap` as a `Context.Service`, making it available
+for dependency injection during layer construction.
+
+**See**
+
+- `MemoMap` the memoization map type wrapped by this service
 
 **Signature**
 
@@ -16,6 +25,6 @@ allowing layers to share memoized results.
 declare class CurrentMemoMap
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L518)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L597)
 
 Since v3.13.0

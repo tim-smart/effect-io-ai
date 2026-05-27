@@ -11,6 +11,6 @@ Creates a layer from a `Config`-wrapped PostgreSQL pool configuration, providing
 declare const layerConfig: (config: Config.Wrap<PgPoolConfig>) => Layer.Layer<PgClient | Client.SqlClient, Config.ConfigError | SqlError>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/sql/pg/src/PgClient.ts#L790)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/sql/pg/src/PgClient.ts#L808)
 
 Since v4.0.0

@@ -7,7 +7,7 @@ An empty toolkit with no tools.
 
 **When to use**
 
-Useful as a starting point for building toolkits or as a default value. Can
+Use as a starting point for building toolkits or as a default value. Can
 be extended using the merge function to add tools.
 
 **Signature**
@@ -16,6 +16,6 @@ be extended using the merge function to add tools.
 declare const empty: Toolkit<{}>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Toolkit.ts#L478)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Toolkit.ts#L506)
 
 Since v4.0.0

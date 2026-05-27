@@ -5,6 +5,11 @@ Module: `Result`<br />
 
 Collects a structure of `Result`s into a single `Result` of collected values.
 
+**When to use**
+
+Use to collect independent `Result` values into one `Result` while preserving
+the original structure.
+
 **Details**
 
 Accepts:
@@ -41,6 +46,6 @@ console.log(struct)
 declare const all: <const I extends Iterable<Result<any, any>> | Record<string, Result<any, any>>>(input: I) => [I] extends [ReadonlyArray<Result<any, any>>] ? Result<{ -readonly [K in keyof I]: [I[K]] extends [Result<infer R, any>] ? R : never; }, I[number] extends never ? never : [I[number]] extends [Result<any, infer L>] ? L : never> : [I] extends [Iterable<Result<infer R, infer L>>] ? Result<Array<R>, L> : Result<{ -readonly [K in keyof I]: [I[K]] extends [Result<infer R, any>] ? R : never; }, I[keyof I] extends never ? never : [I[keyof I]] extends [Result<any, infer L>] ? L : never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L1383)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L1479)
 
 Since v2.0.0

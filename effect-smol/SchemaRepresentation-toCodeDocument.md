@@ -7,7 +7,7 @@ Generates TypeScript code strings from a `MultiDocument`.
 
 **When to use**
 
-Use this to produce source code for Schema definitions, such as in codegen
+Use to produce source code for Schema definitions, such as in codegen
 tools.
 
 **Details**
@@ -48,6 +48,6 @@ console.log(codeDoc.codes[0].runtime)
 declare const toCodeDocument: (multiDocument: MultiDocument, options?: { readonly reviver?: Reviver<Code> | undefined; }) => CodeDocument
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaRepresentation.ts#L2383)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaRepresentation.ts#L2427)
 
 Since v4.0.0

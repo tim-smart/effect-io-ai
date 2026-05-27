@@ -5,6 +5,10 @@ Module: `BigInt`<br />
 
 Tests if a value is a `bigint`.
 
+**When to use**
+
+Use to validate unknown input and narrow it to `bigint`.
+
 **Example** (Checking for bigints)
 
 ```ts
@@ -21,6 +25,6 @@ assert.deepStrictEqual(BigInt.isBigInt(1), false)
 declare const isBigInt: (u: unknown) => u is bigint
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigInt.ts#L57)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigInt.ts#L137)
 
 Since v2.0.0

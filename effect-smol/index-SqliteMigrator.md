@@ -11,6 +11,6 @@ Re-exports all named exports from the "./SqliteMigrator.ts" module as `SqliteMig
 export * as SqliteMigrator from "./SqliteMigrator.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/sql/sqlite-bun/src/index.ts#L52)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/sql/sqlite-bun/src/index.ts#L15)
 
 Since v4.0.0

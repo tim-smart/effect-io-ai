@@ -7,6 +7,11 @@ An ordered sequence of string or numeric segments that addresses a node in
 the configuration tree. String segments name object keys; numeric segments
 index into arrays.
 
+**When to use**
+
+Use to address raw configuration nodes when implementing or transforming a
+`ConfigProvider`.
+
 **Example** (A typical config path)
 
 ```ts
@@ -21,6 +26,6 @@ const path: ConfigProvider.Path = ["database", "replicas", 0, "host"]
 type Path = ReadonlyArray<string | number>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ConfigProvider.ts#L290)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ConfigProvider.ts#L295)
 
 Since v4.0.0

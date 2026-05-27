@@ -5,6 +5,10 @@ Module: `Array`<br />
 
 Converts an `Option` to an array: `Some(a)` becomes `[a]`, `None` becomes `[]`.
 
+**When to use**
+
+Use to convert a single `Option` into an array for downstream array operations.
+
 **Example** (Option to array)
 
 ```ts
@@ -24,6 +28,6 @@ console.log(Array.fromOption(Option.none())) // []
 declare const fromOption: <A>(self: Option.Option<A>) => Array<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L423)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L452)
 
 Since v2.0.0

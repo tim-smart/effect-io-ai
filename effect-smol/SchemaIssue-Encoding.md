@@ -7,7 +7,7 @@ Issue produced when a schema transformation (encode/decode step) fails.
 
 **When to use**
 
-- Inspect failures from `Schema.decodeTo` / `Schema.encodeTo`
+Use when inspect failures from `Schema.decodeTo` / `Schema.encodeTo`
   transformations.
 - Walk the inner `issue` for the root cause of the transformation failure.
 

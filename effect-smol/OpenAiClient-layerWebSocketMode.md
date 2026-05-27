@@ -5,6 +5,11 @@ Module: `OpenAiClient`<br />
 
 Uses OpenAI's websocket mode for all responses that use the Layer.
 
+**When to use**
+
+Use to provide WebSocket mode through layer composition for effects that use
+OpenAI response streaming.
+
 **Gotchas**
 
 This only works with the following WebSocket constructor layers:
@@ -14,12 +19,16 @@ This only works with the following WebSocket constructor layers:
 
 This is because it needs to use non-standard options for setting the Authorization header.
 
+**See**
+
+- `withWebSocketMode` for enabling WebSocket mode around a single effect
+
 **Signature**
 
 ```ts
 declare const layerWebSocketMode: Layer.Layer<OpenAiSocket | ResponseIdTracker.ResponseIdTracker, never, OpenAiClient | Socket.WebSocketConstructor>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L631)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L743)
 
 Since v4.0.0

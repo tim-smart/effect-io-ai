@@ -5,6 +5,10 @@ Module: `MutableHashSet`<br />
 
 Returns the number of unique values in the MutableHashSet.
 
+**When to use**
+
+Use to read how many unique values are currently stored in the set.
+
 **Example** (Checking set size)
 
 ```ts
@@ -31,6 +35,6 @@ console.log(MutableHashSet.size(set)) // 0
 declare const size: <V>(self: MutableHashSet<V>) => number
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableHashSet.ts#L386)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableHashSet.ts#L446)
 
 Since v2.0.0

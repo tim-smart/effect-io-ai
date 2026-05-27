@@ -7,9 +7,9 @@ A wrapper for errors whose type is not statically known.
 
 **Details**
 
-Produced by the runtime when an effect throws a non-`Error` value.
-The original thrown value is stored in the `cause` property (inherited
-from `Error`). Implements `YieldableError`.
+Used when a thrown or rejected value is not represented by a more specific
+typed error. The original value is stored in the `cause` property inherited
+from `Error`. Implements `YieldableError`.
 
 **Example** (creating and checking)
 
@@ -21,10 +21,6 @@ console.log(error._tag)    // "UnknownError"
 console.log(error.message) // "Something unknown"
 ```
 
-**See**
-
-- `isUnknownError` — type guard
-
 **Signature**
 
 ```ts
@@ -34,6 +30,6 @@ export interface UnknownError extends YieldableError {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L1637)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L1830)
 
 Since v4.0.0

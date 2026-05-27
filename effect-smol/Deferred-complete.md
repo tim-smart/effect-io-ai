@@ -8,9 +8,8 @@ memoized result.
 
 **When to use**
 
-Use `Deferred.complete` when the effect should be evaluated once and the
-resulting `Exit` memoized. Use `Deferred.completeWith` when you need to store
-an effect directly without memoizing its result.
+Use when completion should run an effect once and share its result with all
+awaiters.
 
 **Details**
 
@@ -32,12 +31,16 @@ const program = Effect.gen(function*() {
 })
 ```
 
+**See**
+
+- `completeWith` for storing an effect directly without memoizing its result
+
 **Signature**
 
 ```ts
 declare const complete: { <A, E, R>(effect: Effect<A, E, R>): (self: Deferred<A, E>) => Effect<boolean, never, R>; <A, E, R>(self: Deferred<A, E>, effect: Effect<A, E, R>): Effect<boolean, never, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Deferred.ts#L297)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Deferred.ts#L320)
 
 Since v2.0.0

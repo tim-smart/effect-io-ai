@@ -12,6 +12,6 @@ tag.
 type ServicesClientWithTag<Events, Tag> = ServicesClient<WithTag<Events, Tag>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Event.ts#L378)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Event.ts#L393)
 
 Since v4.0.0

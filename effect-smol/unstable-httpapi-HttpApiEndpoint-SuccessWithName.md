@@ -14,6 +14,6 @@ type SuccessWithName<Endpoints, Name> = Success<
 >["Type"]
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiEndpoint.ts#L751)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiEndpoint.ts#L779)
 
 Since v4.0.0

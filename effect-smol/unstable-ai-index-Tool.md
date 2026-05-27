@@ -11,6 +11,6 @@ Re-exports all named exports from the "./Tool.ts" module as `Tool`.
 export * as Tool from "./Tool.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L596)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L85)
 
 Since v4.0.0

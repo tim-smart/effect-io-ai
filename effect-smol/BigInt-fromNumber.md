@@ -5,6 +5,10 @@ Module: `BigInt`<br />
 
 Converts a number to a `bigint`.
 
+**When to use**
+
+Use to convert a JavaScript number to `bigint` only when it is a safe integer.
+
 **Details**
 
 If the number is outside the safe integer range for JavaScript
@@ -22,12 +26,17 @@ BigInt.fromNumber(Number.MAX_SAFE_INTEGER + 1) // Option.none()
 BigInt.fromNumber(Number.MIN_SAFE_INTEGER - 1) // Option.none()
 ```
 
+**See**
+
+- `toNumber` for converting `bigint` values back to safe integer numbers
+- `BigInt` for native constructor coercion
+
 **Signature**
 
 ```ts
 declare const fromNumber: (n: number) => Option.Option<bigint>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigInt.ts#L731)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigInt.ts#L965)
 
 Since v2.4.12

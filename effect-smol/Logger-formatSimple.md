@@ -38,6 +38,6 @@ const program = Effect.gen(function*() {
 declare const formatSimple: Logger<unknown, string>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Logger.ts#L605)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Logger.ts#L621)
 
 Since v4.0.0

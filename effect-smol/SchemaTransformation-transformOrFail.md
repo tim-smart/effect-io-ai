@@ -8,7 +8,7 @@ can fail with `Issue`.
 
 **When to use**
 
-- The transformation can fail (e.g. parsing, validation).
+Use when the transformation can fail (e.g. parsing, validation).
 - The transformation requires Effect services.
 
 **Details**

@@ -5,10 +5,23 @@ Module: `Layer`<br />
 
 A type-level constraint for working with any `Layer` type.
 
+**When to use**
+
+Use to constrain generic parameters or layer collections to any `Layer`
+value while preserving its provided, error, and required service types for
+inference.
+
 **Details**
 
 This interface is used to constrain generic types to `Layer` values without
 specifying exact type parameters.
+
+**See**
+
+- `Layer` for the concrete layer interface
+- `Services` for extracting required services from a layer type
+- `Error` for extracting construction errors from a layer type
+- `Success` for extracting provided services from a layer type
 
 **Signature**
 
@@ -22,6 +35,6 @@ export interface Any {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L129)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L159)
 
 Since v3.9.0

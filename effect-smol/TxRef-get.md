@@ -5,6 +5,10 @@ Module: `TxRef`<br />
 
 Reads the current value of the `TxRef`.
 
+**When to use**
+
+Use to read the current value of a transactional reference.
+
 **Example** (Reading transactional references)
 
 ```ts
@@ -28,6 +32,6 @@ const program = Effect.gen(function*() {
 declare const get: <A>(self: TxRef<A>) => Effect.Effect<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxRef.ts#L222)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxRef.ts#L297)
 
 Since v2.0.0

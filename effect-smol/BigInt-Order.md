@@ -5,6 +5,10 @@ Module: `BigInt`<br />
 
 Provides an `Order` instance for `bigint` that allows comparing and sorting BigInt values.
 
+**When to use**
+
+Use when an API needs an `Order` instance for `bigint` values.
+
 **Example** (Comparing bigints with Order)
 
 ```ts
@@ -25,6 +29,6 @@ console.log(BigInt.Order(a, c)) // 0 (a === c)
 declare const Order: order.Order<bigint>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigInt.ts#L232)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigInt.ts#L355)
 
 Since v2.0.0

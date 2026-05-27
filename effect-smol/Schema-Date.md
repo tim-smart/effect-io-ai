@@ -14,6 +14,6 @@ export interface Date extends instanceOf<globalThis.Date> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L9463)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L9717)
 
 Since v4.0.0

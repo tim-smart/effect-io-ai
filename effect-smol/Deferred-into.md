@@ -6,6 +6,11 @@ Module: `Deferred`<br />
 Runs an `Effect` and attempts to complete a `Deferred` with the effect's
 result.
 
+**When to use**
+
+Use to pipe an effect result into a `Deferred` while preserving success,
+failure, defects, and interruption.
+
 **Details**
 
 If the effect succeeds, fails, dies, or is interrupted, that result is used
@@ -47,6 +52,6 @@ Effect.runPromise(program).then(console.log)
 declare const into: { <A, E>(deferred: Deferred<A, E>): <R>(self: Effect<A, E, R>) => Effect<boolean, never, R>; <A, E, R>(self: Effect<A, E, R>, deferred: Deferred<A, E>): Effect<boolean, never, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Deferred.ts#L835)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Deferred.ts#L955)
 
 Since v4.0.0

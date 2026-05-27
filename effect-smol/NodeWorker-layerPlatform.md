@@ -13,6 +13,6 @@ terminating the worker if graceful shutdown times out.
 declare const layerPlatform: Layer.Layer<Worker.WorkerPlatform, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeWorker.ts#L40)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeWorker.ts#L54)
 
 Since v4.0.0

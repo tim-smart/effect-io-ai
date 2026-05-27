@@ -7,7 +7,7 @@ Represents the absence of a value within an `Option`.
 
 **When to use**
 
-- Use as a type guard target when narrowing via `isNone`
+Use as a type guard target when narrowing via `isNone`
 
 **Details**
 

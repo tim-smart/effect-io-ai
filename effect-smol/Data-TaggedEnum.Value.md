@@ -5,6 +5,10 @@ Module: `Data`<br />
 
 Extracts the full variant type (including `_tag`) for a specific tag.
 
+**When to use**
+
+Use to select one full tagged-union variant by its `_tag` value.
+
 **Example** (extracting a variant type)
 
 ```ts
@@ -28,6 +32,6 @@ type OkVariant = Data.TaggedEnum.Value<Result, "Ok">
 type Value<A, K> = Extract<A, { readonly _tag: K }>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Data.ts#L396)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Data.ts#L414)
 
 Since v2.0.0

@@ -11,6 +11,6 @@ Error produced while constructing an HTTP body from JSON or schema-encoded input
 declare class HttpBodyError
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpBody.ts#L100)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpBody.ts#L140)
 
 Since v4.0.0

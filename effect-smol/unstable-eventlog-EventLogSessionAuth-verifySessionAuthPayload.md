@@ -12,6 +12,6 @@ Ed25519 signature.
 declare const verifySessionAuthPayload: (options: SessionAuthPayload & { readonly signature: Uint8Array; }) => Effect.Effect<boolean, EventLogSessionAuthError, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventLogSessionAuth.ts#L449)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventLogSessionAuth.ts#L467)
 
 Since v4.0.0

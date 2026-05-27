@@ -11,6 +11,6 @@ Re-exports all named exports from the "./Match.ts" module as `Match`.
 export * as Match from "./Match.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L2862)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L317)
 
 Since v4.0.0

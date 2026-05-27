@@ -5,6 +5,10 @@ Module: `Result`<br />
 
 Extracts the success value or throws the raw failure value `E`.
 
+**When to use**
+
+Use when unchecked boundaries should turn failures into thrown exceptions.
+
 **Details**
 
 - `Success<A>` returns `A`
@@ -34,6 +38,6 @@ console.log(Result.getOrThrow(Result.succeed(1)))
 declare const getOrThrow: <A, E>(self: Result<A, E>) => A
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L1205)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L1286)
 
 Since v2.0.0

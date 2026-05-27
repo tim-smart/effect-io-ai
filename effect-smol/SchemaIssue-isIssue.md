@@ -7,7 +7,7 @@ Returns `true` if the given value is an `Issue`.
 
 **When to use**
 
-- Narrowing an `unknown` value to `Issue` in error-handling code.
+Use when narrowing an `unknown` value to `Issue` in error-handling code.
 - Distinguishing an `Issue` from other error types in a catch-all handler.
 
 **Details**

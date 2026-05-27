@@ -23,6 +23,6 @@ assert.deepStrictEqual(Array.from(trie), [])
 declare const empty: <V = never>() => Trie<V>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Trie.ts#L94)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Trie.ts#L133)
 
 Since v2.0.0

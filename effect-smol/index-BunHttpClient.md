@@ -11,6 +11,6 @@ Re-exports all named exports from the "./BunHttpClient.ts" module as `BunHttpCli
 export * as BunHttpClient from "./BunHttpClient.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/index.ts#L129)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/index.ts#L35)
 
 Since v4.0.0

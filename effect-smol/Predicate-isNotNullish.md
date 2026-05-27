@@ -7,7 +7,7 @@ Checks whether a value is not `null` and not `undefined`.
 
 **When to use**
 
-- You want to filter out nullish values but keep other falsy ones.
+Use when you want to filter out nullish values but keep other falsy ones.
 
 **Details**
 
@@ -37,6 +37,6 @@ console.log(present)
 declare const isNotNullish: <A>(input: A) => input is NonNullable<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L968)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L993)
 
 Since v4.0.0

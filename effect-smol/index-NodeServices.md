@@ -11,6 +11,6 @@ Re-exports all named exports from the "./NodeServices.ts" module as `NodeService
 export * as NodeServices from "./NodeServices.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L356)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L85)
 
 Since v4.0.0

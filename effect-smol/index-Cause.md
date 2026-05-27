@@ -5,18 +5,12 @@ Module: `index`<br />
 
 Re-exports all named exports from the "./Cause.ts" module as `Cause`.
 
-**See**
-
-- `Cause` — the core interface
-- `Reason` — the union of failure kinds
-- `pretty` — human-readable rendering
-
 **Signature**
 
 ```ts
 export * as Cause from "./Cause.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L282)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L67)
 
 Since v2.0.0

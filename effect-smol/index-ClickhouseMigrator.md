@@ -11,6 +11,6 @@ Re-exports all named exports from the "./ClickhouseMigrator.ts" module as `Click
 export * as ClickhouseMigrator from "./ClickhouseMigrator.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/sql/clickhouse/src/index.ts#L52)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/sql/clickhouse/src/index.ts#L15)
 
 Since v4.0.0

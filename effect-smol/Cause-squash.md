@@ -6,6 +6,11 @@ Module: `Cause`<br />
 Collapses a `Cause` into a single `unknown` value, picking the "most
 important" failure in this order:
 
+**When to use**
+
+Use to collapse a structured cause to the single value that synchronous and
+promise runners would throw.
+
 **Details**
 
 1. First `Fail` error (the `E` value)
@@ -41,6 +46,6 @@ console.log(Cause.squash(Cause.die("defect")))    // "defect"
 declare const squash: <E>(self: Cause<E>) => unknown
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L760)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L824)
 
 Since v2.0.0

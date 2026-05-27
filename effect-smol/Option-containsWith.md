@@ -8,7 +8,7 @@ custom `Equivalence`.
 
 **When to use**
 
-- Testing membership with a custom equality check
+Use when testing membership with a custom equality check
 
 **Details**
 
@@ -42,6 +42,6 @@ console.log(Option.none().pipe(check(2)))
 declare const containsWith: <A>(isEquivalent: (self: A, that: A) => boolean) => { (a: A): (self: Option<A>) => boolean; (self: Option<A>, a: A): boolean; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L2248)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L2279)
 
 Since v2.0.0

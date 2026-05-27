@@ -11,6 +11,6 @@ Computer-use action payload for performing a double click, optionally at a speci
 type ComputerUseDoubleClickAction = typeof ComputerUseDoubleClickAction.Type
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L535)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L872)
 
 Since v4.0.0

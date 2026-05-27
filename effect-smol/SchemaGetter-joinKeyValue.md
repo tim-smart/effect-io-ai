@@ -7,7 +7,7 @@ Joins a record of key-value pairs into a delimited string.
 
 **When to use**
 
-- A decoded record needs to be serialized as a delimited key-value string.
+Use when a decoded record needs to be serialized as a delimited key-value string.
 
 **Details**
 
@@ -25,7 +25,7 @@ const join = SchemaGetter.joinKeyValue()
 
 **See**
 
-- `splitKeyValue` - inverse operation
+- `splitKeyValue` for the inverse operation
 
 **Signature**
 

@@ -5,6 +5,10 @@ Module: `Pipeable`<br />
 
 Interface for values that support method-style `pipe` composition.
 
+**When to use**
+
+Use to type values that expose an Effect-style `.pipe(...)` method.
+
 **Details**
 
 Calling `value.pipe(f, g, h)` passes the value through each function from
@@ -510,6 +514,6 @@ export interface Pipeable {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Pipeable.ts#L50)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Pipeable.ts#L54)
 
 Since v2.0.0

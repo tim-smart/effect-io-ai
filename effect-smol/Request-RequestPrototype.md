@@ -18,6 +18,6 @@ interacting with the prototype directly.
 declare const RequestPrototype: Request<any, any, any>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Request.ts#L212)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Request.ts#L254)
 
 Since v4.0.0

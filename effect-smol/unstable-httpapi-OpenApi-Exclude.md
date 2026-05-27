@@ -11,6 +11,6 @@ OpenAPI annotation reference that excludes an annotated group or endpoint from t
 declare const Exclude: Context.Reference<boolean>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/OpenApi.ts#L150)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/OpenApi.ts#L162)
 
 Since v4.0.0

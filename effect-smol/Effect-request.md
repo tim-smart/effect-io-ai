@@ -5,15 +5,11 @@ Module: `Effect`<br />
 
 Executes a request using the provided resolver.
 
-**Signature**
+**When to use**
 
-```ts
-declare const request: { <A extends Request.Any, EX = never, RX = never>(resolver: RequestResolver<A> | Effect<RequestResolver<A>, EX, RX>): (self: A) => Effect<Request.Success<A>, Request.Error<A> | EX, Request.Services<A> | RX>; <A extends Request.Any, EX = never, RX = never>(self: A, resolver: RequestResolver<A> | Effect<RequestResolver<A>, EX, RX>): Effect<Request.Success<A>, Request.Error<A> | EX, Request.Services<A> | RX>; }
-```
-
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L7875)
-
-Since v2.0.0
+Use to execute a typed `Request` through a `RequestResolver` when you want
+concurrent requests made with the same resolver to be collected and completed
+by resolver logic.
 
 **Example** (Executing a request through a resolver)
 
@@ -39,3 +35,17 @@ const program = Effect.gen(function*() {
   yield* Console.log(name)
 })
 ```
+
+**See**
+
+- `requestUnsafe` for the low-level entry point when you already have a `Context` and need to enqueue outside an `Effect`
+
+**Signature**
+
+```ts
+declare const request: { <A extends Request.Any, EX = never, RX = never>(resolver: RequestResolver<A> | Effect<RequestResolver<A>, EX, RX>): (self: A) => Effect<Request.Success<A>, Request.Error<A> | EX, Request.Services<A> | RX>; <A extends Request.Any, EX = never, RX = never>(self: A, resolver: RequestResolver<A> | Effect<RequestResolver<A>, EX, RX>): Effect<Request.Success<A>, Request.Error<A> | EX, Request.Services<A> | RX>; }
+```
+
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L8393)
+
+Since v2.0.0

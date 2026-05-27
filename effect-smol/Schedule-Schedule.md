@@ -52,6 +52,6 @@ export interface Schedule<out Output, in Input = unknown, out Error = never, out
 {}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L99)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L133)
 
 Since v2.0.0

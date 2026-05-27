@@ -11,6 +11,6 @@ Context service that starts a platform-specific `WorkerRunner`.
 declare class WorkerRunnerPlatform
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/WorkerRunner.ts#L69)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/WorkerRunner.ts#L80)
 
 Since v4.0.0

@@ -11,6 +11,6 @@ Default `Layer.MemoMap` used by the module-level `runtime` factory.
 declare const defaultMemoMap: Layer.MemoMap
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Atom.ts#L799)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Atom.ts#L813)
 
 Since v4.0.0

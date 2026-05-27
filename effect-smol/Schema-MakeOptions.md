@@ -7,7 +7,7 @@ Options for `makeEffect`, `make`, and Class constructors.
 
 **When to use**
 
-- Pass `disableChecks: true` to skip validation when you trust the data.
+Use when passing `disableChecks: true` to skip validation when you trust the data.
 - Pass `parseOptions` to control error reporting behavior.
 
 **See**

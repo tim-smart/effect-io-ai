@@ -8,22 +8,21 @@ succeed.
 
 **When to use**
 
-Use `promise` when you are sure the operation will not reject.
+Use to convert a `Promise` into an `Effect` when the async operation is
+guaranteed to succeed and will not reject.
 
 **Details**
 
-The provided function (`thunk`) returns a `Promise` that should never reject; if it does, the error
-will be treated as a "defect".
-
-This defect is not a standard error but indicates a flaw in the logic that
-was expected to be error-free. You can think of it similar to an unexpected
-crash in the program, which can be further managed or logged using tools like
-`catchDefect`.
-
-Interruptions:
-
 An optional `AbortSignal` can be provided to allow for interruption of the
 wrapped `Promise` API.
+
+**Gotchas**
+
+The `Promise` must not reject. If it rejects, the rejection is treated as a
+defect, not as a typed failure. Use `tryPromise` when rejection is expected.
+
+Interruption aborts the provided `AbortSignal`, but the underlying
+asynchronous operation only stops if it observes that signal.
 
 **Example** (Wrapping a non-rejecting Promise)
 
@@ -55,6 +54,6 @@ const program = delay("Async operation completed successfully!")
 declare const promise: <A>(evaluate: (signal: AbortSignal) => PromiseLike<A>) => Effect<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L875)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L938)
 
 Since v2.0.0

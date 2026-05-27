@@ -7,7 +7,7 @@ Unwraps a newtype value, returning the underlying carrier value.
 
 **When to use**
 
-Use this when you only need to read the inner value and do not need to wrap
+Use when you only need to read the inner value and do not need to wrap
 new values. For both wrapping and unwrapping, prefer `makeIso`.
 
 **Details**
@@ -37,6 +37,6 @@ const raw: string = Newtype.value(label) // "hello"
 declare const value: <N extends Newtype.Any>(newtype: N) => Newtype.Carrier<N>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Newtype.ts#L188)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Newtype.ts#L197)
 
 Since v4.0.0

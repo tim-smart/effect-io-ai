@@ -37,6 +37,6 @@ export interface Primitive<out A> extends Primitive.Variance<A> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Primitive.ts#L60)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Primitive.ts#L109)
 
 Since v4.0.0

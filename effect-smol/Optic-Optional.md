@@ -7,7 +7,7 @@ The most general optic — both reading and writing can fail.
 
 **When to use**
 
-- The focus may not exist in `S` **and** writing a new `A` back may also
+Use when the focus may not exist in `S` **and** writing a new `A` back may also
   fail (e.g. the source no longer matches the expected shape).
 - As the base type: every optic (`Iso`, `Lens`, `Prism`,
   `Traversal`) extends `Optional`.

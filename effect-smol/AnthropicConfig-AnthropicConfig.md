@@ -5,12 +5,21 @@ Module: `AnthropicConfig`<br />
 
 Service tag for Anthropic client configuration overrides, such as transformations applied to the generated HTTP client.
 
+**When to use**
+
+Use when a layer or integration needs to provide or read Anthropic client
+configuration through Effect's context.
+
+**See**
+
+- `withClientTransform` for scoping an HTTP client transformation
+
 **Signature**
 
 ```ts
 declare class AnthropicConfig
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicConfig.ts#L33)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicConfig.ts#L40)
 
 Since v4.0.0

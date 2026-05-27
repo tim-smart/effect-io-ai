@@ -5,6 +5,10 @@ Module: `Ref`<br />
 
 Creates a new Ref with the specified initial value.
 
+**When to use**
+
+Use to create shared mutable state inside an Effect program.
+
 **Example** (Creating a ref)
 
 ```ts
@@ -17,12 +21,16 @@ const program = Effect.gen(function*() {
 })
 ```
 
+**See**
+
+- `makeUnsafe` for synchronous construction outside Effect code
+
 **Signature**
 
 ```ts
 declare const make: <A>(value: A) => Effect.Effect<Ref<A>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Ref.ts#L182)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Ref.ts#L227)
 
 Since v2.0.0

@@ -6,6 +6,11 @@ Module: `Array`<br />
 Returns the first element of a `NonEmptyReadonlyArray` directly (no `Option`
 wrapper).
 
+**When to use**
+
+Use to get the first element without `Option` wrapping when the array is known
+to be non-empty.
+
 **Example** (Getting the head of a non-empty array)
 
 ```ts
@@ -24,6 +29,6 @@ console.log(Array.headNonEmpty([1, 2, 3, 4])) // 1
 declare const headNonEmpty: <A>(self: NonEmptyReadonlyArray<A>) => A
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L1072)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L1173)
 
 Since v2.0.0

@@ -8,7 +8,7 @@ the provided `Order`.
 
 **When to use**
 
-Use this when you want to accumulate the maximum value across a collection or
+Use when you want to accumulate the maximum value across a collection or
 build a `Reducer` that tracks the running maximum.
 
 **Details**
@@ -40,6 +40,6 @@ console.log(Max.combine(1, 3))
 declare const max: <A>(order: Order.Order<A>) => Combiner<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Combiner.ts#L233)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Combiner.ts#L237)
 
 Since v4.0.0

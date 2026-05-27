@@ -5,6 +5,11 @@ Module: `Random`<br />
 
 Represents a service for generating pseudo-random numbers.
 
+**When to use**
+
+Use to access or provide the random-number generator service used by Effect
+programs.
+
 **Gotchas**
 
 The default implementation is based on `Math.random` and is not
@@ -33,6 +38,6 @@ const program = Effect.gen(function*() {
 declare const Random: Context.Reference<{ nextIntUnsafe(): number; nextDoubleUnsafe(): number; }>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Random.ts#L67)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Random.ts#L84)
 
 Since v2.0.0

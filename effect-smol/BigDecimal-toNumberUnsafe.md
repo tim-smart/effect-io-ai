@@ -5,6 +5,11 @@ Module: `BigDecimal`<br />
 
 Converts a `BigDecimal` to a JavaScript `number`.
 
+**When to use**
+
+Use when an interop boundary requires a JavaScript number and can tolerate
+precision loss.
+
 **Gotchas**
 
 This conversion is unsafe because the result can lose integer or fractional
@@ -20,12 +25,16 @@ import * as assert from "node:assert"
 assert.deepStrictEqual(BigDecimal.toNumberUnsafe(BigDecimal.fromStringUnsafe("123.456")), 123.456)
 ```
 
+**See**
+
+- `format` for preserving decimal precision as text
+
 **Signature**
 
 ```ts
 declare const toNumberUnsafe: (n: BigDecimal) => number
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigDecimal.ts#L1378)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigDecimal.ts#L1628)
 
 Since v4.0.0

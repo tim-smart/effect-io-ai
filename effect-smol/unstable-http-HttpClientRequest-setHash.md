@@ -11,6 +11,6 @@ Sets the URL fragment on a request without the leading `#`.
 declare const setHash: { (hash: string): (self: HttpClientRequest) => HttpClientRequest; (self: HttpClientRequest, hash: string): HttpClientRequest; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpClientRequest.ts#L589)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpClientRequest.ts#L610)
 
 Since v4.0.0

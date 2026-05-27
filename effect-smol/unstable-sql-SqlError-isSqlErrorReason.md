@@ -11,6 +11,6 @@ Returns `true` when a value is a `SqlErrorReason`.
 declare const isSqlErrorReason: (u: unknown) => u is SqlErrorReason
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SqlError.ts#L446)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SqlError.ts#L462)
 
 Since v4.0.0

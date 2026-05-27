@@ -6,6 +6,10 @@ Module: `Redacted`<br />
 Retrieves the original value from a `Redacted` instance. Use this function
 with caution, as it exposes the sensitive data.
 
+**When to use**
+
+Use when the underlying sensitive value is required at a trusted boundary.
+
 **Example** (Retrieving a redacted value)
 
 ```ts
@@ -23,6 +27,6 @@ assert.equal(Redacted.value(API_KEY), "1234567890")
 declare const value: <T>(self: Redacted<T>) => T
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Redacted.ts#L209)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Redacted.ts#L277)
 
 Since v3.3.0

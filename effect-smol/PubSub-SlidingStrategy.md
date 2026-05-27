@@ -46,6 +46,6 @@ const program = Effect.gen(function*() {
 declare class SlidingStrategy<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PubSub.ts#L2506)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PubSub.ts#L2580)
 
 Since v4.0.0

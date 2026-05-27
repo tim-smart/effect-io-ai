@@ -12,6 +12,6 @@ data buffer.
 declare const ImageData: Transferable<Schema.declare<ImageData, ImageData>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Transferable.ts#L174)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Transferable.ts#L188)
 
 Since v4.0.0

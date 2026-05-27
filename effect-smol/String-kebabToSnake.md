@@ -20,6 +20,6 @@ console.log(String.kebabToSnake("foo-bar-baz")) // "foo_bar_baz"
 declare const kebabToSnake: (self: string) => string
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L1145)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L1219)
 
 Since v2.0.0

@@ -12,6 +12,6 @@ methods for reading, adding, and clearing collected transferables.
 declare const makeCollectorUnsafe: () => Collector["Service"]
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Transferable.ts#L51)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Transferable.ts#L65)
 
 Since v4.0.0

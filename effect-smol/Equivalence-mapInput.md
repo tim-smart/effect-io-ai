@@ -7,7 +7,7 @@ Transforms an equivalence relation by mapping the input values before comparison
 
 **When to use**
 
-- Use when you need an equivalence for a complex type based on a single property
+Use when you need an equivalence for a complex type based on a single property
 - Use when you want to normalize values before comparison, such as case-insensitive strings
 - Use when creating equivalences that focus on specific fields of objects
 - Use as a building block for creating equivalences via `combine` or `combineAll`
@@ -70,6 +70,6 @@ console.log(caseInsensitiveEq("Hello", "World")) // false
 declare const mapInput: { <B, A>(f: (b: B) => A): (self: Equivalence<A>) => Equivalence<B>; <A, B>(self: Equivalence<A>, f: (b: B) => A): Equivalence<B>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Equivalence.ts#L522)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Equivalence.ts#L539)
 
 Since v2.0.0

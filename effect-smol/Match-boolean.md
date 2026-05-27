@@ -5,6 +5,10 @@ Module: `Match`<br />
 
 Matches values of type `boolean`.
 
+**When to use**
+
+Use to match primitive boolean values.
+
 **Details**
 
 This predicate refines unknown values to booleans, allowing pattern matching
@@ -32,12 +36,16 @@ console.log(describeTruthiness(0)) // "Falsy number"
 console.log(describeTruthiness(1)) // "Some other truthy value"
 ```
 
+**See**
+
+- `is` for matching specific literal boolean values
+
 **Signature**
 
 ```ts
 declare const boolean: Predicate.Refinement<unknown, boolean>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L1395)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L1510)
 
 Since v4.0.0

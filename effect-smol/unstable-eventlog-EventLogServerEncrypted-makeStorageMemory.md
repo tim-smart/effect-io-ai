@@ -16,6 +16,6 @@ released with the surrounding scope.
 declare const makeStorageMemory: Effect.Effect<{ readonly getId: Effect.Effect<RemoteId>; readonly getOrCreateSessionAuthBinding: (publicKey: string, signingPublicKey: Uint8Array<ArrayBuffer>) => Effect.Effect<Uint8Array<ArrayBuffer>>; readonly write: (publicKey: string, storeId: StoreId, entries: ReadonlyArray<PersistedEntry>) => Effect.Effect<ReadonlyArray<EncryptedRemoteEntry>>; readonly changes: (publicKey: string, storeId: StoreId, startSequence: number) => Stream.Stream<EncryptedRemoteEntry>; }, never, Scope.Scope>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventLogServerEncrypted.ts#L175)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventLogServerEncrypted.ts#L192)
 
 Since v4.0.0

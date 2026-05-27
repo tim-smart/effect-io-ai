@@ -3,8 +3,23 @@ Module: `ClusterSchema`<br />
 
 ## ClusterSchema.WithTransaction
 
-Whether to wrap the request with a storage transaction, so sql queries are
-committed atomically.
+Annotation that marks whether request handling should be wrapped in the
+configured message storage transaction.
+
+**When to use**
+
+Use when a request needs server-side handling or storage work wrapped in the
+storage transaction.
+
+**Details**
+
+The default value is `false`. When `true`, entity handling wraps server
+writes with the configured storage transaction.
+
+**Gotchas**
+
+This annotation has transactional behavior only when the configured
+`MessageStorage` implements it.
 
 **Signature**
 
@@ -12,6 +27,6 @@ committed atomically.
 declare const WithTransaction: Context.Reference<boolean>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ClusterSchema.ts#L58)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ClusterSchema.ts#L90)
 
 Since v4.0.0

@@ -31,6 +31,6 @@ assert.deepStrictEqual(result, [2, 0, 1])
 declare const values: <V>(self: Trie<V>) => IterableIterator<V>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Trie.ts#L242)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Trie.ts#L281)
 
 Since v2.0.0

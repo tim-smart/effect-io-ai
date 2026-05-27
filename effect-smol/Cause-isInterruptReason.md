@@ -7,7 +7,8 @@ Narrows a `Reason` to `Interrupt`.
 
 **When to use**
 
-Useful as a predicate for `Array.filter` when iterating over `cause.reasons`.
+Use as a predicate for `Array.filter` to pick out `Interrupt` reasons when
+iterating over `cause.reasons`.
 
 **Example** (filtering interrupt reasons)
 

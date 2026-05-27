@@ -11,6 +11,6 @@ Re-exports all named exports from the "./NodeHttpPlatform.ts" module as `NodeHtt
 export * as NodeHttpPlatform from "./NodeHttpPlatform.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L192)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L50)
 
 Since v4.0.0

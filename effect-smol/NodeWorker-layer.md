@@ -12,6 +12,6 @@ from the supplied worker or child-process spawning function.
 declare const layer: (spawn: (id: number) => WorkerThreads.Worker | ChildProcess.ChildProcess) => Layer.Layer<Worker.WorkerPlatform | Worker.Spawner>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeWorker.ts#L124)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeWorker.ts#L138)
 
 Since v4.0.0

@@ -7,7 +7,7 @@ Parses a raw Draft-2020-12 JSON Schema into a `Document<"draft-2020-12">`.
 
 **When to use**
 
-Use this when you already have a schema in Draft-2020-12 format.
+Use when you already have a schema in Draft-2020-12 format.
 
 **Details**
 
@@ -42,6 +42,6 @@ console.log(doc.definitions) // { PositiveInt: { type: "integer", minimum: 1 } }
 declare const fromSchemaDraft2020_12: (js: JsonSchema) => Document<"draft-2020-12">
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/JsonSchema.ts#L415)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/JsonSchema.ts#L469)
 
 Since v4.0.0

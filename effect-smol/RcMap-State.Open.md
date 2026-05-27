@@ -6,6 +6,11 @@ Module: `RcMap`<br />
 Represents the open/active state of an RcMap, containing the actual
 resource map that stores entries.
 
+**When to use**
+
+Use when handling an `RcMap` that can still accept operations and contains
+stored entries.
+
 **Signature**
 
 ```ts
@@ -15,6 +20,6 @@ export interface Open<K, A, E> {
   }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RcMap.ts#L105)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RcMap.ts#L132)
 
 Since v4.0.0

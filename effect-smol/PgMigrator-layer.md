@@ -11,6 +11,6 @@ Creates a layer that runs PostgreSQL migrations during layer construction, inclu
 declare const layer: <R>(options: Migrator.MigratorOptions<R>) => Layer.Layer<never, Migrator.MigrationError | SqlError, SqlClient | PgClient | ChildProcessSpawner.ChildProcessSpawner | FileSystem.FileSystem | Path.Path | R>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/sql/pg/src/PgMigrator.ts#L121)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/sql/pg/src/PgMigrator.ts#L137)
 
 Since v4.0.0

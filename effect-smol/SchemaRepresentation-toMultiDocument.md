@@ -8,7 +8,7 @@ representation.
 
 **When to use**
 
-Use this when an API expects a `MultiDocument` but you only have a single
+Use when an API expects a `MultiDocument` but you only have a single
 `Document`.
 
 **Details**
@@ -26,6 +26,6 @@ This is a pure function and does not mutate the input.
 declare const toMultiDocument: (document: Document) => MultiDocument
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaRepresentation.ts#L1733)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaRepresentation.ts#L1777)
 
 Since v4.0.0

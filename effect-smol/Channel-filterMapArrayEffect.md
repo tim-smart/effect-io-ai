@@ -18,6 +18,6 @@ from the effectful filter fail the returned channel.
 declare const filterMapArrayEffect: { <OutElem, B, X, EX, RX>(filter: Filter.FilterEffect<Types.NoInfer<OutElem>, B, X, EX, RX>): <OutErr, OutDone, InElem, InErr, InDone, Env>(self: Channel<Arr.NonEmptyReadonlyArray<OutElem>, OutErr, OutDone, InElem, InErr, InDone, Env>) => Channel<Arr.NonEmptyReadonlyArray<B>, OutErr | EX, OutDone, InElem, InErr, InDone, Env | RX>; <OutElem, OutErr, OutDone, InElem, InErr, InDone, Env, B, X, EX, RX>(self: Channel<Arr.NonEmptyReadonlyArray<OutElem>, OutErr, OutDone, InElem, InErr, InDone, Env>, filter: Filter.FilterEffect<OutElem, B, X, EX, RX>): Channel<Arr.NonEmptyReadonlyArray<B>, OutErr | EX, OutDone, InElem, InErr, InDone, Env | RX>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L3505)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L3543)
 
 Since v4.0.0

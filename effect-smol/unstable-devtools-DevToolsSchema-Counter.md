@@ -16,6 +16,6 @@ incremental updates.
 type Counter = Schema.Schema.Type<typeof Counter>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DevToolsSchema.ts#L308)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DevToolsSchema.ts#L316)
 
 Since v4.0.0

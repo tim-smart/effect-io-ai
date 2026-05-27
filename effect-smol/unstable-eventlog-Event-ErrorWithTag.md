@@ -11,6 +11,6 @@ Decoded error value type for the event in a union with the specified tag.
 type ErrorWithTag<Events, Tag> = Error<WithTag<Events, Tag>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Event.ts#L369)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Event.ts#L384)
 
 Since v4.0.0

@@ -8,9 +8,9 @@ accidental interchange of structurally identical values.
 
 **When to use**
 
-Define your newtype as an `interface` extending
-`Newtype<"MyKey", CarrierType>` when you need two structurally identical
-carrier types to remain distinct in TypeScript.
+Use to define a newtype as an `interface` extending
+`Newtype<"MyKey", CarrierType>` when structurally identical carrier types
+should remain distinct in TypeScript.
 
 **Details**
 

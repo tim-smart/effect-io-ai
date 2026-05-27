@@ -11,6 +11,6 @@ Re-exports all named exports from the "./LanguageModel.ts" module as `LanguageMo
 export * as LanguageModel from "./LanguageModel.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L282)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L35)
 
 Since v4.0.0

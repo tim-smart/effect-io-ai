@@ -7,7 +7,7 @@ A rpc serialization layer that uses NDJSON for serialization.
 
 **When to use**
 
-Use this if your protocol does not support framing for messages, otherwise
+Use when you use this if your protocol does not support framing for messages, otherwise
 use `layerJson`.
 
 **Signature**
@@ -16,6 +16,6 @@ use `layerJson`.
 declare const layerNdjson: Layer.Layer<RpcSerialization, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RpcSerialization.ts#L521)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RpcSerialization.ts#L531)
 
 Since v4.0.0

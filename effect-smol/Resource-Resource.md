@@ -6,6 +6,18 @@ Module: `Resource`<br />
 A `Resource` is a value loaded into memory that can be refreshed manually or
 automatically according to a schedule.
 
+**When to use**
+
+Use to model a scoped value whose latest acquisition result is kept available
+for repeated reads and can be refreshed manually or on a schedule.
+
+**See**
+
+- `manual` for creating a resource refreshed by the caller
+- `auto` for creating a resource refreshed according to a schedule
+- `get` for reading the currently stored acquisition result
+- `refresh` for forcing a new acquisition
+
 **Signature**
 
 ```ts
@@ -16,6 +28,6 @@ export interface Resource<in out A, in out E = never> extends Pipeable {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Resource.ts#L56)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Resource.ts#L66)
 
 Since v2.0.0

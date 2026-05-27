@@ -11,6 +11,6 @@ Schema codec for `MultiDocument`.
 declare const $MultiDocument: Schema.Struct<{ readonly representations: Schema.NonEmptyArray<$Representation>; readonly references: Schema.$Record<Schema.String, $Representation>; }>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaRepresentation.ts#L1612)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaRepresentation.ts#L1656)
 
 Since v4.0.0

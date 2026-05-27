@@ -33,6 +33,6 @@ const program = Effect.gen(function*() {
 declare const sliding: <A = never>(capacity: number) => Effect.Effect<TxPubSub<A>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxPubSub.ts#L194)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxPubSub.ts#L234)
 
 Since v2.0.0

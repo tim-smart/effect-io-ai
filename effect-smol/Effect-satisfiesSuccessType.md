@@ -7,8 +7,8 @@ Ensures that an effect's success type extends a given type `A`.
 
 **Details**
 
-This function provides compile-time type checking to ensure that the success
-value of an effect conforms to a specific type constraint.
+This helper is checked at compile time and does not change the effect's
+runtime behavior.
 
 **Example** (Constraining the success type)
 
@@ -33,6 +33,6 @@ const validEffect = satisfiesNumber(Effect.succeed(42))
 declare const satisfiesSuccessType: <A>() => <A2 extends A, E, R>(effect: Effect<A2, E, R>) => Effect<A2, E, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L14300)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L14865)
 
 Since v4.0.0

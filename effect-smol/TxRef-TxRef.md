@@ -5,6 +5,11 @@ Module: `TxRef`<br />
 
 TxRef is a transactional value, it can be read and modified within the body of a transaction.
 
+**When to use**
+
+Use to store mutable state that must be read and modified inside Effect
+transactions.
+
 **Details**
 
 Accessed values are tracked by the transaction in order to detect conflicts and in order to
@@ -44,6 +49,6 @@ export interface TxRef<in out A> extends Pipeable {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxRef.ts#L52)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxRef.ts#L110)
 
 Since v4.0.0

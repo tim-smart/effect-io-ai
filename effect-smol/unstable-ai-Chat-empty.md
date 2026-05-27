@@ -7,7 +7,7 @@ Creates a new Chat service with empty conversation history.
 
 **When to use**
 
-This is the most common way to start a fresh chat session without
+Use when this is the most common way to start a fresh chat session without
 any initial context or system prompts.
 
 **Example** (Creating an empty chat)
@@ -35,6 +35,6 @@ const freshChat = Effect.gen(function*() {
 declare const empty: Effect.Effect<Service, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chat.ts#L509)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chat.ts#L528)
 
 Since v4.0.0

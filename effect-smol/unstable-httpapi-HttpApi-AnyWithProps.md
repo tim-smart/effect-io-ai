@@ -12,6 +12,6 @@ runtime properties used by implementation helpers.
 type AnyWithProps = HttpApi<string, HttpApiGroup.AnyWithProps>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApi.ts#L129)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApi.ts#L153)
 
 Since v4.0.0

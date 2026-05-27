@@ -5,11 +5,20 @@ Module: `ScopedCache`<br />
 
 A single scoped cache entry.
 
+**When to use**
+
+Use when inspecting the open state of a `ScopedCache` and you need the stored
+deferred result, entry scope, or expiration timestamp for a key.
+
 **Details**
 
 The entry contains the deferred lookup result shared by readers, the scope
 that owns resources acquired while computing the value, and an optional
 expiration time in milliseconds. Removing the entry closes its scope.
+
+**See**
+
+- `State` for the open/closed cache state that stores entries by key
 
 **Signature**
 
@@ -21,6 +30,6 @@ export interface Entry<A, E> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ScopedCache.ts#L100)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ScopedCache.ts#L119)
 
 Since v4.0.0

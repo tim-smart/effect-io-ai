@@ -16,6 +16,6 @@ survives normal entity restarts.
 declare const KeepAliveRpc: Rpc.Rpc<"Cluster/Entity/keepAlive", Void, Void, Never, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Entity.ts#L758)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Entity.ts#L775)
 
 Since v4.0.0

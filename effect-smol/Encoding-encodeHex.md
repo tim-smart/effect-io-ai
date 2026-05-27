@@ -5,6 +5,10 @@ Module: `Encoding`<br />
 
 Encodes the given value into a hex `string`.
 
+**When to use**
+
+Use to encode text or bytes as lowercase hexadecimal text.
+
 **Example** (Encoding hex strings and bytes)
 
 ```ts
@@ -24,6 +28,6 @@ console.log(Encoding.encodeHex(bytes)) // "48656c6c6f"
 declare const encodeHex: (input: Uint8Array | string) => string
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Encoding.ts#L325)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Encoding.ts#L450)
 
 Since v2.0.0

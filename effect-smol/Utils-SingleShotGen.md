@@ -7,10 +7,9 @@ An `IterableIterator` that yields its wrapped value exactly once.
 
 **When to use**
 
-Implement `[Symbol.iterator]()` on Effect-like types so they can be
+Use to implement `[Symbol.iterator]()` on Effect-like types so they can be
 `yield*`-ed inside generator functions, such as `Effect.gen` and
-`Option.gen`. You almost never construct this directly — it is created
-internally by yieldable types.
+`Option.gen`.
 
 **Details**
 
@@ -38,7 +37,7 @@ console.log(gen.next(42))
 
 **See**
 
-- `Gen` — the type-level signature that relies on `SingleShotGen`
+- `Gen` for the type-level signature that relies on `SingleShotGen`
 
 **Signature**
 
@@ -46,6 +45,6 @@ console.log(gen.next(42))
 declare class SingleShotGen<T, A> { constructor(self: T) }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Utils.ts#L101)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Utils.ts#L100)
 
 Since v2.0.0

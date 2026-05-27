@@ -5,6 +5,10 @@ Module: `Symbol`<br />
 
 Tests if a value is a `symbol`.
 
+**When to use**
+
+Use to validate unknown input before treating it as a JavaScript `symbol`.
+
 **Example** (Checking for symbols)
 
 ```ts
@@ -20,6 +24,6 @@ console.log(Symbol.isSymbol("a")) // false
 declare const isSymbol: (u: unknown) => u is symbol
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Symbol.ts#L30)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Symbol.ts#L48)
 
 Since v2.0.0

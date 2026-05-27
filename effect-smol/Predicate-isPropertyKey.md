@@ -7,7 +7,7 @@ Checks whether a value is a valid `PropertyKey` (string, number, or symbol).
 
 **When to use**
 
-- You need to guard unknown keys before indexing.
+Use when you need to guard unknown keys before indexing.
 
 **Details**
 
@@ -39,6 +39,6 @@ if (Predicate.isPropertyKey(key) && key in obj) {
 declare const isPropertyKey: (u: unknown) => u is PropertyKey
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L744)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L769)
 
 Since v4.0.0

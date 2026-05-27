@@ -14,6 +14,6 @@ type PreResponseHandler = (
 ) => Effect.Effect<HttpServerResponse, HttpServerError>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpEffect.ts#L189)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpEffect.ts#L206)
 
 Since v4.0.0

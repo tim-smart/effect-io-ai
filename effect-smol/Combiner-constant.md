@@ -8,7 +8,7 @@ given constant value.
 
 **When to use**
 
-Use this when a combiner should produce a fixed result regardless of input,
+Use when a combiner should produce a fixed result regardless of input,
 or when a generic API needs a combiner but the combined value is
 predetermined.
 
@@ -39,6 +39,6 @@ console.log(Zero.combine(42, 99))
 declare const constant: <A>(a: A) => Combiner<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Combiner.ts#L332)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Combiner.ts#L336)
 
 Since v4.0.0

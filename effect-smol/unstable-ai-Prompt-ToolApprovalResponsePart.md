@@ -7,7 +7,7 @@ Content part representing a user's response to a tool approval request.
 
 **When to use**
 
-Use this part in tool messages to approve or deny tool execution when tools
+Use when you use this part in tool messages to approve or deny tool execution when tools
 have the `needsApproval` property set.
 
 **Example** (Creating tool approval responses)
@@ -52,6 +52,6 @@ export interface ToolApprovalResponsePart extends BasePart<"tool-approval-respon
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L800)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L807)
 
 Since v4.0.0

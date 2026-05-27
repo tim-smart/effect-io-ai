@@ -6,6 +6,10 @@ Module: `References`<br />
 Reference for setting the minimum log level threshold. Log entries below this
 level will be filtered out completely.
 
+**When to use**
+
+Use to filter out log entries below a severity threshold.
+
 **Example** (Setting the minimum log level)
 
 ```ts
@@ -55,6 +59,6 @@ const configureMinimumLogging = Effect.gen(function*() {
 declare const MinimumLogLevel: Context.Reference<LogLevel>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/References.ts#L342)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/References.ts#L482)
 
 Since v4.0.0

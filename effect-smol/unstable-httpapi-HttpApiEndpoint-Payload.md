@@ -24,6 +24,6 @@ type Payload<Endpoint> = Endpoint extends HttpApiEndpoint<
   : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiEndpoint.ts#L351)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiEndpoint.ts#L379)
 
 Since v4.0.0

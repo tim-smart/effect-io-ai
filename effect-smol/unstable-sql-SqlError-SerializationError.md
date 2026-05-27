@@ -12,6 +12,6 @@ marked retryable.
 declare class SerializationError
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SqlError.ts#L236)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SqlError.ts#L252)
 
 Since v4.0.0

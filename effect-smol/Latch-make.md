@@ -5,6 +5,10 @@ Module: `Latch`<br />
 
 Creates a `Latch` inside `Effect`.
 
+**When to use**
+
+Use to create a latch for coordinating fibers inside Effect code.
+
 **Details**
 
 The latch starts closed by default; pass `true` to create it open.
@@ -33,12 +37,16 @@ const program = Effect.gen(function*() {
 })
 ```
 
+**See**
+
+- `makeUnsafe` for synchronous allocation outside Effect code
+
 **Signature**
 
 ```ts
 declare const make: (open?: boolean | undefined) => Effect.Effect<Latch>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Latch.ts#L159)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Latch.ts#L224)
 
 Since v4.0.0

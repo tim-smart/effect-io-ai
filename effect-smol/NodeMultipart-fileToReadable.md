@@ -12,6 +12,6 @@ the Node multipart parser.
 declare const fileToReadable: (file: Multipart.File) => Readable
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeMultipart.ts#L90)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeMultipart.ts#L105)
 
 Since v4.0.0

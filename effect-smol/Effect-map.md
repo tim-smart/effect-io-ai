@@ -5,6 +5,12 @@ Module: `Effect`<br />
 
 Transforms the value inside an effect by applying a function to it.
 
+**When to use**
+
+Use to transform an effect's success value with a function that returns a
+plain value, producing a new effect without changing the original effect's
+typed error or context requirements.
+
 **Details**
 
 `map` takes a function and applies it to the value contained within an
@@ -57,6 +63,6 @@ Effect.runPromise(finalAmount).then(console.log)
 declare const map: { <A, B>(f: (a: A) => B): <E, R>(self: Effect<A, E, R>) => Effect<B, E, R>; <A, E, R, B>(self: Effect<A, E, R>, f: (a: A) => B): Effect<B, E, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L2221)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L2361)
 
 Since v2.0.0

@@ -12,6 +12,6 @@ Generates a new event-log identity using the configured
 declare const makeIdentity: Effect.Effect<{ readonly publicKey: string; readonly privateKey: Redacted.Redacted<Uint8Array<ArrayBuffer>>; }, never, EventLogEncryption.EventLogEncryption>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventLog.ts#L490)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventLog.ts#L504)
 
 Since v4.0.0

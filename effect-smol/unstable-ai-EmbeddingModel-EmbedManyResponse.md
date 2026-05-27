@@ -3,7 +3,17 @@ Module: `EmbeddingModel`<br />
 
 ## EmbeddingModel.EmbedManyResponse
 
-Response for multiple embeddings.
+Batch embedding response containing per-input embeddings and usage metadata.
+
+**Details**
+
+`embeddings` preserves batch order, and `usage` carries token metadata for
+the operation.
+
+**See**
+
+- `EmbedResponse` for individual embedding responses
+- `EmbeddingUsage` for token usage metadata
 
 **Signature**
 
@@ -11,6 +21,6 @@ Response for multiple embeddings.
 declare class EmbedManyResponse
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EmbeddingModel.ts#L76)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EmbeddingModel.ts#L138)
 
 Since v4.0.0

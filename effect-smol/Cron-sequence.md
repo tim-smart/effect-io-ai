@@ -5,6 +5,10 @@ Module: `Cron`<br />
 
 Returns an infinite iterator that yields dates matching the Cron schedule.
 
+**When to use**
+
+Use to lazily iterate future occurrences of a cron schedule.
+
 **Details**
 
 The iterator generates an infinite sequence of dates when the cron schedule
@@ -26,12 +30,16 @@ console.log(next5)
 // [Mon Jan 02 2023 09:00:00, Tue Jan 03 2023 09:00:00, ...]
 ```
 
+**See**
+
+- `next` for computing one next occurrence
+
 **Signature**
 
 ```ts
 declare const sequence: (cron: Cron, now?: DateTime.DateTime.Input) => IterableIterator<Date>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cron.ts#L907)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cron.ts#L989)
 
 Since v2.0.0

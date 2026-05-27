@@ -6,6 +6,11 @@ Module: `Predicate`<br />
 Checks whether a value is a non-null, non-array object and narrows it to a
 readonly indexable object type.
 
+**When to use**
+
+Use to narrow unknown input to a readonly view of a non-null, non-array
+object.
+
 **Details**
 
 Readonly-ness is a TypeScript type-level view; it is not observable at
@@ -32,6 +37,6 @@ console.log(Predicate.isReadonlyObject(data))
 declare const isReadonlyObject: (input: unknown) => input is { readonly [x: PropertyKey]: unknown; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L1109)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L1143)
 
 Since v4.0.0

@@ -24,6 +24,6 @@ const program = Console.consoleWith((console) =>
 declare const consoleWith: <A, E, R>(f: (console: Console) => Effect.Effect<A, E, R>) => Effect.Effect<A, E, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Console.ts#L150)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Console.ts#L161)
 
 Since v2.0.0

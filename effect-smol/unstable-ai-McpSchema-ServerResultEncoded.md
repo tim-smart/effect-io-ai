@@ -11,6 +11,6 @@ Encoded server response to a client request, either success or failure.
 type ServerResultEncoded = ServerSuccessEncoded | ServerFailureEncoded
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L2321)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L2329)
 
 Since v4.0.0

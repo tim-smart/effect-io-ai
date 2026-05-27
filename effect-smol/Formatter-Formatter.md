@@ -7,7 +7,7 @@ A callable interface representing a function that converts a `Value` into a `For
 
 **When to use**
 
-Use `Formatter` when you want to type a formatting or rendering function generically, or when you are building a pipeline that accepts pluggable formatters.
+Use when you want to type a formatting or rendering function generically, or when you are building a pipeline that accepts pluggable formatters.
 
 **Details**
 

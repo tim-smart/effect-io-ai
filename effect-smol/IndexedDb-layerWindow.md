@@ -11,6 +11,6 @@ Layer that provides `IndexedDb` from `window.indexedDB` and `window.IDBKeyRange`
 declare const layerWindow: Layer.Layer<IndexedDb, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDb.ts#L101)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDb.ts#L113)
 
 Since v4.0.0

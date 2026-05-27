@@ -8,7 +8,7 @@ Returns the first typed error value `E` from a cause wrapped in
 
 **When to use**
 
-This is the `Option`-returning variant of `findError` for code that
+Use when this is the `Option`-returning variant of `findError` for code that
 does not need the original cause returned in a failed `Result`.
 
 **Example** (extracting an error as Option)
@@ -25,7 +25,7 @@ console.log(Option.isNone(none)) // true
 
 **See**
 
-- `findError` — `Filter`-based variant
+- `findError` — `Result`-based variant
 
 **Signature**
 
@@ -33,6 +33,6 @@ console.log(Option.isNone(none)) // true
 declare const findErrorOption: <E>(input: Cause<E>) => Option<E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L867)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L936)
 
 Since v4.0.0

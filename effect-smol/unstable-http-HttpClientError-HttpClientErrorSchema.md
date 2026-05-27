@@ -11,6 +11,6 @@ Serializable schema representation of an `HttpClientError`, preserving the speci
 declare class HttpClientErrorSchema
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpClientError.ts#L305)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpClientError.ts#L321)
 
 Since v4.0.0

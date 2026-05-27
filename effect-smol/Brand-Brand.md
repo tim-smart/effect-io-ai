@@ -5,6 +5,17 @@ Module: `Brand`<br />
 
 A generic interface that defines a branded type.
 
+**When to use**
+
+Use to define a branded type such as `number & Brand<"Positive">` when
+TypeScript should keep structurally identical values separate without
+changing their runtime value.
+
+**See**
+
+- `Branded` for applying a brand key to a base type
+- `Constructor` for validating or constructing branded values
+
 **Signature**
 
 ```ts
@@ -15,6 +26,6 @@ export interface Brand<in out Keys extends string> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Brand.ts#L24)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Brand.ts#L79)
 
 Since v2.0.0

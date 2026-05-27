@@ -27,6 +27,6 @@ export interface WorkerRunner<O = unknown, I = unknown> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/WorkerRunner.ts#L37)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/WorkerRunner.ts#L48)
 
 Since v4.0.0

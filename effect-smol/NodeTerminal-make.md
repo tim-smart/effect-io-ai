@@ -13,6 +13,6 @@ key input should end.
 declare const make: (shouldQuit?: (input: Terminal.UserInput) => boolean) => Effect.Effect<Terminal.Terminal, never, Scope.Scope>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeTerminal.ts#L41)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeTerminal.ts#L54)
 
 Since v4.0.0

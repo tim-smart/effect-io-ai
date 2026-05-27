@@ -5,6 +5,10 @@ Module: `Cron`<br />
 
 Represents an error that occurs when parsing a cron expression fails.
 
+**When to use**
+
+Use to handle invalid cron expression failures returned by `parse`.
+
 **Details**
 
 This error provides information about what went wrong during parsing,
@@ -23,12 +27,17 @@ if (Result.isFailure(result)) {
 }
 ```
 
+**See**
+
+- `parse` for the parser that returns this error in `Result.fail`
+- `isCronParseError` for narrowing unknown values to this error type
+
 **Signature**
 
 ```ts
 declare class CronParseError
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cron.ts#L486)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cron.ts#L516)
 
 Since v4.0.0

@@ -5,6 +5,10 @@ Module: `Effect`<br />
 
 Combines two effects into a single effect, producing a tuple with the results of both effects.
 
+**When to use**
+
+Use to combine exactly two effects into a tuple.
+
 **Details**
 
 The `zip` function executes the first effect (left) and then the second effect (right).
@@ -69,7 +73,7 @@ Effect.runPromise(program).then(console.log)
 **See**
 
 - `zipWith` for a version that combines the results with a custom function.
-- `validate` for a version that accumulates errors.
+- `all` for collecting a larger structure of effects.
 
 **Signature**
 
@@ -77,6 +81,6 @@ Effect.runPromise(program).then(console.log)
 declare const zip: { <A2, E2, R2>(that: Effect<A2, E2, R2>, options?: { readonly concurrent?: boolean | undefined; } | undefined): <A, E, R>(self: Effect<A, E, R>) => Effect<[A, A2], E2 | E, R2 | R>; <A, E, R, A2, E2, R2>(self: Effect<A, E, R>, that: Effect<A2, E2, R2>, options?: { readonly concurrent?: boolean | undefined; }): Effect<[A, A2], E | E2, R | R2>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L2400)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L2553)
 
 Since v2.0.0

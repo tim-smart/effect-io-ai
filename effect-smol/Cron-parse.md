@@ -6,6 +6,11 @@ Module: `Cron`<br />
 Parses a cron expression into a `Cron` instance, returning a `Result` instead
 of throwing.
 
+**When to use**
+
+Use to parse cron expressions from configuration or user input while handling
+invalid input as a `Result`.
+
 **Details**
 
 The expression may contain five fields, where seconds default to `0`, or six
@@ -33,12 +38,17 @@ assert.deepStrictEqual(
 )
 ```
 
+**See**
+
+- `parseUnsafe` for throwing on invalid cron expressions
+- `make` for constructing a schedule from explicit field constraints
+
 **Signature**
 
 ```ts
 declare const parse: (cron: string, tz?: DateTime.TimeZone | string) => Result.Result<Cron, CronParseError>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cron.ts#L556)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cron.ts#L601)
 
 Since v2.0.0

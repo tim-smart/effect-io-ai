@@ -6,6 +6,19 @@ Module: `Brand`<br />
 A constructor for a branded type that provides validation and safe
 construction methods.
 
+**When to use**
+
+Use as the shared callable interface for branded values when an API accepts
+or returns a brand constructor and callers need throwing, `Option`, `Result`,
+or type-guard validation forms.
+
+**See**
+
+- `nominal` for a constructor without runtime validation
+- `make` for creating a constructor from a validation predicate
+- `check` for creating a constructor from schema checks
+- `all` for combining brand constructors
+
 **Signature**
 
 ```ts
@@ -41,6 +54,6 @@ export interface Constructor<in out B extends Brand<any>> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Brand.ts#L37)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Brand.ts#L103)
 
 Since v2.0.0

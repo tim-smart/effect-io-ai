@@ -19,9 +19,9 @@ const encode = SchemaGetter.encodeBase64Url<Uint8Array>()
 
 **See**
 
-- `decodeBase64Url` - inverse (to `Uint8Array`)
-- `decodeBase64UrlString` - inverse (to `string`)
-- `encodeBase64` - standard Base64 variant
+- `decodeBase64Url` for the inverse operation to `Uint8Array`
+- `decodeBase64UrlString` for the inverse operation to `string`
+- `encodeBase64` for the standard Base64 variant
 
 **Signature**
 

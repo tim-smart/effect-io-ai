@@ -12,6 +12,6 @@ server response, it renders as an empty response with status 410.
 declare class Gone
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiError.ts#L293)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiError.ts#L313)
 
 Since v4.0.0

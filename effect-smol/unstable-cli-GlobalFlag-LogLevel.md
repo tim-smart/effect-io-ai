@@ -12,6 +12,6 @@ Sets the minimum log level for the command.
 declare const LogLevel: Setting<"log-level", Option.Option<LogLevelType>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/GlobalFlag.ts#L227)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/GlobalFlag.ts#L235)
 
 Since v4.0.0

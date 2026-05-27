@@ -8,7 +8,7 @@ Decodes a Base64-encoded `string` into a `Uint8Array` and encodes a
 
 **When to use**
 
-- Handling binary data transmitted as Base64 strings (e.g. file uploads,
+Use when handling binary data transmitted as Base64 strings (e.g. file uploads,
   API payloads).
 
 **Details**

@@ -7,7 +7,7 @@ Creates a predicate that returns `true` if any predicate in the collection retur
 
 **When to use**
 
-- You have a dynamic list of predicates and only need one to pass.
+Use when you have a dynamic list of predicates and only need one to pass.
 
 **Details**
 
@@ -36,6 +36,6 @@ console.log(anyCheck("ok"))
 declare const some: <A>(collection: Iterable<Predicate<A>>) => Predicate<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L1926)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L1960)
 
 Since v2.0.0

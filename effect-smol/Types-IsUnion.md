@@ -5,6 +5,10 @@ Module: `Types`<br />
 
 Checks whether a type `T` is a union type.
 
+**When to use**
+
+Use to branch type-level logic depending on whether a type is a union.
+
 **Details**
 
 - Compares `[T]` against `[UnionToIntersection<T>]`. If they differ, `T`
@@ -31,6 +35,6 @@ type No = Types.IsUnion<string> // false
 type IsUnion<T> = [T] extends [UnionToIntersection<T>] ? false : true
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Types.ts#L914)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Types.ts#L959)
 
 Since v4.0.0

@@ -5,6 +5,11 @@ Module: `MutableRef`<br />
 
 Toggles a boolean MutableRef (true becomes false, false becomes true) and returns the reference.
 
+**When to use**
+
+Use to flip a boolean reference in place when you want the same reference
+back.
+
 **Example** (Toggling boolean refs)
 
 ```ts
@@ -46,6 +51,6 @@ console.log(result === flag) // true
 declare const toggle: (self: MutableRef<boolean>) => MutableRef<boolean>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableRef.ts#L764)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableRef.ts#L838)
 
 Since v2.0.0

@@ -45,6 +45,6 @@ const program = Effect.gen(function*() {
 declare const withLeveledConsole: <Message, Output>(self: Logger<Message, Output>) => Logger<Message, void>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Logger.ts#L413)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Logger.ts#L427)
 
 Since v3.8.0

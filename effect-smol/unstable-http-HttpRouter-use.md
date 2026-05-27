@@ -8,7 +8,7 @@ supplied effect.
 
 **When to use**
 
-Use it to register routes or middleware with the router during layer
+Use when you use it to register routes or middleware with the router during layer
 construction.
 
 **Example** (Registering routes during layer construction)
@@ -30,6 +30,6 @@ const MyRoute = Layer.effectDiscard(Effect.gen(function*() {
 declare const use: <A, E, R>(f: (router: HttpRouter) => Effect.Effect<A, E, R>) => Layer.Layer<never, E, HttpRouter | Exclude<R, Scope.Scope>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpRouter.ts#L469)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpRouter.ts#L492)
 
 Since v4.0.0

@@ -7,7 +7,7 @@ A Counter metric that tracks cumulative values that typically only increase.
 
 **When to use**
 
-Counters are useful for tracking monotonically increasing values like request counts,
+Use when counters are useful for tracking monotonically increasing values like request counts,
 bytes processed, errors encountered, or any value that accumulates over time.
 
 **Example** (Using counter metrics)

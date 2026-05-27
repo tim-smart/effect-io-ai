@@ -11,6 +11,6 @@ Type of a devtools span status, either started or ended.
 type SpanStatus = Schema.Schema.Type<typeof SpanStatus>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DevToolsSchema.ts#L93)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DevToolsSchema.ts#L101)
 
 Since v4.0.0

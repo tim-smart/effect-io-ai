@@ -5,6 +5,11 @@ Module: `Pool`<br />
 
 Makes a new pool of the specified fixed size.
 
+**When to use**
+
+Use to create a fixed-size pool when you know the exact number of resources
+needed upfront, without growth or shrinkage.
+
 **Details**
 
 The pool is returned in a `Scope`, which governs the lifetime of the pool.
@@ -21,12 +26,17 @@ items are fully utilized.
 A `targetUtilization` of 0.5 will create new pool items when the existing items are
 50% utilized.
 
+**See**
+
+- `makeWithTTL` for pools with min/max sizes and a TTL-based shrinking policy
+- `makeWithStrategy` for pools with a custom resizing and reclamation strategy
+
 **Signature**
 
 ```ts
 declare const make: <A, E, R>(options: { readonly acquire: Effect.Effect<A, E, R>; readonly size: number; readonly concurrency?: number | undefined; readonly targetUtilization?: number | undefined; }) => Effect.Effect<Pool<A, E>, never, R | Scope.Scope>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Pool.ts#L178)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Pool.ts#L257)
 
 Since v2.0.0

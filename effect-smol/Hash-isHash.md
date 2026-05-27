@@ -5,6 +5,10 @@ Module: `Hash`<br />
 
 Checks if a value implements the Hash interface.
 
+**When to use**
+
+Use to detect whether an unknown value provides a custom hash implementation.
+
 **Details**
 
 This function determines whether a given value has the Hash symbol property,
@@ -33,6 +37,6 @@ console.log(Hash.isHash("string")) // false
 declare const isHash: (u: unknown) => u is Hash
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Hash.ts#L265)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Hash.ts#L346)
 
 Since v2.0.0

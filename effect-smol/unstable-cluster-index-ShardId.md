@@ -11,6 +11,6 @@ Re-exports all named exports from the "./ShardId.ts" module as `ShardId`.
 export * as ShardId from "./ShardId.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L731)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L140)
 
 Since v4.0.0

@@ -13,6 +13,6 @@ as `_<id>_<name>Js`, `_<id>_<name>Ts`, `_<id>_<name>Mjs`, or
 declare const fromBabelGlob: (migrations: Record<string, any>) => Loader
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Migrator.ts#L375)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Migrator.ts#L396)
 
 Since v4.0.0

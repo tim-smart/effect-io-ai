@@ -6,6 +6,11 @@ Module: `PartitionedSemaphore`<br />
 A `PartitionedSemaphore` controls access to a shared permit pool while
 tracking waiters by partition key.
 
+**When to use**
+
+Use to coordinate shared permits across partition keys so waiting groups make
+progress without one group monopolizing the pool.
+
 **Details**
 
 Waiting permits are distributed across partitions in round-robin order.
@@ -30,6 +35,6 @@ export interface PartitionedSemaphore<in K> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PartitionedSemaphore.ts#L81)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PartitionedSemaphore.ts#L94)
 
 Since v3.19.4

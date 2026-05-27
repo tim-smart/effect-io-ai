@@ -7,7 +7,7 @@ Decodes a base64 (URL) encoded `string` into a UTF-8 `string` and encodes it bac
 
 **When to use**
 
-- Handling text data transmitted as Base64 URL-safe strings.
+Use when handling text data transmitted as Base64 URL-safe strings.
 
 **Details**
 

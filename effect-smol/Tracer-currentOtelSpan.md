@@ -18,6 +18,6 @@ conforms to the OpenTelemetry `Span` interface.
 declare const currentOtelSpan: Effect.Effect<Otel.Span, Cause.NoSuchElementError, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Tracer.ts#L252)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Tracer.ts#L262)
 
 Since v4.0.0

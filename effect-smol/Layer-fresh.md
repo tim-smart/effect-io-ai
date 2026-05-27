@@ -7,7 +7,7 @@ Creates a fresh version of this layer that will not be shared.
 
 **When to use**
 
-Use `fresh` when two parts of an application must receive separate instances
+Use when two parts of an application must receive separate instances
 of a resource, such as two independent client sessions. Do not use it just to
 work around confusing composition: by default, sharing the same layer value is
 usually the desired behavior.
@@ -84,6 +84,6 @@ Effect.runPromise(program)
 declare const fresh: <A, E, R>(self: Layer<A, E, R>) => Layer<A, E, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L2029)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L2133)
 
 Since v2.0.0

@@ -3,8 +3,17 @@ Module: `Deferred`<br />
 
 ## Deferred.isDoneUnsafe
 
-Returns `true` if this `Deferred` has already been completed with a value or
-an error, `false` otherwise.
+Synchronously returns whether this `Deferred` has already been completed.
+
+**When to use**
+
+Use to check `Deferred` completion synchronously in code that cannot return
+an `Effect`, such as low-level integration code.
+
+**See**
+
+- `isDone` for checking completion inside `Effect`
+- `poll` for reading the completed effect when available
 
 **Signature**
 
@@ -12,6 +21,6 @@ an error, `false` otherwise.
 declare const isDoneUnsafe: <A, E>(self: Deferred<A, E>) => boolean
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Deferred.ts#L661)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Deferred.ts#L758)
 
 Since v4.0.0

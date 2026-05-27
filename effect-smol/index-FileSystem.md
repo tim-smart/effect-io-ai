@@ -11,6 +11,6 @@ Re-exports all named exports from the "./FileSystem.ts" module as `FileSystem`.
 export * as FileSystem from "./FileSystem.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L1847)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L212)
 
 Since v4.0.0

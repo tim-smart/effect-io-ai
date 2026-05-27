@@ -7,7 +7,7 @@ Creates a `Reducer` for combining `Order` instances, useful for aggregating orde
 
 **When to use**
 
-- When you need to combine multiple orders from a collection using reducer patterns
+Use when when you need to combine multiple orders from a collection using reducer patterns
 - When implementing fold operations over collections of orders
 - When working with reducers that operate on orders
 
@@ -32,9 +32,9 @@ console.log(combined(1, 2)) // -1 (uses first order)
 
 **See**
 
-- `combine` - Combine two orders
-- `combineAll` - Combine multiple orders
-- `Reducer` - Reducer type for collection operations
+- `combine` to combine two orders
+- `combineAll` to combine multiple orders
+- `Reducer` for reducing orders as a collection operation
 
 **Signature**
 
@@ -42,6 +42,6 @@ console.log(combined(1, 2)) // -1 (uses first order)
 declare const makeReducer: <A>() => Reducer.Reducer<Order<A>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Order.ts#L1093)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Order.ts#L1122)
 
 Since v4.0.0

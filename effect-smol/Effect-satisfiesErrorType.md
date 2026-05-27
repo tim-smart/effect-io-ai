@@ -7,8 +7,8 @@ Ensures that an effect's error type extends a given type `E`.
 
 **Details**
 
-This function provides compile-time type checking to ensure that the error
-type of an effect conforms to a specific type constraint.
+This helper is checked at compile time and does not change the effect's
+runtime behavior.
 
 **Example** (Constraining the error type)
 
@@ -35,6 +35,6 @@ const validEffect = satisfiesError(Effect.fail(new ValidationError()))
 declare const satisfiesErrorType: <E>() => <A, E2 extends E, R>(effect: Effect<A, E2, R>) => Effect<A, E2, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L14332)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L14897)
 
 Since v4.0.0

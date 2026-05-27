@@ -18,6 +18,6 @@ type Input = | CoercibleRecordInput
   | URLSearchParams
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/UrlParams.ts#L80)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/UrlParams.ts#L95)
 
 Since v4.0.0

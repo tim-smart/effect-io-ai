@@ -12,6 +12,6 @@ retry directives.
 type AnyEvent = Event | Retry
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Sse.ts#L555)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Sse.ts#L576)
 
 Since v4.0.0

@@ -5,6 +5,11 @@ Module: `PrimaryKey`<br />
 
 Extracts the string value from a `PrimaryKey`.
 
+**When to use**
+
+Use to read the stable string identifier from a value that implements
+`PrimaryKey`.
+
 **Example** (Reading primary key values)
 
 ```ts
@@ -34,6 +39,6 @@ console.log(PrimaryKey.value(simpleKey)) // "simple-key-123"
 declare const value: (self: PrimaryKey) => string
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PrimaryKey.ts#L97)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PrimaryKey.ts#L163)
 
 Since v2.0.0

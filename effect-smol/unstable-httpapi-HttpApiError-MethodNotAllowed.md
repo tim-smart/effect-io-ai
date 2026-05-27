@@ -12,6 +12,6 @@ directly as a server response, it renders as an empty response with status 405.
 declare class MethodNotAllowed
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiError.ts#L173)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiError.ts#L193)
 
 Since v4.0.0

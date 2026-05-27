@@ -5,6 +5,11 @@ Module: `Array`<br />
 
 Maps over an array while threading an accumulator through each step, returning both the final state and the mapped array.
 
+**When to use**
+
+Use when mapping needs state threaded through each element and the final state
+is also needed.
+
 **Details**
 
 - Combines `map` and `reduce` in a single pass.
@@ -32,6 +37,6 @@ console.log(result) // [6, [1, 3, 6]]
 declare const mapAccum: { <S, A, B, I extends Iterable<A> = Iterable<A>>(s: S, f: (s: S, a: ReadonlyArray.Infer<I>, i: number) => readonly [S, B]): (self: I) => [state: S, mappedArray: ReadonlyArray.With<I, B>]; <S, A, B, I extends Iterable<A> = Iterable<A>>(self: I, s: S, f: (s: S, a: ReadonlyArray.Infer<I>, i: number) => readonly [S, B]): [state: S, mappedArray: ReadonlyArray.With<I, B>]; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L4154)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L4604)
 
 Since v2.0.0

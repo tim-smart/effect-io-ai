@@ -14,6 +14,6 @@ type MessageEncoded = | SystemMessageEncoded
   | ToolMessageEncoded
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L1685)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L1706)
 
 Since v4.0.0

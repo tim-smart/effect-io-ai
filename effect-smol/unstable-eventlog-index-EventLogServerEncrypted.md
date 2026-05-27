@@ -11,6 +11,6 @@ Re-exports all named exports from the "./EventLogServerEncrypted.ts" module as `
 export * as EventLogServerEncrypted from "./EventLogServerEncrypted.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L202)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L50)
 
 Since v4.0.0

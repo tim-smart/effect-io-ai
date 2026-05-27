@@ -9,8 +9,8 @@ ReadonlySet, Date, Duration, URL, and RegExp.
 
 **When to use**
 
-Pass this as `options.reviver` to `toSchema` to reconstruct schemas
-that use these types.
+Use when passing this as `options.reviver` to `toSchema` to reconstruct
+schemas that use these types.
 
 **Details**
 
@@ -28,6 +28,6 @@ fallback to `encodedSchema`.
 declare const toSchemaDefaultReviver: Reviver<Schema.Top>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaRepresentation.ts#L1781)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaRepresentation.ts#L1825)
 
 Since v4.0.0

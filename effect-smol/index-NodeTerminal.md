@@ -11,6 +11,6 @@ Re-exports all named exports from the "./NodeTerminal.ts" module as `NodeTermina
 export * as NodeTerminal from "./NodeTerminal.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L233)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L65)
 
 Since v4.0.0

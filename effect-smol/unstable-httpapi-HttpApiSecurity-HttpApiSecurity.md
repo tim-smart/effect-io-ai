@@ -11,6 +11,6 @@ Union of security schemes supported by the HTTP API OpenAPI model.
 type HttpApiSecurity = Bearer | ApiKey | Basic
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiSecurity.ts#L42)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiSecurity.ts#L54)
 
 Since v4.0.0

@@ -5,12 +5,25 @@ Module: `AnthropicTool`<br />
 
 Input payload for the 2025-08-25 Anthropic code execution tool.
 
+**When to use**
+
+Use when typing input passed to the 2025-08-25 Anthropic code execution tool.
+
+**Details**
+
+The payload has a single `code` field containing the source code string to
+execute.
+
+**See**
+
+- `CodeExecution_20250825` for the provider-defined tool that consumes this payload
+
 **Signature**
 
 ```ts
 type CodeExecution_20250825_Parameters = typeof CodeExecution_20250825_Parameters.Type
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L245)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L434)
 
 Since v4.0.0

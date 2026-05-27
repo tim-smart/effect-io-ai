@@ -6,6 +6,10 @@ Module: `Array`<br />
 Returns the last element of an array wrapped in `Option.some`, or
 `Option.none` if the array is empty.
 
+**When to use**
+
+Use to safely get the last element of an array that may be empty.
+
 **Example** (Getting the last element)
 
 ```ts
@@ -26,6 +30,6 @@ console.log(Array.last([])) // None
 declare const last: <A>(self: ReadonlyArray<A>) => Option.Option<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L1093)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L1198)
 
 Since v2.0.0

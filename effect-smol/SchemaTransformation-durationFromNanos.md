@@ -8,7 +8,7 @@ Decodes a `bigint` (nanoseconds) into a `Duration` and encodes a
 
 **When to use**
 
-- Working with nanosecond-precision timestamps or intervals.
+Use when working with nanosecond-precision timestamps or intervals.
 
 **Details**
 

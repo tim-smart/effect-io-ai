@@ -11,6 +11,6 @@ Creates and adds a cookie by name and value, throwing if the cookie fields are i
 declare const setUnsafe: { (name: string, value: string, options?: Cookie["options"]): (self: Cookies) => Cookies; (self: Cookies, name: string, value: string, options?: Cookie["options"]): Cookies; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cookies.ts#L635)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cookies.ts#L681)
 
 Since v4.0.0

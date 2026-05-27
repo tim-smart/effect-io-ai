@@ -10,7 +10,7 @@ returns a merged result. It does not include an identity/empty value; use
 
 **When to use**
 
-Use `Combiner` when you need to describe how two values of the same type
+Use when you need to describe how two values of the same type
 merge, pass a reusable combining strategy to library functions like
 `Struct.makeCombiner` or `Option.makeCombinerFailFast`, or define the
 combining step for a `Reducer`.
@@ -36,6 +36,10 @@ console.log(Sum.combine(3, 4))
 export interface Combiner<A> {
   /**
    * Combines two values into a new value.
+   *
+   * **When to use**
+   *
+   * Use to merge two values according to this combining strategy.
    */
   readonly combine: (self: A, that: A) => A
 }

@@ -5,6 +5,12 @@ Module: `Layer`<br />
 
 A `Layer` describes how to build one or more services for dependency injection.
 
+**When to use**
+
+Use to model construction of application services for dependency injection,
+especially when services have dependencies, can fail during construction, or
+need scoped setup and release.
+
 **Details**
 
 A `Layer<ROut, E, RIn>` represents `ROut` as the services this layer
@@ -23,6 +29,6 @@ export interface Layer<in ROut, out E = never, out RIn = never> extends Variance
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L67)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L86)
 
 Since v2.0.0

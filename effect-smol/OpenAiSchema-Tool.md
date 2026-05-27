@@ -11,6 +11,6 @@ Tool definition that can be supplied to an OpenAI Responses request.
 type Tool = typeof Tool.Type
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiSchema.ts#L400)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiSchema.ts#L546)
 
 Since v4.0.0

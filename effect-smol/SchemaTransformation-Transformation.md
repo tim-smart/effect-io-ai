@@ -8,7 +8,7 @@ type `E`, built from a pair of `Getter`s.
 
 **When to use**
 
-- You need to define how a schema converts between two representations.
+Use when you need to define how a schema converts between two representations.
 - You want to compose multiple transformations into a pipeline.
 - You want to flip a transformation to swap decode/encode.
 

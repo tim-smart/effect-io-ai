@@ -35,6 +35,6 @@ type ServiceClass<Self, Id, Config, Service> = & Context.Service<Self, Service>
   })
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiMiddleware.ts#L286)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiMiddleware.ts#L310)
 
 Since v4.0.0

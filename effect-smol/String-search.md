@@ -22,6 +22,6 @@ String.search("ababb", "d") // Option.none()
 declare const search: { (regExp: RegExp | string): (self: string) => Option.Option<number>; (self: string, regExp: RegExp | string): Option.Option<number>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L825)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L899)
 
 Since v2.0.0

@@ -7,7 +7,7 @@ Returns the string keys of a struct as a properly typed `Array<keyof S & string>
 
 **When to use**
 
-Use instead of `Object.keys` when you want the return type narrowed to the
+Use when you use instead of `Object.keys` when you want the return type narrowed to the
 known keys of the struct.
 
 **Details**

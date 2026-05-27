@@ -5,12 +5,17 @@ Module: `SubscriptionRef`<br />
 
 Returns `true` if the provided value is a `SubscriptionRef`.
 
+**When to use**
+
+Use to narrow an unknown value before calling `SubscriptionRef` operations
+that require a subscription reference.
+
 **Signature**
 
 ```ts
 declare const isSubscriptionRef: (u: unknown) => u is SubscriptionRef<unknown>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SubscriptionRef.ts#L55)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SubscriptionRef.ts#L101)
 
 Since v4.0.0

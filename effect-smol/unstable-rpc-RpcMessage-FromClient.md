@@ -11,6 +11,6 @@ Decoded messages that can be sent from an RPC client to a server.
 type FromClient<A> = Request<A> | Ack | Interrupt | Eof
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RpcMessage.ts#L34)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RpcMessage.ts#L52)
 
 Since v4.0.0

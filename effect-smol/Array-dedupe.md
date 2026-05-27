@@ -6,6 +6,11 @@ Module: `Array`<br />
 Removes duplicates using `Equal.equivalence()`, preserving the order of the
 first occurrence.
 
+**When to use**
+
+Use to remove repeated values from an iterable when Effect's default equality
+is the right comparison, preserving the first occurrence.
+
 **Example** (Removing duplicates)
 
 ```ts
@@ -25,6 +30,6 @@ console.log(Array.dedupe([1, 2, 1, 3, 2, 4])) // [1, 2, 3, 4]
 declare const dedupe: <S extends Iterable<any>>(self: S) => S extends NonEmptyReadonlyArray<infer A> ? NonEmptyArray<A> : S extends Iterable<infer A> ? Array<A> : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L4047)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L4481)
 
 Since v2.0.0

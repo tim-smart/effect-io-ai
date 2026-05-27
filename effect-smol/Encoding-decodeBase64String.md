@@ -5,6 +5,11 @@ Module: `Encoding`<br />
 
 Decodes a base64 (RFC4648) string into a UTF-8 string.
 
+**When to use**
+
+Use to decode a standard padded Base64 string into UTF-8 text without
+throwing on invalid input.
+
 **Details**
 
 Returns `Result.succeed` with the decoded text when decoding succeeds, or
@@ -27,6 +32,6 @@ if (Result.isSuccess(result)) {
 declare const decodeBase64String: (str: string) => Result.Result<string, EncodingError>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Encoding.ts#L194)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Encoding.ts#L290)
 
 Since v2.0.0

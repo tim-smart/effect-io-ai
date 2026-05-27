@@ -6,6 +6,10 @@ Module: `MutableHashMap`<br />
 Sets a key-value pair in the MutableHashMap, mutating the map in place.
 If the key already exists, its value is updated.
 
+**When to use**
+
+Use to insert a new entry or replace an existing entry in place.
+
 **Example** (Setting key-value pairs)
 
 ```ts
@@ -30,12 +34,18 @@ setKey(map)
 console.log(MutableHashMap.size(map)) // 3
 ```
 
+**See**
+
+- `modify` for updating an existing value with a function
+- `modifyAt` for setting or removing based on the current optional value
+- `remove` for deleting an entry by key
+
 **Signature**
 
 ```ts
 declare const set: { <K, V>(key: K, value: V): (self: MutableHashMap<K, V>) => MutableHashMap<K, V>; <K, V>(self: MutableHashMap<K, V>, key: K, value: V): MutableHashMap<K, V>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableHashMap.ts#L389)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableHashMap.ts#L486)
 
 Since v2.0.0

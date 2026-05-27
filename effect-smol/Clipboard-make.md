@@ -11,6 +11,6 @@ Builds a `Clipboard` service from primitive read and write operations, deriving 
 declare const make: (impl: Omit<Clipboard, "clear" | "writeBlob" | typeof TypeId>) => Clipboard
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/Clipboard.ts#L71)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/Clipboard.ts#L108)
 
 Since v4.0.0

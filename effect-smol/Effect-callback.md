@@ -7,7 +7,7 @@ Creates an `Effect` from a callback-based asynchronous API.
 
 **When to use**
 
-Use `Effect.callback` when integrating APIs that complete through callbacks
+Use when integrating APIs that complete through callbacks
 instead of returning a `Promise`.
 
 **Details**
@@ -40,6 +40,6 @@ const program = delay(1000)
 declare const callback: <A, E = never, R = never>(register: (this: Scheduler, resume: (effect: Effect<A, E, R>) => void, signal: AbortSignal) => void | Effect<void, never, R>) => Effect<A, E, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L1201)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L1263)
 
 Since v4.0.0

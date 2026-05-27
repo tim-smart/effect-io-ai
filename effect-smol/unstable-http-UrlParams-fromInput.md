@@ -16,6 +16,6 @@ nested records use bracket notation, and `undefined` values are omitted.
 declare const fromInput: (input: Input) => UrlParams
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/UrlParams.ts#L172)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/UrlParams.ts#L187)
 
 Since v4.0.0

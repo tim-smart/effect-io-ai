@@ -11,6 +11,6 @@ Re-exports all named exports from the "./HttpApi.ts" module as `HttpApi`.
 export * as HttpApi from "./HttpApi.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L33)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L10)
 
 Since v4.0.0

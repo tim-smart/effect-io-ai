@@ -8,7 +8,7 @@ an `Option`.
 
 **When to use**
 
-- Wrapping existing nullable-returning functions for use in `Option` pipelines
+Use to wrap existing nullable-returning functions for use in `Option` pipelines
 
 **Details**
 
@@ -45,6 +45,6 @@ console.log(parseOption("not a number"))
 declare const liftNullishOr: <A extends ReadonlyArray<unknown>, B>(f: (...a: A) => B) => (...a: A) => Option<NonNullable<B>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L970)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L997)
 
 Since v4.0.0

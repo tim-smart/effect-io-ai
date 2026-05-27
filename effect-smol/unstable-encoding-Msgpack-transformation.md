@@ -15,6 +15,6 @@ MessagePack codec failures are converted to `InvalidValue` schema issues.
 declare const transformation: Transformation.Transformation<unknown, Uint8Array<ArrayBuffer>, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Msgpack.ts#L348)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Msgpack.ts#L363)
 
 Since v4.0.0

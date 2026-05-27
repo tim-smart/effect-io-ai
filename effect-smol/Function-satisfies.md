@@ -6,6 +6,11 @@ Module: `Function`<br />
 A function that ensures that the type of an expression matches some type,
 without changing the resulting type of that expression.
 
+**When to use**
+
+Use to check assignability while preserving the expression's precise inferred
+type.
+
 **Example** (Checking an expression against a type)
 
 ```ts
@@ -21,12 +26,16 @@ const test2 = Function.satisfies<string>()(5)
 assert.deepStrictEqual(Function.satisfies<number>()(5), 5)
 ```
 
+**See**
+
+- `cast` for changing only the static TypeScript type
+
 **Signature**
 
 ```ts
 declare const satisfies: <A>() => <B extends A>(b: B) => B
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Function.ts#L276)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Function.ts#L316)
 
 Since v2.0.0

@@ -5,6 +5,11 @@ Module: `Array`<br />
 
 Keeps transformed values for elements where a `Filter` succeeds.
 
+**When to use**
+
+Use to transform elements with a `Result`-returning filter while discarding
+failures.
+
 **Details**
 
 - The filter receives `(element, index)`.
@@ -22,6 +27,7 @@ console.log(Array.filterMap([1, 2, 3, 4], (n) => n % 2 === 0 ? Result.succeed(n 
 **See**
 
 - `filter` — keep original elements matching a predicate
+- `partition` for keeping both failures and successes
 
 **Signature**
 
@@ -29,6 +35,6 @@ console.log(Array.filterMap([1, 2, 3, 4], (n) => n % 2 === 0 ? Result.succeed(n 
 declare const filterMap: { <A, B, X>(f: (input: NoInfer<A>, i: number) => Result.Result<B, X>): (self: Iterable<A>) => Array<B>; <A, B, X>(self: Iterable<A>, f: (input: A, i: number) => Result.Result<B, X>): Array<B>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L3393)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L3761)
 
 Since v2.0.0

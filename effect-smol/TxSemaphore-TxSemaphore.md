@@ -8,6 +8,11 @@ Memory (STM) semantics, providing atomic permit acquisition and release
 operations within Effect transactions for concurrency control over limited
 resources.
 
+**When to use**
+
+Use to coordinate permit accounting atomically with other transactional
+state changes.
+
 **Example** (Managing permits transactionally)
 
 ```ts
@@ -29,6 +34,12 @@ const program = Effect.gen(function*() {
 })
 ```
 
+**See**
+
+- `make` for creating a transactional semaphore
+- `withPermit` for automatically acquiring and releasing one permit
+- `acquire` for manually acquiring one permit transactionally
+
 **Signature**
 
 ```ts
@@ -39,6 +50,6 @@ export interface TxSemaphore extends Inspectable, Pipeable {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxSemaphore.ts#L64)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxSemaphore.ts#L91)
 
 Since v4.0.0

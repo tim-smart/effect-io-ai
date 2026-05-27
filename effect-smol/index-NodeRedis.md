@@ -11,6 +11,6 @@ Re-exports all named exports from the "./NodeRedis.ts" module as `NodeRedis`.
 export * as NodeRedis from "./NodeRedis.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L315)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L75)
 
 Since v4.0.0

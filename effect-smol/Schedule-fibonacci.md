@@ -4,21 +4,21 @@ Module: `Schedule`<br />
 ## Schedule.fibonacci
 
 A schedule that always recurs, increasing delays by summing the preceding
-two delays (similar to the fibonacci sequence). Returns the current
+two delays (similar to the Fibonacci sequence). Returns the current
 duration between recurrences.
 
-**Example** (Retrying with fibonacci backoff)
+**Example** (Retrying with Fibonacci backoff)
 
 ```ts
 import { Console, Data, Effect, Schedule } from "effect"
 
 class RetryAttemptError extends Data.TaggedError("RetryAttemptError")<{ readonly message: string }> {}
 
-// Basic fibonacci schedule starting with 100ms
+// Basic Fibonacci schedule starting with 100ms
 const fibSchedule = Schedule.fibonacci("100 millis")
 // Delays: 100ms, 100ms, 200ms, 300ms, 500ms, 800ms, 1300ms, ...
 
-// Retry with fibonacci backoff for gradual increase
+// Retry with Fibonacci backoff for gradual increase
 const retryWithFib = Effect.gen(function*() {
   let attempt = 0
 
@@ -42,7 +42,7 @@ const retryWithFib = Effect.gen(function*() {
   yield* Console.log(`Final result: ${result}`)
 })
 
-// Heartbeat with fibonacci intervals (starts fast, gets slower)
+// Heartbeat with Fibonacci intervals (starts fast, gets slower)
 const adaptiveHeartbeat = Effect.gen(function*() {
   yield* Console.log("Heartbeat")
   return "pulse"
@@ -72,6 +72,6 @@ const compareSchedules = Effect.gen(function*() {
 declare const fibonacci: (one: Duration.Input) => Schedule<Duration.Duration>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L2037)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L2125)
 
 Since v2.0.0

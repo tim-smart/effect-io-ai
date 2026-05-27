@@ -7,7 +7,7 @@ Pattern-matches on an array, handling empty and non-empty cases separately.
 
 **When to use**
 
-- Use when you need to branch on whether an array has elements.
+Use when you need to branch on whether an array has elements.
 - `onNonEmpty` receives a `NonEmptyReadonlyArray`.
 - Dual: data-first or data-last.
 
@@ -35,6 +35,6 @@ console.log(describe([1, 2, 3])) // "head: 1, tail: 2"
 declare const match: { <B, A, C = B>(options: { readonly onEmpty: LazyArg<B>; readonly onNonEmpty: (self: NonEmptyReadonlyArray<A>) => C; }): (self: ReadonlyArray<A>) => B | C; <A, B, C = B>(self: ReadonlyArray<A>, options: { readonly onEmpty: LazyArg<B>; readonly onNonEmpty: (self: NonEmptyReadonlyArray<A>) => C; }): B | C; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L453)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L482)
 
 Since v2.0.0

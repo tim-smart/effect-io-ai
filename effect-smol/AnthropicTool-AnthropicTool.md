@@ -3,7 +3,18 @@ Module: `AnthropicTool`<br />
 
 ## AnthropicTool.AnthropicTool
 
-Union of all Anthropic provider-defined tools.
+Union of all Anthropic provider-defined tool definitions exported by this module.
+
+**When to use**
+
+Use when a helper, collection, or option accepts any Anthropic
+provider-defined tool value created by this module.
+
+**Details**
+
+The union is built from the return types of the exported constructors,
+including Bash, Code Execution, Computer Use, Memory, Text Editor, Tool
+Search, Web Fetch, and Web Search tool versions.
 
 **Signature**
 
@@ -26,6 +37,6 @@ type AnthropicTool = | ReturnType<typeof Bash_20241022>
   | ReturnType<typeof WebSearch_20250305>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L19)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L80)
 
 Since v4.0.0

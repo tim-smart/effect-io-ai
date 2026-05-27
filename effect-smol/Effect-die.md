@@ -7,7 +7,7 @@ Creates an effect that terminates a fiber with a specified error.
 
 **When to use**
 
-Use `die` when encountering unexpected conditions in your code that should
+Use when encountering unexpected conditions in your code that should
 not be handled as regular errors but instead represent unrecoverable defects.
 
 **Details**
@@ -39,16 +39,12 @@ Effect.runPromise(program).catch(console.error)
 //   ...stack trace...
 ```
 
-**See**
-
-- `die` for a variant that dies with an already computed defect.
-
 **Signature**
 
 ```ts
 declare const die: (defect: unknown) => Effect<never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L1555)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L1661)
 
 Since v2.0.0

@@ -3,7 +3,22 @@ Module: `BigInt`<br />
 
 ## BigInt.BigInt
 
-Reference to the global BigInt constructor.
+Reference to the global `BigInt` constructor for JavaScript bigint coercion.
+
+**When to use**
+
+Use when you want the native `BigInt` constructor behavior from the Effect
+module namespace.
+
+**Gotchas**
+
+This follows native `BigInt` coercion rules. It throws for invalid strings or
+non-integral numbers, and whitespace-only strings coerce to `0n`.
+
+**See**
+
+- `fromString` for parsing strings into an `Option`
+- `fromNumber` for converting safe integers into an `Option`
 
 **Example** (Constructing bigints)
 
@@ -23,6 +38,6 @@ console.log(fromString) // 456n
 declare const BigInt: BigIntConstructor
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigInt.ts#L35)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigInt.ts#L111)
 
 Since v4.0.0

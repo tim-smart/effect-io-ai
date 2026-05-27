@@ -20,6 +20,6 @@ Parsing succeeds only when the input is exactly `undefined`.
 declare class Undefined
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L682)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L800)
 
 Since v4.0.0

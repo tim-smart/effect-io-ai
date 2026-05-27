@@ -5,12 +5,22 @@ Module: `BrowserHttpClient`<br />
 
 Reference that controls the `XMLHttpRequest.responseType` used by the browser XHR HTTP client, defaulting to `"text"`.
 
+**When to use**
+
+Use when XHR-backed HTTP requests need to receive response bodies as text or
+as raw `ArrayBuffer` values.
+
+**See**
+
+- `XHRResponseType` for the allowed response body modes
+- `withXHRArrayBuffer` for scoping XHR response handling to `ArrayBuffer`
+
 **Signature**
 
 ```ts
 declare const CurrentXHRResponseType: Context.Reference<XHRResponseType>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/BrowserHttpClient.ts#L100)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/BrowserHttpClient.ts#L108)
 
 Since v4.0.0

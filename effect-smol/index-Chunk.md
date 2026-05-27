@@ -11,6 +11,6 @@ Re-exports all named exports from the "./Chunk.ts" module as `Chunk`.
 export * as Chunk from "./Chunk.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L465)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L82)
 
 Since v2.0.0

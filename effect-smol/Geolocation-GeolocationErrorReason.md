@@ -11,6 +11,6 @@ Union of browser geolocation error reasons represented by the service.
 type GeolocationErrorReason = PositionUnavailable | PermissionDenied | Timeout
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/Geolocation.ts#L132)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/Geolocation.ts#L175)
 
 Since v4.0.0

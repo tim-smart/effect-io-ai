@@ -5,6 +5,11 @@ Module: `Unify`<br />
 
 The type of the unifySymbol.
 
+**When to use**
+
+Use to reference the `unifySymbol` property key in type-level protocol
+definitions.
+
 **Details**
 
 This type represents the unique symbol used for identifying unification
@@ -17,6 +22,6 @@ to enable automatic type unification.
 type unifySymbol = typeof unifySymbol
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Unify.ts#L45)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Unify.ts#L75)
 
 Since v2.0.0

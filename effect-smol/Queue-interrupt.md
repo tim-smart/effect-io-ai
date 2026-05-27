@@ -49,6 +49,6 @@ const program = Effect.gen(function*() {
 declare const interrupt: <A, E>(self: Enqueue<A, E>) => Effect<boolean>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Queue.ts#L1029)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Queue.ts#L1099)
 
 Since v4.0.0

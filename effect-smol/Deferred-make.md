@@ -5,6 +5,10 @@ Module: `Deferred`<br />
 
 Creates a new `Deferred`.
 
+**When to use**
+
+Use to allocate an empty `Deferred` inside an `Effect` workflow.
+
 **Example** (Creating a Deferred)
 
 ```ts
@@ -24,6 +28,6 @@ const program = Effect.gen(function*() {
 declare const make: <A, E = never>() => Effect<Deferred<A, E>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Deferred.ts#L226)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Deferred.ts#L236)
 
 Since v2.0.0

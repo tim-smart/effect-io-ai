@@ -7,7 +7,7 @@ Negates a predicate.
 
 **When to use**
 
-- You want the inverse of an existing predicate.
+Use when you want the inverse of an existing predicate.
 
 **Details**
 
@@ -36,6 +36,6 @@ console.log(isNotString(1))
 declare const not: <A>(self: Predicate<A>) => Predicate<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L1601)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L1635)
 
 Since v2.0.0

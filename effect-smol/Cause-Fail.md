@@ -5,6 +5,11 @@ Module: `Cause`<br />
 
 A typed, expected error produced by `Effect.fail`.
 
+**When to use**
+
+Use when inspecting `Cause` reasons that represent expected failures from the
+typed error channel.
+
 **Details**
 
 The `error` property carries the typed value `E`. Use `isFailReason`
@@ -24,8 +29,8 @@ if (Cause.isFailReason(reason)) {
 
 **See**
 
-- `fail` — create a `Cause` containing a single `Fail`
-- `isFailReason` — type guard
+- `fail` for constructing a cause with a single `Fail` reason
+- `isFailReason` for narrowing a `Reason` to `Fail`
 
 **Signature**
 
@@ -35,6 +40,6 @@ export interface Fail<out E> extends Cause.ReasonProto<"Fail"> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L420)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L429)
 
 Since v2.0.0

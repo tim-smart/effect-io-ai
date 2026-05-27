@@ -16,6 +16,6 @@ the current `HttpServerRequest` to the matching `HttpServerResponse`.
 declare const make: Effect.Effect<HttpRouter, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpRouter.ts#L127)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpRouter.ts#L150)
 
 Since v4.0.0

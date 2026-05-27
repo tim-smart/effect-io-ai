@@ -5,11 +5,14 @@ Module: `Result`<br />
 
 Extracts the success value, or returns `undefined` on failure.
 
+**When to use**
+
+Use with APIs that represent absence as `undefined`.
+
 **Details**
 
 - `Success<A>` returns `A`
 - `Failure<E>` returns `undefined`
-- Convenient for interop with APIs that use `undefined` to represent absence
 
 **Example** (Unwrapping to optional)
 
@@ -34,6 +37,6 @@ console.log(Result.getOrUndefined(Result.fail("err")))
 declare const getOrUndefined: <A, E>(self: Result<A, E>) => A | undefined
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L1133)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L1207)
 
 Since v2.0.0

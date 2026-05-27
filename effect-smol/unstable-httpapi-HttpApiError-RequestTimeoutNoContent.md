@@ -12,6 +12,6 @@ into a `RequestTimeout` error value.
 declare const RequestTimeoutNoContent: HttpApiSchema.asNoContent<typeof RequestTimeout>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiError.ts#L252)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiError.ts#L272)
 
 Since v4.0.0

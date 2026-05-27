@@ -8,7 +8,7 @@ Hides a subcommand from parent help output, shell completions, and
 
 **When to use**
 
-Use this for experimental or internal subcommands that should be accepted but
+Use when you use this for experimental or internal subcommands that should be accepted but
 not advertised on the public CLI surface.
 
 **Example** (Hiding a subcommand)
@@ -33,6 +33,6 @@ const root = Command.make("mycli").pipe(
 declare const withHidden: <const Name extends string, Input, E, R, ContextInput>(self: Command<Name, Input, ContextInput, E, R>) => Command<Name, Input, ContextInput, E, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Command.ts#L1066)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Command.ts#L1071)
 
 Since v4.0.0

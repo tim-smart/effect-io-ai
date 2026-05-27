@@ -16,6 +16,6 @@ to client handlers.
 type WithoutPing = Exclude<Request, { readonly _tag: "Ping" }>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DevToolsSchema.ts#L523)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DevToolsSchema.ts#L531)
 
 Since v4.0.0

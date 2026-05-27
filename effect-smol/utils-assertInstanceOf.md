@@ -11,6 +11,6 @@ Asserts that `value` is an instance of `constructor`.
 declare const assertInstanceOf: <C extends abstract new (...args: any) => any>(value: unknown, constructor: C, message?: string, ..._: Array<never>) => asserts value is InstanceType<C>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/vitest/src/utils.ts#L104)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/vitest/src/utils.ts#L119)
 
 Since v4.0.0

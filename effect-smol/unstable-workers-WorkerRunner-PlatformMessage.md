@@ -12,6 +12,6 @@ close signal.
 type PlatformMessage<I> = readonly [request: 0, I] | readonly [close: 1]
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/WorkerRunner.ts#L61)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/WorkerRunner.ts#L72)
 
 Since v4.0.0

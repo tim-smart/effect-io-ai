@@ -5,9 +5,11 @@ Module: `AnthropicTool`<br />
 
 Computer-use action payload for zooming into a specific screen region.
 
-**Details**
+**Gotchas**
 
 The enclosing computer-use tool must be configured with `enableZoom: true`.
+`region` is only a four-number tuple and does not validate corner ordering or
+display bounds.
 
 **Signature**
 
@@ -15,6 +17,6 @@ The enclosing computer-use tool must be configured with `enableZoom: true`.
 type ComputerUseZoomAction = typeof ComputerUseZoomAction.Type
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L802)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L1286)
 
 Since v4.0.0

@@ -36,6 +36,6 @@ const program = Effect.gen(function*() {
 declare const shutdown: <A>(self: TxPubSub<A>) => Effect.Effect<void>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxPubSub.ts#L599)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxPubSub.ts#L661)
 
 Since v2.0.0

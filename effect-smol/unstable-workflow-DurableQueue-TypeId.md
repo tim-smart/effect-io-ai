@@ -11,6 +11,6 @@ Type-level identifier used to recognize `DurableQueue` values.
 type TypeId = "~effect/workflow/DurableQueue"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DurableQueue.ts#L36)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DurableQueue.ts#L54)
 
 Since v4.0.0

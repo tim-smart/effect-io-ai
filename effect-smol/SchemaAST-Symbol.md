@@ -5,6 +5,10 @@ Module: `SchemaAST`<br />
 
 AST node matching any `symbol` value.
 
+**When to use**
+
+Use when building an AST that should match any JavaScript symbol value.
+
 **Details**
 
 When serialized to a string-based codec, symbols are converted via
@@ -21,6 +25,6 @@ When serialized to a string-based codec, symbols are converted via
 declare class Symbol
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L1295)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L1479)
 
 Since v4.0.0

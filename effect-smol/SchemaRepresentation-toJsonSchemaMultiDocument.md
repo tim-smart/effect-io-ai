@@ -8,7 +8,7 @@ multi-document.
 
 **When to use**
 
-Use this when you have multiple schemas sharing references.
+Use when you have multiple schemas sharing references.
 
 **Details**
 
@@ -26,6 +26,6 @@ This is a pure function and does not mutate the input.
 declare const toJsonSchemaMultiDocument: (document: MultiDocument, options?: Schema.ToJsonSchemaOptions) => JsonSchema.MultiDocument<"draft-2020-12">
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaRepresentation.ts#L2250)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaRepresentation.ts#L2294)
 
 Since v4.0.0

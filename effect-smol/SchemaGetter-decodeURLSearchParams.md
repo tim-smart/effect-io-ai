@@ -7,7 +7,7 @@ Decodes a `URLSearchParams` object into a nested tree structure using bracket-pa
 
 **When to use**
 
-- Parsing query parameters from URLs into structured objects.
+Use to parse query parameters from URLs into structured objects.
 
 **Details**
 
@@ -26,9 +26,9 @@ const decode = SchemaGetter.decodeURLSearchParams()
 
 **See**
 
-- `encodeURLSearchParams` - inverse operation
-- `makeTreeRecord` - the underlying bracket-path parser
-- `decodeFormData` - similar for FormData
+- `encodeURLSearchParams` for the inverse operation
+- `makeTreeRecord` for the underlying bracket-path parser
+- `decodeFormData` for the FormData variant
 
 **Signature**
 

@@ -17,6 +17,6 @@ otherwise, a custom value **MAY** be used.
 type WellKnownServiceTier = "auto" | "default"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/OpenAiTelemetry.ts#L102)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/OpenAiTelemetry.ts#L133)
 
 Since v4.0.0

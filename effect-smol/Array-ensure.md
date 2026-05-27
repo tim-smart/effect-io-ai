@@ -5,6 +5,11 @@ Module: `Array`<br />
 
 Normalizes a value that is either a single element or an array into an array.
 
+**When to use**
+
+Use to normalize input that may be a single value or an array into a consistent
+array.
+
 **Details**
 
 - If the input is already an array, returns it by reference.
@@ -31,6 +36,6 @@ console.log(Array.ensure(["a", "b", "c"])) // ["a", "b", "c"]
 declare const ensure: <A>(self: ReadonlyArray<A> | A) => Array<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L382)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L399)
 
 Since v3.3.0

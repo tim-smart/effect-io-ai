@@ -5,6 +5,10 @@ Module: `Hash`<br />
 
 Generates a random hash value for an object and caches it.
 
+**When to use**
+
+Use to hash an object by reference identity instead of structural content.
+
 **Details**
 
 This function creates a random hash value for objects that don't have their own
@@ -32,6 +36,6 @@ console.log(Hash.random(obj1) === Hash.random(obj2)) // false
 declare const random: <A extends object>(self: A) => number
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Hash.ts#L171)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Hash.ts#L237)
 
 Since v2.0.0

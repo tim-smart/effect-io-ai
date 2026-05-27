@@ -3,7 +3,13 @@ Module: `AnthropicLanguageModel`<br />
 
 ## AnthropicLanguageModel.Model
 
-The available Anthropic Claude model identifiers.
+Known Anthropic Claude model identifiers exposed by the generated Anthropic schema.
+
+**Details**
+
+The Anthropic language model constructors accept `Model` values and custom
+string model ids, so this type is best used for autocomplete and type checking
+of known Claude ids.
 
 **Signature**
 
@@ -11,6 +17,6 @@ The available Anthropic Claude model identifiers.
 type Model = typeof Generated.Model.Type
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicLanguageModel.ts#L68)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicLanguageModel.ts#L74)
 
 Since v4.0.0

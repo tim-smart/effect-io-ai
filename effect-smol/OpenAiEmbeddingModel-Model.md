@@ -11,6 +11,6 @@ A model identifier accepted by an OpenAI-compatible embeddings endpoint.
 type Model = string
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/OpenAiEmbeddingModel.ts#L25)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/OpenAiEmbeddingModel.ts#L55)
 
 Since v4.0.0

@@ -13,6 +13,6 @@ the worker run.
 declare const makePlatform: <W>() => <P extends { readonly postMessage: (message: any, transfers?: any | undefined) => void; }>(options: { readonly setup: (options: { readonly worker: W; readonly scope: Scope.Scope; }) => Effect.Effect<P, WorkerError>; readonly listen: (options: { readonly port: P; readonly emit: (data: any) => void; readonly deferred: Deferred.Deferred<never, WorkerError>; readonly scope: Scope.Scope; }) => Effect.Effect<void>; }) => WorkerPlatform["Service"]
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Worker.ts#L160)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Worker.ts#L173)
 
 Since v4.0.0

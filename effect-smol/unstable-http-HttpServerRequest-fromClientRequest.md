@@ -16,6 +16,6 @@ the original URL.
 declare const fromClientRequest: (request: HttpClientRequest.HttpClientRequest) => HttpServerRequest
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpServerRequest.ts#L384)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpServerRequest.ts#L401)
 
 Since v4.0.0

@@ -5,6 +5,10 @@ Module: `Effect`<br />
 
 Returns the complete context.
 
+**When to use**
+
+Use to read the complete `Context` available to the current effect.
+
 **Details**
 
 This function allows you to access all services that are currently available
@@ -40,12 +44,17 @@ const context = Context.make(Logger, { log: console.log })
 const provided = Effect.provideContext(program, context)
 ```
 
+**See**
+
+- `contextWith` for deriving an effect from the complete context
+- `service` for reading one service from the context
+
 **Signature**
 
 ```ts
 declare const context: <R = never>() => Effect<Context.Context<R>, never, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L5363)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L5756)
 
 Since v2.0.0

@@ -25,6 +25,6 @@ assert.strictEqual(Context.isReference(Context.Service("Key")), false)
 declare const isReference: (u: unknown) => u is Reference<any>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Context.ts#L555)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Context.ts#L640)
 
 Since v3.11.0

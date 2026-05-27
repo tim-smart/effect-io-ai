@@ -11,6 +11,6 @@ Re-exports all named exports from the "./Metrics.ts" module as `Metrics`.
 export * as Metrics from "./Metrics.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/index.ts#L52)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/index.ts#L15)
 
 Since v4.0.0

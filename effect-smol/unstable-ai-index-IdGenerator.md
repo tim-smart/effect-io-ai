@@ -11,6 +11,6 @@ Re-exports all named exports from the "./IdGenerator.ts" module as `IdGenerator`
 export * as IdGenerator from "./IdGenerator.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L228)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L30)
 
 Since v4.0.0

@@ -20,6 +20,6 @@ export interface ToolResultFailure<Name extends string, Failure> extends BaseToo
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Response.ts#L1507)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Response.ts#L1531)
 
 Since v4.0.0

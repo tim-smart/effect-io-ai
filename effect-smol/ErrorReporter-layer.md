@@ -5,6 +5,11 @@ Module: `ErrorReporter`<br />
 
 Creates a `Layer` that registers one or more `ErrorReporter`s.
 
+**When to use**
+
+Use to provide one or more error reporters to effects that perform error
+reporting.
+
 **Details**
 
 Reporters can be plain `ErrorReporter` values or effectful
@@ -43,12 +48,17 @@ const program = Effect.fail("boom").pipe(
 )
 ```
 
+**See**
+
+- `make` for creating an `ErrorReporter` from a callback
+- `CurrentErrorReporters` for low-level access to the current reporters
+
 **Signature**
 
 ```ts
 declare const layer: <const Reporters extends ReadonlyArray<ErrorReporter | Effect.Effect<ErrorReporter, any, any>>>(reporters: Reporters, options?: { readonly mergeWithExisting?: boolean | undefined; } | undefined) => Layer.Layer<never, Reporters extends readonly [] ? never : Effect.Error<Reporters[number]>, Exclude<Reporters extends readonly [] ? never : Effect.Services<Reporters[number]>, Scope.Scope>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ErrorReporter.ts#L227)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ErrorReporter.ts#L260)
 
 Since v4.0.0

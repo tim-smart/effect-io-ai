@@ -11,6 +11,6 @@ A layer that provides the Node.js Crypto service implementation.
 declare const layer: Layer.Layer<EffectCrypto.Crypto, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeCrypto.ts#L55)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeCrypto.ts#L75)
 
 Since v1.0.0

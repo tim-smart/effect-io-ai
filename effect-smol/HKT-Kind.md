@@ -5,6 +5,10 @@ Module: `HKT`<br />
 
 Applies type parameters to a `TypeLambda` to get the concrete type.
 
+**When to use**
+
+Use to apply a `TypeLambda` to type parameters and obtain its concrete type.
+
 **Details**
 
 This type-level function takes a `TypeLambda` and four type parameters, then
@@ -70,6 +74,6 @@ type Kind<F, In, Out2, Out1, Target> = F extends {
   }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HKT.ts#L208)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HKT.ts#L240)
 
 Since v2.0.0

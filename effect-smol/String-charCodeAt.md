@@ -20,6 +20,6 @@ String.charCodeAt("abc", 4) // Option.none()
 declare const charCodeAt: { (index: number): (self: string) => Option.Option<number>; (self: string, index: number): Option.Option<number>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L516)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L590)
 
 Since v2.0.0

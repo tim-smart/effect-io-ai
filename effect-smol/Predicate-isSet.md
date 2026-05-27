@@ -7,7 +7,7 @@ Checks whether a value is a `Set`.
 
 **When to use**
 
-- You need a runtime guard for `Set` values.
+Use when you need a runtime guard for `Set` values.
 
 **Details**
 
@@ -37,6 +37,6 @@ if (Predicate.isSet(data)) {
 declare const isSet: (input: unknown) => input is Set<unknown>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L510)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L535)
 
 Since v2.0.0

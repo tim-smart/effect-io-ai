@@ -31,6 +31,6 @@ const context = Context.makeUnsafe(map)
 declare const makeUnsafe: <Services = never>(mapUnsafe: ReadonlyMap<string, any>) => Context<Services>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Context.ts#L463)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Context.ts#L530)
 
 Since v4.0.0

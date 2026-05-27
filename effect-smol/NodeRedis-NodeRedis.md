@@ -13,6 +13,6 @@ Service tag for the Node Redis integration, exposing the underlying
 declare class NodeRedis
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeRedis.ts#L40)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeRedis.ts#L58)
 
 Since v4.0.0

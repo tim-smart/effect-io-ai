@@ -17,6 +17,6 @@ export interface ProcedureWithValues<
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/sql/d1/src/Procedure.ts#L72)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/sql/d1/src/Procedure.ts#L86)
 
 Since v4.0.0

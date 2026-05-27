@@ -7,7 +7,7 @@ Encodes a nested object into a `FormData` instance using bracket-path notation.
 
 **When to use**
 
-- Serializing structured data to `FormData` for HTTP requests.
+Use to serialize structured data to `FormData` for HTTP requests.
 
 **Details**
 
@@ -26,9 +26,9 @@ const encode = SchemaGetter.encodeFormData()
 
 **See**
 
-- `decodeFormData` - inverse operation
-- `collectBracketPathEntries` - the underlying flattener
-- `encodeURLSearchParams` - similar for URLSearchParams
+- `decodeFormData` for the inverse operation
+- `collectBracketPathEntries` for the underlying flattener
+- `encodeURLSearchParams` for the URLSearchParams variant
 
 **Signature**
 

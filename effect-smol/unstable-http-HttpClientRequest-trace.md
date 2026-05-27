@@ -11,6 +11,6 @@ Creates a `TRACE` request for the specified URL.
 declare const trace: (url: string | URL, options?: Options.NoUrl) => HttpClientRequest
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpClientRequest.ts#L244)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpClientRequest.ts#L265)
 
 Since v4.0.0

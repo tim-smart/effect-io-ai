@@ -12,6 +12,6 @@ identifier.
 type ProviderDefinedTypeId = "~effect/ai/Tool/ProviderDefined"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tool.ts#L89)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tool.ts#L118)
 
 Since v4.0.0

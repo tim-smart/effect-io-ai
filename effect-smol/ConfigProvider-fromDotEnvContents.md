@@ -7,7 +7,7 @@ Creates a `ConfigProvider` by parsing the string contents of a `.env` file.
 
 **When to use**
 
-Use this when you already have the `.env` contents as a string, such as
+Use when you already have the `.env` contents as a string, such as
 contents fetched from a remote store or embedded in a test. Use
 `fromDotEnv` instead if you want to read a `.env` file from disk.
 
@@ -46,6 +46,6 @@ const provider = ConfigProvider.fromDotEnvContents(contents)
 declare const fromDotEnvContents: (lines: string, options?: { readonly expandVariables?: boolean | undefined; }) => ConfigProvider
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ConfigProvider.ts#L960)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ConfigProvider.ts#L983)
 
 Since v4.0.0

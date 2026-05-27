@@ -12,6 +12,6 @@ Maps the value inside an RPC wrapper, preserving wrapper options such as
 declare const wrapMap: <A extends object, B extends object>(self: WrapperOr<A>, f: (value: A) => B) => WrapperOr<B>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Rpc.ts#L1249)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Rpc.ts#L1260)
 
 Since v4.0.0

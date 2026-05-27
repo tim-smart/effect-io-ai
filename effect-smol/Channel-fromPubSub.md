@@ -98,6 +98,6 @@ const eventProcessor = Effect.gen(function*() {
 declare const fromPubSub: <A>(pubsub: PubSub.PubSub<A>) => Channel<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L1551)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L1570)
 
 Since v2.0.0

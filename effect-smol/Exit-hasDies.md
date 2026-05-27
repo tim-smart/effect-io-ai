@@ -7,7 +7,7 @@ Tests whether a failed Exit contains defects (Die reasons).
 
 **When to use**
 
-- Use to check for unexpected errors
+Use to check for unexpected errors
 
 **Details**
 
@@ -37,6 +37,6 @@ console.log(Exit.hasDies(Exit.succeed(42)))            // false
 declare const hasDies: <A, E>(self: Exit<A, E>) => self is Failure<A, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Exit.ts#L531)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Exit.ts#L540)
 
 Since v4.0.0

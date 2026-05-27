@@ -8,7 +8,7 @@ the console using `console.log`.
 
 **When to use**
 
-This is useful for taking any logger that produces string or object output
+Use when this is useful for taking any logger that produces string or object output
 and routing it to the console for development or debugging purposes.
 
 **Example** (Writing logger output with console.log)
@@ -35,6 +35,6 @@ const program = Effect.log("Hello World").pipe(
 declare const withConsoleLog: <Message, Output>(self: Logger<Message, Output>) => Logger<Message, void>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Logger.ts#L329)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Logger.ts#L343)
 
 Since v2.0.0

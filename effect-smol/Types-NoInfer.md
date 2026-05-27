@@ -8,8 +8,8 @@ position.
 
 **When to use**
 
-Use on a function parameter when you want inference to come from other
-parameters, not this one.
+Use when a function parameter must match an inferred type without becoming
+an inference source.
 
 **Details**
 
@@ -32,6 +32,6 @@ const result = withDefault<"a" | "b">("a", "b")
 type NoInfer<A> = [A][A extends any ? 0 : never]
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Types.ts#L611)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Types.ts#L615)
 
 Since v2.0.0

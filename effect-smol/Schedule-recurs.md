@@ -6,6 +6,17 @@ Module: `Schedule`<br />
 Returns a `Schedule` which can only be stepped the specified number of
 `times` before it terminates.
 
+**When to use**
+
+Use when you use `recurs` for a counter schedule with no additional delay. Use `take` to
+limit an existing schedule while preserving its output and delay behavior.
+
+**Gotchas**
+
+`recurs(n)` counts schedule recurrences, not the first evaluation of the
+effect being repeated or retried. For retrying, this means one initial
+attempt plus at most `n` retries.
+
 **Example** (Limiting recurrences)
 
 ```ts
@@ -39,11 +50,11 @@ const program = Effect.gen(function*() {
 
 // Combining recurs with other schedules for sophisticated retry logic
 const complexRetry = Schedule.exponential("100 millis").pipe(
-  Schedule.both(Schedule.recurs(3)) // At most 3 attempts
+  Schedule.both(Schedule.recurs(3)) // At most 3 retries
 )
 
-// Repeat an effect exactly 10 times
-const exactlyTenTimes = Effect.gen(function*() {
+// Allow ten recurrences after the initial run
+const tenRecurrences = Effect.gen(function*() {
   yield* Console.log("Executing task...")
   return "completed"
 }).pipe(
@@ -56,12 +67,16 @@ const countingSchedule = Schedule.recurs(3).pipe(
 )
 ```
 
+**See**
+
+- `take` for limiting an existing schedule
+
 **Signature**
 
 ```ts
 declare const recurs: (times: number) => Schedule<number>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L2410)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L2525)
 
 Since v2.0.0

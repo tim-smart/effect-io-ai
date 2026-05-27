@@ -7,7 +7,7 @@ Checks whether a value is an `object` in the JavaScript sense (objects, arrays, 
 
 **When to use**
 
-- You want to accept arrays and functions as well as objects.
+Use when you want to accept arrays and functions as well as objects.
 
 **Details**
 
@@ -34,6 +34,6 @@ console.log(Predicate.isObjectKeyword(null))
 declare const isObjectKeyword: (input: unknown) => input is object
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L1139)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L1173)
 
 Since v4.0.0

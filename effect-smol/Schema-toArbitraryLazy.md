@@ -16,6 +16,6 @@ Prefer `toArbitrary` when you just need the arbitrary directly.
 declare const toArbitraryLazy: <S extends Top>(schema: S) => LazyArbitrary<S["Type"]>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L11811)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L12162)
 
 Since v4.0.0

@@ -5,6 +5,11 @@ Module: `Match`<br />
 
 Throws an error if no pattern matches.
 
+**When to use**
+
+Use to finalize a matcher when every remaining unmatched case should be
+impossible.
+
 **Details**
 
 This function finalizes a matcher by ensuring that if no patterns match, an
@@ -34,12 +39,17 @@ console.log(strictMatcher("b")) // "Found B"
 // strictMatcher("c" as any) // throws
 ```
 
+**See**
+
+- `exhaustive` for compile-time exhaustive matcher finalization
+- `orElse` for providing a fallback for unmatched input
+
 **Signature**
 
 ```ts
 declare const orElseAbsurd: <I, R, RA, A, Pr, Ret>(self: Matcher<I, R, RA, A, Pr, Ret>) => [Pr] extends [never] ? (input: I) => Unify<A> : Unify<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L1733)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L1921)
 
 Since v4.0.0

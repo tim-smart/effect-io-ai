@@ -5,6 +5,12 @@ Module: `Effect`<br />
 
 Encapsulates both success and failure of an `Effect` into a `Result` type.
 
+**When to use**
+
+Use when you want to handle typed failures as data while preserving
+the original error value. Use `option` when you only care whether the effect
+succeeded, and `exit` when you need the full failure cause.
+
 **Details**
 
 This function converts an effect that may fail into an effect that always
@@ -17,13 +23,14 @@ causing the effect to fail. This is particularly useful in scenarios where
 you want to chain effects and manage both success and failure in the same
 logical flow.
 
-It's important to note that unrecoverable errors, often referred to as
-"defects," are still thrown and not captured within the `Result` type. Only
-failures that are explicitly represented as recoverable errors in the effect
-are encapsulated.
-
 The resulting effect cannot fail directly because all recoverable failures
 are represented inside the `Result` type.
+
+**Gotchas**
+
+`result` only captures typed, recoverable failures. Defects and
+interruptions are not captured inside the `Result` and still fail the
+effect.
 
 **Example** (Capturing success or failure as Result)
 
@@ -54,6 +61,6 @@ Effect.runPromise(program2).then(console.log)
 declare const result: <A, E, R>(self: Effect<A, E, R>) => Effect<Result.Result<A, E>, never, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L2095)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L2208)
 
 Since v4.0.0

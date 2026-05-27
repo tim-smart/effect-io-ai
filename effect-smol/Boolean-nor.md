@@ -5,6 +5,10 @@ Module: `Boolean`<br />
 
 Combines two booleans using NOR: `!(self || that)`.
 
+**When to use**
+
+Use to accept only when both boolean operands are `false`.
+
 **Example** (Combining booleans with NOR)
 
 ```ts
@@ -23,6 +27,6 @@ assert.deepStrictEqual(Boolean.nor(false, false), true)
 declare const nor: { (that: boolean): (self: boolean) => boolean; (self: boolean, that: boolean): boolean; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Boolean.ts#L232)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Boolean.ts#L335)
 
 Since v2.0.0

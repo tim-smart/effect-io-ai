@@ -12,6 +12,6 @@ and exit status.
 type SpanStatusEnded = Schema.Schema.Type<typeof SpanStatusEnded>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DevToolsSchema.ts#L77)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DevToolsSchema.ts#L85)
 
 Since v4.0.0

@@ -8,7 +8,7 @@ domain.
 
 **When to use**
 
-Build groups from `empty.add(...)`, then provide implementations for the events
+Use when build groups from `empty.add(...)`, then provide implementations for the events
 with `EventLog.group`.
 
 **Signature**
@@ -43,6 +43,6 @@ export interface EventGroup<
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventGroup.ts#L61)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventGroup.ts#L69)
 
 Since v4.0.0

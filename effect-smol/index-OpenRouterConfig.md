@@ -11,6 +11,6 @@ Re-exports all named exports from the "./OpenRouterConfig.ts" module as `OpenRou
 export * as OpenRouterConfig from "./OpenRouterConfig.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openrouter/src/index.ts#L60)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openrouter/src/index.ts#L20)
 
 Since v4.0.0

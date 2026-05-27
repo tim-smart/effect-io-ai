@@ -5,6 +5,10 @@ Module: `Data`<br />
 
 Type-guard and pattern-matching interface for generic tagged enums.
 
+**When to use**
+
+Use to type the `$is` and `$match` helpers for generic tagged enums.
+
 **Details**
 
 This is the `$is` / `$match` portion of the object returned by
@@ -66,6 +70,6 @@ export interface GenericMatchers<Z extends WithGenerics<number>> {
   }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Data.ts#L504)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Data.ts#L537)
 
 Since v3.2.0

@@ -7,7 +7,7 @@ Executes an effect and returns the result as a `Promise`.
 
 **When to use**
 
-Use `runPromise` when you need to execute an effect and work with the
+Use when you need to execute an effect and work with the
 result using `Promise` syntax, typically for compatibility with other
 promise-based code.
 
@@ -44,6 +44,6 @@ Effect.runPromise(Effect.fail("my error")).catch(console.error)
 declare const runPromise: <A, E>(effect: Effect<A, E>, options?: RunOptions | undefined) => Promise<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L8396)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L8951)
 
 Since v2.0.0

@@ -5,6 +5,10 @@ Module: `Boolean`<br />
 
 An `Equivalence` instance for booleans using strict equality (`===`).
 
+**When to use**
+
+Use when an API needs an `Equivalence` instance for boolean equality.
+
 **Example** (Comparing booleans for equivalence)
 
 ```ts
@@ -20,6 +24,6 @@ console.log(Boolean.Equivalence(true, false)) // false
 declare const Equivalence: Equ.Equivalence<boolean>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Boolean.ts#L125)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Boolean.ts#L204)
 
 Since v2.0.0

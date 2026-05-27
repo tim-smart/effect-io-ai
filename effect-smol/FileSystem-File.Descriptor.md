@@ -16,6 +16,6 @@ to identify open files. The branded type ensures type safety.
 type Descriptor = Brand.Branded<number, "FileDescriptor">
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FileSystem.ts#L1140)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FileSystem.ts#L1183)
 
 Since v4.0.0

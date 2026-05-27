@@ -6,6 +6,12 @@ Module: `Effect`<br />
 Adds a time limit to an effect, triggering a timeout if the effect exceeds
 the duration.
 
+**When to use**
+
+Use when exceeding the time limit should be represented as a typed
+failure. Use `timeoutOption` when a timeout should become `Option.none`, and
+`timeoutOrElse` when you want to run a fallback effect.
+
 **Details**
 
 The `timeout` function allows you to specify a time limit for an
@@ -13,6 +19,10 @@ effect's execution. If the effect does not complete within the given time, a
 `TimeoutException` is raised. This can be useful for controlling how long
 your program waits for a task to finish, ensuring that it doesn't hang
 indefinitely if the task takes too long.
+
+**Gotchas**
+
+If the timeout wins, the source effect is interrupted.
 
 **Example** (Failing when work takes too long)
 
@@ -46,6 +56,7 @@ Effect.runPromiseExit(timedEffect).then(console.log)
 
 **See**
 
+- `timeoutOption` for returning `Option.none` on timeout.
 - `timeoutOrElse` for a version that allows specifying both success and timeout handlers.
 
 **Signature**
@@ -54,6 +65,6 @@ Effect.runPromiseExit(timedEffect).then(console.log)
 declare const timeout: { (duration: Duration.Input): <A, E, R>(self: Effect<A, E, R>) => Effect<A, E | Cause.TimeoutError, R>; <A, E, R>(self: Effect<A, E, R>, duration: Duration.Input): Effect<A, E | Cause.TimeoutError, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L4192)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L4485)
 
 Since v2.0.0

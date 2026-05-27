@@ -15,6 +15,6 @@ type PayloadMap = ReadonlyMap<string, {
 }>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiEndpoint.ts#L65)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiEndpoint.ts#L93)
 
 Since v4.0.0

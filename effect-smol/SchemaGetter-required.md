@@ -7,7 +7,7 @@ Creates a getter that fails with `MissingKey` if the input is absent (`Option.No
 
 **When to use**
 
-- A struct field must be present in the encoded input.
+Use when a struct field must be present in the encoded input.
 - You want schema validation to report a missing key error.
 
 **Details**
@@ -26,8 +26,8 @@ const mustExist = SchemaGetter.required<string>()
 
 **See**
 
-- `onNone` - provide a fallback instead of failing
-- `withDefault` - substitute a default for undefined values
+- `onNone` to provide a fallback instead of failing
+- `withDefault` to substitute a default for undefined values
 
 **Signature**
 

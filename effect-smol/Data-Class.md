@@ -7,7 +7,7 @@ Base class for immutable data types.
 
 **When to use**
 
-Use `Class` when you need a lightweight immutable value type with `.pipe()` support. If you also need a `_tag` discriminator, use `TaggedClass`; if you need a yieldable error, use `Error` or `TaggedError`.
+Use when you need a lightweight immutable value type with `.pipe()` support. If you also need a `_tag` discriminator, use `TaggedClass`; if you need a yieldable error, use `Error` or `TaggedError`.
 
 **Details**
 
@@ -40,6 +40,6 @@ console.log(Equal.equals(mike1, mike2))
 declare const Class: new <A extends Record<string, any> = {}>(args: Types.VoidIfEmpty<{ readonly [P in keyof A]: A[P]; }>) => Readonly<A> & Pipeable.Pipeable
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Data.ts#L114)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Data.ts#L118)
 
 Since v2.0.0

@@ -6,6 +6,11 @@ Module: `Function`<br />
 Creates a function that can be called in data-first style or data-last
 (`pipe`-friendly) style.
 
+**When to use**
+
+Use to expose one implementation through both direct and `pipe`-friendly
+call styles.
+
 **Details**
 
 Pass either the arity of the uncurried function or a predicate that decides
@@ -63,6 +68,6 @@ console.log(pipe(2, sum(3))) // 5
 declare const dual: { <DataLast extends (...args: Array<any>) => any, DataFirst extends (...args: Array<any>) => any>(arity: Parameters<DataFirst>["length"], body: DataFirst): DataLast & DataFirst; <DataLast extends (...args: Array<any>) => any, DataFirst extends (...args: Array<any>) => any>(isDataFirst: (args: IArguments) => boolean, body: DataFirst): DataLast & DataFirst; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Function.ts#L130)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Function.ts#L139)
 
 Since v2.0.0

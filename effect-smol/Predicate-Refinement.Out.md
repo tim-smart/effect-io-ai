@@ -7,7 +7,7 @@ Extracts the output type `B` from a `Refinement<A, B>`.
 
 **When to use**
 
-- You want to infer the narrowed type from a refinement type.
+Use when you want to infer the narrowed type from a refinement type.
 
 **Details**
 
@@ -33,6 +33,6 @@ type Output = Predicate.Refinement.Out<R>
 type Out<T> = [T] extends [Refinement<infer _, infer _B>] ? _B : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L313)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L338)
 
 Since v3.6.0

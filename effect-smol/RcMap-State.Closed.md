@@ -6,6 +6,10 @@ Module: `RcMap`<br />
 Represents the closed state of an RcMap, indicating that the map has been
 shut down and will no longer accept new operations.
 
+**When to use**
+
+Use when handling an `RcMap` after its owning scope has closed.
+
 **Signature**
 
 ```ts
@@ -14,6 +18,6 @@ export interface Closed {
   }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RcMap.ts#L117)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RcMap.ts#L148)
 
 Since v4.0.0

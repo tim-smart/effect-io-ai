@@ -7,7 +7,7 @@ Base class for yieldable errors.
 
 **When to use**
 
-Use `Error` for errors that do **not** need tag-based discrimination. If you need `Effect.catchTag` support, use `TaggedError`.
+Use when you use `Error` for errors that do **not** need tag-based discrimination. If you need `Effect.catchTag` support, use `TaggedError`.
 
 **Details**
 
@@ -45,6 +45,6 @@ Effect.runSync(Effect.exit(program))
 declare const Error: new <A extends Record<string, any> = {}>(args: Types.VoidIfEmpty<{ readonly [P in keyof A]: A[P]; }>) => Cause.YieldableError & Readonly<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Data.ts#L754)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Data.ts#L790)
 
 Since v2.0.0

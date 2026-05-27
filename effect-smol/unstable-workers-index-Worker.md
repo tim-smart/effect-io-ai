@@ -11,6 +11,6 @@ Re-exports all named exports from the "./Worker.ts" module as `Worker`.
 export * as Worker from "./Worker.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L55)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L15)
 
 Since v4.0.0

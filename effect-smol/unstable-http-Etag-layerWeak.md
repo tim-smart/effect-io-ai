@@ -11,6 +11,6 @@ Layer that provides a `Generator` which produces weak ETags from file size and m
 declare const layerWeak: Layer.Layer<Generator, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Etag.ts#L125)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Etag.ts#L155)
 
 Since v4.0.0

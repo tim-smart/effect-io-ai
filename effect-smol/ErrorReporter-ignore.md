@@ -6,6 +6,11 @@ Module: `ErrorReporter`<br />
 String property key used to mark an object error as ignored by error
 reporting.
 
+**When to use**
+
+Use to type the property key that suppresses reporting for expected object
+errors.
+
 **Details**
 
 Set this property to `true` on an error class or object error to prevent it
@@ -18,6 +23,6 @@ as HTTP 404 responses.
 type ignore = "~effect/ErrorReporter/ignore"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ErrorReporter.ts#L322)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ErrorReporter.ts#L369)
 
 Since v4.0.0

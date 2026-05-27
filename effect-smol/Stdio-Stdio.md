@@ -5,6 +5,11 @@ Module: `Stdio`<br />
 
 Service interface for process standard I/O.
 
+**When to use**
+
+Use to depend on command-line arguments and standard I/O through the Effect
+environment.
+
 **Details**
 
 The service provides command-line arguments, sinks for standard output and
@@ -27,6 +32,6 @@ export interface Stdio {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stdio.ts#L55)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stdio.ts#L81)
 
 Since v4.0.0

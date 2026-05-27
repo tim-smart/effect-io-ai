@@ -20,6 +20,6 @@ export interface Atom<A> extends Pipeable, Inspectable.Inspectable {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Atom.ts#L80)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Atom.ts#L94)
 
 Since v4.0.0

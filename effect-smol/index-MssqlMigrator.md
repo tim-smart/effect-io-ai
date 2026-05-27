@@ -11,6 +11,6 @@ Re-exports all named exports from the "./MssqlMigrator.ts" module as `MssqlMigra
 export * as MssqlMigrator from "./MssqlMigrator.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/sql/d1/src/index.ts#L69)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/sql/d1/src/index.ts#L22)
 
 Since v4.0.0

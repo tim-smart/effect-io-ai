@@ -66,6 +66,6 @@ export interface From<Table extends IndexedDbTable.AnyWithProps> {
   }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbQueryBuilder.ts#L270)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbQueryBuilder.ts#L278)
 
 Since v4.0.0

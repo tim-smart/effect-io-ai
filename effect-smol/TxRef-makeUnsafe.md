@@ -7,8 +7,8 @@ Synchronously creates a new `TxRef` with the specified initial value.
 
 **When to use**
 
-Prefer `make` in Effect code so allocation stays inside the Effect workflow.
-Use `makeUnsafe` only when a `TxRef` must be constructed outside an effect.
+Use to construct a transactional reference synchronously when it must be
+created outside an `Effect` workflow.
 
 **Example** (Creating transactional references unsafely)
 
@@ -30,6 +30,6 @@ console.log(config.value) // { timeout: 5000, retries: 3 }
 declare const makeUnsafe: <A>(initial: A) => TxRef<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxRef.ts#L114)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxRef.ts#L176)
 
 Since v4.0.0

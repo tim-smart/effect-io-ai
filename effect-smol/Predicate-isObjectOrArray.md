@@ -7,7 +7,7 @@ Checks whether a value is an object or an array (non-null object).
 
 **When to use**
 
-- You want to accept plain objects and arrays, but not `null`.
+Use when you want to accept plain objects and arrays, but not `null`.
 
 **Details**
 
@@ -34,6 +34,6 @@ console.log(Predicate.isObjectOrArray([]))
 declare const isObjectOrArray: (input: unknown) => input is { [x: PropertyKey]: unknown; } | Array<unknown>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L1054)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L1079)
 
 Since v4.0.0

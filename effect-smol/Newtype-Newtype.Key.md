@@ -7,7 +7,7 @@ Extracts the key literal type from a newtype.
 
 **When to use**
 
-Use this in generic code that needs to inspect or constrain the key.
+Use to inspect or constrain a newtype's key in generic code.
 
 **Signature**
 
@@ -15,6 +15,6 @@ Use this in generic code that needs to inspect or constrain the key.
 type Key<N> = N extends Newtype<infer Key, unknown> ? Key : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Newtype.ts#L143)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Newtype.ts#L152)
 
 Since v4.0.0

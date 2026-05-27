@@ -8,8 +8,8 @@ flattening the result. Returns `None` if the input is `None`.
 
 **When to use**
 
-- Chaining computations that each may fail (return `None`)
-- Sequencing dependent optional operations
+Use when chaining dependent optional computations where each step may return
+`None`.
 
 **Details**
 
@@ -52,6 +52,6 @@ console.log(street)
 declare const flatMap: { <A, B>(f: (a: A) => Option<B>): (self: Option<A>) => Option<B>; <A, B>(self: Option<A>, f: (a: A) => Option<B>): Option<B>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L1333)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L1360)
 
 Since v2.0.0

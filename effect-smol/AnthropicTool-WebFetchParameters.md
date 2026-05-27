@@ -5,12 +5,21 @@ Module: `AnthropicTool`<br />
 
 Type of the parameters Claude supplies when invoking the Anthropic web fetch tool.
 
+**Details**
+
+The payload contains the single `url` parameter for Anthropic web fetch.
+
+**Gotchas**
+
+The URL must be user-provided or from prior search/fetch results. Maximum URL
+length is 250 characters.
+
 **Signature**
 
 ```ts
 type WebFetchParameters = typeof WebFetchParameters.Type
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L1611)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L2354)
 
 Since v4.0.0

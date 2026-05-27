@@ -11,6 +11,6 @@ Extracts the key-path type from an `IndexedDbTable`.
 type KeyPath<Table> = Table["keyPath"]
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbTable.ts#L115)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbTable.ts#L132)
 
 Since v4.0.0

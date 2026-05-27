@@ -5,12 +5,21 @@ Module: `BigInt`<br />
 
 A `Combiner` that returns the minimum `bigint`.
 
+**When to use**
+
+Use to keep the smallest `bigint` through APIs that consume a `Combiner`.
+
+**See**
+
+- `CombinerMax` for keeping the largest `bigint`
+- `min` for comparing two `bigint` values directly
+
 **Signature**
 
 ```ts
 declare const CombinerMin: Combiner.Combiner<bigint>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigInt.ts#L810)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigInt.ts#L1086)
 
 Since v4.0.0

@@ -5,11 +5,21 @@ Module: `SchemaParser`<br />
 
 Creates an encoder for `unknown` input that returns a `Result`.
 
+**When to use**
+
+Use when encoding values from an unknown or dynamically typed boundary
+synchronously, and you want schema issues returned as `Result` data.
+
 **Details**
 
 The returned function produces `Result.succeed` with the schema's `Encoded`
 value on success or `Result.fail` with a `SchemaIssue.Issue` on encoding
 failure.
+
+**See**
+
+- `encodeResult` for input already typed as the schema's decoded `Type`
+- `encodeUnknownEffect` for effectful encoding, including schemas with encoding service requirements
 
 **Signature**
 
@@ -17,6 +27,6 @@ failure.
 declare const encodeUnknownResult: <S extends Schema.Encoder<unknown>>(schema: S, options?: AST.ParseOptions) => (input: unknown, options?: AST.ParseOptions) => Result.Result<S["Encoded"], Issue.Issue>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaParser.ts#L565)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaParser.ts#L797)
 
 Since v4.0.0

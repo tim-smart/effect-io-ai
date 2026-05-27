@@ -7,7 +7,7 @@ Extracts the actual input value from any `Issue` variant.
 
 **When to use**
 
-- Retrieve the offending value for logging or custom error rendering.
+Use when retrieve the offending value for logging or custom error rendering.
 - Uniformly access `actual` regardless of which issue variant you have.
 
 **Details**

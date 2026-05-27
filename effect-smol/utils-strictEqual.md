@@ -11,6 +11,6 @@ Asserts that `actual` is strictly equal to `expected` using Node's `assert.stric
 declare const strictEqual: <A>(actual: A, expected: A, message?: string, ..._: Array<never>) => void
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/vitest/src/utils.ts#L67)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/vitest/src/utils.ts#L82)
 
 Since v4.0.0

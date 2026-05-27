@@ -19,7 +19,7 @@ const toCamel = SchemaGetter.snakeToCamel<string>()
 
 **See**
 
-- `camelToSnake` - inverse operation
+- `camelToSnake` for the inverse operation
 
 **Signature**
 

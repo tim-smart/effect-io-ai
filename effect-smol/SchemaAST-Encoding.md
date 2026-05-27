@@ -22,6 +22,6 @@ encoding transformation (type and encoded forms are identical).
 type Encoding = readonly [Link, ...Array<Link>]
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L376)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L494)
 
 Since v4.0.0

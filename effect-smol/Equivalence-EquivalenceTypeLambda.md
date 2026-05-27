@@ -7,7 +7,7 @@ Type lambda for `Equivalence`, used for higher-kinded type operations.
 
 **When to use**
 
-- Rarely needed in application code
+Use when rarely needed in application code
 - Use primarily for internal type system operations and HKT (Higher-Kinded Types) abstractions
 - Use when working with generic type constructors that require type lambdas
 

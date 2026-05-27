@@ -12,6 +12,6 @@ message framing.
 declare const msgPack: { makeUnsafe(): Parser; readonly contentType: string; readonly includesFraming: boolean; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RpcSerialization.ts#L495)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RpcSerialization.ts#L505)
 
 Since v4.0.0

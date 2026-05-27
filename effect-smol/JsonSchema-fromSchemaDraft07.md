@@ -7,7 +7,7 @@ Parses a raw Draft-07 JSON Schema into a `Document<"draft-2020-12">`.
 
 **When to use**
 
-Use this when you have a JSON Schema that follows Draft-07 conventions and
+Use when you have a JSON Schema that follows Draft-07 conventions and
 need the canonical Draft-2020-12 document representation.
 
 **Details**
@@ -54,6 +54,6 @@ console.log(doc.schema.properties) // { tags: { type: "array", items: { type: "s
 declare const fromSchemaDraft07: (js: JsonSchema) => Document<"draft-2020-12">
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/JsonSchema.ts#L273)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/JsonSchema.ts#L327)
 
 Since v4.0.0

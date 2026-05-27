@@ -5,6 +5,10 @@ Module: `MutableHashMap`<br />
 
 Returns an iterable over the keys in the `MutableHashMap`.
 
+**When to use**
+
+Use to iterate over the keys currently stored in a mutable hash map.
+
 **Example** (Reading keys)
 
 ```ts
@@ -23,12 +27,17 @@ console.log(allKeys) // ["apple", "banana", "cherry"]
 const hasRequiredKeys = allKeys.includes("apple") && allKeys.includes("banana")
 ```
 
+**See**
+
+- `values` for iterating over stored values
+- `has` for checking one key without iterating
+
 **Signature**
 
 ```ts
 declare const keys: <K, V>(self: MutableHashMap<K, V>) => Iterable<K>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableHashMap.ts#L281)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableHashMap.ts#L358)
 
 Since v3.8.0

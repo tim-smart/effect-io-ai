@@ -5,6 +5,11 @@ Module: `Cause`<br />
 
 Returns `true` if the cause contains at least one `Fail` reason.
 
+**When to use**
+
+Use to check whether a cause includes typed failures before extracting,
+mapping, or rendering them.
+
 **Example** (checking for typed errors)
 
 ```ts
@@ -25,6 +30,6 @@ console.log(Cause.hasFails(Cause.die("defect"))) // false
 declare const hasFails: <E>(self: Cause<E>) => boolean
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L780)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L849)
 
 Since v4.0.0

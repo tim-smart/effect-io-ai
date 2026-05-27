@@ -8,7 +8,7 @@ fail.
 
 **When to use**
 
-In situations where you need to perform asynchronous operations that might
+Use when in situations where you need to perform asynchronous operations that might
 fail, such as fetching data from an API, you can use the `tryPromise`
 constructor. This constructor is designed to handle operations that could
 throw exceptions by capturing those exceptions and transforming them into
@@ -75,6 +75,6 @@ const program = getTodo(1)
 declare const tryPromise: <A, E = Cause.UnknownError>(options: { readonly try: (signal: AbortSignal) => PromiseLike<A>; readonly catch: (error: unknown) => E; } | ((signal: AbortSignal) => PromiseLike<A>)) => Effect<A, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L946)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L1009)
 
 Since v2.0.0

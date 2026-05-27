@@ -16,6 +16,6 @@ length, and rejects truncated or trailing bytes.
 declare const decodeSessionAuthPayload: (payload: Uint8Array<ArrayBufferLike>) => Effect.Effect<SessionAuthPayload, EventLogSessionAuthError, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventLogSessionAuth.ts#L297)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventLogSessionAuth.ts#L315)
 
 Since v4.0.0

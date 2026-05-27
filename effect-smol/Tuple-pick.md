@@ -7,7 +7,7 @@ Creates a new tuple containing only the elements at the specified indices.
 
 **When to use**
 
-Use this to select a subset of elements from a tuple by position.
+Use to select a subset of elements from a tuple by position.
 
 **Details**
 
@@ -34,6 +34,6 @@ console.log(result) // ["a", "c", "d"]
 declare const pick: { <const T extends ReadonlyArray<unknown>, const I extends ReadonlyArray<Indices<T>>>(indices: I): (self: T) => PickTuple<T, I[number]>; <const T extends ReadonlyArray<unknown>, const I extends ReadonlyArray<Indices<T>>>(self: T, indices: I): PickTuple<T, I[number]>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tuple.ts#L183)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tuple.ts#L182)
 
 Since v4.0.0

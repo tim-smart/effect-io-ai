@@ -8,7 +8,7 @@ fixed-length tuple.
 
 **When to use**
 
-Use this to guard against unexpected array lengths at runtime.
+Use to guard against unexpected array lengths at runtime.
 
 **Details**
 
@@ -41,6 +41,6 @@ if (Tuple.isTupleOf(arr, 3)) {
 declare const isTupleOf: { <N extends number>(n: N): <T>(self: ReadonlyArray<T>) => self is TupleOf<N, T>; <T, N extends number>(self: ReadonlyArray<T>, n: N): self is TupleOf<N, T>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tuple.ts#L674)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tuple.ts#L685)
 
 Since v3.3.0

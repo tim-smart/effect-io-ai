@@ -9,6 +9,12 @@ which must be released properly. You can both get the current value of any
 resources). The reference itself takes care of properly releasing resources
 for the old value whenever a new value is obtained.
 
+**When to use**
+
+Use when an application needs to keep a current resource-backed value and
+later replace it with another acquired value while ensuring the previous
+value is released.
+
 **Signature**
 
 ```ts
@@ -18,6 +24,6 @@ export interface ScopedRef<in out A> extends Pipeable {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ScopedRef.ts#L44)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ScopedRef.ts#L50)
 
 Since v2.0.0

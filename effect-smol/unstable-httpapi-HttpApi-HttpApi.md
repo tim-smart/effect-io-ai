@@ -8,7 +8,7 @@ portion of your domain.
 
 **When to use**
 
-Endpoint implementations can be provided with `HttpApiBuilder.group`, and the
+Use when endpoint implementations can be provided with `HttpApiBuilder.group`, and the
 completed API can be registered with `HttpApiBuilder.layer`.
 
 **Signature**
@@ -64,6 +64,6 @@ export interface HttpApi<
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApi.ts#L63)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApi.ts#L87)
 
 Since v4.0.0

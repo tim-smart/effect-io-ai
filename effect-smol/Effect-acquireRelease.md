@@ -6,6 +6,10 @@ Module: `Effect`<br />
 Constructs a scoped resource from an acquisition effect and a release
 finalizer.
 
+**When to use**
+
+Use to acquire a scoped resource with an explicit release finalizer.
+
 **Details**
 
 If acquisition succeeds, the release finalizer is added to the current scope
@@ -53,12 +57,17 @@ const program = Effect.scoped(
 )
 ```
 
+**See**
+
+- `acquireDisposable` for resources that implement JavaScript disposal protocols
+- `acquireUseRelease` for bracketing acquire, use, and release in one effect
+
 **Signature**
 
 ```ts
 declare const acquireRelease: <A, E, R, R2>(acquire: Effect<A, E, R>, release: (a: A, exit: Exit.Exit<unknown, unknown>) => Effect<unknown, never, R2>, options?: { readonly interruptible?: boolean; }) => Effect<A, E, R | R2 | Scope>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L6055)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L6468)
 
 Since v2.0.0

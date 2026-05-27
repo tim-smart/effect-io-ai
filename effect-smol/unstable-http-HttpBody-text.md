@@ -15,6 +15,6 @@ The content type defaults to `text/plain`.
 declare const text: (body: string, contentType?: string) => Uint8Array
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpBody.ts#L278)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpBody.ts#L318)
 
 Since v4.0.0

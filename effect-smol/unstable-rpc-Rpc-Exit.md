@@ -12,6 +12,6 @@ error types.
 type Exit<R> = Exit_<SuccessExit<R>, ErrorExit<R>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Rpc.ts#L428)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Rpc.ts#L439)
 
 Since v4.0.0

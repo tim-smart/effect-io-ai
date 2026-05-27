@@ -5,6 +5,11 @@ Module: `Context`<br />
 
 Merges two `Context`s into one.
 
+**When to use**
+
+Use when combining two contexts. Use `mergeAll` when combining a
+variadic list of contexts.
+
 **Details**
 
 When both contexts contain the same service key, the service from `that`
@@ -28,12 +33,16 @@ assert.deepStrictEqual(Context.get(context, Port), { PORT: 8080 })
 assert.deepStrictEqual(Context.get(context, Timeout), { TIMEOUT: 5000 })
 ```
 
+**See**
+
+- `mergeAll` for merging more than two contexts at once
+
 **Signature**
 
 ```ts
 declare const merge: { <R1>(that: Context<R1>): <Services>(self: Context<Services>) => Context<R1 | Services>; <Services, R1>(self: Context<Services>, that: Context<R1>): Context<Services | R1>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Context.ts#L945)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Context.ts#L1132)
 
 Since v2.0.0

@@ -6,6 +6,11 @@ Module: `References`<br />
 Reference for managing log annotations that are automatically added to all log entries.
 These annotations provide contextual metadata that appears in every log message.
 
+**When to use**
+
+Use to attach shared contextual metadata to every log entry emitted in the
+current context.
+
 **Example** (Managing log annotations)
 
 ```ts
@@ -60,6 +65,6 @@ const logAnnotationExample = Effect.gen(function*() {
 declare const CurrentLogAnnotations: Context.Reference<ReadonlyRecord<string, unknown>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/References.ts#L163)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/References.ts#L282)
 
 Since v4.0.0

@@ -5,6 +5,10 @@ Module: `LogLevel`<br />
 
 An `Order` instance for `LogLevel` that defines the severity ordering.
 
+**When to use**
+
+Use to sort or compare log levels according to Effect's severity order.
+
 **Details**
 
 This order treats "All" as the least restrictive level and "None" as the most restrictive,
@@ -27,6 +31,6 @@ console.log(LogLevel.Order("Info", "Info")) // 0 (Info == Info)
 declare const Order: Ord.Order<LogLevel>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/LogLevel.ts#L128)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/LogLevel.ts#L166)
 
 Since v2.0.0

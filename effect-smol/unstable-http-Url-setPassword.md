@@ -11,6 +11,6 @@ Updates the password used for authentication.
 declare const setPassword: { (password: string | Redacted.Redacted): (url: URL) => URL; (url: URL, password: string | Redacted.Redacted): URL; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Url.ts#L175)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Url.ts#L191)
 
 Since v4.0.0

@@ -11,6 +11,6 @@ Re-exports all named exports from the "./SqlSchema.ts" module as `SqlSchema`.
 export * as SqlSchema from "./SqlSchema.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L181)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L40)
 
 Since v4.0.0

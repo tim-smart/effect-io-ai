@@ -12,6 +12,6 @@ before statement execution.
 declare const CurrentTransformer: Context.Reference<Transformer | undefined>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Statement.ts#L111)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Statement.ts#L131)
 
 Since v4.0.0

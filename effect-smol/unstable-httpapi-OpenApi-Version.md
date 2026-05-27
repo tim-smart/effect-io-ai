@@ -11,6 +11,6 @@ OpenAPI annotation for setting the generated API version.
 declare class Version
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/OpenApi.ts#L74)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/OpenApi.ts#L86)
 
 Since v4.0.0

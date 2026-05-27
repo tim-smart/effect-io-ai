@@ -5,6 +5,10 @@ Module: `TxRef`<br />
 
 Creates a new `TxRef` with the specified initial value.
 
+**When to use**
+
+Use to create a transactional reference inside an `Effect` workflow.
+
 **Example** (Creating transactional references)
 
 ```ts
@@ -32,6 +36,6 @@ const program = Effect.gen(function*() {
 declare const make: <A>(initial: A) => Effect.Effect<TxRef<A>, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxRef.ts#L87)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxRef.ts#L149)
 
 Since v2.0.0

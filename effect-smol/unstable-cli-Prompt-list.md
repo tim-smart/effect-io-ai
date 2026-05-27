@@ -12,6 +12,6 @@ submitted input on the configured delimiter.
 declare const list: (options: ListOptions) => Prompt<Array<string>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L960)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L985)
 
 Since v4.0.0

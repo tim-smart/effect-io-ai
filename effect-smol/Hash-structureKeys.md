@@ -5,6 +5,10 @@ Module: `Hash`<br />
 
 Computes a hash value for an object using only the specified keys.
 
+**When to use**
+
+Use to hash an object by a selected set of property keys.
+
 **Details**
 
 This function allows you to hash an object by considering only specific keys,
@@ -37,6 +41,6 @@ console.log(hash1 === hash3) // true
 declare const structureKeys: (o: object, keys: Iterable<PropertyKey>) => number
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Hash.ts#L378)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Hash.ts#L471)
 
 Since v2.0.0

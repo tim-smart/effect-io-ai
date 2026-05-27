@@ -12,6 +12,6 @@ No-content schema variant for `Gone`, decoding an empty 410 response into a
 declare const GoneNoContent: HttpApiSchema.asNoContent<typeof Gone>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiError.ts#L312)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiError.ts#L332)
 
 Since v4.0.0

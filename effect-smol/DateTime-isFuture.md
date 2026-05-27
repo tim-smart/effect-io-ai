@@ -27,6 +27,6 @@ const program = Effect.gen(function*() {
 declare const isFuture: (self: DateTime) => Effect.Effect<boolean>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L1407)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L1454)
 
 Since v3.6.0

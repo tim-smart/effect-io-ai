@@ -20,7 +20,7 @@ const decode = SchemaGetter.decodeUriComponent<string>()
 
 **See**
 
-- `encodeUriComponent` - inverse operation
+- `encodeUriComponent` for the inverse operation
 
 **Signature**
 

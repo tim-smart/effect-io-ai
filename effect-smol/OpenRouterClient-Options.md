@@ -28,12 +28,12 @@ type Options = {
    *
    * **When to use**
    *
-   * Use this to add middleware, logging, or custom request/response handling.
+   * Use to add middleware, logging, or custom request/response handling.
    */
   readonly transformClient?: ((client: HttpClient.HttpClient) => HttpClient.HttpClient) | undefined
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openrouter/src/OpenRouterClient.ts#L119)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openrouter/src/OpenRouterClient.ts#L128)
 
 Since v4.0.0

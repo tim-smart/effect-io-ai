@@ -11,6 +11,6 @@ Returns `true` when a value is a `WorkerError`.
 declare const isWorkerError: (u: unknown) => u is WorkerError
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/WorkerError.ts#L42)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/WorkerError.ts#L58)
 
 Since v4.0.0

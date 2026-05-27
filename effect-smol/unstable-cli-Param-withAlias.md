@@ -7,7 +7,7 @@ Adds an alias to an option.
 
 **When to use**
 
-Aliases allow params to be specified with alternative names,
+Use when aliases allow params to be specified with alternative names,
 typically single-character shortcuts like "-f" for "--force".
 
 **Details**
@@ -40,6 +40,6 @@ const count = Param.integer(Param.flagKind, "count").pipe(
 declare const withAlias: { <Kind extends ParamKind, A>(alias: string): (self: Param<Kind, A>) => Param<Kind, A>; <Kind extends ParamKind, A>(self: Param<Kind, A>, alias: string): Param<Kind, A>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Param.ts#L988)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Param.ts#L1003)
 
 Since v4.0.0

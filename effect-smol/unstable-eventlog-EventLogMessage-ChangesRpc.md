@@ -17,6 +17,6 @@ parts.
 declare class ChangesRpc
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventLogMessage.ts#L330)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventLogMessage.ts#L339)
 
 Since v4.0.0

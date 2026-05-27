@@ -7,7 +7,7 @@ Maps HTTP status codes to semantic error reasons.
 
 **When to use**
 
-Provider packages can use this as a base for provider-specific mapping.
+Use when provider packages can use this as a base for provider-specific mapping.
 
 **Example** (Mapping an HTTP status to a reason)
 
@@ -28,6 +28,6 @@ console.log(reason._tag) // "RateLimitError"
 declare const reasonFromHttpStatus: (params: { readonly status: number; readonly body?: unknown; readonly http?: typeof HttpContext.Type; readonly metadata?: typeof ProviderMetadata.Type; readonly description?: string | undefined; }) => AiErrorReason
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AiError.ts#L1640)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AiError.ts#L1663)
 
 Since v4.0.0

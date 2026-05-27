@@ -14,6 +14,6 @@ type ForApi<Api, E, R> = Api extends
   never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiClient.ts#L79)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiClient.ts#L91)
 
 Since v4.0.0

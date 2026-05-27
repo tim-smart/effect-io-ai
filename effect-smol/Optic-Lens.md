@@ -7,7 +7,7 @@ Focuses on exactly one part `A` inside a whole `S`.
 
 **When to use**
 
-- You always have a value to read (the part exists unconditionally).
+Use when you always have a value to read (the part exists unconditionally).
 - You need the original `S` to produce the updated whole (unlike
   `Iso`).
 

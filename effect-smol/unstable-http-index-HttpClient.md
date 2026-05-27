@@ -11,6 +11,6 @@ Re-exports all named exports from the "./HttpClient.ts" module as `HttpClient`.
 export * as HttpClient from "./HttpClient.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L134)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L40)
 
 Since v4.0.0

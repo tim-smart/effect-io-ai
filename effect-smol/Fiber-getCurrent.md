@@ -6,6 +6,16 @@ Module: `Fiber`<br />
 Returns the current fiber if called from within a fiber context,
 otherwise returns `undefined`.
 
+**When to use**
+
+Use when you need low-level runtime integrations that need access to the currently
+executing fiber.
+
+**Gotchas**
+
+This is a synchronous accessor, not an Effect. It returns `undefined` outside
+an active fiber runtime context.
+
 **Example** (Getting the current fiber)
 
 ```ts
@@ -25,6 +35,6 @@ const program = Effect.gen(function*() {
 declare const getCurrent: () => Fiber<any, any> | undefined
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Fiber.ts#L500)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Fiber.ts#L650)
 
 Since v4.0.0

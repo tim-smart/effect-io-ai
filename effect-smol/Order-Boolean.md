@@ -7,7 +7,7 @@ An `Order` instance for booleans where `false` is considered less than `true`.
 
 **When to use**
 
-- When comparing booleans for sorting or searching
+Use when when comparing booleans for sorting or searching
 - As a base for creating orders on types containing booleans
 - When implementing boolean-based comparisons
 
@@ -29,7 +29,7 @@ console.log(Order.Boolean(true, true)) // 0
 
 **See**
 
-- `mapInput` - Use this order to compare objects by a boolean property
+- `mapInput` to compare objects by a boolean property
 
 **Signature**
 
@@ -37,6 +37,6 @@ console.log(Order.Boolean(true, true)) // 0
 declare const Boolean: Order<boolean>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Order.ts#L265)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Order.ts#L294)
 
 Since v4.0.0

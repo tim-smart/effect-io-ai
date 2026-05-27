@@ -7,7 +7,7 @@ Creates a getter that replaces `undefined` values with a default.
 
 **When to use**
 
-- A field may be `undefined` in the encoded input and should have a fallback.
+Use when a field may be `undefined` in the encoded input and should have a fallback.
 
 **Details**
 
@@ -26,8 +26,8 @@ const withZero = SchemaGetter.withDefault(Effect.succeed(0))
 
 **See**
 
-- `onNone` - handle only absent keys (not `undefined` values)
-- `required` - fail instead of providing a default
+- `onNone` to handle only absent keys (not `undefined` values)
+- `required` when absent input should fail instead of using a default
 
 **Signature**
 

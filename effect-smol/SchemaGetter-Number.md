@@ -7,7 +7,7 @@ Coerces any value to a `number` using the global `Number()` constructor.
 
 **When to use**
 
-- You need numeric coercion of an encoded value.
+Use when you need numeric coercion of an encoded value.
 
 **Details**
 
@@ -25,7 +25,7 @@ const toNumber = SchemaGetter.Number<string>()
 
 **See**
 
-- `transformOrFail` - for validated number parsing
+- `transformOrFail` for validated number parsing
 
 **Signature**
 

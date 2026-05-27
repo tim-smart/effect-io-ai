@@ -34,6 +34,6 @@ type ModifyType<Table> = & (IndexedDbTable.AutoIncrement<Table> extends true ?
       : {})
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbQueryBuilder.ts#L195)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbQueryBuilder.ts#L203)
 
 Since v4.0.0

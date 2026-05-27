@@ -3,8 +3,7 @@ Module: `Cause`<br />
 
 ## Cause.Cause.ReasonProto
 
-Base interface shared by all reason types (`Fail`, `Die`,
-`Interrupt`).
+Base interface shared by all reason types (`Fail`, `Die`, `Interrupt`).
 
 **Details**
 
@@ -26,6 +25,6 @@ export interface ReasonProto<Tag extends string> extends Inspectable, Equal {
   }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L329)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L328)
 
 Since v4.0.0

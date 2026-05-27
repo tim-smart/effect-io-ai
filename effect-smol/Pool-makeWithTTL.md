@@ -6,6 +6,11 @@ Module: `Pool`<br />
 Creates a scoped pool with minimum and maximum sizes and a time-to-live
 policy for shrinking unused excess items.
 
+**When to use**
+
+Use to create an elastic scoped pool that can grow up to a maximum size and
+later reclaim unused excess items.
+
 **Details**
 
 The returned pool requires `Scope`; when that scope is closed, allocated
@@ -57,6 +62,6 @@ const program = Effect.scoped(
 declare const makeWithTTL: <A, E, R>(options: { readonly acquire: Effect.Effect<A, E, R>; readonly min: number; readonly max: number; readonly concurrency?: number | undefined; readonly targetUtilization?: number | undefined; readonly timeToLive: Duration.Input; readonly timeToLiveStrategy?: "creation" | "usage" | undefined; }) => Effect.Effect<Pool<A, E>, never, R | Scope.Scope>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Pool.ts#L238)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Pool.ts#L322)
 
 Since v2.0.0

@@ -5,6 +5,10 @@ Module: `Config`<br />
 
 Creates a config for a port number (integer in 1–65535).
 
+**When to use**
+
+Use to read network port settings that must be valid port numbers.
+
 **Details**
 
 Shortcut for `Config.schema(Config.Port, name)`.
@@ -31,12 +35,17 @@ Effect.runSync(
 // Output: 8080
 ```
 
+**See**
+
+- `int` for integer config values outside the port range
+- `Port` for the underlying port codec
+
 **Signature**
 
 ```ts
 declare const port: (name?: string) => Config<number>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Config.ts#L1169)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Config.ts#L1228)
 
 Since v3.16.0

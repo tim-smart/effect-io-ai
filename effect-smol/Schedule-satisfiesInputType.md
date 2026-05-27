@@ -3,27 +3,38 @@ Module: `Schedule`<br />
 
 ## Schedule.satisfiesInputType
 
-Ensures that the provided schedule respects a specified input type.
+Ensures that a schedule's input type extends a given type `T`.
+
+**When to use**
+
+Use to check an existing schedule input type. Use
+`setInputType` to adapt a schedule that does not depend on its input values.
+
+**Details**
+
+This helper is checked at compile time and does not change the schedule's
+runtime behavior.
 
 **Example** (Constraining schedule input types)
 
 ```ts
 import { Schedule } from "effect"
 
-// Ensure schedule accepts string inputs
-const stringSchedule = Schedule.exponential("100 millis").pipe(
-  Schedule.satisfiesInputType<string>()
-)
+declare const StringInputSchedule: Schedule.Schedule<number, string>
+declare const NumberInputSchedule: Schedule.Schedule<number, number>
 
-// Ensure schedule accepts number inputs
-const numberSchedule = Schedule.spaced("1 second").pipe(
-  Schedule.satisfiesInputType<number>()
-)
+const satisfiesStringInput = Schedule.satisfiesInputType<string>()
 
-// Type-level constraint - this would be a compile error:
-// Schedule.recurs(3).pipe(Schedule.satisfiesInputType<CustomType>())
-// where CustomType doesn't match the schedule's input type
+// This works because the schedule input type is string.
+const validSchedule = satisfiesStringInput(StringInputSchedule)
+
+// This would cause a TypeScript compilation error:
+// const invalidSchedule = satisfiesStringInput(NumberInputSchedule)
 ```
+
+**See**
+
+- `setInputType` for adapting an input-agnostic schedule
 
 **Signature**
 
@@ -31,6 +42,6 @@ const numberSchedule = Schedule.spaced("1 second").pipe(
 declare const satisfiesInputType: <T>() => <Input extends T, Output = never, Error = never, Env = never>(self: Schedule<Output, Input, Error, Env>) => Schedule<Output, Input, Error, Env>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L3252)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L3466)
 
 Since v4.0.0

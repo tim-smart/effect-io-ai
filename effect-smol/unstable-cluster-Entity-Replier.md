@@ -7,7 +7,7 @@ Reply API passed to queue-based entity handlers.
 
 **When to use**
 
-Use it to complete an entity request by succeeding, failing, failing with a
+Use when you use it to complete an entity request by succeeding, failing, failing with a
 cause, or supplying an explicit `Exit`.
 
 **Signature**
@@ -36,6 +36,6 @@ export interface Replier<Rpcs extends Rpc.Any> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Entity.ts#L498)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Entity.ts#L515)
 
 Since v4.0.0

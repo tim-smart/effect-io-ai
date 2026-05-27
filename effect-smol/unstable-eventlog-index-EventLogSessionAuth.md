@@ -11,6 +11,6 @@ Re-exports all named exports from the "./EventLogSessionAuth.ts" module as `Even
 export * as EventLogSessionAuth from "./EventLogSessionAuth.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L246)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L60)
 
 Since v4.0.0

@@ -16,6 +16,6 @@ type Group<Groups, GroupName, E, R> = [HttpApiGroup.WithName<Groups, GroupName>]
       never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiClient.ts#L118)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiClient.ts#L130)
 
 Since v4.0.0

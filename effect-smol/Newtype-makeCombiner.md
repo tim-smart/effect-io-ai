@@ -7,7 +7,7 @@ Lifts a `Combiner` for the carrier type into a `Combiner` for the newtype.
 
 **When to use**
 
-Use this when you need to combine newtype values.
+Use when you need to combine newtype values.
 
 **Details**
 
@@ -38,6 +38,6 @@ Newtype.value(total) // 30
 declare const makeCombiner: <N extends Newtype.Any>(combiner: Combiner.Combiner<Newtype.Carrier<N>>) => Combiner.Combiner<N>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Newtype.ts#L323)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Newtype.ts#L332)
 
 Since v4.0.0

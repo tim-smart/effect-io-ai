@@ -7,7 +7,7 @@ Checks whether a value is `PromiseLike` (has a `then` method).
 
 **When to use**
 
-- You only need `then` to interop with promise-like values.
+Use when you only need `then` to interop with promise-like values.
 
 **Details**
 
@@ -34,6 +34,6 @@ console.log(Predicate.isPromiseLike(data))
 declare const isPromiseLike: (input: unknown) => input is PromiseLike<unknown>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L1398)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L1432)
 
 Since v2.0.0

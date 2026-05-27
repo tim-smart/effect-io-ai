@@ -40,6 +40,6 @@ type AnthropicRateLimitMetadata = AnthropicErrorMetadata & {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicError.ts#L37)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicError.ts#L45)
 
 Since v4.0.0

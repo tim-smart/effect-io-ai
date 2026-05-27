@@ -7,6 +7,11 @@ Acquires a single permit from the semaphore in a scoped manner. The permit
 will be automatically released when the scope is closed, even if effects
 within the scope fail or are interrupted.
 
+**When to use**
+
+Use to acquire one transactional permit for the lifetime of the current
+scope.
+
 **Details**
 
 The permit acquisition and release operations use atomic semantics to ensure
@@ -38,12 +43,17 @@ const program = Effect.gen(function*() {
 })
 ```
 
+**See**
+
+- `withPermit` for acquiring one permit around a single effect
+- `acquire` for manual single-permit acquisition
+
 **Signature**
 
 ```ts
 declare const withPermitScoped: (self: TxSemaphore) => Effect.Effect<void, never, Scope.Scope>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxSemaphore.ts#L578)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxSemaphore.ts#L697)
 
 Since v2.0.0

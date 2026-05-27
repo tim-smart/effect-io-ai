@@ -20,6 +20,6 @@ This is equivalent to `Result.fail(undefined)` with type
 declare const failVoid: Result<never, void>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L403)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L413)
 
 Since v4.0.0

@@ -38,6 +38,6 @@ const program = Effect.gen(function*() {
 declare const takeBetween: { (min: number, max: number): <A, E>(self: TxDequeue<A, E>) => Effect.Effect<Array<A>, E>; <A, E>(self: TxDequeue<A, E>, min: number, max: number): Effect.Effect<Array<A>, E>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxQueue.ts#L923)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxQueue.ts#L964)
 
 Since v2.0.0

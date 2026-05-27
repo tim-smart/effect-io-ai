@@ -16,6 +16,6 @@ unpacking, and `cause` preserves the original error.
 declare class NdjsonError
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Ndjson.ts#L43)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Ndjson.ts#L57)
 
 Since v4.0.0

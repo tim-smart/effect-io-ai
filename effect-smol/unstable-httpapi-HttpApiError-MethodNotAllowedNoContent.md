@@ -12,6 +12,6 @@ into a `MethodNotAllowed` error value.
 declare const MethodNotAllowedNoContent: HttpApiSchema.asNoContent<typeof MethodNotAllowed>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiError.ts#L192)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiError.ts#L212)
 
 Since v4.0.0

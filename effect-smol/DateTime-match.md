@@ -35,6 +35,6 @@ console.log(result2) // "Zoned: 2024-06-15T15:30:00.000+01:00[Europe/London]"
 declare const match: { <A, B>(options: { readonly onUtc: (_: Utc) => A; readonly onZoned: (_: Zoned) => B; }): (self: DateTime) => A | B; <A, B>(self: DateTime, options: { readonly onUtc: (_: Utc) => A; readonly onZoned: (_: Zoned) => B; }): A | B; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L2186)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L2233)
 
 Since v3.6.0

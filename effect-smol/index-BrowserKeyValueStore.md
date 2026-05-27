@@ -11,6 +11,6 @@ Re-exports all named exports from the "./BrowserKeyValueStore.ts" module as `Bro
 export * as BrowserKeyValueStore from "./BrowserKeyValueStore.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/index.ts#L67)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/index.ts#L20)
 
 Since v4.0.0

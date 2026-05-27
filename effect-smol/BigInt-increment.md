@@ -5,6 +5,10 @@ Module: `BigInt`<br />
 
 Returns the result of adding `1n` to a `bigint`.
 
+**When to use**
+
+Use to increment a `bigint` counter by one.
+
 **Example** (Incrementing a bigint)
 
 ```ts
@@ -20,6 +24,6 @@ assert.deepStrictEqual(BigInt.increment(2n), 3n)
 declare const increment: (n: bigint) => bigint
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigInt.ts#L193)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigInt.ts#L308)
 
 Since v2.0.0

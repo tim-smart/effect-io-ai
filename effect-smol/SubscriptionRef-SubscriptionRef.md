@@ -8,7 +8,7 @@ subscribers.
 
 **When to use**
 
-Use `changes` to observe the current value and subsequent updates as a
+Use to observe the current value and subsequent updates as a
 stream.
 
 **Signature**
@@ -21,6 +21,6 @@ export interface SubscriptionRef<in out A> extends SubscriptionRef.Variance<A>, 
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SubscriptionRef.ts#L43)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SubscriptionRef.ts#L84)
 
 Since v2.0.0

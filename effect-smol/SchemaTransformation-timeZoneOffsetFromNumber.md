@@ -6,10 +6,20 @@ Module: `SchemaTransformation`<br />
 Decodes a numeric time-zone offset in milliseconds into a
 `DateTime.TimeZone.Offset` and encodes it back to the offset number.
 
+**When to use**
+
+Use to represent fixed-offset time zones with numeric millisecond offsets in
+schema transformations or JSON codecs.
+
 **Details**
 
 Decode uses `DateTime.zoneMakeOffset`; encode returns the offset's `offset`
 field.
+
+**See**
+
+- `timeZoneFromString` for IANA or offset string encodings
+- `timeZoneNamedFromString` for IANA named-zone strings
 
 **Signature**
 
@@ -17,6 +27,6 @@ field.
 declare const timeZoneOffsetFromNumber: Transformation<DateTime.TimeZone.Offset, number, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L1668)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L1676)
 
 Since v4.0.0

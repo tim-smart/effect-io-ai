@@ -16,6 +16,6 @@ payload, with helpers for array MessagePack encoding and creation timestamps.
 declare class Entry
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventJournal.ts#L271)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventJournal.ts#L288)
 
 Since v4.0.0

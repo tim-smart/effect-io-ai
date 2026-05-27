@@ -8,7 +8,7 @@ the provided `Order`.
 
 **When to use**
 
-Use this when you want to accumulate the minimum value across a collection or
+Use when you want to accumulate the minimum value across a collection or
 build a `Reducer` that tracks the running minimum.
 
 **Details**
@@ -40,6 +40,6 @@ console.log(Min.combine(1, 3))
 declare const min: <A>(order: Order.Order<A>) => Combiner<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Combiner.ts#L197)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Combiner.ts#L201)
 
 Since v4.0.0

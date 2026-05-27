@@ -8,7 +8,7 @@ do notation chains.
 
 **When to use**
 
-- Starting a do notation pipeline before adding bindings
+Use when starting a do notation pipeline before adding bindings
 
 **Example** (Do notation pipeline)
 
@@ -38,6 +38,6 @@ assert.deepStrictEqual(result, Option.some({ x: 2, y: 3, sum: 5 }))
 declare const Do: Option<{}>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L2498)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L2529)
 
 Since v2.0.0

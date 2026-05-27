@@ -24,6 +24,6 @@ export interface RpcMiddleware<Provides, E, Requires> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RpcMiddleware.ts#L64)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RpcMiddleware.ts#L74)
 
 Since v4.0.0

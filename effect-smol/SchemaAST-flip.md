@@ -26,6 +26,6 @@ with a flipped AST.
 declare const flip: (ast: AST) => AST
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L3123)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L3326)
 
 Since v4.0.0

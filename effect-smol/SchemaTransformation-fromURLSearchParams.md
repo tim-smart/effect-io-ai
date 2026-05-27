@@ -8,7 +8,7 @@ encodes object-like values back into `URLSearchParams`.
 
 **When to use**
 
-Use this for query strings where keys such as `filter[name]` or `items[0]`
+Use when you use this for query strings where keys such as `filter[name]` or `items[0]`
 should become nested data.
 
 **Details**

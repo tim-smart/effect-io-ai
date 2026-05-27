@@ -5,6 +5,10 @@ Module: `Array`<br />
 
 Keeps the first `n` elements, creating a new array.
 
+**When to use**
+
+Use to keep up to the first `n` elements from an iterable as a new array.
+
 **Details**
 
 - `n` is clamped to `[0, length]`.
@@ -20,9 +24,9 @@ console.log(Array.take([1, 2, 3, 4, 5], 3)) // [1, 2, 3]
 
 **See**
 
-- `takeRight` — keep from the end
-- `takeWhile` — keep while predicate holds
-- `drop` — remove from the start
+- `takeRight` for keeping elements from the end
+- `takeWhile` for keeping an initial prefix while a predicate holds
+- `drop` for removing elements from the start
 
 **Signature**
 
@@ -30,6 +34,6 @@ console.log(Array.take([1, 2, 3, 4, 5], 3)) // [1, 2, 3]
 declare const take: { (n: number): <A>(self: Iterable<A>) => Array<A>; <A>(self: Iterable<A>, n: number): Array<A>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L1232)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L1362)
 
 Since v2.0.0

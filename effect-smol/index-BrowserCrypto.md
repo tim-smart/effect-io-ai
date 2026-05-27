@@ -11,6 +11,6 @@ Re-exports all named exports from the "./BrowserCrypto.ts" module as `BrowserCry
 export * as BrowserCrypto from "./BrowserCrypto.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/index.ts#L12)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/index.ts#L10)
 
 Since v1.0.0

@@ -34,6 +34,6 @@ const resourceManagement = Effect.gen(function*() {
 declare const close: <A, E>(self: Scope, exit: Exit<A, E>) => Effect<void>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Scope.ts#L488)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Scope.ts#L519)
 
 Since v2.0.0

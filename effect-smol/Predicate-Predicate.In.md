@@ -7,7 +7,7 @@ Extracts the input type `A` from a `Predicate<A>`.
 
 **When to use**
 
-- You want to infer the input type from a predicate type.
+Use when you want to infer the input type from a predicate type.
 - You are defining generic utilities over predicates.
 
 **Details**
@@ -35,6 +35,6 @@ type Input = Predicate.Predicate.In<P>
 type In<T> = [T] extends [Predicate<infer _A>] ? _A : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L203)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L228)
 
 Since v3.6.0

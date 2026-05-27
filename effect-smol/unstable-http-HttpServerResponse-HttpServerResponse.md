@@ -23,6 +23,6 @@ export interface HttpServerResponse extends Inspectable.Inspectable, Pipeable, E
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpServerResponse.ts#L64)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpServerResponse.ts#L86)
 
 Since v4.0.0

@@ -11,6 +11,6 @@ Returns `true` when a value carries the `EventLogSchema` marker.
 declare const isEventLogSchema: (u: unknown) => u is EventLogSchema<EventGroup.Any>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventLog.ts#L215)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventLog.ts#L229)
 
 Since v4.0.0

@@ -17,6 +17,6 @@ entries and destroy operation.
 declare class EventLog
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventLog.ts#L58)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventLog.ts#L72)
 
 Since v4.0.0

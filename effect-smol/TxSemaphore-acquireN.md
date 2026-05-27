@@ -5,6 +5,11 @@ Module: `TxSemaphore`<br />
 
 Acquires the specified number of permits from the semaphore.
 
+**When to use**
+
+Use to manually acquire multiple permits transactionally, waiting until all
+requested permits are available.
+
 **Details**
 
 If fewer than `n` permits are available, the transaction retries until enough
@@ -32,12 +37,18 @@ const program = Effect.gen(function*() {
 })
 ```
 
+**See**
+
+- `tryAcquireN` for a non-blocking multi-permit attempt
+- `releaseN` for returning multiple permits
+- `withPermits` for automatic acquire and release around an effect
+
 **Signature**
 
 ```ts
 declare const acquireN: (self: TxSemaphore, n: number) => Effect.Effect<void>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxSemaphore.ts#L256)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxSemaphore.ts#L320)
 
 Since v2.0.0

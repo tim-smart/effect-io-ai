@@ -11,6 +11,6 @@ Fiber-local flag that makes the React Native SQLite client run queries through t
 declare const AsyncQuery: Context.Reference<boolean>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/sql/sqlite-react-native/src/SqliteClient.ts#L99)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/sql/sqlite-react-native/src/SqliteClient.ts#L118)
 
 Since v4.0.0

@@ -11,6 +11,6 @@ Re-exports all named exports from the "./Entity.ts" module as `Entity`.
 export * as Entity from "./Entity.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L212)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L40)
 
 Since v4.0.0

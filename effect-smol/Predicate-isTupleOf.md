@@ -7,7 +7,7 @@ Checks whether a readonly array has exactly `n` elements.
 
 **When to use**
 
-- You need a runtime check for tuple length.
+Use when you need a runtime check for tuple length.
 - You want to narrow `ReadonlyArray<T>` to `TupleOf<N, T>`.
 
 **Details**
@@ -37,6 +37,6 @@ console.log(isPair([1, 2]))
 declare const isTupleOf: { <N extends number>(n: N): <T>(self: ReadonlyArray<T>) => self is TupleOf<N, T>; <T, N extends number>(self: ReadonlyArray<T>, n: N): self is TupleOf<N, T>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L408)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L433)
 
 Since v3.3.0

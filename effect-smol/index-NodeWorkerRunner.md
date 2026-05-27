@@ -11,6 +11,6 @@ Re-exports all named exports from the "./NodeWorkerRunner.ts" module as `NodeWor
 export * as NodeWorkerRunner from "./NodeWorkerRunner.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L475)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L125)
 
 Since v4.0.0

@@ -15,6 +15,6 @@ The default status is `204`.
 declare const empty: (options?: Options.WithContent | undefined) => HttpServerResponse
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpServerResponse.ts#L132)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpServerResponse.ts#L154)
 
 Since v4.0.0

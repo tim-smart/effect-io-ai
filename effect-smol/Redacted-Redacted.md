@@ -6,6 +6,11 @@ Module: `Redacted`<br />
 A wrapper for sensitive values whose string, JSON, and inspection output is
 redacted.
 
+**When to use**
+
+Use to carry sensitive values while reducing accidental exposure in string,
+JSON, and inspection output.
+
 **Gotchas**
 
 The underlying value is still stored in memory and can be recovered with
@@ -33,6 +38,6 @@ export interface Redacted<out A = string> extends Redacted.Variance<A>, Equal.Eq
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Redacted.ts#L46)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Redacted.ts#L88)
 
 Since v3.3.0

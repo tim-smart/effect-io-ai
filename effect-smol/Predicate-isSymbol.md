@@ -7,7 +7,7 @@ Checks whether a value is a `symbol`.
 
 **When to use**
 
-- You need to guard an `unknown` value as a symbol.
+Use when you need to guard an `unknown` value as a symbol.
 
 **Details**
 
@@ -36,6 +36,6 @@ if (Predicate.isSymbol(data)) {
 declare const isSymbol: (input: unknown) => input is symbol
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L709)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L734)
 
 Since v2.0.0

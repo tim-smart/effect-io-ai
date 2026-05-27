@@ -49,6 +49,6 @@ console.log(MutableList.takeAll(logs).map((log) => log.message)) // ["Connection
 declare const filter: <A>(self: MutableList<A>, f: (value: A, i: number) => boolean) => void
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableList.ts#L903)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableList.ts#L911)
 
 Since v4.0.0

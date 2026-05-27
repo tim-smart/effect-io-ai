@@ -5,10 +5,19 @@ Module: `Latch`<br />
 
 Opens the latch and releases fibers waiting on it.
 
+**When to use**
+
+Use to open a latch and release all fibers that are waiting on it.
+
 **Details**
 
 The returned effect succeeds with `true` when this call changed the latch
 from closed to open, or `false` if it was already open.
+
+**See**
+
+- `openUnsafe` for a synchronous variant
+- `release` to release waiting fibers without opening the latch
 
 **Signature**
 
@@ -16,6 +25,6 @@ from closed to open, or `false` if it was already open.
 declare const open: (self: Latch) => Effect.Effect<boolean>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Latch.ts#L172)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Latch.ts#L244)
 
 Since v4.0.0

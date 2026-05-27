@@ -6,6 +6,10 @@ Module: `Array`<br />
 Converts a nullable value to an array: `null`/`undefined` becomes `[]`,
 anything else becomes `[value]`.
 
+**When to use**
+
+Use to treat a nullable single value as zero or one array element.
+
 **Example** (Nullable to array)
 
 ```ts
@@ -27,6 +31,6 @@ console.log(Array.fromNullishOr(undefined)) // []
 declare const fromNullishOr: <A>(a: A) => Array<NonNullable<A>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L3668)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L4065)
 
 Since v4.0.0

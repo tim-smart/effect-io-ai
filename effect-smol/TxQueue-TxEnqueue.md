@@ -40,6 +40,6 @@ export interface TxEnqueue<in A, in E = never> extends TxQueueState {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxQueue.ts#L175)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxQueue.ts#L216)
 
 Since v4.0.0

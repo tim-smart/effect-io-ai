@@ -7,7 +7,7 @@ Creates a getter that applies a fallible, effectful transformation to present va
 
 **When to use**
 
-- The transformation may fail (e.g. parsing, validation).
+Use when the transformation may fail (e.g. parsing, validation).
 - The transformation needs Effect services or is async.
 
 **Details**
@@ -33,8 +33,8 @@ const safeParseInt = SchemaGetter.transformOrFail<number, string>(
 
 **See**
 
-- `transform` - when transformation cannot fail
-- `onSome` - when you need full `Option` control over the output
+- `transform` when transformation cannot fail
+- `onSome` when you need full `Option` control over the output
 
 **Signature**
 

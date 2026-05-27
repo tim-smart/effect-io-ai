@@ -32,6 +32,6 @@ const loadConfig = Effect.gen(function*() {
 declare const fileParse: (options?: FileParseOptions) => Primitive<unknown>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Primitive.ts#L557)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Primitive.ts#L606)
 
 Since v4.0.0

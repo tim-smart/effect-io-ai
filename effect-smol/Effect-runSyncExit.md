@@ -8,7 +8,7 @@ represents the outcome (success or failure) of the effect.
 
 **When to use**
 
-Use `runSyncExit` to find out whether an effect succeeded or failed,
+Use to find out whether an effect succeeded or failed,
 including any defects, without dealing with asynchronous operations.
 
 **Details**
@@ -70,12 +70,16 @@ console.log(Effect.runSyncExit(Effect.promise(() => Promise.resolve(1))))
 // }
 ```
 
+**See**
+
+- `runSync` for a version that throws on failure.
+
 **Signature**
 
 ```ts
 declare const runSyncExit: <A, E>(effect: Effect<A, E>) => Exit.Exit<A, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L8690)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L9249)
 
 Since v2.0.0

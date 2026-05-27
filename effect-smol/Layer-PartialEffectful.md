@@ -5,11 +5,21 @@ Module: `Layer`<br />
 
 A utility type for creating partial mocks of services in testing.
 
+**When to use**
+
+Use to type partial test service implementations where only exercised
+effectful members are stubbed.
+
 **Details**
 
-This type makes Effect methods and Effect-returning functions optional,
-while keeping non-Effect properties required. This allows you to provide
-only the methods you need to test while leaving others unimplemented.
+This type makes `Effect`, `Stream`, and `Channel` values and functions
+returning them optional, while keeping non-effectful properties required.
+This allows you to provide only the methods you need to test while leaving
+others unimplemented.
+
+**See**
+
+- `mock` for creating a mock layer from a partial service implementation
 
 **Signature**
 
@@ -24,6 +34,6 @@ type PartialEffectful<A> = Types.Simplify<
 >
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L2110)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L2222)
 
 Since v3.17.0

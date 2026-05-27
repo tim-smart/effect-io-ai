@@ -5,6 +5,10 @@ Module: `Array`<br />
 
 Sorts an array by the given `Order`, returning a new array.
 
+**When to use**
+
+Use to sort an array using a single `Order` comparator.
+
 **Details**
 
 - Does not mutate the input.
@@ -31,6 +35,6 @@ console.log(Array.sort([3, 1, 4, 1, 5], Order.Number)) // [1, 1, 3, 4, 5]
 declare const sort: { <B>(O: Order.Order<B>): <A extends B, S extends Iterable<A>>(self: S) => ReadonlyArray.With<S, ReadonlyArray.Infer<S>>; <A extends B, B>(self: NonEmptyReadonlyArray<A>, O: Order.Order<B>): NonEmptyArray<A>; <A extends B, B>(self: Iterable<A>, O: Order.Order<B>): Array<A>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L1927)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L2147)
 
 Since v2.0.0

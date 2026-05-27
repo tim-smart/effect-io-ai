@@ -7,7 +7,7 @@ Wraps `equals` as an `Equivalence<A>`.
 
 **When to use**
 
-- When an API (e.g. `Array.dedupeWith`, `Equivalence.mapInput`) requires an
+Use when when an API (e.g. `Array.dedupeWith`, `Equivalence.mapInput`) requires an
   `Equivalence` and you want to reuse `Equal.equals`.
 
 **Details**

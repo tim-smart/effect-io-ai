@@ -5,6 +5,11 @@ Module: `Result`<br />
 
 Transforms the success channel of a `Result`, leaving the failure channel unchanged.
 
+**When to use**
+
+Use to apply a transformation to the success value of a `Result` while
+preserving any existing failure.
+
 **Details**
 
 - If the result is a `Success`, applies `f` to the value and returns a new `Success`
@@ -37,6 +42,6 @@ console.log(result)
 declare const map: { <A, A2>(f: (ok: A) => A2): <E>(self: Result<A, E>) => Result<A2, E>; <A, E, A2>(self: Result<A, E>, f: (ok: A) => A2): Result<A2, E>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L842)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L894)
 
 Since v2.0.0

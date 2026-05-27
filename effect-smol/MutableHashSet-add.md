@@ -6,6 +6,10 @@ Module: `MutableHashSet`<br />
 Adds a value to the MutableHashSet, mutating the set in place.
 If the value already exists, the set remains unchanged.
 
+**When to use**
+
+Use to insert a value into a mutable set while keeping uniqueness.
+
 **Example** (Adding values)
 
 ```ts
@@ -36,6 +40,6 @@ console.log(MutableHashSet.size(set)) // 3
 declare const add: { <V>(key: V): (self: MutableHashSet<V>) => MutableHashSet<V>; <V>(self: MutableHashSet<V>, key: V): MutableHashSet<V>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableHashSet.ts#L280)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableHashSet.ts#L320)
 
 Since v2.0.0

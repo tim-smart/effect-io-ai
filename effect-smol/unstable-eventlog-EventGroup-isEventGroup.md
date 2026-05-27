@@ -11,6 +11,6 @@ Returns `true` when a value is an event log event group.
 declare const isEventGroup: (u: unknown) => u is Any
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventGroup.ts#L47)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventGroup.ts#L55)
 
 Since v4.0.0

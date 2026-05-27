@@ -5,6 +5,10 @@ Module: `Match`<br />
 
 Matches values of type `number`.
 
+**When to use**
+
+Use to match primitive number values, including `NaN` and infinities.
+
 **Details**
 
 This predicate refines unknown values to numbers, allowing pattern matching
@@ -32,12 +36,16 @@ console.log(categorizeNumber(NaN)) // "Not a number"
 console.log(categorizeNumber("hello")) // "Not a number type"
 ```
 
+**See**
+
+- `bigint` for matching primitive bigint values
+
 **Signature**
 
 ```ts
 declare const number: Predicate.Refinement<unknown, number>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L1276)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L1367)
 
 Since v4.0.0
