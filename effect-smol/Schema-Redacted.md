@@ -3,8 +3,7 @@ Module: `Schema`<br />
 
 ## Schema.Redacted
 
-Schema for the `Redacted<A>` type, providing secure handling of sensitive
-values. The inner value is hidden from error messages.
+Type-level representation returned by `Redacted`.
 
 **Signature**
 
@@ -21,6 +20,6 @@ export interface Redacted<S extends Top> extends
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L8522)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L8343)
 
 Since v3.10.0

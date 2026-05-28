@@ -3,8 +3,7 @@ Module: `Schema`<br />
 
 ## Schema.HashMap
 
-Schema for an Effect `HashMap` where keys and values must conform to the
-provided schemas.
+Type-level representation returned by `HashMap`.
 
 **Signature**
 
@@ -23,6 +22,6 @@ export interface HashMap<Key extends Top, Value extends Top> extends
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L9399)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L9177)
 
 Since v3.10.0

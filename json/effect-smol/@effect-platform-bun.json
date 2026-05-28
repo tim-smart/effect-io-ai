@@ -299,7 +299,7 @@
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
-    "category": "Options",
+    "category": "options",
     "signature": "type ServeOptions<R> = & (\n    | Bun.Serve.UnixServeOptions<WebSocketContext>\n    | Bun.Serve.HostnamePortServeOptions<WebSocketContext>\n  )\n  & { readonly routes?: Bun.Serve.Routes<WebSocketContext, R> }",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunHttpServer.ts#L83"
   },

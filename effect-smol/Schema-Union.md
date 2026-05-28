@@ -3,7 +3,7 @@ Module: `Schema`<br />
 
 ## Schema.Union
 
-Companion type for a union of multiple schemas. Produced by `Union`.
+Type-level representation returned by `Union`.
 
 **Signature**
 
@@ -46,6 +46,6 @@ export interface Union<Members extends ReadonlyArray<Top>> extends
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L4229)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L4142)
 
 Since v3.10.0

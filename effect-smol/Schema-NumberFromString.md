@@ -3,8 +3,7 @@ Module: `Schema`<br />
 
 ## Schema.NumberFromString
 
-Type-level representation of a transformation schema that decodes strings into
-numbers using JavaScript number coercion.
+Type-level representation of `NumberFromString`.
 
 **Signature**
 
@@ -14,6 +13,6 @@ export interface NumberFromString extends decodeTo<Finite, String> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L10893)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L10644)
 
 Since v3.10.0

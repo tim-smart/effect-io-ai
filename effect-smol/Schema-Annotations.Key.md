@@ -18,6 +18,6 @@ export interface Key<T> extends Documentation<T> {
   }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L13587)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L13305)
 
 Since v4.0.0

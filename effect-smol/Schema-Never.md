@@ -3,11 +3,7 @@ Module: `Schema`<br />
 
 ## Schema.Never
 
-Schema for the `never` type. Always fails validation.
-
-**See**
-
-- `Never` for the schema value.
+Type-level representation of `Never`.
 
 **Signature**
 
@@ -15,6 +11,6 @@ Schema for the `never` type. Always fails validation.
 export interface Never extends Bottom<never, never, never, never, AST.Never, Never> {}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L2485)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L2467)
 
 Since v3.10.0

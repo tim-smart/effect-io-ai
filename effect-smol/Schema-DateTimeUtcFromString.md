@@ -3,8 +3,7 @@ Module: `Schema`<br />
 
 ## Schema.DateTimeUtcFromString
 
-Schema interface for `DateTimeUtcFromString`, a transformation from date-time
-strings to `DateTime.Utc`.
+Type-level representation of `DateTimeUtcFromString`.
 
 **Signature**
 
@@ -14,6 +13,6 @@ export interface DateTimeUtcFromString extends decodeTo<DateTimeUtc, String> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L11500)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L11235)
 
 Since v4.0.0

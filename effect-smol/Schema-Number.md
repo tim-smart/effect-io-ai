@@ -3,11 +3,7 @@ Module: `Schema`<br />
 
 ## Schema.Number
 
-Schema for `number` values, including `NaN`, `Infinity`, and `-Infinity`.
-
-**See**
-
-- `Number` for the schema value.
+Type-level representation of `Number`.
 
 **Signature**
 
@@ -15,6 +11,6 @@ Schema for `number` values, including `NaN`, `Infinity`, and `-Infinity`.
 export interface Number extends Bottom<number, number, never, never, AST.Number, Number> {}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L2591)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L2567)
 
 Since v4.0.0

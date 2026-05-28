@@ -683,7 +683,7 @@
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
-    "category": "undici",
+    "category": "Undici",
     "signature": "declare const UndiciOptions: Context.Reference<Partial<Undici.Dispatcher.RequestOptions<null>>>",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L156"
   },
@@ -699,7 +699,7 @@
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
-    "category": "undici",
+    "category": "Undici",
     "signature": "declare const makeUndici: Effect.Effect<Client.HttpClient, never, Dispatcher>",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L169"
   },
@@ -859,7 +859,7 @@
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
-    "category": "Fetch",
+    "category": "fetch",
     "signature": "declare const layerFetch: Layer.Layer<Client.HttpClient, never, never>",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L91"
   },
@@ -987,7 +987,7 @@
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
-    "category": "Testing",
+    "category": "testing",
     "signature": "declare const layerTest: Layer.Layer<FileSystem.FileSystem | Path.Path | HttpServer.HttpServer | HttpPlatform.HttpPlatform | Etag.Generator | HttpClient, ServeError, never>",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpServer.ts#L494"
   },
@@ -1003,7 +1003,7 @@
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
-    "category": "Handlers",
+    "category": "handlers",
     "signature": "declare const makeHandler: <R, E, App extends Effect.Effect<HttpServerResponse, any, any> = Effect.Effect<HttpServerResponse, E, R>>(httpEffect: Effect.Effect<HttpServerResponse, E, R>, options: { readonly scope: Scope.Scope; readonly middleware?: Middleware.HttpMiddleware.Applied<App, E, R> | undefined; }) => Effect.Effect<(nodeRequest: Http.IncomingMessage, nodeResponse: Http.ServerResponse) => void, never, Exclude<Effect.Services<App>, HttpServerRequest | Scope.Scope>>",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpServer.ts#L188"
   },
@@ -1019,7 +1019,7 @@
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
-    "category": "Handlers",
+    "category": "handlers",
     "signature": "declare const makeUpgradeHandler: <R, E, App extends Effect.Effect<HttpServerResponse, any, any> = Effect.Effect<HttpServerResponse, E, R>>(lazyWss: Effect.Effect<NodeWS.WebSocketServer>, httpEffect: Effect.Effect<HttpServerResponse, E, R>, options: { readonly scope: Scope.Scope; readonly middleware?: Middleware.HttpMiddleware.Applied<App, E, R> | undefined; }) => Effect.Effect<(nodeRequest: Http.IncomingMessage, socket: Duplex, head: Buffer) => void, never, Exclude<Effect.Services<App>, HttpServerRequest | Scope.Scope>>",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpServer.ts#L230"
   },
@@ -1499,7 +1499,7 @@
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
-    "category": "undici",
+    "category": "Undici",
     "signature": "export * from \"undici\"",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/Undici.ts#L23"
   }

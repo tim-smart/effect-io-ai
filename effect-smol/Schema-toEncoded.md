@@ -3,8 +3,7 @@ Module: `Schema`<br />
 
 ## Schema.toEncoded
 
-Schema type that collapses a transformation schema to its `Encoded` side on
-both sides (Type = Encoded = S["Encoded"]). Produced by `toEncoded`.
+Type-level representation returned by `toEncoded`.
 
 **Signature**
 
@@ -30,6 +29,6 @@ export interface toEncoded<S extends Top> extends
 {}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L2099)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L2090)
 
 Since v4.0.0

@@ -123,7 +123,7 @@
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
-    "category": "Fetch",
+    "category": "fetch",
     "signature": "declare const Fetch: Context.Reference<{ (input: RequestInfo | URL, init?: RequestInit): Promise<Response>; (input: string | URL | Request, init?: RequestInit): Promise<Response>; }>",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/BrowserHttpClient.ts#L65"
   },
@@ -139,7 +139,7 @@
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
-    "category": "Fetch",
+    "category": "fetch",
     "signature": "declare const layerFetch: Layer.Layer<HttpClient.HttpClient, never, never>",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/BrowserHttpClient.ts#L72"
   },
@@ -299,7 +299,7 @@
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
-    "category": "Streams",
+    "category": "streams",
     "signature": "declare const fromEventListenerWindow: <K extends keyof WindowEventMap>(type: K, options?: boolean | { readonly capture?: boolean; readonly passive?: boolean; readonly once?: boolean; readonly bufferSize?: number | undefined; } | undefined) => Stream.Stream<WindowEventMap[K], never, never>",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/BrowserStream.ts#L56"
   },
@@ -315,7 +315,7 @@
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
-    "category": "Streams",
+    "category": "streams",
     "signature": "declare const fromEventListenerDocument: <K extends keyof DocumentEventMap>(type: K, options?: boolean | { readonly capture?: boolean; readonly passive?: boolean; readonly once?: boolean; readonly bufferSize?: number | undefined; } | undefined) => Stream.Stream<DocumentEventMap[K], never, never>",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/BrowserStream.ts#L78"
   },
@@ -907,7 +907,7 @@
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
-    "category": "tag",
+    "category": "services",
     "signature": "declare const IndexedDb: Context.Service<IndexedDb, IndexedDb>",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDb.ts#L51"
   },

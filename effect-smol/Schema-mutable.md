@@ -3,8 +3,7 @@ Module: `Schema`<br />
 
 ## Schema.mutable
 
-Schema type that makes array or tuple elements mutable (removes `readonly`).
-Produced by `mutable`.
+Type-level representation returned by `mutable`.
 
 **Signature**
 
@@ -33,6 +32,6 @@ export interface mutable<S extends Top & { readonly "ast": AST.Arrays }> extends
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L4173)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L4086)
 
 Since v3.10.0

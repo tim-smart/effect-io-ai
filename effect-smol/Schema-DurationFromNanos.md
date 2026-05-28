@@ -3,8 +3,7 @@ Module: `Schema`<br />
 
 ## Schema.DurationFromNanos
 
-Type-level representation of a transformation schema that decodes non-negative
-nanosecond `bigint` values into `Duration` values.
+Type-level representation of `DurationFromNanos`.
 
 **Signature**
 
@@ -14,6 +13,6 @@ export interface DurationFromNanos extends decodeTo<Duration, BigInt> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L10191)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L9952)
 
 Since v3.10.0

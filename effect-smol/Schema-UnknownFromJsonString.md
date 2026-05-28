@@ -3,8 +3,7 @@ Module: `Schema`<br />
 
 ## Schema.UnknownFromJsonString
 
-Type-level representation of a transformation schema that decodes
-JSON-encoded strings into `unknown` values.
+Type-level representation of `UnknownFromJsonString`.
 
 **Signature**
 
@@ -14,6 +13,6 @@ export interface UnknownFromJsonString extends fromJsonString<Unknown> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L10356)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L10114)
 
 Since v4.0.0

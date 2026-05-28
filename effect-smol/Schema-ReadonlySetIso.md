@@ -12,6 +12,6 @@ using the element schema's `Iso` type.
 type ReadonlySetIso<Value> = ReadonlyArray<Value["Iso"]>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L9523)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L9292)
 
 Since v4.0.0

@@ -3,8 +3,7 @@ Module: `Schema`<br />
 
 ## Schema.StringFromBase64
 
-Schema interface for `StringFromBase64`, a transformation between RFC4648
-base64-encoded strings and UTF-8 strings.
+Type-level representation of `StringFromBase64`.
 
 **Signature**
 
@@ -14,6 +13,6 @@ export interface StringFromBase64 extends decodeTo<String, String> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L11046)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L10792)
 
 Since v3.10.0

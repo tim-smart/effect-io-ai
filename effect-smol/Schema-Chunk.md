@@ -3,8 +3,7 @@ Module: `Schema`<br />
 
 ## Schema.Chunk
 
-Schema for an Effect `Chunk` (immutable array-like collection) where values
-must conform to the provided schema.
+Type-level representation returned by `Chunk`.
 
 **Signature**
 
@@ -22,6 +21,6 @@ export interface Chunk<Value extends Top> extends
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L9694)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L9461)
 
 Since v3.10.0

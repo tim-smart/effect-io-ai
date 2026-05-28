@@ -3,12 +3,7 @@ Module: `Schema`<br />
 
 ## Schema.TemplateLiteralParser
 
-Represents a schema that validates strings matching a template literal pattern and decodes
-them into a tuple of typed values, one per schema part.
-
-**See**
-
-- `TemplateLiteralParser` for the constructor function.
+Type-level representation returned by `TemplateLiteralParser`.
 
 **Signature**
 
@@ -27,6 +22,6 @@ export interface TemplateLiteralParser<Parts extends TemplateLiteral.Parts> exte
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L2388)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L2373)
 
 Since v3.10.0

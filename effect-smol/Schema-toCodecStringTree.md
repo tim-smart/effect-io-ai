@@ -25,6 +25,6 @@ Options:
 declare const toCodecStringTree: { <T, E, RD, RE>(schema: Codec<T, E, RD, RE>): Codec<T, StringTree, RD, RE>; <T, E, RD, RE>(schema: Codec<T, E, RD, RE>, options: { readonly keepDeclarations: true; }): Codec<T, unknown, RD, RE>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L12905)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L12624)
 
 Since v4.0.0

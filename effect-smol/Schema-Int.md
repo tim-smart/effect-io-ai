@@ -3,8 +3,7 @@ Module: `Schema`<br />
 
 ## Schema.Int
 
-Type-level representation of the `Int` schema, which accepts only finite
-integer numbers.
+Type-level representation of `Int`.
 
 **Signature**
 
@@ -14,6 +13,6 @@ export interface Int extends Number {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L10874)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L10626)
 
 Since v3.10.0

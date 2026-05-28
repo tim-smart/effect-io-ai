@@ -25,6 +25,6 @@ application options override creation options.
 declare const encodeUnknownExit: <S extends Encoder<unknown>>(schema: S, options?: AST.ParseOptions) => (input: unknown, options?: AST.ParseOptions) => Exit_.Exit<S["Encoded"], SchemaError>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L1591)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L1588)
 
 Since v4.0.0

@@ -3,11 +3,7 @@ Module: `Schema`<br />
 
 ## Schema.TaggedStruct
 
-The type produced by `TaggedStruct` — a `Struct` with an extra `_tag` field of type `tag`.
-
-**See**
-
-- `TaggedStruct` for the constructor
+Type-level representation returned by `TaggedStruct`.
 
 **Signature**
 
@@ -17,6 +13,6 @@ type TaggedStruct<Tag, Fields> = Struct<
 >
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L5560)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L5412)
 
 Since v3.10.0

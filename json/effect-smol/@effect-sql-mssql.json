@@ -106,7 +106,7 @@
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
-    "category": "tags",
+    "category": "services",
     "signature": "declare const MssqlClient: Context.Service<MssqlClient, MssqlClient>",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/d1/src/MssqlClient.ts#L220"
   },
@@ -394,7 +394,7 @@
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
-    "category": "combinator",
+    "category": "combinators",
     "signature": "declare const param: <A>() => <N extends string, T extends DataType>(name: N, type: T, options?: ParameterOptions) => <I extends Record<string, Parameter.Parameter<any>>, O extends Record<string, Parameter.Parameter<any>>>(self: Procedure<I, O>) => Procedure<Simplify<I & { [K in N]: Parameter.Parameter<A>; }>, O>",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/d1/src/Procedure.ts#L162"
   },
@@ -410,7 +410,7 @@
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
-    "category": "combinator",
+    "category": "combinators",
     "signature": "declare const outputParam: <A>() => <N extends string, T extends DataType>(name: N, type: T, options?: ParameterOptions) => <I extends Record<string, Parameter.Parameter<any>>, O extends Record<string, Parameter.Parameter<any>>>(self: Procedure<I, O>) => Procedure<I, Simplify<O & { [K in N]: Parameter.Parameter<A>; }>>",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/d1/src/Procedure.ts#L187"
   },
@@ -426,7 +426,7 @@
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
-    "category": "combinator",
+    "category": "combinators",
     "signature": "declare const withRows: <A extends object = Row>() => <I extends Record<string, Parameter.Parameter<any>>, O extends Record<string, Parameter.Parameter<any>>>(self: Procedure<I, O>) => Procedure<I, O, A>",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/d1/src/Procedure.ts#L212"
   },
@@ -442,7 +442,7 @@
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
-    "category": "combinator",
+    "category": "combinators",
     "signature": "declare const compile: <I extends Record<string, Parameter.Parameter<any>>, O extends Record<string, Parameter.Parameter<any>>, A>(self: Procedure<I, O, A>) => (input: Procedure.ParametersRecord<I>) => ProcedureWithValues<I, O, A>",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/d1/src/Procedure.ts#L226"
   },

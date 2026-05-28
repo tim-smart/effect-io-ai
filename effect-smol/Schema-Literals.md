@@ -3,11 +3,7 @@ Module: `Schema`<br />
 
 ## Schema.Literals
 
-Represents a union schema of multiple literal values.
-
-**See**
-
-- `Literals` for the constructor function.
+Type-level representation returned by `Literals`.
 
 **Signature**
 
@@ -30,6 +26,6 @@ export interface Literals<L extends ReadonlyArray<AST.LiteralValue>>
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L4326)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L4238)
 
 Since v4.0.0

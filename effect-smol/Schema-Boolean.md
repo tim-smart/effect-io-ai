@@ -3,11 +3,7 @@ Module: `Schema`<br />
 
 ## Schema.Boolean
 
-Schema for `boolean` values.
-
-**See**
-
-- `Boolean` for the schema value.
+Type-level representation of `Boolean`.
 
 **Signature**
 
@@ -15,6 +11,6 @@ Schema for `boolean` values.
 export interface Boolean extends Bottom<boolean, boolean, never, never, AST.Boolean, Boolean> {}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L2616)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L2591)
 
 Since v4.0.0

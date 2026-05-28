@@ -187,7 +187,7 @@
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
-    "category": "models",
+    "category": "options",
     "signature": "type Options = {\n  readonly apiKey?: Redacted.Redacted<string> | undefined\n\n  readonly apiUrl?: string | undefined\n\n  /**\n   * Optional URL of your site for rankings on `openrouter.ai`.\n   */\n  readonly siteReferrer?: string | undefined\n\n  /**\n   * Optional title of your site for rankings on `openrouter.ai`.\n   */\n  readonly siteTitle?: string | undefined\n\n  /**\n   * Optional transformer for the underlying HTTP client.\n   *\n   * **When to use**\n   *\n   * Use to add middleware, logging, or custom request/response handling.\n   */\n  readonly transformClient?: ((client: HttpClient.HttpClient) => HttpClient.HttpClient) | undefined\n}",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openrouter/src/OpenRouterClient.ts#L128"
   },

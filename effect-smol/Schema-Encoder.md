@@ -30,6 +30,6 @@ export interface Encoder<out E, out RE = never> extends Codec<unknown, E, unknow
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L887)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L884)
 
 Since v4.0.0

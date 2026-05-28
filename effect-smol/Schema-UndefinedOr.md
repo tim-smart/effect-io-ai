@@ -3,7 +3,7 @@ Module: `Schema`<br />
 
 ## Schema.UndefinedOr
 
-Companion type for `S | undefined`. Produced by `UndefinedOr`.
+Type-level representation returned by `UndefinedOr`.
 
 **Signature**
 
@@ -13,6 +13,6 @@ export interface UndefinedOr<S extends Top> extends Union<readonly [S, Undefined
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L4410)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L4322)
 
 Since v3.10.0

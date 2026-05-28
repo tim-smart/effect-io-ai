@@ -13,6 +13,6 @@ example to support recursive schemas.
 type LazyArbitrary<T> = (fc: typeof FastCheck) => FastCheck.Arbitrary<T>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L12387)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L12106)
 
 Since v4.0.0

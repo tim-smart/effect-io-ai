@@ -3,8 +3,7 @@ Module: `Schema`<br />
 
 ## Schema.Result
 
-Schema for the `Result<A, E>` type, representing a computation that either
-succeeds with `A` or fails with `E`.
+Type-level representation returned by `Result`.
 
 **Signature**
 
@@ -23,6 +22,6 @@ export interface Result<A extends Top, E extends Top> extends
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L8411)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L8233)
 
 Since v4.0.0

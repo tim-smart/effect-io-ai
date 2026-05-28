@@ -77,6 +77,6 @@ export interface ToJsonSchemaOptions {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L12671)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L12390)
 
 Since v4.0.0

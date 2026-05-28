@@ -3,8 +3,7 @@ Module: `Schema`<br />
 
 ## Schema.TimeZone
 
-Schema interface for `TimeZone`, representing `DateTime.TimeZone` values
-encoded as either IANA identifiers or numeric offset strings.
+Type-level representation of `TimeZone`.
 
 **Signature**
 
@@ -14,6 +13,6 @@ export interface TimeZone extends declare<DateTime.TimeZone> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L11698)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L11428)
 
 Since v3.10.0

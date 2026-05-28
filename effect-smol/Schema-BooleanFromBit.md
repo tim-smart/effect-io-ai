@@ -3,8 +3,7 @@ Module: `Schema`<br />
 
 ## Schema.BooleanFromBit
 
-Schema interface for `BooleanFromBit`, a transformation between bit literals
-`0 | 1` and boolean values.
+Type-level representation of `BooleanFromBit`.
 
 **Signature**
 
@@ -14,6 +13,6 @@ export interface BooleanFromBit extends decodeTo<Boolean, Literals<readonly [0, 
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L11216)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L10958)
 
 Since v4.0.0

@@ -27,7 +27,7 @@
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
-    "category": "tags",
+    "category": "services",
     "signature": "declare const D1Client: Context.Service<D1Client, D1Client>",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/d1/src/D1Client.ts#L87"
   },

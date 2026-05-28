@@ -3,8 +3,7 @@ Module: `Schema`<br />
 
 ## Schema.Trim
 
-Schema interface for `Trim`, a transformation that trims leading and trailing
-whitespace while decoding and encodes the trimmed string unchanged.
+Type-level representation of `Trim`.
 
 **Signature**
 
@@ -14,6 +13,6 @@ export interface Trim extends decodeTo<Trimmed, String> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L11017)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L10764)
 
 Since v3.10.0

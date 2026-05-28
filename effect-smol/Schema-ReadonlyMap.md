@@ -12,6 +12,6 @@ schemas.
 declare const ReadonlyMap: <Key extends Top, Value extends Top>(key: Key, value: Value) => $ReadonlyMap<Key, Value>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L9331)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L9110)
 
 Since v3.10.0

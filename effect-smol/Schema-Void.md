@@ -3,11 +3,7 @@ Module: `Schema`<br />
 
 ## Schema.Void
 
-Schema for the `void` type.
-
-**See**
-
-- `Void` for the schema value.
+Type-level representation of `Void`.
 
 **Signature**
 
@@ -15,6 +11,6 @@ Schema for the `void` type.
 export interface Void extends Bottom<void, void, never, never, AST.Void, Void> {}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L2681)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L2653)
 
 Since v3.10.0

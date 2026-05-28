@@ -3,7 +3,7 @@ Module: `Schema`<br />
 
 ## Schema.Tuple
 
-Companion type for a fixed-length tuple. Produced by `Tuple`.
+Type-level representation returned by `Tuple`.
 
 **Signature**
 
@@ -46,6 +46,6 @@ export interface Tuple<Elements extends Tuple.Elements> extends
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L3701)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L3646)
 
 Since v3.10.0

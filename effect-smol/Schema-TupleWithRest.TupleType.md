@@ -18,6 +18,6 @@ type TupleType = Top & {
   }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L3796)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L3741)
 
 Since v3.10.0

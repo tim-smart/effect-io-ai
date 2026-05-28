@@ -3,19 +3,7 @@ Module: `Schema`<br />
 
 ## Schema.withConstructorDefault
 
-Schema type returned by `withConstructorDefault` after attaching a default used
-by constructor helpers.
-
-**Details**
-
-The default affects `make` and related constructor helpers only; decoding and
-encoding still use the original schema behavior. The schema is marked as
-already having a constructor default so another constructor default cannot be
-added.
-
-**See**
-
-- `withConstructorDefault` for the constructor
+Type-level representation returned by `withConstructorDefault`.
 
 **Signature**
 
@@ -43,6 +31,6 @@ export interface withConstructorDefault<S extends Top & WithoutConstructorDefaul
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L5188)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L5056)
 
 Since v3.10.0

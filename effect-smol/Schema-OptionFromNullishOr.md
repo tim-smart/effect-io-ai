@@ -3,8 +3,7 @@ Module: `Schema`<br />
 
 ## Schema.OptionFromNullishOr
 
-Type-level representation of a schema that decodes `null` or `undefined` as
-`None` and all other values as `Some`.
+Type-level representation returned by `OptionFromNullishOr`.
 
 **Signature**
 
@@ -14,6 +13,6 @@ export interface OptionFromNullishOr<S extends Top> extends decodeTo<Option<toTy
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L8249)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L8075)
 
 Since v3.10.0

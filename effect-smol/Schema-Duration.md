@@ -3,7 +3,7 @@ Module: `Schema`<br />
 
 ## Schema.Duration
 
-Type-level representation of the schema for Effect `Duration` values.
+Type-level representation of `Duration`.
 
 **Signature**
 
@@ -13,6 +13,6 @@ export interface Duration extends declare<Duration_.Duration> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L10068)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L9831)
 
 Since v3.10.0

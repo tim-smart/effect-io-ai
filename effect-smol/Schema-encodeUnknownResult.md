@@ -23,6 +23,6 @@ application options override creation options.
 declare const encodeUnknownResult: <S extends Encoder<unknown>>(schema: S, options?: AST.ParseOptions) => (input: unknown, options?: AST.ParseOptions) => Result_.Result<S["Encoded"], Issue.Issue>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L1682)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L1679)
 
 Since v4.0.0

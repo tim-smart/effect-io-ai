@@ -219,7 +219,7 @@
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
-    "category": "utils",
+    "category": "transforming",
     "signature": "declare const flattenCommand: (command: ChildProcess.Command) => FlattenedPipeline",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeChildProcessSpawner.ts#L675"
   },
@@ -443,7 +443,7 @@
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
-    "category": "tags",
+    "category": "services",
     "signature": "declare class NetSocket",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeSocket.ts#L57"
   },
@@ -539,7 +539,7 @@
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
-    "category": "tags",
+    "category": "services",
     "signature": "declare class IncomingMessage",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeSocketServer.ts#L64"
   },

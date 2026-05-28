@@ -3,13 +3,7 @@ Module: `Schema`<br />
 
 ## Schema.NonEmptyArray
 
-Companion type for a non-empty `ReadonlyArray`. Produced by `NonEmptyArray`.
-
-**Details**
-
-The decoded type is `readonly [S["Type"], ...Array<S["Type"]>]`, the encoded type is
-`readonly [S["Encoded"], ...Array<S["Encoded"]>]`, and the element schema is available as
-`value`.
+Type-level representation returned by `NonEmptyArray`.
 
 **Signature**
 
@@ -30,6 +24,6 @@ export interface NonEmptyArray<S extends Top> extends
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L4040)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L3967)
 
 Since v3.10.0

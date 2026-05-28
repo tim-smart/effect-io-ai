@@ -12,6 +12,6 @@ and a zero value.
 declare const makeIsMultipleOf: <T>(options: { readonly remainder: (input: T, divisor: T) => T; readonly zero: NoInfer<T>; readonly annotate?: ((divisor: T) => Annotations.Filter) | undefined; readonly formatter?: Formatter<T> | undefined; }) => (divisor: T, annotations?: Annotations.Filter) => AST.Filter<T>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L6754)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L6599)
 
 Since v4.0.0

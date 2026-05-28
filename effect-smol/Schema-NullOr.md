@@ -3,7 +3,7 @@ Module: `Schema`<br />
 
 ## Schema.NullOr
 
-Companion type for `S | null`. Produced by `NullOr`.
+Type-level representation returned by `NullOr`.
 
 **Signature**
 
@@ -13,6 +13,6 @@ export interface NullOr<S extends Top> extends Union<readonly [S, Null]> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L4387)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L4299)
 
 Since v3.10.0

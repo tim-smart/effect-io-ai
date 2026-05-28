@@ -3,11 +3,7 @@ Module: `Schema`<br />
 
 ## Schema.instanceOf
 
-The type produced by `instanceOf` — a declaration schema that validates class instances.
-
-**See**
-
-- `instanceOf` for the constructor
+Type-level representation returned by `instanceOf`.
 
 **Signature**
 
@@ -17,6 +13,6 @@ export interface instanceOf<T, Iso = T> extends declare<T, Iso> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L5883)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L5728)
 
 Since v3.10.0

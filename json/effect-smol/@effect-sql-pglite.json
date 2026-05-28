@@ -59,7 +59,7 @@
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
-    "category": "tags",
+    "category": "services",
     "signature": "declare const PgliteClient: Context.Service<PgliteClient, PgliteClient>",
     "sourceUrl": "https://github.com/Effect-TS/effect-smol/tree/main/packages/sql/pglite/src/PgliteClient.ts#L110"
   },

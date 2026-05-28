@@ -3,8 +3,7 @@ Module: `Schema`<br />
 
 ## Schema.flip
 
-Schema type representing a flipped schema where `Type` and `Encoded` are
-swapped. Produced by `flip`.
+Type-level representation returned by `flip`.
 
 **Signature**
 
@@ -33,6 +32,6 @@ export interface flip<S extends Top> extends
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L2142)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L2132)
 
 Since v4.0.0

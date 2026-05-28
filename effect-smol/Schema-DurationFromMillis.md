@@ -3,8 +3,7 @@ Module: `Schema`<br />
 
 ## Schema.DurationFromMillis
 
-Type-level representation of a transformation schema that decodes
-non-negative millisecond numbers into `Duration` values.
+Type-level representation of `DurationFromMillis`.
 
 **Signature**
 
@@ -14,6 +13,6 @@ export interface DurationFromMillis extends decodeTo<Duration, Number> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L10225)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L9985)
 
 Since v3.10.0

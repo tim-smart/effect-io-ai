@@ -3,13 +3,7 @@ Module: `Schema`<br />
 
 ## Schema.Struct
 
-Schema type returned by `Schema.Struct` for an object with a fixed set of
-schema-defined fields.
-
-**Details**
-
-The `fields` property exposes the original field map for reuse, and
-`mapFields` creates a new struct schema by transforming that field map.
+Type-level representation returned by `Struct`.
 
 **Signature**
 
@@ -73,6 +67,6 @@ export interface Struct<Fields extends Struct.Fields> extends
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L2913)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L2877)
 
 Since v3.10.0

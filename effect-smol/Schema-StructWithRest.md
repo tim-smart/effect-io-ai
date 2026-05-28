@@ -3,18 +3,7 @@ Module: `Schema`<br />
 
 ## Schema.StructWithRest
 
-Companion type for a struct combined with one or more record schemas. Produced
-by `StructWithRest`.
-
-**When to use**
-
-Use as the schema type when generic code needs to retain the base struct
-schema and all rest record schemas.
-
-**See**
-
-- `StructWithRest` for constructing this schema type
-- `Record` for constructing record schemas used as rest index signatures
+Type-level representation returned by `StructWithRest`.
 
 **Signature**
 
@@ -39,6 +28,6 @@ export interface StructWithRest<
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L3514)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L3459)
 
 Since v4.0.0

@@ -3,8 +3,7 @@ Module: `Schema`<br />
 
 ## Schema.toType
 
-Schema type that collapses a transformation schema to its decoded `Type` on
-both sides (Type = Encoded = S["Type"]). Produced by `toType`.
+Type-level representation returned by `toType`.
 
 **Signature**
 
@@ -30,6 +29,6 @@ export interface toType<S extends Top> extends
 {}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L2058)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L2050)
 
 Since v4.0.0

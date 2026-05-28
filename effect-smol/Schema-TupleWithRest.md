@@ -3,8 +3,7 @@ Module: `Schema`<br />
 
 ## Schema.TupleWithRest
 
-Companion type for a tuple with additional rest elements. Produced by
-`TupleWithRest`.
+Type-level representation returned by `TupleWithRest`.
 
 **Signature**
 
@@ -29,6 +28,6 @@ export interface TupleWithRest<
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L3905)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L3849)
 
 Since v4.0.0

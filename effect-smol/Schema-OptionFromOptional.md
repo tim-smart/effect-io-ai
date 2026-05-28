@@ -3,8 +3,7 @@ Module: `Schema`<br />
 
 ## Schema.OptionFromOptional
 
-Type-level representation of a schema that decodes a missing key or
-`undefined` value as `None` and other present values as `Some`.
+Type-level representation returned by `OptionFromOptional`.
 
 **Signature**
 
@@ -14,6 +13,6 @@ export interface OptionFromOptional<S extends Top> extends decodeTo<Option<toTyp
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L8322)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L8146)
 
 Since v4.0.0

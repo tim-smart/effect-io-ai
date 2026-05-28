@@ -13,6 +13,6 @@ type Encoded<S, Records> = & S["Encoded"]
     & MergeTuple<{ readonly [K in keyof Records]: Records[K]["Encoded"] }>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L3460)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L3414)
 
 Since v3.10.0

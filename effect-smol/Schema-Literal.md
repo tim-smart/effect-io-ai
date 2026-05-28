@@ -3,11 +3,7 @@ Module: `Schema`<br />
 
 ## Schema.Literal
 
-Represents a schema for a single literal value.
-
-**See**
-
-- `Literal` for the constructor function.
+Type-level representation returned by `Literal`.
 
 **Signature**
 
@@ -18,6 +14,6 @@ export interface Literal<L extends AST.LiteralValue> extends Bottom<L, L, never,
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L2208)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L2197)
 
 Since v3.10.0

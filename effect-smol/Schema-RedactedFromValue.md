@@ -3,8 +3,7 @@ Module: `Schema`<br />
 
 ## Schema.RedactedFromValue
 
-Type-level representation of a schema that decodes a raw value with the
-provided schema and wraps the result in `Redacted`.
+Type-level representation returned by `RedactedFromValue`.
 
 **Signature**
 
@@ -16,6 +15,6 @@ export interface RedactedFromValue<S extends Top>
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L8630)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L8450)
 
 Since v4.0.0

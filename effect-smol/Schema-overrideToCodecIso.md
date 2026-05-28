@@ -3,8 +3,7 @@ Module: `Schema`<br />
 
 ## Schema.overrideToCodecIso
 
-The schema type returned by `overrideToCodecIso`. Carries a custom
-`Iso` type parameter and exposes the original `schema`.
+Type-level representation returned by `overrideToCodecIso`.
 
 **Signature**
 
@@ -32,6 +31,6 @@ export interface overrideToCodecIso<S extends Top, Iso> extends
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L13238)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L12956)
 
 Since v4.0.0

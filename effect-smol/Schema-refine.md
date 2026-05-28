@@ -3,8 +3,7 @@ Module: `Schema`<br />
 
 ## Schema.refine
 
-The output type of `refine`, narrowing the schema's `Type` to `T` via a
-type guard.
+Type-level representation returned by `refine`.
 
 **Signature**
 
@@ -32,6 +31,6 @@ export interface refine<T extends S["Type"], S extends Top> extends
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L4532)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L4443)
 
 Since v3.10.0

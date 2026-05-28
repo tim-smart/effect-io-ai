@@ -18,6 +18,6 @@ export interface SchemaPart extends Top {
   }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L2261)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L2250)
 
 Since v4.0.0

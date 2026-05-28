@@ -3,9 +3,7 @@ Module: `Schema`<br />
 
 ## Schema.optionalKey
 
-Companion type for an exact optional struct key. The key may be absent, but
-when present must match the wrapped schema (no implicit `undefined`).
-Produced by `optionalKey`.
+Type-level representation returned by `optionalKey`.
 
 **Signature**
 
@@ -33,6 +31,6 @@ export interface optionalKey<S extends Top> extends
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L1849)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L1844)
 
 Since v4.0.0

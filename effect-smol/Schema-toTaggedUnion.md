@@ -3,11 +3,7 @@ Module: `Schema`<br />
 
 ## Schema.toTaggedUnion
 
-The type produced by `toTaggedUnion` — a `Union` augmented with `cases`, `guards`, `isAnyOf`, and `match` utilities.
-
-**See**
-
-- `toTaggedUnion` for the constructor
+Type-level representation returned by `toTaggedUnion`.
 
 **Signature**
 
@@ -15,6 +11,6 @@ The type produced by `toTaggedUnion` — a `Union` augmented with `cases`, `guar
 type toTaggedUnion<Tag, Members> = Union<Members> & TaggedUnionUtils<Tag, Members>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L5661)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L5512)
 
 Since v4.0.0

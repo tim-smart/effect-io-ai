@@ -59,7 +59,7 @@
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
-    "category": "tags",
+    "category": "services",
     "signature": "declare const LibsqlClient: Context.Service<LibsqlClient, LibsqlClient>",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/libsql/src/LibsqlClient.ts#L96"
   },

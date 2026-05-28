@@ -3,16 +3,7 @@ Module: `Schema`<br />
 
 ## Schema.middlewareEncoding
 
-A schema that wraps another schema and intercepts its encoding pipeline.
-
-**Details**
-
-The interceptor receives the full encoding `Effect` and may replace, modify,
-or augment it — including adding service requirements via `RE`.
-
-**See**
-
-- `middlewareEncoding` for the constructor
+Type-level representation returned by `middlewareEncoding`.
 
 **Signature**
 
@@ -40,6 +31,6 @@ export interface middlewareEncoding<S extends Top, RE> extends
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L4739)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L4630)
 
 Since v4.0.0

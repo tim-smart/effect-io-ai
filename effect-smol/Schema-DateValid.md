@@ -3,8 +3,7 @@ Module: `Schema`<br />
 
 ## Schema.DateValid
 
-Type-level representation of the `DateValid` schema, which accepts only valid
-JavaScript `Date` instances.
+Type-level representation of `DateValid`.
 
 **Signature**
 
@@ -14,6 +13,6 @@ export interface DateValid extends Date {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L10045)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L9808)
 
 Since v4.0.0

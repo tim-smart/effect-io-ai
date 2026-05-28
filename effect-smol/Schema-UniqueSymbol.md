@@ -3,11 +3,7 @@ Module: `Schema`<br />
 
 ## Schema.UniqueSymbol
 
-Represents a schema for a specific unique symbol.
-
-**See**
-
-- `UniqueSymbol` for the constructor function.
+Type-level representation returned by `UniqueSymbol`.
 
 **Signature**
 
@@ -17,6 +13,6 @@ export interface UniqueSymbol<sym extends symbol>
 {}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L2716)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L2686)
 
 Since v4.0.0

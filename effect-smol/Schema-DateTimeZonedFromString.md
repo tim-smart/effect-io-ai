@@ -3,8 +3,7 @@ Module: `Schema`<br />
 
 ## Schema.DateTimeZonedFromString
 
-Schema interface for `DateTimeZonedFromString`, a transformation between
-zoned date-time strings and `DateTime.Zoned` values.
+Type-level representation of `DateTimeZonedFromString`.
 
 **Signature**
 
@@ -14,6 +13,6 @@ export interface DateTimeZonedFromString extends decodeTo<DateTimeZoned, String>
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L11848)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L11575)
 
 Since v4.0.0

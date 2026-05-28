@@ -3,17 +3,7 @@ Module: `Schema`<br />
 
 ## Schema.brand
 
-The output type of `brand`, intersecting the schema's `Type` with one or
-more `Brand.Brand` tags.
-
-**When to use**
-
-Use as the schema type when generic code needs to retain the wrapped schema
-and nominal brand type.
-
-**See**
-
-- `brand` for adding the brand tag to an existing schema
+Type-level representation returned by `brand`.
 
 **Signature**
 
@@ -42,6 +32,6 @@ export interface brand<S extends Top, B> extends
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L4593)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L4496)
 
 Since v3.10.0

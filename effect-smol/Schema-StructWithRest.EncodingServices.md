@@ -13,6 +13,6 @@ type EncodingServices<S, Records> = | S["EncodingServices"]
     | { [K in keyof Records]: Records[K]["EncodingServices"] }[number]
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L3482)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L3436)
 
 Since v4.0.0

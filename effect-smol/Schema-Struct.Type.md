@@ -16,6 +16,6 @@ produce optional properties, while `mutableKey` produces writable properties.
 type { [K in keyof Type_<F, TypeOptionalKeys<F>, TypeMutableKeys<F>>]: Type_<F, TypeOptionalKeys<F>, TypeMutableKeys<F>>[K]; } = Simplify<Type_<F>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L2797)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L2767)
 
 Since v3.10.0

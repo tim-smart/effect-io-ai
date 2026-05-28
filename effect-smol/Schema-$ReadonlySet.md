@@ -3,18 +3,7 @@ Module: `Schema`<br />
 
 ## Schema.$ReadonlySet
 
-Type-level representation of a `ReadonlySet` schema whose values are validated
-by the provided element schema.
-
-**When to use**
-
-Use to name or constrain the schema type produced by `ReadonlySet` when
-generic code needs to retain the element schema type.
-
-**See**
-
-- `ReadonlySet` for constructing this schema type
-- `ReadonlySetIso` for the array representation used by this schema's ISO
+Type-level representation returned by `ReadonlySet`.
 
 **Signature**
 
@@ -32,6 +21,6 @@ export interface $ReadonlySet<Value extends Top> extends
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L9504)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L9273)
 
 Since v4.0.0

@@ -3,12 +3,7 @@ Module: `Schema`<br />
 
 ## Schema.TemplateLiteral
 
-Represents a schema that validates strings matching a template literal pattern.
-The encoded type is a string formed by concatenating the parts.
-
-**See**
-
-- `TemplateLiteral` for the constructor function.
+Type-level representation returned by `TemplateLiteral`.
 
 **Signature**
 
@@ -27,6 +22,6 @@ export interface TemplateLiteral<Parts extends TemplateLiteral.Parts> extends
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L2316)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L2303)
 
 Since v3.10.0

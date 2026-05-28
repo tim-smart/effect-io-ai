@@ -12,6 +12,6 @@ Creates a greater-than-or-equal-to (`>=`) check for any ordered type from an
 declare const makeIsGreaterThanOrEqualTo: <T>(options: { readonly order: Order.Order<T>; readonly annotate?: ((exclusiveMinimum: T) => Annotations.Filter) | undefined; readonly formatter?: Formatter<T> | undefined; }) => (minimum: T, annotations?: Annotations.Filter) => AST.Filter<T>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L6631)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L6476)
 
 Since v4.0.0

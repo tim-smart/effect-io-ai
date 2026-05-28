@@ -21,6 +21,6 @@ type Person = Schema.Schema.Type<typeof Person>
 type Type<S> = S extends Top ? S["Type"] : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L675)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L672)
 
 Since v3.10.0

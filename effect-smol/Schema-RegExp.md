@@ -3,7 +3,7 @@ Module: `Schema`<br />
 
 ## Schema.RegExp
 
-Type-level representation of the schema for JavaScript `RegExp` instances.
+Type-level representation of `RegExp`.
 
 **Signature**
 
@@ -13,6 +13,6 @@ export interface RegExp extends instanceOf<globalThis.RegExp> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L9795)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L9562)
 
 Since v4.0.0

@@ -3,9 +3,7 @@ Module: `Schema`<br />
 
 ## Schema.declareConstructor
 
-The schema type returned by `declareConstructor`, tracking the decoded
-type `T`, the encoded type `E`, and the list of type-parameter schemas
-`TypeParameters`.
+Type-level representation returned by `declareConstructor`.
 
 **Signature**
 
@@ -25,6 +23,6 @@ export interface declareConstructor<T, E, TypeParameters extends ReadonlyArray<T
 {}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L323)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L321)
 
 Since v4.0.0

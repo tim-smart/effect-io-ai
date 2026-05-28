@@ -3,12 +3,7 @@ Module: `Schema`<br />
 
 ## Schema.TaggedUnion
 
-A union schema that exposes `cases`, `guards`, `isAnyOf`, and `match` utilities keyed by the `_tag` discriminant.
-Produced by `TaggedUnion`.
-
-**See**
-
-- `TaggedUnion` for the constructor
+Type-level representation returned by `TaggedUnion`.
 
 **Signature**
 
@@ -41,6 +36,6 @@ export interface TaggedUnion<Cases extends Record<string, Top>> extends
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L5747)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L5596)
 
 Since v4.0.0

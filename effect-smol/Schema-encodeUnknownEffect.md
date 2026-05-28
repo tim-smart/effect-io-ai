@@ -34,6 +34,6 @@ Effect.runPromise(Schema.encodeUnknownEffect(NumberFromString)(42)).then(console
 declare const encodeUnknownEffect: <S extends Top>(schema: S, options?: AST.ParseOptions) => (input: unknown, options?: AST.ParseOptions) => Effect.Effect<S["Encoded"], SchemaError, S["EncodingServices"]>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L1537)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L1534)
 
 Since v4.0.0

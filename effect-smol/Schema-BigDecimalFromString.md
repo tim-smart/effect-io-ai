@@ -3,8 +3,7 @@ Module: `Schema`<br />
 
 ## Schema.BigDecimalFromString
 
-Type-level representation of a transformation schema that decodes strings into
-`BigDecimal` values.
+Type-level representation of `BigDecimalFromString`.
 
 **Signature**
 
@@ -14,6 +13,6 @@ export interface BigDecimalFromString extends decodeTo<BigDecimal, String> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L10314)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L10073)
 
 Since v4.0.0

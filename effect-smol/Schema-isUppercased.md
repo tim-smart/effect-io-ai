@@ -17,6 +17,6 @@ change when uppercased.
 declare const isUppercased: (annotations?: Annotations.Filter) => AST.Filter<string>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L6443)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L6288)
 
 Since v4.0.0

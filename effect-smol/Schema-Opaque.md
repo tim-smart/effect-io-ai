@@ -3,13 +3,7 @@ Module: `Schema`<br />
 
 ## Schema.Opaque
 
-The interface type for schemas created by `Opaque`.
-Carries the same encoded/decoded shape as `S` but replaces `Type` with `Self & Brand`,
-making the decoded value nominally distinct.
-
-**See**
-
-- `Opaque` for the constructor
+Type-level representation returned by `Opaque`.
 
 **Signature**
 
@@ -37,6 +31,6 @@ export interface Opaque<Self, S extends Top, Brand> extends
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L5822)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L5668)
 
 Since v4.0.0

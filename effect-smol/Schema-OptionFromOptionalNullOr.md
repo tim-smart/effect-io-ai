@@ -3,8 +3,7 @@ Module: `Schema`<br />
 
 ## Schema.OptionFromOptionalNullOr
 
-Type-level representation of a schema that decodes a missing key, `undefined`,
-or `null` as `None` and all other present values as `Some`.
+Type-level representation returned by `OptionFromOptionalNullOr`.
 
 **Signature**
 
@@ -14,6 +13,6 @@ export interface OptionFromOptionalNullOr<S extends Top> extends decodeTo<Option
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L8358)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L8181)
 
 Since v4.0.0

@@ -187,7 +187,7 @@
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
-    "category": "models",
+    "category": "options",
     "signature": "type Options = {\n  readonly apiKey?: Redacted.Redacted<string> | undefined\n  readonly apiUrl?: string | undefined\n  readonly organizationId?: Redacted.Redacted<string> | undefined\n  readonly projectId?: Redacted.Redacted<string> | undefined\n  readonly transformClient?: ((client: HttpClient.HttpClient) => HttpClient.HttpClient) | undefined\n}",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/OpenAiClient.ts#L110"
   },
@@ -1131,7 +1131,7 @@
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
-    "category": "models",
+    "category": "options",
     "signature": "type OpenAiTelemetryAttributeOptions = Telemetry.GenAITelemetryAttributeOptions & {\n  openai?: {\n    request?: RequestAttributes | undefined\n    response?: ResponseAttributes | undefined\n  } | undefined\n}",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/OpenAiTelemetry.ts#L142"
   }

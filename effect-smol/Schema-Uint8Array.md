@@ -3,8 +3,7 @@ Module: `Schema`<br />
 
 ## Schema.Uint8Array
 
-Schema interface for `Uint8Array`, representing JavaScript `Uint8Array`
-instances with base64 JSON encoding.
+Type-level representation of `Uint8Array`.
 
 **Signature**
 
@@ -14,6 +13,6 @@ export interface Uint8Array extends instanceOf<globalThis.Uint8Array<ArrayBuffer
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L11256)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L10997)
 
 Since v4.0.0

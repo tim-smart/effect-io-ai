@@ -3,8 +3,7 @@ Module: `Schema`<br />
 
 ## Schema.Finite
 
-Type-level representation of the `Finite` number schema, which rejects `NaN`,
-`Infinity`, and `-Infinity`.
+Type-level representation of `Finite`.
 
 **Signature**
 
@@ -14,6 +13,6 @@ export interface Finite extends Number {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L10855)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L10608)
 
 Since v3.10.0

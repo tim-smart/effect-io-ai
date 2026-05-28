@@ -3,8 +3,7 @@ Module: `Schema`<br />
 
 ## Schema.NonEmptyString
 
-Type-level representation of the `NonEmptyString` schema, which validates
-strings with a length of at least one.
+Type-level representation of `NonEmptyString`.
 
 **Signature**
 
@@ -14,6 +13,6 @@ export interface NonEmptyString extends String {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L8015)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L7859)
 
 Since v3.10.0

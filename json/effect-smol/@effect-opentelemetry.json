@@ -315,7 +315,7 @@
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
-    "category": "tags",
+    "category": "services",
     "signature": "declare class Resource",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Resource.ts#L54"
   },

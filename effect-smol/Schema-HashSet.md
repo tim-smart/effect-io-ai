@@ -3,8 +3,7 @@ Module: `Schema`<br />
 
 ## Schema.HashSet
 
-Schema for an Effect `HashSet` where values must conform to the provided
-schema.
+Type-level representation returned by `HashSet`.
 
 **Signature**
 
@@ -22,6 +21,6 @@ export interface HashSet<Value extends Top> extends
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L9599)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L9367)
 
 Since v3.10.0

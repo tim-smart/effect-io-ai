@@ -3,7 +3,7 @@ Module: `Schema`<br />
 
 ## Schema.UniqueArray
 
-Companion type for an array with unique elements. Produced by `UniqueArray`.
+Type-level representation returned by `UniqueArray`.
 
 **Signature**
 
@@ -13,6 +13,6 @@ export interface UniqueArray<S extends Top> extends $Array<S> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L4147)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L4061)
 
 Since v4.0.0

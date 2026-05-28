@@ -3,8 +3,7 @@ Module: `Schema`<br />
 
 ## Schema.URLFromString
 
-Type-level representation of a transformation schema that decodes valid URL
-strings into JavaScript `URL` instances.
+Type-level representation of `URLFromString`.
 
 **Signature**
 
@@ -14,6 +13,6 @@ export interface URLFromString extends decodeTo<URL, String> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L9917)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L9683)
 
 Since v4.0.0

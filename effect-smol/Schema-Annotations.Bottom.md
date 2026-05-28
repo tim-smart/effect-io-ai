@@ -58,6 +58,6 @@ export interface Bottom<T, TypeParameters extends ReadonlyArray<Top>> extends Do
   }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L13603)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L13321)
 
 Since v4.0.0

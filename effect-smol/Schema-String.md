@@ -3,11 +3,7 @@ Module: `Schema`<br />
 
 ## Schema.String
 
-Schema for `string` values.
-
-**See**
-
-- `String` for the schema value.
+Type-level representation of `String`.
 
 **Signature**
 
@@ -15,6 +11,6 @@ Schema for `string` values.
 export interface String extends Bottom<string, string, never, never, AST.String, String> {}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L2574)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L2551)
 
 Since v4.0.0

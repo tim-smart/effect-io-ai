@@ -3,8 +3,7 @@ Module: `Schema`<br />
 
 ## Schema.declare
 
-The schema type returned by `declare`, representing a non-parametric
-opaque type `T` with no type parameters.
+Type-level representation returned by `declare`.
 
 **Signature**
 
@@ -14,6 +13,6 @@ export interface declare<T, Iso = T> extends declareConstructor<T, T, readonly [
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L413)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L410)
 
 Since v3.13.3

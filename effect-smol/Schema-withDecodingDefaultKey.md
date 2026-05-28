@@ -3,12 +3,7 @@ Module: `Schema`<br />
 
 ## Schema.withDecodingDefaultKey
 
-The type produced by `withDecodingDefaultKey`: a schema whose `Encoded`
-side is `optionalKey` and that fills in a default `Encoded` value during decoding.
-
-**See**
-
-- `withDecodingDefaultKey` for the constructor
+Type-level representation returned by `withDecodingDefaultKey`.
 
 **Signature**
 
@@ -18,6 +13,6 @@ export interface withDecodingDefaultKey<S extends Top, R = never> extends decode
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L5254)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L5120)
 
 Since v4.0.0

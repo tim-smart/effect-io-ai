@@ -3,8 +3,7 @@ Module: `Schema`<br />
 
 ## Schema.Exit
 
-Schema for `Exit` values, representing either a success with value `A` or a
-failure with a `Cause` containing typed errors and defects.
+Type-level representation returned by `Exit`.
 
 **Signature**
 
@@ -24,6 +23,6 @@ export interface Exit<A extends Top, E extends Top, D extends Top> extends
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L9152)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L8941)
 
 Since v3.10.0

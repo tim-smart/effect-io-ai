@@ -3,8 +3,7 @@ Module: `Schema`<br />
 
 ## Schema.TimeZoneNamedFromString
 
-Schema interface for `TimeZoneNamedFromString`, a transformation between IANA
-time zone identifier strings and `DateTime.TimeZone.Named` values.
+Type-level representation of `TimeZoneNamedFromString`.
 
 **Signature**
 
@@ -14,6 +13,6 @@ export interface TimeZoneNamedFromString extends decodeTo<TimeZoneNamed, String>
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L11669)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L11400)
 
 Since v4.0.0

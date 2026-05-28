@@ -18,6 +18,6 @@ Encodes an `Error` as an object with `message`, optional `name`, and optional
 declare const ErrorWithStack: Error
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L9044)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L8835)
 
 Since v4.0.0

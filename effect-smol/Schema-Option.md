@@ -3,21 +3,7 @@ Module: `Schema`<br />
 
 ## Schema.Option
 
-Schema for the `Option<A>` type, representing an optional value that is
-either `None` or `Some<A>`.
-
-**Example** (Option schema)
-
-```ts
-import { Option, Schema } from "effect"
-
-const schema = Schema.Option(Schema.Number)
-
-Schema.decodeUnknownSync(schema)(Option.some(1))
-// => Some(1)
-Schema.decodeUnknownSync(schema)(Option.none())
-// => None
-```
+Type-level representation returned by `Option`.
 
 **Signature**
 
@@ -35,6 +21,6 @@ export interface Option<A extends Top> extends
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L8080)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L7909)
 
 Since v3.10.0

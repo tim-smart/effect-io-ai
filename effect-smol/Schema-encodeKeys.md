@@ -3,8 +3,7 @@ Module: `Schema`<br />
 
 ## Schema.encodeKeys
 
-Schema type for a struct with renamed encoded keys. Produced by
-`encodeKeys`.
+Type-level representation returned by `encodeKeys`.
 
 **Signature**
 
@@ -26,6 +25,6 @@ export interface encodeKeys<
 {}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L3071)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L3034)
 
 Since v4.0.0

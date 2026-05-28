@@ -3,8 +3,7 @@ Module: `Schema`<br />
 
 ## Schema.URLSearchParams
 
-Type-level representation of the schema for JavaScript `URLSearchParams`
-instances.
+Type-level representation of `URLSearchParams`.
 
 **Signature**
 
@@ -14,6 +13,6 @@ export interface URLSearchParams extends instanceOf<globalThis.URLSearchParams> 
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L10720)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L10475)
 
 Since v4.0.0

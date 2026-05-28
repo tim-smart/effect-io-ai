@@ -3,8 +3,7 @@ Module: `Schema`<br />
 
 ## Schema.optional
 
-Companion type for an optional struct key that also accepts `undefined`.
-Equivalent to `optionalKey<UndefinedOr<S>>`. Produced by `optional`.
+Type-level representation returned by `optional`.
 
 **Signature**
 
@@ -14,6 +13,6 @@ export interface optional<S extends Top> extends optionalKey<UndefinedOr<S>> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L1926)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L1920)
 
 Since v3.10.0

@@ -16,6 +16,6 @@ optional tuple positions.
 type Type<E> = Type_<E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L3607)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L3552)
 
 Since v3.10.0

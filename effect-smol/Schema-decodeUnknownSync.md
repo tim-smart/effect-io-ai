@@ -42,6 +42,6 @@ Schema.decodeUnknownSync(NumberFromString)("not a number")
 declare const decodeUnknownSync: <S extends Decoder<unknown>>(schema: S, options?: AST.ParseOptions) => (input: unknown, options?: AST.ParseOptions) => S["Type"]
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L1484)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L1481)
 
 Since v4.0.0

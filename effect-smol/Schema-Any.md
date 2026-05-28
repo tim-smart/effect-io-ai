@@ -3,11 +3,7 @@ Module: `Schema`<br />
 
 ## Schema.Any
 
-Schema for the `any` type. Accepts any value without validation.
-
-**See**
-
-- `Any` for the schema value.
+Type-level representation of `Any`.
 
 **Signature**
 
@@ -15,6 +11,6 @@ Schema for the `any` type. Accepts any value without validation.
 export interface Any extends Bottom<any, any, never, never, AST.Any, Any> {}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L2502)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L2483)
 
 Since v3.10.0

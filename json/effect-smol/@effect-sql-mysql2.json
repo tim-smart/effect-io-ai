@@ -59,7 +59,7 @@
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
-    "category": "tags",
+    "category": "services",
     "signature": "declare const MysqlClient: Context.Service<MysqlClient, MysqlClient>",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/mysql2/src/MysqlClient.ts#L196"
   },

@@ -3,7 +3,7 @@ Module: `Schema`<br />
 
 ## Schema.File
 
-Type-level representation of the schema for JavaScript `File` instances.
+Type-level representation of `File`.
 
 **Signature**
 
@@ -13,6 +13,6 @@ export interface File extends instanceOf<globalThis.File> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L10478)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L10235)
 
 Since v4.0.0

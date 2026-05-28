@@ -37,6 +37,6 @@ console.log(Schema.toEncoded(schema).ast.annotations?.title)
 declare const annotateEncoded: <S extends Top>(annotations: Annotations.Bottom<S["Encoded"], readonly []>) => (self: S) => S["Rebuild"]
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L575)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L572)
 
 Since v4.0.0
