@@ -3,8 +3,8 @@ Module: `McpSchema`<br />
 
 ## McpSchema.Elicit
 
-Request sent by the server asking the client to collect structured input
-from the user.
+Sent from the server asking the client to collect structured input from the
+user.
 
 **Details**
 
@@ -17,6 +17,6 @@ cancellation.
 declare class Elicit
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L2007)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L2129)
 
 Since v4.0.0

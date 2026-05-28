@@ -7,8 +7,8 @@ Creates a standalone `Fail` reason (not wrapped in a `Cause`).
 
 **When to use**
 
-Use when you need to construct individual reasons for
-`fromReasons` or for direct comparison.
+Use when constructing a standalone typed failure reason for
+`fromReasons` or direct comparison.
 
 **Example** (creating a Fail reason)
 

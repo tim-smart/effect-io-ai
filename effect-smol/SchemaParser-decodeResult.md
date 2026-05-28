@@ -4,7 +4,7 @@ Module: `SchemaParser`<br />
 ## SchemaParser.decodeResult
 
 Creates a decoder for input already typed as the schema's `Encoded` type,
-returning a `Result`.
+reporting failure safely as a `Result`.
 
 **When to use**
 
@@ -32,6 +32,6 @@ decoding or other non-schema failures can still throw.
 declare const decodeResult: <S extends Schema.Decoder<unknown>>(schema: S, options?: AST.ParseOptions) => (input: S["Encoded"], options?: AST.ParseOptions) => Result.Result<S["Type"], Issue.Issue>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaParser.ts#L509)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaParser.ts#L511)
 
 Since v4.0.0

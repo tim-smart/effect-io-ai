@@ -3,7 +3,12 @@ Module: `FetchHttpClient`<br />
 
 ## FetchHttpClient.RequestInit
 
-Service containing default `RequestInit` options for the fetch-based HTTP client.
+Service that contains default fetch options for the fetch-based HTTP client.
+
+**When to use**
+
+Use to provide default credentials, cache, redirect, integrity, or other
+fetch options for outgoing HTTP requests.
 
 **Details**
 
@@ -15,6 +20,6 @@ Request-specific method, headers, body, and abort signal are supplied by the cli
 declare class RequestInit
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FetchHttpClient.ts#L67)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FetchHttpClient.ts#L72)
 
 Since v4.0.0

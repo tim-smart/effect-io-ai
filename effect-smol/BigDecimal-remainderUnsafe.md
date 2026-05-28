@@ -3,12 +3,13 @@ Module: `BigDecimal`<br />
 
 ## BigDecimal.remainderUnsafe
 
-Returns the remainder left over when one operand is divided by a second operand.
+Returns the decimal remainder left over when one operand is divided by a
+non-zero second operand, throwing for division by zero.
 
 **When to use**
 
-Use when the divisor is known to be non-zero and division by zero should be a
-thrown exception.
+Use when you need the decimal remainder and the divisor is known to be
+non-zero, so division by zero should be a thrown exception.
 
 **Gotchas**
 
@@ -44,6 +45,6 @@ assert.deepStrictEqual(
 declare const remainderUnsafe: { (divisor: BigDecimal): (self: BigDecimal) => BigDecimal; (self: BigDecimal, divisor: BigDecimal): BigDecimal; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigDecimal.ts#L1202)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigDecimal.ts#L1205)
 
 Since v4.0.0

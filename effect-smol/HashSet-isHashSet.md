@@ -3,7 +3,7 @@ Module: `HashSet`<br />
 
 ## HashSet.isHashSet
 
-Checks if a value is a HashSet.
+Checks whether a value is a HashSet.
 
 **Example** (Checking for a HashSet)
 

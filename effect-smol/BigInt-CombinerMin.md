@@ -3,7 +3,7 @@ Module: `BigInt`<br />
 
 ## BigInt.CombinerMin
 
-A `Combiner` that returns the minimum `bigint`.
+Combiner that returns the minimum `bigint`.
 
 **When to use**
 
@@ -20,6 +20,6 @@ Use to keep the smallest `bigint` through APIs that consume a `Combiner`.
 declare const CombinerMin: Combiner.Combiner<bigint>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigInt.ts#L1086)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigInt.ts#L1088)
 
 Since v4.0.0

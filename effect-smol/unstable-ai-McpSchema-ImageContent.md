@@ -3,7 +3,7 @@ Module: `McpSchema`<br />
 
 ## McpSchema.ImageContent
 
-An image provided to or from an LLM.
+Represents image content provided to or from an LLM.
 
 **Signature**
 
@@ -11,6 +11,6 @@ An image provided to or from an LLM.
 declare class ImageContent
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L1121)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L1212)
 
 Since v4.0.0

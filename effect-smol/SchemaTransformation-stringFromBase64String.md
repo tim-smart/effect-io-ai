@@ -36,6 +36,6 @@ const schema = Schema.String.pipe(
 declare const stringFromBase64String: Transformation<string, string, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L1442)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L1440)
 
 Since v4.0.0

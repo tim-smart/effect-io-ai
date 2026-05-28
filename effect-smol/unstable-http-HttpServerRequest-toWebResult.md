@@ -3,7 +3,7 @@ Module: `HttpServerRequest`<br />
 
 ## HttpServerRequest.toWebResult
 
-Converts an `HttpServerRequest` to a Web `Request` as a `Result`.
+Converts an `HttpServerRequest` safely to a Web `Request` as a `Result`.
 
 **Details**
 
@@ -17,6 +17,6 @@ an absolute URL is derived from the request; invalid URLs fail with a
 declare const toWebResult: (self: HttpServerRequest, options?: { readonly signal?: AbortSignal | undefined; readonly context?: Context.Context<never> | undefined; }) => Result.Result<Request, RequestError>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpServerRequest.ts#L1042)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpServerRequest.ts#L1057)
 
 Since v4.0.0

@@ -11,7 +11,6 @@ Use when you want the logical NAND of two conditions.
 
 **Details**
 
-- Pure; does not mutate input.
 - Returns the negation of `and`.
 
 **Example** (NAND)
@@ -35,6 +34,6 @@ console.log(notBoth("a"))
 declare const nand: { <A>(that: Predicate<A>): (self: Predicate<A>) => Predicate<A>; <A>(self: Predicate<A>, that: Predicate<A>): Predicate<A>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L1885)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L1840)
 
 Since v2.0.0

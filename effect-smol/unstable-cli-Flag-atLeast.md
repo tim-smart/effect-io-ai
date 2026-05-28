@@ -3,7 +3,7 @@ Module: `Flag`<br />
 
 ## Flag.atLeast
 
-Requires a flag to be specified at least a minimum number of times.
+Ensures a flag is specified at least a minimum number of times.
 
 **Example** (Requiring repeated values)
 

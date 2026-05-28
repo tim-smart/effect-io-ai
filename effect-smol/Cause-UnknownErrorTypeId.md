@@ -11,6 +11,6 @@ Unique brand for `UnknownError`.
 declare const UnknownErrorTypeId: "~effect/Cause/UnknownError"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L1789)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L1787)
 
 Since v4.0.0

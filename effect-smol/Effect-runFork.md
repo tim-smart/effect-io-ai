@@ -3,17 +3,14 @@ Module: `Effect`<br />
 
 ## Effect.runFork
 
-The foundational function for running effects, returning a "fiber" that can
+Runs an effect in the background, returning a fiber that can
 be observed or interrupted.
 
 **When to use**
 
-Use when `runFork` is used to run an effect in the background by creating a
-fiber. It is the base function for all other run functions. It starts a fiber
-that can be observed or interrupted.
-
-Unless you specifically need a `Promise` or synchronous operation,
-`runFork` is a good default choice.
+Use when an effect should start in the background and return a fiber that can
+be observed or interrupted. Prefer this when you do not need a `Promise` or
+synchronous result.
 
 **Example** (Running an effect in the background)
 
@@ -42,6 +39,6 @@ setTimeout(() => {
 declare const runFork: <A, E>(effect: Effect<A, E, never>, options?: RunOptions | undefined) => Fiber<A, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L8783)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L8766)
 
 Since v2.0.0

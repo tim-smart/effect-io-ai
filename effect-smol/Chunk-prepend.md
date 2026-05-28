@@ -3,7 +3,7 @@ Module: `Chunk`<br />
 
 ## Chunk.prepend
 
-Prepend an element to the front of a `Chunk`, creating a new `NonEmptyChunk`.
+Prepends an element to the front of a `Chunk`, creating a new `NonEmptyChunk`.
 
 **Example** (Prepending an element)
 
@@ -26,6 +26,6 @@ console.log(Chunk.toArray(singleElement)) // ["first"]
 declare const prepend: { <B>(elem: B): <A>(self: Chunk<A>) => NonEmptyChunk<B | A>; <A, B>(self: Chunk<A>, elem: B): NonEmptyChunk<A | B>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L746)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L757)
 
 Since v2.0.0

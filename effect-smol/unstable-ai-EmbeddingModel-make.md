@@ -37,6 +37,6 @@ of results, `embed` and `embedMany` fail with `AiError.InvalidOutputError`.
 declare const make: (params: { readonly embedMany: (options: ProviderOptions) => Effect.Effect<ProviderResponse, AiError.AiError>; }) => Effect.Effect<Service>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EmbeddingModel.ts#L238)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EmbeddingModel.ts#L239)
 
 Since v4.0.0

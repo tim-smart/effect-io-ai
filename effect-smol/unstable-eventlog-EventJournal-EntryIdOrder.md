@@ -3,7 +3,7 @@ Module: `EventJournal`<br />
 
 ## EventJournal.EntryIdOrder
 
-Ordering for `EntryId` values based on their raw UUID bytes.
+Provides an Ordering instance for entry identifiers based on their raw UUID bytes.
 
 **Signature**
 

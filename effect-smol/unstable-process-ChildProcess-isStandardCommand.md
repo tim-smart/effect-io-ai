@@ -3,7 +3,7 @@ Module: `ChildProcess`<br />
 
 ## ChildProcess.isStandardCommand
 
-Check if a command is a `StandardCommand`.
+Checks whether a command is a `StandardCommand`.
 
 **Signature**
 

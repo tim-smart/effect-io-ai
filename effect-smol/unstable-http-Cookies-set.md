@@ -3,7 +3,7 @@ Module: `Cookies`<br />
 
 ## Cookies.set
 
-Creates and adds a cookie by name and value.
+Creates and adds a cookie safely by name and value.
 
 **Details**
 

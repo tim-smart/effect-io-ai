@@ -3,7 +3,7 @@ Module: `Duration`<br />
 
 ## Duration.isDuration
 
-Checks if a value is a Duration.
+Checks whether a value is a Duration.
 
 **Example** (Checking for durations)
 

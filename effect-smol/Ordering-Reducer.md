@@ -3,7 +3,7 @@ Module: `Ordering`<br />
 
 ## Ordering.Reducer
 
-A `Reducer` for combining `Ordering`s.
+Reducer for combining `Ordering`s.
 
 **When to use**
 

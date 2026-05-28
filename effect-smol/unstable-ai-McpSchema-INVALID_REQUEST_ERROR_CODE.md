@@ -3,7 +3,12 @@ Module: `McpSchema`<br />
 
 ## McpSchema.INVALID_REQUEST_ERROR_CODE
 
-JSON-RPC error code for requests that are not valid request objects.
+Represents the JSON-RPC error code for requests that are not valid request objects.
+
+**When to use**
+
+Use when you need the JSON-RPC error code for requests that are not valid
+request objects.
 
 **Signature**
 
@@ -11,6 +16,6 @@ JSON-RPC error code for requests that are not valid request objects.
 declare const INVALID_REQUEST_ERROR_CODE: -32600
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L469)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L493)
 
 Since v4.0.0

@@ -34,6 +34,6 @@ console.log(Array.take([1, 2, 3, 4, 5], 3)) // [1, 2, 3]
 declare const take: { (n: number): <A>(self: Iterable<A>) => Array<A>; <A>(self: Iterable<A>, n: number): Array<A>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L1362)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L1356)
 
 Since v2.0.0

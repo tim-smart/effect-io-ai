@@ -44,6 +44,6 @@ console.log(getRole({ role: "viewer" }))
 declare const result: <I, F, R, A, Pr, Ret>(self: Matcher<I, F, R, A, Pr, Ret>) => [Pr] extends [never] ? (input: I) => Result.Result<Unify<A>, R> : Result.Result<Unify<A>, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L1964)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L1952)
 
 Since v4.0.0

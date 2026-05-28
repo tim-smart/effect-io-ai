@@ -15,6 +15,6 @@ Use to type the marker carried by `EncodingError` values.
 type EncodingErrorTypeId = typeof EncodingErrorTypeId
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Encoding.ts#L82)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Encoding.ts#L85)
 
 Since v4.0.0

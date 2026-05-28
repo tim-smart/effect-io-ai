@@ -35,6 +35,6 @@ type Input = Predicate.Predicate.In<P>
 type In<T> = [T] extends [Predicate<infer _A>] ? _A : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L228)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L226)
 
 Since v3.6.0

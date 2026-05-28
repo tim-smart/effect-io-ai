@@ -3,7 +3,7 @@ Module: `HashSet`<br />
 
 ## HashSet.every
 
-Tests whether all values in the HashSet satisfy the predicate.
+Checks whether all values in the HashSet satisfy the predicate.
 
 **Example** (Testing whether every value matches)
 

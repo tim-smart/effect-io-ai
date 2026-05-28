@@ -36,6 +36,6 @@ console.log(Exit.isFailure(exit)) // true
 declare const die: (defect: unknown) => Exit<never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Exit.ts#L358)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Exit.ts#L360)
 
 Since v2.0.0

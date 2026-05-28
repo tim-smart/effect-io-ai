@@ -12,6 +12,6 @@ service.
 declare const layerUndiciNoDispatcher: Layer.Layer<Client.HttpClient, never, Dispatcher>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L377)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L386)
 
 Since v4.0.0

@@ -11,6 +11,6 @@ Type-level identifier used to mark `SocketError` values.
 type SocketErrorTypeId = "~effect/socket/Socket/SocketError"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Socket.ts#L208)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Socket.ts#L214)
 
 Since v4.0.0

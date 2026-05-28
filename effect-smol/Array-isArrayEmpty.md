@@ -3,7 +3,7 @@ Module: `Array`<br />
 
 ## Array.isArrayEmpty
 
-Tests whether a mutable `Array` is empty, narrowing the type to `[]`.
+Checks whether a mutable `Array` is empty, narrowing the type to `[]`.
 
 **Example** (Checking for an empty array)
 
@@ -25,6 +25,6 @@ console.log(Array.isArrayEmpty([1, 2, 3])) // false
 declare const isArrayEmpty: <A>(self: Array<A>) => self is []
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L891)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L885)
 
 Since v4.0.0

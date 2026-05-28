@@ -46,6 +46,6 @@ Effect.runSync(
 declare const port: (name?: string) => Config<number>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Config.ts#L1228)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Config.ts#L1227)
 
 Since v3.16.0

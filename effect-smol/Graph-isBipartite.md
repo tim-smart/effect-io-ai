@@ -3,7 +3,7 @@ Module: `Graph`<br />
 
 ## Graph.isBipartite
 
-Checks if an undirected graph is bipartite.
+Checks whether an undirected graph is bipartite.
 
 **Details**
 

@@ -3,7 +3,7 @@ Module: `HttpTraceContext`<br />
 
 ## HttpTraceContext.fromHeaders
 
-Decodes an external span from HTTP trace propagation headers.
+Decodes an external span safely from HTTP trace propagation headers.
 
 **Details**
 

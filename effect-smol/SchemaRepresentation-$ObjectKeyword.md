@@ -3,7 +3,7 @@ Module: `SchemaRepresentation`<br />
 
 ## SchemaRepresentation.$ObjectKeyword
 
-Schema codec for the `ObjectKeyword` representation node.
+Schema for the `ObjectKeyword` representation node.
 
 **Signature**
 

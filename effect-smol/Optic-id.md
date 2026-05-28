@@ -3,12 +3,11 @@ Module: `Optic`<br />
 
 ## Optic.id
 
-The identity `Iso`. Focuses on the whole value unchanged.
+Iso that focuses on the whole value unchanged.
 
 **When to use**
 
-Use when as the starting point of an optic chain: `Optic.id<S>().key("x")...`
-- Anywhere an `Iso<S, S>` is needed.
+Use when starting an optic chain with a focus on the whole value.
 
 **Details**
 
@@ -39,6 +38,6 @@ console.log(_x.get({ x: 42 }))
 declare const id: <S>() => Iso<S, S>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Optic.ts#L1556)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Optic.ts#L1549)
 
 Since v4.0.0

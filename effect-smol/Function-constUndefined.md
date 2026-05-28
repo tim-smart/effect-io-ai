@@ -3,7 +3,7 @@ Module: `Function`<br />
 
 ## Function.constUndefined
 
-A thunk that returns always `undefined`.
+Returns `undefined` when called.
 
 **When to use**
 

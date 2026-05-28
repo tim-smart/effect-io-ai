@@ -3,7 +3,7 @@ Module: `TestSchema`<br />
 
 ## TestSchema.Encoding
 
-Encoding test helper that wraps a schema and exposes `succeed` and `fail` methods that run the schema's encoder and compare the result.
+Provides encoding test assertions through `succeed` and `fail` methods that run the schema's encoder and compare the result.
 
 **When to use**
 
@@ -36,6 +36,6 @@ declare class Encoding<S> { constructor(schema: S, options?: {
   }) }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TestSchema.ts#L517)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TestSchema.ts#L513)
 
 Since v4.0.0

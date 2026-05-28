@@ -3,7 +3,7 @@ Module: `EventLogMessage`<br />
 
 ## EventLogMessage.EventLogProtocolError
 
-Structured error returned by event-log remote RPCs.
+Error returned by event-log remote RPCs.
 
 **Details**
 

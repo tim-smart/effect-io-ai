@@ -13,7 +13,6 @@ Use when you want a reusable boolean check for `A`.
 
 **Details**
 
-- Pure function; does not mutate input.
 - Returns `true` or `false`; never throws by itself.
 - Does not narrow types unless you use `Refinement`.
 
@@ -41,6 +40,6 @@ export interface Predicate<in A> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L102)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L101)
 
 Since v2.0.0

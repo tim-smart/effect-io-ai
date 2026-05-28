@@ -11,7 +11,7 @@ Use to extract a single property in a pipeline.
 
 **Details**
 
-This does not mutate the input, and the return type is narrowed to `S[K]`.
+The return type is narrowed to `S[K]`.
 
 **Example** (Extracting a property in a pipeline)
 

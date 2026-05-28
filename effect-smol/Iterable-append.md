@@ -3,7 +3,7 @@ Module: `Iterable`<br />
 
 ## Iterable.append
 
-Append an element to the end of an `Iterable`, creating a new `Iterable`.
+Appends an element to the end of an `Iterable`, creating a new `Iterable`.
 
 **When to use**
 

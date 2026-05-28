@@ -3,7 +3,7 @@ Module: `SchemaAST`<br />
 
 ## SchemaAST.boolean
 
-Singleton `Boolean` AST instance.
+Provides the singleton `Boolean` AST instance.
 
 **When to use**
 
@@ -21,6 +21,6 @@ constructing schema ASTs directly.
 declare const boolean: Boolean
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L1460)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L1470)
 
 Since v4.0.0

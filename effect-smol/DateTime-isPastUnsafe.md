@@ -3,7 +3,7 @@ Module: `DateTime`<br />
 
 ## DateTime.isPastUnsafe
 
-Checks if a `DateTime` is in the past compared to the current time.
+Checks synchronously if a `DateTime` is in the past compared to the current time.
 
 **Details**
 
@@ -27,6 +27,6 @@ console.log(DateTime.isPastUnsafe(now)) // false
 declare const isPastUnsafe: (self: DateTime) => boolean
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L1526)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L1535)
 
 Since v4.0.0

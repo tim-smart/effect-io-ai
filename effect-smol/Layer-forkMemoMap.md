@@ -3,8 +3,9 @@ Module: `Layer`<br />
 
 ## Layer.forkMemoMap
 
-Constructs a child `MemoMap` that can reuse layers already memoized in the
-parent while isolating any new layer allocations to the child map.
+Constructs a child `MemoMap` effectfully, allowing it to reuse layers already
+memoized in the parent while isolating any new layer allocations to the child
+map.
 
 **When to use**
 
@@ -23,6 +24,6 @@ existing `MemoMap` while keeping newly memoized layers out of the parent map.
 declare const forkMemoMap: (parent: MemoMap) => Effect<MemoMap>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L577)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L579)
 
 Since v4.0.0

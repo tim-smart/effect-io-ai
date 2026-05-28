@@ -30,6 +30,6 @@ Effect.provide(program, DateTime.layerCurrentZoneLocal)
 declare const layerCurrentZoneLocal: Layer.Layer<CurrentTimeZone, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L2915)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L2935)
 
 Since v3.6.0

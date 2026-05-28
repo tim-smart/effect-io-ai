@@ -3,7 +3,7 @@ Module: `RequestResolver`<br />
 
 ## RequestResolver.withSpan
 
-Add a tracing span to the request resolver, which will also add any span
+Adds a tracing span to the request resolver, which will also add any span
 links from the request's.
 
 **Example** (Adding a tracing span)
@@ -47,6 +47,6 @@ const effect = Effect.request(GetDataRequest({ id: 123 }), tracedResolver)
 declare const withSpan: { <A extends Request.Any>(name: string, options?: Tracer.SpanOptions | ((entries: NonEmptyArray<Request.Entry<A>>) => Tracer.SpanOptions) | undefined): (self: RequestResolver<A>) => RequestResolver<A>; <A extends Request.Any>(self: RequestResolver<A>, name: string, options?: Tracer.SpanOptions | ((entries: NonEmptyArray<Request.Entry<A>>) => Tracer.SpanOptions) | undefined): RequestResolver<A>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RequestResolver.ts#L963)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RequestResolver.ts#L962)
 
 Since v4.0.0

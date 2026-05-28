@@ -7,7 +7,8 @@ Executes an effect synchronously and returns its success value.
 
 **When to use**
 
-Use when you use `runSync` only for effects that can complete synchronously.
+Use when you need to execute an effect that is guaranteed to complete
+synchronously.
 
 **Details**
 
@@ -67,6 +68,6 @@ throwing an error.
 declare const runSync: <A, E>(effect: Effect<A, E>) => A
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L9140)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L9124)
 
 Since v2.0.0

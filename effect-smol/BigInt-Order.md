@@ -7,7 +7,8 @@ Provides an `Order` instance for `bigint` that allows comparing and sorting BigI
 
 **When to use**
 
-Use when an API needs an `Order` instance for `bigint` values.
+Use when sorting or comparing bigint values through APIs that accept an
+ordering instance.
 
 **Example** (Comparing bigints with Order)
 
@@ -29,6 +30,6 @@ console.log(BigInt.Order(a, c)) // 0 (a === c)
 declare const Order: order.Order<bigint>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigInt.ts#L355)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigInt.ts#L356)
 
 Since v2.0.0

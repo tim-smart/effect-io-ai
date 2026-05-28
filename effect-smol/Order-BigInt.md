@@ -3,7 +3,7 @@ Module: `Order`<br />
 
 ## Order.BigInt
 
-An `Order` instance for bigints that compares them numerically.
+Order instance for bigints that compares them numerically.
 
 **When to use**
 
@@ -13,7 +13,6 @@ Use when when comparing bigint values for sorting or searching
 
 **Details**
 
-- Pure function: does not mutate inputs
 - Uses standard numeric comparison for bigint values
 - Handles arbitrarily large integers
 
@@ -38,6 +37,6 @@ console.log(Order.BigInt(1n, 1n)) // 0
 declare const BigInt: Order<bigint>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Order.ts#L326)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Order.ts#L320)
 
 Since v4.0.0

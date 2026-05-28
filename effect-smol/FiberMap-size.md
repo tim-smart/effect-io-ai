@@ -3,7 +3,7 @@ Module: `FiberMap`<br />
 
 ## FiberMap.size
 
-Get the number of fibers currently in the FiberMap.
+Gets the number of fibers currently in the FiberMap.
 
 **Example** (Checking the map size)
 

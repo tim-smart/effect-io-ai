@@ -29,6 +29,6 @@ assert.deepStrictEqual(Number.sumAll([2, 3, 4]), 9)
 declare const sumAll: (collection: Iterable<number>) => number
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Number.ts#L626)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Number.ts#L628)
 
 Since v2.0.0

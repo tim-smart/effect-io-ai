@@ -3,7 +3,7 @@ Module: `Logger`<br />
 
 ## Logger.batched
 
-Creates, in a scope, a logger that batches the output of another logger.
+Creates a scoped logger that batches the output of another logger.
 
 **Details**
 

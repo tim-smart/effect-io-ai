@@ -3,8 +3,7 @@ Module: `EntityResource`<br />
 
 ## EntityResource.make
 
-A `EntityResource` is a resource that can be acquired inside a cluster
-entity, which will keep the entity alive even across restarts.
+Creates an `EntityResource` that can be acquired inside a cluster entity.
 
 **Details**
 
@@ -22,6 +21,6 @@ be released when `close` is called.
 declare const make: <A, E, R>(options: { readonly acquire: Effect.Effect<A, E, R>; readonly idleTimeToLive?: Duration.Input | undefined; }) => Effect.Effect<EntityResource<A, E>, E, Scope.Scope | Exclude<R, CloseScope> | Sharding | Entity.CurrentAddress>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EntityResource.ts#L103)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EntityResource.ts#L102)
 
 Since v4.0.0

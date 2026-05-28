@@ -12,6 +12,6 @@ implements `DeliverAt`, or `null` otherwise.
 declare const toMillis: (self: unknown) => number | null
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DeliverAt.ts#L65)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DeliverAt.ts#L70)
 
 Since v4.0.0

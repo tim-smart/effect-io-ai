@@ -18,6 +18,6 @@ back to the latest source value.
 declare const optimistic: <A>(self: Atom<A>) => Writable<A, Atom<AsyncResult.AsyncResult<A, unknown>>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Atom.ts#L1864)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Atom.ts#L1883)
 
 Since v4.0.0

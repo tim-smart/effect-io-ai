@@ -3,7 +3,7 @@ Module: `PrometheusMetrics`<br />
 
 ## PrometheusMetrics.formatUnsafe
 
-Synchronously format all metrics in the registry to Prometheus exposition format.
+Formats all metrics in the registry to Prometheus exposition format synchronously.
 
 **When to use**
 

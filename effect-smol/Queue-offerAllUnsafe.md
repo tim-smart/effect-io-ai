@@ -3,7 +3,7 @@ Module: `Queue`<br />
 
 ## Queue.offerAllUnsafe
 
-Add multiple messages to the queue synchronously. Returns the remaining messages that
+Adds multiple messages to the queue synchronously. Returns the remaining messages that
 were not added.
 
 **Gotchas**

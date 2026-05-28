@@ -12,7 +12,6 @@ Use when you want to accept values that satisfy multiple conditions.
 
 **Details**
 
-- Pure; does not mutate input.
 - Short-circuits on the first `false`.
 - For refinements, the output type is an intersection.
 
@@ -45,6 +44,6 @@ if (hasAAndB(input)) {
 declare const and: { <A, C extends A>(that: Refinement<A, C>): <B extends A>(self: Refinement<A, B>) => Refinement<A, B & C>; <A, B extends A, C extends A>(self: Refinement<A, B>, that: Refinement<A, C>): Refinement<A, B & C>; <A>(that: Predicate<A>): (self: Predicate<A>) => Predicate<A>; <A>(self: Predicate<A>, that: Predicate<A>): Predicate<A>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L1712)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L1672)
 
 Since v2.0.0

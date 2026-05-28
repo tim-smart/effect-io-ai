@@ -15,6 +15,6 @@ type ExcludeProvides<Env, R, Tag> = Exclude<
 >
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Rpc.ts#L741)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Rpc.ts#L746)
 
 Since v4.0.0

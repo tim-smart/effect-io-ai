@@ -20,6 +20,6 @@ assert.deepStrictEqual(String.length("abc"), 3)
 declare const length: (self: string) => number
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L490)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L495)
 
 Since v2.0.0

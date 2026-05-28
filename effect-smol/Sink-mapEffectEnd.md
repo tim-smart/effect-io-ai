@@ -3,7 +3,7 @@ Module: `Sink`<br />
 
 ## Sink.mapEffectEnd
 
-Effectfully transforms the full `End` produced by this sink.
+Transforms the full `End` produced by this sink effectfully.
 
 **Details**
 

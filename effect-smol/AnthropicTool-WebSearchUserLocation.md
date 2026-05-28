@@ -3,7 +3,7 @@ Module: `AnthropicTool`<br />
 
 ## AnthropicTool.WebSearchUserLocation
 
-User location for localizing search results.
+Describes user location for localizing search results.
 
 **When to use**
 
@@ -26,6 +26,6 @@ The schema uses `type: "approximate"` plus optional `city`, `region`,
 declare const WebSearchUserLocation: Schema.Struct<{ readonly type: Schema.Literal<"approximate">; readonly city: Schema.optional<Schema.String>; readonly region: Schema.optional<Schema.String>; readonly country: Schema.optional<Schema.String>; readonly timezone: Schema.optional<Schema.String>; }>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L2038)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L2040)
 
 Since v4.0.0

@@ -11,6 +11,6 @@ Creates a writable atom that pulls an initial chunk from a stream and then pulls
 declare const pull: <A, E>(create: ((get: AtomContext) => Stream.Stream<A, E, AtomRegistry>) | Stream.Stream<A, E, AtomRegistry>, options?: { readonly disableAccumulation?: boolean | undefined; }) => Writable<PullResult<A, E>, void>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Atom.ts#L1257)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Atom.ts#L1272)
 
 Since v4.0.0

@@ -3,8 +3,7 @@ Module: `Transferable`<br />
 
 ## Transferable.ImageData
 
-Transferable schema for `ImageData` values that records the underlying pixel
-data buffer.
+Schema for transferring `ImageData` values with their pixel data buffer.
 
 **Signature**
 
@@ -12,6 +11,6 @@ data buffer.
 declare const ImageData: Transferable<Schema.declare<ImageData, ImageData>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Transferable.ts#L188)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Transferable.ts#L187)
 
 Since v4.0.0

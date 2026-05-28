@@ -3,7 +3,7 @@ Module: `Config`<br />
 
 ## Config.Port
 
-A `Schema.Codec` for port numbers (integers in 1–65535).
+Schema for port numbers (integers in 1–65535).
 
 **When to use**
 
@@ -20,6 +20,6 @@ convenience constructor.
 declare const Port: Schema.Int
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Config.ts#L802)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Config.ts#L801)
 
 Since v4.0.0

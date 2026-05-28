@@ -3,8 +3,8 @@ Module: `Cron`<br />
 
 ## Cron.parse
 
-Parses a cron expression into a `Cron` instance, returning a `Result` instead
-of throwing.
+Parses a cron expression safely into a `Cron` instance, returning a `Result`
+instead of throwing.
 
 **When to use**
 

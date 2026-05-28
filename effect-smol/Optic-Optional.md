@@ -7,10 +7,10 @@ The most general optic — both reading and writing can fail.
 
 **When to use**
 
-Use when the focus may not exist in `S` **and** writing a new `A` back may also
-  fail (e.g. the source no longer matches the expected shape).
-- As the base type: every optic (`Iso`, `Lens`, `Prism`,
-  `Traversal`) extends `Optional`.
+Use when the focus may not exist in `S` and writing a new `A` back may also
+fail, for example when the source no longer matches the expected shape. This
+is the base type extended by `Iso`, `Lens`, `Prism`, and
+`Traversal`.
 
 **Details**
 
@@ -489,6 +489,6 @@ export interface Optional<in out S, in out A> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Optic.ts#L589)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Optic.ts#L585)
 
 Since v4.0.0

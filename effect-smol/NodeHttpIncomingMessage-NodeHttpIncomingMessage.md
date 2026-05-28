@@ -3,9 +3,17 @@ Module: `NodeHttpIncomingMessage`<br />
 
 ## NodeHttpIncomingMessage.NodeHttpIncomingMessage
 
-Base adapter from Node `IncomingMessage` to Effect HTTP incoming messages,
-exposing headers, remote address, stream access, and cached text, JSON, URL
-parameter, and array-buffer body decoders with caller-provided error mapping.
+Adapts a Node `IncomingMessage` to Effect HTTP incoming messages.
+
+**When to use**
+
+Use to implement Node HTTP request or response adapters that expose the
+Effect HTTP incoming-message interface.
+
+**Details**
+
+The adapter exposes headers, remote address, stream access, and cached body
+decoders. Subclasses provide the error mapping for unknown Node errors.
 
 **Signature**
 
@@ -17,6 +25,6 @@ declare class NodeHttpIncomingMessage<E> { constructor(
   ) }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpIncomingMessage.ts#L48)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpIncomingMessage.ts#L56)
 
 Since v4.0.0

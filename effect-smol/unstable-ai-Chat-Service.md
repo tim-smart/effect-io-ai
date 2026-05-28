@@ -284,6 +284,6 @@ export interface Service {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chat.ts#L127)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chat.ts#L132)
 
 Since v4.0.0

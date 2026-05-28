@@ -3,8 +3,12 @@ Module: `McpSchema`<br />
 
 ## McpSchema.Annotations
 
-Optional annotations for the client. The client can use annotations to
-inform how objects are used or displayed.
+Schema for optional client-facing annotations on MCP objects.
+
+**When to use**
+
+Use to describe intended audience and priority metadata for objects shown or
+processed by a client.
 
 **Signature**
 
@@ -12,6 +16,6 @@ inform how objects are used or displayed.
 declare class Annotations
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L301)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L304)
 
 Since v4.0.0

@@ -3,10 +3,18 @@ Module: `SubscriptionRef`<br />
 
 ## SubscriptionRef.modifySomeEffect
 
-Atomically computes a return value and an optional new value with an
-effectful function. If the effect succeeds with `Option.some`, sets and
-publishes the new value; if it succeeds with `Option.none`, leaves the
-reference unchanged and does not publish.
+Computes a return value and optionally updates the reference effectfully.
+
+**When to use**
+
+Use to return a separate result while effectfully deciding whether to publish
+a new value.
+
+**Details**
+
+If the effect succeeds with `Option.some`, the new value is set and
+published. If it succeeds with `Option.none`, the reference is left unchanged
+and no update is published.
 
 **Example** (Conditionally modifying with an effect)
 
@@ -38,6 +46,6 @@ const program = Effect.gen(function*() {
 declare const modifySomeEffect: { <A, B, R, E>(modify: (a: A) => Effect.Effect<readonly [B, Option.Option<A>], E, R>): (self: SubscriptionRef<A>) => Effect.Effect<B, E, R>; <A, B, R, E>(self: SubscriptionRef<A>, modify: (a: A) => Effect.Effect<readonly [B, Option.Option<A>], E, R>): Effect.Effect<B, E, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SubscriptionRef.ts#L628)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SubscriptionRef.ts#L662)
 
 Since v2.0.0

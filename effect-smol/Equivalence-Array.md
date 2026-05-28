@@ -14,7 +14,6 @@ Use when comparing arrays with homogeneous element types
 
 **Details**
 
-- Does not mutate inputs
 - Requires arrays to have the same length; different lengths are never equivalent
 - Compares elements positionally, such as index `0` with index `0`
 - Returns `true` only if all corresponding elements are equivalent
@@ -60,6 +59,6 @@ console.log(stringArrayEq([], [])) // true (empty arrays)
 declare const Array: <A>(item: Equivalence<A>) => Equivalence<ReadonlyArray<A>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Equivalence.ts#L691)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Equivalence.ts#L683)
 
 Since v4.0.0

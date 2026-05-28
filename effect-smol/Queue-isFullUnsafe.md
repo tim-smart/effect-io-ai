@@ -3,7 +3,7 @@ Module: `Queue`<br />
 
 ## Queue.isFullUnsafe
 
-Check if the queue is full synchronously.
+Checks whether the queue is full synchronously.
 
 **Example** (Checking fullness synchronously)
 
@@ -28,6 +28,6 @@ const program = Effect.gen(function*() {
 declare const isFullUnsafe: <A, E>(self: Dequeue<A, E>) => boolean
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Queue.ts#L1735)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Queue.ts#L1751)
 
 Since v4.0.0

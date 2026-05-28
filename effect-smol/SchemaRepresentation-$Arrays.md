@@ -3,7 +3,7 @@ Module: `SchemaRepresentation`<br />
 
 ## SchemaRepresentation.$Arrays
 
-Schema codec for the `Arrays` representation node.
+Schema for the `Arrays` representation node.
 
 **Signature**
 

@@ -11,6 +11,6 @@ Layer that provides `WebSocketConstructor` using `globalThis.WebSocket`.
 declare const layerWebSocketConstructorGlobal: Layer.Layer<WebSocketConstructor, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Socket.ts#L578)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Socket.ts#L584)
 
 Since v4.0.0

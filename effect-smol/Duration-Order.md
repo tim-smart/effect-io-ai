@@ -3,7 +3,7 @@ Module: `Duration`<br />
 
 ## Duration.Order
 
-Order instance for `Duration`, allowing comparison operations.
+Provides an `Order` instance for comparing `Duration` values.
 
 **Details**
 

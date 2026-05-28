@@ -3,7 +3,7 @@ Module: `Record`<br />
 
 ## Record.replace
 
-Replaces the value at an existing key and returns the updated record in
+Replaces the value at an existing key safely and returns the updated record in
 `Option.some`.
 
 **Details**

@@ -3,14 +3,12 @@ Module: `Effect`<br />
 
 ## Effect.catchEager
 
-An optimized version of `catch` that checks if an effect is already resolved
-and applies the catch function eagerly when possible.
+Applies `catch` eagerly when an effect is already resolved.
 
 **When to use**
 
-Use when `catchEager` provides better performance for effects that are already resolved
-by applying the error recovery immediately instead of deferring it through
-the effect pipeline.
+Use when an already-resolved failed effect should recover immediately while
+pending effects still use regular error recovery.
 
 **Details**
 
@@ -53,6 +51,6 @@ const recoveredPending = Effect.catchEager(
 declare const catchEager: { <E, B, E2, R2>(f: (e: NoInfer<E>) => Effect<B, E2, R2>): <A, R>(self: Effect<A, E, R>) => Effect<A | B, E2, R | R2>; <A, E, R, B, E2, R2>(self: Effect<A, E, R>, f: (e: NoInfer<E>) => Effect<B, E2, R2>): Effect<A | B, E2, R | R2>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L15153)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L15128)
 
 Since v4.0.0

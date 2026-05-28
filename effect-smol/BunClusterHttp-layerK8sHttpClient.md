@@ -3,7 +3,7 @@ Module: `BunClusterHttp`<br />
 
 ## BunClusterHttp.layerK8sHttpClient
 
-Kubernetes HTTP client layer used for runner health checks.
+Layer that provides a Kubernetes HTTP client for runner health checks.
 
 **Signature**
 

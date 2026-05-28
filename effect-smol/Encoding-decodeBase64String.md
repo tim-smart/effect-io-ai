@@ -3,7 +3,7 @@ Module: `Encoding`<br />
 
 ## Encoding.decodeBase64String
 
-Decodes a base64 (RFC4648) string into a UTF-8 string.
+Decodes a base64 (RFC4648) string into a UTF-8 string safely.
 
 **When to use**
 
@@ -32,6 +32,6 @@ if (Result.isSuccess(result)) {
 declare const decodeBase64String: (str: string) => Result.Result<string, EncodingError>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Encoding.ts#L290)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Encoding.ts#L293)
 
 Since v2.0.0

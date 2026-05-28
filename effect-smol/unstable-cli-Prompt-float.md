@@ -16,6 +16,6 @@ precision, and additional validation before submission.
 declare const float: (options: FloatOptions) => Prompt<number>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L898)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L919)
 
 Since v4.0.0

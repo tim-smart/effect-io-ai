@@ -3,8 +3,16 @@ Module: `Queue`<br />
 
 ## Queue.endUnsafe
 
-Signal that the queue is complete synchronously. If the queue is already done, `false` is
-returned.
+Signals queue completion synchronously.
+
+**When to use**
+
+Use when implementing low-level queue integrations that must complete a queue
+without wrapping the operation in `Effect`.
+
+**Details**
+
+Returns `false` if the queue is already done.
 
 **Gotchas**
 
@@ -44,6 +52,6 @@ const program = Effect.gen(function*() {
 declare const endUnsafe: <A, E>(self: Enqueue<A, E | Done>) => boolean
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Queue.ts#L1053)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Queue.ts#L1069)
 
 Since v4.0.0

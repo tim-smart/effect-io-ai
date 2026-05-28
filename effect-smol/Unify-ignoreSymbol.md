@@ -7,7 +7,7 @@ The type of the ignoreSymbol.
 
 **When to use**
 
-Use to reference the `ignoreSymbol` property key in type-level protocol
+Use to reference the ignored-property key in type-level protocol
 definitions.
 
 **Details**

@@ -3,7 +3,11 @@ Module: `String`<br />
 
 ## String.empty
 
-The empty string `""`.
+Provides the empty string `""`.
+
+**When to use**
+
+Use when you need the canonical empty string value from the `String` module.
 
 **Example** (Using the empty string)
 
@@ -20,6 +24,6 @@ console.log(String.isEmpty(String.empty)) // true
 declare const empty: ""
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L170)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L175)
 
 Since v2.0.0

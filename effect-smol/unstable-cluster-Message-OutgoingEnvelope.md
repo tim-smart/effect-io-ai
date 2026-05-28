@@ -3,7 +3,7 @@ Module: `Message`<br />
 
 ## Message.OutgoingEnvelope
 
-Outgoing control envelope paired with RPC metadata.
+Represents an outgoing control envelope paired with RPC metadata.
 
 **When to use**
 

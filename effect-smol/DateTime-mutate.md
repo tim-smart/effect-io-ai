@@ -3,7 +3,12 @@ Module: `DateTime`<br />
 
 ## DateTime.mutate
 
-Modify a `DateTime` by applying a function to a cloned `Date` instance.
+Modifies a `DateTime` with a mutable local `Date` copy.
+
+**When to use**
+
+Use to adjust calendar fields in the `DateTime`'s own time zone with an
+existing `Date` mutation API.
 
 **Details**
 
@@ -33,6 +38,6 @@ console.log(DateTime.formatIso(modified)) // "2024-01-01T15:30:00.000Z"
 declare const mutate: { (f: (date: Date) => void, options?: { readonly disambiguation?: Disambiguation | undefined; }): <A extends DateTime>(self: A) => A; <A extends DateTime>(self: A, f: (date: Date) => void, options?: { readonly disambiguation?: Disambiguation | undefined; }): A; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L2080)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L2094)
 
 Since v3.6.0

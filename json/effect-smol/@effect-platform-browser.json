@@ -7,13 +7,13 @@
     },
     "project": "@effect/platform-browser",
     "name": "WebCrypto",
-    "description": "Browser Web Crypto APIs used by the Crypto service implementation.",
+    "description": "Provides Browser Web Crypto APIs used by the Crypto service implementation.\n\n**When to use**\n\nUse to override the browser `Crypto` object used by the platform crypto\nlayer.",
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
-    "category": "models",
+    "category": "references",
     "signature": "declare const WebCrypto: Context.Reference<Crypto>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/BrowserCrypto.ts#L60"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/BrowserCrypto.ts#L65"
   },
   {
     "_tag": "Constant",
@@ -23,13 +23,13 @@
     },
     "project": "@effect/platform-browser",
     "name": "layer",
-    "description": "A layer that directly interfaces with the Web Crypto API.\n\n**When to use**\n\nUse to provide cryptographic randomness, UUID generation, and digest\noperations in browser runtimes backed by `globalThis.crypto`.\n\n**Details**\n\nRandom bytes are produced with `crypto.getRandomValues`. Digests are computed\nwith `crypto.subtle.digest` and returned as `Uint8Array` values.\n\n**Gotchas**\n\nThe layer dies if the Web Crypto object is unavailable. Digest operations\nfail with `PlatformError` when `crypto.subtle.digest` is unavailable or the\nbrowser rejects the digest request.",
+    "description": "Layer that directly interfaces with the Web Crypto API.\n\n**When to use**\n\nUse to provide cryptographic randomness, UUID generation, and digest\noperations in browser runtimes backed by `globalThis.crypto`.\n\n**Details**\n\nRandom bytes are produced with `crypto.getRandomValues`. Digests are computed\nwith `crypto.subtle.digest` and returned as `Uint8Array` values.\n\n**Gotchas**\n\nThe layer dies if the Web Crypto object is unavailable. Digest operations\nfail with `PlatformError` when `crypto.subtle.digest` is unavailable or the\nbrowser rejects the digest request.",
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "layers",
     "signature": "declare const layer: Layer.Layer<EffectCrypto.Crypto, never, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/BrowserCrypto.ts#L86"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/BrowserCrypto.ts#L91"
   },
   {
     "_tag": "Class",
@@ -45,7 +45,7 @@
     "since": "4.0.0",
     "category": "services",
     "signature": "declare class XMLHttpRequest",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/BrowserHttpClient.ts#L134"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/BrowserHttpClient.ts#L139"
   },
   {
     "_tag": "Constant",
@@ -55,13 +55,13 @@
     },
     "project": "@effect/platform-browser",
     "name": "CurrentXHRResponseType",
-    "description": "Reference that controls the `XMLHttpRequest.responseType` used by the browser XHR HTTP client, defaulting to `\"text\"`.\n\n**When to use**\n\nUse when XHR-backed HTTP requests need to receive response bodies as text or\nas raw `ArrayBuffer` values.",
+    "description": "Context reference for the `XMLHttpRequest.responseType` used by the browser XHR HTTP client, defaulting to `\"text\"`.\n\n**When to use**\n\nUse when XHR-backed HTTP requests need to receive response bodies as text or\nas raw `ArrayBuffer` values.",
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
     "category": "references",
     "signature": "declare const CurrentXHRResponseType: Context.Reference<XHRResponseType>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/BrowserHttpClient.ts#L108"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/BrowserHttpClient.ts#L113"
   },
   {
     "_tag": "Constant",
@@ -77,7 +77,7 @@
     "since": "4.0.0",
     "category": "layers",
     "signature": "declare const layerXMLHttpRequest: Layer.Layer<HttpClient.HttpClient, never, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/BrowserHttpClient.ts#L443"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/BrowserHttpClient.ts#L448"
   },
   {
     "_tag": "Function",
@@ -93,7 +93,7 @@
     "since": "4.0.0",
     "category": "references",
     "signature": "declare const withXHRArrayBuffer: <A, E, R>(self: Effect.Effect<A, E, R>) => Effect.Effect<A, E, R>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/BrowserHttpClient.ts#L119"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/BrowserHttpClient.ts#L124"
   },
   {
     "_tag": "TypeAlias",
@@ -109,7 +109,7 @@
     "since": "4.0.0",
     "category": "models",
     "signature": "type XHRResponseType = \"arraybuffer\" | \"text\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/BrowserHttpClient.ts#L92"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/BrowserHttpClient.ts#L97"
   },
   {
     "_tag": "Export",
@@ -151,13 +151,13 @@
     },
     "project": "@effect/platform-browser",
     "name": "RequestInit",
-    "description": "Service containing default `RequestInit` options for the fetch-based HTTP client.",
+    "description": "Service that contains default fetch options for the browser fetch client.\n\n**When to use**\n\nUse to provide default credentials, cache, redirect, integrity, or other\nfetch options for browser HTTP requests.",
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
-    "category": "Fetch",
+    "category": "fetch",
     "signature": "declare const RequestInit: typeof RequestInit",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/BrowserHttpClient.ts#L79"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/BrowserHttpClient.ts#L84"
   },
   {
     "_tag": "Constant",
@@ -423,7 +423,7 @@
     },
     "project": "@effect/platform-browser",
     "name": "Clipboard",
-    "description": "Service tag for the browser `Clipboard` service.\n\n**When to use**\n\nUse when an Effect needs to require or provide clipboard capabilities through\nthe context.",
+    "description": "Service tag for browser clipboard capabilities.\n\n**When to use**\n\nUse when an Effect needs to require or provide clipboard capabilities through\nthe context.",
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
@@ -439,7 +439,7 @@
     },
     "project": "@effect/platform-browser",
     "name": "layer",
-    "description": "A layer that directly interfaces with the navigator.clipboard api",
+    "description": "Layer that directly interfaces with the browser Clipboard API.",
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
@@ -471,7 +471,7 @@
     },
     "project": "@effect/platform-browser",
     "name": "Clipboard",
-    "description": "Service interface for reading from, writing to, and clearing the browser clipboard.\n\n**Details**\n\n`read` and `write` work with `ClipboardItem` arrays. `readString` and\n`writeString` use text, `writeBlob` writes one `Blob`, and `clear` writes an\nempty string.\n\n**Gotchas**\n\nClipboard access generally requires a secure context and may require user\nactivation, permissions, or a focused document. `ClipboardItem` and non-text\nMIME type support varies by browser. Failed browser operations are surfaced\nas `ClipboardError`.",
+    "description": "Defines the service interface for reading from, writing to, and clearing the browser clipboard.\n\n**Details**\n\n`read` and `write` work with `ClipboardItem` arrays. `readString` and\n`writeString` use text, `writeBlob` writes one `Blob`, and `clear` writes an\nempty string.\n\n**Gotchas**\n\nClipboard access generally requires a secure context and may require user\nactivation, permissions, or a focused document. `ClipboardItem` and non-text\nMIME type support varies by browser. Failed browser operations are surfaced\nas `ClipboardError`.",
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
@@ -551,7 +551,7 @@
     },
     "project": "@effect/platform-browser",
     "name": "Geolocation",
-    "description": "Service tag for the browser `Geolocation` service.\n\n**When to use**\n\nUse when an Effect needs to access or provide geolocation capabilities\nthrough the context.",
+    "description": "Service tag for browser geolocation capabilities.\n\n**When to use**\n\nUse when an Effect needs to access or provide geolocation capabilities\nthrough the context.",
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
@@ -583,13 +583,13 @@
     },
     "project": "@effect/platform-browser",
     "name": "watchPosition",
-    "description": "Streams positions from the `Geolocation` service using `watchPosition`, with an optional sliding buffer size.",
+    "description": "Reads geolocation positions from the `Geolocation` service as a stream, with\nan optional sliding buffer size.",
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
-    "category": "Accessors",
+    "category": "accessors",
     "signature": "declare const watchPosition: (options?: (PositionOptions & { readonly bufferSize?: number | undefined; }) | undefined) => Stream.Stream<GeolocationPosition, GeolocationError, Geolocation>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/Geolocation.ts#L245"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/Geolocation.ts#L246"
   },
   {
     "_tag": "Interface",
@@ -599,7 +599,7 @@
     },
     "project": "@effect/platform-browser",
     "name": "Geolocation",
-    "description": "Service interface for browser geolocation, providing effects for the current position and streams of watched positions.\n\n**When to use**\n\nUse when browser code needs a typed Effect service for one-shot location\nreads or streamed location updates.\n\n**Details**\n\n`getCurrentPosition` returns one position effect. `watchPosition` returns a\nstream and accepts the browser `PositionOptions` plus an optional sliding\n`bufferSize`.\n\n**Gotchas**\n\nBrowser permission prompts, denied permissions, timeouts, unavailable\nposition data, secure-context restrictions, and policy restrictions are\nsurfaced as `GeolocationError`.",
+    "description": "Defines the service interface for browser geolocation, providing effects for the current position and streams of watched positions.\n\n**When to use**\n\nUse when browser code needs a typed Effect service for one-shot location\nreads or streamed location updates.\n\n**Details**\n\n`getCurrentPosition` returns one position effect. `watchPosition` returns a\nstream and accepts the browser `PositionOptions` plus an optional sliding\n`bufferSize`.\n\n**Gotchas**\n\nBrowser permission prompts, denied permissions, timeouts, unavailable\nposition data, secure-context restrictions, and policy restrictions are\nsurfaced as `GeolocationError`.",
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
@@ -1879,7 +1879,7 @@
     },
     "project": "@effect/platform-browser",
     "name": "Permissions",
-    "description": "Service tag for the browser `Permissions` service.\n\n**When to use**\n\nUse when an Effect needs to require or provide browser permission querying\nthrough the context.",
+    "description": "Service tag for browser permission querying.\n\n**When to use**\n\nUse when an Effect needs to require or provide browser permission querying\nthrough the context.",
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",

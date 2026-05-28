@@ -3,7 +3,12 @@ Module: `Tracer`<br />
 
 ## Tracer.ParentSpanKey
 
-The string key used to identify the `ParentSpan` context service.
+Defines the string key for the parent-span context service.
+
+**When to use**
+
+Use when integrating lower-level tracing code that needs the raw context key
+for parent span lookup.
 
 **Example** (Reading the parent span key)
 
@@ -20,6 +25,6 @@ console.log(Tracer.ParentSpanKey) // "effect/Tracer/ParentSpan"
 declare const ParentSpanKey: "effect/Tracer/ParentSpan"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tracer.ts#L172)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tracer.ts#L177)
 
 Since v4.0.0

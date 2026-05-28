@@ -3,7 +3,7 @@ Module: `McpSchema`<br />
 
 ## McpSchema.SetLevel
 
-A request from the client to the server, to enable or adjust logging.
+Sent from the client to the server to enable or adjust logging.
 
 **Signature**
 
@@ -11,6 +11,6 @@ A request from the client to the server, to enable or adjust logging.
 declare class SetLevel
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L1544)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L1646)
 
 Since v4.0.0

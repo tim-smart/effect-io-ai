@@ -21,6 +21,6 @@ The canonical payload format uses ordered big-endian length-prefixed fields:
 declare const encodeSessionAuthPayload: (payload: SessionAuthPayload) => Effect.Effect<Uint8Array<ArrayBuffer>, EventLogSessionAuthError, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventLogSessionAuth.ts#L277)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventLogSessionAuth.ts#L304)
 
 Since v4.0.0

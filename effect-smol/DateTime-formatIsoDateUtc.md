@@ -3,7 +3,7 @@ Module: `DateTime`<br />
 
 ## DateTime.formatIsoDateUtc
 
-Format a `DateTime` as a UTC ISO date string.
+Formats a `DateTime` as a UTC ISO date string.
 
 **Details**
 
@@ -29,6 +29,6 @@ console.log(DateTime.formatIsoDateUtc(zoned)) // "2024-01-01" (always UTC)
 declare const formatIsoDateUtc: (self: DateTime) => string
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L2738)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L2758)
 
 Since v3.6.0

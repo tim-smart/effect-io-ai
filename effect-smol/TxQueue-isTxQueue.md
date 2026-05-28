@@ -3,7 +3,7 @@ Module: `TxQueue`<br />
 
 ## TxQueue.isTxQueue
 
-Checks if the given value is a TxQueue.
+Checks whether the given value is a TxQueue.
 
 **Example** (Checking queue handles)
 

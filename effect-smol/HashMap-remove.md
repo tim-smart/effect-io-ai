@@ -3,7 +3,7 @@ Module: `HashMap`<br />
 
 ## HashMap.remove
 
-Remove the entry for the specified key in the `HashMap` using the internal
+Removes the entry for the specified key in the `HashMap` using the internal
 hashing function.
 
 **Example** (Removing a key)
@@ -25,6 +25,6 @@ console.log(HashMap.has(map2, "a")) // true
 declare const remove: { <K>(key: K): <V>(self: HashMap<K, V>) => HashMap<K, V>; <K, V>(self: HashMap<K, V>, key: K): HashMap<K, V>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashMap.ts#L997)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashMap.ts#L995)
 
 Since v2.0.0

@@ -3,7 +3,7 @@ Module: `TxHashMap`<br />
 
 ## TxHashMap.get
 
-Safely lookup the value for the specified key in the TxHashMap.
+Looks up the value for the specified key in the TxHashMap.
 
 **Example** (Looking up values safely)
 

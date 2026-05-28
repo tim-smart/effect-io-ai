@@ -15,6 +15,6 @@ Use when typing `view_range` for memory or text editor view commands.
 type ViewRange = typeof ViewRange.Type
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L1422)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L1424)
 
 Since v4.0.0

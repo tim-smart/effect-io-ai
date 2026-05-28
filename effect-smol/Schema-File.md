@@ -13,6 +13,6 @@ export interface File extends instanceOf<globalThis.File> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L10251)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L10478)
 
 Since v4.0.0

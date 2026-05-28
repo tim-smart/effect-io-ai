@@ -7,8 +7,9 @@ A failed Exit containing a Cause.
 
 **When to use**
 
-Use when you use `isFailure` to narrow an `Exit` to `Failure`
-- Access the cause via the `cause` property after narrowing
+Use when working with the failed branch of an `Exit` after narrowing with
+`isFailure`. Access the cause via the `cause` property after
+narrowing.
 
 **Details**
 
@@ -41,6 +42,6 @@ export interface Failure<out A, out E> extends Exit.Proto<A, E> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Exit.ts#L201)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Exit.ts#L203)
 
 Since v2.0.0

@@ -14,7 +14,6 @@ Use when you need an equivalence for a complex type based on a single property
 
 **Details**
 
-- Does not mutate inputs
 - Applies the transformation function to both values before comparing
 - The transformation function should be pure and have no side effects
 - The resulting equivalence compares the transformed values using the provided equivalence
@@ -70,6 +69,6 @@ console.log(caseInsensitiveEq("Hello", "World")) // false
 declare const mapInput: { <B, A>(f: (b: B) => A): (self: Equivalence<A>) => Equivalence<B>; <A, B>(self: Equivalence<A>, f: (b: B) => A): Equivalence<B>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Equivalence.ts#L539)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Equivalence.ts#L533)
 
 Since v2.0.0

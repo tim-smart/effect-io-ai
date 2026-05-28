@@ -3,7 +3,7 @@ Module: `Duration`<br />
 
 ## Duration.ReducerSum
 
-A `Reducer` for summing `Duration`s.
+Reducer for summing `Duration`s.
 
 **When to use**
 

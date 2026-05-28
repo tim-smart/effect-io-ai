@@ -3,7 +3,7 @@ Module: `Duration`<br />
 
 ## Duration.isFinite
 
-Checks if a Duration is finite (not infinite).
+Checks whether a Duration is finite (not infinite).
 
 **Example** (Checking finite durations)
 

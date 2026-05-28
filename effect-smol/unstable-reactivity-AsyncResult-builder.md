@@ -11,6 +11,6 @@ Creates a typed builder for rendering an `AsyncResult` by handling waiting, init
 declare const builder: <A extends AsyncResult<any, any>>(self: A) => Builder<never, A extends Success<infer _A, infer _E> ? _A : never, A extends Failure<infer _A, infer _E> ? _E : never, A extends Initial<infer _A, infer _E> ? true : never, A extends Failure<infer _A, infer _E> ? Defect | Interrupt : never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AsyncResult.ts#L737)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AsyncResult.ts#L748)
 
 Since v4.0.0

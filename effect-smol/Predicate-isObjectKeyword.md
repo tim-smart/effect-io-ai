@@ -11,7 +11,6 @@ Use when you want to accept arrays and functions as well as objects.
 
 **Details**
 
-- Pure; does not mutate input.
 - Returns `true` for arrays and functions, `false` for `null`.
 
 **Example** (Object keyword)
@@ -34,6 +33,6 @@ console.log(Predicate.isObjectKeyword(null))
 declare const isObjectKeyword: (input: unknown) => input is object
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L1173)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L1148)
 
 Since v4.0.0

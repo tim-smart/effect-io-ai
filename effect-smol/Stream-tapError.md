@@ -3,7 +3,7 @@ Module: `Stream`<br />
 
 ## Stream.tapError
 
-Effectfully peeks at errors without changing the stream unless the tap fails.
+Peeks at errors effectfully without changing the stream unless the tap fails.
 
 **Example** (Effectfully peeking at errors)
 
@@ -33,6 +33,6 @@ Effect.runPromise(program)
 declare const tapError: { <E, A2, E2, R2>(f: (error: E) => Effect.Effect<A2, E2, R2>): <A, R>(self: Stream<A, E, R>) => Stream<A, E | E2, R2 | R>; <A, E, R, A2, E2, R2>(self: Stream<A, E, R>, f: (error: E) => Effect.Effect<A2, E2, R2>): Stream<A, E | E2, R | R2>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L5071)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L5082)
 
 Since v2.0.0

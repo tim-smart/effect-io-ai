@@ -3,14 +3,12 @@ Module: `Effect`<br />
 
 ## Effect.mapBothEager
 
-An optimized version of `mapBoth` that checks if an effect is already resolved
-and applies the appropriate mapping function eagerly when possible.
+Applies `mapBoth` eagerly when an effect is already resolved.
 
 **When to use**
 
-Use when `mapBothEager` provides better performance for effects that are already resolved
-by applying the transformation immediately instead of deferring it through
-the effect pipeline.
+Use when an already-resolved effect should transform either success or
+failure immediately while pending effects still use regular channel mapping.
 
 **Details**
 
@@ -45,6 +43,6 @@ const mappedError = Effect.mapBothEager(failure, {
 declare const mapBothEager: { <E, E2, A, A2>(options: { readonly onFailure: (e: E) => E2; readonly onSuccess: (a: A) => A2; }): <R>(self: Effect<A, E, R>) => Effect<A2, E2, R>; <A, E, R, E2, A2>(self: Effect<A, E, R>, options: { readonly onFailure: (e: E) => E2; readonly onSuccess: (a: A) => A2; }): Effect<A2, E2, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L15052)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L15031)
 
 Since v4.0.0

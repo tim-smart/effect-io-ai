@@ -3,7 +3,7 @@ Module: `Exit`<br />
 
 ## Exit.void
 
-A pre-allocated successful Exit with a `void` value.
+Provides a pre-allocated successful Exit with a `void` value.
 
 **When to use**
 
@@ -34,6 +34,6 @@ console.log(Exit.isSuccess(exit)) // true
 declare const void: Exit<void, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Exit.ts#L419)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Exit.ts#L421)
 
 Since v2.0.0

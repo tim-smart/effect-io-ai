@@ -15,6 +15,6 @@ type Services<A> = | A["~effect/persistence/Persistable"]["success"]["DecodingSe
   | A["~effect/persistence/Persistable"]["error"]["EncodingServices"]
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Persistable.ts#L124)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Persistable.ts#L129)
 
 Since v4.0.0

@@ -3,7 +3,7 @@ Module: `ScopedRef`<br />
 
 ## ScopedRef.getUnsafe
 
-Retrieves the current value of the scoped reference.
+Retrieves the current value of the scoped reference synchronously.
 
 **When to use**
 

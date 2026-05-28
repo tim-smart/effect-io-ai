@@ -3,7 +3,7 @@ Module: `SchemaAST`<br />
 
 ## SchemaAST.Link
 
-A single step in an `Encoding` chain.
+Represents a single step in an `Encoding` chain.
 
 **Details**
 

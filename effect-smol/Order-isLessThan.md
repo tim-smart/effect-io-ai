@@ -3,7 +3,7 @@ Module: `Order`<br />
 
 ## Order.isLessThan
 
-Tests whether one value is strictly less than another according to the given order.
+Checks whether one value is strictly less than another according to the given order.
 
 **When to use**
 
@@ -13,7 +13,6 @@ Use when when you need a boolean predicate instead of an ordering result
 
 **Details**
 
-- Pure function: does not mutate inputs
 - Returns `true` if the order returns `-1` (first value is less than second)
 - Returns `false` for equal or greater values
 - Supports curried and uncurried call styles
@@ -41,6 +40,6 @@ console.log(isLessThanNumber(1, 1)) // false
 declare const isLessThan: <A>(O: Order<A>) => { (that: A): (self: A) => boolean; (self: A, that: A): boolean; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Order.ts#L784)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Order.ts#L768)
 
 Since v4.0.0

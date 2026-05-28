@@ -3,7 +3,7 @@ Module: `NodeCrypto`<br />
 
 ## NodeCrypto.layer
 
-A layer that provides the Node.js Crypto service implementation.
+Layer that provides the Node.js Crypto service implementation.
 
 **Signature**
 

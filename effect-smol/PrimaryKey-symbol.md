@@ -3,7 +3,7 @@ Module: `PrimaryKey`<br />
 
 ## PrimaryKey.symbol
 
-The unique identifier used to identify objects that implement the `PrimaryKey` interface.
+Defines the unique identifier used to identify objects that implement the `PrimaryKey` interface.
 
 **When to use**
 

@@ -3,7 +3,7 @@ Module: `FiberSet`<br />
 
 ## FiberSet.run
 
-Fork an Effect and add the forked fiber to the FiberSet.
+Forks an Effect and add the forked fiber to the FiberSet.
 When the fiber completes, it will be removed from the FiberSet.
 
 **Example** (Forking effects into a set)

@@ -17,6 +17,6 @@ passed to `TextDecoder`.
 declare const decodeText: <Err, Done>(encoding?: string, options?: TextDecoderOptions) => Channel<Arr.NonEmptyReadonlyArray<string>, Err, Done, Arr.NonEmptyReadonlyArray<Uint8Array>, Err, Done>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L6440)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L6447)
 
 Since v4.0.0

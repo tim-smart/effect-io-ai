@@ -3,7 +3,7 @@ Module: `Array`<br />
 
 ## Array.replace
 
-Replaces the element at the specified index with a new value, returning the
+Replaces the element at the specified index safely with a new value, returning the
 updated array in `Option.some`.
 
 **When to use**
@@ -13,7 +13,6 @@ Use to set a fixed replacement value at a specific index.
 **Details**
 
 - Returns `Option.none()` when the index is out of bounds.
-- Does not mutate the input.
 
 **Example** (Replacing an element)
 
@@ -34,6 +33,6 @@ console.log(Array.replace([1, 2, 3], 1, 4)) // Option.some([1, 4, 3])
 declare const replace: { <B>(i: number, b: B): <A, S extends Iterable<A> = Iterable<A>>(self: S) => Option.Option<ReadonlyArray.With<S, ReadonlyArray.Infer<S> | B>>; <A, B, S extends Iterable<A> = Iterable<A>>(self: S, i: number, b: B): Option.Option<ReadonlyArray.With<S, ReadonlyArray.Infer<S> | B>>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L1987)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L1979)
 
 Since v2.0.0

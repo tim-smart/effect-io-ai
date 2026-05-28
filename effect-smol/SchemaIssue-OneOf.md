@@ -3,13 +3,13 @@ Module: `SchemaIssue`<br />
 
 ## SchemaIssue.OneOf
 
-Issue produced when a value matches *multiple* members of a union that is
+Represents a schema issue produced when a value matches *multiple* members of a union that is
 configured to allow exactly one match (oneOf mode).
 
 **When to use**
 
-Use when detect ambiguous union matches when `oneOf` validation is enabled.
-- Inspect `successes` to see which members matched.
+Use when you need to detect ambiguous union matches when `oneOf` validation is
+enabled.
 
 **Details**
 
@@ -42,6 +42,6 @@ declare class OneOf { constructor(
   ) }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaIssue.ts#L785)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaIssue.ts#L775)
 
 Since v4.0.0

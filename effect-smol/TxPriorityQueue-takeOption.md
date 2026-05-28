@@ -23,6 +23,6 @@ const program = Effect.gen(function*() {
 declare const takeOption: <A>(self: TxPriorityQueue<A>) => Effect.Effect<Option<A>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxPriorityQueue.ts#L441)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxPriorityQueue.ts#L449)
 
 Since v2.0.0

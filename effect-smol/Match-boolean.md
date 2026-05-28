@@ -46,6 +46,6 @@ console.log(describeTruthiness(1)) // "Some other truthy value"
 declare const boolean: Predicate.Refinement<unknown, boolean>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L1510)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L1499)
 
 Since v4.0.0

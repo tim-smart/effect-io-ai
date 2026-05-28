@@ -3,12 +3,17 @@ Module: `Result`<br />
 
 ## Result.succeedNone
 
-A pre-built `Result<Option<never>>` that succeeds with `None`.
+Provides a pre-built `Result<Option<never>>` that succeeds with `None`.
+
+**When to use**
+
+Use when an optional success should be absent, such as the `None` branch of
+`transposeOption` or `transposeMapOption`.
 
 **Details**
 
-- Equivalent to `Result.succeed(Option.none())` but avoids an extra allocation
-- Useful with `transposeOption` patterns
+This is equivalent to `Result.succeed(Option.none())`, but reuses a shared
+`Success` wrapper instead of allocating one each time.
 
 **Example** (Using succeedNone)
 
@@ -22,6 +27,8 @@ console.log(Result.isSuccess(Result.succeedNone))
 **See**
 
 - `succeedSome` for the `Some` counterpart
+- `transposeOption` to transpose an Option that already contains a Result
+- `transposeMapOption` to map and transpose an Option in one step
 
 **Signature**
 
@@ -29,6 +36,6 @@ console.log(Result.isSuccess(Result.succeedNone))
 declare const succeedNone: Result<Option<never>, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L1877)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L1901)
 
 Since v4.0.0

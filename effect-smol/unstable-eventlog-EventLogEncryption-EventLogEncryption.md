@@ -3,8 +3,13 @@ Module: `EventLogEncryption`<br />
 
 ## EventLogEncryption.EventLogEncryption
 
-Service used by event-log replication for identity generation, entry
-encryption and decryption, and SHA-256 hashing.
+Service that provides identity generation, entry
+encryption and decryption, and SHA-256 hashing for event-log replication.
+
+**When to use**
+
+Use to provide cryptographic operations required by encrypted event-log
+replication.
 
 **Signature**
 
@@ -12,6 +17,6 @@ encryption and decryption, and SHA-256 hashing.
 declare class EventLogEncryption
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventLogEncryption.ts#L83)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventLogEncryption.ts#L88)
 
 Since v4.0.0

@@ -38,6 +38,6 @@ const withTimestamp = SchemaGetter.onNone<number>(() =>
 declare const onNone: <T, E extends T = T, R = never>(f: (options: AST.ParseOptions) => Effect.Effect<Option.Option<T>, Issue.Issue, R>) => Getter<T, E, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L408)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L407)
 
 Since v4.0.0

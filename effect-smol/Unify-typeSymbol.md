@@ -7,7 +7,7 @@ The type of the typeSymbol.
 
 **When to use**
 
-Use to reference the `typeSymbol` property key in type-level protocol
+Use to reference the type information property key in type-level protocol
 definitions.
 
 **Details**

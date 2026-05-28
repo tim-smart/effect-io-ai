@@ -11,6 +11,6 @@ Creates a layer from an effect that acquires a `PgClient`, providing both `PgCli
 declare const layerFrom: <E, R>(acquire: Effect.Effect<PgClient, E, R>) => Layer.Layer<PgClient | Client.SqlClient, E, Exclude<R, Scope.Scope | Reactivity.Reactivity>>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/sql/pg/src/PgClient.ts#L792)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/sql/pg/src/PgClient.ts#L801)
 
 Since v4.0.0

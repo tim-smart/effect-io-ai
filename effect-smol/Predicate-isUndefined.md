@@ -11,7 +11,6 @@ Use when you need a guard for optional values.
 
 **Details**
 
-- Pure; does not mutate input.
 - Uses `input === undefined`.
 
 **Example** (Guard undefined)
@@ -35,6 +34,6 @@ console.log(Predicate.isUndefined(data))
 declare const isUndefined: (input: unknown) => input is undefined
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L832)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L816)
 
 Since v2.0.0

@@ -3,7 +3,7 @@ Module: `References`<br />
 
 ## References.TracerEnabled
 
-Reference for controlling whether tracing is enabled globally. When set to false,
+Context reference for controlling whether tracing is enabled globally. When set to false,
 spans will not be registered with the tracer and tracing overhead is minimized.
 
 **When to use**

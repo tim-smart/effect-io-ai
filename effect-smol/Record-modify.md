@@ -3,7 +3,7 @@ Module: `Record`<br />
 
 ## Record.modify
 
-Apply a function to the element at the specified key, creating a new record,
+Applies a function to the element at the specified key safely, creating a new record,
 or return `Option.none()` if the key doesn't exist.
 
 **Example** (Modifying a value at a key)

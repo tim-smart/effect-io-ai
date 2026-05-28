@@ -3,7 +3,7 @@ Module: `LogLevel`<br />
 
 ## LogLevel.Order
 
-An `Order` instance for `LogLevel` that defines the severity ordering.
+Order instance for `LogLevel` that defines the severity ordering.
 
 **When to use**
 

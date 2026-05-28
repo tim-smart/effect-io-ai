@@ -27,6 +27,6 @@ type AddMiddleware<R, Middleware> = R extends Rpc<
   never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Rpc.ts#L614)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Rpc.ts#L619)
 
 Since v4.0.0

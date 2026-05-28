@@ -13,6 +13,6 @@ open, read, and close events into `SocketError` values.
 declare const fromWebSocket: <RO>(acquire: Effect.Effect<globalThis.WebSocket, SocketError, RO>, options?: { readonly closeCodeIsError?: ((code: number) => boolean) | undefined; readonly openTimeout?: Duration.Input | undefined; } | undefined) => Effect.Effect<Socket, never, Exclude<RO, Scope.Scope>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Socket.ts#L615)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Socket.ts#L621)
 
 Since v4.0.0

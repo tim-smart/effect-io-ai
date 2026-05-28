@@ -58,12 +58,12 @@ export interface SchemaStore<S extends Schema.Top> {
   readonly has: (key: string) => Effect.Effect<boolean, KeyValueStoreError>
 
   /**
-   * Checks if the KeyValueStore contains any entries.
+   * Checks whether the KeyValueStore contains any entries.
    */
   readonly isEmpty: Effect.Effect<boolean, KeyValueStoreError>
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/KeyValueStore.ts#L691)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/KeyValueStore.ts#L696)
 
 Since v4.0.0

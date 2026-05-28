@@ -3,7 +3,7 @@ Module: `BigInt`<br />
 
 ## BigInt.isBigInt
 
-Tests if a value is a `bigint`.
+Checks whether a value is a `bigint`.
 
 **When to use**
 

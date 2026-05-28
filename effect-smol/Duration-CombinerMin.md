@@ -3,7 +3,7 @@ Module: `Duration`<br />
 
 ## Duration.CombinerMin
 
-A `Combiner` that returns the minimum `Duration`.
+Combiner that returns the minimum `Duration`.
 
 **When to use**
 

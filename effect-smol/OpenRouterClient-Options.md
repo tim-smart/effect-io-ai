@@ -3,7 +3,7 @@ Module: `OpenRouterClient`<br />
 
 ## OpenRouterClient.Options
 
-Configuration options for creating an OpenRouter client.
+Configuration for creating an OpenRouter client.
 
 **Signature**
 

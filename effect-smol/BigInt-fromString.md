@@ -3,7 +3,7 @@ Module: `BigInt`<br />
 
 ## BigInt.fromString
 
-Converts a string to a `bigint`.
+Parses a string into a `bigint` safely.
 
 **When to use**
 
@@ -34,6 +34,6 @@ BigInt.fromString("a") // Option.none()
 declare const fromString: (s: string) => Option.Option<bigint>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigInt.ts#L925)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigInt.ts#L927)
 
 Since v2.4.12

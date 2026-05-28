@@ -35,6 +35,6 @@ export interface HashMap<out Key, out Value> extends Iterable<[Key, Value]>, Equ
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashMap.ts#L116)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashMap.ts#L114)
 
 Since v2.0.0

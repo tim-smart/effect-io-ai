@@ -11,7 +11,6 @@ Use when you need to guard an `unknown` value as a boolean.
 
 **Details**
 
-- Pure; does not mutate input.
 - Uses `typeof input === "boolean"`.
 
 **Example** (Guard boolean)
@@ -37,6 +36,6 @@ if (Predicate.isBoolean(data)) {
 declare const isBoolean: (input: unknown) => input is boolean
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L670)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L659)
 
 Since v2.0.0

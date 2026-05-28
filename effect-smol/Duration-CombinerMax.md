@@ -3,7 +3,7 @@ Module: `Duration`<br />
 
 ## Duration.CombinerMax
 
-A `Combiner` that returns the maximum `Duration`.
+Combiner that returns the maximum `Duration`.
 
 **When to use**
 

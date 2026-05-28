@@ -12,6 +12,6 @@ including standard protocol errors and custom `McpErrorBase` values.
 declare const McpError: Schema.Union<readonly [typeof ParseError, typeof InvalidRequest, typeof MethodNotFound, typeof InvalidParams, typeof InternalError, typeof McpErrorBase]>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L575)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L656)
 
 Since v4.0.0

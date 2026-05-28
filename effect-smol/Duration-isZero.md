@@ -3,7 +3,7 @@ Module: `Duration`<br />
 
 ## Duration.isZero
 
-Checks if a Duration is zero.
+Checks whether a Duration is zero.
 
 **Example** (Checking for zero durations)
 

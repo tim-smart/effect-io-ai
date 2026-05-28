@@ -3,7 +3,7 @@ Module: `HttpTraceContext`<br />
 
 ## HttpTraceContext.xb3
 
-Decodes an external span from multi-header B3 propagation headers.
+Decodes an external span safely from multi-header B3 propagation headers.
 
 **Details**
 

@@ -26,6 +26,6 @@ rejects with a `SchemaIssue.Issue` on encoding failure.
 declare const encodeUnknownPromise: <S extends Schema.Encoder<unknown>>(schema: S, options?: AST.ParseOptions) => (input: unknown, options?: AST.ParseOptions) => Promise<S["Encoded"]>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaParser.ts#L643)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaParser.ts#L645)
 
 Since v3.10.0

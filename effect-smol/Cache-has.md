@@ -3,7 +3,7 @@ Module: `Cache`<br />
 
 ## Cache.has
 
-Checks if the cache contains an entry for the specified key.
+Checks whether the cache contains an entry for the specified key.
 
 **Details**
 

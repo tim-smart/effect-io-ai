@@ -3,7 +3,8 @@ Module: `Headers`<br />
 
 ## Headers.Equivalence
 
-Equivalence instance that compares `Headers` by their header names and string values.
+Provides an `Equivalence` instance that compares `Headers` by header names
+and string values.
 
 **Signature**
 
@@ -11,6 +12,6 @@ Equivalence instance that compares `Headers` by their header names and string va
 declare const Equivalence: Equ.Equivalence<Headers>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Headers.ts#L154)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Headers.ts#L155)
 
 Since v4.0.0

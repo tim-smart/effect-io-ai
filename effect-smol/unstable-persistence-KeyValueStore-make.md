@@ -16,6 +16,6 @@ Default implementations are derived for `has`, `isEmpty`, `modify`, and
 declare const make: (options: MakeOptions) => KeyValueStore
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/KeyValueStore.ts#L231)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/KeyValueStore.ts#L236)
 
 Since v4.0.0

@@ -3,7 +3,7 @@ Module: `VariantSchema`<br />
 
 ## VariantSchema.Override
 
-Brands a value as an explicit override for an `Overrideable` schema default.
+Marks a value as an explicit override for an `Overrideable` schema default.
 
 **Signature**
 

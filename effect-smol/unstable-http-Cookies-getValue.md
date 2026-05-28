@@ -3,7 +3,7 @@ Module: `Cookies`<br />
 
 ## Cookies.getValue
 
-Gets the decoded value of a cookie by name.
+Gets the decoded value of a cookie by name safely.
 
 **Details**
 

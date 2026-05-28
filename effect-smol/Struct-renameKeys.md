@@ -12,8 +12,7 @@ Use when you need simple, declarative key renaming without custom logic.
 
 **Details**
 
-This does not mutate the input and returns a fresh object. For computed key
-names, use `evolveKeys` instead.
+For computed key names, use `evolveKeys` instead.
 
 **Example** (Renaming keys)
 
@@ -38,6 +37,6 @@ console.log(result) // { first: "Alice", last: "Smith", age: 30 }
 declare const renameKeys: { <S extends object, const M extends { readonly [K in keyof S]?: PropertyKey; }>(mapping: M): (self: S) => { [K in keyof S as K extends keyof M ? M[K] extends PropertyKey ? M[K] : K : K]: S[K]; }; <S extends object, const M extends { readonly [K in keyof S]?: PropertyKey; }>(self: S, mapping: M): { [K in keyof S as K extends keyof M ? M[K] extends PropertyKey ? M[K] : K : K]: S[K]; }; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Struct.ts#L546)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Struct.ts#L530)
 
 Since v4.0.0

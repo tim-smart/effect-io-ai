@@ -3,7 +3,7 @@ Module: `Duration`<br />
 
 ## Duration.isLessThan
 
-Checks if the first Duration is less than the second.
+Checks whether the first Duration is less than the second.
 
 **Example** (Comparing durations with less than)
 

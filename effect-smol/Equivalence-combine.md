@@ -13,7 +13,6 @@ Use when you need to combine exactly two equivalences
 
 **Details**
 
-- Does not mutate inputs
 - Returns `true` only if both equivalences return `true`
 - Short-circuits: if the first equivalence returns `false`, the second is not called
 - The result is also an equivalence that satisfies reflexive, symmetric, and transitive properties
@@ -59,6 +58,6 @@ console.log(personEquivalence(person1, person3)) // false (different age)
 declare const combine: { <A>(that: Equivalence<A>): (self: Equivalence<A>) => Equivalence<A>; <A>(self: Equivalence<A>, that: Equivalence<A>): Equivalence<A>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Equivalence.ts#L395)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Equivalence.ts#L391)
 
 Since v2.0.0

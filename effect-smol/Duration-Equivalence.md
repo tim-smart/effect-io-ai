@@ -3,7 +3,7 @@ Module: `Duration`<br />
 
 ## Duration.Equivalence
 
-Equivalence instance for `Duration`, allowing equality comparisons.
+Provides an `Equivalence` instance for comparing `Duration` values.
 
 **Example** (Comparing durations for equivalence)
 

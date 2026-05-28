@@ -36,6 +36,6 @@ const schema = Schema.BigInt.pipe(
 declare const durationFromNanos: Transformation<Duration.Duration, bigint, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L1019)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L1017)
 
 Since v4.0.0

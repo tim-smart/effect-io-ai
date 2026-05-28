@@ -13,7 +13,6 @@ Use when when you need to define how values of a type should be compared
 
 **Details**
 
-- Pure function: does not mutate inputs or have side effects
 - Returns `-1` if the first value is less than the second
 - Returns `0` if the values are equal according to this ordering
 - Returns `1` if the first value is greater than the second
@@ -48,6 +47,6 @@ export interface Order<in A> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Order.ts#L124)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Order.ts#L123)
 
 Since v2.0.0

@@ -11,6 +11,6 @@ Creates the PGlite statement compiler, using PostgreSQL `$1` placeholders, doubl
 declare const makeCompiler: (transform?: (_: string) => string, transformJson?: boolean) => Statement.Compiler
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/sql/pglite/src/PgliteClient.ts#L399)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/sql/pglite/src/PgliteClient.ts#L403)
 
 Since v4.0.0

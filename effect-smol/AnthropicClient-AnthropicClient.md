@@ -3,7 +3,7 @@ Module: `AnthropicClient`<br />
 
 ## AnthropicClient.AnthropicClient
 
-Service identifier for the Anthropic client.
+Service tag for the Anthropic client.
 
 **When to use**
 

@@ -12,10 +12,6 @@ is combined independently.
 
 Use to fold a collection of tuples into a single summary tuple.
 
-**Details**
-
-The inputs are not mutated; a fresh tuple is returned.
-
 **Example** (Reducing a collection of tuples)
 
 ```ts
@@ -44,6 +40,6 @@ console.log(result) // [6, "abc"]
 declare const makeReducer: <A extends ReadonlyArray<unknown>>(reducers: { readonly [K in keyof A]: Reducer.Reducer<A[K]>; }) => Reducer.Reducer<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tuple.ts#L803)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tuple.ts#L782)
 
 Since v4.0.0

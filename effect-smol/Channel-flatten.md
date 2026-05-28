@@ -3,7 +3,7 @@ Module: `Channel`<br />
 
 ## Channel.flatten
 
-Flatten a channel of channels.
+Flattens a channel of channels.
 
 **Example** (Flattening nested channels)
 
@@ -33,6 +33,6 @@ const flattenedChannel = Channel.flatten(nestedChannels)
 declare const flatten: <OutElem, OutErr, OutDone, InElem, InErr, InDone, Env, OutErr1, OutDone1, InElem1, InErr1, InDone1, Env1>(channels: Channel<Channel<OutElem, OutErr, OutDone, InElem, InErr, InDone, Env>, OutErr1, OutDone1, InElem1, InErr1, InDone1, Env1>) => Channel<OutElem, OutErr | OutErr1, OutDone1, InElem & InElem1, InErr & InErr1, InDone & InDone1, Env | Env1>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L2891)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L2898)
 
 Since v2.0.0

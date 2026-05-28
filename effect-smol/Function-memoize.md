@@ -3,8 +3,8 @@ Module: `Function`<br />
 
 ## Function.memoize
 
-Memoizes a function whose input is an object, caching results by object
-identity.
+Creates a memoized function whose input is an object, caching results by
+object identity.
 
 **When to use**
 

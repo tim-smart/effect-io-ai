@@ -11,6 +11,6 @@ Returns `true` when the value is an RPC `Wrapper`.
 declare const isWrapper: (u: object) => u is Wrapper<any>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Rpc.ts#L1212)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Rpc.ts#L1217)
 
 Since v4.0.0

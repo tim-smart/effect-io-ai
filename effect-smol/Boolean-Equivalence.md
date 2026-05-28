@@ -3,11 +3,12 @@ Module: `Boolean`<br />
 
 ## Boolean.Equivalence
 
-An `Equivalence` instance for booleans using strict equality (`===`).
+Equivalence instance for booleans using strict equality (`===`).
 
 **When to use**
 
-Use when an API needs an `Equivalence` instance for boolean equality.
+Use when checking boolean equality through APIs that accept an equivalence
+relation.
 
 **Example** (Comparing booleans for equivalence)
 

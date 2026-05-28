@@ -3,7 +3,7 @@ Module: `GlobalFlag`<br />
 
 ## GlobalFlag.Help
 
-The `--help` / `-h` global flag, which shows help documentation for the
+Defines the `--help` / `-h` global flag, which shows help documentation for the
 active command path.
 
 **See**

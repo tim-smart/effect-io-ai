@@ -3,8 +3,8 @@ Module: `Schema`<br />
 
 ## Schema.revealCodec
 
-Identity function that widens a value to the full `Codec` interface,
-prompting TypeScript to infer all four type parameters (`T`, `E`, `RD`, `RE`).
+Returns a codec widened to the full `Codec` interface, prompting
+TypeScript to infer all four type parameters (`T`, `E`, `RD`, `RE`).
 
 **Details**
 

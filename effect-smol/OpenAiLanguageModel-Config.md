@@ -3,7 +3,7 @@ Module: `OpenAiLanguageModel`<br />
 
 ## OpenAiLanguageModel.Config
 
-Service definition for OpenAI language model configuration.
+Context service for OpenAI language model configuration.
 
 **When to use**
 

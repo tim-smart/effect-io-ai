@@ -13,7 +13,6 @@ Use when when comparing arrays of the same element type
 
 **Details**
 
-- Pure function: does not mutate inputs
 - Compares arrays element-by-element using the provided order
 - Stops at the first non-zero comparison result
 - If all elements are equal, shorter arrays are less than longer arrays
@@ -42,6 +41,6 @@ console.log(arrayOrder([1, 2], [1, 2])) // 0
 declare const Array: <A>(O: Order<A>) => Order<ReadonlyArray<A>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Order.ts#L692)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Order.ts#L678)
 
 Since v4.0.0

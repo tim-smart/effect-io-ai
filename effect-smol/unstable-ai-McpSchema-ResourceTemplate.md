@@ -3,7 +3,7 @@ Module: `McpSchema`<br />
 
 ## McpSchema.ResourceTemplate
 
-A template description for resources available on the server.
+Schema for a template description of resources available on the server.
 
 **Signature**
 
@@ -11,6 +11,6 @@ A template description for resources available on the server.
 declare class ResourceTemplate
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L805)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L889)
 
 Since v4.0.0

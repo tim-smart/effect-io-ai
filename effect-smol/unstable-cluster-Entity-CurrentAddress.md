@@ -3,7 +3,12 @@ Module: `Entity`<br />
 
 ## Entity.CurrentAddress
 
-A Context.Tag to access the current entity address.
+Service tag for the entity address currently being processed.
+
+**When to use**
+
+Use to read the current entity identity and shard address from entity
+handlers and keep-alive logic.
 
 **Signature**
 
@@ -11,6 +16,6 @@ A Context.Tag to access the current entity address.
 declare class CurrentAddress
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Entity.ts#L488)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Entity.ts#L493)
 
 Since v4.0.0

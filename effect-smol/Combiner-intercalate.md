@@ -16,8 +16,7 @@ accumulated values.
 
 `intercalate(middle)(combiner).combine(self, that)` is equivalent to
 `combiner.combine(self, combiner.combine(middle, that))`. This function is
-curried: first provide the separator, then the base combiner. It returns a
-new combiner and does not mutate the input combiner.
+curried: first provide the separator, then the base combiner.
 
 **Example** (joining strings with a separator)
 
@@ -40,6 +39,6 @@ console.log(commaSep.combine("a", "b"))
 declare const intercalate: <A>(middle: A) => (combiner: Combiner<A>) => Combiner<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Combiner.ts#L372)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Combiner.ts#L368)
 
 Since v4.0.0

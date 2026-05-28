@@ -3,7 +3,7 @@ Module: `Envelope`<br />
 
 ## Envelope.Interrupt
 
-Envelope used to interrupt an in-flight entity request.
+Represents an envelope used to interrupt an in-flight entity request.
 
 **Signature**
 
@@ -11,6 +11,6 @@ Envelope used to interrupt an in-flight entity request.
 declare class Interrupt
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Envelope.ts#L222)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Envelope.ts#L223)
 
 Since v4.0.0

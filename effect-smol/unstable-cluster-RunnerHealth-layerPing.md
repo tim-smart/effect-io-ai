@@ -3,7 +3,7 @@ Module: `RunnerHealth`<br />
 
 ## RunnerHealth.layerPing
 
-A layer which will ping a Runner directly to check if it is healthy.
+Layer that pings runners directly to check whether they are healthy.
 
 **Signature**
 

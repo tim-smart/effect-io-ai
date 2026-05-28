@@ -9,10 +9,6 @@ Creates a new struct with the specified keys removed.
 
 Use to exclude sensitive or irrelevant fields from a struct.
 
-**Details**
-
-This does not mutate the input and returns a fresh object.
-
 **Gotchas**
 
 Keys not present in the struct are silently ignored.
@@ -37,6 +33,6 @@ console.log(safe) // { name: "Alice", age: 30 }
 declare const omit: { <S extends object, const Keys extends ReadonlyArray<keyof S>>(keys: Keys): (self: S) => Simplify<Omit<S, Keys[number]>>; <S extends object, const Keys extends ReadonlyArray<keyof S>>(self: S, keys: Keys): Simplify<Omit<S, Keys[number]>>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Struct.ts#L309)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Struct.ts#L297)
 
 Since v2.0.0

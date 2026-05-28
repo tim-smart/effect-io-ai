@@ -34,6 +34,6 @@ provided with `MessageStorage.layerNoop`, persisted sends defect.
 declare const layer: Layer.Layer<Sharding, never, Runners | MessageStorage.MessageStorage | RunnerStorage | ShardingConfig | RunnerHealth.RunnerHealth>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Sharding.ts#L1505)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Sharding.ts#L1510)
 
 Since v4.0.0

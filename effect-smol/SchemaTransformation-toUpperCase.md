@@ -3,7 +3,7 @@ Module: `SchemaTransformation`<br />
 
 ## SchemaTransformation.toUpperCase
 
-A string-to-string transformation that uppercases on decode.
+Transforms strings by uppercasing on decode.
 Encode is passthrough.
 
 **When to use**
@@ -37,6 +37,6 @@ const Uppered = Schema.String.pipe(
 declare const toUpperCase: () => Transformation<string, string>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L608)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L606)
 
 Since v4.0.0

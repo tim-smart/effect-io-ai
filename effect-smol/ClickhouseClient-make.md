@@ -13,6 +13,6 @@ to `SqlError`, and aborts plus kills in-flight queries when interrupted.
 declare const make: (options: ClickhouseClientConfig) => Effect.Effect<ClickhouseClient, SqlError, Scope.Scope | Reactivity.Reactivity>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/sql/clickhouse/src/ClickhouseClient.ts#L191)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/sql/clickhouse/src/ClickhouseClient.ts#L195)
 
 Since v4.0.0

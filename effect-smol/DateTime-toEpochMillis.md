@@ -3,7 +3,7 @@ Module: `DateTime`<br />
 
 ## DateTime.toEpochMillis
 
-Get the milliseconds since the Unix epoch of a `DateTime`.
+Gets the milliseconds since the Unix epoch of a `DateTime`.
 
 **Details**
 
@@ -26,6 +26,6 @@ console.log(epochMillis) // 1704067200000
 declare const toEpochMillis: (self: DateTime) => number
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L1656)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L1665)
 
 Since v3.6.0

@@ -3,10 +3,8 @@ Module: `MutableHashMap`<br />
 
 ## MutableHashMap.modifyAt
 
-Sets or removes the specified key in the MutableHashMap using an update function.
-The function receives the current value as an Option and returns an Option.
-If the function returns Some, the key is set to that value.
-If the function returns None, the key is removed.
+Updates or removes the specified key using a function from the current
+optional value to the next optional value.
 
 **When to use**
 
@@ -61,6 +59,6 @@ console.log(MutableHashMap.has(map, "new")) // false (42 <= 50)
 declare const modifyAt: { <K, V>(key: K, f: (value: Option.Option<V>) => Option.Option<V>): (self: MutableHashMap<K, V>) => MutableHashMap<K, V>; <K, V>(self: MutableHashMap<K, V>, key: K, f: (value: Option.Option<V>) => Option.Option<V>): MutableHashMap<K, V>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableHashMap.ts#L658)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableHashMap.ts#L656)
 
 Since v2.0.0

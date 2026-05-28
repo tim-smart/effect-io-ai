@@ -40,6 +40,6 @@ console.log(result) // "Got: 42"
 declare const match: { <A, E, X1, X2>(options: { readonly onSuccess: (a: NoInfer<A>) => X1; readonly onFailure: (cause: Cause.Cause<NoInfer<E>>) => X2; }): (self: Exit<A, E>) => X1 | X2; <A, E, X1, X2>(self: Exit<A, E>, options: { readonly onSuccess: (a: A) => X1; readonly onFailure: (cause: Cause.Cause<E>) => X2; }): X1 | X2; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Exit.ts#L839)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Exit.ts#L841)
 
 Since v2.0.0

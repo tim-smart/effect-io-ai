@@ -3,8 +3,8 @@ Module: `McpSchema`<br />
 
 ## McpSchema.CancelledNotification
 
-Notification sent by either peer to cancel a previously issued request in
-the same direction.
+Sent from either peer to cancel a previously issued request in the same
+direction.
 
 **Details**
 
@@ -17,6 +17,6 @@ human-readable reason.
 declare class CancelledNotification
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L690)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L775)
 
 Since v4.0.0

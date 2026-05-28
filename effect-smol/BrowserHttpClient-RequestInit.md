@@ -3,7 +3,12 @@ Module: `BrowserHttpClient`<br />
 
 ## BrowserHttpClient.RequestInit
 
-Service containing default `RequestInit` options for the fetch-based HTTP client.
+Service that contains default fetch options for the browser fetch client.
+
+**When to use**
+
+Use to provide default credentials, cache, redirect, integrity, or other
+fetch options for browser HTTP requests.
 
 **Signature**
 
@@ -11,6 +16,6 @@ Service containing default `RequestInit` options for the fetch-based HTTP client
 declare const RequestInit: typeof RequestInit
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/BrowserHttpClient.ts#L79)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/BrowserHttpClient.ts#L84)
 
 Since v4.0.0

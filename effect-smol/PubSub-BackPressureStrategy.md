@@ -3,17 +3,22 @@ Module: `PubSub`<br />
 
 ## PubSub.BackPressureStrategy
 
-A strategy that applies back pressure to publishers when the `PubSub` is at
-capacity. This guarantees that all subscribers will receive all messages
-published to the `PubSub` while they are subscribed. However, it creates the
-risk that a slow subscriber will slow down the rate at which messages
-are published and received by other subscribers.
+Represents the back-pressure strategy for bounded `PubSub` values.
 
 **When to use**
 
 Use to preserve every message for current subscribers when a bounded custom
 `PubSub` should make publishers wait for capacity instead of dropping or
 evicting messages.
+
+**Details**
+
+Publishers wait when the `PubSub` is at capacity, so all current subscribers
+can receive every published message.
+
+**Gotchas**
+
+A slow subscriber can slow down publishers and other subscribers.
 
 **See**
 
@@ -27,6 +32,6 @@ evicting messages.
 declare class BackPressureStrategy<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PubSub.ts#L2369)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PubSub.ts#L2411)
 
 Since v4.0.0

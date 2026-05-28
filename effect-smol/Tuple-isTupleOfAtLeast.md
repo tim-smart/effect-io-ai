@@ -3,7 +3,7 @@ Module: `Tuple`<br />
 
 ## Tuple.isTupleOfAtLeast
 
-Checks if an array has at least `N` elements, narrowing the type to a
+Checks whether an array has at least `N` elements, narrowing the type to a
 tuple with a minimum length.
 
 **When to use**
@@ -42,6 +42,6 @@ if (Tuple.isTupleOfAtLeast(arr, 3)) {
 declare const isTupleOfAtLeast: { <N extends number>(n: N): <T>(self: ReadonlyArray<T>) => self is TupleOfAtLeast<N, T>; <T, N extends number>(self: ReadonlyArray<T>, n: N): self is TupleOfAtLeast<N, T>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tuple.ts#L720)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tuple.ts#L707)
 
 Since v3.3.0

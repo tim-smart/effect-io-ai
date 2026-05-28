@@ -3,7 +3,7 @@ Module: `Schema`<br />
 
 ## Schema.revealBottom
 
-Widens a schema's type to the fully-parameterized `Bottom` interface,
+Returns a schema widened to the fully-parameterized `Bottom` interface,
 making all 14 type parameters visible to TypeScript.
 
 **Details**

@@ -11,7 +11,6 @@ Use when you want to filter out nullish values but keep other falsy ones.
 
 **Details**
 
-- Pure; does not mutate input.
 - Uses `input != null`.
 
 **Example** (Filter non-nullish)
@@ -37,6 +36,6 @@ console.log(present)
 declare const isNotNullish: <A>(input: A) => input is NonNullable<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L993)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L972)
 
 Since v4.0.0

@@ -3,7 +3,7 @@ Module: `BigDecimal`<br />
 
 ## BigDecimal.divide
 
-Provides a division operation on `BigDecimal`s.
+Divides `BigDecimal`s safely.
 
 **When to use**
 

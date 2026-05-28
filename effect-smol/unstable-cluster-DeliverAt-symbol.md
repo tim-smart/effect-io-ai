@@ -3,7 +3,12 @@ Module: `DeliverAt`<br />
 
 ## DeliverAt.symbol
 
-Property key used by values that provide a scheduled delivery time.
+Defines the property key used by values that provide a scheduled delivery time.
+
+**When to use**
+
+Use to implement the scheduled-delivery protocol on cluster message payloads
+by defining a method at this property key.
 
 **Signature**
 
@@ -11,6 +16,6 @@ Property key used by values that provide a scheduled delivery time.
 declare const symbol: "~effect/cluster/DeliverAt"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DeliverAt.ts#L35)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DeliverAt.ts#L40)
 
 Since v4.0.0

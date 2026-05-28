@@ -3,10 +3,17 @@ Module: `Match`<br />
 
 ## Match.exhaustive
 
-The `Match.exhaustive` method finalizes the pattern matching process by
-ensuring that all possible cases are accounted for. If any case is missing,
-TypeScript will produce a type error. This is particularly useful when
-working with unions, as it helps prevent unintended gaps in pattern matching.
+Completes a matcher that handles every remaining input case.
+
+**When to use**
+
+Use to require TypeScript to reject incomplete matcher definitions before the
+matcher is turned into a function.
+
+**Details**
+
+If any case is still unmatched, the matcher does not type-check as
+exhaustive.
 
 **Example** (Ensuring All Cases Are Covered)
 
@@ -30,6 +37,6 @@ const match = Match.type<string | number>().pipe(
 declare const exhaustive: <I, F, A, Pr, Ret>(self: Matcher<I, F, never, A, Pr, Ret>) => [Pr] extends [never] ? (u: I) => Unify<A> : Unify<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L2042)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L2037)
 
 Since v4.0.0

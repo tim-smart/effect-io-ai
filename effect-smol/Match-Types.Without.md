@@ -33,6 +33,6 @@ export interface Without<out X> {
   }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L2351)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L2346)
 
 Since v4.0.0

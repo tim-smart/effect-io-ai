@@ -3,7 +3,7 @@ Module: `Stream`<br />
 
 ## Stream.filterEffect
 
-Effectfully filters elements in a single pass.
+Filters elements in a single pass effectfully.
 
 **Example** (Effectfully filtering stream values)
 
@@ -27,6 +27,6 @@ Effect.runPromise(program)
 declare const filterEffect: { <A, EX, RX>(predicate: (a: NoInfer<A>, i: number) => Effect.Effect<boolean, EX, RX>): <E, R>(self: Stream<A, E, R>) => Stream<A, E | EX, R | RX>; <A, E, R, EX, RX>(self: Stream<A, E, R>, predicate: (a: NoInfer<A>, i: number) => Effect.Effect<boolean, EX, RX>): Stream<A, E | EX, R | RX>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L4377)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L4388)
 
 Since v2.0.0

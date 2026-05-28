@@ -3,7 +3,8 @@ Module: `Console`<br />
 
 ## Console.trace
 
-Outputs the current stack trace to the console to show how the current point in the code was reached.
+Writes the current stack trace to the console to show how the current point in
+the code was reached.
 
 **Example** (Writing stack traces)
 
@@ -22,6 +23,6 @@ const program = Effect.gen(function*() {
 declare const trace: (...args: ReadonlyArray<any>) => Effect.Effect<void>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Console.ts#L588)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Console.ts#L591)
 
 Since v2.0.0

@@ -36,6 +36,6 @@ export interface Replier<Rpcs extends Rpc.Any> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Entity.ts#L515)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Entity.ts#L525)
 
 Since v4.0.0

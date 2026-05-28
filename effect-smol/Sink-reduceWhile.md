@@ -3,8 +3,8 @@ Module: `Sink`<br />
 
 ## Sink.reduceWhile
 
-A sink that reduces its inputs using the provided function `f` starting from
-the provided `initial` state while the specified `predicate` returns `true`.
+A sink that reduces input elements from the provided `initial` state with
+`f` while the specified `predicate` returns `true`.
 
 **Signature**
 

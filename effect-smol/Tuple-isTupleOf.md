@@ -3,7 +3,7 @@ Module: `Tuple`<br />
 
 ## Tuple.isTupleOf
 
-Checks if an array has exactly `N` elements, narrowing the type to a
+Checks whether an array has exactly `N` elements, narrowing the type to a
 fixed-length tuple.
 
 **When to use**
@@ -41,6 +41,6 @@ if (Tuple.isTupleOf(arr, 3)) {
 declare const isTupleOf: { <N extends number>(n: N): <T>(self: ReadonlyArray<T>) => self is TupleOf<N, T>; <T, N extends number>(self: ReadonlyArray<T>, n: N): self is TupleOf<N, T>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tuple.ts#L685)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tuple.ts#L672)
 
 Since v3.3.0

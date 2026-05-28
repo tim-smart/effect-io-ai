@@ -3,7 +3,7 @@ Module: `Clipboard`<br />
 
 ## Clipboard.layer
 
-A layer that directly interfaces with the navigator.clipboard api
+Layer that directly interfaces with the browser Clipboard API.
 
 **Signature**
 

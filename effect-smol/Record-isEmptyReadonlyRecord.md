@@ -3,7 +3,7 @@ Module: `Record`<br />
 
 ## Record.isEmptyReadonlyRecord
 
-Determine if a record is empty.
+Determines if a readonly record is empty.
 
 **Example** (Checking for an empty readonly record)
 

@@ -7,8 +7,7 @@ Matches the value `undefined`.
 
 **When to use**
 
-Use when a matcher should handle only inputs whose value is exactly
-`undefined`.
+Use when a matcher should handle only inputs with no defined value.
 
 **Details**
 
@@ -26,6 +25,6 @@ This refinement is backed by `Predicate.isUndefined`, which checks
 declare const undefined: Predicate.Refinement<unknown, undefined>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L1533)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L1521)
 
 Since v4.0.0

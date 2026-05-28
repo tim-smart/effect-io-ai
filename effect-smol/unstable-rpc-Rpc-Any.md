@@ -17,6 +17,6 @@ export interface Any extends Pipeable {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Rpc.ts#L261)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Rpc.ts#L266)
 
 Since v4.0.0

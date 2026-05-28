@@ -8,8 +8,8 @@ In this ordering, `false` is considered less than `true`.
 
 **When to use**
 
-Use when an API needs an `Order` instance for booleans with `false` before
-`true`.
+Use when sorting or comparing boolean values through APIs that accept an
+ordering instance where `false` comes before `true`.
 
 **Example** (Comparing booleans)
 
@@ -27,6 +27,6 @@ console.log(Boolean.Order(true, true)) // 0 (true === true)
 declare const Order: order.Order<boolean>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Boolean.ts#L183)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Boolean.ts#L182)
 
 Since v2.0.0

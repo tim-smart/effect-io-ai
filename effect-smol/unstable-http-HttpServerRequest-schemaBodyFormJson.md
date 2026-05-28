@@ -17,6 +17,6 @@ with the supplied schema.
 declare const schemaBodyFormJson: <A, I, RD, RE>(schema: Schema.Codec<A, I, RD, RE>, options?: ParseOptions | undefined) => (field: string) => Effect.Effect<A, Schema.SchemaError | HttpServerError, Scope.Scope | Path.Path | FileSystem.FileSystem | HttpServerRequest | RD>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpServerRequest.ts#L355)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpServerRequest.ts#L370)
 
 Since v4.0.0

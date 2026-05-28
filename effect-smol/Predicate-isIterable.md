@@ -11,7 +11,6 @@ Use when you need a guard before iterating an unknown value.
 
 **Details**
 
-- Pure; does not mutate input.
 - Accepts strings as iterable.
 - Uses `hasProperty` for `Symbol.iterator`.
 
@@ -36,6 +35,6 @@ console.log(Predicate.isIterable(data))
 declare const isIterable: (input: unknown) => input is Iterable<unknown>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L1372)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L1341)
 
 Since v2.0.0

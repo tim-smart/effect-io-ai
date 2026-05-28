@@ -38,6 +38,6 @@ const schema = Schema.instanceOf(FormData).pipe(
 declare const fromFormData: Transformation<unknown, FormData, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L1615)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L1613)
 
 Since v4.0.0

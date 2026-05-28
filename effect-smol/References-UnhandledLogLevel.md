@@ -3,7 +3,7 @@ Module: `References`<br />
 
 ## References.UnhandledLogLevel
 
-Reference for the log severity used when a pool finalizer reports an
+Context reference for the log severity used when a pool finalizer reports an
 unhandled error.
 
 **When to use**

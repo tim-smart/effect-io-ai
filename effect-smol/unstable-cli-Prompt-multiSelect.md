@@ -17,6 +17,6 @@ minimum or maximum selection counts.
 declare const multiSelect: <const A>(options: SelectOptions<A> & MultiSelectOptions) => Prompt<Array<A>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L1150)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L1175)
 
 Since v4.0.0

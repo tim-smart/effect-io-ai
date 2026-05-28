@@ -17,6 +17,6 @@ in async mode it exposes an `AsyncResult` of the decoded value.
 declare const kvs: <S extends Schema.Codec<any, any>, const Mode extends "sync" | "async" = never>(options: { readonly runtime: AtomRuntime<KeyValueStore.KeyValueStore, any>; readonly key: string; readonly schema: S; readonly defaultValue: LazyArg<S["Type"]>; readonly mode?: Mode | undefined; }) => Writable<"async" extends Mode ? AsyncResult.AsyncResult<S["Type"]> : S["Type"], S["Type"]>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Atom.ts#L2116)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Atom.ts#L2135)
 
 Since v4.0.0

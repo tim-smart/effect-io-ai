@@ -13,7 +13,6 @@ Use when you want a runtime check that refines `A` to `B` for TypeScript.
 
 **Details**
 
-- Pure function; does not mutate input.
 - Returns a type predicate (`a is B`).
 - Use with `if`/`filter` to narrow types.
 
@@ -44,6 +43,6 @@ export interface Refinement<in A, out B extends A> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L170)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L168)
 
 Since v2.0.0

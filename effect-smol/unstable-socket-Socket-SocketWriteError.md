@@ -11,6 +11,6 @@ Typed error for failures that occur while writing to a socket.
 declare class SocketWriteError
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Socket.ts#L250)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Socket.ts#L256)
 
 Since v4.0.0

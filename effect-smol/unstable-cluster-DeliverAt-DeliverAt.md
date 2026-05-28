@@ -15,6 +15,6 @@ export interface DeliverAt {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DeliverAt.ts#L45)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DeliverAt.ts#L50)
 
 Since v4.0.0

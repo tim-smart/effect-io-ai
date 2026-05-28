@@ -3,7 +3,7 @@ Module: `SubscriptionRef`<br />
 
 ## SubscriptionRef.getUnsafe
 
-Unsafely retrieves the current value of the `SubscriptionRef`.
+Retrieves the current value of the `SubscriptionRef` unsafely.
 
 **Gotchas**
 

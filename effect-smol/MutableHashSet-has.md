@@ -3,7 +3,7 @@ Module: `MutableHashSet`<br />
 
 ## MutableHashSet.has
 
-Checks if the MutableHashSet contains the specified value.
+Checks whether the MutableHashSet contains the specified value.
 
 **When to use**
 

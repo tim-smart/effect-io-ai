@@ -12,6 +12,6 @@ error schemas.
 declare const exitSchema: <A extends Schema.Top, E extends Schema.Top>(self: Persistable<A, E>) => Schema.Exit<A, E, Schema.Defect>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Persistable.ts#L217)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Persistable.ts#L222)
 
 Since v4.0.0

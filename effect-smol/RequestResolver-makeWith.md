@@ -3,7 +3,7 @@ Module: `RequestResolver`<br />
 
 ## RequestResolver.makeWith
 
-Low-level constructor for creating a request resolver with fine-grained
+Creates a request resolver with fine-grained
 control over its behavior.
 
 **When to use**

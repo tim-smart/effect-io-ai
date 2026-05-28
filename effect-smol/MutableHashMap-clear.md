@@ -45,6 +45,6 @@ console.log(MutableHashMap.size(map)) // 1
 declare const clear: <K, V>(self: MutableHashMap<K, V>) => MutableHashMap<K, V>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableHashMap.ts#L796)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableHashMap.ts#L794)
 
 Since v2.0.0

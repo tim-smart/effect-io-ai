@@ -3,7 +3,7 @@ Module: `Layer`<br />
 
 ## Layer.syncContext
 
-Lazily constructs a layer that provides all services in a `Context`.
+Constructs a layer lazily that provides all services in a `Context`.
 
 **When to use**
 
@@ -43,6 +43,6 @@ const layer = Layer.syncContext(() =>
 declare const syncContext: <A>(evaluate: LazyArg<Context.Context<A>>) => Layer<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L965)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L973)
 
 Since v2.0.0

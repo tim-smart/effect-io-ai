@@ -3,7 +3,12 @@ Module: `Chat`<br />
 
 ## Chat.Persistence
 
-The context tag for chat persistence.
+Service tag for persistence-backed AI conversation storage.
+
+**When to use**
+
+Use to provide the storage operations needed by persisted conversation
+sessions.
 
 **Signature**
 
@@ -11,6 +16,6 @@ The context tag for chat persistence.
 declare class Persistence
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chat.ts#L717)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chat.ts#L732)
 
 Since v4.0.0

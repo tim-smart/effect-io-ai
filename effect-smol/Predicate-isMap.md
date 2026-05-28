@@ -11,7 +11,6 @@ Use when you need a runtime guard for `Map` values.
 
 **Details**
 
-- Pure; does not mutate input.
 - Uses `instanceof Map`.
 
 **Example** (Guard a Map)
@@ -37,6 +36,6 @@ if (Predicate.isMap(data)) {
 declare const isMap: (input: unknown) => input is Map<unknown, unknown>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L568)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L560)
 
 Since v2.0.0

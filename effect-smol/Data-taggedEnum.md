@@ -3,12 +3,11 @@ Module: `Data`<br />
 
 ## Data.taggedEnum
 
-Creates runtime constructors, type guards, and pattern matching for a
-`TaggedEnum` type.
+Creates constructors and matchers for a `TaggedEnum` type.
 
 **When to use**
 
-Use when you have a `TaggedEnum` type and need to construct or inspect values. For generic enums, pass a `TaggedEnum.WithGenerics` interface.
+Use when you have a `TaggedEnum` type and need constructors and matchers for its values. For generic enums, pass a `TaggedEnum.WithGenerics` interface.
 
 **Details**
 
@@ -79,6 +78,6 @@ const ok = Success({ value: 42 })
 declare const taggedEnum: { <Z extends TaggedEnum.WithGenerics<1>>(): Types.Simplify<{ readonly [Tag in Z["taggedEnum"]["_tag"]]: <A>(args: TaggedEnum.Args<TaggedEnum.Kind<Z, A>, Tag, Extract<TaggedEnum.Kind<Z, A>, { readonly _tag: Tag; }>>) => TaggedEnum.Value<TaggedEnum.Kind<Z, A>, Tag>; } & TaggedEnum.GenericMatchers<Z>>; <Z extends TaggedEnum.WithGenerics<2>>(): Types.Simplify<{ readonly [Tag in Z["taggedEnum"]["_tag"]]: <A, B>(args: TaggedEnum.Args<TaggedEnum.Kind<Z, A, B>, Tag, Extract<TaggedEnum.Kind<Z, A, B>, { readonly _tag: Tag; }>>) => TaggedEnum.Value<TaggedEnum.Kind<Z, A, B>, Tag>; } & TaggedEnum.GenericMatchers<Z>>; <Z extends TaggedEnum.WithGenerics<3>>(): Types.Simplify<{ readonly [Tag in Z["taggedEnum"]["_tag"]]: <A, B, C>(args: TaggedEnum.Args<TaggedEnum.Kind<Z, A, B, C>, Tag, Extract<TaggedEnum.Kind<Z, A, B, C>, { readonly _tag: Tag; }>>) => TaggedEnum.Value<TaggedEnum.Kind<Z, A, B, C>, Tag>; } & TaggedEnum.GenericMatchers<Z>>; <Z extends TaggedEnum.WithGenerics<4>>(): Types.Simplify<{ readonly [Tag in Z["taggedEnum"]["_tag"]]: <A, B, C, D>(args: TaggedEnum.Args<TaggedEnum.Kind<Z, A, B, C, D>, Tag, Extract<TaggedEnum.Kind<Z, A, B, C, D>, { readonly _tag: Tag; }>>) => TaggedEnum.Value<TaggedEnum.Kind<Z, A, B, C, D>, Tag>; } & TaggedEnum.GenericMatchers<Z>>; <A extends { readonly _tag: string; }>(): TaggedEnum.Constructor<A>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Data.ts#L658)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Data.ts#L655)
 
 Since v2.0.0

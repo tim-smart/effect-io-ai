@@ -3,7 +3,7 @@ Module: `Exit`<br />
 
 ## Exit.hasDies
 
-Tests whether a failed Exit contains defects (Die reasons).
+Checks whether a failed Exit contains defects (Die reasons).
 
 **When to use**
 
@@ -37,6 +37,6 @@ console.log(Exit.hasDies(Exit.succeed(42)))            // false
 declare const hasDies: <A, E>(self: Exit<A, E>) => self is Failure<A, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Exit.ts#L540)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Exit.ts#L542)
 
 Since v4.0.0

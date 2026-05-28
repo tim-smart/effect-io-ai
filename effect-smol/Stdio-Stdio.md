@@ -3,7 +3,7 @@ Module: `Stdio`<br />
 
 ## Stdio.Stdio
 
-Service interface for process standard I/O.
+Defines the service interface for process standard I/O.
 
 **When to use**
 
@@ -32,6 +32,6 @@ export interface Stdio {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stdio.ts#L81)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stdio.ts#L82)
 
 Since v4.0.0

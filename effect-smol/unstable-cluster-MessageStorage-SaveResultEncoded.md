@@ -3,7 +3,7 @@ Module: `MessageStorage`<br />
 
 ## MessageStorage.SaveResultEncoded
 
-Tagged enum constructor for encoded save results returned by encoded storage
+Constructors and matchers for encoded save results returned by storage
 drivers.
 
 **Signature**

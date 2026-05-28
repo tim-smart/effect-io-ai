@@ -3,7 +3,12 @@ Module: `Reactivity`<br />
 
 ## Reactivity.Reactivity
 
-A service for key-based reactive invalidation.
+Service for key-based reactive invalidation.
+
+**When to use**
+
+Use to provide the invalidation service that refreshes queries, streams, and
+atoms when application keys change.
 
 **Details**
 
@@ -17,6 +22,6 @@ queues or streams that rerun when keys are invalidated.
 declare class Reactivity
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Reactivity.ts#L67)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Reactivity.ts#L72)
 
 Since v4.0.0

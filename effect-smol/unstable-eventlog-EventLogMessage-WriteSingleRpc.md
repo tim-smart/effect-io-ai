@@ -3,8 +3,7 @@ Module: `EventLogMessage`<br />
 
 ## EventLogMessage.WriteSingleRpc
 
-Authenticated RPC for sending an encoded write payload that fits in one
-message.
+RPC used to send an encoded write payload that fits in one message.
 
 **Signature**
 

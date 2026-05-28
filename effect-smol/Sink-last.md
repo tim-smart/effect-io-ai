@@ -29,6 +29,6 @@ complete for a stream that does not end.
 declare const last: <In>() => Sink<Option.Option<In>, In>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Sink.ts#L1466)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Sink.ts#L1464)
 
 Since v2.0.0

@@ -21,6 +21,6 @@ assert.deepStrictEqual(String.toLowerCase("HELLO"), "hello")
 declare const toLowerCase: <T extends string>(self: T) => Lowercase<T>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L246)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L251)
 
 Since v2.0.0

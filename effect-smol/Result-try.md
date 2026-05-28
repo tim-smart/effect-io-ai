@@ -3,7 +3,7 @@ Module: `Result`<br />
 
 ## Result.try
 
-Wraps a synchronous computation that may throw into a `Result`.
+Wraps a synchronous computation that may throw into a `Result` safely.
 
 **Details**
 
@@ -40,6 +40,6 @@ console.log(Result.isFailure(err))
 declare const try: { <A, E>(options: { readonly try: LazyArg<A>; readonly catch: (error: unknown) => E; }): Result<A, E>; <A>(evaluate: LazyArg<A>): Result<A, unknown>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L561)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L581)
 
 Since v2.0.0

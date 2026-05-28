@@ -14,6 +14,6 @@ export interface fromJsonString<S extends Top> extends decodeTo<S, String> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L10167)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L10394)
 
 Since v4.0.0

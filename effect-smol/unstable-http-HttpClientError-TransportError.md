@@ -3,7 +3,7 @@ Module: `HttpClientError`<br />
 
 ## HttpClientError.TransportError
 
-Request error for transport-level failures that occur while sending an HTTP request.
+Error describing transport-level failures that occur while sending an HTTP request.
 
 **Signature**
 

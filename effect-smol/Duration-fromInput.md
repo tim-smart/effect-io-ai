@@ -3,7 +3,7 @@ Module: `Duration`<br />
 
 ## Duration.fromInput
 
-Safely decodes a `Input` value into a `Duration`, returning
+Decodes a `Input` value into a `Duration` safely, returning
 `Option.none()` if decoding fails.
 
 **Example** (Safely decoding duration inputs)

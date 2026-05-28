@@ -3,7 +3,13 @@ Module: `PubSub`<br />
 
 ## PubSub.remainingUnsafe
 
-Returns the number of messages currently available in the subscription.
+Synchronously returns the number of messages currently available in the
+subscription, or `Option.none()` when it is shut down.
+
+**When to use**
+
+Use when polling from synchronous code and you can handle the `Option.none()`
+shutdown case directly.
 
 **Example** (Checking remaining messages synchronously)
 
@@ -26,12 +32,16 @@ if (remainingOption._tag === "Some" && remainingOption.value > 10) {
 }
 ```
 
+**See**
+
+- `remaining` for the effectful variant that interrupts on shutdown
+
 **Signature**
 
 ```ts
 declare const remainingUnsafe: <A>(self: Subscription<A>) => Option.Option<number>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PubSub.ts#L1471)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PubSub.ts#L1508)
 
 Since v4.0.0

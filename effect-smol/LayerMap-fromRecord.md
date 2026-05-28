@@ -54,6 +54,6 @@ const program = Effect.gen(function*() {
 declare const fromRecord: <const Layers extends Record<string, Layer.Layer<any, any, any>>, const Preload extends boolean = false>(layers: Layers, options?: { readonly idleTimeToLive?: IdleTimeToLiveInput<keyof Layers> | undefined; readonly preload?: Preload | undefined; } | undefined) => Effect.Effect<LayerMap<keyof Layers, Layer.Success<Layers[keyof Layers]>, Layer.Error<Layers[keyof Layers]>>, Preload extends true ? Layer.Error<Layers[keyof Layers]> : never, Scope.Scope | (Layers[keyof Layers] extends Layer.Layer<infer _A, infer _E, infer _R> ? _R : never)>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/LayerMap.ts#L249)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/LayerMap.ts#L248)
 
 Since v3.14.0

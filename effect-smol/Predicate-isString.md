@@ -12,7 +12,6 @@ Use when you need to guard an `unknown` value as a string.
 
 **Details**
 
-- Pure; does not mutate input.
 - Uses `typeof input === "string"`.
 
 **Example** (Guard string)
@@ -39,6 +38,6 @@ if (Predicate.isString(data)) {
 declare const isString: (input: unknown) => input is string
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L603)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L594)
 
 Since v2.0.0

@@ -3,7 +3,7 @@ Module: `SchemaIssue`<br />
 
 ## SchemaIssue.defaultCheckHook
 
-The built-in `CheckHook` used by default formatters.
+Returns the built-in `CheckHook` used by default formatters.
 
 **When to use**
 
@@ -28,6 +28,6 @@ Use as the default filter renderer when you only need to customise the
 declare const defaultCheckHook: CheckHook
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaIssue.ts#L1040)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaIssue.ts#L1028)
 
 Since v4.0.0

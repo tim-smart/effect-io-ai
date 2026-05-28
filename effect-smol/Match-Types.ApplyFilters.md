@@ -38,6 +38,6 @@ type ApplyFilters<I, A> = A extends Only<infer X> ? X
     : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L2478)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L2473)
 
 Since v4.0.0

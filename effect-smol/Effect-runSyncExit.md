@@ -3,7 +3,7 @@ Module: `Effect`<br />
 
 ## Effect.runSyncExit
 
-Runs an effect synchronously and returns the result as an `Exit` type, which
+Runs an effect synchronously and captures the outcome safely as an `Exit` type, which
 represents the outcome (success or failure) of the effect.
 
 **When to use**
@@ -80,6 +80,6 @@ console.log(Effect.runSyncExit(Effect.promise(() => Promise.resolve(1))))
 declare const runSyncExit: <A, E>(effect: Effect<A, E>) => Exit.Exit<A, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L9249)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L9233)
 
 Since v2.0.0

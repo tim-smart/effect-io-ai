@@ -3,7 +3,7 @@ Module: `SubscriptionRef`<br />
 
 ## SubscriptionRef.modify
 
-Atomically modifies the `SubscriptionRef` with a function that computes a
+Modifies the `SubscriptionRef` atomically with a function that computes a
 return value and a new value, notifying subscribers of the change.
 
 **Example** (Modifying a value)
@@ -31,6 +31,6 @@ const program = Effect.gen(function*() {
 declare const modify: { <A, B>(modify: (a: A) => readonly [B, A]): (self: SubscriptionRef<A>) => Effect.Effect<B>; <A, B>(self: SubscriptionRef<A>, f: (a: A) => readonly [B, A]): Effect.Effect<B>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SubscriptionRef.ts#L489)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SubscriptionRef.ts#L506)
 
 Since v2.0.0

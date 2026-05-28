@@ -3,7 +3,7 @@ Module: `NodeChildProcessSpawner`<br />
 
 ## NodeChildProcessSpawner.layer
 
-Layer providing the `NodeChildProcessSpawner` implementation.
+Layer that provides the `NodeChildProcessSpawner` implementation.
 
 **Signature**
 

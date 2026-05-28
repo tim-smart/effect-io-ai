@@ -3,7 +3,7 @@ Module: `Cause`<br />
 
 ## Cause.isCause
 
-Tests if an arbitrary value is a `Cause`.
+Checks whether an arbitrary value is a `Cause`.
 
 **Example** (runtime type check)
 

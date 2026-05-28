@@ -27,6 +27,6 @@ Effect.runPromise(program)
 declare const toChannel: <A, E, R>(stream: Stream<A, E, R>) => Channel.Channel<Arr.NonEmptyReadonlyArray<A>, E, void, unknown, unknown, unknown, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L800)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L804)
 
 Since v2.0.0

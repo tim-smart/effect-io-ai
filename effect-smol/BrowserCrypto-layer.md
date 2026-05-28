@@ -3,7 +3,7 @@ Module: `BrowserCrypto`<br />
 
 ## BrowserCrypto.layer
 
-A layer that directly interfaces with the Web Crypto API.
+Layer that directly interfaces with the Web Crypto API.
 
 **When to use**
 
@@ -27,6 +27,6 @@ browser rejects the digest request.
 declare const layer: Layer.Layer<EffectCrypto.Crypto, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/BrowserCrypto.ts#L86)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/BrowserCrypto.ts#L91)
 
 Since v1.0.0

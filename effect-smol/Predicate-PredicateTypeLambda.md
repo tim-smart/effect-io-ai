@@ -36,6 +36,6 @@ export interface PredicateTypeLambda extends TypeLambda {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L132)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L131)
 
 Since v2.0.0

@@ -3,7 +3,7 @@ Module: `Iterable`<br />
 
 ## Iterable.reduce
 
-Reduce an iterable to a single value by applying a function to each element and accumulating the result.
+Reduces an iterable to a single value by applying a function to each element and accumulating the result.
 
 **Details**
 
@@ -56,6 +56,6 @@ console.log(indexed) // ["0: a", "1: b", "2: c"]
 declare const reduce: { <B, A>(b: B, f: (b: B, a: A, i: number) => B): (self: Iterable<A>) => B; <A, B>(self: Iterable<A>, b: B, f: (b: B, a: A, i: number) => B): B; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Iterable.ts#L2242)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Iterable.ts#L2250)
 
 Since v2.0.0

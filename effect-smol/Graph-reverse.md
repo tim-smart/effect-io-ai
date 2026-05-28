@@ -3,7 +3,7 @@ Module: `Graph`<br />
 
 ## Graph.reverse
 
-Reverses all edge directions in a mutable graph by swapping source and target nodes.
+Swaps source and target nodes for every edge in a mutable graph.
 
 **Example** (Reversing edge directions)
 

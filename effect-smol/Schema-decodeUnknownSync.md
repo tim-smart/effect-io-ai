@@ -5,11 +5,15 @@ Module: `Schema`<br />
 
 Decodes an `unknown` input against a schema synchronously, returning the
 decoded value or throwing an `Error` whose cause contains the schema issue.
-Use this when you want to validate data at a boundary and treat a schema
-mismatch as an exception. For typed input use `decodeSync`.
+
+**When to use**
+
+Use when validating unknown data at a boundary and treating schema mismatches
+as exceptions.
 
 **Details**
 
+For typed input use `decodeSync`.
 Only service-free schemas can be decoded synchronously. For non-throwing
 alternatives see `decodeUnknownOption`, `decodeUnknownExit`, or
 `decodeUnknownEffect`. Options may be provided either when creating the
@@ -38,6 +42,6 @@ Schema.decodeUnknownSync(NumberFromString)("not a number")
 declare const decodeUnknownSync: <S extends Decoder<unknown>>(schema: S, options?: AST.ParseOptions) => (input: unknown, options?: AST.ParseOptions) => S["Type"]
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L1402)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L1484)
 
 Since v4.0.0

@@ -3,8 +3,8 @@ Module: `SchemaTransformation`<br />
 
 ## SchemaTransformation.optionFromUndefinedOr
 
-Decodes `T | undefined` into `Option<T>` and encodes `Option<T>` back
-to `T | undefined`.
+Decodes `T | undefined` into `Option<T>` and encodes `Option.none()` back to
+`undefined`.
 
 **When to use**
 
@@ -40,6 +40,6 @@ const schema = Schema.UndefinedOr(Schema.String).pipe(
 declare const optionFromUndefinedOr: <T>() => Transformation<Option.Option<T>, T | undefined>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L1168)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L1166)
 
 Since v4.0.0

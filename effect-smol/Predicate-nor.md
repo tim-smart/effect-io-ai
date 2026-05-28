@@ -11,7 +11,6 @@ Use when you want the logical NOR of two conditions.
 
 **Details**
 
-- Pure; does not mutate input.
 - Returns the negation of `or`.
 
 **Example** (NOR)
@@ -35,6 +34,6 @@ console.log(neither(true))
 declare const nor: { <A>(that: Predicate<A>): (self: Predicate<A>) => Predicate<A>; <A>(self: Predicate<A>, that: Predicate<A>): Predicate<A>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L1850)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L1806)
 
 Since v2.0.0

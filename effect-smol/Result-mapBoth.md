@@ -14,7 +14,6 @@ result succeeds or fails.
 
 - Applies `onSuccess` if the result is a `Success`
 - Applies `onFailure` if the result is a `Failure`
-- Returns a new `Result`; does not mutate the input
 
 **Example** (Mapping both channels)
 
@@ -44,6 +43,6 @@ console.log(result)
 declare const mapBoth: { <E, E2, A, A2>(options: { readonly onFailure: (left: E) => E2; readonly onSuccess: (right: A) => A2; }): (self: Result<A, E>) => Result<A2, E2>; <E, A, E2, A2>(self: Result<A, E>, options: { readonly onFailure: (left: E) => E2; readonly onSuccess: (right: A) => A2; }): Result<A2, E2>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L801)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L820)
 
 Since v2.0.0

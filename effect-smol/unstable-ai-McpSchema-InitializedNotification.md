@@ -3,8 +3,7 @@ Module: `McpSchema`<br />
 
 ## McpSchema.InitializedNotification
 
-This notification is sent from the client to the server after initialization
-has finished.
+Sent from the client to the server after initialization has finished.
 
 **Signature**
 
@@ -12,6 +11,6 @@ has finished.
 declare class InitializedNotification
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L670)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L755)
 
 Since v4.0.0

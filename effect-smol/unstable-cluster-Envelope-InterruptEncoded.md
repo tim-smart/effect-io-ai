@@ -23,6 +23,6 @@ export interface InterruptEncoded {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Envelope.ts#L254)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Envelope.ts#L255)
 
 Since v4.0.0

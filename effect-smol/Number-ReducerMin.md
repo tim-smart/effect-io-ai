@@ -3,7 +3,7 @@ Module: `Number`<br />
 
 ## Number.ReducerMin
 
-A `Reducer` for reducing `number`s by keeping the minimum value.
+Reducer for reducing `number`s by keeping the minimum value.
 
 **When to use**
 
@@ -29,6 +29,6 @@ The reducer starts from `Infinity`, so reducing an empty collection returns
 declare const ReducerMin: Reducer.Reducer<number>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Number.ts#L905)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Number.ts#L907)
 
 Since v4.0.0

@@ -8,9 +8,9 @@ resolved.
 
 **When to use**
 
-Use when you use `getUnsafe` only when the context type cannot prove that the service is
-present. Use `get` when the service requirement is tracked in the context
-type, or `getOption` when absence is expected.
+Use when the context type cannot prove that the service is present. Use
+`get` when the service requirement is tracked in the context type, or
+`getOption` when absence is expected.
 
 **Details**
 

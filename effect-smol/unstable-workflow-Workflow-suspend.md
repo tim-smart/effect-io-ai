@@ -12,6 +12,6 @@ stop execution until it is resumed.
 declare const suspend: (instance: WorkflowInstance["Service"]) => Effect.Effect<never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Workflow.ts#L837)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Workflow.ts#L836)
 
 Since v4.0.0

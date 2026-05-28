@@ -11,15 +11,10 @@ Use to match string discriminator values by prefix instead of exact value.
 
 **Details**
 
-This function is useful for working with discriminated unions where the
-discriminant field follows a hierarchical or namespaced structure. It allows
-you to match values based on whether the specified field starts with a given
-prefix, making it easier to handle grouped cases.
-
-Instead of checking for exact matches, this function lets you match values
-that share a common prefix. For example, if your discriminant field contains
-hierarchical names like `"A"`, `"A.A"`, and `"B"`, you can match all values
-starting with `"A"` using a single rule.
+Instead of checking for exact matches, this helper matches values that share
+a common prefix. For example, if the discriminant field contains hierarchical
+names like `"A"`, `"A.A"`, and `"B"`, a single `"A"` rule can match both
+`"A"` and `"A.A"`.
 
 **Example** (Matching discriminator prefixes)
 
@@ -48,6 +43,6 @@ console.log(match({ type: "A.A" })) // 1
 declare const discriminatorStartsWith: <D extends string>(field: D) => <R, P extends string, Ret, Fn extends (_: Extract<R, Record<D, `${P}${string}`>>) => Ret>(pattern: P, f: Fn) => <I, F, A, Pr>(self: Matcher<I, F, R, A, Pr, Ret>) => Matcher<I, Types.AddWithout<F, Extract<R, Record<D, `${P}${string}`>>>, Types.ApplyFilters<I, Types.AddWithout<F, Extract<R, Record<D, `${P}${string}`>>>>, A | ReturnType<Fn>, Pr, Ret>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L801)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L791)
 
 Since v4.0.0

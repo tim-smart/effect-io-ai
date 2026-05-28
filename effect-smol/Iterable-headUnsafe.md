@@ -3,7 +3,7 @@ Module: `Iterable`<br />
 
 ## Iterable.headUnsafe
 
-Get the first element of a `Iterable`, or throw an error if the `Iterable` is empty.
+Gets the first element of a `Iterable`, or throw an error if the `Iterable` is empty.
 
 **Example** (Getting the first element unsafely)
 

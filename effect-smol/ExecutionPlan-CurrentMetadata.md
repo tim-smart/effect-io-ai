@@ -3,8 +3,13 @@ Module: `ExecutionPlan`<br />
 
 ## ExecutionPlan.CurrentMetadata
 
-`Context.Reference` containing metadata for the currently running
+Context reference containing metadata for the currently running
 execution-plan attempt.
+
+**When to use**
+
+Use to read the active plan step and attempt while code is running under an
+execution plan.
 
 **Signature**
 
@@ -12,6 +17,6 @@ execution-plan attempt.
 declare const CurrentMetadata: Context.Reference<Metadata>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ExecutionPlan.ts#L479)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ExecutionPlan.ts#L484)
 
 Since v4.0.0

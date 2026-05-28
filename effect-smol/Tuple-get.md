@@ -11,8 +11,7 @@ Use when you use this in a pipeline when you need to extract a single element.
 
 **Details**
 
-The index is constrained to valid tuple positions at the type level, and the
-input tuple is not mutated.
+The index is constrained to valid tuple positions at the type level.
 
 **Example** (Extracting an element by index)
 
@@ -34,6 +33,6 @@ console.log(last) // "hello"
 declare const get: { <const T extends ReadonlyArray<unknown>, I extends Indices<T> & keyof T>(index: I): (self: T) => T[I]; <const T extends ReadonlyArray<unknown>, I extends Indices<T> & keyof T>(self: T, index: I): T[I]; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tuple.ts#L135)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tuple.ts#L134)
 
 Since v4.0.0

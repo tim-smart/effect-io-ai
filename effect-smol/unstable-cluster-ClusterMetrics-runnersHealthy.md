@@ -3,7 +3,7 @@ Module: `ClusterMetrics`<br />
 
 ## ClusterMetrics.runnersHealthy
 
-Gauge tracking the number of cluster runners currently considered healthy.
+Represents a gauge tracking the number of cluster runners currently considered healthy.
 
 **When to use**
 

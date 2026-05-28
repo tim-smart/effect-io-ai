@@ -3,11 +3,12 @@ Module: `SchemaAST`<br />
 
 ## SchemaAST.symbol
 
-Singleton `Symbol` AST instance.
+Provides the singleton `Symbol` AST instance.
 
 **When to use**
 
-Use when building an AST that should match any JavaScript symbol value.
+Use to reuse the singleton AST node for schemas that match any JavaScript
+symbol value.
 
 **Gotchas**
 
@@ -24,6 +25,6 @@ because the implementation uses `Symbol.keyFor`.
 declare const symbol: Symbol
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L1512)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L1524)
 
 Since v4.0.0

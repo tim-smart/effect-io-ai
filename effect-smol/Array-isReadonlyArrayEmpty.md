@@ -3,7 +3,7 @@ Module: `Array`<br />
 
 ## Array.isReadonlyArrayEmpty
 
-Tests whether a `ReadonlyArray` is empty, narrowing the type to `readonly []`.
+Checks whether a `ReadonlyArray` is empty, narrowing the type to `readonly []`.
 
 **Example** (Checking for an empty readonly array)
 
@@ -25,6 +25,6 @@ console.log(Array.isReadonlyArrayEmpty([1, 2, 3])) // false
 declare const isReadonlyArrayEmpty: <A>(self: ReadonlyArray<A>) => self is readonly []
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L911)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L905)
 
 Since v4.0.0

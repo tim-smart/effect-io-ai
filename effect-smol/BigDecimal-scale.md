@@ -3,7 +3,7 @@ Module: `BigDecimal`<br />
 
 ## BigDecimal.scale
 
-Scales a `BigDecimal` to the specified scale.
+Changes a `BigDecimal` to the specified scale.
 
 **When to use**
 

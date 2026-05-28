@@ -3,7 +3,7 @@ Module: `TxHashSet`<br />
 
 ## TxHashSet.some
 
-Tests whether at least one value in the TxHashSet satisfies the predicate.
+Checks whether at least one value in the TxHashSet satisfies the predicate.
 
 **Example** (Testing whether some values match)
 

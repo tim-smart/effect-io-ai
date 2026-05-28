@@ -49,6 +49,6 @@ export interface TypeLambda {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HKT.ts#L178)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HKT.ts#L179)
 
 Since v2.0.0

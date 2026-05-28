@@ -12,6 +12,6 @@ fixed-length `Tuple` schema.
 type Elements = ReadonlyArray<Top>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L3366)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L3584)
 
 Since v3.10.0

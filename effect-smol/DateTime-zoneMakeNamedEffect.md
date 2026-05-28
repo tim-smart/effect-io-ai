@@ -3,7 +3,7 @@ Module: `DateTime`<br />
 
 ## DateTime.zoneMakeNamedEffect
 
-Create a named time zone from a IANA time zone identifier.
+Creates a named time zone effectfully from an IANA time zone identifier.
 
 **Details**
 
@@ -27,6 +27,6 @@ const program = Effect.gen(function*() {
 declare const zoneMakeNamedEffect: (zoneId: string) => Effect.Effect<TimeZone.Named, IllegalArgumentError>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L1100)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L1109)
 
 Since v3.6.0

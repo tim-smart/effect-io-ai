@@ -11,6 +11,6 @@ Generated OpenAPI `paths` object, keyed by route path.
 type OpenAPISpecPaths = Record<string, OpenAPISpecPathItem>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/OpenApi.ts#L847)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/OpenApi.ts#L853)
 
 Since v4.0.0

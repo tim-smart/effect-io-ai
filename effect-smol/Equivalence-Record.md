@@ -14,7 +14,6 @@ Use when comparing objects with dynamic or unknown property names
 
 **Details**
 
-- Does not mutate inputs
 - Compares all properties present in both objects
 - Requires both objects to have the same set of keys; different keys result in `false`
 - All property values must be equivalent according to the provided equivalence
@@ -60,6 +59,6 @@ console.log(numberRecordEq(scores1, scores3)) // false
 declare const Record: <A>(value: Equivalence<A>) => Equivalence<Record<PropertyKey, A>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Equivalence.ts#L832)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Equivalence.ts#L822)
 
 Since v4.0.0

@@ -3,7 +3,7 @@ Module: `Cause`<br />
 
 ## Cause.isTimeoutError
 
-Tests if an arbitrary value is a `TimeoutError`.
+Checks whether an arbitrary value is a `TimeoutError`.
 
 **Example** (runtime type check)
 
@@ -20,6 +20,6 @@ console.log(Cause.isTimeoutError("nope")) // false
 declare const isTimeoutError: (u: unknown) => u is TimeoutError
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L1498)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L1496)
 
 Since v4.0.0

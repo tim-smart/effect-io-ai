@@ -3,7 +3,7 @@ Module: `Url`<br />
 
 ## Url.fromString
 
-Parses a URL string into a `URL` object, returning an `Result` type for safe
+Parses a URL string safely into a `URL` object, returning a `Result` type for
 error handling.
 
 **Details**

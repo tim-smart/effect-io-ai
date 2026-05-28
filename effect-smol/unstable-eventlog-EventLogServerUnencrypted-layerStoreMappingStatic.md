@@ -12,6 +12,6 @@ all other store ids as not found.
 declare const layerStoreMappingStatic: (options: { readonly storeId: StoreId; }) => Layer.Layer<StoreMapping>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventLogServerUnencrypted.ts#L341)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventLogServerUnencrypted.ts#L356)
 
 Since v4.0.0

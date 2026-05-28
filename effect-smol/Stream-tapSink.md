@@ -3,8 +3,7 @@ Module: `Stream`<br />
 
 ## Stream.tapSink
 
-Sends all elements emitted by this stream to the specified sink in addition
-to emitting them.
+Runs a sink for all stream elements while still emitting them downstream.
 
 **Example** (Tapping values with a sink)
 
@@ -36,6 +35,6 @@ Effect.runPromise(program)
 declare const tapSink: { <A, E2, R2>(sink: Sink.Sink<unknown, A, unknown, E2, R2>): <E, R>(self: Stream<A, E, R>) => Stream<A, E2 | E, R2 | R>; <A, E, R, E2, R2>(self: Stream<A, E, R>, sink: Sink.Sink<unknown, A, unknown, E2, R2>): Stream<A, E | E2, R | R2>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L2372)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L2383)
 
 Since v2.0.0

@@ -3,7 +3,7 @@ Module: `TxHashMap`<br />
 
 ## TxHashMap.has
 
-Checks if the specified key exists in the TxHashMap.
+Checks whether the specified key exists in the TxHashMap.
 
 **Example** (Checking for keys)
 

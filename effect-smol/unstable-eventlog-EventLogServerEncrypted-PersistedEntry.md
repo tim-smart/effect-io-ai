@@ -3,7 +3,7 @@ Module: `EventLogServerEncrypted`<br />
 
 ## EventLogServerEncrypted.PersistedEntry
 
-Encrypted entry representation persisted by the encrypted event-log server.
+Schema for encrypted entries persisted by the encrypted event-log server.
 
 **Signature**
 

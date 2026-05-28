@@ -13,14 +13,9 @@ run a handler for matching input.
 
 **Details**
 
-This function enables pattern matching by checking whether a given value
-satisfies a condition. It supports both direct value comparisons and
-predicate functions. If the condition is met, the associated function is
-executed.
-
-This function is useful when defining matchers that need to check for
-specific values or apply logical conditions to determine a match. It works
-well with structured objects and primitive types.
+Supports both direct value comparisons and predicate functions. If the
+pattern matches, the associated function is executed and the matched input is
+removed from the remaining cases tracked by the matcher.
 
 **Example** (Matching with Values and Predicates)
 
@@ -63,6 +58,6 @@ console.log(match({ age: 4 }))
 declare const when: <R, const P extends Types.PatternPrimitive<R> | Types.PatternBase<R>, Ret, Fn extends (_: Types.WhenMatch<R, P>) => Ret>(pattern: P, f: Fn) => <I, F, A, Pr>(self: Matcher<I, F, R, A, Pr, Ret>) => Matcher<I, Types.AddWithout<F, Types.PForExclude<P>>, Types.ApplyFilters<I, Types.AddWithout<F, Types.PForExclude<P>>>, A | ReturnType<Fn>, Pr, Ret>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L569)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L564)
 
 Since v4.0.0

@@ -3,7 +3,7 @@ Module: `HashSet`<br />
 
 ## HashSet.some
 
-Tests whether at least one value in the HashSet satisfies the predicate.
+Checks whether at least one value in the HashSet satisfies the predicate.
 
 **Example** (Testing whether some values match)
 

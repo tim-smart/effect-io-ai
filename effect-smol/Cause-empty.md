@@ -3,7 +3,7 @@ Module: `Cause`<br />
 
 ## Cause.empty
 
-A `Cause` with an empty `reasons` array.
+Represents a `Cause` with an empty `reasons` array.
 
 **When to use**
 

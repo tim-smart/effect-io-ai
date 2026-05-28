@@ -3,15 +3,17 @@ Module: `Match`<br />
 
 ## Match.tag
 
-The `Match.tag` function allows pattern matching based on the `_tag` field in
-a [Discriminated Union](https://www.typescriptlang.org/docs/handbook/typescript-in-5-minutes-func.html#discriminated-unions).
-You can specify multiple tags to match within a single pattern.
+Matches discriminated union members by their `_tag` field.
+
+**When to use**
+
+Use to handle one or more `_tag` cases with the same matcher branch.
 
 **Details**
 
-The `Match.tag` function relies on the convention within the Effect ecosystem
-of naming the tag field as `"_tag"`. Ensure that your discriminated unions
-follow this naming convention for proper functionality.
+This helper follows the Effect convention that discriminated unions use
+`"_tag"` as their discriminator field. Use `discriminator` for a
+different discriminator field.
 
 **Example** (Matching a Discriminated Union by Tag)
 
@@ -47,6 +49,6 @@ console.log(match({ _tag: "error", error: new Error("Oops!") }))
 declare const tag: <R, P extends Types.Tags<"_tag", R> & string, Ret, Fn extends (_: Extract<R, Record<"_tag", P>>) => Ret>(...pattern: [first: P, ...values: Array<P>, f: Fn]) => <I, F, A, Pr>(self: Matcher<I, F, R, A, Pr, Ret>) => Matcher<I, Types.AddWithout<F, Extract<R, Record<"_tag", P>>>, Types.ApplyFilters<I, Types.AddWithout<F, Extract<R, Record<"_tag", P>>>>, ReturnType<Fn> | A, Pr, Ret>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L981)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L973)
 
 Since v4.0.0

@@ -3,7 +3,7 @@ Module: `DateTime`<br />
 
 ## DateTime.addDuration
 
-Add the given `Duration` to a `DateTime`.
+Adds the given `Duration` to a `DateTime`.
 
 **When to use**
 
@@ -43,6 +43,6 @@ DateTime.makeUnsafe(0).pipe(
 declare const addDuration: { (duration: Duration.Input): <A extends DateTime>(self: A) => A; <A extends DateTime>(self: A, duration: Duration.Input): A; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L2284)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L2303)
 
 Since v3.6.0

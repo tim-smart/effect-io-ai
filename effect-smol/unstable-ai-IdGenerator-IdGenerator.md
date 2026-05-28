@@ -3,7 +3,12 @@ Module: `IdGenerator`<br />
 
 ## IdGenerator.IdGenerator
 
-The `IdGenerator` service tag for dependency injection.
+Service tag for AI identifier generation services.
+
+**When to use**
+
+Use to access or provide the service that creates identifiers for AI tool
+calls and related generated values.
 
 **Details**
 
@@ -30,6 +35,6 @@ const useIdGenerator = Effect.gen(function*() {
 declare class IdGenerator
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/IdGenerator.ts#L82)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/IdGenerator.ts#L87)
 
 Since v4.0.0

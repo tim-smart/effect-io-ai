@@ -3,7 +3,7 @@ Module: `HttpRunner`<br />
 
 ## HttpRunner.layerHttp
 
-Complete HTTP runner layer.
+Layer that serves runner routes at `/` and configures HTTP runner clients.
 
 **Details**
 
@@ -16,6 +16,6 @@ over HTTP.
 declare const layerHttp: Layer.Layer<Sharding.Sharding | Runners.Runners, never, RpcSerialization.RpcSerialization | HttpClient.HttpClient | HttpServer.HttpServer | MessageStorage | RunnerStorage | ShardingConfig.ShardingConfig | RunnerHealth>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpRunner.ts#L281)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpRunner.ts#L279)
 
 Since v4.0.0

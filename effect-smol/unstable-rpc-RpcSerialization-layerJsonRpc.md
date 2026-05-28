@@ -3,7 +3,7 @@ Module: `RpcSerialization`<br />
 
 ## RpcSerialization.layerJsonRpc
 
-A rpc serialization layer that uses JSON-RPC for serialization.
+RPC serialization layer that uses JSON-RPC for serialization.
 
 **Signature**
 
@@ -11,6 +11,6 @@ A rpc serialization layer that uses JSON-RPC for serialization.
 declare const layerJsonRpc: (options?: { readonly contentType?: string | undefined; }) => Layer.Layer<RpcSerialization>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RpcSerialization.ts#L539)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RpcSerialization.ts#L546)
 
 Since v4.0.0

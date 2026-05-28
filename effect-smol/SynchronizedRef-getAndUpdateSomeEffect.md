@@ -3,7 +3,7 @@ Module: `SynchronizedRef`<br />
 
 ## SynchronizedRef.getAndUpdateSomeEffect
 
-Atomically runs an effectful partial update while holding the ref's semaphore
+Runs an effectful partial update atomically while holding the ref's semaphore
 and returns the previous value. `Option.some` updates the ref; `Option.none`
 leaves it unchanged.
 

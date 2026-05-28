@@ -3,12 +3,12 @@ Module: `String`<br />
 
 ## String.String
 
-Reference to the global `String` constructor.
+Exposes the global string constructor.
 
 **When to use**
 
-Use when code in the Effect `String` namespace needs native JavaScript string
-coercion or constructor behavior.
+Use to access native JavaScript string coercion or constructor behavior from
+the Effect module namespace.
 
 **Gotchas**
 

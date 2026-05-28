@@ -3,8 +3,7 @@ Module: `HttpRunner`<br />
 
 ## HttpRunner.layerWebsocketOptions
 
-WebSocket layer for the `Runners` services that adds a route to the provided
-`HttpRouter`.
+Layer that adds WebSocket runner routes to the provided `HttpRouter`.
 
 **Signature**
 
@@ -12,6 +11,6 @@ WebSocket layer for the `Runners` services that adds a route to the provided
 declare const layerWebsocketOptions: (options: { readonly path: HttpRouter.PathInput; }) => Layer.Layer<Sharding.Sharding | Runners.Runners, never, ShardingConfig.ShardingConfig | Runners.RpcClientProtocol | MessageStorage | RunnerStorage | RunnerHealth | RpcSerialization.RpcSerialization | HttpRouter.HttpRouter>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpRunner.ts#L253)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpRunner.ts#L251)
 
 Since v4.0.0

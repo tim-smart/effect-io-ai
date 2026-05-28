@@ -3,8 +3,9 @@ Module: `SchemaRepresentation`<br />
 
 ## SchemaRepresentation.$Annotations
 
-Schema codec for `Schema.Annotations.Annotations`. Filters out internal
-annotation keys and non-primitive values during encoding.
+Schema for serializing public `Schema.Annotations.Annotations` values. It
+filters out internal annotation keys and non-primitive values during
+encoding.
 
 **When to use**
 

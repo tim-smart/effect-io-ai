@@ -11,6 +11,6 @@ Provides a Redis-backed `RateLimiterStore` using `makeStoreRedis`.
 declare const layerStoreRedis: (options?: { readonly prefix?: string | undefined; }) => Layer.Layer<RateLimiterStore, never, Redis.Redis>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RateLimiter.ts#L732)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RateLimiter.ts#L742)
 
 Since v4.0.0

@@ -3,7 +3,7 @@ Module: `Function`<br />
 
 ## Function.SK
 
-The SK combinator, also known as the "S-K combinator" or "S-combinator", is
+Returns the second argument and discards the first. The SK combinator is
 a fundamental combinator in the lambda calculus and the SKI combinator
 calculus.
 

@@ -17,6 +17,6 @@ failures, and invalidates configured reactivity keys.
 declare const makeReplayFromRemote: (options: { readonly handlers: ReadonlyMap<string, Handlers.Item<any>>; readonly storeId: StoreId; readonly identity: Identity["Service"]; readonly reactivity: Reactivity["Service"]; readonly reactivityKeys: Record<string, ReadonlyArray<string>>; readonly logAnnotations: { readonly service: string; readonly effect: string; }; }) => (args_0: { readonly entry: Entry; readonly conflicts: ReadonlyArray<Entry>; }) => Effect.Effect<void, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventLog.ts#L719)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventLog.ts#L720)
 
 Since v4.0.0

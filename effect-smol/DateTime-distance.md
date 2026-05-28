@@ -3,7 +3,7 @@ Module: `DateTime`<br />
 
 ## DateTime.distance
 
-Calulate the difference between two `DateTime` values, returning a
+Computes the difference between two `DateTime` values, returning a
 `Duration` representing the amount of time between them.
 
 **Details**
@@ -32,6 +32,6 @@ Effect.gen(function*() {
 declare const distance: { (other: DateTime): (self: DateTime) => Duration.Duration; (self: DateTime, other: DateTime): Duration.Duration; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L1262)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L1271)
 
 Since v3.6.0

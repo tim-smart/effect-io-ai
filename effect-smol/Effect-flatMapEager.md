@@ -3,14 +3,12 @@ Module: `Effect`<br />
 
 ## Effect.flatMapEager
 
-An optimized version of `flatMap` that checks if an effect is already resolved
-and applies the flatMap function eagerly when possible.
+Applies `flatMap` eagerly when an effect is already resolved.
 
 **When to use**
 
-Use when `flatMapEager` provides better performance for effects that are already resolved
-by applying the transformation immediately instead of deferring it through
-the effect pipeline.
+Use when an already-resolved successful effect should bind immediately to the
+next effect while pending effects still use regular flat mapping.
 
 **Details**
 
@@ -43,6 +41,6 @@ const flatMappedPending = Effect.flatMapEager(
 declare const flatMapEager: { <A, B, E2, R2>(f: (a: A) => Effect<B, E2, R2>): <E, R>(self: Effect<A, E, R>) => Effect<B, E | E2, R | R2>; <A, E, R, B, E2, R2>(self: Effect<A, E, R>, f: (a: A) => Effect<B, E2, R2>): Effect<B, E | E2, R | R2>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L15100)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L15077)
 
 Since v4.0.0

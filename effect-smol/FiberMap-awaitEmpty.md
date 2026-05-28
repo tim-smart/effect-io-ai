@@ -3,7 +3,7 @@ Module: `FiberMap`<br />
 
 ## FiberMap.awaitEmpty
 
-Wait for the FiberMap to be empty.
+Waits for the FiberMap to be empty.
 This will wait for all currently running fibers to complete.
 
 **Example** (Waiting for an empty map)

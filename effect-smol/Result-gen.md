@@ -3,7 +3,7 @@ Module: `Result`<br />
 
 ## Result.gen
 
-Generator-based syntax for composing `Result` values sequentially.
+Provides generator-based syntax for composing `Result` values sequentially.
 
 **When to use**
 
@@ -43,6 +43,6 @@ console.log(result)
 declare const gen: Gen.Gen<ResultTypeLambda>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L1585)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L1602)
 
 Since v2.0.0

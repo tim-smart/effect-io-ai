@@ -3,8 +3,13 @@ Module: `EventLogServerUnencrypted`<br />
 
 ## EventLogServerUnencrypted.EventLogServerUnencrypted
 
-Server-side service for writing plaintext event-log entries directly to
+Service that writes plaintext event-log entries directly to
 unencrypted storage through registered event handlers.
+
+**When to use**
+
+Use to access or provide the server service that handles plaintext
+event-log writes.
 
 **Signature**
 
@@ -12,6 +17,6 @@ unencrypted storage through registered event handlers.
 declare class EventLogServerUnencrypted
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventLogServerUnencrypted.ts#L80)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventLogServerUnencrypted.ts#L85)
 
 Since v4.0.0

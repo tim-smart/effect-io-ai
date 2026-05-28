@@ -3,7 +3,7 @@ Module: `TxPubSub`<br />
 
 ## TxPubSub.isTxPubSub
 
-Checks if the given value is a TxPubSub.
+Checks whether the given value is a TxPubSub.
 
 **Example** (Checking for a TxPubSub)
 

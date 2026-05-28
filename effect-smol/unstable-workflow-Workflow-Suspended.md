@@ -3,8 +3,8 @@ Module: `Workflow`<br />
 
 ## Workflow.Suspended
 
-Workflow result representing a suspended execution, optionally carrying the
-cause that triggered suspension.
+Represents a suspended workflow execution, optionally carrying the cause that
+triggered suspension.
 
 **Signature**
 
@@ -12,6 +12,6 @@ cause that triggered suspension.
 declare class Suspended
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Workflow.ts#L588)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Workflow.ts#L587)
 
 Since v4.0.0

@@ -3,7 +3,7 @@ Module: `Channel`<br />
 
 ## Channel.fromEffect
 
-Use an effect to write a single value to the channel.
+Uses an effect to write a single value to the channel.
 
 **Example** (Creating channels from effects)
 

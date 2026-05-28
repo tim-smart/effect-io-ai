@@ -3,9 +3,11 @@ Module: `McpSchema`<br />
 
 ## McpSchema.ListRootsResult
 
-The client's response to a roots/list request from the server. This result
-contains an array of Root objects, each representing a root directory or file
-that the server can operate on.
+Represents a client response containing the roots available to the server.
+
+**When to use**
+
+Use to return the directories or files that an MCP server may operate on.
 
 **Signature**
 
@@ -13,6 +15,6 @@ that the server can operate on.
 declare class ListRootsResult
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L1897)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L2014)
 
 Since v4.0.0

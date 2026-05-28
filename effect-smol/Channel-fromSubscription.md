@@ -3,7 +3,7 @@ Module: `Channel`<br />
 
 ## Channel.fromSubscription
 
-Create a channel from a PubSub subscription
+Creates a channel from a PubSub subscription.
 
 **Example** (Creating channels from subscriptions)
 

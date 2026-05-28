@@ -3,7 +3,7 @@ Module: `References`<br />
 
 ## References.DisablePropagation
 
-Reference used to disable trace propagation in the current context.
+Context reference for disabling trace propagation in the current context.
 
 **When to use**
 

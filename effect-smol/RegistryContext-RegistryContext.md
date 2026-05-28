@@ -3,7 +3,7 @@ Module: `RegistryContext`<br />
 
 ## RegistryContext.RegistryContext
 
-React context that supplies the `AtomRegistry` used by Atom hooks and
+Provides a React context that supplies the `AtomRegistry` used by Atom hooks and
 hydration helpers, defaulting to a standalone registry when no provider is
 present.
 

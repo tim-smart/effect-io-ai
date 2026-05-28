@@ -3,7 +3,7 @@ Module: `Optic`<br />
 
 ## Optic.none
 
-A `Prism` that focuses on `Option.None`, exposing `undefined`.
+Prism that focuses on `Option.None`, exposing `undefined`.
 
 **When to use**
 
@@ -40,6 +40,6 @@ console.log(Result.isFailure(_none.getResult(Option.some(1))))
 declare const none: <A>() => Prism<Option.Option<A>, undefined>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Optic.ts#L1680)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Optic.ts#L1673)
 
 Since v4.0.0

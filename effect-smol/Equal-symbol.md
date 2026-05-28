@@ -3,7 +3,7 @@ Module: `Equal`<br />
 
 ## Equal.symbol
 
-The unique string identifier for the `Equal` interface.
+Defines the unique string identifier for the `Equal` interface.
 
 **When to use**
 

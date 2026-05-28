@@ -3,7 +3,7 @@ Module: `Formatter`<br />
 
 ## Formatter.formatJson
 
-Safely stringifies a value to JSON, silently dropping circular references.
+Stringifies a value to JSON safely, silently dropping circular references.
 
 **When to use**
 
@@ -13,7 +13,6 @@ Use when you need valid JSON output (unlike `format`).
 
 **Details**
 
-- Does not mutate input.
 - Uses `JSON.stringify` internally with a replacer that tracks the
   current object ancestry.
 - Circular references are replaced with `undefined` (omitted from
@@ -68,6 +67,6 @@ console.log(Formatter.formatJson({ name: "Alice", age: 30 }, { space: 2 }))
 declare const formatJson: (input: unknown, options?: { readonly space?: number | string | undefined; }) => string
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Formatter.ts#L347)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Formatter.ts#L345)
 
 Since v4.0.0

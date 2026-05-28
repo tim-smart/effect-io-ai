@@ -3,7 +3,7 @@ Module: `SubscriptionRef`<br />
 
 ## SubscriptionRef.getAndUpdate
 
-Atomically retrieves the current value and updates it with the result of
+Retrieves the current value and updates it atomically with the result of
 applying a function, notifying subscribers of the change.
 
 **Example** (Getting and updating a value)

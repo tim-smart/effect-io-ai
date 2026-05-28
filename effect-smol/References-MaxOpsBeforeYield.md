@@ -3,7 +3,7 @@ Module: `References`<br />
 
 ## References.MaxOpsBeforeYield
 
-Reference controlling the maximum operation budget before a fiber yields to the scheduler.
+Context reference for the maximum operation budget before a fiber yields to the scheduler.
 
 **When to use**
 

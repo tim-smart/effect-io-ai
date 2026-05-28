@@ -3,7 +3,12 @@ Module: `EventLogServerUnencrypted`<br />
 
 ## EventLogServerUnencrypted.Storage
 
-Storage service used by the unencrypted event-log server.
+Defines the backing store service used by the unencrypted event-log server.
+
+**When to use**
+
+Use to provide durable event-log persistence for an unencrypted event-log
+server layer.
 
 **Details**
 
@@ -17,6 +22,6 @@ exposes a transaction boundary.
 declare class Storage
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventLogServerUnencrypted.ts#L366)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventLogServerUnencrypted.ts#L386)
 
 Since v4.0.0

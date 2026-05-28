@@ -3,8 +3,7 @@ Module: `Equal`<br />
 
 ## Equal.byReferenceUnsafe
 
-Permanently marks an object to use reference equality, without creating a
-proxy.
+Marks an object permanently to use reference equality, without creating a proxy.
 
 **When to use**
 
@@ -51,6 +50,6 @@ console.log(obj1 === Equal.byReferenceUnsafe(obj1)) // true (same object)
 declare const byReferenceUnsafe: <T extends object>(obj: T) => T
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Equal.ts#L621)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Equal.ts#L620)
 
 Since v4.0.0

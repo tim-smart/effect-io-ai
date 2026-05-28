@@ -14,7 +14,7 @@ as string concatenation.
 **Details**
 
 Returns a new `Combiner` where `combine(self, that)` calls the original
-combiner as `combine(that, self)`. The input combiner is not mutated.
+combiner as `combine(that, self)`.
 
 **Example** (reversing string concatenation)
 

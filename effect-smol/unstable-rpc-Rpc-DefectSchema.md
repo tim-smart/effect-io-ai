@@ -3,7 +3,7 @@ Module: `Rpc`<br />
 
 ## Rpc.DefectSchema
 
-A schema for RPC defects.
+Schema for RPC defects.
 
 **Details**
 

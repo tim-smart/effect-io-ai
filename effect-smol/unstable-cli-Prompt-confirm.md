@@ -25,6 +25,6 @@ input submits `true`, no-style input submits `false`, and other input beeps.
 declare const confirm: (options: ConfirmOptions) => Prompt<boolean>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L725)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L733)
 
 Since v4.0.0

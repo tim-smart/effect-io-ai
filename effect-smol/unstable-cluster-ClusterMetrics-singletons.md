@@ -3,7 +3,7 @@ Module: `ClusterMetrics`<br />
 
 ## ClusterMetrics.singletons
 
-Gauge tracking the number of singleton processes currently running on the
+Creates a gauge tracking the number of singleton processes currently running on the
 current runner.
 
 **Signature**

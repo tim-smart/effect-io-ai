@@ -3,7 +3,7 @@ Module: `RcMap`<br />
 
 ## RcMap.make
 
-An `RcMap` can contain multiple reference counted resources that can be indexed
+Creates an `RcMap` that can contain multiple reference counted resources that can be indexed
 by a key. The resources are lazily acquired on the first call to `get` and
 released when the last reference is released.
 

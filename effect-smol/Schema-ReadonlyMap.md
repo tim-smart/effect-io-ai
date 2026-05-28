@@ -3,8 +3,8 @@ Module: `Schema`<br />
 
 ## Schema.ReadonlyMap
 
-Creates a schema that validates a `ReadonlyMap` where keys and values must
-conform to the provided schemas.
+Schema for readonly maps whose keys and values conform to the provided
+schemas.
 
 **Signature**
 
@@ -12,6 +12,6 @@ conform to the provided schemas.
 declare const ReadonlyMap: <Key extends Top, Value extends Top>(key: Key, value: Value) => $ReadonlyMap<Key, Value>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L9100)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L9331)
 
 Since v3.10.0

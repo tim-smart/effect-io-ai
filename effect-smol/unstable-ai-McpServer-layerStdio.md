@@ -3,7 +3,7 @@ Module: `McpServer`<br />
 
 ## McpServer.layerStdio
 
-Run the McpServer, using stdio for input and output.
+Runs the McpServer, using stdio for input and output.
 
 **Example** (Running an MCP server over stdio)
 

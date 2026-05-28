@@ -24,6 +24,6 @@ const program = Effect.gen(function*() {
 declare const removeIf: { <A>(predicate: Predicate<A>): (self: TxPriorityQueue<A>) => Effect.Effect<void>; <A>(self: TxPriorityQueue<A>, predicate: Predicate<A>): Effect.Effect<void>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxPriorityQueue.ts#L503)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxPriorityQueue.ts#L511)
 
 Since v2.0.0

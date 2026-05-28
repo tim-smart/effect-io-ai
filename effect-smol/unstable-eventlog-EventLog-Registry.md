@@ -3,8 +3,8 @@ Module: `EventLog`<br />
 
 ## EventLog.Registry
 
-Scoped registry used by `EventLog` to collect event handlers, compaction
-handlers, remote replicas, and reactivity invalidation keys.
+Service that collects event handlers, compaction handlers, remote replicas,
+and reactivity invalidation keys.
 
 **Signature**
 

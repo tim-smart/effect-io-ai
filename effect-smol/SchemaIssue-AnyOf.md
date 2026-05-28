@@ -3,13 +3,12 @@ Module: `SchemaIssue`<br />
 
 ## SchemaIssue.AnyOf
 
-Issue produced when a value does not match *any* member of a union schema.
+Represents a schema issue produced when a value does not match *any* member of a union schema.
 
 **When to use**
 
-Use when inspect which union members were attempted and why each failed.
-- `issues` may be empty when the union has no members or when the input does
-  not pass the initial type guard.
+Use when you need to inspect which union members were attempted and why each
+failed.
 
 **Details**
 
@@ -42,6 +41,6 @@ declare class AnyOf { constructor(
   ) }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaIssue.ts#L727)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaIssue.ts#L717)
 
 Since v4.0.0

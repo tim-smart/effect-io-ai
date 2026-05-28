@@ -3,7 +3,7 @@ Module: `Queue`<br />
 
 ## Queue.clear
 
-Drains and returns all currently buffered messages without waiting for more.
+Takes and returns all currently buffered messages without waiting for more.
 
 **Details**
 
@@ -41,6 +41,6 @@ const program = Effect.gen(function*() {
 declare const clear: <A, E>(self: Dequeue<A, E>) => Effect<Array<A>, Pull.ExcludeDone<E>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Queue.ts#L1193)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Queue.ts#L1209)
 
 Since v4.0.0

@@ -3,7 +3,7 @@ Module: `References`<br />
 
 ## References.CurrentLogLevel
 
-Reference for the current log severity used by `Effect.log` when no explicit
+Context reference for the current log severity used by `Effect.log` when no explicit
 level is provided.
 
 **When to use**

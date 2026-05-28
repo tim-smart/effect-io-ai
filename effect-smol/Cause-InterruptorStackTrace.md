@@ -3,7 +3,7 @@ Module: `Cause`<br />
 
 ## Cause.InterruptorStackTrace
 
-`Context` key for the stack frame captured at the point of
+Context annotation used to store the stack frame captured at the point of
 interruption.
 
 **When to use**
@@ -27,6 +27,6 @@ Similar to `StackTrace` but specific to `Interrupt` reasons.
 declare class InterruptorStackTrace
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L2007)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L2005)
 
 Since v4.0.0

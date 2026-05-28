@@ -3,7 +3,7 @@ Module: `Message`<br />
 
 ## Message.OutgoingRequest
 
-Outgoing entity request with decoded payload and RPC metadata.
+Represents an outgoing entity request with decoded payload and RPC metadata.
 
 **Details**
 

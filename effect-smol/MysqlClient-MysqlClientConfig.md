@@ -32,6 +32,6 @@ export interface MysqlClientConfig {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/sql/mysql2/src/MysqlClient.ts#L200)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/sql/mysql2/src/MysqlClient.ts#L204)
 
 Since v4.0.0

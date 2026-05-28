@@ -3,7 +3,7 @@ Module: `Cause`<br />
 
 ## Cause.isIllegalArgumentError
 
-Tests if an arbitrary value is an `IllegalArgumentError`.
+Checks whether an arbitrary value is an `IllegalArgumentError`.
 
 **Example** (runtime type check)
 
@@ -20,6 +20,6 @@ console.log(Cause.isIllegalArgumentError("nope")) // false
 declare const isIllegalArgumentError: (u: unknown) => u is IllegalArgumentError
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L1566)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L1564)
 
 Since v4.0.0

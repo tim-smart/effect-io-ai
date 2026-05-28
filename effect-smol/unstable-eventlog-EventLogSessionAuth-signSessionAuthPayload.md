@@ -12,6 +12,6 @@ Ed25519 private key.
 declare const signSessionAuthPayload: (options: SessionAuthPayload & { readonly signingPrivateKey: Uint8Array; }) => Effect.Effect<Uint8Array<ArrayBuffer>, EventLogSessionAuthError, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventLogSessionAuth.ts#L446)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventLogSessionAuth.ts#L472)
 
 Since v4.0.0

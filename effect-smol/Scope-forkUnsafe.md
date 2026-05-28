@@ -3,7 +3,7 @@ Module: `Scope`<br />
 
 ## Scope.forkUnsafe
 
-Synchronously creates a closeable child scope registered with a parent scope.
+Creates a closeable child scope synchronously and registers it with a parent scope.
 
 **Details**
 
@@ -36,6 +36,6 @@ const program = Effect.gen(function*() {
 declare const forkUnsafe: (scope: Scope, finalizerStrategy?: "sequential" | "parallel") => Closeable
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Scope.ts#L487)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Scope.ts#L500)
 
 Since v4.0.0

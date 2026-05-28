@@ -12,8 +12,7 @@ when the combining logic should keep the existing value.
 
 **Details**
 
-`combine(self, that)` returns `self` and ignores `that`. The second argument
-is discarded, not mutated.
+`combine(self, that)` returns `self` and ignores `that`.
 
 **Example** (keeping the first value)
 
@@ -36,6 +35,6 @@ console.log(First.combine(1, 2))
 declare const first: <A>() => Combiner<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Combiner.ts#L269)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Combiner.ts#L268)
 
 Since v4.0.0

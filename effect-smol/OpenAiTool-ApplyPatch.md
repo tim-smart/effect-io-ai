@@ -3,7 +3,7 @@ Module: `OpenAiTool`<br />
 
 ## OpenAiTool.ApplyPatch
 
-OpenAI Apply Patch tool that allows the model to apply diffs by creating,
+Defines the OpenAI Apply Patch tool that allows the model to apply diffs by creating,
 deleting, or updating files. This local tool runs in your environment and
 requires a handler to execute file operations.
 

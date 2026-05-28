@@ -8,7 +8,7 @@ field.
 
 **When to use**
 
-Use to narrow down to a single reason variant from a nested error type.
+Use to extract only the matching reason variant from a nested error type.
 
 **Details**
 

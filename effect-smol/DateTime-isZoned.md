@@ -3,7 +3,7 @@ Module: `DateTime`<br />
 
 ## DateTime.isZoned
 
-Checks if a `DateTime` is a zoned `DateTime` (has time zone information).
+Checks whether a `DateTime` is a zoned `DateTime` (has time zone information).
 
 **When to use**
 

@@ -7,8 +7,8 @@ The type of the unifySymbol.
 
 **When to use**
 
-Use to reference the `unifySymbol` property key in type-level protocol
-definitions.
+Use to reference the unification behavior property key in type-level
+protocol definitions.
 
 **Details**
 

@@ -3,7 +3,7 @@ Module: `DateTime`<br />
 
 ## DateTime.zoneMakeNamed
 
-Create a named time zone from a IANA time zone identifier.
+Creates a named time zone safely from an IANA time zone identifier.
 
 **Details**
 
@@ -27,6 +27,6 @@ console.log(invalidZone._tag === "None") // true
 declare const zoneMakeNamed: (zoneId: string) => Option.Option<TimeZone.Named>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L1076)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L1085)
 
 Since v3.6.0

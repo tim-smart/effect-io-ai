@@ -3,7 +3,12 @@ Module: `Hydration`<br />
 
 ## Hydration.hydrate
 
-Loads dehydrated atom state into a registry.
+Applies dehydrated atom state to a registry.
+
+**When to use**
+
+Use to preload serialized atom values into a target registry before those
+atoms are read.
 
 **Details**
 
@@ -17,6 +22,6 @@ when the promise resolves.
 declare const hydrate: (registry: AtomRegistry.AtomRegistry, dehydratedState: Iterable<DehydratedAtom>) => void
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Hydration.ts#L146)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Hydration.ts#L151)
 
 Since v4.0.0

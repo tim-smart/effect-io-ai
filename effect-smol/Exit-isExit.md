@@ -3,7 +3,7 @@ Module: `Exit`<br />
 
 ## Exit.isExit
 
-Tests whether an unknown value is an Exit.
+Checks whether an unknown value is an Exit.
 
 **When to use**
 
@@ -36,6 +36,6 @@ console.log(Exit.isExit("not an exit"))    // false
 declare const isExit: (u: unknown) => u is Exit<unknown, unknown>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Exit.ts#L235)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Exit.ts#L237)
 
 Since v2.0.0

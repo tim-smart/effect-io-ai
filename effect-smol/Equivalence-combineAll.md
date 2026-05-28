@@ -14,7 +14,6 @@ Use when you need to combine three or more equivalences
 
 **Details**
 
-- Does not mutate inputs
 - Returns `true` only if all equivalences in the collection return `true`
 - Short-circuits: stops at the first equivalence that returns `false`
 - Empty collections return an equivalence that always returns `true`
@@ -75,6 +74,6 @@ console.log(alwaysEq("anything", "else")) // true
 declare const combineAll: <A>(collection: Iterable<Equivalence<A>>) => Equivalence<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Equivalence.ts#L467)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Equivalence.ts#L462)
 
 Since v2.0.0

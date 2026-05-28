@@ -3,7 +3,7 @@ Module: `WorkflowEngine`<br />
 
 ## WorkflowEngine.WorkflowEngine
 
-Service interface for workflow runtimes, responsible for registering and
+Service that represents workflow runtimes, responsible for registering and
 executing workflows and coordinating activities, durable deferreds,
 interrupts, resumes, and clocks.
 

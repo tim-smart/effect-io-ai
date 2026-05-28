@@ -3,7 +3,7 @@ Module: `DurableDeferred`<br />
 
 ## DurableDeferred.await
 
-Awaits the durable deferred, suspending the current workflow when no
+Waits for the durable deferred, suspending the current workflow when no
 persisted completion is available.
 
 **Signature**

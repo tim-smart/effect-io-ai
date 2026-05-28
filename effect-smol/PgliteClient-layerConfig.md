@@ -11,6 +11,6 @@ Creates a layer from a `Config`-wrapped PGlite client configuration, providing b
 declare const layerConfig: (config: Config.Wrap<PgliteClientConfig.ConfigBase>) => Layer.Layer<PgliteClient | Client.SqlClient, Config.ConfigError | SqlError>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/sql/pglite/src/PgliteClient.ts#L373)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/sql/pglite/src/PgliteClient.ts#L377)
 
 Since v4.0.0

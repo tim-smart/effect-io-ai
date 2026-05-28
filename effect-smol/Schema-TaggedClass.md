@@ -3,9 +3,12 @@ Module: `Schema`<br />
 
 ## Schema.TaggedClass
 
-Like `Class` but automatically adds a `_tag` literal field set to the
-given `tag` value. This makes instances compatible with tagged union
-discrimination patterns.
+Defines a schema-backed class with an automatically populated `_tag` field.
+
+**When to use**
+
+Use to define class instances that are validated by a schema and participate
+in tagged union matching.
 
 **Details**
 
@@ -32,6 +35,6 @@ console.log(c.radius) // 5
 declare const TaggedClass: <Self = never, Brand = {}>(identifier?: string) => { <Tag extends string, const Fields extends Struct.Fields>(tag: Tag, fields: Fields, annotations?: Annotations.Declaration<Self, readonly [TaggedStruct<Tag, Fields>]>): [Self] extends [never] ? MissingSelfGeneric<"Schema.TaggedClass"> : Class<Self, TaggedStruct<Tag, Fields>, Brand>; <Tag extends string, S extends Struct<Struct.Fields>>(tag: Tag, schema: S, annotations?: Annotations.Declaration<Self, readonly [Struct<Simplify<{ readonly _tag: tag<Tag>; } & S["fields"]>>]>): [Self] extends [never] ? MissingSelfGeneric<"Schema.TaggedClass"> : Class<Self, Struct<Simplify<{ readonly _tag: tag<Tag>; } & S["fields"]>>, Brand>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L11989)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L12223)
 
 Since v3.10.0

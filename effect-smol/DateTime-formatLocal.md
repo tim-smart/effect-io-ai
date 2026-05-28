@@ -3,7 +3,8 @@ Module: `DateTime`<br />
 
 ## DateTime.formatLocal
 
-Format a `DateTime` as a string using the `DateTimeFormat` API.
+Formats a `DateTime` with `Intl.DateTimeFormat` using the system local time
+zone and locale.
 
 **Details**
 
@@ -34,6 +35,6 @@ console.log(local) // Output depends on system locale/timezone
 declare const formatLocal: { (options?: (Intl.DateTimeFormatOptions & { readonly locale?: string | undefined; }) | undefined): (self: DateTime) => string; (self: DateTime, options?: (Intl.DateTimeFormatOptions & { readonly locale?: string | undefined; }) | undefined): string; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L2549)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L2569)
 
 Since v3.6.0

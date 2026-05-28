@@ -46,6 +46,6 @@ console.log(processLargeNumber("123")) // "Not a numeric type"
 declare const bigint: Predicate.Refinement<unknown, bigint>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L1598)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L1586)
 
 Since v4.0.0

@@ -3,7 +3,7 @@ Module: `RunnerHealth`<br />
 
 ## RunnerHealth.layerK8s
 
-A layer which checks Kubernetes pod readiness to determine whether a runner is
+Layer that checks Kubernetes pod readiness to determine whether a runner is
 healthy.
 
 **Details**

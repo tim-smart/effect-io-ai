@@ -3,7 +3,7 @@ Module: `Function`<br />
 
 ## Function.identity
 
-The identity function, i.e. A function that returns its input argument.
+Returns its input argument unchanged.
 
 **When to use**
 

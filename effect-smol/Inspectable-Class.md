@@ -3,7 +3,7 @@ Module: `Inspectable`<br />
 
 ## Inspectable.Class
 
-Abstract base class that implements the Inspectable interface.
+Provides an abstract base class that implements the Inspectable interface.
 
 **When to use**
 

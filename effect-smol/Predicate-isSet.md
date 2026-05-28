@@ -11,7 +11,6 @@ Use when you need a runtime guard for `Set` values.
 
 **Details**
 
-- Pure; does not mutate input.
 - Uses `instanceof Set`.
 
 **Example** (Guard a Set)
@@ -37,6 +36,6 @@ if (Predicate.isSet(data)) {
 declare const isSet: (input: unknown) => input is Set<unknown>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L535)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L528)
 
 Since v2.0.0

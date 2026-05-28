@@ -3,7 +3,7 @@ Module: `Duration`<br />
 
 ## Duration.toNanosUnsafe
 
-Get the duration in nanoseconds as a bigint.
+Gets the duration in nanoseconds as a bigint, throwing for infinite durations.
 
 **Gotchas**
 

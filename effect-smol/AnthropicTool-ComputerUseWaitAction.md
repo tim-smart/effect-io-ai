@@ -11,6 +11,6 @@ Computer-use action payload for pausing for a specified duration.
 type ComputerUseWaitAction = typeof ComputerUseWaitAction.Type
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L1228)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L1230)
 
 Since v4.0.0

@@ -3,7 +3,7 @@ Module: `Effect`<br />
 
 ## Effect.txRetry
 
-Signals that the current transaction needs to be retried.
+Retries the current transaction by signaling that it must be retried.
 
 **Details**
 
@@ -44,6 +44,6 @@ Effect.runPromise(program).catch(console.error)
 declare const txRetry: Effect<never, never, Transaction>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L14504)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L14488)
 
 Since v4.0.0

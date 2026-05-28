@@ -3,7 +3,7 @@ Module: `Message`<br />
 
 ## Message.IncomingRequestLocal
 
-Incoming request for local delivery with a decoded payload.
+Represents an incoming request for local delivery with a decoded payload.
 
 **Details**
 

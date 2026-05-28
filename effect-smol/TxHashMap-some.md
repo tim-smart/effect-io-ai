@@ -3,7 +3,7 @@ Module: `TxHashMap`<br />
 
 ## TxHashMap.some
 
-Checks if at least one entry in the TxHashMap satisfies the given predicate.
+Checks whether at least one entry in the TxHashMap satisfies the given predicate.
 
 **Example** (Checking whether some entries match)
 

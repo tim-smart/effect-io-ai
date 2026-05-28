@@ -38,6 +38,6 @@ const formatter = SchemaIssue.makeFormatterDefault()
 declare const makeFormatterDefault: () => Formatter<string>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaIssue.ts#L1182)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaIssue.ts#L1170)
 
 Since v4.0.0

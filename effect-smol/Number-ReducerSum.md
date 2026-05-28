@@ -3,7 +3,7 @@ Module: `Number`<br />
 
 ## Number.ReducerSum
 
-A `Reducer` for combining `number`s using addition.
+Reducer for combining `number`s using addition.
 
 **When to use**
 
@@ -24,6 +24,6 @@ The reducer starts from `0`, so `combineAll([])` returns `0`.
 declare const ReducerSum: Reducer.Reducer<number>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Number.ts#L827)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Number.ts#L829)
 
 Since v4.0.0

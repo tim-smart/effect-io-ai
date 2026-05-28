@@ -3,7 +3,7 @@ Module: `DateTime`<br />
 
 ## DateTime.isTimeZoneNamed
 
-Checks if a value is a named `TimeZone` (IANA time zone).
+Checks whether a value is a named `TimeZone` (IANA time zone).
 
 **When to use**
 

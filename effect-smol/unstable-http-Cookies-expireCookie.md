@@ -3,7 +3,7 @@ Module: `Cookies`<br />
 
 ## Cookies.expireCookie
 
-Adds an expired cookie with an empty value, `Max-Age=0`, and an epoch `Expires` value.
+Adds an expired cookie safely with an empty value, `Max-Age=0`, and an epoch `Expires` value.
 
 **Details**
 

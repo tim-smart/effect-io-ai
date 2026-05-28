@@ -3,8 +3,8 @@ Module: `RpcClientError`<br />
 
 ## RpcClientError.RpcClientError
 
-The public RPC client error type, wrapping worker, socket, HTTP client, and
-client protocol defect failures.
+Error wrapper for RPC client failures, including worker, socket, HTTP client,
+and client protocol defect failures.
 
 **Signature**
 

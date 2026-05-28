@@ -3,8 +3,8 @@ Module: `ConfigProvider`<br />
 
 ## ConfigProvider.layer
 
-Installs a `ConfigProvider` as the active provider for all downstream
-effects, replacing any previously installed provider.
+Provides a layer that installs a `ConfigProvider` as the active provider for
+all downstream effects, replacing any previously installed provider.
 
 **When to use**
 

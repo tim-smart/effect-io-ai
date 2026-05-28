@@ -11,8 +11,7 @@ Use to select a subset of elements from a tuple by position.
 
 **Details**
 
-The result order matches the order of the provided indices. The input tuple is
-not mutated; a fresh tuple is returned.
+The result order matches the order of the provided indices.
 
 **Example** (Selecting elements by index)
 
@@ -34,6 +33,6 @@ console.log(result) // ["a", "c", "d"]
 declare const pick: { <const T extends ReadonlyArray<unknown>, const I extends ReadonlyArray<Indices<T>>>(indices: I): (self: T) => PickTuple<T, I[number]>; <const T extends ReadonlyArray<unknown>, const I extends ReadonlyArray<Indices<T>>>(self: T, indices: I): PickTuple<T, I[number]>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tuple.ts#L182)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tuple.ts#L180)
 
 Since v4.0.0

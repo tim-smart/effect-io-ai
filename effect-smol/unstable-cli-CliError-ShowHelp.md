@@ -3,7 +3,7 @@ Module: `CliError`<br />
 
 ## CliError.ShowHelp
 
-Control-flow value that asks the CLI runner to render help for a command path.
+Error data requesting CLI help rendering for a command path.
 
 **Details**
 

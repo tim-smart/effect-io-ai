@@ -3,7 +3,7 @@ Module: `Duration`<br />
 
 ## Duration.equals
 
-Checks if two Durations are equal.
+Checks whether two Durations are equal.
 
 **Example** (Checking duration equality)
 

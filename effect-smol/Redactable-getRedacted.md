@@ -3,8 +3,8 @@ Module: `Redactable`<br />
 
 ## Redactable.getRedacted
 
-Calls `[symbolRedactable]` on a value that is already known to be
-`Redactable` and returns the result.
+Returns the result of calling `[symbolRedactable]` on a value that is
+already known to be `Redactable`.
 
 **When to use**
 
@@ -14,7 +14,7 @@ example with `isRedactable`, and want to avoid a second check.
 **Details**
 
 This function reads the current fiber's `Context` from the global fiber
-reference and passes it to the redaction method. It does not mutate the input.
+reference and passes it to the redaction method.
 
 **Gotchas**
 

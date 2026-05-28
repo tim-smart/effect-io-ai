@@ -3,7 +3,7 @@ Module: `McpSchema`<br />
 
 ## McpSchema.PromptReference
 
-Identifies a prompt.
+Schema for a prompt reference used in autocomplete requests.
 
 **Signature**
 
@@ -11,6 +11,6 @@ Identifies a prompt.
 declare class PromptReference
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L1773)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L1888)
 
 Since v4.0.0

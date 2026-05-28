@@ -15,6 +15,10 @@ export interface IntegerOptions {
    */
   readonly message: string
   /**
+   * The default value of the integer prompt.
+   */
+  readonly default?: number
+  /**
    * The minimum value that can be entered by the user (defaults to `-Infinity`).
    */
   readonly min?: number

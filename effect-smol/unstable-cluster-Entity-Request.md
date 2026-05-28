@@ -3,7 +3,7 @@ Module: `Entity`<br />
 
 ## Entity.Request
 
-Entity request envelope delivered to entity handlers.
+Represents an entity request envelope delivered to entity handlers.
 
 **Details**
 
@@ -16,6 +16,6 @@ that was sent, allowing handlers to resume chunk sequencing after a restart.
 declare class Request<Rpc>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Entity.ts#L570)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Entity.ts#L580)
 
 Since v4.0.0

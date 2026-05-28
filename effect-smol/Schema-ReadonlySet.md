@@ -3,8 +3,7 @@ Module: `Schema`<br />
 
 ## Schema.ReadonlySet
 
-Creates a schema that validates a `ReadonlySet` whose values conform to the
-provided element schema.
+Schema for readonly sets whose values conform to the provided element schema.
 
 **Signature**
 
@@ -12,6 +11,6 @@ provided element schema.
 declare const ReadonlySet: <Value extends Top>(value: Value) => $ReadonlySet<Value>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L9302)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L9531)
 
 Since v3.10.0

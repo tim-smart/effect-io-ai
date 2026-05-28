@@ -18,6 +18,6 @@ export interface ChunkEncoded {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Reply.ts#L163)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Reply.ts#L168)
 
 Since v4.0.0

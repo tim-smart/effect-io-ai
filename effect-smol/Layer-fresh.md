@@ -84,6 +84,6 @@ Effect.runPromise(program)
 declare const fresh: <A, E, R>(self: Layer<A, E, R>) => Layer<A, E, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L2133)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L2141)
 
 Since v2.0.0

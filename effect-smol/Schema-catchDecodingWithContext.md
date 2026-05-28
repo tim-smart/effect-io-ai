@@ -3,7 +3,7 @@ Module: `Schema`<br />
 
 ## Schema.catchDecodingWithContext
 
-Like `catchDecoding`, but the handler may require Effect services (`R`).
+Recovers from a decoding error with a handler that may require Effect services.
 
 **When to use**
 
@@ -26,6 +26,6 @@ handler's services are added to the schema's decoding services.
 declare const catchDecodingWithContext: <S extends Top, R = never>(f: (issue: Issue.Issue) => Effect.Effect<Option_.Option<S["Type"]>, Issue.Issue, R>) => (self: S) => middlewareDecoding<S, S["DecodingServices"] | R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L4628)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L4846)
 
 Since v4.0.0

@@ -45,6 +45,6 @@ declare class Suspend { constructor(
   ) }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L2716)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L2728)
 
 Since v3.10.0

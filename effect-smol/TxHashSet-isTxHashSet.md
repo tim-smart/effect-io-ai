@@ -3,7 +3,7 @@ Module: `TxHashSet`<br />
 
 ## TxHashSet.isTxHashSet
 
-Checks if a value is a TxHashSet.
+Checks whether a value is a TxHashSet.
 
 **Example** (Checking for a TxHashSet)
 

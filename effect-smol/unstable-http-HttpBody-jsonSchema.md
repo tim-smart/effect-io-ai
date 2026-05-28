@@ -15,6 +15,6 @@ Schema encoding issues and JSON serialization failures are returned as `HttpBody
 declare const jsonSchema: <S extends Schema.Top>(schema: S, options?: ParseOptions | undefined) => (body: S["Type"], contentType?: string) => Effect.Effect<Uint8Array, HttpBodyError, S["EncodingServices"]>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpBody.ts#L360)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpBody.ts#L364)
 
 Since v4.0.0

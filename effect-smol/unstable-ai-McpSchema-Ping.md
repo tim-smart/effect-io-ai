@@ -3,9 +3,15 @@ Module: `McpSchema`<br />
 
 ## McpSchema.Ping
 
-A ping, issued by either the server or the client, to check that the other
-party is still alive. The receiver must promptly respond, or else may be
-disconnected.
+Represents an MCP ping request used to check whether the peer is still alive.
+
+**When to use**
+
+Use to implement client or server liveness checks.
+
+**Details**
+
+The receiver should respond promptly; otherwise the sender may disconnect.
 
 **Signature**
 
@@ -13,6 +19,6 @@ disconnected.
 declare class Ping
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L596)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L683)
 
 Since v4.0.0

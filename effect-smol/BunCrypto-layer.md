@@ -3,7 +3,7 @@ Module: `BunCrypto`<br />
 
 ## BunCrypto.layer
 
-A layer that provides the Bun Crypto service implementation.
+Layer that provides the Bun Crypto service implementation.
 
 **Signature**
 

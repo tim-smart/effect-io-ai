@@ -14,8 +14,7 @@ schema it points to.
 **Details**
 
 This only resolves the final segment of the ref path, such as `"User"` from
-`"#/$defs/User"`. It returns `undefined` if the definition is not found and
-does not mutate anything.
+`"#/$defs/User"`. It returns `undefined` if the definition is not found.
 
 **Gotchas**
 
@@ -48,6 +47,6 @@ console.log(missing) // undefined
 declare const resolve$ref: ($ref: string, definitions: Definitions) => JsonSchema | undefined
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/JsonSchema.ts#L973)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/JsonSchema.ts#L966)
 
 Since v4.0.0

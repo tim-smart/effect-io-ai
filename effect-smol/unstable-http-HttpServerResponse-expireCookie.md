@@ -3,7 +3,7 @@ Module: `HttpServerResponse`<br />
 
 ## HttpServerResponse.expireCookie
 
-Expires a cookie on an `HttpServerResponse`.
+Sets an expired cookie on an `HttpServerResponse`.
 
 **Details**
 

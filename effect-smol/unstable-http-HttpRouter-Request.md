@@ -16,6 +16,6 @@ export interface Request<Kind extends string, T> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpRouter.ts#L770)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpRouter.ts#L775)
 
 Since v4.0.0

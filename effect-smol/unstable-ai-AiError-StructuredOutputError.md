@@ -31,6 +31,6 @@ console.log(error.message)
 declare class StructuredOutputError
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AiError.ts#L844)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AiError.ts#L849)
 
 Since v4.0.0

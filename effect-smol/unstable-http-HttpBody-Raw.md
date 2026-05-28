@@ -15,6 +15,6 @@ declare class Raw { constructor(
   ) }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpBody.ts#L214)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpBody.ts#L218)
 
 Since v4.0.0

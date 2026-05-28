@@ -16,7 +16,6 @@ Use when you have a custom reducing operation not covered by a pre-built reducer
 - If `combineAll` is omitted, a default left-to-right fold starting from
   `initialValue` is used.
 - If `combineAll` is provided, it completely replaces the default fold.
-- Pure – the returned reducer does not mutate its arguments.
 
 **Example** (Multiplication with short-circuit)
 
@@ -54,6 +53,6 @@ console.log(Product.combineAll([2, 0, 4]))
 declare const make: <A>(combine: (self: A, that: A) => A, initialValue: A, combineAll?: (collection: Iterable<A>) => A) => Reducer<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Reducer.ts#L181)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Reducer.ts#L180)
 
 Since v4.0.0

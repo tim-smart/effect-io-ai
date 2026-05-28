@@ -21,6 +21,6 @@ assert.deepStrictEqual(pipe(str, String.toLocaleUpperCase("lt-LT")), "I")
 declare const toLocaleUpperCase: (locale?: string | Array<string>) => (self: string) => string
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L943)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L948)
 
 Since v2.0.0

@@ -20,6 +20,6 @@ The payload contains the `enabled` flag. `citations` is optional on
 type WebFetchCitationsConfig = typeof WebFetchCitationsConfig.Type
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L2235)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L2237)
 
 Since v4.0.0

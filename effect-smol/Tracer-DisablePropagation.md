@@ -3,9 +3,17 @@ Module: `Tracer`<br />
 
 ## Tracer.DisablePropagation
 
-Reference used to disable trace propagation. When set on the fiber or span
-annotations, new spans are created as non-propagating no-op spans and
-disabled spans are skipped when deriving a parent span.
+Context reference for disabling trace propagation.
+
+**When to use**
+
+Use to prevent spans in a scope from propagating tracing context.
+
+**Details**
+
+When enabled on fiber or span annotations, new spans are created as
+non-propagating no-op spans and disabled spans are skipped when deriving a
+parent span.
 
 **Example** (Disabling span propagation)
 
@@ -26,6 +34,6 @@ const program = Effect.gen(function*() {
 declare const DisablePropagation: Context.Reference<boolean>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tracer.ts#L508)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tracer.ts#L521)
 
 Since v3.12.0

@@ -29,6 +29,6 @@ const toBigInt = SchemaGetter.BigInt<string>()
 declare const BigInt: <E extends string | number | bigint | boolean>() => Getter<bigint, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L828)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L826)
 
 Since v4.0.0

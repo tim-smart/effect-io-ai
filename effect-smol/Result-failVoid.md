@@ -3,16 +3,33 @@ Module: `Result`<br />
 
 ## Result.failVoid
 
-A pre-built failed `Result` whose failure value is `undefined`.
+Provides a pre-built failed `Result` whose failure value is `undefined`.
+
+**When to use**
+
+Use when a failure should act only as a control signal and no failure value
+is needed.
 
 **Details**
 
 This is equivalent to `Result.fail(undefined)` with type
-`Result<never, void>`, but avoids allocating a new `Failure` wrapper.
+`Result<never, void>`, but reuses a shared `Failure` wrapper instead of
+allocating one each time.
+
+**Example** (Using a failure without a payload)
+
+```ts
+import { Result } from "effect"
+
+const result = Result.failVoid
+
+console.log(Result.isFailure(result))
+// Output: true
+```
 
 **See**
 
-- `fail`
+- `fail` to create a Failure with a specific value
 
 **Signature**
 
@@ -20,6 +37,6 @@ This is equivalent to `Result.fail(undefined)` with type
 declare const failVoid: Result<never, void>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L413)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L433)
 
 Since v4.0.0

@@ -72,6 +72,6 @@ throw errors.
 declare const try: <A, E>(options: { try: LazyArg<A>; catch: (error: unknown) => E; }) => Effect<A, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L1733)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L1737)
 
 Since v2.0.0

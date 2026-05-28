@@ -3,7 +3,7 @@ Module: `Function`<br />
 
 ## Function.constVoid
 
-A thunk that returns always `void`.
+Returns no meaningful value when called.
 
 **When to use**
 

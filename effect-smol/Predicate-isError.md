@@ -11,7 +11,6 @@ Use when you need to guard errors caught from unknown sources.
 
 **Details**
 
-- Pure; does not mutate input.
 - Uses `instanceof Error`.
 
 **Example** (Guard error)
@@ -34,6 +33,6 @@ console.log(Predicate.isError(data))
 declare const isError: (input: unknown) => input is Error
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L1279)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L1251)
 
 Since v2.0.0

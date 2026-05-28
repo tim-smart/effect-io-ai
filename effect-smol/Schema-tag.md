@@ -19,6 +19,6 @@ Used as the type of the `_tag` field in `TaggedStruct` and related helpers.
 export interface tag<Tag extends AST.LiteralValue> extends withConstructorDefault<Literal<Tag>> {}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L5267)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L5489)
 
 Since v3.10.0

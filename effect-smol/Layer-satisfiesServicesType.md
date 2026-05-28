@@ -36,6 +36,6 @@ const validLayer = satisfiesNumber(FortyTwoLayer)
 declare const satisfiesServicesType: <RIn>() => <ROut, E, RIn2 extends RIn>(layer: Layer<ROut, E, RIn2>) => Layer<ROut, E, RIn2>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L2451)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L2459)
 
 Since v4.0.0

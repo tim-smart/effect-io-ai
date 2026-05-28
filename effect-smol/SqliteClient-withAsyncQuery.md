@@ -11,6 +11,6 @@ Runs an effect with `AsyncQuery` enabled, causing React Native SQLite queries in
 declare const withAsyncQuery: <R, E, A>(effect: Effect.Effect<A, E, R>) => Effect.Effect<A, E, Exclude<R, never>>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/sql/sqlite-react-native/src/SqliteClient.ts#L129)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/sql/sqlite-react-native/src/SqliteClient.ts#L134)
 
 Since v4.0.0

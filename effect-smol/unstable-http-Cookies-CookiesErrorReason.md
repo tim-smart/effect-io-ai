@@ -3,8 +3,8 @@ Module: `Cookies`<br />
 
 ## Cookies.CookiesErrorReason
 
-Structured reason describing why cookie construction failed, such as invalid
-name, value, domain, path, or infinite max-age.
+Error reason describing why cookie construction failed, such as invalid name,
+value, domain, path, or infinite max-age.
 
 **Signature**
 

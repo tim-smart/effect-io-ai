@@ -3,7 +3,7 @@ Module: `McpServer`<br />
 
 ## McpServer.toolkit
 
-Register an AiToolkit with the McpServer.
+Registers an `AiToolkit` with the `McpServer`.
 
 **Signature**
 

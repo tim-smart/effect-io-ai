@@ -3,7 +3,7 @@ Module: `SchemaGetter`<br />
 
 ## SchemaGetter.uncapitalize
 
-Lowercases the first character of a string.
+Uncapitalizes the first character of a string.
 
 **Details**
 
@@ -23,6 +23,6 @@ const uncap = SchemaGetter.uncapitalize<string>()
 declare const uncapitalize: <E extends string>() => Getter<string, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L924)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L922)
 
 Since v4.0.0

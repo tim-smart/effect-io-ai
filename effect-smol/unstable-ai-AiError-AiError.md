@@ -3,7 +3,7 @@ Module: `AiError`<br />
 
 ## AiError.AiError
 
-Top-level AI error wrapper using the `reason` pattern.
+Schema for the top-level AI error wrapper using the `reason` pattern.
 
 **When to use**
 
@@ -39,6 +39,6 @@ const handled = aiOperation.pipe(
 declare class AiError
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AiError.ts#L1524)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AiError.ts#L1529)
 
 Since v4.0.0

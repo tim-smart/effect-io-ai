@@ -3,7 +3,7 @@ Module: `Data`<br />
 
 ## Data.Class
 
-Base class for immutable data types.
+Provides a base class for immutable data types.
 
 **When to use**
 

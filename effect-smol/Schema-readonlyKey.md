@@ -3,8 +3,12 @@ Module: `Schema`<br />
 
 ## Schema.readonlyKey
 
-Reverses `mutableKey`, returning the inner schema as readonly again.
-Only applicable to schemas already wrapped with `mutableKey`.
+Reverses `mutableKey` and returns the inner readonly schema.
+
+**When to use**
+
+Use to remove mutable-key wrapping from a schema field that was previously
+wrapped with `mutableKey`.
 
 **Signature**
 
@@ -12,6 +16,6 @@ Only applicable to schemas already wrapped with `mutableKey`.
 declare const readonlyKey: readonlyKeyLambda
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L1855)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L2049)
 
 Since v4.0.0

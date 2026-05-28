@@ -3,7 +3,7 @@ Module: `SchemaTransformation`<br />
 
 ## SchemaTransformation.snakeToCamel
 
-A string-to-string transformation that converts snake_case to camelCase
+Transforms strings by converting snake_case to camelCase
 on decode and camelCase to snake_case on encode.
 
 **When to use**
@@ -37,6 +37,6 @@ const SnakeToCamel = Schema.String.pipe(
 declare const snakeToCamel: () => Transformation<string, string>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L534)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L532)
 
 Since v4.0.0

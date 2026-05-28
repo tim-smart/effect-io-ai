@@ -3,7 +3,7 @@ Module: `Cookies`<br />
 
 ## Cookies.setCookie
 
-Add a cookie to a Cookies object
+Adds a cookie to a Cookies object
 
 **Signature**
 

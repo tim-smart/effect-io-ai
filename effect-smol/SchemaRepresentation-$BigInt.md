@@ -3,7 +3,7 @@ Module: `SchemaRepresentation`<br />
 
 ## SchemaRepresentation.$BigInt
 
-Schema codec for the `BigInt` representation node.
+Schema for the `BigInt` representation node.
 
 **When to use**
 

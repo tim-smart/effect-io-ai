@@ -3,7 +3,7 @@ Module: `DateTime`<br />
 
 ## DateTime.toDateUtc
 
-Get the UTC `Date` of a `DateTime`.
+Gets the UTC `Date` of a `DateTime`.
 
 **Details**
 
@@ -28,6 +28,6 @@ console.log(utcDate.toISOString()) // "2024-01-01T12:00:00.000Z"
 declare const toDateUtc: (self: DateTime) => Date
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L1555)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L1564)
 
 Since v3.6.0

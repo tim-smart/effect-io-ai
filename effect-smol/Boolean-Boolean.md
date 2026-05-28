@@ -3,12 +3,12 @@ Module: `Boolean`<br />
 
 ## Boolean.Boolean
 
-Reference to the global `Boolean` constructor for JavaScript truthiness
+Exposes the global boolean constructor for JavaScript truthiness
 coercion.
 
 **When to use**
 
-Use when you want native `Boolean` constructor coercion from the Effect module
+Use to access native JavaScript truthiness coercion from the Effect module
 namespace.
 
 **Gotchas**

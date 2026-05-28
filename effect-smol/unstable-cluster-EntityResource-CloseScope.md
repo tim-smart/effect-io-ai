@@ -3,7 +3,7 @@ Module: `EntityResource`<br />
 
 ## EntityResource.CloseScope
 
-A `Scope` that is only closed when the resource is explicitly closed.
+Context service for a Scope that is only closed when the resource is explicitly closed.
 
 **Gotchas**
 

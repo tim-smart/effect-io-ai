@@ -13,7 +13,7 @@ Use when you only care about whether the computation succeeded or failed, not th
 
 - Failures pass through unchanged
 
-Allocates a new Exit if successful. Does not mutate the input.
+Allocates a new Exit if successful.
 
 **Example** (Discarding the success value)
 
@@ -36,6 +36,6 @@ console.log(Exit.isSuccess(voided)) // true
 declare const asVoid: <A, E>(self: Exit<A, E>) => Exit<void, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Exit.ts#L1010)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Exit.ts#L1012)
 
 Since v2.0.0

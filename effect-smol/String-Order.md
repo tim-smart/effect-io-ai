@@ -3,7 +3,8 @@ Module: `String`<br />
 
 ## String.Order
 
-`Order` instance for comparing strings using lexicographic ordering.
+Provides an `Order` instance for comparing strings using lexicographic
+ordering.
 
 **Example** (Comparing strings lexicographically)
 
@@ -21,6 +22,6 @@ console.log(String.Order("apple", "apple")) // 0
 declare const Order: order.Order<string>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L136)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L137)
 
 Since v2.0.0

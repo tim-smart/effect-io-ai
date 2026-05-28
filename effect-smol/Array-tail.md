@@ -3,7 +3,7 @@ Module: `Array`<br />
 
 ## Array.tail
 
-Returns all elements except the first, wrapped in an `Option`.
+Returns all elements except the first safely, wrapped in an `Option`.
 
 **When to use**
 
@@ -34,6 +34,6 @@ console.log(Array.tail([])) // Option.none()
 declare const tail: <A>(self: Iterable<A>) => Option.Option<Array<A>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L1252)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L1246)
 
 Since v2.0.0

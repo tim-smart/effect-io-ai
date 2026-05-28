@@ -3,7 +3,7 @@ Module: `Record`<br />
 
 ## Record.has
 
-Check if a given `key` exists in a record.
+Checks whether a given `key` exists in a record.
 
 **Example** (Checking key membership)
 

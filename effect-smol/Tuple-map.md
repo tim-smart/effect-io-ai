@@ -11,8 +11,7 @@ Use when you want to apply the same transformation to every element.
 
 **Details**
 
-The lambda lets the compiler track the output type for each element. The
-input tuple is not mutated; a fresh tuple is returned.
+The lambda lets the compiler track the output type for each element.
 
 **Gotchas**
 
@@ -46,6 +45,6 @@ console.log(result) // [[1], ["hello"], [true]]
 declare const map: { <L extends Lambda>(lambda: L): <const T extends ReadonlyArray<unknown>>(self: T) => { [K in keyof T]: Apply<L, T[K]>; }; <const T extends ReadonlyArray<unknown>, L extends Lambda>(self: T, lambda: L): { [K in keyof T]: Apply<L, T[K]>; }; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tuple.ts#L451)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tuple.ts#L446)
 
 Since v3.9.0

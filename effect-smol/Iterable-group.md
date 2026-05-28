@@ -3,7 +3,7 @@ Module: `Iterable`<br />
 
 ## Iterable.group
 
-Group equal, consecutive elements of an `Iterable` into `NonEmptyArray`s.
+Groups equal, consecutive elements of an `Iterable` into `NonEmptyArray`s.
 
 **Example** (Grouping consecutive elements)
 
@@ -38,6 +38,6 @@ console.log(Array.from(groupedObjects).length) // 3 groups
 declare const group: <A>(self: Iterable<A>) => Iterable<NonEmptyArray<A>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Iterable.ts#L1325)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Iterable.ts#L1333)
 
 Since v2.0.0

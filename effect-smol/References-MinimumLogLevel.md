@@ -3,7 +3,7 @@ Module: `References`<br />
 
 ## References.MinimumLogLevel
 
-Reference for setting the minimum log level threshold. Log entries below this
+Context reference for setting the minimum log level threshold. Log entries below this
 level will be filtered out completely.
 
 **When to use**

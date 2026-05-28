@@ -3,7 +3,7 @@ Module: `Chunk`<br />
 
 ## Chunk.remove
 
-Delete the element at the specified index, creating a new `Chunk`.
+Deletes the element at the specified index, creating a new `Chunk`.
 
 **Example** (Removing an element)
 
@@ -29,6 +29,6 @@ console.log(Chunk.toArray(outOfBounds)) // ["a", "b", "c", "d"]
 declare const remove: { (i: number): <A>(self: Chunk<A>) => Chunk<A>; <A>(self: Chunk<A>, i: number): Chunk<A>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L2424)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L2435)
 
 Since v2.0.0

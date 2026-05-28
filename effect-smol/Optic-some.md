@@ -3,7 +3,7 @@ Module: `Optic`<br />
 
 ## Optic.some
 
-A `Prism` that focuses on the value inside `Option.Some`.
+Prism that focuses on the value inside `Option.Some`.
 
 **When to use**
 
@@ -43,6 +43,6 @@ console.log(_some.set(10))
 declare const some: <A>() => Prism<Option.Option<A>, A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Optic.ts#L1635)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Optic.ts#L1628)
 
 Since v4.0.0

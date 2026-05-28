@@ -3,7 +3,7 @@ Module: `SchemaTransformation`<br />
 
 ## SchemaTransformation.passthroughSupertype
 
-A passthrough transformation typed so that `T extends E`, where the decoded
+Transforms values without changing them, typed so that `T extends E`, where the decoded
 type `T` is a subtype of the encoded type `E`.
 
 **When to use**
@@ -35,6 +35,6 @@ const t = SchemaTransformation.passthroughSupertype<"a" | "b", string>()
 declare const passthroughSupertype: <T extends E, E>() => Transformation<T, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L806)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L804)
 
 Since v4.0.0

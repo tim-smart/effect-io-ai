@@ -3,7 +3,7 @@ Module: `TxPubSub`<br />
 
 ## TxPubSub.isShutdown
 
-Checks if the TxPubSub has been shut down.
+Checks whether the TxPubSub has been shut down.
 
 **Example** (Checking whether a pub/sub is shut down)
 

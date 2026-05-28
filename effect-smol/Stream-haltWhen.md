@@ -3,7 +3,21 @@ Module: `Stream`<br />
 
 ## Stream.haltWhen
 
-Halts evaluation after the current element once the provided effect completes; the effect is forked, its success is discarded, failures fail the stream, and it does not interrupt an in-progress pull (use `interruptWhen` for that).
+Stops a stream after the current element when an effect completes.
+
+**When to use**
+
+Use to stop before the next pull after an external signal completes.
+
+**Details**
+
+The effect is forked, its success value is discarded, and its failure fails
+the stream.
+
+**Gotchas**
+
+This does not interrupt an in-progress pull. Use `interruptWhen` when
+the stream should be interrupted immediately.
 
 **Example** (Halting a stream after an effect completes)
 
@@ -31,6 +45,6 @@ Effect.runPromise(program)
 declare const haltWhen: { <X, E2, R2>(effect: Effect.Effect<X, E2, R2>): <A, E, R>(self: Stream<A, E, R>) => Stream<A, E2 | E, R2 | R>; <A, E, R, X, E2, R2>(self: Stream<A, E, R>, effect: Effect.Effect<X, E2, R2>): Stream<A, E | E2, R | R2>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L9702)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L9743)
 
 Since v2.0.0

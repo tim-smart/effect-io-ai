@@ -199,7 +199,7 @@
     },
     "project": "@effect/platform-node-shared",
     "name": "layer",
-    "description": "Layer providing the `NodeChildProcessSpawner` implementation.",
+    "description": "Layer that provides the `NodeChildProcessSpawner` implementation.",
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
@@ -295,7 +295,7 @@
     },
     "project": "@effect/platform-node-shared",
     "name": "layer",
-    "description": "A layer that provides the Node.js Crypto service implementation.",
+    "description": "Layer that provides the Node.js Crypto service implementation.",
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
@@ -423,13 +423,13 @@
     },
     "project": "@effect/platform-node-shared",
     "name": "pullIntoWritable",
-    "description": "Repeatedly pulls non-empty chunks and writes them to a Node writable stream,\nwaiting for `drain` when needed, failing on writable errors, and ending the\nwritable on upstream completion unless disabled.",
+    "description": "Writes Effect chunks into a Node writable stream.\n\n**When to use**\n\nUse to implement custom Node stream adapters that already have an upstream\npull and need direct control over a writable stream.\n\n**Details**\n\nThe loop waits for `drain` when needed, fails on writable errors, and ends\nthe writable on upstream completion unless `endOnDone` is `false`.",
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
     "category": "converting",
     "signature": "declare const pullIntoWritable: <A, IE, E>(options: { readonly pull: Pull.Pull<NonEmptyReadonlyArray<A>, IE, unknown>; readonly writable: Writable; readonly onError: (error: unknown) => E; readonly endOnDone?: boolean | undefined; readonly encoding?: BufferEncoding | undefined; }) => Pull.Pull<never, IE | E, unknown>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeSink.ts#L92"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeSink.ts#L100"
   },
   {
     "_tag": "Class",
@@ -461,7 +461,7 @@
     "since": "4.0.0",
     "category": "layers",
     "signature": "declare const layerNet: (options: Net.NetConnectOpts) => Layer.Layer<Socket.Socket, Socket.SocketError>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeSocket.ts#L276"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeSocket.ts#L283"
   },
   {
     "_tag": "Function",
@@ -471,13 +471,13 @@
     },
     "project": "@effect/platform-node-shared",
     "name": "makeNet",
-    "description": "Opens a TCP connection with Node `net.createConnection` and exposes it as a\n`Socket.Socket`, supporting `openTimeout` and closing or destroying the\nsocket when the enclosing scope is finalized.",
+    "description": "Opens a Node TCP connection as an Effect socket.\n\n**When to use**\n\nUse to create a scoped `Socket.Socket` from Node `net.createConnection`.\n\n**Details**\n\nSupports `openTimeout` and closes or destroys the underlying socket when the\nenclosing scope is finalized.",
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
     "category": "constructors",
     "signature": "declare const makeNet: (options: Net.NetConnectOpts & { readonly openTimeout?: Duration.Input | undefined; }) => Effect.Effect<Socket.Socket>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeSocket.ts#L69"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeSocket.ts#L76"
   },
   {
     "_tag": "Function",
@@ -493,7 +493,7 @@
     "since": "4.0.0",
     "category": "constructors",
     "signature": "declare const fromDuplex: <RO>(open: Effect.Effect<Duplex, Socket.SocketError, RO>, options?: { readonly openTimeout?: Duration.Input | undefined; }) => Effect.Effect<Socket.Socket, never, Exclude<RO, Scope.Scope>>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeSocket.ts#L118"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeSocket.ts#L125"
   },
   {
     "_tag": "Function",
@@ -509,7 +509,7 @@
     "since": "4.0.0",
     "category": "constructors",
     "signature": "declare const makeNetChannel: <IE = never>(options: Net.NetConnectOpts) => Channel.Channel<Array.NonEmptyReadonlyArray<Uint8Array>, Socket.SocketError | IE, void, Array.NonEmptyReadonlyArray<Uint8Array | string | Socket.CloseEvent>, IE>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeSocket.ts#L256"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeSocket.ts#L263"
   },
   {
     "_tag": "Export",

@@ -36,6 +36,6 @@ nonEmpty.push(4)
 type [A, ...A[]] = [A, ...Array<A>]
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L192)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L190)
 
 Since v2.0.0

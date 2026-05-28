@@ -3,8 +3,13 @@ Module: `Reply`<br />
 
 ## Reply.WithExit
 
-A terminal RPC reply for a request, carrying the final `Exit` for the remote
+Represents a terminal RPC reply for a request, carrying the final `Exit` for the remote
 call.
+
+**When to use**
+
+Use to represent the final success, typed failure, defect, or interruption
+for a clustered RPC request.
 
 **Signature**
 
@@ -12,6 +17,6 @@ call.
 declare class WithExit<R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Reply.ts#L299)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Reply.ts#L309)
 
 Since v4.0.0

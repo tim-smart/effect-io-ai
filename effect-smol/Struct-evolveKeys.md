@@ -3,7 +3,7 @@ Module: `Struct`<br />
 
 ## Struct.evolveKeys
 
-Selectively transforms keys of a struct using per-key functions. Keys without
+Transforms keys of a struct selectively using per-key functions. Keys without
 a corresponding function are copied unchanged.
 
 **When to use**
@@ -13,7 +13,7 @@ Use when you need computed key names, such as uppercasing or prefixing.
 **Details**
 
 Each transform function receives the key name and must return a new
-`PropertyKey`. This does not mutate the input and returns a fresh object.
+`PropertyKey`.
 
 **Example** (Renaming keys with functions)
 
@@ -41,6 +41,6 @@ console.log(result) // { NAME: "Alice", age: 30 }
 declare const evolveKeys: { <S extends object, E extends KeyEvolver<S>>(e: E): (self: S) => KeyEvolved<S, E>; <S extends object, E extends KeyEvolver<S>>(self: S, e: E): KeyEvolved<S, E>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Struct.ts#L450)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Struct.ts#L436)
 
 Since v4.0.0

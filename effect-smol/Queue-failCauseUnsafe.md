@@ -3,7 +3,7 @@ Module: `Queue`<br />
 
 ## Queue.failCauseUnsafe
 
-Fail the queue with a cause synchronously. If the queue is already done, `false` is
+Fails the queue with a cause synchronously. If the queue is already done, `false` is
 returned.
 
 **Gotchas**

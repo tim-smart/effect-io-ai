@@ -3,7 +3,7 @@ Module: `SchemaRepresentation`<br />
 
 ## SchemaRepresentation.$Enum
 
-Schema codec for the `Enum` representation node.
+Schema for the `Enum` representation node.
 
 **Signature**
 

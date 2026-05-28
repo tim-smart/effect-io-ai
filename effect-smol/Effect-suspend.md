@@ -3,7 +3,7 @@ Module: `Effect`<br />
 
 ## Effect.suspend
 
-Delays the creation of an `Effect` until it is actually needed.
+Creates an `Effect` lazily, delaying construction until it is needed.
 
 **When to use**
 
@@ -91,6 +91,6 @@ const withSuspend = (a: number, b: number) =>
 declare const suspend: <A, E, R>(effect: LazyArg<Effect<A, E, R>>) => Effect<A, E, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L1165)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L1163)
 
 Since v2.0.0

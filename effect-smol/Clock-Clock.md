@@ -30,7 +30,7 @@ const clockOperations = Effect.gen(function*() {
 ```ts
 export interface Clock {
   /**
-   * Unsafely returns the current time in milliseconds.
+   * Returns the current time in milliseconds unsafely.
    *
    * **When to use**
    *
@@ -47,7 +47,7 @@ export interface Clock {
    */
   readonly currentTimeMillis: Effect<number>
   /**
-   * Unsafely returns the current time in nanoseconds.
+   * Returns the current time in nanoseconds unsafely.
    *
    * **When to use**
    *

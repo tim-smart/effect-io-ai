@@ -3,7 +3,7 @@ Module: `TxChunk`<br />
 
 ## TxChunk.isEmpty
 
-Checks if the `TxChunk` is empty.
+Checks whether the `TxChunk` is empty.
 
 **Example** (Checking for an empty chunk)
 

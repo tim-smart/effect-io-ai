@@ -3,7 +3,7 @@ Module: `Deferred`<br />
 
 ## Deferred.isDoneUnsafe
 
-Synchronously returns whether this `Deferred` has already been completed.
+Returns whether this `Deferred` has already been completed synchronously.
 
 **When to use**
 

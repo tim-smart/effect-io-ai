@@ -3,7 +3,7 @@ Module: `Cookies`<br />
 
 ## Cookies.remove
 
-Remove a cookie by name
+Removes a cookie by name
 
 **Signature**
 

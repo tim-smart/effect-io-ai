@@ -35,6 +35,6 @@ console.log(Predicate.isObject([1, 2]))
 declare const isObject: (input: unknown) => input is { [x: PropertyKey]: unknown; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L1110)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L1086)
 
 Since v2.0.0

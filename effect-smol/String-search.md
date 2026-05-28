@@ -3,7 +3,7 @@ Module: `String`<br />
 
 ## String.search
 
-Returns the index of the first match for a string or regular expression, or
+Returns the index of the first match for a string or regular expression safely, or
 `Option.none` when no match is found.
 
 **Example** (Searching strings)
@@ -22,6 +22,6 @@ String.search("ababb", "d") // Option.none()
 declare const search: { (regExp: RegExp | string): (self: string) => Option.Option<number>; (self: string, regExp: RegExp | string): Option.Option<number>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L899)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L904)
 
 Since v2.0.0

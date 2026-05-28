@@ -3,7 +3,7 @@ Module: `SchemaTransformation`<br />
 
 ## SchemaTransformation.Middleware
 
-A middleware that wraps the entire parsing `Effect` pipeline for both
+Middleware that wraps the entire parsing `Effect` pipeline for both
 decode and encode directions.
 
 **When to use**
@@ -18,7 +18,6 @@ Unlike `Transformation`, which operates on individual values via `Getter`,
 `Middleware` receives the full `Effect` produced by the inner schema and can
 intercept, modify, retry, or replace it.
 
-- Immutable — constructing a Middleware does not mutate existing instances.
 - `decode` receives an `Effect<Option<E>, Issue, RDE>` and returns
   `Effect<Option<T>, Issue, RDT>`.
 - `encode` receives an `Effect<Option<T>, Issue, RET>` and returns
@@ -59,6 +58,6 @@ declare class Middleware<T, E, RDE, RDT, RET, REE> { constructor(
   ) }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L142)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L141)
 
 Since v4.0.0

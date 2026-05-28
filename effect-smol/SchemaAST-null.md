@@ -3,7 +3,12 @@ Module: `SchemaAST`<br />
 
 ## SchemaAST.null
 
-Singleton `Null` AST instance.
+Provides the singleton `Null` AST instance.
+
+**When to use**
+
+Use when you need the shared AST node for exact null values while inspecting
+or constructing schema ASTs.
 
 **Signature**
 
@@ -11,6 +16,6 @@ Singleton `Null` AST instance.
 declare const null: Null
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L785)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L790)
 
 Since v4.0.0

@@ -3,7 +3,7 @@ Module: `Fiber`<br />
 
 ## Fiber.runIn
 
-Links a fiber to a `Scope` and returns the same fiber.
+Adds a fiber to a `Scope` and returns the same fiber.
 
 **When to use**
 

@@ -3,7 +3,7 @@ Module: `Sink`<br />
 
 ## Sink.drain
 
-Drains elements from the stream by ignoring all inputs.
+Consumes and ignores all stream inputs.
 
 **When to use**
 

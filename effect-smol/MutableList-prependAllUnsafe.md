@@ -38,6 +38,6 @@ console.log(MutableList.takeAll(list)) // [10, 20, 30, 1, 2, 3, 4]
 declare const prependAllUnsafe: <A>(self: MutableList<A>, messages: ReadonlyArray<A>, mutable?: boolean) => void
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableList.ts#L454)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableList.ts#L459)
 
 Since v4.0.0

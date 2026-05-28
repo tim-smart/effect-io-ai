@@ -3,7 +3,7 @@ Module: `Hash`<br />
 
 ## Hash.isHash
 
-Checks if a value implements the Hash interface.
+Checks whether a value implements the Hash interface.
 
 **When to use**
 

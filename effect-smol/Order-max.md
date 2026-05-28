@@ -13,7 +13,6 @@ Use when when you need to find the larger of two values
 
 **Details**
 
-- Pure function: does not mutate inputs
 - Returns the value that compares as greater than or equal to the other
 - If values are equal, returns the first argument
 - Supports curried and uncurried call styles
@@ -41,6 +40,6 @@ console.log(maxNumber(1, 1)) // 1
 declare const max: <A>(O: Order<A>) => { (that: A): (self: A) => A; (self: A, that: A): A; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Order.ts#L974)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Order.ts#L953)
 
 Since v2.0.0

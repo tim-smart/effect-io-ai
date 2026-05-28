@@ -7,8 +7,8 @@ A predefined filter that only passes through `bigint` primitive values.
 
 **When to use**
 
-Use to keep `bigint` primitive values from unknown input while staying in the
-composable `Filter` / `Result` pipeline.
+Use to keep primitive big integer values from unknown input while staying in
+the composable `Filter` / `Result` pipeline.
 
 **Details**
 

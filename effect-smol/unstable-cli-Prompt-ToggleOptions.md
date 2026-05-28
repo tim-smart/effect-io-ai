@@ -31,6 +31,6 @@ export interface ToggleOptions {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L509)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L517)
 
 Since v4.0.0

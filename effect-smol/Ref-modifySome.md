@@ -3,7 +3,7 @@ Module: `Ref`<br />
 
 ## Ref.modifySome
 
-Atomically computes a result and optionally updates the value of the `Ref`.
+Computes a result atomically and optionally updates the value of the `Ref`.
 
 **When to use**
 

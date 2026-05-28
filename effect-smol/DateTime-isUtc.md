@@ -3,7 +3,7 @@ Module: `DateTime`<br />
 
 ## DateTime.isUtc
 
-Checks if a `DateTime` is a UTC `DateTime` (no time zone information).
+Checks whether a `DateTime` is a UTC `DateTime` (no time zone information).
 
 **When to use**
 

@@ -33,6 +33,6 @@ export interface Only<out X> {
   }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L2381)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L2376)
 
 Since v4.0.0

@@ -12,6 +12,6 @@ Provides a node:http-backed `HttpClient` together with default scoped Node
 declare const layerNodeHttp: Layer.Layer<Client.HttpClient, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L682)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L691)
 
 Since v4.0.0

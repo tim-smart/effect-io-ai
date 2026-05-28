@@ -3,7 +3,7 @@ Module: `OpenAiTool`<br />
 
 ## OpenAiTool.Mcp
 
-OpenAI MCP tool that gives the model access to additional tools via remote
+Defines the OpenAI MCP tool that gives the model access to additional tools via remote
 Model Context Protocol (MCP) servers.
 
 **When to use**

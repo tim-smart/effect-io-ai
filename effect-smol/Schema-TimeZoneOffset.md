@@ -14,6 +14,6 @@ export interface TimeZoneOffset extends declare<DateTime.TimeZone.Offset> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L11338)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L11569)
 
 Since v3.10.0

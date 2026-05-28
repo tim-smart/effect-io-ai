@@ -3,7 +3,7 @@ Module: `TxSubscriptionRef`<br />
 
 ## TxSubscriptionRef.isTxSubscriptionRef
 
-Checks if the given value is a TxSubscriptionRef.
+Checks whether the given value is a TxSubscriptionRef.
 
 **When to use**
 

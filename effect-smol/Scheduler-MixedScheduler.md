@@ -3,7 +3,7 @@ Module: `Scheduler`<br />
 
 ## Scheduler.MixedScheduler
 
-A scheduler implementation that batches queued tasks and dispatches them by
+Provides a scheduler implementation that batches queued tasks and dispatches them by
 priority.
 
 **When to use**

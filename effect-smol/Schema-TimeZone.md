@@ -14,6 +14,6 @@ export interface TimeZone extends declare<DateTime.TimeZone> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L11467)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L11698)
 
 Since v3.10.0

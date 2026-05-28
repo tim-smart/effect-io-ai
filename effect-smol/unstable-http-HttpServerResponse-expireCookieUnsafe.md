@@ -3,13 +3,13 @@ Module: `HttpServerResponse`<br />
 
 ## HttpServerResponse.expireCookieUnsafe
 
-Expires a cookie on an `HttpServerResponse`, throwing if the expiration cookie
+Sets an expired cookie on an `HttpServerResponse`, throwing if the expiration cookie
 cannot be encoded.
 
 **When to use**
 
-Use when cookie errors should be represented as `CookiesError`
-failures.
+Use when expiring one trusted cookie and encoding failures should throw
+instead of being represented as `CookiesError` failures.
 
 **Signature**
 

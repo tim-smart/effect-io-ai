@@ -3,7 +3,7 @@ Module: `DateTime`<br />
 
 ## DateTime.Order
 
-An `Order` for comparing and sorting `DateTime` values.
+Provides an `Order` for comparing and sorting `DateTime` values.
 
 **Details**
 

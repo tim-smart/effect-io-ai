@@ -43,6 +43,6 @@ const program = Effect.gen(function*() {
 declare const takeUnsafe: <A, E>(self: Dequeue<A, E>) => Exit<A, E> | undefined
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Queue.ts#L1537)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Queue.ts#L1553)
 
 Since v4.0.0

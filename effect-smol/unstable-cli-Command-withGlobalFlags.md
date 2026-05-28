@@ -3,7 +3,7 @@ Module: `Command`<br />
 
 ## Command.withGlobalFlags
 
-Declares global flags for a command scope.
+Adds global flags to a command scope.
 
 **Details**
 

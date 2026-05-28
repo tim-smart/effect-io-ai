@@ -3,7 +3,7 @@ Module: `Array`<br />
 
 ## Array.head
 
-Returns the first element of an array wrapped in `Option.some`, or
+Returns the first element of an array safely wrapped in `Option.some`, or
 `Option.none` if the array is empty.
 
 **When to use**
@@ -30,6 +30,6 @@ console.log(Array.head([])) // None
 declare const head: <A>(self: ReadonlyArray<A>) => Option.Option<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L1149)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L1143)
 
 Since v2.0.0

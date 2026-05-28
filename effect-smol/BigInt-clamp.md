@@ -38,6 +38,6 @@ assert.equal(clamp(6n), 5n)
 declare const clamp: { (options: { minimum: bigint; maximum: bigint; }): (self: bigint) => bigint; (self: bigint, options: { minimum: bigint; maximum: bigint; }): bigint; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigInt.ts#L549)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigInt.ts#L551)
 
 Since v2.0.0

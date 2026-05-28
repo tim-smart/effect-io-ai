@@ -3,7 +3,7 @@ Module: `BigDecimal`<br />
 
 ## BigDecimal.fromString
 
-Safely parses a decimal string into a `BigDecimal`.
+Parses a decimal string into a `BigDecimal` safely.
 
 **When to use**
 
@@ -40,6 +40,6 @@ assert.deepStrictEqual(BigDecimal.fromString("123.abc"), Option.none())
 declare const fromString: (s: string) => Option.Option<BigDecimal>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigDecimal.ts#L1422)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigDecimal.ts#L1426)
 
 Since v2.0.0

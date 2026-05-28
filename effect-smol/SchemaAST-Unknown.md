@@ -21,6 +21,6 @@ Unlike `Any`, this is type-safe: the parsed result is typed as
 declare class Unknown
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L974)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L984)
 
 Since v4.0.0

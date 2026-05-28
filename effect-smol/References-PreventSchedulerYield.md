@@ -3,7 +3,7 @@ Module: `References`<br />
 
 ## References.PreventSchedulerYield
 
-Reference controlling whether the runtime bypasses scheduler yield checks.
+Context reference for whether the runtime bypasses scheduler yield checks.
 
 **When to use**
 

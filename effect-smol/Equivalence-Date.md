@@ -3,7 +3,7 @@ Module: `Equivalence`<br />
 
 ## Equivalence.Date
 
-An `Equivalence` instance for `Date` objects that compares their `getTime()` values using `Equivalence.Number`.
+Equivalence instance for `Date` objects that compares their `getTime()` values using `Equivalence.Number`.
 
 **When to use**
 
@@ -55,6 +55,6 @@ console.log(Equivalence.Date(d1, d2)) // true (same time value)
 declare const Date: Equivalence<Date>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Equivalence.ts#L943)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Equivalence.ts#L933)
 
 Since v2.0.0

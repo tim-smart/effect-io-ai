@@ -3,7 +3,7 @@ Module: `FiberSet`<br />
 
 ## FiberSet.join
 
-Join all fibers in the FiberSet. If any of the Fiber's in the set terminate with a failure,
+Joins all fibers in the FiberSet. If any fiber in the set terminates with a failure,
 the returned Effect will terminate with the first failure that occurred.
 
 **Example** (Joining failing fibers)
@@ -26,6 +26,6 @@ Effect.gen(function*() {
 declare const join: <A, E>(self: FiberSet<A, E>) => Effect.Effect<void, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FiberSet.ts#L692)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FiberSet.ts#L700)
 
 Since v2.0.0

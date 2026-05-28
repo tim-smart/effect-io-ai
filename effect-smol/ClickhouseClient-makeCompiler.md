@@ -13,6 +13,6 @@ name transform.
 declare const makeCompiler: (transform?: (_: string) => string) => Statement.Compiler
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/sql/clickhouse/src/ClickhouseClient.ts#L529)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/sql/clickhouse/src/ClickhouseClient.ts#L533)
 
 Since v4.0.0

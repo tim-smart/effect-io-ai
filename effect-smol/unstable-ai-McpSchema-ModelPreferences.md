@@ -3,8 +3,8 @@ Module: `McpSchema`<br />
 
 ## McpSchema.ModelPreferences
 
-The server's preferences for model selection, requested of the client during
-sampling.
+Schema for the server's model selection preferences requested of the client
+during sampling.
 
 **Details**
 
@@ -26,6 +26,6 @@ balance them against other considerations.
 declare class ModelPreferences
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L1650)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L1752)
 
 Since v4.0.0

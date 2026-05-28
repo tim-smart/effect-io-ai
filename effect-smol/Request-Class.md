@@ -3,7 +3,7 @@ Module: `Request`<br />
 
 ## Request.Class
 
-Base class constructor for defining request types with TypeScript classes.
+Defines request types with TypeScript classes.
 
 **Details**
 

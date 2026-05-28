@@ -3,7 +3,7 @@ Module: `Number`<br />
 
 ## Number.ReducerMultiply
 
-A `Reducer` for combining `number`s using multiplication.
+Reducer for combining `number`s using multiplication.
 
 **When to use**
 
@@ -28,6 +28,6 @@ not consumed.
 declare const ReducerMultiply: Reducer.Reducer<number>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Number.ts#L850)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Number.ts#L852)
 
 Since v4.0.0

@@ -3,7 +3,8 @@ Module: `SchemaParser`<br />
 
 ## SchemaParser.encodeUnknownResult
 
-Creates an encoder for `unknown` input that returns a `Result`.
+Creates an encoder for `unknown` input that reports failure safely as a
+`Result`.
 
 **When to use**
 
@@ -27,6 +28,6 @@ failure.
 declare const encodeUnknownResult: <S extends Schema.Encoder<unknown>>(schema: S, options?: AST.ParseOptions) => (input: unknown, options?: AST.ParseOptions) => Result.Result<S["Encoded"], Issue.Issue>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaParser.ts#L797)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaParser.ts#L801)
 
 Since v4.0.0

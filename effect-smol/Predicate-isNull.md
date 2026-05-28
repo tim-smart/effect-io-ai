@@ -11,7 +11,6 @@ Use when you need a guard for nullable values.
 
 **Details**
 
-- Pure; does not mutate input.
 - Uses `input === null`.
 
 **Example** (Guard null)
@@ -35,6 +34,6 @@ console.log(Predicate.isNull(data))
 declare const isNull: (input: unknown) => input is null
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L895)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L877)
 
 Since v2.0.0

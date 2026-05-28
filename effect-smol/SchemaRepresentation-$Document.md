@@ -3,7 +3,7 @@ Module: `SchemaRepresentation`<br />
 
 ## SchemaRepresentation.$Document
 
-Schema codec for `Document`.
+Schema for `Document`.
 
 **When to use**
 

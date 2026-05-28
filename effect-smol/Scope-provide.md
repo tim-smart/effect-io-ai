@@ -3,8 +3,16 @@ Module: `Scope`<br />
 
 ## Scope.provide
 
-Provides a `Scope` to an `Effect`, removing the `Scope` requirement from its context.
-This allows you to run effects that require a scope by explicitly providing one.
+Provides a concrete `Scope` to an effect.
+
+**When to use**
+
+Use to run an effect that requires `Scope` with a scope managed by the
+caller.
+
+**Details**
+
+Providing the scope removes the `Scope` requirement from the effect context.
 
 **Example** (Providing a scope)
 
@@ -31,6 +39,6 @@ const withScope = Effect.gen(function*() {
 declare const provide: { (value: Scope): <A, E, R>(self: Effect<A, E, R>) => Effect<A, E, Exclude<R, Scope>>; <A, E, R>(self: Effect<A, E, R>, value: Scope): Effect<A, E, Exclude<R, Scope>>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Scope.ts#L334)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Scope.ts#L347)
 
 Since v4.0.0

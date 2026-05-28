@@ -3,7 +3,7 @@ Module: `String`<br />
 
 ## String.isNonEmpty
 
-Test whether a `string` is non empty.
+Checks whether a `string` is non-empty.
 
 **Example** (Checking for non-empty strings)
 
@@ -21,6 +21,6 @@ assert.deepStrictEqual(String.isNonEmpty("a"), true)
 declare const isNonEmpty: (self: string) => boolean
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L473)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L478)
 
 Since v2.0.0

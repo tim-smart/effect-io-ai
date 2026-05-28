@@ -77,6 +77,6 @@ export interface Class<Self, S extends Top & { readonly fields: Struct.Fields },
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L11657)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L11888)
 
 Since v3.10.0

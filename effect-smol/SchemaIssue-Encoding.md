@@ -3,13 +3,12 @@ Module: `SchemaIssue`<br />
 
 ## SchemaIssue.Encoding
 
-Issue produced when a schema transformation (encode/decode step) fails.
+Represents a schema issue produced when a schema transformation (encode/decode step) fails.
 
 **When to use**
 
-Use when inspect failures from `Schema.decodeTo` / `Schema.encodeTo`
+Use when you need to inspect failures from `Schema.decodeTo` / `Schema.encodeTo`
   transformations.
-- Walk the inner `issue` for the root cause of the transformation failure.
 
 **Details**
 
@@ -42,6 +41,6 @@ declare class Encoding { constructor(
   ) }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaIssue.ts#L286)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaIssue.ts#L283)
 
 Since v4.0.0

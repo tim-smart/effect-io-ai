@@ -3,7 +3,7 @@ Module: `Context`<br />
 
 ## Context.isKey
 
-Checks if the provided argument is a `Key`.
+Checks whether the provided argument is a `Key`.
 
 **Example** (Checking for keys)
 

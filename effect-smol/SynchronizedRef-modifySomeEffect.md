@@ -3,7 +3,7 @@ Module: `SynchronizedRef`<br />
 
 ## SynchronizedRef.modifySomeEffect
 
-Atomically runs an effectful modification while holding the ref's semaphore.
+Runs an effectful modification atomically while holding the ref's semaphore.
 The effect computes a return value and an optional new ref value;
 `Option.some` updates the ref and `Option.none` leaves it unchanged.
 

@@ -3,7 +3,8 @@ Module: `Record`<br />
 
 ## Record.getSuccesses
 
-Given a record with `Result` values, returns a new record containing only the `Ok` values, preserving the original keys.
+Returns a new record containing only the `Ok` values from a record of
+`Result` values, preserving the original keys.
 
 **Example** (Extracting Result successes)
 
@@ -27,6 +28,6 @@ assert.deepStrictEqual(
 declare const getSuccesses: <K extends string, A, E>(self: ReadonlyRecord<K, Result<A, E>>) => Record<string, A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Record.ts#L953)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Record.ts#L964)
 
 Since v4.0.0

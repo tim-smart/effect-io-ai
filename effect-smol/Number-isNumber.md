@@ -3,7 +3,7 @@ Module: `Number`<br />
 
 ## Number.isNumber
 
-Tests if a value is a `number`.
+Checks whether a value is a `number`.
 
 **When to use**
 

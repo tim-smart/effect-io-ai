@@ -11,6 +11,6 @@ The default layer that provides an in-memory `Reactivity` service.
 declare const layer: Layer.Layer<Reactivity, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Reactivity.ts#L343)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Reactivity.ts#L348)
 
 Since v4.0.0

@@ -3,7 +3,7 @@ Module: `Schema`<br />
 
 ## Schema.overrideToFormatter
 
-Annotates a schema with a custom formatter used by `toFormatter`.
+Attaches a custom formatter used by `toFormatter`.
 
 **Details**
 
@@ -17,6 +17,6 @@ The annotation is applied through this helper because adding it directly to
 declare const overrideToFormatter: <S extends Top>(toFormatter: () => Formatter<S["Type"]>) => (self: S) => S["Rebuild"]
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L12209)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L12447)
 
 Since v4.0.0

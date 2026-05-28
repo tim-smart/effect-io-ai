@@ -3,7 +3,7 @@ Module: `BigDecimal`<br />
 
 ## BigDecimal.fromNumberUnsafe
 
-Creates a `BigDecimal` from a `number` value.
+Creates a `BigDecimal` from a finite `number`, throwing for non-finite input.
 
 **When to use**
 
@@ -36,6 +36,6 @@ assert.deepStrictEqual(BigDecimal.fromNumberUnsafe(123.456), BigDecimal.make(123
 declare const fromNumberUnsafe: (n: number) => BigDecimal
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigDecimal.ts#L1334)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigDecimal.ts#L1338)
 
 Since v4.0.0

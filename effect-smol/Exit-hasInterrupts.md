@@ -3,7 +3,7 @@ Module: `Exit`<br />
 
 ## Exit.hasInterrupts
 
-Tests whether a failed Exit contains interruptions (Interrupt reasons).
+Checks whether a failed Exit contains interruptions (Interrupt reasons).
 
 **When to use**
 
@@ -37,6 +37,6 @@ console.log(Exit.hasInterrupts(Exit.succeed(42)))   // false
 declare const hasInterrupts: <A, E>(self: Exit<A, E>) => self is Failure<A, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Exit.ts#L572)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Exit.ts#L574)
 
 Since v4.0.0

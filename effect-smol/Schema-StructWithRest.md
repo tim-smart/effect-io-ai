@@ -8,8 +8,8 @@ by `StructWithRest`.
 
 **When to use**
 
-Use as the schema type returned by `StructWithRest` when generic code needs to
-retain the base struct schema and all rest record schemas.
+Use as the schema type when generic code needs to retain the base struct
+schema and all rest record schemas.
 
 **See**
 
@@ -39,6 +39,6 @@ export interface StructWithRest<
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L3296)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L3514)
 
 Since v4.0.0

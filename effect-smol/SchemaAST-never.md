@@ -3,12 +3,12 @@ Module: `SchemaAST`<br />
 
 ## SchemaAST.never
 
-Singleton `Never` AST instance.
+Provides the singleton `Never` AST instance.
 
 **When to use**
 
-Use to reuse the canonical `Never` AST node when constructing, comparing, or
-returning ASTs that represent the `never` type.
+Use to reuse the canonical bottom-type AST node when constructing,
+comparing, or returning ASTs.
 
 **See**
 
@@ -21,6 +21,6 @@ returning ASTs that represent the `never` type.
 declare const never: Never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L923)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L933)
 
 Since v4.0.0

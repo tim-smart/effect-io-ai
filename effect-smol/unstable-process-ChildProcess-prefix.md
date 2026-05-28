@@ -3,7 +3,7 @@ Module: `ChildProcess`<br />
 
 ## ChildProcess.prefix
 
-Prefix a command with another command.
+Prepends another command to a command.
 
 **Details**
 

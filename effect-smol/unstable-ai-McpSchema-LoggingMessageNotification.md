@@ -3,7 +3,7 @@ Module: `McpSchema`<br />
 
 ## McpSchema.LoggingMessageNotification
 
-Server notification carrying a log message for the client.
+Sent from the server to the client carrying a log message.
 
 **Details**
 
@@ -16,6 +16,6 @@ JSON-serializable log data.
 declare class LoggingMessageNotification
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L1568)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L1670)
 
 Since v4.0.0

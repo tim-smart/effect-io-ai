@@ -3,7 +3,7 @@ Module: `ErrorReporter`<br />
 
 ## ErrorReporter.CurrentErrorReporters
 
-A `Context.Reference` holding the set of active `ErrorReporter`s for the
+Context reference that holds the set of active error reporters for the
 current fiber. Defaults to an empty set (no reporting).
 
 **When to use**
@@ -17,6 +17,6 @@ directly.
 declare const CurrentErrorReporters: Context.Reference<ReadonlySet<ErrorReporter>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ErrorReporter.ts#L206)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ErrorReporter.ts#L208)
 
 Since v4.0.0

@@ -3,7 +3,7 @@ Module: `Layer`<br />
 
 ## Layer.suspend
 
-Lazily constructs a layer using the specified factory.
+Constructs a layer lazily using the specified factory.
 
 **Details**
 
@@ -32,6 +32,6 @@ const layer = Layer.suspend(() =>
 declare const suspend: <A, E, R>(evaluate: LazyArg<Layer<A, E, R>>) => Layer<A, E, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L1123)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L1131)
 
 Since v2.0.0

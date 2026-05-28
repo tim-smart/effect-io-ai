@@ -3,7 +3,7 @@ Module: `Array`<br />
 
 ## Array.isArray
 
-Tests whether a value is an `Array`.
+Checks whether a value is an `Array`.
 
 **When to use**
 
@@ -34,6 +34,6 @@ console.log(Array.isArray([1, 2, 3])) // true
 declare const isArray: { (self: unknown): self is Array<unknown>; <T>(self: T): self is Extract<T, ReadonlyArray<any>>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L868)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L862)
 
 Since v2.0.0

@@ -3,7 +3,7 @@ Module: `SchemaRepresentation`<br />
 
 ## SchemaRepresentation.$Never
 
-Schema codec for the `Never` representation node.
+Schema for the `Never` representation node.
 
 **Signature**
 

@@ -21,6 +21,6 @@ export interface JsonFromString<S extends Schema.Top> extends
 {}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Model.ts#L677)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Model.ts#L676)
 
 Since v4.0.0

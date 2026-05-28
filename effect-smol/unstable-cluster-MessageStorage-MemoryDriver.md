@@ -3,7 +3,7 @@ Module: `MessageStorage`<br />
 
 ## MessageStorage.MemoryDriver
 
-In-memory message storage driver with inspectable backing state.
+Service that provides an in-memory message storage driver with inspectable backing state.
 
 **Details**
 

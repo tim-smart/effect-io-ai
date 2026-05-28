@@ -12,7 +12,6 @@ Use to represent a failed computation with a typed failure value.
 **Details**
 
 - The success type `A` defaults to `never`
-- Does not mutate input; allocates a new `Failure` wrapper
 
 **Example** (Creating a failure)
 
@@ -36,6 +35,6 @@ console.log(Result.isFailure(result))
 declare const fail: <E>(left: E) => Result<never, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L369)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L367)
 
 Since v4.0.0

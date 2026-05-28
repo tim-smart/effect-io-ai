@@ -3,7 +3,7 @@ Module: `JsonSchema`<br />
 
 ## JsonSchema.META_SCHEMA_URI_DRAFT_2020_12
 
-The `$schema` meta-schema URI for JSON Schema Draft 2020-12.
+Represents the `$schema` meta-schema URI for JSON Schema Draft 2020-12.
 
 **When to use**
 

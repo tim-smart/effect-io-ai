@@ -17,6 +17,6 @@ more than 4096 ids are requested in the same millisecond.
 declare const makeGenerator: Effect.Effect<Snowflake.Generator, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Snowflake.ts#L235)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Snowflake.ts#L236)
 
 Since v4.0.0

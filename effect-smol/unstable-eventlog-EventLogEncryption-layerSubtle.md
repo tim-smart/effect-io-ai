@@ -11,6 +11,6 @@ Provides `EventLogEncryption` using `globalThis.crypto`.
 declare const layerSubtle: Layer.Layer<EventLogEncryption, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventLogEncryption.ts#L174)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventLogEncryption.ts#L179)
 
 Since v4.0.0

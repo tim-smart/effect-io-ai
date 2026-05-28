@@ -15,7 +15,7 @@ Use to parse FormData or URLSearchParams entries into structured objects.
 - A bracket path is a string like `"user[address][city]"` that describes nested
   object/array structure.
 - Interprets bracket paths and constructs the corresponding nested object.
-- Mutates and returns a new object (does not mutate the input array).
+- Builds and returns a nested object from the input entries.
 - Supported syntax:
   - `"foo"` → object key `"foo"`
   - `"foo[bar]"` → nested `{ foo: { bar: ... } }`
@@ -49,6 +49,6 @@ const tree = SchemaGetter.makeTreeRecord([
 declare const makeTreeRecord: <A>(bracketPathEntries: ReadonlyArray<readonly [bracketPath: string, value: A]>) => Schema.TreeRecord<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L1805)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L1803)
 
 Since v4.0.0

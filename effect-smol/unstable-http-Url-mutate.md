@@ -3,8 +3,7 @@ Module: `Url`<br />
 
 ## Url.mutate
 
-This function clones the original `URL` object and applies a callback to the
-clone, allowing multiple updates at once.
+Updates a cloned `URL` with a callback, allowing multiple changes at once.
 
 **Example** (Mutating URL credentials)
 
@@ -28,6 +27,6 @@ console.log("Mutated:", mutatedUrl.toString())
 declare const mutate: { (f: (url: URL) => void): (self: URL) => URL; (self: URL, f: (url: URL) => void): URL; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Url.ts#L122)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Url.ts#L121)
 
 Since v4.0.0

@@ -3,7 +3,7 @@ Module: `EmbeddingModel`<br />
 
 ## EmbeddingModel.EmbeddingRequest
 
-Tagged request used by request resolvers for embedding operations.
+Represents a tagged request used by request resolvers for embedding operations.
 
 **When to use**
 
@@ -22,6 +22,6 @@ need a typed request for one input that resolves to `EmbedResponse`.
 declare class EmbeddingRequest
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EmbeddingModel.ts#L183)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EmbeddingModel.ts#L184)
 
 Since v4.0.0

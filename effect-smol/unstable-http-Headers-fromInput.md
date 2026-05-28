@@ -15,6 +15,6 @@ Header names are normalized to lowercase. Array values in record input are joine
 declare const fromInput: (input?: Input) => Headers
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Headers.ts#L231)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Headers.ts#L232)
 
 Since v4.0.0

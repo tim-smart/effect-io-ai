@@ -3,7 +3,7 @@ Module: `SchemaAST`<br />
 
 ## SchemaAST.FilterGroup
 
-A composite validation check grouping multiple `Check` values.
+Represents a composite validation check grouping multiple `Check` values.
 
 **Details**
 
@@ -25,6 +25,6 @@ declare class FilterGroup<E> { constructor(
   ) }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L2817)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L2829)
 
 Since v4.0.0

@@ -3,7 +3,13 @@ Module: `EventLogSessionAuth`<br />
 
 ## EventLogSessionAuth.SessionAuthChallengeTimeToLiveMillis
 
-Time-to-live, in milliseconds, for a pending session authentication challenge.
+Defines the time-to-live, in milliseconds, for a pending session
+authentication challenge.
+
+**When to use**
+
+Use when you need the timeout for pending event-log session authentication
+challenges.
 
 **Signature**
 
@@ -11,6 +17,6 @@ Time-to-live, in milliseconds, for a pending session authentication challenge.
 declare const SessionAuthChallengeTimeToLiveMillis: 30000
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventLogSessionAuth.ts#L87)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventLogSessionAuth.ts#L114)
 
 Since v4.0.0

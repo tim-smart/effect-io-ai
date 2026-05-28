@@ -33,6 +33,6 @@ const toDate = SchemaGetter.Date<string>()
 declare const Date: <E extends string | number | Date>() => Getter<Date, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L858)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L856)
 
 Since v4.0.0

@@ -3,7 +3,7 @@ Module: `Config`<br />
 
 ## Config.orElse
 
-Falls back to another config when parsing fails with a `ConfigError`.
+Provides a fallback config when parsing fails with a `ConfigError`.
 
 **When to use**
 
@@ -38,6 +38,6 @@ const hostConfig = Config.string("HOST").pipe(
 declare const orElse: { <A2>(that: (error: ConfigError) => Config<A2>): <A>(self: Config<A>) => Config<A2 | A>; <A, A2>(self: Config<A>, that: (error: ConfigError) => Config<A2>): Config<A | A2>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Config.ts#L339)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Config.ts#L338)
 
 Since v2.0.0

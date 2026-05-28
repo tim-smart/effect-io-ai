@@ -3,7 +3,7 @@ Module: `Duration`<br />
 
 ## Duration.times
 
-Multiplies a `Duration` by a number.
+Returns a `Duration` multiplied by a number.
 
 **Details**
 

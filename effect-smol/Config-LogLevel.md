@@ -3,7 +3,7 @@ Module: `Config`<br />
 
 ## Config.LogLevel
 
-A `Schema.Codec` for `LogLevel` string literals.
+Schema for `LogLevel` string literals.
 
 **When to use**
 
@@ -25,6 +25,6 @@ Accepted values: `"All"`, `"Fatal"`, `"Error"`, `"Warn"`, `"Info"`,
 declare const LogLevel: Schema.Literals<ReadonlyArray<LogLevel_.LogLevel>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Config.ts#L822)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Config.ts#L821)
 
 Since v4.0.0

@@ -3,15 +3,16 @@ Module: `Effect`<br />
 
 ## Effect.flip
 
-The `flip` function swaps the success and error channels of an effect,
-so that the success becomes the error, and the error becomes the success.
+Swaps an effect's success and failure channels.
+
+**When to use**
+
+Use to handle the failure value as a success, or to move the success value
+into the failure channel.
 
 **Details**
 
-This function is useful when you need to reverse the flow of an effect,
-treating the previously successful values as errors and vice versa. This can
-be helpful in scenarios where you want to handle a success as a failure or
-treat an error as a valid result.
+For an `Effect<A, E, R>`, the returned effect has type `Effect<E, A, R>`.
 
 **Example** (Swapping success and failure channels)
 

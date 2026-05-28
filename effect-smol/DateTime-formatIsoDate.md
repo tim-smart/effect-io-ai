@@ -3,7 +3,7 @@ Module: `DateTime`<br />
 
 ## DateTime.formatIsoDate
 
-Format a `DateTime` as a time zone adjusted ISO date string.
+Formats a `DateTime` as a time zone adjusted ISO date string.
 
 **Details**
 
@@ -29,6 +29,6 @@ console.log(DateTime.formatIsoDate(zoned)) // "2024-01-02" (next day in Auckland
 declare const formatIsoDate: (self: DateTime) => string
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L2712)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L2732)
 
 Since v3.6.0

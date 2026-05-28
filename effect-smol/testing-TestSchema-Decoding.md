@@ -3,7 +3,7 @@ Module: `TestSchema`<br />
 
 ## TestSchema.Decoding
 
-Decoding test helper that wraps a schema and exposes `succeed` and `fail` methods that run the schema's decoder and compare the result.
+Provides decoding test assertions through `succeed` and `fail` methods that run the schema's decoder and compare the result.
 
 **When to use**
 

@@ -3,7 +3,7 @@ Module: `McpSchema`<br />
 
 ## McpSchema.TextResourceContents
 
-The contents of a text resource, which can be represented as a string.
+Schema for text resource contents represented as a string.
 
 **Signature**
 
@@ -11,6 +11,6 @@ The contents of a text resource, which can be represented as a string.
 declare class TextResourceContents
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L872)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L956)
 
 Since v4.0.0

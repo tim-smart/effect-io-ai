@@ -29,6 +29,6 @@ const encode = SchemaGetter.encodeBase64<Uint8Array>()
 declare const encodeBase64: <E extends Uint8Array | string>() => Getter<string, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L1252)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L1250)
 
 Since v4.0.0

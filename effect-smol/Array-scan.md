@@ -3,7 +3,7 @@ Module: `Array`<br />
 
 ## Array.scan
 
-Left-to-right fold that keeps every intermediate accumulator value.
+Folds left-to-right while keeping every intermediate accumulator value.
 
 **When to use**
 
@@ -35,6 +35,6 @@ console.log(result) // [0, 1, 3, 6, 10]
 declare const scan: { <B, A>(b: B, f: (b: B, a: A) => B): (self: Iterable<A>) => NonEmptyArray<B>; <A, B>(self: Iterable<A>, b: B, f: (b: B, a: A) => B): NonEmptyArray<B>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L787)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L781)
 
 Since v2.0.0

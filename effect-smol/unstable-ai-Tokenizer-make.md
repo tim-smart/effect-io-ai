@@ -40,6 +40,6 @@ const wordTokenizer = Tokenizer.make({
 declare const make: (options: { readonly tokenize: (content: Prompt.Prompt) => Effect.Effect<Array<number>, AiError.AiError>; }) => Service
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tokenizer.ts#L172)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tokenizer.ts#L177)
 
 Since v4.0.0

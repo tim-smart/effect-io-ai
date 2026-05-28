@@ -33,6 +33,6 @@ export interface MultiSelectOptions {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L425)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L433)
 
 Since v4.0.0

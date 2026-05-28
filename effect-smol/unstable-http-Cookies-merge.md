@@ -3,7 +3,7 @@ Module: `Cookies`<br />
 
 ## Cookies.merge
 
-Combine two Cookies objects, removing duplicates from the first
+Combines two Cookies objects, removing duplicates from the first
 
 **Signature**
 

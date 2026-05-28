@@ -3,7 +3,7 @@ Module: `Cron`<br />
 
 ## Cron.isCron
 
-Checks if a given value is a Cron instance.
+Checks whether a given value is a Cron instance.
 
 **When to use**
 

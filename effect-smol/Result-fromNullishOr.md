@@ -41,6 +41,6 @@ console.log(Result.fromNullishOr(null, () => "fallback"))
 declare const fromNullishOr: { <A, E>(onNullish: (a: A) => E): (self: A) => Result<NonNullable<A>, E>; <A, E>(self: A, onNullish: (a: A) => E): Result<NonNullable<A>, E>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L449)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L469)
 
 Since v4.0.0

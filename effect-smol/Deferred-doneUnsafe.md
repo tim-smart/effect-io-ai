@@ -3,7 +3,7 @@ Module: `Deferred`<br />
 
 ## Deferred.doneUnsafe
 
-Synchronously attempts to complete the `Deferred` with the specified
+Attempts to complete the `Deferred` synchronously with the specified
 completion effect.
 
 **When to use**

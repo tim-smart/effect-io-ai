@@ -3,7 +3,7 @@ Module: `TxPubSub`<br />
 
 ## TxPubSub.isEmpty
 
-Checks if the TxPubSub has no pending messages (all subscriber queues are empty).
+Checks whether the TxPubSub has no pending messages (all subscriber queues are empty).
 
 **Example** (Checking whether a pub/sub is empty)
 

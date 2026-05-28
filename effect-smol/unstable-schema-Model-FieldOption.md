@@ -25,6 +25,6 @@ export interface FieldOption<S extends Schema.Top> extends
 {}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Model.ts#L326)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Model.ts#L325)
 
 Since v4.0.0

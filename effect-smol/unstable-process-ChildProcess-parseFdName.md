@@ -3,7 +3,7 @@ Module: `ChildProcess`<br />
 
 ## ChildProcess.parseFdName
 
-Parse an fd name like "fd3" to its numeric index.
+Parses an fd name like "fd3" to its numeric index.
 Returns undefined if the name is invalid.
 
 **Signature**

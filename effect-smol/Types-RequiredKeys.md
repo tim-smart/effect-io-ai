@@ -15,6 +15,6 @@ Use to derive the keys whose properties must be present on an object type.
 type RequiredKeys<T> = { [K in keyof T]-?: {} extends Pick<T, K> ? never : K }[keyof T]
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Types.ts#L1189)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Types.ts#L1190)
 
 Since v4.0.0

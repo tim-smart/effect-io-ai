@@ -3,7 +3,14 @@ Module: `Iterable`<br />
 
 ## Iterable.intersperse
 
-Places an element in between members of an `Iterable`.
+Places a separator between members of an `Iterable`.
+
+**When to use**
+
+Use to lazily insert a separator between adjacent values.
+
+**Details**
+
 If the input is a non-empty array, the result is also a non-empty array.
 
 **Example** (Interspersing separators)
@@ -43,6 +50,6 @@ console.log(Array.from(css).join("")) // "color: red; font-size: 14px; margin: 1
 declare const intersperse: { <B>(middle: B): <A>(self: Iterable<A>) => Iterable<A | B>; <A, B>(self: Iterable<A>, middle: B): Iterable<A | B>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Iterable.ts#L1027)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Iterable.ts#L1035)
 
 Since v2.0.0

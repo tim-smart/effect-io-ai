@@ -3,7 +3,7 @@ Module: `Cause`<br />
 
 ## Cause.isExceededCapacityError
 
-Tests if an arbitrary value is an `ExceededCapacityError`.
+Checks whether an arbitrary value is an `ExceededCapacityError`.
 
 **Example** (runtime type check)
 
@@ -20,6 +20,6 @@ console.log(Cause.isExceededCapacityError("nope")) // false
 declare const isExceededCapacityError: (u: unknown) => u is ExceededCapacityError
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L1626)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L1624)
 
 Since v4.0.0

@@ -3,7 +3,12 @@ Module: `HttpRouter`<br />
 
 ## HttpRouter.RouteContext
 
-Request-scoped service containing information about the matched route.
+Service for the matched HTTP route in the current request.
+
+**When to use**
+
+Use to read captured path parameters and route metadata while handling a
+request matched by the router.
 
 **Details**
 
@@ -16,6 +21,6 @@ matcher.
 declare class RouteContext
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpRouter.ts#L303)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpRouter.ts#L308)
 
 Since v4.0.0

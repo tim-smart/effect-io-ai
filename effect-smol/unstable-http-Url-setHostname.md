@@ -11,6 +11,6 @@ Updates the domain of the URL without modifying the port.
 declare const setHostname: { (hostname: string): (url: URL) => URL; (url: URL, hostname: string): URL; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Url.ts#L169)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Url.ts#L168)
 
 Since v4.0.0

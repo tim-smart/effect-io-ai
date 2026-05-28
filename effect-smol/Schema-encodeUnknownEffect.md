@@ -4,9 +4,16 @@ Module: `Schema`<br />
 ## Schema.encodeUnknownEffect
 
 Encodes an `unknown` input against a schema, returning an `Effect` that
-succeeds with the encoded value or fails with a `SchemaError`. Use this
-when the input type is not statically known. Prefer `encodeEffect` when
-the input is already typed as the schema's `Type`.
+succeeds with the encoded value or fails with a `SchemaError`.
+
+**When to use**
+
+Use when encoding input whose type is not statically known.
+
+**Details**
+
+Prefer `encodeEffect` when the input is already typed as the schema's
+`Type`.
 Options may be provided either when creating the encoder or when applying it;
 application options override creation options.
 
@@ -27,6 +34,6 @@ Effect.runPromise(Schema.encodeUnknownEffect(NumberFromString)(42)).then(console
 declare const encodeUnknownEffect: <S extends Top>(schema: S, options?: AST.ParseOptions) => (input: unknown, options?: AST.ParseOptions) => Effect.Effect<S["Encoded"], SchemaError, S["EncodingServices"]>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L1442)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L1537)
 
 Since v4.0.0

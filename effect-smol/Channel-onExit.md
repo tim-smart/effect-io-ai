@@ -3,9 +3,8 @@ Module: `Channel`<br />
 
 ## Channel.onExit
 
-Returns a new channel with an attached finalizer. The finalizer is
-guaranteed to be executed so long as the channel begins execution (and
-regardless of whether or not it completes).
+Returns a channel with an exit-aware finalizer that is guaranteed to run once
+the channel begins execution, whether it succeeds or fails.
 
 **Example** (Running exit finalizers)
 
@@ -35,6 +34,6 @@ const channelWithExit = Channel.onExit(dataChannel, (exit) => {
 declare const onExit: { <OutDone, OutErr, Env2>(finalizer: (e: Exit.Exit<OutDone, OutErr>) => Effect.Effect<unknown, never, Env2>): <OutElem, InElem, InErr, InDone, Env>(self: Channel<OutElem, OutErr, OutDone, InElem, InErr, InDone, Env>) => Channel<OutElem, OutErr, OutDone, InElem, InErr, InDone, Env2 | Env>; <OutElem, OutErr, OutDone, InElem, InErr, InDone, Env, Env2>(self: Channel<OutElem, OutErr, OutDone, InElem, InErr, InDone, Env>, finalizer: (e: Exit.Exit<OutDone, OutErr>) => Effect.Effect<unknown, never, Env2>): Channel<OutElem, OutErr, OutDone, InElem, InErr, InDone, Env2 | Env>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L6967)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L6978)
 
 Since v4.0.0

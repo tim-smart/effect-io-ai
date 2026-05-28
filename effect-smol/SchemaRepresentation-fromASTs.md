@@ -11,8 +11,7 @@ Use when you have multiple schemas that may share references.
 
 **Details**
 
-This is a pure function and does not mutate the input ASTs. All schemas share
-a single `references` map.
+All schemas share a single `references` map.
 
 **See**
 
@@ -25,6 +24,6 @@ a single `references` map.
 declare const fromASTs: (asts: readonly [AST.AST, ...Array<AST.AST>]) => MultiDocument
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaRepresentation.ts#L1718)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaRepresentation.ts#L1716)
 
 Since v4.0.0

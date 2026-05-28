@@ -3,7 +3,7 @@ Module: `MessageStorage`<br />
 
 ## MessageStorage.MemoryTransaction
 
-Can be used in tests to simulate a transaction.
+Provides a context reference used in tests to simulate a transaction.
 
 **Signature**
 

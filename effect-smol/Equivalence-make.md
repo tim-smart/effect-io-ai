@@ -13,7 +13,6 @@ Use when you need a custom equivalence that is not just strict equality
 
 **Details**
 
-- Does not mutate inputs
 - First checks reference equality (`===`) for performance; if values are identical, returns `true` without calling the function
 - Falls back to the provided equivalence function if values are not the same reference
 - The provided function must satisfy reflexive, symmetric, and transitive properties
@@ -57,6 +56,6 @@ console.log(tolerance(1.0, 1.00001)) // true
 declare const make: <A>(isEquivalent: (self: A, that: A) => boolean) => Equivalence<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Equivalence.ts#L195)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Equivalence.ts#L193)
 
 Since v2.0.0

@@ -8,8 +8,8 @@ be encoded.
 
 **When to use**
 
-Use when cookie errors should be represented as `CookiesError`
-failures.
+Use when setting multiple trusted cookies and encoding failures should throw
+instead of being represented as `CookiesError` failures.
 
 **Signature**
 

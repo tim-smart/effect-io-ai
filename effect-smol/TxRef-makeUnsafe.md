@@ -3,7 +3,7 @@ Module: `TxRef`<br />
 
 ## TxRef.makeUnsafe
 
-Synchronously creates a new `TxRef` with the specified initial value.
+Creates a new `TxRef` synchronously with the specified initial value.
 
 **When to use**
 

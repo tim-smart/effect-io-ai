@@ -3,7 +3,7 @@ Module: `Chunk`<br />
 
 ## Chunk.isChunk
 
-Checks if `u` is a `Chunk<unknown>`
+Checks whether `u` is a `Chunk<unknown>`
 
 **Example** (Checking for chunks)
 

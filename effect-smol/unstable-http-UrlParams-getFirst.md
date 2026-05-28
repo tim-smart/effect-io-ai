@@ -3,7 +3,7 @@ Module: `UrlParams`<br />
 
 ## UrlParams.getFirst
 
-Returns the first value for a query parameter key.
+Returns the first value for a query parameter key safely.
 
 **Details**
 

@@ -3,7 +3,7 @@ Module: `References`<br />
 
 ## References.TracerTimingEnabled
 
-Reference for controlling whether trace timing is enabled globally. When set
+Context reference for controlling whether trace timing is enabled globally. When set
 to false, spans will not contain timing information (trace time will always
 be set to zero).
 

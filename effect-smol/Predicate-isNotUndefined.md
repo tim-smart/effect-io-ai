@@ -11,7 +11,6 @@ Use when you want to filter out `undefined` while preserving other falsy values.
 
 **Details**
 
-- Pure; does not mutate input.
 - Returns a refinement that excludes `undefined`.
 
 **Example** (Filter undefined)
@@ -36,6 +35,6 @@ console.log(defined)
 declare const isNotUndefined: <A>(input: A) => input is Exclude<A, undefined>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L864)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L847)
 
 Since v2.0.0

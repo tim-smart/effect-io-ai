@@ -3,7 +3,7 @@ Module: `TxHashSet`<br />
 
 ## TxHashSet.every
 
-Tests whether all values in the TxHashSet satisfy the predicate.
+Checks whether all values in the TxHashSet satisfy the predicate.
 
 **Example** (Testing whether every value matches)
 

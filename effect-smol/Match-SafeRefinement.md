@@ -38,6 +38,6 @@ export interface SafeRefinement<in A, out R = A> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L2079)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L2074)
 
 Since v4.0.0

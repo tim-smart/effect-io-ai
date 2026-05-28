@@ -34,6 +34,6 @@ const StartupLogLive = flag
 declare const empty: Layer<never, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L884)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L892)
 
 Since v2.0.0

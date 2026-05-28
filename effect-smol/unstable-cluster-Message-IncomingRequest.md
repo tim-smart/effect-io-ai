@@ -3,7 +3,7 @@ Module: `Message`<br />
 
 ## Message.IncomingRequest
 
-Incoming persisted request whose payload has not yet been decoded with the RPC
+Represents an incoming persisted request whose payload has not yet been decoded with the RPC
 schema.
 
 **Details**

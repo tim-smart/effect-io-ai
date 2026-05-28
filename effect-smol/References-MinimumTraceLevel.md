@@ -3,7 +3,7 @@ Module: `References`<br />
 
 ## References.MinimumTraceLevel
 
-Reference setting the minimum trace level threshold for span sampling.
+Context reference for the minimum trace level threshold for span sampling.
 
 **When to use**
 

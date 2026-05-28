@@ -3,7 +3,7 @@ Module: `EmbeddingModel`<br />
 
 ## EmbeddingModel.Service
 
-Service interface for embedding operations.
+Defines the service interface for embedding operations.
 
 **Signature**
 
@@ -15,6 +15,6 @@ export interface Service {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EmbeddingModel.ts#L195)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EmbeddingModel.ts#L196)
 
 Since v4.0.0

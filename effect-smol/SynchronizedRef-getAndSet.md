@@ -3,7 +3,7 @@ Module: `SynchronizedRef`<br />
 
 ## SynchronizedRef.getAndSet
 
-Atomically sets a new value and returns the previous value, serialized by the
+Sets a new value atomically and returns the previous value, serialized by the
 ref's semaphore.
 
 **When to use**

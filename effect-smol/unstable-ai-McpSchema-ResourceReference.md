@@ -3,7 +3,7 @@ Module: `McpSchema`<br />
 
 ## McpSchema.ResourceReference
 
-A reference to a resource or resource template definition.
+Schema for a reference to a resource or resource template definition.
 
 **Signature**
 
@@ -11,6 +11,6 @@ A reference to a resource or resource template definition.
 declare class ResourceReference
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L1759)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L1874)
 
 Since v4.0.0

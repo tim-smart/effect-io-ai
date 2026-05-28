@@ -12,6 +12,6 @@ or binary frames and writing outgoing frame batches to the socket.
 declare const toChannelMap: <IE, A>(self: Socket, f: (data: Uint8Array | string) => A) => Channel.Channel<NonEmptyReadonlyArray<A>, SocketError | IE, void, NonEmptyReadonlyArray<Uint8Array | string | CloseEvent>, IE>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Socket.ts#L395)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Socket.ts#L401)
 
 Since v4.0.0

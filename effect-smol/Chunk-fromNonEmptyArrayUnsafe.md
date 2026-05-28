@@ -3,7 +3,8 @@ Module: `Chunk`<br />
 
 ## Chunk.fromNonEmptyArrayUnsafe
 
-Wraps an array into a chunk without copying, unsafe on mutable arrays
+Wraps a non-empty array into a non-empty chunk without copying, so mutating
+the source array can mutate the chunk.
 
 **Example** (Creating non-empty chunks without copying arrays)
 
@@ -24,6 +25,6 @@ console.log(Chunk.isNonEmpty(chunk)) // true
 declare const fromNonEmptyArrayUnsafe: <A>(self: NonEmptyReadonlyArray<A>) => NonEmptyChunk<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L636)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L647)
 
 Since v4.0.0

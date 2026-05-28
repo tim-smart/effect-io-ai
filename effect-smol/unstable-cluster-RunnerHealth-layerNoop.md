@@ -3,11 +3,11 @@ Module: `RunnerHealth`<br />
 
 ## RunnerHealth.layerNoop
 
-A layer which will **always** consider a Runner healthy.
+Layer that always considers a runner healthy.
 
 **When to use**
 
-Use when this is useful for testing.
+Use when tests or local development do not need active runner health checks.
 
 **Signature**
 

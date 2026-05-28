@@ -3,7 +3,7 @@ Module: `Cause`<br />
 
 ## Cause.isAsyncFiberError
 
-Tests if an arbitrary value is an `AsyncFiberError`.
+Checks whether an arbitrary value is an `AsyncFiberError`.
 
 **Example** (runtime type check)
 
@@ -24,6 +24,6 @@ console.log(Cause.isAsyncFiberError("nope")) // false
 declare const isAsyncFiberError: (u: unknown) => u is AsyncFiberError
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L1718)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L1716)
 
 Since v4.0.0

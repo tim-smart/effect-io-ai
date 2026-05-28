@@ -3,7 +3,7 @@ Module: `Ref`<br />
 
 ## Ref.modify
 
-Atomically modifies the value of the Ref using the given function.
+Modifies the value of the Ref atomically using the given function.
 
 **When to use**
 

@@ -3,7 +3,7 @@ Module: `Ref`<br />
 
 ## Ref.updateSome
 
-Atomically updates the value of the Ref using the given partial function.
+Updates the value of the Ref atomically using the given partial function.
 
 **When to use**
 

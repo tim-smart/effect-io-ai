@@ -3,7 +3,7 @@ Module: `Record`<br />
 
 ## Record.isSubrecordBy
 
-Check if all the keys and values in one record are also found in another record.
+Checks whether all the keys and values in one record are also found in another record.
 Uses the provided equivalence function to compare values.
 
 **Example** (Checking subrecords with a custom equivalence)
@@ -38,6 +38,6 @@ console.log(
 declare const isSubrecordBy: <A>(equivalence: Equivalence<A>) => { <K extends string>(that: ReadonlyRecord<K, A>): (self: ReadonlyRecord<K, A>) => boolean; <K extends string>(self: ReadonlyRecord<K, A>, that: ReadonlyRecord<K, A>): boolean; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Record.ts#L1148)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Record.ts#L1159)
 
 Since v2.0.0

@@ -13,6 +13,6 @@ export interface AtomResultFn<Arg, A, E = never>
 {}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Atom.ts#L1097)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Atom.ts#L1102)
 
 Since v4.0.0

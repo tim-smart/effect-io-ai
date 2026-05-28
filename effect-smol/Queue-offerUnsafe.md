@@ -3,7 +3,7 @@ Module: `Queue`<br />
 
 ## Queue.offerUnsafe
 
-Add a message to the queue synchronously. Returns `false` if the queue is done.
+Adds a message to the queue synchronously. Returns `false` if the queue is done.
 
 **Gotchas**
 

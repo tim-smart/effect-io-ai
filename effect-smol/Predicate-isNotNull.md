@@ -11,7 +11,6 @@ Use when you want to filter out `null` while preserving other falsy values.
 
 **Details**
 
-- Pure; does not mutate input.
 - Returns a refinement that excludes `null`.
 
 **Example** (Filter null)
@@ -36,6 +35,6 @@ console.log(nonNull)
 declare const isNotNull: <A>(input: A) => input is Exclude<A, null>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L927)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L908)
 
 Since v2.0.0

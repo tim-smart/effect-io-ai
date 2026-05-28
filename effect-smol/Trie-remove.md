@@ -3,7 +3,7 @@ Module: `Trie`<br />
 
 ## Trie.remove
 
-Remove the entry for the specified key in the `Trie`.
+Removes the entry for the specified key in the `Trie`.
 
 **Example** (Removing entries)
 
@@ -32,6 +32,6 @@ assert.deepStrictEqual(Trie.get(trie2, "call"), Option.none())
 declare const remove: { (key: string): <V>(self: Trie<V>) => Trie<V>; <V>(self: Trie<V>, key: string): Trie<V>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Trie.ts#L657)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Trie.ts#L655)
 
 Since v2.0.0

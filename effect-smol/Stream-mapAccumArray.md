@@ -3,7 +3,7 @@ Module: `Stream`<br />
 
 ## Stream.mapAccumArray
 
-Statefully maps over non-empty chunk arrays, emitting zero or more values per chunk.
+Maps over non-empty chunk arrays statefully, emitting zero or more values per chunk.
 
 **Details**
 
@@ -36,6 +36,6 @@ Effect.runPromise(program)
 declare const mapAccumArray: { <S, A, B>(initial: LazyArg<S>, f: (s: S, a: Arr.NonEmptyReadonlyArray<A>) => readonly [state: S, values: ReadonlyArray<B>], options?: { readonly onHalt?: ((state: S) => ReadonlyArray<B>) | undefined; }): <E, R>(self: Stream<A, E, R>) => Stream<B, E, R>; <A, E, R, S, B>(self: Stream<A, E, R>, initial: LazyArg<S>, f: (s: S, a: Arr.NonEmptyReadonlyArray<A>) => readonly [state: S, values: ReadonlyArray<B>], options?: { readonly onHalt?: ((state: S) => Array<B>) | undefined; }): Stream<B, E, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L7474)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L7492)
 
 Since v4.0.0

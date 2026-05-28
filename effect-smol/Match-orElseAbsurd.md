@@ -3,7 +3,7 @@ Module: `Match`<br />
 
 ## Match.orElseAbsurd
 
-Throws an error if no pattern matches.
+Returns a matcher that throws an error if no pattern matches.
 
 **When to use**
 
@@ -50,6 +50,6 @@ console.log(strictMatcher("b")) // "Found B"
 declare const orElseAbsurd: <I, R, RA, A, Pr, Ret>(self: Matcher<I, R, RA, A, Pr, Ret>) => [Pr] extends [never] ? (input: I) => Unify<A> : Unify<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L1921)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L1909)
 
 Since v4.0.0

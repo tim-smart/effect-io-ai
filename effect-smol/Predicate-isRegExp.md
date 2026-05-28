@@ -11,7 +11,6 @@ Use when you need a runtime guard for regular expressions.
 
 **Details**
 
-- Pure; does not mutate input.
 - Uses `instanceof RegExp`.
 
 **Example** (Guard RegExp)
@@ -34,6 +33,6 @@ console.log(Predicate.isRegExp(data))
 declare const isRegExp: (input: unknown) => input is RegExp
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L1462)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L1428)
 
 Since v3.9.0

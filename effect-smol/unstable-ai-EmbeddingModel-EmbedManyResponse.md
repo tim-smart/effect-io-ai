@@ -3,7 +3,8 @@ Module: `EmbeddingModel`<br />
 
 ## EmbeddingModel.EmbedManyResponse
 
-Batch embedding response containing per-input embeddings and usage metadata.
+Response for batch embedding requests containing per-input embeddings and usage
+metadata.
 
 **Details**
 
@@ -21,6 +22,6 @@ the operation.
 declare class EmbedManyResponse
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EmbeddingModel.ts#L138)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EmbeddingModel.ts#L139)
 
 Since v4.0.0

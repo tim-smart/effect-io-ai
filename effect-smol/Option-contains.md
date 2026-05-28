@@ -3,7 +3,7 @@ Module: `Option`<br />
 
 ## Option.contains
 
-Checks if an `Option` contains a value equal to the given one, using default
+Checks whether an `Option` contains a value equal to the given one, using default
 structural equality.
 
 **When to use**
@@ -41,6 +41,6 @@ console.log(Option.none().pipe(Option.contains(2)))
 declare const contains: { <A>(a: A): (self: Option<A>) => boolean; <A>(self: Option<A>, a: A): boolean; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L2318)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L2317)
 
 Since v2.0.0

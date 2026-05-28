@@ -3,7 +3,7 @@ Module: `Inspectable`<br />
 
 ## Inspectable.toJson
 
-Safely converts a value to a JSON-serializable representation.
+Converts a value to a JSON-serializable representation safely.
 
 **When to use**
 

@@ -3,7 +3,7 @@ Module: `Path`<br />
 
 ## Path.Path
 
-Service interface for platform-specific path manipulation.
+Defines the service interface for platform-specific path manipulation.
 
 **When to use**
 
@@ -71,6 +71,6 @@ export interface Path {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Path.ts#L109)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Path.ts#L106)
 
 Since v4.0.0

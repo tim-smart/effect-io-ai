@@ -11,6 +11,6 @@ Unique brand for `TimeoutError`.
 declare const TimeoutErrorTypeId: "~effect/Cause/TimeoutError"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L1481)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L1479)
 
 Since v4.0.0

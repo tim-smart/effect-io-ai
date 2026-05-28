@@ -26,6 +26,6 @@ assert.deepStrictEqual(BigInt.sign(5n), 1)
 declare const sign: (n: bigint) => Ordering
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigInt.ts#L633)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigInt.ts#L635)
 
 Since v2.0.0

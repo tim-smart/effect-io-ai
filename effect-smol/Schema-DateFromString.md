@@ -14,6 +14,6 @@ export interface DateFromString extends decodeTo<Date, String> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L9778)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L10005)
 
 Since v3.10.0

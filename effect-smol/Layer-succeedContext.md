@@ -51,6 +51,6 @@ const layer = Layer.succeedContext(context)
 declare const succeedContext: <A>(context: Context.Context<A>) => Layer<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L854)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L862)
 
 Since v2.0.0

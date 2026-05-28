@@ -13,6 +13,6 @@ themselves.
 declare const json: { makeUnsafe(): Parser; readonly contentType: string; readonly includesFraming: boolean; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RpcSerialization.ts#L79)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RpcSerialization.ts#L84)
 
 Since v4.0.0

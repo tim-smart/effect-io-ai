@@ -3,7 +3,7 @@ Module: `HttpServerError`<br />
 
 ## HttpServerError.causeResponseStripped
 
-Synchronously derives an HTTP response from a failed handler cause.
+Derives an HTTP response from a failed handler cause synchronously.
 
 **Details**
 

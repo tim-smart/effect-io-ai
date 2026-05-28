@@ -3,7 +3,7 @@ Module: `Equal`<br />
 
 ## Equal.equals
 
-Compares two values for deep structural equality.
+Checks whether two values are deeply structurally equal.
 
 **When to use**
 

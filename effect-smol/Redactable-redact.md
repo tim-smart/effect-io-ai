@@ -3,7 +3,7 @@ Module: `Redactable`<br />
 
 ## Redactable.redact
 
-Redacts a value if it implements `Redactable`, otherwise returns it
+Returns a redacted value if it implements `Redactable`, otherwise returns it
 unchanged.
 
 **When to use**
@@ -14,7 +14,7 @@ or may not implement the redaction protocol.
 **Details**
 
 This function calls `isRedactable` and, when it returns `true`,
-delegates to `getRedacted`. It does not mutate the input.
+delegates to `getRedacted`.
 
 **Gotchas**
 

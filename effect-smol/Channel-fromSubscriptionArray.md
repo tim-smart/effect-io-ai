@@ -3,7 +3,7 @@ Module: `Channel`<br />
 
 ## Channel.fromSubscriptionArray
 
-Create a channel from a PubSub subscription that outputs arrays of values.
+Creates a channel from a PubSub subscription that outputs arrays of values.
 
 **Details**
 

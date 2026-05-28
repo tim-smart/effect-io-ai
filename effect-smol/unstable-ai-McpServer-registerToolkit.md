@@ -3,7 +3,7 @@ Module: `McpServer`<br />
 
 ## McpServer.registerToolkit
 
-Register a `Toolkit` with the `McpServer`.
+Registers a `Toolkit` with the `McpServer`.
 
 **Signature**
 

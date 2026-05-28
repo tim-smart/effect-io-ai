@@ -3,7 +3,7 @@ Module: `Queue`<br />
 
 ## Queue.isFull
 
-Check if the queue is full.
+Checks whether the queue is full.
 
 **Example** (Checking if queues are full)
 
@@ -28,6 +28,6 @@ const program = Effect.gen(function*() {
 declare const isFull: <A, E>(self: Dequeue<A, E>) => Effect<boolean>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Queue.ts#L1667)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Queue.ts#L1683)
 
 Since v2.0.0

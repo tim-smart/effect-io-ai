@@ -3,7 +3,7 @@ Module: `SchemaAST`<br />
 
 ## SchemaAST.PropertySignature
 
-A named property within an `Objects` node.
+Represents a named property within an `Objects` node.
 
 **Details**
 
@@ -24,6 +24,6 @@ declare class PropertySignature { constructor(
   ) }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L1827)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L1839)
 
 Since v3.10.0

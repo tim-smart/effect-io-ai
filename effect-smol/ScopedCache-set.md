@@ -3,7 +3,7 @@ Module: `ScopedCache`<br />
 
 ## ScopedCache.set
 
-Stores a successful value for a key without running the lookup function.
+Sets a successful value for a key without running the lookup function.
 
 **When to use**
 

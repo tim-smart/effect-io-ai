@@ -37,6 +37,6 @@ const schema = Schema.String.pipe(
 declare const uint8ArrayFromBase64String: Transformation<Uint8Array<ArrayBufferLike>, string, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L1408)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L1406)
 
 Since v4.0.0

@@ -3,7 +3,7 @@ Module: `SchemaRepresentation`<br />
 
 ## SchemaRepresentation.$Objects
 
-Schema codec for the `Objects` representation node.
+Schema for the `Objects` representation node.
 
 **Signature**
 

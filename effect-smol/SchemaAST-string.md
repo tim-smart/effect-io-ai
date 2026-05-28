@@ -3,7 +3,7 @@ Module: `SchemaAST`<br />
 
 ## SchemaAST.string
 
-Singleton `String` AST instance.
+Provides the singleton `String` AST instance.
 
 **When to use**
 
@@ -20,6 +20,6 @@ Use as the shared `SchemaAST` node for unconstrained JavaScript strings.
 declare const string: String
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L1350)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L1360)
 
 Since v4.0.0

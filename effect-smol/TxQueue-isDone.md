@@ -3,7 +3,7 @@ Module: `TxQueue`<br />
 
 ## TxQueue.isDone
 
-Checks if the queue is done (completed or failed).
+Checks whether the queue is done (completed or failed).
 
 **Example** (Checking done state)
 

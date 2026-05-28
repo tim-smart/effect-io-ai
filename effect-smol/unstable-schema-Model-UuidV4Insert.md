@@ -19,6 +19,6 @@ export interface UuidV4Insert<B extends string> extends
 {}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Model.ts#L773)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Model.ts#L772)
 
 Since v4.0.0

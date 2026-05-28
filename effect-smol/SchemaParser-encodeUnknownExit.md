@@ -3,7 +3,8 @@ Module: `SchemaParser`<br />
 
 ## SchemaParser.encodeUnknownExit
 
-Creates a synchronous encoder for `unknown` input that returns an `Exit`.
+Creates a synchronous encoder for `unknown` input that reports failure safely
+as an `Exit`.
 
 **When to use**
 
@@ -26,6 +27,6 @@ or `Exit.Failure` with a `SchemaIssue.Issue`.
 declare const encodeUnknownExit: <S extends Schema.Encoder<unknown>>(schema: S, options?: AST.ParseOptions) => (input: unknown, options?: AST.ParseOptions) => Exit.Exit<S["Encoded"], Issue.Issue>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaParser.ts#L694)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaParser.ts#L697)
 
 Since v4.0.0

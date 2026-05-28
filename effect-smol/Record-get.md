@@ -3,7 +3,7 @@ Module: `Record`<br />
 
 ## Record.get
 
-Retrieve a value at a particular key from a record, returning it wrapped in an `Option`.
+Retrieves a value at a particular key from a record safely, returning it wrapped in an `Option`.
 
 **Example** (Getting a value as an Option)
 

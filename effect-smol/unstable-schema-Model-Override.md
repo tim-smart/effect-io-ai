@@ -12,6 +12,6 @@ overrideable default.
 declare const Override: <A>(value: A) => A & Brand<"Override">
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Model.ts#L194)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Model.ts#L193)
 
 Since v4.0.0

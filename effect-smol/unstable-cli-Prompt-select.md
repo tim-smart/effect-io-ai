@@ -16,6 +16,6 @@ At most one choice may be marked as selected by default.
 declare const select: <const A>(options: SelectOptions<A>) => Prompt<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L1077)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L1102)
 
 Since v4.0.0

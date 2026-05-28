@@ -3,7 +3,7 @@ Module: `EventGroup`<br />
 
 ## EventGroup.empty
 
-Empty event group used as the starting point for defining a group.
+Creates an empty event group used as the starting point for defining a group.
 
 **When to use**
 

@@ -3,7 +3,7 @@ Module: `EventLogMessage`<br />
 
 ## EventLogMessage.SingleMessage
 
-Transport message containing an entire encoded event-log payload in one frame.
+Represents an entire encoded event-log payload in one transport frame.
 
 **Signature**
 
@@ -11,6 +11,6 @@ Transport message containing an entire encoded event-log payload in one frame.
 declare class SingleMessage
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventLogMessage.ts#L162)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventLogMessage.ts#L163)
 
 Since v4.0.0

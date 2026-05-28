@@ -16,6 +16,6 @@ metadata attached to a notification.
 declare class NotificationMeta
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L206)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L205)
 
 Since v4.0.0

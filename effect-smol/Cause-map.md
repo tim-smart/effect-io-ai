@@ -16,8 +16,7 @@ interruptions unchanged.
 
 If at least one `Fail` reason exists, this returns a new `Cause`
 containing the mapped failures. If the cause has no `Fail` reasons, the
-original cause is returned unchanged. In either case, the original cause is
-not mutated.
+original cause is returned unchanged.
 
 **Example** (mapping errors to uppercase)
 
@@ -38,6 +37,6 @@ if (Cause.isFailReason(reason)) {
 declare const map: { <E, E2>(f: (error: Types.NoInfer<E>) => E2): (self: Cause<E>) => Cause<E2>; <E, E2>(self: Cause<E>, f: (error: Types.NoInfer<E>) => E2): Cause<E2>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L744)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L743)
 
 Since v2.0.0

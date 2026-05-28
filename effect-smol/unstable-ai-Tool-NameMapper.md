@@ -3,8 +3,8 @@ Module: `Tool`<br />
 
 ## Tool.NameMapper
 
-A utility which allows mapping between a provider-defined name for a tool
-and the name given to the tool by the Effect AI SDK.
+Maps between a provider-defined tool name and the name given to the tool by
+the Effect AI SDK.
 
 **Details**
 

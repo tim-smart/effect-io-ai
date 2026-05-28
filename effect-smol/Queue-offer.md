@@ -3,7 +3,7 @@ Module: `Queue`<br />
 
 ## Queue.offer
 
-Add a message to the queue. Returns `false` if the queue is done.
+Adds a message to the queue. Returns `false` if the queue is done.
 
 **Details**
 

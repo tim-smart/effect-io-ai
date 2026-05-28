@@ -3,7 +3,7 @@ Module: `HttpClientError`<br />
 
 ## HttpClientError.EncodeError
 
-Request error for failures while encoding an HTTP request body.
+Error describing failures while encoding an HTTP request body.
 
 **Signature**
 

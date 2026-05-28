@@ -47,6 +47,6 @@ console.log(combined(1, 1.5)) // false (strict equal fails)
 declare const makeReducer: <A>() => Reducer.Reducer<Equivalence<A>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Equivalence.ts#L888)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Equivalence.ts#L878)
 
 Since v4.0.0

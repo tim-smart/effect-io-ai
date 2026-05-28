@@ -3,7 +3,7 @@ Module: `ClusterMetrics`<br />
 
 ## ClusterMetrics.entities
 
-Gauge tracking the number of active entity instances for each entity type on
+Creates a gauge tracking the number of active entity instances for each entity type on
 the current runner.
 
 **Details**

@@ -3,7 +3,7 @@ Module: `MutableHashMap`<br />
 
 ## MutableHashMap.has
 
-Checks if the MutableHashMap contains the specified key.
+Checks whether the MutableHashMap contains the specified key.
 
 **When to use**
 

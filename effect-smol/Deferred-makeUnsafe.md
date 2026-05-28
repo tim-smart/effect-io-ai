@@ -3,7 +3,7 @@ Module: `Deferred`<br />
 
 ## Deferred.makeUnsafe
 
-Synchronously creates an empty `Deferred` outside the `Effect` runtime.
+Creates an empty `Deferred` synchronously outside the `Effect` runtime.
 
 **When to use**
 

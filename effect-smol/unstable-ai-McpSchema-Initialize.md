@@ -3,8 +3,8 @@ Module: `McpSchema`<br />
 
 ## McpSchema.Initialize
 
-This request is sent from the client to the server when it first connects,
-asking it to begin initialization.
+Sent from the client to the server when it first connects, asking it to begin
+initialization.
 
 **Signature**
 
@@ -12,6 +12,6 @@ asking it to begin initialization.
 declare class Initialize
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L640)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L726)
 
 Since v4.0.0

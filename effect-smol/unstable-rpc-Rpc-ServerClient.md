@@ -3,7 +3,12 @@ Module: `Rpc`<br />
 
 ## Rpc.ServerClient
 
-Server-side metadata for the client associated with an RPC request.
+Represents server-side metadata for the client associated with an RPC request.
+
+**When to use**
+
+Use to inspect or annotate the connected client while handling an RPC request
+on the server.
 
 **Details**
 
@@ -16,6 +21,6 @@ extend.
 declare class ServerClient { constructor(id: number) }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Rpc.ts#L215)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Rpc.ts#L220)
 
 Since v4.0.0

@@ -3,7 +3,7 @@ Module: `MutableHashSet`<br />
 
 ## MutableHashSet.isMutableHashSet
 
-Checks if the specified value is a `MutableHashSet`, `false` otherwise.
+Checks whether the specified value is a `MutableHashSet`, `false` otherwise.
 
 **When to use**
 

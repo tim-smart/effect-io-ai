@@ -13,7 +13,6 @@ Use when you already have `Getter` instances and want to pair them.
 
 **Details**
 
-- Does not mutate the input.
 - Returns the input unchanged if it is already a `Transformation`.
 
 **Example** (Wrapping existing getters)
@@ -39,6 +38,6 @@ const t = SchemaTransformation.make({
 declare const make: <T, E, RD = never, RE = never>(options: { readonly decode: Getter.Getter<T, E, RD>; readonly encode: Getter.Getter<E, T, RE>; }) => Transformation<T, E, RD, RE>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L304)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L302)
 
 Since v3.10.0

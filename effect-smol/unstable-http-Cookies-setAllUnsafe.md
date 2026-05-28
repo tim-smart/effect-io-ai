@@ -3,7 +3,7 @@ Module: `Cookies`<br />
 
 ## Cookies.setAllUnsafe
 
-Add multiple cookies to a Cookies object, throwing an error if invalid
+Adds multiple cookies to a Cookies object, throwing an error if invalid
 
 **Signature**
 

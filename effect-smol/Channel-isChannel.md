@@ -3,7 +3,7 @@ Module: `Channel`<br />
 
 ## Channel.isChannel
 
-Tests if a value is a `Channel`.
+Checks whether a value is a `Channel`.
 
 **Example** (Checking for channels)
 

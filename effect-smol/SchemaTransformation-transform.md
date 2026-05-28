@@ -45,6 +45,6 @@ const CentsFromDollars = Schema.Number.pipe(
 declare const transform: <T, E>(options: { readonly decode: (input: E) => T; readonly encode: (input: T) => E; }) => Transformation<T, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L405)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L403)
 
 Since v3.10.0

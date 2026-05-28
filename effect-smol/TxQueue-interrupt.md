@@ -3,7 +3,7 @@ Module: `TxQueue`<br />
 
 ## TxQueue.interrupt
 
-Gracefully interrupts the queue with the current fiber's interruption cause.
+Interrupts the queue gracefully with the current fiber's interruption cause.
 
 **Details**
 

@@ -3,7 +3,7 @@ Module: `OpenAiClient`<br />
 
 ## OpenAiClient.OpenAiClient
 
-Context service tag for the OpenAI-compatible chat completions and embeddings client.
+Service tag for the OpenAI-compatible chat completions and embeddings client.
 
 **When to use**
 

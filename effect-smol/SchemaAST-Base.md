@@ -3,7 +3,7 @@ Module: `SchemaAST`<br />
 
 ## SchemaAST.Base
 
-Abstract base class for all `AST` node variants.
+Represents the abstract base class for all `AST` node variants.
 
 **Details**
 

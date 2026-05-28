@@ -35,6 +35,6 @@ const noEncode = SchemaGetter.forbidden<string, number>(
 declare const forbidden: <T, E>(message: (oe: Option.Option<E>) => string) => Getter<T, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L260)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L259)
 
 Since v4.0.0

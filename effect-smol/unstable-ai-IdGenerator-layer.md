@@ -40,6 +40,6 @@ const program = Effect.gen(function*() {
 declare const layer: (options: MakeOptions) => Layer.Layer<IdGenerator, Cause.IllegalArgumentError>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/IdGenerator.ts#L333)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/IdGenerator.ts#L338)
 
 Since v4.0.0

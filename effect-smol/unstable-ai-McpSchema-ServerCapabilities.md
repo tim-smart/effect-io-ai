@@ -3,9 +3,17 @@ Module: `McpSchema`<br />
 
 ## McpSchema.ServerCapabilities
 
-Capabilities that a server may support. Known capabilities are defined
-here, in this schema, but this is not a closed set: any server can define
-its own, additional capabilities.
+Describes capabilities advertised by an MCP server.
+
+**When to use**
+
+Use to describe which optional MCP features a server supports during
+initialization.
+
+**Details**
+
+Known capabilities are represented by this schema, but the capability set is
+open and servers may define additional capabilities.
 
 **Signature**
 
@@ -13,6 +21,6 @@ its own, additional capabilities.
 declare class ServerCapabilities
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L378)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L397)
 
 Since v4.0.0

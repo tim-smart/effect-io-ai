@@ -3,7 +3,7 @@ Module: `RequestResolver`<br />
 
 ## RequestResolver.grouped
 
-Transform a request resolver by grouping requests using the specified key
+Transforms a request resolver by grouping requests using the specified key
 function.
 
 **Example** (Grouping resolver requests)
@@ -56,6 +56,6 @@ const requests = [
 declare const grouped: { <A extends Request.Any, K>(f: (entry: Request.Entry<A>) => K): (self: RequestResolver<A>) => RequestResolver<A>; <A extends Request.Any, K>(self: RequestResolver<A>, f: (entry: Request.Entry<A>) => K): RequestResolver<A>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RequestResolver.ts#L846)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RequestResolver.ts#L845)
 
 Since v4.0.0

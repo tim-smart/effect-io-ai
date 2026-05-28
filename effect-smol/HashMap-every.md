@@ -3,7 +3,7 @@ Module: `HashMap`<br />
 
 ## HashMap.every
 
-Checks if all entries in a hashmap meets a specific condition.
+Checks whether all entries in a hashmap meets a specific condition.
 
 **Example** (Checking all entries)
 
@@ -22,6 +22,6 @@ console.log(HashMap.every(map, (value) => value > 1)) // false
 declare const every: { <K, A>(predicate: (a: NoInfer<A>, k: K) => boolean): (self: HashMap<K, A>) => boolean; <K, A>(self: HashMap<K, A>, predicate: (a: A, k: K) => boolean): boolean; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashMap.ts#L1293)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashMap.ts#L1291)
 
 Since v3.14.0

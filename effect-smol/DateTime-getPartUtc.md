@@ -3,7 +3,7 @@ Module: `DateTime`<br />
 
 ## DateTime.getPartUtc
 
-Get a part of a `DateTime` as a number.
+Gets one UTC part of a `DateTime` as a number.
 
 **Details**
 
@@ -25,6 +25,6 @@ console.log(year) // 2024
 declare const getPartUtc: { (part: keyof DateTime.PartsWithWeekday): (self: DateTime) => number; (self: DateTime, part: keyof DateTime.PartsWithWeekday): number; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L1765)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L1774)
 
 Since v3.6.0

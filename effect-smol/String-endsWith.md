@@ -21,6 +21,6 @@ assert.deepStrictEqual(pipe("hello world", String.endsWith("hello")), false)
 declare const endsWith: (searchString: string, position?: number) => (self: string) => boolean
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L572)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L577)
 
 Since v2.0.0

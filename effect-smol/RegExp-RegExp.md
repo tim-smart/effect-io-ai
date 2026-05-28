@@ -3,7 +3,7 @@ Module: `RegExp`<br />
 
 ## RegExp.RegExp
 
-Re-exports the JavaScript `RegExp` constructor from `globalThis`.
+Exposes the JavaScript regular expression constructor from `globalThis`.
 
 **When to use**
 

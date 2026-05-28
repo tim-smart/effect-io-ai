@@ -3,7 +3,7 @@ Module: `Channel`<br />
 
 ## Channel.scanEffect
 
-Statefully transforms a channel by scanning over its output with an effectful accumulator function.
+Transforms a channel statefully by scanning over its output with an effectful accumulator function.
 Emits the intermediate results of the scan operation.
 
 **Example** (Scanning channel output with effects)
@@ -50,6 +50,6 @@ const errorHandlingScan = Channel.scanEffect(
 declare const scanEffect: { <S, OutElem, E, R>(initial: S, f: (s: S, a: Types.NoInfer<OutElem>) => Effect.Effect<S, E, R>): <OutErr, OutDone, InElem, InErr, InDone, Env>(self: Channel<OutElem, OutErr, OutDone, InElem, InErr, InDone, Env>) => Channel<S, OutErr | E, OutDone, InElem, InErr, InDone, Env | R>; <OutElem, OutErr, OutDone, InElem, InErr, InDone, Env, S, E, R>(self: Channel<OutElem, OutErr, OutDone, InElem, InErr, InDone, Env>, initial: S, f: (s: S, a: Types.NoInfer<OutElem>) => Effect.Effect<S, E, R>): Channel<S, OutErr | E, OutDone, InElem, InErr, InDone, Env | R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L3816)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L3823)
 
 Since v4.0.0

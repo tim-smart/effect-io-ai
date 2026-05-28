@@ -3,7 +3,7 @@ Module: `TestRunner`<br />
 
 ## TestRunner.layer
 
-An in-memory cluster that can be used for testing purposes.
+Layer that provides an in-memory cluster for testing.
 
 **Details**
 

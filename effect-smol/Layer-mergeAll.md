@@ -51,6 +51,6 @@ const mergedLayer = Layer.mergeAll(dbLayer, loggerLayer)
 declare const mergeAll: <Layers extends [Layer<never, any, any>, ...Array<Layer<never, any, any>>]>(...layers: Layers) => Layer<Success<Layers[number]>, Error<Layers[number]>, Services<Layers[number]>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L1226)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L1234)
 
 Since v2.0.0

@@ -3,7 +3,7 @@ Module: `TxHashMap`<br />
 
 ## TxHashMap.every
 
-Checks if all entries in the TxHashMap satisfy the given predicate.
+Checks whether all entries in the TxHashMap satisfy the given predicate.
 
 **Example** (Checking whether every entry matches)
 

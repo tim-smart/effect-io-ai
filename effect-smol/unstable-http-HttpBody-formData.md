@@ -11,6 +11,6 @@ Wraps a Web `FormData` value as an HTTP body.
 declare const formData: (body: globalThis.FormData) => FormData
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpBody.ts#L418)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpBody.ts#L422)
 
 Since v4.0.0

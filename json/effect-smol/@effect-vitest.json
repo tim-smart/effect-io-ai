@@ -264,7 +264,7 @@
     },
     "project": "@effect/vitest",
     "name": "fail",
-    "description": "Throws an `AssertionError` with the provided error message.",
+    "description": "Fails the current test with the provided error message.",
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",

@@ -3,7 +3,7 @@ Module: `ErrorReporter`<br />
 
 ## ErrorReporter.ignore
 
-String property key used to mark an object error as ignored by error
+Defines the string property key used to mark an object error as ignored by error
 reporting.
 
 **When to use**
@@ -23,6 +23,6 @@ as HTTP 404 responses.
 type ignore = "~effect/ErrorReporter/ignore"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ErrorReporter.ts#L369)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ErrorReporter.ts#L370)
 
 Since v4.0.0

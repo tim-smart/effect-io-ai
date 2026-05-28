@@ -3,7 +3,7 @@ Module: `SchemaGetter`<br />
 
 ## SchemaGetter.Getter
 
-A composable transformation from an encoded type `E` to a decoded type `T`.
+Represents a composable transformation from an encoded type `E` to a decoded type `T`.
 
 **When to use**
 
@@ -17,7 +17,6 @@ Use to build custom schema transformations with `Schema.decodeTo` or `Schema.dec
 - Returns `Option.None` to omit the value from the decoded output.
 - Fails with `Issue` on invalid input.
 - May require Effect services via `R`.
-- Immutable — constructing or composing getters does not mutate existing instances.
 - `.map(f)` applies `f` to the decoded value (inside the `Some`), leaving `None` unchanged.
 - `.compose(other)` chains two getters: the output of `this` feeds into `other`.
   Passthrough getters on either side are optimized away.
@@ -50,6 +49,6 @@ declare class Getter<T, E, R> { constructor(
   ) }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L138)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L137)
 
 Since v4.0.0

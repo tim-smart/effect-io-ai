@@ -3,7 +3,7 @@ Module: `Cookies`<br />
 
 ## Cookies.get
 
-Get a cookie from a Cookies object
+Gets a cookie from a Cookies object safely.
 
 **Signature**
 

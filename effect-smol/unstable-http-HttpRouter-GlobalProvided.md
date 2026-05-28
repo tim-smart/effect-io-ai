@@ -12,6 +12,6 @@ type GlobalProvided = | HttpServerRequest.HttpServerRequest
   | Scope.Scope
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpRouter.ts#L829)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpRouter.ts#L834)
 
 Since v4.0.0

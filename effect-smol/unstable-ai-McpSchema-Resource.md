@@ -3,7 +3,7 @@ Module: `McpSchema`<br />
 
 ## McpSchema.Resource
 
-A known resource that the server is capable of reading.
+Schema for a known resource that the server is capable of reading.
 
 **Signature**
 
@@ -11,6 +11,6 @@ A known resource that the server is capable of reading.
 declare class Resource
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L753)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L837)
 
 Since v4.0.0

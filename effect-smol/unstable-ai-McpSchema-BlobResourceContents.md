@@ -3,7 +3,7 @@ Module: `McpSchema`<br />
 
 ## McpSchema.BlobResourceContents
 
-The contents of a binary resource, which can be represented as a Uint8Array.
+Schema for binary resource contents represented as a `Uint8Array`.
 
 **Signature**
 
@@ -11,6 +11,6 @@ The contents of a binary resource, which can be represented as a Uint8Array.
 declare class BlobResourceContents
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L887)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L971)
 
 Since v4.0.0

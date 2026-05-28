@@ -3,7 +3,7 @@ Module: `ChildProcess`<br />
 
 ## ChildProcess.isCommand
 
-Check if a value is a `Command`.
+Checks whether a value is a `Command`.
 
 **Signature**
 

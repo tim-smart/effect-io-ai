@@ -11,6 +11,6 @@ Updates the query string of the URL.
 declare const setSearch: { (search: string): (url: URL) => URL; (url: URL, search: string): URL; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Url.ts#L240)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Url.ts#L239)
 
 Since v4.0.0

@@ -3,7 +3,7 @@ Module: `HttpTraceContext`<br />
 
 ## HttpTraceContext.b3
 
-Decodes an external span from the compact B3 `b3` header.
+Decodes an external span safely from the compact B3 `b3` header.
 
 **Details**
 

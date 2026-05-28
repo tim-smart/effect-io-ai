@@ -11,8 +11,7 @@ Use to drop elements from a tuple by position.
 
 **Details**
 
-Elements not at the specified indices are kept in their original order. The
-input tuple is not mutated; a fresh tuple is returned.
+Elements not at the specified indices are kept in their original order.
 
 **Example** (Removing elements by index)
 
@@ -33,6 +32,6 @@ console.log(result) // ["a", "c"]
 declare const omit: { <const T extends ReadonlyArray<unknown>, const I extends ReadonlyArray<Indices<T>>>(indices: I): (self: T) => OmitTuple<T, I[number]>; <const T extends ReadonlyArray<unknown>, const I extends ReadonlyArray<Indices<T>>>(self: T, indices: I): OmitTuple<T, I[number]>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tuple.ts#L227)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tuple.ts#L224)
 
 Since v4.0.0

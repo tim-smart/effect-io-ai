@@ -3,7 +3,7 @@ Module: `Cookies`<br />
 
 ## Cookies.toCookieHeader
 
-Serialize a Cookies object into a Cookie header
+Serializes a `Cookies` object into a Cookie header.
 
 **Signature**
 

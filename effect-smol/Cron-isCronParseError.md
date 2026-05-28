@@ -3,7 +3,7 @@ Module: `Cron`<br />
 
 ## Cron.isCronParseError
 
-Checks if a given value is a CronParseError instance.
+Checks whether a given value is a CronParseError instance.
 
 **When to use**
 

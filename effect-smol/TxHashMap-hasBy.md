@@ -3,7 +3,7 @@ Module: `TxHashMap`<br />
 
 ## TxHashMap.hasBy
 
-Checks if any entry in the TxHashMap matches the given predicate.
+Checks whether any entry in the TxHashMap matches the given predicate.
 
 **Example** (Checking entries with a predicate)
 

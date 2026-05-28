@@ -35,6 +35,6 @@ const parse = SchemaGetter.splitKeyValue<string>()
 declare const splitKeyValue: <E extends string>(options?: { readonly separator?: string | undefined; readonly keyValueSeparator?: string | undefined; }) => Getter<Record<string, string>, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L1141)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L1139)
 
 Since v4.0.0

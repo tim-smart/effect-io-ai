@@ -3,7 +3,7 @@ Module: `Function`<br />
 
 ## Function.satisfies
 
-A function that ensures that the type of an expression matches some type,
+Ensures that the type of an expression matches some type,
 without changing the resulting type of that expression.
 
 **When to use**

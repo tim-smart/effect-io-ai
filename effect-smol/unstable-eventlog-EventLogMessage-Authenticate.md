@@ -3,8 +3,9 @@ Module: `EventLogMessage`<br />
 
 ## EventLogMessage.Authenticate
 
-Authentication request containing the client public key, Ed25519 signing public
-key, signature over the session challenge payload, and algorithm name.
+Schema for an authentication request containing the client public key,
+Ed25519 signing public key, signature over the session challenge payload, and
+algorithm name.
 
 **Signature**
 
@@ -12,6 +13,6 @@ key, signature over the session challenge payload, and algorithm name.
 declare class Authenticate
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventLogMessage.ts#L138)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventLogMessage.ts#L139)
 
 Since v4.0.0

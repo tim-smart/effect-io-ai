@@ -3,7 +3,7 @@ Module: `HttpRouter`<br />
 
 ## HttpRouter.disableLogger
 
-A middleware that disables the logger for some routes.
+Middleware that disables the logger for some routes.
 
 **Example** (Disabling route logging)
 
@@ -27,6 +27,6 @@ const Route = HttpRouter.add(
 declare const disableLogger: Layer.Layer<never, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpRouter.ts#L1215)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpRouter.ts#L1220)
 
 Since v4.0.0

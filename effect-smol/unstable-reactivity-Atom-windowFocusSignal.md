@@ -3,7 +3,7 @@ Module: `Atom`<br />
 
 ## Atom.windowFocusSignal
 
-A browser-only signal atom that increments when the document becomes visible.
+Creates a browser-only signal atom that increments when the document becomes visible.
 
 **Details**
 
@@ -16,6 +16,6 @@ when the atom is disposed.
 declare const windowFocusSignal: Atom<number>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Atom.ts#L2051)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Atom.ts#L2070)
 
 Since v4.0.0

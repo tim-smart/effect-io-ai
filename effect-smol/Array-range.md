@@ -31,6 +31,6 @@ console.log(result) // [1, 2, 3]
 declare const range: (start: number, end: number) => NonEmptyArray<number>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L307)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L305)
 
 Since v2.0.0

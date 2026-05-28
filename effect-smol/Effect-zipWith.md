@@ -8,9 +8,8 @@ produce a single value.
 
 **When to use**
 
-Use when the `zipWith` function is similar to `zip`, but instead of returning a
-tuple of results, it applies a provided function to the results of the two
-effects, combining them into a single value.
+Use when you need to run two effects sequentially and combine their results
+with a function instead of keeping the results as a tuple.
 
 **Details**
 
@@ -53,6 +52,6 @@ Effect.runPromise(task3).then(console.log)
 declare const zipWith: { <A2, E2, R2, A, B>(that: Effect<A2, E2, R2>, f: (a: A, b: A2) => B, options?: { readonly concurrent?: boolean | undefined; }): <E, R>(self: Effect<A, E, R>) => Effect<B, E2 | E, R2 | R>; <A, E, R, A2, E2, R2, B>(self: Effect<A, E, R>, that: Effect<A2, E2, R2>, f: (a: A, b: A2) => B, options?: { readonly concurrent?: boolean | undefined; }): Effect<B, E2 | E, R2 | R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L2613)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L2612)
 
 Since v2.0.0

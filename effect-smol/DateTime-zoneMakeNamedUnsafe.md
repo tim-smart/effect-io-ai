@@ -3,7 +3,7 @@ Module: `DateTime`<br />
 
 ## DateTime.zoneMakeNamedUnsafe
 
-Attempt to create a named time zone from a IANA time zone identifier.
+Attempts to create a named time zone from an IANA time zone identifier.
 
 **Details**
 
@@ -30,6 +30,6 @@ console.log(DateTime.zoneToString(tokyoZone)) // "Asia/Tokyo"
 declare const zoneMakeNamedUnsafe: (zoneId: string) => TimeZone.Named
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L1026)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L1035)
 
 Since v4.0.0

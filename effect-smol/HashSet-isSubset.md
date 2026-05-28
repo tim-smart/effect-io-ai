@@ -3,7 +3,7 @@ Module: `HashSet`<br />
 
 ## HashSet.isSubset
 
-Checks if a HashSet is a subset of another HashSet.
+Checks whether a HashSet is a subset of another HashSet.
 
 **Example** (Checking subset relationships)
 

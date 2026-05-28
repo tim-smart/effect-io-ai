@@ -3,13 +3,18 @@ Module: `Channel`<br />
 
 ## Channel.interruptWhen
 
-Returns a new channel, which is the same as this one, except it will be
-interrupted when the specified effect completes. If the effect completes
-successfully before the underlying channel is done, then the returned
-channel will yield the success value of the effect as its terminal value.
-On the other hand, if the underlying channel finishes first, then the
-returned channel will yield the success value of the underlying channel as
-its terminal value.
+Interrupts a channel when another effect completes.
+
+**When to use**
+
+Use to race channel execution against an external effect whose success can
+become the channel's done value.
+
+**Details**
+
+If the effect completes first, its success value becomes the returned
+channel's done value. If the channel completes first, the original channel's
+done value is preserved.
 
 **Signature**
 
@@ -17,6 +22,6 @@ its terminal value.
 declare const interruptWhen: { <OutDone2, OutErr2, Env2>(effect: Effect.Effect<OutDone2, OutErr2, Env2>): <OutElem, OutErr, OutDone, InElem, InErr, InDone, Env>(self: Channel<OutElem, OutErr, OutDone, InElem, InErr, InDone, Env>) => Channel<OutElem, OutErr | OutErr2, OutDone | OutDone2, InElem, InErr, InDone, Env2 | Env>; <OutElem, OutErr, OutDone, InElem, InErr, InDone, Env, OutDone2, OutErr2, Env2>(self: Channel<OutElem, OutErr, OutDone, InElem, InErr, InDone, Env>, effect: Effect.Effect<OutDone2, OutErr2, Env2>): Channel<OutElem, OutErr | OutErr2, OutDone | OutDone2, InElem, InErr, InDone, Env2 | Env>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L6848)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L6860)
 
 Since v2.0.0

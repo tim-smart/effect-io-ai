@@ -13,7 +13,6 @@ Use to add one element to the end of an iterable and get a new
 **Details**
 
 - Always returns a non-empty array.
-- Does not mutate the input.
 
 **Example** (Appending an element)
 
@@ -35,6 +34,6 @@ console.log(result) // [1, 2, 3, 4]
 declare const append: { <B>(last: B): <A>(self: Iterable<A>) => NonEmptyArray<A | B>; <A, B>(self: Iterable<A>, last: B): NonEmptyArray<A | B>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L714)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L709)
 
 Since v2.0.0

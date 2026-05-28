@@ -10,10 +10,6 @@ index is out of bounds, returns a copy of the original.
 
 Use to remove a single element at a known index.
 
-**Details**
-
-Does not mutate the input.
-
 **Example** (Removing an element)
 
 ```ts
@@ -34,6 +30,6 @@ console.log(Array.remove([1, 2, 3, 4], 5)) // [1, 2, 3, 4]
 declare const remove: { (i: number): <A>(self: Iterable<A>) => Array<A>; <A>(self: Iterable<A>, i: number): Array<A>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L2079)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L2066)
 
 Since v2.0.0

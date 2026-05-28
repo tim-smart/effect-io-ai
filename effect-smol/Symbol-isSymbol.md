@@ -3,7 +3,7 @@ Module: `Symbol`<br />
 
 ## Symbol.isSymbol
 
-Tests if a value is a `symbol`.
+Checks whether a value is a `symbol`.
 
 **When to use**
 

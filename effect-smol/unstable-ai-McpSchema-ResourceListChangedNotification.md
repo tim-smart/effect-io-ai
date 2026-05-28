@@ -3,9 +3,15 @@ Module: `McpSchema`<br />
 
 ## McpSchema.ResourceListChangedNotification
 
-An optional notification from the server to the client, informing it that the
-list of resources it can read from has changed. This may be issued by servers
-without any previous subscription from the client.
+Represents a notification that the server's resource list changed.
+
+**When to use**
+
+Use to notify clients that `resources/list` should be requested again.
+
+**Details**
+
+Servers may send this notification without a previous client subscription.
 
 **Signature**
 
@@ -13,6 +19,6 @@ without any previous subscription from the client.
 declare class ResourceListChangedNotification
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L983)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L1074)
 
 Since v4.0.0

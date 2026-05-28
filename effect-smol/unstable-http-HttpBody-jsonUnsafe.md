@@ -15,6 +15,6 @@ The content type defaults to `application/json`.
 declare const jsonUnsafe: (body: unknown, contentType?: string) => Uint8Array
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpBody.ts#L331)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpBody.ts#L335)
 
 Since v4.0.0

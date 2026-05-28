@@ -3,8 +3,12 @@ Module: `TxPriorityQueue`<br />
 
 ## TxPriorityQueue.peekOption
 
-Observes the smallest element without removing it. Returns `None` if the
+Observes the smallest element without removing it, returning `None` when the
 queue is empty.
+
+**When to use**
+
+Use to inspect the next prioritized value without retrying on an empty queue.
 
 **Example** (Peeking without retrying)
 
@@ -24,6 +28,6 @@ const program = Effect.gen(function*() {
 declare const peekOption: <A>(self: TxPriorityQueue<A>) => Effect.Effect<Option<A>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxPriorityQueue.ts#L307)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxPriorityQueue.ts#L315)
 
 Since v2.0.0

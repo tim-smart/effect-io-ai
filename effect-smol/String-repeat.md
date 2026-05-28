@@ -21,6 +21,6 @@ assert.deepStrictEqual(pipe("hello", String.repeat(3)), "hellohellohello")
 declare const repeat: (count: number) => (self: string) => string
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L861)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L866)
 
 Since v2.0.0

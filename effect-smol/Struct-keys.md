@@ -10,10 +10,6 @@ Returns the string keys of a struct as a properly typed `Array<keyof S & string>
 Use when you use instead of `Object.keys` when you want the return type narrowed to the
 known keys of the struct.
 
-**Details**
-
-This does not mutate the input.
-
 **Gotchas**
 
 Symbol keys are excluded; only string keys are returned.
@@ -40,6 +36,6 @@ console.log(k) // ["name", "age"]
 declare const keys: <S extends object>(self: S) => Array<(keyof S) & string>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Struct.ts#L235)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Struct.ts#L231)
 
 Since v3.6.0

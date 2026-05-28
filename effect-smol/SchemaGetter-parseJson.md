@@ -35,6 +35,6 @@ const parse = SchemaGetter.parseJson<string>()
 declare const parseJson: { <E extends string>(): Getter<Schema.MutableJson, E>; <E extends string>(options: ParseJsonOptions): Getter<unknown, E>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L1058)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L1056)
 
 Since v4.0.0

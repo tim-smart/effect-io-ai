@@ -3,7 +3,8 @@ Module: `Cookies`<br />
 
 ## Cookies.schemaRecord
 
-Schema transformation between `Cookies` and a record of decoded string values keyed by cookie name.
+Schema for transforming `Cookies` into records of decoded string values keyed
+by cookie name.
 
 **Signature**
 
@@ -11,6 +12,6 @@ Schema transformation between `Cookies` and a record of decoded string values ke
 declare const schemaRecord: Schema.decodeTo<Schema.$Record<Schema.String, Schema.String>, CookiesSchema, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cookies.ts#L931)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cookies.ts#L932)
 
 Since v4.0.0

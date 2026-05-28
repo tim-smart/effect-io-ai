@@ -27,6 +27,6 @@ const upper = SchemaGetter.toUpperCase<string>()
 declare const toUpperCase: <E extends string>() => Getter<string, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L1020)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L1018)
 
 Since v4.0.0

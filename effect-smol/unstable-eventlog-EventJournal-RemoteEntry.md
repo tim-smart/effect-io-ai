@@ -3,7 +3,7 @@ Module: `EventJournal`<br />
 
 ## EventJournal.RemoteEntry
 
-Schema model for an event journal entry received from a remote source.
+Schema for an event journal entry received from a remote source.
 
 **Details**
 

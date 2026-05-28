@@ -3,7 +3,7 @@ Module: `BigDecimal`<br />
 
 ## BigDecimal.isNegative
 
-Checks if a given `BigDecimal` is negative.
+Checks whether a given `BigDecimal` is negative.
 
 **When to use**
 
@@ -26,6 +26,6 @@ assert.deepStrictEqual(BigDecimal.isNegative(BigDecimal.fromStringUnsafe("1")), 
 declare const isNegative: (n: BigDecimal) => boolean
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigDecimal.ts#L1696)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigDecimal.ts#L1700)
 
 Since v2.0.0

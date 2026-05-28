@@ -3,7 +3,7 @@ Module: `Cause`<br />
 
 ## Cause.StackTrace
 
-`Context` key for the stack frame captured at the point of failure.
+Context annotation used to store the stack frame captured at the point of failure.
 
 **When to use**
 
@@ -28,6 +28,6 @@ available. Retrieve it via
 declare class StackTrace
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L1985)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L1983)
 
 Since v4.0.0

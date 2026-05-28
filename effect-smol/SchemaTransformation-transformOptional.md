@@ -48,6 +48,6 @@ const schema = Schema.Struct({
 declare const transformOptional: <T, E>(options: { readonly decode: (input: Option.Option<E>) => Option.Option<T>; readonly encode: (input: Option.Option<T>) => Option.Option<E>; }) => Transformation<T, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L456)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L454)
 
 Since v4.0.0

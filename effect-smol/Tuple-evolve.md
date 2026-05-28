@@ -14,7 +14,7 @@ Use when you want to update the first N elements while keeping the rest.
 **Details**
 
 Each transform function receives the current value and can return a different
-type. The input tuple is not mutated; a fresh tuple is returned.
+type.
 
 **Example** (Transforming selected elements)
 
@@ -42,6 +42,6 @@ console.log(result) // ["HELLO", 84, true]
 declare const evolve: { <const T extends ReadonlyArray<unknown>, const E extends Evolver<T>>(evolver: E): (self: T) => Evolved<T, E>; <const T extends ReadonlyArray<unknown>, const E extends Evolver<T>>(self: T, evolver: E): Evolved<T, E>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tuple.ts#L352)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tuple.ts#L348)
 
 Since v4.0.0

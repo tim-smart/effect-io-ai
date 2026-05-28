@@ -3,7 +3,7 @@ Module: `Schema`<br />
 
 ## Schema.toStandardJSONSchemaV1
 
-Experimental support for converting a schema to a Standard JSON Schema V1.
+Converts a schema to an experimental Standard JSON Schema V1 representation.
 
 **Details**
 

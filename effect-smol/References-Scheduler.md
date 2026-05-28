@@ -3,7 +3,7 @@ Module: `References`<br />
 
 ## References.Scheduler
 
-Reference for the current scheduler implementation used by the Effect runtime.
+Context reference for the current scheduler implementation used by the Effect runtime.
 Controls how Effects are scheduled and executed.
 
 **When to use**

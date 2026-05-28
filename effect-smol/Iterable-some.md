@@ -3,7 +3,7 @@ Module: `Iterable`<br />
 
 ## Iterable.some
 
-Check if a predicate holds true for some `Iterable` element.
+Checks whether a predicate holds true for some `Iterable` element.
 
 **Example** (Checking whether some element matches)
 
@@ -46,6 +46,6 @@ console.log(hasString) // true
 declare const some: { <A>(predicate: (a: A, i: number) => boolean): (self: Iterable<A>) => boolean; <A>(self: Iterable<A>, predicate: (a: A, i: number) => boolean): boolean; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Iterable.ts#L2070)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Iterable.ts#L2078)
 
 Since v2.0.0

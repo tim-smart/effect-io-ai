@@ -3,7 +3,7 @@ Module: `Primitive`<br />
 
 ## Primitive.none
 
-A sentinel primitive that always fails to parse a value.
+Creates a sentinel primitive that always fails to parse a value.
 
 **When to use**
 

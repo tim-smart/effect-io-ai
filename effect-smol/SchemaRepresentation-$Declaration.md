@@ -3,7 +3,7 @@ Module: `SchemaRepresentation`<br />
 
 ## SchemaRepresentation.$Declaration
 
-Schema codec for the `Declaration` representation node.
+Schema for the `Declaration` representation node.
 
 **Signature**
 

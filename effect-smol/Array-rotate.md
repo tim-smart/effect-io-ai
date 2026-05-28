@@ -3,7 +3,7 @@ Module: `Array`<br />
 
 ## Array.rotate
 
-Rotates an array by `n` steps. Positive `n` rotates right; negative `n`
+Transforms an array by rotating it `n` steps. Positive `n` rotates right; negative `n`
 rotates left.
 
 **When to use**
@@ -36,6 +36,6 @@ console.log(Array.rotate(["a", "b", "c", "d"], 2)) // ["c", "d", "a", "b"]
 declare const rotate: { (n: number): <S extends Iterable<any>>(self: S) => ReadonlyArray.With<S, ReadonlyArray.Infer<S>>; <A>(self: NonEmptyReadonlyArray<A>, n: number): NonEmptyArray<A>; <A>(self: Iterable<A>, n: number): Array<A>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L2550)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L2534)
 
 Since v2.0.0

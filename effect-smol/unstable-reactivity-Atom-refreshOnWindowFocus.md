@@ -16,6 +16,6 @@ This helper is browser-only because `windowFocusSignal` depends on `window` and
 declare const refreshOnWindowFocus: <A extends Atom<any>>(self: A) => WithoutSerializable<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Atom.ts#L2096)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Atom.ts#L2115)
 
 Since v4.0.0

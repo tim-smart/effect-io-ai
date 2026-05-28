@@ -3,7 +3,7 @@ Module: `Flag`<br />
 
 ## Flag.between
 
-Constrains a flag to be specified between a minimum and maximum number of times.
+Ensures a flag is specified between a minimum and maximum number of times.
 
 **Example** (Bounding repeated values)
 

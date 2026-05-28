@@ -3,7 +3,7 @@ Module: `Channel`<br />
 
 ## Channel.fromPubSub
 
-Create a channel from a PubSub that outputs individual values.
+Creates a channel from a PubSub that outputs individual values.
 
 **Details**
 

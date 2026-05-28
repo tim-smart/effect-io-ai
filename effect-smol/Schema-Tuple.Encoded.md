@@ -16,6 +16,6 @@ schemas produce optional tuple positions.
 type Encoded<E> = Encoded_<E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L3431)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L3649)
 
 Since v3.10.0

@@ -3,7 +3,7 @@ Module: `OpenAiTool`<br />
 
 ## OpenAiTool.ImageGeneration
 
-OpenAI Image Generation tool that enables the model to generate images using
+Defines the OpenAI Image Generation tool that enables the model to generate images using
 the GPT image models.
 
 **When to use**

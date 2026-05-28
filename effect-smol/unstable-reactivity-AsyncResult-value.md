@@ -11,6 +11,6 @@ Returns the current success value, or the previous success value stored in a fai
 declare const value: <A, E>(self: AsyncResult<A, E>) => Option.Option<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AsyncResult.ts#L446)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AsyncResult.ts#L447)
 
 Since v4.0.0

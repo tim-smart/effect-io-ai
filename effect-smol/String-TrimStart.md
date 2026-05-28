@@ -19,6 +19,6 @@ type Result = String.TrimStart<"  hello"> // "hello"
 type TrimStart<A> = A extends `${" " | "\n" | "\t" | "\r"}${infer B}` ? TrimStart<B> : A
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L367)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L372)
 
 Since v2.0.0

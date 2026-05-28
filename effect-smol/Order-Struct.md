@@ -13,7 +13,6 @@ Use when when comparing objects with multiple properties
 
 **Details**
 
-- Pure function: does not mutate inputs
 - Compares structs field-by-field in the order of keys in the fields object
 - Stops at the first non-zero comparison result
 - Returns `0` only if all fields are equal
@@ -49,6 +48,6 @@ console.log(personOrder(person1, person1)) // 0
 declare const Struct: <const R extends { readonly [x: string]: Order<any>; }>(fields: R) => Order<{ [K in keyof R]: [R[K]] extends [Order<infer A>] ? A : never; }>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Order.ts#L736)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Order.ts#L721)
 
 Since v4.0.0

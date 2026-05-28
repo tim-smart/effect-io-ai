@@ -16,6 +16,6 @@ non-lazy dependents, rebuilding the next time their value is observed.
 declare const setLazy: { (lazy: boolean): <A extends Atom<any>>(self: A) => A; <A extends Atom<any>>(self: A, lazy: boolean): A; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Atom.ts#L1512)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Atom.ts#L1527)
 
 Since v4.0.0

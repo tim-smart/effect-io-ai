@@ -3,7 +3,7 @@ Module: `BigDecimal`<br />
 
 ## BigDecimal.isBigDecimal
 
-Checks if a given value is a `BigDecimal`.
+Checks whether a given value is a `BigDecimal`.
 
 **When to use**
 

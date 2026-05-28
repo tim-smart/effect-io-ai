@@ -45,7 +45,7 @@ export interface FileSystem {
   readonly [TypeId]: typeof TypeId
 
   /**
-   * Check if a file can be accessed.
+   * Checks whether a file can be accessed.
    * You can optionally specify the level of access to check for.
    */
   readonly access: (
@@ -94,7 +94,7 @@ export interface FileSystem {
     gid: number
   ) => Effect.Effect<void, PlatformError>
   /**
-   * Check if a path exists.
+   * Checks whether a path exists.
    */
   readonly exists: (
     path: string

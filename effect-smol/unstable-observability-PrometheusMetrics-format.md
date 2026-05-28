@@ -3,7 +3,7 @@ Module: `PrometheusMetrics`<br />
 
 ## PrometheusMetrics.format
 
-Format all metrics in the registry to Prometheus exposition format.
+Formats all metrics in the registry to Prometheus exposition format.
 
 **Example** (Formatting metrics)
 

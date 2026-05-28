@@ -31,6 +31,6 @@ declare class NativeSpan { constructor(options: {
   }) }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tracer.ts#L620)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tracer.ts#L638)
 
 Since v4.0.0

@@ -11,6 +11,6 @@ Creates an `HttpClient` layer and merges the layer construction context into cli
 declare const layerMergedContext: <E, R>(effect: Effect.Effect<HttpClient, E, R>) => Layer.Layer<HttpClient, E, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpClient.ts#L1486)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpClient.ts#L1496)
 
 Since v4.0.0

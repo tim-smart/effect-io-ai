@@ -3,7 +3,14 @@ Module: `TxReentrantLock`<br />
 
 ## TxReentrantLock.releaseRead
 
-Releases a read lock held by the current fiber.
+Releases one read lock held by the current fiber.
+
+**When to use**
+
+Use to leave a manually acquired read lock.
+
+**Details**
+
 Returns the remaining number of read locks held by this fiber.
 
 **Example** (Releasing a read lock)
@@ -25,6 +32,6 @@ const program = Effect.gen(function*() {
 declare const releaseRead: (self: TxReentrantLock) => Effect.Effect<number>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxReentrantLock.ts#L275)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxReentrantLock.ts#L292)
 
 Since v2.0.0

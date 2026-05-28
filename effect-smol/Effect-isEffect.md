@@ -3,7 +3,7 @@ Module: `Effect`<br />
 
 ## Effect.isEffect
 
-Tests if a value is an `Effect`.
+Checks whether a value is an `Effect`.
 
 **Example** (Checking whether a value is an Effect)
 

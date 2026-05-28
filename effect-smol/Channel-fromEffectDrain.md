@@ -3,7 +3,7 @@ Module: `Channel`<br />
 
 ## Channel.fromEffectDrain
 
-Use an effect and discard its result.
+Uses an effect and discards its result.
 
 **Signature**
 

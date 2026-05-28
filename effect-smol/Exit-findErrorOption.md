@@ -40,6 +40,6 @@ console.log(Exit.findErrorOption(Exit.succeed(42)))            // { _tag: "None"
 declare const findErrorOption: <A, E>(self: Exit<A, E>) => Option<E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Exit.ts#L1137)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Exit.ts#L1139)
 
 Since v4.0.0

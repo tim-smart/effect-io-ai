@@ -3,7 +3,7 @@ Module: `SchemaTransformation`<br />
 
 ## SchemaTransformation.trim
 
-A string-to-string transformation that trims whitespace on decode.
+Transforms strings by trimming whitespace on decode.
 Encode is passthrough (no change).
 
 **When to use**
@@ -38,6 +38,6 @@ const Trimmed = Schema.String.pipe(
 declare const trim: () => Transformation<string, string>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L497)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L495)
 
 Since v4.0.0

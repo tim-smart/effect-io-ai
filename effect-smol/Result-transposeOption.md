@@ -35,6 +35,6 @@ console.log(Result.transposeOption(none))
 declare const transposeOption: <A = never, E = never>(self: Option<Result<A, E>>) => Result<Option<A>, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L1807)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L1824)
 
 Since v3.14.0

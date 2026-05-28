@@ -3,7 +3,7 @@ Module: `Envelope`<br />
 
 ## Envelope.RequestTransform
 
-Transformation that decodes plain request data with `makeRequest` and encodes
+Transforms plain request data with `makeRequest` and encodes
 request envelopes back to their raw representation.
 
 **Signature**

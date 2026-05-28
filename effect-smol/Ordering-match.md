@@ -3,7 +3,7 @@ Module: `Ordering`<br />
 
 ## Ordering.match
 
-Depending on the `Ordering` parameter given to it, returns a value produced by one of the 3 functions provided as parameters.
+Matches an `Ordering` value and returns the branch selected by that ordering.
 
 **When to use**
 

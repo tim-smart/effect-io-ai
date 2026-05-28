@@ -46,6 +46,6 @@ export interface Tuple<Elements extends Tuple.Elements> extends
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L3483)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L3701)
 
 Since v3.10.0

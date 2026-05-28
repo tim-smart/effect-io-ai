@@ -3,7 +3,7 @@ Module: `SchemaRepresentation`<br />
 
 ## SchemaRepresentation.$Unknown
 
-Schema codec for the `Unknown` representation node.
+Schema for the `Unknown` representation node.
 
 **Signature**
 

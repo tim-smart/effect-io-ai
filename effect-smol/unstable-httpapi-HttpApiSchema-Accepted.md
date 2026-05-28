@@ -11,6 +11,6 @@ Type of the `Accepted` schema, a void schema annotated with HTTP status code 202
 export interface Accepted extends Schema.Void {}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiSchema.ts#L240)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiSchema.ts#L238)
 
 Since v4.0.0

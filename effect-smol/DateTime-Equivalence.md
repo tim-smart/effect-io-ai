@@ -3,7 +3,7 @@ Module: `DateTime`<br />
 
 ## DateTime.Equivalence
 
-An `Equivalence` for comparing two `DateTime` values for equality.
+Provides an `Equivalence` for comparing two `DateTime` values for equality.
 
 **Details**
 

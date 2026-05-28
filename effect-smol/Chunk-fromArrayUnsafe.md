@@ -3,7 +3,8 @@ Module: `Chunk`<br />
 
 ## Chunk.fromArrayUnsafe
 
-Wraps an array into a chunk without copying, unsafe on mutable arrays
+Wraps an array into a chunk without copying, so mutating the source array can
+mutate the chunk.
 
 **Example** (Creating chunks without copying arrays)
 
@@ -25,6 +26,6 @@ console.log(Chunk.toArray(chunk)) // [999, 2, 3, 4, 5]
 declare const fromArrayUnsafe: <A>(self: ReadonlyArray<A>) => Chunk<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L614)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L624)
 
 Since v4.0.0

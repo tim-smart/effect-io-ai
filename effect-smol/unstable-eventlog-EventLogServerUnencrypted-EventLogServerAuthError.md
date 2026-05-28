@@ -12,6 +12,6 @@ operation.
 declare class EventLogServerAuthError
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventLogServerUnencrypted.ts#L272)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventLogServerUnencrypted.ts#L277)
 
 Since v4.0.0

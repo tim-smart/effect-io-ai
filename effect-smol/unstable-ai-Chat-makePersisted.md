@@ -26,6 +26,6 @@ backing persistence should load chats from.
 declare const makePersisted: (options: { readonly storeId: string; }) => Effect.Effect<Persistence.Service, never, Scope | BackingPersistence>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chat.ts#L799)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chat.ts#L814)
 
 Since v4.0.0

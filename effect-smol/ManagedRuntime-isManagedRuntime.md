@@ -3,7 +3,7 @@ Module: `ManagedRuntime`<br />
 
 ## ManagedRuntime.isManagedRuntime
 
-Checks if the provided argument is a `ManagedRuntime`.
+Checks whether the provided argument is a `ManagedRuntime`.
 
 **When to use**
 

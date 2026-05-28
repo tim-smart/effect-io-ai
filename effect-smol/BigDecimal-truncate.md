@@ -3,7 +3,7 @@ Module: `BigDecimal`<br />
 
 ## BigDecimal.truncate
 
-Truncate a `BigDecimal` at the given scale. This removes fractional digits beyond the scale,
+Computes a truncated `BigDecimal` at the given scale. This removes fractional digits beyond the scale,
 rounding toward zero.
 
 **When to use**
@@ -31,6 +31,6 @@ console.log(BigDecimal.truncate(BigDecimal.fromStringUnsafe("-14.5"))) // BigDec
 declare const truncate: { (scale: number): (self: BigDecimal) => BigDecimal; (self: BigDecimal, scale?: number): BigDecimal; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigDecimal.ts#L1868)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigDecimal.ts#L1872)
 
 Since v3.16.0

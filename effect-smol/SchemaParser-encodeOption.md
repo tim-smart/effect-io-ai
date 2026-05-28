@@ -3,7 +3,7 @@ Module: `SchemaParser`<br />
 
 ## SchemaParser.encodeOption
 
-Creates an encoder for input already typed as the schema's decoded `Type`,
+Creates an encoder safely for input already typed as the schema's decoded `Type`,
 returning an `Option`.
 
 **When to use**
@@ -27,6 +27,6 @@ on success or `Option.none` on failure, discarding issue details.
 declare const encodeOption: <S extends Schema.Encoder<unknown>>(schema: S, options?: AST.ParseOptions) => (input: S["Type"], options?: AST.ParseOptions) => Option.Option<S["Encoded"]>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaParser.ts#L772)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaParser.ts#L775)
 
 Since v3.10.0

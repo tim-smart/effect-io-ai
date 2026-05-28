@@ -3,8 +3,8 @@ Module: `Effect`<br />
 
 ## Effect.onExit
 
-Ensures that a cleanup functions runs, whether this effect succeeds, fails,
-or is interrupted.
+Ensures that a cleanup function runs whether this effect succeeds, fails, or
+is interrupted.
 
 **Example** (Observing every exit)
 
@@ -32,6 +32,6 @@ Effect.runPromise(program).then(console.log)
 declare const onExit: { <A, E, XE = never, XR = never>(f: (exit: Exit.Exit<A, E>) => Effect<void, XE, XR>): <R>(self: Effect<A, E, R>) => Effect<A, E | XE, R | XR>; <A, E, R, XE = never, XR = never>(self: Effect<A, E, R>, f: (exit: Exit.Exit<A, E>) => Effect<void, XE, XR>): Effect<A, E | XE, R | XR>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L6871)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L6862)
 
 Since v2.0.0

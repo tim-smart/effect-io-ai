@@ -3,7 +3,7 @@ Module: `AnthropicClient`<br />
 
 ## AnthropicClient.Options
 
-Configuration options for creating an Anthropic client.
+Configuration for creating an Anthropic client.
 
 **When to use**
 

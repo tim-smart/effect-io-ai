@@ -3,7 +3,7 @@ Module: `Channel`<br />
 
 ## Channel.scan
 
-Statefully transforms a channel by scanning over its output with an accumulator function.
+Transforms a channel statefully by scanning over its output with an accumulator function.
 Emits the intermediate results of the scan operation.
 
 **Example** (Scanning channel output)
@@ -35,6 +35,6 @@ const sentenceChannel = Channel.scan(
 declare const scan: { <S, OutElem>(initial: S, f: (s: S, a: Types.NoInfer<OutElem>) => S): <OutErr, OutDone, InElem, InErr, InDone, Env>(self: Channel<OutElem, OutErr, OutDone, InElem, InErr, InDone, Env>) => Channel<S, OutErr, OutDone, InElem, InErr, InDone, Env>; <OutElem, OutErr, OutDone, InElem, InErr, InDone, Env, S>(self: Channel<OutElem, OutErr, OutDone, InElem, InErr, InDone, Env>, initial: S, f: (s: S, a: Types.NoInfer<OutElem>) => S): Channel<S, OutErr, OutDone, InElem, InErr, InDone, Env>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L3742)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L3749)
 
 Since v4.0.0

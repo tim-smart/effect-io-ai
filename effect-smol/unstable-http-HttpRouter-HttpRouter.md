@@ -3,7 +3,7 @@ Module: `HttpRouter`<br />
 
 ## HttpRouter.HttpRouter
 
-Service interface for registering HTTP routes and middleware.
+Defines the service interface for registering HTTP routes and middleware.
 
 **Details**
 

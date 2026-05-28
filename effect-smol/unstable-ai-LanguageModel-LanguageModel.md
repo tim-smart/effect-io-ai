@@ -3,7 +3,12 @@ Module: `LanguageModel`<br />
 
 ## LanguageModel.LanguageModel
 
-The `LanguageModel` service key for dependency injection, providing access to text generation, streaming, and structured output capabilities throughout an application.
+Service tag for AI model services.
+
+**When to use**
+
+Use to access or provide text generation, streaming generation, structured
+output, and tool-calling capabilities through the Effect context.
 
 **Example** (Accessing the language model service)
 
@@ -26,6 +31,6 @@ const program = Effect.gen(function*() {
 declare class LanguageModel
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/LanguageModel.ts#L105)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/LanguageModel.ts#L110)
 
 Since v4.0.0

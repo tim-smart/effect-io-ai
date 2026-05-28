@@ -3,7 +3,7 @@ Module: `Sink`<br />
 
 ## Sink.mapInputEffect
 
-Effectfully transforms this sink's input elements.
+Transforms this sink's input elements effectfully.
 
 **Signature**
 

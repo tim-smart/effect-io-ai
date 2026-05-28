@@ -3,7 +3,7 @@ Module: `SynchronizedRef`<br />
 
 ## SynchronizedRef.getAndUpdate
 
-Atomically updates the current value with a function and returns the previous
+Updates the current value atomically with a function and returns the previous
 value, serialized by the ref's semaphore.
 
 **When to use**

@@ -12,6 +12,6 @@ writes encoded responses to `Stdio.stdout`.
 declare const layerProtocolStdio: Layer.Layer<Protocol, never, Stdio | RpcSerialization.RpcSerialization>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RpcServer.ts#L1336)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RpcServer.ts#L1341)
 
 Since v4.0.0

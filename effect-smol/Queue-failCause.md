@@ -3,7 +3,7 @@ Module: `Queue`<br />
 
 ## Queue.failCause
 
-Fail the queue with a cause. If the queue is already done, `false` is
+Fails the queue with a cause. If the queue is already done, `false` is
 returned.
 
 **Example** (Failing queues with a cause)

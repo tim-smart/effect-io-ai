@@ -16,6 +16,6 @@ indicating where the server should continue listing results.
 declare class PaginatedRequestMeta
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L245)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L244)
 
 Since v4.0.0

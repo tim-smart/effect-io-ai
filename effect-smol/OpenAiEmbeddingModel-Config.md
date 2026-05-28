@@ -3,7 +3,7 @@ Module: `OpenAiEmbeddingModel`<br />
 
 ## OpenAiEmbeddingModel.Config
 
-Service definition for OpenAI embedding model configuration.
+Context service for OpenAI embedding model configuration.
 
 **When to use**
 

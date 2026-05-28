@@ -3,11 +3,11 @@ Module: `BigInt`<br />
 
 ## BigInt.BigInt
 
-Reference to the global `BigInt` constructor for JavaScript bigint coercion.
+Exposes the global bigint constructor for JavaScript bigint coercion.
 
 **When to use**
 
-Use when you want the native `BigInt` constructor behavior from the Effect
+Use to access native JavaScript bigint constructor coercion from the Effect
 module namespace.
 
 **Gotchas**

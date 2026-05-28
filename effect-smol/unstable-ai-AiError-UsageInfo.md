@@ -3,11 +3,11 @@ Module: `AiError`<br />
 
 ## AiError.UsageInfo
 
-Token usage information from AI operations.
+Schema for token usage information from AI operations.
 
 **Details**
 
-Contains optional provider-reported token counts for prompt tokens,
+Schema for optional provider-reported token counts for prompt tokens,
 completion tokens, and total tokens.
 
 **Signature**

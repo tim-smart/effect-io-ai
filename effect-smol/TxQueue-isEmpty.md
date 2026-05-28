@@ -3,7 +3,7 @@ Module: `TxQueue`<br />
 
 ## TxQueue.isEmpty
 
-Checks if the queue is empty.
+Checks whether the queue is empty.
 
 **Example** (Checking whether a queue is empty)
 

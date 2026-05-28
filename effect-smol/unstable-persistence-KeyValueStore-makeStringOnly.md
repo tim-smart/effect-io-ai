@@ -16,6 +16,6 @@ base64 values and falls back to UTF-8 encoding for non-base64 strings.
 declare const makeStringOnly: (options: MakeStringOptions) => KeyValueStore
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/KeyValueStore.ts#L275)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/KeyValueStore.ts#L280)
 
 Since v4.0.0

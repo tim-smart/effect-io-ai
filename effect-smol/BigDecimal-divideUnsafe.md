@@ -7,8 +7,8 @@ Provides an unsafe division operation on `BigDecimal`s.
 
 **When to use**
 
-Use when the divisor is known to be non-zero and division by zero should be a
-thrown exception.
+Use when you need the decimal quotient and the divisor is known to be
+non-zero, so division by zero should be a thrown exception.
 
 **Details**
 

@@ -3,7 +3,7 @@ Module: `Graph`<br />
 
 ## Graph.getEdge
 
-Gets the edge data associated with an edge index, if it exists.
+Gets the edge data associated with an edge index safely, if it exists.
 
 **Example** (Getting edge data)
 

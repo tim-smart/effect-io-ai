@@ -3,10 +3,7 @@ Module: `JsonSchema`<br />
 
 ## JsonSchema.resolveTopLevel$ref
 
-If the root schema of a document is a `$ref`, resolves it against the
-document's definitions and returns a new document with the inlined
-schema. Returns the original document unchanged if the root schema is
-not a `$ref` or if the referenced definition is not found.
+Resolves a document whose root schema is a top-level `$ref`.
 
 **When to use**
 
@@ -15,8 +12,8 @@ schema's properties directly.
 
 **Details**
 
-This does not mutate the input. It returns the same object if no change is
-needed, or a shallow copy with the resolved schema.
+This returns the same object if no change is needed, or a shallow copy with
+the resolved schema.
 
 **Example** (Resolving a top-level $ref)
 
@@ -46,6 +43,6 @@ console.log(resolved.schema) // { type: "object", properties: { name: { type: "s
 declare const resolveTopLevel$ref: (document: Document<"draft-2020-12">) => Document<"draft-2020-12">
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/JsonSchema.ts#L1022)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/JsonSchema.ts#L1012)
 
 Since v4.0.0

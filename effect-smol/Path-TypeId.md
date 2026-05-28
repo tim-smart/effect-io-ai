@@ -5,14 +5,11 @@ Module: `Path`<br />
 
 Runtime type identifier used to mark implementations of the `Path` service.
 
-**When to use**
-
-Use when implementing or inspecting a custom `Path` service value that must
-carry the runtime marker.
-
 **Details**
 
 The marker is the exact string stored on `Path` service implementations.
+Most code should depend on the `Path` service instead of inspecting this
+value directly.
 
 **See**
 
@@ -24,6 +21,6 @@ The marker is the exact string stored on `Path` service implementations.
 declare const TypeId: "~effect/platform/Path"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Path.ts#L57)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Path.ts#L54)
 
 Since v4.0.0

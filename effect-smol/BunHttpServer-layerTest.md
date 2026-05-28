@@ -3,7 +3,7 @@ Module: `BunHttpServer`<br />
 
 ## BunHttpServer.layerTest
 
-Test layer that starts a Bun HTTP server on an ephemeral port and provides the HTTP test client dependencies.
+Layer that starts a Bun HTTP server on an ephemeral port for tests.
 
 **Signature**
 

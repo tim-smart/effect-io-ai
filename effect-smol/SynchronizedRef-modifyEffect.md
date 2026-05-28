@@ -3,7 +3,7 @@ Module: `SynchronizedRef`<br />
 
 ## SynchronizedRef.modifyEffect
 
-Atomically runs an effectful modification while holding the ref's semaphore,
+Runs an effectful modification atomically while holding the ref's semaphore,
 stores the new value if the effect succeeds, and returns the computed result.
 
 **When to use**

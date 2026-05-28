@@ -14,6 +14,6 @@ stream, encoding strings as UTF-8 and using close-code classification for
 declare const fromTransformStream: <R>(acquire: Effect.Effect<InputTransformStream, SocketError, R>, options?: { readonly closeCodeIsError?: (code: number) => boolean; }) => Effect.Effect<Socket, never, Exclude<R, Scope.Scope>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Socket.ts#L823)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Socket.ts#L829)
 
 Since v4.0.0

@@ -3,7 +3,7 @@ Module: `Optic`<br />
 
 ## Optic.success
 
-A `Prism` that focuses on the success value of a `Result`.
+Prism that focuses on the success value of a `Result`.
 
 **When to use**
 
@@ -40,6 +40,6 @@ console.log(Result.isFailure(_ok.getResult(Result.fail("err"))))
 declare const success: <A, E>() => Prism<Result.Result<A, E>, A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Optic.ts#L1725)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Optic.ts#L1718)
 
 Since v4.0.0

@@ -11,6 +11,6 @@ Provides a process-local in-memory `RateLimiterStore`.
 declare const layerStoreMemory: Layer.Layer<RateLimiterStore, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RateLimiter.ts#L535)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RateLimiter.ts#L545)
 
 Since v4.0.0

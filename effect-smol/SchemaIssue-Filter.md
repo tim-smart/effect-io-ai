@@ -3,12 +3,11 @@ Module: `SchemaIssue`<br />
 
 ## SchemaIssue.Filter
 
-Issue produced when a schema filter (refinement check) fails.
+Represents a schema issue produced when a schema filter (refinement check) fails.
 
 **When to use**
 
-Use when inspect which filter rejected the value.
-- Walk the inner `issue` for the specific validation failure.
+Use when you need to inspect which filter rejected the value.
 
 **Details**
 
@@ -54,6 +53,6 @@ declare class Filter { constructor(
   ) }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaIssue.ts#L228)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaIssue.ts#L226)
 
 Since v4.0.0

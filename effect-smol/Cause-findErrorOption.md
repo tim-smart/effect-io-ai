@@ -33,6 +33,6 @@ console.log(Option.isNone(none)) // true
 declare const findErrorOption: <E>(input: Cause<E>) => Option<E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L936)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L935)
 
 Since v4.0.0

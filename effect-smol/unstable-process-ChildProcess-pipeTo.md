@@ -3,7 +3,7 @@ Module: `ChildProcess`<br />
 
 ## ChildProcess.pipeTo
 
-Pipe the output of one command to the input of another.
+Pipes the output of one command to the input of another.
 
 **Details**
 

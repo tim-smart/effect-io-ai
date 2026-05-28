@@ -3,7 +3,7 @@ Module: `FiberMap`<br />
 
 ## FiberMap.remove
 
-Remove a fiber from the FiberMap, interrupting it if it exists.
+Removes a fiber from the FiberMap, interrupting it if it exists.
 
 **Example** (Removing a fiber)
 

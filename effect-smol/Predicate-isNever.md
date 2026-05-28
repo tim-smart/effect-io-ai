@@ -3,7 +3,7 @@ Module: `Predicate`<br />
 
 ## Predicate.isNever
 
-A guard that always returns `false`.
+Type guard that always returns `false`.
 
 **When to use**
 
@@ -11,7 +11,6 @@ Use when you need a predicate that never accepts, e.g. in default branches.
 
 **Details**
 
-- Pure; does not mutate input.
 - Always returns `false`.
 
 **Example** (Never matches)
@@ -32,6 +31,6 @@ console.log(Predicate.isNever("anything"))
 declare const isNever: (_: unknown) => _ is never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L1021)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L999)
 
 Since v2.0.0

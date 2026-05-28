@@ -3,7 +3,7 @@ Module: `Cookies`<br />
 
 ## Cookies.expireCookieUnsafe
 
-Add an expired cookie to a Cookies object, throwing an error if invalid
+Adds an expired cookie to a Cookies object, throwing an error if invalid
 
 **Signature**
 

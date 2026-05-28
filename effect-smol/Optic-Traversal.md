@@ -47,6 +47,6 @@ console.log(getPositive({ items: [1, -2, 3] }))
 export interface Traversal<in out S, in out A> extends Optional<S, ReadonlyArray<A>> {}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Optic.ts#L1117)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Optic.ts#L1112)
 
 Since v4.0.0

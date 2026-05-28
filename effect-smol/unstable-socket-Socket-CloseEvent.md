@@ -3,7 +3,8 @@ Module: `Socket`<br />
 
 ## Socket.CloseEvent
 
-Socket close event value carrying a close code and optional reason.
+Represents a socket close event value carrying a close code and optional
+reason.
 
 **Signature**
 
@@ -11,6 +12,6 @@ Socket close event value carrying a close code and optional reason.
 declare class CloseEvent { constructor(code = 1000, reason?: string) }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Socket.ts#L169)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Socket.ts#L175)
 
 Since v4.0.0

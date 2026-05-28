@@ -31,6 +31,6 @@ console.log(MutableList.take(list)) // "second"
 declare const make: <A>() => MutableList<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableList.ts#L289)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableList.ts#L294)
 
 Since v2.0.0

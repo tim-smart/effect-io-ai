@@ -3,7 +3,7 @@ Module: `Layer`<br />
 
 ## Layer.makeMemoMapUnsafe
 
-Constructs a `MemoMap` that can be used to build additional layers.
+Constructs a `MemoMap` synchronously so it can be used to build additional layers.
 
 **Example** (Creating a memo map unsafely)
 

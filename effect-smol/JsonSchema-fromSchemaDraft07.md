@@ -15,8 +15,7 @@ need the canonical Draft-2020-12 document representation.
 This converts Draft-07 tuple syntax (`items` as array plus
 `additionalItems`) to Draft-2020-12 form (`prefixItems` plus `items`),
 rewrites `#/definitions/...` refs to `#/$defs/...`, and extracts root-level
-`definitions` into the `definitions` field. It does not mutate the input and
-allocates a new `Document`.
+`definitions` into the `definitions` field.
 
 **Gotchas**
 
@@ -54,6 +53,6 @@ console.log(doc.schema.properties) // { tags: { type: "array", items: { type: "s
 declare const fromSchemaDraft07: (js: JsonSchema) => Document<"draft-2020-12">
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/JsonSchema.ts#L327)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/JsonSchema.ts#L326)
 
 Since v4.0.0

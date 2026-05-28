@@ -3,7 +3,7 @@ Module: `DateTime`<br />
 
 ## DateTime.zoneFromString
 
-Try to parse a `TimeZone` from a string.
+Tries to parse a `TimeZone` from a string safely.
 
 **Details**
 
@@ -29,6 +29,6 @@ console.log(invalid._tag === "None") // true
 declare const zoneFromString: (zone: string) => Option.Option<TimeZone>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L1149)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L1158)
 
 Since v3.6.0

@@ -16,6 +16,6 @@ the resource no longer needs to keep the entity alive.
 declare class KeepAliveLatch
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Entity.ts#L790)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Entity.ts#L800)
 
 Since v4.0.0

@@ -3,7 +3,7 @@ Module: `References`<br />
 
 ## References.CurrentConcurrency
 
-Reference for controlling the current concurrency limit. Can be set to "unbounded"
+Context reference for controlling the current concurrency limit. Can be set to "unbounded"
 for unlimited concurrency or a specific number to limit concurrent operations.
 
 **When to use**

@@ -11,6 +11,6 @@ Memory tool command payload for inserting text at a specific line in a file.
 type MemoryInsertCommand = typeof MemoryInsertCommand.Type
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L1513)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L1515)
 
 Since v4.0.0

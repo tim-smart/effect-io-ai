@@ -8,8 +8,8 @@ a nested structure the error occurred.
 
 **When to use**
 
-Use when walk the issue tree to accumulate path segments for error reporting.
-- Match on `_tag === "Pointer"` when flattening nested issues.
+Use when you need to walk the issue tree to accumulate path segments for error
+reporting.
 
 **Details**
 
@@ -38,6 +38,6 @@ declare class Pointer { constructor(
   ) }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaIssue.ts#L344)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaIssue.ts#L341)
 
 Since v3.10.0

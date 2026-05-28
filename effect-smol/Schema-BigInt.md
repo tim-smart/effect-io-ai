@@ -15,6 +15,6 @@ Schema for `bigint` values.
 export interface BigInt extends Bottom<bigint, bigint, never, never, AST.BigInt, BigInt> {}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L2447)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L2657)
 
 Since v4.0.0

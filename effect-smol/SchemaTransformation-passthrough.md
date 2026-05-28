@@ -3,7 +3,7 @@ Module: `SchemaTransformation`<br />
 
 ## SchemaTransformation.passthrough
 
-The identity transformation — returns the input unchanged in both
+Transforms values by returning the input unchanged in both
 directions.
 
 **When to use**
@@ -41,6 +41,6 @@ const schema = Schema.Trim.pipe(
 declare const passthrough: { <T, E>(options: { readonly strict: false; }): Transformation<T, E>; <T>(): Transformation<T, T>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L773)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L771)
 
 Since v4.0.0

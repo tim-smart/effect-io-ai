@@ -3,8 +3,16 @@ Module: `Queue`<br />
 
 ## Queue.end
 
-Signal that the queue is complete. If the queue is already done, `false` is
-returned.
+Signals queue completion.
+
+**When to use**
+
+Use to stop accepting new offers while allowing already queued messages to be
+consumed.
+
+**Details**
+
+Returns `false` if the queue is already done.
 
 **Example** (Ending queues)
 
@@ -38,6 +46,6 @@ const program = Effect.gen(function*() {
 declare const end: <A, E>(self: Enqueue<A, E | Done>) => Effect<boolean>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Queue.ts#L1012)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Queue.ts#L1020)
 
 Since v4.0.0

@@ -3,7 +3,8 @@ Module: `EventLog`<br />
 
 ## EventLog.Identity
 
-Event-log identity containing a public key and redacted private key material.
+Context service for an event-log identity containing a public key and redacted
+private key material.
 
 **Details**
 
@@ -16,6 +17,6 @@ encryption service to derive signing and encryption keys.
 declare class Identity
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventLog.ts#L202)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventLog.ts#L203)
 
 Since v4.0.0

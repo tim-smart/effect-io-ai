@@ -3,7 +3,7 @@ Module: `String`<br />
 
 ## String.isString
 
-Tests if a value is a `string`.
+Checks whether a value is a `string`.
 
 **Example** (Checking for strings)
 

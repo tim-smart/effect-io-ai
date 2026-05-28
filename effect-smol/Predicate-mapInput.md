@@ -12,7 +12,6 @@ Use when you have a predicate on `A` and want one on `B` via `B -> A`.
 
 **Details**
 
-- Pure; does not mutate input.
 - Returns a new predicate that applies `f` before `self`.
 - No short-circuit beyond what `self` does.
 
@@ -40,6 +39,6 @@ console.log(isLongerThan2("hello"))
 declare const mapInput: { <B, A>(f: (b: B) => A): (self: Predicate<A>) => Predicate<B>; <A, B>(self: Predicate<A>, f: (b: B) => A): Predicate<B>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L399)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L396)
 
 Since v2.0.0

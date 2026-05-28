@@ -17,6 +17,6 @@ export interface Persistable<A extends Schema.Top, E extends Schema.Top> extends
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Persistable.ts#L49)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Persistable.ts#L54)
 
 Since v4.0.0

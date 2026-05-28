@@ -3,7 +3,7 @@ Module: `Url`<br />
 
 ## Url.modifyUrlParams
 
-Reads, modifies, and updates the query parameters of a URL.
+Reads the query parameters of a URL, modifies them, and updates the URL.
 
 **Details**
 
@@ -31,6 +31,6 @@ console.log(changedUrl.toString())
 declare const modifyUrlParams: { (f: (urlParams: UrlParams.UrlParams) => UrlParams.UrlParams): (url: URL) => URL; (url: URL, f: (urlParams: UrlParams.UrlParams) => UrlParams.UrlParams): URL; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Url.ts#L347)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Url.ts#L346)
 
 Since v4.0.0

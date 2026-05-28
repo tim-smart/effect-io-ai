@@ -33,6 +33,6 @@ console.log(result) // [1, 2, "a", "b"]
 declare const appendElements: { <const T2 extends ReadonlyArray<unknown>>(that: T2): <const T1 extends ReadonlyArray<unknown>>(self: T1) => [...T1, ...T2]; <const T1 extends ReadonlyArray<unknown>, const T2 extends ReadonlyArray<unknown>>(self: T1, that: T2): [...T1, ...T2]; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tuple.ts#L301)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tuple.ts#L297)
 
 Since v4.0.0

@@ -3,7 +3,7 @@ Module: `Context`<br />
 
 ## Context.isContext
 
-Checks if the provided argument is a `Context`.
+Checks whether the provided argument is a `Context`.
 
 **When to use**
 

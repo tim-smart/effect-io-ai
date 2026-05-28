@@ -3,12 +3,11 @@ Module: `Data`<br />
 
 ## Data.TaggedEnum.Constructor
 
-The full constructor-object type returned by `taggedEnum`.
+The full constructors-and-matchers object type returned by `taggedEnum`.
 
 **When to use**
 
-Use to type the full constructor and matcher object returned by
-`taggedEnum`.
+Use to type the constructors-and-matchers object returned by `taggedEnum`.
 
 **Details**
 
@@ -46,7 +45,7 @@ const label = $match(shape, {
 
 **See**
 
-- `taggedEnum` — creates a `Constructor`
+- `taggedEnum` — creates constructors and matchers
 
 **Signature**
 
@@ -86,6 +85,6 @@ type Constructor<A> = Types.Simplify<
   >
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Data.ts#L466)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Data.ts#L464)
 
 Since v3.1.0

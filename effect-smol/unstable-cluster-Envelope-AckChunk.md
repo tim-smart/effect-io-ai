@@ -3,7 +3,8 @@ Module: `Envelope`<br />
 
 ## Envelope.AckChunk
 
-Envelope acknowledging receipt of a streamed reply chunk for a request.
+Represents an envelope acknowledging receipt of a streamed reply chunk for a
+request.
 
 **Details**
 
@@ -15,6 +16,6 @@ The `replyId` identifies the chunk reply that has been received.
 declare class AckChunk
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Envelope.ts#L168)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Envelope.ts#L169)
 
 Since v4.0.0

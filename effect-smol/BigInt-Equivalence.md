@@ -3,11 +3,12 @@ Module: `BigInt`<br />
 
 ## BigInt.Equivalence
 
-An `Equivalence` instance for bigints using strict equality (`===`).
+Equivalence instance for bigints using strict equality (`===`).
 
 **When to use**
 
-Use when an API needs an `Equivalence` instance for `bigint` equality.
+Use when checking bigint equality through APIs that accept an equivalence
+relation.
 
 **Example** (Comparing bigints for equivalence)
 
@@ -24,6 +25,6 @@ console.log(BigInt.Equivalence(1n, 2n)) // false
 declare const Equivalence: Equ.Equivalence<bigint>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigInt.ts#L376)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigInt.ts#L378)
 
 Since v2.0.0

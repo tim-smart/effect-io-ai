@@ -3,7 +3,7 @@ Module: `Sink`<br />
 
 ## Sink.takeWhileFilterEffect
 
-Effectfully applies a `FilterEffect` to input elements while it succeeds,
+Applies a `FilterEffect` to input elements effectfully while it succeeds,
 collecting each successful output.
 
 **Details**
@@ -18,6 +18,6 @@ leftovers.
 declare const takeWhileFilterEffect: <In, Out, X, E, R>(filter: Filter.FilterEffect<In, Out, X, E, R>) => Sink<Array<Out>, In, In, E, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Sink.ts#L1705)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Sink.ts#L1703)
 
 Since v4.0.0

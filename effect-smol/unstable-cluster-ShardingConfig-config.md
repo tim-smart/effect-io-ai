@@ -3,7 +3,7 @@ Module: `ShardingConfig`<br />
 
 ## ShardingConfig.config
 
-Config descriptor for loading `ShardingConfig` values, applying the same
+Describes how to load `ShardingConfig` values, applying the same
 defaults used by the in-memory `defaults` object.
 
 **Signature**

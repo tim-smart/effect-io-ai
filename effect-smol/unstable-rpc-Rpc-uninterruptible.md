@@ -3,7 +3,7 @@ Module: `Rpc`<br />
 
 ## Rpc.uninterruptible
 
-You can use `uninterruptible` to wrap a response Effect or Stream, to ensure that it is run in an uninterruptible region.
+Wraps a response Effect or Stream so the RPC server runs it in an uninterruptible region.
 
 **Signature**
 
@@ -11,6 +11,6 @@ You can use `uninterruptible` to wrap a response Effect or Stream, to ensure tha
 declare const uninterruptible: <A extends object>(value: A) => Wrapper<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Rpc.ts#L1283)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Rpc.ts#L1287)
 
 Since v4.0.0

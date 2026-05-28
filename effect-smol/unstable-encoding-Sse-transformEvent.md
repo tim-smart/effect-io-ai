@@ -3,8 +3,8 @@ Module: `Sse`<br />
 
 ## Sse.transformEvent
 
-Schema transformation between the untagged SSE event shape and the tagged
-`Event` model.
+Schema for transforming untagged SSE event payloads into tagged `Event`
+models.
 
 **Signature**
 

@@ -3,7 +3,7 @@ Module: `References`<br />
 
 ## References.CurrentLogAnnotations
 
-Reference for managing log annotations that are automatically added to all log entries.
+Context reference for managing log annotations that are automatically added to all log entries.
 These annotations provide contextual metadata that appears in every log message.
 
 **When to use**

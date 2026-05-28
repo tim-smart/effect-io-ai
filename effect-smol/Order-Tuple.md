@@ -13,7 +13,6 @@ Use when when comparing tuples with different types for each position
 
 **Details**
 
-- Pure function: does not mutate inputs
 - Compares tuples element-by-element using the corresponding order
 - Stops at the first non-zero comparison result
 - Requires tuples to have the same length as the order collection
@@ -41,6 +40,6 @@ console.log(tupleOrder([1, "a"], [1, "a"])) // 0
 declare const Tuple: <const Elements extends ReadonlyArray<Order<any>>>(elements: Elements) => Order<{ readonly [I in keyof Elements]: [Elements[I]] extends [Order<infer A>] ? A : never; }>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Order.ts#L624)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Order.ts#L611)
 
 Since v4.0.0

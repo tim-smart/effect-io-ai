@@ -3,7 +3,7 @@ Module: `SchemaAST`<br />
 
 ## SchemaAST.Context
 
-Per-property metadata attached to AST nodes via `Base.context`.
+Represents per-property metadata attached to AST nodes via `Base.context`.
 
 **Details**
 

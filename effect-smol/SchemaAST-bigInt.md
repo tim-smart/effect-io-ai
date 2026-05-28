@@ -3,7 +3,7 @@ Module: `SchemaAST`<br />
 
 ## SchemaAST.bigInt
 
-Singleton `BigInt` AST instance.
+Provides the singleton `BigInt` AST instance.
 
 **When to use**
 
@@ -21,6 +21,6 @@ or transforming schemas at the AST level.
 declare const bigInt: BigInt
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L1557)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L1569)
 
 Since v4.0.0

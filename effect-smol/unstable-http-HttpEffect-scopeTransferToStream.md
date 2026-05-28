@@ -3,7 +3,7 @@ Module: `HttpEffect`<br />
 
 ## HttpEffect.scopeTransferToStream
 
-For streaming server responses, transfers request scope ownership to the body stream so the scope closes when the stream exits.
+Returns a streaming server response that closes the request scope when the body stream exits.
 
 **Signature**
 

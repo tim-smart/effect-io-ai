@@ -3,7 +3,7 @@ Module: `BigInt`<br />
 
 ## BigInt.ReducerSum
 
-A `Reducer` for combining `bigint`s using addition.
+Reducer for combining `bigint`s using addition.
 
 **When to use**
 
@@ -24,6 +24,6 @@ The initial value is `0n`, so `combineAll([])` returns `0n`.
 declare const ReducerSum: Reducer.Reducer<bigint>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigInt.ts#L1030)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigInt.ts#L1032)
 
 Since v4.0.0

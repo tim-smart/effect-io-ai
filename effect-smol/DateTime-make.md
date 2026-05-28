@@ -3,7 +3,7 @@ Module: `DateTime`<br />
 
 ## DateTime.make
 
-Creates a `DateTime` from supported input values.
+Creates a `DateTime` safely from supported input values.
 
 **Details**
 

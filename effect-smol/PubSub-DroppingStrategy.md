@@ -3,12 +3,21 @@ Module: `PubSub`<br />
 
 ## PubSub.DroppingStrategy
 
-A strategy that drops new messages when the `PubSub` is at capacity. This
-guarantees that a slow subscriber will not slow down the rate at which
-messages are published. However, it creates the risk that a slow
-subscriber will slow down the rate at which messages are received by
-other subscribers and that subscribers may not receive all messages
-published to the `PubSub` while they are subscribed.
+Represents the dropping strategy for bounded `PubSub` values.
+
+**When to use**
+
+Use to keep publishers fast by dropping new messages when the `PubSub` is at
+capacity.
+
+**Details**
+
+A publish that arrives while the `PubSub` is full is dropped instead of
+waiting for capacity.
+
+**Gotchas**
+
+Subscribers may miss messages published while they are subscribed.
 
 **Example** (Using a dropping strategy)
 
@@ -48,6 +57,6 @@ const program = Effect.gen(function*() {
 declare class DroppingStrategy<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PubSub.ts#L2504)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PubSub.ts#L2555)
 
 Since v4.0.0

@@ -11,6 +11,6 @@ Service tag for the `XMLHttpRequest` constructor used by the browser XHR HTTP cl
 declare class XMLHttpRequest
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/BrowserHttpClient.ts#L134)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/BrowserHttpClient.ts#L139)
 
 Since v4.0.0

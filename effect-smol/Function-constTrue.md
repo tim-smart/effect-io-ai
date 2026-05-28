@@ -3,7 +3,7 @@ Module: `Function`<br />
 
 ## Function.constTrue
 
-A thunk that returns always `true`.
+Returns `true` when called.
 
 **When to use**
 

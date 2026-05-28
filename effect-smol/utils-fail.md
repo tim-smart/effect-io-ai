@@ -3,7 +3,7 @@ Module: `utils`<br />
 
 ## utils.fail
 
-Throws an `AssertionError` with the provided error message.
+Fails the current test with the provided error message.
 
 **Signature**
 

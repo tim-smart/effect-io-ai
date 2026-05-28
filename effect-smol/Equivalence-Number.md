@@ -3,7 +3,7 @@ Module: `Equivalence`<br />
 
 ## Equivalence.Number
 
-An `Equivalence` instance for numbers.
+Equivalence instance for numbers.
 
 **When to use**
 
@@ -30,6 +30,6 @@ console.log(Equivalence.Number(NaN, NaN)) // true
 declare const Number: Equivalence<number>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Equivalence.ts#L298)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Equivalence.ts#L295)
 
 Since v4.0.0

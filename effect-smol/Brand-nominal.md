@@ -18,6 +18,6 @@ some validation, see `make` or `check`.
 declare const nominal: <A extends Brand<any>>() => Constructor<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Brand.ts#L271)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Brand.ts#L270)
 
 Since v2.0.0

@@ -12,6 +12,6 @@ kind.
 type Only<Kind, A> = A extends Request<Kind, infer T> ? T : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpRouter.ts#L798)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpRouter.ts#L803)
 
 Since v4.0.0

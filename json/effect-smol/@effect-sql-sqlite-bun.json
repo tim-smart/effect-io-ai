@@ -55,13 +55,13 @@
     },
     "project": "@effect/sql-sqlite-bun",
     "name": "SqliteClient",
-    "description": "Context tag used to access the Bun `SqliteClient` service.",
+    "description": "Service tag for the Bun SQLite client service.\n\n**When to use**\n\nUse to access or provide a Bun SQLite client through the Effect context.",
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
     "category": "tags",
     "signature": "declare const SqliteClient: Context.Service<SqliteClient, SqliteClient>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/sqlite-bun/src/SqliteClient.ts#L106"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/sqlite-bun/src/SqliteClient.ts#L110"
   },
   {
     "_tag": "Function",
@@ -77,7 +77,7 @@
     "since": "4.0.0",
     "category": "constructors",
     "signature": "declare const make: (options: SqliteClientConfig) => Effect.Effect<SqliteClient, never, Scope.Scope | Reactivity.Reactivity>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/sqlite-bun/src/SqliteClient.ts#L138"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/sqlite-bun/src/SqliteClient.ts#L142"
   },
   {
     "_tag": "Function",
@@ -93,7 +93,7 @@
     "since": "4.0.0",
     "category": "layers",
     "signature": "declare const layerConfig: (config: Config.Wrap<SqliteClientConfig>) => Layer.Layer<SqliteClient | Client.SqlClient, Config.ConfigError>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/sqlite-bun/src/SqliteClient.ts#L266"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/sqlite-bun/src/SqliteClient.ts#L270"
   },
   {
     "_tag": "Function",
@@ -109,7 +109,7 @@
     "since": "4.0.0",
     "category": "layers",
     "signature": "declare const layer: (config: SqliteClientConfig) => Layer.Layer<SqliteClient | Client.SqlClient>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/sqlite-bun/src/SqliteClient.ts#L286"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/sqlite-bun/src/SqliteClient.ts#L290"
   },
   {
     "_tag": "Interface",
@@ -141,7 +141,7 @@
     "since": "4.0.0",
     "category": "models",
     "signature": "export interface SqliteClientConfig {\n  readonly filename: string\n  readonly readonly?: boolean | undefined\n  readonly create?: boolean | undefined\n  readonly readwrite?: boolean | undefined\n  readonly disableWAL?: boolean | undefined\n\n  readonly spanAttributes?: Record<string, unknown> | undefined\n\n  readonly transformResultNames?: ((str: string) => string) | undefined\n  readonly transformQueryNames?: ((str: string) => string) | undefined\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/sqlite-bun/src/SqliteClient.ts#L114"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/sqlite-bun/src/SqliteClient.ts#L118"
   },
   {
     "_tag": "TypeAlias",

@@ -3,8 +3,7 @@ Module: `Brand`<br />
 
 ## Brand.BrandError
 
-A `BrandError` is returned when a branded type is constructed from an invalid
-value.
+Error returned when a branded type is constructed from an invalid value.
 
 **Details**
 
@@ -22,6 +21,6 @@ The error wraps a `SchemaIssue.Issue`, exposes `message` through
 declare class BrandError { constructor(issue: Issue.Issue) }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Brand.ts#L151)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Brand.ts#L150)
 
 Since v4.0.0

@@ -3,7 +3,7 @@ Module: `ErrorReporter`<br />
 
 ## ErrorReporter.severity
 
-String property key used to override the severity level of an object error.
+Defines the string property key used to override the severity level of an object error.
 
 **When to use**
 
@@ -21,6 +21,6 @@ value as `severity`. Missing or invalid values fall back to `"Info"`.
 type severity = "~effect/ErrorReporter/severity"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ErrorReporter.ts#L438)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ErrorReporter.ts#L439)
 
 Since v4.0.0

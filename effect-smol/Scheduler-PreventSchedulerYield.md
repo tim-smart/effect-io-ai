@@ -3,7 +3,7 @@ Module: `Scheduler`<br />
 
 ## Scheduler.PreventSchedulerYield
 
-A service reference that controls whether the runtime should bypass scheduler
+Context reference that controls whether the runtime should bypass scheduler
 yield checks. When set to `true`, the fiber run loop won't call
 `Scheduler.shouldYield`.
 

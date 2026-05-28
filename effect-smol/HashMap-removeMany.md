@@ -24,6 +24,6 @@ console.log(HashMap.has(map2, "c")) // true
 declare const removeMany: { <K>(keys: Iterable<K>): <V>(self: HashMap<K, V>) => HashMap<K, V>; <K, V>(self: HashMap<K, V>, keys: Iterable<K>): HashMap<K, V>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashMap.ts#L1021)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashMap.ts#L1019)
 
 Since v2.0.0

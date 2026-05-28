@@ -29,6 +29,6 @@ console.log(parseError.message)
 declare class InvalidOutputError
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AiError.ts#L767)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AiError.ts#L772)
 
 Since v4.0.0

@@ -3,8 +3,16 @@ Module: `McpSchema`<br />
 
 ## McpSchema.InternalError
 
-MCP/JSON-RPC error for unexpected internal server failures. This error uses
-the standard internal error code `-32603` and includes
+Represents an MCP/JSON-RPC error for unexpected internal server failures.
+
+**When to use**
+
+Use to report an unexpected server-side failure while handling a valid
+request.
+
+**Details**
+
+Uses the standard JSON-RPC internal error code `-32603` and includes
 `InternalError.notImplemented` for unimplemented handlers.
 
 **Signature**
@@ -13,6 +21,6 @@ the standard internal error code `-32603` and includes
 declare class InternalError
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L560)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L641)
 
 Since v4.0.0

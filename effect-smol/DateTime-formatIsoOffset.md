@@ -3,7 +3,7 @@ Module: `DateTime`<br />
 
 ## DateTime.formatIsoOffset
 
-Format a `DateTime.Zoned` as an ISO string with an offset.
+Formats a `DateTime.Zoned` as an ISO string with an offset.
 
 **Details**
 
@@ -30,6 +30,6 @@ console.log(DateTime.formatIsoOffset(zoned)) // "2024-01-01T15:00:00.000+03:00"
 declare const formatIsoOffset: (self: DateTime) => string
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L2765)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L2785)
 
 Since v3.6.0

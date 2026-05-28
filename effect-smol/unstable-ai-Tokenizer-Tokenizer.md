@@ -3,7 +3,12 @@ Module: `Tokenizer`<br />
 
 ## Tokenizer.Tokenizer
 
-The `Tokenizer` service tag for dependency injection.
+Service tag for model tokenization services.
+
+**When to use**
+
+Use to access or provide model-specific token counting and prompt truncation
+operations.
 
 **Details**
 
@@ -29,6 +34,6 @@ const useTokenizer = Effect.gen(function*() {
 declare class Tokenizer
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tokenizer.ts#L81)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tokenizer.ts#L86)
 
 Since v4.0.0

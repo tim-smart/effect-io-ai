@@ -14,7 +14,6 @@ Use when comparing objects with known, fixed property names
 
 **Details**
 
-- Does not mutate inputs
 - Compares only the properties specified in the struct definition
 - Properties not in the struct are ignored
 - Returns `true` only if all specified properties are equivalent according to their equivalences
@@ -79,6 +78,6 @@ console.log(nameAgeEq(obj1, obj2)) // true
 declare const Struct: <R extends Record<string, Equivalence<any>>>(fields: R) => Equivalence<{ readonly [K in keyof R]: [R[K]] extends [Equivalence<infer A>] ? A : never; }>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Equivalence.ts#L765)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Equivalence.ts#L756)
 
 Since v4.0.0

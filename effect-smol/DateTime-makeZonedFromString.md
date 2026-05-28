@@ -3,7 +3,7 @@ Module: `DateTime`<br />
 
 ## DateTime.makeZonedFromString
 
-Parses an ISO zoned date-time string into a `DateTime.Zoned`.
+Parses an ISO zoned date-time string into a `DateTime.Zoned` safely.
 
 **Details**
 

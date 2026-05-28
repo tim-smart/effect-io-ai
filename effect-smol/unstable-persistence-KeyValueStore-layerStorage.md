@@ -17,6 +17,6 @@ https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API
 declare const layerStorage: (evaluate: LazyArg<Storage>) => Layer.Layer<KeyValueStore>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/KeyValueStore.ts#L809)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/KeyValueStore.ts#L814)
 
 Since v4.0.0

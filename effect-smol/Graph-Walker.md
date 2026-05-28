@@ -3,7 +3,7 @@ Module: `Graph`<br />
 
 ## Graph.Walker
 
-Iterable wrapper used by graph traversal and listing APIs.
+Represents an iterable wrapper used by graph traversal and listing APIs.
 
 **Details**
 

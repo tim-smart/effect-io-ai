@@ -8,7 +8,7 @@ Extracts the Success variant from an Exit as a Result.
 **When to use**
 
 Use when composing Exit checks with `Filter` or other `Result`-based
-filtering APIs.
+filtering APIs and you want the full Success wrapper.
 
 **Details**
 
@@ -42,6 +42,6 @@ console.log(Result.isSuccess(result)) // true
 declare const filterSuccess: <A, E>(self: Exit<A, E>) => Result.Result<Success<A>, Failure<never, E>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Exit.ts#L609)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Exit.ts#L611)
 
 Since v4.0.0

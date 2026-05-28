@@ -3,7 +3,7 @@ Module: `SchemaRepresentation`<br />
 
 ## SchemaRepresentation.$Suspend
 
-Schema codec for the `Suspend` representation node.
+Schema for the `Suspend` representation node.
 
 **Signature**
 

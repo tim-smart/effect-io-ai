@@ -3,8 +3,8 @@ Module: `Channel`<br />
 
 ## Channel.buffer
 
-Allows a faster producer to progress independently of a slower consumer by
-buffering up to `capacity` elements in a queue.
+Buffers individual output elements in a queue with the configured `capacity`
+so a faster producer can progress independently of a slower consumer.
 
 **Details**
 
@@ -27,6 +27,6 @@ Dropping and sliding strategies can lose output elements under backpressure.
 declare const buffer: { (options: { readonly capacity: "unbounded"; } | { readonly capacity: number; readonly strategy?: "dropping" | "sliding" | "suspend" | undefined; }): <OutElem, OutErr, OutDone, InElem, InErr, InDone, Env>(self: Channel<OutElem, OutErr, OutDone, InElem, InErr, InDone, Env>) => Channel<OutElem, OutErr, OutDone, InElem, InErr, InDone, Env>; <OutElem, OutErr, OutDone, InElem, InErr, InDone, Env>(self: Channel<OutElem, OutErr, OutDone, InElem, InErr, InDone, Env>, options: { readonly capacity: "unbounded"; } | { readonly capacity: number; readonly strategy?: "dropping" | "sliding" | "suspend" | undefined; }): Channel<OutElem, OutErr, OutDone, InElem, InErr, InDone, Env>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L6736)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L6743)
 
 Since v2.0.0

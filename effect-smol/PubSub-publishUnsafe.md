@@ -3,8 +3,19 @@ Module: `PubSub`<br />
 
 ## PubSub.publishUnsafe
 
-Publishes a message to the `PubSub`, returning whether the message was published
-to the `PubSub`.
+Attempts to publish a message synchronously without applying the PubSub
+strategy's effectful surplus handling.
+
+**When to use**
+
+Use when you need a non-blocking synchronous publish attempt and can handle
+`false` when the message cannot be accepted immediately.
+
+**Details**
+
+Returns `false` if the `PubSub` is shut down or the message cannot be
+accepted immediately, for example when a bounded PubSub is full. Prefer
+`publish` when backpressure or sliding behavior should be honored.
 
 **Example** (Publishing without suspending)
 
@@ -28,12 +39,16 @@ const publishedCount =
 console.log(`Published ${publishedCount} out of ${messages.length} messages`)
 ```
 
+**See**
+
+- `publish` for effectful publishing that honors the configured surplus strategy
+
 **Signature**
 
 ```ts
 declare const publishUnsafe: { <A>(value: A): (self: PubSub<A>) => boolean; <A>(self: PubSub<A>, value: A): boolean; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PubSub.ts#L985)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PubSub.ts#L1007)
 
 Since v4.0.0

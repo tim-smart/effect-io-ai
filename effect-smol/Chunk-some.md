@@ -3,7 +3,7 @@ Module: `Chunk`<br />
 
 ## Chunk.some
 
-Check if a predicate holds true for some `Chunk` element.
+Checks whether a predicate holds true for some `Chunk` element.
 
 **Example** (Checking for some matching element)
 
@@ -29,6 +29,6 @@ console.log(Chunk.some(words, (word) => word.includes("ban"))) // true
 declare const some: { <A>(predicate: Predicate<NoInfer<A>>): (self: Chunk<A>) => self is NonEmptyChunk<A>; <A>(self: Chunk<A>, predicate: Predicate<A>): self is NonEmptyChunk<A>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L2809)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L2820)
 
 Since v2.0.0

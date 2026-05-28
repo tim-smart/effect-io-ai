@@ -3,7 +3,7 @@ Module: `DateTime`<br />
 
 ## DateTime.isGreaterThanOrEqualTo
 
-Checks if the first `DateTime` is after or equal to the second `DateTime`.
+Checks whether the first `DateTime` is after or equal to the second `DateTime`.
 
 **Example** (Checking whether a DateTime is later or equal)
 
@@ -25,6 +25,6 @@ console.log(DateTime.isGreaterThanOrEqualTo(date1, date3)) // false
 declare const isGreaterThanOrEqualTo: { (that: DateTime): (self: DateTime) => boolean; (self: DateTime, that: DateTime): boolean; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L1356)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L1365)
 
 Since v4.0.0

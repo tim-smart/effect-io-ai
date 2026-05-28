@@ -11,7 +11,6 @@ Use when you want to guard nullish values explicitly.
 
 **Details**
 
-- Pure; does not mutate input.
 - Uses `input === null || input === undefined`.
 
 **Example** (Guard nullish)
@@ -37,6 +36,6 @@ console.log(nullish)
 declare const isNullish: <A>(input: A) => input is A & (null | undefined)
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L960)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L940)
 
 Since v4.0.0

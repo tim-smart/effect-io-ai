@@ -3,7 +3,7 @@ Module: `HttpApiBuilder`<br />
 
 ## HttpApiBuilder.layer
 
-Register an `HttpApi` with a `HttpRouter`.
+Registers an `HttpApi` with a `HttpRouter`.
 
 **Signature**
 

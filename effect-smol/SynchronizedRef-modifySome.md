@@ -3,7 +3,7 @@ Module: `SynchronizedRef`<br />
 
 ## SynchronizedRef.modifySome
 
-Atomically computes a return value and an optional new ref value.
+Computes a return value and an optional new ref value atomically.
 `Option.some` updates the ref; `Option.none` leaves it unchanged.
 
 **When to use**

@@ -3,7 +3,7 @@ Module: `TxPubSub`<br />
 
 ## TxPubSub.isFull
 
-Checks if any subscriber queue is at capacity.
+Checks whether any subscriber queue is at capacity.
 
 **Example** (Checking whether a pub/sub is full)
 

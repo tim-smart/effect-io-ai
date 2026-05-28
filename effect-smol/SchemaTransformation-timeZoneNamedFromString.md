@@ -26,6 +26,6 @@ identifier.
 declare const timeZoneNamedFromString: Transformation<DateTime.TimeZone.Named, string, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L1703)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L1701)
 
 Since v4.0.0

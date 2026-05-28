@@ -3,7 +3,7 @@ Module: `ChildProcess`<br />
 
 ## ChildProcess.isPipedCommand
 
-Check if a command is a `PipedCommand`.
+Checks whether a command is a `PipedCommand`.
 
 **Signature**
 

@@ -37,6 +37,6 @@ console.log(Result.isSuccess(result))
 declare const tap: { <A>(f: (a: A) => void): <E>(self: Result<A, E>) => Result<A, E>; <A, E>(self: Result<A, E>, f: (a: A) => void): Result<A, E>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L1934)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L1958)
 
 Since v4.0.0

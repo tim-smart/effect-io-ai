@@ -3,10 +3,16 @@ Module: `McpSchema`<br />
 
 ## McpSchema.CreateMessageResult
 
-The client's response to a sampling/create_message request from the server.
-The client should inform the user before returning the sampled message, to
-allow them to inspect the response (human in the loop) and decide whether to
-allow the server to see it.
+Represents a client response to an MCP sampling request.
+
+**When to use**
+
+Use to return the message produced by client-side model sampling.
+
+**Details**
+
+The client should let the user inspect the sampled message before returning
+it to the server.
 
 **Signature**
 
@@ -14,6 +20,6 @@ allow the server to see it.
 declare class CreateMessageResult
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L1692)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L1800)
 
 Since v4.0.0

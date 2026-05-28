@@ -3,7 +3,7 @@ Module: `SchemaAST`<br />
 
 ## SchemaAST.void
 
-Singleton `Void` AST instance.
+Provides the singleton `Void` AST instance.
 
 **When to use**
 
@@ -22,6 +22,6 @@ Use when constructing or comparing AST nodes that represent the TypeScript
 declare const void: Void
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L881)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L891)
 
 Since v4.0.0

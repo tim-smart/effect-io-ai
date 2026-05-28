@@ -3,7 +3,14 @@ Module: `TxReentrantLock`<br />
 
 ## TxReentrantLock.releaseWrite
 
-Releases a write lock held by the current fiber.
+Releases one write lock held by the current fiber.
+
+**When to use**
+
+Use to leave a manually acquired write lock.
+
+**Details**
+
 Returns the remaining number of write locks held by this fiber.
 
 **Example** (Releasing a write lock)
@@ -25,6 +32,6 @@ const program = Effect.gen(function*() {
 declare const releaseWrite: (self: TxReentrantLock) => Effect.Effect<number>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxReentrantLock.ts#L314)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxReentrantLock.ts#L338)
 
 Since v2.0.0

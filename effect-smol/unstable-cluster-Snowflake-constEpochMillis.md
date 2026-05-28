@@ -3,7 +3,7 @@ Module: `Snowflake`<br />
 
 ## Snowflake.constEpochMillis
 
-Custom snowflake epoch in Unix milliseconds, set to January 1, 2025 UTC.
+Defines the custom snowflake epoch in Unix milliseconds.
 
 **Signature**
 
@@ -11,6 +11,6 @@ Custom snowflake epoch in Unix milliseconds, set to January 1, 2025 UTC.
 declare const constEpochMillis: number
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Snowflake.ts#L140)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Snowflake.ts#L141)
 
 Since v4.0.0

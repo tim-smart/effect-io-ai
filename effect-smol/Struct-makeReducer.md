@@ -15,7 +15,7 @@ Use to fold a collection of structs into a single summary struct.
 **Details**
 
 Pass `omitKeyWhen` to drop properties whose reduced value matches a
-predicate. This does not mutate the inputs and returns a fresh object.
+predicate.
 
 **Example** (Reducing a collection of structs)
 
@@ -45,6 +45,6 @@ console.log(result) // { n: 6, s: "abc" }
 declare const makeReducer: <A>(reducers: { readonly [K in keyof A]: Reducer.Reducer<A[K]>; }, options?: { readonly omitKeyWhen?: ((a: A[keyof A]) => boolean) | undefined; }) => Reducer.Reducer<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Struct.ts#L1020)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Struct.ts#L995)
 
 Since v4.0.0

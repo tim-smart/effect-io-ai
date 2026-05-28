@@ -16,6 +16,6 @@ Maximum query length: 200 characters.
 type ToolSearchRegexParameters = typeof ToolSearchRegexParameters.Type
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L2424)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L2426)
 
 Since v4.0.0

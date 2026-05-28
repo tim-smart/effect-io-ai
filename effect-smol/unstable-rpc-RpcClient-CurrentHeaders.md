@@ -3,8 +3,13 @@ Module: `RpcClient`<br />
 
 ## RpcClient.CurrentHeaders
 
-A fiber-local reference containing headers that are merged into outgoing RPC
+Fiber reference containing headers that are merged into outgoing RPC
 client requests.
+
+**When to use**
+
+Use to set request headers that should be automatically merged into outgoing
+RPC client messages.
 
 **Signature**
 
@@ -12,6 +17,6 @@ client requests.
 declare const CurrentHeaders: Context.Reference<Headers.Headers>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RpcClient.ts#L833)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RpcClient.ts#L838)
 
 Since v4.0.0

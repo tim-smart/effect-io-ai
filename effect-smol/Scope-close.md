@@ -3,8 +3,16 @@ Module: `Scope`<br />
 
 ## Scope.close
 
-Closes a scope, running all registered finalizers in the appropriate order.
-The exit value is passed to each finalizer.
+Closes a scope and runs its registered finalizers.
+
+**When to use**
+
+Use to close a scope manually with a specific exit value.
+
+**Details**
+
+Finalizers run in the scope's configured order and receive the supplied
+`Exit`.
 
 **Example** (Running scope finalizers)
 
@@ -34,6 +42,6 @@ const resourceManagement = Effect.gen(function*() {
 declare const close: <A, E>(self: Scope, exit: Exit<A, E>) => Effect<void>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Scope.ts#L519)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Scope.ts#L540)
 
 Since v2.0.0

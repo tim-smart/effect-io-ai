@@ -3,7 +3,7 @@ Module: `OpenAiTool`<br />
 
 ## OpenAiTool.CodeInterpreter
 
-OpenAI Code Interpreter tool that allows the model to execute Python code in
+Defines the OpenAI Code Interpreter tool that allows the model to execute Python code in
 a sandboxed environment.
 
 **When to use**

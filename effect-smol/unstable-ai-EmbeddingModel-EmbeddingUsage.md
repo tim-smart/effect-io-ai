@@ -3,7 +3,7 @@ Module: `EmbeddingModel`<br />
 
 ## EmbeddingModel.EmbeddingUsage
 
-Token usage metadata for embedding operations.
+Represents token usage metadata for embedding operations.
 
 **Details**
 

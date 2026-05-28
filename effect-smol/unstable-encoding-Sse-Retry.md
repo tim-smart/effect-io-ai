@@ -3,7 +3,7 @@ Module: `Sse`<br />
 
 ## Sse.Retry
 
-Server-Sent Events retry directive.
+Represents a Server-Sent Events retry directive.
 
 **Details**
 

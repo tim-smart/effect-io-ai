@@ -3,7 +3,7 @@ Module: `Metric`<br />
 
 ## Metric.enableRuntimeMetricsLayer
 
-A Layer that enables automatic collection of fiber runtime metrics across
+Layer that enables automatic collection of fiber runtime metrics across
 an entire Effect application.
 
 **When to use**
@@ -103,6 +103,6 @@ const programWithDirectMetrics = application.pipe(
 declare const enableRuntimeMetricsLayer: Layer.Layer<never, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Metric.ts#L3853)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Metric.ts#L3867)
 
 Since v4.0.0

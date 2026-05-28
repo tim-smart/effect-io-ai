@@ -3,7 +3,7 @@ Module: `Option`<br />
 
 ## Option.gen
 
-Generator-based syntax for `Option`, similar to `async`/`await` but for
+Provides generator-based syntax for `Option`, similar to `async`/`await` but for
 optional values. Yielding a `None` short-circuits the generator to `None`.
 
 **When to use**
@@ -46,6 +46,6 @@ console.log(person)
 declare const gen: Gen.Gen<OptionTypeLambda>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L2570)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L2569)
 
 Since v2.0.0

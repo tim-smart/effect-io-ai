@@ -3,7 +3,7 @@ Module: `UrlParams`<br />
 
 ## UrlParams.makeUrl
 
-Creates a `URL` by appending `UrlParams` and an optional hash to a URL string.
+Creates a `URL` safely by appending `UrlParams` and an optional hash to a URL string.
 
 **Details**
 

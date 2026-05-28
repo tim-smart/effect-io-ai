@@ -3,7 +3,7 @@ Module: `LogLevel`<br />
 
 ## LogLevel.Equivalence
 
-An `Equivalence` instance for log levels using strict equality (`===`).
+Equivalence instance for log levels using strict equality (`===`).
 
 **When to use**
 

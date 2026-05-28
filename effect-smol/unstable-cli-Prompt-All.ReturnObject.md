@@ -17,6 +17,6 @@ type ReturnObject<T> = [T] extends [{ [K: string]: Any }] ? Prompt<
     : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L616)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L624)
 
 Since v4.0.0

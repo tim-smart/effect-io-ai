@@ -3,7 +3,7 @@ Module: `SchemaRepresentation`<br />
 
 ## SchemaRepresentation.$Union
 
-Schema codec for the `Union` representation node.
+Schema for the `Union` representation node.
 
 **Signature**
 

@@ -3,7 +3,7 @@ Module: `BunClusterHttp`<br />
 
 ## BunClusterHttp.layerHttpServer
 
-Bun HTTP server layer for cluster runners, using `ShardingConfig.runnerListenAddress` or `runnerAddress` as the listen address.
+Layer that provides a Bun HTTP server for cluster runners.
 
 **Signature**
 

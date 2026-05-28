@@ -3,7 +3,12 @@ Module: `EventLogRemote`<br />
 
 ## EventLogRemote.EventLogRemoteClient
 
-Typed RPC client service for the `EventLogRemoteRpcs` protocol.
+Service that provides a typed RPC client for the `EventLogRemoteRpcs` protocol.
+
+**When to use**
+
+Use to provide the RPC client used by remote event-log replicas to
+authenticate, write entries, and subscribe to changes.
 
 **Signature**
 
@@ -11,6 +16,6 @@ Typed RPC client service for the `EventLogRemoteRpcs` protocol.
 declare class EventLogRemoteClient
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventLogRemote.ts#L125)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventLogRemote.ts#L135)
 
 Since v4.0.0

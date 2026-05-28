@@ -3,7 +3,7 @@ Module: `RpcSchema`<br />
 
 ## RpcSchema.ClientAbort
 
-Cause annotation used to mark interruptions that originate from an RPC client
+Annotation that marks interruptions that originate from an RPC client
 abort.
 
 **Signature**

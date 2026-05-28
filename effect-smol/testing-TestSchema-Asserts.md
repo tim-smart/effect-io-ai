@@ -3,7 +3,7 @@ Module: `TestSchema`<br />
 
 ## TestSchema.Asserts
 
-Entry point for schema test assertions. Wraps a schema and exposes operation-specific helpers for decoding, encoding, make, arbitrary generation, and round-trip verification.
+Provides schema test assertions for decoding, encoding, make, arbitrary generation, and round-trip verification.
 
 **When to use**
 

@@ -3,7 +3,7 @@ Module: `FiberHandle`<br />
 
 ## FiberHandle.getUnsafe
 
-Retrieve the fiber from the FiberHandle.
+Retrieves the fiber from the FiberHandle synchronously.
 
 **Example** (Reading the current fiber unsafely)
 

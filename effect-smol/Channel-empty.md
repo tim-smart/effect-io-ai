@@ -3,7 +3,7 @@ Module: `Channel`<br />
 
 ## Channel.empty
 
-Represents an Channel that emits no elements
+Represents a `Channel` that emits no elements.
 
 **Example** (Using empty channels)
 

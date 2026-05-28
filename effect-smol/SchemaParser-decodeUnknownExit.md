@@ -3,7 +3,8 @@ Module: `SchemaParser`<br />
 
 ## SchemaParser.decodeUnknownExit
 
-Creates a synchronous decoder for `unknown` input that returns an `Exit`.
+Creates a synchronous decoder for `unknown` input that reports failure safely
+as an `Exit`.
 
 **When to use**
 
@@ -35,6 +36,6 @@ Because this adapter runs synchronously, async decoding work can produce an
 declare const decodeUnknownExit: <S extends Schema.Decoder<unknown>>(schema: S, options?: AST.ParseOptions) => (input: unknown, options?: AST.ParseOptions) => Exit.Exit<S["Type"], Issue.Issue>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaParser.ts#L370)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaParser.ts#L371)
 
 Since v4.0.0

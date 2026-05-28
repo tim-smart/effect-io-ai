@@ -3,7 +3,7 @@ Module: `Param`<br />
 
 ## Param.flagKind
 
-Kind discriminator for flag parameters.
+Defines the kind discriminator for flag parameters.
 
 **When to use**
 

@@ -34,6 +34,6 @@ if (some._tag === "Some") {
 declare const longestPrefixOf: { (key: string): <V>(self: Trie<V>) => Option<[string, V]>; <V>(self: Trie<V>, key: string): Option<[string, V]>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Trie.ts#L484)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Trie.ts#L482)
 
 Since v2.0.0

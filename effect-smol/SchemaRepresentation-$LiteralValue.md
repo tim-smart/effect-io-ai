@@ -3,7 +3,7 @@ Module: `SchemaRepresentation`<br />
 
 ## SchemaRepresentation.$LiteralValue
 
-Schema codec for the literal value types allowed in a `Literal` node
+Schema for the literal value types allowed in a `Literal` node
 (string, finite number, boolean, or bigint).
 
 **Signature**

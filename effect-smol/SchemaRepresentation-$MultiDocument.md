@@ -3,7 +3,7 @@ Module: `SchemaRepresentation`<br />
 
 ## SchemaRepresentation.$MultiDocument
 
-Schema codec for `MultiDocument`.
+Schema for `MultiDocument`.
 
 **Signature**
 

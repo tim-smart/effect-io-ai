@@ -3,7 +3,7 @@ Module: `BigInt`<br />
 
 ## BigInt.divide
 
-Safely divides one `bigint` by another.
+Divides one `bigint` by another safely.
 
 **When to use**
 

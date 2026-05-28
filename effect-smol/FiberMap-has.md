@@ -3,7 +3,7 @@ Module: `FiberMap`<br />
 
 ## FiberMap.has
 
-Check if a key exists in the FiberMap.
+Checks whether a key exists in the FiberMap.
 This is the Effect-wrapped version of `hasUnsafe`.
 
 **Example** (Checking if a key exists)

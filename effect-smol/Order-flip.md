@@ -13,7 +13,6 @@ Use when when you need descending order instead of ascending
 
 **Details**
 
-- Pure function: does not mutate inputs
 - Returns a new order that swaps the arguments before comparison
 - If the original order returns `-1`, the flipped order returns `1`, and vice versa
 - Equal comparisons remain `0`
@@ -40,6 +39,6 @@ console.log(flip(1, 1)) // 0
 declare const flip: <A>(O: Order<A>) => Order<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Order.ts#L360)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Order.ts#L353)
 
 Since v4.0.0

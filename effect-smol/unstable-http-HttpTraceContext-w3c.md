@@ -3,7 +3,7 @@ Module: `HttpTraceContext`<br />
 
 ## HttpTraceContext.w3c
 
-Decodes an external span from the W3C `traceparent` header.
+Decodes an external span safely from the W3C `traceparent` header.
 
 **Details**
 

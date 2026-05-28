@@ -567,7 +567,7 @@
     },
     "project": "@effect/platform-node",
     "name": "layer",
-    "description": "A layer that provides the Node.js Crypto service implementation.",
+    "description": "Layer that provides the Node.js Crypto service implementation.",
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
@@ -605,7 +605,7 @@
     "since": "4.0.0",
     "category": "Dispatcher",
     "signature": "declare class Dispatcher",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L107"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L116"
   },
   {
     "_tag": "Class",
@@ -621,7 +621,7 @@
     "since": "4.0.0",
     "category": "HttpAgent",
     "signature": "declare class HttpAgent",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L403"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L412"
   },
   {
     "_tag": "Constant",
@@ -637,7 +637,7 @@
     "since": "4.0.0",
     "category": "Dispatcher",
     "signature": "declare const makeDispatcher: Effect.Effect<Undici.Dispatcher, never, Scope.Scope>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L118"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L127"
   },
   {
     "_tag": "Constant",
@@ -653,7 +653,7 @@
     "since": "4.0.0",
     "category": "Dispatcher",
     "signature": "declare const layerDispatcher: Layer.Layer<Dispatcher, never, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L129"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L138"
   },
   {
     "_tag": "Constant",
@@ -669,7 +669,7 @@
     "since": "4.0.0",
     "category": "Dispatcher",
     "signature": "declare const dispatcherLayerGlobal: Layer.Layer<Dispatcher, never, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L138"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L147"
   },
   {
     "_tag": "Constant",
@@ -685,7 +685,7 @@
     "since": "4.0.0",
     "category": "undici",
     "signature": "declare const UndiciOptions: Context.Reference<Partial<Undici.Dispatcher.RequestOptions<null>>>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L147"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L156"
   },
   {
     "_tag": "Constant",
@@ -701,7 +701,7 @@
     "since": "4.0.0",
     "category": "undici",
     "signature": "declare const makeUndici: Effect.Effect<Client.HttpClient, never, Dispatcher>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L160"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L169"
   },
   {
     "_tag": "Constant",
@@ -717,7 +717,7 @@
     "since": "4.0.0",
     "category": "Undici",
     "signature": "declare const layerUndiciNoDispatcher: Layer.Layer<Client.HttpClient, never, Dispatcher>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L377"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L386"
   },
   {
     "_tag": "Constant",
@@ -733,7 +733,7 @@
     "since": "4.0.0",
     "category": "Undici",
     "signature": "declare const layerUndici: Layer.Layer<Client.HttpClient, never, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L390"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L399"
   },
   {
     "_tag": "Constant",
@@ -749,7 +749,7 @@
     "since": "4.0.0",
     "category": "HttpAgent",
     "signature": "declare const layerAgentOptions: (options?: Https.AgentOptions | undefined) => Layer.Layer<HttpAgent>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L435"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L444"
   },
   {
     "_tag": "Constant",
@@ -765,7 +765,7 @@
     "since": "4.0.0",
     "category": "HttpAgent",
     "signature": "declare const layerAgent: Layer.Layer<HttpAgent, never, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L446"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L455"
   },
   {
     "_tag": "Constant",
@@ -781,7 +781,7 @@
     "since": "4.0.0",
     "category": "node:http",
     "signature": "declare const makeNodeHttp: Effect.Effect<Client.HttpClient, never, HttpAgent>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L456"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L465"
   },
   {
     "_tag": "Constant",
@@ -797,7 +797,7 @@
     "since": "4.0.0",
     "category": "node:http",
     "signature": "declare const layerNodeHttpNoAgent: Layer.Layer<Client.HttpClient, never, HttpAgent>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L669"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L678"
   },
   {
     "_tag": "Constant",
@@ -813,7 +813,7 @@
     "since": "4.0.0",
     "category": "node:http",
     "signature": "declare const layerNodeHttp: Layer.Layer<Client.HttpClient, never, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L682"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L691"
   },
   {
     "_tag": "Function",
@@ -829,7 +829,7 @@
     "since": "4.0.0",
     "category": "HttpAgent",
     "signature": "declare const makeAgent: (options?: Https.AgentOptions) => Effect.Effect<HttpAgent[\"Service\"], never, Scope.Scope>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L415"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L424"
   },
   {
     "_tag": "Export",
@@ -839,13 +839,13 @@
     },
     "project": "@effect/platform-node",
     "name": "Fetch",
-    "description": "Fetch-based HTTP client implementation for Node.js.",
+    "description": "Provides a fetch-based HTTP client implementation for Node.js.\n\n**When to use**\n\nUse to access or override the fetch implementation used by the Node\nfetch-based HTTP client.",
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
-    "category": "Fetch",
+    "category": "fetch",
     "signature": "declare const Fetch: Context.Reference<{ (input: RequestInfo | URL, init?: RequestInit): Promise<Response>; (input: string | URL | Request, init?: RequestInit): Promise<Response>; }>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L79"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L84"
   },
   {
     "_tag": "Export",
@@ -861,7 +861,7 @@
     "since": "4.0.0",
     "category": "Fetch",
     "signature": "declare const layerFetch: Layer.Layer<Client.HttpClient, never, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L86"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L91"
   },
   {
     "_tag": "Export",
@@ -871,13 +871,13 @@
     },
     "project": "@effect/platform-node",
     "name": "RequestInit",
-    "description": "Request initialization options accepted by the fetch-based HTTP client.",
+    "description": "Provides request initialization options accepted by the fetch-based HTTP client.\n\n**When to use**\n\nUse to provide default fetch request options for Node HTTP requests.",
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
-    "category": "Fetch",
+    "category": "fetch",
     "signature": "declare const RequestInit: typeof RequestInit",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L93"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L102"
   },
   {
     "_tag": "Class",
@@ -887,13 +887,13 @@
     },
     "project": "@effect/platform-node",
     "name": "NodeHttpIncomingMessage",
-    "description": "Base adapter from Node `IncomingMessage` to Effect HTTP incoming messages,\nexposing headers, remote address, stream access, and cached text, JSON, URL\nparameter, and array-buffer body decoders with caller-provided error mapping.",
+    "description": "Adapts a Node `IncomingMessage` to Effect HTTP incoming messages.\n\n**When to use**\n\nUse to implement Node HTTP request or response adapters that expose the\nEffect HTTP incoming-message interface.\n\n**Details**\n\nThe adapter exposes headers, remote address, stream access, and cached body\ndecoders. Subclasses provide the error mapping for unknown Node errors.",
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
     "category": "constructors",
     "signature": "declare class NodeHttpIncomingMessage<E> { constructor(\n    source: Http.IncomingMessage,\n    onError: (error: unknown) => E,\n    remoteAddressOverride?: Option.Option<string>\n  ) }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpIncomingMessage.ts#L48"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpIncomingMessage.ts#L56"
   },
   {
     "_tag": "Constant",
@@ -1067,7 +1067,7 @@
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
-    "category": "Accessors",
+    "category": "accessors",
     "signature": "declare const toIncomingMessage: (self: HttpServerRequest) => Http.IncomingMessage",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpServerRequest.ts#L33"
   },
@@ -1083,7 +1083,7 @@
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
-    "category": "Accessors",
+    "category": "accessors",
     "signature": "declare const toServerResponse: (self: HttpServerRequest) => Http.ServerResponse",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpServerRequest.ts#L43"
   },

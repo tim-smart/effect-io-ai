@@ -3,9 +3,8 @@ Module: `Schedule`<br />
 
 ## Schedule.andThen
 
-Returns a new `Schedule` that will first execute the left (i.e. `self`)
-schedule to completion. Once the left schedule is complete, the right (i.e.
-`other`) schedule will be executed to completion.
+Returns a schedule that runs `self` to completion, then runs `other`, and
+merges their outputs.
 
 **Example** (Sequencing quick and slow retries)
 
@@ -46,6 +45,6 @@ const program = Effect.gen(function*() {
 declare const andThen: { <Output2, Input2, Error2, Env2>(other: Schedule<Output2, Input2, Error2, Env2>): <Output, Input, Error, Env>(self: Schedule<Output, Input, Error, Env>) => Schedule<Output | Output2, Input & Input2, Error | Error2, Env | Env2>; <Output, Input, Error, Env, Output2, Input2, Error2, Env2>(self: Schedule<Output, Input, Error, Env>, other: Schedule<Output2, Input2, Error2, Env2>): Schedule<Output | Output2, Input & Input2, Error | Error2, Env | Env2>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L732)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L731)
 
 Since v2.0.0

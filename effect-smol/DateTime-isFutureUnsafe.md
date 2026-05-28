@@ -3,7 +3,7 @@ Module: `DateTime`<br />
 
 ## DateTime.isFutureUnsafe
 
-Checks if a `DateTime` is in the future compared to the current time.
+Checks synchronously if a `DateTime` is in the future compared to the current time.
 
 **Details**
 
@@ -27,6 +27,6 @@ console.log(DateTime.isFutureUnsafe(now)) // false
 declare const isFutureUnsafe: (self: DateTime) => boolean
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L1478)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L1487)
 
 Since v4.0.0

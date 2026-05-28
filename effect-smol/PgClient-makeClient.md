@@ -11,6 +11,6 @@ Creates a scoped PostgreSQL client backed by a managed single `pg` client, optio
 declare const makeClient: (options: PgClientConfig & { readonly acquireForStream?: boolean | undefined; }) => Effect.Effect<PgClient, SqlError, Scope.Scope | Reactivity.Reactivity>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/sql/pg/src/PgClient.ts#L236)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/sql/pg/src/PgClient.ts#L240)
 
 Since v4.0.0

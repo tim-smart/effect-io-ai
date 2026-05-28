@@ -25,6 +25,6 @@ specified range.
 declare const isSizeBetween: (minimum: number, maximum: number, annotations?: Annotations.Filter) => AST.Filter<{ readonly size: number; }>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L7536)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L7768)
 
 Since v4.0.0

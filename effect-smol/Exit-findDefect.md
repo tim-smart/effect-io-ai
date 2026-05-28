@@ -45,6 +45,6 @@ console.log(Result.isFailure(noDefect)) // true
 declare const findDefect: <A, E>(input: Exit<A, E>) => Result.Result<unknown, Exit<A, E>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Exit.ts#L804)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Exit.ts#L806)
 
 Since v4.0.0

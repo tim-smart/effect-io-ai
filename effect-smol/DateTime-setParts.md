@@ -3,7 +3,7 @@ Module: `DateTime`<br />
 
 ## DateTime.setParts
 
-Set the different parts of a `DateTime` as an object.
+Sets time-zone-adjusted parts on a `DateTime`.
 
 **Details**
 
@@ -30,6 +30,6 @@ console.log(DateTime.formatIso(updated)) // "2025-06-15T12:00:00.000Z"
 declare const setParts: { (parts: Partial<DateTime.PartsWithWeekday>): <A extends DateTime>(self: A) => A; <A extends DateTime>(self: A, parts: Partial<DateTime.PartsWithWeekday>): A; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L1822)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L1831)
 
 Since v3.6.0

@@ -3,7 +3,7 @@ Module: `Function`<br />
 
 ## Function.apply
 
-Apply a function to a given value.
+Applies a function to a given value.
 
 **When to use**
 

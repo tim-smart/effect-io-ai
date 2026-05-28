@@ -3,7 +3,7 @@ Module: `SchemaAST`<br />
 
 ## SchemaAST.Filter
 
-A single validation check attached to an AST node.
+Represents a single validation check attached to an AST node.
 
 **Details**
 
@@ -36,6 +36,6 @@ declare class Filter<E> { constructor(
   ) }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L2769)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L2781)
 
 Since v4.0.0

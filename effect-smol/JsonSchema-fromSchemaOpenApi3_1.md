@@ -12,8 +12,7 @@ Use when consuming schemas from an OpenAPI 3.1 specification.
 **Details**
 
 This rewrites `#/components/schemas/...` refs to `#/$defs/...`, then delegates
-to `fromSchemaDraft2020_12`. It does not mutate the input and allocates
-a new `Document`.
+to `fromSchemaDraft2020_12`.
 
 **Example** (Parsing an OpenAPI 3.1 schema)
 
@@ -43,6 +42,6 @@ console.log(doc.schema.properties) // { user: { $ref: "#/$defs/User" } }
 declare const fromSchemaOpenApi3_1: (js: JsonSchema) => Document<"draft-2020-12">
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/JsonSchema.ts#L513)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/JsonSchema.ts#L510)
 
 Since v4.0.0

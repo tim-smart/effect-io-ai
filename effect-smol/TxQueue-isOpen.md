@@ -3,7 +3,7 @@ Module: `TxQueue`<br />
 
 ## TxQueue.isOpen
 
-Checks if the queue is in the open state.
+Checks whether the queue is in the open state.
 
 **Example** (Checking open state)
 

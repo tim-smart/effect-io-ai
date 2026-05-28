@@ -3,7 +3,7 @@ Module: `SchemaRepresentation`<br />
 
 ## SchemaRepresentation.$Void
 
-Schema codec for the `Void` representation node.
+Schema for the `Void` representation node.
 
 **Signature**
 

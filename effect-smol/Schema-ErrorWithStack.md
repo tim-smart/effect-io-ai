@@ -3,7 +3,7 @@ Module: `Schema`<br />
 
 ## Schema.ErrorWithStack
 
-A schema for JavaScript `Error` objects that preserves stack traces in the JSON
+Schema for JavaScript `Error` objects that preserves stack traces in the JSON
 encoded form.
 
 **Details**
@@ -18,6 +18,6 @@ Encodes an `Error` as an object with `message`, optional `name`, and optional
 declare const ErrorWithStack: Error
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L8812)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L9044)
 
 Since v4.0.0

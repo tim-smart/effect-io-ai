@@ -37,6 +37,6 @@ console.log(Result.getFailure(Result.fail("err")))
 declare const getFailure: <A, E>(self: Result<A, E>) => Option<E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L723)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L743)
 
 Since v4.0.0

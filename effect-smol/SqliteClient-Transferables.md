@@ -3,7 +3,7 @@ Module: `SqliteClient`<br />
 
 ## SqliteClient.Transferables
 
-Fiber-local list of transferables to include with worker-backed SQLite WASM query messages.
+Fiber reference that stores transferables to include with worker-backed SQLite WASM query messages.
 
 **Signature**
 

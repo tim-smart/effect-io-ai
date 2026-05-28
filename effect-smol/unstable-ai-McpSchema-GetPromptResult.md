@@ -3,7 +3,7 @@ Module: `McpSchema`<br />
 
 ## McpSchema.GetPromptResult
 
-The server's response to a prompts/get request from the client.
+Represents the server response to a prompts/get request from the client.
 
 **Signature**
 
@@ -11,6 +11,6 @@ The server's response to a prompts/get request from the client.
 declare class GetPromptResult
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L1261)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L1351)
 
 Since v4.0.0

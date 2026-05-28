@@ -3,7 +3,7 @@ Module: `DateTime`<br />
 
 ## DateTime.isTimeZoneOffset
 
-Checks if a value is an offset-based `TimeZone`.
+Checks whether a value is an offset-based `TimeZone`.
 
 **When to use**
 

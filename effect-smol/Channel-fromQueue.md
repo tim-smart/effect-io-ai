@@ -3,7 +3,7 @@ Module: `Channel`<br />
 
 ## Channel.fromQueue
 
-Create a channel from a queue
+Creates a channel from a queue.
 
 **Example** (Creating channels from queues)
 

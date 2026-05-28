@@ -3,7 +3,7 @@ Module: `TxQueue`<br />
 
 ## TxQueue.isTxDequeue
 
-Checks if the given value is a TxDequeue.
+Checks whether the given value is a TxDequeue.
 
 **Example** (Checking dequeue handles)
 

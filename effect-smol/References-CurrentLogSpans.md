@@ -3,7 +3,7 @@ Module: `References`<br />
 
 ## References.CurrentLogSpans
 
-Reference for managing log spans that track the duration and hierarchy of operations.
+Context reference for managing log spans that track the duration and hierarchy of operations.
 Each span represents a labeled time period for performance analysis and debugging.
 
 **When to use**

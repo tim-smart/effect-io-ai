@@ -43,6 +43,6 @@ const schema = Schema.NullishOr(Schema.String).pipe(
 declare const optionFromNullishOr: <T>(options?: { onNoneEncoding: null | undefined; }) => Transformation<Option.Option<T>, T | null | undefined>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L1211)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L1209)
 
 Since v4.0.0

@@ -3,7 +3,7 @@ Module: `Duration`<br />
 
 ## Duration.clamp
 
-Clamps a Duration between a minimum and maximum value.
+Returns a `Duration` constrained between a minimum and maximum value.
 
 **Example** (Clamping durations to a range)
 

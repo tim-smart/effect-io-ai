@@ -3,7 +3,7 @@ Module: `DateTime`<br />
 
 ## DateTime.isLessThan
 
-Checks if the first `DateTime` is before the second `DateTime`.
+Checks whether the first `DateTime` is before the second `DateTime`.
 
 **Example** (Checking whether a DateTime is earlier)
 
@@ -23,6 +23,6 @@ console.log(DateTime.isLessThan(date2, date1)) // false
 declare const isLessThan: { (that: DateTime): (self: DateTime) => boolean; (self: DateTime, that: DateTime): boolean; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L1379)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L1388)
 
 Since v4.0.0

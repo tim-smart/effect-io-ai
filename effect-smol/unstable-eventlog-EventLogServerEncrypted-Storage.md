@@ -3,7 +3,12 @@ Module: `EventLogServerEncrypted`<br />
 
 ## EventLogServerEncrypted.Storage
 
-Storage service used by the encrypted event-log server.
+Defines the backing store service used by the encrypted event-log server.
+
+**When to use**
+
+Use to provide durable encrypted event-log persistence for an encrypted
+event-log server layer.
 
 **Details**
 
@@ -17,6 +22,6 @@ store id.
 declare class Storage
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventLogServerEncrypted.ts#L163)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventLogServerEncrypted.ts#L168)
 
 Since v4.0.0

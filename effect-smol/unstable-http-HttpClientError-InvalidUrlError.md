@@ -3,7 +3,7 @@ Module: `HttpClientError`<br />
 
 ## HttpClientError.InvalidUrlError
 
-Request error for failures while constructing a URL from an HTTP client request.
+Error describing failures while constructing a URL from an HTTP client request.
 
 **Signature**
 

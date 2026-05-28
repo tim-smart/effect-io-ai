@@ -3,7 +3,7 @@ Module: `FiberSet`<br />
 
 ## FiberSet.size
 
-Get the number of fibers currently in the FiberSet.
+Gets the number of fibers currently in the FiberSet.
 
 **Example** (Checking the set size)
 
@@ -29,6 +29,6 @@ const program = Effect.gen(function*() {
 declare const size: <A, E>(self: FiberSet<A, E>) => Effect.Effect<number>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FiberSet.ts#L668)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FiberSet.ts#L676)
 
 Since v2.0.0

@@ -3,7 +3,7 @@ Module: `Queue`<br />
 
 ## Queue.take
 
-Take a single message from the queue, or wait for a message to be
+Takes a single message from the queue, or wait for a message to be
 available.
 
 **Details**
@@ -46,6 +46,6 @@ const program = Effect.gen(function*() {
 declare const take: <A, E>(self: Dequeue<A, E>) => Effect<A, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Queue.ts#L1413)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Queue.ts#L1429)
 
 Since v2.0.0

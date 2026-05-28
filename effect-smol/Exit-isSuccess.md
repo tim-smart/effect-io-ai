@@ -3,7 +3,7 @@ Module: `Exit`<br />
 
 ## Exit.isSuccess
 
-Tests whether an Exit is a Success.
+Checks whether an Exit is a Success.
 
 **When to use**
 
@@ -33,6 +33,6 @@ if (Exit.isSuccess(exit)) {
 declare const isSuccess: <A, E>(self: Exit<A, E>) => self is Success<A, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Exit.ts#L448)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Exit.ts#L450)
 
 Since v2.0.0

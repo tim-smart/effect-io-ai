@@ -3,7 +3,7 @@ Module: `Hash`<br />
 
 ## Hash.optimize
 
-Optimizes a hash value by applying bit manipulation techniques.
+Applies bit manipulation techniques to optimize a hash value.
 
 **When to use**
 

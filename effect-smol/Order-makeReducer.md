@@ -42,6 +42,6 @@ console.log(combined(1, 2)) // -1 (uses first order)
 declare const makeReducer: <A>() => Reducer.Reducer<Order<A>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Order.ts#L1122)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Order.ts#L1099)
 
 Since v4.0.0

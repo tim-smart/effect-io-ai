@@ -17,6 +17,6 @@ build that context.
 declare const updateContext: { <Env, R2>(f: (context: Context.Context<R2>) => Context.Context<Env>): <OutElem, OutErr, OutDone, InElem, InErr, InDone>(self: Channel<OutElem, InElem, OutErr, InErr, OutDone, InDone, Env>) => Channel<OutElem, InElem, OutErr, InErr, OutDone, InDone, R2>; <OutElem, OutErr, OutDone, InElem, InErr, InDone, Env, R2>(self: Channel<OutElem, InElem, OutErr, InErr, OutDone, InDone, Env>, f: (context: Context.Context<R2>) => Context.Context<Env>): Channel<OutElem, InElem, OutErr, InErr, OutDone, InDone, R2>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L7315)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L7329)
 
 Since v4.0.0

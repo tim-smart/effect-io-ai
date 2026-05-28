@@ -3,7 +3,7 @@ Module: `RpcMessage`<br />
 
 ## RpcMessage.constEof
 
-The reusable `Eof` message value.
+Represents the reusable `Eof` message value.
 
 **Signature**
 

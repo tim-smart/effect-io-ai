@@ -3,7 +3,7 @@ Module: `BigDecimal`<br />
 
 ## BigDecimal.isPositive
 
-Checks if a given `BigDecimal` is positive.
+Checks whether a given `BigDecimal` is positive.
 
 **When to use**
 
@@ -26,6 +26,6 @@ assert.deepStrictEqual(BigDecimal.isPositive(BigDecimal.fromStringUnsafe("1")), 
 declare const isPositive: (n: BigDecimal) => boolean
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigDecimal.ts#L1719)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigDecimal.ts#L1723)
 
 Since v2.0.0

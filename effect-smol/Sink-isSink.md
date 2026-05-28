@@ -3,7 +3,7 @@ Module: `Sink`<br />
 
 ## Sink.isSink
 
-Checks if a value is a Sink.
+Checks whether a value is a Sink.
 
 **Example** (Checking for a sink)
 

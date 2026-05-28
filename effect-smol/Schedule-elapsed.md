@@ -3,7 +3,8 @@ Module: `Schedule`<br />
 
 ## Schedule.elapsed
 
-A schedule that always recurs and returns the total elapsed duration since the first recurrence.
+Schedule that always recurs and returns the total elapsed duration since the
+first recurrence.
 
 **Details**
 
@@ -35,6 +36,6 @@ const program = Effect.gen(function*() {
 declare const elapsed: Schedule<Duration.Duration, unknown, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L1994)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L1993)
 
 Since v2.0.0

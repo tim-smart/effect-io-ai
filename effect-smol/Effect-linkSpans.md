@@ -3,7 +3,7 @@ Module: `Effect`<br />
 
 ## Effect.linkSpans
 
-For all spans in this effect, add a link with the provided span.
+Adds a link with the provided span to all spans in this effect.
 
 **Details**
 
@@ -59,6 +59,6 @@ const program = Effect.gen(function*() {
 declare const linkSpans: { (span: AnySpan | ReadonlyArray<AnySpan>, attributes?: Record<string, unknown>): <A, E, R>(self: Effect<A, E, R>) => Effect<A, E, R>; <A, E, R>(self: Effect<A, E, R>, span: AnySpan | ReadonlyArray<AnySpan>, attributes?: Record<string, unknown>): Effect<A, E, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L8149)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L8135)
 
 Since v2.0.0

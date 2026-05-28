@@ -3,8 +3,12 @@ Module: `GlobalFlag`<br />
 
 ## GlobalFlag.LogLevel
 
-The `--log-level` global flag.
-Sets the minimum log level for the command.
+Defines the global setting flag for command log level.
+
+**When to use**
+
+Use to add a built-in `--log-level` option that configures the minimum log
+level for the command.
 
 **Signature**
 
@@ -12,6 +16,6 @@ Sets the minimum log level for the command.
 declare const LogLevel: Setting<"log-level", Option.Option<LogLevelType>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/GlobalFlag.ts#L235)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/GlobalFlag.ts#L242)
 
 Since v4.0.0

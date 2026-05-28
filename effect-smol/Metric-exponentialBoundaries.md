@@ -3,8 +3,7 @@ Module: `Metric`<br />
 
 ## Metric.exponentialBoundaries
 
-A helper method to create histogram bucket boundaries with exponentially
-increasing values.
+Creates histogram bucket boundaries with exponentially increasing values.
 
 **Details**
 
@@ -59,6 +58,6 @@ const program = Effect.gen(function*() {
 declare const exponentialBoundaries: (options: { readonly start: number; readonly factor: number; readonly count: number; }) => ReadonlyArray<number>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Metric.ts#L3529)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Metric.ts#L3537)
 
 Since v4.0.0

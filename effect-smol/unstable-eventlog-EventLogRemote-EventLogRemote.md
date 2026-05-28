@@ -3,7 +3,12 @@ Module: `EventLogRemote`<br />
 
 ## EventLogRemote.EventLogRemote
 
-Service representing a remote event-log replica.
+Service that represents a remote event-log replica.
+
+**When to use**
+
+Use to access or provide a remote event-log replica that can write local
+entries and stream remote changes.
 
 **Details**
 
@@ -16,6 +21,6 @@ number, and run effects only after the supplied identity has authenticated.
 declare class EventLogRemote
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventLogRemote.ts#L64)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventLogRemote.ts#L69)
 
 Since v4.0.0

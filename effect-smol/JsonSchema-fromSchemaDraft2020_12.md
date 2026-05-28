@@ -11,9 +11,8 @@ Use when you already have a schema in Draft-2020-12 format.
 
 **Details**
 
-This separates `$defs` from the root schema into the `definitions` field. It
-does not mutate the input and allocates a new `Document`. Unlike
-`fromSchemaDraft07`, this performs no keyword rewriting.
+This separates `$defs` from the root schema into the `definitions` field.
+Unlike `fromSchemaDraft07`, this performs no keyword rewriting.
 
 **Example** (Parsing a Draft-2020-12 schema)
 
@@ -42,6 +41,6 @@ console.log(doc.definitions) // { PositiveInt: { type: "integer", minimum: 1 } }
 declare const fromSchemaDraft2020_12: (js: JsonSchema) => Document<"draft-2020-12">
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/JsonSchema.ts#L469)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/JsonSchema.ts#L467)
 
 Since v4.0.0

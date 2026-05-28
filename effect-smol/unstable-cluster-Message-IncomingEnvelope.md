@@ -3,7 +3,7 @@ Module: `Message`<br />
 
 ## Message.IncomingEnvelope
 
-Incoming control envelope carrying an `AckChunk` or `Interrupt`.
+Represents an incoming control envelope carrying an `AckChunk` or `Interrupt`.
 
 **Signature**
 

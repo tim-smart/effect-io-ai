@@ -20,6 +20,6 @@ a sink result containing the complete input.
 declare const collect: <In>() => Sink<Array<In>, In>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Sink.ts#L1564)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Sink.ts#L1562)
 
 Since v4.0.0

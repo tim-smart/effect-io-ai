@@ -7,8 +7,8 @@ Creates a standalone `Die` reason (not wrapped in a `Cause`).
 
 **When to use**
 
-Use when you need to construct individual reasons for
-`fromReasons` or for direct comparison.
+Use when constructing a standalone defect reason for `fromReasons` or
+direct comparison.
 
 **Example** (creating a Die reason)
 

@@ -3,7 +3,7 @@ Module: `DateTime`<br />
 
 ## DateTime.clamp
 
-Clamp a `DateTime` between a minimum and maximum value.
+Returns a `DateTime` constrained between a minimum and maximum value.
 
 **Details**
 

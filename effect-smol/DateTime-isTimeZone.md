@@ -3,7 +3,7 @@ Module: `DateTime`<br />
 
 ## DateTime.isTimeZone
 
-Checks if a value is a `TimeZone`.
+Checks whether a value is a `TimeZone`.
 
 **When to use**
 

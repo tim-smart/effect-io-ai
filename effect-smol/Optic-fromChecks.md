@@ -16,7 +16,6 @@ Use when you want to narrow `T` to the subset that passes certain validation
 - `getResult` runs all checks; fails with a combined error message when
   any check fails.
 - `set` is identity — the value passes through unchanged.
-- Does not mutate inputs.
 
 **Example** (positive integer prism)
 
@@ -46,6 +45,6 @@ console.log(Result.isFailure(posInt.getResult(-1)))
 declare const fromChecks: <T>(checks_0: AST.Check<T>, ...checks: Array<AST.Check<T>>) => Prism<T, T>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Optic.ts#L403)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Optic.ts#L399)
 
 Since v4.0.0

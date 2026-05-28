@@ -3,7 +3,7 @@ Module: `DateTime`<br />
 
 ## DateTime.withCurrentZoneNamed
 
-Provide the `CurrentTimeZone` to an effect using an IANA time zone
+Provides the `CurrentTimeZone` to an effect using an IANA time zone
 identifier.
 
 **Details**
@@ -27,6 +27,6 @@ Effect.gen(function*() {
 declare const withCurrentZoneNamed: { (zone: string): <A, E, R>(effect: Effect.Effect<A, E, R>) => Effect.Effect<A, E | IllegalArgumentError, Exclude<R, CurrentTimeZone>>; <A, E, R>(effect: Effect.Effect<A, E, R>, zone: string): Effect.Effect<A, E | IllegalArgumentError, Exclude<R, CurrentTimeZone>>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L2012)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L2021)
 
 Since v3.6.0

@@ -11,6 +11,6 @@ Memory tool command payload for renaming or moving a file or directory.
 type MemoryRenameCommand = typeof MemoryRenameCommand.Type
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L1543)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L1545)
 
 Since v4.0.0

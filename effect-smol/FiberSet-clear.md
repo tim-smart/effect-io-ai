@@ -3,7 +3,7 @@ Module: `FiberSet`<br />
 
 ## FiberSet.clear
 
-Interrupt all fibers in the FiberSet and clear the set.
+Interrupts all fibers in the `FiberSet` and clears the set.
 
 **Example** (Clearing all fibers)
 

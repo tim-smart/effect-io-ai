@@ -11,6 +11,6 @@ Layer that provides the fetch-based HTTP client implementation.
 declare const layerFetch: Layer.Layer<Client.HttpClient, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L86)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L91)
 
 Since v4.0.0

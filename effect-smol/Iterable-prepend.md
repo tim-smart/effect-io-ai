@@ -3,7 +3,7 @@ Module: `Iterable`<br />
 
 ## Iterable.prepend
 
-Prepend an element to the front of an `Iterable`, creating a new `Iterable`.
+Prepends an element to the front of an `Iterable`, creating a new `Iterable`.
 
 **Example** (Prepending an element)
 

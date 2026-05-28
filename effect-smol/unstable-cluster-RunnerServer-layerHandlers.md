@@ -3,8 +3,8 @@ Module: `RunnerServer`<br />
 
 ## RunnerServer.layerHandlers
 
-Layer of RPC handlers for the runner protocol, forwarding ping, notify, effect,
-stream, and envelope requests to `Sharding` and `MessageStorage`.
+Layer that handles runner protocol RPCs by forwarding requests to `Sharding`
+and `MessageStorage`.
 
 **Signature**
 

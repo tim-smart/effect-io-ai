@@ -5,6 +5,11 @@ Module: `Effect`<br />
 
 Optionally accesses a service from the environment.
 
+**When to use**
+
+Use to read an optional dependency from the current context without making
+that dependency part of the effect's required environment.
+
 **Details**
 
 This function attempts to access a service from the environment. If the
@@ -40,6 +45,6 @@ const program = Effect.gen(function*() {
 declare const serviceOption: <I, S>(key: Context.Key<I, S>) => Effect<Option<S>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L6008)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L6003)
 
 Since v2.0.0

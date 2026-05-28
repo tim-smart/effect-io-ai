@@ -3,7 +3,7 @@ Module: `Sink`<br />
 
 ## Sink.as
 
-Set the sink's result to a constant value.
+Sets the sink's result to a constant value.
 
 **When to use**
 

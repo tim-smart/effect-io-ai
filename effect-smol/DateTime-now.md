@@ -3,7 +3,7 @@ Module: `DateTime`<br />
 
 ## DateTime.now
 
-Get the current time using the `Clock` service and convert it to a `DateTime`.
+Gets the current time using the `Clock` service and convert it to a `DateTime`.
 
 **Example** (Getting the current DateTime)
 

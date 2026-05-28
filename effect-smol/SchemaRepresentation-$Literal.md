@@ -3,7 +3,7 @@ Module: `SchemaRepresentation`<br />
 
 ## SchemaRepresentation.$Literal
 
-Schema codec for the `Literal` representation node.
+Schema for the `Literal` representation node.
 
 **Signature**
 

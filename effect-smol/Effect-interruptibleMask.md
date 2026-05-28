@@ -3,9 +3,8 @@ Module: `Effect`<br />
 
 ## Effect.interruptibleMask
 
-This function behaves like `interruptible`, but it also provides a
-`restore` function. This function can be used to restore the interruptibility
-of any specific region of code.
+Runs an effect in an interruptible region while providing `restore` for
+locally restoring the previous interruptibility.
 
 **Example** (Controlling interruptibility locally)
 
@@ -36,6 +35,6 @@ const program = Effect.interruptibleMask((restore) =>
 declare const interruptibleMask: <A, E, R>(f: (restore: <AX, EX, RX>(effect: Effect<AX, EX, RX>) => Effect<AX, EX, RX>) => Effect<A, E, R>) => Effect<A, E, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L7341)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L7327)
 
 Since v2.0.0

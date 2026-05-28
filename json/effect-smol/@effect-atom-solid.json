@@ -215,7 +215,7 @@
     },
     "project": "@effect/atom-solid",
     "name": "RegistryContext",
-    "description": "A Solid context that carries the `AtomRegistry` used by atom hooks in the\ncurrent owner tree.\n\n**When to use**\n\nUse when integrating lower-level Solid atom APIs that need direct access to,\nor direct provisioning of, the `AtomRegistry` for the current owner tree.\n\n**Details**\n\nWhen no provider is present, the context uses a standalone default registry.",
+    "description": "Provides a Solid context that carries the `AtomRegistry` used by atom hooks in the\ncurrent owner tree.\n\n**When to use**\n\nUse when integrating lower-level Solid atom APIs that need direct access to,\nor direct provisioning of, the `AtomRegistry` for the current owner tree.\n\n**Details**\n\nWhen no provider is present, the context uses a standalone default registry.",
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",

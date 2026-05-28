@@ -3,7 +3,7 @@ Module: `SchemaAST`<br />
 
 ## SchemaAST.KeyValueCombiner
 
-Bidirectional merge strategy for index signature key-value pairs.
+Represents a bidirectional merge strategy for index signature key-value pairs.
 
 **Details**
 
@@ -25,6 +25,6 @@ declare class KeyValueCombiner { constructor(
   ) }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L1854)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L1866)
 
 Since v4.0.0

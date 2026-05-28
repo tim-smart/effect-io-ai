@@ -37,6 +37,6 @@ type Issue = | Leaf
   | AnyOf
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaIssue.ts#L178)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaIssue.ts#L177)
 
 Since v4.0.0

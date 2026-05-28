@@ -12,8 +12,7 @@ Use when you have two or more variants that share a common `_tag` discriminator.
 **Details**
 
 Each key in the record becomes a variant with `readonly _tag` set to that
-key. Use with `taggedEnum` to get runtime constructors, type guards,
-and pattern matching.
+key. Use with `taggedEnum` to get constructors and matchers.
 
 **Gotchas**
 
@@ -42,7 +41,7 @@ console.log(err._tag)
 
 **See**
 
-- `taggedEnum` — runtime constructors for a `TaggedEnum`
+- `taggedEnum` — constructors and matchers for a `TaggedEnum`
 - `TaggedEnum.WithGenerics` — generic tagged enums
 - `TaggedEnum.Constructor` — the constructor object type
 
@@ -56,6 +55,6 @@ type TaggedEnum<A> = keyof A extends infer Tag ? Tag extends keyof A ? Types.Sim
   : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Data.ts#L217)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Data.ts#L216)
 
 Since v2.0.0

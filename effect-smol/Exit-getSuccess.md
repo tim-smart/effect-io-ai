@@ -33,6 +33,6 @@ console.log(Exit.getSuccess(Exit.fail("err"))) // { _tag: "None" }
 declare const getSuccess: <A, E>(self: Exit<A, E>) => Option<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Exit.ts#L1074)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Exit.ts#L1076)
 
 Since v4.0.0

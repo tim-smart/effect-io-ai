@@ -8,8 +8,8 @@ is absent.
 
 **When to use**
 
-Use when you use `getOrUndefined` for raw map-style lookup. Use `getOption` when you want
-the usual `Context.Reference` default-value behavior.
+Use when you need raw map-style lookup. Use `getOption` when you want the
+usual `Context.Reference` default-value behavior.
 
 **Gotchas**
 

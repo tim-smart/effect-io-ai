@@ -3,7 +3,7 @@ Module: `RpcMessage`<br />
 
 ## RpcMessage.constPing
 
-The reusable `Ping` message value.
+Represents the reusable `Ping` message value.
 
 **Signature**
 

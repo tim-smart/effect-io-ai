@@ -28,6 +28,6 @@ Effect.runPromise(program)
 declare const failSync: <E>(evaluate: LazyArg<E>) => Stream<never, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L1018)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L1022)
 
 Since v2.0.0

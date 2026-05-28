@@ -3,7 +3,7 @@ Module: `Ref`<br />
 
 ## Ref.setAndGet
 
-Atomically sets the value of the Ref to the specified value and returns the new value.
+Sets the value of the Ref atomically to the specified value and returns the new value.
 
 **When to use**
 

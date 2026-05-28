@@ -8,8 +8,8 @@ more `Brand.Brand` tags.
 
 **When to use**
 
-Use as the schema type returned by `brand` when generic code needs to retain
-the wrapped schema and nominal brand type.
+Use as the schema type when generic code needs to retain the wrapped schema
+and nominal brand type.
 
 **See**
 
@@ -42,6 +42,6 @@ export interface brand<S extends Top, B> extends
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L4375)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L4593)
 
 Since v3.10.0

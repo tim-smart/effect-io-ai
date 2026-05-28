@@ -3,7 +3,7 @@ Module: `TxHashMap`<br />
 
 ## TxHashMap.flatMap
 
-Effectfully maps each entry to a `TxHashMap` and flattens the produced maps.
+Maps each entry effectfully to a `TxHashMap` and flattens the produced maps.
 
 **Details**
 

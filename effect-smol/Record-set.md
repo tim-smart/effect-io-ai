@@ -3,7 +3,7 @@ Module: `Record`<br />
 
 ## Record.set
 
-Add a new key-value pair or update an existing key's value in a record.
+Adds a new key-value pair or update an existing key's value in a record.
 
 **Example** (Setting a record value)
 
@@ -21,6 +21,6 @@ assert.deepStrictEqual(Record.set("c", 5)({ a: 1, b: 2 }), { a: 1, b: 2, c: 5 })
 declare const set: { <K extends string | symbol, K1 extends K | ((string | symbol) & {}), B>(key: K1, value: B): <A>(self: ReadonlyRecord<K, A>) => Record<K | K1, A | B>; <K extends string | symbol, A, K1 extends K | ((string | symbol) & {}), B>(self: ReadonlyRecord<K, A>, key: K1, value: B): Record<K | K1, A | B>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Record.ts#L1094)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Record.ts#L1105)
 
 Since v2.0.0

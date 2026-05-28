@@ -3,7 +3,7 @@ Module: `SchemaTransformation`<br />
 
 ## SchemaTransformation.splitKeyValue
 
-A transformation that decodes a string into a record of key-value pairs and
+Transforms a string into a record of key-value pairs and
 encodes a record of key-value pairs into a string.
 
 **When to use**
@@ -42,6 +42,6 @@ const Config = Schema.String.pipe(
 declare const splitKeyValue: (options?: { readonly separator?: string | undefined; readonly keyValueSeparator?: string | undefined; }) => Transformation<Record<string, string>, string>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L722)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L720)
 
 Since v4.0.0

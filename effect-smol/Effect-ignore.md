@@ -7,9 +7,8 @@ Discards both the success and failure values of an effect.
 
 **When to use**
 
-Use when `ignore` allows you to run an effect without caring about its result, whether
-it succeeds or fails. This is useful when you only care about the side
-effects of the effect and do not need to handle or process its outcome.
+Use when an effect should run for its side effects while both success and
+failure values are discarded.
 
 Use the `log` option to emit the full `Cause` when the effect fails,
 and `message` to prepend a custom log message.
@@ -45,6 +44,6 @@ const programWarn = task.pipe(Effect.ignore({ log: "Warn", message: "Ignoring ta
 declare const ignore: <Arg extends Effect<any, any, any> | { readonly log?: boolean | Severity | undefined; readonly message?: string | undefined; } | undefined = { readonly log?: boolean | Severity | undefined; readonly message?: string | undefined; }>(effectOrOptions?: Arg, options?: { readonly log?: boolean | Severity | undefined; readonly message?: string | undefined; } | undefined) => [Arg] extends [Effect<infer _A, infer _E, infer _R>] ? Effect<void, never, _R> : <A, E, R>(self: Effect<A, E, R>) => Effect<void, never, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L4200)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L4190)
 
 Since v2.0.0

@@ -12,7 +12,6 @@ This is the low-level primitive behind `Schema.transform` and
 `Schema.transformOrFail`. It appends a `Link` to the `to` node's
 encoding chain.
 
-- Does not mutate either input.
 - Returns a new AST with the same type as `to`.
 
 **See**
@@ -27,6 +26,6 @@ encoding chain.
 declare const decodeTo: <A extends AST>(from: AST, to: A, transformation: Transformation.Transformation<any, any, any, any>) => A
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L3143)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L3154)
 
 Since v4.0.0

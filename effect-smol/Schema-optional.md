@@ -14,6 +14,6 @@ export interface optional<S extends Top> extends optionalKey<UndefinedOr<S>> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L1744)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L1926)
 
 Since v3.10.0

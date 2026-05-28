@@ -3,10 +3,18 @@ Module: `SubscriptionRef`<br />
 
 ## SubscriptionRef.getAndUpdateSomeEffect
 
-Atomically retrieves the current value and applies an effectful update
-function. If it succeeds with `Option.some`, sets and publishes that value;
-if it succeeds with `Option.none`, leaves the reference unchanged and does
-not publish.
+Retrieves the current value and optionally updates the reference effectfully.
+
+**When to use**
+
+Use to read the old value while applying an effectful update only when a new
+value is available.
+
+**Details**
+
+If the effect succeeds with `Option.some`, the new value is set and
+published. If it succeeds with `Option.none`, the reference is left unchanged
+and no update is published.
 
 **Example** (Getting and conditionally updating with an effect)
 
@@ -33,6 +41,6 @@ const program = Effect.gen(function*() {
 declare const getAndUpdateSomeEffect: { <A, R, E>(update: (a: A) => Effect.Effect<Option.Option<A>, E, R>): (self: SubscriptionRef<A>) => Effect.Effect<A, E, R>; <A, R, E>(self: SubscriptionRef<A>, update: (a: A) => Effect.Effect<Option.Option<A>, E, R>): Effect.Effect<A, E, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SubscriptionRef.ts#L442)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SubscriptionRef.ts#L459)
 
 Since v2.0.0

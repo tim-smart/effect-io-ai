@@ -3,8 +3,8 @@ Module: `OpenAiConfig`<br />
 
 ## OpenAiConfig.OpenAiConfig
 
-Context service used to carry OpenAI-compatible client configuration for the
-current Effect scope.
+Context service for OpenAI-compatible client configuration in the current
+Effect scope.
 
 **When to use**
 

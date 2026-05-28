@@ -28,6 +28,10 @@ export interface FileOptions {
    */
   readonly startingPath?: string
   /**
+   * The default path to select when the prompt is first displayed.
+   */
+  readonly default?: string
+  /**
    * The number of choices to display at one time, defaulting to `10`.
    */
   readonly maxPerPage?: number
@@ -39,6 +43,6 @@ export interface FileOptions {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L349)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L353)
 
 Since v4.0.0

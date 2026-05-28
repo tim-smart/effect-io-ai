@@ -11,6 +11,6 @@ Returns `true` when an atom carries `Serializable` metadata.
 declare const isSerializable: (self: Atom<any>) => self is Atom<any> & Serializable<any>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Atom.ts#L2430)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Atom.ts#L2454)
 
 Since v4.0.0

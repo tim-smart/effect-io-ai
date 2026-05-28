@@ -3,7 +3,7 @@ Module: `Graph`<br />
 
 ## Graph.connectedComponents
 
-Find connected components in an undirected graph.
+Finds connected components in an undirected graph.
 Each component is represented as an array of node indices.
 
 **Example** (Finding connected components)

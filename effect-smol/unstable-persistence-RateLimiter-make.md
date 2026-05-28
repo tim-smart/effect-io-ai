@@ -16,6 +16,6 @@ fails or returns a delay when a limit is exceeded.
 declare const make: Effect.Effect<RateLimiter, never, RateLimiterStore>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RateLimiter.ts#L93)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RateLimiter.ts#L98)
 
 Since v4.0.0

@@ -11,7 +11,6 @@ Use when you need to guard an `unknown` value as a number.
 
 **Details**
 
-- Pure; does not mutate input.
 - Uses `typeof input === "number"`.
 - Does not exclude `NaN` or `Infinity`.
 
@@ -38,6 +37,6 @@ if (Predicate.isNumber(data)) {
 declare const isNumber: (input: unknown) => input is number
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L637)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L627)
 
 Since v2.0.0

@@ -29,6 +29,6 @@ assert.deepStrictEqual(Number.multiplyAll([2, 3, 4]), 24)
 declare const multiplyAll: (collection: Iterable<number>) => number
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Number.ts#L656)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Number.ts#L658)
 
 Since v2.0.0

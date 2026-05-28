@@ -15,7 +15,6 @@ predetermined.
 **Details**
 
 `combine(self, that)` returns the constant `a` and ignores both arguments.
-No mutation occurs.
 
 **Example** (always returning zero)
 
@@ -39,6 +38,6 @@ console.log(Zero.combine(42, 99))
 declare const constant: <A>(a: A) => Combiner<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Combiner.ts#L336)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Combiner.ts#L333)
 
 Since v4.0.0

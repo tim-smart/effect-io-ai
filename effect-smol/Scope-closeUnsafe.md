@@ -3,7 +3,7 @@ Module: `Scope`<br />
 
 ## Scope.closeUnsafe
 
-Unsafely transitions a scope to `Closed` with the provided exit value.
+Closes a scope unsafely with the provided exit value.
 
 **When to use**
 
@@ -30,6 +30,6 @@ Ignoring the returned effect skips registered finalizers.
 declare const closeUnsafe: <A, E>(self: Scope, exit_: Exit<A, E>) => Effect<void, never, never> | undefined
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Scope.ts#L544)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Scope.ts#L565)
 
 Since v4.0.0

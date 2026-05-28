@@ -3,7 +3,7 @@ Module: `DateTime`<br />
 
 ## DateTime.removeTime
 
-Remove the time aspect of a `DateTime`, first adjusting for the time
+Removes the time aspect of a `DateTime`, first adjusting for the time
 zone. It will return a `DateTime.Utc` only containing the date.
 
 **Example** (Removing time components)
@@ -27,6 +27,6 @@ DateTime.makeZonedUnsafe("2024-01-01T05:00:00Z", {
 declare const removeTime: (self: DateTime) => Utc
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L1680)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L1689)
 
 Since v3.6.0

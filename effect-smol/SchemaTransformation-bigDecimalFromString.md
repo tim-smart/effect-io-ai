@@ -22,6 +22,6 @@ Use to parse decimal number strings from APIs or user input.
 declare const bigDecimalFromString: Transformation<BigDecimal.BigDecimal, string, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L1365)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L1363)
 
 Since v4.0.0

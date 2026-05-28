@@ -3,7 +3,7 @@ Module: `McpSchema`<br />
 
 ## McpSchema.ResourceUpdatedNotification
 
-Notification sent by the server when a subscribed resource URI has changed.
+Sent from the server when a subscribed resource URI has changed.
 
 **Details**
 
@@ -16,6 +16,6 @@ originally subscribed to.
 declare class ResourceUpdatedNotification
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L1037)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L1128)
 
 Since v4.0.0

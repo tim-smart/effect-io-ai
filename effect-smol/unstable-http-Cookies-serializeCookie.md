@@ -3,7 +3,7 @@ Module: `Cookies`<br />
 
 ## Cookies.serializeCookie
 
-Serialize a cookie into a string
+Serializes a cookie into a string.
 
 **Details**
 

@@ -37,6 +37,6 @@ console.log(Option.toArray(Option.none()))
 declare const toArray: <A>(self: Option<A>) => Array<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L1940)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L1939)
 
 Since v2.0.0

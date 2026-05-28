@@ -3,7 +3,7 @@ Module: `OpenRouterClient`<br />
 
 ## OpenRouterClient.OpenRouterClient
 
-Service identifier for the OpenRouter client.
+Service tag for the OpenRouter client.
 
 **When to use**
 

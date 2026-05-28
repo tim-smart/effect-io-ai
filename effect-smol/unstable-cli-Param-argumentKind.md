@@ -3,7 +3,7 @@ Module: `Param`<br />
 
 ## Param.argumentKind
 
-Kind discriminator for positional argument parameters.
+Defines the kind discriminator for positional argument parameters.
 
 **When to use**
 

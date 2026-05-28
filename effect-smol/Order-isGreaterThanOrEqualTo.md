@@ -3,7 +3,7 @@ Module: `Order`<br />
 
 ## Order.isGreaterThanOrEqualTo
 
-Tests whether one value is greater than or equal to another according to the given order.
+Checks whether one value is greater than or equal to another according to the given order.
 
 **When to use**
 
@@ -13,7 +13,6 @@ Use when when you need a boolean predicate for non-strict comparison
 
 **Details**
 
-- Pure function: does not mutate inputs
 - Returns `true` if the order returns `1` or `0` (greater than or equal)
 - Returns `false` only if the order returns `-1` (less than)
 - Supports curried and uncurried call styles
@@ -41,6 +40,6 @@ console.log(isGreaterThanOrEqualToNumber(1, 2)) // false
 declare const isGreaterThanOrEqualTo: <A>(O: Order<A>) => { (that: A): (self: A) => boolean; (self: A, that: A): boolean; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Order.ts#L898)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Order.ts#L879)
 
 Since v4.0.0

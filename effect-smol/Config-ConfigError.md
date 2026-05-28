@@ -3,7 +3,7 @@ Module: `Config`<br />
 
 ## Config.ConfigError
 
-The error type produced when config loading or validation fails.
+Represents the error type produced when config loading or validation fails.
 
 **When to use**
 

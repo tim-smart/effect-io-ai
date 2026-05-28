@@ -3,7 +3,7 @@ Module: `References`<br />
 
 ## References.CurrentTraceLevel
 
-Reference for the current trace level used for dynamic trace filtering.
+Context reference for the current trace level used for dynamic trace filtering.
 
 **When to use**
 

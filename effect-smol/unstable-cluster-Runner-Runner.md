@@ -3,7 +3,7 @@ Module: `Runner`<br />
 
 ## Runner.Runner
 
-A cluster runner that can host entities.
+Represents a cluster runner that can host entities.
 
 **Details**
 

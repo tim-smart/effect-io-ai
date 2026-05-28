@@ -3,7 +3,7 @@ Module: `DateTime`<br />
 
 ## DateTime.nowInCurrentZone
 
-Get the current time as a `DateTime.Zoned`, using the `CurrentTimeZone`.
+Gets the current time as a `DateTime.Zoned`, using the `CurrentTimeZone`.
 
 **Example** (Getting the current time in the current zone)
 
@@ -22,6 +22,6 @@ Effect.gen(function*() {
 declare const nowInCurrentZone: Effect.Effect<Zoned, never, CurrentTimeZone>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L2046)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L2055)
 
 Since v3.6.0

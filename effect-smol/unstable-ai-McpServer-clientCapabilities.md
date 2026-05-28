@@ -3,7 +3,7 @@ Module: `McpServer`<br />
 
 ## McpServer.clientCapabilities
 
-Access the current client's capabilities.
+Accesses the current client's capabilities.
 
 **Signature**
 
@@ -11,6 +11,6 @@ Access the current client's capabilities.
 declare const clientCapabilities: Effect.Effect<ClientCapabilities, never, McpServerClient>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpServer.ts#L1219)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpServer.ts#L1231)
 
 Since v4.0.0

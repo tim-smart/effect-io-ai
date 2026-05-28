@@ -20,6 +20,6 @@ value.
 declare const isGreaterThanOrEqualToBigInt: (minimum: bigint, annotations?: Annotations.Filter) => AST.Filter<bigint>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L7097)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L7329)
 
 Since v4.0.0

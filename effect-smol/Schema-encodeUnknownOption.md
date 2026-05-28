@@ -4,10 +4,17 @@ Module: `Schema`<br />
 ## Schema.encodeUnknownOption
 
 Encodes an `unknown` input against a schema, returning an `Option` that is
-`Some` with the encoded value on success or `None` on failure. Prefer this
-over `encodeUnknownExit` or `encodeUnknownEffect` when you only
-need to know whether encoding succeeded and don't need error details. For
-typed input use `encodeOption`.
+`Some` with the encoded value on success or `None` on failure.
+
+**When to use**
+
+Use when the input type is not statically known and you only need to know
+whether encoding succeeded.
+
+**Details**
+
+Prefer this over `encodeUnknownExit` or `encodeUnknownEffect`
+when you don't need error details. For typed input use `encodeOption`.
 Options may be provided either when creating the encoder or when applying it;
 application options override creation options.
 
@@ -17,6 +24,6 @@ application options override creation options.
 declare const encodeUnknownOption: <S extends Encoder<unknown>>(schema: S, options?: AST.ParseOptions) => (input: unknown, options?: AST.ParseOptions) => Option_.Option<S["Encoded"]>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L1517)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L1642)
 
 Since v3.10.0

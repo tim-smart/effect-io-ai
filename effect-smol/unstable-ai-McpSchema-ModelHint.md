@@ -3,7 +3,7 @@ Module: `McpSchema`<br />
 
 ## McpSchema.ModelHint
 
-Hints to use for model selection.
+Schema for model selection hints.
 
 **Details**
 
@@ -16,6 +16,6 @@ to the client to interpret.
 declare class ModelHint
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L1613)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L1715)
 
 Since v4.0.0

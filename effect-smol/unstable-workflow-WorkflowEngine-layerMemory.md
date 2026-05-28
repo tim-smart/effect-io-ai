@@ -3,9 +3,17 @@ Module: `WorkflowEngine`<br />
 
 ## WorkflowEngine.layerMemory
 
-A in-memory implementation of the WorkflowEngine. This is useful for testing
-and local development, but is not suitable for production use as it does not
-provide durability guarantees.
+Layer that provides an in-memory `WorkflowEngine`.
+
+**When to use**
+
+Use to run tests and local development workflows where durability is not
+needed.
+
+**Gotchas**
+
+This layer keeps state only in memory and is not suitable for production
+workflows that require durability.
 
 **Signature**
 
@@ -13,6 +21,6 @@ provide durability guarantees.
 declare const layerMemory: Layer.Layer<WorkflowEngine, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/WorkflowEngine.ts#L561)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/WorkflowEngine.ts#L579)
 
 Since v4.0.0

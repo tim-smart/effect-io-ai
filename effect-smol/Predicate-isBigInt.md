@@ -11,7 +11,6 @@ Use when you need to guard an `unknown` value as a bigint.
 
 **Details**
 
-- Pure; does not mutate input.
 - Uses `typeof input === "bigint"`.
 
 **Example** (Guard bigint)
@@ -36,6 +35,6 @@ if (Predicate.isBigInt(data)) {
 declare const isBigInt: (input: unknown) => input is bigint
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L702)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L690)
 
 Since v2.0.0

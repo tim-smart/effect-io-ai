@@ -3,7 +3,7 @@ Module: `Graph`<br />
 
 ## Graph.isAcyclic
 
-Checks if the graph is acyclic (contains no cycles).
+Checks whether the graph is acyclic (contains no cycles).
 
 **Details**
 

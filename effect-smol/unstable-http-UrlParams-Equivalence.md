@@ -3,7 +3,7 @@ Module: `UrlParams`<br />
 
 ## UrlParams.Equivalence
 
-Order-sensitive equivalence for `UrlParams`.
+Provides an order-sensitive `Equivalence` instance for `UrlParams`.
 
 **Details**
 

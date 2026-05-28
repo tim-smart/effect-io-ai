@@ -3,7 +3,7 @@ Module: `SchemaRepresentation`<br />
 
 ## SchemaRepresentation.$Any
 
-Schema codec for the `Any` representation node.
+Schema for the `Any` representation node.
 
 **Signature**
 

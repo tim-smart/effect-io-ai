@@ -11,6 +11,6 @@ Creates a scoped libSQL SQL client with transaction support. When given connecti
 declare const make: (options: LibsqlClientConfig) => Effect.Effect<LibsqlClient, never, Scope.Scope | Reactivity.Reactivity>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/sql/libsql/src/LibsqlClient.ts#L205)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/sql/libsql/src/LibsqlClient.ts#L209)
 
 Since v4.0.0

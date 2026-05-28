@@ -3,7 +3,7 @@ Module: `Stream`<br />
 
 ## Stream.rechunk
 
-Re-chunks the stream into arrays of the specified size, preserving element order.
+Groups the stream into arrays of the specified size, preserving element order.
 
 **Details**
 
@@ -33,6 +33,6 @@ Effect.runPromise(program)
 declare const rechunk: { (size: number): <A, E, R>(self: Stream<A, E, R>) => Stream<A, E, R>; <A, E, R>(self: Stream<A, E, R>, size: number): Stream<A, E, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L7012)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L7023)
 
 Since v2.0.0

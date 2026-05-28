@@ -3,7 +3,7 @@ Module: `Hash`<br />
 
 ## Hash.symbol
 
-The unique identifier used to identify objects that implement the Hash interface.
+Defines the unique identifier used to identify objects that implement the Hash interface.
 
 **When to use**
 

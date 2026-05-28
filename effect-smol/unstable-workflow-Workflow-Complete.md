@@ -3,8 +3,7 @@ Module: `Workflow`<br />
 
 ## Workflow.Complete
 
-Workflow result representing a completed execution with its success or
-failure `Exit`.
+Represents a completed workflow execution with its success or failure `Exit`.
 
 **Signature**
 
@@ -12,6 +11,6 @@ failure `Exit`.
 declare class Complete<A, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Workflow.ts#L516)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Workflow.ts#L515)
 
 Since v4.0.0

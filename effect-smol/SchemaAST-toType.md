@@ -11,7 +11,6 @@ Strips all encoding transformations from an AST, returning the decoded
 - Memoized: same input reference → same output reference.
 - Recursively walks into composite nodes (`Arrays`, `Objects`,
   `Union`, `Suspend`).
-- Does not mutate the input.
 
 **Example** (Getting the type AST)
 
@@ -34,6 +33,6 @@ console.log(typeAst._tag) // "Number"
 declare const toType: <A extends AST>(ast: A) => A
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L3251)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L3261)
 
 Since v4.0.0

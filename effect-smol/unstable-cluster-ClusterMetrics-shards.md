@@ -3,7 +3,7 @@ Module: `ClusterMetrics`<br />
 
 ## ClusterMetrics.shards
 
-Gauge tracking the number of shards currently acquired by the current runner.
+Represents a gauge tracking the number of shards currently acquired by the current runner.
 
 **When to use**
 

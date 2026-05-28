@@ -3,7 +3,7 @@ Module: `Context`<br />
 
 ## Context.get
 
-Get a service from the context that corresponds to the given key.
+Gets a service from the context that corresponds to the given key.
 
 **When to use**
 

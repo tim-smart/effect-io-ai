@@ -3,7 +3,7 @@ Module: `Data`<br />
 
 ## Data.TaggedClass
 
-Base class for immutable data types with a `_tag` discriminator.
+Provides a base class for immutable data types with a `_tag` discriminator.
 
 **When to use**
 

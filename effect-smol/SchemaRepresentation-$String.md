@@ -3,7 +3,7 @@ Module: `SchemaRepresentation`<br />
 
 ## SchemaRepresentation.$String
 
-Schema codec for the `String` representation node.
+Schema for the `String` representation node.
 
 **Signature**
 

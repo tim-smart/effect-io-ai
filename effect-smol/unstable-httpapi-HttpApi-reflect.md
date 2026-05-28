@@ -3,7 +3,7 @@ Module: `HttpApi`<br />
 
 ## HttpApi.reflect
 
-Walks the groups and endpoints in an `HttpApi`.
+Describes the groups and endpoints in an `HttpApi`.
 
 **Details**
 

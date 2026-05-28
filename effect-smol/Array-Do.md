@@ -3,7 +3,7 @@ Module: `Array`<br />
 
 ## Array.Do
 
-Starting point for the "do simulation" — an array comprehension pattern.
+Provides the starting point for the "do simulation" — an array comprehension pattern.
 
 **When to use**
 
@@ -38,6 +38,6 @@ console.log(result) // [[1, 2], [1, 4], [1, 6], [3, 4], [3, 6], [5, 6]]
 declare const Do: ReadonlyArray<{}>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L4736)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L4720)
 
 Since v3.2.0

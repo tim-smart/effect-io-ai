@@ -3,7 +3,7 @@ Module: `AiError`<br />
 
 ## AiError.UnknownError
 
-Catch-all error for unknown or unexpected errors.
+Error data for unknown or unexpected AI failures.
 
 **Details**
 
@@ -29,6 +29,6 @@ console.log(unknownError.message)
 declare class UnknownError
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AiError.ts#L976)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AiError.ts#L981)
 
 Since v4.0.0

@@ -3,7 +3,7 @@ Module: `HttpServer`<br />
 
 ## HttpServer.layerServices
 
-Testing layer that provides the platform services commonly needed by HTTP
+Layer that provides the platform services commonly needed by HTTP
 server tests.
 
 **Details**

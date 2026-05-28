@@ -13,7 +13,6 @@ Use when when you need an order that doesn't distinguish between values
 
 **Details**
 
-- Pure function: does not mutate inputs
 - Always returns `0` regardless of input values
 - Useful as a neutral element in order composition
 
@@ -39,6 +38,6 @@ console.log(alwaysEqualOrder(1, 1)) // 0
 declare const alwaysEqual: <A>() => Order<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Order.ts#L452)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Order.ts#L443)
 
 Since v4.0.0

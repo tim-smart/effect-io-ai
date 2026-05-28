@@ -3,7 +3,7 @@ Module: `Graph`<br />
 
 ## Graph.Edge
 
-Edge data containing source, target, and user data.
+Represents edge data containing source, target, and user data.
 
 **When to use**
 

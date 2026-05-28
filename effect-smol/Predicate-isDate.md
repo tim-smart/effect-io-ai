@@ -11,7 +11,6 @@ Use when you need to guard dates at runtime.
 
 **Details**
 
-- Pure; does not mutate input.
 - Uses `instanceof Date`.
 
 **Example** (Guard Date)
@@ -34,6 +33,6 @@ console.log(Predicate.isDate(data))
 declare const isDate: (input: unknown) => input is Date
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L1340)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L1310)
 
 Since v2.0.0

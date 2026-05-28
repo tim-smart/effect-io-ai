@@ -14,7 +14,6 @@ Use when comparing tuples with different types at each position
 
 **Details**
 
-- Does not mutate inputs
 - Requires tuples to have the same length; different lengths are never equivalent
 - Applies each equivalence to the corresponding element position
 - Returns `true` only if all elements are equivalent according to their respective equivalences
@@ -66,6 +65,6 @@ console.log(
 declare const Tuple: <const Elements extends ReadonlyArray<Equivalence<any>>>(elements: Elements) => Equivalence<{ readonly [I in keyof Elements]: [Elements[I]] extends [Equivalence<infer A>] ? A : never; }>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Equivalence.ts#L608)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Equivalence.ts#L601)
 
 Since v4.0.0

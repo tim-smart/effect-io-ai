@@ -15,8 +15,7 @@ counters or concatenating strings.
 **Details**
 
 Pass `omitKeyWhen` to drop properties whose merged value matches a predicate,
-such as omitting zero counters. This does not mutate the inputs and returns a
-fresh object.
+such as omitting zero counters.
 
 **Example** (Combining struct properties)
 
@@ -42,6 +41,6 @@ console.log(result) // { n: 3, s: "hello world" }
 declare const makeCombiner: <A>(combiners: { readonly [K in keyof A]: Combiner.Combiner<A[K]>; }, options?: { readonly omitKeyWhen?: ((a: A[keyof A]) => boolean) | undefined; }) => Combiner.Combiner<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Struct.ts#L964)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Struct.ts#L939)
 
 Since v4.0.0

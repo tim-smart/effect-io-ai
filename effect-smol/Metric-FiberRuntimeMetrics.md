@@ -3,7 +3,13 @@ Module: `Metric`<br />
 
 ## Metric.FiberRuntimeMetrics
 
-`Context.Reference` for the optional fiber runtime metrics service.
+Context reference for the optional service that records fiber runtime
+metrics.
+
+**When to use**
+
+Use to provide or inspect the service that receives fiber start and end
+notifications for automatic runtime metrics.
 
 **Details**
 
@@ -57,6 +63,6 @@ const program = Effect.gen(function*() {
 declare const FiberRuntimeMetrics: Context.Reference<FiberRuntimeMetricsService | undefined>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Metric.ts#L3690)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Metric.ts#L3704)
 
 Since v4.0.0

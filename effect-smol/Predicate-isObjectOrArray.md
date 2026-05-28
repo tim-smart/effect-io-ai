@@ -11,7 +11,6 @@ Use when you want to accept plain objects and arrays, but not `null`.
 
 **Details**
 
-- Pure; does not mutate input.
 - Uses `typeof input === "object" && input !== null`.
 - Includes arrays.
 
@@ -34,6 +33,6 @@ console.log(Predicate.isObjectOrArray([]))
 declare const isObjectOrArray: (input: unknown) => input is { [x: PropertyKey]: unknown; } | Array<unknown>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L1079)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L1055)
 
 Since v4.0.0

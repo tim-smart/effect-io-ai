@@ -3,8 +3,7 @@ Module: `Schema`<br />
 
 ## Schema.DefectWithStack
 
-A schema that represents defects, that also includes stack traces in the
-encoded form.
+Schema for defects that also includes stack traces in the encoded form.
 
 **Signature**
 
@@ -12,6 +11,6 @@ encoded form.
 declare const DefectWithStack: Defect
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L8898)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L9129)
 
 Since v4.0.0

@@ -3,7 +3,7 @@ Module: `Cause`<br />
 
 ## Cause.isNoSuchElementError
 
-Tests if an arbitrary value is a `NoSuchElementError`.
+Checks whether an arbitrary value is a `NoSuchElementError`.
 
 **Example** (runtime type check)
 
@@ -20,6 +20,6 @@ console.log(Cause.isNoSuchElementError("nope")) // false
 declare const isNoSuchElementError: (u: unknown) => u is NoSuchElementError
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L1273)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L1271)
 
 Since v4.0.0

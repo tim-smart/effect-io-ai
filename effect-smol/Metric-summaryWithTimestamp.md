@@ -44,6 +44,6 @@ const responseTimesSummary = Metric.summaryWithTimestamp(
 declare const summaryWithTimestamp: (name: string, options: { readonly description?: string | undefined; readonly attributes?: Metric.Attributes | undefined; readonly maxAge: Duration.Input; readonly maxSize: number; readonly quantiles: ReadonlyArray<number>; }) => Summary<[value: number, timestamp: number]>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Metric.ts#L2641)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Metric.ts#L2646)
 
 Since v4.0.0

@@ -19,6 +19,6 @@ Use to branch on whether a mutable map currently has any entries.
 declare const isEmpty: <K, V>(self: MutableHashMap<K, V>) => boolean
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableHashMap.ts#L847)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableHashMap.ts#L845)
 
 Since v2.0.0

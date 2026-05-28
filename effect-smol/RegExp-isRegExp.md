@@ -3,7 +3,7 @@ Module: `RegExp`<br />
 
 ## RegExp.isRegExp
 
-Tests if a value is a `RegExp`.
+Checks whether a value is a `RegExp`.
 
 **When to use**
 

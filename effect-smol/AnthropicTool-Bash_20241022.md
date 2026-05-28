@@ -3,7 +3,7 @@ Module: `AnthropicTool`<br />
 
 ## AnthropicTool.Bash_20241022
 
-Anthropic Bash tool (2024-10-22 version).
+Defines the Anthropic Bash tool (2024-10-22 version).
 
 **When to use**
 

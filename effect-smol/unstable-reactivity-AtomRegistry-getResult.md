@@ -16,6 +16,6 @@ waiting results when `suspendOnWaiting` is enabled.
 declare const getResult: { <A, E>(atom: Atom.Atom<Result.AsyncResult<A, E>>, options?: { readonly suspendOnWaiting?: boolean | undefined; }): (self: AtomRegistry) => Effect.Effect<A, E>; <A, E>(self: AtomRegistry, atom: Atom.Atom<Result.AsyncResult<A, E>>, options?: { readonly suspendOnWaiting?: boolean | undefined; }): Effect.Effect<A, E>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AtomRegistry.ts#L316)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AtomRegistry.ts#L321)
 
 Since v4.0.0

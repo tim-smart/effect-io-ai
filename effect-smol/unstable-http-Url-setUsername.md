@@ -11,6 +11,6 @@ Updates the username used for authentication.
 declare const setUsername: { (username: string): (url: URL) => URL; (url: URL, username: string): URL; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Url.ts#L251)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Url.ts#L250)
 
 Since v4.0.0

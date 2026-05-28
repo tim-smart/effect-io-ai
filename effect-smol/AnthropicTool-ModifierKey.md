@@ -3,7 +3,7 @@ Module: `AnthropicTool`<br />
 
 ## AnthropicTool.ModifierKey
 
-Modifier key literal.
+Modifier key literals.
 
 **Details**
 

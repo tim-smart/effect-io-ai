@@ -12,7 +12,6 @@ Use when retrieve the offending value for logging or custom error rendering.
 
 **Details**
 
-- Pure; does not mutate the issue.
 - Returns `Option.none()` for `Pointer` and `MissingKey` (they carry no
   value).
 - Returns the existing `Option` for variants that already store `actual` as
@@ -42,6 +41,6 @@ console.log(SchemaIssue.getActual(issue))
 declare const getActual: (issue: Issue) => Option.Option<unknown>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaIssue.ts#L856)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaIssue.ts#L845)
 
 Since v4.0.0

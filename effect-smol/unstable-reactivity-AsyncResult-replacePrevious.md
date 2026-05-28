@@ -3,7 +3,8 @@ Module: `AsyncResult`<br />
 
 ## AsyncResult.replacePrevious
 
-For a `Failure`, replaces its stored previous success with the latest success found in another result; non-failures are returned unchanged.
+Replaces a `Failure` value's stored previous success with the latest success
+found in another result.
 
 **Signature**
 
@@ -11,6 +12,6 @@ For a `Failure`, replaces its stored previous success with the latest success fo
 declare const replacePrevious: <R extends AsyncResult<any, any>, XE, A>(self: R, previous: Option.Option<AsyncResult<A, XE>>) => With<R, A, AsyncResult.Failure<R>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AsyncResult.ts#L430)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AsyncResult.ts#L431)
 
 Since v4.0.0

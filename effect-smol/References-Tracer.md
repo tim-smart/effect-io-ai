@@ -3,7 +3,7 @@ Module: `References`<br />
 
 ## References.Tracer
 
-Reference for the active tracer service used to create spans.
+Context reference for the active tracer service used to create spans.
 
 **When to use**
 

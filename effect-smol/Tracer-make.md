@@ -26,6 +26,6 @@ satisfy the `Tracer` contract, including a `span` method that returns a
 declare const make: (options: Tracer) => Tracer
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tracer.ts#L444)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tracer.ts#L449)
 
 Since v2.0.0

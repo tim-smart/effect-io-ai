@@ -3,7 +3,7 @@ Module: `Boolean`<br />
 
 ## Boolean.some
 
-This utility function is used to check if at least one of the elements in a collection of boolean values is `true`.
+Checks whether at least one boolean in a collection is `true`.
 
 **When to use**
 

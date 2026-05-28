@@ -3,7 +3,7 @@ Module: `Option`<br />
 
 ## Option.exists
 
-Tests if the value in a `Some` satisfies a predicate or refinement.
+Checks whether the value in a `Some` satisfies a predicate or refinement.
 
 **When to use**
 
@@ -44,6 +44,6 @@ console.log(Option.none().pipe(Option.exists(isEven)))
 declare const exists: { <A, B extends A>(refinement: Refinement<NoInfer<A>, B>): (self: Option<A>) => self is Option<B>; <A>(predicate: Predicate<NoInfer<A>>): (self: Option<A>) => boolean; <A, B extends A>(self: Option<A>, refinement: Refinement<A, B>): self is Option<B>; <A>(self: Option<A>, predicate: Predicate<A>): boolean; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L2360)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L2359)
 
 Since v2.0.0

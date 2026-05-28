@@ -3,7 +3,7 @@ Module: `HttpApiSchema`<br />
 
 ## HttpApiSchema.status
 
-A convenience function to set the HTTP status code of a schema.
+Sets the HTTP status code of a schema.
 
 **Details**
 

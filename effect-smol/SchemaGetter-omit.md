@@ -33,6 +33,6 @@ const omitField = SchemaGetter.omit<string>()
 declare const omit: <T>() => Getter<never, T>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L675)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L673)
 
 Since v4.0.0

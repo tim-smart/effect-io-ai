@@ -3,7 +3,7 @@ Module: `EventJournal`<br />
 
 ## EventJournal.Entry
 
-Schema model for a committed event journal entry.
+Schema for a committed event journal entry.
 
 **Details**
 

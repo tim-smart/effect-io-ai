@@ -22,6 +22,6 @@ object error.
 declare const getSeverity: (error: object) => Severity
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ErrorReporter.ts#L487)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ErrorReporter.ts#L488)
 
 Since v4.0.0

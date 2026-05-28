@@ -8,8 +8,8 @@ reasons combining typed errors, defects, and interrupts.
 
 **When to use**
 
-Use as the schema type returned by `Cause` when generic code needs to retain
-the typed failure and defect schemas.
+Use as the schema type when generic code needs to retain the typed failure
+and defect schemas for a full cause.
 
 **Details**
 
@@ -38,6 +38,6 @@ export interface Cause<E extends Top, D extends Top> extends
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L8649)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L8881)
 
 Since v3.10.0

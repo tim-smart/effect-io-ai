@@ -3,7 +3,7 @@ Module: `DateTime`<br />
 
 ## DateTime.nowUnsafe
 
-Get the current time using `Date.now`.
+Gets the current time using `Date.now`.
 
 **Details**
 

@@ -14,7 +14,6 @@ Use when when you have an order for a property type and want to compare objects 
 
 **Details**
 
-- Pure function: does not mutate inputs
 - Applies the mapping function to both values before comparison
 - The mapping function should be pure and not have side effects
 - Preserves the ordering properties of the original order
@@ -42,6 +41,6 @@ console.log(byLength("aa", "bb")) // 0
 declare const mapInput: { <B, A>(f: (b: B) => A): (self: Order<A>) => Order<B>; <A, B>(self: Order<A>, f: (b: B) => A): Order<B>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Order.ts#L548)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Order.ts#L537)
 
 Since v2.0.0

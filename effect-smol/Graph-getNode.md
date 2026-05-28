@@ -3,7 +3,7 @@ Module: `Graph`<br />
 
 ## Graph.getNode
 
-Gets the data associated with a node index, if it exists.
+Gets the data associated with a node index safely, if it exists.
 
 **Example** (Getting node data)
 

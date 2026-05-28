@@ -18,6 +18,6 @@ of the same type but with different meanings, see `nominal`.
 declare const make: <A extends Brand<any>>(filter: (unbranded: Brand.Unbranded<A>) => Schema.FilterOutput) => Constructor<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Brand.ts#L292)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Brand.ts#L291)
 
 Since v4.0.0

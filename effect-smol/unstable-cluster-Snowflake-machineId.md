@@ -11,6 +11,6 @@ Extracts the machine id component from a snowflake id.
 declare const machineId: (snowflake: Snowflake) => MachineId
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Snowflake.ts#L200)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Snowflake.ts#L201)
 
 Since v4.0.0

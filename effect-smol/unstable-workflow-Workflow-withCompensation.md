@@ -3,7 +3,7 @@ Module: `Workflow`<br />
 
 ## Workflow.withCompensation
 
-Add compensation logic to an effect inside a Workflow.
+Adds compensation logic to an effect inside a Workflow.
 
 **Details**
 
@@ -19,6 +19,6 @@ Compensation finalizers are only registered for top-level effects in the workflo
 declare const withCompensation: { <A, R2>(compensation: (value: A, cause: Cause.Cause<unknown>) => Effect.Effect<void, never, R2>): <E, R>(effect: Effect.Effect<A, E, R>) => Effect.Effect<A, E, R | R2 | WorkflowInstance | Scope.Scope>; <A, E, R, R2>(effect: Effect.Effect<A, E, R>, compensation: (value: A, cause: Cause.Cause<unknown>) => Effect.Effect<void, never, R2>): Effect.Effect<A, E, R | R2 | WorkflowInstance | Scope.Scope>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Workflow.ts#L809)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Workflow.ts#L808)
 
 Since v4.0.0

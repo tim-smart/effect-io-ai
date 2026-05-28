@@ -3,7 +3,7 @@ Module: `TxHashSet`<br />
 
 ## TxHashSet.isEmpty
 
-Checks if the TxHashSet is empty.
+Checks whether the TxHashSet is empty.
 
 **Example** (Checking whether a set is empty)
 

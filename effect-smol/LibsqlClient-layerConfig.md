@@ -11,6 +11,6 @@ Creates a layer from a `Config`-wrapped libSQL client configuration, providing b
 declare const layerConfig: (config: Config.Wrap<LibsqlClientConfig>) => Layer.Layer<LibsqlClient | Client.SqlClient, Config.ConfigError>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/sql/libsql/src/LibsqlClient.ts#L373)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/sql/libsql/src/LibsqlClient.ts#L377)
 
 Since v4.0.0

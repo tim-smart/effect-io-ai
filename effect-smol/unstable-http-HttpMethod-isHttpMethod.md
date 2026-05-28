@@ -3,7 +3,7 @@ Module: `HttpMethod`<br />
 
 ## HttpMethod.isHttpMethod
 
-Tests if a value is a `HttpMethod`.
+Checks whether a value is a `HttpMethod`.
 
 **Example** (Checking HTTP method values)
 
@@ -24,6 +24,6 @@ console.log(HttpMethod.isHttpMethod(1))
 declare const isHttpMethod: (u: unknown) => u is HttpMethod
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpMethod.ts#L137)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpMethod.ts#L148)
 
 Since v4.0.0

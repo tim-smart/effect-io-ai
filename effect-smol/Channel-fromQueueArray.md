@@ -3,7 +3,7 @@ Module: `Channel`<br />
 
 ## Channel.fromQueueArray
 
-Create a channel from a queue that emits arrays of elements
+Creates a channel from a queue that emits arrays of elements.
 
 **Example** (Creating batched channels from queues)
 

@@ -3,7 +3,7 @@ Module: `TxQueue`<br />
 
 ## TxQueue.isClosing
 
-Checks if the queue is in the closing state.
+Checks whether the queue is in the closing state.
 
 **Example** (Checking closing state)
 

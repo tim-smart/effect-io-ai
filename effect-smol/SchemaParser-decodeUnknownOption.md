@@ -3,7 +3,7 @@ Module: `SchemaParser`<br />
 
 ## SchemaParser.decodeUnknownOption
 
-Creates a decoder for `unknown` input that returns an `Option`.
+Creates a decoder for `unknown` input that returns an `Option` safely.
 
 **When to use**
 
@@ -26,6 +26,6 @@ or `Option.none` on failure, discarding issue details.
 declare const decodeUnknownOption: <S extends Schema.Decoder<unknown>>(schema: S, options?: AST.ParseOptions) => (input: unknown, options?: AST.ParseOptions) => Option.Option<S["Type"]>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaParser.ts#L421)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaParser.ts#L422)
 
 Since v3.10.0

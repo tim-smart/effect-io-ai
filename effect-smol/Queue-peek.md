@@ -3,7 +3,7 @@ Module: `Queue`<br />
 
 ## Queue.peek
 
-Views the next item without removing it.
+Peeks at the next item without removing it.
 
 **Details**
 
@@ -30,6 +30,6 @@ const program = Effect.gen(function*() {
 declare const peek: <A, E>(self: Dequeue<A, E>) => Effect<A, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Queue.ts#L1488)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Queue.ts#L1504)
 
 Since v4.0.0

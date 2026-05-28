@@ -3,7 +3,7 @@ Module: `Boolean`<br />
 
 ## Boolean.ReducerOr
 
-A `Reducer` for combining `boolean`s using OR.
+Reducer for combining `boolean`s using OR.
 
 **When to use**
 

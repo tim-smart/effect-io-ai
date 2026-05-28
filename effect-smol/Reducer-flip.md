@@ -18,7 +18,6 @@ Use when you need the "right" value to act as the accumulator side.
 - The `initialValue` is preserved from the original reducer.
 - The `combineAll` is re-derived from the flipped `combine` (using the
   default left-to-right fold), not carried over from the original.
-- Does not mutate the input reducer.
 
 **Example** (Reversing string concatenation)
 
@@ -45,6 +44,6 @@ console.log(Prepend.combineAll(["a", "b", "c"]))
 declare const flip: <A>(reducer: Reducer<A>) => Reducer<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Reducer.ts#L238)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Reducer.ts#L236)
 
 Since v4.0.0

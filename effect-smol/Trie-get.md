@@ -3,7 +3,7 @@ Module: `Trie`<br />
 
 ## Trie.get
 
-Safely lookup the value for the specified key in the `Trie`.
+Looks up the value for the specified key in the `Trie` safely.
 
 **Example** (Looking up values safely)
 
@@ -34,6 +34,6 @@ assert.deepStrictEqual(Trie.get(trie, "mea"), Option.none())
 declare const get: { (key: string): <V>(self: Trie<V>) => Option<V>; <V>(self: Trie<V>, key: string): Option<V>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Trie.ts#L540)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Trie.ts#L538)
 
 Since v2.0.0

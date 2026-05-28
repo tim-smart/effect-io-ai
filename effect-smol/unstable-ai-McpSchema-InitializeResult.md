@@ -3,8 +3,7 @@ Module: `McpSchema`<br />
 
 ## McpSchema.InitializeResult
 
-After receiving an initialize request from the client, the server sends this
-response.
+Schema for the server's response to an initialize request from the client.
 
 **Signature**
 
@@ -12,6 +11,6 @@ response.
 declare class InitializeResult
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L613)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L699)
 
 Since v4.0.0

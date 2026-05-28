@@ -3,7 +3,7 @@ Module: `SchemaTransformation`<br />
 
 ## SchemaTransformation.toLowerCase
 
-A string-to-string transformation that lowercases on decode.
+Transforms strings by lowercasing on decode.
 Encode is passthrough.
 
 **When to use**
@@ -37,6 +37,6 @@ const Lowered = Schema.String.pipe(
 declare const toLowerCase: () => Transformation<string, string>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L571)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L569)
 
 Since v4.0.0

@@ -36,6 +36,6 @@ const encode = SchemaGetter.encodeFormData()
 declare const encodeFormData: () => Getter<FormData, unknown>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L1659)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L1657)
 
 Since v4.0.0

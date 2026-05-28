@@ -3,7 +3,7 @@ Module: `HashMap`<br />
 
 ## HashMap.has
 
-Checks if the specified key has an entry in the `HashMap`.
+Checks whether the specified key has an entry in the `HashMap`.
 
 **Example** (Checking for keys)
 
@@ -26,6 +26,6 @@ console.log(hasB) // true
 declare const has: { <K1 extends K, K>(key: K1): <K, V>(self: HashMap<K, V>) => boolean; <K1 extends K, K, V>(self: HashMap<K, V>, key: K1): boolean; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashMap.ts#L500)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashMap.ts#L498)
 
 Since v2.0.0

@@ -3,7 +3,7 @@ Module: `Effectable`<br />
 
 ## Effectable.Class
 
-An abstract class that can be extended to create an `Effect`.
+Provides an abstract class that can be extended to create an `Effect`.
 
 **When to use**
 

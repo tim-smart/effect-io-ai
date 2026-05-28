@@ -3,7 +3,7 @@ Module: `Ordering`<br />
 
 ## Ordering.reverse
 
-Inverts the ordering of the input Ordering.
+Reverses the ordering of the input Ordering.
 This is useful for creating descending sort orders from ascending ones.
 
 **When to use**

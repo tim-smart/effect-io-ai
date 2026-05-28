@@ -12,7 +12,6 @@ Use when you want a predicate that mirrors JavaScript truthiness.
 
 **Details**
 
-- Pure; does not mutate input.
 - Uses `!!input` under the hood.
 - Treats `0`, "", `false`, `null`, and `undefined` as false.
 
@@ -38,6 +37,6 @@ console.log(truthy)
 declare const isTruthy: (input: unknown) => boolean
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L502)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L496)
 
 Since v2.0.0

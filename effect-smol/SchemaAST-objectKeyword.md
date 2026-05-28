@@ -3,7 +3,7 @@ Module: `SchemaAST`<br />
 
 ## SchemaAST.objectKeyword
 
-Singleton `ObjectKeyword` AST instance.
+Provides the singleton `ObjectKeyword` AST instance.
 
 **When to use**
 
@@ -21,6 +21,6 @@ building or comparing `SchemaAST` values directly.
 declare const objectKeyword: ObjectKeyword
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L1037)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L1047)
 
 Since v3.10.0

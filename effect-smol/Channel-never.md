@@ -3,7 +3,7 @@ Module: `Channel`<br />
 
 ## Channel.never
 
-Represents an Channel that never completes
+Represents a `Channel` that never completes.
 
 **Example** (Using non-terminating channels)
 

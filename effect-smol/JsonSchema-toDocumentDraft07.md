@@ -14,8 +14,7 @@ Use when you need to output a schema in Draft-07 format.
 This rewrites `#/$defs/...` refs to `#/definitions/...`, converts
 Draft-2020-12 tuple syntax (`prefixItems` plus `items`) to Draft-07 form
 (`items` as array plus `additionalItems`), and converts both the root schema
-and all definitions. It does not mutate the input and allocates a new
-`Document`.
+and all definitions.
 
 **Gotchas**
 
@@ -49,6 +48,6 @@ console.log(draft07.schema.additionalItems) // { type: "boolean" }
 declare const toDocumentDraft07: (document: Document<"draft-2020-12">) => Document<"draft-07">
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/JsonSchema.ts#L599)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/JsonSchema.ts#L594)
 
 Since v4.0.0

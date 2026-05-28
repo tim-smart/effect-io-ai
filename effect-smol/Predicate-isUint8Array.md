@@ -11,7 +11,6 @@ Use when you need to guard binary data at runtime.
 
 **Details**
 
-- Pure; does not mutate input.
 - Uses `instanceof Uint8Array`.
 
 **Example** (Guard Uint8Array)
@@ -35,6 +34,6 @@ console.log(Predicate.isUint8Array(data))
 declare const isUint8Array: (input: unknown) => input is Uint8Array
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L1310)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L1281)
 
 Since v2.0.0

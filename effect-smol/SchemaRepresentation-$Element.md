@@ -3,7 +3,7 @@ Module: `SchemaRepresentation`<br />
 
 ## SchemaRepresentation.$Element
 
-Schema codec for the `Element` type (positional tuple element).
+Schema for the `Element` type (positional tuple element).
 
 **Signature**
 

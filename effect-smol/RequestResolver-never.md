@@ -3,7 +3,7 @@ Module: `RequestResolver`<br />
 
 ## RequestResolver.never
 
-A request resolver that never executes requests.
+Creates a request resolver that never executes requests.
 
 **When to use**
 
@@ -25,6 +25,6 @@ unless the fiber is interrupted.
 declare const never: RequestResolver<never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RequestResolver.ts#L741)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RequestResolver.ts#L740)
 
 Since v2.0.0

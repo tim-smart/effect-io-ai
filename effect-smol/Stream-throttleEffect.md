@@ -3,12 +3,16 @@ Module: `Stream`<br />
 
 ## Stream.throttleEffect
 
-Delays the arrays of this stream according to the given bandwidth
-parameters using the token bucket algorithm. Allows for burst processing by
-allowing the bucket to accumulate tokens up to a `units + burst` threshold.
-The weight of each array is determined by the effectful `cost` function.
+Rate-limits stream chunks with an effectful cost function.
+
+**When to use**
+
+Use to throttle chunks when computing each chunk's cost requires an effect.
 
 **Details**
+
+Uses a token bucket. The bucket can accumulate up to `units + burst` tokens,
+and each chunk consumes the cost returned by the effectful `cost` function.
 
 If using the "enforce" strategy, arrays that do not meet the bandwidth
 constraints are dropped. If using the "shape" strategy, arrays are delayed
@@ -44,6 +48,6 @@ Effect.runPromise(Effect.gen(function*() {
 declare const throttleEffect: { <A, E2, R2>(options: { readonly cost: (arr: Arr.NonEmptyReadonlyArray<A>) => Effect.Effect<number, E2, R2>; readonly units: number; readonly duration: Duration.Input; readonly burst?: number | undefined; readonly strategy?: "enforce" | "shape" | undefined; }): <E, R>(self: Stream<A, E, R>) => Stream<A, E2 | E, R2 | R>; <A, E, R, E2, R2>(self: Stream<A, E, R>, options: { readonly cost: (arr: Arr.NonEmptyReadonlyArray<A>) => Effect.Effect<number, E2, R2>; readonly units: number; readonly duration: Duration.Input; readonly burst?: number | undefined; readonly strategy?: "enforce" | "shape" | undefined; }): Stream<A, E | E2, R | R2>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L7914)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L7936)
 
 Since v2.0.0

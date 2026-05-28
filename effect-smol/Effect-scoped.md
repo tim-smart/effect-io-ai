@@ -3,9 +3,16 @@ Module: `Effect`<br />
 
 ## Effect.scoped
 
-Scopes all resources used in this workflow to the lifetime of the workflow,
-ensuring that their finalizers are run as soon as this workflow completes
-execution, whether by success, failure, or interruption.
+Runs an effect with a scope that closes when the effect completes.
+
+**When to use**
+
+Use to acquire scoped resources for the duration of a single workflow.
+
+**Details**
+
+Finalizers for resources acquired inside the workflow run as soon as the
+workflow completes, whether by success, failure, or interruption.
 
 **Example** (Running a scoped acquisition)
 
@@ -37,6 +44,6 @@ Effect.runFork(program)
 declare const scoped: <A, E, R>(self: Effect<A, E, R>) => Effect<A, E, Exclude<R, Scope>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L6360)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L6358)
 
 Since v2.0.0

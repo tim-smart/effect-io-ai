@@ -42,6 +42,6 @@ const nonNegative = SchemaGetter.checkEffect<number>((n) =>
 declare const checkEffect: <T, R = never>(f: (input: T, options: AST.ParseOptions) => Effect.Effect<undefined | boolean | Schema.FilterIssue, never, R>) => Getter<T, T, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L518)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L517)
 
 Since v4.0.0

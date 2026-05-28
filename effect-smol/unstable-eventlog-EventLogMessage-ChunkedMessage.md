@@ -3,7 +3,7 @@ Module: `EventLogMessage`<br />
 
 ## EventLogMessage.ChunkedMessage
 
-Transport message for one part of a large encoded event-log payload.
+Represents one part of a large encoded event-log payload.
 
 **When to use**
 
@@ -16,6 +16,6 @@ the same id once every part has arrived.
 declare class ChunkedMessage
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventLogMessage.ts#L179)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventLogMessage.ts#L180)
 
 Since v4.0.0

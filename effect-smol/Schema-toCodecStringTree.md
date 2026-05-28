@@ -3,8 +3,8 @@ Module: `Schema`<br />
 
 ## Schema.toCodecStringTree
 
-The StringTree canonical codec converts **every leaf value to a string**, while
-preserving the original structure.
+Converts a schema to the StringTree canonical codec, where every leaf value
+becomes a string while preserving the original structure.
 
 **Details**
 
@@ -25,6 +25,6 @@ Options:
 declare const toCodecStringTree: { <T, E, RD, RE>(schema: Codec<T, E, RD, RE>): Codec<T, StringTree, RD, RE>; <T, E, RD, RE>(schema: Codec<T, E, RD, RE>, options: { readonly keepDeclarations: true; }): Codec<T, unknown, RD, RE>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L12663)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L12905)
 
 Since v4.0.0

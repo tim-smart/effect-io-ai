@@ -3,7 +3,8 @@ Module: `HttpClientError`<br />
 
 ## HttpClientError.HttpClientErrorSchema
 
-Serializable schema representation of an `HttpClientError`, preserving the specific error kind and cause.
+Schema for serializable HTTP client errors, preserving the specific error kind
+and cause.
 
 **Signature**
 
@@ -11,6 +12,6 @@ Serializable schema representation of an `HttpClientError`, preserving the speci
 declare class HttpClientErrorSchema
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpClientError.ts#L321)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpClientError.ts#L322)
 
 Since v4.0.0

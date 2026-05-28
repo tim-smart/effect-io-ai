@@ -4,10 +4,17 @@ Module: `Schema`<br />
 ## Schema.decodeUnknownOption
 
 Decodes an `unknown` input against a schema, returning an `Option` that is
-`Some` with the decoded value on success or `None` on failure. Prefer this
-over `decodeUnknownExit` or `decodeUnknownEffect` when you only
-need to know whether decoding succeeded and don't need error details. For
-typed input use `decodeOption`.
+`Some` with the decoded value on success or `None` on failure.
+
+**When to use**
+
+Use when the input type is not statically known and you only need to know
+whether decoding succeeded.
+
+**Details**
+
+Prefer this over `decodeUnknownExit` or `decodeUnknownEffect`
+when you don't need error details. For typed input use `decodeOption`.
 Options may be provided either when creating the decoder or when applying it;
 application options override creation options.
 
@@ -17,6 +24,6 @@ application options override creation options.
 declare const decodeUnknownOption: <S extends Decoder<unknown>>(schema: S, options?: AST.ParseOptions) => (input: unknown, options?: AST.ParseOptions) => Option_.Option<S["Type"]>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L1303)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L1345)
 
 Since v3.10.0

@@ -3,7 +3,7 @@ Module: `OpenAiTool`<br />
 
 ## OpenAiTool.FileSearch
 
-OpenAI File Search tool that enables the model to search through uploaded
+Defines the OpenAI File Search tool that enables the model to search through uploaded
 files and vector stores.
 
 **When to use**

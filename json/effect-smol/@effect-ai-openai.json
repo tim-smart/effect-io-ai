@@ -167,7 +167,7 @@
     },
     "project": "@effect/ai-openai",
     "name": "OpenAiClient",
-    "description": "Service identifier for the OpenAI client.\n\n**When to use**\n\nUse when accessing or providing the OpenAI client service through Effect's\ncontext.",
+    "description": "Service tag for the OpenAI client.\n\n**When to use**\n\nUse when accessing or providing the OpenAI client service through Effect's\ncontext.",
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
@@ -221,7 +221,7 @@
     "since": "4.0.0",
     "category": "Websocket mode",
     "signature": "declare const layerWebSocketMode: Layer.Layer<OpenAiSocket | ResponseIdTracker.ResponseIdTracker, never, OpenAiClient | Socket.WebSocketConstructor>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L743"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L751"
   },
   {
     "_tag": "Function",
@@ -269,7 +269,7 @@
     "since": "4.0.0",
     "category": "Websocket mode",
     "signature": "declare const withWebSocketMode: <A, E, R>(effect: Effect.Effect<A, E, R>) => Effect.Effect<A, E, Exclude<R, OpenAiSocket | ResponseIdTracker.ResponseIdTracker> | OpenAiClient | Socket.WebSocketConstructor>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L707"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L715"
   },
   {
     "_tag": "Interface",
@@ -407,13 +407,13 @@
     },
     "project": "@effect/ai-openai",
     "name": "OpenAiConfig",
-    "description": "Context service carrying scoped OpenAI configuration for provider\noperations.\n\n**When to use**\n\nUse to provide scoped OpenAI client configuration, such as an HTTP client\ntransform, to OpenAI provider operations without passing it through each call.",
+    "description": "Context service for scoped OpenAI configuration used by provider operations.\n\n**When to use**\n\nUse to provide scoped OpenAI client configuration, such as an HTTP client\ntransform, to OpenAI provider operations without passing it through each call.",
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
     "category": "services",
     "signature": "declare class OpenAiConfig",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiConfig.ts#L53"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiConfig.ts#L52"
   },
   {
     "_tag": "Constant",
@@ -429,7 +429,7 @@
     "since": "4.0.0",
     "category": "configuration",
     "signature": "declare const withClientTransform: { (transform: (client: HttpClient) => HttpClient): <A, E, R>(self: Effect.Effect<A, E, R>) => Effect.Effect<A, E, R>; <A, E, R>(self: Effect.Effect<A, E, R>, transform: (client: HttpClient) => HttpClient): Effect.Effect<A, E, R>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiConfig.ts#L109"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiConfig.ts#L108"
   },
   {
     "_tag": "Interface",
@@ -445,7 +445,7 @@
     "since": "4.0.0",
     "category": "models",
     "signature": "export interface Service {\n    readonly transformClient?: ((client: HttpClient) => HttpClient) | undefined\n  }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiConfig.ts#L81"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiConfig.ts#L80"
   },
   {
     "_tag": "Class",
@@ -455,7 +455,7 @@
     },
     "project": "@effect/ai-openai",
     "name": "Config",
-    "description": "Service definition for OpenAI embedding model configuration.\n\n**When to use**\n\nUse when embedding requests need scoped OpenAI request defaults or overrides\nfrom Effect context.\n\n**Details**\n\nThe service stores the OpenAI create-embedding request payload without\n`input`, carrying options such as `model`, `dimensions`, `encoding_format`,\nand `user`.",
+    "description": "Context service for OpenAI embedding model configuration.\n\n**When to use**\n\nUse when embedding requests need scoped OpenAI request defaults or overrides\nfrom Effect context.\n\n**Details**\n\nThe service stores the OpenAI create-embedding request payload without\n`input`, carrying options such as `model`, `dimensions`, `encoding_format`,\nand `user`.",
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
@@ -583,7 +583,7 @@
     },
     "project": "@effect/ai-openai",
     "name": "Config",
-    "description": "Service definition for OpenAI language model configuration.\n\n**When to use**\n\nUse when you need to provide OpenAI Responses API request defaults through\nEffect context for language model operations.\n\n**Details**\n\nConfig values are merged with the config object passed to `model`, `make`, or\n`layer`, with scoped context values taking precedence.",
+    "description": "Context service for OpenAI language model configuration.\n\n**When to use**\n\nUse when you need to provide OpenAI Responses API request defaults through\nEffect context for language model operations.\n\n**Details**\n\nConfig values are merged with the config object passed to `model`, `make`, or\n`layer`, with scoped context values taking precedence.",
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
@@ -1367,7 +1367,7 @@
     },
     "project": "@effect/ai-openai",
     "name": "ApplyPatch",
-    "description": "OpenAI Apply Patch tool that allows the model to apply diffs by creating,\ndeleting, or updating files. This local tool runs in your environment and\nrequires a handler to execute file operations.\n\n**When to use**\n\nUse when you want an OpenAI model to request structured file edits as create,\ndelete, or update operations that your application executes through a local\nhandler.",
+    "description": "Defines the OpenAI Apply Patch tool that allows the model to apply diffs by creating,\ndeleting, or updating files. This local tool runs in your environment and\nrequires a handler to execute file operations.\n\n**When to use**\n\nUse when you want an OpenAI model to request structured file edits as create,\ndelete, or update operations that your application executes through a local\nhandler.",
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
@@ -1383,7 +1383,7 @@
     },
     "project": "@effect/ai-openai",
     "name": "CodeInterpreter",
-    "description": "OpenAI Code Interpreter tool that allows the model to execute Python code in\na sandboxed environment.\n\n**When to use**\n\nUse to enable OpenAI-hosted Python execution for a model response.\n\n**Details**\n\nThe tool is configured with a `container` argument. Successful tool calls\nexpose `outputs`, which may contain logs or generated images, or `null` when\nno outputs are available.",
+    "description": "Defines the OpenAI Code Interpreter tool that allows the model to execute Python code in\na sandboxed environment.\n\n**When to use**\n\nUse to enable OpenAI-hosted Python execution for a model response.\n\n**Details**\n\nThe tool is configured with a `container` argument. Successful tool calls\nexpose `outputs`, which may contain logs or generated images, or `null` when\nno outputs are available.",
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
@@ -1399,7 +1399,7 @@
     },
     "project": "@effect/ai-openai",
     "name": "FileSearch",
-    "description": "OpenAI File Search tool that enables the model to search through uploaded\nfiles and vector stores.\n\n**When to use**\n\nUse to let an OpenAI model search uploaded files through one or more vector\nstores.\n\n**Details**\n\nThe tool requires `vector_store_ids` and accepts optional `filters`,\n`max_num_results`, and `ranking_options`. Successful tool calls expose the\nsearch `status`, generated `queries`, and optional `results`.",
+    "description": "Defines the OpenAI File Search tool that enables the model to search through uploaded\nfiles and vector stores.\n\n**When to use**\n\nUse to let an OpenAI model search uploaded files through one or more vector\nstores.\n\n**Details**\n\nThe tool requires `vector_store_ids` and accepts optional `filters`,\n`max_num_results`, and `ranking_options`. Successful tool calls expose the\nsearch `status`, generated `queries`, and optional `results`.",
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
@@ -1415,7 +1415,7 @@
     },
     "project": "@effect/ai-openai",
     "name": "ImageGeneration",
-    "description": "OpenAI Image Generation tool that enables the model to generate images using\nthe GPT image models.\n\n**When to use**\n\nUse to enable OpenAI provider-defined image generation through a language\nmodel response.\n\n**Details**\n\nThe tool configures the `image_generation` provider tool, including model,\nsize, quality, output format, moderation, background, input-image options,\nand partial image settings. Successful tool calls expose `result` as base64\nimage data or `null`.",
+    "description": "Defines the OpenAI Image Generation tool that enables the model to generate images using\nthe GPT image models.\n\n**When to use**\n\nUse to enable OpenAI provider-defined image generation through a language\nmodel response.\n\n**Details**\n\nThe tool configures the `image_generation` provider tool, including model,\nsize, quality, output format, moderation, background, input-image options,\nand partial image settings. Successful tool calls expose `result` as base64\nimage data or `null`.",
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
@@ -1431,7 +1431,7 @@
     },
     "project": "@effect/ai-openai",
     "name": "LocalShell",
-    "description": "OpenAI Local Shell tool that enables the model to run a command with a local\nshell. This local tool runs in your environment and requires a handler to\nexecute commands.\n\n**When to use**\n\nUse to let an OpenAI model request local shell commands that your application\nexecutes through a handler.\n\n**Details**\n\nThe tool exposes a provider-defined `local_shell` call. It is marked as\nhandler-required, so applications must provide the command execution policy\nand implementation.",
+    "description": "Defines the OpenAI Local Shell tool that enables the model to run a command with a local\nshell. This local tool runs in your environment and requires a handler to\nexecute commands.\n\n**When to use**\n\nUse to let an OpenAI model request local shell commands that your application\nexecutes through a handler.\n\n**Details**\n\nThe tool exposes a provider-defined `local_shell` call. It is marked as\nhandler-required, so applications must provide the command execution policy\nand implementation.",
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
@@ -1447,7 +1447,7 @@
     },
     "project": "@effect/ai-openai",
     "name": "Mcp",
-    "description": "OpenAI MCP tool that gives the model access to additional tools via remote\nModel Context Protocol (MCP) servers.\n\n**When to use**\n\nUse to let an OpenAI model call tools exposed by a remote MCP server.\n\n**Details**\n\nThe tool accepts MCP server configuration such as allowed tools,\nauthorization, connector id, approval requirements, server metadata, and\nserver URL. Tool call results include the called tool name, arguments, output,\nerror, and server label.\n\n**Gotchas**\n\nThis schema leaves both `server_url` and `connector_id` optional, but OpenAI\nmay require a server URL or connector id for a usable MCP tool configuration.",
+    "description": "Defines the OpenAI MCP tool that gives the model access to additional tools via remote\nModel Context Protocol (MCP) servers.\n\n**When to use**\n\nUse to let an OpenAI model call tools exposed by a remote MCP server.\n\n**Details**\n\nThe tool accepts MCP server configuration such as allowed tools,\nauthorization, connector id, approval requirements, server metadata, and\nserver URL. Tool call results include the called tool name, arguments, output,\nerror, and server label.\n\n**Gotchas**\n\nThis schema leaves both `server_url` and `connector_id` optional, but OpenAI\nmay require a server URL or connector id for a usable MCP tool configuration.",
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
@@ -1463,13 +1463,13 @@
     },
     "project": "@effect/ai-openai",
     "name": "Shell",
-    "description": "OpenAI Function Shell tool that enables the model to execute one or more shell\ncommands in a managed environment. This local tool runs in your environment\nand requires a handler to execute commands.",
+    "description": "Defines the OpenAI shell tool for model-requested command execution.\n\n**When to use**\n\nUse to let an OpenAI model request shell commands that your application\nexecutes through a handler.\n\n**Details**\n\nThe tool exposes a provider-defined `shell` call. It is marked as\nhandler-required, so applications must provide the command execution policy\nand implementation.",
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
     "category": "tools",
     "signature": "declare const Shell: <Mode extends Tool.FailureMode | undefined = undefined>(args: { readonly failureMode?: Mode | undefined; }) => Tool.ProviderDefined<\"openai.shell\", \"OpenAiShell\", { readonly args: Schema.Void; readonly parameters: Schema.Struct<{ readonly action: Schema.Struct<{ readonly commands: Schema.$Array<Schema.String>; readonly timeout_ms: Schema.Union<readonly [Schema.Number, Schema.Null]>; readonly max_output_length: Schema.Union<readonly [Schema.Number, Schema.Null]>; }>; }>; readonly success: Schema.Struct<{ readonly output: Schema.$Array<Schema.Struct<{ readonly stdout: Schema.String; readonly stderr: Schema.String; readonly outcome: Schema.Union<readonly [Schema.Struct<{ readonly type: Schema.Literal<\"timeout\">; }>, Schema.Struct<{ readonly type: Schema.Literal<\"exit\">; readonly exit_code: Schema.Number; }>]>; readonly created_by: Schema.optionalKey<Schema.String>; }>>; }>; readonly failure: Schema.Never; readonly failureMode: Mode extends undefined ? \"error\" : Mode; }, true>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiTool.ts#L273"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiTool.ts#L282"
   },
   {
     "_tag": "Constant",
@@ -1479,13 +1479,13 @@
     },
     "project": "@effect/ai-openai",
     "name": "WebSearch",
-    "description": "OpenAI Web Search tool that enables the model to search the web for\ninformation.\n\n**When to use**\n\nUse to enable OpenAI provider-defined web search for a model response.\n\n**Details**\n\nThe tool accepts optional filters, user location, and search context size.\nSuccessful calls expose the performed search action and status.",
+    "description": "Defines the OpenAI Web Search tool that enables the model to search the web for\ninformation.\n\n**When to use**\n\nUse to enable OpenAI provider-defined web search for a model response.\n\n**Details**\n\nThe tool accepts optional filters, user location, and search context size.\nSuccessful calls expose the performed search action and status.",
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
     "category": "tools",
     "signature": "declare const WebSearch: <Mode extends Tool.FailureMode | undefined = undefined>(args: { readonly filters?: { readonly allowed_domains?: ReadonlyArray<string> | null | undefined; } | null | undefined; readonly user_location?: { readonly type?: \"approximate\" | undefined; readonly country?: string | null | undefined; readonly region?: string | null | undefined; readonly city?: string | null | undefined; readonly timezone?: string | null | undefined; } | null | undefined; readonly search_context_size?: \"low\" | \"medium\" | \"high\" | undefined; }) => Tool.ProviderDefined<\"openai.web_search\", \"OpenAiWebSearch\", { readonly args: Schema.Struct<{ readonly filters: Schema.optionalKey<Schema.Union<readonly [Schema.Struct<{ readonly allowed_domains: Schema.optionalKey<Schema.Union<readonly [Schema.$Array<Schema.String>, Schema.Null]>>; }>, Schema.Null]>>; readonly user_location: Schema.optionalKey<Schema.Union<readonly [Schema.Struct<{ readonly type: Schema.optionalKey<Schema.Literal<\"approximate\">>; readonly country: Schema.optionalKey<Schema.Union<readonly [Schema.String, Schema.Null]>>; readonly region: Schema.optionalKey<Schema.Union<readonly [Schema.String, Schema.Null]>>; readonly city: Schema.optionalKey<Schema.Union<readonly [Schema.String, Schema.Null]>>; readonly timezone: Schema.optionalKey<Schema.Union<readonly [Schema.String, Schema.Null]>>; }>, Schema.Null]>>; readonly search_context_size: Schema.optionalKey<Schema.Literals<readonly [\"low\", \"medium\", \"high\"]>>; }>; readonly parameters: Schema.Struct<{ readonly action: Schema.Union<readonly [Schema.Struct<{ readonly type: Schema.Literal<\"search\">; readonly query: Schema.optionalKey<Schema.String>; readonly queries: Schema.optionalKey<Schema.$Array<Schema.String>>; readonly sources: Schema.optionalKey<Schema.$Array<Schema.Struct<{ readonly type: Schema.Literal<\"url\">; readonly url: Schema.String; }>>>; }>, Schema.Struct<{ readonly type: Schema.Literal<\"open_page\">; readonly url: Schema.optionalKey<Schema.Union<readonly [Schema.String, Schema.Null]>>; }>, Schema.Struct<{ readonly type: Schema.Literal<\"find_in_page\">; readonly url: Schema.String; readonly pattern: Schema.String; }>]>; }>; readonly success: Schema.Struct<{ readonly action: Schema.Union<readonly [Schema.Struct<{ readonly type: Schema.Literal<\"search\">; readonly query: Schema.optionalKey<Schema.String>; readonly queries: Schema.optionalKey<Schema.$Array<Schema.String>>; readonly sources: Schema.optionalKey<Schema.$Array<Schema.Struct<{ readonly type: Schema.Literal<\"url\">; readonly url: Schema.String; }>>>; }>, Schema.Struct<{ readonly type: Schema.Literal<\"open_page\">; readonly url: Schema.optionalKey<Schema.Union<readonly [Schema.String, Schema.Null]>>; }>, Schema.Struct<{ readonly type: Schema.Literal<\"find_in_page\">; readonly url: Schema.String; readonly pattern: Schema.String; }>]>; readonly status: Schema.Literals<readonly [\"in_progress\", \"searching\", \"completed\", \"failed\"]>; }>; readonly failure: Schema.Never; readonly failureMode: Mode extends undefined ? \"error\" : Mode; }, false>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiTool.ts#L304"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiTool.ts#L313"
   },
   {
     "_tag": "Constant",
@@ -1495,13 +1495,13 @@
     },
     "project": "@effect/ai-openai",
     "name": "WebSearchPreview",
-    "description": "OpenAI preview Web Search tool for model responses.\n\n**When to use**\n\nUse to enable the preview OpenAI web search provider tool.\n\n**Details**\n\nThe preview tool accepts optional user location and search context size, then\nexposes the performed search action and status in successful calls.",
+    "description": "Defines the OpenAI preview Web Search tool for model responses.\n\n**When to use**\n\nUse to enable the preview OpenAI web search provider tool.\n\n**Details**\n\nThe preview tool accepts optional user location and search context size, then\nexposes the performed search action and status in successful calls.",
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
     "category": "tools",
     "signature": "declare const WebSearchPreview: <Mode extends Tool.FailureMode | undefined = undefined>(args: { readonly user_location?: { readonly type: \"approximate\"; readonly country?: string | null | undefined; readonly region?: string | null | undefined; readonly city?: string | null | undefined; readonly timezone?: string | null | undefined; } | null | undefined; readonly search_context_size?: \"low\" | \"medium\" | \"high\" | undefined; }) => Tool.ProviderDefined<\"openai.web_search_preview\", \"OpenAiWebSearchPreview\", { readonly args: Schema.Struct<{ readonly user_location: Schema.optionalKey<Schema.Union<readonly [Schema.Struct<{ readonly type: Schema.Literal<\"approximate\">; readonly country: Schema.optionalKey<Schema.Union<readonly [Schema.String, Schema.Null]>>; readonly region: Schema.optionalKey<Schema.Union<readonly [Schema.String, Schema.Null]>>; readonly city: Schema.optionalKey<Schema.Union<readonly [Schema.String, Schema.Null]>>; readonly timezone: Schema.optionalKey<Schema.Union<readonly [Schema.String, Schema.Null]>>; }>, Schema.Null]>>; readonly search_context_size: Schema.optionalKey<Schema.Literals<readonly [\"low\", \"medium\", \"high\"]>>; }>; readonly parameters: Schema.Void; readonly success: Schema.Struct<{ readonly action: Schema.Union<readonly [Schema.Struct<{ readonly type: Schema.Literal<\"search\">; readonly query: Schema.optionalKey<Schema.String>; readonly queries: Schema.optionalKey<Schema.$Array<Schema.String>>; readonly sources: Schema.optionalKey<Schema.$Array<Schema.Struct<{ readonly type: Schema.Literal<\"url\">; readonly url: Schema.String; }>>>; }>, Schema.Struct<{ readonly type: Schema.Literal<\"open_page\">; readonly url: Schema.optionalKey<Schema.Union<readonly [Schema.String, Schema.Null]>>; }>, Schema.Struct<{ readonly type: Schema.Literal<\"find_in_page\">; readonly url: Schema.String; readonly pattern: Schema.String; }>]>; readonly status: Schema.Literals<readonly [\"in_progress\", \"searching\", \"completed\", \"failed\"]>; }>; readonly failure: Schema.Never; readonly failureMode: Mode extends undefined ? \"error\" : Mode; }, false>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiTool.ts#L339"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiTool.ts#L348"
   },
   {
     "_tag": "TypeAlias",

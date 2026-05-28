@@ -3,7 +3,7 @@ Module: `FiberSet`<br />
 
 ## FiberSet.awaitEmpty
 
-Wait until the fiber set is empty.
+Waits until the fiber set is empty.
 
 **Example** (Waiting for an empty set)
 
@@ -30,6 +30,6 @@ const program = Effect.gen(function*() {
 declare const awaitEmpty: <A, E>(self: FiberSet<A, E>) => Effect.Effect<void>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FiberSet.ts#L720)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FiberSet.ts#L728)
 
 Since v3.13.0

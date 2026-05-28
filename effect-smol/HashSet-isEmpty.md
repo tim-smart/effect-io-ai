@@ -3,7 +3,7 @@ Module: `HashSet`<br />
 
 ## HashSet.isEmpty
 
-Checks if the HashSet is empty.
+Checks whether the HashSet is empty.
 
 **Example** (Checking whether a HashSet is empty)
 

@@ -3,8 +3,7 @@ Module: `Cause`<br />
 
 ## Cause.pretty
 
-Renders a `Cause` as a human-readable string for logging or
-debugging.
+Formats a `Cause` as a human-readable string for logging or debugging.
 
 **When to use**
 
@@ -52,6 +51,6 @@ console.log(rendered.includes("something went wrong")) // true
 declare const pretty: <E>(cause: Cause<E>) => string
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L1225)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L1223)
 
 Since v2.0.0

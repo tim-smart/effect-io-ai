@@ -3,7 +3,7 @@ Module: `Console`<br />
 
 ## Console.clear
 
-Invokes the current console service's clear operation.
+Runs the current console service's clear operation.
 
 **When to use**
 

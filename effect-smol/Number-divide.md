@@ -3,7 +3,7 @@ Module: `Number`<br />
 
 ## Number.divide
 
-Provides a division operation on `number`s, returning `Option.none()` if the divisor is `0`.
+Divides `number`s safely, returning `Option.none()` if the divisor is `0`.
 
 **When to use**
 

@@ -11,6 +11,6 @@ Memory tool command payload for viewing a file or directory, optionally with a f
 type MemoryViewCommand = typeof MemoryViewCommand.Type
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L1614)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L1616)
 
 Since v4.0.0

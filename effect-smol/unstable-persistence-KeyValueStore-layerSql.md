@@ -16,6 +16,6 @@ string and binary values through the current `SqlClient`.
 declare const layerSql: (options?: LayerSqlOptions) => Layer.Layer<KeyValueStore, never, SqlClient.SqlClient>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/KeyValueStore.ts#L479)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/KeyValueStore.ts#L484)
 
 Since v4.0.0

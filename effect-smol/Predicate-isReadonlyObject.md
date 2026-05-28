@@ -37,6 +37,6 @@ console.log(Predicate.isReadonlyObject(data))
 declare const isReadonlyObject: (input: unknown) => input is { readonly [x: PropertyKey]: unknown; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L1143)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L1119)
 
 Since v4.0.0

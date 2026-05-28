@@ -3,7 +3,7 @@ Module: `OpenRouterConfig`<br />
 
 ## OpenRouterConfig.OpenRouterConfig
 
-Context service carrying scoped OpenRouter provider configuration for client
+Context service for scoped OpenRouter provider configuration used by client
 operations.
 
 **When to use**

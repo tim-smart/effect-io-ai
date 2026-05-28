@@ -3,7 +3,12 @@ Module: `Tracer`<br />
 
 ## Tracer.TracerKey
 
-The string key used to identify the active `Tracer` context reference.
+Defines the string key for the active tracer context reference.
+
+**When to use**
+
+Use when integrating lower-level tracing code that needs the raw context key
+for active tracer lookup.
 
 **Signature**
 
@@ -11,6 +16,6 @@ The string key used to identify the active `Tracer` context reference.
 declare const TracerKey: "effect/Tracer"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tracer.ts#L570)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tracer.ts#L588)
 
 Since v4.0.0

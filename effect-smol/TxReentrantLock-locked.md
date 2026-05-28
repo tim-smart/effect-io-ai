@@ -3,7 +3,7 @@ Module: `TxReentrantLock`<br />
 
 ## TxReentrantLock.locked
 
-Checks if the lock is held by any fiber (read or write).
+Checks whether the lock is held by any fiber (read or write).
 
 **Example** (Checking whether a lock is held)
 
@@ -23,6 +23,6 @@ const program = Effect.gen(function*() {
 declare const locked: (self: TxReentrantLock) => Effect.Effect<boolean>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxReentrantLock.ts#L582)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxReentrantLock.ts#L610)
 
 Since v2.0.0

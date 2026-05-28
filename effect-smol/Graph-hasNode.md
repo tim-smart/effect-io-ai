@@ -3,7 +3,7 @@ Module: `Graph`<br />
 
 ## Graph.hasNode
 
-Checks if a node with the given index exists in the graph.
+Checks whether a node with the given index exists in the graph.
 
 **Example** (Checking node existence)
 

@@ -8,7 +8,7 @@ Error data for an invalid argument passed to a platform API.
 **When to use**
 
 Use when a platform API rejects caller input before performing the underlying
-operation and callers need the `BadArgument` reason data directly.
+operation and callers need invalid-argument reason data directly.
 
 **Details**
 

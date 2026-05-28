@@ -3,7 +3,7 @@ Module: `FiberHandle`<br />
 
 ## FiberHandle.get
 
-Retrieve the fiber from the FiberHandle.
+Retrieves the fiber from the FiberHandle effectfully.
 
 **Example** (Reading the current fiber)
 

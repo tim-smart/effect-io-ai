@@ -15,7 +15,6 @@ Use when you need the focused values as a simple `Array<A>` for further
 
 - Returns an empty array when the traversal cannot focus.
 - Always returns a fresh array (safe to mutate).
-- Does not mutate the source.
 
 **Example** (collecting positive numbers)
 
@@ -47,6 +46,6 @@ console.log(getPositive({ values: [-1, -2] }))
 declare const getAll: <S, A>(traversal: Traversal<S, A>) => (s: S) => Array<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Optic.ts#L1510)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Optic.ts#L1504)
 
 Since v4.0.0

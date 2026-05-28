@@ -3,7 +3,7 @@ Module: `Scheduler`<br />
 
 ## Scheduler.MaxOpsBeforeYield
 
-A service reference that controls the maximum number of operations a fiber
+Context reference that controls the maximum number of operations a fiber
 can perform before yielding control back to the scheduler.
 
 **When to use**

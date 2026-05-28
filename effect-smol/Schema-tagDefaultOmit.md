@@ -3,9 +3,17 @@ Module: `Schema`<br />
 
 ## Schema.tagDefaultOmit
 
-Like `tag`, but additionally omits the tag field from the encoded output.
-Useful when the encoded form (e.g. JSON) does not include the discriminator key,
-but the decoded type and constructor still need it.
+Creates a literal `_tag` schema that is omitted from encoded output.
+
+**When to use**
+
+Use to decode data that omits the discriminator field while still constructing
+values with a `_tag` for tagged union matching.
+
+**Details**
+
+The tag is filled during decoding and construction, like `tag`, but is
+omitted when encoding.
 
 **Example** (Tag omitted during encoding)
 
@@ -32,6 +40,6 @@ const encoded = Schema.encodeUnknownSync(A)({ _tag: "A", value: 1 })
 declare const tagDefaultOmit: <Tag extends AST.LiteralValue>(literal: Tag) => withDecodingDefaultKey<tag<Tag>, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L5319)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L5549)
 
 Since v4.0.0

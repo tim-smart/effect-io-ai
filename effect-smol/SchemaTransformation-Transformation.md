@@ -3,7 +3,7 @@ Module: `SchemaTransformation`<br />
 
 ## SchemaTransformation.Transformation
 
-A bidirectional transformation between a decoded type `T` and an encoded
+Represents a bidirectional transformation between a decoded type `T` and an encoded
 type `E`, built from a pair of `Getter`s.
 
 **When to use**
@@ -51,6 +51,6 @@ declare class Transformation<T, E, RD, RE> { constructor(
   ) }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L214)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L213)
 
 Since v4.0.0

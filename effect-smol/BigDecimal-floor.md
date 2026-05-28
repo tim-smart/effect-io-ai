@@ -3,7 +3,7 @@ Module: `BigDecimal`<br />
 
 ## BigDecimal.floor
 
-Calculate the floor of a `BigDecimal` at the given scale.
+Computes the floor of a `BigDecimal` at the given scale.
 
 **When to use**
 
@@ -37,6 +37,6 @@ assert.deepStrictEqual(
 declare const floor: { (scale: number): (self: BigDecimal) => BigDecimal; (self: BigDecimal, scale?: number): BigDecimal; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigDecimal.ts#L1975)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigDecimal.ts#L1979)
 
 Since v3.16.0

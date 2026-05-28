@@ -136,6 +136,6 @@ const robustProgram = Effect.gen(function*() {
 declare const cron: { (expression: Cron.Cron): Schedule<Duration.Duration, unknown, Cron.CronParseError>; (expression: string, tz?: string | DateTime.TimeZone): Schedule<Duration.Duration, unknown, Cron.CronParseError>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L1434)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L1432)
 
 Since v2.0.0

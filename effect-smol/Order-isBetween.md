@@ -3,7 +3,7 @@ Module: `Order`<br />
 
 ## Order.isBetween
 
-Tests whether a value is between a minimum and a maximum (inclusive) according to the given order.
+Checks whether a value is between a minimum and a maximum (inclusive) according to the given order.
 
 **When to use**
 
@@ -13,7 +13,6 @@ Use when when validating that a value is within a valid range
 
 **Details**
 
-- Pure function: does not mutate inputs
 - Returns `true` if the value is greater than or equal to minimum and less than or equal to maximum
 - Returns `false` if the value is outside the range
 - Supports curried and uncurried call styles
@@ -45,6 +44,6 @@ console.log(betweenNumber(11, { minimum: 1, maximum: 10 })) // false
 declare const isBetween: <A>(O: Order<A>) => { (options: { minimum: A; maximum: A; }): (self: A) => boolean; (self: A, options: { minimum: A; maximum: A; }): boolean; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Order.ts#L1070)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Order.ts#L1047)
 
 Since v4.0.0

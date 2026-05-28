@@ -3,12 +3,13 @@ Module: `Cron`<br />
 
 ## Cron.Equivalence
 
-An `Equivalence` instance for comparing the field restrictions of two `Cron`
+Equivalence instance for comparing the field restrictions of two `Cron`
 schedules.
 
 **When to use**
 
-Use to compare cron schedules through APIs that accept an `Equivalence`.
+Use to compare cron schedules through APIs that accept an equivalence
+relation.
 
 **Details**
 
@@ -49,6 +50,6 @@ console.log(Cron.Equivalence(cron1, cron2)) // true
 declare const Equivalence: Equ.Equivalence<Cron>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cron.ts#L1037)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cron.ts#L1038)
 
 Since v2.0.0

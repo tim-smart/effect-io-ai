@@ -3,7 +3,7 @@ Module: `Array`<br />
 
 ## Array.init
 
-Returns all elements except the last, wrapped in an `Option`.
+Returns all elements except the last safely, wrapped in an `Option`.
 
 **When to use**
 
@@ -34,6 +34,6 @@ console.log(Array.init([])) // Option.none()
 declare const init: <A>(self: Iterable<A>) => Option.Option<Array<A>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L1307)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L1301)
 
 Since v2.0.0

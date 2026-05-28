@@ -3,7 +3,7 @@ Module: `Chunk`<br />
 
 ## Chunk.tail
 
-Returns every elements after the first.
+Returns every element after the first safely, or `None` when the chunk is empty.
 
 **Example** (Getting the tail safely)
 
@@ -26,6 +26,6 @@ console.log(Chunk.tail(empty)) // Option.none()
 declare const tail: <A>(self: Chunk<A>) => O.Option<Chunk<A>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L2120)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L2131)
 
 Since v2.0.0

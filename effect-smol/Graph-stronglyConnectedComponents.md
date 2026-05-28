@@ -3,7 +3,7 @@ Module: `Graph`<br />
 
 ## Graph.stronglyConnectedComponents
 
-Find strongly connected components in a directed graph using Kosaraju's algorithm.
+Finds strongly connected components in a directed graph using Kosaraju's algorithm.
 Each SCC is represented as an array of node indices.
 
 **Example** (Finding strongly connected components)

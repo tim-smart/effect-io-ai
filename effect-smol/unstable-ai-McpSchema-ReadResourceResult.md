@@ -3,7 +3,7 @@ Module: `McpSchema`<br />
 
 ## McpSchema.ReadResourceResult
 
-The server's response to a resources/read request from the client.
+Schema for the server's response to a resources/read request from the client.
 
 **Signature**
 
@@ -11,6 +11,6 @@ The server's response to a resources/read request from the client.
 declare class ReadResourceResult
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L951)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L1036)
 
 Since v4.0.0

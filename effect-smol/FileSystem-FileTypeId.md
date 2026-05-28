@@ -6,10 +6,10 @@ Module: `FileSystem`<br />
 Runtime type identifier attached to `FileSystem.File` handles and used by
 `isFile` to recognize them.
 
-**When to use**
+**Details**
 
-Use when implementing a custom `FileSystem` file handle that should be
-recognized by `isFile`.
+This marker is part of the runtime representation of file handles. Prefer
+`isFile` when narrowing unknown values.
 
 **See**
 
@@ -22,6 +22,6 @@ recognized by `isFile`.
 declare const FileTypeId: "~effect/platform/FileSystem/File"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FileSystem.ts#L1084)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FileSystem.ts#L1088)
 
 Since v4.0.0

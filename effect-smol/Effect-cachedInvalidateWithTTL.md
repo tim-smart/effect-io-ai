@@ -3,18 +3,14 @@ Module: `Effect`<br />
 
 ## Effect.cachedInvalidateWithTTL
 
-Caches an effect's result for a specified duration and allows manual
+Creates a cached effect result for a specified duration and allows manual
 invalidation before expiration.
 
 **When to use**
 
-Use when you use this function when you have an effect whose result needs to be cached for
-a certain period, but you also want the option to refresh the cache manually
-before the expiration time.
-
-This is useful when you need to ensure that the cached data remains valid for
-a certain period but still want to invalidate it if the underlying data
-changes or if you want to force a recomputation.
+Use when an effect result should be cached for a bounded time and callers
+also need a manual invalidation effect to force recomputation before
+expiration.
 
 **Details**
 
@@ -77,6 +73,6 @@ a specified duration but does not include an effect for manual invalidation.
 declare const cachedInvalidateWithTTL: { (timeToLive: Duration.Input): <A, E, R>(self: Effect<A, E, R>) => Effect<[Effect<A, E, R>, Effect<void>]>; <A, E, R>(self: Effect<A, E, R>, timeToLive: Duration.Input): Effect<[Effect<A, E, R>, Effect<void>]>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L7157)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L7144)
 
 Since v2.0.0

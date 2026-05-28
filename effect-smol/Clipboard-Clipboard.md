@@ -3,7 +3,7 @@ Module: `Clipboard`<br />
 
 ## Clipboard.Clipboard
 
-Service interface for reading from, writing to, and clearing the browser clipboard.
+Defines the service interface for reading from, writing to, and clearing the browser clipboard.
 
 **Details**
 

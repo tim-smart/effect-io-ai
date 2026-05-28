@@ -15,6 +15,6 @@ export interface Base {
   }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/sql/libsql/src/LibsqlClient.ts#L118)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/sql/libsql/src/LibsqlClient.ts#L122)
 
 Since v4.0.0

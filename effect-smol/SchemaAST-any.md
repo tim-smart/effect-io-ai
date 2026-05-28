@@ -3,7 +3,7 @@ Module: `SchemaAST`<br />
 
 ## SchemaAST.any
 
-Singleton `Any` AST instance.
+Provides the singleton `Any` AST instance.
 
 **When to use**
 
@@ -20,6 +20,6 @@ intentionally want parsing to accept every input value.
 declare const any: Any
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L959)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L969)
 
 Since v4.0.0

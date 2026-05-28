@@ -3,8 +3,8 @@ Module: `Types`<br />
 
 ## Types.MergeRight
 
-Merges two object types where keys from `Source` take precedence over
-`Target` on conflict.
+Right-biased merge of two object types where keys from `Source` take
+precedence over `Target` on conflict.
 
 **When to use**
 

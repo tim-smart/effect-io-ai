@@ -3,14 +3,19 @@ Module: `PubSub`<br />
 
 ## PubSub.publish
 
-Attempts to publish a message synchronously without applying the PubSub
-strategy's effectful surplus handling.
+Publishes a message to the `PubSub` as an `Effect`, returning whether the
+message was accepted.
+
+**When to use**
+
+Use when publishing from effectful code and the configured PubSub strategy
+should handle surplus messages.
 
 **Details**
 
-Returns `false` if the `PubSub` is shut down or the message cannot be
-accepted immediately, for example when a bounded PubSub is full. Prefer
-`publish` when backpressure or sliding behavior should be honored.
+The effect succeeds with `false` if the `PubSub` is shut down. If the message
+cannot be accepted immediately, the configured strategy decides how surplus
+messages are handled.
 
 **Example** (Publishing a message)
 
@@ -34,12 +39,16 @@ const program = Effect.gen(function*() {
 })
 ```
 
+**See**
+
+- `publishUnsafe` for a synchronous non-blocking attempt that does not run effectful surplus handling
+
 **Signature**
 
 ```ts
 declare const publish: { <A>(value: A): (self: PubSub<A>) => Effect.Effect<boolean>; <A>(self: PubSub<A>, value: A): Effect.Effect<boolean>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PubSub.ts#L934)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PubSub.ts#L943)
 
 Since v2.0.0

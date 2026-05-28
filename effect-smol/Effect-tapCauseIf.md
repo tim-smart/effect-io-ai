@@ -3,7 +3,7 @@ Module: `Effect`<br />
 
 ## Effect.tapCauseIf
 
-Conditionally executes a side effect based on the cause of a failed effect.
+Executes a side effect conditionally when a failed effect's cause matches a predicate.
 
 **Details**
 
@@ -36,6 +36,6 @@ Effect.runPromiseExit(program).then(console.log)
 declare const tapCauseIf: { <E, B, E2, R2>(predicate: Predicate.Predicate<Cause.Cause<E>>, f: (cause: Cause.Cause<E>) => Effect<B, E2, R2>): <A, R>(self: Effect<A, E, R>) => Effect<A, E | E2, R | R2>; <A, E, R, B, E2, R2>(self: Effect<A, E, R>, predicate: Predicate.Predicate<Cause.Cause<E>>, f: (cause: Cause.Cause<E>) => Effect<B, E2, R2>): Effect<A, E | E2, R | R2>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L3796)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L3787)
 
 Since v4.0.0

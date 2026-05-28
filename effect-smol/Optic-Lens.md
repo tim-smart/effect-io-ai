@@ -46,6 +46,6 @@ export interface Lens<in out S, in out A> extends Optional<S, A> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Optic.ts#L228)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Optic.ts#L227)
 
 Since v4.0.0

@@ -3,11 +3,21 @@ Module: `PubSub`<br />
 
 ## PubSub.SlidingStrategy
 
-A strategy that adds new messages and drops old messages when the `PubSub` is
-at capacity. This guarantees that a slow subscriber will not slow down
-the rate at which messages are published and received by other
-subscribers. However, it creates the risk that a slow subscriber will
-not receive some messages published to the `PubSub` while it is subscribed.
+Represents the sliding strategy for bounded `PubSub` values.
+
+**When to use**
+
+Use to keep the most recent messages when the `PubSub` is at capacity.
+
+**Details**
+
+New messages are accepted by evicting older messages from the bounded
+`PubSub`.
+
+**Gotchas**
+
+Slow subscribers may miss older messages that are evicted before they are
+consumed.
 
 **Example** (Using a sliding strategy)
 
@@ -46,6 +56,6 @@ const program = Effect.gen(function*() {
 declare class SlidingStrategy<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PubSub.ts#L2580)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PubSub.ts#L2641)
 
 Since v4.0.0

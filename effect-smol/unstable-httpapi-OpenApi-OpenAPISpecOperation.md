@@ -23,6 +23,6 @@ export interface OpenAPISpecOperation {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/OpenApi.ts#L1001)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/OpenApi.ts#L1007)
 
 Since v4.0.0

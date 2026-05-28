@@ -14,7 +14,6 @@ Use when when you have a variable number of orders to combine
 
 **Details**
 
-- Pure function: does not mutate inputs
 - Applies orders in iteration order
 - Returns the first non-zero result from any order
 - Returns `0` only if all orders return `0`
@@ -53,6 +52,6 @@ console.log(combinedOrder(person1, person2)) // -1 (Same age, Alice < Bob)
 declare const combineAll: <A>(collection: Iterable<Order<A>>) => Order<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Order.ts#L501)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Order.ts#L491)
 
 Since v2.0.0

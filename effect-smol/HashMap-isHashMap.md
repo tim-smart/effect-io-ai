@@ -3,7 +3,7 @@ Module: `HashMap`<br />
 
 ## HashMap.isHashMap
 
-Checks if a value is a HashMap.
+Checks whether a value is a HashMap.
 
 **Example** (Checking HashMap values)
 
@@ -24,6 +24,6 @@ console.log(HashMap.isHashMap(null)) // false
 declare const isHashMap: { <K, V>(u: Iterable<readonly [K, V]>): u is HashMap<K, V>; (u: unknown): u is HashMap<unknown, unknown>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashMap.ts#L290)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashMap.ts#L288)
 
 Since v2.0.0

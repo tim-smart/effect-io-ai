@@ -3,7 +3,7 @@ Module: `McpSchema`<br />
 
 ## McpSchema.GetPrompt
 
-Used by the client to get a prompt provided by the server.
+Sent from the client to get a prompt provided by the server.
 
 **Signature**
 
@@ -11,6 +11,6 @@ Used by the client to get a prompt provided by the server.
 declare class GetPrompt
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L1278)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L1368)
 
 Since v4.0.0

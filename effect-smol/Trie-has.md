@@ -3,7 +3,7 @@ Module: `Trie`<br />
 
 ## Trie.has
 
-Check if the given key exists in the `Trie`.
+Checks whether the given key exists in the `Trie`.
 
 **Example** (Checking key membership)
 
@@ -34,6 +34,6 @@ assert.equal(Trie.has(trie, "mea"), false)
 declare const has: { (key: string): <V>(self: Trie<V>) => boolean; <V>(self: Trie<V>, key: string): boolean; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Trie.ts#L574)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Trie.ts#L572)
 
 Since v2.0.0

@@ -43,6 +43,6 @@ console.log(count) // 1000
 declare const appendAll: <A>(self: MutableList<A>, messages: Iterable<A>) => number
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableList.ts#L502)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableList.ts#L507)
 
 Since v4.0.0

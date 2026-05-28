@@ -3,7 +3,12 @@ Module: `HttpMethod`<br />
 
 ## HttpMethod.all
 
-Set containing every supported `HttpMethod` literal.
+Provides a readonly set containing every supported `HttpMethod` literal.
+
+**When to use**
+
+Use when you need to iterate over or test membership against every supported
+HTTP method literal.
 
 **Signature**
 
@@ -11,6 +16,6 @@ Set containing every supported `HttpMethod` literal.
 declare const all: ReadonlySet<HttpMethod>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpMethod.ts#L90)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpMethod.ts#L95)
 
 Since v4.0.0

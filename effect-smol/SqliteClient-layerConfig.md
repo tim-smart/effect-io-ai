@@ -11,6 +11,6 @@ Creates a layer from a `Config`-wrapped Bun SQLite client configuration, providi
 declare const layerConfig: (config: Config.Wrap<SqliteClientConfig>) => Layer.Layer<SqliteClient | Client.SqlClient, Config.ConfigError>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/sql/sqlite-bun/src/SqliteClient.ts#L266)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/sql/sqlite-bun/src/SqliteClient.ts#L270)
 
 Since v4.0.0

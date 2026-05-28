@@ -3,7 +3,7 @@ Module: `String`<br />
 
 ## String.match
 
-Matches a string against a pattern and returns `Option.some` with the match
+Matches a string against a pattern safely and returns `Option.some` with the match
 array, or `Option.none` when the pattern does not match.
 
 **Example** (Matching regular expressions)
@@ -26,6 +26,6 @@ console.log(Option.isNone(pipe("hello", String.match(/x/)))) // true
 declare const match: (regExp: RegExp | string) => (self: string) => Option.Option<RegExpMatchArray>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L759)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L764)
 
 Since v2.0.0

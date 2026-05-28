@@ -16,6 +16,6 @@ request.
 declare const toWeb: (self: HttpServerRequest, options?: { readonly signal?: AbortSignal | undefined; }) => Effect.Effect<Request, RequestError>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpServerRequest.ts#L1083)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpServerRequest.ts#L1098)
 
 Since v4.0.0

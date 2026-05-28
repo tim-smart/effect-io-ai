@@ -3,7 +3,7 @@ Module: `FiberSet`<br />
 
 ## FiberSet.runtime
 
-Capture a Runtime and use it to fork Effect's, adding the forked fibers to the FiberSet.
+Captures a `Runtime` and uses it to fork effects into the `FiberSet`.
 
 **Example** (Capturing a runtime)
 

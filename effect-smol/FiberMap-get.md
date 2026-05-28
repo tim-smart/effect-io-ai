@@ -3,7 +3,7 @@ Module: `FiberMap`<br />
 
 ## FiberMap.get
 
-Retrieve a fiber from the FiberMap.
+Retrieves a fiber from the FiberMap effectfully.
 
 **Details**
 

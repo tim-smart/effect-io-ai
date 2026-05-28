@@ -3,7 +3,7 @@ Module: `FiberSet`<br />
 
 ## FiberSet.isFiberSet
 
-Checks if a value is a FiberSet.
+Checks whether a value is a FiberSet.
 
 **Example** (Checking if a value is a FiberSet)
 

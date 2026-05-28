@@ -3,8 +3,7 @@ Module: `Transferable`<br />
 
 ## Transferable.Uint8Array
 
-Transferable schema for `Uint8Array` values that records the array's backing
-buffer.
+Schema for transferring `Uint8Array` values with their backing buffer.
 
 **Signature**
 
@@ -12,6 +11,6 @@ buffer.
 declare const Uint8Array: Transferable<Schema.instanceOf<Uint8Array<ArrayBuffer>, Uint8Array<ArrayBuffer>>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Transferable.ts#L212)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Transferable.ts#L209)
 
 Since v4.0.0

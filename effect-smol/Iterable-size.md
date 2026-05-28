@@ -3,7 +3,7 @@ Module: `Iterable`<br />
 
 ## Iterable.size
 
-Return the number of elements in a `Iterable`.
+Returns the number of elements in a `Iterable`.
 
 **Example** (Counting iterable elements)
 

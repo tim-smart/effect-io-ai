@@ -12,7 +12,7 @@ Use when you want to apply the same function to every value in a struct.
 **Details**
 
 The lambda must be created with `lambda` so the compiler can track the
-output types. This does not mutate the input and returns a fresh object.
+output types.
 
 **Example** (Wrapping every value in an array)
 
@@ -41,6 +41,6 @@ console.log(result) // { width: [10], height: [20] }
 declare const map: { <L extends Lambda>(lambda: L): <S extends object>(self: S) => { [K in keyof S]: Apply<L, S[K]>; }; <S extends object, L extends Lambda>(self: S, lambda: L): { [K in keyof S]: Apply<L, S[K]>; }; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Struct.ts#L772)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Struct.ts#L756)
 
 Since v4.0.0

@@ -3,7 +3,7 @@ Module: `Sink`<br />
 
 ## Sink.mapInputArrayEffect
 
-Effectfully transforms each non-empty array of upstream input before it is
+Transforms each non-empty array of upstream input effectfully before it is
 fed to this sink.
 
 **Signature**

@@ -14,8 +14,7 @@ Use when consuming schemas from an OpenAPI 3.0 specification.
 This handles OpenAPI 3.0 extensions, including `nullable`, singular
 `example`, and boolean `exclusiveMinimum` or `exclusiveMaximum`. It
 normalizes the schema to Draft-07 first, then converts to Draft-2020-12 via
-`fromSchemaDraft07`. It does not mutate the input and allocates a new
-`Document`.
+`fromSchemaDraft07`.
 
 **Example** (Parsing an OpenAPI 3.0 nullable schema)
 
@@ -43,6 +42,6 @@ console.log(doc.schema.type) // ["string", "null"]
 declare const fromSchemaOpenApi3_0: (schema: JsonSchema) => Document<"draft-2020-12">
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/JsonSchema.ts#L553)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/JsonSchema.ts#L549)
 
 Since v4.0.0

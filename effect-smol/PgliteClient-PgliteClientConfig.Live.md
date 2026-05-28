@@ -13,6 +13,6 @@ export interface Live extends Base {
   }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/sql/pglite/src/PgliteClient.ts#L149)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/sql/pglite/src/PgliteClient.ts#L153)
 
 Since v4.0.0

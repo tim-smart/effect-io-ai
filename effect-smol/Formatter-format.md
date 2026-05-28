@@ -15,7 +15,6 @@ Use to pretty-print values for debugging, logging, or error messages.
 
 **Details**
 
-- Does not mutate input.
 - Output is **not** valid JSON; use `formatJson` when you need
   parseable JSON.
 - Primitives: stringified naturally (`null`, `undefined`, `123`, `true`).
@@ -80,6 +79,6 @@ console.log(Formatter.format(obj))
 declare const format: (input: unknown, options?: { readonly space?: number | string | undefined; readonly ignoreToString?: boolean | undefined; }) => string
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Formatter.ts#L161)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Formatter.ts#L160)
 
 Since v2.0.0

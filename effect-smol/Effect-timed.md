@@ -3,7 +3,7 @@ Module: `Effect`<br />
 
 ## Effect.timed
 
-Measures the runtime of an effect and returns the duration with its result.
+Returns the runtime duration of an effect together with its result.
 
 **Details**
 
@@ -27,6 +27,6 @@ const program = Effect.gen(function*() {
 declare const timed: <A, E, R>(self: Effect<A, E, R>) => Effect<[duration: Duration.Duration, result: A], E, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L4701)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L4691)
 
 Since v2.0.0

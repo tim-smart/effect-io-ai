@@ -3,7 +3,7 @@ Module: `TxHashSet`<br />
 
 ## TxHashSet.isSubset
 
-Checks if a TxHashSet is a subset of another TxHashSet.
+Checks whether a TxHashSet is a subset of another TxHashSet.
 
 **Example** (Checking subset relationships)
 

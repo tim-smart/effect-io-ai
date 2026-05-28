@@ -3,7 +3,7 @@ Module: `McpSchema`<br />
 
 ## McpSchema.RequestId
 
-A uniquely identifying ID for a request in JSON-RPC.
+Type represented by the JSON-RPC request identifier schema.
 
 **Signature**
 

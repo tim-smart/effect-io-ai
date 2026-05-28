@@ -3,7 +3,7 @@ Module: `Function`<br />
 
 ## Function.constNull
 
-A thunk that returns always `null`.
+Returns `null` when called.
 
 **When to use**
 

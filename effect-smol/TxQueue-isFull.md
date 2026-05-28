@@ -3,7 +3,7 @@ Module: `TxQueue`<br />
 
 ## TxQueue.isFull
 
-Checks if the queue is at capacity.
+Checks whether the queue is at capacity.
 
 **Example** (Checking whether a queue is full)
 

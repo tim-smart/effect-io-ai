@@ -3,7 +3,7 @@ Module: `RpcSerialization`<br />
 
 ## RpcSerialization.layerMsgPack
 
-A rpc serialization layer that uses MessagePack for serialization.
+RPC serialization layer that uses MessagePack for serialization.
 
 **Details**
 
@@ -16,6 +16,6 @@ also has better support for binary data.
 declare const layerMsgPack: Layer.Layer<RpcSerialization, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RpcSerialization.ts#L565)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RpcSerialization.ts#L572)
 
 Since v4.0.0

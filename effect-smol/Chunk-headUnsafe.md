@@ -30,6 +30,6 @@ console.log(Option.isNone(Chunk.head(Chunk.empty()))) // true
 declare const headUnsafe: <A>(self: Chunk<A>) => A
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L1458)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L1469)
 
 Since v4.0.0

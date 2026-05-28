@@ -35,6 +35,6 @@ const splitComma = SchemaGetter.split<string>()
 declare const split: <E extends string>(options?: { readonly separator?: string | undefined; }) => Getter<ReadonlyArray<string>, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L1223)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L1221)
 
 Since v4.0.0

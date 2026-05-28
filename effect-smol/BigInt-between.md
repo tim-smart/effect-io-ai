@@ -3,7 +3,7 @@ Module: `BigInt`<br />
 
 ## BigInt.between
 
-Checks if a `bigint` is between a `minimum` and `maximum` value (inclusive).
+Checks whether a `bigint` is between a `minimum` and `maximum` value (inclusive).
 
 **When to use**
 
@@ -32,6 +32,6 @@ assert.deepStrictEqual(between(6n), false)
 declare const between: { (options: { minimum: bigint; maximum: bigint; }): (self: bigint) => boolean; (self: bigint, options: { minimum: bigint; maximum: bigint; }): boolean; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigInt.ts#L507)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigInt.ts#L509)
 
 Since v2.0.0

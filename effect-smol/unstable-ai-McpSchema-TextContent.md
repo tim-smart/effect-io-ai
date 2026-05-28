@@ -3,7 +3,7 @@ Module: `McpSchema`<br />
 
 ## McpSchema.TextContent
 
-Text provided to or from an LLM.
+Represents text content provided to or from an LLM.
 
 **Signature**
 
@@ -11,6 +11,6 @@ Text provided to or from an LLM.
 declare class TextContent
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L1103)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L1194)
 
 Since v4.0.0

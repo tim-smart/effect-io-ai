@@ -3,7 +3,7 @@ Module: `Option`<br />
 
 ## Option.void
 
-A pre-built `Some(undefined)` constant.
+Provides a pre-built `Some(undefined)` constant.
 
 **When to use**
 
@@ -28,6 +28,6 @@ console.log(Option.void)
 declare const void: Option<void>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L1312)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L1311)
 
 Since v2.0.0

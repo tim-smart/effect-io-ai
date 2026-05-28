@@ -37,6 +37,6 @@ const sortedMap = HashMap.fromIterable(scoreEntries)
 declare const toEntries: <K, V>(self: HashMap<K, V>) => Array<[K, V]>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashMap.ts#L721)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashMap.ts#L719)
 
 Since v2.0.0

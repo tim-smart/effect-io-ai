@@ -311,13 +311,13 @@
     },
     "project": "@effect/opentelemetry",
     "name": "Resource",
-    "description": "Context service containing the OpenTelemetry `Resource` associated with emitted telemetry.",
+    "description": "Service tag for OpenTelemetry metadata attached to emitted telemetry.\n\n**When to use**\n\nUse to provide process, service, and deployment metadata that should be\nattached to spans, metrics, and logs.",
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
-    "category": "services",
+    "category": "tags",
     "signature": "declare class Resource",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Resource.ts#L49"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Resource.ts#L54"
   },
   {
     "_tag": "Constant",
@@ -333,7 +333,7 @@
     "since": "4.0.0",
     "category": "layers",
     "signature": "declare const layerEmpty: Layer.Layer<Resource, never, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Resource.ts#L160"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Resource.ts#L165"
   },
   {
     "_tag": "Function",
@@ -349,7 +349,7 @@
     "since": "4.0.0",
     "category": "layers",
     "signature": "declare const layer: (config: { readonly serviceName: string; readonly serviceVersion?: string; readonly attributes?: OtelApi.Attributes; }) => Layer.Layer<Resource, never, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Resource.ts#L60"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Resource.ts#L65"
   },
   {
     "_tag": "Function",
@@ -365,7 +365,7 @@
     "since": "4.0.0",
     "category": "configuration",
     "signature": "declare const configToAttributes: (options: { readonly serviceName: string; readonly serviceVersion?: string; readonly attributes?: OtelApi.Attributes; }) => Record<string, string>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Resource.ts#L96"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Resource.ts#L101"
   },
   {
     "_tag": "Function",
@@ -381,7 +381,7 @@
     "since": "4.0.0",
     "category": "layers",
     "signature": "declare const layerFromEnv: (additionalAttributes?: OtelApi.Attributes | undefined) => Layer.Layer<Resource>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Resource.ts#L121"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Resource.ts#L126"
   },
   {
     "_tag": "Class",

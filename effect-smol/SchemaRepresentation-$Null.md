@@ -3,7 +3,7 @@ Module: `SchemaRepresentation`<br />
 
 ## SchemaRepresentation.$Null
 
-Schema codec for the `Null` representation node.
+Schema for the `Null` representation node.
 
 **Signature**
 

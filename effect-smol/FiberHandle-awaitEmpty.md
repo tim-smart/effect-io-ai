@@ -3,7 +3,7 @@ Module: `FiberHandle`<br />
 
 ## FiberHandle.awaitEmpty
 
-Wait for the fiber in the FiberHandle to complete.
+Waits for the fiber in the FiberHandle to complete.
 
 **Example** (Waiting for a fiber to complete)
 

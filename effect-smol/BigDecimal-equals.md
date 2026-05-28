@@ -3,7 +3,7 @@ Module: `BigDecimal`<br />
 
 ## BigDecimal.equals
 
-Checks if two `BigDecimal`s are equal.
+Checks whether two `BigDecimal`s are equal.
 
 **When to use**
 
@@ -32,6 +32,6 @@ console.log(BigDecimal.equals(a, c)) // false
 declare const equals: { (that: BigDecimal): (self: BigDecimal) => boolean; (self: BigDecimal, that: BigDecimal): boolean; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigDecimal.ts#L1274)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigDecimal.ts#L1278)
 
 Since v2.0.0

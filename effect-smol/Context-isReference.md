@@ -3,7 +3,7 @@ Module: `Context`<br />
 
 ## Context.isReference
 
-Checks if the provided argument is a `Reference`.
+Checks whether the provided argument is a `Reference`.
 
 **Example** (Checking for references)
 

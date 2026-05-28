@@ -3,7 +3,7 @@ Module: `SchemaRepresentation`<br />
 
 ## SchemaRepresentation.$IndexSignature
 
-Schema codec for the `IndexSignature` type.
+Schema for the `IndexSignature` type.
 
 **Signature**
 

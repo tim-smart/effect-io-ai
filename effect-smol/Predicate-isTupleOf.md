@@ -12,7 +12,6 @@ Use when you need a runtime check for tuple length.
 
 **Details**
 
-- Pure; does not mutate input.
 - Only checks length, not element types.
 - Returns a refinement on the array type.
 
@@ -37,6 +36,6 @@ console.log(isPair([1, 2]))
 declare const isTupleOf: { <N extends number>(n: N): <T>(self: ReadonlyArray<T>) => self is TupleOf<N, T>; <T, N extends number>(self: ReadonlyArray<T>, n: N): self is TupleOf<N, T>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L433)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L429)
 
 Since v3.3.0

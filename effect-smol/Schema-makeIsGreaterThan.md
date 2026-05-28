@@ -3,8 +3,8 @@ Module: `Schema`<br />
 
 ## Schema.makeIsGreaterThan
 
-Generic factory for creating a "greater than" (`>`) check for any ordered
-type by supplying an `Order.Order` instance.
+Creates a greater-than (`>`) check for any ordered type from an
+`Order.Order` instance.
 
 **Signature**
 
@@ -12,6 +12,6 @@ type by supplying an `Order.Order` instance.
 declare const makeIsGreaterThan: <T>(options: { readonly order: Order.Order<T>; readonly annotate?: ((exclusiveMinimum: T) => Annotations.Filter) | undefined; readonly formatter?: Formatter<T> | undefined; }) => (exclusiveMinimum: T, annotations?: Annotations.Filter) => AST.Filter<T>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L6373)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L6605)
 
 Since v4.0.0

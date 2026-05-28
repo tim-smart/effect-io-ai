@@ -3,7 +3,7 @@ Module: `References`<br />
 
 ## References.LogToStderr
 
-Reference controlling whether built-in console loggers write to stderr.
+Context reference for controlling whether built-in console loggers write to stderr.
 
 **When to use**
 

@@ -3,7 +3,7 @@ Module: `Equivalence`<br />
 
 ## Equivalence.BigInt
 
-An `Equivalence` instance for bigints using strict equality (`===`).
+Equivalence instance for bigints using strict equality (`===`).
 
 **When to use**
 
@@ -24,6 +24,6 @@ console.log(Equivalence.BigInt(1n, 2n)) // false
 declare const BigInt: Equivalence<bigint>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Equivalence.ts#L342)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Equivalence.ts#L339)
 
 Since v4.0.0

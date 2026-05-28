@@ -3,7 +3,7 @@ Module: `SchemaIssue`<br />
 
 ## SchemaIssue.defaultLeafHook
 
-The built-in `LeafHook` used by default formatters.
+Returns the built-in `LeafHook` used by default formatters.
 
 **When to use**
 
@@ -43,6 +43,6 @@ const formatter = SchemaIssue.makeFormatterStandardSchemaV1({
 declare const defaultLeafHook: LeafHook
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaIssue.ts#L978)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaIssue.ts#L967)
 
 Since v4.0.0

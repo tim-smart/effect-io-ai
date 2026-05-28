@@ -8,8 +8,8 @@ an array of items into a readonly array.
 
 **When to use**
 
-Use as the schema type returned by `ArrayEnsure` when generic code needs to
-retain the original item schema.
+Use as the schema type when generic code needs to retain the original item
+schema.
 
 **Details**
 
@@ -28,6 +28,6 @@ export interface ArrayEnsure<S extends Top> extends decodeTo<$Array<toType<S>>, 
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L3883)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L4101)
 
 Since v3.10.0

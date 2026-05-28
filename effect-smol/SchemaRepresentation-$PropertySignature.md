@@ -3,7 +3,7 @@ Module: `SchemaRepresentation`<br />
 
 ## SchemaRepresentation.$PropertySignature
 
-Schema codec for the `PropertySignature` type.
+Schema for the `PropertySignature` type.
 
 **Signature**
 

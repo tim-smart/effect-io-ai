@@ -3,7 +3,7 @@ Module: `UrlParams`<br />
 
 ## UrlParams.getLast
 
-Returns the last value for a query parameter key.
+Returns the last value for a query parameter key safely.
 
 **Details**
 

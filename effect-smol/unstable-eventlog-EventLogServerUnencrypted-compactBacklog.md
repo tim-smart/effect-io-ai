@@ -3,7 +3,12 @@ Module: `EventLogServerUnencrypted`<br />
 
 ## EventLogServerUnencrypted.compactBacklog
 
-Compacts a backlog of remote entries using the registered compactors.
+Runs the registered compactors over a backlog of remote entries.
+
+**When to use**
+
+Use to reduce stored remote entries before replaying them to an unencrypted
+event-log client.
 
 **Details**
 
@@ -17,6 +22,6 @@ sequence numbers; otherwise the original entries are kept.
 declare const compactBacklog: (options: { readonly remoteEntries: ReadonlyArray<RemoteEntry>; readonly compactors: ReadonlyMap<string, RegisteredCompactor>; }) => Effect.Effect<ReadonlyArray<EventJournal.RemoteEntry>, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventLogServerUnencrypted.ts#L493)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventLogServerUnencrypted.ts#L518)
 
 Since v4.0.0

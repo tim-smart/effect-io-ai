@@ -4,7 +4,15 @@ Module: `Chunk`<br />
 ## Chunk.reverse
 
 Reverses the order of elements in a `Chunk`.
-Importantly, if the input chunk is a `NonEmptyChunk`, the reversed chunk will also be a `NonEmptyChunk`.
+
+**When to use**
+
+Use to read or process chunk elements in reverse order.
+
+**Details**
+
+If the input chunk is a `NonEmptyChunk`, the reversed chunk is also a
+`NonEmptyChunk`.
 
 **Example** (Reversing chunks)
 
@@ -23,6 +31,6 @@ console.log(Chunk.toArray(result)) // [3, 2, 1]
 declare const reverse: <S extends Chunk<any>>(self: S) => Chunk.With<S, Chunk.Infer<S>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L561)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L569)
 
 Since v2.0.0

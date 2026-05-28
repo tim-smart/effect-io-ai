@@ -3,7 +3,7 @@ Module: `DurableDeferred`<br />
 
 ## DurableDeferred.TokenParsed
 
-Decoded representation of a durable deferred token containing the workflow
+Schema for a decoded durable deferred token containing the workflow
 name, execution ID, and deferred name.
 
 **Signature**

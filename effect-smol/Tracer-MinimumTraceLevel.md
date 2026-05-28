@@ -3,7 +3,7 @@ Module: `Tracer`<br />
 
 ## Tracer.MinimumTraceLevel
 
-Reference for setting the minimum trace level threshold. Spans and their
+Context reference for setting the minimum trace level threshold. Spans and their
 descendants below this level will have their sampling decision forced to
 false, preventing them from being exported.
 
@@ -31,6 +31,6 @@ Explicit `options.sampled` bypasses threshold computation.
 declare const MinimumTraceLevel: Context.Reference<LogLevel>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tracer.ts#L560)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tracer.ts#L573)
 
 Since v4.0.0

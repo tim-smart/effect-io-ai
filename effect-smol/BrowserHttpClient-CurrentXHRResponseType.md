@@ -3,7 +3,7 @@ Module: `BrowserHttpClient`<br />
 
 ## BrowserHttpClient.CurrentXHRResponseType
 
-Reference that controls the `XMLHttpRequest.responseType` used by the browser XHR HTTP client, defaulting to `"text"`.
+Context reference for the `XMLHttpRequest.responseType` used by the browser XHR HTTP client, defaulting to `"text"`.
 
 **When to use**
 
@@ -21,6 +21,6 @@ as raw `ArrayBuffer` values.
 declare const CurrentXHRResponseType: Context.Reference<XHRResponseType>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/BrowserHttpClient.ts#L108)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/BrowserHttpClient.ts#L113)
 
 Since v4.0.0

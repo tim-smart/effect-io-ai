@@ -3,7 +3,7 @@ Module: `ScopedRef`<br />
 
 ## ScopedRef.get
 
-Retrieves the current value of the scoped reference.
+Retrieves the current value of the scoped reference effectfully.
 
 **When to use**
 

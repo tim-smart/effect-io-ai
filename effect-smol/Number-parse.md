@@ -3,7 +3,7 @@ Module: `Number`<br />
 
 ## Number.parse
 
-Tries to parse a `number` from a `string` using the `Number()` function.
+Parses a `number` from a `string` safely using the `Number()` function.
 The following special string values are supported: "NaN", "Infinity", "-Infinity".
 
 **When to use**
@@ -33,6 +33,6 @@ Number.parse("not a number") // Option.none()
 declare const parse: (s: string) => Option.Option<number>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Number.ts#L765)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Number.ts#L767)
 
 Since v2.0.0

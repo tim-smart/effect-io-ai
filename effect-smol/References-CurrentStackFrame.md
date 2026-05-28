@@ -3,7 +3,7 @@ Module: `References`<br />
 
 ## References.CurrentStackFrame
 
-Reference containing the current captured stack-frame chain for the running
+Context reference for the current captured stack-frame chain for the running
 fiber.
 
 **When to use**

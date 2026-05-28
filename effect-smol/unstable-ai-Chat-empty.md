@@ -35,6 +35,6 @@ const freshChat = Effect.gen(function*() {
 declare const empty: Effect.Effect<Service, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chat.ts#L528)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chat.ts#L533)
 
 Since v4.0.0

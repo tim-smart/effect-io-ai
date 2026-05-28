@@ -3,7 +3,7 @@ Module: `Ref`<br />
 
 ## Ref.getAndUpdate
 
-Atomically gets the current value of the Ref, updates it with the given function, and returns the previous value.
+Gets the current value of the Ref, updates it with the given function, and returns the previous value atomically.
 
 **When to use**
 

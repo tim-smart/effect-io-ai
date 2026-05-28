@@ -3,7 +3,7 @@ Module: `CliError`<br />
 
 ## CliError.UserError
 
-Wrapper for user (handler) errors to unify under CLI error channel when desired.
+Error wrapper for user handler failures in the CLI error channel.
 
 **Example** (Wrapping user errors)
 

@@ -3,7 +3,7 @@ Module: `SynchronizedRef`<br />
 
 ## SynchronizedRef.modify
 
-Atomically computes a return value and a new ref value, stores the new value,
+Computes a return value and a new ref value atomically, stores the new value,
 and returns the computed result.
 
 **When to use**

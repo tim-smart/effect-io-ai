@@ -3,7 +3,7 @@ Module: `Function`<br />
 
 ## Function.untupled
 
-Inverse function of `tupled`
+Converts a tupled function back to an uncurried function.
 
 **When to use**
 

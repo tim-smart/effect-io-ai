@@ -45,6 +45,6 @@ console.log(Result.isFailure(noError)) // true
 declare const findError: <A, E>(input: Exit<A, E>) => Result.Result<E, Exit<A, E>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Exit.ts#L764)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Exit.ts#L766)
 
 Since v4.0.0

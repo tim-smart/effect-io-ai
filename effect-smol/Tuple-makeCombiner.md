@@ -12,10 +12,6 @@ corresponding combiner.
 Use when you need to merge two tuples of the same shape, such as summing
 counters or concatenating strings.
 
-**Details**
-
-The inputs are not mutated; a fresh tuple is returned.
-
 **Example** (Combining tuple elements)
 
 ```ts
@@ -40,6 +36,6 @@ console.log(result) // [3, "hello world"]
 declare const makeCombiner: <A extends ReadonlyArray<unknown>>(combiners: { readonly [K in keyof A]: Combiner.Combiner<A[K]>; }) => Combiner.Combiner<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tuple.ts#L755)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tuple.ts#L738)
 
 Since v4.0.0

@@ -31,6 +31,6 @@ console.log(Array.flatMapNullishOr([1, 2, 3], (n) => (n % 2 === 0 ? null : n)))
 declare const flatMapNullishOr: { <A, B>(f: (a: A) => B): (self: ReadonlyArray<A>) => Array<NonNullable<B>>; <A, B>(self: ReadonlyArray<A>, f: (a: A) => B): Array<NonNullable<B>>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L4119)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L4103)
 
 Since v4.0.0

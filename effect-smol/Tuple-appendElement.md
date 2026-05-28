@@ -11,8 +11,7 @@ Use to add one element to the end of a tuple while preserving tuple types.
 
 **Details**
 
-The result type is `[...T, E]`, preserving all existing element types. The
-input tuple is not mutated; a fresh tuple is returned.
+The result type is `[...T, E]`, preserving all existing element types.
 
 **Example** (Appending an element)
 
@@ -33,6 +32,6 @@ console.log(result) // [1, 2, "end"]
 declare const appendElement: { <const E>(element: E): <const T extends ReadonlyArray<unknown>>(self: T) => [...T, E]; <const T extends ReadonlyArray<unknown>, const E>(self: T, element: E): [...T, E]; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tuple.ts#L271)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tuple.ts#L267)
 
 Since v2.0.0

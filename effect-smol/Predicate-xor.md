@@ -11,7 +11,6 @@ Use when you want an exclusive-or between two conditions.
 
 **Details**
 
-- Pure; does not mutate input.
 - Returns `true` when results differ.
 
 **Example** (Exclusive or)
@@ -37,6 +36,6 @@ console.log(either(-2))
 declare const xor: { <A>(that: Predicate<A>): (self: Predicate<A>) => Predicate<A>; <A>(self: Predicate<A>, that: Predicate<A>): Predicate<A>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L1748)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L1707)
 
 Since v2.0.0

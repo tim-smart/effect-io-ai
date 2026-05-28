@@ -11,7 +11,6 @@ Use when you have a dynamic list of predicates and only need one to pass.
 
 **Details**
 
-- Pure; does not mutate input.
 - Short-circuits on the first `true`.
 - Iterates the collection each time the predicate is called.
 
@@ -36,6 +35,6 @@ console.log(anyCheck("ok"))
 declare const some: <A>(collection: Iterable<Predicate<A>>) => Predicate<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L1960)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L1913)
 
 Since v2.0.0

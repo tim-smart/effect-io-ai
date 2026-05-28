@@ -3,7 +3,7 @@ Module: `AnthropicTool`<br />
 
 ## AnthropicTool.CodeExecution_20250522
 
-Anthropic Code Execution tool (2025-05-22 version).
+Defines the Anthropic Code Execution tool (2025-05-22 version).
 
 **When to use**
 

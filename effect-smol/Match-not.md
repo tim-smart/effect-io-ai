@@ -3,7 +3,7 @@ Module: `Match`<br />
 
 ## Match.not
 
-Excludes a specific value from matching while allowing all others.
+Creates a pattern that excludes a specific value while allowing all others.
 
 **When to use**
 
@@ -12,11 +12,8 @@ pattern does not.
 
 **Details**
 
-This function is useful when you need to **handle all values except one or
-more specific cases**. Instead of listing all possible matches manually, this
-function simplifies the logic by allowing you to specify values to exclude.
-Any excluded value will bypass the provided function and continue matching
-through other cases.
+Any excluded value bypasses the provided function and continues matching
+through later cases.
 
 **Example** (Ignoring a Specific Value)
 
@@ -48,6 +45,6 @@ console.log(match("hi"))
 declare const not: <R, const P extends Types.PatternPrimitive<R> | Types.PatternBase<R>, Ret, Fn extends (_: Types.NotMatch<R, P>) => Ret>(pattern: P, f: Fn) => <I, F, A, Pr>(self: Matcher<I, F, R, A, Pr, Ret>) => Matcher<I, Types.AddOnly<F, Types.WhenMatch<R, P>>, Types.ApplyFilters<I, Types.AddOnly<F, Types.WhenMatch<R, P>>>, A | ReturnType<Fn>, Pr, Ret>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L1191)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L1180)
 
 Since v4.0.0

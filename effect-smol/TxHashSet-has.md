@@ -3,7 +3,7 @@ Module: `TxHashSet`<br />
 
 ## TxHashSet.has
 
-Checks if the TxHashSet contains the specified value.
+Checks whether the TxHashSet contains the specified value.
 
 **Example** (Checking membership)
 

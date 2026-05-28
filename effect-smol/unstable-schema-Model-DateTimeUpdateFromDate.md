@@ -20,6 +20,6 @@ export interface DateTimeUpdateFromDate extends
 {}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Model.ts#L607)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Model.ts#L606)
 
 Since v4.0.0

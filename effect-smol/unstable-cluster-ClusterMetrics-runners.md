@@ -3,7 +3,7 @@ Module: `ClusterMetrics`<br />
 
 ## ClusterMetrics.runners
 
-Gauge tracking the number of registered cluster runners.
+Represents a gauge tracking the number of registered cluster runners.
 
 **When to use**
 

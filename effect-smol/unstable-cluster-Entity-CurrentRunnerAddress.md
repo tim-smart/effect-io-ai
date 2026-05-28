@@ -3,7 +3,12 @@ Module: `Entity`<br />
 
 ## Entity.CurrentRunnerAddress
 
-A Context.Tag to access the current Runner address.
+Service tag for the runner address currently registering entity handlers.
+
+**When to use**
+
+Use to read the runner address associated with the current entity handler
+registration.
 
 **Signature**
 
@@ -11,6 +16,6 @@ A Context.Tag to access the current Runner address.
 declare class CurrentRunnerAddress
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Entity.ts#L499)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Entity.ts#L509)
 
 Since v4.0.0

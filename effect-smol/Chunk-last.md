@@ -3,7 +3,7 @@ Module: `Chunk`<br />
 
 ## Chunk.last
 
-Returns the last element of this chunk if it exists.
+Returns the last element of this chunk safely if it exists.
 
 **Example** (Getting the last element)
 
@@ -20,6 +20,6 @@ console.log(Chunk.last(Chunk.make(1, 2, 3))) // { _tag: "Some", value: 3 }
 declare const last: <A>(self: Chunk<A>) => Option<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L1498)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L1509)
 
 Since v2.0.0

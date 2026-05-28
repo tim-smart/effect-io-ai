@@ -11,6 +11,6 @@ Creates a raw HTTP body from an arbitrary value and optional `contentType` and `
 declare const raw: (body: unknown, options?: { readonly contentType?: string | undefined; readonly contentLength?: number | undefined; } | undefined) => Raw
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpBody.ts#L247)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpBody.ts#L251)
 
 Since v4.0.0

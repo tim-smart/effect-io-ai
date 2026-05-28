@@ -3,7 +3,7 @@ Module: `SynchronizedRef`<br />
 
 ## SynchronizedRef.getAndUpdateSome
 
-Atomically applies a partial update and returns the previous value. If the
+Applies a partial update atomically and returns the previous value. If the
 function returns `Option.some`, the ref is updated; if it returns
 `Option.none`, the ref is left unchanged.
 

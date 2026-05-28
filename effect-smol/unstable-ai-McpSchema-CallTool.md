@@ -3,7 +3,7 @@ Module: `McpSchema`<br />
 
 ## McpSchema.CallTool
 
-Used by the client to invoke a tool provided by the server.
+Represents a client request to invoke a tool provided by the server.
 
 **When to use**
 
@@ -21,6 +21,6 @@ it with argument values.
 declare class CallTool
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L1471)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L1567)
 
 Since v4.0.0

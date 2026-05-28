@@ -17,7 +17,7 @@ Generates a structural diff between two JSON values, producing a patch that
 yields `newValue` when applied to `oldValue`. It returns an empty array when
 values are identical, recursively diffs nested structures, emits root
 `replace` operations for primitive changes, and processes object keys in
-sorted order for stable output. Inputs are not mutated.
+sorted order for stable output.
 
 **Gotchas**
 

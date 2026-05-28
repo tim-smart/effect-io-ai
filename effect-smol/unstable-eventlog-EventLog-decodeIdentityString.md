@@ -15,6 +15,6 @@ Invalid input throws a schema decoding error.
 declare const decodeIdentityString: (value: string) => Identity["Service"]
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventLog.ts#L476)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventLog.ts#L477)
 
 Since v4.0.0

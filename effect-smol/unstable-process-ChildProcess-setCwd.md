@@ -3,7 +3,7 @@ Module: `ChildProcess`<br />
 
 ## ChildProcess.setCwd
 
-Set the current working directory for a command.
+Sets the current working directory for a command.
 
 **Details**
 

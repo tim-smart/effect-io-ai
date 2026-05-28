@@ -3,7 +3,7 @@ Module: `OpenAiTool`<br />
 
 ## OpenAiTool.LocalShell
 
-OpenAI Local Shell tool that enables the model to run a command with a local
+Defines the OpenAI Local Shell tool that enables the model to run a command with a local
 shell. This local tool runs in your environment and requires a handler to
 execute commands.
 

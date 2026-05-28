@@ -23,6 +23,6 @@ const program = Effect.gen(function*() {
 declare const takeAll: <A>(self: TxPriorityQueue<A>) => Effect.Effect<Array<A>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxPriorityQueue.ts#L417)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxPriorityQueue.ts#L425)
 
 Since v2.0.0

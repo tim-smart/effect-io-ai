@@ -3,7 +3,7 @@ Module: `Flag`<br />
 
 ## Flag.atMost
 
-Limits a flag to be specified at most a maximum number of times.
+Ensures a flag is specified at most a maximum number of times.
 
 **Example** (Limiting repeated values)
 

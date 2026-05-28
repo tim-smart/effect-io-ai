@@ -3,7 +3,16 @@ Module: `DateTime`<br />
 
 ## DateTime.toUtc
 
-For a `DateTime` returns a new `DateTime.Utc`.
+Converts a `DateTime` to a UTC `DateTime`.
+
+**When to use**
+
+Use to represent the same instant in UTC instead of its current time zone.
+
+**Details**
+
+The returned value keeps the same epoch milliseconds and changes only the
+`DateTime` representation to UTC.
 
 **Example** (Converting DateTime values to UTC)
 
@@ -24,6 +33,6 @@ const utc: DateTime.Utc = DateTime.toUtc(now)
 declare const toUtc: (self: DateTime) => Utc
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L934)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L943)
 
 Since v3.13.0

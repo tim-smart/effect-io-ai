@@ -8,8 +8,8 @@ optionally carrying the interrupting fiber's ID.
 
 **When to use**
 
-Use when you need to construct individual reasons for
-`fromReasons` or for direct comparison.
+Use when constructing a standalone interrupt reason for `fromReasons`
+or direct comparison.
 
 **Example** (creating an Interrupt reason)
 

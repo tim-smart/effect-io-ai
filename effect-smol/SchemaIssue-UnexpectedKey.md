@@ -3,14 +3,13 @@ Module: `SchemaIssue`<br />
 
 ## SchemaIssue.UnexpectedKey
 
-Issue produced when an input object or tuple contains a key/index not
+Represents a schema issue produced when an input object or tuple contains a key/index not
 declared by the schema.
 
 **When to use**
 
-Use when detect excess properties during strict struct/tuple validation.
-- Typically found inside a `Pointer` that indicates which key was
-  unexpected.
+Use when you need to detect excess properties during strict struct/tuple
+validation.
 
 **Details**
 
@@ -38,6 +37,6 @@ declare class UnexpectedKey { constructor(
   ) }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaIssue.ts#L431)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaIssue.ts#L425)
 
 Since v4.0.0

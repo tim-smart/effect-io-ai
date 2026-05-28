@@ -3,7 +3,7 @@ Module: `BigInt`<br />
 
 ## BigInt.ReducerMultiply
 
-A `Reducer` for combining `bigint`s using multiplication.
+Reducer for combining `bigint`s using multiplication.
 
 **When to use**
 
@@ -24,6 +24,6 @@ The initial value is `1n`, so `combineAll([])` returns `1n`.
 declare const ReducerMultiply: Reducer.Reducer<bigint>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigInt.ts#L1049)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigInt.ts#L1051)
 
 Since v4.0.0

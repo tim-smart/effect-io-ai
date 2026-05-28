@@ -3,7 +3,8 @@ Module: `SchemaParser`<br />
 
 ## SchemaParser.decodeUnknownResult
 
-Creates a decoder for `unknown` input that returns a `Result`.
+Creates a decoder for `unknown` input that reports failure safely as a
+`Result`.
 
 **When to use**
 
@@ -31,6 +32,6 @@ decoding or defects can still throw.
 declare const decodeUnknownResult: <S extends Schema.Decoder<unknown>>(schema: S, options?: AST.ParseOptions) => (input: unknown, options?: AST.ParseOptions) => Result.Result<S["Type"], Issue.Issue>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaParser.ts#L477)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaParser.ts#L479)
 
 Since v4.0.0

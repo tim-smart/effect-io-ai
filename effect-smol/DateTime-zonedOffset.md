@@ -3,7 +3,7 @@ Module: `DateTime`<br />
 
 ## DateTime.zonedOffset
 
-Calculate the time zone offset of a `DateTime.Zoned` in milliseconds.
+Computes the time zone offset of a `DateTime.Zoned` in milliseconds.
 
 **Details**
 
@@ -29,6 +29,6 @@ console.log(offset) // 0 (London is UTC+0 in winter)
 declare const zonedOffset: (self: Zoned) => number
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L1608)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L1617)
 
 Since v3.6.0

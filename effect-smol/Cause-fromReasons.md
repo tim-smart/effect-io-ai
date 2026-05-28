@@ -13,7 +13,7 @@ into a `Cause`.
 
 **Details**
 
-- Returns a new `Cause`; does not mutate the input array.
+- Returns a new `Cause`.
 - An empty array produces a cause equivalent to `empty`.
 
 **Gotchas**

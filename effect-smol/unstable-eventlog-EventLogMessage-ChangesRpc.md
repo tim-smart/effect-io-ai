@@ -3,8 +3,8 @@ Module: `EventLogMessage`<br />
 
 ## EventLogMessage.ChangesRpc
 
-Authenticated streaming RPC for reading remote event-log changes for a public
-key and store id starting at a sequence number.
+RPC used to stream remote event-log changes for a public key and store id
+starting at a sequence number.
 
 **Details**
 

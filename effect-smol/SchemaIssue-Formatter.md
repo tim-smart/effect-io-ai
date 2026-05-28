@@ -18,6 +18,6 @@ representation. Specialisation of the generic `Formatter` from
 export interface Formatter<out Format> extends FormatterI<Issue, Format> {}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaIssue.ts#L924)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaIssue.ts#L913)
 
 Since v4.0.0

@@ -3,7 +3,7 @@ Module: `SchemaAST`<br />
 
 ## SchemaAST.IndexSignature
 
-An index signature entry within an `Objects` node.
+Represents an index signature entry within an `Objects` node.
 
 **Details**
 
@@ -32,6 +32,6 @@ declare class IndexSignature { constructor(
   ) }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L1891)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L1903)
 
 Since v3.10.0

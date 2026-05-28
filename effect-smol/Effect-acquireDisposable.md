@@ -3,8 +3,7 @@ Module: `Effect`<br />
 
 ## Effect.acquireDisposable
 
-This function constructs a scoped resource from an Effect that acquires a
-disposable value.
+Acquires a scoped resource that implements JavaScript disposal protocols.
 
 **When to use**
 
@@ -53,6 +52,6 @@ const program = Effect.scoped(
 declare const acquireDisposable: <A extends AsyncDisposable | Disposable, E, R>(acquire: Effect<A, E, R>) => Effect<A, E, R | Scope>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L6520)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L6517)
 
 Since v4.0.0

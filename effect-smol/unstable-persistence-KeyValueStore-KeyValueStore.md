@@ -62,7 +62,7 @@ export interface KeyValueStore {
   readonly has: (key: string) => Effect.Effect<boolean, KeyValueStoreError>
 
   /**
-   * Checks if the KeyValueStore contains any entries.
+   * Checks whether the KeyValueStore contains any entries.
    */
   readonly isEmpty: Effect.Effect<boolean, KeyValueStoreError>
 }

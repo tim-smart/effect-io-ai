@@ -3,7 +3,7 @@ Module: `Schedule`<br />
 
 ## Schedule.windowed
 
-A schedule that divides the timeline to `interval`-long windows, and sleeps
+Schedule that divides the timeline to `interval`-long windows, and sleeps
 until the nearest window boundary every time it recurs.
 
 **Details**

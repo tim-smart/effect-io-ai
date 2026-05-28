@@ -7,7 +7,8 @@ Provides an `Order` instance for `BigDecimal` that allows comparing and sorting 
 
 **When to use**
 
-Use when an API needs an `Order` instance for `BigDecimal` values.
+Use when sorting or comparing decimal values through APIs that accept an
+ordering instance.
 
 **Example** (Comparing decimals)
 
@@ -29,6 +30,6 @@ console.log(BigDecimal.Order(a, c)) // 0 (a === c)
 declare const Order: order.Order<BigDecimal>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigDecimal.ts#L730)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigDecimal.ts#L731)
 
 Since v2.0.0

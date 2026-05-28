@@ -3,7 +3,7 @@ Module: `String`<br />
 
 ## String.ReducerConcat
 
-A `Reducer` for concatenating `string`s.
+Reducer for concatenating `string`s.
 
 **When to use**
 
@@ -23,6 +23,6 @@ The reducer starts from `""`, so combining an empty collection returns `""`.
 declare const ReducerConcat: Reducer.Reducer<string>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L1483)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L1486)
 
 Since v4.0.0

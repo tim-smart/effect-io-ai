@@ -12,7 +12,6 @@ Use when narrowing an `unknown` value to `Issue` in error-handling code.
 
 **Details**
 
-- Pure; does not mutate input.
 - Checks for the internal `TypeId` brand on the value.
 
 **Example** (Type-guarding an unknown error)
@@ -37,6 +36,6 @@ console.log(SchemaIssue.isIssue("not an issue"))
 declare const isIssue: (u: unknown) => u is Issue
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaIssue.ts#L123)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaIssue.ts#L122)
 
 Since v4.0.0

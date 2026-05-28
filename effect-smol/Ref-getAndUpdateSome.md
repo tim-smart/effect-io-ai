@@ -3,7 +3,7 @@ Module: `Ref`<br />
 
 ## Ref.getAndUpdateSome
 
-Atomically gets the current value of the Ref and updates it with the given partial function.
+Gets the current value of the Ref and updates it atomically with the given partial function.
 
 **When to use**
 

@@ -3,8 +3,7 @@ Module: `SchemaRepresentation`<br />
 
 ## SchemaRepresentation.MultiDocumentFromJson
 
-Schema codec that decodes a `MultiDocument` from JSON and encodes it
-back.
+Schema for `MultiDocument` values encoded as JSON.
 
 **See**
 
@@ -17,6 +16,6 @@ back.
 declare const MultiDocumentFromJson: Schema.Codec<MultiDocument, Schema.Json, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaRepresentation.ts#L1756)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaRepresentation.ts#L1753)
 
 Since v4.0.0

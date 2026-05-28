@@ -3,7 +3,7 @@ Module: `References`<br />
 
 ## References.CurrentLoggers
 
-Reference containing the set of loggers currently used by Effect logging
+Context reference for the set of loggers currently used by Effect logging
 operations.
 
 **When to use**

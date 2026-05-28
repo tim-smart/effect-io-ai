@@ -3,7 +3,7 @@ Module: `Effect`<br />
 
 ## Effect.requestUnsafe
 
-Low-level entry point that registers a request with a resolver and delivers the exit value via `onExit`.
+Registers a request with a resolver and delivers the exit value via `onExit`.
 
 **When to use**
 
@@ -24,6 +24,6 @@ It returns a canceler that removes the pending request entry.
 declare const requestUnsafe: <A extends Request.Any>(self: A, options: { readonly resolver: RequestResolver<A>; readonly onExit: (exit: Exit.Exit<Request.Success<A>, Request.Error<A>>) => void; readonly context: Context.Context<never>; }) => () => void
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L8420)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L8406)
 
 Since v4.0.0

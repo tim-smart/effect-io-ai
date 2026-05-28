@@ -37,6 +37,6 @@ Effect.runPromise(program)
 declare const service: <I, S>(service: Context.Key<I, S>) => Stream<S, never, I>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L471)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L470)
 
 Since v4.0.0

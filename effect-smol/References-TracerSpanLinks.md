@@ -3,7 +3,7 @@ Module: `References`<br />
 
 ## References.TracerSpanLinks
 
-Reference for managing span links that are automatically added to all new spans.
+Context reference for managing span links that are automatically added to all new spans.
 Span links connect related spans that are not in a parent-child relationship.
 
 **When to use**

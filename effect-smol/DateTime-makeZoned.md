@@ -3,7 +3,7 @@ Module: `DateTime`<br />
 
 ## DateTime.makeZoned
 
-Creates a `DateTime.Zoned` from an input and a time zone.
+Creates a `DateTime.Zoned` safely from an input and a time zone.
 
 **Details**
 

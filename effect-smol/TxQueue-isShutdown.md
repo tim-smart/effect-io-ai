@@ -3,7 +3,7 @@ Module: `TxQueue`<br />
 
 ## TxQueue.isShutdown
 
-Checks if the queue is shutdown (legacy compatibility).
+Checks whether the queue is shutdown (legacy compatibility).
 
 **Example** (Checking shutdown state)
 

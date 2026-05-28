@@ -3,7 +3,7 @@ Module: `DateTime`<br />
 
 ## DateTime.zoneToString
 
-Format a `TimeZone` as a string.
+Formats a `TimeZone` as a string.
 
 **Example** (Formatting time zones)
 
@@ -23,6 +23,6 @@ DateTime.zoneToString(DateTime.zoneMakeNamedUnsafe("Europe/London"))
 declare const zoneToString: (self: TimeZone) => string
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L1169)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L1178)
 
 Since v3.6.0

@@ -3,7 +3,7 @@ Module: `Config`<br />
 
 ## Config.Record
 
-A `Schema.Codec` for key-value record types that can also be parsed from
+Schema for key-value record types that can also be parsed from
 a flat comma-separated string.
 
 **When to use**
@@ -46,6 +46,6 @@ console.dir(Effect.runSync(config.parse(provider)))
 declare const Record: <K extends Schema.Record.Key, V extends Schema.Top>(key: K, value: V, options?: { readonly separator?: string | undefined; readonly keyValueSeparator?: string | undefined; }) => Schema.Union<readonly [Schema.$Record<K, V>, Schema.compose<Schema.$Record<K, V>, Schema.decodeTo<Schema.$Record<Schema.String, Schema.String>, Schema.String, never, never>>]>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Config.ts#L865)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Config.ts#L864)
 
 Since v4.0.0

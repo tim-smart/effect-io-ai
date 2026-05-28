@@ -3,7 +3,7 @@ Module: `Effect`<br />
 
 ## Effect.fiberId
 
-Access the current fiber id executing the effect.
+Accesses the current fiber id executing the effect.
 
 **Example** (Accessing the current fiber id)
 
@@ -27,6 +27,6 @@ const program = Effect.log("event").pipe(
 declare const fiberId: Effect<number, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L8710)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L8696)
 
 Since v2.0.0

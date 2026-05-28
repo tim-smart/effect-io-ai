@@ -3,7 +3,7 @@ Module: `Latch`<br />
 
 ## Latch.closeUnsafe
 
-Synchronously closes the latch so future `await` and `whenOpen` calls
+Closes the latch synchronously so future `await` and `whenOpen` calls
 suspend.
 
 **When to use**

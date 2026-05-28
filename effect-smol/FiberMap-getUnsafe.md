@@ -3,7 +3,7 @@ Module: `FiberMap`<br />
 
 ## FiberMap.getUnsafe
 
-Retrieve a fiber from the FiberMap.
+Retrieves a fiber from the FiberMap synchronously.
 
 **Example** (Retrieving a fiber unsafely)
 

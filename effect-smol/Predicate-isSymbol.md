@@ -11,7 +11,6 @@ Use when you need to guard an `unknown` value as a symbol.
 
 **Details**
 
-- Pure; does not mutate input.
 - Uses `typeof input === "symbol"`.
 
 **Example** (Guard symbol)
@@ -36,6 +35,6 @@ if (Predicate.isSymbol(data)) {
 declare const isSymbol: (input: unknown) => input is symbol
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L734)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L721)
 
 Since v2.0.0

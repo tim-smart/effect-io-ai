@@ -3,7 +3,7 @@ Module: `McpSchema`<br />
 
 ## McpSchema.Complete
 
-A request from the client to the server, to ask for completion options.
+Sent from the client to the server to ask for completion options.
 
 **Signature**
 
@@ -11,6 +11,6 @@ A request from the client to the server, to ask for completion options.
 declare class Complete
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L1826)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L1941)
 
 Since v4.0.0

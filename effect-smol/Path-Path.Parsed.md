@@ -57,6 +57,6 @@ export interface Parsed {
   }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Path.ts#L208)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Path.ts#L205)
 
 Since v4.0.0

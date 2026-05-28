@@ -3,7 +3,7 @@ Module: `DurableQueue`<br />
 
 ## DurableQueue.process
 
-Add an item to the queue and wait for a worker to process it.
+Adds an item to the queue and wait for a worker to process it.
 
 **Signature**
 

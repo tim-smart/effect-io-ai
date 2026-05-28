@@ -3,7 +3,7 @@ Module: `Duration`<br />
 
 ## Duration.negate
 
-Negates the duration.
+Returns the negated duration.
 
 **Example** (Negating durations)
 

@@ -3,7 +3,7 @@ Module: `Record`<br />
 
 ## Record.isEmptyRecord
 
-Determine if a record is empty.
+Determines if a mutable record is empty.
 
 **Example** (Checking for an empty record)
 

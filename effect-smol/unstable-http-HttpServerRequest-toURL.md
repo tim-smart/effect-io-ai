@@ -3,7 +3,7 @@ Module: `HttpServerRequest`<br />
 
 ## HttpServerRequest.toURL
 
-Attempts to construct an absolute `URL` for a server request.
+Attempts to construct an absolute `URL` for a server request safely.
 
 **Details**
 
@@ -17,6 +17,6 @@ return `Option.none`.
 declare const toURL: (self: HttpServerRequest) => Option.Option<URL>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpServerRequest.ts#L1020)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpServerRequest.ts#L1035)
 
 Since v4.0.0

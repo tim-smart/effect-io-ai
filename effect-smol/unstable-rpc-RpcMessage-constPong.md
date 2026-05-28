@@ -3,7 +3,7 @@ Module: `RpcMessage`<br />
 
 ## RpcMessage.constPong
 
-The reusable `Pong` message value.
+Represents the reusable `Pong` message value.
 
 **Signature**
 

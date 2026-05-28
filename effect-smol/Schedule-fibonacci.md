@@ -3,7 +3,7 @@ Module: `Schedule`<br />
 
 ## Schedule.fibonacci
 
-A schedule that always recurs, increasing delays by summing the preceding
+Schedule that always recurs, increasing delays by summing the preceding
 two delays (similar to the Fibonacci sequence). Returns the current
 duration between recurrences.
 
@@ -72,6 +72,6 @@ const compareSchedules = Effect.gen(function*() {
 declare const fibonacci: (one: Duration.Input) => Schedule<Duration.Duration>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L2125)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L2124)
 
 Since v2.0.0

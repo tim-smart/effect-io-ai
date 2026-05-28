@@ -31,6 +31,6 @@ const env = Config.literal("production", "ENV")
 declare const literal: <L extends AST.LiteralValue>(literal: L, name?: string) => Config<L>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Config.ts#L1065)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Config.ts#L1064)
 
 Since v2.0.0

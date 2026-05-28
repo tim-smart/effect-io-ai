@@ -13,7 +13,7 @@ Use to build JSON Pointers from object keys or path segments that may contain sp
 
 **Details**
 
-- Does not mutate the input string; returns a new escaped string
+- Returns a new escaped string
 - Replaces `~` (tilde) with `~0` and `/` (forward slash) with `~1`
 - Returns the input unchanged if it contains no special characters
 - Empty strings are valid and returned unchanged

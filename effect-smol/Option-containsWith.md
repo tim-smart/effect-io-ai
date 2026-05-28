@@ -3,7 +3,7 @@ Module: `Option`<br />
 
 ## Option.containsWith
 
-Checks if an `Option` contains a value equivalent to the given one, using a
+Checks whether an `Option` contains a value equivalent to the given one, using a
 custom `Equivalence`.
 
 **When to use**
@@ -42,6 +42,6 @@ console.log(Option.none().pipe(check(2)))
 declare const containsWith: <A>(isEquivalent: (self: A, that: A) => boolean) => { (a: A): (self: Option<A>) => boolean; (self: Option<A>, a: A): boolean; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L2279)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L2278)
 
 Since v2.0.0

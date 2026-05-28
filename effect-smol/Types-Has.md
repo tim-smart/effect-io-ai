@@ -3,7 +3,7 @@ Module: `Types`<br />
 
 ## Types.Has
 
-Checks if an object type contains any of the specified keys.
+Checks whether an object type contains any of the specified keys.
 
 **When to use**
 

@@ -3,7 +3,7 @@ Module: `SchemaRepresentation`<br />
 
 ## SchemaRepresentation.$DateMeta
 
-Schema codec for `DateMeta`.
+Schema for `DateMeta`.
 
 **Signature**
 

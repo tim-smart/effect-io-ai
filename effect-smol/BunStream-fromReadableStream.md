@@ -3,8 +3,8 @@ Module: `BunStream`<br />
 
 ## BunStream.fromReadableStream
 
-An optimized version of `Stream.fromReadableStream` that uses the Bun
-.readMany API to read multiple values at once from a `ReadableStream`.
+Creates a stream from a `ReadableStream` using Bun's optimized `.readMany`
+API.
 
 **Signature**
 

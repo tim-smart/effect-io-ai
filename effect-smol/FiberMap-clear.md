@@ -3,7 +3,7 @@ Module: `FiberMap`<br />
 
 ## FiberMap.clear
 
-Remove all fibers from the FiberMap, interrupting them.
+Removes all fibers from the FiberMap, interrupting them.
 
 **Example** (Clearing all fibers)
 

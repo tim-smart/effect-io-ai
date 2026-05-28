@@ -3,7 +3,7 @@ Module: `DateTime`<br />
 
 ## DateTime.getPart
 
-Get a part of a `DateTime` as a number.
+Gets one time-zone-adjusted part of a `DateTime` as a number.
 
 **Details**
 
@@ -27,6 +27,6 @@ console.log(year) // 2024
 declare const getPart: { (part: keyof DateTime.PartsWithWeekday): (self: DateTime) => number; (self: DateTime, part: keyof DateTime.PartsWithWeekday): number; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L1792)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L1801)
 
 Since v3.6.0

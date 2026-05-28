@@ -3,7 +3,7 @@ Module: `SchemaTransformation`<br />
 
 ## SchemaTransformation.capitalize
 
-A string-to-string transformation that capitalizes the first character on
+Transforms strings by capitalizing the first character on
 decode. Encode is passthrough.
 
 **When to use**
@@ -36,6 +36,6 @@ const Capitalized = Schema.String.pipe(
 declare const capitalize: () => Transformation<string, string>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L644)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L642)
 
 Since v4.0.0

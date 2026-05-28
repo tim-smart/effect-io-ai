@@ -3,7 +3,7 @@ Module: `Context`<br />
 
 ## Context.getOption
 
-Gets the service for a key wrapped in an `Option`.
+Gets the service for a key safely wrapped in an `Option`.
 
 **When to use**
 

@@ -32,6 +32,6 @@ Effect.runPromise(program)
 declare const fromIterable: <A>(iterable: Iterable<A>, options?: { readonly chunkSize?: number | undefined; }) => Stream<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L1169)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L1173)
 
 Since v2.0.0

@@ -3,11 +3,11 @@ Module: `Number`<br />
 
 ## Number.Number
 
-The global `Number` constructor.
+Exposes the global number constructor.
 
 **When to use**
 
-Use when you want native `Number` constructor coercion from the Effect module
+Use to access native JavaScript numeric coercion from the Effect module
 namespace.
 
 **Gotchas**

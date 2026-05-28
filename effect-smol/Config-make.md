@@ -8,8 +8,7 @@ Creates a `Config` from a raw parsing function.
 **When to use**
 
 Use to build a custom config that cannot be expressed with `schema` or
-  the convenience constructors.
-- Composing configs programmatically.
+convenience constructors, or to compose configs programmatically.
 
 **Details**
 
@@ -43,6 +42,6 @@ const provider = ConfigProvider.fromUnknown({ host: "localhost", port: 3000 })
 declare const make: <T>(parse: (provider: ConfigProvider.ConfigProvider) => Effect.Effect<T, ConfigError>) => Config<T>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Config.ts#L229)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Config.ts#L228)
 
 Since v4.0.0

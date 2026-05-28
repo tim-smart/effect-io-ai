@@ -30,6 +30,6 @@ console.log(rateLimitError.message) // "Rate limit exceeded. Retry after 1 minut
 declare class RateLimitError
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AiError.ts#L432)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AiError.ts#L437)
 
 Since v4.0.0

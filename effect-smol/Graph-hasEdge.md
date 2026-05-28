@@ -3,7 +3,7 @@ Module: `Graph`<br />
 
 ## Graph.hasEdge
 
-Checks if an edge exists between two nodes in the graph.
+Checks whether an edge exists between two nodes in the graph.
 
 **Example** (Checking edge existence)
 

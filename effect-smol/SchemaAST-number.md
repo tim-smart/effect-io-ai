@@ -3,7 +3,7 @@ Module: `SchemaAST`<br />
 
 ## SchemaAST.number
 
-Singleton `Number` AST instance.
+Provides the singleton `Number` AST instance.
 
 **When to use**
 
@@ -21,6 +21,6 @@ JavaScript number value.
 declare const number: Number
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L1423)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L1433)
 
 Since v4.0.0

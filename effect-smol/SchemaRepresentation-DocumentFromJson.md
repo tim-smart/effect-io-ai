@@ -3,7 +3,7 @@ Module: `SchemaRepresentation`<br />
 
 ## SchemaRepresentation.DocumentFromJson
 
-Schema codec that decodes a `Document` from JSON and encodes it back.
+Schema that decodes a `Document` from JSON and encodes it back.
 
 **When to use**
 
@@ -31,6 +31,6 @@ const back = Schema.decodeUnknownSync(SchemaRepresentation.DocumentFromJson)(jso
 declare const DocumentFromJson: Schema.Codec<Document, Schema.Json, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaRepresentation.ts#L1744)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaRepresentation.ts#L1742)
 
 Since v4.0.0

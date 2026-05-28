@@ -29,6 +29,6 @@ Effect.runPromise(program)
 declare const tick: (interval: Duration.Input) => Stream<void>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L637)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L641)
 
 Since v2.0.0

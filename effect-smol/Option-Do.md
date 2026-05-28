@@ -3,7 +3,7 @@ Module: `Option`<br />
 
 ## Option.Do
 
-An `Option` containing an empty record `{}`, used as the starting point for
+Provides an `Option` containing an empty record `{}`, used as the starting point for
 do notation chains.
 
 **When to use**
@@ -38,6 +38,6 @@ assert.deepStrictEqual(result, Option.some({ x: 2, y: 3, sum: 5 }))
 declare const Do: Option<{}>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L2529)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L2528)
 
 Since v2.0.0

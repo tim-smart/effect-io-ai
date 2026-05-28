@@ -11,7 +11,6 @@ Use when you need to detect promise instances across realms.
 
 **Details**
 
-- Pure; does not mutate input.
 - Structural check for `then` and `catch` functions.
 
 **Example** (Guard promise)
@@ -34,6 +33,6 @@ console.log(Predicate.isPromise(data))
 declare const isPromise: (input: unknown) => input is Promise<unknown>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L1402)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L1370)
 
 Since v2.0.0

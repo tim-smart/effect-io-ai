@@ -3,7 +3,7 @@ Module: `Sink`<br />
 
 ## Sink.findEffect
 
-Creates a sink containing the first matching value.
+Creates a sink containing the first value matched by an effectful predicate.
 
 **When to use**
 
@@ -26,6 +26,6 @@ fails, the sink fails with the same error.
 declare const findEffect: <In, E, R>(predicate: (input: In) => Effect.Effect<boolean, E, R>) => Sink<Option.Option<In>, In, In, E, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Sink.ts#L1517)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Sink.ts#L1515)
 
 Since v2.0.0

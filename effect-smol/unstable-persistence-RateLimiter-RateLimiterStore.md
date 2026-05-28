@@ -3,7 +3,12 @@ Module: `RateLimiter`<br />
 
 ## RateLimiter.RateLimiterStore
 
-Low-level backing store for fixed-window counters and token-bucket state.
+Defines the low-level backing store for fixed-window counters and token-bucket state.
+
+**When to use**
+
+Use to provide the shared counter storage used by persistent rate-limit
+checks.
 
 **Signature**
 
@@ -11,6 +16,6 @@ Low-level backing store for fixed-window counters and token-bucket state.
 declare class RateLimiterStore
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RateLimiter.ts#L489)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RateLimiter.ts#L499)
 
 Since v4.0.0

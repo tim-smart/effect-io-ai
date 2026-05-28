@@ -13,6 +13,6 @@ persist, resume, and encode workflow state.
 declare const makeUnsafe: (options: Encoded) => WorkflowEngine["Service"]
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/WorkflowEngine.ts#L371)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/WorkflowEngine.ts#L381)
 
 Since v4.0.0

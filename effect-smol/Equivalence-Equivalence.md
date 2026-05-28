@@ -13,7 +13,6 @@ Use as a type annotation for equivalence functions
 
 **Details**
 
-- Pure function: does not mutate inputs or have side effects
 - Returns `boolean`: `true` if values are equivalent, `false` otherwise
 - Must satisfy reflexive, symmetric, and transitive properties
 
@@ -55,6 +54,6 @@ console.log(pointEq({ x: 1, y: 2 }, { x: 1, y: 2 })) // true
 type Equivalence<A> = (self: A, that: A) => boolean
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Equivalence.ts#L105)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Equivalence.ts#L104)
 
 Since v2.0.0

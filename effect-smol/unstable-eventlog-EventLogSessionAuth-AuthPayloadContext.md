@@ -3,7 +3,13 @@ Module: `EventLogSessionAuth`<br />
 
 ## EventLogSessionAuth.AuthPayloadContext
 
-Domain-separation string embedded in canonical session authentication payloads.
+Defines the domain-separation string embedded in canonical session
+authentication payloads.
+
+**When to use**
+
+Use when you need the domain-separation string used to build canonical
+event-log session authentication payloads.
 
 **Signature**
 
@@ -11,6 +17,6 @@ Domain-separation string embedded in canonical session authentication payloads.
 declare const AuthPayloadContext: "eventlog-auth-v1"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventLogSessionAuth.ts#L54)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventLogSessionAuth.ts#L60)
 
 Since v4.0.0

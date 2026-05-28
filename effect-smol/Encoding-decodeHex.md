@@ -3,7 +3,7 @@ Module: `Encoding`<br />
 
 ## Encoding.decodeHex
 
-Decodes a hexadecimal string into bytes.
+Decodes a hexadecimal string into bytes safely.
 
 **When to use**
 
@@ -32,6 +32,6 @@ if (Result.isSuccess(result)) {
 declare const decodeHex: (str: string) => Result.Result<Uint8Array, EncodingError>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Encoding.ts#L480)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Encoding.ts#L483)
 
 Since v2.0.0

@@ -3,12 +3,17 @@ Module: `Result`<br />
 
 ## Result.void
 
-A pre-built `Result<void>` holding `undefined` as its success value.
+Provides a pre-built successful `Result` that carries `undefined`.
+
+**When to use**
+
+Use when a success should signal completion without carrying a meaningful
+value.
 
 **Details**
 
-- Use when you need a `Result` that represents "completed with no meaningful value"
-- Equivalent to `Result.succeed(undefined)` but avoids an extra allocation
+This is equivalent to `Result.succeed(undefined)`, but reuses a shared
+`Success` wrapper instead of allocating one each time.
 
 **Example** (Using void result)
 
@@ -23,7 +28,7 @@ console.log(Result.isSuccess(result))
 
 **See**
 
-- `succeed`
+- `succeed` to create a Success with a specific value
 
 **Signature**
 
@@ -31,6 +36,6 @@ console.log(Result.isSuccess(result))
 declare const void: Result<void, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L397)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L400)
 
 Since v3.13.0

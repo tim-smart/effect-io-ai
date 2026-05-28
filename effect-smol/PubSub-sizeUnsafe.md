@@ -3,8 +3,8 @@ Module: `PubSub`<br />
 
 ## PubSub.sizeUnsafe
 
-Synchronously returns the current number of messages retained by the `PubSub`
-for active subscribers.
+Returns the current number of messages retained by the `PubSub` for active
+subscribers synchronously.
 
 **Details**
 

@@ -3,7 +3,7 @@ Module: `OtlpLogger`<br />
 
 ## OtlpLogger.layer
 
-Installs the OTLP logger created by `make` as an Effect logging layer.
+Layer that installs the OTLP logger created by `make`.
 
 **Details**
 

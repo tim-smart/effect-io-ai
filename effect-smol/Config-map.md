@@ -37,6 +37,6 @@ const provider = ConfigProvider.fromUnknown({ name: "alice" })
 declare const map: { <A, B>(f: (a: A) => B): (self: Config<A>) => Config<B>; <A, B>(self: Config<A>, f: (a: A) => B): Config<B>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Config.ts#L267)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Config.ts#L266)
 
 Since v2.0.0

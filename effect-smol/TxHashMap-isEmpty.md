@@ -3,7 +3,7 @@ Module: `TxHashMap`<br />
 
 ## TxHashMap.isEmpty
 
-Checks if the TxHashMap is empty.
+Checks whether the TxHashMap is empty.
 
 **Example** (Checking for an empty map)
 

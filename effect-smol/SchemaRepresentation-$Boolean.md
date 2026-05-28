@@ -3,7 +3,7 @@ Module: `SchemaRepresentation`<br />
 
 ## SchemaRepresentation.$Boolean
 
-Schema codec for the `Boolean` representation node.
+Schema for the `Boolean` representation node.
 
 **Signature**
 

@@ -9,8 +9,8 @@ a typed error (`Fail`), an unexpected defect (`Die`), or an interrupt
 
 **When to use**
 
-Use as the schema type returned by `CauseReason` when generic code needs to
-retain the typed failure and defect schemas.
+Use as the schema type when generic code needs to retain the typed failure
+and defect schemas for a single cause reason.
 
 **Details**
 
@@ -39,6 +39,6 @@ export interface CauseReason<E extends Top, D extends Top> extends
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L8467)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L8699)
 
 Since v4.0.0

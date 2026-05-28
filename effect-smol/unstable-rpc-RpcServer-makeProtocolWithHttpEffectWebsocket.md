@@ -12,6 +12,6 @@ upgrades the current request to a websocket and attaches it to the protocol.
 declare const makeProtocolWithHttpEffectWebsocket: Effect.Effect<{ readonly protocol: Protocol["Service"]; readonly httpEffect: Effect.Effect<HttpServerResponse.HttpServerResponse, never, Scope.Scope | HttpServerRequest.HttpServerRequest>; }, never, RpcSerialization.RpcSerialization>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RpcServer.ts#L921)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RpcServer.ts#L926)
 
 Since v4.0.0

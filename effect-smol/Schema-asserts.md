@@ -6,11 +6,15 @@ Module: `Schema`<br />
 Creates an assertion function that throws an error if the input doesn't match
 the schema.
 
+**When to use**
+
+Use to validate unknown input at runtime while narrowing the value with a
+TypeScript `asserts` predicate.
+
 **Details**
 
-This function is useful for runtime type checking with TypeScript's `asserts`
-type guard. It narrows the type of the input if the assertion succeeds, or
-throws an error if it fails.
+The input is narrowed if the assertion succeeds. If validation fails, the
+assertion throws.
 
 **Example** (Basic Usage)
 
@@ -38,6 +42,6 @@ try {
 declare const asserts: <S extends Top, I>(schema: S, input: I) => asserts input is I & S["Type"]
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L1218)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L1222)
 
 Since v4.0.0

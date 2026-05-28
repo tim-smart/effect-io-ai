@@ -3,7 +3,7 @@ Module: `SynchronizedRef`<br />
 
 ## SynchronizedRef.getAndUpdateEffect
 
-Atomically runs an effectful update while holding the ref's semaphore, sets
+Runs an effectful update atomically while holding the ref's semaphore, sets
 the new value if the effect succeeds, and returns the previous value.
 
 **When to use**

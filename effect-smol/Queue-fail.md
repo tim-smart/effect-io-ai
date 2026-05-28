@@ -3,7 +3,7 @@ Module: `Queue`<br />
 
 ## Queue.fail
 
-Fail the queue with an error. If the queue is already done, `false` is
+Fails the queue with an error. If the queue is already done, `false` is
 returned.
 
 **Example** (Failing queues with an error)

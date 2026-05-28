@@ -3,7 +3,7 @@ Module: `DateTime`<br />
 
 ## DateTime.subtract
 
-Subtract the given `amount` of `unit`'s from a `DateTime`.
+Subtracts the given `amount` of `unit` from a `DateTime`.
 
 **Example** (Subtracting date and time parts)
 
@@ -22,6 +22,6 @@ DateTime.makeUnsafe(0).pipe(
 declare const subtract: { (parts: Partial<DateTime.PartsForMath>): <A extends DateTime>(self: A) => A; <A extends DateTime>(self: A, parts: Partial<DateTime.PartsForMath>): A; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L2355)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L2374)
 
 Since v3.6.0

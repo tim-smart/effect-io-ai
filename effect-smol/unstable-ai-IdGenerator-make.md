@@ -61,6 +61,6 @@ const program = Effect.gen(function*() {
 declare const make: (args_0: MakeOptions) => Effect.Effect<{ readonly generateId: () => Effect.Effect<string, never, never>; }, Cause.IllegalArgumentError, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/IdGenerator.ts#L280)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/IdGenerator.ts#L285)
 
 Since v4.0.0

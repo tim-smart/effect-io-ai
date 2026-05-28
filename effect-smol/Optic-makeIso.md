@@ -12,7 +12,6 @@ Use when you have two pure functions that form a lossless round-trip between `S`
 
 **Details**
 
-- Does not mutate inputs.
 - The returned optic can be composed with any other optic.
 
 **Example** (wrapping/unwrapping a branded type)
@@ -44,6 +43,6 @@ console.log(meters.set(42))
 declare const makeIso: <S, A>(get: (s: S) => A, set: (a: A) => S) => Iso<S, A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Optic.ts#L187)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Optic.ts#L186)
 
 Since v4.0.0

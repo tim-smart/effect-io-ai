@@ -3,7 +3,7 @@ Module: `DateTime`<br />
 
 ## DateTime.isFuture
 
-Checks if a `DateTime` is in the future compared to the current time.
+Checks effectfully if a `DateTime` is in the future compared to the current time.
 
 **Details**
 
@@ -27,6 +27,6 @@ const program = Effect.gen(function*() {
 declare const isFuture: (self: DateTime) => Effect.Effect<boolean>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L1454)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L1463)
 
 Since v3.6.0

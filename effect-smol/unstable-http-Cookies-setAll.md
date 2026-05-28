@@ -3,7 +3,7 @@ Module: `Cookies`<br />
 
 ## Cookies.setAll
 
-Creates and adds multiple cookies from name/value/options tuples.
+Creates and adds multiple cookies safely from name/value/options tuples.
 
 **Details**
 

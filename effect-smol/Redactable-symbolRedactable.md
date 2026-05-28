@@ -3,7 +3,7 @@ Module: `Redactable`<br />
 
 ## Redactable.symbolRedactable
 
-Symbol used to identify objects that implement the `Redactable`
+Defines the symbol used to identify objects that implement the `Redactable`
 protocol.
 
 **When to use**

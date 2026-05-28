@@ -3,7 +3,7 @@ Module: `Latch`<br />
 
 ## Latch.openUnsafe
 
-Synchronously opens the latch and releases fibers waiting on it.
+Opens the latch synchronously and releases fibers waiting on it.
 
 **When to use**
 

@@ -3,7 +3,7 @@ Module: `Boolean`<br />
 
 ## Boolean.isBoolean
 
-Tests if a value is a `boolean`.
+Checks whether a value is a `boolean`.
 
 **When to use**
 

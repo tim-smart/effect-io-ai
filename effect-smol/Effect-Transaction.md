@@ -3,12 +3,12 @@ Module: `Effect`<br />
 
 ## Effect.Transaction
 
-Service that holds the current transaction state, it includes
+Service that holds the current transaction state.
 
 **Details**
 
-- a journal that stores any non committed change to TxRef values
-- a retry flag to know if the transaction should be retried
+It includes a journal that stores non-committed changes to `TxRef` values and
+a retry flag that records whether the transaction should be retried.
 
 **Example** (Building transactions)
 
@@ -29,6 +29,6 @@ const txEffect = Effect.gen(function*() {
 declare class Transaction
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L14317)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L14301)
 
 Since v4.0.0

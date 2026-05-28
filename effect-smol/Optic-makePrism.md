@@ -12,7 +12,6 @@ Use when reading can fail (the part may not exist in `S`), but building `S`
 
 **Details**
 
-- Does not mutate inputs.
 - `getResult` should return `Result.fail(message)` on mismatch.
 
 **Example** (parsing a string to a number)
@@ -46,6 +45,6 @@ console.log(numeric.set(42))
 declare const makePrism: <S, A>(getResult: (s: S) => Result.Result<A, string>, set: (a: A) => S) => Prism<S, A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Optic.ts#L360)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Optic.ts#L357)
 
 Since v4.0.0

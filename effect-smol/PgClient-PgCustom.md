@@ -11,6 +11,6 @@ PostgreSQL-specific custom statement fragments supported by the compiler, curren
 type PgCustom = PgJson
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/sql/pg/src/PgClient.ts#L885)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/sql/pg/src/PgClient.ts#L894)
 
 Since v4.0.0

@@ -7,8 +7,8 @@ Callback type used to format `Leaf` issues into strings.
 
 **When to use**
 
-Use when passing a custom `LeafHook` to `makeFormatterStandardSchemaV1` to
-  override how terminal issues are rendered.
+Use when customizing how `makeFormatterStandardSchemaV1` renders
+terminal issues.
 
 **See**
 
@@ -21,6 +21,6 @@ Use when passing a custom `LeafHook` to `makeFormatterStandardSchemaV1` to
 type LeafHook = (issue: Leaf) => string
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaIssue.ts#L940)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaIssue.ts#L929)
 
 Since v4.0.0

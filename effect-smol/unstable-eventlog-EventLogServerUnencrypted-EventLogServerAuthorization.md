@@ -3,8 +3,13 @@ Module: `EventLogServerUnencrypted`<br />
 
 ## EventLogServerUnencrypted.EventLogServerAuthorization
 
-Authorization service used by the unencrypted event-log server to validate
+Service that validates unencrypted event-log server
 write access, read access, and identities.
+
+**When to use**
+
+Use to provide authorization checks for plaintext event-log writes, reads,
+and identity authentication.
 
 **Signature**
 
@@ -12,6 +17,6 @@ write access, read access, and identities.
 declare class EventLogServerAuthorization
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventLogServerUnencrypted.ts#L286)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventLogServerUnencrypted.ts#L296)
 
 Since v4.0.0

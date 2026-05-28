@@ -3,7 +3,7 @@ Module: `Multipart`<br />
 
 ## Multipart.MultipartErrorReason
 
-Reason carried by a `MultipartError`.
+Error reason carried by a `MultipartError`.
 
 **Details**
 

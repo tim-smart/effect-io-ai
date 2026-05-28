@@ -5,8 +5,15 @@ Module: `Schema`<br />
 
 Encodes a typed input (the schema's `Type`) against a schema, returning an
 `Effect` that succeeds with the encoded value or fails with a
-`SchemaError`. Use this when the input is already typed; for `unknown`
-input use `encodeUnknownEffect`.
+`SchemaError`.
+
+**When to use**
+
+Use when the input is already typed as the schema's `Type`.
+
+**Details**
+
+For `unknown` input use `encodeUnknownEffect`.
 Options may be provided either when creating the encoder or when applying it;
 application options override creation options.
 
@@ -16,6 +23,6 @@ application options override creation options.
 declare const encodeEffect: <S extends Top>(schema: S, options?: AST.ParseOptions) => (input: S["Type"], options?: AST.ParseOptions) => Effect.Effect<S["Encoded"], SchemaError, S["EncodingServices"]>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L1463)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L1565)
 
 Since v4.0.0

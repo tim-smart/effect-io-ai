@@ -3,7 +3,7 @@ Module: `Iterable`<br />
 
 ## Iterable.replicate
 
-Return a `Iterable` containing a value repeated the specified number of times.
+Returns a `Iterable` containing a value repeated the specified number of times.
 
 **Details**
 

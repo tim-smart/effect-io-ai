@@ -26,6 +26,6 @@ of properties.
 declare const isMinProperties: (minProperties: number, annotations?: Annotations.Filter) => AST.Filter<object>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L7583)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L7815)
 
 Since v4.0.0

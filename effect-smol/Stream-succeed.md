@@ -25,6 +25,6 @@ Effect.runPromise(program)
 declare const succeed: <A>(value: A) => Stream<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L894)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L898)
 
 Since v2.0.0

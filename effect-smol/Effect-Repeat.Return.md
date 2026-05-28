@@ -34,6 +34,6 @@ type Effect<O extends { until: Predicate.Refinement<A, infer B>; } ? B : O exten
     : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L7389)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L7375)
 
 Since v2.0.0

@@ -18,6 +18,6 @@ export interface withDecodingDefaultKey<S extends Top, R = never> extends decode
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L5032)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L5254)
 
 Since v4.0.0

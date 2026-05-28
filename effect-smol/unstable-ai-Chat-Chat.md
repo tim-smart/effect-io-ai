@@ -3,7 +3,12 @@ Module: `Chat`<br />
 
 ## Chat.Chat
 
-The `Chat` service tag for dependency injection.
+Service tag for stateful AI conversation sessions.
+
+**When to use**
+
+Use to access or provide conversational AI sessions through the Effect
+context.
 
 **Details**
 
@@ -32,6 +37,6 @@ const program = Effect.gen(function*() {
 declare class Chat
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chat.ts#L108)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chat.ts#L113)
 
 Since v4.0.0

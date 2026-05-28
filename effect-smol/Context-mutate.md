@@ -3,7 +3,7 @@ Module: `Context`<br />
 
 ## Context.mutate
 
-Perform a series of mutations on a `Context`. Prevents unnecessary copying
+Performs a series of mutations on a `Context`. Prevents unnecessary copying
 of the underlying map when multiple mutations are needed.
 
 **When to use**

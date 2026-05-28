@@ -3,8 +3,11 @@ Module: `GlobalFlag`<br />
 
 ## GlobalFlag.Version
 
-The `--version` global flag.
-Shows version information for the command.
+Defines the global action flag for showing command version information.
+
+**When to use**
+
+Use to add a built-in `--version` flag to a command runner.
 
 **Signature**
 
@@ -12,6 +15,6 @@ Shows version information for the command.
 declare const Version: Action<boolean>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/GlobalFlag.ts#L188)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/GlobalFlag.ts#L191)
 
 Since v4.0.0

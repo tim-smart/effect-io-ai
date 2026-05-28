@@ -14,7 +14,6 @@ Use when you need primitive types where `===` is appropriate
 
 **Details**
 
-- Does not mutate inputs
 - Uses JavaScript's strict equality operator (`===`)
 - For primitives: compares values directly
 - For objects: compares by reference, so only the same object instance is equivalent
@@ -58,6 +57,6 @@ console.log(strictObjEq(obj, { value: 42 })) // false (different references)
 declare const strictEqual: <A>() => Equivalence<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Equivalence.ts#L250)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Equivalence.ts#L247)
 
 Since v4.0.0

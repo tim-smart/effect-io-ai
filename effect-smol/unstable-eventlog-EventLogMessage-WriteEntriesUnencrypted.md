@@ -3,7 +3,7 @@ Module: `EventLogMessage`<br />
 
 ## EventLogMessage.WriteEntriesUnencrypted
 
-Msgpack-encodable payload for writing plaintext entries to a remote store.
+Schema for plaintext event-log write payloads sent to a remote store.
 
 **Signature**
 
@@ -11,6 +11,6 @@ Msgpack-encodable payload for writing plaintext entries to a remote store.
 declare class WriteEntriesUnencrypted
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventLogMessage.ts#L298)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventLogMessage.ts#L299)
 
 Since v4.0.0

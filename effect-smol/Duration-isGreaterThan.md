@@ -3,7 +3,7 @@ Module: `Duration`<br />
 
 ## Duration.isGreaterThan
 
-Checks if the first Duration is greater than the second.
+Checks whether the first Duration is greater than the second.
 
 **Example** (Comparing durations with greater than)
 

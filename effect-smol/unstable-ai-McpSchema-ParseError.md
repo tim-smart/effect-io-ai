@@ -3,8 +3,16 @@ Module: `McpSchema`<br />
 
 ## McpSchema.ParseError
 
-MCP/JSON-RPC error for invalid JSON that could not be parsed. This error
-uses the standard parse error code `-32700`.
+Represents an MCP/JSON-RPC error for invalid JSON that could not be parsed.
+
+**When to use**
+
+Use to report a JSON parse failure before a valid JSON-RPC request object is
+available.
+
+**Details**
+
+Uses the standard JSON-RPC parse error code `-32700`.
 
 **Signature**
 
@@ -12,6 +20,6 @@ uses the standard parse error code `-32700`.
 declare class ParseError
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L507)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L557)
 
 Since v4.0.0

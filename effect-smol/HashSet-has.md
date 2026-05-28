@@ -3,7 +3,7 @@ Module: `HashSet`<br />
 
 ## HashSet.has
 
-Checks if the HashSet contains the specified value.
+Checks whether the HashSet contains the specified value.
 
 **Example** (Checking HashSet membership)
 

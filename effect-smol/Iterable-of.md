@@ -40,6 +40,6 @@ console.log(Array.from(evensOnly)) // [2, 4]
 declare const of: <A>(a: A) => Iterable<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Iterable.ts#L1478)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Iterable.ts#L1486)
 
 Since v2.0.0

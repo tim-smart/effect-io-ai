@@ -3,7 +3,7 @@ Module: `Graph`<br />
 
 ## Graph.neighborsDirected
 
-Get neighbors of a node in a specific direction for bidirectional traversal.
+Gets neighbors of a node in a specific direction for bidirectional traversal.
 
 **Example** (Traversing directed neighbors)
 

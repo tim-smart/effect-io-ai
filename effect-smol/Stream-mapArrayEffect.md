@@ -3,7 +3,7 @@ Module: `Stream`<br />
 
 ## Stream.mapArrayEffect
 
-Effectfully maps over non-empty array chunks emitted by the stream.
+Maps over non-empty array chunks emitted by the stream effectfully.
 
 **Example** (Effectfully mapping stream chunks)
 
@@ -31,6 +31,6 @@ Effect.runPromise(program)
 declare const mapArrayEffect: { <A, B, E2, R2>(f: (a: Arr.NonEmptyReadonlyArray<A>, i: number) => Effect.Effect<Arr.NonEmptyReadonlyArray<B>, E2, R2>): <E, R>(self: Stream<A, E, R>) => Stream<B, E | E2, R | R2>; <A, E, R, B, E2, R2>(self: Stream<A, E, R>, f: (a: Arr.NonEmptyReadonlyArray<A>, i: number) => Effect.Effect<Arr.NonEmptyReadonlyArray<B>, E2, R2>): Stream<B, E | E2, R | R2>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L2169)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L2181)
 
 Since v4.0.0

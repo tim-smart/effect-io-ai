@@ -3,7 +3,7 @@ Module: `MutableHashMap`<br />
 
 ## MutableHashMap.get
 
-Looks up a key in the `MutableHashMap`.
+Looks up a key in the `MutableHashMap` safely.
 
 **When to use**
 

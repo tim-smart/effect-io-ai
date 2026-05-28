@@ -3,7 +3,7 @@ Module: `BigDecimal`<br />
 
 ## BigDecimal.round
 
-Rounds a `BigDecimal` at the given scale with the specified rounding mode.
+Computes a rounded `BigDecimal` at the given scale with the specified rounding mode.
 
 **When to use**
 
@@ -37,6 +37,6 @@ assert.deepStrictEqual(
 declare const round: { (options: { scale?: number; mode?: RoundingMode; }): (self: BigDecimal) => BigDecimal; (n: BigDecimal, options?: { scale?: number; mode?: RoundingMode; }): BigDecimal; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigDecimal.ts#L1794)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigDecimal.ts#L1798)
 
 Since v3.16.0

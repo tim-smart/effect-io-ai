@@ -41,6 +41,6 @@ console.log(Result.getOrElse(Result.fail("err"), () => 0))
 declare const getOrElse: { <E, A2>(onFailure: (err: E) => A2): <A>(self: Result<A, E>) => A2 | A; <A, E, A2>(self: Result<A, E>, onFailure: (err: E) => A2): A | A2; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L1136)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L1153)
 
 Since v2.0.0

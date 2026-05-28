@@ -3,7 +3,7 @@ Module: `Duration`<br />
 
 ## Duration.divide
 
-Safely divides a `Duration` by a finite, non-zero number.
+Divides a `Duration` by a finite, non-zero number safely.
 
 **Details**
 

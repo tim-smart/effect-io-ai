@@ -3,7 +3,7 @@ Module: `MutableHashMap`<br />
 
 ## MutableHashMap.isMutableHashMap
 
-Checks if the specified value is a `MutableHashMap`, `false` otherwise.
+Checks whether the specified value is a `MutableHashMap`, `false` otherwise.
 
 **When to use**
 

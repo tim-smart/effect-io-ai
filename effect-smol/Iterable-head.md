@@ -3,7 +3,7 @@ Module: `Iterable`<br />
 
 ## Iterable.head
 
-Get the first element of a `Iterable`, or `None` if the `Iterable` is empty.
+Gets the first element of a `Iterable` safely, or `None` if the `Iterable` is empty.
 
 **Example** (Getting the first element)
 

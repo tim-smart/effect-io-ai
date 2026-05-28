@@ -28,6 +28,6 @@ console.log(reason._tag) // "RateLimitError"
 declare const reasonFromHttpStatus: (params: { readonly status: number; readonly body?: unknown; readonly http?: typeof HttpContext.Type; readonly metadata?: typeof ProviderMetadata.Type; readonly description?: string | undefined; }) => AiErrorReason
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AiError.ts#L1663)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AiError.ts#L1668)
 
 Since v4.0.0

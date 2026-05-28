@@ -11,7 +11,6 @@ Use when you need to guard unknown keys before indexing.
 
 **Details**
 
-- Pure; does not mutate input.
 - Uses `isString`, `isNumber`, and `isSymbol`.
 
 **Example** (Guard property key)
@@ -39,6 +38,6 @@ if (Predicate.isPropertyKey(key) && key in obj) {
 declare const isPropertyKey: (u: unknown) => u is PropertyKey
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L769)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L755)
 
 Since v4.0.0

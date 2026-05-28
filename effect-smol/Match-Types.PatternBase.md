@@ -45,6 +45,6 @@ type PatternBase<A> = A extends ReadonlyArray<infer _T> ? ReadonlyArray<any> | P
     : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L2306)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L2301)
 
 Since v4.0.0

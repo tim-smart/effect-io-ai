@@ -11,7 +11,6 @@ Use when you have a single schema and need its representation.
 
 **Details**
 
-This is a pure function and does not mutate the input AST.
 Shared/recursive sub-schemas are extracted into the `references` map.
 
 **Example** (Converting a Schema to a Document)
@@ -40,6 +39,6 @@ console.log(doc.representation._tag)
 declare const fromAST: (ast: AST.AST) => Document
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaRepresentation.ts#L1698)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaRepresentation.ts#L1697)
 
 Since v4.0.0

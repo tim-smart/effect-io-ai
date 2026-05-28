@@ -55,13 +55,13 @@
     },
     "project": "@effect/sql-pglite",
     "name": "PgliteClient",
-    "description": "Context tag used to access the `PgliteClient` service.",
+    "description": "Service tag for the PGlite client service.\n\n**When to use**\n\nUse to access or provide a PGlite client through the Effect context.",
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
     "category": "tags",
     "signature": "declare const PgliteClient: Context.Service<PgliteClient, PgliteClient>",
-    "sourceUrl": "https://github.com/Effect-TS/effect-smol/tree/main/packages/sql/pglite/src/PgliteClient.ts#L106"
+    "sourceUrl": "https://github.com/Effect-TS/effect-smol/tree/main/packages/sql/pglite/src/PgliteClient.ts#L110"
   },
   {
     "_tag": "Function",
@@ -77,7 +77,7 @@
     "since": "4.0.0",
     "category": "constructors",
     "signature": "declare const make: (options?: PgliteClientConfig) => Effect.Effect<PgliteClient, SqlError, Scope.Scope | Reactivity.Reactivity>",
-    "sourceUrl": "https://github.com/Effect-TS/effect-smol/tree/main/packages/sql/pglite/src/PgliteClient.ts#L173"
+    "sourceUrl": "https://github.com/Effect-TS/effect-smol/tree/main/packages/sql/pglite/src/PgliteClient.ts#L177"
   },
   {
     "_tag": "Function",
@@ -93,7 +93,7 @@
     "since": "4.0.0",
     "category": "constructors",
     "signature": "declare const fromClient: (options: PgliteClientConfig.Base & { readonly liveClient: PGliteInterface; }) => Effect.Effect<PgliteClient, SqlError, Scope.Scope | Reactivity.Reactivity>",
-    "sourceUrl": "https://github.com/Effect-TS/effect-smol/tree/main/packages/sql/pglite/src/PgliteClient.ts#L201"
+    "sourceUrl": "https://github.com/Effect-TS/effect-smol/tree/main/packages/sql/pglite/src/PgliteClient.ts#L205"
   },
   {
     "_tag": "Function",
@@ -109,7 +109,7 @@
     "since": "4.0.0",
     "category": "layers",
     "signature": "declare const layerFrom: <E, R>(acquire: Effect.Effect<PgliteClient, E, R>) => Layer.Layer<PgliteClient | Client.SqlClient, E, Exclude<R, Scope.Scope | Reactivity.Reactivity>>",
-    "sourceUrl": "https://github.com/Effect-TS/effect-smol/tree/main/packages/sql/pglite/src/PgliteClient.ts#L357"
+    "sourceUrl": "https://github.com/Effect-TS/effect-smol/tree/main/packages/sql/pglite/src/PgliteClient.ts#L361"
   },
   {
     "_tag": "Function",
@@ -125,7 +125,7 @@
     "since": "4.0.0",
     "category": "layers",
     "signature": "declare const layerConfig: (config: Config.Wrap<PgliteClientConfig.ConfigBase>) => Layer.Layer<PgliteClient | Client.SqlClient, Config.ConfigError | SqlError>",
-    "sourceUrl": "https://github.com/Effect-TS/effect-smol/tree/main/packages/sql/pglite/src/PgliteClient.ts#L373"
+    "sourceUrl": "https://github.com/Effect-TS/effect-smol/tree/main/packages/sql/pglite/src/PgliteClient.ts#L377"
   },
   {
     "_tag": "Function",
@@ -141,7 +141,7 @@
     "since": "4.0.0",
     "category": "layers",
     "signature": "declare const layer: (config?: PgliteClientConfig | undefined) => Layer.Layer<PgliteClient | Client.SqlClient, SqlError>",
-    "sourceUrl": "https://github.com/Effect-TS/effect-smol/tree/main/packages/sql/pglite/src/PgliteClient.ts#L389"
+    "sourceUrl": "https://github.com/Effect-TS/effect-smol/tree/main/packages/sql/pglite/src/PgliteClient.ts#L393"
   },
   {
     "_tag": "Function",
@@ -157,7 +157,7 @@
     "since": "4.0.0",
     "category": "constructors",
     "signature": "declare const makeCompiler: (transform?: (_: string) => string, transformJson?: boolean) => Statement.Compiler",
-    "sourceUrl": "https://github.com/Effect-TS/effect-smol/tree/main/packages/sql/pglite/src/PgliteClient.ts#L399"
+    "sourceUrl": "https://github.com/Effect-TS/effect-smol/tree/main/packages/sql/pglite/src/PgliteClient.ts#L403"
   },
   {
     "_tag": "Interface",
@@ -205,7 +205,7 @@
     "since": "4.0.0",
     "category": "models",
     "signature": "type PgliteClientConfig = PgliteClientConfig.Create | PgliteClientConfig.Live",
-    "sourceUrl": "https://github.com/Effect-TS/effect-smol/tree/main/packages/sql/pglite/src/PgliteClient.ts#L114"
+    "sourceUrl": "https://github.com/Effect-TS/effect-smol/tree/main/packages/sql/pglite/src/PgliteClient.ts#L118"
   },
   {
     "_tag": "TypeAlias",
@@ -221,7 +221,7 @@
     "since": "4.0.0",
     "category": "custom types",
     "signature": "type PgCustom = PgJson",
-    "sourceUrl": "https://github.com/Effect-TS/effect-smol/tree/main/packages/sql/pglite/src/PgliteClient.ts#L451"
+    "sourceUrl": "https://github.com/Effect-TS/effect-smol/tree/main/packages/sql/pglite/src/PgliteClient.ts#L455"
   },
   {
     "_tag": "Interface",
@@ -237,7 +237,7 @@
     "since": "4.0.0",
     "category": "models",
     "signature": "export interface Base {\n    readonly spanAttributes?: Record<string, unknown> | undefined\n    readonly transformResultNames?: ((str: string) => string) | undefined\n    readonly transformQueryNames?: ((str: string) => string) | undefined\n    readonly transformJson?: boolean | undefined\n  }",
-    "sourceUrl": "https://github.com/Effect-TS/effect-smol/tree/main/packages/sql/pglite/src/PgliteClient.ts#L128"
+    "sourceUrl": "https://github.com/Effect-TS/effect-smol/tree/main/packages/sql/pglite/src/PgliteClient.ts#L132"
   },
   {
     "_tag": "Interface",
@@ -253,7 +253,7 @@
     "since": "4.0.0",
     "category": "models",
     "signature": "export interface Create extends Base, PGliteOptions {}",
-    "sourceUrl": "https://github.com/Effect-TS/effect-smol/tree/main/packages/sql/pglite/src/PgliteClient.ts#L141"
+    "sourceUrl": "https://github.com/Effect-TS/effect-smol/tree/main/packages/sql/pglite/src/PgliteClient.ts#L145"
   },
   {
     "_tag": "Interface",
@@ -269,7 +269,7 @@
     "since": "4.0.0",
     "category": "models",
     "signature": "export interface Live extends Base {\n    readonly liveClient: PGliteInterface\n  }",
-    "sourceUrl": "https://github.com/Effect-TS/effect-smol/tree/main/packages/sql/pglite/src/PgliteClient.ts#L149"
+    "sourceUrl": "https://github.com/Effect-TS/effect-smol/tree/main/packages/sql/pglite/src/PgliteClient.ts#L153"
   },
   {
     "_tag": "Interface",
@@ -285,7 +285,7 @@
     "since": "4.0.0",
     "category": "models",
     "signature": "export interface ConfigBase extends Base {\n    readonly dataDir?: string | undefined\n    readonly username?: string | undefined\n    readonly database?: string | undefined\n    readonly relaxedDurability?: boolean | undefined\n  }",
-    "sourceUrl": "https://github.com/Effect-TS/effect-smol/tree/main/packages/sql/pglite/src/PgliteClient.ts#L159"
+    "sourceUrl": "https://github.com/Effect-TS/effect-smol/tree/main/packages/sql/pglite/src/PgliteClient.ts#L163"
   },
   {
     "_tag": "Constant",

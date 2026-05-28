@@ -3,7 +3,7 @@ Module: `McpSchema`<br />
 
 ## McpSchema.ElicitAcceptResult
 
-The client's response to an elicitation request
+Schema for an accepted client response to an elicitation request.
 
 **Signature**
 
@@ -11,6 +11,6 @@ The client's response to an elicitation request
 declare class ElicitAcceptResult
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L1947)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L2069)
 
 Since v4.0.0

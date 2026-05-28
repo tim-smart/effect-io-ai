@@ -3,7 +3,7 @@ Module: `References`<br />
 
 ## References.TracerSpanAnnotations
 
-Reference for managing span annotations that are automatically added to all new spans.
+Context reference for managing span annotations that are automatically added to all new spans.
 These annotations provide context and metadata that applies across multiple spans.
 
 **When to use**

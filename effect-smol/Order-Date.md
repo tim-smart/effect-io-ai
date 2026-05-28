@@ -3,7 +3,7 @@ Module: `Order`<br />
 
 ## Order.Date
 
-An `Order` instance for `Date` objects that compares them chronologically by their timestamp.
+Order instance for `Date` objects that compares them chronologically by their timestamp.
 
 **When to use**
 
@@ -13,7 +13,6 @@ Use when when comparing dates for sorting or searching
 
 **Details**
 
-- Pure function: does not mutate inputs
 - Compares dates by their underlying timestamp (milliseconds since epoch)
 - Earlier dates are less than later dates
 - Invalid dates are compared as if they were valid (uses `getTime()` result)
@@ -41,6 +40,6 @@ console.log(Order.Date(date1, date1)) // 0
 declare const Date: Order<Date>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Order.ts#L589)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Order.ts#L577)
 
 Since v2.0.0

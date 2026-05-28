@@ -3,7 +3,7 @@ Module: `Tracer`<br />
 
 ## Tracer.CurrentTraceLevel
 
-Reference for controlling the current trace level for dynamic filtering.
+Context reference for controlling the current trace level for dynamic filtering.
 
 **When to use**
 
@@ -25,6 +25,6 @@ CurrentTraceLevel` before applying `MinimumTraceLevel`.
 declare const CurrentTraceLevel: Context.Reference<LogLevel>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tracer.ts#L531)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tracer.ts#L544)
 
 Since v4.0.0

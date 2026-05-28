@@ -3,7 +3,7 @@ Module: `Pull`<br />
 
 ## Pull.isDoneCause
 
-Checks if a Cause contains any done errors.
+Checks whether a Cause contains any done errors.
 
 **When to use**
 

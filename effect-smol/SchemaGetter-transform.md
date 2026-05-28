@@ -14,7 +14,6 @@ Use when you have a pure, infallible transformation between types.
 
 - This is the most commonly used constructor.
 - Transforms `Some(e)` to `Some(f(e))` and leaves `None` unchanged.
-- Pure, does not mutate input.
 - Skips `None` inputs — only called when a value is present.
 - Never fails.
 
@@ -43,6 +42,6 @@ const NumberFromString = Schema.String.pipe(
 declare const transform: <T, E>(f: (e: E) => T) => Getter<T, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L571)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L569)
 
 Since v4.0.0

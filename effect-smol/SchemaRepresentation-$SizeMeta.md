@@ -3,7 +3,7 @@ Module: `SchemaRepresentation`<br />
 
 ## SchemaRepresentation.$SizeMeta
 
-Schema codec for `SizeMeta`.
+Schema for `SizeMeta`.
 
 **Signature**
 
