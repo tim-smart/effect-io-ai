@@ -25,6 +25,6 @@ security scheme.
 declare const basic: Basic
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiSecurity.ts#L206)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiSecurity.ts#L234)
 
 Since v4.0.0

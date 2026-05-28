@@ -8,7 +8,7 @@ Union of security schemes supported by the HTTP API OpenAPI model.
 **Signature**
 
 ```ts
-type HttpApiSecurity = Bearer | ApiKey | Basic
+type HttpApiSecurity = Http | ApiKey | Basic
 ```
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiSecurity.ts#L54)

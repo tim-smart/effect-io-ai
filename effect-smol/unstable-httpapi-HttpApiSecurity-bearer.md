@@ -23,9 +23,9 @@ security scheme.
 **Signature**
 
 ```ts
-declare const bearer: Bearer
+declare const bearer: Http
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiSecurity.ts#L152)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiSecurity.ts#L183)
 
 Since v4.0.0
