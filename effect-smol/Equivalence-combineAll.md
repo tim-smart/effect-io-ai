@@ -7,17 +7,15 @@ Combines multiple equivalence relations into a single equivalence using logical 
 
 **When to use**
 
-Use when you need to combine three or more equivalences
-- Use when you have a dynamic collection of equivalences to combine
-- Use when building equivalences from arrays or iterables
-- Prefer this over multiple `combine` calls when you have many equivalences
+Use when you need to combine many `Equivalence` instances from an iterable.
 
 **Details**
 
-- Returns `true` only if all equivalences in the collection return `true`
-- Short-circuits: stops at the first equivalence that returns `false`
-- Empty collections return an equivalence that always returns `true`
-- The result is also an equivalence that satisfies reflexive, symmetric, and transitive properties
+Returns `true` only if all equivalences in the collection return `true`. The
+comparison stops at the first equivalence that returns `false`. Empty
+collections return an equivalence that always returns `true`. The result is
+also an equivalence that satisfies reflexive, symmetric, and transitive
+properties.
 
 **Example** (Combining multiple field equivalences)
 
@@ -74,6 +72,6 @@ console.log(alwaysEq("anything", "else")) // true
 declare const combineAll: <A>(collection: Iterable<Equivalence<A>>) => Equivalence<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Equivalence.ts#L462)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Equivalence.ts#L448)
 
 Since v2.0.0

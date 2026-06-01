@@ -7,11 +7,11 @@ Checks whether a value is a `Promise`-like object with `then` and `catch`.
 
 **When to use**
 
-Use when you need to detect promise instances across realms.
+Use when you need a `Predicate` guard for promise instances across realms.
 
 **Details**
 
-- Structural check for `then` and `catch` functions.
+Performs a structural check for `then` and `catch` functions.
 
 **Example** (Guard promise)
 
@@ -33,6 +33,6 @@ console.log(Predicate.isPromise(data))
 declare const isPromise: (input: unknown) => input is Promise<unknown>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L1370)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L1372)
 
 Since v2.0.0

@@ -8,13 +8,13 @@ Encode is passthrough.
 
 **When to use**
 
-Use to normalize strings to uppercase (e.g. country codes).
+Use when you need a schema transformation to normalize strings to uppercase
+(e.g. country codes).
 
 **Details**
 
-- Decode: applies `String.prototype.toUpperCase()`.
-- Encode: passthrough.
-- Not round-trippable if the original had lowercase characters.
+Decoding applies `String.prototype.toUpperCase()`. Encoding is passthrough.
+This is not round-trippable if the original had lowercase characters.
 
 **Example** (Uppercasing on decode)
 
@@ -37,6 +37,6 @@ const Uppered = Schema.String.pipe(
 declare const toUpperCase: () => Transformation<string, string>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L606)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L612)
 
 Since v4.0.0

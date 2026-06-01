@@ -7,8 +7,8 @@ Converts a nullable value (`null` or `undefined`) into an `Option`.
 
 **When to use**
 
-Use when bridging from nullable APIs to `Option`
-- Wrapping values that may be `null` or `undefined`
+Use when you need JavaScript nullish values to become absence at an API
+boundary while all other values, including falsy ones, remain present.
 
 **Details**
 
@@ -42,6 +42,6 @@ console.log(Option.fromNullishOr(1))
 declare const fromNullishOr: <A>(a: A) => Option<NonNullable<A>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L879)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L882)
 
 Since v4.0.0

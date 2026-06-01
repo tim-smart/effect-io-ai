@@ -7,8 +7,8 @@ Wraps each output element in an object under the specified field name.
 
 **When to use**
 
-Use when starting a Channel Do-notation chain from an existing output value
-by assigning that value to a field name.
+Use when you need to start a Channel Do-notation chain from an existing
+output value by assigning that value to a field name.
 
 **See**
 
@@ -22,6 +22,6 @@ by assigning that value to a field name.
 declare const bindTo: { <N extends string>(name: N): <OutElem, OutErr, OutDone, InElem, InErr, InDone, Env>(self: Channel<OutElem, OutErr, OutDone, InElem, InErr, InDone, Env>) => Channel<{ [K in N]: OutElem; }, OutErr, OutDone, InElem, InErr, InDone, Env>; <OutElem, OutErr, OutDone, InElem, InErr, InDone, Env, N extends string>(self: Channel<OutElem, OutErr, OutDone, InElem, InErr, InDone, Env>, name: N): Channel<{ [K in N]: OutElem; }, OutErr, OutDone, InElem, InErr, InDone, Env>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L7617)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L7692)
 
 Since v4.0.0

@@ -8,8 +8,8 @@ values before constructing the service.
 
 **When to use**
 
-Use when OpenAI-compatible client settings should be read from Effect
-`Config` values while providing `OpenAiClient` as a layer.
+Use when you need client settings for OpenAI-compatible APIs to be read from
+Effect `Config` values while providing `OpenAiClient` as a layer.
 
 **Details**
 
@@ -28,6 +28,6 @@ plain option.
 declare const layerConfig: (options?: { readonly apiKey?: Config.Config<Redacted.Redacted<string> | undefined> | undefined; readonly apiUrl?: Config.Config<string> | undefined; readonly organizationId?: Config.Config<Redacted.Redacted<string> | undefined> | undefined; readonly projectId?: Config.Config<Redacted.Redacted<string> | undefined> | undefined; readonly transformClient?: ((client: HttpClient.HttpClient) => HttpClient.HttpClient) | undefined; }) => Layer.Layer<OpenAiClient, Config.ConfigError, HttpClient.HttpClient>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/OpenAiClient.ts#L324)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/OpenAiClient.ts#L323)
 
 Since v4.0.0

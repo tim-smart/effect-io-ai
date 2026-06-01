@@ -8,7 +8,8 @@ acquired resources.
 
 **When to use**
 
-Use when a forked fiber is no longer needed and should be cancelled.
+Use when you need to cancel a forked fiber and wait for its cleanup to
+complete.
 
 **Details**
 
@@ -44,6 +45,6 @@ const program = Effect.gen(function*() {
 declare const interrupt: <A, E>(self: Fiber<A, E>) => Effect<void>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Fiber.ts#L392)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Fiber.ts#L393)
 
 Since v2.0.0

@@ -7,15 +7,13 @@ Checks whether one value is greater than or equal to another according to the gi
 
 **When to use**
 
-Use when when you need a boolean predicate for non-strict comparison
-- When checking if a value is within a range (inclusive upper bound)
-- When implementing inclusive comparisons
+Use when you need a boolean greater-than-or-equal predicate using an
+`Order`.
 
 **Details**
 
-- Returns `true` if the order returns `1` or `0` (greater than or equal)
-- Returns `false` only if the order returns `-1` (less than)
-- Supports curried and uncurried call styles
+Returns `true` if the order returns `1` or `0`, and returns `false` only if
+the order returns `-1`.
 
 **Example** (Greater Than Or Equal)
 
@@ -40,6 +38,6 @@ console.log(isGreaterThanOrEqualToNumber(1, 2)) // false
 declare const isGreaterThanOrEqualTo: <A>(O: Order<A>) => { (that: A): (self: A) => boolean; (self: A, that: A): boolean; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Order.ts#L879)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Order.ts#L833)
 
 Since v4.0.0

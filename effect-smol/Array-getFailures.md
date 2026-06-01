@@ -8,8 +8,8 @@ successes.
 
 **When to use**
 
-Use to collect only failure values from `Result` values while discarding
-successes.
+Use when you can drop the success channel and only need the failure
+payloads, not the original result wrappers.
 
 **Example** (Extracting failures)
 
@@ -31,6 +31,6 @@ console.log(Array.getFailures([Result.succeed(1), Result.fail("err"), Result.suc
 declare const getFailures: <T extends Iterable<Result.Result<any, any>>>(self: T) => Array<Result.Result.Failure<ReadonlyArray.Infer<T>>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L3667)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L3708)
 
 Since v4.0.0

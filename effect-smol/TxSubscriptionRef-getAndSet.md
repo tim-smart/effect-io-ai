@@ -8,7 +8,8 @@ to all subscribers.
 
 **When to use**
 
-Use to replace the value while returning the previous value.
+Use to replace a `TxSubscriptionRef` value while returning the previous value
+and publishing the update to subscribers.
 
 **Example** (Getting and setting atomically)
 
@@ -34,6 +35,6 @@ const program = Effect.gen(function*() {
 declare const getAndSet: { <A>(value: A): (self: TxSubscriptionRef<A>) => Effect.Effect<A>; <A>(self: TxSubscriptionRef<A>, value: A): Effect.Effect<A>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxSubscriptionRef.ts#L338)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxSubscriptionRef.ts#L341)
 
 Since v3.10.0

@@ -8,9 +8,7 @@ and performs no construction or finalization work.
 
 **When to use**
 
-Use when you use `Layer.empty` as the no-op branch when conditionally composing layers.
-If you need to run an effect during layer construction while still providing
-no services, use `effectDiscard`.
+Use as the no-op branch when conditionally composing layers.
 
 **Example** (Disabling optional lifecycle work)
 
@@ -34,6 +32,6 @@ const StartupLogLive = flag
 declare const empty: Layer<never, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L892)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L888)
 
 Since v2.0.0

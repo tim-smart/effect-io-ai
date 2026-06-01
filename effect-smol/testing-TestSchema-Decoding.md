@@ -33,7 +33,7 @@ await decoding.succeed("hello")
 
 ```ts
 declare class Decoding<S> { constructor(schema: S, options?: {
-    readonly parseOptions?: AST.ParseOptions | undefined
+    readonly parseOptions?: SchemaAST.ParseOptions | undefined
   }) }
 ```
 

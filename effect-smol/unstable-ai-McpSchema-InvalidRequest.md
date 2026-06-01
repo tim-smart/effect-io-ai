@@ -20,6 +20,6 @@ Uses the standard JSON-RPC invalid request code `-32600`.
 declare class InvalidRequest
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L578)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L580)
 
 Since v4.0.0

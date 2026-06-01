@@ -7,8 +7,8 @@ Provides a fallback config when parsing fails with a `ConfigError`.
 
 **When to use**
 
-Use when trying an alternative config source when the primary one errors.
-- Providing environment-specific overrides.
+Use when you need to try an alternative config source after the primary one
+fails.
 
 **Details**
 
@@ -38,6 +38,6 @@ const hostConfig = Config.string("HOST").pipe(
 declare const orElse: { <A2>(that: (error: ConfigError) => Config<A2>): <A>(self: Config<A>) => Config<A2 | A>; <A, A2>(self: Config<A>, that: (error: ConfigError) => Config<A2>): Config<A | A2>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Config.ts#L338)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Config.ts#L336)
 
 Since v2.0.0

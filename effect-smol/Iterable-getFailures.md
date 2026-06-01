@@ -30,6 +30,6 @@ assert.deepStrictEqual(
 declare const getFailures: <R0, L>(self: Iterable<Result<R0, L>>) => Iterable<L>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Iterable.ts#L1845)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Iterable.ts#L1855)
 
 Since v4.0.0

@@ -29,6 +29,6 @@ console.log(invalid._tag === "None") // true
 declare const zoneFromString: (zone: string) => Option.Option<TimeZone>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L1158)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L1179)
 
 Since v3.6.0

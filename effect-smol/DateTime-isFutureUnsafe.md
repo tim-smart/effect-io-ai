@@ -5,6 +5,11 @@ Module: `DateTime`<br />
 
 Checks synchronously if a `DateTime` is in the future compared to the current time.
 
+**When to use**
+
+Use when checking whether a `DateTime` is in the future with a synchronous
+live-clock read and `Clock`-based testability is not needed.
+
 **Details**
 
 This is a synchronous version that uses `Date.now()` directly.
@@ -27,6 +32,6 @@ console.log(DateTime.isFutureUnsafe(now)) // false
 declare const isFutureUnsafe: (self: DateTime) => boolean
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L1487)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L1513)
 
 Since v4.0.0

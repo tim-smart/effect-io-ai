@@ -11,6 +11,6 @@ Converts an `HttpClientRequest` to a Web `Request`, failing with `UrlParamsError
 declare const toWeb: (self: HttpClientRequest, options?: { readonly signal?: AbortSignal | undefined; }) => Effect.Effect<Request, UrlParams.UrlParamsError>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpClientRequest.ts#L982)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpClientRequest.ts#L991)
 
 Since v4.0.0

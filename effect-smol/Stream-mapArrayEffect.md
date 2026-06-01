@@ -5,6 +5,11 @@ Module: `Stream`<br />
 
 Maps over non-empty array chunks emitted by the stream effectfully.
 
+**When to use**
+
+Use when transformation needs to see and replace each non-empty emitted chunk
+effectfully instead of mapping individual stream elements.
+
 **Example** (Effectfully mapping stream chunks)
 
 ```ts
@@ -31,6 +36,6 @@ Effect.runPromise(program)
 declare const mapArrayEffect: { <A, B, E2, R2>(f: (a: Arr.NonEmptyReadonlyArray<A>, i: number) => Effect.Effect<Arr.NonEmptyReadonlyArray<B>, E2, R2>): <E, R>(self: Stream<A, E, R>) => Stream<B, E | E2, R | R2>; <A, E, R, B, E2, R2>(self: Stream<A, E, R>, f: (a: Arr.NonEmptyReadonlyArray<A>, i: number) => Effect.Effect<Arr.NonEmptyReadonlyArray<B>, E2, R2>): Stream<B, E | E2, R | R2>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L2181)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L2207)
 
 Since v4.0.0

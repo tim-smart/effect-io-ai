@@ -24,9 +24,9 @@ non-throwing validation.
 **Signature**
 
 ```ts
-declare const check: <A extends Brand<any>>(checks_0: AST.Check<Brand.Unbranded<A>>, ...checks: Array<AST.Check<Brand.Unbranded<A>>>) => Constructor<A>
+declare const check: <A extends Brand<any>>(checks_0: SchemaAST.Check<Brand.Unbranded<A>>, ...checks: Array<SchemaAST.Check<Brand.Unbranded<A>>>) => Constructor<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Brand.ts#L316)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Brand.ts#L318)
 
 Since v4.0.0

@@ -5,6 +5,11 @@ Module: `Trie`<br />
 
 Looks up the value for the specified key in the `Trie` unsafely.
 
+**When to use**
+
+Use when the trie key is known to exist and a missing key should be treated
+as a programming error.
+
 **Gotchas**
 
 `getUnsafe` throws if the key is not found. Use `get` instead to safely get
@@ -30,6 +35,6 @@ assert.throws(() => Trie.getUnsafe(trie, "mae"))
 declare const getUnsafe: { (key: string): <V>(self: Trie<V>) => V; <V>(self: Trie<V>, key: string): V; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Trie.ts#L623)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Trie.ts#L628)
 
 Since v4.0.0

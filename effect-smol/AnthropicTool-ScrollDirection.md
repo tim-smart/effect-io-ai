@@ -11,6 +11,6 @@ Direction used by computer-use scroll actions: `"up"`, `"down"`, `"left"`, or `"
 type ScrollDirection = typeof ScrollDirection.Type
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L577)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L588)
 
 Since v4.0.0

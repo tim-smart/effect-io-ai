@@ -20,9 +20,9 @@ specified value.
 **Signature**
 
 ```ts
-declare const isGreaterThan: (exclusiveMinimum: number, annotations?: Annotations.Filter) => AST.Filter<number>
+declare const isGreaterThan: (exclusiveMinimum: number, annotations?: Annotations.Filter) => SchemaAST.Filter<number>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L6636)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L6851)
 
 Since v4.0.0

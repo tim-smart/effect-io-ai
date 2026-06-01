@@ -5,11 +5,16 @@ Module: `SchemaAST`<br />
 
 Represents an index signature entry within an `Objects` node.
 
+**When to use**
+
+Use when constructing or inspecting object AST entries for record-like keys
+and values.
+
 **Details**
 
 - `parameter` — the key type AST (e.g. `String` for `string` keys,
   `TemplateLiteral` for patterned keys).
-- `type` — the value type AST.
+- `type` — the value type SchemaAST.
 - `merge` — optional `KeyValueCombiner` for handling duplicate keys.
 
 **Gotchas**
@@ -32,6 +37,6 @@ declare class IndexSignature { constructor(
   ) }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L1903)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L1920)
 
 Since v3.10.0

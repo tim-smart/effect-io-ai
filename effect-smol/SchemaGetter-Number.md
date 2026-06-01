@@ -7,12 +7,13 @@ Coerces any value to a `number` using the global `Number()` constructor.
 
 **When to use**
 
-Use when you need numeric coercion of an encoded value.
+Use when you need a schema getter to coerce a present encoded value to a
+number with `Number()`.
 
 **Details**
 
-- Pure, never fails (may produce `NaN` for non-numeric inputs).
-- Delegates to `globalThis.Number`.
+The getter is pure, never fails, and delegates to `globalThis.Number`. It may
+produce `NaN` for non-numeric inputs.
 
 **Example** (Coerce to number)
 
@@ -33,6 +34,6 @@ const toNumber = SchemaGetter.Number<string>()
 declare const Number: <E>() => Getter<number, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L770)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L777)
 
 Since v4.0.0

@@ -5,6 +5,11 @@ Module: `Queue`<br />
 
 Attempts to take one message from the queue synchronously.
 
+**When to use**
+
+Use when polling queue internals must not suspend or register a waiting taker,
+and `undefined` is an acceptable result for an empty queue.
+
 **Details**
 
 Returns an `Exit` for an immediately available message or for the queue's
@@ -43,6 +48,6 @@ const program = Effect.gen(function*() {
 declare const takeUnsafe: <A, E>(self: Dequeue<A, E>) => Exit<A, E> | undefined
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Queue.ts#L1553)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Queue.ts#L1582)
 
 Since v4.0.0

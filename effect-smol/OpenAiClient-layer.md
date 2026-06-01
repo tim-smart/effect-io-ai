@@ -21,6 +21,6 @@ are already available as values rather than loaded from `Config`.
 declare const layer: (options: Options) => Layer.Layer<OpenAiClient, never, HttpClient.HttpClient>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/OpenAiClient.ts#L300)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/OpenAiClient.ts#L299)
 
 Since v4.0.0

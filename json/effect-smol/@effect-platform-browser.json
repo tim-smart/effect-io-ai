@@ -55,7 +55,7 @@
     },
     "project": "@effect/platform-browser",
     "name": "CurrentXHRResponseType",
-    "description": "Context reference for the `XMLHttpRequest.responseType` used by the browser XHR HTTP client, defaulting to `\"text\"`.\n\n**When to use**\n\nUse when XHR-backed HTTP requests need to receive response bodies as text or\nas raw `ArrayBuffer` values.",
+    "description": "Context reference for the `XMLHttpRequest.responseType` used by the browser XHR HTTP client, defaulting to `\"text\"`.\n\n**When to use**\n\nUse when you need XHR-backed HTTP requests to receive response bodies as text\nor raw `ArrayBuffer` values.",
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
@@ -199,7 +199,7 @@
     },
     "project": "@effect/platform-browser",
     "name": "layerIndexedDb",
-    "description": "Creates a `KeyValueStore` layer backed by IndexedDB.\n\n**When to use**\n\nUse when a browser `KeyValueStore` needs persistent asynchronous IndexedDB\nstorage instead of the synchronous Web Storage APIs.\n\n**Details**\n\nThe database name defaults to `\"effect_key_value_store\"`. The layer requires\nthe `IndexedDb` service and stores string and `Uint8Array` values in the same\nbacking object store.\n\n**Gotchas**\n\nIndexedDB may be unavailable or blocked by browser settings, private browsing,\nquota limits, or restricted contexts. The string and `Uint8Array` accessors do\nnot coerce values stored with the other representation.",
+    "description": "Creates a `KeyValueStore` layer backed by IndexedDB.\n\n**When to use**\n\nUse when you need persistent asynchronous IndexedDB storage for a browser\n`KeyValueStore` instead of the synchronous Web Storage APIs.\n\n**Details**\n\nThe database name defaults to `\"effect_key_value_store\"`. The layer requires\nthe `IndexedDb` service and stores string and `Uint8Array` values in the same\nbacking object store.\n\n**Gotchas**\n\nIndexedDB may be unavailable or blocked by browser settings, private browsing,\nquota limits, or restricted contexts. The string and `Uint8Array` accessors do\nnot coerce values stored with the other representation.",
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
@@ -279,7 +279,7 @@
     },
     "project": "@effect/platform-browser",
     "name": "layerWebSocket",
-    "description": "Creates a `Socket` layer connected to the given URL using the browser `WebSocket` constructor.\n\n**When to use**\n\nUse when browser or client-side code needs a complete `Socket` layer\nconnected to a WebSocket URL.\n\n**Details**\n\nDelegates socket construction to `Socket.makeWebSocket` and provides the\nbrowser-backed `WebSocketConstructor` service.\n\n**Gotchas**\n\nBrowser WebSocket rules still control URL schemes, mixed-content blocking,\ncookies, authentication, origin checks, subprotocols, and extensions. Close\nevents are errors unless `closeCodeIsError` classifies the close code as\nclean.",
+    "description": "Creates a `Socket` layer connected to the given URL using the browser `WebSocket` constructor.\n\n**When to use**\n\nUse when you need browser code to satisfy the platform socket service from a\nURL without wiring the browser constructor service separately.\n\n**Details**\n\nDelegates socket construction to `Socket.makeWebSocket` and provides the\nbrowser-backed `WebSocketConstructor` service.\n\n**Gotchas**\n\nBrowser WebSocket rules still control URL schemes, mixed-content blocking,\ncookies, authentication, origin checks, subprotocols, and extensions. Close\nevents are errors unless `closeCodeIsError` classifies the close code as\nclean.",
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
@@ -343,7 +343,7 @@
     },
     "project": "@effect/platform-browser",
     "name": "layer",
-    "description": "Creates browser worker layers by combining the default `WorkerPlatform` with a spawner for `Worker`, `SharedWorker`, or `MessagePort` instances.\n\n**When to use**\n\nUse when browser parent or client code needs both the browser\n`WorkerPlatform` and a `Spawner` from one layer.\n\n**Details**\n\nThe `spawn` callback receives the numeric worker id and may return a\n`Worker`, `SharedWorker`, or `MessagePort`.\n\n**Gotchas**\n\nScope finalization sends the worker close protocol over the port. Dedicated\nworkers created by `spawn` are not terminated by this layer.",
+    "description": "Creates browser worker layers by combining the default `WorkerPlatform` with a spawner for `Worker`, `SharedWorker`, or `MessagePort` instances.\n\n**When to use**\n\nUse when you need both the browser `WorkerPlatform` and a `Spawner` from one\nlayer.\n\n**Details**\n\nThe `spawn` callback receives the numeric worker id and may return a\n`Worker`, `SharedWorker`, or `MessagePort`.\n\n**Gotchas**\n\nScope finalization sends the worker close protocol over the port. Dedicated\nworkers created by `spawn` are not terminated by this layer.",
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
@@ -359,7 +359,7 @@
     },
     "project": "@effect/platform-browser",
     "name": "layer",
-    "description": "Layer that provides a browser `WorkerRunnerPlatform` using the global `self` worker context.\n\n**When to use**\n\nUse when a browser worker entry point uses the ambient `self` object as the\nworker transport.\n\n**Details**\n\nDelegates to `make(self)` and provides the runner-side platform used by\nprotocols such as `RpcServer.layerProtocolWorkerRunner`.\n\n**Gotchas**\n\nThis layer depends on the browser worker global `self`. Use\n`layerMessagePort` when the transport is an explicit `MessagePort` or\n`Window`.",
+    "description": "Layer that provides a browser `WorkerRunnerPlatform` using the global `self` worker context.\n\n**When to use**\n\nUse when you need a browser worker entry point to use the ambient `self`\nobject as the worker transport.\n\n**Details**\n\nDelegates to `make(self)` and provides the runner-side platform used by\nprotocols such as `RpcServer.layerProtocolWorkerRunner`.\n\n**Gotchas**\n\nThis layer depends on the browser worker global `self`. Use\n`layerMessagePort` when the transport is an explicit `MessagePort` or\n`Window`.",
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
@@ -413,7 +413,7 @@
     "since": "4.0.0",
     "category": "errors",
     "signature": "declare class ClipboardError",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/Clipboard.ts#L79"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/Clipboard.ts#L84"
   },
   {
     "_tag": "Constant",
@@ -423,13 +423,13 @@
     },
     "project": "@effect/platform-browser",
     "name": "Clipboard",
-    "description": "Service tag for browser clipboard capabilities.\n\n**When to use**\n\nUse when an Effect needs to require or provide clipboard capabilities through\nthe context.",
+    "description": "Service tag for browser clipboard capabilities.\n\n**When to use**\n\nUse when you need to require or provide clipboard capabilities through\nEffect's context.",
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
     "category": "services",
     "signature": "declare const Clipboard: Context.Service<Clipboard, Clipboard>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/Clipboard.ts#L100"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/Clipboard.ts#L105"
   },
   {
     "_tag": "Constant",
@@ -445,7 +445,7 @@
     "since": "4.0.0",
     "category": "layers",
     "signature": "declare const layer: Layer.Layer<Clipboard, never, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/Clipboard.ts#L124"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/Clipboard.ts#L129"
   },
   {
     "_tag": "Function",
@@ -461,7 +461,7 @@
     "since": "4.0.0",
     "category": "constructors",
     "signature": "declare const make: (impl: Omit<Clipboard, \"clear\" | \"writeBlob\" | typeof TypeId>) => Clipboard",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/Clipboard.ts#L108"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/Clipboard.ts#L113"
   },
   {
     "_tag": "Interface",
@@ -471,13 +471,13 @@
     },
     "project": "@effect/platform-browser",
     "name": "Clipboard",
-    "description": "Defines the service interface for reading from, writing to, and clearing the browser clipboard.\n\n**Details**\n\n`read` and `write` work with `ClipboardItem` arrays. `readString` and\n`writeString` use text, `writeBlob` writes one `Blob`, and `clear` writes an\nempty string.\n\n**Gotchas**\n\nClipboard access generally requires a secure context and may require user\nactivation, permissions, or a focused document. `ClipboardItem` and non-text\nMIME type support varies by browser. Failed browser operations are surfaced\nas `ClipboardError`.",
+    "description": "Defines the service interface for reading from, writing to, and clearing the browser clipboard.\n\n**When to use**\n\nUse when an application needs clipboard operations through an Effect service\nso browser failures stay in the error channel.\n\n**Details**\n\n`read` and `write` work with `ClipboardItem` arrays. `readString` and\n`writeString` use text, `writeBlob` writes one `Blob`, and `clear` writes an\nempty string.\n\n**Gotchas**\n\nClipboard access generally requires a secure context and may require user\nactivation, permissions, or a focused document. `ClipboardItem` and non-text\nMIME type support varies by browser. Failed browser operations are surfaced\nas `ClipboardError`.",
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
     "category": "models",
     "signature": "export interface Clipboard {\n  readonly [TypeId]: typeof TypeId\n  readonly read: Effect.Effect<ClipboardItems, ClipboardError>\n  readonly readString: Effect.Effect<string, ClipboardError>\n  readonly write: (items: ClipboardItems) => Effect.Effect<void, ClipboardError>\n  readonly writeString: (text: string) => Effect.Effect<void, ClipboardError>\n  readonly writeBlob: (blob: Blob) => Effect.Effect<void, ClipboardError>\n  readonly clear: Effect.Effect<void, ClipboardError>\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/Clipboard.ts#L63"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/Clipboard.ts#L68"
   },
   {
     "_tag": "Class",
@@ -551,7 +551,7 @@
     },
     "project": "@effect/platform-browser",
     "name": "Geolocation",
-    "description": "Service tag for browser geolocation capabilities.\n\n**When to use**\n\nUse when an Effect needs to access or provide geolocation capabilities\nthrough the context.",
+    "description": "Service tag for browser geolocation capabilities.\n\n**When to use**\n\nUse when you need to access or provide geolocation capabilities through\nEffect's context.",
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
@@ -935,7 +935,7 @@
     },
     "project": "@effect/platform-browser",
     "name": "AutoIncrement",
-    "description": "Schema for auto-incremented IndexedDB keys, accepting integers from 1 through `2 ** 53`.\n\n**When to use**\n\nUse when defining numeric key-path fields for `IndexedDbTable` definitions\nthat use IndexedDB auto-increment keys.\n\n**Details**\n\nThe schema accepts integer values from `1` through `2 ** 53`, matching the\nrange used for generated IndexedDB auto-increment keys.",
+    "description": "Schema for auto-incremented IndexedDB keys, accepting integers from 1 through `2 ** 53`.\n\n**When to use**\n\nUse when you need to define numeric key-path fields for `IndexedDbTable`\ndefinitions that use IndexedDB auto-increment keys.\n\n**Details**\n\nThe schema accepts integer values from `1` through `2 ** 53`, matching the\nrange used for generated IndexedDB auto-increment keys.",
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
@@ -1015,7 +1015,7 @@
     },
     "project": "@effect/platform-browser",
     "name": "IndexedDbDatabase",
-    "description": "Service tag for an open IndexedDB database, its `IDBKeyRange` constructor, reactivity service, and rebuild effect.\n\n**When to use**\n\nUse when an effect needs access to the live database service after an\n`IndexedDbSchema` layer has been provided, especially for `rebuild` or\nlower-level database primitives.\n\n**Details**\n\n`database` is a mutable reference to the current `IDBDatabase`. `IDBKeyRange`\nand `reactivity` are shared with query builders created from the schema.\n\n**Gotchas**\n\n`rebuild` closes and deletes the browser database, then reopens it and reruns\nmigrations. Records not recreated by migrations are removed.",
+    "description": "Service tag for an open IndexedDB database, its `IDBKeyRange` constructor, reactivity service, and rebuild effect.\n\n**When to use**\n\nUse when you need access to the live database service after an\n`IndexedDbSchema` layer has been provided, especially for `rebuild` or\nlower-level database primitives.\n\n**Details**\n\n`database` is a mutable reference to the current `IDBDatabase`. `IDBKeyRange`\nand `reactivity` are shared with query builders created from the schema.\n\n**Gotchas**\n\n`rebuild` closes and deletes the browser database, then reopens it and reruns\nmigrations. Records not recreated by migrations are removed.",
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
@@ -1719,13 +1719,13 @@
     },
     "project": "@effect/platform-browser",
     "name": "make",
-    "description": "Creates an `IndexedDbVersion` from one or more table definitions.\n\n**Details**\n\nThe returned version exposes a `tables` map keyed by each table's\n`tableName`, and its type is the union of the supplied table definitions.\n\n**Gotchas**\n\nThis constructor only describes the target schema; object stores and indexes\nstill need to be created in the corresponding `IndexedDbDatabase` migration.\nDuplicate table names are not rejected, and the runtime map keeps the later\ntable for a repeated key.",
+    "description": "Creates an `IndexedDbVersion` from one or more table definitions.\n\n**When to use**\n\nUse when you need a typed description of the target IndexedDB schema that a\ndatabase migration will materialize.\n\n**Details**\n\nThe returned version exposes a `tables` map keyed by each table's\n`tableName`, and its type is the union of the supplied table definitions.\n\n**Gotchas**\n\nThis constructor only describes the target schema; object stores and indexes\nstill need to be created in the corresponding `IndexedDbDatabase` migration.\nDuplicate table names are not rejected, and the runtime map keeps the later\ntable for a repeated key.",
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
     "category": "constructors",
     "signature": "declare const make: <const Tables extends NonEmptyReadonlyArray<IndexedDbTable.AnyWithProps>>(...tables: Tables) => IndexedDbVersion<Tables[number]>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbVersion.ts#L126"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbVersion.ts#L131"
   },
   {
     "_tag": "Interface",
@@ -1879,7 +1879,7 @@
     },
     "project": "@effect/platform-browser",
     "name": "Permissions",
-    "description": "Service tag for browser permission querying.\n\n**When to use**\n\nUse when an Effect needs to require or provide browser permission querying\nthrough the context.",
+    "description": "Service tag for browser permission querying.\n\n**When to use**\n\nUse when you need to require or provide browser permission querying through\nEffect's context.",
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
@@ -1895,7 +1895,7 @@
     },
     "project": "@effect/platform-browser",
     "name": "layer",
-    "description": "Provides the `Permissions` service using the browser `navigator.permissions` API.\n\n**When to use**\n\nUse when browser programs need a live `Permissions` service backed by the\nambient `navigator.permissions` implementation.\n\n**Details**\n\n`query` delegates to `navigator.permissions.query({ name })` and wraps\nrejected browser operations in `PermissionsError`.",
+    "description": "Provides the `Permissions` service using the browser `navigator.permissions` API.\n\n**When to use**\n\nUse when you need a live browser `Permissions` service backed by the ambient\n`navigator.permissions` implementation.\n\n**Details**\n\n`query` delegates to `navigator.permissions.query({ name })` and wraps\nrejected browser operations in `PermissionsError`.",
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",

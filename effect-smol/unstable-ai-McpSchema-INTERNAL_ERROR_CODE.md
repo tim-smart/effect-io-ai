@@ -7,7 +7,8 @@ Represents the JSON-RPC error code for internal server errors.
 
 **When to use**
 
-Use when you need the JSON-RPC error code for internal server errors.
+Use when building an MCP/JSON-RPC error response for an unexpected
+server-side failure.
 
 **Signature**
 
@@ -15,6 +16,6 @@ Use when you need the JSON-RPC error code for internal server errors.
 declare const INTERNAL_ERROR_CODE: -32603
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L528)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L530)
 
 Since v4.0.0

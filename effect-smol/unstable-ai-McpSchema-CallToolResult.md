@@ -20,6 +20,6 @@ exceptional conditions, should be reported as an MCP error response.
 declare class CallToolResult
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L1541)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L1543)
 
 Since v4.0.0

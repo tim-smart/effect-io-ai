@@ -7,7 +7,7 @@ Gets the current value of the Ref.
 
 **When to use**
 
-Use to read the current value without changing it.
+Use to read the current `Ref` value without changing it.
 
 **Example** (Getting the current value)
 

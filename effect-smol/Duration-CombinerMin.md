@@ -20,6 +20,6 @@ Use to keep the shortest `Duration` through APIs that consume a `Combiner`.
 declare const CombinerMin: Combiner.Combiner<Duration>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Duration.ts#L1846)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Duration.ts#L1857)
 
 Since v4.0.0

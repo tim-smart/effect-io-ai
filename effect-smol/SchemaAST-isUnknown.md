@@ -7,7 +7,7 @@ Narrows an `AST` to `Unknown`.
 
 **When to use**
 
-Use when inspecting a schema AST and you need to handle the `Unknown` node
+Use when you need to inspect a schema AST and handle the `Unknown` node
 variant specifically.
 
 **See**

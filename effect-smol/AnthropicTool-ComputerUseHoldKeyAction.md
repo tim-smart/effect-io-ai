@@ -24,6 +24,6 @@ the number of seconds to hold it.
 type ComputerUseHoldKeyAction = typeof ComputerUseHoldKeyAction.Type
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L927)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L944)
 
 Since v4.0.0

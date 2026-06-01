@@ -5,9 +5,10 @@ Module: `DateTime`<br />
 
 Creates a named time zone effectfully from an IANA time zone identifier.
 
-**Details**
+**When to use**
 
-If the time zone is invalid, it will fail with an `IllegalArgumentError`.
+Use when invalid IANA zone ids should fail in the Effect error channel
+instead of returning `Option.none` or throwing.
 
 **Example** (Creating named time zones effectfully)
 
@@ -27,6 +28,6 @@ const program = Effect.gen(function*() {
 declare const zoneMakeNamedEffect: (zoneId: string) => Effect.Effect<TimeZone.Named, IllegalArgumentError>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L1109)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L1130)
 
 Since v3.6.0

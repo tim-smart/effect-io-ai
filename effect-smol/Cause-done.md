@@ -8,8 +8,7 @@ Creates an Effect that fails with a `Done` error. Shorthand for
 
 **When to use**
 
-Use when you use this in effect workflows that model stream or queue completion through
-the error channel.
+Use when you model stream or queue completion through the error channel.
 
 **Example** (failing with Done)
 
@@ -33,6 +32,6 @@ Effect.runPromiseExit(program).then((exit) => {
 declare const done: <A = void>(value?: A) => Effect.Effect<never, Done<A>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L1471)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L1469)
 
 Since v4.0.0

@@ -13,7 +13,7 @@ transformation target is `void`.
 **Signature**
 
 ```ts
-declare const isNoContent: (ast: AST.AST) => boolean
+declare const isNoContent: (ast: SchemaAST.AST) => boolean
 ```
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiSchema.ts#L475)

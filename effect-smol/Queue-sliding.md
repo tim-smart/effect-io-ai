@@ -8,8 +8,8 @@ new elements are added and the oldest elements are dropped.
 
 **When to use**
 
-Use when producers should not block and message loss is acceptable.
-Useful when you want to maintain a rolling window of the most recent messages.
+Use when you need producer offers not to block and can accept dropping the
+oldest messages, such as when maintaining a rolling window of recent values.
 
 **Example** (Creating sliding queues)
 

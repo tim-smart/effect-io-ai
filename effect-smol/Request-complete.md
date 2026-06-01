@@ -7,8 +7,8 @@ Completes a request entry with the provided result.
 
 **When to use**
 
-Use to finish a `Request.Entry` when you already have the request's final
-`Exit` result.
+Use when you need to finish a `Request.Entry` with a prebuilt final `Exit`
+result.
 
 **See**
 

@@ -16,9 +16,9 @@ specified value.
 **Signature**
 
 ```ts
-declare const isLessThanBigInt: (exclusiveMaximum: bigint, annotations?: Annotations.Filter) => AST.Filter<bigint>
+declare const isLessThanBigInt: (exclusiveMaximum: bigint, annotations?: Annotations.Filter) => SchemaAST.Filter<bigint>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L7203)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L7418)
 
 Since v4.0.0

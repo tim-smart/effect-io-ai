@@ -8,14 +8,15 @@ back to an optional key.
 
 **When to use**
 
-Use to convert optional struct keys (declared with `Schema.optionalKey`) to
-  `Option` values.
+Use when you need a schema transformation to convert optional struct keys
+(declared with `Schema.optionalKey`) to `Option` values.
 
 **Details**
 
-- Decode: absent key (`None`) → `Some(None)`, present key (`Some(v)`) → `Some(Some(v))`.
-- Encode: `Some(None)` → `None` (omit key), `Some(Some(v))` → `Some(v)`.
-- Uses `transformOptional` under the hood.
+Decoding maps an absent key (`None`) to `Some(None)` and a present key
+(`Some(v)`) to `Some(Some(v))`. Encoding maps `Some(None)` to `None` to omit
+the key, and maps `Some(Some(v))` to `Some(v)`. This uses
+`transformOptional` under the hood.
 
 **Example** (Optional key to Option)
 
@@ -44,6 +45,6 @@ const schema = Schema.Struct({
 declare const optionFromOptionalKey: <T>() => Transformation<Option.Option<T>, T>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L1257)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L1275)
 
 Since v4.0.0

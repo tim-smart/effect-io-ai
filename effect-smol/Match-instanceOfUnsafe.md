@@ -7,7 +7,7 @@ Checks whether a value is an instance of a constructor without type-safe narrowi
 
 **When to use**
 
-Use when constructor matching needs the unsafe refinement type.
+Use when you need constructor matching to use the unsafe refinement type.
 
 **Details**
 

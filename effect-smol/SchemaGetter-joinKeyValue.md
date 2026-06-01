@@ -7,12 +7,14 @@ Joins a record of key-value pairs into a delimited string.
 
 **When to use**
 
-Use when a decoded record needs to be serialized as a delimited key-value string.
+Use when you need a schema getter to serialize a present decoded record as a
+delimited key-value string.
 
 **Details**
 
-- Joins entries with `separator` (default `,`) and key/value with `keyValueSeparator` (default `=`).
-- Pure, never fails.
+The getter is pure and never fails. It joins entries with `separator`
+(default `,`) and joins each key and value with `keyValueSeparator` (default
+`=`).
 
 **Example** (Join key-value record)
 
@@ -33,6 +35,6 @@ const join = SchemaGetter.joinKeyValue()
 declare const joinKeyValue: <E extends Record<PropertyKey, string>>(options?: { readonly separator?: string | undefined; readonly keyValueSeparator?: string | undefined; }) => Getter<string, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L1182)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L1196)
 
 Since v4.0.0

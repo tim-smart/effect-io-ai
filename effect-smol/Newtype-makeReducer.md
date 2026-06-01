@@ -7,8 +7,8 @@ Lifts a `Reducer` for the carrier type into a `Reducer` for the newtype.
 
 **When to use**
 
-Use when you need to fold or reduce over a collection of newtype
-values.
+Use when you need to reduce a collection of newtype-wrapped values with the
+carrier's reducer, without manually unwrapping.
 
 **Details**
 
@@ -39,6 +39,6 @@ Newtype.value(total) // 6
 declare const makeReducer: <N extends Newtype.Any>(reducer: Reducer.Reducer<Newtype.Carrier<N>>) => Reducer.Reducer<N>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Newtype.ts#L368)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Newtype.ts#L371)
 
 Since v4.0.0

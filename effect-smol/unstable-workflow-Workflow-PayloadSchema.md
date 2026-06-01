@@ -17,6 +17,6 @@ type PayloadSchema<W> = W extends Workflow<
   : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Workflow.ts#L262)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Workflow.ts#L270)
 
 Since v4.0.0

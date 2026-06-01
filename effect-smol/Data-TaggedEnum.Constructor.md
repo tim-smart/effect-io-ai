@@ -7,7 +7,8 @@ The full constructors-and-matchers object type returned by `taggedEnum`.
 
 **When to use**
 
-Use to type the constructors-and-matchers object returned by `taggedEnum`.
+Use when you want to annotate an exported constructor bundle so downstream
+code keeps exact variant constructors and exhaustive matching.
 
 **Details**
 
@@ -85,6 +86,6 @@ type Constructor<A> = Types.Simplify<
   >
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Data.ts#L464)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Data.ts#L465)
 
 Since v3.1.0

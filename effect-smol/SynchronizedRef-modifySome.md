@@ -8,7 +8,8 @@ Computes a return value and an optional new ref value atomically.
 
 **When to use**
 
-Use to compute a return value while optionally updating the stored value.
+Use to compute a return value while optionally updating a `SynchronizedRef`
+under its semaphore.
 
 **See**
 
@@ -21,6 +22,6 @@ Use to compute a return value while optionally updating the stored value.
 declare const modifySome: { <B, A>(pf: (a: A) => readonly [B, Option.Option<A>]): (self: SynchronizedRef<A>) => Effect.Effect<B>; <A, B>(self: SynchronizedRef<A>, pf: (a: A) => readonly [B, Option.Option<A>]): Effect.Effect<B>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SynchronizedRef.ts#L344)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SynchronizedRef.ts#L349)
 
 Since v2.0.0

@@ -7,11 +7,12 @@ Returns the success value of an Exit as an Option.
 
 **When to use**
 
-Use when you want to optionally extract the value without pattern matching
+Use when you need the success value from an `Exit` as an `Option` instead of
+pattern matching.
 
 **Details**
 
-- Returns `Option.some(value)` for a Success, `Option.none()` for a Failure
+Returns `Option.some(value)` for a Success and `Option.none()` for a Failure.
 
 **Example** (Getting the success value)
 
@@ -33,6 +34,6 @@ console.log(Exit.getSuccess(Exit.fail("err"))) // { _tag: "None" }
 declare const getSuccess: <A, E>(self: Exit<A, E>) => Option<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Exit.ts#L1076)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Exit.ts#L1067)
 
 Since v4.0.0

@@ -7,9 +7,8 @@ Creates an unbounded queue that can grow to any size without blocking producers.
 
 **When to use**
 
-Use when producers should never be blocked; unbounded queues never apply backpressure, so producers
-can always add messages successfully. This is useful when you want to prioritize
-producer throughput over memory usage control.
+Use when you need producers to add messages without backpressure and accept
+unbounded memory growth.
 
 **Example** (Creating unbounded queues)
 
@@ -40,6 +39,6 @@ const program = Effect.gen(function*() {
 declare const unbounded: <A, E = never>() => Effect<Queue<A, E>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Queue.ts#L657)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Queue.ts#L656)
 
 Since v2.0.0

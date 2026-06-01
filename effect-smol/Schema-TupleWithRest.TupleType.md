@@ -12,12 +12,12 @@ portion of a `TupleWithRest` schema.
 type TupleType = Top & {
     readonly Type: ReadonlyArray<unknown>
     readonly Encoded: ReadonlyArray<unknown>
-    readonly ast: AST.Arrays
+    readonly ast: SchemaAST.Arrays
     readonly "~type.make": ReadonlyArray<unknown>
     readonly "Iso": ReadonlyArray<unknown>
   }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L3741)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L3935)
 
 Since v3.10.0

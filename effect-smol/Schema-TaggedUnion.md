@@ -14,7 +14,7 @@ export interface TaggedUnion<Cases extends Record<string, Top>> extends
     { [K in keyof Cases]: Cases[K]["Encoded"] }[keyof Cases],
     { [K in keyof Cases]: Cases[K]["DecodingServices"] }[keyof Cases],
     { [K in keyof Cases]: Cases[K]["EncodingServices"] }[keyof Cases],
-    AST.Union<AST.Objects>,
+    SchemaAST.Union<SchemaAST.Objects>,
     TaggedUnion<Cases>,
     { [K in keyof Cases]: Cases[K]["~type.make"] }[keyof Cases]
   >
@@ -36,6 +36,6 @@ export interface TaggedUnion<Cases extends Record<string, Top>> extends
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L5596)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L5811)
 
 Since v4.0.0

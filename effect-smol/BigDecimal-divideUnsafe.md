@@ -7,8 +7,8 @@ Provides an unsafe division operation on `BigDecimal`s.
 
 **When to use**
 
-Use when you need the decimal quotient and the divisor is known to be
-non-zero, so division by zero should be a thrown exception.
+Use when you need to divide `BigDecimal` values where the divisor is known
+to be non-zero, so division by zero should be a thrown exception.
 
 **Details**
 
@@ -38,6 +38,6 @@ console.log(BigDecimal.divideUnsafe(BigDecimal.fromStringUnsafe("6"), BigDecimal
 declare const divideUnsafe: { (that: BigDecimal): (self: BigDecimal) => BigDecimal; (self: BigDecimal, that: BigDecimal): BigDecimal; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigDecimal.ts#L687)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigDecimal.ts#L689)
 
 Since v4.0.0

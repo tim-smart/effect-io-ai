@@ -7,9 +7,8 @@ Handles failures by matching the cause of failure with eager evaluation.
 
 **When to use**
 
-Use when this is useful when you have effects that are likely to be already resolved
-and you want to avoid the overhead of the effect pipeline. For pending effects,
-it automatically falls back to the regular `matchCause` behavior.
+Use when you expect an `Effect` to already be resolved and want to match the
+`Cause` without regular effect pipeline overhead.
 
 **Details**
 
@@ -34,6 +33,6 @@ const handleResult = Effect.matchCauseEager(Effect.succeed(42), {
 declare const matchCauseEager: { <E, A2, A, A3>(options: { readonly onFailure: (cause: Cause.Cause<E>) => A2; readonly onSuccess: (value: A) => A3; }): <R>(self: Effect<A, E, R>) => Effect<A2 | A3, never, R>; <A, E, R, A2, A3>(self: Effect<A, E, R>, options: { readonly onFailure: (cause: Cause.Cause<E>) => A2; readonly onSuccess: (value: A) => A3; }): Effect<A2 | A3, never, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L5436)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L5475)
 
 Since v4.0.0

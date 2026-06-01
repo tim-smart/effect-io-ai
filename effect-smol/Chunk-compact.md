@@ -21,6 +21,6 @@ console.log(Chunk.toArray(result)) // [1, 3]
 declare const compact: <A>(self: Chunk<Option<A>>) => Chunk<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L1166)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L1191)
 
 Since v2.0.0

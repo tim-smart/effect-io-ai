@@ -29,7 +29,7 @@ declare class Composite { constructor(
     /**
      * The schema that caused the issue.
      */
-    ast: AST.AST,
+    ast: SchemaAST.AST,
     /**
      * The input value that caused the issue.
      */
@@ -41,6 +41,6 @@ declare class Composite { constructor(
   ) }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaIssue.ts#L473)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaIssue.ts#L474)
 
 Since v3.10.0

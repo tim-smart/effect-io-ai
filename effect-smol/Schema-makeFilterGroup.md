@@ -3,15 +3,15 @@ Module: `Schema`<br />
 
 ## Schema.makeFilterGroup
 
-Groups multiple checks into a single `AST.FilterGroup`, applying
+Groups multiple checks into a single `SchemaAST.FilterGroup`, applying
 optional shared annotations to the group as a whole.
 
 **Signature**
 
 ```ts
-declare const makeFilterGroup: <T>(checks: readonly [AST.Check<T>, ...Array<AST.Check<T>>], annotations?: Annotations.Filter | undefined) => AST.FilterGroup<T>
+declare const makeFilterGroup: <T>(checks: readonly [SchemaAST.Check<T>, ...Array<SchemaAST.Check<T>>], annotations?: Annotations.Filter | undefined) => SchemaAST.FilterGroup<T>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L5903)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L6118)
 
 Since v4.0.0

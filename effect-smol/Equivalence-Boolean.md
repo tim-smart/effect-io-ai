@@ -7,7 +7,7 @@ Equivalence instance for booleans using strict equality (`===`).
 
 **When to use**
 
-Use when an API needs an `Equivalence` instance for boolean equality.
+Use when you need to supply boolean equality.
 
 **Example** (Comparing booleans)
 
@@ -24,6 +24,6 @@ console.log(Equivalence.Boolean(true, false)) // false
 declare const Boolean: Equivalence<boolean>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Equivalence.ts#L318)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Equivalence.ts#L307)
 
 Since v4.0.0

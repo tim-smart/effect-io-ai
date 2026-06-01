@@ -7,8 +7,8 @@ Checks whether an unknown value is an Exit.
 
 **When to use**
 
-Use to validate unknown values at system boundaries
-- Works as a type guard, narrowing to `Exit<unknown, unknown>`
+Use to validate unknown values at system boundaries and narrow them to
+`Exit<unknown, unknown>`.
 
 **Details**
 

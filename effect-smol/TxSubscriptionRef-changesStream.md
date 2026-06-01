@@ -8,7 +8,7 @@ current value followed by every subsequent update.
 
 **When to use**
 
-Use to consume committed changes as a `Stream`.
+Use to consume `TxSubscriptionRef` committed changes as a `Stream`.
 
 **Example** (Streaming changes)
 
@@ -37,6 +37,6 @@ const program = Effect.gen(function*() {
 declare const changesStream: <A>(self: TxSubscriptionRef<A>) => Stream.Stream<A, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxSubscriptionRef.ts#L504)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxSubscriptionRef.ts#L510)
 
 Since v3.10.0

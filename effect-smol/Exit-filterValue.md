@@ -43,6 +43,6 @@ console.log(Result.isSuccess(result) && result.success) // 42
 declare const filterValue: <A, E>(self: Exit<A, E>) => Result.Result<A, Failure<never, E>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Exit.ts#L651)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Exit.ts#L645)
 
 Since v4.0.0

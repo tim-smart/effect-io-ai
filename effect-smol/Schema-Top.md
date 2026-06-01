@@ -26,7 +26,7 @@ export interface Top extends
     unknown,
     unknown,
     unknown,
-    AST.AST,
+    SchemaAST.AST,
     Top,
     unknown,
     unknown,
@@ -41,6 +41,6 @@ export interface Top extends
 {}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L630)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L639)
 
 Since v4.0.0

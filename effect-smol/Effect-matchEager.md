@@ -8,9 +8,8 @@ effects, with eager evaluation for resolved effects.
 
 **When to use**
 
-Use when you need to handle both success and failure cases and want
-optimal performance for resolved effects. This is particularly useful in
-scenarios where you frequently work with already computed values.
+Use when you need to handle both success and failure cases of an
+already-resolved `Effect` with optimized handling.
 
 **Details**
 
@@ -44,6 +43,6 @@ const program = Effect.gen(function*() {
 declare const matchEager: { <E, A2, A, A3>(options: { readonly onFailure: (error: E) => A2; readonly onSuccess: (value: A) => A3; }): <R>(self: Effect<A, E, R>) => Effect<A2 | A3, never, R>; <A, E, R, A2, A3>(self: Effect<A, E, R>, options: { readonly onFailure: (error: E) => A2; readonly onSuccess: (value: A) => A3; }): Effect<A2 | A3, never, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L5343)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L5384)
 
 Since v4.0.0

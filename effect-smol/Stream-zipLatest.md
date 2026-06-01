@@ -5,6 +5,11 @@ Module: `Stream`<br />
 
 Combines two streams by emitting each new element with the latest value from the other stream.
 
+**When to use**
+
+Use when two streams should start emitting combined pairs after both have
+produced at least one value.
+
 **Gotchas**
 
 Note: tracking the latest value is done on a per-array basis. That means
@@ -33,6 +38,6 @@ const program = Effect.gen(function*() {
 declare const zipLatest: { <AR, ER, RR>(right: Stream<AR, ER, RR>): <AL, EL, RL>(left: Stream<AL, EL, RL>) => Stream<[AL, AR], EL | ER, RL | RR>; <AL, EL, RL, AR, ER, RR>(left: Stream<AL, EL, RL>, right: Stream<AR, ER, RR>): Stream<[AL, AR], EL | ER, RL | RR>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L4120)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L4177)
 
 Since v2.0.0

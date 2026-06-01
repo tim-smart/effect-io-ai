@@ -35,6 +35,6 @@ console.log(engineers.length) // 2
 declare const toValues: <K, V>(self: HashMap<K, V>) => Array<V>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashMap.ts#L652)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashMap.ts#L657)
 
 Since v3.13.0

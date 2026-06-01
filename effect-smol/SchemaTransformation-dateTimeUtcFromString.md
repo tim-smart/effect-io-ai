@@ -8,8 +8,8 @@ string.
 
 **When to use**
 
-Use to decode date-time strings when the schema value should be a normalized
-`DateTime.Utc` and encode back as a UTC ISO string.
+Use when you need a schema transformation to decode date-time strings to a
+normalized `DateTime.Utc` and encode back as a UTC ISO string.
 
 **Details**
 
@@ -28,6 +28,6 @@ UTC, and fails with `InvalidValue` when parsing fails. Encode uses
 declare const dateTimeUtcFromString: Transformation<DateTime.Utc, string, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L1769)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L1795)
 
 Since v4.0.0

@@ -7,7 +7,7 @@ Encodes a `Uint8Array` or string to a Base64 string.
 
 **Details**
 
-- Pure, never fails.
+The getter is pure and never fails.
 
 **Example** (Encode to Base64)
 
@@ -29,6 +29,6 @@ const encode = SchemaGetter.encodeBase64<Uint8Array>()
 declare const encodeBase64: <E extends Uint8Array | string>() => Getter<string, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L1250)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L1264)
 
 Since v4.0.0

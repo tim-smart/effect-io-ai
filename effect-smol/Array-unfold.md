@@ -27,6 +27,6 @@ console.log(Array.unfold(1, (n) => n <= 5 ? Option.some([n, n + 1]) : Option.non
 declare const unfold: <B, A>(b: B, f: (b: B) => Option.Option<readonly [A, B]>) => Array<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L4310)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L4359)
 
 Since v2.0.0

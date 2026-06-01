@@ -9,8 +9,8 @@ reason, the failure value is the original cause.
 
 **When to use**
 
-Use to extract the first interruption reason when you need its fiber ID and
-annotations.
+Use when you need the first `Interrupt` reason from a `Cause`, including the
+fiber ID and annotations.
 
 **Example** (extracting the first interrupt)
 
@@ -33,6 +33,6 @@ if (!Result.isFailure(result)) {
 declare const findInterrupt: <E>(self: Cause<E>) => Result.Result<Interrupt, Cause<E>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L1066)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L1067)
 
 Since v4.0.0

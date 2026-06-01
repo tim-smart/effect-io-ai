@@ -40,6 +40,6 @@ console.log(result)
 declare const bindTo: { <N extends string>(name: N): <R, L>(self: Result<R, L>) => Result<Record<N, R>, L>; <R, L, N extends string>(self: Result<R, L>, name: N): Result<Record<N, R>, L>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L1741)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L1758)
 
 Since v2.0.0

@@ -7,7 +7,8 @@ Catches `NoSuchElementError` failures and converts them to `Option.none`.
 
 **When to use**
 
-Use to convert `NoSuchElementError` failures into `Option.none`.
+Use when you expect missing-value failures and want them to become an
+optional success while all other failures keep failing.
 
 **Details**
 
@@ -38,6 +39,6 @@ Effect.runPromise(none).then(console.log) // { _id: 'Option', _tag: 'None' }
 declare const catchNoSuchElement: <A, E, R>(self: Effect<A, E, R>) => Effect<Option<A>, Exclude<E, Cause.NoSuchElementError>, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L3397)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L3419)
 
 Since v4.0.0

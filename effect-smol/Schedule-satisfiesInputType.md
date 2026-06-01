@@ -7,13 +7,8 @@ Ensures that a schedule's input type extends a given type `T`.
 
 **When to use**
 
-Use to check an existing schedule input type. Use
-`setInputType` to adapt a schedule that does not depend on its input values.
-
-**Details**
-
-This helper is checked at compile time and does not change the schedule's
-runtime behavior.
+Use when you need a generic helper to prove that an existing schedule can
+consume a required input type without changing runtime behavior.
 
 **Example** (Constraining schedule input types)
 
@@ -42,6 +37,6 @@ const validSchedule = satisfiesStringInput(StringInputSchedule)
 declare const satisfiesInputType: <T>() => <Input extends T, Output = never, Error = never, Env = never>(self: Schedule<Output, Input, Error, Env>) => Schedule<Output, Input, Error, Env>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L3466)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L3479)
 
 Since v4.0.0

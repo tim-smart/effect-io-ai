@@ -7,7 +7,8 @@ Checks whether an object type contains any of the specified keys.
 
 **When to use**
 
-Use to conditionally branch based on the presence of keys in a type.
+Use to branch type-level logic when at least one key from a candidate key set
+exists on an object type.
 
 **Details**
 
@@ -31,6 +32,6 @@ type Has<A, Key> = (Key extends infer K ? K extends keyof A ? true : never : nev
   : true
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Types.ts#L380)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Types.ts#L381)
 
 Since v2.0.0

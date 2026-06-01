@@ -41,6 +41,6 @@ export interface SpanTransformer {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Telemetry.ts#L507)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Telemetry.ts#L512)
 
 Since v4.0.0

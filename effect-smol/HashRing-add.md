@@ -9,7 +9,7 @@ will be updated. For example, you can use this to update the node's weight.
 **When to use**
 
 Use to register one node in a `HashRing` so lookups and shard assignments can
-return it, or to update that node's weight.
+return it, or update that node's weight.
 
 **Details**
 

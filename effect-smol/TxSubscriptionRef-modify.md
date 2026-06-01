@@ -8,8 +8,8 @@ result and the new value. The new value is published to all subscribers atomical
 
 **When to use**
 
-Use to compute a separate return value and next state in one transactional
-update.
+Use to compute a separate return value and next `TxSubscriptionRef` state in
+one transactional update.
 
 **Example** (Modifying and returning a value)
 

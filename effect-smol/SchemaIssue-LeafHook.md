@@ -21,6 +21,6 @@ terminal issues.
 type LeafHook = (issue: Leaf) => string
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaIssue.ts#L929)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaIssue.ts#L930)
 
 Since v4.0.0

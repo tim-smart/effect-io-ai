@@ -5,6 +5,11 @@ Module: `Stream`<br />
 
 Takes elements from the stream while the effectful predicate is `true`.
 
+**When to use**
+
+Use when the leading-prefix predicate needs an Effect or service and the
+stream should stop before the first false result.
+
 **Example** (Effectfully taking while a predicate holds)
 
 ```ts
@@ -28,6 +33,6 @@ Effect.runPromise(program)
 declare const takeWhileEffect: { <A, E2, R2>(predicate: (a: NoInfer<A>, n: number) => Effect.Effect<boolean, E2, R2>): <E, R>(self: Stream<A, E, R>) => Stream<A, E | E2, R | R2>; <A, E, R, E2, R2>(self: Stream<A, E, R>, predicate: (a: NoInfer<A>, n: number) => Effect.Effect<boolean, E2, R2>): Stream<A, E | E2, R | R2>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L6640)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L6719)
 
 Since v4.0.0

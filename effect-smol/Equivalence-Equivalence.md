@@ -7,9 +7,7 @@ Represents an equivalence relation over type `A`.
 
 **When to use**
 
-Use as a type annotation for equivalence functions
-- Use when implementing custom equivalence logic
-- Use when working with collection operations that require equivalence relations
+Use as a type annotation when you accept or return an equivalence function.
 
 **Details**
 
@@ -54,6 +52,6 @@ console.log(pointEq({ x: 1, y: 2 }, { x: 1, y: 2 })) // true
 type Equivalence<A> = (self: A, that: A) => boolean
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Equivalence.ts#L104)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Equivalence.ts#L102)
 
 Since v2.0.0

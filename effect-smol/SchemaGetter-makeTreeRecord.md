@@ -7,7 +7,8 @@ Builds a nested tree object from a list of bracket-path entries.
 
 **When to use**
 
-Use to parse FormData or URLSearchParams entries into structured objects.
+Use when you need a schema getter to parse FormData or URLSearchParams
+entries into structured objects.
 - You have flat key-value pairs with bracket-path keys that need nesting.
 
 **Details**
@@ -49,6 +50,6 @@ const tree = SchemaGetter.makeTreeRecord([
 declare const makeTreeRecord: <A>(bracketPathEntries: ReadonlyArray<readonly [bracketPath: string, value: A]>) => Schema.TreeRecord<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L1803)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L1823)
 
 Since v4.0.0

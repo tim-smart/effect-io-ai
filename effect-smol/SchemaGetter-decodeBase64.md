@@ -7,7 +7,7 @@ Decodes a Base64 string to a `Uint8Array`.
 
 **Details**
 
-- Fails with `Issue.InvalidValue` if the input is not valid Base64.
+- Fails with `SchemaIssue.InvalidValue` if the input is not valid Base64.
 
 **Example** (Decode Base64 to bytes)
 
@@ -29,6 +29,6 @@ const decode = SchemaGetter.decodeBase64<string>()
 declare const decodeBase64: <E extends string>() => Getter<Uint8Array, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L1327)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L1341)
 
 Since v4.0.0

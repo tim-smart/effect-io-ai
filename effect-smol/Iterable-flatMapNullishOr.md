@@ -50,6 +50,6 @@ console.log(Array.from(foundValues)) // [1, 2, 3]
 declare const flatMapNullishOr: { <A, B>(f: (a: A) => B): (self: Iterable<A>) => Iterable<NonNullable<B>>; <A, B>(self: Iterable<A>, f: (a: A) => B): Iterable<NonNullable<B>>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Iterable.ts#L2025)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Iterable.ts#L2035)
 
 Since v4.0.0

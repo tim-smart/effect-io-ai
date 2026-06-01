@@ -7,7 +7,7 @@ Updates the value of the Ref atomically using the given function.
 
 **When to use**
 
-Use to apply a state transition without returning a value.
+Use to apply a `Ref` state transition without returning a value.
 
 **Example** (Updating a value)
 

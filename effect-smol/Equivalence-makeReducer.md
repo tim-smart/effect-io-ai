@@ -7,16 +7,14 @@ Creates a `Reducer` for combining `Equivalence` instances, useful for aggregatin
 
 **When to use**
 
-Use when you need to combine multiple equivalences from a collection using reducer patterns
-- Use when implementing fold operations over collections of equivalences
-- Use when working with reducers that operate on equivalences
+Use when you need a reducer that combines equivalences.
 
 **Details**
 
-- Returns a reducer that combines equivalences using `combine`
-- Uses an equivalence that always returns `true` as the identity element for empty collections
-- Uses `combineAll` for combining collections of equivalences
-- The reducer can be used with fold operations on collections
+Returns a reducer that combines equivalences using `combine`. The identity
+element for empty collections is an equivalence that always returns `true`.
+The reducer uses `combineAll` for collections of equivalences and can be used
+with fold operations.
 
 **Example** (Creating a Reducer)
 
@@ -47,6 +45,6 @@ console.log(combined(1, 1.5)) // false (strict equal fails)
 declare const makeReducer: <A>() => Reducer.Reducer<Equivalence<A>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Equivalence.ts#L878)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Equivalence.ts#L853)
 
 Since v4.0.0

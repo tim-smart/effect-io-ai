@@ -7,11 +7,11 @@ Checks whether a value is a `Set`.
 
 **When to use**
 
-Use when you need a runtime guard for `Set` values.
+Use when you need a `Predicate` runtime guard for `Set` values.
 
 **Details**
 
-- Uses `instanceof Set`.
+Uses `instanceof Set`.
 
 **Example** (Guard a Set)
 

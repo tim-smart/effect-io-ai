@@ -7,7 +7,8 @@ Adds a computed plain value to the do notation record.
 
 **When to use**
 
-Use when binding a derived (non-`Option`) value in a do notation pipeline
+Use when you need to bind a derived non-`Option` value in an `Option` do
+notation pipeline.
 
 **Example** (Adding a computed value)
 
@@ -36,6 +37,6 @@ assert.deepStrictEqual(result, Option.some({ x: 2, y: 3, sum: 5 }))
 declare const let: { <N extends string, A extends object, B>(name: Exclude<N, keyof A>, f: (a: NoInfer<A>) => B): (self: Option<A>) => Option<{ [K in N | keyof A]: K extends keyof A ? A[K] : B; }>; <A extends object, N extends string, B>(self: Option<A>, name: Exclude<N, keyof A>, f: (a: NoInfer<A>) => B): Option<{ [K in N | keyof A]: K extends keyof A ? A[K] : B; }>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L2451)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L2467)
 
 Since v2.0.0

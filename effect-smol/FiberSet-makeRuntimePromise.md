@@ -6,6 +6,11 @@ Module: `FiberSet`<br />
 Creates a scoped run function that forks effects into a new `FiberSet` and
 returns a `Promise` for each effect result.
 
+**When to use**
+
+Use when many scoped fibers should be tracked as a set while exposing each
+result through Promise-based APIs.
+
 **Details**
 
 Managed fibers are removed when they complete and are interrupted when the
@@ -37,6 +42,6 @@ const program = Effect.gen(function*() {
 declare const makeRuntimePromise: <R = never, A = unknown, E = unknown>() => Effect.Effect<(<XE extends E, XA extends A>(effect: Effect.Effect<XA, XE, R>, options?: (Effect.RunOptions & { readonly propagateInterruption?: boolean | undefined; }) | undefined) => Promise<XA>), never, R | Scope.Scope>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FiberSet.ts#L264)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FiberSet.ts#L269)
 
 Since v3.13.0

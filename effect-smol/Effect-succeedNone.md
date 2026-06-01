@@ -22,6 +22,6 @@ Effect.runPromise(program).then(console.log)
 declare const succeedNone: Effect<Option<never>, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L1056)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L1054)
 
 Since v2.0.0

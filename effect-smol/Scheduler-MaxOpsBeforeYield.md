@@ -8,8 +8,8 @@ can perform before yielding control back to the scheduler.
 
 **When to use**
 
-Use to tune scheduler fairness for CPU-bound fibers by changing the operation
-budget that triggers a scheduler yield.
+Use to tune scheduler fairness for CPU-bound fibers by changing the scheduler
+operation budget that triggers a yield.
 
 **Details**
 
@@ -27,6 +27,6 @@ execution thread.
 declare const MaxOpsBeforeYield: Context.Reference<number>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Scheduler.ts#L267)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Scheduler.ts#L269)
 
 Since v4.0.0

@@ -8,7 +8,8 @@ value; `Option.none` leaves the ref unchanged.
 
 **When to use**
 
-Use to apply a pure conditional update without returning a value.
+Use to apply a pure conditional `SynchronizedRef` update without returning a
+value.
 
 **See**
 
@@ -21,6 +22,6 @@ Use to apply a pure conditional update without returning a value.
 declare const updateSome: { <A>(f: (a: A) => Option.Option<A>): (self: SynchronizedRef<A>) => Effect.Effect<void>; <A>(self: SynchronizedRef<A>, f: (a: A) => Option.Option<A>): Effect.Effect<void>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SynchronizedRef.ts#L573)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SynchronizedRef.ts#L581)
 
 Since v2.0.0

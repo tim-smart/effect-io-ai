@@ -14,9 +14,9 @@ change when lowercased.
 **Signature**
 
 ```ts
-declare const isLowercased: (annotations?: Annotations.Filter) => AST.Filter<string>
+declare const isLowercased: (annotations?: Annotations.Filter) => SchemaAST.Filter<string>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L6321)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L6536)
 
 Since v4.0.0

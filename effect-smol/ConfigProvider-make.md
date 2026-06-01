@@ -50,6 +50,6 @@ const provider = ConfigProvider.make((path) => {
 declare const make: (get: (path: Path) => Effect.Effect<Node | undefined, SourceError>, mapInput?: (path: Path) => Path, prefix?: Path) => ConfigProvider
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ConfigProvider.ts#L453)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ConfigProvider.ts#L450)
 
 Since v2.0.0

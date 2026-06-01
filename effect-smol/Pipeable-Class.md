@@ -8,8 +8,8 @@ method.
 
 **When to use**
 
-Use when extend or compose this constructor when defining a class that should support
-Effect-style method chaining through `.pipe(...)`.
+Use when you need to define a class that supports Effect-style method
+chaining through `.pipe(...)`.
 
 **Signature**
 

@@ -10,7 +10,8 @@ is combined independently.
 
 **When to use**
 
-Use to fold a collection of structs into a single summary struct.
+Use when you need to fold same-shape records by accumulating each property
+independently into one summary record.
 
 **Details**
 
@@ -45,6 +46,6 @@ console.log(result) // { n: 6, s: "abc" }
 declare const makeReducer: <A>(reducers: { readonly [K in keyof A]: Reducer.Reducer<A[K]>; }, options?: { readonly omitKeyWhen?: ((a: A[keyof A]) => boolean) | undefined; }) => Reducer.Reducer<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Struct.ts#L995)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Struct.ts#L997)
 
 Since v4.0.0

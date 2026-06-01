@@ -7,8 +7,8 @@ Creates a layer for the OpenRouter client from provided `Config` values.
 
 **When to use**
 
-Use when OpenRouter client settings should be read from Effect `Config`
-values while providing `OpenRouterClient` as a layer.
+Use when you need client settings for OpenRouter to be read from Effect
+`Config` values while providing `OpenRouterClient` as a layer.
 
 **Details**
 
@@ -27,6 +27,6 @@ plain option.
 declare const layerConfig: (options?: { readonly apiKey?: Config.Config<Redacted.Redacted<string> | undefined> | undefined; readonly apiUrl?: Config.Config<string> | undefined; readonly siteReferrer?: Config.Config<string> | undefined; readonly siteTitle?: Config.Config<string> | undefined; readonly transformClient?: ((client: HttpClient.HttpClient) => HttpClient.HttpClient) | undefined; }) => Layer.Layer<OpenRouterClient, Config.ConfigError, HttpClient.HttpClient>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openrouter/src/OpenRouterClient.ts#L312)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openrouter/src/OpenRouterClient.ts#L311)
 
 Since v4.0.0

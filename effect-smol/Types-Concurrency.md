@@ -33,6 +33,6 @@ const inherit: Types.Concurrency = "inherit"
 type Concurrency = number | "unbounded" | "inherit"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Types.ts#L511)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Types.ts#L482)
 
 Since v2.0.0

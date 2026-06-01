@@ -7,9 +7,7 @@ Type lambda for `Equivalence`, used for higher-kinded type operations.
 
 **When to use**
 
-Use when rarely needed in application code
-- Use primarily for internal type system operations and HKT (Higher-Kinded Types) abstractions
-- Use when working with generic type constructors that require type lambdas
+Use when you need to abstract over `Equivalence` in higher-kinded type code.
 
 **Details**
 
@@ -45,6 +43,6 @@ export interface EquivalenceTypeLambda extends TypeLambda {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Equivalence.ts#L141)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Equivalence.ts#L137)
 
 Since v2.0.0

@@ -7,13 +7,13 @@ Extracts the input type `A` from a `Predicate<A>`.
 
 **When to use**
 
-Use when you want to infer the input type from a predicate type.
-- You are defining generic utilities over predicates.
+Use when you want to infer the input type from a predicate type while
+defining generic utilities over predicates.
 
 **Details**
 
-- Type-only; no runtime value is created.
-- Resolves to `never` if the type does not match `Predicate`.
+This is type-only and creates no runtime value. It resolves to `never` if
+the type does not match `Predicate`.
 
 **Example** (Infer input)
 

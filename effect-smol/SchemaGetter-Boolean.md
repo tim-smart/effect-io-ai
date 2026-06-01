@@ -7,12 +7,12 @@ Coerces any value to a `boolean` using the global `Boolean()` constructor.
 
 **When to use**
 
-Use when you need boolean coercion (truthiness check) of an encoded value.
+Use when you need a schema getter to coerce a present encoded value to a
+boolean with `Boolean()`.
 
 **Details**
 
-- Pure, never fails.
-- Delegates to `globalThis.Boolean`.
+The getter is pure, never fails, and delegates to `globalThis.Boolean`.
 
 **Example** (Coerce to boolean)
 
@@ -29,6 +29,6 @@ const toBool = SchemaGetter.Boolean<string>()
 declare const Boolean: <E>() => Getter<boolean, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L798)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L805)
 
 Since v4.0.0

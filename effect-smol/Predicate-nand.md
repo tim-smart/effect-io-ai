@@ -7,11 +7,11 @@ Creates a predicate that returns `true` unless both predicates are `true`.
 
 **When to use**
 
-Use when you want the logical NAND of two conditions.
+Use when you want to combine two `Predicate`s with logical NAND semantics.
 
 **Details**
 
-- Returns the negation of `and`.
+Returns the negation of `and`.
 
 **Example** (NAND)
 
@@ -34,6 +34,6 @@ console.log(notBoth("a"))
 declare const nand: { <A>(that: Predicate<A>): (self: Predicate<A>) => Predicate<A>; <A>(self: Predicate<A>, that: Predicate<A>): Predicate<A>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L1840)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L1845)
 
 Since v2.0.0

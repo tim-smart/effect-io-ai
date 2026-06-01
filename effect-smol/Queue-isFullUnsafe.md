@@ -5,6 +5,11 @@ Module: `Queue`<br />
 
 Checks whether the queue is full synchronously.
 
+**When to use**
+
+Use when an immediate `Queue` capacity snapshot is needed outside effectful
+code and racing queue changes are acceptable.
+
 **Example** (Checking fullness synchronously)
 
 ```ts
@@ -28,6 +33,6 @@ const program = Effect.gen(function*() {
 declare const isFullUnsafe: <A, E>(self: Dequeue<A, E>) => boolean
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Queue.ts#L1751)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Queue.ts#L1790)
 
 Since v4.0.0

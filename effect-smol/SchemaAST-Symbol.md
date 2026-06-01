@@ -7,8 +7,8 @@ AST node matching any `symbol` value.
 
 **When to use**
 
-Use when defining or inspecting the AST node class for schemas that match any
-JavaScript symbol value.
+Use when you need the AST node class for schemas that match any JavaScript
+symbol value.
 
 **Details**
 
@@ -26,6 +26,6 @@ When serialized to a string-based codec, symbols are converted via
 declare class Symbol
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L1490)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L1491)
 
 Since v4.0.0

@@ -8,8 +8,7 @@ data is missing.
 
 **When to use**
 
-Use when a config key may or may not be present and you want to handle both
-  cases explicitly.
+Use when you need to handle a config key that may or may not be present.
 
 **Gotchas**
 
@@ -37,6 +36,6 @@ const provider = ConfigProvider.fromUnknown({})
 declare const option: <A>(self: Config<A>) => Config<Option.Option<A>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Config.ts#L505)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Config.ts#L502)
 
 Since v2.0.0

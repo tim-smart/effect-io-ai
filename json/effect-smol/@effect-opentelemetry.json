@@ -183,7 +183,7 @@
     },
     "project": "@effect/opentelemetry",
     "name": "makeProducer",
-    "description": "Creates an OpenTelemetry metric producer from Effect metrics.\n\n**When to use**\n\nUse to create a `MetricProducer` when you need to wire Effect metrics into\nOpenTelemetry manually instead of using the scoped `layer` helper.\n\n**Details**\n\nRequires the current OpenTelemetry `Resource`, captures the current Effect\ncontext, and uses cumulative temporality by default. Pass `\"delta\"` for\ninterval-based values.",
+    "description": "Creates an OpenTelemetry metric producer from Effect metrics.\n\n**When to use**\n\nUse when you need a `MetricProducer` for manually wiring Effect metrics into\nOpenTelemetry instead of using the scoped `layer` helper.\n\n**Details**\n\nRequires the current OpenTelemetry `Resource`, captures the current Effect\ncontext, and uses cumulative temporality by default. Pass `\"delta\"` for\ninterval-based values.",
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
@@ -359,7 +359,7 @@
     },
     "project": "@effect/opentelemetry",
     "name": "configToAttributes",
-    "description": "Converts resource configuration into OpenTelemetry attributes, adding service name, optional service version, and telemetry SDK metadata.\n\n**When to use**\n\nUse to turn explicit service metadata into a raw OpenTelemetry attribute map\nfor lower-level resource construction or for merging with environment-derived\nattributes via `layerFromEnv`.\n\n**Details**\n\nThe returned record copies `attributes` first, then sets `service.name`,\n`telemetry.sdk.name`, and `telemetry.sdk.language`. `service.version` is\nincluded only when `serviceVersion` is provided.\n\n**Gotchas**\n\nCustom values for `service.name` and `telemetry.sdk.*` are overwritten by this\nhelper. An empty `serviceVersion` is treated as absent.",
+    "description": "Converts resource configuration into OpenTelemetry attributes, adding service name, optional service version, and telemetry SDK metadata.\n\n**When to use**\n\nUse to turn explicit service metadata into a raw OpenTelemetry attribute map\nfor lower-level resource construction or merging with environment-derived\nattributes via `layerFromEnv`.\n\n**Details**\n\nThe returned record copies `attributes` first, then sets `service.name`,\n`telemetry.sdk.name`, and `telemetry.sdk.language`. `service.version` is\nincluded only when `serviceVersion` is provided.\n\n**Gotchas**\n\nCustom values for `service.name` and `telemetry.sdk.*` are overwritten by this\nhelper. An empty `serviceVersion` is treated as absent.",
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
@@ -551,13 +551,13 @@
     },
     "project": "@effect/opentelemetry",
     "name": "layer",
-    "description": "Layer that creates an OpenTelemetry tracer from a provider and resource, then installs it as the Effect tracer.\n\n**When to use**\n\nUse when your application already supplies an `OtelTracerProvider` and a\n`Resource`, and you want Effect spans to be created by an OpenTelemetry\ntracer derived from those services.",
+    "description": "Layer that creates an OpenTelemetry tracer from a provider and resource, then installs it as the Effect tracer.\n\n**When to use**\n\nUse when you already provide an `OtelTracerProvider` and a `Resource`, and\nwant Effect spans backed by a tracer derived from them.",
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
     "category": "layers",
     "signature": "declare const layer: Layer.Layer<OtelTracer, never, OtelTracerProvider | Resource>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Tracer.ts#L238"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Tracer.ts#L237"
   },
   {
     "_tag": "Constant",
@@ -573,7 +573,7 @@
     "since": "4.0.0",
     "category": "accessors",
     "signature": "declare const currentOtelSpan: Effect.Effect<Otel.Span, Cause.NoSuchElementError, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Tracer.ts#L262"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Tracer.ts#L261"
   },
   {
     "_tag": "Constant",
@@ -583,13 +583,13 @@
     },
     "project": "@effect/opentelemetry",
     "name": "withSpanContext",
-    "description": "Sets an effect's parent span from the given OpenTelemetry `SpanContext`.\n\n**When to use**\n\nUse when OpenTelemetry instrumentation outside Effect has already\nproduced a parent span context and an effect should continue that trace.",
+    "description": "Sets an effect's parent span from the given OpenTelemetry `SpanContext`.\n\n**When to use**\n\nUse when you need an effect to continue a trace from a parent span context\nproduced by OpenTelemetry instrumentation outside Effect.",
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
     "category": "propagation",
     "signature": "declare const withSpanContext: { (spanContext: Otel.SpanContext): <A, E, R>(self: Effect.Effect<A, E, R>) => Effect.Effect<A, E, Exclude<R, Tracer.ParentSpan>>; <A, E, R>(self: Effect.Effect<A, E, R>, spanContext: Otel.SpanContext): Effect.Effect<A, E, Exclude<R, Tracer.ParentSpan>>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Tracer.ts#L367"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Tracer.ts#L366"
   },
   {
     "_tag": "Function",
@@ -631,13 +631,13 @@
     },
     "project": "@effect/opentelemetry",
     "name": "layer",
-    "description": "Creates a Web OpenTelemetry layer from configuration, providing the resource and enabling tracing, metrics, and logging when configured.\n\n**When to use**\n\nUse to install browser OpenTelemetry support for an Effect application when\nservice metadata is provided in code and tracing, metrics, or logging should\nbe enabled from supplied span processors, metric readers, or log record\nprocessors.\n\n**Details**\n\nThe configuration can be provided lazily or effectfully. The layer always\nprovides `Resource.Resource`; tracing, metrics, and logging are installed only\nwhen the corresponding processors or readers are non-empty.\n\n**Gotchas**\n\nBrowser resource metadata is explicit; this layer does not read\nOpenTelemetry environment variables. Empty processor or reader arrays are\ntreated as not configured.",
+    "description": "Creates a Web OpenTelemetry layer from configuration, providing the resource and enabling tracing, metrics, and logging when configured.\n\n**When to use**\n\nUse to install browser OpenTelemetry support when service metadata is\nconfigured in code and telemetry processors or readers are supplied directly.\n\n**Details**\n\nThe configuration can be provided lazily or effectfully. The layer always\nprovides `Resource.Resource`; tracing, metrics, and logging are installed only\nwhen the corresponding processors or readers are non-empty.\n\n**Gotchas**\n\nBrowser resource metadata is explicit; this layer does not read\nOpenTelemetry environment variables. Empty processor or reader arrays are\ntreated as not configured.",
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
     "category": "layers",
     "signature": "declare const layer: { (evaluate: LazyArg<Configuration>): Layer.Layer<Resource.Resource>; <E, R>(evaluate: Effect.Effect<Configuration, E, R>): Layer.Layer<Resource.Resource, E, R>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/WebSdk.ts#L122"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/WebSdk.ts#L120"
   },
   {
     "_tag": "Interface",

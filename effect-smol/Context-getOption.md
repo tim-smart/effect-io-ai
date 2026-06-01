@@ -7,8 +7,8 @@ Gets the service for a key safely wrapped in an `Option`.
 
 **When to use**
 
-Use when service absence is expected and should be represented
-as data. Use `getOrElse` when you want to provide a fallback value directly.
+Use when you need to read a `Context` service as an `Option` so absence is
+represented as data.
 
 **Details**
 
@@ -44,6 +44,6 @@ assert.deepStrictEqual(Context.getOption(context, Timeout), Option.none())
 declare const getOption: { <S, I>(service: Key<I, S>): <Services>(self: Context<Services>) => Option.Option<S>; <Services, S, I>(self: Context<Services>, service: Key<I, S>): Option.Option<S>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Context.ts#L1086)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Context.ts#L1087)
 
 Since v2.0.0

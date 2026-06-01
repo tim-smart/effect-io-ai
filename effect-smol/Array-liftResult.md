@@ -6,6 +6,11 @@ Module: `Array`<br />
 Lifts a `Result`-returning function into one that returns an array: failures
 produce `[]`, successes produce `[value]`.
 
+**When to use**
+
+Use when a fallible parser or lookup should participate in array pipelines as
+zero-or-one results and the failure value should be discarded.
+
 **Example** (Lifting a Result function)
 
 ```ts
@@ -32,6 +37,6 @@ console.log(liftedParseNumber("not a number")) // []
 declare const liftResult: <A extends Array<unknown>, E, B>(f: (...a: A) => Result.Result<B, E>) => (...a: A) => Array<B>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L4136)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L4185)
 
 Since v4.0.0

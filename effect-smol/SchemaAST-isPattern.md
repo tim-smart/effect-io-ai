@@ -5,6 +5,11 @@ Module: `SchemaAST`<br />
 
 Creates a `Filter` that validates strings by running `RegExp.test`.
 
+**When to use**
+
+Use when string validation should be represented as a schema `Filter` backed
+by a regular expression.
+
 **Details**
 
 The filter can be used with `Schema.filter` or attached directly to a
@@ -35,6 +40,6 @@ const emailFilter = SchemaAST.isPattern(/^[^@]+@[^@]+$/)
 declare const isPattern: (regExp: globalThis.RegExp, annotations?: Schema.Annotations.Filter) => Filter<string>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L2918)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L2949)
 
 Since v4.0.0

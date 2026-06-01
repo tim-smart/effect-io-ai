@@ -7,8 +7,8 @@ Input payload for the `view` command of Anthropic's text editor code execution t
 
 **When to use**
 
-Use when handling or validating the `view` command for Anthropic's text
-editor code execution tool.
+Use when working at the Anthropic protocol boundary and the code-execution
+view request must be distinguished from standalone text-editor view requests.
 
 **Details**
 

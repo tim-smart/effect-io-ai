@@ -24,6 +24,6 @@ console.log(Cause.isAsyncFiberError("nope")) // false
 declare const isAsyncFiberError: (u: unknown) => u is AsyncFiberError
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L1716)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L1714)
 
 Since v4.0.0

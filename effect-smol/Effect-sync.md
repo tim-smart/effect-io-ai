@@ -7,7 +7,8 @@ Creates an `Effect` that represents a synchronous side-effectful computation.
 
 **When to use**
 
-Use when you are sure the operation will not fail.
+Use when you need to wrap a synchronous side-effectful operation that is not
+expected to throw.
 
 **Details**
 
@@ -43,6 +44,6 @@ const program = log("Hello, World!")
 declare const sync: <A>(thunk: LazyArg<A>) => Effect<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L1202)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L1203)
 
 Since v2.0.0

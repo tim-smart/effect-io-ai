@@ -8,8 +8,9 @@ streaming implementations.
 
 **When to use**
 
-Use to build a `LanguageModel.Service` from provider-specific final and
-streaming text generation functions.
+Use when you are implementing a provider adapter and need to expose the
+standard language-model service while keeping provider-specific request hooks
+behind it.
 
 **Details**
 
@@ -38,6 +39,6 @@ response format prepared in `ProviderOptions`; invalid parts fail decoding as
 declare const make: (params: { readonly generateText: (options: ProviderOptions) => Effect.Effect<Array<Response.PartEncoded>, AiError.AiError, IdGenerator>; readonly streamText: (options: ProviderOptions) => Stream.Stream<Response.StreamPartEncoded, AiError.AiError, IdGenerator>; readonly codecTransformer?: CodecTransformer | undefined; }) => Effect.Effect<Service>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/LanguageModel.ts#L786)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/LanguageModel.ts#L787)
 
 Since v4.0.0

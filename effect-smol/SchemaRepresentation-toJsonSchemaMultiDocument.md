@@ -8,7 +8,8 @@ multi-document.
 
 **When to use**
 
-Use when you have multiple schemas sharing references.
+Use when you need to export related schema representation documents together
+so shared definitions stay in multi-document JSON Schema form.
 
 **See**
 
@@ -22,6 +23,6 @@ Use when you have multiple schemas sharing references.
 declare const toJsonSchemaMultiDocument: (document: MultiDocument, options?: Schema.ToJsonSchemaOptions) => JsonSchema.MultiDocument<"draft-2020-12">
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaRepresentation.ts#L2279)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaRepresentation.ts#L2288)
 
 Since v4.0.0

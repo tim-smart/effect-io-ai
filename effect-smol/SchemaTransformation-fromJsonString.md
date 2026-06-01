@@ -8,8 +8,9 @@ Decodes a JSON string with `JSON.parse` and encodes a value with
 
 **When to use**
 
-Use when you use this for JSON stored or transmitted as a string, usually before composing
-with another schema that validates the parsed structure.
+Use when you need a schema transformation to decode JSON stored or
+transmitted as a string, usually before composing with another schema that
+validates the parsed structure.
 
 **Details**
 
@@ -37,6 +38,6 @@ const schema = Schema.String.pipe(
 declare const fromJsonString: Transformation<unknown, string, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L1577)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L1602)
 
 Since v4.0.0

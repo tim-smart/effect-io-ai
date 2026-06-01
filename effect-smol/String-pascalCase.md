@@ -22,6 +22,6 @@ boundaries into PascalCase.
 declare const pascalCase: (self: string) => string
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L1376)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L1375)
 
 Since v4.0.0

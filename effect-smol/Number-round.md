@@ -25,6 +25,6 @@ assert.deepStrictEqual(Number.round(1.567, 2), 1.57)
 declare const round: { (precision: number): (self: number) => number; (self: number, precision: number): number; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Number.ts#L804)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Number.ts#L808)
 
 Since v3.8.0

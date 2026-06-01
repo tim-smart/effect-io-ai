@@ -8,8 +8,8 @@ Overrides the equivalence derivation for a schema by supplying a custom
 
 **When to use**
 
-Use when the default structural equivalence derived by `toEquivalence`
-is not appropriate for a type.
+Use when you need a custom equivalence instead of the default structural
+equivalence derived by `toEquivalence`.
 
 **Signature**
 
@@ -17,6 +17,6 @@ is not appropriate for a type.
 declare const overrideToEquivalence: <S extends Top>(toEquivalence: () => Equivalence.Equivalence<S["Type"]>) => (self: S) => S["Rebuild"]
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L12337)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L12533)
 
 Since v4.0.0

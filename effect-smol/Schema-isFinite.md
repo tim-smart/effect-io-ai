@@ -20,9 +20,9 @@ and `noNaN` constraints to ensure generated numbers are finite.
 **Signature**
 
 ```ts
-declare const isFinite: (annotations?: Annotations.Filter) => AST.Filter<number>
+declare const isFinite: (annotations?: Annotations.Filter) => SchemaAST.Filter<number>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L6424)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L6639)
 
 Since v4.0.0

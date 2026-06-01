@@ -7,7 +7,7 @@ RPC serialization layer that uses JSON for serialization.
 
 **When to use**
 
-Use when the transport protocol already provides message framing.
+Use when you have a transport protocol that already provides message framing.
 
 **See**
 

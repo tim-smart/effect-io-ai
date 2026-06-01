@@ -7,8 +7,8 @@ Extracts the first typed error value from a failed Exit as a Result.
 
 **When to use**
 
-Use when composing Exit checks with `Filter` or other `Result`-based
-filtering APIs and you only need the first typed error in the Cause.
+Use when you need the first typed error from an `Exit` as a `Result` for
+`Filter` or other `Result`-based filtering APIs.
 
 **Details**
 
@@ -45,6 +45,6 @@ console.log(Result.isFailure(noError)) // true
 declare const findError: <A, E>(input: Exit<A, E>) => Result.Result<E, Exit<A, E>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Exit.ts#L766)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Exit.ts#L760)
 
 Since v4.0.0

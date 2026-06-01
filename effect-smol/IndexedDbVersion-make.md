@@ -5,6 +5,11 @@ Module: `IndexedDbVersion`<br />
 
 Creates an `IndexedDbVersion` from one or more table definitions.
 
+**When to use**
+
+Use when you need a typed description of the target IndexedDB schema that a
+database migration will materialize.
+
 **Details**
 
 The returned version exposes a `tables` map keyed by each table's
@@ -27,6 +32,6 @@ table for a repeated key.
 declare const make: <const Tables extends NonEmptyReadonlyArray<IndexedDbTable.AnyWithProps>>(...tables: Tables) => IndexedDbVersion<Tables[number]>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbVersion.ts#L126)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbVersion.ts#L131)
 
 Since v4.0.0

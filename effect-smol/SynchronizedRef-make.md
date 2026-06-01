@@ -7,8 +7,8 @@ Creates a `SynchronizedRef` from an initial value, wrapped in an `Effect`.
 
 **When to use**
 
-Use to create a synchronized reference inside an Effect program when later
-updates may run effects and must be serialized.
+Use to create a `SynchronizedRef` inside an Effect program when later updates
+may run effects and must be serialized.
 
 **Details**
 
@@ -26,6 +26,6 @@ The returned effect constructs a fresh `SynchronizedRef` by delegating to
 declare const make: <A>(value: A) => Effect.Effect<SynchronizedRef<A>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SynchronizedRef.ts#L103)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SynchronizedRef.ts#L104)
 
 Since v2.0.0

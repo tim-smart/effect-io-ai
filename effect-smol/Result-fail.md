@@ -7,7 +7,7 @@ Creates a `Result` holding a `Failure` value.
 
 **When to use**
 
-Use to represent a failed computation with a typed failure value.
+Use to represent a failed `Result` with a typed failure value.
 
 **Details**
 
@@ -35,6 +35,6 @@ console.log(Result.isFailure(result))
 declare const fail: <E>(left: E) => Result<never, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L367)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L372)
 
 Since v4.0.0

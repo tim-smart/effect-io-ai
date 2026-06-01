@@ -5,6 +5,11 @@ Module: `Queue`<br />
 
 Returns the current number of buffered messages in the queue synchronously.
 
+**When to use**
+
+Use when you need an immediate `Queue` size snapshot for diagnostics or
+internals and do not need the read wrapped in `Effect`.
+
 **Details**
 
 Completed queues report a size of `0`. This unsafe operation reads the queue
@@ -46,6 +51,6 @@ const program = Effect.gen(function*() {
 declare const sizeUnsafe: <A, E>(self: Dequeue<A, E>) => number
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Queue.ts#L1726)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Queue.ts#L1760)
 
 Since v4.0.0

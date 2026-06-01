@@ -5,6 +5,11 @@ Module: `Stream`<br />
 
 Creates a stream from an effect that produces an array of values.
 
+**When to use**
+
+Use when the array must be acquired from an Effect before the stream emits,
+and acquisition services or failures should be part of the stream.
+
 **Example** (Creating a stream from an effect that produces an array of values)
 
 ```ts
@@ -26,6 +31,6 @@ Effect.runPromise(program)
 declare const fromArrayEffect: <A, E, R>(effect: Effect.Effect<ReadonlyArray<A>, E, R>) => Stream<A, Pull.ExcludeDone<E>, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L1293)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L1303)
 
 Since v4.0.0

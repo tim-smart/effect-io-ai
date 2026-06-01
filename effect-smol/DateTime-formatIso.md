@@ -29,6 +29,6 @@ console.log(DateTime.formatIso(zoned)) // "2024-01-01T12:30:45.123Z"
 declare const formatIso: (self: DateTime) => string
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L2706)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L2733)
 
 Since v3.6.0

@@ -19,6 +19,6 @@ Servers may send this notification without a previous client subscription.
 declare class PromptListChangedNotification
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L1399)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L1401)
 
 Since v4.0.0

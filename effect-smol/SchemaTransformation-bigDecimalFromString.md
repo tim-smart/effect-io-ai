@@ -8,13 +8,14 @@ its string representation.
 
 **When to use**
 
-Use to parse decimal number strings from APIs or user input.
+Use when you need a schema transformation to parse decimal number strings
+from APIs or user input.
 
 **Details**
 
-- Decode: calls `BigDecimal.fromString(s)`. Fails with `InvalidValue` if the
-  string is not a valid BigDecimal representation.
-- Encode: returns `BigDecimal.format(bd)`.
+Decoding calls `BigDecimal.fromString(s)` and fails with `InvalidValue` if
+the string is not a valid `BigDecimal` representation. Encoding returns
+`BigDecimal.format(bd)`.
 
 **Signature**
 
@@ -22,6 +23,6 @@ Use to parse decimal number strings from APIs or user input.
 declare const bigDecimalFromString: Transformation<BigDecimal.BigDecimal, string, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L1363)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L1384)
 
 Since v4.0.0

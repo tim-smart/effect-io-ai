@@ -7,7 +7,7 @@ Returns `true` when called.
 
 **When to use**
 
-Use when an API expects a thunk and every invocation should return `true`.
+Use when you need a thunk that returns `true` on every invocation.
 
 **Example** (Returning true from a thunk)
 
@@ -24,6 +24,6 @@ assert.deepStrictEqual(Function.constTrue(), true)
 declare const constTrue: LazyArg<boolean>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Function.ts#L382)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Function.ts#L383)
 
 Since v2.0.0

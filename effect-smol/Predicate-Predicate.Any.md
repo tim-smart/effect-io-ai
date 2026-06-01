@@ -11,7 +11,7 @@ Use when you need a constraint for "any predicate" in generic code.
 
 **Details**
 
-- Type-only; no runtime value is created.
+This is type-only and creates no runtime value.
 
 **Example** (Generic constraint)
 

@@ -7,8 +7,8 @@ Provides a pre-built failed `Result` whose failure value is `undefined`.
 
 **When to use**
 
-Use when a failure should act only as a control signal and no failure value
-is needed.
+Use when you need a failed `Result` value that acts only as a control signal
+without failure data.
 
 **Details**
 
@@ -37,6 +37,6 @@ console.log(Result.isFailure(result))
 declare const failVoid: Result<never, void>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L433)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L438)
 
 Since v4.0.0

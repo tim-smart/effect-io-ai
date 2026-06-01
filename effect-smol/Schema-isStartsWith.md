@@ -15,9 +15,9 @@ patterns may not be equivalent to the runtime `startsWith` check.
 **Signature**
 
 ```ts
-declare const isStartsWith: (startsWith: string, annotations?: Annotations.Filter) => AST.Filter<string>
+declare const isStartsWith: (startsWith: string, annotations?: Annotations.Filter) => SchemaAST.Filter<string>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L6185)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L6400)
 
 Since v4.0.0

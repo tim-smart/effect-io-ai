@@ -8,9 +8,9 @@ decode and encode directions.
 
 **When to use**
 
-Use when you need to catch or recover from parsing errors (e.g. `Schema.catchDecoding`).
-- You need to run side effects around the parsing pipeline.
-- You need access to the full `Effect` rather than a single decoded value.
+Use when you need a schema middleware to catch or recover from parsing
+errors (e.g. `Schema.catchDecoding`), run side effects around the parsing
+pipeline, or access the full `Effect` rather than a single decoded value.
 
 **Details**
 
@@ -48,13 +48,13 @@ const fallback = new SchemaTransformation.Middleware(
 ```ts
 declare class Middleware<T, E, RDE, RDT, RET, REE> { constructor(
     decode: (
-      effect: Effect.Effect<Option.Option<E>, Issue.Issue, RDE>,
-      options: AST.ParseOptions
-    ) => Effect.Effect<Option.Option<T>, Issue.Issue, RDT>,
+      effect: Effect.Effect<Option.Option<E>, SchemaIssue.Issue, RDE>,
+      options: SchemaAST.ParseOptions
+    ) => Effect.Effect<Option.Option<T>, SchemaIssue.Issue, RDT>,
     encode: (
-      effect: Effect.Effect<Option.Option<T>, Issue.Issue, RET>,
-      options: AST.ParseOptions
-    ) => Effect.Effect<Option.Option<E>, Issue.Issue, REE>
+      effect: Effect.Effect<Option.Option<T>, SchemaIssue.Issue, RET>,
+      options: SchemaAST.ParseOptions
+    ) => Effect.Effect<Option.Option<E>, SchemaIssue.Issue, REE>
   ) }
 ```
 

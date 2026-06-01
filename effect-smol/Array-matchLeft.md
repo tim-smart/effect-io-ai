@@ -8,8 +8,8 @@ the remaining elements separately.
 
 **When to use**
 
-Use to pattern-match when you need the first element and remaining elements as
-separate values.
+Use when you need to branch on an array and handle the non-empty case as the
+first element plus the remaining elements.
 
 **Details**
 
@@ -39,6 +39,6 @@ console.log(matchLeft([1, 2, 3])) // "head: 1, tail: 2"
 declare const matchLeft: { <B, A, C = B>(options: { readonly onEmpty: LazyArg<B>; readonly onNonEmpty: (head: A, tail: Array<A>) => C; }): (self: ReadonlyArray<A>) => B | C; <A, B, C = B>(self: ReadonlyArray<A>, options: { readonly onEmpty: LazyArg<B>; readonly onNonEmpty: (head: A, tail: Array<A>) => C; }): B | C; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L534)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L551)
 
 Since v2.0.0

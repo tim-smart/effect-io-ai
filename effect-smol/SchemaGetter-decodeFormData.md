@@ -7,13 +7,14 @@ Decodes a `FormData` object into a nested tree structure using bracket-path nota
 
 **When to use**
 
-Use to parse `FormData` from HTTP requests into structured objects.
+Use when you need a schema getter to parse `FormData` from HTTP requests into
+structured objects.
 
 **Details**
 
-- Pure, never fails.
-- Interprets bracket-path keys (e.g. `user[name]`, `items[0]`) to build nested objects/arrays.
-- Leaf values are `string` or `Blob`.
+The getter is pure and never fails. It interprets bracket-path keys such as
+`user[name]` and `items[0]` to build nested objects or arrays, and each leaf
+value is a `string` or `Blob`.
 
 **Example** (Decode FormData)
 
@@ -36,6 +37,6 @@ const decode = SchemaGetter.decodeFormData()
 declare const decodeFormData: () => Getter<Schema.TreeRecord<string | Blob>, FormData>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L1620)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L1637)
 
 Since v4.0.0

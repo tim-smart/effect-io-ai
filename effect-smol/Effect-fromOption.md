@@ -5,6 +5,11 @@ Module: `Effect`<br />
 
 Converts an `Option` into an `Effect`.
 
+**When to use**
+
+Use when absence should become a typed `NoSuchElementError` in the effect error
+channel.
+
 **Details**
 
 `Option.some` becomes a successful effect with the contained value, while
@@ -32,6 +37,6 @@ Effect.runPromiseExit(effect2).then(console.log)
 declare const fromOption: <A>(option: Option<A>) => Effect<A, Cause.NoSuchElementError>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L1862)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L1874)
 
 Since v4.0.0

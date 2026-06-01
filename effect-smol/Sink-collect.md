@@ -7,8 +7,7 @@ Accumulates incoming elements into an array.
 
 **When to use**
 
-Use to collect all upstream input elements into a single array when you need
-a sink result containing the complete input.
+Use when you need a sink result containing all upstream input elements.
 
 **See**
 

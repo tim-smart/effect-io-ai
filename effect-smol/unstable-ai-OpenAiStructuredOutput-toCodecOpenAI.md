@@ -3,29 +3,31 @@ Module: `OpenAiStructuredOutput`<br />
 
 ## OpenAiStructuredOutput.toCodecOpenAI
 
-Transforms a `Schema.Codec` into a form compatible with OpenAI's structured output constraints.
+Converts a `Schema.Codec` to OpenAI structured-output JSON Schema and a
+matching codec for model output.
+
+**When to use**
+
+Use when you send Effect Schema-backed structured output requests to OpenAI
+and need provider-compatible JSON Schema without losing the decoded
+application type.
 
 **Details**
 
-The transformation walks the schema AST and rewrites constructs that
-OpenAI does not support natively:
+Returns the JSON Schema to include in the request and the codec to use when
+decoding the model response. If the input schema already fits OpenAI's
+supported JSON Schema subset, the original codec is returned unchanged.
 
-- **Tuples** are converted to objects with numeric string keys (e.g.
-  `"0"`, `"1"`) since OpenAI does not support tuple schemas. Rest
-  elements are placed under a `"__rest__"` key.
-- **Optional properties** are replaced with `T | null` unions, because
-  OpenAI requires all properties to be present.
-- **Records** (index signatures) are converted to arrays of `[key, value]`
-  pairs.
-- **`oneOf` unions** are rewritten as `anyOf` unions.
-- **Regex patterns** from multiple filters are merged into a single
-  `pattern` using lookaheads, since OpenAI does not support `allOf`.
-- **Filters and annotations** are preserved where compatible (e.g.
-  `description`, supported `format` values like `"date-time"`, `"email"`,
-  `"uuid"`, etc.), and stripped otherwise.
+**Gotchas**
 
-If the schema is already compatible, the original codec is returned
-unchanged.
+- Some schemas use a provider-safe encoded shape: tuples become objects with
+  numeric string keys, records become arrays of `[key, value]` pairs, and
+  optional properties become required nullable properties.
+- `oneOf` unions are emitted as `anyOf` unions.
+- Regex patterns from multiple filters are merged into one `pattern` because
+  OpenAI structured output does not support `allOf`.
+- Unsupported schema kinds throw during conversion instead of producing a
+  lossy schema.
 
 **Signature**
 
@@ -33,6 +35,6 @@ unchanged.
 declare const toCodecOpenAI: <T, E, RD, RE>(schema: Schema.Codec<T, E, RD, RE>) => { codec: Schema.Codec<T, unknown, RD, RE>; jsonSchema: JsonSchema.JsonSchema; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/OpenAiStructuredOutput.ts#L91)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/OpenAiStructuredOutput.ts#L93)
 
 Since v4.0.0

@@ -7,8 +7,8 @@ Checks whether an Exit is a Success.
 
 **When to use**
 
-Use as a type guard to narrow `Exit<A, E>` to `Success<A, E>`
-- After narrowing, the `value` property becomes accessible
+Use as a type guard to narrow `Exit<A, E>` to `Success<A, E>` and access the
+`value` property.
 
 **Example** (Narrowing to Success)
 

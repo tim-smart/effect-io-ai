@@ -12,6 +12,6 @@ or `SizeMeta`.
 type DeclarationMeta = DateMeta | SizeMeta
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaRepresentation.ts#L736)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaRepresentation.ts#L741)
 
 Since v4.0.0

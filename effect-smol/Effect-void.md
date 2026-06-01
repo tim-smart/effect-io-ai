@@ -11,6 +11,6 @@ Returns an effect that succeeds with `void`.
 declare const void: Effect<void, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L1212)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L1213)
 
 Since v2.0.0

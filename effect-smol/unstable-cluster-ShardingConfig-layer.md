@@ -8,10 +8,10 @@ Creates a `ShardingConfig` layer by merging the provided partial options over
 
 **When to use**
 
-Use when wiring a cluster runner with explicit `ShardingConfig` values,
-especially in tests, local development, or code paths where configuration
-should be provided programmatically instead of loaded from environment
-variables.
+Use when you need to wire a cluster runner with explicit `ShardingConfig`
+values, especially in tests, local development, or code paths where
+configuration should be provided programmatically instead of loaded from
+environment variables.
 
 **Details**
 

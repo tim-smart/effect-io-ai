@@ -11,6 +11,6 @@ Represents a completed workflow execution with its success or failure `Exit`.
 declare class Complete<A, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Workflow.ts#L515)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Workflow.ts#L545)
 
 Since v4.0.0

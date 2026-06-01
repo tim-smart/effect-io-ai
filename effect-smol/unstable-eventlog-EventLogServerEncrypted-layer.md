@@ -8,9 +8,8 @@ encrypted server RPC handlers.
 
 **When to use**
 
-Use to expose the encrypted event-log RPC server when you already have an
-`RpcServer.Protocol` and want clients using encrypted `EventLogRemote`
-replication to synchronize through server-side `Storage`.
+Use when you need an encrypted event-log RPC server for encrypted
+`EventLogRemote` replication over an existing `RpcServer.Protocol`.
 
 **Details**
 
@@ -31,6 +30,6 @@ authentication bindings, remote ids, and change streams are delegated to
 declare const layer: Layer.Layer<never, never, RpcServer.Protocol | Storage>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventLogServerEncrypted.ts#L124)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventLogServerEncrypted.ts#L123)
 
 Since v4.0.0

@@ -7,11 +7,8 @@ Adds a single element to the front of an iterable, returning a `NonEmptyArray`.
 
 **When to use**
 
-Use to add a single element at the start of an iterable and get a `NonEmptyArray`.
-
-**Details**
-
-- Always returns a non-empty array.
+Use when you need to guarantee a non-empty result after adding a required
+leading value.
 
 **Example** (Prepending an element)
 
@@ -33,6 +30,6 @@ console.log(result) // [1, 2, 3, 4]
 declare const prepend: { <B>(head: B): <A>(self: Iterable<A>) => NonEmptyArray<A | B>; <A, B>(self: Iterable<A>, head: B): NonEmptyArray<A | B>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L639)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L653)
 
 Since v2.0.0

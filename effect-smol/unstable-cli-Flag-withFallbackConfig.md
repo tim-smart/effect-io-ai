@@ -22,6 +22,6 @@ const verbose = Flag.boolean("verbose").pipe(
 declare const withFallbackConfig: { <B>(config: Config.Config<B>): <A>(self: Flag<A>) => Flag<A | B>; <A, B>(self: Flag<A>, config: Config.Config<B>): Flag<A | B>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Flag.ts#L612)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Flag.ts#L613)
 
 Since v4.0.0

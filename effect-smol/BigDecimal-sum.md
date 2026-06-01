@@ -7,7 +7,8 @@ Provides an addition operation on `BigDecimal`s.
 
 **When to use**
 
-Use to add two `BigDecimal` values.
+Use when you need a decimal addition function for piping or higher-order APIs
+while preserving decimal precision.
 
 **Example** (Adding decimals)
 
@@ -31,6 +32,6 @@ assert.deepStrictEqual(
 declare const sum: { (that: BigDecimal): (self: BigDecimal) => BigDecimal; (self: BigDecimal, that: BigDecimal): BigDecimal; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigDecimal.ts#L347)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigDecimal.ts#L348)
 
 Since v2.0.0

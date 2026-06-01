@@ -7,9 +7,11 @@ Creates a new `Array` of the specified length with all slots uninitialized.
 
 **When to use**
 
-Use when you need a pre-sized array and will fill it imperatively.
-- Elements are typed as `A | undefined` since slots are empty.
-- Prefer `makeBy` when you can compute each element from its index.
+Use when you need a pre-sized array that will be filled imperatively.
+
+**Details**
+
+Elements are typed as `A | undefined` because the slots are empty.
 
 **Example** (Allocating a fixed-size array)
 
@@ -30,6 +32,6 @@ console.log(result.length) // 3
 declare const allocate: <A = never>(n: number) => Array<A | undefined>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L243)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L248)
 
 Since v2.0.0

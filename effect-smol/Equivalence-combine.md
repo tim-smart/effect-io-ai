@@ -7,15 +7,14 @@ Combines two equivalence relations using logical AND.
 
 **When to use**
 
-Use when you need to combine exactly two equivalences
-- Use when building complex equivalences from simpler ones
-- Use when you want both conditions to be satisfied
+Use when you need to combine exactly two equivalences with AND semantics.
 
 **Details**
 
-- Returns `true` only if both equivalences return `true`
-- Short-circuits: if the first equivalence returns `false`, the second is not called
-- The result is also an equivalence that satisfies reflexive, symmetric, and transitive properties
+Returns `true` only if both equivalences return `true`. The comparison
+short-circuits when the first equivalence returns `false`. The result is also
+an equivalence that satisfies reflexive, symmetric, and transitive
+properties.
 
 **Example** (Combining name and age equivalences)
 
@@ -58,6 +57,6 @@ console.log(personEquivalence(person1, person3)) // false (different age)
 declare const combine: { <A>(that: Equivalence<A>): (self: Equivalence<A>) => Equivalence<A>; <A>(self: Equivalence<A>, that: Equivalence<A>): Equivalence<A>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Equivalence.ts#L391)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Equivalence.ts#L379)
 
 Since v2.0.0

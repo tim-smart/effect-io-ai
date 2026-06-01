@@ -7,7 +7,8 @@ Creates a getter that handles the case when the input is absent (`Option.None`).
 
 **When to use**
 
-Use when you need to provide a fallback or computed value for missing struct keys.
+Use when you need a schema getter to provide a fallback or computed value for
+missing struct keys.
 - Building custom "default value" logic more complex than `withDefault`.
 
 **Details**
@@ -35,9 +36,9 @@ const withTimestamp = SchemaGetter.onNone<number>(() =>
 **Signature**
 
 ```ts
-declare const onNone: <T, E extends T = T, R = never>(f: (options: AST.ParseOptions) => Effect.Effect<Option.Option<T>, Issue.Issue, R>) => Getter<T, E, R>
+declare const onNone: <T, E extends T = T, R = never>(f: (options: SchemaAST.ParseOptions) => Effect.Effect<Option.Option<T>, SchemaIssue.Issue, R>) => Getter<T, E, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L407)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L408)
 
 Since v4.0.0

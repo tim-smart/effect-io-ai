@@ -21,6 +21,6 @@ provide `OpenRouterClient` as a layer.
 declare const layer: (options: Options) => Layer.Layer<OpenRouterClient, never, HttpClient.HttpClient>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openrouter/src/OpenRouterClient.ts#L289)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openrouter/src/OpenRouterClient.ts#L288)
 
 Since v4.0.0

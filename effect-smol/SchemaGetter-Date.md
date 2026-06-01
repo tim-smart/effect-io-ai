@@ -7,7 +7,8 @@ Coerces a value to a `Date` using `new Date(input)`.
 
 **When to use**
 
-Use when you need to parse a string, number, or Date into a `Date` object.
+Use when you need a schema getter to coerce a present string, number, or
+existing date object into a new date object.
 
 **Details**
 
@@ -33,6 +34,6 @@ const toDate = SchemaGetter.Date<string>()
 declare const Date: <E extends string | number | Date>() => Getter<Date, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L856)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L865)
 
 Since v4.0.0

@@ -28,6 +28,6 @@ console.log(Array.tailNonEmpty([1, 2, 3, 4])) // [2, 3, 4]
 declare const tailNonEmpty: <A>(self: NonEmptyReadonlyArray<A>) => Array<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L1272)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L1288)
 
 Since v2.0.0

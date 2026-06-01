@@ -8,8 +8,8 @@ given partition key.
 
 **When to use**
 
-Use to manually acquire permits for a partition when acquisition and release
-must be controlled as separate effects.
+Use when you need manual permit acquisition for a partition and want to
+control acquisition and release as separate effects.
 
 **Details**
 

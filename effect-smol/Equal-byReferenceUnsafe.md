@@ -7,9 +7,8 @@ Marks an object permanently to use reference equality, without creating a proxy.
 
 **When to use**
 
-Use when when you want reference equality semantics and can accept that the
-  original object is **permanently** modified.
-- When proxy overhead is unacceptable (hot paths, large collections).
+Use when you need reference equality without proxy allocation and accept
+permanently marking the original object for reference-only equality.
 
 **Details**
 
@@ -50,6 +49,6 @@ console.log(obj1 === Equal.byReferenceUnsafe(obj1)) // true (same object)
 declare const byReferenceUnsafe: <T extends object>(obj: T) => T
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Equal.ts#L620)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Equal.ts#L607)
 
 Since v4.0.0

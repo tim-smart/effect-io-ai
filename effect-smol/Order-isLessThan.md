@@ -7,15 +7,12 @@ Checks whether one value is strictly less than another according to the given or
 
 **When to use**
 
-Use when when you need a boolean predicate instead of an ordering result
-- When checking if a value is less than another in conditional logic
-- When implementing range checks or comparisons
+Use when you need a boolean less-than predicate using an `Order`.
 
 **Details**
 
-- Returns `true` if the order returns `-1` (first value is less than second)
-- Returns `false` for equal or greater values
-- Supports curried and uncurried call styles
+Returns `true` if the order returns `-1`, meaning the first value is less
+than the second. Equal or greater values return `false`.
 
 **Example** (Less Than)
 
@@ -40,6 +37,6 @@ console.log(isLessThanNumber(1, 1)) // false
 declare const isLessThan: <A>(O: Order<A>) => { (that: A): (self: A) => boolean; (self: A, that: A): boolean; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Order.ts#L768)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Order.ts#L730)
 
 Since v4.0.0

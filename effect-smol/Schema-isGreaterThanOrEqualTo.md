@@ -20,9 +20,9 @@ to ensure generated numbers are greater than or equal to the specified value.
 **Signature**
 
 ```ts
-declare const isGreaterThanOrEqualTo: (minimum: number, annotations?: Annotations.Filter) => AST.Filter<number>
+declare const isGreaterThanOrEqualTo: (minimum: number, annotations?: Annotations.Filter) => SchemaAST.Filter<number>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L6670)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L6885)
 
 Since v4.0.0

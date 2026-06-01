@@ -8,13 +8,14 @@ Decodes `T | undefined` into `Option<T>` and encodes `Option.none()` back to
 
 **When to use**
 
-Use to convert undefined-or API fields to `Option`.
+Use when you need a schema transformation to convert API fields that use
+`undefined` for absence to `Option`.
 
 **Details**
 
-- Decode: `undefined` → `Option.none()`, non-undefined → `Option.some(value)`.
-- Encode: `Option.none()` → `undefined`, `Option.some(value)` → `value`.
-- Pure and synchronous.
+Decoding maps `undefined` to `Option.none()` and non-undefined values to
+`Option.some(value)`. Encoding maps `Option.none()` to `undefined` and
+`Option.some(value)` to `value`. The transformation is pure and synchronous.
 
 **Example** (Option from undefined-or)
 
@@ -40,6 +41,6 @@ const schema = Schema.UndefinedOr(Schema.String).pipe(
 declare const optionFromUndefinedOr: <T>() => Transformation<Option.Option<T>, T | undefined>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L1166)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L1183)
 
 Since v4.0.0

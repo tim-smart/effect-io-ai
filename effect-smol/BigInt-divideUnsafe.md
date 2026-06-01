@@ -7,8 +7,8 @@ Divides one `bigint` by another, throwing if the divisor is zero.
 
 **When to use**
 
-Use when the divisor is known to be non-zero and division by zero should be a
-thrown exception.
+Use to divide `bigint` values where the divisor is known to be non-zero and
+division by zero should be a thrown exception.
 
 **Details**
 
@@ -39,6 +39,6 @@ assert.deepStrictEqual(BigInt.divideUnsafe(6n, 4n), 1n)
 declare const divideUnsafe: { (that: bigint): (self: bigint) => bigint; (self: bigint, that: bigint): bigint; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigInt.ts#L284)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigInt.ts#L285)
 
 Since v4.0.0

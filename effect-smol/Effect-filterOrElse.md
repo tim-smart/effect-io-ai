@@ -5,6 +5,11 @@ Module: `Effect`<br />
 
 Filters an effect, providing an alternative effect if the predicate fails.
 
+**When to use**
+
+Use when a successful value that fails a predicate should continue with an
+effectful fallback instead of failing the effect.
+
 **Details**
 
 This function applies a predicate to the result of an effect. If the
@@ -36,6 +41,6 @@ const filtered = Effect.filterOrElse(
 declare const filterOrElse: { <A, C, E2, R2, B extends A>(refinement: Predicate.Refinement<NoInfer<A>, B>, orElse: (a: EqualsWith<A, B, NoInfer<A>, Exclude<NoInfer<A>, B>>) => Effect<C, E2, R2>): <E, R>(self: Effect<A, E, R>) => Effect<B | C, E2 | E, R2 | R>; <A, C, E2, R2>(predicate: Predicate.Predicate<NoInfer<A>>, orElse: (a: NoInfer<A>) => Effect<C, E2, R2>): <E, R>(self: Effect<A, E, R>) => Effect<A | C, E2 | E, R2 | R>; <A, E, R, C, E2, R2, B extends A>(self: Effect<A, E, R>, refinement: Predicate.Refinement<A, B>, orElse: (a: EqualsWith<A, B, A, Exclude<A, B>>) => Effect<C, E2, R2>): Effect<B | C, E | E2, R | R2>; <A, E, R, C, E2, R2>(self: Effect<A, E, R>, predicate: Predicate.Predicate<NoInfer<A>>, orElse: (a: NoInfer<A>) => Effect<C, E2, R2>): Effect<A | C, E | E2, R | R2>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L5030)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L5072)
 
 Since v2.0.0

@@ -6,6 +6,11 @@ Module: `FiberMap`<br />
 Creates a scoped run function that forks effects into a new `FiberMap` and
 returns a `Promise` for each effect result.
 
+**When to use**
+
+Use when keyed fibers must be managed in a scoped map while exposing their
+results through Promise-based APIs.
+
 **Details**
 
 Each call stores the fiber under the supplied key, interrupting any previous
@@ -39,6 +44,6 @@ const program = Effect.gen(function*() {
 declare const makeRuntimePromise: <R, K, A = unknown, E = unknown>() => Effect.Effect<(<XE extends E, XA extends A>(key: K, effect: Effect.Effect<XA, XE, R>, options?: (Effect.RunOptions & { readonly onlyIfMissing?: boolean | undefined; }) | undefined) => Promise<XA>), never, Scope.Scope | R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FiberMap.ts#L286)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FiberMap.ts#L291)
 
 Since v3.13.0

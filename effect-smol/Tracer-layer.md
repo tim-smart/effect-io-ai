@@ -7,9 +7,8 @@ Layer that creates an OpenTelemetry tracer from a provider and resource, then in
 
 **When to use**
 
-Use when your application already supplies an `OtelTracerProvider` and a
-`Resource`, and you want Effect spans to be created by an OpenTelemetry
-tracer derived from those services.
+Use when you already provide an `OtelTracerProvider` and a `Resource`, and
+want Effect spans backed by a tracer derived from them.
 
 **See**
 
@@ -23,6 +22,6 @@ tracer derived from those services.
 declare const layer: Layer.Layer<OtelTracer, never, OtelTracerProvider | Resource>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Tracer.ts#L238)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Tracer.ts#L237)
 
 Since v4.0.0

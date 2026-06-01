@@ -7,8 +7,8 @@ Increments a numeric MutableRef by 1 and returns the reference.
 
 **When to use**
 
-Use to increment a numeric reference in place when you want the same
-reference back.
+Use when you need an in-place `MutableRef` increment that returns the same
+`MutableRef`.
 
 **Example** (Incrementing numeric refs)
 
@@ -43,6 +43,6 @@ console.log(result === counter) // true
 declare const increment: (self: MutableRef<number>) => MutableRef<number>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableRef.ts#L530)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableRef.ts#L533)
 
 Since v2.0.0

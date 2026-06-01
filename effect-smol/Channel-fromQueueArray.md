@@ -48,6 +48,6 @@ const batchProcessor = Effect.gen(function*() {
 declare const fromQueueArray: <A, E>(queue: Queue.Dequeue<A, E>) => Channel<Arr.NonEmptyReadonlyArray<A>, Exclude<E, Cause.Done>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L1308)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L1318)
 
 Since v4.0.0

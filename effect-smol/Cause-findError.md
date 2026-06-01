@@ -10,8 +10,8 @@ it contains no typed error reasons.
 
 **When to use**
 
-Use when you use `findFail` if you need the full `Fail` reason (including
-annotations). Use `findErrorOption` if you prefer an `Option`.
+Use when you need the first typed error value from a `Cause` as a `Result`
+that preserves the original cause when no match is found.
 
 **Example** (extracting the first error value)
 

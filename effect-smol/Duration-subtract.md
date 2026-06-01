@@ -7,16 +7,12 @@ Subtracts one Duration from another. The result can be negative.
 
 **Details**
 
-Infinity subtraction follows these rules:
-
-- infinity - infinity = 0
-- infinity - negativeInfinity = infinity
-- infinity - finite = infinity
-- negativeInfinity - negativeInfinity = 0
-- negativeInfinity - infinity = negativeInfinity
-- negativeInfinity - finite = negativeInfinity
-- finite - infinity = negativeInfinity
-- finite - negativeInfinity = infinity
+Infinity subtraction follows signed-infinity arithmetic. Subtracting the
+same infinity from itself returns zero. Positive infinity minus negative
+infinity or any finite duration remains positive infinity. Negative infinity
+minus positive infinity or any finite duration remains negative infinity.
+Finite durations minus positive infinity produce negative infinity, and
+finite durations minus negative infinity produce positive infinity.
 
 **Example** (Subtracting durations)
 
@@ -33,6 +29,6 @@ console.log(Duration.toSeconds(result)) // 7
 declare const subtract: { (that: Duration): (self: Duration) => Duration; (self: Duration, that: Duration): Duration; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Duration.ts#L1469)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Duration.ts#L1480)
 
 Since v2.0.0

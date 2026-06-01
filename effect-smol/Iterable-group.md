@@ -38,6 +38,6 @@ console.log(Array.from(groupedObjects).length) // 3 groups
 declare const group: <A>(self: Iterable<A>) => Iterable<NonEmptyArray<A>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Iterable.ts#L1333)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Iterable.ts#L1342)
 
 Since v2.0.0

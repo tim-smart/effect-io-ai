@@ -7,7 +7,7 @@ Increments a numeric MutableRef by 1 and returns the previous value.
 
 **When to use**
 
-Use to read the current numeric value before incrementing it.
+Use to read the current numeric `MutableRef` value before incrementing it.
 
 **Example** (Reading before incrementing)
 
@@ -48,6 +48,6 @@ while (MutableRef.get(iterations) < 5) {
 declare const getAndIncrement: (self: MutableRef<number>) => number
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableRef.ts#L385)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableRef.ts#L386)
 
 Since v2.0.0

@@ -3,14 +3,13 @@ Module: `ScopedRef`<br />
 
 ## ScopedRef.set
 
-Sets the value of this reference to the specified resourcefully-created
-value, releasing any resources associated with the old value.
+Sets the value of this reference to a newly acquired scoped value, releasing
+any resources associated with the old value.
 
 **When to use**
 
-Use to replace the current value of an existing `ScopedRef` with a
-resourcefully acquired value while releasing resources for the previous
-value.
+Use to replace the current value of an existing `ScopedRef` with a newly
+acquired scoped value while releasing resources for the previous value.
 
 **Details**
 
@@ -24,6 +23,6 @@ to acquire a new value fails.
 declare const set: { <A, R, E>(acquire: Effect.Effect<A, E, R>): (self: ScopedRef<A>) => Effect.Effect<void, E, Exclude<R, Scope.Scope>>; <A, R, E>(self: ScopedRef<A>, acquire: Effect.Effect<A, E, R>): Effect.Effect<void, E, Exclude<R, Scope.Scope>>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ScopedRef.ts#L185)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ScopedRef.ts#L183)
 
 Since v2.0.0

@@ -50,7 +50,7 @@ export interface Constructor<in out B extends Brand<any>> {
    *
    * @internal
    */
-  checks?: readonly [AST.Check<Brand.Unbranded<B>>, ...Array<AST.Check<Brand.Unbranded<B>>>] | undefined
+  checks?: readonly [SchemaAST.Check<Brand.Unbranded<B>>, ...Array<SchemaAST.Check<Brand.Unbranded<B>>>] | undefined
 }
 ```
 

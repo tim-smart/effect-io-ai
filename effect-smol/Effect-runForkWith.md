@@ -5,6 +5,11 @@ Module: `Effect`<br />
 
 Runs an effect in the background with the provided services.
 
+**When to use**
+
+Use when an effect still requires services, you already have a `Context`, and
+you want a background fiber.
+
 **Example** (Running with services in the background)
 
 ```ts
@@ -35,6 +40,6 @@ const fiber = Effect.runForkWith(services)(program)
 declare const runForkWith: <R>(context: Context.Context<R>) => <A, E>(effect: Effect<A, E, R>, options?: RunOptions | undefined) => Fiber<A, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L8799)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L8850)
 
 Since v4.0.0

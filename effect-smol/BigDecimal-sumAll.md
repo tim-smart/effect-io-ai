@@ -7,7 +7,8 @@ Takes an `Iterable` of `BigDecimal`s and returns their sum as a single `BigDecim
 
 **When to use**
 
-Use to sum all `BigDecimal` values in an iterable.
+Use when you need to aggregate decimal quantities with decimal precision
+instead of converting through JavaScript numbers.
 
 **Example** (Adding multiple decimals)
 
@@ -31,6 +32,6 @@ assert.deepStrictEqual(
 declare const sumAll: (collection: Iterable<BigDecimal>) => BigDecimal
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigDecimal.ts#L394)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigDecimal.ts#L396)
 
 Since v3.16.0

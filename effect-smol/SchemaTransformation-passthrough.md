@@ -8,9 +8,8 @@ directions.
 
 **When to use**
 
-Use when connecting two schemas that share the same type with no conversion.
-- As a placeholder when `Schema.decodeTo` requires a transformation but
-  no actual conversion is needed.
+Use when you need a schema transformation to connect two schemas that share
+the same type with no actual conversion.
 
 **Details**
 
@@ -41,6 +40,6 @@ const schema = Schema.Trim.pipe(
 declare const passthrough: { <T, E>(options: { readonly strict: false; }): Transformation<T, E>; <T>(): Transformation<T, T>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L771)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L779)
 
 Since v4.0.0

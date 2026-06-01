@@ -12,6 +12,6 @@ requests and client notifications.
 type FromClientEncoded = ClientRequestEncoded | ClientNotificationEncoded
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L2460)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L2462)
 
 Since v4.0.0

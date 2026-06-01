@@ -7,9 +7,8 @@ Converts success to `Option.some` and failure to `Option.none`.
 
 **When to use**
 
-Use when the failure value is not important and absence is enough.
-Use `result` when you need the original typed failure, and `exit` when you
-need the full failure cause.
+Use when you only care whether an effect succeeds and want recoverable
+failures represented as `Option.none`.
 
 **Details**
 
@@ -54,6 +53,6 @@ Effect.runPromise(program)
 declare const option: <A, E, R>(self: Effect<A, E, R>) => Effect<Option<A>, never, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L2261)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L2270)
 
 Since v2.0.0

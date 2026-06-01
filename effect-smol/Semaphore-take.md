@@ -8,7 +8,7 @@ count.
 
 **When to use**
 
-Use to manually acquire permits when a lower-level permit protocol needs
+Use when you need manual permit acquisition for a lower-level protocol with
 explicit acquisition and release control.
 
 **Details**

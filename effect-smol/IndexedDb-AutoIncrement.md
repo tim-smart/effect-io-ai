@@ -7,8 +7,8 @@ Schema for auto-incremented IndexedDB keys, accepting integers from 1 through `2
 
 **When to use**
 
-Use when defining numeric key-path fields for `IndexedDbTable` definitions
-that use IndexedDB auto-increment keys.
+Use when you need to define numeric key-path fields for `IndexedDbTable`
+definitions that use IndexedDB auto-increment keys.
 
 **Details**
 

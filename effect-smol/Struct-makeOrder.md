@@ -9,8 +9,8 @@ first non-zero comparison determines the result.
 
 **When to use**
 
-Use to sort or compare structs by multiple fields with lexicographic
-priority.
+Use when you need to sort record-like objects lexicographically by several
+fields, with each field using its own ordering rule.
 
 **Details**
 
@@ -41,6 +41,6 @@ console.log(PersonOrder({ name: "Alice", age: 30 }, { name: "Bob", age: 25 }))
 declare const makeOrder: <const R extends { readonly [x: string]: order.Order<any>; }>(fields: R) => order.Order<{ [K in keyof R]: [R[K]] extends [order.Order<infer A>] ? A : never; }>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Struct.ts#L612)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Struct.ts#L613)
 
 Since v4.0.0

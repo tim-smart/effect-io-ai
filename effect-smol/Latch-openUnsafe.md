@@ -7,8 +7,8 @@ Opens the latch synchronously and releases fibers waiting on it.
 
 **When to use**
 
-Use when synchronous code needs to open a latch immediately and release the
-fibers waiting on it.
+Use when you need synchronous code to open a latch immediately and release
+the fibers waiting on it.
 
 **Details**
 
@@ -28,6 +28,6 @@ change immediately instead of returning an `Effect`.
 declare const openUnsafe: (self: Latch) => boolean
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Latch.ts#L267)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Latch.ts#L268)
 
 Since v4.0.0

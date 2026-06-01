@@ -7,9 +7,7 @@ Decodes a JSON Pointer reference token according to RFC 6901 escaping rules.
 
 **When to use**
 
-Use to parse JSON Pointers to extract the original token values from escaped segments
-- Converting escaped tokens back to their original form for use as object keys or identifiers
-- Resolving schema references or JSON Patch paths that use escaped tokens
+Use when you need to decode a single escaped JSON Pointer path segment.
 
 **Details**
 
@@ -42,6 +40,6 @@ JsonPointer.unescapeToken("path~1to~0key") // "path/to~key"
 declare const unescapeToken: (token: string) => string
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/JsonPointer.ts#L127)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/JsonPointer.ts#L123)
 
 Since v4.0.0

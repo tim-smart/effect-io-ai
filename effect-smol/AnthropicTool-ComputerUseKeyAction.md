@@ -5,6 +5,12 @@ Module: `AnthropicTool`<br />
 
 Computer-use action payload for pressing a key or key combination.
 
+**When to use**
+
+Use when typing parsed computer-use key action payloads after schema
+validation, where provider-specific key-name validation is handled outside
+TypeScript.
+
 **Details**
 
 The payload uses `action: "key"` and stores the key or key combination to
@@ -21,6 +27,6 @@ provider-specific key names or key combinations.
 type ComputerUseKeyAction = typeof ComputerUseKeyAction.Type
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L672)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L689)
 
 Since v4.0.0

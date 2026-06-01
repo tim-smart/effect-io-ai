@@ -9,10 +9,9 @@ schema's decoded `Type` with the decoded types of all rest record schemas.
 **Signature**
 
 ```ts
-type Type<S, Records> = & S["Type"]
-    & MergeTuple<{ readonly [K in keyof Records]: Records[K]["Type"] }>
+type Type<S, Records> = Intersect<S, Records, "Type">
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L3392)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L3550)
 
 Since v3.10.0

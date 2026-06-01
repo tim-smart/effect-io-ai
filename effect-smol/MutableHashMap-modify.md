@@ -8,7 +8,8 @@ If the key doesn't exist, the map remains unchanged.
 
 **When to use**
 
-Use to transform an existing value in place without inserting missing keys.
+Use to transform an existing `MutableHashMap` value in place without
+inserting missing keys.
 
 **Example** (Modifying existing values)
 
@@ -45,6 +46,6 @@ increment(map)
 declare const modify: { <K, V>(key: K, f: (v: V) => V): (self: MutableHashMap<K, V>) => MutableHashMap<K, V>; <K, V>(self: MutableHashMap<K, V>, key: K, f: (v: V) => V): MutableHashMap<K, V>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableHashMap.ts#L570)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableHashMap.ts#L573)
 
 Since v2.0.0

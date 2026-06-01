@@ -16,19 +16,20 @@ export interface Declaration<T, TypeParameters extends ReadonlyArray<Top> = read
     extends Bottom<T, TypeParameters>
   {
     readonly toCodec?:
-      | ((typeParameters: TypeParameters.Encoded<TypeParameters>) => AST.Link)
+      | ((typeParameters: TypeParameters.Encoded<TypeParameters>) => SchemaAST.Link)
       | undefined
     readonly toCodecJson?:
-      | ((typeParameters: TypeParameters.Encoded<TypeParameters>) => AST.Link)
+      | ((typeParameters: TypeParameters.Encoded<TypeParameters>) => SchemaAST.Link)
       | undefined
     readonly toCodecIso?:
-      | ((typeParameters: TypeParameters.Type<TypeParameters>) => AST.Link)
+      | ((typeParameters: TypeParameters.Type<TypeParameters>) => SchemaAST.Link)
       | undefined
     readonly toArbitrary?: ToArbitrary.Declaration<T, TypeParameters> | undefined
     readonly toEquivalence?: ToEquivalence.Declaration<T, TypeParameters> | undefined
     readonly toFormatter?: ToFormatter.Declaration<T, TypeParameters> | undefined
     readonly typeConstructor?: {
       readonly _tag: string
+      readonly [key: string]: unknown
     } | undefined
     readonly generation?: {
       readonly runtime: string
@@ -37,14 +38,14 @@ export interface Declaration<T, TypeParameters extends ReadonlyArray<Top> = read
       readonly importDeclaration?: string | undefined
     } | undefined
     /**
-     * Used to collect sentinels from a Declaration AST.
+     * Used to collect sentinels from a Declaration SchemaAST.
      *
      * @internal
      */
-    readonly "~sentinels"?: ReadonlyArray<AST.Sentinel> | undefined
+    readonly "~sentinels"?: ReadonlyArray<SchemaAST.Sentinel> | undefined
   }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L13405)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L13601)
 
 Since v4.0.0

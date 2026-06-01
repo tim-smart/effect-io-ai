@@ -7,8 +7,8 @@ Context reference for controlling whether built-in console loggers write to stde
 
 **When to use**
 
-Use to keep stdout reserved for protocol messages or data output while still
-allowing Effect runtime logs to be emitted.
+Use to configure the runtime reference that controls whether built-in console
+loggers write to stderr.
 
 **Details**
 

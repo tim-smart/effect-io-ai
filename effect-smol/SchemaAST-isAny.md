@@ -7,7 +7,7 @@ Narrows an `AST` to `Any`.
 
 **When to use**
 
-Use when inspecting a schema AST and you need to handle the `Any` node
+Use when you need to inspect a schema AST and handle the `Any` node
 variant specifically.
 
 **See**

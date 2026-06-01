@@ -7,8 +7,8 @@ Represents a server request for the client to sample an LLM.
 
 **When to use**
 
-Use when an MCP server needs the client to perform model sampling on its
-behalf.
+Use when you need to request model sampling from an MCP client on behalf of a
+server.
 
 **Details**
 
@@ -21,6 +21,6 @@ request before it begins.
 declare class CreateMessage
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L1829)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L1831)
 
 Since v4.0.0

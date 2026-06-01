@@ -9,7 +9,7 @@ readonly indexable object type.
 **When to use**
 
 Use to narrow unknown input to a readonly view of a non-null, non-array
-object.
+object with a `Predicate` guard.
 
 **Details**
 
@@ -37,6 +37,6 @@ console.log(Predicate.isReadonlyObject(data))
 declare const isReadonlyObject: (input: unknown) => input is { readonly [x: PropertyKey]: unknown; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L1119)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L1121)
 
 Since v4.0.0

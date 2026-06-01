@@ -7,7 +7,7 @@ Creates a new `TxRef` with the specified initial value.
 
 **When to use**
 
-Use to create a transactional reference inside an `Effect` workflow.
+Use to create a `TxRef` inside an `Effect` workflow.
 
 **Example** (Creating transactional references)
 

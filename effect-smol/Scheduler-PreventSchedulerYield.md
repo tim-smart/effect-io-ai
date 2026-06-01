@@ -28,6 +28,6 @@ JavaScript thread.
 declare const PreventSchedulerYield: Context.Reference<boolean>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Scheduler.ts#L292)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Scheduler.ts#L294)
 
 Since v4.0.0

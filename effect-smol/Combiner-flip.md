@@ -7,9 +7,8 @@ Reverses the argument order of a combiner's `combine` method.
 
 **When to use**
 
-Use when the "right" value should act as the accumulator side, or when
-you want to reverse the natural direction of a non-commutative combiner such
-as string concatenation.
+Use when you want the right-hand value to act as the accumulator, or need to
+reverse a non-commutative combiner such as string concatenation.
 
 **Details**
 
@@ -37,6 +36,6 @@ console.log(Prepend.combine("a", "b"))
 declare const flip: <A>(combiner: Combiner<A>) => Combiner<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Combiner.ts#L165)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Combiner.ts#L164)
 
 Since v4.0.0

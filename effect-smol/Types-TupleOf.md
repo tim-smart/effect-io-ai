@@ -41,6 +41,6 @@ const tooMany: Types.TupleOf<3, number> = [1, 2, 3, 4]
 type TupleOf<N, T> = N extends N ? number extends N ? Array<T> : TupleOf_<T, N, []> : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Types.ts#L98)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Types.ts#L96)
 
 Since v3.3.0

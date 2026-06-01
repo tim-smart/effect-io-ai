@@ -7,8 +7,8 @@ Creates a tuple from the provided arguments.
 
 **When to use**
 
-Use when you use this instead of `[a, b, c] as const` when you want a properly typed tuple
-without a manual cast.
+Use when you need a properly typed tuple without writing `[a, b, c] as const`
+or another manual cast.
 
 **Details**
 

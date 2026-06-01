@@ -12,11 +12,9 @@ failure immediately while pending effects still use regular channel mapping.
 
 **Details**
 
-Behavior:
-
-- For **Success effects**: Applies the `onSuccess` function immediately to the value
-- For **Failure effects**: Applies the `onFailure` function immediately to the error
-- For **Pending effects**: Falls back to the regular `mapBoth` behavior
+Success effects apply `onSuccess` immediately, and failure effects apply
+`onFailure` immediately. Pending effects fall back to regular `mapBoth`
+behavior.
 
 **Example** (Mapping both channels eagerly when possible)
 
@@ -43,6 +41,6 @@ const mappedError = Effect.mapBothEager(failure, {
 declare const mapBothEager: { <E, E2, A, A2>(options: { readonly onFailure: (e: E) => E2; readonly onSuccess: (a: A) => A2; }): <R>(self: Effect<A, E, R>) => Effect<A2, E2, R>; <A, E, R, E2, A2>(self: Effect<A, E, R>, options: { readonly onFailure: (e: E) => E2; readonly onSuccess: (a: A) => A2; }): Effect<A2, E2, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L15031)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L15095)
 
 Since v4.0.0

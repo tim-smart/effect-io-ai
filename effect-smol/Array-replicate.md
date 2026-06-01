@@ -7,9 +7,13 @@ Creates a `NonEmptyArray` containing a value repeated `n` times.
 
 **When to use**
 
-Use when you need multiple copies of the same value.
-- `n` is normalized to an integer >= 1 — always returns at least one element.
-- Dual: `Array.replicate("a", 3)` or `pipe("a", Array.replicate(3))`.
+Use when you need a non-empty array containing repeated copies of one value.
+
+**Details**
+
+`n` is normalized to an integer greater than or equal to 1, so this function
+always returns at least one element. Supports both data-first and data-last
+usage.
 
 **Example** (Repeating a value)
 
@@ -30,6 +34,6 @@ console.log(result) // ["a", "a", "a"]
 declare const replicate: { (n: number): <A>(a: A) => NonEmptyArray<A>; <A>(a: A, n: number): NonEmptyArray<A>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L331)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L346)
 
 Since v2.0.0

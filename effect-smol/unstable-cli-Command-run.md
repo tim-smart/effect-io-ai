@@ -7,9 +7,8 @@ Runs a command using the arguments supplied by the `Stdio` service.
 
 **When to use**
 
-Use when you use `run` at an application entry point when arguments should come from
-`Stdio`; use `runWith` when you need an explicit argument array, such as in
-tests.
+Use when command-line arguments should come from `Stdio` at the application
+entry point.
 
 **Example** (Running commands with standard input)
 
@@ -30,12 +29,16 @@ const program = Command.run(greetCommand, {
 })
 ```
 
+**See**
+
+- `runWith` for running a command with an explicit argument array
+
 **Signature**
 
 ```ts
 declare const run: { (config: { readonly version: string; }): <Name extends string, Input, E, R, ContextInput>(command: Command<Name, Input, ContextInput, E, R>) => Effect.Effect<void, E | CliError.CliError, R | Environment>; <Name extends string, Input, E, R, ContextInput>(command: Command<Name, Input, ContextInput, E, R>, config: { readonly version: string; }): Effect.Effect<void, E | CliError.CliError, R | Environment>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Command.ts#L1452)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Command.ts#L1459)
 
 Since v4.0.0

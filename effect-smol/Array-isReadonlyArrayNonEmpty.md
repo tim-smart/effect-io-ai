@@ -6,6 +6,11 @@ Module: `Array`<br />
 Checks whether a `ReadonlyArray` is non-empty, narrowing the type to
 `NonEmptyReadonlyArray`.
 
+**When to use**
+
+Use when you need to prove a readonly array has at least one element without
+requiring mutable array methods afterward.
+
 **Example** (Checking for a non-empty readonly array)
 
 ```ts
@@ -26,6 +31,6 @@ console.log(Array.isReadonlyArrayNonEmpty([1, 2, 3])) // true
 declare const isReadonlyArrayNonEmpty: <A>(self: ReadonlyArray<A>) => self is NonEmptyReadonlyArray<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L947)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L967)
 
 Since v4.0.0

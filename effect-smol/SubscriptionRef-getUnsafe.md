@@ -5,6 +5,11 @@ Module: `SubscriptionRef`<br />
 
 Retrieves the current value of the `SubscriptionRef` unsafely.
 
+**When to use**
+
+Use when you are in synchronous internals or test setup where concurrent
+updates are controlled.
+
 **Gotchas**
 
 This function directly accesses the underlying reference without any
@@ -30,6 +35,6 @@ const program = Effect.gen(function*() {
 declare const getUnsafe: <A>(self: SubscriptionRef<A>) => A
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SubscriptionRef.ts#L234)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SubscriptionRef.ts#L239)
 
 Since v4.0.0

@@ -38,6 +38,6 @@ const makeConfig = (config: Config.Wrap<Options>): Config.Config<Options> =>
 declare const unwrap: <T>(wrapped: Wrap<T>) => Config<T>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Config.ts#L583)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Config.ts#L580)
 
 Since v2.0.0

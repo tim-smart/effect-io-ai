@@ -7,9 +7,8 @@ Typed error indicating that a configuration source could not be read.
 
 **When to use**
 
-Use when you use this from a custom provider's `get` callback when the underlying store
-is unreachable or produces an I/O error, or match on it in error channels
-when consuming provider output directly.
+Use when you need to report that a custom provider's underlying store is
+unreachable or produced an I/O error while reading configuration data.
 
 **Gotchas**
 
@@ -39,6 +38,6 @@ const provider = ConfigProvider.make((_path) =>
 declare class SourceError
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ConfigProvider.ts#L269)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ConfigProvider.ts#L268)
 
 Since v4.0.0

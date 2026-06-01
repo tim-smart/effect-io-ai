@@ -8,7 +8,8 @@ new value.
 
 **When to use**
 
-Use to apply a pure state transition and return the new stored value.
+Use to apply a pure `SynchronizedRef` state transition and return the new
+stored value.
 
 **See**
 
@@ -21,6 +22,6 @@ Use to apply a pure state transition and return the new stored value.
 declare const updateAndGet: { <A>(f: (a: A) => A): (self: SynchronizedRef<A>) => Effect.Effect<A>; <A>(self: SynchronizedRef<A>, f: (a: A) => A): Effect.Effect<A>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SynchronizedRef.ts#L521)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SynchronizedRef.ts#L527)
 
 Since v2.0.0

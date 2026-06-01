@@ -7,7 +7,8 @@ Represents a schema issue produced when a schema filter (refinement check) fails
 
 **When to use**
 
-Use when you need to inspect which filter rejected the value.
+Use when you need to inspect a schema issue that records which refinement
+check rejected the value.
 
 **Details**
 
@@ -45,7 +46,7 @@ declare class Filter { constructor(
     /**
      * The filter that failed.
      */
-    filter: AST.Filter<any>,
+    filter: SchemaAST.Filter<any>,
     /**
      * The issue that occurred.
      */
@@ -53,6 +54,6 @@ declare class Filter { constructor(
   ) }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaIssue.ts#L226)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaIssue.ts#L227)
 
 Since v4.0.0

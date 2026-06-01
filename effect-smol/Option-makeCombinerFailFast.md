@@ -8,7 +8,8 @@ if either operand is `None`.
 
 **When to use**
 
-Use when operations that require both values to be present
+Use when you need an `Option` combiner that returns `None` unless both
+operands are `Some`.
 
 **Details**
 
@@ -39,6 +40,6 @@ console.log(combiner.combine(Option.some(1), Option.none()))
 declare const makeCombinerFailFast: <A>(combiner: Combiner.Combiner<A>) => Combiner.Combiner<Option<A>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L2655)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L2673)
 
 Since v4.0.0

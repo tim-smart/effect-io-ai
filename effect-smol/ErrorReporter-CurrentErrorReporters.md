@@ -8,7 +8,7 @@ current fiber. Defaults to an empty set (no reporting).
 
 **When to use**
 
-Use when low-level code needs to read or replace the current set of reporters
+Use when you need to read or replace the current set of error reporters
 directly.
 
 **Signature**

@@ -16,6 +16,6 @@ fields.
 export interface MetaDefinitions extends BuiltInMetaDefinitions {}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L13895)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L14092)
 
 Since v4.0.0

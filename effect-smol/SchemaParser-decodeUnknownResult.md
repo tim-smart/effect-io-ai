@@ -8,8 +8,8 @@ Creates a decoder for `unknown` input that reports failure safely as a
 
 **When to use**
 
-Use when decoding untyped boundary input and you want schema issues returned
-as data in a `Result`.
+Use when decoding untyped boundary input and you want `SchemaIssue.Issue`
+failures returned as data in a `Result`.
 
 **Details**
 
@@ -29,9 +29,9 @@ decoding or defects can still throw.
 **Signature**
 
 ```ts
-declare const decodeUnknownResult: <S extends Schema.Decoder<unknown>>(schema: S, options?: AST.ParseOptions) => (input: unknown, options?: AST.ParseOptions) => Result.Result<S["Type"], Issue.Issue>
+declare const decodeUnknownResult: <S extends Schema.Decoder<unknown>>(schema: S, options?: SchemaAST.ParseOptions) => (input: unknown, options?: SchemaAST.ParseOptions) => Result.Result<S["Type"], SchemaIssue.Issue>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaParser.ts#L479)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaParser.ts#L448)
 
 Since v4.0.0

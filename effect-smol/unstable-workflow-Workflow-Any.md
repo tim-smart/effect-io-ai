@@ -10,16 +10,20 @@ preserving their specific payload, success, or error types.
 
 ```ts
 export interface Any {
+  new(_: never): {}
+
   readonly [TypeId]: typeof TypeId
-  readonly name: string
+  readonly _tag: string
   readonly executionId: (payload: any) => Effect.Effect<string>
   readonly payloadSchema: AnyStructSchema
   readonly successSchema: Schema.Top
   readonly errorSchema: Schema.Top
   readonly annotations: Context.Context<never>
+  readonly idempotencyKey: (payload: any) => string
+  readonly suspendedRetrySchedule?: Schedule.Schedule<any, unknown> | undefined
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Workflow.ts#L226)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Workflow.ts#L230)
 
 Since v4.0.0

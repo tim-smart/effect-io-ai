@@ -7,8 +7,9 @@ Returns `true` if the given value is an `Issue`.
 
 **When to use**
 
-Use when narrowing an `unknown` value to `Issue` in error-handling code.
-- Distinguishing an `Issue` from other error types in a catch-all handler.
+Use when you need to narrow an `unknown` value to `Issue` in error-handling
+code, such as distinguishing an `Issue` from other error types in a catch-all
+handler.
 
 **Details**
 
@@ -36,6 +37,6 @@ console.log(SchemaIssue.isIssue("not an issue"))
 declare const isIssue: (u: unknown) => u is Issue
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaIssue.ts#L122)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaIssue.ts#L123)
 
 Since v4.0.0

@@ -8,9 +8,8 @@ value.
 
 **When to use**
 
-Use when the service implementation is already constructed and does
-not need effectful acquisition. Use `sync` when the service should be created
-lazily during layer construction.
+Use when you need a `Layer` that provides a service from an already
+constructed implementation without effectful acquisition.
 
 **Example** (Creating a layer from a service implementation)
 
@@ -36,6 +35,6 @@ const DatabaseLive = Layer.succeed(Database, {
 declare const succeed: { <I, S>(service: Context.Key<I, S>): (resource: S) => Layer<I>; <I, S>(service: Context.Key<I, S>, resource: Types.NoInfer<S>): Layer<I>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L808)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L807)
 
 Since v2.0.0

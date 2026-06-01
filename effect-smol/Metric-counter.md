@@ -9,11 +9,10 @@ of changes.
 
 **Details**
 
-- `description` - A description of the `Counter`.
-- `attributes`  - The attributes to associate with the `Counter`.
-- `bigint`      - Indicates if the `Counter` should use the `bigint` type.
-- `incremental` - Set to `true` to create a `Counter` that can only ever be
-                  incremented.
+The optional `description` describes the counter, and `attributes` attach
+dimensions to it. Set `bigint` to create a counter that accepts `bigint`
+inputs. Set `incremental` to `true` to create a counter that can only ever be
+incremented.
 
 **Example** (Creating counter metrics)
 
@@ -64,6 +63,6 @@ const program = Effect.gen(function*() {
 declare const counter: { (name: string, options?: { readonly description?: string | undefined; readonly attributes?: Metric.Attributes | undefined; readonly bigint?: false | undefined; readonly incremental?: boolean | undefined; }): Counter<number>; (name: string, options: { readonly description?: string | undefined; readonly attributes?: Metric.Attributes | undefined; readonly bigint: true; readonly incremental?: boolean | undefined; }): Counter<bigint>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Metric.ts#L2248)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Metric.ts#L2247)
 
 Since v2.0.0

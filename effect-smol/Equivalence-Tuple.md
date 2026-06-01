@@ -7,17 +7,16 @@ Creates an equivalence for tuples with heterogeneous element types.
 
 **When to use**
 
-Use when comparing tuples with different types at each position
-- Use when you need different equivalence logic for each tuple element
-- Use when working with fixed-length tuples instead of arrays
-- Prefer this over `Array` when you have a known tuple structure with different types
+Use when you need an `Equivalence` for fixed-length tuples with per-position
+equivalences.
 
 **Details**
 
-- Requires tuples to have the same length; different lengths are never equivalent
-- Applies each equivalence to the corresponding element position
-- Returns `true` only if all elements are equivalent according to their respective equivalences
-- The result is also an equivalence that satisfies reflexive, symmetric, and transitive properties
+Tuples must have the same length; different lengths are never equivalent.
+Each equivalence is applied to the corresponding element position. The result
+returns `true` only if all elements are equivalent according to their
+respective equivalences, and it also satisfies reflexive, symmetric, and
+transitive properties.
 
 **Example** (Homogeneous tuple equivalence)
 
@@ -65,6 +64,6 @@ console.log(
 declare const Tuple: <const Elements extends ReadonlyArray<Equivalence<any>>>(elements: Elements) => Equivalence<{ readonly [I in keyof Elements]: [Elements[I]] extends [Equivalence<infer A>] ? A : never; }>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Equivalence.ts#L601)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Equivalence.ts#L585)
 
 Since v4.0.0

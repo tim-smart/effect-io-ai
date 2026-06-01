@@ -7,7 +7,8 @@ Computes a hash value for a string using the djb2 algorithm.
 
 **When to use**
 
-Use to hash a string directly.
+Use when you need a string field to contribute to a custom structural hash
+implementation.
 
 **Details**
 
@@ -34,6 +35,6 @@ console.log(Hash.string("test") === Hash.string("test")) // true
 declare const string: (str: string) => number
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Hash.ts#L427)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Hash.ts#L428)
 
 Since v2.0.0

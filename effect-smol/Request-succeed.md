@@ -7,8 +7,8 @@ Completes a request entry successfully with the supplied value.
 
 **When to use**
 
-Use to finish a `Request.Entry` when you have a successful value for the
-request.
+Use when you need to finish a `Request.Entry` with a successful request
+value.
 
 **See**
 

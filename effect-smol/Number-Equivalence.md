@@ -26,6 +26,6 @@ console.log(Number.Equivalence(NaN, NaN)) // true
 declare const Equivalence: Equ.Equivalence<number>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Number.ts#L347)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Number.ts#L351)
 
 Since v2.0.0

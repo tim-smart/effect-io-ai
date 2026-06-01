@@ -8,8 +8,8 @@ is absent.
 
 **When to use**
 
-Use when you need raw map-style lookup. Use `getOption` when you want the
-usual `Context.Reference` default-value behavior.
+Use when you need to read the service stored for a key without resolving
+`Context.Reference` defaults.
 
 **Gotchas**
 
@@ -26,6 +26,6 @@ This is a raw lookup and does not resolve default values for
 declare const getOrUndefined: { <S, I>(key: Key<I, S>): <Services>(self: Context<Services>) => S | undefined; <Services, S, I>(self: Context<Services>, key: Key<I, S>): S | undefined; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Context.ts#L876)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Context.ts#L878)
 
 Since v4.0.0

@@ -7,7 +7,7 @@ Reads the current value of the `TxRef`.
 
 **When to use**
 
-Use to read the current value of a transactional reference.
+Use to read the current value of a `TxRef`.
 
 **Example** (Reading transactional references)
 

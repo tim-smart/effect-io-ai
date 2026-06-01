@@ -7,7 +7,8 @@ Recovers from a decoding error with a handler that may require Effect services.
 
 **When to use**
 
-Use when decoding fallback logic needs services from the Effect context.
+Use when you need decoding fallback logic to require services from the Effect
+context.
 
 **Details**
 
@@ -23,9 +24,9 @@ handler's services are added to the schema's decoding services.
 **Signature**
 
 ```ts
-declare const catchDecodingWithContext: <S extends Top, R = never>(f: (issue: Issue.Issue) => Effect.Effect<Option_.Option<S["Type"]>, Issue.Issue, R>) => (self: S) => middlewareDecoding<S, S["DecodingServices"] | R>
+declare const catchDecodingWithContext: <S extends Top, R = never>(f: (issue: SchemaIssue.Issue) => Effect.Effect<Option_.Option<S["Type"]>, SchemaIssue.Issue, R>) => (self: S) => middlewareDecoding<S, S["DecodingServices"] | R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L4737)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L4935)
 
 Since v4.0.0

@@ -15,6 +15,6 @@ The result is wrapped in a new `UrlParams` value.
 declare const transform: { (f: (params: UrlParams["params"]) => UrlParams["params"]): (self: UrlParams) => UrlParams; (self: UrlParams, f: (params: UrlParams["params"]) => UrlParams["params"]): UrlParams; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/UrlParams.ts#L390)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/UrlParams.ts#L400)
 
 Since v4.0.0

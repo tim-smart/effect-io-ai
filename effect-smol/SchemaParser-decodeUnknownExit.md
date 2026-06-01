@@ -8,8 +8,8 @@ as an `Exit`.
 
 **When to use**
 
-Use when decoding unknown input synchronously and preserving the parser
-outcome as an `Exit` value.
+Use when you need to decode unknown input synchronously into an `Exit` whose
+failure contains `SchemaIssue.Issue`.
 
 **Details**
 
@@ -26,16 +26,15 @@ Because this adapter runs synchronously, async decoding work can produce an
 
 - `decodeExit` for input already typed as the schema's `Encoded` type
 - `decodeUnknownEffect` for preserving decoding services and failures in `Effect`
-- `decodeUnknownOption` for discarding issue details
 - `decodeUnknownResult` for returning schema issues as data
 - `decodeUnknownSync` for throwing on decoding failure
 
 **Signature**
 
 ```ts
-declare const decodeUnknownExit: <S extends Schema.Decoder<unknown>>(schema: S, options?: AST.ParseOptions) => (input: unknown, options?: AST.ParseOptions) => Exit.Exit<S["Type"], Issue.Issue>
+declare const decodeUnknownExit: <S extends Schema.Decoder<unknown>>(schema: S, options?: SchemaAST.ParseOptions) => (input: unknown, options?: SchemaAST.ParseOptions) => Exit.Exit<S["Type"], SchemaIssue.Issue>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaParser.ts#L371)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaParser.ts#L376)
 
 Since v4.0.0

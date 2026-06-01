@@ -5,6 +5,11 @@ Module: `SchemaAST`<br />
 
 AST node for object-like schemas, including structs and records.
 
+**When to use**
+
+Use when constructing or inspecting AST nodes for structs or records rather
+than array-like schemas.
+
 **Details**
 
 - `propertySignatures` — named properties with their types (struct fields).
@@ -55,6 +60,6 @@ declare class Objects { constructor(
   ) }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L1962)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L1984)
 
 Since v4.0.0

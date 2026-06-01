@@ -21,6 +21,6 @@ in low-level code that can safely read outside an `Effect`.
 declare const getUnsafe: <A>(self: SynchronizedRef<A>) => A
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SynchronizedRef.ts#L119)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SynchronizedRef.ts#L120)
 
 Since v4.0.0

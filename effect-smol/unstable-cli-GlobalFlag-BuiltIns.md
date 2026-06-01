@@ -5,6 +5,11 @@ Module: `GlobalFlag`<br />
 
 Built-in global flags in default precedence order.
 
+**When to use**
+
+Use when extending or inspecting the default global-flag set that
+`Command.runWith` prepends before user-defined global flags.
+
 **Details**
 
 The built-ins are `Help`, `Version`, `Completions`, and `LogLevel`.
@@ -29,6 +34,6 @@ exits, so this array controls built-in action precedence.
 declare const BuiltIns: ReadonlyArray<GlobalFlag<any>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/GlobalFlag.ts#L288)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/GlobalFlag.ts#L294)
 
 Since v4.0.0

@@ -8,8 +8,8 @@ the console using `console.log`.
 
 **When to use**
 
-Use when this is useful for taking any logger that produces string or object output
-and routing it to the console for development or debugging purposes.
+Use when a logger's string or object output should be routed to `console.log` for
+development or debugging.
 
 **Example** (Writing logger output with console.log)
 

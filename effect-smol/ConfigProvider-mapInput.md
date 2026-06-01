@@ -7,9 +7,8 @@ Transforms the path segments before they reach the underlying store.
 
 **When to use**
 
-Use when you use this for renaming or re-casing path segments, or for adding suffixes and
-other per-segment transformations. See `constantCase` for a common
-specialization.
+Use when you need to rename, re-case, or otherwise transform config path
+segments before lookup.
 
 **Details**
 
@@ -45,6 +44,6 @@ const upper = ConfigProvider.mapInput(provider, (path) =>
 declare const mapInput: { (f: (path: Path) => Path): (self: ConfigProvider) => ConfigProvider; (self: ConfigProvider, f: (path: Path) => Path): ConfigProvider; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ConfigProvider.ts#L553)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ConfigProvider.ts#L549)
 
 Since v4.0.0

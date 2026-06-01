@@ -20,9 +20,9 @@ constraint to ensure generated numbers are integers.
 **Signature**
 
 ```ts
-declare const isInt: (annotations?: Annotations.Filter) => AST.Filter<number>
+declare const isInt: (annotations?: Annotations.Filter) => SchemaAST.Filter<number>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L6839)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L7054)
 
 Since v4.0.0

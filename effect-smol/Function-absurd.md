@@ -8,8 +8,8 @@ type.
 
 **When to use**
 
-Use when exhaustive checks prove a branch cannot be reached, but
-TypeScript still needs a return value.
+Use when you need a return value in a branch that exhaustive checks prove
+cannot be reached.
 
 **Gotchas**
 

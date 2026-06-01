@@ -34,6 +34,6 @@ BigInt.fromString("a") // Option.none()
 declare const fromString: (s: string) => Option.Option<bigint>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigInt.ts#L927)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigInt.ts#L931)
 
 Since v2.4.12

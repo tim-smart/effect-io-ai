@@ -6,6 +6,11 @@ Module: `Queue`<br />
 Adds multiple messages to the queue synchronously. Returns the remaining messages that
 were not added.
 
+**When to use**
+
+Use when queue internals or a performance boundary need a synchronous batch
+offer and can handle any messages that do not fit.
+
 **Gotchas**
 
 This is an unsafe operation that directly modifies the queue without Effect wrapping.
@@ -35,6 +40,6 @@ const program = Effect.gen(function*() {
 declare const offerAllUnsafe: <A, E>(self: Enqueue<A, E>, messages: Iterable<A>) => Array<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Queue.ts#L838)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Queue.ts#L852)
 
 Since v4.0.0

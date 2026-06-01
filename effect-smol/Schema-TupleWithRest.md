@@ -17,7 +17,7 @@ export interface TupleWithRest<
     TupleWithRest.Encoded<S["Encoded"], Rest>,
     S["DecodingServices"] | Rest[number]["DecodingServices"],
     S["EncodingServices"] | Rest[number]["EncodingServices"],
-    AST.Arrays,
+    SchemaAST.Arrays,
     TupleWithRest<S, Rest>,
     TupleWithRest.MakeIn<S["~type.make"], Rest>,
     TupleWithRest.Iso<S["Iso"], Rest>
@@ -28,6 +28,6 @@ export interface TupleWithRest<
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L3849)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L4043)
 
 Since v4.0.0

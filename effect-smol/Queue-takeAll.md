@@ -6,6 +6,11 @@ Module: `Queue`<br />
 Takes all currently available messages, waiting until at least one message
 is available when the queue is empty.
 
+**When to use**
+
+Use when consumers should process the next non-empty batch of buffered
+messages instead of repeatedly taking one message at a time.
+
 **Details**
 
 Returns a non-empty array. If the queue completes or fails before a message
@@ -34,6 +39,6 @@ const program = Effect.gen(function*() {
 declare const takeAll: <A, E>(self: Dequeue<A, E>) => Effect<Arr.NonEmptyArray<A>, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Queue.ts#L1251)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Queue.ts#L1275)
 
 Since v2.0.0

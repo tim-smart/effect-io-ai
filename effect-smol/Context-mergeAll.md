@@ -7,8 +7,7 @@ Merges any number of `Context`s into one.
 
 **When to use**
 
-Use when the number of contexts is variadic. Use `merge` when
-combining exactly two contexts.
+Use when you need to combine a variadic list of contexts.
 
 **Details**
 
@@ -50,6 +49,6 @@ assert.deepStrictEqual(Context.get(context, Host), { HOST: "localhost" })
 declare const mergeAll: <T extends Array<unknown>>(...ctxs: { [K in keyof T]: Context<T[K]>; }) => Context<T[number]>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Context.ts#L1186)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Context.ts#L1185)
 
 Since v3.12.0

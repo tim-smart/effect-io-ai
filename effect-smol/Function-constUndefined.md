@@ -7,8 +7,7 @@ Returns `undefined` when called.
 
 **When to use**
 
-Use when an API expects a thunk and every invocation should return
-`undefined`.
+Use when you need a thunk that returns `undefined` on every invocation.
 
 **Example** (Returning undefined from a thunk)
 

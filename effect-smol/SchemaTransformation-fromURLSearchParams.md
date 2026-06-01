@@ -8,8 +8,8 @@ encodes object-like values back into `URLSearchParams`.
 
 **When to use**
 
-Use when you use this for query strings where keys such as `filter[name]` or `items[0]`
-should become nested data.
+Use when you need a schema transformation for query strings whose keys, such
+as `filter[name]` or `items[0]`, should become nested data.
 
 **Details**
 
@@ -38,6 +38,6 @@ const schema = Schema.instanceOf(URLSearchParams).pipe(
 declare const fromURLSearchParams: Transformation<unknown, URLSearchParams, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L1649)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L1674)
 
 Since v4.0.0

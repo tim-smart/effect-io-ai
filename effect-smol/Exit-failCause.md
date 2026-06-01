@@ -8,7 +8,8 @@ Creates a failed Exit from a Cause.
 **When to use**
 
 Use when you already have a `Cause<E>` and want to wrap it in an Exit
-- Use for advanced error handling where you need full control over the Cause structure
+for advanced error handling where you need full control over the Cause
+structure.
 
 **Details**
 

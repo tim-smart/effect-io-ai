@@ -7,8 +7,8 @@ Constructs a `PartitionedSemaphore` synchronously, outside of `Effect`.
 
 **When to use**
 
-Use when a partitioned semaphore must be constructed synchronously outside an
-`Effect` workflow.
+Use when you need to construct a partitioned semaphore synchronously outside
+an `Effect` workflow.
 
 **Details**
 

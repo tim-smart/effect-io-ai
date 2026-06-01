@@ -6,6 +6,11 @@ Module: `Queue`<br />
 Adds multiple messages to the queue. Returns the remaining messages that
 were not added.
 
+**When to use**
+
+Use when producers can submit a batch at once and need to know which messages
+did not fit under the queue's capacity strategy.
+
 **Details**
 
 For bounded queues, this operation may suspend if the queue doesn't have
@@ -32,6 +37,6 @@ const program = Effect.gen(function*() {
 declare const offerAll: <A, E>(self: Enqueue<A, E>, messages: Iterable<A>) => Effect<Array<A>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Queue.ts#L794)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Queue.ts#L803)
 
 Since v2.0.0

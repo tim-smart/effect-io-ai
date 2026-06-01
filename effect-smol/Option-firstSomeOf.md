@@ -8,7 +8,7 @@ all are `None`.
 
 **When to use**
 
-Use when searching for the first available value in a priority list
+Use when you need the first available `Some` value from a priority list.
 
 **Details**
 
@@ -38,6 +38,6 @@ console.log(Option.firstSomeOf([
 declare const firstSomeOf: <T, C extends Iterable<Option<T>> = Iterable<Option<T>>>(collection: C) => [C] extends [Iterable<Option<infer A>>] ? Option<A> : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L832)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L835)
 
 Since v2.0.0

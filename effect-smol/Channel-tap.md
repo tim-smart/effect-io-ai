@@ -40,6 +40,6 @@ const tappedChannel = Channel.tap(
 declare const tap: { <OutElem, X, OutErr1, Env1>(f: (d: Types.NoInfer<OutElem>) => Effect.Effect<X, OutErr1, Env1>, options?: { readonly concurrency?: number | "unbounded" | undefined; }): <OutErr, OutDone, InElem, InErr, InDone, Env>(self: Channel<OutElem, OutErr, OutDone, InElem, InErr, InDone, Env>) => Channel<OutElem, OutErr1 | OutErr, OutDone, InElem, InErr, InDone, Env1 | Env>; <OutElem, OutErr, OutDone, InElem, InErr, InDone, Env, X, OutErr1, Env1>(self: Channel<OutElem, OutErr, OutDone, InElem, InErr, InDone, Env>, f: (d: Types.NoInfer<OutElem>) => Effect.Effect<X, OutErr1, Env1>, options?: { readonly concurrency?: number | "unbounded" | undefined; }): Channel<OutElem, OutErr | OutErr1, OutDone, InElem, InErr, InDone, Env | Env1>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L2191)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L2211)
 
 Since v4.0.0

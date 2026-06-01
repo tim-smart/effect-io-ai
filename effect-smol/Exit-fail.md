@@ -7,11 +7,11 @@ Creates a failed Exit from a typed error value.
 
 **When to use**
 
-Use when you need expected, recoverable failures
+Use when you need to represent an expected typed failure as an `Exit`.
 
 **Details**
 
-- The error is wrapped in a `Cause.Fail` internally
+The error is wrapped in a `Cause.Fail` internally.
 
 Returns a `Failure<never, E>`.
 

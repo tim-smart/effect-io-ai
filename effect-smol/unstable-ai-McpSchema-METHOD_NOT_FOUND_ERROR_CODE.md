@@ -8,8 +8,8 @@ available.
 
 **When to use**
 
-Use when you need the JSON-RPC error code for requests whose method does not
-exist or is not available.
+Use when building an MCP/JSON-RPC error response for a request whose
+`method` is unknown or unavailable.
 
 **Signature**
 

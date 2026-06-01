@@ -7,10 +7,8 @@ Creates an equivalence for objects by comparing all properties using the same eq
 
 **When to use**
 
-Use when comparing objects with dynamic or unknown property names
-- Use when all property values should use the same equivalence logic
-- Use when working with record or dictionary types
-- Prefer this over `Struct` when you have variable properties or need to compare all properties uniformly
+Use when you need to compare records with the same equivalence for every
+property value.
 
 **Details**
 
@@ -59,6 +57,6 @@ console.log(numberRecordEq(scores1, scores3)) // false
 declare const Record: <A>(value: Equivalence<A>) => Equivalence<Record<PropertyKey, A>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Equivalence.ts#L822)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Equivalence.ts#L799)
 
 Since v4.0.0

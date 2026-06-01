@@ -7,7 +7,7 @@ Wraps the given value into an `Option` to represent its presence.
 
 **When to use**
 
-Use to wrap a known-present value as `Option`
+Use to wrap a known present value as `Option`
 - Returning a successful result from a partial function
 
 **Details**
@@ -38,6 +38,6 @@ console.log(value)
 declare const some: <A>(value: A) => Option<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L352)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L353)
 
 Since v2.0.0

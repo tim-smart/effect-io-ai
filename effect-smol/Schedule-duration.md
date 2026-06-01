@@ -7,8 +7,7 @@ Returns a schedule that recurs once after the specified duration.
 
 **When to use**
 
-Use when you need one delayed recurrence. Use `during` to keep
-recurring until a duration has elapsed.
+Use when you need a schedule that recurs once after a fixed delay.
 
 **Details**
 
@@ -36,6 +35,6 @@ const program = Effect.repeat(
 declare const duration: (durationInput: Duration.Input) => Schedule<Duration.Duration>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L1570)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L1582)
 
 Since v2.0.0

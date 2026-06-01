@@ -8,7 +8,8 @@ Constructs a `Transformation` from an object with `decode` and `encode`
 
 **When to use**
 
-Use when you already have `Getter` instances and want to pair them.
+Use when you already have schema getter instances and want to pair them into
+a schema transformation.
 - You want idempotent wrapping (won't double-wrap).
 
 **Details**
@@ -35,9 +36,9 @@ const t = SchemaTransformation.make({
 **Signature**
 
 ```ts
-declare const make: <T, E, RD = never, RE = never>(options: { readonly decode: Getter.Getter<T, E, RD>; readonly encode: Getter.Getter<E, T, RE>; }) => Transformation<T, E, RD, RE>
+declare const make: <T, E, RD = never, RE = never>(options: { readonly decode: SchemaGetter.Getter<T, E, RD>; readonly encode: SchemaGetter.Getter<E, T, RE>; }) => Transformation<T, E, RD, RE>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L302)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L305)
 
 Since v3.10.0

@@ -7,8 +7,8 @@ Reads the current value of the TxSubscriptionRef.
 
 **When to use**
 
-Use to read the current transactional value without subscribing to future
-changes.
+Use to read the current `TxSubscriptionRef` value without subscribing to
+future changes.
 
 **Example** (Reading the current value)
 

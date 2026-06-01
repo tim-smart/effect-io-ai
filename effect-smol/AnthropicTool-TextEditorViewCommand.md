@@ -16,6 +16,6 @@ the end of the file.
 type TextEditorViewCommand = typeof TextEditorViewCommand.Type
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L1701)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L1723)
 
 Since v4.0.0

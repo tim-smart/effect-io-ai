@@ -7,8 +7,7 @@ Swaps an effect's success and failure channels.
 
 **When to use**
 
-Use to handle the failure value as a success, or to move the success value
-into the failure channel.
+Use to swap an `Effect`'s success and failure channels.
 
 **Details**
 
@@ -34,6 +33,6 @@ const flipped = Effect.flip(program)
 declare const flip: <A, E, R>(self: Effect<A, E, R>) => Effect<E, A, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L2473)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L2480)
 
 Since v2.0.0

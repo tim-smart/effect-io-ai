@@ -5,10 +5,16 @@ Module: `Array`<br />
 
 Adds a computed plain value to the do-notation scope without introducing a new array dimension.
 
+**When to use**
+
+Use when each do-notation branch needs a derived field from the current
+bindings without multiplying the number of branches.
+
 **Details**
 
-- Unlike `bind`, the callback returns a single value (not an array), so no cartesian product occurs.
-- Useful for derived or intermediate values that depend on previously bound variables.
+Unlike `bind`, the callback returns a single value instead of an array, so
+no cartesian product occurs. Use this for derived or intermediate values
+that depend on previously bound variables.
 
 **Example** (Adding a computed value)
 
@@ -35,6 +41,6 @@ console.log(result)
 declare const let: { <N extends string, B, A extends object>(tag: Exclude<N, keyof A>, f: (a: NoInfer<A>) => B): (self: ReadonlyArray<A>) => Array<{ [K in N | keyof A]: K extends keyof A ? A[K] : B; }>; <N extends string, A extends object, B>(self: ReadonlyArray<A>, tag: Exclude<N, keyof A>, f: (a: NoInfer<A>) => B): Array<{ [K in N | keyof A]: K extends keyof A ? A[K] : B; }>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L4848)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L4908)
 
 Since v3.2.0

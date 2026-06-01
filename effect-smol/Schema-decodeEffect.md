@@ -9,7 +9,8 @@ returning an `Effect` that succeeds with the decoded value or fails with a
 
 **When to use**
 
-Use when the input is already typed as the schema's `Encoded` type.
+Use when you need to decode input already typed as the schema's `Encoded`
+type in an `Effect` whose failure channel is `SchemaError`.
 
 **Details**
 
@@ -17,12 +18,16 @@ For `unknown` input use `decodeUnknownEffect`.
 Options may be provided either when creating the decoder or when applying it;
 application options override creation options.
 
+**See**
+
+- `SchemaParser.decodeEffect` for the adapter that fails with `SchemaIssue.Issue` directly
+
 **Signature**
 
 ```ts
-declare const decodeEffect: <S extends Top>(schema: S, options?: AST.ParseOptions) => (input: S["Encoded"], options?: AST.ParseOptions) => Effect.Effect<S["Type"], SchemaError, S["DecodingServices"]>
+declare const decodeEffect: <S extends Top>(schema: S, options?: SchemaAST.ParseOptions) => (input: S["Encoded"], options?: SchemaAST.ParseOptions) => Effect.Effect<S["Type"], SchemaError, S["DecodingServices"]>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L1264)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L1282)
 
 Since v4.0.0

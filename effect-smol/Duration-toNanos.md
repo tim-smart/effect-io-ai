@@ -26,6 +26,6 @@ Option.getOrUndefined(Duration.toNanos(Duration.infinity)) // undefined
 declare const toNanos: (self: Input) => Option.Option<bigint>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Duration.ts#L968)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Duration.ts#L978)
 
 Since v2.0.0

@@ -7,9 +7,8 @@ Disables automatic collection of fiber runtime metrics for the provided Effect.
 
 **When to use**
 
-Use when this is useful when you want to selectively disable runtime metrics for specific
-parts of your application while keeping them enabled elsewhere, or when you need
-to avoid the overhead of metrics collection in performance-critical sections.
+Use when you need to disable runtime metrics for a specific effect while
+keeping them enabled elsewhere.
 
 **Example** (Disabling runtime metrics for an effect)
 
@@ -88,6 +87,6 @@ const finalProgram = program.pipe(
 declare const disableRuntimeMetrics: <A, E, R>(self: Effect<A, E, R>) => Effect<A, E, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Metric.ts#L4080)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Metric.ts#L4070)
 
 Since v4.0.0

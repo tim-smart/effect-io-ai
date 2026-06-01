@@ -12,9 +12,9 @@ array.
 
 **Details**
 
-- If the input is already an array, returns it by reference.
-- If the input is a single value, wraps it in a one-element array.
-- Useful for APIs that accept `A | Array<A>`.
+If the input is already an array, this returns it by reference. If the input
+is a single value, this wraps it in a one-element array. This is useful for
+APIs that accept `A | Array<A>`.
 
 **Example** (Normalizing input)
 
@@ -36,6 +36,6 @@ console.log(Array.ensure(["a", "b", "c"])) // ["a", "b", "c"]
 declare const ensure: <A>(self: ReadonlyArray<A> | A) => Array<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L397)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L411)
 
 Since v3.3.0

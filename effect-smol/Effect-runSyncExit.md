@@ -13,10 +13,9 @@ including any defects, without dealing with asynchronous operations.
 
 **Details**
 
-The `Exit` type represents the result of the effect:
-- If the effect succeeds, the result is wrapped in a `Success`.
-- If it fails, the failure information is provided as a `Failure` containing
-  a `Cause` type.
+The `Exit` type represents the result of the effect. Successful effects are
+wrapped in `Success`, and failed effects are wrapped in `Failure` with a
+`Cause`.
 
 If the effect contains asynchronous operations, `runSyncExit` will
 return an `Failure` with a `Die` cause, indicating that the effect cannot be
@@ -80,6 +79,6 @@ console.log(Effect.runSyncExit(Effect.promise(() => Promise.resolve(1))))
 declare const runSyncExit: <A, E>(effect: Effect<A, E>) => Exit.Exit<A, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L9233)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L9302)
 
 Since v2.0.0

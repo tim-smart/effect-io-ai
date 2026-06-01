@@ -7,7 +7,8 @@ Creates a getter that always returns `None`, effectively omitting the value from
 
 **When to use**
 
-Use when a field should be excluded during decoding or encoding.
+Use when you need a schema getter to exclude a field during decoding or
+encoding.
 
 **Details**
 
@@ -33,6 +34,6 @@ const omitField = SchemaGetter.omit<string>()
 declare const omit: <T>() => Getter<never, T>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L673)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L678)
 
 Since v4.0.0

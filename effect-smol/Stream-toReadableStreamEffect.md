@@ -5,6 +5,11 @@ Module: `Stream`<br />
 
 Creates an Effect that builds a ReadableStream from the stream.
 
+**When to use**
+
+Use when bridging to Web Streams from inside an `Effect` so the required
+services can be captured from the current context.
+
 **Details**
 
 See https://developer.mozilla.org/en-US/docs/Web/API/ReadableStream.
@@ -30,6 +35,6 @@ Effect.runPromise(effect)
 declare const toReadableStreamEffect: { <A>(options?: { readonly strategy?: QueuingStrategy<A> | undefined; }): <E, R>(self: Stream<A, E, R>) => Effect.Effect<ReadableStream<A>, never, R>; <A, E, R>(self: Stream<A, E, R>, options?: { readonly strategy?: QueuingStrategy<A> | undefined; }): Effect.Effect<ReadableStream<A>, never, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L11235)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L11340)
 
 Since v2.0.0

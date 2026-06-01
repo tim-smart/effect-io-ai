@@ -3,12 +3,12 @@ Module: `BigDecimal`<br />
 
 ## BigDecimal.fromNumberUnsafe
 
-Creates a `BigDecimal` from a finite `number`, throwing for non-finite input.
+Creates a `BigDecimal` from a finite `number`.
 
 **When to use**
 
-Use when a finite JavaScript number must become a `BigDecimal` and invalid
-input should throw.
+Use when you need to convert a trusted finite JavaScript number to a
+`BigDecimal` and want a plain result instead of an `Option`.
 
 **Gotchas**
 
@@ -36,6 +36,6 @@ assert.deepStrictEqual(BigDecimal.fromNumberUnsafe(123.456), BigDecimal.make(123
 declare const fromNumberUnsafe: (n: number) => BigDecimal
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigDecimal.ts#L1338)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigDecimal.ts#L1340)
 
 Since v4.0.0

@@ -7,8 +7,7 @@ Creates a `Combiner` that always returns the first (left) argument.
 
 **When to use**
 
-Use when you want "first write wins" semantics while merging values, or
-when the combining logic should keep the existing value.
+Use when you want "first write wins" semantics while merging values.
 
 **Details**
 
@@ -35,6 +34,6 @@ console.log(First.combine(1, 2))
 declare const first: <A>() => Combiner<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Combiner.ts#L268)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Combiner.ts#L266)
 
 Since v4.0.0

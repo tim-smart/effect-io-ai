@@ -6,6 +6,11 @@ Module: `Channel`<br />
 Constructs a channel that fails immediately with the specified lazily
 evaluated error.
 
+**When to use**
+
+Use when the error value should be computed each time the channel runs instead
+of when the channel is constructed.
+
 **Example** (Failing with a lazy error)
 
 ```ts
@@ -37,6 +42,6 @@ const expensiveError = Channel.failSync(() => {
 declare const failSync: <E>(evaluate: LazyArg<E>) => Channel<never, E, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L1044)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L1049)
 
 Since v2.0.0

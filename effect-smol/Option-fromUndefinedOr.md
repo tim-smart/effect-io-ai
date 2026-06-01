@@ -8,7 +8,8 @@ as a valid `Some`.
 
 **When to use**
 
-Use when when `null` is a meaningful value but `undefined` means absent
+Use when you want to treat only `undefined` as absent while preserving `null`
+as a meaningful value.
 
 **Details**
 
@@ -41,6 +42,6 @@ console.log(Option.fromUndefinedOr(42))
 declare const fromUndefinedOr: <A>(a: A) => Option<Exclude<A, undefined>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L917)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L921)
 
 Since v4.0.0

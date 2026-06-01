@@ -5,6 +5,11 @@ Module: `DateTime`<br />
 
 Create a `DateTime.Zoned` using `DateTime.makeUnsafe` and a time zone.
 
+**When to use**
+
+Use when the date/time input and zone options are trusted and invalid or
+rejected ambiguous times should throw instead of returning `Option.none`.
+
 **Details**
 
 The input is treated as UTC and then the time zone is attached, unless
@@ -36,6 +41,6 @@ console.log(DateTime.formatIsoZoned(zoned)) // "2024-06-15T15:30:00.000+01:00[Eu
 declare const makeZonedUnsafe: (input: DateTime.Input, options?: { readonly timeZone?: number | string | TimeZone | undefined; readonly adjustForTimeZone?: boolean | undefined; readonly disambiguation?: Disambiguation | undefined; }) => Zoned
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L724)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L734)
 
 Since v4.0.0

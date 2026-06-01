@@ -8,8 +8,8 @@ permits.
 
 **When to use**
 
-Use to manually return permits acquired with `take` when a lower-level
-permit protocol needs explicit release control.
+Use when you need to return permits acquired with `take` in a lower-level
+permit protocol with explicit release control.
 
 **Details**
 

@@ -11,10 +11,9 @@ Use to apply a transformation to the value inside a successful Exit
 
 **Details**
 
-- Has no effect on failures, which pass through unchanged
+Failures pass through unchanged.
 
 Allocates a new Exit if successful.
-Supports both curried and direct call styles.
 
 **Example** (Mapping over a success)
 
@@ -37,6 +36,6 @@ console.log(Exit.isSuccess(doubled) && doubled.value) // 42
 declare const map: { <A, B>(f: (a: A) => B): <E>(self: Exit<A, E>) => Exit<B, E>; <A, E, B>(self: Exit<A, E>, f: (a: A) => B): Exit<B, E>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Exit.ts#L885)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Exit.ts#L877)
 
 Since v2.0.0

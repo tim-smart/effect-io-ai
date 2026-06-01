@@ -12,8 +12,7 @@ import { Layer, Schema } from "effect"
 import { RpcServer } from "effect/unstable/rpc"
 import { Workflow, WorkflowProxy, WorkflowProxyServer } from "effect/unstable/workflow"
 
-const EmailWorkflow = Workflow.make({
-  name: "EmailWorkflow",
+const EmailWorkflow = Workflow.make("EmailWorkflow", {
   payload: {
     id: Schema.String,
     to: Schema.String
@@ -40,6 +39,6 @@ const ApiLayer = RpcServer.layer(MyRpcs).pipe(
 declare const toRpcGroup: <const Workflows extends NonEmptyReadonlyArray<Workflow.Any>, const Prefix extends string = "">(workflows: Workflows, options?: { readonly prefix?: Prefix | undefined; }) => RpcGroup.RpcGroup<ConvertRpcs<Workflows[number], Prefix>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/WorkflowProxy.ts#L71)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/WorkflowProxy.ts#L70)
 
 Since v4.0.0

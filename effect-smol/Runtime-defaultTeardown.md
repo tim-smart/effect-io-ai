@@ -7,8 +7,8 @@ The default teardown function that determines exit codes from an Effect exit.
 
 **When to use**
 
-Use as the standard teardown for main programs when you want conventional
-process exit codes and support for `errorExitCode`.
+Use as the standard teardown for main programs with conventional process
+exit codes and support for `errorExitCode`.
 
 **Details**
 

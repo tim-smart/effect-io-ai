@@ -8,8 +8,8 @@ Effect scope.
 
 **When to use**
 
-Use as the context service for OpenAI-compatible client configuration when you
-need to provide or read scoped HTTP client transforms through Effect context.
+Use as the context service for scoped OpenAI-compatible client configuration
+and HTTP client transforms.
 
 **See**
 

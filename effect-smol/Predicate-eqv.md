@@ -7,11 +7,11 @@ Creates a predicate that returns `true` when both predicates agree.
 
 **When to use**
 
-Use when you want to check equivalence of two predicates.
+Use when you want to check equivalence of two `Predicate`s.
 
 **Details**
 
-- Returns `true` when both results are equal.
+Returns `true` when both results are equal.
 
 **Example** (Equivalence)
 
@@ -34,6 +34,6 @@ console.log(same(3))
 declare const eqv: { <A>(that: Predicate<A>): (self: Predicate<A>) => Predicate<A>; <A>(self: Predicate<A>, that: Predicate<A>): Predicate<A>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L1738)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L1742)
 
 Since v2.0.0

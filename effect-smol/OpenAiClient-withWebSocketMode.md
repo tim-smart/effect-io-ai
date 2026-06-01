@@ -17,7 +17,8 @@ This only works with the following WebSocket constructor layers:
 - `NodeSocket.layerWebSocketConstructorWS`
 - `BunSocket.layerWebSocketConstructor`
 
-This is because it needs to use non-standard options for setting the Authorization header.
+These constructor layers support the non-standard options needed to set the
+Authorization header.
 
 **See**
 

@@ -22,9 +22,9 @@ specified range.
 **Signature**
 
 ```ts
-declare const isSizeBetween: (minimum: number, maximum: number, annotations?: Annotations.Filter) => AST.Filter<{ readonly size: number; }>
+declare const isSizeBetween: (minimum: number, maximum: number, annotations?: Annotations.Filter) => SchemaAST.Filter<{ readonly size: number; }>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L7613)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L7828)
 
 Since v4.0.0

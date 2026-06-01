@@ -7,11 +7,11 @@ Checks whether a value is a `Date`.
 
 **When to use**
 
-Use when you need to guard dates at runtime.
+Use when you need a `Predicate` runtime guard for dates.
 
 **Details**
 
-- Uses `instanceof Date`.
+Uses `instanceof Date`.
 
 **Example** (Guard Date)
 
@@ -33,6 +33,6 @@ console.log(Predicate.isDate(data))
 declare const isDate: (input: unknown) => input is Date
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L1310)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L1313)
 
 Since v2.0.0

@@ -5,6 +5,11 @@ Module: `Result`<br />
 
 A value that is either `Success<A, E>` or `Failure<A, E>`.
 
+**When to use**
+
+Use when both success and failure should remain available as data and
+`Option` would lose failure information.
+
 **Details**
 
 - Use `succeed` / `fail` to construct
@@ -41,6 +46,6 @@ console.log(message)
 type Result<A, E> = Success<A, E> | Failure<A, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L123)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L128)
 
 Since v4.0.0

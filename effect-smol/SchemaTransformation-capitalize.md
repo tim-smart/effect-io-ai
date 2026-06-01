@@ -8,12 +8,13 @@ decode. Encode is passthrough.
 
 **When to use**
 
-Use to normalize display names or titles.
+Use when you need a schema transformation to normalize display names or
+titles.
 
 **Details**
 
-- Decode: uppercases the first character, leaves the rest unchanged.
-- Encode: passthrough.
+Decoding uppercases the first character and leaves the rest unchanged.
+Encoding is passthrough.
 
 **Example** (Capitalizing on decode)
 
@@ -36,6 +37,6 @@ const Capitalized = Schema.String.pipe(
 declare const capitalize: () => Transformation<string, string>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L642)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L649)
 
 Since v4.0.0

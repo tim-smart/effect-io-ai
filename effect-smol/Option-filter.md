@@ -8,8 +8,8 @@ not satisfied or the input is `None`.
 
 **When to use**
 
-Use when discarding values that don't meet a condition
-- Narrowing the type via a refinement predicate
+Use when you need to discard an `Option`'s present value when it does not
+meet a condition, while narrowing the type via a refinement predicate.
 
 **Details**
 
@@ -47,6 +47,6 @@ console.log(removeEmpty(Option.none()))
 declare const filter: { <A, B extends A>(refinement: Refinement<A, B>): (self: Option<A>) => Option<B>; <A>(predicate: Predicate<A>): <B extends A>(self: Option<B>) => Option<B>; <A, B extends A>(self: Option<A>, refinement: Refinement<A, B>): Option<B>; <A>(self: Option<A>, predicate: Predicate<A>): Option<A>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L2073)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L2081)
 
 Since v2.0.0

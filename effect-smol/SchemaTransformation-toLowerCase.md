@@ -8,13 +8,13 @@ Encode is passthrough.
 
 **When to use**
 
-Use to normalize strings to lowercase (e.g. email addresses).
+Use when you need a schema transformation to normalize strings to lowercase
+(e.g. email addresses).
 
 **Details**
 
-- Decode: applies `String.prototype.toLowerCase()`.
-- Encode: passthrough.
-- Not round-trippable if the original had uppercase characters.
+Decoding applies `String.prototype.toLowerCase()`. Encoding is passthrough.
+This is not round-trippable if the original had uppercase characters.
 
 **Example** (Lowercasing on decode)
 
@@ -37,6 +37,6 @@ const Lowered = Schema.String.pipe(
 declare const toLowerCase: () => Transformation<string, string>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L569)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L575)
 
 Since v4.0.0

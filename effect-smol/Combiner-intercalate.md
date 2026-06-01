@@ -8,9 +8,9 @@ pair of combined elements.
 
 **When to use**
 
-Use when you are building delimited strings (CSV, paths, etc.) by
-repeated combination, or when you need to inject a fixed separator between
-accumulated values.
+Use when you need to inject a fixed separator between accumulated values,
+such as when building delimited strings, paths, or CSV-like output by
+repeated combination.
 
 **Details**
 
@@ -39,6 +39,6 @@ console.log(commaSep.combine("a", "b"))
 declare const intercalate: <A>(middle: A) => (combiner: Combiner<A>) => Combiner<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Combiner.ts#L368)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Combiner.ts#L364)
 
 Since v4.0.0

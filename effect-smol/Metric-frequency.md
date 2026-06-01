@@ -8,15 +8,14 @@ occurrences of a string.
 
 **When to use**
 
-Use when frequency metrics are most suitable for counting the number of times a
-specific event or incident occurs.
+Use when you need a metric for counting how often a specific event or
+incident occurs.
 
 **Details**
 
-- `description` - A description of the `Frequency`.
-- `attributes`  - The attributes to associate with the `Frequency`.
-- `preregisteredWords` - Occurrences which are pre-registered with the
-                         `Frequency` metric occurrences.
+The optional `description` describes the frequency, and `attributes` attach
+dimensions to it. Use `preregisteredWords` to initialize occurrence counts
+for known string values before updates arrive.
 
 **Example** (Creating frequency metrics)
 
@@ -83,6 +82,6 @@ const program = Effect.gen(function*() {
 declare const frequency: (name: string, options?: { readonly description?: string | undefined; readonly attributes?: Metric.Attributes | undefined; readonly preregisteredWords?: ReadonlyArray<string> | undefined; }) => Frequency
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Metric.ts#L2426)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Metric.ts#L2424)
 
 Since v2.0.0

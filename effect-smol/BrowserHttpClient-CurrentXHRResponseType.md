@@ -7,8 +7,8 @@ Context reference for the `XMLHttpRequest.responseType` used by the browser XHR 
 
 **When to use**
 
-Use when XHR-backed HTTP requests need to receive response bodies as text or
-as raw `ArrayBuffer` values.
+Use when you need XHR-backed HTTP requests to receive response bodies as text
+or raw `ArrayBuffer` values.
 
 **See**
 

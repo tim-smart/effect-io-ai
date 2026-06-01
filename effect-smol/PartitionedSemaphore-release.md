@@ -8,8 +8,8 @@ the current available permit count.
 
 **When to use**
 
-Use to manually return permits acquired with `take` when a lower-level
-partitioned permit protocol needs explicit release control.
+Use when you need to return permits acquired with `take` in a lower-level
+partitioned permit protocol with explicit release control.
 
 **Details**
 

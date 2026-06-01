@@ -7,14 +7,12 @@ Creates an `Order` that considers all values as equal.
 
 **When to use**
 
-Use when when you need an order that doesn't distinguish between values
-- As a default or fallback order when no meaningful comparison exists
-- When implementing optional ordering where equality is sufficient
+Use when you need an order that treats all values as equal.
 
 **Details**
 
-- Always returns `0` regardless of input values
-- Useful as a neutral element in order composition
+Always returns `0` regardless of input values, making it useful as a neutral
+element in order composition.
 
 **Example** (Always Equal Order)
 
@@ -38,6 +36,6 @@ console.log(alwaysEqualOrder(1, 1)) // 0
 declare const alwaysEqual: <A>() => Order<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Order.ts#L443)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Order.ts#L423)
 
 Since v4.0.0

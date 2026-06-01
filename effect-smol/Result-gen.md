@@ -7,8 +7,8 @@ Provides generator-based syntax for composing `Result` values sequentially.
 
 **When to use**
 
-Use when sequential `Result` composition is clearer with generator syntax
-than nested `flatMap` calls.
+Use when you need generator syntax to compose sequential `Result`
+computations instead of nested `flatMap` calls.
 
 **Details**
 
@@ -43,6 +43,6 @@ console.log(result)
 declare const gen: Gen.Gen<ResultTypeLambda>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L1602)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L1618)
 
 Since v2.0.0

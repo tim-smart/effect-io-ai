@@ -7,8 +7,8 @@ Context reference for the maximum operation budget before a fiber yields to the 
 
 **When to use**
 
-Use to tune scheduler fairness for CPU-bound fibers by changing the
-operation budget that triggers a scheduler yield.
+Use to configure the runtime reference for the fiber operation budget that
+triggers a scheduler yield.
 
 **Details**
 

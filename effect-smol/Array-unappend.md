@@ -8,13 +8,12 @@ element.
 
 **When to use**
 
-Use to split a non-empty array from the end when you need both the elements
-before the last element and the last element.
+Use when you need to split a non-empty array into the elements before the
+last element and the last element.
 
 **Details**
 
-- Returns a tuple `[init, last]`.
-- Requires a `NonEmptyReadonlyArray`.
+Returns a tuple `[init, last]` and requires a `NonEmptyReadonlyArray`.
 
 **Example** (Destructuring init and last)
 
@@ -37,6 +36,6 @@ console.log(result) // [[1, 2, 3], 4]
 declare const unappend: <A>(self: NonEmptyReadonlyArray<A>) => [arrayWithoutLastElement: Array<A>, lastElement: A]
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L1116)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L1133)
 
 Since v2.0.0

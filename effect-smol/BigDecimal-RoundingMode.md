@@ -45,6 +45,6 @@ type RoundingMode = | "ceil"
   | "half-odd"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigDecimal.ts#L1756)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigDecimal.ts#L1758)
 
 Since v3.16.0

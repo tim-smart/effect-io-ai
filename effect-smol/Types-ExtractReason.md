@@ -8,7 +8,8 @@ field.
 
 **When to use**
 
-Use to extract only the matching reason variant from a nested error type.
+Use when you need the nested reason variant type itself, selected by `_tag`,
+rather than the enclosing error type.
 
 **Details**
 
@@ -42,6 +43,6 @@ type ExtractReason<E, K> = E extends { readonly reason: infer R }
   : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Types.ts#L1062)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Types.ts#L1034)
 
 Since v4.0.0

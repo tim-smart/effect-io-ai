@@ -5,6 +5,11 @@ Module: `FiberHandle`<br />
 
 Retrieves the fiber from the FiberHandle synchronously.
 
+**When to use**
+
+Use when synchronous inspection of the current fiber is needed and an
+`Option` result is enough outside the Effect workflow.
+
 **Example** (Reading the current fiber unsafely)
 
 ```ts
@@ -30,6 +35,6 @@ Effect.gen(function*() {
 declare const getUnsafe: <A, E>(self: FiberHandle<A, E>) => Option.Option<Fiber.Fiber<A, E>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FiberHandle.ts#L453)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FiberHandle.ts#L468)
 
 Since v4.0.0

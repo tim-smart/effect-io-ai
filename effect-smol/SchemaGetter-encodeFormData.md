@@ -7,13 +7,14 @@ Encodes a nested object into a `FormData` instance using bracket-path notation.
 
 **When to use**
 
-Use to serialize structured data to `FormData` for HTTP requests.
+Use when you need a schema getter to serialize structured data to `FormData`
+for HTTP requests.
 
 **Details**
 
-- Pure, never fails.
-- Flattens nested objects/arrays into bracket-path keys (e.g. `user[name]`, `items[0]`).
-- Non-object inputs produce an empty `FormData`.
+The getter is pure and never fails. It flattens nested objects or arrays into
+bracket-path keys such as `user[name]` and `items[0]`. Non-object inputs
+produce an empty `FormData`.
 
 **Example** (Encode to FormData)
 
@@ -36,6 +37,6 @@ const encode = SchemaGetter.encodeFormData()
 declare const encodeFormData: () => Getter<FormData, unknown>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L1657)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L1675)
 
 Since v4.0.0

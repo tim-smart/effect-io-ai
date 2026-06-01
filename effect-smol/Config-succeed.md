@@ -8,8 +8,8 @@ provider entirely.
 
 **When to use**
 
-Use when providing a hardcoded constant inside `orElse`.
-- Testing.
+Use when you need a hardcoded config value, such as inside `orElse` or
+tests.
 
 **Example** (Constant fallback)
 
@@ -27,6 +27,6 @@ const host = Config.string("HOST").pipe(
 declare const succeed: <T>(value: T) => Config<T>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Config.ts#L921)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Config.ts#L919)
 
 Since v2.0.0

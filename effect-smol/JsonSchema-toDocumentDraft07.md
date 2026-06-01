@@ -7,7 +7,8 @@ Converts a `Document<"draft-2020-12">` to a `Document<"draft-07">`.
 
 **When to use**
 
-Use when you need to output a schema in Draft-07 format.
+Use when you need to output a canonical JSON Schema document in Draft-07
+format.
 
 **Details**
 
@@ -48,6 +49,6 @@ console.log(draft07.schema.additionalItems) // { type: "boolean" }
 declare const toDocumentDraft07: (document: Document<"draft-2020-12">) => Document<"draft-07">
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/JsonSchema.ts#L594)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/JsonSchema.ts#L597)
 
 Since v4.0.0

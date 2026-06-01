@@ -7,13 +7,13 @@ Groups consecutive equal elements using a custom equivalence function.
 
 **When to use**
 
-Use when a non-empty array is already arranged so matching elements are
-adjacent and you need a custom equivalence function.
+Use when you already have a non-empty array arranged so matching elements are
+adjacent and need a custom equivalence function.
 
 **Details**
 
-- Only groups **adjacent** elements — non-adjacent duplicates stay separate.
-- Requires a `NonEmptyReadonlyArray`.
+Only adjacent elements are grouped. Non-adjacent duplicates stay separate.
+Requires a `NonEmptyReadonlyArray`.
 
 **Example** (Grouping consecutive equal elements)
 
@@ -35,6 +35,6 @@ console.log(Array.groupWith(["a", "a", "b", "b", "b", "c", "a"], (x, y) => x ===
 declare const groupWith: { <A>(isEquivalent: (self: A, that: A) => boolean): (self: NonEmptyReadonlyArray<A>) => NonEmptyArray<NonEmptyArray<A>>; <A>(self: NonEmptyReadonlyArray<A>, isEquivalent: (self: A, that: A) => boolean): NonEmptyArray<NonEmptyArray<A>>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L3009)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L3046)
 
 Since v2.0.0

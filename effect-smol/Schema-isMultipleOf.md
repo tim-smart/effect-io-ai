@@ -19,9 +19,9 @@ generated numbers are multiples of the specified divisor.
 **Signature**
 
 ```ts
-declare const isMultipleOf: (divisor: number, annotations?: Annotations.Filter) => AST.Filter<number>
+declare const isMultipleOf: (divisor: number, annotations?: Annotations.Filter) => SchemaAST.Filter<number>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L6809)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L7024)
 
 Since v4.0.0

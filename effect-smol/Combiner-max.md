@@ -40,6 +40,6 @@ console.log(Max.combine(1, 3))
 declare const max: <A>(order: Order.Order<A>) => Combiner<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Combiner.ts#L237)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Combiner.ts#L236)
 
 Since v4.0.0

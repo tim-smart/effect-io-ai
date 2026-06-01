@@ -16,6 +16,6 @@ errors.
 declare const toClientResponse: (response: HttpServerResponse, options?: { readonly request?: HttpClientRequest.HttpClientRequest | undefined; }) => HttpClientResponse.HttpClientResponse
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpServerResponse.ts#L1071)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpServerResponse.ts#L1076)
 
 Since v4.0.0

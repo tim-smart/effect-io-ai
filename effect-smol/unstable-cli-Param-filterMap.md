@@ -8,7 +8,8 @@ if the filter function returns `Option.none()`.
 
 **When to use**
 
-Use when you use this combinator for validation and transformation in a single step.
+Use when you need validation and transformation in a single parameter
+combinator.
 
 **Example** (Filtering and transforming values)
 
@@ -31,6 +32,6 @@ const positiveInt = Param.integer(Param.flagKind, "count").pipe(
 declare const filterMap: { <A, B>(filter: (a: A) => Option.Option<B>, onNone: (a: A) => string): <Kind extends ParamKind>(self: Param<Kind, A>) => Param<Kind, B>; <Kind extends ParamKind, A, B>(self: Param<Kind, A>, filter: (a: A) => Option.Option<B>, onNone: (a: A) => string): Param<Kind, B>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Param.ts#L1682)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Param.ts#L1685)
 
 Since v4.0.0

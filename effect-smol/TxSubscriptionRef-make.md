@@ -7,8 +7,8 @@ Creates a new TxSubscriptionRef with the specified initial value.
 
 **When to use**
 
-Use to create transactional state that also publishes every committed update
-to subscribers.
+Use to create a `TxSubscriptionRef` that publishes every committed update to
+subscribers.
 
 **Example** (Creating a transactional subscription reference)
 

@@ -8,7 +8,7 @@ Type-level representation returned by `mutable`.
 **Signature**
 
 ```ts
-export interface mutable<S extends Top & { readonly "ast": AST.Arrays }> extends
+export interface mutable<S extends Top & { readonly "ast": SchemaAST.Arrays }> extends
   Bottom<
     Mutable<S["Type"]>,
     Mutable<S["Encoded"]>,
@@ -32,6 +32,6 @@ export interface mutable<S extends Top & { readonly "ast": AST.Arrays }> extends
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L4086)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L4280)
 
 Since v3.10.0

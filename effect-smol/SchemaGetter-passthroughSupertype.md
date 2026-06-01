@@ -7,9 +7,8 @@ Returns the identity getter typed for the relationship `T extends E`.
 
 **When to use**
 
-Use when no runtime conversion is needed but the getter should be typed
-as producing a decoded/output type that is narrower than the encoded/input
-type.
+Use when you need a schema getter that passes values through when the
+decoded/output type is narrower than the encoded/input type.
 
 **Details**
 

@@ -7,8 +7,8 @@ Narrows an `AST` to `String`.
 
 **When to use**
 
-Use to detect schema AST nodes that match any string value while inspecting or
-transforming an AST.
+Use to detect schema AST nodes that match any string value while inspecting
+or transforming a Schema AST.
 
 **See**
 

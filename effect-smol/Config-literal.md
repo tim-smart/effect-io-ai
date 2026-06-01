@@ -28,9 +28,9 @@ const env = Config.literal("production", "ENV")
 **Signature**
 
 ```ts
-declare const literal: <L extends AST.LiteralValue>(literal: L, name?: string) => Config<L>
+declare const literal: <L extends SchemaAST.LiteralValue>(literal: L, name?: string) => Config<L>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Config.ts#L1064)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Config.ts#L1063)
 
 Since v2.0.0

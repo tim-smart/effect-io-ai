@@ -30,6 +30,6 @@ const program = Effect.gen(function*() {
 declare const failCause: { <E>(cause: Cause<E>): <A>(self: Enqueue<A, E>) => Effect<boolean>; <A, E>(self: Enqueue<A, E>, cause: Cause<E>): Effect<boolean>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Queue.ts#L924)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Queue.ts#L938)
 
 Since v4.0.0

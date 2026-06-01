@@ -8,8 +8,8 @@ definitions map.
 
 **When to use**
 
-Use when you need to dereference a `$ref` pointer to get the actual
-schema it points to.
+Use when you need to dereference a `$ref` pointer to get the JSON Schema
+object it points to.
 
 **Details**
 
@@ -47,6 +47,6 @@ console.log(missing) // undefined
 declare const resolve$ref: ($ref: string, definitions: Definitions) => JsonSchema | undefined
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/JsonSchema.ts#L966)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/JsonSchema.ts#L970)
 
 Since v4.0.0

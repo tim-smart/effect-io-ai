@@ -24,6 +24,6 @@ assert.deepStrictEqual(identity(5), 5)
 declare const identity: <A>(a: A) => A
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Function.ts#L285)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Function.ts#L286)
 
 Since v2.0.0

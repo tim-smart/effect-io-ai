@@ -36,6 +36,6 @@ console.log(Result.isResult({ value: 1 }))
 declare const isResult: (input: unknown) => input is Result<unknown, unknown>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L613)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L617)
 
 Since v4.0.0

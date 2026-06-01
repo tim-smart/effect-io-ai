@@ -7,7 +7,8 @@ Type lambda for function types, used for higher-kinded type operations.
 
 **When to use**
 
-Use to represent unary function types in higher-kinded type operations.
+Use when defining higher-kinded abstractions that must accept function types
+as one of their type-lambda inputs.
 
 **Example** (Creating a function type with a type lambda)
 
@@ -27,6 +28,6 @@ export interface FunctionTypeLambda extends TypeLambda {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Function.ts#L72)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Function.ts#L73)
 
 Since v2.0.0

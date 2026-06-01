@@ -14,7 +14,7 @@ export interface $Array<S extends Top> extends
     ReadonlyArray<S["Encoded"]>,
     S["DecodingServices"],
     S["EncodingServices"],
-    AST.Arrays,
+    SchemaAST.Arrays,
     $Array<S>,
     ReadonlyArray<S["~type.make"]>,
     ReadonlyArray<S["Iso"]>
@@ -24,6 +24,6 @@ export interface $Array<S extends Top> extends
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L3911)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L4105)
 
 Since v4.0.0

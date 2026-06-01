@@ -5,6 +5,11 @@ Module: `Effect`<br />
 
 Runs an effect synchronously with provided services, returning an Exit result safely.
 
+**When to use**
+
+Use when you already have a `Context` and need a synchronous `Exit` instead of
+throwing on failure.
+
 **Example** (Running synchronously with services as Exit)
 
 ```ts
@@ -44,6 +49,6 @@ if (Exit.isSuccess(exit)) {
 declare const runSyncExitWith: <R>(context: Context.Context<R>) => <A, E>(effect: Effect<A, E, R>) => Exit.Exit<A, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L9274)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L9348)
 
 Since v4.0.0

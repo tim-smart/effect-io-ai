@@ -66,6 +66,6 @@ const program = Effect.gen(function*() {
 declare const interruptAllAs: { (fiberId: number): <A extends Iterable<Fiber<any, any>>>(fibers: A) => Effect<void>; <A extends Iterable<Fiber<any, any>>>(fibers: A, fiberId: number): Effect<void>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Fiber.ts#L570)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Fiber.ts#L572)
 
 Since v2.0.0

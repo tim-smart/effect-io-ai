@@ -6,6 +6,11 @@ Module: `Effect`<br />
 Repeats an effect according to a schedule and runs a fallback effect if
 repetition fails before the schedule completes.
 
+**When to use**
+
+Use when successful repetitions should follow a schedule, but failures from
+the repeated effect or schedule need an effectful fallback.
+
 **Details**
 
 If the repeated effect or schedule step fails, `orElse` receives the failure
@@ -47,6 +52,6 @@ const program = Effect.repeatOrElse(
 declare const repeatOrElse: { <R2, A, B, E, E2, E3, R3>(schedule: Schedule<B, A, E2, R2>, orElse: (error: E | E2, option: Option<B>) => Effect<B, E3, R3>): <R>(self: Effect<A, E, R>) => Effect<B, E3, R | R2 | R3>; <A, E, R, R2, B, E2, E3, R3>(self: Effect<A, E, R>, schedule: Schedule<B, A, E2, R2>, orElse: (error: E | E2, option: Option<B>) => Effect<B, E3, R3>): Effect<B, E3, R | R2 | R3>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L7599)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L7645)
 
 Since v2.0.0

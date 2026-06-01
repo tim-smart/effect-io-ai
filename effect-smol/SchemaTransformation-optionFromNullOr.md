@@ -8,13 +8,14 @@ Decodes `T | null` into `Option<T>` and encodes `Option<T>` back to
 
 **When to use**
 
-Use to convert nullable API fields to `Option`.
+Use when you need a schema transformation to convert nullable API fields to
+`Option`.
 
 **Details**
 
-- Decode: `null` → `Option.none()`, non-null → `Option.some(value)`.
-- Encode: `Option.none()` → `null`, `Option.some(value)` → `value`.
-- Pure and synchronous.
+Decoding maps `null` to `Option.none()` and non-null values to
+`Option.some(value)`. Encoding maps `Option.none()` to `null` and
+`Option.some(value)` to `value`. The transformation is pure and synchronous.
 
 **Example** (Option from nullable)
 
@@ -39,6 +40,6 @@ const schema = Schema.NullOr(Schema.String).pipe(
 declare const optionFromNullOr: <T>() => Transformation<Option.Option<T>, T | null>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L1126)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L1142)
 
 Since v4.0.0

@@ -8,8 +8,8 @@ effect's success value to choose the next effect.
 
 **When to use**
 
-Use when one effect must run after another and the second effect
-may depend on the first effect's success value.
+Use when you need one effect to run after another and the second effect may
+depend on the first effect's success value.
 
 **Details**
 
@@ -80,6 +80,6 @@ Effect.runPromise(result2).then(console.log)
 declare const andThen: { <A, B, E2, R2>(f: (a: A) => Effect<B, E2, R2>): <E, R>(self: Effect<A, E, R>) => Effect<B, E | E2, R | R2>; <B, E2, R2>(f: Effect<B, E2, R2>): <A, E, R>(self: Effect<A, E, R>) => Effect<B, E | E2, R | R2>; <A, E, R, B, E2, R2>(self: Effect<A, E, R>, f: (a: A) => Effect<B, E2, R2>): Effect<B, E | E2, R | R2>; <A, E, R, B, E2, R2>(self: Effect<A, E, R>, f: Effect<B, E2, R2>): Effect<B, E | E2, R | R2>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L2071)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L2083)
 
 Since v2.0.0

@@ -7,13 +7,13 @@ Creates a predicate for tuples by applying predicates to each element.
 
 **When to use**
 
-Use when you want to validate tuple positions independently.
-- You want to lift element predicates into a tuple predicate.
+Use when you want to validate tuple positions independently by lifting
+element predicates into a tuple predicate.
 
 **Details**
 
-- Returns a refinement if any element predicate is a refinement.
-- Stops at the first failing element.
+Returns a refinement if any element predicate is a refinement. Evaluation
+stops at the first failing element.
 
 **Example** (Tuple predicate)
 
@@ -36,6 +36,6 @@ console.log(tupleCheck([1, "ok"]))
 declare const Tuple: <const T extends ReadonlyArray<Predicate.Any>>(elements: T) => [Extract<T[number], Refinement.Any>] extends [never] ? Predicate<{ readonly [I in keyof T]: Predicate.In<T[I]>; }> : Refinement<{ readonly [I in keyof T]: T[I] extends Refinement.Any ? Refinement.In<T[I]> : Predicate.In<T[I]>; }, { readonly [I in keyof T]: T[I] extends Refinement.Any ? Refinement.Out<T[I]> : Predicate.In<T[I]>; }>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L1502)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L1505)
 
 Since v4.0.0

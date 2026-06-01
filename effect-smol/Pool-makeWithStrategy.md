@@ -27,6 +27,6 @@ releases allocated items.
 declare const makeWithStrategy: <A, E, R>(options: { readonly acquire: Effect.Effect<A, E, R>; readonly min: number; readonly max: number; readonly concurrency?: number | undefined; readonly targetUtilization?: number | undefined; readonly strategy: Strategy<A, E>; }) => Effect.Effect<Pool<A, E>, never, Scope.Scope | R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Pool.ts#L358)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Pool.ts#L357)
 
 Since v4.0.0

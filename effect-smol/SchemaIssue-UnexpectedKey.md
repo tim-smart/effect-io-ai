@@ -29,7 +29,7 @@ declare class UnexpectedKey { constructor(
     /**
      * The schema that caused the issue.
      */
-    ast: AST.AST,
+    ast: SchemaAST.AST,
     /**
      * The input value that caused the issue.
      */
@@ -37,6 +37,6 @@ declare class UnexpectedKey { constructor(
   ) }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaIssue.ts#L425)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaIssue.ts#L426)
 
 Since v4.0.0

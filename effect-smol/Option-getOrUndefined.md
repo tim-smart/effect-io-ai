@@ -7,7 +7,8 @@ Extracts the value from a `Some`, or returns `undefined` for `None`.
 
 **When to use**
 
-Use when interoping with APIs that use `undefined` for missing values
+Use when you need to pass absent `Option` values to APIs that expect
+`undefined`.
 
 **Details**
 
@@ -37,6 +38,6 @@ console.log(Option.getOrUndefined(Option.none()))
 declare const getOrUndefined: <A>(self: Option<A>) => A | undefined
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L1064)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L1070)
 
 Since v2.0.0

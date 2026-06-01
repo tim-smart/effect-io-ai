@@ -7,8 +7,8 @@ Creates a Promise-based decoder for `unknown` input.
 
 **When to use**
 
-Use when decoding untyped input with a service-free schema at a JavaScript
-`Promise` boundary.
+Use when you need to decode untyped input with a service-free schema and
+return a JavaScript `Promise` that rejects with `SchemaIssue.Issue`.
 
 **Details**
 
@@ -23,9 +23,9 @@ with a `SchemaIssue.Issue` on decoding failure.
 **Signature**
 
 ```ts
-declare const decodeUnknownPromise: <S extends Schema.Decoder<unknown>>(schema: S, options?: AST.ParseOptions) => (input: unknown, options?: AST.ParseOptions) => Promise<S["Type"]>
+declare const decodeUnknownPromise: <S extends Schema.Decoder<unknown>>(schema: S, options?: SchemaAST.ParseOptions) => (input: unknown, options?: SchemaAST.ParseOptions) => Promise<S["Type"]>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaParser.ts#L308)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaParser.ts#L314)
 
 Since v3.10.0

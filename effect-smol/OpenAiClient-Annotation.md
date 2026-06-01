@@ -14,6 +14,6 @@ type Annotation = | FileCitationAnnotation
   | FilePathAnnotation
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/OpenAiClient.ts#L473)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/OpenAiClient.ts#L472)
 
 Since v4.0.0

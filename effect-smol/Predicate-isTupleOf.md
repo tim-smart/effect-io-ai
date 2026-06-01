@@ -7,13 +7,13 @@ Checks whether a readonly array has exactly `n` elements.
 
 **When to use**
 
-Use when you need a runtime check for tuple length.
-- You want to narrow `ReadonlyArray<T>` to `TupleOf<N, T>`.
+Use when you need a `Predicate` guard for exact tuple length that narrows
+`ReadonlyArray<T>` to `TupleOf<N, T>`.
 
 **Details**
 
-- Only checks length, not element types.
-- Returns a refinement on the array type.
+This only checks length, not element types, and returns a refinement on the
+array type.
 
 **Example** (Exact length)
 

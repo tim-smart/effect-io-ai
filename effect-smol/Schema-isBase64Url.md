@@ -21,9 +21,9 @@ constraint to ensure generated strings match the Base64URL pattern.
 **Signature**
 
 ```ts
-declare const isBase64Url: (annotations?: Annotations.Filter) => AST.Filter<string>
+declare const isBase64Url: (annotations?: Annotations.Filter) => SchemaAST.Filter<string>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L6157)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L6372)
 
 Since v4.0.0

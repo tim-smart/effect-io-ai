@@ -7,7 +7,7 @@ Service for creating OpenAI response streams over a WebSocket connection.
 
 **When to use**
 
-Use when code needs direct access to the WebSocket-backed response streaming
+Use when you need direct access to the WebSocket-backed response streaming
 service rather than wrapping an effect with WebSocket mode.
 
 **Details**
@@ -32,6 +32,6 @@ shared socket service.
 declare class OpenAiSocket
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L484)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L483)
 
 Since v4.0.0

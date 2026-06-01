@@ -8,8 +8,8 @@ and returns the computed result.
 
 **When to use**
 
-Use to derive a separate result and the next stored value from the same
-current value in one serialized pure update.
+Use to derive a separate result and the next stored `SynchronizedRef` value
+from the same current value in one serialized pure update.
 
 **See**
 
@@ -23,6 +23,6 @@ current value in one serialized pure update.
 declare const modify: { <A, B>(f: (a: A) => readonly [B, A]): (self: SynchronizedRef<A>) => Effect.Effect<B>; <A, B>(self: SynchronizedRef<A>, f: (a: A) => readonly [B, A]): Effect.Effect<B>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SynchronizedRef.ts#L291)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SynchronizedRef.ts#L295)
 
 Since v2.0.0

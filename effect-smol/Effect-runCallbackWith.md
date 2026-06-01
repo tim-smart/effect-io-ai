@@ -5,6 +5,11 @@ Module: `Effect`<br />
 
 Forks an effect with the provided services, registers `onExit` as a fiber observer, and returns an interruptor.
 
+**When to use**
+
+Use when embedding an effect into callback-style code with explicit services
+and a synchronous interruptor.
+
 **Details**
 
 The returned interruptor calls `fiber.interruptUnsafe`, optionally with an interruptor id.
@@ -48,6 +53,6 @@ interrupt()
 declare const runCallbackWith: <R>(context: Context.Context<R>) => <A, E>(effect: Effect<A, E, R>, options?: (RunOptions & { readonly onExit: (exit: Exit.Exit<A, E>) => void; }) | undefined) => (interruptor?: number | undefined) => void
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L8846)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L8902)
 
 Since v4.0.0

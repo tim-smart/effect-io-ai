@@ -5,6 +5,11 @@ Module: `Chunk`<br />
 
 Returns the first element of this chunk.
 
+**When to use**
+
+Use when you know the chunk is non-empty and need the first element directly
+without handling `Option.none`.
+
 **Gotchas**
 
 Throws an error if the chunk is empty.
@@ -30,6 +35,6 @@ console.log(Option.isNone(Chunk.head(Chunk.empty()))) // true
 declare const headUnsafe: <A>(self: Chunk<A>) => A
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L1469)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L1499)
 
 Since v4.0.0

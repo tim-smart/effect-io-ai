@@ -29,6 +29,6 @@ console.log(result) // []
 declare const empty: <A = never>() => Array<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L3362)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L3403)
 
 Since v2.0.0

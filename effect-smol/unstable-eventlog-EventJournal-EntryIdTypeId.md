@@ -11,6 +11,6 @@ Brand identifier used for `EntryId` values.
 type EntryIdTypeId = "effect/eventlog/EventJournal/EntryId"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventJournal.ts#L215)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventJournal.ts#L220)
 
 Since v4.0.0

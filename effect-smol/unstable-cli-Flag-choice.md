@@ -8,8 +8,8 @@ the selected string.
 
 **When to use**
 
-Use when a named option must be restricted to a fixed set of string values
-and no custom value mapping is needed.
+Use when you need to define a named CLI flag with fixed string choices and no
+custom value mapping.
 
 **Gotchas**
 

@@ -8,12 +8,12 @@ updated array in `Option.some`.
 
 **When to use**
 
-Use to derive a replacement value from the current element at a specific
-index while leaving the other elements unchanged.
+Use to derive a replacement value from an array element at a specific index
+while leaving the other elements unchanged.
 
 **Details**
 
-- Returns `Option.none()` when the index is out of bounds.
+Returns `Option.none()` when the index is out of bounds.
 
 **Example** (Modifying an element)
 
@@ -36,6 +36,6 @@ console.log(Array.modify([1, 2, 3, 4], 5, (n) => n * 2)) // Option.none()
 declare const modify: { <A, B, S extends Iterable<A> = Iterable<A>>(i: number, f: (a: ReadonlyArray.Infer<S>) => B): (self: S) => Option.Option<ReadonlyArray.With<S, ReadonlyArray.Infer<S> | B>>; <A, B, S extends Iterable<A> = Iterable<A>>(self: S, i: number, f: (a: ReadonlyArray.Infer<S>) => B): Option.Option<ReadonlyArray.With<S, ReadonlyArray.Infer<S> | B>>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L2022)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L2036)
 
 Since v2.0.0

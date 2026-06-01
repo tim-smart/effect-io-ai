@@ -7,15 +7,13 @@ Order instance for `Date` objects that compares them chronologically by their ti
 
 **When to use**
 
-Use when when comparing dates for sorting or searching
-- As a base for creating orders on types containing dates
-- When implementing time-based comparisons
+Use when you need chronological ordering for JavaScript date values.
 
 **Details**
 
-- Compares dates by their underlying timestamp (milliseconds since epoch)
-- Earlier dates are less than later dates
-- Invalid dates are compared as if they were valid (uses `getTime()` result)
+Compares dates by their underlying timestamp in milliseconds since the epoch.
+Earlier dates are less than later dates. Invalid dates are compared through
+their `getTime()` result.
 
 **Example** (Date Ordering)
 
@@ -40,6 +38,6 @@ console.log(Order.Date(date1, date1)) // 0
 declare const Date: Order<Date>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Order.ts#L577)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Order.ts#L550)
 
 Since v2.0.0

@@ -7,13 +7,11 @@ Modifies the metric with the specified input.
 
 **Details**
 
-The behavior of `modify` depends on the metric type:
-
-- **Counter**: Adds the input value to the current count
-- **Gauge**: Adds the input value to the current gauge value
-- **Frequency**: Same as `update` - increments the occurrence count for the input string
-- **Histogram**: Same as `update` - records the input value in the appropriate bucket
-- **Summary**: Same as `update` - records the input observation
+The behavior of `modify` depends on the metric type. Counters add the input
+value to the current count, gauges add the input value to the current gauge
+value, frequencies increment the occurrence count for the input string,
+histograms record the input value in the appropriate bucket, and summaries
+record the input observation.
 
 **Example** (Modifying metric values)
 
@@ -49,6 +47,6 @@ const program = Effect.gen(function*() {
 declare const modify: { <Input>(input: Input): <State>(self: Metric<Input, State>) => Effect<void>; <Input, State>(self: Metric<Input, State>, input: Input): Effect<void>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Metric.ts#L2809)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Metric.ts#L2802)
 
 Since v3.6.5

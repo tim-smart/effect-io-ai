@@ -9,7 +9,7 @@ type.
 **When to use**
 
 Use to decode values already typed as the schema's `Encoded` input when
-decoding failure should be reported by throwing an `Error`.
+decoding failure should throw an `Error` whose cause is `SchemaIssue.Issue`.
 
 **Details**
 
@@ -25,9 +25,9 @@ The returned function returns the decoded `Type` on success and throws an
 **Signature**
 
 ```ts
-declare const decodeSync: <S extends Schema.Decoder<unknown>>(schema: S, options?: AST.ParseOptions) => (input: S["Encoded"], options?: AST.ParseOptions) => S["Type"]
+declare const decodeSync: <S extends Schema.Decoder<unknown>>(schema: S, options?: SchemaAST.ParseOptions) => (input: S["Encoded"], options?: SchemaAST.ParseOptions) => S["Type"]
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaParser.ts#L564)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaParser.ts#L534)
 
 Since v3.10.0

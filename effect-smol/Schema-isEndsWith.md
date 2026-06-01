@@ -15,9 +15,9 @@ patterns may not be equivalent to the runtime `endsWith` check.
 **Signature**
 
 ```ts
-declare const isEndsWith: (endsWith: string, annotations?: Annotations.Filter) => AST.Filter<string>
+declare const isEndsWith: (endsWith: string, annotations?: Annotations.Filter) => SchemaAST.Filter<string>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L6219)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L6434)
 
 Since v4.0.0

@@ -8,7 +8,7 @@ Asserts that an input satisfies the schema's decoded type side.
 **When to use**
 
 Use to assert that an input satisfies the decoded side of a schema, throwing
-when validation fails.
+an `Error` whose cause is `SchemaIssue.Issue` when validation fails.
 
 **Details**
 

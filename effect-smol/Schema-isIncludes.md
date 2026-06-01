@@ -15,9 +15,9 @@ equivalent to the runtime `includes` check.
 **Signature**
 
 ```ts
-declare const isIncludes: (includes: string, annotations?: Annotations.Filter) => AST.Filter<string>
+declare const isIncludes: (includes: string, annotations?: Annotations.Filter) => SchemaAST.Filter<string>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L6253)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L6468)
 
 Since v4.0.0

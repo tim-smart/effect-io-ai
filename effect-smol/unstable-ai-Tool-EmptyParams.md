@@ -16,6 +16,6 @@ parameter schema accepts an empty object shape with no properties.
 export interface EmptyParams extends Schema.$Record<Schema.String, Schema.Never> {}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tool.ts#L2023)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tool.ts#L2024)
 
 Since v4.0.0

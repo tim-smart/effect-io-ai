@@ -15,6 +15,6 @@ Allowed values are `"alt"`, `"ctrl"`, `"meta"`, and `"shift"`.
 type ModifierKey = typeof ModifierKey.Type
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L600)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L611)
 
 Since v4.0.0

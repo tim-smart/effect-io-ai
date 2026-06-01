@@ -8,9 +8,8 @@ value.
 
 **When to use**
 
-Use when you want to perform a side effect, like logging or tracking,
-without modifying the main value. This is useful when you need to observe or
-record an action but want the original value to be passed to the next step.
+Use when you need to run an effectful observation, such as logging or
+tracking, while passing the original success value to the next step.
 
 **Details**
 
@@ -58,6 +57,6 @@ Effect.runPromise(finalAmount).then(console.log)
 declare const tap: { <A, B, E2, R2>(f: (a: NoInfer<A>) => Effect<B, E2, R2>): <E, R>(self: Effect<A, E, R>) => Effect<A, E | E2, R | R2>; <B, E2, R2>(f: Effect<B, E2, R2>): <A, E, R>(self: Effect<A, E, R>) => Effect<A, E | E2, R | R2>; <A, E, R, B, E2, R2>(self: Effect<A, E, R>, f: (a: NoInfer<A>) => Effect<B, E2, R2>): Effect<A, E | E2, R | R2>; <A, E, R, B, E2, R2>(self: Effect<A, E, R>, f: Effect<B, E2, R2>): Effect<A, E | E2, R | R2>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L2141)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L2152)
 
 Since v2.0.0

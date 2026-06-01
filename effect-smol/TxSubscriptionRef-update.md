@@ -8,7 +8,8 @@ value to all subscribers.
 
 **When to use**
 
-Use to derive the next value from the current value and publish it.
+Use to derive the next `TxSubscriptionRef` value from the current value and
+publish it.
 
 **Example** (Updating a value)
 
@@ -33,6 +34,6 @@ const program = Effect.gen(function*() {
 declare const update: { <A>(f: (current: A) => A): (self: TxSubscriptionRef<A>) => Effect.Effect<void>; <A>(self: TxSubscriptionRef<A>, f: (current: A) => A): Effect.Effect<void>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxSubscriptionRef.ts#L302)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxSubscriptionRef.ts#L304)
 
 Since v3.10.0

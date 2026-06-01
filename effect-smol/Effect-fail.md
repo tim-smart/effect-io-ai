@@ -7,9 +7,12 @@ Creates an `Effect` that represents a recoverable error.
 
 **When to use**
 
-Use to explicitly signal an error in an `Effect`. The error
-will keep propagating unless it is handled. You can handle the error with
-functions like `catchTag` or `catchTags`.
+Use to explicitly signal a recoverable error in an `Effect`.
+
+**Details**
+
+The error keeps propagating unless it is handled. You can handle tagged
+errors with functions like `catchTag` or `catchTags`.
 
 **Example** (Creating a failed effect)
 
@@ -35,6 +38,6 @@ const failure = Effect.fail(
 declare const fail: <E>(error: E) => Effect<never, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L1537)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L1540)
 
 Since v2.0.0

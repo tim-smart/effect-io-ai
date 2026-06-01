@@ -7,8 +7,8 @@ Service tag for embedding model operations.
 
 **When to use**
 
-Use to retrieve or provide an `EmbeddingModel.Service` when an `Effect`
-program needs to embed text into vectors.
+Use to retrieve or provide the embedding model service for an `Effect`
+program that embeds text into vectors.
 
 **See**
 

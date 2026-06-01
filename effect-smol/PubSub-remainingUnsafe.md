@@ -8,8 +8,8 @@ subscription, or `Option.none()` when it is shut down.
 
 **When to use**
 
-Use when polling from synchronous code and you can handle the `Option.none()`
-shutdown case directly.
+Use when you need synchronous polling outside a managed workflow and want
+shutdown observed as data instead of interruption.
 
 **Example** (Checking remaining messages synchronously)
 
@@ -42,6 +42,6 @@ if (remainingOption._tag === "Some" && remainingOption.value > 10) {
 declare const remainingUnsafe: <A>(self: Subscription<A>) => Option.Option<number>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PubSub.ts#L1508)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PubSub.ts#L1518)
 
 Since v4.0.0

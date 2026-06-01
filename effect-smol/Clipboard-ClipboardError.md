@@ -11,6 +11,6 @@ Tagged error raised when a browser clipboard operation fails.
 declare class ClipboardError
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/Clipboard.ts#L79)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/Clipboard.ts#L84)
 
 Since v4.0.0

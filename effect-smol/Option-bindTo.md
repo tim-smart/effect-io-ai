@@ -8,7 +8,8 @@ inside `Some`. Starting point for the do notation pipeline.
 
 **When to use**
 
-Use when beginning a do notation chain by naming the first value
+Use when you need to start an `Option` do notation chain by naming the first
+value.
 
 **Example** (Starting do notation)
 
@@ -37,6 +38,6 @@ assert.deepStrictEqual(result, Option.some({ x: 2, y: 3, sum: 5 }))
 declare const bindTo: { <N extends string>(name: N): <A>(self: Option<A>) => Option<{ [K in N]: A; }>; <A, N extends string>(self: Option<A>, name: N): Option<{ [K in N]: A; }>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L2404)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L2419)
 
 Since v2.0.0

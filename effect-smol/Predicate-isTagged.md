@@ -7,12 +7,12 @@ Checks whether a value has a `_tag` property equal to the given tag.
 
 **When to use**
 
-Use when you model tagged unions with a `_tag` field.
-- You want a quick, structural guard for tagged values.
+Use when you model tagged unions with a `_tag` field and want a quick
+`Predicate` guard for tagged values.
 
 **Details**
 
-- Uses `hasProperty` and strict equality on `_tag`.
+Uses `hasProperty` and strict equality on `_tag`.
 
 **Example** (Guard tagged)
 
@@ -34,6 +34,6 @@ console.log(isOk({ _tag: "Ok", value: 1 }))
 declare const isTagged: { <K extends string>(tag: K): (self: unknown) => self is { _tag: K; }; <K extends string>(self: unknown, tag: K): self is { _tag: K; }; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L1218)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L1221)
 
 Since v2.0.0

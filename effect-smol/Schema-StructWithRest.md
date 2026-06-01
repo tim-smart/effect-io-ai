@@ -17,7 +17,7 @@ export interface StructWithRest<
     Simplify<StructWithRest.Encoded<S, Records>>,
     StructWithRest.DecodingServices<S, Records>,
     StructWithRest.EncodingServices<S, Records>,
-    AST.Objects,
+    SchemaAST.Objects,
     StructWithRest<S, Records>,
     Simplify<StructWithRest.MakeIn<S, Records>>,
     Simplify<StructWithRest.Iso<S, Records>>
@@ -28,6 +28,6 @@ export interface StructWithRest<
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L3459)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L3653)
 
 Since v4.0.0

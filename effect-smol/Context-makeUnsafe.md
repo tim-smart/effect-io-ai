@@ -3,8 +3,12 @@ Module: `Context`<br />
 
 ## Context.makeUnsafe
 
-Creates a `Context` from an existing service map without validating or
-copying it.
+Creates a `Context` from an existing service map.
+
+**When to use**
+
+Use when constructing a low-level `Context` from a trusted map whose lifecycle
+you control.
 
 **Gotchas**
 
@@ -31,6 +35,6 @@ const context = Context.makeUnsafe(map)
 declare const makeUnsafe: <Services = never>(mapUnsafe: ReadonlyMap<string, any>) => Context<Services>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Context.ts#L530)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Context.ts#L534)
 
 Since v4.0.0

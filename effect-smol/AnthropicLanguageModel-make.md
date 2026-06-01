@@ -7,8 +7,8 @@ Creates an Anthropic `LanguageModel` service from a model identifier and optiona
 
 **When to use**
 
-Use when an Effect needs to construct a `LanguageModel.Service` value backed
-by `AnthropicClient`.
+Use when you need to construct a `LanguageModel.Service` value backed by
+`AnthropicClient` inside an Effect.
 
 **Details**
 

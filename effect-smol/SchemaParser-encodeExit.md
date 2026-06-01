@@ -8,8 +8,8 @@ Creates a synchronous encoder for input already typed as the schema's decoded
 
 **When to use**
 
-Use to synchronously encode already typed schema values when you want encoding
-failures returned as `Exit` values.
+Use when you need synchronous encoding of already typed schema values into
+an `Exit` whose failure contains `SchemaIssue.Issue`.
 
 **Details**
 
@@ -24,9 +24,9 @@ or `Exit.Failure` with a `SchemaIssue.Issue`.
 **Signature**
 
 ```ts
-declare const encodeExit: <S extends Schema.Encoder<unknown>>(schema: S, options?: AST.ParseOptions) => (input: S["Type"], options?: AST.ParseOptions) => Exit.Exit<S["Encoded"], Issue.Issue>
+declare const encodeExit: <S extends Schema.Encoder<unknown>>(schema: S, options?: SchemaAST.ParseOptions) => (input: S["Type"], options?: SchemaAST.ParseOptions) => Exit.Exit<S["Encoded"], SchemaIssue.Issue>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaParser.ts#L724)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaParser.ts#L701)
 
 Since v4.0.0

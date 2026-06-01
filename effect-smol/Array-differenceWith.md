@@ -8,8 +8,8 @@ custom equivalence.
 
 **When to use**
 
-Use when keeping only values from the first array and equality must be
-defined by a custom comparator, such as matching objects by id.
+Use when you need to keep only values from the first array and equality must
+be defined by a custom comparator, such as matching objects by id.
 
 **Example** (Difference with custom equality)
 
@@ -32,6 +32,6 @@ console.log(diff) // [1]
 declare const differenceWith: <A>(isEquivalent: (self: A, that: A) => boolean) => { (that: Iterable<A>): (self: Iterable<A>) => Array<A>; (self: Iterable<A>, that: Iterable<A>): Array<A>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L3297)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L3338)
 
 Since v2.0.0

@@ -7,7 +7,7 @@ Creates a getter that always fails with the given issue.
 
 **When to use**
 
-Use when a transformation should unconditionally reject input.
+Use when you need a schema getter that unconditionally rejects input.
 - Building custom validation getters that produce specific error types.
 
 **Details**
@@ -33,7 +33,7 @@ const rejectAll = SchemaGetter.fail<string, string>(
 **Signature**
 
 ```ts
-declare const fail: <T, E>(f: (oe: Option.Option<E>) => Issue.Issue) => Getter<T, E>
+declare const fail: <T, E>(f: (oe: Option.Option<E>) => SchemaIssue.Issue) => Getter<T, E>
 ```
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L227)

@@ -7,8 +7,7 @@ Creates a `Combiner` that always returns the last (right) argument.
 
 **When to use**
 
-Use when you want "last write wins" semantics while merging values, or
-when each new value should replace the accumulator.
+Use when you want "last write wins" semantics while merging values.
 
 **Details**
 
@@ -35,6 +34,6 @@ console.log(Last.combine(1, 2))
 declare const last: <A>() => Combiner<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Combiner.ts#L299)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Combiner.ts#L296)
 
 Since v4.0.0

@@ -45,6 +45,6 @@ const databaseLayer = Layer.effect(
 declare const parentSpan: (span: Tracer.AnySpan) => Layer<Tracer.ParentSpan>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L2604)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L2596)
 
 Since v2.0.0

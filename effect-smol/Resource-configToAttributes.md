@@ -8,7 +8,7 @@ Converts resource configuration into OpenTelemetry attributes, adding service na
 **When to use**
 
 Use to turn explicit service metadata into a raw OpenTelemetry attribute map
-for lower-level resource construction or for merging with environment-derived
+for lower-level resource construction or merging with environment-derived
 attributes via `layerFromEnv`.
 
 **Details**

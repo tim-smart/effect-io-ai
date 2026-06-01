@@ -24,6 +24,6 @@ into lower-initial camelCase identifiers.
 declare const camelCase: (self: string) => string
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L1403)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L1402)
 
 Since v4.0.0

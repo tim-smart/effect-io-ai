@@ -8,8 +8,8 @@ and `None` for filtered-out values.
 
 **When to use**
 
-Use when adapting a `Filter` to `Option`-based code and you only need the
-passed value, with filtered-out inputs represented as `None`.
+Use when adapting a `Filter` to `Option`-based code where passed values
+become `Some` and filtered-out inputs become `None`.
 
 **See**
 

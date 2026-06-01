@@ -7,8 +7,8 @@ Checks whether a Cause contains any done errors.
 
 **When to use**
 
-Use to test a whole pull failure cause for normal completion when you only
-need a boolean branch and do not need the done payload.
+Use when you need to test whether a pull failure cause represents normal
+completion and only need a boolean result.
 
 **See**
 

@@ -31,6 +31,6 @@ if (TxSubscriptionRef.isTxSubscriptionRef(someValue)) {
 declare const isTxSubscriptionRef: (u: unknown) => u is TxSubscriptionRef<unknown>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxSubscriptionRef.ts#L540)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxSubscriptionRef.ts#L546)
 
 Since v4.0.0

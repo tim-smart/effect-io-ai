@@ -5,6 +5,11 @@ Module: `Stream`<br />
 
 Creates a stream from an effect producing an iterable of values.
 
+**When to use**
+
+Use when the iterable must be acquired from an Effect before the stream emits,
+and acquisition services or failures should be part of the stream.
+
 **Example** (Creating a stream from an iterable effect)
 
 ```ts
@@ -40,6 +45,6 @@ Effect.runPromise(program)
 declare const fromIterableEffect: <A, E, R>(iterable: Effect.Effect<Iterable<A>, E, R>) => Stream<A, E, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L1218)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L1223)
 
 Since v2.0.0

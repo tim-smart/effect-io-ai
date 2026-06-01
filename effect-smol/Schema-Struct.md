@@ -14,7 +14,7 @@ export interface Struct<Fields extends Struct.Fields> extends
     Struct.Encoded<Fields>,
     Struct.DecodingServices<Fields>,
     Struct.EncodingServices<Fields>,
-    AST.Objects,
+    SchemaAST.Objects,
     Struct<Fields>,
     Struct.MakeIn<Fields>,
     Struct.Iso<Fields>
@@ -67,6 +67,6 @@ export interface Struct<Fields extends Struct.Fields> extends
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L2877)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L3027)
 
 Since v3.10.0

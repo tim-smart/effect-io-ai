@@ -7,8 +7,8 @@ Constructs a layer from an effect that produces all services in a `Context`.
 
 **When to use**
 
-Use when effectful construction needs to provide multiple
-services at once. Use `effect` when the effect produces one service value.
+Use when you need a `Layer` that effectfully constructs a `Context` with
+multiple services.
 
 **Details**
 
@@ -43,6 +43,6 @@ const layer = Layer.effectContext(
 declare const effectContext: <A, E, R>(effect: Effect<Context.Context<A>, E, R>) => Layer<A, E, Exclude<R, Scope.Scope>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L1071)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L1063)
 
 Since v2.0.0

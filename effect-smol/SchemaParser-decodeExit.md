@@ -8,8 +8,8 @@ type, reporting failure safely as an `Exit`.
 
 **When to use**
 
-Use to synchronously decode already typed `Encoded` input when you want
-decoding failures returned as `Exit` values.
+Use when you need synchronous decoding of already typed `Encoded` input into
+an `Exit` whose failure contains `SchemaIssue.Issue`.
 
 **Details**
 
@@ -24,9 +24,9 @@ The returned function produces `Exit.Success` with the decoded `Type` or
 **Signature**
 
 ```ts
-declare const decodeExit: <S extends Schema.Decoder<unknown>>(schema: S, options?: AST.ParseOptions) => (input: S["Encoded"], options?: AST.ParseOptions) => Exit.Exit<S["Type"], Issue.Issue>
+declare const decodeExit: <S extends Schema.Decoder<unknown>>(schema: S, options?: SchemaAST.ParseOptions) => (input: S["Encoded"], options?: SchemaAST.ParseOptions) => Exit.Exit<S["Type"], SchemaIssue.Issue>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaParser.ts#L398)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaParser.ts#L403)
 
 Since v4.0.0

@@ -11,8 +11,8 @@ Use when you want to infer the narrowed type from a refinement type.
 
 **Details**
 
-- Type-only; no runtime value is created.
-- Resolves to `never` if the type does not match `Refinement`.
+This is type-only and creates no runtime value. It resolves to `never` if
+the type does not match `Refinement`.
 
 **Example** (Infer output)
 

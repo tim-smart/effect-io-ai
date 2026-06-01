@@ -7,8 +7,8 @@ Returns the identity getter — passes the value through unchanged.
 
 **When to use**
 
-Use when no transformation is needed between encoded and decoded types.
-- One side of a `decodeTo` pair (encode or decode) should be a no-op.
+Use when you need a schema getter for one side of a `decodeTo` pair, either
+encode or decode, to pass values through unchanged.
 
 **Details**
 
@@ -43,6 +43,6 @@ const StringToString = Schema.String.pipe(
 declare const passthrough: { <T, E>(options: { readonly strict: false; }): Getter<T, E>; <T>(): Getter<T, T>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L307)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L308)
 
 Since v4.0.0

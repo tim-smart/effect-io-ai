@@ -6,6 +6,11 @@ Module: `Stream`<br />
 Maps each non-empty input chunk statefully and effectfully, emitting zero or
 more output values per chunk.
 
+**When to use**
+
+Use when stateful mapping should process each emitted non-empty chunk with an
+Effect instead of each element separately.
+
 **Details**
 
 The mapping effect receives the current state and chunk, then returns the
@@ -40,6 +45,6 @@ Effect.runPromise(program)
 declare const mapAccumArrayEffect: { <S, A, B, E2, R2>(initial: LazyArg<S>, f: (s: S, a: Arr.NonEmptyReadonlyArray<A>) => Effect.Effect<readonly [state: S, values: ReadonlyArray<B>], E2, R2>, options?: { readonly onHalt?: ((state: S) => ReadonlyArray<B>) | undefined; }): <E, R>(self: Stream<A, E, R>) => Stream<B, E | E2, R | R2>; <A, E, R, S, B, E2, R2>(self: Stream<A, E, R>, initial: LazyArg<S>, f: (s: S, a: Arr.NonEmptyReadonlyArray<A>) => Effect.Effect<readonly [state: S, values: ReadonlyArray<B>], E2, R2>, options?: { readonly onHalt?: ((state: S) => ReadonlyArray<B>) | undefined; }): Stream<B, E | E2, R | R2>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L7652)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L7742)
 
 Since v4.0.0

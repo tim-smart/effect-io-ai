@@ -5,6 +5,12 @@ Module: `Effect`<br />
 
 Creates an `Effect` that represents a failure with a specific `Cause`.
 
+**When to use**
+
+Use when you already have a full `Cause` and need to preserve defects,
+interruptions, annotations, or combined failures in the effect's failure
+channel.
+
 **Details**
 
 This function allows you to create effects that fail with complex error
@@ -29,6 +35,6 @@ Effect.runPromiseExit(program).then(console.log)
 declare const failCause: <E>(cause: Cause.Cause<E>) => Effect<never, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L1592)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L1601)
 
 Since v2.0.0

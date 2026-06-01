@@ -7,7 +7,8 @@ Sequences two `Option`s, keeping the value from the second if both are `Some`.
 
 **When to use**
 
-Use to run a side-condition that must succeed, then using the second value
+Use when you need two `Option` values to both be `Some`, then keep only the
+second value.
 
 **Details**
 

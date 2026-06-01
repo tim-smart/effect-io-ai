@@ -14,7 +14,7 @@ export interface suspend<S extends Top> extends
     S["Encoded"],
     S["DecodingServices"],
     S["EncodingServices"],
-    AST.Suspend,
+    SchemaAST.Suspend,
     suspend<S>,
     S["~type.make.in"],
     S["Iso"],
@@ -29,6 +29,6 @@ export interface suspend<S extends Top> extends
 {}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L4368)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L4563)
 
 Since v3.10.0

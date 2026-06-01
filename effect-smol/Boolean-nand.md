@@ -3,7 +3,7 @@ Module: `Boolean`<br />
 
 ## Boolean.nand
 
-Combines two boolean using NAND: `!(self && that)`.
+Combines two booleans using NAND: `!(self && that)`.
 
 **When to use**
 

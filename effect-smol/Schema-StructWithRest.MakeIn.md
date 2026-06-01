@@ -10,10 +10,9 @@ record schemas.
 **Signature**
 
 ```ts
-type MakeIn<S, Records> = & S["~type.make"]
-    & MergeTuple<{ readonly [K in keyof Records]: Records[K]["~type.make"] }>
+type MakeIn<S, Records> = Intersect<S, Records, "~type.make">
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L3448)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L3578)
 
 Since v4.0.0

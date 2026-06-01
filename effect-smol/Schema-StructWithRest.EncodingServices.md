@@ -9,10 +9,13 @@ rest record schemas.
 **Signature**
 
 ```ts
-type EncodingServices<S, Records> = | S["EncodingServices"]
-    | { [K in keyof Records]: Records[K]["EncodingServices"] }[number]
+type EncodingServices<S, Records> = Services<
+    S,
+    Records,
+    "EncodingServices"
+  >
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L3436)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L3608)
 
 Since v4.0.0

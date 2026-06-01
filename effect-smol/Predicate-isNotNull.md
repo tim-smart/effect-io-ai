@@ -7,11 +7,12 @@ Checks whether a value is not `null`.
 
 **When to use**
 
-Use when you want to filter out `null` while preserving other falsy values.
+Use when you need a `Predicate` refinement that filters out `null` while
+preserving other falsy values.
 
 **Details**
 
-- Returns a refinement that excludes `null`.
+Returns a refinement that excludes `null`.
 
 **Example** (Filter null)
 
@@ -35,6 +36,6 @@ console.log(nonNull)
 declare const isNotNull: <A>(input: A) => input is Exclude<A, null>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L908)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L916)
 
 Since v2.0.0

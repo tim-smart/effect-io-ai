@@ -34,6 +34,6 @@ const program = Effect.gen(function*() {
 declare const interruptWith: { (fiberId: number): <A, E>(self: Deferred<A, E>) => Effect<boolean>; <A, E>(self: Deferred<A, E>, fiberId: number): Effect<boolean>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Deferred.ts#L706)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Deferred.ts#L708)
 
 Since v2.0.0

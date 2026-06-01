@@ -14,9 +14,9 @@ change when uppercased.
 **Signature**
 
 ```ts
-declare const isUppercased: (annotations?: Annotations.Filter) => AST.Filter<string>
+declare const isUppercased: (annotations?: Annotations.Filter) => SchemaAST.Filter<string>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L6288)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L6503)
 
 Since v4.0.0

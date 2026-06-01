@@ -6,6 +6,11 @@ Module: `Array`<br />
 Lifts an `Option`-returning function into one that returns an array:
 `Some(a)` becomes `[a]`, `None` becomes `[]`.
 
+**When to use**
+
+Use when an optional parser or lookup should participate in array pipelines
+as zero-or-one results.
+
 **Example** (Lifting an Option function)
 
 ```ts
@@ -30,6 +35,6 @@ console.log(parseNumber("abc")) // []
 declare const liftOption: <A extends Array<unknown>, B>(f: (...a: A) => Option.Option<B>) => (...a: A) => Array<B>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L4020)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L4064)
 
 Since v2.0.0

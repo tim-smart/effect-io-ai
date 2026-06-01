@@ -7,11 +7,12 @@ Checks whether a value is `PromiseLike` (has a `then` method).
 
 **When to use**
 
-Use when you only need `then` to interop with promise-like values.
+Use when you need a `Predicate` guard for promise-like values with a
+callable `then` method.
 
 **Details**
 
-- Structural check for a callable `then`.
+Performs a structural check for a callable `then`.
 
 **Example** (Guard promise-like)
 
@@ -33,6 +34,6 @@ console.log(Predicate.isPromiseLike(data))
 declare const isPromiseLike: (input: unknown) => input is PromiseLike<unknown>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L1399)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L1402)
 
 Since v2.0.0

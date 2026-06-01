@@ -8,8 +8,8 @@ functions.
 
 **When to use**
 
-Use when the conversion cannot fail.
-- No Effect services are needed.
+Use when you need an infallible schema transformation that does not require
+Effect services.
 
 **Details**
 
@@ -45,6 +45,6 @@ const CentsFromDollars = Schema.Number.pipe(
 declare const transform: <T, E>(options: { readonly decode: (input: E) => T; readonly encode: (input: T) => E; }) => Transformation<T, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L403)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L406)
 
 Since v3.10.0

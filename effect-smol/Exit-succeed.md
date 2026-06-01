@@ -7,8 +7,7 @@ Creates a successful Exit containing the given value.
 
 **When to use**
 
-Use to wrap a known success value into an Exit
-- Use when constructing test data or returning explicit results
+Use when you need an Exit that contains a known success value.
 
 **Details**
 
@@ -35,6 +34,6 @@ console.log(Exit.isSuccess(exit)) // true
 declare const succeed: <A>(a: A) => Exit<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Exit.ts#L267)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Exit.ts#L266)
 
 Since v2.0.0

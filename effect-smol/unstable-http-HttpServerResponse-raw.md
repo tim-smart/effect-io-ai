@@ -7,8 +7,8 @@ Creates a response with a raw body value.
 
 **When to use**
 
-Use when the underlying runtime already understands the body value, such
-as a Web `Response`, `Blob`, or `ReadableStream`; the body is passed through
+Use when you want to pass through a body value already understood by the
+underlying runtime, such as a Web `Response`, `Blob`, or `ReadableStream`,
 for later platform conversion.
 
 **Signature**
@@ -17,6 +17,6 @@ for later platform conversion.
 declare const raw: (body: unknown, options?: Options | undefined) => HttpServerResponse
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpServerResponse.ts#L431)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpServerResponse.ts#L436)
 
 Since v4.0.0

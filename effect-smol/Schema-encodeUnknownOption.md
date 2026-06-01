@@ -8,22 +8,23 @@ Encodes an `unknown` input against a schema, returning an `Option` that is
 
 **When to use**
 
-Use when the input type is not statically known and you only need to know
+Use when you do not know the input type statically and only need to know
 whether encoding succeeded.
 
 **Details**
 
 Prefer this over `encodeUnknownExit` or `encodeUnknownEffect`
-when you don't need error details. For typed input use `encodeOption`.
+when you don't need error details. For values already typed as the schema's
+`Type` use `encodeOption`.
 Options may be provided either when creating the encoder or when applying it;
 application options override creation options.
 
 **Signature**
 
 ```ts
-declare const encodeUnknownOption: <S extends Encoder<unknown>>(schema: S, options?: AST.ParseOptions) => (input: unknown, options?: AST.ParseOptions) => Option_.Option<S["Encoded"]>
+declare const encodeUnknownOption: <S extends Encoder<unknown>>(schema: S, options?: SchemaAST.ParseOptions) => (input: unknown, options?: SchemaAST.ParseOptions) => Option_.Option<S["Encoded"]>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L1639)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L1725)
 
 Since v3.10.0

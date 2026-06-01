@@ -8,8 +8,7 @@ specified `duration` of time.
 
 **When to use**
 
-Use to bound a repeating or retrying schedule by elapsed time. Use
-`duration` when you need one delayed recurrence.
+Use to bound a repeating or retrying schedule by elapsed time.
 
 **Example** (Repeating work during a duration)
 
@@ -99,6 +98,6 @@ const retryProgram = Effect.gen(function*() {
 declare const during: (duration: Duration.Input) => Schedule<Duration.Duration>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L1671)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L1682)
 
 Since v4.0.0

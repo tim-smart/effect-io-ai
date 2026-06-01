@@ -8,8 +8,8 @@ can fail with `Issue`.
 
 **When to use**
 
-Use when the transformation can fail (e.g. parsing, validation).
-- The transformation requires Effect services.
+Use when you need a schema transformation that may fail or require Effect
+services.
 
 **Details**
 
@@ -47,9 +47,9 @@ const DateFromString = Schema.String.pipe(
 **Signature**
 
 ```ts
-declare const transformOrFail: <T, E, RD = never, RE = never>(options: { readonly decode: (e: E, options: AST.ParseOptions) => Effect.Effect<T, Issue.Issue, RD>; readonly encode: (t: T, options: AST.ParseOptions) => Effect.Effect<E, Issue.Issue, RE>; }) => Transformation<T, E, RD, RE>
+declare const transformOrFail: <T, E, RD = never, RE = never>(options: { readonly decode: (e: E, options: SchemaAST.ParseOptions) => Effect.Effect<T, SchemaIssue.Issue, RD>; readonly encode: (t: T, options: SchemaAST.ParseOptions) => Effect.Effect<E, SchemaIssue.Issue, RE>; }) => Transformation<T, E, RD, RE>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L355)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L358)
 
 Since v3.10.0

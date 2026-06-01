@@ -21,6 +21,6 @@ shape of a `Chunk` schema.
 type ChunkIso<Value> = ReadonlyArray<Value["Iso"]>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L9487)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L9684)
 
 Since v4.0.0

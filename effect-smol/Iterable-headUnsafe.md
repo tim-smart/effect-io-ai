@@ -3,7 +3,16 @@ Module: `Iterable`<br />
 
 ## Iterable.headUnsafe
 
-Gets the first element of a `Iterable`, or throw an error if the `Iterable` is empty.
+Gets the first element of an `Iterable` without returning an `Option`.
+
+**When to use**
+
+Use when the `Iterable` is known to be non-empty and direct access to the
+first element is preferred over handling `Option.none`.
+
+**Gotchas**
+
+Throws if the `Iterable` is empty.
 
 **Example** (Getting the first element unsafely)
 
@@ -30,6 +39,6 @@ console.log(Iterable.headUnsafe(nonEmpty)) // 1
 declare const headUnsafe: <A>(self: Iterable<A>) => A
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Iterable.ts#L582)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Iterable.ts#L591)
 
 Since v4.0.0

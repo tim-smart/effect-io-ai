@@ -7,20 +7,20 @@ The value a filter predicate (see `makeFilter`) may return.
 
 **Details**
 
-Each shape is normalized into an `Issue.Issue` (or `undefined` for
+Each shape is normalized into an `SchemaIssue.Issue` (or `undefined` for
 success) before being attached to the parse result:
 
 - `undefined`: success. The input satisfies the filter.
 - `true`: success. Equivalent to `undefined`, useful when the predicate is
   a plain boolean expression.
-- `false`: generic failure. Produces an `Issue.InvalidValue` wrapping
+- `false`: generic failure. Produces an `SchemaIssue.InvalidValue` wrapping
   the input, with no custom message.
 - `FilterIssue`: a single failure. See `FilterIssue` for the
-  shapes (`string`, `Issue.Issue`, or `{ path, issue }`).
+  shapes (`string`, `SchemaIssue.Issue`, or `{ path, issue }`).
 - `ReadonlyArray<FilterIssue>`: several failures reported together. An
   empty array is treated as success; a single-element array is equivalent
   to returning that element directly; otherwise the entries are grouped
-  into an `Issue.Composite`.
+  into an `SchemaIssue.Composite`.
 
 **Signature**
 
@@ -31,6 +31,6 @@ type FilterOutput = | undefined
   | ReadonlyArray<FilterIssue>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L5890)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L6105)
 
 Since v3.10.0

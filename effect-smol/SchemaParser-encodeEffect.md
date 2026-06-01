@@ -8,9 +8,9 @@ Creates an effectful encoder for input already typed as the schema's decoded
 
 **When to use**
 
-Use to encode values already typed as the schema's decoded `Type` when
-encoding should preserve service requirements and return failures in an
-`Effect`.
+Use when you need to encode values already typed as the schema's decoded
+`Type` in an `Effect` whose failure channel is `SchemaIssue.Issue`, while
+preserving service requirements.
 
 **Details**
 
@@ -25,9 +25,9 @@ returned `Effect`.
 **Signature**
 
 ```ts
-declare const encodeEffect: <S extends Schema.Top>(schema: S, options?: AST.ParseOptions) => (input: S["Type"], options?: AST.ParseOptions) => Effect.Effect<S["Encoded"], Issue.Issue, S["EncodingServices"]>
+declare const encodeEffect: <S extends Schema.Top>(schema: S, options?: SchemaAST.ParseOptions) => (input: S["Type"], options?: SchemaAST.ParseOptions) => Effect.Effect<S["Encoded"], SchemaIssue.Issue, S["EncodingServices"]>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaParser.ts#L620)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaParser.ts#L594)
 
 Since v4.0.0

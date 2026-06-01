@@ -8,8 +8,8 @@ representation.
 
 **When to use**
 
-Use when an API expects a `MultiDocument` but you only have a single
-`Document`.
+Use when you need to pass a single schema representation `Document` where an
+API expects a `MultiDocument`.
 
 **See**
 
@@ -22,6 +22,6 @@ Use when an API expects a `MultiDocument` but you only have a single
 declare const toMultiDocument: (document: Document) => MultiDocument
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaRepresentation.ts#L1770)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaRepresentation.ts#L1778)
 
 Since v4.0.0

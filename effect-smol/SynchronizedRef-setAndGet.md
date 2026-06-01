@@ -7,8 +7,8 @@ Sets the value of the `SynchronizedRef` and returns the new value.
 
 **When to use**
 
-Use to replace the current value with a known value and return that new
-value.
+Use to replace the current `SynchronizedRef` value with a known value and
+return that new value.
 
 **See**
 
@@ -21,6 +21,6 @@ value.
 declare const setAndGet: { <A>(value: A): (self: SynchronizedRef<A>) => Effect.Effect<A>; <A>(self: SynchronizedRef<A>, value: A): Effect.Effect<A>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SynchronizedRef.ts#L441)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SynchronizedRef.ts#L446)
 
 Since v2.0.0

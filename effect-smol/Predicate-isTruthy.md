@@ -7,13 +7,13 @@ Checks whether a value is truthy.
 
 **When to use**
 
-Use when you want a predicate that mirrors JavaScript truthiness.
-- You need to filter out falsy values like `0`, "", and `false`.
+Use when you want a predicate that mirrors JavaScript truthiness and filters
+out falsy values like `0`, `""`, and `false`.
 
 **Details**
 
-- Uses `!!input` under the hood.
-- Treats `0`, "", `false`, `null`, and `undefined` as false.
+This uses `!!input` and treats `0`, `""`, `false`, `null`, and `undefined`
+as false.
 
 **Example** (Filter truthy)
 

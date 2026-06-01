@@ -7,13 +7,12 @@ Retrieves the current state of the specified `Metric`.
 
 **Details**
 
-The returned state depends on the metric type:
-
-- Counter: `CounterState<number | bigint>` with `count` and `incremental`
-- Gauge: `GaugeState<number | bigint>` with `value`
-- Frequency: `FrequencyState` with `occurrences`
-- Histogram: `HistogramState` with buckets, count, min, max, and sum
-- Summary: `SummaryState` with quantiles, count, min, max, and sum
+The returned state depends on the metric type. Counters return
+`CounterState<number | bigint>` with `count` and `incremental`, gauges return
+`GaugeState<number | bigint>` with `value`, frequencies return
+`FrequencyState` with `occurrences`, histograms return `HistogramState` with
+buckets, count, min, max, and sum, and summaries return `SummaryState` with
+quantiles, count, min, max, and sum.
 
 **Example** (Reading metric state)
 
@@ -50,6 +49,6 @@ const program = Effect.gen(function*() {
 declare const value: <Input, State>(self: Metric<Input, State>) => Effect<State>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Metric.ts#L2757)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Metric.ts#L2752)
 
 Since v2.0.0

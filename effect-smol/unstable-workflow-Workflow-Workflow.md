@@ -11,17 +11,21 @@ registration.
 
 ```ts
 export interface Workflow<
-  Name extends string,
+  Tag extends string,
   Payload extends AnyStructSchema,
   Success extends Schema.Top,
   Error extends Schema.Top
 > {
+  new(_: never): {}
+
   readonly [TypeId]: typeof TypeId
-  readonly name: Name
+  readonly _tag: Tag
   readonly payloadSchema: Payload
   readonly successSchema: Success
   readonly errorSchema: Error
   readonly annotations: Context.Context<never>
+  readonly idempotencyKey: (payload: Payload["Type"]) => string
+  readonly suspendedRetrySchedule?: Schedule.Schedule<any, unknown> | undefined
 
   /**
    * Add an annotation to the workflow.
@@ -29,14 +33,14 @@ export interface Workflow<
   annotate<I, S>(
     key: Context.Key<I, S>,
     value: S
-  ): Workflow<Name, Payload, Success, Error>
+  ): Workflow<Tag, Payload, Success, Error>
 
   /**
    * Merge multiple annotations into the workflow.
    */
   annotateMerge<I>(
     annotations: Context.Context<I>
-  ): Workflow<Name, Payload, Success, Error>
+  ): Workflow<Tag, Payload, Success, Error>
 
   /**
    * Execute the workflow with the given payload.
@@ -95,7 +99,7 @@ export interface Workflow<
     | WorkflowEngine
     | Exclude<
       R,
-      WorkflowEngine | WorkflowInstance | Execution<Name> | Scope.Scope
+      WorkflowEngine | WorkflowInstance | Execution<Tag> | Scope.Scope
     >
     | Payload["DecodingServices"]
     | Payload["EncodingServices"]
@@ -134,7 +138,7 @@ export interface Workflow<
     ) => Effect.Effect<
       A,
       E,
-      R | R2 | WorkflowInstance | Execution<Name> | Scope.Scope
+      R | R2 | WorkflowInstance | Execution<Tag> | Scope.Scope
     >
     <A, E, R, R2>(
       effect: Effect.Effect<A, E, R>,
@@ -145,7 +149,7 @@ export interface Workflow<
     ): Effect.Effect<
       A,
       E,
-      R | R2 | WorkflowInstance | Execution<Name> | Scope.Scope
+      R | R2 | WorkflowInstance | Execution<Tag> | Scope.Scope
     >
   }
 }

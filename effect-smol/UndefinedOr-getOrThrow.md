@@ -8,7 +8,7 @@ Returns the defined value, or throws a default `Error` when the input is
 
 **When to use**
 
-Use when a value should already be defined at this point and throwing a
+Use when you need to unwrap a value that should already be defined and a
 generic missing-value `Error` is acceptable.
 
 **Details**

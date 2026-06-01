@@ -6,6 +6,11 @@ Module: `Array`<br />
 Applies a function to the last element of a non-empty array, returning a
 new array.
 
+**When to use**
+
+Use when you already know the array is non-empty and the new last element
+depends on the current last element.
+
 **Example** (Modifying the last element)
 
 ```ts
@@ -25,6 +30,6 @@ console.log(Array.modifyLastNonEmpty([1, 2, 3], (n) => n * 2)) // [1, 2, 6]
 declare const modifyLastNonEmpty: { <A, B>(f: (a: A) => B): (self: NonEmptyReadonlyArray<A>) => NonEmptyArray<A | B>; <A, B>(self: NonEmptyReadonlyArray<A>, f: (a: A) => B): NonEmptyArray<A | B>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L2471)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L2501)
 
 Since v4.0.0

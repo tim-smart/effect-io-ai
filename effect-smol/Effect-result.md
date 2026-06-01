@@ -7,16 +7,15 @@ Converts both success and failure of an `Effect` into a `Result` type.
 
 **When to use**
 
-Use when you want to handle typed failures as data while preserving
-the original error value. Use `option` when you only care whether the effect
-succeeded, and `exit` when you need the full failure cause.
+Use when you want an `Effect`'s typed failures to be handled as `Result`
+data while preserving the original error value.
 
 **Details**
 
 This function converts an effect that may fail into an effect that always
 succeeds, wrapping the outcome in a `Result` type. The result will be
-`Result.Err` if the effect fails, containing the recoverable error, or
-`Result.Ok` if it succeeds, containing the result.
+`Result.Failure` if the effect fails, containing the recoverable error, or
+`Result.Success` if it succeeds, containing the result.
 
 Using this function, you can handle recoverable errors explicitly without
 causing the effect to fail. This is particularly useful in scenarios where
@@ -61,6 +60,6 @@ Effect.runPromise(program2).then(console.log)
 declare const result: <A, E, R>(self: Effect<A, E, R>) => Effect<Result.Result<A, E>, never, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L2212)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L2222)
 
 Since v4.0.0

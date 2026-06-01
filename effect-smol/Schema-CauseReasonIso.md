@@ -25,6 +25,6 @@ type CauseReasonIso<E, D> = {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L8528)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L8718)
 
 Since v4.0.0

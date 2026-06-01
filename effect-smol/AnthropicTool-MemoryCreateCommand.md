@@ -11,6 +11,6 @@ Memory tool command payload for creating a new file at a path.
 type MemoryCreateCommand = typeof MemoryCreateCommand.Type
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L1453)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L1475)
 
 Since v4.0.0

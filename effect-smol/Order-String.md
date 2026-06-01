@@ -7,15 +7,12 @@ Order instance for strings that compares them lexicographically using JavaScript
 
 **When to use**
 
-Use when when comparing strings alphabetically
-- When sorting string collections
-- As a base for creating orders on types containing strings
+Use when you need lexicographic string ordering.
 
 **Details**
 
-- Uses lexicographic (dictionary) ordering
-- Empty string is less than any non-empty string
-- Comparison is case-sensitive
+Uses lexicographic dictionary ordering. The empty string is less than any
+non-empty string, and comparisons are case-sensitive.
 
 **Example** (String Ordering)
 
@@ -38,6 +35,6 @@ console.log(Order.String("apple", "apple")) // 0
 declare const String: Order<string>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Order.ts#L218)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Order.ts#L212)
 
 Since v4.0.0

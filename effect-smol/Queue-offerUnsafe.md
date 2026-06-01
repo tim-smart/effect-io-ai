@@ -5,6 +5,11 @@ Module: `Queue`<br />
 
 Adds a message to the queue synchronously. Returns `false` if the queue is done.
 
+**When to use**
+
+Use when you are already in synchronous queue internals or a performance
+boundary where wrapping the mutation in `Effect` is intentionally avoided.
+
 **Gotchas**
 
 This is an unsafe operation that directly modifies the queue without Effect wrapping.
@@ -36,6 +41,6 @@ const program = Effect.gen(function*() {
 declare const offerUnsafe: <A, E>(self: Enqueue<A, E>, message: Types.NoInfer<A>) => boolean
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Queue.ts#L747)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Queue.ts#L751)
 
 Since v4.0.0

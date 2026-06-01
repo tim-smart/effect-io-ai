@@ -7,12 +7,13 @@ Creates a getter that always fails with a `Forbidden` issue.
 
 **When to use**
 
-Use when a field or direction (encode/decode) should be disallowed entirely.
+Use when you need a schema getter to disallow a field or direction
+(encode/decode) entirely.
 - You want a clear "forbidden" error message in schema validation output.
 
 **Details**
 
-- Always fails with `Issue.Forbidden`.
+- Always fails with `SchemaIssue.Forbidden`.
 - The message function receives the `Option<E>` input for context.
 
 **Example** (Forbidding a decode direction)
@@ -35,6 +36,6 @@ const noEncode = SchemaGetter.forbidden<string, number>(
 declare const forbidden: <T, E>(message: (oe: Option.Option<E>) => string) => Getter<T, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L259)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L260)
 
 Since v4.0.0

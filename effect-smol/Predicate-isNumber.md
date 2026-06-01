@@ -7,12 +7,12 @@ Checks whether a value is a `number`.
 
 **When to use**
 
-Use when you need to guard an `unknown` value as a number.
+Use when you need a `Predicate` guard to narrow an `unknown` value to a
+number.
 
 **Details**
 
-- Uses `typeof input === "number"`.
-- Does not exclude `NaN` or `Infinity`.
+Uses `typeof input === "number"` and does not exclude `NaN` or `Infinity`.
 
 **Example** (Guard number)
 

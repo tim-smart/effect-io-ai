@@ -3,7 +3,7 @@ Module: `OpenAiTelemetry`<br />
 
 ## OpenAiTelemetry.addGenAIAnnotations
 
-Applies the specified OpenAi GenAI telemetry attributes to the provided
+Applies the specified OpenAI GenAI telemetry attributes to the provided
 `Span`.
 
 **When to use**
@@ -19,7 +19,7 @@ metadata is present, it is written under `gen_ai.openai.request.*` and
 
 **Gotchas**
 
-This method will mutate the `Span` **in-place**.
+Mutates the supplied `Span` in place.
 
 **Signature**
 

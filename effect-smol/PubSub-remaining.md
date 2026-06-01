@@ -53,6 +53,6 @@ const program = Effect.gen(function*() {
 declare const remaining: <A>(self: Subscription<A>) => Effect.Effect<number>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PubSub.ts#L1466)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PubSub.ts#L1476)
 
 Since v4.0.0

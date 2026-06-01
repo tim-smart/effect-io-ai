@@ -8,9 +8,9 @@ one.
 
 **When to use**
 
-Use when you have prioritized fallback strategies, such as
-attempting multiple APIs, reading configuration from several sources, or
-trying alternative resource locations in order.
+Use when you have prioritized fallback `Effect`s, such as attempting
+multiple APIs, reading configuration from several sources, or trying
+alternative resource locations in order.
 
 **Details**
 
@@ -49,6 +49,6 @@ console.log(Effect.runSync(program))
 declare const firstSuccessOf: <Eff extends Effect<any, any, any>>(effects: Iterable<Eff>) => Effect<Success<Eff>, Error<Eff>, Services<Eff>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L4409)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L4446)
 
 Since v2.0.0

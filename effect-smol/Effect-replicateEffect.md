@@ -5,6 +5,11 @@ Module: `Effect`<br />
 
 Performs this effect `n` times and collects results with `Effect.all` semantics.
 
+**When to use**
+
+Use when you want to run the repeated effects immediately, with optional
+concurrency control or result discarding.
+
 **Details**
 
 Use `concurrency` to control parallelism and `discard: true` to ignore results.
@@ -26,6 +31,6 @@ const program = Effect.gen(function*() {
 declare const replicateEffect: { (n: number, options?: { readonly concurrency?: Concurrency | undefined; readonly discard?: false | undefined; }): <A, E, R>(self: Effect<A, E, R>) => Effect<Array<A>, E, R>; (n: number, options: { readonly concurrency?: Concurrency | undefined; readonly discard: true; }): <A, E, R>(self: Effect<A, E, R>) => Effect<void, E, R>; <A, E, R>(self: Effect<A, E, R>, n: number, options?: { readonly concurrency?: Concurrency | undefined; readonly discard?: false | undefined; }): Effect<Array<A>, E, R>; <A, E, R>(self: Effect<A, E, R>, n: number, options: { readonly concurrency?: Concurrency | undefined; readonly discard: true; }): Effect<void, E, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L7656)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L7706)
 
 Since v2.0.0

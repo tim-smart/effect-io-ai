@@ -14,7 +14,7 @@ export interface toEncoded<S extends Top> extends
     S["Encoded"],
     never,
     never,
-    AST.AST,
+    SchemaAST.AST,
     toEncoded<S>,
     S["Encoded"],
     S["Encoded"],
@@ -29,6 +29,6 @@ export interface toEncoded<S extends Top> extends
 {}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L2090)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L2228)
 
 Since v4.0.0

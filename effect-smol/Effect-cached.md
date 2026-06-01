@@ -8,10 +8,8 @@ evaluations.
 
 **When to use**
 
-Use when you use this function when you have an expensive or time-consuming operation that
-you want to avoid repeating. The first evaluation will compute the result,
-and all following evaluations will immediately return the cached value,
-improving performance and reducing unnecessary work.
+Use when you need an expensive or time-consuming operation to be evaluated
+once and reused by later callers.
 
 **Details**
 
@@ -71,6 +69,6 @@ additional effect for manually invalidating the cached value.
 declare const cached: <A, E, R>(self: Effect<A, E, R>) => Effect<Effect<A, E, R>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L7006)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L7053)
 
 Since v2.0.0

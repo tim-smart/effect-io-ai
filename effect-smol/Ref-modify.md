@@ -7,8 +7,8 @@ Modifies the value of the Ref atomically using the given function.
 
 **When to use**
 
-Use to compute both a separate return value and the next stored value in one
-atomic update.
+Use to compute both a separate return value and the next stored `Ref` value
+in one atomic update.
 
 **Details**
 

@@ -7,7 +7,8 @@ Checks whether the MutableHashMap contains the specified key.
 
 **When to use**
 
-Use to test whether a key is present without reading its value.
+Use to test whether a key is present in a `MutableHashMap` without reading
+its value.
 
 **Example** (Checking for a key)
 
@@ -34,6 +35,6 @@ console.log(hasKey(map)) // true
 declare const has: { <K>(key: K): <V>(self: MutableHashMap<K, V>) => boolean; <K, V>(self: MutableHashMap<K, V>, key: K): boolean; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableHashMap.ts#L439)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableHashMap.ts#L440)
 
 Since v2.0.0

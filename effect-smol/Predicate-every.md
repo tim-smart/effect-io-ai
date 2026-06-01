@@ -11,8 +11,8 @@ Use when you have a dynamic list of predicates to apply.
 
 **Details**
 
-- Short-circuits on the first `false`.
-- Iterates the collection each time the predicate is called.
+Evaluation short-circuits on the first `false`. The collection is iterated
+each time the predicate is called.
 
 **Example** (All checks)
 
@@ -35,6 +35,6 @@ console.log(allChecks(2))
 declare const every: <A>(collection: Iterable<Predicate<A>>) => Predicate<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L1875)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L1880)
 
 Since v2.0.0

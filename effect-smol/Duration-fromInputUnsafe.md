@@ -5,6 +5,11 @@ Module: `Duration`<br />
 
 Decodes a `Duration.Input` into a `Duration`.
 
+**When to use**
+
+Use when the input has already been validated or comes from a trusted source
+and throwing is acceptable for invalid duration syntax.
+
 **Gotchas**
 
 If the input is not a valid `Duration.Input`, it throws an error.
@@ -26,6 +31,6 @@ const duration4 = Duration.fromInputUnsafe([2, 500_000_000]) // 2 seconds and 50
 declare const fromInputUnsafe: (input: Input) => Duration
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Duration.ts#L243)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Duration.ts#L248)
 
 Since v4.0.0

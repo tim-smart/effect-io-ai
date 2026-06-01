@@ -27,6 +27,6 @@ Effect.runPromise(program)
 declare const collect: <A, E, R>(self: Stream<A, E, R>) => Stream<Array<A>, E, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L9154)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L9244)
 
 Since v4.0.0

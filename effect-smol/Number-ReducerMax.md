@@ -29,6 +29,6 @@ The reducer starts from `-Infinity`, so reducing an empty collection returns
 declare const ReducerMax: Reducer.Reducer<number>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Number.ts#L883)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Number.ts#L887)
 
 Since v4.0.0

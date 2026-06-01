@@ -7,8 +7,8 @@ Defines the Anthropic Bash tool (2025-01-24 version).
 
 **When to use**
 
-Use when you need the model to execute bash commands and require the 2025-01-24
-version of the Anthropic computer-use beta.
+Use when you want the model to execute bash commands with the 2025-01-24
+Anthropic computer-use beta.
 
 **Details**
 

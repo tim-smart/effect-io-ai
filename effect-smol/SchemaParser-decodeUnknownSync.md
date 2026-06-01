@@ -8,7 +8,7 @@ Creates a synchronous decoder for `unknown` input.
 **When to use**
 
 Use to decode untrusted or dynamically typed input at a synchronous boundary
-where invalid data should be reported by throwing.
+where invalid data should throw an `Error` whose cause is `SchemaIssue.Issue`.
 
 **Details**
 
@@ -24,9 +24,9 @@ The returned function returns the decoded `Type` on success and throws an
 **Signature**
 
 ```ts
-declare const decodeUnknownSync: <S extends Schema.Decoder<unknown>>(schema: S, options?: AST.ParseOptions) => (input: unknown, options?: AST.ParseOptions) => S["Type"]
+declare const decodeUnknownSync: <S extends Schema.Decoder<unknown>>(schema: S, options?: SchemaAST.ParseOptions) => (input: unknown, options?: SchemaAST.ParseOptions) => S["Type"]
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaParser.ts#L536)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaParser.ts#L506)
 
 Since v3.10.0

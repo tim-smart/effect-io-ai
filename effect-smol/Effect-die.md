@@ -7,8 +7,8 @@ Creates an effect that terminates a fiber with a specified error.
 
 **When to use**
 
-Use when encountering unexpected conditions in your code that should
-not be handled as regular errors but instead represent unrecoverable defects.
+Use when you need an `Effect` to report an unrecoverable defect instead of a
+typed error.
 
 **Details**
 
@@ -45,6 +45,6 @@ Effect.runPromise(program).catch(console.error)
 declare const die: (defect: unknown) => Effect<never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L1665)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L1674)
 
 Since v2.0.0

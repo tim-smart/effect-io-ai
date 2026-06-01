@@ -5,6 +5,11 @@ Module: `Channel`<br />
 
 Merges multiple channels with specified concurrency and buffering options.
 
+**When to use**
+
+Use when channel outputs are themselves channels and multiple inner channels
+should run with configured concurrency and buffering.
+
 **Example** (Merging nested channels)
 
 ```ts
@@ -36,6 +41,6 @@ const mergedChannel = Channel.mergeAll({
 declare const mergeAll: { (options: { readonly concurrency: number | "unbounded"; readonly bufferSize?: number | undefined; readonly switch?: boolean | undefined; }): <OutElem, OutErr1, OutDone1, InElem1, InErr1, InDone1, Env1, OutErr, OutDone, InElem, InErr, InDone, Env>(channels: Channel<Channel<OutElem, OutErr1, OutDone1, InElem1, InErr1, InDone1, Env1>, OutErr, OutDone, InElem, InErr, InDone, Env>) => Channel<OutElem, OutErr1 | OutErr, OutDone, InElem & InElem1, InErr & InErr1, InDone & InDone1, Env1 | Env>; <OutElem, OutErr1, OutDone1, InElem1, InErr1, InDone1, Env1, OutErr, OutDone, InElem, InErr, InDone, Env>(channels: Channel<Channel<OutElem, OutErr1, OutDone1, InElem1, InErr1, InDone1, Env1>, OutErr, OutDone, InElem, InErr, InDone, Env>, options: { readonly concurrency: number | "unbounded"; readonly bufferSize?: number | undefined; readonly switch?: boolean | undefined; }): Channel<OutElem, OutErr1 | OutErr, OutDone, InElem & InElem1, InErr & InErr1, InDone & InDone1, Env1 | Env>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L5950)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L6005)
 
 Since v2.0.0

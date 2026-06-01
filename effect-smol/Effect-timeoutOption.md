@@ -8,9 +8,7 @@ Runs an effect with a time limit and represents only the timeout case as
 
 **When to use**
 
-Use when a timeout should be handled as absence. Use
-`timeout` when a timeout should fail the effect, and `timeoutOrElse` when
-you want to run a fallback effect.
+Use when a timeout of an `Effect` should be handled as `Option.none`.
 
 **Details**
 
@@ -58,6 +56,6 @@ Effect.runPromise(timedOutEffect).then(console.log)
 declare const timeoutOption: { (duration: Duration.Input): <A, E, R>(self: Effect<A, E, R>) => Effect<Option<A>, E, R>; <A, E, R>(self: Effect<A, E, R>, duration: Duration.Input): Effect<Option<A>, E, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L4536)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L4570)
 
 Since v3.1.0

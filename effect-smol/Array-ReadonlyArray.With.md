@@ -21,6 +21,6 @@ type With<S, A> = S extends NonEmptyReadonlyArray<any> ? NonEmptyArray<A>
     : Array<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L3424)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L3465)
 
 Since v2.0.0

@@ -10,7 +10,7 @@ The effect computes a return value and an optional new ref value;
 **When to use**
 
 Use to effectfully compute a return value while optionally updating the
-stored value.
+stored `SynchronizedRef` value.
 
 **See**
 
@@ -23,6 +23,6 @@ stored value.
 declare const modifySomeEffect: { <A, B, R, E>(fallback: B, pf: (a: A) => Effect.Effect<readonly [B, Option.Option<A>], E, R>): (self: SynchronizedRef<A>) => Effect.Effect<B, E, R>; <A, B, R, E>(self: SynchronizedRef<A>, pf: (a: A) => Effect.Effect<readonly [B, Option.Option<A>], E, R>): Effect.Effect<B, E, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SynchronizedRef.ts#L376)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SynchronizedRef.ts#L381)
 
 Since v2.0.0

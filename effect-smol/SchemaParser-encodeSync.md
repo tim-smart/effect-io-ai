@@ -9,7 +9,7 @@ Creates a synchronous encoder for input already typed as the schema's decoded
 **When to use**
 
 Use to encode already typed schema values synchronously when encoding failure
-should be reported by throwing an `Error`.
+should throw an `Error` whose cause is `SchemaIssue.Issue`.
 
 **Details**
 
@@ -19,16 +19,15 @@ an `Error` with the `SchemaIssue.Issue` in its `cause` on encoding failure.
 **See**
 
 - `encodeUnknownSync` for unknown input with the same throwing boundary
-- `encodeOption` for discarding failure details
 - `encodeResult` for returning schema issues as data
 - `encodeEffect` for effectful encoding that preserves service requirements
 
 **Signature**
 
 ```ts
-declare const encodeSync: <S extends Schema.Encoder<unknown>>(schema: S, options?: AST.ParseOptions) => (input: S["Type"], options?: AST.ParseOptions) => S["Encoded"]
+declare const encodeSync: <S extends Schema.Encoder<unknown>>(schema: S, options?: SchemaAST.ParseOptions) => (input: S["Type"], options?: SchemaAST.ParseOptions) => S["Encoded"]
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaParser.ts#L882)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaParser.ts#L823)
 
 Since v3.10.0

@@ -29,6 +29,6 @@ Effect.runPromise(program)
 declare const orDie: <A, E, R>(self: Stream<A, E, R>) => Stream<A, never, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L5994)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L6060)
 
 Since v2.0.0

@@ -7,7 +7,8 @@ Creates a `SynchronizedRef` synchronously from an initial value.
 
 **When to use**
 
-Use when synchronous construction is required outside an Effect workflow.
+Use when you need synchronous `SynchronizedRef` construction outside an
+Effect workflow.
 
 **Signature**
 
@@ -15,6 +16,6 @@ Use when synchronous construction is required outside an Effect workflow.
 declare const makeUnsafe: <A>(value: A) => SynchronizedRef<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SynchronizedRef.ts#L77)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SynchronizedRef.ts#L78)
 
 Since v4.0.0

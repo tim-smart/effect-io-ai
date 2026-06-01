@@ -7,7 +7,7 @@ Extracts the value from a `Some`, or returns `null` for `None`.
 
 **When to use**
 
-Use when interoping with APIs that use `null` for missing values
+Use when you need to pass absent `Option` values to APIs that expect `null`.
 
 **Details**
 
@@ -37,6 +37,6 @@ console.log(Option.getOrNull(Option.none()))
 declare const getOrNull: <A>(self: Option<A>) => A | null
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L1032)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L1037)
 
 Since v2.0.0

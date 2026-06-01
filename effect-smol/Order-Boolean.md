@@ -7,14 +7,11 @@ Order instance for booleans where `false` is considered less than `true`.
 
 **When to use**
 
-Use when when comparing booleans for sorting or searching
-- As a base for creating orders on types containing booleans
-- When implementing boolean-based comparisons
+Use when you need boolean ordering where `false` comes before `true`.
 
 **Details**
 
-- `false` is less than `true`
-- Equal values return `0`
+`false` is less than `true`, and equal values return `0`.
 
 **Example** (Boolean Ordering)
 
@@ -36,6 +33,6 @@ console.log(Order.Boolean(true, true)) // 0
 declare const Boolean: Order<boolean>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Order.ts#L289)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Order.ts#L277)
 
 Since v4.0.0

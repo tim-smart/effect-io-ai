@@ -16,9 +16,9 @@ are less than it.
 **Signature**
 
 ```ts
-declare const isLessThanDate: (exclusiveMaximum: globalThis.Date, annotations?: Annotations.Filter) => AST.Filter<globalThis.Date>
+declare const isLessThanDate: (exclusiveMaximum: globalThis.Date, annotations?: Annotations.Filter) => SchemaAST.Filter<globalThis.Date>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L7040)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L7255)
 
 Since v4.0.0

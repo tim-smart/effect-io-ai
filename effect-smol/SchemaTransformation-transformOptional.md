@@ -8,7 +8,8 @@ values, giving full control over missing-key handling.
 
 **When to use**
 
-Use when you need to produce or consume `Option.None` to represent absent keys.
+Use when you need a schema transformation to produce or consume `Option.None`
+for absent keys.
 - You are working with optional struct fields.
 
 **Details**
@@ -48,6 +49,6 @@ const schema = Schema.Struct({
 declare const transformOptional: <T, E>(options: { readonly decode: (input: Option.Option<E>) => Option.Option<T>; readonly encode: (input: Option.Option<T>) => Option.Option<E>; }) => Transformation<T, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L454)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L458)
 
 Since v4.0.0

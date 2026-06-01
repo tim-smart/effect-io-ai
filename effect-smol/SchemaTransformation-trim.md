@@ -8,13 +8,14 @@ Encode is passthrough (no change).
 
 **When to use**
 
-Use to normalize user input by stripping leading/trailing whitespace.
+Use when you need a schema transformation to normalize user input by
+stripping leading/trailing whitespace.
 
 **Details**
 
-- Decode: applies `String.prototype.trim()`.
-- Encode: passthrough (returns the string unchanged).
-- Not round-trippable if the original had whitespace.
+Decoding applies `String.prototype.trim()`. Encoding is passthrough and
+returns the string unchanged. This is not round-trippable if the original had
+whitespace.
 
 **Example** (Trimming on decode)
 
@@ -38,6 +39,6 @@ const Trimmed = Schema.String.pipe(
 declare const trim: () => Transformation<string, string>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L495)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L500)
 
 Since v4.0.0

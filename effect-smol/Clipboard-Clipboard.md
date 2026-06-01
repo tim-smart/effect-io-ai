@@ -5,6 +5,11 @@ Module: `Clipboard`<br />
 
 Defines the service interface for reading from, writing to, and clearing the browser clipboard.
 
+**When to use**
+
+Use when an application needs clipboard operations through an Effect service
+so browser failures stay in the error channel.
+
 **Details**
 
 `read` and `write` work with `ClipboardItem` arrays. `readString` and
@@ -32,6 +37,6 @@ export interface Clipboard {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/Clipboard.ts#L63)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/Clipboard.ts#L68)
 
 Since v4.0.0

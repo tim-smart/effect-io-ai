@@ -5,6 +5,11 @@ Module: `Effect`<br />
 
 Creates a scoped effect by providing access to the scope.
 
+**When to use**
+
+Use when resource acquisition needs direct access to the scope being created,
+for example to register finalizers manually.
+
 **Example** (Working with an explicit scope)
 
 ```ts
@@ -44,6 +49,6 @@ Effect.runPromise(program).then(console.log)
 declare const scopedWith: <A, E, R>(f: (scope: Scope) => Effect<A, E, R>) => Effect<A, E, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L6401)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L6450)
 
 Since v3.11.0

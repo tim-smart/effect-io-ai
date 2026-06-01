@@ -9,7 +9,7 @@ the schema.
 **When to use**
 
 Use to validate unknown input at runtime while narrowing the value with a
-TypeScript `asserts` predicate.
+TypeScript assertion signature.
 
 **Details**
 
@@ -42,6 +42,6 @@ try {
 declare const asserts: <S extends Top, I>(schema: S, input: I) => asserts input is I & S["Type"]
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L1219)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L1228)
 
 Since v4.0.0

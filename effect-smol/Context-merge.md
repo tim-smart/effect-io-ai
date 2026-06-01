@@ -7,8 +7,7 @@ Merges two `Context`s into one.
 
 **When to use**
 
-Use when combining two contexts. Use `mergeAll` when combining a
-variadic list of contexts.
+Use when you need to combine two contexts.
 
 **Details**
 

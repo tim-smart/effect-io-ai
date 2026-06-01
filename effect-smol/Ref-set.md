@@ -7,7 +7,7 @@ Sets the value of the Ref to the specified value.
 
 **When to use**
 
-Use to replace the current value with a known value.
+Use to replace the current `Ref` value with a known value.
 
 **Example** (Setting a value)
 

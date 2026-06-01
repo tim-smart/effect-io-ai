@@ -7,7 +7,7 @@ Retrieves the value at `key` from a struct.
 
 **When to use**
 
-Use to extract a single property in a pipeline.
+Use to extract a single property from a struct in a pipeline.
 
 **Details**
 

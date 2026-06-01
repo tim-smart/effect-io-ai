@@ -25,6 +25,6 @@ Effect.runPromise(program).catch(console.error)
 declare const interrupt: Effect<never, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L7173)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L7214)
 
 Since v2.0.0

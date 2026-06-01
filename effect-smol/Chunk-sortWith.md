@@ -38,6 +38,6 @@ console.log(Chunk.toArray(byLength)) // ["a", "ab", "abc"]
 declare const sortWith: { <A, B>(f: (a: A) => B, order: Order.Order<B>): (self: Chunk<A>) => Chunk<A>; <A, B>(self: Chunk<A>, f: (a: A) => B, order: Order.Order<B>): Chunk<A>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L1947)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L1982)
 
 Since v2.0.0

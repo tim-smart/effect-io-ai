@@ -8,8 +8,8 @@ be encoded.
 
 **When to use**
 
-Use when setting multiple trusted cookies and encoding failures should throw
-instead of being represented as `CookiesError` failures.
+Use when you need to set multiple trusted cookies and want encoding failures
+to throw instead of being represented as `CookiesError` failures.
 
 **Signature**
 
@@ -17,6 +17,6 @@ instead of being represented as `CookiesError` failures.
 declare const setCookiesUnsafe: { (cookies: Iterable<readonly [name: string, value: string, options?: Cookies.Cookie["options"]]>): (self: HttpServerResponse) => HttpServerResponse; (self: HttpServerResponse, cookies: Iterable<readonly [name: string, value: string, options?: Cookies.Cookie["options"]]>): HttpServerResponse; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpServerResponse.ts#L890)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpServerResponse.ts#L895)
 
 Since v4.0.0

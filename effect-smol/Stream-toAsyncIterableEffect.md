@@ -5,6 +5,11 @@ Module: `Stream`<br />
 
 Creates an effect that yields an `AsyncIterable` using the current services.
 
+**When to use**
+
+Use when the `AsyncIterable` should be created inside Effect with the current
+context supplying the stream's services.
+
 **Example** (Creating an AsyncIterable effect)
 
 ```ts
@@ -34,6 +39,6 @@ Effect.runPromise(program)
 declare const toAsyncIterableEffect: <A, E, R>(self: Stream<A, E, R>) => Effect.Effect<AsyncIterable<A>, never, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L11358)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L11473)
 
 Since v3.15.0

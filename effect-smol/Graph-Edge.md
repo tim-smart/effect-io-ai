@@ -7,8 +7,8 @@ Represents edge data containing source, target, and user data.
 
 **When to use**
 
-Use as the graph edge value returned by `getEdge` and `edges` when you need
-the source node, target node, and stored edge data together.
+Use as the graph edge value that carries source node, target node, and stored
+edge data together.
 
 **See**
 

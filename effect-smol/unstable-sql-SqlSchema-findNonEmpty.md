@@ -8,8 +8,8 @@ and fails with `NoSuchElementError` when the result set is empty.
 
 **When to use**
 
-Use when a query must return at least one row and an empty result should be
-treated as a failure.
+Use when you need to run a query that must return at least one row and treat
+an empty result as a failure.
 
 **See**
 

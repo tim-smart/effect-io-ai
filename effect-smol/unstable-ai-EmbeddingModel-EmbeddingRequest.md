@@ -7,8 +7,8 @@ Represents a tagged request used by request resolvers for embedding operations.
 
 **When to use**
 
-Use when building or calling a low-level embedding request resolver and you
-need a typed request for one input that resolves to `EmbedResponse`.
+Use when you need a typed request for one embedding input while building or
+calling a low-level embedding request resolver.
 
 **See**
 

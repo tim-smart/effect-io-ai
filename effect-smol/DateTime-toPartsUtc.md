@@ -29,6 +29,6 @@ console.log(parts)
 declare const toPartsUtc: (self: DateTime) => DateTime.PartsWithWeekday
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L1752)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L1783)
 
 Since v3.6.0

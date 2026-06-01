@@ -5,6 +5,11 @@ Module: `Scope`<br />
 
 Creates a closeable child scope synchronously and registers it with a parent scope.
 
+**When to use**
+
+Use when a child scope must be created synchronously and the caller controls
+both parent and child scope lifetimes.
+
 **Details**
 
 Closing the parent closes the child with the same exit value, and closing the
@@ -36,6 +41,6 @@ const program = Effect.gen(function*() {
 declare const forkUnsafe: (scope: Scope, finalizerStrategy?: "sequential" | "parallel") => Closeable
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Scope.ts#L500)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Scope.ts#L515)
 
 Since v4.0.0

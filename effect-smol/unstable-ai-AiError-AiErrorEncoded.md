@@ -11,6 +11,6 @@ The encoded (serialized) form of an `AiError`.
 type AiErrorEncoded = typeof AiError["Encoded"]
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AiError.ts#L1569)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AiError.ts#L1570)
 
 Since v4.0.0

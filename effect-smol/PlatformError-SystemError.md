@@ -7,8 +7,8 @@ Error data for a platform or system operation failure.
 
 **When to use**
 
-Use as the reason data for failures reported by a host platform or operating
-system when you need a normalized system error tag plus operation details.
+Use when you need normalized reason data for a platform or system operation
+failure, including the operation details.
 
 **Details**
 

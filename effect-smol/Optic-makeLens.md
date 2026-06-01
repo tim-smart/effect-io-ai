@@ -43,6 +43,6 @@ console.log(_first.replace("world", ["hello", 42]))
 declare const makeLens: <S, A>(get: (s: S) => A, replace: (a: A, s: S) => S) => Lens<S, A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Optic.ts#L267)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Optic.ts#L266)
 
 Since v4.0.0

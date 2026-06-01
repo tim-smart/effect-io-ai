@@ -7,7 +7,8 @@ Coerces a value to `bigint` using the global `BigInt()` constructor.
 
 **When to use**
 
-Use when you need to convert strings, numbers, or booleans to `bigint`.
+Use when you need a schema getter to convert a present string, number, or
+boolean value to `bigint`.
 
 **Details**
 
@@ -29,6 +30,6 @@ const toBigInt = SchemaGetter.BigInt<string>()
 declare const BigInt: <E extends string | number | bigint | boolean>() => Getter<bigint, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L826)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L834)
 
 Since v4.0.0

@@ -11,12 +11,9 @@ the console.
 Will use the appropriate console method (i.e. `console.log`, `console.error`,
 etc.) based upon the current `LogLevel`.
 
-- `Debug` -> `console.debug`
-- `Info` -> `console.info`
-- `Trace` -> `console.trace`
-- `Warn` -> `console.warn`
-- `Error` and `Fatal` -> `console.error`
-- Others -> `console.log`
+`Debug` uses `console.debug`, `Info` uses `console.info`, `Trace` uses
+`console.trace`, `Warn` uses `console.warn`, `Error` and `Fatal` use
+`console.error`, and all other levels use `console.log`.
 
 **Example** (Writing logs with level-based console methods)
 
@@ -45,6 +42,6 @@ const program = Effect.gen(function*() {
 declare const withLeveledConsole: <Message, Output>(self: Logger<Message, Output>) => Logger<Message, void>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Logger.ts#L427)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Logger.ts#L424)
 
 Since v3.8.0

@@ -12,8 +12,8 @@ before mutating the returned array.
 
 **Details**
 
-- Preserves `NonEmptyArray` in the return type.
-- Useful when you need a distinct reference (e.g. before mutating).
+The return type preserves `NonEmptyArray`. Use this when you need a distinct
+reference, for example before mutating the returned array.
 
 **Example** (Copying an array)
 
@@ -36,6 +36,6 @@ console.log(original === copied) // false
 declare const copy: { <A>(self: NonEmptyReadonlyArray<A>): NonEmptyArray<A>; <A>(self: ReadonlyArray<A>): Array<A>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L2847)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L2885)
 
 Since v2.0.0

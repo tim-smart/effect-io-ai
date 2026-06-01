@@ -36,6 +36,6 @@ assert.deepStrictEqual(BigDecimal.format(BigDecimal.fromStringUnsafe("-0.0000012
 declare const format: (n: BigDecimal) => string
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigDecimal.ts#L1533)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigDecimal.ts#L1535)
 
 Since v2.0.0

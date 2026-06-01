@@ -7,8 +7,7 @@ Makes a new pool of the specified fixed size.
 
 **When to use**
 
-Use to create a fixed-size pool when you know the exact number of resources
-needed upfront, without growth or shrinkage.
+Use when you need a fixed-size pool with no growth or shrinkage.
 
 **Details**
 
@@ -37,6 +36,6 @@ A `targetUtilization` of 0.5 will create new pool items when the existing items 
 declare const make: <A, E, R>(options: { readonly acquire: Effect.Effect<A, E, R>; readonly size: number; readonly concurrency?: number | undefined; readonly targetUtilization?: number | undefined; }) => Effect.Effect<Pool<A, E>, never, R | Scope.Scope>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Pool.ts#L257)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Pool.ts#L256)
 
 Since v2.0.0

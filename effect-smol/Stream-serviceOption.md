@@ -8,8 +8,8 @@ single element.
 
 **When to use**
 
-Use to emit an optional dependency as a stream element without requiring that
-dependency to be present.
+Use when you need a stream that emits an optional service from the context
+without requiring that service to be present.
 
 **Example** (Accessing an optional service as a stream)
 

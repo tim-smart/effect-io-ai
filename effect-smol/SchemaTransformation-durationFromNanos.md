@@ -8,13 +8,14 @@ Decodes a `bigint` (nanoseconds) into a `Duration` and encodes a
 
 **When to use**
 
-Use when working with nanosecond-precision timestamps or intervals.
+Use when you need a schema transformation for nanosecond-precision timestamps
+or intervals.
 
 **Details**
 
-- Decode: always succeeds, creating a Duration from nanoseconds.
-- Encode: fails with `InvalidValue` if the Duration cannot be represented
-  as a `bigint` (e.g. `Duration.infinity`).
+Decoding always succeeds and creates a `Duration` from nanoseconds. Encoding
+fails with `InvalidValue` if the `Duration` cannot be represented as a
+`bigint`, such as `Duration.infinity`.
 
 **Example** (Duration from nanoseconds)
 
@@ -36,6 +37,6 @@ const schema = Schema.BigInt.pipe(
 declare const durationFromNanos: Transformation<Duration.Duration, bigint, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L1017)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L1032)
 
 Since v4.0.0

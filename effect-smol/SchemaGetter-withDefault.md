@@ -7,7 +7,8 @@ Creates a getter that replaces `undefined` values with a default.
 
 **When to use**
 
-Use when a field may be `undefined` in the encoded input and should have a fallback.
+Use when you need a schema getter to provide a fallback for a field that may
+be `undefined` in the encoded input.
 
 **Details**
 
@@ -32,9 +33,9 @@ const withZero = SchemaGetter.withDefault(Effect.succeed(0))
 **Signature**
 
 ```ts
-declare const withDefault: <T, R = never>(defaultValue: Effect.Effect<T, Issue.Issue, R>) => Getter<T, T | undefined, R>
+declare const withDefault: <T, R = never>(defaultValue: Effect.Effect<T, SchemaIssue.Issue, R>) => Getter<T, T | undefined, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L705)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L711)
 
 Since v4.0.0

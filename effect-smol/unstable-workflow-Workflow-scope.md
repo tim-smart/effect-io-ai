@@ -11,6 +11,6 @@ Accesses the workflow scope, which is only closed when the workflow execution fu
 declare const scope: Effect.Effect<Scope.Scope, never, WorkflowInstance>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Workflow.ts#L753)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Workflow.ts#L783)
 
 Since v4.0.0

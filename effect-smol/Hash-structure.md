@@ -37,6 +37,6 @@ console.log(Hash.structure(obj1) === Hash.structure(obj3)) // true
 declare const structure: <A extends object>(o: A) => number
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Hash.ts#L511)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Hash.ts#L512)
 
 Since v2.0.0

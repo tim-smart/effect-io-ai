@@ -29,7 +29,7 @@ declare class AnyOf { constructor(
     /**
      * The schema that caused the issue.
      */
-    ast: AST.Union,
+    ast: SchemaAST.Union,
     /**
      * The input value that caused the issue.
      */
@@ -41,6 +41,6 @@ declare class AnyOf { constructor(
   ) }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaIssue.ts#L717)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaIssue.ts#L718)
 
 Since v4.0.0

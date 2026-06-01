@@ -8,7 +8,8 @@ type is a subtype of the decoded type.
 
 **When to use**
 
-Use when narrowing: the encoded side is more specific than the decoded side.
+Use when you need a no-op schema transformation whose encoded side is more
+specific than its decoded side.
 
 **Details**
 
@@ -34,6 +35,6 @@ const t = SchemaTransformation.passthroughSubtype<string, "a" | "b">()
 declare const passthroughSubtype: <T, E extends T>() => Transformation<T, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L836)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L845)
 
 Since v4.0.0

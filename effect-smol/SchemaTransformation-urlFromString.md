@@ -8,13 +8,13 @@ string.
 
 **When to use**
 
-Use to parse URL strings from user input or API responses.
+Use when you need a schema transformation to parse URL strings from user
+input or API responses.
 
 **Details**
 
-- Decode: calls `new URL(s)`. Fails with `InvalidValue` if the string
-  is not a valid URL.
-- Encode: returns `url.href`.
+Decoding calls `new URL(s)` and fails with `InvalidValue` if the string is
+not a valid URL. Encoding returns `url.href`.
 
 **Example** (URL from string)
 
@@ -37,6 +37,6 @@ const schema = Schema.String.pipe(
 declare const urlFromString: Transformation<URL, string, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L1337)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L1357)
 
 Since v4.0.0

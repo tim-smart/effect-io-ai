@@ -12,11 +12,9 @@ pending effects still use regular error recovery.
 
 **Details**
 
-Behavior:
-
-- For **Success effects**: Returns the success as-is (no error to catch)
-- For **Failure effects**: Applies the catch function immediately to the error
-- For **Pending effects**: Falls back to the regular `catch` behavior
+Success effects pass through unchanged because there is no error to catch.
+Failure effects apply the catch function immediately, and pending effects
+fall back to regular `catch` behavior.
 
 **Example** (Catching failures eagerly when possible)
 
@@ -51,6 +49,6 @@ const recoveredPending = Effect.catchEager(
 declare const catchEager: { <E, B, E2, R2>(f: (e: NoInfer<E>) => Effect<B, E2, R2>): <A, R>(self: Effect<A, E, R>) => Effect<A | B, E2, R | R2>; <A, E, R, B, E2, R2>(self: Effect<A, E, R>, f: (e: NoInfer<E>) => Effect<B, E2, R2>): Effect<A | B, E2, R | R2>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L15128)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L15188)
 
 Since v4.0.0

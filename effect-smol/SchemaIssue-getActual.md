@@ -7,8 +7,8 @@ Extracts the actual input value from any `Issue` variant.
 
 **When to use**
 
-Use when retrieve the offending value for logging or custom error rendering.
-- Uniformly access `actual` regardless of which issue variant you have.
+Use when you need to retrieve an `Issue`'s offending input value for logging
+or custom error rendering.
 
 **Details**
 
@@ -41,6 +41,6 @@ console.log(SchemaIssue.getActual(issue))
 declare const getActual: (issue: Issue) => Option.Option<unknown>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaIssue.ts#L845)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaIssue.ts#L846)
 
 Since v4.0.0

@@ -8,7 +8,8 @@ the new value if the effect succeeds, and returns the previous value.
 
 **When to use**
 
-Use when an effectful state transition must return the previous stored value.
+Use when you need an effectful `SynchronizedRef` state transition to return
+the previous stored value.
 
 **See**
 
@@ -24,6 +25,6 @@ Use when an effectful state transition must return the previous stored value.
 declare const getAndUpdateEffect: { <A, R, E>(f: (a: A) => Effect.Effect<A, E, R>): (self: SynchronizedRef<A>) => Effect.Effect<A, E, R>; <A, R, E>(self: SynchronizedRef<A>, f: (a: A) => Effect.Effect<A, E, R>): Effect.Effect<A, E, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SynchronizedRef.ts#L202)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SynchronizedRef.ts#L205)
 
 Since v2.0.0

@@ -7,7 +7,8 @@ Builds this layer and keeps it alive until the returned effect is interrupted.
 
 **When to use**
 
-Use when your entire application is a layer, such as an HTTP server.
+Use when you model your entire application as a layer, such as an HTTP
+server.
 
 **Details**
 
@@ -68,6 +69,6 @@ const application = appLayer.pipe(
 declare const launch: <RIn, E, ROut>(self: Layer<ROut, E, RIn>) => Effect<never, E, RIn>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L2207)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L2199)
 
 Since v2.0.0

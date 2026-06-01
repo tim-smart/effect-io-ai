@@ -7,8 +7,8 @@ Decrements a numeric MutableRef by 1 and returns the reference.
 
 **When to use**
 
-Use to decrement a numeric reference in place when you want the same
-reference back.
+Use when you need an in-place `MutableRef` decrement that returns the same
+`MutableRef`.
 
 **Example** (Decrementing numeric refs)
 

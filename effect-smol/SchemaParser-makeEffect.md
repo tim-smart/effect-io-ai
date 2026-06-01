@@ -8,7 +8,7 @@ Creates an effectful maker for the schema's decoded type side.
 **When to use**
 
 Use to construct decoded schema values in `Effect` while preserving
-construction issues in the error channel.
+construction failures as `SchemaIssue.Issue` values in the error channel.
 
 **Details**
 
@@ -19,7 +19,7 @@ runs type-side validation unless checks are disabled, and fails with a
 **Signature**
 
 ```ts
-declare const makeEffect: <S extends Schema.Top>(schema: S) => (input: S["~type.make.in"], options?: Schema.MakeOptions) => Effect.Effect<S["Type"], Issue.Issue>
+declare const makeEffect: <S extends Schema.Top>(schema: S) => (input: S["~type.make.in"], options?: Schema.MakeOptions) => Effect.Effect<S["Type"], SchemaIssue.Issue>
 ```
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaParser.ts#L103)

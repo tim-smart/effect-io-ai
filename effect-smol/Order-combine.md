@@ -8,15 +8,13 @@ and if the values are equal, then compares using the second `Order`.
 
 **When to use**
 
-Use when when you need multi-criteria comparison (e.g., sort by age, then by name)
-- When creating composite orders from simpler orders
-- When implementing lexicographic ordering
+Use when you need tie-breaking with exactly two orders.
 
 **Details**
 
-- First applies the first order; if the result is non-zero, returns that result
-- If the first order returns `0` (equal), applies the second order
-- Returns the first non-zero result, or `0` if both orders return `0`
+First applies the first order. If the result is non-zero, that result is
+returned; otherwise, the second order is applied. The result is the first
+non-zero comparison result, or `0` if both orders return `0`.
 
 **Example** (Combining Orders)
 
@@ -52,6 +50,6 @@ console.log(byAgeAndName(person1, person3)) // 1 (Alice (30) > Charlie (25))
 declare const combine: { <A>(that: Order<A>): (self: Order<A>) => Order<A>; <A>(self: Order<A>, that: Order<A>): Order<A>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Order.ts#L401)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Order.ts#L383)
 
 Since v2.0.0

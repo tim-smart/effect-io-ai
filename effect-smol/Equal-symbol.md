@@ -7,10 +7,8 @@ Defines the unique string identifier for the `Equal` interface.
 
 **When to use**
 
-Use when you use it as the computed property key when implementing custom equality on a
-  class or object literal.
-- Use it to check manually whether an object carries an equality method (prefer
-  `isEqual` instead).
+Use when you implement custom equality and need the computed property key for
+the equality method.
 
 **Details**
 
@@ -45,6 +43,6 @@ class UserId implements Equal.Equal {
 declare const symbol: "~effect/interfaces/Equal"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Equal.ts#L114)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Equal.ts#L112)
 
 Since v2.0.0

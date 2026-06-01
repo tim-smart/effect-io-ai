@@ -16,6 +16,6 @@ scoped RPC client for server-initiated requests back to that client.
 declare class McpServerClient
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L2181)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L2183)
 
 Since v4.0.0

@@ -7,7 +7,7 @@ Decodes a URI component encoded string using `decodeURIComponent`.
 
 **Details**
 
-- Fails with `Issue.InvalidValue` if the input contains malformed percent-encoding sequences.
+- Fails with `SchemaIssue.InvalidValue` if the input contains malformed percent-encoding sequences.
 
 **Example** (Decode a URI component)
 
@@ -28,6 +28,6 @@ const decode = SchemaGetter.decodeUriComponent<string>()
 declare const decodeUriComponent: <E extends string>() => Getter<string, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L1538)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L1552)
 
 Since v4.0.0

@@ -8,8 +8,8 @@ message was accepted.
 
 **When to use**
 
-Use when publishing from effectful code and the configured PubSub strategy
-should handle surplus messages.
+Use when you need to publish from effectful code and let the configured
+PubSub strategy handle surplus messages.
 
 **Details**
 
@@ -49,6 +49,6 @@ const program = Effect.gen(function*() {
 declare const publish: { <A>(value: A): (self: PubSub<A>) => Effect.Effect<boolean>; <A>(self: PubSub<A>, value: A): Effect.Effect<boolean>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PubSub.ts#L943)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PubSub.ts#L953)
 
 Since v2.0.0

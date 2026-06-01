@@ -200,8 +200,11 @@ export interface Optional<in out S, in out A> {
    *
    * @see {@link fromChecks} — standalone prism from checks
    */
-  check<S, A>(this: Prism<S, A>, ...checks: readonly [AST.Check<A>, ...Array<AST.Check<A>>]): Prism<S, A>
-  check<S, A>(this: Optional<S, A>, ...checks: readonly [AST.Check<A>, ...Array<AST.Check<A>>]): Optional<S, A>
+  check<S, A>(this: Prism<S, A>, ...checks: readonly [SchemaAST.Check<A>, ...Array<SchemaAST.Check<A>>]): Prism<S, A>
+  check<S, A>(
+    this: Optional<S, A>,
+    ...checks: readonly [SchemaAST.Check<A>, ...Array<SchemaAST.Check<A>>]
+  ): Optional<S, A>
 
   /**
    * Narrows the focus to a subtype `B` using a type guard.
@@ -272,11 +275,11 @@ export interface Optional<in out S, in out A> {
    *
    * @see `.refine()` — for arbitrary type guards
    */
-  tag<S, A extends { readonly _tag: AST.LiteralValue }, Tag extends A["_tag"]>(
+  tag<S, A extends { readonly _tag: SchemaAST.LiteralValue }, Tag extends A["_tag"]>(
     this: Prism<S, A>,
     tag: Tag
   ): Prism<S, Extract<A, { readonly _tag: Tag }>>
-  tag<S, A extends { readonly _tag: AST.LiteralValue }, Tag extends A["_tag"]>(
+  tag<S, A extends { readonly _tag: SchemaAST.LiteralValue }, Tag extends A["_tag"]>(
     this: Optional<S, A>,
     tag: Tag
   ): Optional<S, Extract<A, { readonly _tag: Tag }>>
@@ -489,6 +492,6 @@ export interface Optional<in out S, in out A> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Optic.ts#L585)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Optic.ts#L584)
 
 Since v4.0.0

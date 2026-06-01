@@ -7,7 +7,7 @@ Gets the current value of the Ref, updates it with the given function, and retur
 
 **When to use**
 
-Use to derive a new value while returning the previous value.
+Use to derive a new `Ref` value while returning the previous value.
 
 **Example** (Updating and returning the previous value)
 

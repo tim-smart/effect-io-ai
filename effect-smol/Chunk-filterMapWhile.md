@@ -32,6 +32,6 @@ console.log(Chunk.toArray(allNumbers)) // [1, 2, 3, 4]
 declare const filterMapWhile: { <A, B, X>(f: Filter.Filter<A, B, X>): (self: Chunk<A>) => Chunk<B>; <A, B, X>(self: Chunk<A>, f: Filter.Filter<A, B, X>): Chunk<B>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L1134)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L1159)
 
 Since v2.0.0

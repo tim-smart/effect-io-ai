@@ -7,7 +7,7 @@ Defines the global action flag for showing command version information.
 
 **When to use**
 
-Use to add a built-in `--version` flag to a command runner.
+Use to add a built-in `--version / -v` flag to a command runner.
 
 **Signature**
 

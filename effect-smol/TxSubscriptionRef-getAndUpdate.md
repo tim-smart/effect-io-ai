@@ -8,7 +8,8 @@ the new value to all subscribers.
 
 **When to use**
 
-Use to derive and publish a new value while returning the previous value.
+Use to derive and publish a new `TxSubscriptionRef` value while returning the
+previous value.
 
 **Example** (Getting and updating atomically)
 
@@ -34,6 +35,6 @@ const program = Effect.gen(function*() {
 declare const getAndUpdate: { <A>(f: (current: A) => A): (self: TxSubscriptionRef<A>) => Effect.Effect<A>; <A>(self: TxSubscriptionRef<A>, f: (current: A) => A): Effect.Effect<A>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxSubscriptionRef.ts#L373)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxSubscriptionRef.ts#L377)
 
 Since v3.10.0

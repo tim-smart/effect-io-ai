@@ -8,7 +8,8 @@ Converts a `MultiDocument<"draft-2020-12">` to a
 
 **When to use**
 
-Use when generating an OpenAPI 3.1 specification from internal schemas.
+Use when you need to emit an OpenAPI 3.1 multi-document from canonical JSON
+Schema documents.
 
 **Details**
 
@@ -47,6 +48,6 @@ console.log(openapi.schemas[0]) // { $ref: "#/components/schemas/User" }
 declare const toMultiDocumentOpenApi3_1: (multiDocument: MultiDocument<"draft-2020-12">) => MultiDocument<"openapi-3.1">
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/JsonSchema.ts#L742)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/JsonSchema.ts#L746)
 
 Since v4.0.0

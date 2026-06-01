@@ -5,6 +5,11 @@ Module: `DateTime`<br />
 
 Gets the current time using `Date.now`.
 
+**When to use**
+
+Use when synchronous wall-clock access outside an Effect program is
+acceptable and testability through the `Clock` service is not needed.
+
 **Details**
 
 This is a synchronous version of `now` that directly uses `Date.now()`
@@ -25,6 +30,6 @@ console.log(DateTime.formatIso(now))
 declare const nowUnsafe: LazyArg<Utc>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L909)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L924)
 
 Since v4.0.0

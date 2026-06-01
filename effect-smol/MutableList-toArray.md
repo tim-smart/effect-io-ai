@@ -21,6 +21,6 @@ unchanged.
 declare const toArray: <A>(self: MutableList<A>) => Array<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableList.ts#L875)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableList.ts#L885)
 
 Since v4.0.0

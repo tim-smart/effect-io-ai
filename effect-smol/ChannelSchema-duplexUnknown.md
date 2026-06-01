@@ -7,9 +7,9 @@ Wraps a bidirectional channel whose encoded chunks are typed as `unknown`.
 
 **When to use**
 
-Use when a bidirectional channel crosses an encoded boundary whose chunk types
-are intentionally erased, while callers should send and receive schema-typed
-chunks.
+Use when you need a bidirectional channel to cross an encoded boundary whose
+chunk types are intentionally erased, while callers send and receive
+schema-typed chunks.
 
 **Details**
 

@@ -7,7 +7,8 @@ Checks whether a value is a non-null object value that is not an array.
 
 **When to use**
 
-Use to narrow unknown input to a non-null, non-array object.
+Use to narrow unknown input to a non-null, non-array object with a
+`Predicate` guard.
 
 **Details**
 
@@ -35,6 +36,6 @@ console.log(Predicate.isObject([1, 2]))
 declare const isObject: (input: unknown) => input is { [x: PropertyKey]: unknown; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L1086)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L1088)
 
 Since v2.0.0

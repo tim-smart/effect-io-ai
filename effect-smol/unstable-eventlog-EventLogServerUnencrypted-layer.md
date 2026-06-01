@@ -8,10 +8,9 @@ event-group handler layer.
 
 **When to use**
 
-Use when you need a complete unencrypted event-log RPC endpoint for a trusted
-deployment, local development, tests, or a server-side event source, and you
-can provide storage, store mapping, authorization, an RPC protocol, and the
-event-group handler layer.
+Use when you need the full unencrypted event-log RPC server layer with
+storage, authorization, RPC protocol, and event-group handler dependencies
+supplied externally.
 
 **Details**
 
@@ -38,6 +37,6 @@ restarts.
 declare const layer: <Groups extends EventGroup.Any, E, R>(_schema: EventLog.EventLogSchema<Groups>, layer: Layer.Layer<EventGroup.ToService<Groups>, E, R>) => Layer.Layer<never, E, Exclude<R, EventLogServerUnencrypted | EventLog.Registry> | EventLogServerAuthorization | RpcServer.Protocol | Storage | StoreMapping>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventLogServerUnencrypted.ts#L834)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventLogServerUnencrypted.ts#L832)
 
 Since v4.0.0

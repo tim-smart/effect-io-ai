@@ -7,7 +7,7 @@ Sets the value of the Ref atomically to the specified value and returns the new 
 
 **When to use**
 
-Use when you want to set a value and immediately get it back in one
+Use when you want to set a `Ref` value and immediately get it back in one
 atomic operation.
 
 **Example** (Setting and returning the new value)

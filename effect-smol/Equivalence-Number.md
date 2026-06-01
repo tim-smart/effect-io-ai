@@ -7,12 +7,7 @@ Equivalence instance for numbers.
 
 **When to use**
 
-Use when an API needs an `Equivalence` instance for numeric equality where
-`NaN` equals `NaN`.
-
-**Details**
-
-`NaN` is considered equal to `NaN`.
+Use when you need numeric equality that treats NaN as equal to itself.
 
 **Example** (Comparing numbers)
 
@@ -30,6 +25,6 @@ console.log(Equivalence.Number(NaN, NaN)) // true
 declare const Number: Equivalence<number>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Equivalence.ts#L295)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Equivalence.ts#L284)
 
 Since v4.0.0

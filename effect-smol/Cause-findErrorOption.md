@@ -8,8 +8,8 @@ Returns the first typed error value `E` from a cause wrapped in
 
 **When to use**
 
-Use when this is the `Option`-returning variant of `findError` for code that
-does not need the original cause returned in a failed `Result`.
+Use when you need the first typed error value from a `Cause` as an `Option`,
+discarding the original cause.
 
 **Example** (extracting an error as Option)
 

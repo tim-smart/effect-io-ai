@@ -7,7 +7,7 @@ Decrements a numeric MutableRef by 1 and returns the previous value.
 
 **When to use**
 
-Use to read the current numeric value before decrementing it.
+Use to read the current numeric `MutableRef` value before decrementing it.
 
 **Example** (Reading before decrementing)
 
@@ -40,6 +40,6 @@ console.log(`Current: ${currentIndex}, Next: ${MutableRef.get(index)}`) // "Curr
 declare const getAndDecrement: (self: MutableRef<number>) => number
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableRef.ts#L340)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableRef.ts#L341)
 
 Since v2.0.0

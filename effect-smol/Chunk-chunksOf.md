@@ -7,7 +7,7 @@ Groups elements in chunks of up to `n` elements.
 
 **When to use**
 
-Use to divide a chunk into ordered, non-overlapping batches with at most `n`
+Use to divide a chunk into ordered, non-overlapping chunks with at most `n`
 elements each.
 
 **Details**
@@ -47,6 +47,6 @@ console.log(Chunk.toArray(chunked2).map(Chunk.toArray))
 declare const chunksOf: { (n: number): <A>(self: Chunk<A>) => Chunk<Chunk<A>>; <A>(self: Chunk<A>, n: number): Chunk<Chunk<A>>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L1334)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L1359)
 
 Since v2.0.0

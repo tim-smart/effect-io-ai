@@ -29,7 +29,6 @@ type Result = Types.MergeLeft<
 **See**
 
 - `MergeRight`
-- `MergeRecord`
 - `Simplify`
 
 **Signature**

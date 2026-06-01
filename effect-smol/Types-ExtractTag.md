@@ -7,7 +7,8 @@ Extracts a specific member of a tagged union by its `_tag` value.
 
 **When to use**
 
-Use to narrow a union down to a single variant.
+Use to select tagged-union members whose `_tag` matches a specific value in
+type-level code.
 
 **Details**
 

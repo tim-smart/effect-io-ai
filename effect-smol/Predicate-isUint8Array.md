@@ -7,11 +7,11 @@ Checks whether a value is a `Uint8Array`.
 
 **When to use**
 
-Use when you need to guard binary data at runtime.
+Use when you need a `Predicate` runtime guard for binary data.
 
 **Details**
 
-- Uses `instanceof Uint8Array`.
+Uses `instanceof Uint8Array`.
 
 **Example** (Guard Uint8Array)
 
@@ -34,6 +34,6 @@ console.log(Predicate.isUint8Array(data))
 declare const isUint8Array: (input: unknown) => input is Uint8Array
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L1281)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L1284)
 
 Since v2.0.0

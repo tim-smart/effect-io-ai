@@ -20,6 +20,6 @@ event types.
 type ResponseStreamEvent = typeof ResponseStreamEvent.Type
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiSchema.ts#L1159)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiSchema.ts#L1174)
 
 Since v4.0.0

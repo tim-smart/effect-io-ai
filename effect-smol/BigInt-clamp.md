@@ -11,9 +11,9 @@ Use to force a `bigint` into an inclusive range.
 
 **Details**
 
-- If the `bigint` is less than the `minimum` value, the function returns the `minimum` value.
-- If the `bigint` is greater than the `maximum` value, the function returns the `maximum` value.
-- Otherwise, it returns the original `bigint`.
+If the `bigint` is less than the minimum, the function returns the minimum.
+If the `bigint` is greater than the maximum, the function returns the
+maximum. Otherwise, it returns the original `bigint`.
 
 **Example** (Clamping a bigint to bounds)
 
@@ -38,6 +38,6 @@ assert.equal(clamp(6n), 5n)
 declare const clamp: { (options: { minimum: bigint; maximum: bigint; }): (self: bigint) => bigint; (self: bigint, options: { minimum: bigint; maximum: bigint; }): bigint; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigInt.ts#L551)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigInt.ts#L552)
 
 Since v2.0.0

@@ -11,8 +11,8 @@ Use to verify a value is a mutable array, narrowing its type to `Array<unknown>`
 
 **Details**
 
-- Acts as a type guard narrowing the input to `Array<unknown>`.
-- Delegates to `globalThis.Array.isArray`.
+Acts as a type guard narrowing the input to `Array<unknown>` and delegates to
+`globalThis.Array.isArray`.
 
 **Example** (Type-guarding an unknown value)
 
@@ -34,6 +34,6 @@ console.log(Array.isArray([1, 2, 3])) // true
 declare const isArray: { (self: unknown): self is Array<unknown>; <T>(self: T): self is Extract<T, ReadonlyArray<any>>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L862)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L872)
 
 Since v2.0.0

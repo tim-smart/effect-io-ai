@@ -7,13 +7,13 @@ Splits a string into an array of strings by a separator.
 
 **When to use**
 
-Use when an encoded string is a delimited list (e.g. CSV values).
+Use when you need a schema getter to split a present encoded string
+containing a delimited list, such as CSV values.
 
 **Details**
 
-- Splits by `separator` (default `,`).
-- An empty string produces an empty array (not `[""]`).
-- Pure, never fails.
+The getter is pure and never fails. It splits by `separator` (default `,`).
+An empty string produces an empty array, not `[""]`.
 
 **Example** (Split comma-separated string)
 
@@ -35,6 +35,6 @@ const splitComma = SchemaGetter.split<string>()
 declare const split: <E extends string>(options?: { readonly separator?: string | undefined; }) => Getter<ReadonlyArray<string>, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L1221)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L1235)
 
 Since v4.0.0

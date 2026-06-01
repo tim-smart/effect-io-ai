@@ -11,13 +11,10 @@ made to transactional values (i.e. TxRef) that occur within the transaction body
 If called inside an active transaction, `tx` composes with the current transaction and reuses
 its journal and retry state instead of creating a nested boundary.
 
-In Effect transactions are optimistic with retry, that means transactions are retried when:
-
-- the body of the transaction explicitely calls to `Effect.txRetry` and any of the
-  accessed transactional values changes.
-
-- any of the accessed transactional values change during the execution of the transaction
-  due to a different transaction committing before the current.
+Effect transactions are optimistic with retry. A transaction is retried when
+its body explicitly calls `Effect.txRetry` and any accessed transactional
+value changes, or when any accessed transactional value changes because a
+different transaction commits before the current one.
 
 The outermost `tx` call creates the transaction boundary and commits or rolls back the full
 composed transaction.
@@ -50,6 +47,6 @@ const program = Effect.gen(function*() {
 declare const tx: <A, E, R>(effect: Effect<A, E, R>) => Effect<A, E, Exclude<R, Transaction>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L14360)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L14431)
 
 Since v4.0.0

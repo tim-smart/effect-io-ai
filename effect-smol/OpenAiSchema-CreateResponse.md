@@ -11,6 +11,6 @@ Request options used to create an OpenAI Responses API response.
 type CreateResponse = typeof CreateResponse.Type
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiSchema.ts#L718)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiSchema.ts#L733)
 
 Since v4.0.0

@@ -7,7 +7,8 @@ Creates a sink containing the last value.
 
 **When to use**
 
-Use when consuming all upstream input and only the final element is needed.
+Use when you need to consume all upstream input and keep only the final
+element.
 
 **Details**
 
@@ -29,6 +30,6 @@ complete for a stream that does not end.
 declare const last: <In>() => Sink<Option.Option<In>, In>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Sink.ts#L1464)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Sink.ts#L1465)
 
 Since v2.0.0

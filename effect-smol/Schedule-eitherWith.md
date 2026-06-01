@@ -8,6 +8,11 @@ to recur, using the minimum of the two durations between recurrences and
 outputting the result of the combination of both schedule outputs using the
 specified `combine` function.
 
+**When to use**
+
+Use when either schedule may keep recurrence going and their outputs should be
+combined into a custom value.
+
 **Example** (Combining either schedule outputs)
 
 ```ts
@@ -45,6 +50,6 @@ const program = Effect.gen(function*() {
 declare const eitherWith: { <Output2, Input2, Error2, Env2, Output, Output3>(other: Schedule<Output2, Input2, Error2, Env2>, combine: (selfOutput: Output, otherOutput: Output2) => Output3): <Input, Error, Env>(self: Schedule<Output, Input, Error, Env>) => Schedule<Output3, Input & Input2, Error | Error2, Env | Env2>; <Output, Input, Error, Env, Output2, Input2, Error2, Env2, Output3>(self: Schedule<Output, Input, Error, Env>, other: Schedule<Output2, Input2, Error2, Env2>, combine: (selfOutput: Output, otherOutput: Output2) => Output3): Schedule<Output3, Input & Input2, Error | Error2, Env | Env2>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L1912)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L1937)
 
 Since v2.0.0

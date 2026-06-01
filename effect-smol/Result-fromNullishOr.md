@@ -7,9 +7,8 @@ Converts a possibly `null` or `undefined` value into a `Result`.
 
 **When to use**
 
-Use when an input may be `null` or `undefined` and absence should be
-represented as a `Failure` while present values should remain available as
-`Success`.
+Use when you need `null` or `undefined` input to become a `Failure` while
+present values remain available as `Success`.
 
 **Details**
 
@@ -41,6 +40,6 @@ console.log(Result.fromNullishOr(null, () => "fallback"))
 declare const fromNullishOr: { <A, E>(onNullish: (a: A) => E): (self: A) => Result<NonNullable<A>, E>; <A, E>(self: A, onNullish: (a: A) => E): Result<NonNullable<A>, E>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L469)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L473)
 
 Since v4.0.0

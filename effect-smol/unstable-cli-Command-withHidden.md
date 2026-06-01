@@ -8,8 +8,8 @@ Hides a subcommand from parent help output, shell completions, and
 
 **When to use**
 
-Use when you use this for experimental or internal subcommands that should be accepted but
-not advertised on the public CLI surface.
+Use when experimental or internal subcommands should be accepted but not advertised on
+the public CLI surface.
 
 **Example** (Hiding a subcommand)
 

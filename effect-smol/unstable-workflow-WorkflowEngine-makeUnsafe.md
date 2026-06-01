@@ -4,8 +4,16 @@ Module: `WorkflowEngine`<br />
 ## WorkflowEngine.makeUnsafe
 
 Builds a typed `WorkflowEngine` service from a low-level encoded
-implementation. This is unsafe because the implementation must correctly
-persist, resume, and encode workflow state.
+implementation.
+
+**When to use**
+
+Use when wiring a trusted low-level workflow engine implementation into the
+typed `WorkflowEngine` service.
+
+**Gotchas**
+
+The implementation must correctly persist, resume, and encode workflow state.
 
 **Signature**
 
@@ -13,6 +21,6 @@ persist, resume, and encode workflow state.
 declare const makeUnsafe: (options: Encoded) => WorkflowEngine["Service"]
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/WorkflowEngine.ts#L381)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/WorkflowEngine.ts#L389)
 
 Since v4.0.0

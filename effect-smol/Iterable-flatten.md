@@ -38,6 +38,6 @@ console.log(Array.from(flatWithEmpty)) // [1, 2, 3, 4]
 declare const flatten: <A>(self: Iterable<Iterable<A>>) => Iterable<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Iterable.ts#L1625)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Iterable.ts#L1634)
 
 Since v2.0.0

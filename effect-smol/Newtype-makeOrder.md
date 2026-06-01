@@ -7,7 +7,8 @@ Lifts an `Order` for the carrier type into an `Order` for the newtype.
 
 **When to use**
 
-Use when you need to sort or compare newtype values.
+Use when you need to sort newtype-wrapped values according to the ordering
+of the wrapped carrier value, without manually unwrapping.
 
 **Details**
 
@@ -36,6 +37,6 @@ ord(iso.set(1), iso.set(2)) // -1
 declare const makeOrder: <N extends Newtype.Any>(order: Order.Order<Newtype.Carrier<N>>) => Order.Order<N>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Newtype.ts#L299)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Newtype.ts#L301)
 
 Since v4.0.0

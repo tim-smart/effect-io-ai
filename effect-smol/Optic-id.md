@@ -7,7 +7,7 @@ Iso that focuses on the whole value unchanged.
 
 **When to use**
 
-Use when starting an optic chain with a focus on the whole value.
+Use when you need to start an optic chain with a focus on the whole value.
 
 **Details**
 
@@ -38,6 +38,6 @@ console.log(_x.get({ x: 42 }))
 declare const id: <S>() => Iso<S, S>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Optic.ts#L1549)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Optic.ts#L1552)
 
 Since v4.0.0

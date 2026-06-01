@@ -12,9 +12,8 @@ Use to build buckets of elements indexed by a computed string or symbol key.
 
 **Details**
 
-- Unlike `group`/`groupWith`, elements do not need to be
-  adjacent to be grouped together.
-- Key function must return a `string` or `symbol`.
+Unlike `group` and `groupWith`, elements do not need to be adjacent to be
+grouped together. The key function must return a `string` or `symbol`.
 
 **Example** (Grouping by a property)
 
@@ -43,6 +42,6 @@ console.log(result)
 declare const groupBy: { <A, K extends string | symbol>(f: (a: A) => K): (self: Iterable<A>) => Record<Record.ReadonlyRecord.NonLiteralKey<K>, NonEmptyArray<A>>; <A, K extends string | symbol>(self: Iterable<A>, f: (a: A) => K): Record<Record.ReadonlyRecord.NonLiteralKey<K>, NonEmptyArray<A>>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L3097)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L3133)
 
 Since v2.0.0

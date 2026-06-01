@@ -7,8 +7,8 @@ Creates a getter that applies a fallible, effectful transformation to present va
 
 **When to use**
 
-Use when the transformation may fail (e.g. parsing, validation).
-- The transformation needs Effect services or is async.
+Use when you need a schema getter for a transformation that may fail, require
+Effect services, or run asynchronously.
 
 **Details**
 
@@ -39,9 +39,9 @@ const safeParseInt = SchemaGetter.transformOrFail<number, string>(
 **Signature**
 
 ```ts
-declare const transformOrFail: <T, E, R = never>(f: (e: E, options: AST.ParseOptions) => Effect.Effect<T, Issue.Issue, R>) => Getter<T, E, R>
+declare const transformOrFail: <T, E, R = never>(f: (e: E, options: SchemaAST.ParseOptions) => Effect.Effect<T, SchemaIssue.Issue, R>) => Getter<T, E, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L608)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L612)
 
 Since v4.0.0

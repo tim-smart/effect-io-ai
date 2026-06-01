@@ -9,7 +9,7 @@ the current `Collector` while passing the value through unchanged.
 **Signature**
 
 ```ts
-declare const getterAddAll: <A>(f: (_: A) => Iterable<globalThis.Transferable>) => Getter.Getter<A, A>
+declare const getterAddAll: <A>(f: (_: A) => Iterable<globalThis.Transferable>) => SchemaGetter.Getter<A, A>
 ```
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Transferable.ts#L119)

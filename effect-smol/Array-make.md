@@ -7,9 +7,12 @@ Creates a `NonEmptyArray` from one or more elements.
 
 **When to use**
 
-Use when you have literal values and want a typed non-empty array.
-- The element type is inferred as the union of all arguments.
-- Always returns a `NonEmptyArray` since at least one argument is required.
+Use when you need to create a typed non-empty array from literal values.
+
+**Details**
+
+The element type is inferred as the union of all arguments. Because at least
+one argument is required, this always returns a `NonEmptyArray`.
 
 **Example** (Creating an array from values)
 
@@ -31,6 +34,6 @@ console.log(result) // [1, 2, 3]
 declare const make: <Elements extends NonEmptyArray<unknown>>(...elements: Elements) => NonEmptyArray<Elements[number]>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L216)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L219)
 
 Since v2.0.0

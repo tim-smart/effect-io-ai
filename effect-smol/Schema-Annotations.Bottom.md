@@ -43,7 +43,7 @@ export interface Bottom<T, TypeParameters extends ReadonlyArray<Top>> extends Do
      * filter/refinement instead.
      */
     readonly identifier?: string | undefined
-    readonly parseOptions?: AST.ParseOptions | undefined
+    readonly parseOptions?: SchemaAST.ParseOptions | undefined
     /**
      * Optional metadata used to identify or extend the filter with custom data.
      */
@@ -58,6 +58,6 @@ export interface Bottom<T, TypeParameters extends ReadonlyArray<Top>> extends Do
   }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L13321)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L13517)
 
 Since v4.0.0

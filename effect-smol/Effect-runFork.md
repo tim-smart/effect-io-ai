@@ -8,9 +8,7 @@ be observed or interrupted.
 
 **When to use**
 
-Use when an effect should start in the background and return a fiber that can
-be observed or interrupted. Prefer this when you do not need a `Promise` or
-synchronous result.
+Use when you need to start an effect in the background and receive a fiber.
 
 **Example** (Running an effect in the background)
 
@@ -39,6 +37,6 @@ setTimeout(() => {
 declare const runFork: <A, E>(effect: Effect<A, E, never>, options?: RunOptions | undefined) => Fiber<A, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L8766)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L8812)
 
 Since v2.0.0

@@ -8,8 +8,8 @@ to an ISO zoned string.
 
 **When to use**
 
-Use to define a schema transformation for ISO zoned date-time strings that
-decode to `DateTime.Zoned` and encode with `DateTime.formatIsoZoned`.
+Use when you need a schema transformation for ISO zoned date-time strings
+that decode to `DateTime.Zoned` and encode with `DateTime.formatIsoZoned`.
 
 **Details**
 
@@ -27,6 +27,6 @@ the input is not a valid zoned date-time. Encode uses
 declare const dateTimeZonedFromString: Transformation<DateTime.Zoned, string, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L1803)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L1829)
 
 Since v4.0.0

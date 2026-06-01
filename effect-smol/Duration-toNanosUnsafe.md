@@ -3,7 +3,12 @@ Module: `Duration`<br />
 
 ## Duration.toNanosUnsafe
 
-Gets the duration in nanoseconds as a bigint, throwing for infinite durations.
+Gets the duration in nanoseconds as a bigint.
+
+**When to use**
+
+Use when the duration is known to be finite and you need the nanosecond value
+as a `bigint`.
 
 **Gotchas**
 
@@ -28,6 +33,6 @@ console.log(nanos) // 2000000000n
 declare const toNanosUnsafe: (input: Input) => bigint
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Duration.ts#L934)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Duration.ts#L944)
 
 Since v4.0.0

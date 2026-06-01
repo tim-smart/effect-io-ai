@@ -11,10 +11,9 @@ Use to convert any `Iterable` (Set, Generator, etc.) into an array.
 
 **Details**
 
-- If the input is already an array, returns it **by reference** (no copy).
-- Otherwise, creates a new array from the iterable.
-- Use `copy` if you need a fresh array even when the input is already
-  an array.
+If the input is already an array, this returns it by reference without
+copying. Otherwise, it creates a new array from the iterable. Use `copy` if
+you need a fresh array even when the input is already an array.
 
 **Example** (Converting a Set to an array)
 
@@ -36,6 +35,6 @@ console.log(result) // [1, 2, 3]
 declare const fromIterable: <A>(collection: Iterable<A>) => Array<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L365)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L379)
 
 Since v2.0.0

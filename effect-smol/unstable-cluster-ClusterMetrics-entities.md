@@ -6,6 +6,11 @@ Module: `ClusterMetrics`<br />
 Creates a gauge tracking the number of active entity instances for each entity type on
 the current runner.
 
+**When to use**
+
+Use when instrumenting runner-local entity counts and tagging them by entity
+type for cluster dashboards.
+
 **Details**
 
 Bigint gauge named `effect_cluster_entities`, updated with the entity type as
@@ -27,6 +32,6 @@ across runners and expect up to roughly one polling interval of lag.
 declare const entities: Metric.Gauge<bigint>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ClusterMetrics.ts#L48)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ClusterMetrics.ts#L53)
 
 Since v4.0.0

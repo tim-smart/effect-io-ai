@@ -8,7 +8,8 @@ Adds a named field to the do-notation accumulator by computing a pure
 
 **When to use**
 
-Use to add a pure computed field to a do-notation accumulator.
+Use when you need to add a derived field that cannot fail inside a
+do-notation pipeline.
 
 **Details**
 
@@ -41,6 +42,6 @@ console.log(result)
 declare const let: { <N extends string, R extends object, B>(name: Exclude<N, keyof R>, f: (r: NoInfer<R>) => B): <L>(self: Result<R, L>) => Result<{ [K in N | keyof R]: K extends keyof R ? R[K] : B; }, L>; <R extends object, L, N extends string, B>(self: Result<R, L>, name: Exclude<N, keyof R>, f: (r: NoInfer<R>) => B): Result<{ [K in N | keyof R]: K extends keyof R ? R[K] : B; }, L>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L1793)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L1811)
 
 Since v2.0.0

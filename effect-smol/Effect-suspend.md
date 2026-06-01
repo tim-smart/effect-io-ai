@@ -7,14 +7,16 @@ Creates an `Effect` lazily, delaying construction until it is needed.
 
 **When to use**
 
-Use when you need to defer the evaluation of an effect until it is required. This is particularly useful for optimizing expensive computations, managing circular dependencies, or resolving type inference issues.
+Use when you need to defer the evaluation of an effect until it is required.
 
 **Details**
 
-`suspend` takes a thunk that represents the effect and wraps it in a suspended effect. This means the effect will not be created until it is explicitly needed, which is helpful in various scenarios:
-- **Lazy Evaluation**: Helps optimize performance by deferring computations, especially when the effect might not be needed, or when its computation is expensive. This also ensures that any side effects or scoped captures are re-executed on each invocation.
-- **Handling Circular Dependencies**: Useful in managing circular dependencies, such as recursive functions that need to avoid eager evaluation to prevent stack overflow.
-- **Unifying Return Types**: Can help TypeScript unify return types in situations where multiple branches of logic return different effects, simplifying type inference.
+`suspend` takes a thunk that represents an effect and delays creating it
+until the suspended effect is evaluated. This is useful for optimizing
+expensive computations, managing circular dependencies such as recursive
+functions, and helping TypeScript unify return types when branches construct
+different effects. Any side effects or scoped captures inside the thunk are
+re-executed on each invocation.
 
 **Example** (Lazily evaluating side effects)
 

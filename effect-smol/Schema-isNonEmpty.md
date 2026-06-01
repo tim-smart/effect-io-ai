@@ -21,9 +21,9 @@ constraint to ensure generated strings or arrays are non-empty.
 **Signature**
 
 ```ts
-declare const isNonEmpty: (annotations?: Annotations.Filter) => AST.Filter<{ readonly length: number; }>
+declare const isNonEmpty: (annotations?: Annotations.Filter) => SchemaAST.Filter<{ readonly length: number; }>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L7413)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L7628)
 
 Since v4.0.0

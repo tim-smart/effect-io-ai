@@ -7,7 +7,8 @@ Appends a single element to the end of a tuple.
 
 **When to use**
 
-Use to add one element to the end of a tuple while preserving tuple types.
+Use when you need the appended value to remain part of the tuple's type-level
+shape and preserve literal element positions.
 
 **Details**
 
@@ -32,6 +33,6 @@ console.log(result) // [1, 2, "end"]
 declare const appendElement: { <const E>(element: E): <const T extends ReadonlyArray<unknown>>(self: T) => [...T, E]; <const T extends ReadonlyArray<unknown>, const E>(self: T, element: E): [...T, E]; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tuple.ts#L267)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tuple.ts#L268)
 
 Since v2.0.0

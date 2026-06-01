@@ -7,16 +7,13 @@ Creates an `Order` for structs by applying the given `Order`s to each property i
 
 **When to use**
 
-Use when when comparing objects with multiple properties
-- When you need multi-field comparison for structs
-- When creating orders for complex data types
+Use when you need multi-field ordering for objects with known properties.
 
 **Details**
 
-- Compares structs field-by-field in the order of keys in the fields object
-- Stops at the first non-zero comparison result
-- Returns `0` only if all fields are equal
-- Field order matters: earlier fields take precedence
+Compares structs field-by-field in the key order of the fields object and
+stops at the first non-zero comparison result. Field order matters: earlier
+fields take precedence. The result is `0` only if all fields are equal.
 
 **Example** (Struct Ordering)
 
@@ -48,6 +45,6 @@ console.log(personOrder(person1, person1)) // 0
 declare const Struct: <const R extends { readonly [x: string]: Order<any>; }>(fields: R) => Order<{ [K in keyof R]: [R[K]] extends [Order<infer A>] ? A : never; }>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Order.ts#L721)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Order.ts#L686)
 
 Since v4.0.0

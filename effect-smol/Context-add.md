@@ -7,8 +7,7 @@ Adds a service to a given `Context`.
 
 **When to use**
 
-Use when you always have a service value to store. Use `addOrOmit`
-when the value is optional and a missing value should remove the service.
+Use when you need to store a known service value in a `Context`.
 
 **Details**
 
@@ -45,6 +44,6 @@ assert.deepStrictEqual(Context.get(context, Timeout), { TIMEOUT: 5000 })
 declare const add: { <I, S>(key: Key<I, S>, service: Types.NoInfer<S>): <Services>(self: Context<Services>) => Context<Services | I>; <Services, I, S>(self: Context<Services>, key: Key<I, S>, service: Types.NoInfer<S>): Context<Services | I>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Context.ts#L722)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Context.ts#L725)
 
 Since v2.0.0

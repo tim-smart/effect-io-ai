@@ -7,16 +7,14 @@ Represents a total ordering for values of type `A`.
 
 **When to use**
 
-Use when when you need to define how values of a type should be compared
-- When implementing sorting, searching, or ordered data structures
-- When composing multiple comparison criteria
+Use when you need to define how values of a type are compared.
 
 **Details**
 
-- Returns `-1` if the first value is less than the second
-- Returns `0` if the values are equal according to this ordering
-- Returns `1` if the first value is greater than the second
-- Must satisfy total ordering laws (totality, antisymmetry, transitivity)
+An order returns `-1` when the first value is less than the second, `0` when
+the values are equal according to this ordering, and `1` when the first value
+is greater than the second. It must satisfy total ordering laws: totality,
+antisymmetry, and transitivity.
 
 **Example** (Custom Order)
 
@@ -47,6 +45,6 @@ export interface Order<in A> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Order.ts#L123)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Order.ts#L121)
 
 Since v2.0.0

@@ -7,13 +7,13 @@ Creates a getter that transforms the full `Option` — both present and absent v
 
 **When to use**
 
-Use when you need to handle both `Some` and `None` cases.
-- You want to turn a present value into absent, or vice versa.
+Use when you need a schema getter to handle both `Some` and `None` cases.
 
 **Details**
 
-- Pure, never fails.
-- Receives the full `Option<E>` and must return `Option<T>`.
+The getter is pure and never fails. It receives the full `Option<E>` and
+must return `Option<T>`, so it can turn a present value into absent or an
+absent value into present.
 
 **Example** (Filter out empty strings)
 
@@ -36,6 +36,6 @@ const skipEmpty = SchemaGetter.transformOptional<string, string>((o) =>
 declare const transformOptional: <T, E>(f: (oe: Option.Option<E>) => Option.Option<T>) => Getter<T, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L643)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L647)
 
 Since v4.0.0

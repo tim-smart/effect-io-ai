@@ -5,6 +5,11 @@ Module: `SchemaRepresentation`<br />
 
 A named reference to a definition in the `References` map.
 
+**When to use**
+
+Use when a representation should point to a named definition instead of
+embedding the definition inline.
+
 **Details**
 
 `$ref` is the key into `Document.references` or `MultiDocument.references`.
@@ -29,6 +34,6 @@ export interface Reference {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaRepresentation.ts#L173)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaRepresentation.ts#L178)
 
 Since v4.0.0

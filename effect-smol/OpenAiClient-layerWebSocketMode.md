@@ -17,7 +17,8 @@ This only works with the following WebSocket constructor layers:
 - `NodeSocket.layerWebSocketConstructorWS`
 - `BunSocket.layerWebSocketConstructor`
 
-This is because it needs to use non-standard options for setting the Authorization header.
+These constructor layers support the non-standard options needed to set the
+Authorization header.
 
 **See**
 
@@ -29,6 +30,6 @@ This is because it needs to use non-standard options for setting the Authorizati
 declare const layerWebSocketMode: Layer.Layer<OpenAiSocket | ResponseIdTracker.ResponseIdTracker, never, OpenAiClient | Socket.WebSocketConstructor>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L751)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L752)
 
 Since v4.0.0

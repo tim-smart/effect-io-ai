@@ -37,6 +37,6 @@ const validSchedule = satisfiesLogger(LoggerSchedule)
 declare const satisfiesServicesType: <T>() => <Env extends T, Output = never, Input = unknown, Error = never>(self: Schedule<Output, Input, Error, Env>) => Schedule<Output, Input, Error, Env>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L3605)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L3617)
 
 Since v4.0.0

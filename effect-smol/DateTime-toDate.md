@@ -30,6 +30,6 @@ console.log(DateTime.toDate(zoned).toISOString())
 declare const toDate: (self: DateTime) => Date
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L1591)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L1622)
 
 Since v3.6.0

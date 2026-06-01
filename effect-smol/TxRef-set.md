@@ -7,7 +7,7 @@ Sets the value of the `TxRef`.
 
 **When to use**
 
-Use to replace the value of a transactional reference.
+Use to replace the value of a `TxRef`.
 
 **Example** (Setting transactional references)
 

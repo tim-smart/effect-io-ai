@@ -7,7 +7,7 @@ Parses a raw Draft-2020-12 JSON Schema into a `Document<"draft-2020-12">`.
 
 **When to use**
 
-Use when you already have a schema in Draft-2020-12 format.
+Use when you already have a raw JSON Schema object in Draft-2020-12 format.
 
 **Details**
 

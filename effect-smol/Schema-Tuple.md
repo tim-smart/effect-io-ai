@@ -14,7 +14,7 @@ export interface Tuple<Elements extends Tuple.Elements> extends
     Tuple.Encoded<Elements>,
     Tuple.DecodingServices<Elements>,
     Tuple.EncodingServices<Elements>,
-    AST.Arrays,
+    SchemaAST.Arrays,
     Tuple<Elements>,
     Tuple.MakeIn<Elements>,
     Tuple.Iso<Elements>
@@ -46,6 +46,6 @@ export interface Tuple<Elements extends Tuple.Elements> extends
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L3646)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L3840)
 
 Since v3.10.0

@@ -8,16 +8,12 @@ The resulting `Order` compares using each `Order` in sequence until a non-zero r
 
 **When to use**
 
-Use when when you have a variable number of orders to combine
-- When combining orders from a collection or array
-- When implementing dynamic multi-criteria sorting
+Use when you need tie-breaking across a variable number of orders.
 
 **Details**
 
-- Applies orders in iteration order
-- Returns the first non-zero result from any order
-- Returns `0` only if all orders return `0`
-- Short-circuits on the first non-zero result
+Applies orders in iteration order and short-circuits on the first non-zero
+result. It returns `0` only if all orders return `0`.
 
 **Example** (Combining Multiple Orders)
 
@@ -52,6 +48,6 @@ console.log(combinedOrder(person1, person2)) // -1 (Same age, Alice < Bob)
 declare const combineAll: <A>(collection: Iterable<Order<A>>) => Order<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Order.ts#L491)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Order.ts#L467)
 
 Since v2.0.0

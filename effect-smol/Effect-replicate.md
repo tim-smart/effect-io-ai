@@ -7,9 +7,8 @@ Returns an array of `n` identical effects.
 
 **When to use**
 
-Use to create an array containing the same effect multiple times when you
-want to pass those effects to another collector or control execution
-separately.
+Use when you need an array of identical effect values without running them
+yet.
 
 **Details**
 
@@ -26,6 +25,6 @@ This only creates the array of effects. It does not run or collect them.
 declare const replicate: { (n: number): <A, E, R>(self: Effect<A, E, R>) => Array<Effect<A, E, R>>; <A, E, R>(self: Effect<A, E, R>, n: number): Array<Effect<A, E, R>>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L7630)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L7675)
 
 Since v2.0.0

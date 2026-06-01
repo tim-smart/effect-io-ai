@@ -9,7 +9,8 @@ function returns `Option.some`, the ref is updated; if it returns
 
 **When to use**
 
-Use to return the previous value while applying a pure conditional update.
+Use to return the previous `SynchronizedRef` value while applying a pure
+conditional update.
 
 **See**
 
@@ -22,6 +23,6 @@ Use to return the previous value while applying a pure conditional update.
 declare const getAndUpdateSome: { <A>(pf: (a: A) => Option.Option<A>): (self: SynchronizedRef<A>) => Effect.Effect<A>; <A>(self: SynchronizedRef<A>, pf: (a: A) => Option.Option<A>): Effect.Effect<A>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SynchronizedRef.ts#L232)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SynchronizedRef.ts#L236)
 
 Since v2.0.0

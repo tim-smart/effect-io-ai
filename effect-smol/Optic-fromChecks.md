@@ -42,9 +42,9 @@ console.log(Result.isFailure(posInt.getResult(-1)))
 **Signature**
 
 ```ts
-declare const fromChecks: <T>(checks_0: AST.Check<T>, ...checks: Array<AST.Check<T>>) => Prism<T, T>
+declare const fromChecks: <T>(checks_0: SchemaAST.Check<T>, ...checks: Array<SchemaAST.Check<T>>) => Prism<T, T>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Optic.ts#L399)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Optic.ts#L398)
 
 Since v4.0.0

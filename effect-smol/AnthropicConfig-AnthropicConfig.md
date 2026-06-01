@@ -7,8 +7,8 @@ Service tag for Anthropic client configuration overrides, such as transformation
 
 **When to use**
 
-Use when a layer or integration needs to provide or read Anthropic client
-configuration through Effect's context.
+Use when you need to provide or read Anthropic client configuration through
+Effect's context from a layer or integration.
 
 **See**
 

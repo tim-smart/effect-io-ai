@@ -7,8 +7,8 @@ Context reference for the metric registry in the current context.
 
 **When to use**
 
-Use to provide a custom metric registry when a program or test needs metrics
-isolated from the default registry.
+Use when you need a custom metric registry for an isolated program or test
+instead of the default registry.
 
 **Details**
 

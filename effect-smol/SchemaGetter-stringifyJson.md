@@ -7,13 +7,14 @@ Stringifies a present value using `JSON.stringify`.
 
 **When to use**
 
-Use when a decoded value needs to be serialized to JSON text during encoding.
+Use when you need a schema getter to serialize a present decoded value to
+JSON text during encoding.
 
 **Details**
 
 - Skips `None` inputs.
 - On thrown stringify failures, such as circular references, fails with
-  `Issue.InvalidValue`.
+  `SchemaIssue.InvalidValue`.
 - Supports optional `replacer` and `space` options, matching
   `JSON.stringify`.
 - If `JSON.stringify` returns `undefined`, such as for `undefined`,
@@ -39,6 +40,6 @@ const stringify = SchemaGetter.stringifyJson()
 declare const stringifyJson: (options?: StringifyJsonOptions) => Getter<string, unknown>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L1102)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L1113)
 
 Since v4.0.0

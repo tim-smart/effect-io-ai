@@ -8,9 +8,8 @@ registered event handlers.
 
 **When to use**
 
-Use to construct the unencrypted event-log server service directly when you
-already provide `Storage` and an event-log `Registry` and want to supply the
-service yourself.
+Use when you need the unencrypted event-log server service from provided
+`Storage` and an event-log `Registry`.
 
 **Details**
 
@@ -35,6 +34,6 @@ schema passed to `makeWrite`; it does not report that case as a typed failure.
 declare const make: Effect.Effect<{ readonly makeWrite: <Groups extends EventGroup.Any>(schema: EventLog.EventLogSchema<Groups>) => <Tag extends EventGroup.Events<Groups>["tag"], Event extends Event.Any = Event.WithTag<EventGroup.Events<Groups>, Tag>>(options: { readonly storeId: StoreId; readonly event: Tag; readonly payload: Event.Payload<Event>; }) => Effect.Effect<Event.Success<Event>, EventLogServerStoreError | Event.Error<Event>>; }, never, Storage | EventLog.Registry>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventLogServerUnencrypted.ts#L727)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventLogServerUnencrypted.ts#L726)
 
 Since v4.0.0

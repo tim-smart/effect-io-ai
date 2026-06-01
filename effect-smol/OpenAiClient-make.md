@@ -7,8 +7,7 @@ Constructs an OpenAI-compatible client service from explicit options.
 
 **When to use**
 
-Use to construct the OpenAI-compatible client service inside an effect when
-you need the service value directly.
+Use when you need the OpenAI-compatible client service value inside an effect.
 
 **Details**
 
@@ -33,6 +32,6 @@ run, after the `transformClient` option supplied to `make`.
 declare const make: (options: Options) => Effect.Effect<Service, never, HttpClient.HttpClient>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/OpenAiClient.ts#L149)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/OpenAiClient.ts#L148)
 
 Since v4.0.0

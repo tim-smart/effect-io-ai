@@ -46,6 +46,6 @@ const processingLogger = Logger.map(Logger.formatStructured, (output) => {
 declare const formatStructured: Logger<unknown, { readonly level: string; readonly fiberId: string; readonly timestamp: string; readonly message: unknown; readonly cause: string | undefined; readonly annotations: Record<string, unknown>; readonly spans: Record<string, number>; }>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Logger.ts#L703)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Logger.ts#L700)
 
 Since v4.0.0

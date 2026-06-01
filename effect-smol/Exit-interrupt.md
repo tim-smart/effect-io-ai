@@ -7,13 +7,12 @@ Creates a failed Exit representing fiber interruption.
 
 **When to use**
 
-Use to signal that a fiber was interrupted
+Use to signal that a fiber was interrupted.
 
 **Details**
 
-- Optionally pass a fiber ID to identify which fiber was interrupted
-
-Returns a `Failure<never>` with an `Interrupt` cause.
+Optionally pass a fiber ID to identify which fiber was interrupted. Returns
+a `Failure<never>` with an `Interrupt` cause.
 
 **Example** (Creating an interruption Exit)
 

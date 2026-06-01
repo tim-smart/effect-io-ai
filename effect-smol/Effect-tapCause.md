@@ -6,6 +6,11 @@ Module: `Effect`<br />
 Runs an effectful operation with the full `Cause` when the source effect
 fails.
 
+**When to use**
+
+Use when failure observation needs typed failures, defects, and interruptions
+rather than only the typed error value.
+
 **Details**
 
 Use this to log or inspect typed failures, defects, and interruptions. When
@@ -35,6 +40,6 @@ Effect.runPromiseExit(program).then(console.log)
 declare const tapCause: { <E, X, E2, R2>(f: (cause: Cause.Cause<NoInfer<E>>) => Effect<X, E2, R2>): <A, R>(self: Effect<A, E, R>) => Effect<A, E | E2, R2 | R>; <A, E, R, X, E2, R2>(self: Effect<A, E, R>, f: (cause: Cause.Cause<E>) => Effect<X, E2, R2>): Effect<A, E | E2, R | R2>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L3746)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L3775)
 
 Since v4.0.0

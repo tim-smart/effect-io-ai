@@ -5,6 +5,11 @@ Module: `EntityResource`<br />
 
 Context service for a Scope that is only closed when the resource is explicitly closed.
 
+**When to use**
+
+Use when a cluster entity resource needs a scope that survives restarts and
+closes only through the resource lifecycle.
+
 **Gotchas**
 
 It is not closed during restarts, due to shard movement or node shutdowns.
@@ -15,6 +20,6 @@ It is not closed during restarts, due to shard movement or node shutdowns.
 declare class CloseScope
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EntityResource.ts#L81)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EntityResource.ts#L86)
 
 Since v4.0.0

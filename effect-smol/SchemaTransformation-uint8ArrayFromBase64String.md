@@ -8,13 +8,13 @@ Decodes a Base64-encoded `string` into a `Uint8Array` and encodes a
 
 **When to use**
 
-Use when handling binary data transmitted as Base64 strings (e.g. file uploads,
-  API payloads).
+Use when you need a schema transformation for binary data transmitted as
+Base64 strings (e.g. file uploads, API payloads).
 
 **Details**
 
-- Decode: parses the Base64 string into bytes.
-- Encode: encodes the byte array as a Base64 string.
+Decoding parses the Base64 string into bytes. Encoding writes the byte array
+as a Base64 string.
 
 **Example** (Uint8Array from Base64)
 
@@ -37,6 +37,6 @@ const schema = Schema.String.pipe(
 declare const uint8ArrayFromBase64String: Transformation<Uint8Array<ArrayBufferLike>, string, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L1406)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L1427)
 
 Since v4.0.0

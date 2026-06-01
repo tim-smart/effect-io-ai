@@ -27,6 +27,6 @@ const drainedChannel = Channel.drain(sourceChannel)
 declare const drain: <OutElem, OutErr, OutDone, InElem, InErr, InDone, Env>(self: Channel<OutElem, OutErr, OutDone, InElem, InErr, InDone, Env>) => Channel<never, OutErr, OutDone, InElem, InErr, InDone, Env>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L3041)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L3061)
 
 Since v2.0.0

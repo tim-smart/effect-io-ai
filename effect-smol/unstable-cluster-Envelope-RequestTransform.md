@@ -9,7 +9,7 @@ request envelopes back to their raw representation.
 **Signature**
 
 ```ts
-declare const RequestTransform: Transformation.Transformation<Request.Any, any, never, never>
+declare const RequestTransform: SchemaTransformation.Transformation<Request.Any, any, never, never>
 ```
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Envelope.ts#L409)

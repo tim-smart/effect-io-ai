@@ -8,7 +8,7 @@ type `T` is a subtype of the encoded type `E`.
 
 **When to use**
 
-Use when the runtime value is unchanged but the decoded side should be
+Use when you need a no-op schema transformation whose decoded side is
 narrower than the encoded side.
 
 **Details**
@@ -35,6 +35,6 @@ const t = SchemaTransformation.passthroughSupertype<"a" | "b", string>()
 declare const passthroughSupertype: <T extends E, E>() => Transformation<T, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L804)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L812)
 
 Since v4.0.0

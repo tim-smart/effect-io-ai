@@ -32,6 +32,6 @@ if (Result.isSuccess(result)) {
 declare const decodeHexString: (str: string) => Result.Result<string, EncodingError>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Encoding.ts#L545)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Encoding.ts#L550)
 
 Since v2.0.0

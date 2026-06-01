@@ -12,11 +12,9 @@ next effect while pending effects still use regular flat mapping.
 
 **Details**
 
-Behavior:
-
-- For **Success effects**: Applies the flatMap function immediately to the value
-- For **Failure effects**: Returns the failure as-is without applying the flatMap
-- For **Pending effects**: Falls back to the regular `flatMap` behavior
+Success effects apply the flatMap function immediately. Failure effects pass
+through unchanged, and pending effects fall back to regular `flatMap`
+behavior.
 
 **Example** (Flat mapping eagerly when possible)
 
@@ -41,6 +39,6 @@ const flatMappedPending = Effect.flatMapEager(
 declare const flatMapEager: { <A, B, E2, R2>(f: (a: A) => Effect<B, E2, R2>): <E, R>(self: Effect<A, E, R>) => Effect<B, E | E2, R | R2>; <A, E, R, B, E2, R2>(self: Effect<A, E, R>, f: (a: A) => Effect<B, E2, R2>): Effect<B, E | E2, R | R2>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L15077)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L15139)
 
 Since v4.0.0

@@ -7,10 +7,8 @@ Checks whether a value implements the `Equal` interface.
 
 **When to use**
 
-Use when to branch on whether a value supports custom equality before calling
-  its `[Equal.symbol]` method directly.
-- In generic utility code that needs to distinguish `Equal` implementors
-  from plain values.
+Use when you need generic utility code to distinguish `Equal` implementors
+from plain values before calling `[Equal.symbol]` directly.
 
 **Details**
 
@@ -50,6 +48,6 @@ console.log(Equal.isEqual(42))                // false
 declare const isEqual: (u: unknown) => u is Equal
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Equal.ts#L502)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Equal.ts#L492)
 
 Since v2.0.0

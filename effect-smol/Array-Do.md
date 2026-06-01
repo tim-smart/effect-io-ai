@@ -7,9 +7,14 @@ Provides the starting point for the "do simulation" — an array comprehension p
 
 **When to use**
 
-Use when begin a pipeline with `Do`, then use `bind` to introduce array variables and `let` for plain values.
-- Each `bind` produces the cartesian product of all bound variables (like nested loops).
-- Use `filter` and `map` in the pipeline to add conditions and transformations.
+Use when you want array-comprehension style code with do notation.
+
+**Details**
+
+Use `bind` to introduce array variables and `let` for plain
+values. Each `bind` produces the cartesian product of all bound variables,
+like nested loops. Use `filter` and `map` in the pipeline to add conditions
+and transformations.
 
 **Example** (Array comprehension with do notation)
 
@@ -38,6 +43,6 @@ console.log(result) // [[1, 2], [1, 4], [1, 6], [3, 4], [3, 6], [5, 6]]
 declare const Do: ReadonlyArray<{}>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L4720)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L4774)
 
 Since v3.2.0

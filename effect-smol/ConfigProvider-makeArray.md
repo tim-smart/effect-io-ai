@@ -8,8 +8,8 @@ length.
 
 **When to use**
 
-Use when describing a JSON array or a set of numerically-indexed env
-vars inside a custom provider.
+Use when you need to describe a JSON array or numerically indexed env vars
+inside a custom provider.
 
 **Details**
 

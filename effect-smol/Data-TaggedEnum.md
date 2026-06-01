@@ -7,7 +7,7 @@ Transforms a record of variant definitions into a discriminated union type.
 
 **When to use**
 
-Use when you have two or more variants that share a common `_tag` discriminator. For generic tagged enums, see `TaggedEnum.WithGenerics`.
+Use when you have two or more variants that share a common `_tag` discriminator.
 
 **Details**
 

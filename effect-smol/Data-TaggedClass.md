@@ -7,7 +7,7 @@ Provides a base class for immutable data types with a `_tag` discriminator.
 
 **When to use**
 
-Use when you need a single-variant tagged type or an ad-hoc discriminator. For multi-variant unions, prefer `TaggedEnum` with `taggedEnum`; for yieldable errors, use `TaggedError`.
+Use when you need a single-variant tagged type or an ad-hoc discriminator.
 
 **Details**
 

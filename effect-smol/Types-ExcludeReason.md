@@ -8,7 +8,8 @@ field.
 
 **When to use**
 
-Use to remove a handled reason variant from an error's reason union.
+Use when you need the remaining nested reason union type after removing
+variants handled by `_tag`, rather than the enclosing error type.
 
 **Details**
 
@@ -41,6 +42,6 @@ type ExcludeReason<E, K> = E extends { readonly reason: infer R }
   : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Types.ts#L1176)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Types.ts#L1149)
 
 Since v4.0.0

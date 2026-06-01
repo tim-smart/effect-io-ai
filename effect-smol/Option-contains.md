@@ -8,7 +8,8 @@ structural equality.
 
 **When to use**
 
-Use when quick membership test with standard equality
+Use when you need a quick membership test for an `Option` value using
+standard equality.
 
 **Details**
 
@@ -41,6 +42,6 @@ console.log(Option.none().pipe(Option.contains(2)))
 declare const contains: { <A>(a: A): (self: Option<A>) => boolean; <A>(self: Option<A>, a: A): boolean; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L2317)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L2331)
 
 Since v2.0.0

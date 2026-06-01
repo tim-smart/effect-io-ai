@@ -7,13 +7,14 @@ Parses a string into a record of key-value pairs.
 
 **When to use**
 
-Use when an encoded string contains delimited key-value pairs (e.g. `"a=1,b=2"`).
+Use when you need a schema getter to parse a present encoded string that
+contains delimited key-value pairs (e.g. `"a=1,b=2"`).
 
 **Details**
 
-- Splits the string by `separator` (default `,`), then each pair by `keyValueSeparator` (default `=`).
-- Pairs missing a key or value are silently skipped.
-- Pure, never fails.
+The getter is pure and never fails. It splits the string by `separator`
+(default `,`) and then each pair by `keyValueSeparator` (default `=`). Pairs
+missing a key or value are silently skipped.
 
 **Example** (Parse key-value string)
 
@@ -35,6 +36,6 @@ const parse = SchemaGetter.splitKeyValue<string>()
 declare const splitKeyValue: <E extends string>(options?: { readonly separator?: string | undefined; readonly keyValueSeparator?: string | undefined; }) => Getter<Record<string, string>, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L1139)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L1151)
 
 Since v4.0.0

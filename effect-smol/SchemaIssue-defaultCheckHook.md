@@ -7,8 +7,7 @@ Returns the built-in `CheckHook` used by default formatters.
 
 **When to use**
 
-Use as the default filter renderer when you only need to customise the
-`LeafHook`.
+Use as the default filter renderer when customizing only the `LeafHook`.
 
 **Details**
 
@@ -28,6 +27,6 @@ Use as the default filter renderer when you only need to customise the
 declare const defaultCheckHook: CheckHook
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaIssue.ts#L1028)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaIssue.ts#L1026)
 
 Since v4.0.0

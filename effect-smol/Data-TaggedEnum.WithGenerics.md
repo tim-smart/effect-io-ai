@@ -7,7 +7,7 @@ Defines a tagged enum shape that accepts generic type parameters.
 
 **When to use**
 
-Use when variant payloads need to be parameterized, such as `Result<E, A>`. Pass the interface, not the type alias, to `taggedEnum` to get generic-aware constructors and matchers.
+Use when variant payloads need to be parameterized, such as `Result<E, A>`.
 
 **Details**
 

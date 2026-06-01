@@ -21,7 +21,7 @@ export interface Class<
     S["Encoded"],
     S["DecodingServices"],
     S["EncodingServices"],
-    AST.Declaration,
+    SchemaAST.Declaration,
     Schema.decodeTo<Schema.declareConstructor<Self, S["Encoded"], readonly [S], S["Iso"]>, S>,
     S["~type.make.in"],
     S["Iso"],

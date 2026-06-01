@@ -7,7 +7,8 @@ Excludes members of a tagged union by their `_tag` value.
 
 **When to use**
 
-Use to narrow a union by removing a specific variant.
+Use to remove tagged-union members whose `_tag` matches a specific value in
+type-level code.
 
 **Details**
 
@@ -38,6 +39,6 @@ type WithoutTimeout = Types.ExcludeTag<MyError, "Timeout">
 type ExcludeTag<E, K> = Exclude<E, { readonly _tag: K }>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Types.ts#L197)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Types.ts#L196)
 
 Since v2.0.0

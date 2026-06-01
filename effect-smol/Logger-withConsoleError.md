@@ -8,8 +8,8 @@ the console using `console.error`.
 
 **When to use**
 
-Use when this is particularly useful for error logging where you want to ensure
-log messages appear in the error stream (stderr) rather than standard output.
+Use when logger output should be routed to `console.error`, such as error logs that
+should appear on stderr instead of stdout.
 
 **Example** (Writing logger output with console.error)
 

@@ -11,9 +11,8 @@ Use to sort an array using a single `Order` comparator.
 
 **Details**
 
-- Preserves `NonEmptyArray` in the return type.
-- Use `sortWith` to sort by a derived key, or `sortBy` for
-  multi-key sorting.
+Preserves `NonEmptyArray` in the return type. Use `sortWith` to sort by a
+derived key, or `sortBy` for multi-key sorting.
 
 **Example** (Sorting numbers)
 
@@ -34,6 +33,6 @@ console.log(Array.sort([3, 1, 4, 1, 5], Order.Number)) // [1, 1, 3, 4, 5]
 declare const sort: { <B>(O: Order.Order<B>): <A extends B, S extends Iterable<A>>(self: S) => ReadonlyArray.With<S, ReadonlyArray.Infer<S>>; <A extends B, B>(self: NonEmptyReadonlyArray<A>, O: Order.Order<B>): NonEmptyArray<A>; <A extends B, B>(self: Iterable<A>, O: Order.Order<B>): Array<A>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L2132)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L2147)
 
 Since v2.0.0

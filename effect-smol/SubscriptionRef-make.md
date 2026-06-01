@@ -7,7 +7,7 @@ Constructs a new `SubscriptionRef` from an initial value.
 
 **When to use**
 
-Use to create shared mutable state when consumers need to read the latest
+Use to create a `SubscriptionRef` when consumers need to read the latest
 value and subscribe to every update.
 
 **Details**

@@ -7,8 +7,8 @@ Represents the `$schema` meta-schema URI for JSON Schema Draft 2020-12.
 
 **When to use**
 
-Use to populate the `$schema` field when emitting a JSON Schema document that
-should declare JSON Schema Draft 2020-12.
+Use when you need to populate the `$schema` field while emitting a JSON
+Schema document that should declare JSON Schema Draft 2020-12.
 
 **Details**
 

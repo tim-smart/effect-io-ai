@@ -6,6 +6,11 @@ Module: `Stream`<br />
 Zips multiple streams so that when a value is emitted by any stream, it is
 combined with the latest values from the other streams to produce a result.
 
+**When to use**
+
+Use when each stream should contribute its latest value after all streams have
+emitted at least once.
+
 **Gotchas**
 
 Note: tracking the latest value is done on a per-array basis. That means
@@ -38,6 +43,6 @@ Effect.runPromise(program)
 declare const zipLatestAll: <T extends ReadonlyArray<Stream<any, any, any>>>(...streams: T) => Stream<[T[number]] extends [never] ? never : { [K in keyof T]: T[K] extends Stream<infer A, infer _E, infer _R> ? A : never; }, [T[number]] extends [never] ? never : T[number] extends Stream<infer _A, infer _E, infer _R> ? _E : never, [T[number]] extends [never] ? never : T[number] extends Stream<infer _A, infer _E, infer _R> ? _R : never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L4053)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L4105)
 
 Since v3.3.0

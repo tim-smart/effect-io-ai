@@ -8,9 +8,7 @@ specified duration from the last run.
 
 **When to use**
 
-Use when each delay should start after the previous action
-completes. Use `fixed` when recurrences should stay aligned to a regular
-cadence.
+Use when each delay should start after the previous action completes.
 
 **Example** (Repeating with fixed spacing)
 
@@ -65,6 +63,6 @@ const program = Effect.gen(function*() {
 declare const spaced: (duration: Duration.Input) => Schedule<number>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L2738)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L2758)
 
 Since v2.0.0

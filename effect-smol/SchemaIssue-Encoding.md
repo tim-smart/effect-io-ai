@@ -29,7 +29,7 @@ declare class Encoding { constructor(
     /**
      * The schema that caused the issue.
      */
-    ast: AST.AST,
+    ast: SchemaAST.AST,
     /**
      * The input value that caused the issue.
      */
@@ -41,6 +41,6 @@ declare class Encoding { constructor(
   ) }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaIssue.ts#L283)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaIssue.ts#L284)
 
 Since v4.0.0

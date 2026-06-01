@@ -7,8 +7,8 @@ Creates an OpenTelemetry metric producer from Effect metrics.
 
 **When to use**
 
-Use to create a `MetricProducer` when you need to wire Effect metrics into
-OpenTelemetry manually instead of using the scoped `layer` helper.
+Use when you need a `MetricProducer` for manually wiring Effect metrics into
+OpenTelemetry instead of using the scoped `layer` helper.
 
 **Details**
 

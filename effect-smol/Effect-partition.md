@@ -8,10 +8,8 @@ successes.
 
 **Details**
 
-The returned tuple is `[excluded, satisfying]`, where:
-
-- `excluded` contains all failures.
-- `satisfying` contains all successes.
+The returned tuple is `[excluded, satisfying]`, where `excluded` contains
+all failures and `satisfying` contains all successes.
 
 This function runs every effect and never fails. Use `concurrency` to control
 parallelism.
@@ -35,6 +33,6 @@ Effect.runPromise(program).then(console.log)
 declare const partition: { <A, B, E, R>(f: (a: A, i: number) => Effect<B, E, R>, options?: { readonly concurrency?: Concurrency | undefined; }): (elements: Iterable<A>) => Effect<[excluded: Array<E>, satisfying: Array<B>], never, R>; <A, B, E, R>(elements: Iterable<A>, f: (a: A, i: number) => Effect<B, E, R>, options?: { readonly concurrency?: Concurrency | undefined; }): Effect<[excluded: Array<E>, satisfying: Array<B>], never, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L625)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L623)
 
 Since v2.0.0

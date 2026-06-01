@@ -12,8 +12,7 @@ and the remaining elements as separate values.
 
 **Details**
 
-- Returns a tuple `[head, tail]`.
-- Requires a `NonEmptyReadonlyArray`.
+Returns a tuple `[head, tail]` and requires a `NonEmptyReadonlyArray`.
 
 **Example** (Destructuring head and tail)
 
@@ -36,6 +35,6 @@ console.log(result) // [1, [2, 3, 4]]
 declare const unprepend: <A>(self: NonEmptyReadonlyArray<A>) => [firstElement: A, remainingElements: Array<A>]
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L1082)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L1100)
 
 Since v2.0.0

@@ -8,7 +8,8 @@ and returns the previous value.
 
 **When to use**
 
-Use to transform the current value while keeping the previous value.
+Use to transform the current `MutableRef` value while keeping the previous
+value.
 
 **Example** (Reading before updating)
 
@@ -51,6 +52,6 @@ console.log(MutableRef.get(list)) // [1, 2, 3, 4]
 declare const getAndUpdate: { <T>(f: (value: T) => T): (self: MutableRef<T>) => T; <T>(self: MutableRef<T>, f: (value: T) => T): T; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableRef.ts#L484)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableRef.ts#L487)
 
 Since v2.0.0

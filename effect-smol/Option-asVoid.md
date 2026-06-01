@@ -8,12 +8,8 @@ unchanged.
 
 **When to use**
 
-Use when discarding the value while preserving presence/absence
-
-**Details**
-
-- `Some` → `Some(undefined)`
-- `None` → `None`
+Use when you need to discard a present `Option` value while preserving
+whether it was `Some` or `None`.
 
 **Example** (Voiding the value)
 
@@ -37,6 +33,6 @@ console.log(Option.asVoid(Option.none()))
 declare const asVoid: <_>(self: Option<_>) => Option<void>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L1286)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L1285)
 
 Since v2.0.0

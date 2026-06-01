@@ -8,7 +8,8 @@ and returns the new value.
 
 **When to use**
 
-Use to transform the current value and immediately read the updated value.
+Use to transform the current `MutableRef` value and immediately read the
+updated value.
 
 **Example** (Updating and reading values)
 
@@ -55,6 +56,6 @@ console.log(MutableRef.get(list)) // [2, 4, 6]
 declare const updateAndGet: { <T>(f: (value: T) => T): (self: MutableRef<T>) => T; <T>(self: MutableRef<T>, f: (value: T) => T): T; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableRef.ts#L784)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableRef.ts#L790)
 
 Since v2.0.0

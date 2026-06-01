@@ -8,7 +8,7 @@ Creates a synchronous maker for the schema's decoded type side.
 **When to use**
 
 Use to construct decoded schema values synchronously when invalid input
-should throw.
+should throw an `Error` whose cause is `SchemaIssue.Issue`.
 
 **Details**
 

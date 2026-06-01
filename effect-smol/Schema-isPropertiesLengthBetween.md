@@ -22,9 +22,9 @@ being converted to an object.
 **Signature**
 
 ```ts
-declare const isPropertiesLengthBetween: (minimum: number, maximum: number, annotations?: Annotations.Filter) => AST.Filter<object>
+declare const isPropertiesLengthBetween: (minimum: number, maximum: number, annotations?: Annotations.Filter) => SchemaAST.Filter<object>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L7742)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L7957)
 
 Since v4.0.0

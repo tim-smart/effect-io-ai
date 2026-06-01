@@ -22,9 +22,9 @@ least the required size.
 **Signature**
 
 ```ts
-declare const isMinSize: (minSize: number, annotations?: Annotations.Filter) => AST.Filter<{ readonly size: number; }>
+declare const isMinSize: (minSize: number, annotations?: Annotations.Filter) => SchemaAST.Filter<{ readonly size: number; }>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L7531)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L7746)
 
 Since v4.0.0

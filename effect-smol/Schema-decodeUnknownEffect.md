@@ -8,7 +8,8 @@ succeeds with the decoded value or fails with a `SchemaError`.
 
 **When to use**
 
-Use when decoding input whose type is not statically known.
+Use when you need to decode unknown input in an `Effect` whose failure
+channel is `SchemaError`.
 
 **Details**
 
@@ -17,12 +18,16 @@ Prefer `decodeEffect` when the input is already typed as the schema's
 Options may be provided either when creating the decoder or when applying it;
 application options override creation options.
 
+**See**
+
+- `SchemaParser.decodeUnknownEffect` for the adapter that fails with `SchemaIssue.Issue` directly
+
 **Signature**
 
 ```ts
-declare const decodeUnknownEffect: <S extends Top>(schema: S, options?: AST.ParseOptions) => (input: unknown, options?: AST.ParseOptions) => Effect.Effect<S["Type"], SchemaError, S["DecodingServices"]>
+declare const decodeUnknownEffect: <S extends Top>(schema: S, options?: SchemaAST.ParseOptions) => (input: unknown, options?: SchemaAST.ParseOptions) => Effect.Effect<S["Type"], SchemaError, S["DecodingServices"]>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L1239)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L1251)
 
 Since v4.0.0

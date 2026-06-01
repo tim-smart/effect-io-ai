@@ -7,18 +7,16 @@ Creates an equivalence for objects by comparing their properties using provided 
 
 **When to use**
 
-Use when comparing objects with known, fixed property names
-- Use when you need different equivalence logic for different properties
-- Use when working with struct or interface types with specific fields
-- Prefer this over `Record` when you have a fixed set of known properties
+Use when you need an `Equivalence` for objects with known, fixed property
+names.
 
 **Details**
 
-- Compares only the properties specified in the struct definition
-- Properties not in the struct are ignored
-- Returns `true` only if all specified properties are equivalent according to their equivalences
-- Supports both string and symbol keys via `Reflect.ownKeys`
-- The result is also an equivalence that satisfies reflexive, symmetric, and transitive properties
+Compares only the properties specified in the struct definition; other
+properties are ignored. String and symbol keys are supported via
+`Reflect.ownKeys`. The result returns `true` only if all specified properties
+are equivalent according to their equivalences, and it also satisfies
+reflexive, symmetric, and transitive properties.
 
 **Example** (Struct with different equivalences per field)
 
@@ -78,6 +76,6 @@ console.log(nameAgeEq(obj1, obj2)) // true
 declare const Struct: <R extends Record<string, Equivalence<any>>>(fields: R) => Equivalence<{ readonly [K in keyof R]: [R[K]] extends [Equivalence<infer A>] ? A : never; }>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Equivalence.ts#L756)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Equivalence.ts#L735)
 
 Since v4.0.0

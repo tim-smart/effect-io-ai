@@ -8,8 +8,9 @@ function that receives the current accumulated object.
 
 **When to use**
 
-Use when adding a `Result`-producing step to a do-notation pipeline and
-storing its successful value under a named field in the accumulated object.
+Use when you need to add a `Result`-producing step to a `Result`
+do-notation pipeline and store its successful value under a named field in
+the accumulated object.
 
 **Details**
 
@@ -43,6 +44,6 @@ console.log(result)
 declare const bind: { <N extends string, A extends object, B, L2>(name: Exclude<N, keyof A>, f: (a: NoInfer<A>) => Result<B, L2>): <L1>(self: Result<A, L1>) => Result<{ [K in N | keyof A]: K extends keyof A ? A[K] : B; }, L1 | L2>; <A extends object, L1, N extends string, B, L2>(self: Result<A, L1>, name: Exclude<N, keyof A>, f: (a: NoInfer<A>) => Result<B, L2>): Result<{ [K in N | keyof A]: K extends keyof A ? A[K] : B; }, L1 | L2>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L1696)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L1713)
 
 Since v2.0.0

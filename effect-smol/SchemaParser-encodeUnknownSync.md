@@ -7,8 +7,8 @@ Creates a synchronous encoder for `unknown` input.
 
 **When to use**
 
-Use when encoding values from untyped input in synchronous code and treating
-encoding failures as thrown errors is the desired boundary.
+Use when you need to encode values from untyped input in synchronous code and
+want encoding failures to throw an `Error` whose cause is `SchemaIssue.Issue`.
 
 **Details**
 
@@ -23,9 +23,9 @@ an `Error` with the `SchemaIssue.Issue` in its `cause` on encoding failure.
 **Signature**
 
 ```ts
-declare const encodeUnknownSync: <S extends Schema.Encoder<unknown>>(schema: S, options?: AST.ParseOptions) => (input: unknown, options?: AST.ParseOptions) => S["Encoded"]
+declare const encodeUnknownSync: <S extends Schema.Encoder<unknown>>(schema: S, options?: SchemaAST.ParseOptions) => (input: unknown, options?: SchemaAST.ParseOptions) => S["Encoded"]
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaParser.ts#L853)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaParser.ts#L795)
 
 Since v3.10.0

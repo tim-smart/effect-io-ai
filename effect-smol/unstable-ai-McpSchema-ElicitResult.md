@@ -11,6 +11,6 @@ Schema for every client response to an elicitation request.
 declare const ElicitResult: Schema.Union<readonly [typeof ElicitAcceptResult, typeof ElicitDeclineResult]>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L2112)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L2114)
 
 Since v4.0.0

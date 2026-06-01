@@ -7,12 +7,8 @@ Replaces the value inside a `Some` with a constant, leaving `None` unchanged.
 
 **When to use**
 
-Use when preserving presence/absence while discarding the original value
-
-**Details**
-
-- `Some` → `Some(b)`
-- `None` → `None`
+Use when you need to replace a present `Option` value while preserving
+whether it was `Some` or `None`.
 
 **Example** (Replacing a value)
 
@@ -37,6 +33,6 @@ console.log(Option.as(Option.none(), "new value"))
 declare const as: { <B>(b: B): <X>(self: Option<X>) => Option<B>; <X, B>(self: Option<X>, b: B): Option<B>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L1251)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L1254)
 
 Since v2.0.0

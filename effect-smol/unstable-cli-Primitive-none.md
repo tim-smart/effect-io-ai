@@ -7,7 +7,7 @@ Creates a sentinel primitive that always fails to parse a value.
 
 **When to use**
 
-Use when you need flags that don't accept values.
+Use when you need a CLI primitive for flags that do not accept values.
 
 **Example** (Rejecting option values)
 

@@ -14,7 +14,7 @@ export interface Union<Members extends ReadonlyArray<Top>> extends
     { [K in keyof Members]: Members[K]["Encoded"] }[number],
     { [K in keyof Members]: Members[K]["DecodingServices"] }[number],
     { [K in keyof Members]: Members[K]["EncodingServices"] }[number],
-    AST.Union<{ [K in keyof Members]: Members[K]["ast"] }[number]>,
+    SchemaAST.Union<{ [K in keyof Members]: Members[K]["ast"] }[number]>,
     Union<Members>,
     { [K in keyof Members]: Members[K]["~type.make"] }[number],
     { [K in keyof Members]: Members[K]["Iso"] }[number]
@@ -46,6 +46,6 @@ export interface Union<Members extends ReadonlyArray<Top>> extends
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L4142)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L4337)
 
 Since v3.10.0

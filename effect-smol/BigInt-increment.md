@@ -24,6 +24,6 @@ assert.deepStrictEqual(BigInt.increment(2n), 3n)
 declare const increment: (n: bigint) => bigint
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigInt.ts#L308)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigInt.ts#L309)
 
 Since v2.0.0

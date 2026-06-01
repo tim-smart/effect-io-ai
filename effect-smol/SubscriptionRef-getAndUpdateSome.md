@@ -7,8 +7,8 @@ Retrieves the current value and optionally updates the reference.
 
 **When to use**
 
-Use to read the old value while applying a synchronous update only when a
-new value is available.
+Use to read the old `SubscriptionRef` value while applying a synchronous
+update only when a new value is available.
 
 **Details**
 
@@ -41,6 +41,6 @@ const program = Effect.gen(function*() {
 declare const getAndUpdateSome: { <A>(update: (a: A) => Option.Option<A>): (self: SubscriptionRef<A>) => Effect.Effect<A>; <A>(self: SubscriptionRef<A>, update: (a: A) => Option.Option<A>): Effect.Effect<A>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SubscriptionRef.ts#L406)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SubscriptionRef.ts#L411)
 
 Since v2.0.0

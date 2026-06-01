@@ -5,6 +5,11 @@ Module: `Effect`<br />
 
 Provides one service to an effect using an effectful acquisition.
 
+**When to use**
+
+Use when the service implementation must be created by an effect and its
+acquisition failure should remain in the returned effect.
+
 **Details**
 
 `provideServiceEffect` runs the acquisition effect to produce the service
@@ -58,6 +63,6 @@ Effect.runPromise(withDatabase).then(console.log)
 declare const provideServiceEffect: { <I, S, E2, R2>(service: Context.Key<I, S>, acquire: Effect<S, E2, R2>): <A, E, R>(self: Effect<A, E, R>) => Effect<A, E | E2, Exclude<R, I> | R2>; <A, E, R, I, S, E2, R2>(self: Effect<A, E, R>, service: Context.Key<I, S>, acquire: Effect<S, E2, R2>): Effect<A, E | E2, Exclude<R, I> | R2>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L6223)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L6267)
 
 Since v2.0.0

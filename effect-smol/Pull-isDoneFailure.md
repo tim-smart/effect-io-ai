@@ -8,8 +8,8 @@ Checks whether a `Cause.Reason` is a `Fail` reason whose error is a
 
 **When to use**
 
-Use as a predicate when traversing `cause.reasons` and you need to identify
-done completion reasons before handling ordinary failures.
+Use when you need to identify done completion reasons while traversing
+`cause.reasons`, before handling ordinary failures.
 
 **See**
 

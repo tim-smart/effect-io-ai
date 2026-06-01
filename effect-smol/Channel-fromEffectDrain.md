@@ -11,6 +11,6 @@ Uses an effect and discards its result.
 declare const fromEffectDrain: <A, E, R>(effect: Effect.Effect<A, E, R>) => Channel<never, E, void, unknown, unknown, unknown, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L1201)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L1211)
 
 Since v4.0.0

@@ -7,8 +7,8 @@ Transforms the output of a `Logger` using the provided function.
 
 **When to use**
 
-Use when this allows you to modify, enhance, or completely change the output format
-of an existing logger without recreating the entire logging logic.
+Use when an existing logger's output should be transformed without recreating the
+logging logic.
 
 **Example** (Transforming logger output)
 

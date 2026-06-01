@@ -7,7 +7,7 @@ Retrieves the element at the specified index from a tuple.
 
 **When to use**
 
-Use when you use this in a pipeline when you need to extract a single element.
+Use when a single tuple element should be extracted in a pipeline.
 
 **Details**
 

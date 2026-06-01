@@ -7,8 +7,8 @@ Extracts the `reason` type from an error that has a `reason` field.
 
 **When to use**
 
-Use with the nested error pattern where errors wrap sub-errors in a `reason`
-field.
+Use when an error type stores nested sub-errors in a `reason` field and you
+need that field's full union type as a standalone type.
 
 **Details**
 
@@ -39,6 +39,6 @@ type Reasons = Types.ReasonOf<ApiError>
 type ReasonOf<E> = E extends { readonly reason: infer R } ? R : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Types.ts#L993)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Types.ts#L964)
 
 Since v4.0.0

@@ -3,7 +3,7 @@ Module: `Boolean`<br />
 
 ## Boolean.or
 
-Combines two boolean using OR: `self || that`.
+Combines two booleans using OR: `self || that`.
 
 **When to use**
 

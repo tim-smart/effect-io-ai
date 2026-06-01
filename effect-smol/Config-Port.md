@@ -7,8 +7,8 @@ Schema for port numbers (integers in 1–65535).
 
 **When to use**
 
-Use when passing to `schema` for custom paths, or use the `port`
-convenience constructor.
+Use when you need the reusable port schema value for `Config.schema` with
+custom paths.
 
 **See**
 
@@ -20,6 +20,6 @@ convenience constructor.
 declare const Port: Schema.Int
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Config.ts#L801)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Config.ts#L799)
 
 Since v4.0.0

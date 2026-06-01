@@ -7,13 +7,13 @@ Encodes a nested object into a `URLSearchParams` instance using bracket-path not
 
 **When to use**
 
-Use to serialize structured data to query parameters for URLs.
+Use when you need a schema getter to serialize structured data to query
+parameters for URLs.
 
 **Details**
 
-- Pure, never fails.
-- Flattens nested objects/arrays into bracket-path keys.
-- Non-object inputs produce an empty `URLSearchParams`.
+The getter is pure and never fails. It flattens nested objects or arrays into
+bracket-path keys. Non-object inputs produce an empty `URLSearchParams`.
 
 **Example** (Encode to URLSearchParams)
 
@@ -36,6 +36,6 @@ const encode = SchemaGetter.encodeURLSearchParams()
 declare const encodeURLSearchParams: () => Getter<URLSearchParams, unknown>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L1734)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L1753)
 
 Since v4.0.0

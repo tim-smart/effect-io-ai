@@ -7,7 +7,7 @@ Encodes a `Uint8Array` or string to a hexadecimal string.
 
 **Details**
 
-- Pure, never fails.
+The getter is pure and never fails.
 
 **Example** (Encode to hex)
 
@@ -28,6 +28,6 @@ const encode = SchemaGetter.encodeHex<Uint8Array>()
 declare const encodeHex: <E extends Uint8Array | string>() => Getter<string, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L1301)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L1315)
 
 Since v4.0.0

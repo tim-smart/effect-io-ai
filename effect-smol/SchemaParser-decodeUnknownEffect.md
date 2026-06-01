@@ -7,8 +7,9 @@ Creates an effectful decoder for `unknown` input.
 
 **When to use**
 
-Use when decoding untyped boundary input while preserving decoding failures,
-effectful transformations, and service requirements in an `Effect`.
+Use when you need to decode untyped boundary input in an `Effect` whose
+failure channel is `SchemaIssue.Issue`, while preserving transformations
+and service requirements.
 
 **Details**
 
@@ -24,9 +25,9 @@ when applying it.
 **Signature**
 
 ```ts
-declare const decodeUnknownEffect: <S extends Schema.Top>(schema: S, options?: AST.ParseOptions) => (input: unknown, options?: AST.ParseOptions) => Effect.Effect<S["Type"], Issue.Issue, S["DecodingServices"]>
+declare const decodeUnknownEffect: <S extends Schema.Top>(schema: S, options?: SchemaAST.ParseOptions) => (input: unknown, options?: SchemaAST.ParseOptions) => Effect.Effect<S["Type"], SchemaIssue.Issue, S["DecodingServices"]>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaParser.ts#L251)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaParser.ts#L252)
 
 Since v4.0.0

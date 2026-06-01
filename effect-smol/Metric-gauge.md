@@ -8,14 +8,14 @@ at a specific moment.
 
 **When to use**
 
-Use when gauges are most suitable for metrics that represent instantaneous values,
-such as memory usage or CPU load.
+Use when you need a metric for instantaneous values, such as memory usage or
+CPU load.
 
 **Details**
 
-- `description` - A description of the `Gauge`.
-- `attributes`  - The attributes to associate with the `Gauge`.
-- `bigint`      - Indicates if the `Gauge` should use the `bigint` type.
+The optional `description` describes the gauge, and `attributes` attach
+dimensions to it. Set `bigint` to create a gauge that accepts `bigint`
+inputs.
 
 **Example** (Creating gauge metrics)
 
@@ -71,6 +71,6 @@ const program = Effect.gen(function*() {
 declare const gauge: { (name: string, options?: { readonly description?: string | undefined; readonly attributes?: Metric.Attributes | undefined; readonly bigint?: false | undefined; }): Gauge<number>; (name: string, options: { readonly description?: string | undefined; readonly attributes?: Metric.Attributes | undefined; readonly bigint: true; }): Gauge<bigint>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Metric.ts#L2335)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Metric.ts#L2334)
 
 Since v2.0.0

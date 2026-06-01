@@ -8,9 +8,8 @@ and modification time metadata.
 
 **When to use**
 
-Use when file size and modification time reliably change for every byte-level
-change and the consuming HTTP code needs strong ETags from the `Generator`
-service.
+Use when you need the `Generator` service to produce strong ETags and file
+size plus modification time reliably change for every byte-level change.
 
 **Gotchas**
 
@@ -29,6 +28,6 @@ time, those tags can stop representing byte-for-byte identity.
 declare const layer: Layer.Layer<Generator, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Etag.ts#L138)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Etag.ts#L137)
 
 Since v4.0.0

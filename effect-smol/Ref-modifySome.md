@@ -7,7 +7,7 @@ Computes a result atomically and optionally updates the value of the `Ref`.
 
 **When to use**
 
-Use to compute a return value while optionally updating the stored value.
+Use to compute a return value while optionally updating a plain `Ref`.
 
 **Details**
 

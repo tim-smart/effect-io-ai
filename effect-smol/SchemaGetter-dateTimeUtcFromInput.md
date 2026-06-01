@@ -7,7 +7,8 @@ Parses a `DateTime.Input` value into a `DateTime.Utc`.
 
 **When to use**
 
-Use when an encoded value represents a date/time and should be decoded to a `DateTime.Utc`.
+Use when you need a schema getter to decode a present encoded date/time value
+to a `DateTime.Utc`.
 
 **Details**
 
@@ -15,7 +16,7 @@ Use when an encoded value represents a date/time and should be decoded to a `Dat
   instant objects, zoned instant objects, JavaScript `Date` instances, epoch
   milliseconds, and date strings.
 - Converts successfully parsed values to UTC.
-- Fails with `Issue.InvalidValue` if the input cannot be parsed as a valid
+- Fails with `SchemaIssue.InvalidValue` if the input cannot be parsed as a valid
   `DateTime`.
 
 **Example** (Parse DateTime)
@@ -37,6 +38,6 @@ const parseDate = SchemaGetter.dateTimeUtcFromInput<string>()
 declare const dateTimeUtcFromInput: <E extends DateTime.DateTime.Input>() => Getter<DateTime.Utc, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L1582)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L1597)
 
 Since v4.0.0

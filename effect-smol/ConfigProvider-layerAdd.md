@@ -8,9 +8,9 @@ active one, rather than replacing it.
 
 **When to use**
 
-Use to add defaults that should only apply when the primary provider
-has no value for a path, or to override specific keys while keeping the rest
-from the existing provider by setting `asPrimary: true`.
+Use to add defaults that should only apply when the primary provider has no
+value for a path, or override specific keys while keeping the rest from the
+existing provider by setting `asPrimary: true`.
 
 **Details**
 
@@ -43,6 +43,6 @@ const DefaultsLayer = ConfigProvider.layerAdd(defaults)
 declare const layerAdd: <E = never, R = never>(self: ConfigProvider | Effect.Effect<ConfigProvider, E, R>, options?: { readonly asPrimary?: boolean | undefined; } | undefined) => Layer.Layer<never, E, Exclude<R, Scope>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ConfigProvider.ts#L722)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ConfigProvider.ts#L718)
 
 Since v4.0.0

@@ -7,7 +7,8 @@ Extracts the failure value as an `Option`, discarding the success.
 
 **When to use**
 
-Use to extract only the failure value and discard successful values.
+Use when you need to extract the failure value from a `Result` as an
+`Option` and discard successful values.
 
 **Details**
 
@@ -37,6 +38,6 @@ console.log(Result.getFailure(Result.fail("err")))
 declare const getFailure: <A, E>(self: Result<A, E>) => Option<E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L743)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L749)
 
 Since v4.0.0

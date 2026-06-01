@@ -7,7 +7,8 @@ Creates a param that parses key=value pairs.
 
 **When to use**
 
-Use when you use it for options that accept configuration values.
+Use when you need command-line options or arguments that collect `key=value`
+configuration entries.
 
 **Details**
 
@@ -34,6 +35,6 @@ const props = Param.keyValuePair(Param.flagKind, "property")
 declare const keyValuePair: <Kind extends ParamKind>(kind: Kind, name: string) => Param<Kind, Record<string, string>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Param.ts#L917)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Param.ts#L918)
 
 Since v4.0.0

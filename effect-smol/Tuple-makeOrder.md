@@ -9,7 +9,8 @@ first non-zero comparison determines the result.
 
 **When to use**
 
-Use to sort or compare tuples lexicographically by element position.
+Use when you need to sort fixed-position arrays lexicographically, with each
+position using its own ordering rule.
 
 **Details**
 
@@ -36,6 +37,6 @@ console.log(ord(["Alice", 30], ["Alice", 30])) // 0
 declare const makeOrder: <const Elements extends ReadonlyArray<order.Order<any>>>(elements: Elements) => order.Order<{ readonly [I in keyof Elements]: [Elements[I]] extends [order.Order<infer A>] ? A : never; }>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tuple.ts#L636)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tuple.ts#L638)
 
 Since v4.0.0

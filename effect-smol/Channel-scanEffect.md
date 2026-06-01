@@ -6,6 +6,11 @@ Module: `Channel`<br />
 Transforms a channel statefully by scanning over its output with an effectful accumulator function.
 Emits the intermediate results of the scan operation.
 
+**When to use**
+
+Use when maintaining accumulated state over channel output requires Effects
+or can fail, while still emitting each intermediate state.
+
 **Example** (Scanning channel output with effects)
 
 ```ts
@@ -50,6 +55,6 @@ const errorHandlingScan = Channel.scanEffect(
 declare const scanEffect: { <S, OutElem, E, R>(initial: S, f: (s: S, a: Types.NoInfer<OutElem>) => Effect.Effect<S, E, R>): <OutErr, OutDone, InElem, InErr, InDone, Env>(self: Channel<OutElem, OutErr, OutDone, InElem, InErr, InDone, Env>) => Channel<S, OutErr | E, OutDone, InElem, InErr, InDone, Env | R>; <OutElem, OutErr, OutDone, InElem, InErr, InDone, Env, S, E, R>(self: Channel<OutElem, OutErr, OutDone, InElem, InErr, InDone, Env>, initial: S, f: (s: S, a: Types.NoInfer<OutElem>) => Effect.Effect<S, E, R>): Channel<S, OutErr | E, OutDone, InElem, InErr, InDone, Env | R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L3823)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L3863)
 
 Since v4.0.0

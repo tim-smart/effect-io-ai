@@ -7,8 +7,8 @@ Creates a new Chat service with empty conversation history.
 
 **When to use**
 
-Use when this is the most common way to start a fresh chat session without
-any initial context or system prompts.
+Use when you need to start a fresh chat session without initial context or
+system prompts.
 
 **Example** (Creating an empty chat)
 

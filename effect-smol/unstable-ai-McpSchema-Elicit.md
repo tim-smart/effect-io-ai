@@ -17,6 +17,6 @@ cancellation.
 declare class Elicit
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L2129)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L2131)
 
 Since v4.0.0

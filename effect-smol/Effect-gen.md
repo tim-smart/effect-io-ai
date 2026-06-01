@@ -8,14 +8,13 @@ control flow and error handling.
 
 **When to use**
 
-Use when `gen` allows you to write code that looks and behaves like synchronous
-code, but it can handle asynchronous tasks, errors, and complex control flow
-(like loops and conditions). It helps make asynchronous code more readable
-and easier to manage.
+Use when you want to write effectful code that looks and behaves like
+synchronous code, while still handling asynchronous tasks, errors, and complex
+control flow such as loops and conditions.
 
-The generator functions work similarly to `async/await` but with more
-explicit control over the execution of effects. You can `yield*` values from
-effects and return the final result at the end.
+Generator functions work similarly to `async/await` but keep errors,
+requirements, and interruption in the Effect type. You can `yield*` values
+from effects and return the final result at the end.
 
 **Example** (Sequencing effects with generators)
 

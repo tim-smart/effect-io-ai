@@ -28,6 +28,6 @@ console.log(Encoding.encodeHex(bytes)) // "48656c6c6f"
 declare const encodeHex: (input: Uint8Array | string) => string
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Encoding.ts#L453)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Encoding.ts#L458)
 
 Since v2.0.0

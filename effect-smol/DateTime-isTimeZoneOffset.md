@@ -7,8 +7,8 @@ Checks whether a value is an offset-based `TimeZone`.
 
 **When to use**
 
-Use when narrowing an unknown or union `TimeZone` value to the fixed-offset
-variant before reading its offset in milliseconds.
+Use when you need to narrow an unknown or union `TimeZone` value to the
+fixed-offset variant before reading its offset in milliseconds.
 
 **See**
 

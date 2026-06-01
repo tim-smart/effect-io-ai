@@ -7,8 +7,9 @@ Creates a Promise-based encoder for `unknown` input.
 
 **When to use**
 
-Use to encode untrusted or dynamically typed values at a `Promise` boundary
-when the schema has no encoding service requirements.
+Use when you need to encode untrusted or dynamically typed values with a
+service-free schema and return a JavaScript `Promise` that rejects with
+`SchemaIssue.Issue`.
 
 **Details**
 
@@ -23,9 +24,9 @@ rejects with a `SchemaIssue.Issue` on encoding failure.
 **Signature**
 
 ```ts
-declare const encodeUnknownPromise: <S extends Schema.Encoder<unknown>>(schema: S, options?: AST.ParseOptions) => (input: unknown, options?: AST.ParseOptions) => Promise<S["Encoded"]>
+declare const encodeUnknownPromise: <S extends Schema.Encoder<unknown>>(schema: S, options?: SchemaAST.ParseOptions) => (input: unknown, options?: SchemaAST.ParseOptions) => Promise<S["Encoded"]>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaParser.ts#L645)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaParser.ts#L622)
 
 Since v3.10.0

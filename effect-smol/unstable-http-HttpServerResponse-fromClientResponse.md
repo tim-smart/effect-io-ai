@@ -16,6 +16,6 @@ removed from the header map and represented in the response cookie collection.
 declare const fromClientResponse: (response: HttpClientResponse.HttpClientResponse) => HttpServerResponse
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpServerResponse.ts#L1292)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpServerResponse.ts#L1297)
 
 Since v4.0.0

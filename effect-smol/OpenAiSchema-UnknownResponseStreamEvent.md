@@ -14,6 +14,6 @@ type UnknownResponseStreamEvent = {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiSchema.ts#L1081)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiSchema.ts#L1096)
 
 Since v4.0.0

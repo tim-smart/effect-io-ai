@@ -12,8 +12,8 @@ value is needed.
 
 **Details**
 
-- The output length is `input.length + 1` (ends with the initial value).
-- Always returns a `NonEmptyArray`.
+The output length is `input.length + 1` because it ends with the initial
+value. The result is always a `NonEmptyArray`.
 
 **Example** (Reverse running totals)
 
@@ -35,6 +35,6 @@ console.log(result) // [10, 9, 7, 4, 0]
 declare const scanRight: { <B, A>(b: B, f: (b: B, a: A) => B): (self: Iterable<A>) => NonEmptyArray<B>; <A, B>(self: Iterable<A>, b: B, f: (b: B, a: A) => B): NonEmptyArray<B>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L822)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L832)
 
 Since v2.0.0

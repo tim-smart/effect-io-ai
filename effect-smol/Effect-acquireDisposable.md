@@ -7,8 +7,8 @@ Acquires a scoped resource that implements JavaScript disposal protocols.
 
 **When to use**
 
-Use with JavaScript `Disposable` or `AsyncDisposable` resources that should
-be closed with the surrounding scope.
+Use when you work with JavaScript `Disposable` or `AsyncDisposable` resources
+that should be closed with the surrounding scope.
 
 **Details**
 
@@ -52,6 +52,6 @@ const program = Effect.scoped(
 declare const acquireDisposable: <A extends AsyncDisposable | Disposable, E, R>(acquire: Effect<A, E, R>) => Effect<A, E, R | Scope>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L6517)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L6566)
 
 Since v4.0.0

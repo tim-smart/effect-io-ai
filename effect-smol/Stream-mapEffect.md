@@ -5,6 +5,11 @@ Module: `Stream`<br />
 
 Maps over elements of the stream with the specified effectful function.
 
+**When to use**
+
+Use when each stream element transformation needs an Effect, service
+dependency, failure channel, or configured concurrency.
+
 **Example** (Effectfully mapping stream values)
 
 ```ts
@@ -40,6 +45,6 @@ Effect.runPromise(program)
 declare const mapEffect: { <A, A2, E2, R2>(f: (a: A, i: number) => Effect.Effect<A2, E2, R2>, options?: { readonly concurrency?: number | "unbounded" | undefined; readonly unordered?: boolean | undefined; } | undefined): <E, R>(self: Stream<A, E, R>) => Stream<A2, E2 | E, R2 | R>; <A, E, R, A2, E2, R2>(self: Stream<A, E, R>, f: (a: A, i: number) => Effect.Effect<A2, E2, R2>, options?: { readonly concurrency?: number | "unbounded" | undefined; readonly unordered?: boolean | undefined; } | undefined): Stream<A2, E | E2, R | R2>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L2075)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L2091)
 
 Since v2.0.0

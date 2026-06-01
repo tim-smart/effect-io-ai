@@ -5,6 +5,11 @@ Module: `Effect`<br />
 
 Executes an effect synchronously with provided services.
 
+**When to use**
+
+Use when you already have a `Context`, the effect is known to complete
+synchronously, and failures should throw.
+
 **Example** (Running synchronously with services)
 
 ```ts
@@ -35,6 +40,6 @@ console.log(result) // 5
 declare const runSyncWith: <R>(context: Context.Context<R>) => <A, E>(effect: Effect<A, E, R>) => A
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L9156)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L9226)
 
 Since v4.0.0

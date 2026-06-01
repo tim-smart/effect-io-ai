@@ -8,9 +8,9 @@ Type-level representation of `Never`.
 **Signature**
 
 ```ts
-export interface Never extends Bottom<never, never, never, never, AST.Never, Never> {}
+export interface Never extends Bottom<never, never, never, never, SchemaAST.Never, Never> {}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L2467)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L2612)
 
 Since v3.10.0

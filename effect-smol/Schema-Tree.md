@@ -12,6 +12,6 @@ readonly arrays or string-keyed records of child trees.
 type Tree<Node> = Node | TreeRecord<Node> | ReadonlyArray<Tree<Node>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L13047)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L13243)
 
 Since v4.0.0

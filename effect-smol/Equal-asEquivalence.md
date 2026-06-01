@@ -7,8 +7,8 @@ Wraps `equals` as an `Equivalence<A>`.
 
 **When to use**
 
-Use when when an API (e.g. `Array.dedupeWith`, `Equivalence.mapInput`) requires an
-  `Equivalence` and you want to reuse `Equal.equals`.
+Use when you want to pass `Equal.equals` to APIs that require an
+`Equivalence`.
 
 **Details**
 
@@ -36,6 +36,6 @@ console.log(result) // [1, 2, 3]
 declare const asEquivalence: <A>() => Equivalence<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Equal.ts#L532)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Equal.ts#L522)
 
 Since v4.0.0

@@ -7,7 +7,8 @@ Extracts the success value, or returns `null` on failure.
 
 **When to use**
 
-Use with APIs that represent absence as `null`.
+Use when you need to pass failed `Result` values to APIs that represent
+absence as `null`.
 
 **Details**
 
@@ -37,6 +38,6 @@ console.log(Result.getOrNull(Result.fail("err")))
 declare const getOrNull: <A, E>(self: Result<A, E>) => A | null
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L1192)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L1203)
 
 Since v2.0.0

@@ -7,8 +7,8 @@ Converts a `BigDecimal` to a JavaScript `number`.
 
 **When to use**
 
-Use when an interop boundary requires a JavaScript number and can tolerate
-precision loss.
+Use when you need a JavaScript number at an interop boundary where precision
+loss is acceptable.
 
 **Gotchas**
 
@@ -35,6 +35,6 @@ assert.deepStrictEqual(BigDecimal.toNumberUnsafe(BigDecimal.fromStringUnsafe("12
 declare const toNumberUnsafe: (n: BigDecimal) => number
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigDecimal.ts#L1632)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigDecimal.ts#L1634)
 
 Since v4.0.0

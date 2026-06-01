@@ -19,6 +19,6 @@ Send this when the client adds, removes, or modifies a root.
 declare class RootsListChangedNotification
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L2055)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L2057)
 
 Since v4.0.0

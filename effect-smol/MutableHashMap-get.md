@@ -7,7 +7,7 @@ Looks up a key in the `MutableHashMap` safely.
 
 **When to use**
 
-Use to safely read the value for a key as an `Option`.
+Use to safely read a `MutableHashMap` value for a key as an `Option`.
 
 **Details**
 

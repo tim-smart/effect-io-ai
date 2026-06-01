@@ -8,10 +8,8 @@ fail.
 
 **When to use**
 
-Use when in situations where you need to perform synchronous operations that might
-fail, such as parsing JSON, you can use the `try` constructor. This
-constructor is designed to handle operations that could throw exceptions by
-capturing those exceptions and transforming them into manageable errors.
+Use when you need to perform synchronous operations that might throw, such
+as parsing JSON, and convert thrown exceptions into typed Effect failures.
 
 **Details**
 
@@ -72,6 +70,6 @@ throw errors.
 declare const try: <A, E>(options: { try: LazyArg<A>; catch: (error: unknown) => E; }) => Effect<A, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L1737)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L1744)
 
 Since v2.0.0

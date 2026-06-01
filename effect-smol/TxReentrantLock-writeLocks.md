@@ -23,6 +23,6 @@ const program = Effect.gen(function*() {
 declare const writeLocks: (self: TxReentrantLock) => Effect.Effect<number>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxReentrantLock.ts#L586)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxReentrantLock.ts#L587)
 
 Since v2.0.0

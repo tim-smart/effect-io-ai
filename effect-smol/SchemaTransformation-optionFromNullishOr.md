@@ -9,15 +9,15 @@ back to `T | null` or `T | undefined` depending on the provided
 
 **When to use**
 
-Use to convert nullish API fields to `Option` when both `null` and
-  `undefined` represent absence.
+Use when you need a schema transformation to convert nullish API fields to
+`Option` when both `null` and `undefined` represent absence.
 
 **Details**
 
-- Decode: `null` or `undefined` → `Option.none()`, otherwise → `Option.some(value)`.
-- Encode: `Option.none()` → `null` or `undefined` (per `options.onNoneEncoding`),
-  `Option.some(value)` → `value`.
-- Pure and synchronous.
+Decoding maps `null` and `undefined` to `Option.none()` and all other values
+to `Option.some(value)`. Encoding maps `Option.none()` to `null` or
+`undefined` according to `options.onNoneEncoding`, and maps
+`Option.some(value)` to `value`. The transformation is pure and synchronous.
 
 **Example** (Option from nullish, encoding None as null)
 
@@ -43,6 +43,6 @@ const schema = Schema.NullishOr(Schema.String).pipe(
 declare const optionFromNullishOr: <T>(options?: { onNoneEncoding: null | undefined; }) => Transformation<Option.Option<T>, T | null | undefined>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L1209)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L1226)
 
 Since v4.0.0

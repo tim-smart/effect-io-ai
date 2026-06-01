@@ -7,13 +7,13 @@ Checks whether a value has a given property key.
 
 **When to use**
 
-Use when you need to guard property access on `unknown` values.
-- You want a simple structural guard for objects.
+Use when you need a `Predicate` guard for property access on `unknown`
+values with a simple structural object check.
 
 **Details**
 
-- Uses the `in` operator and `isObjectKeyword`.
-- Does not check property value types.
+Uses the `in` operator and `isObjectKeyword`. This does not check property
+value types.
 
 **Example** (Guard property)
 
@@ -39,6 +39,6 @@ if (hasName(data)) {
 declare const hasProperty: { <P extends PropertyKey>(property: P): (self: unknown) => self is { [K in P]: unknown; }; <P extends PropertyKey>(self: unknown, property: P): self is { [K in P]: unknown; }; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L1183)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L1186)
 
 Since v2.0.0

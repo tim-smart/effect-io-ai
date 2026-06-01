@@ -6,6 +6,11 @@ Module: `Channel`<br />
 Maps each output element with an effectful function, preserving the source
 channel's done value.
 
+**When to use**
+
+Use when transforming each channel output needs an Effect, service
+dependency, failure channel, or configured concurrency.
+
 **Details**
 
 The mapping function receives the output element and its zero-based index.
@@ -57,6 +62,6 @@ const processedChannel = Channel.mapEffect(
 declare const mapEffect: { <OutElem, OutElem1, OutErr1, Env1>(f: (d: OutElem, i: number) => Effect.Effect<OutElem1, OutErr1, Env1>, options?: { readonly concurrency?: number | "unbounded" | undefined; readonly unordered?: boolean | undefined; }): <OutErr, OutDone, InElem, InErr, InDone, Env>(self: Channel<OutElem, OutErr, OutDone, InElem, InErr, InDone, Env>) => Channel<OutElem1, OutErr1 | OutErr, OutDone, InElem, InErr, InDone, Env1 | Env>; <OutElem, OutErr, OutDone, InElem, InErr, InDone, Env, OutElem1, OutErr1, Env1>(self: Channel<OutElem, OutErr, OutDone, InElem, InErr, InDone, Env>, f: (d: OutElem, i: number) => Effect.Effect<OutElem1, OutErr1, Env1>, options?: { readonly concurrency?: number | "unbounded" | undefined; readonly unordered?: boolean | undefined; }): Channel<OutElem1, OutErr | OutErr1, OutDone, InElem, InErr, InDone, Env | Env1>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L1945)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L1965)
 
 Since v2.0.0

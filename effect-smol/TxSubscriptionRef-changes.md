@@ -8,7 +8,8 @@ that first yields the current value, then every subsequent update.
 
 **When to use**
 
-Use to subscribe to committed changes through a scoped transactional queue.
+Use to subscribe to `TxSubscriptionRef` committed changes through a scoped
+transactional queue.
 
 **Example** (Subscribing to changes)
 
@@ -42,6 +43,6 @@ const program = Effect.gen(function*() {
 declare const changes: <A>(self: TxSubscriptionRef<A>) => Effect.Effect<TxQueue.TxQueue<A>, never, Scope.Scope>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxSubscriptionRef.ts#L459)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxSubscriptionRef.ts#L465)
 
 Since v3.10.0

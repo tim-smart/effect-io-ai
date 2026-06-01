@@ -38,6 +38,6 @@ const validSchedule = satisfiesCustomError(CustomErrorSchedule)
 declare const satisfiesErrorType: <T>() => <Error extends T, Output = never, Input = unknown, Env = never>(self: Schedule<Output, Input, Error, Env>) => Schedule<Output, Input, Error, Env>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L3568)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L3580)
 
 Since v4.0.0

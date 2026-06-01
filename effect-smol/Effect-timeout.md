@@ -8,9 +8,8 @@ the duration.
 
 **When to use**
 
-Use when exceeding the time limit should be represented as a typed
-failure. Use `timeoutOption` when a timeout should become `Option.none`, and
-`timeoutOrElse` when you want to run a fallback effect.
+Use when you need a timeout of an `Effect` to be represented as a typed
+failure.
 
 **Details**
 
@@ -65,6 +64,6 @@ Effect.runPromiseExit(timedEffect).then(console.log)
 declare const timeout: { (duration: Duration.Input): <A, E, R>(self: Effect<A, E, R>) => Effect<A, E | Cause.TimeoutError, R>; <A, E, R>(self: Effect<A, E, R>, duration: Duration.Input): Effect<A, E | Cause.TimeoutError, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L4475)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L4511)
 
 Since v2.0.0

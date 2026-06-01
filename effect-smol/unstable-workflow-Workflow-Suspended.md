@@ -12,6 +12,6 @@ triggered suspension.
 declare class Suspended
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Workflow.ts#L587)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Workflow.ts#L617)
 
 Since v4.0.0

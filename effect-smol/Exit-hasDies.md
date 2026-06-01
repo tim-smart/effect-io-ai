@@ -7,14 +7,12 @@ Checks whether a failed Exit contains defects (Die reasons).
 
 **When to use**
 
-Use to check for unexpected errors
+Use to check whether an `Exit` failure cause contains unexpected errors.
 
 **Details**
 
-- Returns `false` for successful exits
-
-Only checks for `Die` reasons in the Cause. A Cause with only `Fail` or
-`Interrupt` reasons returns `false`.
+Returns `false` for successful exits. Only checks for `Die` reasons in the
+Cause. A Cause with only `Fail` or `Interrupt` reasons returns `false`.
 
 **Example** (Checking for defects)
 
@@ -37,6 +35,6 @@ console.log(Exit.hasDies(Exit.succeed(42)))            // false
 declare const hasDies: <A, E>(self: Exit<A, E>) => self is Failure<A, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Exit.ts#L542)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Exit.ts#L538)
 
 Since v4.0.0

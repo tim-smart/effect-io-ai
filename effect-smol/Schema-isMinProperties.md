@@ -23,9 +23,9 @@ of properties.
 **Signature**
 
 ```ts
-declare const isMinProperties: (minProperties: number, annotations?: Annotations.Filter) => AST.Filter<object>
+declare const isMinProperties: (minProperties: number, annotations?: Annotations.Filter) => SchemaAST.Filter<object>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L7660)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L7875)
 
 Since v4.0.0

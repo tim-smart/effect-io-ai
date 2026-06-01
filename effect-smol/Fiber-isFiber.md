@@ -46,6 +46,6 @@ const program = Effect.gen(function*() {
 declare const isFiber: (u: unknown) => u is Fiber<unknown, unknown>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Fiber.ts#L616)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Fiber.ts#L618)
 
 Since v2.0.0

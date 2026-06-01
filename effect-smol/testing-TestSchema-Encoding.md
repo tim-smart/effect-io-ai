@@ -32,7 +32,7 @@ await encoding.succeed(42, "42")
 
 ```ts
 declare class Encoding<S> { constructor(schema: S, options?: {
-    readonly parseOptions?: AST.ParseOptions | undefined
+    readonly parseOptions?: SchemaAST.ParseOptions | undefined
   }) }
 ```
 

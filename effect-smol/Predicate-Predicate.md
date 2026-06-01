@@ -7,14 +7,14 @@ A function that decides whether a value of type `A` satisfies a condition.
 
 **When to use**
 
-Use when you want a reusable boolean check for `A`.
-- You plan to combine checks with `and`/`or`.
-- You want a simple filter predicate for arrays or iterables.
+Use when you want a reusable boolean check for `A`, especially when you plan
+to combine checks with `and`/`or` or pass a predicate to arrays
+and iterables.
 
 **Details**
 
-- Returns `true` or `false`; never throws by itself.
-- Does not narrow types unless you use `Refinement`.
+A predicate returns `true` or `false` and never throws by itself. It does not
+narrow types unless you use `Refinement`.
 
 **Example** (Define a predicate)
 

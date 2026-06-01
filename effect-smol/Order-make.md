@@ -7,15 +7,15 @@ Creates a new `Order` instance from a comparison function.
 
 **When to use**
 
-Use when when creating a custom order for a type that doesn't have a built-in order
-- When you need fine-grained control over comparison logic
-- When implementing orders for complex types
+Use when you need a sorting rule not covered by the built-in orders or input
+mapping helpers, and you can provide a total comparison.
 
 **Details**
 
-- Uses reference equality (`===`) as a shortcut: if `self === that`, returns `0` without calling the comparison function
-- The comparison function should return `-1`, `0`, or `1` based on the comparison result
-- The returned order satisfies total ordering laws if the comparison function does
+Uses reference equality (`===`) as a shortcut: if `self === that`, it returns
+`0` without calling the comparison function. The comparison function should
+return `-1`, `0`, or `1`, and the returned order satisfies total ordering
+laws when the comparison function does.
 
 **Example** (Creating an Order)
 
@@ -43,6 +43,6 @@ console.log(byAge({ name: "Alice", age: 25 }, { name: "Bob", age: 30 })) // -1
 declare const make: <A>(compare: (self: A, that: A) => -1 | 0 | 1) => Order<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Order.ts#L182)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Order.ts#L179)
 
 Since v2.0.0

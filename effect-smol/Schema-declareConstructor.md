@@ -14,7 +14,7 @@ export interface declareConstructor<T, E, TypeParameters extends ReadonlyArray<T
     E,
     TypeParameters[number]["DecodingServices"],
     TypeParameters[number]["EncodingServices"],
-    AST.Declaration,
+    SchemaAST.Declaration,
     declareConstructor<T, E, TypeParameters, Iso>,
     T,
     Iso,

@@ -8,8 +8,8 @@ allowing an empty result set.
 
 **When to use**
 
-Use when a query may return zero or more rows and an empty result should be
-represented as an empty array.
+Use when you need to run a query that may return zero or more rows and
+represent an empty result as an empty array.
 
 **See**
 

@@ -8,8 +8,8 @@ Interface for type-level functions used by `map`, `mapPick`, and
 
 **When to use**
 
-Use when you use this interface when defining a typed function for `map`,
-`mapPick`, or `mapOmit`.
+Use when defining a typed function for `map`, `mapPick`, or
+`mapOmit`.
 
 **Details**
 
@@ -42,6 +42,6 @@ export interface Lambda {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Struct.ts#L645)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Struct.ts#L646)
 
 Since v4.0.0

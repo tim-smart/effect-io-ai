@@ -7,7 +7,7 @@ Decodes a hexadecimal string to a UTF-8 `string`.
 
 **Details**
 
-- Fails with `Issue.InvalidValue` if the input is not valid hex.
+- Fails with `SchemaIssue.InvalidValue` if the input is not valid hex.
 
 **Example** (Decode hex to string)
 
@@ -29,6 +29,6 @@ const decode = SchemaGetter.decodeHexString<string>()
 declare const decodeHexString: <E extends string>() => Getter<string, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L1482)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L1496)
 
 Since v4.0.0

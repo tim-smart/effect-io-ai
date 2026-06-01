@@ -8,8 +8,8 @@ value on success, or `Option.none` when construction fails.
 
 **When to use**
 
-Use when you only need to know whether constructor input is valid and do
-not need error details.
+Use when you need to validate schema constructor input and only care whether
+construction succeeds, without exposing `SchemaIssue.Issue` details.
 
 **Signature**
 

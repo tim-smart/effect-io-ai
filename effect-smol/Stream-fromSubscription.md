@@ -7,8 +7,9 @@ Creates a stream from a PubSub subscription.
 
 **When to use**
 
-Use to create the subscription and `Stream.take` or
-cancellation to control how many values are consumed.
+Use when you already have a `PubSub.Subscription` and want to expose its
+messages as a `Stream`, with `Stream.take` or cancellation controlling how
+many values are consumed.
 
 **Example** (Creating a stream from a PubSub subscription)
 
@@ -37,6 +38,6 @@ Effect.runPromise(program)
 declare const fromSubscription: <A>(pubsub: PubSub.Subscription<A>) => Stream<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L1589)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L1600)
 
 Since v4.0.0

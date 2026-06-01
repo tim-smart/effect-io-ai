@@ -8,8 +8,8 @@ its string representation.
 
 **When to use**
 
-Use when schema decoding should accept either an IANA time-zone identifier or
-an offset string and produce a general `DateTime.TimeZone`.
+Use when you need a schema transformation to accept either an IANA time-zone
+identifier or an offset string and produce a general `DateTime.TimeZone`.
 
 **Details**
 
@@ -28,6 +28,6 @@ parsed as a time zone.
 declare const timeZoneFromString: Transformation<DateTime.TimeZone, string, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L1735)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L1761)
 
 Since v4.0.0

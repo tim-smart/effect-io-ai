@@ -8,9 +8,9 @@ Creates a Promise-based encoder for input already typed as the schema's decoded
 
 **When to use**
 
-Use when you need a `Promise`-returning encoder for values already typed as
-the schema's decoded `Type`, such as at a JavaScript `Promise` interop
-boundary.
+Use when you already have values typed as the schema's decoded `Type` and
+need encoding to return a JavaScript `Promise` that rejects with
+`SchemaIssue.Issue`.
 
 **Details**
 
@@ -25,9 +25,9 @@ rejects with a `SchemaIssue.Issue` on encoding failure.
 **Signature**
 
 ```ts
-declare const encodePromise: <S extends Schema.Encoder<unknown>>(schema: S, options?: AST.ParseOptions) => (input: S["Type"], options?: AST.ParseOptions) => Promise<S["Encoded"]>
+declare const encodePromise: <S extends Schema.Encoder<unknown>>(schema: S, options?: SchemaAST.ParseOptions) => (input: S["Type"], options?: SchemaAST.ParseOptions) => Promise<S["Encoded"]>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaParser.ts#L672)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaParser.ts#L649)
 
 Since v3.10.0

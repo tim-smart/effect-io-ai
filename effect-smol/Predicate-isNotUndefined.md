@@ -7,11 +7,12 @@ Checks whether a value is not `undefined`.
 
 **When to use**
 
-Use when you want to filter out `undefined` while preserving other falsy values.
+Use when you need a `Predicate` refinement that filters out `undefined`
+while preserving other falsy values.
 
 **Details**
 
-- Returns a refinement that excludes `undefined`.
+Returns a refinement that excludes `undefined`.
 
 **Example** (Filter undefined)
 
@@ -35,6 +36,6 @@ console.log(defined)
 declare const isNotUndefined: <A>(input: A) => input is Exclude<A, undefined>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L847)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L854)
 
 Since v2.0.0

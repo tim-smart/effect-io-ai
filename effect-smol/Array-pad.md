@@ -12,7 +12,7 @@ Use to ensure an array has a specific length, padding with a fill value or trunc
 
 **Details**
 
-- Returns an empty array when `n <= 0`.
+Returns an empty array when `n <= 0`.
 
 **Example** (Padding an array)
 
@@ -33,6 +33,6 @@ console.log(Array.pad([1, 2, 3], 6, 0)) // [1, 2, 3, 0, 0, 0]
 declare const pad: { <A, T>(n: number, fill: T): (self: Array<A>) => Array<A | T>; <A, T>(self: Array<A>, n: number, fill: T): Array<A | T>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L2878)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L2916)
 
 Since v3.8.4

@@ -22,9 +22,9 @@ most the required size.
 **Signature**
 
 ```ts
-declare const isMaxSize: (maxSize: number, annotations?: Annotations.Filter) => AST.Filter<{ readonly size: number; }>
+declare const isMaxSize: (maxSize: number, annotations?: Annotations.Filter) => SchemaAST.Filter<{ readonly size: number; }>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L7572)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L7787)
 
 Since v4.0.0

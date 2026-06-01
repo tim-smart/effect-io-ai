@@ -27,8 +27,8 @@ AST nodes that have a different encoded representation.
 declare class Link { constructor(
     to: AST,
     transformation:
-      | Transformation.Transformation<any, any, any, any>
-      | Transformation.Middleware<any, any, any, any, any, any>
+      | SchemaTransformation.Transformation<any, any, any, any>
+      | SchemaTransformation.Middleware<any, any, any, any, any, any>
   ) }
 ```
 

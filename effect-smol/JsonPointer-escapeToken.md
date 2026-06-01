@@ -7,9 +7,7 @@ Escapes a JSON Pointer reference token according to RFC 6901 by encoding special
 
 **When to use**
 
-Use to build JSON Pointers from object keys or path segments that may contain special characters
-- Escaping tokens before joining them with `/` to form a complete JSON Pointer
-- Preparing reference tokens for use in JSON Patch operations or schema references
+Use when you need to escape a single JSON Pointer path segment.
 
 **Details**
 
@@ -42,6 +40,6 @@ JsonPointer.escapeToken("path/to~key") // "path~1to~0key"
 declare const escapeToken: (token: string) => string
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/JsonPointer.ts#L89)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/JsonPointer.ts#L87)
 
 Since v4.0.0

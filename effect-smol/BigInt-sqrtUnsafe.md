@@ -7,7 +7,9 @@ Returns the integer square root of a non-negative `bigint`.
 
 **When to use**
 
-Use when the input is known to be non-negative and invalid input should throw.
+Use when you need to compute an integer square root for a `bigint` that has
+already been validated as non-negative, and you want negative input to throw
+instead of returning `Option.none`.
 
 **Details**
 
@@ -39,6 +41,6 @@ assert.deepStrictEqual(BigInt.sqrtUnsafe(16n), 4n)
 declare const sqrtUnsafe: (n: bigint) => bigint
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigInt.ts#L755)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigInt.ts#L758)
 
 Since v4.0.0

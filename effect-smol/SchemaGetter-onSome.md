@@ -7,7 +7,8 @@ Creates a getter that handles present values (`Option.Some`), passing `None` thr
 
 **When to use**
 
-Use when you need to transform or validate only when a value is present.
+Use when you need a schema getter to transform or validate only when a field
+value is present.
 - Missing keys should remain absent in the output.
 
 **Details**
@@ -35,9 +36,9 @@ const parseIfPresent = SchemaGetter.onSome<number, string>(
 **Signature**
 
 ```ts
-declare const onSome: <T, E, R = never>(f: (e: E, options: AST.ParseOptions) => Effect.Effect<Option.Option<T>, Issue.Issue, R>) => Getter<T, E, R>
+declare const onSome: <T, E, R = never>(f: (e: E, options: SchemaAST.ParseOptions) => Effect.Effect<Option.Option<T>, SchemaIssue.Issue, R>) => Getter<T, E, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L476)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L478)
 
 Since v4.0.0

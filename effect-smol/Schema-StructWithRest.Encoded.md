@@ -9,10 +9,9 @@ schema's encoded type with the encoded types of all rest record schemas.
 **Signature**
 
 ```ts
-type Encoded<S, Records> = & S["Encoded"]
-    & MergeTuple<{ readonly [K in keyof Records]: Records[K]["Encoded"] }>
+type Encoded<S, Records> = Intersect<S, Records, "Encoded">
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L3414)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L3568)
 
 Since v3.10.0

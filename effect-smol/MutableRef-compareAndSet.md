@@ -9,8 +9,8 @@ Uses Effect's Equal interface for value comparison.
 
 **When to use**
 
-Use to replace a value only when the current value still matches an expected
-value.
+Use to replace a `MutableRef` value only when the current value still matches
+an expected value.
 
 **Example** (Comparing and setting values)
 

@@ -40,6 +40,6 @@ console.log(Min.combine(1, 3))
 declare const min: <A>(order: Order.Order<A>) => Combiner<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Combiner.ts#L201)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Combiner.ts#L200)
 
 Since v4.0.0

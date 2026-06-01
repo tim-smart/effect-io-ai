@@ -6,6 +6,11 @@ Module: `HashMap`<br />
 Looks up the value for the specified key in the `HashMap` unsafely using the
 internal hashing function.
 
+**When to use**
+
+Use when reading from a `HashMap` by a key known to exist, and throwing is an
+acceptable programming error for a missing key.
+
 **Gotchas**
 
 This function throws an error if the key is not found. Use `HashMap.get` for
@@ -42,6 +47,6 @@ if (Option.isSome(dbUrl)) {
 declare const getUnsafe: { <K1 extends K, K>(key: K1): <V>(self: HashMap<K, V>) => V; <K1 extends K, K, V>(self: HashMap<K, V>, key: K1): V; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashMap.ts#L472)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashMap.ts#L477)
 
 Since v4.0.0

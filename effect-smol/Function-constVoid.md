@@ -7,7 +7,7 @@ Returns no meaningful value when called.
 
 **When to use**
 
-Use when an API expects a thunk used only for its call effect and not for a
+Use when you need a thunk that is called only for its effect and has no
 meaningful return value.
 
 **Example** (Returning void from a thunk)

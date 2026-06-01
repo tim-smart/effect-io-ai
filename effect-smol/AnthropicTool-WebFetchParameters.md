@@ -5,6 +5,11 @@ Module: `AnthropicTool`<br />
 
 Type of the parameters Claude supplies when invoking the Anthropic web fetch tool.
 
+**When to use**
+
+Use when typing Claude-supplied web-fetch tool parameters after schema
+validation, before enforcing URL provenance or length constraints.
+
 **Details**
 
 The payload contains the single `url` parameter for Anthropic web fetch.
@@ -20,6 +25,6 @@ length is 250 characters.
 type WebFetchParameters = typeof WebFetchParameters.Type
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L2356)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L2403)
 
 Since v4.0.0

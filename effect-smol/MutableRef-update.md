@@ -8,8 +8,8 @@ and returns the reference.
 
 **When to use**
 
-Use to transform the current value in place when you want the same reference
-back.
+Use when you need an in-place `MutableRef` value transformation that returns
+the same `MutableRef`.
 
 **Example** (Updating values)
 
@@ -54,6 +54,6 @@ console.log(MutableRef.get(list)) // [1, 2, 3, 4]
 declare const update: { <T>(f: (value: T) => T): (self: MutableRef<T>) => MutableRef<T>; <T>(self: MutableRef<T>, f: (value: T) => T): MutableRef<T>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableRef.ts#L726)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableRef.ts#L731)
 
 Since v2.0.0

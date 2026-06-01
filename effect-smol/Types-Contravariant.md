@@ -39,6 +39,6 @@ interface Consumer<T> {
 type Contravariant<A> = (_: A) => void
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Types.ts#L785)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Types.ts#L756)
 
 Since v2.0.0

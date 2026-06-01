@@ -8,8 +8,8 @@ request handling for the provided context.
 
 **When to use**
 
-Use when client-side cluster request handling needs to decide whether an
-interrupt should be ignored.
+Use when you need client-side cluster request handling to decide whether to
+ignore an interrupt.
 
 **Details**
 

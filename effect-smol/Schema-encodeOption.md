@@ -9,7 +9,8 @@ failure.
 
 **When to use**
 
-Use when typed input should be encoded and only success or failure matters.
+Use when you already have a value typed as the schema's `Type` and only need
+to know whether encoding succeeded.
 
 **Details**
 
@@ -20,9 +21,9 @@ application options override creation options.
 **Signature**
 
 ```ts
-declare const encodeOption: <S extends Encoder<unknown>>(schema: S, options?: AST.ParseOptions) => (input: S["Type"], options?: AST.ParseOptions) => Option_.Option<S["Encoded"]>
+declare const encodeOption: <S extends Encoder<unknown>>(schema: S, options?: SchemaAST.ParseOptions) => (input: S["Type"], options?: SchemaAST.ParseOptions) => Option_.Option<S["Encoded"]>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L1659)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L1750)
 
 Since v3.10.0

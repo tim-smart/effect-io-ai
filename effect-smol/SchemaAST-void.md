@@ -22,6 +22,6 @@ Use when constructing or comparing AST nodes that represent the TypeScript
 declare const void: Void
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L891)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L892)
 
 Since v4.0.0

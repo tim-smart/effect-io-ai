@@ -7,8 +7,8 @@ Order instance for `number` values.
 
 **When to use**
 
-Use when sorting or comparing numbers through APIs that accept an ordering
-instance.
+Use when you need to sort or compare numbers through APIs that accept an
+ordering instance.
 
 **Example** (Comparing numbers)
 
@@ -26,6 +26,6 @@ console.log(Number.Order(1, 1)) // 0
 declare const Order: order.Order<number>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Number.ts#L324)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Number.ts#L328)
 
 Since v2.0.0

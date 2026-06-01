@@ -17,6 +17,6 @@ for a clustered RPC request.
 declare class WithExit<R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Reply.ts#L309)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Reply.ts#L310)
 
 Since v4.0.0

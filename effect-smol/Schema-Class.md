@@ -14,7 +14,7 @@ export interface Class<Self, S extends Top & { readonly fields: Struct.Fields },
     S["Encoded"],
     S["DecodingServices"],
     S["EncodingServices"],
-    AST.Declaration,
+    SchemaAST.Declaration,
     decodeTo<declareConstructor<Self, S["Encoded"], readonly [S], S["Iso"]>, S>,
     RequiredKeys<S["~type.make.in"]> extends never ? void | S["~type.make.in"] : S["~type.make.in"],
     S["Iso"],
@@ -69,6 +69,6 @@ export interface Class<Self, S extends Top & { readonly fields: Struct.Fields },
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L11607)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L11804)
 
 Since v3.10.0

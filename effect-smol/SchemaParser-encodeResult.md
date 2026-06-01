@@ -8,9 +8,8 @@ reporting failure safely as a `Result`.
 
 **When to use**
 
-Use when the input is already typed as the schema's decoded `Type` and
-encoding failures should be returned as a `Result` instead of thrown or run in
-`Effect`.
+Use when you already have input typed as the schema's decoded `Type` and want
+encoding failures returned as `Result.fail` with `SchemaIssue.Issue`.
 
 **Details**
 
@@ -25,9 +24,9 @@ failure.
 **Signature**
 
 ```ts
-declare const encodeResult: <S extends Schema.Encoder<unknown>>(schema: S, options?: AST.ParseOptions) => (input: S["Type"], options?: AST.ParseOptions) => Result.Result<S["Encoded"], Issue.Issue>
+declare const encodeResult: <S extends Schema.Encoder<unknown>>(schema: S, options?: SchemaAST.ParseOptions) => (input: S["Type"], options?: SchemaAST.ParseOptions) => Result.Result<S["Encoded"], SchemaIssue.Issue>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaParser.ts#L829)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaParser.ts#L770)
 
 Since v4.0.0

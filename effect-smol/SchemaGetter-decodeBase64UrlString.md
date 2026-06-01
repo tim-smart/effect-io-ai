@@ -7,7 +7,7 @@ Decodes a URL-safe Base64 string to a UTF-8 `string`.
 
 **Details**
 
-- Fails with `Issue.InvalidValue` if the input is not valid Base64Url.
+- Fails with `SchemaIssue.InvalidValue` if the input is not valid Base64Url.
 
 **Example** (Decode Base64Url to string)
 
@@ -29,6 +29,6 @@ const decode = SchemaGetter.decodeBase64UrlString<string>()
 declare const decodeBase64UrlString: <E extends string>() => Getter<string, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L1420)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L1434)
 
 Since v4.0.0

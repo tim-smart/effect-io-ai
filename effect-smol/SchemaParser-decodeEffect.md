@@ -8,9 +8,9 @@ type.
 
 **When to use**
 
-Use when the input is already typed as the schema's `Encoded` type and
-decoding should stay in `Effect`, including parse failures and required
-decoding services.
+Use when you already have input typed as the schema's `Encoded` type and
+need an `Effect` whose failure channel is `SchemaIssue.Issue`, while
+preserving decoding service requirements.
 
 **Details**
 
@@ -26,9 +26,9 @@ returned `Effect`.
 **Signature**
 
 ```ts
-declare const decodeEffect: <S extends Schema.Top>(schema: S, options?: AST.ParseOptions) => (input: S["Encoded"], options?: AST.ParseOptions) => Effect.Effect<S["Type"], Issue.Issue, S["DecodingServices"]>
+declare const decodeEffect: <S extends Schema.Top>(schema: S, options?: SchemaAST.ParseOptions) => (input: S["Encoded"], options?: SchemaAST.ParseOptions) => Effect.Effect<S["Type"], SchemaIssue.Issue, S["DecodingServices"]>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaParser.ts#L283)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaParser.ts#L287)
 
 Since v4.0.0

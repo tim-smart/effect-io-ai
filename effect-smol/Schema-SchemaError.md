@@ -8,7 +8,7 @@ or encoding fails.
 
 **Details**
 
-The `issue` field contains a structured `Issue.Issue` tree describing
+The `issue` field contains a structured `SchemaIssue.Issue` tree describing
 every validation failure, including the path to the problematic value,
 expected types, and actual values received. `message` renders the issue tree
 as a human-readable string.
@@ -36,6 +36,6 @@ try {
 declare const SchemaError: typeof InternalSchema.SchemaError
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L949)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L958)
 
 Since v4.0.0

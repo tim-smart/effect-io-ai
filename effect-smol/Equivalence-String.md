@@ -7,7 +7,7 @@ Equivalence instance for strings using strict equality (`===`).
 
 **When to use**
 
-Use when an API needs an `Equivalence` instance for string equality.
+Use when you need to supply case-sensitive string equality.
 
 **Example** (Comparing strings)
 
@@ -24,6 +24,6 @@ console.log(Equivalence.String("hello", "world")) // false
 declare const String: Equivalence<string>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Equivalence.ts#L268)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Equivalence.ts#L262)
 
 Since v4.0.0

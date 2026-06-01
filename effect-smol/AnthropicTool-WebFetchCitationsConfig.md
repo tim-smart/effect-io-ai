@@ -5,6 +5,11 @@ Module: `AnthropicTool`<br />
 
 Configuration payload for enabling or disabling citations on web fetch results.
 
+**When to use**
+
+Use when typing parsed web-fetch citation configuration shared between
+request arguments and handler code.
+
 **Details**
 
 The payload contains the `enabled` flag. `citations` is optional on
@@ -20,6 +25,6 @@ The payload contains the `enabled` flag. `citations` is optional on
 type WebFetchCitationsConfig = typeof WebFetchCitationsConfig.Type
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L2237)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L2274)
 
 Since v4.0.0

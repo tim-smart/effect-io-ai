@@ -7,13 +7,13 @@ Creates a getter that always produces the given constant value, ignoring the inp
 
 **When to use**
 
-Use when a schema field should always decode to a fixed value.
-- You need a placeholder getter that produces a known default.
+Use when you need a schema getter that always decodes a field to a fixed
+value.
 
 **Details**
 
-- Pure, no side effects.
-- Always returns `Option.some(t)` regardless of whether input is `Some` or `None`.
+The getter is pure and always returns `Option.some(t)` regardless of whether
+the input is `Some` or `None`.
 
 **Example** (Constant getter)
 

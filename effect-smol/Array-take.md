@@ -11,8 +11,7 @@ Use to keep up to the first `n` elements from an iterable as a new array.
 
 **Details**
 
-- `n` is clamped to `[0, length]`.
-- Returns an empty array when `n <= 0`.
+`n` is clamped to `[0, length]`. Returns an empty array when `n <= 0`.
 
 **Example** (Taking from the start)
 
@@ -34,6 +33,6 @@ console.log(Array.take([1, 2, 3, 4, 5], 3)) // [1, 2, 3]
 declare const take: { (n: number): <A>(self: Iterable<A>) => Array<A>; <A>(self: Iterable<A>, n: number): Array<A>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L1356)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L1371)
 
 Since v2.0.0

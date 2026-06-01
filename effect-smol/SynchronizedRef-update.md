@@ -23,6 +23,6 @@ Use to apply a pure state transition to a `SynchronizedRef` as a serialized
 declare const update: { <A>(f: (a: A) => A): (self: SynchronizedRef<A>) => Effect.Effect<void>; <A>(self: SynchronizedRef<A>, f: (a: A) => A): Effect.Effect<void>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SynchronizedRef.ts#L466)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SynchronizedRef.ts#L471)
 
 Since v2.0.0

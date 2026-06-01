@@ -7,10 +7,7 @@ Transforms an equivalence relation by mapping the input values before comparison
 
 **When to use**
 
-Use when you need an equivalence for a complex type based on a single property
-- Use when you want to normalize values before comparison, such as case-insensitive strings
-- Use when creating equivalences that focus on specific fields of objects
-- Use as a building block for creating equivalences via `combine` or `combineAll`
+Use when you need an equivalence for one type by comparing a derived value.
 
 **Details**
 
@@ -18,6 +15,8 @@ Use when you need an equivalence for a complex type based on a single property
 - The transformation function should be pure and have no side effects
 - The resulting equivalence compares the transformed values using the provided equivalence
 - The result is also an equivalence that satisfies reflexive, symmetric, and transitive properties
+- Useful for comparing by one property or normalizing values before
+  comparison, such as case-insensitive strings
 
 **Example** (Equivalence based on object property)
 
@@ -69,6 +68,6 @@ console.log(caseInsensitiveEq("Hello", "World")) // false
 declare const mapInput: { <B, A>(f: (b: B) => A): (self: Equivalence<A>) => Equivalence<B>; <A, B>(self: Equivalence<A>, f: (b: B) => A): Equivalence<B>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Equivalence.ts#L533)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Equivalence.ts#L518)
 
 Since v2.0.0

@@ -7,8 +7,7 @@ Returns a new `Context` that contains only the specified services.
 
 **When to use**
 
-Use when you want to keep a small allowlist of services. Use `omit`
-when it is easier to name the services to remove.
+Use when you want to keep an allowlist of services in a `Context`.
 
 **Example** (Picking services from a context)
 
@@ -43,6 +42,6 @@ assert.deepStrictEqual(Context.getOption(context, Timeout), Option.none())
 declare const pick: <S extends ReadonlyArray<Key<any, any>>>(...services: S) => <Services>(self: Context<Services>) => Context<Services & Service.Identifier<S[number]>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Context.ts#L1234)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Context.ts#L1232)
 
 Since v2.0.0

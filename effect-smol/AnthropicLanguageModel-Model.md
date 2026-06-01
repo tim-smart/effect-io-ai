@@ -17,6 +17,6 @@ of known Claude ids.
 type Model = typeof Generated.Model.Type
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicLanguageModel.ts#L74)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicLanguageModel.ts#L73)
 
 Since v4.0.0

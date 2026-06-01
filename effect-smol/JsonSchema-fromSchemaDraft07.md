@@ -7,8 +7,8 @@ Parses a raw Draft-07 JSON Schema into a `Document<"draft-2020-12">`.
 
 **When to use**
 
-Use when you have a JSON Schema that follows Draft-07 conventions and
-need the canonical Draft-2020-12 document representation.
+Use when you have a raw JSON Schema object that follows Draft-07 conventions
+and need the canonical Draft-2020-12 document representation.
 
 **Details**
 

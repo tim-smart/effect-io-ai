@@ -7,9 +7,7 @@ Applies a timeout to an effect, with a fallback effect executed if the timeout i
 
 **When to use**
 
-Use when a timeout should switch to a fallback effect. Use
-`timeout` when a timeout should fail the effect, and `timeoutOption` when a
-timeout should become `Option.none`.
+Use when a timeout of an `Effect` should switch to a fallback effect.
 
 **Details**
 
@@ -60,6 +58,6 @@ Effect.runPromise(program).then(console.log)
 declare const timeoutOrElse: { <A2, E2, R2>(options: { readonly duration: Duration.Input; readonly orElse: LazyArg<Effect<A2, E2, R2>>; }): <A, E, R>(self: Effect<A, E, R>) => Effect<A | A2, E | E2, R | R2>; <A, E, R, A2, E2, R2>(self: Effect<A, E, R>, options: { readonly duration: Duration.Input; readonly orElse: LazyArg<Effect<A2, E2, R2>>; }): Effect<A | A2, E | E2, R | R2>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L4599)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L4631)
 
 Since v4.0.0

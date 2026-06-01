@@ -7,8 +7,8 @@ Describes user location for localizing search results.
 
 **When to use**
 
-Use when providing location helps return more relevant results for
-location-dependent queries like weather, local businesses, or events.
+Use when you need to localize search results for location-dependent queries
+like weather, local businesses, or events.
 
 **Details**
 
@@ -26,6 +26,6 @@ The schema uses `type: "approximate"` plus optional `city`, `region`,
 declare const WebSearchUserLocation: Schema.Struct<{ readonly type: Schema.Literal<"approximate">; readonly city: Schema.optional<Schema.String>; readonly region: Schema.optional<Schema.String>; readonly country: Schema.optional<Schema.String>; readonly timezone: Schema.optional<Schema.String>; }>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L2040)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L2072)
 
 Since v4.0.0

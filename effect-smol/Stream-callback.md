@@ -7,8 +7,8 @@ Creates a stream from a callback that can emit values into a queue.
 
 **When to use**
 
-Use when you can use the `Queue` with the apis from the `Queue` module to emit
-values to the stream or to signal the stream ending.
+Use when you need callback-based code to emit stream values by offering to a
+`Queue`, or signal stream completion through the `Queue` module APIs.
 
 By default it uses an "unbounded" buffer size.
 You can customize the buffer size and strategy by passing an object as the

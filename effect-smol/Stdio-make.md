@@ -8,9 +8,8 @@ attaches the `Stdio` type identifier.
 
 **When to use**
 
-Use to assemble a concrete `Stdio` service when you already have
-implementations for command-line arguments, standard output, standard error,
-and standard input.
+Use when you need to assemble a concrete `Stdio` service from command-line
+arguments and standard I/O implementations.
 
 **Details**
 
@@ -27,6 +26,6 @@ The returned service reuses the supplied fields unchanged and only adds the
 declare const make: (options: Omit<Stdio, TypeId>) => Stdio
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stdio.ts#L129)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stdio.ts#L128)
 
 Since v4.0.0

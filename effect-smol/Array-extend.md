@@ -8,12 +8,12 @@ collecting the results.
 
 **When to use**
 
-Use when a computation depends on every suffix of an array, such as
+Use when you need to compute a result from every suffix of an array, such as
 cumulative aggregations from each position.
 
 **Details**
 
-- For index `i`, the function receives `self.slice(i)`.
+For index `i`, the function receives `self.slice(i)`.
 
 **Example** (Suffix lengths)
 
@@ -33,6 +33,6 @@ console.log(Array.extend([1, 2, 3], (as) => as.length)) // [3, 2, 1]
 declare const extend: { <A, B>(f: (as: ReadonlyArray<A>) => B): (self: ReadonlyArray<A>) => Array<B>; <A, B>(self: ReadonlyArray<A>, f: (as: ReadonlyArray<A>) => B): Array<B>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L4236)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L4285)
 
 Since v2.0.0

@@ -7,10 +7,8 @@ Creates a Web OpenTelemetry layer from configuration, providing the resource and
 
 **When to use**
 
-Use to install browser OpenTelemetry support for an Effect application when
-service metadata is provided in code and tracing, metrics, or logging should
-be enabled from supplied span processors, metric readers, or log record
-processors.
+Use to install browser OpenTelemetry support when service metadata is
+configured in code and telemetry processors or readers are supplied directly.
 
 **Details**
 
@@ -30,6 +28,6 @@ treated as not configured.
 declare const layer: { (evaluate: LazyArg<Configuration>): Layer.Layer<Resource.Resource>; <E, R>(evaluate: Effect.Effect<Configuration, E, R>): Layer.Layer<Resource.Resource, E, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/WebSdk.ts#L122)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/WebSdk.ts#L120)
 
 Since v4.0.0

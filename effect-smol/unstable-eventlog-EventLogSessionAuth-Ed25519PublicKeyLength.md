@@ -8,8 +8,8 @@ authentication.
 
 **When to use**
 
-Use when you need to validate the byte length of raw Ed25519 public keys for
-session authentication.
+Use when implementing session-auth serialization or validation that must
+reject public keys with a non-canonical raw byte length.
 
 **Signature**
 

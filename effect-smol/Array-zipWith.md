@@ -6,6 +6,11 @@ Module: `Array`<br />
 Combines elements from two iterables pairwise using a function. If the
 iterables differ in length, extra elements are discarded.
 
+**When to use**
+
+Use when zipping two iterables in an array pipeline and each pair should
+become a computed array element instead of a tuple.
+
 **Example** (Zipping with addition)
 
 ```ts
@@ -24,6 +29,6 @@ console.log(Array.zipWith([1, 2, 3], [4, 5, 6], (a, b) => a + b)) // [5, 7, 9]
 declare const zipWith: { <B, A, C>(that: NonEmptyReadonlyArray<B>, f: (a: A, b: B) => C): (self: NonEmptyReadonlyArray<A>) => NonEmptyArray<C>; <B, A, C>(that: Iterable<B>, f: (a: A, b: B) => C): (self: Iterable<A>) => Array<C>; <A, B, C>(self: NonEmptyReadonlyArray<A>, that: NonEmptyReadonlyArray<B>, f: (a: A, b: B) => C): NonEmptyArray<C>; <B, A, C>(self: Iterable<A>, that: Iterable<B>, f: (a: A, b: B) => C): Array<C>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L2295)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L2315)
 
 Since v2.0.0

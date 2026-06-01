@@ -21,6 +21,6 @@ consuming it.
 declare const toArrayN: <A>(self: MutableList<A>, n: number) => Array<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableList.ts#L846)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableList.ts#L856)
 
 Since v4.0.0

@@ -7,8 +7,8 @@ Defines the string key for the active tracer context reference.
 
 **When to use**
 
-Use when integrating lower-level tracing code that needs the raw context key
-for active tracer lookup.
+Use when you need the raw context key for active tracer lookup in lower-level
+tracing code.
 
 **Signature**
 

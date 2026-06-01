@@ -7,8 +7,8 @@ Provides the `Permissions` service using the browser `navigator.permissions` API
 
 **When to use**
 
-Use when browser programs need a live `Permissions` service backed by the
-ambient `navigator.permissions` implementation.
+Use when you need a live browser `Permissions` service backed by the ambient
+`navigator.permissions` implementation.
 
 **Details**
 

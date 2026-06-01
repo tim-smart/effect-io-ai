@@ -7,7 +7,7 @@ Provides a base class for immutable data types.
 
 **When to use**
 
-Use when you need a lightweight immutable value type with `.pipe()` support. If you also need a `_tag` discriminator, use `TaggedClass`; if you need a yieldable error, use `Error` or `TaggedError`.
+Use when you need a lightweight immutable value type with `.pipe()` support.
 
 **Details**
 

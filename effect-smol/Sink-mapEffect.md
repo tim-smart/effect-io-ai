@@ -7,8 +7,8 @@ Transforms this sink's result effectfully.
 
 **When to use**
 
-Use when transforming a sink result itself is effectful, can fail, or needs
-services.
+Use when you need a sink result transformation that is effectful, can fail,
+or requires services.
 
 **Details**
 

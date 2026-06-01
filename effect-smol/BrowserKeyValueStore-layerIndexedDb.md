@@ -7,8 +7,8 @@ Creates a `KeyValueStore` layer backed by IndexedDB.
 
 **When to use**
 
-Use when a browser `KeyValueStore` needs persistent asynchronous IndexedDB
-storage instead of the synchronous Web Storage APIs.
+Use when you need persistent asynchronous IndexedDB storage for a browser
+`KeyValueStore` instead of the synchronous Web Storage APIs.
 
 **Details**
 

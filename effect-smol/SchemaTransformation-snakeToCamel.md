@@ -8,13 +8,14 @@ on decode and camelCase to snake_case on encode.
 
 **When to use**
 
-Use to convert API field names between snake_case and camelCase conventions.
+Use when you need a schema transformation to convert API field names between
+snake_case and camelCase conventions.
 
 **Details**
 
-- Decode: `"my_field_name"` → `"myFieldName"`.
-- Encode: `"myFieldName"` → `"my_field_name"`.
-- Round-trippable for standard snake_case/camelCase.
+Decoding converts values such as `"my_field_name"` to `"myFieldName"`.
+Encoding converts values such as `"myFieldName"` back to `"my_field_name"`.
+The transformation is round-trippable for standard snake_case and camelCase.
 
 **Example** (Snake to camel conversion)
 
@@ -37,6 +38,6 @@ const SnakeToCamel = Schema.String.pipe(
 declare const snakeToCamel: () => Transformation<string, string>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L532)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L538)
 
 Since v4.0.0

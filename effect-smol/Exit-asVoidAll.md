@@ -11,8 +11,8 @@ Use to validate that all exits in a collection succeeded
 
 **Details**
 
-- If all exits are successful, returns a void success
-- If any exit is a failure, returns a single failure with all error causes combined
+If all exits are successful, this returns a void success. If any exit is a
+failure, this returns a single failure with all error causes combined.
 
 Iterates over the entire collection. Collects all failure causes, not just
 the first.
@@ -39,6 +39,6 @@ console.log(Exit.isFailure(Exit.asVoidAll(mixed))) // true
 declare const asVoidAll: <I extends Iterable<Exit<any, any>>>(exits: I) => Exit<void, I extends Iterable<Exit<infer _A, infer _E>> ? _E : never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Exit.ts#L1046)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Exit.ts#L1036)
 
 Since v4.0.0

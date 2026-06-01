@@ -7,8 +7,8 @@ Returns the identity getter, typed for when the encoded type `E` is a subtype of
 
 **When to use**
 
-Use when the encoded type is narrower than the decoded type.
-- You need type-safe passthrough without `{ strict: false }`.
+Use when you need a schema getter that passes values through without
+`{ strict: false }` for an encoded type that narrows the decoded type.
 
 **Details**
 

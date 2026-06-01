@@ -6,6 +6,11 @@ Module: `FiberHandle`<br />
 Sets the fiber in a FiberHandle. When the fiber completes, it will be removed from the FiberHandle.
 If a fiber is already running, it will be interrupted unless `options.onlyIfMissing` is set.
 
+**When to use**
+
+Use when an existing forked fiber must be installed synchronously into a
+handle and immediate interruption of replaced or closed fibers is acceptable.
+
 **Example** (Setting a fiber unsafely)
 
 ```ts
@@ -30,6 +35,6 @@ Effect.gen(function*() {
 declare const setUnsafe: { <A, E, XE extends E, XA extends A>(fiber: Fiber.Fiber<XA, XE>, options?: { readonly onlyIfMissing?: boolean | undefined; readonly propagateInterruption?: boolean | undefined; }): (self: FiberHandle<A, E>) => void; <A, E, XE extends E, XA extends A>(self: FiberHandle<A, E>, fiber: Fiber.Fiber<XA, XE>, options?: { readonly onlyIfMissing?: boolean | undefined; readonly propagateInterruption?: boolean | undefined; }): void; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FiberHandle.ts#L311)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FiberHandle.ts#L321)
 
 Since v4.0.0

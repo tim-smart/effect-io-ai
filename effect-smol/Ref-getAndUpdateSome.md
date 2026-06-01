@@ -7,7 +7,7 @@ Gets the current value of the Ref and updates it atomically with the given parti
 
 **When to use**
 
-Use to return the previous value while applying a conditional update.
+Use to return the previous `Ref` value while applying a conditional update.
 
 **Details**
 

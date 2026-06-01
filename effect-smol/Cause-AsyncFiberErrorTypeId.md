@@ -12,6 +12,6 @@ Unique brand present on `AsyncFiberError` values and used by
 declare const AsyncFiberErrorTypeId: "~effect/Cause/AsyncFiberError"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L1695)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L1693)
 
 Since v4.0.0

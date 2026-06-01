@@ -4,7 +4,7 @@ Module: `OpenAiTelemetry`<br />
 ## OpenAiTelemetry.AllAttributes
 
 All telemetry attributes which are part of the GenAI specification,
-including the OpenAi-specific attributes.
+including the OpenAI-specific attributes.
 
 **Signature**
 

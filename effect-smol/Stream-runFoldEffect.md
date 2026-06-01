@@ -5,6 +5,11 @@ Module: `Stream`<br />
 
 Runs the stream and folds elements using an effectful reducer.
 
+**When to use**
+
+Use when reducing stream elements needs Effects, services, or failures in the
+reducer.
+
 **Example** (Effectfully folding stream values)
 
 ```ts
@@ -29,6 +34,6 @@ Effect.runPromise(program)
 declare const runFoldEffect: { <Z, A, EX, RX>(initial: LazyArg<Z>, f: (acc: Z, a: A) => Effect.Effect<Z, EX, RX>): <E, R>(self: Stream<A, E, R>) => Effect.Effect<Z, E | EX, R | RX>; <A, E, R, Z, EX, RX>(self: Stream<A, E, R>, initial: LazyArg<Z>, f: (acc: Z, a: A) => Effect.Effect<Z, EX, RX>): Effect.Effect<Z, E | EX, R | RX>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L10736)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L10831)
 
 Since v2.0.0

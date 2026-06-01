@@ -7,9 +7,7 @@ Represents the error type produced when config loading or validation fails.
 
 **When to use**
 
-Use when match on `error.cause._tag` to distinguish source failures from
-  validation failures.
-- Pass to `fail` to create a Config that always errors.
+Use when you need to inspect config loading or validation failures.
 
 **Details**
 
@@ -29,6 +27,6 @@ Wraps either:
 declare class ConfigError { constructor(cause: SourceError | Schema.SchemaError) }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Config.ts#L135)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Config.ts#L133)
 
 Since v4.0.0

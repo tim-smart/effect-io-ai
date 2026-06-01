@@ -8,8 +8,8 @@ the context does not contain an override.
 
 **When to use**
 
-Use to resolve a `Context.Reference` against a context when you want either
-the stored override or the reference's default value.
+Use when you need a `Context.Reference` value resolved from either a stored
+override or the reference's default value.
 
 **Details**
 
@@ -48,6 +48,6 @@ console.log(typeof logger.log) // "function"
 declare const getReferenceUnsafe: <Services, S>(self: Context<Services>, service: Reference<S>) => S
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Context.ts#L1012)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Context.ts#L1013)
 
 Since v4.0.0

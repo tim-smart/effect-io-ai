@@ -8,9 +8,9 @@ Type-level representation of `String`.
 **Signature**
 
 ```ts
-export interface String extends Bottom<string, string, never, never, AST.String, String> {}
+export interface String extends Bottom<string, string, never, never, SchemaAST.String, String> {}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L2551)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L2701)
 
 Since v4.0.0

@@ -23,6 +23,6 @@ const constNull: Function.LazyArg<null> = Function.constant(null)
 type LazyArg<A> = () => A
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Function.ts#L241)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Function.ts#L242)
 
 Since v2.0.0

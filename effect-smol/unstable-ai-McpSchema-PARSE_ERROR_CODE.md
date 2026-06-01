@@ -7,8 +7,8 @@ Represents the JSON-RPC error code for invalid JSON that could not be parsed.
 
 **When to use**
 
-Use when you need the JSON-RPC error code for invalid JSON that could not be
-parsed.
+Use when building an MCP/JSON-RPC error response before a request object is
+available because the JSON payload could not be parsed.
 
 **Signature**
 
@@ -16,6 +16,6 @@ parsed.
 declare const PARSE_ERROR_CODE: -32700
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L540)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L542)
 
 Since v4.0.0

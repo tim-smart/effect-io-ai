@@ -197,7 +197,7 @@ export interface BuiltInMetaDefinitions {
     }
     readonly isPropertyNames: {
       readonly _tag: "isPropertyNames"
-      readonly propertyNames: AST.AST
+      readonly propertyNames: SchemaAST.AST
     }
     // Arrays Meta
     readonly isUnique: {
@@ -220,6 +220,6 @@ export interface BuiltInMetaDefinitions {
   }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L13670)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L13867)
 
 Since v4.0.0

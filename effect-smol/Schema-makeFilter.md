@@ -60,9 +60,9 @@ console.log(String(Schema.decodeUnknownExit(schema)({ a: 1, b: 0, c: 0 })))
 **Signature**
 
 ```ts
-declare const makeFilter: <T>(filter: (input: T, ast: AST.AST, options: AST.ParseOptions) => FilterOutput, annotations?: Annotations.Filter | undefined, abort?: boolean) => AST.Filter<T>
+declare const makeFilter: <T>(filter: (input: T, ast: SchemaAST.AST, options: SchemaAST.ParseOptions) => FilterOutput, annotations?: Annotations.Filter | undefined, abort?: boolean) => SchemaAST.Filter<T>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L5838)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L6053)
 
 Since v4.0.0

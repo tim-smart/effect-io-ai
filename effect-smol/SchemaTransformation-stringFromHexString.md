@@ -7,12 +7,13 @@ Decodes a hex encoded `string` into a UTF-8 `string` and encodes it back.
 
 **When to use**
 
-Use when handling text data transmitted as hexadecimal strings.
+Use when you need a schema transformation for text data transmitted as
+hexadecimal strings.
 
 **Details**
 
-- Decode: parses the hex string into a UTF-8 string.
-- Encode: encodes the string as a hex string.
+Decoding parses the hex string into a UTF-8 string. Encoding writes the
+string as a hex string.
 
 **Example** (String from Hex)
 
@@ -35,6 +36,6 @@ const schema = Schema.String.pipe(
 declare const stringFromHexString: Transformation<string, string, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L1506)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L1530)
 
 Since v4.0.0

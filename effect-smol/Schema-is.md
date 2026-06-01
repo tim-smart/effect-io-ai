@@ -36,6 +36,6 @@ if (isString(value)) {
 declare const is: <T>(schema: Schema<T>) => <I>(input: I) => input is I & T
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L1180)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L1189)
 
 Since v3.10.0

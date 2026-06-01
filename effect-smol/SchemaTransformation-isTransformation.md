@@ -7,7 +7,8 @@ Returns `true` if `u` is a `Transformation` instance.
 
 **When to use**
 
-Use to check whether a value is already a Transformation before wrapping it.
+Use to check whether a value is already a schema transformation before
+wrapping it.
 
 **Details**
 
@@ -37,6 +38,6 @@ SchemaTransformation.isTransformation({ decode: null, encode: null })
 declare const isTransformation: (u: unknown) => u is Transformation<any, any, unknown, unknown>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L267)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L269)
 
 Since v4.0.0

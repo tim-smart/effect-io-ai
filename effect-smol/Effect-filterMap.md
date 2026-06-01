@@ -7,8 +7,8 @@ Filters and maps elements of an iterable with a `Filter`.
 
 **When to use**
 
-Use to keep only iterable elements accepted by a `Filter` and collect each
-filter success value.
+Use when you need to filter an iterable with a `Filter` inside an `Effect`,
+collecting each filter success value.
 
 **Details**
 
@@ -26,6 +26,6 @@ filter success value.
 declare const filterMap: { <A, B, X>(filter: Filter.Filter<NoInfer<A>, B, X>): (elements: Iterable<A>) => Effect<Array<B>>; <A, B, X>(elements: Iterable<A>, filter: Filter.Filter<NoInfer<A>, B, X>): Effect<Array<B>>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L4953)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L4990)
 
 Since v2.0.0

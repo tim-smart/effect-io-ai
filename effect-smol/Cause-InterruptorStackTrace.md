@@ -8,8 +8,8 @@ interruption.
 
 **When to use**
 
-Use when attaching or reading the stack-frame annotation consumed by
-interrupt-only cause rendering.
+Use when you need the stack-frame annotation used by interrupt-only cause
+rendering.
 
 **Details**
 
@@ -27,6 +27,6 @@ Similar to `StackTrace` but specific to `Interrupt` reasons.
 declare class InterruptorStackTrace
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L2005)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L2003)
 
 Since v4.0.0

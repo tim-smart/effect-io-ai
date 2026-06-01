@@ -7,8 +7,8 @@ Represents the JSON-RPC error code for requests that are not valid request objec
 
 **When to use**
 
-Use when you need the JSON-RPC error code for requests that are not valid
-request objects.
+Use when building an MCP/JSON-RPC error response for a syntactically parsed
+request object that fails request-shape validation.
 
 **Signature**
 

@@ -5,6 +5,11 @@ Module: `Result`<br />
 
 Transforms `Option<Result<A, E>>` into `Result<Option<A>, E>`.
 
+**When to use**
+
+Use when optional absence should be treated as a successful `None`, while an
+inner `Result` failure should still fail the whole result.
+
 **Details**
 
 - `None` becomes `Success(None)`
@@ -35,6 +40,6 @@ console.log(Result.transposeOption(none))
 declare const transposeOption: <A = never, E = never>(self: Option<Result<A, E>>) => Result<Option<A>, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L1824)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L1847)
 
 Since v3.14.0

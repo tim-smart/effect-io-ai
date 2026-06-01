@@ -6,6 +6,11 @@ Module: `Duration`<br />
 Divides a `Duration` by a number using fallback rules instead of returning
 an `Option`.
 
+**When to use**
+
+Use when dividing a `Duration` should return `Duration.zero` or signed
+infinity for invalid cases instead of forcing callers to handle `Option.none`.
+
 **Details**
 
 Non-finite divisors return `Duration.zero`. Division by positive or negative
@@ -32,6 +37,6 @@ console.log(Duration.toMillis(infinite)) // Infinity
 declare const divideUnsafe: { (by: number): (self: Duration) => Duration; (self: Duration, by: number): Duration; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Duration.ts#L1376)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Duration.ts#L1391)
 
 Since v4.0.0

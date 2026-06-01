@@ -57,6 +57,6 @@ const program = Effect.gen(function*() {
 declare class DroppingStrategy<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PubSub.ts#L2555)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PubSub.ts#L2565)
 
 Since v4.0.0

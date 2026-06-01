@@ -7,8 +7,9 @@ Creates an effectful encoder for `unknown` input.
 
 **When to use**
 
-Use when encoding untyped boundary input and preserving encoding failures and
-service requirements in `Effect` is the desired result shape.
+Use when you need to encode untyped boundary input in an `Effect` whose
+failure channel is `SchemaIssue.Issue`, while preserving service
+requirements.
 
 **Details**
 
@@ -24,9 +25,9 @@ when applying it.
 **Signature**
 
 ```ts
-declare const encodeUnknownEffect: <S extends Schema.Top>(schema: S, options?: AST.ParseOptions) => (input: unknown, options?: AST.ParseOptions) => Effect.Effect<S["Encoded"], Issue.Issue, S["EncodingServices"]>
+declare const encodeUnknownEffect: <S extends Schema.Top>(schema: S, options?: SchemaAST.ParseOptions) => (input: unknown, options?: SchemaAST.ParseOptions) => Effect.Effect<S["Encoded"], SchemaIssue.Issue, S["EncodingServices"]>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaParser.ts#L589)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaParser.ts#L560)
 
 Since v4.0.0

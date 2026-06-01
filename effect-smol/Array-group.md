@@ -7,12 +7,12 @@ Groups consecutive equal elements using `Equal.equivalence()`.
 
 **When to use**
 
-Use when equal values are already adjacent and Effect's default equality is
-the right comparison.
+Use when you already have adjacent equal values and Effect's default equality
+is the right comparison.
 
 **Details**
 
-- Only groups **adjacent** elements.
+Only adjacent elements are grouped.
 
 **Example** (Grouping adjacent equal elements)
 
@@ -33,6 +33,6 @@ console.log(Array.group([1, 1, 2, 2, 2, 3, 1])) // [[1, 1], [2, 2, 2], [3], [1]]
 declare const group: <A>(self: NonEmptyReadonlyArray<A>) => NonEmptyArray<NonEmptyArray<A>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L3057)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L3094)
 
 Since v2.0.0

@@ -8,9 +8,7 @@ file system.
 
 **When to use**
 
-Use to load environment config from a `.env` file at application
-startup. Use `fromDotEnvContents` if you already have the file
-contents as a string.
+Use to load environment config from a `.env` file at application startup.
 
 **Details**
 
@@ -42,6 +40,6 @@ const program = Effect.gen(function*() {
 declare const fromDotEnv: (options?: { readonly path?: string | undefined; readonly expandVariables?: boolean | undefined; }) => Effect.Effect<ConfigProvider, PlatformError, FileSystem.FileSystem>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ConfigProvider.ts#L1120)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ConfigProvider.ts#L1112)
 
 Since v4.0.0

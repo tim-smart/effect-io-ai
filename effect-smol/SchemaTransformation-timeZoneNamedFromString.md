@@ -8,8 +8,8 @@ Decodes an IANA time-zone identifier string into a
 
 **When to use**
 
-Use when a schema transformation should accept only IANA time-zone identifier
-strings and produce `DateTime.TimeZone.Named` values.
+Use when you need a schema transformation to accept only IANA time-zone
+identifier strings and produce `DateTime.TimeZone.Named` values.
 
 **Details**
 
@@ -26,6 +26,6 @@ identifier.
 declare const timeZoneNamedFromString: Transformation<DateTime.TimeZone.Named, string, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L1701)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L1726)
 
 Since v4.0.0

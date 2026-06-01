@@ -7,8 +7,8 @@ Appends the specified element to the end of the `Chunk`.
 
 **When to use**
 
-Use to add one element after the existing elements and get a non-empty
-result.
+Use to add one element after the existing chunk elements and return a
+`NonEmptyChunk`.
 
 **Example** (Appending an element)
 
@@ -36,6 +36,6 @@ console.log(Chunk.toArray(singleElement)) // [42]
 declare const append: { <A2>(a: A2): <A>(self: Chunk<A>) => NonEmptyChunk<A2 | A>; <A, A2>(self: Chunk<A>, a: A2): NonEmptyChunk<A | A2>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L731)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L756)
 
 Since v2.0.0

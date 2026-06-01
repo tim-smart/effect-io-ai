@@ -7,12 +7,13 @@ Creates a predicate representing logical implication: if `antecedent`, then `con
 
 **When to use**
 
-Use when you want a rule that only applies when a precondition holds.
-- You model constraints like "if A then B".
+Use when you need to encode logical implication between `Predicate` rules,
+where one rule only applies when a precondition holds.
 
 **Details**
 
-- Returns `true` when the antecedent is `false`.
+Models constraints like "if A then B" and returns `true` when the antecedent
+is `false`.
 
 **Example** (Implication)
 
@@ -37,6 +38,6 @@ console.log(implies(16))
 declare const implies: { <A>(consequent: Predicate<A>): (antecedent: Predicate<A>) => Predicate<A>; <A>(antecedent: Predicate<A>, consequent: Predicate<A>): Predicate<A>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L1772)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L1777)
 
 Since v2.0.0

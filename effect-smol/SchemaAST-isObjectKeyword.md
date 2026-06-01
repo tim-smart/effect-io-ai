@@ -8,7 +8,7 @@ Narrows an `AST` to `ObjectKeyword`.
 **When to use**
 
 Use to identify the AST node for the TypeScript `object` keyword when
-inspecting or transforming a schema AST.
+inspecting or transforming a Schema AST.
 
 **See**
 

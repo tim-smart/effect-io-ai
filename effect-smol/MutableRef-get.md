@@ -7,7 +7,7 @@ Gets the current value of the MutableRef.
 
 **When to use**
 
-Use to read the current value without mutating the reference.
+Use to read the current `MutableRef` value without mutating it.
 
 **Example** (Reading current values)
 
@@ -37,6 +37,6 @@ console.log(value1 === value2) // true
 declare const get: <T>(self: MutableRef<T>) => T
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableRef.ts#L303)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableRef.ts#L304)
 
 Since v2.0.0

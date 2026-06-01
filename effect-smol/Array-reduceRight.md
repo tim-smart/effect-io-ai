@@ -7,12 +7,11 @@ Folds an iterable from right to left into a single value.
 
 **When to use**
 
-Use when folding order matters and values must be combined from right to
-left.
+Use when you need to fold values from right to left.
 
 **Details**
 
-- The function receives `(accumulator, element, index)`.
+The function receives `(accumulator, element, index)`.
 
 **Example** (Right-to-left fold)
 
@@ -33,6 +32,6 @@ console.log(Array.reduceRight([1, 2, 3], 0, (acc, n) => acc + n)) // 6
 declare const reduceRight: { <B, A>(b: B, f: (b: B, a: A, i: number) => B): (self: Iterable<A>) => B; <A, B>(self: Iterable<A>, b: B, f: (b: B, a: A, i: number) => B): B; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L3963)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L4002)
 
 Since v2.0.0

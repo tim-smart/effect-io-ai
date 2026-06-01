@@ -16,6 +16,6 @@ enter.
 type TypeAction = typeof TypeAction.Type
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L819)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L836)
 
 Since v4.0.0

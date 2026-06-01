@@ -7,13 +7,13 @@ Transforms the input of a predicate using a mapping function.
 
 **When to use**
 
-Use when you have a predicate on `A` and want one on `B` via `B -> A`.
-- You want to check derived values (lengths, projections, etc.).
+Use when you have a predicate on `A` and want to check `B` values by mapping
+each `B` to an `A`, such as checking lengths or projections.
 
 **Details**
 
-- Returns a new predicate that applies `f` before `self`.
-- No short-circuit beyond what `self` does.
+Returns a new predicate that applies `f` before `self`. There is no
+additional short-circuiting beyond what `self` does.
 
 **Example** (Check string length)
 

@@ -8,7 +8,7 @@ non-undefined results.
 
 **When to use**
 
-Use when mapping and filtering in one step, where the mapper can return
+Use when you need to map and filter in one step, where the mapper can return
 `null` or `undefined` to skip elements.
 
 **Example** (FlatMapping with nullable)
@@ -31,6 +31,6 @@ console.log(Array.flatMapNullishOr([1, 2, 3], (n) => (n % 2 === 0 ? null : n)))
 declare const flatMapNullishOr: { <A, B>(f: (a: A) => B): (self: ReadonlyArray<A>) => Array<NonNullable<B>>; <A, B>(self: ReadonlyArray<A>, f: (a: A) => B): Array<NonNullable<B>>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L4103)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L4147)
 
 Since v4.0.0

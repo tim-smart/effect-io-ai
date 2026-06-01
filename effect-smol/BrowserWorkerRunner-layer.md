@@ -7,8 +7,8 @@ Layer that provides a browser `WorkerRunnerPlatform` using the global `self` wor
 
 **When to use**
 
-Use when a browser worker entry point uses the ambient `self` object as the
-worker transport.
+Use when you need a browser worker entry point to use the ambient `self`
+object as the worker transport.
 
 **Details**
 

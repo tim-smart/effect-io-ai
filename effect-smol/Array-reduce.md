@@ -11,7 +11,7 @@ Use to combine all elements into one accumulated value from left to right.
 
 **Details**
 
-- The function receives `(accumulator, element, index)`.
+The function receives `(accumulator, element, index)`.
 
 **Example** (Summing an array)
 
@@ -32,6 +32,6 @@ console.log(Array.reduce([1, 2, 3], 0, (acc, n) => acc + n)) // 6
 declare const reduce: { <B, A>(b: B, f: (b: B, a: A, i: number) => B): (self: Iterable<A>) => B; <A, B>(self: Iterable<A>, b: B, f: (b: B, a: A, i: number) => B): B; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L3928)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L3968)
 
 Since v2.0.0

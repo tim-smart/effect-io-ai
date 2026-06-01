@@ -8,7 +8,8 @@ rounding toward zero.
 
 **When to use**
 
-Use to remove digits beyond a requested scale by rounding toward zero.
+Use when you need to discard fractional digits beyond a scale rather than
+round half up, half down, or toward an infinity.
 
 **Example** (Truncating decimals)
 
@@ -31,6 +32,6 @@ console.log(BigDecimal.truncate(BigDecimal.fromStringUnsafe("-14.5"))) // BigDec
 declare const truncate: { (scale: number): (self: BigDecimal) => BigDecimal; (self: BigDecimal, scale?: number): BigDecimal; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigDecimal.ts#L1872)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigDecimal.ts#L1875)
 
 Since v3.16.0

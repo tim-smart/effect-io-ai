@@ -8,9 +8,8 @@ configuration.
 
 **When to use**
 
-Use when this is the recommended way to provide ID generation capabilities to your
-application. The layer will fail during construction if the configuration is
-invalid.
+Use when you need to provide ID generation capabilities from validated
+configuration.
 
 **Example** (Providing an ID generator layer)
 
@@ -40,6 +39,6 @@ const program = Effect.gen(function*() {
 declare const layer: (options: MakeOptions) => Layer.Layer<IdGenerator, Cause.IllegalArgumentError>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/IdGenerator.ts#L338)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/IdGenerator.ts#L337)
 
 Since v4.0.0

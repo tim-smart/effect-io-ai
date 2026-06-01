@@ -7,15 +7,13 @@ Returns the maximum of two values according to the given order. If they are equa
 
 **When to use**
 
-Use when when you need to find the larger of two values
-- When implementing min/max operations
-- When selecting values based on ordering
+Use when you need to select the larger of two values according to an
+`Order`.
 
 **Details**
 
-- Returns the value that compares as greater than or equal to the other
-- If values are equal, returns the first argument
-- Supports curried and uncurried call styles
+Returns the value that compares as greater than or equal to the other value.
+If values are equal, the first argument is returned.
 
 **Example** (Maximum Value)
 
@@ -40,6 +38,6 @@ console.log(maxNumber(1, 1)) // 1
 declare const max: <A>(O: Order<A>) => { (that: A): (self: A) => A; (self: A, that: A): A; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Order.ts#L953)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Order.ts#L903)
 
 Since v2.0.0

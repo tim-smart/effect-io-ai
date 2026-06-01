@@ -26,6 +26,6 @@ Use to sum many `Duration` values through APIs that consume a `Reducer`.
 declare const ReducerSum: Reducer.Reducer<Duration>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Duration.ts#L1816)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Duration.ts#L1827)
 
 Since v4.0.0

@@ -16,6 +16,6 @@ until the resource is closed or its idle time to live expires.
 declare const makeK8sPod: (spec: v1.Pod, options?: { readonly idleTimeToLive?: Duration.Input | undefined; } | undefined) => Effect.Effect<EntityResource<K8sHttpClient.PodStatus>, never, Scope.Scope | Sharding | Entity.CurrentAddress | K8sHttpClient.K8sHttpClient>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EntityResource.ts#L166)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EntityResource.ts#L176)
 
 Since v4.0.0

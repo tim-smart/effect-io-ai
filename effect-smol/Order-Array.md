@@ -7,16 +7,14 @@ Creates an `Order` for arrays by applying the given `Order` to each element, the
 
 **When to use**
 
-Use when when comparing arrays of the same element type
-- When you want shorter arrays to be considered less than longer arrays
-- When sorting collections of arrays
+Use when you need lexicographic ordering for arrays of one element type.
 
 **Details**
 
-- Compares arrays element-by-element using the provided order
-- Stops at the first non-zero comparison result
-- If all elements are equal, shorter arrays are less than longer arrays
-- Returns `0` only if arrays have the same length and all elements are equal
+Compares arrays element-by-element using the provided order and stops at the
+first non-zero comparison result. If all elements are equal, shorter arrays
+are less than longer arrays. The result is `0` only if arrays have the same
+length and all elements are equal.
 
 **Example** (Array Element Ordering)
 
@@ -41,6 +39,6 @@ console.log(arrayOrder([1, 2], [1, 2])) // 0
 declare const Array: <A>(O: Order<A>) => Order<ReadonlyArray<A>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Order.ts#L678)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Order.ts#L646)
 
 Since v4.0.0

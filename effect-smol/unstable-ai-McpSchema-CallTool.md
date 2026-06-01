@@ -7,8 +7,8 @@ Represents a client request to invoke a tool provided by the server.
 
 **When to use**
 
-Use when a client already knows the tool name and wants the server to execute
-it with argument values.
+Use when you need to represent a client request that already knows the tool
+name and asks the server to execute it with argument values.
 
 **See**
 
@@ -21,6 +21,6 @@ it with argument values.
 declare class CallTool
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L1567)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L1569)
 
 Since v4.0.0

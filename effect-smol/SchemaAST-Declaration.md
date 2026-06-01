@@ -7,14 +7,15 @@ AST node for user-defined opaque types with custom parsing logic.
 
 **When to use**
 
-Use when none of the built-in AST nodes fit. The `run` function receives
-`typeParameters` and returns a parser that validates/transforms raw input.
+Use when you need a custom schema AST node because none of the built-in
+nodes fit.
 
 **Details**
 
 - `typeParameters` — inner schemas this declaration is parameterized over
   (e.g. the element type for a custom collection).
-- `run` — factory producing the actual parse function.
+- `run` — factory that receives `typeParameters` and returns a parser that
+  validates or transforms raw input.
 
 **See**
 
@@ -27,7 +28,7 @@ declare class Declaration { constructor(
     typeParameters: ReadonlyArray<AST>,
     run: (
       typeParameters: ReadonlyArray<AST>
-    ) => (input: unknown, self: Declaration, options: ParseOptions) => Effect.Effect<any, Issue.Issue, any>,
+    ) => (input: unknown, self: Declaration, options: ParseOptions) => Effect.Effect<any, SchemaIssue.Issue, any>,
     annotations?: Schema.Annotations.Annotations,
     checks?: Checks,
     encoding?: Encoding,
@@ -35,6 +36,6 @@ declare class Declaration { constructor(
   ) }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L709)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L710)
 
 Since v3.10.0

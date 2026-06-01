@@ -9,9 +9,7 @@ schedule will stop.
 
 **When to use**
 
-Use to limit an existing schedule while preserving its output and
-delay behavior. Use `recurs` when you only need an immediate counter
-schedule.
+Use to limit an existing schedule while preserving its output and delay behavior.
 
 **Gotchas**
 
@@ -102,6 +100,6 @@ const samplingProgram = Effect.gen(function*() {
 declare const take: { (n: number): <Output, Input, Error, Env>(self: Schedule<Output, Input, Error, Env>) => Schedule<Output, Input, Error, Env>; <Output, Input, Error, Env>(self: Schedule<Output, Input, Error, Env>, n: number): Schedule<Output, Input, Error, Env>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L3142)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L3160)
 
 Since v4.0.0

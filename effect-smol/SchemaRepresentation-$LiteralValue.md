@@ -12,6 +12,6 @@ Schema for the literal value types allowed in a `Literal` node
 declare const $LiteralValue: Schema.Union<readonly [Schema.String, Schema.Finite, Schema.Boolean, Schema.BigInt]>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaRepresentation.ts#L1265)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaRepresentation.ts#L1270)
 
 Since v4.0.0

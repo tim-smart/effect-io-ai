@@ -7,8 +7,8 @@ Completes a request entry with a failure `Cause`.
 
 **When to use**
 
-Use when a `RequestResolver` needs to complete an entry with structured cause
-information rather than only the request's typed error value.
+Use when you need a `RequestResolver` to complete an entry with structured
+cause information rather than only the request's typed error value.
 
 **See**
 

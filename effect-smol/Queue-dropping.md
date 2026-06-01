@@ -8,8 +8,8 @@ new elements are dropped and the offer operation returns false.
 
 **When to use**
 
-Use when producers should not block and existing messages should be preserved,
-but new messages may be lost when the queue is full.
+Use when you need producer offers not to block while preserving existing
+queued messages, even if new messages may be dropped when the queue is full.
 
 **Example** (Creating dropping queues)
 

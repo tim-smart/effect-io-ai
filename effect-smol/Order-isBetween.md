@@ -7,16 +7,15 @@ Checks whether a value is between a minimum and a maximum (inclusive) according 
 
 **When to use**
 
-Use when when validating that a value is within a valid range
-- When implementing range checks for bounds validation
-- When filtering or selecting values within a range
+Use when you need range checks that respect domain-specific ordering, such as
+dates, versions, or custom priorities, instead of JavaScript numeric
+comparison.
 
 **Details**
 
-- Returns `true` if the value is greater than or equal to minimum and less than or equal to maximum
-- Returns `false` if the value is outside the range
-- Supports curried and uncurried call styles
-- Both bounds are inclusive
+Returns `true` when the value is greater than or equal to minimum and less
+than or equal to maximum. Values outside the range return `false`. Both
+bounds are inclusive.
 
 **Example** (Checking Range)
 
@@ -44,6 +43,6 @@ console.log(betweenNumber(11, { minimum: 1, maximum: 10 })) // false
 declare const isBetween: <A>(O: Order<A>) => { (options: { minimum: A; maximum: A; }): (self: A) => boolean; (self: A, options: { minimum: A; maximum: A; }): boolean; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Order.ts#L1047)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Order.ts#L994)
 
 Since v4.0.0

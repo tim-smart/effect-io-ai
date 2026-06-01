@@ -8,8 +8,8 @@ encodes object-like values back into `FormData`.
 
 **When to use**
 
-Use when you use this for form or multipart payloads where keys such as `user[name]` or
-`items[0]` should become nested data.
+Use when you need a schema transformation for form or multipart payloads
+whose keys, such as `user[name]` or `items[0]`, should become nested data.
 
 **Details**
 
@@ -38,6 +38,6 @@ const schema = Schema.instanceOf(FormData).pipe(
 declare const fromFormData: Transformation<unknown, FormData, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L1613)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L1638)
 
 Since v4.0.0

@@ -30,7 +30,7 @@ declare class OneOf { constructor(
     /**
      * The schema that caused the issue.
      */
-    ast: AST.Union,
+    ast: SchemaAST.Union,
     /**
      * The input value that caused the issue.
      */
@@ -38,10 +38,10 @@ declare class OneOf { constructor(
     /**
      * The schemas that were successful.
      */
-    successes: ReadonlyArray<AST.AST>
+    successes: ReadonlyArray<SchemaAST.AST>
   ) }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaIssue.ts#L775)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaIssue.ts#L776)
 
 Since v4.0.0

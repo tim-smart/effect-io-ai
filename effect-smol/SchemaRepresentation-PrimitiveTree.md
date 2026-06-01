@@ -11,6 +11,6 @@ A tree of primitive values used to serialize annotations to JSON.
 type PrimitiveTree = Schema.Tree<null | number | boolean | bigint | symbol | string>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaRepresentation.ts#L815)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaRepresentation.ts#L820)
 
 Since v4.0.0

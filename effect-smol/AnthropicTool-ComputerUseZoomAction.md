@@ -17,6 +17,6 @@ display bounds.
 type ComputerUseZoomAction = typeof ComputerUseZoomAction.Type
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L1288)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L1310)
 
 Since v4.0.0

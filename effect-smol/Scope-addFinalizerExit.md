@@ -5,6 +5,11 @@ Module: `Scope`<br />
 
 Registers an exit-aware finalizer on a scope.
 
+**When to use**
+
+Use when cleanup needs to know whether the scope closed with success,
+failure, or interruption.
+
 **Details**
 
 If the scope is open, the finalizer runs when the scope closes and receives
@@ -44,6 +49,6 @@ const withResource = Effect.gen(function*() {
 declare const addFinalizerExit: (scope: Scope, finalizer: (exit: Exit<any, any>) => Effect<unknown>) => Effect<void>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Scope.ts#L391)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Scope.ts#L401)
 
 Since v2.0.0

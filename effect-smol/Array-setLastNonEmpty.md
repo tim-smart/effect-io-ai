@@ -5,6 +5,11 @@ Module: `Array`<br />
 
 Replaces the last element of a non-empty array with a new value.
 
+**When to use**
+
+Use when you already know the array is non-empty and the replacement value
+does not depend on the current last element.
+
 **Example** (Setting the last element)
 
 ```ts
@@ -24,6 +29,6 @@ console.log(Array.setLastNonEmpty([1, 2, 3], 4)) // [1, 2, 4]
 declare const setLastNonEmpty: { <B>(b: B): <A>(self: NonEmptyReadonlyArray<A>) => NonEmptyArray<A | B>; <A, B>(self: NonEmptyReadonlyArray<A>, b: B): NonEmptyArray<A | B>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L2497)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L2532)
 
 Since v4.0.0

@@ -22,7 +22,7 @@ export interface MakeOptions {
   /**
    * The parse options to use for the schema.
    */
-  readonly parseOptions?: AST.ParseOptions | undefined
+  readonly parseOptions?: SchemaAST.ParseOptions | undefined
   /**
    * Whether to disable validation for the schema.
    */

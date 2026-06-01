@@ -8,7 +8,7 @@ invalid.
 
 **When to use**
 
-Use when decimal text is expected to be valid and parse errors should throw.
+Use when you expect decimal text to be valid and want parse errors to throw.
 
 **Details**
 
@@ -36,6 +36,6 @@ assert.throws(() => BigDecimal.fromStringUnsafe("123.abc"))
 declare const fromStringUnsafe: (s: string) => BigDecimal
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigDecimal.ts#L1500)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigDecimal.ts#L1502)
 
 Since v4.0.0

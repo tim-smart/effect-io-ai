@@ -7,8 +7,8 @@ Defines the required byte length for Ed25519 signatures used in session authenti
 
 **When to use**
 
-Use when you need to validate the byte length of Ed25519 signatures for
-session authentication.
+Use when implementing session-auth verification that must reject signatures
+with a non-canonical byte length before cryptographic checking.
 
 **Signature**
 

@@ -7,11 +7,11 @@ Checks whether a value is a `Map`.
 
 **When to use**
 
-Use when you need a runtime guard for `Map` values.
+Use when you need a `Predicate` runtime guard for `Map` values.
 
 **Details**
 
-- Uses `instanceof Map`.
+Uses `instanceof Map`.
 
 **Example** (Guard a Map)
 

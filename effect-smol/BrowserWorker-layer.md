@@ -7,8 +7,8 @@ Creates browser worker layers by combining the default `WorkerPlatform` with a s
 
 **When to use**
 
-Use when browser parent or client code needs both the browser
-`WorkerPlatform` and a `Spawner` from one layer.
+Use when you need both the browser `WorkerPlatform` and a `Spawner` from one
+layer.
 
 **Details**
 

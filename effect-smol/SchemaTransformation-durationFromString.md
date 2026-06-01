@@ -8,14 +8,15 @@ parseable `string`.
 
 **When to use**
 
-Use to parse human-readable duration strings from APIs, config, or user input.
+Use when you need a schema transformation to parse human-readable duration
+strings from APIs, config, or user input.
 
 **Details**
 
-- Decode: accepts any string that `Duration.fromInput` can parse, including
-  `"Infinity"` and `"-Infinity"`.
-- Encode: returns `String(duration)`, producing strings like `"2000 millis"`
-  or `"10 nanos"` that round-trip through the parser.
+Decoding accepts any string that `Duration.fromInput` can parse, including
+`"Infinity"` and `"-Infinity"`. Encoding returns `String(duration)`,
+producing strings such as `"2000 millis"` or `"10 nanos"` that round-trip
+through the parser.
 
 **Example** (Duration from string)
 
@@ -38,6 +39,6 @@ const schema = Schema.String.pipe(
 declare const durationFromString: Transformation<Duration.Duration, string, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L976)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L989)
 
 Since v4.0.0

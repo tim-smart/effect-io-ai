@@ -8,7 +8,7 @@ configured message storage transaction.
 
 **When to use**
 
-Use when a request needs server-side handling or storage work wrapped in the
+Use when you need server-side request handling or storage work wrapped in the
 storage transaction.
 
 **Details**

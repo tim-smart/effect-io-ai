@@ -7,7 +7,7 @@ Generates a shell completion script for a command descriptor.
 
 **When to use**
 
-Use to produce an installable completion script when you already have a
+Use when you need an installable completion script from an existing
 `CommandDescriptor`.
 
 **Details**

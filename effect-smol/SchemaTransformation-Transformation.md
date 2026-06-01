@@ -8,7 +8,8 @@ type `E`, built from a pair of `Getter`s.
 
 **When to use**
 
-Use when you need to define how a schema converts between two representations.
+Use when you need a schema transformation that defines how a schema converts
+between two representations.
 - You want to compose multiple transformations into a pipeline.
 - You want to flip a transformation to swap decode/encode.
 
@@ -46,11 +47,11 @@ const trimAndLower = SchemaTransformation.trim().compose(
 
 ```ts
 declare class Transformation<T, E, RD, RE> { constructor(
-    decode: Getter.Getter<T, E, RD>,
-    encode: Getter.Getter<E, T, RE>
+    decode: SchemaGetter.Getter<T, E, RD>,
+    encode: SchemaGetter.Getter<E, T, RE>
   ) }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L213)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L214)
 
 Since v4.0.0

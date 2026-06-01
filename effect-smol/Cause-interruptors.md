@@ -9,9 +9,8 @@ ignored. Returns an empty set when the cause has no interrupting fiber IDs.
 
 **When to use**
 
-Use when this always succeeds. Use `filterInterruptors` when you want a
-`Result` that fails with the original cause if there are no `Interrupt`
-reasons.
+Use when you need interrupting fiber IDs as a set, with absence represented
+as an empty set.
 
 **Example** (collecting interruptors)
 

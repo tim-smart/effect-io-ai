@@ -28,6 +28,6 @@ type Inner = Types.Contravariant.Type<Types.Contravariant<string>>
 type Type<A> = A extends Contravariant<infer U> ? U : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Types.ts#L818)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Types.ts#L789)
 
 Since v3.9.0

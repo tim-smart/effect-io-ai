@@ -26,6 +26,6 @@ console.log(epochMillis) // 1704067200000
 declare const toEpochMillis: (self: DateTime) => number
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L1665)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L1696)
 
 Since v3.6.0

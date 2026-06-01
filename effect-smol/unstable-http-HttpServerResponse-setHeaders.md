@@ -11,6 +11,6 @@ Returns a response with all supplied headers set on the existing header map.
 declare const setHeaders: { (input: Headers.Input): (self: HttpServerResponse) => HttpServerResponse; (self: HttpServerResponse, input: Headers.Input): HttpServerResponse; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpServerResponse.ts#L573)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpServerResponse.ts#L578)
 
 Since v4.0.0

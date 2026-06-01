@@ -3,7 +3,16 @@ Module: `Chunk`<br />
 
 ## Chunk.getUnsafe
 
-Gets an element unsafely, will throw on out of bounds
+Gets an element at the specified index without returning an `Option`.
+
+**When to use**
+
+Use when reading from a `Chunk` at an index known to be in bounds and direct
+element access is preferred over handling `Option.none`.
+
+**Gotchas**
+
+Throws if the index is out of bounds.
 
 **Example** (Accessing elements unsafely)
 
@@ -25,6 +34,6 @@ console.log(Option.isNone(Chunk.get(chunk, 10))) // true
 declare const getUnsafe: { (index: number): <A>(self: Chunk<A>) => A; <A>(self: Chunk<A>, index: number): A; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L670)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L695)
 
 Since v4.0.0

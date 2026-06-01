@@ -7,7 +7,8 @@ Creates an empty sentinel parameter that always fails to parse.
 
 **When to use**
 
-Use when this is useful for creating placeholder parameters or for combinators.
+Use when you need an empty CLI parameter sentinel for optional parameter
+construction or internal combinators.
 
 **Example** (Creating sentinel parameters)
 
@@ -31,6 +32,6 @@ console.log(makeDebugParam(false) === disabledDebugParam) // true
 declare const none: <Kind extends ParamKind>(kind: Kind) => Param<Kind, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Param.ts#L959)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Param.ts#L961)
 
 Since v4.0.0

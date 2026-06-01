@@ -7,16 +7,13 @@ Order instance for numbers that compares them numerically.
 
 **When to use**
 
-Use when when comparing numbers for sorting or searching
-- As a base for creating orders on types containing numbers
-- When implementing numeric comparisons in data structures
+Use when you need numeric ordering for numbers.
 
 **Details**
 
-- `0` is considered equal to `-0`
-- All `NaN` values are considered equal to each other
-- Any `NaN` is considered less than any non-NaN number
-- Uses standard numeric comparison for all other values
+`0` is considered equal to `-0`. All `NaN` values are considered equal to
+each other, and any `NaN` is considered less than any non-`NaN` number. All
+other values use standard numeric comparison.
 
 **Example** (Number Ordering)
 
@@ -42,6 +39,6 @@ console.log(Order.Number(NaN, 1)) // -1
 declare const Number: Order<number>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Order.ts#L254)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Order.ts#L245)
 
 Since v4.0.0

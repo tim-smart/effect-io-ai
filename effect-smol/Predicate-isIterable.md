@@ -7,12 +7,11 @@ Checks whether a value is iterable.
 
 **When to use**
 
-Use when you need a guard before iterating an unknown value.
+Use when you need a `Predicate` guard before iterating an unknown value.
 
 **Details**
 
-- Accepts strings as iterable.
-- Uses `hasProperty` for `Symbol.iterator`.
+Accepts strings as iterable and uses `hasProperty` for `Symbol.iterator`.
 
 **Example** (Guard iterable)
 
@@ -35,6 +34,6 @@ console.log(Predicate.isIterable(data))
 declare const isIterable: (input: unknown) => input is Iterable<unknown>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L1341)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L1343)
 
 Since v2.0.0

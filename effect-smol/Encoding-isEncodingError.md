@@ -26,6 +26,6 @@ encoding and decoding operations
 declare const isEncodingError: (u: unknown) => u is EncodingError
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Encoding.ts#L143)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Encoding.ts#L148)
 
 Since v4.0.0

@@ -7,8 +7,8 @@ Unwraps a newtype value, returning the underlying carrier value.
 
 **When to use**
 
-Use when you only need to read the inner value and do not need to wrap
-new values. For both wrapping and unwrapping, prefer `makeIso`.
+Use when you need the carrier value from an existing newtype without
+constructing a new newtype value at the same call site.
 
 **Details**
 

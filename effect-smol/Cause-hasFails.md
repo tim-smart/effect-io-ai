@@ -30,6 +30,6 @@ console.log(Cause.hasFails(Cause.die("defect"))) // false
 declare const hasFails: <E>(self: Cause<E>) => boolean
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L848)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L847)
 
 Since v4.0.0

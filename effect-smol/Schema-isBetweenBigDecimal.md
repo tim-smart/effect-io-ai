@@ -13,9 +13,9 @@ The minimum and maximum boundaries are inclusive by default. Pass
 **Signature**
 
 ```ts
-declare const isBetweenBigDecimal: (options: { readonly minimum: BigDecimal_.BigDecimal; readonly maximum: BigDecimal_.BigDecimal; readonly exclusiveMinimum?: boolean | undefined; readonly exclusiveMaximum?: boolean | undefined; }, annotations?: Annotations.Filter) => AST.Filter<BigDecimal_.BigDecimal>
+declare const isBetweenBigDecimal: (options: { readonly minimum: BigDecimal_.BigDecimal; readonly maximum: BigDecimal_.BigDecimal; readonly exclusiveMinimum?: boolean | undefined; readonly exclusiveMaximum?: boolean | undefined; }, annotations?: Annotations.Filter) => SchemaAST.Filter<BigDecimal_.BigDecimal>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L7336)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L7551)
 
 Since v4.0.0

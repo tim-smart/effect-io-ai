@@ -9,8 +9,8 @@ reason, the failure value is the original cause.
 
 **When to use**
 
-Use when you use `interruptors` if you always want a `Set` without `Result`
-wrapping.
+Use when you need absence of interrupt reasons to fail with the original
+cause.
 
 **Gotchas**
 

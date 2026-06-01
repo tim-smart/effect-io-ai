@@ -8,14 +8,15 @@ Decodes a `string` into a `number` and encodes a `number` back to a
 
 **When to use**
 
-Use to parse numeric strings from APIs, form data, or URL parameters.
+Use when you need a schema transformation to parse numeric strings from APIs,
+form data, or URL parameters.
 
 **Details**
 
-- Decode: coerces the string to a number (like `Number(s)`).
-- Encode: coerces the number to a string (like `String(n)`).
-- Does not validate that the result is finite — combine with
-  `Schema.Finite` or `Schema.Int` for stricter checks.
+Decoding coerces the string to a number like `Number(s)`. Encoding coerces
+the number to a string like `String(n)`. This does not validate that the
+result is finite; combine with `Schema.Finite` or `Schema.Int` for stricter
+checks.
 
 **Example** (Number from string)
 
@@ -38,6 +39,6 @@ const schema = Schema.String.pipe(
 declare const numberFromString: Transformation<number, string, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L871)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L881)
 
 Since v4.0.0

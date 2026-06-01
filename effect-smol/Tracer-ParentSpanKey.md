@@ -7,8 +7,8 @@ Defines the string key for the parent-span context service.
 
 **When to use**
 
-Use when integrating lower-level tracing code that needs the raw context key
-for parent span lookup.
+Use when you need the raw context key for parent span lookup in lower-level
+tracing code.
 
 **Example** (Reading the parent span key)
 

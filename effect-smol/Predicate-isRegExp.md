@@ -7,11 +7,11 @@ Checks whether a value is a `RegExp`.
 
 **When to use**
 
-Use when you need a runtime guard for regular expressions.
+Use when you need a `Predicate` runtime guard for regular expressions.
 
 **Details**
 
-- Uses `instanceof RegExp`.
+Uses `instanceof RegExp`.
 
 **Example** (Guard RegExp)
 
@@ -33,6 +33,6 @@ console.log(Predicate.isRegExp(data))
 declare const isRegExp: (input: unknown) => input is RegExp
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L1428)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L1431)
 
 Since v3.9.0

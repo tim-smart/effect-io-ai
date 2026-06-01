@@ -7,6 +7,11 @@ Combines two `Schedule`s by recurring if either of the two schedules wants
 to recur, using the minimum of the two durations between recurrences and
 outputting the result of the left schedule (i.e. `self`).
 
+**When to use**
+
+Use when either schedule may keep recurrence going and only the left
+schedule's output is needed.
+
 **Example** (Combining either schedules and keeping the left output)
 
 ```ts
@@ -40,6 +45,6 @@ const program = Effect.gen(function*() {
 declare const eitherLeft: { <Output2, Input2, Error2, Env2>(other: Schedule<Output2, Input2, Error2, Env2>): <Output, Input, Error, Env>(self: Schedule<Output, Input, Error, Env>) => Schedule<Output, Input & Input2, Error | Error2, Env | Env2>; <Output, Input, Error, Env, Output2, Input2, Error2, Env2>(self: Schedule<Output, Input, Error, Env>, other: Schedule<Output2, Input2, Error2, Env2>): Schedule<Output, Input & Input2, Error | Error2, Env | Env2>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L1807)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L1822)
 
 Since v4.0.0

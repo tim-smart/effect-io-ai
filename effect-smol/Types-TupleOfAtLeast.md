@@ -38,6 +38,6 @@ const bad: Types.TupleOfAtLeast<2, string> = ["a"]
 type [...TupleOf<N, T>, ...T[]] = [...TupleOf<N, T>, ...Array<T>]
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Types.ts#L131)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Types.ts#L129)
 
 Since v3.3.0

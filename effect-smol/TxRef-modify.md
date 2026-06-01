@@ -7,8 +7,8 @@ Modifies the value of the `TxRef` using the provided function.
 
 **When to use**
 
-Use to update a transactional reference and return a computed result from the
-same transaction step.
+Use to update a `TxRef` and return a computed result from the same
+transaction step.
 
 **Example** (Modifying transactional references)
 

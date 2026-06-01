@@ -7,12 +7,13 @@ Decodes a base64 (URL) encoded `string` into a UTF-8 `string` and encodes it bac
 
 **When to use**
 
-Use when handling text data transmitted as Base64 URL-safe strings.
+Use when you need a schema transformation for text data transmitted as Base64
+URL-safe strings.
 
 **Details**
 
-- Decode: parses the Base64 URL string into a UTF-8 string.
-- Encode: encodes the string as a Base64 URL string.
+Decoding parses the Base64 URL string into a UTF-8 string. Encoding writes
+the string as a Base64 URL string.
 
 **Example** (String from Base64Url)
 
@@ -35,6 +36,6 @@ const schema = Schema.String.pipe(
 declare const stringFromBase64UrlString: Transformation<string, string, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L1473)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L1496)
 
 Since v4.0.0

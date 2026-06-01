@@ -7,15 +7,15 @@ Creates a custom equivalence relation with an optimized reference equality check
 
 **When to use**
 
-Use when you need a custom equivalence that is not just strict equality
-- Use when creating equivalences for complex types with custom comparison logic
-- Use when you want the performance benefit of reference equality optimization
+Use when you need an equality rule that the built-in instances and input
+mapping helpers cannot express, and you can provide a law-abiding comparison.
 
 **Details**
 
-- First checks reference equality (`===`) for performance; if values are identical, returns `true` without calling the function
-- Falls back to the provided equivalence function if values are not the same reference
-- The provided function must satisfy reflexive, symmetric, and transitive properties
+The returned equivalence first checks reference equality (`===`) for
+performance. If the values are not the same reference, it falls back to the
+provided equivalence function, which must satisfy reflexive, symmetric, and
+transitive properties.
 
 **Example** (Case-insensitive string equivalence)
 
@@ -56,6 +56,6 @@ console.log(tolerance(1.0, 1.00001)) // true
 declare const make: <A>(isEquivalent: (self: A, that: A) => boolean) => Equivalence<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Equivalence.ts#L193)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Equivalence.ts#L189)
 
 Since v2.0.0

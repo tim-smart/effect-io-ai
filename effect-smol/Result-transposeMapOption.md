@@ -6,6 +6,11 @@ Module: `Result`<br />
 Maps an `Option` value with a `Result`-producing function, then transposes
 the structure from `Option<Result<B, E>>` to `Result<Option<B>, E>`.
 
+**When to use**
+
+Use when an optional value should be validated only when present, preserving
+absence as a successful `None`.
+
 **Details**
 
 - `None` becomes `Success(None)` (the function is never called)
@@ -39,6 +44,6 @@ console.log(Result.transposeMapOption(Option.none(), parse))
 declare const transposeMapOption: (<A, B, E = never>(f: (self: A) => Result<B, E>) => (self: Option<A>) => Result<Option<B>, E>) & (<A, B, E = never>(self: Option<A>, f: (self: A) => Result<B, E>) => Result<Option<B>, E>)
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L1862)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L1890)
 
 Since v3.15.0

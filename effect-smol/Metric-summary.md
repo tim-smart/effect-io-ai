@@ -8,16 +8,15 @@ which takes a value as input and uses the current time.
 
 **When to use**
 
-Use when summary metrics are most suitable for providing statistical information about
-a set of values, including quantiles.
+Use when you need a metric that records statistical information about a set
+of values, including quantiles.
 
 **Details**
 
-- `description` - An description of the `Summary`.
-- `attributes`  - The attributes to associate with the `Summary`.
-- `maxAge`      - The maximum age of observations to retain.
-- `maxSize`     - The maximum number of observations to keep.
-- `quantiles`   - An array of quantiles to calculate (e.g., [0.5, 0.9]).
+The optional `description` describes the summary, and `attributes` attach
+dimensions to it. `maxAge` controls how long observations are retained,
+`maxSize` controls how many observations are kept, and `quantiles` lists the
+quantiles to calculate, such as `[0.5, 0.9]`.
 
 **Example** (Creating summary metrics)
 
@@ -88,6 +87,6 @@ const program = Effect.gen(function*() {
 declare const summary: (name: string, options: { readonly description?: string | undefined; readonly attributes?: Metric.Attributes | undefined; readonly maxAge: Duration.Input; readonly maxSize: number; readonly quantiles: ReadonlyArray<number>; }) => Summary<number>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Metric.ts#L2594)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Metric.ts#L2591)
 
 Since v2.0.0

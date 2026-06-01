@@ -7,7 +7,7 @@ RPC serialization layer that uses NDJSON for serialization.
 
 **When to use**
 
-Use when the transport protocol does not provide message framing.
+Use when you have a transport protocol that does not provide message framing.
 
 **See**
 

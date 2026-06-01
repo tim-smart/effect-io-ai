@@ -8,11 +8,12 @@ succeeds with the encoded value or fails with a `SchemaError`.
 
 **When to use**
 
-Use when encoding input whose type is not statically known.
+Use when you need to encode unknown input in an `Effect` whose failure
+channel is `SchemaError`.
 
 **Details**
 
-Prefer `encodeEffect` when the input is already typed as the schema's
+Prefer `encodeEffect` when the value is already typed as the schema's
 `Type`.
 Options may be provided either when creating the encoder or when applying it;
 application options override creation options.
@@ -28,12 +29,16 @@ Effect.runPromise(Schema.encodeUnknownEffect(NumberFromString)(42)).then(console
 // Output: "42"
 ```
 
+**See**
+
+- `SchemaParser.encodeUnknownEffect` for the adapter that fails with `SchemaIssue.Issue` directly
+
 **Signature**
 
 ```ts
-declare const encodeUnknownEffect: <S extends Top>(schema: S, options?: AST.ParseOptions) => (input: unknown, options?: AST.ParseOptions) => Effect.Effect<S["Encoded"], SchemaError, S["EncodingServices"]>
+declare const encodeUnknownEffect: <S extends Top>(schema: S, options?: SchemaAST.ParseOptions) => (input: unknown, options?: SchemaAST.ParseOptions) => Effect.Effect<S["Encoded"], SchemaError, S["EncodingServices"]>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L1534)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L1610)
 
 Since v4.0.0

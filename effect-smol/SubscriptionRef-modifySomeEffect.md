@@ -8,7 +8,7 @@ Computes a return value and optionally updates the reference effectfully.
 **When to use**
 
 Use to return a separate result while effectfully deciding whether to publish
-a new value.
+a new `SubscriptionRef` value.
 
 **Details**
 
@@ -46,6 +46,6 @@ const program = Effect.gen(function*() {
 declare const modifySomeEffect: { <A, B, R, E>(modify: (a: A) => Effect.Effect<readonly [B, Option.Option<A>], E, R>): (self: SubscriptionRef<A>) => Effect.Effect<B, E, R>; <A, B, R, E>(self: SubscriptionRef<A>, modify: (a: A) => Effect.Effect<readonly [B, Option.Option<A>], E, R>): Effect.Effect<B, E, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SubscriptionRef.ts#L662)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SubscriptionRef.ts#L667)
 
 Since v2.0.0

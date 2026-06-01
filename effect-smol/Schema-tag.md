@@ -8,9 +8,9 @@ Type-level representation returned by `tag`.
 **Signature**
 
 ```ts
-export interface tag<Tag extends AST.LiteralValue> extends withConstructorDefault<Literal<Tag>> {}
+export interface tag<Tag extends SchemaAST.LiteralValue> extends withConstructorDefault<Literal<Tag>> {}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L5342)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L5557)
 
 Since v3.10.0

@@ -7,7 +7,8 @@ Converts a Schema AST into a `Document`.
 
 **When to use**
 
-Use when you have a single schema and need its representation.
+Use when you have a single Schema AST and need a schema representation
+document.
 
 **Details**
 
@@ -36,9 +37,9 @@ console.log(doc.representation._tag)
 **Signature**
 
 ```ts
-declare const fromAST: (ast: AST.AST) => Document
+declare const fromAST: (ast: SchemaAST.AST) => Document
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaRepresentation.ts#L1697)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaRepresentation.ts#L1703)
 
 Since v4.0.0

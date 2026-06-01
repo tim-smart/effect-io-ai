@@ -7,12 +7,8 @@ Returns the JavaScript remainder of dividing one `bigint` by another.
 
 **When to use**
 
-Use to compute the JavaScript `%` remainder for two `bigint` values.
-
-**Details**
-
-The result follows JavaScript `%` semantics, including the sign of the
-dividend.
+Use when you want native remainder semantics, including signed remainders and
+a thrown division-by-zero error.
 
 **Gotchas**
 

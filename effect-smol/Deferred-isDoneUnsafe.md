@@ -21,6 +21,6 @@ an `Effect`, such as low-level integration code.
 declare const isDoneUnsafe: <A, E>(self: Deferred<A, E>) => boolean
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Deferred.ts#L758)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Deferred.ts#L760)
 
 Since v4.0.0

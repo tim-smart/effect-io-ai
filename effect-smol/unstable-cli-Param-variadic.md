@@ -8,8 +8,8 @@ Creates a variadic parameter that can be specified multiple times.
 **Details**
 
 This is the base combinator for creating parameters that accept multiple values.
-The min and max parameters are optional - if not provided, the parameter can be
-specified any number of times (0 to infinity).
+The `min` and `max` parameters are optional. When they are not provided, the
+parameter can be specified any number of times, from 0 to infinity.
 
 **Example** (Accepting multiple values)
 
@@ -40,6 +40,6 @@ const limited = Param.variadic(Param.string(Param.flagKind, "item"), {
 declare const variadic: <Kind extends ParamKind, A>(self: Param<Kind, A>, options?: VariadicParamOptions | undefined) => Param<Kind, ReadonlyArray<A>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Param.ts#L1509)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Param.ts#L1511)
 
 Since v4.0.0

@@ -7,11 +7,7 @@ Type guard that always returns `false`.
 
 **When to use**
 
-Use when you need a predicate that never accepts, e.g. in default branches.
-
-**Details**
-
-- Always returns `false`.
+Use when you need a `Predicate` that never accepts, e.g. in default branches.
 
 **Example** (Never matches)
 
@@ -31,6 +27,6 @@ console.log(Predicate.isNever("anything"))
 declare const isNever: (_: unknown) => _ is never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L999)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L1004)
 
 Since v2.0.0

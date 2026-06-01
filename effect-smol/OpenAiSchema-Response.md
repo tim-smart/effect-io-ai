@@ -20,6 +20,6 @@ optional incomplete details.
 type Response = typeof Response.Type
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiSchema.ts#L901)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiSchema.ts#L916)
 
 Since v4.0.0

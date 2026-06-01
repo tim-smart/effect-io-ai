@@ -7,8 +7,8 @@ Extracts the first defect from a failed Exit as a Result.
 
 **When to use**
 
-Use when composing Exit checks with `Filter` or other `Result`-based
-filtering APIs and you only need the first defect in the Cause.
+Use when you need the first defect from an `Exit` as a `Result` for
+`Filter` or other `Result`-based filtering APIs.
 
 **Details**
 
@@ -45,6 +45,6 @@ console.log(Result.isFailure(noDefect)) // true
 declare const findDefect: <A, E>(input: Exit<A, E>) => Result.Result<unknown, Exit<A, E>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Exit.ts#L806)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Exit.ts#L800)
 
 Since v4.0.0

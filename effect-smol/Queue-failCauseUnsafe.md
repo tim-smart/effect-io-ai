@@ -6,6 +6,11 @@ Module: `Queue`<br />
 Fails the queue with a cause synchronously. If the queue is already done, `false` is
 returned.
 
+**When to use**
+
+Use when queue completion must be driven from synchronous internals while
+preserving the full failure `Cause`.
+
 **Gotchas**
 
 This is an unsafe operation that directly modifies the queue without Effect wrapping.
@@ -34,6 +39,6 @@ const program = Effect.gen(function*() {
 declare const failCauseUnsafe: <A, E>(self: Enqueue<A, E>, cause: Cause<E>) => boolean
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Queue.ts#L962)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Queue.ts#L981)
 
 Since v4.0.0

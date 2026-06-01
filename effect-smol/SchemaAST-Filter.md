@@ -27,7 +27,7 @@ Combine with another check via `.and()` to form a `FilterGroup`.
 
 ```ts
 declare class Filter<E> { constructor(
-    run: (input: E, self: AST, options: ParseOptions) => Issue.Issue | undefined,
+    run: (input: E, self: AST, options: ParseOptions) => SchemaIssue.Issue | undefined,
     annotations: Schema.Annotations.Filter | undefined = undefined,
     /**
      * Whether the parsing process should be aborted after this check has failed.
@@ -36,6 +36,6 @@ declare class Filter<E> { constructor(
   ) }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L2781)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L2807)
 
 Since v4.0.0

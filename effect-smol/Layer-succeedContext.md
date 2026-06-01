@@ -8,9 +8,8 @@ Constructs a layer that provides all services in an already available
 
 **When to use**
 
-Use when you already have a `Context` or need to provide
-multiple services at once. Use `succeed` when you only need to provide one
-service value.
+Use when you need a `Layer` built from an existing `Context`, including when
+you need to provide multiple services at once.
 
 **Details**
 
@@ -51,6 +50,6 @@ const layer = Layer.succeedContext(context)
 declare const succeedContext: <A>(context: Context.Context<A>) => Layer<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L862)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L860)
 
 Since v2.0.0

@@ -8,8 +8,8 @@ memoized result.
 
 **When to use**
 
-Use when completion should run an effect once and share its result with all
-awaiters.
+Use when completing a `Deferred` should run an effect once and share its
+result with all awaiters.
 
 **Details**
 

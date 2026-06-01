@@ -7,13 +7,13 @@ Type-level lambda for higher-kinded usage of `Predicate`.
 
 **When to use**
 
-Use when you are defining APIs that abstract over predicates with HKTs.
-- You need a `TypeLambda` instance for predicate-based type classes.
+Use when you are defining APIs that abstract over predicates with HKTs and
+need a `TypeLambda` instance for predicate-based type classes.
 
 **Details**
 
-- Type-only; no runtime value is created.
-- Does not affect emitted JavaScript.
+This is type-only, creates no runtime value, and does not affect emitted
+JavaScript.
 
 **Example** (Type-level usage)
 

@@ -7,13 +7,13 @@ Drops elements from the start while a `Filter` succeeds.
 
 **When to use**
 
-Use when dropping a prefix requires computing a `Result` per element instead
-of a simple boolean predicate.
+Use when you need to drop a prefix from an iterable by computing a `Result`
+per element instead of using a simple boolean predicate.
 
 **Details**
 
-- The filter receives `(element, index)`.
-- Returns the remaining original elements after the first filter failure.
+The filter receives `(element, index)`. The result contains the remaining
+original elements after the first filter failure.
 
 **See**
 
@@ -26,6 +26,6 @@ of a simple boolean predicate.
 declare const dropWhileFilter: { <A, B, X>(f: (input: NoInfer<A>, i: number) => Result.Result<B, X>): (self: Iterable<A>) => Array<A>; <A, B, X>(self: Iterable<A>, f: (input: A, i: number) => Result.Result<B, X>): Array<A>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L1669)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L1683)
 
 Since v4.0.0

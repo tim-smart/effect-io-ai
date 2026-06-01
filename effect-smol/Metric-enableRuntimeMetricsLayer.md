@@ -103,6 +103,6 @@ const programWithDirectMetrics = application.pipe(
 declare const enableRuntimeMetricsLayer: Layer.Layer<never, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Metric.ts#L3867)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Metric.ts#L3858)
 
 Since v4.0.0

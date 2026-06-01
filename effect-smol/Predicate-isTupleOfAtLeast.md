@@ -7,13 +7,13 @@ Checks whether a readonly array has at least `n` elements.
 
 **When to use**
 
-Use when you need a runtime check for tuple-like minimum length.
-- You want to narrow `ReadonlyArray<T>` to `TupleOfAtLeast<N, T>`.
+Use when you need a `Predicate` guard for tuple-like minimum length that
+narrows `ReadonlyArray<T>` to `TupleOfAtLeast<N, T>`.
 
 **Details**
 
-- Only checks length, not element types.
-- Returns a refinement on the array type.
+This only checks length, not element types, and returns a refinement on the
+array type.
 
 **Example** (Minimum length)
 

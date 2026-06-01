@@ -7,8 +7,8 @@ Checks whether an Exit is a Failure.
 
 **When to use**
 
-Use as a type guard to narrow `Exit<A, E>` to `Failure<A, E>`
-- After narrowing, the `cause` property becomes accessible
+Use as a type guard to narrow `Exit<A, E>` to `Failure<A, E>` and access the
+`cause` property.
 
 **Example** (Narrowing to Failure)
 

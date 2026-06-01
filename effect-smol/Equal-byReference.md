@@ -7,10 +7,8 @@ Creates a proxy that uses reference equality instead of structural equality.
 
 **When to use**
 
-Use when when you have a plain object or array that should be compared by identity
-  (reference), not by contents.
-- When you want to preserve the original object unchanged and get a new
-  reference-equal handle.
+Use when you need to compare a plain object or array by identity without
+mutating the original value.
 
 **Details**
 
@@ -50,6 +48,6 @@ console.log(aRef.x)                   // 1     (proxy reads through)
 declare const byReference: <T extends object>(obj: T) => T
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Equal.ts#L576)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Equal.ts#L564)
 
 Since v4.0.0

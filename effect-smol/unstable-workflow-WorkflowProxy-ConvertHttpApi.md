@@ -45,6 +45,6 @@ type ConvertHttpApi<Workflows> = Workflows extends Workflow.Workflow<
   never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/WorkflowProxy.ts#L195)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/WorkflowProxy.ts#L193)
 
 Since v4.0.0

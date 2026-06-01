@@ -12,9 +12,9 @@ succeeded or failed.
 
 **Details**
 
-An `Exit<A, E>` is either:
-- `Success<A, E>` containing a value of type `A`
-- `Failure<A, E>` containing a `Cause<E>` describing why the computation failed
+An `Exit<A, E>` is either `Success<A, E>` containing a value of type `A`, or
+`Failure<A, E>` containing a `Cause<E>` describing why the computation
+failed.
 
 Since `Exit` is also an `Effect`, you can yield it inside `Effect.gen`.
 

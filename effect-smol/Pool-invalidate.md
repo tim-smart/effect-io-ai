@@ -8,9 +8,8 @@ item, lazily if needed.
 
 **When to use**
 
-Use to prevent a pooled item from being reused after you determine it is no
-longer suitable, such as a stale connection or a resource that failed a
-health check.
+Use to prevent a pooled item from being reused after it becomes unsuitable,
+such as a stale connection or a resource that failed a health check.
 
 **Gotchas**
 
@@ -27,6 +26,6 @@ object instance does nothing.
 declare const invalidate: { <A>(item: A): <E>(self: Pool<A, E>) => Effect.Effect<void, never, Scope.Scope>; <A, E>(self: Pool<A, E>, item: A): Effect.Effect<void, never, Scope.Scope>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Pool.ts#L547)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Pool.ts#L545)
 
 Since v2.0.0

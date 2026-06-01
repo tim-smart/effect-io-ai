@@ -10,7 +10,8 @@ contains no typed error reasons.
 
 **When to use**
 
-Use when you use `findError` if you only need the unwrapped error value `E`.
+Use when you need the full `Fail` reason from a `Cause`, including
+annotations.
 
 **Example** (extracting the first Fail reason)
 

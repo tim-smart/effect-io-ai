@@ -5,6 +5,11 @@ Module: `Effect`<br />
 
 Handles all errors in an effect by providing a fallback effect.
 
+**When to use**
+
+Use when every recoverable error from an effect should be handled by the same
+fallback function while unrecoverable defects remain defects.
+
 **Details**
 
 The `catch` function catches any errors that may occur during the
@@ -12,8 +17,10 @@ execution of an effect and allows you to handle them by specifying a fallback
 effect. This ensures that the program continues without failing by recovering
 from errors using the provided fallback logic.
 
-**Note**: `catch` only handles recoverable errors. It will not recover
-from unrecoverable defects.
+**Gotchas**
+
+`catch` only handles recoverable errors. It will not recover from
+unrecoverable defects.
 
 **See**
 
@@ -25,6 +32,6 @@ from unrecoverable defects.
 declare const catch: { <E, A2, E2, R2>(f: (e: E) => Effect<A2, E2, R2>): <A, R>(self: Effect<A, E, R>) => Effect<A2 | A, E2, R2 | R>; <A, E, R, A2, E2, R2>(self: Effect<A, E, R>, f: (e: E) => Effect<A2, E2, R2>): Effect<A2 | A, E2, R2 | R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L2659)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L2673)
 
 Since v4.0.0

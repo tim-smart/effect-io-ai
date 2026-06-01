@@ -26,6 +26,6 @@ Effect.runPromise(program)
 declare const fromArray: <A>(array: ReadonlyArray<A>) => Stream<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L1269)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L1274)
 
 Since v4.0.0

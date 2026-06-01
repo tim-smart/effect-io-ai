@@ -7,8 +7,8 @@ Creates a new `TxRef` synchronously with the specified initial value.
 
 **When to use**
 
-Use to construct a transactional reference synchronously when it must be
-created outside an `Effect` workflow.
+Use to construct a `TxRef` synchronously when it must be created outside an
+`Effect` workflow.
 
 **Example** (Creating transactional references unsafely)
 

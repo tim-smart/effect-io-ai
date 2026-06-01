@@ -62,6 +62,6 @@ const containerProgram = Effect.log("Container ready", {
 declare const consoleJson: Logger<unknown, void>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Logger.ts#L1105)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Logger.ts#L1102)
 
 Since v4.0.0

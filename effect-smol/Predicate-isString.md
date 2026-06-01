@@ -7,12 +7,12 @@ Checks whether a value is a `string`.
 
 **When to use**
 
-Use when you need to guard an `unknown` value as a string.
-- You want to narrow in `if` statements.
+Use when you need a `Predicate` guard to narrow an `unknown` value to a
+string.
 
 **Details**
 
-- Uses `typeof input === "string"`.
+Uses `typeof input === "string"`.
 
 **Example** (Guard string)
 

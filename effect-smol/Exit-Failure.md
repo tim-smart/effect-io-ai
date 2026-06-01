@@ -13,7 +13,7 @@ narrowing.
 
 **Details**
 
-- The `Cause<E>` may contain typed errors, defects, or interruptions
+The `Cause<E>` may contain typed errors, defects, or interruptions.
 
 **Example** (Accessing the failure cause)
 

@@ -37,6 +37,6 @@ BigInt.sqrt(-1n) // Option.none()
 declare const sqrt: (n: bigint) => Option.Option<bigint>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigInt.ts#L799)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigInt.ts#L802)
 
 Since v2.0.0

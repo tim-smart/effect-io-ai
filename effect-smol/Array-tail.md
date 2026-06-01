@@ -11,8 +11,7 @@ Use to safely get all elements after the first when the iterable may be empty.
 
 **Details**
 
-- Allocates a new array via `slice(1)`.
-- Returns `Option.none()` for empty inputs.
+Allocates a new array via `slice(1)`. Empty inputs return `Option.none()`.
 
 **Example** (Getting the tail)
 
@@ -34,6 +33,6 @@ console.log(Array.tail([])) // Option.none()
 declare const tail: <A>(self: Iterable<A>) => Option.Option<Array<A>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L1246)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L1262)
 
 Since v2.0.0

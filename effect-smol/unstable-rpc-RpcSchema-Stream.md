@@ -15,7 +15,7 @@ export interface Stream<A extends Schema.Top, E extends Schema.Top> extends
     Stream_.Stream<A["Encoded"], E["Encoded"]>,
     A["DecodingServices"] | E["DecodingServices"],
     A["EncodingServices"] | E["EncodingServices"],
-    AST.Declaration,
+    SchemaAST.Declaration,
     Stream<A, E>
   >
 {

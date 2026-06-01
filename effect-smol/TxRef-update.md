@@ -7,7 +7,7 @@ Updates the value of the `TxRef` using the provided function.
 
 **When to use**
 
-Use to transform a transactional reference when no result value is needed.
+Use to transform a `TxRef` when no result value is needed.
 
 **Example** (Updating transactional references)
 

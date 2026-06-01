@@ -8,7 +8,8 @@ newtype.
 
 **When to use**
 
-Use when you need to compare two newtype values for equality.
+Use when you need equality for newtype-wrapped values to behave like
+equality for the wrapped carrier value, without manually unwrapping.
 
 **Details**
 
@@ -39,6 +40,6 @@ eq(iso.set("a"), iso.set("b")) // false
 declare const makeEquivalence: <N extends Newtype.Any>(equivalence: Equivalence.Equivalence<Newtype.Carrier<N>>) => Equivalence.Equivalence<N>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Newtype.ts#L266)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Newtype.ts#L267)
 
 Since v4.0.0

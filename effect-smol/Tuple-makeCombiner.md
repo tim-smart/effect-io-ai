@@ -9,8 +9,8 @@ corresponding combiner.
 
 **When to use**
 
-Use when you need to merge two tuples of the same shape, such as summing
-counters or concatenating strings.
+Use when you need to merge two same-shape tuples by combining each position
+independently, such as summing counters or concatenating strings.
 
 **Example** (Combining tuple elements)
 
@@ -36,6 +36,6 @@ console.log(result) // [3, "hello world"]
 declare const makeCombiner: <A extends ReadonlyArray<unknown>>(combiners: { readonly [K in keyof A]: Combiner.Combiner<A[K]>; }) => Combiner.Combiner<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tuple.ts#L738)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tuple.ts#L741)
 
 Since v4.0.0

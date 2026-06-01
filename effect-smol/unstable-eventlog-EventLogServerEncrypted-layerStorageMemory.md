@@ -11,6 +11,6 @@ Provides encrypted server `Storage` using the in-memory implementation.
 declare const layerStorageMemory: Layer.Layer<Storage, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventLogServerEncrypted.ts#L273)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventLogServerEncrypted.ts#L272)
 
 Since v4.0.0

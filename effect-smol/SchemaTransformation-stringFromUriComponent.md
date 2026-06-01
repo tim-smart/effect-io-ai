@@ -8,14 +8,14 @@ UTF-8 string into a URI component encoded string.
 
 **When to use**
 
-Use when storing structured data in URL query parameters or fragments.
-- Composing with `Schema.parseJson` to round-trip JSON through a URL.
+Use when you need a schema transformation to store structured data in URL
+query parameters or fragments, such as composing with `Schema.parseJson` to
+round-trip JSON through a URL.
 
 **Details**
 
-- Decode: calls `decodeURIComponent`. Fails if the input contains malformed
-  percent-encoding sequences.
-- Encode: calls `encodeURIComponent`.
+Decoding calls `decodeURIComponent` and fails if the input contains malformed
+percent-encoding sequences. Encoding calls `encodeURIComponent`.
 
 **Example** (URI component schema)
 
@@ -38,6 +38,6 @@ const schema = Schema.String.pipe(
 declare const stringFromUriComponent: Transformation<string, string, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L1542)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L1566)
 
 Since v4.0.0

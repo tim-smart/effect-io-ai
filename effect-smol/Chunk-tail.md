@@ -26,6 +26,6 @@ console.log(Chunk.tail(empty)) // Option.none()
 declare const tail: <A>(self: Chunk<A>) => O.Option<Chunk<A>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L2131)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L2166)
 
 Since v2.0.0

@@ -7,9 +7,8 @@ Creates a new chat persistence service.
 
 **When to use**
 
-Use to construct the `Chat.Persistence` service from the current
-`BackingPersistence` when you want to create and retrieve persisted chats
-programmatically by chat id.
+Use when you need programmatic persisted chat creation and retrieval backed
+by the current `BackingPersistence`.
 
 **Details**
 
@@ -26,6 +25,6 @@ backing persistence should load chats from.
 declare const makePersisted: (options: { readonly storeId: string; }) => Effect.Effect<Persistence.Service, never, Scope | BackingPersistence>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chat.ts#L814)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chat.ts#L813)
 
 Since v4.0.0

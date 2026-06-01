@@ -11,8 +11,7 @@ Use to distribute elements across a fixed number of groups, such as when splitti
 
 **Details**
 
-- Uses `chunksOf(ceil(length / n))` internally.
-- The last chunk may be shorter.
+Uses `chunksOf(ceil(length / n))` internally. The last chunk may be shorter.
 
 **Example** (Splitting into groups)
 
@@ -32,6 +31,6 @@ console.log(Array.split([1, 2, 3, 4, 5, 6, 7, 8], 3)) // [[1, 2, 3], [4, 5, 6], 
 declare const split: { (n: number): <A>(self: Iterable<A>) => Array<Array<A>>; <A>(self: Iterable<A>, n: number): Array<Array<A>>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L2777)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L2814)
 
 Since v2.0.0

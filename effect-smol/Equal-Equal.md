@@ -7,7 +7,7 @@ The interface for types that define their own equality logic.
 
 **When to use**
 
-Use when when you need value-based equality for a class (e.g. domain IDs,
+Use when you need value-based equality for a class (e.g. domain IDs,
   coordinates, money values).
 - When your type will be stored in `HashMap` or `HashSet`.
 - When the default structural comparison is too broad or too narrow for
@@ -62,6 +62,6 @@ export interface Equal extends Hash.Hash {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Equal.ts#L168)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Equal.ts#L166)
 
 Since v2.0.0

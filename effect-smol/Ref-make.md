@@ -7,7 +7,7 @@ Creates a new Ref with the specified initial value.
 
 **When to use**
 
-Use to create shared mutable state inside an Effect program.
+Use to create a `Ref` for shared mutable state inside an Effect program.
 
 **Example** (Creating a ref)
 

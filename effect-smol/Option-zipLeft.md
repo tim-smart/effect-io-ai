@@ -7,7 +7,8 @@ Sequences two `Option`s, keeping the value from the first if both are `Some`.
 
 **When to use**
 
-Use to run a validation that must succeed, but keeping the original value
+Use when you need two `Option` values to both be `Some`, then keep only the
+first value.
 
 **Details**
 
@@ -37,6 +38,6 @@ console.log(Option.zipLeft(Option.some("hello"), Option.none()))
 declare const zipLeft: { <_>(that: Option<_>): <A>(self: Option<A>) => Option<A>; <A, X>(self: Option<A>, that: Option<X>): Option<A>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L1572)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L1573)
 
 Since v2.0.0

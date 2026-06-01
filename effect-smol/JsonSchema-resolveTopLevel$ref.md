@@ -7,8 +7,8 @@ Resolves a document whose root schema is a top-level `$ref`.
 
 **When to use**
 
-Use to dereference a top-level `$ref` before inspecting the root
-schema's properties directly.
+Use when you need to dereference a top-level `$ref` before inspecting the
+root JSON Schema object's properties directly.
 
 **Details**
 
@@ -43,6 +43,6 @@ console.log(resolved.schema) // { type: "object", properties: { name: { type: "s
 declare const resolveTopLevel$ref: (document: Document<"draft-2020-12">) => Document<"draft-2020-12">
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/JsonSchema.ts#L1012)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/JsonSchema.ts#L1016)
 
 Since v4.0.0

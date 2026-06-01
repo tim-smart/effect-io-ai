@@ -103,6 +103,6 @@ const multiLogger = Effect.scoped(
 declare const toFile: ((path: string, options?: { readonly flag?: FileSystem.OpenFlag | undefined; readonly mode?: number | undefined; readonly batchWindow?: Duration.Input | undefined; } | undefined) => <Message>(self: Logger<Message, string>) => Effect.Effect<Logger<Message, void>, PlatformError, Scope.Scope | FileSystem.FileSystem>) & (<Message>(self: Logger<Message, string>, path: string, options?: { readonly flag?: FileSystem.OpenFlag | undefined; readonly mode?: number | undefined; readonly batchWindow?: Duration.Input | undefined; } | undefined) => Effect.Effect<Logger<Message, void>, PlatformError, Scope.Scope | FileSystem.FileSystem>)
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Logger.ts#L1329)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Logger.ts#L1326)
 
 Since v4.0.0

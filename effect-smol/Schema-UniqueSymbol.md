@@ -9,10 +9,10 @@ Type-level representation returned by `UniqueSymbol`.
 
 ```ts
 export interface UniqueSymbol<sym extends symbol>
-  extends Bottom<sym, sym, never, never, AST.UniqueSymbol, UniqueSymbol<sym>>
+  extends Bottom<sym, sym, never, never, SchemaAST.UniqueSymbol, UniqueSymbol<sym>>
 {}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L2686)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L2836)
 
 Since v4.0.0

@@ -13,10 +13,9 @@ or failed, including any defects, and you want to work with a `Promise`.
 
 **Details**
 
-The `Exit` type represents the result of the effect:
-- If the effect succeeds, the result is wrapped in a `Success`.
-- If it fails, the failure information is provided as a `Failure` containing
-  a `Cause` type.
+The `Exit` type represents the result of the effect. Successful effects are
+wrapped in `Success`, and failed effects are wrapped in `Failure` with a
+`Cause`.
 
 **Example** (Observing promise results as Exit)
 
@@ -56,6 +55,6 @@ Effect.runPromiseExit(Effect.fail("my error")).then(console.log)
 declare const runPromiseExit: <A, E>(effect: Effect<A, E>, options?: RunOptions | undefined) => Promise<Exit.Exit<A, E>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L9021)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L9081)
 
 Since v2.0.0

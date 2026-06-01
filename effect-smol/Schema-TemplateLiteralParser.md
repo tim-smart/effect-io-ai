@@ -14,7 +14,7 @@ export interface TemplateLiteralParser<Parts extends TemplateLiteral.Parts> exte
     TemplateLiteral.Encoded<Parts>,
     never,
     never,
-    AST.Arrays,
+    SchemaAST.Arrays,
     TemplateLiteralParser<Parts>
   >
 {
@@ -22,6 +22,6 @@ export interface TemplateLiteralParser<Parts extends TemplateLiteral.Parts> exte
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L2373)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L2518)
 
 Since v3.10.0

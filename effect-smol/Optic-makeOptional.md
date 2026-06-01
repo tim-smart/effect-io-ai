@@ -7,7 +7,8 @@ Creates an `Optional` from a fallible getter and a fallible setter.
 
 **When to use**
 
-Use when both reading and writing can fail.
+Use when you need an optic for a focus that may be missing on read and may
+reject updates on write.
 
 **Details**
 
@@ -48,6 +49,6 @@ console.log(Result.isSuccess(atKey("x").getResult({ x: 1 })))
 declare const makeOptional: <S, A>(getResult: (s: S) => Result.Result<A, string>, set: (a: A, s: S) => Result.Result<S, string>) => Optional<S, A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Optic.ts#L1065)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Optic.ts#L1068)
 
 Since v4.0.0

@@ -8,7 +8,8 @@ and clean up any acquired resources.
 
 **When to use**
 
-Use when a group of forked fibers is no longer needed.
+Use when you need to cancel several forked fibers and wait for their cleanup
+to complete.
 
 **Details**
 
@@ -69,6 +70,6 @@ const program = Effect.gen(function*() {
 declare const interruptAll: <A extends Iterable<Fiber<any, any>>>(fibers: A) => Effect<void>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Fiber.ts#L507)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Fiber.ts#L509)
 
 Since v2.0.0

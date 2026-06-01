@@ -41,6 +41,6 @@ console.log(hash1 === hash3) // true
 declare const structureKeys: (o: object, keys: Iterable<PropertyKey>) => number
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Hash.ts#L471)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Hash.ts#L472)
 
 Since v2.0.0

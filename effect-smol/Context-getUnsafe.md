@@ -8,9 +8,8 @@ resolved.
 
 **When to use**
 
-Use when the context type cannot prove that the service is present. Use
-`get` when the service requirement is tracked in the context type, or
-`getOption` when absence is expected.
+Use when you need to read a service from a context whose type does not prove
+the service is present.
 
 **Details**
 
@@ -44,6 +43,6 @@ assert.throws(() => Context.getUnsafe(context, Timeout))
 declare const getUnsafe: { <S, I>(service: Key<I, S>): <Services>(self: Context<Services>) => S; <Services, S, I>(self: Context<Services>, services: Key<I, S>): S; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Context.ts#L921)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Context.ts#L922)
 
 Since v4.0.0

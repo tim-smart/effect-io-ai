@@ -13,11 +13,9 @@ mapping.
 
 **Details**
 
-Behavior:
-
-- For **Success effects**: Returns the success as-is (no error to transform)
-- For **Failure effects**: Applies the mapping function immediately to the error
-- For **Pending effects**: Falls back to the regular `mapError` behavior
+Success effects pass through unchanged because there is no error to
+transform. Failure effects apply the mapping function immediately, and
+pending effects fall back to regular `mapError` behavior.
 
 **Example** (Mapping errors eagerly when possible)
 
@@ -42,6 +40,6 @@ const mappedPending = Effect.mapErrorEager(
 declare const mapErrorEager: { <E, E2>(f: (e: E) => E2): <A, R>(self: Effect<A, E, R>) => Effect<A, E2, R>; <A, E, R, E2>(self: Effect<A, E, R>, f: (e: E) => E2): Effect<A, E2, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L14988)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L15054)
 
 Since v4.0.0

@@ -5,6 +5,11 @@ Module: `FiberMap`<br />
 
 Retrieves a fiber from the FiberMap synchronously.
 
+**When to use**
+
+Use when synchronous keyed lookup of a fiber in a `FiberMap` is needed and an
+`Option` result is enough outside the Effect workflow.
+
 **Example** (Retrieving a fiber unsafely)
 
 ```ts
@@ -35,6 +40,6 @@ const program = Effect.gen(function*() {
 declare const getUnsafe: { <K>(key: K): <A, E>(self: FiberMap<K, A, E>) => Option.Option<Fiber.Fiber<A, E>>; <K, A, E>(self: FiberMap<K, A, E>, key: K): Option.Option<Fiber.Fiber<A, E>>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FiberMap.ts#L502)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FiberMap.ts#L517)
 
 Since v4.0.0

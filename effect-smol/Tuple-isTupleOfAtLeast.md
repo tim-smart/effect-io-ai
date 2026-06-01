@@ -8,8 +8,8 @@ tuple with a minimum length.
 
 **When to use**
 
-Use to guard that an array has at least the expected number of
-elements.
+Use to guard that an array has at least the tuple length expected at
+runtime.
 
 **Details**
 
@@ -42,6 +42,6 @@ if (Tuple.isTupleOfAtLeast(arr, 3)) {
 declare const isTupleOfAtLeast: { <N extends number>(n: N): <T>(self: ReadonlyArray<T>) => self is TupleOfAtLeast<N, T>; <T, N extends number>(self: ReadonlyArray<T>, n: N): self is TupleOfAtLeast<N, T>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tuple.ts#L707)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tuple.ts#L710)
 
 Since v3.3.0

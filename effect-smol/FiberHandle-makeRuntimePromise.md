@@ -6,6 +6,11 @@ Module: `FiberHandle`<br />
 Creates a scoped run function that forks effects into a new `FiberHandle`
 and returns a `Promise` for each effect result.
 
+**When to use**
+
+Use when integrating a scoped `FiberHandle` runner with Promise-based APIs
+and Promise rejection from squashed failures is the desired boundary.
+
 **Details**
 
 Each call stores the fiber in the handle and interrupts the previous fiber
@@ -33,6 +38,6 @@ Effect.gen(function*() {
 declare const makeRuntimePromise: <R = never, A = unknown, E = unknown>() => Effect.Effect<(<XE extends E, XA extends A>(effect: Effect.Effect<XA, XE, R>, options?: { readonly signal?: AbortSignal | undefined; readonly scheduler?: Scheduler | undefined; readonly onlyIfMissing?: boolean | undefined; readonly propagateInterruption?: boolean | undefined; } | undefined) => Promise<XA>), never, Scope.Scope | R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FiberHandle.ts#L262)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FiberHandle.ts#L267)
 
 Since v3.13.0

@@ -11,6 +11,6 @@ Decoded successful embeddings response body.
 type CreateEmbedding200 = CreateEmbeddingResponse
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/OpenAiClient.ts#L928)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/OpenAiClient.ts#L927)
 
 Since v4.0.0

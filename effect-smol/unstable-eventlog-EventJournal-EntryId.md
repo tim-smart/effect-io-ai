@@ -11,6 +11,6 @@ Branded byte identifier for an event journal entry.
 type EntryId = Uint8Array<ArrayBuffer> & Brand<EntryIdTypeId>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventJournal.ts#L223)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventJournal.ts#L228)
 
 Since v4.0.0

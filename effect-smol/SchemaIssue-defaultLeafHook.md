@@ -7,9 +7,7 @@ Returns the built-in `LeafHook` used by default formatters.
 
 **When to use**
 
-Use as the default leaf renderer when you only need to customise the
-`CheckHook`.
-- Reference as a starting point for custom `LeafHook` implementations.
+Use as the default leaf renderer when customizing only the `CheckHook`.
 
 **Details**
 
@@ -43,6 +41,6 @@ const formatter = SchemaIssue.makeFormatterStandardSchemaV1({
 declare const defaultLeafHook: LeafHook
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaIssue.ts#L967)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaIssue.ts#L966)
 
 Since v4.0.0

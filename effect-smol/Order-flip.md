@@ -7,15 +7,13 @@ Creates a new `Order` that reverses the comparison order of the input `Order`.
 
 **When to use**
 
-Use when when you need descending order instead of ascending
-- When reversing an existing order without modifying the original
-- When creating orders that compare in the opposite direction
+Use when you need the reverse of an existing order.
 
 **Details**
 
-- Returns a new order that swaps the arguments before comparison
-- If the original order returns `-1`, the flipped order returns `1`, and vice versa
-- Equal comparisons remain `0`
+Returns a new order that swaps the arguments before comparison. If the
+original order returns `-1`, the flipped order returns `1`, and vice versa.
+Equal comparisons remain `0`.
 
 **Example** (Reversing Order)
 
@@ -39,6 +37,6 @@ console.log(flip(1, 1)) // 0
 declare const flip: <A>(O: Order<A>) => Order<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Order.ts#L353)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Order.ts#L337)
 
 Since v4.0.0

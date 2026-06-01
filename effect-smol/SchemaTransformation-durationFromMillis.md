@@ -8,8 +8,8 @@ back to milliseconds.
 
 **When to use**
 
-Use when you use this for timeouts, delays, elapsed intervals, or other duration values
-stored as millisecond counts.
+Use when you need a schema transformation to decode timeouts, delays, elapsed
+intervals, or other duration values stored as millisecond counts.
 
 **Details**
 
@@ -36,6 +36,6 @@ const schema = Schema.Number.pipe(
 declare const durationFromMillis: Transformation<Duration.Duration, number, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L1058)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L1073)
 
 Since v4.0.0

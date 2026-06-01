@@ -7,12 +7,12 @@ Creates an `Iso` from a pair of conversion functions.
 
 **When to use**
 
-Use when you have two pure functions that form a lossless round-trip between `S`
-  and `A`.
+Use when you have two pure conversion functions that preserve all information
+between `S` and `A`.
 
 **Details**
 
-- The returned optic can be composed with any other optic.
+The returned optic can be composed with any other optic.
 
 **Example** (wrapping/unwrapping a branded type)
 

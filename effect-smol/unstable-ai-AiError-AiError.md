@@ -7,7 +7,8 @@ Schema for the top-level AI error wrapper using the `reason` pattern.
 
 **When to use**
 
-Use with `Effect.catchReason` for ergonomic error handling.
+Use when you need AI errors that can be handled by semantic reason with
+`Effect.catchReason`.
 
 **Details**
 
@@ -39,6 +40,6 @@ const handled = aiOperation.pipe(
 declare class AiError
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AiError.ts#L1529)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AiError.ts#L1530)
 
 Since v4.0.0

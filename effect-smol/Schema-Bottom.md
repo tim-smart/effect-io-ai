@@ -28,7 +28,7 @@ export interface Bottom<
   out E,
   out RD,
   out RE,
-  out Ast extends AST.AST,
+  out Ast extends SchemaAST.AST,
   out Rebuild extends Top,
   out TypeMakeIn = T,
   out Iso = T,
@@ -63,7 +63,7 @@ export interface Bottom<
 
   annotate(annotations: Annotations.Bottom<this["Type"], this["~type.parameters"]>): this["Rebuild"]
   annotateKey(annotations: Annotations.Key<this["Type"]>): this["Rebuild"]
-  check(...checks: readonly [AST.Check<this["Type"]>, ...Array<AST.Check<this["Type"]>>]): this["Rebuild"]
+  check(...checks: readonly [SchemaAST.Check<this["Type"]>, ...Array<SchemaAST.Check<this["Type"]>>]): this["Rebuild"]
   rebuild(ast: this["ast"]): this["Rebuild"]
   /**
    * Constructs a value from the make input representation synchronously.

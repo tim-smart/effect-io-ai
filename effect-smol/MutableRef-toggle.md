@@ -8,8 +8,8 @@ reference.
 
 **When to use**
 
-Use to flip a boolean reference in place when you want the same reference
-back.
+Use when you need an in-place boolean `MutableRef` toggle that returns the
+same `MutableRef`.
 
 **Example** (Toggling boolean refs)
 
@@ -52,6 +52,6 @@ console.log(result === flag) // true
 declare const toggle: (self: MutableRef<boolean>) => MutableRef<boolean>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableRef.ts#L839)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableRef.ts#L845)
 
 Since v2.0.0

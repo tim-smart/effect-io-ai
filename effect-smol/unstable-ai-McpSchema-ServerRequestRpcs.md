@@ -12,6 +12,6 @@ ping, sampling, roots listing, and elicitation.
 declare class ServerRequestRpcs
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L2388)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L2390)
 
 Since v4.0.0

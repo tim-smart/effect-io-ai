@@ -5,12 +5,16 @@ Module: `Result`<br />
 
 Folds a `Result` into a single value by applying one of two functions.
 
+**When to use**
+
+Use when a `Result`'s success and failure branches should be collapsed into
+one plain output type.
+
 **Details**
 
 - Applies `onSuccess` if the result is a `Success`
 - Applies `onFailure` if the result is a `Failure`
 - Both branches must return the same type (or a common supertype)
-- Use when you need to "exit" the `Result` type and produce a plain value
 
 **Example** (Folding to a string)
 
@@ -40,6 +44,6 @@ console.log(format(Result.fail("timeout")))
 declare const match: { <E, B, A, C = B>(options: { readonly onFailure: (error: E) => B; readonly onSuccess: (ok: A) => C; }): (self: Result<A, E>) => B | C; <A, E, B, C = B>(self: Result<A, E>, options: { readonly onFailure: (error: E) => B; readonly onSuccess: (ok: A) => C; }): B | C; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L953)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L963)
 
 Since v2.0.0

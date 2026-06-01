@@ -9,7 +9,8 @@ are equivalent.
 
 **When to use**
 
-Use when you need to compare structs property-by-property.
+Use when you need equality for a record-like object to be decided field by
+field, with a custom equality rule for each property.
 
 **Details**
 
@@ -43,6 +44,6 @@ console.log(PersonEquivalence({ name: "Alice", age: 30 }, { name: "Bob", age: 30
 declare const makeEquivalence: <R extends Record<string, Equivalence.Equivalence<any>>>(fields: R) => Equivalence.Equivalence<{ readonly [K in keyof R]: [R[K]] extends [Equivalence.Equivalence<infer A>] ? A : never; }>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Struct.ts#L577)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Struct.ts#L578)
 
 Since v4.0.0

@@ -7,8 +7,9 @@ Creates an empty `HttpApi` with the supplied identifier.
 
 **When to use**
 
-Use when add groups with `add` or `addHttpApi`, provide endpoint implementations with
-`HttpApiBuilder.group`, and register the API with `HttpApiBuilder.layer`.
+Use when you need to start defining an HTTP API, add groups with `add` or
+`addHttpApi`, provide endpoint implementations with `HttpApiBuilder.group`,
+and register the API with `HttpApiBuilder.layer`.
 
 **Signature**
 
@@ -16,6 +17,6 @@ Use when add groups with `add` or `addHttpApi`, provide endpoint implementations
 declare const make: <const Id extends string>(identifier: Id) => HttpApi<Id, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApi.ts#L245)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApi.ts#L246)
 
 Since v4.0.0

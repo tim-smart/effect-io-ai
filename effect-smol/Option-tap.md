@@ -9,8 +9,8 @@ if it returns `None`.
 
 **When to use**
 
-Use to validate a value without transforming it
-- Adding a side-condition check in a pipeline
+Use to validate an `Option`'s present value without transforming it, such as
+adding a side-condition check in a pipeline.
 
 **Details**
 
@@ -43,6 +43,6 @@ console.log(Option.tap(Option.some(1.14), getInteger))
 declare const tap: { <A, X>(f: (a: A) => Option<X>): (self: Option<A>) => Option<A>; <A, X>(self: Option<A>, f: (a: A) => Option<X>): Option<A>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L1656)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L1658)
 
 Since v2.0.0

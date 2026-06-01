@@ -8,8 +8,8 @@ as an `Exit`.
 
 **When to use**
 
-Use to encode unknown input synchronously when you want the encoded value or
-schema issue represented as an `Exit`.
+Use when you need synchronous encoding of unknown input into an `Exit` whose
+failure contains `SchemaIssue.Issue`.
 
 **Details**
 
@@ -24,9 +24,9 @@ or `Exit.Failure` with a `SchemaIssue.Issue`.
 **Signature**
 
 ```ts
-declare const encodeUnknownExit: <S extends Schema.Encoder<unknown>>(schema: S, options?: AST.ParseOptions) => (input: unknown, options?: AST.ParseOptions) => Exit.Exit<S["Encoded"], Issue.Issue>
+declare const encodeUnknownExit: <S extends Schema.Encoder<unknown>>(schema: S, options?: SchemaAST.ParseOptions) => (input: unknown, options?: SchemaAST.ParseOptions) => Exit.Exit<S["Encoded"], SchemaIssue.Issue>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaParser.ts#L697)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaParser.ts#L674)
 
 Since v4.0.0

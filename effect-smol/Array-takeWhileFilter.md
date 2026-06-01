@@ -7,14 +7,14 @@ Takes elements from the start while a `Filter` succeeds, collecting transformed 
 
 **When to use**
 
-Use when you need to take a prefix of elements while a function can
-successfully extract or transform them, stopping at the first element
+Use when you need to take a prefix from an iterable while a function can
+successfully extract or transform elements, stopping at the first element
 that produces a failure result.
 
 **Details**
 
-- The filter receives `(element, index)`.
-- Stops at the first filter failure.
+The filter receives `(element, index)` and processing stops at the first
+filter failure.
 
 **See**
 
@@ -26,6 +26,6 @@ that produces a failure result.
 declare const takeWhileFilter: { <A, B, X>(f: (input: NoInfer<A>, i: number) => Result.Result<B, X>): (self: Iterable<A>) => Array<B>; <A, B, X>(self: Iterable<A>, f: (input: NoInfer<A>, i: number) => Result.Result<B, X>): Array<B>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L1465)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L1479)
 
 Since v4.0.0

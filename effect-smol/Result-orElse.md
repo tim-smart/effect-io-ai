@@ -6,11 +6,15 @@ Module: `Result`<br />
 Returns the original `Result` if it is a `Success`, otherwise applies
 `that` to the error and returns the resulting `Result`.
 
+**When to use**
+
+Use when a failure should recover into another `Result` while keeping
+successes unchanged.
+
 **Details**
 
 - `Success<A>` is returned unchanged
 - `Failure<E>` calls `that(e)` to produce a new `Result`
-- Use to provide a recovery path or fallback computation on failure
 
 **Example** (Recovering from a failure)
 
@@ -36,6 +40,6 @@ console.log(result)
 declare const orElse: { <E, A2, E2>(that: (err: E) => Result<A2, E2>): <A>(self: Result<A, E>) => Result<A | A2, E2>; <A, E, A2, E2>(self: Result<A, E>, that: (err: E) => Result<A2, E2>): Result<A | A2, E2>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L1334)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L1350)
 
 Since v2.0.0

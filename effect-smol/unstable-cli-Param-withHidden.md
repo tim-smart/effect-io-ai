@@ -8,8 +8,8 @@ it parseable on the command line.
 
 **When to use**
 
-Use when experimental, internal, or deprecated flags that should be
-accepted but not advertised.
+Use when experimental, internal, or deprecated flags should be accepted but
+not advertised.
 
 **Example** (Hiding a flag from help)
 
@@ -29,6 +29,6 @@ const experimental = Param.boolean(Param.flagKind, "experimental-foo").pipe(
 declare const withHidden: <Kind extends ParamKind, A>(self: Param<Kind, A>) => Param<Kind, A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Param.ts#L1073)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Param.ts#L1075)
 
 Since v4.0.0

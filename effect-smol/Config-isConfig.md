@@ -7,8 +7,8 @@ Returns `true` if `u` is a `Config` instance.
 
 **When to use**
 
-Use when runtime type-checking before calling `.parse()` on an unknown value.
-- Distinguishing a `Config` from a plain value inside `unwrap`.
+Use when you need to distinguish a `Config` from an unknown value before
+calling `.parse` or `unwrap`.
 
 **Example** (Type guard)
 

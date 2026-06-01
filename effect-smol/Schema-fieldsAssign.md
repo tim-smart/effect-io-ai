@@ -7,8 +7,8 @@ Adds fields to a struct schema through a struct-mapping lambda.
 
 **When to use**
 
-Use to add the same fields to an existing struct or to every struct member of
-a union.
+Use to add the same fields to an existing struct or every struct member of a
+union.
 
 **Details**
 
@@ -32,6 +32,6 @@ const schema = Schema.Union([
 declare const fieldsAssign: <const NewFields extends Struct.Fields>(fields: NewFields) => fieldsAssign<NewFields>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L3024)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L3174)
 
 Since v4.0.0

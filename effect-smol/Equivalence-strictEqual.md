@@ -7,16 +7,14 @@ Creates an equivalence relation that uses strict equality (`===`) to compare val
 
 **When to use**
 
-Use when you need primitive types where `===` is appropriate
-- Use when you need reference equality for objects
-- Use as a building block for more complex equivalences via `mapInput` or `combine`
-- Use when performance is critical and you do not need structural equality
+Use when you need strict equality (`===`) as the comparison.
 
 **Details**
 
-- Uses JavaScript's strict equality operator (`===`)
-- For primitives: compares values directly
-- For objects: compares by reference, so only the same object instance is equivalent
+Uses JavaScript's strict equality operator (`===`). Primitives compare by
+value. Objects compare by reference, so only the same object instance is
+equivalent. Use this as a building block for more complex equivalences via
+`mapInput` or `combine`.
 
 **Gotchas**
 
@@ -57,6 +55,6 @@ console.log(strictObjEq(obj, { value: 42 })) // false (different references)
 declare const strictEqual: <A>() => Equivalence<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Equivalence.ts#L247)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Equivalence.ts#L241)
 
 Since v4.0.0

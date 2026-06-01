@@ -7,7 +7,7 @@ Creates a new MutableRef with the specified initial value.
 
 **When to use**
 
-Use to create a synchronous mutable reference initialized with a value.
+Use to create a synchronous `MutableRef` initialized with a value.
 
 **Example** (Creating mutable refs)
 

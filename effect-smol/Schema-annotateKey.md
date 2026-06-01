@@ -35,6 +35,6 @@ const schema = Schema.Struct({
 declare const annotateKey: <S extends Top>(annotations: Annotations.Key<S["Type"]>) => (self: S) => S["Rebuild"]
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L606)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L615)
 
 Since v4.0.0

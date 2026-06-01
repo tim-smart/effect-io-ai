@@ -7,14 +7,14 @@ A predicate that also narrows the input type when it returns `true`.
 
 **When to use**
 
-Use when you want a runtime check that refines `A` to `B` for TypeScript.
-- You want to compose multiple type guards with `compose`.
-- You need to guard `unknown` values safely.
+Use when you want a runtime check that refines `A` to `B` for TypeScript,
+especially when composing type guards with `compose` or safely
+checking `unknown` values.
 
 **Details**
 
-- Returns a type predicate (`a is B`).
-- Use with `if`/`filter` to narrow types.
+A refinement returns a type predicate (`a is B`). Use it with `if` or
+`filter` to narrow types.
 
 **Example** (Narrow unknown)
 

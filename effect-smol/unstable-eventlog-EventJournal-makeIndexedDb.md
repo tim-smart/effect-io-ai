@@ -17,6 +17,6 @@ connection can be closed when the scope ends.
 declare const makeIndexedDb: (options?: { readonly database?: string; }) => Effect.Effect<EventJournal["Service"], EventJournalError, Scope>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventJournal.ts#L530)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventJournal.ts#L540)
 
 Since v4.0.0

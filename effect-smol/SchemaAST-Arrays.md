@@ -5,6 +5,11 @@ Module: `SchemaAST`<br />
 
 AST node for array-like types — both tuples and arrays.
 
+**When to use**
+
+Use when constructing or inspecting AST nodes for tuple or array-like schemas,
+including rest elements.
+
 **Details**
 
 - `elements` — positional element types (tuple elements). An element is
@@ -54,6 +59,6 @@ declare class Arrays { constructor(
   ) }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L1609)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L1615)
 
 Since v4.0.0

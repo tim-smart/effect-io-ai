@@ -151,6 +151,6 @@ type Effectify<T, E> = T extends {
     : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L14515)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L14586)
 
 Since v4.0.0

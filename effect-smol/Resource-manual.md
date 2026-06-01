@@ -7,8 +7,8 @@ Creates a `Resource` that must be refreshed manually.
 
 **When to use**
 
-Use when you need to control the timing of resource refreshes yourself rather
-than relying on an automatic schedule.
+Use when you need manual control over resource refresh timing rather than an
+automatic schedule.
 
 **See**
 

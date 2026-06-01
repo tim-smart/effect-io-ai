@@ -7,8 +7,8 @@ Sets the MutableRef to a new value and returns the reference.
 
 **When to use**
 
-Use to replace the current value in place when you want the same reference
-back.
+Use when you need an in-place `MutableRef` replacement that returns the same
+`MutableRef`.
 
 **Example** (Setting values)
 
@@ -49,6 +49,6 @@ MutableRef.set(state, "success")
 declare const set: { <T>(value: T): (self: MutableRef<T>) => MutableRef<T>; <T>(self: MutableRef<T>, value: T): MutableRef<T>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableRef.ts#L616)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableRef.ts#L620)
 
 Since v2.0.0

@@ -7,8 +7,8 @@ Extracts all `Some` values from an iterable of `Option`s, discarding `None`s.
 
 **When to use**
 
-Use to collect only present values from `Option` values while discarding
-`None` values.
+Use to collect only present values from an iterable of `Option` values while
+discarding `None` values.
 
 **Example** (Extracting Some values)
 
@@ -29,6 +29,6 @@ console.log(Array.getSomes([Option.some(1), Option.none(), Option.some(2)])) // 
 declare const getSomes: <T extends Iterable<Option.Option<X>>, X = any>(self: T) => Array<Option.Option.Value<ReadonlyArray.Infer<T>>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L3631)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L3672)
 
 Since v2.0.0

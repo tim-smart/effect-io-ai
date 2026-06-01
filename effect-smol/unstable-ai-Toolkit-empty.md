@@ -7,8 +7,8 @@ An empty toolkit with no tools.
 
 **When to use**
 
-Use as a starting point for building toolkits or as a default value. Can
-be extended using the merge function to add tools.
+Use when you need an empty starting point for building toolkits or a default
+toolkit value that can be extended with `merge`.
 
 **Signature**
 

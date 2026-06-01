@@ -8,8 +8,8 @@ Decodes a numeric time-zone offset in milliseconds into a
 
 **When to use**
 
-Use to represent fixed-offset time zones with numeric millisecond offsets in
-schema transformations or JSON codecs.
+Use when you need a schema transformation to represent fixed-offset time
+zones with numeric millisecond offsets.
 
 **Details**
 
@@ -27,6 +27,6 @@ field.
 declare const timeZoneOffsetFromNumber: Transformation<DateTime.TimeZone.Offset, number, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L1674)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L1699)
 
 Since v4.0.0

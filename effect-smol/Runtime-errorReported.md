@@ -16,6 +16,6 @@ values.
 type errorReported = "~effect/Runtime/errorReported"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Runtime.ts#L399)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Runtime.ts#L402)
 
 Since v4.0.0

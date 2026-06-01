@@ -3,12 +3,16 @@ Module: `Number`<br />
 
 ## Number.divideUnsafe
 
-Provides an unsafe division operation on `number`s that throws a `RangeError` if the divisor is `0`.
+Divides two `number` values without returning an `Option`.
 
 **When to use**
 
-Use when the divisor is known to be non-zero and division by zero should be a
-thrown exception.
+Use to divide `number` values where the divisor is known to be non-zero and
+a plain `number` result is preferred over handling `Option.none`.
+
+**Gotchas**
+
+Throws a `RangeError` if the divisor is `0`.
 
 **Example** (Dividing numbers unsafely)
 
@@ -30,6 +34,6 @@ console.log(Number.divideUnsafe(6, 3)) // 2
 declare const divideUnsafe: { (that: number): (self: number) => number; (self: number, that: number): number; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Number.ts#L252)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Number.ts#L256)
 
 Since v4.0.0

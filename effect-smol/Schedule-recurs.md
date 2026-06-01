@@ -8,9 +8,7 @@ Returns a `Schedule` which can only be stepped the specified number of
 
 **When to use**
 
-Use when you need a counter schedule with no additional delay. Use `take`
-to limit an existing schedule while preserving its output and delay
-behavior.
+Use when you need a counter schedule with no additional delay.
 
 **Gotchas**
 
@@ -78,6 +76,6 @@ const countingSchedule = Schedule.recurs(3).pipe(
 declare const recurs: (times: number) => Schedule<number>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L2525)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L2547)
 
 Since v2.0.0

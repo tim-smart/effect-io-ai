@@ -8,8 +8,8 @@ strategy's effectful surplus handling.
 
 **When to use**
 
-Use when you need a non-blocking synchronous publish attempt and can handle
-`false` when the message cannot be accepted immediately.
+Use when you need a non-blocking synchronous publish attempt where `false`
+is an acceptable result when the message cannot be accepted immediately.
 
 **Details**
 
@@ -49,6 +49,6 @@ console.log(`Published ${publishedCount} out of ${messages.length} messages`)
 declare const publishUnsafe: { <A>(value: A): (self: PubSub<A>) => boolean; <A>(self: PubSub<A>, value: A): boolean; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PubSub.ts#L1007)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PubSub.ts#L1017)
 
 Since v4.0.0

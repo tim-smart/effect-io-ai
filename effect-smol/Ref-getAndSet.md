@@ -7,7 +7,7 @@ Gets the current value of the Ref, sets it to the specified value, and returns t
 
 **When to use**
 
-Use to replace the value while returning the previous value.
+Use to replace a plain `Ref` value while returning the previous value.
 
 **Example** (Replacing a value atomically)
 

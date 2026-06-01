@@ -12,8 +12,8 @@ transformation.
 
 **Details**
 
-- Key order follows `Object.entries` semantics.
-- Returns an empty array for an empty record.
+Key order follows `Object.entries` semantics. Empty records produce an empty
+array.
 
 **Example** (Record to entries)
 
@@ -35,6 +35,6 @@ console.log(result) // [["a", 1], ["b", 2], ["c", 3]]
 declare const fromRecord: <K extends string, A>(self: Readonly<Record<K, A>>) => Array<[K, A]>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L427)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L441)
 
 Since v2.0.0

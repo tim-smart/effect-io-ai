@@ -7,8 +7,8 @@ Transforms the parsed value of a config with a pure function.
 
 **When to use**
 
-Use when post-processing a config value (e.g. trimming, uppercasing, wrapping).
-- The transformation cannot fail. Use `mapOrFail` if it can.
+Use when you need to transform a parsed config value with a function that
+cannot fail.
 
 **Details**
 
@@ -37,6 +37,6 @@ const provider = ConfigProvider.fromUnknown({ name: "alice" })
 declare const map: { <A, B>(f: (a: A) => B): (self: Config<A>) => Config<B>; <A, B>(self: Config<A>, f: (a: A) => B): Config<B>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Config.ts#L266)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Config.ts#L264)
 
 Since v2.0.0

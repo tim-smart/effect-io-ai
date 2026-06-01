@@ -11,8 +11,8 @@ Use when you have a dynamic list of predicates and only need one to pass.
 
 **Details**
 
-- Short-circuits on the first `true`.
-- Iterates the collection each time the predicate is called.
+Evaluation short-circuits on the first `true`. The collection is iterated
+each time the predicate is called.
 
 **Example** (Any check)
 
@@ -35,6 +35,6 @@ console.log(anyCheck("ok"))
 declare const some: <A>(collection: Iterable<Predicate<A>>) => Predicate<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L1913)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L1918)
 
 Since v2.0.0

@@ -7,7 +7,7 @@ Updates the value of the Ref atomically using the given partial function.
 
 **When to use**
 
-Use to apply a conditional update without returning a value.
+Use to apply a conditional `Ref` update without returning a value.
 
 **Details**
 

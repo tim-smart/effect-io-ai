@@ -24,7 +24,7 @@ Do not use `make` for an initial value whose creation acquires resources; use
 **See**
 
 - `fromAcquire` for creating a `ScopedRef` from an effect that acquires the initial value
-- `set` for replacing the current value with a resourcefully acquired value
+- `set` for replacing the current value with a newly acquired value
 
 **Signature**
 
@@ -32,6 +32,6 @@ Do not use `make` for an initial value whose creation acquires resources; use
 declare const make: <A>(evaluate: LazyArg<A>) => Effect.Effect<ScopedRef<A>, never, Scope.Scope>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ScopedRef.ts#L158)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ScopedRef.ts#L157)
 
 Since v2.0.0

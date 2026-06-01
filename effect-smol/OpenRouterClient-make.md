@@ -7,8 +7,7 @@ Creates an OpenRouter client service from explicit options.
 
 **When to use**
 
-Use to construct the OpenRouter client service inside an effect when you need
-the service value directly.
+Use when you need the OpenRouter client service value inside an effect.
 
 **Details**
 
@@ -34,6 +33,6 @@ module and do not read that scoped transform.
 declare const make: (options: Options) => Effect.Effect<Service, never, HttpClient.HttpClient>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openrouter/src/OpenRouterClient.ts#L184)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openrouter/src/OpenRouterClient.ts#L183)
 
 Since v4.0.0

@@ -8,8 +8,8 @@ may return `null`/`undefined` to the value of a `Some`.
 
 **When to use**
 
-Use when chaining with functions that use `null`/`undefined` instead of `Option`
-- Navigating deeply nested optional properties
+Use when you need to chain optional computations that use `null` or
+`undefined` instead of `Option`, such as nested property access.
 
 **Details**
 
@@ -48,6 +48,6 @@ console.log(
 declare const flatMapNullishOr: { <A, B>(f: (a: A) => B): (self: Option<A>) => Option<NonNullable<B>>; <A, B>(self: Option<A>, f: (a: A) => B): Option<NonNullable<B>>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L1466)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L1465)
 
 Since v4.0.0

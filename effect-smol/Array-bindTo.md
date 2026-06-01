@@ -12,8 +12,8 @@ by naming each element.
 
 **Details**
 
-- Equivalent to `Array.map(self, (a) => ({ [tag]: a }))`.
-- Alternative to starting with `Do` + `bind`; useful when you already have an array.
+Equivalent to `Array.map(self, (a) => ({ [tag]: a }))`. This is an
+alternative to starting with `Do` plus `bind` when you already have an array.
 
 **Example** (Naming an existing array)
 
@@ -38,6 +38,6 @@ console.log(result) // [{ x: 1 }, { x: 2 }, { x: 3 }]
 declare const bindTo: { <N extends string>(tag: N): <A>(self: ReadonlyArray<A>) => Array<{ [K in N]: A; }>; <A, N extends string>(self: ReadonlyArray<A>, tag: N): Array<{ [K in N]: A; }>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L4802)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L4856)
 
 Since v3.2.0

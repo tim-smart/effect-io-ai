@@ -8,13 +8,14 @@ Decodes a `string` into a `bigint` and encodes a `bigint` back to a
 
 **When to use**
 
-Use to parse large integer strings (e.g. database IDs, blockchain values).
+Use when you need a schema transformation to parse large integer strings
+(e.g. database IDs, blockchain values).
 
 **Details**
 
-- Decode: coerces the string to a bigint (like `BigInt(s)`).
-- Encode: coerces the bigint to a string (like `String(n)`).
-- Fails on decode if the string is not a valid bigint representation.
+Decoding coerces the string to a bigint like `BigInt(s)`. Encoding coerces
+the bigint to a string like `String(n)`. Decoding fails if the string is not
+a valid bigint representation.
 
 **Example** (BigInt from string)
 
@@ -37,6 +38,6 @@ const schema = Schema.String.pipe(
 declare const bigintFromString: Transformation<bigint, string, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L906)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L917)
 
 Since v4.0.0

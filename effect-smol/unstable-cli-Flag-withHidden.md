@@ -8,9 +8,9 @@ it fully parseable on the command line.
 
 **When to use**
 
-Use when you use this for experimental or internal flags that should be accepted but not
-advertised, such as `--experimental-foo`, debug toggles, or escape hatches
-that are not yet committed to the public CLI surface.
+Use when experimental or internal flags should be accepted but not advertised, such as
+`--experimental-foo`, debug toggles, or escape hatches that are not yet committed to the
+public CLI surface.
 
 **Example** (Hiding a flag from help)
 
@@ -29,6 +29,6 @@ const experimental = Flag.boolean("experimental-foo").pipe(
 declare const withHidden: <A>(self: Flag<A>) => Flag<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Flag.ts#L537)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Flag.ts#L538)
 
 Since v4.0.0

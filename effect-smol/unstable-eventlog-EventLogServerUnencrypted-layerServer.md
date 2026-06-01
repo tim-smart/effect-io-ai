@@ -17,6 +17,6 @@ registry needed by event handlers.
 declare const layerServer: Layer.Layer<EventLogServerUnencrypted | EventLog.Registry, never, Storage>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventLogServerUnencrypted.ts#L795)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventLogServerUnencrypted.ts#L794)
 
 Since v4.0.0

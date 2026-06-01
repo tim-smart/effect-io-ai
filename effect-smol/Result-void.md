@@ -7,8 +7,8 @@ Provides a pre-built successful `Result` that carries `undefined`.
 
 **When to use**
 
-Use when a success should signal completion without carrying a meaningful
-value.
+Use when you need a successful `Result` value that signals completion
+without carrying meaningful data.
 
 **Details**
 
@@ -36,6 +36,6 @@ console.log(Result.isSuccess(result))
 declare const void: Result<void, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L400)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L405)
 
 Since v3.13.0

@@ -7,7 +7,8 @@ Equivalence instance for `Date` objects that compares their `getTime()` values u
 
 **When to use**
 
-Use when comparing `Date` values by their millisecond timestamp.
+Use when you need an `Equivalence` for JavaScript date objects by their
+millisecond timestamp.
 
 **Details**
 
@@ -55,6 +56,6 @@ console.log(Equivalence.Date(d1, d2)) // true (same time value)
 declare const Date: Equivalence<Date>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Equivalence.ts#L933)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Equivalence.ts#L909)
 
 Since v2.0.0

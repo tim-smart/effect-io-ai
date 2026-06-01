@@ -5,6 +5,11 @@ Module: `DateTime`<br />
 
 Create a `DateTime` from supported input values.
 
+**When to use**
+
+Use when creating a `DateTime` from trusted input and construction failures
+should throw an `IllegalArgumentError` instead of returning `Option.none`.
+
 **Details**
 
 - A `DateTime`
@@ -37,6 +42,6 @@ console.log(DateTime.formatIso(fromString)) // "2024-01-01T00:00:00.000Z"
 declare const makeUnsafe: <A extends DateTime.Input>(input: A) => DateTime.PreserveZone<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L691)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L696)
 
 Since v4.0.0
