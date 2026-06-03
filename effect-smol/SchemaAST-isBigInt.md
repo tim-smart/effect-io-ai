@@ -20,6 +20,6 @@ Use to identify bigint AST nodes while inspecting or transforming schema ASTs.
 declare const isBigInt: (ast: AST) => ast is BigInt
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L325)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L326)
 
 Since v4.0.0

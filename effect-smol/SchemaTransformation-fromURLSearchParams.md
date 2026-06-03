@@ -38,6 +38,6 @@ const schema = Schema.instanceOf(URLSearchParams).pipe(
 declare const fromURLSearchParams: Transformation<unknown, URLSearchParams, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L1674)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L1724)
 
 Since v4.0.0

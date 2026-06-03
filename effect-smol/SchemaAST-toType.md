@@ -33,6 +33,6 @@ console.log(typeAst._tag) // "Number"
 declare const toType: <A extends AST>(ast: A) => A
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L3292)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L3293)
 
 Since v4.0.0

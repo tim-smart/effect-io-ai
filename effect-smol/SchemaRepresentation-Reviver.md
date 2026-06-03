@@ -25,6 +25,6 @@ representations recursively.
 type Reviver<T> = (declaration: Declaration, recur: (representation: Representation) => T) => T | undefined
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaRepresentation.ts#L1803)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaRepresentation.ts#L1810)
 
 Since v4.0.0

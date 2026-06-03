@@ -35,6 +35,6 @@ const t = SchemaTransformation.passthroughSubtype<string, "a" | "b">()
 declare const passthroughSubtype: <T, E extends T>() => Transformation<T, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L845)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L846)
 
 Since v4.0.0

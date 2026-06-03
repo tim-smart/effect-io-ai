@@ -37,6 +37,6 @@ const Uncapitalized = Schema.String.pipe(
 declare const uncapitalize: () => Transformation<string, string>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L686)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L687)
 
 Since v4.0.0

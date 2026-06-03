@@ -21,6 +21,6 @@ other schema variants.
 declare const isNever: (ast: AST) => ast is Never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L234)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L235)
 
 Since v4.0.0

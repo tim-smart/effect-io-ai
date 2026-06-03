@@ -24,6 +24,7 @@ type StringMeta = Schema.Annotations.BuiltInMetaDefinitions[
   | "isLengthBetween"
   | "isTrimmed"
   | "isUUID"
+  | "isGUID"
   | "isULID"
   | "isBase64"
   | "isBase64Url"

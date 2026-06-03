@@ -38,6 +38,6 @@ const SnakeToCamel = Schema.String.pipe(
 declare const snakeToCamel: () => Transformation<string, string>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L538)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L539)
 
 Since v4.0.0

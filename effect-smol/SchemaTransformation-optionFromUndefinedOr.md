@@ -41,6 +41,6 @@ const schema = Schema.UndefinedOr(Schema.String).pipe(
 declare const optionFromUndefinedOr: <T>() => Transformation<Option.Option<T>, T | undefined>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L1183)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L1233)
 
 Since v4.0.0

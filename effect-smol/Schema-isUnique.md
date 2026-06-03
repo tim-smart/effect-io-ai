@@ -20,6 +20,6 @@ Effect equality to ensure generated arrays contain only unique items.
 declare const isUnique: <T>(annotations?: Annotations.Filter) => SchemaAST.Filter<ReadonlyArray<T>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L8045)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L8095)
 
 Since v4.0.0

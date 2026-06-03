@@ -53,6 +53,10 @@ export interface BuiltInMetaDefinitions {
       readonly regExp: globalThis.RegExp
       readonly version: 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | undefined
     }
+    readonly isGUID: {
+      readonly _tag: "isGUID"
+      readonly regExp: globalThis.RegExp
+    }
     readonly isULID: {
       readonly _tag: "isULID"
       readonly regExp: globalThis.RegExp
@@ -220,6 +224,6 @@ export interface BuiltInMetaDefinitions {
   }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L13867)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L13925)
 
 Since v4.0.0

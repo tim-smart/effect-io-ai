@@ -28,6 +28,6 @@ fallback to `encodedSchema`.
 declare const toSchemaDefaultReviver: Reviver<Schema.Top>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaRepresentation.ts#L1826)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaRepresentation.ts#L1833)
 
 Since v4.0.0

@@ -12,6 +12,6 @@ Iso representation used for `ReadonlyMap` schemas: an array of readonly
 type ReadonlyMapIso<Key, Value> = ReadonlyArray<readonly [Key["Iso"], Value["Iso"]]>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L9298)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L9349)
 
 Since v4.0.0

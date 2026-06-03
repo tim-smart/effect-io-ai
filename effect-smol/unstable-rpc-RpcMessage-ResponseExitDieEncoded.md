@@ -4,7 +4,7 @@ Module: `RpcMessage`<br />
 ## RpcMessage.ResponseExitDieEncoded
 
 Creates an encoded terminal response for a request whose exit is a defect
-encoded with `Schema.Defect`.
+encoded with `Schema.Defect()`.
 
 **Signature**
 

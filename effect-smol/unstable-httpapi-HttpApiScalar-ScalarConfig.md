@@ -20,6 +20,8 @@ type ScalarConfig = {
   layout?: "modern" | "classic"
   /** URL to a request proxy for the API client */
   proxyUrl?: string
+  /** Browser JavaScript function expression used by Scalar for documents and test requests */
+  customFetch?: string
   /** Whether to show the sidebar */
   showSidebar?: boolean
   /**

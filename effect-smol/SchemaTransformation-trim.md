@@ -39,6 +39,6 @@ const Trimmed = Schema.String.pipe(
 declare const trim: () => Transformation<string, string>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L500)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L501)
 
 Since v4.0.0

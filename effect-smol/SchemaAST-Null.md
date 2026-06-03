@@ -20,6 +20,6 @@ Parsing succeeds only when the input is exactly `null`.
 declare class Null
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L766)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L767)
 
 Since v4.0.0

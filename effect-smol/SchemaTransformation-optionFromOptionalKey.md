@@ -45,6 +45,6 @@ const schema = Schema.Struct({
 declare const optionFromOptionalKey: <T>() => Transformation<Option.Option<T>, T>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L1275)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L1325)
 
 Since v4.0.0

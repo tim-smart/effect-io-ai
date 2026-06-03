@@ -21,6 +21,6 @@ transforming schema definitions.
 declare const isBoolean: (ast: AST) => ast is Boolean
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L310)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L311)
 
 Since v4.0.0
