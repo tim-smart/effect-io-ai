@@ -33,6 +33,6 @@ export interface Config<out T> extends Effect.Effect<T, ConfigError> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Config.ts#L171)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Config.ts#L172)
 
 Since v2.0.0

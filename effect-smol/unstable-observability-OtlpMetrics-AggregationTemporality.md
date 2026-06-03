@@ -35,6 +35,6 @@ const cumulativeLayer = OtlpMetrics.layer({
 type AggregationTemporality = "cumulative" | "delta"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/OtlpMetrics.ts#L71)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/OtlpMetrics.ts#L74)
 
 Since v4.0.0

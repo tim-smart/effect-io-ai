@@ -8,9 +8,9 @@ configuration.
 
 **Details**
 
-Explicit options override `OTEL_RESOURCE_ATTRIBUTES`, `OTEL_SERVICE_NAME`,
-and `OTEL_SERVICE_VERSION`; missing required configuration is converted to a
-defect.
+`OTEL_RESOURCE_ATTRIBUTES`, `OTEL_SERVICE_NAME`, and
+`OTEL_SERVICE_VERSION` override explicit options; missing required
+configuration is converted to a defect.
 
 **Signature**
 

@@ -27,6 +27,6 @@ Wraps either:
 declare class ConfigError { constructor(cause: SourceError | Schema.SchemaError) }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Config.ts#L133)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Config.ts#L134)
 
 Since v4.0.0

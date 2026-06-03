@@ -21,6 +21,6 @@ declaring reusable config-driven types.
 type Success<T> = [T] extends [Config<infer A>] ? A : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Config.ts#L519)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Config.ts#L520)
 
 Since v2.5.0
