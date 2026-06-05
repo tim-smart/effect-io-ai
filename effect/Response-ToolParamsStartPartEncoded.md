@@ -34,6 +34,6 @@ export interface ToolParamsStartPartEncoded extends BasePartEncoded<"tool-params
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L1161)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L1160)
 
 Since v1.0.0

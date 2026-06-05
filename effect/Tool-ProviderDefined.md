@@ -41,13 +41,13 @@ export interface ProviderDefined<
   Name extends string,
   Config extends {
     readonly args: AnyStructSchema
-    readonly parameters: AnyStructSchema
+    readonly parameters: AnyParametersSchema
     readonly success: Schema.Schema.Any
     readonly failure: Schema.Schema.All
     readonly failureMode: FailureMode
   } = {
     readonly args: Schema.Struct<{}>
-    readonly parameters: Schema.Struct<{}>
+    readonly parameters: EmptyParams
     readonly success: typeof Schema.Void
     readonly failure: typeof Schema.Never
     readonly failureMode: "error"
@@ -90,6 +90,6 @@ export interface ProviderDefined<
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Tool.ts#L287)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Tool.ts#L286)
 
 Since v1.0.0

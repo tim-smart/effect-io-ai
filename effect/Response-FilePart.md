@@ -33,6 +33,6 @@ export interface FilePart extends BasePart<"file", FilePartMetadata> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L1792)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L1791)
 
 Since v1.0.0

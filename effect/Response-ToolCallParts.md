@@ -9,8 +9,7 @@ Utility type that extracts tool call parts from a set of tools.
 
 ```ts
 type ToolCallParts<Tools> = {
-  [Name in keyof Tools]: Name extends string ?
-    ToolCallPart<Name, Schema.Struct.Type<Tool.ParametersSchema<Tools[Name]>["fields"]>>
+  [Name in keyof Tools]: Name extends string ? ToolCallPart<Name, Tool.Parameters<Tools[Name]>>
     : never
 }[keyof Tools]
 ```

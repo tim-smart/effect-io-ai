@@ -11,6 +11,6 @@ Constructs a new URL source part.
 declare const urlSourcePart: (params: ConstructorParams<UrlSourcePart>) => UrlSourcePart
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L2043)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L2042)
 
 Since v1.0.0

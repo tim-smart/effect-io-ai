@@ -36,7 +36,7 @@ const GetWeather = Tool.make("GetWeather", {
 export interface Tool<
   Name extends string,
   Config extends {
-    readonly parameters: AnyStructSchema
+    readonly parameters: AnyParametersSchema
     readonly success: Schema.Schema.Any
     readonly failure: Schema.Schema.All
     readonly failureMode: FailureMode
@@ -110,15 +110,14 @@ export interface Tool<
    * Set the schema to use to validate the result of a tool call when successful.
    */
   setParameters<
-    ParametersSchema extends Schema.Struct<any> | Schema.Struct.Fields
+    ParametersSchema extends AnyParametersSchema | Schema.Struct.Fields
   >(
     schema: ParametersSchema
   ): Tool<
     Name,
     {
-      readonly parameters: ParametersSchema extends Schema.Struct<infer _> ? ParametersSchema
-        : ParametersSchema extends Schema.Struct.Fields ? Schema.Struct<ParametersSchema>
-        : never
+      readonly parameters: ParametersSchema extends Schema.Struct.Fields ? Schema.Struct<ParametersSchema>
+        : ParametersSchema
       readonly success: Config["success"]
       readonly failure: Config["failure"]
       readonly failureMode: Config["failureMode"]

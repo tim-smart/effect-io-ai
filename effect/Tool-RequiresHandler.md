@@ -17,6 +17,6 @@ type RequiresHandler<Tool> = Tool extends ProviderDefined<
   : true
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Tool.ts#L798)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Tool.ts#L805)
 
 Since v1.0.0

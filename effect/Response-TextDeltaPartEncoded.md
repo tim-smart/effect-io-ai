@@ -20,6 +20,6 @@ export interface TextDeltaPartEncoded extends BasePartEncoded<"text-delta", Text
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L732)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L731)
 
 Since v1.0.0

@@ -20,6 +20,6 @@ export interface ToolResultSuccess<Name extends string, Success> extends BaseToo
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L1554)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L1553)
 
 Since v1.0.0

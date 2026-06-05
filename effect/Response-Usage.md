@@ -15,6 +15,6 @@ metadata of the finish part of the response.
 declare class Usage
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L2197)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L2196)
 
 Since v1.0.0

@@ -18,6 +18,6 @@ type HandlerError<T> = T extends Tool<
   : never
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Tool.ts#L771)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Tool.ts#L778)
 
 Since v1.0.0

@@ -19,6 +19,6 @@ export interface AnyProviderDefined extends Any {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Tool.ts#L509)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Tool.ts#L516)
 
 Since v1.0.0

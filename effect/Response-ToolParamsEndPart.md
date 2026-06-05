@@ -19,6 +19,6 @@ export interface ToolParamsEndPart extends BasePart<"tool-params-end", ToolParam
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L1310)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L1309)
 
 Since v1.0.0

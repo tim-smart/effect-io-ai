@@ -16,6 +16,6 @@ export interface Handler<Name extends string> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Tool.ts#L734)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Tool.ts#L741)
 
 Since v1.0.0

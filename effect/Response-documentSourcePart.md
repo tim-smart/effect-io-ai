@@ -11,6 +11,6 @@ Constructs a new document source part.
 declare const documentSourcePart: (params: ConstructorParams<DocumentSourcePart>) => DocumentSourcePart
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L1951)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/ai/src/Response.ts#L1950)
 
 Since v1.0.0
